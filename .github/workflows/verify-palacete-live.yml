@@ -1,0 +1,125 @@
+name: Verify Palacete Por Derecho live
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'es/fundacion-por-derecho/palacete-por-derecho/**'
+      - 'assets/palacete-san-bernardo-historica-marco.webp'
+      - 'assets/palacete-san-bernardo-historica-detalle.webp'
+      - 'assets/palacete-por-derecho-vision-01.webp'
+      - 'assets/palacete-por-derecho-vision-02.webp'
+      - '.github/workflows/verify-palacete-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-palacete-por-derecho-live
+  cancel-in-progress: false
+
+jobs:
+  verify-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Verify live page and exact image bytes
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import time
+          import urllib.request
+          from pathlib import Path
+
+          base = 'https://sbu001monterecco.github.io/por-derecho/'
+          page_path = 'es/fundacion-por-derecho/palacete-por-derecho/'
+          assets = [
+              'assets/palacete-san-bernardo-historica-marco.webp',
+              'assets/palacete-san-bernardo-historica-detalle.webp',
+              'assets/palacete-por-derecho-vision-01.webp',
+              'assets/palacete-por-derecho-vision-02.webp',
+          ]
+          page_markers = [
+              'Propuesta de futuro Palacete Por Derecho',
+              'palacete-san-bernardo-historica-marco.webp',
+              'palacete-san-bernardo-historica-detalle.webp',
+              'palacete-por-derecho-vision-01.webp',
+              'palacete-por-derecho-vision-02.webp',
+              'Memoria visual',
+              'Visualización conceptual',
+          ]
+
+          def fetch(url):
+              req = urllib.request.Request(url, headers={
+                  'User-Agent': 'Por-Derecho-Palacete-Live-Verifier/1.0',
+                  'Cache-Control': 'no-cache, no-store, max-age=0',
+                  'Pragma': 'no-cache',
+              })
+              with urllib.request.urlopen(req, timeout=25) as r:
+                  return r.status, r.headers, r.read()
+
+          expected = {}
+          for asset in assets:
+              data = Path(asset).read_bytes()
+              assert data[:4] == b'RIFF' and data[8:12] == b'WEBP', asset
+              declared = int.from_bytes(data[4:8], 'little') + 8
+              assert declared == len(data), (asset, declared, len(data))
+              expected[asset] = hashlib.sha256(data).hexdigest()
+
+          last = None
+          for attempt in range(1, 49):
+              nonce = f'{int(time.time())}-{attempt}'
+              result = {'attempt': attempt, 'page': {}, 'assets': {}}
+              ok = True
+              try:
+                  status, headers, body = fetch(f'{base}{page_path}?verify={nonce}')
+                  text = body.decode('utf-8', errors='replace')
+                  missing = [m for m in page_markers if m not in text]
+                  result['page'] = {
+                      'status': status,
+                      'bytes': len(body),
+                      'missing_markers': missing,
+                      'last_modified': headers.get('Last-Modified'),
+                  }
+                  ok = ok and status == 200 and not missing
+              except Exception as exc:
+                  result['page'] = {'error': repr(exc)}
+                  ok = False
+
+              for asset in assets:
+                  try:
+                      status, headers, body = fetch(f'{base}{asset}?verify={nonce}')
+                      sha = hashlib.sha256(body).hexdigest()
+                      riff = body[:4] == b'RIFF' and body[8:12] == b'WEBP'
+                      declared = int.from_bytes(body[4:8], 'little') + 8 if riff and len(body) >= 12 else None
+                      complete = bool(riff and declared == len(body))
+                      exact = sha == expected[asset]
+                      result['assets'][asset] = {
+                          'status': status,
+                          'content_type': headers.get('Content-Type'),
+                          'bytes': len(body),
+                          'riff_complete': complete,
+                          'sha256': sha,
+                          'expected_sha256': expected[asset],
+                          'exact_repository_match': exact,
+                      }
+                      ok = ok and status == 200 and complete and exact
+                  except Exception as exc:
+                      result['assets'][asset] = {'error': repr(exc)}
+                      ok = False
+
+              last = result
+              print(json.dumps(result, ensure_ascii=False, indent=2))
+              if ok:
+                  print('PALACETE LIVE VERIFICATION: PASS')
+                  raise SystemExit(0)
+              time.sleep(5)
+
+          print(json.dumps({'final_failure': last}, ensure_ascii=False, indent=2))
+          raise SystemExit(1)
+          PY

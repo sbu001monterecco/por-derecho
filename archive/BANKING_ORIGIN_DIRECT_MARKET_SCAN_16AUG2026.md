@@ -70,7 +70,7 @@ The non-privileged chronology establishes documented restructuring efforts, the 
 
 ### 3.1 Valencia banking and financial-product lane
 
-Ordinary Proceeding **1859/2023-9**, Court of First Instance 27 of Valencia, remains pending, with trial presently recorded for January 2027. It tests the original banking/financial-product relationship and successor responsibility.
+Ordinary Proceeding **1859/2023-9**, Court of First Instance 27 of Valencia, remains pending. The hearing originally listed for 6-Nov-2025 at 10:00 did not proceed; the signed diligence dated that day relists it for 28-Jan-2027 at 10:00. It tests the original banking/financial-product relationship and successor responsibility.
 
 ### 3.2 Concursal credit and accounting lane
 

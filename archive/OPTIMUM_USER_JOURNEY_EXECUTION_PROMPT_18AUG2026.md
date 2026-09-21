@@ -157,9 +157,10 @@ Use a non-intrusive progress indicator on long pages, respecting reduced-motion 
 
 ## Browser acceptance tests
 
-At 390 px and 1440 px, verify at minimum:
+Run the complete route suite at the representative 390×844 phone,
+900×1280 Android-tablet and 1440×1000 desktop profiles. Verify at minimum:
 
-- homepage;
+- both homepages;
 - main RICPE route;
 - CNMV;
 - Regional Incentives;
@@ -169,7 +170,41 @@ At 390 px and 1440 px, verify at minimum:
 - multiple financial lives;
 - English CNMV.
 
-Assert:
+In addition, run the bilingual homepage accountability regression at:
+
+- 320×568 — very small phone;
+- 360×800 — small Android phone;
+- 390×844 — modern phone;
+- 412×915 — large Android phone;
+- 844×390 — landscape phone;
+- 768×1024 — tablet portrait;
+- 900×1280 — Android tablet portrait;
+- 1024×768 — tablet landscape;
+- 1119×800, 1120×800 and 1121×800 — both sides of the compact-menu breakpoint;
+- 1366×768 — laptop;
+- 1440×1000 — desktop; and
+- 1920×1080 — large desktop.
+
+For each bilingual homepage profile, inspect the static navigation immediately,
+inspect it again after at least 8.5 seconds so the delayed optimiser has run,
+then repeat the post-optimiser check after a normal reload. Assert:
+
+- exactly one `.main-nav .nav-accountability` link at every phase;
+- exact label and destination: Spanish `AC y Juez` →
+  `#institutional-accountability-12aug`; English `AC & Judge` →
+  `#institutional-accountability-12aug-en`;
+- the destination fragment exists;
+- the link retains burgundy `#6f2423` and white text;
+- at widths up to 1120 px the compact menu opens, reports
+  `aria-expanded="true"`, exposes the link fully inside the viewport, provides at
+  least a 24×24 CSS-pixel target and accepts a centre-point tap;
+- above 1120 px the compact toggle is hidden and the link is directly visible,
+  unobscured and clickable;
+- the click reaches the exact language-specific fragment; and
+- the link is never duplicated, clipped, covered or removed by the delayed
+  optimiser or by a cached reload.
+
+Across the complete suite also assert:
 
 - no horizontal body overflow;
 - no duplicate IDs;
@@ -178,9 +213,13 @@ Assert:
 - depth selector exists on major pages;
 - next-step panel exists;
 - journey rail has no more than one current step;
-- mobile controls do not obscure content;
-- internal links resolve;
+- compact controls do not obscure content;
+- internal links resolve; and
 - ES/EN equivalent propositions remain equivalent.
+
+Capture the closed header and every opened compact menu as CI artifacts. A DOM
+match alone is not a pass: the accountability route must be visibly rendered,
+within the viewport and usable by tap or click.
 
 ## Final decision gate
 

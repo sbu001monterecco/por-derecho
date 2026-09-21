@@ -58,17 +58,17 @@ This is a publication-scope correction, not a change to historical creditor iden
 
 Use:
 
-**Aweswell Limited c. CAIXABANK, S.A. — Procedimiento ordinario [ORD] 1859/2023-9 — Juzgado de Primera Instancia e Instrucción nº 27 de Valencia.**
+**Aweswell Limited c. CAIXABANK, S.A. — Procedimiento ordinario [ORD] 1859/2023-9 — Juzgado de Primera Instancia nº 27 de Valencia.**
 
 Current controlled scheduling:
 
 - Diligencia de Ordenación: 6-Nov-2025;
-- trial: **9-Oct-2026 at 12:00**;
+- original hearing: **6-Nov-2025 at 10:00**;
+- current signed relisting: **28-Jan-2027 at 10:00**;
 - status: pending and contested;
 - no merits judgment / adjudicated recovery located.
 
-Later-order N.I.G.: `46250-42-1-2023-0057718`.
-Earlier witness citations in the same ORD carry `46250-42-1-2023-0049579`; preserve both pending court reconciliation.
+The signed 6-Nov-2025 diligence and the earlier witness citations reviewed in the same ORD carry N.I.G. `46250-42-1-2023-0049579`. The different later-order N.I.G. formerly recorded here was a transcription error and is superseded.
 
 ## 4. Pleaded recovery
 
@@ -162,3 +162,20 @@ Highest-value remaining items:
 ## 11. Continuity / deletion-safety sentence
 
 A fresh thread must be able to recover the public architecture without this conversation: **the CaixaBank claim has its own bilingual public dossier; it is a pending, contested banking-recovery lane connected to but legally distinct from the later lender-in-possession/credit-assignment chain; Borja's witness evidence was requested by CaixaBank and Aweswell adhered; later “both parties” wording is the procedural result after adhesion, not equal or independent sponsorship; the procedural-risk rationale remains client-reported pending an express contemporaneous lawyer source; and the live separation/removal track is strategically hoped to be resolved before the Valencia evidence without assuming that outcome.**
+
+## 12. Mortgage/swap/account 360 supplement — 26 August 2026
+
+The dedicated pages now lead with the attributed allegation that the principal mortgage, floor, linked swap/cobertura, approximately €850,000 second facility, pledged funds, bank-controlled account circuit, reported apartment-sale receipts and Bankia enforcement formed one economic package requiring end-to-end reconciliation.
+
+Publication controls:
+
+- preserve the allegation strongly as Gil Marer's and the reserved declarant's position;
+- identify Caja Insular, BFA, Bankia and CaixaBank separately by title, period, own conduct and legally transferred/retained obligations; keep Haya outside the holder chain;
+- preserve the remembered €55,000 × 2 = €110,000 correction beside the located LPB-ledger record of **€60,000 + €59,000 = €119,000 gross**, with stated €100,584.80/€10,559 loan applications;
+- do not assume that the reported grace period suspended interest, swap settlements or charges;
+- state that the outgoing burofax was admitted 29-Nov-2011; the execution filing was signed 10-Jan, received 23-Jan and followed by the 1-Feb-2012 order; the monthly certificate, delivery/service and end state remain open;
+- explain the net-difference swap formula, double-floor/no-hard-cap allegation, first-principal date, TIN/TAE boundary and rejection of the provision-transfer theory as a present fact;
+- require deeds, net proceeds, account authority, value dates, imputation and the complete transaction ledger before stating no default as a verified accounting conclusion; and
+- preserve the strongest defence, successor-liability and concurrent-cause analysis.
+
+Controlling supplement: `archive/CAIXABANK_MORTGAGE_SWAP_ACCOUNT_360_CONTROL_26AUG2026.md`. Attributed source record: Declaration 014.

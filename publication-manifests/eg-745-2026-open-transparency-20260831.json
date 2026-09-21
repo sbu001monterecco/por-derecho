@@ -1,0 +1,208 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "eg-745-2026-open-transparency-20260831",
+  "title": "E.G. 745/2026 open transparency publication",
+  "current_state": "DEPLOYED",
+  "owner": "Por Derecho / Project Sun Rock",
+  "dossier": "E.G. 745/2026",
+  "control_date": "2026-08-31",
+  "repository": "sbu001monterecco/por-derecho",
+  "merge_sha": "950b64f9bd61f21bcff7bd76cfc409eebd3bca88",
+  "validation": {
+    "evidence": [
+      "PR #1256 head e37c4cd52a2d998725e7d0a81f2731576c0a6309 — Publication integrity gate run 33372076811 / #2461 completed success",
+      "PR #1256 final-head proceedings interconnectivity audit completed success after Case Prism, isolation-test and Master Proceedings Register links were restored",
+      "PR #1256 final-head audience, criminal-misuse thesis, privacy and source-governance checks completed success before merge"
+    ]
+  },
+  "deployment_evidence": {
+    "pages_run_id": 33372315356,
+    "pages_run_number": 1319,
+    "head_sha": "950b64f9bd61f21bcff7bd76cfc409eebd3bca88",
+    "status": "completed",
+    "conclusion": "success",
+    "build_job": "99425976568 completed success",
+    "deploy_job": "99426065303 completed success",
+    "deploy_step": "Deploy to GitHub Pages completed success at 2026-08-31T08:19:25Z",
+    "control": "exact-SHA GitHub Pages deployment proof for PR #1256 merge"
+  },
+  "expected_routes": {
+    "es": [
+      "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/facsimil-visual-31-agosto-2026.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/paquete-respuesta-29-agosto-2026.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/persecucion-abierta-transparencia-31-agosto-2026.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/diario-actuaciones-29-agosto-2026.html"
+    ],
+    "en": [
+      "en/public-prosecution-inspection-exp-gub-745-2026/index.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/visual-facsimile-31-august-2026.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/response-package-29-august-2026.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/open-prosecution-transparency-31-august-2026.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/action-diary-29-august-2026.html"
+    ]
+  },
+  "expected_source_files": [
+    "evidence/fiscalia/2026/EG_745_2026_OPEN_TRANSPARENCY_LEDGER_31AUG2026.md",
+    "archive/EG_745_2026_OPEN_TRANSPARENCY_RELEASE_31AUG2026.md",
+    "evidence/fiscalia/2026/2026-08-26_FGE_INSPECCION_EG_745_2026_NOTIFICATION_DECREE_TRANSCRIPTION.md",
+    "evidence/fiscalia/2026/2026-08-26_FGE_INSPECCION_EG_745_2026_ENGLISH_TRANSLATION.md",
+    "evidence/fiscalia/2026/2026-08-26_FGE_INSPECCION_EG_745_2026_METADATA.json",
+    "evidence/fiscalia/2026/FGE_INSPECCION_EG_745_2026_ANNEX_EVIDENCE_GAP_MATRIX_29AUG2026.md",
+    "evidence/fiscalia/2026/EG_745_2026_ACTION_DIARY_29AUG2026.md",
+    "evidence/fiscalia/2026/EG_745_2026_COUNTER_ACTION_MATRIX_29AUG2026.md",
+    "drafts/fiscalia/2026-08-29_RECURSO_POTESTATIVO_REPOSICION_EG_745_2026_DRAFT.md",
+    "drafts/fiscalia/2026-08-29_EG_745_2026_PROTECTIVE_ACCESS_PRESERVATION_REQUEST_DRAFT.md"
+  ],
+  "release": {
+    "branch": "eg745-open-transparency-20260831",
+    "pull_request": 1256,
+    "base_main_sha": "44178e023d33f3804d3a6e5369b8fc138e0e05b9",
+    "predecessor_pull_request": 1255,
+    "predecessor_merge_sha": "44178e023d33f3804d3a6e5369b8fc138e0e05b9",
+    "merge_sha": "950b64f9bd61f21bcff7bd76cfc409eebd3bca88",
+    "pages_run": 33372315356,
+    "pages_run_number": 1319,
+    "pages_conclusion": "success"
+  },
+  "authoritative_source": {
+    "filename": "OFICIO Y DECRETO EXP. 745-26.pdf",
+    "notification_date_located": "2026-08-26",
+    "pages": 3,
+    "bytes": 1111997,
+    "sha256": "1e09c8eb3bce26e28dc5f22e5d6ebad3f458212cf8d85f5920e869fa42554abe",
+    "controls_derivatives": true
+  },
+  "originating_registration": {
+    "id": "REGAGE26e00070235775",
+    "presented": "2026-08-02T23:31:55",
+    "registered": "2026-08-02T23:31:58",
+    "receipt_sha256": "33f7b47418062a0bc4993f424e459af18fa2d334acc8bafc4c2e40750f171f97",
+    "numbered_requests": 12,
+    "named_proceedings": [
+      "DI 248/2018",
+      "DI 113/2022",
+      "DI 22/2026",
+      "DIP 2/2026",
+      "EG 49/2026",
+      "DP 1901/2026"
+    ]
+  },
+  "public_visual": {
+    "status": "LIVE_VERIFIED_REPLACEMENT",
+    "privacy_control": "page 1 recipient personal email masked; native Spanish source controls; deterministic replacement is LIVE_VERIFIED",
+    "preview_sha256": {
+      "page_1": "9dea73c05bd91226745c8801147c6fac20b30d7d30480f22c8e0ece9ea9536d3",
+      "page_2": "4ed65b0e324ea0ec6dcedaf97ed178aa97aacaf76c877bbdb25058ccdd234969",
+      "page_3": "b73a712a27c737dd8e22bf462c6e1cce095d05f8d12a3b93b1d0c763f84b528b",
+      "page_3_previously_displayed_incorrect": "62271b227f79a44879971bef77be20fc5f760257e81aac31cec56b0094c10c2e"
+    },
+    "replacement_manifest": "publication-manifests/eg-745-2026-visual-publication-20260831.json",
+    "preview_sha256_status": "SUPERSEDED_BASE64_PREVIEW_LINEAGE_RETAINED",
+    "deployment_attestation": "publication-manifests/eg-745-2026-visual-deployment-attestation-20260831.json",
+    "replacement_asset_sha256": {
+      "oficio-decreto-eg-745-2026-public-redacted.pdf": "a59007fa5db61d2b48b587c208f9cafedabe967e88dac4df223b2ef384595088",
+      "page-1-public-redacted.png": "049ec3fd208f3ff9955ebf8fcfd851ac88f9a62320a6cfa164268605c850b38d",
+      "page-2-public.png": "d3f28f59c7f000d57505f747ff870636d66f307fe57ea3aa9683091bcc2a3ca2",
+      "page-3-public.png": "36f2b0e344abfe9dd9b7c6b46b4228ab4323ded7787a0170ee6d3e9f069be11a",
+      "page-1-public-redacted.webp": "ac5ccc51d85d6bfc7933a924465c5ef493206453e822fce2b367433975dee41a",
+      "page-2-public.webp": "5173cd8420ed9f6b6e1b26f3ad86025d89c82cbc69d4936b0d287f17717ae06a",
+      "page-3-public.webp": "ae3f518bb5732396e5d19fdcd3ee45450d2ee104e9bf7f7594af3493115bfaa8"
+    },
+    "live_deployment_evidence": {
+      "release_pull_request": 1274,
+      "merge_sha": "6dc04a8a35c4a096631ca1852ec5fbee96c4965f",
+      "merge_tree_sha": "05b59b3f8ea073150022ff2815f4e45f2b88ce95",
+      "pages_run_id": 33411821984,
+      "pages_run_number": 1336,
+      "pages_conclusion": "success",
+      "live_readback_run_id": 33413265941,
+      "live_readback_state": "LIVE_BYTES_VERIFIED",
+      "byte_identical_public_files": "32/32",
+      "failures": 0
+    }
+  },
+  "translation": {
+    "english_complete_inline": true,
+    "control": "convenience translation; Spanish native source and controlled transcription prevail"
+  },
+  "filing_status": {
+    "control_date": "2026-08-31",
+    "gmail_sent_control": "no post-notification sent E.G. 745/2026 reconsideration, REG-AGE receipt or equivalent merits-filing proof located",
+    "reconsideration": "PREPARED / OUTSTANDING — NOT YET VERIFIED AS FILED",
+    "upgrade_rule": "only actual sent/REG-AGE/judicial/equivalent filing proof may upgrade status"
+  },
+  "deadline_control": {
+    "reconsideration_working_backstop": "2026-09-28",
+    "qualification": "subject to verification of legally effective notification date/mechanics and any applicable special rule",
+    "direct_contentious": "COUNSEL VERIFY BEFORE FILING",
+    "protective_requests_suspend_merits_deadline": false,
+    "asap_rule": "file as soon as substantively ready; formal deadlines are backstops, not target dates"
+  },
+  "open_transparency_definition": "Publicly pursue the evidential, review, preservation and accountability case; Por Derecho does not exercise the State criminal-prosecution function and does not declare guilt.",
+  "actions_disclosed": [
+    {
+      "id": "OT-01",
+      "action": "merits route election",
+      "status": "OPEN / CRITICAL"
+    },
+    {
+      "id": "OT-02",
+      "action": "reconsideration if elected",
+      "status": "PREPARED / OUTSTANDING — NOT VERIFIED FILED"
+    },
+    {
+      "id": "OT-03",
+      "action": "complete E.G. 745 file/index/copies",
+      "status": "DRAFT PREPARED"
+    },
+    {
+      "id": "OT-04",
+      "action": "native/searchable/verifiable Decree and metadata",
+      "status": "DRAFT PREPARED"
+    },
+    {
+      "id": "OT-05",
+      "action": "preservation of institutional records and routing traces",
+      "status": "DRAFT PREPARED"
+    },
+    {
+      "id": "OT-06",
+      "action": "official actor-by-actor functional identification",
+      "status": "OUTSTANDING PRODUCTION ARCHITECTURE"
+    },
+    {
+      "id": "OT-07",
+      "action": "fix exact 2 August registered attachment bytes",
+      "status": "CLOSED / VERIFIED 31 AUG 2026 — receipt/master SHA-512 exact match"
+    },
+    {
+      "id": "OT-08",
+      "action": "Supreme Court preservation/preparation bundle",
+      "status": "PREPARATION ONLY"
+    },
+    {
+      "id": "OT-09",
+      "action": "source-to-Decree correction/clarification matrix",
+      "status": "DRAFT ARCHITECTURE"
+    },
+    {
+      "id": "OT-10",
+      "action": "superior-FGE / disciplinary / criminal / patrimonial route triage",
+      "status": "TRIAGE ONLY"
+    }
+  ],
+  "critical_gates": [
+    "confirm legally effective notification mechanics/date",
+    "record merits-route election"
+  ],
+  "source_identity_update": {
+    "control_date": "2026-08-31",
+    "status": "CLOSED_VERIFIED",
+    "sha512": "352677fed18bd52659b87e68f40ba9793e1844fcc160caca50cab345ddfd06f709afbbbaaa8912458cb067d6df74d309db7c235429302171b51f7ca327bab635",
+    "method": "digest printed on REGAGE26e00070235775 exactly matches the SHA-512 recomputed from the located signed 31 July master",
+    "boundary": "binary identity is not reconsideration filing proof"
+  },
+  "evidential_boundary": "Archive, adverse decisions, source-to-Decree tension, sequence or unanswered requests do not by themselves establish bad faith, obstruction, coordination, prevarication or criminality.",
+  "deployment_closeout_required": false
+}

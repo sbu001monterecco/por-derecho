@@ -30,6 +30,10 @@ The president's circular says the Junta could be called only after sufficient do
 
 PwC's own time record places its team in document review, strategy, legal research and meeting preparation. In parallel, LPB transmitted a written challenge to the debt/morosity/expense premise and asked for document-based correction/postponement. The Community rejected suspension on 25 April and maintained an arrears position.
 
+The newly source-controlled 21-Apr email adds a direct AC/PwC control point. Borja Rodríguez-Batllori told Gil that AC permission was unnecessary merely to attend, while asserting that unpaid Community fees prevented voting. He expressly refused to authorise Luchy/LPB contracting the copied PwC lawyers on the information then supplied and asked Carlos Saavedra, Miguel Hernández and Elena Santos not to provide services to Luchy without his express consent. His stated reasons were lack of treasury, possible credits against the estate, no demonstrated need and no proposed-fee information; he also asserted the prior position of his own court-approved fees.
+
+**Boundary:** this does not prove later PwC attendance was unauthorised. The ACTA records PwC professionals representing named private owners, and PwC's invoice appendix uses Matkator client terminology for the 26-Apr service. The engagement, payer, mandate and any later AC consent must be recovered. See `archive/BORJA_PWC_SUN_PARK_JUNTA_21APR2016_PRIMARY_EMAIL_RECORD_22AUG2026.md`.
+
 **What was already plain before the room opened:** debt, accounts, authority, owner information rights, morosity, expenditure allocation and access were not afterthoughts. They were the subject of written, adviser-led dispute before the vote.
 
 ---

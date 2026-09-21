@@ -1,0 +1,678 @@
+{
+  "schema_version": "1.0.0",
+  "package_id": "PD-EVIS-URIA-RICPE-SUNPARK-20260904",
+  "title": "Uría Menéndez / RICPE / HAYA / Sun Park evidence-visibility register",
+  "scope": "Initial repository-wide evidence-visibility rollout for the Uría/RICPE/HAYA publication, recording native-source, searchable-text, visual-image, redaction, linkage and continuity states without inventing missing evidence images.",
+  "governance": {
+    "control_id": "PD-EVIS-20260904-01",
+    "policy_path": ".github/governance/EVIDENCE_VISIBILITY_IMAGE_OCR_REDACTION_AND_CONTINUITY_STANDARD_04SEP2026.md",
+    "schema_path": ".github/evidence-intelligence/schemas/evidence-visibility.schema.json",
+    "visual_completeness_claim": "PARTIAL"
+  },
+  "role_continuity": {
+    "current_owner_role": "Integrator",
+    "next_owner_role": "Publication Coordinator",
+    "handoff_status": "ACTIVE",
+    "open_gap_count": 11
+  },
+  "records": [
+    {
+      "evidence_id": "PD-EVIS-URIA-2015-CORRESPONDENCE",
+      "title": "2015 creditor / HAYA / Uría correspondence sequence",
+      "document_type": "email and contemporaneous communication sequence",
+      "source_date": "2015-04-28",
+      "languages": ["en", "es"],
+      "source_type": "CONNECTED_SOURCE",
+      "lifecycle_status": "TEXT_EXTRACTED",
+      "provenance": {
+        "custodian_class": "connected private communication source",
+        "source_description": "Contemporaneous communications registered in the controlled 2015 source note, including the 28 April reported pathway, 30 April counter-evidence and 3 July reported contact.",
+        "verified_or_registered_date": "2026-09-04",
+        "integrity_note": "The public source note preserves attribution and counter-evidence; native message exports and source screenshots are not present in the Git tree.",
+        "parent_evidence_id": null,
+        "variant_of": null
+      },
+      "original_asset": {
+        "status": "SOURCE_PENDING",
+        "filename": null,
+        "repository_path": null,
+        "sha256": null,
+        "size_bytes": null,
+        "pages_or_duration": null,
+        "source_reference": "evidence/uria-ricpe-sun-park/2015-creditor-haya-uria-source-note.md",
+        "identity_status": "Native email/message export not yet materialised into repository custody."
+      },
+      "searchable_text": {
+        "status": "PUBLISHED",
+        "method": "controlled source note and attributed transcription",
+        "assets": [
+          {
+            "path": "evidence/uria-ricpe-sun-park/2015-creditor-haya-uria-source-note.md",
+            "kind": "source-note",
+            "language": "en"
+          }
+        ],
+        "limitations": [
+          "Public note is not a byte-identical native email export.",
+          "Native headers, attachments and full thread context remain to be preserved."
+        ]
+      },
+      "visual_evidence": {
+        "status": "SOURCE_PENDING",
+        "images": [],
+        "rendering_rule": "Render full communication pages or source screenshots only from a custody-controlled native export; no synthetic substitute.",
+        "limitations": ["No native communication image is currently stored in the Git tree."]
+      },
+      "redaction": {
+        "status": "NOT_ASSESSED",
+        "reason": "Native communications require privacy and privilege review before public image publication.",
+        "sensitivity_level": "REVIEW_REQUIRED",
+        "public_version_of": null,
+        "method": null,
+        "review": {
+          "status": "PENDING",
+          "reviewer_role": "Publication Coordinator",
+          "review_date": null
+        }
+      },
+      "relations": {
+        "actors": [
+          "Francisco de Borja Rodríguez-Batllori Laffitte",
+          "Javier Rubio Sanz",
+          "Javier González Guimaraes-Da Silva"
+        ],
+        "entities": ["Uría Menéndez", "HAYA / Haya Real Estate", "SAREB"],
+        "proceedings": ["Concurso 36/2012"],
+        "events": [
+          "2015-04-28 reported HAYA-to-Uría pathway",
+          "2015-04-30 no-HAYA-mandate counter-evidence",
+          "2015-07-03 reported AC-to-Rubio contact"
+        ],
+        "pages": [
+          "en/uria-menendez-sun-park/index.html",
+          "es/uria-menendez-sun-park/index.html",
+          "en/puzzle/index.html",
+          "es/puzzle/index.html",
+          "es/haya-cerberus/index.html",
+          "es/uria-menendez/index.html"
+        ],
+        "parent_child": []
+      },
+      "publication": {
+        "status": "REGISTERED",
+        "public_routes": [
+          "en/uria-menendez-sun-park/index.html",
+          "es/uria-menendez-sun-park/index.html",
+          "en/puzzle/index.html",
+          "es/puzzle/index.html",
+          "es/haya-cerberus/index.html"
+        ],
+        "evidence_page": null,
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-URIA-2015-NATIVE",
+          "status": "OPEN",
+          "description": "Native message exports, headers, attachments and source screenshots are not in the repository.",
+          "next_action": "Recover and fingerprint native exports, assess redaction, then render public source images.",
+          "owner_role": "Integrator"
+        },
+        {
+          "gap_id": "EVG-URIA-2015-IMAGE",
+          "status": "OPEN",
+          "description": "No source-derived public evidence images are yet available.",
+          "next_action": "Create page images from the approved public derivative and link them to the source note.",
+          "owner_role": "Publication Coordinator"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PD-EVIS-RICPE-CERT-20210720",
+      "title": "RICPE certification dated 20 July 2021",
+      "document_type": "certification PDF",
+      "source_date": "2021-07-20",
+      "languages": ["es"],
+      "source_type": "SOURCE_NOT_YET_RECOVERED",
+      "lifecycle_status": "SOURCE_PENDING",
+      "provenance": {
+        "custodian_class": "legacy repository fingerprint",
+        "source_description": "Certification described in the Uría/RICPE evidence manifest and relied on as counter-evidence concerning the stage of study and due diligence.",
+        "verified_or_registered_date": "2026-09-04",
+        "integrity_note": "A legacy SHA-256 is registered, but the binary was not re-hashed from a newly recovered connected source in the current pass.",
+        "parent_evidence_id": null,
+        "variant_of": null
+      },
+      "original_asset": {
+        "status": "SOURCE_PENDING",
+        "filename": "RICPE_Certificacion_Enrique_Guerra_20JUL2021.pdf",
+        "repository_path": null,
+        "sha256": "241928ea649933609441644567dd50cb97b87d17bafac850c90aca3bbda37b80",
+        "size_bytes": null,
+        "pages_or_duration": null,
+        "source_reference": "evidence/uria-ricpe-sun-park/manifest.json",
+        "identity_status": "Legacy fingerprint retained; public binary mirror pending."
+      },
+      "searchable_text": {
+        "status": "PARTIAL",
+        "method": "structured summary in evidence manifest and register",
+        "assets": [
+          {"path": "evidence/uria-ricpe-sun-park/manifest.json", "kind": "structured-summary", "language": "en"},
+          {"path": "evidence/uria-ricpe-sun-park/README.md", "kind": "evidence-register", "language": "en"}
+        ],
+        "limitations": ["Complete source-language text and page-level OCR are not yet published."]
+      },
+      "visual_evidence": {
+        "status": "SOURCE_PENDING",
+        "images": [],
+        "rendering_rule": "Materialise the fingerprinted PDF, preserve all pages and render one full-page image per page.",
+        "limitations": ["The fingerprinted PDF binary is not present in the Git tree."]
+      },
+      "redaction": {
+        "status": "NOT_ASSESSED",
+        "reason": "The native PDF must be recovered before a page-level public-data review can be completed.",
+        "sensitivity_level": "REVIEW_REQUIRED",
+        "public_version_of": null,
+        "method": null,
+        "review": {"status": "PENDING", "reviewer_role": "Publication Coordinator", "review_date": null}
+      },
+      "relations": {
+        "actors": ["Enrique Guerra"],
+        "entities": ["RIC Private Equity", "CAM / Acosta Matos perimeter"],
+        "proceedings": ["Concurso 36/2012"],
+        "events": ["2021-07-20 RICPE certification"],
+        "pages": [
+          "en/uria-menendez-sun-park/index.html",
+          "es/uria-menendez-sun-park/index.html",
+          "en/puzzle/index.html",
+          "es/puzzle/index.html"
+        ],
+        "parent_child": ["PD-EVIS-CAM-FILING-20210721"]
+      },
+      "publication": {
+        "status": "REGISTERED",
+        "public_routes": [
+          "en/uria-menendez-sun-park/index.html",
+          "es/uria-menendez-sun-park/index.html",
+          "en/puzzle/index.html",
+          "es/puzzle/index.html"
+        ],
+        "evidence_page": null,
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-RICPE-CERT-BINARY",
+          "status": "OPEN",
+          "description": "The registered PDF binary is not available in the Git tree.",
+          "next_action": "Recover the binary, verify its SHA-256 and page count, assess redaction, extract text and render full-page images.",
+          "owner_role": "Integrator"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PD-EVIS-CAM-FILING-20210721",
+      "title": "CAM filing supplying the RICPE certification dated 21 July 2021",
+      "document_type": "court filing PDF",
+      "source_date": "2021-07-21",
+      "languages": ["es"],
+      "source_type": "SOURCE_NOT_YET_RECOVERED",
+      "lifecycle_status": "SOURCE_PENDING",
+      "provenance": {
+        "custodian_class": "legacy repository fingerprint",
+        "source_description": "CAM filing described in the Uría/RICPE manifest as supplying the 20 July 2021 RICPE certification into the documentary record.",
+        "verified_or_registered_date": "2026-09-04",
+        "integrity_note": "A legacy SHA-256 is registered; the binary has not been newly recovered and independently re-hashed in this pass.",
+        "parent_evidence_id": null,
+        "variant_of": null
+      },
+      "original_asset": {
+        "status": "SOURCE_PENDING",
+        "filename": "CAM_Escrito_Aporta_Certificacion_RICPE_21JUL2021.pdf",
+        "repository_path": null,
+        "sha256": "efda379e7b2ae0bfbbd80859a42332d5aae99ccd9644a04003760158b54b05fd",
+        "size_bytes": null,
+        "pages_or_duration": null,
+        "source_reference": "evidence/uria-ricpe-sun-park/manifest.json",
+        "identity_status": "Legacy fingerprint retained; public binary mirror pending."
+      },
+      "searchable_text": {
+        "status": "PARTIAL",
+        "method": "structured summary in evidence manifest and register",
+        "assets": [
+          {"path": "evidence/uria-ricpe-sun-park/manifest.json", "kind": "structured-summary", "language": "en"},
+          {"path": "evidence/uria-ricpe-sun-park/README.md", "kind": "evidence-register", "language": "en"}
+        ],
+        "limitations": ["Full filing text and page-level OCR are not yet published."]
+      },
+      "visual_evidence": {
+        "status": "SOURCE_PENDING",
+        "images": [],
+        "rendering_rule": "Materialise the filing and render every page, preserving annex order and the relationship to the certification.",
+        "limitations": ["The filing binary is not present in the Git tree."]
+      },
+      "redaction": {
+        "status": "NOT_ASSESSED",
+        "reason": "The filing must be recovered before personal-data and signature review.",
+        "sensitivity_level": "REVIEW_REQUIRED",
+        "public_version_of": null,
+        "method": null,
+        "review": {"status": "PENDING", "reviewer_role": "Publication Coordinator", "review_date": null}
+      },
+      "relations": {
+        "actors": [],
+        "entities": ["CAM / Acosta Matos perimeter", "RIC Private Equity"],
+        "proceedings": ["Concurso 36/2012"],
+        "events": ["2021-07-21 CAM filing supplies RICPE certification"],
+        "pages": [
+          "en/uria-menendez-sun-park/index.html",
+          "es/uria-menendez-sun-park/index.html",
+          "en/puzzle/index.html",
+          "es/puzzle/index.html"
+        ],
+        "parent_child": ["PD-EVIS-RICPE-CERT-20210720"]
+      },
+      "publication": {
+        "status": "REGISTERED",
+        "public_routes": [
+          "en/uria-menendez-sun-park/index.html",
+          "es/uria-menendez-sun-park/index.html",
+          "en/puzzle/index.html",
+          "es/puzzle/index.html"
+        ],
+        "evidence_page": null,
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-CAM-FILING-BINARY",
+          "status": "OPEN",
+          "description": "The registered filing PDF is not available in the Git tree.",
+          "next_action": "Recover and fingerprint the filing, link its annexes, assess redaction, extract text and render all pages.",
+          "owner_role": "Integrator"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PD-EVIS-CAIXABANK-DEFENCE-20240129",
+      "title": "CaixaBank defence dated 29 January 2024",
+      "document_type": "litigation pleading PDF",
+      "source_date": "2024-01-29",
+      "languages": ["es"],
+      "source_type": "CONNECTED_SOURCE",
+      "lifecycle_status": "TEXT_EXTRACTED",
+      "provenance": {
+        "custodian_class": "connected Gmail binary",
+        "source_description": "Current connected copy of the CaixaBank defence in PO 1859/2023-9, registered with counsel and pleading-status boundaries.",
+        "verified_or_registered_date": "2026-09-04",
+        "integrity_note": "Current connected SHA-256 matches the existing repository public-source register; a different legacy variant remains unresolved.",
+        "parent_evidence_id": null,
+        "variant_of": "legacy variant e9cfcc7f364939bab3c796dde132ccc28e7b42e3b98470436af0e4e56eca9669"
+      },
+      "original_asset": {
+        "status": "PRESERVED_EXTERNAL_CONNECTED_SOURCE",
+        "filename": "CONTESTACION.pdf",
+        "repository_path": null,
+        "sha256": "abbaf13c655058635fbd37395ad2e8699c1c91918b6ef75c8a07b90b9b97b73b",
+        "size_bytes": 941946,
+        "pages_or_duration": null,
+        "source_reference": "connected Gmail binary verified 2026-09-04",
+        "identity_status": "Current connected binary verified; legacy same-named variant not yet relocated."
+      },
+      "searchable_text": {
+        "status": "PUBLISHED",
+        "method": "controlled source note and structured manifest summary",
+        "assets": [
+          {"path": "evidence/uria-ricpe-sun-park/caixabank-defence-20240129-source-note.md", "kind": "source-note", "language": "en"},
+          {"path": "evidence/uria-ricpe-sun-park/manifest.json", "kind": "structured-summary", "language": "en"}
+        ],
+        "limitations": [
+          "The source note is not a full public page-by-page transcription.",
+          "Pleaded consequences are party positions, not judicial findings."
+        ]
+      },
+      "visual_evidence": {
+        "status": "SOURCE_PENDING",
+        "images": [],
+        "rendering_rule": "Materialise the verified connected PDF, create a reviewed public derivative and render one source-derived image per page.",
+        "limitations": ["The verified binary is connected but not present in the Git tree or public image set."]
+      },
+      "redaction": {
+        "status": "REDACTION_REQUIRED",
+        "reason": "Court pleading images require review for addresses, signatures, identifiers and irrelevant third-party data.",
+        "sensitivity_level": "REVIEW_REQUIRED",
+        "public_version_of": "PD-EVIS-CAIXABANK-DEFENCE-20240129",
+        "method": null,
+        "review": {"status": "PENDING", "reviewer_role": "Publication Coordinator", "review_date": null}
+      },
+      "relations": {
+        "actors": ["Raimon Tagliavini Sansa", "David García Martín"],
+        "entities": ["CaixaBank, S.A.", "Uría Menéndez", "Luchy Playa Blanca, S.L."],
+        "proceedings": ["PO 1859/2023-9", "Concurso 36/2012"],
+        "events": ["2024-01-29 CaixaBank defence"],
+        "pages": [
+          "en/uria-menendez-sun-park/index.html",
+          "es/uria-menendez-sun-park/index.html",
+          "en/puzzle/index.html",
+          "es/puzzle/index.html",
+          "es/uria-menendez/index.html"
+        ],
+        "parent_child": []
+      },
+      "publication": {
+        "status": "REGISTERED",
+        "public_routes": [
+          "en/uria-menendez-sun-park/index.html",
+          "es/uria-menendez-sun-park/index.html",
+          "en/puzzle/index.html",
+          "es/puzzle/index.html",
+          "es/uria-menendez/index.html"
+        ],
+        "evidence_page": null,
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-CAIXABANK-DEFENCE-MATERIALISE",
+          "status": "OPEN",
+          "description": "The verified connected PDF is not present in repository custody.",
+          "next_action": "Materialise the exact verified binary and confirm page count and hash.",
+          "owner_role": "Integrator"
+        },
+        {
+          "gap_id": "EVG-CAIXABANK-DEFENCE-VISUAL",
+          "status": "OPEN",
+          "description": "No reviewed public page-image set is linked.",
+          "next_action": "Create a technically flattened redacted derivative, hash it, render all pages and link OCR.",
+          "owner_role": "Publication Coordinator"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PD-EVIS-CONTROL21-DOCX-20260709",
+      "title": "Control 21 consolidated filing version dated 9 July 2026",
+      "document_type": "judicial filing DOCX",
+      "source_date": "2026-07-09",
+      "languages": ["es", "en"],
+      "source_type": "CONNECTED_SOURCE",
+      "lifecycle_status": "TEXT_EXTRACTED",
+      "provenance": {
+        "custodian_class": "connected Gmail binary and connected receipt",
+        "source_description": "Recovered consolidated DOCX containing Section XII bis and the Uría/PwC/RICPE production request.",
+        "verified_or_registered_date": "2026-09-04",
+        "integrity_note": "The connected DOCX hash is verified, but byte-for-byte identity with the exact physically filed packet remains unestablished.",
+        "parent_evidence_id": null,
+        "variant_of": "legacy variant 6741dcbfb1a2201c7773141bcfad292d101041560e599aac39178ea9530623c9"
+      },
+      "original_asset": {
+        "status": "PRESERVED_EXTERNAL_CONNECTED_SOURCE",
+        "filename": "CONTROL21_Ampliacion_JDAM_LPAM_AcostaMatos_09JUL2026_FINAL_CONSOLIDADA_PRINT_FILE_FIRMA.docx",
+        "repository_path": null,
+        "sha256": "d13ddbc3c55c0d7f4753b25e0444275ec5bf1b21e0b378fcfd6315550ba78f09",
+        "size_bytes": 62288,
+        "pages_or_duration": "18 pages reported in recovered source note",
+        "source_reference": "connected Gmail binary verified 2026-09-04",
+        "identity_status": "Recovered connected version; exact court-filed byte identity remains open."
+      },
+      "searchable_text": {
+        "status": "PUBLISHED",
+        "method": "complete source-language transcription and English translation of relevant Section XII bis",
+        "assets": [
+          {"path": "evidence/uria-ricpe-sun-park/control21-09jul2026-xii-bis-translation.md", "kind": "source-text-and-translation", "language": "es-en"},
+          {"path": "evidence/uria-ricpe-sun-park/manifest.json", "kind": "structured-summary", "language": "en"}
+        ],
+        "limitations": [
+          "The published text covers the complete relevant Section XII bis, not necessarily every page of the 18-page DOCX.",
+          "The request does not prove that responsive Uría reports exist or that the court granted production."
+        ]
+      },
+      "visual_evidence": {
+        "status": "SOURCE_PENDING",
+        "images": [],
+        "rendering_rule": "Materialise the verified DOCX, preserve a stable PDF rendition, assess redaction and render every page without implying exact filed-byte identity.",
+        "limitations": [
+          "No source-derived page-image set is present in the Git tree.",
+          "A rendered DOCX page is a rendition and must remain distinguished from the native DOCX and exact filed packet."
+        ]
+      },
+      "redaction": {
+        "status": "REDACTION_REQUIRED",
+        "reason": "The full filing requires review for addresses, signatures, identifiers and irrelevant personal data before page-image publication.",
+        "sensitivity_level": "REVIEW_REQUIRED",
+        "public_version_of": "PD-EVIS-CONTROL21-DOCX-20260709",
+        "method": null,
+        "review": {"status": "PENDING", "reviewer_role": "Publication Coordinator", "review_date": null}
+      },
+      "relations": {
+        "actors": ["Gil Marer", "Enrique Guerra", "Murli Kessomal", "Dunia Pérez", "José Daniel Acosta Matos"],
+        "entities": ["Uría Menéndez", "PwC", "RIC Private Equity", "CAM / Acosta Matos perimeter"],
+        "proceedings": ["Procedure 1901/2026", "Concurso 36/2012"],
+        "events": ["2026-07-09 physical submission/reception supported by connected receipt"],
+        "pages": [
+          "en/uria-menendez-sun-park/index.html",
+          "es/uria-menendez-sun-park/index.html",
+          "en/puzzle/index.html",
+          "es/puzzle/index.html",
+          "es/uria-menendez/index.html"
+        ],
+        "parent_child": ["PD-EVIS-DECANATO-RECEIPT-20260709"]
+      },
+      "publication": {
+        "status": "REGISTERED",
+        "public_routes": [
+          "en/uria-menendez-sun-park/index.html",
+          "es/uria-menendez-sun-park/index.html",
+          "en/puzzle/index.html",
+          "es/puzzle/index.html",
+          "es/uria-menendez/index.html"
+        ],
+        "evidence_page": null,
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-CONTROL21-MATERIALISE",
+          "status": "OPEN",
+          "description": "The verified DOCX is not present in Git custody.",
+          "next_action": "Materialise the verified DOCX and preserve its native hash and a stable rendition.",
+          "owner_role": "Integrator"
+        },
+        {
+          "gap_id": "EVG-CONTROL21-ALL-PAGES",
+          "status": "OPEN",
+          "description": "Only the relevant section is fully transcribed publicly; no full 18-page visual/text set exists.",
+          "next_action": "Review, redact where needed, extract all searchable text and render all pages while preserving rendition limitations.",
+          "owner_role": "Integrator"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PD-EVIS-DECANATO-RECEIPT-20260709",
+      "title": "Decanato receipt image dated 9 July 2026",
+      "document_type": "physical filing receipt JPEG",
+      "source_date": "2026-07-09",
+      "languages": ["es"],
+      "source_type": "CONNECTED_SOURCE",
+      "lifecycle_status": "SOURCE_PRESERVED",
+      "provenance": {
+        "custodian_class": "connected Gmail image binary",
+        "source_description": "Connected JPEG visibly bearing a 9 July 2026 Decanato stamp and procedure number 1901/2026.",
+        "verified_or_registered_date": "2026-09-04",
+        "integrity_note": "The receipt supports reception/submission on the date shown; it does not independently prove byte-for-byte identity of the recovered DOCX with the filed packet.",
+        "parent_evidence_id": "PD-EVIS-CONTROL21-DOCX-20260709",
+        "variant_of": "legacy variant fb9f9f5b65735fe0f53318d7d122801520b0968dc34a1bac4f6505f20e2ca967"
+      },
+      "original_asset": {
+        "status": "PRESERVED_EXTERNAL_CONNECTED_SOURCE",
+        "filename": "Ampliacion Proc.1901-2026 (CAM et al) 09JUL2026.jpeg",
+        "repository_path": null,
+        "sha256": "dfad6f405b7a2ec047a98a7183a9cbfd0698427d3925d02b2a50b4de76de8f71",
+        "size_bytes": 295037,
+        "pages_or_duration": "single image",
+        "source_reference": "connected Gmail image binary verified 2026-09-04",
+        "identity_status": "Current connected image verified; legacy variant not yet relocated."
+      },
+      "searchable_text": {
+        "status": "PARTIAL",
+        "method": "visible receipt fields described in controlled source note",
+        "assets": [
+          {"path": "evidence/uria-ricpe-sun-park/control21-09jul2026-xii-bis-translation.md", "kind": "receipt-description", "language": "en"}
+        ],
+        "limitations": [
+          "No standalone field-by-field transcription or OCR asset is yet published.",
+          "Exact filing time is not established."
+        ]
+      },
+      "visual_evidence": {
+        "status": "SOURCE_PENDING",
+        "images": [],
+        "rendering_rule": "Materialise the verified JPEG, assess and apply narrow public redaction if needed, then publish the source-derived image with its hash.",
+        "limitations": ["Although the source is itself an image, the verified binary is not stored in the public Git tree and cannot yet be displayed."]
+      },
+      "redaction": {
+        "status": "NOT_ASSESSED",
+        "reason": "The receipt image must be inspected for address, signature, code or other personal-data fields before public display.",
+        "sensitivity_level": "REVIEW_REQUIRED",
+        "public_version_of": null,
+        "method": null,
+        "review": {"status": "PENDING", "reviewer_role": "Publication Coordinator", "review_date": null}
+      },
+      "relations": {
+        "actors": ["Gil Marer"],
+        "entities": ["Decanato de Las Palmas"],
+        "proceedings": ["Procedure 1901/2026"],
+        "events": ["2026-07-09 receipt / submission evidence"],
+        "pages": [
+          "en/uria-menendez-sun-park/index.html",
+          "es/uria-menendez-sun-park/index.html",
+          "en/puzzle/index.html",
+          "es/puzzle/index.html"
+        ],
+        "parent_child": ["PD-EVIS-CONTROL21-DOCX-20260709"]
+      },
+      "publication": {
+        "status": "REGISTERED",
+        "public_routes": [
+          "en/uria-menendez-sun-park/index.html",
+          "es/uria-menendez-sun-park/index.html",
+          "en/puzzle/index.html",
+          "es/puzzle/index.html"
+        ],
+        "evidence_page": null,
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-RECEIPT-PUBLIC-IMAGE",
+          "status": "OPEN",
+          "description": "The verified receipt image is not yet materialised and publicly rendered.",
+          "next_action": "Materialise, inspect, redact narrowly if needed, hash the derivative and publish the evidence image.",
+          "owner_role": "Publication Coordinator"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PD-EVIS-RICPE-PRESENTATION-20201111",
+      "title": "RICPE Sun Park presentation / webinar materials dated 11 November 2020",
+      "document_type": "presentation, webinar and associated investor materials",
+      "source_date": "2020-11-11",
+      "languages": ["es"],
+      "source_type": "SOURCE_NOT_YET_RECOVERED",
+      "lifecycle_status": "SOURCE_PENDING",
+      "provenance": {
+        "custodian_class": "preserved attributed-material references",
+        "source_description": "Materials and transcriptions described in the Uría/RICPE evidence register as presenting Sun Park, Uría Madrid, PwC and attributed statements concerning title and encumbrances.",
+        "verified_or_registered_date": "2026-09-04",
+        "integrity_note": "The public register preserves attributed representations and evidential limits; a complete native deck, recording and investor-interaction set is not present in the Git tree.",
+        "parent_evidence_id": null,
+        "variant_of": null
+      },
+      "original_asset": {
+        "status": "SOURCE_PENDING",
+        "filename": null,
+        "repository_path": null,
+        "sha256": null,
+        "size_bytes": null,
+        "pages_or_duration": null,
+        "source_reference": "evidence/uria-ricpe-sun-park/README.md",
+        "identity_status": "Native deck, video/audio, script, chat, Q&A and invitation set remain production/recovery targets."
+      },
+      "searchable_text": {
+        "status": "PARTIAL",
+        "method": "attributed statements and structured chronology in the evidence register",
+        "assets": [
+          {"path": "evidence/uria-ricpe-sun-park/README.md", "kind": "evidence-register", "language": "en"},
+          {"path": "evidence/uria-ricpe-sun-park/manifest.json", "kind": "structured-summary", "language": "en"},
+          {"path": "evidence/uria-ricpe-sun-park/control21-09jul2026-xii-bis-translation.md", "kind": "production-request-context", "language": "es-en"}
+        ],
+        "limitations": [
+          "Complete native presentation text, recording transcript, chat and Q&A are not published.",
+          "Attributed statements are not independent proof of title or absence of charges."
+        ]
+      },
+      "visual_evidence": {
+        "status": "SOURCE_PENDING",
+        "images": [],
+        "rendering_rule": "Recover the native deck and recording, fingerprint each object, render every slide and source-derived material keyframes, and keep diagrams separate from evidence images.",
+        "limitations": ["No complete source-derived slide image set or native webinar media is present."]
+      },
+      "redaction": {
+        "status": "NOT_ASSESSED",
+        "reason": "Investor names, attendee lists, chat and contact data require review before public publication.",
+        "sensitivity_level": "REVIEW_REQUIRED",
+        "public_version_of": null,
+        "method": null,
+        "review": {"status": "PENDING", "reviewer_role": "Publication Coordinator", "review_date": null}
+      },
+      "relations": {
+        "actors": ["José Acosta"],
+        "entities": ["RIC Private Equity", "CAM / Acosta Matos perimeter", "Uría Menéndez", "PwC", "Sun Park"],
+        "proceedings": ["Procedure 1901/2026"],
+        "events": ["2020-11-11 RICPE webinar / presentation"],
+        "pages": [
+          "en/uria-menendez-sun-park/index.html",
+          "es/uria-menendez-sun-park/index.html",
+          "en/puzzle/index.html",
+          "es/puzzle/index.html",
+          "es/uria-menendez/index.html"
+        ],
+        "parent_child": []
+      },
+      "publication": {
+        "status": "REGISTERED",
+        "public_routes": [
+          "en/uria-menendez-sun-park/index.html",
+          "es/uria-menendez-sun-park/index.html",
+          "en/puzzle/index.html",
+          "es/puzzle/index.html",
+          "es/uria-menendez/index.html"
+        ],
+        "evidence_page": null,
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-RICPE-WEBINAR-NATIVE",
+          "status": "OPEN",
+          "description": "The native webinar, deck, script, chat and Q&A are not in repository custody.",
+          "next_action": "Recover and fingerprint each native component and record its provenance.",
+          "owner_role": "Integrator"
+        },
+        {
+          "gap_id": "EVG-RICPE-WEBINAR-VISUAL",
+          "status": "OPEN",
+          "description": "No complete slide images or source-derived media stills are published.",
+          "next_action": "Render every slide and material source still after redaction review, then link searchable transcript and OCR.",
+          "owner_role": "Integrator"
+        }
+      ]
+    }
+  ]
+}

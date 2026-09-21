@@ -1,0 +1,112 @@
+name: Validate AC Community de facto administration
+
+on:
+  pull_request:
+    paths:
+      - 'archive/AC_PRIVATE_ACTOR_DE_FACTO_ADMINISTRATION_**'
+      - 'archive/*DE_FACTO_ADMINISTRATION*'
+      - 'archive/MASTER_EXECUTION_PROMPT_DE_FACTO_MANAGEMENT_KNOWING_FACILITATION_VISIBILITY_20AUG2026.md'
+      - 'archive/AC_DE_FACTO_MANAGEMENT_KNOWING_FACILITATION_VISIBILITY_CONTROL_20AUG2026.md'
+      - 'archive/THREAD_DELETION_AUDIT_AC_DE_FACTO_KNOWING_FACILITATION_VISIBILITY_20AUG2026.md'
+      - 'assets/data/ac-private-actor-de-facto-administration-v1.json'
+      - 'assets/data/ac-de-facto-knowing-facilitation-visibility-v1.json'
+      - 'assets/ac-community-de-facto-administration-20260820.js'
+      - 'assets/ac-de-facto-knowing-facilitation-visibility-20260820.js'
+      - 'assets/ac-de-facto-knowing-facilitation-stability-20260820.js'
+      - 'assets/site.js'
+      - 'assets/homepage-actor-family-pwc-note-20260819.js'
+      - 'assets/five-actor-accountability-20260824.css'
+      - 'assets/audience-experience-order-20260823.js'
+      - 'assets/calificacion-criminal-misuse-thesis-20260824.js'
+      - 'assets/ricpe-identity-correction-20260815.js'
+      - 'assets/site-base-20260819.js'
+      - 'assets/site-pre-intervencion-highlight-before-eg95-20260823.js'
+      - 'assets/site-pre-intervencion-highlight-20260820.js'
+      - 'AGENTS.md'
+      - 'ops/REPOSITORY_PRESERVATION_CONTRACT.json'
+      - 'scripts/validate_repository_preservation.py'
+      - 'es/index.html'
+      - 'en/index.html'
+      - 'es/administracion-de-hecho-comunidad-ac/index.html'
+      - 'en/de-facto-administration-community-ac/index.html'
+      - 'es/pwc-canarias-carlos-saavedra-sun-park/index.html'
+      - 'en/pwc-canarias-carlos-saavedra-sun-park/index.html'
+      - 'es/ric-private-equity-sun-park/index.html'
+      - 'en/ric-private-equity-sun-park/index.html'
+      - 'es/concurso-36-2012-administrador-concursal/index.html'
+      - 'en/insolvency-36-2012-insolvency-administrator/index.html'
+      - 'es/concurso-36-2012-magistrado-juez/index.html'
+      - 'es/concurso-36-2012-juzgado-mercantil-1/index.html'
+      - 'en/insolvency-36-2012-mercantile-court-1/index.html'
+      - 'es/toma-control-sun-park-7-junio-2018/index.html'
+      - 'en/sun-park-takeover-7-june-2018/index.html'
+      - 'es/concurso-36-2012-responsabilidad-institucional/index.html'
+      - 'en/insolvency-36-2012-institutional-accountability/index.html'
+      - 'operations/AC_COMMUNITY_DE_FACTO_ADMINISTRATION_ACTIVATION_2026-08-20.md'
+      - 'operations/AC_DE_FACTO_MANAGEMENT_KNOWING_FACILITATION_VISIBILITY_ACTIVATION_2026-08-20.md'
+      - 'publication-manifests/ac-community-de-facto-administration-2026-08-20.json'
+      - 'publication-manifests/ac-de-facto-knowing-facilitation-visibility-2026-08-20.json'
+      - 'sitemap-ac-community-de-facto-administration.xml'
+      - 'robots.txt'
+      - 'scripts/validate_ac_community_de_facto_administration.py'
+      - 'scripts/render_ac_community_de_facto_administration.mjs'
+      - '.github/workflows/validate-ac-community-de-facto-administration.yml'
+      - '.github/workflows/verify-ac-community-de-facto-administration-live.yml'
+  push:
+    branches:
+      - 'agent/ac-de-facto-knowing-facilitation-visibility-20260820'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-ac-community-de-facto-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+      - name: Validate files, source boundaries, allegation attribution and route coverage
+        run: python3 scripts/validate_ac_community_de_facto_administration.py
+      - name: Validate JavaScript syntax
+        run: |
+          node --check assets/ac-community-de-facto-administration-20260820.js
+          node --check assets/ac-de-facto-knowing-facilitation-visibility-20260820.js
+          node --check assets/ac-de-facto-knowing-facilitation-stability-20260820.js
+          node --check scripts/render_ac_community_de_facto_administration.mjs
+      - name: Start local site
+        run: |
+          mkdir -p "$RUNNER_TEMP/site"
+          ln -s "$GITHUB_WORKSPACE" "$RUNNER_TEMP/site/por-derecho"
+          nohup python3 -m http.server 4173 --directory "$RUNNER_TEMP/site" >"$RUNNER_TEMP/ac-dfa-http.log" 2>&1 &
+          for attempt in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4173/por-derecho/es/administracion-de-hecho-comunidad-ac/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat "$RUNNER_TEMP/ac-dfa-http.log" || true
+          exit 1
+      - name: Use preinstalled Chrome with Playwright
+        run: |
+          npm install --no-save playwright@1.50.1
+          BROWSER_PATH="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          test -n "$BROWSER_PATH"
+          echo "PSR_BROWSER_PATH=$BROWSER_PATH" >> "$GITHUB_ENV"
+      - name: Verify rendered bilingual allegation visibility and route propagation
+        env:
+          PSR_BASE_URL: http://127.0.0.1:4173/por-derecho
+          PSR_AC_DFA_ARTIFACT_DIR: artifacts/ac-community-de-facto-local
+        run: node scripts/render_ac_community_de_facto_administration.mjs
+      - name: Show evidence
+        if: always()
+        run: |
+          cat artifacts/ac-community-de-facto-local/result.json || true
+          cat "$RUNNER_TEMP/ac-dfa-http.log" || true

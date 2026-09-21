@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 """Validate the Por Derecho operational control plane.
 
-Open work is allowed. Forgotten, unowned, untracked, stale or falsely closed work is not.
+Open work is allowed. Forgotten, unowned, untracked or falsely closed work is not.
+Review-due work remains visible without freezing unrelated additive publication.
 """
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 from datetime import date
 from pathlib import Path
+from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "operations" / "open-operational-items.json"
@@ -30,19 +33,22 @@ def parse_iso_day(value: object, label: str, errors: list[str]) -> date | None:
         return None
 
 
-def main() -> int:
-    errors: list[str] = []
-    if not REGISTRY.is_file():
-        print("OPERATIONAL INTEGRITY GATE: FAIL")
-        print(" - operations/open-operational-items.json is missing")
-        return 1
+def validate_registry(
+    data: object, *, today: date
+) -> tuple[list[str], list[str], dict[str, int]]:
+    """Return hard errors, review-due warnings and summary metrics.
 
-    try:
-        data = json.loads(REGISTRY.read_text(encoding="utf-8"))
-    except Exception as exc:
-        print("OPERATIONAL INTEGRITY GATE: FAIL")
-        print(f" - invalid JSON: {exc}")
-        return 1
+    Calendar age alone is advisory in the universal publication gate. Structural
+    defects, contradictions and unsupported closure claims remain hard failures.
+    A separately scoped action or state claim may still treat a relevant stale
+    item as a hard stop under AGENTS.md PD-GOV-005.
+    """
+    errors: list[str] = []
+    warnings: list[str] = []
+    metrics = {"items": 0, "active": 0, "blocking": 0, "review_due": 0}
+
+    if not isinstance(data, dict):
+        return ["registry root must be an object"], warnings, metrics
 
     if data.get("registry_version") != 1:
         errors.append("registry_version must be 1")
@@ -56,7 +62,6 @@ def main() -> int:
         items = []
 
     seen: set[str] = set()
-    today = date.today()
 
     for index, item in enumerate(items):
         prefix = f"items[{index}]"
@@ -91,8 +96,8 @@ def main() -> int:
         if last_verified and review_by and review_by < last_verified:
             errors.append(f"{item_id}: review_by precedes last_verified_at")
         if status != "CLOSED" and review_by and review_by < today:
-            errors.append(
-                f"{item_id}: review is stale (review_by={review_by.isoformat()}, today={today.isoformat()}); refresh status/evidence before merge"
+            warnings.append(
+                f"{item_id}: review is due (review_by={review_by.isoformat()}, today={today.isoformat()}); refresh status/evidence after a real review"
             )
 
         tracking = item.get("tracking")
@@ -121,20 +126,83 @@ def main() -> int:
         if status == "BLOCKED" and not any(bool(blocks.get(key)) for key in BLOCK_KEYS):
             errors.append(f"{item_id}: BLOCKED item must declare at least one blocking dimension")
 
+    active = sum(
+        1
+        for item in items
+        if isinstance(item, dict) and item.get("status") != "CLOSED"
+    )
+    blocking = sum(
+        1
+        for item in items
+        if isinstance(item, dict)
+        and isinstance(item.get("blocks"), dict)
+        and any(item["blocks"].values())
+    )
+    metrics.update(
+        {
+            "items": len(items),
+            "active": active,
+            "blocking": blocking,
+            "review_due": len(warnings),
+        }
+    )
+    return errors, warnings, metrics
+
+
+def emit_warning(message: str) -> None:
+    print(f"WARNING: {message}")
+    if os.getenv("GITHUB_ACTIONS") == "true":
+        escaped = message.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+        print(
+            "::warning file=operations/open-operational-items.json,"
+            f"title=Operational review due::{escaped}"
+        )
+
+
+def report_validation(data: object, *, today: date) -> int:
+    """Print the gate result and return its process status."""
+    errors, warnings, metrics = validate_registry(data, today=today)
     if errors:
         print("OPERATIONAL INTEGRITY GATE: FAIL")
         for error in errors:
             print(f" - {error}")
+        for warning in warnings:
+            emit_warning(warning)
         return 1
 
-    active = sum(1 for item in items if item.get("status") != "CLOSED")
-    blocking = sum(
-        1
-        for item in items
-        if isinstance(item.get("blocks"), dict) and any(item["blocks"].values())
+    if warnings:
+        print(
+            "OPERATIONAL INTEGRITY GATE: PASS WITH WARNINGS "
+            f"({metrics['items']} items; {metrics['active']} non-closed; "
+            f"{metrics['blocking']} with blocking dimensions; "
+            f"{metrics['review_due']} reviews due)"
+        )
+        for warning in warnings:
+            emit_warning(warning)
+        return 0
+
+    print(
+        "OPERATIONAL INTEGRITY GATE: PASS "
+        f"({metrics['items']} items; {metrics['active']} non-closed; "
+        f"{metrics['blocking']} with blocking dimensions)"
     )
-    print(f"OPERATIONAL INTEGRITY GATE: PASS ({len(items)} items; {active} non-closed; {blocking} with blocking dimensions)")
     return 0
+
+
+def main() -> int:
+    if not REGISTRY.is_file():
+        print("OPERATIONAL INTEGRITY GATE: FAIL")
+        print(" - operations/open-operational-items.json is missing")
+        return 1
+
+    try:
+        data: Any = json.loads(REGISTRY.read_text(encoding="utf-8"))
+    except Exception as exc:
+        print("OPERATIONAL INTEGRITY GATE: FAIL")
+        print(f" - invalid JSON: {exc}")
+        return 1
+
+    return report_validation(data, today=date.today())
 
 
 if __name__ == "__main__":

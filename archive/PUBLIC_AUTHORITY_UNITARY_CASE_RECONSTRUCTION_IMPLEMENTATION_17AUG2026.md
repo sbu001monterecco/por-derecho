@@ -110,7 +110,7 @@ The 2018 seed imports only the status already controlled by:
 including:
 
 - two separate 16-Apr-2018 Autos;
-- incomplete 4-Jun-2018 source status;
+- complete three-page canonical 4-Jun-2018 source status through Gmail `194a98a11920fefd`, `20180604 Auto Aclaracion Auto Aprobacion Plan Liquidacion.pdf`; the older two-page SHA-256 `867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0` is retained only as a superseded derivative and canonical-copy hash/service/implementation binding remains open;
 - 15-Jun-2018 LAJ attribution;
 - 26-Jun-2018 suspension Auto;
 - source/hash anti-conflation rules.
@@ -183,7 +183,7 @@ The site does **not** state that a court-appointed forensic auditor currently ex
 4. bind actual complete 2018/2019/2022 ACTAs and annexes;
 5. populate institution-receipt ledgers from exact Yaiza/Cabildo/CNMV/Fiscalía/funding source records;
 6. reconcile funding DD/waivers/source-and-use/costs/jobs/title;
-7. recover the complete 4-Jun-2018 Auto continuation/signature copy;
+7. bind the canonical three-page 4-Jun-2018 Auto's hash, exact service/notification and downstream implementation;
 8. run nominal-vs-reconstructed majority and counterfactual validity calculations when the unit source is sufficient.
 
 ## Publication boundary

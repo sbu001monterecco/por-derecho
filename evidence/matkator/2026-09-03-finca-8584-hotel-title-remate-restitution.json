@@ -1,0 +1,107 @@
+{
+  "control_id": "PD-MAT8584-UCC-20260903-01",
+  "created": "2026-09-03",
+  "workspace": "PD-WS-20260902-0001",
+  "status": "controlling_source_classified_governance",
+  "canonical_thesis": {
+    "es": "Un sistema hotelero productivo y regulado, varios compartimentos jurídicos de título.",
+    "en": "One regulated hotel productive system, several legally distinct title compartments."
+  },
+  "propositions": [
+    {
+      "proposition_id": "MAT8584-HOTEL-NOT-AUTONOMOUS-001",
+      "source_status": "EVIDENCE_BASED_INFERENCE",
+      "proposition_es": "La finca 8584 no se analiza como apartamento autónomo, sino como título registral integrado en un establecimiento hotelero funcionalmente unitario.",
+      "proposition_en": "Finca 8584 is not analysed as an autonomous apartment but as a registered title integrated into a functionally unified hotel establishment.",
+      "affected_entities": ["Matkator, S.L.", "Hotel New Trend, S.L.", "Canarian Hospitality, S.L.", "Construcciones Acosta Matos, S.A."],
+      "affected_proceedings": ["ETJ 163/2020", "DP 748/2026", "DP 711/2025", "Concurso 36/2012"],
+      "missing_discriminator": "Certified Registry-Cadastre-as-built-current-room overlay and operator authority",
+      "public_private_status": "PUBLIC_SOURCE_SAFE"
+    },
+    {
+      "proposition_id": "MAT8584-TITLE-RIGHTS-ANCHOR-002",
+      "source_status": "LEGAL_CONTEXT_PLUS_PARTY_POSITION",
+      "proposition_es": "La titularidad es el anclaje de derechos de propiedad, posesión, acceso, gobernanza, explotación hotelera, contabilidad, prueba y restitución, sujetos a prueba específica.",
+      "proposition_en": "Title anchors property, possession, access, governance, hotel-operation, accounting, evidential and restitution rights, subject to specific proof.",
+      "affected_entities": ["Matkator, S.L."],
+      "affected_proceedings": ["ETJ 163/2020", "DP 748/2026", "DP 711/2025"],
+      "missing_discriminator": "Title, contract and statutory right-by-right analysis",
+      "public_private_status": "PUBLIC_SOURCE_SAFE"
+    },
+    {
+      "proposition_id": "MAT8584-ADJUDICATION-INJURY-003",
+      "source_status": "EVIDENCE_BASED_INFERENCE",
+      "proposition_es": "La adjudicación puede producir un perjuicio nuevo antes de cualquier cesión, al debilitar la legitimación y dificultar restitución, contabilidad y continuidad de remedios.",
+      "proposition_en": "Adjudication may create a new injury before any cession by weakening standing and impairing restitution, accounting and continuity of remedies.",
+      "affected_entities": ["Matkator, S.L.", "Cuatrecasas Legal, S.L.P."],
+      "affected_proceedings": ["ETJ 163/2020", "DP 748/2026"],
+      "missing_discriminator": "Current adjudication status and remedy-specific legal analysis",
+      "public_private_status": "PUBLIC_SOURCE_SAFE"
+    },
+    {
+      "proposition_id": "MAT8584-FORMAL-REAL-BENEFICIARY-004",
+      "source_status": "EVIDENCE_BASED_INFERENCE",
+      "proposition_es": "El adjudicatario formal, el cesionario formal y el beneficiario real o terminal deben registrarse por separado.",
+      "proposition_en": "The formal adjudicatee, formal assignee and real or terminal beneficiary must be recorded separately.",
+      "affected_entities": ["Cuatrecasas Legal, S.L.P.", "Construcciones Acosta Matos, S.A.", "Hotel New Trend, S.L.", "Canarian Hospitality, S.L."],
+      "affected_proceedings": ["ETJ 163/2020", "DP 748/2026"],
+      "missing_discriminator": "Formal recipient, principal/UBO, consideration, communications and post-transfer use",
+      "public_private_status": "PUBLIC_SOURCE_SAFE"
+    },
+    {
+      "proposition_id": "MAT8584-RESTITUTION-OBSTRUCTION-005",
+      "source_status": "PARTY_ALLEGATION",
+      "proposition_es": "Matkator sostiene que la falta de restitución hasta la fecha deriva de actuaciones y omisiones impugnadas y no demuestra que la restitución sea imposible.",
+      "proposition_en": "Matkator maintains that the lack of restitution to date results from challenged acts and omissions and does not show that restitution is impossible.",
+      "affected_entities": ["Matkator, S.L."],
+      "affected_proceedings": ["DP 711/2025", "DP 748/2026", "ETJ 163/2020", "Concurso 36/2012"],
+      "missing_discriminator": "Actor-specific decisions, causation and competent judicial findings",
+      "public_private_status": "PUBLIC_ATTRIBUTED"
+    },
+    {
+      "proposition_id": "MAT8584-CONCURSAL-CONSEQUENCE-006",
+      "source_status": "EVIDENCE_BASED_INFERENCE",
+      "proposition_es": "La finca 8584 no pertenece a la masa de LPB, pero su transferencia puede tener consecuencias sobre unidad productiva, valoración, reclamaciones, recuperación y rendición de cuentas del Concurso 36/2012.",
+      "proposition_en": "Finca 8584 is not part of LPB's estate, but its transfer may have productive-unit, valuation, claims, recovery and accountability consequences for Concurso 36/2012.",
+      "affected_entities": ["Matkator, S.L.", "Luchy Playa Blanca, S.L.", "Aweswell Limited"],
+      "affected_proceedings": ["Concurso 36/2012", "RPL 2523/2025", "RPL 3304/2025", "RPL 3319/2025"],
+      "missing_discriminator": "Estate right/value/remedy bridge",
+      "public_private_status": "PUBLIC_SOURCE_SAFE"
+    },
+    {
+      "proposition_id": "MAT8584-CUAT-KNOWLEDGE-007",
+      "source_status": "PARTIAL_DOCUMENTARY_FACT_PLUS_OPEN_INFERENCE",
+      "proposition_es": "La historia del mandato hace pertinente reconstruir el conocimiento individual de Cuatrecasas, pero no permite imputar automáticamente conocimiento o dolo a cada profesional posterior.",
+      "proposition_en": "The mandate history makes individual Cuatrecasas knowledge relevant, but does not automatically impute knowledge or intent to each later professional.",
+      "affected_entities": ["Cuatrecasas Legal, S.L.P."],
+      "affected_proceedings": ["DP 748/2026", "ETJ 163/2020", "ICAM/CCACM/ICALPA/ICATF tracks"],
+      "missing_discriminator": "Individual/team receipt, role, filing and decision chronology",
+      "public_private_status": "PUBLIC_SOURCE_SAFE"
+    }
+  ],
+  "legal_person_boundary": [
+    "Matkator is distinct from LPB and Aweswell",
+    "LPB estate is not the whole hotel",
+    "CAM, HNT, Canarian Hospitality and RICPE are distinct entities",
+    "Physical and economic continuity does not prove collective criminal intent"
+  ],
+  "official_legal_context": [
+    "https://www.boe.es/eli/es-cn/l/1995/04/06/7/con",
+    "https://www.boe.es/eli/es/l/1960/07/21/49/con",
+    "https://www.boe.es/eli/es/lo/1995/11/23/10/con",
+    "https://www.boe.es/eli/es/l/2000/01/07/1/con",
+    "https://www.boe.es/eli/es/d/1946/02/08/%281%29/con"
+  ],
+  "public_routes": {
+    "es": "/por-derecho/es/matkator-8584-titulo-hotel-remate-restitucion/",
+    "en": "/por-derecho/en/matkator-8584-hotel-title-remate-restitution/"
+  },
+  "supersedes": [
+    "autonomous-apartment analytical framing",
+    "cession-only prejudice framing",
+    "beneficiary wholly unknown framing",
+    "extraconcursal therefore irrelevant framing",
+    "non-restoration therefore impossible framing"
+  ],
+  "last_verified": "2026-09-03"
+}

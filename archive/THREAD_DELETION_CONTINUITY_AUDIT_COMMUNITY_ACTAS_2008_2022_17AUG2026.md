@@ -47,8 +47,8 @@ Treat this as a CONTEMPORANEOUS THIRD-PARTY TRANSACTION BASELINE. It is not proo
 
 ### 2008 source family located
 
-- Drive ID `1Ups4s_2TcHyCByxSiK-WIx-ieEdciVbe` — `2. ACTA 2008 - 29 ABR (constitución CEXP por venta del Hotel).pdf`.
-- Drive ID `1CEJLnY3r5kM_WBk6YWiZjIalNlCfeToA` — `2. Contrato cesión explotación y estatutos de CEXP MAY2008.pdf`.
+- Drive ID `SP-PRV-LCTR-GD-C5CE20DD0F9B3D5C8D3F` — `2. ACTA 2008 - 29 ABR (constitución CEXP por venta del Hotel).pdf`.
+- Drive ID `SP-PRV-LCTR-GD-461B8270D75E47138421` — `2. Contrato cesión explotación y estatutos de CEXP MAY2008.pdf`.
 
 The current public Comunidad page already links the 29-Apr-2008 ACTA and says the located record shows voluntary participation: 84.988% present/represented and 74.90% approving creation of CEXP/statutes/authority to contract with Montelanza, with 10.01% opposing or reserving decision. Re-verify against the primary ACTA before strengthening.
 
@@ -64,7 +64,7 @@ The page also records that a file labelled as a 2011 minute actually corresponds
 
 ### 26 April 2016 primary ACTA
 
-Primary Drive source located/fetched: `ACTA 2016 - 26 ABR.pdf` / Drive ID `1YMnEVDQj7r1E2aWgWL2Ne9b5gYP6ZRbd`.
+Primary Drive source located/fetched: `ACTA 2016 - 26 ABR.pdf` / Drive ID `SP-PRV-LCTR-GD-E3841881D3C98242AFC7`.
 
 The fetched primary copy records:
 
@@ -78,7 +78,7 @@ Do not suppress that adverse history. It is relevant counterevidence and legal-s
 
 ### 18 May 2018 primary ACTA
 
-Primary Drive source located/fetched: Drive ID `16j_xD-lvEbtR-_23_8nIS2bOkRn4SFr8`, titled `20. ACTA Junta Propietarios TOMA DE POSESIÓN 18MAY2018.pdf`. The filename is secondary labelling; use the document's contents rather than treating the filename as a legal finding.
+Primary Drive source located/fetched: Drive ID `SP-PRV-LCTR-GD-A5B7216821A81A06E183`, titled `20. ACTA Junta Propietarios TOMA DE POSESIÓN 18MAY2018.pdf`. The filename is secondary labelling; use the document's contents rather than treating the filename as a legal finding.
 
 The fetched minute itself records:
 

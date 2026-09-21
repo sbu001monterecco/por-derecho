@@ -1,0 +1,125 @@
+.recovery-status-band {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.8rem;
+  margin: 1.4rem 0;
+}
+
+.recovery-status-band > div,
+.recovery-step,
+.recovery-source-card {
+  border: 1px solid rgba(30, 71, 82, 0.2);
+  border-radius: 0.8rem;
+  background: #fff;
+  padding: 1rem;
+}
+
+.recovery-status-band span,
+.recovery-step span {
+  display: block;
+  color: #586970;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.recovery-status-band strong {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 1.08rem;
+}
+
+.recovery-map {
+  display: grid;
+  gap: 0.7rem;
+  margin: 1.4rem 0;
+}
+
+.recovery-step {
+  position: relative;
+  border-left: 0.35rem solid #267a86;
+}
+
+.recovery-step::after {
+  content: "↓";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -1.15rem;
+  color: #267a86;
+  font-weight: 800;
+}
+
+.recovery-step:last-child::after {
+  content: "";
+}
+
+.recovery-step.open {
+  border-left-color: #bd6d12;
+  background: #fffaf2;
+}
+
+.recovery-table-wrap {
+  overflow-x: auto;
+  margin: 1.2rem 0;
+  border: 1px solid rgba(30, 71, 82, 0.18);
+  border-radius: 0.75rem;
+}
+
+.recovery-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+  background: #fff;
+}
+
+.recovery-table th,
+.recovery-table td {
+  padding: 0.8rem;
+  border-bottom: 1px solid rgba(30, 71, 82, 0.14);
+  text-align: left;
+  vertical-align: top;
+}
+
+.recovery-table th {
+  background: #edf5f5;
+  color: #173a42;
+}
+
+.recovery-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.recovery-boundary {
+  margin: 1.25rem 0;
+  padding: 1rem 1.1rem;
+  border-left: 0.35rem solid #bd6d12;
+  background: #fff7eb;
+}
+
+.recovery-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .recovery-status-band > div,
+  .recovery-step,
+  .recovery-source-card,
+  .recovery-table {
+    background: #14272d;
+  }
+
+  .recovery-table th {
+    background: #1b333a;
+    color: #e4f3f4;
+  }
+
+  .recovery-step.open,
+  .recovery-boundary {
+    background: #302617;
+  }
+}

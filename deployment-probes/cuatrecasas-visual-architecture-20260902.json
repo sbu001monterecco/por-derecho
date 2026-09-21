@@ -1,0 +1,44 @@
+{
+  "probe_id": "pd-cuatrecasas-visual-architecture-live-20260902-v1",
+  "date": "2026-09-02",
+  "minimum_visual_architecture_merge": "2a26e4a201099633491ba24741c46baade1c1eea",
+  "minimum_release": "PR #1365",
+  "purpose": "Post-merge public Pages verification for the bilingual Cuatrecasas visual bridge architecture without changing substantive evidence or allegations.",
+  "required_live_assets": [
+    "assets/cuatrecasas-visual-bridge-atlas-en-20260902.svg",
+    "assets/cuatrecasas-visual-bridge-atlas-es-20260902.svg",
+    "assets/cuatrecasas-visual-architecture-v2-20260902.js",
+    "assets/cuatrecasas-visual-bridges-across-pages-20260902.js"
+  ],
+  "required_live_route_groups": {
+    "en": [
+      "en/cuatrecasas-sun-park/",
+      "en/cuatrecasas-mandate-ric-continuity/",
+      "en/cuatrecasas-dp748-civil-action/",
+      "en/matkator-asset-rights-register/",
+      "en/reverse-engineering-360-sun-park-chain/",
+      "en/unitary-record/",
+      "en/ric-private-equity-sun-park/",
+      "en/ricpe-cnmv-dossier-2021/",
+      "en/same-hotel-multiple-financial-lives/"
+    ],
+    "es": [
+      "es/cuatrecasas-sun-park/",
+      "es/cuatrecasas-mandato-continuidad-ric/",
+      "es/cuatrecasas-dp748-accion-civil/",
+      "es/registro-activos-derechos-matkator/",
+      "es/ingenieria-inversa-360-cadena-sun-park/",
+      "es/registro-unitario/",
+      "es/ric-private-equity-sun-park/",
+      "es/ricpe-cnmv-dossier-2021/",
+      "es/mismo-hotel-multiples-vidas-financieras/"
+    ]
+  },
+  "verification_boundary": [
+    "This probe verifies public deployment and loader/asset/route availability; it does not create evidential proof of the underlying allegations.",
+    "FACT -> INFERENCE -> ALLEGATION -> OPEN QUESTION remains controlling.",
+    "Finca 8,584 remains the one current controlled ETJ remate/adjudication object; finca 8,588 is not presently identified as a current ETJ auction object.",
+    "Matkator is the executed debtor; Aweswell remains behind the corporate/economic firewall.",
+    "The 2021 RIC/CNMV notice does not backdate knowledge of later incentives, FEDER or public-funding records."
+  ]
+}

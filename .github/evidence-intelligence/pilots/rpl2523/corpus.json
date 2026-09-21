@@ -1,0 +1,37 @@
+{
+  "schema": "por-derecho.retrieval-pilot-corpus.v1",
+  "pilot_id": "PD-SP-RUN-0001",
+  "proceeding_id": "PD-SP-R-0002",
+  "proceeding_name": "RPL 2523/2025 — appeal in the classification section",
+  "sources": [
+    {
+      "source_id": "PD-SP-SRC-0001",
+      "path": "assets/data/calificacion-rpl2523-evidence-map-v1.json",
+      "parser": "rpl_evidence_map",
+      "priority": 4
+    },
+    {
+      "source_id": "PD-SP-SRC-0002",
+      "path": "archive/CALIFICACION_OPPOSITIONS_APPEALS_FIVE_PARTY_SOURCE_CONTROL_23AUG2026.md",
+      "parser": "markdown_sections",
+      "priority": 3
+    },
+    {
+      "source_id": "PD-SP-SRC-0003",
+      "path": "assets/data/matter-identity-registry-v1.proceedings.json",
+      "parser": "proceeding_registry",
+      "priority": 5
+    }
+  ],
+  "retrieval_policy": {
+    "matter_filter_required": true,
+    "document_first": true,
+    "lexical_bm25": true,
+    "controlled_synonym_expansion": true,
+    "structured_metadata_boost": true,
+    "source_priority_rerank": true,
+    "embeddings": "DEFERRED_UNTIL_BASELINE_PASSES",
+    "max_context_sections": 5,
+    "not_located_rule": "NOT_LOCATED_DOES_NOT_MEAN_NONEXISTENT"
+  }
+}

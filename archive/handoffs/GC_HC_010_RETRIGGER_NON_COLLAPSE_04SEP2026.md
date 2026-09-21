@@ -1,0 +1,1 @@
+Non-collapse invariant: GC-HC-010/Reg. 24 filing continuity does not merge with DP 1901/2026, DP 1956/2026, CGPJ 169/2026, Appeal 286/2026, Fiscalía routes or the Concurso itself. Cross-links are typed reconstruction/provenance links unless documentary evidence establishes a stronger relation.

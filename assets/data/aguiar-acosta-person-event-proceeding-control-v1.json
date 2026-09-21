@@ -1,0 +1,145 @@
+{
+  "schema": "por-derecho.aguiar-acosta-person-event-proceeding-control.v1",
+  "control_id": "PD-AGUIAR-CARET-EVT-PROC-20260901-01",
+  "control_date": "2026-09-01",
+  "status": "CARET_IDENTITIES_CONFIRMED_EVENTS_DATED_PROCEEDING_CONTEXT_BOUNDED",
+  "governance": [
+    ".github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md",
+    "archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md"
+  ],
+  "people": [
+    {
+      "caepr_id": "PD-SP-P-0088",
+      "name": "Fernando Aguiar Acosta",
+      "caret_state": "CARET_CONFIRMED",
+      "canonical_route": "/en/acosta-matos-perimeter/#witness-fernando-aguiar-acosta",
+      "events": [
+        {
+          "event_id": "PD-SP-EVT-FAG-2023-GRUPO-ACOSTA-MATOS",
+          "date_precision": "YEAR_ONLY",
+          "date_or_period": "2023",
+          "event": "Public professional profile reports a corporate-law internship under the label 'Grupo Acosta Matos'.",
+          "source_class": "PUBLIC_PROFESSIONAL_PROFILE",
+          "verification": "SOURCE_REPORTED",
+          "boundary": "The profile label does not by itself resolve the exact employing legal person, family relationship, Sun Park assignment, knowledge, coordination or wrongdoing."
+        },
+        {
+          "event_id": "PD-SP-EVT-FAG-202406-07-RICPE",
+          "date_precision": "MONTH_RANGE",
+          "date_or_period": "2024-06/2024-07",
+          "event": "Public professional profile reports a RIC Private Equity placement in Las Palmas de Gran Canaria.",
+          "organisation_caepr_id": "PD-SP-O-0020",
+          "source_class": "PUBLIC_PROFESSIONAL_PROFILE",
+          "verification": "SOURCE_REPORTED",
+          "boundary": "Placement does not establish involvement in a specific RICPE investment, Sun Park/MYND Yaiza, a CNMV file, investment approval, knowledge or responsibility."
+        },
+        {
+          "event_id": "PD-SP-EVT-FAG-202506-08-BELAGUA-ACHM",
+          "date_precision": "MONTH_RANGE",
+          "date_or_period": "2025-06/2025-08",
+          "event": "Public professional profile reports corporate and commercial legal advisory in the Legal Advisory Department of Belagua 2013 and ACHM Hotels by Marriott.",
+          "organisation_caepr_ids": ["PD-SP-O-0078", "PD-SP-O-0077"],
+          "source_class": "PUBLIC_PROFESSIONAL_PROFILE",
+          "verification": "SOURCE_REPORTED",
+          "boundary": "Official/corporate sources place Belagua and ACHM in the AC Hotel Tenerife architecture, but no source establishes that Fernando personally worked on that hotel or on Sun Park."
+        },
+        {
+          "event_id": "PD-SP-EVT-FAG-2026-COLLIERS-DEBT-ADVISORY",
+          "date_precision": "SEASON_PLUS_CORROBORATED_DATE",
+          "date_or_period": "summer 2026; public corroboration 2026-07-29",
+          "event": "Public profile reports Colliers Debt Advisory; a 29-Jul-2026 financial-media report independently names Fernando Aguiar on the Colliers team advising an unrelated EUR 43.5m hotel financing.",
+          "organisation_caepr_id": "PD-SP-O-0073",
+          "source_class": "PUBLIC_PROFESSIONAL_PROFILE_PLUS_FINANCIAL_MEDIA",
+          "verification": "CORROBORATED_PUBLIC",
+          "boundary": "This establishes reported hotel-debt team participation on the cited unrelated financing, not access to legacy IREA/Meridian/Sun Park files, coordination, wrongdoing or liability."
+        }
+      ],
+      "proceeding_contexts": [
+        {
+          "master_id": "GC-JUD-001",
+          "reference": "Concurso ordinario 36/2012",
+          "relationship": "ASSET_AND_INSTITUTIONAL_CONTEXT_ONLY",
+          "person_procedural_role": "NO_DIRECT_PROCEDURAL_ACT_LOCATED",
+          "why": "Sun Park/LPB and the later RICPE/Colliers institutional continuity make the proceeding relevant to records-custody questions, but the current source set does not place Fernando in the proceeding."
+        },
+        {
+          "master_id": "NAT-CNMV-001",
+          "reference": "CNMV 2024136159",
+          "relationship": "RICPE_SUPERVISORY_CONTEXT_ONLY",
+          "person_procedural_role": "NO_DIRECT_PROCEDURAL_ACT_LOCATED",
+          "why": "Fernando's June-July 2024 RICPE placement is temporally within the broader RICPE supervisory period, but no source currently shows receipt, participation, authorship, decision or knowledge of this file."
+        },
+        {
+          "master_id": "NAT-CNMV-002",
+          "reference": "CNMV 2024174266",
+          "relationship": "RICPE_SUPERVISORY_CONTEXT_ONLY",
+          "person_procedural_role": "NO_DIRECT_PROCEDURAL_ACT_LOCATED",
+          "why": "Same bounded RICPE context; no personal procedural participation is attributed."
+        }
+      ]
+    },
+    {
+      "caepr_id": "PD-SP-P-0095",
+      "name": "Laura Aguiar Acosta",
+      "caret_state": "CARET_CONFIRMED",
+      "canonical_route": "/en/acosta-matos-perimeter/#witness-laura-aguiar-acosta",
+      "events": [
+        {
+          "event_id": "PD-SP-EVT-LAA-20230201-0531-MAEC-PLACEMENT",
+          "date_precision": "DAY_RANGE",
+          "date_or_period": "2023-02-01/2023-05-31",
+          "event": "Spanish Foreign Ministry training-placement resolution identifies Laura Aguiar Acosta (IE University) for the stated placement period.",
+          "source_class": "OFFICIAL_PUBLIC_RESOLUTION",
+          "verification": "PRIMARY_PUBLIC_IDENTITY_CORROBORATION",
+          "boundary": "This event corroborates identity and the stated placement only; it does not establish any Sun Park, RICPE or family proposition."
+        },
+        {
+          "event_id": "PD-SP-EVT-LAA-202407-08-CANARIAN-HOSPITALITY",
+          "date_precision": "MONTH_RANGE",
+          "date_or_period": "2024-07/2024-08",
+          "event": "Public professional profile records a Canarian Hospitality hotel-management internship in Lanzarote involving the controllers of MYND Yaiza and Radisson Blu Lanzarote, internal-expense controls and collaboration with the legal department on hotel purchase and management processes.",
+          "organisation_caepr_id": "PD-SP-O-0019",
+          "source_class": "PUBLIC_PROFESSIONAL_PROFILE",
+          "verification": "SOURCE_REPORTED_WITH_OFFICIAL_PROJECT_CORROBORATION",
+          "boundary": "RICPE official project pages identify both hotels as RICPE-financed and Canarian Hospitality-managed. This does not establish direct Laura employment by RICPE, title/possession knowledge, investment-decision participation, wrongdoing or liability."
+        }
+      ],
+      "proceeding_contexts": [
+        {
+          "master_id": "GC-JUD-001",
+          "reference": "Concurso ordinario 36/2012",
+          "relationship": "SAME_PHYSICAL_SUN_PARK_ASSET_CONTEXT_ONLY",
+          "person_procedural_role": "NO_DIRECT_PROCEDURAL_ACT_LOCATED",
+          "why": "The placement concerned MYND Yaiza, the physical Sun Park asset in the repository's controlled terminology, but the current source set does not place Laura in Concurso 36/2012 or any of its sections/appeals."
+        },
+        {
+          "master_id": "NAT-CNMV-001",
+          "reference": "CNMV 2024136159",
+          "relationship": "RICPE_FINANCING_SUPERVISORY_CONTEXT_ONLY",
+          "person_procedural_role": "NO_DIRECT_PROCEDURAL_ACT_LOCATED",
+          "why": "The hotels named in Laura's placement are documented as RICPE-financed, but no source shows Laura as sender, recipient, subject, decision-maker or participant in this CNMV file."
+        },
+        {
+          "master_id": "NAT-CNMV-002",
+          "reference": "CNMV 2024174266",
+          "relationship": "RICPE_FINANCING_SUPERVISORY_CONTEXT_ONLY",
+          "person_procedural_role": "NO_DIRECT_PROCEDURAL_ACT_LOCATED",
+          "why": "Same bounded financing/supervisory context; no personal procedural participation is attributed."
+        }
+      ]
+    }
+  ],
+  "relationship_controls": [
+    {
+      "relationship": "Fernando Aguiar Acosta ↔ Laura Aguiar Acosta",
+      "state": "ALLEGED_SIBLING_RELATIONSHIP_ATTRIBUTED_TO_GIL_MARER_INDEPENDENTLY_UNVERIFIED",
+      "rule": "Do not convert matching surnames or parallel perimeter placements into kinship proof."
+    },
+    {
+      "relationship": "Fernando/Laura Aguiar Acosta ↔ Acosta Matos family",
+      "state": "ATTRIBUTED_FAMILY_LEAD_UNVERIFIED",
+      "rule": "Keep the witness pair outside the confirmed Acosta Matos family denominator unless competent primary or reliable public evidence closes the relationship."
+    }
+  ],
+  "global_boundary": "Caret resolves identity only. Events are date- and source-bounded. Proceeding links in this control are contextual navigation/records-custody links only and do not establish filing, service, receipt, knowledge, participation, party status, evidence adoption, wrongdoing, intent or liability."
+}

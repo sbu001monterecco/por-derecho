@@ -1,0 +1,13 @@
+{
+  "schema": "por-derecho.lossless-pdf-json-chunks.v1",
+  "source_pdf_filename": "exhibit-access-granted-gil-marer-20260828.pdf",
+  "source_pdf_size_bytes": 336223,
+  "source_pdf_sha256": "5ff7d57e47dd0f26a47004086e72de6dc98eee4ccf5e40f0d2d476bb35f179da",
+  "encoding": "json-contained-base64-independent-binary-chunks",
+  "binary_chunk_bytes": 480000,
+  "chunk_count": 1,
+  "chunks": [
+    "pdf-chunks/exhibit-access-granted-gil-marer-20260828.part-001.json"
+  ],
+  "reconstruction": "Decode each chunk independently in listed order and concatenate the resulting bytes."
+}

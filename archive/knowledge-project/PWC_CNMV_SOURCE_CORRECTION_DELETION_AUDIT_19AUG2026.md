@@ -11,7 +11,7 @@ Primary institutional source re-read for this correction:
 - `ANEXO_3_Respuesta_CNMV_RIC_PrivateEquity_22ENE2026.pdf`
 - CNMV Registro de Salida **2026008544**, 22 January 2026
 - signed electronically by **Natalia Vitores Mingo, Secretaria General, CNMV**
-- internal Gmail preservation source used for the re-read: message `19d6e3b13ad68b68`, attachment with the filename above.
+- internal Gmail preservation source used for the re-read: message `SP-PRV-LCTR-GM-C8C52207493FDB6F2E57`, attachment with the filename above.
 
 The source says that, in the documentation obtained after the CNMV supervisory actions arising from the Investor Department's transfer on **20 January 2021** of registration **2021002141 of 13 January 2021**, concerning **RIC Private Equity Investments Partners SCR, SA**, there was **no record of the Enrique Guerra Suárez certification dated 20 July 2021 or the CAM judicial filing of 21 July 2021** referred to in the transparency request.
 

@@ -1,0 +1,78 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-CAJASIETE-INSTITUTIONAL-READER-20260919-01",
+  "control_date": "2026-09-19",
+  "current_state": "LIVE_VERIFIED",
+  "owner": "Project Sun Rock / Por Derecho",
+  "expected_routes": {
+    "es": [
+      "es/cajasiete-responsabilidad-cumplimiento-trazabilidad/index.html",
+      "es/cajasiete-sun-park-financiacion-comparabilidad/index.html",
+      "es/registros-institucionales/index.html",
+      "es/cajasiete-responsabilidad-cumplimiento-trazabilidad/snapshots/2026-09-18-1716/index.html"
+    ],
+    "en": [
+      "en/cajasiete-accountability-compliance-traceability/index.html",
+      "en/cajasiete-sun-park-financing-comparability/index.html",
+      "en/institutional-records/index.html",
+      "en/cajasiete-accountability-compliance-traceability/snapshots/2026-09-18-1716/index.html"
+    ]
+  },
+  "validation": {
+    "evidence": [
+      "PR #1584 core reader release merged",
+      "PR #1586 deployment-gate repairs merged",
+      "PR #1589 live-origin verifier merged",
+      "scripts/validate_cajasiete_institutional_reader.py",
+      "publication-integrity gate",
+      "repository-preservation gate",
+      "audience-experience source/link validation",
+      "GitHub Pages run 1583 success",
+      "Verify CajaSiete live origin run 35406664102 success"
+    ]
+  },
+  "merge_sha": "6d9a4b336a74e9537af234d73905dee5ca752003",
+  "notes": {
+    "design_boundary": "Institutionally adjacent, visually independent; no CajaSiete affiliation or official-author appearance.",
+    "gitlab_parity": "PENDING_ACCESS_RESTORATION; public GitLab Pages remains an older CajaSiete surface and must not overwrite the newer GitHub release.",
+    "reporting_boundary": "2021 RICPE/Sun Park/RIC reporting is not backfilled with later GC/836/P06 or FEDER/ERDF evidence.",
+    "deploy_gate_fix": "Manifest repaired in place; protected-path preservation retained; nested public snapshot links made absolute; locked 47-route smoke contract restored.",
+    "thread_continuity_audit": "archive/THREAD_CONTINUITY_PRESERVATION_AUDIT_CAJASIETE_19SEP2026.md"
+  },
+  "deployment_evidence": {
+    "platform": "GitHub Pages",
+    "current_verified_pages_run_id": 35406743778,
+    "current_verified_pages_run_number": 1583,
+    "current_verified_pages_sha": "8998d0bbda81844bbd7e712222b5f93ac2977bb0",
+    "current_verified_pages_conclusion": "success",
+    "current_verified_pages_completed_at": "2026-09-18T23:44:04Z",
+    "final_cajasiete_content_fix_sha": "6d9a4b336a74e9537af234d73905dee5ca752003",
+    "note": "The later deployed tip preserved the CajaSiete page blobs unchanged while adding unrelated continuity material."
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/cajasiete-responsabilidad-cumplimiento-trazabilidad/",
+    "https://sbu001monterecco.github.io/por-derecho/en/cajasiete-accountability-compliance-traceability/",
+    "https://sbu001monterecco.github.io/por-derecho/es/cajasiete-sun-park-financiacion-comparabilidad/",
+    "https://sbu001monterecco.github.io/por-derecho/en/cajasiete-sun-park-financing-comparability/",
+    "https://sbu001monterecco.github.io/por-derecho/es/registros-institucionales/",
+    "https://sbu001monterecco.github.io/por-derecho/es/cajasiete-responsabilidad-cumplimiento-trazabilidad/snapshots/2026-09-18-1716/"
+  ],
+  "live_verification_evidence": {
+    "workflow": "Verify CajaSiete live origin",
+    "workflow_file": ".github/workflows/verify-cajasiete-live-origin.yml",
+    "run_id": 35406664102,
+    "verified_sha": "875c5783a0c1a6c198e97355b91fad2afbda066b",
+    "conclusion": "success",
+    "completed_at": "2026-09-18T23:41:40Z",
+    "scope": [
+      "Spanish institutional reader markers",
+      "English institutional reader markers",
+      "CNMV 2021002141 reporting-continuity marker",
+      "Spanish and English commercial-lane separation",
+      "September institutional-register supplement / PD-SP-EVT-0180",
+      "18 September sent-page snapshot and corrected absolute navigation"
+    ],
+    "continuity_note": "GitHub Pages run 1583 subsequently deployed SHA 8998d0bbda81844bbd7e712222b5f93ac2977bb0 successfully; the CajaSiete source blobs remained unchanged."
+  }
+}

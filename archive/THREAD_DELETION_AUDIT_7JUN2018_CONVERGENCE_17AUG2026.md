@@ -3,6 +3,8 @@
 **Date:** 17 August 2026  
 **Status:** THREAD-SPECIFIC CONTINUITY AUDIT
 
+> **Supersession note — 23 August 2026:** The chronology shorthand retained below is historical. The controlling signed-source review now fixes Auto 164/2021 of 18 May 2021 as the definitive approval, keeps the two 15 October 2021 Autos separate, and identifies the two 26 January 2022 Autos as clarifications that make no new award. Deed 457 follows on 21 February 2022. Read any reference below to a singular “26-Jan-2022 adjudication/title threshold” through that corrected chain.
+
 ## Scope
 
 Audit of the Project Sun Rock / Por Derecho thread concerning whether and how 7 June 2018 should function as a dedicated hinge/convergence page, including parallel lives, converging pressure tracks, audience representations, before/after structure, control-before-title, business-platform consequences, homepage placement and master site visual logic.

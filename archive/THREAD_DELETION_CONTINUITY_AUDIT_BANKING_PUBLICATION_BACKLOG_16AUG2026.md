@@ -31,7 +31,7 @@ The two material publication backlogs identified in the conversation have been r
 
 2. **6-Dec-2017 assignment-information demand**  
    Drive title: `4127-9620-2767 v 2, LUCHY PLAYA - Burofax requerimiento datos sobre cesión (crédito litigioso).docx`  
-   Drive id: `1-Dc2ThZkVHuRSlBb6AJR8PoDiI89RUWqIf-ZP1_nCjA`  
+   Drive id: `1-Dc2ThZkVHuRSlBb6AJR8PoDiI89RUWqIf-ZP1_nCjA`
    Classification: request for deed/price and LPB's Article 1535 legal position are source-supported; litigious-credit status was LPB's contention, not a judicial finding.
 
 3. **19-Dec-2017 Preliminary Proceedings 1041/2017**  
@@ -39,10 +39,10 @@ The two material publication backlogs identified in the conversation have been r
    Drive id: `1_n8VvVPEFfC37fJ4c3wdbpgiVLLlPR3P`  
    Classification: final order allowed the requested production measure for complete deed, precise price, payment date and costs, subject to security; admission does not prove unlawful withholding, non-compliance or liability.
 
-4. **8-Feb-2018 Commercial Court order**  
+4. **15-Feb-2018 Commercial Court order**
    Drive title: `8. Modificacion Textos Definitivos PRIV ESPECIAL (SIN INTERESES) 8FEB2018.pdf`  
    Drive id: `1jwG4inqC8HFOdLbU3RdPY3PKj6SzKA7f`  
-   Classification: primary adverse ruling. It rejected LPB's Article 1535 theory, while accepting that assignment changed the creditor but not the amounts recognised in the final insolvency texts; it identified €857,373.81 and €8,194,877.88 plus contingent enforcement costs.
+   Classification: primary adverse ruling. It rejected LPB's Article 1535 theory, while accepting that assignment changed the creditor but not the amounts recognised in the final insolvency texts; it identified €857,373.81 and €8,194,877.88 plus contingent enforcement costs. The `8FEB2018` Drive filename is retained as source metadata but is not the controlling act date.
 
 ### Publication boundary
 
@@ -130,7 +130,7 @@ A later route test should be repeated when external retrieval permits it.
 - total/allocated price and payment proof;
 - complete Preliminary Proceedings 1041/2017 compliance/outcome;
 - exact pre-20-Oct-2017 claim/opposition/incident and response credit by credit;
-- appeal/finality record for the 8-Feb-2018 order;
+- appeal/finality record for the 15-Feb-2018 order;
 - insolvency-administration verification file;
 - complete EH90/2012 and any other proceeding actually relied upon for asserted litigiosity.
 

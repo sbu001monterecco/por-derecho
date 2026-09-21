@@ -1,0 +1,76 @@
+name: Validate AC removal, remuneration and orders publication
+
+on:
+  pull_request:
+    paths:
+      - 'archive/AC_SEPARATION_FEES_AUTOS_DP1901_REFERENCE22_UNITARY_DIGEST_23AUG2026.md'
+      - 'archive/CONTINUOUS_MAINTENANCE_MATRIX.md'
+      - 'archive/CORRECTION_REGISTER.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER.md'
+      - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - 'assets/data/unitary-route-registry-v1.json'
+      - 'evidence/insolvency-36-2012/ac-removal-fees/**'
+      - 'en/insolvency-36-2012-administrator-removal-fees/**'
+      - 'es/concurso-36-2012-separacion-ac-honorarios/**'
+      - 'en/insolvency-36-2012-insolvency-administrator/**'
+      - 'es/concurso-36-2012-administrador-concursal/**'
+      - 'en/dp-1901-2026/**'
+      - 'es/dp-1901-2026/**'
+      - 'en/dp-1956-2026/**'
+      - 'es/dp-1956-2026/**'
+      - 'en/site-index/**'
+      - 'es/indice-web/**'
+      - 'sitemap.xml'
+      - 'sitemap-unitary-shell.xml'
+      - 'scripts/build_public_ac_orders.py'
+      - 'scripts/validate_ac_removal_fees_publication.py'
+      - '.github/workflows/validate-ac-removal-fees-publication.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'archive/AC_SEPARATION_FEES_AUTOS_DP1901_REFERENCE22_UNITARY_DIGEST_23AUG2026.md'
+      - 'archive/CONTINUOUS_MAINTENANCE_MATRIX.md'
+      - 'archive/CORRECTION_REGISTER.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER.md'
+      - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - 'assets/data/unitary-route-registry-v1.json'
+      - 'evidence/insolvency-36-2012/ac-removal-fees/**'
+      - 'en/insolvency-36-2012-administrator-removal-fees/**'
+      - 'es/concurso-36-2012-separacion-ac-honorarios/**'
+      - 'en/insolvency-36-2012-insolvency-administrator/**'
+      - 'es/concurso-36-2012-administrador-concursal/**'
+      - 'en/dp-1901-2026/**'
+      - 'es/dp-1901-2026/**'
+      - 'en/dp-1956-2026/**'
+      - 'es/dp-1956-2026/**'
+      - 'en/site-index/**'
+      - 'es/indice-web/**'
+      - 'sitemap.xml'
+      - 'sitemap-unitary-shell.xml'
+      - 'scripts/build_public_ac_orders.py'
+      - 'scripts/validate_ac_removal_fees_publication.py'
+      - '.github/workflows/validate-ac-removal-fees-publication.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-ac-removal-fees-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Install pinned PDF validator
+        run: python3 -m pip install --disable-pip-version-check PyMuPDF==1.26.6
+      - name: Validate pages, digests, public PDFs, privacy boundaries and discovery
+        run: python3 scripts/validate_ac_removal_fees_publication.py

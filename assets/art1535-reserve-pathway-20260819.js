@@ -70,10 +70,24 @@
   section.dataset.art1535ReservePathway = 'true';
   section.innerHTML = `<div class="art1535-reserve__inner"><p class="art1535-reserve__eyebrow">${copy.eyebrow}</p><h2>${copy.title}</h2><p>${copy.body}</p><div class="art1535-reserve__flow">${copy.flow}</div><p class="art1535-reserve__test">${copy.test}</p><p>${copy.trigger}</p><p class="art1535-reserve__limit">${copy.limit}</p><a href="${copy.href}">${copy.cta} →</a></div>`;
 
-  const hero = document.querySelector('main .hero, main > section.hero, .hero');
-  if (hero && hero.parentNode) hero.insertAdjacentElement('afterend', section);
+  const hero = document.querySelector('main > .dossier-hero, main > .hero, main > section.hero, main > .mhero');
+  const thesis = document.querySelector('main [data-calificacion-misuse-thesis]');
+  if ((thesis || hero)?.parentNode) (thesis || hero).insertAdjacentElement('afterend', section);
   else {
     const main = document.querySelector('main');
     if (main) main.insertBefore(section, main.firstChild);
   }
+})();
+
+// Global 360° reverse-engineering gateway loader. This reserve module is already loaded
+// site-wide through the CAM pattern chain, so this keeps the new dependency analysis
+// available without duplicating the assets/site.js loader graph.
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-reverse-engineering-360-loader]')) return;
+  const script = document.createElement('script');
+  script.src = new URL('reverse-engineering-360-20260819.js?v=20260819a', current.src).href;
+  script.async = false;
+  script.dataset.reverseEngineering360Loader = 'true';
+  document.head.appendChild(script);
 })();

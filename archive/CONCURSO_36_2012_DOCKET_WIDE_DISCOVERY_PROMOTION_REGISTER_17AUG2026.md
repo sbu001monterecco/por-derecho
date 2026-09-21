@@ -46,12 +46,12 @@ The end-to-end workbook scan confirms material procedural activity across the fo
 ### 2018 — creditor substitution, plan of liquidation, sale/dación architecture, suspension, LAJ implementation
 
 - 12-Jan-2018 Providencia requiring CAM to exhibit full credit-assignment deed.
-- 08-Feb-2018 Auto modifying final texts to recognise CAM as successor to Promontoria for secured credits.
+- 15-Feb-2018 Auto modifying final texts to recognise CAM as successor to Promontoria for secured credits.
 - 09-Feb-2018 two LAJ diligencias concerning access to plan documents and AC remuneration.
 - 16-Feb-2018 Autos fixing liquidation remuneration and supplementing the 05-May-2017 remuneration act.
-- 08-Mar-2018 LAJ Diligencia on clarification of 08-Feb Auto / CAM appearance.
+- 08-Mar-2018 LAJ Diligencia on clarification of the 15-Feb-2018 creditor-substitution/credit-interest Auto / CAM appearance; the prior 08-Feb alias is superseded unless a distinct authenticated act is produced.
 - 12-Apr-2018 LAJ Diligencia moving plan-of-liquidation allegations to S.Sª.
-- 16-Apr-2018 Auto approving plan of liquidation and CAM disposal proposal; separate same-date Auto clarifying 08-Feb credit-interest treatment. These must remain distinct.
+- 16-Apr-2018 Auto approving plan of liquidation and CAM disposal proposal; separate same-date Auto clarifying the 15-Feb credit-interest treatment. These must remain distinct.
 - 08-May-2018 LAJ Diligencia handling clarification requests against 16-Apr Auto.
 - 04-Jun-2018 Auto clarifying 16-Apr plan/disposal conditions and offer amounts.
 - 15-Jun-2018 LAJ Diligencia implementing publication/announcement of sale/dación terms.
@@ -108,7 +108,8 @@ The end-to-end workbook scan confirms material procedural activity across the fo
 - 08-Jul-2021 Providencia of Alberto López Villarrubia requiring AC to file detailed liquidation report and warning of potential responsibility for failure to report.
 - 08-Jul / 13-Jul / 19-Jul-2021 LAJ/AP diligencias on reposición and queja.
 - 07-Sep-2021 Decreto accepting CAM withdrawal of reposición and declaring 25-May Diligencia final.
-- 21-Sep-2021 Decreto upholding Aweswell opposition to Daniel Jiménez/SLJ fee account.
+- 29-Sep-2021 Decree 316/2021 upholding Aweswell opposition to Daniel Jiménez/SLJ fee account; it found no procedural filing in the mandate period signed by Jiménez/SLJ and the alleged court filing unproved.
+- 02-Nov-2021 Diligencia recording finality and archive of the fee-account decision after no appeal.
 - 15-Oct-2021 Auto dismissing LPB/Aweswell reposiciones against 18-May-2021 Auto; workbook also records two Autos of this date, so exact binary separation is required.
 - 27-Oct / 28-Oct / 02-Nov-2021 LAJ diligencias on clarification/protest/finality.
 - 16-Nov / 23-Dec-2021 AP Autos dismissing queja routes against 17-Jun-2021 inadmission.
@@ -142,7 +143,7 @@ The end-to-end workbook scan confirms material procedural activity across the fo
 
 ## 4. Critical chronology corrections exposed by the workbook
 
-1. **16-Apr-2018 is not one generic act.** The workbook records at least the plan-of-liquidation approval/disposal Auto and a separate same-date clarification of the 08-Feb-2018 credit-interest Auto. Never collapse them.
+1. **16-Apr-2018 is not one generic act.** The workbook records at least the plan-of-liquidation approval/disposal Auto and a separate same-date clarification of the 15-Feb-2018 credit-interest Auto. Never collapse them.
 2. **24-Oct-2019 is not one generic act.** The workbook records a separate Aweswell-standing Auto and the non-convalidation Auto.
 3. **12-May-2020 is not one generic act.** One Auto confirms the 24-Oct-2019 non-convalidation decision against LPB reposición; another favours Aweswell and revokes the 03-Jul-2019 route for AC nullity/expulsion.
 4. **06-May-2021 is not one generic act.** The workbook records the nullity-denial Auto and a separate Auto confirming the 25-Jan-2021 sale/publication conditions.
@@ -162,7 +163,7 @@ The docket is not uniformly adverse. The current discovery record includes, at m
 - 24-Oct-2019 refusal to convalidate the 28-Nov-2018 deed.
 - 12-May-2020 Aweswell success against 03-Jul-2019 route for AC nullity incident.
 - 08-Jul-2021 judicial order requiring detailed AC liquidation reporting and warning of potential AC responsibility for non-compliance.
-- 21-Sep-2021 LAJ fee-account decision favourable to Aweswell.
+- 29-Sep-2021 LAJ Decree 316/2021 favourable to Aweswell in the SLJ fee-account proceeding; 02-Nov-2021 finality/archive followed without appeal.
 - 20-Jun / 13-Jul / 14-Jul-2022 correction chain where the court/LAJ identified mistaken review inadmission based on deposits, opened nullity ex officio, annulled the defective Providencia and admitted the review requests.
 
 Any future named-Judge page must display these alongside adverse acts.
@@ -177,7 +178,7 @@ Any future named-Judge page must display these alongside adverse acts.
 - 05-May-2017 AC-remuneration Auto.
 - 19-Dec-2017 liquidation-opening Auto.
 - 12-Jan-2018 Providencia.
-- 08-Feb-2018 CAM-credit substitution Auto.
+- 15-Feb-2018 CAM-credit substitution Auto.
 - both 16-Apr-2018 Autos.
 - 04-Jun-2018 clarification Auto.
 - 15-Jun-2018 Diligencia.

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "CD-2016-05-18-PROPOSAL-REJECTED",
+    "date": "2016-05-18",
+    "actor_refs": ["ACT-HAYA", "ACT-PH122"],
+    "conduct": "Communication that the creditor rejected the proposal",
+    "capacity_status": "mandate_and_decision_authority_to_prove",
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-GMAIL-2016-05-18-HAYA-REJECTION"],
+    "causation_questions": ["What proposal was actually before the decision-maker?", "Was rejection final or conditional?", "What alternative remained?", "What incremental harm followed?"]
+  },
+  {
+    "id": "CD-2017-10-20-CAM-ACQUISITION",
+    "date": "2017-10-20",
+    "actor_refs": ["ACT-PH122", "ACT-CAM"],
+    "conduct": "Acquisition/assignment of the identified mortgage credits",
+    "capacity_status": "assignee",
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-TRANSFER-2017-10-20-PH122-CAM"],
+    "causation_questions": ["What rights and defences attached to the credit?", "What disclosures and due diligence occurred?", "What did CAM know at acquisition?"]
+  },
+  {
+    "id": "CD-2018-01-15-CAM-DACION",
+    "date": "2018-01-15",
+    "actor_refs": ["ACT-CAM"],
+    "conduct": "Direct debt/valuation/dación proposal using the acquired creditor position",
+    "capacity_status": "assignee_and_proponent",
+    "evidence_status": "verified_primary",
+    "publication": "privilege_review",
+    "source_refs": ["SRC-CAM-2018-01-DACION-PROPOSAL"],
+    "causation_questions": ["Was valuation objective and independent?", "How was surplus protected?", "Which properties and third-party rights were assumed?", "What alternative refinancing or convenio routes remained?"]
+  },
+  {
+    "id": "CD-2018-02-15-CAM-RECOGNISED",
+    "date": "2018-02-15",
+    "actor_refs": ["ACT-CAM", "ACT-INSOLVENCY-ADMIN"],
+    "conduct": "CAM recognised as assignee in Concurso 36/2012; Article 1535 position rejected and amounts partly corrected",
+    "capacity_status": "judicially_recognised_creditor_subject_to_order_terms",
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"],
+    "causation_questions": ["What documents did the insolvency administration verify?", "What appeal/finality chain followed?", "What benefit or prejudice arose for the estate?"]
+  },
+  {
+    "id": "CD-2022-CAM-HNT-SEGREGATION",
+    "date": "2022-11-16",
+    "actor_refs": ["ACT-CAM", "ACT-HNT"],
+    "conduct": "Corporate segregation of the Sun Park economic unit by universal succession",
+    "capacity_status": "segregating_company_and_beneficiary",
+    "evidence_status": "verified_official",
+    "publication": "public_safe",
+    "source_refs": ["SRC-BORME-2022-CAM-HNT-SEGREGATION"],
+    "causation_questions": ["Which liabilities and contingencies followed the unit?", "Which remained with CAM?", "What own conduct occurred after succession?"]
+  }
+]

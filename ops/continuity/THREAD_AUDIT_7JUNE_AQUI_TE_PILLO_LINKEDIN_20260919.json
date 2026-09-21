@@ -1,0 +1,53 @@
+{
+  "schema": "por-derecho.thread-preservation-audit.v2",
+  "control_date": "2026-09-19",
+  "repository": "sbu001monterecco/por-derecho",
+  "audited_main_sha": "3ae96645d975c4b62dfa3216ff8be6f78a9810d3",
+  "thread_id": "7june-aqui-te-pillo-matos-linkedin",
+  "status": "DELETION_SAFE_EXACT_MASTERS_INDEPENDENTLY_PRESERVED_GITHUB_CONTINUITY_RECORDED",
+  "deletion_safe": true,
+  "deletion_safe_basis": [
+    "GitHub branch/PR preserves thread-specific reasoning, governance, historical release receipts and LinkedIn architecture",
+    "Both locked PNG masters preserved in persistent private ChatGPT Library independent of this chat",
+    "Both Library copies rematerialized after upload and SHA-256/dimensions verified exactly",
+    "GitHub machine custody receipt records hashes, sizes, dimensions, custody folder and historical derivative identities"
+  ],
+  "masters": [
+    {
+      "id": "7june-2018-toma-control",
+      "dimensions": "1122x1402",
+      "size_bytes": 2748782,
+      "sha256": "b9e1f721230911a6d448e2bdd590c19e3691732bb03b88c23ebd325ea275ec38",
+      "github_public_bytes_present": false,
+      "private_controlled_custody": true
+    },
+    {
+      "id": "7june-2018-aqui-te-pillo-matos",
+      "dimensions": "1222x1287",
+      "size_bytes": 2453636,
+      "sha256": "00cf77d44e35a9d4bcbcb4a9c96da3516e9a797d04fb363a8ae44e56319ebdf8",
+      "github_public_bytes_present": false,
+      "private_controlled_custody": true
+    }
+  ],
+  "private_custody_folder": "/Por Derecho/Preservation/7-June-2018-Aqui-te-Pillo/",
+  "historical_gitlab": {
+    "browser_render_repair_mr": 229,
+    "live_readback_repair_mr": 231,
+    "governance_readiness_mr": 235,
+    "governance_merge_sha": "4fbc4595b3e83d62fdfce3951f9515d237be318d",
+    "live_status": "LIVE_STATIC_VISUALS_VERIFIED"
+  },
+  "github_parity": {
+    "full_binary_parity": false,
+    "blocking_thread_deletion": false,
+    "reconcile_when_gitlab_returns": true
+  },
+  "linkedin": {
+    "architecture": "TWO_POSTS_ONE_IMAGE_EACH",
+    "copy_status": "REVIEW_READY_RECONSTRUCTED_GITHUB_SUCCESSOR",
+    "social_derivatives": "REQUIRED_1080x1350_BEFORE_PUBLICATION",
+    "external_publication_authorized": false
+  },
+  "next_gate": "OPTIONAL_FOLLOW_ON: RECONCILE_GITHUB_WITH_GITLAB_AND_CREATE_SOCIAL_SAFE_DERIVATIVES; THREAD MAY BE DELETED NOW"
+}

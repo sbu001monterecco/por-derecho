@@ -1,6 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { chromium } from 'playwright';
+
+const playwright = await import(process.env.PSR_PLAYWRIGHT_PATH || 'playwright');
+const { chromium } = playwright;
 
 const base=(process.env.PSR_BASE_URL||'http://127.0.0.1:8000/por-derecho').replace(/\/$/,'');
 const out=process.env.PSR_SCREENSHOT_DIR||'artifacts/unitary-public-shell';
@@ -14,6 +16,8 @@ const routes=[
   {name:'control-es',url:'/es/sala-control-caso/',kind:'control'},
   {name:'search-en',url:'/en/search/',kind:'search'},
   {name:'search-es',url:'/es/buscar/',kind:'search'},
+  {name:'authority-register-en',url:'/en/red-sara-age-filings-authority-responses/',kind:'authority-register'},
+  {name:'authority-register-es',url:'/es/registros-redsara-age-y-respuestas-autoridades/',kind:'authority-register'},
   {name:'dp1901-en',url:'/en/dp-1901-2026/',kind:'gateway'},
   {name:'dp1041-en',url:'/en/litigious-credit-retracto-1041-2017/',kind:'existing'},
   {name:'dp1041-es',url:'/es/retracto-credito-litigioso-1041-2017/',kind:'existing'},
@@ -23,6 +27,10 @@ const routes=[
   {name:'governance-tracks-en',url:'/en/community-instrumentalisation/two-competing-governance-records/',kind:'existing'},
   {name:'governance-tracks-es',url:'/es/comunidad-instrumentalizacion/dos-registros-gobernanza-competidores/',kind:'existing'},
   {name:'ac-en',url:'/en/insolvency-36-2012-insolvency-administrator/',kind:'existing'},
+  {name:'ac-autos-en',url:'/en/insolvency-36-2012-orders-decisions/',kind:'ac-autos',section:'#unitary-analysis',marker:'What this thread proves'},
+  {name:'ac-autos-es',url:'/es/concurso-36-2012-autos-resoluciones/',kind:'ac-autos',section:'#analisis-unitario',marker:'Qué prueba este hilo'},
+  {name:'ac-thread-en',url:'/en/unitary-criminal-hypothesis-2011-present/',kind:'ac-thread',section:'#ac-removal-fees-thread',marker:'A notice-and-contradiction record'},
+  {name:'ac-thread-es',url:'/es/hipotesis-criminal-unitaria-2011-presente/',kind:'ac-thread',section:'#hilo-separacion-honorarios-ac',marker:'Registro de aviso y contradicción'},
   {name:'ricpe-en',url:'/en/ric-private-equity-sun-park/',kind:'existing'},
   {name:'map-es',url:'/es/mapa-forense-sun-park-262-fincas/',kind:'existing'}
 ];
@@ -41,6 +49,21 @@ async function assertSearch(page,query,pattern,label){
   if(!titles.some(t=>pattern.test(t)))throw new Error(`${label} search failed for ${query}`);
 }
 
+async function assertAuthorityRegister(page){
+  const input=page.locator('#pd-acr-search');
+  await input.waitFor({state:'visible',timeout:15000});
+  await input.fill('184368/2026');
+  await page.waitForFunction(()=>document.querySelectorAll('.pd-acr-event').length===1,null,{timeout:15000});
+  const first=page.locator('.pd-acr-event').first();
+  if(await first.getAttribute('id')!=='communication-PD-SP-EVT-0141')throw new Error('Authority register does not resolve 184368/2026 to PD-SP-EVT-0141');
+  const firstText=(await first.textContent())||'';
+  if(!/Intervenci.n General/i.test(firstText))throw new Error('Authority register omits the Intervención General office');
+  await input.fill('Intervención General');
+  await page.waitForFunction(()=>document.querySelectorAll('.pd-acr-event').length>=3,null,{timeout:15000});
+  const text=await page.locator('.pd-acr-event').allTextContents();
+  for(const reference of ['184368/2026','497011/2026','699645/2026'])if(!text.some(value=>value.includes(reference)))throw new Error(`Authority register missing Intervención response ${reference}`);
+}
+
 try{
   for(const viewport of viewports){
     const context=await browser.newContext({viewport:{width:viewport.width,height:viewport.height}});
@@ -50,8 +73,10 @@ try{
       try{
         const response=await page.goto(url,{waitUntil:'domcontentloaded',timeout:60000});
         if(!response||response.status()>=400)throw new Error(`HTTP ${response?.status()}`);
-        await page.waitForFunction(()=>document.documentElement.dataset.psrUnitaryShellVersion==='20260819a',null,{timeout:15000});
+        await page.waitForFunction(()=>document.documentElement.dataset.psrUnitaryShellVersion==='20260901a',null,{timeout:15000});
         if(route.kind==='home'){
+          const progressiveRecord=page.locator('[data-audience-full-record] > details');
+          if(await progressiveRecord.count())await progressiveRecord.evaluate(node=>{node.open=true;});
           await page.waitForSelector('.main-nav[data-psr-consolidated-nav="true"]',{state:'attached',timeout:10000});
           await page.waitForSelector('.psr-home-control-gateway',{timeout:10000});
         }
@@ -67,11 +92,29 @@ try{
           await assertSearch(page,'CEXP',/CEXP|Community|Comunidad|LPB/i,'CEXP');
           await assertSearch(page,'1041',/1041|retracto|litigious/i,'DP1041');
           await assertSearch(page,'Cuatrecasas',/Cuatrecasas/i,'Cuatrecasas');
+          await assertSearch(page,'184368/2026',/184368\/2026/i,'Intervención General reference');
+          if(await page.locator('.psr-search-result').count()!==1)throw new Error('Exact Intervención reference must not fall through to generic 2026 matches');
+          await assertSearch(page,'Intervención General',/Intervenci.n General/i,'Intervención General office');
           const governanceQuery=route.url.includes('/es/')?'hipotesis de captura':'capture hypothesis';
           await assertSearch(page,governanceQuery,/Governance|Gobernanza/i,'governance visual');
           await assertSearch(page,'pwc canarias carlos saavedra',/Pwc|PwC.*Canarias|Carlos Saavedra/i,'specialist-sitemap fallback');
         }
+        if(route.kind==='authority-register')await assertAuthorityRegister(page);
         if(route.kind==='existing'||route.kind==='gateway')await page.waitForSelector('.psr-utility-nav',{timeout:15000});
+        if(route.kind==='ac-autos'||route.kind==='ac-thread'){
+          const section=page.locator(route.section);
+          await section.waitFor({state:'attached',timeout:15000});
+          const sectionText=(await section.textContent())||'';
+          if(!sectionText.includes(route.marker))throw new Error(`Missing controlled AC-thread marker: ${route.marker}`);
+          if(!sectionText.includes('110,956.97')&&!sectionText.includes('110.956,97'))throw new Error('Missing pleaded-total boundary');
+          if(!sectionText.includes('13 of 14')&&!sectionText.includes('13 de 14'))throw new Error('Missing CAEPR denominator');
+          if(!sectionText.includes('^'))throw new Error('Missing caret-identity legend');
+          if(route.kind==='ac-autos'){
+            for(const id of ['R01','R09','R30','F01','F13','F17']){
+              if(await page.locator(`#${id}`).count()!==1)throw new Error(`Missing controlled full-text anchor #${id}`);
+            }
+          }
+        }
         const metrics=await page.evaluate(()=>{
           const ids=[...document.querySelectorAll('[id]')].map(el=>el.id).filter(Boolean);
           const duplicates=[...new Set(ids.filter((id,i)=>ids.indexOf(id)!==i))];
@@ -100,7 +143,7 @@ try{
           return {scrollWidth:document.documentElement.scrollWidth,bodyScrollWidth:document.body.scrollWidth,clientWidth:viewportWidth,duplicates,h1:document.querySelectorAll('h1').length,offenders};
         });
         if(metrics.scrollWidth>metrics.clientWidth+3)throw new Error(`Horizontal overflow ${metrics.scrollWidth} > ${metrics.clientWidth}; ${JSON.stringify(metrics.offenders)}`);
-        if((route.kind==='control'||route.kind==='search'||route.kind==='gateway')&&metrics.duplicates.length)throw new Error(`Duplicate IDs: ${metrics.duplicates.join(', ')}`);
+        if((route.kind==='control'||route.kind==='search'||route.kind==='gateway'||route.kind==='ac-autos'||route.kind==='ac-thread')&&metrics.duplicates.length)throw new Error(`Duplicate IDs: ${metrics.duplicates.join(', ')}`);
         if(metrics.h1<1)throw new Error('Missing H1');
         const shot=path.join(out,`${route.name}-${viewport.name}.png`);
         await page.screenshot({path:shot,fullPage:true});

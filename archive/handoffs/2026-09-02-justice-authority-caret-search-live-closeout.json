@@ -1,0 +1,162 @@
+{
+  "schema": "por-derecho.workspace-handoff.v1",
+  "handoff_id": "PD-WCH-20260902-AUTH-SEARCH-001",
+  "workspace_id": "PD-WS-20260902-0001",
+  "date": "2026-09-02",
+  "status": "DELETION_SAFE_WITH_OPEN_WORK",
+  "repository": "sbu001monterecco/por-derecho",
+  "authoritative_baseline_sha": "0145793d53d86a99f34ef60ff69db7df871e4910",
+  "publication": {
+    "state": "LIVE_VERIFIED",
+    "primary_pr": 1347,
+    "visibility_hotfix_pr": 1351,
+    "merge_sha": "0145793d53d86a99f34ef60ff69db7df871e4910",
+    "pages_run_id": 33622844666,
+    "live_browser_run_id": 33623082252,
+    "artifact_id": 9843703946,
+    "artifact_sha256": "2738c514d4523d9a645233db848b5d51d457e23ce7598b3e89e2149bc0fd0fd9",
+    "indexed_entries": 464
+  },
+  "authority_state": {
+    "control_id": "PD-SP-JUSTICE-AUTHORITY-CURRENT-20260902-01",
+    "governance_path": ".github/governance/JUDICIAL_PROSECUTORIAL_AUTHORITY_REGISTER_CONTINUITY_02SEP2026.md",
+    "named_people": 59,
+    "caret_confirmed": 56,
+    "caret_pending": 3,
+    "caret_suspended": 0,
+    "historic_docket_backfill": "OPEN_NOT_CERTIFIED_COMPLETE"
+  },
+  "key_ids": {
+    "master_provincial_court": "PD-SP-I-0044",
+    "provincial_court_section_2": "PD-SP-I-0025",
+    "provincial_court_section_4": "PD-SP-I-0014",
+    "dp748": "PD-SP-R-0003",
+    "graciela_perez_valencia": "PD-SP-P-0147",
+    "ricardo_mosteyrin": "PD-SP-P-0058",
+    "auren_reestructuraciones_slp": "PD-SP-O-0070"
+  },
+  "action_ledger": {
+    "control": "PD-CONT-DIGEST-001",
+    "repository_digest_actions": [
+      {
+        "action": "re_fetch_current_main",
+        "result": "0145793d53d86a99f34ef60ff69db7df871e4910"
+      },
+      {
+        "action": "read_workspace_index_and_register",
+        "result": "2-Sep authority/search release was not previously registered as its own PD-WS workspace"
+      },
+      {
+        "action": "read_controlling_governance",
+        "paths": [
+          ".github/governance/JUDICIAL_PROSECUTORIAL_AUTHORITY_REGISTER_CONTINUITY_02SEP2026.md",
+          ".github/governance/WORKSPACE_THREAD_CONTINUITY_HANDOFF_STANDARD_01SEP2026.md",
+          ".github/governance/AUTOMATIC_WORKSPACE_PERSISTENCE_ARCHITECTURE_01SEP2026.md",
+          ".github/governance/CONCURRENT_WORKSPACE_REGISTRATION_PROTOCOL_01SEP2026.md",
+          ".github/governance/CONTINUITY_EVENT_REPOSITORY_DIGEST_ACTION_CHECKLIST_01SEP2026.md"
+        ]
+      },
+      {
+        "action": "inspect_publication_and_verification_runs",
+        "pages_run_id": 33622844666,
+        "browser_run_id": 33623082252
+      },
+      {
+        "action": "inspect_current_authority_search_ci",
+        "result": "green on exact publication SHA"
+      }
+    ],
+    "connected_source_actions": [
+      {
+        "action": "none",
+        "reason": "Repository/publication continuity status did not require a current Gmail/Drive reconstruction."
+      }
+    ],
+    "registration_and_identity_actions": [
+      {
+        "action": "register_workspace",
+        "id": "PD-WS-20260902-0001",
+        "state": "MAIN_REGISTRATION_PENDING_PR_MERGE"
+      },
+      {
+        "action": "no_new_caepr_identity_allocated",
+        "reason": "Existing immutable CAEPR identities and the current source-identified denominator are reused."
+      }
+    ],
+    "relationship_interlink_actions": [
+      {
+        "action": "link_workspace_to_authority_governance_search_validator_publication_and_live_verification"
+      },
+      {
+        "action": "preserve_person_proceeding_court_fiscalia_act_specific_interlink_contract",
+        "state": "GOVERNED"
+      }
+    ],
+    "chronology_and_proceedings_actions": [
+      {
+        "action": "preserve_current_source_identified_denominator",
+        "named_people": 59,
+        "confirmed": 56,
+        "pending": 3
+      },
+      {
+        "action": "preserve_historic_docket_boundary",
+        "state": "BACKFILL_OPEN_NOT_CERTIFIED_COMPLETE"
+      }
+    ],
+    "publication_and_live_actions": [
+      {
+        "layer": "repository",
+        "state": "MERGED_TO_MAIN",
+        "sha": "0145793d53d86a99f34ef60ff69db7df871e4910"
+      },
+      {
+        "layer": "github_pages",
+        "state": "DEPLOYED_SUCCESS",
+        "run_id": 33622844666
+      },
+      {
+        "layer": "live_browser",
+        "state": "LIVE_VERIFIED",
+        "run_id": 33623082252,
+        "indexed_entries": 464
+      },
+      {
+        "layer": "verification_artifact",
+        "artifact_id": 9843703946,
+        "sha256": "2738c514d4523d9a645233db848b5d51d457e23ce7598b3e89e2149bc0fd0fd9"
+      }
+    ],
+    "completed_actions": [
+      "Published current authority/caret/search release and court hierarchy.",
+      "Repaired hidden homepage search mount and added regression guard.",
+      "Verified Spanish and English live search, representative canonical IDs and HTTP-200 click-throughs.",
+      "Created dedicated durable workspace/handoff continuity package for this release."
+    ],
+    "open_actions": [
+      {
+        "priority": "P1",
+        "item": "Historic/current official-docket backfill",
+        "close_trigger": "Recover primary/certified docket sources and register every source-identifiable Judge/Magistrate, LAJ and Fiscal or explicit non-applicability/gap."
+      },
+      {
+        "priority": "P2",
+        "item": "Proceeding authority-role completeness",
+        "close_trigger": "Every applicable Master Proceedings row carries explicit authority-role state and global dynamic validator passes."
+      },
+      {
+        "priority": "P2",
+        "item": "Concurrent proceedings-interconnectivity successor-hash drift",
+        "close_trigger": "Reconcile against the then-current main without weakening unrelated gates."
+      }
+    ],
+    "do_not_infer": [
+      "CARET identity does not prove conduct, authorship, knowledge, intent, wrongdoing, liability or outcome.",
+      "Current office-holder does not prove historical handling of a file.",
+      "A notice/signature/heading does not transfer authorship to another act.",
+      "CURRENT SOURCE-IDENTIFIED DENOMINATOR VERIFIED is not CERTIFIED COMPLETE DOCKET.",
+      "Repository merge, Pages deployment, live verification and institutional filing/service are separate states."
+    ],
+    "next_thread_bootstrap": "Continue PD-WS-20260902-0001 from repository state. Read CURRENT_WORKSPACE_HANDOFF.md, archive/handoffs/2026-09-02-justice-authority-caret-search-live-closeout.md, the authority continuity control, assets/data/justice-authority-register-current-v2.json and the Master Proceedings/CAEPR controls named there. Re-fetch current main before changes. Preserve explicit historic-docket gaps. Then proceed to the priority proceeding, currently E.G. 745/2026."
+  }
+}

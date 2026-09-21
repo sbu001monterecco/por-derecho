@@ -1,18 +1,18 @@
 # DP 1956/2026 — STATUS / REOPENING CORRECTION CONTROL
 
 **Date:** 18 August 2026  
-**Status:** CONTROLLING CORRECTION OVERLAY — INTERNAL KNOWLEDGE CONTROL / PUBLIC-SAFE OUTPUT RULES  
+**Status:** CONSOLIDATED IN CORRECTIVE SOURCE TREE — public/main effect begins on merge and deployment; correction control retained for provenance
 **Applies to:** DP 1956/2026 · NIG 3501643220260016826 · Control 22 shorthand · AC/concurso documentary/accounting track
 
 ## 1. Why this correction exists
 
-The current `archive/PROCEEDINGS_MASTER_REGISTER.csv` row `GC-CRI-009` and the proceedings table in `archive/knowledge-project/ALLEGATIONS_CROSSWALK_AN2023_DP1901_DP1956_CONTROL24_16AUG2026.md` contain wording that a reform/subsidiary appeal was reported after the provisional archive of DP 1956/2026.
+The former `archive/PROCEEDINGS_MASTER_REGISTER.csv` row `GC-CRI-009` and the proceedings table in `archive/knowledge-project/ALLEGATIONS_CROSSWALK_AN2023_DP1901_DP1956_CONTROL24_16AUG2026.md` contained wording that a reform/subsidiary appeal was reported after the provisional archive of DP 1956/2026.
 
 That wording is superseded.
 
 A working draft of a possible challenge existed, but the controlled correspondence reviewed on 18 August 2026 confirms that it was **not filed**. A draft must never be converted into a filed procedural act.
 
-Until the master CSV and the older crosswalk row are physically rewritten, **this file controls over both**.
+On 30 August 2026, the master CSV and the older crosswalk row were physically corrected. This file remains the provenance and interpretation control for the corrected status and the privilege/publication boundary.
 
 ## 2. Correct current status
 
@@ -72,7 +72,7 @@ For retrieval and evidence planning, preserve the existing three-cluster structu
 
 1. the 20 March 2019 AC request concerning validation of the 28 November 2018 transaction, read against the later non-validation order and the unresolved restitution/accounting/registry consequences;
 2. the AC report of 25 January 2022 and its annexes;
-3. the 21 February 2022 deed (protocol 334), including the documentary/accounting basis for the stated economic figures, the separate EUR 400,000 component and the final estate-account treatment.
+3. the 21 February 2022 deed (**Protocol 457**), including the documentary/accounting basis for the stated EUR 13,168,082.02 debt consideration, its EUR 13,065,186.68 six-component printed subtotal and EUR 102,895.34 cap step; keep the separate EUR 400,000 / 31-finca branch and Mortgage Enforcement 90/2012 outside that deed unless primary implementation evidence proves a specific bridge.
 
 These are finite documentary targets. They do not authorise a general audit of every act by the insolvency administrator and do not establish criminal liability.
 
@@ -106,12 +106,12 @@ A dedicated ES/EN procedural-status page may explain:
 
 Do not promote DP 1956/2026 as a homepage priority. It belongs under the insolvency-administrator / justice / institutional-accountability layer.
 
-## 9. Required downstream corrections
+## 9. Downstream correction closeout
 
-When technically possible, physically correct:
+Prepared and locally validated on 30 August 2026; effective in public/main when the corrective commit merges and deploys:
 
-- `archive/PROCEEDINGS_MASTER_REGISTER.csv` row `GC-CRI-009`;
-- `archive/knowledge-project/ALLEGATIONS_CROSSWALK_AN2023_DP1901_DP1956_CONTROL24_16AUG2026.md` proceedings table;
-- any website or runtime data that says an appeal is pending/filed or treats DP 1956 as finally closed.
+- `archive/PROCEEDINGS_MASTER_REGISTER.csv` row `GC-CRI-009` now records the provisional dismissal and the absence of any established filed reform/subsidiary appeal;
+- `archive/knowledge-project/ALLEGATIONS_CROSSWALK_AN2023_DP1901_DP1956_CONTROL24_16AUG2026.md` now carries the same status and the remaining primary-order gap; and
+- the public-safe rule remains: do not describe an appeal as filed/pending and do not treat DP 1956 as finally closed on the merits.
 
-Until then this overlay is mandatory and must be read before reusing those older descriptions.
+The signed provisional-dismissal order and current status/finality certification remain open primary-source targets. This correction control must still be read before reusing older narrative material, but it no longer substitutes for stale canonical fields.

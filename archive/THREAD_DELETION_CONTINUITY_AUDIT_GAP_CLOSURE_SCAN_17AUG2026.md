@@ -20,8 +20,8 @@ The originating conversation is deletion-safe **with open evidence** once this a
 4. **2021 primary judicial route promoted.** Signed standalone 18-May-2021 and 15-Oct-2021 Autos were located and fingerprinted. They document the court's Article 210.4 better-offer/licitation logic, final CAM proposal approval and dismissal of LPB/Aweswell reposiciones.
 5. **2021 competition correction.** It is unsafe to state that no better-offer/competitive mechanism existed at all. The court created a mechanism; adequacy, disclosure, notice and equality remain separately examinable.
 6. **27-Oct-2021 LAJ continuity source.** A signed LAJ Diligencia records incorporation/transfer/availability of AC filing 7425/2021.
-7. **JV1260 adverse merits source recovered.** AP Las Palmas Sentencia 16/2014 extended the eviction result to Monterecco and made adverse period-specific practical-possession/interrelationship findings. The zero-control Monterecco thesis for 2011–12 is blocked.
-8. **Periodisation preserved.** AP16/2014 does not establish identical Pink capacity through 2018. Operator/control must remain function- and period-specific.
+7. **JV1260 adverse merits source recovered.** AP Las Palmas Sentencia **89/2014** extended the eviction result to Monterecco and made adverse period-specific practical-possession/interrelationship findings. The earlier `16/2014` label for the same binary was an identification error corrected by CR-066. The zero-control Monterecco thesis for 2011–12 is blocked.
+8. **Periodisation preserved.** AP 89/2014 does not establish identical Pink capacity through 2018. Operator/control must remain function- and period-specific.
 9. **Native AC 31-Jul-2018 DP1132 statement recovered.** The statement directly conflicts with the Sep-2018 complainant account over CEXP reactivation/Pink booking-manager status and supplies adverse/exculpatory material on main-lock authorisation and alleged CAM illegality.
 10. **AC-authorisation scope refined.** The AC denied ordering a main access lock takeover while describing narrower authorisation for access to certain LPB local/maintenance spaces. Neither side of that statement may be omitted or expanded beyond source scope.
 11. **13-Jun-2018 DP1132 Auto promoted.** It evidences the court's early procedural admission/investigated-person posture, not guilt or a merits finding.
@@ -41,7 +41,7 @@ The originating conversation is deletion-safe **with open evidence** once this a
 
 The gap-closure pass materially strengthened evidence reliability because it preserved evidence that can weaken stronger project formulations:
 
-- AP Sentencia 16/2014 supports practical Monterecco possession/interrelationship in the 2011–12 dispute.
+- AP Sentencia 89/2014 supports practical Monterecco possession/interrelationship in the 2011–12 dispute.
 - The AC's 31-Jul-2018 statement denies CEXP reactivation, denies ordering the main-lock takeover and denies knowledge of illicit CAM conduct, while describing narrower access authority.
 - The 18-May/15-Oct Autos state that the court did create a better-offer/licitation route and record Ottawa's failure to deposit the required bond/personate/attend as treated by the court.
 - The DI248 archive remains an adverse official prosecutorial assessment of the criminal material then presented.

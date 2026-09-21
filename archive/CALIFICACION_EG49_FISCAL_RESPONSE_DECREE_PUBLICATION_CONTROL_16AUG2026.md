@@ -22,7 +22,7 @@ This control supersedes any shorthand suggesting Fiscalía was silent on the Jun
 
 ### EG 49/2026 — 3 June 2026
 
-Native source: Gmail attachment `EG 49-26  DECRETO - NO ACCEDER A LO SOLICITADO y ARCHIVO.pdf` from the official Fiscalía General del Estado Delitos contra la Administración Pública account.
+Native source: official Fiscalía General del Estado Delitos contra la Administración Pública attachment, public-safe custody reference `MF-EG49-SRC-DEC-01` (exact private filename and provider locator withheld).
 
 - Expediente: EG 49/2026
 - Interested party: GIL MARER
@@ -38,7 +38,7 @@ It concludes that the Fiscal de Sala Coordinador lacks legal powers to carry out
 
 ### EG 49/2026 — 8 June 2026 / digitally signed 9 June
 
-Native source: Gmail attachment `EG 49-26 DECRETO REAPERTURA -NO ACCEDER A NUEVA SOLICITUD - ARCHIVO.pdf`.
+Native source: official Fiscalía attachment, public-safe custody reference `MF-EG49-SRC-DEC-02` (exact private filename and provider locator withheld).
 
 - Expediente: EG 49/2026
 - Interested party: GIL MARER

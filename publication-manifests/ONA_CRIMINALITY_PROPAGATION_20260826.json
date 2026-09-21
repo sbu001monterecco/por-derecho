@@ -1,0 +1,82 @@
+{
+  "publication_id": "PD-PUB-ONA-CRIM-20260826-02",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-26",
+  "current_state": "PR_OPEN",
+  "subject": "ONA/Clubotel funded-exit fact attribution and actor-specific criminal-investigative propagation across the ONA, Carlos Sanz, Daniel Irigoyen, Cuatrecasas, Insolvency Administrator and judicial-control routes.",
+  "base_main_at_start": "e6b9711425f4a6b79ccb0002fd7c9ac6dc52354f",
+  "source_branch": "chatgpt/ona-criminality-propagation-20260826",
+  "expected_routes": {
+    "es": [
+      "es/ona-hotels-salida-concurso-36-2012/matriz-manifestaciones-hecho-documentadas/index.html",
+      "es/ona-hotels-salida-concurso-36-2012/test-penal-actores-adversos/index.html",
+      "es/ona-hotels-salida-concurso-36-2012/carlos-sanz-administrador-concursal/index.html",
+      "es/ona-hotels-salida-concurso-36-2012/clubotel-personacion-daniel-irigoyen/index.html",
+      "es/ona-hotels-salida-concurso-36-2012/cuatrecasas-certificacion-deuda-financiacion/index.html"
+    ],
+    "en": [
+      "en/ona-hotels-insolvency-exit-36-2012/documented-statements-fact-matrix/index.html",
+      "en/ona-hotels-insolvency-exit-36-2012/criminal-test-adverse-actors/index.html",
+      "en/ona-hotels-insolvency-exit-36-2012/carlos-sanz-insolvency-administrator/index.html",
+      "en/ona-hotels-insolvency-exit-36-2012/clubotel-personation-daniel-irigoyen/index.html",
+      "en/ona-hotels-insolvency-exit-36-2012/cuatrecasas-debt-certification-finance/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/evidence/ONA_FUNDED_EXIT_UNITARY_FACT_AND_CRIMINALITY_DIGEST_26AUG2026.md"
+  ],
+  "source_ids": [
+    "ONA-FX-001",
+    "ONA-FX-002",
+    "ONA-FX-003",
+    "ONA-FX-004",
+    "ONA-FX-005",
+    "ONA-FX-006",
+    "ONA-FX-007",
+    "ONA-FX-008",
+    "ONA-FX-009"
+  ],
+  "verified_findings": [
+    "ONA/Clubotel transaction and operating work existed before 7 June 2018 and continued afterwards.",
+    "Carlos Sanz sought transaction information from the Insolvency Administrator in April 2018 and was redirected to personation/court access rather than supplied the requested substantive terms.",
+    "The September 2018 coordinated correspondence records a wider objective of financing exit through payment or consignation to all recognised creditors.",
+    "Cuatrecasas participated in debt, security and drafting work and a contemporaneous drafting message records removal of a subtle ONA reference from one proposed submission.",
+    "Clubotel later sought personation through Daniel Irigoyen; the personation pleading formalised acquisition/information-access interest, while its wider funded-exit significance arises from the combined transaction record."
+  ],
+  "central_hypothesis": "Gil Marer alleges that identified private actors, affirmative acts or legally relevant omissions of the Insolvency Administrator, and specified judicial acts or omissions formed an actor-specific continuum that knowingly impaired a developed creditor-paying exit and enabled the adverse control outcome to consolidate. The publication presents this as an investigative hypothesis, not adjudicated guilt.",
+  "not_established": [
+    "joint witness adoption by all named transaction participants",
+    "completed criminal agreement or conspiracy",
+    "criminal intent of any private actor merely from later benefit",
+    "criminal liability of the Insolvency Administrator from procedural gatekeeping or opposition alone",
+    "judicial prevarication merely from adverse decisions, delay or omission",
+    "that the Clubotel personation pleading itself promised payment of the definitive claims text"
+  ],
+  "express_exclusions": [
+    "no publication of criminal guilt as established",
+    "no transfer of knowledge, intent or liability through family, corporate, professional or institutional association",
+    "no publication of raw private email bodies, message IDs, signatures or privileged advice",
+    "no invented direct quotation from the Magistrate-Judge",
+    "no conflation of ONA brand, Clubotel La Dorada, S.L. and every separate ONA group legal person"
+  ],
+  "validation": {
+    "evidence": [
+      "PR #1065 opened for bilingual fact-attribution and criminality propagation.",
+      "Private-source, statement and OSINT governance audit passed on the original PR head.",
+      "Concurso 36/2012 primary-autos redigest gate passed on the original PR head.",
+      "Audience and publication-integrity failures on the original PR head were treated as blocking and corrected before merge."
+    ]
+  },
+  "verification_required": [
+    "all changed-surface CI checks green on the corrected PR head",
+    "refresh and compare current main before merge",
+    "verify bilingual routes and reciprocal links after GitHub Pages deployment",
+    "update this manifest to MERGED/DEPLOYED/LIVE_VERIFIED only after those states are evidenced"
+  ],
+  "privacy": {
+    "raw_private_evidence_committed": false,
+    "private_message_ids_committed": false,
+    "privileged_advice_committed": false,
+    "personal_identifiers_committed": false
+  }
+}

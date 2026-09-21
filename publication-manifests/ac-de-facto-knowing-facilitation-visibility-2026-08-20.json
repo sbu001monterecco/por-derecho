@@ -1,0 +1,199 @@
+{
+  "publication_id": "AC-DE-FACTO-KNOWING-FACILITATION-VISIBILITY-20260820",
+  "parent_publication_id": "AC-COMMUNITY-DE-FACTO-ADMINISTRATION-20260820",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-20",
+  "current_state": "DELETION_SAFE",
+  "merge_sha": "0dafc72abf53034795fd7120541966cf063b6eef",
+  "subject": "Cross-site visibility of the attributed serious de facto-management and knowing-facilitation allegation",
+  "public_headlines": {
+    "es": "Alegación transversal: administración de hecho y facilitación consciente",
+    "en": "Cross-cutting allegation: de facto management and knowing facilitation"
+  },
+  "expected_routes": {
+    "es": [
+      "es/administracion-de-hecho-comunidad-ac/index.html"
+    ],
+    "en": [
+      "en/de-facto-administration-community-ac/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/MASTER_EXECUTION_PROMPT_DE_FACTO_MANAGEMENT_KNOWING_FACILITATION_VISIBILITY_20AUG2026.md",
+    "archive/AC_DE_FACTO_MANAGEMENT_KNOWING_FACILITATION_VISIBILITY_CONTROL_20AUG2026.md",
+    "archive/THREAD_DELETION_AUDIT_AC_DE_FACTO_KNOWING_FACILITATION_VISIBILITY_20AUG2026.md",
+    "assets/data/ac-de-facto-knowing-facilitation-visibility-v1.json",
+    "assets/ac-de-facto-knowing-facilitation-visibility-20260820.js",
+    "assets/ac-de-facto-knowing-facilitation-stability-20260820.js",
+    "assets/site.js",
+    "operations/AC_DE_FACTO_MANAGEMENT_KNOWING_FACILITATION_VISIBILITY_ACTIVATION_2026-08-20.md",
+    "scripts/validate_ac_community_de_facto_administration.py",
+    "scripts/render_ac_community_de_facto_administration.mjs",
+    ".github/workflows/validate-ac-community-de-facto-administration.yml",
+    ".github/workflows/verify-ac-community-de-facto-administration-live.yml"
+  ],
+  "visibility_targets": {
+    "core": [
+      "home",
+      "updates",
+      "Case Control Room",
+      "criminal-engineering investigation",
+      "canonical de facto-administration routes"
+    ],
+    "direct_causal": [
+      "Community/CEXP/ACTA authority",
+      "Insolvency Administrator and professional perimeter",
+      "7 June takeover / Acosta Matos / Matkator",
+      "definitive texts / lender / insolvency / Article 1535 / adjudication",
+      "Calificacion / judge / LAJ / CGPJ / Fiscalía",
+      "notarial and Registry implementation"
+    ],
+    "downstream_reliance": [
+      "RICPE",
+      "same asset / multiple financial lives",
+      "RIC / incentives / FEDER",
+      "CNMV",
+      "Portfolio / Orion",
+      "HNT / MYND"
+    ]
+  },
+  "documented_anchors": [
+    "recurring private management functions over debt, voting, access, security and maintenance",
+    "Administrator request, attendance, identified authorisations and use of creditor-generated debt material",
+    "formal 2017 Community contingency modification",
+    "formal 2018 secured-credit holder-only substitution",
+    "later Community/debt figures used in liquidation or bidding without a currently located express post-liquidation enlargement of definitive recognised credit"
+  ],
+  "attributed_allegation": "Private actors operated as unrecognised functional managers and the Insolvency Administration knowingly enabled, adopted, relied upon or allowed important parts of that architecture, requiring investigation of de facto administration, knowing facilitation, essential cooperation or coordinated participation.",
+  "not_established": [
+    "criminal agreement",
+    "full administrator-in-fact status for every actor or function",
+    "knowing falsity of a specific document",
+    "procedural fraud",
+    "blanket double charging",
+    "judicial prevarication",
+    "automatic knowledge or guilt of later actors"
+  ],
+  "publication_boundaries": [
+    "attributed allegation rather than finding",
+    "documented/alleged/not-proved/decisive-evidence separation",
+    "actor and legal-person specificity",
+    "strongest defence and contrary evidence visible",
+    "no private or privileged source publication",
+    "no downstream transfer of knowledge or guilt",
+    "not yet located is not non-existence"
+  ],
+  "repository_state": {
+    "source_pr": 589,
+    "source_branch": "agent/ac-de-facto-knowing-facilitation-visibility-20260820",
+    "source_head_sha": "2ee77d7d81587f69e693b49d87d9180f220e895a",
+    "merge_sha": "0dafc72abf53034795fd7120541966cf063b6eef",
+    "merged_at": "2026-08-20T11:31:59Z",
+    "merge_status": "MERGED"
+  },
+  "validation": {
+    "evidence": [
+      "Dedicated allegation-visibility validation run 32363980688 completed successfully on PR #589.",
+      "Publication-integrity run 32363980731 completed successfully on PR #589.",
+      "Criminal-engineering/case-architecture run 32363980642 completed successfully on PR #589.",
+      "Case-information-architecture run 32363980639 completed successfully on PR #589.",
+      "Adjudication-provenance run 32363980643 completed successfully on PR #589.",
+      "Unitary-public-shell run 32363980714 completed successfully on PR #589.",
+      "Off-GitHub preservation run 32363980718 completed successfully on PR #589.",
+      "Public-bidder anonymisation run 32363980722 completed successfully on PR #589.",
+      "Visual-asset registry run 32363980699 completed successfully on PR #589.",
+      "2022-adjudication live verifier run 32363980662 completed successfully on PR #589.",
+      "Post-merge public-edge workflow run 32364263168, job 96410259607, completed successfully on merge SHA 0dafc72abf53034795fd7120541966cf063b6eef."
+    ],
+    "dedicated_visibility_run_id": 32363980688,
+    "dedicated_visibility": "SUCCESS",
+    "publication_integrity_run_id": 32363980731,
+    "publication_integrity": "SUCCESS",
+    "criminal_engineering_run_id": 32363980642,
+    "criminal_engineering": "SUCCESS",
+    "case_information_architecture_run_id": 32363980639,
+    "case_information_architecture": "SUCCESS",
+    "adjudication_provenance_run_id": 32363980643,
+    "adjudication_provenance": "SUCCESS",
+    "unitary_public_shell_run_id": 32363980714,
+    "unitary_public_shell": "SUCCESS",
+    "off_github_preservation_run_id": 32363980718,
+    "off_github_preservation": "SUCCESS",
+    "public_bidder_anonymisation_run_id": 32363980722,
+    "public_bidder_anonymisation": "SUCCESS",
+    "visual_asset_registry_run_id": 32363980699,
+    "visual_asset_registry": "SUCCESS",
+    "adjudication_live_run_id": 32363980662,
+    "adjudication_live": "SUCCESS",
+    "public_edge_workflow_run_id": 32364263168,
+    "public_edge_workflow_job_id": 96410259607,
+    "public_edge": "SUCCESS"
+  },
+  "deployment_evidence": [
+    "PR #589 merged the visibility control, machine-readable route-impact dataset, bilingual runtime spotlight, route-specific panels, loader cache bump, stability guard and expanded validation.",
+    "GitHub Pages source verification passed on propagation attempt 5 for both canonical pages, the base module, the new visibility module, the stability module, the central loader, the sitemap and robots.txt.",
+    "Rendered-browser verification passed 70 assertions across the Spanish and English canonical pages, the Spanish home page, the English criminal-investigation route, Community, Administrator, adjudication, notarial and RICPE routes.",
+    "Each tested route rendered one stable allegation or route-relevance panel, preserving the parent module markers and preventing duplicate reinsertion.",
+    "Durable commit statuses pages-propagation/ac-community-de-facto-administration and pages-propagation/ac-de-facto-knowing-facilitation-visibility were published as success on merge SHA 0dafc72abf53034795fd7120541966cf063b6eef."
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/administracion-de-hecho-comunidad-ac/",
+    "https://sbu001monterecco.github.io/por-derecho/en/de-facto-administration-community-ac/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/ac-de-facto-knowing-facilitation-visibility-20260820.js",
+    "https://sbu001monterecco.github.io/por-derecho/assets/ac-de-facto-knowing-facilitation-stability-20260820.js",
+    "https://sbu001monterecco.github.io/por-derecho/assets/site.js"
+  ],
+  "live_markers": {
+    "https://sbu001monterecco.github.io/por-derecho/assets/ac-de-facto-knowing-facilitation-visibility-20260820.js": [
+      "Alegación transversal: administración de hecho y facilitación consciente",
+      "Cross-cutting allegation: de facto management and knowing facilitation",
+      "data-ac-dfa-allegation-visibility",
+      "data-ac-dfa-impact-chain",
+      "data-ac-dfa-route-relevance"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/assets/ac-de-facto-knowing-facilitation-stability-20260820.js": [
+      "panel.dataset.acDfaUpdate",
+      "panel.dataset.acDfaCrosslink",
+      "panels.slice(1).forEach(removePanel)",
+      "data.acDfaVisibilityStability"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/assets/site.js": [
+      "ac-community-de-facto-administration-20260820.js?v=20260820b",
+      "ac-de-facto-knowing-facilitation-visibility-20260820.js?v=20260820b",
+      "ac-de-facto-knowing-facilitation-stability-20260820.js?v=20260820b"
+    ]
+  },
+  "live_verification_evidence": {
+    "status": "LIVE_VERIFIED",
+    "source_sha": "0dafc72abf53034795fd7120541966cf063b6eef",
+    "workflow_run_id": 32364263168,
+    "workflow_job_id": 96410259607,
+    "source_poll_attempt": 5,
+    "rendered_browser_assertions_passed": 70,
+    "verified_at": "2026-08-20T11:33:22.781Z",
+    "commit_status_context": "pages-propagation/ac-de-facto-knowing-facilitation-visibility",
+    "commit_status_state": "success"
+  },
+  "deletion_record": {
+    "status": "DELETION-SAFE WITH OPEN EVIDENCE",
+    "audit_file": "archive/THREAD_DELETION_AUDIT_AC_DE_FACTO_KNOWING_FACILITATION_VISIBILITY_20AUG2026.md",
+    "visibility_control": "archive/AC_DE_FACTO_MANAGEMENT_KNOWING_FACILITATION_VISIBILITY_CONTROL_20AUG2026.md",
+    "master_prompt": "archive/MASTER_EXECUTION_PROMPT_DE_FACTO_MANAGEMENT_KNOWING_FACILITATION_VISIBILITY_20AUG2026.md",
+    "reason": "The reverse-engineering decision, attributed wording, route-impact map, public/private boundaries, PR/merge state and public-edge evidence are recoverable from current repository records; merits evidence remains explicitly open.",
+    "private_material_excluded": [
+      "private email bodies and message identifiers",
+      "privileged legal advice",
+      "unredacted evidential binaries",
+      "unnecessary personal identifiers"
+    ]
+  },
+  "open_evidence": [
+    "certified complete court docket and post-2016 modification index",
+    "native Community authority, voting, minutes, accounts, invoices and bank records",
+    "vendor/payer/recharge duplicate-cost crosswalk",
+    "native AC–Community–CAM communications",
+    "security, locksmith, key/code and access logs",
+    "offer, appraisal and interest workbooks",
+    "final accounts, EUR 400,000 trail, deed notice and property-by-property Registry chain"
+  ]
+}

@@ -1,0 +1,38 @@
+name: Validate person perimeter policy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "PERSON_PERIMETER_START_HERE.md"
+      - ".github/governance/PERSON_PERIMETER_SEPARATION_AND_PUBLICATION_PROTOCOL.md"
+      - ".github/governance/person-perimeter-classification-policy-v1.json"
+      - ".github/governance/records/PERIMETER_SEPARATION_DECISION_20260825.md"
+      - "scripts/validate_person_perimeter_policy.py"
+      - ".github/workflows/validate-person-perimeter-policy.yml"
+  pull_request:
+    paths:
+      - "PERSON_PERIMETER_START_HERE.md"
+      - ".github/governance/PERSON_PERIMETER_SEPARATION_AND_PUBLICATION_PROTOCOL.md"
+      - ".github/governance/person-perimeter-classification-policy-v1.json"
+      - ".github/governance/records/PERIMETER_SEPARATION_DECISION_20260825.md"
+      - "scripts/validate_person_perimeter_policy.py"
+      - ".github/workflows/validate-person-perimeter-policy.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12"
+      - name: Validate classification and authorization architecture
+        run: python scripts/validate_person_perimeter_policy.py

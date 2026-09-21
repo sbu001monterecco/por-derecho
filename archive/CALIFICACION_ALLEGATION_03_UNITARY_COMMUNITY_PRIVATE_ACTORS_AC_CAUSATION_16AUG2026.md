@@ -57,7 +57,7 @@ Separately, the receivables record supports a real economic dispute over costs b
 
 The 6-Feb-2012 contract did not allocate only a €24,575 monthly rent. It also allocated LPB Community charges of €33,915.29/month and broad operating responsibilities/costs to Spanish Monterecco/Pink.
 
-A contemporaneous accountant communication dated **25-Nov-2013**, sent by Jonathan Simó Morales with the attachment `compensación entre cías.pdf`, adds an important economic layer. Based on the data supplied to the accountant, it proposed offsetting the €24,575 monthly rent against LPB obligations said to have been borne by Monterecco, including:
+A contemporaneous accountant communication dated **25-Nov-2013**, sent by Jonathan Simó Morales with an inter-company compensation memorandum (exact private attachment filename withheld), adds an important economic layer. Based on the data supplied to the accountant, it proposed offsetting the €24,575 monthly rent against LPB obligations said to have been borne by Monterecco, including:
 
 - Community costs;
 - IBI / refuse-related amounts;

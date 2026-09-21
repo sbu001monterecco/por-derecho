@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">PwC: 2016 professional-knowledge checkpoint</title>
+<desc id="desc">Source-controlled visual of five private actors, the Insolvency Administrator as a separate point, and PwC's contemporaneous professional knowledge.</desc>
+<defs><style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#13252d}.title{font-size:52px;font-weight:800}.sub{font-size:25px}.box-title{font-size:26px;font-weight:800}.body{font-size:21px}.small{font-size:17px}.white{fill:#fff}.muted{fill:#53656d}.arrow{stroke:#c89432;stroke-width:8;fill:none;marker-end:url(#a)}
+</style><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#c89432"/></marker></defs>
+<rect width="1600" height="1000" fill="#f4f1ea"/>
+<rect x="0" y="0" width="1600" height="150" fill="#13252d"/>
+<text x="70" y="72" class="title white">PWC · 2016 KNOWLEDGE CHECKPOINT</text>
+<text x="72" y="116" class="sub white">Five private actors + one court-appointed control point · Sun Park</text>
+
+<rect x="70" y="205" rx="24" width="440" height="555" fill="#fff" stroke="#8f2d27" stroke-width="5"/>
+<text x="100" y="255" class="box-title">FIVE PRIVATE ACTORS</text>
+<text x="105" y="310" class="body">1 · José Daniel Acosta Matos</text>
+<text x="105" y="360" class="body">2 · Laura Patricia Acosta Matos</text>
+<text x="105" y="410" class="body">3 · Francisco Mario Matos Matas</text>
+<text x="105" y="460" class="body">4 · Antonio Cogolludo Rojas</text>
+<text x="105" y="510" class="body">5 · Shaila María Cogolludo Ramos</text>
+<line x1="105" y1="550" x2="475" y2="550" stroke="#ddd"/>
+<text x="105" y="595" class="small muted">Presence in a chronology does not establish</text>
+<text x="105" y="625" class="small muted">coordination, common intent or an offence.</text>
+<text x="105" y="680" class="small muted">Each act, knowledge, authority and benefit</text>
+<text x="105" y="710" class="small muted">must be proved individually.</text>
+
+<rect x="580" y="205" rx="24" width="440" height="555" fill="#fff" stroke="#315c7b" stroke-width="5"/>
+<text x="610" y="255" class="box-title">PWC · CONTEMPORARY RECORD</text>
+<text x="610" y="310" class="body">Apr–Jun 2016 · legal/strategic work</text>
+<text x="610" y="355" class="body">Sun Park · Community · title · access</text>
+<text x="610" y="400" class="body">Insolvency · debt · voting · operation</text>
+<rect x="615" y="440" rx="14" width="370" height="105" fill="#fff8d9" stroke="#c89432" stroke-width="3"/>
+<text x="640" y="482" class="body" font-weight="800">“la vía penal contra esta gente”</text>
+<text x="640" y="522" class="small">client instruction / determination</text>
+<rect x="615" y="575" rx="14" width="370" height="85" fill="#edf3ee" stroke="#245c49" stroke-width="3"/>
+<text x="640" y="625" class="body" font-weight="800">“Tomamos nota de vuestra decisión”</text>
+<text x="610" y="705" class="small muted">Sep 2016: PwC confirmed direct contact with the IA.</text>
+
+<rect x="1090" y="205" rx="24" width="440" height="555" fill="#fff" stroke="#245c49" stroke-width="5"/>
+<text x="1120" y="255" class="box-title">SEPARATE POINT: IA</text>
+<text x="1120" y="310" class="body">Francisco de Borja</text>
+<text x="1120" y="345" class="body">Rodríguez-Batllori Laffitte</text>
+<text x="1120" y="395" class="body">Insolvency Administrator</text>
+<text x="1120" y="430" class="body">Insolvency 36/2012</text>
+<line x1="1120" y1="470" x2="1490" y2="470" stroke="#ddd"/>
+<text x="1120" y="520" class="body">Later institutional question:</text>
+<text x="1120" y="565" class="small muted">How were conflict, confidentiality, acceptance,</text>
+<text x="1120" y="595" class="small muted">independence and institutional memory managed</text>
+<text x="1120" y="625" class="small muted">for later relationships in the same perimeter?</text>
+<text x="1120" y="690" class="small muted">Professional contact does not equal misconduct.</text>
+
+<path d="M510 480 C540 480 550 480 580 480" class="arrow"/>
+<path d="M1020 480 C1050 480 1060 480 1090 480" class="arrow"/>
+
+<rect x="70" y="815" rx="18" width="1460" height="125" fill="#13252d"/>
+<text x="105" y="860" class="box-title white">EVIDENTIAL BOUNDARY</text>
+<text x="105" y="900" class="body white">The visual establishes a contemporaneous professional-knowledge checkpoint and identifiable sources.</text>
+<text x="105" y="928" class="small white">It does not establish that PwC found an offence, misused information or coordinated conduct.</text>
+</svg>

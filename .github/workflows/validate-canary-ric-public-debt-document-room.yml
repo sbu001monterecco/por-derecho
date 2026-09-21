@@ -1,0 +1,33 @@
+name: Validate Canary RIC Treasury document room
+
+on:
+  pull_request:
+    paths:
+      - 'evidence/canary-ric-public-debt/**'
+      - 'es/evidencia/tesoro-deuda-ric-2022-2025-documentos/**'
+      - 'en/evidence/treasury-ric-debt-2022-2025-documents/**'
+      - 'es/deuda-publica-ric-canarias/**'
+      - 'en/canary-ric-public-debt/**'
+      - 'scripts/validate_canary_ric_public_debt_document_room.py'
+      - '.github/workflows/validate-canary-ric-public-debt-document-room.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'evidence/canary-ric-public-debt/**'
+      - 'es/evidencia/tesoro-deuda-ric-2022-2025-documentos/**'
+      - 'en/evidence/treasury-ric-debt-2022-2025-documents/**'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - run: pip install PyMuPDF
+      - run: python scripts/validate_canary_ric_public_debt_document_room.py

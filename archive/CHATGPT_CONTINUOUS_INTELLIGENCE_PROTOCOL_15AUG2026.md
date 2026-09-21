@@ -20,7 +20,9 @@ This protocol turns Gmail, Google Drive/Library, the evidential Depository and t
 
 Search by **fact, function, actor, proceeding, asset and date**, not filename alone. Search Spanish/English variants, abbreviations, spelling variants and old/new company names.
 
-For Gmail, split searches into date windows: 2008–2011; 2012–2016; 2017; Jan–Jun 2018; Jul–Dec 2018; 2019–2022; 2023–2025; 2026. Read the full thread and supported attachments. Record message/thread ID, timestamp, sender, recipients, subject, attachment and exact proposition supported.
+For open-web identity, corporate-role and relationship research, apply `archive/OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md`: log the finite corpus and queries, prefer official primary sources, preserve adverse results and treat `not located` as a bounded search result rather than proof of absence.
+
+For Gmail, split searches into date windows: 2008–2011; 2012–2016; 2017; Jan–Jun 2018; Jul–Dec 2018; 2019–2022; 2023–2025; 2026. Read the full thread and supported attachments when authorised. Record message/thread ID, timestamp, sender, recipients, subject and attachment **only in the private evidence manifest**. The public repository records an opaque project evidence ID, a public-safe date/source class and the exact proposition supported; it must not contain provider IDs, private subjects, recipient identities or private-source bodies. A reserved declarant's personal account is acquired and reviewed only under `archive/RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md`.
 
 For Drive/Library, begin with semantic search. When a relevant item is found, read the complete relevant range or inspect scanned pages visually. Never publish from a disconnected snippet. Scanned/image-only primary documents must be marked as such until visually reviewed; do not invent a text-layer conclusion.
 
@@ -39,7 +41,7 @@ For Drive/Library, begin with semantic search. When a relevant item is found, re
 
 ## Priority proof gaps — keep searching until closed
 
-1. Primary final order of 29 March 2021 in DP 332/2014 and exact ground of dismissal/closure.
+1. Primary disposition supporting the reported 2021 closure of DP 332/2014, its date and exact ground. The 29 March date appears in a later party pleading and must be reconciled with contemporaneous reactivation/resumption communications.
 2. `3. Pericial Renta Perito Fiscalia - 25ABR2019.pdf`: visually inspect the complete primary scan and extract its exact methodology, valuation/rent conclusion, limitations, author and relationship to the original prosecution theory. **Its existence is verified; its substantive conclusion is not yet approved for public assertion.**
 3. Complete certified DI 248/2018 file: requested diligences versus diligences actually performed; evidence before the 7 May 2019 archive; treatment of DP 1132/2018.
 4. Certified DP 1132/2018 testimony/audiovisual and production orders; exact scope of AC-authorised access versus alleged excess.
@@ -51,7 +53,7 @@ For Drive/Library, begin with semantic search. When a relevant item is found, re
 
 ## Evidence ledger — mandatory extraction
 
-For every useful item record:
+For every useful item record in the **private evidence ledger**:
 
 - permanent evidence ID;
 - native filename and version;
@@ -74,6 +76,8 @@ For every useful item record:
 - public suitability: PUBLIC FACT / PUBLIC ANALYSIS / PUBLIC QUESTION / INTERNAL ONLY;
 - website/depository modules affected;
 - next proof step.
+
+The public derivative of that ledger must omit native filenames where sensitive, provider/message/thread IDs, private subjects, sender/recipient identities, bodies, signatures, authentication-bearing URLs and privileged or unnecessary personal data. It may use opaque project IDs and aggregate counts. Preservation authority is not publication authority.
 
 ## Evidence levels
 

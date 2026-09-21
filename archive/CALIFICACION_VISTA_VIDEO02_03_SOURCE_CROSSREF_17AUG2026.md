@@ -7,7 +7,7 @@ This file supplements `archive/CALIFICACION_VISTA_VIDEO_02_03_INTAKE_17AUG2026.m
 
 ## 1. Hearing / appeal anchor located in Drive
 
-Drive contains multiple versions of `20231012 Apelacion calificacion GIL.docx`. The retrieved text identifies:
+Drive contains multiple versions of the Gil calificación appeal source `MF-CAL-VISTA-SRC-01`. The retrieved text identifies:
 
 - Concurso ordinario 36/2012, Sección de calificación;
 - Sentencia 163/2023 of 28 September 2023;
@@ -20,7 +20,7 @@ This independently connects the visible 25/07/2023 date in VIDEO_02/03 to the he
 
 Principal Drive lead:
 
-`20231012 Apelacion calificacion GIL.docx` — multiple stored versions, including Drive id `1G4A5GulVlvV87-lsS4uZV3rd1Ds3-GfK`.
+Gil calificación appeal — multiple stored versions, public-safe custody reference `MF-CAL-VISTA-SRC-01` (exact private filename and Drive locator withheld).
 
 ## 2. David Espejo documentary source family located
 
@@ -28,11 +28,10 @@ The VIDEO_02 visual intake shows an on-screen remote-participant label `David Es
 
 A connected Drive search located a directly relevant documentary source family including:
 
-- `Calificación JT - documento cinco (pericial de Espejo valor razonable LPB).pdf` — Drive id `1l68RpYHw7e740v-TrO2nQrkQ-jIfiV92`;
-- `Sección 7 - David Espejo` — Drive id `1QRhSqOxA4bzyBBd-Q2D7NgVjuPt6kefHZnD1YS2uqh4`;
-- `Pericial - Nota Económica derechos contra la CEXP 11JUN2018.pdf` — duplicate/source-family copies located;
-- `Nota Económica derechos contra la CEXP Def.pdf`;
-- `Calificación JT - documento tres (deuda de explotadora y disidentes).pdf`.
+- David Espejo reasonable-value expert-report source — `MF-CAL-VISTA-SRC-02`;
+- David Espejo Section 7 native source — `MF-CAL-VISTA-SRC-03`;
+
+Exact private filenames and Drive locators for these sources are withheld from public Git. Duplicate/family copies of the CEXP economic note, its later working version and the operator/dissenting-owner debt paper were located under the same controlled source family.
 
 ### Evidential significance
 
@@ -50,7 +49,7 @@ The VIDEO_02 visual intake begins with a remote-participant label `JONATHAN SIMO
 
 Drive contains a current live evidence register:
 
-`POR DERECHO — 11JUN2016 / Jonathan Simó / PwC — LIVE Evidence Register` — Drive id `1qwQb4_Utxarwqu39IESKhe4pHSDpau2l_NKjprPz0v8`.
+Jonathan Simó/PwC live evidence register dated 11-Jun-2016 — public-safe custody reference `MF-CAL-VISTA-SRC-04` (exact private filename and Drive locator withheld).
 
 The hydrated search result records, among other source leads:
 

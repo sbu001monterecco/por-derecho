@@ -11,6 +11,14 @@
 - `archive/CALIFICACION_ALLEGATION_03_UNITARY_COMMUNITY_PRIVATE_ACTORS_AC_CAUSATION_16AUG2026.md`;
 - current correction and missing-evidence registers.
 
+## 26 August 2026 current-theory and manifest control
+
+Apply `ALG-ENT-018`: Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions. That is an attributed factual/prosecutorial theory, not a judicial finding. The unitary method must test whether Community machinery became one functional bridge within that alleged enterprise without assuming that every actor joined an original pact, committed every act or shared one state of mind.
+
+The factual formulation does not itself establish Articles 570 bis/ter CP, individual participation or guilt, a continuing or permanent offence, or any altered consummation, participation window or prescription date. Prove each actor, capacity, period, act/omission, knowledge/intent and offence under its historically applicable elements. Por Derecho bears the evidential burden; no named person must disprove the allegation. Keep lead, investigation, accusation/charging, trial and conviction thresholds separate.
+
+`RDM-PRIVATE-MAILBOX-01` is a manifest/index only. Public-safe manifest triage changes acquisition priority but adds no evidential support to `ALG-ENT-018`; full private Phase A and native email, attachment and Drive Phase B remain open. Dated conclusions in this prompt and linked digests are source-bounded and non-controlling where superseded, but supersession is not proof of the opposite. Read `archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md` and use the 26 August master prompt for any authorised native-source analysis.
+
 ## 1. Mission
 
 Reverse-engineer the Sun Park Community/CEXP history from the later operational and financial outcome back to the first authority, debt, voting, custody and access propositions that made that outcome possible.

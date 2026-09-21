@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0",
+  "control_date": "2026-08-20",
+  "status": "ACTIVE_DOCUMENTARY_RECONSTRUCTION",
+  "public_boundary": {
+    "not_a_finding": true,
+    "presumption_of_innocence": true,
+    "actor_by_actor_proof_required": true,
+    "no_collective_authority_liability": true,
+    "silence_is_not_admission": true,
+    "article_262": "LECrim assessment requested; no breach asserted"
+  },
+  "central_question_es": "Si la documentación arquitectónica pudo convertirse, con o sin conocimiento del profesional, en una capa de legitimación técnica dentro de una secuencia económica, administrativa y judicial más amplia.",
+  "central_question_en": "Whether architectural documentation may have become, with or without the professional's knowledge, a technical-legitimacy layer within a wider economic, administrative and judicial sequence.",
+  "visado": {
+    "date": "2022-02-25",
+    "title": "Reforma interior parcial y acondicionamientos exteriores de edificación turística",
+    "location": "Avenida Janubio s/n, Urbanización Sun Park, Playa Blanca, Yaiza",
+    "declared_promoter": "Comunidad de Propietarios Sun Park de Playa Blanca",
+    "architect": "D. José D. Acosta Matos",
+    "col_number": "21428",
+    "id": "e4bd916e483d4a9a8ef742fda7c039de",
+    "reference": "22/000036/7800",
+    "reproduced_coagc_number": "2315",
+    "status": "professional identifiers require COALZ/COAGC reconciliation"
+  },
+  "institutional_events": [
+    {
+      "date": "2026-07-14",
+      "body": "COALZ",
+      "reference": "26/008230",
+      "event": "principal filing registered",
+      "not_proved": "opening or merits acceptance"
+    },
+    {
+      "date": "2026-07-16",
+      "body": "COALZ",
+      "reference": "26/008474",
+      "event": "standing/identity/property material registered",
+      "not_proved": "formal standing or access"
+    },
+    {
+      "date": "2026-07-16",
+      "body": "COALZ",
+      "reference": "26/008476",
+      "event": "supplement registered and passed to Board like earlier material",
+      "not_proved": "preliminary inquiry or merits decision"
+    },
+    {
+      "date": "2026-07-22",
+      "body": "COAGC",
+      "event": "primary competence attributed to Lanzarote; data said not to coincide; membership data retained; no Sun Park/MYND documentation reported; no auxiliary file",
+      "open_question": "which datum differed and what was correct on 2022-02-25"
+    },
+    {
+      "date": "2026-08-20",
+      "body": "COALZ",
+      "event": "supplemental communication sent in existing thread with visual indexes, video source and DP1901 order",
+      "not_proved": "substantive receipt, preservation or investigation"
+    },
+    {
+      "date": "2026-08-20",
+      "body": "COAGC",
+      "event": "separate communication and four-channel functional redistribution",
+      "not_proved": "institutional response or changed territorial competence"
+    }
+  ],
+  "economic_public_layers": [
+    "property and Community authority",
+    "LPB insolvency estate versus Matkator and third parties",
+    "Yaiza works/licensing/inspection",
+    "Cabildo tourism/operator/units/beds",
+    "RICPE investor and finance records",
+    "RIC/REF idoneidad and Series F/G",
+    "regional incentives, ERDF and employment",
+    "tax and public control",
+    "MYND operation and digital identity",
+    "judicial and professional preservation"
+  ],
+  "professional_chronology": [
+    {
+      "date": "2016",
+      "perimeter": "PwC",
+      "fact": "client criminal-route instruction/characterisation and PwC receipt/contact record",
+      "limit": "not an independent PwC criminal finding or proof of JDAM knowledge"
+    },
+    {
+      "date": "2020",
+      "perimeter": "Grant Thornton",
+      "fact": "conflict/NDA/possible forensic engagement records identifying Sun Park, CAM and the Insolvency Administrator",
+      "limit": "does not prove engagement began, information transfer or breach"
+    },
+    {
+      "date": "2021-11-30",
+      "perimeter": "San Telmo/RICPE",
+      "fact": "Eduardo Sánchez public statement at 08:08–08:12",
+      "limit": "does not by itself prove project attribution, coordination or illegality"
+    },
+    {
+      "date": "2022-02-25",
+      "perimeter": "architecture",
+      "fact": "identified COALZ visado",
+      "limit": "does not prove authority, consent, title, correspondence with works or liability"
+    },
+    {
+      "date": "2026",
+      "perimeter": "RSM/Colleges/DP1901",
+      "fact": "preservation and decision requests; RSM file NNR4-1025C2F66; identifiable judicial route",
+      "limit": "no merits finding"
+    }
+  ],
+  "native_evidence": [
+    "commission and authority documents",
+    "plans and reports",
+    "measurements and budgets",
+    "CAD/BIM/Revit/IFC/DWG/DXF/PDF",
+    "photos and videos",
+    "metadata and versions",
+    "authors/users/paths",
+    "signatures and certificates",
+    "transmission/access logs",
+    "later administrative/investor/finance/tax/tourism uses"
+  ],
+  "public_routes": {
+    "es": "/por-derecho/es/arquitectura-nodo-documental-jdam/",
+    "en": "/por-derecho/en/architecture-documentary-node-jdam/"
+  },
+  "right_of_reply": true
+}

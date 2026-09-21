@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-08-23",
+  "case": {
+    "name": "Concurso 36/2012",
+    "court": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+    "debtor": "Luchy Playa Blanca, S.L.U.",
+    "scope_warning": "LPB's insolvency estate is not the whole mixed-ownership Sun Park complex. Do not infer title, possession or authority over Matkator or third-party property from an LPB insolvency act without asset-specific proof."
+  },
+  "reading_rules": [
+    "recognised insolvency credit != mortgage liability != competitive threshold != debt stated as consideration for the dacion != Registry value != possible surplus",
+    "authorisation != implementation",
+    "two signed clarification Autos dated 26 January 2022 are located; the deed's separate 22 January recital is an internal notarial date inconsistency, not proof of a third judicial act",
+    "later deed or Registry implementation does not automatically cure an earlier authority, competition, credit-classification or non-convalidation issue",
+    "documentary difference alone does not prove nullity, fraud, bad faith, surplus or criminal responsibility"
+  ],
+  "records": [
+    {
+      "id": "J36-2019-10-24",
+      "date": "2019-10-24",
+      "type": "judicial_order",
+      "label": "Signed order controlling the separate 2018 premises/pools disposal",
+      "source_status": "primary_signed_located",
+      "safe_proposition": "The controlled source bundle verifies the 2019 non-convalidation outcome, leaving the separate premises/pools and EUR 400,000 line as an autonomous implementation/accounting question.",
+      "open_bridge": ["bank and ledger treatment of EUR 400,000", "refund/retention/set-off if any", "later curing title if any", "Registry chain"]
+    },
+    {
+      "id": "J36-2021-01-25",
+      "date": "2021-01-25",
+      "type": "judicial_order",
+      "label": "Signed better-bid / interest reconstruction order",
+      "source_status": "primary_signed_located",
+      "money": ["EUR 3,079,104.66", "EUR 3,182,000"],
+      "safe_proposition": "The order explains the arithmetic route toward the mortgage-liability cap through subsequent accrual; it does not by itself establish final insolvency-credit classification.",
+      "open_bridge": ["CAM certificate/calculation", "days and rate", "service/challenge", "exact AP source", "final privileged-credit treatment"]
+    },
+    {
+      "id": "J36-2021-01-29",
+      "date": "2021-01-29",
+      "type": "court_notice",
+      "label": "Competitive notice / edict",
+      "source_status": "primary_court_source_located",
+      "money": ["EUR 13,168,082.02", "EUR 400,000", "EUR 1,145,798.29", "EUR 14,713,880.31"],
+      "safe_proposition": "The notice separates mortgage components, the premises/pools amount and Community-fee component for the competitive threshold.",
+      "open_bridge": ["publication/service", "later legal function of each amount", "final adjudication and accounting treatment"]
+    },
+    {
+      "id": "J36-2021-02-08",
+      "date": "2021-02-08",
+      "type": "third_party_proposal",
+      "label": "Third-party acquisition proposal",
+      "source_status": "document_located_name_publicly_anonymised",
+      "money": ["EUR 14,800,000"],
+      "safe_proposition": "A concrete competitive proposal existed. Its existence alone does not establish admissibility, funding, entitlement to adjudication or improper rejection.",
+      "open_bridge": ["filing receipt", "powers/authority", "proof of funds", "communications", "18 May attendance/minute/recording", "exact judicial treatment"]
+    },
+    {
+      "id": "J36-2021-05-18",
+      "date": "2021-05-18",
+      "type": "judicial_order",
+      "label": "Auto 164/2021 — definitive approval of CAM proposal",
+      "source_status": "primary_signed_located",
+      "canonical_record": "C36-E044",
+      "safe_proposition": "The complete signed five-page order definitively approves CAM's proposal after recording the third-party bidder's nonappearance and failure to lodge the bond. It does not prove every aspect of the third-party offer pack or later transaction performance.",
+      "open_bridge": ["complete third-party filed offer and authority/funds", "recording/minute", "notification", "appeal/finality", "deed, Registry and accounting performance"]
+    },
+    {
+      "id": "J36-2021-10-15-A",
+      "date": "2021-10-15",
+      "type": "judicial_order",
+      "label": "First signed 15 October Auto — challenges to 18 May",
+      "source_status": "primary_signed_located",
+      "canonical_record": "C36-E046",
+      "safe_proposition": "The complete five-page order dismisses LPB/Aweswell challenges and confirms the 18 May approval, describing the event as an improvement-of-offer process rather than a formal auction.",
+      "open_bridge": ["complete underlying challenges and context", "service", "finality", "performance of the confirmed approval"]
+    },
+    {
+      "id": "J36-2021-10-15-B",
+      "date": "2021-10-15",
+      "type": "judicial_order",
+      "label": "Second signed 15 October Auto — challenges to 12 May providencia",
+      "source_status": "primary_signed_located",
+      "canonical_record": "C36-E047",
+      "safe_proposition": "The complete two-page order dismisses challenges as moot but uses auction/adjudication terminology later clarified by a separate 26 January order. Shared date does not make the two Autos one instrument.",
+      "open_bridge": ["complete underlying challenges and context", "service", "finality", "relationship to clarification C36-E050"]
+    },
+    {
+      "id": "J36-2022-01-22-RECITAL",
+      "date": "2022-01-22",
+      "type": "notarial_date_recital_discrepancy",
+      "label": "22 January date recited internally in deed 457",
+      "source_status": "notarial_internal_inconsistency_not_separate_judicial_act",
+      "safe_proposition": "One page of deed 457 contains a 22 January recital while another refers to 26 January. The two signed judicial originals located are both dated 26 January; the 22 January notation is preserved as a notarial reconciliation target, not modelled as a proved separate order.",
+      "open_bridge": ["notarial source/execution explanation", "certified docket confirmation that no distinct 22 January act exists", "correction or rectification if any"]
+    },
+    {
+      "id": "J36-2022-01-26-A",
+      "date": "2022-01-26",
+      "type": "judicial_clarification_order",
+      "label": "First signed 26 January clarification Auto",
+      "source_status": "primary_signed_located",
+      "canonical_record": "C36-E050",
+      "safe_proposition": "The complete two-page order clarifies that the event was a better-offer licitation appearance, not an auction. It does not make the original approval, convey title, enlarge asset scope or calculate a surplus.",
+      "open_bridge": ["individual responses and service log", "complete finality/review chain", "relationship to deed wording"]
+    },
+    {
+      "id": "J36-2022-01-26-B",
+      "date": "2022-01-26",
+      "type": "judicial_clarification_order",
+      "label": "Second signed 26 January clarification Auto",
+      "source_status": "primary_signed_located",
+      "canonical_record": "C36-E051",
+      "safe_proposition": "The complete three-page order clarifies and completes the other 15 October Auto and records that July 2021 ownership publicity was put before the court but considered irrelevant to realisation of the identified fincas. It is not a whole-hotel title finding or new adjudication.",
+      "open_bridge": ["individual responses and service log", "complete finality/review chain", "exact relationship to deed wording"]
+    },
+    {
+      "id": "IMP-2022-02-21",
+      "date": "2022-02-21",
+      "type": "notarial_deed",
+      "label": "Public deed no. 457",
+      "source_status": "primary_notarial_source_recovered_reviewed",
+      "money": ["EUR 13,168,082.02"],
+      "safe_proposition": "The deed transfers the described mortgaged properties to CAM, states EUR 13,168,082.02 as debt serving as consideration for the dacion, requires communication to the Mercantile Court within five calendar days and contains cancellation requests.",
+      "open_bridge": ["legal-function bridge for the stated debt", "court communication", "ensuing act/mandamiento", "Registry implementation", "accounting treatment"]
+    },
+    {
+      "id": "IMP-2022-COURT-NOTICE",
+      "date": null,
+      "type": "implementation_event",
+      "label": "Post-deed communication to Mercantile Court",
+      "source_status": "open_evidence_target",
+      "safe_proposition": "Deed 457 creates a specific downstream communication trace that should be independently verified.",
+      "open_bridge": ["court filing/asiento", "timestamp", "attachment/testimonio", "judicial response", "mandamiento"]
+    },
+    {
+      "id": "IMP-2022-REGISTRY",
+      "date": null,
+      "type": "registry_implementation",
+      "label": "Registry implementation and cancellations",
+      "source_status": "public_chronology_exists_complete_primary_tract_open",
+      "safe_proposition": "Later Registry implementation does not by itself establish the correctness of every upstream credit, authority, competitive or accounting proposition.",
+      "open_bridge": ["certified finca-by-finca history", "presented titles", "cancellation instruments", "dates", "affected-asset perimeter"]
+    },
+    {
+      "id": "IMP-FINAL-ACCOUNTS",
+      "date": null,
+      "type": "accounting_closure",
+      "label": "Liquidation accounts / residual closure",
+      "source_status": "primary_closure_incomplete",
+      "safe_proposition": "No surplus or absence of surplus should be presumed from deed 457 alone.",
+      "open_bridge": ["AC workbook", "bank statements", "estate ledger", "final accounts", "objections", "approval/final judicial disposition"]
+    }
+  ],
+  "canonical_missing_evidence": ["ME-005", "ME-006", "ME-007", "ME-008", "ME-011", "ME-012"],
+  "controlling_internal_record": "archive/CONCURSO36_JUDICIAL_ACTS_IMPLEMENTATION_REGISTER_21AUG2026.md",
+  "public_routes": {
+    "es": "/es/adjudicacion-2022-reconstruccion-documental/",
+    "en": "/en/2022-adjudication-documentary-reconstruction/"
+  },
+  "disclaimer": "This JSON is a partial public analytical seed. It does not replace signed primary sources, the Missing Evidence Register or the Correction Register and does not state a merits conclusion."
+}

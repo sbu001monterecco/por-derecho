@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Playa Blanca — a new hotel destination</title>
+  <desc id="desc">Original Art Deco-inspired illustrative poster showing a white hotel resort, an internal pool garden, the town of Playa Blanca, its harbour and the Atlantic horizon.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0f3b4a"/><stop offset=".52" stop-color="#3c8791"/><stop offset="1" stop-color="#e9bc78"/></linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3db1b5"/><stop offset="1" stop-color="#126c78"/></linearGradient>
+    <linearGradient id="pool" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#93e4dc"/><stop offset="1" stop-color="#168b98"/></linearGradient>
+    <linearGradient id="lava" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#3d3b39"/><stop offset="1" stop-color="#171c20"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="22" stdDeviation="18" flood-color="#06191f" flood-opacity=".38"/></filter>
+    <pattern id="windows" width="48" height="36" patternUnits="userSpaceOnUse"><rect x="7" y="8" width="26" height="13" rx="2" fill="#174e59"/><rect x="9" y="10" width="22" height="3" fill="#e2b461" opacity=".7"/></pattern>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="1275" cy="155" r="92" fill="#f2c66f"/>
+  <circle cx="1275" cy="155" r="122" fill="none" stroke="#f4d89a" stroke-width="4" opacity=".55"/>
+  <path d="M0 305 C250 270 420 320 635 300 C895 275 1110 300 1600 255 L1600 455 L0 455Z" fill="#f3dfba" opacity=".82"/>
+  <path d="M0 350 C280 316 525 355 790 330 C1090 303 1320 330 1600 310 L1600 520 L0 520Z" fill="url(#sea)"/>
+  <g opacity=".38" fill="none" stroke="#d8f1eb" stroke-width="5">
+    <path d="M0 400 C260 360 470 405 710 375 C1020 340 1260 388 1600 345"/>
+    <path d="M0 440 C245 405 500 445 760 415 C1050 383 1320 425 1600 390"/>
+    <path d="M0 480 C260 445 515 490 790 455 C1080 420 1350 465 1600 430"/>
+  </g>
+
+  <!-- Playa Blanca town and ferry harbour, deliberately schematic -->
+  <g fill="#fff7e8" stroke="#173f49" stroke-width="3">
+    <path d="M90 410 L220 340 L342 405 L342 500 L90 500Z"/>
+    <path d="M250 390 L380 315 L505 390 L505 500 L250 500Z"/>
+    <path d="M1110 400 L1220 332 L1335 400 L1335 500 L1110 500Z"/>
+    <path d="M1285 420 L1410 350 L1530 420 L1530 500 L1285 500Z"/>
+  </g>
+  <g fill="#174e59"><rect x="155" y="405" width="38" height="22"/><rect x="280" y="373" width="42" height="23"/><rect x="1165" y="385" width="38" height="22"/><rect x="1370" y="405" width="42" height="23"/></g>
+  <path d="M150 520 H470 L430 548 H90Z" fill="#d6c49e"/>
+  <path d="M1160 520 H1530 L1570 548 H1200Z" fill="#d6c49e"/>
+  <g transform="translate(310 446)"><path d="M0 0 H210 L250 31 H20Z" fill="#28373a"/><rect x="100" y="-33" width="68" height="35" fill="#fff3dc"/><path d="M116 -33 L136 -58 L155 -33Z" fill="#c45d38"/><rect x="127" y="-20" width="12" height="20" fill="#1b5e68"/></g>
+
+  <!-- Resort massing -->
+  <g filter="url(#shadow)">
+    <path d="M365 575 L585 455 L720 500 L510 635Z" fill="#f8f1e3" stroke="#203e45" stroke-width="5"/>
+    <path d="M585 455 L1075 445 L1202 540 L720 500Z" fill="#fff9ee" stroke="#203e45" stroke-width="5"/>
+    <path d="M1075 445 L1320 570 L1190 640 L1202 540Z" fill="#efe3ce" stroke="#203e45" stroke-width="5"/>
+    <path d="M365 575 L510 635 L500 760 L335 690Z" fill="#e8dbc5" stroke="#203e45" stroke-width="5"/>
+    <path d="M510 635 L1190 640 L1175 770 L500 760Z" fill="#fff8ea" stroke="#203e45" stroke-width="5"/>
+    <path d="M1190 640 L1320 570 L1330 690 L1175 770Z" fill="#e0cfb2" stroke="#203e45" stroke-width="5"/>
+    <path d="M392 584 L575 484 L691 519 L512 625Z" fill="url(#windows)" opacity=".92"/>
+    <path d="M617 473 L1058 466 L1165 540 L731 508Z" fill="url(#windows)" opacity=".92"/>
+    <path d="M1113 486 L1280 574 L1195 622 L1210 542Z" fill="url(#windows)" opacity=".82"/>
+  </g>
+
+  <!-- Interior oasis -->
+  <path d="M535 610 L720 526 L1160 557 L1140 716 L545 708Z" fill="#d6b989" stroke="#203e45" stroke-width="5"/>
+  <path d="M642 611 C770 548 1000 554 1097 610 C1010 681 753 690 642 647Z" fill="url(#pool)" stroke="#e8f2e8" stroke-width="8"/>
+  <path d="M700 607 C815 575 965 578 1032 610 C947 640 800 650 700 629Z" fill="#c7f1e7" opacity=".6"/>
+  <g stroke="#203e45" stroke-width="8" fill="none"><path d="M613 608 Q594 545 617 505"/><path d="M1125 615 Q1145 550 1124 500"/><path d="M853 585 Q846 525 863 487"/></g>
+  <g fill="#687b59"><path d="M617 505 l-42 23 38 5-34 28 45-9 3 37 14-44 34 23-17-37 42-3-37-17 24-33-38 19-8-40-11 42-36-15 24 30Z"/><path d="M1124 500 l-42 23 38 5-34 28 45-9 3 37 14-44 34 23-17-37 42-3-37-17 24-33-38 19-8-40-11 42-36-15 24 30Z"/><path d="M863 487 l-37 20 34 5-30 25 39-8 3 33 12-39 31 20-15-33 37-2-33-15 22-30-34 17-7-36-10 38-33-14 21 27Z"/></g>
+
+  <!-- Public-facing edge -->
+  <path d="M505 706 L1177 716 L1168 787 L506 781Z" fill="#173f49"/>
+  <g fill="#f3dfba" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" letter-spacing="3">
+    <text x="570" y="758">MARKET</text><text x="790" y="758">CAFÉ</text><text x="985" y="758">LOCAL SERVICES</text>
+  </g>
+  <g fill="#bd613c"><rect x="546" y="719" width="5" height="62"/><rect x="760" y="719" width="5" height="62"/><rect x="960" y="719" width="5" height="62"/><rect x="1130" y="719" width="5" height="62"/></g>
+
+  <!-- Volcanic foreground -->
+  <path d="M0 700 C180 645 275 735 430 712 C565 692 655 795 800 770 C965 740 1088 780 1245 730 C1390 685 1490 725 1600 690 L1600 1000 L0 1000Z" fill="url(#lava)"/>
+  <path d="M0 790 C240 735 390 838 620 798 C825 760 1020 830 1210 790 C1390 752 1490 800 1600 775 L1600 1000 L0 1000Z" fill="#11191d"/>
+  <g fill="#bd613c" opacity=".72"><path d="M80 790 l95-47 88 55-76 42Z"/><path d="M1275 782 l105-52 100 62-90 44Z"/><path d="M1060 838 l68-36 71 39-58 35Z"/></g>
+
+  <!-- Art Deco frame and type -->
+  <rect x="35" y="35" width="1530" height="930" fill="none" stroke="#f3dfba" stroke-width="6"/>
+  <path d="M35 160 H175 L210 125 H360" fill="none" stroke="#f3dfba" stroke-width="6"/><path d="M1565 160 H1425 L1390 125 H1240" fill="none" stroke="#f3dfba" stroke-width="6"/>
+  <path d="M35 845 H250 L290 885 H470" fill="none" stroke="#f3dfba" stroke-width="6"/><path d="M1565 845 H1350 L1310 885 H1130" fill="none" stroke="#f3dfba" stroke-width="6"/>
+  <g text-anchor="middle" font-family="Arial, Helvetica, sans-serif" fill="#fff7e8">
+    <text x="800" y="875" font-size="104" font-weight="900" letter-spacing="20">PLAYA BLANCA</text>
+    <text x="800" y="930" font-size="32" font-weight="700" letter-spacing="16" fill="#e8be76">LANZAROTE</text>
+    <text x="800" y="965" font-size="16" font-weight="700" letter-spacing="5" fill="#cfe2df">HOTEL &amp; LOCAL SERVICES CONCEPT · ILLUSTRATIVE STUDY</text>
+  </g>
+</svg>

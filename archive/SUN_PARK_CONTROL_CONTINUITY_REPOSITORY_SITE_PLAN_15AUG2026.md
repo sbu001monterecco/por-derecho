@@ -126,7 +126,7 @@ Minimum control dimensions:
 - pilot-room access, orders, invoices and units;
 - Club Sei/Meeting Point contracting entity, inventory, OTA and payment records;
 - FTI/Meeting Point report 2024-94 and preservation chain;
-- Meeting Point Spain 357/2024 signed acts, debtor schedules and Auren records.
+- three-debtor Meeting Point 357/2024 complete file, signed 18-Sep/24-Oct originals, debtor schedules, allocation trail and Auren records (the signed 18-Feb appointment is now controlled).
 
 ## 4. Propagate repository memory
 
@@ -355,8 +355,8 @@ State:
 - contemporaneous communications alleged CAM–Meeting Point management, sales and distribution work;
 - contracting entity, authority, inventory, bookings and flows remain unproduced;
 - FTI/Meeting Point received notice/preservation requests in June–July 2024;
-- Meeting Point Spain 357/2024 began afterward;
-- signed acts, debtor schedules and Auren records are finite evidence;
+- the three-debtor Meeting Point 357/2024 proceeding began with the verified 23-Jul filing/31-Jul deemed communication afterward;
+- signed 18-Sep/24-Oct originals, debtor schedules, allocation and Auren records are finite evidence; the signed 18-Feb appointment is controlled;
 - neither judge’s knowledge/impropriety follows from Registry attribution alone.
 
 Link to the Inparsa querella story with this warning:
@@ -422,7 +422,7 @@ Before every public PR:
 - complete physical perimeter controlled on 7 June;
 - uninterrupted continuity from June 2018 to 2022;
 - exact CAM–Meeting Point entity and commercial flows;
-- disclosure/omission in Meeting Point Spain 357/2024;
+- disclosure/omission in any debtor or Auren file in the three-debtor Meeting Point 357/2024 proceeding;
 - personal knowledge of either judge in 357/2024.
 
 ## Final public maxim

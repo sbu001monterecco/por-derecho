@@ -1,0 +1,205 @@
+{
+  "schema": "por-derecho.ministerio-fiscal-unitary-register-closeout.v1",
+  "publication_id": "PD-SP-MF-UNITARY-CLOSEOUT-20260831-01",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "expected_routes": {
+    "es": [],
+    "en": []
+  },
+  "owner": "Gil Marer / Por Derecho",
+  "closeout_id": "PD-SP-MF-UNITARY-CLOSEOUT-20260831-01",
+  "control_date": "2026-08-31",
+  "control_case": "E.G. 745/2026",
+  "status": "PR1_LIVE_VERIFIED_CURRENT_CLOSEOUT_CORRECTION_PENDING",
+  "publication_checkpoint": {
+    "verified_publication": {
+      "pull_request": 1271,
+      "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/1271",
+      "merge_sha": "ff1f02d7abb7495b2f4235d3cbb05db9cd5e24bf",
+      "merge_tree_sha": "969a4937bc9c7cd0dbff4016c09380c152288def",
+      "pages_run_id": 33398393788,
+      "pages_run_number": 1332,
+      "pages_run_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33398393788",
+      "pages_conclusion": "success",
+      "verification_scope": "PR #1271 exact merge and tree only"
+    },
+    "current_closeout_correction": {
+      "label": "PR2/current closeout correction",
+      "status": "PENDING_REVIEW_MERGE_AND_PAGES_VERIFICATION",
+      "pull_request": null,
+      "reviewed_head_sha": null,
+      "reviewed_tree_sha": null,
+      "merge_sha": null,
+      "pages_run_id": null,
+      "live_verification": null,
+      "publication_claim": "NONE",
+      "rule": "Do not populate or infer future publication identifiers in this immutable record; record actual later facts in a new immutable successor."
+    },
+    "self_reference_boundary": "This manifest is not proof of its own publication. PR #1271 evidence cannot be projected onto the pending closeout correction."
+  },
+  "unitary_denominators": {
+    "institutional_communications": {
+      "total_event_rows": 296,
+      "detailed_baseline_formal_receipts": 75,
+      "mailbox_transport_rows": 156,
+      "separately_linked_source_proved_rows": 65,
+      "layer_overlap_intentional": true,
+      "register_path": "assets/data/institutional-communications-register-v1.json",
+      "register_sha256": "987a9ac370cf4425cc88ab9cfa3a42fc774e3af0862c42d65a8e8fd111cced30"
+    },
+    "private_native_source_manifest": {
+      "rows": 231,
+      "baseline_receipt_rows": 75,
+      "mailbox_event_rows": 156,
+      "opaque_custody_reference": "PD-SP-CUST-0001",
+      "manifest_sha256": "bdd12a8fa62b5058525e1c37053fb7899ac24a60d12ff48ab8b74bda617cd6f6",
+      "provider_or_storage_identifiers_published": false
+    },
+    "aggregate_only_control": {
+      "reported_rows": 22,
+      "representation": "ONE_UNRESOLVED_BATCH",
+      "aggregate_received": 15,
+      "aggregate_rejected": 7,
+      "synthetic_individual_event_rows": 0
+    },
+    "source_artifacts": {
+      "unique_artifacts": 10,
+      "register_path": "evidence/fiscalia/2026/MF_SOURCE_ARTIFACT_REGISTER_31AUG2026.csv",
+      "register_sha256": "0a66803217310d317fdc62d5898a556ab44d1b37818eecab0ef47f189177cee9",
+      "boundary": "Artifact bytes are not transmission, filing or merits events."
+    },
+    "proceedings": {
+      "canonical_source_rows": 122,
+      "public_projection_rows": 121,
+      "excluded_from_public_projection": 1,
+      "exact_navigation_dispositions": 97,
+      "canonical_register_sha256": "8caa65a0aaefa2b568be263869d7749b79fd8e7eb3b00ab568c7cabdc29bb801",
+      "public_projection_sha256": "17aa8f8c3d59a833df95092019877d301b8b7cdd7878a1fa7b3aa978c7666fe9",
+      "interlinkability_sha256": "a93f26c0b84e447eafc4a7ba25e4c44f3a36c1efcc95bb0e391b894d161f70f7"
+    },
+    "matter_identity": {
+      "total": 282,
+      "persons": 113,
+      "organisations": 79,
+      "structures": 11,
+      "institutions": 36,
+      "proceedings": 43,
+      "registry_sha256": "73f926907e8bee1253fe27a38deb7f2ff2598c98f060731a955968437fc96226",
+      "archive_backfill": "OPEN"
+    }
+  },
+  "filing_proof_control": {
+    "scan_window_from": "2026-07-31",
+    "scan_window_through": "2026-08-31",
+    "pagination_complete": true,
+    "gmail_and_regage_control_result": "NO_POST_NOTIFICATION_EG745_REPOSICION_OR_MATCHING_RECEIPT_LOCATED",
+    "reposicion_status": "PREPARED_NOT_FILED",
+    "principal_pdf_pages": 8,
+    "principal_pdf_sha256": "1e7dd495c3f4ab2650bd4b304e72e38f12a0bb6a2140a25569712635f2d1ec91",
+    "incremental_refresh": {
+      "performed_at_utc": "2026-08-31T14:12:58Z",
+      "pagination_complete": true,
+      "search_hits": 11,
+      "already_indexed_in_scope_events": 7,
+      "new_in_scope_institutional_events": 0,
+      "excluded_automated_repository_notifications": 4,
+      "new_filing_proof": false,
+      "provider_locators_or_exact_subjects_published": false
+    },
+    "status_change_rule": "Require a new official receipt or equivalent primary filing proof.",
+    "publication_is_filing": false,
+    "email_alone_is_filing_proof": false
+  },
+  "annex_control": {
+    "status": "A1_THROUGH_A8_DOCUMENTARY_SET_COMPLETE_PRIVATE_NOT_FILED",
+    "component_rule": "A-3 and A-4 are two evidential labels for one byte-identical physical binary.",
+    "a8_rule": "Eight exact signed DI 22/2026 decisions; covering notices and duplicate forwarded candidates excluded.",
+    "controls": [
+      {
+        "id": "A-1",
+        "sha256": "1e09c8eb3bce26e28dc5f22e5d6ebad3f458212cf8d85f5920e869fa42554abe",
+        "status": "EXACT_OFFICIAL_ATTACHMENT_BYTES"
+      },
+      {
+        "id": "A-2",
+        "sha256": "33f7b47418062a0bc4993f424e459af18fa2d334acc8bafc4c2e40750f171f97",
+        "status": "EXACT_SIGNED_FORMAL_RECEIPT_BYTES"
+      },
+      {
+        "id": "A-3/A-4",
+        "sha256": "4f94669e40a4cd14ca48da32b67edd9b4fa65cea3e3096dcb9f8170dfa901dc4",
+        "sha512": "352677fed18bd52659b87e68f40ba9793e1844fcc160caca50cab345ddfd06f709afbbbaaa8912458cb067d6df74d309db7c235429302171b51f7ca327bab635",
+        "status": "ONE_EXACT_SIGNED_RECEIPT_BOUND_BINARY"
+      },
+      {
+        "id": "A-5",
+        "sha256": "eef34cce9446de249e6d662f4590b49af3ba4291df2def5677bef8a0ee41d17d",
+        "status": "PUBLIC_SAFE_DERIVATIVE_PRIVATE_PACKAGE_COMPONENT"
+      },
+      {
+        "id": "A-6",
+        "sha256": "00e147bb08874b426372d73b4a7cf9bbf82ec5fce01e5dc17a9977f8d34247af",
+        "status": "PRIVATE_DERIVATIVE_CONSTANCIA_NOT_PROVIDER_CERTIFICATE"
+      },
+      {
+        "id": "A-7",
+        "component_count": 2,
+        "status": "EXACT_SIGNED_DI113_SOURCE_PDFS_HASHED_IN_PRIVATE_MANIFEST"
+      },
+      {
+        "id": "A-8",
+        "component_count": 8,
+        "status": "EXACT_SIGNED_DI22_SOURCE_PDFS_HASHED_IN_PRIVATE_MANIFEST"
+      },
+      {
+        "id": "MERGED-ANNEX",
+        "pages": 28,
+        "sha256": "c44408e9ca9f0fbc6e8769e9bfb58ba756fdbc861ee0fc70d97d244ad284b71d",
+        "status": "CONVENIENCE_DERIVATIVE_NATIVE_SIGNATURE_CONTEXT_NOT_PRESERVED"
+      },
+      {
+        "id": "PRIVATE-ANNEX-MANIFEST",
+        "sha256": "6fb44b3d8c07a856bfda10ee9262a0b9b355fba289d25a7da65e8982f1cb5ecf",
+        "status": "PRIVATE_OUTSIDE_GIT"
+      },
+      {
+        "id": "PRIVATE-PACKAGE-ZIP",
+        "sha256": "ca73f295f911fc8d8e367a915f3379f0d1dcc7a6f522768cb86dab88260ece5e",
+        "status": "PRIVATE_OUTSIDE_GIT"
+      }
+    ],
+    "filing_readiness": "DOCUMENTARY_ANNEX_COMPLETE_PRINCIPAL_SIGNATURE_AND_OFFICIAL_SUBMISSION_REMAIN",
+    "private_locator_or_storage_id_published": false
+  },
+  "open_gates": [
+    "22 later RedSARA/AGE records remain aggregate-only; no synthetic individual rows exist.",
+    "81 mailbox transport rows remain ROUTE_NOT_PUBLICLY_ATTESTED.",
+    "Six August-family receipts await one-to-one public destination-label normalisation.",
+    "EG 58/2026 remains source-required for a discrete official act.",
+    "The EG 6/2026 underlying act still requires a substantive public-safe digest.",
+    "The DP 1901/2026 signed Fiscal report and later judicial act remain source-required.",
+    "No post-notification E.G. 745/2026 reposicion receipt has been located."
+  ],
+  "privacy_boundary": {
+    "public_allowed": [
+      "official references",
+      "controlled dates and institutional routes",
+      "public-safe categories and digests",
+      "authorised source hashes",
+      "opaque custody references",
+      "aggregate counts and evidence ceilings"
+    ],
+    "public_prohibited": [
+      "mailbox-provider message or thread identifiers",
+      "private Drive or storage identifiers and URLs",
+      "exact private subjects or native filenames",
+      "mailbox bodies",
+      "personal email addresses or direct contact details",
+      "tokens, vault locators or reverse maps to private sources"
+    ],
+    "native_resolvers_outside_git": true
+  },
+  "non_inference_rule": "Adverse outcomes, silence, routing gaps, repeated institutional contact and functional benefit do not prove coordination, obstruction, capture, favouritism, prevarication, criminality or deliberate protection of a private perimeter without additional actor-specific evidence.",
+  "continuity_rule": "Begin from then-current main, this closeout, the reconciliation runbook, scan checkpoint and private custody resolver. Scan only the checkpoint overlap window plus new material; do not rescan the complete historical mailbox without a source-conflict reason.",
+  "immutability_rule": "Do not rewrite this closeout with later PR, SHA, Pages or filing facts. Create a new immutable successor after those facts exist."
+}

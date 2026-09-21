@@ -1,0 +1,197 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "eg-745-2026-visual-publication-20260831",
+  "title": "E.G. 745/2026 privacy-controlled scanned visual publication",
+  "current_state": "LIVE_VERIFIED",
+  "owner": "Por Derecho / Project Sun Rock",
+  "dossier": "E.G. 745/2026",
+  "control_date": "2026-08-31",
+  "repository": "sbu001monterecco/por-derecho",
+  "base_main_sha": "4df51da33391c41869470ed539ad31fc4157fbfd",
+  "expected_routes": {
+    "es": [
+      "es/fiscalia-inspeccion-exp-gub-745-2026/facsimil-visual-31-agosto-2026.html"
+    ],
+    "en": [
+      "en/public-prosecution-inspection-exp-gub-745-2026/visual-facsimile-31-august-2026.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/EG_745_2026_VISUAL_PUBLICATION_CONTINUITY_AUDIT_31AUG2026.md",
+    "archive/EG_745_2026_VISUAL_PUBLICATION_SUPERSEDING_PREMERGE_CONTROL_31AUG2026.md",
+    "evidence/fiscalia/2026/EG_745_2026_PUBLIC_VISUAL_FACSIMILE_CONTROL_31AUG2026.md",
+    "evidence/fiscalia/2026/eg745-visual-assets/eg745-public-visual-sha256.json",
+    "scripts/build_eg745_public_visual.py",
+    "scripts/validate_eg745_public_visual.py",
+    "sitemap-fiscalia-exp-gub-745.xml",
+    "sitemap.xml",
+    "archive/EG_745_2026_VISUAL_AND_CONTINUITY_DEPLOYMENT_ATTESTATION_31AUG2026.md"
+  ],
+  "authoritative_source": {
+    "filename": "OFICIO Y DECRETO EXP. 745-26.pdf",
+    "pages": 3,
+    "bytes": 1111997,
+    "sha256": "1e09c8eb3bce26e28dc5f22e5d6ebad3f458212cf8d85f5920e869fa42554abe",
+    "public": false,
+    "control": "Native unredacted source remains private and controls every derivative."
+  },
+  "privacy_control": {
+    "method": "raster-first deterministic rebuild",
+    "page_1": "recipient personal email only replaced by an opaque pixel rectangle",
+    "page_1_pixel_rectangle_pillow_inclusive": [
+      232,
+      474,
+      625,
+      535
+    ],
+    "page_1_pixel_box_half_open": [
+      232,
+      474,
+      626,
+      536
+    ],
+    "pages_2_3": "no visual redaction required",
+    "public_pdf_ocr_layer": false,
+    "public_pdf_removable_overlay": false,
+    "institutional_content_preserved": true
+  },
+  "expected_assets": [
+    {
+      "path": "evidence/fiscalia/2026/eg745-visual-assets/oficio-decreto-eg-745-2026-public-redacted.pdf",
+      "bytes": 1956595,
+      "sha256": "a59007fa5db61d2b48b587c208f9cafedabe967e88dac4df223b2ef384595088"
+    },
+    {
+      "path": "evidence/fiscalia/2026/eg745-visual-assets/page-1-public-redacted.png",
+      "bytes": 2101003,
+      "sha256": "049ec3fd208f3ff9955ebf8fcfd851ac88f9a62320a6cfa164268605c850b38d"
+    },
+    {
+      "path": "evidence/fiscalia/2026/eg745-visual-assets/page-2-public.png",
+      "bytes": 3631113,
+      "sha256": "d3f28f59c7f000d57505f747ff870636d66f307fe57ea3aa9683091bcc2a3ca2"
+    },
+    {
+      "path": "evidence/fiscalia/2026/eg745-visual-assets/page-3-public.png",
+      "bytes": 1826249,
+      "sha256": "36f2b0e344abfe9dd9b7c6b46b4228ab4323ded7787a0170ee6d3e9f069be11a"
+    },
+    {
+      "path": "evidence/fiscalia/2026/eg745-visual-assets/page-1-public-redacted.webp",
+      "bytes": 171420,
+      "sha256": "ac5ccc51d85d6bfc7933a924465c5ef493206453e822fce2b367433975dee41a"
+    },
+    {
+      "path": "evidence/fiscalia/2026/eg745-visual-assets/page-2-public.webp",
+      "bytes": 353186,
+      "sha256": "5173cd8420ed9f6b6e1b26f3ad86025d89c82cbc69d4936b0d287f17717ae06a"
+    },
+    {
+      "path": "evidence/fiscalia/2026/eg745-visual-assets/page-3-public.webp",
+      "bytes": 180032,
+      "sha256": "ae3f518bb5732396e5d19fdcd3ee45450d2ee104e9bf7f7594af3493115bfaa8"
+    }
+  ],
+  "supersession": {
+    "unavailable_prepared_hash_set": "archive/EG_745_2026_VISUAL_PUBLICATION_CONTINUITY_AUDIT_31AUG2026.md",
+    "inherited_page_3_claimed_sha256": "62271b227f79a44879971bef77be20fc5f760257e81aac31cec56b0094c10c2e",
+    "inherited_page_3_actual_sha256": "b73a712a27c737dd8e22bf462c6e1cce095d05f8d12a3b93b1d0c763f84b528b",
+    "replacement_viewer_transport": "direct WebP with PNG fallback; no Base64 reconstruction"
+  },
+  "deployment_gate": {
+    "status": "CLOSED_VERIFIED",
+    "attestation": "publication-manifests/eg-745-2026-visual-deployment-attestation-20260831.json",
+    "pages": {
+      "run_id": 33411821984,
+      "run_number": 1336,
+      "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33411821984",
+      "head_sha": "6dc04a8a35c4a096631ca1852ec5fbee96c4965f",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at_utc": "2026-08-31T16:02:10Z",
+      "updated_at_utc": "2026-08-31T16:04:11Z"
+    },
+    "live_readback": {
+      "workflow_pull_request": 1275,
+      "workflow_run_id": 33413265941,
+      "workflow_run_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33413265941",
+      "job_id": 99557742497,
+      "verifier_head_sha": "4e6c513cc111476f349fc7d347c722fd525ea18a",
+      "target_sha": "6dc04a8a35c4a096631ca1852ec5fbee96c4965f",
+      "target_tree": "05b59b3f8ea073150022ff2815f4e45f2b88ce95",
+      "state": "LIVE_BYTES_VERIFIED",
+      "verified_public_file_count": 32,
+      "expected_public_file_count": 32,
+      "failure_count": 0,
+      "successful_attempt": 1,
+      "artifact_id": 9765978753,
+      "artifact_name": "eg745-live-readback-6dc04a8a35c4a096631ca1852ec5fbee96c4965f",
+      "artifact_digest": "sha256:3d0e853dca05fd8dd0d356ed6893e6653186b82da8b8ba1fbe3734444a60be39"
+    }
+  },
+  "filing_status_boundary": "Visual publication is LIVE_VERIFIED; the reconsideration remains PREPARED / NOT VERIFIED AS FILED because no filing proof was found.",
+  "evidential_boundary": "Publication and institutional chronology do not by themselves prove coordination, obstruction, prevarication, capture, criminality or personal liability.",
+  "release": {
+    "pull_request": 1274,
+    "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/1274",
+    "base_main_sha": "4df51da33391c41869470ed539ad31fc4157fbfd",
+    "reviewed_head_sha": "fd2c6d10375348d269867d06b464e55ead6b8643",
+    "reviewed_tree_sha": "05b59b3f8ea073150022ff2815f4e45f2b88ce95",
+    "merge_method": "squash",
+    "merge_sha": "6dc04a8a35c4a096631ca1852ec5fbee96c4965f",
+    "merge_tree_sha": "05b59b3f8ea073150022ff2815f4e45f2b88ce95",
+    "merged_at_utc": "2026-08-31T16:02:08Z",
+    "changed_path_count": 39,
+    "pages_visible_changed_path_count": 32
+  },
+  "validation": {
+    "evidence": [
+      "PR #1274 final reviewed head fd2c6d10375348d269867d06b464e55ead6b8643: 38/38 associated pull-request runs completed success",
+      "PR #1274 reviewed tree 05b59b3f8ea073150022ff2815f4e45f2b88ce95 exactly equals merge tree",
+      "Exact merge SHA 6dc04a8a35c4a096631ca1852ec5fbee96c4965f: 42/42 associated runs completed success (41 push-event runs plus one dynamic Pages run)"
+    ]
+  },
+  "merge_sha": "6dc04a8a35c4a096631ca1852ec5fbee96c4965f",
+  "deployment_evidence": {
+    "pages_run_id": 33411821984,
+    "pages_run_number": 1336,
+    "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33411821984",
+    "head_sha": "6dc04a8a35c4a096631ca1852ec5fbee96c4965f",
+    "head_tree": "05b59b3f8ea073150022ff2815f4e45f2b88ce95",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at_utc": "2026-08-31T16:02:10Z",
+    "updated_at_utc": "2026-08-31T16:04:11Z"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/fiscalia-inspeccion-exp-gub-745-2026/facsimil-visual-31-agosto-2026.html",
+    "https://sbu001monterecco.github.io/por-derecho/en/public-prosecution-inspection-exp-gub-745-2026/visual-facsimile-31-august-2026.html"
+  ],
+  "live_markers": {
+    "https://sbu001monterecco.github.io/por-derecho/es/fiscalia-inspeccion-exp-gub-745-2026/facsimil-visual-31-agosto-2026.html": [
+      "LIVE_VERIFIED",
+      "a59007fa5db61d2b48b587c208f9cafedabe967e88dac4df223b2ef384595088"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/en/public-prosecution-inspection-exp-gub-745-2026/visual-facsimile-31-august-2026.html": [
+      "LIVE_VERIFIED",
+      "a59007fa5db61d2b48b587c208f9cafedabe967e88dac4df223b2ef384595088"
+    ]
+  },
+  "live_verification_evidence": {
+    "workflow_run_id": 33413265941,
+    "job_id": 99557742497,
+    "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33413265941",
+    "verifier_head_sha": "4e6c513cc111476f349fc7d347c722fd525ea18a",
+    "target_sha": "6dc04a8a35c4a096631ca1852ec5fbee96c4965f",
+    "target_tree": "05b59b3f8ea073150022ff2815f4e45f2b88ce95",
+    "state": "LIVE_BYTES_VERIFIED",
+    "successful_attempt": 1,
+    "verified_public_file_count": 32,
+    "expected_public_file_count": 32,
+    "failure_count": 0,
+    "artifact_id": 9765978753,
+    "artifact_digest": "sha256:3d0e853dca05fd8dd0d356ed6893e6653186b82da8b8ba1fbe3734444a60be39",
+    "artifact_retention_expires_at_utc": "2026-09-30T16:17:41Z",
+    "durable_attestation": "publication-manifests/eg-745-2026-visual-deployment-attestation-20260831.json"
+  }
+}

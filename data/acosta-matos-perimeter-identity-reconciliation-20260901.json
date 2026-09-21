@@ -1,0 +1,241 @@
+{
+  "schema": "por-derecho.acosta-matos.identity-reconciliation.v1",
+  "control_date": "2026-09-01",
+  "scope": "Names and entities material to the corrected Acosta Matos / Canarian Hospitality / RICPE hotel-investment map and poster direction",
+  "caret_rule": "A caret is printed only where the current CAEPR record is already CARET_CONFIRMED. Source-resolved new legal persons remain admission candidates until incorporated safely into the canonical CAEPR part.",
+  "aggregate_status": "PARTIAL_NOT_ALL_IS_CARET",
+  "records": [
+    {
+      "display_name": "Construcciones Acosta Matos, S.A.",
+      "object_type": "legal_person",
+      "caepr_id": "PD-SP-O-0007",
+      "identity_resolution": "CARET_CONFIRMED",
+      "render": "Construcciones Acosta Matos, S.A.^",
+      "not_same_as": ["PD-SP-O-0074", "post-2023 Construcciones Acosta Matos, S.L."],
+      "notes": "Historical S.A. totally demerged in 2023; do not project the old legal person into the five successor beneficiaries."
+    },
+    {
+      "display_name": "Canarian Hospitality, S.L.",
+      "object_type": "legal_person",
+      "caepr_id": "PD-SP-O-0019",
+      "identity_resolution": "CARET_CONFIRMED",
+      "render": "Canarian Hospitality, S.L.^",
+      "source_literal_corrections": ["Canary Hospitality"],
+      "notes": "Hotel management company; asset-light management/lease role does not establish ownership of managed hotels."
+    },
+    {
+      "display_name": "RIC Private Equity Investment Partners, S.C.R., S.A.",
+      "object_type": "legal_person",
+      "caepr_id": "PD-SP-O-0020",
+      "identity_resolution": "EXISTING_CAEPR_RECORD_NO_CARET_ASSERTED_IN_CURRENT_PART",
+      "render": "RIC Private Equity Investment Partners, S.C.R., S.A.",
+      "aliases": ["RIC Private Equity", "RICPE"],
+      "notes": "Existing CAEPR record; preserve distinction from Reserva para Inversiones en Canarias (RIC). Exact CNMV legal punctuation/form should control future canonical-name cleanup."
+    },
+    {
+      "display_name": "Hotel New Trend, S.L.",
+      "object_type": "legal_person",
+      "caepr_id": "PD-SP-O-0018",
+      "identity_resolution": "EXISTING_CAEPR_RECORD_NO_CARET_ASSERTED_IN_CURRENT_PART",
+      "render": "Hotel New Trend, S.L.",
+      "aliases": ["HNT"],
+      "notes": "MYND Yaiza owner/project company; BORME 26-Jun-2024 records Grupo Patrimonial Acosta Matos, S.L. as sole shareholder."
+    },
+    {
+      "display_name": "Grupo Acosta Matos, S.L.",
+      "object_type": "legal_person",
+      "identity_resolution": "SOURCE_RESOLVED_CAEPR_ADMISSION_PENDING",
+      "render": "Grupo Acosta Matos, S.L.",
+      "official_identifiers": {"NIF": "B56827603", "registry_sheet": "GC 62169"},
+      "sources": [
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2023-6632",
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-72-35",
+        "https://www.acostamatos.com/aviso-legal/"
+      ],
+      "proposed_links": ["PD-SP-O-0007", "PD-SP-O-0019", "PD-SP-P-0011", "PD-SP-P-0012", "PD-SP-P-0093", "PD-SP-P-0094"],
+      "next_action": "Admit to CAEPR with immutable organisation ID after canonical-part collision check."
+    },
+    {
+      "display_name": "Grupo Patrimonial Acosta Matos, S.L.",
+      "object_type": "legal_person",
+      "identity_resolution": "SOURCE_RESOLVED_CAEPR_ADMISSION_PENDING",
+      "render": "Grupo Patrimonial Acosta Matos, S.L.",
+      "official_identifiers": {"registry_sheet": "GC 62170"},
+      "sources": [
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2023-6632",
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-72-35",
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-32-35"
+      ],
+      "dated_governance": "BORME 2024: president José Daniel Acosta Matos; secretary/CEO Laura Patricia Acosta Matos; vice-president Gerardo Zacarías Acosta Matos; vice-secretary Javier Acosta Matos; all four directors.",
+      "proposed_links": ["PD-SP-O-0007", "PD-SP-O-0018", "PD-SP-P-0011", "PD-SP-P-0012", "PD-SP-P-0093", "PD-SP-P-0094"],
+      "next_action": "Admit to CAEPR and then attach owner/shareholder/governance edges asset-by-asset."
+    },
+    {
+      "display_name": "Promociones Acosta Matos, S.L.",
+      "object_type": "legal_person",
+      "identity_resolution": "SOURCE_RESOLVED_CAEPR_ADMISSION_PENDING",
+      "render": "Promociones Acosta Matos, S.L.",
+      "official_identifiers": {"registry_sheet": "GC 62173"},
+      "sources": [
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2023-6632",
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-72-35"
+      ],
+      "next_action": "Admit only if/when material to an identified investment/asset edge."
+    },
+    {
+      "display_name": "Construcciones Acosta Matos, S.L.",
+      "object_type": "legal_person",
+      "identity_resolution": "SOURCE_RESOLVED_POST_2023_ENTITY_BUT_EXISTING_CAEPR_COLLISION_REQUIRES_RECONCILIATION",
+      "render": "Construcciones Acosta Matos, S.L.",
+      "official_identifiers": {"registry_sheet": "GC 62171"},
+      "sources": [
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2023-6632",
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-72-35"
+      ],
+      "collision": "PD-SP-O-0008 is an older unresolved 'Construcciones Acosta Matos, S.L.' reference. Do not silently merge historical source occurrences with the new 2023 beneficiary.",
+      "next_action": "Resolve PD-SP-O-0008 temporal/source scope before assigning a caret or new ID."
+    },
+    {
+      "display_name": "Hotel Callao Adeje, S.L.",
+      "object_type": "legal_person",
+      "identity_resolution": "SOURCE_RESOLVED_CAEPR_ADMISSION_PENDING",
+      "render": "Hotel Callao Adeje, S.L.",
+      "official_identifiers": {"registry_sheet": "GC 62172"},
+      "sources": [
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2023-6632",
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-34-35",
+        "https://www.acostamatos.com/hoteles/hotel-mynd-adeje/"
+      ],
+      "notes": "Acosta project page identifies it as MYND Adeje owner; source variants sometimes use S.L.U. Current sole-shareholder status must be separately proven before using S.L.U. as canonical legal form.",
+      "next_action": "Admit to CAEPR; preserve S.L./S.L.U. status as date-specific until current registry certificate obtained."
+    },
+    {
+      "display_name": "Acosta Matos Investments, Sociedad Limitada",
+      "object_type": "legal_person",
+      "identity_resolution": "SOURCE_RESOLVED_CAEPR_ADMISSION_PENDING",
+      "render": "Acosta Matos Investments, Sociedad Limitada",
+      "official_identifiers": {"registry_sheet": "GC 61953"},
+      "source_literals": ["Acosta Matos Investment, S.L."],
+      "sources": [
+        "https://www.boe.es/borme/dias/2023/12/18/pdfs/BORME-A-2023-238-35.pdf",
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-22-35",
+        "https://www.acostamatos.com/hoteles/hotel-sholeo-maspalomas/"
+      ],
+      "notes": "Legal denomination is plural INVESTMENTS. Incorporated 30-Nov-2023, initial sole shareholder CAM S.A., sole administrator Laura Patricia Acosta Matos; capital increased to EUR 10.633m in Jan-2024.",
+      "next_action": "Admit to CAEPR and reconcile the Acosta website singular source literal to GC 61953 without rewriting the source."
+    },
+    {
+      "display_name": "Tenerife Assets Company, S.L.",
+      "object_type": "legal_person",
+      "identity_resolution": "SOURCE_RESOLVED_CAEPR_ADMISSION_PENDING",
+      "render": "Tenerife Assets Company, S.L.",
+      "sources": [
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2025-75-35",
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-173-08"
+      ],
+      "notes": "Asset company for former Parque San Antonio / Radisson Resort & Residences Tenerife. BORME proves prior Grupo Patrimonial Acosta Matos board/secretary role, but not an exact equity percentage.",
+      "next_action": "Admit to CAEPR; obtain shareholder/equity source before percentage or beneficial-ownership assertions."
+    },
+    {
+      "display_name": "Oceánica Hotel Management, S.L.",
+      "object_type": "legal_person",
+      "identity_resolution": "SOURCE_RESOLVED_CAEPR_ADMISSION_PENDING",
+      "render": "Oceánica Hotel Management, S.L.",
+      "official_identifiers": {"registry_sheet": "GC 59990"},
+      "sources": ["https://www.boe.es/diario_borme/txt.php?id=BORME-A-2022-234-35"],
+      "notes": "Public Sholeo Los Gigantes material identifies Oceánica as property/acquisition company. BORME records loss of unipersonality and Laura Patricia Acosta Matos ceasing as sole administrator on 30-Nov-2022; Aeromédica Canaria, S.L. became sole administrator.",
+      "next_action": "Admit to CAEPR; recover shareholder history before any current Acosta ownership assertion."
+    },
+    {
+      "display_name": "Las Coronas de Teguise, S.L.",
+      "object_type": "legal_person",
+      "identity_resolution": "SOURCE_RESOLVED_CAEPR_ADMISSION_PENDING",
+      "render": "Las Coronas de Teguise, S.L.",
+      "sources": [
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-100-99",
+        "RICPE/CNMV Radisson Blu Lanzarote project records"
+      ],
+      "notes": "Owner/project-company lane for Radisson Blu Lanzarote; public reporting identifies Al-Bochi family ownership. Do not relabel as Acosta-owned from Canarian management or Acosta construction work.",
+      "next_action": "Admit to CAEPR when exact current registry identifiers/corporate act are captured in the source ledger."
+    },
+    {
+      "display_name": "José Daniel Acosta Matos",
+      "object_type": "person",
+      "caepr_id": "PD-SP-P-0011",
+      "identity_resolution": "CARET_CONFIRMED",
+      "render": "José Daniel Acosta Matos^",
+      "source_literals": ["Jose D. Acosta Matos", "José Acosta Matos where separately source-bridged"],
+      "notes": "Do not silently expand every source-literal 'José Acosta Matos' without a source/role bridge."
+    },
+    {
+      "display_name": "Laura Patricia Acosta Matos",
+      "object_type": "person",
+      "caepr_id": "PD-SP-P-0012",
+      "identity_resolution": "CARET_CONFIRMED",
+      "render": "Laura Patricia Acosta Matos^"
+    },
+    {
+      "display_name": "Javier Acosta Matos",
+      "object_type": "person",
+      "caepr_id": "PD-SP-P-0093",
+      "identity_resolution": "CARET_CONFIRMED",
+      "render": "Javier Acosta Matos^"
+    },
+    {
+      "display_name": "Gerardo Zacarías Acosta Matos",
+      "object_type": "person",
+      "caepr_id": "PD-SP-P-0094",
+      "identity_resolution": "CARET_CONFIRMED",
+      "render": "Gerardo Zacarías Acosta Matos^",
+      "not_same_as": ["PD-SP-P-0013 Gerardo Nicanor Acosta Armas"]
+    },
+    {
+      "display_name": "MYND Hotels",
+      "object_type": "brand",
+      "identity_resolution": "BRAND_CANONICAL_LITERAL_VERIFIED_CARET_NOT_APPLICABLE",
+      "render": "MYND Hotels",
+      "source_literal_corrections": ["Mind Hotels"],
+      "source": "https://canarianhospitality.com/"
+    },
+    {
+      "display_name": "Sholeo Lodges",
+      "object_type": "brand",
+      "identity_resolution": "BRAND_CANONICAL_LITERAL_VERIFIED_CARET_NOT_APPLICABLE",
+      "render": "Sholeo Lodges",
+      "source": "https://canarianhospitality.com/"
+    },
+    {
+      "display_name": "Radisson",
+      "object_type": "brand_franchise_perimeter",
+      "identity_resolution": "ROLE_LABEL_NOT_ASSET_OWNER_CARET_NOT_APPLICABLE_IN_THIS_REGISTER",
+      "render": "Radisson",
+      "notes": "Brand/franchise relation must not be rendered as hotel ownership."
+    },
+    {
+      "display_name": "Solano",
+      "object_type": "unresolved_user_literal",
+      "identity_resolution": "UNRESOLVED",
+      "render": "Solano [unresolved user literal]",
+      "possible_candidate": "Sholeo Lodges",
+      "negative_search_limit": "Finite 1-Sep-2026 public-source search found no relevant Acosta Matos / Canarian Hospitality hotel or entity named Solano.",
+      "next_action": "Do not silently replace; resolve through user/source evidence if the literal recurs."
+    }
+  ],
+  "summary": {
+    "unique_references": 21,
+    "caepr_caret_confirmed": 6,
+    "existing_caepr_without_caret_asserted_here": 2,
+    "source_resolved_caepr_admission_or_collision_pending": 9,
+    "brand_or_role_caret_not_applicable": 3,
+    "unresolved": 1,
+    "all_is_caret": false
+  },
+  "interlinks": {
+    "human_map": "research/ACOSTA_MATOS_PERIMETER_INVESTMENT_MAP_2017_2026.md",
+    "machine_investment_register": "data/acosta-matos-perimeter-investment-register-2017-2026.json",
+    "continuity_control": ".github/governance/records/ACOSTA_MATOS_POSTER_INVESTMENT_CONTINUITY_01SEP2026.md",
+    "caepr_master": "assets/data/matter-identity-registry-v1.json",
+    "caepr_organisations": "assets/data/matter-identity-registry-v1.organisations.json",
+    "caepr_people": "assets/data/matter-identity-registry-v1.people.json"
+  }
+}

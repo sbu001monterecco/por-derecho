@@ -86,7 +86,7 @@ This independently establishes CAM's procedural presence. It does **not** identi
 
 **Status: VERIFIED PRIMARY COURT RECORD + TECHNICAL ANOMALY REQUIRING EXPLANATION.**
 
-The Auto records that CAM's `representación` attended the 11:00 event and made an offer. It records Aweswell's higher offer and resolves in Aweswell's favour. This is mandatory counterevidence against any simplistic proposition that the event itself was judicially predetermined in CAM's favour.
+The Auto records that CAM's `representación` attended the 11:00 event. It also records that the third-party bidder associated with the reported EUR 14.8 million proposal did not appear, was not personated and had not lodged the required bond. Auto 164/2021 then definitively approved CAM's proposal for the enumerated LPB property. The existence of a formal third-party-offer/licitation mechanism is relevant counterevidence; the bidder's default and the CAM approval are equally mandatory and must not be reversed.
 
 The clean court copy also contains two times on the same date:
 
@@ -143,7 +143,7 @@ No current source proves that a historical relationship/contact assertion affect
 
 ## 5. Mandatory counterevidence and limiting facts
 
-1. **Aweswell won the 18-May-2021 bidding event** recorded in Auto 164/2021; CAM did not obtain the immediate result sought at that event.
+1. **Auto 164/2021 definitively approved CAM's proposal** after recording that the third-party bidder did not appear, was not personated and had not lodged the required bond. The licitation mechanism existed, but Aweswell did not win that event.
 2. The 18-May Auto identifies **CAM's representation**, not LPAM by name.
 3. Neither signed witness declaration claims to have heard an improper/private conversation after the event.
 4. No controlled telephone metadata or direct Judge–LPAM communication has been located.

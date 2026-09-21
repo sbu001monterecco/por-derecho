@@ -49,7 +49,7 @@ The package circulated to prospective financiers included:
 - Cuatrecasas due diligence;
 - an ECO valuation presented in the transaction at about **€25.6m**;
 - bridge-finance structuring and security;
-- a separate **€26m Elaia** acquisition route; and
+- one reciprocal **Lagune/Elaia €26m standby-acquisition package**, tied to the bridge-finance discussions; and
 - a planned 13-Jun judicial presentation.
 
 The correspondence proves developed transaction work, not closing or correctness of every commercial proposition.

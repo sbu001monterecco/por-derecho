@@ -6,6 +6,14 @@
 
 > **This protocol does not prove the Project's allegations. It defines how every future analysis must test them, test contrary explanations, preserve evidence, expose dependencies and make the record usable by independent authorities.**
 
+## 26 August 2026 controlling allegation and source-status overlay
+
+For current work, `ALG-ENT-018` controls: Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions. This is their attributed factual/prosecutorial model, not a judicial finding. The multidisciplinary reconstruction must therefore remain unitary and non-fragmented, but it must never transfer conduct, knowledge, intent or guilt between actors or legal persons.
+
+The factual enterprise formulation does not itself establish an original pact, Articles 570 bis/ter CP, individual participation or guilt, a continuing or permanent offence, or any altered consummation, participation window or prescription date. Test each actor, capacity, time window, act/omission, duty, knowledge/intent, causal contribution and proposed offence under its historically applicable elements. Por Derecho bears the evidential burden and no person must disprove the allegation. Separate lead, investigation, accusation/charging, trial and conviction thresholds.
+
+`RDM-PRIVATE-MAILBOX-01` is currently a manifest/index only. Public-safe manifest triage neither authenticates nor establishes any indexed proposition, changes acquisition priority only and adds no evidential support to `ALG-ENT-018`; full private Phase A and native email, attachment and Drive Phase B remain open. Any earlier dated conclusion is source-bounded and non-controlling where superseded, but its supersession does not prove the opposite. Read the 26 August position addendum and master prompt before analysing authorised native material.
+
 ## 1. Governing objective
 
 Convert a fragmented multi-proceeding record into a finite, source-controlled set of common factual propositions capable of independent verification.

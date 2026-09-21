@@ -16,28 +16,28 @@ First line of the new body:
 
 Gmail controls:
 
-- reply target message ID: `17882349c2c48668`
-- historic thread ID: `17812aeb5d3492c1`
-- sent message ID: `1a0182b119c3886f`
-- authenticated sender: `sbu001@monterecco.com`
+- reply target message ID: `SP-PRV-LCTR-GM-2E517B56225348A1B81E`
+- historic thread ID: `SP-PRV-LCTR-GM-C1CEF35ADBC2E3530D42`
+- sent message ID: `SP-PRV-LCTR-GM-70F415DDB7FEBECE0FC5`
+- authenticated sender: `SP-PRV-LCTR-EM-32928901D5492501562E`
 - attachments: none
 
 ## Actual recipient architecture
 
 ### TO
 
-- Pablo Fernández Guerra — `pablo.fernandez.guerra@pwc.com`
-- Carlos del Cubo Ruiz — `carlos.del.cubo@pwc.com`
+- Pablo Fernández Guerra — `SP-PRV-LCTR-EM-9395CE800DD47D1F7542`
+- Carlos del Cubo Ruiz — `SP-PRV-LCTR-EM-E79D7EB547C4A00E4476`
 
 These are the principal institutional addressees because they were already the PwC Spain Legal/Madrid recipients in the 2021 Sun Park complaint chain.
 
 ### CC — included on the one final institutional communication
 
-- Alison Statham — Global General Counsel, PwC — `alison.l.statham@pwc.com`
-- Gilly Lord — Chief Risk Officer, PwC UK — `gillian.lord@pwc.com`
-- Gonzalo Sánchez Martínez — President, PwC Spain — `gonzalo.sanchez@es.pwc.com`
-- Marco Amitrano — Alliance Senior Partner, PwC UK & Middle East — `marco.amitrano@pwc.com`
-- Carlos Saavedra Rodríguez del Palacio — notice only — `carlos.saavedra@es.pwc.com`
+- Alison Statham — Global General Counsel, PwC — `SP-PRV-LCTR-EM-F7A24DA244AC7EDB85D3`
+- Gilly Lord — Chief Risk Officer, PwC UK — `SP-PRV-LCTR-EM-447168791F11126942CE`
+- Gonzalo Sánchez Martínez — President, PwC Spain — `SP-PRV-LCTR-EM-447D6A4B10395CC6720F`
+- Marco Amitrano — Alliance Senior Partner, PwC UK & Middle East — `SP-PRV-LCTR-EM-8EF71F5CD8870DF7561A`
+- Carlos Saavedra Rodríguez del Palacio — notice only — `SP-PRV-LCTR-EM-599802EE1063E5D40240`
 
 Danielle Perfect was not included because a sufficiently authoritative direct email address was not independently confirmed.
 

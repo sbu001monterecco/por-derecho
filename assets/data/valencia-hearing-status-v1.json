@@ -1,0 +1,50 @@
+{
+  "schema": "por-derecho.valencia-hearing-status.v1",
+  "last_verified": "2026-08-24",
+  "proceeding": {
+    "court": "Juzgado de Primera Instancia nº 27 de Valencia",
+    "number": "1859/2023-9",
+    "nig": "46250-42-1-2023-0049579",
+    "claimant": "Aweswell Limited",
+    "defendant": "CAIXABANK, S.A.",
+    "status": "PENDING_CONTESTED"
+  },
+  "original_hearing": {
+    "date": "2025-11-06",
+    "time": "10:00",
+    "timezone": "Europe/Madrid",
+    "status": "DID_NOT_PROCEED",
+    "source_status": "CONTEMPORANEOUS_CORRESPONDENCE"
+  },
+  "short_notice_event": {
+    "date": "2025-11-05",
+    "public_summary_en": "The opposing expert reported a cancelled flight on the evening before the hearing. Aweswell did not oppose suspension because it wished to question him personally.",
+    "public_summary_es": "El perito de la parte contraria comunicó la cancelación de su vuelo la tarde anterior a la vista. Aweswell no se opuso a la suspensión porque consideraba necesario interrogarle personalmente.",
+    "source_status": "CONTEMPORANEOUS_CORRESPONDENCE",
+    "inference_boundary": "The event is not evidence of tactical delay and has no merits implication."
+  },
+  "relisted_hearing": {
+    "date": "2027-01-28",
+    "time": "10:00",
+    "timezone": "Europe/Madrid",
+    "status": "CURRENT_RELISTED_HEARING",
+    "source_status": "VERIFIED_PRIMARY",
+    "instrument": "Signed court diligence dated 2025-11-06"
+  },
+  "superseded_repository_entry": {
+    "description": "Former repository entry describing an October 2026 hearing at 12:00",
+    "classification": "SUPERSEDED_INCORRECT_TRANSCRIPTION",
+    "not_a_second_postponement": true
+  },
+  "privacy": {
+    "rule": "Native correspondence and the unredacted court copy remain in controlled private custody.",
+    "excluded": [
+      "email addresses",
+      "message identifiers",
+      "signatures",
+      "verification codes",
+      "private strategy"
+    ]
+  },
+  "evidence_boundary": "No merits judgment or adjudicated recovery has been located. Obtain any later order or citation affecting the relisted hearing."
+}

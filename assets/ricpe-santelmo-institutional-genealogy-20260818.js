@@ -207,6 +207,7 @@
   }
 
   const firstSection = main.querySelector(':scope > section');
-  if (firstSection) firstSection.insertAdjacentElement('afterend', section);
+  const thesis = main.querySelector('[data-calificacion-misuse-thesis]');
+  if (thesis || firstSection) (thesis || firstSection).insertAdjacentElement('afterend', section);
   else main.prepend(section);
 })();

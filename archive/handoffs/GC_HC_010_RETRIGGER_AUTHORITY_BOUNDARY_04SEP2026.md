@@ -1,0 +1,1 @@
+Authority boundary: repository publication/continuity only. No communication is sent to Decanato, TSJC, CGPJ or any other authority by this repository action. The public record states only that the trace is being pursued through those bodies; it does not represent a reply or confirmation from them.

@@ -1,0 +1,140 @@
+{
+  "control_id": "PD-HOTEL-FINCA-UCC-20260903-01",
+  "created": "2026-09-03",
+  "workspace": "PD-WS-20260902-0001",
+  "governing_proposition": "One regulated hotel productive and operational system; many legally distinct title compartments; one title cannot be used to erase another.",
+  "scope": {
+    "worked_example": "finca 8584",
+    "source_locked_matkator_titles": ["8584", "8588"],
+    "other_matkator_titles": "include only when source-verified",
+    "hotel_wide_rule": "apply title-by-title after denominator verification"
+  },
+  "asset_class": [
+    "registered_private_title_compartment",
+    "inseparable_common_element_and_quota_rights",
+    "regulated_hotel_operation_node",
+    "owner_consent_and_operator_authority_node",
+    "possession_access_room_inventory_revenue_data_node",
+    "evidential_and_remedial_platform"
+  ],
+  "not_automatically": [
+    "autonomous_apartment_business",
+    "current_room_number_only",
+    "operator_company_share",
+    "LPB_insolvency_estate_property",
+    "transferred_by_hotel_or_corporate_transaction",
+    "extinguished_by_physical_integration",
+    "proof_of_owner_consent",
+    "criminal_object"
+  ],
+  "title_status_taxonomy": {
+    "T-A": "verified_consensual_acquisition",
+    "T-B": "formal_transaction_with_disputed_validity_disclosure_authority_or_pressure",
+    "T-C": "alleged_non_consensual_possession_physical_integration_or_exploitation",
+    "T-D": "judicial_or_administrative_disposition",
+    "T-E": "represented_inclusion_in_corporate_or_productive_unit_transfer",
+    "T-F": "unresolved_source_gap",
+    "T-G": "common_service_or_operational_asset"
+  },
+  "title_on_title_injury": {
+    "status": "analytical_descriptor_not_standalone_offence",
+    "layers": [
+      "physical_absorption",
+      "access_displacement",
+      "governance_displacement",
+      "operational_absorption",
+      "economic_extraction",
+      "documentary_redescription",
+      "procedural_deployment",
+      "registry_consolidation",
+      "regulatory_and_finance_normalisation"
+    ]
+  },
+  "claimant_criminal_position": {
+    "classification": "PARTY_POSITION_ALLEGED_COMPLETED_OFFENCE",
+    "procedural_fraud": "claimant alleges completed estafa procesal in Cuatrecasas Matkator La Laguna proceedings",
+    "additional_theories": [
+      "conspiracy_or_proposition",
+      "joint_authorship_or_instrumentality",
+      "inducement",
+      "necessary_cooperation",
+      "complicity",
+      "autonomous_concealment_or_regularisation",
+      "cross_proceeding_instrumentality_affecting_Concurso_36_2012"
+    ],
+    "adjudicative_status": "not_established_by_final_judicial_finding"
+  },
+  "cross_proceeding_chain": [
+    {"from": "historic_Cuatrecasas_mandate", "to": "mixed_ownership_and_hotel_context_knowledge"},
+    {"from": "Cambiario_1048_2019", "to": "ETJ_163_2020"},
+    {"from": "ETJ_163_2020", "to": "finca_8584_title_disposition"},
+    {"from": "alleged_procedural_fraud", "to": "judicial_error_resolution_and_economic_prejudice_to_be_tested"},
+    {"from": "title_disposition", "to": "impaired_access_accounting_restoration_and_restitution"},
+    {"from": "impaired_remedies", "to": "continued_CAM_HNT_Canarian_Hospitality_hotel_control_benefit_hypothesis"},
+    {"from": "fragmented_title_and_remedies", "to": "Concurso_36_2012_value_claim_evidence_funded_exit_recovery_and_accountability_consequences"},
+    {"from": "consolidated_result", "to": "possible_registry_corporate_tourism_finance_tax_or_public_authority_normalisation"}
+  ],
+  "proceedings": [
+    "Cambiario 1048/2019",
+    "ETJ 163/2020",
+    "DP 748/2026",
+    "DP 552/2025",
+    "DP 711/2025",
+    "Concurso 36/2012",
+    "RPL 2523/2025",
+    "RPL 3304/2025",
+    "RPL 3319/2025"
+  ],
+  "affected_perimeters": [
+    "Matkator_direct_title_and_remedy",
+    "Aweswell_subsidiary_client_investment_and_recovery",
+    "LPB_productive_unit_funded_exit_claim_evidence_and_recovery",
+    "other_owner_title_governance_access_and_accounting",
+    "creditor_valuation_and_information",
+    "tourism_tax_finance_public_aid_and_authority_records"
+  ],
+  "mandatory_title_schema": [
+    "finca_or_CRU",
+    "historic_description",
+    "current_owner",
+    "acquisition_chain",
+    "T_status",
+    "physical_footprint",
+    "current_room_or_spaces",
+    "works_and_alterations",
+    "possessor",
+    "access_controller",
+    "operator",
+    "owner_consent",
+    "tourism_enabling_title",
+    "Community_authority_vote_and_debt",
+    "PMS_inventory_bookings_invoices_revenue",
+    "owner_accounts",
+    "litigation_or_execution",
+    "formal_recipient",
+    "terminal_beneficiary",
+    "corporate_finance_public_aid_use",
+    "injuries",
+    "remedies",
+    "sources",
+    "gaps"
+  ],
+  "public_routes": {
+    "es": "/es/fincas-hoteleras-clasificacion-lesion-titulo-sobre-titulo/",
+    "en": "/en/hotel-fincas-asset-classification-title-on-title-injury/",
+    "worked_example_es": "/es/matkator-8584-titulo-hotel-remate-restitucion/",
+    "worked_example_en": "/en/matkator-8584-hotel-title-remate-restitution/"
+  },
+  "boundaries": [
+    "operational_unity_does_not_merge_ownership",
+    "separate_ownership_does_not_atomise_common_event",
+    "Matkator_titles_remain_outside_LPB_estate",
+    "not_every_Acosta_acquisition_is_asserted_unlawful",
+    "valid_acquisition_can_still_be_relevant_to_control_and_benefit",
+    "claimant_completed_offence_position_is_not_an_adjudicated_finding",
+    "conspiracy_requires_agreement_and_resolution",
+    "enablement_requires_specific_participation_route",
+    "encubrimiento_is_not_a_catch_all",
+    "fraude_concursal_requires_exact_actor_act_and_candidate_offence"
+  ]
+}

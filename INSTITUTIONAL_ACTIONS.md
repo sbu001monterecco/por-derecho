@@ -2,6 +2,30 @@
 
 Public, source-controlled follow-up items arising from the Sun Park operator-history review. This tracker records documentary requests; it does not state that an authority has accepted the underlying legal position.
 
+## Audiencia de Cuentas files 60/2026 and 145/2026 — internal entry recorded 20 August 2026
+
+Status: registered internally — treatment and substantive response pending
+Owner: legal team / Gil Marer
+Submission: access, clarification, competence delimitation and limited reconsideration concerning files 60/2026 and 145/2026
+RedSARA filing: `REGAGE26e00074022302`, presented 19 August 2026 at 20:48 Canary time
+Audiencia entry: `1619/2026`, entered 20 August 2026 at 08:30 through SIR
+Public pages: `/es/audiencia-cuentas-canarias/` · `/en/canary-islands-external-audit/`
+Public-safe evidence note: `INSTITUTIONAL_ACTIONS_AUDIENCIA_CUENTAS_1619_20AUG2026.md`
+
+### Controlling effect
+
+- The Audiencia de Cuentas de Canarias receipt of 20 August 2026 proves that the 19 August follow-up was entered correctly under entry number `1619/2026`.
+- The receipt connects the filing with files `60/2026` and `145/2026` and describes its subject as access, clarification, competence delimitation and limited reconsideration.
+- This resolves the previously open question whether the RedSARA filing had obtained an internal Audiencia entry.
+- It does not prove admission, reopening of an audit/fiscalisation, reconsideration on the merits, acceptance of any allegation or a substantive response.
+
+### Finite follow-up
+
+- Preserve the native email and receipt in the access-controlled custody layer. Do not publish the unredacted receipt because it contains personal contact data and a document-verification credential.
+- Track any allocation, procedural treatment, access decision, clarification, referral or merits response against both `REGAGE26e00074022302` and `1619/2026`.
+- Keep the file relationship explicit: file `60/2026` concerns the Plenary decision; file `145/2026` concerns the later communication/transmission; entry `1619/2026` records the 19 August follow-up.
+- Calculate any remedy deadline only from the applicable legal route and a confirmed triggering event. Internal entry alone does not establish the date or availability of a particular remedy.
+
 ## RIC / MYND Yaiza idoneidad reconciliation — opened 18 August 2026
 
 Status: open on the merits — public question ledger merged in PR #390 and live verified on GitHub Pages
@@ -11,6 +35,8 @@ Publication merge: `1ac8284e6d7ef0c8f23f2bcca3dbf09f5bf3b0f8` · 18 August 2026 
 Live verification: workflow run `32179092774` · 18 August 2026 19:52:52 UTC · ES/EN pages, publication JS, dedicated sitemap and robots entry all HTTP 200 with required markers present.
 Canonical pages: `/es/ricpe-idoneidad-series-f-g/` · `/en/ricpe-idoneidad-series-f-g/`
 Deletion/continuity closeout: `archive/intelligence/RICPE_IDONEIDAD_SERIES_F_G_DELETION_CLOSEOUT_20260818.md`
+Comisionado internal-entry control: `INSTITUTIONAL_ACTIONS_HACIENDA_COMISIONADO_2220_20AUG2026.md`
+Final thread closeout: `archive/THREAD_DELETION_AUDIT_HACIENDA_RES28_RICPE_20AUG2026.md`
 
 ### Evidence boundary
 
@@ -32,7 +58,8 @@ Deletion/continuity closeout: `archive/intelligence/RICPE_IDONEIDAD_SERIES_F_G_D
 - Treat expediente 02/2022 as the canonical administrative file unless corrected by the authority.
 - Request the complete file index first, then the original RICPE application, project memorandum, AEAT referral, requests for clarification, internal reports, proposal, final act, notifications and amendments.
 - On 10 August 2026, Resolution 28/2026 refused the 7 July access request in full. The resolution itself identifies Decree 224/2022, expediente 02/2022 and the AEAT report of 17 November 2022 as procedural antecedents.
-- An appeal to the Canary Islands Transparency Commissioner was filed on 11 August 2026 under REGAGE26e00072591992, internal appeal file 12/2026-0710092416. The receipt identifies the Commissioner as destination. The appeal seeks category-by-category review, an index, partial/segregable access, metadata and competent transfers.
+- An appeal to the Canary Islands Transparency Commissioner was presented on 11 August 2026 at 03:20:03 and registered under `REGAGE26e00072326601` at 03:20:06. Reference `12/2026-0710092416` is the underlying Hacienda access-request expediente, not a proved Comisionado appeal-file number. A later native Comisionado certificate records Registro de Entrada `2220/2026`, entered 11 August 2026 at 12:44 through SIR and routed to the Servicio de Reclamaciones y Asuntos Generales; its `Nº Expediente Vinculado` field is blank. This proves internal receipt/routing only; it does not prove a separately allocated Comisionado expediente, merits admission, urgency, estimation or access. The appeal seeks category-by-category review, an index, partial/segregable access, metadata and competent transfers.
+- Preserve the native certificate privately; do not publish the unredacted version because it contains personal contact data and a document-verification credential.
 - Prepare a short supplementary submission to that existing appeal: place the now-controlled Series F/G split and 16 December 2022 opening chronology before the Commissioner and ask expressly whether the application/report/decree covered F, G or both. Do not duplicate the entire 7 July request.
 
 ### AEAT
@@ -67,6 +94,8 @@ Owner: legal team / Gil Marer
 Review acknowledgements by: 27 August 2026
 Baseline filing: REGAGE26e00072883405, a submission referencing Cabildo file 614/2026; allocation and acknowledgement pending
 Tourism identifiers: H-35/3/0034; H-35-3-0000034; LZ/2012/000031
+Tracking issue: [#5 — Obtain certified Sun Park operator history from Cabildo, RGT and Yaiza](https://github.com/sbu001monterecco/por-derecho/issues/5)
+Continuity control: `archive/THREAD_DELETION_CONTINUITY_AUDIT_CEXP_MONTERECCO_PINK_AUTO804_FORENSIC_20AUG2026.md`
 
 ### Cabildo de Lanzarote / Ordenación Turística
 
@@ -98,11 +127,33 @@ Among the materials reviewed to date, CEXP is the only entity for which both a p
 
 ### Source controls
 
-- [29 April 2008 owners’ resolution](https://drive.google.com/file/d/1Ups4s_2TcHyCByxSiK-WIx-ieEdciVbe/view)
-- Montelanza–CEXP statutes and transfer — primary source reviewed; no unredacted public link pending removal of identity, address and signature data
+- [29 April 2008 owners’ resolution](en/community-instrumentalisation/acta-document-room/2008-04-29/)
+- [1987 Owners' Statutes and 2008 CEXP instruments — controlled public edition](evidence/community/OWNER_STATUTES_1987_CEXP_2008_PUBLIC_DIGITAL_EDITION.md) — primary source digitised and indexed; unredacted image masters remain protected pending privacy, provenance and signature review
 - 1 February 2012 CEXP–Monterecco notice — primary source reviewed; no unredacted public link pending privacy review
-- [4 June 2014 filing GE-014212/2014](https://drive.google.com/file/d/1w1QgRE1sMtKU1NrjaCoxaVlVbJwlH0kR/view)
-- [Cabildo Resolution 2026-2735 / file 614/2026](https://drive.google.com/file/d/1A-RV2JyliHimx4duPpJFur03ECTDpcip/view)
-- [Order 804/2018](https://drive.google.com/file/d/1Q7uDAQ0B4Oa_cc5tUPo-xxACAM51fJ5v/view)
+- [4 June 2014 filing GE-014212/2014](en/cabildo-lanzarote-tourism-traceability/)
+- [Cabildo Resolution 2026-2735 / file 614/2026](en/cabildo-lanzarote-tourism-traceability/)
+- [Order 804/2018](en/ric-private-equity-sun-park/#order-804-2018-pink-cessation)
+
+Source-access note (updated 28 August 2026): the control copy of Order 804/2018 remains in private custody. The local link above leads to source-bounded public analysis, not a source facsimile. An anonymous public copy has not been verified; do not infer that the underlying source is lost.
 
 Calculate any statutory remedy date from confirmed receipt by the competent organ, not from RedSARA upload alone.
+
+
+## State transparency file 00001-00113069 — exact control (21 August 2026)
+
+**Nature:** state public-information access file; not a tax complaint, regional transparency appeal, tax litigation or prosecution file.
+
+**Controlled chronology**
+
+- 12 December 2025 — AEAT communication `RGE449073832025`.
+- 15 December 2025 — traceability request `REGAGE25e00108884880`.
+- 16 December 2025 — accepted by AEAT Central Registry.
+- 5 January 2026 — date of state file `00001-00113069`.
+- 20 August 2026 — commencement-processing document.
+- 21 August 2026 — Finance Transparency Unit confirmed that the follow-up email was transferred to AEAT, the body responsible for processing the file, and stated that requests must be included in the management tool.
+
+**Effect boundary:** transfer proves dispatch to AEAT only. It does not establish competent-unit receipt, effective management-tool inclusion, confirmed linkage to either December entry, substantive processing, extension/suspension, third-party consultation, decision, access or any effect on AEAT acts or Pink–AEAT litigation.
+
+**Mandatory separation:** keep `00001-00111718`, `REGAGE26e00062869818`, `REGAGE26e00062944142`, `REGAGE26e00062943259`, Resolution 28/2026, `REGAGE26e00072326601`, Commissioner entry `2220/2026`, Pink–AEAT litigation and all Fiscalía/Anticorrupción files separate.
+
+**Next finite proof:** obtain an AEAT acknowledgement/entry identifying the receiving unit and explicit linkage or non-linkage to `RGE449073832025` and `REGAGE25e00108884880`; then preserve any management-tool index or formal procedural notice.

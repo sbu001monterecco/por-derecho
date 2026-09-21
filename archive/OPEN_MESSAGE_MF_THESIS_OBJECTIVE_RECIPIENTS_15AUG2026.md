@@ -65,8 +65,9 @@ The signed DP 1901/2026 fiscal report remains a priority missing item.
 - **Elena Herrera Rodríguez** — identified as signatory of the DI 248/2018 archive decree of 7 May 2019.
 - **Beatriz Sánchez Carreras** — identified as signatory of the 16 May 2019 DI 248 notification and later current Fiscal Jefa Provincial; do not conflate those roles.
 - **Emilio Jesús Sánchez Ulled** — identified as signatory in EG 49/2026.
+- **Tomás Fernández de Páiz** — identified on the primary scan as signatory of the 27 December 2013 DI 273/2013 querella; identification attributes that official act, not improper motive or criminal responsibility.
 
-Other fiscals remain to be identified from primary documents, including the original DI 273/2013 querella signatory, the DP 332/2014 fiscal history, DIP 2/2026 signatory, Anticorrupción decision-maker(s), DP 1901/2026 reporting fiscal, GUB 86/2026 decision-maker, Arrecife destination fiscal(s), and relevant Tenerife fiscal(s).
+Other fiscals or procedural roles remain to be identified from primary documents, including the complete DP 332/2014 fiscal history and final disposition, DIP 2/2026 opening signatory, Anticorrupción decision-maker(s), DP 1901/2026 reporting fiscal, GUB 86/2026 decision-maker, Arrecife destination fiscal(s), and relevant Tenerife fiscal(s).
 
 ## Public audience
 

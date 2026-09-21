@@ -59,13 +59,13 @@ Official source:
 
 `https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-110-38`
 
-A later official BOE/AEAT publication identifies **PINK CANARY SERVICES SLU** with NIF **B76564517** in the Tenerife Mercantile Registry.
+A later official BOE/AEAT publication identifies **PINK CANARY SERVICES SLU** with NIF **B76564517** in the Tenerife Mercantile Registry **because it publishes revocation of that NIF**, with Registry date 2 September 2019.
 
 Official source:
 
 `https://www.boe.es/diario_boe/txt.php?id=BOE-A-2019-14965`
 
-These official records corroborate the earlier and later names and the stable Spanish identifier. The `SLU` suffix records single-member status; it does not create a different company.
+These official records corroborate the earlier and later names and the stable Spanish identifier, but the 2019 source must not be reduced to identity corroboration: it is an adverse NIF-revocation publication. The `SLU` suffix records single-member status; it does not create a different company. Revocation does not itself prove corporate extinction. A current certified AEAT status and historical/current Mercantile Registry certificate are required before describing Pink as rehabilitated, operational, dissolved or extinct.
 
 ## 5. Effective-date boundary
 

@@ -6,6 +6,8 @@
 **Base main checked before implementation:** `6b70dc9cca8d9f33cebcb1810cd6848855877d25`  
 **Status at creation:** IMPLEMENTED ON BRANCH — PR / MERGE / PAGES VERIFICATION REQUIRED
 
+> **Supersession note — 23 August 2026:** This implementation record retains the original deployed design description. The controlling signed-source review now fixes Auto 164/2021 of 18 May 2021 as the definitive approval, keeps the two 15 October 2021 Autos separate, and identifies the two 26 January 2022 Autos as clarifications that make no new award. Deed 457 follows on 21 February 2022. Any singular “26-Jan-2022 adjudication” shorthand below is historical and superseded.
+
 ## 1. Purpose
 
 This record implements the reader architecture already controlled by:

@@ -5,6 +5,8 @@
 **PR:** #323  
 **Status:** `DELETION-SAFE ON REVIEW BRANCH — FINAL MAIN/PAGES VERIFICATION STILL REQUIRED`
 
+> **23-Aug-2026 source-status supersession:** The 4-Jun-2018 incomplete-copy statement below records the source state at this audit's control date; it is not current. Current control is the complete three-page authentic court copy in Gmail `194a98a11920fefd`, filename `20180604 Auto Aclaracion Auto Aprobacion Plan Liquidacion.pdf`. SHA-256 `867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0` belongs only to the superseded two-page derivative and must not be assigned to the three-page copy. Canonical-copy hash binding, exact service/notification and downstream implementation remain open.
+
 ## Audit question
 
 > If this conversation disappeared now, could a fresh investigator reconstruct the requested multidisciplinary, public-authority and parallel criminal/forensic architecture, the implementation performed, the evidential limits, the open source gaps and the next actions solely from repository controls?

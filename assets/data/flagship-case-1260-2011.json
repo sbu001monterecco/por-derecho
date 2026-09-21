@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "controlDate": "2026-08-17",
+  "controlDate": "2026-08-23",
   "caseId": "PROC-2011-1260",
   "spotlight": true,
   "classification": ["FLAGSHIP_CASE", "TEST_CASE", "PRE_INSOLVENCY_OPERATOR_DISPUTE", "PROCEDURAL_IDENTITY_TEST"],
@@ -9,7 +9,7 @@
     "court": "Juzgado de Primera Instancia nº 4 de Arrecife",
     "procedure": "Juicio verbal (desahucio por precario)",
     "number": "1260/2011",
-    "nig": "3500442120110008131",
+    "nigStatus": "WITHHELD_FROM_PUBLIC_DERIVATIVES",
     "sourceStatus": "VERIFIED"
   },
   "appeal": {
@@ -17,7 +17,13 @@
     "roll": "793/2012",
     "resolution": "Sentencia 89/2014",
     "date": "2014-01-13",
-    "sourceStatus": "VERIFIED"
+    "sourceStatus": "VERIFIED",
+    "holdingEs": "La Audiencia estimó el recurso de la parte actora, revocó parcialmente la sentencia de instancia, decretó el desahucio de CEXP y Monterecco de las 18 unidades de los actores, impuso a Monterecco las costas de primera instancia y no hizo especial pronunciamiento sobre las costas de apelación.",
+    "holdingEn": "The Court allowed the claimants' appeal, partially reversed the first-instance judgment, ordered the eviction of CEXP and Monterecco from the claimants' 18 units, imposed first-instance costs on Monterecco and made no special appellate costs order.",
+    "ratioEs": "La Sala tuvo por acreditado que Monterecco poseía los apartamentos y las llaves, consideró justificada la ampliación contra ella y aplicó el levantamiento del velo por la estrecha vinculación entre CEXP, Monterecco y LPB en esta controversia.",
+    "ratioEn": "The Court found that Monterecco possessed the apartments and keys, held the extension against it justified, and applied veil lifting because of the close CEXP–Monterecco–LPB relationship in this dispute.",
+    "scopeLimitEs": "No decidió la titularidad o autoridad sobre el resto del complejo mixto, el gobierno comunitario posterior, los hechos de 2018, el Concurso 36/2012 ni responsabilidad penal.",
+    "scopeLimitEn": "It did not decide title or authority over the rest of the mixed-ownership complex, later Community governance, the 2018 events, Insolvency 36/2012 or criminal responsibility."
   },
   "canonicalQuestions": [
     "Who owned the relevant units at each material date?",
@@ -52,8 +58,12 @@
       "id": "JUD-2014-089",
       "status": "VERIFIED",
       "publication": "PUBLIC-READY",
-      "textEs": "La apelación se tramitó como Rollo 793/2012 y culminó en Sentencia 89/2014 de 13-ene-2014.",
-      "textEn": "The appeal proceeded as Roll 793/2012 and culminated in Judgment 89/2014 dated 13-Jan-2014."
+      "textEs": "La apelación se tramitó como Rollo 793/2012. La Sentencia 89/2014 de 13-ene-2014 estimó el recurso actor, revocó parcialmente la instancia y decretó el desahucio de CEXP y Monterecco de las 18 unidades de los actores; impuso a Monterecco las costas de primera instancia y no impuso costas de apelación.",
+      "textEn": "The appeal proceeded as Roll 793/2012. Judgment 89/2014 dated 13-Jan-2014 allowed the claimants' appeal, partially reversed the first-instance judgment and ordered the eviction of CEXP and Monterecco from the claimants' 18 units; it imposed first-instance costs on Monterecco and no appellate costs.",
+      "ratioEs": "Tuvo por acreditada la posesión y disponibilidad de llaves por Monterecco, justificó la ampliación contra ella y levantó el velo por la vinculación CEXP–Monterecco–LPB para resolver esta controversia.",
+      "ratioEn": "It found Monterecco's possession and control of keys, justified the extension against it and lifted the veil because of the CEXP–Monterecco–LPB relationship for this dispute.",
+      "limitationEs": "No decide el resto de Sun Park, autoridad comunitaria posterior, hechos de 2018, el Concurso 36/2012 ni responsabilidad penal; firmeza y ejecución requieren fuentes separadas.",
+      "limitationEn": "It does not decide the rest of Sun Park, later Community authority, the 2018 events, Insolvency 36/2012 or criminal responsibility; finality and enforcement require separate sources."
     },
     {
       "id": "UNIT-1260-18-PERIMETER",
@@ -68,17 +78,19 @@
       "id": "CEXP-LPB-8896",
       "status": "VERIFIED_WITH_LIMITATION",
       "publication": "PUBLIC-READY-WITH-QUALIFICATION",
-      "textEs": "La extracción actual de la sentencia de apelación registra una participación/presencia LPB del 88,96% en la Comunidad de Explotación.",
-      "textEn": "The current extraction of the appeal judgment records an 88.96% LPB presence/participation in the Comunidad de Explotación.",
+      "textEs": "La sentencia dice que la Comunidad de Explotación estaba constituida en un 88,96% por los apartamentos pertenecientes a LPB.",
+      "textEn": "The judgment says the Comunidad de Explotación was constituted 88.96% by the apartments belonging to LPB.",
       "limitationEs": "No equivale a autoridad sobre las 18 unidades, ni a mayoría válida de la Comunidad de Propietarios en cualquier fecha posterior.",
       "limitationEn": "It does not equate to authority over the 18 units or a valid property-community majority at any later date."
     },
     {
       "id": "HYP-PROCEDURAL-EQUATION-001",
-      "status": "STRONGLY_SUPPORTED",
+      "status": "VERIFIED_WITH_LIMITATION",
       "publication": "PUBLIC-READY-WITH-QUALIFICATION",
-      "textEs": "La iniciativa procesal que conectó el pleito existente con Monterecco fue promovida por la parte actora; queda por fijar la naturaleza jurídica exacta y si la equivalencia material alegada era completa, parcial o incorrecta.",
-      "textEn": "The procedural initiative connecting the existing litigation to Monterecco was claimant-driven; the exact legal nature and whether the material equivalence asserted was complete, partial or inaccurate remain to be fixed."
+      "textEs": "La iniciativa procesal que conectó el pleito existente con Monterecco fue promovida por la parte actora; la AP después tuvo por acreditada la posesión de Monterecco, justificó la ampliación y aplicó el levantamiento del velo en esta controversia.",
+      "textEn": "The procedural initiative connecting the existing litigation to Monterecco was claimant-driven; the Provincial Court later found Monterecco's possession, justified the extension and applied veil lifting in this dispute.",
+      "limitationEs": "Quedan abiertos el mecanismo procesal exacto de primera instancia, la firmeza/ejecución y cualquier reutilización posterior más amplia que el perímetro adjudicado.",
+      "limitationEn": "The exact first-instance procedural mechanism, finality/enforcement and any later reuse broader than the adjudicated perimeter remain open."
     },
     {
       "id": "HYP-PROCEDURAL-FRAUD-001",
@@ -113,10 +125,14 @@
     },
     {
       "evidenceId": "EVID-2014-AP89",
+      "aliases": ["AP89-2014-JV1260"],
       "title": "Sentencia Proc1260-2011 13ENE2014.pdf",
       "type": "appeal judgment",
       "custody": "Google Drive source family",
-      "publication": "REPOSITORY-ONLY-UNTIL-PUBLIC-SOURCE-CHECK"
+      "publication": "PUBLIC-REDACTED-TRANSCRIPT",
+      "sha256": "1bce9ad6111645393ee2f23915b7df05a9a879181f2c19fad83f6b3e8989c1ec",
+      "publicDerivative": "evidence/jv-1260-2011/full-text/AP89-2014-JV1260-sentencia-redacted.md",
+      "privateOriginal": true
     }
   ],
   "dependencyModel": [

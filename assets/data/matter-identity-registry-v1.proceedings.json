@@ -1,0 +1,850 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "PROCEEDING",
+  "records": [
+    {
+      "id": "PD-SP-R-0001",
+      "type": "PROCEEDING",
+      "name": "Concurso 36/2012 — Luchy Playa Blanca, S.L.",
+      "aliases": [
+        "Concurso 36/2012"
+      ],
+      "routes": {
+        "es": "/es/concurso-36-2012-masa-activa-2018-2021/",
+        "en": "/en/insolvency-36-2012-active-estate-2018-2021/"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "GC-JUD-001"
+      ],
+      "competent_organ": "PD-SP-I-0001",
+      "nig": "3501647120120000351",
+      "procedural_state": "LONG_RUNNING_INSOLVENCY_WITH_MULTIPLE_SECTIONS_AND_APPEALS",
+      "identity_boundary": "Exact core insolvency proceeding identity only. Its sections, incidents and appeals remain separate procedural nodes; identity does not transfer facts, knowledge, conduct or legal conclusions between them."
+    },
+    {
+      "id": "PD-SP-R-0002",
+      "type": "PROCEEDING",
+      "name": "RPL 2523/2025 — appeal in the classification section",
+      "aliases": [
+        "RPL 2523/2025"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "GC-APP-004"
+      ],
+      "related_master_register_ids": [
+        "GC-CAL-002"
+      ],
+      "procedural_state": "APPEAL_IDENTIFIED_CURRENT_STATUS_INCOMPLETE",
+      "identity_boundary": "Exact appellate-roll identity and calificación parent only. The complete roll, transmitted record, current disposition and finality remain open; the appeal is not the whole Concurso 36/2012."
+    },
+    {
+      "id": "PD-SP-R-0003",
+      "type": "PROCEEDING",
+      "name": "DP 748/2026 — La Laguna",
+      "aliases": [
+        "DP 748/2026"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "TF-CRI-003"
+      ],
+      "competent_organ": "PD-SP-I-0037",
+      "nig": "3802343220260002351",
+      "procedural_state": "PROVISIONAL_DISMISSAL_MAINTAINED_16JUL2026_REFORM_PARTLY_UPHELD_SUBSIDIARY_APPEAL_ADMITTED_PROCESSING_OPEN",
+      "related_master_register_ids": [
+        "TF-CIV-001",
+        "TF-CIV-002",
+        "TF-FIS-008",
+        "TF-XFR-005",
+        "TF-APP-004"
+      ],
+      "identity_boundary": "Exact DP 748/2026 identity only. The 20-May-2026 Providencia verifies reform and subsidiary appeal interposed in time and form; the 09-Sep filing supplied appellant allegations ad cautelam and a supervening ETJ document; the 16-Sep LAJ order verifies origin-court appeal processing and a five-day transfer to Ministerio Fiscal. No primary source yet verifies Audiencia remittal, an appellate roll or appellate office-holders. TF-APP-004 remains an unverified separate-roll placeholder. Registration does not establish criminality or merits."
+    },
+    {
+      "id": "PD-SP-R-0004",
+      "type": "PROCEEDING",
+      "name": "DP 1956/2026 — separate insolvency-administrator / Concurso criminal route",
+      "aliases": [
+        "DP 1956/2026"
+      ],
+      "routes": {
+        "es": "/es/dp-1956-2026/",
+        "en": "/en/dp-1956-2026/"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "procedural_state": "SEPARATE_AC_CONCURSO_ROUTE"
+    },
+    {
+      "id": "PD-SP-R-0005",
+      "type": "PROCEEDING",
+      "name": "DP 1901/2026 — private-actor/CAM documentary and admission-control route",
+      "aliases": [
+        "DP 1901/2026"
+      ],
+      "routes": {
+        "es": "/es/dp-1901-2026/",
+        "en": "/en/dp-1901-2026/"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "procedural_state": "NOT_THE_AC_REMOVAL_OR_FEES_PROCEEDING"
+    },
+    {
+      "id": "PD-SP-R-0006",
+      "type": "PROCEEDING",
+      "name": "DIP 2/2026",
+      "aliases": [
+        "DIP 2/2026"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "GC-FIS-017"
+      ],
+      "competent_organ": "PD-SP-I-0028",
+      "nig": "3501670220260000245",
+      "procedural_state": "ARCHIVED_6_MARCH_2026; APPEAL_STATUS_CORRECTION_COMMUNICATED_11_MARCH; POST_CORRECTION_TREATMENT_NOT_LOCATED; DP1901_PROPAGATION_AUDIT_OPEN",
+      "related_master_register_ids": [
+        "GC-CRI-008",
+        "GC-FIS-033"
+      ],
+      "identity_sources": [
+        "archive/FISCALIA_DIP2_2026_OFFICIAL_RECORD_PUBLICATION_CONTROL_25AUG2026.md"
+      ],
+      "identity_boundary": "Exact superior-office file, NIG and located archive/correction sequence only. The corrected appeal-status premise does not prove deliberate falsehood, require a different result or establish wrongdoing.",
+      "source_status": "VERIFIED_PRIMARY_PLUS_REGISTERED_CORRECTION",
+      "open_evidence": [
+        "complete certified DIP 2/2026 file",
+        "separate 11 February opening decree",
+        "ATLANTE 2 March query/audit trail and exact extracted documents",
+        "incorporation/examination/reconsideration after REGAGE26e00026303869",
+        "transmission bridge into DP 1901/2026",
+        "signed 29 July 2026 DP 1901 Fiscal report and source corpus"
+      ]
+    },
+    {
+      "id": "PD-SP-R-0007",
+      "type": "PROCEEDING",
+      "name": "JV 1260/2011 / AP 89/2014",
+      "aliases": [
+        "JV1260",
+        "AP 89/2014"
+      ]
+    },
+    {
+      "id": "PD-SP-R-0008",
+      "type": "PROCEEDING",
+      "name": "CaixaBank Valencia swap proceeding"
+    },
+    {
+      "id": "PD-SP-R-0009",
+      "type": "PROCEEDING",
+      "name": "AEAT / Pink Canary Services proceeding"
+    },
+    {
+      "id": "PD-SP-R-0010",
+      "type": "PROCEEDING",
+      "name": "Garrigues 344/2013 — La Laguna",
+      "aliases": [
+        "344/2013"
+      ]
+    },
+    {
+      "id": "PD-SP-R-0011",
+      "type": "PROCEEDING",
+      "name": "RPL 3304/2025 — LPB removal appeal",
+      "aliases": [
+        "RPL 3304/2025"
+      ],
+      "routes": {
+        "es": "/es/concurso-36-2012-autos-resoluciones/#R16",
+        "en": "/en/insolvency-36-2012-orders-decisions/#R16"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "procedural_state": "LATER_MERITS_RESULT_NOT_LOCATED"
+    },
+    {
+      "id": "PD-SP-R-0012",
+      "type": "PROCEEDING",
+      "name": "RPL 3319/2025 — Aweswell removal appeal",
+      "aliases": [
+        "RPL 3319/2025"
+      ],
+      "routes": {
+        "es": "/es/concurso-36-2012-autos-resoluciones/#R12",
+        "en": "/en/insolvency-36-2012-orders-decisions/#R12"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "procedural_state": "ACCUMULATED_INTO_RPL_3304_2025"
+    },
+    {
+      "id": "PD-SP-R-0013",
+      "type": "PROCEEDING",
+      "record_kind": "PROCEEDING_FAMILY_REFERENCE",
+      "is_exact_proceeding": false,
+      "name": "RPL 3304/2025 + RPL 3319/2025 — combined removal-appeal family reference",
+      "aliases": [
+        "combined removal appeals",
+        "apelaciones de separación acumuladas"
+      ],
+      "routes": {
+        "es": "/es/concurso-36-2012-autos-resoluciones/#R30",
+        "en": "/en/insolvency-36-2012-orders-decisions/#R30"
+      },
+      "identity_resolution": "CANONICAL",
+      "caret_eligibility": "NOT_ELIGIBLE_AGGREGATE_FAMILY_REFERENCE",
+      "procedural_state": "AUTO_223_2026_ACCUMULATION_ONLY",
+      "exact_proceeding_ids": [
+        "PD-SP-R-0011",
+        "PD-SP-R-0012"
+      ],
+      "master_register_ids": [
+        "GC-APP-005",
+        "GC-APP-006"
+      ],
+      "identity_boundary": "Immutable aggregate continuity reference to the source-proved accumulation relationship only; not a third appeal, not an exact proceeding and not a merger of parties, grounds, usable records or procedural effects."
+    },
+    {
+      "id": "PD-SP-R-0014",
+      "type": "PROCEEDING",
+      "name": "Procedimiento ordinario 641/2024 — remuneration/civil-liability claim",
+      "aliases": [
+        "P.O. 641/2024",
+        "ORD 134/2024",
+        "582/2024-00"
+      ],
+      "routes": {
+        "es": "/es/concurso-36-2012-autos-resoluciones/#F13",
+        "en": "/en/insolvency-36-2012-orders-decisions/#F13"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "procedural_state": "FIRST_INSTANCE_STANDING_DISMISSAL_NOT_MERITS"
+    },
+    {
+      "id": "PD-SP-R-0015",
+      "type": "PROCEEDING",
+      "name": "RPL 421/2026 — remuneration/civil-liability appeal",
+      "aliases": [
+        "RPL 421/2026"
+      ],
+      "routes": {
+        "es": "/es/concurso-36-2012-autos-resoluciones/#F17",
+        "en": "/en/insolvency-36-2012-orders-decisions/#F17"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "procedural_state": "LATER_MERITS_RESULT_NOT_LOCATED"
+    },
+    {
+      "id": "PD-SP-R-0016",
+      "type": "PROCEEDING",
+      "name": "Diligencias preliminares 459/2024 — insurance-policy exhibition",
+      "aliases": [
+        "Diligencias Preliminares 459/2024",
+        "DP civil 459/2024"
+      ],
+      "routes": {
+        "es": "/es/concurso-36-2012-autos-resoluciones/#F01",
+        "en": "/en/insolvency-36-2012-orders-decisions/#F01"
+      },
+      "identity_resolution": "CARET_PENDING_EXACT_ORGAN_AND_CERTIFIED_DOCKET"
+    },
+    {
+      "id": "PD-SP-R-0017",
+      "type": "PROCEEDING",
+      "name": "DIP 80/2026 — ICALPA deontological file",
+      "aliases": [
+        "DIP 80/2026"
+      ],
+      "routes": {
+        "es": "/es/icalpa-mesa-del-ponente/dip-80-2026/",
+        "en": "/en/icalpa-rapporteur-workbench/dip-80-2026/"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "procedural_state": "SEPARATE_PROFESSIONAL_DISCIPLINE_ROUTE"
+    },
+    {
+      "id": "PD-SP-R-0018",
+      "type": "PROCEEDING",
+      "name": "Meeting Point 357/2024 — comunicación conjunta de negociaciones de tres deudores",
+      "aliases": [
+        "Meeting Point 357/2024",
+        "357/2024"
+      ],
+      "routes": {
+        "es": "/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/",
+        "en": "/en/legal-notebook/meeting-point-357-2024-judicial-traceability/"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_id": "GC-CONT-025",
+      "procedural_state": "THREE_DEBTOR_PREINSOLVENCY_NEGOTIATION_COMMUNICATION",
+      "identity_boundary": "Proceeding identity only; not merits, current outcome, Sun Park relevance or a particular signatory"
+    },
+    {
+      "id": "PD-SP-R-0019",
+      "type": "PROCEEDING",
+      "name": "Recurso de Alzada 286/2026 — CGPJ",
+      "aliases": [
+        "Alzada 286/2026",
+        "CGPJ Alzada 286/2026"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_id": "GC-GOV-020",
+      "parent_proceeding": "CGPJ DI 169/2026",
+      "competent_organ": "Sección de Recursos — Gabinete Técnico del Consejo General del Poder Judicial",
+      "procedural_state": "EN_TRAMITE_CONFIRMED_21AUG2026",
+      "identity_sources": [
+        "Direct CGPJ Appeals Section communication confirming Alzada 286/26 and in-trámite status, 21-Aug-2026",
+        "REGAGE26e00056359487 and later joined/supplementary filing controls"
+      ],
+      "identity_boundary": "Identity, parent relationship, handling section and 21-Aug-2026 in-trámite status only. It does not establish a merits outcome, correctness of DI 169/2026 allegations, incorporation of every historical item or any disciplinary or criminal responsibility."
+    },
+    {
+      "id": "PD-SP-R-0020",
+      "type": "PROCEEDING",
+      "name": "DP 974/2023 — Arrecife",
+      "aliases": [
+        "DP 974/2023",
+        "Diligencias Previas 974/2023"
+      ],
+      "identity_resolution": "CARET_PENDING_EXACT_ORGAN_AND_CERTIFIED_DOCKET",
+      "master_register_id": "LZ-JUD-042",
+      "competent_organ": "Arrecife investigating court — exact organ pending",
+      "procedural_state": "REFERENCE_REGISTERED_PRIMARY_FILE_PENDING",
+      "linked_master_proceedings": [
+        "LZ-JUD-002",
+        "LZ-JUD-003",
+        "LZ-APP-004",
+        "GC-FIS-013",
+        "GC-JUD-001"
+      ],
+      "identity_sources": [
+        "Gil Marer direct identification in authenticated project thread, 30-Aug-2026"
+      ],
+      "identity_boundary": "Canonical proceeding identity and navigation links only. Exact court, NIG, parties, object, filings, status, outcome and all transmission bridges remain unverified. It is not merged with DP 332/2014, DP 1132/2018, Auto 804/2018, DI 248/2018 or Concurso 36/2012."
+    },
+    {
+      "id": "PD-SP-R-0022",
+      "type": "PROCEEDING",
+      "name": "Arrecife reference 4009/2015 — exact proceeding identity pending",
+      "aliases": [
+        "4009/2015 Arrecife",
+        "4009/2015"
+      ],
+      "identity_resolution": "CARET_PENDING_EXACT_ORGAN_AND_CERTIFIED_DOCKET",
+      "master_register_id": "LZ-REF-042",
+      "procedural_state": "UNVERIFIED_CANDIDATE_REFERENCE",
+      "context_lane": "historical Arrecife / Sun Park candidate-reference corpus",
+      "identity_boundary": "Stable candidate identity only. No primary source currently establishes the exact organ, case class, parties, NIG, object, outcome, finality or a direct procedural relationship to another Sun Park file. It is not caret-confirmed and must not be merged with any nearby Arrecife reference without primary proof."
+    },
+    {
+      "id": "PD-SP-R-0023",
+      "type": "PROCEEDING",
+      "name": "Arrecife 1103/2018 → DP 1132/2018 → Rollo 1010/2018 / Auto 804/2018",
+      "aliases": [
+        "Diligencias Indeterminadas 1103/2018-00",
+        "DI 1103/2018",
+        "DP 1132/2018",
+        "Diligencias Previas 1132/2018",
+        "Rollo 1010/2018",
+        "Auto 804/2018",
+        "Order 804/2018",
+        "NIG 3500443220180003508"
+      ],
+      "routes": {
+        "es": "/es/arrecife-1103-2018-cadena-procesal/",
+        "en": "/en/arrecife-1103-2018-procedural-lineage/"
+      },
+      "detail_routes": {
+        "es": "/es/rollo-1010-2018-auto-804-2018/",
+        "en": "/en/rollo-1010-2018-order-804-2018/"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "LZ-JUD-003",
+        "LZ-APP-004"
+      ],
+      "competent_organs": [
+        "Juzgado de Instrucción nº 2 de Arrecife (antiguo Juzgado Mixto nº 7)",
+        "Audiencia Provincial de Las Palmas, Sección Segunda"
+      ],
+      "nig": "3500443220180003508",
+      "proceeding_nodes": [
+        {
+          "master_register_id": "LZ-JUD-003",
+          "reference": "DP 1132/2018",
+          "origin_reference": "Diligencias Indeterminadas 1103/2018-00",
+          "competent_organ": "PD-SP-I-0024",
+          "decision_date": "2018-08-20",
+          "procedural_state": "PROVISIONALLY_DISMISSED",
+          "child_master_register_id": "LZ-APP-004"
+        },
+        {
+          "master_register_id": "LZ-APP-004",
+          "reference": "Rollo 1010/2018",
+          "decision_reference": "Auto 804/2018",
+          "competent_organ": "PD-SP-I-0025",
+          "decision_date": "2018-11-13",
+          "procedural_state": "APPEALS_DISMISSED_PROVISIONAL_DISMISSAL_CONFIRMED_NO_FURTHER_APPEAL_STATED",
+          "parent_master_register_id": "LZ-JUD-003"
+        }
+      ],
+      "procedural_state": "PROVISIONAL_DISMISSAL_CONFIRMED_ON_FINAL_APPEAL_ORDER",
+      "identity_sources": [
+        "Reviewed 2-May-2018 judicial copy stating origin 1103/2018-00, DP 1132/2018 and shared NIG",
+        "Reviewed Auto 804/2018 copy stating Rollo 1010/2018, origin DP 1132/2018, shared NIG, date, panel, operative result and finality wording"
+      ],
+      "identity_boundary": "Identity and direct procedural lineage only. It does not prove the allegations, conduct, knowledge, criminality, title, possession, liability or correctness of the adverse outcome."
+    },
+    {
+      "id": "PD-SP-R-0024",
+      "type": "PROCEEDING",
+      "name": "DI 248/2018 — Fiscalía Provincial de Las Palmas",
+      "aliases": [
+        "DI 248/2018",
+        "000248/2018",
+        "NIG 3501670220180002532"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "GC-FIS-013"
+      ],
+      "competent_organ": "PD-SP-I-0020",
+      "nig": "3501670220180002532",
+      "procedural_state": "ARCHIVED_7_MAY_2019",
+      "identity_sources": [
+        "Signed DI 248/2018 archive decree dated 7 May 2019",
+        "Signed notification dated 16 May 2019",
+        "archive/CAEPR_PROCEEDINGS_CANONICALISATION_CONTINUITY_CONTROL_27AUG2026.md"
+      ],
+      "identity_boundary": "Exact Fiscalía file identity and dated archive only. It does not establish the complete file, which requested diligences were performed, proper or improper motive, coordination, criminality or liability."
+    },
+    {
+      "id": "PD-SP-R-0025",
+      "type": "PROCEEDING",
+      "name": "DI 113/2022 — Fiscalía Provincial de Las Palmas",
+      "aliases": [
+        "DI 113/2022",
+        "NIG 3501670220220003722"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "GC-FIS-014"
+      ],
+      "competent_organ": "PD-SP-I-0020",
+      "nig": "3501670220220003722",
+      "procedural_state": "ARCHIVED_8_FEBRUARY_2023_COPY_DECISION_23_FEBRUARY_2026",
+      "related_master_register_ids": [
+        "LZ-JUD-046"
+      ],
+      "identity_sources": [
+        "Signed archive decree dated 8 February 2023",
+        "Signed information/copy decision dated 23 February 2026",
+        "Official notification received 25 February 2026 enclosing both signed decisions"
+      ],
+      "identity_boundary": "Exact Fiscalía file, NIG and signed decisions only. The complete file, performed diligences and native DP 616/2021 to DP 668/2021 reparto chain remain open. The decisions do not establish favouritism, capture, coordination, intent, prevarication or criminality."
+    },
+    {
+      "id": "PD-SP-R-0026",
+      "type": "PROCEEDING",
+      "name": "DI 22/2026 — Fiscalía Provincial de Las Palmas",
+      "aliases": [
+        "DI 22/2026"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "GC-FIS-016"
+      ],
+      "competent_organ": "PD-SP-I-0020",
+      "procedural_state": "ARCHIVED_11_FEBRUARY_2026_LATER_MATERIAL_JOINED_TO_ARCHIVED_FILE",
+      "related_master_register_ids": [
+        "TF-FIS-007",
+        "GC-FIS-015"
+      ],
+      "identity_sources": [
+        "Signed archive decree dated 11 February 2026",
+        "Signed decrees dated 13, 16 and 19 February and 2 and 3 March 2026",
+        "Official June and July 2026 joinder notifications"
+      ],
+      "identity_boundary": "Exact provincial file and located procedural acts only. Joinder to an archived file does not by itself prove substantive examination, legal identity of every later module, improper motive, coordination, wrongdoing or liability."
+    },
+    {
+      "id": "PD-SP-R-0027",
+      "type": "PROCEEDING",
+      "name": "DI preprocesal 114/2025 — Fiscalía de Área de Arrecife",
+      "aliases": [
+        "DI 114/2025",
+        "DIP 114/2025",
+        "NIG 3501670220250003875"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "LZ-FIS-045"
+      ],
+      "competent_organ": "PD-SP-I-0026",
+      "nig": "3501670220250003875",
+      "procedural_state": "ARCHIVED_NOTICE_14_JANUARY_2026_JUDICIAL_REITERATION_PRESERVED",
+      "identity_sources": [
+        "Official three-page DI 114/2025 decree and notification received 14 January 2026"
+      ],
+      "identity_boundary": "Exact file, NIG and notified archive only. The notification identifies Ramona Muñoz Casas, while the substantive decree does not visibly name its signing prosecutor. Archive does not establish the allegations false or determine any later judicial route."
+    },
+    {
+      "id": "PD-SP-R-0028",
+      "type": "PROCEEDING",
+      "name": "DIP 20/2026 — Fiscalía Provincial de Santa Cruz de Tenerife",
+      "aliases": [
+        "DIP 20/2026",
+        "0000020/2026",
+        "NIG 3803870220260000387"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "TF-FIS-007"
+      ],
+      "competent_organ": "PD-SP-I-0027",
+      "nig": "3803870220260000387",
+      "procedural_state": "OPENED_AND_TERRITORIALLY_REFERRED_27_JANUARY_2026",
+      "related_master_register_ids": [
+        "GC-FIS-016"
+      ],
+      "identity_sources": [
+        "archive/public_office_communications/fiscalia_tenerife/2026-01-30_DIP20/2026-01-27_30__FISCALIA_TENERIFE__DIP20_2026__CONTROLLED_RECORD_ES_EN.md"
+      ],
+      "identity_boundary": "Exact Tenerife file, NIG, opening and territorial referral only. The act does not establish merits acceptance, a destination-file number, the exact receiving corpus or wrongdoing."
+    },
+    {
+      "id": "PD-SP-R-0029",
+      "type": "PROCEEDING",
+      "name": "Expediente Gubernativo 44/2026 — Fiscalía de la Comunidad Autónoma de Canarias",
+      "aliases": [
+        "EG 44/2026",
+        "E.G. 44/2026",
+        "Exp. Gub. 44/2026"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "GC-FIS-032"
+      ],
+      "competent_organ": "PD-SP-I-0028",
+      "procedural_state": "OPENED_AND_ARCHIVED_30_MARCH_2026_COMPETENCE_REASONING",
+      "identity_sources": [
+        "Signed EG 44/2026 decree dated 30 March 2026"
+      ],
+      "identity_boundary": "Exact governmental file and signed competence/archive act only. Copies or remissions do not establish merits acceptance or later treatment, and the act does not establish improper motive, coordination or criminality."
+    },
+    {
+      "id": "PD-SP-R-0030",
+      "type": "PROCEEDING",
+      "name": "EG 49/2026 — FGE public-administration-crimes unit",
+      "aliases": [
+        "EG 49/2026",
+        "E.G. 49/2026"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "GC-FIS-018"
+      ],
+      "competent_organ": "PD-SP-I-0031",
+      "procedural_state": "ARCHIVE_DECISIONS_3_AND_8_JUNE_2026",
+      "identity_sources": [
+        "archive/CALIFICACION_EG49_FISCAL_RESPONSE_DECREE_PUBLICATION_CONTROL_16AUG2026.md"
+      ],
+      "identity_boundary": "Exact central file and located decisions only. It does not establish a merits re-audit of every historical source, personal knowledge from institutional possession, or responsibility for other offices' acts."
+    },
+    {
+      "id": "PD-SP-R-0031",
+      "type": "PROCEEDING",
+      "name": "Expediente Gubernativo 86/2026 — Fiscalía de la Audiencia Nacional",
+      "aliases": [
+        "EG 86/2026",
+        "E.G. 86/2026",
+        "GUB 86/2026",
+        "Exp. Gub. 86/2026"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "LZ-FIS-007"
+      ],
+      "competent_organ": "PD-SP-I-0032",
+      "procedural_state": "TERRITORIALLY_REFERRED_TO_ARRECIFE_10_AUGUST_2026",
+      "identity_sources": [
+        "Official Fiscalía de la Audiencia Nacional inhibition/referral notification dated 10 August 2026"
+      ],
+      "identity_boundary": "One exact governmental file with reconciled EG/GUB/Exp. Gub. aliases. The referral is not a merits decision and does not establish the receiving reference, assigned prosecutor, complete transmitted corpus or destination outcome."
+    },
+    {
+      "id": "PD-SP-R-0032",
+      "type": "PROCEEDING",
+      "name": "Expediente Gubernativo 95/2026 — Fiscalía Provincial de Santa Cruz de Tenerife",
+      "aliases": [
+        "EG 95/2026",
+        "E.G. 95/2026",
+        "Exp. Gub. 95/2026"
+      ],
+      "routes": {
+        "es": "/es/fiscalia-tenerife-eg95-2026/",
+        "en": "/en/fiscalia-tenerife-eg95-2026/"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "TF-FIS-008"
+      ],
+      "competent_organ": "PD-SP-I-0027",
+      "procedural_state": "OPENED_AND_ARCHIVED_21_AUGUST_2026",
+      "related_master_register_ids": [
+        "TF-CRI-003",
+        "TF-CIV-001",
+        "TF-CIV-002",
+        "TF-FIS-007"
+      ],
+      "identity_sources": [
+        "archive/public_office_communications/fiscalia_tenerife/2026-08-21_EG95/2026-08-21__FISCALIA_TENERIFE__EG95__SCOPE_AND_SOURCE_MANIFEST.md"
+      ],
+      "identity_boundary": "Exact governmental file and signed act only. Archive on judicialisation/competence reasoning did not determine the supplied documents false, irrelevant or insufficient and does not prove incorporation into DP 748/2026."
+    },
+    {
+      "id": "PD-SP-R-0033",
+      "type": "PROCEEDING",
+      "name": "Expediente Gubernativo 112/2026 — Fiscalía de la Comunidad Autónoma de Canarias",
+      "aliases": [
+        "EG 112/2026",
+        "E.G. 112/2026",
+        "Exp. Gub. 112/2026"
+      ],
+      "routes": {
+        "es": "/es/fiscalia-dip-2-2026/",
+        "en": "/en/fiscalia-dip-2-2026/"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "GC-FIS-033"
+      ],
+      "competent_organ": "PD-SP-I-0028",
+      "procedural_state": "ARCHIVED_20_AUGUST_CLARIFIED_23_AUGUST_2026",
+      "related_master_register_ids": [
+        "GC-FIS-017"
+      ],
+      "identity_sources": [
+        "evidence/fiscalia/eg-112-2026/README.md"
+      ],
+      "identity_boundary": "Exact governmental file and located archive/clarification sequence only. Reference to DIP 2 does not merge the files or establish a new judge-related allegation, improper motive or criminality."
+    },
+    {
+      "id": "PD-SP-R-0034",
+      "type": "PROCEEDING",
+      "name": "E.G. 745/2026 — Inspección Fiscal de la Fiscalía General del Estado",
+      "aliases": [
+        "EG 745/2026",
+        "Expediente Gubernativo 745/2026",
+        "Exp. Gub. 745/2026"
+      ],
+      "routes": {
+        "es": "/es/fiscalia-inspeccion-exp-gub-745-2026/",
+        "en": "/en/public-prosecution-inspection-exp-gub-745-2026/"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "NAT-FIS-004"
+      ],
+      "competent_organ": "PD-SP-I-0030",
+      "procedural_state": "ARCHIVED_26_AUGUST_2026_REPOSICION_PREPARED_NOT_VERIFIED_FILED",
+      "related_master_register_ids": [
+        "GC-FIS-013",
+        "GC-FIS-014",
+        "GC-FIS-016",
+        "GC-FIS-017",
+        "GC-FIS-018",
+        "GC-CRI-008"
+      ],
+      "identity_sources": [
+        "REGAGE26e00070235775",
+        "evidence/fiscalia/2026/2026-08-26_FGE_INSPECCION_EG_745_2026_METADATA.json",
+        "evidence/fiscalia/2026/MINISTERIO_FISCAL_WIDER_MATTER_EG745_UNITARY_EVIDENCE_ACTION_DIGEST_31AUG2026.md"
+      ],
+      "identity_boundary": "Exact Inspection file, registered source and archive act only. A prepared reposición is not a filed appeal. The decision and production gaps do not by themselves establish bad faith, obstruction, coordination, prevarication or criminality."
+    },
+    {
+      "id": "PD-SP-R-0035",
+      "type": "PROCEEDING",
+      "name": "DP 616/2021 → DP 668/2021 — Arrecife allocation chain",
+      "aliases": [
+        "DP 616/2021",
+        "DP 668/2021",
+        "Diligencias Previas 616/2021",
+        "Diligencias Previas 668/2021"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "LZ-JUD-046"
+      ],
+      "competent_organ": "PD-SP-I-0024",
+      "procedural_state": "PROVISIONALLY_DISMISSED_22_MARCH_2021_NO_APPEAL_RECORDED_IN_SIGNED_DI113_DECREE",
+      "identity_sources": [
+        "Controlled public-page account of the 10-February-2021 LexNET filing and reported 12/22-March allocation sequence",
+        "Signed DI 113/2022 archive decree dated 8 February 2023 reciting DP 668/2021 and the reported 22-March provisional dismissal"
+      ],
+      "identity_boundary": "Identity of the source-described allocation chain only. DP 616/2021 and DP 668/2021 remain distinct source literals connected through the reported reparto sequence; the native certified docket and orders must fix the exact parent/transfer relationship. Referral does not prove an individual prosecutor's receipt or substantive assessment."
+    },
+    {
+      "id": "PD-SP-R-0036",
+      "type": "PROCEEDING",
+      "name": "Expediente Gubernativo 33/2025 — Fiscalía Provincial de Las Palmas",
+      "aliases": [
+        "EG 33/2025",
+        "E.G. 33-25",
+        "E.G. 33/2025"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "GC-FIS-034"
+      ],
+      "competent_organ": "PD-SP-I-0020",
+      "procedural_state": "OPENING_DOCUMENT_NOTIFIED_3_MARCH_2025_LATER_DISPOSITION_SOURCE_REQUIRED",
+      "identity_sources": [
+        "Official 3-March-2025 notification enclosing an inception/opening document",
+        "evidence/fiscalia/2026/MF_MAILBOX_REGAGE_CONTROL_31AUG2026.md"
+      ],
+      "identity_boundary": "Exact provincial file identity and located opening-notice event only. The complete file, NIG, signatory, native opening act and any later disposition remain source-required; no merits conclusion is inferred."
+    },
+    {
+      "id": "PD-SP-R-0037",
+      "type": "PROCEEDING",
+      "name": "CC/CA 12/2025 — FGE Atención al Ciudadano",
+      "aliases": [
+        "CC/CA 12/2025"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "NAT-FIS-005"
+      ],
+      "competent_organ": "PD-SP-I-0036",
+      "procedural_state": "OFFICIAL_CORRESPONDENCE_LOCATED_27_JANUARY_2025_RECEIPT_ONLY",
+      "identity_sources": [
+        "Official central citizen-attention correspondence dated 27 January 2025",
+        "evidence/fiscalia/2026/MF_MAILBOX_REGAGE_CONTROL_31AUG2026.md"
+      ],
+      "identity_boundary": "Exact central reference and correspondence checkpoint only. It does not establish a merits act, admission, allocation, transfer, investigation, signatory identity or NIG."
+    },
+    {
+      "id": "PD-SP-R-0038",
+      "type": "PROCEEDING",
+      "name": "Expediente Gubernativo 6/2026 — Fiscalía de la Comunidad Autónoma de Canarias",
+      "aliases": [
+        "EG 6/2026",
+        "E.G. 6/2026"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "GC-FIS-035"
+      ],
+      "competent_organ": "PD-SP-I-0028",
+      "procedural_state": "OFFICIAL_NOTICE_LOCATED_11_FEBRUARY_2026_ACT_CONTENT_SOURCE_REQUIRED",
+      "identity_sources": [
+        "Official notice dated 11 February 2026",
+        "evidence/fiscalia/2026/MF_MAILBOX_REGAGE_CONTROL_31AUG2026.md"
+      ],
+      "identity_boundary": "Exact superior-office file reference and correspondence provenance only. The underlying act, object, outcome, NIG and signatory have not yet been safely source-digested and no merits conclusion is admitted."
+    },
+    {
+      "id": "PD-SP-R-0039",
+      "type": "PROCEEDING",
+      "name": "ST 553/2026 — Secretaría Técnica de la Fiscalía General del Estado",
+      "aliases": [
+        "ST 553/2026",
+        "S.T. 553/2026"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "NAT-FIS-006"
+      ],
+      "competent_organ": "PD-SP-I-0034",
+      "procedural_state": "SIGNED_ACKNOWLEDGEMENT_2_JULY_NOTIFIED_6_JULY_2026_RECEIPT_ONLY",
+      "identity_sources": [
+        "Signed official acknowledgement dated 2 July and notified 6 July 2026",
+        "evidence/fiscalia/2026/MF_MAILBOX_REGAGE_CONTROL_31AUG2026.md"
+      ],
+      "identity_boundary": "Exact Technical Secretariat reference and receipt/handling checkpoint only. It does not establish internal transfer, association with another file, opening, assigned officer, investigation or merits review."
+    },
+    {
+      "id": "PD-SP-R-0040",
+      "type": "PROCEEDING",
+      "name": "ST 104/2025 — Secretaría Técnica de la Fiscalía General del Estado",
+      "aliases": [
+        "ST 104/2025",
+        "S.T. 104/2025"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "master_register_ids": [
+        "NAT-FIS-007"
+      ],
+      "competent_organ": "PD-SP-I-0034",
+      "procedural_state": "OFFICIAL_ACKNOWLEDGEMENTS_LOCATED_IN_2025_RECEIPT_ONLY",
+      "identity_sources": [
+        "Official acknowledgements located on 20 and 27 February, 6 and 10 June, and 17 December 2025",
+        "evidence/fiscalia/2026/MF_MAILBOX_REGAGE_CONTROL_31AUG2026.md"
+      ],
+      "identity_boundary": "Exact Technical Secretariat reference supported as a distinct 2025 handling file by repeated official acknowledgements. They prove receipt/handling checkpoints only, not a merits decision, transfer, assignment, investigation, signatory identity or NIG."
+    },
+    {
+      "id": "PD-SP-R-0041",
+      "type": "PROCEEDING",
+      "name": "DIP 7/2026 — unresolved Ministerio Fiscal reference",
+      "aliases": [
+        "DIP 7/2026"
+      ],
+      "identity_resolution": "CARET_PENDING",
+      "master_register_ids": [
+        "TF-FIS-009"
+      ],
+      "procedural_state": "REFERENCE_IN_SIGNED_EG95_DECREE_NATIVE_FILE_AND_SCOPE_SOURCE_REQUIRED",
+      "related_master_register_ids": [
+        "TF-FIS-008"
+      ],
+      "identity_sources": [
+        "Signed EG 95/2026 decree dated 21 August 2026",
+        "archive/public_office_communications/fiscalia_tenerife/2026-08-21_EG95/2026-08-21__FISCALIA_TENERIFE__EG95__SCOPE_AND_SOURCE_MANIFEST.md"
+      ],
+      "identity_boundary": "Stable unresolved-reference object only. The signed EG 95/2026 decree proves that the DIP 7/2026 label was used, but does not establish the exact owning office, file class, subject, NIG, acts, signatory, procedural relationship, status or outcome. No merits, coordination or wrongdoing inference is admitted."
+    },
+    {
+      "id": "PD-SP-R-0042",
+      "type": "PROCEEDING",
+      "name": "DIP 12/2026 — unresolved Ministerio Fiscal reference",
+      "aliases": [
+        "DIP 12/2026"
+      ],
+      "identity_resolution": "CARET_PENDING",
+      "master_register_ids": [
+        "TF-FIS-010"
+      ],
+      "procedural_state": "REFERENCE_IN_SIGNED_EG95_DECREE_NATIVE_FILE_AND_SCOPE_SOURCE_REQUIRED",
+      "related_master_register_ids": [
+        "TF-FIS-008"
+      ],
+      "identity_sources": [
+        "Signed EG 95/2026 decree dated 21 August 2026",
+        "archive/public_office_communications/fiscalia_tenerife/2026-08-21_EG95/2026-08-21__FISCALIA_TENERIFE__EG95__SCOPE_AND_SOURCE_MANIFEST.md"
+      ],
+      "identity_boundary": "Stable unresolved-reference object only. The signed EG 95/2026 decree proves that the DIP 12/2026 label was used, but does not establish the exact owning office, file class, subject, NIG, acts, signatory, procedural relationship, status or outcome. No merits, coordination or wrongdoing inference is admitted."
+    },
+    {
+      "id": "PD-SP-R-0043",
+      "type": "PROCEEDING",
+      "name": "EG 58/2026 — unresolved Ministerio Fiscal reference",
+      "aliases": [
+        "EG 58/2026",
+        "E.G. 58/2026"
+      ],
+      "identity_resolution": "CARET_PENDING",
+      "master_register_ids": [
+        "UNK-FIS-001"
+      ],
+      "procedural_state": "REFERENCE_ONLY_DISCRETE_OFFICIAL_ACT_NOT_LOCATED",
+      "identity_sources": [
+        "evidence/fiscalia/2026/MF_MAILBOX_REGAGE_CONTROL_31AUG2026.md"
+      ],
+      "identity_boundary": "Stable unresolved-reference object only. The current control preserves the EG 58/2026 label but does not establish a distinct formal file, exact office, file class, subject, NIG, dates, act, signatory, relationship, status or outcome. The number alone supports no merits, coordination or wrongdoing inference."
+    }
+  ]
+}

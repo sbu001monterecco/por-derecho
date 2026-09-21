@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Project Sun Rock — Justice & Institutional Record",
-    "updated": "2026-08-15",
+    "updated": "2026-08-31",
     "publication_rule": "Public facts are limited to source-controlled institutional acts, procedural status and explicitly labelled analytical questions. Presence in the graph does not imply wrongdoing, endorsement or coordination.",
     "statuses": ["DOCUMENTED", "CORROBORATED", "DISPUTED", "ANALYTICAL_QUESTION", "OPEN_EVIDENTIAL_GAP", "SUPERSEDED"]
   },
@@ -15,23 +15,40 @@
     {"id":"juzgado-inst-3-arrecife","type":"court","name_es":"Juzgado de Instrucción nº 3 de Arrecife","name_en":"Arrecife Investigating Court No. 3"}
   ],
   "people": [
-    {"id":"elena-herrera-rodriguez","name":"Elena Herrera Rodríguez","role_es":"Fiscal — signataria identificada del decreto de archivo de DI 248/2018 de 7 mayo 2019","role_en":"Prosecutor — identified signatory of the 7 May 2019 DI 248/2018 archive decree","status":"DOCUMENTED"},
-    {"id":"beatriz-sanchez-carreras","name":"Beatriz Sánchez Carreras","role_es":"Fiscal — signataria electrónica identificada de la notificación de 16 mayo 2019; posteriormente Fiscal Jefa Provincial","role_en":"Prosecutor — identified electronic signatory of the 16 May 2019 notification; later Provincial Chief Prosecutor","status":"DOCUMENTED"},
-    {"id":"emilio-sanchez-ulled","name":"Emilio Jesús Sánchez Ulled","role_es":"Fiscal — signatario identificado de EG 49/2026, 3 junio 2026","role_en":"Prosecutor — identified signatory of EG 49/2026, 3 June 2026","status":"DOCUMENTED"}
+    {"id":"tomas-fernandez-de-paiz","caepr_id":"PD-SP-P-0114","name":"Tomás Fernández de Páiz","role_es":"Fiscal — firmante identificado de la querella DI 273/2013 de 27 diciembre 2013; atribución limitada a ese acto","role_en":"Prosecutor — identified signatory of the 27 December 2013 DI 273/2013 complaint; attribution limited to that act","status":"DOCUMENTED"},
+    {"id":"ricardo-de-mosteyrin-sampalo","caepr_id":"PD-SP-P-0058","name":"Ricardo de Mosteyrín Sampalo","role_es":"Fiscal — firmante identificado del dictamen de calificación de 12 marzo 2019; la Sentencia acredita asistencia institucional a la vista de 25 julio 2023 y Gil lo identifica directamente, sin certificación oficial individual todavía","role_en":"Prosecutor — identified signatory of the 12 March 2019 classification opinion; the judgment proves institutional attendance at the 25 July 2023 hearing and Gil identifies him directly, without official individual certification yet","status":"DOCUMENTED"},
+    {"id":"elena-herrera-rodriguez","caepr_id":"PD-SP-P-0104","name":"Elena Herrera Rodríguez","role_es":"Fiscal — signataria identificada del decreto sustantivo de archivo de DI 248/2018 de 7 mayo 2019","role_en":"Prosecutor — identified signatory of the substantive 7 May 2019 DI 248/2018 archive decree","status":"DOCUMENTED"},
+    {"id":"beatriz-sanchez-carreras","caepr_id":"PD-SP-P-0103","name":"Beatriz Sánchez Carreras","role_es":"Fiscal Jefa Provincial — notificación de DI 248/2018 de 16 mayo 2019, no su decreto sustantivo; firmante del archivo de DI 113/2022 de 8 febrero 2023, de su decisión de copia de 23 febrero 2026 y de las decisiones DI 22/2026 de febrero/marzo 2026","role_en":"Provincial Chief Prosecutor — 16 May 2019 DI 248/2018 notice, not its substantive decree; signatory of the 8 February 2023 DI 113/2022 archive, its 23 February 2026 copy decision and the February/March 2026 DI 22/2026 decisions","status":"DOCUMENTED"},
+    {"id":"emilio-sanchez-ulled","caepr_id":"PD-SP-P-0109","name":"Emilio Jesús Sánchez Ulled","role_es":"Fiscal — signatario identificado de EG 49/2026, 3 junio 2026","role_en":"Prosecutor — identified signatory of EG 49/2026, 3 June 2026","status":"DOCUMENTED"},
+    {"id":"juan-manuel-gonzalez-casanova-ruiz","caepr_id":"PD-SP-P-0110","name":"Juan Manuel González-Casanova Ruiz","role_es":"Fiscal — signatario identificado del Decreto de resolución y archivo de DIP 2/2026 de 6 marzo 2026","role_en":"Prosecutor — identified signatory of the 6 March 2026 DIP 2/2026 decision and closure decree","status":"DOCUMENTED"},
+    {"id":"ernesto-vieira-morante","caepr_id":"PD-SP-P-0111","name":"Ernesto Vieira Morante","role_es":"Fiscal — signatario identificado del oficio de notificación de DIP 2/2026 de 9 marzo 2026","role_en":"Prosecutor — identified signatory of the 9 March 2026 DIP 2/2026 notification","status":"DOCUMENTED"}
   ],
   "proceedings": [
     {
       "id":"prehistory-2011-2012",
-      "reference":"2011–2012 · prehistoria factual",
+      "reference":"2008–30 nov 2011 · arquitectura heredada",
       "institution":null,
-      "period":"2011–2012",
+      "period":"2008–2011-11-30",
       "status":"CORROBORATED",
-      "summary_es":"Conflicto preconcursal documentado sobre Comunidad, gobierno, acceso, explotación y propietarios minoritarios. Es contexto factual del primer encuadre fiscal posterior, no un procedimiento del Ministerio Fiscal.",
-      "summary_en":"Documented pre-insolvency conflict concerning Community governance, access, operation and minority owners. It is factual context for the later first prosecution frame, not a prosecution proceeding.",
+      "summary_es":"Constitución, ventas y conflicto preconcursal documentado sobre Comunidad, gobierno, acceso, explotación y propietarios minoritarios antes de la llegada del nuevo perímetro. Es contexto factual, no un procedimiento del Ministerio Fiscal.",
+      "summary_en":"Formation, sales and documented pre-insolvency conflict concerning Community governance, access, operation and minority owners before the incoming perimeter arrived. This is factual context, not a prosecution proceeding.",
       "establishes_es":"Que el conflicto institucional/económico relevante precede al concurso y a la primera intervención fiscal localizada.",
       "establishes_en":"That the relevant institutional/economic conflict predates both the insolvency proceeding and the earliest located prosecution involvement.",
       "does_not_establish_es":"No acredita por sí solo conducta penal, coordinación indebida ni parcialidad de Fiscalía.",
       "does_not_establish_en":"It does not by itself establish criminal conduct, improper coordination or prosecutorial bias."
+    },
+    {
+      "id":"arrival-2011-2012",
+      "reference":"dic 2011–jun 2012 · transición y actos posteriores",
+      "institution":null,
+      "period":"2011-12–2012-06",
+      "status":"DISPUTED",
+      "summary_es":"Adquisición de LPB, capacidad de Gil, contrato LPB–operadora española y concurso. Son actos/eventos posteriores a la llegada que deben separarse de la arquitectura heredada.",
+      "summary_en":"LPB acquisition, Gil's capacity, the LPB–Spanish-operator agreement and the insolvency proceeding. These are post-arrival acts/events that must be separated from inherited architecture.",
+      "establishes_es":"Que una auditoría exacta no puede sostener que todos los hechos relevantes fueran anteriores.",
+      "establishes_en":"That an accurate audit cannot claim every relevant event predated arrival.",
+      "does_not_establish_es":"No establece por sí solo delito, perjuicio, conocimiento o intención de Gil o Patricia.",
+      "does_not_establish_en":"It does not by itself establish offence, prejudice, knowledge or intent by Gil or Patricia."
     },
     {
       "id":"di-273-2013",
@@ -39,12 +56,15 @@
       "institution":"fiscalia-lp",
       "period":"2013",
       "status":"DOCUMENTED",
-      "summary_es":"Primer expediente fiscal localizado en el eje Sun Park/LPB; desembocó en querella y posteriormente en DP 332/2014. El registro posterior atribuye el origen a una comunicación/denuncia del administrador concursal.",
-      "summary_en":"Earliest located prosecution file in the Sun Park/LPB track; it led to a criminal complaint and subsequently DP 332/2014. Later records attribute its origin to an insolvency-administrator complaint/communication.",
+      "summary_es":"Primer expediente fiscal localizado. La denuncia AC de 18 septiembre 2013 está reproducida en su informe posterior; Tomás Fernández de Páiz firmó la querella el 27 diciembre. Acto fiscal documentado; hipótesis no adjudicada.",
+      "summary_en":"Earliest located prosecution file. The AC's 18 September 2013 complaint is reproduced in his later report; Tomás Fernández de Páiz signed the complaint on 27 December. Documented prosecution act; unadjudicated hypothesis.",
       "establishes_es":"Existencia del expediente, continuidad hacia la querella y relevancia del administrador concursal como fuente material del primer encuadre localizado.",
       "establishes_en":"Existence of the file, continuity into the later complaint, and the insolvency administrator's material-source role in the earliest located frame.",
       "does_not_establish_es":"No acredita por sí solo falsedad, parcialidad, afinidad, collusión o actuación indebida de ningún fiscal.",
-      "does_not_establish_en":"It does not by itself establish falsity, bias, affinity, collusion or wrongdoing by any prosecutor."
+      "does_not_establish_en":"It does not by itself establish falsity, bias, affinity, collusion or wrongdoing by any prosecutor.",
+      "people":["tomas-fernandez-de-paiz"],
+      "public_route_es":"/es/fiscalia-di273-2013-querella-gil-patricia/",
+      "public_route_en":"/en/prosecution-di273-2013-complaint-gil-patricia/"
     },
     {
       "id":"dp-332-2014",
@@ -52,8 +72,8 @@
       "institution":"juzgado-inst-3-arrecife",
       "period":"2014–2021",
       "status":"OPEN_EVIDENTIAL_GAP",
-      "summary_es":"Procedimiento judicial derivado de la querella fiscal. Consta participación posterior de entidades del perímetro minoritario y ampliación del AC en febrero de 2018. Registros posteriores refieren sobreseimiento/archivo el 29 marzo 2021, pero falta el auto primario y su razonamiento exacto.",
-      "summary_en":"Court proceeding arising from the prosecution complaint. Later participation by minority-perimeter entities and an insolvency-administrator expansion in February 2018 are recorded. Later records refer to dismissal/closure on 29 March 2021, but the primary order and precise reasoning remain missing.",
+      "summary_es":"Procedimiento judicial derivado de la querella fiscal. Fuentes secundarias posteriores reportan archivo en 2021; una alegación de parte posterior da 29 marzo, mientras comunicaciones contemporáneas describían reactivación. Faltan auto firmado, fundamento, notificación y firmeza.",
+      "summary_en":"Court proceeding arising from the prosecution complaint. Later secondary sources report archive in 2021; a later party pleading gives 29 March while contemporaneous communications described reactivation. The signed order, grounds, notice and finality remain missing.",
       "establishes_es":"Continuidad procesal del primer encuadre y convergencia procedimental posterior entre AC, procedimiento penal y actores del perímetro minoritario.",
       "establishes_en":"Procedural continuity of the first frame and later procedural convergence between the insolvency administrator, criminal proceeding and minority-perimeter actors.",
       "does_not_establish_es":"No acredita collusión ni permite afirmar el fundamento del sobreseimiento hasta incorporar el auto primario.",
@@ -80,11 +100,45 @@
       "status":"DOCUMENTED",
       "summary_es":"Denuncia de Gil Marer/Aweswell contra el administrador concursal y Construcciones Acosta Matos; constan aportaciones de nuevas pruebas y solicitudes de diligencias. Se mantiene abierta la verificación de cuáles de esas diligencias fueron efectivamente practicadas antes del archivo.",
       "summary_en":"Complaint by Gil Marer/Aweswell against the insolvency administrator and Construcciones Acosta Matos; subsequent evidence submissions and requested investigative steps are documented. Which of those steps were actually carried out before archive remains under verification.",
-      "establishes_es":"La existencia, objeto y evolución documental de DI 248/2018, incluido que en febrero de 2019 se solicitaron diligencias respecto del AC, José Daniel Acosta Matos y Laura Acosta Matos.",
-      "establishes_en":"The existence, scope and documentary development of DI 248/2018, including February 2019 requests for investigative steps concerning the insolvency administrator, José Daniel Acosta Matos and Laura Acosta Matos.",
-      "does_not_establish_es":"La solicitud de diligencias no acredita que Fiscalía las practicara, que no las practicara, ni la culpabilidad de las personas mencionadas.",
-      "does_not_establish_en":"A request for investigative steps does not establish that they were carried out, that they were not carried out, or that the named persons were guilty.",
-      "people":["elena-herrera-rodriguez","beatriz-sanchez-carreras"]
+      "establishes_es":"La existencia, objeto y evolución documental de DI 248/2018, incluido que Elena Herrera Rodríguez firmó el decreto sustantivo de archivo de 7 mayo 2019. Beatriz Sánchez Carreras firmó la notificación posterior de 16 mayo, no ese decreto.",
+      "establishes_en":"The existence, scope and documentary development of DI 248/2018, including that Elena Herrera Rodríguez signed the substantive 7 May 2019 archive decree. Beatriz Sánchez Carreras signed the later 16 May notice, not that decree.",
+      "does_not_establish_es":"La solicitud de diligencias no acredita que Fiscalía las practicara o dejara de practicarlas, ni la culpabilidad de las personas mencionadas; tampoco una notificación posterior convierte a su firmante en autora del decreto sustantivo.",
+      "does_not_establish_en":"A request for investigative steps does not establish that they were or were not carried out, or the guilt of those named; nor does a later notice make its signatory the author of the substantive decree.",
+      "people":["elena-herrera-rodriguez"],
+      "page_es":"../carta-abierta-ministerio-fiscal/#provincial-las-palmas",
+      "page_en":"../open-letter-public-prosecution-service/#provincial-las-palmas"
+    },
+    {
+      "id":"calificacion-2019-2023",
+      "reference":"Concurso 36/2012 · calificación 2019 / vista 2023",
+      "institution":"fiscalia-lp",
+      "period":"2019–2023",
+      "status":"DOCUMENTED",
+      "summary_es":"Ricardo de Mosteyrín Sampalo firmó el dictamen fiscal de calificación de 12 marzo 2019. La Sentencia acredita asistencia del Ministerio Fiscal a la vista de 25 julio 2023; Gil identifica directamente a Ricardo de Mosteyrín como el fiscal presente, pero falta certificación oficial individual de esa asistencia.",
+      "summary_en":"Ricardo de Mosteyrín Sampalo signed the 12 March 2019 prosecution classification opinion. The judgment proves the Public Prosecution Service attended the 25 July 2023 hearing; Gil directly identifies Ricardo de Mosteyrín as the prosecutor present, but official individual certification of that attendance remains missing.",
+      "establishes_es":"La autoría del dictamen de 2019 y la asistencia institucional a la vista de 2023, manteniendo separada la identificación presencial directa de la certificación oficial.",
+      "establishes_en":"Authorship of the 2019 opinion and institutional attendance at the 2023 hearing, while keeping direct eyewitness identification separate from official certification.",
+      "does_not_establish_es":"No acredita por sí solo que la posición fuera impropia, que hechos posteriores fueran conocidos personalmente ni captura, favoritismo, coordinación, intención, prevaricación o criminalidad.",
+      "does_not_establish_en":"It does not by itself establish that the position was improper, personal knowledge of later facts, or capture, favouritism, coordination, intent, prevarication or criminality.",
+      "people":["ricardo-de-mosteyrin-sampalo"],
+      "page_es":"../calificacion-concurso-36-2012-vidas-paralelas/",
+      "page_en":"../insolvency-classification-parallel-lives/"
+    },
+    {
+      "id":"di-113-2022",
+      "reference":"DI 113/2022",
+      "institution":"fiscalia-lp",
+      "period":"2022–2026",
+      "status":"DOCUMENTED",
+      "summary_es":"Beatriz Sánchez Carreras firmó el decreto de archivo de 8 febrero 2023 y la decisión de 23 febrero 2026 que rechazó una nueva copia. El decreto registró alegaciones sobre toma de control el 7 junio 2018, obras/demoliciones, reducción de valor y atribución pública de propiedad, y las trató mediante un encuadre judicializado/civil-concursal sin apreciar indicios.",
+      "summary_en":"Beatriz Sánchez Carreras signed the 8 February 2023 archive decree and the 23 February 2026 decision rejecting a further copy. The decree recorded allegations concerning the taking of control on 7 June 2018, works/demolition, reduction in value and public ownership attribution, and treated them through a judicialised/civil-insolvency frame without finding indicia.",
+      "establishes_es":"Los dos actos firmados, el NIG 3501670220220003722 y el razonamiento expuesto en ellos; el decreto también refiere DP 668/2021 y su sobreseimiento provisional de 22 marzo 2021.",
+      "establishes_en":"The two signed acts, NIG 3501670220220003722 and their stated reasoning; the decree also refers to DP 668/2021 and its provisional dismissal on 22 March 2021.",
+      "does_not_establish_es":"No prueba que el encuadre fuera correcto o incorrecto, qué diligencias se practicaron fuera de lo expuesto, ni favoritismo, captura, coordinación, intención, prevaricación o criminalidad.",
+      "does_not_establish_en":"It does not prove the frame was correct or incorrect, which steps beyond those stated were performed, or favouritism, capture, coordination, intent, prevarication or criminality.",
+      "people":["beatriz-sanchez-carreras"],
+      "page_es":"../carta-abierta-ministerio-fiscal/#provincial-las-palmas",
+      "page_en":"../open-letter-public-prosecution-service/#provincial-las-palmas"
     },
     {
       "id":"di-22-2026",
@@ -92,12 +146,15 @@
       "institution":"fiscalia-lp",
       "period":"2026",
       "status":"DOCUMENTED",
-      "summary_es":"Expediente provincial archivado; escritos posteriores fueron unidos/incorporados al marco del expediente según el registro consolidado.",
-      "summary_en":"Provincial file archived; later submissions were joined/incorporated into the file framework according to the consolidated record.",
-      "establishes_es":"Archivo y tratamiento procesal posterior documentado.",
-      "establishes_en":"Documented archive and subsequent procedural treatment.",
-      "does_not_establish_es":"No determina por sí solo que hechos posteriores o materialmente distintos sean jurídicamente idénticos a los ya examinados.",
-      "does_not_establish_en":"It does not by itself determine that later or materially distinct events are legally identical to those already examined."
+      "summary_es":"Beatriz Sánchez Carreras firmó el archivo de 11 febrero 2026 y decisiones de unión/mantenimiento de archivo de 13, 16 y 19 febrero y 2 y 3 marzo. Actos de oficina de 3 y 30 junio y 8 julio unieron material posterior como judicializado o sin diligencia nueva; al no estar verificada su firma, se atribuyen solo a la institución.",
+      "summary_en":"Beatriz Sánchez Carreras signed the 11 February 2026 archive and the 13, 16 and 19 February and 2 and 3 March joinder/continued-archive decisions. Office acts dated 3 and 30 June and 8 July joined later material as judicialised or requiring no new step; because their signatures are unverified, they are attributed only to the institution.",
+      "establishes_es":"Una secuencia firmada de febrero/marzo que calificó el paquete como confuso, repetitivo, civil/concursal, judicializado, inconcreto o sin información materialmente distinta, seguida de absorción institucional en junio/julio dentro del contenedor ya archivado.",
+      "establishes_en":"A signed February/March sequence that classified the package as confused, repetitive, civil/insolvency-related, judicialised, insufficiently concrete or not materially different, followed by institutional absorption in June/July into the already archived container.",
+      "does_not_establish_es":"No demuestra que no existiera revisión interna, identidad jurídica de todo hecho posterior, ni favoritismo, captura, coordinación, intención, prevaricación o criminalidad.",
+      "does_not_establish_en":"It does not establish that no internal review existed, legal identity of every later event, or favouritism, capture, coordination, intent, prevarication or criminality.",
+      "people":["beatriz-sanchez-carreras"],
+      "page_es":"../carta-abierta-ministerio-fiscal/#provincial-las-palmas",
+      "page_en":"../open-letter-public-prosecution-service/#provincial-las-palmas"
     },
     {
       "id":"dip-2-2026",
@@ -105,13 +162,15 @@
       "institution":"fiscalia-canarias",
       "period":"2026",
       "status":"DISPUTED",
-      "summary_es":"Expediente de Fiscalía de Canarias archivado el 6 marzo 2026. El 11 marzo se comunicó formalmente que existía un recurso de apelación ya documentado, contradiciendo una premisa utilizada en el decreto.",
-      "summary_en":"Canary Islands prosecution file archived on 6 March 2026. On 11 March a formal communication stated that an appeal was already documented, contradicting a premise used in the decree.",
-      "establishes_es":"Una contradicción documental sobre el estado del recurso fue puesta formalmente en conocimiento de la institución.",
-      "establishes_en":"A documentary contradiction concerning appeal status was formally notified to the institution.",
+      "summary_es":"El Decreto de 6 marzo 2026 registra que DIP 2/2026 se incoó el 11 febrero, acuerda el archivo sin cosa juzgada y preserva la vía judicial. El oficio de 9 marzo notificó el archivo. El 11 marzo se comunicó formalmente que existía un recurso de apelación ya documentado, contradiciendo una premisa utilizada en el decreto.",
+      "summary_en":"The 6 March 2026 Decree records that DIP 2/2026 was opened on 11 February, orders closure without res judicata and preserves the judicial route. The 9 March notice communicated the closure. On 11 March a formal communication stated that an appeal was already documented, contradicting a premise used in the decree.",
+      "establishes_es":"Recepción, incoación, archivo y notificación son actos oficiales documentados; la contradicción sobre el estado del recurso fue puesta formalmente en conocimiento de la institución.",
+      "establishes_en":"Receipt, opening, closure and notice are documented official acts; the documentary contradiction concerning appeal status was formally notified to the institution.",
       "does_not_establish_es":"No acredita por sí sola mentira deliberada, mala fe ni que la corrección hubiera debido cambiar necesariamente el resultado jurídico.",
       "does_not_establish_en":"It does not by itself establish a deliberate falsehood, bad faith, or that the correction necessarily required a different legal outcome.",
-      "page_es":"../fiscalia-dip-2-2026/"
+      "people":["juan-manuel-gonzalez-casanova-ruiz","ernesto-vieira-morante"],
+      "page_es":"../fiscalia-dip-2-2026/",
+      "page_en":"../fiscalia-dip-2-2026/"
     },
     {
       "id":"eg-49-2026",
@@ -191,23 +250,39 @@
       "summary_en":"Compare requested and actually performed investigative steps across files while controlling for differences in offence, evidence, competence and procedural stage.",
       "limit_es":"Resultados o duraciones diferentes no prueban trato desigual impropio sin comparación materialmente equivalente.",
       "limit_en":"Different outcomes or durations do not prove improper unequal treatment without materially comparable circumstances."
+    },
+    {
+      "id":"institutional-self-neutralisation",
+      "status":"ANALYTICAL_QUESTION",
+      "title_es":"Autoneutralización institucional y efecto práctico",
+      "title_en":"Institutional self-neutralisation and practical effect",
+      "summary_es":"Los actos firmados localizados documentan clasificación y acumulación recurrentes: DI 113 y DI 22 trataron módulos sobre control, obras, representaciones de titularidad y material posterior como judicializados, civiles/concursales, inconcretos o no materialmente distintos; remisiones posteriores se unieron al expediente ya archivado. El efecto práctico, mientras seguía operativo el marco fiscal adverso de calificación, fue asimétricamente protector en el sentido limitado de no exponer una matriz actor–activo–fecha–conducta ni una intervención diferenciada.",
+      "summary_en":"The located signed acts document recurrent classification and accumulation: DI 113 and DI 22 treated modules concerning control, works, ownership representations and later material as judicialised, civil/insolvency-related, insufficiently concrete or not materially different; later referrals were joined to the already archived file. While the adverse prosecution classification frame remained operative, the practical effect was asymmetrically protective in the limited sense that no actor–asset–date–conduct matrix or differentiated intervention is exposed.",
+      "limit_es":"Que el registro no exponga esa matriz no significa que no existiera revisión interna. Este patrón sostiene investigar autoneutralización institucional y efecto práctico; no prueba favoritismo, captura, acuerdo o coordinación, supresión consciente o intención, prevaricación ni criminalidad.",
+      "limit_en":"That the record does not expose that matrix does not mean no internal review existed. This pattern supports investigating institutional self-neutralisation and practical effect; it does not prove favouritism, capture, agreement or coordination, knowing suppression or intent, prevarication or criminality."
     }
   ],
   "edges": [
-    {"from":"prehistory-2011-2012","to":"di-273-2013","type":"factual_prehistory","status":"CORROBORATED"},
+    {"from":"prehistory-2011-2012","to":"arrival-2011-2012","type":"temporal_transition","status":"CORROBORATED"},
+    {"from":"arrival-2011-2012","to":"di-273-2013","type":"factual_source_frame","status":"DOCUMENTED"},
     {"from":"di-273-2013","to":"dp-332-2014","type":"procedural_continuity","status":"DOCUMENTED"},
     {"from":"dp-332-2014","to":"di-248-2018","type":"role_reversal_overlap","status":"ANALYTICAL_QUESTION","public_label_es":"Solapamiento temporal y cambio de roles; no identidad de hechos","public_label_en":"Temporal overlap and role reversal; not identity of facts"},
     {"from":"dp-1132-2018","to":"di-248-2018","type":"contemporaneous_evidence_context","status":"DOCUMENTED"},
+    {"from":"di-248-2018","to":"calificacion-2019-2023","type":"parallel_provincial_record","status":"DOCUMENTED","public_label_es":"Actos provinciales paralelos; no identidad de objeto ni inferencia causal","public_label_en":"Parallel provincial acts; no identity of subject or causal inference"},
+    {"from":"di-113-2022","to":"di-22-2026","type":"classification_continuity","status":"ANALYTICAL_QUESTION","public_label_es":"Continuidad de clasificación a comprobar expediente por expediente","public_label_en":"Classification continuity to be tested file by file"},
     {"from":"di-22-2026","to":"dip-2-2026","type":"institutional_routing","status":"DOCUMENTED"},
     {"from":"gub-86-2026","to":"fiscalia-arrecife","type":"territorial_referral","status":"DOCUMENTED"}
   ],
   "open_questions": [
-    {"id":"q1","es":"¿Cuál fue el razonamiento exacto del auto primario de 29 marzo 2021 en DP 332/2014?","en":"What was the exact reasoning of the primary 29 March 2021 order in DP 332/2014?"},
-    {"id":"q2","es":"¿Qué fiscal firmó y qué razonamiento contiene el informe del Ministerio Fiscal solicitado en DP 1901/2026?","en":"Which prosecutor signed, and what reasoning is contained in, the prosecution report requested in DP 1901/2026?"},
+    {"id":"q1","es":"¿Qué resolución primaria produjo el archivo reportado en 2021 en DP 332/2014, con qué fecha, fundamento, notificación y firmeza?","en":"What primary order produced the reported 2021 archive in DP 332/2014, on what date, grounds, notice and finality?"},
+    {"id":"q2","es":"¿Qué fiscal firmó el informe de 29 julio 2026 en DP 1901/2026, qué corpus recibió y qué razonamiento sustentó la petición de archivo?","en":"Which prosecutor signed the 29 July 2026 report in DP 1901/2026, what source corpus was received, and what reasoning supported the dismissal request?"},
     {"id":"q3","es":"¿Qué número y resultado territorial recibió GUB 86/2026 tras su remisión a Arrecife?","en":"What territorial reference and outcome followed GUB 86/2026 after referral to Arrecife?"},
     {"id":"q4","es":"¿Qué decisiones posteriores demuestran, en su caso, reconsideración independiente de hechos y pruebas materialmente nuevos?","en":"Which later decisions, if any, demonstrate independent reconsideration of materially new facts and evidence?"},
     {"id":"q5","es":"¿Qué diligencias concretas solicitadas en DI 248/2018 fueron efectivamente practicadas antes del archivo?","en":"Which specific investigative steps requested in DI 248/2018 were actually carried out before archive?"},
     {"id":"q6","es":"¿Qué establece exactamente la pericial de renta de Fiscalía de 25 abril 2019 respecto de las premisas económicas del expediente anterior?","en":"What exactly does the 25 April 2019 prosecution rent expert report establish regarding the economic premises of the earlier file?"},
-    {"id":"q7","es":"¿Qué perímetro finca-por-finca pasó realmente de LPB a CAM y posteriormente a HNT, y qué activos de Matkator o terceros quedaron fuera?","en":"What finca-by-finca perimeter actually passed from LPB to CAM and then HNT, and which Matkator or third-party assets remained outside?"}
+    {"id":"q7","es":"¿Qué perímetro finca-por-finca pasó realmente de LPB a CAM y posteriormente a HNT, y qué activos de Matkator o terceros quedaron fuera?","en":"What finca-by-finca perimeter actually passed from LPB to CAM and then HNT, and which Matkator or third-party assets remained outside?"},
+    {"id":"q8","es":"¿Cuál es el índice y expediente completo de DI 113/2022, incluida la cadena primaria de DP 668/2021 y la matriz actor–activo–fecha–conducta de lo realmente examinado?","en":"What is the complete index and file for DI 113/2022, including the primary DP 668/2021 chain and the actor–asset–date–conduct matrix of what was actually examined?"},
+    {"id":"q9","es":"¿Qué escrito, remisión y módulo fáctico recibió tratamiento individual en DI 22/2026, y quién firmó los actos de oficina de junio/julio?","en":"Which submission, referral and factual module received individual treatment in DI 22/2026, and who signed the June/July office acts?"},
+    {"id":"q10","es":"¿Qué certificación oficial identifica al fiscal presente en la vista de calificación de 25 julio 2023, separada de la identificación presencial directa de Gil?","en":"What official certification identifies the prosecutor present at the 25 July 2023 classification hearing, separately from Gil's direct eyewitness identification?"}
   ]
 }

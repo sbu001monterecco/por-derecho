@@ -1,0 +1,173 @@
+{
+  "schema": "por-derecho.transparency-phase1.v1",
+  "release_id": "PD-TR-20260825-01",
+  "control_date": "2026-08-25",
+  "publication_state": "LIVE_VERIFIED",
+  "authorisation": "Authorise Phase 1 using only the reviewed P0–P3 names and the approved disclosure wording.",
+  "authoring_base_sha": "a968c51548db1de57b077f5327fe0d279eaf00bd",
+  "release": {
+    "pull_request": 1007,
+    "merge_sha": "572d17fa74b0653fce25a6300be15a5ad03fe1e7",
+    "source_tree_sha": "10975cbdb6e55a206080cfd05753405077da6017",
+    "pages_run_id": 32890471372,
+    "pages_state": "SUCCESS",
+    "pages_completed_at": "2026-08-25T19:37:12Z"
+  },
+  "live_verification": {
+    "state": "LIVE_VERIFIED",
+    "verified_at": "2026-08-25T19:44:42.798818Z",
+    "workflow_run_id": 32891250275,
+    "workflow_head_sha": "8badcdc4fe92628b6ab38f53d457c670dc8effa1",
+    "artifact_id": 9579521244,
+    "artifact_digest": "sha256:6ae5abb1020a7472ab25cad1b0780bda9491bbf1ac0a6df91b17968ede63c99c",
+    "result": "PASS",
+    "resources": {
+      "en": {
+        "url": "https://sbu001monterecco.github.io/por-derecho/en/por-derecho/transparency/",
+        "bytes": 19450,
+        "sha256": "f3aa48e947afcaae6cff3c1186718feb5d7e17b5e084d3f050e834475e02adb2",
+        "markers_checked": 9
+      },
+      "es": {
+        "url": "https://sbu001monterecco.github.io/por-derecho/es/por-derecho/transparencia/",
+        "bytes": 20484,
+        "sha256": "81c318bd0dbbc7707367f337d84d53a0d9e508747ebf0023372de2a167026a81",
+        "markers_checked": 9
+      },
+      "shared_script": {
+        "url": "https://sbu001monterecco.github.io/por-derecho/assets/por-derecho/por-derecho.js",
+        "bytes": 24575,
+        "sha256": "9cb9ebaf014ece7766339dc48df818bdd0ab220515ef7799ce8067f63c118bd9",
+        "markers_checked": 7
+      },
+      "foundation_sitemap": {
+        "url": "https://sbu001monterecco.github.io/por-derecho/sitemap-por-derecho-foundation.xml",
+        "bytes": 9998,
+        "sha256": "2be65af22533f8c3846f3bee81764fd2f96074c9b2d548171fe5ce05c1dd5aab",
+        "markers_checked": 2
+      }
+    },
+    "control_runs": {
+      "dedicated_phase1_validation": 32890472629,
+      "publication_integrity": 32890472646,
+      "audience_experience": 32890472637,
+      "private_source_osint_governance": 32890472867
+    },
+    "verifier_correction": {
+      "initial_run_id": 32891077787,
+      "public_routes_passed_in_initial_run": true,
+      "reason_for_initial_failure": "The verifier required literal absolute route strings in a shared script that correctly constructs those routes from a language-specific base path.",
+      "public_content_changed_to_fix_verifier": false,
+      "corrective_commit": "8badcdc4fe92628b6ab38f53d457c670dc8effa1"
+    }
+  },
+  "routes": {
+    "en": "/en/por-derecho/transparency/",
+    "es": "/es/por-derecho/transparencia/"
+  },
+  "organisational_status": {
+    "status": "INITIATIVE_IN_FORMATION",
+    "registered_foundation_claimed": false,
+    "constituted_independent_governing_body_claimed": false,
+    "institutional_adoption_or_endorsement_claimed": false,
+    "current_public_voice": {
+      "identity_id": "PD-SP-P-0001",
+      "name": "Gil Marer",
+      "role": "FOUNDER_AND_CURRENT_PUBLIC_VOICE"
+    },
+    "additional_current_roles": "UNDER_FACTUAL_RECONCILIATION"
+  },
+  "related_matter_disclosure": {
+    "founder_direct_interest_disclosed": true,
+    "matter": "Sun Park / MYND Yaiza and related proceedings and recovery work",
+    "method_not_validated_by_founder_position": true,
+    "independent_validation_claimed": false
+  },
+  "historical_names_policy": {
+    "identity_authority": "PD-SP-IDENTITY-REGISTRY-001",
+    "public_tiers_permitted": ["P0", "P1", "P2", "P3"],
+    "new_public_actor_profiles_created_by_phase1": 0,
+    "unreviewed_names_permitted": false,
+    "private_source_identity_publication_permitted": false,
+    "completeness_claimed": false,
+    "public_register_en": "/en/matter-identity-registry/",
+    "public_register_es": "/es/registro-identidad-materia/",
+    "inclusion_rule": "A documented historical role or source context does not imply wrongdoing, transferred knowledge, coordination, liability or continuing involvement."
+  },
+  "funding_disclosure": {
+    "consolidated_present_tense_statement": "UNDER_VERIFICATION",
+    "external_donation_claimed": false,
+    "external_grant_claimed": false,
+    "external_sponsorship_claimed": false,
+    "institutional_funding_claimed": false,
+    "financial_independence_claimed": false,
+    "interpretation_rule": "No inference should be drawn from the absence of a completed statement."
+  },
+  "evidence_method": {
+    "required_statuses": [
+      "DOCUMENTED_FACT",
+      "PUBLIC_RECORD_FACT",
+      "OFFICIAL_FINDING",
+      "ATTRIBUTED_STATEMENT",
+      "EVIDENCE_BASED_ANALYSIS",
+      "DISPUTED",
+      "CORRECTED",
+      "NOT_LOCATED",
+      "PRIVATE_SOURCE_PUBLIC_SUMMARY",
+      "NOT_FOR_PUBLICATION"
+    ],
+    "not_located_rule": "NOT_LOCATED_DOES_NOT_MEAN_NONEXISTENT",
+    "retrievability_rule": "RETRIEVABILITY_DOES_NOT_IMPLY_PUBLISHABILITY",
+    "human_publication_decision_required": true
+  },
+  "technology_status": {
+    "implemented": [
+      "IMMUTABLE_IDENTITY_AND_NON_EQUIVALENCE_CONTROLS",
+      "SOURCE_AND_MATTER_BOUNDARY_RULES",
+      "PRIVATE_PUBLIC_EVIDENCE_SEPARATION_MODEL",
+      "BOUNDED_RPL2523_RETRIEVAL_PILOT",
+      "KNOWN_ANSWER_EVALUATIONS",
+      "HUMAN_REVIEWED_PUBLICATION_AND_CORRECTION_CONTROLS",
+      "REPOSITORY_AND_DEPLOYMENT_MONITORING"
+    ],
+    "not_claimed_as_implemented": [
+      "COMPLETE_PRIVATE_EVIDENCE_VAULT_FOR_WHOLE_CORPUS",
+      "GENERAL_PRIVATE_CORPUS_AI_ASSISTANT",
+      "AUTOMATED_LEGAL_DECISION_MAKING",
+      "GUILT_OR_CREDIBILITY_SCORING",
+      "AUTOMATIC_LLM_TO_WEBSITE_PUBLICATION",
+      "REPOSITORY_WIDE_SEMANTIC_RAG",
+      "INSTITUTIONAL_DEPLOYMENT_OR_ADOPTION"
+    ]
+  },
+  "correction_and_reply": {
+    "material_corrections_update_same_record": true,
+    "silence_is_admission": false,
+    "general_case_intake": false,
+    "protected_reporting_channel": false,
+    "en_route": "/en/collaborate/",
+    "es_route": "/es/colaborar/",
+    "es_compatibility_alias": "/es/colabora/"
+  },
+  "protected_categories": [
+    "PRIVATE_EMAILS_AND_FULL_HEADERS",
+    "PRIVILEGED_LEGAL_ADVICE",
+    "ACTIVE_LITIGATION_STRATEGY",
+    "PROTECTED_SOURCE_IDENTITIES",
+    "PRIVATE_VAULT_OR_PROVIDER_LOCATORS",
+    "UNNECESSARY_PERSONAL_DATA",
+    "SECURITY_SENSITIVE_INFORMATION",
+    "UNVERIFIED_ALLEGATIONS"
+  ],
+  "phase1_not_authorised": [
+    "NEW_UNREVIEWED_PUBLIC_NAMES",
+    "NEW_PUBLIC_ACTOR_PROFILES",
+    "PRIVATE_SOURCE_IDENTITIES_OR_LOCATORS",
+    "UNVERIFIED_FUNDING_FIGURES",
+    "UNVERIFIED_CURRENT_ROLES",
+    "COMPLETE_HISTORICAL_CENSUS_CLAIM",
+    "AUTOMATIC_PUBLICATION",
+    "COMPLAINTS_INTAKE",
+    "INSTITUTIONAL_ADOPTION_CLAIM"
+  ]
+}

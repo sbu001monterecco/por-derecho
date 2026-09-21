@@ -66,7 +66,7 @@
       <article class="cal-pro-card q"><h3>5 finite questions</h3><ol>
         <li>What contrary material was actually before the AC when each allegation was made?</li>
         <li>What contrary material was before Fiscal Ricardo de Mosteyrín when he signed his opinion?</li>
-        <li>What contrary material was before Judge Alberto López Villarrubia when Judgment 163/2023 was signed?</li>
+        <li>What contrary material was before Magistrate-Judge Alberto López Villarrubia when Judgment 163/2023 was signed?</li>
         <li>Why were some allegations rejected or narrowed while other adverse findings survived?</li>
         <li>What terminating decision exists, if any, in RPL 2523/2025 and what is its exact legal effect?</li>
       </ol></article>

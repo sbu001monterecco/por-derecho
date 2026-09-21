@@ -1,0 +1,55 @@
+name: Verify historic proceedings search 20260902
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '22'
+
+      - name: Verify canonical authority search and dedicated proceeding pages
+        run: |
+          python3 scripts/validate_canonical_home_search.py
+          python3 scripts/validate_proceeding_pages_interlinks_20260902.py
+          python3 scripts/validate_proceeding_contextual_links_20260902.py
+          node --check assets/canonical-home-search-20260902.js
+          node --check assets/justice-professionals-current-overlay-20260902.js
+          node --check assets/site.js
+
+      - name: Verify Master Proceedings and interconnectivity controls
+        run: |
+          python3 scripts/build_public_proceedings_projection.py --check
+          python3 scripts/audit_master_proceedings_publication.py
+          python3 scripts/build_proceedings_case_prism_v2.py --check
+          python3 scripts/build_proceedings_interlinkability_v1.py --check
+          python3 scripts/audit_proceedings_interconnectivity_map.py
+          python3 scripts/audit_counsel_procurador_governance.py
+          python3 scripts/validate_treasury_transparency_7_2026.py
+
+      - name: Verify duplicate proceeding removal and publication state
+        run: |
+          test ! -d en/proceedings/lz-civ-050
+          test ! -d es/procedimientos/lz-civ-050
+          ! grep -q 'LZ-CIV-050' sitemap.xml
+          python3 scripts/validate_private_source_statement_osint_governance.py --base "$(git merge-base origin/main HEAD)"
+          python3 scripts/validate_operational_truth.py
+          python3 scripts/validate_current_reverse_engineered_digest.py
+          python3 scripts/validate_dp3205_2014_publication.py
+
+      - name: Verify workspace persistence controls
+        run: |
+          python3 -m py_compile scripts/workspace_persistence.py
+          python3 -m unittest discover -s tests -p 'test_workspace_persistence.py' -v
+          mkdir -p artifacts/workspace-persistence-audit
+          python3 scripts/workspace_persistence.py validate-repository --output artifacts/workspace-persistence-audit/result.json

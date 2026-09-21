@@ -1,0 +1,35 @@
+name: Validate authority Red SARA deletion-safety caret closeout
+
+on:
+  pull_request:
+    paths:
+      - "assets/data/authority-redsara-deletion-safety-caret-audit-v1.json"
+      - "assets/data/matter-identity-registry-v1.institutions.json"
+      - "assets/data/matter-identity-registry-v1.json"
+      - "assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json"
+      - "en/authority-redsara-deletion-safety-closeout/**"
+      - "es/cierre-seguridad-borrado-autoridades-redsara/**"
+      - "scripts/validate_authority_redsara_deletion_safety_caret.py"
+      - ".github/workflows/validate-authority-redsara-deletion-safety-caret.yml"
+  push:
+    branches: [main]
+    paths:
+      - "assets/data/authority-redsara-deletion-safety-caret-audit-v1.json"
+      - "assets/data/matter-identity-registry-v1.institutions.json"
+      - "assets/data/matter-identity-registry-v1.json"
+      - "assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json"
+      - "en/authority-redsara-deletion-safety-closeout/**"
+      - "es/cierre-seguridad-borrado-autoridades-redsara/**"
+      - "scripts/validate_authority_redsara_deletion_safety_caret.py"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Validate finite preservation and caret control
+        run: python3 scripts/validate_authority_redsara_deletion_safety_caret.py

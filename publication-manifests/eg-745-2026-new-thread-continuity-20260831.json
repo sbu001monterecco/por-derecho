@@ -1,0 +1,26 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "eg-745-2026-new-thread-continuity-20260831",
+  "title": "E.G. 745/2026 new-thread continuity and error register",
+  "current_state": "PR_OPEN",
+  "owner": "Por Derecho / Project Sun Rock",
+  "expected_routes": {
+    "es": ["es/fiscalia-inspeccion-exp-gub-745-2026/continuidad-errores-omisiones-31-agosto-2026.html"],
+    "en": ["en/public-prosecution-inspection-exp-gub-745-2026/continuity-errors-omissions-31-august-2026.html"]
+  },
+  "expected_source_files": [
+    "archive/EG_745_2026_NEW_THREAD_CONTINUITY_AUDIT_31AUG2026.md",
+    "evidence/fiscalia/2026/EG_745_2026_ERROR_OMISSION_MISCLASSIFICATION_REGISTER_31AUG2026.md",
+    "prompts/MINISTERIO_FISCAL_WIDER_MATTER_EG745_CONTINUATION_PROMPT_31AUG2026.md"
+  ],
+  "release": {
+    "branch": "eg745-new-thread-continuity-20260831",
+    "base_main_sha": "4938164da577b27ad63bb731d74013ee90979727",
+    "pull_request": null,
+    "merge_sha": null,
+    "pages_run": null
+  },
+  "purpose": "Create deletion-safe continuity for a new thread on the wider Ministerio Fiscal matter, with E.G. 745/2026 as the focused control case, and publish a controlled discrepancy/omission/misclassification register.",
+  "filing_status_lock": "RECURSO POTESTATIVO DE REPOSICIÓN — PREPARED / OUTSTANDING — NOT YET VERIFIED AS FILED",
+  "evidential_boundary": "The register does not treat an adverse archive decision, silence, routing gap, source discrepancy or non-production as proof of bad faith, obstruction, coordination, prevarication, criminality or personal liability."
+}

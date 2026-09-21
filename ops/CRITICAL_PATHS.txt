@@ -1,12 +1,19 @@
 # Mission-critical paths
+AGENTS.md
+CHATGPT_START_HERE.md
+CURRENT_HANDOVER.md
 .github/workflows/
 .github/dependabot.yml
 .github/CODEOWNERS
 scripts/validate_publication_integrity.py
+scripts/validate_repository_preservation.py
 scripts/validate_mission_critical_repo.py
 scripts/production_smoke_check.py
 assets/site.js
 assets/styles.css
+assets/audience-experience-order-20260823.js
+assets/homepage-actor-family-pwc-note-20260819.js
+assets/five-actor-accountability-20260824.css
 assets/ricpe-filed-status-20260817.js
 assets/optimum-reader-journey-20260818.js
 assets/optimum-reader-journey-finish-20260818.js
@@ -15,5 +22,9 @@ en/index.html
 robots.txt
 sitemap.xml
 publication-manifests/
+docs/deletion-audits/
 deployment-probes/
 ops/
+operations/preservation-authorizations/
+archive/FIVE_ACTOR_FRONT_PAGE_AND_DIRECT_ROUTE_PRESERVATION_LOCK_24AUG2026.md
+ops/FIVE_ACTOR_PRESERVATION_AND_READER_JOURNEY_BACKLOG.md

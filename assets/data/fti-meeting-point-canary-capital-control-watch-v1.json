@@ -1,0 +1,319 @@
+{
+  "schema": "por-derecho.fti-meeting-point-canary-capital-control-watch-derived-public-view.v1",
+  "control_id": "PD-FTI-MP-CANARY-WATCH-20260827-01",
+  "snapshot_date": "2026-08-27",
+  "snapshot_timezone": "Atlantic/Canary",
+  "view_role": "LOCALISED_DERIVED_PRESENTATION_NOT_AN_EVENT_OR_SOURCE_REGISTER",
+  "canonical_register": {
+    "control_id": "PD-FTI-MP-ASSET-TX-REGISTER-20260827-01",
+    "schema": "por-derecho.fti-meeting-point-canary-spain-asset-transaction-register.v1",
+    "path_relative_to_this_view": "fti-meeting-point-canary-spain-asset-transaction-register-v1.json",
+    "authority_rule": "Canonical events, entities, sources, transaction states and open gaps come only from this register. This file supplies localisation and a six-lane reader projection; it must not promote or create an event."
+  },
+  "public_state": "DATED_SNAPSHOT_NOT_REAL_TIME_SURVEILLANCE",
+  "automation_state": "PUBLIC_DATA_CONTRACT_READY_EXECUTION_AND_CADENCE_NOT_PROVED",
+  "scope_boundary": {
+    "es": "El registro sigue cambios de propiedad o control, gestión, franquicia, arrendamiento, financiación, garantías, capital, reestructuración y custodia documental relacionados con el perímetro español/canario de FTI/Meeting Point. «Antiguos activos» no significa que Meeting Point fuera titular de cada hotel: la CNMC describe a MPS como gestora de 15 establecimientos, y el vínculo contractual exacto de Club Sei/Sun Park sigue abierto.",
+    "en": "The register follows ownership or control changes, management, franchise, lease, financing, security, capital, restructuring and record-custody events linked to the Spanish/Canary FTI/Meeting Point perimeter. “Former assets” does not mean that Meeting Point owned every hotel: the CNMC describes MPS as manager of 15 establishments, and the exact Club Sei/Sun Park contracting link remains open.",
+    "de": "Das Register verfolgt Eigentums- oder Kontrollwechsel, Management, Franchise, Pacht, Finanzierung, Sicherheiten, Kapital, Restrukturierung und Aktenverwahrung im spanischen/kanarischen FTI/Meeting-Point-Umfeld. „Ehemalige Vermögenswerte“ bedeutet nicht, dass Meeting Point Eigentümer jedes Hotels war: Die CNMC beschreibt MPS als Betreiberin von 15 Betrieben; die genaue Vertragsbeziehung Club Sei/Sun Park bleibt offen."
+  },
+  "monitoring_rule": {
+    "es": "Cada revisión debe fechar la consulta, identificar la persona jurídica y su capacidad, enlazar la fuente y conservar también el resultado negativo de una búsqueda finita. Un intervalo sin novedad no prueba ausencia de operación. Ninguna alerta automática convierte una coincidencia de nombre en identidad, relación, conocimiento o responsabilidad.",
+    "en": "Each review must date the query, identify the legal person and capacity, link the source and preserve the negative result of a finite search. An interval without a new signal does not prove that no transaction occurred. No automated alert turns a name match into identity, relationship, knowledge or responsibility.",
+    "de": "Jede Prüfung muss Abfragedatum, Rechtsträger und Funktion festhalten, die Quelle verlinken und auch das negative Ergebnis einer endlichen Suche dokumentieren. Ein Zeitraum ohne neues Signal beweist nicht, dass keine Transaktion stattfand. Ein automatischer Treffer beweist weder Identität noch Beziehung, Kenntnis oder Verantwortung."
+  },
+  "evidence_states": {
+    "VERIFIED_EVENT": {
+      "es": "Hecho documentado",
+      "en": "Documented event",
+      "de": "Dokumentiertes Ereignis"
+    },
+    "VERIFIED_SCOPE_OPEN_INSTRUMENT": {
+      "es": "Perímetro documentado; instrumento abierto",
+      "en": "Documented perimeter; instrument open",
+      "de": "Umfang dokumentiert; Instrument offen"
+    },
+    "OPEN_CAUSAL_BRIDGE": {
+      "es": "Puente causal abierto",
+      "en": "Causal bridge open",
+      "de": "Kausalbrücke offen"
+    },
+    "OPEN_CURRENT_STATE": {
+      "es": "Estado actual por producir",
+      "en": "Current state to be produced",
+      "de": "Aktueller Stand noch vorzulegen"
+    }
+  },
+  "event_classes": [
+    "ACQUISITION_OR_DISPOSAL",
+    "EXCLUSIVE_OR_JOINT_CONTROL",
+    "HOTEL_MANAGEMENT_FRANCHISE_OR_LEASE",
+    "ASSET_OR_BUSINESS_UNIT_TRANSFER",
+    "CAPITAL_INCREASE_REDUCTION_OR_SHARE_TRANSFER",
+    "LOAN_REFINANCING_SECURITY_OR_PUBLIC_SUPPORT",
+    "INSOLVENCY_RESTRUCTURING_OR_PLAN",
+    "BRAND_DATA_CONTRACT_OR_RECORD_HANDOFF",
+    "LICENCE_CONCESSION_AID_OR_RECOVERY"
+  ],
+  "presentation_lanes": [
+    {
+      "id": "FMR-W01",
+      "canonical_refs": ["FTI-TX-EVT-0001", "FTI-TX-EVT-0002", "FTI-TX-GAP-003"],
+      "state": "VERIFIED_EVENT",
+      "event_classes": [
+        "ACQUISITION_OR_DISPOSAL",
+        "EXCLUSIVE_OR_JOINT_CONTROL"
+      ],
+      "scope": {
+        "es": "Control societario de Meeting Point Spain y sus filiales",
+        "en": "Corporate control of Meeting Point Spain and its subsidiaries",
+        "de": "Gesellschaftskontrolle über Meeting Point Spain und Tochtergesellschaften"
+      },
+      "latest_state": {
+        "es": "La CNMC registró el 4-04-2025 y autorizó el 23-04-2025 la adquisición, por el perímetro Portobello mediante Gestora Blue Sea Partner, del control exclusivo de Meeting Point Spain, S.L.U. y sus filiales. El comprador reconoció después el cierre; no se publica el 9-03-2025 como fecha verificada.",
+        "en": "The CNMC recorded on 4 April 2025 and cleared on 23 April 2025 the acquisition, by the Portobello perimeter through Gestora Blue Sea Partner, of exclusive control of Meeting Point Spain, S.L.U. and its subsidiaries. The buyer later acknowledged closing; 9 March 2025 is not published as a verified closing date.",
+        "de": "Die CNMC registrierte am 4. April 2025 und genehmigte am 23. April 2025 den Erwerb der alleinigen Kontrolle über Meeting Point Spain, S.L.U. und deren Tochtergesellschaften durch das Portobello-Umfeld über Gestora Blue Sea Partner. Der Käufer bestätigte später den Vollzug; der 9. März 2025 wird nicht als bestätigtes Vollzugsdatum veröffentlicht."
+      },
+      "inference_boundary": {
+        "es": "El cambio de control puede implicar relevo de gobierno y custodia, pero no prueba por sí solo transmisión de cada finca, contrato, pasivo o conocimiento histórico.",
+        "en": "The control change may entail a governance and custody handoff, but does not itself prove transfer of every property, contract, liability or item of historic knowledge.",
+        "de": "Der Kontrollwechsel kann einen Wechsel von Leitung und Aktenverwahrung bewirken, beweist aber nicht die Übertragung jedes Grundstücks, Vertrags, jeder Verbindlichkeit oder historischen Kenntnis."
+      },
+      "next_production": {
+        "es": "Contrato de compraventa, perímetro exacto, contraprestación y financiación, fecha efectiva, anexos de filiales/activos, data room, disclosures, retenciones y relevo de archivos.",
+        "en": "Sale agreement, exact perimeter, consideration and financing, effective date, subsidiary/asset schedules, data room, disclosures, retentions and records handoff.",
+        "de": "Kaufvertrag, genauer Umfang, Gegenleistung und Finanzierung, Wirksamkeitsdatum, Tochter-/Vermögenslisten, Datenraum, Offenlegungen, Einbehalte und Aktenübergabe."
+      },
+      "identity_state": {
+        "es": "Meeting Point Spain^; Portobello/Gestora/BLUESEA pendientes de ^ exacto",
+        "en": "Meeting Point Spain^; exact Portobello/Gestora/BLUESEA ^ pending",
+        "de": "Meeting Point Spain^; exakte ^-Zuordnung Portobello/Gestora/BLUESEA offen"
+      },
+      "canonical_source_refs": ["FTI-TX-SRC-001", "FTI-TX-SRC-002", "FTI-TX-SRC-003"],
+      "dossier_paths": {
+        "es": "/por-derecho/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/#bluesea",
+        "en": "/por-derecho/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/#bluesea",
+        "de": "/por-derecho/de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/#monitor"
+      }
+    },
+    {
+      "id": "FMR-W02",
+      "canonical_refs": ["FTI-TX-EVT-0001", "FTI-TX-EVT-0002", "FTI-TX-GAP-001", "FTI-TX-GAP-002"],
+      "state": "VERIFIED_SCOPE_OPEN_INSTRUMENT",
+      "event_classes": [
+        "HOTEL_MANAGEMENT_FRANCHISE_OR_LEASE",
+        "BRAND_DATA_CONTRACT_OR_RECORD_HANDOFF"
+      ],
+      "scope": {
+        "es": "Cartera de 15 establecimientos hoteleros en Canarias",
+        "en": "Portfolio of 15 Canary hotel establishments",
+        "de": "Portfolio von 15 kanarischen Hotelbetrieben"
+      },
+      "latest_state": {
+        "es": "El informe CNMC identifica a MPS como gestora de 15 establecimientos hoteleros en Canarias. El anuncio del comprador habla de la incorporación de 15 establecimientos. Esto documenta escala y continuidad comercial, no la propiedad inmobiliaria ni el título operativo de cada hotel.",
+        "en": "The CNMC report identifies MPS as manager of 15 hotel establishments in the Canary Islands. The buyer statement refers to the addition of 15 establishments. This documents scale and commercial continuity, not property ownership or the operating title for each hotel.",
+        "de": "Der CNMC-Bericht bezeichnet MPS als Betreiberin von 15 Hotelbetrieben auf den Kanaren. Die Käufermitteilung spricht von der Eingliederung von 15 Betrieben. Damit sind Umfang und geschäftliche Kontinuität dokumentiert, nicht Grundeigentum oder der Betriebsrechtstitel jedes Hotels."
+      },
+      "inference_boundary": {
+        "es": "La continuidad de una cartera gestionada puede trasladar contratos, sistemas, datos y personal; no acredita que los 15 inmuebles fueran activos de Meeting Point ni que todos pasaran bajo el mismo instrumento.",
+        "en": "Continuity of a managed portfolio may carry contracts, systems, data and personnel; it does not establish that the 15 properties were Meeting Point assets or moved under one instrument.",
+        "de": "Die Kontinuität eines verwalteten Portfolios kann Verträge, Systeme, Daten und Personal erfassen; sie beweist weder Eigentum von Meeting Point an den 15 Immobilien noch eine einheitliche Übertragung."
+      },
+      "next_production": {
+        "es": "Lista hotel por hotel: propietario, arrendatario, gestor, franquicia/marca, sociedad contratante, vigencia, contraparte, cambio de control, consentimiento, precio/comisión y custodio de PMS/CRS.",
+        "en": "Hotel-by-hotel schedule: owner, lessee, manager, franchise/brand, contracting entity, term, counterparty, change-of-control consent, price/fee and PMS/CRS custodian.",
+        "de": "Hotelweise Liste: Eigentümer, Pächter, Betreiber, Franchise/Marke, Vertragsträger, Laufzeit, Gegenpartei, Zustimmung zum Kontrollwechsel, Preis/Vergütung und PMS/CRS-Verwahrer."
+      },
+      "identity_state": {
+        "es": "MPS/Meeting Point comercial^; cada hotel y contraparte permanecen sin censo finito",
+        "en": "MPS/Meeting Point commercial perimeter^; each hotel and counterparty remain outside a finite census",
+        "de": "MPS/Meeting-Point-Geschäftsumfeld^; einzelne Hotels und Gegenparteien noch ohne endlichen Zensus"
+      },
+      "canonical_source_refs": ["FTI-TX-SRC-002", "FTI-TX-SRC-003"],
+      "dossier_paths": {
+        "es": "/por-derecho/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/#bluesea",
+        "en": "/por-derecho/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/#bluesea",
+        "de": "/por-derecho/de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/#monitor"
+      }
+    },
+    {
+      "id": "FMR-W03",
+      "canonical_refs": ["FTI-TX-SCOPE-003", "FTI-TX-GAP-004"],
+      "state": "OPEN_CAUSAL_BRIDGE",
+      "event_classes": [
+        "ASSET_OR_BUSINESS_UNIT_TRANSFER",
+        "HOTEL_MANAGEMENT_FRANCHISE_OR_LEASE",
+        "CAPITAL_INCREASE_REDUCTION_OR_SHARE_TRANSFER"
+      ],
+      "scope": {
+        "es": "Sun Park → Hotel New Trend → MYND Yaiza",
+        "en": "Sun Park → Hotel New Trend → MYND Yaiza",
+        "de": "Sun Park → Hotel New Trend → MYND Yaiza"
+      },
+      "latest_state": {
+        "es": "En la cadena adyacente Sun Park, el anuncio BORME de 16-11-2022 documenta la segregación aprobada por CAM de la unidad económica a Hotel New Trend para su transformación y explotación posterior como MYND Yaiza. No es un evento FTI/Meeting Point admitido por el registro canónico: la relación depende del puente contractual Club Sei aún abierto.",
+        "en": "In the adjacent Sun Park chain, the 16 November 2022 BORME notice documents CAM's approved segregation of the economic unit to Hotel New Trend for transformation and later operation as MYND Yaiza. It is not an FTI/Meeting Point event admitted by the canonical register: the connection depends on the still-open Club Sei contractual bridge.",
+        "de": "In der angrenzenden Sun-Park-Kette dokumentiert die BORME-Bekanntmachung vom 16. November 2022 die genehmigte Abspaltung der wirtschaftlichen Einheit von CAM auf Hotel New Trend zur Umgestaltung und späteren Nutzung als MYND Yaiza. Dies ist kein im kanonischen Register aufgenommenes FTI-/Meeting-Point-Ereignis; die Verbindung hängt von der noch offenen Club-Sei-Vertragsbrücke ab."
+      },
+      "inference_boundary": {
+        "es": "La sucesión de una unidad económica hace material la continuidad de activos, contratos, financiación y contingencias; no prueba que CAM tuviera título sobre derechos de terceros ni resuelve el vínculo contractual Meeting Point/Club Sei.",
+        "en": "Succession to an economic unit makes continuity of assets, contracts, finance and contingencies material; it does not prove CAM held title to third-party rights or resolve the Meeting Point/Club Sei contract link.",
+        "de": "Die Gesamtrechtsnachfolge einer wirtschaftlichen Einheit macht die Kontinuität von Vermögen, Verträgen, Finanzierung und Eventualverbindlichkeiten erheblich; sie beweist weder CAM-Titel an Drittrechten noch die Meeting-Point/Club-Sei-Vertragsbeziehung."
+      },
+      "next_production": {
+        "es": "Proyecto/escritura/anexos de segregación, hoja registral, fincas y contratos incluidos, pasivos/contingencias, capital y financiación, operador jurídico actual, marca/gestión y cambios posteriores.",
+        "en": "Segregation project/deed/schedules, company-register sheet, included properties and contracts, liabilities/contingencies, capital and finance, current legal operator, brand/management and later changes.",
+        "de": "Spaltungsplan/-urkunde/-anlagen, Registerblatt, erfasste Grundstücke und Verträge, Verbindlichkeiten/Eventualpositionen, Kapital und Finanzierung, aktueller Rechtsträger des Betriebs, Marke/Management und spätere Änderungen."
+      },
+      "identity_state": {
+        "es": "CAM^ · Hotel New Trend^ · MYND Yaiza^ (identidad comercial)",
+        "en": "CAM^ · Hotel New Trend^ · MYND Yaiza^ (commercial identity)",
+        "de": "CAM^ · Hotel New Trend^ · MYND Yaiza^ (Geschäftsidentität)"
+      },
+      "canonical_source_refs": [],
+      "dossier_paths": {
+        "es": "/por-derecho/es/ricpe-hnt-gc836-trazabilidad/",
+        "en": "/por-derecho/en/ricpe-hnt-gc836-traceability/",
+        "de": "/por-derecho/de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/#monitor"
+      }
+    },
+    {
+      "id": "FMR-W04",
+      "canonical_refs": ["FTI-TX-SCOPE-002", "FTI-TX-GAP-005"],
+      "state": "VERIFIED_SCOPE_OPEN_INSTRUMENT",
+      "event_classes": [
+        "LOAN_REFINANCING_SECURITY_OR_PUBLIC_SUPPORT",
+        "INSOLVENCY_RESTRUCTURING_OR_PLAN",
+        "ACQUISITION_OR_DISPOSAL"
+      ],
+      "scope": {
+        "es": "Tres deudores españoles, 357/2024 y capital público SEPI/FASEE",
+        "en": "Three Spanish debtors, 357/2024 and SEPI/FASEE public capital",
+        "de": "Drei spanische Schuldner, 357/2024 und öffentliches Kapital SEPI/FASEE"
+      },
+      "latest_state": {
+        "es": "El Auto 97/2025 identifica tres deudores conjuntos y a AUREN REESTRUCTURACIONES SLP. SEPI autorizó 31 M€ para Meeting Point: 20,7 M€ participativos y 10,3 M€ ordinarios, con reparto por entidad en las cuentas FASEE. Ello no se fusiona con los 25 M€ separados de BLUESEA.",
+        "en": "Auto 97/2025 identifies three joint debtors and AUREN REESTRUCTURACIONES SLP. SEPI authorised €31m for Meeting Point: €20.7m participating and €10.3m ordinary, with entity allocation in the FASEE accounts. This is not merged with BLUESEA's separate €25m authorisation.",
+        "de": "Der Beschluss 97/2025 nennt drei gemeinsame Schuldner und AUREN REESTRUCTURACIONES SLP. SEPI genehmigte 31 Mio. EUR für Meeting Point: 20,7 Mio. als partiarisches und 10,3 Mio. als gewöhnliches Darlehen, mit Rechtsträgerzuordnung in den FASEE-Abschlüssen. Dies ist nicht mit der gesonderten BLUESEA-Genehmigung über 25 Mio. EUR zusammenzurechnen."
+      },
+      "inference_boundary": {
+        "es": "El apoyo, la reestructuración y el cambio de control hacen material el tratamiento de derechos, contingencias y datos históricos; no prueban omisión, uso indebido de fondos, perjuicio o responsabilidad sucesoria.",
+        "en": "Support, restructuring and control change make treatment of historic rights, contingencies and data material; they do not prove omission, misuse of funds, loss or successor liability.",
+        "de": "Unterstützung, Restrukturierung und Kontrollwechsel machen die Behandlung historischer Rechte, Eventualpositionen und Daten erheblich; sie beweisen weder Auslassung, Mittelmissbrauch, Schaden noch Nachfolgehaftung."
+      },
+      "next_production": {
+        "es": "Plan/negociación, mandato y data room Auren, condiciones y garantías FASEE, origen/uso, reembolsos, exposición/deterioro actual, disclosure de Club Sei/Sun Park y tratamiento en la compraventa.",
+        "en": "Plan/negotiation, Auren mandate and data room, FASEE terms and security, sources/uses, repayments, current exposure/impairment, Club Sei/Sun Park disclosure and sale treatment.",
+        "de": "Plan/Verhandlung, Auren-Mandat und Datenraum, FASEE-Bedingungen und Sicherheiten, Mittelherkunft/-verwendung, Rückzahlungen, aktuelle Forderung/Wertminderung, Club-Sei/Sun-Park-Offenlegung und Kaufvertragsbehandlung."
+      },
+      "identity_state": {
+        "es": "Tres deudores^ · Auren exacto^ · SEPI^ · FASEE^",
+        "en": "Three debtors^ · exact Auren^ · SEPI^ · FASEE^",
+        "de": "Drei Schuldner^ · exakte Auren^ · SEPI^ · FASEE^"
+      },
+      "canonical_source_refs": ["FTI-TX-SRC-009", "FTI-TX-SRC-010"],
+      "dossier_paths": {
+        "es": "/por-derecho/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/#sepi",
+        "en": "/por-derecho/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/#sepi",
+        "de": "/por-derecho/de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/#monitor"
+      }
+    },
+    {
+      "id": "FMR-W05",
+      "canonical_refs": ["FTI-TX-GAP-006"],
+      "state": "OPEN_CURRENT_STATE",
+      "event_classes": [
+        "INSOLVENCY_RESTRUCTURING_OR_PLAN",
+        "ACQUISITION_OR_DISPOSAL",
+        "BRAND_DATA_CONTRACT_OR_RECORD_HANDOFF"
+      ],
+      "scope": {
+        "es": "Insolvencias alemanas y disposiciones de derechos españoles",
+        "en": "German insolvencies and dispositions of Spanish rights",
+        "de": "Deutsche Insolvenzen und Verfügungen über spanische Rechte"
+      },
+      "latest_state": {
+        "es": "Están documentados tres procedimientos separados: FTI Touristik GmbH 1500 IN 1758/24, Meeting Point International GmbH 1500 IN 10126/24 y Meeting Point Hotelmanagement Holding GmbH 1500 IN 10107/24. El registro público controlado no contiene aún un ledger completo de ventas, cesiones, novaciones o entregas documentales relativas a España/Canarias.",
+        "en": "Three separate proceedings are documented: FTI Touristik GmbH 1500 IN 1758/24, Meeting Point International GmbH 1500 IN 10126/24 and Meeting Point Hotelmanagement Holding GmbH 1500 IN 10107/24. The controlled public record does not yet contain a complete ledger of sales, assignments, novations or record handoffs concerning Spain/Canary Islands.",
+        "de": "Drei getrennte Verfahren sind dokumentiert: FTI Touristik GmbH 1500 IN 1758/24, Meeting Point International GmbH 1500 IN 10126/24 und Meeting Point Hotelmanagement Holding GmbH 1500 IN 10107/24. Der kontrollierte öffentliche Bestand enthält noch kein vollständiges Register von Verkäufen, Abtretungen, Novationen oder Aktenübergaben mit Spanien-/Kanarenbezug."
+      },
+      "inference_boundary": {
+        "es": "Una insolvencia crea una ruta de custodia y posible realización; no prueba que un deudor concreto fuera titular de cada contrato o que el administrador recibiera cada aviso o documento.",
+        "en": "An insolvency creates a custody and possible realisation route; it does not prove that a given debtor held each contract or that an administrator received every notice or document.",
+        "de": "Ein Insolvenzverfahren schafft einen Verwahrungs- und möglichen Verwertungsweg; es beweist weder, dass ein bestimmter Schuldner jeden Vertrag hielt, noch dass ein Verwalter jede Mitteilung oder Unterlage erhielt."
+      },
+      "next_production": {
+        "es": "Para cada deudor: inventario, contratos españoles, derechos de marca/gestión, ventas/cesiones, contraparte, precio, financiación, aprobación, data room, archivo 2024-94 y cadena de custodia.",
+        "en": "For each debtor: inventory, Spanish contracts, brand/management rights, sales/assignments, counterparty, price, financing, approval, data room, file 2024-94 and custody chain.",
+        "de": "Für jeden Schuldner: Inventar, spanische Verträge, Marken-/Managementrechte, Verkäufe/Abtretungen, Gegenpartei, Preis, Finanzierung, Genehmigung, Datenraum, Akte 2024-94 und Verwahrungskette."
+      },
+      "identity_state": {
+        "es": "Perímetros FTI/Meeting Point^; tres personas jurídicas y procedimientos alemanes pendientes de ^ exacto",
+        "en": "FTI/Meeting Point perimeters^; three exact German legal persons and proceedings pending ^",
+        "de": "FTI-/Meeting-Point-Umfelder^; drei genaue deutsche Rechtsträger und Verfahren noch ohne ^"
+      },
+      "canonical_source_refs": ["FTI-TX-SRC-006", "FTI-TX-SRC-007", "FTI-TX-SRC-008"],
+      "dossier_paths": {
+        "es": "/por-derecho/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/#alemania",
+        "en": "/por-derecho/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/#insolvencies",
+        "de": "/por-derecho/de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/#massnahmen"
+      }
+    },
+    {
+      "id": "FMR-W06",
+      "canonical_refs": ["FTI-TX-SCOPE-003", "FTI-TX-GAP-004"],
+      "state": "OPEN_CAUSAL_BRIDGE",
+      "event_classes": [
+        "HOTEL_MANAGEMENT_FRANCHISE_OR_LEASE",
+        "BRAND_DATA_CONTRACT_OR_RECORD_HANDOFF",
+        "ASSET_OR_BUSINESS_UNIT_TRANSFER"
+      ],
+      "scope": {
+        "es": "Club Sei Lanzarote / Sun Park: derecho u oportunidad de Meeting Point",
+        "en": "Club Sei Lanzarote / Sun Park: Meeting Point right or opportunity",
+        "de": "Club Sei Lanzarote / Sun Park: Recht oder Geschäftschance von Meeting Point"
+      },
+      "latest_state": {
+        "es": "La presentación pública/comercial de Club Sei en la dirección de Sun Park y la comercialización de la marca Meeting Point/FTI están documentadas. No está identificada la persona jurídica contratante ni probado un activo, contrato, reserva o ingreso transferido desde Meeting Point a CAM/HNT/RICPE.",
+        "en": "Public/commercial presentation of Club Sei at the Sun Park address and Meeting Point/FTI brand marketing are documented. The contracting legal person is unidentified, and no asset, contract, booking or revenue transferred from Meeting Point to CAM/HNT/RICPE is proved.",
+        "de": "Die öffentliche/geschäftliche Präsentation von Club Sei unter der Sun-Park-Adresse und die Vermarktung der Marke Meeting Point/FTI sind dokumentiert. Der vertragsschließende Rechtsträger ist nicht identifiziert; eine Übertragung von Vermögen, Vertrag, Buchung oder Erlös von Meeting Point auf CAM/HNT/RICPE ist nicht bewiesen."
+      },
+      "inference_boundary": {
+        "es": "La convergencia justifica seguir contratos, autoridad, reservas, ingresos, propiedad intelectual y tratamiento concursal; no convierte una oportunidad comercial en propiedad ni acredita apropiación o daño penal.",
+        "en": "The convergence warrants tracing contracts, authority, bookings, revenue, intellectual property and insolvency treatment; it does not turn an opportunity into ownership or establish appropriation or criminal harm.",
+        "de": "Die Konvergenz rechtfertigt die Nachverfolgung von Verträgen, Befugnis, Buchungen, Erlösen, geistigem Eigentum und Insolvenzbehandlung; sie macht aus einer Geschäftschance kein Eigentum und beweist weder Aneignung noch strafrechtlichen Schaden."
+      },
+      "next_production": {
+        "es": "Entidad contractual, contrato/term sheet/mandato, unidades disponibles, autorización, PMS/CRS, reservas/cancelaciones, ingresos, propiedad de marca/contenido y tratamiento en 357/2024, insolvencias alemanas y compraventa.",
+        "en": "Contracting entity, contract/term sheet/mandate, available units, authority, PMS/CRS, bookings/cancellations, revenue, brand/content ownership and treatment in 357/2024, German insolvencies and sale.",
+        "de": "Vertragsträger, Vertrag/Term Sheet/Mandat, verfügbare Einheiten, Befugnis, PMS/CRS, Buchungen/Stornierungen, Erlöse, Marken-/Inhaltsrechte und Behandlung in 357/2024, deutschen Insolvenzen und Verkauf."
+      },
+      "identity_state": {
+        "es": "Club Sei^ · Meeting Point comercial^ · entidad contractual exacta abierta",
+        "en": "Club Sei^ · Meeting Point commercial perimeter^ · exact contracting entity open",
+        "de": "Club Sei^ · Meeting-Point-Geschäftsumfeld^ · genauer Vertragsträger offen"
+      },
+      "canonical_source_refs": [],
+      "dossier_paths": {
+        "es": "/por-derecho/es/lava-verde-club-sei-meeting-point/",
+        "en": "/por-derecho/en/lava-verde-club-sei-meeting-point/",
+        "de": "/por-derecho/de/lava-verde-club-sei-meeting-point/"
+      }
+    }
+  ],
+  "caret_boundary": {
+    "es": "^ confirma identidad conciliada, no propiedad, capacidad fechada, control, operación, conocimiento, intención, causalidad, perjuicio ni responsabilidad. «Pendiente» significa que no se añade caret.",
+    "en": "^ confirms reconciled identity, not ownership, dated capacity, control, operation, knowledge, intention, causation, loss or liability. “Pending” means no caret is added.",
+    "de": "^ bestätigt nur die abgeglichene Identität, nicht Eigentum, zeitbezogene Funktion, Kontrolle, Vorgang, Kenntnis, Absicht, Kausalität, Schaden oder Haftung. „Offen“ bedeutet: kein Caret."
+  },
+  "update_triggers": [
+    "new CNMC concentration filing or decision",
+    "new BORME structural, capital, director or proxy notice",
+    "new insolvency sale, plan, distribution, assignment or administrator notice",
+    "new hotel operator, brand, booking-engine or management announcement",
+    "new SEPI/FASEE repayment, impairment, amendment or recovery disclosure",
+    "new regional-incentive, grant, licence, planning or public-procurement record",
+    "new verified asset, security, financing or beneficial-control record",
+    "correction or right-of-reply supported by a primary record"
+  ]
+}

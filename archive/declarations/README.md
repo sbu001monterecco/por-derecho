@@ -10,7 +10,7 @@ Este directorio conserva declaraciones fechadas de personas con conocimiento per
 
 Este repositorio GitHub es público. Por tanto, una persona privada puede estar plenamente identificada en el original nativo, firmado o presentado institucionalmente y, al mismo tiempo, aparecer en esta capa pública mediante un descriptor funcional cuando su nombre no sea necesario para comprender o verificar la proposición publicada.
 
-Para la persona del perímetro personal y empresarial de Gil Marer vinculada a las declaraciones 001–003, utilizar:
+Para la persona del perímetro personal y empresarial de Gil Marer vinculada a las declaraciones 001–005, 011 y 014, utilizar:
 
 - **Testigo del perímetro de Gil Marer — identidad reservada**; o
 - **persona del perímetro personal y empresarial de Gil Marer**.
@@ -37,6 +37,21 @@ El estado de autenticación debe describirse con exactitud:
 
 Una versión preparada por terceros a partir de audios o documentos, pero no revisada personalmente por el declarante, debe indicarlo expresamente. Puede usarse como **declaración registrada derivada de fuente**, pero no como prueba de adopción personal de cada palabra del texto.
 
+## Regla obligatoria para voz, dictado y transcripción
+
+Toda nota de voz, audio, dictado, transcripción automática o texto atribuido a una intervención oral debe aplicar el [`Protocolo unitario de declaraciones de voz a texto, hechos y veracidad`](./VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md). En particular:
+
+- conservar por separado fuente nativa, transcripción literal, versión de trabajo, versión revisada y versión firmada/presentada;
+- registrar por segmento la base de atribución del hablante y no llamar autenticación de voz a una atribución conversacional;
+- separar procedencia, atribución, fidelidad, adopción y veracidad material;
+- no fusionar las voces de Gil Marer, la declarante reservada u otra persona sin adopción individual del texto exacto;
+- mantener el intake en modo de captura, sin analizar, finalizar ni publicar, cuando la persona anuncie más audio o pida esperar; sólo un cierre expreso reanuda el trabajo;
+- no sustituir silenciosamente pausas, dudas, correcciones o versiones materiales;
+- clasificar percepción directa, recuerdo, palabras de terceros, conocimiento documental, inferencia, posición jurídica y cuestión abierta; y
+- ejecutar una revisión de contradicciones y la cola de aclaraciones antes de utilizar públicamente una proposición controvertida.
+
+La cola activa para Gil y la declarante reservada está en [`GIL_RESERVED_DECLARANT_VOICE_STATEMENT_CLARIFICATION_QUEUE_25AUG2026.md`](./GIL_RESERVED_DECLARANT_VOICE_STATEMENT_CLARIFICATION_QUEUE_25AUG2026.md).
+
 ## Reglas de integridad
 
 1. Cada declaración debe identificar al declarante de forma suficiente para la capa en que se usa: identidad legal en el corpus privado cuando sea necesaria; descriptor estable en el repositorio público cuando proceda anonimización.
@@ -44,13 +59,16 @@ Una versión preparada por terceros a partir de audios o documentos, pero no rev
 3. No se presentarán como hechos probados las alegaciones no corroboradas.
 4. La firma no es condición de uso. La versión firmada o ratificada, cuando exista, controla la autenticación y el tenor exacto en caso de diferencia.
 5. Cuando exista versión firmada, deberá conservarse privadamente su hash SHA-256, nombre exacto de archivo y, si fue presentada institucionalmente, el justificante REG-AGE/RedSARA correspondiente. No es necesario publicar un nombre de archivo que revele identidad privada.
-6. Cuando la fuente sea audio, correo, mensajería o notas, deberán preservarse, cuando sea posible, el archivo nativo, exportación, metadatos, fechas, hashes y relación entre la fuente y la declaración.
+6. Cuando la fuente sea audio, correo, mensajería o notas, deberán preservarse, cuando sea posible, el archivo nativo, exportación, metadatos, fechas, hashes y relación entre la fuente y la declaración. Para voz/transcripción se aplicarán además las capas V0–V4 y los grados S0–S4 del protocolo de 25 de agosto de 2026.
 7. Toda corrección posterior se hará mediante una nueva versión o declaración suplementaria, sin borrar silenciosamente la versión anterior.
 8. Las declaraciones públicas destinadas al sitio web deberán redactarse con cautela para no atribuir delitos, dolo o responsabilidad como hechos establecidos sin resolución o prueba suficiente.
 9. No se publicarán audio bruto, transcripciones íntegras, datos personales innecesarios, material privilegiado o estrategia procesal salvo decisión expresa, revisión de privacidad y base legítima.
 10. Si una frase material no puede afirmarse responsablemente en el nivel en que está redactada, debe marcarse **`REQUIERE ACLARACIÓN`** o reformularse como recuerdo, manifestación de tercero, conocimiento documental, inferencia o cuestión pendiente. No se inventará certeza para completar una declaración.
 11. La evidencia exculpatoria, las negaciones y las explicaciones alternativas deben preservarse con el mismo rigor que la evidencia adversa.
 12. El número secuencial refleja el **orden de incorporación al archivo**, no necesariamente la fecha del hecho ni la fecha de la declaración fuente.
+13. Cuando el relato se refiera a correos de una cuenta privada, la cuenta, exportación, IDs, cuerpos, asuntos, destinatarios y adjuntos se conservan fuera de GitHub conforme al [`protocolo de adquisición y custodia de buzón privado`](../RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md); la declaración pública sólo usa IDs opacos, agregados o proposiciones aprobadas.
+14. Los nombres, cargos, sociedades y relaciones derivados de una declaración se verifican conforme al [`protocolo OSINT`](../OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md). Un resultado no localizado no prueba ausencia y una relación societaria no transfiere conducta o responsabilidad.
+15. Una colisión de numeración concurrente se resuelve de forma aditiva: conservar la entrada ya incorporada, asignar el siguiente número disponible a la nueva declaración y registrar la renumeración. Nunca sobrescribir una declaración existente.
 
 ## Hacer una declaración accionable
 
@@ -69,6 +87,17 @@ Entradas actuales:
 - `001_WITNESS_GIL_PERIMETER_TESTIMONIO_2018_20260815.md`
 - `002_WITNESS_GIL_PERIMETER_RICPE_VOICE_20260815.md`
 - `003_WITNESS_GIL_PERIMETER_CAM_HEARING_20260727.md`
+- `004_WITNESS_GIL_PERIMETER_RICPE_IDONEIDAD_20260818.md`
+- `005_WITNESS_GIL_PERIMETER_COMMUNITY_CEXP_PINK_AEAT_20260822.md`
+- `006_GIL_CORRECTION_DECLARATION_005_PINK_KEYS_AUTHORITY_20260822.md`–`010_GIL_PRESSURE_CONTEXT_PINK_ADMINISTRATION_NULLITY_AEAT_COMMUNITY_PUBLICATION_20260822.md`
+- `011_WITNESS_GIL_PERIMETER_CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_NETWORK_20260825.md`
+- `012_GIL_MAXIMAL_ATTRIBUTED_CRIMINAL_CAUSATION_SHADOW_ADMINISTRATION_2011_TO_PRESENT_20260825.md`
+- `013_GIL_ATTRIBUTED_FUNCTIONAL_CONVERGENCE_INTO_ACOSTA_MATOS_PERIMETER_20260825.md`
+- `014_WITNESS_GIL_PERIMETER_MORTGAGE_SWAP_ACCOUNTS_EXECUTION_20260826.md`
+- `015_GIL_DIRECT_IDENTIFICATION_FISCAL_VISTA_25JUL2023_POST_ALERT_ATTRIBUTION_20260826.md`
+- `016_GIL_CREDIT_MULTIPLE_LIVES_NPL_NOTARIAL_ALLEGATION_20260826.md` (**Declaration 016**; renumerada desde la 015 preparada para preservar la 015 Fiscalía ya incorporada)
+
+El siguiente número disponible es **017**, sujeto a comprobar de nuevo el directorio en el momento de incorporar otra declaración.
 
 Los nombres exactos de originales privados pueden mantenerse en el registro privado de integridad, no en el repositorio público cuando revelen identidad innecesaria.
 
@@ -83,14 +112,14 @@ Los nombres exactos de originales privados pueden mantenerse en el registro priv
 
 ## Flujo operativo para cualquier hilo
 
-1. Leer `README.md`, `INDEX.md`, `STATEMENT_TEMPLATE.md` y el control de anonimización.
+1. Leer `README.md`, `INDEX.md`, `STATEMENT_TEMPLATE.md`, el protocolo de voz a texto y el control de anonimización.
 2. Recuperar la fuente completa antes de redactar si está disponible.
 3. Verificar el último número real del archivo y asignar el siguiente.
-4. Convertir el relato en primera persona sin añadir hechos.
-5. Clasificar las proposiciones materiales por fuente y nivel de conocimiento.
+4. Usar primera persona sólo cuando sea texto fuente literal o cuando el declarante haya revisado/adoptado esa redacción. Si es una síntesis editorial no ratificada, identificarla como **relato editorial derivado de fuente** y no atribuir al declarante una fórmula de veracidad que no haya adoptado.
+5. Clasificar las proposiciones materiales por fuente y nivel de conocimiento; si hay voz, registrar el segmento, versión, hablante, grado de atribución y estado de adopción.
 6. Aplicar la regla de privacidad antes de crear título, índice o filename público.
 7. Marcar `REQUIERE ACLARACIÓN` cuando corresponda sin bloquear el resto de la declaración.
-8. Añadir el apéndice operativo cuando existan verificaciones derivadas.
+8. Ejecutar la matriz de contradicción y la cola de aclaraciones; añadir el apéndice operativo cuando existan verificaciones derivadas.
 9. Actualizar `INDEX.md` en la misma rama.
 10. Usar rama protegida, pull request y merge cuando proceda.
 11. Verificar después del merge que la declaración y el índice existen en `main` y que no reaparecen identidades reservadas.
@@ -104,3 +133,10 @@ Véase [`INDEX.md`](./INDEX.md).
 ## Plantilla
 
 Véase [`STATEMENT_TEMPLATE.md`](./STATEMENT_TEMPLATE.md).
+
+## Protocolos relacionados
+
+- [`VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md`](./VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md)
+- [`GIL_RESERVED_DECLARANT_VOICE_STATEMENT_CLARIFICATION_QUEUE_25AUG2026.md`](./GIL_RESERVED_DECLARANT_VOICE_STATEMENT_CLARIFICATION_QUEUE_25AUG2026.md)
+- [`../RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md`](../RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md)
+- [`../OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md`](../OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md)

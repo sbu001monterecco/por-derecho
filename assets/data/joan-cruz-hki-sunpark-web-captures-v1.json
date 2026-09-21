@@ -1,0 +1,86 @@
+{
+  "schema": "por-derecho.web-capture-evidence.v1",
+  "control_date": "2026-09-01",
+  "status": "CANONICAL_WEB_CAPTURE_REGISTERED",
+  "person_id": "PD-SP-P-0145",
+  "capture_family_id": "PD-SP-WEB-HKI-20191125-001",
+  "subject": "HKI Hotels website — Joan Cruz / Sun Park (Lanzarote)",
+  "source_family": {
+    "custody": "PRIVATE_GOOGLE_DRIVE_PROJECT_ARCHIVE",
+    "presentation_title": "Comercializacion Club Sie Lanzarote y Sun Park (1-2-fly y HKI 2018-2019)",
+    "presentation_created_at": "2019-11-25T15:24:44.381Z",
+    "source_locator_publication": "WITHHELD_PRIVATE_CONNECTOR_LOCATOR"
+  },
+  "captures": [
+    {
+      "capture_id": "PD-SP-WEB-HKI-20191125-001-A",
+      "original_filename": "Screenshot 2019-11-25 16.38.58.png",
+      "original_mime": "image/png",
+      "original_size_bytes": 378965,
+      "original_sha256": "5d88b9c3f9301b44dd1f38e5f5338de3f320908a50c10befb9c01fdb9ec30163",
+      "displayed_local_date": "2019-11-25",
+      "displayed_local_time": "16:38",
+      "displayed_url": "hkihotels.com/web/proyectos/en-lanzarote/",
+      "observed_content": [
+        "HKI HOTELS navigation and PROYECTOS section",
+        "Hotel Alyssa Suite (Lanzarote)",
+        "Sun Park (Lanzarote)"
+      ],
+      "public_derivative": {
+        "path": "assets/evidence/2019-11-25-hki-sun-park/hki-hotels-sun-park-live-project-2019-11-25.jpg",
+        "dimensions": "1280x720",
+        "sha256": "7fc70c6f02832db2eba8a3f6d74afa21c0120096599c66da23bdb29d6bbfda71"
+      }
+    },
+    {
+      "capture_id": "PD-SP-WEB-HKI-20191125-001-B",
+      "original_filename": "Screenshot 2019-11-25 16.41.19.png",
+      "original_mime": "image/png",
+      "original_size_bytes": 425078,
+      "original_sha256": "e78b83d8b3c8741dd44e4e80c2ddd8a1ec3c3b77e8dcac3ed0bbd825d6783785",
+      "displayed_local_date": "2019-11-25",
+      "displayed_local_time": "16:41",
+      "displayed_url": "hkihotels.com/web/equipo/",
+      "observed_content": [
+        "Joan Cruz",
+        "CEO",
+        "HKI HOTELS (www.hkihotels.com): Presidente",
+        "Tenerife office/contact block"
+      ],
+      "public_derivative": {
+        "path": "assets/evidence/2019-11-25-hki-sun-park/joan-cruz-hki-hotels-team-2019-11-25.jpg",
+        "dimensions": "1280x720",
+        "sha256": "9d74c8a08288667c4805bd43140cff8aa0914701bf449bfe19b10c34bd338d3f"
+      }
+    }
+  ],
+  "date_basis": [
+    "original screenshot filenames",
+    "visible Windows taskbar date/time in each original screenshot",
+    "source presentation creation date on 25-Nov-2019"
+  ],
+  "evidential_statement": "The recovered captures document that the captured HKI Hotels website state on 25-Nov-2019 displayed Sun Park (Lanzarote) in the firm's projects section and displayed Joan Cruz on the firm's team page.",
+  "epistemic_boundaries": [
+    "The captures do not establish when the Sun Park listing first went live.",
+    "The captures do not by themselves establish a contract, mandate, payment, ownership, insolvency-court authorisation or legality.",
+    "The 25-Nov-2019 capture must not be backdated to 1-Mar-2018 or 7-Jun-2018 without separate evidence.",
+    "The user's recollection that Sun Park appeared on the website in 2018 remains a source-led question pending an original 2018 capture or independent archive evidence."
+  ],
+  "wayback_status": {
+    "checked_on": "2026-09-01",
+    "result": "NO_INDEXED_2018_CAPTURE_LOCATED_IN_CURRENT_SEARCH",
+    "next_targets": [
+      "Wayback capture of hkihotels.com/web/proyectos/en-lanzarote/ in 2018 or first half 2019",
+      "HKI CMS/hosting metadata or backups",
+      "earlier screenshot originals",
+      "publication or engagement emails fixing first-live date"
+    ]
+  },
+  "related_nodes": [
+    "PD-SP-P-0145",
+    "PD-SP-EVT-0001",
+    "PD-SP-DOC-0005",
+    "/es/toma-control-sun-park-7-junio-2018/",
+    "/en/sun-park-takeover-7-june-2018/"
+  ]
+}

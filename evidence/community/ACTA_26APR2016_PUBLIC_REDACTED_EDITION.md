@@ -5,6 +5,8 @@
 **Unredacted extraction SHA-256:** `4ba8b77315b0dca9dc735e13f08a80b82b73dd080921f2a9d73583013e2563fd`  
 **Status:** public evidential edition; not the evidential master and not a finding that any resolution was valid or invalid.
 
+> **27-Aug-2026 v2 correction and limit:** the document room now represents the controlling 77-page family with a [page-sequenced Spanish public-redacted OCR edition](actas/2016-04-26/transcript-es.md), a rendered text-edition PDF, raster-only redacted source facsimile and redacted source-page gallery. Two distinct 77-page binaries (SHA-256 `68ff554b…` and `549dae8c…`) are render- and text-equivalent, not byte-identical. The 24-, 47- and 50-page packages remain separately preserved as partial variants. OCR is not manually source-line certified; the public facsimile is not the native ACTA or a certified copy.
+
 ## Redaction / publication rule
 
 This edition preserves the meeting structure, dates, percentages, agenda, resolutions, named office-holders, professional advisers, representatives and institutional/corporate actors where they are materially relevant. It omits or redacts personal/professional contact details, street-level addresses, telephone/fax numbers, email addresses, DNI/NIF/CIF identifiers, bank/account identifiers and private financial detail that is not necessary to understand the governance mechanism.

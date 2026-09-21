@@ -26,7 +26,7 @@
   } : {
     kicker: '€3,032,010.34 · MY ACCUSATION ABOUT THE FIGURE',
     title: 'I accuse the AC and the Judge of knowingly fabricating this amount for direct or indirect personal gain kept clandestine.',
-    allegation: '<strong>I accuse insolvency administrator Francisco de Borja Rodríguez-Batllori and Judge Alberto López Villarrubia of knowingly fabricating and/or falsifying the €3,032,010.34 figure</strong> that ultimately became a personal damages award against me, plus legal interest increased by two points. I do not allege a mere arithmetic mistake or an innocent legal disagreement. <strong>I allege that the figure was deliberately constructed and maintained, and that the purpose was to obtain or facilitate direct or indirect personal gain kept clandestine.</strong>',
+    allegation: '<strong>I accuse insolvency administrator Francisco de Borja Rodríguez-Batllori and Magistrate-Judge Alberto López Villarrubia of knowingly fabricating and/or falsifying the €3,032,010.34 figure</strong> that ultimately became a personal damages award against me, plus legal interest increased by two points. I do not allege a mere arithmetic mistake or an innocent legal disagreement. <strong>I allege that the figure was deliberately constructed and maintained, and that the purpose was to obtain or facilitate direct or indirect personal gain kept clandestine.</strong>',
     evidenceTitle: 'What can already be tested against the documents',
     evidence: [
       ['€24,575/month', 'Judgment 163/2023 records this contractual monthly rent.'],

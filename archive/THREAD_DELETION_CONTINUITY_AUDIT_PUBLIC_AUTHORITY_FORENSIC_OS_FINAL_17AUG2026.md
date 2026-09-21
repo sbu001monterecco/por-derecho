@@ -5,6 +5,8 @@
 **Primary squash commit:** `7eb75a3f791ee92ad1daa98f747a350307989636`  
 **Status:** `DELETION-SAFE — MERGED / PAGES BUILT / RENDER CHECK LIMIT EXPLICIT`
 
+> **23-Aug-2026 source-status supersession:** The request below for a 4-Jun-2018 continuation/signature copy preserves the historical state of this final audit; it is not current source status. Current control is the complete three-page authentic court copy in Gmail `194a98a11920fefd`, filename `20180604 Auto Aclaracion Auto Aprobacion Plan Liquidacion.pdf`. SHA-256 `867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0` belongs only to the superseded two-page derivative and must not be assigned to the three-page copy. Canonical-copy hash binding, exact service/notification and downstream implementation remain open.
+
 ## Final audit question
 
 > If this entire conversation disappeared now, could a fresh investigator recover what was requested, what was designed, what was actually implemented, what was merged, the evidential and criminal-law boundaries, what was not proved, what remains missing, and what deployment verification was and was not possible?

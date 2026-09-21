@@ -55,6 +55,11 @@
         navLink('#recuperacion', t('Recuperación', 'Recovery')),
         navLink('#registro', t('Evidencia', 'Evidence')),
         navLink('#mapa-institucional', t('Instituciones', 'Institutions')),
+        navLink(
+          isEn ? '#institutional-accountability-12aug-en' : '#institutional-accountability-12aug',
+          t('AC y Juez', 'AC & Judge'),
+          'class="nav-accountability"'
+        ),
         navLink('#futuro', t('Futuro', 'Future')),
         navLink(updatesUrl, t('Actualizaciones', 'Updates'), 'class="nav-update"'),
         navLink(collaborateUrl, t('Colaborar', 'Collaborate')),

@@ -1,156 +1,162 @@
 # THREAD DELETION CONTINUITY AUDIT — elEconomista infographic / LinkedIn / website
 
 **Audit date:** 19 August 2026  
-**Thread scope:** generation of a new LinkedIn infographic for the elEconomista/Javier Romera January-2025 media-accountability track; publication of that visual on the Spanish elEconomista dossier; subsequent mobile visual-QA failure; continuity close-out.  
+**Final refresh:** 19 August 2026  
+**Thread scope:** LinkedIn infographic generation; publication on the Spanish elEconomista/Javier Romera dossier; mobile blur diagnosis; exact-source preservation; HQ replacement; deletion-continuity close-out.  
 **Controlling protocol:** `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`.
 
-## 1. Close-out status
+## 1. Final continuity status
 
-**DELETION-SAFE WITH OPEN IMPLEMENTATION / ASSET-CUSTODY GAP** once this audit is merged to `main`.
+**DELETION-SAFE — VISUAL-ASSET CUSTODY GAP CLOSED.**
 
-The substantive elEconomista evidence record was already canonical before this thread and remains controlled by:
+One narrow operational item remains: independent retrieval/recording of the GitHub Pages build that deploys the HQ replacement. That is fully recoverable from repository state and is **not conversation-dependent**.
+
+This thread created **no new primary evidentiary finding** about elEconomista, Javier Romera, CAM/Acosta Matos or Meeting Point. The controlling evidence remains:
 
 - `archive/ELECONOMISTA_ROMERA_MEDIA_TRACEABILITY_15AUG2026.md`;
 - CR-020 / CR-021 in `archive/CORRECTION_REGISTER.md`;
 - ME-028–ME-032 in `archive/MISSING_EVIDENCE_REGISTER.md`;
-- `/es/eleconomista-javier-romera-enero2025/` and the EN paired route;
-- `archive/DEPLOYMENT_LOG.md`.
+- `/es/eleconomista-javier-romera-enero2025/` and the paired EN route.
 
-This thread created **no new primary evidentiary finding about elEconomista, Javier Romera, CAM/Acosta Matos or Meeting Point**. Its material additions are publication/visual decisions and a later visual-quality defect.
+## 2. Original publication completed in this thread
 
-## 2. Material implementation completed in this thread
+A Spanish investigative-poster infographic was generated from the user's LinkedIn copy. It is campaign/reader-facing visualisation, **not evidence**.
 
-### A. LinkedIn visual generated
+It was first published through PR **#201**, merge commit:
 
-A Spanish investigative-poster infographic was generated from the user-supplied LinkedIn post. Its principal headline was:
+`2a6f2d442ac4ea5542df6ff020f1fe66078fda2c`
 
-> **EL ECONOMISTA EXIGÍA QUE NUESTRA HISTORIA ESTUVIERA “BIEN ATADA”. LA PREGUNTA ES SI APLICÓ EL MISMO ESTÁNDAR A LO QUE RECIBIÓ DE LA CONTRAPARTE.**
+Initial public asset:
 
-The visual summarises the already-controlled questions around the 17→20 January 2025 wait/document/receipt sequence, Meeting Point/FTI commercialisation, RIC/RICPE, regional/public finance and FEDER. It is **campaign/reader-facing visualisation, not evidence**.
+`assets/eleconomista-bien-atada-infografia.jpg`
 
-### B. Visual added to the Spanish elEconomista dossier
+The Spanish dossier placed it immediately below the hero. The page caption expressly states that the visual is a summary and that the human figure is generated rather than a photograph/documentary representation of Javier Romera.
 
-The user then instructed that the image be added to the elEconomista part of the Por Derecho site.
+The initial deployment was independently recorded at the time as GitHub Pages build **1155494640 — built, no error** in `archive/DEPLOYMENT_LOG.md`.
 
-Implemented via PR **#201**, merged as:
+## 3. Mobile visual-QA defect discovered
 
-- merge commit: `2a6f2d442ac4ea5542df6ff020f1fe66078fda2c`;
-- site asset: `assets/eleconomista-bien-atada-infografia.jpg`;
-- page: `es/eleconomista-javier-romera-enero2025/index.html`;
-- exact-SHA Pages build: **1155494640 — built, no error**;
-- deployment recorded in `archive/DEPLOYMENT_LOG.md`.
+The user supplied a mobile screenshot showing that the dense infographic text was visibly blurred/difficult to read.
 
-The image was inserted immediately below the hero and before the five-corrections block.
+The cause was verified as an asset-quality problem:
 
-### C. Publication safeguard deliberately added
+- old deployed derivative: **512 × 768 JPEG**, 63,123 bytes;
+- exact generated source: **1024 × 1536 PNG**, 2,789,763 bytes.
 
-The page caption expressly states that:
+This defect did **not** change any substantive evidentiary conclusion.
 
-- the infographic is a **visual summary** and does not replace sources/caveats; and
-- the human figure is part of a **generated graphic composition**, not a photograph or documentary representation of Javier Romera.
+## 4. Exact master source — custody now closed
 
-This safeguard must be retained in any future higher-resolution replacement.
+The exact generated source has been moved out of the conversation runtime into the user's persistent ChatGPT File Library:
 
-### D. Public route supplied to the user
+`/Por Derecho/Visual Source Assets/elEconomista-bien-atada-source-20260819.png`
 
-Canonical Spanish route:
+Verified properties:
 
-`https://sbu001monterecco.github.io/por-derecho/es/eleconomista-javier-romera-enero2025/`
+- 1024 × 1536 px;
+- PNG;
+- 2,789,763 bytes;
+- SHA-256 `b44709ca47c4ecff3cf53dc6ae910d3065f1c2dbf30d76ae9308b7726b7ba771`.
 
-## 3. New defect discovered after publication
+A preserved HQ WebP derivative is also stored at:
 
-### USER-PROVIDED VISUAL QA
+`/Por Derecho/Visual Source Assets/elEconomista-bien-atada-web-hq-20260819.webp`
 
-The user supplied a mobile screenshot showing that the infographic is visibly blurred / difficult to read when opened on a phone.
+with SHA-256:
 
-### TECHNICAL VERIFICATION IN THIS THREAD
+`e3195545f45014e5dd6b71a8183eddd6df2611c516e1fca478d1ff893699bdb8`.
 
-The conversation workspace contains:
+Canonical custody record:
 
-- deployed JPEG derivative: `/mnt/data/eleconomista-bien-atada-infografia.jpg` — **512 × 768 px**, **63,123 bytes**;
-- original generated PNG: `/mnt/data/a_high_detail_infographic_poster_style_image_in.png` — **1024 × 1536 px**, **2,789,763 bytes**.
+`archive/VISUAL_ASSET_PRESERVATION_ELECONOMISTA_INFOGRAPHIC_19AUG2026.md`.
 
-The currently published HTML still declares the image with intrinsic dimensions `width="480" height="720"` while displaying it responsively up to the page container width. The published source on `main` continues to reference `../../assets/eleconomista-bien-atada-infografia.jpg`.
+## 5. HQ repository replacement completed
 
-**Controlled conclusion:** the blur is an implementation/asset-quality problem, not a substantive evidence problem. The existing visual was compressed/downsampled too aggressively for a text-heavy infographic.
+PR **#479** — `Close elEconomista infographic HQ and custody gap` — merged as:
 
-## 4. Unfinished HQ replacement — exact repository state
+`74116b9663f62b856751eb9fb4ddbbe588243765`
 
-A branch named:
+It:
+
+- replaced `assets/eleconomista-bien-atada-infografia.jpg` with a **1024 × 1536 HQ JPEG**;
+- added `assets/eleconomista-bien-atada-infografia-hq-20260819.webp`;
+- added the canonical visual-asset preservation record;
+- changed **no substantive public-page prose or evidentiary proposition**.
+
+The HQ JPEG SHA-256 verified before upload was:
+
+`8a985b8ccbc5845d241534cfad066343a5c5a81e6b07c023bbd7dc2b1ed882fb`.
+
+GitHub confirms the replacement and versioned derivative blobs are present on current `main`.
+
+## 6. Stale branch warning
+
+The earlier branch:
 
 `agent/eleconomista-infographic-hq`
 
-was created after the mobile QA problem was identified.
+was checked and contained **no HQ implementation**; at the audit point it was 0 commits ahead and 558 commits behind `main`.
 
-Repository comparison on 19 August 2026 showed:
+Do not resume that branch. Any future work must start from then-current `main`.
 
-- **0 commits ahead of `main`**;
-- **558 commits behind `main`**;
-- merge base: `fb53d8105f1ef879181d99e4b618eccd96735ca4`;
-- therefore **the branch contains no HQ fix at all and must not be treated as pending implementation**.
+## 7. Completion email handoff
 
-A future thread should **not** build on that stale branch. Start from current `main`.
+A completion email was sent to the user's authenticated Gmail account on 19 August 2026.
 
-## 5. Required next implementation
+Gmail message ID:
 
-Create a fresh branch from then-current `main` and:
+`1a01a05581bf5483`
 
-1. replace the low-resolution public infographic with a **1024 × 1536** high-quality derivative (lossless/near-lossless PNG/WebP, or sufficiently high-quality JPEG suitable for dense text);
-2. preserve the existing filename if a cache-busting strategy is added, or use a versioned filename and update the HTML reference;
-3. update HTML intrinsic dimensions to the actual asset dimensions (normally `1024 × 1536` for the current source);
-4. retain responsive CSS, alt text and the generated-figure disclaimer;
-5. do **not** strengthen or otherwise alter the substantive elEconomista evidence narrative merely because the visual is being replaced;
-6. test on mobile at normal viewport scale and after tapping/opening the image; headings and body text must remain legible;
-7. review the diff, merge through PR, verify the exact-SHA Pages build, and append the deployment log.
+It records the Library paths, hashes, PR #479 / merge SHA, the evidentiary boundary and the deployment-verification limitation. The master PNG and HQ WebP were attached.
 
-## 6. Asset-custody boundary
+## 8. Deployment-verification item still open
 
-The exact 1024 × 1536 source PNG identified above is currently a **conversation-workspace artifact**, not a controlled repository asset. If this chat/runtime disappears before it is copied into a durable source system, that exact binary may no longer be recoverable.
+The source change is merged and binary blobs are verified on current `main`.
 
-This is a **visual-asset custody gap**, not a reason to upgrade or alter any evidentiary proposition. The deployed low-resolution visual remains on `main`, so a future thread can recover the composition and regenerate/rebuild an HQ version even if the exact PNG is unavailable.
+However, in this pass:
 
-Do not claim that the HQ source was preserved in GitHub, Drive, Library or an evidence vault unless that preservation is actually performed and recorded.
+- the connected GitHub tool did not expose the GitHub Pages latest-build endpoint;
+- the external rendered route returned a cache miss.
 
-## 7. Evidentiary controls unchanged
+Therefore **do not invent an exact successful Pages build for PR #479**. Under the repository deployment protocol, record the HQ public deployment as independently verified only after the Pages build/deployment status is retrieved.
 
-This thread does not change the controlling media analysis:
+A future thread needs only to:
 
-- the 20-Jan attachment was Sentencia 163/2023 concerning LPB, not an “auto declaring Sun Park culpable”;
-- the materially adverse first-instance judgment must remain disclosed accurately;
-- pre-January-2025 appeals/personation remain part of the controlled procedural context;
+1. retrieve the Pages build/deployment corresponding to merge `74116b9663f62b856751eb9fb4ddbbe588243765` (or a later descendant that demonstrably contains it);
+2. confirm successful build/deployment;
+3. check the public route/mobile image if available;
+4. append `archive/DEPLOYMENT_LOG.md`.
+
+This outstanding check is fully specified and recoverable without this chat.
+
+## 9. Evidentiary controls unchanged
+
+This thread does not alter the controlling media analysis:
+
+- the 20-Jan attachment was **Sentencia 163/2023** concerning LPB, not an “auto declaring Sun Park culpable”;
+- the materially adverse first-instance judgment remains disclosed accurately;
+- pre-January-2025 appeals/personation remain part of the procedural context;
 - the judgment does not decide the principal Meeting Point/FTI commercialisation, mixed-ownership, RIC/RICPE, regional/public-finance or EU/FEDER questions raised in the pitch;
-- CAM/Acosta Matos response-side supply/procurement is a strong evidence-based inference, while the physical transmitter/account and any person-specific instruction remain unresolved;
-- the exact native inbound transmission, OGG export/authentication/transcription, exact third-party statements, judgment status certification and complete Madrid querella exhibits remain open under ME-028–ME-032.
+- CAM/Acosta Matos response-side supply/procurement remains a strong evidence-based inference, while the physical transmitter/account and person-specific instruction remain unresolved;
+- ME-028–ME-032 remain the controlling outstanding evidentiary queue.
 
-No correction-register entry is required solely because of the visual-quality defect.
+No correction-register entry is required solely because of the visual-quality issue.
 
-## 8. User-supplied LinkedIn copy — preservation note
+## 10. Fresh-thread recovery path
 
-The user supplied a complete Spanish LinkedIn post whose central thesis was that Romera required the proposed story to be “bien atada” and that the same standard should be tested against the adverse material received from the other side. It asks, among other things:
-
-- what exactly elEconomista received between 17 and 20 January 2025;
-- who sent/procured it and what explanation accompanied it;
-- what CAM/Acosta Matos and Meeting Point said;
-- why incompatible commercialisation versions appeared; and
-- what elEconomista independently verified before stopping the investigation.
-
-The exact campaign prose is **not elevated to evidence**. Its factual propositions remain subordinate to the canonical media ledger and correction register. The public dossier already preserves the underlying finite questions and evidentiary caveats, so this audit does not create a second competing evidentiary narrative.
-
-## 9. Fresh-thread recovery path
-
-A fresh ChatGPT should read, in this order:
+A fresh ChatGPT should read:
 
 1. `CHATGPT_START_HERE.md`;
 2. `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`;
 3. this audit;
-4. `archive/ELECONOMISTA_ROMERA_MEDIA_TRACEABILITY_15AUG2026.md`;
-5. CR-020 / CR-021 and ME-028–ME-032;
-6. the current Spanish public page source;
-7. `archive/DEPLOYMENT_LOG.md`;
-8. compare current `main` against any branch before reusing it.
+4. `archive/VISUAL_ASSET_PRESERVATION_ELECONOMISTA_INFOGRAPHIC_19AUG2026.md`;
+5. `archive/ELECONOMISTA_ROMERA_MEDIA_TRACEABILITY_15AUG2026.md`;
+6. CR-020 / CR-021 and ME-028–ME-032;
+7. current Spanish page source;
+8. `archive/DEPLOYMENT_LOG.md`.
 
-## 10. Final continuity determination
+## Final determination
 
-After this audit is merged, the conversation may be deleted without losing material **project intelligence or implementation state**. The only deliberate open item is the high-resolution visual replacement and its source-custody issue, both fully described above.
+The conversation can now be deleted without losing the generated master source, publication history, quality diagnosis, replacement state, evidentiary safeguards, recovery instructions or handoff record.
 
-**Final status: DELETION-SAFE WITH OPEN IMPLEMENTATION / ASSET-CUSTODY GAP.**
+**FINAL STATUS: DELETION-SAFE. THE VISUAL-ASSET CUSTODY GAP IS CLOSED.**

@@ -1,0 +1,100 @@
+{
+  "schema": "por-derecho.workspace-handoff.v1",
+  "handoff_id": "PD-WCH-20260903-GCCIV003-SRC-003",
+  "workspace_id": "PD-WS-20260902-0001",
+  "control_date": "2026-09-03",
+  "status": "MERGED_DEPLOYED_LIVE_BROWSER_VERIFIED",
+  "historic_docket_state": "OPEN_NOT_CERTIFIED_COMPLETE",
+  "immutable_historic_release": {
+    "pr": 1373,
+    "merge_sha": "efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c",
+    "tree_sha": "1e2295ccc94d3e020b2ef0db59924d439de2aa93",
+    "pages_run_id": 33697357002,
+    "live_browser_run_id": 33700567926,
+    "release_state": "MERGED_DEPLOYED_LIVE_BROWSER_VERIFIED"
+  },
+  "source_recovery_release": {
+    "pr": 1377,
+    "reviewed_head_sha": "3595abac9a1151d8bac1ae31e9721fcd0b8fa4f4",
+    "merge_sha": "ddebffb07f4750ab4ab19017a3aef5a195c45f70",
+    "tree_sha": "a724378b7e0935aef691d9c941d0261ecd9c1b10",
+    "pages_run_id": 33708727660,
+    "pages_run_number": 1424,
+    "pages_head_sha": "ddebffb07f4750ab4ab19017a3aef5a195c45f70",
+    "pages_result": "success",
+    "state": "MERGED_DEPLOYED_LIVE_BROWSER_VERIFIED"
+  },
+  "live_verification": {
+    "branch": "verify/gc-civ-003-primary-source-live-20260903",
+    "branch_policy": "DISPOSABLE_DO_NOT_MERGE",
+    "head_sha": "072cac2577e77a6eb0b3796c5707be389fb7f4f3",
+    "run_id": 33709044855,
+    "run_number": 1,
+    "job_id": 100504407535,
+    "result": "success",
+    "terminal_marker": "GC_CIV_003_PRIMARY_SOURCE_LIVE_BROWSER_VERIFIED=PASS",
+    "verified": [
+      "ES GC-CIV-003 HTTP 200 and refined source state",
+      "EN GC-CIV-003 HTTP 200 and refined source state",
+      "machine source-state HTTP 200 and locked/gap states",
+      "homepage search by GC-CIV-003 and NIG in ES and EN",
+      "homepage search by Juan Avello Formoso, Fernando Pérez Polo and PD-SP-I-0048",
+      "LZ-CIV-050 ES/EN route 404",
+      "LZ-CIV-050 absent from ES/EN search, sitemap, public Master JSON and route data"
+    ]
+  },
+  "locked_proceeding": {
+    "id": "GC-CIV-003",
+    "reference": "Diligencias Preliminares 1041/2017",
+    "nig": "3501642120170028407",
+    "court_id": "PD-SP-I-0048",
+    "judge_id": "PD-SP-P-0124",
+    "laj_id": "PD-SP-P-0165",
+    "deprecated_duplicate": "LZ-CIV-050",
+    "deprecated_duplicate_state": "REMOVED_DO_NOT_RECREATE"
+  },
+  "closed_source_gaps": [
+    "19-Dec-2017 signed admission Auto",
+    "Finality of the 19-Dec-2017 Auto only",
+    "Positive CAM citation/requerimiento on 18-Jan-2018",
+    "CAM appearance/opposition"
+  ],
+  "open_source_gaps": [
+    "Complete docket / certified index",
+    "Actual 19-Feb-2018 act/result",
+    "Standalone primary 05-Mar-2018 archive decree",
+    "Original archive/desistimiento/request and exact procedural basis",
+    "Service/notification of 05-Mar decree",
+    "Finality of closure sequence"
+  ],
+  "closure_trace_state": "STRONGLY_TRACED_PRIMARY_FILE_STILL_TO_RECOVER",
+  "source_overlay": {
+    "path": "assets/data/gc-civ-003-primary-source-state-20260903.json",
+    "state": "CONTROLLING_03SEP2026_SOURCE_CORRECTION_OVERLAY",
+    "master_csv_physical_rewrite_in_pr_1377": false,
+    "stale_02sep_gap_wording": "SUPERSEDED_FOR_SOURCE_INTERPRETATION",
+    "future_action": "DETERMINISTIC_MASTER_REBUILD_INGEST_OVERLAY"
+  },
+  "targeted_recovery": {
+    "broad_scan": false,
+    "nineteen_feb_result": "SOURCE_GAP",
+    "five_mar_primary_decree": "STRONGLY_TRACED_PRIMARY_FILE_STILL_TO_RECOVER",
+    "nineteen_feb_broader_gmail_hit": "CONCURSO_36_2012_NOT_GC_CIV_003_NO_GAP_CLOSURE",
+    "five_mar_actor_mailbox_hit": "NONE",
+    "legacy_spreadsheet": "RECOVERY_LEAD_ONLY_WRONG_COURT_LABEL"
+  },
+  "next_p0": [
+    "actual 19-Feb-2018 act/result",
+    "standalone 5-Mar-2018 decree",
+    "underlying archive/desistimiento request",
+    "service and finality of closure sequence"
+  ],
+  "do_not_infer": [
+    "19-Feb occurrence or production from scheduling",
+    "requester or reasoning of 5-Mar archive from later annex description",
+    "service or finality of closure from 19-Dec Auto finality",
+    "judicial authorship for CAM party filing",
+    "authority from legacy spreadsheet with wrong Arrecife label",
+    "GC-CIV-003 authority or formal linkage from separate Concurso 36/2012 acts"
+  ]
+}

@@ -1,26 +1,48 @@
 name: Off-GitHub Preservation Snapshot
 
 on:
-  pull_request:
-    branches:
-      - main
+  workflow_run:
+    workflows: [Release acceptance]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
   push:
     branches:
       - agent/off-github-backup-run
 
 permissions:
   contents: read
+  actions: read
+
+# Serialize captures of the same accepted main; never cancel a running backup.
+concurrency:
+  group: por-derecho-preservation
+  queue: max
+  cancel-in-progress: false
 
 jobs:
   preserve:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: main
+          persist-credentials: false
+      - name: Verify preservation decision safeguards
+        run: python3 -m unittest discover -s scripts -p test_preservation_snapshot_plan.py -v
+      - name: Resolve current main and reuse a retained exact-main artifact
+        id: target
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/preservation_snapshot_plan.py
       - name: Build full preservation package
+        if: steps.target.outputs.create == 'true'
         id: build
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
+          EXPECTED_MAIN_SHA: ${{ steps.target.outputs.main_sha }}
           OWNER: sbu001monterecco
           REPOSITORY_NAME: por-derecho
           PUBLIC_SITE_URL: https://sbu001monterecco.github.io/por-derecho/
@@ -46,6 +68,10 @@ jobs:
           git -C "$MIRRORS/${REPOSITORY_NAME}.git" show-ref > "$INVENTORY/git-refs.txt"
           git -C "$MIRRORS/${REPOSITORY_NAME}.git" count-objects -vH > "$INVENTORY/git-object-count.txt"
           MAIN_SHA="$(git -C "$MIRRORS/${REPOSITORY_NAME}.git" rev-parse refs/heads/main)"
+          if [ "$MAIN_SHA" != "$EXPECTED_MAIN_SHA" ]; then
+            echo "Main moved before capture; do not label this package as the planned SHA." >&2
+            exit 1
+          fi
 
           LFS_STATUS="git-lfs unavailable"
           if git lfs version >/dev/null 2>&1; then
@@ -77,9 +103,20 @@ jobs:
           rm -rf "$SITE/raw"
 
           echo "Capturing public GitHub API metadata..."
-          curl -fsSL -H "Accept: application/vnd.github+json" "https://api.github.com/users/${OWNER}" > "$API_EXPORT/user-profile.json"
-          curl -fsSL -H "Accept: application/vnd.github+json" "https://api.github.com/users/${OWNER}/repos?per_page=100&type=owner&sort=full_name" > "$API_EXPORT/owned-repositories.json"
-          curl -fsSL -H "Accept: application/vnd.github+json" "https://api.github.com/repos/${GITHUB_REPOSITORY}" > "$API_EXPORT/repository-metadata.json"
+          fetch_api() {
+            local url="$1"
+            local destination="$2"
+            curl --fail --silent --show-error --location \
+              --retry 5 --retry-all-errors --retry-delay 2 \
+              --connect-timeout 10 --max-time 90 \
+              -H "Accept: application/vnd.github+json" \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              "$url" > "$destination"
+          }
+          fetch_api "https://api.github.com/users/${OWNER}" "$API_EXPORT/user-profile.json"
+          fetch_api "https://api.github.com/users/${OWNER}/repos?per_page=100&type=owner&sort=full_name" "$API_EXPORT/owned-repositories.json"
+          fetch_api "https://api.github.com/repos/${GITHUB_REPOSITORY}" "$API_EXPORT/repository-metadata.json"
 
           cat > "$INVENTORY/repositories.csv" <<CSV
           name,nameWithOwner,visibility,defaultBranch,preservedMainSha
@@ -142,9 +179,10 @@ jobs:
           echo "site_status=$SITE_STATUS" >> "$GITHUB_OUTPUT"
 
       - name: Upload preservation artifact
-        uses: actions/upload-artifact@v4
+        if: steps.target.outputs.create == 'true'
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
-          name: por-derecho-off-github-backup-${{ github.run_id }}
+          name: ${{ steps.target.outputs.artifact_name }}
           path: ${{ steps.build.outputs.package_dir }}
           if-no-files-found: error
           retention-days: 90

@@ -1,0 +1,342 @@
+{
+  "schema": "por-derecho.current-reverse-engineered-digest.v1",
+  "control_id": "PD-UNITARY-REDIGEST-20260827-01",
+  "control_date": "2026-08-27",
+  "status": "LIVE_VERIFIED_PUBLIC_CONTROL",
+  "scope": "unitary non-fragmented reverse-engineered repository and website digest",
+  "source_base": {
+    "main_sha": "8e8e83c5a337846245a942222efbc3120645b1fd",
+    "tree_sha": "272e522a4171b9cd68a9eb62e7f27012a7d2a584",
+    "observed_at": "2026-08-27T08:28:06Z",
+    "pages": {
+      "run_id": 33023553238,
+      "run_number": 1165,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "unitary_verifier": {
+      "run_id": 33023553789,
+      "job_id": 98359487655,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "production_smoke": {
+      "run_id": 33023881311,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "open_pull_requests": 33,
+    "required_status_check_enforcement": "off"
+  },
+  "publication_evidence": {
+    "pull_request": 1091,
+    "validated_pr_head": "aedae64483a428ee0947b41cb0e7e48badb60be9",
+    "merge_sha": "0367a3759cf372bce35a3f2c292092e2f06cad25",
+    "merge_tree_sha": "a1af4bfca9eb6021f7932f01d9ad116408ba24f8",
+    "pages": {
+      "run_id": 33056171865,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "live_verification": {
+      "workflow_run_id": 33056172746,
+      "job_id": 98463437593,
+      "status": "completed",
+      "conclusion": "success",
+      "verified_route_count": 3,
+      "method": "cache-busted no-cache HTTP 200 and required-marker readback"
+    },
+    "preservation": {
+      "workflow_run_id": 33056075157,
+      "head_sha": "aedae64483a428ee0947b41cb0e7e48badb60be9",
+      "tree_sha": "a1af4bfca9eb6021f7932f01d9ad116408ba24f8",
+      "tree_matches_merge_tree": true,
+      "artifact_id": 9639650869,
+      "artifact_name": "por-derecho-off-github-backup-33056075157",
+      "size_bytes": 225883233,
+      "sha256": "a65e812d5ffdc36f41dcaee5297a86d02cd12004759d89815c5c0c0f406028a3",
+      "expires_at": "2026-11-25T08:53:59Z",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  },
+  "additive_publication_evidence": {
+    "control_id": "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
+    "relation_to_source_base": "ADDITIVE_RELEASE_DOES_NOT_REWRITE_HISTORICAL_SOURCE_BASE",
+    "pull_request": 1111,
+    "validated_pr_head": "677906e303ad91cc436803d8d47e410deefbbd6f",
+    "merge_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+    "merge_tree_sha": "0f2b75347de048d449160a69d087b592bd51b35c",
+    "pages": {
+      "run_id": 33083261099,
+      "run_number": 1184,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "current_digest_closeout": {
+      "workflow_run_id": 33083264830,
+      "artifact_id": 9651039104,
+      "artifact_name": "current-reverse-engineered-digest-closeout-33083264830",
+      "artifact_sha256": "7fe597bc46d371a6e20b7c79525b66dc9f630cb2b4328d12a675ebd5d6f4bead",
+      "result": "PASS_EXACT_BYTES",
+      "exact_route_count": 43,
+      "identity_registry_parity": 204
+    },
+    "fti_live_closeout": {
+      "workflow_run_id": 33083264897,
+      "artifact_id": 9651057259,
+      "artifact_name": "fti-meeting-point-ricpe-live-closeout-33083264897",
+      "artifact_sha256": "6be6ce6c96a5c0d347f869dc7d418db39a19ede6a65fb8493e78e7d4bb51284e",
+      "result": "PASS_EXACT_BYTES",
+      "exact_surface_count": 34
+    },
+    "asset_transaction_monitor": {
+      "workflow_run_id": 33083264530,
+      "artifact_id": 9651009448,
+      "artifact_name": "fti-meeting-point-asset-transaction-monitor-33083264530",
+      "artifact_sha256": "e46dfb57876af42258678886ef294e102d49f3a29e3e76f086c9e575b865bc98",
+      "result": "PASS_FRESH_BASELINE",
+      "sources_fetched": 12,
+      "fetch_errors": 0,
+      "review_signals": 0,
+      "boundary": "NO_PRIOR_STATE_FRESH_BASELINE_NOT_PROOF_OF_NO_INTERVENING_CHANGE"
+    },
+    "external_action_authority": {
+      "email_authorized": false,
+      "filing_authorized": false,
+      "red_sara_age_notification_authorized": false,
+      "portal_submission_authorized": false,
+      "authority_contact_authorized": false
+    }
+  },
+  "identity_registry": {
+    "total": 336,
+    "PERSON": 157,
+    "ORGANISATION": 83,
+    "STRUCTURE": 11,
+    "INSTITUTION": 43,
+    "PROCEEDING": 43,
+    "archive_backfill": "OPEN",
+    "candidate_state": "LOCAL_SOURCE_STATIC_CANDIDATE_NOT_YET_LIVE_VERIFIED",
+    "last_live_verified_counts": {
+      "total": 204,
+      "PERSON": 87,
+      "ORGANISATION": 71,
+      "STRUCTURE": 10,
+      "INSTITUTION": 18,
+      "PROCEEDING": 18
+    }
+  },
+  "controlling_rule": "Sun Park was one economically integrated hotel platform but not one legal person, title, operator, debt, insolvency estate or claimant.",
+  "causal_chain": [
+    "2008 property and operating structure",
+    "2011 debt-vote-governance fracture",
+    "2011-2012 CEXP compliance, banking acceleration and LPB-only concurso",
+    "2013-2017 servicing, workout, assignment and PP1041 information route",
+    "2018 funded exit and material-control conversion",
+    "2019-2022 valuation, debt-function, Community authority and title",
+    "2022-present CAM-HNT-investment-MYND operation and benefit",
+    "current proceedings, claimant-specific recovery and no-double-recovery"
+  ],
+  "p0_bridges": [
+    "bank obligation to valid default and acceleration",
+    "CEXP maintenance-key compliance to any other-entity possession inference",
+    "Community/CEXP to lawful exploitation succession",
+    "PH122/CAM credit to consideration, satisfaction and title",
+    "PP1041 authority, authorship, conflict and estate interest",
+    "ONA/Clubotel funded-exit conditions to exact failure and loss",
+    "security/preservation authority to 7-June material-control acts",
+    "finca/claimant/income/loss to remedy and no-double-recovery"
+  ],
+  "website": {
+    "strengths": [
+      "source-before-conclusion",
+      "economic unity with legal-perimeter separation",
+      "adverse and contrary evidence controls",
+      "214-identity local source/static parity; 204-identity exact live readback and the earlier 194 snapshot preserved historically",
+      "exact-main Pages, verifier and production-smoke success"
+    ],
+    "risks": [
+      "static-runtime correction divergence",
+      "search-crawl lag",
+      "specialist-publication versus current-head chronology drift",
+      "33 open PRs and stale candidate states",
+      "required status checks not enforced"
+    ]
+  },
+  "caret_scope": {
+    "control_id": "PD-CAEPR-CARET-UNITARY-DIGEST-20260826-01",
+    "control_file": "assets/data/caepr-caret-unitary-digest-v1.json",
+    "current_live_state": "PARTIAL_NOT_ALL_IS",
+    "confirmed": 21,
+    "denominator": 24,
+    "pending": 3,
+    "old_local_24_of_24_package": "SUPERSEDED_NOT_MERGEABLE_AS_IS",
+    "reasons": [
+      "prepared against earlier 16dd443 repository state",
+      "the local 214-record denominator and last live-verified 204-record denominator both differ from the stale package assumptions",
+      "proceeding IDs R-0011 through R-0017 are occupied",
+      "Matkator is reconciled as Matkator, S.L.U. from official BORME; its current primary NIF/status and title questions remain open without blocking identity",
+      "PP1041 and EH90 require current-registry admission; Clubotel is exact for the instrument-specific role while the distinct Ona Hotels / ONA perimeter remains pending"
+    ]
+  },
+  "specialist_modules": [
+    {
+      "module_id": "PD-ALV-MP357-MULTI-20260827-01",
+      "scope": "Magistrate-Judge Alberto López Villarrubia of the then Commercial Court No. 1 of Las Palmas de Gran Canaria / Concurso 36/2012 / Club Sei / Meeting Point 357/2024",
+      "analysis_order": [
+        "CRIMINAL_FIRST",
+        "INSOLVENCY",
+        "CIVIL_RECOVERY",
+        "INSTITUTIONAL_PUBLIC_FUNDS"
+      ],
+      "human_matrix": "archive/ALBERTO_MEETING_POINT_357_MULTIDIRECTIONAL_CRIMINAL_FIRST_MATRIX_27AUG2026.md",
+      "machine_matrix": "assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json",
+      "caret_control": "assets/data/caepr-caret-alberto-meeting-point-357-v1.json",
+      "first_hop_caret_control": "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
+      "publication_manifest": "publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json",
+      "caret_scope_type": "SEPARATE_SPECIALIST_EXHAUSTIVE_CENSUS",
+      "caret_scope": {
+        "confirmed": 31,
+        "pending": 0,
+        "suspended": 0,
+        "denominator": 31,
+        "occurrence_rows": 32,
+        "confirmed_occurrence_rows": 32,
+        "verdict": "ALL_IS_VERIFIED_FOR_STATED_SCOPE"
+      },
+      "first_hop_caret_scope": {
+        "confirmed": 61,
+        "pending": 69,
+        "suspended": 0,
+        "denominator": 130,
+        "verdict": "FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS"
+      },
+      "unitary_caret_scope_unchanged": false,
+      "public_routes": {
+        "es": "/es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/",
+        "en": "/en/alberto-lopez-villarrubia-meeting-point-357-active-estate/"
+      },
+      "publication_state": "LIVE_VERIFIED"
+    },
+    {
+      "module_id": "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
+      "scope": "FTI Touristik / Meeting Point / Club Sei / RICPE whistleblower continuity, cross-border actions and former-asset transaction monitoring in the Canary Islands and Spain",
+      "module_relation": "ADDITIVE_SPECIALIST_RELEASE_DOES_NOT_REWRITE_HISTORICAL_SOURCE_BASE",
+      "analysis_order": [
+        "CRIMINAL_FIRST",
+        "INSOLVENCY",
+        "CORPORATE_TRANSACTION_AND_CAPITAL",
+        "CIVIL_RECOVERY",
+        "INSTITUTIONAL_PUBLIC_FUNDS",
+        "WHISTLEBLOWER_AND_DATA_GOVERNANCE"
+      ],
+      "digest": "archive/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_DIGEST_27AUG2026.md",
+      "action_register": "ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.json",
+      "deletion_audit": "docs/deletion-audits/2026-08-27-fti-meeting-point-ricpe-continuity-thread.md",
+      "publication_manifest": "publication-manifests/fti-meeting-point-ricpe-continuity-20260827.json",
+      "caret_controls": {
+        "continuity_spine": {
+          "control_file": "assets/data/caepr-caret-fti-meeting-point-ricpe-continuity-v1.json",
+          "confirmed": 39,
+          "pending": 26,
+          "suspended": 0,
+          "denominator": 65,
+          "verdict": "FULL_FINITE_CONTINUITY_SPINE_CENSUS_PARTIAL_NOT_ALL_IS"
+        },
+        "professional_institutional": {
+          "control_file": "assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json",
+          "confirmed": 43,
+          "pending": 58,
+          "suspended": 0,
+          "denominator": 101,
+          "verdict": "FULL_ROLE_SELECTED_CENSUS_PARTIAL_NOT_ALL_IS",
+          "scope_boundary": "Thirteen frozen professional/institutional source surfaces; hotel-by-hotel and newly discovered transaction-counterparty objects require separate admission."
+        },
+        "identity_only": true,
+        "scopes_remain_separate": true
+      },
+      "action_state": {
+        "actions": 31,
+        "package_definitions": 12,
+        "mapped_proceeding_files": 18,
+        "external_action_authorized": false
+      },
+      "asset_transaction_monitor": {
+        "control": "ops/FTI_MEETING_POINT_CANARY_SPAIN_ASSET_TRANSACTION_MONITOR_CONTROL_27AUG2026.json",
+        "register": "assets/data/fti-meeting-point-canary-spain-asset-transaction-register-v1.json",
+        "schema": "assets/data/fti-meeting-point-canary-spain-asset-transaction-monitor-schema-v1.json",
+        "script": "scripts/monitor_fti_meeting_point_asset_transactions.py",
+        "workflow": ".github/workflows/monitor-fti-meeting-point-asset-transactions.yml",
+        "heritage_scopes": 3,
+        "entity_objects": 11,
+        "automated_safe_public_sources": 12,
+        "baseline_events": 2,
+        "open_gaps": 8,
+        "coverage": "BOUNDED_MONITOR_NOT_COMPREHENSIVE",
+        "automatic_public_promotion": false,
+        "latest_execution": {
+          "workflow_run_id": 33083264530,
+          "artifact_id": 9651009448,
+          "status": "PASS_FRESH_BASELINE",
+          "sources_fetched": 12,
+          "fetch_errors": 0,
+          "review_signals": 0,
+          "boundary": "NO_PRIOR_STATE_FRESH_BASELINE_NOT_PROOF_OF_NO_INTERVENING_CHANGE"
+        }
+      },
+      "judicial_title_control": {
+        "control": "archive/ALBERTO_LOPEZ_VILLARRUBIA_JUDICIAL_TITLE_AND_COURT_REORGANISATION_CONTROL_27AUG2026.md",
+        "historical_own_court_reference": "el Ilmo. Sr. D. Alberto López Villarrubia, Magistrado-Juez del entonces Juzgado de lo Mercantil n.º 1 de Las Palmas de Gran Canaria",
+        "current_reference": "el magistrado D. Alberto López Villarrubia, titular de la plaza n.º 1 de la Sección de lo Mercantil del Tribunal de Instancia de Las Palmas de Gran Canaria",
+        "former_court_3_boundary": "The three 24-Oct-2024 notices prove only the Public Insolvency Register attribution displayed in them; signature, substitution or allocation, capacity, knowledge, conflict and disclosure remain open pending the signed act and assignment trail."
+      },
+      "ricpe_resolver_boundary": {
+        "named_individual_resolver": false,
+        "provider_perimeter": "Ithikios / DIGITAL PRODUCTS DEVELOPMENT SL",
+        "rule": "The certificate or platform signature identifies the provider perimeter, not the human or RICPE organ that decided, configured, accessed or routed the case, circulated it to the Board or addressed conflict."
+      },
+      "external_action_authority": {
+        "repository_and_website_publication_authorized": true,
+        "email_authorized": false,
+        "filing_authorized": false,
+        "notice_authorized": false,
+        "portal_submission_authorized": false,
+        "authority_contact_authorized": false
+      },
+      "publication_evidence": {
+        "pull_request": 1111,
+        "validated_pr_head": "677906e303ad91cc436803d8d47e410deefbbd6f",
+        "merge_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+        "merge_tree_sha": "0f2b75347de048d449160a69d087b592bd51b35c",
+        "pages_run_id": 33083261099,
+        "pages_run_number": 1184,
+        "live_verifier_run_id": 33083264897,
+        "live_closeout_artifact_id": 9651057259,
+        "result": "PASS_EXACT_BYTES"
+      },
+      "publication_state": "DELETION_SAFE"
+    }
+  ],
+  "priority_sequence": [
+    "single-satisfaction credit ledger",
+    "certified PP1041 authority/authorship file",
+    "ONA/Clubotel closing and causation model",
+    "claimant-finca-income-remedy ledger",
+    "certified RPL2523 and Concurso36 denominators",
+    "CEXP succession and 7-June authority records",
+    "current-main CAEPR 24-object reconciliation",
+    "stale PR delta reconciliation",
+    "static source migration and required-check enforcement",
+    "fresh current-head off-GitHub preservation"
+  ],
+  "boundaries": [
+    "analytical control, not a finding",
+    "no collective guilt or automatic actor attribution",
+    "complaint or pleading is not proof of underlying conduct",
+    "later title, operation or benefit does not validate earlier authority",
+    "private or privileged native material is not automatically public"
+  ],
+  "human_record": "CURRENT_REVERSE_ENGINEERED_DIGEST.md",
+  "closeout_record": "archive/CURRENT_REVERSE_ENGINEERED_DIGEST_LIVE_CLOSEOUT_27AUG2026.md"
+}

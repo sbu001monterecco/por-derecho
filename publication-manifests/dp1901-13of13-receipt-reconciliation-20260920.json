@@ -1,0 +1,45 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-DP1901-13OF13-RECEIPT-20260920",
+  "owner": "EG745-13OF13-SOURCE-PRESERVATION-WORKER-20260920",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "source_base_sha": "0029415c77035785ea65ecf71655f96843ed4036",
+  "authority": "Current user instruction to preserve discovered material in GitHub and prepare the full E.G.745 response; this worker respects the active single integration lane.",
+  "control_tower_receipt": "https://github.com/sbu001monterecco/por-derecho/issues/1428#issuecomment-5752630961",
+  "expected_routes": {
+    "es": [
+      "es/dp-1901-2026/index.html"
+    ],
+    "en": [
+      "en/dp-1901-2026/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/data/dp1901-direct-action-state-20260920.json",
+    "assets/data/dp1901-eg745-cross-institutional-matrix-20260920.json",
+    "ops/2026-09-19_DP1901_EG745_FILING_STATUS_REGISTER.md",
+    "evidence/judicial/dp-1901-2026/README.md"
+  ],
+  "scope": [
+    "Reconcile A06 and A13 from official receipts",
+    "Update the existing thirteen-action programme to thirteen registrations and fourteen registration events",
+    "Preserve prior rejection/formality history and separate substantive E.G.745/counsel routes"
+  ],
+  "evidence_limits": [
+    "Receipt hashes fix the submitted attachment bytes, not the truth of their contents",
+    "A06 substantive handling and a distinct earlier national alzada registration remain unproved",
+    "A13 formalisation/admission and channel questions remain post-filing follow-ups",
+    "A02 supplemental receipt has no document hash",
+    "A12 extraneous operational tail remains disclosed",
+    "The E.G.745 substantive response remains a working draft, not filed"
+  ],
+  "privacy": "Public-safe registration metadata and source hashes only; no private correspondence, provider IDs, exact private filenames, signatures, addresses, privileged material or raw receipt/filing binaries.",
+  "validation": {
+    "local_scoped": "PASS: prior eleven registered action objects preserved; A12 note retained; registration count/uniqueness and bilingual row updates checked; private-locator scan passed",
+    "repository_checks": "PENDING_INTEGRATOR_EXACT_HEAD",
+    "deployment": "PENDING"
+  },
+  "closeout_rule": "Record actual accepted/merged/deployed/verified state in the active integration PR and Control Tower. This manifest is a preparation record and does not self-certify publication.",
+  "research_package_status": "The broader source-discovery and illustrated working-draft package is separately in preparation and is not certified complete by this bounded receipt delta."
+}

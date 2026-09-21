@@ -1,0 +1,416 @@
+{
+  "schema": "por-derecho.current-unitary-state.v1",
+  "control_id": "PD-UNITARY-STATE-20260826-01",
+  "as_of": "2026-08-26T22:58:56Z",
+  "status": "LIVE_VERIFIED",
+  "purpose": "Single synchronized routing layer separating repository state, public deployment state, evidence state and open implementation work.",
+  "repository": {
+    "repository": "sbu001monterecco/por-derecho",
+    "branch": "main",
+    "current_main_sha_at_preparation": "77e2ba300af45a953947160af63283a64512e876",
+    "source_publication_merge_sha": "77e2ba300af45a953947160af63283a64512e876",
+    "verified_tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
+    "current_main_commit_class": "material publication merge for the attributed unitary-enterprise position and public-safe RDM manifest control",
+    "preservation_contract": "ops/REPOSITORY_PRESERVATION_CONTRACT.json",
+    "current_state_rule": "Current fetched main and verified public Pages override older dated snapshots. Governance-only or deletion-closeout commits may advance main without changing reader-facing case propositions."
+  },
+  "publication": {
+    "public_host": "https://sbu001monterecco.github.io/por-derecho/",
+    "last_pages_deployment": {
+      "sha": "77e2ba300af45a953947160af63283a64512e876",
+      "tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
+      "run_id": 32942972472,
+      "run_number": 1128,
+      "status": "completed",
+      "conclusion": "success",
+      "completed_at": "2026-08-26T07:29:45Z"
+    },
+    "current_sha_edge_readback": {
+      "state": "LIVE_VERIFIED",
+      "workflow": ".github/workflows/verify-unitary-enterprise-attribution-live.yml",
+      "workflow_run_id": 32942975508,
+      "workflow_run_number": 4,
+      "job_id": 98097657687,
+      "head_sha": "77e2ba300af45a953947160af63283a64512e876",
+      "tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
+      "source_publication_sha": "77e2ba300af45a953947160af63283a64512e876",
+      "completed_at": "2026-08-26T07:29:55Z",
+      "verified_at": "2026-08-26T07:32:47Z",
+      "verified_url_count": 21,
+      "conclusion": "success",
+      "scope": [
+        "seven English reader and feed routes",
+        "seven Spanish reader and feed routes",
+        "two bilingual runtime assets",
+        "material-updates JSON",
+        "position addendum and native-analysis prompt",
+        "structured CURRENT_UNITARY_STATE JSON control",
+        "structured unitary-enterprise publication manifest"
+      ],
+      "rule": "Deployment success and exact-content verification remain separate recorded facts."
+    },
+    "live_urls": [
+      "https://sbu001monterecco.github.io/por-derecho/en/",
+      "https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-evidence-map/",
+      "https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-reverse-engineering/",
+      "https://sbu001monterecco.github.io/por-derecho/en/sun-park-criminal-engineering-investigation/",
+      "https://sbu001monterecco.github.io/por-derecho/en/unitary-record/",
+      "https://sbu001monterecco.github.io/por-derecho/en/updates/",
+      "https://sbu001monterecco.github.io/por-derecho/en/updates/feed.xml",
+      "https://sbu001monterecco.github.io/por-derecho/es/",
+      "https://sbu001monterecco.github.io/por-derecho/es/mapa-probatorio-penal-unitario/",
+      "https://sbu001monterecco.github.io/por-derecho/es/ingenieria-inversa-criminal-unitaria/",
+      "https://sbu001monterecco.github.io/por-derecho/es/ingenieria-forense-criminal-sun-park/",
+      "https://sbu001monterecco.github.io/por-derecho/es/registro-unitario/",
+      "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/",
+      "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml",
+      "https://sbu001monterecco.github.io/por-derecho/assets/prosecution-public-entry-20260821.js",
+      "https://sbu001monterecco.github.io/por-derecho/assets/criminal-engineering-investigation-20260819.js",
+      "https://sbu001monterecco.github.io/por-derecho/assets/data/material-updates-v1.json",
+      "https://sbu001monterecco.github.io/por-derecho/archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md",
+      "https://sbu001monterecco.github.io/por-derecho/archive/prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md",
+      "https://sbu001monterecco.github.io/por-derecho/ops/CURRENT_UNITARY_STATE.json",
+      "https://sbu001monterecco.github.io/por-derecho/publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json"
+    ],
+    "last_positive_production_smoke": {
+      "sha": "19fb3b7a5d502ece5f5359cc6cfe4bdc2f858b78",
+      "run_id": 32907717917,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "ac_removal_fees_thread": {
+      "control_id": "PD-AC-REM-FEES-UNITARY-20260826-01",
+      "state": "LIVE_VERIFIED",
+      "publication_merge_sha": "6e2b06de8242e9f98f38d4710399959e8f128224",
+      "publication_tree_sha": "37d7fb9ebf50bb4d0af353ba1796f85a00112ece",
+      "pages_run_id": 33020823527,
+      "pages_run_number": 1162,
+      "pages_conclusion": "success",
+      "verified_at": "2026-08-26T22:58:56Z",
+      "verified_url_count": 10,
+      "manifest": "publication-manifests/ac-removal-fees-unitary-criminal-analysis-20260826.json",
+      "rule": "This specialist publication joins the evidential thread without merging the distinct civil, insolvency, appellate, criminal or disciplinary proceeding identities and without converting allegations or procedural dismissals into merits findings."
+    }
+  },
+  "promoted_material_publication": {
+    "control_id": "PD-UNITARY-STATE-20260826-01",
+    "state": "LIVE_VERIFIED",
+    "control_date": "2026-08-26",
+    "source_main_sha": "5b1652e00151a3ea2944cd0519cdaf2e04da4453",
+    "publication_merge_sha": "77e2ba300af45a953947160af63283a64512e876",
+    "publication_tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
+    "publication_manifest": "publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json",
+    "position_addendum": "archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md",
+    "analysis_prompt": "archive/prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md",
+    "repository_latest_material_date": "2026-08-26",
+    "pages_run_id": 32942972472,
+    "live_verification_run_id": 32942975508,
+    "live_verification_job_id": 98097657687,
+    "live_verification": "EXACT_SHA_DEPLOYMENT_AND_21_URL_NO_CACHE_READBACK_VERIFIED",
+    "observed_at": "2026-08-26T07:32:47Z",
+    "rule": "LIVE_VERIFIED records exact publication and readback only; it does not convert the attributed allegation into a finding or the manifest into native evidence."
+  },
+  "latest_additive_publication": {
+    "control_id": "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
+    "state": "DELETION_SAFE",
+    "relation_to_promoted_material_publication": "ADDITIVE_RELEASE_DOES_NOT_REWRITE_HISTORICAL_26AUG_SOURCE_BASE",
+    "pull_request": 1111,
+    "validated_pr_head": "677906e303ad91cc436803d8d47e410deefbbd6f",
+    "publication_merge_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+    "publication_tree_sha": "0f2b75347de048d449160a69d087b592bd51b35c",
+    "pages_run_id": 33083261099,
+    "pages_run_number": 1184,
+    "current_digest_verification": {
+      "workflow_run_id": 33083264830,
+      "artifact_id": 9651039104,
+      "artifact_name": "current-reverse-engineered-digest-closeout-33083264830",
+      "artifact_sha256": "7fe597bc46d371a6e20b7c79525b66dc9f630cb2b4328d12a675ebd5d6f4bead",
+      "exact_route_count": 43,
+      "identity_registry_parity": 204,
+      "result": "PASS_EXACT_BYTES"
+    },
+    "fti_verification": {
+      "workflow_run_id": 33083264897,
+      "artifact_id": 9651057259,
+      "artifact_name": "fti-meeting-point-ricpe-live-closeout-33083264897",
+      "artifact_sha256": "6be6ce6c96a5c0d347f869dc7d418db39a19ede6a65fb8493e78e7d4bb51284e",
+      "exact_surface_count": 34,
+      "result": "PASS_EXACT_BYTES"
+    },
+    "external_action_authority": {
+      "email_authorized": false,
+      "filing_authorized": false,
+      "red_sara_age_notification_authorized": false,
+      "portal_submission_authorized": false,
+      "authority_contact_authorized": false
+    }
+  },
+  "specialist_continuity_candidates": [
+    {
+      "control_id": "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
+      "state": "DELETION_SAFE",
+      "relation_to_current_state": "ADDITIVE_RELEASE_DOES_NOT_REWRITE_HISTORICAL_LIVE_SOURCE_BASE",
+      "analysis_order": "CRIMINAL_FIRST_ALONGSIDE_INSOLVENCY_CORPORATE_CIVIL_PUBLIC_FUNDS_AND_WHISTLEBLOWER_LENSES",
+      "restart_controls": {
+        "digest": "archive/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_DIGEST_27AUG2026.md",
+        "action_register": "ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.json",
+        "deletion_audit": "docs/deletion-audits/2026-08-27-fti-meeting-point-ricpe-continuity-thread.md",
+        "publication_manifest": "publication-manifests/fti-meeting-point-ricpe-continuity-20260827.json",
+        "monitor_control": "ops/FTI_MEETING_POINT_CANARY_SPAIN_ASSET_TRANSACTION_MONITOR_CONTROL_27AUG2026.json",
+        "monitor_register": "assets/data/fti-meeting-point-canary-spain-asset-transaction-register-v1.json",
+        "continuity_caret": "assets/data/caepr-caret-fti-meeting-point-ricpe-continuity-v1.json",
+        "professional_institutional_caret": "assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json"
+      },
+      "caret_scopes": {
+        "continuity_spine": {
+          "confirmed": 39,
+          "pending": 26,
+          "suspended": 0,
+          "denominator": 65
+        },
+        "professional_institutional": {
+          "confirmed": 43,
+          "pending": 58,
+          "suspended": 0,
+          "denominator": 101
+        },
+        "identity_only": true,
+        "scopes_remain_separate": true
+      },
+      "action_state": {
+        "actions": 31,
+        "package_definitions": 12,
+        "mapped_proceeding_files": 18,
+        "external_action_authorized": false
+      },
+      "asset_transaction_monitor": {
+        "heritage_scopes": 3,
+        "entity_objects": 11,
+        "automated_safe_public_sources": 12,
+        "baseline_events": 2,
+        "open_gaps": 8,
+        "coverage": "BOUNDED_MONITOR_NOT_COMPREHENSIVE",
+        "automatic_public_promotion": false,
+        "latest_execution": {
+          "workflow_run_id": 33083264530,
+          "artifact_id": 9651009448,
+          "artifact_name": "fti-meeting-point-asset-transaction-monitor-33083264530",
+          "artifact_sha256": "e46dfb57876af42258678886ef294e102d49f3a29e3e76f086c9e575b865bc98",
+          "status": "PASS_FRESH_BASELINE",
+          "sources_fetched": 12,
+          "fetch_errors": 0,
+          "review_signals": 0,
+          "boundary": "NO_PRIOR_STATE_FRESH_BASELINE_NOT_PROOF_OF_NO_INTERVENING_CHANGE"
+        }
+      },
+      "judicial_title_rule": {
+        "historical_own_court_reference": "el Ilmo. Sr. D. Alberto López Villarrubia, Magistrado-Juez del entonces Juzgado de lo Mercantil n.º 1 de Las Palmas de Gran Canaria",
+        "current_reference": "el magistrado D. Alberto López Villarrubia, titular de la plaza n.º 1 de la Sección de lo Mercantil del Tribunal de Instancia de Las Palmas de Gran Canaria",
+        "former_court_3_boundary": "The 24-Oct-2024 notices establish only the Public Insolvency Register attribution displayed in them; signature, substitution or allocation, capacity, knowledge, conflict and disclosure remain open."
+      },
+      "ricpe_resolver_boundary": "The outward resolution names no individual resolver. The Ithikios / DIGITAL PRODUCTS DEVELOPMENT SL certificate or platform signature identifies the provider perimeter, not the human or RICPE organ that decided, configured, accessed or routed the case.",
+      "publication_evidence": {
+        "pull_request": 1111,
+        "validated_pr_head": "677906e303ad91cc436803d8d47e410deefbbd6f",
+        "merge_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+        "merge_tree_sha": "0f2b75347de048d449160a69d087b592bd51b35c",
+        "pages_run_id": 33083261099,
+        "pages_run_number": 1184,
+        "live_verifier_run_id": 33083264897,
+        "live_closeout_artifact_id": 9651057259,
+        "result": "PASS_EXACT_BYTES"
+      },
+      "authorization_boundary": {
+        "repository_and_website_publication_authorized": true,
+        "email_authorized": false,
+        "filing_authorized": false,
+        "notice_authorized": false,
+        "portal_submission_authorized": false,
+        "authority_contact_authorized": false
+      }
+    }
+  ],
+  "identity_registry": {
+    "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+    "control_date": "2026-09-05",
+    "counts": {
+      "total": 379,
+      "PERSON": 176,
+      "ORGANISATION": 99,
+      "STRUCTURE": 11,
+      "INSTITUTION": 49,
+      "PROCEEDING": 44
+    },
+    "archive_backfill": "OPEN",
+    "static_page_parity": "LOCAL_SOURCE_STATIC_CANDIDATE_NOT_YET_LIVE_VERIFIED",
+    "last_live_verified_counts": {
+      "total": 204,
+      "PERSON": 87,
+      "ORGANISATION": 71,
+      "STRUCTURE": 10,
+      "INSTITUTION": 18,
+      "PROCEEDING": 18
+    },
+    "candidate_control": "PD-ALV-MP357-CARET-20260827-01",
+    "candidate_controls": [
+      "PD-ALV-MP357-CARET-20260827-01",
+      "PD-ALV-MP357-FIRST-HOP-CARET-20260827-01",
+      "PD-FTI-MP-RICPE-CARET-20260827-01",
+      "PD-FTI-MP-PROF-INST-CARET-20260827-01"
+    ],
+    "separate_caret_scopes": {
+      "unitary": {
+        "confirmed": 21,
+        "pending": 3,
+        "denominator": 24
+      },
+      "specialist_six_surface": {
+        "confirmed": 31,
+        "pending": 0,
+        "denominator": 31,
+        "occurrence_rows": 32,
+        "confirmed_occurrence_rows": 32
+      },
+      "specialist_first_hop": {
+        "confirmed": 61,
+        "pending": 69,
+        "denominator": 130
+      },
+      "fti_continuity_spine": {
+        "confirmed": 39,
+        "pending": 26,
+        "denominator": 65
+      },
+      "fti_professional_institutional": {
+        "confirmed": 43,
+        "pending": 58,
+        "denominator": 101
+      }
+    },
+    "governing_boundary": "Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability.",
+    "total": 379,
+    "INSTITUTION": 49,
+    "PROCEEDING": 44
+  },
+  "material_updates": {
+    "canonical_source": "assets/data/material-updates-v1.json",
+    "latest_material_date": "2026-09-18",
+    "repository_latest_material_date": "2026-09-18",
+    "last_live_verified_material_date": "2026-08-28",
+    "languages": [
+      "es",
+      "en"
+    ],
+    "public_routes": [
+      "/es/actualizaciones/",
+      "/en/updates/"
+    ],
+    "public_parity": "REPOSITORY_2026-09-18_PENDING_PUBLICATION_LAST_LIVE_VERIFIED_2026-08-28",
+    "latest_live_verified_publication": {
+      "control_id": "PD-SP-AEAT-PINK-DILIGENCE-20260828-01",
+      "state": "LIVE_VERIFIED",
+      "pull_request": 1167,
+      "validated_head": "a743767c566dd28afca66150849d18da7baabcc2",
+      "publication_merge_sha": "949405e4cec2fd6d959662dd0fc6f27cfdc45f19",
+      "publication_tree_sha": "84cffb1bd24d0a28ebd3c5ec947d065f14b05026",
+      "pages_run_id": 33204179559,
+      "pages_run_number": 1239,
+      "pages_completed_at": "2026-08-28T19:32:17Z",
+      "live_verified_at": "2026-08-28T19:46:16Z",
+      "verified_url_count": 33,
+      "manifest": "publication-manifests/aeat-pink-vigilancia-aduanera-20220406-publication-20260828.json"
+    },
+    "pending_publication": {
+      "control_id": "PD-CUATRECASAS-ETJ-DP748-20260918-01",
+      "state": "MERGED_AWAITING_PAGES_READBACK",
+      "material_date": "2026-09-18",
+      "routes": [
+        "/en/cuatrecasas-etj163-dp748-18-september-2026/",
+        "/es/cuatrecasas-etj163-dp748-18-septiembre-2026/",
+        "/en/updates/",
+        "/es/actualizaciones/"
+      ],
+      "rule": "Do not call the 18-Sep material live verified until a public GitHub Pages readback is observed.",
+      "controlling_pr": 1548,
+      "merge_sha": "cf73bd7cffd65ad08f48d3cc850b692fc17aec23",
+      "merged_to": "main"
+    }
+  },
+  "procedural_checkpoints": {
+    "concurso": "Concurso 36/2012; LPB is the sole debtor and the proceeding does not absorb Matkator, CEXP, Aweswell, other owners or the whole hotel by association.",
+    "calificacion_appeal": "RPL 2523/2025; the last located signed record scheduled deliberation, vote and decision for 4 June 2026. A later merits decision, service record and finality/remedy certificate remain not located in the controlled corpus.",
+    "valencia": "ORD 1859/2023-9 is recorded for hearing on 28 January 2027 at 10:00, subject to any later signed superseding act.",
+    "owner_network": "The AP 89/2014 seven-claimant-owner core and the wider Montelanza/Molina perimeter remain separate; PR #1016 contains a unique source-graded delta that must be rebuilt on current main rather than merged stale.",
+    "prescription_recovery": "The current recovery control requires claim-by-claim clocks and prohibits generic assertions that criminal proceedings suspend every civil or caducity period."
+  },
+  "top_evidence_gaps": [
+    "Signed later RPL 2523/2025 merits judgment or order, service record and finality/remedy certification",
+    "Certified complete Concurso 36/2012 docket and transmitted-record denominator",
+    "Finca-by-finca mapping of the AP 89/2014 eighteen bungalows and the wider 2008 residual ownership perimeter",
+    "Original 2011 powers, voting entitlement and debt schedules",
+    "Complete certified DP 1132/2018 and Rollo 1010/2018 record",
+    "Reconciliation of each 2022 Acosta Matos entity, NIF, power, finca, coefficient and vote",
+    "Reproducible bridge from definitive credit through the EUR 13,168,082.02 threshold/consideration, EUR 400,000 line, proceeds, fees, creditor payments and surplus",
+    "Claimant-specific hotel-income, asset-control, counterfactual, damage, remedy and no-double-recovery ledger"
+  ],
+  "pull_requests": {
+    "observed_open_count": 36,
+    "observed_at": "2026-08-25T23:56:35Z",
+    "ledger": "ops/PR_RECONCILIATION_LEDGER.json",
+    "rule": "Do not merge stale PRs wholesale. Rebuild or extract unique validated deltas on current main, rerun current controls and close or supersede explicitly."
+  },
+  "canonical_routes": {
+    "home": [
+      "/es/",
+      "/en/"
+    ],
+    "updates": [
+      "/es/actualizaciones/",
+      "/en/updates/"
+    ],
+    "unitary_evidence_map": [
+      "/es/mapa-probatorio-penal-unitario/",
+      "/en/unitary-criminal-evidence-map/"
+    ],
+    "unitary_reverse_engineering": [
+      "/es/ingenieria-inversa-criminal-unitaria/",
+      "/en/unitary-criminal-reverse-engineering/"
+    ],
+    "unitary_criminal_engineering": [
+      "/es/ingenieria-forense-criminal-sun-park/",
+      "/en/sun-park-criminal-engineering-investigation/"
+    ],
+    "unitary_record": [
+      "/es/registro-unitario/",
+      "/en/unitary-record/"
+    ],
+    "identity": [
+      "/es/registro-identidad-materia/",
+      "/en/matter-identity-registry/"
+    ],
+    "calificacion": [
+      "/es/calificacion-rpl-2523-mapa-prueba/",
+      "/en/calificacion-rpl2523-evidence-map/"
+    ],
+    "recovery": [
+      "/es/objetivos-recuperacion-restitucion/",
+      "/en/recovery-restitution-objectives/"
+    ],
+    "prescription_recovery": [
+      "/es/prescripcion-caducidad-danos-medidas-cautelares/",
+      "/en/limitation-damages-interim-relief-recovery/"
+    ]
+  },
+  "superseded_snapshots": {
+    "PD-UNITARY-STATE-20260825-01": "The 25-Aug-2026 specialist release remains preserved as the immediately preceding live-verified control; the 26-Aug-2026 control now governs the unitary-enterprise material.",
+    "ops/CURRENT_STATE.json": "Historical 24-Aug-2026 routing snapshot is preserved and the current path points to this synchronized specialist state while retaining compatibility fields.",
+    "ops/PRODUCTION_STATUS.json": "The historical PR #922 live baseline remains preserved alongside the later unitary-control-plane deployment and readback evidence."
+  },
+  "next_actions": [
+    "Acquire and analyse authorised native email, attachment and Drive batches under the master prompt; keep manifest-only propositions unsupported until native authentication and testing.",
+    "Rebuild the unique PR #1016 owner/court-party delta on current main without identity collisions.",
+    "Create the source-proposition register and platform recovery/no-double-counting ledger.",
+    "Add bilingual unitary-status and recovery-denominator reader routes from canonical data.",
+    "Move core reader facts gradually from stacked runtime loaders into generated static HTML."
+  ]
+}

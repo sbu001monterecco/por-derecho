@@ -35,6 +35,17 @@
     d.head.appendChild(shell);
   }
 
+  // Exact emailed PwC/Carlos canonical pages: dominant 19-Jul-2016 penal-route instruction,
+  // visually linked to the later documented RICPE / Grupo Acosta Matos professional convergence.
+  // The module preserves the evidential boundary: the 2016 email did not itself name RICPE/Acosta Matos.
+  if(script && !d.querySelector('script[data-pd-pwc-penal-dominant]')){
+    const pwc=d.createElement('script');
+    pwc.src=new URL('pwc-penal-route-dominant-20260819.js?v=20260819a',script.src).href;
+    pwc.async=false;
+    pwc.dataset.pdPwcPenalDominant='true';
+    d.head.appendChild(pwc);
+  }
+
   const lang=(d.documentElement.lang||'en').toLowerCase().startsWith('es')?'es':'en';
   const strings=lang==='es'?{
     label:'Compartir esta página',linkedin:'LinkedIn',whatsapp:'WhatsApp',email:'Email',copy:'Copiar enlace',copied:'Enlace copiado',copyPrompt:'Copiar enlace:'

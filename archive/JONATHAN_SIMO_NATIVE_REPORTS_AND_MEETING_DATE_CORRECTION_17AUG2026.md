@@ -13,7 +13,7 @@ The prior gate deliberately preserved a 10-Jun / 11-Jun discrepancy because the 
 
 A newly recovered contemporaneous carrier email now materially resolves that issue.
 
-**VERIFIED PRIMARY EMAIL — Gmail `1553c7d8436c9a0d`, 10-Jun-2016 22:45, subject `Re: Deuda de Comunidad según Junta del 26 de Abril de 2016`, from `sbu001@summersvillages.com` to Juan Tomás Parrilla Suárez.**
+**VERIFIED PRIMARY EMAIL — Gmail `SP-PRV-LCTR-GM-D71B0F191ADC1A25AB51`, 10-Jun-2016 22:45, subject `Re: Deuda de Comunidad según Junta del 26 de Abril de 2016`, from `SP-PRV-LCTR-EM-A4E1A0C00F1313B3456F` to Juan Tomás Parrilla Suárez.**
 
 The email attaches `Análisis Gastos de la Cdad Explotación v3.docx` and states:
 
@@ -41,7 +41,7 @@ This correction must propagate to the existing ES/EN transcript pages, Jonathan 
 
 ## 2. Native `Análisis Gastos de la Cdad Explotación v3.docx` recovered
 
-**VERIFIED NATIVE DOCUMENT:** the Gmail attachment was recovered from message `1553c7d8436c9a0d` and analysed as a native DOCX.
+**VERIFIED NATIVE DOCUMENT:** the Gmail attachment was recovered from message `SP-PRV-LCTR-GM-D71B0F191ADC1A25AB51` and analysed as a native DOCX.
 
 ### Document metadata
 
@@ -110,7 +110,7 @@ The sender expressly characterises the Community credit as false/fraudulent and 
 
 ## 4. Signed April-2016 precursor report
 
-**VERIFIED PRIMARY DOCUMENT — Drive ID `1dG4xCEgCSSu-tGIk7-0dp8h9nxCQahXD`, `Informe Cdad Explotación (Abril 2016).pdf`.**
+**VERIFIED PRIMARY DOCUMENT — Drive ID `SP-PRV-LCTR-GD-85620E9EFBD27143A37A`, `Informe Cdad Explotación (Abril 2016).pdf`.**
 
 The signed report is dated **22 April 2016** and signed by Jonathan Simó Morales under the CLS / Luis F. Simó Consultoría heading.
 
@@ -131,7 +131,7 @@ This is the signed precursor to compare against the native 31-May/6-Jun v3 revis
 
 ## 5. Separate `INFORME ECONÓMICO FINANCIERO PINK CANARY`
 
-**VERIFIED PRIMARY DOCUMENT — Gmail attachment recovered from message `15fa37ad25b7cbf1`.**
+**VERIFIED PRIMARY DOCUMENT — Gmail attachment recovered from message `SP-PRV-LCTR-GM-B1793F6B4EEE2E877CE3`.**
 
 The document identifies Jonathan Simó Morales as economist, Colegio de Economistas de Santa Cruz de Tenerife nº 1.298.
 
@@ -149,7 +149,7 @@ The report identifies its evidential basis as analysed invoices, Modelo 190 for 
 
 ## 6. June-2017 confirmation of prior delivery in Las Palmas
 
-**VERIFIED PRIMARY CORRESPONDENCE — Drive ID `1wbqotDSUt-sMZOQwfKF3GfNpABIkSvmo`, `certificado de pagos por asesor jonathan simo 12 junio 2017.pdf`.**
+**VERIFIED PRIMARY CORRESPONDENCE — Drive ID `SP-PRV-LCTR-GD-92A90D1E7523C7D50105`, `certificado de pagos por asesor jonathan simo 12 junio 2017.pdf`.**
 
 In the embedded June-2017 chain Jonathan says:
 
@@ -198,6 +198,6 @@ The presently verified sequence is now:
 
 ## 9. Search result on direct AC transmission in this pass
 
-A targeted Gmail search for June–July 2016 correspondence directly to/from Borja or `rfranco@crvconsultores.com` combining Jonathan/report/Community-debt terms returned **no direct match in that query**.
+A targeted Gmail search for June–July 2016 correspondence directly to/from Borja or `SP-PRV-LCTR-EM-59D5A6C2EDFD0EA37956` combining Jonathan/report/Community-debt terms returned **no direct match in that query**.
 
 That is an open retrieval result only. It does **not** prove the report was never transmitted to the AC; continue broader searches by attachment, intermediary counsel, meeting scheduling, forwarded chains, LexNET/court filings and non-obvious filenames.

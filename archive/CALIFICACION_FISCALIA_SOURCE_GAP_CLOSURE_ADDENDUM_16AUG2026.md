@@ -15,9 +15,9 @@ A fresh connector-backed source-completion scan on 16-Aug-2026 recovered primary
 
 ### Source
 
-Native Gmail attachment recovered from a contemporaneous Fiscalía email/forward chain, subject `DIP 20/2026`:
+Native attachment recovered from a contemporaneous Fiscalía private-mailbox/forward chain; subject category: official DIP 20/2026 procedural notice (exact private subject withheld):
 
-- attachment reviewed: `document - 2026-01-30T111156.445.pdf`;
+- attachment reviewed: decree PDF, public source reference `MF-DIP20-SRC-DECR-01` (exact private filename withheld);
 - SHA-256 of the recovered attachment: `efd4eee1d4c9f4bddf2d5ca1f0c413f18bbb83ad19d2535b554cdb2f66ffb501`;
 - document heading: **Fiscalía Provincial de Santa Cruz de Tenerife**;
 - procedure: **Diligencias de investigación preprocesal nº 0000020/2026**;
@@ -54,9 +54,9 @@ The decree does **not** establish the truth of the underlying RIC, falsity, tax 
 
 ### Source
 
-Native Gmail attachment recovered from the Jan–Feb-2026 Fiscalía chain:
+Native private-mailbox attachment recovered from the Jan–Feb-2026 Fiscalía chain; public-safe custody reference `MF-EG19-SRC-DEC-01`:
 
-- filename: `EG 19-26 DECRETO INHIBICIÓN FISCALÍA DE ÁREA DE ARRECIFE DE LANZAROTE.pdf`;
+- exact private filename and provider locator withheld;
 - SHA-256: `9de1a10231631606501c08feb3cf44e9a3358755d6357401ae388d4d56e8fed7`;
 - 5-page scanned institutional PDF;
 - heading: **Fiscalía Provincial de Valencia — Jefatura**;
@@ -91,10 +91,9 @@ This verifies the **territorial/procedural transfer**, not that Arrecife opened 
 
 ### Source
 
-Google Drive primary PDF located and directly read:
+Private-custody primary PDF located and directly read:
 
-- `7. PLAN DE LIQUIDACION DE LUCHY 9FEB2018.pdf`;
-- Drive ID `1Z2n4dGM6HDAsntMmNEgghxId_MkFh6HO`;
+- public-safe custody reference `MF-C36-SRC-PLAN-01` (exact private filename and Drive locator withheld);
 - title inside: **PROPUESTA DE PLAN DE LIQUIDACION DE LUCHY PLAYA BLANCA, S.L.U. — Concurso ordinario nº 36/2012**.
 
 Duplicate/copy variants of the same Plan title also exist in Drive and must not automatically be treated as separate evidence.
@@ -121,10 +120,9 @@ This does not by itself close custody/authentication questions such as certified
 
 ### Source
 
-Google Drive primary court PDF directly read:
+Private-custody primary court PDF directly read:
 
-- `12. Auto Cancelacion Venta de Locales - 24OCT2019.pdf`;
-- Drive ID `1AkNiggZMZAXJ0U7lefM4U8tFeI6tj5l0`;
+- public-safe custody reference `MF-C36-SRC-NONCONV-01` (exact private filename and Drive locator withheld);
 - Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria;
 - Concurso ordinario 36/2012;
 - **Auto dated 24 October 2019**.
@@ -251,7 +249,7 @@ Still open / requiring stronger originals or complete files:
 
 1. certified/full JV 1260/2011 file, hearing, judgment/appeal/finality;
 2. complete native 12-Jul-2016 burofax/annex/receipt package and item-by-item €2,874,076.19 reconciliation;
-3. complete certified DI 248/2018 expediente, original 17-Oct-2018 complaint, annexes, performed diligences and complete archive file;
+3. complete certified DI 248/2018 expediente, the originating 12-Sep-2018 complaint, the AC's distinct 17-Oct-2018 testimony request, annexes, performed diligences and complete archive file;
 4. original CAM offer / Plan Annex II as a standalone native source and original valuation(s), notwithstanding the Plan/Auto quotations;
 5. native 28-Nov-2018 protocol-2150 deed and payment/bank evidence;
 6. original 12-Dec-2018 Diligencia de Ordenación;

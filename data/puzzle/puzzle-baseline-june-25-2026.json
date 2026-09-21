@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "control_id": "PD-PUZZLE-BASELINE-20260905-01",
+  "canonical_filed_baseline": {
+    "date": "2026-06-25",
+    "title": "DENUNCIA PENAL DOCUMENTADA AUTÓNOMA - NEXUS 36 - ACTUALIZADA PARA PRESENTACIÓN EL 25 DE JUNIO DE 2026",
+    "destination": "Decanato de los Juzgados de Las Palmas de Gran Canaria",
+    "status": "FILED_PARTY_PLEADING_BASELINE",
+    "use": "Canonical filed factual/narrative baseline for the current Puzzle reading layer.",
+    "limit": "A filed pleading records the complainant's factual account, requests and legal characterisations. It is not a judicial merits finding."
+  },
+  "hierarchy": [
+    {"rank": 1, "layer": "25 June 2026 NEXUS 36 filing", "status": "CANONICAL_FILED_NARRATIVE_BASELINE"},
+    {"rank": 2, "layer": "20/21 July 2026 DP 1956/2026 and DP 1901/2026 Puzzle companion", "status": "LATER_PROCEDURAL_LENS"},
+    {"rank": 3, "layer": "PUZZLE 2024 — 32-page original visual", "status": "HISTORICAL_VISUAL_EXHIBIT"},
+    {"rank": 4, "layer": "Current 2026 primary documents, official outcomes and source controls", "status": "CURRENT_EVIDENCE_CONTROL"}
+  ],
+  "method": [
+    "authority and title first",
+    "actual act and expenditure second",
+    "individual attribution",
+    "arithmetic and legal characterisation last",
+    "separate documentary facts, attributed statements, provisional inferences and open verification questions",
+    "absence of a document is not automatic proof of criminal conduct",
+    "read related tracks unitarily without automatic procedural joinder"
+  ],
+  "public_funds_boundary": {
+    "status": "OPEN_VERIFICATION",
+    "question": "Whether third-party units, rooms, jobs, assets or rights were improperly, misleadingly or over-broadly included in eligibility, valuation, financing, tax-incentive, subsidy or public-funding calculations.",
+    "required_fields": ["programme or call", "public authority", "beneficiary legal person", "declared asset/unit/room/job perimeter", "title/availability/control basis", "eligible expenditure", "national/regional/EU funding source", "amount", "audit/verification", "payment/recovery/correction"],
+    "limit": "No autonomous finding of subsidy fraud or harm to EU financial interests is made unless the grant, beneficiary, declaration, eligibility criteria, award, amount, funding source, eligible expenditure and causation are evidenced."
+  },
+  "capacity_and_crossborder": [
+    {"capacity": "directly interested / allegedly injured economic party", "status": "CLAIMANT_POSITION"},
+    {"capacity": "informant / alertador since 2021", "status": "STATED_IN_FILED_BASELINE", "limit": "Protection under Spanish Law 2/2023 and EU law depends on statutory personal/material scope and conditions; the label alone does not confer protected status."},
+    {"capacity": "Aweswell Limited — UK foreign investor in Spain", "status": "STATED_IN_FILED_BASELINE", "limit": "Relevant to investment, alleged harm and access-to-justice context; it does not by itself create a special jurisdiction, treaty claim or arbitration right."},
+    {"capacity": "German-law perimeter", "status": "CONDITIONAL", "limit": "Any German whistleblower-law or other German-law relevance requires the necessary German factual, professional, reporting or transaction nexus."},
+    {"capacity": "UK-law perimeter", "status": "CONDITIONAL", "limit": "UK citizenship or investment ownership alone does not establish statutory whistleblower protection; the relevant legal relationship and disclosure conditions must be shown."}
+  ],
+  "continuity_rule": "Corrections supersede rather than erase. Every actor, entity, proceeding, public-funds question and evidence object must retain dated capacity, source, status, limitation, reverse links and a route back to the Puzzle."
+}

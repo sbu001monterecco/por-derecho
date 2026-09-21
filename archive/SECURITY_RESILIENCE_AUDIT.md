@@ -1,5 +1,11 @@
 # SECURITY & RESILIENCE AUDIT
 
+> **Current continuation — 28 August 2026:** read
+> `docs/deletion-audits/2026-08-28-github-hostile-takedown-protection-continuity.md`.
+> It preserves the later live audit, the exact implemented/open/unverified
+> distinctions and the staged protection programme. The baseline below remains
+> historical context and must not be treated as proof of current settings.
+
 Scope: repository/source-control and recovery posture visible to ChatGPT. This is not a substitute for reviewing GitHub account-level settings in the UI. Do not change high-impact account controls without explicit user approval.
 
 ## Current strengths observed

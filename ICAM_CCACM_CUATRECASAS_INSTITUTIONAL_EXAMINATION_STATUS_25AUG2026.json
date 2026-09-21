@@ -1,0 +1,45 @@
+{
+  "control_date": "2026-08-25",
+  "scope": "ICAM/CCACM Cuatrecasas institutional examination",
+  "governing_principle": "institutional support means support for a reasoned examination, not support for a party",
+  "procedural_gate": {
+    "ccacm_193_2026": "formally_open_no_final_resolution_located",
+    "june_26_position": "supplement_joined_but_no_rolling_reply_or_transfer_to_icam",
+    "next_broad_filing_recommended": false,
+    "permitted_trigger_for_future_filing": [
+      "express_institutional_request",
+      "genuinely_supervening_dated_essential_fact_not_previously_available"
+    ]
+  },
+  "preserved_controls": {
+    "first_chain": "434/26 -> RE-001971/26 -> technical intake 493/26 -> CCACM 193/2026",
+    "second_chain": "1487/26 -> RE-007622/26 -> technical intake 1566/26 -> CCACM forwarding not certified",
+    "identity_lock": "ICAM != CCACM != ICALPA != ICATF",
+    "chronology": "2018-2020 versus more-than-seven-years remains unreconciled",
+    "ccacm_25_august": "two separate receipt acknowledgements only"
+  },
+  "responsibility_levels": {
+    "individual": "date_author_signature_and_personal_act_must_be_proved",
+    "partner": "instruction_authorisation_supervision_or_ratification_must_be_proved",
+    "professional_firm": "article_128_concurrent_or_direct_imputability_threshold_must_be_met"
+  },
+  "minimum_questions": [
+    "client_instructor_beneficiary_invoiced_entity_payer_note_issuer_debtor",
+    "engagement_end_and_scope",
+    "former_client_conflict_analysis",
+    "secrecy_access_and_information_barriers",
+    "instruction_authorisation_supervision_of_2024_2026_acts",
+    "review_of_70_percent_adjudication_and_assignment_reservation",
+    "ethics_risk_compliance_or_management_escalation",
+    "documented_exculpatory_account"
+  ],
+  "public_safe_conclusion": "later acts under the firm name in pursuit of its claimed credit justify finite governance questions; they do not prove firm-wide misconduct",
+  "prohibited_inferences": [
+    "receipt_equals_acceptance",
+    "partner_status_equals_authorship",
+    "firm_membership_equals_firm_liability",
+    "later_effects_equal_continuing_infringement",
+    "missing_document_equals_nonexistence",
+    "connected_assignee_or_collusion_without_primary_proof"
+  ]
+}

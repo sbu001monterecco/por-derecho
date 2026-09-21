@@ -59,7 +59,7 @@
 
   const photo = isEs
     ? `<figure class="judge-approved-photo"><img src="${asset('alberto-lopez-villarrubia-supplied-16aug2026.jpg')}" alt="Fotografía suministrada para la página de rendición de cuentas del magistrado Alberto López Villarrubia"><figcaption>Fotografía suministrada por Gil Marer para este expediente público. La identificación utilizada por Por Derecho procede del registro documental y de la atribución del suministrador, no de reconocimiento facial realizado por ChatGPT.</figcaption></figure>`
-    : `<figure class="judge-approved-photo"><img src="${asset('alberto-lopez-villarrubia-supplied-16aug2026.jpg')}" alt="Photograph supplied for the accountability page concerning Judge Alberto López Villarrubia"><figcaption>Photograph supplied by Gil Marer for this public dossier. Por Derecho's identification comes from the documentary record and the supplier's attribution, not facial identification performed by ChatGPT.</figcaption></figure>`;
+    : `<figure class="judge-approved-photo"><img src="${asset('alberto-lopez-villarrubia-supplied-16aug2026.jpg')}" alt="Photograph supplied for the accountability page concerning Magistrate-Judge Alberto López Villarrubia"><figcaption>Photograph supplied by Gil Marer for this public dossier. Por Derecho's identification comes from the documentary record and the supplier's attribution, not facial identification performed by ChatGPT.</figcaption></figure>`;
 
   if (isEs) {
     section.innerHTML = `<div class="shell judge-approved-wrap"><div class="judge-approved-grid">${photo}<div>
@@ -85,7 +85,7 @@
     section.innerHTML = `<div class="shell judge-approved-wrap"><div class="judge-approved-grid">${photo}<div>
       <article class="judge-approved-card">
         <div class="judge-approved-kicker">MY APPROVED ACCUSATION · PLAIN ENGLISH · ALLEGED JUDICIAL PREVARICATION</div>
-        <h2>I accuse Judge Alberto López Villarrubia of knowingly converting a materially false and selective insolvency narrative into punitive judicial findings against me.</h2>
+        <h2>I accuse Magistrate-Judge Alberto López Villarrubia of knowingly converting a materially false and selective insolvency narrative into punitive judicial findings against me.</h2>
         <p class="judge-approved-core"><strong>I am not simply saying that a judge got the case wrong.</strong> My accusation is that, by the time he signed Judgment 163/2023, the court had already been confronted over years with a record showing attempts to preserve LPB, keep the hotel business alive, obtain financing, pay or clarify debts, find a lawful exit from insolvency, challenge debt and interest calculations, and protect company and third-party assets from private actors.</p>
         <p>In June 2018 there was also a contemporaneously documented attempt to put before the court a <strong>structured and financeable route</strong> to pay the insolvency liabilities, restore LPB's independence and continue operating the hotel. I say that history is fundamentally incompatible with the later picture of me as someone who simply obstructed, failed to cooperate, abandoned the company or deliberately aggravated its insolvency.</p>
         <p>My accusation is that Judge López Villarrubia did not merely fail to correct the insolvency administrator's account. In Judgment 163/2023 he <strong>adopted selected parts of that account as his own judicial findings</strong>, even though other important accusations made by the insolvency administrator and the prosecutor were rejected or substantially narrowed by the judgment itself.</p>

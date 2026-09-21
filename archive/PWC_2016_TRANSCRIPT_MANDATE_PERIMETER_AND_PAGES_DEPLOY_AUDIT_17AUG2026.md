@@ -11,9 +11,9 @@ Preserve the results of the 17 August 2026 rescan independently of the originati
 
 Connected Google Drive contains at least the following 11 June 2016 transcript derivatives:
 
-- Google Doc ID `1cw4LOVbWvSehlMuah5BfCUwOWRRs0934PZryM41i5pE` — long HappyScribe transcription;
-- Google Doc ID `1eCmHIoB_OS1hM4GlhUQG7isPmQjbNwKgp-DsglLDwSI` — separate transcript derivative;
-- PDF transcript derivative, Drive ID `1bKmXc60sO3fdHv1CuE1fgRuF8fv9BNbP`.
+- Google Doc ID `SP-PRV-LCTR-GD-57D4661439C25F624CC0` — long HappyScribe transcription;
+- Google Doc ID `SP-PRV-LCTR-GD-F02B7DFC102414C22724` — separate transcript derivative;
+- PDF transcript derivative, Drive ID `SP-PRV-LCTR-GD-014031C630471470CFBE`.
 
 The original source filenames contain the identity of the Project-side recorder. **Derived/public repository references must not repeat that name.** Canonical description:
 

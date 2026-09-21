@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0.0",
+  "control_id": "PD-EVIS-20260904-01",
+  "effective_date": "2026-09-04",
+  "status": "CANONICAL_REPOSITORY_WIDE",
+  "policy_path": ".github/governance/EVIDENCE_VISIBILITY_IMAGE_OCR_REDACTION_AND_CONTINUITY_STANDARD_04SEP2026.md",
+  "schema_path": ".github/evidence-intelligence/schemas/evidence-visibility.schema.json",
+  "applies_to": {
+    "roles": [
+      "Worker",
+      "Integrator",
+      "Verifier",
+      "Publication Coordinator",
+      "Continuity / closeout role"
+    ],
+    "surfaces": [
+      "branches",
+      "pull requests",
+      "evidence packages",
+      "public pages",
+      "source registers",
+      "timelines",
+      "actor and entity pages",
+      "Puzzle and network views",
+      "thread and workspace handoffs"
+    ],
+    "formats": [
+      "PDF",
+      "DOCX",
+      "XLSX",
+      "PPTX",
+      "email",
+      "message",
+      "image",
+      "scan",
+      "screenshot",
+      "audio",
+      "video",
+      "web capture",
+      "physical receipt"
+    ]
+  },
+  "roles": {
+    "Worker": {
+      "must": [
+        "register every evidence-bearing source before substantive reliance",
+        "preserve or identify the native source and fingerprint it when available",
+        "declare searchable-text, visual-evidence and redaction states",
+        "carry exact provenance, variant and open-gap information into the handoff"
+      ],
+      "must_not": [
+        "call a text-only rendition visually complete",
+        "invent or synthesize an evidence image",
+        "silently conflate same-named binaries with different hashes"
+      ]
+    },
+    "Integrator": {
+      "must": [
+        "reconcile variants and preserve all unique source content",
+        "ensure the original/text/image triad survives integration",
+        "render source-derived full-page images when the native source is available",
+        "keep restricted originals out of public Git while preserving custody references",
+        "add actor, entity, proceeding, event and page links"
+      ],
+      "must_not": [
+        "drop open visual or OCR gaps during merge",
+        "replace native custody with a public derivative"
+      ]
+    },
+    "Verifier": {
+      "must": [
+        "validate paths, hashes, page order, OCR linkage and redaction safety",
+        "confirm that public images derive from the public derivative",
+        "perform route and asset readback before LIVE_VERIFIED",
+        "report partial and blocked states truthfully"
+      ],
+      "must_not": [
+        "infer completeness from deployment success alone",
+        "approve reversible or meaning-altering redaction"
+      ]
+    },
+    "Publication Coordinator": {
+      "must": [
+        "authorize the publication boundary and public derivative",
+        "present source images with searchable text and provenance",
+        "record deployed commit and independent live verification",
+        "preserve allegation, counter-evidence and legal-effect boundaries"
+      ],
+      "must_not": [
+        "publish private data merely to satisfy visual completeness",
+        "claim exact filing identity without supporting evidence"
+      ]
+    },
+    "Continuity / closeout role": {
+      "must": [
+        "carry the structured evidence-visibility register into the next thread or workspace",
+        "preserve every unresolved source, image, OCR, translation, provenance and redaction gap",
+        "name the next owner role and action",
+        "prevent deletion while unique evidence state remains unregistered"
+      ],
+      "must_not": [
+        "close continuity using prose alone",
+        "erase pending states because a public summary exists"
+      ]
+    }
+  },
+  "handoff_minimum": [
+    "package_id",
+    "branch_or_commit",
+    "record_level_lifecycle_status",
+    "native_source_and_hash_state",
+    "searchable_text_state",
+    "visual_evidence_state",
+    "redaction_state",
+    "open_gaps",
+    "next_action",
+    "owner_role",
+    "publication_boundary",
+    "live_readback_state"
+  ],
+  "publication_invariants": [
+    "Searchable text does not replace source-derived visual evidence.",
+    "Visual evidence does not replace searchable text.",
+    "A redacted public derivative does not replace preservation of the native source.",
+    "No synthetic or reconstructed visual may be labelled as evidence.",
+    "A package is not visually complete while any in-scope record is pending, partial or blocked."
+  ],
+  "legacy_backfill": {
+    "status": "ACTIVE",
+    "priority_order": [
+      "current judicial filings, orders, notifications and receipts",
+      "deeds, registry records and decisive documentary anchors",
+      "emails and messages central to knowledge, notice, instruction or chronology",
+      "records already cited on public pages",
+      "remaining evidence packages"
+    ],
+    "completion_claim": "PARTIAL_UNTIL_RECORD_LEVEL_CLOSEOUT"
+  }
+}

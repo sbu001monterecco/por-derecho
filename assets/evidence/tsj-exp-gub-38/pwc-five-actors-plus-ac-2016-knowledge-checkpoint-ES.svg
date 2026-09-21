@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">PwC: punto de conocimiento profesional de 2016</title>
+<desc id="desc">Visualización fuente-controlada de cinco actores privados, el Administrador Concursal como punto separado y el conocimiento contemporáneo de PwC.</desc>
+<defs><style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#13252d}.title{font-size:52px;font-weight:800}.sub{font-size:25px}.box-title{font-size:26px;font-weight:800}.body{font-size:21px}.small{font-size:17px}.white{fill:#fff}.muted{fill:#53656d}.arrow{stroke:#c89432;stroke-width:8;fill:none;marker-end:url(#a)}
+</style><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#c89432"/></marker></defs>
+<rect width="1600" height="1000" fill="#f4f1ea"/>
+<rect x="0" y="0" width="1600" height="150" fill="#13252d"/>
+<text x="70" y="72" class="title white">PWC · PUNTO DE CONOCIMIENTO 2016</text>
+<text x="72" y="116" class="sub white">Cinco actores privados + un punto de control judicialmente designado · Sun Park</text>
+
+<rect x="70" y="205" rx="24" width="440" height="555" fill="#fff" stroke="#8f2d27" stroke-width="5"/>
+<text x="100" y="255" class="box-title">CINCO ACTORES PRIVADOS</text>
+<text x="105" y="310" class="body">1 · José Daniel Acosta Matos</text>
+<text x="105" y="360" class="body">2 · Laura Patricia Acosta Matos</text>
+<text x="105" y="410" class="body">3 · Francisco Mario Matos Matas</text>
+<text x="105" y="460" class="body">4 · Antonio Cogolludo Rojas</text>
+<text x="105" y="510" class="body">5 · Shaila María Cogolludo Ramos</text>
+<line x1="105" y1="550" x2="475" y2="550" stroke="#ddd"/>
+<text x="105" y="595" class="small muted">La presencia en una cronología no acredita</text>
+<text x="105" y="625" class="small muted">coordinación, intención común ni delito.</text>
+<text x="105" y="680" class="small muted">Cada acto, conocimiento, autoridad y beneficio</text>
+<text x="105" y="710" class="small muted">debe probarse de manera individual.</text>
+
+<rect x="580" y="205" rx="24" width="440" height="555" fill="#fff" stroke="#315c7b" stroke-width="5"/>
+<text x="610" y="255" class="box-title">PWC · REGISTRO CONTEMPORÁNEO</text>
+<text x="610" y="310" class="body">Abr–jun 2016 · trabajo jurídico/estratégico</text>
+<text x="610" y="355" class="body">Sun Park · Comunidad · título · acceso</text>
+<text x="610" y="400" class="body">Concurso · deuda · voto · explotación</text>
+<rect x="615" y="440" rx="14" width="370" height="105" fill="#fff8d9" stroke="#c89432" stroke-width="3"/>
+<text x="640" y="482" class="body" font-weight="800">«la vía penal contra esta gente»</text>
+<text x="640" y="522" class="small">instrucción/determinación del cliente</text>
+<rect x="615" y="575" rx="14" width="370" height="85" fill="#edf3ee" stroke="#245c49" stroke-width="3"/>
+<text x="640" y="625" class="body" font-weight="800">«Tomamos nota de vuestra decisión»</text>
+<text x="610" y="705" class="small muted">Sep 2016: PwC confirmó contacto directo con el AC.</text>
+
+<rect x="1090" y="205" rx="24" width="440" height="555" fill="#fff" stroke="#245c49" stroke-width="5"/>
+<text x="1120" y="255" class="box-title">PUNTO SEPARADO: AC</text>
+<text x="1120" y="310" class="body">Francisco de Borja</text>
+<text x="1120" y="345" class="body">Rodríguez-Batllori Laffitte</text>
+<text x="1120" y="395" class="body">Administrador Concursal</text>
+<text x="1120" y="430" class="body">Concurso 36/2012</text>
+<line x1="1120" y1="470" x2="1490" y2="470" stroke="#ddd"/>
+<text x="1120" y="520" class="body">Pregunta institucional posterior:</text>
+<text x="1120" y="565" class="small muted">¿Cómo se gestionaron conflicto, confidencialidad,</text>
+<text x="1120" y="595" class="small muted">aceptación, independencia y memoria institucional</text>
+<text x="1120" y="625" class="small muted">ante relaciones posteriores con el mismo perímetro?</text>
+<text x="1120" y="690" class="small muted">Contacto profesional no equivale a conducta impropia.</text>
+
+<path d="M510 480 C540 480 550 480 580 480" class="arrow"/>
+<path d="M1020 480 C1050 480 1060 480 1090 480" class="arrow"/>
+
+<rect x="70" y="815" rx="18" width="1460" height="125" fill="#13252d"/>
+<text x="105" y="860" class="box-title white">LÍMITE PROBATORIO</text>
+<text x="105" y="900" class="body white">El gráfico acredita un punto de conocimiento profesional contemporáneo y fuentes identificables.</text>
+<text x="105" y="928" class="small white">No acredita que PwC declarara un delito, utilizara información indebidamente o coordinara actuaciones.</text>
+</svg>

@@ -1,0 +1,115 @@
+{
+  "schema": "por-derecho.identity-relationship-map.v1",
+  "control_date": "2026-08-25",
+  "scope": "Exp. Gub. 38/2026 notification, decision, correction and LAJ institutional topology",
+  "status": "SOURCE_CONTROLLED_BOUNDED_MAP",
+  "global_limit": "A relationship does not transfer knowledge, intention, authorship, control or responsibility.",
+  "nodes": [
+    {
+      "id": "P093",
+      "type": "person",
+      "name": "Carlos Víctor Rubio Faure",
+      "capacity": "Letrado de la Administración de Justicia; Secretario de Gobierno del Tribunal Superior de Justicia de Canarias",
+      "status": "OFFICIAL_IDENTITY_AND_CAPACITY_VERIFIED"
+    },
+    {
+      "id": "E052",
+      "type": "institution",
+      "name": "Tribunal Superior de Justicia de Canarias",
+      "status": "OFFICIAL_INSTITUTION"
+    },
+    {
+      "id": "E053",
+      "type": "office",
+      "name": "Secretaría de Gobierno del Tribunal Superior de Justicia de Canarias",
+      "status": "ISSUING_OFFICE_VERIFIED"
+    },
+    {
+      "id": "E054",
+      "type": "officeholder",
+      "name": "Secretario General de la Administración de Justicia",
+      "status": "STATUTORY_HIERARCHICAL_SUPERIOR"
+    },
+    {
+      "id": "E055",
+      "type": "office",
+      "name": "Secretaría de Coordinación Provincial de Las Palmas",
+      "status": "REGISTERED_COORDINATED_RECIPIENT"
+    },
+    {
+      "id": "E056",
+      "type": "administrative_body",
+      "name": "Dirección General de Relaciones con la Administración de Justicia del Gobierno de Canarias",
+      "status": "MATERIAL_AND_TECHNICAL_INFRASTRUCTURE_ROLE"
+    },
+    {
+      "id": "E057",
+      "type": "constitutional_body",
+      "name": "Consejo General del Poder Judicial",
+      "status": "SEPARATE_JUDICIAL_GOVERNANCE_LANE"
+    }
+  ],
+  "edges": [
+    {
+      "from": "P093",
+      "to": "E053",
+      "class": "R3",
+      "label": "holds office; signed and sent the acts in scope",
+      "period": "2024-03-11/2026-08-25",
+      "source": "BOE-A-2024-4431; official 2026 Judiciary document; signed Exp. Gub. 38/2026 decision",
+      "limit": "Does not prove personal knowledge of the complete insolvency file."
+    },
+    {
+      "from": "E053",
+      "to": "E052",
+      "class": "R3",
+      "label": "Government Secretariat situated at the High Court; Secretary also serves the Government Chamber",
+      "period": "2026",
+      "source": "LOPJ Article 464",
+      "limit": "Does not convert a governmental file into a judicial-chamber merits ruling."
+    },
+    {
+      "from": "E054",
+      "to": "E053",
+      "class": "R3",
+      "label": "hierarchical superior / appeal destination",
+      "period": "2026-08-20",
+      "source": "LOPJ Article 463; signed decision; REGAGE26e00074355631",
+      "limit": "Filing and destination do not prove admission, forwarding or outcome."
+    },
+    {
+      "from": "E053",
+      "to": "E055",
+      "class": "R3",
+      "label": "territorial LAJ governance and provincial coordination chain",
+      "period": "2026",
+      "source": "LOPJ Articles 466-467; coordinated 15 August registration",
+      "limit": "Does not prove action by every LAJ or permit prohibited case-specific directions."
+    },
+    {
+      "from": "E056",
+      "to": "E053",
+      "class": "R3",
+      "label": "territorial material and digital justice infrastructure",
+      "period": "2026",
+      "source": "Official Canary justice modernisation and ATLANTE description",
+      "limit": "Does not make the Canary executive the issuing authority for the signed decision."
+    },
+    {
+      "from": "E057",
+      "to": "E052",
+      "class": "R3",
+      "label": "DI 169/2026 communication ordered for information",
+      "period": "2026-07/2026-08-20",
+      "source": "CGPJ DI 169/2026 archive agreement as described in the signed decision",
+      "limit": "Does not merge judge discipline, LAJ governance, office-service inspection or judicial merits."
+    }
+  ],
+  "reference_correction": {
+    "initial_subject_literal": "EXP. GUB 28/2026",
+    "body_attachment_decision": "EXP. GUB. 38/2026",
+    "later_sender_confirmation": "38/2026",
+    "status": "CONTROLLING_REFERENCE_CORRECTED",
+    "limit": "The source of the subject-line error remains unexplained; no bad faith is inferred."
+  }
+}

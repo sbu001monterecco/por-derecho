@@ -1,0 +1,201 @@
+{
+  "schema": "por-derecho.criminal-first-institutional-action-matrix.v1",
+  "protocol_id": "PD-SP-ACTION-2011-CONVERGENCE-001",
+  "control_date": "2026-08-25",
+  "status": "PUBLIC_ACTION_CONTROL",
+  "objective": "Convert the documented functional-convergence case into immediate, actor-specific preservation, disclosure, explanation, investigation and recovery actions without presenting allegations as adjudicated facts.",
+  "governing_boundaries": [
+    "Every criminal characterisation remains attributed or investigatory unless adjudicated.",
+    "A relationship edge does not transfer knowledge, intent, control or liability.",
+    "Later convergence may corroborate adoption, ratification, knowledge and benefit but cannot by itself prove a 2011 common plan.",
+    "The insolvency administrator remains on a separate officeholder enablement/adoption track unless further evidence proves private-perimeter membership.",
+    "Adverse, innocent and exculpatory explanations must be preserved with every action."
+  ],
+  "pressure_sequence": [
+    {"order": 1, "verb": "PRESERVE", "purpose": "Prevent deletion, alteration, loss, overwriting or dispersal of relevant evidence."},
+    {"order": 2, "verb": "DISCLOSE", "purpose": "Obtain certified, native and auditable records rather than summaries or recollections."},
+    {"order": 3, "verb": "EXPLAIN", "purpose": "Require each actor to identify authority, knowledge, verification, instruction, consequence and benefit."},
+    {"order": 4, "verb": "INVESTIGATE", "purpose": "Test offence elements, conflicts, independence, procedural reliance and de facto administration actor by actor."},
+    {"order": 5, "verb": "RECOVER", "purpose": "Protect and pursue claimant-specific assets, income, control rights and damages while preserving third-party distinctions."}
+  ],
+  "actions": [
+    {
+      "action_id": "PD-SP-ACT-0001",
+      "priority": "P0",
+      "title": "Certified 2011 Community governance and voting corpus",
+      "recipients": ["PD-SP-O-0005", "PD-SP-O-0022", "PD-SP-O-0023", "PD-SP-I-0001"],
+      "actors": ["PD-SP-P-0003", "PD-SP-P-0004", "PD-SP-P-0006", "PD-SP-P-0009"],
+      "proceedings": ["PD-SP-R-0007", "PD-SP-R-0001"],
+      "request": "Preserve and produce certified complete ACTAs, notices, attendance, powers, voting ledgers, debt ledgers, approved accounts, certificates, books, bank records and document-custody history for 2 February and 22 June 2011 and all related meetings.",
+      "why_it_matters": "This is the primary test of the alleged organ capture and the debt-to-vote-to-authority mechanism.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ACT-0002",
+      "priority": "P0",
+      "title": "Native professional mandate and handover records",
+      "recipients": ["PD-SP-P-0003", "PD-SP-P-0005", "PD-SP-P-0006", "PD-SP-P-0007"],
+      "actors": ["PD-SP-P-0003", "PD-SP-P-0005", "PD-SP-P-0006", "PD-SP-P-0007"],
+      "proceedings": ["PD-SP-R-0007", "PD-SP-R-0001"],
+      "request": "Preserve and produce native retainers, powers, instructions, invoices, conflicts, dispensas, correspondence, calendars, file-transfer records and termination or succession communications from 2009 onward.",
+      "why_it_matters": "It tests continuity of representation, knowledge and any direct handover toward the later perimeter without inferring one from professional proximity.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ACT-0003",
+      "priority": "P0",
+      "title": "Insolvency-administrator appointment, independence and conflict file",
+      "recipients": ["PD-SP-P-0010", "PD-SP-I-0001", "PD-SP-I-0004"],
+      "actors": ["PD-SP-P-0010", "PD-SP-P-0003"],
+      "proceedings": ["PD-SP-R-0001", "PD-SP-R-0005"],
+      "request": "Preserve and produce appointment/reparto records, declarations, conflict checks, disclosures, common-case records, professional links, referrals, communications and any record concerning nomination, recommendation or prior relationship.",
+      "why_it_matters": "It separates structural appearance, actual conflict, initial deception, reckless non-inquiry, actual knowledge and deliberate facilitation.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ACT-0004",
+      "priority": "P0",
+      "title": "2016 notice and verification checkpoint",
+      "recipients": ["PD-SP-P-0010", "PD-SP-O-0043", "PD-SP-I-0001"],
+      "actors": ["PD-SP-P-0010", "PD-SP-P-0005", "PD-SP-P-0009", "PD-SP-P-0036", "PD-SP-P-0037"],
+      "proceedings": ["PD-SP-R-0001", "PD-SP-R-0002"],
+      "request": "Preserve and produce native April-September 2016 emails, attachments, meeting recordings/transcripts, notes, calendars, document-receipt evidence, verification steps, advice, decisions and subsequent reliance on disputed Community material.",
+      "why_it_matters": "It fixes what each professional could no longer plausibly claim not to know and whether later conduct was consistent with notice.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ACT-0005",
+      "priority": "P0",
+      "title": "2017-2018 security, access, keys and implementation chain",
+      "recipients": ["PD-SP-P-0010", "PD-SP-O-0005", "PD-SP-O-0007", "PD-SP-I-0007", "PD-SP-I-0008"],
+      "actors": ["PD-SP-P-0007", "PD-SP-P-0008", "PD-SP-P-0009", "PD-SP-P-0010", "PD-SP-P-0011", "PD-SP-P-0012"],
+      "proceedings": ["PD-SP-R-0001", "PD-SP-R-0004", "PD-SP-R-0006"],
+      "request": "Preserve and produce instructions, authorisations, emails, calls, messages, invoices, guard and locksmith records, key logs, access logs, CCTV, photographs, videos, police contacts, incident reports and payment trails concerning security, access, maintenance, locks and the 7 June 2018 event.",
+      "why_it_matters": "It tests the alleged transition from documentary authority to material control and identifies who authorised, executed, knew, benefited and failed to reverse the result.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ACT-0006",
+      "priority": "P0",
+      "title": "CAM credit, title, voting and payment chain",
+      "recipients": ["PD-SP-O-0007", "PD-SP-P-0011", "PD-SP-P-0012", "PD-SP-O-0005"],
+      "actors": ["PD-SP-P-0007", "PD-SP-P-0008", "PD-SP-P-0009", "PD-SP-P-0011", "PD-SP-P-0012"],
+      "proceedings": ["PD-SP-R-0001", "PD-SP-R-0007"],
+      "request": "Preserve and produce credit-assignment agreements, mandates, acquisition approvals, deeds, consideration and payment records, beneficial-owner information, voting qualifications, Community communications, bidder/purchaser materials and title changes for every relevant finca and capacity.",
+      "why_it_matters": "It fixes the dates on which creditor, owner, voter, purchaser, security and project capacities accumulated and prevents backward projection into 2011.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ACT-0007",
+      "priority": "P0",
+      "title": "Funded exit and alleged sabotage of estate value",
+      "recipients": ["PD-SP-P-0010", "PD-SP-I-0001", "PD-SP-O-0033", "PD-SP-O-0034", "PD-SP-O-0035", "PD-SP-O-0036", "PD-SP-O-0037"],
+      "actors": ["PD-SP-P-0010", "PD-SP-P-0063", "PD-SP-P-0064"],
+      "proceedings": ["PD-SP-R-0001", "PD-SP-R-0002"],
+      "request": "Preserve and produce offers, conditions, proof of funds, valuation work, creditor treatment, security, meeting notes, court and AC communications, reasons for non-implementation and comparison with the alternative transaction path.",
+      "why_it_matters": "It distinguishes commercial disagreement or execution risk from knowing suppression of a materially superior estate outcome for an improper purpose.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ACT-0008",
+      "priority": "P0",
+      "title": "Locales transaction and use of proceeds",
+      "recipients": ["PD-SP-P-0010", "PD-SP-O-0007", "PD-SP-I-0001"],
+      "actors": ["PD-SP-P-0010", "PD-SP-P-0041"],
+      "proceedings": ["PD-SP-R-0001", "PD-SP-R-0005"],
+      "request": "Preserve and produce the deed, authorisation file, cheque, account opening, bank ledger, invoices, remuneration approvals, professional payments, tax treatment, cancellation/non-convalidation records and later financing over the same assets.",
+      "why_it_matters": "It traces disposition, liquidity, self-payment, professional payments and the consequences of the later refusal to convalidate the transaction.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ACT-0009",
+      "priority": "P0",
+      "title": "Hotel income, operator and asset-control accounting",
+      "recipients": ["PD-SP-O-0005", "PD-SP-O-0007", "PD-SP-O-0018", "PD-SP-O-0042", "PD-SP-P-0010"],
+      "actors": ["PD-SP-P-0009", "PD-SP-P-0011", "PD-SP-P-0012"],
+      "proceedings": ["PD-SP-R-0001", "PD-SP-R-0009"],
+      "request": "Preserve and produce operator agreements, bank accounts, income ledgers, occupancy and booking data, maintenance and refurbishment payments, tax reporting, keys/access authority, unit-level ownership treatment and distributions from 2011 to the present.",
+      "why_it_matters": "It identifies who functionally administered estate-related assets and income, under what title, and whose losses or benefits can be causally quantified.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ACT-0010",
+      "priority": "P0",
+      "title": "Later project, related-party and provenance diligence",
+      "recipients": ["PD-SP-O-0018", "PD-SP-O-0020", "PD-SP-O-0027", "PD-SP-O-0028", "PD-SP-O-0042"],
+      "actors": ["PD-SP-P-0009", "PD-SP-P-0011", "PD-SP-P-0012"],
+      "proceedings": ["PD-SP-R-0001", "PD-SP-R-0006"],
+      "request": "Preserve and produce due-diligence reports, related-party and conflict checks, beneficial ownership, board papers, investment committee materials, valuations, title provenance, financing, subsidies/incentives, operating agreements and responses to known disputes.",
+      "why_it_matters": "It tests whether later investors, title holders and operators independently verified or knowingly adopted contested rights, premises and control structures.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ACT-0011",
+      "priority": "P0",
+      "title": "Certified court docket, access and judicial-reliance record",
+      "recipients": ["PD-SP-I-0001", "PD-SP-I-0004", "PD-SP-I-0005"],
+      "actors": ["PD-SP-P-0057"],
+      "proceedings": ["PD-SP-R-0001", "PD-SP-R-0002", "PD-SP-R-0005"],
+      "request": "Preserve and produce a certified complete index, filing and notification history, access/audit logs, recordings, orders, minutes, communications, received evidence and the exact material placed before each decision-maker.",
+      "why_it_matters": "It is indispensable to distinguish private-party deception, AC omission or adoption, judicial error, knowing procedural misrepresentation and actual reliance.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ACT-0012",
+      "priority": "P0",
+      "title": "Fiscal and police preservation and coordinated investigation",
+      "recipients": ["PD-SP-I-0002", "PD-SP-I-0007", "PD-SP-I-0008"],
+      "actors": [],
+      "proceedings": ["PD-SP-R-0004", "PD-SP-R-0006"],
+      "request": "Issue or coordinate immediate preservation requests for relevant private, professional, Community, corporate, banking, court and digital records; identify the competent unit and prevent fragmentation across proceedings and islands.",
+      "why_it_matters": "The alleged mechanism spans governance, insolvency, property, banking, access, professional and later project records that lose meaning when examined in isolation.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ACT-0013",
+      "priority": "P1",
+      "title": "Professional-regulatory conflict and conduct review",
+      "recipients": ["PD-SP-I-0003", "PD-SP-I-0012", "PD-SP-I-0013"],
+      "actors": ["PD-SP-P-0003", "PD-SP-P-0005", "PD-SP-P-0006", "PD-SP-P-0010"],
+      "proceedings": ["PD-SP-R-0001", "PD-SP-R-0007"],
+      "request": "Preserve and review mandates, conflicts, confidentiality, succession, communications, independence, threats or actions affecting the defence, and professional obligations arising from the Community and insolvency tracks.",
+      "why_it_matters": "It tests professional continuity and independence without treating representation or association as automatic participation in wrongdoing.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ACT-0014",
+      "priority": "P1",
+      "title": "Open correction, response and adverse-evidence channel",
+      "recipients": ["PD-SP-S-0001"],
+      "actors": [],
+      "proceedings": [],
+      "request": "Invite every named person, entity and institution to supply corrections, mandates, powers, invoices, minutes, decisions, lawful-authority records, contrary evidence and innocent explanations for inclusion in the same evidence graph.",
+      "why_it_matters": "Maximum pressure is more credible when the record remains correctable, source-controlled and capable of displaying evidence that weakens the Project's allegations.",
+      "status": "CONTINUOUS"
+    },
+    {
+      "action_id": "PD-SP-ACT-0015",
+      "priority": "P1",
+      "title": "Claimant-specific recovery and loss model",
+      "recipients": ["PD-SP-P-0001", "PD-SP-P-0002", "PD-SP-O-0001", "PD-SP-O-0002", "PD-SP-O-0003", "PD-SP-O-0006"],
+      "actors": [],
+      "proceedings": ["PD-SP-R-0001", "PD-SP-R-0002", "PD-SP-R-0004", "PD-SP-R-0006"],
+      "request": "Maintain separate asset, income, possession, financing, professional-cost and damages schedules for LPB, Aweswell/Oswell, Matkator, CEXP, the operating business, creditors and individual owners.",
+      "why_it_matters": "It converts the convergence theory into legally and economically attributable recovery claims without merging claimant identity or loss.",
+      "status": "CONTINUOUS"
+    }
+  ],
+  "public_routes": {
+    "es": "/es/hipotesis-criminal-unitaria-2011-presente/accion-institucional/",
+    "en": "/en/unitary-criminal-hypothesis-2011-present/institutional-action/"
+  },
+  "source_routes": {
+    "convergence_es": "/es/hipotesis-criminal-unitaria-2011-presente/convergencia-acosta-matos/",
+    "convergence_en": "/en/unitary-criminal-hypothesis-2011-present/acosta-matos-convergence/",
+    "maximal_attribution_es": "/es/hipotesis-criminal-unitaria-2011-presente/atribucion-maxima/",
+    "maximal_attribution_en": "/en/unitary-criminal-hypothesis-2011-present/maximal-attribution/",
+    "identity_es": "/es/registro-identidad-materia/",
+    "identity_en": "/en/matter-identity-registry/"
+  },
+  "future_thread_rule": "Future threads must load this matrix with Declarations 012 and 013, the v2 convergence graph and the identity registry; update the existing action ID when evidence changes rather than creating a disconnected duplicate request."
+}

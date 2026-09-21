@@ -1,0 +1,26 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "INSTITUTION",
+  "scope": "Historic Las Palmas civil court source-identified in Diligencias Preliminares 1041/2017",
+  "records": [
+    {
+      "id": "PD-SP-I-0048",
+      "type": "INSTITUTION",
+      "name": "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria",
+      "aliases": [
+        "JPI nº 2 Las Palmas",
+        "Juzgado de Primera Instancia número 2 de Las Palmas de Gran Canaria"
+      ],
+      "routes": {
+        "es": "/es/registro-autoridad-historica-las-palmas-civil/#pd-sp-i-0048",
+        "en": "/en/historic-las-palmas-civil-justice-authority-register/#pd-sp-i-0048"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "Authentic electronic Providencia, Diligencias Preliminares 1041/2017, 12-Jan-2018"
+      ],
+      "identity_boundary": "Exact historic court identity for the cited proceeding/source. It does not identify the judge or LAJ for every act and does not establish present successor allocation."
+    }
+  ]
+}

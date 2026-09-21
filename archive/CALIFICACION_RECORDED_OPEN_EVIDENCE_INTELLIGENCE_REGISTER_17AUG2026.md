@@ -368,7 +368,7 @@ Do not state that support was available, unavailable, destroyed or deliberately 
 ### Current verified anchors
 
 - The AC report records receipt of PDF journals and trial balances for 2008–2011 and part of 2012.
-- The 11-Dec-2012 email identifies `diario2012.xls`, bank movements, detailed debts and accounting concepts transmitted to the AC address.
+- The 11-Dec-2012 `CAL-GM-01` email identifies an accounting journal, bank movements, detailed debts and accounting concepts transmitted to the AC address; the exact private attachment filename is withheld.
 - February/May 2018 records show annual-account memoranda, statements and trial balances circulating.
 - Sentencia 163/2023 nevertheless upheld substantial breach of mandatory accounting-book duties, especially concerning the official Diario.
 

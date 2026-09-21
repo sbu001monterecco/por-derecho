@@ -99,7 +99,7 @@
             <p class="source-policy">Gil Marer ha formulado alegaciones civiles, concursales y penales sobre esta conducta. No existe condena ni declaración firme de responsabilidad criminal.</p>
           </article>
           <article class="path-card">
-            ${portrait(asset('actors/alberto-lopez-villarrubia.jpg'),'Retrato utilizado para el Magistrado Alberto López Villarrubia, identificación confirmada por el titular del expediente')}
+            ${portrait(asset('actors/alberto-lopez-villarrubia.jpg'),'Retrato utilizado para el Magistrado D. Alberto López Villarrubia, identificación confirmada por el titular del expediente')}
             <span class="number">Tutela judicial efectiva · acción y omisión</span>
             <h3>Alberto López Villarrubia</h3>
             <p>Gil Marer sostiene que el problema no se reduce a resoluciones desfavorables: consiste en si la tutela concursal protegió realmente el activo, la unidad productiva y los límites del procedimiento cuando hechos externos estaban alterando control, posesión, acceso, obras, valor y competencia.</p>

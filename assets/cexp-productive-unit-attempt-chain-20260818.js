@@ -131,7 +131,9 @@
     section.className = `section catc${compact ? ' catc-compact' : ''}`;
     section.innerHTML = `<div class="shell catc-shell">${full ? (es ? esFull : enFull) : (es ? esCompact : enCompact)}</div>`;
     const headline = document.getElementById('cexp-productive-unit-value-headline');
+    const thesis = main.querySelector('[data-calificacion-misuse-thesis]');
     if (headline) headline.insertAdjacentElement('afterend', section);
+    else if (thesis) thesis.insertAdjacentElement('afterend', section);
     else {
       const first = Array.from(main.children).find(node => node.tagName === 'SECTION');
       if (first) first.insertAdjacentElement('afterend', section); else main.prepend(section);

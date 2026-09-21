@@ -1,0 +1,49 @@
+name: Validate ICAM CCACM discovery and parity
+
+on:
+  pull_request:
+    paths:
+      - 'es/cuatrecasas-icam-ccacm-2026/**'
+      - 'en/cuatrecasas-icam-ccacm-2026/**'
+      - 'es/registros-institucionales-colegios-abogacia-2026/**'
+      - 'en/institutional-records-bar-bodies-2026/**'
+      - 'es/registros-institucionales/**'
+      - 'en/institutional-records/**'
+      - 'es/index.html'
+      - 'en/index.html'
+      - 'es/actualizaciones/**'
+      - 'en/updates/**'
+      - 'sitemap.xml'
+      - 'scripts/sync_icam_ccacm_discovery_20260825.py'
+      - '.github/workflows/validate-icam-ccacm-discovery.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'es/cuatrecasas-icam-ccacm-2026/**'
+      - 'en/cuatrecasas-icam-ccacm-2026/**'
+      - 'es/registros-institucionales-colegios-abogacia-2026/**'
+      - 'en/institutional-records-bar-bodies-2026/**'
+      - 'es/registros-institucionales/**'
+      - 'en/institutional-records/**'
+      - 'es/index.html'
+      - 'en/index.html'
+      - 'es/actualizaciones/**'
+      - 'en/updates/**'
+      - 'sitemap.xml'
+      - 'scripts/sync_icam_ccacm_discovery_20260825.py'
+      - '.github/workflows/validate-icam-ccacm-discovery.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Validate public discovery, bilingual parity and evidential limits
+        run: python scripts/sync_icam_ccacm_discovery_20260825.py --check

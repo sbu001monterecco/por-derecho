@@ -107,7 +107,7 @@ Material adverse findings remain on rent, accounting and a narrower collaboratio
 
 Public sequence:
 
-1. **17-Oct-2018:** Gil/Aweswell complain against the AC/CAM perimeter in DI 248/2018.
+1. **12-Sep-2018:** Gil/Aweswell file the originating complaint against the AC/CAM perimeter in DI 248/2018. The AC's 17-Oct-2018 testimony request is a distinct later event.
 2. **Jan-2019 expansion:** asks Fiscalía to investigate the AC, take statements from José Daniel Acosta Matos and Laura Acosta Matos, and records the assertion that an Article-176 conclusion route was being pursued with financing obtained.
 3. **12-Mar-2019:** Ricardo de Mosteyrín signs the adverse classification opinion.
 4. **7-May-2019:** Elena Herrera archives DI 248 and expressly invokes that **“este Ministerio”** had already treated the insolvency as culpable and Gil as responsible, including for alleged failure to collaborate with the AC.
@@ -136,10 +136,9 @@ The project must not answer this with the equally simplistic claim that LPB comp
 
 ## 6.2 New primary-source reinforcement — 15-Jan-2013 AC Article-75 report
 
-The original AC Article-75 report was re-queried on 16-Aug-2026 from connected Google Drive:
+The original AC Article-75 report was re-queried on 16-Aug-2026 from private custody:
 
-- `0. INFORME AC (ART. 75 LC) 15ENE2013.pdf`;
-- Drive ID `15X-qFJIvM78oDE9CdsGjrvVKU5dv6iGc`.
+- public-safe custody reference `MF-CAL-SRC-A01-ART75`; exact private filename and Drive locator withheld.
 
 It is adverse but specific. It says the level of collaboration was `no aceptable` because of considerable delay and some missing documentation. At the same time it expressly records that the representative of LPB **attended every meeting to which the AC summoned him**.
 

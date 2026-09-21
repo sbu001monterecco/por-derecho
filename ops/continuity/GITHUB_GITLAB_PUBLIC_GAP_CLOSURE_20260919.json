@@ -1,0 +1,113 @@
+{
+  "schema": "por-derecho.github-gitlab-public-gap-closure.v1",
+  "control_id": "PD-GH-GL-GAP-CLOSURE-20260919-01",
+  "control_date": "2026-09-19",
+  "status": "CURRENT_GITHUB_FUNCTIONAL_SUCCESSORS_ADDED_EXACT_GITLAB_SOURCE_STILL_PENDING",
+  "github_base_sha": "c2d1f9f605086d05c84363c11df4cc04f7e0dfc1",
+  "authenticated_gitlab_restoration_verified": false,
+  "items": [
+    {
+      "id": "IDENTITY_REGISTRY_515_VS_379",
+      "status": "PENDING_GITLAB_RESTORATION",
+      "github_route": "en/matter-identity-registry/index.html",
+      "action": "VISIBLE_GAP_DISCLOSURE_ADDED",
+      "boundary": "GitLab aggregate 515-vs-379 freshness difference is disclosed; missing 136 identities are not reconstructed without exact source/object provenance."
+    },
+    {
+      "id": "RICPE_27AUG_STATUS",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "github_routes": [
+        "en/ric-private-equity-sun-park/index.html",
+        "es/ric-private-equity-sun-park/index.html"
+      ],
+      "source_control": "archive/RICPE_27AUG2026_RESOLVER_IDENTITY_ACCESS_CONTROL_NPL_CONTINUUM_ADDENDUM.md",
+      "boundary": "Refresh is source-led from GitHub-controlled recovery material; it is not copied from rendered GitLab HTML."
+    },
+    {
+      "id": "PORTFOLIO_11SEP_STATUS",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "github_routes": [
+        "en/portfolio-orion-traceability/index.html",
+        "es/portfolio-orion-trazabilidad/index.html"
+      ],
+      "source_control": "archive/knowledge-project/ORION_PUBLIC_DUTIES_PWC_BANKING_UK_REVIEW_12SEP2026.md",
+      "boundary": "11 September incorporation/internal-review/reported-CNMV-transmission status is source-led; independent CNMV receipt and full merits decision remain open."
+    },
+    {
+      "id": "RECOVERY_COMMAND_CENTER",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "github_routes": [
+        "en/recovery-command-center/index.html",
+        "es/centro-mando-recuperacion/index.html"
+      ],
+      "boundary": "GitHub-native successor built from current GitHub controls; no claim of byte parity with GitLab source."
+    },
+    {
+      "id": "ASSET_RECOVERY_SITUATION_ROOM",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "github_routes": [
+        "en/asset-recovery-situation-room/index.html",
+        "es/sala-situacion-recuperacion-activos/index.html"
+      ],
+      "boundary": "GitHub-native adversarial-review successor; no rendered GitLab source is copied."
+    },
+    {
+      "id": "CONNECTIONS_EXPLORER",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "github_routes": [
+        "en/connections-explorer/index.html",
+        "es/explorador-conexiones/index.html"
+      ],
+      "boundary": "Current GitHub route and live outbound-link explorer. It does not recreate GitLab's full-text/link dataset or counters."
+    },
+    {
+      "id": "DEEP_TEXT_SEARCH",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "github_routes": [
+        "en/search/index.html",
+        "es/buscar/index.html"
+      ],
+      "github_control": "assets/connected-search-20260919.js",
+      "boundary": "Opt-in same-origin scan reads only currently deployed GitHub Pages visible text and same-project links. It does not query GitLab or private sources, does not recreate GitLab index bytes/counters, and remains a discovery aid rather than an evidential finding."
+    },
+    {
+      "id": "POR_DERECHO_OPERATING_STANDARD",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "github_routes": [
+        "en/por-derecho/index.html",
+        "es/por-derecho/index.html"
+      ],
+      "boundary": "Current operating standard is derived from GitHub-controlled Second Pair/Case Prism/continuity controls, not GitLab markup."
+    },
+    {
+      "id": "SPECIALIST_SEPTEMBER_PRESENTATION_ROUTES",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT",
+      "known_gitlab_route_families": [
+        "orion-transparency-memorandum",
+        "portfolio-international-nexus",
+        "portfolio-board-open-letter",
+        "canary-presidency-records-coordination",
+        "media-travel-asset-recovery",
+        "new-horizons-source-images",
+        "actua-to-title-documentary-journey",
+        "sun-park-history"
+      ],
+      "boundary": "The eight GitLab-visible specialist route families now have source-led GitHub functional successors built only from current GitHub-controlled dossiers. Exact GitLab source/template bytes and producing commits remain pending authenticated restoration.",
+      "github_control": "ops/continuity/GITLAB_SPECIALIST_ROUTE_BRIDGES_20260919.json",
+      "exact_gitlab_source_state": "PENDING_GITLAB_RESTORATION",
+      "action": "SOURCE_LED_GITHUB_SUCCESSORS_ADDED"
+    },
+    {
+      "id": "GITLAB_NATIVE_PLATFORM_STATE",
+      "status": "PENDING_GITLAB_RESTORATION",
+      "boundary": "Duo config, MR discussions/approvals, native pipelines/jobs/artifacts, variables, runners, environments, settings/integrations and Orbit/index remain exact-recovery items."
+    }
+  ],
+  "rules": [
+    "Functional GitHub equivalent is not exact GitLab byte parity.",
+    "Rendered GitLab output may identify a gap but cannot supply unavailable exact source bytes.",
+    "Current GitHub source-controlled facts supersede stale public GitLab procedural formulations where later evidence exists.",
+    "Do not create missing identity IDs or immutable registry assignments from aggregate rendered counts.",
+    "Future exact GitLab recovery must be reconciled additively against then-current GitHub main."
+  ]
+}

@@ -17,9 +17,14 @@ This allegation must be split into two legally and evidentially different propos
 2. **03-B — rent was not collected / Pink did not pay / Gil failed to pursue payment and termination, aggravating insolvency.**  
    **Result:** materially adverse first-instance finding. Sentencia 163/2023 finds gross fault, causation and Pink complicity on this branch. Those findings are appealed. The actual operating-profit/cash premise and the quantum chain remain materially unresolved and must not be inferred from the adverse judgment more broadly than it says.
 
+3. **03-C — civil validity, CEXP authority and Gil's current total-nullity *ab initio* position.**
+   **Result:** not adjudicated by the 03-A economic-rationality ruling. Declaration 009 supersedes Gil's earlier total/partial alternative and records his primary position that the 6-Feb-2012 LPB–Monterecco contract was wholly void *ab initio* because LPB could not independently convey or bypass CEXP's owners-derived whole-hotel mandate. The contrary case remains mandatory: the 1-Feb CEXP–Monterecco notice, LPB's own-unit rights, the contract's severability clause, Pink's real operation/registration, competent-organ authority, third-party/common-area scope, later resolution/rent judgments, restitution and preclusion/res judicata. This is a party legal position, not a current finding of nullity.
+
 The strongest defensible accountability conclusion is therefore **not** `the whole Pink allegation was fabricated`. It is:
 
 > **the AC's attack on the economic rationality of entering the contract was expressly rejected, while the later non-payment branch was upheld on a record in which actual operating income/profitability was not reconstructed and the monetary sequence from contractual rent to €2.733m and €3.032m remains unreconciled.**
+
+That conclusion does not decide 03-C. Economic rationality for calificación, civil validity/authority, factual operation, contractual payment, resolution and restitution are different questions.
 
 ---
 
@@ -27,13 +32,15 @@ The strongest defensible accountability conclusion is therefore **not** `the who
 
 ### Primary / near-primary sources
 
-- `27. INFORME Calificación AC 11FEB2019.pdf` — Drive ID `1tb8gZuDh7DxLaz45CDTIu3wP7IlWDdrd`.
-- `2. Incidente Concursal - Demanda AC-Explotadora Rescision Contrato - 17ENE2014.pdf` — Drive ID `1H0SDRVMI6lPb3jZR0kJLPQJcrtjPalUE`; includes the original signed 6-Feb-2012 contract and the AC's own demand.
-- `3. Pericial Renta Perito Fiscalia - 25ABR2019.pdf` — Drive ID `1hYGRcc_XeNWVLpNB8jh3R3wbvgvSYPT9`; expert Tomás Ramírez Gómez-Ojero, substantive report dated 5-Apr-2019 and entered in DP 332/2014 on 25-Apr-2019.
-- Sentencia 163/2023 — preserved primary PDF `EE-002-A__AUTO_CONCURSO_CULPOSO.pdf`, Drive ID `13bAFcI4vGec4-NI0n33XtG_RuHU3C4xo`.
-- `27. Demanda Oposición Calificación GM - 06JUN2019.pdf` — Drive ID `1OEXinH8lxaZ0B4NCtkXbPJ4UemjSqm7a`.
-- `20231012 Apelacion calificacion PINK.docx` — Drive ID `1S-LkF6cVFzFRO338KOVq6y_ozCtT_yny`.
-- `20231012 Apelacion calificacion GIL.docx` — Drive ID `1G4A5GulVlvV87-lsS4uZV3rd1Ds3-GfK`.
+- AC calificación report dated 11-Feb-2019 — `MF-CAL-SRC-A03-AC`.
+- AC/exploiter contract-rescission claim dated 17-Jan-2014 — `MF-CAL-SRC-A03-RESCISSION`; includes the original signed 6-Feb-2012 contract and the AC's own demand.
+- Fiscal expert rent report — `MF-CAL-SRC-A03-EXPERT`; expert Tomás Ramírez Gómez-Ojero, substantive report dated 5-Apr-2019 and entered in DP 332/2014 on 25-Apr-2019.
+- Sentencia 163/2023 — `MF-CAL-SRC-A03-JUDGMENT`.
+- Gil opposition dated 6-Jun-2019 — `MF-CAL-SRC-A03-OPP-GIL`.
+- Joint PINK appeal — `MF-CAL-SRC-A03-APPEAL-PINK`.
+- Gil appeal — `MF-CAL-SRC-A03-APPEAL-GIL`.
+
+Exact private filenames and Drive locators for this source set are withheld from public Git.
 
 ### Identity control
 
@@ -159,7 +166,7 @@ This must now be prominent on the public page. The adverse later non-payment fin
 
 The previously missing primary expert has now been located and substantively read:
 
-**`3. Pericial Renta Perito Fiscalia - 25ABR2019.pdf` — Drive ID `1hYGRcc_XeNWVLpNB8jh3R3wbvgvSYPT9`.**
+**Fiscal expert rent report — public-safe custody reference `MF-CAL-SRC-A03-EXPERT`; exact private filename and Drive locator withheld.**
 
 The expert is **Tomás Ramírez Gómez-Ojero**, economist/judicial expert. The substantive report is dated **5-Apr-2019** and was entered in DP 332/2014 on **25-Apr-2019**.
 
@@ -393,6 +400,7 @@ Without presuming motive, the complete economic inquiry must include:
 | €3,032,010.34 provenance is fully explained | **UNRESOLVED** | Exact judgment→execution calculation bridge remains missing. |
 | AC knowingly fabricated all of Allegation 03 | **NOT SUPPORTED AS A GLOBAL CLAIM** | AC actually litigated and obtained adverse judgment; contract-entry branch nevertheless failed. |
 | AC/Judge knowingly fabricated the €3.032m damages amount for clandestine gain | **GIL MARER PARTY ALLEGATION** | Controlled separately; documentary amount-provenance challenge exists but intent/benefit route remains open. |
+| 6-Feb-2012 contract was wholly void *ab initio* and could not bypass CEXP | **GIL MARER CURRENT PRIMARY LEGAL POSITION — NOT ADJUDICATED HERE** | Declaration 009 supersedes the earlier total/partial alternative; requires competent-organ, title, historical tourism law, object/cause, consent, indivisibility, severability, restitution, third-party effect and later-ruling/preclusion analysis. |
 
 ---
 
@@ -408,7 +416,8 @@ Priority retrieval targets:
 6. Complete DP 332/2014 final disposition and the evidential role, if any, of the Apr-2019 Fiscalía expert.
 7. Evidence showing whether and how the Fiscalía expert entered the **calificación** record before the 2023 decision; do not assume cross-proceeding judicial knowledge.
 8. Any evidence contradicting the defence allegation that rent was initially/partially paid.
-9. Full euro bridge:
+9. Complete CEXP/participating-owner authority file for the 1-Feb notice and 6-Feb contract, the privately controlled external-counsel advice chronology and an independent opinion distinguishing radical nullity, voidability, partial ineffectiveness, severability and restitution.
+10. Full euro bridge:
 
 `MONTH → RENT → COMMUNITY → IGIC → OTHER CONTRACTUAL COMPONENT → PAYMENT/CREDIT → JUDGMENT PRINCIPAL → POST-JUDGMENT INTEREST → COSTS → EXECUTION PRINCIPAL → €3,032,010.34`.
 

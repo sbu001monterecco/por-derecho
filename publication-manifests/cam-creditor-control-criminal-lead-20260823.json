@@ -1,0 +1,249 @@
+{
+  "publication_id": "CAM-CREDITOR-CONTROL-CRIMINAL-LEAD-20260823",
+  "control_marker": "cam-creditor-control-criminal-lead-20260823",
+  "owner": "Gil Marer / Aweswell",
+  "created_at": "2026-08-23T00:25:00Z",
+  "current_state": "DELETION_SAFE",
+  "deletion_status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+  "branch": "closeout/cam-thread-deletion-safe-20260823",
+  "merge_sha": "c2f77661371384a79fb7e0caaef79c6345cabecf",
+  "expected_routes": {
+    "en": [
+      "en/cam-creditor-control-shadow-administration-judicial-omission/index.html"
+    ],
+    "es": [
+      "es/control-acreedor-cam-administracion-hecho-omision-judicial/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "CHATGPT_START_HERE.md",
+    "CURRENT_HANDOVER.md",
+    "CURRENT_HANDOVER_UNITARY_RECOVERY_21AUG2026.md",
+    "README.md",
+    "CONCURSO36_JUDICIAL_ACTS_IMPLEMENTATION_REGISTER_21AUG2026.md",
+    "EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md",
+    "archive/EXPRESS_CRIMINAL_ATTRIBUTION_NON_DILUTION_SOURCE_FIDELITY_RULE_23AUG2026.md",
+    "archive/IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md",
+    "archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md",
+    "archive/CORRECTION_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
+    "archive/CROSS_THREAD_REPOSITORY_WEBSITE_EMAIL_RESCAN_AND_ACTION_REGISTER_23AUG2026.md",
+    "archive/OUTBOUND_EMAIL_CONTROL_INCIDENT_AND_HARD_STOP_23AUG2026.md",
+    "archive/REGAGE_26E00074403517_INTAKE_RECORD_23AUG2026.md",
+    "archive/RUTH_UGALDE_EL_CONFIDENCIAL_OUTREACH_RECORD_23AUG2026.md",
+    "archive/OUTBOUND_EMAIL_FUTURE_THREAD_START_HERE_23AUG2026.md",
+    "archive/JOURNALIST_MEDIA_REGISTER.md",
+    "archive/CAM_2018_EXTRACONCURSAL_TAKEOVER_RETRIEVAL_GATE_16AUG2026.md",
+    "archive/CALIFICACION_EXTRACONCURSAL_TAKEOVER_BORJA_SECURITY_SOURCE_UPGRADE_16AUG2026.md",
+    "archive/CALIFICACION_2018_CREDITOR_IN_MATERIAL_POSSESSION_CONTROL_LEDGER_16AUG2026.md",
+    "archive/JUDGE_KNOWLEDGE_MATRIX_15AUG2026.md",
+    "archive/CORRECTION_REGISTER.md",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
+    "archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_21AUG2026.md",
+    "assets/data/cam-creditor-control-criminal-lead-v1.json",
+    "assets/data/cam-nondilution-thread-closeout-v1.json",
+    "assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js",
+    "assets/prosecution-public-entry-20260821.js",
+    "assets/audience-experience-order-20260823.js",
+    "assets/sitewide-discovery-nav-20260821.js",
+    "assets/data/unitary-route-registry-v1.json",
+    "en/index.html",
+    "es/index.html",
+    "en/updates/index.html",
+    "es/actualizaciones/index.html",
+    "en/updates/feed.xml",
+    "es/actualizaciones/feed.xml",
+    "sitemap.xml",
+    "sitemap-criminal-engineering.xml",
+    "scripts/validate_cam_creditor_control_criminal_lead.py",
+    "scripts/validate_audience_experience.py",
+    "scripts/render_audience_experience.mjs",
+    ".github/workflows/validate-cam-creditor-control-criminal-lead.yml",
+    ".github/workflows/validate-audience-experience.yml",
+    ".github/workflows/verify-pr830-cam-nondilution-live.yml",
+    ".github/workflows/verify-cam-thread-closeout-live.yml",
+    "docs/deletion-audits/2026-08-23-cam-creditor-control-criminal-lead-thread.md",
+    "publication-manifests/cam-creditor-control-criminal-lead-20260823.json"
+  ],
+  "required_controls": [
+    "Gil Marer and Aweswell's actor-specific criminal attribution is direct and must not be reduced to a concern, question, possible involvement or investigative lead",
+    "criminal guilt and judicial prevarication are not stated as adjudicated facts",
+    "attribution, evidence, contrary material, missing proof, adjudication and source literal remain separate fields",
+    "Laura Patricia Acosta Matos is the controlled identity; mandate, participation and responsibility remain separate proof questions",
+    "the contemporaneous email source literal Laura Matos is preserved and not silently rewritten as the canonical full name",
+    "the 2018 provisional dismissal and appellate confirmation remain prominent",
+    "LPB estate property is separated from CEXP, Matkator and other non-LPB rights",
+    "the homepage first-read direct attribution remains outside collapsed progressive disclosure",
+    "right of reply and silence-is-not-admission remain visible",
+    "no external test send and no email without separate exact final authorization"
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/cam-creditor-control-shadow-administration-judicial-omission/",
+    "https://sbu001monterecco.github.io/por-derecho/es/control-acreedor-cam-administracion-hecho-omision-judicial/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/cam-creditor-control-criminal-lead-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/cam-nondilution-thread-closeout-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js",
+    "https://sbu001monterecco.github.io/por-derecho/en/",
+    "https://sbu001monterecco.github.io/por-derecho/es/"
+  ],
+  "non_dilution_control": {
+    "date": "2026-08-23",
+    "status": "REPOSITORY_CONTROLLING_SITEWIDE_ANTI_REGRESSION",
+    "control_file": "archive/EXPRESS_CRIMINAL_ATTRIBUTION_NON_DILUTION_SOURCE_FIDELITY_RULE_23AUG2026.md",
+    "direct_attribution_required": true,
+    "soften_to_question_or_lead": false,
+    "first_read_prominence_required": true,
+    "hide_in_collapsed_content": false,
+    "evidential_gap_erases_attribution": false,
+    "criminal_guilt_adjudicated": false,
+    "four_separate_axes": [
+      "attribution",
+      "evidence",
+      "adjudication_and_procedure",
+      "source_literal"
+    ]
+  },
+  "superseding_identity_control": {
+    "date": "2026-08-23",
+    "status": "REPOSITORY_CONTROLLING",
+    "identity": "Laura Patricia Acosta Matos",
+    "source_typo_creates_separate_actor": false,
+    "source_literal_rewritten_as_canonical_identity": false,
+    "contemporaneous_email_source_literal": "Laura Matos",
+    "control_file": "archive/IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md"
+  },
+  "superseding_rule_update": {
+    "date": "2026-08-23",
+    "pull_request": 830,
+    "merge_sha": "05cba3c9af7071f96b56eae90a67a2ceae3a783d",
+    "status": "MERGED_AND_LIVE_VERIFIED",
+    "verifier_pull_requests": [832, 833],
+    "live_verification_run": 32636419354
+  },
+  "static_chronology_update": {
+    "pull_request": 808,
+    "merge_sha": "22f10cea2cab18539c55d6283eb9ebce16d40f71",
+    "status": "MERGED_AND_LIVE_VERIFIED"
+  },
+  "closeout_control": {
+    "status": "MERGED_LIVE_VERIFIED_DELETION_SAFE",
+    "closeout_pull_request": 834,
+    "closeout_merge_sha": "ea90c4a9b44c559eaa7b51d73ea852596c6856fb",
+    "final_audit_pull_request": 835,
+    "public_record": "assets/data/cam-nondilution-thread-closeout-v1.json",
+    "rescan_register": "archive/CROSS_THREAD_REPOSITORY_WEBSITE_EMAIL_RESCAN_AND_ACTION_REGISTER_23AUG2026.md",
+    "verifier": ".github/workflows/verify-cam-thread-closeout-live.yml",
+    "live_verification_run": 32639271526,
+    "live_verification_job": 97193729364,
+    "verified_at_utc": "2026-08-23T12:23:57.074948+00:00",
+    "result": "DELETION_SAFE_WITH_OPEN_EVIDENCE"
+  },
+  "validation": {
+    "script": "scripts/validate_cam_creditor_control_criminal_lead.py",
+    "workflow": ".github/workflows/validate-cam-creditor-control-criminal-lead.yml",
+    "status": "CI_GREEN_LIVE_VERIFIED",
+    "evidence": [
+      {
+        "type": "github_actions",
+        "workflow": "Validate CAM creditor-control criminal lead",
+        "run_id": 32639001212,
+        "conclusion": "success"
+      },
+      {
+        "type": "github_actions",
+        "workflow": "Validate audience experience",
+        "run_id": 32639001214,
+        "conclusion": "success",
+        "scope_note": "Source, JavaScript, bilingual desktop and mobile rendering passed for PR #834."
+      },
+      {
+        "type": "github_actions",
+        "workflow": "Verify PR 830 CAM non-dilution live",
+        "run_id": 32639001222,
+        "conclusion": "success",
+        "scope_note": "Verified the merged substantive CAM package and PR #808 chronology at the public edge."
+      },
+      {
+        "type": "github_actions",
+        "workflow": "Verify CAM thread closeout live",
+        "run_id": 32639271526,
+        "job_id": 97193729364,
+        "conclusion": "success",
+        "attempt": 1,
+        "verified_at_utc": "2026-08-23T12:23:57.074948+00:00",
+        "scope_note": "Verified the public closeout JSON, bilingual publication-control text, both CAM dossiers, both corrected homepages, identity/source-literal/non-finding controls and no-email/no-external-test-send boundaries."
+      }
+    ]
+  },
+  "open_evidence": [
+    "native CAM, JDAM, FMMM, Laura-actor, Community and provider instruction chain",
+    "actor-specific mandate, presence, participation and instruction evidence for Laura Patricia Acosta Matos",
+    "certified filed amendment and page/line source-literal map consolidating the typographical correction",
+    "security and locksmith contract, payer, orders, logs and key receipts",
+    "complete post-entry actual-control and income ledger",
+    "administrator scope, knowledge, supervision, response, recovery and accounting file",
+    "judge-by-act filing, duty, evidence-before-judge, resolution/refusal/delay, knowledge, purpose and causation matrix",
+    "full dismissal and appeal orders with persons, facts, investigation, finality and new-evidence comparison",
+    "every exculpatory or innocent instruction, objection and corrective act",
+    "claimant-by-asset-by-period recovery allocation"
+  ],
+  "publication_safety": {
+    "raw_private_emails_committed": false,
+    "private_message_ids_committed": false,
+    "privileged_advice_committed": false,
+    "unnecessary_personal_identifiers_committed": false,
+    "criminal_guilt_stated_as_final": false,
+    "direct_instruction_stated_as_adjudicated": false,
+    "administrator_criminal_approval_stated_as_adjudicated": false,
+    "judicial_prevarication_stated_as_established": false,
+    "source_typo_treated_as_separate_actor": false,
+    "source_literal_rewritten_as_canonical_identity": false,
+    "direct_attribution_diluted_to_question_or_lead": false,
+    "direct_attribution_hidden_in_collapsed_content": false,
+    "presumption_of_innocence_preserved": true,
+    "right_of_reply_preserved": true,
+    "this_closeout_authorizes_email": false,
+    "external_test_sends_permitted": false
+  },
+  "deployment_evidence": {
+    "substantive_merge_sha": "05cba3c9af7071f96b56eae90a67a2ceae3a783d",
+    "closeout_merge_sha": "ea90c4a9b44c559eaa7b51d73ea852596c6856fb",
+    "deployment_url": "https://sbu001monterecco.github.io/por-derecho/",
+    "deployment_status": "success-confirmed-by-public-edge-verification"
+  },
+  "live_verification_evidence": {
+    "workflow_name": "Verify CAM thread closeout live",
+    "workflow_file": ".github/workflows/verify-cam-thread-closeout-live.yml",
+    "workflow_run_id": 32639271526,
+    "workflow_job_id": 97193729364,
+    "workflow_conclusion": "success",
+    "attempt": 1,
+    "verified_at_utc": "2026-08-23T12:23:57.074948+00:00",
+    "status": "PASS_COMPLETE_CLOSEOUT"
+  },
+  "deletion_record": {
+    "path": "docs/deletion-audits/2026-08-23-cam-creditor-control-criminal-lead-thread.md",
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "scope_exclusions": [
+      "PR #804 redacted 21 April 2016 email publication",
+      "ACTA native preservation and source-line verification",
+      "REGAGE26e00074403517 destination and package classification",
+      "Ruth Ugalde response/follow-up status",
+      "legacy live-verifier consolidation"
+    ],
+    "recovery_order": [
+      "CHATGPT_START_HERE.md",
+      "CURRENT_HANDOVER_UNITARY_RECOVERY_21AUG2026.md",
+      "archive/EXPRESS_CRIMINAL_ATTRIBUTION_NON_DILUTION_SOURCE_FIDELITY_RULE_23AUG2026.md",
+      "archive/CROSS_THREAD_REPOSITORY_WEBSITE_EMAIL_RESCAN_AND_ACTION_REGISTER_23AUG2026.md",
+      "archive/IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md",
+      "archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md",
+      "assets/data/cam-creditor-control-criminal-lead-v1.json",
+      "assets/data/cam-nondilution-thread-closeout-v1.json",
+      "publication-manifests/cam-creditor-control-criminal-lead-20260823.json",
+      "docs/deletion-audits/2026-08-23-cam-creditor-control-criminal-lead-thread.md"
+    ],
+    "fresh_thread_can_recover_without_chat": true
+  }
+}

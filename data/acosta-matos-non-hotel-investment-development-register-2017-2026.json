@@ -1,0 +1,131 @@
+{
+  "schema": "por-derecho.acosta-matos.non-hotel-investment-development.v1",
+  "register_id": "PD-AM-NH-INV-2017-2026-001",
+  "control_date": "2026-09-01",
+  "time_scope_rule": "Only dated sources enter the 2017-2026 chronology. Undated/current website inventory is captured as a 1-Sep-2026 public marketing snapshot and is not silently backdated.",
+  "evidence_boundary": "Website marketing/presentation is not title, beneficial ownership, investment amount or source-of-funds proof. Third-party construction/service work is excluded from ownership inference.",
+  "platforms": [
+    {
+      "id": "PD-AM-NH-PLATFORM-001",
+      "name": "Promociones Acosta Matos, Sociedad Limitada",
+      "identity_status": "SOURCE_RESOLVED_CAEPR_ADMISSION_PENDING",
+      "registry_sheet": "GC 62173",
+      "origin": "2023 Construcciones Acosta Matos, S.A. total-demerger beneficiary",
+      "object_summary": "Real-estate investments of any kind and promotion of residential/non-residential construction projects with financial, technical and physical resources.",
+      "source": "https://www.boe.es/borme/dias/2024/02/12/pdfs/BORME-A-2024-30-35.pdf",
+      "open": ["asset-by-asset legal ownership", "land/deed costs", "equity/debt/intercompany funding", "sale proceeds", "retained units", "RIC/RICPE/public-incentive links if any"]
+    },
+    {
+      "id": "PD-AM-NH-PLATFORM-002",
+      "name": "Socios Inversores Canarios, Sociedad Limitada",
+      "identity_status": "SOURCE_RESOLVED_CAEPR_ADMISSION_PENDING",
+      "registry_sheet": "GC 65871",
+      "start_date": "2026-01-28",
+      "capital_eur": 100000,
+      "object_summary": "Direction, management and supervision of shares/participations and economic/political rights of companies/entities, plus resource management/organisation.",
+      "board_at_incorporation": [
+        {"entity": "Dinosol Supermercados, S.L.", "office": ["director", "president"], "representative": "Francisco Javier Puga Santana"},
+        {"entity": "Positivo Expansión, S.L.", "office": ["director", "vice-president"], "representative": "José Luis León Eugenio"},
+        {"entity": "Grupo Alisio Canarias Inversiones, S.A.", "office": ["director"], "representative": "José Julio Artiles Moragas"},
+        {"entity": "Grupo Acosta Matos, S.L.", "office": ["director"], "representative": "José Daniel Acosta Matos", "representative_caepr": "PD-SP-P-0011"},
+        {"entity": "Fund Grube, S.A.", "office": ["director"], "representative": "Dhiraj Manmohan Chhabria Chhabria"}
+      ],
+      "secretary_non_director": "Carlos Gabriel Saavedra Rodríguez del Palacio",
+      "equity_boundary": "Located BORME acts identify governance appointments, not capital subscribers or ownership percentages. Do not call directors shareholders without a shareholder/incorporation source.",
+      "downstream_portfolio_status": "OPEN_NOT_LOCATED_IN_BOUNDED_PUBLIC_SCAN_AS_OF_2026-09-01",
+      "sources": ["https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-32-35", "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-112-35"]
+    }
+  ],
+  "current_promotion_marketing_snapshot": [
+    {"name": "California 13", "address": "C/ California 13", "status": "WEBSITE_EN_VENTA_ENTRY"},
+    {"name": "Simancas 95", "address": "C/ Simancas 95", "status": "WEBSITE_EN_VENTA_ENTRY"},
+    {"name": "Castillejos 96 – Pavía", "address": "C/ Castillejos 96", "status": "WEBSITE_EN_VENTA_ENTRY"},
+    {"name": "California 43 – Simancas", "address": "C/ California 43 – Simancas", "status": "WEBSITE_EN_VENTA_ENTRY", "public_price_from_eur": 196000},
+    {"name": "Rosarito 16", "address": "C/ Rosarito 16", "status": "WEBSITE_EN_VENTA_ENTRY", "public_price_from_eur": 244000},
+    {"name": "Tomás Miller 55", "address": "C/ Tomás Miller 55", "status": "WEBSITE_EN_VENTA_ENTRY", "public_price_from_eur": 188000},
+    {"name": "Portugal 53", "address": "C/ Portugal 53", "status": "WEBSITE_FILTER_ENTRY_MARKED_SOLD"},
+    {"name": "Juan Rejón 29–31", "address": "C/ Juan Rejón 29–31", "status": "WEBSITE_EN_VENTA_ENTRY", "public_price_from_eur": 170000},
+    {"name": "Torres Quevedo 26", "address": "C/ Torres Quevedo 26", "status": "WEBSITE_EN_VENTA_ENTRY", "public_price_from_eur": 260000},
+    {"name": "Párroco Rodríguez 77", "address": "C/ Párroco Rodríguez 77", "status": "WEBSITE_EN_VENTA_ENTRY", "public_price_from_eur": 169000},
+    {"name": "Juan Rejón 41–43 / La Naval 82–84–86", "address": "C/ Juan Rejón 41–43 – La Naval 82–84–86", "status": "WEBSITE_EN_VENTA_ENTRY", "public_price_from_eur": 150000},
+    {"name": "Pedro Castillo Westerling 11–13", "address": "C/ Pedro Castillo Westerling 11–13", "status": "WEBSITE_FILTER_ENTRY_MARKED_SOLD"}
+  ],
+  "upcoming_promotions_snapshot": [
+    {"name": "Valencia 44 – Víctor Hugo", "address": "C/ Valencia 44", "status": "ANNOUNCED_UPCOMING_GROUP_PROMOTION"},
+    {"name": "Paseo de Las Canteras M2", "address": "C/ Numancia 44", "status": "ANNOUNCED_UPCOMING_GROUP_PROMOTION"},
+    {"name": "Paseo de Las Canteras M1", "address": "C/ Numancia 44", "status": "ANNOUNCED_UPCOMING_GROUP_PROMOTION"},
+    {"name": "Bolivia 3", "address": "C/ Bolivia 3", "status": "ANNOUNCED_UPCOMING_GROUP_PROMOTION"},
+    {"name": "Matías Padrón 83", "address": "C/ Matías Padrón 83", "status": "ANNOUNCED_UPCOMING_GROUP_PROMOTION"}
+  ],
+  "executed_corpus_current_website": [
+    "Juan Manuel Durán 11–13",
+    "Juan Rejón 20 / Rosarito 9",
+    "Presidente Alvear 67–69",
+    "Cayetana Manrique 14–16",
+    "Albareda 17–19",
+    "Juan Rejón 3",
+    "29 de Abril 54",
+    "Párroco Francisco Rodríguez Rodríguez 49",
+    "Venegas 76",
+    "Pedro del Castillo Westerling 20",
+    "Cayetana Manrique 72 / Lepanto 55",
+    "Pi y Margall 46",
+    "Torres Canteras / Vergara 24",
+    "Secretario Padilla 172–174",
+    "Párroco Francisco Rodríguez Rodríguez 63",
+    "Emilio Castelar 5 / León y Castillo 334 source display",
+    "Víctor Hugo 32",
+    "Constantino 10 / Lagunetas 12",
+    "Presidente Alvear 31 / Montevideo 12",
+    "Bolivia 1 / Velarde",
+    "Numancia 13–15 / Perú 7",
+    "Paseo de Las Canteras 21",
+    "General Vives / Montevideo source entry",
+    "Triana 65",
+    "Alfredo L. Jones 33",
+    "Mario César 11–15"
+  ],
+  "executed_corpus_boundary": "Current website evidence proves inclusion in the group's executed-development corpus, not completion/acquisition dates. Do not classify as 2017-2026 transactions without dated source recovery.",
+  "rental_marketing_snapshot": {
+    "residential": ["López Socas 3", "Triana 65", "Franchy Roca 72", "Mas de Gaminde 41", "Montevideo 12", "Gravina 20", "Américo Vespucio 16", "Paseo de Las Canteras 21", "Kant 5", "Portugal 95", "Alfredo L. Jones 33", "Sagasta 47"],
+    "commercial": ["Párroco Rodríguez Rodríguez 63", "Secretario Padilla 172", "Alfredo Pérez 17", "Emilio Castelar 5", "Secretario Padilla 76", "Franchy Roca 68", "Pelayo 19", "Paseo de Las Canteras 21", "Presidente Alvear 35", "Lepanto 1", "Pedro Castillo Westerling 20"],
+    "parking_garage": ["Parking Presidente Alvear 31–35", "Parking Venegas", "Edificio Dunas / C/ Francisco Gourié 107"],
+    "boundary": "Website rental marketing is not title proof; cross-link only when exact property identity is proved."
+  },
+  "excluded_service_activity": [
+    {"activity": "construction for third parties", "reason": "builder role is not ownership/equity"},
+    {"activity": "architecture/technical services", "reason": "professional role is not ownership/equity"},
+    {"activity": "construction-material sales / Tecnipinturas", "reason": "operating business activity, not automatically an investment asset"},
+    {"activity": "photovoltaic project services", "reason": "service/project activity, not automatically an owned investment asset"}
+  ],
+  "example_third_party_exclusion": {
+    "project": "Plaza de La Feria 6",
+    "public_owner": "Inversiones y Explotaciones Patrimoniales, S.L.",
+    "acosta_role": "project/design/construction page",
+    "rule": "Exclude from Acosta-owned asset map absent separate equity/title evidence."
+  },
+  "sources": [
+    "https://www.boe.es/borme/dias/2024/02/12/pdfs/BORME-A-2024-30-35.pdf",
+    "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-32-35",
+    "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-112-35",
+    "https://www.acostamatos.com/promociones-en-venta/",
+    "https://www.acostamatos.com/promociones-proximas/",
+    "https://www.acostamatos.com/promociones-ejecutadas/",
+    "https://www.acostamatos.com/promociones-ejecutadas/2/",
+    "https://www.acostamatos.com/promociones-ejecutadas/3/",
+    "https://www.acostamatos.com/alquileres-viviendas/",
+    "https://www.acostamatos.com/alquileres-viviendas/2/",
+    "https://www.acostamatos.com/alquileres-locales/",
+    "https://www.acostamatos.com/alquileres-locales/2/",
+    "https://www.acostamatos.com/alquileres-parking/",
+    "https://www.acostamatos.com/otros-servicios/"
+  ],
+  "interlinks": {
+    "human_pair": "research/ACOSTA_MATOS_NON_HOTEL_INVESTMENT_DEVELOPMENT_CENSUS_2017_2026.md",
+    "hotel_investment_map": "research/ACOSTA_MATOS_PERIMETER_INVESTMENT_MAP_2017_2026.md",
+    "hotel_machine_register": "data/acosta-matos-perimeter-investment-register-2017-2026.json",
+    "identity_reconciliation": "data/acosta-matos-perimeter-identity-reconciliation-20260901.json",
+    "poster_continuity": ".github/governance/records/ACOSTA_MATOS_POSTER_INVESTMENT_CONTINUITY_01SEP2026.md"
+  },
+  "publication": {"repository_only": true, "website_changed": false}
+}

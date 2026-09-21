@@ -1,0 +1,152 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "concurso36-linked-continuity-20260829",
+  "control_id": "PD-C36-LINKED-CONTINUITY-20260829-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "created_at": "2026-08-29T00:00:00Z",
+  "current_state": "DEPLOYED",
+  "status": "merged_deployed__exact_route_readback_pending",
+  "publication_origin": "https://sbu001monterecco.github.io/por-derecho/",
+  "base_sha_at_start": "a7b56adcf5d2656050fb516aad4b4402ea36ef94",
+  "branch": "codex/concurso36-linked-continuity-20260829",
+  "continuity_truth_repair_branch": "fix/concurso36-continuity-truth-20260829",
+  "current_main_rule": "Resolve refs/heads/main afresh at runtime. Never substitute the immutable release SHA for mutable current main.",
+  "last_observed_main_before_truth_repair": "0b0423820942cb95f7a98e8d6fc519f6a9482a04",
+  "purpose": "Publish a canonical restart point, exact duplicate-intake reconciliation, preserved P0/P1 evidence gates and a controlled current-main/transplant queue for linked Por Derecho workstreams, without promoting new evidence.",
+  "release_lineage": {
+    "pull_request_number": 1190,
+    "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/1190",
+    "release_sha": "0b0423820942cb95f7a98e8d6fc519f6a9482a04",
+    "merged_at": "2026-08-29T04:16:57Z",
+    "pages_run_id": 33233442563,
+    "pages_run_number": 1262,
+    "pages_conclusion": "success"
+  },
+  "state_control": {
+    "CURRENT_MAIN": "RESOLVE_AT_RUNTIME",
+    "RELEASE_SHA": "0b0423820942cb95f7a98e8d6fc519f6a9482a04",
+    "SCOPED_VALIDATION": "PASS_RELEASE__REPAIR_CI_PENDING",
+    "GLOBAL_INTEGRITY": "REPAIR_CI_PENDING",
+    "PAGES_DEPLOYMENT": "PASS_RELEASE_RUN_33233442563",
+    "EXACT_ROUTE_READBACK": "PENDING_REPAIR_DEPLOYMENT",
+    "EVIDENCE_CLOSURE": "OPEN_P0_9_P1_2",
+    "DELETION_SAFE": "NO"
+  },
+  "source_equivalence": {
+    "exact_git_blob_match": true,
+    "files": [
+      {
+        "path": "archive/MISSING_EVIDENCE_REGISTER_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md",
+        "uploaded_filename": "MISSING_EVIDENCE_REGISTER_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md",
+        "bytes": 3248,
+        "sha256": "6e4351dec0516c4908d57f22fbd0ccade66ba80d2b17080a6ea6807fb536ff2c",
+        "git_blob_sha": "2232c420b5524ff3bd7e2f63291a716b57956484",
+        "equivalence": "BYTE_IDENTICAL_TO_MAIN"
+      },
+      {
+        "path": "archive/CONCURSO_36_2012_DOCKET_WIDE_DISCOVERY_PROMOTION_REGISTER_17AUG2026.md",
+        "uploaded_filename": "CONCURSO_36_2012_DOCKET_WIDE_DISCOVERY_PROMOTION_REGISTER_17AUG2026.md",
+        "bytes": 15766,
+        "sha256": "d804bd43373fb24004ac41fe6271e4ed626e0e454f999fded4bf48db1d03552b",
+        "git_blob_sha": "8575565f7a488ba6f1f7cc4fbf0d79bd891d8d6d",
+        "equivalence": "BYTE_IDENTICAL_TO_MAIN"
+      }
+    ]
+  },
+  "expected_routes": {
+    "en": [
+      "en/insolvency-36-2012-continuity-control/index.html"
+    ],
+    "es": [
+      "es/concurso-36-2012-control-continuidad/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "CONCURSO36_CONTINUE_HERE.md",
+    "archive/CONCURSO36_DOCKET_CONTINUITY_RECONCILIATION_29AUG2026.md",
+    "archive/MASTER_CONTINUATION_PROMPT_CONCURSO36_AND_LINKED_THREADS_29AUG2026.md",
+    "archive/OTHER_THREAD_RECONCILIATION_QUEUE_29AUG2026.md",
+    "assets/data/concurso36-linked-continuity-20260829-v1.json",
+    "en/insolvency-36-2012-continuity-control/index.html",
+    "es/concurso-36-2012-control-continuidad/index.html",
+    "sitemap-concurso36-court-orders.xml",
+    "publication-manifests/concurso36-linked-continuity-20260829.json",
+    "docs/deletion-audits/2026-08-29-concurso36-linked-continuity.md",
+    "scripts/validate_concurso36_linked_continuity.py",
+    "scripts/verify_concurso36_linked_continuity_live.py",
+    "scripts/production_smoke_check.py",
+    ".github/workflows/validate-concurso36-linked-continuity.yml",
+    ".github/workflows/verify-concurso36-linked-continuity-live.yml"
+  ],
+  "controlled_result": {
+    "new_evidence_promoted": false,
+    "duplicate_intake_ambiguity_closed": true,
+    "canonical_restart_point_created": true,
+    "p0_evidence_gates_open": 9,
+    "p1_evidence_gates_open": 2,
+    "certified_docket_obtained": false,
+    "complete_ac_report_series_obtained": false
+  },
+  "evidential_boundaries": [
+    "The supplied files are byte-identical to canonical main copies and create no new evidence object.",
+    "A controlled continuity release does not certify the court-file denominator.",
+    "A located node closes only that node unless the controlling source proves more.",
+    "Same-date instruments remain distinct.",
+    "Favourable and neutral acts must remain visible.",
+    "Not located in the controlled corpus does not mean nonexistent.",
+    "Legacy PRs are compared with current main and are never wholesale-merged by default."
+  ],
+  "open_evidence": [
+    "Certified chronological court/LAJ index for every section and incident from 1 January 2014 through conclusion.",
+    "Signed 29 April 2014 act; 2015 acts; 1 April and 1 June 2016 acts; definitive-text chain.",
+    "204/14, 677/14, 2418/14 and 5599/2015.",
+    "Signed originals and complete families for C36-E004, E031, E034, E045, E056, E060, E062 and E063.",
+    "Filing 7336/2021, requests 7416/7417, issued testimonies, report 7425/2021, annexes, service, challenges and decisions.",
+    "Certified index, every report and annex, reports 7425/2021 and 5367/2022, later reports, ledger/bank reconciliation and final accounts.",
+    "Separate signed copies for the 9 March, 16 June, 20 June and 13 July 2022 acts; complaints 375/2022 and 379/2022; official Constitutional Court decision in 2811/2023.",
+    "Merits outcomes in RPL 2523/2025, combined RPL 3304/2025 and 3319/2025, and RPL 421/2026.",
+    "Final accounts, transfer, objections, approval/refusal, finality and conclusion order.",
+    "Direct primary reinspection of the 8 February body/recital and 9/14 February signature layers; current control uses 15 February.",
+    "Signed source for a distinct act, or a certified correction of the derivative date."
+  ],
+  "authority": {
+    "repository_preparation": true,
+    "push": true,
+    "pull_request": true,
+    "merge_after_green": true,
+    "deploy": true,
+    "email": false,
+    "filing": false,
+    "authority_contact": false
+  },
+  "validation": {
+    "status": "PASS_RELEASE__REPAIR_CI_PENDING",
+    "commands": [
+      "python -B scripts/validate_concurso36_linked_continuity.py"
+    ],
+    "evidence": [
+      {
+        "workflow": "Validate Concurso 36/2012 linked continuity",
+        "run_id": 33233443036,
+        "conclusion": "success",
+        "sha": "0b0423820942cb95f7a98e8d6fc519f6a9482a04"
+      }
+    ]
+  },
+  "pull_request": {
+    "number": 1190,
+    "url": "https://github.com/sbu001monterecco/por-derecho/pull/1190",
+    "state": "merged"
+  },
+  "merge_sha": "0b0423820942cb95f7a98e8d6fc519f6a9482a04",
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "workflow": "pages build and deployment",
+    "run_id": 33233442563,
+    "run_number": 1262,
+    "conclusion": "success",
+    "sha": "0b0423820942cb95f7a98e8d6fc519f6a9482a04"
+  },
+  "live_verification_evidence": null,
+  "deletion_record": "docs/deletion-audits/2026-08-29-concurso36-linked-continuity.md"
+}

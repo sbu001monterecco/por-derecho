@@ -1,0 +1,185 @@
+{
+  "schema": "concurso36-court-treatment-overreach-matrix-v1",
+  "cutoff": "2026-08-29",
+  "case": "Concurso ordinario 36/2012 — Luchy Playa Blanca, S.L.U. — Juzgado de lo Mercantil n.º 1 de Las Palmas de Gran Canaria",
+  "status": "PUBLIC EVIDENCE-LED ANALYTICAL MATRIX — NOT A CERTIFIED COURT DOCKET",
+  "publication_rules": [
+    "A filing proves that a position or request was made; it does not prove the truth of every allegation in it.",
+    "No responsive order located in the reviewed corpus means a verification gap; it does not prove that no order exists.",
+    "A judicial or LAJ act is reported according to its operative effect and limits; it is not expanded into authority it does not contain.",
+    "LPB is the debtor. The concurso does not by itself confer title, possession, exploitation or works authority over Matkator or other third-party property.",
+    "Loss, destruction, diversion, overreach, omission, facilitation and causation are described as pleaded or analytical propositions unless established by a primary decision or other identified primary record.",
+    "Adverse procedural treatment is kept separate from an adjudication on the merits."
+  ],
+  "boundary": {
+    "debtor": "Luchy Playa Blanca, S.L.U. (LPB)",
+    "inside_concurso": "LPB patrimony, LPB rights and claims, and acts lawfully falling within Concurso 36/2012",
+    "outside_or_requires_separate_authority": "Matkator property and rights, other owners' property and rights, and any whole-hotel control, access, operation, works, income or disposal not grounded in specific title, consent or competent order",
+    "analytical_label": "alleged overreach of the concurso"
+  },
+  "tracks": [
+    {
+      "id": "C36-TR-001",
+      "date_or_period": "2012-06-06",
+      "issue": "Opening boundary",
+      "source_records": ["C36-E001"],
+      "documented_court_effect": "Voluntary concurso of LPB; LPB powers retained subject to insolvency-administrator intervention at opening; updated inventory ordered.",
+      "limit": "The opening order is not a title, disposition or possession order over third-party property.",
+      "position_or_consequence": "Any later use of the concurso as a whole-hotel authority must be tested against the LPB-only perimeter and against each asset/right actually belonging to LPB.",
+      "evidence_status": "PRIMARY DOCUMENT CONTROLLED"
+    },
+    {
+      "id": "C36-TR-002",
+      "date_or_period": "2017-12-19",
+      "issue": "Liquidation boundary",
+      "source_records": ["C36-E003"],
+      "documented_court_effect": "Liquidation opened; LPB powers over its patrimony suspended; LPB dissolved; insolvency administrator substituted; liquidation plan and reports required.",
+      "limit": "The order concerns LPB patrimony. It is not a general conveyance or third-party-property mechanism.",
+      "position_or_consequence": "This is the principal boundary against treating the limited LPB concurso as control over the whole mixed-title hotel.",
+      "evidence_status": "PRIMARY DOCUMENT CONTROLLED"
+    },
+    {
+      "id": "C36-TR-003",
+      "date_or_period": "2018-01-18 to 2018-04-16",
+      "issue": "Liquidation plan and approval",
+      "source_records": ["C36-E006", "C36-E008"],
+      "documented_court_effect": "The plan proposed LPB liquidation routes; the approval authorised the enumerated LPB-finca routes and expressly excluded property of others.",
+      "limit": "Approval was not self-executing whole-hotel authority and remained subject to publicity, competition, conveyance, accounting and the order's stated asset perimeter.",
+      "position_or_consequence": "The express third-party-property exclusion is central to the alleged overreach analysis.",
+      "evidence_status": "PRIMARY DOCUMENTS CONTROLLED"
+    },
+    {
+      "id": "C36-TR-004",
+      "date_or_period": "2018-06-04",
+      "issue": "Clarified implementation conditions",
+      "source_records": ["C36-E012"],
+      "documented_court_effect": "Clarified competitive debt components, working-day period, deposit timing, no remate assignment and court-run licitation.",
+      "limit": "Not a conveyance, closing ledger or authority for access, security, possession, works or hotel operation.",
+      "position_or_consequence": "The order should not be used as a substitute source of authority for the physical-control events three days later.",
+      "evidence_status": "PRIMARY DOCUMENT CONTROLLED"
+    },
+    {
+      "id": "C36-TR-005",
+      "date_or_period": "2018-06-07",
+      "issue": "Material takeover / change of control at Sun Park",
+      "source_records": [],
+      "documented_or_reported_event": "The controlled chronology identifies a material access/control episode involving locks, security, exclusion and practical control allegations at Sun Park.",
+      "court_treatment_status": "NO SPECIFIC RESPONSIVE OR AUTHORISING ORDER FOR THE 7-JUNE PHYSICAL CONTROL EPISODE IS IDENTIFIED IN THE CURRENT CANONICAL RECORD",
+      "limit": "This is an evidence-gap statement, not proof that no responsive act exists. The authority must be reconstructed actor-by-actor and asset-by-asset.",
+      "position_or_consequence": "Core questions: who ordered access/security/locks; what was the legal basis; what LPB assets were affected; what Matkator/third-party assets were affected; what income, records, equipment and operational capacity changed hands; what did the court and insolvency administrator know and when.",
+      "evidence_status": "CENTRAL EVENT / AUTHORITY-CHAIN GAP"
+    },
+    {
+      "id": "C36-TR-006",
+      "date_or_period": "2018-06-26",
+      "issue": "Suspension pending appeal",
+      "source_records": ["C36-E014"],
+      "documented_court_effect": "Suspended only realisation of listed mortgaged apartment fincas; other liquidation continued.",
+      "limit": "The controlled record expressly identifies no possession, works, exploitation, income or keys authority in this order.",
+      "position_or_consequence": "The order cannot by itself cure or authorise the earlier 7-June physical-control episode.",
+      "evidence_status": "PRIMARY DOCUMENT CONTROLLED"
+    },
+    {
+      "id": "C36-TR-007",
+      "date_or_period": "2018-06-12 to 2018-11",
+      "issue": "Funded exit, operation and value-preservation route",
+      "source_records": [],
+      "documented_or_reported_event": "The controlled chronology identifies Stoneweg/Aweswell financing and Daniel Irigoyen/ONA communications on 12–13 June 2018, followed by September–November efforts seeking debt quantification, funded conclusion and hotel operation.",
+      "court_treatment_status": "EXACT COURT RECEIPT, PROCEDURAL TREATMENT AND RESPONSIVE-ORDER CHAIN REMAIN TO BE CLOSED",
+      "limit": "The present corpus supports publication of the request/chronology and the gap; it does not support a categorical finding that a particular filing was ignored without its filing receipt and the certified docket.",
+      "position_or_consequence": "Relevant to pleaded loss of rescue opportunity, closure/non-operation, active-estate value, productive-unit continuity and causation.",
+      "evidence_status": "LOCATED CHRONOLOGY / RESPONSE CHAIN PARTIAL"
+    },
+    {
+      "id": "C36-TR-008",
+      "date_or_period": "2018-11-28 to 2019-10-24",
+      "issue": "Locales/pools sale implementation and later judicial correction",
+      "source_records": ["C36-E019", "C36-E020"],
+      "documented_or_reported_event": "A 28 November 2018 deed purported to sell 31 fincas for EUR400,000 before the 12 December LAJ direction to formalise the sale; the canonical record reports that the 12 December direction was later set aside by an order of 24 October 2019.",
+      "court_treatment_status": "CONTROLLED IMPLEMENTATION ANOMALY; COMPLETE CASH, TITLE, RESTITUTION AND ACCOUNTING CHAIN STILL OPEN",
+      "limit": "The deed and later procedural acts must not be collapsed into a single lawful-authority inference.",
+      "position_or_consequence": "Relevant to estate accounting, implementation control, restitution and the wider active-estate harm analysis.",
+      "evidence_status": "PRIMARY DOCUMENTS CONTROLLED / DOWNSTREAM CHAIN OPEN"
+    },
+    {
+      "id": "C36-TR-009",
+      "date_or_period": "2019-04-23 and 2019-06-06; 2022-03/04",
+      "issue": "Economic/forensic evidence placed before the court",
+      "source_records": [],
+      "documented_or_reported_event": "The controlled chronology records LPB/Gil opposition filings in Section Six invoking or attaching David Espejo reports and requesting testigo-perito evidence; David Espejo was later formally cited in 2022.",
+      "court_treatment_status": "EVIDENCE ROUTE DOCUMENTED; COMPLETE RULING-BY-RULING TREATMENT OF EVERY PROPOSITION REMAINS OPEN",
+      "limit": "Later citation of the expert witness does not establish acceptance of every report conclusion.",
+      "position_or_consequence": "Relevant to what economic/value issues were placed before the court and when.",
+      "evidence_status": "LOCATED FILINGS / LATER WITNESS ROUTE"
+    },
+    {
+      "id": "C36-TR-010",
+      "date_or_period": "2021-2022",
+      "issue": "Adjudication and closing route",
+      "source_records": [],
+      "documented_or_reported_event": "The controlled record identifies adjudication, title/cancellation and accounting families but retains material gaps concerning final compensable debt, surplus, implementation, all-finca registry effect and final estate accounting.",
+      "court_treatment_status": "PARTIAL — PRIMARY DECISIONS EXIST; IMPLEMENTATION/ACCOUNTING DENOMINATOR NOT CLOSED",
+      "limit": "Adjudication of LPB property does not by itself establish title or authority over third-party assets or the whole hotel business.",
+      "position_or_consequence": "Relevant to alleged displacement of value, recoveries, fruits and the boundary between LPB's estate and extraconcursal rights.",
+      "evidence_status": "PARTIAL / MATERIAL ACCOUNTING GAPS"
+    },
+    {
+      "id": "C36-TR-011",
+      "date_or_period": "2024-2026",
+      "issue": "Removal of insolvency administrator and fee challenges",
+      "source_records": [],
+      "documented_court_effect": "The located first-instance removal and fee routes were dismissed on standing/legitimacy grounds; the public specialist corpus states that the merits of the seven removal grounds and the material legality/quantum of the fees were not decided by those first-instance rulings.",
+      "court_treatment_status": "ADVERSE PROCEDURAL OUTCOME; MERITS NOT ADJUDICATED IN THE IDENTIFIED FIRST-INSTANCE RULINGS",
+      "limit": "Pending/live appeals must not be described as decided unless a signed outcome is obtained.",
+      "position_or_consequence": "The page should show the distinction between an adverse procedural ruling and an adverse merits ruling.",
+      "evidence_status": "PRIMARY SPECIALIST CORPUS CONTROLLED / AP OUTCOMES OPEN"
+    },
+    {
+      "id": "C36-TR-012",
+      "date_or_period": "cross-cutting",
+      "issue": "Masa activa — alleged diminution/destruction",
+      "source_records": [],
+      "documented_or_reported_event": "The recovery corpus separates LPB estate claims including units/rights, fruits, occupation, deterioration, credits, overpayment, lost insolvency opportunity and insolvency-administrator responsibility.",
+      "court_treatment_status": "NOT PRESENTED HERE AS AN ADJUDICATED GLOBAL FINDING",
+      "limit": "Each loss requires asset ownership, period, actor, causation, quantum and remedy proof.",
+      "position_or_consequence": "Public formulation: alleged cumulative diminution/destruction of the masa activa and recoverable value, to be proved item-by-item.",
+      "evidence_status": "PLEADED/ANALYTICAL LOSS FAMILY"
+    },
+    {
+      "id": "C36-TR-013",
+      "date_or_period": "cross-cutting",
+      "issue": "Unidad productiva — alleged destruction/disruption",
+      "source_records": [],
+      "documented_or_reported_event": "The controlled recovery analysis separately identifies operator/business components such as income, reservations/data, contracts, goodwill, operating capacity and the need to determine their holder.",
+      "court_treatment_status": "NOT PRESENTED HERE AS AN ADJUDICATED GLOBAL FINDING",
+      "limit": "The productive unit is not identical to LPB's real-estate inventory; ownership and control of each business component must be established.",
+      "position_or_consequence": "Public formulation: alleged destruction/disruption of productive-unit continuity, including closure/non-operation, lost operating income, opportunity and business value, subject to proof of holder and causation.",
+      "evidence_status": "PLEADED/ANALYTICAL LOSS FAMILY"
+    },
+    {
+      "id": "C36-TR-014",
+      "date_or_period": "cross-cutting",
+      "issue": "Extraconcursal harm and alleged overreach",
+      "source_records": [],
+      "documented_or_reported_event": "The recovery analysis treats Matkator property and direct damage as extraconcursal and requires separate title/authority. The wider group position alleges patrimonial harm both within and outside Concurso 36/2012.",
+      "court_treatment_status": "BOUNDARY QUESTION REQUIRING ASSET-BY-ASSET AND RIGHT-BY-RIGHT RECONSTRUCTION",
+      "limit": "The concurso cannot itself substitute for Matkator consent/title or automatically absorb separate owners, business rights or direct losses.",
+      "position_or_consequence": "Overreach test: for each act ask (1) whose asset/right, (2) what title/authority, (3) what court order if any, (4) who acted/benefited, (5) what notice/objection was filed, (6) what response was made, and (7) what loss followed.",
+      "evidence_status": "CONTROLLED LEGAL/FACTUAL PERIMETER; LIABILITY UNADJUDICATED"
+    }
+  ],
+  "gap_closure": [
+    "Obtain a signed electronic chronological index or equivalent certified per-piece export for every section/incident of Concurso 36/2012.",
+    "For every located party filing, bind filing receipt, annex list, service, court/LAJ response, appeal, finality and implementation into one record family.",
+    "Close the exact 7-June-2018 authority chain: Community minutes/audio/proxies, AC communications, security/locksmith instructions, access logs, police/notarial records, keys, inventory, photographs and contemporaneous court filings.",
+    "Close the 12–13 June 2018 Stoneweg/ONA funded-exit court receipt and treatment chain, including any meeting note, filing, transfer, order, minute or silence interval capable of being proved.",
+    "Reconcile the complete masa-activa ledger: opening inventory, liquidation-plan inventory, quarterly reports, bank accounts, recoveries, fruits/income, EUR400,000 route, adjudication credit, surplus, final accounts and conclusion.",
+    "Reconstruct the productive-unit ledger separately from real-estate title: operator, reservations, revenue, contracts, staff, licences, utilities, data, goodwill, closure/reopening and post-takeover commercial exploitation.",
+    "Maintain a third-party/extraconcursal ledger for Matkator and every non-LPB finca/right so no concursal act is treated as authority beyond its proven perimeter.",
+    "Obtain signed merits outcomes and service/finality for live AP rolls, including the removal/fees appeals and RPL 2523/2025 when available.",
+    "Never upgrade 'not located' to 'did not exist' without certified docket evidence."
+  ],
+  "live_source_catalog": "assets/data/concurso36-complete-record-v1.json",
+  "public_specialist_page_es": "es/concurso-36-2012-autos-resoluciones/",
+  "public_specialist_page_en": "en/insolvency-36-2012-orders-decisions/"
+}

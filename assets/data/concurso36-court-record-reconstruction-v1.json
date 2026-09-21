@@ -1,0 +1,225 @@
+{
+  "schema": "por-derecho.concurso36-court-record-reconstruction.v1",
+  "generated": "2026-08-29",
+  "baseline_main_sha": "4b437dbee5ee979b9e3a9868ecd7d0e37505b181",
+  "status": "CONTROLLED RECONSTRUCTION — NOT A CERTIFIED COURT DOCKET",
+  "purpose": "Reconstruct Concurso 36/2012 as closed procedural families so each material party filing is paired to receipt, court/LAJ act, service, review/appeal, finality and implementation before prosecutorial conclusions are upgraded.",
+  "completion_rule": [
+    "No material party filing is complete without a verified court-channel receipt or an explicit receipt gap.",
+    "No material court/LAJ act is complete without the signed instrument or authentic notification metadata, service status and operative effect.",
+    "Every review, reposicion, apelacion or queja must be linked to the decision attacked and to its own outcome/finality status.",
+    "Every dispositive act affecting title, possession, credit, testimonios or implementation must be linked to the downstream deed, registry, accounting or operational consequence where applicable.",
+    "Absence from the controlled corpus means response-not-located, never nonexistence.",
+    "LexNET IDs and document hashes are primary dedupe keys; filenames, forwards and email subjects are not unique procedural records."
+  ],
+  "response_taxonomy": [
+    "ADVERSE_SUBSTANTIVE_RESPONSE",
+    "PROTECTIVE_RESPONSE",
+    "PROCEDURAL_ONLY_DISPOSITION",
+    "PARTIAL_RESPONSE",
+    "RESPONSE_NOT_LOCATED",
+    "CONTRADICTORY_OPERATIVE_STATE",
+    "IMPLEMENTATION_OR_ACCOUNTING_CHAIN_OPEN"
+  ],
+  "verified_families": [
+    {
+      "family_id": "C36-FAM-2022-APPEAL-QUEJA-TESTIMONIOS",
+      "label": "15-Oct-2021 / 26-Jan-2022 autos -> testimonios/finality -> appeal -> queja -> LAJ review",
+      "status": "PARTIALLY_CLOSED_HIGH_VALUE",
+      "records": [
+        {
+          "id": "C36-REC-20220228-LPB-APPEAL",
+          "date": "2022-02-28",
+          "record_class": "party_filing",
+          "party": "Luchy Playa Blanca, S.L.U.",
+          "direction": "party_to_court",
+          "procedure": "Section 5 / Piece 5",
+          "title": "Recurso de apelacion against the two Autos of 15 October 2021, as clarified on 26 January 2022",
+          "lexnet_id": "202210473582179",
+          "filed_at": "2022-02-28T13:54:54+01:00",
+          "principal_hash_sha256": "094fbdbd52840f52f76afcad5ea55fee8c9a844c16205381cf9ea3984d29a0d4",
+          "registration_reference": "1477/2022 (identified in the 9-Mar-2022 Auto)",
+          "verification": "LexNET filing wrapper and first page controlled from owner mailbox",
+          "proof_limit": "Filing proves the appeal and its asserted grounds, not that the appeal was legally admissible or correct."
+        },
+        {
+          "id": "C36-REC-20220302-AWESWELL-APPEAL",
+          "date": "2022-03-02",
+          "record_class": "party_filing",
+          "party": "Aweswell Limited",
+          "direction": "party_to_court",
+          "procedure": "Section 5 / Piece 5",
+          "title": "Recurso de apelacion against the two Autos of 15 October 2021, following 26 January 2022 clarification",
+          "lexnet_sent_id": "202210474270428",
+          "lexnet_ack_id": "1202210474270428",
+          "filed_at": "2022-03-02T14:03:19+01:00",
+          "principal_hash_sha256": "a6768d02d0876867b0fdf9d5c58ae6f5f0b4a7a8bc7fd76620c40024b40c11ba",
+          "annex_hashes_sha256": [
+            "02a2bcbf09333b9990c5c206c6b4784a1b42a731d31c1c58c04da5e3dcfadf8d",
+            "7ac5f0bb9b6170918fe7ac0feb6bc9c83a9e81e9fd0aaaaa6cd9bb7a5d8d3e19"
+          ],
+          "registration_reference": "1512/2022 (identified in the 9-Mar-2022 Auto)",
+          "verification": "LexNET acknowledgment and first page controlled from owner mailbox"
+        },
+        {
+          "id": "C36-REC-20220307-CAM-OPPOSITION",
+          "date": "2022-03-07",
+          "record_class": "party_filing",
+          "party": "Construcciones Acosta Matos, S.A.",
+          "direction": "party_to_court",
+          "procedure": "Section 5",
+          "title": "Impugnacion/opposition concerning LPB and Aweswell reposicion against the 14-Feb-2022 DIOR",
+          "lexnet_id": "202210475416241",
+          "filed_at": "2022-03-07T12:56:34+01:00",
+          "accepted_at": "2022-03-07T13:05:00+01:00",
+          "principal_hash_sha256": "d80918e44331e17a5c94e4e013201c640d4fa1955ad0ab9da9e7283c1f751860",
+          "verification": "LexNET filing wrapper and first page controlled from owner mailbox"
+        },
+        {
+          "id": "C36-REC-20220309-AUTO-INADMITS-APPEALS",
+          "date": "2022-03-09",
+          "record_class": "court_decision",
+          "issuer": "Juzgado de lo Mercantil No. 1 de Las Palmas de Gran Canaria",
+          "signed_by": "Alberto Lopez Villarrubia, Magistrado-Juez",
+          "signed_at": "2022-03-09T11:03:37+00:00",
+          "title": "Auto inadmitting LPB and Aweswell appeals",
+          "operative_effect": "Inadmit the appeals against the two 15-Oct-2021 Autos; directs parties to recurso de queja within ten days.",
+          "reasoning_summary": "Treats reposicion Autos issued in liquidation as excluded from deferred appeal under art. 547 TRLC.",
+          "electronic_document_id": "A05003250-3507d04a1d026d8373981d6add31646823908885",
+          "notification_lexnet_id": "202210476786626",
+          "notified_at": "2022-03-11T09:42:00+01:00",
+          "notification_annex_hash_sha256": "7d6ae2574222cf98324cd609d0f24eb9178f5fc1431bfb1a56501ccf0ab97a96",
+          "response_taxonomy": "PROCEDURAL_ONLY_DISPOSITION",
+          "verification": "Signed two-page Auto and LexNET notification controlled from owner mailbox"
+        },
+        {
+          "id": "C36-REC-20220329-AWESWELL-QUEJA",
+          "date": "2022-03-29",
+          "record_class": "party_filing",
+          "party": "Aweswell Limited",
+          "direction": "party_to_audiencia_provincial",
+          "title": "Recurso de queja against the 9-Mar-2022 inadmission Auto",
+          "lexnet_sent_id": "202210481753993",
+          "lexnet_ack_id": "1202210481753993",
+          "filed_at": "2022-03-29T13:14:12+01:00",
+          "principal_hash_sha256": "4c1838970f379a18711bafd2d20aec1e0244af105df634a14529a5d12bc3ec57",
+          "annex_hash_sha256": "d9fb3a56aef5f862280c2859ef54e2c5117ea58961439ca0ee0c673ff17c78ef",
+          "verification": "LexNET queja acknowledgment controlled from owner mailbox",
+          "open_link": "Audiencia Provincial docket identity and outcome not yet controlled in this registry"
+        },
+        {
+          "id": "C36-REC-20220330-AWESWELL-NOTICE-OF-QUEJA",
+          "date": "2022-03-30",
+          "record_class": "party_filing",
+          "party": "Aweswell Limited",
+          "direction": "party_to_mercantile_court",
+          "title": "Communication to the Mercantile Court that the queja had been filed",
+          "lexnet_sent_id": "202210482293471",
+          "lexnet_ack_id": "1202210482293471",
+          "filed_at": "2022-03-30T22:19:16+01:00",
+          "principal_hash_sha256": "1eda27f46abad89416c27bf71a3672a52a07917f0b5b09eef28382047ba8c1b0",
+          "annex_hash_sha256": "8b708fa91ef8b2b87a1533382ef8236590ecf99b28b4882380334139ee7bc134",
+          "request_summary": "Asked the court to avoid further steps that could prejudice LPB/other creditors while the queja remained pending.",
+          "verification": "LexNET acknowledgment and first page controlled from owner mailbox"
+        },
+        {
+          "id": "C36-REC-20220404-DIOR-QUEJA-NOTICES",
+          "date": "2022-04-04",
+          "record_class": "laj_order",
+          "issuer": "Juzgado de lo Mercantil No. 1 de Las Palmas de Gran Canaria",
+          "signed_by": "Agueda Reyes Almeida, LAJ",
+          "signed_at": "2022-04-04T13:43:59+00:00",
+          "title": "Diligencia de ordenacion joining and transferring the two notices of recursos de queja",
+          "operative_effect": "Joins the notices to Section 5, records filing references 2275 and 2314/2022, treats the manifestations as made and transfers them to the parties.",
+          "electronic_document_id": "A05003250-357d33adfb2c55ef416dd56d02b1649076726371",
+          "notification_lexnet_id": "202210483929709",
+          "response_taxonomy": "PARTIAL_RESPONSE",
+          "proof_limit": "This proves the Mercantile Court knew both queja notices had been communicated; it does not establish the Audiencia Provincial outcome or that further implementation was stayed."
+        },
+        {
+          "id": "C36-REC-20220426-DECRETO-14FEB-TESTIMONIOS",
+          "date": "2022-04-26",
+          "record_class": "laj_decision",
+          "issuer": "Juzgado de lo Mercantil No. 1 de Las Palmas de Gran Canaria",
+          "signed_by": "Agueda Reyes Almeida, LAJ",
+          "signed_at": "2022-04-26T14:36:20+00:00",
+          "title": "Decreto dismissing LPB and Aweswell reposicion against the 14-Feb-2022 DIOR",
+          "operative_effect": "Dismisses both reposicion challenges; states testimonios of 18-May-2021, 15-Oct-2021 and 26-Jan-2022 were properly issued on a party request and treats the 15-Oct/26-Jan reposicion Auto as irrecurrible and therefore firm.",
+          "electronic_document_id": "A05003250-35127ecbb3101ef0a562bb848041650980940581",
+          "review_route": "Direct revision within five working days",
+          "response_taxonomy": "ADVERSE_SUBSTANTIVE_RESPONSE",
+          "verification": "Signed two-page Decreto controlled from owner mailbox"
+        },
+        {
+          "id": "C36-REC-20220426-DECRETO-11FEB-PROTEST",
+          "date": "2022-04-26",
+          "record_class": "laj_decision",
+          "issuer": "Juzgado de lo Mercantil No. 1 de Las Palmas de Gran Canaria",
+          "signed_by": "Agueda Reyes Almeida, LAJ",
+          "signed_at": "2022-04-26T14:36:18+00:00",
+          "title": "Decreto dismissing LPB reposicion against the 11-Feb-2022 DIOR",
+          "operative_effect": "Rejects LPB's position that a protest should have been admitted against the 15-Oct-2021 Auto; treats that reposicion Auto as irrecurrible in liquidation.",
+          "electronic_document_id": "A05003250-35c4420e8dc3a3a7a92c73487a11650980920666",
+          "review_route": "Direct revision within five working days",
+          "response_taxonomy": "ADVERSE_SUBSTANTIVE_RESPONSE",
+          "verification": "Signed three-page Decreto controlled from owner mailbox"
+        },
+        {
+          "id": "C36-REC-20220426-DIOR-DEPOSIT-REFUNDS",
+          "date": "2022-04-26",
+          "record_class": "laj_order",
+          "issuer": "Juzgado de lo Mercantil No. 1 de Las Palmas de Gran Canaria",
+          "signed_by": "Agueda Reyes Almeida, LAJ",
+          "signed_at": "2022-04-26T14:32:13+00:00",
+          "title": "Diligencia ordering refund mandates for appeal/review deposits",
+          "operative_effect": "Orders EUR25 refund mandates for CAM, Aweswell and LPB based on prior decisions.",
+          "electronic_document_id": "A05003250-353850865b4edb2b073ddff6c681650980516640",
+          "response_taxonomy": "PROCEDURAL_ONLY_DISPOSITION",
+          "verification": "Signed one-page Diligencia controlled from owner mailbox"
+        }
+      ],
+      "closed_points": [
+        "LPB and Aweswell both filed appeals against the 15-Oct-2021 Autos after the 26-Jan-2022 clarification orders.",
+        "The 9-Mar-2022 judge-signed Auto inadmitted both appeals and expressly directed a queja route.",
+        "Aweswell filed a queja with the Audiencia Provincial and separately notified the Mercantile Court.",
+        "The Mercantile Court's LAJ recorded both queja notices on 4-Apr-2022 under registration numbers 2275 and 2314/2022.",
+        "On 26-Apr-2022 the LAJ issued adverse decisions on the 11-Feb and 14-Feb procedural/testimonio/finality challenges."
+      ],
+      "open_points": [
+        "Locate and control LPB's own recurso de queja receipt and principal document.",
+        "Identify the Audiencia Provincial proceeding number(s), admission decision(s), section, service and final outcome for both quejas.",
+        "Control the exact 11-Feb-2022 and 14-Feb-2022 DIORs and the testimonios issued under them, including the wording on purpose, recipient and finality.",
+        "Determine whether LPB or Aweswell filed direct revision against either 26-Apr-2022 Decreto and, if so, pair the result.",
+        "Bind this family to the 21-Feb deed and 20-Apr registry/title implementation chronology finca-by-finca; current date ordering itself requires careful reconciliation rather than assumption."
+      ]
+    }
+  ],
+  "next_autonomous_families": [
+    {
+      "priority": "P0",
+      "family": "7-Jun-2018 physical-control court-notice family",
+      "closure_target": "Exact filing/receipt, if any, reporting locks/access/security/possession/operation change to Concurso 36/2012; pair with court/LAJ response and 26-Jun protective suspension."
+    },
+    {
+      "priority": "P0",
+      "family": "Feb-Oct-2021 protection/nullity/bid/RICPE family",
+      "closure_target": "24-Feb protection Auto + underlying filing/annexes + AC/CAM responses + nullity/reposicion + improved-bid documents + July RICPE production + 15-Oct Autos + 26-Jan clarification."
+    },
+    {
+      "priority": "P0",
+      "family": "Jan-Apr-2022 testimonios/adjudication/title implementation",
+      "closure_target": "Exact 11-Feb and 14-Feb DIORs, testimonios, service/finality representations, deed, presentation and registration chain."
+    },
+    {
+      "priority": "P0",
+      "family": "Funded exits 2017-2018",
+      "closure_target": "Classify each ONA, Stoneweg/Varia, Elaia, Ben Oldman/other offer as draft, sent to counsel, court-filed, court-received, judicially treated, lapsed or superseded."
+    },
+    {
+      "priority": "P0",
+      "family": "Certified denominator",
+      "closure_target": "Signed electronic chronological index / official relation of procedural acts / equivalent per-piece certified export and three-way reconciliation against LexNET reconstruction and public repository."
+    }
+  ],
+  "publication_rule": "Do not silently promote candidate records into the canonical denominator. Publish supplements with provenance, dedupe keys and open pairings; create canonical v2 only after cross-supplement deduplication."
+}

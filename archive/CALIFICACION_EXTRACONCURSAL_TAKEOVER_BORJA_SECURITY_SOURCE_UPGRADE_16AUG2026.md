@@ -17,7 +17,7 @@ This source pass adds a materially important contemporaneous link between the **
 
 `SOURCE-CONTROLLED COUNSEL REPORT`
 
-Gmail `16438f74a568214f`, sent by lawyer Cristo Pimentel on **25 June 2018**, reports the day's Arrecife proceedings and states that the opposing side supplied an **email from Borja, the Administrador Concursal**, as support for its position. Counsel describes Borja's email as requesting that a **security service be hired in the complex** to avoid deterioration.
+Private email `MF-CAL-EXT-SRC-01`, sent by lawyer Cristo Pimentel on **25 June 2018**, reports the day's Arrecife proceedings and states that the opposing side supplied an **email from Borja, the Administrador Concursal**, as support for its position. Counsel describes Borja's email as requesting that a **security service be hired in the complex** to avoid deterioration. Exact mailbox locator withheld.
 
 The same counsel report says the opposing side was trying to use Borja as `soporte` for conduct counsel himself characterised as `fraudulenta`. The word `fraudulenta` is **COUNSEL / PARTY CHARACTERISATION**, not an adjudicated finding.
 
@@ -33,7 +33,7 @@ This evidence requires the AC inquiry to address more than passive awareness. It
 
 `DIRECT COUNSEL REPORT OF AC POSITION / ADVERSE EVIDENCE`
 
-Gmail `163df0de99b8a35e` / duplicate `163df100c491fcc1`, 8 June 2018, records Juan Tomás Parrilla reporting that Borja told him:
+Private source `MF-CAL-EXT-SRC-02` (with a controlled duplicate), 8 June 2018, records Juan Tomás Parrilla reporting that Borja told him; exact mailbox locators withheld:
 
 - security in the complex had been agreed by the Community;
 - CAM could be in the complex because it owned approximately twenty apartments;
@@ -57,15 +57,17 @@ The source-completion task is therefore not to choose one narrative by assertion
 
 The project allegation was not created years later.
 
-- Gmail `163daf8e5897e7f5` records Gil Marer immediately describing the event as a `toma de posesión` carried out by force by the privileged creditor and without a judicial judgment authorising it.
-- Gmail `163df1fc9442bdc8` records Patricia Domínguez describing a `toma de posesión anticipada`, chains/security doors and an alleged Community cover mechanism, while disputing that CAM had confined itself to its own property.
-- Gmail `163f5993965e5b80` preserves Daniel Irigoyen's 7-Jun instruction that the issue should be put before the Mercantile Court seeking application of **art. 43 LC (conservación de la masa activa)**.
+- Private source `MF-CAL-EXT-SRC-03` records Gil Marer immediately describing the event as a `toma de posesión` carried out by force by the privileged creditor and without a judicial judgment authorising it.
+- Private source `MF-CAL-EXT-SRC-04` records Patricia Domínguez describing a `toma de posesión anticipada`, chains/security doors and an alleged Community cover mechanism, while disputing that CAM had confined itself to its own property.
+- Private source `MF-CAL-EXT-SRC-05` preserves Daniel Irigoyen's 7-Jun instruction that the issue should be put before the Mercantile Court seeking application of **art. 43 LC (conservación de la masa activa)**.
+
+Exact mailbox locators for these private sources are withheld from public Git.
 
 These records verify the **timing and existence of the allegation and preservation concern**. They do not by themselves prove every alleged act or prove that a specific judge personally saw every item.
 
 ## 4. July lock/access escalation remains allegation pending primary corroboration
 
-Gmail `1648857d94099b11`, 10–11 July 2018, records Gil alleging further broken locks, including a reception office he identified as LPB property, and Guardia Civil attendance. The security actor was said to rely on a 5-Jul Community act. Juan Tomás then relayed Borja's response that the meeting notice had been correctly sent to him and that the resolutions known to the parties had been adopted.
+Private source `MF-CAL-EXT-SRC-06`, 10–11 July 2018, records Gil alleging further broken locks, including a reception office he identified as LPB property, and Guardia Civil attendance. The security actor was said to rely on a 5-Jul Community act. Juan Tomás then relayed Borja's response that the meeting notice had been correctly sent to him and that the resolutions known to the parties had been adopted. Exact mailbox locator withheld.
 
 Classification:
 

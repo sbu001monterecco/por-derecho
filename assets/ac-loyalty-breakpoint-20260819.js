@@ -137,6 +137,7 @@
   const main = document.querySelector('main');
   if (!main) return;
   const hero = main.querySelector(':scope > .hero, :scope > section.hero, :scope > .dossier-hero, :scope > .cnmv-hero, :scope > .rr-hero');
-  if (hero) hero.insertAdjacentElement('afterend', section);
+  const thesis = main.querySelector('[data-calificacion-misuse-thesis]');
+  if (thesis || hero) (thesis || hero).insertAdjacentElement('afterend', section);
   else main.insertAdjacentElement('afterbegin', section);
 })();

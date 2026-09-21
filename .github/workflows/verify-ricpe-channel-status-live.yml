@@ -1,0 +1,112 @@
+name: Verify RICPE channel status live
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/ricpe-filed-status-20260817.js'
+      - 'RICPE_ETHICS_CHANNEL_CURRENT_STATUS_19AUG2026.md'
+      - '.github/workflows/verify-ricpe-channel-status-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  statuses: write
+
+concurrency:
+  group: verify-ricpe-channel-status-live
+  cancel-in-progress: false
+
+jobs:
+  verify-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Poll public GitHub Pages for RICPE status deployment
+        id: verify
+        continue-on-error: true
+        env:
+          BASE: https://sbu001monterecco.github.io/por-derecho
+          STATUS_MARKER: UPDATED 19 AUGUST 2026
+          STATUS_FINGERPRINT: e53bda34973e530520bde39648768a1e32a358d8984294b21258789faebe6a24
+        run: |
+          python3 - <<'PY'
+          import json, os, time, urllib.request
+
+          base = os.environ['BASE'].rstrip('/')
+          marker = os.environ['STATUS_MARKER']
+          fingerprint = os.environ['STATUS_FINGERPRINT']
+          urls = {
+              'asset': f'{base}/assets/ricpe-filed-status-20260817.js?v=20260819a',
+              'loader': f'{base}/assets/site.js?v=20260819a',
+              'en': f'{base}/en/ric-private-equity-sun-park/?v=20260819a',
+              'es': f'{base}/es/ric-private-equity-sun-park/?v=20260819a',
+          }
+
+          def fetch(url):
+              req = urllib.request.Request(url, headers={
+                  'User-Agent': 'Por-Derecho-live-verifier/1.0',
+                  'Cache-Control': 'no-cache',
+              })
+              with urllib.request.urlopen(req, timeout=20) as response:
+                  return response.status, response.read().decode('utf-8', 'replace')
+
+          last = {}
+          for attempt in range(1, 19):
+              try:
+                  results = {name: fetch(url) for name, url in urls.items()}
+                  checks = {
+                      'asset_http_200': results['asset'][0] == 200,
+                      'asset_has_19aug_marker': marker in results['asset'][1],
+                      'asset_has_private_code_fingerprint': fingerprint in results['asset'][1],
+                      'loader_http_200': results['loader'][0] == 200,
+                      'loader_loads_ricpe_status_module': 'ricpe-filed-status-20260817.js' in results['loader'][1],
+                      'en_http_200': results['en'][0] == 200,
+                      'en_loads_site_js': 'assets/site.js' in results['en'][1],
+                      'es_http_200': results['es'][0] == 200,
+                      'es_loads_site_js': 'assets/site.js' in results['es'][1],
+                  }
+                  last = {'attempt': attempt, 'checks': checks}
+                  print(json.dumps(last, indent=2))
+                  if all(checks.values()):
+                      with open('/tmp/ricpe-live-verification.json', 'w') as f:
+                          json.dump({'status': 'verified', **last, 'urls': urls}, f, indent=2)
+                      raise SystemExit(0)
+              except Exception as exc:
+                  last = {'attempt': attempt, 'error': repr(exc)}
+                  print(json.dumps(last, indent=2))
+              time.sleep(5)
+
+          with open('/tmp/ricpe-live-verification.json', 'w') as f:
+              json.dump({'status': 'not_verified', **last, 'urls': urls}, f, indent=2)
+          raise SystemExit(1)
+          PY
+
+      - name: Show verification evidence
+        if: always()
+        run: cat /tmp/ricpe-live-verification.json || true
+
+      - name: Publish live verification commit status
+        if: always()
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        env:
+          VERIFY_OUTCOME: ${{ steps.verify.outcome }}
+        with:
+          script: |
+            const success = process.env.VERIFY_OUTCOME === 'success';
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            await github.rest.repos.createCommitStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              sha: context.sha,
+              state: success ? 'success' : 'failure',
+              target_url: runUrl,
+              description: success
+                ? 'RICPE 19-Aug status asset and bilingual wiring verified live'
+                : 'RICPE 19-Aug live deployment not verified',
+              context: 'pages-propagation/ricpe-channel-status',
+            });
+
+      - name: Fail when live verification did not succeed
+        if: steps.verify.outcome != 'success'
+        run: exit 1

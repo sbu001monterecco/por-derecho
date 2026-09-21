@@ -34,7 +34,7 @@ These documents are important primarily as **notice evidence** and as maps to un
 
 ### May–June 2014 — Fiscalía 39/2014 archive
 
-A scanned Fiscalía document dated 8 May 2014 records that the complaint was studied and then archived on the basis that the matters were in part excessively inconcrete/general and in part matters for the civil jurisdiction, including Community-agreement validity/nullity issues. The document is signed by María Inmaculada Martín-Comas Fernández. A later oficio of 25 June 2014 notified the archive and the possibility of reiterating the claims before the competent investigating court.
+A scanned Fiscalía document dated 8 May 2014 records that the complaint was studied and then archived on the basis that the matters were in part excessively inconcrete/general and in part matters for the civil jurisdiction, including Community-agreement validity/nullity issues. The document is signed by María Inmaculada Martín-Comas Fernández. A later oficio of **23 June 2014** notified the archive and the possibility of reiterating the claims before the competent investigating court.
 
 Public-safe significance: within months of the 2013 querella, Fiscalía received and archived a substantial counter-narrative from the persons it had prosecuted. This makes comparative investigative treatment a legitimate research question. It does not itself prove discriminatory treatment.
 
@@ -88,7 +88,7 @@ A publication-safe analytical formulation is that early credibility allocation, 
 ## Highest-value open proof gaps
 
 1. Source package and exact origin of DI 273/2013, including the insolvency administrator's material.
-2. Full judicial course and final 29 March 2021 order in DP 332/2014.
+2. Full judicial course and primary disposition supporting the reported 2021 closure of DP 332/2014, including date, grounds, notice and finality; reconcile the later-pleaded 29 March date with contemporaneous reactivation/resumption communications.
 3. Complete Fiscalía 39/2014 file: diligences, if any, conducted before archive.
 4. Underlying annexes to the March 2014 complaints, reconciled independently.
 5. Complete DI 248/2018 file and requested-versus-performed diligence matrix.

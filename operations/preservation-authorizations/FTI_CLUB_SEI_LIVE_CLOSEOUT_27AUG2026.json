@@ -1,0 +1,27 @@
+{
+  "authorization_id": "PD-AUTH-FTI-CLUB-SEI-LIVE-CLOSEOUT-20260827-01",
+  "change_id": "PD-FTI-CLUB-SEI-LIVE-CLOSEOUT-20260827-01",
+  "base_sha": "a97e6b46fab538b2f6b2391a0957b29b671f49b3",
+  "status": "EXPLICIT_USER_AUTHORIZATION",
+  "authorized_by": "Gil Marer",
+  "authorized_on": "2026-08-27",
+  "reason": "Record and publish the exact live closeout and provenance repair required to make the FTI/Club Sei thread deletion-safe. No email, filing, RedSARA/AGE, portal or authority contact is authorized.",
+  "paths": [
+    "archive/DEPLOYMENT_LOG.md",
+    "archive/FTI_TOURISTIK_DEFICIT_CLUB_SEI_LAVA_VERDE_RECOVERY_REVIEW_27AUG2026.md",
+    "archive/RICPE_CHANNEL_PUBLIC_IDENTIFIER_EXPOSURE_REMEDIATION_27AUG2026.md",
+    "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
+    "assets/data/fti-touristik-club-sei-creditor-recovery-v1.json",
+    "assets/data/fti-touristik-club-sei-recovery-source-manifest-v1.json",
+    "de/lava-verde-club-sei-meeting-point/index.html",
+    "docs/deletion-audits/2026-08-27-fti-deficit-club-sei-visual-thread-closeout.md",
+    "en/lava-verde-club-sei-meeting-point/index.html",
+    "es/lava-verde-club-sei-meeting-point/index.html",
+    "publication-manifests/fti-touristik-club-sei-recovery-closeout-20260827.json",
+    "scripts/validate_fti_club_sei_recovery_closeout.py"
+  ],
+  "publication_authorized": true,
+  "email_authorized": false,
+  "filing_authorized": false,
+  "external_contact_authorized": false
+}

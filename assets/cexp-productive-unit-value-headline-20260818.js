@@ -197,7 +197,9 @@
     section.innerHTML = `<div class="shell cvh-shell">${body}</div>`;
 
     const preferred = document.getElementById('aweswell-accounts-calificacion-incorporation');
+    const thesis = main.querySelector('[data-calificacion-misuse-thesis]');
     if (preferred) preferred.insertAdjacentElement('afterend', section);
+    else if (thesis) thesis.insertAdjacentElement('afterend', section);
     else {
       const first = Array.from(main.children).find(node => node.tagName === 'SECTION');
       if (first) first.insertAdjacentElement('afterend', section);

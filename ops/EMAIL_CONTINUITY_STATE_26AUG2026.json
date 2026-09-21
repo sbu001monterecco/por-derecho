@@ -1,0 +1,60 @@
+{
+  "control_date": "2026-08-26",
+  "status": "deletion_safe_with_open_external_wait_states",
+  "private_source_of_truth": "connected Gmail and other authorised private systems",
+  "public_repository_privacy_rule": "Do not store recipient addresses, private email bodies, provider message IDs, private-thread subjects, signatures or private routing metadata.",
+  "required_reads": [
+    "EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md",
+    "archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md",
+    "archive/OUTREACH_EMAIL_LINK_SEND_AND_INBOUND_TRIAGE_PROTOCOL_26AUG2026.md",
+    "CURRENT_HANDOVER_OUTREACH_EMAIL_CONTINUITY_26AUG2026.md",
+    "archive/THREAD_DELETION_AUDIT_OUTREACH_EMAIL_CONTINUITY_26AUG2026.md"
+  ],
+  "outbound_state_machine": ["PREPARED", "AUTHORIZED", "SENT", "VERIFIED"],
+  "hard_rules": {
+    "por_derecho_link_required": true,
+    "landing_page_selected_before_drafting": true,
+    "live_link_verification_required": true,
+    "fresh_exact_authorization_required": true,
+    "one_authorization_maximum_send_calls": 1,
+    "successful_send_consumes_authorization": true,
+    "post_send_verification_read_only": true,
+    "automatic_retry_or_correction_forbidden": true,
+    "pagination_complete_history_scan_before_readiness": true
+  },
+  "inbound_classifications": [
+    "SUBSTANTIVE_REPLY",
+    "REQUEST_FOR_INFORMATION",
+    "SCHEDULING",
+    "CONFLICT_OR_CAPACITY_DECLINE",
+    "ACKNOWLEDGEMENT_ONLY",
+    "OUT_OF_OFFICE",
+    "DELIVERY_DELAY",
+    "BOUNCE",
+    "ROUTING_REDIRECT",
+    "NO_CONTACT_REQUEST",
+    "UNCLASSIFIED"
+  ],
+  "inbound_default_action": "READ_CLASSIFY_SUMMARIZE_PREPARE_ONLY",
+  "automatic_outbound_response_allowed": false,
+  "private_reconstruction": {
+    "gmail_scan_start_date": "2026-08-25",
+    "pagination_required": true,
+    "tracked_classes": [
+      "historical professional reconnection",
+      "Canary legal/professional contacts",
+      "Madrid professional-regulation traceability",
+      "Tenerife professional-regulation traceability"
+    ]
+  },
+  "open_wait_state_classes": [
+    "professional replies",
+    "Madrid appeal forwarding or registration traceability",
+    "Tenerife referral receipt or docket state",
+    "Tenerife intake substantive response status",
+    "regional Madrid complete current file/index",
+    "later procedural or final decisions"
+  ],
+  "next_campaign_requires_deliberate_workstream_selection": true,
+  "repository_automation_note": "This JSON and the companion protocol specify future-agent read/classify/prepare behavior. They do not create a live Gmail trigger or authority to transmit mail."
+}

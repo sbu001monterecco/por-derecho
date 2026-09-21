@@ -1,0 +1,101 @@
+{
+  "schema": "por-derecho.caepr-caret-scope.v1",
+  "control_id": "PD-CAEPR-CARET-UNITARY-DIGEST-20260826-01",
+  "control_date": "2026-08-31",
+  "scope": "Immediately preceding unitary non-fragmented reverse-engineered digest and the distinct named eligible CAEPR objects on which it materially relied.",
+  "protocol": ".github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "baseline_sha": "6f406db2c6c4eb6cf69fc3ce4e6fab0b3de7052a",
+  "correction_addendum": {
+    "date": "2026-08-31",
+    "supersedes_summary_arithmetic_only": "2026-08-28",
+    "reason": "The 28 August summary declared 21 confirmed although the current confirmed_objects array contains 20 distinct records. Admitting Clubotel La Dorada, S.L. as PD-SP-O-0075 resolves that legal person and its instrument-specific ONA-side role only; it does not resolve or collapse the distinct Ona Hotels / ONA commercial perimeter at PD-SP-O-0033.",
+    "historical_record_preserved_at": "archive/CAEPR_CARET_UNITARY_DIGEST_VERIFICATION_26AUG2026.md"
+  },
+  "identity_reconciliation_addendum": {
+    "date": "2026-09-01",
+    "object": "PD-SP-O-0003",
+    "result": "Matkator, S.L.U. reconciled from BORME-A-2013-246-38, entry 551984, with registry sheet TF 52875; removed from the exact-identity queue.",
+    "boundary": "Current primary NIF/status, ownership and unit/title questions remain open and are not transferred by the identity caret."
+  },
+  "result": {
+    "verdict": "PARTIAL_NOT_ALL_IS_CARET",
+    "denominator": 24,
+    "confirmed": 21,
+    "pending": 3,
+    "suspended": 0,
+    "coverage_fraction": "21/24",
+    "coverage_percent_exact": "87.5",
+    "counts_by_type": {
+      "PERSON": 1,
+      "ORGANISATION": 17,
+      "INSTITUTION": 1,
+      "PROCEEDING": 5
+    }
+  },
+  "legend": "A displayed caret confirms canonical identity resolution for the stated context only. It does not prove conduct, role on a date, knowledge, intent, relationship, liability, current status, procedural outcome or source authenticity.",
+  "confirmed_objects": [
+    {"id":"PD-SP-O-0001","type":"ORGANISATION","name":"Aweswell Limited","state":"CARET_CONFIRMED"},
+    {"id":"PD-SP-O-0002","type":"ORGANISATION","name":"Luchy Playa Blanca, S.L.U.","state":"CARET_CONFIRMED"},
+    {"id":"PD-SP-O-0003","type":"ORGANISATION","name":"Matkator, S.L.U.","state":"CARET_CONFIRMED","identity_boundary":"Exact incorporated single-member company identity only; current primary NIF/status, ownership, unit title and substantive conduct remain separately sourced."},
+    {"id":"PD-SP-O-0006","type":"ORGANISATION","name":"Comunidad de Explotación Sun Park","state":"CARET_CONFIRMED"},
+    {"id":"PD-SP-O-0004","type":"ORGANISATION","name":"Pink Canary Services, S.L.U.","aliases_in_scope":["Monterecco Sun Park, S.L.U."],"state":"CARET_CONFIRMED"},
+    {"id":"PD-SP-O-0029","type":"ORGANISATION","name":"Bankia, S.A.","state":"CARET_CONFIRMED"},
+    {"id":"PD-SP-O-0030","type":"ORGANISATION","name":"Sociedad de Gestión de Activos Procedentes de la Reestructuración Bancaria, S.A.","display_alias":"SAREB","state":"CARET_CONFIRMED"},
+    {"id":"PD-SP-O-0021","type":"ORGANISATION","name":"Promontoria Holding 122 B.V.","state":"CARET_CONFIRMED"},
+    {"id":"PD-SP-O-0007","type":"ORGANISATION","name":"Construcciones Acosta Matos, S.A.","state":"CARET_CONFIRMED"},
+    {"id":"PD-SP-O-0005","type":"ORGANISATION","name":"Comunidad de Propietarios Sun Park","state":"CARET_CONFIRMED"},
+    {"id":"PD-SP-O-0018","type":"ORGANISATION","name":"Hotel New Trend, S.L.","state":"CARET_CONFIRMED"},
+    {"id":"PD-SP-O-0032","type":"ORGANISATION","name":"CaixaBank, S.A.","state":"CARET_CONFIRMED"},
+    {"id":"PD-SP-O-0050","type":"ORGANISATION","name":"J&A Garrigues, S.L.P.","state":"CARET_CONFIRMED"},
+    {"id":"PD-SP-O-0020","type":"ORGANISATION","name":"RIC Private Equity Investment Partners SCR, S.A.","state":"CARET_CONFIRMED"},
+    {"id":"PD-SP-O-0042","type":"ORGANISATION","name":"MYND Yaiza","state":"CARET_CONFIRMED","identity_boundary":"Confirmed as the named brand/project registry object; this is not a legal-person attribution."},
+    {"id":"PD-SP-O-0075","type":"ORGANISATION","name":"Clubotel La Dorada, S.L.","aliases_in_scope":["exact ONA-side legal person for the 6 June 2018 funded-exit operating instrument"],"state":"CARET_CONFIRMED","identity_boundary":"This resolves the Clubotel legal person and that instrument-specific ONA-side role only. It does not collapse the wider ONA Hotels commercial perimeter into Clubotel or attribute every ONA act to this company."},
+    {"id":"PD-SP-P-0011","type":"PERSON","name":"José Daniel Acosta Matos","state":"CARET_CONFIRMED","identity_boundary":"Identity confirmation does not establish the presidency/capacity proposition on any date."},
+    {"id":"PD-SP-I-0002","type":"INSTITUTION","name":"Ministerio Fiscal / Fiscalía","state":"CARET_CONFIRMED","identity_boundary":"Confirmed at the general institution level only; territorial office, unit and prosecutor remain separate identity questions."},
+    {"id":"PD-SP-R-0001","type":"PROCEEDING","name":"Concurso 36/2012 — Luchy Playa Blanca, S.L.","display_alias":"Concurso 36/2012","state":"CARET_CONFIRMED"},
+    {"id":"PD-SP-R-0002","type":"PROCEEDING","name":"RPL 2523/2025 — appeal in the classification section","display_alias":"RPL 2523/2025","state":"CARET_CONFIRMED"},
+    {"id":"PD-SP-R-0007","type":"PROCEEDING","name":"JV 1260/2011 / AP 89/2014","state":"CARET_CONFIRMED"}
+  ],
+  "exceptions": [
+    {
+      "candidate":"Ona Hotels / ONA",
+      "existing_id":"PD-SP-O-0033",
+      "type":"ORGANISATION",
+      "state":"CARET_PENDING",
+      "reason":"PD-SP-O-0033 remains a controlled commercial-perimeter label whose exact legal entity is open. PD-SP-O-0075 resolves Clubotel La Dorada, S.L. and its instrument-specific ONA-side role for the signed 6 June 2018 operating instrument only; it does not resolve or collapse the distinct Ona Hotels / ONA perimeter or every ONA-labelled act.",
+      "next_step":"Identify the exact legal person for each ONA-labelled instrument or mandate and reconcile each to immutable CAEPR records while keeping Clubotel La Dorada, S.L. separate."
+    },
+    {
+      "candidate":"PP 1041/2017",
+      "existing_id":null,
+      "type":"PROCEEDING",
+      "state":"CARET_PENDING",
+      "reason":"Material proceeding in the digest but absent from the current ten CAEPR proceeding records.",
+      "next_step":"Reconcile competent organ, class, reference/year, parties and parent Concurso relationship; assign a PD-SP-R-#### ID."
+    },
+    {
+      "candidate":"EH 90/2012 — Arrecife mortgage execution",
+      "existing_id":null,
+      "type":"PROCEEDING",
+      "state":"CARET_PENDING",
+      "reason":"Material proceeding in the banking/default analysis but absent from the current ten CAEPR proceeding records.",
+      "next_step":"Reconcile court, class, reference/year, parties and later holder/substitution chain; assign a PD-SP-R-#### ID."
+    }
+  ],
+  "non_applicable_examples": [
+    "Sun Park physical/economic asset",
+    "7 June 2018 material-control event",
+    "unitary enterprise allegation",
+    "credit multiple-lives theory",
+    "2018 funded-exit package",
+    "Protocols 457/869/870",
+    "RDM manifest/source alias",
+    "generic unnamed roles",
+    "Penal Code provisions"
+  ],
+  "public_link_templates": {
+    "en": "https://sbu001monterecco.github.io/por-derecho/en/matter-identity-registry/#{CAEPR_ID}",
+    "es": "https://sbu001monterecco.github.io/por-derecho/es/registro-identidad-materia/#{CAEPR_ID}"
+  }
+}

@@ -53,7 +53,7 @@ The thread did not create a new judgment, appellate outcome or factual correctio
 
 ## B. 11-Dec-2012 accounting/financial transmission to the AC
 
-The connected Gmail record identifies Gil's message to the AC, subject `Documentación Sun Park`, with attachments including `diario2012.xls`, bank movements, detailed debts and accounting concepts.
+The connected Gmail record `CAL-GM-01` identifies Gil's accounting/documentation transmission to the AC, with attachments including an accounting journal, bank movements, detailed debts and accounting concepts. Exact private subject and attachment filenames are withheld.
 
 ### Canonical destination
 

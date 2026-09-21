@@ -63,12 +63,13 @@
     <div class="ccm-shell">
       <p class="ccm-eyebrow">MAPA CANÓNICO · AC → FISCALÍA → SENTENCIA → PERSONA → APELACIÓN</p>
       <h2>Qué se alegó, qué se decidió y por qué no puede presentarse como un único bloque validado</h2>
-      <p>Esta síntesis se apoya en el informe completo de la administración concursal de 11 de febrero de 2019, el dictamen fiscal de 12 de marzo de 2019, la oposición, la Sentencia 163/2023 y los recursos de Gil Marer y PINK. Separa la acusación original de lo que el juzgado rechazó, redujo o mantuvo.</p>
+      <p>Esta síntesis se apoya en el informe completo de la administración concursal de 11 de febrero de 2019; el dictamen fiscal de 12 de marzo de 2019; las oposiciones separadas de LPB y Gil Marer y la oposición conjunta de PINK y Patricia; la Sentencia 163/2023; y tres instrumentos de apelación para cuatro intereses apelantes: Gil Marer, PINK y Patricia conjuntamente, y LPB. Separa la acusación original de lo que el juzgado rechazó, redujo o mantuvo.</p>
 
       <div class="ccm-status" role="note" aria-label="Estado procesal actual">
         <strong>Estado procesal — materialmente adverso y recurrido</strong>
         <p>La Sentencia 163/2023 declaró culpable el concurso de LPB e impuso consecuencias graves a Gil Marer y PINK. El recurso RPL 2523/2025 está ante la Sección Cuarta de la Audiencia Provincial de Las Palmas.</p>
         <p>Una providencia señaló el <strong>4 de junio de 2026</strong> para deliberación y fallo. En la comprobación finita realizada en Gmail y Google Drive hasta el <strong>17 de agosto de 2026</strong> no se localizó sentencia de apelación ni resolución de terminación. Eso no demuestra que no exista. La resolución de primera instancia no se presenta aquí como firme ni como condena penal.</p>
+        <p>Las copias presentadas de los recursos de Gil y de PINK/Patricia están localizadas. La presentación del recurso separado de LPB el 2 de noviembre de 2023 está respaldada por el correo contemporáneo de su letrado y por la posterior cadena del depósito, pero todavía no se ha localizado su PDF presentado ni su justificante de presentación.</p>
       </div>
 
       <div class="ccm-note strong">
@@ -190,7 +191,7 @@
         <p>Lo verificado es la secuencia documental, las contradicciones, las correcciones judiciales y los hallazgos que sobrevivieron. La intención coordinada, la falsedad consciente, la prevaricación o la instrumentalización criminal no han sido declaradas por un tribunal y exigen prueba adicional de conocimiento, capacidad, causalidad y finalidad.</p>
       </div>
 
-      <p class="ccm-source"><strong>Fuentes de control:</strong> informe AC completo (47 páginas); dictamen fiscal (2 páginas); oposición de Gil; Sentencia 163/2023; recursos de Gil y PINK; providencia de RPL 2523/2025; correos contemporáneos de cooperación, acceso y salida; y los registros canónicos del repositorio. No se publican direcciones, documentos de identidad, teléfonos, emails privados, firmas ni datos bancarios innecesarios.</p>
+      <p class="ccm-source"><strong>Fuentes de control:</strong> informe AC completo (47 páginas); dictamen fiscal (2 páginas); oposición de LPB de 23-abr-2019; oposición de Gil de 6-jun-2019; oposición conjunta PINK/Patricia de 23-mar-2021, presentada por LexNET el 24-mar-2021; Sentencia 163/2023; recurso de Gil; recurso conjunto PINK/Patricia; presentación reportada y cadena del depósito del recurso separado de LPB, pendiente de recuperar su PDF y justificante; providencia de RPL 2523/2025; correos contemporáneos de cooperación, acceso y salida; y los registros canónicos del repositorio. No se publican direcciones, documentos de identidad, teléfonos, emails privados, firmas ni datos bancarios innecesarios.</p>
 
       <div class="ccm-linkrow">
         <a href="/por-derecho/es/calificacion-concurso-36-2012-vidas-paralelas/conocimiento-previo-rescate/">Conocimiento previo de rescate</a>
@@ -204,12 +205,13 @@
     <div class="ccm-shell">
       <p class="ccm-eyebrow">CANONICAL MAP · AC → PROSECUTION → JUDGMENT → PERSON → APPEAL</p>
       <h2>What was alleged, what was decided, and why the package cannot be presented as wholly validated</h2>
-      <p>This summary is grounded in the complete 11 February 2019 insolvency-administrator report, the 12 March 2019 prosecution opinion, the opposition, Judgment 163/2023, and the Gil Marer and PINK appeals. It separates the original accusation from what the court rejected, narrowed, or retained.</p>
+      <p>This summary is grounded in the complete 11 February 2019 insolvency-administrator report; the 12 March 2019 prosecution opinion; the separate LPB and Gil Marer oppositions and the joint PINK/Patricia opposition; Judgment 163/2023; and three appeal instruments covering four appellant interests: Gil Marer, PINK and Patricia jointly, and LPB. It separates the original accusation from what the court rejected, narrowed, or retained.</p>
 
       <div class="ccm-status" role="note" aria-label="Current procedural status">
         <strong>Procedural status — materially adverse and under appeal</strong>
         <p>Judgment 163/2023 classified LPB’s insolvency as culpable and imposed serious consequences on Gil Marer and PINK. Appeal RPL 2523/2025 is before Section Four of the Las Palmas Provincial Court.</p>
         <p>A procedural order fixed <strong>4 June 2026</strong> for deliberation and judgment. The finite Gmail and Google Drive checks through <strong>17 August 2026</strong> did not locate an appellate judgment or terminating resolution. That does not prove that none exists. The first-instance judgment is not presented here as final or as a criminal conviction.</p>
+        <p>The filed copies of the Gil and joint PINK/Patricia appeals are located. LPB’s separate appeal is supported as filed on 2 November 2023 by counsel’s contemporaneous email and the later deposit chain, but its filed PDF and filing receipt have not yet been located.</p>
       </div>
 
       <div class="ccm-note strong">
@@ -331,7 +333,7 @@
         <p>What is verified is the documentary sequence, the contradictions, the judicial corrections and the findings that survived. Coordinated intent, knowing falsehood, judicial misconduct or criminal instrumentalisation have not been adjudicated and require additional proof of knowledge, capacity, causation and purpose.</p>
       </div>
 
-      <p class="ccm-source"><strong>Controlled sources:</strong> complete 47-page administrator report; two-page prosecution opinion; Gil’s opposition; Judgment 163/2023; Gil and PINK appeals; RPL 2523/2025 procedural order; contemporaneous cooperation, access and exit correspondence; and canonical repository registers. Unnecessary addresses, identity numbers, private phone numbers, emails, signatures and banking details are not published.</p>
+      <p class="ccm-source"><strong>Controlled sources:</strong> complete 47-page administrator report; two-page prosecution opinion; LPB opposition dated 23-Apr-2019; Gil opposition dated 6-Jun-2019; joint PINK/Patricia opposition dated 23-Mar-2021 and filed through LexNET on 24-Mar-2021; Judgment 163/2023; Gil appeal; joint PINK/Patricia appeal; the reported filing and deposit chain for LPB’s separate appeal, with its PDF and receipt still to recover; RPL 2523/2025 procedural order; contemporaneous cooperation, access and exit correspondence; and canonical repository registers. Unnecessary addresses, identity numbers, private phone numbers, emails, signatures and banking details are not published.</p>
 
       <div class="ccm-linkrow">
         <a href="/por-derecho/en/insolvency-classification-parallel-lives/prior-judicial-knowledge-rescue/">Prior rescue knowledge</a>

@@ -11,14 +11,14 @@
     lead: '<strong>Construcciones Acosta Matos, S.A. ya era acreedor hipotecario reconocido.</strong> El registro documental sitúa el <strong>7 de junio de 2018</strong> como umbral de posesión/control material de facto sobre Sun Park. <strong>No hemos localizado una entrega judicial del conjunto hotelero que autorizara ese control en esa fecha.</strong> Esa secuencia obliga a preguntar quién tenía realmente capacidad para operar, conservar, dar acceso, generar ingresos, ejecutar un rescate o causar/evitar deterioro.',
     definition: '<strong>“Lender in possession” se usa aquí sólo como comparación funcional.</strong> No es una categoría jurídica española que atribuyamos a CAM: significa, descriptivamente, <em>acreedor garantizado + control/posesión material de facto</em>. Tampoco equivale a propiedad. La pregunta jurídica española es qué título o autoridad amparó cada acto concreto de control.',
     statuses: [
-      ['HECHO DOCUMENTADO', '20 OCT 2017 → 8 FEB 2018', 'PH122 cedió el crédito a CAM y el Juzgado Mercantil reconoció después a CAM como titular de los importes hipotecarios.'],
+      ['HECHO DOCUMENTADO', '20 OCT 2017 → 15 FEB 2018', 'PH122 cedió el crédito a CAM y el Juzgado Mercantil reconoció después a CAM como titular de los importes hipotecarios.'],
       ['UMBRAL DE CONTROL', '7 JUN 2018', 'El expediente de control/posesión sitúa aquí el cambio material de control. El alcance exacto por actor, finca y periodo sigue sujeto a prueba.'],
       ['PREGUNTA ABIERTA', 'AUTORIZACIÓN PREVIA', 'No se ha localizado una entrega u orden judicial del conjunto hotelero que autorice ese control en o antes del 7 de junio. Si existe, debe identificarse por fecha, términos y perímetro.']
     ],
     timelineTitle: 'La secuencia que no debe comprimirse',
     timeline: [
       ['20 OCT 2017', 'PH122 → CAM', 'Cesión del crédito. Ser acreedor no convierte por sí solo a CAM en propietario del hotel.'],
-      ['8 FEB 2018', 'CAM reconocido como titular del crédito', 'El Juzgado reconoce los importes hipotecarios cedidos. El derecho de crédito y el derecho a la posesión siguen siendo cuestiones distintas.'],
+      ['15 FEB 2018', 'CAM reconocido como titular del crédito', 'El Juzgado reconoce los importes hipotecarios cedidos. El derecho de crédito y el derecho a la posesión siguen siendo cuestiones distintas.'],
       ['7 JUN 2018', 'Umbral de control material', 'El registro sitúa el paso a un control/posesión práctica de facto. Aquí cambia la línea de base causal.'],
       ['26 JUN 2018', 'Suspensión judicial posterior', 'La suspensión llega después del umbral de control. Una resolución posterior no demuestra por sí sola autorización previa ni regulariza retrospectivamente cada acto anterior.']
     ],
@@ -76,14 +76,14 @@
     lead: '<strong>Construcciones Acosta Matos, S.A. was already the recognised holder of mortgage credits.</strong> The documentary record places <strong>7 June 2018</strong> as a threshold of de facto material possession/control over Sun Park. <strong>We have not located a judicial delivery of the whole hotel authorising that control on that date.</strong> That sequence requires the case to ask who actually had the capacity to operate, preserve, give access, generate income, execute a rescue or cause/prevent deterioration.',
     definition: '<strong>“Lender in possession” is used here only as a functional comparison.</strong> We do not present it as a Spanish legal status attributed to CAM: descriptively it means <em>secured creditor + de facto material possession/control</em>. Nor does it mean ownership. The Spanish-law question is what title or authority supported each concrete act of control.',
     statuses: [
-      ['DOCUMENTED FACT', '20 OCT 2017 → 8 FEB 2018', 'PH122 assigned the credit to CAM and the Mercantile Court later recognised CAM as holder of the mortgage-credit amounts.'],
+      ['DOCUMENTED FACT', '20 OCT 2017 → 15 FEB 2018', 'PH122 assigned the credit to CAM and the Mercantile Court later recognised CAM as holder of the mortgage-credit amounts.'],
       ['CONTROL THRESHOLD', '7 JUN 2018', 'The possession/control record places the material shift here. Exact scope by actor, asset and period remains evidence-controlled.'],
       ['OPEN QUESTION', 'PRIOR AUTHORITY', 'No judicial delivery/order of the whole hotel authorising that control on or before 7 June has been located. If one exists, it should be identified by date, terms and perimeter.']
     ],
     timelineTitle: 'The sequence that must not be compressed',
     timeline: [
       ['20 OCT 2017', 'PH122 → CAM', 'Credit assignment. Becoming creditor did not by itself make CAM owner of the hotel.'],
-      ['8 FEB 2018', 'CAM recognised as credit holder', 'The Court recognises the assigned mortgage-credit amounts. Credit rights and possession remain distinct questions.'],
+      ['15 FEB 2018', 'CAM recognised as credit holder', 'The Court recognises the assigned mortgage-credit amounts. Credit rights and possession remain distinct questions.'],
       ['7 JUN 2018', 'Material-control threshold', 'The record places the shift to practical de facto possession/control here. This changes the causal baseline.'],
       ['26 JUN 2018', 'Later judicial suspension', 'The suspension follows the control threshold. A later order does not by itself prove prior authority or retrospectively regularise every earlier act.']
     ],

@@ -116,7 +116,9 @@ This is an append-only specialist register. It does not mean the listed material
 
 ## ME-OC-08 — Original 23-Apr-2018 complaint in DP 1132/2018
 
-**Known source:** 2-May-2018 Auto records receipt.
+**30-Aug-2026 status:** **PARTIALLY CLOSED.** A reviewed complaint copy and the 2-May judicial copy establish the complaint/origin chain, including Diligencias Indeterminadas 1103/2018-00, DP 1132/2018 and NIG 3500443220180003508. The court-certified native complaint package and complete annex/representation set remain open.
+
+**Known source:** reviewed complaint copy; 2-May-2018 Auto records receipt and exact origin/DP/NIG.
 
 **Need:** complete complaint, annexes, filing receipt and representation documents.
 
@@ -166,13 +168,15 @@ This is an append-only specialist register. It does not mean the listed material
 
 ## ME-OC-12 — 20-Aug-2018 provisional dismissal and appeal outcome
 
-**Known source:** TS-06 says a 20-Aug provisional dismissal existed and was appealed.
+**30-Aug-2026 status:** **PARTIALLY CLOSED / APPELLATE IDENTITY AND OUTCOME VERIFIED.** A reviewed Auto 804/2018 copy establishes Rollo 1010/2018, origin DP 1132/2018, the shared NIG, AP Las Palmas Sección Segunda, the 13-Nov-2018 date, panel, dismissal of both appeals, confirmation of the 20-Aug provisional dismissal and final/no-further-appeal wording.
 
-**Need:** signed dismissal Auto, appeal, opposition(s), Fiscalía position and final appellate order.
+**Known source:** TS-06; reviewed Auto 804/2018 copy; canonical control `ARRECIFE_1103_1132_1010_804_CARET_INTERLINK_CONTROL_30AUG2026.md`.
+
+**Need:** court-certified signed 20-Aug dismissal, complete appeal(s), opposition(s), Fiscalía position, service record and court-certified complete roll. The appellate order's identity/result is no longer an open reference gap.
 
 **Search pivots:** `20 agosto 2018`, `sobreseimiento provisional`, `1132/2018`, `apelación`, NIG `3500443220180003508`.
 
-**Closure test:** final procedural chain through appeal.
+**Closure test:** court-certified complete first-instance and appeal records, including representation/service and transmitted-record completeness.
 
 **Adverse possibility:** appellate decision may materially weaken or qualify the complainants' 7-Jun control/coercion framing.
 

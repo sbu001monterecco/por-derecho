@@ -3,10 +3,10 @@
 **Date:** 16 August 2026  
 **Proceeding:** Concurso ordinario 36/2012 — Luchy Playa Blanca, S.L.U.  
 **AC:** Francisco de Borja Rodríguez-Batllori Laffitte  
-**Primary adverse source:** `27. INFORME Calificación AC 11FEB2019.pdf` (Drive ID `1tb8gZuDh7DxLaz45CDTIu3wP7IlWDdrd`)  
-**Primary opposition:** `27. Demanda Oposición Calificación GM - 06JUN2019.pdf` (Drive ID `1OEXinH8lxaZ0B4NCtkXbPJ4UemjSqm7a`)  
-**Judgment:** Sentencia 163/2023 / preserved primary PDF `EE-002-A__AUTO_CONCURSO_CULPOSO.pdf` (Drive ID `13bAFcI4vGec4-NI0n33XtG_RuHU3C4xo`)  
-**Appeal:** `20231012 Apelacion calificacion GIL.docx` (Drive ID `1G4A5GulVlvV87-lsS4uZV3rd1Ds3-GfK`)  
+**Primary adverse source:** AC calificación report dated 11-Feb-2019, `MF-CAL-SRC-A02-AC` (exact private filename and Drive locator withheld)
+**Primary opposition:** Gil opposition dated 6-Jun-2019, `MF-CAL-SRC-A02-OPP` (exact private filename and Drive locator withheld)
+**Judgment:** Sentencia 163/2023, `MF-CAL-SRC-A02-JUDGMENT` (exact private filename and Drive locator withheld)
+**Appeal:** Gil calificación appeal, `MF-CAL-SRC-A02-APPEAL` (exact private filename and Drive locator withheld)
 **Public routes:** `/es/calificacion-concurso-36-2012-vidas-paralelas/` and `/en/insolvency-classification-parallel-lives/`
 
 ## Status

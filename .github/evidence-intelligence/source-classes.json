@@ -1,0 +1,58 @@
+{
+  "schema": "por-derecho.source-classes.v1",
+  "control_date": "2026-08-25",
+  "classes": [
+    {
+      "id": "PD_NATIVE_PRIVATE",
+      "matter_membership_required": true,
+      "entity_ingestion": "REVIEW_REQUIRED",
+      "proposition_ingestion": "REVIEW_REQUIRED",
+      "public_body_allowed": false
+    },
+    {
+      "id": "PD_PUBLIC_EVIDENCE",
+      "matter_membership_required": true,
+      "entity_ingestion": "REVIEW_REQUIRED",
+      "proposition_ingestion": "REVIEW_REQUIRED",
+      "public_body_allowed": true
+    },
+    {
+      "id": "PD_CURATED_ANALYSIS",
+      "matter_membership_required": true,
+      "entity_ingestion": "NO_NEW_IDENTITY_WITHOUT_SOURCE",
+      "proposition_ingestion": "DERIVED_ONLY",
+      "public_body_allowed": "PUBLICATION_STATE_REQUIRED"
+    },
+    {
+      "id": "PUBLIC_EXTERNAL_SOURCE",
+      "matter_membership_required": false,
+      "entity_ingestion": "SOURCE_SPECIFIC_REVIEW",
+      "proposition_ingestion": "SOURCE_SPECIFIC_REVIEW",
+      "public_body_allowed": true
+    },
+    {
+      "id": "EXTERNAL_COMPARATOR",
+      "matter_membership_required": false,
+      "entity_ingestion": false,
+      "proposition_ingestion": "ANALOGY_ONLY_UNLESS_INDEPENDENT_BRIDGE",
+      "public_body_allowed": "BOUNDED_COMPARATOR_ONLY"
+    },
+    {
+      "id": "TECHNICAL_REFERENCE",
+      "matter_membership_required": false,
+      "entity_ingestion": false,
+      "proposition_ingestion": false,
+      "architecture_extraction": true,
+      "public_body_allowed": "GENERIC_METHOD_ONLY"
+    },
+    {
+      "id": "FOREIGN_MATTER_EXCLUDED",
+      "matter_membership_required": false,
+      "entity_ingestion": false,
+      "proposition_ingestion": false,
+      "retrieval_allowed": false,
+      "public_body_allowed": false
+    }
+  ],
+  "default_rule": "Unknown or externally supplied material is excluded from Por Derecho factual retrieval until source, authority, matter and permission are resolved."
+}

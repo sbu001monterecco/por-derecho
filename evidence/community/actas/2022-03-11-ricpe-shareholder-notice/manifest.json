@@ -1,0 +1,170 @@
+{
+  "schema_version": "2.0",
+  "id": "SP-MEETING-2022-03-11-RICPE",
+  "slug": "2022-03-11-ricpe-shareholder-notice",
+  "date": "2022-03-11",
+  "body": "corporate",
+  "meeting_type": "scheduled-corporate-meeting",
+  "document_type": "shareholder-meeting-notice-and-agenda",
+  "source_package_kind": "non-acta-notice-and-agenda",
+  "counts_as_located_acta_family": false,
+  "language": "es",
+  "status": "located-package-digitised-public",
+  "privacy_level": "public-redacted",
+  "artifact_kind": "public-redacted-digitisation-package",
+  "redacted_facsimile_available": true,
+  "source_page_images_available": true,
+  "complete_public_text": false,
+  "public_text_mode": "full-page-redaction-markers",
+  "public_ocr_available": false,
+  "digitisation_complete_for_located_copy": true,
+  "manual_source_line_verification": false,
+  "native_page_count": 5,
+  "native_page_count_status": "verified-for-located-control-copy",
+  "source_variant_page_count": 5,
+  "source": {
+    "filename": "convocatoria y orden del día RICPE de cinco páginas",
+    "bytes": 191251,
+    "sha256": "3858b928d4eee8a4f5e9b21f5452c9e58cbbfbd22debccb38bfe3dd07db303c4",
+    "pages": 5,
+    "source_document_id": "SP-SRC-NOTICE-RICPE-2022-02-11-5P",
+    "legacy_id_aliases": [],
+    "source_page_scope": "five-page-shareholder-notice-and-agenda",
+    "variant_note_es": "El documento recibido de cinco páginas está fechado el 11 de febrero de 2022 y atribuye al Consejo de RIC Private Equity Investment Partners, S.C.R., S.A., por medio de su secretario, una convocatoria propuesta para primera convocatoria el 11 de marzo y segunda el 12 de marzo. Registra texto de convocatoria y orden del día, pero no prueba autoría, emisión efectiva, servicio o conocimiento del destinatario. No es un ACTA: la celebración, el cuórum, las votaciones y el resultado no están probados. La mención de un acuerdo de accionistas de 29 de diciembre de 2021 es una referencia posterior; sus registros primarios siguen sin localizarse.",
+    "variant_note_en": "The received five-page document is dated 11 February 2022 and attributes to the Board of RIC Private Equity Investment Partners, S.C.R., S.A., through its secretary, a proposed first call on 11 March and second call on 12 March. It records notice and agenda wording but does not prove authorship, actual issuance, service or recipient knowledge. This is not minutes: occurrence, quorum, votes and outcome are unproved. The reference to a 29 December 2021 shareholder resolution is a later recital; its primary records remain unlocated.",
+    "native_publication": false,
+    "variants_recorded": 0,
+    "additional_source_documents_recorded": 0,
+    "additional_source_documents": []
+  },
+  "redaction_categories": [
+    "identifiers-and-contact",
+    "signatures",
+    "owner-unit-vote-and-debt",
+    "banking-data",
+    "reserved-annexes"
+  ],
+  "created": "2026-08-28",
+  "document_issue_date": "2022-02-11",
+  "issuing_person_or_body": "RIC Private Equity Investment Partners, S.C.R., S.A.",
+  "stated_capacity": "Board / Secretary",
+  "scheduled_meeting_first_call": "2022-03-11",
+  "scheduled_meeting_second_call": "2022-03-12",
+  "recipients": [
+    "shareholders"
+  ],
+  "documented_meeting_status": {
+    "notice_and_agenda_located": true,
+    "meeting_occurrence_proved": false,
+    "quorum_proved": false,
+    "votes_proved": false,
+    "outcome_proved": false,
+    "minutes_or_outcome_record_located": false
+  },
+  "referenced_prior_resolution": {
+    "date": "2021-12-29",
+    "evidence_status": "later-recital-in-notice",
+    "primary_records_located": false
+  },
+  "public_artifacts": {
+    "transcript_es": "evidence/community/actas/2022-03-11-ricpe-shareholder-notice/transcript-es.md",
+    "provenance": "evidence/community/actas/2022-03-11-ricpe-shareholder-notice/provenance.md",
+    "redaction_log": "evidence/community/actas/2022-03-11-ricpe-shareholder-notice/redaction-log.md",
+    "redacted_source_facsimile": "assets/docs/community-actas-source/2022-03-11-ricpe-shareholder-notice-source-redacted-facsimile-es.pdf",
+    "redacted_source_facsimile_sha256": "4dac5f6887fa692003877026fb9002bc3b9212fa513e78ef5e3670d31755b06b",
+    "redacted_source_facsimile_pages": 5,
+    "source_preview_pages": [
+      "assets/evidence/community-actas-source/2022-03-11-ricpe-shareholder-notice/page-001.jpg",
+      "assets/evidence/community-actas-source/2022-03-11-ricpe-shareholder-notice/page-002.jpg",
+      "assets/evidence/community-actas-source/2022-03-11-ricpe-shareholder-notice/page-003.jpg",
+      "assets/evidence/community-actas-source/2022-03-11-ricpe-shareholder-notice/page-004.jpg",
+      "assets/evidence/community-actas-source/2022-03-11-ricpe-shareholder-notice/page-005.jpg"
+    ],
+    "source_preview_count": 5,
+    "source_preview_sha256": [
+      {
+        "path": "assets/evidence/community-actas-source/2022-03-11-ricpe-shareholder-notice/page-001.jpg",
+        "sha256": "13f7c14fbd9b0044198b788550745b9efd78ab001a230e568a790f2848dd5ea7"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2022-03-11-ricpe-shareholder-notice/page-002.jpg",
+        "sha256": "eb5088c6c028385f5199f8e2ab324fc69ffd29193f7ca6d23c42c7ac510c2bbd"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2022-03-11-ricpe-shareholder-notice/page-003.jpg",
+        "sha256": "30da8135f0d784eb00df4dc274ca47028f0880533e2deeee7e669601b85b6da1"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2022-03-11-ricpe-shareholder-notice/page-004.jpg",
+        "sha256": "15919e85634a308851cc72af7c4fab53ea5aefb19cc23f4a536fdd429bed06a3"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2022-03-11-ricpe-shareholder-notice/page-005.jpg",
+        "sha256": "af83eb48bc11e8e96c564ae9ee656aa8784f41f0f8f2af09aba8ad5edd4a4f56"
+      }
+    ],
+    "pdf": "assets/docs/community-actas/2022-03-11-ricpe-shareholder-notice-public-redacted-es.pdf",
+    "pdf_sha256": "0a36f7071f7e391dd28d22706c9be6b58cb79e3f621bce6e21d24b2d99210536",
+    "pdf_pages": 6,
+    "preview_pages": [
+      "assets/evidence/community-actas/2022-03-11-ricpe-shareholder-notice/page-001.jpg",
+      "assets/evidence/community-actas/2022-03-11-ricpe-shareholder-notice/page-002.jpg",
+      "assets/evidence/community-actas/2022-03-11-ricpe-shareholder-notice/page-003.jpg",
+      "assets/evidence/community-actas/2022-03-11-ricpe-shareholder-notice/page-004.jpg",
+      "assets/evidence/community-actas/2022-03-11-ricpe-shareholder-notice/page-005.jpg",
+      "assets/evidence/community-actas/2022-03-11-ricpe-shareholder-notice/page-006.jpg"
+    ],
+    "preview_count": 6,
+    "preview_sha256": [
+      {
+        "path": "assets/evidence/community-actas/2022-03-11-ricpe-shareholder-notice/page-001.jpg",
+        "sha256": "80dbe8a8a5de667c2990a918a21ebc17f9eee067f734da98ee84980ea28f7ba3"
+      },
+      {
+        "path": "assets/evidence/community-actas/2022-03-11-ricpe-shareholder-notice/page-002.jpg",
+        "sha256": "82a4c7cadee6e149c9f8abd0e12795f820091d5751788a5d8055567ae7cd9701"
+      },
+      {
+        "path": "assets/evidence/community-actas/2022-03-11-ricpe-shareholder-notice/page-003.jpg",
+        "sha256": "d46567fc61d2dc7ba5f85eacf5ac35c4eae00e6b2f41f476e240c7a9e083d88f"
+      },
+      {
+        "path": "assets/evidence/community-actas/2022-03-11-ricpe-shareholder-notice/page-004.jpg",
+        "sha256": "c35fdc4a84455497c6d32a9e354ad642ffda203046582bc7668708752a75e8ce"
+      },
+      {
+        "path": "assets/evidence/community-actas/2022-03-11-ricpe-shareholder-notice/page-005.jpg",
+        "sha256": "82ce6eca006d3f57286a38923140176a523f8ceaf5fa137fe7435f3f727e20c1"
+      },
+      {
+        "path": "assets/evidence/community-actas/2022-03-11-ricpe-shareholder-notice/page-006.jpg",
+        "sha256": "92eab88013b8850e17fd5e21657991bbc49880e9317cfd33b1bb175ef5172487"
+      }
+    ]
+  },
+  "quality_control": {
+    "source_page_count_verified": true,
+    "facsimile_reopened": true,
+    "all_source_pages_rendered": true,
+    "facsimile_hidden_text": false,
+    "privacy_scan": "automated-pass-plus-recorded-visual-review-pass",
+    "ocr_not_certified": true,
+    "manual_source_line_verification": false,
+    "visual_pdf_sample_review": true,
+    "visual_source_redaction_review": true,
+    "visual_review_attestation_required": true,
+    "source_preview_hashes_recorded": true,
+    "source_image_current_format": "JPEG",
+    "legacy_webp_derivatives_separate": true,
+    "facsimile_deterministic_invariant": true,
+    "ocr_language": "eng",
+    "ocr_language_selection": "spa-unavailable-eng-fallback",
+    "ocr_certified": false,
+    "pdf_reopened": true,
+    "all_pdf_pages_rendered": true,
+    "preview_hashes_recorded": true,
+    "preview_current_format": "JPEG",
+    "public_pdf_deterministic_invariant": true
+  },
+  "public_pdf_page_count": 6
+}

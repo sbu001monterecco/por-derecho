@@ -1,0 +1,35 @@
+{
+  "control_id": "PD-CANARY-RIC-PUBLIC-DEBT-DOCROOM-20260831-01",
+  "source_page_count": 734,
+  "ocr_line_certified": false,
+  "storage": "PARTITIONED_COMPLETE_INDEX",
+  "part_count": 5,
+  "parts": [
+    {
+      "path": "evidence/canary-ric-public-debt/2026-08-28-production/page-index-parts/part-001.json",
+      "page_count": 180,
+      "sha256": "e3d2ed3cf8218dd02df02121a59d344f25bb8d19ede15c1ff95b7adbb6abf157"
+    },
+    {
+      "path": "evidence/canary-ric-public-debt/2026-08-28-production/page-index-parts/part-002.json",
+      "page_count": 180,
+      "sha256": "7c7313e852fb076453f771f1c567facb849d7f9c4e03be078352385cf99d897d"
+    },
+    {
+      "path": "evidence/canary-ric-public-debt/2026-08-28-production/page-index-parts/part-003.json",
+      "page_count": 180,
+      "sha256": "62fa4bfebf6c19f8c1d17bb6692a40b2e7e08a3dfdb97e1626b155f626e20ff2"
+    },
+    {
+      "path": "evidence/canary-ric-public-debt/2026-08-28-production/page-index-parts/part-004.json",
+      "page_count": 180,
+      "sha256": "101a672f5bff499940812ea95402c0ef26d05343f35d11fab4ef1f3bc8e4b8c6"
+    },
+    {
+      "path": "evidence/canary-ric-public-debt/2026-08-28-production/page-index-parts/part-005.json",
+      "page_count": 14,
+      "sha256": "5c8e1f9f70a934e946ccdb6c0fbbd4e37f15bc1e46d3760ac19f71bc0debc391"
+    }
+  ],
+  "reconstruction": "Read each listed JSON part in order and concatenate its pages array."
+}

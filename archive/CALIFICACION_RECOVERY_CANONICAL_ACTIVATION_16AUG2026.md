@@ -1,5 +1,8 @@
 # CALIFICACIÓN + RECOVERY — CANONICAL ACTIVATION / SEARCH ENTRY
 
+> **CONTROLLING VALENCIA CORRECTION — 12 SEPTEMBER 2026.** The older Valencia paragraph below is retained as version history and is superseded by `archive/CAIXABANK_VALENCIA_NATIVE_RECONCILIATION_08SEP2026.md`. Current controlled identity: **ORD 1859/2023-9; NIG 4625042120230049579**. The 6-Nov-2025 court direction fixes **28-Jan-2027 at 10:00**, historically JPI 27 Valencia; **the older October-2026/noon date and the 0057718 NIG are superseded**. The located defendant expert report is signed 17-Oct-2024, not the older 18-Jun-2024 shorthand; exact expert-copy/receipt and claimant-payload matching remain qualified. The provisional EUR1,124,445.84 amount is neither an award nor freely available Aweswell cash. The article 122 TRLC estate-interest basis, contested standing and correct beneficiary must govern recovery/net-loss analysis. This is the latest controlled source, not a live court certificate. The unitary criminal/agency thesis, contrary decisions and distinct procedural routes remain intact. See also `archive/knowledge-project/ORION_PUBLIC_DUTIES_PWC_BANKING_UK_REVIEW_12SEP2026.md`.
+
+
 **Date:** 16 August 2026  
 **Status:** `CONTROLLING SEARCH / PROPAGATION ENTRY FOR FUTURE CHATGPT THREADS`
 
@@ -11,7 +14,7 @@ This file makes the 16-Aug-2026 Calificación source refresh impossible to miss 
 
 Any future search, scan, draft, website update or institutional analysis touching one or more of the following terms must read the controlling source refresh before relying on older summaries:
 
-`calificación culpable` · `Sentencia 163/2023` · `Concurso 36/2012` · `truth inversion` · `inversión de la verdad` · `inversion of agency` · `inversión de agencia` · `diversion of scrutiny` · `desvío del foco` · `Francisco de Borja Rodríguez-Batllori` · `Ricardo de Mosteyrín Sampalo` · `Elena Herrera Rodríguez` · `Emilio Sánchez Ulled` · `Alberto López Villarrubia` · `Pink Canary Services` · `Patricia Domínguez` · `DI 248/2018` · `EG 49/2026` · `RPL 2523/2025` · `convenio 2017` · `plan de viabilidad 2017` · `Aweswell recapitalisation` · `commercial normalisation` · `normalización comercial` · `ONA` · `Clubotel La Dorada` · `Varia Structured Opportunities` · `Stoneweg` · `financed exit` · `Article 176` · `art. 176 LC` · `recovery through adversity` · `recuperación a través de la adversidad` · `non-collaboration` · `falta de colaboración` · `accounting` · `contabilidad` · `€3,032,010.34` · `3.032.010,34` · `elEconomista judgment` · `CaixaBank` · `CAIXABANK, S.A.` · `Aweswell c. CaixaBank` · `1859/2023-9` · `46250-42-1-2023-0057718` · `46250-42-1-2023-0049579` · `Juzgado 27 Valencia` · `9 octubre 2026` · `€1,124,445.84` · `recuperación bancaria` · `bank recovery` · `testigo propuesto por la parte actora y demandada`.
+`calificación culpable` · `Sentencia 163/2023` · `Concurso 36/2012` · `truth inversion` · `inversión de la verdad` · `inversion of agency` · `inversión de agencia` · `diversion of scrutiny` · `desvío del foco` · `Francisco de Borja Rodríguez-Batllori` · `Ricardo de Mosteyrín Sampalo` · `Elena Herrera Rodríguez` · `Emilio Sánchez Ulled` · `Alberto López Villarrubia` · `Pink Canary Services` · `Patricia Domínguez` · `DI 248/2018` · `EG 49/2026` · `RPL 2523/2025` · `convenio 2017` · `plan de viabilidad 2017` · `Aweswell recapitalisation` · `commercial normalisation` · `normalización comercial` · `ONA` · `Clubotel La Dorada` · `Varia Structured Opportunities` · `Stoneweg` · `financed exit` · `Article 176` · `art. 176 LC` · `recovery through adversity` · `recuperación a través de la adversidad` · `non-collaboration` · `falta de colaboración` · `accounting` · `contabilidad` · `€3,032,010.34` · `3.032.010,34` · `elEconomista judgment` · `CaixaBank` · `CAIXABANK, S.A.` · `Aweswell c. CaixaBank` · `1859/2023-9` · `46250-42-1-2023-0049579` · `Juzgado 27 Valencia` · `6 noviembre 2025` · `28 enero 2027` · `€1,124,445.84` · `recuperación bancaria` · `bank recovery` · `testigo propuesto por la parte actora y demandada`.
 
 Read first:
 
@@ -73,7 +76,7 @@ The new source-complete June record establishes:
 
 - a signed **6-Jun-2018 hotel-industry lease** whose facial legal parties are the Sun Park Owners' Community and **Clubotel La Dorada, S.L.**; contemporaneous transaction correspondence described ONA as the intended hotel operator context and the contract refers to `OnaSystem`; do not collapse ONA and Clubotel without a separate source bridge;
 - a signed **6-Jun-2018 suspensive addendum** making operation conditional on sufficient funds being paid into Mercantil nº1 to permit LPB to leave Concurso 36/2012 and on a favourable owners' resolution;
-- **8-Jun-2018** transaction correspondence assembling operator/business plan, Cuatrecasas DD, an ECO valuation presented in the transaction at about **€25.6m**, bridge-finance work, security and a separate **€26m Elaia** acquisition route;
+- **8-Jun-2018** transaction correspondence assembling operator/business plan, Cuatrecasas DD, an ECO valuation presented in the transaction at about **€25.6m**, bridge-finance work, security and one reciprocal **Lagune/Elaia €26m standby-acquisition package**;
 - a **12-Jun-2018** Stoneweg email describing an `Oferta Vinculante`, while the primary VSO instrument itself is titled **`Oferta Vinculante Condicionada`**, contemplated up to **€15.5m** including **€13.84m** for concursal/estate liabilities and depended materially on judicial mortgage authority, an AC debt certificate, valuation/DD and lender approval;
 - **13-Jun-2018** contemporaneous professional evidence that Daniel Irigoyen took the fund + shareholder/company + operator conclusion route to the Judge and then to the AC; according to the report the Judge permitted exploration, making that favourable response mandatory counterevidence to any simplistic `continuous obstruction` theory;
 - no June LexNET/asiento/proveído chain has yet been located proving formal filing/disposition of the conclusion application;
@@ -109,9 +112,9 @@ Plans, term sheets, conditional offers, negotiations, forecasts and filed allega
 
 The controlled current proceeding is:
 
-**Procedimiento ordinario [ORD] 1859/2023-9, N.I.G. 46250-42-1-2023-0057718, Juzgado de Primera Instancia e Instrucción nº 27 de Valencia, Aweswell Limited c. CAIXABANK, S.A.**
+**Procedimiento ordinario [ORD] 1859/2023-9, N.I.G. 46250-42-1-2023-0049579, Juzgado de Primera Instancia nº 27 de Valencia, Aweswell Limited c. CAIXABANK, S.A.**
 
-The latest controlled court order fixes trial for **9 October 2026 at 12:00**.
+The original hearing listed for **6 November 2025 at 10:00** did not proceed. The signed diligence dated that day relisted the hearing for **28 January 2027 at 10:00**.
 
 CaixaBank's own 18-Jun-2024 expert report records Aweswell's pleaded prejudice at **€1,124,445.84**. Liability and quantum are contested and no merits judgment has been located. Treat this as a **live, material and potentially substantial recovery claim**, not an adjudicated recovery or guaranteed outcome.
 

@@ -1,0 +1,725 @@
+{
+  "schema": "por-derecho.fti-meeting-point-canary-spain-asset-transaction-register.v1",
+  "control_id": "PD-FTI-MP-ASSET-TX-REGISTER-20260827-01",
+  "control_date": "2026-08-27",
+  "public_safe": true,
+  "scope": {
+    "geography": [
+      "CANARY_ISLANDS",
+      "SPAIN"
+    ],
+    "heritage_rule": "The exact asset, bounded portfolio, legal person or right must be connected to FTI Touristik or Meeting Point by a cited public source. Group branding, geography, chronology or a similar hotel name alone is insufficient.",
+    "purpose": "Maintain a reviewable baseline and detect public-source changes concerning acquisition, ownership, sale, hotel operation, management, franchise, lease, lending, security, investment, refinancing, restructuring or another capital transaction involving the bounded former FTI Touristik / Meeting Point Spanish perimeter.",
+    "coverage_status": "BOUNDED_MONITOR_NOT_COMPREHENSIVE: three heritage scopes, twelve automated-safe public sources, eleven explicit official-source lanes and eight open gaps; unknown counterparties, new official-file identifiers and complete asset/register coverage require separate discovery and human reconciliation.",
+    "exclusions": [
+      "Private transaction-development contacts, negotiations, NDAs, pricing, leverage, valuations and unannounced opportunities.",
+      "Automatic publication, automatic allegations, automatic identity resolution and automatic external notifications.",
+      "Hotels or companies linked only by brand resemblance, geography, chronology or unsupported recollection.",
+      "A claim that an acquisition transfers predecessor knowledge, intent, conduct, criminal responsibility or liability."
+    ]
+  },
+  "field_contract": {
+    "entity": "Record exact display name, legal-person or perimeter status, aliases, immutable CAEPR ID when eligible, identity boundary and next source when unresolved.",
+    "asset": "Record an exact asset or explicitly bounded portfolio, geography, precision state and the public-source bridge to the former FTI Touristik / Meeting Point perimeter.",
+    "capacity": "Record one controlled capacity per actor and the exact source that supports it; never derive owner, operator, manager, lender or beneficiary from another capacity.",
+    "date": "Record the date value, precision and what the date means; notification, authorisation, signing, closing, funding and operational handover remain separate.",
+    "source": "Record a stable source ID, public HTTPS URL, priority, publisher type, monitored scope and proposition boundary; store no native private material.",
+    "evidence_state": "Use a controlled evidence state that distinguishes official confirmation, party announcement, corroboration, single-source reporting, unreviewed change signal and identity uncertainty.",
+    "change_detection": "Hash only public-safe normalized content or binary bytes, compare with the previous metadata-only state, report controlled term IDs without page bodies, and require human review before any event or inference is promoted."
+  },
+  "term_dictionary": {
+    "transaction_terms": [
+      {
+        "term_id": "FTI-TX-TERM-001",
+        "capacity_or_type": "BUYER_OR_ACQUISITION",
+        "aliases": ["acquisition", "acquired", "acquires", "buyer", "purchase", "adquisición", "adquirido", "adquiere", "comprador", "compra", "übernahme", "erwerb", "erwirbt", "käufer"]
+      },
+      {
+        "term_id": "FTI-TX-TERM-002",
+        "capacity_or_type": "OWNER_OR_CONTROL",
+        "aliases": ["exclusive control", "ownership", "owner", "controlling shareholder", "control exclusivo", "propiedad", "propietario", "accionista de control", "alleinige kontrolle", "eigentum", "eigentümer"]
+      },
+      {
+        "term_id": "FTI-TX-TERM-003",
+        "capacity_or_type": "SELLER_OR_DIVESTMENT",
+        "aliases": ["seller", "sale", "sold", "divestment", "vendor", "vendedor", "venta", "vendido", "desinversión", "verkäufer", "verkauf", "verkauft", "veräußerung"]
+      },
+      {
+        "term_id": "FTI-TX-TERM-004",
+        "capacity_or_type": "OPERATOR_OR_MANAGER",
+        "aliases": ["hotel operator", "operated by", "hotel management", "managed by", "management agreement", "operador hotelero", "operado por", "gestión hotelera", "gestionado por", "contrato de gestión", "hotelbetreiber", "betrieben von", "hotelmanagement", "managementvertrag"]
+      },
+      {
+        "term_id": "FTI-TX-TERM-005",
+        "capacity_or_type": "FRANCHISE_OR_LEASE",
+        "aliases": ["franchise", "franchisor", "franchisee", "lease", "lessor", "lessee", "management lease", "franquicia", "franquiciador", "franquiciado", "arrendamiento", "arrendador", "arrendatario", "franchisevertrag", "pacht", "pächter", "mieter"]
+      },
+      {
+        "term_id": "FTI-TX-TERM-006",
+        "capacity_or_type": "LENDING_OR_SECURITY",
+        "aliases": ["lender", "loan facility", "credit facility", "mortgage", "security interest", "financing", "prestamista", "préstamo", "crédito", "hipoteca", "garantía", "financiación", "kreditgeber", "darlehen", "kreditlinie", "hypothek", "sicherheit", "finanzierung"]
+      },
+      {
+        "term_id": "FTI-TX-TERM-007",
+        "capacity_or_type": "INVESTMENT_OR_FUND",
+        "aliases": ["investment", "investor", "private equity", "capital injection", "fund manager", "inversión", "inversor", "capital riesgo", "ampliación de capital", "gestora", "investition", "investor", "kapitalerhöhung", "fondsmanager"]
+      },
+      {
+        "term_id": "FTI-TX-TERM-008",
+        "capacity_or_type": "REFINANCING_OR_RESTRUCTURING",
+        "aliases": ["refinancing", "restructuring", "debt restructuring", "recapitalisation", "rescue transaction", "refinanciación", "reestructuración", "recapitalización", "operación de rescate", "refinanzierung", "restrukturierung", "rekapitalisierung", "rettungstransaktion"]
+      },
+      {
+        "term_id": "FTI-TX-TERM-009",
+        "capacity_or_type": "INSOLVENCY_SALE_OR_TRANSFER",
+        "aliases": ["insolvency sale", "asset sale process", "structured sales process", "transfer of business", "venta concursal", "venta de unidad productiva", "proceso de venta", "transmisión de negocio", "insolvenzverkauf", "strukturierter verkaufsprozess", "betriebsübertragung"]
+      },
+      {
+        "term_id": "FTI-TX-TERM-010",
+        "capacity_or_type": "JOINT_VENTURE_OR_OTHER_CAPITAL",
+        "aliases": ["joint venture", "strategic partnership", "sale and leaseback", "capital transaction", "empresa conjunta", "alianza estratégica", "sale and leaseback", "operación de capital", "gemeinschaftsunternehmen", "strategische partnerschaft", "sale-and-lease-back", "kapitaltransaktion"]
+      }
+    ],
+    "geography_terms": [
+      "Canary Islands",
+      "Canaries",
+      "Canarias",
+      "Kanarische Inseln",
+      "Spain",
+      "España",
+      "Spanien",
+      "Lanzarote",
+      "Fuerteventura",
+      "Gran Canaria",
+      "Tenerife",
+      "La Palma"
+    ]
+  },
+  "known_entities": [
+    {
+      "entity_id": "FTI-TX-ENT-001",
+      "display_name": "Meeting Point Spain, S.L.U.",
+      "entity_kind": "LEGAL_PERSON",
+      "caepr_state": "CARET_CONFIRMED",
+      "caepr_id": "PD-SP-O-0068",
+      "aliases": ["Meeting Point Spain", "MPS"],
+      "identity_boundary": "Exact Spanish debtor and CNMC target identity only; not the contracting entity for every hotel, Club Sei project or historic right."
+    },
+    {
+      "entity_id": "FTI-TX-ENT-002",
+      "display_name": "Meeting Point Hotelmanagement (Canaries), S.L.U.",
+      "entity_kind": "LEGAL_PERSON",
+      "caepr_state": "CARET_CONFIRMED",
+      "caepr_id": "PD-SP-O-0067",
+      "aliases": ["Meeting Point Hotelmanagement Canaries", "Meeting Point Hotel Management"],
+      "identity_boundary": "Exact debtor named in Auto 97/2025; no automatic identity with a German debtor, all fifteen hotels or the Club Sei contracting entity."
+    },
+    {
+      "entity_id": "FTI-TX-ENT-003",
+      "display_name": "Meeting Point Investment, S.L.U.",
+      "entity_kind": "LEGAL_PERSON",
+      "caepr_state": "CARET_CONFIRMED",
+      "caepr_id": "PD-SP-O-0069",
+      "aliases": ["Meeting Point Investment"],
+      "identity_boundary": "Exact debtor named in Auto 97/2025; no automatic ownership, investment or transaction capacity follows from its company name."
+    },
+    {
+      "entity_id": "FTI-TX-ENT-004",
+      "display_name": "FTI Touristik GmbH",
+      "entity_kind": "LEGAL_PERSON",
+      "caepr_state": "PERIMETER_RECORD_NOT_EXACT_LEGAL_PERSON",
+      "caepr_id": "PD-SP-O-0039",
+      "aliases": ["FTI Touristik", "FTI"],
+      "identity_boundary": "The existing CAEPR record is an FTI Touristik perimeter label; it does not yet clear the exact GmbH legal person for caret rendering.",
+      "next_identity_source_needed": "Current official German company-register extract reconciled to the Munich insolvency order and immutable CAEPR admission."
+    },
+    {
+      "entity_id": "FTI-TX-ENT-005",
+      "display_name": "Meeting Point International GmbH",
+      "entity_kind": "LEGAL_PERSON",
+      "caepr_state": "CARET_PENDING",
+      "aliases": ["Meeting Point International"],
+      "identity_boundary": "Separate German insolvency debtor; not Meeting Point Spain or the commercial Meeting Point Hotels perimeter.",
+      "next_identity_source_needed": "Official German company-register extract reconciled to the signed Munich insolvency order and admitted to CAEPR."
+    },
+    {
+      "entity_id": "FTI-TX-ENT-006",
+      "display_name": "Meeting Point Hotelmanagement Holding GmbH",
+      "entity_kind": "LEGAL_PERSON",
+      "caepr_state": "CARET_PENDING",
+      "aliases": ["Meeting Point Hotelmanagement Holding"],
+      "identity_boundary": "Separate German holding-company insolvency debtor; its ownership of every Spanish asset, company or record is not presumed.",
+      "next_identity_source_needed": "Official German company-register extract, shareholding schedule and signed Munich insolvency order reconciled into CAEPR."
+    },
+    {
+      "entity_id": "FTI-TX-ENT-007",
+      "display_name": "Portobello Capital, S.L.",
+      "entity_kind": "LEGAL_PERSON",
+      "caepr_state": "CARET_PENDING",
+      "aliases": ["Portobello", "Portobello Capital"],
+      "identity_boundary": "CNMC source literal for the acquirer perimeter; exact current legal identity and vehicle chain remain to be admitted to CAEPR.",
+      "next_identity_source_needed": "Current Registro Mercantil extract and the CNMC transaction vehicle schedule."
+    },
+    {
+      "entity_id": "FTI-TX-ENT-008",
+      "display_name": "Gestora Blue Sea Partner, S.A.",
+      "entity_kind": "LEGAL_PERSON",
+      "caepr_state": "CARET_PENDING",
+      "aliases": ["Gestora Blue Sea Partner", "BLUESEA", "Blue Sea"],
+      "identity_boundary": "CNMC source literal for the vehicle through which control was acquired; it is not automatically every BLUESEA brand or operating entity.",
+      "next_identity_source_needed": "Current Registro Mercantil extract, CNMC vehicle structure and current group organisation chart."
+    },
+    {
+      "entity_id": "FTI-TX-ENT-009",
+      "display_name": "Meeting Point Hotels",
+      "entity_kind": "BRAND_OR_COMMERCIAL_PERIMETER",
+      "caepr_state": "PERIMETER_RECORD_NOT_EXACT_LEGAL_PERSON",
+      "caepr_id": "PD-SP-O-0038",
+      "aliases": ["Meeting Point", "Meeting Point Hotel Group"],
+      "identity_boundary": "Commercial perimeter only; not an exact contracting, owning, managing or debtor legal person.",
+      "next_identity_source_needed": "Asset-by-asset legal-person, brand licence, management contract and ownership schedule."
+    },
+    {
+      "entity_id": "FTI-TX-ENT-010",
+      "display_name": "Labranda",
+      "entity_kind": "BRAND_OR_COMMERCIAL_PERIMETER",
+      "caepr_state": "CARET_CONFIRMED",
+      "caepr_id": "PD-SP-O-0041",
+      "aliases": ["Labranda Hotels", "LABRANDA"],
+      "identity_boundary": "Canonical Labranda brand identity only; the caret does not identify or prove an owner, operator, manager, franchisor, contracting legal person or transaction participant for any hotel."
+    },
+    {
+      "entity_id": "FTI-TX-ENT-011",
+      "display_name": "BLUESEA commercial perimeter",
+      "entity_kind": "BRAND_OR_COMMERCIAL_PERIMETER",
+      "caepr_state": "CARET_PENDING",
+      "aliases": ["BLUESEA", "Blue Sea", "Blue Sea Hotels", "BLUESEA Hotels"],
+      "identity_boundary": "Controlled pending commercial perimeter encompassing unresolved BLUESEA/BLUESEA Hotels public presentation only; it is distinct from Gestora Blue Sea Partner, S.A. and is not an exact owner, operator, manager, brand-owner or contracting legal person.",
+      "next_identity_source_needed": "Current brand/trademark owner, perimeter-to-entity map and hotel-by-hotel owner/operator/manager legal-person schedule."
+    }
+  ],
+  "heritage_scopes": [
+    {
+      "heritage_scope_id": "FTI-TX-SCOPE-001",
+      "label": "Meeting Point Spain and subsidiaries — fifteen Canary Islands hotel establishments",
+      "geography": "CANARY_ISLANDS",
+      "asset_precision_state": "BOUNDED_PORTFOLIO_ASSETS_NOT_ITEMISED",
+      "historic_fti_meeting_point_link": "CNMC C/1549/25 identifies Meeting Point Spain and subsidiaries as the acquired target and records a fifteen-establishment Canary Islands management perimeter.",
+      "heritage_source_state": "CONFIGURED_PUBLIC_SOURCE_REFS",
+      "source_refs": ["FTI-TX-SRC-001", "FTI-TX-SRC-002", "FTI-TX-SRC-003"],
+      "source_gap_refs": ["FTI-TX-GAP-001", "FTI-TX-GAP-002", "FTI-TX-GAP-003"],
+      "included_object_ids": ["FTI-TX-ENT-001", "FTI-TX-ENT-007", "FTI-TX-ENT-008"],
+      "does_not_establish": [
+        "The identity, title owner, operator, manager, lessor, lender or security holder for each of the fifteen establishments.",
+        "That the transaction was an asset sale rather than a control/share acquisition.",
+        "That every historic FTI/Meeting Point record or liability transferred."
+      ]
+    },
+    {
+      "heritage_scope_id": "FTI-TX-SCOPE-002",
+      "label": "Three Spanish Meeting Point debtors in proceeding 357/2024",
+      "geography": "SPAIN",
+      "asset_precision_state": "LEGAL_ENTITY_WITH_ASSET_SCHEDULE_OPEN",
+      "historic_fti_meeting_point_link": "Signed Auto 97/2025 identifies three Spanish Meeting Point legal persons in the joint pre-insolvency negotiation communication; their complete asset, management, contract and security schedules are not public.",
+      "heritage_source_state": "OPEN_PRIMARY_SOURCE_NOT_CONFIGURED",
+      "source_refs": [],
+      "source_gap_refs": ["FTI-TX-GAP-006", "FTI-TX-GAP-008"],
+      "included_object_ids": ["FTI-TX-ENT-001", "FTI-TX-ENT-002", "FTI-TX-ENT-003"],
+      "does_not_establish": [
+        "That all three were included in C/1549/25 or in any closing perimeter.",
+        "That any one was the Club Sei Lanzarote contracting entity.",
+        "Their current solvency, ownership, management, debt, security or asset position."
+      ]
+    },
+    {
+      "heritage_scope_id": "FTI-TX-SCOPE-003",
+      "label": "Club Sei Lanzarote / Sun Park–Lava Verde public-commercial project relationship",
+      "geography": "CANARY_ISLANDS",
+      "asset_precision_state": "BRAND_PROJECT_RELATIONSHIP_ONLY",
+      "historic_fti_meeting_point_link": "Public trade and project sources connect Club Sei Lanzarote to the Meeting Point / FTI commercial perimeter and the Sun Park–Lava Verde location.",
+      "heritage_source_state": "OPEN_PRIMARY_SOURCE_NOT_CONFIGURED",
+      "source_refs": [],
+      "source_gap_refs": ["FTI-TX-GAP-004"],
+      "included_object_ids": ["FTI-TX-ENT-004", "FTI-TX-ENT-009"],
+      "does_not_establish": [
+        "A completed acquisition, management contract, booking, revenue flow or asset ownership by a Meeting Point legal person.",
+        "The exact hotel inventory or authority of any party to commercialise individual units.",
+        "That the later fifteen-hotel transaction included Sun Park, Lava Verde or Club Sei Lanzarote."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "FTI-TX-SRC-001",
+      "title": "CNMC case C/1549/25",
+      "url": "https://www.cnmc.es/expedientes/c154925",
+      "priority": "P1_OFFICIAL",
+      "access_lane": "AUTOMATED_SAFE",
+      "source_type": "HTML",
+      "enabled": true,
+      "required": true,
+      "change_review_policy": "ANY_CHANGE",
+      "heritage_scope_ids": ["FTI-TX-SCOPE-001", "FTI-TX-SCOPE-002"],
+      "entity_ids": ["FTI-TX-ENT-001", "FTI-TX-ENT-007", "FTI-TX-ENT-008"],
+      "transaction_term_ids": ["FTI-TX-TERM-001", "FTI-TX-TERM-002"],
+      "source_boundary": "Official competition-file page; confirms only the notified/authorised concentration and file state it expressly records."
+    },
+    {
+      "source_id": "FTI-TX-SRC-002",
+      "title": "CNMC public report for C/1549/25",
+      "url": "https://www.cnmc.es/sites/default/files/5913000.pdf",
+      "priority": "P1_OFFICIAL",
+      "access_lane": "AUTOMATED_SAFE",
+      "source_type": "PDF",
+      "enabled": true,
+      "required": true,
+      "change_review_policy": "ANY_CHANGE",
+      "heritage_scope_ids": ["FTI-TX-SCOPE-001", "FTI-TX-SCOPE-002"],
+      "entity_ids": ["FTI-TX-ENT-001", "FTI-TX-ENT-007", "FTI-TX-ENT-008"],
+      "transaction_term_ids": ["FTI-TX-TERM-001", "FTI-TX-TERM-002"],
+      "source_boundary": "Official public report; portfolio and control language does not identify each hotel, legal title holder, operator, price, financing or later performance."
+    },
+    {
+      "source_id": "FTI-TX-SRC-003",
+      "title": "Portobello / BLUESEA closing announcement",
+      "url": "https://www.portobellocapital.es/wp-content/uploads/2026/01/NDP_ENG_-BLUESEA-Hotels-impulsa-su-crecimiento-con-la-incorporacion-de-nuevos-activos-y-alcanza-las-9.400-habitaciones-003.pdf",
+      "priority": "P2_PARTY_OR_FIDUCIARY",
+      "access_lane": "AUTOMATED_SAFE",
+      "source_type": "PDF",
+      "enabled": true,
+      "required": true,
+      "change_review_policy": "ANY_CHANGE",
+      "heritage_scope_ids": ["FTI-TX-SCOPE-001"],
+      "entity_ids": ["FTI-TX-ENT-007", "FTI-TX-ENT-008", "FTI-TX-ENT-009", "FTI-TX-ENT-010", "FTI-TX-ENT-011"],
+      "transaction_term_ids": ["FTI-TX-TERM-001", "FTI-TX-TERM-002", "FTI-TX-TERM-004"],
+      "source_boundary": "Buyer-side announcement; proves the publisher's statement, not the exact closing date, every asset, vehicle, contract, funding flow or historic-record handoff."
+    },
+    {
+      "source_id": "FTI-TX-SRC-004",
+      "title": "Portobello Capital public website",
+      "url": "https://www.portobellocapital.es/",
+      "priority": "P2_PARTY_OR_FIDUCIARY",
+      "access_lane": "AUTOMATED_SAFE",
+      "source_type": "HTML",
+      "enabled": true,
+      "required": false,
+      "change_review_policy": "ENTITY_AND_TRANSACTION_TERM",
+      "heritage_scope_ids": ["FTI-TX-SCOPE-001"],
+      "entity_ids": ["FTI-TX-ENT-001", "FTI-TX-ENT-007", "FTI-TX-ENT-008", "FTI-TX-ENT-009", "FTI-TX-ENT-010", "FTI-TX-ENT-011"],
+      "transaction_term_ids": ["FTI-TX-TERM-001", "FTI-TX-TERM-002", "FTI-TX-TERM-003", "FTI-TX-TERM-007", "FTI-TX-TERM-008"],
+      "source_boundary": "Party website used for change discovery; no homepage wording is promoted without the specific dated publication and entity/asset reconciliation."
+    },
+    {
+      "source_id": "FTI-TX-SRC-005",
+      "title": "BLUESEA Hotels public website",
+      "url": "https://www.blueseahotels.com/",
+      "priority": "P2_PARTY_OR_FIDUCIARY",
+      "access_lane": "AUTOMATED_SAFE",
+      "source_type": "HTML",
+      "enabled": true,
+      "required": false,
+      "change_review_policy": "ENTITY_AND_TRANSACTION_TERM",
+      "heritage_scope_ids": ["FTI-TX-SCOPE-001"],
+      "entity_ids": ["FTI-TX-ENT-001", "FTI-TX-ENT-008", "FTI-TX-ENT-009", "FTI-TX-ENT-010", "FTI-TX-ENT-011"],
+      "transaction_term_ids": ["FTI-TX-TERM-001", "FTI-TX-TERM-002", "FTI-TX-TERM-004", "FTI-TX-TERM-005"],
+      "source_boundary": "Brand/operator website used for public portfolio-change discovery; a listing does not resolve hotel ownership, operator legal person or acquisition history."
+    },
+    {
+      "source_id": "FTI-TX-SRC-006",
+      "title": "FTI / Meeting Point insolvency information portal",
+      "url": "https://fti-inso.de/",
+      "priority": "P2_PARTY_OR_FIDUCIARY",
+      "access_lane": "AUTOMATED_SAFE",
+      "source_type": "HTML",
+      "enabled": true,
+      "required": true,
+      "change_review_policy": "ANY_CHANGE",
+      "heritage_scope_ids": ["FTI-TX-SCOPE-001", "FTI-TX-SCOPE-002", "FTI-TX-SCOPE-003"],
+      "entity_ids": ["FTI-TX-ENT-004", "FTI-TX-ENT-005", "FTI-TX-ENT-006", "FTI-TX-ENT-009"],
+      "transaction_term_ids": ["FTI-TX-TERM-001", "FTI-TX-TERM-003", "FTI-TX-TERM-008", "FTI-TX-TERM-009"],
+      "source_boundary": "Insolvency information portal; monitor notices and source-file changes without treating all group companies, assets, administrators or proceedings as interchangeable."
+    },
+    {
+      "source_id": "FTI-TX-SRC-007",
+      "title": "MHBK FTI group procedure page",
+      "url": "https://www.mhbk.de/de/verfahren/fti-touristik-gmbh-sowie-10-weitere-insolvente-gesellschaften-der-fti-group",
+      "priority": "P2_PARTY_OR_FIDUCIARY",
+      "access_lane": "AUTOMATED_SAFE",
+      "source_type": "HTML",
+      "enabled": true,
+      "required": true,
+      "change_review_policy": "ANY_CHANGE",
+      "heritage_scope_ids": ["FTI-TX-SCOPE-001", "FTI-TX-SCOPE-002", "FTI-TX-SCOPE-003"],
+      "entity_ids": ["FTI-TX-ENT-004", "FTI-TX-ENT-005", "FTI-TX-ENT-006", "FTI-TX-ENT-009"],
+      "transaction_term_ids": ["FTI-TX-TERM-001", "FTI-TX-TERM-003", "FTI-TX-TERM-008", "FTI-TX-TERM-009"],
+      "source_boundary": "Insolvency-practitioner procedure page; establishes its statements and linked notices, not asset inclusion or completed disposal without transaction-specific proof."
+    },
+    {
+      "source_id": "FTI-TX-SRC-008",
+      "title": "MHBK current public media index",
+      "url": "https://www.mhbk.de/de/media",
+      "priority": "P2_PARTY_OR_FIDUCIARY",
+      "access_lane": "AUTOMATED_SAFE",
+      "source_type": "HTML",
+      "enabled": true,
+      "required": false,
+      "change_review_policy": "ENTITY_AND_TRANSACTION_TERM",
+      "heritage_scope_ids": ["FTI-TX-SCOPE-001", "FTI-TX-SCOPE-002", "FTI-TX-SCOPE-003"],
+      "entity_ids": ["FTI-TX-ENT-004", "FTI-TX-ENT-005", "FTI-TX-ENT-006", "FTI-TX-ENT-009"],
+      "transaction_term_ids": ["FTI-TX-TERM-001", "FTI-TX-TERM-003", "FTI-TX-TERM-008", "FTI-TX-TERM-009"],
+      "source_boundary": "Listing-page discovery only; a content change must be followed to the dated underlying publication before review."
+    },
+    {
+      "source_id": "FTI-TX-SRC-009",
+      "title": "SEPI Meeting Point and BLUESEA FASEE authorisation release",
+      "url": "https://www.sepi.es/es/sala-de-prensa/noticias/el-consejo-de-ministros-autoriza-nuevas-ayudas-con-cargo-al-fondo-de-apoyo",
+      "priority": "P1_OFFICIAL",
+      "access_lane": "AUTOMATED_SAFE",
+      "source_type": "HTML",
+      "enabled": true,
+      "required": true,
+      "change_review_policy": "ANY_CHANGE",
+      "heritage_scope_ids": ["FTI-TX-SCOPE-001", "FTI-TX-SCOPE-002"],
+      "entity_ids": ["FTI-TX-ENT-001", "FTI-TX-ENT-002", "FTI-TX-ENT-008"],
+      "transaction_term_ids": ["FTI-TX-TERM-006", "FTI-TX-TERM-007", "FTI-TX-TERM-008"],
+      "source_boundary": "Official authorisation announcement; separate Meeting Point EUR 31 million and BLUESEA EUR 25 million operations must not be merged or treated as proof of drawdown, current balance or asset-level use."
+    },
+    {
+      "source_id": "FTI-TX-SRC-010",
+      "title": "SEPI FASEE 2023 annual accounts",
+      "url": "https://www.sepi.es/sites/default/files/2024-08/FASEE_Cuentas%20anuales_2023.pdf",
+      "priority": "P1_OFFICIAL",
+      "access_lane": "AUTOMATED_SAFE",
+      "source_type": "PDF",
+      "enabled": true,
+      "required": true,
+      "change_review_policy": "ANY_CHANGE",
+      "heritage_scope_ids": ["FTI-TX-SCOPE-001", "FTI-TX-SCOPE-002"],
+      "entity_ids": ["FTI-TX-ENT-001", "FTI-TX-ENT-002"],
+      "transaction_term_ids": ["FTI-TX-TERM-006", "FTI-TX-TERM-007", "FTI-TX-TERM-008"],
+      "source_boundary": "Official accounts establish the disclosed instrument allocation and movements only; they do not trace funds into a hotel, establish current exposure or prove disclosure failures."
+    },
+    {
+      "source_id": "FTI-TX-SRC-011",
+      "title": "German-Spanish Chamber report on the Meeting Point rescue transaction",
+      "url": "https://www.ahk.es/es/news-media/mitgliedernews/2025/2025-03/blue-sea-portobello-y-partners-ultima-el-rescate-de-meeting-point-para-que-evite-el-concurso",
+      "priority": "P3_INDEPENDENT_TRADE",
+      "access_lane": "AUTOMATED_SAFE",
+      "source_type": "HTML",
+      "enabled": true,
+      "required": false,
+      "change_review_policy": "ANY_CHANGE",
+      "heritage_scope_ids": ["FTI-TX-SCOPE-001", "FTI-TX-SCOPE-002"],
+      "entity_ids": ["FTI-TX-ENT-001", "FTI-TX-ENT-002", "FTI-TX-ENT-003", "FTI-TX-ENT-007", "FTI-TX-ENT-008"],
+      "transaction_term_ids": ["FTI-TX-TERM-001", "FTI-TX-TERM-002", "FTI-TX-TERM-008"],
+      "source_boundary": "Independent trade/chamber context; reported timing and structure require confirmation against CNMC, signed instruments and party closing sources."
+    },
+    {
+      "source_id": "FTI-TX-SRC-012",
+      "title": "Multilingual Google News RSS discovery — FTI / Meeting Point / Labranda / BLUESEA in Spain and Canary Islands",
+      "url": "https://news.google.com/rss/search?q=%28%22Meeting%20Point%22%20OR%20%22FTI%20Touristik%22%20OR%20Labranda%20OR%20BLUESEA%29%20%28hotel%20OR%20hoteles%20OR%20acquisition%20OR%20adquisici%C3%B3n%20OR%20%C3%9Cbernahme%20OR%20management%20OR%20gesti%C3%B3n%20OR%20Betreiber%20OR%20financing%20OR%20financiaci%C3%B3n%20OR%20Finanzierung%20OR%20refinancing%20OR%20refinanciaci%C3%B3n%20OR%20Restrukturierung%29%20%28Canarias%20OR%20%22Canary%20Islands%22%20OR%20Kanaren%20OR%20Espa%C3%B1a%20OR%20Spain%20OR%20Spanien%29&hl=es&gl=ES&ceid=ES%3Aes",
+      "priority": "P4_DISCOVERY",
+      "access_lane": "AUTOMATED_SAFE",
+      "source_type": "RSS",
+      "enabled": true,
+      "required": false,
+      "change_review_policy": "DISCOVERY_ONLY",
+      "heritage_scope_ids": ["FTI-TX-SCOPE-001", "FTI-TX-SCOPE-002", "FTI-TX-SCOPE-003"],
+      "entity_ids": ["FTI-TX-ENT-001", "FTI-TX-ENT-002", "FTI-TX-ENT-003", "FTI-TX-ENT-004", "FTI-TX-ENT-005", "FTI-TX-ENT-006", "FTI-TX-ENT-007", "FTI-TX-ENT-008", "FTI-TX-ENT-009", "FTI-TX-ENT-010", "FTI-TX-ENT-011"],
+      "transaction_term_ids": ["FTI-TX-TERM-001", "FTI-TX-TERM-002", "FTI-TX-TERM-003", "FTI-TX-TERM-004", "FTI-TX-TERM-005", "FTI-TX-TERM-006", "FTI-TX-TERM-007", "FTI-TX-TERM-008", "FTI-TX-TERM-009", "FTI-TX-TERM-010"],
+      "source_boundary": "Discovery feed only; titles, links and co-occurrence create review leads and never establish identity, capacity, transaction state or heritage inclusion."
+    }
+  ],
+  "official_source_lanes": [
+    {
+      "lane_id": "FTI-TX-LANE-001",
+      "label": "BOE / BORME entity and transaction notices",
+      "jurisdictions": ["SPAIN"],
+      "access_lane": "MANUAL_PUBLIC",
+      "coverage_state": "OPEN_GAP_NOT_AUTOMATED",
+      "configured_source_refs": [],
+      "gap_refs": ["FTI-TX-GAP-008"],
+      "boundary": "BORME notices can identify published corporate acts but are not a complete current company, ownership, beneficial-owner, asset or transaction chain. Exact legal-person queries and document reconciliation remain manual."
+    },
+    {
+      "lane_id": "FTI-TX-LANE-002",
+      "label": "Registro Público Concursal",
+      "jurisdictions": ["SPAIN"],
+      "access_lane": "MANUAL_PUBLIC",
+      "coverage_state": "OPEN_GAP_NOT_AUTOMATED",
+      "configured_source_refs": [],
+      "gap_refs": ["FTI-TX-GAP-008"],
+      "boundary": "A public notice or search result is not a complete docket, signed disposition, asset schedule, sale authorisation or proceeding ledger. Exact debtor and file queries require human reconciliation."
+    },
+    {
+      "lane_id": "FTI-TX-LANE-003",
+      "label": "German Insolvenzbekanntmachungen",
+      "jurisdictions": ["GERMANY"],
+      "access_lane": "MANUAL_PUBLIC",
+      "coverage_state": "OPEN_GAP_NOT_AUTOMATED",
+      "configured_source_refs": [],
+      "gap_refs": ["FTI-TX-GAP-006", "FTI-TX-GAP-008"],
+      "boundary": "Official insolvency notices require exact debtor, court and file reconciliation and do not constitute a complete estate, disposition, sale or custody ledger. No CAPTCHA or session-control circumvention is permitted."
+    },
+    {
+      "lane_id": "FTI-TX-LANE-004",
+      "label": "German Unternehmensregister",
+      "jurisdictions": ["GERMANY"],
+      "access_lane": "MANUAL_PUBLIC",
+      "coverage_state": "OPEN_GAP_NOT_AUTOMATED",
+      "configured_source_refs": [],
+      "gap_refs": ["FTI-TX-GAP-006", "FTI-TX-GAP-008"],
+      "boundary": "Public company-report discovery and document access require exact entity and reporting-period review; search results do not establish current ownership, asset inclusion, capacity or transaction participation."
+    },
+    {
+      "lane_id": "FTI-TX-LANE-005",
+      "label": "German Handelsregister documents",
+      "jurisdictions": ["GERMANY"],
+      "access_lane": "PAID_OR_RESTRICTED",
+      "coverage_state": "OPEN_GAP_NOT_AUTOMATED",
+      "configured_source_refs": [],
+      "gap_refs": ["FTI-TX-GAP-006", "FTI-TX-GAP-008"],
+      "boundary": "Fee, session or document-access conditions must be respected. The monitor does not authenticate, pay, scrape sessions or infer ownership/control from an isolated extract."
+    },
+    {
+      "lane_id": "FTI-TX-LANE-006",
+      "label": "CNMC new concentration-case discovery",
+      "jurisdictions": ["SPAIN"],
+      "access_lane": "MANUAL_PUBLIC",
+      "coverage_state": "OPEN_GAP_NOT_AUTOMATED",
+      "configured_source_refs": ["FTI-TX-SRC-001", "FTI-TX-SRC-002"],
+      "gap_refs": ["FTI-TX-GAP-008"],
+      "boundary": "The configured sources monitor only known file C/1549/25. They do not discover every new CNMC case, alias, vehicle or later concentration concerning the bounded perimeter."
+    },
+    {
+      "lane_id": "FTI-TX-LANE-007",
+      "label": "CNMV public filings and issuer disclosures",
+      "jurisdictions": ["SPAIN"],
+      "access_lane": "MANUAL_PUBLIC",
+      "coverage_state": "OPEN_GAP_NOT_AUTOMATED",
+      "configured_source_refs": [],
+      "gap_refs": ["FTI-TX-GAP-008"],
+      "boundary": "Issuer, fund, manager and filing identifiers must be resolved before search; a CNMV publication does not by itself prove asset inclusion, beneficial ownership, use of funds or transaction completion."
+    },
+    {
+      "lane_id": "FTI-TX-LANE-008",
+      "label": "Canary Islands tourism/operator registers and open data",
+      "jurisdictions": ["CANARY_ISLANDS", "SPAIN"],
+      "access_lane": "MANUAL_PUBLIC",
+      "coverage_state": "OPEN_GAP_NOT_AUTOMATED",
+      "configured_source_refs": [],
+      "gap_refs": ["FTI-TX-GAP-001", "FTI-TX-GAP-002", "FTI-TX-GAP-008"],
+      "boundary": "Licence, establishment or open-data entries require hotel-by-hotel reconciliation. They do not automatically establish title owner, manager, lessee, franchisee, lender, transaction date or former-group heritage."
+    },
+    {
+      "lane_id": "FTI-TX-LANE-009",
+      "label": "BDNS / SNPSAP public subsidy records",
+      "jurisdictions": ["SPAIN", "EUROPEAN_UNION"],
+      "access_lane": "MANUAL_PUBLIC",
+      "coverage_state": "OPEN_GAP_NOT_AUTOMATED",
+      "configured_source_refs": [],
+      "gap_refs": ["FTI-TX-GAP-005", "FTI-TX-GAP-008"],
+      "boundary": "Award, call and beneficiary results require exact identifiers and do not prove payment, asset-level use, security, compliance, current exposure or transaction treatment."
+    },
+    {
+      "lane_id": "FTI-TX-LANE-010",
+      "label": "Spanish public procurement and TED notices",
+      "jurisdictions": ["SPAIN", "EUROPEAN_UNION"],
+      "access_lane": "MANUAL_PUBLIC",
+      "coverage_state": "OPEN_GAP_NOT_AUTOMATED",
+      "configured_source_refs": [],
+      "gap_refs": ["FTI-TX-GAP-008"],
+      "boundary": "PLACSP and TED notices are discovery lanes for public contracts, concessions or asset processes; they do not prove private hotel ownership, financing, closing or broader group participation."
+    },
+    {
+      "lane_id": "FTI-TX-LANE-011",
+      "label": "Spanish property title, Catastro and security records",
+      "jurisdictions": ["CANARY_ISLANDS", "SPAIN"],
+      "access_lane": "PAID_OR_RESTRICTED",
+      "coverage_state": "OPEN_GAP_NOT_AUTOMATED",
+      "configured_source_refs": [],
+      "gap_refs": ["FTI-TX-GAP-001", "FTI-TX-GAP-002", "FTI-TX-GAP-003", "FTI-TX-GAP-008"],
+      "boundary": "Catastro supplies descriptive/parcel data, not legal title. A nota simple is informative and certification is authoritative; fees, legitimate-interest and privacy limits apply. The monitor never bypasses those controls or treats one record as a complete asset/security chain."
+    }
+  ],
+  "events": [
+    {
+      "event_id": "FTI-TX-EVT-0001",
+      "heritage_scope_id": "FTI-TX-SCOPE-001",
+      "asset": {
+        "asset_id": "FTI-TX-ASSET-PORTFOLIO-001",
+        "display_name": "Meeting Point Spain, S.L.U. and subsidiaries / fifteen Canary Islands hotel-establishment management perimeter",
+        "geography": "CANARY_ISLANDS",
+        "precision_state": "BOUNDED_PORTFOLIO_ASSETS_NOT_ITEMISED"
+      },
+      "entities_and_capacities": [
+        {
+          "entity_id": "FTI-TX-ENT-001",
+          "capacity": "OTHER_CAPITAL_ROLE",
+          "capacity_source_refs": ["FTI-TX-SRC-001", "FTI-TX-SRC-002"],
+          "capacity_boundary": "Acquired target identified by CNMC; this does not make MPS the title owner or operator of every establishment."
+        },
+        {
+          "entity_id": "FTI-TX-ENT-007",
+          "capacity": "BUYER",
+          "capacity_source_refs": ["FTI-TX-SRC-001", "FTI-TX-SRC-002"],
+          "capacity_boundary": "CNMC source literal identifies Portobello Capital, S.L. as acquirer through the BLUESEA vehicle; exact vehicle economics remain open."
+        },
+        {
+          "entity_id": "FTI-TX-ENT-008",
+          "capacity": "RESTRUCTURING_ACQUIRER",
+          "capacity_source_refs": ["FTI-TX-SRC-001", "FTI-TX-SRC-002"],
+          "capacity_boundary": "Vehicle through which CNMC records the control acquisition; hotel-by-hotel owner/operator capacity is not established."
+        }
+      ],
+      "transaction_type": "CONTROL_ACQUISITION",
+      "transaction_state": "AUTHORISED",
+      "transaction_date": {
+        "value": "2025-04-23",
+        "precision": "DAY",
+        "meaning": "CNMC first-phase authorisation date, not signing, closing, funding or operational handover date."
+      },
+      "source_refs": ["FTI-TX-SRC-001", "FTI-TX-SRC-002"],
+      "evidence_state": "OFFICIAL_DECISION_CONFIRMED",
+      "proves": [
+        "CNMC C/1549/25 recorded and authorised Portobello's acquisition, through Gestora Blue Sea Partner, of exclusive control over Meeting Point Spain and subsidiaries.",
+        "The public report describes a fifteen-establishment Canary Islands hotel-management perimeter."
+      ],
+      "does_not_prove": [
+        "Closing, funding, consideration, debt structure or beneficial ownership after the authorisation date.",
+        "The exact fifteen hotels, title holders, operators, management companies, leases, lenders or security package.",
+        "That Club Sei Lanzarote or Sun Park–Lava Verde was included."
+      ],
+      "contrary_or_limiting_evidence": [
+        "Competition authorisation permits a concentration; it is not evidence of every contractual step or later performance.",
+        "An acquisition of corporate control is not an asset-by-asset conveyance and does not transfer predecessor liability automatically."
+      ],
+      "change_detection": {
+        "monitored_source_ids": ["FTI-TX-SRC-001", "FTI-TX-SRC-002", "FTI-TX-SRC-004", "FTI-TX-SRC-005", "FTI-TX-SRC-011", "FTI-TX-SRC-012"],
+        "last_human_review_date": "2026-08-27",
+        "next_review_trigger": "Any public change mentioning MPS, Portobello, BLUESEA, Labranda or an identified hotel together with a controlled transaction/capacity term.",
+        "automatic_promotion": false
+      },
+      "public_safety": {
+        "classification": "TX-0_PUBLIC",
+        "contains_private_source": false,
+        "contains_unannounced_transaction": false,
+        "website_publication_authorized": false
+      }
+    },
+    {
+      "event_id": "FTI-TX-EVT-0002",
+      "heritage_scope_id": "FTI-TX-SCOPE-001",
+      "asset": {
+        "asset_id": "FTI-TX-ASSET-PORTFOLIO-001",
+        "display_name": "Labranda / Meeting Point Hotels transaction — fifteen Canary Islands properties described at portfolio level",
+        "geography": "CANARY_ISLANDS",
+        "precision_state": "BOUNDED_PORTFOLIO_ASSETS_NOT_ITEMISED"
+      },
+      "entities_and_capacities": [
+        {
+          "entity_id": "FTI-TX-ENT-007",
+          "capacity": "BUYER",
+          "capacity_source_refs": ["FTI-TX-SRC-003"],
+          "capacity_boundary": "Buyer-side public statement; exact purchasing vehicle, consideration and hotel-by-hotel capacity remain open."
+        },
+        {
+          "entity_id": "FTI-TX-ENT-008",
+          "capacity": "RESTRUCTURING_ACQUIRER",
+          "capacity_source_refs": ["FTI-TX-SRC-003"],
+          "capacity_boundary": "BLUESEA vehicle/perimeter in the announced closing; no automatic owner or operator status for each hotel."
+        },
+        {
+          "entity_id": "FTI-TX-ENT-009",
+          "capacity": "OTHER_CAPITAL_ROLE",
+          "capacity_source_refs": ["FTI-TX-SRC-003"],
+          "capacity_boundary": "Commercial Meeting Point Hotels perimeter referenced by the announcement, not an exact seller legal person."
+        }
+      ],
+      "transaction_type": "CONTROL_ACQUISITION",
+      "transaction_state": "CLOSED_COUNTERPARTY_ANNOUNCED",
+      "transaction_date": {
+        "value": "2026-01-14",
+        "precision": "BEFORE_OR_BY_SOURCE_DATE",
+        "meaning": "The announcement date establishes that the publisher described the transaction as recently closed by then; it is not the exact closing date."
+      },
+      "source_refs": ["FTI-TX-SRC-003"],
+      "evidence_state": "COUNTERPARTY_ANNOUNCED",
+      "proves": [
+        "Portobello/BLUESEA publicly stated by 14 January 2026 that the Labranda / Meeting Point Hotels transaction had recently closed.",
+        "The same public statement described fifteen additional Canary Islands properties at portfolio level."
+      ],
+      "does_not_prove": [
+        "The exact closing date, price, financing, sellers, legal vehicles or title transfer for every property.",
+        "The individual property list or hotel-by-hotel owner, operator, manager, lease, franchise, lender or security holder.",
+        "Receipt of every historic Club Sei, FTI, Meeting Point or Sun Park record."
+      ],
+      "contrary_or_limiting_evidence": [
+        "This is a buyer-side announcement and remains distinct from the earlier CNMC authorisation.",
+        "The repository's earlier 9 March 2025 closing date was not officially confirmed and is not used here."
+      ],
+      "change_detection": {
+        "monitored_source_ids": ["FTI-TX-SRC-003", "FTI-TX-SRC-004", "FTI-TX-SRC-005", "FTI-TX-SRC-011", "FTI-TX-SRC-012"],
+        "last_human_review_date": "2026-08-27",
+        "next_review_trigger": "A higher-priority source confirms the exact closing date, financing, asset list, legal vehicles, ownership, operator/manager or later capital transaction.",
+        "automatic_promotion": false
+      },
+      "public_safety": {
+        "classification": "TX-0_PUBLIC",
+        "contains_private_source": false,
+        "contains_unannounced_transaction": false,
+        "website_publication_authorized": false
+      }
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "gap_id": "FTI-TX-GAP-001",
+      "question": "Which exact fifteen Canary Islands hotels or establishments were included in C/1549/25 and in the later announced closing?",
+      "needed_source": "CNMC annex, signed transaction schedule, target-company list and hotel-by-hotel property/management schedule.",
+      "status": "OPEN"
+    },
+    {
+      "gap_id": "FTI-TX-GAP-002",
+      "question": "Who currently owns, operates, manages, leases, franchises, finances and holds security over each identified former FTI/Meeting Point Spanish hotel or hotel-management business?",
+      "needed_source": "Current land/company registers, signed management/franchise/lease documents, filed accounts, lender/security records and dated corporate announcements.",
+      "status": "OPEN"
+    },
+    {
+      "gap_id": "FTI-TX-GAP-003",
+      "question": "What legal-person, asset, debt, security, guarantee and record-custody perimeter moved at signing, closing and operational handover?",
+      "needed_source": "SPA/APA schedules, financing and security package, data-room index, closing set, handover protocol and post-closing organisation chart.",
+      "status": "OPEN"
+    },
+    {
+      "gap_id": "FTI-TX-GAP-004",
+      "question": "Was Club Sei Lanzarote or any Sun Park–Lava Verde contract, right, liability, data or claim included, excluded, disclosed, valued or retained?",
+      "needed_source": "Exact Club Sei contracting-entity bridge, contract and inventory, 357/2024 schedules, Auren workfile, German insolvency handoff and transaction disclosure schedules.",
+      "status": "OPEN"
+    },
+    {
+      "gap_id": "FTI-TX-GAP-005",
+      "question": "What is the current status and use of the separate EUR 31 million Meeting Point FASEE support after repayments, restructuring and the later control transaction?",
+      "needed_source": "SEPI instruments, current account and monitoring records, repayment/interest reconciliation, waivers, security, change-of-control consent and transaction treatment.",
+      "status": "OPEN"
+    },
+    {
+      "gap_id": "FTI-TX-GAP-006",
+      "question": "Which exact German and Spanish FTI/Meeting Point legal persons, insolvency estates, advisers and custodians approved or transferred each relevant Spanish asset or record?",
+      "needed_source": "Current CAEPR admissions, German court/company records, Spanish company records, administrator mandates, asset-sale approvals and custody/handover logs.",
+      "status": "OPEN"
+    },
+    {
+      "gap_id": "FTI-TX-GAP-007",
+      "question": "Which unknown buyers, sellers, owners, operators, managers, franchisors, lessees, lenders, security takers, investors or advisers appear in new transactions outside the controlled alias set?",
+      "needed_source": "Broader multilingual discovery followed by exact company/asset identification and primary official or transaction-party sources; this monitor does not automatically extract or identify unknown counterparties.",
+      "status": "OPEN"
+    },
+    {
+      "gap_id": "FTI-TX-GAP-008",
+      "question": "Which new BOE/BORME, Registro Público Concursal, CNMC, CNMV, Canary tourism/operator, BDNS/SNPSAP, PLACSP/TED, German Insolvenzbekanntmachungen/Unternehmensregister/Handelsregister, property-title/security or equivalent official records concern the bounded former FTI/Meeting Point Spanish perimeter?",
+      "needed_source": "Legally available manual or restricted-lane access, new-file discovery queries, exact identifiers and a human-reviewed source-onboarding decision under the eleven-lane inventory; the twelve automated-safe source set is not comprehensive.",
+      "status": "OPEN"
+    }
+  ]
+}

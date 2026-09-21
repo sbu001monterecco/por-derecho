@@ -1,0 +1,48 @@
+name: Validate Rollo 1010/2018 interlinks
+
+on:
+  pull_request:
+    paths:
+      - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - 'archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md'
+      - 'archive/PROCEEDINGS_FULL_IDENTITY_STORYING_GOVERNANCE_30AUG2026.md'
+      - 'archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md'
+      - '.github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'assets/master-proceedings-publication-20260830.js'
+      - 'es/rollo-1010-2018-auto-804-2018/**'
+      - 'en/rollo-1010-2018-order-804-2018/**'
+      - 'es/toma-control-sun-park-7-junio-2018/index.html'
+      - 'en/sun-park-takeover-7-june-2018/index.html'
+      - 'sitemap.xml'
+      - 'scripts/validate_rollo_1010_2018_interlinks.py'
+      - 'scripts/audit_master_proceedings_publication.py'
+      - '.github/workflows/validate-rollo-1010-2018-interlinks.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - 'archive/ROLLO_1010_2018_AUTO_804_CARET_INTERLINK_CONTROL_30AUG2026.md'
+      - 'archive/PROCEEDINGS_FULL_IDENTITY_STORYING_GOVERNANCE_30AUG2026.md'
+      - 'archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md'
+      - '.github/governance/UNITARY_PROCEEDINGS_INTERCONNECTIVITY_MAP_PROTOCOL_30AUG2026.md'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'es/rollo-1010-2018-auto-804-2018/**'
+      - 'en/rollo-1010-2018-order-804-2018/**'
+      - 'scripts/validate_rollo_1010_2018_interlinks.py'
+      - 'scripts/audit_master_proceedings_publication.py'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/validate_rollo_1010_2018_interlinks.py
+      - run: python3 scripts/audit_master_proceedings_publication.py

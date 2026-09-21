@@ -1,0 +1,17 @@
+{
+ "schema":"por-derecho.matter-identity-registry.part.v1",
+ "registry_id":"PD-SP-IDENTITY-REGISTRY-001",
+ "type":"PROCEEDING",
+ "records":[{
+  "id":"PD-SP-R-0044","type":"PROCEEDING",
+  "name":"JSP / Celgán — concurso 440/2021",
+  "identity_resolution":"CARET_PENDING",
+  "organ_id":"PD-SP-I-0015",
+  "identity_sources":["BORME-A-2021-194-38, entry 445948","BORME-A-2021-205-35, entry 466169"],
+  "declaration_date":"2021-07-21",
+  "related_ids":["PD-SP-O-0085","PD-SP-O-0094","PD-SP-O-0095","PD-SP-O-0096","PD-SP-P-0087"],
+  "routes":{"es":"/es/jsp-montelanza-concurso-liquidacion/#insolvency","en":"/en/jsp-montelanza-insolvency-liquidation/#insolvency"},
+  "master_register_reconciliation":"PENDING_CERTIFIED_DOCKET_AND_PROCEEDINGS_MASTER_REGISTER_ROW_REVIEW",
+  "capacity_boundary":"Official declaration notice identifies the historical Mercantil 2 court and both debtors. No pooling of estates, current case allocation, final conclusion, extinction or individual culpability is inferred. The NIG and representative details from the reproduced edict are verification targets, not certified identifiers."
+ }]
+}

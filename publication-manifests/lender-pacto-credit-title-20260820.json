@@ -1,0 +1,113 @@
+{
+  "publication_id": "LENDER-PACTO-CREDIT-TITLE-20260820",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "DELETION_SAFE",
+  "control_date": "2026-08-20",
+  "control_marker": "lender-pacto-credit-title-20260820",
+  "merge_sha": "0449e5d5ac00576ac4bbd7f58d69060114cc54c9",
+  "source_merges": [
+    {
+      "pull_request": 517,
+      "merge_commit": "8ebfdae10689b790c3f7ebc498be764f97de8a9a",
+      "purpose": "Canonical lender-of-record liability research and structured-register architecture."
+    },
+    {
+      "pull_request": 559,
+      "merge_commit": "2c31dec6fd7f9a4fa4f1b34f83cb4f3ef44656a0",
+      "purpose": "Bilingual pacto-comisorio, PH122/Cerberus/Haya/Bankia-external, focused AC and strengthened lender pages."
+    },
+    {
+      "pull_request": 561,
+      "merge_commit": "ae938ff32b8dce4818d160c842abfe0205ab2690",
+      "purpose": "Permanent external production smoke coverage for the lender, pacto, PH122 and AC route families."
+    },
+    {
+      "pull_request": 595,
+      "merge_commit": "0449e5d5ac00576ac4bbd7f58d69060114cc54c9",
+      "purpose": "Current source-level PP 1041 attribution and focused AC correction."
+    }
+  ],
+  "expected_routes": {
+    "es": [
+      "es/acreedor-de-registro/responsabilidad/index.html",
+      "es/pacto-comisorio-arquitectura-credito-titulo/index.html",
+      "es/perimetro-ph122-cerberus-haya-bankia-externo/index.html",
+      "es/administrador-concursal-puerta-credito-titulo/index.html"
+    ],
+    "en": [
+      "en/lender-of-record/liability/index.html",
+      "en/pacto-comisorio-credit-to-title-architecture/index.html",
+      "en/ph122-cerberus-haya-bankia-external-perimeter/index.html",
+      "en/insolvency-administrator-credit-to-title-gatekeeper/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "research/lender-of-record-liability/README.md",
+    "research/lender-of-record-liability/SCHEMA.md",
+    "research/lender-of-record-liability/SOURCE-MANIFEST.md",
+    "research/lender-of-record-liability/ACTOR-MATRIX.md",
+    "research/lender-of-record-liability/CREDIT-SECURITY-GENEALOGY.md",
+    "research/lender-of-record-liability/TRANSFER-CHAIN.md",
+    "research/lender-of-record-liability/KNOWLEDGE-NOTICE.md",
+    "research/lender-of-record-liability/CONDUCT-DECISIONS.md",
+    "research/lender-of-record-liability/LEGAL-ROUTES.md",
+    "research/lender-of-record-liability/CAUSATION-DAMAGES.md",
+    "research/lender-of-record-liability/CONTRADICTIONS-DEFENCES.md",
+    "research/lender-of-record-liability/P0-EVIDENCE-GAPS.md",
+    "research/lender-of-record-liability/PACTO-COMISORIO-CREDIT-TO-TITLE-ARCHITECTURE.md",
+    "research/lender-of-record-liability/PH122-CERBERUS-HAYA-BANKIA-EXTERNAL-PERIMETER.md",
+    "research/lender-of-record-liability/INSOLVENCY-ADMINISTRATOR-CREDIT-TO-TITLE-GATEKEEPER.md",
+    "research/lender-of-record-liability/validate.py",
+    "sitemap-lender-liability.xml",
+    "docs/deletion-audits/2026-08-20-lender-pacto-pp1041-criminal-first-thread.md"
+  ],
+  "publication_safety": {
+    "raw_private_emails_committed": false,
+    "privileged_advice_committed": false,
+    "group_wide_liability_stated_as_fact": false,
+    "pacto_comisorio_stated_as_adjudicated": false,
+    "criminal_guilt_stated_as_final": false,
+    "ph11_adopted_without_native_source": false
+  },
+  "validation": {
+    "status": "CI_GREEN",
+    "evidence": [
+      "PR #517 lender validator passed with controlled source, actor, instrument, transfer, knowledge, conduct, proceeding and evidence-gap registers.",
+      "PR #559 lender-liability architecture, publication integrity, visual identity, unitary public shell and off-GitHub preservation checks passed.",
+      "PR #561 production smoke, publication integrity and preservation checks passed.",
+      "PR #595 source-level PP 1041/AC attribution, publication, smoke and preservation checks passed."
+    ]
+  },
+  "deployment_evidence": [
+    "Production smoke run 32318118190 independently observed the bilingual lender, pacto, PH122, focused AC and lender-liability sitemap routes at the public GitHub Pages host.",
+    "Unitary criminal live run 32369293689 independently re-read the subsequently corrected focused AC pages."
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/lender-of-record/liability/",
+    "https://sbu001monterecco.github.io/por-derecho/es/acreedor-de-registro/responsabilidad/",
+    "https://sbu001monterecco.github.io/por-derecho/en/pacto-comisorio-credit-to-title-architecture/",
+    "https://sbu001monterecco.github.io/por-derecho/es/pacto-comisorio-arquitectura-credito-titulo/",
+    "https://sbu001monterecco.github.io/por-derecho/en/ph122-cerberus-haya-bankia-external-perimeter/",
+    "https://sbu001monterecco.github.io/por-derecho/es/perimetro-ph122-cerberus-haya-bankia-externo/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-administrator-credit-to-title-gatekeeper/",
+    "https://sbu001monterecco.github.io/por-derecho/es/administrador-concursal-puerta-credito-titulo/",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-lender-liability.xml"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS",
+    "primary_run_id": 32318118190,
+    "primary_job_id": 96274640976,
+    "later_ac_correction_run_id": 32369293689,
+    "later_ac_correction_job_id": 96425874230,
+    "result": "The controlled lender, pacto, PH122 and focused AC route families were independently delivered with HTTP 200 and required markers; the later corrected AC source was independently re-read."
+  },
+  "deletion_record": {
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "audit_date": "2026-08-20",
+    "audit_path": "docs/deletion-audits/2026-08-20-lender-pacto-pp1041-criminal-first-thread.md",
+    "open_remote_prs_recorded": [576],
+    "open_evidence_preserved": true,
+    "chat_required_for_future_work": false,
+    "verdict": "The lender, assignment, knowledge, causation, indirect-appropriation, focused AC and evidence-gap architecture is source-controlled and no longer depends on this ChatGPT thread."
+  }
+}

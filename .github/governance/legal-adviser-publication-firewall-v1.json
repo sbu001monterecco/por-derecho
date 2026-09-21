@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "policy_id": "PD-LEGAL-ADVISER-PUBLICATION-FIREWALL-20260828",
+  "adopted": "2026-08-28",
+  "default_action": "QUARANTINE_DO_NOT_PUBLISH",
+  "scope": [
+    "lawyer_email",
+    "law_firm_email",
+    "legal_advice",
+    "draft_pleading",
+    "draft_submission",
+    "draft_appeal",
+    "draft_complaint",
+    "draft_letter_to_authority",
+    "marked_up_document",
+    "tracked_changes",
+    "lawyer_annotation",
+    "litigation_strategy",
+    "settlement_strategy",
+    "procedural_strategy",
+    "lawyer_created_chronology",
+    "lawyer_created_legal_analysis"
+  ],
+  "origin_values": [
+    "lawyer-created",
+    "client-created",
+    "court-created",
+    "authority-created",
+    "third-party-created",
+    "public-source"
+  ],
+  "status_values": [
+    "draft",
+    "final-unfiled",
+    "filed",
+    "served",
+    "officially-issued",
+    "public",
+    "unknown"
+  ],
+  "publication_classes": {
+    "internal-legal-work-product": {
+      "public_repo": false,
+      "pages": false
+    },
+    "quarantined-status-unknown": {
+      "public_repo": false,
+      "pages": false
+    },
+    "private-evidence": {
+      "public_repo": false,
+      "pages": false
+    },
+    "publication-eligible-evidence": {
+      "public_repo": true,
+      "pages": "subject-to-redaction-provenance-and-publication-authority"
+    },
+    "public-source": {
+      "public_repo": true,
+      "pages": "subject-to-normal-publication-controls"
+    }
+  },
+  "hard_rules": [
+    "A lawyer email or legal-adviser covering message is never a public evidence source merely because its attachment is publishable.",
+    "Draft, proposed, unfiled, marked-up, redline, tracked-change and strategy material must not be committed to the public repository or Pages.",
+    "A later filed version does not make earlier drafts or lawyer commentary retrospectively publishable.",
+    "If a proposition is known only from confidential lawyer material, do not publish it by paraphrase; find an independent publication-eligible source first.",
+    "A filename containing FINAL, SIGNED, CLEAN, READY or a version number does not prove filing or service.",
+    "If status or provenance is uncertain, quarantine and do not publish.",
+    "Do not use later deletion as a substitute for preventing privileged material from entering Git history."
+  ],
+  "wrapper_source_separation": true,
+  "filed_version_verification": [
+    "court_or_authority_receipt",
+    "official_electronic_filing_receipt",
+    "court_docket_or_case_file_copy",
+    "service_confirmation",
+    "independently_obtained_filed_copy",
+    "other_reliable_institutional_version_evidence"
+  ],
+  "controlling_markdown": ".github/governance/LEGAL_ADVISER_DRAFT_PRIVILEGE_PUBLICATION_FIREWALL_28AUG2026.md"
+}

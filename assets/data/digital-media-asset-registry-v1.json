@@ -1,0 +1,8 @@
+{
+  "schema": "por-derecho.digital-media-asset-registry.redirect.v1",
+  "status": "SUPERSEDED_POINTER",
+  "superseded_on": "2026-09-01",
+  "canonical_register": "../../data/digital-media-asset-register-v1.json",
+  "canonical_register_id": "PD-DMA-REG-0001",
+  "note": "The earlier date-heavy draft references and pending-generation states are superseded. Current public logical references are PD-DMA-0001 through PD-DMA-0004; exact file identities carry a caret and are recorded in the canonical top-level register."
+}

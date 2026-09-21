@@ -1,0 +1,152 @@
+{
+  "schema": "por-derecho.sun-park-owner-perimeter-classification.v1",
+  "control_id": "PD-SP-OWNER-PERIMETERS-001",
+  "control_date": "2026-08-26",
+  "status": "BACKEND_CLASSIFICATION_ACTIVE_PUBLIC_PROPAGATION_PENDING",
+  "purpose": "Distinguish ownership provenance, adverse/dissident alignment, representation, user-side control and later-acquirer convergence without treating all non-LPB/Matkator owners as one bloc or transferring knowledge, intention or liability by association.",
+  "governing_rules": [
+    "Ownership provenance and adversarial/representational alignment are separate axes.",
+    "NON_LPB_MATKATOR_OWNER does not mean MONTELANZA_MOLINA_DISSIDENT.",
+    "A holder may belong to more than one perimeter at different dates or for different reasons; overlaps are recorded, never collapsed.",
+    "The reported twelve LPB post-acquisition transfers form a separate provenance cohort even if a transferee later overlaps with the Montelanza/Molina perimeter.",
+    "Representative, lawyer, Community officeholder, administrator, owner and alleged enabler are separate roles and must be dated and sourced separately.",
+    "The label adverse/dissident is an attributed analytical classification tied to documented litigation/governance alignment, not a finding of wrongdoing.",
+    "Later CAM/Acosta Matos concentration is a separate temporal perimeter and cannot be projected backwards as proof of a 2011 common plan.",
+    "Our advisers are not owners merely because they advised LPB, Matkator, Aweswell or related entities.",
+    "Colour is only a visual aid. Text labels, role codes, dates and source grades remain controlling."
+  ],
+  "visual_legend": {
+    "PD_PERIMETER_OUR_OWNER_CONTROL": {"label_es":"Perímetro propietario/control nuestro","label_en":"Our owner/control perimeter","color":"#2563EB","pattern":"solid","shape":"rounded"},
+    "PD_PERIMETER_OUR_ADVISERS": {"label_es":"Nuestros asesores y representantes","label_en":"Our advisers and representatives","color":"#15803D","pattern":"solid","shape":"pill"},
+    "PD_PERIMETER_MM_DISSIDENT_CORE": {"label_es":"Núcleo Montelanza/Molina disidente/adverso atribuido","label_en":"Attributed Montelanza/Molina dissident/adverse core","color":"#B91C1C","pattern":"solid","shape":"hexagon"},
+    "PD_PERIMETER_MM_WIDER": {"label_es":"Perímetro Montelanza/Molina más amplio","label_en":"Wider Montelanza/Molina perimeter","color":"#DC2626","pattern":"diagonal","shape":"hexagon"},
+    "PD_PERIMETER_OTHER_MINORITY": {"label_es":"Otros propietarios minoritarios no LPB/Matkator","label_en":"Other non-LPB/Matkator minority owners","color":"#B45309","pattern":"dots","shape":"circle"},
+    "PD_PERIMETER_LPB_TRANSFEREE_12": {"label_es":"Cohorte de 12 unidades transmitidas por LPB","label_en":"Cohort of 12 units transferred by LPB","color":"#7E22CE","pattern":"crosshatch","shape":"diamond"},
+    "PD_PERIMETER_LATER_CAM": {"label_es":"Perímetro posterior CAM/Acosta Matos","label_en":"Later CAM/Acosta Matos perimeter","color":"#C2410C","pattern":"vertical","shape":"square"},
+    "PD_PERIMETER_NEUTRAL_OPEN": {"label_es":"Tercero neutral o clasificación abierta","label_en":"Neutral third party or classification open","color":"#64748B","pattern":"outline","shape":"circle"}
+  },
+  "perimeters": [
+    {
+      "perimeter_id": "PD-SP-PER-OUR-OWNER-001",
+      "visual_token": "PD_PERIMETER_OUR_OWNER_CONTROL",
+      "classification": "OUR_OWNER_CONTROL",
+      "time_scope": "2008-present subject to entity/date-specific proof",
+      "members": ["PD-SP-O-0001", "PD-SP-O-0002", "PD-SP-O-0003"],
+      "member_notes": {
+        "PD-SP-O-0001": "Parent/control-side entity; not treated as owner of each finca without title evidence.",
+        "PD-SP-O-0002": "LPB; majority-owner/debtor analysis remains finca- and date-specific.",
+        "PD-SP-O-0003": "Matkator; extraconcursal ownership must remain separate from LPB and Concurso 36/2012."
+      }
+    },
+    {
+      "perimeter_id": "PD-SP-PER-OUR-ADVISERS-001",
+      "visual_token": "PD_PERIMETER_OUR_ADVISERS",
+      "classification": "OUR_ADVISERS_AND_REPRESENTATIVES",
+      "time_scope": "matter-wide; mandate-specific",
+      "registry_reference": "assets/data/legal-professionals-register-v1.json",
+      "rule": "Use the professional register and mandate-specific source. Do not infer ownership, endorsement or continuous representation."
+    },
+    {
+      "perimeter_id": "PD-SP-PER-MM-AP89-001",
+      "visual_token": "PD_PERIMETER_MM_DISSIDENT_CORE",
+      "classification": "MONTELANZA_MOLINA_JUDICIAL_LITIGATION_CORE",
+      "time_scope": "2011-2014 core; later continuity requires separate evidence",
+      "source_grade": "JUDGMENT",
+      "members": ["PD-SP-O-0015", "PD-SP-O-0011", "PD-SP-O-0012", "PD-SP-O-0009", "PD-SP-O-0010", "PD-SP-P-0025", "PD-SP-P-0020"],
+      "representative_ids": ["PD-SP-P-0003"],
+      "proposition": "AP 89/2014 identifies these seven claimant-owners in the JV 1260/2011 precario litigation concerning 18 bungalows.",
+      "boundary": "This is the strongest litigation-defined core. It is not the complete minority-owner denominator and does not establish collective criminal intent."
+    },
+    {
+      "perimeter_id": "PD-SP-PER-MM-WIDER-001",
+      "visual_token": "PD_PERIMETER_MM_WIDER",
+      "classification": "MONTELANZA_MOLINA_WIDER_DISSIDENT_REPRESENTED_PERIMETER",
+      "time_scope": "approximately 2011-2017; edge-specific dates control",
+      "source_grade": "MIXED_PARTY_PLEADING_ACTA_COURT_RECORD",
+      "owner_or_interest_ids": ["PD-SP-O-0014", "PD-SP-O-0011", "PD-SP-O-0012", "PD-SP-O-0013", "PD-SP-O-0009", "PD-SP-O-0015", "PD-SP-O-0010", "PD-SP-O-0016", "PD-SP-P-0014", "PD-SP-P-0015", "PD-SP-P-0016", "PD-SP-P-0017", "PD-SP-P-0018", "PD-SP-P-0019", "PD-SP-P-0020", "PD-SP-P-0021", "PD-SP-P-0022", "PD-SP-P-0023", "PD-SP-P-0024", "PD-SP-P-0025", "PD-SP-P-0026", "PD-SP-P-0027", "PD-SP-P-0028", "PD-SP-P-0030", "PD-SP-P-0031", "PD-SP-P-0032", "PD-SP-P-0034"],
+      "boundary": "Membership in this analytical perimeter must be supported by a dated ownership, representation, Community, litigation or pleading edge. It is not a judicial finding that every listed person/entity acted together or adversely at every date."
+    },
+    {
+      "perimeter_id": "PD-SP-PER-MM-REP-001",
+      "visual_token": "PD_PERIMETER_MM_DISSIDENT_CORE",
+      "classification": "MONTELANZA_MOLINA_REPRESENTATIVES_AND_COMMUNITY_OFFICEHOLDERS",
+      "time_scope": "2011-2017; role-specific",
+      "roles": [
+        {"identity_id":"PD-SP-P-0003","role_code":"LAWYER_MEETING_SECRETARY_REPRESENTATIVE","date_scope":"2009-2014+","status":"DOCUMENTED_ROLE; exact mandate/date controls"},
+        {"identity_id":"PD-SP-P-0004","role_code":"COMMUNITY_PRESIDENT_REPRESENTATIVE_CAPACITY","date_scope":"2011","status":"DOCUMENTED_MEETING_ROLE"},
+        {"identity_id":"PD-SP-P-0029","role_code":"COMMUNITY_SECRETARY","date_scope":"2011","status":"DOCUMENTED_MEETING_ROLE"},
+        {"identity_id":"PD-SP-P-0014","role_code":"COMMUNITY_TREASURER_OWNER_SIDE","date_scope":"2011","status":"DOCUMENTED_MEETING_ROLE"},
+        {"identity_id":"PD-SP-P-0009","role_code":"COMMUNITY_ADMINISTRATION_OR_REPRESENTATION","date_scope":"2011-2018","status":"DATE_AND_SOURCE_SPECIFIC"},
+        {"identity_id":"PD-SP-P-0005","role_code":"LAWYER_FOR_STATED_MOLINA_COMMUNITY_INTERESTS","date_scope":"2016+","status":"TRANSCRIPT_OR_RECORD_SPECIFIC"}
+      ],
+      "boundary": "Representation or Community office does not itself prove ownership, beneficial interest, knowledge of another actor's conduct or alleged enablement."
+    },
+    {
+      "perimeter_id": "PD-SP-PER-LPB-12-001",
+      "visual_token": "PD_PERIMETER_LPB_TRANSFEREE_12",
+      "classification": "LPB_POST_ACQUISITION_TRANSFEREE_OWNER_COHORT",
+      "time_scope": "reported 2008-2009 transfer window; exact deeds/dates required",
+      "reported_unit_count": 12,
+      "status": "USER_POSITION_REQUIRES_FINA_BY_FINA_PRIMARY_SOURCE_RECONCILIATION",
+      "seller_side": "PD-SP-O-0002",
+      "owner_ids": [],
+      "representative_edges": [],
+      "rule": "Identify each transferee owner independently from deed/Registry evidence, then identify any representative independently. Do not assign the cohort to the Montelanza/Molina perimeter merely because the owner was a minority owner.",
+      "overlap_rule": "If a transferee later appears in the Montelanza/Molina litigation/governance perimeter, record both memberships with separate dates and source grades.",
+      "open_questions": [
+        "Which exact twelve fincas/units were transferred?",
+        "Who acquired each unit, on what date and through which deed/Registry entry?",
+        "Were any units acquired jointly, through companies or later transferred again?",
+        "Who, if anyone, represented each transferee in Community meetings or litigation?",
+        "Which of the twelve later overlapped with the Montelanza/Molina perimeter, and from what date?",
+        "What is the exact documented chain involving Multimatrix and any later ownership endpoint? Do not encode an endpoint from recollection alone."
+      ]
+    },
+    {
+      "perimeter_id": "PD-SP-PER-OTHER-MINORITY-001",
+      "visual_token": "PD_PERIMETER_OTHER_MINORITY",
+      "classification": "OTHER_NON_LPB_MATKATOR_MINORITY_OWNERS",
+      "time_scope": "date-specific",
+      "status": "DYNAMIC_DENOMINATOR_RECONSTRUCTION_REQUIRED",
+      "rule": "This is the default ownership class for a proven non-LPB/Matkator owner who is not yet supported as a Montelanza/Molina dissident/represented actor."
+    },
+    {
+      "perimeter_id": "PD-SP-PER-CAM-LATER-001",
+      "visual_token": "PD_PERIMETER_LATER_CAM",
+      "classification": "LATER_CAM_ACOSTA_MATOS_PERIMETER",
+      "time_scope": "2017-present; exact edge/date controls",
+      "members": ["PD-SP-O-0007", "PD-SP-O-0008", "PD-SP-P-0011", "PD-SP-P-0012"],
+      "boundary": "Later acquisition, representation or control evidence cannot be back-projected to prove earlier Montelanza/Molina alignment or a 2011 common plan."
+    }
+  ],
+  "role_codes": {
+    "OWNER": "Title/ownership role only.",
+    "TRANSFEREE_FROM_LPB": "Acquired a unit directly from LPB in the twelve-unit reconstruction cohort.",
+    "CLAIMANT": "Party to identified litigation; proceeding-specific.",
+    "LAWYER": "Professional representation; mandate-specific.",
+    "REPRESENTATIVE": "Acted under a power or stated representation; source/date-specific.",
+    "COMMUNITY_OFFICEHOLDER": "Held or purported to hold a Community role; validity is a separate question.",
+    "ADMINISTRATOR": "Administrative/management role; entity and period specific.",
+    "ALLEGED_ENABLEMENT": "Attributed allegation requiring act, authority, knowledge, consequence and state-of-mind proof; never inferred from representation alone."
+  },
+  "overlap_model": {
+    "type": "MANY_TO_MANY_TEMPORAL",
+    "required_edge_fields": ["identity_id", "perimeter_id", "role_code", "from_date_or_period", "to_date_or_period", "source_grade", "status"],
+    "rules": [
+      "A single identity may have multiple perimeter edges.",
+      "An overlap must not merge the underlying perimeters.",
+      "Conflicting source descriptions remain parallel until reconciled.",
+      "Colour follows the displayed edge/perimeter, not a permanent colour attached to the person."
+    ]
+  },
+  "unit_ledger_target": {
+    "goal": "One row per Sun Park finca/unit per material date.",
+    "fields": ["finca_id", "unit_label", "owner_identity_id", "ownership_from", "ownership_to", "seller_identity_id", "buyer_identity_id", "transfer_instrument", "registry_reference", "perimeter_edges", "representative_edges", "source_grade", "verification_status"],
+    "priority_sequence": [
+      "Reconstruct the twelve LPB post-acquisition transfers first.",
+      "Reconcile AP 89/2014's eighteen bungalows to exact fincas.",
+      "Reconstruct the remaining non-LPB/Matkator ownership denominator at 2008, 2011, 2017 and 2022 checkpoints.",
+      "Trace later transfers into CAM/Acosta Matos or other vehicles without overwriting earlier provenance."
+    ]
+  }
+}

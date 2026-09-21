@@ -1,0 +1,333 @@
+{
+  "schema": "por-derecho.linked-continuity-register.v1",
+  "control_id": "PD-C36-LINKED-CONTINUITY-20260829-01",
+  "control_date": "2026-08-29",
+  "repository": "sbu001monterecco/por-derecho",
+  "base_sha_at_start": "a7b56adcf5d2656050fb516aad4b4402ea36ef94",
+  "release_type": "continuity_reconciliation_no_new_evidence_promotion",
+  "source_equivalence": {
+    "result": "EXACT_MATCH__CANONICAL_MAIN_COPIES_CONTROL",
+    "files": [
+      {
+        "path": "archive/MISSING_EVIDENCE_REGISTER_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md",
+        "uploaded_filename": "MISSING_EVIDENCE_REGISTER_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md",
+        "bytes": 3248,
+        "sha256": "6e4351dec0516c4908d57f22fbd0ccade66ba80d2b17080a6ea6807fb536ff2c",
+        "git_blob_sha": "2232c420b5524ff3bd7e2f63291a716b57956484",
+        "equivalence": "BYTE_IDENTICAL_TO_MAIN"
+      },
+      {
+        "path": "archive/CONCURSO_36_2012_DOCKET_WIDE_DISCOVERY_PROMOTION_REGISTER_17AUG2026.md",
+        "uploaded_filename": "CONCURSO_36_2012_DOCKET_WIDE_DISCOVERY_PROMOTION_REGISTER_17AUG2026.md",
+        "bytes": 15766,
+        "sha256": "d804bd43373fb24004ac41fe6271e4ed626e0e454f999fded4bf48db1d03552b",
+        "git_blob_sha": "8575565f7a488ba6f1f7cc4fbf0d79bd891d8d6d",
+        "equivalence": "BYTE_IDENTICAL_TO_MAIN"
+      }
+    ],
+    "evidential_effect": [
+      "duplicate intake ambiguity closed",
+      "canonical path precedence confirmed",
+      "no competing source version created",
+      "no P0 or P1 evidential gap closed"
+    ]
+  },
+  "controlled_baselines": [
+    {
+      "lane": "court_decision_ac_report_continuity",
+      "prs": [
+        1141,
+        1142
+      ]
+    },
+    {
+      "lane": "acta_meetings",
+      "prs": [
+        1182,
+        1183
+      ]
+    },
+    {
+      "lane": "aeat_pink",
+      "prs": [
+        1167,
+        1171
+      ]
+    },
+    {
+      "lane": "caretaker_identity_resolution",
+      "prs": [
+        1165,
+        1169
+      ]
+    },
+    {
+      "lane": "eg_745_2026",
+      "prs": [
+        1184,
+        1185,
+        1186,
+        1187,
+        1188
+      ]
+    }
+  ],
+  "procedural_family": [
+    "filing",
+    "receipt",
+    "opposition",
+    "decision",
+    "service",
+    "clarification_or_reconsideration",
+    "appeal",
+    "appellate_decision",
+    "finality",
+    "implementation_or_accounting"
+  ],
+  "open_evidence_gates": {
+    "P0": [
+      {
+        "id": "CERTIFIED-DENOMINATOR",
+        "family": "Certified denominator",
+        "missing": "Certified chronological court/LAJ index for every section and incident from 1 January 2014 through conclusion.",
+        "closure": "Each numbered act is tied to date, court, section, class and parent proceeding."
+      },
+      {
+        "id": "ORIGINALS-2014-2016",
+        "family": "2014–2016 originals",
+        "missing": "Signed 29 April 2014 act; 2015 acts; 1 April and 1 June 2016 acts; definitive-text chain.",
+        "closure": "Originals, annexes, service, review and finality are cross-referenced."
+      },
+      {
+        "id": "BARE-REFERENCES",
+        "family": "Bare references",
+        "missing": "204/14, 677/14, 2418/14 and 5599/2015.",
+        "closure": "Court, class, object and parent-child relationship are certified."
+      },
+      {
+        "id": "REPORTED-JUDICIAL-ACTS",
+        "family": "Reported judicial acts",
+        "missing": "Signed originals and complete families for C36-E004, E031, E034, E045, E056, E060, E062 and E063.",
+        "closure": "Each canonical lead has a signed act, antecedent filing, service, review and effect."
+      },
+      {
+        "id": "OCTOBER-2021-CHAIN",
+        "family": "25/27 October 2021",
+        "missing": "Filing 7336/2021, requests 7416/7417, issued testimonies, report 7425/2021, annexes, service, challenges and decisions.",
+        "closure": "Each court-office act is joined to the underlying filing/report and resulting decision."
+      },
+      {
+        "id": "AC-REPORT-SERIES",
+        "family": "Insolvency Administration report series",
+        "missing": "Certified index, every report and annex, reports 7425/2021 and 5367/2022, later reports, ledger/bank reconciliation and final accounts.",
+        "closure": "Report-by-report filing, transfer, challenge, ruling and accounting continuity is complete."
+      },
+      {
+        "id": "REVIEW-2022-2023",
+        "family": "2022–2023 review chain",
+        "missing": "Separate signed copies for the 9 March, 16 June, 20 June and 13 July 2022 acts; complaints 375/2022 and 379/2022; official Constitutional Court decision in 2811/2023.",
+        "closure": "Complete signed decisions, service, object mapping and finality are controlled."
+      },
+      {
+        "id": "CURRENT-APPEALS",
+        "family": "Current appeals",
+        "missing": "Merits outcomes in RPL 2523/2025, combined RPL 3304/2025 and 3319/2025, and RPL 421/2026.",
+        "closure": "Merits decision, service and finality are controlled for each appeal."
+      },
+      {
+        "id": "FINAL-STAGE",
+        "family": "Final stage",
+        "missing": "Final accounts, transfer, objections, approval/refusal, finality and conclusion order.",
+        "closure": "The court-certified final family is complete."
+      }
+    ],
+    "P1": [
+      {
+        "id": "FEBRUARY-2018-DATE-LAYERS",
+        "family": "8/15 February 2018 date layers",
+        "missing": "Direct primary reinspection of the 8 February body/recital and 9/14 February signature layers; current control uses 15 February.",
+        "closure": "Date layers are reconciled without inferring a second act absent distinct authenticated identity/effect."
+      },
+      {
+        "id": "JANUARY-2022-CANDIDATE",
+        "family": "13 January 2022",
+        "missing": "Signed source for a distinct act, or a certified correction of the derivative date.",
+        "closure": "The candidate is resolved without replacing either 26 January Auto."
+      }
+    ]
+  },
+  "same_date_controls": [
+    "2018-04-16 distinct acts",
+    "2019-10-24 distinct acts",
+    "2020-05-12 distinct acts",
+    "2021-05-06 distinct acts",
+    "2021-10-15 and 2022-01-26 paired families"
+  ],
+  "publication_gate": {
+    "named_judge_longitudinal_page": "NOT_MATURE_AS_COMPLETE_DOSSIER",
+    "requirements": [
+      "substantial promotion of priority signed binary and signatory families",
+      "visible favourable and neutral matrix",
+      "controlled service, review, appeal and finality nodes"
+    ]
+  },
+  "workstreams": [
+    {
+      "id": "C36-DECISIONS-AC-REPORTS",
+      "priority": "P0",
+      "status": "ACTIVE_CANONICAL_BASELINE",
+      "lineage": [
+        "PR #1141",
+        "PR #1142"
+      ],
+      "scope": "Concurso 36/2012 decisions, LAJ acts, service/appeal/finality chains and Insolvency Administration reports.",
+      "next_action": "Recover and promote only primary binaries and complete procedural/accounting families against the open P0/P1 gates."
+    },
+    {
+      "id": "FISCALIA-EG745",
+      "priority": "P0",
+      "status": "MERGED_BASELINE__FOLLOW_UP_IN_SEPARATE_DOSSIER",
+      "lineage": [
+        "PR #1184",
+        "PR #1185",
+        "PR #1186",
+        "PR #1187",
+        "PR #1188"
+      ],
+      "scope": "E.G. 745/2026 and the 26 August 2026 Fiscalía General del Estado / Inspección Fiscal notification and Decreto.",
+      "next_action": "Preserve the exact filing, receipt, notification, response, review and appeal identities; do not collapse Fiscalía capacities, periods or proceedings."
+    },
+    {
+      "id": "ACTA-MEETINGS",
+      "priority": "P1",
+      "status": "MERGED_BASELINE__CONTINUOUS_MAINTENANCE",
+      "lineage": [
+        "PR #1182",
+        "PR #1183"
+      ],
+      "scope": "Controlled ACTA and meeting lineage.",
+      "next_action": "Add only newly located authenticated source families; preserve the current 23-event / 46-bilingual-page baseline."
+    },
+    {
+      "id": "AEAT-PINK",
+      "priority": "P1",
+      "status": "MERGED_BASELINE__NEW_INTAKE_REQUIRES_RECONCILIATION",
+      "lineage": [
+        "PR #1167",
+        "PR #1171"
+      ],
+      "scope": "AEAT / Pink Canary Services evidence and the distinct operator/contract/appearance questions.",
+      "next_action": "Reconcile any later email, draft or Diligencia against the primary-source register; keep private legal advice and personal contact data outside the public release."
+    },
+    {
+      "id": "CARETAKER-IDENTITIES",
+      "priority": "P2",
+      "status": "MERGED_BASELINE__NO_REOPEN_WITHOUT_NEW_PRIMARY",
+      "lineage": [
+        "PR #1165",
+        "PR #1169"
+      ],
+      "scope": "Former seven-identity gap closure.",
+      "next_action": "Use the resolved institutional identities; do not reintroduce aliases or weaker derivative identifications."
+    },
+    {
+      "id": "FTI-MEETING-POINT-COMPARATOR",
+      "priority": "P1",
+      "status": "LEGACY_OPEN_PR__COMPARE_MAIN__TRANSPLANT_ONLY",
+      "lineage": [
+        "PR #1090"
+      ],
+      "scope": "FTI / Meeting Point / Mercantil nº3 comparator and preservation questions.",
+      "next_action": "Verify every primary reference and compare current main; transplant only non-duplicative, bounded material onto a fresh branch."
+    },
+    {
+      "id": "NON-LPB-MATKATOR-NETWORK",
+      "priority": "P1",
+      "status": "LEGACY_OPEN_PR__COMPARE_MAIN__TRANSPLANT_ONLY",
+      "lineage": [
+        "PR #1041"
+      ],
+      "scope": "Non-LPB / Matkator owner-court-party network.",
+      "next_action": "Preserve capacities and ownership boundaries; transplant only source-controlled deltas."
+    },
+    {
+      "id": "FINCA-262-EXPLORER",
+      "priority": "P1",
+      "status": "LEGACY_OPEN_PR__PRIMARY_DENOMINATOR_REQUIRED",
+      "lineage": [
+        "PR #771"
+      ],
+      "scope": "262-finca ownership and deed journey explorer.",
+      "next_action": "Do not present the inventory as complete until the title/registry denominator and source status for every row are controlled."
+    },
+    {
+      "id": "PP1041-WITHDRAWAL-AUTHORITY",
+      "priority": "P0",
+      "status": "LEGACY_OPEN_PR__MATERIAL_CORRECTION__LEGAL_REVIEW_AND_TRANSPLANT",
+      "lineage": [
+        "PR #576"
+      ],
+      "scope": "PP1041 withdrawal attribution, authority, instruction and procedural chain.",
+      "next_action": "Preserve the correction that a withdrawal was filed in LPB's name rather than asserting that LPB itself decided to withdraw; recover the pleading, signer/filer, LexNET, authority, hearing and court-authorisation chain before stronger conclusions."
+    },
+    {
+      "id": "MONTELANZA-2008",
+      "priority": "P1",
+      "status": "LEGACY_DRAFT_PR__SOURCE_AND_PRIVACY_REVIEW__TRANSPLANT_ONLY",
+      "lineage": [
+        "PR #685"
+      ],
+      "scope": "Montelanza 2008 Mercantile Registry digitisation and bounded governance-origin baseline.",
+      "next_action": "Retain the source-over-OCR rule and the explicit non-findings; compare current main and transplant only reviewed public-safe material."
+    },
+    {
+      "id": "CONTROLS-21-22-24",
+      "priority": "P1",
+      "status": "LEGACY_DRAFT_PR__LEGAL_PRIVACY_GATE",
+      "lineage": [
+        "PR #701"
+      ],
+      "scope": "Redacted full texts and filing-version controls for Controls 21, 22 and 24.",
+      "next_action": "Do not publish until page ranges, filed-version choices, redactions and public-interest basis receive the required legal/privacy review."
+    },
+    {
+      "id": "DAVID-ESPEJO",
+      "priority": "P2",
+      "status": "CURRENT_ROUTE_PRESENT__LEGACY_PR_OVERLAP_REVIEW",
+      "lineage": [
+        "legacy PR #450"
+      ],
+      "scope": "David Espejo traceability and evidence-access chain.",
+      "next_action": "Treat the current bilingual route as the starting point; compare the old PR only for a genuinely missing source-controlled delta."
+    },
+    {
+      "id": "LENDER-MORTGAGE-NPL",
+      "priority": "P1",
+      "status": "MERGED_BASELINE__OPEN_EVIDENCE",
+      "lineage": [
+        "mortgage and split-credit/NPL publication lineages"
+      ],
+      "scope": "Mortgage, lender-of-record, assignment, split-credit and NPL allegations.",
+      "next_action": "Keep allegations attributed; close only with native assignment, ledger, notarial, standing, accounting and procedural evidence."
+    },
+    {
+      "id": "TRANSPARENCY-ACTOR-MATRIX",
+      "priority": "P0",
+      "status": "GOVERNANCE_GATE",
+      "lineage": [
+        "controlled publication matrix"
+      ],
+      "scope": "Historical actor census, publication status and public/private naming controls.",
+      "next_action": "No new public identity or role expansion without the reviewed matrix; keep private counsel identities/advice and unrelated matters outside the public corpus."
+    }
+  ],
+  "legacy_pr_default": "COMPARE_CURRENT_MAIN__TRANSPLANT_ONLY__NO_WHOLESALE_MERGE",
+  "public_identity_gate": "REVIEWED_ACTOR_PUBLICATION_MATRIX_REQUIRED",
+  "private_counsel_material": "EXCLUDE_FROM_PUBLIC_RELEASE",
+  "unrelated_matters": "EXCLUDE",
+  "external_action_authorized": false,
+  "public_routes": {
+    "en": "en/insolvency-36-2012-continuity-control/",
+    "es": "es/concurso-36-2012-control-continuidad/"
+  }
+}

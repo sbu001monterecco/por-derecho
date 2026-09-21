@@ -1,0 +1,45 @@
+PUBLICATION CONTROL - RICPE / CNMV - 27 AUGUST 2026
+
+Public web record:
+- index.html: public evidential landing page, including the six-page redacted public viewer, download link, summary, alertador questions and the two original PNG visuals.
+- resolution.txt: controlled transcription of the communicated resolution and material workflow history.
+- RICPE_Canal_Etico_Certificado_Resolucion_27AGO2026_PUBLICO_REDACTADO.pdf
+  Public evidential derivative. The private communication identifier and the first-page personal contact details are removed; the reporting-party name remains for attribution.
+  SHA-256 8fbb2d3a6779715d41c206b83e1721f681a1a1ac6c64189d31c84f1b6465c333
+- resolution-pages-public-redacted/page-1.jpg through page-6.jpg
+  Public renders generated from the redacted derivative. The original controls private custody.
+  page-1 SHA-256 45938505f61bb48acda22b032ae4f37e378a716caa849861621f79edde92ceb2
+  page-2 SHA-256 952d2860c98c2be5dd132d089f62040c103387b174eb402785d169474639b0bc
+  page-3 SHA-256 1060eae25e58f889126a39821a0754aaf7bc04bafb7998824f2b60c30785f9bc
+  page-4 SHA-256 3bcf8bd19c4fdfb7483c639cc6cb2b8b25849f9c324d22c5d931133b4f278af2
+  page-5 SHA-256 95a29aafd4df02b83d1b8536706cdb4d462e930722af65460ac84e793e560b0e
+  page-6 SHA-256 b16e9b2b3210c9f21b970c81caf5b6f0ae8fe43ddb556aad5efe74c870a08589
+- san-telmo-ricpe-sun-park-stamp-v1-ES.png
+  Size: 827315 bytes
+  Dimensions: 1536 x 1024 pixels
+  SHA-256 f50790d29a0dc55521e03693b9023d55241212bbb4fd78977187dbe8bf544add
+- pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png
+  Size: 489983 bytes
+  Dimensions: 1536 x 1024 pixels
+  SHA-256 6b3dfac14865f8bd9cdaf6eda6b610ff67175a96761f9d5ab7a0819b935643bf
+
+Original files preserved in private custody and supplied directly to CNMV as separate email attachments:
+- RICPE_Canal_Etico_Certificado_Resolucion_27AGO2026.pdf
+  SHA-256 db9979715cac4aeb8ded81a998227cfd894144dcd0a50fe81d4b1369904c9bb4
+- RICPE_Comunicacion_Formal_Canal_Etico_17AGO2026_Firmada.pdf
+  SHA-256 b455075ceda7841471ef5f4ebfbb784ccd00357439aa8bf282e736fe4757832c
+- RICPE_Certificacion_Enrique_Guerra_20JUL2021.pdf
+  SHA-256 7c746d998780775542a5fe5265f02622f42b290918003f03ee20c8f367759bf8
+- CAM_Escrito_Aporta_Certificacion_RICPE_21JUL2021.pdf
+  SHA-256 76f5ba3210b9a78d641c318f60d214025c6231b99fe77734933f90da6ed3c8b9
+- CNMV_Indice_Anexos_RICPE_27AGO2026.txt
+  SHA-256 78d363ca757775a7c1cd420f98ec1399ba29bcdd0be16f6f8ea49cfb84d1bc88
+
+Publication limits:
+- The secret Canal Etico password is not published.
+- The public Ithikios PDF is a clearly labelled derivative with the private communication identifier and unnecessary first-page personal contact details removed. The unredacted original is not in the current public tree.
+- The unredacted original is treated as the complete resolution communicated through the channel, not as proof of RICPE's complete internal decision file.
+- "No mostrado al denunciante" is reported as a certified workflow fact, without attributing intent.
+- Questions directed to RICPE, its Board, founders/shareholders, investors and CNMV are expressly presented as questions requiring evidence, not as findings that any person knew, was reckless, concealed information or incurred liability.
+- The two PNGs are composite, argumentative visuals supplied by the reporting person. They document attributed statements, named actors and questions for verification; they do not by themselves establish culpability, liability or intent.
+- All material should be read alongside primary documents, responses from identified persons and entities, and potentially exculpatory evidence.

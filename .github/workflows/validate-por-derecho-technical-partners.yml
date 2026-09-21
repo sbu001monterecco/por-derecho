@@ -1,0 +1,44 @@
+name: Validate Por Derecho technical partners
+
+on:
+  pull_request:
+    paths:
+      - 'en/por-derecho/technical-partners/**'
+      - 'es/por-derecho/socios-tecnicos/**'
+      - 'en/por-derecho/second-pair-of-eyes/**'
+      - 'es/por-derecho/segundo-par-de-ojos/**'
+      - 'en/por-derecho/index.html'
+      - 'es/por-derecho/index.html'
+      - 'en/por-derecho/applications-and-collaboration/**'
+      - 'es/por-derecho/aplicaciones-y-colaboracion/**'
+      - 'sitemap.xml'
+      - 'sitemap-por-derecho-foundation.xml'
+      - 'scripts/validate_por_derecho_technical_partners.py'
+  push:
+    branches: [main]
+    paths:
+      - 'en/por-derecho/technical-partners/**'
+      - 'es/por-derecho/socios-tecnicos/**'
+      - 'en/por-derecho/second-pair-of-eyes/**'
+      - 'es/por-derecho/segundo-par-de-ojos/**'
+      - 'en/por-derecho/index.html'
+      - 'es/por-derecho/index.html'
+      - 'en/por-derecho/applications-and-collaboration/**'
+      - 'es/por-derecho/aplicaciones-y-colaboracion/**'
+      - 'sitemap.xml'
+      - 'sitemap-por-derecho-foundation.xml'
+      - 'scripts/validate_por_derecho_technical_partners.py'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Validate technical-partner public routes
+        run: python3 scripts/validate_por_derecho_technical_partners.py

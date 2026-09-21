@@ -104,7 +104,7 @@ A criminal, regulatory or disciplinary route may produce investigation, correcti
 
 ### Spain is central, not automatically exclusive
 
-Spanish and Canary Islands courts and authorities remain central to the hotel property, LPB concurso, local administration, public funding and many alleged acts and consequences. A UK or other foreign route is considered only where claimant-specific facts establish a proper jurisdictional and applicable-law nexus through claimant or defendant domicile, contract, duty, place of performance or harm, direct loss, payment, business operation, evidence or enforceable assets.
+Spanish and Canary Islands courts and authorities remain central to the hotel property, LPB concurso, local administration, public funding and many alleged acts and consequences. No UK legal action is being pursued. Any non-UK foreign route would require claimant-specific facts establishing a proper jurisdictional and applicable-law nexus through claimant or defendant domicile, contract, duty, place of performance or harm, direct loss, payment, business operation, evidence or enforceable assets.
 
 For each proposed route record jurisdiction, governing law, service, limitation, costs, evidence, enforceability and interaction with existing Spanish proceedings. Do not use “international law” as a generic substitute for a concrete foreign-law or private-international-law analysis.
 

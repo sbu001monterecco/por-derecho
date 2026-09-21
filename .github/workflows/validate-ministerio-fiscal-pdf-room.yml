@@ -1,0 +1,35 @@
+name: Validate Ministerio Fiscal PDF room
+on:
+  pull_request:
+    paths:
+      - 'evidence/fiscalia/**/*.pdf'
+      - 'assets/data/ministerio-fiscal-pdf-room-20260918.json'
+      - 'assets/eg745-fiscalia-interconnectivity-20260918.js'
+      - 'archive/MINISTERIO_FISCAL_PDF_VIEWER_CONTEXT_INTERCONNECTIVITY_18SEP2026.md'
+      - 'es/ministerio-fiscal-documentos-pdf/**'
+      - 'en/public-prosecution-pdf-document-room/**'
+      - 'es/fiscalia-inspeccion-exp-gub-745-2026/facsimil-visual-31-agosto-2026.html'
+      - 'en/public-prosecution-inspection-exp-gub-745-2026/visual-facsimile-31-august-2026.html'
+      - 'scripts/validate_ministerio_fiscal_pdf_room.py'
+      - 'sitemap-prosecution-evidence.xml'
+  push:
+    branches: [main]
+    paths:
+      - 'evidence/fiscalia/**/*.pdf'
+      - 'assets/data/ministerio-fiscal-pdf-room-20260918.json'
+      - 'assets/eg745-fiscalia-interconnectivity-20260918.js'
+      - 'es/ministerio-fiscal-documentos-pdf/**'
+      - 'en/public-prosecution-pdf-document-room/**'
+      - 'scripts/validate_ministerio_fiscal_pdf_room.py'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/validate_ministerio_fiscal_pdf_room.py

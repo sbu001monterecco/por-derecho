@@ -27,7 +27,7 @@ This is not a defence pleading. It is a public evidential crosswalk.
 
 ### A. Insolvency administrator report — COMPLETE
 
-**File:** `27. INFORME Calificación AC 11FEB2019.pdf`  
+**Public-safe custody reference:** `MF-CAL-SRC-P1` (exact private filename withheld)
 **Title:** `INFORME DE LA ADMINISTRACION CONCURSAL SOBRE LOS HECHOS RELEVANTES PARA LA CALIFICACION DEL CONCURSO Y PROPUESTA DE RESOLUCION`  
 **Length:** 47 pages  
 **Date:** 11 February 2019  
@@ -37,13 +37,13 @@ This source is now read in full. Prior repository language treating the complete
 
 ### B. Ministerio Fiscal classification opinion — COMPLETE
 
-**File:** `Fiscalia ref Calificacion a LPB 12MAR2019...pdf` / controlled copy of `Fiscalía-Mercantil Sección Calificación - 12MAR2019.pdf`  
+**Public-safe custody reference:** `MF-CAL-SRC-P2` (exact private filenames withheld)
 **Length:** 2 pages  
 **Signed:** Ricardo de Mosteyrín Sampalo, 12 March 2019.
 
 ### C. Gil Marer opposition — COMPLETE
 
-**File:** `27. Demanda Oposición Calificación GM - 06JUN2019.pdf`  
+**Public-safe custody reference:** `MF-CAL-SRC-P3` (exact private filename withheld)
 **Length:** 64 pages  
 **Date:** 6 June 2019.
 

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0-thread-closeout-addendum",
+  "controlDate": "2026-08-20",
+  "baseMain": "bdc38b098c08e99922438b7bf4c865d246849309",
+  "status": "ADDITIVE-CONTROL-PENDING-NEXT-CANONICAL-GRAPH-RELEASE",
+  "purpose": "Preserve the final thread's new evidence classes, retrieval tasks and source-status boundaries without treating private/confidential or unauthenticated material as public merits proof.",
+  "sourceClasses": [
+    {
+      "id": "SOURCE_DERIVED_DECLARATION",
+      "supports": ["KNOWLEDGE", "RECOLLECTION", "QUESTION_PROVENANCE", "RETRIEVAL_LEAD"],
+      "doesNotAutomaticallyProve": ["UNDERLYING_DOCUMENTARY_FACT", "LEGAL_EFFECT", "ACTOR_INTENT"]
+    },
+    {
+      "id": "PRIVATE_CONFIDENTIAL_PRIMARY_SOURCE",
+      "supports": ["PRIVATE_DOCUMENTARY_PROPOSITION_SUBJECT_TO_AUTHENTICATION_AND_TERMS"],
+      "publication": "DO-NOT-PUBLISH-WITHOUT-SEPARATE-REVIEW"
+    },
+    {
+      "id": "TRANSCRIPT_PENDING_SPEAKER_AUTHENTICATION",
+      "supports": ["WORDS-AS-TRANSCRIBED_SUBJECT_TO_AUDIO_AUTHENTICATION"],
+      "doesNotAutomaticallyProve": ["SPEAKER_IDENTITY", "ACTOR_ATTRIBUTION", "INTENT", "LEGAL_EFFECT"]
+    },
+    {
+      "id": "PARTY_PLEADING",
+      "supports": ["PARTY_POSITION", "CONTEMPORANEOUS_NOTICE", "QUOTED_SOURCE_LEADS"],
+      "doesNotAutomaticallyProve": ["COURT_ACCEPTANCE", "FINAL_LEGAL_EFFECT"]
+    }
+  ],
+  "evidenceNodes": [
+    {
+      "id": "EVID-DECL-004-RICPE-IDON-20260818",
+      "sourceClass": "SOURCE_DERIVED_DECLARATION",
+      "date": "2026-08-18",
+      "sourceControl": "archive/declarations/004_WITNESS_GIL_PERIMETER_RICPE_IDONEIDAD_20260818.md",
+      "supports": ["RICPE_IDONEIDAD_TIMING_QUESTION_PROVENANCE"],
+      "publication": "PUBLIC-DESCRIPTOR-ONLY"
+    },
+    {
+      "id": "EVID-PRIVATE-TERM-SHEET-20180801",
+      "sourceClass": "PRIVATE_CONFIDENTIAL_PRIMARY_SOURCE",
+      "date": "2018-08-01",
+      "privateLocator": "Gmail retrieval queue P0-01",
+      "controlledSummary": "Private 2018 financing term-sheet source materially supports a documented rescue/refinancing structure involving Aweswell, Matkator, LPB debt exit, refurbishment and potential minority-property acquisition; lender execution/acceptance remains to be established from the supplied version/origin chain.",
+      "publication": "DO-NOT-PUBLISH-DETAILS"
+    },
+    {
+      "id": "EVID-PRIVATE-TRANSCRIPT-20180226",
+      "sourceClass": "TRANSCRIPT_PENDING_SPEAKER_AUTHENTICATION",
+      "date": "2018-02-26",
+      "privateLocator": "Gmail retrieval queue P0-02",
+      "controlledSummary": "Transcript records pre-7-Jun access, possession, security and refurbishment-planning statements by an unidentified Speaker 1; native audio and speaker identity remain P0.",
+      "publication": "DO-NOT-ATTRIBUTE-ACTOR"
+    },
+    {
+      "id": "EVID-LPB-REPOSICION-20181219",
+      "sourceClass": "PARTY_PLEADING",
+      "date": "2018-12-19",
+      "privateLocator": "Gmail retrieval queue P0-03",
+      "controlledSummary": "LPB pleading contemporaneously challenged isolated sale implementation and argued the approved plan required unitary realisation while mortgaged-property realisation was suspended.",
+      "publication": "PUBLIC-SAFE-WITH-PARTY-PLEADING-LABEL"
+    },
+    {
+      "id": "EVID-MONTELANZA-ACCOUNTS-2008",
+      "sourceClass": "PUBLIC_REGISTRY_SCAN_PENDING_PAGE_EXTRACTION",
+      "date": "2008",
+      "privateLocator": "Gmail retrieval queue P1-01",
+      "controlledSummary": "Registry annual-account scan potentially relevant to the 2008 ownership/transaction baseline; substantive account-note interpretation remains open.",
+      "publication": "HOLD-PENDING-PAGE-EXTRACTION"
+    }
+  ],
+  "institutionalNodes": [
+    {
+      "id": "PROC-TSJC-GUB-38-2026",
+      "status": "PROCEDURAL-REFERENCE-CONFIRMED",
+      "note": "Secretaría de Gobierno email confirms 38/2026 as the correct reference and describes the gubernative file as containing diverse acts; no merits inference from refusal to elaborate."
+    },
+    {
+      "id": "PROC-FISCALIA-FOUR-MODULE-20260820",
+      "status": "ROUTING-ARCHITECTURE-NOT-MERITS-FINDING",
+      "modules": ["PRIVATE_EXTRACONCURSAL", "JUDICIAL_AFORADO", "ECONOMIC_FISCAL_FUNDS", "PROFESSIONAL_INFORMATIONAL"]
+    },
+    {
+      "id": "PROC-COMISIONADO-2220-2026",
+      "status": "INTERNAL-RECEIPT-ROUTING-VERIFIED; MERITS-PENDING",
+      "canonicalControl": "INSTITUTIONAL_ACTIONS_HACIENDA_COMISIONADO_2220_20AUG2026.md"
+    }
+  ],
+  "websiteDecision": {
+    "action": "NO-NEW-MERITS-PUBLICATION-FROM-PRIVATE-EMAIL-PACKAGES-YET",
+    "reason": "Confidentiality, incomplete execution evidence, speaker-authentication gap, party-pleading status and incomplete page extraction require repository/private-custody preservation before public promotion.",
+    "existingPublicSurfacesRemainControlling": [
+      "7-Jun-2018 material-control reconstruction",
+      "RICPE Series F/G idoneidad documentary question",
+      "Pink Canary / AEAT PO 496/2026 procedural page",
+      "institutional proceedings records",
+      "PEP/influence/aforamiento/PER category-control pages"
+    ]
+  },
+  "retrievalQueue": "archive/RECENT_EMAIL_PRIMARY_SOURCE_INGEST_QUEUE_20AUG2026.md",
+  "finalDigest": "archive/THREAD_FINAL_DIGEST_REPOSITORY_WEB_EMAILS_20AUG2026.md"
+}

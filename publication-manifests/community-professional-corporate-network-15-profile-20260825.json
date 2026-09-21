@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "publication_id": "COMMUNITY-PROFESSIONAL-CORPORATE-NETWORK-15-PROFILE-20260825",
+  "current_state": "DRAFT",
+  "owner": "Por Derecho / Project Sun Rock",
+  "purpose": "Publish a bilingual, source-bounded network for the controlled people and entities named in the Campanario/Prieto/López Noriega voice-note perimeter, with a dedicated page for each identity that can be resolved safely.",
+  "expected_routes": {
+    "es": [
+      "es/alvaro-campanario-prieto-puente-lopez-noriega/index.html",
+      "es/alvaro-campanario-hernandez/index.html",
+      "es/juan-carlos-prieto-puente/index.html",
+      "es/esteban-lopez-noriega/index.html",
+      "es/antonio-cogolludo-rojas/index.html",
+      "es/millan-and-miners-slp/index.html",
+      "es/pamanil-sl/index.html",
+      "es/pamalexsha-servicios-integrales-sl/index.html",
+      "es/explotaciones-noalpa-sl/index.html",
+      "es/santa-lucia-real-estate-sl/index.html",
+      "es/shaila-maria-cogolludo-ramos/index.html",
+      "es/francisco-mario-matos-matas/index.html",
+      "es/francisco-de-borja-rodriguez-batllori-laffitte/index.html",
+      "es/asuncion-aizpurua-sanchez/index.html",
+      "es/montelanza-monte-lanza-sl/index.html",
+      "es/inversiones-salinetas-sl/index.html"
+    ],
+    "en": [
+      "en/alvaro-campanario-prieto-puente-lopez-noriega/index.html",
+      "en/alvaro-campanario-hernandez/index.html",
+      "en/juan-carlos-prieto-puente/index.html",
+      "en/esteban-lopez-noriega/index.html",
+      "en/antonio-cogolludo-rojas/index.html",
+      "en/millan-and-miners-slp/index.html",
+      "en/pamanil-sl/index.html",
+      "en/pamalexsha-servicios-integrales-sl/index.html",
+      "en/explotaciones-noalpa-sl/index.html",
+      "en/santa-lucia-real-estate-sl/index.html",
+      "en/shaila-maria-cogolludo-ramos/index.html",
+      "en/francisco-mario-matos-matas/index.html",
+      "en/francisco-de-borja-rodriguez-batllori-laffitte/index.html",
+      "en/asuncion-aizpurua-sanchez/index.html",
+      "en/montelanza-monte-lanza-sl/index.html",
+      "en/inversiones-salinetas-sl/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/data/community-professional-corporate-network-v1.json",
+    "archive/CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_CORPORATE_UNITARY_SCAN_25AUG2026.md",
+    "archive/OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md",
+    "archive/declarations/011_WITNESS_GIL_PERIMETER_CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_NETWORK_20260825.md",
+    "scripts/generate_community_professional_network_pages.py",
+    "scripts/register_community_professional_network_routes.py",
+    "scripts/validate_community_professional_network.py",
+    "scripts/validate_alvaro_campanario_osint_publication.py",
+    "sitemap-community-governance.xml",
+    "sitemap.xml"
+  ],
+  "scope_boundary": {
+    "included": "Fifteen exact identities with sufficient official or controlled internal identity support, plus the bilingual overview.",
+    "excluded": "Unresolved labels and homonyms—including Multimatrix, Henca, M&M, Muruga, Acciones Canarias and unresolved Molina variants—remain clarification or evidence-recovery items and are not guessed into profile routes.",
+    "relationship_rule": "Professional, corporate, family, temporal or procedural proximity does not transfer knowledge, intent, control, conflict, coordination or responsibility. Allegations and inferences remain attributed and are not adjudicated findings."
+  },
+  "privacy_boundary": "No private mailbox address, exact mailbox count, private message content, participant list, provider identifier, native voice file or full working transcript is a publication source for these routes.",
+  "validation": {
+    "status": "LOCAL_POST_RECONCILIATION_PASS",
+    "evidence": [
+      "Community professional/corporate network validator passed for fifteen bilingual, mutually linked profiles",
+      "Campanario/Declaration 011 overview and coarse-mailbox privacy validator passed",
+      "Private-source, voice-statement and OSINT governance validator passed",
+      "Repository preservation, publication integrity and audience-experience gates passed against current main",
+      "Workflow YAML parsing and Git whitespace checks passed"
+    ]
+  },
+  "next_state_requirements": [
+    "Push the reviewed branch and open a pull request against current main",
+    "Require the relevant pull-request checks to complete successfully",
+    "Merge without rewriting history",
+    "Verify the exact merge SHA in the Pages deployment and inspect the overview plus all affected ES/EN routes",
+    "Record the merge, deployment and live-verification evidence in a closeout update"
+  ]
+}

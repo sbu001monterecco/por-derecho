@@ -1,0 +1,79 @@
+{
+  "control_date": "2026-08-25",
+  "identity_lock": {
+    "ICAM": "Ilustre Colegio de la Abogacia de Madrid",
+    "CCACM": "Consejo de Colegios de Abogados de la Comunidad de Madrid",
+    "ICALPA": "Ilustre Colegio de Abogados de Las Palmas",
+    "ICATF": "Colegio territorial de Santa Cruz de Tenerife",
+    "rule": "ICAM != CCACM != ICALPA != ICATF"
+  },
+  "tracks": {
+    "icam_434_26": {
+      "status": "archived_on_limitation",
+      "archive_date": "2026-03-06",
+      "merits_decided": false,
+      "appeal_entry": "RE-001971/26",
+      "technical_intake_reference": "493/26",
+      "appellate_reference": "CCACM 193/2026"
+    },
+    "ccacm_193_2026": {
+      "status": "formally_open_no_final_resolution_located",
+      "opening_order_date": "2026-06-04",
+      "latest_confirmed_events": [
+        {
+          "datetime_utc": "2026-08-25T11:57:23Z",
+          "type": "receipt_acknowledgement",
+          "subject": "RE: Exp. 193/2026 — hechos posteriores relevantes para la correcta delimitación temporal y deontológica de CUATRECASAS",
+          "reply": "RECIBIDO.",
+          "proves": "receipt of substantive supplemental email by CCACM Secretariat",
+          "does_not_prove": ["admissibility", "agreement", "formal incorporation of every assertion", "merits outcome"]
+        },
+        {
+          "datetime_utc": "2026-08-25T11:57:27Z",
+          "type": "receipt_acknowledgement",
+          "subject": "RE: Exp. 193/2026 — anexos gráficos de apoyo a la aportación sobrevenida CUATRECASAS",
+          "reply": "RECIBIDO.",
+          "proves": "separate receipt of the two-graphic transmission by CCACM Secretariat",
+          "does_not_prove": ["independent evidential weight", "adoption of interpretation", "finding concerning third parties", "merits outcome"]
+        }
+      ]
+    },
+    "icam_1487_26": {
+      "status": "archived_mixed_grounds_and_referral_to_tenerife_ordered",
+      "archive_date": "2026-07-01",
+      "grounds": ["2021_whatsapp_limitation", "2026_linkedin_treated_private_non_professional", "etj_territorial_competence_tenerife"],
+      "merits_of_etj_2024_2026_decided": false,
+      "appeal_entry": "RE-007622/26",
+      "technical_intake_reference": "1566/26",
+      "ccacm_second_appeal_reference": null,
+      "forwarding_to_ccacm_certified": false,
+      "tenerife_local_docket_located": false
+    },
+    "icalpa_dip_79_2026": {
+      "status": "separate_preliminary_track_no_final_merits_decision_located"
+    },
+    "icalpa_dip_80_2026": {
+      "status": "separate_preliminary_track_no_final_merits_decision_located"
+    },
+    "icatf_2647": {
+      "status": "earlier_consultation_channel_reference",
+      "created": "2026-01-13",
+      "phase_notification": "Respuesta - Fase realizada",
+      "substantive_response_located": false,
+      "same_as_1487_referral": "not_proved"
+    }
+  },
+  "chronology_tension": {
+    "icam_434_description": "professional relationship 2018-2020",
+    "icam_1487_description": "lawyer-client relationship ended more than seven years earlier",
+    "classification": "unreconciled_institutional_chronology",
+    "prohibited_inference": "do not treat as proof of bad faith without further evidence"
+  },
+  "priority_missing_records": [
+    "ICAM forwarding certificate for RE-007622/26 / 1566/26",
+    "CCACM docket or receipt for second appeal against 1487/26",
+    "Tenerife receipt/local docket for ICAM 1487/26 referral",
+    "substantive response behind 2647-ICATF phase notification",
+    "later or final CCACM order in 193/2026"
+  ]
+}

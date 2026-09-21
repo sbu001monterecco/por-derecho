@@ -1,0 +1,59 @@
+name: Validate DIP2 and DP1901 full digitisation
+
+on:
+  pull_request:
+    paths:
+      - 'evidence/fiscalia/dip-2-2026/**'
+      - 'evidence/fiscalia/2026/DIP2_INACCURACY_ANALYTICAL_ERROR_LEDGER_18SEP2026.md'
+      - 'evidence/judicial/dp-1901-2026/**'
+      - 'archive/FISCALIA_DIP2_DP1901_FULL_DIGITISATION_CONTROL_18SEP2026.md'
+      - 'evidence/fiscalia/2026/DIP2_DP1901_FULL_DIGITISATION_STATE_18SEP2026.json'
+      - 'scripts/validate_dip2_dp1901_full_digitisation.py'
+      - 'es/fiscalia-dip-2-2026/**'
+      - 'en/fiscalia-dip-2-2026/**'
+      - 'es/dp-1901-2026-auto-14-septiembre-2026/**'
+      - 'en/dp-1901-2026-order-14-september-2026/**'
+  push:
+    branches: [main]
+    paths:
+      - 'evidence/fiscalia/dip-2-2026/**'
+      - 'evidence/fiscalia/2026/DIP2_INACCURACY_ANALYTICAL_ERROR_LEDGER_18SEP2026.md'
+      - 'evidence/judicial/dp-1901-2026/**'
+      - 'archive/FISCALIA_DIP2_DP1901_FULL_DIGITISATION_CONTROL_18SEP2026.md'
+      - 'evidence/fiscalia/2026/DIP2_DP1901_FULL_DIGITISATION_STATE_18SEP2026.json'
+      - 'scripts/validate_dip2_dp1901_full_digitisation.py'
+      - 'es/fiscalia-dip-2-2026/**'
+      - 'en/fiscalia-dip-2-2026/**'
+      - 'es/dp-1901-2026-auto-14-septiembre-2026/**'
+      - 'en/dp-1901-2026-order-14-september-2026/**'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Validate source room
+        run: python3 scripts/validate_dip2_dp1901_full_digitisation.py
+      - name: Validate JSON and XML syntax
+        run: |
+          python3 - <<'PY'
+          import json, xml.etree.ElementTree as ET
+          from pathlib import Path
+          for p in [
+            'evidence/fiscalia/2026/DIP2_DP1901_FULL_DIGITISATION_STATE_18SEP2026.json',
+            'assets/data/fiscalia-response-correspondence.json',
+            'assets/data/fiscalia-proceedings-link-assertions-v1.json',
+            'assets/data/ministerio-fiscal-directory-v1.json',
+            'assets/data/proceedings-master-public-v1.json',
+          ]:
+            json.loads(Path(p).read_text(encoding='utf-8'))
+          ET.parse('sitemap-prosecution-evidence.xml')
+          print('syntax valid')
+          PY

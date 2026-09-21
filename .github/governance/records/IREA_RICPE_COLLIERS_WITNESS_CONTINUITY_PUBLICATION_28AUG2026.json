@@ -1,0 +1,19 @@
+{
+  "record_id": "PD-PERSON-PUB-20260828-02",
+  "decision_date": "2026-08-28",
+  "authority": "Gil Marer",
+  "authority_text": "run continuity audit and full/all ^ for all entities and evidence; regarding Fernando Acosta Matos ensure ^, capture evidence, call him as a witness, add this to page and interlink him to his family, RICPE and Colliers (former IREA)",
+  "identity_correction": "The located public professional is Fernando Aguiar Acosta, not Fernando Acosta Matos. The 2017 IREA participant named Fernando is Fernando Banderas Monis.",
+  "public_people": [
+    {"name":"Fernando Aguiar Acosta","caepr_id":"PD-SP-P-0088","classification":"WITNESS_EXPERT_CUSTODIAN","publication_basis":"public professional profile and express current-thread authority"},
+    {"name":"Laura Hernando","caepr_id":"PD-SP-P-0089","classification":"PROFESSIONAL_WITNESS_OR_RECORDS_CUSTODIAN","publication_basis":"public professional sources, authenticated 2017 correspondence and express current-thread authority"},
+    {"name":"Miguel Vázquez","caepr_id":"PD-SP-P-0090","classification":"PROFESSIONAL_WITNESS_OR_RECORDS_CUSTODIAN","publication_basis":"public professional sources, authenticated 2017 correspondence and express current-thread authority"},
+    {"name":"Fernando Banderas Monis","caepr_id":"PD-SP-P-0091","classification":"PROFESSIONAL_WITNESS_OR_RECORDS_CUSTODIAN","publication_basis":"public professional sources, authenticated 2017 correspondence and express current-thread authority"}
+  ],
+  "establishes": "IREA's September 2017 receipt and review of Sun Park/LPB materials and proposed debt-advisory scope; the distinct public-profile sequence RIC Private Equity (June-July 2024) to Colliers Debt Advisory (summer 2026) for Fernando Aguiar Acosta; and the legal/operational IREA-Colliers continuity.",
+  "does_not_establish": "An executed final IREA Sun Park mandate, financing completion, family relationship, inheritance of records or knowledge, coordination, intent, economic crime, wrongdoing or liability.",
+  "witness_boundary": "The website records a proposed interview, preservation and competent-process witness lane only. It does not issue a summons, contact any person or classify Fernando Aguiar Acosta as an adverse actor.",
+  "private_source_boundary": "No private message ID, address, subject, body, attachment, account identifier or provider locator may be published. Only the minimized proposition-level derivative and opaque source classes are public.",
+  "authorization_reference": "Current authenticated ChatGPT thread, 28 August 2026",
+  "review_status": "open to correction, relationship verification, competent-process decision and withdrawal review"
+}

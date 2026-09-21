@@ -98,7 +98,7 @@ Pedimos una revisión identificable, acumulativa, objetiva y suficientemente ind
 1. revisión superior/coordinada del itinerario completo;
 2. matriz de identidad antes de volver a concluir “mismos hechos”;
 3. reconstrucción certificada de DI 248/2018: solicitado, practicado, prueba disponible y fundamento del archivo;
-4. incorporación y análisis del auto primario de DP 332/2014 de 29 marzo 2021 y su fundamento exacto;
+4. incorporación y análisis de la resolución primaria que sustente el archivo de DP 332/2014 reportado en 2021; la fecha de 29 marzo procede de una alegación posterior y debe reconciliarse con comunicaciones contemporáneas de reactivación/reanudación;
 5. revisión íntegra de la pericial de renta de Fiscalía de 25 abril 2019 y su relación con las premisas originarias —el documento ha sido localizado, pero no atribuimos públicamente una conclusión hasta completar su lectura primaria—;
 6. identificación de la respuesta, si la hubo, a la corrección de DIP 2/2026 de 11 marzo 2026;
 7. identificación del informe firmado del Ministerio Fiscal en DP 1901/2026, fiscal autor y resolución posterior;

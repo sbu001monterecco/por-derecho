@@ -1,0 +1,39 @@
+name: Validate Second Pair applications
+
+on:
+  pull_request:
+    paths:
+      - "assets/data/por-derecho-second-pair-applications.json"
+      - "assets/por-derecho/por-derecho.js"
+      - "es/por-derecho/**"
+      - "en/por-derecho/**"
+      - "research/por-derecho/second-pair-of-eyes/**"
+      - ".github/workflows/validate-second-pair-applications.yml"
+  push:
+    branches: [main]
+    paths:
+      - "assets/data/por-derecho-second-pair-applications.json"
+      - "assets/por-derecho/por-derecho.js"
+      - "es/por-derecho/**"
+      - "en/por-derecho/**"
+      - "research/por-derecho/second-pair-of-eyes/**"
+      - ".github/workflows/validate-second-pair-applications.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12"
+      - name: Validate application registry and institutional boundaries
+        run: python research/por-derecho/second-pair-of-eyes/validate.py
+      - name: Check bilingual reciprocity
+        run: |
+          grep -q 'applications-and-collaboration' es/por-derecho/aplicaciones-y-colaboracion/index.html
+          grep -q 'aplicaciones-y-colaboracion' en/por-derecho/applications-and-collaboration/index.html

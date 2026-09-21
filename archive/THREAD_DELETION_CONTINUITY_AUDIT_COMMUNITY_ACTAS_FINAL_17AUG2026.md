@@ -96,8 +96,8 @@ The local evidence cards/crops generated in the originating runtime were not upl
 
 ### 2008 primary source locators
 
-- `SP-ACTA-2008-04-29` — Drive `1Ups4s_2TcHyCByxSiK-WIx-ieEdciVbe`;
-- `SP-CEXP-2008-05` — Drive `1CEJLnY3r5kM_WBk6YWiZjIalNlCfeToA`;
+- `SP-ACTA-2008-04-29` — Drive `SP-PRV-LCTR-GD-C5CE20DD0F9B3D5C8D3F`;
+- `SP-CEXP-2008-05` — Drive `SP-PRV-LCTR-GD-461B8270D75E47138421`;
 - `SP-ACTA-2008-07-25` — exact original/Drive ID still open; filename/date correction preserved.
 
 ### 22-Jun-2011
@@ -110,7 +110,7 @@ The local evidence cards/crops generated in the originating runtime were not upl
 
 ### 26-Apr-2016 primary ACTA
 
-Drive `1YMnEVDQj7r1E2aWgWL2Ne9b5gYP6ZRbd`.
+Drive `SP-PRV-LCTR-GD-E3841881D3C98242AFC7`.
 
 Verified primary content preserved in the register:
 
@@ -122,7 +122,7 @@ Verified primary content preserved in the register:
 
 ### 18-May-2018 primary ACTA
 
-Drive `16j_xD-lvEbtR-_23_8nIS2bOkRn4SFr8`.
+Drive `SP-PRV-LCTR-GD-A5B7216821A81A06E183`.
 
 Verified primary content preserved:
 

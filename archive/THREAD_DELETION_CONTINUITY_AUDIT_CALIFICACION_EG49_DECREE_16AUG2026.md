@@ -22,14 +22,14 @@ Parent radical-transparency control:
 
 Re-query Gmail/private evidence custody for:
 
-1. `EG 49-26  DECRETO - NO ACCEDER A LO SOLICITADO y ARCHIVO.pdf`
+1. public-safe custody reference `MF-EG49-SRC-DEC-01` (exact private filename and provider locator withheld)
    - EG 49/2026
    - outgoing 226/2026
    - 3 Jun 2026
    - Emilio Jesús Sánchez Ulled
    - SHA-256 `4e5d3486cc052ea699029a8744e21a2040918f4e03a085cc066a3b6ff8f12b88`
 
-2. `EG 49-26 DECRETO REAPERTURA -NO ACCEDER A NUEVA SOLICITUD - ARCHIVO.pdf`
+2. public-safe custody reference `MF-EG49-SRC-DEC-02` (exact private filename and provider locator withheld)
    - EG 49/2026
    - outgoing 230/2026
    - 8 Jun 2026 / digital signature 9 Jun

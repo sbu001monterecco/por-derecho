@@ -1,0 +1,193 @@
+{
+  "schema": "concurso36-judicial-chain-202110-202204-v1",
+  "generated": "2026-08-29",
+  "scope": "Evidence-led judicial-response chronology linking the 2021 RICPE/new-documentary warning to the 2022 title-transfer sequence in Concurso 36/2012. This is not a finding of judicial misconduct, fraud, collusion or criminal liability.",
+  "reading_rule_es": "La crítica pública se formula acto por acto. Se distingue entre conocimiento formal, admisión de documental, resolución adversa, contradicción interna, corrección posterior, declaración de irrelevancia, expedición de testimonios, escritura e inscripción. La secuencia permite evaluar protección y coherencia; no prueba por sí sola dolo, prevaricación, connivencia ni causalidad penal.",
+  "reading_rule_en": "The public critique is act-by-act. It separates formal notice, admission of documents, adverse ruling, internal contradiction, later correction, irrelevance determination, issue of certified copies, deed and registration. The sequence supports scrutiny of protection and coherence; it does not by itself prove intent, judicial wrongdoing, collusion or criminal causation.",
+  "primary_correction": {
+    "date": "2021-10-15",
+    "status_es": "Contradicción textual primaria verificada en dos Autos firmados el mismo día",
+    "status_en": "Primary textual contradiction verified in two orders signed the same day",
+    "auto_a_es": "Un Auto desestimó los recursos contra la Providencia de 12 mayo por carencia sobrevenida de objeto y afirmó que se había celebrado la subasta y adjudicado las fincas al mejor oferente.",
+    "auto_a_en": "One order dismissed the challenges to the 12 May order as having become moot and stated that the auction had been held and the properties awarded to the best bidder.",
+    "auto_b_es": "Otro Auto, firmado aproximadamente dos horas después, al resolver recursos contra el Auto de 18 mayo, afirmó que la licitación ni siquiera se celebró por la incomparecencia del mejorante y que no se trataba de una subasta sino de una comparecencia flexible para sucesivas posturas.",
+    "auto_b_en": "Another order, signed roughly two hours later while deciding challenges to the 18 May order, stated that the bidding event had not even taken place because the improving bidder did not appear and that it was not an auction but a flexible appearance for successive bids.",
+    "safe_conclusion_es": "No hace falta inferir una contradicción: existe en el texto de las dos resoluciones. Lo que requiere análisis jurídico separado es su efecto sobre firmeza, transparencia, derecho de defensa, adjudicación y actos posteriores.",
+    "safe_conclusion_en": "No inference is needed to establish the contradiction: it is present in the text of the two rulings. Its effect on finality, transparency, defence rights, adjudication and later acts requires separate legal analysis.",
+    "sources": [
+      "Adjunto1(55).pdf — Auto 15/10/2021, recursos contra Providencia 12/05/2021",
+      "Adjunto1(56).pdf — Auto 15/10/2021, recursos contra Auto 18/05/2021"
+    ]
+  },
+  "chain": [
+    {
+      "step": "J1",
+      "date": "2021-02-11",
+      "actor": "Aweswell / court filing",
+      "status": "formal_notice",
+      "event_es": "El escrito llevó al Concurso 36/2012 la denuncia CNMV, la promoción inversora RICPE y alegaciones sobre título, masa activa, financiación, competencia en la licitación y protección de bienes; pidió suspensión/salvaguardas.",
+      "event_en": "The filing brought the CNMV complaint, the RICPE investor promotion and allegations concerning title, active estate, financing, bidding competition and asset protection into Concurso 36/2012; it requested suspension/safeguards.",
+      "effect_es": "Conocimiento procesal alegado y documentado antes de la adjudicación definitiva de 2021.",
+      "effect_en": "Documented procedural notice before the definitive 2021 adjudication.",
+      "limit_es": "El escrito acredita lo puesto ante el Juzgado, no la verdad automática de todas sus alegaciones.",
+      "limit_en": "The filing proves what was put before the court, not the automatic truth of every allegation."
+    },
+    {
+      "step": "J2",
+      "date": "2021-06-28",
+      "actor": "Aweswell / court filing",
+      "status": "new_documentary",
+      "event_es": "Se aportó como hecho/documental posterior la publicación RICPE de 19 junio de 2021, manteniendo ante el concurso la incompatibilidad entre la promoción del proyecto y el perímetro dominical todavía no adquirido íntegramente.",
+      "event_en": "The 19 June 2021 RICPE publication was submitted as later/new documentary material, keeping before the insolvency court the incompatibility between project promotion and a title perimeter not yet fully acquired.",
+      "effect_es": "Activa la cadena del art. 270 LEC que después generó traslado y respuestas de AC/CAM.",
+      "effect_en": "Triggered the Article 270 LEC chain that later produced service and AC/CAM responses.",
+      "limit_es": "La relevancia jurídica de la nueva documental quedó discutida y fue resuelta posteriormente en sentido adverso.",
+      "limit_en": "The legal relevance of the new documentary material was disputed and later decided adversely."
+    },
+    {
+      "step": "J3",
+      "date": "2021-07-08",
+      "actor": "LAJ / court office",
+      "status": "service",
+      "event_es": "Diligencia de ordenación dio traslado de la nueva documental a las partes bajo el artículo 270 LEC.",
+      "event_en": "A case-management order served the new documentary material on the parties under Article 270 LEC.",
+      "effect_es": "La documental entra formalmente en una cadena contradictoria dentro de la Sección 5ª.",
+      "effect_en": "The documents formally entered an adversarial chain within Section 5.",
+      "limit_es": "Dar traslado no equivale a aceptar su fondo ni a decidir medidas de protección.",
+      "limit_en": "Service does not equal acceptance of the merits or a decision on protective measures."
+    },
+    {
+      "step": "J4",
+      "date": "2021-07-20/21",
+      "actor": "Administrador concursal + CAM",
+      "status": "opposition_and_narrowing",
+      "event_es": "El AC se opuso y calificó de hipotético el daño ligado a la precomercialización. CAM pidió excluir la aportación de Aweswell, negó presentarse como propietaria única, reconoció sólo 54 fincas y aportó su certificado RICPE como documento ilustrativo.",
+      "event_en": "The insolvency administrator opposed the material and characterised the alleged pre-commercialisation harm as hypothetical. CAM sought exclusion of Aweswell's filing, denied presenting itself as sole owner, acknowledged only 54 units and supplied its RICPE certificate as illustrative material.",
+      "effect_es": "Quedan simultáneamente ante el procedimiento la objeción amplia y la versión patrimonial más estrecha de CAM/RICPE.",
+      "effect_en": "The broader objection and CAM/RICPE's narrower ownership account were simultaneously before the proceeding.",
+      "limit_es": "La oposición procesal no demuestra ocultación; sí fija qué pidió cada actor que el Juzgado tratara o excluyera.",
+      "limit_en": "Procedural opposition does not prove concealment; it fixes what each actor asked the court to treat or exclude."
+    },
+    {
+      "step": "J5",
+      "date": "2021-09-07",
+      "actor": "LAJ",
+      "status": "put_before_judge",
+      "event_es": "La LAJ unió cinco escritos y puso las actuaciones a disposición del juez para que, en su caso, tomara en consideración la nueva documental al resolver la reposición contra el Auto de 18 mayo.",
+      "event_en": "The court clerk joined five filings and placed the matter before the judge so that the new documentary material could, where appropriate, be considered when deciding the challenge to the 18 May order.",
+      "effect_es": "Desde este punto existe una base documental fuerte para conocimiento formal del órgano decisor de la cronología y sus anexos.",
+      "effect_en": "From this point there is a strong documentary basis for formal notice to the decision-maker of the chronology and its annexes.",
+      "limit_es": "Conocimiento formal no equivale a aceptar las alegaciones ni predetermina qué respuesta era jurídicamente exigible.",
+      "limit_en": "Formal notice does not equal acceptance of the allegations or predetermine the legally required response."
+    },
+    {
+      "step": "J6",
+      "date": "2021-10-15",
+      "actor": "Juzgado Mercantil nº 1",
+      "status": "contradictory_orders",
+      "event_es": "Dos Autos del mismo día describen de forma incompatible el acto de mayo: uno dice que se celebró la subasta y se adjudicaron las fincas al mejor oferente; el otro dice que la licitación ni siquiera se celebró y que no era una subasta.",
+      "event_en": "Two orders issued on the same day describe the May event incompatibly: one says the auction was held and the properties awarded to the best bidder; the other says the bidding event did not even occur and was not an auction.",
+      "effect_es": "Ambos Autos mantuvieron un resultado favorable a CAM y rechazaron los recursos de LPB/Aweswell.",
+      "effect_en": "Both orders maintained the result favourable to CAM and rejected the LPB/Aweswell challenges.",
+      "limit_es": "La contradicción textual es verificable; su calificación jurídica y cualquier responsabilidad individual requieren análisis separado.",
+      "limit_en": "The textual contradiction is verifiable; its legal characterisation and any individual responsibility require separate analysis."
+    },
+    {
+      "step": "J7",
+      "date": "2021-10-25 to 2022-01-26",
+      "actor": "LPB/Aweswell → AC → Juzgado",
+      "status": "correction_and_irrelevance",
+      "event_es": "LPB y Aweswell pidieron aclaración/corrección y denunciaron omisión de la nueva documental; el AC se opuso a corregir. El 26 enero 2022 el Juzgado reconoció la contradicción, la recondujo a la expresión comparecencia de licitación, confirmó que los documentos de julio habían sido admitidos y los declaró irrelevantes para el resultado de adjudicación.",
+      "event_en": "LPB and Aweswell sought clarification/correction and complained that the new documentary material had been omitted; the insolvency administrator opposed correction. On 26 January 2022 the court acknowledged the contradiction, reconciled it through the expression bidding appearance, confirmed that the July documents had been admitted and held them irrelevant to the adjudication outcome.",
+      "effect_es": "La cuestión deja de ser si la documental llegó: la cuestión pasa a ser por qué, tras ser admitida y conocida, fue considerada irrelevante y qué análisis sustantivo reconcilió título, terceros, masa, promoción y licitación.",
+      "effect_en": "The issue is no longer whether the documents arrived: it becomes why, after admission and notice, they were considered irrelevant and what substantive analysis reconciled title, third parties, estate, promotion and bidding.",
+      "limit_es": "Una declaración judicial de irrelevancia es una decisión adversa, no prueba por sí sola de arbitrariedad o dolo.",
+      "limit_en": "A judicial irrelevance determination is an adverse decision, not by itself proof of arbitrariness or intent."
+    },
+    {
+      "step": "J8",
+      "date": "2022-02-08 to 2022-02-21",
+      "actor": "CAM / LAJ / Aweswell / notarial title",
+      "status": "formal_copies_to_deed",
+      "event_es": "CAM pidió testimonios con plena eficacia formal; la LAJ los expidió el 14 febrero con expresión de firmeza; Aweswell recurrió el 16 febrero; el 21 febrero se otorgó la escritura de dación en pago a CAM según la cadena registral/publicada.",
+      "event_en": "CAM requested certified copies with full formal effect; the court clerk issued them on 14 February stating finality; Aweswell challenged that step on 16 February; on 21 February the deed of transfer in payment to CAM was executed according to the published title chain.",
+      "effect_es": "Las resoluciones judiciales pasan de decisión procesal a puente operativo de título durante una impugnación sobre los testimonios.",
+      "effect_en": "The court rulings move from procedural decision to an operational title bridge while the certified-copy step was under challenge.",
+      "limit_es": "Debe verificarse pieza por pieza el efecto suspensivo, firmeza y alcance exacto de cada recurso; la mera pendencia no invalida automáticamente el título.",
+      "limit_en": "Suspensive effect, finality and exact scope of each challenge must be verified piece by piece; mere pendency does not automatically invalidate title."
+    },
+    {
+      "step": "J9",
+      "date": "2022-04-20 to 2022-04-26",
+      "actor": "Registro / LAJ",
+      "status": "registration_before_later_rulings",
+      "event_es": "La cadena pública fija inscripción a favor de CAM el 20 abril y decretos de 26 abril que desestimaron después los recursos contra la expedición de testimonios.",
+      "event_en": "The public chain records registration in CAM's favour on 20 April and later 26 April decrees dismissing challenges concerning issue of the certified copies.",
+      "effect_es": "La inscripción aparece cronológicamente antes de la resolución posterior de esos recursos, lo que exige reconciliar firmeza, eficacia del testimonio y efectos registrales.",
+      "effect_en": "Registration appears chronologically before the later resolution of those challenges, requiring reconciliation of finality, effect of the certified copies and registry consequences.",
+      "limit_es": "La cronología por sí sola no demuestra invalidez registral ni mala fe de terceros.",
+      "limit_en": "Chronology alone does not prove registry invalidity or third-party bad faith."
+    }
+  ],
+  "failure_tests": [
+    {
+      "id": "JF-01",
+      "title_es": "Coherencia decisoria",
+      "title_en": "Decisional coherence",
+      "proved_es": "Dos Autos de 15 octubre contienen descripciones incompatibles del acto decisivo de mayo.",
+      "proved_en": "Two 15 October orders contain incompatible descriptions of the decisive May event.",
+      "question_es": "Qué efecto tuvo esa contradicción en el estándar aplicado, en los recursos, en la firmeza y en el puente hacia el título.",
+      "question_en": "What effect the contradiction had on the standard applied, the challenges, finality and the bridge to title."
+    },
+    {
+      "id": "JF-02",
+      "title_es": "Tratamiento de la nueva documental",
+      "title_en": "Treatment of new documentary evidence",
+      "proved_es": "La documental fue trasladada, llegó al juez, fue posteriormente confirmada como admitida y finalmente declarada irrelevante.",
+      "proved_en": "The documents were served, reached the judge, were later confirmed as admitted and ultimately held irrelevant.",
+      "question_es": "Qué resolución integrada, si existe, concilió 54 CAM / 190 LPB / 18 terceros, promoción RICPE, riesgo para masa y competencia de licitación antes de mantener la adjudicación.",
+      "question_en": "What integrated decision, if any, reconciled 54 CAM / 190 LPB / 18 third-party units, RICPE promotion, estate risk and bidding competition before maintaining adjudication."
+    },
+    {
+      "id": "JF-03",
+      "title_es": "Protección de masa y unidad productiva",
+      "title_en": "Protection of estate and productive unit",
+      "proved_es": "Los escritos pusieron sobre la mesa riesgos de devaluación, precomercialización, obras/demoliciones, financiación y efecto sobre licitadores y acreedores.",
+      "proved_en": "The filings raised risks of diminution, pre-commercialisation, works/demolition, financing and effects on bidders and creditors.",
+      "question_es": "Qué inspección, inventario, preservación, contabilidad de frutos/ingresos, control de obras o salvaguarda de going-concern se ordenó y ejecutó.",
+      "question_en": "What inspection, inventory, preservation, fruits/revenue accounting, works control or going-concern safeguard was ordered and implemented."
+    },
+    {
+      "id": "JF-04",
+      "title_es": "Perímetro extraconcursal",
+      "title_en": "Extra-insolvency perimeter",
+      "proved_es": "El certificado RICPE aportado por CAM reconoció 18 fincas de terceros y 190 activos/componentes aún en LPB; Matkator mantiene títulos separados en la cadena pública.",
+      "proved_en": "The RICPE certificate supplied by CAM acknowledged 18 third-party fincas and 190 assets/components still in LPB; Matkator retains separate title in the public chain.",
+      "question_es": "Qué base de título, consentimiento u orden justificó cualquier control, obra, uso o explotación sobre cada finca no-LPB.",
+      "question_en": "What title, consent or order justified any control, works, use or operation of each non-LPB finca."
+    },
+    {
+      "id": "JF-05",
+      "title_es": "Del aviso al título y al capital",
+      "title_en": "From warning to title and capital",
+      "proved_es": "La alerta y la versión patrimonial restringida coexistieron antes de los testimonios, escritura, inscripción y posterior materialización RIC/proyecto hotelero.",
+      "proved_en": "The warning and narrower ownership account coexisted before certified copies, deed, registration and later RIC materialisation/hotel project.",
+      "question_es": "Qué expediente completo de título, litigio, terceros, obras y riesgo fue transmitido a cada decisor posterior y qué correcciones se hicieron frente a la promoción de 2020.",
+      "question_en": "What complete title, litigation, third-party, works and risk file was transmitted to each later decision-maker and what corrections were made to the 2020 promotion."
+    }
+  ],
+  "closure_requests": [
+    "Produce the complete signed 26 January 2022 orders and bind each to the October correction requests and AC opposition.",
+    "Produce the 7 September 2021 DIOR and its exact five joined filings with receipt metadata.",
+    "Produce the complete 14 February 2022 certified copies/testimonios and the 16 February challenge, identifying any suspensive effect.",
+    "Produce the 20 April registry entry and 26 April decrees with timestamps and exact finality language.",
+    "Bind this 2021–2022 chain to the separate 7 June 2018 notice/protection chain and to asset-level estate/productive-unit ledgers.",
+    "Identify any judicial or AC order/report that reconciled third-party title, RICPE promotion, works, pre-commercialisation, income/fruits and bidder competition before title transfer.",
+    "Keep criminal or disciplinary attribution separate from the documented procedural contradiction unless an independent competent finding establishes it."
+  ],
+  "source_notes": [
+    "Primary documents verified in this closeout: two signed Autos dated 15 October 2021 (Adjunto1(55).pdf and Adjunto1(56).pdf).",
+    "The wider J1–J9 chain is already preserved on the public RIC Private Equity / A&G Sun Park register and identifies its primary sources: February/June 2021 filings, July service and responses, 7 September DIOR, 15 October orders, 26 January 2022 orders, February testimonios/deed and April registration/decrees.",
+    "Where a primary item has not been re-opened in this closeout, the website should describe it as part of the existing controlled public chain, not as newly re-authenticated here."
+  ]
+}

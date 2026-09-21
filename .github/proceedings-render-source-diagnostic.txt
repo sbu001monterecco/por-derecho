@@ -1,0 +1,440 @@
+=== data-mf-files-matrix-detail ===
+count=0 positions=[]
+=== data-mf-file-register ===
+count=0 positions=[]
+=== data-mf-file-matrix ===
+count=0 positions=[]
+=== exactDecisionRegister ===
+count=9 positions=[14726, 14801, 15000, 27720, 27786, 27967, 91156, 91244, 91310]
+ileIncorporationStatus: 'Estado de incorporación al expediente', recipientAttributionStatus: 'Estado de atribución del destinatario', examinationStatus: 'Estado de examen', whatWasExamined: 'Qué fue efectivamente examinado', decisionUseStatus: 'Estado de uso en decisión', unitaryAcknowledgementStatus: 'Estado de reconocimiento unitario', strongestContrary: 'Explicación contraria más fuerte', rowBoundary: 'Límite de atribución de la fila', sourceProfiles: 'Perfiles fuente', axisBasis: 'Base y límite del grado', basisKind: 'Tipo de base', basisStatement: 'Base controlada', basisSource: 'Procedencia de la base', controlledLimit: 'Límite controlado', controlledEpisodes: 'episodios de respuesta controlados en total', filterScope: 'La búsqueda y el filtro de vía se aplican únicamente al mapa por vías y a la cronología.', fiscaliaCommunications: 'Abrir comunicaciones y respuestas de Fiscalía', exactDecisionRegister: 'Registro de dependencia decisoria por expediente', exactDecisionRegisterLead: 'Los 97 procedimientos exactos tienen una pregunta finita, fuente necesaria, explicación contraria, órgano competente, dependencia decisoria y consecuencias controladas.', exactDecisionRegisterBoundary: 'Este registro no inventa pertenencia a una proposición compartida. La cobertura de la matriz común se mide por separado.', sharedPropositionCoverage: 'cobertura de proposiciones compartidas', openIsolation: 'Abrir prueba de aislamiento'
+  } : {
+    loading: 'Building the map from the canonical register…',
+    error: 'The proceedings map could not be built.',
+    allTracks: 'All tracks', search: 'Search ID, reference, organ, object or status…',
+    map: 'Track map', chronology: 'Chronology', trace: 'Trace one proceeding / record',
+    prism: 'Case Prism', lanes: 'Parallel lanes', isolation: 'Isolation test',
+    records: 'public nodes', tracks: 'tracks', direct: 'controlled direct pairs', gaps: 'nodes with an open gap',
+    directTitle: 'Direct procedural relationships',
+    contextTitle: 'Controlled context bridges',
+    why: 'Why connected?', noDirect: 'No direct procedural relationship is admitted in the controlled registry for this object.',
+    noContext: 'No other exact contextual bridge is available in the current projection.',
+    contextWarning: 'Context does not mean the same proceeding, joinder, coordination, knowledge, wrongdoing or liability.',
+    source: 'Source/status', gap: 'Open gap', now: 'Now',
+    approximate: 'Approximate order by the first recognisable year in Date_or_Period; it does not imply causation.',
+    openRegister: 'Open Master Register', openRegisterRecord: 'Open this canonical record', traceThis: 'Trace record', empty: 'No nodes match th
+
+---
+
+ttributionStatus: 'Estado de atribución del destinatario', examinationStatus: 'Estado de examen', whatWasExamined: 'Qué fue efectivamente examinado', decisionUseStatus: 'Estado de uso en decisión', unitaryAcknowledgementStatus: 'Estado de reconocimiento unitario', strongestContrary: 'Explicación contraria más fuerte', rowBoundary: 'Límite de atribución de la fila', sourceProfiles: 'Perfiles fuente', axisBasis: 'Base y límite del grado', basisKind: 'Tipo de base', basisStatement: 'Base controlada', basisSource: 'Procedencia de la base', controlledLimit: 'Límite controlado', controlledEpisodes: 'episodios de respuesta controlados en total', filterScope: 'La búsqueda y el filtro de vía se aplican únicamente al mapa por vías y a la cronología.', fiscaliaCommunications: 'Abrir comunicaciones y respuestas de Fiscalía', exactDecisionRegister: 'Registro de dependencia decisoria por expediente', exactDecisionRegisterLead: 'Los 97 procedimientos exactos tienen una pregunta finita, fuente necesaria, explicación contraria, órgano competente, dependencia decisoria y consecuencias controladas.', exactDecisionRegisterBoundary: 'Este registro no inventa pertenencia a una proposición compartida. La cobertura de la matriz común se mide por separado.', sharedPropositionCoverage: 'cobertura de proposiciones compartidas', openIsolation: 'Abrir prueba de aislamiento'
+  } : {
+    loading: 'Building the map from the canonical register…',
+    error: 'The proceedings map could not be built.',
+    allTracks: 'All tracks', search: 'Search ID, reference, organ, object or status…',
+    map: 'Track map', chronology: 'Chronology', trace: 'Trace one proceeding / record',
+    prism: 'Case Prism', lanes: 'Parallel lanes', isolation: 'Isolation test',
+    records: 'public nodes', tracks: 'tracks', direct: 'controlled direct pairs', gaps: 'nodes with an open gap',
+    directTitle: 'Direct procedural relationships',
+    contextTitle: 'Controlled context bridges',
+    why: 'Why connected?', noDirect: 'No direct procedural relationship is admitted in the controlled registry for this object.',
+    noContext: 'No other exact contextual bridge is available in the current projection.',
+    contextWarning: 'Context does not mean the same proceeding, joinder, coordination, knowledge, wrongdoing or liability.',
+    source: 'Source/status', gap: 'Open gap', now: 'Now',
+    approximate: 'Approximate order by the first recognisable year in Date_or_Period; it does not imply causation.',
+    openRegister: 'Open Master Register', openRegisterRecord: 'Open this canonical record', traceThis: 'Trace record', empty: 'No nodes match the current filters.',
+    publicBoundary: 'This visualisation uses a minimis
+
+---
+
+nitaryAcknowledgementStatus: 'Estado de reconocimiento unitario', strongestContrary: 'Explicación contraria más fuerte', rowBoundary: 'Límite de atribución de la fila', sourceProfiles: 'Perfiles fuente', axisBasis: 'Base y límite del grado', basisKind: 'Tipo de base', basisStatement: 'Base controlada', basisSource: 'Procedencia de la base', controlledLimit: 'Límite controlado', controlledEpisodes: 'episodios de respuesta controlados en total', filterScope: 'La búsqueda y el filtro de vía se aplican únicamente al mapa por vías y a la cronología.', fiscaliaCommunications: 'Abrir comunicaciones y respuestas de Fiscalía', exactDecisionRegister: 'Registro de dependencia decisoria por expediente', exactDecisionRegisterLead: 'Los 97 procedimientos exactos tienen una pregunta finita, fuente necesaria, explicación contraria, órgano competente, dependencia decisoria y consecuencias controladas.', exactDecisionRegisterBoundary: 'Este registro no inventa pertenencia a una proposición compartida. La cobertura de la matriz común se mide por separado.', sharedPropositionCoverage: 'cobertura de proposiciones compartidas', openIsolation: 'Abrir prueba de aislamiento'
+  } : {
+    loading: 'Building the map from the canonical register…',
+    error: 'The proceedings map could not be built.',
+    allTracks: 'All tracks', search: 'Search ID, reference, organ, object or status…',
+    map: 'Track map', chronology: 'Chronology', trace: 'Trace one proceeding / record',
+    prism: 'Case Prism', lanes: 'Parallel lanes', isolation: 'Isolation test',
+    records: 'public nodes', tracks: 'tracks', direct: 'controlled direct pairs', gaps: 'nodes with an open gap',
+    directTitle: 'Direct procedural relationships',
+    contextTitle: 'Controlled context bridges',
+    why: 'Why connected?', noDirect: 'No direct procedural relationship is admitted in the controlled registry for this object.',
+    noContext: 'No other exact contextual bridge is available in the current projection.',
+    contextWarning: 'Context does not mean the same proceeding, joinder, coordination, knowledge, wrongdoing or liability.',
+    source: 'Source/status', gap: 'Open gap', now: 'Now',
+    approximate: 'Approximate order by the first recognisable year in Date_or_Period; it does not imply causation.',
+    openRegister: 'Open Master Register', openRegisterRecord: 'Open this canonical record', traceThis: 'Trace record', empty: 'No nodes match the current filters.',
+    publicBoundary: 'This visualisation uses a minimised public projection of the canonical register. It does not turn references into proceedings or contextual connections into legal facts.',
+    audience: 'Reader lens', proposition: 'Proposition / fac
+
+---
+
+eferred: 'What was referred', registrationStatus: 'Registration status', fileIncorporationStatus: 'File-incorporation status', recipientAttributionStatus: 'Recipient-attribution status', examinationStatus: 'Examination status', whatWasExamined: 'What was actually examined', decisionUseStatus: 'Decision-use status', unitaryAcknowledgementStatus: 'Unitary-acknowledgement status', strongestContrary: 'Strongest contrary explanation', rowBoundary: 'Row attribution boundary', sourceProfiles: 'Source profiles', axisBasis: 'Grade basis and limitation', basisKind: 'Basis kind', basisStatement: 'Controlled basis', basisSource: 'Basis provenance', controlledLimit: 'Controlled limitation', controlledEpisodes: 'controlled response episodes total', filterScope: 'Search and track filters apply only to the track map and chronology.', fiscaliaCommunications: 'Open Fiscalía communications and responses', exactDecisionRegister: 'Exact-file decision-dependency register', exactDecisionRegisterLead: 'All 97 exact proceedings carry a controlled finite question, source need, contrary explanation, competent organ, decision dependency and consequences.', exactDecisionRegisterBoundary: 'This register does not invent membership in a shared proposition. Shared-matrix coverage is measured separately.', sharedPropositionCoverage: 'shared-proposition coverage', openIsolation: 'Open isolation test'
+  };
+
+  copy.communityAuthority = lang === 'es' ? 'Abrir ACTAs y expedientes públicos' : 'Open ACTAs and public-authority files';
+
+  const esc = (v) => String(v || '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const norm = (v) => String(v || '').trim();
+  const key = (v) => norm(v).toLowerCase();
+  const localized = (obj, base) => obj ? (obj[`${base}_${lang}`] || obj[lang] || obj[base] || obj.en || obj.es || '') : '';
+
+  const firstYear = (value) => {
+    const m = String(value || '').match(/\b(19|20)\d{2}\b/);
+    return m ? Number(m[0]) : 9999;
+  };
+
+  const labelFor = (r) => norm(r.Reference) || norm(r.Secondary_Reference) || norm(r.Master_ID);
+  const subtitleFor = (r) => [norm(r.Proceeding_Class), norm(r.Stream)].filter(Boolean).join(' · ');
+
+  const detailUrlFor = (id) => detailRoutes[id] && detailRoutes[id][lang];
+  const detailAnchor = (r, text, className = '') => {
+    const url = detailUrlFor(r.Master_ID);
+    return url ? `<a${className ? ` class="${className}"` : ''} href="${esc(url)}">${esc(text)}</a>` : esc(text);
+  };
+
+  const card = (r, traceButton = true) => `
+    <article class="pdim-node" data-node-id="${esc(r.Master_ID)}">
+      <div class="pdim-node-head"><span class="pdim-id">${detailAnchor(r, r.Master_ID)}</span><
+
+---
+
+atus', fileIncorporationStatus: 'File-incorporation status', recipientAttributionStatus: 'Recipient-attribution status', examinationStatus: 'Examination status', whatWasExamined: 'What was actually examined', decisionUseStatus: 'Decision-use status', unitaryAcknowledgementStatus: 'Unitary-acknowledgement status', strongestContrary: 'Strongest contrary explanation', rowBoundary: 'Row attribution boundary', sourceProfiles: 'Source profiles', axisBasis: 'Grade basis and limitation', basisKind: 'Basis kind', basisStatement: 'Controlled basis', basisSource: 'Basis provenance', controlledLimit: 'Controlled limitation', controlledEpisodes: 'controlled response episodes total', filterScope: 'Search and track filters apply only to the track map and chronology.', fiscaliaCommunications: 'Open Fiscalía communications and responses', exactDecisionRegister: 'Exact-file decision-dependency register', exactDecisionRegisterLead: 'All 97 exact proceedings carry a controlled finite question, source need, contrary explanation, competent organ, decision dependency and consequences.', exactDecisionRegisterBoundary: 'This register does not invent membership in a shared proposition. Shared-matrix coverage is measured separately.', sharedPropositionCoverage: 'shared-proposition coverage', openIsolation: 'Open isolation test'
+  };
+
+  copy.communityAuthority = lang === 'es' ? 'Abrir ACTAs y expedientes públicos' : 'Open ACTAs and public-authority files';
+
+  const esc = (v) => String(v || '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const norm = (v) => String(v || '').trim();
+  const key = (v) => norm(v).toLowerCase();
+  const localized = (obj, base) => obj ? (obj[`${base}_${lang}`] || obj[lang] || obj[base] || obj.en || obj.es || '') : '';
+
+  const firstYear = (value) => {
+    const m = String(value || '').match(/\b(19|20)\d{2}\b/);
+    return m ? Number(m[0]) : 9999;
+  };
+
+  const labelFor = (r) => norm(r.Reference) || norm(r.Secondary_Reference) || norm(r.Master_ID);
+  const subtitleFor = (r) => [norm(r.Proceeding_Class), norm(r.Stream)].filter(Boolean).join(' · ');
+
+  const detailUrlFor = (id) => detailRoutes[id] && detailRoutes[id][lang];
+  const detailAnchor = (r, text, className = '') => {
+    const url = detailUrlFor(r.Master_ID);
+    return url ? `<a${className ? ` class="${className}"` : ''} href="${esc(url)}">${esc(text)}</a>` : esc(text);
+  };
+
+  const card = (r, traceButton = true) => `
+    <article class="pdim-node" data-node-id="${esc(r.Master_ID)}">
+      <div class="pdim-node-head"><span class="pdim-id">${detailAnchor(r, r.Master_ID)}</span><span class="pdim-state" data-state="${esc(norm(r.Is_Proceeding).to
+
+---
+
+hat was actually examined', decisionUseStatus: 'Decision-use status', unitaryAcknowledgementStatus: 'Unitary-acknowledgement status', strongestContrary: 'Strongest contrary explanation', rowBoundary: 'Row attribution boundary', sourceProfiles: 'Source profiles', axisBasis: 'Grade basis and limitation', basisKind: 'Basis kind', basisStatement: 'Controlled basis', basisSource: 'Basis provenance', controlledLimit: 'Controlled limitation', controlledEpisodes: 'controlled response episodes total', filterScope: 'Search and track filters apply only to the track map and chronology.', fiscaliaCommunications: 'Open Fiscalía communications and responses', exactDecisionRegister: 'Exact-file decision-dependency register', exactDecisionRegisterLead: 'All 97 exact proceedings carry a controlled finite question, source need, contrary explanation, competent organ, decision dependency and consequences.', exactDecisionRegisterBoundary: 'This register does not invent membership in a shared proposition. Shared-matrix coverage is measured separately.', sharedPropositionCoverage: 'shared-proposition coverage', openIsolation: 'Open isolation test'
+  };
+
+  copy.communityAuthority = lang === 'es' ? 'Abrir ACTAs y expedientes públicos' : 'Open ACTAs and public-authority files';
+
+  const esc = (v) => String(v || '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const norm = (v) => String(v || '').trim();
+  const key = (v) => norm(v).toLowerCase();
+  const localized = (obj, base) => obj ? (obj[`${base}_${lang}`] || obj[lang] || obj[base] || obj.en || obj.es || '') : '';
+
+  const firstYear = (value) => {
+    const m = String(value || '').match(/\b(19|20)\d{2}\b/);
+    return m ? Number(m[0]) : 9999;
+  };
+
+  const labelFor = (r) => norm(r.Reference) || norm(r.Secondary_Reference) || norm(r.Master_ID);
+  const subtitleFor = (r) => [norm(r.Proceeding_Class), norm(r.Stream)].filter(Boolean).join(' · ');
+
+  const detailUrlFor = (id) => detailRoutes[id] && detailRoutes[id][lang];
+  const detailAnchor = (r, text, className = '') => {
+    const url = detailUrlFor(r.Master_ID);
+    return url ? `<a${className ? ` class="${className}"` : ''} href="${esc(url)}">${esc(text)}</a>` : esc(text);
+  };
+
+  const card = (r, traceButton = true) => `
+    <article class="pdim-node" data-node-id="${esc(r.Master_ID)}">
+      <div class="pdim-node-head"><span class="pdim-id">${detailAnchor(r, r.Master_ID)}</span><span class="pdim-state" data-state="${esc(norm(r.Is_Proceeding).toUpperCase() || 'UNVERIFIED')}">${esc(norm(r.Is_Proceeding).toUpperCase() || 'UNVERIFIED')}</span></div>
+      <h3>${detailAnchor(r, labelFor(r))}</h3>
+      <p class="pdim-sub">${es
+
+---
+
+a-exact-if-refuted>${esc(finiteText(test, 'if_refuted') || '—')}</dd></div><div><dt>${esc(copy.directRelated)}</dt><dd><code>${related.direct.length}</code></dd></div><div><dt>${esc(copy.contextRelated)}</dt><dd><code>${related.context.length}</code></dd></div></dl><div class="pdim-exact-decision-actions"><button type="button" data-trace-id="${esc(masterId)}">${esc(copy.openTrace)}</button><a href="#isolation-test=${encodeURIComponent(masterId)}">${esc(copy.openIsolation)}</a><a href="${esc(`${registerRoute}#record-${encodeURIComponent(masterId)}`)}">${esc(copy.openRegisterRecord)}</a></div></details></li>`;
+    }).join('');
+    return `<section class="pdim-exact-decision-register" data-exact-decision-register data-exact-count="${dispositions.length}" data-audited-count="${auditedCount}" data-shared-proposition-count="${sharedCount}"><header><div><p class="pdim-finite-kicker">${esc(copy.exactDecisionRegister)}</p><h2>${auditedCount}/${dispositions.length}</h2><p>${esc(copy.exactDecisionRegisterLead)}</p><p class="pdim-warning">${esc(copy.exactDecisionRegisterBoundary)}</p></div><div class="pdim-finite-model-status" data-model-status="${auditedCount === dispositions.length ? 'AUDITED' : 'INCOMPLETE'}"><span>${sharedCount}/${dispositions.length} ${esc(copy.sharedPropositionCoverage)}</span><code>${auditedCount === dispositions.length ? 'AUDITED' : 'INCOMPLETE'}</code></div></header><ol>${entries}</ol></section>`;
+  }
+
+  function renderPrism(root, prism, state, interlinks, byId) {
+    const body = root.querySelector('[data-view-body]');
+    const props = sortedProps(prism, state.audience);
+    body.innerHTML = `
+      <section class="pdim-prism-head"><div><p class="pdim-note">${esc(copy.matrixLead)}</p><p><strong>${esc(audienceQuestion(prism, state))}</strong></p><p>${esc(audiencePath(prism, state))}</p></div>${audienceControl(prism, state)}</section>
+      <div class="pdim-prism-table-wrap"><table class="pdim-prism-table"><caption>${esc(copy.matrixCaption)}</caption><thead><tr><th scope="col">${copy.proposition}</th>${prism.lanes.map((lane) => `<th scope="col">${esc(laneLabel(lane))}</th>`).join('')}</tr></thead><tbody>${props.map((prop) => `<tr><th scope="row"><span>${esc(propPeriod(prop))}</span><strong>${esc(propTitle(prop))}</strong><small>${esc(evidenceStatusLabel(prism, prop.source_status || ''))}</small></th>${prism.lanes.map((lane) => { const cell = prop.cells[lane.id]; const aria = `${propTitle(prop)} · ${laneLabel(lane)} · ${statusLabel(prism, cell.status)} · ${treatmentLabel(prism, cell.treatment)}`; return `<td><button type="button" class="pdim-prism-cell" aria-label="${esc(aria)}" data-prism-status="${esc(cell.status)}" data-prism-prop="${es
+
+---
+
+c(copy.directRelated)}</dt><dd><code>${related.direct.length}</code></dd></div><div><dt>${esc(copy.contextRelated)}</dt><dd><code>${related.context.length}</code></dd></div></dl><div class="pdim-exact-decision-actions"><button type="button" data-trace-id="${esc(masterId)}">${esc(copy.openTrace)}</button><a href="#isolation-test=${encodeURIComponent(masterId)}">${esc(copy.openIsolation)}</a><a href="${esc(`${registerRoute}#record-${encodeURIComponent(masterId)}`)}">${esc(copy.openRegisterRecord)}</a></div></details></li>`;
+    }).join('');
+    return `<section class="pdim-exact-decision-register" data-exact-decision-register data-exact-count="${dispositions.length}" data-audited-count="${auditedCount}" data-shared-proposition-count="${sharedCount}"><header><div><p class="pdim-finite-kicker">${esc(copy.exactDecisionRegister)}</p><h2>${auditedCount}/${dispositions.length}</h2><p>${esc(copy.exactDecisionRegisterLead)}</p><p class="pdim-warning">${esc(copy.exactDecisionRegisterBoundary)}</p></div><div class="pdim-finite-model-status" data-model-status="${auditedCount === dispositions.length ? 'AUDITED' : 'INCOMPLETE'}"><span>${sharedCount}/${dispositions.length} ${esc(copy.sharedPropositionCoverage)}</span><code>${auditedCount === dispositions.length ? 'AUDITED' : 'INCOMPLETE'}</code></div></header><ol>${entries}</ol></section>`;
+  }
+
+  function renderPrism(root, prism, state, interlinks, byId) {
+    const body = root.querySelector('[data-view-body]');
+    const props = sortedProps(prism, state.audience);
+    body.innerHTML = `
+      <section class="pdim-prism-head"><div><p class="pdim-note">${esc(copy.matrixLead)}</p><p><strong>${esc(audienceQuestion(prism, state))}</strong></p><p>${esc(audiencePath(prism, state))}</p></div>${audienceControl(prism, state)}</section>
+      <div class="pdim-prism-table-wrap"><table class="pdim-prism-table"><caption>${esc(copy.matrixCaption)}</caption><thead><tr><th scope="col">${copy.proposition}</th>${prism.lanes.map((lane) => `<th scope="col">${esc(laneLabel(lane))}</th>`).join('')}</tr></thead><tbody>${props.map((prop) => `<tr><th scope="row"><span>${esc(propPeriod(prop))}</span><strong>${esc(propTitle(prop))}</strong><small>${esc(evidenceStatusLabel(prism, prop.source_status || ''))}</small></th>${prism.lanes.map((lane) => { const cell = prop.cells[lane.id]; const aria = `${propTitle(prop)} · ${laneLabel(lane)} · ${statusLabel(prism, cell.status)} · ${treatmentLabel(prism, cell.treatment)}`; return `<td><button type="button" class="pdim-prism-cell" aria-label="${esc(aria)}" data-prism-status="${esc(cell.status)}" data-prism-prop="${esc(prop.id)}" data-prism-lane="${esc(lane.id)}"><span>${esc(statusLabel(prism, cell.statu
+
+---
+
+e></dd></div><div><dt>${esc(copy.contextRelated)}</dt><dd><code>${related.context.length}</code></dd></div></dl><div class="pdim-exact-decision-actions"><button type="button" data-trace-id="${esc(masterId)}">${esc(copy.openTrace)}</button><a href="#isolation-test=${encodeURIComponent(masterId)}">${esc(copy.openIsolation)}</a><a href="${esc(`${registerRoute}#record-${encodeURIComponent(masterId)}`)}">${esc(copy.openRegisterRecord)}</a></div></details></li>`;
+    }).join('');
+    return `<section class="pdim-exact-decision-register" data-exact-decision-register data-exact-count="${dispositions.length}" data-audited-count="${auditedCount}" data-shared-proposition-count="${sharedCount}"><header><div><p class="pdim-finite-kicker">${esc(copy.exactDecisionRegister)}</p><h2>${auditedCount}/${dispositions.length}</h2><p>${esc(copy.exactDecisionRegisterLead)}</p><p class="pdim-warning">${esc(copy.exactDecisionRegisterBoundary)}</p></div><div class="pdim-finite-model-status" data-model-status="${auditedCount === dispositions.length ? 'AUDITED' : 'INCOMPLETE'}"><span>${sharedCount}/${dispositions.length} ${esc(copy.sharedPropositionCoverage)}</span><code>${auditedCount === dispositions.length ? 'AUDITED' : 'INCOMPLETE'}</code></div></header><ol>${entries}</ol></section>`;
+  }
+
+  function renderPrism(root, prism, state, interlinks, byId) {
+    const body = root.querySelector('[data-view-body]');
+    const props = sortedProps(prism, state.audience);
+    body.innerHTML = `
+      <section class="pdim-prism-head"><div><p class="pdim-note">${esc(copy.matrixLead)}</p><p><strong>${esc(audienceQuestion(prism, state))}</strong></p><p>${esc(audiencePath(prism, state))}</p></div>${audienceControl(prism, state)}</section>
+      <div class="pdim-prism-table-wrap"><table class="pdim-prism-table"><caption>${esc(copy.matrixCaption)}</caption><thead><tr><th scope="col">${copy.proposition}</th>${prism.lanes.map((lane) => `<th scope="col">${esc(laneLabel(lane))}</th>`).join('')}</tr></thead><tbody>${props.map((prop) => `<tr><th scope="row"><span>${esc(propPeriod(prop))}</span><strong>${esc(propTitle(prop))}</strong><small>${esc(evidenceStatusLabel(prism, prop.source_status || ''))}</small></th>${prism.lanes.map((lane) => { const cell = prop.cells[lane.id]; const aria = `${propTitle(prop)} · ${laneLabel(lane)} · ${statusLabel(prism, cell.status)} · ${treatmentLabel(prism, cell.treatment)}`; return `<td><button type="button" class="pdim-prism-cell" aria-label="${esc(aria)}" data-prism-status="${esc(cell.status)}" data-prism-prop="${esc(prop.id)}" data-prism-lane="${esc(lane.id)}"><span>${esc(statusLabel(prism, cell.status))}</span><small>${esc(treatmentLabel(prism, cell.treatment))}</s
+
+---
+
+=== fiscaliaMatrix ===
+count=10 positions=[11486, 12493, 24801, 25691, 57914, 58184, 58240, 71665, 71700, 86624]
+ibución del destinatario',
+    substantiveExamination: 'Examen sustantivo', decisionUse: 'Uso en decisión', noReceiptEvents: 'No hay eventos institucionales fuente-controlados vinculados a esta prueba.',
+    noActorEvidence: 'No hay una fuente específica de actor vinculada que establezca conocimiento personal.',
+    directRelated: 'Procedimientos relacionados directamente', contextRelated: 'Contexto relacionado — no es enlace procesal',
+    noDirectRelated: 'No hay otro procedimiento relacionado directamente en el registro controlado.',
+    noContextRelated: 'No hay otro procedimiento contextual relacionado en el registro controlado.',
+    proves: 'Acredita dentro de este alcance', doesNotProve: 'No acredita', publicRouteGap: 'Ruta pública de fuente no establecida',
+    modelStatus: 'Estado del modelo', receiptEvent: 'Evento institucional', actorProfile: 'Actor / perfil controlado',
+    fiscaliaMatrix: 'Matriz transversal de oficinas y expedientes del Ministerio Fiscal', fiscaliaRows: 'filas públicas de oficina/expediente auditadas',
+    fiscaliaProfiled: 'con perfil de episodio fuente-controlado', fiscaliaExactRows: 'procedimientos exactos', fiscaliaUnresolvedRows: 'referencias no verificadas como procedimiento exacto', fiscaliaModelBoundary: 'La cobertura del modelo no equivale a recepción, examen o reconocimiento unitario acreditados.',
+    officeFile: 'Oficina / expediente', receivedProfile: 'Recibido / estado del perfil', responseTreatment: 'Respuesta / tratamiento', canonicalSourceStatus: 'Estado canónico de fuente', responseProfileStatus: 'Estado del perfil de respuesta', exactnessStatus: 'Condición de procedimiento', recordType: 'Tipo de registro',
+    crossFileAcknowledgement: 'Reconocimiento entre expedientes', unansweredGap: 'Sin respuesta / fuente pendiente',
+    noUnitaryAcknowledgement: 'No se ha localizado un reconocimiento unitario en el corpus controlado.', fiscaliaMatrixUnavailable: 'La matriz transversal de Fiscalía no está disponible en esta carga.',
+    requestedMaterial: 'Solicitado', originOffice: 'Oficina de origen', currentCustodian: 'Custodio actual', datePeriod: 'Fecha / periodo', materialEvidence: 'Alegaciones / material / prueba descritos', materialReceivedInventory: 'Inventario de material recibido', noMaterialItemised: 'No hay material recibido individualizado en esta fila controlada.', materialInventoryGap: 'Brecha del inventario de material', directRelatedProceedings: 'Procedimientos relacionados directamente', contextRelatedProceedings: 'Contexto relacionado — no es enlace procesal', noDirectMatrixRelated: 'No hay otro procedimiento directo individualizado en esta fila.', noContextMatrixRelated: 'No hay otro contexto r
+
+---
+
+públicas de oficina/expediente auditadas',
+    fiscaliaProfiled: 'con perfil de episodio fuente-controlado', fiscaliaExactRows: 'procedimientos exactos', fiscaliaUnresolvedRows: 'referencias no verificadas como procedimiento exacto', fiscaliaModelBoundary: 'La cobertura del modelo no equivale a recepción, examen o reconocimiento unitario acreditados.',
+    officeFile: 'Oficina / expediente', receivedProfile: 'Recibido / estado del perfil', responseTreatment: 'Respuesta / tratamiento', canonicalSourceStatus: 'Estado canónico de fuente', responseProfileStatus: 'Estado del perfil de respuesta', exactnessStatus: 'Condición de procedimiento', recordType: 'Tipo de registro',
+    crossFileAcknowledgement: 'Reconocimiento entre expedientes', unansweredGap: 'Sin respuesta / fuente pendiente',
+    noUnitaryAcknowledgement: 'No se ha localizado un reconocimiento unitario en el corpus controlado.', fiscaliaMatrixUnavailable: 'La matriz transversal de Fiscalía no está disponible en esta carga.',
+    requestedMaterial: 'Solicitado', originOffice: 'Oficina de origen', currentCustodian: 'Custodio actual', datePeriod: 'Fecha / periodo', materialEvidence: 'Alegaciones / material / prueba descritos', materialReceivedInventory: 'Inventario de material recibido', noMaterialItemised: 'No hay material recibido individualizado en esta fila controlada.', materialInventoryGap: 'Brecha del inventario de material', directRelatedProceedings: 'Procedimientos relacionados directamente', contextRelatedProceedings: 'Contexto relacionado — no es enlace procesal', noDirectMatrixRelated: 'No hay otro procedimiento directo individualizado en esta fila.', noContextMatrixRelated: 'No hay otro contexto relacionado individualizado en esta fila.', relatedProceedingsStatus: 'Estado de procedimientos relacionados', relatedAssets: 'Activos relacionados', noRelatedAssets: 'No hay activo separado individualizado en esta fila.', relatedAssetsGap: 'Brecha de activos relacionados', transmissionStatus: 'Estado de transmisión', materialStatus: 'Estado del material recibido', relatedAssetsStatus: 'Estado de activos relacionados', referralStatus: 'Estado de remisión', whatWasReferred: 'Qué fue remitido', registrationStatus: 'Estado de registro', fileIncorporationStatus: 'Estado de incorporación al expediente', recipientAttributionStatus: 'Estado de atribución del destinatario', examinationStatus: 'Estado de examen', whatWasExamined: 'Qué fue efectivamente examinado', decisionUseStatus: 'Estado de uso en decisión', unitaryAcknowledgementStatus: 'Estado de reconocimiento unitario', strongestContrary: 'Explicación contraria más fuerte', rowBoundary: 'Límite de atribución de la fila', sourceProfiles: 'Perfile
+
+---
+
+n: 'File incorporation', recipientAttribution: 'Recipient attribution',
+    substantiveExamination: 'Substantive examination', decisionUse: 'Decision use', noReceiptEvents: 'No source-controlled institutional events are linked to this test.',
+    noActorEvidence: 'No linked actor-specific source establishes personal knowledge.',
+    directRelated: 'Directly related proceedings', contextRelated: 'Related context — not a procedural edge',
+    noDirectRelated: 'No other directly related proceeding is present in the controlled registry.',
+    noContextRelated: 'No other contextually related proceeding is present in the controlled registry.',
+    proves: 'Establishes within this scope', doesNotProve: 'Does not establish', publicRouteGap: 'Public source route not established',
+    modelStatus: 'Model status', receiptEvent: 'Institutional event', actorProfile: 'Actor / controlled profile',
+    fiscaliaMatrix: 'Ministerio Fiscal cross-office / file matrix', fiscaliaRows: 'public office/file rows audited',
+    fiscaliaProfiled: 'with a source-controlled episode profile', fiscaliaExactRows: 'exact proceedings', fiscaliaUnresolvedRows: 'references not verified as an exact proceeding', fiscaliaModelBoundary: 'Model coverage is not proof of receipt, examination or unitary acknowledgement.',
+    officeFile: 'Office / file', receivedProfile: 'Received / profile state', responseTreatment: 'Response / treatment', canonicalSourceStatus: 'Canonical source status', responseProfileStatus: 'Response-profile status', exactnessStatus: 'Proceeding status', recordType: 'Record type',
+    crossFileAcknowledgement: 'Cross-file acknowledgement', unansweredGap: 'Unanswered / source gap',
+    noUnitaryAcknowledgement: 'No unitary acknowledgement has been located in the controlled corpus.', fiscaliaMatrixUnavailable: 'The Fiscalía cross-office matrix is unavailable in this load.',
+    requestedMaterial: 'Requested', originOffice: 'Origin office', currentCustodian: 'Current custodian', datePeriod: 'Date / period', materialEvidence: 'Described allegations / material / evidence', materialReceivedInventory: 'Received-material inventory', noMaterialItemised: 'No received material is itemised in this controlled row.', materialInventoryGap: 'Material-inventory gap', directRelatedProceedings: 'Directly related proceedings', contextRelatedProceedings: 'Related context — not a procedural edge', noDirectMatrixRelated: 'No other direct proceeding is itemised in this row.', noContextMatrixRelated: 'No other related context is itemised in this row.', relatedProceedingsStatus: 'Related-proceedings status', relatedAssets: 'Related assets', noRelatedAssets: 'No separate asset is itemised in this row.
+
+---
+
+ile',
+    fiscaliaMatrix: 'Ministerio Fiscal cross-office / file matrix', fiscaliaRows: 'public office/file rows audited',
+    fiscaliaProfiled: 'with a source-controlled episode profile', fiscaliaExactRows: 'exact proceedings', fiscaliaUnresolvedRows: 'references not verified as an exact proceeding', fiscaliaModelBoundary: 'Model coverage is not proof of receipt, examination or unitary acknowledgement.',
+    officeFile: 'Office / file', receivedProfile: 'Received / profile state', responseTreatment: 'Response / treatment', canonicalSourceStatus: 'Canonical source status', responseProfileStatus: 'Response-profile status', exactnessStatus: 'Proceeding status', recordType: 'Record type',
+    crossFileAcknowledgement: 'Cross-file acknowledgement', unansweredGap: 'Unanswered / source gap',
+    noUnitaryAcknowledgement: 'No unitary acknowledgement has been located in the controlled corpus.', fiscaliaMatrixUnavailable: 'The Fiscalía cross-office matrix is unavailable in this load.',
+    requestedMaterial: 'Requested', originOffice: 'Origin office', currentCustodian: 'Current custodian', datePeriod: 'Date / period', materialEvidence: 'Described allegations / material / evidence', materialReceivedInventory: 'Received-material inventory', noMaterialItemised: 'No received material is itemised in this controlled row.', materialInventoryGap: 'Material-inventory gap', directRelatedProceedings: 'Directly related proceedings', contextRelatedProceedings: 'Related context — not a procedural edge', noDirectMatrixRelated: 'No other direct proceeding is itemised in this row.', noContextMatrixRelated: 'No other related context is itemised in this row.', relatedProceedingsStatus: 'Related-proceedings status', relatedAssets: 'Related assets', noRelatedAssets: 'No separate asset is itemised in this row.', relatedAssetsGap: 'Related-assets gap', transmissionStatus: 'Transmission status', materialStatus: 'Material-received status', relatedAssetsStatus: 'Related-assets status', referralStatus: 'Referral status', whatWasReferred: 'What was referred', registrationStatus: 'Registration status', fileIncorporationStatus: 'File-incorporation status', recipientAttributionStatus: 'Recipient-attribution status', examinationStatus: 'Examination status', whatWasExamined: 'What was actually examined', decisionUseStatus: 'Decision-use status', unitaryAcknowledgementStatus: 'Unitary-acknowledgement status', strongestContrary: 'Strongest contrary explanation', rowBoundary: 'Row attribution boundary', sourceProfiles: 'Source profiles', axisBasis: 'Grade basis and limitation', basisKind: 'Basis kind', basisStatement: 'Controlled basis', basisSource: 'Basis provenance', controlledLimit: 'Controll
+
+---
+
+ection>
+        <section data-finite-decision-dependency><h3>${esc(copy.decisionDepends)}</h3><p>${esc(decision || '—')}</p></section>
+      </div>
+      <section class="pdim-finite-related" data-finite-related><h3>${esc(copy.directRelated)}</h3><ul data-finite-related-direct>${finiteRelatedHtml(related.direct, byId, copy.noDirectRelated)}</ul><h3>${esc(copy.contextRelated)}</h3><p class="pdim-warning">${esc(copy.contextBoundary)}</p><ul data-finite-related-context>${finiteRelatedHtml(related.context, byId, copy.noContextRelated)}</ul></section>
+      <div class="pdim-finite-outcomes"><section data-finite-if-confirmed><h3>${esc(copy.ifConfirmed)}</h3><p>${esc(confirmed || '—')}</p></section><section data-finite-if-refuted><h3>${esc(copy.ifRefuted)}</h3><p>${esc(refuted || '—')}</p></section></div>
+      ${finiteReceiptHtml(test, interlinks, disposition)}
+    </section>`;
+  }
+
+  function fiscaliaMatrixHtml(interlinks, byId) {
+    const matrix = interlinks && interlinks.fiscalia_office_file_matrix;
+    if (!matrix) return `<section class="pdim-fiscalia-matrix is-unavailable" data-fiscalia-office-file-matrix data-model-status="UNAVAILABLE"><h3>${esc(copy.fiscaliaMatrix)}</h3><p class="pdim-warning">${esc(copy.fiscaliaMatrixUnavailable)}</p></section>`;
+    const rows = Array.isArray(matrix) ? matrix : (matrix.rows || matrix.records || matrix.files || matrix.entries || []);
+    const coverage = interlinks.coverage || (Array.isArray(matrix) ? {} : (matrix.coverage || {}));
+    const profileCount = Number(
+      coverage.fiscalia_office_file_matrix_source_profiled_record_count
+      || coverage.source_controlled_episode_profile_count
+      || coverage.profiled_row_count
+      || coverage.source_profile_count
+      || rows.filter((row) => (Array.isArray(row.source_profile_ids) && row.source_profile_ids.length) || row.episode_profile_id || row.profile_id || /SOURCE_CONTROLLED|PROFILED/.test(norm(row.profile_status || row.received_profile_status))).length
+    );
+    const exactCount = Number(coverage.fiscalia_office_file_matrix_exact_count || rows.filter((row) => norm(row.is_proceeding).toUpperCase() === 'TRUE').length);
+    const unresolvedCount = Number(coverage.fiscalia_office_file_matrix_unverified_count || rows.filter((row) => norm(row.is_proceeding).toUpperCase() !== 'TRUE').length);
+    const totalEpisodes = Array.isArray(interlinks && interlinks.fiscalia_response_episode_profiles)
+      ? interlinks.fiscalia_response_episode_profiles.length : 0;
+
+    const itemList = (items, dataAttribute, emptyText) => {
+      const list = Array.isArray(items) ? items : [];
+      if (!list.length) return `<span class="pdim-fiscalia-empty">${esc(emptyText)}</span>`;
+   
+
+---
+
+direct>${finiteRelatedHtml(related.direct, byId, copy.noDirectRelated)}</ul><h3>${esc(copy.contextRelated)}</h3><p class="pdim-warning">${esc(copy.contextBoundary)}</p><ul data-finite-related-context>${finiteRelatedHtml(related.context, byId, copy.noContextRelated)}</ul></section>
+      <div class="pdim-finite-outcomes"><section data-finite-if-confirmed><h3>${esc(copy.ifConfirmed)}</h3><p>${esc(confirmed || '—')}</p></section><section data-finite-if-refuted><h3>${esc(copy.ifRefuted)}</h3><p>${esc(refuted || '—')}</p></section></div>
+      ${finiteReceiptHtml(test, interlinks, disposition)}
+    </section>`;
+  }
+
+  function fiscaliaMatrixHtml(interlinks, byId) {
+    const matrix = interlinks && interlinks.fiscalia_office_file_matrix;
+    if (!matrix) return `<section class="pdim-fiscalia-matrix is-unavailable" data-fiscalia-office-file-matrix data-model-status="UNAVAILABLE"><h3>${esc(copy.fiscaliaMatrix)}</h3><p class="pdim-warning">${esc(copy.fiscaliaMatrixUnavailable)}</p></section>`;
+    const rows = Array.isArray(matrix) ? matrix : (matrix.rows || matrix.records || matrix.files || matrix.entries || []);
+    const coverage = interlinks.coverage || (Array.isArray(matrix) ? {} : (matrix.coverage || {}));
+    const profileCount = Number(
+      coverage.fiscalia_office_file_matrix_source_profiled_record_count
+      || coverage.source_controlled_episode_profile_count
+      || coverage.profiled_row_count
+      || coverage.source_profile_count
+      || rows.filter((row) => (Array.isArray(row.source_profile_ids) && row.source_profile_ids.length) || row.episode_profile_id || row.profile_id || /SOURCE_CONTROLLED|PROFILED/.test(norm(row.profile_status || row.received_profile_status))).length
+    );
+    const exactCount = Number(coverage.fiscalia_office_file_matrix_exact_count || rows.filter((row) => norm(row.is_proceeding).toUpperCase() === 'TRUE').length);
+    const unresolvedCount = Number(coverage.fiscalia_office_file_matrix_unverified_count || rows.filter((row) => norm(row.is_proceeding).toUpperCase() !== 'TRUE').length);
+    const totalEpisodes = Array.isArray(interlinks && interlinks.fiscalia_response_episode_profiles)
+      ? interlinks.fiscalia_response_episode_profiles.length : 0;
+
+    const itemList = (items, dataAttribute, emptyText) => {
+      const list = Array.isArray(items) ? items : [];
+      if (!list.length) return `<span class="pdim-fiscalia-empty">${esc(emptyText)}</span>`;
+      return `<ul ${dataAttribute}>${list.map((item) => {
+        const value = typeof item === 'string' ? item : finiteText(item, 'text', 'label', 'summary', 'description');
+        const itemCodes = typeof item === 'object' && item
+          ? [...new Set([norm(item.kind
+
+---
+
+DirectRelated)}</ul><h3>${esc(copy.contextRelated)}</h3><p class="pdim-warning">${esc(copy.contextBoundary)}</p><ul data-finite-related-context>${finiteRelatedHtml(related.context, byId, copy.noContextRelated)}</ul></section>
+      <div class="pdim-finite-outcomes"><section data-finite-if-confirmed><h3>${esc(copy.ifConfirmed)}</h3><p>${esc(confirmed || '—')}</p></section><section data-finite-if-refuted><h3>${esc(copy.ifRefuted)}</h3><p>${esc(refuted || '—')}</p></section></div>
+      ${finiteReceiptHtml(test, interlinks, disposition)}
+    </section>`;
+  }
+
+  function fiscaliaMatrixHtml(interlinks, byId) {
+    const matrix = interlinks && interlinks.fiscalia_office_file_matrix;
+    if (!matrix) return `<section class="pdim-fiscalia-matrix is-unavailable" data-fiscalia-office-file-matrix data-model-status="UNAVAILABLE"><h3>${esc(copy.fiscaliaMatrix)}</h3><p class="pdim-warning">${esc(copy.fiscaliaMatrixUnavailable)}</p></section>`;
+    const rows = Array.isArray(matrix) ? matrix : (matrix.rows || matrix.records || matrix.files || matrix.entries || []);
+    const coverage = interlinks.coverage || (Array.isArray(matrix) ? {} : (matrix.coverage || {}));
+    const profileCount = Number(
+      coverage.fiscalia_office_file_matrix_source_profiled_record_count
+      || coverage.source_controlled_episode_profile_count
+      || coverage.profiled_row_count
+      || coverage.source_profile_count
+      || rows.filter((row) => (Array.isArray(row.source_profile_ids) && row.source_profile_ids.length) || row.episode_profile_id || row.profile_id || /SOURCE_CONTROLLED|PROFILED/.test(norm(row.profile_status || row.received_profile_status))).length
+    );
+    const exactCount = Number(coverage.fiscalia_office_file_matrix_exact_count || rows.filter((row) => norm(row.is_proceeding).toUpperCase() === 'TRUE').length);
+    const unresolvedCount = Number(coverage.fiscalia_office_file_matrix_unverified_count || rows.filter((row) => norm(row.is_proceeding).toUpperCase() !== 'TRUE').length);
+    const totalEpisodes = Array.isArray(interlinks && interlinks.fiscalia_response_episode_profiles)
+      ? interlinks.fiscalia_response_episode_profiles.length : 0;
+
+    const itemList = (items, dataAttribute, emptyText) => {
+      const list = Array.isArray(items) ? items : [];
+      if (!list.length) return `<span class="pdim-fiscalia-empty">${esc(emptyText)}</span>`;
+      return `<ul ${dataAttribute}>${list.map((item) => {
+        const value = typeof item === 'string' ? item : finiteText(item, 'text', 'label', 'summary', 'description');
+        const itemCodes = typeof item === 'object' && item
+          ? [...new Set([norm(item.kind), norm(item.attribution)].filter(Boolean))] : [];
+     
+
+---
+
+<dt>${esc(copy.strongestContrary)}</dt><dd>${esc(strongestContrary)}</dd></div>
+        <div data-fiscalia-unanswered-gap><dt>${esc(copy.unansweredGap)}</dt><dd>${esc(gap)}</dd></div>
+        <div data-fiscalia-row-boundary><dt>${esc(copy.rowBoundary)}</dt><dd>${esc(rowBoundary)}</dd></div>
+        <div data-fiscalia-source-profiles><dt>${esc(copy.sourceProfiles)}</dt><dd>${sourceProfiles.length ? sourceProfiles.map((id) => `<code>${esc(id)}</code>`).join(' ') : `<code>NO_SOURCE_CONTROLLED_PROFILE</code>`}</dd></div>
+      </dl></details>`;
+    }).join('');
+    return `<section class="pdim-fiscalia-matrix" data-fiscalia-office-file-matrix data-row-count="${rows.length}" data-exact-count="${exactCount}" data-unverified-count="${unresolvedCount}" data-profiled-count="${profileCount}" data-response-episode-count="${totalEpisodes}"><header><div><p class="pdim-finite-kicker">P05 · ${esc(copy.fiscaliaMatrix)}</p><h3>${esc(copy.fiscaliaMatrix)}</h3></div><div class="pdim-fiscalia-counts"><strong>${rows.length}</strong><span>${esc(copy.fiscaliaRows)}</span><b>${exactCount} ${esc(copy.fiscaliaExactRows)}</b><b>${unresolvedCount} ${esc(copy.fiscaliaUnresolvedRows)}</b><b>${profileCount} ${esc(copy.fiscaliaProfiled)}</b><b>${totalEpisodes} ${esc(copy.controlledEpisodes)}</b></div></header><p class="pdim-warning"><strong>NOT_LOCATED:</strong> ${esc(copy.noUnitaryAcknowledgement)}</p><p class="pdim-finite-rule">${esc(copy.fiscaliaModelBoundary)}</p><div class="pdim-fiscalia-rows">${rowHtml}</div></section>`;
+  }
+
+  function renderTrace(root, selected, byId, prism, interlinks, fiscaliaByMasterId, communityAuthorityByMasterId) {
+    const r = byId.get(selected); if (!r) return;
+    const disposition = interlinks && (interlinks.node_dispositions || []).find((entry) => entry.master_id === selected);
+    const relationshipById = new Map(((interlinks && interlinks.relationships) || []).map((relationship) => [relationship.id, relationship]));
+    const clusterById = new Map(((interlinks && interlinks.context_clusters) || []).map((cluster) => [cluster.id, cluster]));
+    const registryRelationships = disposition ? (disposition.relationship_ids || []).map((id) => relationshipById.get(id)).filter(Boolean) : [];
+    const directHtml = registryRelationships.length ? registryRelationships.map((relationship) => {
+      const otherId = relationship.from_master_id === selected ? relationship.to_master_id : relationship.from_master_id;
+      const other = byId.get(otherId);
+      return `<li data-interlink-disposition data-classification="DIRECT_PROCEDURAL_EDGE"><button type="button" data-trace-id="${esc(otherId)}"><strong>${esc(catalogLabel(interlinks.relationship_type_catalog, re
+
+---
+
+/dt><dd>${esc(strongestContrary)}</dd></div>
+        <div data-fiscalia-unanswered-gap><dt>${esc(copy.unansweredGap)}</dt><dd>${esc(gap)}</dd></div>
+        <div data-fiscalia-row-boundary><dt>${esc(copy.rowBoundary)}</dt><dd>${esc(rowBoundary)}</dd></div>
+        <div data-fiscalia-source-profiles><dt>${esc(copy.sourceProfiles)}</dt><dd>${sourceProfiles.length ? sourceProfiles.map((id) => `<code>${esc(id)}</code>`).join(' ') : `<code>NO_SOURCE_CONTROLLED_PROFILE</code>`}</dd></div>
+      </dl></details>`;
+    }).join('');
+    return `<section class="pdim-fiscalia-matrix" data-fiscalia-office-file-matrix data-row-count="${rows.length}" data-exact-count="${exactCount}" data-unverified-count="${unresolvedCount}" data-profiled-count="${profileCount}" data-response-episode-count="${totalEpisodes}"><header><div><p class="pdim-finite-kicker">P05 · ${esc(copy.fiscaliaMatrix)}</p><h3>${esc(copy.fiscaliaMatrix)}</h3></div><div class="pdim-fiscalia-counts"><strong>${rows.length}</strong><span>${esc(copy.fiscaliaRows)}</span><b>${exactCount} ${esc(copy.fiscaliaExactRows)}</b><b>${unresolvedCount} ${esc(copy.fiscaliaUnresolvedRows)}</b><b>${profileCount} ${esc(copy.fiscaliaProfiled)}</b><b>${totalEpisodes} ${esc(copy.controlledEpisodes)}</b></div></header><p class="pdim-warning"><strong>NOT_LOCATED:</strong> ${esc(copy.noUnitaryAcknowledgement)}</p><p class="pdim-finite-rule">${esc(copy.fiscaliaModelBoundary)}</p><div class="pdim-fiscalia-rows">${rowHtml}</div></section>`;
+  }
+
+  function renderTrace(root, selected, byId, prism, interlinks, fiscaliaByMasterId, communityAuthorityByMasterId) {
+    const r = byId.get(selected); if (!r) return;
+    const disposition = interlinks && (interlinks.node_dispositions || []).find((entry) => entry.master_id === selected);
+    const relationshipById = new Map(((interlinks && interlinks.relationships) || []).map((relationship) => [relationship.id, relationship]));
+    const clusterById = new Map(((interlinks && interlinks.context_clusters) || []).map((cluster) => [cluster.id, cluster]));
+    const registryRelationships = disposition ? (disposition.relationship_ids || []).map((id) => relationshipById.get(id)).filter(Boolean) : [];
+    const directHtml = registryRelationships.length ? registryRelationships.map((relationship) => {
+      const otherId = relationship.from_master_id === selected ? relationship.to_master_id : relationship.from_master_id;
+      const other = byId.get(otherId);
+      return `<li data-interlink-disposition data-classification="DIRECT_PROCEDURAL_EDGE"><button type="button" data-trace-id="${esc(otherId)}"><strong>${esc(catalogLabel(interlinks.relationship_type_catalog, relationship.relationship_type))}</st
+
+---
+
+.ifConfirmed}</dt><dd>${esc(localized(action.if_confirmed, '') || '—')}</dd></div>
+        <div><dt>${copy.ifRefuted}</dt><dd>${esc(localized(action.if_refuted, '') || '—')}</dd></div>
+        <div><dt>${copy.representation}</dt><dd><code>${esc(cell.representation_lineage_status || '—')}</code>${gaps.length ? ` · ${esc(gaps.join(', '))}` : ''}</dd></div>
+      </dl>
+      ${sources ? `<section class="pdim-source-links"><h4>${copy.sourceLinks}</h4><p>${esc(copy.sourceScope)}</p><ul>${sources}</ul></section>` : ''}
+      ${ids.length ? `<div class="pdim-prism-id-list"><strong>${copy.masterIds}</strong>${ids.map((id) => `<button type="button" data-trace-id="${esc(id)}">${esc(id)} · ${copy.openTrace}</button>${detailUrlFor(id) ? `<a class="pdim-detail-link" href="${esc(detailUrlFor(id))}">${lang === 'es' ? 'Ficha' : 'Record'} ↗</a>` : ''}`).join('')}</div>` : ''}
+      ${prop.id === 'P05' ? fiscaliaMatrixHtml(interlinks, byId) : ''}`;
+    // Keep the selected decision cell and its full evidential detail as one
+    // immediate reader action.  A synchronous alignment is required here:
+    // the detail can exceed one viewport (notably the 24-row Fiscalía matrix),
+    // and deferred smooth scrolling can leave a correctly focused result
+    // thousands of pixels below the visible matrix.
+    // `auto` would inherit the site's global `html { scroll-behavior:smooth }`
+    // and remain deferred; `instant` deliberately overrides that rule.
+    holder.scrollIntoView({behavior:'instant', block:'start', inline:'nearest'});
+    holder.focus({preventScroll:true});
+  }
+
+  function audienceControl(prism, state) {
+    return `<label class="pdim-prism-audience">${copy.audience}<select data-prism-audience>${prism.audience_lenses.map((a) => `<option value="${esc(a.id)}"${a.id === state.audience ? ' selected' : ''}>${esc(localized(a, ''))}</option>`).join('')}</select></label>`;
+  }
+
+  function audienceQuestion(prism, state) {
+    const lens = audienceLens(prism, state);
+    return localized(lens, 'question');
+  }
+
+  function audiencePath(prism, state) {
+    return localized(audienceLens(prism, state), 'source_path');
+  }
+
+  function exactDecisionDependencyRegisterHtml(interlinks, byId) {
+    const dispositions = ((interlinks && interlinks.node_dispositions) || [])
+      .filter((entry) => entry && byId.has(entry.master_id) && isExactProceeding(byId.get(entry.master_id)))
+      .sort((a, b) => labelFor(byId.get(a.master_id)).localeCompare(labelFor(byId.get(b.master_id))) || a.master_id.localeCompare(b.master_id));
+    const auditedCount = dispositions.filter(finiteTestComplete).length;
+    const sharedCount = Number(interlinks && interlinks.coverage && interlinks.coverage
+
+---

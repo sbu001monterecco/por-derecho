@@ -86,7 +86,7 @@
     image.fetchPriority = 'high';
     image.alt = es
       ? 'Fotografía publicada por La Voz de Lanzarote y utilizada en el módulo documental relativo al magistrado Alberto López Villarrubia'
-      : 'Photograph published by La Voz de Lanzarote and used in the documentary module concerning Judge Alberto López Villarrubia';
+      : 'Photograph published by La Voz de Lanzarote and used in the documentary module concerning Magistrate-Judge Alberto López Villarrubia';
 
     image.addEventListener('error', () => {
       image.remove();

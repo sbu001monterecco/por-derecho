@@ -1,0 +1,86 @@
+{
+  "schema": "por-derecho.puzzle-evidence-supplement.v1",
+  "supplement_id": "URIA-2015-COUNTEREVIDENCE-20260904",
+  "updated": "2026-09-04",
+  "scope": "April-July 2015 LPB / Sun Park creditor-enforcement / HAYA / Uría chronology",
+  "publication_rule": "Do not infer a client, retainer, instruction, title or conflict from institutional proximity or reported communication. Preserve contradictory evidence prominently.",
+  "events": [
+    {
+      "id": "EV-2015-04-28-HAYA-URIA-REPORTED-PATH",
+      "date": "2015-04-28",
+      "status": "DOCUMENTED_REPORTED_COMMUNICATION",
+      "actors": ["HAYA", "Uría Menéndez Madrid", "Javier González Guimaraes-Da Silva", "César Guadalupe Plaza"],
+      "statement": "A native contemporaneous Sun Park-side email records the sender's report that HAYA had asked the local lawyer for case material to pass to Uría Madrid and that Javier González later communicated about continuing the proceeding.",
+      "proves": "A contemporaneous report placing HAYA, Uría Madrid and Javier González in the enforcement information-flow chronology.",
+      "does_not_prove": "The native HAYA instruction/transmission, Uría's client, a retainer, matter number, authority to instruct the local lawyer, or legal title to the credit."
+    },
+    {
+      "id": "EV-2015-04-30-URIA-NO-HAYA-INSTRUCTION",
+      "date": "2015-04-30",
+      "status": "CONTRADICTED_NOT_ESTABLISHED",
+      "actors": ["Cuatrecasas", "Uría Menéndez", "HAYA"],
+      "statement": "After speaking with Uría, Cuatrecasas reported that Uría did not yet have instructions to take any action on behalf of HAYA.",
+      "proves": "Material contemporaneous counter-evidence against treating a HAYA mandate as established on 30 April 2015.",
+      "does_not_prove": "That no later HAYA instruction or engagement was ever opened."
+    },
+    {
+      "id": "EV-2015-05-04-SAREB-LOCAL-LAWYER",
+      "date": "2015-05-04",
+      "status": "STRONG_SUPPORTING_EVIDENCE",
+      "actors": ["SAREB", "César Guadalupe Plaza", "Cuatrecasas"],
+      "statement": "Cuatrecasas reported that the local lawyer confirmed acting in the relevant proceedings for SAREB rather than Bankia.",
+      "proves": "A contemporaneous capacity report relevant to separating creditor, servicer and counsel roles.",
+      "does_not_prove": "The native power/appearance, asset-specific assignment, servicing mandate or final legal ownership."
+    },
+    {
+      "id": "EV-2015-07-03-AC-RUBIO-REPORTED-CONTACT",
+      "date": "2015-07-03",
+      "status": "DOCUMENTED_REPORTED_COMMUNICATION",
+      "actors": ["Administrador Concursal", "Javier Rubio Sanz", "Uría Menéndez"],
+      "statement": "A preserved contemporaneous communication reports that the Administrador Concursal had spoken with Javier Rubio Sanz of Uría Menéndez.",
+      "proves": "A documented reported AC–Uría communication.",
+      "does_not_prove": "That Uría represented the Administrador Concursal, the client identity, retainer, mandate, subject matter or information exchanged."
+    }
+  ],
+  "relationships": [
+    {
+      "from": "HAYA",
+      "to": "Uría Menéndez Madrid",
+      "date": "2015-04",
+      "status": "REPORTED_INFORMATION_FLOW_NOT_RETAINER",
+      "label": "case-material path reported; HAYA mandate explicitly not established on 30 Apr"
+    },
+    {
+      "from": "Uría Menéndez",
+      "to": "HAYA",
+      "date": "2015-04-30",
+      "status": "COUNTEREVIDENCE",
+      "label": "Cuatrecasas reports Uría said it did not yet have instructions to act for HAYA"
+    },
+    {
+      "from": "SAREB",
+      "to": "local enforcement counsel",
+      "date": "2015-05-04",
+      "status": "REPORTED_CAPACITY",
+      "label": "local lawyer reportedly confirmed he acted for SAREB"
+    },
+    {
+      "from": "Administrador Concursal",
+      "to": "Javier Rubio Sanz / Uría Menéndez",
+      "date": "2015-07-03",
+      "status": "DOCUMENTED_REPORTED_COMMUNICATION",
+      "label": "reported direct communication; client/mandate/content open"
+    }
+  ],
+  "open_questions": [
+    "Who was Uría's client for the April 2015 creditor/enforcement contact, if a matter was opened?",
+    "What was the exact date, scope and matter number of any HAYA/Uría engagement that may have been opened after 30 April 2015?",
+    "What was the native 9 April HAYA instruction/transmission and who received the file at Uría?",
+    "What was Javier González's native communication with the local lawyer, and under whose instruction was it made?",
+    "What do the court-file appearance/substitution documents show about SAREB, HAYA, Bankia and later creditor identity?",
+    "What client/matter/time-entry records exist for the 3 July AC–Javier Rubio Sanz contact?"
+  ],
+  "source_notes": [
+    "/evidence/uria-ricpe-sun-park/2015-creditor-haya-uria-source-note.md"
+  ]
+}

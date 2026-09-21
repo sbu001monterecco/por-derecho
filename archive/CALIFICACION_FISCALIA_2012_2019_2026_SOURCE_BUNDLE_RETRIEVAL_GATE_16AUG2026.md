@@ -34,16 +34,18 @@ Hashes identify the exact reviewed binaries. They prove binary identity of the r
 
 | ID | Source | SHA-256 | Controlled evidential treatment |
 |---|---|---|---|
-| CF-01 | `FISCALÍA PROVINCIAL DE LAS PALMAS 13 Jan 2026.PDF` | `d42051eea0ff28bc230ef58315333729a84454b8376b23ad7bbc5db35e3a77a4` | PARTY PLEADING / criminal allegation / requested investigation. |
-| CF-02 | `DENUNCIA_AUTONOMA_SUN_PARK_Instrumentalizacion_Unidades_2026-01-24 (2).PDF` | `d3274bde90b2e40ef15f0cc4d96ee0d8715c4bf657559be709108df1850c774e` | PARTY PLEADING / structural criminal theory + source locators. |
-| CF-03 | `AMPLIACION_DENUNCIA_INSTRUMENTALIZACION_250126 (2).PDF` | `577b251e66d78d8f19ebb96b3deb96864e6a4401837cc67af8acbd25aa7affe8` | PARTY PLEADING / reciprocal-validation theory + source locators. |
-| CF-04 | `DENUNCIA_AUTONOMA_SUN_PARK_Instrumentalizacion_Unidades_2026-01-24 (1).PDF` | `d3274bde90b2e40ef15f0cc4d96ee0d8715c4bf657559be709108df1850c774e` | **EXACT BINARY DUPLICATE OF CF-02.** Do not count as independent corroboration. |
-| CF-05 | `Ampliacion_Denuncia_Penal_Prevaricacion_Judicial_Concurso_36-2012.PDF` | `07dc79179397f680f0201075618d6782af31a6432c823a1addf341a0f75bf1be` | PARTY PLEADING / 8-Feb-2026 expansion; embedded reports of later institutional acts require primary confirmation. |
-| CF-06 | `Ampliacion_Denuncia_Penal_EG_19-2026_Separacion_Paquete_Financiero (4).PDF` | `567992eb8db2f18fbba816a31ab6f848cd1c2d71e1670c2d15eeebc60be6ae1e` | PARTY PLEADING / banking-fragmentation criminal theory; EG 19/2026 reference. |
-| CF-07 | `DENUNCIA_PENAL_PREVIA_VALENCIA_SUN_PARK_2026-01-19 (1).PDF` | `32e569fd4f67382363ae21a9893fea557186c1b9326f700eec3cacb07cf20620` | PARTY PLEADING / banking-origin criminal complaint; requested production from CaixaBank/CAM perimeter. |
-| CF-08 | `ampliacion fiscaliala AC 14ENE19.pdf` | `7e0ac2d60725660e18b76f939771659cb2f66402c6ade5148f4feadd9144a64f` | CONTEMPORANEOUS PARTY PLEADING in DI 248/2018; strong notice/retrieval evidence, not proof of misconduct. |
-| CF-09 | `Apliación Demanda Minorías Proc1260-2011.pdf` | `5d6fd2b1c4ea67b82a53fc04e217840dc1f88bca294035757bee722a5e85b45f` | SCANNED PARTY PLEADING dated 23-Feb-2012; pre-concurso litigation chronology. |
-| CF-10 | `AWESWELL -  Alegaciones escrito AC y Decreto 13MAY19.pdf` | `d028740ffbd42887df39e4d0894139e0875b60313c9e7131d9d8985cc11f5508` | PARTY PLEADING, but contains reproduced/quoted AC Plan/report language and a precise procedural chronology requiring comparison with originals. |
+| CF-01 | January-2026 Las Palmas Fiscalía submission | `d42051eea0ff28bc230ef58315333729a84454b8376b23ad7bbc5db35e3a77a4` | PARTY PLEADING / criminal allegation / requested investigation. |
+| CF-02 | 24-Jan-2026 autonomous Sun Park complaint | `d3274bde90b2e40ef15f0cc4d96ee0d8715c4bf657559be709108df1850c774e` | PARTY PLEADING / structural criminal theory + source locators. |
+| CF-03 | 25-Jan-2026 complaint expansion | `577b251e66d78d8f19ebb96b3deb96864e6a4401837cc67af8acbd25aa7affe8` | PARTY PLEADING / reciprocal-validation theory + source locators. |
+| CF-04 | duplicate acquisition copy of CF-02 | `d3274bde90b2e40ef15f0cc4d96ee0d8715c4bf657559be709108df1850c774e` | **EXACT BINARY DUPLICATE OF CF-02.** Do not count as independent corroboration. |
+| CF-05 | 8-Feb-2026 judicial-prevarication-theory expansion | `07dc79179397f680f0201075618d6782af31a6432c823a1addf341a0f75bf1be` | PARTY PLEADING / 8-Feb-2026 expansion; embedded reports of later institutional acts require primary confirmation. |
+| CF-06 | EG 19/2026 financial-package-separation expansion | `567992eb8db2f18fbba816a31ab6f848cd1c2d71e1670c2d15eeebc60be6ae1e` | PARTY PLEADING / banking-fragmentation criminal theory; EG 19/2026 reference. |
+| CF-07 | 19-Jan-2026 Valencia banking-origin complaint | `32e569fd4f67382363ae21a9893fea557186c1b9326f700eec3cacb07cf20620` | PARTY PLEADING / banking-origin criminal complaint; requested production from CaixaBank/CAM perimeter. |
+| CF-08 | DI 248/2018 expansion dated 14-Jan-2019 | `7e0ac2d60725660e18b76f939771659cb2f66402c6ade5148f4feadd9144a64f` | CONTEMPORANEOUS PARTY PLEADING in DI 248/2018; strong notice/retrieval evidence, not proof of misconduct. |
+| CF-09 | minority claim expansion dated 23-Feb-2012 | `5d6fd2b1c4ea67b82a53fc04e217840dc1f88bca294035757bee722a5e85b45f` | SCANNED PARTY PLEADING dated 23-Feb-2012; pre-concurso litigation chronology. |
+| CF-10 | Aweswell 13-May-2019 allegations concerning AC filing/decree | `d028740ffbd42887df39e4d0894139e0875b60313c9e7131d9d8985cc11f5508` | PARTY PLEADING, but contains reproduced/quoted AC Plan/report language and a precise procedural chronology requiring comparison with originals. |
+
+The exact private acquisition filenames and any provider locators for CF-01–CF-10 are withheld from public Git; the stable CF IDs and hashes preserve exact-byte continuity.
 
 ### Custody boundary
 
@@ -187,7 +189,7 @@ The web implementation should use a source-status banner and avoid publishing pe
 
 1. Complete filed-stamped/REGAGE receipts and Fiscalía file references/outcomes for CF-01, CF-02/03, CF-05, CF-06 and CF-07.
 2. Signed 27-Jan-2026 Fiscalía Tenerife Diligencias 20/2026 decree and its actual destination/current status.
-3. Complete certified **DI 248/2018** file, including original 17-Oct-2018 complaint, CF-08 annexes, performed diligences and 7-May-2019 archive basis.
+3. Complete certified **DI 248/2018** file, including the originating 12-Sep-2018 complaint, the AC's distinct 17-Oct-2018 testimony request, CF-08 annexes, performed diligences and 7-May-2019 archive basis.
 4. Original **JV 1260/2011** complaint, CF-09 expansion annexes, Monterecco registry note, hearing record, judgment/appeal/finality.
 5. Native 12-Jul-2016 burofax and annexes supporting the €2,874,076.19 liability-inflation allegation.
 6. Original Plan de Liquidación, CAM offer, valuation and 16-Apr/4-Jun/26-Jun-2018 orders.
