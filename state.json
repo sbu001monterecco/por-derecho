@@ -2,11 +2,11 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 23,
   "owner": "1684:d068133026ab28d4e689553a461bc29016f08858",
-  "phase": "RECOVERY_REQUIRED",
+  "phase": "SUPERSEDED_WITH_OPEN_READBACK",
   "pr": 1684,
   "base_sha": "dfbde5ef285da6253158dc2d0806e7ec05242725",
   "candidate_sha": "d068133026ab28d4e689553a461bc29016f08858",
-  "run_id": 35547289814,
+  "run_id": 35552174705,
   "claimed_at": "2026-09-20T23:16:52.010535Z",
   "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
@@ -1560,7 +1560,19 @@
       "evidence": {
         "failed_run": "35547289814"
       }
+    },
+    {
+      "phase": "SUPERSEDED_WITH_OPEN_READBACK",
+      "at": "2026-09-21T01:50:26.733403Z",
+      "evidence": {
+        "prior_merge_sha": "01df48e335d07d0f1068381a294f6b65917f1248",
+        "current_main_sha": "6f00bc1bca4a70b431d77470cf7bc36f805cbf04",
+        "pages_run_id": 35544212416,
+        "readback_verified": false,
+        "verification_gap_preserved": true,
+        "reason": "Later legitimate main superseded the deployed release before exact scoped byte readback completed; no verified receipt is inferred."
+      }
     }
   ],
-  "updated_at": "2026-09-21T00:18:52.376821Z"
+  "updated_at": "2026-09-21T01:50:26.733403Z"
 }
