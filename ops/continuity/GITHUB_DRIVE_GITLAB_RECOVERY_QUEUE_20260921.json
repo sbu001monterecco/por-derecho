@@ -59,5 +59,34 @@
     "Keep private source bytes outside public Git."
   ],
   "completion_rule": "A material item is continuity-complete only when the applicable GitHub, private-custody and GitLab-replay states are explicit.",
-  "external_action_authority": false
+  "external_action_authority": false,
+  "replay_items": [
+    {
+      "id": "PD-GL-REC-SR-CAP-20260921-01",
+      "scope": "Sun Rock institutional capital programme successor release",
+      "recovery_class": "EXACT_GITLAB_RECOVERY",
+      "github_branch": "integration/sun-rock-capital-programme-20260921",
+      "github_state": "INTEGRATION_PREPARED",
+      "public_paths": [
+        "en/institutional-capital/index.html",
+        "es/capital-institucional/index.html",
+        "assets/institutional-capital-20260921.css",
+        "assets/data/sun-rock-capital-process-v1.json",
+        "en/capital-relationships/index.html",
+        "es/relaciones-de-capital/index.html",
+        "sitemap-sun-rock-institutional-20260916.xml",
+        "ops/capital/INSTITUTIONAL_RESPONSE_PLAYBOOK_20260921.md",
+        "ops/capital/SUN_ROCK_CAPITAL_PROGRAMME_CONTINUITY_20260921.md",
+        "CURRENT_HANDOVER_PRINCIPAL_FINANCIAL_RELATIONSHIPS_17SEP2026.md",
+        ".github/workflows/sun-rock-capital-relationships.yml",
+        "ci/sun_rock_capital_relationships_acceptance_20260916.py",
+        "publication-manifests/sun-rock-institutional-capital-20260921.json"
+      ],
+      "private_drive_handoff": "PRESENT_IN_APPROVED_PRIVATE_CUSTODY_LOCATOR_NOT_PUBLIC",
+      "gitlab_state": "PENDING_AUTHENTICATED_ACCESS",
+      "replay_rule": "Freeze GitHub/GitLab heads, preserve newer GitLab work, port only the source-proved net public-safe delta, run GitLab validators/pipeline, verify affected Pages routes, and record residual conflicts.",
+      "github_pr": 1701,
+      "github_prepared_head": "1b993927f4ed26875ba6bd28901e9231aa8fc7f4"
+    }
+  ]
 }
