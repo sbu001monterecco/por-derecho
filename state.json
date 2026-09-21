@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 24,
   "owner": "1686:e8d83c63b52219d4275c178729f94121cff3413f",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 1686,
   "base_sha": "ba8e83ee69ec48da17d505bf3d832c217da22ce2",
   "candidate_sha": "e8d83c63b52219d4275c178729f94121cff3413f",
@@ -1489,6 +1489,72 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 1686,
+      "candidate_sha": "e8d83c63b52219d4275c178729f94121cff3413f",
+      "at": "2026-09-21T03:10:41.256028Z",
+      "merge_sha": "2e2e0aaf7ca83c4d3cf91322d16f71919f7bc1a0",
+      "pages_run_id": 35556487212,
+      "exact_matches": [
+        {
+          "path": "assets/dp1901-routing-collision-20260919.js",
+          "sha256": "2ed5f3379d1a855b443acd2da982c9d7043f45190ebe1bca47bcf903e6fd5d01",
+          "bytes": 11286
+        },
+        {
+          "path": "assets/dp1901-shame-landing-20260921.css",
+          "sha256": "113ef35c178ba93da19bed6450941974e9faf5ebcf17dd224fca2011d5184e89",
+          "bytes": 4053
+        },
+        {
+          "path": "assets/visuals/dp1901-shame-20260921/la-verguenza-no-se-fue.avif",
+          "sha256": "dcf2af713f28c6804b4a209ee06012ae54128f0fa2e575ec9e227db2a3de92ee",
+          "bytes": 44609
+        },
+        {
+          "path": "assets/visuals/dp1901-shame-20260921/shame-has-left-the-building.avif",
+          "sha256": "0e0e8fe8dae69f05c3bc79e4a5c0285534f4bf77e2bb2be9fd5628308e4a33a0",
+          "bytes": 47812
+        },
+        {
+          "path": "en/dp-1901-2026/shame-has-left-the-building/index.html",
+          "sha256": "223aa0181050d8b6e0cd136b1e6e114fc74b32b8670fbbee4c131d30d401e4d6",
+          "bytes": 13165
+        },
+        {
+          "path": "en/dp-1901-2026/shame-has-left-the-building/linkedin-post.txt",
+          "sha256": "4ccad1dbc212d13debecb6d14f74aa24942cf7e4ebc1427133aed409b2687f2e",
+          "bytes": 2546
+        },
+        {
+          "path": "en/index.html",
+          "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+          "bytes": 228197
+        },
+        {
+          "path": "es/dp-1901-2026/la-verguenza-no-se-fue/index.html",
+          "sha256": "3572309809765999b9224ee36112a58ad14c04d63afa8ba16af69250c1ac6f57",
+          "bytes": 14574
+        },
+        {
+          "path": "es/dp-1901-2026/la-verguenza-no-se-fue/linkedin-post.txt",
+          "sha256": "68cfc7be6d38785938c279b5eab872a4891edb342ab99200b73f6df0e9b2b600",
+          "bytes": 2673
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+          "bytes": 237351
+        },
+        {
+          "path": "publication-manifests/dp1901-shame-landing-20260921.json",
+          "sha256": "4c3e9f8849a6802a0eec1f50fe3bd04f730d139f4c036eb0ca5e1d5dd95415bc",
+          "bytes": 6008
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -1531,7 +1597,74 @@
         "pages_run_id": 35556487212,
         "merge_sha": "2e2e0aaf7ca83c4d3cf91322d16f71919f7bc1a0"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-21T03:10:41.255984Z",
+      "evidence": {
+        "merge_sha": "2e2e0aaf7ca83c4d3cf91322d16f71919f7bc1a0",
+        "pages_run_id": 35556487212,
+        "exact_matches": [
+          {
+            "path": "assets/dp1901-routing-collision-20260919.js",
+            "sha256": "2ed5f3379d1a855b443acd2da982c9d7043f45190ebe1bca47bcf903e6fd5d01",
+            "bytes": 11286
+          },
+          {
+            "path": "assets/dp1901-shame-landing-20260921.css",
+            "sha256": "113ef35c178ba93da19bed6450941974e9faf5ebcf17dd224fca2011d5184e89",
+            "bytes": 4053
+          },
+          {
+            "path": "assets/visuals/dp1901-shame-20260921/la-verguenza-no-se-fue.avif",
+            "sha256": "dcf2af713f28c6804b4a209ee06012ae54128f0fa2e575ec9e227db2a3de92ee",
+            "bytes": 44609
+          },
+          {
+            "path": "assets/visuals/dp1901-shame-20260921/shame-has-left-the-building.avif",
+            "sha256": "0e0e8fe8dae69f05c3bc79e4a5c0285534f4bf77e2bb2be9fd5628308e4a33a0",
+            "bytes": 47812
+          },
+          {
+            "path": "en/dp-1901-2026/shame-has-left-the-building/index.html",
+            "sha256": "223aa0181050d8b6e0cd136b1e6e114fc74b32b8670fbbee4c131d30d401e4d6",
+            "bytes": 13165
+          },
+          {
+            "path": "en/dp-1901-2026/shame-has-left-the-building/linkedin-post.txt",
+            "sha256": "4ccad1dbc212d13debecb6d14f74aa24942cf7e4ebc1427133aed409b2687f2e",
+            "bytes": 2546
+          },
+          {
+            "path": "en/index.html",
+            "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
+            "bytes": 228197
+          },
+          {
+            "path": "es/dp-1901-2026/la-verguenza-no-se-fue/index.html",
+            "sha256": "3572309809765999b9224ee36112a58ad14c04d63afa8ba16af69250c1ac6f57",
+            "bytes": 14574
+          },
+          {
+            "path": "es/dp-1901-2026/la-verguenza-no-se-fue/linkedin-post.txt",
+            "sha256": "68cfc7be6d38785938c279b5eab872a4891edb342ab99200b73f6df0e9b2b600",
+            "bytes": 2673
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
+            "bytes": 237351
+          },
+          {
+            "path": "publication-manifests/dp1901-shame-landing-20260921.json",
+            "sha256": "4c3e9f8849a6802a0eec1f50fe3bd04f730d139f4c036eb0ca5e1d5dd95415bc",
+            "bytes": 6008
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-21T03:10:35.300626Z"
+  "updated_at": "2026-09-21T03:10:41.255984Z"
 }
