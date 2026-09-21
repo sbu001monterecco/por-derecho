@@ -13,6 +13,23 @@ The explanatory objective is simple: counsel already knew the Administrator Conc
 
 Use an explanation-first structure. Do not overwhelm counsel with every later institutional filing or every evidential annex before they understand the three-track architecture.
 
+## Reaction-management objective
+
+The client is specifically concerned that counsel — especially Javier Sixto, who previously warned against steps that could backfire or mis-trigger — may initially interpret the DP1901 outcome as confirmation that the client improperly initiated a judge-related criminal proceeding or disregarded counsel's caution.
+
+The emails must not evade that concern. They should address it early and calmly:
+
+- acknowledge Javier's previous caution and make clear it was understood;
+- avoid defensiveness, blame or any suggestion that counsel's warning was wrong;
+- distinguish **what the client actually did** from **what the court/registry subsequently did**;
+- explain that the client made three separate June presentations with different subjects and intended routes;
+- state that Ref.24 was expressly framed as a denuncia/notitia criminis directed to the TSJC, not as a formal querella or an assertion that the ordinary Instrucción court had competence to decide the judge-related merits;
+- state that Ref.21 was the autonomous private-actor complaint contemporaneously associated with DP1901;
+- explain that the present problem is the later procedural convergence/identity collision and the 14 September Auto, not an attempt to conceal or minimise the client's own filing choices;
+- invite counsel to correct the client's legal understanding and take control of the immediate judicial response.
+
+The desired reaction is not agreement with the client's interpretation. The desired reaction is: **counsel first understands the chronology and the distinction between the client's acts and the later institutional routing, and only then assesses what went wrong and what remedy is required.**
+
 ## Counsel knowledge state supplied by the client on 21 September 2026
 
 ### Track A — Administrator Concursal — known to counsel
@@ -59,6 +76,8 @@ These are questions for counsel and the judicial remedies. The repository does n
 Each email should be individually written for its recipient relationship but should communicate the same core procedural architecture:
 
 - appreciation and concise context;
+- an early, non-defensive acknowledgement that Javier had previously warned against steps that might backfire or mis-trigger, coupled with a concise explanation that the purpose of the update is to show exactly what was filed and what happened afterwards;
+- a short **"what I did / what I did not do"** clarification: three separate presentations; no claim that Ref.24 was a formal querella; no request that the ordinary Plaza 6 court acquire TSJC competence; no attempt to merge Ref.21 and Ref.24;
 - immediate focus: the 14 September DP 1901 Auto and action required;
 - one short paragraph reminding counsel of the known Ref.22 -> DP 1956 AC track and its provisional dismissal;
 - one short paragraph introducing the previously unknown Ref.21 private-actor complaint;
@@ -67,7 +86,24 @@ Each email should be individually written for its recipient relationship but sho
 - explanation of the later DP 1901 identity/routing collision;
 - brief mention of E.G.745 only as contextual parallel, without allowing it to obscure the immediate judicial task;
 - the precise action requested from counsel;
-- links/attachments only after the explanation, with a small controlled core rather than an indiscriminate document dump.
+- links/attachments only after the explanation, with a small controlled core rather than an indiscriminate document dump;
+- a small explanatory visual set, introduced as orientation aids rather than evidence substitutes.
+
+## Visuals required for the lawyer updates
+
+The visuals are important because they can make the procedural distinction understandable in seconds, particularly where counsel may otherwise react first to the adverse outcome rather than to the route by which it arose.
+
+At minimum, the drafting thread should consider including or linking these controlled visuals:
+
+1. **Neutral routing-collision visual** — `assets/visuals/dp1901-routing-collision-20260919.svg`. Prefer this as the first/lead diagram because it is structurally explanatory and less rhetorically charged.
+2. **"Dos denuncias autónomas: metáfora de una sola fosa"** — current controlled public-safe version: `assets/visuals/eg745-working-20260920/l1.png`. This is the visual shorthand for Ref.21 (private actors) and Ref.24 (judge/TSJC) apparently converging into the DP1901 outcome.
+3. Other DP1901 explanatory visuals may be used selectively where they simplify Decanato/reparto, Fiscal corpus or ATLANTE chronology, but do not turn the email into a campaign package.
+
+The "single grave / una sola fosa" visual must be accompanied by an explicit boundary substantially equivalent to:
+
+> This is an explanatory metaphor for the apparent procedural convergence of two autonomous complaints. It is not evidence that anyone destroyed, concealed, deliberately merged or legally extinguished either complaint; the official association/routing history is precisely what remains to be obtained.
+
+For Javier in particular, do **not** lead the email with the grave metaphor. Lead with the plain chronology and the neutral routing diagram, then use the grave image after the reader understands that it represents the procedural problem rather than an accusation. The objective is to prevent a snap conclusion that the client is escalating rhetoric instead of seeking legal correction.
 
 Tone: grateful, collaborative, respectful, positive, and easy to process for busy lawyers. Use the art-of-explanation approach. The objective is to give counsel enough structure to act quickly, while laying the building blocks for the fuller record.
 
