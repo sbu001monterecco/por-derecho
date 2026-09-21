@@ -1,13 +1,13 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 38,
-  "owner": "1725:34aec274b9bf161b404da2c0ee1dd3d8a8a28dc9",
-  "phase": "VERIFIED_FOR_SCOPE",
-  "pr": 1725,
-  "base_sha": "01e24273b21627e3d79387ea1fcd7ca57dcbeef1",
-  "candidate_sha": "34aec274b9bf161b404da2c0ee1dd3d8a8a28dc9",
-  "run_id": 35664493490,
-  "claimed_at": "2026-09-21T22:47:17.298936Z",
+  "fence": 39,
+  "owner": "1732:eca867a95e0c26b718b4999b719d93ef10e9f61b",
+  "phase": "CLAIMED",
+  "pr": 1732,
+  "base_sha": "5d537063aa7281c9051897739b00f00f24fdf341",
+  "candidate_sha": "eca867a95e0c26b718b4999b719d93ef10e9f61b",
+  "run_id": 35667009916,
+  "claimed_at": "2026-09-21T23:20:16.279907Z",
   "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
     {
@@ -2176,114 +2176,5 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-09-21T22:47:18.476041Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "PD release acceptance",
-            "id": 106545892158,
-            "conclusion": "success"
-          },
-          {
-            "name": "publication-integrity",
-            "id": 106545888858,
-            "conclusion": "success"
-          }
-        ]
-      }
-    },
-    {
-      "phase": "MERGE_PENDING",
-      "at": "2026-09-21T22:48:24.154492Z",
-      "evidence": {
-        "pr": 1725
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-09-21T22:48:25.321715Z",
-      "evidence": {
-        "merge_sha": "fbeff4dbbabcda55152aba8e928ab54ca5faaedb"
-      }
-    },
-    {
-      "phase": "DEPLOYED",
-      "at": "2026-09-21T22:49:12.739233Z",
-      "evidence": {
-        "pages_run_id": 35664473625,
-        "merge_sha": "fbeff4dbbabcda55152aba8e928ab54ca5faaedb"
-      }
-    },
-    {
-      "phase": "VERIFIED_FOR_SCOPE",
-      "at": "2026-09-21T22:49:22.224563Z",
-      "evidence": {
-        "merge_sha": "fbeff4dbbabcda55152aba8e928ab54ca5faaedb",
-        "pages_run_id": 35664473625,
-        "exact_matches": [
-          {
-            "path": "en/index.html",
-            "sha256": "c048d21d4c94e3cb6896e4c74d69a9ab73f84c3426d40fe815370b40fe1ba109",
-            "bytes": 228197
-          },
-          {
-            "path": "en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/index.html",
-            "sha256": "1cf0da200722d6fe1fb002454401adc0d8b6e8bcd1306a2015e034b04286813b",
-            "bytes": 19290
-          },
-          {
-            "path": "en/insolvency-36-2012-administrator-removal-fees/index.html",
-            "sha256": "fc5db586f0c0bdf319781c29f5783fe01bcab668c8daf244362bb1f2b873db94",
-            "bytes": 23911
-          },
-          {
-            "path": "en/insolvency-36-2012-insolvency-administrator/index.html",
-            "sha256": "4b8a68087edae038c2b5e6660ad1cb52adf9d267fb730c1cb5981bec82d20c94",
-            "bytes": 13038
-          },
-          {
-            "path": "en/pwc-canarias-carlos-saavedra-sun-park/index.html",
-            "sha256": "42b2efd4dd1352ec0b22265f468e7c0b6561870cac549daa72fc789a0021a37c",
-            "bytes": 60753
-          },
-          {
-            "path": "es/concurso-36-2012-administrador-concursal/index.html",
-            "sha256": "ff5b6d5fcf9b24ea130c44654db4183246e0b1897c18e86d5748cb5e6a1b4743",
-            "bytes": 16465
-          },
-          {
-            "path": "es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/index.html",
-            "sha256": "f3fff089315762121b5eaec5744e0a85f88276cdfa543fa428d123ffdf11e283",
-            "bytes": 23648
-          },
-          {
-            "path": "es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/index.html",
-            "sha256": "206d8e77706ae1d93ee8fe93e91fae2609d05b089794629582b8414423179a36",
-            "bytes": 36003
-          },
-          {
-            "path": "es/index.html",
-            "sha256": "48a7ebf0751867525f140cf3e70c34f8fe22a1c6edd7aeb0b3178e788da95dda",
-            "bytes": 237351
-          },
-          {
-            "path": "es/pwc-canarias-carlos-saavedra-sun-park/index.html",
-            "sha256": "d5435fd978887d8a53c232b84906d9304530b02c23862db645fe51777edb70aa",
-            "bytes": 63634
-          },
-          {
-            "path": "publication-manifests/ac-rpl3304-r33-opposition-20260921.json",
-            "sha256": "f1c8c7304ca8eb69ae6ce946680eb85d0c73c9b448e8ef45fa0a85110597efbd",
-            "bytes": 3353
-          }
-        ],
-        "pending": [],
-        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
-      }
-    }
-  ],
-  "updated_at": "2026-09-21T22:49:22.224563Z"
+  "checkpoints": []
 }
