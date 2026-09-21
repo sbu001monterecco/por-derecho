@@ -38,6 +38,9 @@ MAILBOX_COHORT = "MAILBOX_TRANSPORT_SOURCE_PROVED"
 MAILBOX_EXPECTED = 156
 PRIVATE_MANIFEST_SHA256 = "bdd12a8fa62b5058525e1c37053fb7899ac24a60d12ff48ab8b74bda617cd6f6"
 PRIVATE_MANIFEST_ROWS = 231
+REGAGE_STATUS_EXPORT_INPUT = REPO_ROOT / "ops/regage-status-export-input-20260921.json"
+REGAGE_STATUS_EXPORT_COHORT = "REGAGE_STATUS_EXPORT_20260921"
+REGAGE_STATUS_EXPORT_RAW_SHA256 = "5cc7eaa867b248b0bff7e9cd19e5093dfe2df494fae8ca84c8f12c15382016a3"
 
 
 RECIPIENTS: dict[str, tuple[str, str]] = {
@@ -1669,6 +1672,107 @@ def base_register() -> dict[str, Any]:
     }
 
 
+
+def load_regage_status_export_events() -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    data = json.loads(REGAGE_STATUS_EXPORT_INPUT.read_text(encoding="utf-8"))
+    records = data.get("records", [])
+    if data.get("source", {}).get("raw_sha256") != REGAGE_STATUS_EXPORT_RAW_SHA256:
+        raise ValueError("REGAGE status-export raw source hash control drift")
+    if len(records) != 398:
+        raise ValueError("REGAGE status-export requires 398 records")
+    state_counts: dict[str, int] = {}
+    for row in records:
+        state = row["status_literal_es"]
+        state_counts[state] = state_counts.get(state, 0) + 1
+    if state_counts != {"Recibido": 336, "Enviado": 36, "Rechazado": 26}:
+        raise ValueError(f"REGAGE status-export state denominator drift: {state_counts}")
+    added = [row for row in records if row["representation"] == "ADD_FORMAL_EVENT"]
+    reused = [row for row in records if row["representation"] == "REUSE_EXISTING_FORMAL_EVENT"]
+    if len(added) != 284 or len(reused) != 114:
+        raise ValueError("REGAGE status-export add/reuse denominator drift")
+    added_ids = [row["event_id"] for row in added]
+    if len(set(added_ids)) != 284 or min(added_ids) != "PD-SP-EVT-0213" or max(added_ids) != "PD-SP-EVT-0496":
+        raise ValueError("REGAGE status-export event-ID allocation drift")
+
+    events: list[dict[str, Any]] = []
+    for row in added:
+        status = row["status_literal_es"]
+        if status not in {"Recibido", "Enviado", "Rechazado"}:
+            raise ValueError(f"unsupported REGAGE status: {status}")
+        if status == "Recibido":
+            literal_state = "STATUS_EXPORT_LITERAL_RECIBIDO"
+        elif status == "Enviado":
+            literal_state = "STATUS_EXPORT_LITERAL_ENVIADO"
+        else:
+            literal_state = "STATUS_EXPORT_LITERAL_RECHAZADO"
+        event = {
+            "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+            "canonical_anchor_en": f"en/institutional-records/#communication-{row['event_id']}",
+            "canonical_anchor_es": f"es/registros-institucionales/#communication-{row['event_id']}",
+            "channel": "REGAGE",
+            "cohort": REGAGE_STATUS_EXPORT_COHORT,
+            "criminal_responsibility_transfer": False,
+            "direction": "OUTBOUND_TO_INSTITUTION",
+            "does_not_prove": [
+                "Onward delivery, internal routing, incorporation, admission, substantive examination, merits acceptance, requested relief or criminal responsibility.",
+                "The truth or legal characterisation of any underlying allegation.",
+            ],
+            "does_not_prove_es": [
+                "Entrega ulterior, reparto interno, incorporación, admisión, examen sustantivo, aceptación del fondo, concesión de lo solicitado o responsabilidad penal.",
+                "La veracidad o calificación jurídica de cualquier alegación subyacente.",
+            ],
+            "event_date": row["timestamp_literal"][:10],
+            "event_id": row["event_id"],
+            "evidence_state": {
+                "delivery": "NOT_INFERRED_BEYOND_LITERAL_STATUS",
+                "destination": "DESTINATION_AS_STATED_IN_STATUS_EXPORT",
+                "filing": "NO_ACCEPTED_FILING_INFERRED_BEYOND_LITERAL_STATUS",
+                "internal_association": "NOT_ESTABLISHED_BY_STATUS_EXPORT",
+                "merits": "NOT_ESTABLISHED_BY_STATUS_EXPORT",
+                "registration": "REGAGE_REFERENCE_PRESENT_IN_STATUS_EXPORT",
+                "registry_status": literal_state,
+                "substantive_examination": "NOT_ESTABLISHED_BY_STATUS_EXPORT",
+                "transmission": "NOT_INFERRED_BEYOND_LITERAL_STATUS",
+            },
+            "layer": "FORMAL_REGISTRATION",
+            "matter_references": [],
+            "office": row["destination_literal"],
+            "official_reference": row["registration"],
+            "presented_local": row["timestamp_literal"],
+            "proof_level": "USER_SUPPLIED_REGAGE_STATUS_EXPORT_LITERAL_STATE",
+            "proves": [
+                f"The supplied REG/RedSARA export records {row['registration']} with literal status '{status}', the stated destination and timestamp."
+            ],
+            "proves_es": [
+                f"El export suministrado de REG/RedSARA registra {row['registration']} con estado literal '{status}', el destino indicado y la marca temporal."
+            ],
+            "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+            "public_summary": f"REG/RedSARA status record {row['registration']} — literal status: {status}.",
+            "public_summary_es": f"Registro de estado REG/RedSARA {row['registration']} — estado literal: {status}.",
+            "record_type": "REGISTRATION_STATUS_EXPORT",
+            "registry_status_literal_es": status,
+            "source_integrity": {
+                "raw_source_committed": False,
+                "raw_source_sha256": REGAGE_STATUS_EXPORT_RAW_SHA256,
+                "repository_anchor": "ops/regage-status-export-input-20260921.json",
+                "status": "USER_SUPPLIED_STATUS_EXPORT_PUBLIC_SAFE_DERIVATIVE",
+            },
+            "source_key": f"REGAGE_STATUS_EXPORT_20260921:{row['registration']}",
+            "source_timezone": "NOT_STATED; export timestamp preserved literally without conversion",
+            "subject_label_status": "WITHHELD_FROM_PUBLIC_DERIVATIVE",
+        }
+        if status == "Rechazado":
+            event["evidence_state"]["filing"] = "REJECTED_STATUS_PRESERVED_NO_ACCEPTED_FILING_INFERRED"
+        events.append(event)
+    control = {
+        "records": 398,
+        "reused_existing_formal_events": 114,
+        "new_formal_events": 284,
+        "status_literal_es": {"Recibido": 336, "Enviado": 36, "Rechazado": 26},
+    }
+    return events, control
+
+
 def reconcile_register(
     rows: list[dict[str, Any]],
     mailbox_index: dict[str, Any],
@@ -1678,16 +1782,17 @@ def reconcile_register(
     register = base_register()
     receipts = build_receipt_events(rows, existing)
     key_events = deepcopy(KEY_EVENTS)
+    status_events, status_control = load_regage_status_export_events()
     mailbox_events = build_mailbox_events(mailbox_index, mailbox_index_sha256)
 
-    event_ids = [event["event_id"] for event in receipts + key_events + mailbox_events]
+    event_ids = [event["event_id"] for event in receipts + key_events + status_events + mailbox_events]
     if len(event_ids) != len(set(event_ids)):
         raise ValueError("event ID collision during reconciliation")
-    source_keys = [event["source_key"] for event in receipts + key_events + mailbox_events]
+    source_keys = [event["source_key"] for event in receipts + key_events + status_events + mailbox_events]
     if len(source_keys) != len(set(source_keys)):
         raise ValueError("source-key collision during reconciliation")
 
-    register["events"] = sorted(receipts + key_events + mailbox_events, key=lambda event: event["event_id"])
+    register["events"] = sorted(receipts + key_events + status_events + mailbox_events, key=lambda event: event["event_id"])
     register["denominator_control"]["curated_source_proved_events"] = len(key_events)
     register["denominator_control"]["mailbox_transport_events"] = len(mailbox_events)
     register["denominator_control"]["event_rows_total"] = len(register["events"])
@@ -1696,6 +1801,18 @@ def reconcile_register(
     register["source_controls"]["completed_filings_input"] = "ops/dp1901-eg745-registration-input-20260921.json"
     register["denominator_control"]["dp1901_completed_registration_events"] = 14
     register["denominator_control"]["eg745_substantive_linked_registration_events"] = 10
+    register["denominator_control"]["regage_status_export_records"] = status_control["records"]
+    register["denominator_control"]["regage_status_export_reused_formal_events"] = status_control["reused_existing_formal_events"]
+    register["denominator_control"]["regage_status_export_new_formal_events"] = status_control["new_formal_events"]
+    register["denominator_control"]["regage_status_export_state_counts"] = status_control["status_literal_es"]
+    register["denominator_control"]["metadata_only_representation"] = "HISTORICAL_BATCH_RETAINED; CURRENT_398_ROW_INDIVIDUAL_STATUS_EXPORT_AVAILABLE"
+    register["denominator_control"]["arithmetic_check"] = "Historical: 75 detailed + 22 metadata-only = 97 reported total; current 21-Sep status export = 398 distinct REGAGE rows."
+    register["source_controls"]["regage_status_export_input"] = "ops/regage-status-export-input-20260921.json"
+    register["source_controls"]["regage_status_export_raw_sha256"] = REGAGE_STATUS_EXPORT_RAW_SHA256
+    register["source_controls"]["regage_status_export_row_count"] = 398
+    register["id_allocation"]["regage_status_export_rule"] = "114 existing formal-event IDs reused; 284 new rows use PD-SP-EVT-0213..0496 chronologically; mailbox 1001+ band untouched."
+    register["unresolved_batches"][0]["current_denominator_status"] = "SUPERSEDED_AS_CURRENT_DENOMINATOR_BY_398_ROW_STATUS_EXPORT_20260921"
+    register["unresolved_batches"][0]["resolution_note"] = "The earlier 22-record aggregate remains historical provenance. The 398-row status export supplies individual current rows; no unsupported one-to-one mapping of the old aggregate is inferred."
     return register
 
 
@@ -1753,7 +1870,7 @@ def build_checkpoint(register_sha256: str, source_sha256: str, mailbox_index_sha
             "universal_completeness_claim": False,
         },
         "source_required_and_normalisation_gates": [
-            "22 later RedSARA/AGE records remain aggregate-only; no synthetic individual rows were created.",
+            "Historical 22-record RedSARA/AGE aggregate is retained as provenance; the current denominator is the 398-row individual status export of 21 September 2026.",
             "EG 58/2026 discrete official act remains source-required.",
             "DP 1901/2026 signed Fiscal report and later judicial act remain source-required.",
             "EG 6/2026 underlying act substantive digest remains pending.",
@@ -1796,6 +1913,17 @@ def build_checkpoint(register_sha256: str, source_sha256: str, mailbox_index_sha
             "admission_incorporation_or_examination_proved": False,
             "historical_mail_scan_results_retained_as_dated_findings": True,
             "new_mail_scan_performed": False,
+        },
+        "regage_status_export_2026_09_21": {
+            "source_input": "ops/regage-status-export-input-20260921.json",
+            "raw_source_sha256": REGAGE_STATUS_EXPORT_RAW_SHA256,
+            "raw_source_committed": False,
+            "records": 398,
+            "reused_existing_formal_events": 114,
+            "new_formal_events": 284,
+            "new_event_id_range": ["PD-SP-EVT-0213", "PD-SP-EVT-0496"],
+            "status_literal_es": {"Recibido": 336, "Enviado": 36, "Rechazado": 26},
+            "proof_boundary": "Literal registry status only; no onward delivery, routing, incorporation, admission, examination, merits or criminal responsibility inferred.",
         },
         "next_incremental_scan": {
             "overlap_from_date": "2026-08-24",
@@ -1852,7 +1980,7 @@ def run(args: argparse.Namespace) -> int:
         print(
             f"OK: {len(rows)} baseline receipts; {len(mailbox_index['events'])} mailbox transport events; "
             f"{len(KEY_EVENTS)} curated events; "
-            "22 aggregate-only records remain one unresolved batch"
+            "398-row REGAGE status export reconciled (114 reused, 284 added); historical 22-row aggregate retained as provenance"
         )
         return 0
 
