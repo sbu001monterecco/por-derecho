@@ -125,3 +125,20 @@ Parent Drive folder:
 (folder ID `10u79S3tMZ8bNzVr1Iln5ycsuJPcWlgfi`)
 
 GitHub remains the canonical raw Markdown/JSON source. Drive is the preservation/review/recovery layer for later GitLab reconciliation.
+
+
+## Current-head Drive mirrors
+
+The following native Google Docs are current-head mirrors of the canonical GitHub files:
+
+- `PINK_CANARY_UNITARY_PROSECUTORIAL_FIRST_MASTER_21SEP2026_CURRENT`
+  - Drive file ID: `15tTZpzfOotMZkvnW9Qj_74yqMMXZ4liUa8SMAn2bbYs`
+- `PINK_CANARY_GITLAB_SYNC_MANIFEST_21SEP2026_CURRENT`
+  - Drive file ID: `1XgDHDGLK859igmNkOrEmipxWOtubUAprmF0z2etqSAk`
+
+The previously preserved v1–v3 ZIP files are source snapshots and do not include every later organizational/re-ingest addition. Do not treat them as the authoritative current GitLab-restoration state.
+
+Authoritative recovery order:
+1. GitHub branch head;
+2. current-head Drive master + sync manifest + full-thread/organization/re-ingest mirrors;
+3. preserved source PDFs and older ZIP snapshots.
