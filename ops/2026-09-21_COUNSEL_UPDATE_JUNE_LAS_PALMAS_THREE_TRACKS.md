@@ -63,14 +63,16 @@ The email should therefore say, in substance: **“You already knew that in July
 - The lawyer updates should remind Sixto Abogados and Carlos Llamas Sanz that they were already told in July that this was separate from the AC complaint and was being handled operationally as DP1901. Use their contemporaneous emails as a chronology anchor, not as certified reparto proof.
 - The official electronic creation/reparto record and the later Ref.24 association mechanism remain outstanding. Do not convert the contemporaneous Ref.21 -> DP 1901 position into a certified court-routing fact until the official history is produced.
 
-### Track C — Magistrate / judicial-conduct notitia criminis — genuinely new to counsel on the targeted mailbox review
+### Track C — Magistrate / judicial-conduct notitia criminis — existence previously signalled, underlying Ref.24 package not located as transmitted
 
 - 18 June 2026: autonomous written denuncia / notitia criminis concerning Magistrate-Judge Alberto López Villarrubia, controlled as Ref.24.
 - It was expressly addressed to the Sala de lo Civil y Penal del Tribunal Superior de Justicia de Canarias.
 - It was not presented as a formal querella and did not purport to constitute personation as an accusation.
 - It followed the DIP 2/2026 Fiscalía route, in which the controlled record identifies Article 73.3(b) LOPJ / TSJC competence as the relevant judicial route for alleged offences by judges or magistrates committed in office, subject to any Supreme Court competence.
-- Counsel are to be told that this Ref.24 judicial track was separate from both Ref.22/DP1956 and Ref.21/private actors.
-- Targeted searches of the connected work mailbox did not locate a message sending the Ref.24 / TSJC judge complaint package to Sixto Abogados or Carlos Llamas Sanz. Treat this as a bounded mailbox-search result, not an absolute proof of non-receipt through every possible channel.
+- Counsel had at least documentary notice of the existence and broad subject of Ref.24 because the 25-June private-actor complaint package later sent to both lawyer groups expressly stated that an 18-June autonomous complaint concerned judicial supervision attributed to Alberto López Villarrubia, control reference 24, and that its reparto/NIG/state remained pending.
+- Therefore do not say counsel knew nothing about Ref.24. Say instead that they had **notice that a separate judicial complaint existed**, but targeted searches did not locate any message sending them the actual Ref.24 / TSJC judge-complaint package itself.
+- Counsel are to be reminded that this Ref.24 judicial track was separate from both Ref.22/DP1956 and Ref.21/private actors.
+- Treat the non-location of the underlying Ref.24 package as a bounded mailbox-search result, not absolute proof of non-receipt through every possible channel.
 
 ## Why this matters now
 
@@ -117,7 +119,7 @@ Each email should be individually written for its recipient relationship but sho
 - make clear that targeted searches after receipt of the paper Auto found no email sending that Auto to Javier/Estefanía or Carlos; this is therefore the first planned direct lawyer transmission of the 14-Sep Auto on the reviewed mailbox record;
 - one short paragraph reminding counsel of the known Ref.22 -> DP 1956 AC track and its provisional dismissal;
 - one short paragraph reminding them of the Ref.21/private-actor complaint and their July receipt of the DP1901/CAM mapping;
-- one short paragraph introducing, for the first time on the targeted mailbox record, the separate Ref.24 judge notitia criminis directed to the TSJC;
+- one short paragraph explaining that counsel had previously been told within the private-actor packet that a separate Ref.24 judicial-supervision complaint existed, but that the actual Ref.24/TSJC complaint package is now being supplied/explained to them in full for the first time located on the reviewed mailbox record;
 - a simple three-track chronology;
 - explanation of the later DP 1901 identity/routing collision;
 - brief mention of E.G.745 only as contextual parallel, without allowing it to obscure the immediate judicial task;
@@ -137,7 +139,7 @@ The following controlled source points should govern the lawyer emails:
 6. **20 July — Carlos email:** Carlos received the same private-actor complaint PDF and the same operational account that 1901 was the CAM/CP complaint.
 7. **Signed 12 July providencia:** the primary court act controls as to its own wording and links DP1901 to DIP2/2026 for a five-day Ministerio Fiscal admission report. This is the first located formal act that diverges from the private-actor operational mapping.
 8. **14 September Auto:** later describes DP1901 as initiated for alleged prevaricación and orders sobreseimiento libre/archive.
-9. **Counsel transmission state:** targeted mailbox searches located the July private-actor complaint transmissions to both lawyer groups, but did not locate a transmission of the Ref.24 judge complaint or a post-18-Sep transmission of the 14-Sep Auto to either lawyer group.
+9. **Counsel transmission state:** targeted mailbox searches located the July private-actor complaint transmissions to both lawyer groups. That private-actor complaint itself disclosed the existence of the separate Ref.24 judicial-supervision complaint and named Alberto López Villarrubia, so counsel were not wholly unaware of that lane. The searches did **not** locate transmission of the underlying Ref.24/TSJC complaint package itself, nor a post-18-Sep transmission of the 14-Sep Auto to either lawyer group.
 
 Canonical explanation: **Ref.21 → DP1901 is contemporaneously corroborated; the formal 12-Jul DIP2 linkage and 14-Sep prevaricación characterisation create the identity collision; the official creation/reparto and later Ref.24 association history remain to be produced.**
 
