@@ -1,0 +1,142 @@
+{
+  "schema": "por-derecho.ac-counsel-interference-unitary.v1",
+  "control_id": "PD-AC-COUNSEL-20260921-01",
+  "control_date": "2026-09-21",
+  "status": "SOURCE_CONTROLLED_PROSECUTORIAL_REDIGEST",
+  "canonical_public_routes": {
+    "es": "/es/continuidad-defensa-letrados/",
+    "en": "/en/counsel-defence-continuity/",
+    "actors_es": "/es/actores-partes-abogados-representantes/",
+    "actors_en": "/en/actors-parties-lawyers-representatives/"
+  },
+  "attribution_lock": {
+    "client_thesis": "Gil Marer alleges that repeated Insolvency Administrator acts progressively poisoned defence continuity and independence.",
+    "not_adjudicated": [
+      "criminality",
+      "bribery",
+      "corruption",
+      "criminal proceeds",
+      "collusion",
+      "recipient knowledge",
+      "universal causation"
+    ]
+  },
+  "corpus_control": {
+    "parrilla_mastery_audit_date": "2026-08-24",
+    "parrilla_direct_messages_unique": 1094,
+    "parrilla_direct_messages_body_readable": 1092,
+    "drive_documents_unique": 429,
+    "connected_text_mastery_percent": 98.6,
+    "current_reverification": "Critical 2018/2020/2023/2026 transition and pressure communications re-read on 2026-09-21; public GitLab Pages comparator reconciled."
+  },
+  "actors": [
+    {
+      "id": "A8",
+      "name": "Cristo Ayose Suárez Pimentel",
+      "mechanism": "DIRECT_DEFINED_MANDATE_TERMINATION_BAR_THREAT",
+      "documented": [
+        "12-Dec-2017 DP 1041/2017 application for assignment deed/price/payment/cost information",
+        "25-Jan-2018 IA email: Bar notice threat, termination, venia request, abstention demand, judicial-action warning and procurator filing gate",
+        "4-Feb-2023 Cristo forward characterising the email as concerning the Bar complaint and other threats"
+      ],
+      "client_position": "VALUED_FORMER_COUNSEL_POTENTIALLY_AFFECTED_RESTORATIVE",
+      "open": [
+        "Whether ICATF received an actual complaint or opened a file",
+        "DP 1041 withdrawal instruction/authorship/causation"
+      ]
+    },
+    {
+      "id": "A1",
+      "name": "Juan Tomás Parrilla Suárez",
+      "mechanism": "FEE_PAYMENT_INTERMEDIATION_DURING_CLIENT_INITIATED_TRANSITION",
+      "documented": [
+        "28-Nov-2018 €400,000 operational-finca sale to CAM",
+        "20-Dec-2018 IA report: cheque effective, LPB Santander account, IA self-payment",
+        "24-Oct-2019 refusal of convalidation",
+        "28-May-2020 Parrilla fee negotiation contemplating €25,000 immediate IA payment and further estate claim",
+        "28-May-2020 outgoing-counsel intermediation of IA contact request",
+        "31-May-2020 client replacement framed as mutual loss of confidence",
+        "1-Jun-2020 incoming-counsel report: peace, possible complaint withdrawal, payment assurance for Parrilla/procurator, praise of Parrilla",
+        "11-Jun-2020 controlled fee account: €32,250 received; rejected €50,000 proposal; stated €17,750 + IGIC balance",
+        "later IA report: €25,000 + 7% IGIC (€26,750) paid"
+      ],
+      "client_criminal_allegation": "Gil characterises the combination as an illicit inducement / effectively an open bribe and alleges sale-proceeds funding.",
+      "boundaries": [
+        "No adjudicated bribery or corruption finding",
+        "No independently complete €400,000-sale to €26,750 bank trace",
+        "Receipt does not prove Parrilla knowledge of criminal origin",
+        "Client initiated substitution after loss of confidence"
+      ],
+      "p0": [
+        "invoice",
+        "payment authority",
+        "IGIC/cost allocation",
+        "complete estate ledger",
+        "matching bank debit"
+      ]
+    },
+    {
+      "id": "A3",
+      "name": "Joaquín Ruiz de Infante Abella",
+      "mechanism": "PERSONAL_CRIMINAL_EXPOSURE_AROUND_DEFENCE_PLEADING",
+      "documented": [
+        "5-Feb-2020 IA Article 215.2 licence request",
+        "19-Feb-2020 providencia granting procedural gate for potential complaint against Gil, procurator and Joaquín",
+        "27-Feb-2020 Cristo contemporaneous opinion that the route appeared intended to frighten lawyers from continuing to denounce",
+        "21-Sep-2020 irrevocable withdrawal citing irreparable lawyer-client breakdown",
+        "withdrawal filing also contained apologies to IA and withdrawal of subjective dishonesty characterisation"
+      ],
+      "boundaries": [
+        "Article 215.2 order was not a merits finding",
+        "Complaint filing/admission/success not established by the order alone",
+        "Withdrawal had independent lawyer-client-breakdown evidence",
+        "No exclusive AC causation finding"
+      ]
+    },
+    {
+      "id": "A4",
+      "name": "Daniel Jiménez García / SLJ",
+      "mechanism": "INCOMING_COUNSEL_ACCESS_AND_PEACE_CHANNEL",
+      "documented": [
+        "22-May-2020 engagement accepted",
+        "28-May-2020 written warning against off-record IA intermediation",
+        "1-Jun-2020 IA call report",
+        "5-Jun-2020 reported CAM-lawyer request through IA to arrange contact",
+        "23-Jun-2020 resignation citing strategy/client direction/non-payment"
+      ],
+      "boundaries": [
+        "No proof proposed CAM call occurred",
+        "No proof IA contact caused resignation",
+        "Jiménez challenged IA positions and disclosed the contacts"
+      ]
+    }
+  ],
+  "differentiated_controls": [
+    {
+      "name": "Cuatrecasas",
+      "finding": "Material IA workstream impact; favourable work and unpaid-fee withdrawal reason preserved; no single-cause exit finding."
+    },
+    {
+      "name": "Luis Miguel López Gómez",
+      "finding": "Administrator-controlled payment dependency auditable; withdrawal reasons include time/fees/non-payment; no specific causative refusal proved."
+    },
+    {
+      "name": "Garrigues",
+      "finding": "Early role predates examined IA conduct; no AC-caused departure established."
+    }
+  ],
+  "gitlab_comparator": {
+    "scanned": "2026-09-21",
+    "status": "PUBLIC_PAGES_COMPARATOR_ONLY",
+    "result": "Material A1-A4 propositions already present in GitHub; one-by-one framing reconciled into current GitHub controls rather than copied blindly."
+  },
+  "publication_lock": [
+    "Do not state Parrilla was bribed as established fact.",
+    "Do not state €26,750 is bank-proved to derive from the €400,000 sale.",
+    "Do not state Parrilla knew of criminal origin.",
+    "Do not state the Article 215.2 route was unlawful as established fact.",
+    "Do not state the IA caused every counsel withdrawal.",
+    "Keep Joaquín's apology and lawyer-client breakdown as contrary evidence.",
+    "Keep Cristo restorative/non-adverse classification."
+  ]
+}

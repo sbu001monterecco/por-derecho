@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
-  "controlDate": "2026-08-24",
-  "status": "PUBLIC-SAFE-FORENSIC-SEED-NOT-FRONTEND-READY",
+  "controlDate": "2026-09-21",
+  "status": "UPDATED_WITH_21SEP2026_UNITARY_COUNSEL_REDIGEST",
   "canonicalParent": "assets/data/legal-representation-v1.json",
   "humanControl": "archive/LEGAL_REPRESENTATION_AC_INTERFERENCE_CAUSATION_AUDIT_19AUG2026.md",
   "scope": "Hostile causation audit of whether Francisco de Borja Rodríguez-Batllori Laffitte, as Administrador Concursal of Luchy Playa Blanca, S.L.U., materially interfered with, destabilised or caused changes in owner-side legal representation from the pre-Concurso period through current counsel.",
@@ -66,6 +66,24 @@
       "proposition": "Gil Marer alleges, with hindsight, that the €400,000 sale was criminal and its consideration illicit proceeds; he asks Fiscalía to investigate the sale, trace the money and assess the resulting effect on defence continuity.",
       "status": "ATTRIBUTED_CRIMINAL_ALLEGATION_NOT_ADJUDICATED",
       "qualification": "The record documents the sale, AC receipt/account/self-payment report, later nonconvalidation, ACTÚA methodology warnings, contrary GESVALT material and the Parrilla fee mismatch. It does not adjudicate a predicate offence, criminal proceeds, criminal knowledge by any recipient or the alleged Cajasiete €1m financing."
+    },
+    {
+      "id": "LRAC-OF-008",
+      "proposition": "The 21-Sep-2026 source re-read supports a unitary defence-continuity hypothesis only if the mechanisms remain lawyer-specific: direct mandate displacement/Bar threat for Cristo; fee/payment/intermediation during the Parrilla transition; personal criminal-exposure pressure around Joaquín's defence pleading; and access to incoming counsel during the Jiménez transition.",
+      "status": "SUPPORTED_AS_ACTOR_SPECIFIC_PATTERN_WITH_NON_TRANSFER_RULE",
+      "qualification": "The connected pattern may justify prosecutorial examination, but intent, criminality and causation do not transfer between episodes or professionals. Formal withdrawal reasons and contrary evidence remain material."
+    },
+    {
+      "id": "LRAC-OF-009",
+      "proposition": "The 28-May-2020 Parrilla fee chain independently records his expectation that the AC would pay €25,000 immediately and recognise further estate fees; the 1-Jun incoming-counsel call report then combines peace/possible complaint withdrawal, payment assurance and praise of Parrilla.",
+      "status": "DIRECT_EMAIL_SEQUENCE_STRENGTHENS_INTERVENTION_INFERENCE",
+      "qualification": "This strengthens investigation of economic/professional influence during the transition. It does not establish bribery, an unlawful payment, criminal knowledge, or a completed €400,000-sale→€26,750 bank trace."
+    },
+    {
+      "id": "LRAC-OF-010",
+      "proposition": "The Joaquín/Alas record shows immediate personal-exposure and defence-team pressure after the Article 215.2 initiative, followed months later by withdrawal and apology evidence that is adverse to the client's theory.",
+      "status": "MIXED_EVIDENCE_MATERIAL_PRESSURE_NOT_EXCLUSIVE_EXIT_CAUSATION",
+      "qualification": "Cristo contemporaneously described the initiative as fear-inducing, but Joaquín later cited irreparable lawyer-client breakdown and withdrew subjective dishonesty characterisations. Both sides of the record are controlling."
     }
   ],
   "engagementAssessments": [
@@ -83,11 +101,11 @@
       "professional": "Juan Tomás Parrilla Suárez",
       "clientMatter": "LPB / Concurso 36/2012",
       "acWorkstreamImpact": "C3",
-      "exitCausation": "C0-C1",
-      "documentedAlternativeCause": "Client-initiated substitution framed contemporaneously as mutual loss of confidence; Parrilla accepted the decision as best for both sides.",
-      "acSpecificFinding": "Protocol 2150 recites a 28 November 2018 €400,000 sale of 31 operational properties to CAM against a plan-reported ACTÚA value of €489,361.96. The AC's 20 December report identifies the LPB Santander account, says the cheque became effective and says the AC paid itself remuneration; the 24 October 2019 order later refused convalidation. Parrilla's original proforma was €40,000 + IGIC. On 11 June 2020 he acknowledged €32,250 received, proposed a rejected €50,000 final fee and stated €17,750 + IGIC outstanding. The AC later recorded a EUR 26,750 payment. Gil/Patricia allege overpayment/double dipping and say the assurance/payment formed part of a false peace used to influence incoming counsel.",
-      "counterEvidence": "The outgoing lawyer expressly accepted the client-initiated substitution and granted venia. A properly invoiced and authorised estate payment may be ordinary administration. Exact tax/cost allocation, authority and recoverable excess remain open. The reports disclose the cash sequence and Gil confirms the sale money was the only available source, but the matching Parrilla debit is not yet independently recovered. Receipt does not prove knowledge of criminal origin.",
-      "openQuestion": "Obtain the purchaser debit, LPB account credit, AC self-payment debits, complete Parrilla invoices/IGIC/cost allocation, authority, matching EUR 26,750 debit and post-nonconvalidation ledger; obtain the alleged Cajasiete EUR 1m mortgage deed and current Registry certifications."
+      "exitCausation": "C1-C2_CONTRIBUTING_ENVIRONMENT_NOT_EXCLUSIVE",
+      "documentedAlternativeCause": "Client-initiated substitution on 31 May 2020 framed as mutual loss of confidence; outgoing counsel accepted venia/transition. This remains the formal immediate cause.",
+      "acSpecificFinding": "Protocol 2150 recites a 28 November 2018 €400,000 sale of 31 operational properties to CAM; the AC's 20 December report identifies the LPB Santander account, says the cheque became effective and says the AC paid itself remuneration; the 24 October 2019 order later refused convalidation. In the 28 May 2020 fee chain Parrilla stated that he expected the AC to pay €25,000 immediately and to recognise further estate fees. The same transition period records Parrilla conveying the AC's request to speak with incoming counsel. Jiménez's 1 June call report records peace/possible complaint withdrawal, assurance that Parrilla and the procurator would be paid from proceeding funds, praise of Parrilla and IA/CAM positions. The later controlled fee account records €32,250 received, a rejected €50,000 final proposal and a stated €17,750 + IGIC balance; the AC later recorded €26,750 paid. Gil/Patricia characterise the combined sequence as an illicit inducement / bribe-like intervention and false peace.",
+      "counterEvidence": "The client initiated Parrilla's substitution after loss of confidence. A properly invoiced and authorised estate payment may be ordinary administration. The 28 May negotiations were unstable and not themselves the final fee account. Exact invoice, tax/cost allocation, authority and recoverable excess remain open. The reports disclose the €400,000 liquidity sequence and Gil says it was the only available source, but the matching €26,750 bank debit is not independently recovered. Receipt does not prove Parrilla knowledge of criminal origin, bribery or collusion.",
+      "openQuestion": "Obtain the purchaser debit, LPB account credit, AC self-payment debits, complete Parrilla invoices/IGIC/cost allocation, authority, matching €26,750 debit and post-nonconvalidation ledger; distinguish each May/June fee proposal from the final accepted/authorised amount."
     },
     {
       "professional": "Cuatrecasas",
@@ -102,13 +120,23 @@
     },
     {
       "professional": "Cristo Ayose Suárez Pimentel",
-      "clientMatter": "Parallel multi-matter legal/evidential/criminal work",
+      "clientMatter": "LPB DP 1041/2017 defined mandate plus later wider Sun Park matters",
+      "acWorkstreamImpact": "C5_DEFINED_MANDATE",
+      "exitCausation": "C5_DIRECT_AC_TERMINATION_FOR_DEFINED_LPB_MANDATE_CONTINUED_ELSEWHERE",
+      "documentedAlternativeCause": "No voluntary resignation has been located for DP 1041/2017. Cristo continued other Sun Park work, preventing any claim of total professional departure.",
+      "acSpecificFinding": "The 25 January 2018 Administrator communication directly terminated Cristo's defined LPB relationship in DP 1041/2017, requested venia, required abstention from future LPB acts, warned of judicial action, announced recourse to the Bar and instructed the procurator not to lodge filings without AC consent. The 4 February 2023 forward preserves Cristo's own description of the message as concerning the Bar complaint and other threats.",
+      "counterEvidence": "The Administrator was exercising asserted liquidation authority and could dispute whether counsel had authority to act for LPB. An actual ICATF complaint or disciplinary file has not yet been certified. Cristo continued substantial work elsewhere in the project.",
+      "openQuestion": "Obtain ICATF certification of whether the Bar threat became an actual complaint/file; recover the complete DP 1041 withdrawal instruction, successor-handover chain and causation analysis."
+    },
+    {
+      "professional": "Joaquín Ruiz de Infante Abella",
+      "clientMatter": "Gil Marer / classification opposition in Concurso 36/2012, coordinated with Alas working team",
       "acWorkstreamImpact": "C3",
-      "exitCausation": "C0",
-      "documentedAlternativeCause": null,
-      "acSpecificFinding": "Repeated AC-related disputes and evidential work are documented, but Cristo persisted across successive teams.",
-      "counterEvidence": "Long-running continuation is affirmative counterevidence to a universal push-away theory.",
-      "openQuestion": "Map exact client-specific mandates and periods rather than treating his role as one continuous generic engagement."
+      "exitCausation": "C1-C2_MATERIAL_PRESSURE_MIXED_WITH_LAWYER_CLIENT_BREAKDOWN",
+      "documentedAlternativeCause": "Irrevocable 21 September 2020 withdrawal cited an irreparable lawyer-client breakdown; the court filing also apologised to the Administrator and withdrew subjective dishonesty characterisations.",
+      "acSpecificFinding": "The AC's 5 February 2020 motion sought the Article 215.2 licence over statements in the classification defence. The 19 February providencia granted the procedural permission so that a criminal complaint could be brought against Gil, procurator Francisco Javier Pérez Almeida and Joaquín. Urgent team communications followed; on 27 February Cristo contemporaneously described the initiative as apparently intended to frighten lawyers from continuing to denounce.",
+      "counterEvidence": "The Article 215.2 order was a procedural gate, not a merits finding. The record does not establish that the contemplated complaint was filed, admitted or succeeded. The seven-month gap, the lawyer-client breakdown and Joaquín's later apology/withdrawal are material counterevidence against exclusive AC exit causation.",
+      "openQuestion": "Obtain the complete complaint docket after the Article 215.2 order, insurer/reputation records if legally available, and the full 21 September court withdrawal package."
     },
     {
       "professional": "Daniel Jiménez García / SLJ",
@@ -116,7 +144,7 @@
       "acWorkstreamImpact": "C3",
       "exitCausation": "C1-C2",
       "documentedAlternativeCause": "Formal 23 June 2020 resignation identifies strategy divergence, disagreement over control of legal strategy, and unpaid agreed fees.",
-      "acSpecificFinding": "The engagement was accepted on 22 May for direct Aweswell instructions, AC removal and assessment of AC/CAM claims. Parrilla conveyed the AC request on 28 May after client warnings against off-record intermediation; Daniel took and reported the 1 June call. The call combined peace/possible complaint withdrawal, assurance of Parrilla/procurator payment, praise of Parrilla and IA/CAM positions. On 5 June Daniel reported that CAM's lawyer asked the AC to arrange contact. This supports the client's attempted-influence inference. It does not prove the CAM call occurred, unlawful intent, collusion or that contact caused withdrawal.",
+      "acSpecificFinding": "The engagement was accepted on 22 May for direct Aweswell instructions, AC removal and assessment of AC/CAM claims. Parrilla conveyed the AC request on 28 May after client warnings against off-record intermediation; Daniel took and reported the 1 June call. The call combined peace/possible complaint withdrawal, assurance of Parrilla/procurator payment, praise of Parrilla and IA/CAM positions. On 5 June Daniel reported that CAM's lawyer asked the AC to arrange contact. This supports the client's attempted-influence inference. It does not prove the CAM call occurred, unlawful intent, collusion, bribery or that contact caused withdrawal.",
       "clientPosition": "Gil/Patricia say an express pre-engagement no-contact instruction was given and describe Daniel's rapid change of tone/position as hostile. Their 23 June email restates that account; 28 May and 5 June emails corroborate claims-first, anti-intermediation and no-information substance without containing the exact alleged pre-contract sentence.",
       "performanceAndDataRoom": "SLJ claimed 55 hours of review, calls and drafting, but Decree 316/2021 found no Daniel/SLJ-signed procedural filing during the mandate and the alleged court filing unproved. On 4 December 2020 SLJ filed a 179-page inventory identifying the contents of the 4,458-document client file plus selected material. It did not file every underlying file; immediate LexNET transfer is shown only to Aweswell's procurator. Retention, necessity, confidentiality, proportionality and actual adverse-party access remain unresolved.",
       "counterEvidence": "Daniel challenged several AC positions, disclosed the communications, denied being conditionable and said the AC was losing his manners. His formal resignation does not identify Borja as a reason for leaving and instead identifies strategy, client control and unpaid fees.",
@@ -163,21 +191,25 @@
       "openQuestion": "Continue monitoring direct AC interactions and any practical effect on current filings or access to information."
     },
     {
-      "professional": "Armando L. Betancor",
-      "clientMatter": "Specialist/legal support around late-2018 and later work",
-      "acWorkstreamImpact": "OPEN",
-      "exitCausation": "C0",
-      "documentedAlternativeCause": "Contemporaneous correspondence directly links willingness/capacity to continue to unpaid invoices.",
-      "acSpecificFinding": "No current evidence attributes reduced involvement to Borja.",
-      "counterEvidence": "Direct fee explanation.",
-      "openQuestion": "Classify whether this was a retained engagement, specialist consultation or matter-specific support."
+      "professional": "Armando Betancor Álamo / Alas Legal Advisors",
+      "clientMatter": "Aweswell / Gil classification and connected strategic work",
+      "acWorkstreamImpact": "C2",
+      "exitCausation": "C1-C2_MIXED",
+      "documentedAlternativeCause": "Joint 21 September 2020 withdrawal cited irreparable lawyer-client breakdown; the record also contains client-team conflict over ratification, trust and fees.",
+      "acSpecificFinding": "The Article 215.2 initiative concerned the team's core defence work and named the signing counsel. Immediate communications document urgent response, reputation/insurance concern and pressure around ratification. The team later withdrew the same day as Joaquín.",
+      "counterEvidence": "No source proves the Administrator exclusively caused the team withdrawal. Direct client-team disputes and formal withdrawal reasons remain material.",
+      "openQuestion": "Complete the team-specific mandate, insurance/reputation, ratification and withdrawal files and separate each professional's individual decision."
     }
   ],
   "materialEvents": [
     {
       "id": "LRAC-EVT-2018-2019-REGISTRY-NOTICE",
       "dateWindow": "2018-12-28/2019-03-20",
-      "actors": ["Cuatrecasas", "Owner-side clients", "Tías Property Registry"],
+      "actors": [
+        "Cuatrecasas",
+        "Owner-side clients",
+        "Tías Property Registry"
+      ],
       "event": "Cuatrecasas sent a ten-document Registry notice on 28 December; the burofax was delivered to the Registry on 4 January 2019 at 11:58; a 9 January follow-up, reasoned Registrar response and ob rem qualification followed; later correspondence reported 28 registered properties and three not registered.",
       "effect": "Establishes an affirmative protective act and a finite knowledge/follow-through benchmark. It also rebuts an ignored-notice narrative because the Registrar answered and the qualification identified a real obstacle.",
       "exitLink": "PROTECTIVE_COUNTEREVIDENCE_AND_LATER_DUTY_BENCHMARK_NOT_EXIT_CAUSATION",
@@ -186,7 +218,11 @@
     {
       "id": "LRAC-EVT-2018-2019-001",
       "dateWindow": "2018-06-26/2019-10-24",
-      "actors": ["Administrador Concursal", "Luchy Playa Blanca", "Acosta Matos"],
+      "actors": [
+        "Administrador Concursal",
+        "Luchy Playa Blanca",
+        "Acosta Matos"
+      ],
       "event": "The mortgaged-apartment realisation was suspended; the AC treated the separate 31-finca locales/pools branch as outside that suspension, executed Protocol 2150 for €400,000, reported the cheque effective and reported paying its own remuneration. The court later refused convalidation of the deed.",
       "effect": "Created the asset-and-estate-funds background to the later counsel-payment and access sequence. The AC's report identifies the account and self-payment; the later EUR 26,750 payment must be reconciled against Parrilla's original EUR 40,000 + IGIC proforma, acknowledged EUR 32,250 receipts and rejected EUR 50,000 proposal.",
       "exitLink": "BACKGROUND_FOR_2020_PERVERSE_INCENTIVE_INFERENCE_ONLY",
@@ -195,7 +231,12 @@
     {
       "id": "LRAC-EVT-2020-000",
       "dateWindow": "2020-05-28/2020-06-05",
-      "actors": ["Daniel Jiménez García", "Juan Tomás Parrilla Suárez", "Administrador Concursal", "Acosta Matos"],
+      "actors": [
+        "Daniel Jiménez García",
+        "Juan Tomás Parrilla Suárez",
+        "Administrador Concursal",
+        "Acosta Matos"
+      ],
       "event": "Outgoing counsel conveyed the AC's request to speak to incoming counsel; the AC call combined peace/possible complaint withdrawal, assurance of outgoing-counsel/procurator payment, praise of outgoing counsel and IA/CAM positions; CAM's lawyer then reportedly asked the AC to arrange contact.",
       "effect": "Documented access and attempted-influence sequence despite contemporaneous client warnings against off-record intermediation and information disclosure.",
       "exitLink": "INVESTIGATIVE_INFERENCE_ONLY_CAUSATION_NOT_PROVED",
@@ -204,7 +245,11 @@
     {
       "id": "LRAC-EVT-2020-001",
       "dateWindow": "2020-06-12/2020-06-23",
-      "actors": ["Daniel Jiménez García", "Juan Tomás Parrilla", "Administrador Concursal"],
+      "actors": [
+        "Daniel Jiménez García",
+        "Juan Tomás Parrilla",
+        "Administrador Concursal"
+      ],
       "event": "Fee/handover negotiations and direct AC-lawyer friction during Aweswell/LPB representation transition.",
       "effect": "Added pressure and professional disagreement; Daniel objected to dependence of his fee position on AC/JT negotiations.",
       "exitLink": "BACKGROUND_CONTRIBUTOR_ONLY_ON_CURRENT_RECORD",
@@ -213,7 +258,11 @@
     {
       "id": "LRAC-EVT-2020-002",
       "dateWindow": "2020-12-03/2021-11-02",
-      "actors": ["SLJ Abogados", "Aweswell", "Mercantile Court No. 1 Las Palmas"],
+      "actors": [
+        "SLJ Abogados",
+        "Aweswell",
+        "Mercantile Court No. 1 Las Palmas"
+      ],
       "event": "In the post-engagement fee proceeding SLJ filed a 179-page inventory extracted from its database and naming the contents of the 4,458-document client file, plus selected client material; Aweswell's fee opposition was upheld and the decision became final.",
       "effect": "Created a court-record confidentiality and exposure question. The filing did not include every underlying file and the wrapper proves immediate transfer only to Aweswell's procurator.",
       "exitLink": "POST_ENGAGEMENT_NOT_EXIT_CAUSATION",
@@ -222,7 +271,11 @@
     {
       "id": "LRAC-EVT-2023-001",
       "dateWindow": "2023-09",
-      "actors": ["Javier Sixto", "Estefanía Sixto-Seijas", "Administrador Concursal"],
+      "actors": [
+        "Javier Sixto",
+        "Estefanía Sixto-Seijas",
+        "Administrador Concursal"
+      ],
       "event": "LPB swap litigation power/authority dispute.",
       "effect": "Sixto had to redesign standing/filing strategy and address risk that the action could fail for lack of debtor authority/power.",
       "exitLink": "NONE",
@@ -231,11 +284,57 @@
     {
       "id": "LRAC-EVT-2025-2026-001",
       "dateWindow": "2025-2026",
-      "actors": ["Javier Sixto", "Estefanía Sixto-Seijas", "Administrador Concursal"],
+      "actors": [
+        "Javier Sixto",
+        "Estefanía Sixto-Seijas",
+        "Administrador Concursal"
+      ],
       "event": "Active adversarial proceedings concerning separation/removal of the AC and related appellate steps.",
       "effect": "Significant procedural workload and direct opposition.",
       "exitLink": "NONE_CURRENT_COUNSEL_CONTINUES",
       "strongestDefence": "Adversarial opposition to removal is an ordinary exercise of procedural rights and does not establish interference with counsel."
+    },
+    {
+      "id": "LRAC-EVT-2018-CRISTO-001",
+      "dateWindow": "2018-01-25",
+      "actors": [
+        "Cristo Ayose Suárez Pimentel",
+        "Administrador Concursal",
+        "LPB procurator"
+      ],
+      "event": "The Administrator directly terminated Cristo's defined LPB role in DP 1041/2017, requested venia/abstention, announced Bar recourse, warned of judicial action and imposed a filing-authorisation gate on the procurator.",
+      "effect": "Direct displacement of a defined lawyer mandate and documented pressure around an admitted information-production proceeding.",
+      "exitLink": "C5_DEFINED_MANDATE_TERMINATION_NOT_TOTAL_PROJECT_EXIT",
+      "strongestDefence": "The Administrator asserted liquidation authority and could dispute counsel authority; actual Bar filing and causal link to the later DP 1041 withdrawal remain unproved."
+    },
+    {
+      "id": "LRAC-EVT-2020-PARRILLA-NEGOTIATION",
+      "dateWindow": "2020-05-28/2020-06-01",
+      "actors": [
+        "Juan Tomás Parrilla Suárez",
+        "Daniel Jiménez García",
+        "Administrador Concursal",
+        "LPB/Aweswell"
+      ],
+      "event": "Parrilla's fee chain contemplated an immediate €25,000 AC payment and further estate claim; outgoing counsel also conveyed the AC contact request. Jiménez's 1 June report then recorded peace/possible complaint withdrawal, payment assurance for Parrilla/procurator and praise of Parrilla.",
+      "effect": "Strengthens the source-based inference of economic and professional intervention during the counsel transition.",
+      "exitLink": "CONTRIBUTING_ENVIRONMENT_ONLY_CLIENT_SUBSTITUTION_WAS_DIRECT_TRANSITION_ACT",
+      "strongestDefence": "Fee administration and settlement contact may be legitimate; the client initiated substitution for loss of confidence, the later fee account differed from 28-May negotiations, and bribery/bank-source tracing are not established."
+    },
+    {
+      "id": "LRAC-EVT-2020-JOAQUIN-2152",
+      "dateWindow": "2020-02-05/2020-09-21",
+      "actors": [
+        "Joaquín Ruiz de Infante Abella",
+        "Armando Betancor Álamo / Alas team",
+        "Administrador Concursal",
+        "Gil Marer",
+        "Francisco Javier Pérez Almeida"
+      ],
+      "event": "The AC sought and obtained the Article 215.2 procedural licence to pursue a potential complaint over the classification defence; urgent team response followed and Joaquín later withdrew.",
+      "effect": "Created documented personal-exposure, reputation/insurance and defence-ratification pressure around the core pleading.",
+      "exitLink": "MATERIAL_PRESSURE_SEQUENCE_EXCLUSIVE_CAUSATION_NOT_PROVED",
+      "strongestDefence": "The order made no merits finding; later withdrawal cited irreparable lawyer-client breakdown and included apologies/withdrawal of subjective dishonesty characterisations."
     }
   ],
   "patternTests": {
@@ -245,13 +344,16 @@
     "recurringACCausedLawyerExit": "NOT_SUPPORTED_ON_CURRENT_RECORD",
     "deliberateIsolationOrPushAway": "LIMITED_2020_TRANSITION_INFLUENCE_INFERENCE_SUPPORTED_NOT_UNIVERSAL_PUSH_AWAY",
     "ownerSideKnowledgeContinuityLoss": "SUPPORTED_WITH_MIXED_CAUSATION",
-    "unpaidFeesAsRecurringAttritionFactor": "STRONGLY_SUPPORTED"
+    "unpaidFeesAsRecurringAttritionFactor": "STRONGLY_SUPPORTED",
+    "recurringDistinctCounselPressureMechanisms": "SUPPORTED_WITH_ACTOR_SPECIFIC_LIMITS",
+    "briberyOrCriminalInducementEstablished": "NO_ATTRIBUTED_CLIENT_ALLEGATION_ONLY",
+    "saleProceedsToParrillaBankTrace": "OPEN_MATCHING_DEBIT_NOT_RECOVERED"
   },
-  "safeCurrentConclusion": "Across several independent legal teams, the record supports treating AC-controlled procedural, authority and payment dependencies as a recurring material influence on owner-side representation. The 2018 AC report identifies the EUR 400,000 receipt/account and AC self-payment. Parrilla's fee records show a concrete mismatch between the original fee, EUR 32,250 acknowledged receipts, a rejected EUR 50,000 proposal with EUR 17,750 + IGIC stated balance, and the later EUR 26,750 AC payment. Gil/Patricia allege overpayment/double dipping and a perverse-incentive 'false peace'; Gil says the sale money was the only source, while a matching bank debit remains open. Gil's criminal-sale/proceeds conclusion is attributed and not adjudicated. It does not prove a recipient's criminal knowledge, bribery, collusion, a completed CAM call or resignation causation. Each mandate remains an integrated history of scope, IA conduct, professional response, result and transition.",
+  "safeCurrentConclusion": "Across several independent legal teams, the record supports a lawyer-by-lawyer defence-continuity hypothesis: direct mandate displacement/Bar threat for Cristo; fee/payment/intermediation during Parrilla's client-initiated transition; personal criminal-exposure pressure around Joaquín's defence pleading; and access to incoming counsel during Jiménez's transition. Gil calls the combined effect a criminal 'poisoning' of the defence and characterises the Parrilla payment/peace sequence as an illicit inducement or bribe-like intervention. Those are attributed allegations. The record does not establish bribery, criminal proceeds, Parrilla's criminal knowledge, unlawful Article 215.2 use, a complete €400,000→€26,750 bank trace, or universal AC causation of counsel exits. Each mandate retains its formal transition reason and strongest contrary evidence.",
   "unsafeCurrentConclusion": "Borja pushed successive lawyers away.",
   "publicationGate": {
-    "publishAsFrontendClaimNow": false,
-    "reason": "Internal causation grades are evidential controls, not suitable public characterisations. Public wording may state actor-specific documented practical effects and attributed client allegations, but must integrate mandate scope, response, results, formal transition evidence and counterevidence; it may not imply exclusive causation, intent or adjudicated professional liability without stronger proof.",
+    "publishAsFrontendClaimNow": true,
+    "reason": "Actor-specific documented effects and attributed allegations may be published with the non-transfer, no-bribery-finding, no-complete-bank-trace and contrary-evidence boundaries. Internal causation grades themselves remain evidential controls and should not be rendered as guilt scores.",
     "conditionsForUpgrade": [
       "Recover direct contemporaneous lawyer statements tying resignation/replacement to specific AC conduct.",
       "Recover DWF/RCD non-personation decision record.",
