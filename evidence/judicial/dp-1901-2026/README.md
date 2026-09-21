@@ -54,3 +54,8 @@ The public-safe filing-state control records thirteen registered personal action
 - Narrative register: [`ops/2026-09-19_DP1901_EG745_FILING_STATUS_REGISTER.md`](../../../ops/2026-09-19_DP1901_EG745_FILING_STATUS_REGISTER.md)
 
 A02 has a principal and supplemental registration, with the supplemental receipt lacking a document hash. A12 has receipt-matching hashes for four attachments but an extraneous operational-text tail in the filed-text field. A06 is registered under REGAGE26e00082058165 with four hash-matched PDFs; A13 is registered under REGAGE26e00082060401 with five. The earlier A06 rejection and A13 formalisation/admission questions remain disclosed as post-filing follow-ups. Registration is not admission, examination or institutional action.
+
+
+## Dual-version June source archive — 21 September 2026
+
+For complete page-accounted public-safe frozen transcriptions and living interlinked readers for Ref21, Ref22 and Ref24, use [`../june-2026-three-track/README.md`](../june-2026-three-track/README.md). The frozen layer is never rewritten by later analysis; the dynamic layer carries later DP1901/CGPJ/TSJC/Fiscal/counsel context while preserving the official-production gaps.
