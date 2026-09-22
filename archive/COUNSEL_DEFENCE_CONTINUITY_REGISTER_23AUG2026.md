@@ -147,3 +147,8 @@ Accordingly, the supported publication state is **criminal/prosecutorial allegat
 
 The same institutional actor appearing across several lawyer transitions can justify a pattern investigation. It does not allow knowledge, intent, liability or causation to be transferred from one lawyer, payment, threat or proceeding to another.
 
+
+
+## 22 September 2026 source re-verification
+
+A2a, A3, A5 and A8 have a bounded direct-email/forwarded-source re-read in [the existing unitary redigest](AC_COUNSEL_INTERFERENCE_UNITARY_REDIGEST_21SEP2026.md#22-september-2026--bounded-email-re-verification). It preserves counsel contributions, stated withdrawal reasons, the distinct JR/AB notices, Cristo’s favourable treatment and the limits of AC causation. Effective substitutions, fee decisions and actual Bar registration remain open. No correspondence was sent.
