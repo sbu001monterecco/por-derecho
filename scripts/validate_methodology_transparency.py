@@ -3,9 +3,6 @@ import json, re
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-MODEL=ROOT/"assets/data/methodology-transparency-v1.json"
-MANIFEST=ROOT/"publication-manifests/methodology-transparency-20260922.json"
-CSS=ROOT/"assets/methodology-transparency-20260922.css"
 EXPECTED=["observe","manifest","compare","classify","traverse","adversarial","reconcile","verify","deploy","readback","envelope"]
 REQUIRED_INVARIANTS=["source_not_assertion","assertion_not_finding","authentication_not_truth","relationship_not_liability_transfer","chronology_not_causation","private_evidence_not_public_by_default"]
 PRIVATE_PATTERNS=[r"drive\.google\.com",r"message[-_ ]?id",r"provider[-_ ]?id",r"storage[-_ ]?locator",r"api[_ -]?key",r"bearer\s+[A-Za-z0-9._-]+"]
@@ -33,10 +30,15 @@ def validate(root=ROOT):
         fail("ARCHITECTURE_HISTORY_DRIFT","architecture_history.status",statuses,["HISTORICAL_DESIGN","CONTROLLING_ACCEPTED","DRAFT_REVIEW"],"preserve_explicit_supersession_history")
     if m.get("public_release_approved") is not False or m.get("live_verified") is not False:
         fail("FALSE_RELEASE_PROMOTION","methodology_model",(m.get("public_release_approved"),m.get("live_verified")),(False,False),"obtain_authorised_merge_deploy_and_live_readback_first")
-    if manifest.get("public_release_approved") is not False or manifest.get("live_verified") is not False:
-        fail("FALSE_RELEASE_PROMOTION","publication_manifest",(manifest.get("public_release_approved"),manifest.get("live_verified")),(False,False),"keep_candidate_state_until_separate_release_closeout")
-    if manifest.get("routes")!=["en/methodology/index.html","es/metodologia/index.html"]:
-        fail("ROUTE_SET_DRIFT","publication_manifest.routes",manifest.get("routes"),["en/methodology/index.html","es/metodologia/index.html"],"restore_bilingual_route_set")
+    if manifest.get("schema")!="por-derecho.publication-state.v1" or manifest.get("schema_version")!="1.0.0":
+        fail("PUBLICATION_SCHEMA_DRIFT","publication_manifest.schema",(manifest.get("schema"),manifest.get("schema_version")),("por-derecho.publication-state.v1","1.0.0"),"use_the_repository_publication_state_contract")
+    if manifest.get("current_state")!="PR_OPEN":
+        fail("FALSE_RELEASE_PROMOTION","publication_manifest.current_state",manifest.get("current_state"),"PR_OPEN","keep_candidate_at_pr_open_until_separate_release_closeout")
+    if manifest.get("public_release_approved") is not False or manifest.get("live_verified") is not False or manifest.get("deployed") is not False:
+        fail("FALSE_RELEASE_PROMOTION","publication_manifest",(manifest.get("public_release_approved"),manifest.get("deployed"),manifest.get("live_verified")),(False,False,False),"keep_candidate_state_until_separate_release_closeout")
+    expected={"en":["en/methodology/index.html"],"es":["es/metodologia/index.html"]}
+    if manifest.get("expected_routes")!=expected:
+        fail("ROUTE_SET_DRIFT","publication_manifest.expected_routes",manifest.get("expected_routes"),expected,"restore_bilingual_route_set")
     if "method-loop" not in (root/"assets/methodology-transparency-20260922.css").read_text(encoding="utf-8"):
         fail("VISUAL_CONTRACT_DRIFT","assets/methodology-transparency-20260922.css","method-loop missing","method-loop present","restore_recursive_loop_visual")
     results=[]
@@ -53,7 +55,7 @@ def validate(root=ROOT):
         for pattern in PRIVATE_PATTERNS:
             if re.search(pattern,text,re.I): fail("PUBLIC_PRIVATE_BOUNDARY",path,pattern,"absent","remove_private_locator_or_identifier")
         results.append(path)
-    return {"status":"PASS","control_id":m["control_id"],"stages":len(EXPECTED),"routes":results,"architecture_records":len(m["architecture_history"]),"roles":len(m["supervised_roles"])}
+    return {"status":"PASS","control_id":m["control_id"],"stages":len(EXPECTED),"routes":results,"architecture_records":len(m["architecture_history"]),"roles":len(m["supervised_roles"]),"publication_state":manifest["current_state"]}
 
 def main():
     try: result=validate()
