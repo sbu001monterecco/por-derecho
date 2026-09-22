@@ -46,4 +46,8 @@ Public EN: `/en/insolvency-36-2012-administrator-removal-rpl-3304-2025/`
 
 Machine-readable control: `assets/data/concurso36-ac-separation-rpl3304-convergence-v1.json`.
 
+Visual-linkage control: `.github/governance/CONCURSO36_R33_VISUAL_LINKAGE_RULE_22SEP2026.md` and `assets/data/ac-rpl3304-visual-linkage-v1.json`.
+
+**Mandatory first-read visual bridge:** the principal separation page, R33 opposition viewer and counsel-continuity surface must preserve the page-5 non-isolation rule: Joaquín’s apology remains adverse evidence, while signer identity, distinct-firm collaboration, the pre-2020 removal chronology and direct access to the source remain visible together.
+
 This rule is part of the existing continuity architecture. A successor thread must read it together with the current repository bootstrap, Master Proceedings Register, CAEPR identity register and AC separation/remuneration controlling digest. It does not create a separate factual universe or a replacement register.
