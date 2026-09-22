@@ -26,3 +26,7 @@ Read first: `archive/AC_PROFESSIONAL_ISOLATION_ATTRITION_CANON_22SEP2026.md`.
 - `assets/data/ac-professional-isolation-attrition-v1.json`
 - `es/continuidad-defensa-letrados/index.html`
 - `en/counsel-defence-continuity/index.html`
+
+## Lawyer-denominator truth-machine gate
+
+When any lawyer or law firm is in scope, also read and apply `.github/governance/LAWYER_INTERACTION_TRUTH_MACHINE_PROTOCOL_22SEP2026.md` and `assets/data/lawyer-interaction-truth-machine-v1.json`. The A1–A8 table is not the full denominator. Garrigues is the first currently verified historical firm through the 24-Jan-2012 engagement. Current and historical professionals must be analysed across Concurso and extraconcursal matters with matter-specific client, capacity, instruction, handover, fees, filing status, contrary evidence and privilege controls.
