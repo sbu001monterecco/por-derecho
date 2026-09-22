@@ -67,5 +67,14 @@
   "public_routes": {
     "es": "/es/continuidad-defensa-letrados/",
     "en": "/en/counsel-defence-continuity/"
+  },
+  "whole_perimeter_truth_machine": {
+    "control_id": "PD-TM-COUNSEL-20260922-01",
+    "rule": "governance/COUNSEL_PROFESSIONAL_INTERACTION_TRUTH_MACHINE_RULE_22SEP2026.md",
+    "machine": "assets/data/counsel-professional-interaction-truth-machine-v1.json",
+    "professional_register": "assets/data/legal-professionals-register-v1.json",
+    "chronology_origin": "GARRIGUES_2012",
+    "all_professional_records_in_scope": true,
+    "boundary": "Coverage is not evidence of direct AC interaction, adverse status, common cause or wrongdoing."
   }
 }

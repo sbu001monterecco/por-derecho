@@ -1,0 +1,267 @@
+{
+  "schema": "por-derecho.legal-professionals-source-discovered-supplement.v1",
+  "control_id": "PD-TM-COUNSEL-SUP-20260922-01",
+  "control_date": "2026-09-22",
+  "status": "SOURCE_DISCOVERED_SUPPLEMENT_PENDING_IMMUTABLE_ID_FEDERATION",
+  "purpose": "Extend the controlled legal-professional denominator with source-confirmed historic/cross-border legal professionals and firm engagements discovered after the 40-record canonical register was frozen. Supplement keys are not immutable CAEPR identity IDs.",
+  "canonical_register": "assets/data/legal-professionals-register-v1.json",
+  "parent_truth_machine": "PD-TM-COUNSEL-20260922-01",
+  "rules": [
+    "A supplement entry does not silently allocate or reuse a PD-SP-P/O immutable identity ID.",
+    "Source-confirmed legal services or a formal engagement may be analysed immediately, while identity federation remains a separate controlled step.",
+    "Proposal, onboarding, conflict-check and introductory contacts are not classified as former counsel unless substantive accepted work or a retainer is evidenced.",
+    "Firm-level work does not transfer knowledge, conduct, intent or responsibility to every named professional.",
+    "Private email addresses, provider message IDs and privileged advice are not copied into this public-safe supplement."
+  ],
+  "verified_professionals": [
+    {
+      "supplement_key": "PD-TM-SUP-P-001",
+      "public_name": "Tomás González Jorge",
+      "role": "Lawyer",
+      "firm_label": "IURISCAN ABOGADOS, S.L.P.",
+      "period": "2013–2014",
+      "track": "FORMER_COUNSEL_SOURCE_CONFIRMED",
+      "lanes": [
+        "COMMUNITY",
+        "CIVIL_LITIGATION",
+        "SUN_PARK_POSSESSION_ACCESS"
+      ],
+      "evidence_status": "DIRECT_CONTEMPORANEOUS_LEGAL_ADVICE_AND_INVOICE_CHAIN",
+      "matter_scope": "Advised the project perimeter in 2013–2014 on Community litigation, possession/access, appeals and urgent protective steps; contemporaneous correspondence refers to his appeal and invoices from IURISCAN ABOGADOS.",
+      "ac_interaction_state": "NO_DIRECT_AC_INTERFERENCE_LOCATED_IN_CURRENT_SOURCE_SET",
+      "counterevidence_or_boundary": "Do not infer AC causation merely because the engagement post-dates the 2012 concurso opening; the reviewed 2013–2014 sources concern Community/civil work."
+    },
+    {
+      "supplement_key": "PD-TM-SUP-P-002",
+      "public_name": "José Manuel Niederleytner García-Lliberós",
+      "aliases": [
+        "Chema (contemporaneous team shorthand)"
+      ],
+      "role": "Lawyer / Managing Partner",
+      "firm_label": "NIEDERLEYTNER ABOGADOS",
+      "period": "2021–2022",
+      "track": "FORMER_COUNSEL_SOURCE_CONFIRMED",
+      "lanes": [
+        "CONCURSO_36_2012",
+        "CNMV",
+        "RECOVERY_STRATEGY",
+        "CORPORATE_FINANCING"
+      ],
+      "evidence_status": "SELF_IDENTIFIED_ABOGADO_SOCIO_DIRECTOR_PLUS_FOUR_FIRM_TEAM_CORRESPONDENCE",
+      "matter_scope": "Member of the four-firm legal team working on AWESWELL LIMITED / Luchy Playa Blanca / Hotel Sun Park, including legal reports and recovery/financing strategy.",
+      "ac_interaction_state": "AC_SUBJECT_MATTER_TEAM_CONTEXT_DIRECT_INTERACTION_NOT_YET_CLOSED",
+      "counterevidence_or_boundary": "Exact act-by-act AC contact and exit causation require source closure; team membership does not transfer every communication or position to him.",
+      "correction_note": "Supersedes the inaccurate shorthand 'Juan Manuel Niederleiter'; contemporaneous source identifies José Manuel Niederleytner García-Lliberós."
+    },
+    {
+      "supplement_key": "PD-TM-SUP-P-003",
+      "public_name": "Leopoldo Cólogan Rodríguez de Azero",
+      "role": "Lawyer",
+      "firm_label": "Leopoldo Cólogan / Law Hotel",
+      "period": "2021–14 February 2022",
+      "track": "FORMER_COUNSEL_SOURCE_CONFIRMED",
+      "lanes": [
+        "CONCURSO_36_2012",
+        "CALIFICACION_CONTEXT",
+        "RECOVERY_STRATEGY",
+        "FINANCING"
+      ],
+      "evidence_status": "SIGNED_LAWYER_CORRESPONDENCE_FEE_PROPOSAL_AND_FOUR_FIRM_TEAM",
+      "matter_scope": "Provided legal services as part of the four-firm team, including strategy concerning AWESWELL LIMITED, Luchy Playa Blanca and Hotel Sun Park; his correspondence addresses financing evidence and legal reports.",
+      "ac_interaction_state": "AC_SUBJECT_MATTER_TEAM_CONTEXT_EXIT_CAUSATION_OPEN",
+      "counterevidence_or_boundary": "His 14-Feb-2022 email expressly states the firm could not continue because accrued agreed fees had not been paid. Non-payment is mandatory counterevidence against an AC-caused exit theory."
+    },
+    {
+      "supplement_key": "PD-TM-SUP-P-004",
+      "public_name": "Georgina Squire",
+      "role": "Senior Partner / legal representative",
+      "firm_label": "Rosling King LLP",
+      "period": "2022–2023",
+      "track": "CROSS_BORDER_COUNSEL_SOURCE_CONFIRMED",
+      "lanes": [
+        "UK_CROSS_BORDER_RECOVERY",
+        "LITIGATION_FUNDING",
+        "SPANISH_CLAIMS_REVIEW"
+      ],
+      "evidence_status": "FORMAL_LETTER_OF_ENGAGEMENT_AND_SUBSTANTIVE_WORK",
+      "matter_scope": "Rosling King engagement concerning multiple potential Spanish claims, legal-representation status, litigation funding and cross-border recovery; project evidence and Spanish legal-team reports were supplied for substantive review.",
+      "ac_interaction_state": "AC_SUBJECT_MATTER_REVIEW_NO_DIRECT_AC_INTERFERENCE_LOCATED",
+      "counterevidence_or_boundary": "The current source set shows an engagement and substantive work, not direct AC pressure on Rosling King."
+    },
+    {
+      "supplement_key": "PD-TM-SUP-P-005",
+      "public_name": "Carolyn Tully",
+      "role": "Senior Associate / legal-team professional",
+      "firm_label": "Rosling King LLP",
+      "period": "2022",
+      "track": "CROSS_BORDER_LEGAL_TEAM_SOURCE_CONFIRMED",
+      "lanes": [
+        "UK_CROSS_BORDER_RECOVERY",
+        "LITIGATION_FUNDING",
+        "ENGAGEMENT_COMPLIANCE"
+      ],
+      "evidence_status": "DIRECT_ENGAGEMENT_AND_SCOPE_CORRESPONDENCE",
+      "matter_scope": "Handled the Rosling King letter of engagement, retainer/compliance conditions, scope wording and litigation-funding coordination.",
+      "ac_interaction_state": "NO_DIRECT_AC_INTERFERENCE_LOCATED",
+      "counterevidence_or_boundary": "Role is recorded as Senior Associate; no broader personal attribution is made."
+    },
+    {
+      "supplement_key": "PD-TM-SUP-P-006",
+      "public_name": "Alexander Edwards",
+      "role": "Partner / legal-team professional",
+      "firm_label": "Rosling King LLP",
+      "period": "2022",
+      "track": "CROSS_BORDER_LEGAL_TEAM_SOURCE_CONFIRMED",
+      "lanes": [
+        "LITIGATION_FUNDING",
+        "CROSS_BORDER_RECOVERY"
+      ],
+      "evidence_status": "DIRECT_SUBSTANTIVE_PROJECT_CORRESPONDENCE",
+      "matter_scope": "Participated in Project Sun Rock funding/recovery work within Rosling King.",
+      "ac_interaction_state": "NO_DIRECT_AC_INTERFERENCE_LOCATED",
+      "counterevidence_or_boundary": "Participation in funding/recovery work does not establish knowledge of every Spanish proceeding or allegation."
+    },
+    {
+      "supplement_key": "PD-TM-SUP-P-007",
+      "public_name": "Zohar Lande",
+      "role": "Partner / lawyer",
+      "firm_label": "Barnea Jaffa Lande & Co Law Offices",
+      "period": "2022–2023",
+      "track": "CROSS_BORDER_COUNSEL_SOURCE_CONFIRMED",
+      "lanes": [
+        "ISRAEL_CROSS_BORDER_LEGAL_REVIEW",
+        "RECOVERY_STRATEGY"
+      ],
+      "evidence_status": "PARTNER_SIGNATURE_SUBSTANTIVE_WORK_AND_UNPAID_FEES",
+      "matter_scope": "Barnea legal work on Project Sun Rock; partner correspondence in January 2023 states the firm had already been working on the matter and that fees remained unpaid.",
+      "ac_interaction_state": "AC_SUBJECT_MATTER_REVIEW_NO_DIRECT_AC_INTERFERENCE_LOCATED",
+      "counterevidence_or_boundary": "Unpaid fees are relevant to continuation/attrition and must not be recast as AC interference without direct evidence."
+    },
+    {
+      "supplement_key": "PD-TM-SUP-P-008",
+      "public_name": "Sarah Benatar Martin",
+      "role": "Legal-team professional — exact title pending source lock",
+      "firm_label": "Barnea Jaffa Lande & Co Law Offices",
+      "period": "2022",
+      "track": "CROSS_BORDER_LEGAL_TEAM_ROLE_REVIEW",
+      "lanes": [
+        "ISRAEL_CROSS_BORDER_LEGAL_REVIEW"
+      ],
+      "evidence_status": "SUBSTANTIVE_TEAM_WORK_VERIFIED_TITLE_OPEN",
+      "matter_scope": "Received core Spanish legal-team reports to prepare a report for Hadar Israeli and Zohar Lande.",
+      "ac_interaction_state": "TEAM_LEVEL_AC_SUBJECT_MATTER_NO_DIRECT_INTERFERENCE_LOCATED",
+      "counterevidence_or_boundary": "Exact professional title and individual mandate are open; do not label former counsel individually beyond verified team work."
+    },
+    {
+      "supplement_key": "PD-TM-SUP-P-009",
+      "public_name": "Hadar Israeli",
+      "role": "Legal-team professional — exact title pending source lock",
+      "firm_label": "Barnea Jaffa Lande & Co Law Offices",
+      "period": "2022",
+      "track": "CROSS_BORDER_LEGAL_TEAM_ROLE_REVIEW",
+      "lanes": [
+        "ISRAEL_CROSS_BORDER_LEGAL_REVIEW"
+      ],
+      "evidence_status": "SUBSTANTIVE_TEAM_RECIPIENT_ROLE_VERIFIED_TITLE_OPEN",
+      "matter_scope": "Named as a recipient/lead for the Barnea team report prepared from Project Sun Rock legal materials.",
+      "ac_interaction_state": "TEAM_LEVEL_AC_SUBJECT_MATTER_NO_DIRECT_INTERFERENCE_LOCATED",
+      "counterevidence_or_boundary": "Exact professional title and personal mandate remain open."
+    }
+  ],
+  "firm_engagement_lanes": [
+    {
+      "supplement_key": "PD-TM-SUP-O-001",
+      "firm_name": "IURISCAN ABOGADOS, S.L.P.",
+      "period": "2013–2014",
+      "state": "VERIFIED_PROFESSIONAL_SERVICES",
+      "linked_professionals": [
+        "PD-TM-SUP-P-001"
+      ]
+    },
+    {
+      "supplement_key": "PD-TM-SUP-O-002",
+      "firm_name": "NIEDERLEYTNER ABOGADOS",
+      "period": "2021–2022",
+      "state": "VERIFIED_FOUR_FIRM_LEGAL_TEAM",
+      "linked_professionals": [
+        "PD-TM-SUP-P-002"
+      ]
+    },
+    {
+      "supplement_key": "PD-TM-SUP-O-003",
+      "firm_name": "Leopoldo Cólogan / Law Hotel",
+      "period": "2021–2022",
+      "state": "VERIFIED_FOUR_FIRM_LEGAL_TEAM",
+      "linked_professionals": [
+        "PD-TM-SUP-P-003"
+      ]
+    },
+    {
+      "supplement_key": "PD-TM-SUP-O-004",
+      "firm_name": "Rosling King LLP",
+      "period": "2022–2023",
+      "state": "FORMAL_ENGAGEMENT_AND_SUBSTANTIVE_WORK",
+      "linked_professionals": [
+        "PD-TM-SUP-P-004",
+        "PD-TM-SUP-P-005",
+        "PD-TM-SUP-P-006"
+      ]
+    },
+    {
+      "supplement_key": "PD-TM-SUP-O-005",
+      "firm_name": "Barnea Jaffa Lande & Co Law Offices",
+      "period": "2022–2023",
+      "state": "SUBSTANTIVE_LEGAL_WORK_AND_FEE_RECORD",
+      "linked_professionals": [
+        "PD-TM-SUP-P-007",
+        "PD-TM-SUP-P-008",
+        "PD-TM-SUP-P-009"
+      ]
+    },
+    {
+      "supplement_key": "PD-TM-SUP-O-006",
+      "firm_name": "Fieldfisher",
+      "period": "2022; 2023–2025 renewed discussions",
+      "state": "SCOPE_FEE_ESTIMATE_CONFLICT_CLEARANCE_AND_REVIEW; RETAINER_STATUS_REQUIRES_MATTER_SPECIFIC_CLOSURE",
+      "linked_professionals": [],
+      "boundary": "Do not convert fee estimates, scopes of work, conflict clearance or meetings into a former-counsel classification without accepted engagement evidence for the relevant period."
+    },
+    {
+      "supplement_key": "PD-TM-SUP-O-007",
+      "firm_name": "KLT Legal",
+      "period": "2022",
+      "state": "ONBOARDING_AND_ENGAGEMENT_DISCUSSION; ACCEPTED_RETAINER_OPEN",
+      "linked_professionals": [],
+      "boundary": "Keep in discovery queue until retainer/substantive work is closed."
+    },
+    {
+      "supplement_key": "PD-TM-SUP-O-008",
+      "firm_name": "Brown Rudnick",
+      "period": "2021",
+      "state": "PROSPECTIVE_MEETING_REVIEW; RETAINER_OPEN",
+      "linked_professionals": [],
+      "boundary": "Not classified as former counsel on current source."
+    },
+    {
+      "supplement_key": "PD-TM-SUP-O-009",
+      "firm_name": "Rosenblatt / Memery Crystal Rosenblatt",
+      "period": "2024",
+      "state": "MEETING_AND_REVIEW_LANE; RETAINER_OPEN",
+      "linked_professionals": [],
+      "boundary": "Not classified as former counsel on current source."
+    }
+  ],
+  "denominator": {
+    "canonical_register_records": 40,
+    "supplemental_verified_or_role_review_professionals": 9,
+    "supplemental_firm_lanes": 9,
+    "combined_person_analysis_nodes": 49,
+    "caveat": "This is a controlled current-source denominator, not a claim that every lawyer ever contacted has been exhaustively identified. New source-confirmed professionals must be added recursively."
+  },
+  "digitisation_state": {
+    "current_step": "SOURCE_IDENTIFIED_AND_PROPOSITION_DIGITISED",
+    "native_email_custody": "CONNECTED_PRIVATE_GMAIL",
+    "public_safe_state": "NO_PROVIDER_IDS_OR_PRIVATE_EMAIL_BODIES",
+    "identity_federation": "PENDING_FOR_SUPPLEMENT_KEYS"
+  }
+}
