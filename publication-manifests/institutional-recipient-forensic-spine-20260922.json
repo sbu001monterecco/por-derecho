@@ -1,0 +1,72 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-INSTITUTIONAL-RECIPIENT-FORENSIC-SPINE-20260922",
+  "control_date": "2026-09-22",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "source_base_sha": "1fd5cfd4bb939798e761a8e39c5bbc5d391a3610",
+  "source_branch": "integration/institutional-recipient-forensic-spine-20260922",
+  "expected_routes": {
+    "en": [
+      "en/google-sun-park-evidence-cooperation/index.html",
+      "en/sun-park-digital-identity-google-mynd/index.html",
+      "en/lourdes-google-mynd-incident/index.html",
+      "en/pwc-canarias-carlos-saavedra-sun-park/index.html",
+      "en/rsm/nnr4-1025c2f66/index.html",
+      "en/grant-thornton/2024-04/index.html",
+      "en/prosecutorial-professional-evidence-pwc-grant-thornton-rsm/index.html"
+    ],
+    "es": [
+      "es/google-sun-park-cooperacion-evidencia/index.html",
+      "es/identidad-digital-sun-park-google-mynd/index.html",
+      "es/incidente-lourdes-google-mynd/index.html",
+      "es/pwc-canarias-carlos-saavedra-sun-park/index.html",
+      "es/rsm/nnr4-1025c2f66/index.html",
+      "es/grant-thornton/2024-04/index.html",
+      "es/fiscalia-evidencia-profesional-pwc-grant-thornton-rsm/index.html"
+    ]
+  },
+  "backend_projection": "assets/data/institutional-recipient-forensic-spine-20260922.json",
+  "canonical_naming": "Aweswell Limited; legal-register literal AWESWELL LIMITED; company 07716847",
+  "connection_model": "2016 professional notice/records -> alleged 2018 material-control/funded-exit sequence -> 2019 customer-facing digital identity -> 2021-2026 profile requests/state changes and separate account-security events -> 2026 complaints/removal/R33 -> finite custodian preservation requests",
+  "relation_vocabulary": ["DOC", "HIP", "OPEN", "NOTICE", "CONTRARY", "ADVERSE", "GAP"],
+  "publication_boundaries": [
+    "Related does not mean merged; chronology does not prove causation, common authorship or a single controller.",
+    "Notice does not prove reading, review, acceptance or agreement; silence is not admission.",
+    "Professional relationship does not transfer knowledge, intent, conduct, criminal responsibility or liability.",
+    "PwC, RSM and Grant Thornton are treated as potential documentary custodians/witnesses within defined perimeters, not as proven participants.",
+    "Google Business Profile / Maps and Google Account / Gmail security events remain separate and no security event is attributed to a named actor.",
+    "R33 is a party filing and not a judicial determination.",
+    "No private email addresses, message IDs, native messages, credentials, provider locators or privileged material are published."
+  ],
+  "visual_integrity_repair": {
+    "asset": "assets/sunpark-digital-identity-evidence-sequence-redacted.jpg",
+    "asset_deleted_or_replaced": false,
+    "public_display_state": "WITHHELD_PUBLIC_DERIVATIVE_INTEGRITY_FAILED",
+    "rule": "The corrupt/blank derivative remains preserved but is not displayed or relied on; no reconstruction or generated substitute is used."
+  },
+  "injector_scope_repair": {
+    "mechanism": "Page-declared data-recipient-focus opt-out, plus explicit legacy 2019 route guard",
+    "effect": "Recipient pages retain their own evidence-led record without unrelated global hotel/title/architecture panels.",
+    "global_content_deleted": false
+  },
+  "authorisation": {
+    "repository_and_website_publication": true,
+    "github_publication": true,
+    "gitlab_reconciliation": true,
+    "email_or_third_party_delivery": false,
+    "social_post": false,
+    "court_or_portal_filing": false
+  },
+  "dual_repository_rule": "GitHub exact-head review/deployment is completed first; the same public-safe propositions are then reconciled additively to the private GitLab canonical repository without destructive overwrite.",
+  "state_note": "PREPARED records source scope only. It is not a merge, deployment or live-verification certificate. Exact PR, merge, Pages and GitLab evidence must be recorded after those events occur.",
+  "validation": {
+    "commands": [
+      "python3 scripts/validate_institutional_recipient_forensic_spine.py",
+      "python3 scripts/validate_repository_preservation.py",
+      "python3 scripts/validate_publication_integrity.py",
+      "python3 scripts/validate_audience_experience.py"
+    ]
+  }
+}

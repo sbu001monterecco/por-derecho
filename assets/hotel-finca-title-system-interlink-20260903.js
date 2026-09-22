@@ -1,5 +1,6 @@
 (() => {
   'use strict';
+  if (document.body?.dataset.recipientFocus === 'true' || /\/(?:sunpark264-acostamatos-incident-2019|incidente-sunpark264-acostamatos-2019)\//.test(location.pathname)) return;
   const path = window.location.pathname.replace(/\/index\.html$/, '/');
   if (path.includes('/fincas-hoteleras-clasificacion-lesion-titulo-sobre-titulo/') || path.includes('/hotel-fincas-asset-classification-title-on-title-injury/')) return;
 

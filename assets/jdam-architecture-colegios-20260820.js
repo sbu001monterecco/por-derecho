@@ -1,4 +1,5 @@
 (() => {
+  if (document.body?.dataset.recipientFocus === 'true' || /\/(?:sunpark264-acostamatos-incident-2019|incidente-sunpark264-acostamatos-2019)\//.test(location.pathname)) return;
   const path = window.location.pathname.replace(/index\.html$/, '');
   const es = path.includes('/es/');
   const target = es ? '/por-derecho/es/arquitectura-nodo-documental-jdam/' : '/por-derecho/en/architecture-documentary-node-jdam/';
