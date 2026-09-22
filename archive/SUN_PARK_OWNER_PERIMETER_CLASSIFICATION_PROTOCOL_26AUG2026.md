@@ -22,7 +22,7 @@ A proven minority owner belongs first to an ownership-provenance class. A separa
 
 ## Perimeter A — our owner/control side
 
-Use for Aweswell/Oswell, LPB and Matkator only within the role and date actually proved. Do not collapse LPB into Matkator; do not treat Aweswell as title-holder of every finca merely because it is on the user-side control chain.
+Use for AWESWELL LIMITED, LPB and Matkator only within the role and date actually proved. Do not collapse LPB into Matkator; do not treat AWESWELL LIMITED as title-holder of every finca merely because it is on the user-side control chain.
 
 Visual token: **blue**.
 

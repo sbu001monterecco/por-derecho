@@ -3,7 +3,7 @@
   "publication_date": "2026-08-27",
   "last_accounting_interpretation_update": "2026-08-27",
   "entity": {
-    "canonical_name": "Aweswell Limited",
+    "canonical_name": "AWESWELL LIMITED",
     "companies_house_name": "AWESWELL LIMITED",
     "company_number": "07716847",
     "jurisdiction": "England and Wales",
@@ -19,8 +19,8 @@
       "from": "2011-07-25",
       "to": "2014-06-03"
     },
-    "forbidden_generated_name": "Oswell Limited",
-    "search_aliases_only": [
+    "forbidden_generated_names_rule": "Reject every error form listed by ops/AWESWELL_CANONICAL_NAME_RULE_27AUG2026.json",
+    "retrieval_error_tokens_not_aliases": [
       "Oswell",
       "Oswell UK",
       "Aweswell UK"

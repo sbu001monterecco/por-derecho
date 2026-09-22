@@ -86,7 +86,7 @@ Completeness remains controlled by the denominator, error log, native-message/at
 - Preserve exact email metadata, addresses, subjects, message/thread IDs, Drive IDs, filenames and hashes only in the private manifest or authorised source system.
 - Never commit raw private emails, privileged advice, personal data, authentication-bearing links or unredacted attachments to this public repository.
 - Preserve supporting, adverse, contradictory and exculpatory material on equal terms.
-- Keep Luchy Playa Blanca, S.L.U. (LPB), Matkator, S.L.U., the Comunidad de Propietarios, the Comunidad de Explotación, Pink Canary Services, S.L.U. (formerly Monterecco Sun Park, S.L.U.), Aweswell/Oswell and each third party separate by legal person and capacity.
+- Keep Luchy Playa Blanca, S.L.U. (LPB), Matkator, S.L.U., the Comunidad de Propietarios, the Comunidad de Explotación, Pink Canary Services, S.L.U. (formerly Monterecco Sun Park, S.L.U.), AWESWELL LIMITED and each third party separate by legal person and capacity.
 - Classify each proposition as documentary fact, attributed account, evidence-based inference, official outcome, contrary record or unresolved question.
 - Do not send, forward, share, publish, contact a third party or alter the source mailbox merely because the package was received.
 

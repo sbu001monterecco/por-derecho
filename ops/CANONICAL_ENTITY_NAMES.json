@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho.canonical-names.v1",
-  "control_date": "2026-08-25",
+  "control_date": "2026-09-22",
   "scope_note": "These are controlled names for repository narrative and the identified historical/procedural contexts. Historical official sources do not by themselves establish a company's present-day status.",
   "rules": [
     "Resolve an acronym through this register before expanding it.",
@@ -107,15 +107,15 @@
     {
       "id": "E005",
       "record_type": "legal_entity",
-      "canonical_name": "Aweswell Limited",
-      "first_reference": "Aweswell Limited",
+      "canonical_name": "AWESWELL LIMITED",
+      "first_reference": "AWESWELL LIMITED",
       "identifier": {
         "type": "UK company number",
         "value": "07716847"
       },
-      "former_name": "Monterecco Sun Park Limited",
+      "former_name": "MONTERECCO SUN PARK LIMITED",
       "former_name_period": "2011-07-25/2014-06-03",
-      "name_continuity_rule": "Aweswell Limited and Monterecco Sun Park Limited are the same UK company under company number 07716847; use the name applicable to the source date.",
+      "name_continuity_rule": "AWESWELL LIMITED and MONTERECCO SUN PARK LIMITED are the same UK company under company number 07716847; use the registered name applicable to the source date.",
       "official_sources": [
         {
           "authority": "UK Companies House",
@@ -123,7 +123,23 @@
           "url": "https://find-and-update.company-information.service.gov.uk/company/07716847",
           "proposition": "The register identifies AWESWELL LIMITED, company number 07716847, and lists MONTERECCO SUN PARK LIMITED as its previous name through 3 June 2014."
         }
-      ]
+      ],
+      "official_registered_name": "AWESWELL LIMITED",
+      "forbidden_generated_aliases": [
+        "Oswell",
+        "Oswell Limited",
+        "Awesell",
+        "Awesell Limited",
+        "Awswell",
+        "Awswell Limited",
+        "Aweswel",
+        "Aweswel Limited",
+        "Aweswelll",
+        "Aweswelll Limited",
+        "AWESWELLL"
+      ],
+      "separation_rule": "OSWELL 426 S.L. is a distinct Spanish entity and must never be treated as an alias, correction or bridge for UK company 07716847.",
+      "generation_rule": "Resolve the entity by company number 07716847 and use AWESWELL LIMITED in current assertions. Reject forbidden generated aliases outside expressly classified source literals, historical-error quotations or correction controls."
     },
     {
       "id": "E006",

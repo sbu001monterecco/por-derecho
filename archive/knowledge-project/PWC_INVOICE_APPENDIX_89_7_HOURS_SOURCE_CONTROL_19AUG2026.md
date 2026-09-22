@@ -59,7 +59,7 @@ Selected entries:
 - 16/05/2016 — 0.5 h — call with Patricia about conflict related to **LUCHY's parent company**, written as `Oswell` in the appendix.
 - 17/05/2016 — 1.0 h — introductory call with Cuatrecasas lawyer Pedro Campaña; review of Thompson-family draft re November 2015 General Meeting; meeting with Gil/Patricia.
 
-**Control on `Oswell`:** preserve the source spelling. The wider project identifies Aweswell Limited as the UK HoldCo. Do not silently amend a quoted source term without source reconciliation.
+**Control on `Oswell`:** preserve the source spelling. The wider project identifies AWESWELL LIMITED as the sole UK HoldCo. Do not silently amend a quoted source term without source reconciliation.
 
 ### Elena Santos Ramos
 Appendix identifier: `Santos Ramos Elena (ES058314)`.

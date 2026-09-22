@@ -6,12 +6,20 @@
     {
       "id": "PD-SP-O-0001",
       "type": "ORGANISATION",
-      "name": "Aweswell Limited",
-      "aliases": [
+      "name": "AWESWELL LIMITED",
+      "aliases": [],
+      "official_registered_name": "AWESWELL LIMITED",
+      "company_number": "07716847",
+      "forbidden_generated_aliases": [
+        "Oswell",
         "Oswell Limited",
-        "Aweswell",
-        "Oswell/Aweswell"
-      ]
+        "Awesell",
+        "Awswell",
+        "Aweswel",
+        "Aweswelll",
+        "AWESWELLL"
+      ],
+      "identity_control": "This record has one current legal name and no current-name aliases. Forbidden variants are transcription/template errors. OSWELL 426 S.L. is a distinct Spanish entity."
     },
     {
       "id": "PD-SP-O-0002",
