@@ -5,7 +5,7 @@
   "owner": "Gil Marer / Por Derecho",
   "created_at": "2026-09-22T00:00:00Z",
   "control_date": "2026-09-22",
-  "current_state": "PREPARED_PENDING_MERGE",
+  "current_state": "PR_OPEN",
   "control_tower_comment_id": 5782487285,
   "expected_routes": {
     "en": [
@@ -28,7 +28,9 @@
     "base_branch": "main",
     "base_sha": "4a69cd9df6d01e39ad0ba2f0e525cb53202620d4",
     "working_branch": "integration/five-private-actor-visual-parity-20260922",
-    "pull_request": null,
+    "pull_request": 1759,
+    "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/1759",
+    "remote_head_sha_at_open": "122ab64ccd843fe282be58b8213860b86c18a80b",
     "merge_sha": null,
     "pages_run": null,
     "live_verification": "PENDING"
