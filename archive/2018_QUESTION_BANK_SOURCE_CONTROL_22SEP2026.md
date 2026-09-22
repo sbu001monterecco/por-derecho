@@ -40,3 +40,13 @@ The public viewer, 7-June dossier, trio action map, Community organ, AC profile,
 - **18 July 2018** — Patricia Domínguez mailbox, subject `Q&A Penal 1132/2018 - CAM, Matos, Cogolludos, Borja`; attachment of the same name, **136,335 bytes**, SHA-256 `da19c2f5e6e3360def483873e222b4e7368f3ee8a41168f76699ce0d854ae3e2`.
 - This later working derivative materially confirms that the 19-Jun questioning architecture remained active in the DP 1132/2018 preparation period. It does **not** prove that the questions were asked, answered, judicially adopted or true.
 - The 19-Jun source remains the earlier provenance anchor. The 18-Jul derivative is retained as continuity/custody evidence, not a replacement source.
+
+## Separate counsel draft recovered
+
+The separate reply attachment has now been recovered from the connected SBU001 mailbox:
+
+- **19 June 2018 20:25** — reply message `1641981ea13ff60f`, subject `Re: Preguntas para la testificación del 25 de Junio de 2018`.
+- Counsel wrote: `Lo voy analizando. Te mando borrador de preguntas para Gil, para que las vaya traduciendo.`
+- Attachment: `INTERROGATORIO GIL MARER.odt` — **21,333 bytes** — SHA-256 `6ab4ceebe1add1f224e223899439d199589827557067d0ab84b8d33231b3da49`.
+- The draft is a distinct counsel-preparation source and is retained outside public Git. It asks Gil about his roles, possession, tourists/access, insolvency status, whether any Mercantile Court resolution had adjudicated LPB assets to CAM, the Community of Exploitation versus Owners' Community roles, denial of access after 7 June, locks/chains and alleged prior forced entries by JDAM.
+- **Evidential significance:** recovery of this separate draft strengthens QB-COR-003. It confirms that counsel did not simply return or adopt the 251-question bank; counsel was analysing it and circulated a separate draft for Gil. It still does not establish which questions were ultimately put in court.
