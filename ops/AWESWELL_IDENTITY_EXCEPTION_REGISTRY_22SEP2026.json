@@ -1,0 +1,88 @@
+{
+  "schema": "por-derecho.aweswell-identity-exceptions.v1",
+  "control_date": "2026-09-22",
+  "canonical_company_number": "07716847",
+  "rule": "Exceptions preserve evidence or correction controls; they never create aliases.",
+  "path_exceptions": [
+    {
+      "path": "ops/AWESWELL_CANONICAL_NAME_RULE_27AUG2026.json",
+      "category": "CORRECTION_CONTROL"
+    },
+    {
+      "path": "ops/CHATGPT_MEMORY_SOURCE_GOVERNANCE_22SEP2026.json",
+      "category": "CORRECTION_CONTROL"
+    },
+    {
+      "path": "ops/AWESWELL_IDENTITY_EXCEPTION_REGISTRY_22SEP2026.json",
+      "category": "CORRECTION_CONTROL"
+    },
+    {
+      "path": "archive/CHATGPT_MEMORY_AND_SOURCE_GOVERNANCE_22SEP2026.md",
+      "category": "CORRECTION_CONTROL"
+    },
+    {
+      "path": ".github/governance/AWESWELL_CANONICAL_NAME_RULE_27AUG2026.md",
+      "category": "CORRECTION_CONTROL"
+    },
+    {
+      "path": ".github/governance/PLATFORM_DISPLACEMENT_PATRIMONIAL_HARM_FOREIGN_INVESTOR_RULE_20SEP2026.md",
+      "category": "CORRECTION_CONTROL"
+    },
+    {
+      "path": "assets/aweswell/aweswell-limited-filed-accounts-2025-public-data.json",
+      "category": "CORRECTION_CONTROL"
+    },
+    {
+      "path": "archive/CAJASIETE_SUN_PARK_UNITARY_CONTROL_27AUG2026.md",
+      "category": "CORRECTION_CONTROL"
+    },
+    {
+      "path": "archive/AWESWELL_UNITARY_ACCOUNTING_DIGEST_PROMPT_27AUG2026.md",
+      "category": "CORRECTION_CONTROL"
+    },
+    {
+      "path": "archive/CORRECTION_REGISTER.md",
+      "category": "CORRECTION_CONTROL"
+    },
+    {
+      "path": "archive/CUATRECASAS_CROSS_BORDER_AFFECTED_REPORTING_PERSON_CONTROL_24AUG2026.md",
+      "category": "CORRECTION_CONTROL"
+    },
+    {
+      "path": "archive/knowledge-project/PWC_INVOICE_APPENDIX_89_7_HOURS_SOURCE_CONTROL_19AUG2026.md",
+      "category": "SOURCE_LITERAL"
+    },
+    {
+      "path": "assets/data/concurso36-complete-record-v1.json",
+      "category": "SOURCE_LITERAL_FILENAME"
+    },
+    {
+      "path": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+      "category": "SOURCE_LITERAL_FILENAME"
+    },
+    {
+      "path": "archive/THREAD_DELETION_AUDIT_2026-08-24_GARRIGUES_PARRILLA_COMPLETENESS.md",
+      "category": "DISTINCT_ENTITY"
+    },
+    {
+      "path": "evidence/garrigues-la-laguna/JUAN_TOMAS_PARRILLA_WIDER_MATTER_COVERAGE_REGISTER_ES.md",
+      "category": "DISTINCT_ENTITY"
+    },
+    {
+      "path": "archive/GARRIGUES_LA_LAGUNA_344_2013_EVIDENCE_AND_COMMUNICATIONS_REGISTER_24AUG2026.md",
+      "category": "DISTINCT_ENTITY"
+    },
+    {
+      "path": "assets/data/garrigues-la-laguna-proceeding-v1.json",
+      "category": "DISTINCT_ENTITY"
+    },
+    {
+      "path": "en/garrigues-la-laguna/index.html",
+      "category": "DISTINCT_ENTITY"
+    },
+    {
+      "path": "es/garrigues-la-laguna/index.html",
+      "category": "DISTINCT_ENTITY"
+    }
+  ]
+}

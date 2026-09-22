@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho.canonical-names.v1",
-  "control_date": "2026-08-25",
+  "control_date": "2026-09-22",
   "scope_note": "These are controlled names for repository narrative and the identified historical/procedural contexts. Historical official sources do not by themselves establish a company's present-day status.",
   "rules": [
     "Resolve an acronym through this register before expanding it.",
@@ -123,7 +123,23 @@
           "url": "https://find-and-update.company-information.service.gov.uk/company/07716847",
           "proposition": "The register identifies AWESWELL LIMITED, company number 07716847, and lists MONTERECCO SUN PARK LIMITED as its previous name through 3 June 2014."
         }
-      ]
+      ],
+      "official_registered_name": "AWESWELL LIMITED",
+      "forbidden_generated_aliases": [
+        "Oswell",
+        "Oswell Limited",
+        "Awesell",
+        "Awesell Limited",
+        "Awswell",
+        "Awswell Limited",
+        "Aweswel",
+        "Aweswel Limited",
+        "Aweswelll",
+        "Aweswelll Limited",
+        "AWESWELLL"
+      ],
+      "separation_rule": "OSWELL 426 S.L. is a distinct Spanish entity and must never be treated as an alias, correction or bridge for UK company 07716847.",
+      "generation_rule": "Resolve the entity by company number 07716847. Use AWESWELL LIMITED in registered-name fields and Aweswell Limited in ordinary narrative. Reject forbidden generated aliases outside expressly classified source literals, historical-error quotations or correction controls."
     },
     {
       "id": "E006",
