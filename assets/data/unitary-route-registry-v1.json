@@ -2348,5 +2348,41 @@
       "Las Palmas correspondence",
       "Tenerife correspondence"
     ]
+  },
+  {
+    "lang": "es",
+    "path": "es/cgae-coordinacion-deontologica-2026/",
+    "title": "CGAE · coordinación deontológica nacional e intercolegial 2026",
+    "type": "institution",
+    "summary": "Borrador nacional fuente-controlado sobre información previa, plazo ordinario de tres meses, derechos del denunciante, coordinación intercolegial e independencia profesional.",
+    "tags": [
+      "CGAE",
+      "deontología",
+      "coordinación",
+      "DIP 80/2026"
+    ],
+    "aliases": [
+      "Consejo General Abogacía",
+      "coordinación nacional",
+      "Reglamento disciplinario 2024"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/cgae-deontological-coordination-2026/",
+    "title": "CGAE · national and inter-Bar deontological coordination 2026",
+    "type": "institution",
+    "summary": "Source-controlled national draft on preliminary information, the ordinary three-month period, complainant rights, inter-Bar coordination and professional independence.",
+    "tags": [
+      "CGAE",
+      "deontology",
+      "coordination",
+      "DIP 80/2026"
+    ],
+    "aliases": [
+      "Spanish Bar Council",
+      "national coordination",
+      "2024 disciplinary regulation"
+    ]
   }
 ]
