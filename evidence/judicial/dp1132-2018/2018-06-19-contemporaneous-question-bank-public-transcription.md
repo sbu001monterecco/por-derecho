@@ -274,3 +274,4 @@ Canonical target: **Laura Patricia Acosta Matos^** (`PD-SP-P-0012`) · source pa
 74. Sabe usted quien fabrica deudas inexistentes?
 75. Sabe usted quien concocta actas de junta de propietarios para darle formalidad a sus actuaciones fraudulentas?
 76. Usted sabe los años de cárcel que se aplica a las comisiones y omisiones de extorsión, coacción, fraude, abuso de poder, prevaricación, manipulación de documentos falsos, intimidación, manipulación de procesos legales, denuncias falsas, mentir a la administración, policía local, guardia civil y juzgados?
+
