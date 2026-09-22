@@ -66,5 +66,14 @@
     "ICATF confirmation of ICAM 1487/26 territorial referral receipt/reference",
     "substantive CGAE response to the prepared national consultation after transmission",
     "complete underlying money-trail proof for disputed professional payments"
-  ]
+  ],
+  "status": "POST_SEND_UPDATE_PENDING_GATES",
+  "operational_state": {
+    "consejo_canario": "EMAIL_SENT_FORM_SUBMITTED_GENERIC_ACK_FORMAL_REGISTRATION_PENDING",
+    "cgae": "COPIED_ON_REGIONAL_EMAIL_SEPARATE_NATIONAL_COMMUNICATION_READY_NOT_SENT",
+    "official_sender": "sbu001@monterecco.com",
+    "sent_at": "2026-09-22T03:09:09+01:00",
+    "audit": "archive/THREAD_CONTINUITY_PRESERVATION_AUDIT_CCCA_SEND_22SEP2026.md",
+    "no_further_send_authorization": true
+  }
 }
