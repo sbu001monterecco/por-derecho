@@ -47,7 +47,10 @@
       "sitemap.xml",
       "archive/AC_PROFESSIONAL_ISOLATION_ATTRITION_CANON_22SEP2026.md",
       ".github/governance/AC_PROFESSIONAL_ISOLATION_ATTRITION_PROTOCOL_22SEP2026.md",
-      "assets/data/ac-professional-isolation-attrition-v1.json"
+      "assets/data/ac-professional-isolation-attrition-v1.json",
+      ".github/governance/LAWYER_INTERACTION_TRUTH_MACHINE_PROTOCOL_22SEP2026.md",
+      "assets/data/lawyer-interaction-truth-machine-v1.json",
+      "docs/deletion-audits/2026-09-22-lawyer-interaction-truth-machine-continuity.md"
     ],
     "authorization_status": "EXPLICIT_USER_AUTHORIZATION",
     "authorized_by": "Gil Marer",
@@ -199,5 +202,16 @@
       "universal lawyer-casualties theory",
       "automatic causation from successive adviser departures"
     ]
+  },
+  "lawyer_interaction_truth_machine": {
+    "control_id": "PD-LITM-20260922-01",
+    "governance": ".github/governance/LAWYER_INTERACTION_TRUTH_MACHINE_PROTOCOL_22SEP2026.md",
+    "machine_control": "assets/data/lawyer-interaction-truth-machine-v1.json",
+    "continuity_record": "docs/deletion-audits/2026-09-22-lawyer-interaction-truth-machine-continuity.md",
+    "denominator_complete": false,
+    "first_verified_firm": "Garrigues",
+    "first_verified_engagement_date": "2012-01-24",
+    "requires_concurso_and_extraconcursal_crosswalk": true,
+    "contrary_evidence_required": true
   }
 }
