@@ -543,6 +543,8 @@
       "PD-SP-P-0085",
       "PD-SP-P-0056"
     ],
-    "coverage_total": 40
+    "coverage_total": 40,
+    "source_discovered_supplement": "assets/data/legal-professionals-source-discovered-supplement-20260922.json",
+    "denominator_boundary": "coverage_total=40 is the frozen canonical register; the Truth Machine also reads source-discovered supplemental professional nodes pending controlled identity federation."
   }
 }
