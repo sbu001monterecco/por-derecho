@@ -1,0 +1,33 @@
+{
+  "schema": "por-derecho.methodology-transparency-publication.v1",
+  "control_id": "PD-METHOD-TRANSPARENCY-PUB-20260922-01",
+  "methodology_control": "PD-METHOD-TRANSPARENCY-20260922-01",
+  "status": "PUBLIC_SAFE_CANDIDATE",
+  "public_release_approved": false,
+  "deployed": false,
+  "live_verified": false,
+  "routes": [
+    "en/methodology/index.html",
+    "es/metodologia/index.html"
+  ],
+  "source_model": "assets/data/methodology-transparency-v1.json",
+  "css": "assets/methodology-transparency-20260922.css",
+  "builder": "scripts/build_methodology_transparency.py",
+  "validator": "scripts/validate_methodology_transparency.py",
+  "boundaries": [
+    "No raw private evidence, privileged communications, provider IDs, credentials or private source locators.",
+    "No methodology control can promote allegation to finding.",
+    "No CI/merge state can be represented as live deployment without readback.",
+    "The federation architecture entry remains DRAFT_REVIEW until a separately verified successor changes it."
+  ],
+  "host_projection": {
+    "github": {
+      "canonical_origin": "https://sbu001monterecco.github.io/por-derecho",
+      "adapter": "dedicated path-scoped methodology validation workflow"
+    },
+    "gitlab": {
+      "canonical_origin": "https://por-derecho.gitlab.io/por-derecho-setup-or-gitlab-setup",
+      "adapter": "existing GitLab pipeline and independent Duo review; no root-CI edit"
+    }
+  }
+}
