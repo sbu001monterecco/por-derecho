@@ -35,3 +35,8 @@ The question bank proves contemporaneous formulation of questions/allegations. I
 
 ## Required cross-links
 The public viewer, 7-June dossier, trio action map, Community organ, AC profile, Acosta Matos family/perimeter, institutional-question page, correction register and CAM/7-June missing-evidence addendum must resolve reciprocally to this control.
+## Later derivative / continuity source
+
+- **18 July 2018** — Patricia Domínguez mailbox, subject `Q&A Penal 1132/2018 - CAM, Matos, Cogolludos, Borja`; attachment of the same name, **136,335 bytes**, SHA-256 `da19c2f5e6e3360def483873e222b4e7368f3ee8a41168f76699ce0d854ae3e2`.
+- This later working derivative materially confirms that the 19-Jun questioning architecture remained active in the DP 1132/2018 preparation period. It does **not** prove that the questions were asked, answered, judicially adopted or true.
+- The 19-Jun source remains the earlier provenance anchor. The 18-Jul derivative is retained as continuity/custody evidence, not a replacement source.
