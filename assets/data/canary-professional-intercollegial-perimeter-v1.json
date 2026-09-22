@@ -1,7 +1,7 @@
 {
   "id": "PD-CAN-BAR-PERIMETER-20260921-01",
-  "version": "2026-09-21",
-  "status": "PUBLIC_SAFE_SOURCE_CONTROLLED_UPDATE",
+  "version": "2026-09-22-post-send",
+  "status": "PUBLIC_SAFE_SOURCE_CONTROLLED_POST_SEND",
   "scope": "Professional-regulation and inter-Colegio coordination map for the Sun Park / MYND Yaiza matter.",
   "rule_en": "Separate responsibility does not mean separate reality. Individual professional responsibility remains actor-specific; common evidence and economic context may require coordinated preservation and institutional treatment without collective attribution.",
   "rule_es": "La responsabilidad separada no significa una realidad separada. La responsabilidad profesional sigue siendo individual; la prueba común y el contexto económico pueden exigir preservación coordinada y tratamiento institucional sin atribución colectiva.",
@@ -32,12 +32,25 @@
       "id": "ICALPA",
       "jurisdiction": "Las Palmas",
       "role": "territorial_first_instance",
-      "state": "active_source_record",
+      "state": "DIP79_AND_DIP80_PRELIMINARY_WITH_DIP80_STATUS_ACCOUNTABILITY_OPEN",
       "references": [
         "DIP 79/2026",
         "DIP 80/2026"
       ],
-      "boundary": "DIP 79 and DIP 80 remain separate preliminary matters."
+      "boundary": "DIP 79 and DIP 80 remain separate preliminary matters.",
+      "procedural_accountability": {
+        "dip80_opened": "2026-05-27",
+        "days_open_as_of_2026_09_22": 118,
+        "current_regulation": "2024 disciplinary procedure regulation",
+        "ordinary_preliminary_period": "not more than three months save exceptional circumstances",
+        "communicated_archive_located": false,
+        "communicated_disciplinary_opening_located": false,
+        "communicated_suspension_located": false,
+        "communicated_transfer_located": false,
+        "communicated_exceptional_extension_basis_located": false,
+        "respondent_external_awareness": "September 2026 Provincial Court opposition expressly lists ICALPA among institutions approached by Gil Marer",
+        "boundary": "External awareness does not prove source of notice or internal ICALPA action."
+      }
     },
     {
       "id": "ICATF",
@@ -55,20 +68,51 @@
       "name": "Consejo Canario de Colegios de Abogados",
       "jurisdiction": "Canary Islands",
       "role": "autonomous_coordination_and_appellate_layer",
-      "state": "pre_escalation_no_direct_correspondence_located",
-      "boundary": "Regional coordinating/appellate competence must be determined issue by issue; no merits position is inferred from absence of correspondence."
+      "state": "REGIONAL_COMMUNICATION_SENT_FORM_SUBMITTED_FORMAL_REGISTRATION_PENDING",
+      "boundary": "Regional coordinating/appellate competence must be determined issue by issue; no merits position is inferred from absence of correspondence.",
+      "email_readiness": {
+        "status": "SENT_FORM_SUBMITTED_FORMAL_REGISTRATION_PENDING",
+        "sent_at": "2026-09-22T03:09:09+01:00",
+        "sender": "sbu001@monterecco.com",
+        "to": [
+          "pdeaguilar@consejocanariodeabogados.es",
+          "info@consejocanariodeabogados.es"
+        ],
+        "website_form_status": "SUBMITTED_GENERIC_ACKNOWLEDGEMENT_GRACIAS_POR_CONTACTARNOS",
+        "formal_reference": null,
+        "responsible_organ_or_person": null,
+        "substantive_response": null,
+        "boundary": "Sent/form acknowledgement does not prove formal registration, reading, assignment, acceptance or merits consideration.",
+        "audit": "archive/THREAD_CONTINUITY_PRESERVATION_AUDIT_CCCA_SEND_22SEP2026.md"
+      }
     },
     {
       "id": "CGAE",
       "name": "Consejo General de la Abogacía Española",
       "jurisdiction": "Spain",
       "role": "national_professional_body",
-      "state": "prior_contact_documented",
+      "state": "NATIONAL_SEPARATE_COMMUNICATION_READY_NOT_SENT_COPIED_ON_REGIONAL_EMAIL",
       "references": [
         "CGAE response RS-001022/2026",
         "separate 2026 ethical-channel track"
       ],
-      "boundary": "CGAE stated it does not hear ordinary individual lawyer complaints at first instance; the inter-Colegio/systemic route remains a distinct question."
+      "boundary": "CGAE stated it does not hear ordinary individual lawyer complaints at first instance; the inter-Colegio/systemic route remains a distinct question.",
+      "email_readiness": {
+        "status": "SEPARATE_NATIONAL_COMMUNICATION_READY_NOT_SENT",
+        "public_route": "informacion@abogacia.es / CGAE general contact form",
+        "dedicated_page": "/es/cgae-coordinacion-deontologica-2026/",
+        "boundary": "CC receipt of the regional message does not replace the separate national/inter-Bar communication and does not ask CGAE to exercise ordinary first-instance disciplinary jurisdiction; RS-001022/2026 remains controlling.",
+        "asks": [
+          "uniform criteria on preliminary-information duration and exceptional circumstances",
+          "complainant participation/appeal rights",
+          "suspension/coordination with related judicial proceedings",
+          "inter-Bar competence conflicts",
+          "national independence/conflict/external-contact safeguards",
+          "territorial Bar/autonomous council/CGAE coordination",
+          "reference and internal routing to competent deontology body"
+        ],
+        "copied_on_regional_email": true
+      }
     }
   ],
   "professional_nodes": [
@@ -171,9 +215,18 @@
       "reference": "coordination thesis",
       "proved": "Multiple distinct professional routes now touch Las Palmas, Tenerife and Madrid.",
       "open": "Competent regional coordination mechanism, abstention safeguards, preservation and any lawful national referral route."
+    },
+    {
+      "date": "2026-09-22",
+      "from": "DIP80 procedural accountability reconstruction",
+      "to": "Consejo Canario / CGAE",
+      "reference": "2024 disciplinary regulation + September 2026 respondent opposition",
+      "proved": "DIP80 has been open 118 days; the current 2024 regulation states preliminary information should not exceed three months save exceptional circumstances; respondent opposition expressly names ICALPA.",
+      "open": "Current DIP80 state, last material act, any exceptional-extension basis, any hearing/service, and applicable complainant participation/appeal route."
     }
   ],
   "open_gaps": [
+    "Certify current DIP 80/2026 procedural state, latest material act and any exceptional-circumstances basis for continuing beyond the ordinary three-month preliminary period.",
     "Certify whether ICAM actually transmitted 1487/26 to ICATF and whether ICATF assigned a local reference.",
     "Recover the substantive response behind the separate March–June 2026 CGAE ethical-channel track.",
     "Complete individual Colegio verification where the present record establishes a matter nexus but not the exact Bar route.",
@@ -188,6 +241,16 @@
     "es/pwc-canarias-carlos-saavedra-sun-park/",
     "es/san-telmo-ricpe-sun-park/",
     "es/rsm/nnr4-1025c2f66/",
-    "es/cuatrecasas-icam-ccacm-2026/"
-  ]
+    "es/cuatrecasas-icam-ccacm-2026/",
+    "es/cgae-coordinacion-deontologica-2026/",
+    "en/cgae-deontological-coordination-2026/"
+  ],
+  "communication_state": {
+    "cut_off": "2026-09-22T03:09:09+01:00",
+    "consejo_canario": "EMAIL_SENT_WEBSITE_FORM_SUBMITTED_GENERIC_ACK_FORMAL_REGISTRATION_PENDING",
+    "cgae": "COPIED_ON_REGIONAL_EMAIL_SEPARATE_NATIONAL_COMMUNICATION_NOT_SENT",
+    "delivery_failure_for_consejo_located": false,
+    "reply_from_consejo_located": false,
+    "evidence_boundary": "No located bounce/reply is not proof of delivery, reading, registration or acceptance."
+  }
 }
