@@ -3,7 +3,7 @@
   "schema_version": "1.0.0",
   "publication_id": "ICALPA-DIP80-ACCOUNTABILITY-CONSEJO-CGAE-20260922",
   "control_date": "2026-09-22",
-  "current_state": "PREPARED_PENDING_MERGE",
+  "current_state": "POST_SEND_CORRECTION_PENDING_MERGE_AND_GATES",
   "owner": "Por Derecho / Project Sun Rock",
   "authority": "Gil Marer — update page fully and confirm email readiness",
   "baseline_main": "a75146b7b1a5ecbf04b9682fb7ac373518364af2",
@@ -30,7 +30,8 @@
     "assets/data/canary-professional-intercollegial-perimeter-v1.json",
     "assets/data/unitary-route-registry-v1.json",
     "CHATGPT_START_HERE.md",
-    "sitemap.xml"
+    "sitemap.xml",
+    "archive/THREAD_CONTINUITY_PRESERVATION_AUDIT_CCCA_SEND_22SEP2026.md"
   ],
   "controlling_points": [
     "DIP 80/2026 opened as preliminary information on 27-May-2026.",
@@ -43,10 +44,12 @@
     "CGAE request is national/inter-Bar criteria and coordination, not ordinary first-instance discipline."
   ],
   "email_state": {
-    "consejo_canario": "READY_FOR_USER_AUTHORIZATION_NOT_SENT",
-    "cgae": "READY_FOR_USER_AUTHORIZATION_NOT_SENT",
+    "consejo_canario": "EMAIL_SENT_FORM_SUBMITTED_GENERIC_ACK_FORMAL_REGISTRATION_PENDING",
+    "cgae": "COPIED_ON_REGIONAL_EMAIL_SEPARATE_NATIONAL_COMMUNICATION_READY_NOT_SENT",
     "official_sender": "sbu001@monterecco.com",
-    "attachment_strategy": "Short regional/national communication plus traceability index/opposition extract; no mass documentary dossier unless requested."
+    "sent_at": "2026-09-22T03:09:09+01:00",
+    "attachment_strategy": "No attachments in the regional transmission; the public landing page was linked. The separate CGAE package remains to be controlled before transmission.",
+    "evidence_boundary": "No located Consejo-specific bounce or reply is not proof of delivery, reading, registration or acceptance."
   },
   "validation": {
     "required": [
@@ -64,7 +67,7 @@
   "open_nonblocking_gaps": [
     "ICALPA certification of current DIP 80 state and any exceptional-extension basis",
     "ICATF confirmation of ICAM 1487/26 territorial referral receipt/reference",
-    "substantive CGAE response to the prepared national consultation after transmission",
+    "formal CCCA acknowledgement/reference/assignment and any response to the copied regional message; separate CGAE consultation remains not sent",
     "complete underlying money-trail proof for disputed professional payments"
   ],
   "status": "POST_SEND_UPDATE_PENDING_GATES",
@@ -74,6 +77,8 @@
     "official_sender": "sbu001@monterecco.com",
     "sent_at": "2026-09-22T03:09:09+01:00",
     "audit": "archive/THREAD_CONTINUITY_PRESERVATION_AUDIT_CCCA_SEND_22SEP2026.md",
-    "no_further_send_authorization": true
+    "no_further_send_authorization": true,
+    "attachment_strategy": "No attachments in the regional transmission; the public landing page was linked. The separate CGAE package remains to be controlled before transmission.",
+    "evidence_boundary": "No located Consejo-specific bounce or reply is not proof of delivery, reading, registration or acceptance."
   }
 }
