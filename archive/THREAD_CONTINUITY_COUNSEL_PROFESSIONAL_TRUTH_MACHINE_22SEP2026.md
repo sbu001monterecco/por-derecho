@@ -51,3 +51,14 @@ The initial 40/40 result covered the then-frozen canonical legal-professional re
 Current working person denominator: **49 analysis nodes** = 40 canonical + 9 source-discovered supplement nodes. Supplemental nodes remain pending controlled immutable-ID federation and therefore do not alter the hard-coded 40-record canonical identity validator in this lane.
 
 Source-confirmed corrections/additions include Tomás González Jorge / IURISCAN (2013–2014); José Manuel Niederleytner García-Lliberós (not the superseded shorthand “Juan Manuel Niederleiter”); Leopoldo Cólogan Rodríguez de Azero; Rosling King; and Barnea. Fieldfisher, KLT Legal, Brown Rudnick and Rosenblatt/Memery Crystal-related contacts are retained as firm-level scope/onboarding/review lanes where retainer status remains matter-specific or open, rather than being automatically classified as former counsel.
+
+## Cross-host implementation closeout — 22 September 2026
+
+- GitHub review lane: **Draft PR #1762**, branch `governance/counsel-professional-truth-machine-20260922`.
+- GitLab review lane: **Draft MR !547**, same branch name; host heads remain intentionally distinct.
+- Google Drive operational control copy: **Por Derecho — Counsel & Law-Firm Truth Machine Control — 22 Sep 2026**. Its private Drive locator is intentionally not copied into public Git.
+- Portable control parity was read back byte-for-byte across GitHub and GitLab for the supplement, Truth Machine JSON, governing rule, continuity file before this closeout, deterministic validator, canonical professional register binding, `CHATGPT_START_HERE.md`, and both bilingual counsel-continuity pages.
+- GitHub dedicated `Validate counsel professional Truth Machine` completed successfully on the substantive head; the existing `Validate legal professional register` and AWESWELL identity guard also completed successfully.
+- GitLab dedicated `verify-counsel-professional-truth-machine` completed successfully. The broader GitLab pipeline still contains failing general release/build jobs (`verify-tested-build-handoff`, `verify-ricpe-static-readers`, `verify-gitlab-public-frontend`, `verify-publication-controls`) and therefore **does not authorize merge or deployment**.
+- The public-safe bilingual site changes exist only on the Draft review branches at this stage. No claim is made that GitHub Pages or GitLab Pages has deployed this new layer.
+- Project operational memory is wired through the rule, machine data, supplement, `CHATGPT_START_HERE.md`, this continuity handover and the Drive control copy. Account-level ChatGPT Memory is a separate product layer and is not represented as rewritten by this repository operation.
