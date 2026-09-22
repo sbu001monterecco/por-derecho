@@ -188,3 +188,10 @@ Concurso 36/2012 decision-continuity corrections continue in `CORRECTION_REGISTE
 ## Namespaced continuation — 21 September 2026 — Canary Council
 
 Consejo Canario / inter-Colegio / professional-perimeter corrections continue in `CORRECTION_REGISTER_CANARY_COUNCIL_ADDENDUM_21SEP2026.md` under IDs `CR-CCCA-001`–`006`. This addendum controls the corrected institutional name/acronym, CGAE first-instance boundary, ICAM→Tenerife referral status, RSM/San Telmo integration language, Parrilla payment characterisation and PwC later-convergence boundary.
+
+
+## 22 Sep 2026 — 19 June 2018 question-bank controls
+
+- **QB-COR-001 — alleged cousin relationship:** the 19-Jun-2018 preparation text calls FMMM JDAM's “primo”. FMMM's 20-Jul-2018 DP 1132/2018 statement says José Daniel Acosta Matos was not his cousin and there was no family relationship. Preserve the historic wording as source text; do not adopt kinship without independent primary proof.
+- **QB-COR-002 — 17/18 May meeting date:** the source asks about a 17-May-2018 meeting. The located canonical Community ACTA is dated 18-May-2018. Preserve the literal 17-May wording as a historic question; any separate 17-May meeting remains unproved.
+- **QB-COR-003 — counsel adoption:** the bank was sent “Para tu consideración”. Counsel replied “Lo voy analizando” and sent a different draft for Gil. Do not describe the 251 questions as filed, adopted, actually asked in court, answered or judicially accepted without a separate source.
