@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho-counsel-procurador-perimeter-register-v1",
-  "as_of": "2026-09-01",
+  "as_of": "2026-09-22",
   "status": "seed_control_not_complete_denominator",
   "governance": "archive/COUNSEL_PROCURADOR_FILING_LINEAGE_GOVERNANCE_30AUG2026.md",
   "rules": {
@@ -8,7 +8,9 @@
     "do_not_infer_perimeter_from_same_proceeding": true,
     "lawyer_procurador_pairing_is_period_and_proceeding_specific": true,
     "preserve_individual_filing_attribution": true,
-    "instruction_advice_filing_decision_are_separate": true
+    "instruction_advice_filing_decision_are_separate": true,
+    "lawyer_interaction_truth_machine_required": true,
+    "complete_lawyer_denominator_not_yet_claimed": true
   },
   "professionals": [
     {
@@ -106,19 +108,156 @@
       "boundary": "Act-specific procurador capacity only; no permanent lawyer pairing, knowledge transfer, intent, wrongdoing or liability is inferred."
     },
     {
-      "display_name": "Juan Daniel Fajardo Expósito", "classification": "external_or_party_specific_counsel", "our_perimeter": false,
-      "identity_status": "Rollo_1010_2018_appellate_cover_verified", "period_specific_clients": ["Gil Marer"],
+      "display_name": "Juan Daniel Fajardo Expósito",
+      "classification": "external_or_party_specific_counsel",
+      "our_perimeter": false,
+      "identity_status": "Rollo_1010_2018_appellate_cover_verified",
+      "period_specific_clients": [
+        "Gil Marer"
+      ],
       "boundary": "Appearance on the located appellate cover only; filing and authority denominator remain open"
     },
     {
-      "display_name": "Ignacio Manuel Martín Marrero", "classification": "external_or_party_specific_counsel", "our_perimeter": false,
-      "identity_status": "Rollo_1010_2018_appellate_cover_verified", "period_specific_clients": ["Constructora Acosta Matos", "Laura Patricia Acosta Matos", "José Daniel Acosta Matos"],
+      "display_name": "Ignacio Manuel Martín Marrero",
+      "classification": "external_or_party_specific_counsel",
+      "our_perimeter": false,
+      "identity_status": "Rollo_1010_2018_appellate_cover_verified",
+      "period_specific_clients": [
+        "Constructora Acosta Matos",
+        "Laura Patricia Acosta Matos",
+        "José Daniel Acosta Matos"
+      ],
       "boundary": "Appearance on the located appellate cover only; filing and authority denominator remain open"
     },
     {
-      "display_name": "Juan Carlos Prieto Puente", "classification": "external_opposing_dissident_side", "our_perimeter": false,
-      "identity_status": "Rollo_1010_2018_appellate_cover_verified", "period_specific_clients": ["Antonio Cogolludo Rojas", "Shaila María Cogolludo Ramos"],
+      "display_name": "Juan Carlos Prieto Puente",
+      "classification": "external_opposing_dissident_side",
+      "our_perimeter": false,
+      "identity_status": "Rollo_1010_2018_appellate_cover_verified",
+      "period_specific_clients": [
+        "Antonio Cogolludo Rojas",
+        "Shaila María Cogolludo Ramos"
+      ],
       "boundary": "Do not conflate with the separate legacy string Juan Carlos Roque Prieto; appearance on this cover does not transfer other roles"
+    },
+    {
+      "display_name": "Garrigues",
+      "classification": "our_former_firm",
+      "our_perimeter": true,
+      "identity_status": "firm_engagement_verified_2012_01_24",
+      "boundary": "First currently verified firm in denominator; no AC-caused exit located."
+    },
+    {
+      "display_name": "Miguel Méndez Itarte",
+      "classification": "our_historical_counsel_garrigues_team",
+      "our_perimeter": true,
+      "firm": "Garrigues",
+      "verification": "individual act/responsibility remains document-specific"
+    },
+    {
+      "display_name": "José María Martínez de Artola",
+      "classification": "our_historical_counsel_garrigues_team",
+      "our_perimeter": true,
+      "firm": "Garrigues",
+      "verification": "individual act/responsibility remains document-specific"
+    },
+    {
+      "display_name": "Víctor de la Torre",
+      "classification": "our_historical_counsel_garrigues_team",
+      "our_perimeter": true,
+      "firm": "Garrigues",
+      "verification": "individual act/responsibility remains document-specific"
+    },
+    {
+      "display_name": "Zulay Carmen Rodríguez",
+      "classification": "our_historical_counsel_garrigues_team",
+      "our_perimeter": true,
+      "firm": "Garrigues",
+      "verification": "individual act/responsibility remains document-specific"
+    },
+    {
+      "display_name": "Cuatrecasas",
+      "classification": "our_former_firm_with_later_separate_adverse_matter",
+      "our_perimeter": true,
+      "identity_status": "historical_mandates_verified",
+      "boundary": "Historical adviser status and later separate adverse/execution roles must not be collapsed."
+    },
+    {
+      "display_name": "Rosa Gual Tomás",
+      "classification": "our_historical_counsel_cuatrecasas",
+      "our_perimeter": true,
+      "firm": "Cuatrecasas"
+    },
+    {
+      "display_name": "Iñigo de Luisa Maíz",
+      "classification": "our_historical_counsel_cuatrecasas",
+      "our_perimeter": true,
+      "firm": "Cuatrecasas"
+    },
+    {
+      "display_name": "Adriana González García",
+      "classification": "our_historical_counsel_cuatrecasas",
+      "our_perimeter": true,
+      "firm": "Cuatrecasas"
+    },
+    {
+      "display_name": "Pedro Campaña Ávila",
+      "classification": "our_historical_counsel_cuatrecasas",
+      "our_perimeter": true,
+      "firm": "Cuatrecasas"
+    },
+    {
+      "display_name": "Mónica Lasquibar Rodríguez",
+      "classification": "our_historical_counsel_cuatrecasas",
+      "our_perimeter": true,
+      "firm": "Cuatrecasas"
+    },
+    {
+      "display_name": "Luis Álvarez de la Vega Gaztelu",
+      "classification": "our_historical_counsel_cuatrecasas",
+      "our_perimeter": true,
+      "firm": "Cuatrecasas"
+    },
+    {
+      "display_name": "Cristóbal Cotta",
+      "classification": "our_historical_counsel_cuatrecasas",
+      "our_perimeter": true,
+      "firm": "Cuatrecasas"
+    },
+    {
+      "display_name": "Pablo Villaseca Rico",
+      "classification": "our_historical_counsel_cuatrecasas",
+      "our_perimeter": true,
+      "firm": "Cuatrecasas",
+      "verification": "role in source files; exact matter-specific mandate remains source-controlled"
+    },
+    {
+      "display_name": "Armando Betancor Álamo",
+      "classification": "our_former_counsel",
+      "our_perimeter": true,
+      "firm": "Alas Legal Advisors",
+      "identity_status": "signed_engagement_evidence_located"
+    },
+    {
+      "display_name": "Joaquín Ruiz de Infante Abella",
+      "classification": "our_former_collaborating_counsel",
+      "our_perimeter": true,
+      "firm": "Bufete Ruiz de Infante",
+      "identity_status": "substantive_drafting_filing_collaboration_verified; standalone_retainer_open"
+    },
+    {
+      "display_name": "Daniel Jiménez García",
+      "classification": "our_former_counsel",
+      "our_perimeter": true,
+      "firm": "SLJ Abogados",
+      "identity_status": "accepted_2020_engagement_verified"
+    },
+    {
+      "display_name": "Luis Miguel López Gómez",
+      "classification": "our_former_counsel",
+      "our_perimeter": true,
+      "firm": "López Castelo Abogados",
+      "identity_status": "LPB_Concurso_and_appeal_work_verified"
     }
   ],
   "required_linkage": [
@@ -136,5 +275,13 @@
     "result",
     "appeal_followup",
     "current_status"
-  ]
+  ],
+  "lawyer_truth_machine": "assets/data/lawyer-interaction-truth-machine-v1.json",
+  "denominator_status": {
+    "complete": false,
+    "scope": "currently_located_our_perimeter_lawyers_and_firms_2012_2026",
+    "first_verified_firm": "Garrigues",
+    "first_verified_engagement_date": "2012-01-24",
+    "note": "Expanded on 22 Sep 2026; historical gaps and additional consulted professionals remain open."
+  }
 }
