@@ -192,3 +192,13 @@ Before any future counsel/law-firm interaction analysis, read:
 ## Publication and merge boundary
 
 This control authorises evidence organization and supervised analysis. It does not itself authorize a filing, email, allegation escalation, public accusation, deployment or merge. Public changes must pass the existing publication, privacy, exact-head and live-readback gates.
+
+## 22-Sep denominator correction — source-discovered supplement
+
+The original 40-record canonical professional register remains frozen under its existing authorization and identity validator. A later connected-source gap scan identified additional source-confirmed historic/cross-border legal professionals who must not be omitted merely because they are not yet assigned immutable CAEPR IDs. Read `assets/data/legal-professionals-source-discovered-supplement-20260922.json` as part of this Truth Machine.
+
+Current controlled denominator: **40 canonical register records + 9 source-discovered professional analysis nodes = 49 person analysis nodes**, plus 9 firm-level discovery/engagement lanes. “40/40” therefore means full coverage of the frozen canonical register, not universal completeness.
+
+New source-confirmed additions include Tomás González Jorge / IURISCAN (2013–2014), José Manuel Niederleytner García-Lliberós / NIEDERLEYTNER ABOGADOS, Leopoldo Cólogan Rodríguez de Azero, Rosling King legal-team professionals, and Barnea legal-team professionals. Proposal/onboarding-only firms remain separately marked and are not silently promoted to former counsel.
+
+**Identity correction:** contemporaneous evidence identifies **José Manuel Niederleytner García-Lliberós**. “Chema” is a contemporaneous team shorthand. The earlier shorthand “Juan Manuel Niederleiter” is superseded and must not be used as a canonical identity. **Leopoldo Cólogan Rodríguez de Azero** is the source-confirmed spelling.
