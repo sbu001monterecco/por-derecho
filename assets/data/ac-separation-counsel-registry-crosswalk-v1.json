@@ -487,7 +487,6 @@
   "drive_recovery": {
     "folder_id": "1rVrqrPbXON90jQZhYAm4Akmw2rkEszd0",
     "snapshot_file_id": "1O6lqqeTQHy2nLTzTFh2GdNVqTziG3fUQ",
-    "snapshot_name": "RPL3304_COUNSEL_FIRM_REGISTRY_CROSSWALK_22SEP2026.md",
-    "purpose": "Google Drive recovery/control copy for GitLab restoration after service unlock; public Git remains authoritative for current live registry state."
+    "snapshot_name": "RPL3304_COUNSEL_FIRM_REGISTRY_CROSSWALK_22SEP2026.md"
   }
 }
