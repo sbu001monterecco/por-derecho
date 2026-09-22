@@ -138,5 +138,66 @@
     "Do not state the IA caused every counsel withdrawal.",
     "Keep Joaquín's apology and lawyer-client breakdown as contrary evidence.",
     "Keep Cristo restorative/non-adverse classification."
-  ]
+  ],
+  "mail_review_20260922": {
+    "status": "BOUNDED_REVERIFICATION_NOT_COMPLETE_MAILBOX_AUDIT",
+    "canonical_refs": [
+      "A2a",
+      "A3",
+      "A5",
+      "A8",
+      "LRAC-EVT-2018-CRISTO-001",
+      "LRAC-EVT-2020-JOAQUIN-2152"
+    ],
+    "scope": "Business-mail connector; direct 2020/2021/2025 withdrawal messages, February 2020 response thread, and Cristo forward of the 25 January 2018 AC communication.",
+    "privacy": "Native messages, provider locators, subjects, signatures and privileged advice remain outside public Git. Summaries reconcile existing published propositions.",
+    "findings": [
+      {
+        "ref": "A5",
+        "date": "2021-02-15",
+        "status": "DOCUMENTED_COMMUNICATION",
+        "summary": "Luis Miguel López stated time and non-payment reasons, reported continuing during the transition, and offered further help to Cristo. An announced resignation is not proof of the effective court substitution date."
+      },
+      {
+        "ref": "A5",
+        "date": "2025-05-13",
+        "status": "DOCUMENTED_COMMUNICATION",
+        "summary": "Renewed withdrawal and subsequent exchange preserve his account of continued work and repeated postponement, his disagreement with alleged procedural disconnection, the client acknowledgement of his contribution and his offer to coordinate document handover. Non-payment is his stated reason; an AC refusal causing departure is not established."
+      },
+      {
+        "ref": "A3",
+        "date": "2020-09-21",
+        "status": "DOCUMENTED_COMMUNICATION",
+        "summary": "Joaquin notice concerns Gil personally and invokes irreparable lawyer-client breakdown. The email notice and the court filing containing the apology are separate sources."
+      },
+      {
+        "ref": "A2a",
+        "date": "2020-09-21",
+        "status": "DOCUMENTED_COMMUNICATION",
+        "summary": "Armando notice covers the wider client group and invokes lawyer-client breakdown; it also reserves unpaid-fee claims. Same-day notices do not establish exclusive AC causation."
+      },
+      {
+        "ref": "A8",
+        "date": "2018-01-25",
+        "provenance": "Forwarded by Cristo on 2023-02-04; original transmission independently unrecovered in this pass.",
+        "status": "FORWARDED_CONTEMPORANEOUS_COMMUNICATION",
+        "summary": "AC communication announces Bar recourse, terminates LPB representation and restricts further acts and procurator filings. The forwarded wording confirms the existing defined-mandate account, but does not prove actual Bar registration."
+      }
+    ],
+    "open_gaps": [
+      "Individual communications still require reconciliation with the central atomic event register; no new global event IDs allocated in this pass.",
+      "Court-effective withdrawal, substitution and handover dates for each mandate.",
+      "Specific LPB fee requests, AC responses and payment decisions.",
+      "Actual ICATF complaint, registration, file and outcome for Cristo.",
+      "LML expanded-surname variants differ across existing public controls; use source-supported Luis Miguel López pending identity reconciliation."
+    ],
+    "follow_up_order": [
+      "A5 / LML",
+      "A3 / JR",
+      "A2a / AB"
+    ],
+    "contact_state": "NO_EMAIL_SENT_IN_THIS_TASK",
+    "gitlab_readback": "22 September 2026: actors route HTTP 200; dedicated ES/EN counsel routes HTTP 404 both at root and project prefix. GitLab not updated.",
+    "visual_direction": "Add accessible individual cards and dated source summaries to existing ES/EN routes; preserve complete record and favourable/restorative Cristo treatment. No fabricated portraits or universal causation graphic."
+  }
 }
