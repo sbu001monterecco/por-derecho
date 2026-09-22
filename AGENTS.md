@@ -629,3 +629,17 @@ or other third parties associated with Gil Marer, Luchy Playa Blanca, S.L.U.
   only. Native Gmail/Drive locators, raw private communications and privileged
   legal work remain in authorised private custody and must be re-queried there.
 
+
+
+## 13. Legal-professional interaction Truth Machine — mandatory 2012+ genealogy
+When any lawyer, firm, procurador, counsel handover, fee dispute, venia, filing, withdrawal, professional-pressure allegation or AC/adverse-party interaction is in scope, apply **PD-LAW-TRUTH-20260922-01** in `governance/LEGAL_PROFESSIONAL_INTERACTION_TRUTH_MACHINE_22SEP2026.md`.
+
+- Universe: every record in `assets/data/legal-professionals-register-v1.json`, not only A1–A8.
+- Garrigues is the first verified firm in the current 2012+ genealogy; keep the 2011 predecessor question open.
+- Unit: **professional × client × matter × period**; parallel mandates are allowed.
+- Sequence: **observe → manifest → compare → classify → traverse dependencies → adversarial review → reconcile → exact-head verify → deploy if applicable → live readback → new envelope → recurse until closure**.
+- Counsel-change count, withdrawal, payment, contact, procedural permission, disagreement, association or chronology never proves AC causation, bribery, influence, common purpose, knowledge or intent.
+- Preserve the professional's strongest explanation, contrary evidence and formal transition reason alongside the project-side allegation.
+- Include relevant interactions outside Concurso 36/2012; do not omit a mandate merely because it is extraconcursal.
+- Current counsel are continuity/audit entries, not presumed victims or participants in a historic attrition theory.
+- Native Gmail/Drive material and privileged/private material stay outside public Git.
