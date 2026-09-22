@@ -4,7 +4,7 @@
   "publication_id": "PD-AC-RPL3304-R33-20260921",
   "control_date": "2026-09-22",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "LIVE_MAIN_WITH_VISUAL_LINKAGE",
+  "current_state": "PR_OPEN",
   "expected_routes": {
     "es": [
       "es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/index.html"
@@ -14,7 +14,7 @@
     ]
   },
   "predecessor_pr": 1696,
-  "pull_request": 1725,
+  "pull_request": 1741,
   "source": {
     "id": "C36-SPECIALIST-R33",
     "date": "2026-09-14",
@@ -63,7 +63,7 @@
   ],
   "frozen_corpus_boundary": "The Aug-23 fixed 50-specialist / 127-complete-record catalogues remain unchanged; R33 is a post-cutoff additive source page, not silently inserted into those frozen denominators.",
   "authority": "Gil Marer instruction: take over and do it now.",
-  "state_note": "R33 dedicated pages and forensic viewer are on main; 22-Sep-2026 visual-linkage release stages canonical vector derivatives and reciprocal first-read links through protected PR workflow.",
+  "state_note": "The R33 source pages/viewer already exist on main. PR #1741 stages the 22-Sep-2026 canonical visual-linkage release; visual assets and reciprocal first-read links are not treated as merged/deployed until the protected PR completes.",
   "controlled_extract_path": "evidence/insolvency-36-2012/rpl-3304-2025/R33-oposicion-ac-apelacion-lpb-septiembre-2026-controlled-extracts.md",
   "sitemap_state": "Not manually edited in this release; dedicated routes are reachable through reciprocal in-site links. Global sitemap remains generator-owned.",
   "viewer_upgrade": {
