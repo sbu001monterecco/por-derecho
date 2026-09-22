@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho.visual-linkage.v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "control_date": "2026-09-22",
   "visual_set_id": "PD-C36-RPL3304-VISUAL-SET-20260922",
   "matter": {
@@ -41,5 +41,8 @@
     "Distinct-firm collaboration does not establish identity of law firms."
   ],
   "governance_rule": ".github/governance/CONCURSO36_R33_VISUAL_LINKAGE_RULE_22SEP2026.md",
-  "drive_master_folder_id": "1rVrqrPbXON90jQZhYAm4Akmw2rkEszd0"
+  "drive_master_folder_id": "1rVrqrPbXON90jQZhYAm4Akmw2rkEszd0",
+  "counsel_registry_crosswalk": "assets/data/ac-separation-counsel-registry-crosswalk-v1.json",
+  "master_identity_registry": "assets/data/matter-identity-registry-v1.json",
+  "legal_professionals_register": "assets/data/legal-professionals-register-v1.json"
 }
