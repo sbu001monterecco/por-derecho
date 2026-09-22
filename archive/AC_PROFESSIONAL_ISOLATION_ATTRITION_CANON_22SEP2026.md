@@ -116,3 +116,8 @@ The controlling legal-professional universe is every record in `assets/data/lega
 Every lawyer, law firm and procurador interaction—inside or outside Concurso 36/2012—must pass `governance/LEGAL_PROFESSIONAL_INTERACTION_TRUTH_MACHINE_22SEP2026.md` and `assets/data/legal-professional-interaction-truth-machine-v1.json`.
 
 The analytical key is **professional × client × matter × period**. The number of lawyer changes is prohibited as a causation shortcut. Garrigues remains in the genealogy despite the absence of a presently identified AC causal link; current counsel remain for continuity without being drawn retrospectively into a former-counsel attrition thesis.
+
+
+## Parent AC claim family
+
+This framework is the professional-interference branch **`AC-CLM-011`** of the broader actor-specific control `PD-AC-CLAIMS-R33-20260922-01`. When the same evidence also bears on remuneration, procedural access, ONA/Clubotel, final estate reconciliation or R33, link the relevant additional `AC-CLM-*` family rather than expanding `AC-CLM-011` beyond its professional-interference scope.

@@ -62,3 +62,10 @@ Public Git receives public-safe proposition summaries, source categories, opaque
 - `archive/COUNSEL_DEFENCE_CONTINUITY_SOURCE_MAP_23AUG2026.md`
 
 This control is additive and source-first. It does not authorise external contact, filing or email.
+
+
+## AC-linked interaction rule
+
+Where an interaction envelope concerns an act, omission, payment, access decision, professional-exposure event or other conduct attributed to the Administrador Concursal, bind the professional envelope to **PD-AC-CLAIMS-R33-20260922-01** and the most specific `AC-CLM-*` family in `assets/data/ac-claims-r33-crosswalk-v1.json`. Professional analysis and AC-claim analysis are complementary, not substitutes: the former asks what happened to the professional mandate; the latter asks what exact AC act/omission, duty, knowledge, effect, counterevidence and open proof are alleged.
+
+The professional-isolation theory is specifically `AC-CLM-011`. Do not use that family as a catch-all for unrelated AC allegations.

@@ -643,3 +643,18 @@ When any lawyer, firm, procurador, counsel handover, fee dispute, venia, filing,
 - Include relevant interactions outside Concurso 36/2012; do not omit a mandate merely because it is extraconcursal.
 - Current counsel are continuity/audit entries, not presumed victims or participants in a historic attrition theory.
 - Native Gmail/Drive material and privileged/private material stay outside public Git.
+
+
+## 14. Administrador Concursal claim-family graph and R33 crosswalk
+
+Whenever Francisco de Borja Rodríguez-Batllori Laffitte, the Administrador Concursal, RPL 3304/2025, R33, removal, remuneration, DP 1956, 2018 access/control, ONA/Clubotel, estate reconciliation or an AC-linked professional interaction is in scope, apply **PD-AC-CLAIMS-R33-20260922-01** through `.github/governance/AC_CLAIMS_R33_ACTOR_GRAPH_PROTOCOL_22SEP2026.md` and `assets/data/ac-claims-r33-crosswalk-v1.json`.
+
+- Use the stable `AC-CLM-001`–`AC-CLM-014` family IDs; do not create competing unnumbered AC allegation lists.
+- Keep the AC distinct from the five private actors, the Magistrate-Judge, prosecutors, firms and other institutions.
+- Treat R33, signed 14 September 2026 and received 21 September 2026, as a party filing and evidential response node. It proves the AC's position and incorporated material, not the independent truth of every characterization.
+- Test R33 proposition by proposition: exact representation → contemporaneous source → date/capacity → omitted material context → contrary/adverse source → lawful alternative → remaining proof.
+- Hostile tone, disagreement, omission or an adverse result does not by itself prove falsity, bad faith, criminal purpose or causation.
+- Preserve judicial approvals, adverse rulings, Joaquín Ruiz de Infante's withdrawal/apology and every other material contrary record at the same analytical level as project-side allegations.
+- Shared evidence may connect removal, remuneration, criminal, professional-interference and appellate lanes without procedurally merging them. DP 1956 remains the actor-specific AC criminal route; DP 1901 is cross-evidence only.
+- For counsel/professional claims, apply both `PD-LAW-TRUTH-20260922-01` and the relevant AC claim family, especially `AC-CLM-011`.
+- Public pages must retain bidirectional links between the AC hub, R33, separation/remuneration, DP 1956 and the controlled claim register.

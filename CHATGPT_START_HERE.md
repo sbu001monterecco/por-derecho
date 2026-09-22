@@ -245,3 +245,14 @@ The 62-event ICALPA denominator includes the 23-Dec-2025 historical `informacion
 Current ICALPA official-submission lock: `registro@icalpa.org`; the 3-Sep-2026 ICALPA routing response states that this mailbox performs formal entry registration and internal transfer. Keep deontologia / notification / RedAbogacía lanes distinct.
 
 Standing regional safeguard: request a conflict-cleared rapporteur/instructor with sufficient independence, continuity, time and institutional backing to reach a reasoned outcome; any attempted informal call, approach, representation or pressure outside the file should be logged and routed into the formal record. This is preventive traceability, not an assertion that pressure will occur.
+
+
+## Administrador Concursal claim-family graph / R33 — 22 September 2026
+
+For any task concerning Francisco de Borja Rodríguez-Batllori Laffitte, the Administrador Concursal, removal/remuneration, DP 1956, 2018 access/control, ONA/Clubotel, professional interference, final-estate reconciliation or the 14-September-2026 R33 opposition in RPL 3304/2025, first read:
+
+- `archive/AC_CLAIMS_R33_UNITARY_CANON_22SEP2026.md`
+- `assets/data/ac-claims-r33-crosswalk-v1.json`
+- `.github/governance/AC_CLAIMS_R33_ACTOR_GRAPH_PROTOCOL_22SEP2026.md`
+
+Use `AC-CLM-001`–`AC-CLM-014`; keep the AC separate from the five private actors, judge, prosecutors and professional firms. R33 is a party filing and evidential response node, not an adjudicated truth. Compare it proposition by proposition and preserve adverse evidence and lawful explanations. DP 1956 remains the actor-specific AC criminal route; DP 1901 may supply cross-evidence but is not the AC complaint.
