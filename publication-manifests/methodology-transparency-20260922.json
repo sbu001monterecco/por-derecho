@@ -1,33 +1,64 @@
 {
-  "schema": "por-derecho.methodology-transparency-publication.v1",
-  "control_id": "PD-METHOD-TRANSPARENCY-PUB-20260922-01",
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "METHODOLOGY-TRANSPARENCY-20260922",
+  "owner": "Gil Marer / Por Derecho",
+  "control_date": "2026-09-22",
+  "current_state": "PR_OPEN",
+  "expected_routes": {
+    "en": [
+      "en/methodology/index.html"
+    ],
+    "es": [
+      "es/metodologia/index.html"
+    ]
+  },
   "methodology_control": "PD-METHOD-TRANSPARENCY-20260922-01",
   "status": "PUBLIC_SAFE_CANDIDATE",
   "public_release_approved": false,
   "deployed": false,
   "live_verified": false,
-  "routes": [
-    "en/methodology/index.html",
-    "es/metodologia/index.html"
-  ],
   "source_model": "assets/data/methodology-transparency-v1.json",
   "css": "assets/methodology-transparency-20260922.css",
   "builder": "scripts/build_methodology_transparency.py",
   "validator": "scripts/validate_methodology_transparency.py",
+  "github": {
+    "repository": "sbu001monterecco/por-derecho",
+    "base_branch": "main",
+    "base_sha": "b7274d4be451e4443bb21defcfd39f999febf43c",
+    "working_branch": "publication/methodology-transparency-20260922",
+    "pull_request": 1763,
+    "initial_head_sha": "bf9014fe9bee2467f2dd0f0c48a594c57ca071ce",
+    "merge_sha": null,
+    "live_verification": "PENDING"
+  },
+  "gitlab": {
+    "project_path": "por-derecho/por-derecho-setup-or-gitlab-setup",
+    "base_branch": "main",
+    "base_sha": "121c46772d8ae90428ab54006466024798d9944c",
+    "working_branch": "publication/methodology-transparency-20260922",
+    "merge_request": 548,
+    "initial_head_sha": "ba5b7fe780a8b68f8eebb8608ff3cb4a884e0d87",
+    "merge_sha": null,
+    "live_verification": "PENDING"
+  },
+  "required_controls": [
+    "all eleven recursive methodology stages remain present and ordered",
+    "two-key outcome and truth/falsification test remains visible",
+    "source, assertion and legal finding remain distinct",
+    "contrary, exculpatory and lawful-alternative review remains first-class",
+    "constitutional safeguards cannot self-modify",
+    "no numeric truth score",
+    "architecture history preserves historical, accepted and draft-review states",
+    "public methodology does not expose private evidence or private locators",
+    "GitHub/GitLab differences distinguish exact, functional-equivalent and explained-divergence states",
+    "CI, merge, deployment and live readback remain separate publication states",
+    "English and Spanish routes use the same canonical stage and control IDs"
+  ],
   "boundaries": [
     "No raw private evidence, privileged communications, provider IDs, credentials or private source locators.",
     "No methodology control can promote allegation to finding.",
-    "No CI/merge state can be represented as live deployment without readback.",
+    "No CI or merge state can be represented as live deployment without readback.",
     "The federation architecture entry remains DRAFT_REVIEW until a separately verified successor changes it."
-  ],
-  "host_projection": {
-    "github": {
-      "canonical_origin": "https://sbu001monterecco.github.io/por-derecho",
-      "adapter": "dedicated path-scoped methodology validation workflow"
-    },
-    "gitlab": {
-      "canonical_origin": "https://por-derecho.gitlab.io/por-derecho-setup-or-gitlab-setup",
-      "adapter": "existing GitLab pipeline and independent Duo review; no root-CI edit"
-    }
-  }
+  ]
 }
