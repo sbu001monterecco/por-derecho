@@ -1,6 +1,6 @@
 # ICALPA DIP 80/2026 — procedural accountability and regional/national escalation control
 **Date:** 22 September 2026  
-**Status:** source-controlled / email-ready / NOT SENT  
+**Status:** source-controlled / CCCA EMAIL SENT / WEBSITE FORM SUBMITTED / FORMAL REGISTRATION PENDING / SEPARATE CGAE COMMUNICATION NOT SENT  
 **Primary public routes:**  
 - `/es/consejo-canario-coordinacion-deontologica-2026/`
 - `/en/canary-council-deontological-coordination-2026/`
@@ -114,6 +114,6 @@ For first transmission:
 - offer primary documents on request.
 
 ## Sending state
-- Consejo Canario email: READY / NOT SENT.
-- CGAE national email: READY / NOT SENT.
-- No authorization to transmit is inferred from this control.
+- Consejo Canario email: SENT on 22-Sep-2026 from `sbu001@monterecco.com`; website form also submitted; generic web acknowledgement received; formal registration/reference pending.
+- Separate CGAE national email: READY / NOT SENT. CGAE institutional addresses were copied on the regional email; that copy does not replace the separate national/inter-Bar communication.
+- No further authorization to transmit is inferred from this control. Post-send audit: `archive/THREAD_CONTINUITY_PRESERVATION_AUDIT_CCCA_SEND_22SEP2026.md`.
