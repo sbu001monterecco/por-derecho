@@ -594,3 +594,38 @@ Yaiza/Cabildo, SAIP, benefit, harm or recovery.
 ## MASTER MYND / Sun Park hotel address continuation — 5 September 2026
 
 Before changing the Sun Park/MYND Yaiza address or either Acosta Matos family edition, read [`SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md`](SUN_PARK_MYND_YAIZA_SITE_ADDRESS_LOCK_05SEP2026.md) and `assets/data/sun-park-mynd-yaiza-site-v1.json`. Reuse existing hotel/site identity `PD-SP-O-0042`; canonical project address **Calle Janubio 3, Playa Blanca, Lanzarote 35580, Spain**. Preserve historical and current-source Avenida/Avda. Janubio s/n variants as source literals. Original four-person El Economista photograph and MASTER MYND editorial poster are separate byte-locked assets. Existing workspace `PD-WS-20260901-0001`; full workspace search label: MASTER MYND — Acosta Matos family / Sun Park / MYND Yaiza — evidential architecture, JDAM/LPAM attributed statements, El Economista image, Sun Park plans, professional architecture record and criminal-first perimeter analysis. Follow current main / Control Tower1428 and the active single integration lane; this continuation is not authority to merge concurrently.
+
+## 12. AC professional isolation, interference and attrition
+
+Whenever a task concerns the Administrador Concursal and former/current lawyers,
+procuradores, professional advisers, collaborators, operators, investors, lenders
+or other third parties associated with Gil Marer, Luchy Playa Blanca, S.L.U.
+(LPB), AWESWELL LIMITED or Sun Park, read and apply
+`.github/governance/AC_PROFESSIONAL_ISOLATION_ATTRITION_PROTOCOL_22SEP2026.md`
+(`PD-GOV-AC-PIA-20260922-01`) and the canonical evidential record
+`archive/AC_PROFESSIONAL_ISOLATION_ATTRITION_CANON_22SEP2026.md`.
+
+- The canonical analytical formulation is **institutional pressure, interference
+  with independent professional relationships, strategic isolation and
+  professional/commercial attrition**. “Thug”, “bully” and “mob-like” are not
+  repository conclusions; preserve them only as necessary attributed/source
+  language.
+- Keep four rings distinct: legal representation; procedural/professional
+  support; commercial/operating partners; capital/investment counterparties.
+- Test the mechanism actually evidenced: mandate displacement; professional or
+  regulatory escalation; economic leverage; intermediation/access;
+  information/control asymmetry; relationship disruption; alternative-pathway
+  impairment; cumulative isolation/attrition.
+- Preserve actor-by-actor attribution, the strongest contrary/lawful
+  explanation, causation status, knowledge/intent status and open proof.
+- Payment does not prove bribery; contact does not prove improper influence;
+  withdrawal does not prove causation; a procedural licence does not prove
+  wrongdoing; a later structural judicial finding does not retroactively prove
+  earlier intent.
+- Do not create a competing universal “lawyer casualties” or “everyone was
+  driven away” theory. Different mandates had materially different documented
+  reasons and must remain distinct.
+- Public Git may use public-safe proposition summaries and stable public routes
+  only. Native Gmail/Drive locators, raw private communications and privileged
+  legal work remain in authorised private custody and must be re-queried there.
+
