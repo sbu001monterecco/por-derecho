@@ -1,7 +1,7 @@
 {
   "id": "PD-CAN-BAR-PERIMETER-20260921-01",
-  "version": "2026-09-22",
-  "status": "PUBLIC_SAFE_SOURCE_CONTROLLED_EMAIL_READY",
+  "version": "2026-09-22-post-send",
+  "status": "PUBLIC_SAFE_SOURCE_CONTROLLED_POST_SEND",
   "scope": "Professional-regulation and inter-Colegio coordination map for the Sun Park / MYND Yaiza matter.",
   "rule_en": "Separate responsibility does not mean separate reality. Individual professional responsibility remains actor-specific; common evidence and economic context may require coordinated preservation and institutional treatment without collective attribution.",
   "rule_es": "La responsabilidad separada no significa una realidad separada. La responsabilidad profesional sigue siendo individual; la prueba común y el contexto económico pueden exigir preservación coordinada y tratamiento institucional sin atribución colectiva.",
@@ -68,21 +68,22 @@
       "name": "Consejo Canario de Colegios de Abogados",
       "jurisdiction": "Canary Islands",
       "role": "autonomous_coordination_and_appellate_layer",
-      "state": "REGIONAL_COMMUNICATION_READY_NOT_SENT",
+      "state": "REGIONAL_COMMUNICATION_SENT_FORM_SUBMITTED_FORMAL_REGISTRATION_PENDING",
       "boundary": "Regional coordinating/appellate competence must be determined issue by issue; no merits position is inferred from absence of correspondence.",
       "email_readiness": {
-        "status": "READY_NOT_SENT",
-        "route": "pdeaguilar@consejocanariodeabogados.es plus official contact/formal registration route if available",
-        "current_president": "Carlos Enrique Viña Romero",
-        "asks": [
-          "regional coordination without replacing first instance",
-          "DIP80 procedural-status certification route",
-          "three-month/exceptional-extension accountability",
-          "complainant participation/appeal route",
-          "conflict/recusal safeguards",
-          "record preservation",
-          "CGAE referral/consultation route"
-        ]
+        "status": "SENT_FORM_SUBMITTED_FORMAL_REGISTRATION_PENDING",
+        "sent_at": "2026-09-22T03:09:09+01:00",
+        "sender": "sbu001@monterecco.com",
+        "to": [
+          "pdeaguilar@consejocanariodeabogados.es",
+          "info@consejocanariodeabogados.es"
+        ],
+        "website_form_status": "SUBMITTED_GENERIC_ACKNOWLEDGEMENT_GRACIAS_POR_CONTACTARNOS",
+        "formal_reference": null,
+        "responsible_organ_or_person": null,
+        "substantive_response": null,
+        "boundary": "Sent/form acknowledgement does not prove formal registration, reading, assignment, acceptance or merits consideration.",
+        "audit": "archive/THREAD_CONTINUITY_PRESERVATION_AUDIT_CCCA_SEND_22SEP2026.md"
       }
     },
     {
@@ -90,17 +91,17 @@
       "name": "Consejo General de la Abogacía Española",
       "jurisdiction": "Spain",
       "role": "national_professional_body",
-      "state": "NATIONAL_COMMUNICATION_READY_NOT_SENT",
+      "state": "NATIONAL_SEPARATE_COMMUNICATION_READY_NOT_SENT_COPIED_ON_REGIONAL_EMAIL",
       "references": [
         "CGAE response RS-001022/2026",
         "separate 2026 ethical-channel track"
       ],
       "boundary": "CGAE stated it does not hear ordinary individual lawyer complaints at first instance; the inter-Colegio/systemic route remains a distinct question.",
       "email_readiness": {
-        "status": "READY_NOT_SENT",
+        "status": "SEPARATE_NATIONAL_COMMUNICATION_READY_NOT_SENT",
         "public_route": "informacion@abogacia.es / CGAE general contact form",
         "dedicated_page": "/es/cgae-coordinacion-deontologica-2026/",
-        "boundary": "No ordinary first-instance merits complaint; respects RS-001022/2026.",
+        "boundary": "CC receipt of the regional message does not replace the separate national/inter-Bar communication and does not ask CGAE to exercise ordinary first-instance disciplinary jurisdiction; RS-001022/2026 remains controlling.",
         "asks": [
           "uniform criteria on preliminary-information duration and exceptional circumstances",
           "complainant participation/appeal rights",
@@ -109,7 +110,8 @@
           "national independence/conflict/external-contact safeguards",
           "territorial Bar/autonomous council/CGAE coordination",
           "reference and internal routing to competent deontology body"
-        ]
+        ],
+        "copied_on_regional_email": true
       }
     }
   ],
@@ -242,5 +244,13 @@
     "es/cuatrecasas-icam-ccacm-2026/",
     "es/cgae-coordinacion-deontologica-2026/",
     "en/cgae-deontological-coordination-2026/"
-  ]
+  ],
+  "communication_state": {
+    "cut_off": "2026-09-22T03:09:09+01:00",
+    "consejo_canario": "EMAIL_SENT_WEBSITE_FORM_SUBMITTED_GENERIC_ACK_FORMAL_REGISTRATION_PENDING",
+    "cgae": "COPIED_ON_REGIONAL_EMAIL_SEPARATE_NATIONAL_COMMUNICATION_NOT_SENT",
+    "delivery_failure_for_consejo_located": false,
+    "reply_from_consejo_located": false,
+    "evidence_boundary": "No located bounce/reply is not proof of delivery, reading, registration or acceptance."
+  }
 }
