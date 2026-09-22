@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-state.v1",
   "schema_version": "1.0.0",
   "publication_id": "PD-AC-RPL3304-R33-20260921",
-  "control_date": "2026-09-21",
+  "control_date": "2026-09-22",
   "owner": "Por Derecho / Project Sun Rock",
   "current_state": "PR_OPEN",
   "expected_routes": {
@@ -14,7 +14,7 @@
     ]
   },
   "predecessor_pr": 1696,
-  "pull_request": 1725,
+  "pull_request": 1741,
   "source": {
     "id": "C36-SPECIALIST-R33",
     "date": "2026-09-14",
@@ -63,11 +63,11 @@
   ],
   "frozen_corpus_boundary": "The Aug-23 fixed 50-specialist / 127-complete-record catalogues remain unchanged; R33 is a post-cutoff additive source page, not silently inserted into those frozen denominators.",
   "authority": "Gil Marer instruction: take over and do it now.",
-  "state_note": "Open current-main-based PR; not merged, deployed or live-verified.",
+  "state_note": "The R33 source pages/viewer already exist on main. PR #1741 stages the 22-Sep-2026 canonical visual-linkage release; visual assets and reciprocal first-read links are not treated as merged/deployed until the protected PR completes.",
   "controlled_extract_path": "evidence/insolvency-36-2012/rpl-3304-2025/R33-oposicion-ac-apelacion-lpb-septiembre-2026-controlled-extracts.md",
   "sitemap_state": "Not manually edited in this release; dedicated routes are reachable through reciprocal in-site links. Global sitemap remains generator-owned.",
   "viewer_upgrade": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "mode": "SPLIT_PDF_FORENSIC_SIDECAR",
     "assets": [
       "assets/ac-rpl3304-forensic-sidecar.css",
@@ -92,5 +92,16 @@
     ],
     "boundary": "Colours are review categories, not truth percentages. NARROWING does not mean lie; NOTICE requires evidence of receipt/knowledge. Private 482-record case data remains outside public Git."
   },
-  "native_source_boundary": "Signed native source remains separately preserved and unchanged; public web viewer uses the visually equivalent public-safe 22-page derivative and does not expose interactive signature certificate identifiers."
+  "native_source_boundary": "Signed native source remains separately preserved and unchanged; public web viewer uses the visually equivalent public-safe 22-page derivative and does not expose interactive signature certificate identifiers.",
+  "visual_linkage": {
+    "version": "1.0.0",
+    "rule": "Page-5 apology must not be visually isolated from signer identity, distinct-firm collaboration, pre-2020 removal chronology and source access.",
+    "manifest": "assets/data/ac-rpl3304-visual-linkage-v1.json",
+    "assets": [
+      "assets/visuals/ac-rpl3304/separacion-cronologia-documental-2012-2026.svg",
+      "assets/visuals/ac-rpl3304/oposicion-pagina5-contraste-documental.svg",
+      "assets/visuals/ac-rpl3304/separacion-ruta-procesal.svg"
+    ],
+    "drive_master_folder_id": "1rVrqrPbXON90jQZhYAm4Akmw2rkEszd0"
+  }
 }
