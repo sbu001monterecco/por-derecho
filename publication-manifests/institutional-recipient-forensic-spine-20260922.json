@@ -4,7 +4,7 @@
   "publication_id": "PD-INSTITUTIONAL-RECIPIENT-FORENSIC-SPINE-20260922",
   "control_date": "2026-09-22",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PREPARED_PENDING_MERGE",
+  "current_state": "LIVE_VERIFIED",
   "source_base_sha": "1fd5cfd4bb939798e761a8e39c5bbc5d391a3610",
   "source_branch": "integration/institutional-recipient-forensic-spine-20260922",
   "expected_routes": {
@@ -60,13 +60,65 @@
     "court_or_portal_filing": false
   },
   "dual_repository_rule": "GitHub exact-head review/deployment is completed first; the same public-safe propositions are then reconciled additively to the private GitLab canonical repository without destructive overwrite.",
-  "state_note": "PREPARED records source scope only. It is not a merge, deployment or live-verification certificate. Exact PR, merge, Pages and GitLab evidence must be recorded after those events occur.",
+  "state_note": "LIVE_VERIFIED certifies repository publication and public technical readback only. It does not verify the merits of any allegation, establish criminal conduct or record delivery to any third party.",
   "validation": {
     "commands": [
       "python3 scripts/validate_institutional_recipient_forensic_spine.py",
       "python3 scripts/validate_repository_preservation.py",
       "python3 scripts/validate_publication_integrity.py",
       "python3 scripts/validate_audience_experience.py"
+    ],
+    "evidence": [
+      "GitHub PR #1752 exact reviewed head bd79fec086efd8030488f3373d9af778e1984c19 passed PD release acceptance and publication-integrity",
+      "GitHub PR #1753 exact reviewed head 9e7c41d4f45b7750c49d2ac4274b1e023e9e394f passed PD release acceptance and publication-integrity",
+      "Local institutional-recipient, preservation, publication-integrity, audience-experience, privacy/OSINT, unitary criminal reverse-engineering, unitary control-plane, changed-route link and JavaScript syntax checks passed",
+      "Rendered bilingual and representative professional-recipient route checks passed after Pages deployment"
     ]
+  },
+  "merge_sha": "563931ee9b3bf3e33e448c69e9130f58f1fde783",
+  "publication_history": {
+    "content_pull_request": 1752,
+    "content_reviewed_head": "bd79fec086efd8030488f3373d9af778e1984c19",
+    "content_merge_sha": "c8126755f22fd4dc70802fc979fd39101b6c3d5c",
+    "render_scope_hotfix_pull_request": 1753,
+    "render_scope_hotfix_reviewed_head": "9e7c41d4f45b7750c49d2ac4274b1e023e9e394f",
+    "render_scope_hotfix_merge_sha": "563931ee9b3bf3e33e448c69e9130f58f1fde783"
+  },
+  "deployment_evidence": {
+    "platform": "GitHub Pages",
+    "initial_pages_run_id": 35728818414,
+    "initial_pages_run_number": 1688,
+    "current_verified_pages_run_id": 35729947456,
+    "current_verified_pages_run_number": 1689,
+    "current_verified_pages_sha": "563931ee9b3bf3e33e448c69e9130f58f1fde783",
+    "current_verified_pages_conclusion": "success",
+    "current_verified_pages_completed_at": "2026-09-22T12:56:18Z"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/google-sun-park-evidence-cooperation/",
+    "https://sbu001monterecco.github.io/por-derecho/es/google-sun-park-cooperacion-evidencia/",
+    "https://sbu001monterecco.github.io/por-derecho/en/sun-park-digital-identity-google-mynd/",
+    "https://sbu001monterecco.github.io/por-derecho/es/identidad-digital-sun-park-google-mynd/",
+    "https://sbu001monterecco.github.io/por-derecho/en/lourdes-google-mynd-incident/",
+    "https://sbu001monterecco.github.io/por-derecho/es/incidente-lourdes-google-mynd/",
+    "https://sbu001monterecco.github.io/por-derecho/en/pwc-canarias-carlos-saavedra-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/es/pwc-canarias-carlos-saavedra-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/en/rsm/nnr4-1025c2f66/",
+    "https://sbu001monterecco.github.io/por-derecho/es/rsm/nnr4-1025c2f66/",
+    "https://sbu001monterecco.github.io/por-derecho/en/grant-thornton/2024-04/",
+    "https://sbu001monterecco.github.io/por-derecho/es/grant-thornton/2024-04/",
+    "https://sbu001monterecco.github.io/por-derecho/en/prosecutorial-professional-evidence-pwc-grant-thornton-rsm/",
+    "https://sbu001monterecco.github.io/por-derecho/es/fiscalia-evidencia-profesional-pwc-grant-thornton-rsm/"
+  ],
+  "live_verification_evidence": {
+    "verified_at": "2026-09-22T12:57:00Z",
+    "method": "Authenticated browser navigation against the public GitHub Pages origin after exact-SHA deployment",
+    "scope": [
+      "English and Spanish Google institutional-recipient routes rendered with correct titles and first-party content",
+      "PwC, RSM and Grant Thornton representative English routes rendered with their intended page identities",
+      "ac-loyalty-breakpoint, ac-de-facto-knowing-facilitation and three-track global runtime modules were absent from all checked recipient pages",
+      "Google route rendered facts, system separation, finite preservation requests and controlled prosecutorial-forensic connections in that order"
+    ],
+    "boundary": "Technical live verification is not judicial, evidentiary or independent verification of the published propositions."
   }
 }
