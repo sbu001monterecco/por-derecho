@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">Separación del Administrador Concursal — cronología documental 2012–2026</title>
+<desc id="d">Contraste visual entre lo que cita la oposición del Administrador Concursal en la página 5 y el registro documental, seguido por una cronología desde 2012 hasta la oposición de septiembre de 2026. Visual explicativo, no fuente primaria.</desc>
+
+  <style>
+    .bg{fill:#0e2835}.paper{fill:#f7f1e5}.ink{fill:#17303b}.cream{fill:#f4ead7}.red{fill:#9e173c}.gold{fill:#c29a53}.teal{fill:#16756f}.muted{fill:#60727a}
+    .line{stroke:#c29a53;stroke-width:3}.thin{stroke:#17303b;stroke-width:2;fill:none}.dash{stroke:#60727a;stroke-width:2;stroke-dasharray:7 7;fill:none}
+    .title{font-family:Georgia,serif;font-size:56px;font-weight:700;fill:#f7f1e5}.sub{font-family:Georgia,serif;font-size:27px;fill:#f4ead7}
+    .h{font-family:Georgia,serif;font-size:31px;font-weight:700}.body{font-family:Arial,sans-serif;font-size:20px}.small{font-family:Arial,sans-serif;font-size:16px}.tiny{font-family:Arial,sans-serif;font-size:13px;letter-spacing:1px}
+    .date{font-family:Georgia,serif;font-size:23px;font-weight:700}.label{font-family:Arial,sans-serif;font-size:14px;font-weight:700;letter-spacing:1.2px}
+  </style>
+<rect width="1600" height="900" class="bg"/>
+<text x="800" y="72" text-anchor="middle" class="title">Separación del Administrador Concursal</text>
+<text x="800" y="114" text-anchor="middle" class="sub">RPL 3304/2025 · Cronología documental 2012–2026</text>
+<text x="800" y="148" text-anchor="middle" class="small cream">Fuente adversa: oposición del AC · firmada 14 sep · recibida 21 sep 2026</text>
+
+<rect x="50" y="185" width="600" height="390" rx="18" class="paper"/>
+<rect x="50" y="185" width="600" height="64" rx="18" class="red"/>
+<text x="85" y="228" class="h cream">Lo que sostiene la oposición</text>
+<text x="85" y="285" class="label muted">EXTRACTO DEL ESCRITO · PÁGINA 5</text>
+<rect x="85" y="310" width="530" height="145" rx="12" fill="#fffaf4" stroke="#d6c8b5"/>
+<text x="110" y="355" class="h red">“...reitera las disculpas...</text>
+<text x="110" y="398" class="h ink">al Administrador Concursal...”</text>
+<text x="575" y="438" text-anchor="end" class="small muted">pág. 5</text>
+<rect x="150" y="477" width="380" height="62" rx="8" fill="#7b1431"/>
+<text x="340" y="503" text-anchor="middle" class="label cream">AFIRMACIÓN CITADA</text>
+<text x="340" y="526" text-anchor="middle" class="small cream">una renuncia concreta no explica toda la secuencia</text>
+
+<rect x="680" y="185" width="870" height="390" rx="18" class="paper"/>
+<rect x="680" y="185" width="870" height="64" rx="18" fill="#123c52"/>
+<text x="720" y="228" class="h cream">Lo que muestra el registro documental</text>
+<text x="720" y="276" class="small muted">Distintos documentos · una misma cronología · despachos distintos</text>
+<line x1="735" y1="310" x2="735" y2="525" class="thin"/>
+<circle cx="735" cy="320" r="17" class="red"/><text x="735" y="326" text-anchor="middle" class="small cream">1</text><text x="775" y="318" class="date red">21 sep 2020</text><text x="930" y="318" class="body ink">Escrito judicial: firma Joaquín Ruiz de Infante Abella</text><circle cx="735" cy="369" r="17" class="teal"/><text x="735" y="375" text-anchor="middle" class="small cream">2</text><text x="775" y="367" class="date red">3 ene 2019</text><text x="930" y="367" class="body ink">Correo a Joaquín: “siguiendo indicaciones de Armando”</text><circle cx="735" cy="418" r="17" class="teal"/><text x="735" y="424" text-anchor="middle" class="small cream">3</text><text x="775" y="416" class="date red">11 ene 2019</text><text x="930" y="416" class="body ink">Borrador de Armando: propuesta de firma conjunta</text><circle cx="735" cy="467" r="17" class="red"/><text x="735" y="473" text-anchor="middle" class="small cream">4</text><text x="775" y="465" class="date red">21 sep 2020</text><text x="930" y="465" class="body ink">Renuncia de Joaquín remitida con Armando en copia</text><circle cx="735" cy="516" r="17" class="red"/><text x="735" y="522" text-anchor="middle" class="small cream">5</text><text x="775" y="514" class="date red">21 sep 2020</text><text x="930" y="514" class="body ink">Comunicación separada de renuncia de Armando</text>
+<rect x="1180" y="488" width="325" height="58" rx="10" fill="#fff9e9" stroke="#c29a53"/>
+<text x="1342" y="512" text-anchor="middle" class="small ink">Colaboración documentada entre</text>
+<text x="1342" y="535" text-anchor="middle" class="small ink">despachos distintos · no identidad de firma</text>
+
+<text x="55" y="620" class="label cream">LÍNEA TEMPORAL DEL EXPEDIENTE · HITOS DOCUMENTALES</text>
+<line x1="85" y1="705" x2="1515" y2="705" class="line"/>
+<circle cx="105" cy="705" r="11" fill="#f4ead7" stroke="#c29a53" stroke-width="3"/><text x="105" y="755" text-anchor="middle" class="date cream">2012</text><text x="105" y="783" text-anchor="middle" class="small cream">nombramiento</text><circle cx="265" cy="705" r="11" fill="#f4ead7" stroke="#c29a53" stroke-width="3"/><text x="265" y="755" text-anchor="middle" class="date cream">8 ago 2018</text><text x="265" y="783" text-anchor="middle" class="small cream">precursor</text><circle cx="425" cy="705" r="11" fill="#f4ead7" stroke="#c29a53" stroke-width="3"/><text x="425" y="755" text-anchor="middle" class="date cream">9 sep 2018</text><text x="425" y="783" text-anchor="middle" class="small cream">remoción por causa justa</text><circle cx="585" cy="705" r="11" fill="#f4ead7" stroke="#c29a53" stroke-width="3"/><text x="585" y="755" text-anchor="middle" class="date cream">4 ene 2019</text><text x="585" y="783" text-anchor="middle" class="small cream">arts. 36 y 37 LC</text><circle cx="745" cy="705" r="11" fill="#f4ead7" stroke="#c29a53" stroke-width="3"/><text x="745" y="755" text-anchor="middle" class="date cream">25 may 2020</text><text x="745" y="783" text-anchor="middle" class="small cream">escrito de remoción</text><circle cx="905" cy="705" r="15" fill="#d92356" stroke="#c29a53" stroke-width="3"/><text x="905" y="755" text-anchor="middle" class="date red">21 sep 2020</text><text x="905" y="783" text-anchor="middle" class="small cream">renuncia citada</text><circle cx="1065" cy="705" r="11" fill="#f4ead7" stroke="#c29a53" stroke-width="3"/><text x="1065" y="755" text-anchor="middle" class="date cream">17 ene 2021</text><text x="1065" y="783" text-anchor="middle" class="small cream">presentar separación</text><circle cx="1225" cy="705" r="11" fill="#f4ead7" stroke="#c29a53" stroke-width="3"/><text x="1225" y="755" text-anchor="middle" class="date cream">23 abr 2025</text><text x="1225" y="783" text-anchor="middle" class="small cream">presentación</text><circle cx="1410" cy="705" r="15" fill="#d92356" stroke="#c29a53" stroke-width="3"/><text x="1410" y="755" text-anchor="middle" class="date red">14/21 sep 2026</text><text x="1410" y="783" text-anchor="middle" class="small cream">oposición</text>
+<rect x="50" y="825" width="1500" height="45" rx="10" fill="#0a202a" stroke="#c29a53"/>
+<text x="800" y="854" text-anchor="middle" class="label gold">DEL DOCUMENTO AL CONTEXTO · DEL CONTEXTO A UNA DECISIÓN FUNDADA · VISUAL EXPLICATIVO, NO FUENTE PRIMARIA</text>
+</svg>
