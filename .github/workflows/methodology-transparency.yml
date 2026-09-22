@@ -1,0 +1,43 @@
+name: Methodology transparency
+on:
+  pull_request:
+    paths:
+      - '.github/governance/PUBLIC_METHODOLOGY_TRANSPARENCY_AND_RECURSIVE_IMPROVEMENT_RULE_22SEP2026.md'
+      - 'assets/data/methodology-transparency-v1.json'
+      - 'assets/methodology-transparency-20260922.css'
+      - 'scripts/build_methodology_transparency.py'
+      - 'scripts/validate_methodology_transparency.py'
+      - 'tests/test_methodology_transparency.py'
+      - 'publication-manifests/methodology-transparency-20260922.json'
+      - 'en/methodology/**'
+      - 'es/metodologia/**'
+      - '.github/workflows/methodology-transparency.yml'
+  push:
+    branches: [main]
+    paths:
+      - '.github/governance/PUBLIC_METHODOLOGY_TRANSPARENCY_AND_RECURSIVE_IMPROVEMENT_RULE_22SEP2026.md'
+      - 'assets/data/methodology-transparency-v1.json'
+      - 'assets/methodology-transparency-20260922.css'
+      - 'scripts/build_methodology_transparency.py'
+      - 'scripts/validate_methodology_transparency.py'
+      - 'tests/test_methodology_transparency.py'
+      - 'publication-manifests/methodology-transparency-20260922.json'
+      - 'en/methodology/**'
+      - 'es/metodologia/**'
+      - '.github/workflows/methodology-transparency.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Validate methodology model, pages and publication boundary
+        run: python3 scripts/validate_methodology_transparency.py
+      - name: Test methodology regression controls
+        run: python3 -m unittest tests/test_methodology_transparency.py -v
+      - name: Verify candidate render markers
+        run: python3 scripts/build_methodology_transparency.py --check --host github
