@@ -11,7 +11,8 @@
     "assets/data/legal-representation-ac-causation-v1.json",
     "assets/data/ac-professional-isolation-attrition-v1.json",
     "archive/AC_COUNSEL_INTERFERENCE_UNITARY_REDIGEST_21SEP2026.md",
-    "archive/AC_PROFESSIONAL_ISOLATION_ATTRITION_CANON_22SEP2026.md"
+    "archive/AC_PROFESSIONAL_ISOLATION_ATTRITION_CANON_22SEP2026.md",
+    "assets/data/legal-professionals-source-discovered-supplement-20260922.json"
   ],
   "truth_machine_components": [
     ".github/evidence-intelligence/**",
@@ -866,7 +867,13 @@
     "covered_total": 40,
     "lawyer_or_legal_professional_total": 34,
     "procurador_total": 6,
-    "missing_identity_ids": []
+    "missing_identity_ids": [],
+    "canonical_register_total": 40,
+    "canonical_register_covered": 40,
+    "supplemental_professional_nodes": 9,
+    "combined_person_analysis_nodes": 49,
+    "supplemental_firm_lanes": 9,
+    "denominator_status": "CANONICAL_REGISTER_FULLY_COVERED_PLUS_SOURCE_DISCOVERED_SUPPLEMENT; RECURSIVE_NOT_UNIVERSAL"
   },
   "digitisation_policy": {
     "native_sources": "PRIVATE_CUSTODY_WHERE_PRIVILEGED_OR_PERSONAL",
@@ -902,5 +909,59 @@
     "universal_lawyer_casualties_theory",
     "firm_knowledge_equals_each_lawyer_knowledge",
     "successive_exit_equals_common_cause"
+  ],
+  "source_discovered_supplement": {
+    "control_id": "PD-TM-COUNSEL-SUP-20260922-01",
+    "path": "assets/data/legal-professionals-source-discovered-supplement-20260922.json",
+    "reason": "Gap scan after the 40-record canonical register identified source-confirmed historic and cross-border legal professionals not yet federated into immutable CAEPR identity IDs.",
+    "canonical_register_records": 40,
+    "supplemental_professional_nodes": 9,
+    "combined_person_analysis_nodes": 49,
+    "supplemental_firm_lanes": 9,
+    "identity_federation_state": "PENDING_CONTROLLED_ALLOCATION",
+    "denominator_rule": "40/40 means coverage of the frozen canonical register only; the working whole-perimeter Truth Machine denominator is 49 person analysis nodes plus firm-level discovery lanes.",
+    "corrections": [
+      "Use Leopoldo Cólogan Rodríguez de Azero from contemporaneous signed correspondence.",
+      "Use José Manuel Niederleytner García-Lliberós; contemporaneous team shorthand 'Chema' is source-linked. Supersede the inaccurate shorthand 'Juan Manuel Niederleiter'."
+    ]
+  },
+  "supplemental_chronology": [
+    {
+      "period": "2013–2014",
+      "label": "Tomás González Jorge / IURISCAN ABOGADOS, S.L.P.",
+      "supplement_keys": [
+        "PD-TM-SUP-P-001"
+      ],
+      "status": "SOURCE_CONFIRMED_LEGAL_SERVICES; no direct AC interference located in current source set"
+    },
+    {
+      "period": "2021–2022",
+      "label": "Four-firm legal-team expansion",
+      "supplement_keys": [
+        "PD-TM-SUP-P-002",
+        "PD-TM-SUP-P-003"
+      ],
+      "status": "Niederleytner + Cólogan source-confirmed; fee/non-payment evidence preserved"
+    },
+    {
+      "period": "2022–2023",
+      "label": "UK cross-border recovery counsel",
+      "supplement_keys": [
+        "PD-TM-SUP-P-004",
+        "PD-TM-SUP-P-005",
+        "PD-TM-SUP-P-006"
+      ],
+      "status": "Rosling King formal engagement/substantive work"
+    },
+    {
+      "period": "2022–2023",
+      "label": "Israel cross-border legal review",
+      "supplement_keys": [
+        "PD-TM-SUP-P-007",
+        "PD-TM-SUP-P-008",
+        "PD-TM-SUP-P-009"
+      ],
+      "status": "Barnea substantive legal work; individual titles kept source-specific"
+    }
   ]
 }
