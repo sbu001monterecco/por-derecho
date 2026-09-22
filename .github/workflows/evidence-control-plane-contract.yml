@@ -1,0 +1,27 @@
+name: Evidence control plane contract
+
+on:
+  pull_request:
+    paths:
+      - 'ops/evidence-control-plane/**'
+      - 'schemas/por-derecho-evidence-control-plane-v1.schema.json'
+      - 'scripts/validate_evidence_control_plane.py'
+      - '.github/workflows/evidence-control-plane-contract.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'ops/evidence-control-plane/**'
+      - 'schemas/por-derecho-evidence-control-plane-v1.schema.json'
+      - 'scripts/validate_evidence_control_plane.py'
+      - '.github/workflows/evidence-control-plane-contract.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate portable evidential contract
+        run: python3 scripts/validate_evidence_control_plane.py
