@@ -79,3 +79,5 @@ The page-5 first-read rule therefore resolves, at minimum:
 and links onward to the complete dated counsel crosswalk.
 
 The crosswalk is a registry/control surface, not evidence that the AC caused any particular withdrawal.
+
+The dated counsel/firm registry recovery snapshot is preserved in the same Google Drive recovery folder as `RPL3304_COUNSEL_FIRM_REGISTRY_CROSSWALK_22SEP2026.md` (Drive file ID `1O6lqqeTQHy2nLTzTFh2GdNVqTziG3fUQ`). The Drive copy is a recovery/continuity copy; GitHub main remains the current publication/control authority while GitLab is unavailable.
