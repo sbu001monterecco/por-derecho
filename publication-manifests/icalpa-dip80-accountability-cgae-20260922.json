@@ -12,16 +12,16 @@
   "publication_boundary": "Source-controlled procedural-accountability update. It records DIP 80 opening, elapsed time, located correspondence state and respondent awareness of the ICALPA route. It does not establish professional misconduct, intentional delay, institutional protection, collusion, formal service on the respondent, or a merits outcome.",
   "expected_routes": {
     "es": [
-      "es/icalpa-correspondencia-2025-2026/",
-      "es/consejo-canario-coordinacion-deontologica-2026/",
-      "es/cgae-coordinacion-deontologica-2026/",
-      "es/registros-institucionales-colegios-abogacia-2026/"
+      "es/icalpa-correspondencia-2025-2026/index.html",
+      "es/consejo-canario-coordinacion-deontologica-2026/index.html",
+      "es/cgae-coordinacion-deontologica-2026/index.html",
+      "es/registros-institucionales-colegios-abogacia-2026/index.html"
     ],
     "en": [
-      "en/icalpa-correspondence-2025-2026/",
-      "en/canary-council-deontological-coordination-2026/",
-      "en/cgae-deontological-coordination-2026/",
-      "en/institutional-records-bar-bodies-2026/"
+      "en/icalpa-correspondence-2025-2026/index.html",
+      "en/canary-council-deontological-coordination-2026/index.html",
+      "en/cgae-deontological-coordination-2026/index.html",
+      "en/institutional-records-bar-bodies-2026/index.html"
     ]
   },
   "expected_source_files": [
