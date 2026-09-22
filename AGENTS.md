@@ -629,3 +629,13 @@ or other third parties associated with Gil Marer, Luchy Playa Blanca, S.L.U.
   only. Native Gmail/Drive locators, raw private communications and privileged
   legal work remain in authorised private custody and must be re-queried there.
 
+## Lawyer-interaction truth-machine gate — PD-LITM-20260922-01
+
+Whenever any lawyer, law firm, legal handover, fee relationship, filing/advice chain or alleged professional interference involving our perimeter is in scope, read and apply:
+
+- `.github/governance/LAWYER_INTERACTION_TRUTH_MACHINE_PROTOCOL_22SEP2026.md`
+- `assets/data/lawyer-interaction-truth-machine-v1.json`
+- `archive/LEGAL_REPRESENTATION_LEDGER_19AUG2026.md`
+- `archive/AC_PROFESSIONAL_ISOLATION_ATTRITION_CANON_22SEP2026.md`
+
+The A1–A8 AC/counsel table is a specialist subset, not the full lawyer denominator. The current denominator starts with Garrigues' verified 24-Jan-2012 engagement and must span Concurso and extraconcursal work. Preserve lawyer/firm/procurador/expert separation, matter-specific client and capacity, instruction/advice/filing separation, handover, fees, contrary evidence, lawful alternatives and privilege/publication status. A recurring mechanism may be analysed only after each episode passes its own truth test; do not transfer causation, knowledge or intent across professionals.
