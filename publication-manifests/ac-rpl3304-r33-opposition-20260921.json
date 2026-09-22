@@ -129,5 +129,26 @@
     "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/",
     "https://sbu001monterecco.github.io/por-derecho/es/continuidad-defensa-letrados/",
     "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-separacion-ac-honorarios/"
-  ]
+  ],
+  "linkedin_release": {
+    "package_id": "PD-RPL3304-R33-LINKEDIN-20260922",
+    "state": "PRESERVED_PUBLIC_SAFE_NOT_AUTO_POSTED",
+    "control_timestamp_utc": "2026-09-22T01:49:00Z",
+    "package_root": "archive/rpl3304-linkedin-20260922",
+    "audit": "archive/rpl3304-linkedin-20260922/CONTINUITY_AUDIT.md",
+    "manifest": "archive/rpl3304-linkedin-20260922/release-manifest.json",
+    "images": [
+      "archive/rpl3304-linkedin-20260922/rpl3304-editorial-satire-es-20260922.png",
+      "archive/rpl3304-linkedin-20260922/rpl3304-editorial-satire-en-20260922.png"
+    ],
+    "posts": [
+      "archive/rpl3304-linkedin-20260922/linkedin-post-es-20260922.txt",
+      "archive/rpl3304-linkedin-20260922/linkedin-post-en-20260922.txt"
+    ],
+    "publication_rule": "Editorial satire and source-linked scrutiny; no court finding of lying is asserted. Corrections require primary-source support and silence is not an admission.",
+    "reference_artwork_boundary": "No Liar Liar poster, film still, actor image, child image or face replacement is included.",
+    "institutional_boundary": "RSM, Grant Thornton and PwC are tagged for distinct documentary reasons; no collective allegation is made.",
+    "google_drive_preservation": "COMPLETE_LOCATOR_WITHHELD_FROM_THIS_PUBLIC_OBJECT",
+    "gitlab_parity": "PENDING_ACCESS_RESTORATION_AND_REVIEWED_RECONCILIATION"
+  }
 }
