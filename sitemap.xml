@@ -1303,4 +1303,14 @@
     <html:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/icalpa-icatf-correspondence-2025-2026/" />
     <html:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/icalpa-icatf-correspondence-2025-2026/" />
   </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/cgae-coordinacion-deontologica-2026/</loc><lastmod>2026-09-22</lastmod>
+    <html:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/cgae-coordinacion-deontologica-2026/" />
+    <html:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/cgae-deontological-coordination-2026/" />
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/cgae-deontological-coordination-2026/</loc><lastmod>2026-09-22</lastmod>
+    <html:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/cgae-coordinacion-deontologica-2026/" />
+    <html:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/cgae-deontological-coordination-2026/" />
+  </url>
 </urlset>
