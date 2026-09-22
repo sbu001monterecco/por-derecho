@@ -129,5 +129,10 @@
     "file_library": "Conversation + Library source corpus rescanned for the trio, DP 1132/2018 and Community chronology."
   },
   "conclusion": "The record does not support equal three-person attribution from 2011. FMMM has the earliest and strongest continuous personal line from 22 June 2011. Shaila and Antonio are separately documented by April 2014. The strongest joint attribution to all three is the 2017-2018 Community/Pamalexsha/security/access period, with the 18 May and 7 June 2018 nodes requiring actor-specific proof.",
-  "boundary": "Attribution strength is an evidence-management assessment, not a finding of guilt, conspiracy, common intent or legal liability. Family or corporate relationship never transfers another person's acts or knowledge."
+  "boundary": "Attribution strength is an evidence-management assessment, not a finding of guilt, conspiracy, common intent or legal liability. Family or corporate relationship never transfers another person's acts or knowledge.",
+  "action_map": {
+    "control_id": "PD-SP-FSA-ACTION-MAP-20260922-01",
+    "path": "assets/data/fmmm-shaila-antonio-action-map-v1.json",
+    "scope": "Montelanza/Molina-linked representation → Community organ → Pamanil/Pamalexsha → 2017 offices → 2018 security/access → CAM/Acosta Matos interface → later corporate continuity"
+  }
 }
