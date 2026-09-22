@@ -13,7 +13,7 @@
 The source was located in the connected SBU001 mailbox. Patricia Domínguez / Sun Park Lanzarote sent it to Cristo Pimentel “Para tu consideración”. Counsel replied nine minutes later: “Lo voy analizando. Te mando borrador de preguntas para Gil, para que las vaya traduciendo.” The reply attached a separate `INTERROGATORIO GIL MARER.odt`.
 
 ## Publication boundary
-The native 17-page attachment remains preserved outside public Git. Pages 1–3 contain litigation-preparation narrative/strategy and are not published. The four headed question sets on source pages 4–17 are published as a controlled searchable transcription: 76 JDAM + 49 Antonio + 50 FMMM + 76 LPAM = 251 questions.
+The native 17-page attachment remains preserved outside public Git. Pages 1–3 contain litigation-preparation narrative/strategy and are not published. The four headed question sets on source pages 4–17 are published as a controlled searchable transcription: 76 JDAM + 49 Antonio + 50 FMMM + 76 LPAM = 251 questions. The public transcription PDF is an 11-page repository-generated derivative whose bytes are embedded in a repository JavaScript asset for stable in-page viewing; it is not the native 17-page source.
 
 The question bank proves contemporaneous formulation of questions/allegations. It does **not** prove their truth, counsel adoption, filing, judicial use or answer.
 
