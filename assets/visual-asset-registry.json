@@ -434,6 +434,33 @@
       ],
       "storage_mode": "repository-byte-locked",
       "publication_rule": "Do not use for current About-page publication; current website variant is person.gil-marer.about-page."
+    },
+    "document.fmmm-shaila-antonio-family-enhanced-display-20260922": {
+      "subject_type": "document",
+      "canonical_name": "FMMM–Shaila–Antonio family photograph · enhanced display derivative 22 September 2026",
+      "short_label": "FMMM · Shaila · Antonio enhanced display",
+      "path": "assets/actors/fmmm-shaila-antonio-family-enhanced-display-20260922.svg",
+      "git_blob_sha": "0ee13394cc18753d481d49b53851b1cdd6e0ac47",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Display identity follows the source-attributed and user-confirmed mapping in document.fmmm-shaila-antonio-family-source-20260921. No facial recognition is used.",
+      "approved_contexts": [
+        "FMMM · Shaila · Antonio bilingual relationship dossier",
+        "source-attributed family / Community / corporate continuity explanation"
+      ],
+      "alt_en": "AI-assisted enhanced display derivative of the source-identified family photograph: Francisco Mario Matos Matas, Shaila María Cogolludo Ramos and Antonio Cogolludo Rojas from left to right",
+      "alt_es": "Derivado de visualización mejorado con asistencia de IA de la fotografía familiar identificada por fuente: Francisco Mario Matos Matas, Shaila María Cogolludo Ramos y Antonio Cogolludo Rojas de izquierda a derecha",
+      "source_provenance": {
+        "source_asset_id": "document.fmmm-shaila-antonio-family-source-20260921",
+        "source_class": "AI-assisted editorial display derivative",
+        "user_requested_enhancement_date": "2026-09-22",
+        "facial_recognition_used": false,
+        "dimensions": "2022x778",
+        "format": "svg-with-embedded-jpeg",
+        "transformation": "AI-assisted clarity/resolution enhancement for display; not a new evidential source and not suitable for inferring new facial detail or identity."
+      },
+      "storage_mode": "repository-byte-locked",
+      "variant_of": "document.fmmm-shaila-antonio-family-source-20260921",
+      "publication_boundary": "Display derivative only. The preserved source photograph controls evidential provenance. The enhanced image does not prove identity independently, Community authority, corporate mandate, knowledge, coordination, wrongdoing, causation or liability."
     }
   },
   "rejected_or_prohibited_mappings": [
