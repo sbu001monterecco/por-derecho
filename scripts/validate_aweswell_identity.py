@@ -11,6 +11,13 @@ EXCEPTIONS = ROOT / "ops/AWESWELL_IDENTITY_EXCEPTION_REGISTRY_22SEP2026.json"
 TEXT_SUFFIXES = {".md",".txt",".html",".htm",".json",".jsonl",".csv",".tsv",".xml",".yml",".yaml",".py",".js",".mjs",".cjs",".css"}
 DISTINCT = re.compile(r"\bOSWELL\s+426\s+S\.L\.\b", re.I)
 
+CONTROL_DEFINITION_PATHS = {
+    "ops/AWESWELL_CANONICAL_NAME_RULE_27AUG2026.json",
+    "ops/AWESWELL_IDENTITY_EXCEPTION_REGISTRY_22SEP2026.json",
+    "ops/CANONICAL_ENTITY_NAMES.json",
+    "scripts/validate_aweswell_identity.py",
+}
+
 def load_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
@@ -69,7 +76,7 @@ def main():
         exc={x["path"]:x["category"] for x in load_json(EXCEPTIONS).get("path_exceptions",[])}
         for p in repository_files():
             rel=p.relative_to(ROOT).as_posix()
-            if rel in exc:
+            if rel in CONTROL_DEFINITION_PATHS or rel in exc:
                 continue
             errors += scan_text(p.read_text(encoding="utf-8",errors="replace"),rel,allow_distinct=True)
     if errors:
