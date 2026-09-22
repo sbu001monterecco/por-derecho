@@ -15,31 +15,44 @@ class FederationBridgeTests(unittest.TestCase):
         stats = MODULE.validate(Path(__file__).resolve().parents[1])
         self.assertEqual(stats["max_hops"], 32)
         self.assertEqual(stats["roles"], 6)
+        self.assertEqual(stats["authority_fields"], 7)
 
-    def test_blind_mirroring_cannot_be_enabled(self):
+    def _mutated_loader(self, filename, mutate):
         root=Path(__file__).resolve().parents[1]
         original=MODULE.load
         def altered(path):
             obj=original(path)
-            if path.name=="PD_FEDERATION_V1.json":
+            if path.name==filename:
                 obj=json.loads(json.dumps(obj))
-                obj["authority_boundary"]["blind_bidirectional_mirroring"]=True
+                mutate(obj)
             return obj
+        return root, altered
+
+    def test_blind_mirroring_cannot_be_enabled(self):
+        root, altered=self._mutated_loader(
+            "PD_FEDERATION_V1.json",
+            lambda obj: obj["authority_boundary"].__setitem__("blind_bidirectional_mirroring", True),
+        )
         with mock.patch.object(MODULE,"load",side_effect=altered):
-            with self.assertRaisesRegex(ValueError,"blind bidirectional"):
+            with self.assertRaisesRegex(ValueError,r"class=AUTHORITY_DRIFT path=authority_boundary.blind_bidirectional_mirroring"):
+                MODULE.validate(root)
+
+    def test_authority_role_strings_fail_closed(self):
+        root, altered=self._mutated_loader(
+            "PD_FEDERATION_V1.json",
+            lambda obj: obj["authority_boundary"].__setitem__("gitlab_role", "MUTATED_ROLE"),
+        )
+        with mock.patch.object(MODULE,"load",side_effect=altered):
+            with self.assertRaisesRegex(ValueError,r"class=AUTHORITY_DRIFT path=authority_boundary.gitlab_role"):
                 MODULE.validate(root)
 
     def test_recursion_cannot_be_unbounded(self):
-        root=Path(__file__).resolve().parents[1]
-        original=MODULE.load
-        def altered(path):
-            obj=original(path)
-            if path.name=="PD_FEDERATION_V1.json":
-                obj=json.loads(json.dumps(obj))
-                obj["recursive_engine"]["max_hops"]=999
-            return obj
+        root, altered=self._mutated_loader(
+            "PD_FEDERATION_V1.json",
+            lambda obj: obj["recursive_engine"].__setitem__("max_hops", 999),
+        )
         with mock.patch.object(MODULE,"load",side_effect=altered):
-            with self.assertRaisesRegex(ValueError,"bounded"):
+            with self.assertRaisesRegex(ValueError,r"class=RECURSION_POLICY_DRIFT path=recursive_engine.max_hops"):
                 MODULE.validate(root)
 
     def test_non_genesis_requires_predecessor(self):
