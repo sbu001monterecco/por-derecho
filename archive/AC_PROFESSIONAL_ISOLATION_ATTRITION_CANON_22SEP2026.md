@@ -108,3 +108,26 @@ Private Gmail/Drive source locators remain in private custody and must be re-que
 ## Continuity rule
 
 Future work must extend this record additively. Do not create a competing “bullying”, “mob-like”, “lawyer casualties” or universal-push-out theory. Those may remain search terms or attributed shorthand, but the canonical analytical framework is **professional isolation and attrition / aislamiento estratégico y desgaste profesional y comercial**, governed by the actor-specific and contrary-evidence rules above.
+
+## Complete lawyer denominator and truth-machine bridge — 22 September 2026
+
+The A1–A8 former-counsel analysis is a **specialist AC-interference subset**, not the complete denominator of lawyers and law firms that acted for the perimeter. All lawyer/law-firm work from the first currently verified Garrigues engagement on **24 January 2012** onward must also pass through `PD-LITM-20260922-01`.
+
+### Currently located core lawyer/firm denominator
+
+1. **Garrigues** — first currently verified firm; 24-Jan-2012 engagement and 2012 pre-concurso/Bankia/Community/insolvency-preparation work; later related material. No located AC-caused exit: baseline comparator.
+2. **Juan Tomás Parrilla Suárez** — LPB / Concurso 36/2012; later fee/payment/intermediation sequence is an AC-interaction lane but causation remains separately tested.
+3. **Cuatrecasas** — multi-lawyer Aweswell/LPB perimeter across Concurso, Community, banking/debt, financing, ONA/funded exit and registry/property work; material favourable work and unpaid-fee withdrawal evidence remain mandatory.
+4. **Cristo Ayose Suárez Pimentel** — Community/DP1041/criminal-evidential and wider Sun Park matters; direct displacement of one defined LPB mandate on 25-Jan-2018 documented.
+5. **Alas Legal Advisors / Armando Betancor team** — 2019 recovery/challenge and coordinated calificación work; capacities must remain individual.
+6. **Joaquín Ruiz de Infante Abella** — collaborating/signing counsel; Article 215.2 exposure lane with withdrawal/apology as mandatory contrary evidence.
+7. **Daniel Jiménez García / SLJ Abogados** — short 2020 Aweswell engagement; incoming-counsel contact lane; no automatic causal inference from later resignation.
+8. **Luis Miguel López Gómez / López Castelo Abogados** — LPB/Concurso and appeal work; time/fees/non-payment and AC payment-control questions must be tested separately.
+9. **Sixto Abogados — Javier Sixto Seijas / Estefanía Sixto Seijas** — current/later counsel; privilege-controlled and not to be characterised as an attrition “casualty”.
+10. **Carlos Llamas Sanz / Carlos Llamas Legal Compliance** — current counsel/coordinator in source-specific matters; keep distinct from Carlos Sanz Rodríguez/Pledge.
+
+The Cuatrecasas/Garrigues individual-team denominator and additional consulted professionals are held in the machine file and representation ledger; a name is promoted only when the client, capacity and period are sufficiently sourced.
+
+### Machine gate
+
+Every interaction must be digitised using the fields and states in `assets/data/lawyer-interaction-truth-machine-v1.json` and governed by `.github/governance/LAWYER_INTERACTION_TRUTH_MACHINE_PROTOCOL_22SEP2026.md`. The machine must report non-matches and contrary evidence as well as matches. It may identify recurrence of a mechanism across lawyers only after each episode passes its own source, causation, lawful-alternative and privilege gates.
