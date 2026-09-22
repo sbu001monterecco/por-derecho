@@ -2,8 +2,8 @@
 
 **Control date:** 27 August 2026  
 **Public status:** publication control for the CajaSiete financing-comparability dossier  
-**Canonical UK entity:** Aweswell Limited, company no. 07716847  
-**Forbidden generated name:** Oswell Limited
+**Canonical UK entity:** AWESWELL LIMITED, company no. 07716847<br>
+**Forbidden generated names:** every error form listed by the canonical identity rule
 
 ## Purpose
 
@@ -56,4 +56,4 @@ Obtain a genuine underwriting path and, where commercially possible, indicative 
 
 ## Correction protocol
 
-Any future use of `Oswell`, `OSWELL` or `Oswell Limited` as the present canonical UK entity must be corrected to **Aweswell Limited** unless the old wording is being quoted literally from a historic source. Search aliases may be retained only for evidence retrieval.
+Any future use of a noncanonical form as the present UK entity must be corrected to **AWESWELL LIMITED** unless the old wording is preserved as a clearly labelled literal from a historical source. Retrieval tokens are errors, not aliases, and must remain confined to evidence retrieval controls.

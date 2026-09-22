@@ -45,6 +45,15 @@ class IdentityGuardTests(unittest.TestCase):
         )
         self.assertEqual(errors, [])
 
+    def test_partial_unrelated_entity_name_does_not_bypass_guard(self) -> None:
+        errors = MODULE.scan_text(
+            "This was an " + "OS" + "WELL 426 payment.",
+            "draft.txt",
+            self.pattern,
+        )
+        self.assertEqual(len(errors), 1)
+        self.assertIn("unclassified forbidden identity variant", errors[0])
+
     def test_exception_is_line_and_literal_bounded(self) -> None:
         exceptions = [{
             "path": "source.md",

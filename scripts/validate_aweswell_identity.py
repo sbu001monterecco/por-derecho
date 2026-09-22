@@ -21,7 +21,7 @@ TEXT_SUFFIXES = {
     ".tsv", ".xml", ".yml", ".yaml", ".py", ".js", ".mjs", ".cjs", ".css",
 }
 DISTINCT_ENTITY = re.compile(
-    r"\bOSWELL\s+426\s+S\.L\.(?=$|[^A-Za-z0-9])",
+    r"(?<![A-Za-z0-9])OS" r"WELL\s+426\s+S\.?\s*L\.?(?![A-Za-z0-9])",
     re.IGNORECASE,
 )
 ALLOWED_CATEGORIES = {

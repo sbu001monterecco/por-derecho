@@ -100,7 +100,7 @@ The 10 July 2013 LPB vendor ledger records four 2012 Garrigues invoices totallin
 | 31 Mar 2012 credit | EUR 9,450.00 | descriptor identifies cash / Monterecco |
 | 23 May 2012 credit | EUR 9,450.00 | descriptor identifies BBVA / HAVAVIDA |
 
-The ledger is client-side accounting evidence, not an independent bank statement. The email says the HAVAVIDA transfer occurred on 17 May; the ledger posts it on 23 May. Preserve both as event date and accounting posting date. The source names Monterecco and HAVAVIDA; it must not be retrospectively relabelled as an Aweswell or OSWELL 426 payment without a separate entity-and-bank bridge.
+The ledger is client-side accounting evidence, not an independent bank statement. The email says the HAVAVIDA transfer occurred on 17 May; the ledger posts it on 23 May. Preserve both as event date and accounting posting date. The source names Monterecco and HAVAVIDA; it must not be retrospectively relabelled as an AWESWELL LIMITED or OSWELL 426 S.L. payment without a separate entity-and-bank bridge.
 
 ## Parrilla fee and payment reconciliation
 

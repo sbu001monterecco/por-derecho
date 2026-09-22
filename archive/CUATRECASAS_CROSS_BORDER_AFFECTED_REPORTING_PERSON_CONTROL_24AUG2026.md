@@ -10,7 +10,7 @@ Use the correct legal name:
 
 > **Aweswell Limited, a UK-incorporated holding company and foreign investor in Spain, directly affected in its own capacity and indirectly through its Spanish subsidiaries and investments connected with Sun Park.**
 
-Do not use `Oswell` or `Aweswell perimeter` as a substitute for the legal person. Where relevant, distinguish Aweswell Limited from Luchy Playa Blanca, S.L. (`LPB`), Matkator, S.L. and the broader descriptive Sun Rock / Sun Park investment perimeter.
+Do not use a transcription error, shorthand or descriptive investment-perimeter label as a substitute for the legal person. Where relevant, distinguish AWESWELL LIMITED from Luchy Playa Blanca, S.L. (`LPB`), Matkator, S.L. and the broader descriptive Sun Rock / Sun Park investment perimeter.
 
 The controlled Companies House record identifies one continuing UK legal person, company no. `07716847`, incorporated as Monterecco Sun Park Limited and renamed Aweswell Limited in June 2014. Do not describe the name change as a transfer, novation or successor-company event.
 

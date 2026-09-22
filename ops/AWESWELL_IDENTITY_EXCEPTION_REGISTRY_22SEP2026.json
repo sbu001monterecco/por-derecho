@@ -209,6 +209,56 @@
       "allowed_literals": ["Oswell"],
       "expected_matches": 1,
       "justification": "The field identifies the stale account-memory statement that must be removed or corrected."
+    },
+    {
+      "path": "archive/AWESWELL_UNITARY_ACCOUNTING_DIGEST_PROMPT_27AUG2026.md",
+      "start_line": 6,
+      "end_line": 6,
+      "category": "CONTROL_DEFINITION",
+      "label": "retrieval-only error tokens",
+      "allowed_literals": ["Oswell"],
+      "expected_matches": 2,
+      "justification": "The line expressly classifies both occurrences as retrieval-only errors, never aliases or current names."
+    },
+    {
+      "path": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+      "start_line": 22,
+      "end_line": 22,
+      "category": "LABELLED_SOURCE_LITERAL",
+      "label": "preserved source filename",
+      "allowed_literals": ["AWESELL"],
+      "expected_matches": 1,
+      "justification": "The token occurs inside the exact historical source filename in the evidence index; changing it would break provenance."
+    },
+    {
+      "path": "archive/knowledge-project/PWC_INVOICE_APPENDIX_89_7_HOURS_SOURCE_CONTROL_19AUG2026.md",
+      "start_line": 59,
+      "end_line": 62,
+      "category": "LABELLED_SOURCE_LITERAL",
+      "label": "PWC appendix source spelling",
+      "allowed_literals": ["Oswell"],
+      "expected_matches": 2,
+      "justification": "The first occurrence is attributed to the appendix and the second expressly controls preservation of that source spelling."
+    },
+    {
+      "path": "assets/aweswell/aweswell-limited-filed-accounts-2025-public-data.json",
+      "start_line": 24,
+      "end_line": 25,
+      "category": "CONTROL_DEFINITION",
+      "label": "retrieval-error token list",
+      "allowed_literals": ["Oswell"],
+      "expected_matches": 2,
+      "justification": "The enclosing field classifies these values as retrieval errors that are not aliases."
+    },
+    {
+      "path": "assets/data/concurso36-complete-record-v1.json",
+      "start_line": 742,
+      "end_line": 742,
+      "category": "LABELLED_SOURCE_LITERAL",
+      "label": "preserved source filename",
+      "allowed_literals": ["AWESELL"],
+      "expected_matches": 1,
+      "justification": "The token occurs inside the exact historical source filename and is retained solely to preserve provenance."
     }
   ]
 }
