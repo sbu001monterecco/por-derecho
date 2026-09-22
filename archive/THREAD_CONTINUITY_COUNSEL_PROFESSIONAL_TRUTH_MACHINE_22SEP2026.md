@@ -43,3 +43,11 @@ No raw private email body, provider identifier, privileged advice or live litiga
 ## Deletion-safety target
 
 A fresh thread should be able to recover: the full professional roster, Garrigues-first chronology, actor/team distinction, interaction states, evidential limits, digitisation policy, recursive re-review triggers, current branch/PR/MR status and Google Drive control artifact without relying on chat memory.
+
+## Denominator correction after connected-source gap scan
+
+The initial 40/40 result covered the then-frozen canonical legal-professional register but was not a universal denominator. A subsequent Gmail/source gap scan identified additional source-confirmed legal work. The Truth Machine now reads the canonical register together with `assets/data/legal-professionals-source-discovered-supplement-20260922.json`.
+
+Current working person denominator: **49 analysis nodes** = 40 canonical + 9 source-discovered supplement nodes. Supplemental nodes remain pending controlled immutable-ID federation and therefore do not alter the hard-coded 40-record canonical identity validator in this lane.
+
+Source-confirmed corrections/additions include Tomás González Jorge / IURISCAN (2013–2014); José Manuel Niederleytner García-Lliberós (not the superseded shorthand “Juan Manuel Niederleiter”); Leopoldo Cólogan Rodríguez de Azero; Rosling King; and Barnea. Fieldfisher, KLT Legal, Brown Rudnick and Rosenblatt/Memery Crystal-related contacts are retained as firm-level scope/onboarding/review lanes where retainer status remains matter-specific or open, rather than being automatically classified as former counsel.
