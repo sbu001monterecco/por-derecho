@@ -108,3 +108,11 @@ Private Gmail/Drive source locators remain in private custody and must be re-que
 ## Continuity rule
 
 Future work must extend this record additively. Do not create a competing “bullying”, “mob-like”, “lawyer casualties” or universal-push-out theory. Those may remain search terms or attributed shorthand, but the canonical analytical framework is **professional isolation and attrition / aislamiento estratégico y desgaste profesional y comercial**, governed by the actor-specific and contrary-evidence rules above.
+
+
+## Full 2012+ legal-professional genealogy and Truth Machine integration
+The controlling legal-professional universe is every record in `assets/data/legal-professionals-register-v1.json`, beginning with **Garrigues as the first verified firm in the current 2012+ genealogy** and continuing through verified parallel, successor, specialist, historic-review and current roles. The open 2011 predecessor question remains a source gap.
+
+Every lawyer, law firm and procurador interaction—inside or outside Concurso 36/2012—must pass `governance/LEGAL_PROFESSIONAL_INTERACTION_TRUTH_MACHINE_22SEP2026.md` and `assets/data/legal-professional-interaction-truth-machine-v1.json`.
+
+The analytical key is **professional × client × matter × period**. The number of lawyer changes is prohibited as a causation shortcut. Garrigues remains in the genealogy despite the absence of a presently identified AC causal link; current counsel remain for continuity without being drawn retrospectively into a former-counsel attrition thesis.
