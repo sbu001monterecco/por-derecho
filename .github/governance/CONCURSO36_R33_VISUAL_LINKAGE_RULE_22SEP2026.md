@@ -59,3 +59,23 @@ Read together with:
 - `es/continuidad-defensa-letrados/`
 
 Interlinking does not merge legal persons, firms, proceedings, proof standards, or allegations.
+
+
+## Counsel / firm / practice registry rule
+
+Every named lawyer, firm or professional-practice label surfaced in the R33 page-5 contrast, the removal/separation chronology, the counsel-continuity surface or the RPL 3304 first-read visuals MUST resolve through:
+
+- master identity registry: `PD-SP-IDENTITY-REGISTRY-001`;
+- legal-professionals register: `assets/data/legal-professionals-register-v1.json`;
+- dated counsel/firm crosswalk: `assets/data/ac-separation-counsel-registry-crosswalk-v1.json`.
+
+A person, a law-firm legal person and an independent-practice label remain separate canonical objects. A firm/practice edge is date- and source-specific and never transfers conduct, knowledge, intent or liability. Where no separate legal entity is proved, the registry MUST use a professional-practice `STRUCTURE` rather than invent a company.
+
+The page-5 first-read rule therefore resolves, at minimum:
+- Joaquín Ruiz de Infante Abella — `PD-SP-P-0045`;
+- Bufete Ruiz de Infante — `PD-SP-O-0054`;
+- Armando Betancor Álamo — `PD-SP-P-0042`;
+- historical Alas Legal Advisors, S.L. — `PD-SP-O-0052`;
+and links onward to the complete dated counsel crosswalk.
+
+The crosswalk is a registry/control surface, not evidence that the AC caused any particular withdrawal.
