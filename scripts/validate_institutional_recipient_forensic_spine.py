@@ -150,6 +150,9 @@ def main() -> int:
                 fail(f"silence boundary missing: {rel}", errors)
 
     js_files = [
+        "assets/ac-loyalty-breakpoint-20260819.js",
+        "assets/ac-de-facto-knowing-facilitation-visibility-20260820.js",
+        "assets/control-22-24-interlink-20260904.js",
         "assets/hotel-finca-title-system-interlink-20260903.js",
         "assets/matkator-8584-hotel-title-multitrack-20260903.js",
         "assets/dp1901-platform-recovery-nexus-20260920.js",

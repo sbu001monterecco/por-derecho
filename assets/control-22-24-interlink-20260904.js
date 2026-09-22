@@ -1,5 +1,6 @@
 (() => {
   'use strict';
+  if (document.body?.dataset.recipientFocus === 'true') return;
 
   const path = window.location.pathname.replace(/\/index\.html$/, '/');
   const lang = (document.documentElement.lang || (path.includes('/en/') ? 'en' : 'es'))
