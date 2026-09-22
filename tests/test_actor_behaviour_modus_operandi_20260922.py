@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -18,38 +19,40 @@ def _data() -> dict:
     return json.loads(REGISTRY_PATH.read_text(encoding="utf-8"))
 
 
-def test_registry_passes_fail_closed_validator() -> None:
-    assert module.validate(_data()) == []
+class ActorBehaviourModusOperandiTests(unittest.TestCase):
+    def test_registry_passes_fail_closed_validator(self) -> None:
+        self.assertEqual(module.validate(_data()), [])
+
+    def test_machine_ids_are_namespaced_from_source_markers(self) -> None:
+        data = _data()
+        fmmm = data["actors"]["FMMM"]["markers"][0]
+        self.assertEqual(fmmm["source_marker"], "FMMM-01")
+        self.assertEqual(fmmm["machine_id"], "MO-FMMM-01")
+        all_ids = [
+            marker["machine_id"]
+            for actor in data["actors"].values()
+            for marker in actor["markers"]
+        ]
+        self.assertEqual(len(all_ids), len(set(all_ids)))
+
+    def test_recurrence_gate_remains_evidence_led(self) -> None:
+        recurrence = _data()["recurrence"]
+        self.assertEqual(recurrence["minimum_shared_operational_markers"], 3)
+        self.assertTrue(recurrence["requires_independent_actor_attribution"])
+        self.assertTrue(recurrence["requires_primary_or_contemporaneous_source"])
+        self.assertTrue(recurrence["requires_contrary_evidence_and_legitimate_alternatives"])
+        self.assertTrue(recurrence["separates_proposal_preparation_implementation_result"])
+        self.assertTrue(recurrence["requires_explicit_not_a_finding_label"])
+
+    def test_actor_specific_counts_and_ids_are_locked(self) -> None:
+        actors = _data()["actors"]
+        self.assertEqual(actors["FMMM"]["person_id"], "PD-SP-P-0009")
+        self.assertEqual(actors["JDAM"]["person_id"], "PD-SP-P-0011")
+        self.assertEqual(actors["LPAM"]["person_id"], "PD-SP-P-0012")
+        self.assertEqual(len(actors["FMMM"]["markers"]), 8)
+        self.assertEqual(len(actors["JDAM"]["markers"]), 10)
+        self.assertEqual(len(actors["LPAM"]["markers"]), 8)
 
 
-def test_machine_ids_are_namespaced_from_source_markers() -> None:
-    data = _data()
-    fmmm = data["actors"]["FMMM"]["markers"][0]
-    assert fmmm["source_marker"] == "FMMM-01"
-    assert fmmm["machine_id"] == "MO-FMMM-01"
-    all_ids = [
-        marker["machine_id"]
-        for actor in data["actors"].values()
-        for marker in actor["markers"]
-    ]
-    assert len(all_ids) == len(set(all_ids))
-
-
-def test_recurrence_gate_remains_evidence_led() -> None:
-    recurrence = _data()["recurrence"]
-    assert recurrence["minimum_shared_operational_markers"] == 3
-    assert recurrence["requires_independent_actor_attribution"] is True
-    assert recurrence["requires_primary_or_contemporaneous_source"] is True
-    assert recurrence["requires_contrary_evidence_and_legitimate_alternatives"] is True
-    assert recurrence["separates_proposal_preparation_implementation_result"] is True
-    assert recurrence["requires_explicit_not_a_finding_label"] is True
-
-
-def test_actor_specific_counts_and_ids_are_locked() -> None:
-    actors = _data()["actors"]
-    assert actors["FMMM"]["person_id"] == "PD-SP-P-0009"
-    assert actors["JDAM"]["person_id"] == "PD-SP-P-0011"
-    assert actors["LPAM"]["person_id"] == "PD-SP-P-0012"
-    assert len(actors["FMMM"]["markers"]) == 8
-    assert len(actors["JDAM"]["markers"]) == 10
-    assert len(actors["LPAM"]["markers"]) == 8
+if __name__ == "__main__":
+    unittest.main()
