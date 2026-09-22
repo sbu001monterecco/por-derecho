@@ -4,7 +4,7 @@
   "publication_id": "PD-AC-RPL3304-R33-20260921",
   "control_date": "2026-09-22",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "DEPLOYED",
   "expected_routes": {
     "es": [
       "es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/index.html"
@@ -63,7 +63,7 @@
   ],
   "frozen_corpus_boundary": "The Aug-23 fixed 50-specialist / 127-complete-record catalogues remain unchanged; R33 is a post-cutoff additive source page, not silently inserted into those frozen denominators.",
   "authority": "Gil Marer instruction: take over and do it now.",
-  "state_note": "The R33 source pages/viewer already exist on main. PR #1741 stages the 22-Sep-2026 canonical visual-linkage release; visual assets and reciprocal first-read links are not treated as merged/deployed until the protected PR completes.",
+  "state_note": "PR #1741 merged as 0c2c8a1b6680e61e2c76ea1c96687e07c6672154. GitHub Pages build/deployment run 35672778473 completed successfully for that exact head SHA on 22-Sep-2026. Public routes are declared here as deployed; page-level evidence boundaries and rule-level visual linkage remain controlling.",
   "controlled_extract_path": "evidence/insolvency-36-2012/rpl-3304-2025/R33-oposicion-ac-apelacion-lpb-septiembre-2026-controlled-extracts.md",
   "sitemap_state": "Not manually edited in this release; dedicated routes are reachable through reciprocal in-site links. Global sitemap remains generator-owned.",
   "viewer_upgrade": {
@@ -103,5 +103,31 @@
       "assets/visuals/ac-rpl3304/separacion-ruta-procesal.svg"
     ],
     "drive_master_folder_id": "1rVrqrPbXON90jQZhYAm4Akmw2rkEszd0"
-  }
+  },
+  "merge_sha": "0c2c8a1b6680e61e2c76ea1c96687e07c6672154",
+  "validation": {
+    "evidence": [
+      "PR #1741: Publication integrity gate — success",
+      "PR #1741: Validate Borja separation detailed visual — success",
+      "PR #1741: Validate AC removal, remuneration and orders publication — success",
+      "PR #1741: Validate visual asset identity registry — success",
+      "PR #1741: Audit private-source, statement and OSINT governance — success",
+      "PR #1741: Release acceptance — success"
+    ]
+  },
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "workflow_run_id": 35672778473,
+    "workflow_name": "pages build and deployment",
+    "head_sha": "0c2c8a1b6680e61e2c76ea1c96687e07c6672154",
+    "conclusion": "success",
+    "completed_at": "2026-09-22T00:40:39Z",
+    "action_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/35672778473"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/",
+    "https://sbu001monterecco.github.io/por-derecho/es/continuidad-defensa-letrados/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-separacion-ac-honorarios/"
+  ]
 }
