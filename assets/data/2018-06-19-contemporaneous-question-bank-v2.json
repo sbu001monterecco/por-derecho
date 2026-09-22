@@ -3856,5 +3856,16 @@
       "significance": "Later working derivative confirming continuity of the questioning architecture in the DP 1132/2018 preparation period.",
       "boundary": "Does not prove actual judicial use, answer, counsel adoption or truth."
     }
-  ]
+  ],
+  "counsel_reply": {
+    "date_time": "2018-06-19T20:25:00+01:00",
+    "gmail_message_id": "1641981ea13ff60f",
+    "subject": "Re: Preguntas para la testificación del 25 de Junio de 2018",
+    "text": "Lo voy analizando. Te mando borrador de preguntas para Gil, para que las vaya traduciendo. Te llamo ahora...",
+    "attachment": "INTERROGATORIO GIL MARER.odt",
+    "bytes": 21333,
+    "sha256": "6ab4ceebe1add1f224e223899439d199589827557067d0ab84b8d33231b3da49",
+    "public_status": "PRIVATE_COUNSEL_PREPARATION_SOURCE_HASH_AND_DIGEST_ONLY",
+    "significance": "Confirms a separate counsel draft existed; does not establish final judicial use."
+  }
 }
