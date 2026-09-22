@@ -84,8 +84,14 @@ def main() -> int:
         fail("recipient projection must contain four recipients", errors)
     if manifest.get("publication_id") != "PD-INSTITUTIONAL-RECIPIENT-FORENSIC-SPINE-20260922":
         fail("publication manifest identity drift", errors)
-    if manifest.get("current_state") != "PREPARED_PENDING_MERGE":
-        fail("prepared manifest must not self-certify deployment", errors)
+    state = manifest.get("current_state")
+    if state not in {"PREPARED_PENDING_MERGE", "LIVE_VERIFIED"}:
+        fail("unexpected publication lifecycle state", errors)
+    if state == "LIVE_VERIFIED":
+        if not re.fullmatch(r"[0-9a-f]{40}", str(manifest.get("merge_sha") or "")):
+            fail("live manifest requires an exact merge SHA", errors)
+        if not manifest.get("deployment_evidence") or not manifest.get("live_verification_evidence"):
+            fail("live manifest requires deployment and public-readback evidence", errors)
 
     expected_pages = {item for pair in PAIRS.values() for item in pair}
     manifest_pages = {
