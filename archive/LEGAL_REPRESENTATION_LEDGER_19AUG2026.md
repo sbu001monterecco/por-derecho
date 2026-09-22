@@ -314,3 +314,9 @@ Do not expose mailbox IDs, private email addresses, privileged correspondence, p
 This ledger, `assets/data/legal-representation-v1.json` and the claim-specific retracto control are the canonical starting points for this track. Future work should update them rather than create competing lawyer lists.
 
 The historical narrative may change as earlier or better evidence is recovered. Corrections must preserve the previous proposition/status and explain why it changed.
+
+## 12. Lawyer-interaction truth-machine bridge — 22 September 2026
+
+This ledger is now the narrative source for `PD-LITM-20260922-01`. Every verified lawyer/firm above must be cross-walked to `assets/data/lawyer-interaction-truth-machine-v1.json`, including both Concurso and extraconcursal work. The A1–A8 interference subset may not substitute for the full denominator. Garrigues is the first currently verified firm through the 24-Jan-2012 engagement. Additional advisers in section 8 remain provisional until capacity/retention is proved.
+
+Future work must digitise interaction events rather than merely adding narrative: client/entity, matter, period, instructions, advice, filed act, AC/private/institutional touchpoint, mechanism, effect, professional response, handover, fees, contrary evidence, lawful alternative, causation, intent, privilege/publication and finite missing proof.
