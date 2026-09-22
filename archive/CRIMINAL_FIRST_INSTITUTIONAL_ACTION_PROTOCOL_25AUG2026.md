@@ -53,7 +53,7 @@ Test offence families and professional duties element by element. Do not use the
 
 ### RECOVER
 
-Maintain claimant-specific asset, income, possession, financing, professional-cost and damages schedules for LPB, Aweswell/Oswell, Matkator, CEXP, the operating business, creditors and individual owners.
+Maintain claimant-specific asset, income, possession, financing, professional-cost and damages schedules for LPB, AWESWELL LIMITED, Matkator, CEXP, the operating business, creditors and individual owners.
 
 ## 3. Immediate P0 action families
 

@@ -78,7 +78,7 @@ Triage every material item by:
 - relationship to an existing repository evidence item or missing-evidence ID; and
 - next finite verification question.
 
-Use the canonical first reference **Luchy Playa Blanca, S.L.U. (LPB)**. Keep LPB, Matkator, S.L.U., the Comunidad de Propietarios Sun Park, the Comunidad de Explotación/CEXP, Pink Canary Services, S.L.U. (formerly Monterecco Sun Park, S.L.U.), Aweswell/Oswell, Patricia/Gil personally, the Insolvency Administrator, lawyers/firms, Community actors and other third parties separate. Do not transfer authority, knowledge, intention, benefit, responsibility or criminality through relationship, copied-recipient status, chronology or shared surname.
+Use the canonical first reference **Luchy Playa Blanca, S.L.U. (LPB)**. Keep LPB, Matkator, S.L.U., the Comunidad de Propietarios Sun Park, the Comunidad de Explotación/CEXP, Pink Canary Services, S.L.U. (formerly Monterecco Sun Park, S.L.U.), AWESWELL LIMITED, Patricia/Gil personally, the Insolvency Administrator, lawyers/firms, Community actors and other third parties separate. Do not transfer authority, knowledge, intention, benefit, responsibility or criminality through relationship, copied-recipient status, chronology or shared surname.
 
 For each material proposition classify `DOCUMENTARY FACT`, `ATTRIBUTED ACCOUNT`, `PARTY ALLEGATION`, `EVIDENCE-BASED INFERENCE`, `OFFICIAL OUTCOME`, `CONTRARY RECORD`, `CORRECTED/SUPERSEDED` or `UNRESOLVED QUESTION`. A pleading proves the pleaded position; an email proves the communication shown; neither automatically proves judicial acceptance or the underlying event.
 

@@ -1,0 +1,33 @@
+{
+  "id": "AST-ECP-EXAMPLE-001",
+  "object_type": "ASSERTION",
+  "event_time": "2018-06-07",
+  "knowledge_time": "2026-09-22",
+  "status_axes": {
+    "ASSERTION_STATUS": "ATTRIBUTED_ALLEGATION",
+    "LEGAL_STATUS": "PARTY_ALLEGATION",
+    "PUBLICATION_STATUS": "PRIVATE_ONLY",
+    "PRESERVATION_STATUS": "DISCOVERED_ONLY"
+  },
+  "provenance": {
+    "source_system": "CONTROL_PLANE_BOOTSTRAP_SYNTHETIC_EXAMPLE",
+    "custody_state": "SYNTHETIC_NON_EVIDENCE",
+    "native_hash": null,
+    "derivation_steps": []
+  },
+  "source_refs": [
+    "SRC-ECP-SYNTHETIC-001"
+  ],
+  "supporting_evidence": [],
+  "contrary_evidence": [],
+  "neutral_evidence": [],
+  "missing_evidence": [
+    "No evidence is expected because this is a schema-validation example only."
+  ],
+  "what_it_does_not_establish": [
+    "This synthetic record is not case evidence and establishes no historical fact, wrongdoing, offence or liability."
+  ],
+  "depends_on": [],
+  "supersedes": [],
+  "superseded_by": []
+}

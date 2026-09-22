@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://por-derecho.example/schemas/por-derecho-evidence-control-plane-v1.schema.json",
+  "title": "Por Derecho Evidence Control Plane record",
+  "type": "object",
+  "required": [
+    "id",
+    "object_type",
+    "status_axes",
+    "provenance"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "object_type": {
+      "enum": [
+        "SOURCE",
+        "EVIDENCE_OBJECT",
+        "DERIVATIVE",
+        "ACTOR",
+        "ENTITY",
+        "EVENT",
+        "ASSERTION",
+        "RELATIONSHIP",
+        "CONTRADICTION",
+        "HYPOTHESIS",
+        "PROCEEDING",
+        "INVESTIGATIVE_ACTION",
+        "PRESERVATION_EVENT",
+        "PUBLICATION",
+        "WORKSPACE"
+      ]
+    },
+    "event_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "knowledge_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status_axes": {
+      "type": "object",
+      "minProperties": 1
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "source_system",
+        "custody_state"
+      ],
+      "properties": {
+        "source_system": {
+          "type": "string"
+        },
+        "custody_state": {
+          "type": "string"
+        },
+        "native_hash": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "derivation_steps": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "supporting_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contrary_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "neutral_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "what_it_does_not_establish": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "depends_on": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "supersedes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "superseded_by": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "object_type": {
+            "const": "ASSERTION"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "source_refs",
+          "contrary_evidence",
+          "what_it_does_not_establish",
+          "event_time",
+          "knowledge_time"
+        ],
+        "properties": {
+          "source_refs": {
+            "minItems": 1
+          },
+          "what_it_does_not_establish": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "object_type": {
+            "const": "CONTRADICTION"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "depends_on",
+          "what_it_does_not_establish"
+        ],
+        "properties": {
+          "depends_on": {
+            "minItems": 2
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": true
+}

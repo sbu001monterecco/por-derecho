@@ -1,0 +1,51 @@
+{
+  "schema": "por-derecho.institutional-recipient-forensic-spine.v1",
+  "schema_version": "1.0.0",
+  "control_id": "PD-IRF-SPINE-20260922-01",
+  "control_date": "2026-09-22",
+  "status": "PUBLIC_SAFE_PROJECTION_PREPARED",
+  "purpose": "A recipient-facing projection of already controlled public facts, attributed allegations and finite evidence gaps. It does not replace the canonical public-authority communications register or private source custody.",
+  "canonical_entity": {
+    "display_name": "Aweswell Limited",
+    "legal_register_literal": "AWESWELL LIMITED",
+    "company_number": "07716847",
+    "noncanonical_variant_policy": "Noncanonical variants must not be republished outside preserved native or historically controlled sources."
+  },
+  "relation_labels": {
+    "DOC": "Documented proposition within the cited public route",
+    "HIP": "Attributed hypothesis requiring proof",
+    "OPEN": "Unresolved question",
+    "NOTICE": "Documented notice or transmission; receipt/review/acceptance must be proved separately",
+    "CONTRARY": "Material supporting a materially different account",
+    "ADVERSE": "Decision or position adverse to the claimant",
+    "GAP": "Finite missing record capable of changing the assessment"
+  },
+  "spine": [
+    {"id":"PD-IRF-N01","period":"2016","label":"DOC","proposition":"Professional engagement, Sun Park knowledge, criminal-route instruction and institutional acknowledgement are documented within defined entity/person boundaries.","routes":{"en":"/en/pwc-canarias-carlos-saavedra-sun-park/","es":"/es/pwc-canarias-carlos-saavedra-sun-park/"}},
+    {"id":"PD-IRF-N02","period":"2018","label":"HIP","proposition":"The claimant alleges a material-control and funded-exit sequence. The public record requires arrow-by-arrow testing and does not present the allegation as adjudicated.","routes":{"en":"/en/sun-park-takeover-7-june-2018/","es":"/es/toma-control-sun-park-7-junio-2018/"}},
+    {"id":"PD-IRF-N03","period":"2019","label":"DOC_OPEN","proposition":"A customer-facing Gmail identity and masked recovery clue are documented; native creator/controller attribution remains open.","routes":{"en":"/en/sunpark264-acostamatos-incident-2019/","es":"/es/incidente-sunpark264-acostamatos-2019/"}},
+    {"id":"PD-IRF-N04","period":"2020–2022","label":"DOC_GAP","proposition":"Professional conflict/onboarding records, Business Profile requests, closure state and reinstatement create defined custody and audit-log questions without proving common authorship or causation.","routes":{"en":"/en/google-sun-park-evidence-cooperation/","es":"/es/google-sun-park-cooperacion-evidencia/"}},
+    {"id":"PD-IRF-N05","period":"2023–2026","label":"NOTICE_GAP","proposition":"Later profile-state notices, professional follow-ups, complaints, removal litigation and R33 are relevant procedural/evidential context; none is converted into a merits finding.","routes":{"en":"/en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/","es":"/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/"}}
+  ],
+  "recipients": [
+    {"id":"PD-IRF-R-GOOGLE","recipient":"Google","role":"Platform record custodian and potential technical witness","routes":{"en":"/en/google-sun-park-evidence-cooperation/","es":"/es/google-sun-park-cooperacion-evidencia/"},"proof_ceiling":"No wrongdoing by Google alleged; Business Profile and account-security lanes remain separate; no actor attribution without native records."},
+    {"id":"PD-IRF-R-PWC","recipient":"PwC","role":"Potential historical professional-record custodian and witness within documented engagement/notice perimeters","routes":{"en":"/en/pwc-canarias-carlos-saavedra-sun-park/","es":"/es/pwc-canarias-carlos-saavedra-sun-park/"},"proof_ceiling":"Professional relationship and notice do not transfer allegations or establish participation, knowledge by every professional, intent or liability."},
+    {"id":"PD-IRF-R-RSM","recipient":"RSM Spain / legacy San Telmo perimeter","role":"Potential ethics, client-introduction, conflict and legacy-record custodian","routes":{"en":"/en/rsm/nnr4-1025c2f66/","es":"/es/rsm/nnr4-1025c2f66/"},"proof_ceiling":"An internal review, historic professional context or non-response does not establish wrongdoing, admission or collective responsibility."},
+    {"id":"PD-IRF-R-GT","recipient":"Grant Thornton Spain / GTIL / relevant Canary professional perimeter","role":"Potential conflict, onboarding, relationship and information-separation record custodian","routes":{"en":"/en/grant-thornton/2024-04/","es":"/es/grant-thornton/2024-04/"},"proof_ceiling":"Branding, a domain, public professional description or commercial relationship does not by itself establish the legal entity, supervision, information transfer, shared intent or liability."}
+  ],
+  "current_notices": [
+    {"date":"2026-09-21","recipients":["PwC","RSM Spain","Grant Thornton"],"state":"SENT_IN_EXISTING_THREADS","public_source_locator":"WITHHELD_PRIVATE_CUSTODY","effect":"Documents transmission only; does not prove reading, acceptance, review or agreement."},
+    {"date":"2026-09-22","recipients":["PwC","RSM Spain","Grant Thornton"],"state":"CANONICAL_NAME_CORRECTION_SENT","correction":"Aweswell Limited; legal-register literal AWESWELL LIMITED; company 07716847","public_source_locator":"WITHHELD_PRIVATE_CUSTODY","effect":"Corrects a transcription/template error; does not change evidential merits."}
+  ],
+  "response_state": {
+    "bounded_review_date":"2026-09-22",
+    "pwc":"NO_SUBSTANTIVE_RESPONSE_LOCATED",
+    "rsm":"NO_SUBSTANTIVE_RESPONSE_LOCATED",
+    "grant_thornton":"AUTOMATIC_ABSENCE_REPLY_ONLY_NO_SUBSTANTIVE_RESPONSE_LOCATED",
+    "boundary":"Silence is not admission. An automatic absence reply is not a substantive response, a merits position or proof of review."
+  },
+  "r33_boundary":"R33 is the insolvency administrator's party filing. It proves the position advanced and source material reproduced, subject to source controls; it is not a judicial determination of the filing's allegations and does not adjudicate the recipient-specific questions.",
+  "public_private_boundary":"No private email addresses, message IDs, native emails, security events capable of exposing an account, privileged material, provider locators or credentials are included.",
+  "non_transfer_rule":"Documents, notice and apparent authority may be tested across connected events. Criminal responsibility, knowledge, intent, participation and liability never transfer from one actor, entity, relationship or event to another.",
+  "register_boundary":"This projection does not amend assets/data/institutional-communications-register-v1.json, whose deterministic scope and denominators concern its own controlled public-authority corpus."
+}

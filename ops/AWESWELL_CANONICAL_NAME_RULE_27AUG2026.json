@@ -6,11 +6,11 @@
   "canonical_entity_record": "ops/CANONICAL_ENTITY_NAMES.json#E005",
   "memory_governance_record": "ops/CHATGPT_MEMORY_SOURCE_GOVERNANCE_22SEP2026.json",
   "entity": {
-    "canonical_name": "Aweswell Limited",
+    "canonical_name": "AWESWELL LIMITED",
     "official_registered_name": "AWESWELL LIMITED",
     "jurisdiction": "United Kingdom",
     "company_number": "07716847",
-    "former_name": "Monterecco Sun Park Limited",
+    "former_name": "MONTERECCO SUN PARK LIMITED",
     "former_name_end_date": "2014-06-03"
   },
   "forbidden_generated_aliases": [
@@ -29,9 +29,9 @@
   ],
   "distinct_entity_warning": "OSWELL 426 S.L. is a separate Spanish entity. Never use it as an alias, bridge or correction for AWESWELL LIMITED.",
   "rules": [
-    "Use Aweswell Limited in ordinary narrative and AWESWELL LIMITED where the registered uppercase style is required.",
-    "Use Monterecco Sun Park Limited only for the historical source-date context or faithful source quotation.",
-    "Do not generate, normalize, infer, substitute or use a forbidden variant as the name or alias of Aweswell Limited.",
+    "Use AWESWELL LIMITED for current assertions.",
+    "Use MONTERECCO SUN PARK LIMITED only for the historical source-date context or faithful source quotation.",
+    "Do not generate, normalize, infer, substitute or use a forbidden variant as the name or alias of AWESWELL LIMITED.",
     "If a forbidden variant occurs literally in a source, preserve it only as an expressly labelled source literal, transcription error, correction notice or retrieval-only search variant where evidential fidelity requires it.",
     "Correct unqualified generated references that intend UK company 07716847 before publication, transmission or reliance.",
     "Never conflate UK company 07716847 with Pink Canary Services, S.L.U., formerly Monterecco Sun Park, S.L.U., OSWELL 426 S.L. or another Spanish legal person.",

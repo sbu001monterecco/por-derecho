@@ -8,7 +8,7 @@ This control corrects the professional perimeter and requires all future proceed
 
 Maintain two separate but interlinked professional registers:
 
-1. **OUR COUNSEL PERIMETER — CURRENT / FORMER**: lawyers actually acting or having acted for the relevant Aweswell / Oswell / Luchy Playa Blanca / Matkator / Pink / Gil-side interests in the relevant dated capacity.
+1. **OUR COUNSEL PERIMETER — CURRENT / FORMER**: lawyers actually acting or having acted for the relevant AWESWELL LIMITED / Luchy Playa Blanca / Matkator / Pink / Gil-side interests in the relevant dated capacity.
 2. **EXTERNAL / OPPOSING / DISSIDENT-SIDE PROFESSIONALS**: lawyers appearing for other parties or interests, including professionals material to the factual or procedural history but not retained as project-side counsel.
 
 Never merge those registers simply because professionals appear in the same court file, ACTA, correspondence chain, appeal, incident or evidential chronology.

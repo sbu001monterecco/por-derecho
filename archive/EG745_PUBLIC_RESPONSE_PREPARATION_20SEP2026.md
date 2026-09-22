@@ -10,7 +10,7 @@ The complainant expressly alleges an organised and continuing mechanism serving 
 
 The allegation of illicit wealth accumulation and its deployment to protect those results is preserved as an allegation requiring proof. The response asks who performed each act, in which capacity, with what authority and knowledge, under which duty, with which documents and notices, and with what effect and beneficiary. Professional relationships, lawful defence, wealth and adverse decisions do not by themselves prove coordinated criminal conduct.
 
-The affected enterprise includes the wider Oswell platform and separately held rights. The financial inquiry links alleged losses, benefits obtained and the acts or transfers connecting them. It distinguishes realised results from projections, grants from payments, revenues from profits, and asset values from enforceable recovery. It preserves potentially available general-asset enforcement without treating all assets as criminal proceeds or attributing seizure powers to Inspección Fiscal.
+The affected enterprise includes the wider AWESWELL LIMITED platform and separately held rights. The financial inquiry links alleged losses, benefits obtained and the acts or transfers connecting them. It distinguishes realised results from projections, grants from payments, revenues from profits, and asset values from enforceable recovery. It preserves potentially available general-asset enforcement without treating all assets as criminal proceeds or attributing seizure powers to Inspección Fiscal.
 
 ## Concrete response to the archive
 

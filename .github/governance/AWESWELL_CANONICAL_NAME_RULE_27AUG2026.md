@@ -1,4 +1,4 @@
-# Aweswell Limited canonical-name rule — 27 August 2026
+# AWESWELL LIMITED canonical-name rule — 27 August 2026
 
 Status: **repository-wide governance control**.
 
@@ -6,21 +6,22 @@ This rule supplements `AGENTS.md` and must be applied together with `ops/CANONIC
 
 ## Canonical identity
 
-- The correct current company name is **Aweswell Limited**.
+- The sole correct current company name is **AWESWELL LIMITED**.
 - The UK legal person is company number **07716847**.
-- **Monterecco Sun Park Limited** is the former name of the same UK company and may be used only when the source date or historical context requires that former name.
-- **Oswell Limited** is **not** the canonical name of this company and must not be generated, normalized, inferred, substituted or used as a shorthand for Aweswell Limited.
+- **MONTERECCO SUN PARK LIMITED** is the former name of the same UK company and may be used only when the source date or historical context requires that former name.
+- **Oswell**, **Oswell Limited**, **Awesell**, **Awswell**, **Aweswel**, **Aweswelll** and materially similar forms are errors, not aliases. They must not be generated, normalized, inferred, substituted or used as shorthand for AWESWELL LIMITED.
+- **OSWELL 426 S.L.** is an unrelated Spanish entity and must never be used as an alias, correction or bridge for UK company 07716847.
 
 ## Repository-wide use rule
 
 For every future repository, website, evidence-map, correspondence-support, transaction-development, legal-analysis, handover, prompt, declaration, timeline and actor/entity reference:
 
-1. use **Aweswell Limited** when referring to the current UK company;
-2. use **Monterecco Sun Park Limited** only for the historical period in which that was the company's name or when faithfully quoting a source;
-3. treat **Oswell Limited** as a naming error unless a source literally contains that wording;
-4. where a source literally says **Oswell Limited**, preserve the source literal only when evidential fidelity requires it, label it as a source literal/error, and do not promote it into canonical narrative text;
-5. do not conflate Aweswell Limited with **Pink Canary Services, S.L.U.** / former **Monterecco Sun Park, S.L.U.**, or with any other Spanish project-side legal person;
-6. if a generated draft, page, control file or analysis contains an unqualified reference to **Oswell Limited** intended to mean the user's UK company, correct it to **Aweswell Limited** before publication or reliance.
+1. use **AWESWELL LIMITED** when referring to the current UK company;
+2. use **MONTERECCO SUN PARK LIMITED** only for the historical period in which that was the company's name or when faithfully quoting a source;
+3. treat every forbidden form as a naming error unless a source literally contains that wording;
+4. where a source literally contains an error, preserve it only when evidential fidelity requires it, label it as a source literal/error, and do not promote it into canonical narrative text;
+5. do not conflate AWESWELL LIMITED with **Pink Canary Services, S.L.U.** / former **Monterecco Sun Park, S.L.U.**, **OSWELL 426 S.L.**, or any other Spanish legal person;
+6. correct every unqualified current assertion intended to mean UK company 07716847 to **AWESWELL LIMITED** before publication, transmission or reliance.
 
 ## Priority and correction rule
 

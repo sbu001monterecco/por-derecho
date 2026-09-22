@@ -1,88 +1,214 @@
 {
-  "schema": "por-derecho.aweswell-identity-exceptions.v1",
+  "schema": "por-derecho.aweswell-identity-exceptions.v2",
   "control_date": "2026-09-22",
   "canonical_company_number": "07716847",
-  "rule": "Exceptions preserve evidence or correction controls; they never create aliases.",
-  "path_exceptions": [
+  "rule": "Every exception is path-, line-, category- and literal-bounded. Exceptions preserve evidence or test/control definitions; they never create aliases or excuse current assertions.",
+  "allowed_categories": [
+    "CONTROL_DEFINITION",
+    "NEGATIVE_TEST",
+    "LABELLED_SOURCE_LITERAL",
+    "LABELLED_CORRECTION_RECORD"
+  ],
+  "line_exceptions": [
     {
-      "path": "ops/AWESWELL_CANONICAL_NAME_RULE_27AUG2026.json",
-      "category": "CORRECTION_CONTROL"
+      "path": ".github/governance/AWESWELL_CANONICAL_NAME_RULE_27AUG2026.md",
+      "start_line": 12,
+      "end_line": 12,
+      "category": "CONTROL_DEFINITION",
+      "label": "forbidden-form definition",
+      "allowed_literals": ["Oswell", "Oswell Limited", "Awesell", "Awswell", "Aweswel", "Aweswelll"],
+      "expected_matches": 6,
+      "justification": "The line defines forms that the control rejects; it is not an alias or current assertion."
     },
     {
-      "path": "ops/CHATGPT_MEMORY_SOURCE_GOVERNANCE_22SEP2026.json",
-      "category": "CORRECTION_CONTROL"
+      "path": ".github/workflows/aweswell-identity-guard.yml",
+      "start_line": 23,
+      "end_line": 23,
+      "category": "NEGATIVE_TEST",
+      "label": "outbound rejection fixture",
+      "allowed_literals": ["Oswell Limited"],
+      "expected_matches": 1,
+      "justification": "The workflow deliberately submits one forbidden value and requires the validator to reject it."
     },
     {
-      "path": "ops/AWESWELL_IDENTITY_EXCEPTION_REGISTRY_22SEP2026.json",
-      "category": "CORRECTION_CONTROL"
+      "path": "archive/AWESWELL_IDENTITY_RECURRENCE_AUDIT_22SEP2026.md",
+      "start_line": 7,
+      "end_line": 7,
+      "category": "CONTROL_DEFINITION",
+      "label": "recurrence catalogue",
+      "allowed_literals": ["Oswell", "Oswell Limited", "Awesell", "Awswell", "Aweswel"],
+      "expected_matches": 5,
+      "justification": "The line catalogues rejected generated forms; the separate OSWELL 426 S.L. token is handled only as the unrelated entity."
     },
     {
       "path": "archive/CHATGPT_MEMORY_AND_SOURCE_GOVERNANCE_22SEP2026.md",
-      "category": "CORRECTION_CONTROL"
+      "start_line": 11,
+      "end_line": 11,
+      "category": "CONTROL_DEFINITION",
+      "label": "memory-error catalogue",
+      "allowed_literals": ["Oswell", "Oswell Limited", "Awesell", "Awswell"],
+      "expected_matches": 4,
+      "justification": "The line explicitly defines transcription and template errors, not aliases."
     },
     {
-      "path": ".github/governance/AWESWELL_CANONICAL_NAME_RULE_27AUG2026.md",
-      "category": "CORRECTION_CONTROL"
+      "path": "archive/CHATGPT_MEMORY_AND_SOURCE_GOVERNANCE_22SEP2026.md",
+      "start_line": 49,
+      "end_line": 49,
+      "category": "LABELLED_CORRECTION_RECORD",
+      "label": "immutable-mail correction event",
+      "allowed_literals": ["Oswell", "Oswell Limited"],
+      "expected_matches": 2,
+      "justification": "The line records which erroneous historical wording was corrected while preserving the sent originals."
     },
     {
-      "path": ".github/governance/PLATFORM_DISPLACEMENT_PATRIMONIAL_HARM_FOREIGN_INVESTOR_RULE_20SEP2026.md",
-      "category": "CORRECTION_CONTROL"
+      "path": "archive/CHATGPT_MEMORY_AND_SOURCE_GOVERNANCE_22SEP2026.md",
+      "start_line": 53,
+      "end_line": 53,
+      "category": "LABELLED_CORRECTION_RECORD",
+      "label": "stale-memory correction boundary",
+      "allowed_literals": ["Oswell"],
+      "expected_matches": 1,
+      "justification": "The line identifies a stale memory error that must be corrected or suppressed."
     },
     {
-      "path": "assets/aweswell/aweswell-limited-filed-accounts-2025-public-data.json",
-      "category": "CORRECTION_CONTROL"
+      "path": "archive/PWC_2016_TRANSCRIPT_MANDATE_PERIMETER_AND_PAGES_DEPLOY_AUDIT_17AUG2026.md",
+      "start_line": 53,
+      "end_line": 61,
+      "category": "LABELLED_SOURCE_LITERAL",
+      "label": "2016 transcript spelling",
+      "allowed_literals": ["Oswell"],
+      "expected_matches": 4,
+      "justification": "The text expressly labels these tokens as transcript spellings/candidates and prohibits silent correction of the quoted source."
     },
     {
-      "path": "archive/CAJASIETE_SUN_PARK_UNITARY_CONTROL_27AUG2026.md",
-      "category": "CORRECTION_CONTROL"
+      "path": "archive/PWC_LEGAL_PRIOR_ADVISER_KNOWLEDGE_LATER_ADVERSE_POSITION_EVIDENCE_GATE_17AUG2026.md",
+      "start_line": 47,
+      "end_line": 47,
+      "category": "LABELLED_SOURCE_LITERAL",
+      "label": "appendix transcription literal",
+      "allowed_literals": ["Oswell"],
+      "expected_matches": 1,
+      "justification": "The line explicitly says the appendix transcribed the source using this erroneous form."
     },
     {
-      "path": "archive/AWESWELL_UNITARY_ACCOUNTING_DIGEST_PROMPT_27AUG2026.md",
-      "category": "CORRECTION_CONTROL"
+      "path": "archive/PWC_LEGAL_PRIOR_ADVISER_KNOWLEDGE_LATER_ADVERSE_POSITION_EVIDENCE_GATE_17AUG2026.md",
+      "start_line": 65,
+      "end_line": 65,
+      "category": "LABELLED_SOURCE_LITERAL",
+      "label": "transcript derivative literal",
+      "allowed_literals": ["Oswell"],
+      "expected_matches": 2,
+      "justification": "The line quotes and classifies the transcription candidate without normalising the source."
     },
     {
-      "path": "archive/CORRECTION_REGISTER.md",
-      "category": "CORRECTION_CONTROL"
+      "path": "archive/PWC_LEGAL_PRIOR_ADVISER_KNOWLEDGE_LATER_ADVERSE_POSITION_EVIDENCE_GATE_17AUG2026.md",
+      "start_line": 132,
+      "end_line": 132,
+      "category": "LABELLED_SOURCE_LITERAL",
+      "label": "evidence conclusion preserving transcription",
+      "allowed_literals": ["Oswell"],
+      "expected_matches": 1,
+      "justification": "The evidential conclusion expressly attributes the word to the transcription."
     },
     {
-      "path": "archive/CUATRECASAS_CROSS_BORDER_AFFECTED_REPORTING_PERSON_CONTROL_24AUG2026.md",
-      "category": "CORRECTION_CONTROL"
+      "path": "assets/data/matter-identity-registry-v1.organisations.json",
+      "start_line": 14,
+      "end_line": 20,
+      "category": "CONTROL_DEFINITION",
+      "label": "forbidden-generated-alias catalogue",
+      "allowed_literals": ["Oswell", "Oswell Limited", "Awesell", "Awswell", "Aweswel", "Aweswelll", "AWESWELLL"],
+      "expected_matches": 7,
+      "justification": "These values sit only in forbidden_generated_aliases; the actual aliases array is empty."
     },
     {
-      "path": "archive/knowledge-project/PWC_INVOICE_APPENDIX_89_7_HOURS_SOURCE_CONTROL_19AUG2026.md",
-      "category": "SOURCE_LITERAL"
+      "path": "en/cuatrecasas-mandate-ric-continuity/index.html",
+      "start_line": 22,
+      "end_line": 22,
+      "category": "LABELLED_CORRECTION_RECORD",
+      "label": "public historical-error notice",
+      "allowed_literals": ["Oswell"],
+      "expected_matches": 1,
+      "justification": "The sentence explicitly labels the historical token as an error and denies alias status."
     },
     {
-      "path": "assets/data/concurso36-complete-record-v1.json",
-      "category": "SOURCE_LITERAL_FILENAME"
+      "path": "es/cuatrecasas-mandato-continuidad-ric/index.html",
+      "start_line": 22,
+      "end_line": 22,
+      "category": "LABELLED_CORRECTION_RECORD",
+      "label": "aviso público de error histórico",
+      "allowed_literals": ["Oswell"],
+      "expected_matches": 1,
+      "justification": "La frase identifica expresamente el término histórico como error y niega que sea alias."
     },
     {
-      "path": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
-      "category": "SOURCE_LITERAL_FILENAME"
+      "path": "evidence/insolvency-36-2012/concurso-autos/full-text/R03-oposicion-del-administrador-concursal-a-la-separacion-redacted.md",
+      "start_line": 99,
+      "end_line": 99,
+      "category": "LABELLED_SOURCE_LITERAL",
+      "label": "redacted primary-source transcription",
+      "allowed_literals": ["Awswell"],
+      "expected_matches": 1,
+      "justification": "This is searchable text preserving the redacted source wording; altering it would corrupt source fidelity."
     },
     {
-      "path": "archive/THREAD_DELETION_AUDIT_2026-08-24_GARRIGUES_PARRILLA_COMPLETENESS.md",
-      "category": "DISTINCT_ENTITY"
+      "path": "evidence/insolvency-36-2012/concurso-autos/full-text/R03-oposicion-del-administrador-concursal-a-la-separacion-redacted.md",
+      "start_line": 248,
+      "end_line": 248,
+      "category": "LABELLED_SOURCE_LITERAL",
+      "label": "redacted primary-source transcription",
+      "allowed_literals": ["Awswell"],
+      "expected_matches": 1,
+      "justification": "This is searchable text preserving the redacted source wording; altering it would corrupt source fidelity."
     },
     {
-      "path": "evidence/garrigues-la-laguna/JUAN_TOMAS_PARRILLA_WIDER_MATTER_COVERAGE_REGISTER_ES.md",
-      "category": "DISTINCT_ENTITY"
+      "path": "ops/AWESWELL_CANONICAL_NAME_RULE_27AUG2026.json",
+      "start_line": 17,
+      "end_line": 28,
+      "category": "CONTROL_DEFINITION",
+      "label": "machine-readable forbidden-form catalogue",
+      "allowed_literals": ["Oswell", "Oswell Limited", "OSWELL", "OSWELL LIMITED", "Awesell", "Awesell Limited", "Awswell", "Awswell Limited", "Aweswel", "Aweswel Limited", "Aweswelll", "Aweswelll Limited"],
+      "expected_matches": 12,
+      "justification": "The values are the fail-closed forbidden_generated_aliases set."
     },
     {
-      "path": "archive/GARRIGUES_LA_LAGUNA_344_2013_EVIDENCE_AND_COMMUNICATIONS_REGISTER_24AUG2026.md",
-      "category": "DISTINCT_ENTITY"
+      "path": "ops/CANONICAL_ENTITY_NAMES.json",
+      "start_line": 129,
+      "end_line": 139,
+      "category": "CONTROL_DEFINITION",
+      "label": "E005 forbidden-generated-alias catalogue",
+      "allowed_literals": ["Oswell", "Oswell Limited", "Awesell", "Awesell Limited", "Awswell", "Awswell Limited", "Aweswel", "Aweswel Limited", "Aweswelll", "Aweswelll Limited", "AWESWELLL"],
+      "expected_matches": 11,
+      "justification": "The E005 record rejects these values and binds the legal person to company number 07716847."
     },
     {
-      "path": "assets/data/garrigues-la-laguna-proceeding-v1.json",
-      "category": "DISTINCT_ENTITY"
+      "path": "ops/CHATGPT_MEMORY_SOURCE_GOVERNANCE_22SEP2026.json",
+      "start_line": 18,
+      "end_line": 29,
+      "category": "CONTROL_DEFINITION",
+      "label": "memory-governance forbidden-form catalogue",
+      "allowed_literals": ["Oswell", "Oswell Limited", "OSWELL", "OSWELL LIMITED", "Awesell", "Awesell Limited", "Awswell", "Awswell Limited", "Aweswel", "Aweswel Limited", "Aweswelll", "Aweswelll Limited"],
+      "expected_matches": 12,
+      "justification": "The values are expressly forbidden as current names or aliases."
     },
     {
-      "path": "en/garrigues-la-laguna/index.html",
-      "category": "DISTINCT_ENTITY"
+      "path": "ops/CHATGPT_MEMORY_SOURCE_GOVERNANCE_22SEP2026.json",
+      "start_line": 86,
+      "end_line": 86,
+      "category": "LABELLED_CORRECTION_RECORD",
+      "label": "outbound correction event",
+      "allowed_literals": ["Oswell", "Oswell Limited"],
+      "expected_matches": 2,
+      "justification": "The event records the erroneous wording inherited by historical sent messages and the corrective response."
     },
     {
-      "path": "es/garrigues-la-laguna/index.html",
-      "category": "DISTINCT_ENTITY"
+      "path": "ops/CHATGPT_MEMORY_SOURCE_GOVERNANCE_22SEP2026.json",
+      "start_line": 90,
+      "end_line": 90,
+      "category": "LABELLED_CORRECTION_RECORD",
+      "label": "account-memory manual boundary",
+      "allowed_literals": ["Oswell"],
+      "expected_matches": 1,
+      "justification": "The field identifies the stale account-memory statement that must be removed or corrected."
     }
   ]
 }

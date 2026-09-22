@@ -217,7 +217,7 @@ Then map causation separately:
 
 `act → immediate consequence → intermediate consequence → ultimate loss`.
 
-Keep losses of LPB, Aweswell/Oswell, Matkator, CEXP, individual owners, creditors and the operating business separate.
+Keep losses of LPB, AWESWELL LIMITED, Matkator, CEXP, individual owners, creditors and the operating business separate.
 
 ---
 

@@ -1,6 +1,7 @@
 /* PD-DP1901-PLATFORM-NEXUS-20260920-01: additive, route-scoped reader layer. */
 (() => {
   'use strict';
+  if (document.body?.dataset.recipientFocus === 'true' || /\/(?:sunpark264-acostamatos-incident-2019|incidente-sunpark264-acostamatos-2019)\//.test(location.pathname)) return;
   const script = document.currentScript;
   if (!script || window.__pd1901PlatformNexus) return;
   window.__pd1901PlatformNexus = true;

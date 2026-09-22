@@ -1,4 +1,5 @@
 (() => {
+  if (document.body?.dataset.recipientFocus === 'true') return;
   const path = window.location.pathname.replace(/\/+$/, '/');
   const id = 'ac-loyalty-breakpoint-19aug2026';
   if (document.getElementById(id)) return;
