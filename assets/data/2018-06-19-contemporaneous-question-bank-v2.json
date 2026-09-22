@@ -3841,8 +3841,8 @@
     "public_question_pages": "Source pages 4-17 only; pages 1-3 retained privately as litigation-preparation narrative/strategy.",
     "thread_reply": "Counsel replied 19 June 2018: “Lo voy analizando. Te mando borrador de preguntas para Gil...” and attached INTERROGATORIO GIL MARER.odt.",
     "use_boundary": "The source proves the contemporaneous existence of these proposed questions and allegations. It does not prove that they were asked in court, answered, accepted by counsel or judge, or true.",
-    "public_transcription_pdf_sha256": "49b06092f03ab957b296d2c9deb342653d2c80e7803cdff1891af4f2559940ca",
-    "public_transcription_pdf_pages": 9,
-    "public_transcription_pdf_path": "evidence/judicial/dp1132-2018/2018-06-19-contemporaneous-question-bank-public-transcription.pdf"
+    "public_transcription_pdf_sha256": "8ddaa0b9589a2413f3790754a30692410ceb2cf9085d25340957641da48ba6b5",
+    "public_transcription_pdf_pages": 11,
+    "public_transcription_pdf_path": "repository-embedded-bytes: assets/data/question-bank-2018-public-pdf-v1.js"
   }
 }
