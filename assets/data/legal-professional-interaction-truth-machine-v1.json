@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "PD-LAW-TRUTH-20260922-01",
+  "parent": "PD-AC-PIA-20260922-01",
+  "status": "ACTIVE_CANONICAL_ANALYTICAL_CONTROL",
+  "universe": {
+    "source": "assets/data/legal-professionals-register-v1.json",
+    "rule": "all_records_in_scope_unless_source_based_correction",
+    "first_verified_firm_2012_plus": "Garrigues",
+    "pre_2012_gap": "2011 representation remains open; do not infer"
+  },
+  "unit_of_analysis": "professional_x_client_x_matter_x_period",
+  "sequence": [
+    "observe",
+    "manifest",
+    "compare",
+    "classify",
+    "traverse_dependencies",
+    "adversarial_review",
+    "reconcile",
+    "exact_head_verify",
+    "deploy_if_applicable",
+    "live_readback",
+    "new_envelope",
+    "recurse_until_closure"
+  ],
+  "anti_inference_rules": [
+    "lawyer_change_count_is_not_causation",
+    "withdrawal_is_not_ac_causation",
+    "payment_is_not_bribery",
+    "contact_is_not_influence",
+    "procedural_route_is_not_criminal_purpose",
+    "similar_mechanism_does_not_transfer_motive_knowledge_legality_or_causation",
+    "current_counsel_not_retroactively_forced_into_attrition_thesis"
+  ],
+  "public_private_boundary": "native Gmail/Drive evidence and privileged/private material remain outside public Git"
+}

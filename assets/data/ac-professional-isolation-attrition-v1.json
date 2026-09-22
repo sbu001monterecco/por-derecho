@@ -67,5 +67,14 @@
   "public_routes": {
     "es": "/es/continuidad-defensa-letrados/",
     "en": "/en/counsel-defence-continuity/"
+  },
+  "truth_machine": {
+    "id": "PD-LAW-TRUTH-20260922-01",
+    "control": "governance/LEGAL_PROFESSIONAL_INTERACTION_TRUTH_MACHINE_22SEP2026.md",
+    "machine_sidecar": "assets/data/legal-professional-interaction-truth-machine-v1.json",
+    "universe_source": "assets/data/legal-professionals-register-v1.json",
+    "unit_of_analysis": "professional_x_client_x_matter_x_period",
+    "first_verified_firm_2012_plus": "Garrigues",
+    "all_professionals_rule": "every register record enters the analysis universe without implying misconduct, causation or victim status"
   }
 }
