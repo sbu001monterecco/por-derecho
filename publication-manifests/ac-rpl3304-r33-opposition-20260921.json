@@ -4,7 +4,7 @@
   "publication_id": "PD-AC-RPL3304-R33-20260921",
   "control_date": "2026-09-22",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "MERGED_LIVE_VERIFIED",
   "expected_routes": {
     "es": [
       "es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/index.html"
@@ -63,7 +63,7 @@
   ],
   "frozen_corpus_boundary": "The Aug-23 fixed 50-specialist / 127-complete-record catalogues remain unchanged; R33 is a post-cutoff additive source page, not silently inserted into those frozen denominators.",
   "authority": "Gil Marer instruction: take over and do it now.",
-  "state_note": "The R33 source pages/viewer already exist on main. PR #1741 stages the 22-Sep-2026 canonical visual-linkage release; visual assets and reciprocal first-read links are not treated as merged/deployed until the protected PR completes.",
+  "state_note": "PR #1741 merged on 22-Sep-2026 at commit 0c2c8a1b6680e61e2c76ea1c96687e07c6672154. The canonical visual assets and reciprocal first-read links are on main; this registry closeout separately controls counsel/firm identities and dated relationships.",
   "controlled_extract_path": "evidence/insolvency-36-2012/rpl-3304-2025/R33-oposicion-ac-apelacion-lpb-septiembre-2026-controlled-extracts.md",
   "sitemap_state": "Not manually edited in this release; dedicated routes are reachable through reciprocal in-site links. Global sitemap remains generator-owned.",
   "viewer_upgrade": {
@@ -102,6 +102,15 @@
       "assets/visuals/ac-rpl3304/oposicion-pagina5-contraste-documental.svg",
       "assets/visuals/ac-rpl3304/separacion-ruta-procesal.svg"
     ],
-    "drive_master_folder_id": "1rVrqrPbXON90jQZhYAm4Akmw2rkEszd0"
+    "drive_master_folder_id": "1rVrqrPbXON90jQZhYAm4Akmw2rkEszd0",
+    "counsel_registry_crosswalk": "assets/data/ac-separation-counsel-registry-crosswalk-v1.json",
+    "master_identity_registry": "assets/data/matter-identity-registry-v1.json",
+    "legal_professionals_register": "assets/data/legal-professionals-register-v1.json"
+  },
+  "merge": {
+    "pull_request": 1741,
+    "merge_sha": "0c2c8a1b6680e61e2c76ea1c96687e07c6672154",
+    "merged_at": "2026-09-22T00:38:17Z",
+    "status": "MERGED_LIVE_VERIFIED"
   }
 }
