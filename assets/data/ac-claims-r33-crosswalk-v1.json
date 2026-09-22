@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "id": "PD-AC-CLAIMS-R33-20260922-01",
+  "actor": {
+    "name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+    "capacity": "court-appointed Insolvency Administrator in Concurso 36/2012",
+    "rule": "not a private actor; actor/capacity/event attribution remains separate from judge, prosecutor, firms and private parties"
+  },
+  "status": "UNITARY_ATTRIBUTED_CLAIM_REGISTER_NOT_ADJUDICATED_FINDING",
+  "r33": {
+    "proceeding": "RPL 3304/2025",
+    "document": "R33",
+    "signed": "2026-09-14",
+    "received": "2026-09-21",
+    "pages": 22,
+    "role": "party opposition and evidential response node; proves the AC's position and incorporated material, not the independent truth of every characterization"
+  },
+  "global_rules": [
+    "each claim family preserves strongest contrary evidence and lawful alternative",
+    "official or judicial act is not automatically proof of criminal purpose",
+    "later approval or later outcome does not retroactively validate every antecedent act",
+    "later structural judicial corroboration does not retroactively prove knowledge or intent",
+    "R33 is compared proposition-by-proposition; hostile tone or disagreement is not evidence of falsity",
+    "claims from different proceedings may share evidence without being procedurally merged",
+    "DP1901 is cross-evidence only and is not the AC complaint",
+    "the actor graph must separate fact, official outcome, attributed allegation, inference, contrary evidence and open proof"
+  ],
+  "claim_families": [
+    {
+      "id": "AC-CLM-001",
+      "label_es": "Cuentas anuales y vacío informativo",
+      "label_en": "Annual accounts and information gap",
+      "source_lane": "R01 separation ground 1",
+      "allegation": "Prolonged failure to formulate/deposit annual accounts allegedly impaired transparent estate supervision and creditor scrutiny.",
+      "r33_test": "Compare any denial/explanation with exact filing history, duty, availability of underlying accounts and later estate representations.",
+      "counterevidence": "The AC may contend legal/accounting responsibility or practical availability of information lay elsewhere; absence from the current corpus is not proof of non-existence.",
+      "open_proof": [
+        "complete annual-account filing history",
+        "requests/notices",
+        "underlying ledgers",
+        "responsibility allocation"
+      ]
+    },
+    {
+      "id": "AC-CLM-002",
+      "label_es": "Contrato de riesgo financiero / SWAP",
+      "label_en": "Financial-risk contract / swap",
+      "source_lane": "R01 separation ground 2; later Valencia/Concurso work",
+      "allegation": "Inaction or obstruction is alleged regarding analysis and pursuit of a financial-risk-contract claim potentially belonging to the estate.",
+      "r33_test": "R33's explanation that documentation was unavailable is a finite verification question: what was requested, held, obtainable, reviewed and communicated, and when?",
+      "counterevidence": "The claim's merits, authority, standing and estate benefit were contestable; later separate litigation does not prove the AC earlier had a viable action.",
+      "open_proof": [
+        "complete AC requests and responses",
+        "bank/product file",
+        "authority/power chronology",
+        "estate-interest analysis"
+      ]
+    },
+    {
+      "id": "AC-CLM-003",
+      "label_es": "Precio de cesión del crédito / artículo 1535",
+      "label_en": "Credit-assignment price / Article 1535",
+      "source_lane": "R01 separation ground 3; DP 1041/2017/retracto",
+      "allegation": "Obstruction or failure to secure timely disclosure of the assignment deed, price, payment and costs allegedly impaired LPB's ability to assess remedies and debt economics.",
+      "r33_test": "Failure of one legal remedy does not itself establish that price information had no independent economic or evidential value.",
+      "counterevidence": "The 15 February 2018 order rejected the litigated-credit thesis; that is adverse evidence on merits and must remain visible.",
+      "open_proof": [
+        "complete deed and schedules",
+        "price allocation",
+        "payment proof",
+        "withdrawal instruction chain",
+        "appeal/finality record"
+      ]
+    },
+    {
+      "id": "AC-CLM-004",
+      "label_es": "Dación, ACTÚA, crédito y valor",
+      "label_en": "Transfer in payment, ACTÚA, debt and value",
+      "source_lane": "R01 separation ground 4; liquidation plan/ACTÚA chain",
+      "allegation": "The project side alleges insufficiently critical acceptance/use of valuation and debt premises supporting transfer in payment and liquidation outcomes.",
+      "r33_test": "Later court approval is compared with the exact premises, warnings and figures then presented; approval is not a substitute for transaction-by-transaction reconciliation.",
+      "counterevidence": "Judicial approvals and the AC's reliance on professional valuation/credit records are material lawful explanations.",
+      "open_proof": [
+        "exact ACTÚA report and perimeter",
+        "credit evolution ledger",
+        "valuation comparators",
+        "court submission/decision dependency"
+      ]
+    },
+    {
+      "id": "AC-CLM-005",
+      "label_es": "Unidad de explotación y operación de 31 fincas / €400.000",
+      "label_en": "Operating unity and 31-property / €400,000 transaction",
+      "source_lane": "R01 separation ground 5; Protocol 2150; 24-Oct-2019 non-convalidation",
+      "allegation": "Fragmenting operational installations from the wider hotel unit, executing the €400,000 transfer without prior judicial authorization and the subsequent accounting/restitution handling are alleged to have impaired value and competition.",
+      "r33_test": "R33's reliance on later approval must be reconciled with the 2019 refusal of convalidation, unitary-sale reasoning and the complete post-event unwind/re-authorization trail.",
+      "counterevidence": "The AC relied on the 26 June order's limited suspension language and later judicial approval; that is substantial contrary/legal justification evidence.",
+      "open_proof": [
+        "bank debit/credit",
+        "Registry/title unwind",
+        "tax treatment",
+        "estate ledger",
+        "later authorization chain",
+        "finca-by-finca effect"
+      ]
+    },
+    {
+      "id": "AC-CLM-006",
+      "label_es": "Acceso, seguridad y cambio de control material en 2018",
+      "label_en": "Access, security and material-control change in 2018",
+      "source_lane": "7-Jun-2018 / Community-security / DP1132 evidence",
+      "allegation": "Gil alleges that AC requests, authority or omissions enabled or failed to delimit/reverse private-party security/access measures that contributed to material control of the hotel beyond LPB's estate perimeter.",
+      "r33_test": "Test exact AC instructions, spatial authority, notice of excess, corrective capacity and any later adoption or repudiation.",
+      "counterevidence": "Security/maintenance measures may have had lawful estate-protection purposes; provisional criminal dismissal and civil/title explanations remain adverse evidence.",
+      "open_proof": [
+        "native instructions",
+        "security/locksmith contracts",
+        "keys/access logs",
+        "finca authority map",
+        "post-notice corrective actions"
+      ]
+    },
+    {
+      "id": "AC-CLM-007",
+      "label_es": "Salida financiada ONA / Clubotel",
+      "label_en": "ONA / Clubotel funded exit",
+      "source_lane": "2018-2019 ONA/Clubotel funded-exit record",
+      "allegation": "Gil alleges that information gatekeeping, debt treatment, asset fragmentation, insufficient cooperation and later opposition to Clubotel personation materially impaired an advanced alternative capable of paying/consigning creditors and preserving greater hotel value.",
+      "r33_test": "Compare R33's narrative of motive and failure with contemporaneous operator, financing, due-diligence and court/AC communication records.",
+      "counterevidence": "The route remained conditional; funding/closing certainty, procedural entitlement and counterfactual completion are not proved.",
+      "open_proof": [
+        "executed financing conditions",
+        "court-stamped exit submissions",
+        "complete AC response chain",
+        "counterfactual debt/value model"
+      ]
+    },
+    {
+      "id": "AC-CLM-008",
+      "label_es": "Honorarios, remuneración y fondos de la masa",
+      "label_en": "Fees, remuneration and estate funds",
+      "source_lane": "R01 separation ground 6; fees liability/recovery lane; 2018-2020 payment records",
+      "allegation": "The project side alleges remuneration beyond legal limits and requires reconciliation of AC self-payments, estate-funded professional payments and the €400,000 liquidity route.",
+      "r33_test": "Any assertion that payments were proper must be tested against legal period, authorization, invoice, tax, ledger and bank records.",
+      "counterevidence": "The AC contests liability and may rely on applicable remuneration orders/rules and later judicial treatment; a payment discrepancy does not prove criminality.",
+      "open_proof": [
+        "complete remuneration orders",
+        "invoices/IGIC",
+        "estate bank statements",
+        "ledger",
+        "authority for professional payments"
+      ]
+    },
+    {
+      "id": "AC-CLM-009",
+      "label_es": "Opacidad, conflicto y perímetro Cuyás / Grant Thornton",
+      "label_en": "Opacity, conflict and Cuyás / Grant Thornton perimeter",
+      "source_lane": "R01 separation ground 7; professional-perimeter records",
+      "allegation": "Failure to disclose or sufficiently clarify professional relationships and institutional capacity is alleged to have impaired transparency and objective conflict assessment.",
+      "r33_test": "R33's entity-specific denial must be kept entity-specific and compared with dated professional presentations, systems, email domain, relationship and mandate evidence.",
+      "counterevidence": "A brand, email domain, office or later commercial relationship does not establish that a specific insolvency act was performed for or supervised by another firm/entity.",
+      "open_proof": [
+        "exact legal entity/capacity per act",
+        "mandate/supervision records",
+        "conflict checks",
+        "systems/billing/workfile provenance"
+      ]
+    },
+    {
+      "id": "AC-CLM-010",
+      "label_es": "Acceso procesal, personación y oposición a terceros",
+      "label_en": "Procedural access, standing and opposition to third parties",
+      "source_lane": "Aweswell standing/exclusion; Clubotel personation; later removal appeal",
+      "allegation": "Repeated opposition to participation by Aweswell/Clubotel or other scrutiny routes is alleged to have restricted independent challenge and alternative outcomes.",
+      "r33_test": "Each opposition must be assessed on its exact legal ground; cumulative recurrence may be analysed without treating ordinary adversarial litigation as misconduct.",
+      "counterevidence": "Opposing standing/personation can be a lawful exercise of procedural rights and several courts ruled on these issues.",
+      "open_proof": [
+        "complete pleadings",
+        "orders",
+        "appeal outcomes",
+        "material effect of each access restriction"
+      ]
+    },
+    {
+      "id": "AC-CLM-011",
+      "label_es": "Interferencia profesional, aislamiento y desgaste",
+      "label_en": "Professional interference, isolation and attrition",
+      "source_lane": "PD-AC-PIA-20260922-01; PD-LAW-TRUTH-20260922-01",
+      "allegation": "Gil alleges actor-specific use of mandate displacement, professional exposure, economic leverage, intermediation/access and information asymmetry affecting successive advisers and professional/commercial support.",
+      "r33_test": "R33's general inference from lawyer succession must be decomposed lawyer-by-lawyer, preserving each formal exit reason and contrary record.",
+      "counterevidence": "Fees, non-payment, strategy disagreement, client-team conflict and continued representation provide heterogeneous alternative explanations; universal AC-caused exit is not supported.",
+      "open_proof": [
+        "professional-by-professional envelopes",
+        "complete handover/fee files",
+        "direct causation statements",
+        "Bar/insurance records where lawfully obtainable"
+      ]
+    },
+    {
+      "id": "AC-CLM-012",
+      "label_es": "Denuncia penal específica contra el AC / DP 1956",
+      "label_en": "Actor-specific criminal complaint against the AC / DP 1956",
+      "source_lane": "Control 22 / daily ref 22; DP 1956/2026",
+      "allegation": "A separate criminal complaint alleges actor-specific AC acts/omissions and seeks investigation; it is not merged with DP 1901 or the private-actor route.",
+      "r33_test": "R33 becomes later knowledge/position evidence but does not itself reopen, prove or resolve DP 1956.",
+      "counterevidence": "DP 1956 was provisionally dismissed on the controlled record; no merits guilt finding exists.",
+      "open_proof": [
+        "complete DP1956 docket",
+        "signed prosecution materials",
+        "new-evidence threshold",
+        "allocation/service history"
+      ]
+    },
+    {
+      "id": "AC-CLM-013",
+      "label_es": "Reconciliación final de masa, activos, acciones y tesorería",
+      "label_en": "Final estate, assets, actions and cash reconciliation",
+      "source_lane": "AC reports; R33 final-estate representation; liquidation/accounting controls",
+      "allegation": "The representation that no assets, actions or cash remain is treated as a testable accounting proposition requiring a complete bridge from estate assets/rights and recoveries to final disposition.",
+      "r33_test": "Freeze the exact R33 representation and reconcile it with pending/possible claims, transaction proceeds, fees, assets, third-party property and subsequent litigation.",
+      "counterevidence": "An estate can lawfully reach exhaustion after liquidation and costs; existence of historical disputes does not prove a current estate asset.",
+      "open_proof": [
+        "certified final ledger",
+        "bank closing statements",
+        "claim/action inventory",
+        "asset/title inventory",
+        "distribution/cost bridge"
+      ]
+    },
+    {
+      "id": "AC-CLM-014",
+      "label_es": "R33: caracterizaciones controvertidas e hipótesis de inversión narrativa",
+      "label_en": "R33: contested characterizations and narrative-inversion hypothesis",
+      "source_lane": "R33 opposition signed 14-Sep-2026",
+      "allegation": "Gil alleges that parts of R33 overgeneralize lawyer departures, compress chronology, rely on adverse outcomes as narrative premises and invert the relationship between prior notice, challenged conduct and later litigation.",
+      "r33_test": "No blanket falsity label. Test each exact proposition against contemporaneous evidence, date, speaker/capacity, omitted material context and strongest innocent explanation.",
+      "counterevidence": "R33 is an adversarial party filing and contains genuine adverse evidence, including Joaquín's withdrawal/apology and prior adverse rulings; those cannot be suppressed.",
+      "open_proof": [
+        "proposition-by-proposition contradiction ledger",
+        "complete source exhibits incorporated by R33",
+        "court treatment of the opposition",
+        "right-of-reply/correction record"
+      ]
+    }
+  ],
+  "canonical_routes": {
+    "actor_es": "/es/concurso-36-2012-administrador-concursal/",
+    "actor_en": "/en/insolvency-36-2012-insolvency-administrator/",
+    "r33_es": "/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/",
+    "r33_en": "/en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/",
+    "removal_es": "/es/concurso-36-2012-separacion-ac-honorarios/",
+    "removal_en": "/en/insolvency-36-2012-administrator-removal-fees/",
+    "dp1956_es": "/es/dp-1956-2026/",
+    "counsel_es": "/es/continuidad-defensa-letrados/",
+    "counsel_en": "/en/counsel-defence-continuity/"
+  }
+}
