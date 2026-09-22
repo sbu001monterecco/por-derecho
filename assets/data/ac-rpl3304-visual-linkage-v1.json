@@ -1,0 +1,45 @@
+{
+  "schema": "por-derecho.visual-linkage.v1",
+  "version": "1.0.0",
+  "control_date": "2026-09-22",
+  "visual_set_id": "PD-C36-RPL3304-VISUAL-SET-20260922",
+  "matter": {
+    "base": "Concurso 36/2012",
+    "appeal": "RPL 3304/2025",
+    "source": "C36-SPECIALIST-R33"
+  },
+  "assets": [
+    {
+      "id": "PD-RPL3304-VIS-01",
+      "path": "assets/visuals/ac-rpl3304/separacion-cronologia-documental-2012-2026.svg",
+      "role": "documentary_history",
+      "drive_master_id": "1LPiOKoe84sZNXJo8UPbDVVqoLqS6Aru6"
+    },
+    {
+      "id": "PD-RPL3304-VIS-02",
+      "path": "assets/visuals/ac-rpl3304/oposicion-pagina5-contraste-documental.svg",
+      "role": "page5_source_context_contrast",
+      "drive_master_id": "1-2rrHOd65L0Czylu01b0zU39Pl-90uVX"
+    },
+    {
+      "id": "PD-RPL3304-VIS-03",
+      "path": "assets/visuals/ac-rpl3304/separacion-ruta-procesal.svg",
+      "role": "procedural_route",
+      "drive_master_id": "1vdo4ruezSbYaEFnCF5S9X22pkQ05viML"
+    }
+  ],
+  "required_surfaces": [
+    "es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/",
+    "es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/",
+    "es/continuidad-defensa-letrados/",
+    "es/concurso-36-2012-separacion-ac-honorarios/"
+  ],
+  "boundaries": [
+    "Explanatory derivative, not primary evidence.",
+    "Page-5 apology is retained as adverse evidence and must not be isolated from signer identity and chronology.",
+    "Criminal prevention, intimidation, bullying, obstruction, motive and causation remain attributed allegation/inference unless separately proved.",
+    "Distinct-firm collaboration does not establish identity of law firms."
+  ],
+  "governance_rule": ".github/governance/CONCURSO36_R33_VISUAL_LINKAGE_RULE_22SEP2026.md",
+  "drive_master_folder_id": "1rVrqrPbXON90jQZhYAm4Akmw2rkEszd0"
+}
