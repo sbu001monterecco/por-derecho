@@ -105,7 +105,8 @@
     "drive_master_folder_id": "1rVrqrPbXON90jQZhYAm4Akmw2rkEszd0",
     "counsel_registry_crosswalk": "assets/data/ac-separation-counsel-registry-crosswalk-v1.json",
     "master_identity_registry": "assets/data/matter-identity-registry-v1.json",
-    "legal_professionals_register": "assets/data/legal-professionals-register-v1.json"
+    "legal_professionals_register": "assets/data/legal-professionals-register-v1.json",
+    "counsel_registry_drive_snapshot_id": "1O6lqqeTQHy2nLTzTFh2GdNVqTziG3fUQ"
   },
   "merge": {
     "pull_request": 1741,
