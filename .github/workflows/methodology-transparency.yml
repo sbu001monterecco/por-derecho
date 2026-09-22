@@ -36,7 +36,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Validate methodology model, pages and publication boundary
-        run: python3 scripts/validate_methodology_transparency.py
+        run: python3 scripts/validate_methodology_transparency.py --host github
       - name: Test methodology regression controls
         run: python3 -m unittest tests/test_methodology_transparency.py -v
       - name: Verify candidate render markers
