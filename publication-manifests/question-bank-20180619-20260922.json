@@ -1,0 +1,55 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "release_id": "PD-SP-QBANK-20180619-01",
+  "release_date": "2026-09-22",
+  "title": "19 June 2018 contemporaneous question bank — controlled public viewer and current verification matrix",
+  "source": {
+    "gmail_message_id": "164197a3bb0e7645",
+    "subject": "Preguntas para la testificación del 25 de Junio de 2018",
+    "date": "2018-06-19",
+    "attachment": "Cristo prep up.pdf",
+    "native_pages": 17,
+    "native_sha256": "b40e39b91728c522fcab6c645a2a0ef18cce9942ae8f0f400f38b12c0eb6ae03",
+    "publication_boundary": "Native pages 1–3 remain outside public Git because they contain litigation-preparation narrative/strategy. Source pages 4–17 are fully transcribed as the 251-question controlled public edition."
+  },
+  "public_routes": [
+    "en/contemporaneous-questions-19-june-2018/index.html",
+    "es/preguntas-contemporaneas-19-junio-2018/index.html"
+  ],
+  "controlled_files": [
+    "archive/2018_QUESTION_BANK_SOURCE_CONTROL_22SEP2026.md",
+    "evidence/judicial/dp1132-2018/2018-06-19-contemporaneous-question-bank-public-transcription.md",
+    "assets/data/2018-06-19-contemporaneous-question-bank-v2.json",
+    "assets/data/2018-question-bank-current-verification-v2.json",
+    "assets/data/question-bank-2018-public-data-v1.js",
+    "assets/data/question-bank-2018-public-pdf-v1.js",
+    "assets/question-bank-2018-viewer.css",
+    "assets/question-bank-2018-viewer.js"
+  ],
+  "source_question_counts": {
+    "PD-SP-P-0011": 76,
+    "PD-SP-P-0007": 49,
+    "PD-SP-P-0009": 50,
+    "PD-SP-P-0012": 76,
+    "total": 251
+  },
+  "current_targets": [
+    "PD-SP-P-0011",
+    "PD-SP-P-0012",
+    "PD-SP-P-0009",
+    "PD-SP-P-0007",
+    "PD-SP-P-0008",
+    "PD-SP-P-0010",
+    "PD-SP-P-0057",
+    "PD-SP-P-0004",
+    "PD-SP-P-0014",
+    "PD-SP-O-0007"
+  ],
+  "evidential_rule": "Historic questions prove contemporaneous formulation and investigative scope only. Current questions are neutral document-production and verification questions. Neither layer establishes guilt, common intent, counsel adoption, filing, judicial use or answer.",
+  "correction_controls": [
+    "QB-COR-001",
+    "QB-COR-002",
+    "QB-COR-003"
+  ],
+  "missing_evidence_control": "ME-QBANK-20180619"
+}
