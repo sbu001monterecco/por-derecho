@@ -3844,5 +3844,17 @@
     "public_transcription_pdf_sha256": "8ddaa0b9589a2413f3790754a30692410ceb2cf9085d25340957641da48ba6b5",
     "public_transcription_pdf_pages": 11,
     "public_transcription_pdf_path": "repository-embedded-bytes: assets/data/question-bank-2018-public-pdf-v1.js"
-  }
+  },
+  "related_derivatives": [
+    {
+      "date": "2018-07-18",
+      "gmail_message_id": "164addd23fc5ac57",
+      "subject": "Q&A Penal 1132/2018 - CAM, Matos, Cogolludos, Borja",
+      "attachment": "Q&A Penal 1132/2018 - CAM, Matos, Cogolludos, Borja.pdf",
+      "bytes": 136335,
+      "sha256": "da19c2f5e6e3360def483873e222b4e7368f3ee8a41168f76699ce0d854ae3e2",
+      "significance": "Later working derivative confirming continuity of the questioning architecture in the DP 1132/2018 preparation period.",
+      "boundary": "Does not prove actual judicial use, answer, counsel adoption or truth."
+    }
+  ]
 }
