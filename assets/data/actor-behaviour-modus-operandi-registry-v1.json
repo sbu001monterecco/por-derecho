@@ -1,0 +1,267 @@
+{
+  "schema": "por-derecho.actor-behaviour-modus-operandi.v1",
+  "control_id": "PD-SP-MO-20260922-01",
+  "control_date": "2026-09-22",
+  "status": "ANALYTICAL_PATTERN_CONTROL_NOT_FINDING",
+  "governance_rule": ".github/governance/ACTOR_BEHAVIOUR_LANGUAGE_MODUS_OPERANDI_ANALYSIS_RULE_22SEP2026.md",
+  "purpose": "Actor-specific operational-method registry for recurrence detection. Similarity is an analytical lead, never proof of propensity, common intent, illegality or guilt.",
+  "recurrence": {
+    "tag": "MO-CONSISTENT",
+    "minimum_shared_operational_markers": 3,
+    "requires_independent_actor_attribution": true,
+    "requires_primary_or_contemporaneous_source": true,
+    "requires_method_similarity_not_merely_common_dispute_or_outcome": true,
+    "requires_contrary_evidence_and_legitimate_alternatives": true,
+    "separates_proposal_preparation_implementation_result": true,
+    "requires_explicit_not_a_finding_label": true
+  },
+  "analytical_sequence": [
+    "ACTOR",
+    "OBJECTIVE",
+    "LANGUAGE",
+    "METHOD",
+    "LEVERAGE",
+    "AUTHORITY_INVOKED",
+    "THIRD_PARTY_TARGETED",
+    "INFORMATION_OR_DOCUMENT_USED",
+    "CONCEALMENT_OR_STAGING_IF_ANY",
+    "EXPECTED_BENEFIT",
+    "IMPLEMENTATION",
+    "EFFECT",
+    "LATER_ACCOUNT",
+    "CONTRADICTION",
+    "CORROBORATION",
+    "ALTERNATIVE_EXPLANATION"
+  ],
+  "legal_escalation_sequence": [
+    "knowledge",
+    "authority",
+    "representation",
+    "method",
+    "concealment_or_staging",
+    "third_party_recruitment",
+    "instruction",
+    "execution",
+    "benefit",
+    "documentary_aftermath",
+    "later_account",
+    "contradiction",
+    "corroboration",
+    "legal_elements"
+  ],
+  "actors": {
+    "FMMM": {
+      "person_id": "PD-SP-P-0009",
+      "canonical_name": "Francisco Mario Matos Matas",
+      "anchor": {
+        "label": "PwC working meeting",
+        "canonical_date": "2016-06-10",
+        "source_date_caveat": "The historical derivative transcript is labelled 11 June 2016; current repository control treats 10 June 2016 as canonical while preserving the historical label as a source literal.",
+        "attribution_caveat": "Speaker labels and described capacities remain source/derivative attributions subject to the existing recording controls."
+      },
+      "source_controls": [
+        "archive/FMMM_PRIETO_11JUN2016_RECORDED_MEETING_KNOWLEDGE_PACKAGE_11SEP2026.md",
+        "ops/recovery-cross-thread/COMMUNITY_DEBT_FMMM_2016_KNOWLEDGE_HANDOVER_20260911.md",
+        "archive/SUN_PARK_TRANSCRIPTION_SOURCE_HASH_MANIFEST_20AUG2026.md"
+      ],
+      "markers": [
+        {
+          "machine_id": "MO-FMMM-01",
+          "source_marker": "FMMM-01",
+          "label": "ACCESS_CONTROL_FIRST",
+          "description": "Repeated prioritisation of access to the property or complex he said he administered."
+        },
+        {
+          "machine_id": "MO-FMMM-02",
+          "source_marker": "FMMM-02",
+          "label": "STRATEGIC_GAME_FRAMING",
+          "description": "Express framing of the dispute as a strategic game, including the recorded 'partida de póker' language."
+        },
+        {
+          "machine_id": "MO-FMMM-03",
+          "source_marker": "FMMM-03",
+          "label": "SEQUENCING_CONTROL",
+          "description": "Attempts to determine the order in which access, accounting, authority and settlement issues would be addressed."
+        },
+        {
+          "machine_id": "MO-FMMM-04",
+          "source_marker": "FMMM-04",
+          "label": "HARD_NEGOTIATING_PERIMETER",
+          "description": "Express negotiating red lines and refusal to proceed outside an accepted perimeter."
+        },
+        {
+          "machine_id": "MO-FMMM-05",
+          "source_marker": "FMMM-05",
+          "label": "ROLE_CONSTITUENCY_CROSS_CHECK",
+          "description": "Where Community-administrator language coexists with representation of Molina-family interests, test mandate, conflicts, beneficiary and authority separately."
+        },
+        {
+          "machine_id": "MO-FMMM-06",
+          "source_marker": "FMMM-06",
+          "label": "FORM_SUBSTANCE_STRUCTURING",
+          "description": "Formal-structuring awareness, including de derecho/de hecho distinctions and alternative forms for economic charges; legality and implementation remain separate questions."
+        },
+        {
+          "machine_id": "MO-FMMM-07",
+          "source_marker": "FMMM-07",
+          "label": "DEBT_CREDIT_ENFORCEMENT_LEVERAGE",
+          "description": "References to Community debt, credit or mortgage-credit sale, purchasers, enforcement and creditor-control consequences."
+        },
+        {
+          "machine_id": "MO-FMMM-08",
+          "source_marker": "FMMM-08",
+          "label": "DOCUMENTARY_LEGITIMISATION",
+          "description": "Promised audit, report, governing-body decision or similar product triggers a production, custody and later-use question."
+        }
+      ]
+    },
+    "JDAM": {
+      "person_id": "PD-SP-P-0011",
+      "canonical_name": "José Daniel Acosta Matos",
+      "anchor": {
+        "label": "Reported JDAM / Miguel Barreiro conversation",
+        "underlying_conversation_date": "2018-02-26",
+        "certified_replay_capture_date": "2018-03-22",
+        "chronology_caveat": "The 22 March 2018 Logalty/CallStamp event preserves or replays the earlier conversation and must not replace the underlying 26 February date.",
+        "attribution_caveat": "The transcript uses interlocutor labels; person-specific attribution must remain tied to the surrounding authenticated record. A proposal is not proof that Miguel Barreiro accepted or implemented it."
+      },
+      "source_controls": [
+        "archive/SUN_PARK_26FEB2018_TRANSCRIPT_PROPOSITION_MATRIX_20AUG2026.md",
+        "archive/SUN_PARK_26FEB2018_CERTIFIED_REPLAY_EVIDENCE_RECORD_20AUG2026.md",
+        "archive/SUN_PARK_TRANSCRIPTION_SOURCE_HASH_MANIFEST_20AUG2026.md",
+        "assets/data/recording-evidence-intelligence-20260909.json"
+      ],
+      "markers": [
+        {
+          "machine_id": "MO-JDAM-01",
+          "source_marker": "JDAM-01",
+          "label": "PRE_STATED_ACCESS_OBJECTIVE",
+          "description": "Access is discussed before the later material-control event."
+        },
+        {
+          "machine_id": "MO-JDAM-02",
+          "source_marker": "JDAM-02",
+          "label": "FORCE_COOPERATION_DUAL_ROUTE",
+          "description": "Language contrasts force-based and cooperative routes to access."
+        },
+        {
+          "machine_id": "MO-JDAM-03",
+          "source_marker": "JDAM-03",
+          "label": "INSIDER_FACILITATION_REQUEST",
+          "description": "An on-site person is asked to facilitate access."
+        },
+        {
+          "machine_id": "MO-JDAM-04",
+          "source_marker": "JDAM-04",
+          "label": "CONCEALMENT_STAGING_PROPOSAL",
+          "description": "Proposed concealment or staging of cooperation, including the recorded te haces el loco / paripé language."
+        },
+        {
+          "machine_id": "MO-JDAM-05",
+          "source_marker": "JDAM-05",
+          "label": "ANTICIPATED_DISPLACEMENT",
+          "description": "Statements predict incumbent displacement and entry by the speaker's side."
+        },
+        {
+          "machine_id": "MO-JDAM-06",
+          "source_marker": "JDAM-06",
+          "label": "AUTHORITY_OWNERSHIP_ASSERTION",
+          "description": "Ownership or entitlement assertions must be tested against title and authority existing on that date."
+        },
+        {
+          "machine_id": "MO-JDAM-07",
+          "source_marker": "JDAM-07",
+          "label": "COMMUNITY_LEGITIMATION",
+          "description": "An asserted agreement with the Community triggers production questions as to organ, date, vote, mandate, scope and document."
+        },
+        {
+          "machine_id": "MO-JDAM-08",
+          "source_marker": "JDAM-08",
+          "label": "SECURITY_EXCLUSION_ARCHITECTURE",
+          "description": "Anticipated security and exclusion are compared with later guard, locksmith, key, chain, access and instruction evidence."
+        },
+        {
+          "machine_id": "MO-JDAM-09",
+          "source_marker": "JDAM-09",
+          "label": "PREPARATION_FOR_WORKS_ECONOMIC_USE",
+          "description": "Measurements, photographs, refurbishment, operation, maintenance and surveillance proposals are tested against later implementation evidence."
+        },
+        {
+          "machine_id": "MO-JDAM-10",
+          "source_marker": "JDAM-10",
+          "label": "FUTURE_BENEFIT_LEVERAGE",
+          "description": "Where cooperation is linked to future work or opportunity, record the proposed mechanism without assuming acceptance or payment."
+        }
+      ]
+    },
+    "LPAM": {
+      "person_id": "PD-SP-P-0012",
+      "canonical_name": "Laura Patricia Acosta Matos",
+      "anchor": {
+        "label": "elEconomista / Javier Romera response-channel episode",
+        "period_start": "2025-01-17",
+        "period_end": "2025-01-20",
+        "provenance_caveat": "Current evidence supports response-channel analysis. Personal location, framing or physical transmission by LPAM of Sentencia 163/2023 remains unresolved unless the native incoming communication closes that gap.",
+        "newsroom_safeguard": "No adverse inference is made against Javier Romera or elEconomista merely because they sought documents, delayed publication or declined to publish."
+      },
+      "source_controls": [
+        "archive/CALIFICACION_ELECONOMISTA_COLLATERAL_USE_PROVENANCE_16AUG2026.md",
+        "archive/ELECONOMISTA_ROMERA_SOURCE_REFRESH_09SEP2026.md",
+        "archive/ELECONOMISTA_ROMERA_MEDIA_TRACEABILITY_15AUG2026.md",
+        "ops/gitlab-pages-recovery/ELECONOMISTA_REVIEWED_SUCCESSORS_20260909.json"
+      ],
+      "markers": [
+        {
+          "machine_id": "MO-LPAM-01",
+          "source_marker": "LPAM-01",
+          "label": "INFORMATION_GATE_INTERVENTION",
+          "description": "Record evidence that LPAM/CAM entered the response process while proposed publication was in advanced verification."
+        },
+        {
+          "machine_id": "MO-LPAM-02",
+          "source_marker": "LPAM-02",
+          "label": "DELAY_LINKED_TO_DOCUMENTARY_REBUTTAL",
+          "description": "Track the sequence in which publication was asked to wait while judicial material was promised."
+        },
+        {
+          "machine_id": "MO-LPAM-03",
+          "source_marker": "LPAM-03",
+          "label": "AUTHORITATIVE_DOCUMENT_COUNTER_NARRATIVE",
+          "description": "Test whether judicial, administrative or other authoritative documents were deployed or procured as rebuttal instruments and whether their scope was described accurately."
+        },
+        {
+          "machine_id": "MO-LPAM-04",
+          "source_marker": "LPAM-04",
+          "label": "SCOPE_COMPRESSION_TEST",
+          "description": "Compare what the document actually decides with the broader proposition it is used to answer; do not attribute framing personally without transmission or instruction evidence."
+        },
+        {
+          "machine_id": "MO-LPAM-05",
+          "source_marker": "LPAM-05",
+          "label": "CONTRADICTION_TEST",
+          "description": "Preserve incompatible contemporaneous positions as contradictions requiring authentication and resolution, not automatically as lies."
+        },
+        {
+          "machine_id": "MO-LPAM-06",
+          "source_marker": "LPAM-06",
+          "label": "EFFECT_ON_DECISION_ENVIRONMENT",
+          "description": "Record temporal and causal proximity where promised material is followed by a documented third-party decision change, while keeping intention separate."
+        },
+        {
+          "machine_id": "MO-LPAM-07",
+          "source_marker": "LPAM-07",
+          "label": "PROVENANCE_GAP",
+          "description": "Do not state as fact that LPAM personally located, framed or transmitted Sentencia 163/2023 until native evidence closes the provenance gap."
+        },
+        {
+          "machine_id": "MO-LPAM-08",
+          "source_marker": "LPAM-08",
+          "label": "NEWSROOM_INDEPENDENCE_SAFEGUARD",
+          "description": "No adverse inference against Romera or elEconomista from ordinary verification, delay or publication decisions alone."
+        }
+      ]
+    }
+  },
+  "preferred_conclusion_template": "This episode exhibits operational features consistent with the actor's previously documented behavioural pattern, specifically [features]. The similarity is analytically relevant but does not prove common intent, illegality or that the earlier method was implemented here. Those propositions require the identified actor-specific evidential bridges.",
+  "prohibited_shortcut": "Do not replace the evidential analysis with a character-based conclusion such as deceitful, manipulative or thug."
+}

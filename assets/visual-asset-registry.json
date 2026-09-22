@@ -409,9 +409,9 @@
         "user_confirmation_by": "Gil Marer",
         "user_confirmation_date": "2026-09-21",
         "facial_recognition_used": false,
-        "sha256": "0a2cb255b3ecdbd0683b92f859d8f96e730726ac8742c1812a24a3fca8224576",
+      "sha256": "c5043df95ed4cc3ebeae3c60c6679f5435e4ca0080e4cdaf3e4dd6039e2b6a3b",
         "dimensions": "640x246",
-        "bytes": 19438,
+      "bytes": 7578,
         "format": "jpg",
         "transformation": "Downscaled display derivative of the source photograph; no identity inference."
       },
@@ -461,6 +461,36 @@
       "storage_mode": "repository-byte-locked",
       "variant_of": "document.fmmm-shaila-antonio-family-source-20260921",
       "publication_boundary": "Display derivative only. The preserved source photograph controls evidential provenance. The enhanced image does not prove identity independently, Community authority, corporate mandate, knowledge, coordination, wrongdoing, causation or liability."
+    },
+    "document.fmmm-shaila-antonio-family-editorial-display-20260922": {
+      "subject_type": "document",
+      "canonical_name": "FMMM–Shaila–Antonio family photograph · teal/cream editorial display derivative 22 September 2026",
+      "short_label": "FMMM · Shaila · Antonio editorial display",
+      "path": "assets/actors/fmmm-shaila-antonio-family-editorial-display-20260922.jpg",
+      "git_blob_sha": "9a589e91c3c6fabccb5e6b214c713e6840d16dd3",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Display identity follows the source-attributed and user-confirmed left-to-right mapping in document.fmmm-shaila-antonio-family-source-20260921: Francisco Mario Matos Matas, Shaila María Cogolludo Ramos and Antonio Cogolludo Rojas. Patricia Domínguez supplied the identification and Gil Marer expressly confirmed it. No facial recognition is used.",
+      "approved_contexts": [
+        "bilingual five-private-actor homepage visual architecture",
+        "FMMM · Shaila · Antonio bilingual relationship dossier",
+        "source-derived Shaila and Antonio individual-profile crops",
+        "source-attributed family / Community / corporate continuity explanation"
+      ],
+      "alt_en": "Editorial display derivative of the source-identified family photograph: Francisco Mario Matos Matas, Shaila María Cogolludo Ramos and Antonio Cogolludo Rojas from left to right",
+      "alt_es": "Derivado editorial de visualización de la fotografía familiar identificada por fuente: Francisco Mario Matos Matas, Shaila María Cogolludo Ramos y Antonio Cogolludo Rojas de izquierda a derecha",
+      "source_provenance": {
+        "source_asset_id": "document.fmmm-shaila-antonio-family-source-20260921",
+        "source_class": "AI-assisted editorial display derivative",
+        "user_requested_enhancement_date": "2026-09-22",
+        "facial_recognition_used": false,
+        "dimensions": "2172x724",
+        "format": "jpeg",
+        "transformation": "AI-assisted display restoration and replacement of the original room/artwork background with a restrained teal/cream editorial background. The derivative must not be used to infer identity or new facial detail."
+      },
+      "sha256": "0a0d3f135daaeb23ccae1a4dc55a2197515b41df04812ae72f180906f9d640b9",
+      "storage_mode": "repository-byte-locked",
+      "variant_of": "document.fmmm-shaila-antonio-family-source-20260921",
+      "publication_boundary": "Display derivative only. The preserved source photograph controls evidential provenance. Every reuse must retain the Patricia Domínguez / Gil Marer identification provenance, state that no facial recognition was used, and state that the image establishes identity/relationship context only—not authority, coordination, knowledge, intent, causation, wrongdoing or liability."
     }
   },
   "rejected_or_prohibited_mappings": [

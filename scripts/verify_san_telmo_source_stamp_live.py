@@ -25,6 +25,8 @@ TIMEOUT_SECONDS = 25
 SOURCE_ASSET = "/assets/san-telmo-source-stamp-20260819.js"
 LOADER_ASSET = "/assets/ricpe-identity-correction-20260815.js"
 SITE_ASSET = "/assets/site.js"
+MATKATOR_WRAPPER_ASSET = "/assets/site-pre-matkator-8584-20260903.js"
+TREASURY_WRAPPER_ASSET = "/assets/site-pre-treasury-154-hq-20260828.js"
 SITE_WRAPPER_ASSET = "/assets/site-pre-intervencion-highlight-20260820.js"
 PRE_INTERVENCION_ASSET = "/assets/site-pre-intervencion-highlight-before-eg95-20260823.js"
 SITE_BASE_ASSET = "/assets/site-base-20260819.js"
@@ -86,7 +88,9 @@ LOADER_MARKERS = [
     "san-telmo-source-stamp-20260819.js?v=20260819a",
 ]
 
-SITE_MARKERS = ["site-pre-intervencion-highlight-20260820.js"]
+SITE_MARKERS = ["site-pre-matkator-8584-20260903.js"]
+MATKATOR_WRAPPER_MARKERS = ["site-pre-treasury-154-hq-20260828.js"]
+TREASURY_WRAPPER_MARKERS = ["site-pre-intervencion-highlight-20260820.js"]
 SITE_WRAPPER_MARKERS = ["site-pre-intervencion-highlight-before-eg95-20260823.js"]
 PRE_INTERVENCION_MARKERS = ["site-base-20260819.js"]
 SITE_BASE_MARKERS = ["ricpe-identity-correction-20260815.js"]
@@ -202,6 +206,16 @@ def verify_once() -> dict[str, object]:
         raise AssertionError(f"site loader: HTTP {site.status}")
     assert_markers("site loader", site.text, SITE_MARKERS)
 
+    matkator_wrapper = request(BASE + MATKATOR_WRAPPER_ASSET, cache_bust=True)
+    if matkator_wrapper.status != 200:
+        raise AssertionError(f"matkator wrapper: HTTP {matkator_wrapper.status}")
+    assert_markers("matkator wrapper", matkator_wrapper.text, MATKATOR_WRAPPER_MARKERS)
+
+    treasury_wrapper = request(BASE + TREASURY_WRAPPER_ASSET, cache_bust=True)
+    if treasury_wrapper.status != 200:
+        raise AssertionError(f"treasury wrapper: HTTP {treasury_wrapper.status}")
+    assert_markers("treasury wrapper", treasury_wrapper.text, TREASURY_WRAPPER_MARKERS)
+
     site_wrapper = request(BASE + SITE_WRAPPER_ASSET, cache_bust=True)
     if site_wrapper.status != 200:
         raise AssertionError(f"site wrapper: HTTP {site_wrapper.status}")
@@ -237,6 +251,18 @@ def verify_once() -> dict[str, object]:
             "content_type": site.content_type,
             "bytes": len(site.body),
             "markers": SITE_MARKERS,
+        },
+        "matkator_wrapper": {
+            "status": matkator_wrapper.status,
+            "content_type": matkator_wrapper.content_type,
+            "bytes": len(matkator_wrapper.body),
+            "markers": MATKATOR_WRAPPER_MARKERS,
+        },
+        "treasury_wrapper": {
+            "status": treasury_wrapper.status,
+            "content_type": treasury_wrapper.content_type,
+            "bytes": len(treasury_wrapper.body),
+            "markers": TREASURY_WRAPPER_MARKERS,
         },
         "site_wrapper": {
             "status": site_wrapper.status,

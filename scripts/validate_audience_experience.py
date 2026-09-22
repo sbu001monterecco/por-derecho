@@ -164,7 +164,8 @@ def validate_home(errors: list[str], lang: str) -> None:
         'data-key-direct-route-presentation="front-page"',
         'data-pd-five-ac-css="20260824b"',
         'site.js?v=20260824e',
-        '../assets/actors/francisco-mario-matos-matas.jpg',
+        '../assets/actors/fmmm-shaila-antonio-family-editorial-display-20260922.jpg',
+        '../assets/acosta-matos-family-hotel-plans.jpg',
         '../assets/actors/francisco-de-borja-rodriguez-batllori.jpg',
         '../assets/actors/alberto-lopez-villarrubia.jpg',
         'Francisco Mario Matos Matas',
@@ -183,6 +184,17 @@ def validate_home(errors: list[str], lang: str) -> None:
         count = text.count(marker)
         if count != expected:
             fail(errors, f"{lang}/index.html: expected {expected} {marker} markers, got {count}")
+    for actor_id in ("fmmm", "smcr", "acr", "jdam", "lpam"):
+        if text.count(f'data-private-actor-id="{actor_id}"') != 1:
+            fail(errors, f"{lang}/index.html: expected one independently labelled {actor_id} actor record")
+    visual_markers = (
+        ("Patricia Domínguez", "Gil Marer", "no procede de reconocimiento facial", "La fotografía aporta únicamente contexto de identidad y relación")
+        if lang == "es"
+        else ("Patricia Domínguez", "Gil Marer", "not derived from facial recognition", "The photograph establishes identity/relationship context only")
+    )
+    for marker in visual_markers:
+        if marker not in text:
+            fail(errors, f"{lang}/index.html: missing controlled visual provenance/boundary marker {marker}")
 
     preservation_links = (
         (
@@ -306,6 +318,11 @@ def validate_runtime_contract(errors: list[str]) -> None:
         "pd:five-actor-visual-ready",
         "francisco-de-borja-rodriguez-batllori.jpg",
         "alberto-lopez-villarrubia.jpg",
+        "fmmm-shaila-antonio-family-editorial-display-20260922.jpg",
+        "acosta-matos-family-hotel-plans.jpg",
+        "Patricia Domínguez",
+        "not derived from facial recognition",
+        "no procede de reconocimiento facial",
         "NO ROW DECLARES GUILT",
         "NINGUNA FILA DECLARA CULPABILIDAD",
     ):

@@ -76,7 +76,10 @@ try {
           institutionCards: detailedNode?.querySelectorAll('[data-institution-card]').length || 0,
           linkageRows: detailedNode?.querySelectorAll('[data-linkage-row]').length || 0,
           institutionPortraitsLoaded: institutionPortraits.length === 2 && institutionPortraits.every(image => image.complete && image.naturalWidth > 0),
-          privatePortraitLoaded: Boolean(detailedNode?.querySelector('.pd-five-ac__portrait')?.complete && detailedNode?.querySelector('.pd-five-ac__portrait')?.naturalWidth > 0),
+          privateVisualsLoaded: (() => {
+            const visuals = [...(detailedNode?.querySelectorAll('.pd-five-ac__cluster-figure img') || [])];
+            return visuals.length === 2 && visuals.every(image => image.complete && image.naturalWidth > 0);
+          })(),
           detailedFiveActorTextPresent: ['Francisco Mario Matos Matas','Antonio Cogolludo Rojas','Shaila María Cogolludo Ramos','José Daniel Acosta Matos','Laura Patricia Acosta Matos'].every(name => detailedText.includes(name)),
           detailedInstitutionalTextPresent: detailedText.includes('Francisco de Borja Rodríguez-Batllori Laffitte') && detailedText.includes('Alberto López Villarrubia'),
           detailedActsOmissionsPresent: (detailedText.includes('comisiones') && detailedText.includes('omisiones')) || (detailedText.includes('commissions') && detailedText.includes('omissions')),
@@ -120,7 +123,7 @@ try {
       if (metrics.institutionCards !== 2) failures.push(`${prefix}: expected Administrator and Judge cards, got ${metrics.institutionCards}`);
       if (metrics.linkageRows !== 5) failures.push(`${prefix}: expected 5 actor-specific linkage rows, got ${metrics.linkageRows}`);
       if (!metrics.institutionPortraitsLoaded) failures.push(`${prefix}: Administrator or Judge portrait did not load`);
-      if (!metrics.privatePortraitLoaded) failures.push(`${prefix}: canonical FMMM portrait did not load`);
+      if (!metrics.privateVisualsLoaded) failures.push(`${prefix}: controlled trio or Acosta Matos visual did not load`);
       if (!metrics.detailedFiveActorTextPresent) failures.push(`${prefix}: detailed visual does not name all five private actors`);
       if (!metrics.detailedInstitutionalTextPresent) failures.push(`${prefix}: detailed visual omits the Administrator or Judge identity`);
       if (!metrics.detailedActsOmissionsPresent) failures.push(`${prefix}: detailed visual omits commissions/omissions linkage`);

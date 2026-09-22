@@ -120,6 +120,8 @@
       "assets/five-actor-accountability-20260824.css",
       "assets/homepage-actor-family-pwc-note-20260819.js",
       "assets/actors/francisco-mario-matos-matas.jpg",
+      "assets/actors/fmmm-shaila-antonio-family-source-20260921.jpg",
+      "assets/actors/fmmm-shaila-antonio-family-editorial-display-20260922.jpg",
       "assets/actors/francisco-de-borja-rodriguez-batllori.jpg",
       "assets/actors/alberto-lopez-villarrubia.jpg",
       "assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png",
@@ -128,6 +130,7 @@
       "assets/site.js",
       "ops/FIVE_ACTOR_PRESERVATION_AND_READER_JOURNEY_BACKLOG.md",
       "publication-manifests/five-actor-accountability-preservation-20260824.json",
+      "publication-manifests/five-private-actor-visual-integration-20260922.json",
       "docs/deletion-audits/2026-08-24-five-actor-visibility-preservation-thread.md",
       "scripts/render_ac_community_de_facto_administration.mjs",
       "scripts/render_audience_experience.mjs",
@@ -140,11 +143,20 @@
       "linkage_rows": 5,
       "stable_actor_ids": [
         "fmmm",
-        "acr",
         "smcr",
+        "acr",
         "jdam",
         "lpam"
       ],
+      "visual_architecture": "one continuous source-derived photograph across the separate FMMM, Shaila and Antonio records; controlled source imagery across the separate JDAM and LPAM records",
+      "trio_visual_asset": "assets/actors/fmmm-shaila-antonio-family-editorial-display-20260922.jpg",
+      "acosta_visual_asset": "assets/acosta-matos-family-hotel-plans.jpg",
+      "required_visual_provenance": [
+        "Patricia Domínguez",
+        "Gil Marer",
+        "not derived from facial recognition"
+      ],
+      "required_visual_boundary": "The photograph establishes identity/relationship context only. It does not establish authority, coordination, knowledge, intent or liability.",
       "reciprocal_dossier_links": 7,
       "outside_closed_progressive_disclosure": true,
       "static_first": true
@@ -164,6 +176,8 @@
     "The Insolvency Administrator and Magistrate-Judge are separate institutional roles.",
     "Laura Patricia Acosta Matos is the only permitted public narrative identity; source literals must remain expressly marked.",
     "No fabricated portrait may replace a missing verified source asset.",
+    "The FMMM–Shaila–Antonio editorial display derivative must remain linked to the preserved source photograph and may not be described as facial recognition or as independent identity evidence.",
+    "A shared photograph, family relationship, corporate relationship, office or attendance does not transfer conduct, knowledge, authority, intent, causation, culpability or responsibility between actors.",
     "Spanish and English routes must remain materially equivalent.",
     "Contrary evidence, corrections, right of reply and unresolved proof remain visible.",
     "Lawyer emails, advice, drafts, mark-ups and strategy are internal work product; a later filed version must be separately verified before publication.",
