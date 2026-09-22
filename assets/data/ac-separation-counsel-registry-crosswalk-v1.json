@@ -1,0 +1,487 @@
+{
+  "schema": "por-derecho.counsel-registry-crosswalk.v1",
+  "version": "1.0.0",
+  "control_id": "PD-C36-COUNSEL-CROSSWALK-20260922",
+  "control_date": "2026-09-22",
+  "matter": "Concurso 36/2012 / separation-removal of the Administrador Concursal / RPL 3304/2025",
+  "master_registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "visual_set_id": "PD-C36-RPL3304-VISUAL-SET-20260922",
+  "rules": [
+    "Person IDs, firm/legal-person IDs and professional-practice structure IDs remain separate objects.",
+    "A lawyer-to-firm or lawyer-to-practice link is date- and source-specific; it never transfers conduct, knowledge, intent or liability.",
+    "Formal withdrawal reasons, contrary/adverse evidence and the client's allegations are all preserved; no universal AC-caused-exit theory is registered as fact.",
+    "Private email addresses, message IDs and native mailbox locators are not published here.",
+    "Dates identify documented matter events or source-family anchors; they do not by themselves establish causation."
+  ],
+  "firms_and_practices": [
+    {
+      "id": "PD-SP-S-0012",
+      "name": "Juan Tomás Parrilla — independent professional practice",
+      "kind": "PRACTICE_STRUCTURE",
+      "relationship_scope": "Independent professional practice/search structure; not a separately inferred legal person."
+    },
+    {
+      "id": "PD-SP-O-0052",
+      "name": "Alas Legal Advisors, S.L.",
+      "kind": "ORGANISATION",
+      "relationship_scope": "Historical Alas team in the 2019-2020 source family."
+    },
+    {
+      "id": "PD-SP-O-0053",
+      "name": "Kepler–Karst",
+      "kind": "ORGANISATION",
+      "relationship_scope": "Later professional continuity for parts of the former Alas team; later affiliation does not transfer historical acts."
+    },
+    {
+      "id": "PD-SP-O-0054",
+      "name": "Bufete Ruiz de Infante",
+      "kind": "ORGANISATION",
+      "relationship_scope": "Distinct Joaquín Ruiz de Infante professional perimeter; collaboration with Alas is documented but firms are not merged."
+    },
+    {
+      "id": "PD-SP-O-0051",
+      "name": "SLJ Abogados",
+      "kind": "ORGANISATION",
+      "relationship_scope": "2020 incoming-counsel / Concurso-related engagement."
+    },
+    {
+      "id": "PD-SP-O-0055",
+      "name": "López Castelo Abogados",
+      "kind": "ORGANISATION",
+      "relationship_scope": "LPB counsel continuity after the 2020 transition."
+    },
+    {
+      "id": "PD-SP-O-0049",
+      "name": "Cuatrecasas, Gonçalves Pereira, S.L.P.",
+      "kind": "ORGANISATION",
+      "relationship_scope": "2018-2020 project-side finance/insolvency representation and later venia/transfer."
+    },
+    {
+      "id": "PD-SP-O-0050",
+      "name": "J&A Garrigues, S.L.P.",
+      "kind": "ORGANISATION",
+      "relationship_scope": "Historical 2012 restructuring/insolvency work; no AC-caused withdrawal located in the reviewed evidence."
+    },
+    {
+      "id": "PD-SP-O-0056",
+      "name": "Pimentel Servicios Legales",
+      "kind": "ORGANISATION",
+      "relationship_scope": "Cristo Suárez Pimentel professional perimeter across related Community/criminal/Concurso work."
+    },
+    {
+      "id": "PD-SP-O-0061",
+      "name": "Sixto Abogados",
+      "kind": "ORGANISATION",
+      "relationship_scope": "Current Spanish counsel team that advanced and filed the separation/removal workstream and transmitted R33."
+    }
+  ],
+  "counsel": [
+    {
+      "ref": "A1",
+      "person_id": "PD-SP-P-0041",
+      "name": "Juan Tomás Parrilla Suárez",
+      "practice_ids": [
+        "PD-SP-S-0012"
+      ],
+      "key_dates": [
+        {
+          "date": "2019-01-17/18",
+          "event": "Client raised seeking removal; Parrilla replied that he believed the judge would not separate the AC.",
+          "status": "CONTEMPORANEOUS_CORRESPONDENCE"
+        },
+        {
+          "date": "2020-05-24/25",
+          "event": "Incoming-counsel handover recorded the client's account that Parrilla had declined to seek separation and an AC disloyal-administration claim.",
+          "status": "CLIENT_HANDOVER_ACCOUNT_NOT_PARRILLA_ADMISSION"
+        },
+        {
+          "date": "2020-05-28/06-01",
+          "event": "Transition/intermediation sequence with incoming counsel and AC contact recorded.",
+          "status": "DOCUMENTED_SEQUENCE_CAUSATION_NOT_ADJUDICATED"
+        }
+      ]
+    },
+    {
+      "ref": "A2a",
+      "person_id": "PD-SP-P-0042",
+      "name": "Armando Betancor Álamo",
+      "firm_ids": [
+        "PD-SP-O-0052",
+        "PD-SP-O-0053"
+      ],
+      "key_dates": [
+        {
+          "date": "2019-01-04",
+          "event": "Draft court pleading preserved responsibility/separation actions under former Insolvency Act arts. 36 and 37.",
+          "status": "DOCUMENTED_DRAFT"
+        },
+        {
+          "date": "2020-09-21",
+          "event": "Separate withdrawal communication from Armando/Alas perimeter.",
+          "status": "DOCUMENTED_WITHDRAWAL"
+        }
+      ]
+    },
+    {
+      "ref": "A2b",
+      "person_id": "PD-SP-P-0043",
+      "name": "José María Betancor Álamo",
+      "firm_ids": [
+        "PD-SP-O-0052"
+      ],
+      "key_dates": [
+        {
+          "date": "2019-06-05/06",
+          "event": "Drafting/review chain for the classification defence source family.",
+          "status": "DOCUMENTED_WORK_PRODUCT_PROVENANCE"
+        },
+        {
+          "date": "2020-02-26/27",
+          "event": "Urgent team coordination and transmission of final opposition material.",
+          "status": "DOCUMENTED_TEAM_CHAIN"
+        }
+      ]
+    },
+    {
+      "ref": "A2c",
+      "person_id": "PD-SP-P-0044",
+      "name": "Davinia Sánchez de la Cruz",
+      "firm_ids": [
+        "PD-SP-O-0052"
+      ],
+      "key_dates": [
+        {
+          "date": "2020-02-26/27",
+          "event": "Included in urgent Alas working-team chain and team communications.",
+          "status": "DOCUMENTED_TEAM_CHAIN"
+        },
+        {
+          "date": "2020-09-21",
+          "event": "Team-level withdrawal sequence preserved; individual causal finding not made.",
+          "status": "DOCUMENTED_TEAM_SEQUENCE_CAUSATION_OPEN"
+        }
+      ]
+    },
+    {
+      "ref": "A2d",
+      "person_id": "PD-SP-P-0074",
+      "name": "Luis A. Barber Marrero",
+      "firm_ids": [
+        "PD-SP-O-0052",
+        "PD-SP-O-0053"
+      ],
+      "key_dates": [
+        {
+          "date": "2019-2020",
+          "event": "Repeatedly present in substantive Alas working-team chains.",
+          "status": "ROLE_REVIEW_EXACT_RETAINER_OPEN"
+        }
+      ]
+    },
+    {
+      "ref": "A3",
+      "person_id": "PD-SP-P-0045",
+      "name": "Joaquín Ruiz de Infante Abella",
+      "firm_ids": [
+        "PD-SP-O-0054"
+      ],
+      "key_dates": [
+        {
+          "date": "2019-06-10",
+          "event": "Final located classification opposition signed digitally by Joaquín; drafting-team provenance kept separate.",
+          "status": "DOCUMENTED_SIGNATURE"
+        },
+        {
+          "date": "2020-02-19",
+          "event": "Court providencia granted the prior Article 215.2 procedural licence referenced in the counsel-continuity record.",
+          "status": "DOCUMENTED_PROCEDURAL_GATE_NOT_MERITS_FINDING"
+        },
+        {
+          "date": "2020-09-21",
+          "event": "Filed resignation identified Joaquín and included the apology later quoted in R33; Armando was copied on the contemporaneous resignation email.",
+          "status": "DOCUMENTED_ADVERSE_AND_CONTEXT_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "ref": "A4",
+      "person_id": "PD-SP-P-0046",
+      "name": "Daniel Jiménez García",
+      "firm_ids": [
+        "PD-SP-O-0051"
+      ],
+      "key_dates": [
+        {
+          "date": "2020-05-22",
+          "event": "Engagement accepted for the 2020 handover period.",
+          "status": "DOCUMENTED_ENGAGEMENT"
+        },
+        {
+          "date": "2020-05-25",
+          "event": "Discussed strengthening the planned 'escrito de remoción del cargo' with a Mercantile Law expert report.",
+          "status": "DOCUMENTED_REMOVAL_WORKSTREAM"
+        },
+        {
+          "date": "2020-06-23",
+          "event": "Formal resignation; stated strategy/client-direction/fee reasons remain part of the record.",
+          "status": "DOCUMENTED_WITHDRAWAL_REASON"
+        }
+      ]
+    },
+    {
+      "ref": "A4b",
+      "person_id": "PD-SP-P-0075",
+      "name": "Almudena Santafé Blecua",
+      "firm_ids": [
+        "PD-SP-O-0051"
+      ],
+      "key_dates": [
+        {
+          "date": "2020-05-26",
+          "event": "Direct SLJ handover/work correspondence identified her as part of Daniel Jiménez's team.",
+          "status": "DOCUMENTED_TEAM_ROLE"
+        }
+      ]
+    },
+    {
+      "ref": "A5",
+      "person_id": "PD-SP-P-0047",
+      "name": "Luis Miguel López Gómez",
+      "firm_ids": [
+        "PD-SP-O-0055"
+      ],
+      "key_dates": [
+        {
+          "date": "2020-06",
+          "event": "Assumed/continued LPB counsel role during the transition from Parrilla.",
+          "status": "DOCUMENTED_CONTINUITY"
+        },
+        {
+          "date": "2021-02",
+          "event": "Withdrawal communication in counsel-continuity record.",
+          "status": "DOCUMENTED_WITHDRAWAL"
+        },
+        {
+          "date": "2025-05-13",
+          "event": "Later irrevocable withdrawal communication in Concurso 36/2012.",
+          "status": "DOCUMENTED_WITHDRAWAL"
+        }
+      ]
+    },
+    {
+      "ref": "A6a",
+      "person_id": "PD-SP-P-0048",
+      "name": "Rosa Gual Tomás",
+      "firm_ids": [
+        "PD-SP-O-0049"
+      ],
+      "key_dates": [
+        {
+          "date": "2018-2020",
+          "event": "Cuatrecasas finance/insolvency representation and coordination source family.",
+          "status": "DOCUMENTED_MANDATE_SCOPE"
+        },
+        {
+          "date": "2019-01-17/18",
+          "event": "Included in separation/removal discussion with Juan Tomás Parrilla.",
+          "status": "DOCUMENTED_CORRESPONDENCE"
+        },
+        {
+          "date": "2020-05-26",
+          "event": "Cuatrecasas venia/transfer sequence; unpaid-fee reason preserved.",
+          "status": "DOCUMENTED_TRANSFER_REASON"
+        }
+      ]
+    },
+    {
+      "ref": "A6b",
+      "person_id": "PD-SP-P-0049",
+      "name": "Iñigo de Luisa Maíz",
+      "firm_ids": [
+        "PD-SP-O-0049"
+      ],
+      "key_dates": [
+        {
+          "date": "2018-2020",
+          "event": "Cuatrecasas project-side work in the controlled professional register.",
+          "status": "CONFIRMED_SUBSTANTIVE"
+        }
+      ]
+    },
+    {
+      "ref": "A6c",
+      "person_id": "PD-SP-P-0050",
+      "name": "Adriana González García",
+      "firm_ids": [
+        "PD-SP-O-0049"
+      ],
+      "key_dates": [
+        {
+          "date": "2018-2019",
+          "event": "Cuatrecasas matter work in the controlled professional register.",
+          "status": "CONFIRMED_SUBSTANTIVE"
+        }
+      ]
+    },
+    {
+      "ref": "A6d",
+      "person_id": "PD-SP-P-0051",
+      "name": "Pedro Campaña Ávila",
+      "firm_ids": [
+        "PD-SP-O-0049"
+      ],
+      "key_dates": [
+        {
+          "date": "2020-05-27",
+          "event": "Cuatrecasas handover/continuity correspondence with incoming counsel.",
+          "status": "DOCUMENTED_HANDOVER"
+        }
+      ]
+    },
+    {
+      "ref": "A7a",
+      "person_id": "PD-SP-P-0052",
+      "name": "Miguel Méndez Itarte",
+      "firm_ids": [
+        "PD-SP-O-0050"
+      ],
+      "key_dates": [
+        {
+          "date": "2012",
+          "event": "Garrigues restructuring/insolvency work around the Bankia execution and urgent LPB insolvency filing.",
+          "status": "DOCUMENTED_HISTORICAL_ROLE_NO_AC_CAUSATION_LOCATED"
+        }
+      ]
+    },
+    {
+      "ref": "A7b",
+      "person_id": "PD-SP-P-0053",
+      "name": "José María Martínez de Artola",
+      "firm_ids": [
+        "PD-SP-O-0050"
+      ],
+      "key_dates": [
+        {
+          "date": "2012",
+          "event": "Garrigues restructuring/financing work.",
+          "status": "DOCUMENTED_HISTORICAL_ROLE_NO_AC_CAUSATION_LOCATED"
+        }
+      ]
+    },
+    {
+      "ref": "A7c",
+      "person_id": "PD-SP-P-0068",
+      "name": "Víctor de la Torre García",
+      "firm_ids": [
+        "PD-SP-O-0050"
+      ],
+      "key_dates": [
+        {
+          "date": "2012",
+          "event": "Garrigues insolvency/restructuring team role recorded.",
+          "status": "CONFIRMED_SUBSTANTIVE"
+        }
+      ]
+    },
+    {
+      "ref": "A7d",
+      "person_id": "PD-SP-P-0054",
+      "name": "Zulay Carmen Rodríguez Cabrera",
+      "firm_ids": [
+        "PD-SP-O-0050"
+      ],
+      "key_dates": [
+        {
+          "date": "2012",
+          "event": "Garrigues litigation/insolvency team role recorded.",
+          "status": "CONFIRMED_SUBSTANTIVE"
+        }
+      ]
+    },
+    {
+      "ref": "A8",
+      "person_id": "PD-SP-P-0055",
+      "name": "Cristo Ayose Suárez Pimentel",
+      "firm_ids": [
+        "PD-SP-O-0056"
+      ],
+      "key_dates": [
+        {
+          "date": "2018-09-09",
+          "event": "Urgent task list included 'Dejación de funciones — remoción por causa justa'.",
+          "status": "EARLIEST_EXPLICIT_REMOVAL_TASK_LOCATED"
+        },
+        {
+          "date": "2018-09-17",
+          "event": "Identified an insolvency incident as the reasonable route for the judge to separate the AC.",
+          "status": "DOCUMENTED_LEGAL_ROUTE"
+        },
+        {
+          "date": "2021-01-17",
+          "event": "Direct instruction to present separation of the AC in the insolvency proceeding.",
+          "status": "DOCUMENTED_CLIENT_INSTRUCTION"
+        }
+      ]
+    },
+    {
+      "ref": "A9",
+      "person_id": "PD-SP-P-0060",
+      "name": "Javier Sixto-Seijas",
+      "firm_ids": [
+        "PD-SP-O-0061"
+      ],
+      "key_dates": [
+        {
+          "date": "2023-09",
+          "event": "Sixto Abogados correspondence in the connected SWAP/LPB workstream.",
+          "status": "DOCUMENTED_CURRENT_COUNSEL_TEAM"
+        },
+        {
+          "date": "2025-04-23",
+          "event": "Current counsel team associated with the filed separation application source family.",
+          "status": "CURRENT_COUNSEL_SOURCE_FAMILY"
+        },
+        {
+          "date": "2026-09-21",
+          "event": "Transmitted the R33 opposition and related documents to the client.",
+          "status": "DOCUMENTED_TRANSMISSION"
+        }
+      ]
+    },
+    {
+      "ref": "A10",
+      "person_id": "PD-SP-P-0061",
+      "name": "Estefanía Sixto Seijas",
+      "firm_ids": [
+        "PD-SP-O-0061"
+      ],
+      "key_dates": [
+        {
+          "date": "2024-03-01",
+          "event": "Reported the AC separation work as substantially advanced with parts practically finished.",
+          "status": "DOCUMENTED_DRAFTING_STATUS"
+        },
+        {
+          "date": "2024-03-18",
+          "event": "Confirmed continued work on the merits and separation of the AC.",
+          "status": "DOCUMENTED_DRAFTING_STATUS"
+        },
+        {
+          "date": "2025-04-23",
+          "event": "Current counsel team associated with the filed separation application source family.",
+          "status": "CURRENT_COUNSEL_SOURCE_FAMILY"
+        }
+      ]
+    }
+  ],
+  "source_controls": [
+    "archive/COUNSEL_DEFENCE_CONTINUITY_REGISTER_23AUG2026.md",
+    "es/continuidad-defensa-letrados/",
+    "es/actores-partes-abogados-representantes/",
+    "assets/data/legal-professionals-register-v1.json",
+    "assets/data/matter-identity-registry-v1.json",
+    "evidence/insolvency-36-2012/rpl-3304-2025/R33-oposicion-ac-apelacion-lpb-septiembre-2026-controlled-extracts.md",
+    ".github/governance/CONCURSO36_R33_VISUAL_LINKAGE_RULE_22SEP2026.md"
+  ],
+  "boundary": "This crosswalk controls identity, professional relationship and dated source anchors. It does not adjudicate legality, bullying, intimidation, obstruction, criminal prevention, motive, knowledge, causation, benefit, guilt or liability."
+}
