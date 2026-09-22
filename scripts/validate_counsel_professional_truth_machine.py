@@ -5,13 +5,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REGISTER = ROOT / "assets/data/legal-professionals-register-v1.json"
 MACHINE = ROOT / "assets/data/counsel-professional-interaction-truth-machine-v1.json"
-PIA = ROOT / "assets/data/ac-professional-isolation-attrition-v1.json"
+PIA = ROOT / "assets/data/ac-professional-isolation-attrition-v1.json"\nSUPPLEMENT = ROOT / "assets/data/legal-professionals-source-discovered-supplement-20260922.json"
 CAUS = ROOT / "assets/data/legal-representation-ac-causation-v1.json"
 
 def load(p):
     return json.loads(p.read_text(encoding="utf-8"))
 
-reg, tm, pia, caus = map(load, (REGISTER, MACHINE, PIA, CAUS))
+reg, tm, pia, caus, sup = map(load, (REGISTER, MACHINE, PIA, CAUS, SUPPLEMENT))
 errors = []
 
 reg_ids = [r["identity_id"] for r in reg["records"]]
@@ -55,4 +55,4 @@ if proc_count != tm.get("coverage",{}).get("procurador_total"):
 
 if errors:
     raise SystemExit("\n".join("FAIL: "+e for e in errors))
-print(f"PASS PD-TM-COUNSEL-20260922-01: {len(reg_ids)} records covered; Garrigues 2012 origin; no numeric truth score.")
+print(f"PASS PD-TM-COUNSEL-20260922-01: {len(reg_ids)} canonical + {len(sup_people)} supplemental professional nodes; Garrigues 2012 origin; no numeric truth score.")
