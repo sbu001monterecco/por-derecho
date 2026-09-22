@@ -164,3 +164,12 @@ The finite docket, authority, identity, incident-corroboration, counsel/procurad
 ## Namespaced continuation — 21 September 2026 — Canary Council
 
 Consejo Canario / inter-Colegio / professional-perimeter gaps continue in `MISSING_EVIDENCE_REGISTER_CANARY_COUNCIL_ADDENDUM_21SEP2026.md` under IDs `ME-CCCA-001`–`005`: ICAM→Tenerife execution/receipt, CGAE ethical-channel substantive response, exact additional lawyer Colegio membership, later firm mandate/conflict/custody records and professional-payment source/timing/accounting proof.
+
+
+## ME-QBANK-20180619 — finite closure tasks from the contemporaneous question bank
+
+- Recover any native/official record proving whether any of the 251 proposed questions were actually used on 25-Jun-2018 or later in DP 1132/2018; preparation material alone does not establish use.
+- **CLOSED 22-Sep-2026:** recovered the separate counsel draft `INTERROGATORIO GIL MARER.odt` from SBU001 reply message `1641981ea13ff60f`; SHA-256 `6ab4ceebe1add1f224e223899439d199589827557067d0ab84b8d33231b3da49`. It remains a distinct, privately preserved counsel-preparation source and is not collapsed into the 251-question bank. The remaining gap is whether/which questions were actually used in court.
+- Close the 17-May/18-May-2018 meeting-date issue with calls, notices, service, attendance and native minutes.
+- Close actor-specific title, credit-purchase price/funding/commission, Community agreement, ACTÚA instruction/unit-selection, security/provider/keys/locks, access and AC/court-authorisation questions through native primary documents.
+- Preserve and surface contrary/exculpatory evidence for each actor. Relationship, office, presence, chronology and a question are never substitutes for proof of an act, knowledge, instruction, intent, effect or liability.

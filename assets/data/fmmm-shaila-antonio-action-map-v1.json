@@ -288,6 +288,17 @@
   ],
   "contemporaneous_private_investigative_material": [
     {
+      "date": "2018-06-19",
+      "control_id": "PD-SP-QBANK-20180619-01",
+      "source": "Email 'Preguntas para la testificación del 25 de Junio de 2018' with attachment 'Cristo prep up.pdf'",
+      "meaning": "251 contemporaneous proposed questions already connect JDAM, LPAM, FMMM, Antonio, Shaila, the Molina/Montelanza-linked perimeter, Pamanil/Pamalexsha, Community debt/voting, ACTUA, security/access, the Insolvency Administrator and court-authority questions before the 20/31-Jul-2018 DP1132 declarations.",
+      "limit": "Party-side counsel-preparation material. It proves contemporaneous questioning and investigative scope, not truth, counsel adoption, filing, judicial use or answer.",
+      "routes": {
+        "en": "/por-derecho/en/contemporaneous-questions-19-june-2018/",
+        "es": "/por-derecho/es/preguntas-contemporaneas-19-junio-2018/"
+      }
+    },
+    {
       "date": "2018-06-29",
       "source": "Email package 'RELACION MOLINA Y MATOS REGISTRADA - empresas y cargos'",
       "meaning": "Shows contemporaneous effort to map CAM, Pamanil/Pamalexsha, Molina-linked entities and Community/professional actors.",

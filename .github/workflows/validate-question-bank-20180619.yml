@@ -1,0 +1,30 @@
+name: Validate 19 June 2018 question bank
+on:
+  pull_request:
+    paths:
+      - "assets/data/2018-06-19-contemporaneous-question-bank-v2.json"
+      - "assets/data/2018-question-bank-current-verification-v2.json"
+      - "assets/data/question-bank-2018-public-data-v1.js"
+      - "assets/data/question-bank-2018-public-pdf-v1.js"
+      - "assets/question-bank-2018-viewer.*"
+      - "en/contemporaneous-questions-19-june-2018/**"
+      - "es/preguntas-contemporaneas-19-junio-2018/**"
+      - "publication-manifests/question-bank-20180619-20260922.json"
+      - "scripts/validate_question_bank_20180619.py"
+  push:
+    branches: [main]
+    paths:
+      - "assets/data/2018-06-19-contemporaneous-question-bank-v2.json"
+      - "assets/data/2018-question-bank-current-verification-v2.json"
+      - "en/contemporaneous-questions-19-june-2018/**"
+      - "es/preguntas-contemporaneas-19-junio-2018/**"
+      - "scripts/validate_question_bank_20180619.py"
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - run: python scripts/validate_question_bank_20180619.py
