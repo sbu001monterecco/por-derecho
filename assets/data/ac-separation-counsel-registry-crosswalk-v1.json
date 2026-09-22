@@ -483,5 +483,11 @@
     "evidence/insolvency-36-2012/rpl-3304-2025/R33-oposicion-ac-apelacion-lpb-septiembre-2026-controlled-extracts.md",
     ".github/governance/CONCURSO36_R33_VISUAL_LINKAGE_RULE_22SEP2026.md"
   ],
-  "boundary": "This crosswalk controls identity, professional relationship and dated source anchors. It does not adjudicate legality, bullying, intimidation, obstruction, criminal prevention, motive, knowledge, causation, benefit, guilt or liability."
+  "boundary": "This crosswalk controls identity, professional relationship and dated source anchors. It does not adjudicate legality, bullying, intimidation, obstruction, criminal prevention, motive, knowledge, causation, benefit, guilt or liability.",
+  "drive_recovery": {
+    "folder_id": "1rVrqrPbXON90jQZhYAm4Akmw2rkEszd0",
+    "snapshot_file_id": "1O6lqqeTQHy2nLTzTFh2GdNVqTziG3fUQ",
+    "snapshot_name": "RPL3304_COUNSEL_FIRM_REGISTRY_CROSSWALK_22SEP2026.md",
+    "purpose": "Google Drive recovery/control copy for GitLab restoration after service unlock; public Git remains authoritative for current live registry state."
+  }
 }
