@@ -288,6 +288,13 @@
   ],
   "contemporaneous_private_investigative_material": [
     {
+      "date": "2018-06-19",
+      "source": "Preguntas para la testificación del 25 de Junio de 2018 / Cristo prep up.pdf",
+      "meaning": "251-question party-preparation bank: 76 JDAM, 49 Antonio, 50 FMMM, 76 LPAM. It contemporaneously tests the predecessor Community/Molina/Pamanil apparatus, CAM credit/title/valuation, security/access, AC/judge authority and alleged coordination.",
+      "limit": "Sent to counsel for consideration; counsel said he was analysing it and sent a separate draft for Gil. It is not proof of the embedded allegations or of actual courtroom questioning.",
+      "control_id": "PD-SP-QBANK-20180619-01"
+    },
+    {
       "date": "2018-06-29",
       "source": "Email package 'RELACION MOLINA Y MATOS REGISTRADA - empresas y cargos'",
       "meaning": "Shows contemporaneous effort to map CAM, Pamanil/Pamalexsha, Molina-linked entities and Community/professional actors.",
@@ -324,5 +331,20 @@
     "actor-specific communications with CAM/JDAM/LPAM and Insolvency Administrator",
     "2022 bank, levy, project and implementation records",
     "certified corporate/shareholder history for later Pamalexsha/AGM/Orion links"
-  ]
+  ],
+  "question_bank_2018": {
+    "control_id": "PD-SP-QBANK-20180619-01",
+    "date": "2018-06-19",
+    "route_en": "/por-derecho/en/contemporaneous-questions-19-june-2018/",
+    "route_es": "/por-derecho/es/preguntas-contemporaneas-19-junio-2018/",
+    "counts": {
+      "JDAM": 76,
+      "Antonio": 49,
+      "FMMM": 50,
+      "LPAM": 76,
+      "total": 251
+    },
+    "significance": "Contemporaneous party-preparation evidence showing that title, debt, Community authority, ACTÚA, security/access, AC/court permission, privileged-credit acquisition, Molina/Pamanil/Pamalexsha relationships and alleged coordination were already being framed as questions before the later July 2018 statements.",
+    "boundary": "Questions/allegations, not proof; not established as actually asked in court. FMMM later denied the source's cousin/family label; the source's 17-May meeting wording is controlled against the located 18-May ACTA."
+  }
 }
