@@ -202,6 +202,16 @@ def verify_once() -> dict[str, object]:
         raise AssertionError(f"site loader: HTTP {site.status}")
     assert_markers("site loader", site.text, SITE_MARKERS)
 
+    matkator_wrapper = request(BASE + MATKATOR_WRAPPER_ASSET, cache_bust=True)
+    if matkator_wrapper.status != 200:
+        raise AssertionError(f"matkator wrapper: HTTP {matkator_wrapper.status}")
+    assert_markers("matkator wrapper", matkator_wrapper.text, MATKATOR_WRAPPER_MARKERS)
+
+    treasury_wrapper = request(BASE + TREASURY_WRAPPER_ASSET, cache_bust=True)
+    if treasury_wrapper.status != 200:
+        raise AssertionError(f"treasury wrapper: HTTP {treasury_wrapper.status}")
+    assert_markers("treasury wrapper", treasury_wrapper.text, TREASURY_WRAPPER_MARKERS)
+
     site_wrapper = request(BASE + SITE_WRAPPER_ASSET, cache_bust=True)
     if site_wrapper.status != 200:
         raise AssertionError(f"site wrapper: HTTP {site_wrapper.status}")
@@ -237,6 +247,18 @@ def verify_once() -> dict[str, object]:
             "content_type": site.content_type,
             "bytes": len(site.body),
             "markers": SITE_MARKERS,
+        },
+        "matkator_wrapper": {
+            "status": matkator_wrapper.status,
+            "content_type": matkator_wrapper.content_type,
+            "bytes": len(matkator_wrapper.body),
+            "markers": MATKATOR_WRAPPER_MARKERS,
+        },
+        "treasury_wrapper": {
+            "status": treasury_wrapper.status,
+            "content_type": treasury_wrapper.content_type,
+            "bytes": len(treasury_wrapper.body),
+            "markers": TREASURY_WRAPPER_MARKERS,
         },
         "site_wrapper": {
             "status": site_wrapper.status,
