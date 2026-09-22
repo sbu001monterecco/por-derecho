@@ -1,0 +1,84 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "ICALPA-DIP80-ACCOUNTABILITY-CONSEJO-CGAE-20260922",
+  "control_date": "2026-09-22",
+  "current_state": "PR_OPEN",
+  "owner": "Por Derecho / Project Sun Rock",
+  "authority": "Gil Marer — update page fully and confirm email readiness",
+  "baseline_main": "a75146b7b1a5ecbf04b9682fb7ac373518364af2",
+  "branch": "chatgpt/icalpa-accountability-consejo-cgae-20260922",
+  "package": "icalpa-dip80-procedural-accountability-regional-national-escalation",
+  "publication_boundary": "Source-controlled procedural-accountability update. It records DIP 80 opening, elapsed time, located correspondence state and respondent awareness of the ICALPA route. It does not establish professional misconduct, intentional delay, institutional protection, collusion, formal service on the respondent, or a merits outcome.",
+  "expected_routes": {
+    "es": [
+      "es/icalpa-correspondencia-2025-2026/index.html",
+      "es/consejo-canario-coordinacion-deontologica-2026/index.html",
+      "es/cgae-coordinacion-deontologica-2026/index.html",
+      "es/registros-institucionales-colegios-abogacia-2026/index.html"
+    ],
+    "en": [
+      "en/icalpa-correspondence-2025-2026/index.html",
+      "en/canary-council-deontological-coordination-2026/index.html",
+      "en/cgae-deontological-coordination-2026/index.html",
+      "en/institutional-records-bar-bodies-2026/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/ICALPA_DIP80_PROCEDURAL_ACCOUNTABILITY_AND_ESCALATION_CONTROL_22SEP2026.md",
+    "assets/data/icalpa-dip-80-2026-casebook.json",
+    "assets/data/canary-professional-intercollegial-perimeter-v1.json",
+    "assets/data/unitary-route-registry-v1.json",
+    "CHATGPT_START_HERE.md",
+    "sitemap.xml",
+    "archive/THREAD_CONTINUITY_PRESERVATION_AUDIT_CCCA_SEND_22SEP2026.md"
+  ],
+  "controlling_points": [
+    "DIP 80/2026 opened as preliminary information on 27-May-2026.",
+    "118 days elapsed by 22-Sep-2026.",
+    "The 2024 disciplinary regulation states preliminary information should not last more than three months save exceptional circumstances.",
+    "The located mailbox shows opening, rapporteur and later registry/routing receipts but no located communicated archive, disciplinary opening, suspension, transfer or exceptional-extension explanation.",
+    "Absence of a located communication does not prove no internal act exists.",
+    "The September RPL 3304/2025 opposition proves respondent awareness of the ICALPA route, not how notice occurred or what ICALPA did internally.",
+    "Consejo Canario request is regional coordination/governance, not merits substitution.",
+    "CGAE request is national/inter-Bar criteria and coordination, not ordinary first-instance discipline."
+  ],
+  "email_state": {
+    "consejo_canario": "EMAIL_SENT_FORM_SUBMITTED_GENERIC_ACK_FORMAL_REGISTRATION_PENDING",
+    "cgae": "COPIED_ON_REGIONAL_EMAIL_SEPARATE_NATIONAL_COMMUNICATION_READY_NOT_SENT",
+    "official_sender": "sbu001@monterecco.com",
+    "sent_at": "2026-09-22T03:09:09+01:00",
+    "attachment_strategy": "No attachments in the regional transmission; the public landing page was linked. The separate CGAE package remains to be controlled before transmission.",
+    "evidence_boundary": "No located Consejo-specific bounce or reply is not proof of delivery, reading, registration or acceptance."
+  },
+  "validation": {
+    "required": [
+      "JSON parse",
+      "ES/EN parity",
+      "route and sitemap presence",
+      "publication integrity",
+      "private-source governance",
+      "audience rendering",
+      "release acceptance",
+      "unitary attribution"
+    ],
+    "merge_and_live_verification": "pending"
+  },
+  "open_nonblocking_gaps": [
+    "ICALPA certification of current DIP 80 state and any exceptional-extension basis",
+    "ICATF confirmation of ICAM 1487/26 territorial referral receipt/reference",
+    "formal CCCA acknowledgement/reference/assignment and any response to the copied regional message; separate CGAE consultation remains not sent",
+    "complete underlying money-trail proof for disputed professional payments"
+  ],
+  "status": "POST_SEND_UPDATE_PENDING_GATES",
+  "operational_state": {
+    "consejo_canario": "EMAIL_SENT_FORM_SUBMITTED_GENERIC_ACK_FORMAL_REGISTRATION_PENDING",
+    "cgae": "COPIED_ON_REGIONAL_EMAIL_SEPARATE_NATIONAL_COMMUNICATION_READY_NOT_SENT",
+    "official_sender": "sbu001@monterecco.com",
+    "sent_at": "2026-09-22T03:09:09+01:00",
+    "audit": "archive/THREAD_CONTINUITY_PRESERVATION_AUDIT_CCCA_SEND_22SEP2026.md",
+    "no_further_send_authorization": true,
+    "attachment_strategy": "No attachments in the regional transmission; the public landing page was linked. The separate CGAE package remains to be controlled before transmission.",
+    "evidence_boundary": "No located Consejo-specific bounce or reply is not proof of delivery, reading, registration or acceptance."
+  }
+}

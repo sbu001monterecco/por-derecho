@@ -2348,5 +2348,83 @@
       "Las Palmas correspondence",
       "Tenerife correspondence"
     ]
+  },
+  {
+    "lang": "es",
+    "path": "es/cgae-coordinacion-deontologica-2026/",
+    "title": "CGAE · coordinación deontológica nacional e intercolegial 2026",
+    "type": "institution",
+    "summary": "Borrador nacional fuente-controlado sobre información previa, plazo ordinario de tres meses, derechos del denunciante, coordinación intercolegial e independencia profesional.",
+    "tags": [
+      "CGAE",
+      "deontología",
+      "coordinación",
+      "DIP 80/2026"
+    ],
+    "aliases": [
+      "Consejo General Abogacía",
+      "coordinación nacional",
+      "Reglamento disciplinario 2024"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/cgae-deontological-coordination-2026/",
+    "title": "CGAE · national and inter-Bar deontological coordination 2026",
+    "type": "institution",
+    "summary": "Source-controlled national draft on preliminary information, the ordinary three-month period, complainant rights, inter-Bar coordination and professional independence.",
+    "tags": [
+      "CGAE",
+      "deontology",
+      "coordination",
+      "DIP 80/2026"
+    ],
+    "aliases": [
+      "Spanish Bar Council",
+      "national coordination",
+      "2024 disciplinary regulation"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/registros-institucionales-colegios-abogacia-2026/",
+    "title": "Mapa colegial 2026 — ICAM, CCACM, ICALPA, ICATF, Consejo Canario y CGAE",
+    "type": "institution",
+    "summary": "Mapa de seis niveles institucionales con estados procesales separados, control temporal de DIP 80/2026, ruta regional activada y comunicación nacional separada preparada.",
+    "tags": [
+      "ICALPA",
+      "ICATF",
+      "ICAM",
+      "CCACM",
+      "Consejo Canario",
+      "CGAE",
+      "DIP 80/2026"
+    ],
+    "aliases": [
+      "mapa colegial",
+      "seis niveles institucionales",
+      "Bar-body map"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/institutional-records-bar-bodies-2026/",
+    "title": "2026 Bar-body map — ICAM, CCACM, ICALPA, ICATF, Canary Council and CGAE",
+    "type": "institution",
+    "summary": "Six-level institutional map with separate procedural states, DIP 80/2026 temporal control, regional route activated and separate national communication prepared.",
+    "tags": [
+      "ICALPA",
+      "ICATF",
+      "ICAM",
+      "CCACM",
+      "Canary Council",
+      "CGAE",
+      "DIP 80/2026"
+    ],
+    "aliases": [
+      "Bar-body map",
+      "six institutional levels",
+      "professional-body map"
+    ]
   }
 ]
