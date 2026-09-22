@@ -1,0 +1,128 @@
+{
+  "schema": "pd.continuity-package.v1",
+  "package_id": "PD-RPL3304-R33-LINKEDIN-20260922",
+  "control_timestamp_utc": "2026-09-22T01:49:00Z",
+  "state": "PUBLIC_SAFE_PACKAGE_READY_FOR_PRESERVATION",
+  "public_safe": true,
+  "github": {
+    "repository": "sbu001monterecco/por-derecho",
+    "base_commit": "3fb4321536fc803768b02fe05d52d8b0d74f8322",
+    "canonical_lineage": {
+      "source_page_pr": 1725,
+      "split_viewer_pr": 1732,
+      "visual_linkage_pr": 1741,
+      "deployment_closeout_pr": 1743
+    },
+    "superseded": [
+      {"pull_request": 1696, "state": "CLOSED_UNMERGED_DO_NOT_REVIVE"},
+      {"pull_request": 1734, "state": "STALE_CONFLICTING_AUDIT_LANE"}
+    ],
+    "out_of_scope": [
+      {"pull_request": 1737, "state": "SEPARATE_REUSABLE_VIEWER_PROPOSAL"}
+    ]
+  },
+  "source": {
+    "description": "22-page opposition dated 14 September 2026 in RPL 3304/2025",
+    "received_date": "2026-09-21",
+    "signed_native_size_bytes": 1687660,
+    "signed_native_sha256": "5e0728185cf9b686abd723497d2a53a2656a5e0de4d323a734ed02880eb1d711",
+    "signed_native_included": false,
+    "public_pdf_sha256": "df43ba1d044c59177a85dea18c98f64b0c9c826ec7ba030c332a1e9cfb7abd14",
+    "private_v3_included": false
+  },
+  "live_readback": {
+    "checked_at_utc": "2026-09-22T01:49:00Z",
+    "routes": [
+      {
+        "language": "es",
+        "url": "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 34010
+      },
+      {
+        "language": "en",
+        "url": "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 21441
+      },
+      {
+        "language": "source",
+        "url": "https://sbu001monterecco.github.io/por-derecho/evidence/insolvency-36-2012/concurso-autos/pdfs/R33-ac-oposicion-apelacion-lpb-septiembre-2026.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "bytes": 1308157
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "rpl3304-editorial-satire-es-20260922.png",
+      "role": "final Spanish editorial-satire image",
+      "bytes": 1927347,
+      "width": 1254,
+      "height": 1254,
+      "sha256": "f8fb7602aade6b91cabc95cd416e7705f333481d7691bc9004106d4a76450770"
+    },
+    {
+      "path": "rpl3304-editorial-satire-en-20260922.png",
+      "role": "final English editorial-satire image",
+      "bytes": 1862443,
+      "width": 1254,
+      "height": 1254,
+      "sha256": "aba796f939a939fc445b38b2cfdbc79a6a46905c466ed19eda04ff01d50b3771"
+    },
+    {
+      "path": "linkedin-post-es-20260922.txt",
+      "role": "final Spanish LinkedIn post",
+      "bytes": 2940,
+      "unicode_characters_including_final_newline": 2869,
+      "sha256": "718d0db9e0bfc1ee010b4de0d05276180e5bbd21dca27e83fa68c551d860399b"
+    },
+    {
+      "path": "linkedin-post-en-20260922.txt",
+      "role": "final English LinkedIn post",
+      "bytes": 2934,
+      "unicode_characters_including_final_newline": 2897,
+      "sha256": "d4907099c2711e7aa6c0637897100e679a45ccb16c246522aa13e40992108ba9"
+    },
+    {
+      "path": "linkedin-first-comment-links.txt",
+      "role": "bilingual direct-link comment",
+      "bytes": 502,
+      "sha256": "ecb58f1abb60e711bfb823ad5158cc0a8a9e2dc943242b2e889eb5fba6442049"
+    },
+    {
+      "path": "image-alt-text.md",
+      "role": "bilingual accessibility text",
+      "bytes": 1093,
+      "sha256": "f1996eeb77ea94285e5cb6afbcd4824e6763c512f6f27451732d7c0ce2a59535"
+    },
+    {
+      "path": "GITLAB_RECONCILIATION_RUNBOOK.md",
+      "role": "GitLab recovery procedure",
+      "bytes": 3230,
+      "sha256": "47621879f43f02cbb339ac463526530792fea94156aaf4a7bc69acd5c37c7ad6"
+    },
+    {
+      "path": "CONTINUITY_AUDIT.md",
+      "role": "human-readable continuity audit",
+      "bytes": 8653,
+      "sha256": "8c34c6aa3736c4a9baf78c7eed76a2cd9a4fa9a0dac8ec734c02a8e55412dc56"
+    }
+  ],
+  "excluded": [
+    "signed native PDF",
+    "private forensic JSON and package",
+    "private locators and certificate data",
+    "privileged advice",
+    "Liar Liar poster and film still",
+    "superseded image variants"
+  ],
+  "gitlab": {
+    "state": "PENDING_ACCESS_RESTORATION",
+    "policy": "reconcile histories; never force-overwrite an unreviewed GitLab head",
+    "runbook": "GITLAB_RECONCILIATION_RUNBOOK.md"
+  }
+}
