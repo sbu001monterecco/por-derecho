@@ -1,0 +1,1000 @@
+{
+  "schema": "por-derecho.2018-contemporaneous-question-bank.v1",
+  "source": {
+    "title": "Preguntas para la testificación del 25 de Junio de 2018",
+    "attachment": "Cristo prep up.pdf",
+    "email_date": "2018-06-19",
+    "email_subject": "Preguntas para la testificación del 25 de Junio de 2018",
+    "sender": "Patricia Domínguez / Sun Park Lanzarote",
+    "recipient": "Cristo Pimentel",
+    "gmail_message_id": "164197a3bb0e7645",
+    "native_sha256": "b40e39b91728c522fcab6c645a2a0ef18cce9942ae8f0f400f38b12c0eb6ae03",
+    "native_pages": 17,
+    "public_extract_pages": "source pages 4-17 plus public cover",
+    "public_extract_sha256": "1d331c4907dde2871b2de7570b545252bef4ee58fba4517ea1abb6d42397c346"
+  },
+  "evidence_boundary": "This is a contemporaneous party-preparation document. The questions prove their own existence, wording and investigative scope; they do not prove facts assumed in the questions. Present-day questions are separately neutralised and source-tested.",
+  "sets": [
+    {
+      "target_id": "PD-SP-P-0011",
+      "target_name": "José Daniel Acosta Matos",
+      "source_pages": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "question_count": 76,
+      "questions": [
+        {
+          "id": "Q2018-PD-SP-P-0011-001",
+          "number": 1,
+          "text_es": "Es usted propietario de los apartamentos y locales de Luchy Playa Blanca SL?",
+          "domains": [
+            "TITLE_PROPERTY"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-002",
+          "number": 2,
+          "text_es": "Tiene usted sentencia judicial que confirme que es usted propietario de los apartamentos y locales de Luchy Playa Blanca SL?",
+          "domains": [
+            "TITLE_PROPERTY"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-003",
+          "number": 3,
+          "text_es": "Ha solicitado usted expresamente rechazar la ejecución hipotecaria contra Luchy Playa Blanca SL en Arrecife y decidido en su lugar presentar oferta para la adjudicación de los bienes en el concurso de acreedores?",
+          "domains": [
+            "TITLE_PROPERTY",
+            "CREDIT_FINANCE_OFFER"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-004",
+          "number": 4,
+          "text_es": "Podría confirmar si el plan de liquidación se ha publicado en el BOE?",
+          "domains": [
+            "GENERAL_FACT_VERIFICATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-005",
+          "number": 5,
+          "text_es": "Podría confirmar si la licitación de subasta ha comenzado?",
+          "domains": [
+            "GENERAL_FACT_VERIFICATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-006",
+          "number": 6,
+          "text_es": "Pordía confirmar entonces que NO es propietario de los bienes activos de Luchy Playa Blanca SL?",
+          "domains": [
+            "TITLE_PROPERTY"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-007",
+          "number": 7,
+          "text_es": "Qué hace entonces haciéndose pasar usted por el propietario del hotel, no en una ocasión solamente, sino en cada entrada forzosa al complejo, en cada llamada telefónica a los trabajadores del hotel, y en cada personación ante la administración, como el Ayuntamiento de Yaiza, Guardia Civil y juzgados?",
+          "domains": [
+            "TITLE_PROPERTY",
+            "ACCESS_SECURITY",
+            "TOURISM_OPERATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-008",
+          "number": 8,
+          "text_es": "Por qué rompió usted la puerta de acceso de los jardines del hotel y puso cadenas en su lugar el día 2 de octubre del 2017?",
+          "domains": [
+            "ACCESS_SECURITY",
+            "TOURISM_OPERATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-009",
+          "number": 9,
+          "text_es": "Por qué accedió usted a mostrar los apartamentos en mal estado de la familia Molina a la tasadora ACTUA y les mintió a estos alegando que esos eran los apartamentos de Luchy Playa Blanca SL y que todo el complejo se encontraba en igual estado?",
+          "domains": [
+            "VALUATION_INFORMATION_SUPPLIED",
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-010",
+          "number": 10,
+          "text_es": "Por qué envió a un sujeto al complejo a romper los cristales de los apartamentos y locales de Luchy Playa Blanca SL el día​ xxx de xxx?",
+          "domains": [
+            "ACCESS_SECURITY"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-011",
+          "number": 11,
+          "text_es": "Con el permiso de quién se personó usted con CAM, Joan Cruz e inversores financieros Catalanes en el complejo para mostrar los activos de Luchy Playa Blanca SL cuando estos no están en venta ni han sido adquiridos por usted?",
+          "domains": [
+            "GENERAL_FACT_VERIFICATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-012",
+          "number": 12,
+          "text_es": "Por que se presenta usted en el complejo siempre diciendo que ‘son los nuevos dueños del hotel’? A quién pretenden engañar?",
+          "domains": [
+            "TOURISM_OPERATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-013",
+          "number": 13,
+          "text_es": "Cuándo compró usted la deuda privilegiada del concurso de acreedores de Luchy Playa Blanca SL?",
+          "domains": [
+            "CREDIT_FINANCE_OFFER",
+            "DEBT_ACCOUNTING_DOCUMENTS"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-014",
+          "number": 14,
+          "text_es": "Por cuánto compró usted la deuda?",
+          "domains": [
+            "DEBT_ACCOUNTING_DOCUMENTS"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-015",
+          "number": 15,
+          "text_es": "Con el dinero de quién compró usted la deuda?",
+          "domains": [
+            "DEBT_ACCOUNTING_DOCUMENTS"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-016",
+          "number": 16,
+          "text_es": "Dice usted en su oferta al juez del concurso de acreedores que ‘ha llegado a un acuerdo con la comunidad de propietarios’, podría explicar qué tipo de acuerdo?",
+          "domains": [
+            "TITLE_PROPERTY",
+            "CREDIT_FINANCE_OFFER",
+            "COMMUNITY_GOVERNANCE_AUTHORITY",
+            "AUTHORISATION_AC_JUDGE"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-017",
+          "number": 17,
+          "text_es": "Dice usted en su oferta al juez del concurso de acreedores que ‘se hará cargo de la deuda la comunidad de propietarios’, podría explicar a qué cantidad se refiere usted exactamente?",
+          "domains": [
+            "TITLE_PROPERTY",
+            "CREDIT_FINANCE_OFFER",
+            "DEBT_ACCOUNTING_DOCUMENTS",
+            "COMMUNITY_GOVERNANCE_AUTHORITY",
+            "AUTHORISATION_AC_JUDGE"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-018",
+          "number": 18,
+          "text_es": "Conoce usted a Cristina Molina Petit? De qué?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-019",
+          "number": 19,
+          "text_es": "Conoce usted a Asunción Aizpurúa Sánchez? De qué?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-020",
+          "number": 20,
+          "text_es": "Conoce usted a Miguel Molina? De qué?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-021",
+          "number": 21,
+          "text_es": "Conoce usted a Agustín Calzada? De qué?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-022",
+          "number": 22,
+          "text_es": "Conoce usted a Amenem SL? De qué?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-023",
+          "number": 23,
+          "text_es": "Conoce usted a Inversiones Salinetas? De qué?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-024",
+          "number": 24,
+          "text_es": "Conoce usted a Inmobiliaria Betancor? De qué?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-025",
+          "number": 25,
+          "text_es": "Conoce usted a Muruga SL? De qué?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-026",
+          "number": 26,
+          "text_es": "Conoce usted a Sebastián Molina Petit? De qué?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-027",
+          "number": 27,
+          "text_es": "Conoce usted a Acciones Canarias SL? De qué?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-028",
+          "number": 28,
+          "text_es": "Conoce usted a Montelanza SL? De qué?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-029",
+          "number": 29,
+          "text_es": "Conoce usted a Pamanil SL? De qué?",
+          "domains": [
+            "COMMUNITY_GOVERNANCE_AUTHORITY",
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-030",
+          "number": 30,
+          "text_es": "Conoce usted a Pamalexsha SL? De qué?",
+          "domains": [
+            "COMMUNITY_GOVERNANCE_AUTHORITY",
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-031",
+          "number": 31,
+          "text_es": "Conoce usted a Francisco Mario Matos Matas? De qué?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-032",
+          "number": 32,
+          "text_es": "Conoce usted a Antonio Cogolluod Rojas? De qué?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-033",
+          "number": 33,
+          "text_es": "Conoce usted a Shaila Cogolludo? De qué?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-034",
+          "number": 34,
+          "text_es": "Conoce usted a Laura Acosta Matos? De qué?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-035",
+          "number": 35,
+          "text_es": "Por qué ha comprado las unidades de Cristina Molina Petit?",
+          "domains": [
+            "TITLE_PROPERTY"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-036",
+          "number": 36,
+          "text_es": "Por qué ha comprado las unidades de Acciones Canrias SL?",
+          "domains": [
+            "TITLE_PROPERTY"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-037",
+          "number": 37,
+          "text_es": "Por qué ha comprado las unidades de Montelanza SL?",
+          "domains": [
+            "TITLE_PROPERTY"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-038",
+          "number": 38,
+          "text_es": "Cómo ha comprado las unidades de Montelanza SL, cuando esta empresa se liquidó en el 2016?",
+          "domains": [
+            "TITLE_PROPERTY"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-039",
+          "number": 39,
+          "text_es": "Fue usted convocado a la junta del 17 de mayo del 2018?",
+          "domains": [
+            "COMMUNITY_GOVERNANCE_AUTHORITY"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-040",
+          "number": 40,
+          "text_es": "Quién le convocó, su primo Fco. ‘Mario’ Matos?",
+          "domains": [
+            "COMMUNITY_GOVERNANCE_AUTHORITY",
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-041",
+          "number": 41,
+          "text_es": "Qué se acordó en dicha junta?",
+          "domains": [
+            "COMMUNITY_GOVERNANCE_AUTHORITY"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-042",
+          "number": 42,
+          "text_es": "Por qué no se invitó a todos los propietarios?",
+          "domains": [
+            "TITLE_PROPERTY"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-043",
+          "number": 43,
+          "text_es": "Quién decidió que fuese una junta clandestina? Su primo? Su amigo Cogolludo? La familia Molina? O su hermana Laura, también abogada de CAM?",
+          "domains": [
+            "COMMUNITY_GOVERNANCE_AUTHORITY",
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-044",
+          "number": 44,
+          "text_es": "Quién decidió poner cadenas en el complejo?",
+          "domains": [
+            "ACCESS_SECURITY"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-045",
+          "number": 45,
+          "text_es": "Quién decidió poner seguritas en las puertas y bloquear todos los accesos al complejo con clientes y trabajadores dentro?",
+          "domains": [
+            "ACCESS_SECURITY"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-046",
+          "number": 46,
+          "text_es": "Solicitó y obtuvo usted específicamente el permiso del AC para poner cadenas?",
+          "domains": [
+            "ACCESS_SECURITY",
+            "AUTHORISATION_AC_JUDGE"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-047",
+          "number": 47,
+          "text_es": "Solicitó y obtuvo usted específicamente el permiso del Juez del concurso para poner cadenas?",
+          "domains": [
+            "ACCESS_SECURITY",
+            "AUTHORISATION_AC_JUDGE"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-048",
+          "number": 48,
+          "text_es": "Bajo que autorización o legitimación puso su hermana y su amigo cadenas en las puertas de acceso al hotel?",
+          "domains": [
+            "ACCESS_SECURITY",
+            "RELATIONSHIPS_NETWORK",
+            "AUTHORISATION_AC_JUDGE",
+            "TOURISM_OPERATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-049",
+          "number": 49,
+          "text_es": "Cuánto tiempo lleva usted planeado este robo del Hotel?",
+          "domains": [
+            "COORDINATION_CRIMINAL_ALLEGATION",
+            "TOURISM_OPERATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-050",
+          "number": 50,
+          "text_es": "Lo ha planeado solo o con su primo Mario Matos?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK",
+            "COORDINATION_CRIMINAL_ALLEGATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-051",
+          "number": 51,
+          "text_es": "Lo ha planeado solo o con la familia Molina?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK",
+            "COORDINATION_CRIMINAL_ALLEGATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-052",
+          "number": 52,
+          "text_es": "Lo ha planeado solo o con Antonio Cogolludo?",
+          "domains": [
+            "COORDINATION_CRIMINAL_ALLEGATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-053",
+          "number": 53,
+          "text_es": "Lo han planeado todos juntos, usted, CAM, Mario Matos, la familia Molina y Antonio Cogolludo?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK",
+            "COORDINATION_CRIMINAL_ALLEGATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-054",
+          "number": 54,
+          "text_es": "Quién le ofreció la compra del crédito privilegiado del concurso? Nombres",
+          "domains": [
+            "CREDIT_FINANCE_OFFER"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-055",
+          "number": 55,
+          "text_es": "Cuánto pagó en comisiones por la negociación de dicha compra?",
+          "domains": [
+            "CREDIT_FINANCE_OFFER"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-056",
+          "number": 56,
+          "text_es": "A quién le pagó las comisiones?",
+          "domains": [
+            "CREDIT_FINANCE_OFFER"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-057",
+          "number": 57,
+          "text_es": "Qué acuerdo negoció con los supuestos representantes de la comunidad para poner su oferta en el concurso de acreedores?",
+          "domains": [
+            "TITLE_PROPERTY",
+            "CREDIT_FINANCE_OFFER",
+            "COMMUNITY_GOVERNANCE_AUTHORITY"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-058",
+          "number": 58,
+          "text_es": "Qué cantidad acordó pagar a la comunidad de propieatarios según detalla usted en su oferta en el concurso?",
+          "domains": [
+            "TITLE_PROPERTY",
+            "CREDIT_FINANCE_OFFER",
+            "COMMUNITY_GOVERNANCE_AUTHORITY"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-059",
+          "number": 59,
+          "text_es": "Por qué justifica su oferta en el concurso de acreedores alegando el principio de unidad de explotación mientras que ahora lo niega en rotundo, saboteando la explotación actual y aunando fuerzas con los incumplidores que llevan 10 años saboteando el complejo?",
+          "domains": [
+            "TITLE_PROPERTY",
+            "VALUATION_INFORMATION_SUPPLIED",
+            "CREDIT_FINANCE_OFFER",
+            "TOURISM_OPERATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-060",
+          "number": 60,
+          "text_es": "Por qué no ha confirmado con la familia Molina si estaban cumpliendo los estatutos, contrato de explotación, principio de unidad de explotación, ley de turismo y uso permitido?",
+          "domains": [
+            "TITLE_PROPERTY",
+            "RELATIONSHIPS_NETWORK",
+            "TOURISM_OPERATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-061",
+          "number": 61,
+          "text_es": "En caso contrario, si usted ha confirmado con la familia Molina, su primo Mario Matos y su amigo Antonio Cogolludo si la familia Molina estaba cumpliendo los estatutos, contrato de cesión de explotación, principio de unidad de explotación, ley de turismo y uso permitido, como justifica usted que estos no hayan facilitado el título habilitante correspondiente y que se haya reducido el número de camas debido a los incumplimientos varios ocasionados por estos señores?",
+          "domains": [
+            "TITLE_PROPERTY",
+            "RELATIONSHIPS_NETWORK",
+            "TOURISM_OPERATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-062",
+          "number": 62,
+          "text_es": "Cuando usted entró ilegalmente en el complejo haciéndose pasar por el nuevo dueño del hotel, y vió que habían clientes y trabajadores, por qué no cuestionó a su primo Mario Matos? O a su amigo Antonio Cogolludo? O a la familia Molina?",
+          "domains": [
+            "ACCESS_SECURITY",
+            "RELATIONSHIPS_NETWORK",
+            "TOURISM_OPERATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-063",
+          "number": 63,
+          "text_es": "Cómo es posible que habiendo un contrato indefinido real, que sólo puede cancelar el 66% de las unidades en explotación, los que hubieran firmado el título habilitante correspondiente, que usted, su hermana Laura, su primo Mario Matos, su amigo Antonio Cogolludo y la familia Molina al completo hayan obviado el mismo y se hayan apresurado tomar por la fuerza un complejo que se encuentra en explotación?",
+          "domains": [
+            "TITLE_PROPERTY",
+            "RELATIONSHIPS_NETWORK",
+            "TOURISM_OPERATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-064",
+          "number": 64,
+          "text_es": "Cómo puede ser que usted aúne fuerzas con su hermana Laura, su primo Mario Matos, su amigo Antonio Cogolludo y la familia Molina para robarle el complejo a la concursada?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK",
+            "COORDINATION_CRIMINAL_ALLEGATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-065",
+          "number": 65,
+          "text_es": "Cómo puede ser que usted aúne fuerzas con su hermana Laura, su primo Mario Matos, su amigo Antonio Cogolludo y la familia Molina para fabricar documentos y hacerlos pasar por legítimos, en un afán de conseguir confundir a la Guardia Civil, administración y juzgados?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK",
+            "COORDINATION_CRIMINAL_ALLEGATION"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-066",
+          "number": 66,
+          "text_es": "Quién miente? Su primo Mario Matos? Su amigo Cogolludo? La familia Molina? Usted? Su hermana?",
+          "domains": [
+            "RELATIONSHIPS_NETWORK"
+          ],
+          "source_page_range": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "Q2018-PD-SP-P-0011-067",
+          "number": 67,
+          "text_es": "Podría confirmar en base a qué imputa usted esta deuda a Luchy Playa Blanca SL?",
+          "domains": [
