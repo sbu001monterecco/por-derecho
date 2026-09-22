@@ -44,7 +44,10 @@
       "GITHUB_BACKUP_AND_PRESERVATION_PROTOCOL.md",
       "INSTITUTIONAL_ACTIONS.md",
       "robots.txt",
-      "sitemap.xml"
+      "sitemap.xml",
+      "archive/AC_PROFESSIONAL_ISOLATION_ATTRITION_CANON_22SEP2026.md",
+      ".github/governance/AC_PROFESSIONAL_ISOLATION_ATTRITION_PROTOCOL_22SEP2026.md",
+      "assets/data/ac-professional-isolation-attrition-v1.json"
     ],
     "authorization_status": "EXPLICIT_USER_AUTHORIZATION",
     "authorized_by": "Gil Marer",
@@ -165,5 +168,36 @@
     "Contrary evidence, corrections, right of reply and unresolved proof remain visible.",
     "Lawyer emails, advice, drafts, mark-ups and strategy are internal work product; a later filed version must be separately verified before publication.",
     "A lawyer's covering email and annotations remain private even where an independently existing court, authority, third-party or public attachment is publication-eligible."
-  ]
+  ],
+  "ac_professional_isolation_attrition_control": {
+    "control_id": "PD-GOV-AC-PIA-20260922-01",
+    "canonical_record": "archive/AC_PROFESSIONAL_ISOLATION_ATTRITION_CANON_22SEP2026.md",
+    "machine_control": "assets/data/ac-professional-isolation-attrition-v1.json",
+    "public_routes": [
+      "es/continuidad-defensa-letrados/index.html",
+      "en/counsel-defence-continuity/index.html"
+    ],
+    "canonical_analysis": "institutional pressure, interference with independent professional relationships, strategic isolation and professional/commercial attrition",
+    "four_rings": [
+      "legal representation",
+      "procedural and professional support",
+      "commercial and operating partners",
+      "capital and investment counterparties"
+    ],
+    "mandatory_boundaries": [
+      "actor-specific attribution",
+      "contrary evidence and lawful alternatives remain visible",
+      "payment does not prove bribery",
+      "contact does not prove improper influence",
+      "withdrawal does not prove causation",
+      "procedural licence does not prove wrongdoing",
+      "later structural finding does not retroactively prove intent",
+      "relationship does not transfer responsibility"
+    ],
+    "prohibited_collapses": [
+      "thug/bully/mob-like as repository conclusions",
+      "universal lawyer-casualties theory",
+      "automatic causation from successive adviser departures"
+    ]
+  }
 }
