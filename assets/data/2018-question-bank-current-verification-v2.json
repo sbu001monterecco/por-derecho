@@ -733,5 +733,70 @@
       "es": "El documento fue enviado a un abogado “para tu consideración”. La respuesta del abogado dice “Lo voy analizando” y remite un borrador distinto de preguntas para Gil. Por tanto, el banco de 251 preguntas no se describe como interrogatorio presentado, adoptado o formulado judicialmente.",
       "en": "The document was sent to a lawyer “for your consideration”. Counsel replied “I am analysing it” and sent a different draft of questions for Gil. The 251-question bank is therefore not described as filed, adopted or actually put in court."
     }
+  ],
+  "source_routes": [
+    {
+      "date": "2011-06-22",
+      "kind": "ACTA",
+      "route_en": "/por-derecho/en/community-instrumentalisation/acta-document-room/2011-06-22/",
+      "route_es": "/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/2011-06-22/",
+      "purpose": "FMMM administration/debt/vote/authority predecessor matrix"
+    },
+    {
+      "date": "2014-04",
+      "kind": "COMMUNICATION_NOTARIAL",
+      "route_en": "/por-derecho/en/community-instrumentalisation/communications-pamanil/",
+      "route_es": "/por-derecho/es/comunidad-instrumentalizacion/comunicaciones-pamanil/",
+      "purpose": "FMMM/Shaila Pamanil communications and Antonio representation lane"
+    },
+    {
+      "date": "2016-06",
+      "kind": "RECORDED_WORKING_MEETING",
+      "route_en": "/por-derecho/en/community-instrumentalisation/2016-transcript/",
+      "route_es": "/por-derecho/es/comunidad-instrumentalizacion/transcripcion-2016/",
+      "purpose": "FMMM/Community debt, records and insolvency knowledge checkpoint; native-audio date correction remains controlling"
+    },
+    {
+      "date": "2017-06-12",
+      "kind": "ACTA",
+      "route_en": "/por-derecho/en/community-instrumentalisation/acta-document-room/2017-06-12/",
+      "route_es": "/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/2017-06-12/",
+      "purpose": "Antonio president, Shaila treasurer, FMMM secretary-administrator"
+    },
+    {
+      "date": "2018-05-18",
+      "kind": "ACTA",
+      "route_en": "/por-derecho/en/community-instrumentalisation/acta-document-room/2018-05-18/",
+      "route_es": "/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/2018-05-18/",
+      "purpose": "security/access resolution and the canonical meeting-date comparator"
+    },
+    {
+      "date": "2018-06-07",
+      "kind": "CONTEMPORANEOUS_COMPLAINT_EMAIL_EVIDENCE_FAMILY",
+      "route_en": "/por-derecho/en/sun-park-takeover-7-june-2018/",
+      "route_es": "/por-derecho/es/toma-control-sun-park-7-junio-2018/",
+      "purpose": "material-control event and pre-event source map"
+    },
+    {
+      "date": "2018-06-25",
+      "kind": "COURT_DECLARATION_FAMILY",
+      "route_en": "/por-derecho/en/sun-park-takeover-7-june-2018/#procedural-chain",
+      "route_es": "/por-derecho/es/toma-control-sun-park-7-junio-2018/#cadena-procesal",
+      "purpose": "DP 1132/2018 statement chronology"
+    },
+    {
+      "date": "2018-07-20",
+      "kind": "COURT_STATEMENT_FAMILY",
+      "route_en": "/por-derecho/en/sun-park-takeover-7-june-2018/",
+      "route_es": "/por-derecho/es/toma-control-sun-park-7-junio-2018/",
+      "purpose": "actor statements; includes FMMM denial of cousin/family relationship with JDAM"
+    },
+    {
+      "date": "2018-07-31",
+      "kind": "INSOLVENCY_ADMINISTRATOR_STATEMENT",
+      "route_en": "/por-derecho/en/francisco-de-borja-rodriguez-batllori-laffitte/",
+      "route_es": "/por-derecho/es/francisco-de-borja-rodriguez-batllori-laffitte/",
+      "purpose": "AC authority/denial/narrow-scope evidence"
+    }
   ]
 }
