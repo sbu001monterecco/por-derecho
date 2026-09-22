@@ -41,3 +41,14 @@ No homepage or navigation change is authorised by this rule. Linking the page in
 ## Release boundary
 
 The initial manifest must remain `public_release_approved=false` and `live_verified=false`. A later successor may promote those states only after exact-head checks, authorised merge/deployment and live readback of both language routes.
+
+
+## Layered privacy validation
+
+The page validator's regular-expression scan is a **technical sentinel**, not a complete privacy certification. It must be combined with the repository's existing private-source/OSINT/publication controls, human/source review and the rule that only intentionally public-safe methodology data enters the model.
+
+The sentinel should detect common private cloud locators, credential-bearing URLs, email addresses, bearer/API-key patterns and private-network addresses. Passing it does not authorise publication of any datum merely because the datum did not match a pattern. Publication eligibility remains an independent reviewed state.
+
+## Host-specific canonical projection
+
+The GitHub and GitLab pages are semantic projections of one model, not one byte-identical HTML object. Each host must self-identify through `data-projection-host` and use its own correct canonical/hreflang origin. Portable governance/model/validator files should remain exact where possible; host-specific canonical URLs are an expressly explained divergence.
