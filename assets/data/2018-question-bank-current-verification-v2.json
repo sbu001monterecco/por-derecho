@@ -1,0 +1,737 @@
+{
+  "schema": "por-derecho.2018-question-bank-current-verification.v1",
+  "control_id": "PD-SP-QBANK-20180619-CURRENT-20260922-01",
+  "control_date": "2026-09-22",
+  "source_question_bank": "PD-SP-QBANK-20180619-01",
+  "principle": "The 2018 wording is preserved as historical evidence of questions/allegations. Present questions are neutralised into document-production and actor-specific verification questions. Neither layer is a finding of guilt.",
+  "targets": [
+    {
+      "target_id": "PD-SP-P-0011",
+      "target_name": "José Daniel Acosta Matos",
+      "short": "JDAM",
+      "questions": [
+        {
+          "id": "QNOW-PD-SP-P-0011-01",
+          "domain": "TITLE_PROPERTY",
+          "text_en": "As at each relevant date from October 2017 through June 2018, which Sun Park fincas or rights did you or CAM actually own, and what deed/Registry entry proves each one?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0011-02",
+          "domain": "CREDIT_FINANCE_OFFER",
+          "text_en": "What is the complete acquisition chain for the privileged/secured credit: seller, assignee entity, deed date, price, payment source, commissions, security, notices and schedules?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0011-03",
+          "domain": "CREDIT_FINANCE_OFFER",
+          "text_en": "What exact agreement with the Owners’ Community was referred to in the CAM offer, who negotiated it, what amount or debt assumption was contemplated, and where is the signed instrument?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0011-04",
+          "domain": "VALUATION_INFORMATION_SUPPLIED",
+          "text_en": "For the ACTÚA valuation, who selected the units shown, who gave the valuer title/condition information, which fincas were inspected, and how were those observations used later?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0011-05",
+          "domain": "COMMUNITY_GOVERNANCE_AUTHORITY",
+          "text_en": "Were you called to the May 2018 Community meeting? Identify the exact date, convener, service, capacity, proxy/ownership basis, agenda and voting record."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0011-06",
+          "domain": "ACCESS_SECURITY",
+          "text_en": "What instructions, communications or approvals did you give or receive concerning security, chains, locks, keys, access restrictions or inspection of LPB/Matkator/third-party spaces before or after 7 June 2018?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0011-07",
+          "domain": "AUTHORISATION_AC_JUDGE",
+          "text_en": "Identify every written AC or court authorisation on which you relied for access, maintenance, security, forced entry or changes to locks, including its exact scope."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0011-08",
+          "domain": "RELATIONSHIPS_NETWORK",
+          "text_en": "State the date-specific business, ownership, representation or professional relationship with FMMM, Antonio, Shaila, the Molina-linked owners, Pamanil and Pamalexsha; do not rely on family labels unless independently documented."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0011-09",
+          "domain": "TOURISM_OPERATION",
+          "text_en": "What did you understand in 2018 about CEXP, the exploitation contract, unitary-operation requirements, Pink/LPB/Matkator activity and the ONA-funded exit? Identify the documents received."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0011-10",
+          "domain": "ACCESS_SECURITY",
+          "text_en": "Were you physically present on 7 June 2018? If not, what did you know beforehand and what did you approve, adopt, reject or reverse afterwards?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0011-11",
+          "domain": "DEBT_ACCOUNTING_DOCUMENTS",
+          "text_en": "What Community debt figures, invoices, contracts, certificates and voting exclusions did CAM rely on, and what independent verification was performed?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0011-12",
+          "domain": "CREDIT_FINANCE_OFFER",
+          "text_en": "Which later acquisition, adjudication, works, operation, income or financing decisions relied on the 2017–2018 Community/security/title record?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0011-13",
+          "domain": "DOCUMENT_CUSTODY",
+          "text_en": "Identify the native emails, offer drafts, bank/payment records, valuation instructions, meeting papers, security communications and due-diligence files still held by you or CAM."
+        }
+      ]
+    },
+    {
+      "target_id": "PD-SP-P-0012",
+      "target_name": "Laura Patricia Acosta Matos",
+      "short": "LPAM",
+      "questions": [
+        {
+          "id": "QNOW-PD-SP-P-0012-01",
+          "domain": "TITLE_PROPERTY",
+          "text_en": "What was your exact capacity for CAM in 2017–2018, and which powers or mandates authorised each act concerning Sun Park?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0012-02",
+          "domain": "ACCESS_SECURITY",
+          "text_en": "Identify every instruction, communication or physical act concerning access, keys, locks, security, maintenance or entry into LPB/Matkator/third-party spaces."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0012-03",
+          "domain": "AUTHORISATION_AC_JUDGE",
+          "text_en": "Which AC or court permissions did you request, receive, transmit or rely upon, and what limits did they contain?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0012-04",
+          "domain": "COMMUNITY_GOVERNANCE_AUTHORITY",
+          "text_en": "What role, if any, did you have in the May 2018 Community meeting, its preparation, service, attendance, voting or security resolution?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0012-05",
+          "domain": "CREDIT_FINANCE_OFFER",
+          "text_en": "What role did you have in CAM’s credit acquisition, offer, Community agreement, debt assumption, bid/adjudication strategy or later title steps?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0012-06",
+          "domain": "VALUATION_INFORMATION_SUPPLIED",
+          "text_en": "What information, units or representations did you or CAM provide to ACTÚA or other valuers, and who verified title/condition comparability?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0012-07",
+          "domain": "RELATIONSHIPS_NETWORK",
+          "text_en": "Describe date-specific work or communications with JDAM, FMMM, Antonio, Shaila, the Molina-linked owners, Pamanil/Pamalexsha, the AC and counsel."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0012-08",
+          "domain": "ACCESS_SECURITY",
+          "text_en": "What did you know before 7 June 2018, were you present, and what measures did you take afterwards to confirm, limit, reverse or account for what occurred?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0012-09",
+          "domain": "TOURISM_OPERATION",
+          "text_en": "What documents did you receive concerning CEXP, Pink/LPB/Matkator, ONA, existing guests/workers and mixed title before the material-control event?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0012-10",
+          "domain": "DEBT_ACCOUNTING_DOCUMENTS",
+          "text_en": "What Community debt/vote/certificate material did you verify or use, and what contrary material was known?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0012-11",
+          "domain": "LATER_USE",
+          "text_en": "Which 2018 premises were later repeated in 2021–2022 title/project/Community records, financing, works or operator materials?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0012-12",
+          "domain": "DOCUMENT_CUSTODY",
+          "text_en": "Identify and preserve native CAM emails, powers, offers, valuation correspondence, security/access records, meeting materials, court/AC communications and later-use files."
+        }
+      ]
+    },
+    {
+      "target_id": "PD-SP-P-0009",
+      "target_name": "Francisco Mario Matos Matas",
+      "short": "FMMM",
+      "questions": [
+        {
+          "id": "QNOW-PD-SP-P-0009-01",
+          "domain": "COMMUNITY_GOVERNANCE_AUTHORITY",
+          "text_en": "What instrument appointed you to each Community/Pamanil/Pamalexsha function from 2011 onward, for what duration, remuneration, powers and termination?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0009-02",
+          "domain": "DEBT_ACCOUNTING_DOCUMENTS",
+          "text_en": "Who created, verified, approved and certified each LPB debt figure from 2011–2018, and where are the supporting invoices, contracts, ledgers, bank records and reconciliations?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0009-03",
+          "domain": "COMMUNITY_GOVERNANCE_AUTHORITY",
+          "text_en": "Identify the call, attendance/proxy, voting list, minutes drafting, service and document-custody chain for the 2017 and May 2018 meetings."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0009-04",
+          "domain": "ACCESS_SECURITY",
+          "text_en": "What was your role in security/access planning, provider selection, instructions, keys/locks, access lists and implementation before/after 7 June 2018?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0009-05",
+          "domain": "AUTHORISATION_AC_JUDGE",
+          "text_en": "What communications did you have with the AC or court about security, forced entry, maintenance or access, and what exact authority did you understand existed?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0009-06",
+          "domain": "VALUATION_INFORMATION_SUPPLIED",
+          "text_en": "What involvement did you have in ACTÚA access, unit selection, condition information or later use of the valuation?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0009-07",
+          "domain": "RELATIONSHIPS_NETWORK",
+          "text_en": "What date-specific relationship did you have with JDAM/CAM in 2017–2018? The 2018 question bank called JDAM your “cousin”, while your 20 July 2018 statement denied any family relationship; identify any actual relationship."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0009-08",
+          "domain": "ACCESS_SECURITY",
+          "text_en": "Were you present on 7 June 2018, and what instructions or post-event adoption/reversal actions are evidenced?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0009-09",
+          "domain": "TOURISM_OPERATION",
+          "text_en": "What was your understanding of the hotel exploitation structure, CEXP, LPB/Pink/Matkator rights and the ONA-funded exit?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0009-10",
+          "domain": "COMMUNITY_GOVERNANCE_AUTHORITY",
+          "text_en": "Why does the 19 June source refer to a 17 May meeting while the located canonical ACTA is dated 18 May? Identify any separate meeting or explain the discrepancy."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0009-11",
+          "domain": "LATER_USE",
+          "text_en": "How did your Community/Pamalexsha functions continue into the 2022 project meeting and later AGM/Orion roles, and which records passed between those environments?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0009-12",
+          "domain": "DOCUMENT_CUSTODY",
+          "text_en": "Identify the Community minute books, emails, accounting files, bank authorities, certificates, proxies, security records and provider files in your custody or formerly under your control."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0009-13",
+          "domain": "CONTRARY_EVIDENCE",
+          "text_en": "Provide any documents showing lawful appointment, accurate debt, inclusive notice, limited security purpose, objection to excess, lack of CAM coordination or other exculpatory explanation."
+        }
+      ]
+    },
+    {
+      "target_id": "PD-SP-P-0007",
+      "target_name": "Antonio Cogolludo Rojas",
+      "short": "Antonio",
+      "questions": [
+        {
+          "id": "QNOW-PD-SP-P-0007-01",
+          "domain": "COMMUNITY_GOVERNANCE_AUTHORITY",
+          "text_en": "What owner/proxy/title basis supported your 2014 representations and your 2017–2018 presidency, and where are the powers, acceptance and registration/service records?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0007-02",
+          "domain": "COMMUNITY_GOVERNANCE_AUTHORITY",
+          "text_en": "Who called each meeting you chaired, who was served, who attended, what proxies/votes were counted and who drafted/circulated the minutes?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0007-03",
+          "domain": "ACCESS_SECURITY",
+          "text_en": "What did you decide or instruct concerning security, chains, locks, keys, access control and provider scope before/after the 18 May 2018 resolution?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0007-04",
+          "domain": "ACCESS_SECURITY",
+          "text_en": "Identify your presence and actions, if any, on 2 October 2017, the alleged 2013/2015 access incidents and 7 June 2018."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0007-05",
+          "domain": "VALUATION_INFORMATION_SUPPLIED",
+          "text_en": "What role did you have in ACTÚA access, the units shown or the information supplied to the valuer?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0007-06",
+          "domain": "DEBT_ACCOUNTING_DOCUMENTS",
+          "text_en": "As president, what accounting, debt, certificate and budget material did you review or approve, and what supporting invoices/contracts existed?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0007-07",
+          "domain": "PAMANIL_PAMALEXSHA",
+          "text_en": "What was the legal/documentary basis for Pamanil/Pamalexsha administration, any transition between them, and Shaila/FMMM roles?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0007-08",
+          "domain": "AUTHORISATION_AC_JUDGE",
+          "text_en": "What AC/court/security authorisations did you receive or rely on and what did you tell providers about their scope?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0007-09",
+          "domain": "RELATIONSHIPS_NETWORK",
+          "text_en": "Describe your date-specific representation of Cristina Molina Petit, Inversiones Salinetas and other owners, and any separate relationship with CAM/JDAM/LPAM."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0007-10",
+          "domain": "ACCESS_SECURITY",
+          "text_en": "What did you know before 7 June 2018 and what did you approve, reject, document or reverse after the material-control event?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0007-11",
+          "domain": "LATER_USE",
+          "text_en": "Which Community decisions, debt/vote records or security/access outcomes were later relied on in 2022 title/project/works/financing/operation?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0007-12",
+          "domain": "DOCUMENT_CUSTODY",
+          "text_en": "Identify meeting calls, proxies, minutes, accounting, bank, security, access and provider records held by you, Pamalexsha or related companies."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0007-13",
+          "domain": "CONTRARY_EVIDENCE",
+          "text_en": "Provide any material showing inclusive notice, lawful authority, accurate accounts, limited security purpose, non-participation in excess or other exculpatory explanation."
+        }
+      ]
+    },
+    {
+      "target_id": "PD-SP-P-0008",
+      "target_name": "Shaila María Cogolludo Ramos",
+      "short": "Shaila",
+      "questions": [
+        {
+          "id": "QNOW-PD-SP-P-0008-01",
+          "domain": "COMMUNITY_GOVERNANCE_AUTHORITY",
+          "text_en": "What was your exact role in the 8 April 2014 Pamanil communication, the 2017 Community office record and the May 2018 meeting?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0008-02",
+          "domain": "PAMANIL_PAMALEXSHA",
+          "text_en": "What work did you perform for Pamanil, Pamalexsha and the Community in each period, and under what contract, mandate or instruction?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0008-03",
+          "domain": "DEBT_ACCOUNTING_DOCUMENTS",
+          "text_en": "What accounting, treasury, banking, debt, voting or certificate functions did you personally perform, approve or transmit?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0008-04",
+          "domain": "COMMUNITY_GOVERNANCE_AUTHORITY",
+          "text_en": "What involvement did you have in meeting calls, owner service, voting lists, proxies, minutes or post-meeting communications?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0008-05",
+          "domain": "ACCESS_SECURITY",
+          "text_en": "What communications, decisions or implementation acts did you perform concerning security, keys, locks, access rules or providers in 2017–2018?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0008-06",
+          "domain": "AUTHORISATION_AC_JUDGE",
+          "text_en": "Did you receive or transmit any AC/court authority concerning access/security/maintenance? Identify the native record and scope."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0008-07",
+          "domain": "RELATIONSHIPS_NETWORK",
+          "text_en": "Describe your work/ownership/family relationships separately; identify which, if any, were relevant to a specific Sun Park act. Family relationship alone is not an answer to act-specific attribution."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0008-08",
+          "domain": "ACCESS_SECURITY",
+          "text_en": "Were you present on 7 June 2018? If not, what did you know before the event and what did you approve, reject, adopt or reverse afterwards?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0008-09",
+          "domain": "LATER_USE",
+          "text_en": "What later Noalpa/Pamalexsha powers or corporate records exist, and why should they not be backdated into 2014–2018?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0008-10",
+          "domain": "DOCUMENT_CUSTODY",
+          "text_en": "Identify native Community/Pamanil/Pamalexsha emails, accounts, bank records, meeting papers, voting files and security/access communications in your custody."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0008-11",
+          "domain": "CONTRARY_EVIDENCE",
+          "text_en": "Provide material showing limits on your role, lack of instruction/knowledge, proper accounting/notice, or other exculpatory explanation."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0008-12",
+          "domain": "SOURCE_GAP",
+          "text_en": "The 19 June 2018 preparation document did not contain a separately headed Shaila question set. Which questions should now be put directly to you rather than inferred through questions addressed to others?"
+        }
+      ]
+    },
+    {
+      "target_id": "PD-SP-P-0010",
+      "target_name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "short": "Insolvency Administrator",
+      "questions": [
+        {
+          "id": "QNOW-PD-SP-P-0010-01",
+          "domain": "NOTICE_KNOWLEDGE",
+          "text_en": "By 18 May and 7 June 2018, what did you know about title, mixed ownership, Community authority, disputed debt/voting, ongoing hotel activity, guests/workers and the funded-exit route?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0010-02",
+          "domain": "AUTHORISATION_AC_JUDGE",
+          "text_en": "Identify every email/order/communication by which you proposed, authorised, limited or rejected security, access, forced entry, maintenance, breaking locks or changing keys."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0010-03",
+          "domain": "COMMUNITY_GOVERNANCE_AUTHORITY",
+          "text_en": "Why was the Community/security route used, what LPB voting/representation basis was invoked, and what independent verification of Community authority/notice/debt was performed?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0010-04",
+          "domain": "ACCESS_SECURITY",
+          "text_en": "What provider, president, administrator or CAM-side instructions did you see before the material-control event, and what did you do when you learned of any excess beyond your intended scope?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0010-05",
+          "domain": "ACCESS_SECURITY",
+          "text_en": "What did you report to the court immediately after 7 June concerning access, locks, guests/workers, LPB estate assets, Matkator/third-party property and operational disruption?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0010-06",
+          "domain": "VALUATION_INFORMATION_SUPPLIED",
+          "text_en": "What did you know about ACTÚA’s inspection perimeter, units shown, source information and later use of the valuation?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0010-07",
+          "domain": "CREDIT_FINANCE_OFFER",
+          "text_en": "What did you verify concerning CAM’s credit purchase, offer, Community agreement/debt assumption and title/possession capacity?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0010-08",
+          "domain": "TOURISM_OPERATION",
+          "text_en": "What protective action did you take concerning the ONA-funded exit, operating value and mixed LPB/Matkator/third-party rights?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0010-09",
+          "domain": "POST_EVENT",
+          "text_en": "What recovery, reversal, accounting, key/access inventory, injunction, police/court request or third-party protection did you attempt after notice?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0010-10",
+          "domain": "DOCUMENT_CUSTODY",
+          "text_en": "Produce the native authority emails, Community communications, security/access instructions, court reports, valuation correspondence, debt/certificate material and post-event accounting."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0010-11",
+          "domain": "CONTRARY_EVIDENCE",
+          "text_en": "Identify every document supporting your narrower lawful-maintenance/security explanation and every communication in which you rejected or attempted to reverse excess."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0010-12",
+          "domain": "SOURCE_2018",
+          "text_en": "The 19 June 2018 question bank repeatedly asked other actors whether they had your specific permission. What was the exact permission, to whom, when, for which spaces and under what limits?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0010-13",
+          "domain": "ACTOR_SEPARATION",
+          "text_en": "For each private actor, distinguish what you personally knew/authorised from what they may have done independently; do not answer by collective label."
+        }
+      ]
+    },
+    {
+      "target_id": "PD-SP-P-0057",
+      "target_name": "Alberto López Villarrubia",
+      "short": "Judge / judicial record",
+      "questions": [
+        {
+          "id": "QNOW-PD-SP-P-0057-01",
+          "domain": "JUDICIAL_RECORD",
+          "text_en": "Identify the exact requests, filings and evidence before the Commercial Court concerning security/access, title, Community authority, mixed ownership, hotel operation and the funded exit before and immediately after 7 June 2018."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0057-02",
+          "domain": "JUDICIAL_RECORD",
+          "text_en": "Was any order issued specifically authorising chains, lock changes, forced entry or whole-hotel access? If so, identify it; if not, make the absence/limit explicit from the certified docket."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0057-03",
+          "domain": "JUDICIAL_RECORD",
+          "text_en": "What reports did the Insolvency Administrator provide concerning the 18 May security route and the 7 June material-control event, and when were they received?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0057-04",
+          "domain": "JUDICIAL_RECORD",
+          "text_en": "What relief was requested to preserve LPB estate assets, Matkator/third-party property, ongoing operation and the ONA-funded exit, and how was each request resolved?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0057-05",
+          "domain": "JUDICIAL_RECORD",
+          "text_en": "What did the court know about disputed Community debt/voting and title/possession at each decision date?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0057-06",
+          "domain": "JUDICIAL_RECORD",
+          "text_en": "What orders required the Insolvency Administrator to account for access, keys, security, damage, income, works or third-party rights after the event?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0057-07",
+          "domain": "JUDICIAL_RECORD",
+          "text_en": "Reconcile the current certified record with the 19 June 2018 question bank’s contemporaneous question whether judicial permission had been obtained; the question itself proves no permission or refusal."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0057-08",
+          "domain": "JUDICIAL_RECORD",
+          "text_en": "Preserve favourable, neutral and adverse judicial acts separately; an adverse decision is not evidence of improper motive without the additional elements required by law."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0057-09",
+          "domain": "DOCUMENT_CUSTODY",
+          "text_en": "Identify the certified complete docket, audiovisual/appearance records, service/finality and any missing filings necessary to test these questions."
+        }
+      ]
+    },
+    {
+      "target_id": "PD-SP-P-0004",
+      "target_name": "Asunción Aizpurúa Sánchez",
+      "short": "AAS",
+      "questions": [
+        {
+          "id": "QNOW-PD-SP-P-0004-01",
+          "domain": "COMMUNITY_GOVERNANCE_AUTHORITY",
+          "text_en": "What exact owner/representation basis supported your Community office from 2011, and which powers were granted or limited?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0004-02",
+          "domain": "DEBT_ACCOUNTING_DOCUMENTS",
+          "text_en": "What debt/accounting basis was adopted in 2011 and later, who prepared it, and what invoices/contracts/bank evidence supported it?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0004-03",
+          "domain": "COMMUNITY_GOVERNANCE_AUTHORITY",
+          "text_en": "What was your role in litigation/allanamiento affecting Community quotas, voting and the Molina-linked owners?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0004-04",
+          "domain": "RELATIONSHIPS_NETWORK",
+          "text_en": "Which owners/entities did you represent or communicate with, separately from FMMM/Pamanil/Pamalexsha?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0004-05",
+          "domain": "PAMANIL_PAMALEXSHA",
+          "text_en": "What instructions or mandates were given to Pamanil/FMMM and how did later administration arrangements arise?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0004-06",
+          "domain": "DOCUMENT_CUSTODY",
+          "text_en": "Identify original minute books, proxies, accounting, debt schedules, service records and professional correspondence from the 2011–2016 transition."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0004-07",
+          "domain": "CONTRARY_EVIDENCE",
+          "text_en": "Provide records showing the lawful governance/debt rationale and any corrections to Gil/Aweswell’s allegations."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0004-08",
+          "domain": "TEMPORAL_BOUNDARY",
+          "text_en": "What later 2017–2018 acts, if any, did you participate in? Earlier office does not prove later participation."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0004-09",
+          "domain": "SOURCE_2018",
+          "text_en": "The 19 June 2018 question bank named you as part of the predecessor network. What primary records confirm or rebut the specific propositions rather than the label?"
+        }
+      ]
+    },
+    {
+      "target_id": "PD-SP-P-0014",
+      "target_name": "Cristina Molina Petit",
+      "short": "Cristina Molina",
+      "questions": [
+        {
+          "id": "QNOW-PD-SP-P-0014-01",
+          "domain": "TITLE_PROPERTY",
+          "text_en": "Identify the units/interests you held or represented and any transfers to CAM, with deeds, price and payment evidence."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0014-02",
+          "domain": "COMMUNITY_GOVERNANCE_AUTHORITY",
+          "text_en": "What Community votes, proxies, meetings or litigation positions did you take from 2008–2018?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0014-03",
+          "domain": "RELATIONSHIPS_NETWORK",
+          "text_en": "What representation did Antonio Cogolludo exercise for you in 2014/2015, and under what powers?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0014-04",
+          "domain": "DEBT_ACCOUNTING_DOCUMENTS",
+          "text_en": "What was your position on Community quotas/debt, and what accounting evidence supported it?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0014-05",
+          "domain": "TOURISM_OPERATION",
+          "text_en": "What was your position on CEXP/exploitation agreements, title habilitante and unitary operation?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0014-06",
+          "domain": "RELATIONSHIPS_NETWORK",
+          "text_en": "What communications did you have with FMMM/Pamanil/Pamalexsha and later CAM/JDAM/LPAM concerning Sun Park?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0014-07",
+          "domain": "ACCESS_SECURITY",
+          "text_en": "What, if anything, did you know or instruct concerning 2017–2018 access/security or valuation inspections?"
+        },
+        {
+          "id": "QNOW-PD-SP-P-0014-08",
+          "domain": "DOCUMENT_CUSTODY",
+          "text_en": "Identify deeds, proxies, Community correspondence, litigation files and CAM sale/transfer records in your custody."
+        },
+        {
+          "id": "QNOW-PD-SP-P-0014-09",
+          "domain": "CONTRARY_EVIDENCE",
+          "text_en": "Provide records supporting a lawful owner-rights explanation and rebutting allegations of a continuous coordinated plan."
+        }
+      ]
+    },
+    {
+      "target_id": "PD-SP-O-0007",
+      "target_name": "Construcciones Acosta Matos / CAM",
+      "short": "CAM entity lane",
+      "questions": [
+        {
+          "id": "QNOW-PD-SP-O-0007-01",
+          "domain": "CORPORATE_CAPACITY",
+          "text_en": "Identify the exact CAM legal entity involved at each stage: credit acquisition, unit purchases, offer, inspections, security/access, adjudication, works and later operation."
+        },
+        {
+          "id": "QNOW-PD-SP-O-0007-02",
+          "domain": "CREDIT_FINANCE_OFFER",
+          "text_en": "Produce the complete privileged-credit acquisition instrument, source-of-funds/payment record, commissions and internal approvals."
+        },
+        {
+          "id": "QNOW-PD-SP-O-0007-03",
+          "domain": "TITLE_PROPERTY",
+          "text_en": "Produce the finca-by-finca title ledger as at 2 Oct 2017, 18 May 2018 and 7 June 2018."
+        },
+        {
+          "id": "QNOW-PD-SP-O-0007-04",
+          "domain": "VALUATION_INFORMATION_SUPPLIED",
+          "text_en": "Produce ACTÚA engagement/instruction/source-data files and the exact unit inspection list."
+        },
+        {
+          "id": "QNOW-PD-SP-O-0007-05",
+          "domain": "COMMUNITY_GOVERNANCE_AUTHORITY",
+          "text_en": "Produce every agreement/communication with the Community, Pamanil/Pamalexsha, Antonio, Shaila or FMMM used in the insolvency offer or access/security route."
+        },
+        {
+          "id": "QNOW-PD-SP-O-0007-06",
+          "domain": "ACCESS_SECURITY",
+          "text_en": "Produce security/locksmith contracts, payer records, instructions, incident reports, keys/access logs and post-event accounting."
+        },
+        {
+          "id": "QNOW-PD-SP-O-0007-07",
+          "domain": "LATER_USE",
+          "text_en": "Trace each 2018 representation into 2021–2022 title/project/works/financing/operator documents and identify any correction or supersession."
+        },
+        {
+          "id": "QNOW-PD-SP-O-0007-08",
+          "domain": "CONTRARY_EVIDENCE",
+          "text_en": "Produce exculpatory records showing limited title, lawful inspection, no instruction of excess, objection/reversal or independent provider conduct."
+        }
+      ]
+    }
+  ],
+  "universal_questions": [
+    {
+      "id": "U01",
+      "domain": "CAPACITY_AUTHORITY",
+      "text_es": "¿Cuál era su identidad, cargo, mandato, poder o capacidad exacta en cada fecha relevante?",
+      "text_en": "What was your exact identity, office, mandate, power or capacity on each relevant date?"
+    },
+    {
+      "id": "U02",
+      "domain": "TITLE_PROPERTY",
+      "text_es": "¿Qué finca, derecho, crédito o facultad poseía realmente en cada fecha y qué escritura, asiento o documento primario lo acredita?",
+      "text_en": "Which property, right, credit or power did you actually hold on each date, and which deed, Registry entry or primary document proves it?"
+    },
+    {
+      "id": "U03",
+      "domain": "COMMUNITY_GOVERNANCE",
+      "text_es": "¿Qué autoridad de la Comunidad invocó, quién la otorgó, qué propietarios fueron convocados/representados y qué límites tenía?",
+      "text_en": "What Community authority did you rely on, who granted it, which owners were called/represented, and what limits applied?"
+    },
+    {
+      "id": "U04",
+      "domain": "DEBT_VOTE_ACCOUNTING",
+      "text_es": "¿Qué deuda, contabilidad, facturas, contratos, certificados y reglas de voto verificó personalmente antes de actuar o confiar en ellos?",
+      "text_en": "Which debt, accounts, invoices, contracts, certificates and voting rules did you personally verify before acting or relying on them?"
+    },
+    {
+      "id": "U05",
+      "domain": "MAY_2018",
+      "text_es": "¿Qué sabe y qué hizo respecto de la junta que el documento de 19-jun llama «17 de mayo» y cuyo ACTA canónica localizada está fechada 18-may-2018?",
+      "text_en": "What did you know and do regarding the meeting the 19-Jun source calls “17 May” and whose located canonical ACTA is dated 18-May-2018?"
+    },
+    {
+      "id": "U06",
+      "domain": "SECURITY_ACCESS",
+      "text_es": "¿Quién propuso, instruyó, contrató, pagó o ejecutó seguridad, cadenas, cerraduras, llaves, entradas forzosas o restricciones de acceso, y con qué alcance?",
+      "text_en": "Who proposed, instructed, contracted, paid for or implemented security, chains, locks, keys, forced entry or access restrictions, and with what scope?"
+    },
+    {
+      "id": "U07",
+      "domain": "AC_AUTHORITY",
+      "text_es": "¿Qué autorización concreta del Administrador Concursal existía, a quién se dio, cuándo, para qué espacios y con qué límites?",
+      "text_en": "What precise Insolvency Administrator authorisation existed, to whom was it given, when, for which spaces and under what limits?"
+    },
+    {
+      "id": "U08",
+      "domain": "COURT_AUTHORITY",
+      "text_es": "¿Qué resolución o autorización judicial concreta existía? Si no existía, ¿qué solicitud, conocimiento o respuesta consta realmente en el expediente?",
+      "text_en": "What precise judicial order or authorisation existed? If none existed, what request, notice or response is actually in the docket?"
+    },
+    {
+      "id": "U09",
+      "domain": "VALUATION",
+      "text_es": "¿Quién encargó ACTÚA, qué unidades se enseñaron, qué información de título/estado se suministró y cómo se utilizó después la valoración?",
+      "text_en": "Who instructed ACTÚA, which units were shown, what title/condition information was supplied, and how was the valuation later used?"
+    },
+    {
+      "id": "U10",
+      "domain": "CREDIT_FINANCE",
+      "text_es": "¿Cuál es la cadena completa de compra del crédito/oferta: entidad, vendedor, precio, fuente de fondos, comisiones, acuerdos con la Comunidad y condiciones?",
+      "text_en": "What is the complete credit-purchase/offer chain: entity, seller, price, source of funds, commissions, Community agreements and conditions?"
+    },
+    {
+      "id": "U11",
+      "domain": "7JUNE",
+      "text_es": "¿Estuvo presente el 7-jun-2018? Si no, ¿qué sabía antes y qué instruyó, aprobó, adoptó, rechazó, corrigió o revirtió después?",
+      "text_en": "Were you present on 7-Jun-2018? If not, what did you know beforehand and what did you instruct, approve, adopt, reject, correct or reverse afterwards?"
+    },
+    {
+      "id": "U12",
+      "domain": "EXPLOITATION_EXIT",
+      "text_es": "¿Qué sabía de CEXP, Pink/LPB/Matkator, la explotación en curso, clientes/trabajadores y la salida financiada ONA antes de actuar?",
+      "text_en": "What did you know about CEXP, Pink/LPB/Matkator, ongoing operation, guests/workers and the ONA-funded exit before acting?"
+    },
+    {
+      "id": "U13",
+      "domain": "DOWNSTREAM_USE",
+      "text_es": "¿Qué documento o resultado de 2017–2018 se reutilizó después en título, adjudicación, obras, financiación, RIC/RICPE, operación o ingresos, y por quién?",
+      "text_en": "Which 2017–2018 document or result was later reused in title, adjudication, works, financing, RIC/RICPE, operation or income, and by whom?"
+    },
+    {
+      "id": "U14",
+      "domain": "CUSTODY_CONTRARY",
+      "text_es": "Identifique los documentos nativos bajo su custodia y aporte también la prueba contraria o exculpatoria que limite, corrija o refute las alegaciones.",
+      "text_en": "Identify the native documents in your custody and also produce contrary or exculpatory evidence that limits, corrects or rebuts the allegations."
+    }
+  ],
+  "source_corrections": [
+    {
+      "id": "QB-COR-001",
+      "es": "El texto de 19-jun-2018 llama a FMMM “primo” de JDAM. FMMM declaró el 20-jul-2018 que no era primo de José Daniel Acosta Matos y que no tenía relación familiar con él. El sitio no adopta parentesco sin fuente primaria independiente.",
+      "en": "The 19-Jun-2018 text calls FMMM JDAM’s “cousin”. FMMM stated on 20-Jul-2018 that José Daniel Acosta Matos was not his cousin and that there was no family relationship. The site does not adopt kinship without an independent primary source."
+    },
+    {
+      "id": "QB-COR-002",
+      "es": "El texto pregunta por una junta de 17-may-2018. El ACTA canónica localizada está fechada 18-may-2018. Se preserva literalmente la pregunta de 17-may, pero no se convierte en hecho; cualquier reunión separada del 17-may sigue abierta.",
+      "en": "The text asks about a 17-May-2018 meeting. The located canonical ACTA is dated 18-May-2018. The 17-May wording is preserved literally but not converted into fact; any separate 17-May meeting remains open."
+    },
+    {
+      "id": "QB-COR-003",
+      "es": "El documento fue enviado a un abogado “para tu consideración”. La respuesta del abogado dice “Lo voy analizando” y remite un borrador distinto de preguntas para Gil. Por tanto, el banco de 251 preguntas no se describe como interrogatorio presentado, adoptado o formulado judicialmente.",
+      "en": "The document was sent to a lawyer “for your consideration”. Counsel replied “I am analysing it” and sent a different draft of questions for Gil. The 251-question bank is therefore not described as filed, adopted or actually put in court."
+    }
+  ]
+}
