@@ -1,5 +1,6 @@
 (() => {
   'use strict';
+  if (document.body?.dataset.recipientFocus === 'true') return;
 
   const VERSION = '20260824a';
 
