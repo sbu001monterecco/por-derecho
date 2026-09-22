@@ -76,5 +76,8 @@
     "unit_of_analysis": "professional_x_client_x_matter_x_period",
     "first_verified_firm_2012_plus": "Garrigues",
     "all_professionals_rule": "every register record enters the analysis universe without implying misconduct, causation or victim status"
-  }
+  },
+  "parent_ac_claim_control": "PD-AC-CLAIMS-R33-20260922-01",
+  "parent_ac_claim_family": "AC-CLM-011",
+  "ac_claim_crosswalk": "assets/data/ac-claims-r33-crosswalk-v1.json"
 }
