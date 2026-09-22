@@ -107,9 +107,9 @@ EXPECTED_NAME_RECORDS = {
         },
     },
     "E005": {
-        "canonical_name": "Aweswell Limited",
+        "canonical_name": "AWESWELL LIMITED",
         "identifier": {"type": "UK company number", "value": "07716847"},
-        "former_name": "Monterecco Sun Park Limited",
+        "former_name": "MONTERECCO SUN PARK LIMITED",
         "former_name_period": "2011-07-25/2014-06-03",
     },
     "E006": {
