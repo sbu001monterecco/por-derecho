@@ -406,16 +406,10 @@
     if (d.querySelector('link[data-pd-five-ac-css]')) return;
     const link = d.createElement('link');
     link.rel = 'stylesheet';
-    link.href = asset('five-actor-accountability-20260824.css?v=20260824b');
+    link.href = asset('five-actor-accountability-20260824.css?v=20260922a');
     link.dataset.pdFiveAcCss = '20260824b';
     d.head.appendChild(link);
   };
-
-  const portrait = (actor) => actor.image ? `
-    <span class="pd-five-ac__portrait-wrap">
-      <img class="pd-five-ac__portrait" src="${esc(actor.image)}" alt="${esc(actor.imageAlt)}" loading="eager" decoding="async">
-      <small class="pd-five-ac__portrait-note">${esc(actor.imageNote)}</small>
-    </span>` : '';
 
   const actorIds = new Map([
     ['Francisco Mario Matos Matas', 'fmmm'],
@@ -425,14 +419,54 @@
     ['Laura Patricia Acosta Matos', 'lpam']
   ]);
 
-  const actorCards = c.actors.map((actor) => `
-    <article class="pd-five-ac__card" data-number="${esc(actor.n)}" data-private-actor-card="${esc(actor.n)}" data-private-actor-id="${esc(actorIds.get(actor.name))}">
-      ${portrait(actor)}
+  const actorOrder = [
+    'Francisco Mario Matos Matas',
+    'Shaila María Cogolludo Ramos',
+    'Antonio Cogolludo Rojas',
+    'José Daniel Acosta Matos',
+    'Laura Patricia Acosta Matos'
+  ];
+  const actorByName = new Map(c.actors.map((actor) => [actor.name, actor]));
+  const orderedActors = actorOrder.map((name) => actorByName.get(name));
+  const actorCard = (actor, index) => {
+    const number = String(index + 1).padStart(2, '0');
+    return `
+    <article class="pd-five-ac__card" data-number="${number}" data-private-actor-card="${number}" data-private-actor-id="${esc(actorIds.get(actor.name))}">
       <span class="pd-five-ac__stage">${esc(actor.stage)}</span>
       <strong class="pd-five-ac__name">${esc(actor.name)}</strong>
       ${actor.rel ? `<span class="pd-five-ac__rel">${esc(actor.rel)}</span>` : ''}
       <span class="pd-five-ac__copy">${esc(actor.text)}</span>
-    </article>`).join('');
+    </article>`;
+  };
+  const trioCards = orderedActors.slice(0, 3).map(actorCard).join('');
+  const acostaCards = orderedActors.slice(3).map((actor, index) => actorCard(actor, index + 3)).join('');
+  const trioCaption = es
+    ? '<strong>Fotografía identificada por fuente.</strong> De izquierda a derecha: Francisco Mario Matos Matas; Shaila María Cogolludo Ramos; Antonio Cogolludo Rojas. Identificación facilitada por Patricia Domínguez y confirmada por Gil Marer; no procede de reconocimiento facial. El fondo verde azulado y crema es una edición editorial de visualización; la fotografía fuente preservada controla la procedencia.'
+    : '<strong>Source-identified photograph.</strong> Left to right: Francisco Mario Matos Matas; Shaila María Cogolludo Ramos; Antonio Cogolludo Rojas. Identification supplied by Patricia Domínguez and confirmed by Gil Marer; not derived from facial recognition. The teal/cream background is an editorial display edit; the preserved source photograph controls provenance.';
+  const trioBoundary = es
+    ? 'La fotografía aporta únicamente contexto de identidad y relación. No acredita por sí sola autoridad, coordinación, conocimiento, intención ni responsabilidad.'
+    : 'The photograph establishes identity/relationship context only. It does not establish authority, coordination, knowledge, intent or liability.';
+  const acostaCaption = es
+    ? '<strong>Recorte de fuente controlada.</strong> Gil Marer atribuye la fotografía más amplia, de izquierda a derecha, a Javier Acosta Matos, Laura Patricia Acosta Matos, José Daniel Acosta Matos y Gerardo Zacarías Acosta Matos; no procede de reconocimiento facial. El recorte centra a LPAM y JDAM.'
+    : '<strong>Controlled source crop.</strong> The broader photograph is attributed left to right by Gil Marer as Javier Acosta Matos, Laura Patricia Acosta Matos, José Daniel Acosta Matos and Gerardo Zacarías Acosta Matos; not derived from facial recognition. The crop centres LPAM and JDAM.';
+  const acostaBoundary = es
+    ? 'La imagen aporta únicamente contexto de identidad y relación. No acredita el objeto de los planos, autoridad, coordinación, conocimiento, intención ni responsabilidad.'
+    : 'The image establishes identity/relationship context only. It does not establish the subject of the plans, authority, coordination, knowledge, intent or liability.';
+  const actorVisualArchitecture = `
+    <section class="pd-five-ac__actor-cluster pd-five-ac__actor-cluster--trio" aria-labelledby="pd-five-ac-trio-title">
+      <figure class="pd-five-ac__cluster-figure">
+        <img src="${esc(asset('actors/fmmm-shaila-antonio-family-editorial-display-20260922.jpg'))}" width="2172" height="724" alt="${esc(es ? 'Fotografía identificada por fuente: Francisco Mario Matos Matas, Shaila María Cogolludo Ramos y Antonio Cogolludo Rojas, de izquierda a derecha' : 'Source-identified photograph: Francisco Mario Matos Matas, Shaila María Cogolludo Ramos and Antonio Cogolludo Rojas, left to right')}" loading="eager" decoding="async">
+        <figcaption id="pd-five-ac-trio-title">${trioCaption}<span class="pd-five-ac__image-boundary">${esc(trioBoundary)}</span></figcaption>
+      </figure>
+      <div class="pd-five-ac__cluster-cards pd-five-ac__cluster-cards--trio">${trioCards}</div>
+    </section>
+    <section class="pd-five-ac__actor-cluster pd-five-ac__actor-cluster--acosta" aria-labelledby="pd-five-ac-acosta-title">
+      <figure class="pd-five-ac__cluster-figure">
+        <div class="pd-five-ac__image-crop pd-five-ac__image-crop--acosta"><img src="${esc(asset('acosta-matos-family-hotel-plans.jpg'))}" width="738" height="420" alt="${esc(es ? 'Recorte de fuente controlada con Laura Patricia Acosta Matos y José Daniel Acosta Matos en el centro' : 'Controlled source crop with Laura Patricia Acosta Matos and José Daniel Acosta Matos in the centre')}" loading="eager" decoding="async"></div>
+        <figcaption id="pd-five-ac-acosta-title">${acostaCaption}<span class="pd-five-ac__image-boundary">${esc(acostaBoundary)}</span></figcaption>
+      </figure>
+      <div class="pd-five-ac__cluster-cards pd-five-ac__cluster-cards--pair">${acostaCards}</div>
+    </section>`;
 
   const institutionCard = (node, type) => `
     <article class="pd-five-ac__institution-card" data-institution-card="${type}">
@@ -485,7 +519,7 @@
       <div class="pd-five-ac__legend" aria-label="Evidence-status legend">${legend}</div>
       <div class="pd-five-ac__private">
         <div class="pd-five-ac__private-head"><span class="pd-five-ac__count" aria-hidden="true">5</span><div><span class="pd-five-ac__eyebrow">${esc(c.privateK)}</span><h3>${esc(c.privateT)}</h3></div><p>${esc(c.privateB)}</p></div>
-        <div class="pd-five-ac__cards">${actorCards}</div>
+        <div class="pd-five-ac__cards pd-five-ac__actor-architecture">${actorVisualArchitecture}</div>
         <p class="pd-five-ac__lock">${esc(c.locked)}</p>
       </div>
       <section class="pd-five-ac__institutional" aria-labelledby="pd-five-ac-institutional-title">

@@ -43,3 +43,13 @@ The shared direct-route component carries the same authorization lock and identi
 ## Unchanged evidence discipline
 
 This lock controls prominence and continuity, not adjudication. Every publication must continue to distinguish verified fact, attributed allegation, inference, official outcome, contrary evidence and proof outstanding. Relationship or institutional role does not itself establish knowledge, intent, causation, benefit or criminal liability.
+
+## Visual-integration addendum — 22 September 2026
+
+The protected bilingual homepage implementation now uses one continuous 3:1 source-derived photograph above three independently labelled records, in this order: Francisco Mario Matos Matas, Shaila María Cogolludo Ramos and Antonio Cogolludo Rojas. A separate controlled Acosta Matos source crop supports the independently labelled José Daniel and Laura Patricia records. Responsive reflow may stack these records, but it must not merge them or remove their names, dates, actor IDs, descriptions or evidential limits.
+
+Every reuse of the trio visual must retain the controlling provenance: Patricia Domínguez supplied the identification and Gil Marer expressly confirmed the left-to-right mapping; the identification is not derived from facial recognition. The restrained teal/cream background is an editorial display treatment. The preserved source photograph controls evidential provenance, and the derivative is not independent identity evidence.
+
+Every reuse must also preserve the visible boundary that the photograph establishes identity/relationship context only and does not establish authority, coordination, knowledge, intent or liability. A shared photograph, family relationship, company office, attendance or later economic relationship does not transfer conduct, knowledge, authority, causation, culpability or responsibility between actors.
+
+The Shaila and Antonio individual records may use clearly labelled layout crops from this same identified source derivative. The FMMM individual record retains its existing canonical individual portrait. No generated or inferred face may be substituted for any of the five actors, and automated rebuilding must not restore a “portrait awaiting verification” state where these controlled assets are available.

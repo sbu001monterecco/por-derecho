@@ -223,7 +223,8 @@ await inspect('Spanish homepage visibility', '/es/', [
   { label: 'Administrator and Judge cards', selector: 'section[data-pd-five-ac] [data-institution-card]', exactCount: 2 },
   { label: 'five complete linkage rows', selector: 'section[data-pd-five-ac] [data-linkage-row]', exactCount: 5 },
   { label: 'Administrator and Judge portraits loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__institution-portrait', exactCount: 2 },
-  { label: 'private actor canonical portrait loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__portrait', exactCount: 1 },
+  { label: 'two controlled private-actor visuals loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__cluster-figure img', exactCount: 2 },
+  { label: 'source-identified trio visual', selector: 'section[data-pd-five-ac] .pd-five-ac__cluster-figure img[src*="fmmm-shaila-antonio-family-editorial-display-20260922.jpg"]', exactCount: 1 },
   { label: 'Administrator acts and omissions', textSelector: 'section[data-pd-five-ac] [data-institution-card="administrator"]', includesAll: ['Actos afirmativos / comisiones alegadas', 'Omisiones alegadas'] },
   { label: 'Judge linkage named', text: 'Alberto López Villarrubia' }
 ], 'es-home.png', { openProgressive: false });
@@ -237,7 +238,8 @@ await inspect('English homepage visibility', '/en/', [
   { label: 'Administrator and Judge cards', selector: 'section[data-pd-five-ac] [data-institution-card]', exactCount: 2 },
   { label: 'five complete linkage rows', selector: 'section[data-pd-five-ac] [data-linkage-row]', exactCount: 5 },
   { label: 'Administrator and Judge portraits loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__institution-portrait', exactCount: 2 },
-  { label: 'private actor canonical portrait loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__portrait', exactCount: 1 },
+  { label: 'two controlled private-actor visuals loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__cluster-figure img', exactCount: 2 },
+  { label: 'source-identified trio visual', selector: 'section[data-pd-five-ac] .pd-five-ac__cluster-figure img[src*="fmmm-shaila-antonio-family-editorial-display-20260922.jpg"]', exactCount: 1 },
   { label: 'Administrator acts and omissions', textSelector: 'section[data-pd-five-ac] [data-institution-card="administrator"]', includesAll: ['Alleged affirmative acts / commissions', 'Alleged omissions'] },
   { label: 'Judge linkage named', text: 'Alberto López Villarrubia' }
 ], 'en-home.png', { openProgressive: false });
@@ -331,13 +333,14 @@ for (const [name, route, presentation] of lockedDirectRoutes) {
     ...['Francisco Mario Matos Matas', 'Antonio Cogolludo Rojas', 'Shaila María Cogolludo Ramos', 'José Daniel Acosta Matos', 'Laura Patricia Acosta Matos', 'Francisco de Borja Rodríguez-Batllori Laffitte', 'Alberto López Villarrubia'].map(person => ({ label: `identity ${person}`, text: person })),
     { label: 'forbidden Laura identity absent', absentText: 'Laura Isabel' },
     { label: 'Administrator and Judge portraits loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__institution-portrait', exactCount: 2 },
-    { label: 'canonical private-actor portrait loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__portrait', exactCount: 1 },
-    { label: 'approved FMMM portrait', selector: 'section[data-pd-five-ac] img[src*="actors/francisco-mario-matos-matas.jpg"]', exactCount: 1 },
+    { label: 'two controlled private-actor visuals loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__cluster-figure img', exactCount: 2 },
+    { label: 'approved source-identified trio derivative', selector: 'section[data-pd-five-ac] .pd-five-ac__cluster-figure img[src*="actors/fmmm-shaila-antonio-family-editorial-display-20260922.jpg"]', exactCount: 1 },
+    { label: 'approved controlled Acosta Matos crop source', selector: 'section[data-pd-five-ac] .pd-five-ac__cluster-figure img[src*="acosta-matos-family-hotel-plans.jpg"]', exactCount: 1 },
     { label: 'approved Administrator portrait', selector: 'section[data-pd-five-ac] img[src*="actors/francisco-de-borja-rodriguez-batllori.jpg"]', exactCount: 1 },
     { label: 'approved Judge portrait', selector: 'section[data-pd-five-ac] img[src*="actors/alberto-lopez-villarrubia.jpg"]', exactCount: 1 },
     { label: 'two evidence visuals loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__evidence-visuals img', exactCount: 2 },
     { label: 'approved PwC evidence visual', selector: `section[data-pd-five-ac] img[src*="${pwcGraphic}"]`, exactCount: 1 },
-    { label: 'approved family-plan evidence visual', selector: 'section[data-pd-five-ac] img[src*="acosta-matos-family-hotel-plans.jpg"]', exactCount: 1 },
+    { label: 'approved family-plan evidence visual', selector: 'section[data-pd-five-ac] .pd-five-ac__evidence-visuals img[src*="acosta-matos-family-hotel-plans.jpg"]', exactCount: 1 },
     { label: 'seven reciprocal dossier links', selector: 'section[data-pd-five-ac] .pd-five-ac__links a', exactCount: 7 },
   ], null, { openProgressive: false });
 }

@@ -6,7 +6,11 @@ on:
       - "assets/actors/**"
       - "assets/composites/**"
       - "assets/visual-asset-registry.json"
+      - "assets/five-actor-accountability-20260824.css"
+      - "assets/community-professional-corporate-network-20260825.css"
+      - "ops/REPOSITORY_PRESERVATION_CONTRACT.json"
       - "scripts/validate_visual_asset_registry.py"
+      - "scripts/validate_five_private_actor_visual_integration.py"
       - "**/*.html"
       - "**/*.js"
       - "**/*.md"
@@ -17,7 +21,11 @@ on:
       - "assets/actors/**"
       - "assets/composites/**"
       - "assets/visual-asset-registry.json"
+      - "assets/five-actor-accountability-20260824.css"
+      - "assets/community-professional-corporate-network-20260825.css"
+      - "ops/REPOSITORY_PRESERVATION_CONTRACT.json"
       - "scripts/validate_visual_asset_registry.py"
+      - "scripts/validate_five_private_actor_visual_integration.py"
       - "**/*.html"
       - "**/*.js"
       - "**/*.md"
@@ -42,3 +50,6 @@ jobs:
 
       - name: Validate canonical image identities, byte locks and composite slot maps
         run: python scripts/validate_visual_asset_registry.py
+
+      - name: Validate five-private-actor visual architecture and provenance
+        run: python scripts/validate_five_private_actor_visual_integration.py
