@@ -15,7 +15,7 @@
   "active_lane": {
     "id": "ECP-BOOTSTRAP-20260922",
     "owner_type": "CHATGPT_WORK_THREAD",
-    "human_controller": "Gil Marer",
+    "human_controller": "PROJECT_OWNER",
     "github_branch": "governance/evidence-control-plane-bootstrap-20260922",
     "gitlab_branch": "governance/evidence-control-plane-bootstrap-20260922",
     "scope": "GOVERNANCE_BACKEND_ONLY",
