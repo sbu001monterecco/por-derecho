@@ -160,3 +160,18 @@ The same institutional actor appearing across several lawyer transitions can jus
 **Cross-family rule.** Treat this episode jointly but non-fusively under `AC-CLM-005` (CAM €400k/title-authority), `AC-CLM-008` (fees/estate funds) and `AC-CLM-011` (professional intermediation/continuity). `AC-CLM-014` supplies broader R33 adversarial context only unless an exact R33 Parrilla passage is located. Do not fabricate a page-level link.
 
 **Acosta Matos boundary.** The direct transaction node is CAM. Wider Acosta Matos actors/entities remain connected through the existing canonical perimeter map, but this episode does not transfer knowledge, intent or liability to any individual or successor entity. Payment, refusal of a protective instruction and causation remain separate propositions.
+
+
+## 23 September 2026 — Gil clarification: 2016 burofax / funded-exit incompatibility
+
+Read `archive/declarations/019_GIL_PARRILLA_BUROFAX_PWC_FUNDED_EXIT_STATEMENT_23SEP2026.md`.
+
+Gil separately adopts the following propositions as his own statement:
+- the 2016 burofax refusal and later AC-removal/separation instruction episode are distinct;
+- he personally sent the 2016 burofax to the AC after Parrilla refused to adopt/send it;
+- there was no client-approved strategy in which LPB liquidation → CAM/Acosta Matos asset transfer → liquidation-created funds → Parrilla remuneration was an acceptable objective;
+- he alleges Parrilla's instruction refusals/non-follow-through materially weakened protection during the broader sequence, including the live ONA/funded-exit period.
+
+The 12–13 Jul 2016 refusal chain is independently located. A later DP1956 evidential filing expressly says the burofax and proof of sending/receipt were attached. The native delivery certificate still requires isolated re-authentication. Preserve contrary Parrilla conduct and procedural alternatives; do not convert Gil's allegation of wilful professional negligence into a finding.
+
+Cross-link: `AC-CLM-007` (funded exit), `AC-CLM-011` (professional instruction/continuity), with `AC-CLM-005/008` for the later CAM-sale/money chain.
