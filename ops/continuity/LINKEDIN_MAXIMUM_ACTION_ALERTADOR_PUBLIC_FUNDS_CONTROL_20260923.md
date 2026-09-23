@@ -214,3 +214,23 @@ The moment a browser/form-capable channel is available, the order is:
 **TS-RHA → /solve → TSO-DPO**, capturing a receipt after each before moving on.
 
 The written LinkedIn Ireland fallback escalation is already sent and verified in Sent mail; do not duplicate it while awaiting response.
+
+## 11. Executed maximum-action update — 23 September 2026
+
+### LinkedIn written channels
+- Primary written escalation to LinkedIn Ireland's current published fallback contact: **SENT + SENT-MAIL VERIFIED**.
+- Supplemental context for the same case **260923-005700**: **SENT + SENT-MAIL VERIFIED**. It records the maintained 2020–2021 reporting-person position, CNMV/AEAT 13-Jan-2021 checkpoint, later distinct GC/836/P06 / FEDER-ERDF / public-credit strands, and the explicit non-attribution boundary. It asks LinkedIn to associate the material with the same case rather than create a duplicate case.
+- Immediate verification found no bounce and no substantive acknowledgement. This is not treated as human receipt.
+
+### Active monitoring / escalation clocks
+- **Hourly LinkedIn response watch:** active. Notify only on substantive provider progress.
+- **24-hour no-response escalation checkpoint:** active. Re-evaluate official provider forms, INCIBE and regulator triggers; no PwC/GT/RSM contact.
+- **72-hour unresolved-case escalation checkpoint:** active. Re-evaluate DSA/CNMC, Article 21 ODS, AEPD/Irish DPC and cyber/law-enforcement triggers; no PwC/GT/RSM contact absent their reply.
+
+### Current unresolved provider-native execution blockers
+The following remain **NOT YET RECEIPTED** solely because the current connected-browser/form channel is unavailable:
+1. LinkedIn TS-RHA unauthorised-access/account-change form;
+2. LinkedIn /solve restricted-account form;
+3. LinkedIn TSO-DPO privacy/DPO form.
+
+These must be promoted to **SUBMITTED** and then **RECEIPTED** only on actual provider confirmation. No substitute email is to be falsely described as form submission.
