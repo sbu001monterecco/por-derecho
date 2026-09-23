@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "control_id": "PD-C212224-SOURCE-CORPUS-20260921-01",
-  "control_date": "2026-09-21",
+  "control_date": "2026-09-23",
   "status": "FULL_PAGE_AWARE_DIGITISATION_COMPLETE_AND_INTERLINKED",
   "definition": "Full digitisation means exact source identity and SHA-256 are locked, every source page is processed into the controlled text/index layer, and the source is reachable through the three-track repository graph. This status does not by itself certify court receipt, electronic incorporation or judicial reading, and does not require publication of every unredacted raw binary.",
   "totals": {
@@ -138,5 +138,15 @@
   },
   "canonical_reader": "data/three-track-full-digitisation-20260904.json",
   "canonical_continuity_graph": "assets/data/control-21-22-24-continuity-v1.json",
-  "audit": "archive/CONTROL_21_22_24_FULL_DIGITISATION_AND_INTERLINK_AUDIT_21SEP2026.md"
+  "audit": "archive/CONTROL_21_22_24_FULL_DIGITISATION_AND_INTERLINK_AUDIT_21SEP2026.md",
+  "upstream_sources": {
+    "AN2023": {
+      "outside_june_totals": true,
+      "date": "2023-09-21",
+      "pages": 88,
+      "source_pdf_sha512": "2c35052af7f869dfb13ca8593552a6997ee9f1f83a09299bcee883345482ae63b7502f76d6e85873b4b80c1b745d7a3c5797762400410e33c897140b9c36c2ab",
+      "manifest": "evidence/criminal/an-dp91-2023/source-manifest.json",
+      "lineage": "evidence/criminal/an-dp91-2023/AN2023_REF21_REF22_REF24_LINEAGE.md"
+    }
+  }
 }
