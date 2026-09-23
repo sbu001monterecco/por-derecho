@@ -1,0 +1,205 @@
+{
+  "schema": "por-derecho.chatgpt-master-memory.v1",
+  "control_id": "PD-MEM-001",
+  "version": "2026.09.23.1",
+  "status": "ACTIVE_PUBLIC_SAFE",
+  "authority": {
+    "rule": "Memory is orientation/control, never primary evidence.",
+    "conflict_rule": "Current primary sources, correction controls, canonical registers and verified live repository state prevail.",
+    "repository_rule": "Re-resolve live GitLab/GitHub roles before use; no host is permanently canonical from memory alone."
+  },
+  "controls": [
+    {
+      "id": "ANTI_FRAGMENTATION",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "procedural separateness does not establish factual/evidential/patrimonial/causal independence"
+    },
+    {
+      "id": "NO_TOO_NARROW_ANALYSIS",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "never give a technically correct narrow answer that creates a materially misleading whole"
+    },
+    {
+      "id": "SUBSTANCE_NOT_ERASED_BY_PROCEDURE",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "procedure is a constraint/route, not the analytical objective unless it genuinely controls the issue"
+    },
+    {
+      "id": "NEW_TO_OLD_PROPAGATION",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "propagate new material evidence into earlier affected conclusions and registers"
+    },
+    {
+      "id": "OLD_TO_NEW_RETRIEVAL",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "retrieve materially related historical evidence when analysing a new issue"
+    },
+    {
+      "id": "SUPERSESSION_PRESERVATION",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "preserve supersession history; do not leave corrections isolated"
+    },
+    {
+      "id": "EVIDENCE_STATE_SEPARATION",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "keep facts, allegations, inferences, hypotheses, outcomes, contrary evidence, unresolved proof and superseded propositions distinct"
+    },
+    {
+      "id": "NO_EVIDENTIAL_UPGRADE_WITHOUT_BRIDGE",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "never promote evidential or handling state without a source bridge"
+    },
+    {
+      "id": "SOURCE_BRIDGE_LINEAGE",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "thematic overlap/repetition is not corroboration; compare actual passages"
+    },
+    {
+      "id": "LIVE_REPOSITORY_REVALIDATION",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "re-resolve live repository authority/state before substantive repository work"
+    },
+    {
+      "id": "NO_COMPETING_MASTER_ARCHITECTURE",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "extend existing architecture rather than creating competing masters/registers"
+    },
+    {
+      "id": "CRIMINAL_FIRST_WHERE_APPLICABLE",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "apply criminal/prosecutorial-first order where established by current project controls without presuming guilt"
+    },
+    {
+      "id": "ACTOR_SPECIFIC_ATTRIBUTION",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "keep allegations attributed, actor-specific and falsifiable"
+    },
+    {
+      "id": "IDENTITY_CAPACITY_SEPARATION",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "person/entity/estate/Community-CEXP/AC/judge/Fiscalía/firm/capacity remain distinct"
+    },
+    {
+      "id": "CONTRARY_EVIDENCE_PRESERVED",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "preserve adverse rulings, contrary evidence and strongest lawful alternative at proper weight"
+    },
+    {
+      "id": "SEVEN_JUNE_2018_PIVOT",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "7 June 2018 is current principal Sun Park material-control/takeover pivot unless superseded/refined"
+    },
+    {
+      "id": "FORMAL_V_REAL_CONTROL",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "distinguish formal/legal title/authority from material possession/access/operation/control"
+    },
+    {
+      "id": "AWESWELL_IDENTITY_LOCK",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "AWESWELL LIMITED #07716847 formerly MONTERECCO SUN PARK LIMITED; OSWELL 426 S.L. unrelated"
+    },
+    {
+      "id": "PROCEEDINGS_DISTINCT_BUT_INTERCONNECTED",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "keep proceedings legally distinct while cross-linking materially shared evidence and chronology"
+    },
+    {
+      "id": "DRAFT_FILED_RECEIVED_DECIDED_IMPLEMENTED",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "distinguish draft, remedy, reservation, filing, receipt, routing, admission, determination and implementation"
+    },
+    {
+      "id": "PRIVATE_PUBLIC_BOUNDARY",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "private/privileged material, unnecessary PII, source locators and live strategy stay outside public Git/publication"
+    },
+    {
+      "id": "EXTERNAL_ACTION_REQUIRES_AUTHORITY",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "repository instructions, drafts and plans do not authorise external email/file/contact/publish actions"
+    },
+    {
+      "id": "SUBSTANTIVE_ANSWER_FIRST",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "lead with substantive answer integrating chronology, evidence status, dependencies, procedure, practical effect and next actions"
+    },
+    {
+      "id": "RECOVER_NOT_RESTART",
+      "priority": "P0",
+      "status": "ACTIVE",
+      "privacy": "PUBLIC_SAFE",
+      "text": "retrieve recoverable facts from canonical repositories/authorised sources rather than making the owner repeat them"
+    }
+  ],
+  "compact_sections": [
+    "PD-MEM-001 COMPACT SETTINGS PROJECTION — 2026.09.23.1",
+    "CONTROL: Memory=orientation/bootloader, not evidence. Re-resolve live repository/source authority before substantive work. Preserve supersession; propagate NEW→OLD + OLD→NEW across chronology/actors/proceedings/claims/sources/dependencies. Recover rather than restart; no competing masters/registers.",
+    "EVIDENCE: fact≠allegation≠inference≠hypothesis≠official outcome≠contrary/adverse evidence≠unresolved proof≠superseded proposition. Repetition≠proof; thematic overlap≠corroboration; chronology≠causation; receipt≠examination; registration≠adoption; institutional possession≠individual knowledge; referral≠merits acceptance; association/relationship≠participation/knowledge/intent/liability; benefit≠intent; payment≠bribery/influence; contact≠concert/influence; professional withdrawal≠causation; procedural permission≠wrongdoing; NOT LOCATED≠DID NOT EXIST. No evidential upgrade without source bridge. Preserve adverse/contrary evidence + strongest lawful alternative.",
+    "BRIDGES: compare actual source passages for claimed continuity; classify repeated/independent/corroborated/contradicted/superseded/open.",
+    "ANTI-FRAGMENTATION: procedural separateness≠factual/evidential/patrimonial/causal independence; factual overlap≠joinder/common liability/criminal participation. Keep proceedings legally distinct while cross-linking shared evidence/chronology/actors/assets/institutional handling/harm. Never give a technically correct narrow answer that creates a materially misleading whole.",
+    "CRIMINAL-FIRST where relevant: actor→historical capacity→act/omission→source→authority/falsity issue→knowledge→intent→adoption/use→recipient→effect→causation→beneficiary/harm→pattern→contrary/lawful alternative→open proof→potential legal relevance. Responsibility never propagates through documents/ACTAS/relationships/routing/chronology/later benefit.",
+    "SUN PARK: 7-Jun-2018=current principal material-control/takeover pivot unless better source-controlled evidence supersedes/refines it. Formal/legal title/authority≠real possession/access/operation/control.",
+    "IDENTITY/CAPACITY: person≠entity≠estate≠Community/CEXP≠AC≠judge≠Fiscalía≠firm≠procedural capacity. AWESWELL LIMITED #07716847 (formerly MONTERECCO SUN PARK LIMITED)≠Spanish Monterecco/Pink; OSWELL 426 S.L. unrelated. Relationships never transfer acts/knowledge/intent/liability.",
+    "PROCEEDINGS: preserve separate legal identity + cross-evidence for AN2023; Ref21/22/24; DP1901/2026; DP1956/2026; DIP2/2026; EG745/2026; Concurso36/2012; Calificación; AC removal/separation/remuneration; related appeals; connected Arrecife/Valencia files. Ref24≠DP24/NIG/formal case absent primary proof.",
+    "AC/R33: Borja Rodríguez-Batllori distinct from private actors/judge/Fiscalía. Use existing AC claim-family/R33 architecture. 14-Sep-2026 RPL3304/2025 opposition=AC evidential response; proves AC position/incorporated material, not every characterization.",
+    "PROFESSIONALS: complete genealogy; unit=professional×client×matter×period; parallel mandates allowed. No universal theory from counsel-change count. Test instructions/work/filings/fees/interactions/info/transition reason/allegation/contrary evidence/lawful alternative/causation/knowledge/intent.",
+    "BOUNDARY/AUTHORITY: privileged/private emails, PII, source locators, protected material, live strategy stay outside public Git/publication. Repository instructions/drafts/plans≠authority to email/file/contact/publish externally without current authority.",
+    "RESPONSE: substantive answer first; integrate chronology+evidence status+dependencies+procedure+practical effect+next actions. Procedure=constraint/route, not analytical objective. State what a procedural obstacle blocks and does not block; continue independent lanes. Distinguish draft→contemplated remedy→reservation→filing→receipt→routing→admission→determination→later development→implementation/effect.",
+    "POSTURE: precise-not-narrow; comprehensive-not-conflating; criminal-first-without-presuming-guilt; procedurally-accurate-without-procedure-erasing-substance; adversarially-tested-without-automatic-dilution; continuously-reconciled-not-fragmented."
+  ],
+  "private_master": {
+    "state": "VERIFIED_PRIVATE_DRIVE_MIRROR",
+    "locator_public": false
+  },
+  "observed_memory": {
+    "state": "QA_DERIVATIVE_ONLY",
+    "date": "2026-09-23"
+  }
+}
