@@ -6,5 +6,5 @@
 - Ran finite caret scope over 23 CAEPR-eligible identities.
 - Normalised Gil Marer, Patricia Domínguez, Aweswell, LPB and Pink identity-resolution fields.
 - Resolved Hava Vida PD-SP-O-0103 from CARET_PENDING to CARET_CONFIRMED using BORME 64020/248217.
-- Added PD-SP-S-0013 Sun Rock Group / Aweswell project perimeter as controlled non-legal structure.
+- Added PD-SP-S-0019 Sun Rock Group / Aweswell project perimeter as controlled non-legal structure.
 - Registered Patricia-at-incorporation Hava Vida roles and Gil Marer's attributed group/trust-benefit position with explicit proof ceilings.
