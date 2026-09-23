@@ -31,3 +31,11 @@ Do not attribute any LinkedIn restriction, report, profile edit, Google event, G
 - Machine-readable register: `assets/data/platform-integrity-events-v1.json`
 
 The public page requests preservation of native account-security, moderation, reporting and audit records while withholding authentication-bearing links, message IDs, private session/IP data and reporter identities.
+
+## Outbound LinkedIn escalation
+
+- Account Recovery / Trust & Safety lane: formal urgent restoration, preservation, trigger-classification, repeated-reporting review and enhanced-human-review request sent from the official business mailbox.
+- Privacy / DPO lane: formal Article 15 GDPR / UK GDPR access and preservation request sent separately, including source-information, stable-pseudonym fallback, automation/moderation records and preservation of withheld identifying material for lawful process.
+- Both notices point to the public-safe platform-integrity hub, the Por Derecho transparency / AI-control page and the public source-control repository.
+- No Gmail message IDs, authentication-bearing links, private security data or reporter identities are committed to the public repository.
+- DSA/platform-abuse review is requested through the user-facing support escalation; the authority-only Article 11 contact is not being used as the sole user channel.
