@@ -1,0 +1,30 @@
+{
+  "schema": "por-derecho.chatgpt-master-memory-sync-state.v1",
+  "memory_id": "PD-MEM-001",
+  "version": "2026.09.23.1",
+  "control_date": "2026-09-23",
+  "gitlab": {
+    "base_main": "db977edf059e6b6fb66c4f286c978a3c2f8c07d5",
+    "state": "CANDIDATE_BRANCH_PENDING_MERGE",
+    "branch": "governance/pd-mem-001-20260923"
+  },
+  "github": {
+    "base_main": "2798cbf236571e9fa8d413de08221bcfa2ab98a8",
+    "state": "PENDING_PORT_TO_GITHUB"
+  },
+  "drive_private": {
+    "state": "PENDING_CREATE_OR_UPDATE"
+  },
+  "chatgpt_memory": {
+    "state": "OBSERVED_DIGEST_EXISTS_USER_MANAGED_SETTINGS",
+    "boundary": "Settings Memory is not authoritative source"
+  },
+  "caret_audit": {
+    "scope": "PD-MEM-001 deliverable",
+    "eligible_denominator": 23,
+    "expected_confirmed": 23,
+    "structure_non_marker": 1,
+    "evidence_event_relationship_objects": 13,
+    "verdict": "PENDING_POST_WRITE_READBACK"
+  }
+}
