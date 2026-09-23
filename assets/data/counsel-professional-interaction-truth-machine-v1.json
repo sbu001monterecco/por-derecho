@@ -610,12 +610,18 @@
       "track": "FORMER_COUNSEL",
       "firm_ids": [],
       "matter_scope": "Concurso 36/2012 and related filings/transactions; also appears in Alas working-team correspondence.",
-      "interaction_state": "DIRECT_ECONOMIC_AND_INTERMEDIATION_SEQUENCE",
+      "interaction_state": "DIRECT_ECONOMIC_INTERMEDIATION_AND_NONFILING_SEQUENCE",
       "lane": "CONCURSO",
       "attribution_level": "DIRECT_PERSON_LEVEL",
-      "counterevidence_or_boundary": "Fee/payment/intermediation documented; bribery, criminal knowledge and sole exit causation not proved.",
+      "counterevidence_or_boundary": "Fee/payment/intermediation and a successor-counsel report of perceived conditioning are documented. The 9-Jan-2019 direct email also records Parrilla's stated evidentiary/procedural reason for opposing a broader filing before obtaining the deed and his proposal for a narrower production request. Lawful fee administration and professional judgment remain plausible explanations. Bribery, corrupt intent, criminal knowledge, collusion, judge participation and sole exit causation are not proved.",
       "coverage_status": "INCLUDED",
-      "truth_score": null
+      "truth_score": null,
+      "evidence_control": "assets/data/juan-tomas-parrilla-evidence-control-v1.json",
+      "source_closure": [
+        "Certified court/LexNET proof of whether the 4-Jan-2019 draft or the narrower deed-production request was filed.",
+        "Complete fee invoices, IGIC/cost allocation, authority, estate ledger and matching bank debit for the later AC-recorded payment.",
+        "Direct AC-Parrilla communications relevant to the fee/payment and incoming-counsel transition sequence."
+      ]
     },
     {
       "identity_id": "PD-SP-P-0046",
