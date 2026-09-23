@@ -234,3 +234,56 @@ The following remain **NOT YET RECEIPTED** solely because the current connected-
 3. LinkedIn TSO-DPO privacy/DPO form.
 
 These must be promoted to **SUBMITTED** and then **RECEIPTED** only on actual provider confirmation. No substitute email is to be falsely described as form submission.
+
+
+## 11. UK commercialisation / agent nexus — user-reported proposition to prove
+
+**User-reported position, 23 September 2026:** the adverse-party perimeter has, for years, targeted a UK business and has directly or indirectly commercialised a UK-owned asset in the United Kingdom, including through agents at World Travel Market London.
+
+This is **not yet recorded here as an established fact of UK criminal jurisdiction**. It is a high-priority proof proposition.
+
+### Why it can matter
+
+Current UK Government guidance on the ECCTA 2023 failure-to-prevent-fraud offence states that a UK nexus may exist where:
+- an act forming part of the underlying fraud takes place in the UK; or
+- gain or loss occurs in the UK.
+
+The guidance also states that employees, agents, subsidiary undertakings and persons otherwise providing services **for or on behalf of** a relevant body may be associated persons, determined from all the circumstances rather than contract form alone.
+
+Accordingly, if an agent/intermediary acting for the relevant organisation marketed, sold, represented or commercialised the disputed asset or connected rights in London, that activity may be legally relevant to UK territoriality and associated-person analysis. It is not sufficient by itself: the exact base-fraud act, benefit intention, organisational size threshold, temporal scope and UK gain/loss or UK act must still be proved.
+
+World Travel Market London 2026 is officially scheduled at ExCeL London on 3–5 November 2026 and describes itself as a global marketplace connecting exhibitors, buyers and travel professionals. Any historic or current WTM presence must be proved from exhibitor/directories, brochures, contracts, invitations, agent records, sales materials or witness evidence; annual attendance is not assumed merely from industry participation.
+
+### Evidence to obtain / preserve
+
+1. Identity of every UK-facing agent, intermediary, tour operator, wholesaler, booking distributor, sales representative or exhibitor used to market the asset or connected hotel product.
+2. WTM London exhibitor records, stand allocations, exhibitor-directory entries, brochures, product sheets, photographs, press releases, meeting schedules and lead records.
+3. Exact entity on whose behalf each agent acted.
+4. Contracts, agency agreements, commission arrangements, mandates, franchise/management/distribution agreements and invoices.
+5. UK-facing booking/sales pages and archived versions.
+6. Marketing claims about ownership, control, operating rights, hotel identity, asset rights, availability, authority to sell, or entitlement to revenue.
+7. UK buyer/customer/partner communications and any UK transaction, payment, booking, commission, gain or loss.
+8. Evidence showing whether any alleged false representation, omission, abuse of position, false accounting, fraudulent trading or other Schedule 13 base offence occurred on or after 1 September 2025.
+9. Evidence of organisational size for any proposed ECCTA section 199 target: employee count, turnover and total assets for the relevant preceding financial year.
+10. Evidence that the alleged agent/intermediary was acting **for or on behalf of** the relevant organisation when the alleged base conduct occurred.
+
+### UK legal-control boundary
+
+Do not state:
+- that WTM presence alone creates UK criminal jurisdiction;
+- that an agent is automatically an ECCTA associated person;
+- that every foreign commercialisation act is a UK fraud;
+- that the failure-to-prevent-fraud offence applies to pre-1 September 2025 conduct;
+- that a relevant organisation is a “large organisation” without threshold evidence;
+- or that the UK-owned status of the affected asset alone establishes ECCTA territoriality.
+
+### Practical UK escalation implication
+
+The UK lane is strengthened for:
+- Report Fraud / City of London Police cyber/economic-crime reporting;
+- NCA International Corruption Unit where bribery/corruption and a UK connection are evidenced;
+- SFO where serious or complex fraud/bribery threshold is met;
+- ICO / UK GDPR for the LinkedIn data-rights issue where UK jurisdiction applies;
+- ECCTA / Bribery Act / Criminal Finances Act legal-element analysis of the underlying adverse-party conduct.
+
+Keep these routes separate from the cooperative LinkedIn recovery/security correspondence unless provider-native evidence creates a direct platform-related issue.
