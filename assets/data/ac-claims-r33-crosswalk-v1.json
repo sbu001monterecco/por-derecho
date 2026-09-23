@@ -194,7 +194,22 @@
         "complete handover/fee files",
         "direct causation statements",
         "Bar/insurance records where lawfully obtainable"
-      ]
+      ],
+      "r33_nodes": [
+        "R33 p.5 · Joaquín withdrawal/apology",
+        "R33-P05-COUNSEL-DISCONTINUITY"
+      ],
+      "evidence_nodes": [
+        "4-Jan-2019 draft: AC conduct / express reserve of liability and separation actions",
+        "6-Jun-2019 opposition to calificación",
+        "19-Feb-2020 Article 215.2 providencia",
+        "Feb-Mar-2020 ratification / withdrawal-risk correspondence",
+        "25-May-2020 active 'escrito de remoción del cargo' workstream",
+        "21-Sep-2020 Joaquín withdrawal/apology",
+        "23-Apr-2025 filed separation application"
+      ],
+      "continuity_finding": "Joaquín ceased acting on 21-Sep-2020 and did not carry the AC-removal route through to the 23-Apr-2025 application; successor counsel had to continue/reconstruct that route.",
+      "causation_question": "Gil/Patricia allege AC conduct materially contributed to defence discontinuity. Test actor-by-actor against contemporaneous reaction, alternative causes, temporal proximity, capability/control, and subsequent workstream interruption; do not presume exclusive causation or unlawful purpose."
     },
     {
       "id": "AC-CLM-012",
@@ -240,7 +255,19 @@
         "complete source exhibits incorporated by R33",
         "court treatment of the opposition",
         "right-of-reply/correction record"
-      ]
+      ],
+      "r33_nodes": [
+        "R33 p.5 · selective use of Joaquín apology",
+        "R33-P05-NARRATIVE-COMPRESSION"
+      ],
+      "omitted_context_test": [
+        "pre-existing adverse/removal work concerning the AC",
+        "Article 215.2 personal-exposure event",
+        "immediate professional/ratification/withdrawal reaction",
+        "May-2020 removal workstream still active",
+        "Joaquín's later cessation and non-participation in the 2025 filed separation application"
+      ],
+      "reconstruction_rule": "Present the apology in full as genuine adverse evidence, then place beside it the contemporaneous chronology required to test whether R33 compresses cause/effect or overgeneralizes from one lawyer to successive counsel."
     }
   ],
   "canonical_routes": {
@@ -253,5 +280,6 @@
     "dp1956_es": "/es/dp-1956-2026/",
     "counsel_es": "/es/continuidad-defensa-letrados/",
     "counsel_en": "/en/counsel-defence-continuity/"
-  }
+  },
+  "version_note": "23-Sep-2026: page-5 Joaquín/Armando continuity and document-room wiring added to AC-CLM-011 and AC-CLM-014."
 }
