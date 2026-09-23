@@ -1,0 +1,80 @@
+{
+  "schema": "por-derecho.chatgpt-master-memory.v1",
+  "control_id": "PD-MEM-001",
+  "version": "2026.09.23.1",
+  "status": "ACTIVE_PUBLIC_SAFE_MASTER",
+  "authority_rule": "Current primary sources, corrections, canonical registers and verified live repository state prevail over conversational memory.",
+  "projections": {
+    "public_master": "governance/chatgpt-memory/MASTER_MEMORY_PUBLIC.md",
+    "compact": "governance/chatgpt-memory/MASTER_MEMORY_COMPACT.txt",
+    "observed": "ops/continuity/CHATGPT_MEMORY_OBSERVED_20260923.md",
+    "caret_audit": "ops/continuity/CHATGPT_MASTER_MEMORY_CARET_AUDIT_20260923.md"
+  },
+  "key_controls": [
+    "anti_fragmentation",
+    "no_too_narrow",
+    "procedure_substance",
+    "supersession",
+    "new_old_old_new",
+    "recursive_method",
+    "evidence_state_separation",
+    "source_bridge",
+    "live_repository_revalidation",
+    "identity_capacity_separation",
+    "criminal_first",
+    "7_june_2018_pivot",
+    "proceedings_graph",
+    "ac_r33",
+    "professional_truth_machine",
+    "privacy_action_authority",
+    "substantive_answer_first"
+  ],
+  "object_links": {
+    "people": [
+      "PD-SP-P-0001",
+      "PD-SP-P-0002",
+      "PD-SP-P-0010",
+      "PD-SP-P-0057",
+      "PD-SP-P-0009",
+      "PD-SP-P-0007",
+      "PD-SP-P-0008",
+      "PD-SP-P-0011",
+      "PD-SP-P-0012"
+    ],
+    "organisations": [
+      "PD-SP-O-0001",
+      "PD-SP-O-0002",
+      "PD-SP-O-0003",
+      "PD-SP-O-0004",
+      "PD-SP-O-0103"
+    ],
+    "institutions": [
+      "PD-SP-I-0002",
+      "PD-SP-I-0028",
+      "PD-SP-I-0029"
+    ],
+    "proceedings": [
+      "PD-SP-R-0001",
+      "PD-SP-R-0004",
+      "PD-SP-R-0005",
+      "PD-SP-R-0006",
+      "PD-SP-R-0011",
+      "PD-SP-R-0034"
+    ],
+    "evidence_events": [
+      "EVID-2026-DECANATO-REF21-DENUNCIA-001",
+      "REF22",
+      "EVID-2026-DECANATO-REF24-DENUNCIA-001",
+      "PD-AN2023-FULLTEXT-LINEAGE-20260923-01",
+      "PD-AN2023-REF21-REF22-REF24-LINEAGE-20260923-01",
+      "CTRL-2018-06-07",
+      "C36-SPECIALIST-R33"
+    ]
+  },
+  "caret_exception": {
+    "id": "PD-SP-O-0103",
+    "name": "Hava Vida Travel & Tourism, S.L.U.",
+    "state": "CARET_PENDING",
+    "reason": "Unresolved source-identifier/capacity conflict; do not force confirmation."
+  }
+}
