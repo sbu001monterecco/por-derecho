@@ -74,3 +74,26 @@ These are registration and attachment-identity findings only. Onward routing, ad
 
 **Español:** diez entregas registradas, 27 PDF con huellas verificadas, 1.272 páginas y 22 ilustraciones. Registro principal `REGAGE26e00082068814`; último `REGAGE26e00082070021`. No se acredita todavía admisión, incorporación, examen, conservación ni resultado de fondo. El programa DP1901 mantiene trece actuaciones y catorce asientos, con sus reservas anteriores.
 
+
+
+## 23 September 2026 — counsel-directed Plaza 6 documentary follow-up
+
+This is a **post-filing judicial follow-up** and does not alter the historic 20 September census of thirteen personal actions / fourteen registration events.
+
+Following Javier Sixto-Seijas's advice, Gil Marer submitted a narrow written documentary enquiry because he was not in a position to attend or telephone the court. The filing asks only for the initiating document of DP 1901/2026, the treatment of later Ref.21 private-actor material, and the resolution/act documenting any return, severance, transfer, reassignment or other destination. Gil remains a denunciante no personado; no merits argument, rectification request, personation or appeal was made.
+
+- Presentation: `S000000000000145381`
+- Presented: 23 September 2026 at 13:50
+- Route: Sede Judicial Electrónica de Canarias
+- Jurisdiction: Penal
+- Court: Plaza nº 6 del Tribunal de Instancia (Sección Instrucción)
+- Procedure: DP `0001901/2026`
+- NIG: `3501643220260016977`
+- Controlled private receipt: `326195_acuserecibo.pdf`
+- Controlled private filed PDF: `DP1901_CONSULTA_DOCUMENTAL_23SEP2026_FINAL.pdf`
+
+Counsel notification was sent to Javier Sixto-Seijas with Estefanía Sixto Seijas in CC; a short confirmation was also placed in the existing DP1901 “Próximos pasos” email thread.
+
+Proof ceiling: the receipt proves the recorded telematic presentation event to the named procedure. It does not by itself prove substantive incorporation, examination, agreement or response.
+
+Detailed continuity control: `ops/2026-09-23_DP1901_COUNSEL_DIRECTED_FOLLOWUP.md`.
