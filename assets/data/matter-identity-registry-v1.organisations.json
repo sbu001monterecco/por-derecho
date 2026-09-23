@@ -7,6 +7,7 @@
       "id": "PD-SP-O-0001",
       "type": "ORGANISATION",
       "name": "AWESWELL LIMITED",
+      "identity_resolution": "CARET_CONFIRMED",
       "aliases": [],
       "official_registered_name": "AWESWELL LIMITED",
       "company_number": "07716847",
@@ -25,6 +26,7 @@
       "id": "PD-SP-O-0002",
       "type": "ORGANISATION",
       "name": "Luchy Playa Blanca, S.L.U.",
+      "identity_resolution": "CARET_CONFIRMED",
       "aliases": [
         "Luchy Playa Blanca, S.L.",
         "LPB"
@@ -59,6 +61,7 @@
       "id": "PD-SP-O-0004",
       "type": "ORGANISATION",
       "name": "Pink Canary Services, S.L.U.",
+      "identity_resolution": "CARET_CONFIRMED",
       "aliases": [
         "Monterecco Sun Park, S.L.U.",
         "Pink Canary Services"
