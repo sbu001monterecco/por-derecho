@@ -175,14 +175,15 @@
       "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria",
       "Juzgado de Primera Instancia nº 27 de Valencia",
       "RAUDA",
-      "Hava Vida Travel & Tourism, S.L.U."
+      "Hava Vida Travel & Tourism, S.L.U.",
+      "Group Sun Rock / Sun Rock project perimeter"
     ]
   },
   "counts": {
-    "total": 380,
+    "total": 381,
     "PERSON": 176,
     "ORGANISATION": 100,
-    "STRUCTURE": 11,
+    "STRUCTURE": 12,
     "INSTITUTION": 49,
     "PROCEEDING": 44
   },
@@ -225,7 +226,7 @@
     {
       "path": "matter-identity-registry-v1.structures.json",
       "type": "STRUCTURE",
-      "count": 11
+      "count": 12
     },
     {
       "path": "matter-identity-registry-v1.institutions.json",
