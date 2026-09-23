@@ -1,0 +1,65 @@
+{
+  "schema": "por-derecho.hava-vida-aweswell-beneficial-position.v1",
+  "control_id": "PD-HV-AW-20260923-01",
+  "control_date": "2026-09-23",
+  "objects": {
+    "hava_vida": {
+      "caepr_id": "PD-SP-O-0103",
+      "canonical_id": "E051",
+      "name": "Hava Vida Travel & Tourism, S.L.U."
+    },
+    "patricia": {
+      "caepr_id": "PD-SP-P-0002",
+      "name": "Patricia Isabel Domínguez Montelongo"
+    },
+    "aweswell": {
+      "caepr_id": "PD-SP-O-0001",
+      "canonical_id": "E005",
+      "name": "AWESWELL LIMITED",
+      "company_number": "07716847"
+    }
+  },
+  "facts": [
+    {
+      "proposition": "Hava Vida was incorporated with operations beginning 26-Jan-2012; Patricia Isabel Domínguez Montelongo was sole shareholder and sole administrator.",
+      "status": "OFFICIAL_BORME_FACT_AT_INCORPORATION",
+      "source": "BORME-A-2012-27-38 entry 64020"
+    },
+    {
+      "proposition": "Hava Vida changed registered address to Calle Heraclio Sánchez 54, San Cristóbal de La Laguna on 31-May-2012.",
+      "status": "OFFICIAL_BORME_FACT",
+      "source": "BORME-A-2012-110-38 entry 248217"
+    },
+    {
+      "proposition": "The 21-Sep-2023 AN querella describes a project negotiated by LPB and Aweswell through Grupo Sun Rock with Hava Vida Travel & Tourism and others.",
+      "status": "PARTY_PLEADING_SOURCE_FACT_NOT_JUDICIAL_FINDING",
+      "source": "AN querella 21-Sep-2023"
+    }
+  ],
+  "attributed_positions": [
+    {
+      "attributed_to": "Gil Marer",
+      "date": "2026-09-23",
+      "proposition": "Hava Vida has always been thought of as part of the Aweswell / Group Sun Rock perimeter.",
+      "status": "OWNER_ATTRIBUTED_PROJECT_PERIMETER_POSITION"
+    },
+    {
+      "attributed_to": "Gil Marer",
+      "date": "2026-09-23",
+      "proposition": "Patricia's registered Hava Vida shares are understood by Gil Marer as held on trust for the benefit of AWESWELL LIMITED under UK-law thinking.",
+      "status": "OWNER_ATTRIBUTED_BENEFICIAL_TRUST_POSITION_OPEN_PROOF"
+    }
+  ],
+  "boundaries": [
+    "Do not state current 2026 Hava Vida shareholder/director status from the 2012 BORME alone.",
+    "Do not state a legally established trust or AWESWELL beneficial ownership without documentary and legal source bridges.",
+    "Do not transfer acts, knowledge, intent or liability across Patricia, Hava Vida, AWESWELL or Group Sun Rock by relationship alone."
+  ],
+  "proof_targets": [
+    "Trust/nominee instrument or declaration",
+    "Current Hava Vida share register and Spanish registry certificate",
+    "AWESWELL board/accounting/tax/investment records",
+    "Contemporaneous intention correspondence",
+    "Spanish/UK legal analysis"
+  ]
+}
