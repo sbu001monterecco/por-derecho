@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0",
+  "controlId": "PD-JTPS-IMG-4JAN-20260923-01",
+  "canonicalName": "Juan Tomás Parrilla Suárez",
+  "matter": "Luchy Playa Blanca, S.L.U. / Concurso Ordinario 36/2012",
+  "status": "EVIDENCE_CONTROL_OPEN_PROOF",
+  "image": {
+    "identityBasis": "USER_IDENTIFIED_SOURCE_IMAGE",
+    "independentFaceRecognition": false,
+    "derivative": "crop/sharpen; standing woman removed from left",
+    "binaryRepositoryStatus": "PENDING_EXACT_HEAD_UPLOAD",
+    "localPreparedName": "juan-tomas-parrilla-university-lecture-cropped-20260923.jpg",
+    "sha256": "1259a54151721a6b362d444d21ab3eba3f13a5ec672f9808231a59a7d00e34a8"
+  },
+  "role": {
+    "documented": "LPB insolvency counsel for several years; 2020 transition/substitution documented",
+    "clientClaim": "represented LPB from start of Concurso until 2020",
+    "exactStartReverifiedThisPass": false
+  },
+  "evidence": [
+    {
+      "id": "JTPS-2019-01-04-DRAFT",
+      "status": "DIRECT_DOCUMENT",
+      "finding": "Protective draft exists; filing not proved."
+    },
+    {
+      "id": "JTPS-2019-01-09-RATIONALE",
+      "status": "DIRECT_EMAIL",
+      "finding": "Deed-first/procedural rationale and narrower production request."
+    },
+    {
+      "id": "JTPS-2019-01-14-JUDGE-MEETING",
+      "status": "INTENDED_STEP_DIRECT_EMAIL",
+      "finding": "Intended judicial meeting recorded; occurrence/content not proved."
+    },
+    {
+      "id": "JTPS-2020-05-28-FEES",
+      "status": "DIRECT_EMAIL",
+      "finding": "AC–Parrilla fee-recognition/payment discussion reported; clients request written record and raise resignation concern."
+    },
+    {
+      "id": "JTPS-2020-07-26750",
+      "status": "AC_REPORTED_PAYMENT_OPEN_TRACE",
+      "finding": "€26,750 reported; bank/invoice/authority reconciliation open."
+    }
+  ],
+  "allegationStatus": "ATTRIBUTED_NOT_ADJUDICATED",
+  "chronologyLock": "2020 fee/payment evidence cannot by itself establish the cause of January 2019 advice.",
+  "wiring": [
+    "assets/data/legal-representation-ac-causation-v1.json",
+    "assets/data/ac-counsel-interference-unitary-v1.json",
+    "archive/AC_COUNSEL_INTERFERENCE_UNITARY_REDIGEST_21SEP2026.md",
+    "archive/COUNSEL_DEFENCE_CONTINUITY_REGISTER_23AUG2026.md",
+    "assets/data/ac-claims-r33-crosswalk-v1.json",
+    "AC-CLM-008",
+    "AC-CLM-011",
+    "AC-CLM-014"
+  ]
+}
