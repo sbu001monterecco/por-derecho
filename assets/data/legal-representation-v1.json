@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "controlDate": "2026-08-19",
+  "controlDate": "2026-09-23",
   "status": "PUBLIC-SEED-NOT-COMPLETE",
   "purpose": "Public-safe, machine-readable reconstruction of legal representation, legal-adviser, procurador and expert-witness interfaces across the Sun Park / Aweswell / LPB / Matkator matter. Designed as a backend source for later bilingual website views. Absence from this seed does not mean absence from the evidence base.",
   "method": {
@@ -434,7 +434,40 @@
       "openQuestions": [
         "Locate the original appointment, complete LexNET/court record and final file-transfer inventory.",
         "Obtain every invoice, IGIC and costs allocation, authority, bank debit and estate-ledger entry sufficient to reconcile the original fee, acknowledged receipts and EUR 26,750 Administrator payment."
-      ]
+      ],
+      "canonicalRoleStatement": "Juan Tomás Parrilla Suárez is canonically registered as former counsel of record for Luchy Playa Blanca, S.L.U. in Concurso Ordinario 36/2012, with verified activity from June 2012 through the 2020 change of legal direction. Exact initial appointment and formal termination dates remain subject to primary-source completion.",
+      "protectiveInstructionReview": {
+        "status": "ACTIVE_EVIDENTIAL_REVIEW",
+        "userAllegation": "Gil Marer alleges that Parrilla repeatedly declined legitimate and substantiated protective instructions in circumstances whose practical effect benefited the Acosta Matos perimeter and/or preserved the Administrador Concursal's position. Alleged influence by the Administrador Concursal and the concurso judge is a prosecution hypothesis requiring event-by-event proof; it is not stored as an established fact.",
+        "documentedExamples": [
+          "12–13 July 2016: refusal to review/send the proposed urgent burofax to the Administrador Concursal; contemporaneous correspondence must remain linked.",
+          "28 May 2018: refusal of proposed joint work/call with the forensic adviser and offer of resignation; contrary/contextual material must remain linked.",
+          "8 June 2018: refusal of the requested formal route to obtain Community material via the Administrador; later contrary acts/context must remain linked.",
+          "4 January 2019: complete draft pleading prepared in Parrilla's name requested protective relief, referral to Ministerio Fiscal and express reservation of responsibility/removal actions under then arts. 36–37 LC. Current control requires proof of whether it was filed, refused, withheld or otherwise not lodged, by whom, when and why."
+        ]
+      },
+      "january2019Draft": {
+        "date": "2019-01-04",
+        "title": "DENUNCIA ACTUACIÓN DESLEAL Y POSIBLE FRAUDE PROCESAL DEL ADMINISTRADOR CONCURSAL",
+        "proceeding": "Concurso Ordinario 36/2012 — Luchy Playa Blanca, S.L.U.",
+        "signatoryShown": "D. Juan Tomás Parrilla Suárez; Dña. Pilar García Coello",
+        "reliefSummary": [
+          "prevent/correct challenged cancellation of ob-rem linkage and possible sale",
+          "seek nullity of any challenged transaction already carried out",
+          "request referral to Ministerio Fiscal for possible criminal offences as framed in the draft",
+          "reserve responsibility and removal/separation actions under then arts. 36 and 37 LC"
+        ],
+        "sourceControl": "Drive file R33-context-2019-01-04-draft-ac-responsibility-separation-public.pdf and repository transcriptions/derivatives must be cross-hashed and reconciled.",
+        "filingStatus": "NO VERIFIED COURT-FILING RECEIPT IDENTIFIED IN THIS UPDATE; treat the non-filing/refusal question as an evidential question, not as an established motive."
+      },
+      "imageAsset": {
+        "canonicalSubject": "Juan Tomás Parrilla Suárez",
+        "localGeneratedAsset": "wide_indoor_conference_lecture_scene_a_meeting_or_1.png",
+        "sha256": "feee9b5b93188ad462f8ced5c9dc9c4ca6d9cdc825b74e4aae3f945bbf968481",
+        "editDescription": "documentary crop removing the standing woman on the left; sharpened/cleaned; seated male speaker retained as principal subject",
+        "binaryRepositoryStatus": "PENDING_BINARY_COMMIT",
+        "identityRule": "Image is registered to the actor record only on the user's identification plus source-chain verification; do not use facial recognition inference as the basis of identity."
+      }
     },
     {
       "id": "LREP-ENG-003",
