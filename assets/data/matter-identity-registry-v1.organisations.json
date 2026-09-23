@@ -19,7 +19,9 @@
         "Aweswelll",
         "AWESWELLL"
       ],
-      "identity_control": "This record has one current legal name and no current-name aliases. Forbidden variants are transcription/template errors. OSWELL 426 S.L. is a distinct Spanish entity."
+      "identity_control": "This record has one current legal name and no current-name aliases. Forbidden variants are transcription/template errors. OSWELL 426 S.L. is a distinct Spanish entity.",
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_boundary": "Canonical legal-person identity only; ownership, capacity, acts, knowledge, intent, status and liability remain proposition-specific."
     },
     {
       "id": "PD-SP-O-0002",
@@ -28,7 +30,9 @@
       "aliases": [
         "Luchy Playa Blanca, S.L.",
         "LPB"
-      ]
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_boundary": "Canonical legal-person identity only; ownership, capacity, acts, knowledge, intent, status and liability remain proposition-specific."
     },
     {
       "id": "PD-SP-O-0003",
@@ -62,7 +66,9 @@
       "aliases": [
         "Monterecco Sun Park, S.L.U.",
         "Pink Canary Services"
-      ]
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_boundary": "Canonical legal-person identity only; ownership, capacity, acts, knowledge, intent, status and liability remain proposition-specific."
     },
     {
       "id": "PD-SP-O-0005",
