@@ -243,3 +243,10 @@ Minimum LinkedIn closure conditions:
 - A merge is not a deployment; a deployment is not LIVE_VERIFIED until read back.
 - Every external representation must remain consistent with the current evidence classification.
 - A new provider response immediately restarts the loop.
+
+
+## Controlling communications rule
+
+External communications are additionally governed by `ops/continuity/LINKEDIN_EXTERNAL_COMMS_LINK_AND_HOLD_RULE_20260923.md`.
+
+That control requires both GitHub and GitLab public-context links in every future relevant external email, and places PwC, Grant Thornton and RSM in **WAITING FOR RESPONSE / NO FURTHER EMAIL** status until a reply, a new explicit owner instruction, or an expressly authorised genuinely new urgent preservation event.
