@@ -19,7 +19,10 @@
         "Aweswelll",
         "AWESWELLL"
       ],
-      "identity_control": "This record has one current legal name and no current-name aliases. Forbidden variants are transcription/template errors. OSWELL 426 S.L. is a distinct Spanish entity."
+      "identity_control": "This record has one current legal name and no current-name aliases. Forbidden variants are transcription/template errors. OSWELL 426 S.L. is a distinct Spanish entity.",
+      "related_structure_ids": [
+        "PD-SP-S-0012"
+      ]
     },
     {
       "id": "PD-SP-O-0002",
@@ -1081,6 +1084,9 @@
           "role": "Gil Marer's attributed beneficial-ownership/trust position in favour of AWESWELL LIMITED",
           "assertion_status": "OWNER_ATTRIBUTED_POSITION_OPEN_PROOF"
         }
+      ],
+      "related_structure_ids": [
+        "PD-SP-S-0012"
       ]
     }
   ]
