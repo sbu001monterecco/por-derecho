@@ -177,9 +177,9 @@
       "RAUDA"
     ]
   },
-  "counts": {"total":379,"PERSON":176,"ORGANISATION":99,"STRUCTURE":11,"INSTITUTION":49,"PROCEEDING":44},
+  "counts": {"total":380,"PERSON":176,"ORGANISATION":100,"STRUCTURE":11,"INSTITUTION":49,"PROCEEDING":44},
   "parts": [
-    {"path":"matter-identity-registry-v1.people.json","type":"PERSON","count":120},
+    {"path":"matter-identity-registry-v1.people.json","type":"PERSON","count":78},
     {"path":"matter-identity-registry-v1.professional-people.json","type":"PERSON","count":27},
     {"path":"matter-identity-registry-v1.joan-cruz.json","type":"PERSON","count":1},
     {"path":"matter-identity-registry-v1.la-laguna-judicial-people.json","type":"PERSON","count":11},
