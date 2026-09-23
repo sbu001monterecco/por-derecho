@@ -7,11 +7,11 @@
   "authenticated_gitlab_restoration_verified": false,
   "items": [
     {
-      "id": "IDENTITY_REGISTRY_515_VS_379",
+      "id": "IDENTITY_REGISTRY_515_VS_381",
       "status": "PENDING_GITLAB_RESTORATION",
       "github_route": "en/matter-identity-registry/index.html",
       "action": "VISIBLE_GAP_DISCLOSURE_ADDED",
-      "boundary": "GitLab aggregate 515-vs-379 freshness difference is disclosed; missing 136 identities are not reconstructed without exact source/object provenance."
+      "boundary": "GitLab aggregate 515-vs-381 freshness difference is disclosed; missing 134 identities are not reconstructed without exact source/object provenance."
     },
     {
       "id": "RICPE_27AUG_STATUS",
