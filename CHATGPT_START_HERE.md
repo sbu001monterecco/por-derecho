@@ -1,3 +1,7 @@
+## Global Clarification Loop / A-B-C-D — 23 September 2026
+
+For any material unresolved factual, interpretive, causal, numerical or source conflict, use **PD-CLAR-GLOBAL-20260923-01**: read `governance/GLOBAL_CLARIFICATION_LOOP_PROTOCOL_23SEP2026.md`, `assets/data/clarification-registry-v1.json`, `assets/data/clarification-answer-schema-v1.json` and `prompts/CLARIFICATION_SESSION_PROMPT_23SEP2026.md`. Reuse stable `CLAR-*` IDs; keep Gil and Patricia answers separate; A/B/C/D are neutral clarification states and free text is always allowed; human adoption is not verification; contradictory primary evidence reopens rather than deletes an answer. GitHub is canonical machine state, GitLab is parity/adversarial verification, private Drive/files hold source-grade statements/evidence, and email is optional transport only under `prompts/CLARIFICATION_EMAIL_TEMPLATE_PROTOCOL_23SEP2026.md`. No email sending is authorised by this control.
+
 ## Parrilla full-perimeter Truth Machine — 23 September 2026
 
 **Open clarification feeder:** before declaring the Parrilla reconstruction complete, execute `prompts/PARRILLA_TRUTH_MACHINE_OPEN_CLARIFICATION_FEEDER_23SEP2026.md` (`PD-JTP-CLARIFICATION-FEEDER-20260923-01`). It contains the current unresolved Gil/Patricia Statement-of-Truth questions and requires continuous generation of new clarification gates from contradictions, adverse evidence and missing causal links. Where useful in ChatGPT, use the A/B/C/D clarification pattern while always allowing free text.
