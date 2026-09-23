@@ -98,7 +98,7 @@
       "identity_boundary": "Hotel establishment/asset, not a legal person; identity does not determine current property title, manager liability or any person's project knowledge."
     },
     {
-      "id": "PD-SP-S-0013",
+      "id": "PD-SP-S-0019",
       "type": "STRUCTURE",
       "name": "Sun Rock Group / Aweswell project perimeter",
       "aliases": [
@@ -107,7 +107,7 @@
         "Sun Rock Group",
         "Aweswell / Group Sun Rock perimeter"
       ],
-      "identity_resolution": "CARET_NOT_APPLICABLE",
+      "identity_resolution": "CANONICAL",
       "identity_sources": [
         "Repository public/project controls using Sun Rock / Grupo Sun Rock / Sun Rock Group with Aweswell.",
         "Gil Marer statement 23-Sep-2026 concerning Hava Vida's intended/historic group treatment."
@@ -121,7 +121,9 @@
         "PD-SP-P-0001",
         "PD-SP-P-0002"
       ],
-      "classification": "CONTROLLED_PROJECT_PERIMETER_NOT_LEGAL_PERSON"
+      "classification": "CONTROLLED_PROJECT_PERIMETER_NOT_LEGAL_PERSON",
+      "caret_eligibility": "NOT_ELIGIBLE_NON_LEGAL_PROJECT_PERIMETER",
+      "presentation_caret_state": "CARET_NOT_APPLICABLE"
     }
   ]
 }
