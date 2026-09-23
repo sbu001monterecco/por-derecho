@@ -13,12 +13,19 @@ on:
       - 'evidence/judicial/june-2026-three-track/**'
       - 'data/an2023-ref21-ref22-ref24-lineage-20260923.json'
       - 'recovery_tests/test_an2023_ref21_ref22_ref24_lineage.py'
+
+permissions:
+  contents: read
+
 jobs:
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: '3.12'
       - run: python -m pip install --disable-pip-version-check pytest
