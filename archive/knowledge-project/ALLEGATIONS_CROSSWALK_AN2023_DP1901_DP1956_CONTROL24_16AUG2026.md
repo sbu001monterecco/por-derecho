@@ -1,5 +1,7 @@
 # CANONICAL ALLEGATIONS CROSSWALK — AN 2023 / DP1901 / DP1956 / CONTROL 24
 
+> **23 Sep 2026 canonical overlay — `PD-AN2023-REF21-REF22-REF24-LINEAGE-20260923-01`.** This legacy filename/title remains a retrieval locator. Canonical daily-reference labels are **Ref21, Ref22 and Ref24**. They are intake references, not DP/NIG numbers. The controlling 2023→June-2026 lineage is now `evidence/criminal/an-dp91-2023/AN2023_REF21_REF22_REF24_LINEAGE.md`, backed by the complete 88-page source manifest.
+
 **Status:** INTERNAL CANONICAL ALLEGATION LEDGER — NOT AUTO-PUBLISHED  
 **Date:** 16 August 2026  
 **Current-theory overlay:** 26 August 2026 — `ALG-ENT-018`

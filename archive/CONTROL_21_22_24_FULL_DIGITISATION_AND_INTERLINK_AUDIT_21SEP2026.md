@@ -71,3 +71,12 @@ Digitisation completeness does not close:
 - the certified Ref22 → DP1956 bridge;
 - the certified post-intake route/current custodian for Ref24;
 - the later mechanism by which judge-related material came to be treated in DP1901.
+
+## Upstream 2023 source closure — 23 September 2026
+The predecessor 21-Sep-2023 Audiencia Nacional querella is now complete at **88/88 pages** as a controlled upstream source. It is **not added to the 278-page June-source total**.
+- source PDF SHA-512: `2c35052af7f869dfb13ca8593552a6997ee9f1f83a09299bcee883345482ae63b7502f76d6e85873b4b80c1b745d7a3c5797762400410e33c897140b9c36c2ab`;
+- private verbatim master: `internal/evidence/an-dp91-2023/querella-21sep2023-verbatim.txt` (private GitLab only);
+- public-safe 88/88-page derivative: `evidence/criminal/an-dp91-2023/full-text/querella-21sep2023-full-public-transcription.md`;
+- lineage: `evidence/criminal/an-dp91-2023/AN2023_REF21_REF22_REF24_LINEAGE.md`.
+
+This closes the text-availability gap while retaining the frozen/dynamic boundary and public/private privacy boundary.

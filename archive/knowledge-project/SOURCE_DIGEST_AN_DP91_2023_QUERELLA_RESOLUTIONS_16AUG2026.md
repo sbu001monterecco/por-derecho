@@ -1,5 +1,7 @@
 # SOURCE DIGEST — AUDIENCIA NACIONAL QUERELLA 21 SEP 2023 / DP 91/2023 / APPEAL / CASSATION
 
+> **23 Sep 2026 source-completion overlay — `PD-AN2023-FULLTEXT-LINEAGE-20260923-01`.** The complete 88/88-page querella text is now source-addressable through `evidence/criminal/an-dp91-2023/source-manifest.json`. The private verbatim master is GitLab-only; the public repository carries a page-complete privacy-redacted transcription. Use `evidence/criminal/an-dp91-2023/AN2023_REF21_REF22_REF24_LINEAGE.md` before comparing the 2023 pleading with Ref21, Ref22 or Ref24.
+
 **Status:** INTERNAL KNOWLEDGE — SOURCE-FAITHFUL DIGEST — NOT AUTO-PUBLISHED  
 **Date of digest:** 16 August 2026  
 **Purpose:** make the 2023 pleading and its later procedural disposition searchable and reusable without converting pleaded allegations into established facts.

@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho.june-three-track-dual-version.v1",
-  "control_date": "2026-09-22",
+  "control_date": "2026-09-23",
   "principle": "FROZEN source-time transcription is immutable except privacy/security correction; DYNAMIC dossier may improve, correct, interlink and add later sourced context without rewriting the frozen source.",
   "tracks": {
     "REF21": {
@@ -61,5 +61,16 @@
     "Shared evidence does not merge proceedings or transfer knowledge, intent or responsibility.",
     "Ref21→DP1901 is contemporaneously corroborated; official creation/reparto and later Ref24 association history remain outstanding.",
     "Ref22 is contextual to the current Ref21/Ref24 identity collision and remains procedurally separate."
-  ]
+  ],
+  "upstream_sources": {
+    "AN2023": {
+      "date": "2023-09-21",
+      "pages": 88,
+      "source_pdf_sha512": "2c35052af7f869dfb13ca8593552a6997ee9f1f83a09299bcee883345482ae63b7502f76d6e85873b4b80c1b745d7a3c5797762400410e33c897140b9c36c2ab",
+      "public_page_complete_transcription": "../../criminal/an-dp91-2023/full-text/querella-21sep2023-full-public-transcription.md",
+      "source_manifest": "../../criminal/an-dp91-2023/source-manifest.json",
+      "canonical_lineage": "../../criminal/an-dp91-2023/AN2023_REF21_REF22_REF24_LINEAGE.md",
+      "relationship": "UPSTREAM_HISTORICAL_ALLEGATION_AND_SOURCE_LINEAGE_NOT_AUTOMATIC_PROOF"
+    }
+  }
 }

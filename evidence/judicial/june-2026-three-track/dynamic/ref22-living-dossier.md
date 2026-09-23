@@ -1,6 +1,6 @@
 # Ref22 — dynamic living dossier
 
-Updated: 21 September 2026
+Updated: 23 September 2026
 
 Ref22 is the 18 June 2026 complaint concerning the own conduct of the court-appointed Insolvency Administrator, Francisco de Borja Rodríguez-Batllori Laffitte, in administration, protection, liquidation and accounting of LPB's estate.
 
@@ -39,3 +39,8 @@ These remain allegations and requested inquiries, not adjudicated criminal findi
 ## Open proof
 
 Certified Ref22→DP1956 bridge; complete DP1956 docket/index and Fiscal material; any legally sufficient new evidence relevant to reopening; requested bank/accounting/title/registry/estate records.
+
+## Upstream source lineage — 2023 Audiencia Nacional querella
+The complete 88-page 21-Sep-2023 querella is now available through the [source manifest](../../../criminal/an-dp91-2023/source-manifest.json) and [page-complete public-safe transcription](../../../criminal/an-dp91-2023/full-text/querella-21sep2023-full-public-transcription.md). Use the [canonical AN2023 → Ref21 / Ref22 / Ref24 lineage](../../../criminal/an-dp91-2023/AN2023_REF21_REF22_REF24_LINEAGE.md).
+
+For Ref22, repetition of a 2023 proposition is lineage/reuse unless an independent source actually corroborates it. New 2026 evidence/events must be identified separately. Actor-specific knowledge, intent, causation and procedural identity do not transfer across tracks.

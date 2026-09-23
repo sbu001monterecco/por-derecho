@@ -1,6 +1,6 @@
 # Ref21 — dynamic living dossier
 
-Updated: 21 September 2026
+Updated: 23 September 2026
 
 **Role:** living forensic/legal reader. The frozen source controls what the complaint and later source documents actually said.
 
@@ -46,3 +46,8 @@ Initiating document; certified Ref21/Ref24 reparto history; full DP1901 index; 9
 ## Proof boundary
 
 No conclusion here that the collision was intentional, improper or criminal. Lawful routing, administrative association and mistake remain explanations to test against the same official records.
+
+## Upstream source lineage — 2023 Audiencia Nacional querella
+The complete 88-page 21-Sep-2023 querella is now available through the [source manifest](../../../criminal/an-dp91-2023/source-manifest.json) and [page-complete public-safe transcription](../../../criminal/an-dp91-2023/full-text/querella-21sep2023-full-public-transcription.md). Use the [canonical AN2023 → Ref21 / Ref22 / Ref24 lineage](../../../criminal/an-dp91-2023/AN2023_REF21_REF22_REF24_LINEAGE.md).
+
+For Ref21, repetition of a 2023 proposition is lineage/reuse unless an independent source actually corroborates it. New 2026 evidence/events must be identified separately. Actor-specific knowledge, intent, causation and procedural identity do not transfer across tracks.
