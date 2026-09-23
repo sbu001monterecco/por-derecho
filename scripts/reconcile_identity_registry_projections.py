@@ -66,7 +66,7 @@ def once(text: str, pattern: str, replacement, label: str) -> str:
 def project_page(text: str, counts: dict, stamp: str, lang: str) -> str:
     # The anonymous GitLab Pages denominator is an external comparison note, not
     # canonical registry data. Remove/reinsert it around numeric projection so
-    # the canonical count substitutions cannot rewrite the 515-vs-379 boundary.
+    # the canonical count substitutions cannot rewrite the 515-vs-current-canonical boundary.
     text = re.sub(
         r'<div class="id-note" id="(?:gitlab-public-registry-gap|brecha-registro-publico-gitlab)">.*?</div>\n?',
         '',
