@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "controlDate": "2026-09-21",
+  "controlDate": "2026-09-23",
   "status": "UPDATED_WITH_21SEP2026_UNITARY_COUNSEL_REDIGEST",
   "canonicalParent": "assets/data/legal-representation-v1.json",
   "humanControl": "archive/LEGAL_REPRESENTATION_AC_INTERFERENCE_CAUSATION_AUDIT_19AUG2026.md",
@@ -84,6 +84,12 @@
       "proposition": "The Joaquín/Alas record shows immediate personal-exposure and defence-team pressure after the Article 215.2 initiative, followed months later by withdrawal and apology evidence that is adverse to the client's theory.",
       "status": "MIXED_EVIDENCE_MATERIAL_PRESSURE_NOT_EXCLUSIVE_EXIT_CAUSATION",
       "qualification": "Cristo contemporaneously described the initiative as fear-inducing, but Joaquín later cited irreparable lawyer-client breakdown and withdrew subjective dishonesty characterisations. Both sides of the record are controlling."
+    },
+    {
+      "id": "LRAC-OF-011",
+      "proposition": "The 4-Jan-2019 draft / 9-Jan-2019 direct-email sequence materially narrows any formulation that Parrilla simply refused protective action without a stated professional basis: the current controlled record treats the broader draft as not filed, while Parrilla contemporaneously said he opposed a substantive filing before obtaining the deed and proposed a narrower court request for production; Rosa Gual agreed with that scope.",
+      "status": "DIRECT_EMAIL_AND_DOCUMENT_SEQUENCE_MIXED",
+      "qualification": "This supports a documented non-filing/professional-disagreement sequence and requires testing whether the narrower protective step was filed or performed. It does not establish corrupt motive, payment quid pro quo, collusion, criminal knowledge, or judge involvement."
     }
   ],
   "engagementAssessments": [
@@ -102,10 +108,12 @@
       "clientMatter": "LPB / Concurso 36/2012",
       "acWorkstreamImpact": "C3",
       "exitCausation": "C1-C2_CONTRIBUTING_ENVIRONMENT_NOT_EXCLUSIVE",
-      "documentedAlternativeCause": "Client-initiated substitution on 31 May 2020 framed as mutual loss of confidence; outgoing counsel accepted venia/transition. This remains the formal immediate cause.",
+      "documentedAlternativeCause": "Client-initiated substitution on 31 May 2020 was expressly framed as mutual loss of confidence; Parrilla accepted the venia/transition and explained a legal basis for routing his fee claim through the concurso. This remains the formal immediate cause and a material lawful alternative explanation.",
       "acSpecificFinding": "Protocol 2150 recites a 28 November 2018 €400,000 sale of 31 operational properties to CAM; the AC's 20 December report identifies the LPB Santander account, says the cheque became effective and says the AC paid itself remuneration; the 24 October 2019 order later refused convalidation. In the 28 May 2020 fee chain Parrilla stated that he expected the AC to pay €25,000 immediately and to recognise further estate fees. The same transition period records Parrilla conveying the AC's request to speak with incoming counsel. Jiménez's 1 June call report records peace/possible complaint withdrawal, assurance that Parrilla and the procurator would be paid from proceeding funds, praise of Parrilla and IA/CAM positions. The later controlled fee account records €32,250 received, a rejected €50,000 final proposal and a stated €17,750 + IGIC balance; the AC later recorded €26,750 paid. Gil/Patricia characterise the combined sequence as an illicit inducement / bribe-like intervention and false peace.",
-      "counterEvidence": "The client initiated Parrilla's substitution after loss of confidence. A properly invoiced and authorised estate payment may be ordinary administration. The 28 May negotiations were unstable and not themselves the final fee account. Exact invoice, tax/cost allocation, authority and recoverable excess remain open. The reports disclose the €400,000 liquidity sequence and Gil says it was the only available source, but the matching €26,750 bank debit is not independently recovered. Receipt does not prove Parrilla knowledge of criminal origin, bribery or collusion.",
-      "openQuestion": "Obtain the purchaser debit, LPB account credit, AC self-payment debits, complete Parrilla invoices/IGIC/cost allocation, authority, matching €26,750 debit and post-nonconvalidation ledger; distinguish each May/June fee proposal from the final accepted/authorised amount."
+      "counterEvidence": "The client initiated Parrilla's substitution after loss of confidence. Parrilla contemporaneously articulated a procedural/evidentiary rationale for not making the broader January 2019 filing before obtaining the deed and proposed a narrower protective request; Rosa Gual agreed with that scope. A properly invoiced and authorised estate payment may be ordinary administration. The 28-May negotiations were unstable and not themselves the final fee account. Exact invoice, tax/cost allocation, authority and recoverable excess remain open. The reports disclose the €400,000 liquidity sequence and Gil says it was the only available source, but the matching €26,750 bank debit is not independently recovered. Receipt does not prove Parrilla knowledge of criminal origin, bribery or collusion.",
+      "openQuestion": "Obtain certified court/LexNET evidence for the 4-Jan-2019 draft and the proposed narrower deed-production request; establish when the deed was obtained; recover the purchaser debit, LPB account credit, AC self-payment debits, complete Parrilla invoices/IGIC/cost allocation, authority, matching €26,750 debit and post-nonconvalidation ledger; distinguish each May/June fee proposal from the final accepted/authorised amount and obtain direct AC-Parrilla communications.",
+      "protectiveActionSequence": "A 4-Jan-2019 draft sought judicial intervention, Fiscalía referral and reservation of AC separation/responsibility actions concerning the AC. A controlled Drive copy is explicitly labelled 'NO PRESENTADA', and a 1-Jun-2020 project-side handover email later described the draft as not filed. Crucially, Parrilla's direct 9-Jan-2019 email gives his contemporaneous rationale: he wanted the deed before making a substantive nullity/fraud challenge, opposed a precipitous broader filing and proposed a narrower request that the court order production of the deed; Rosa Gual agreed with that scope. The certified court/LexNET filing record for both the broader draft and proposed narrower request remains open.",
+      "successorCounselCharacterisation": "On 18-Jun-2020 incoming counsel Daniel Jiménez contemporaneously said his team had broken off negotiations with Parrilla and the AC because he perceived an attempt to condition the successor team's work on fee payment, and said he did not want his own fees to depend on the AC's view. This is a direct attorney report of perceived conditioning, not proof of bribery, unlawful payment or corrupt purpose."
     },
     {
       "professional": "Cuatrecasas",
@@ -250,10 +258,10 @@
         "Juan Tomás Parrilla",
         "Administrador Concursal"
       ],
-      "event": "Fee/handover negotiations and direct AC-lawyer friction during Aweswell/LPB representation transition.",
-      "effect": "Added pressure and professional disagreement; Daniel objected to dependence of his fee position on AC/JT negotiations.",
+      "event": "Fee/handover negotiations and direct AC-lawyer friction during the Aweswell/LPB representation transition. On 18-Jun-2020 incoming counsel Daniel Jiménez contemporaneously characterised the negotiations with Parrilla and the AC as an attempted conditioning of the successor team's work on payment of fees and said he was uncomfortable depending on the AC for his own fees.",
+      "effect": "Adds direct successor-counsel evidence of perceived economic/professional pressure to the transition chronology, while remaining an attributed professional assessment rather than proof of corrupt inducement.",
       "exitLink": "BACKGROUND_CONTRIBUTOR_ONLY_ON_CURRENT_RECORD",
-      "strongestDefence": "The AC was managing matters arising within a concurso and enforcing role boundaries; Daniel's formal resignation identifies independent strategy and payment causes."
+      "strongestDefence": "Fee administration and settlement negotiation inside an insolvency proceeding may be legitimate; Daniel's formal resignation also records strategy, client-control and non-payment grounds, and the current record does not prove bribery, unlawful payment or corrupt purpose."
     },
     {
       "id": "LRAC-EVT-2020-002",
@@ -335,6 +343,20 @@
       "effect": "Created documented personal-exposure, reputation/insurance and defence-ratification pressure around the core pleading.",
       "exitLink": "MATERIAL_PRESSURE_SEQUENCE_EXCLUSIVE_CAUSATION_NOT_PROVED",
       "strongestDefence": "The order made no merits finding; later withdrawal cited irreparable lawyer-client breakdown and included apologies/withdrawal of subjective dishonesty characterisations."
+    },
+    {
+      "id": "LRAC-EVT-2019-PARRILLA-DRAFT-NONFILING",
+      "dateWindow": "2019-01-04/2019-01-09",
+      "actors": [
+        "Juan Tomás Parrilla Suárez",
+        "Luchy Playa Blanca",
+        "Cuatrecasas team",
+        "Administrador Concursal"
+      ],
+      "event": "A 4-Jan-2019 draft sought judicial intervention, Fiscalía referral and reservation of AC separation/responsibility actions. The current controlled source set treats that broader draft as not filed. On 9-Jan Parrilla directly explained that he first wanted the deed, opposed a broader substantive filing at that stage and proposed a narrower request for court-ordered production; Rosa Gual agreed with that scope.",
+      "effect": "Creates a concrete protective-action/non-filing issue but also supplies contemporaneous professional counterevidence against attributing the non-filing to an unstated improper motive.",
+      "exitLink": "BACKGROUND_TO_LATER_CONFIDENCE_BREAKDOWN_CAUSATION_OPEN",
+      "strongestDefence": "Parrilla gave a contemporaneous evidentiary/procedural reason for caution and proposed a narrower protective step. Certified docket evidence is still required to establish exactly what was or was not filed and performed."
     }
   ],
   "patternTests": {
@@ -362,7 +384,8 @@
       "Separate objective effect, AC knowledge/foreseeability and intent.",
       "Obtain certified access, service and consultation history for fee-account piece 36/2012, piece 11, and do not infer AC/CAM receipt from the LexNET wrapper.",
       "Obtain the purchaser debit, LPB account credit, complete estate ledger, AC remuneration debits, Parrilla invoices/IGIC/cost allocation/authority, matching €26,750 debit and post-nonconvalidation reconciliation before describing the trace as independently bank-complete.",
-      "Obtain the Cajasiete mortgage deed and current certified Registry entries before upgrading Gil's approximately €1m financing statement to verified public fact."
+      "Obtain the Cajasiete mortgage deed and current certified Registry entries before upgrading Gil's approximately €1m financing statement to verified public fact.",
+      "Obtain certified court/LexNET evidence establishing whether the 4-Jan-2019 broader draft and the 9-Jan proposed narrower deed-production request were filed, admitted, acted upon or left unfiled."
     ]
   },
   "wholePerimeterTruthMachine": {
