@@ -38,9 +38,10 @@
       "id": "IDENTITY_REGISTRY",
       "status": "RECOVERED_STALE_RECONCILIATION_REQUIRED",
       "github_control": "assets/data/matter-identity-registry-v1.json",
-      "known_count": 379,
+      "known_count": 381,
       "known_control_date": "2026-09-05",
-      "boundary": "Do not certify 17-Sep GitLab parity until exact delta reconciliation."
+      "boundary": "Do not certify 17-Sep GitLab parity until exact delta reconciliation.",
+      "current_reconciliation_note": "23-Sep-2026 PD-MEM-001 adds one organisation and one non-legal structure on the GitHub lane; current source-controlled denominator is 381. Historical outage anchor SHAs remain unchanged."
     },
     {
       "id": "PROCEEDINGS_REGISTRY",
@@ -52,7 +53,14 @@
       "id": "EVIDENCE_INTELLIGENCE",
       "status": "FUNCTIONAL_PARITY_SUBSTANTIAL",
       "github_control": ".github/evidence-intelligence/README.md",
-      "components": ["schemas", "source classes", "records", "retrieval pilot", "monitoring", "identity compatibility"]
+      "components": [
+        "schemas",
+        "source classes",
+        "records",
+        "retrieval pilot",
+        "monitoring",
+        "identity compatibility"
+      ]
     },
     {
       "id": "SECOND_PAIR_OF_EYES",
@@ -78,7 +86,11 @@
     {
       "id": "AGENT_GOVERNANCE",
       "status": "FUNCTIONAL_GITHUB_EQUIVALENT_ADDED",
-      "github_controls": ["AGENTS.md", ".github/copilot-instructions.md", "ops/duo/DUO_ORCHESTRATION_PROTOCOL_20260917.md"]
+      "github_controls": [
+        "AGENTS.md",
+        ".github/copilot-instructions.md",
+        "ops/duo/DUO_ORCHESTRATION_PROTOCOL_20260917.md"
+      ]
     },
     {
       "id": "PUBLIC_IMPACT_SHADOW",
@@ -95,12 +107,26 @@
     {
       "id": "GITLAB_DUO_EXECUTION_CONFIG",
       "status": "EXACT_BYTES_PENDING_PLATFORM_SPECIFIC",
-      "gitlab_paths": [".gitlab/duo/agent-config.yml", ".gitlab/duo/mr-review-instructions.yaml"]
+      "gitlab_paths": [
+        ".gitlab/duo/agent-config.yml",
+        ".gitlab/duo/mr-review-instructions.yaml"
+      ]
     },
     {
       "id": "GITLAB_NATIVE_METADATA",
       "status": "PLATFORM_NATIVE_UNRECOVERED",
-      "components": ["merge request discussions", "approvals", "work items", "Duo sessions and reviews", "pipeline history and artifacts", "CI variables", "runner state", "environments", "project/group settings", "Orbit/index state"]
+      "components": [
+        "merge request discussions",
+        "approvals",
+        "work items",
+        "Duo sessions and reviews",
+        "pipeline history and artifacts",
+        "CI variables",
+        "runner state",
+        "environments",
+        "project/group settings",
+        "Orbit/index state"
+      ]
     }
   ],
   "truth_rules": [
