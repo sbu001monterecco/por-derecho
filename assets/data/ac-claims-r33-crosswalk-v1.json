@@ -147,7 +147,21 @@
         "court-stamped exit submissions",
         "complete AC response chain",
         "counterfactual debt/value model"
-      ]
+      ],
+      "parrilla_funded_exit_bridge_20260923": {
+        "status": "ATTRIBUTED_CAUSATION_HYPOTHESIS",
+        "allegation": "Gil alleges Parrilla's failure/refusal to execute protective instructions and insufficient follow-through materially weakened LPB's position while the ONA/Clubotel funded-exit route was live.",
+        "boundary": "The record supports an active financed exit/better-offer workstream but does not establish inevitable closing or that Parrilla's conduct was a but-for or exclusive cause of failure.",
+        "test": [
+          "exact protective instruction",
+          "mandate/duty",
+          "response/reason",
+          "timing",
+          "counterfactual protective effect",
+          "alternative causes",
+          "financing/closing conditions"
+        ]
+      }
     },
     {
       "id": "AC-CLM-008",
@@ -276,6 +290,18 @@
           "independent resignation reasons"
         ],
         "rule": "Payment, refusal of a protective instruction and causation are separate propositions; none proves another."
+      },
+      "gil_clarification_20260923": {
+        "status": "ATTRIBUTED_PROFESSIONAL_FAILURE_ALLEGATION",
+        "allegations": [
+          "willful professional negligence",
+          "refusal/failure to pursue AC removal when instructed",
+          "refusal/failure to implement protective written communications",
+          "insufficient protective follow-through while funded exit was live"
+        ],
+        "source_status_2016_burofax": "Gil recalls a 2016 refusal. Current corpus proves 2016 escalation/burofax preparation but the clearest express instruction-conflict source presently locked is June 2017. Keep separate pending exact 2016 source.",
+        "no_displacement_rule": "Parrilla analysis does not reduce or transfer alleged responsibility of the AC, judge, CAM/Acosta Matos or historic dissident actors.",
+        "causation_rule": "Multiple contributing causes may coexist; test duty, act/omission, knowledge, timing, material effect, alternative causes and economic interaction actor by actor."
       }
     },
     {
@@ -365,5 +391,6 @@
     "dp1956_es": "/es/dp-1956-2026/",
     "counsel_es": "/es/continuidad-defensa-letrados/",
     "counsel_en": "/en/counsel-defence-continuity/"
-  }
+  },
+  "version_note": "undefined Gil clarification 23-Sep-2026: Parrilla alleged protective-instruction failures linked to the live ONA/Clubotel funded-exit context; 2016 burofax refusal remains attributed pending exact source, separate from source-stronger June-2017 instruction conflict."
 }
