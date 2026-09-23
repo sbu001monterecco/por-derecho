@@ -40,7 +40,7 @@ AC/R33: Francisco de Borja Rodríguez-Batllori Laffitte remains distinct from pr
 PROFESSIONALS: analyse complete genealogy; unit=professional×client×matter×period; parallel mandates allowed. Test each relationship separately against instructions, work, filings, fees, interactions, information then available, transition reason, project allegation, contrary evidence, lawful alternative, causation/knowledge/intent.
 
 ## Canonical identities
-AWESWELL LIMITED, company 07716847, formerly MONTERECCO SUN PARK LIMITED, is the canonical UK holdco. Noncanonical Oswell/Awesell/Awswell/Aweswel/Aweswelll forms are errors except clearly labelled historical source errors. OSWELL 426 S.L. is unrelated. Never conflate AWESWELL LIMITED with Spanish Monterecco/Pink.
+AWESWELL LIMITED, company 07716847, formerly MONTERECCO SUN PARK LIMITED, is the canonical UK holdco. Noncanonical spellings of Aweswell are transcription/template errors and must not be reproduced in repository-authored narrative except where an expressly controlled historical source-error treatment requires it. OSWELL 426 S.L. is unrelated. Never conflate AWESWELL LIMITED with Spanish Monterecco/Pink.
 
 Project-side Spanish-company set: Luchy Playa Blanca, S.L.U.; Matkator, S.L.U.; Pink Canary Services, S.L.U. (formerly Monterecco Sun Park, S.L.U.); Hava Vida Travel & Tourism, S.L.U.
 
