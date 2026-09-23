@@ -46,6 +46,22 @@
       "attribution": "trigger not established"
     },
     {
+      "id": "PD-PLAT-LI-20260923-ROUTING",
+      "platform": "LinkedIn",
+      "date": "2026-09-23",
+      "status": "PROVIDER_ROUTING_DOCUMENTED",
+      "summary": "LinkedIn auto-response for reference 260923-005700 stated that the legacy support email is not a current intake route and directed restricted-account matters to the current account-access form and DPO/privacy matters to the current DPO form.",
+      "attribution": "routing fact only; no substantive restriction explanation"
+    },
+    {
+      "id": "PD-PLAT-INSTITUTIONAL-20260923-PRESERVATION",
+      "platform": "Cross-institutional preservation",
+      "date": "2026-09-23",
+      "status": "NOTICES_SENT",
+      "summary": "PwC, Grant Thornton and RSM were notified through existing documented matter/relationship channels and asked to preserve relevant records, route internally, and consider independent Legal/Risk/Forensics/Cyber assistance.",
+      "attribution": "no allegation that any notified firm caused or participated in the LinkedIn incident"
+    },
+    {
       "id": "PD-PLAT-GOOGLE-2021-2026",
       "platform": "Google Business Profile",
       "date_range": "2021-10-28/2026-01-08",
@@ -82,4 +98,4 @@
       "/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/"
     ]
   }
-}
+}\n
