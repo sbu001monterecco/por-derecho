@@ -69,3 +69,19 @@ Every new LinkedIn/provider/regulator/firm response must:
 OBSERVE → PRESERVE → CLASSIFY → COMPARE → DECIDE NEXT TRIGGER → UPDATE GITHUB/GITLAB → UPDATE DRIVE PRIVATE ENVELOPE → VERIFY → RECURSE.
 
 No lane is closed merely because access is restored.
+
+## 6. Tone and relationship rule
+
+All LinkedIn-incident communications should use a senior, human, constructive tone:
+
+- professional and calm;
+- positive and forward-looking;
+- relationship-centric rather than transactional;
+- appreciative of the recipient's role and capacity to help;
+- precise about evidence and preservation without sounding accusatory;
+- firm on access, transparency, preservation and legal rights without threatening language;
+- explicit that the objective is to understand what happened, restore normal service, preserve the record and work constructively with the provider/institution;
+- open to correction and innocent/technical explanations;
+- no rhetorical escalation, motive attribution or suggestion that silence equals admission.
+
+Preferred posture: **"We value the relationship and want to resolve this correctly together. Please help us understand the provider-native record, preserve it, and restore normal access while the facts are established."**
