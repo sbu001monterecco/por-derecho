@@ -12,6 +12,14 @@
 - At the time of the review, no fresh LinkedIn restriction/moderation email explaining the 23 September event was located.
 - Historical cases 241020-015316 and 241028-011722 were both restored after identity verification; LinkedIn described detected suspicious activity but did not identify an external actor.
 
+## Bounded cross-platform controls
+
+- Google Business Profile: documented management-request and profile-state events are preserved; who caused later closure states remains open.
+- GitLab: the September 2026 account-level 403 is preserved with provider support references; a temporary login-lock mechanism was considered but did not explain the full observed duration. No external actor is established.
+- GitHub: the September 2026 user-facing access-path interruption is kept separate from the connected integration and Pages, which remained operational. Cause and scope remain open.
+
+These events are grouped for preservation and continuity only. They do not establish a common actor or mechanism.
+
 ## Mandatory proof boundary
 
 Do not attribute any LinkedIn restriction, report, profile edit, Google event, GitHub/GitLab access incident or other platform event to a named person without provider-native evidence. Possible motive or incentive is contextual evidence only. Chronology is not causation; repeated events are not proof of agreement, conspiracy or criminal liability.
