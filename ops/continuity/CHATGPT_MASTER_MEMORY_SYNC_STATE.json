@@ -1,0 +1,22 @@
+{
+  "schema": "por-derecho.chatgpt-master-memory.sync-state.v1",
+  "control_id": "PD-MEM-001",
+  "version": "2026.09.23.1",
+  "as_of": "2026-09-23",
+  "gitlab": {
+    "state": "BRANCH_IMPLEMENTED_PENDING_MERGE_READBACK",
+    "private_locator": false
+  },
+  "github": {
+    "state": "BRANCH_IMPLEMENTED_PENDING_MERGE_READBACK",
+    "private_locator": false
+  },
+  "google_drive": {
+    "state": "VERIFIED_PRIVATE_MIRROR",
+    "locator": "WITHHELD_FROM_PUBLIC_REPO"
+  },
+  "chatgpt_settings": {
+    "state": "OBSERVED_DERIVATIVE_QA_ONLY"
+  },
+  "completion_rule": "Complete only after repository merge/readback and private Drive readback; Settings memory need only preserve P0 invariants."
+}
