@@ -164,3 +164,40 @@ Gil's source statement is affirmative: **he personally sent the July-2016 burofa
 ## 11. PwC interconnection rule
 
 The 2016 Parrilla/burofax episode must remain reciprocally linked to the existing PwC/Landwell-PwC controls, including the controlled 10/11-Jun-2016 meeting/transcript family and AC/PwC communication lane. This establishes contemporaneous professional involvement and potential knowledge/custody routes. It does not transfer Parrilla's alleged professional responsibility to PwC or convert PwC's participation into adoption of Gil's allegations.
+
+## 12. Perimeter correction and Truth Machine instruction
+
+**Controlling correction from Gil:** the protected client/economic perimeter must not be reduced to LPB or to acts formally inside Concurso 36/2012. The relevant platform was the **sole-shareholder / sponsor-owner perimeter around AWESWELL LIMITED and its connected Sun Park interests**, with LPB as one component and with rights, assets, claims, companies, financing, operations and recovery strategies both **inside and outside the concurso**.
+
+Accordingly, every Parrilla interaction envelope must test:
+- formal client/capacity for the particular instruction;
+- the affected entity/right/asset;
+- whether the issue sat inside or outside Concurso 36/2012;
+- foreseeable effect on the wider sole-shareholder/platform perimeter;
+- coordination with other advisers acting for connected parts of that perimeter.
+
+Do not use “LPB counsel” as an analytical device that artificially atomises consequences outside LPB.
+
+### Parrilla conduct taxonomy
+
+Gil alleges a **repeated pattern of omissions and commissions**, not one isolated failure. The Truth Machine must therefore maintain a finite instruction/action ledger rather than using the AC-removal application as a proxy for the whole professional case.
+
+At minimum, keep distinct:
+1. 2016 burofax instruction/refusal;
+2. later AC separation/removal instruction and non-filing/failure allegation;
+3. Community/debt/accounting protection and information issues;
+4. 2018 access/control/security and liquidation protection;
+5. CAM offer/credit/valuation/€400k transaction challenge and follow-through;
+6. ONA/Clubotel/finance-backed exit protection and implementation;
+7. Registry/title/unwind consequences after the non-convalidated transaction;
+8. fee/payment/intermediation and transition conduct in 2019–2020;
+9. any affirmative communication, advice, concession, omission, delay or act alleged to have weakened the wider platform's position.
+
+For each row apply:
+**instruction/expected duty → actor/capacity → omission or commission → contemporaneous reason → documentary support → contrary evidence → material effect → alternative cause → Gil's allegation → legal/deontological/criminal characterisation to be tested.**
+
+### Influence allegation boundary
+
+Gil attributes Parrilla's repeated failures/acts to **influence by the Administrador Concursal and the insolvency judge**. Preserve this as Gil's causal allegation and investigative hypothesis. Do not promote influence, agreement, pressure, corrupt purpose or judicial involvement to established fact without actor-specific evidence.
+
+The analysis must nevertheless remain unitary: absence of proof of a corrupt agreement does not justify fragmenting the underlying instruction, transaction, payment, judicial and professional chronologies.
