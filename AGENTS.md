@@ -658,3 +658,7 @@ Whenever Francisco de Borja Rodríguez-Batllori Laffitte, the Administrador Conc
 - Shared evidence may connect removal, remuneration, criminal, professional-interference and appellate lanes without procedurally merging them. DP 1956 remains the actor-specific AC criminal route; DP 1901 is cross-evidence only.
 - For counsel/professional claims, apply both `PD-LAW-TRUTH-20260922-01` and the relevant AC claim family, especially `AC-CLM-011`.
 - Public pages must retain bidirectional links between the AC hub, R33, separation/remuneration, DP 1956 and the controlled claim register.
+
+
+## PD-MEM-001 — ChatGPT Master Memory bootstrap — 23 September 2026
+For every substantive Por Derecho / Project Sun Rock thread, treat `governance/chatgpt-memory/README.md` and `governance/chatgpt-memory/MASTER_MEMORY_PUBLIC.md` as the public-safe Master Memory control plane. ChatGPT Settings Memory is a compressed bootloader/QA derivative, not evidential or repository authority. Re-resolve live repository state, then load the applicable specialist controls and primary sources. Do not create a competing master-memory architecture or make Gil repeat recoverable context. Private full-memory material remains in approved private custody and must not be reconstructed into public Git from memory.
