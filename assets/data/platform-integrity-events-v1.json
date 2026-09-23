@@ -62,6 +62,22 @@
       "attribution": "no allegation that any notified firm caused or participated in the LinkedIn incident"
     },
     {
+      "id": "PD-PLAT-LI-20260923-IMPRINT-ESCALATION",
+      "platform": "LinkedIn",
+      "date": "2026-09-23",
+      "status": "WRITTEN_ESCALATION_SENT_VERIFIED",
+      "summary": "A professional account-access/security routing request was sent to LinkedIn Ireland's currently published alternative written-contact address (info_impressum@cs.linkedin.com), referencing case 260923-005700 and the public GitHub/GitLab context. Sent-mail readback verified the outbound message; no immediate bounce or substantive acknowledgement was located.",
+      "attribution": "delivery/routing fact only; does not establish review, acceptance, cause or actor"
+    },
+    {
+      "id": "PD-PLAT-LI-20260923-RHA-ROUTE",
+      "platform": "LinkedIn",
+      "date": "2026-09-23",
+      "status": "PROVIDER_SECURITY_ROUTE_IDENTIFIED",
+      "summary": "LinkedIn's current compromised-account guidance directs members who cannot access the account and noticed changes or suspect unauthorised access to the Report Unauthorized Account Access or Changes form (TS-RHA) as soon as possible.",
+      "attribution": "provider-published security route; form submission receipt still required"
+    },
+    {
       "id": "PD-PLAT-GOOGLE-2021-2026",
       "platform": "Google Business Profile",
       "date_range": "2021-10-28/2026-01-08",
@@ -98,4 +114,4 @@
       "/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/"
     ]
   }
-}\n
+}
