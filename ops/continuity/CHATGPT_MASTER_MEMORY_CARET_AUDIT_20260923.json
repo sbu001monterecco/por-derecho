@@ -9,12 +9,12 @@
     {
       "name": "Gil Marer",
       "id": "PD-SP-P-0001",
-      "state": "REGISTERED"
+      "state": "CARET_CONFIRMED"
     },
     {
       "name": "Patricia Domínguez",
       "id": "PD-SP-P-0002",
-      "state": "REGISTERED"
+      "state": "CARET_CONFIRMED"
     },
     {
       "name": "AWESWELL LIMITED",
@@ -22,7 +22,7 @@
         "E005",
         "PD-SP-O-0001"
       ],
-      "state": "REGISTERED"
+      "state": "CARET_CONFIRMED"
     },
     {
       "name": "Hava Vida Travel & Tourism, S.L.U.",
@@ -30,7 +30,7 @@
         "E051",
         "PD-SP-O-0103"
       ],
-      "state": "REGISTERED_RELATIONSHIP_CONTROL_ADDED"
+      "state": "CARET_CONFIRMED"
     },
     {
       "name": "Francisco de Borja Rodríguez-Batllori Laffitte",
@@ -122,5 +122,22 @@
     "Funding/accounting/tax/UBO treatment",
     "Governing-law and Spanish recognition/effect analysis"
   ],
-  "boundary": "Caret/registration does not prove conduct, ownership beyond the stated source date, trust validity, knowledge, intent, liability or merits."
+  "boundary": "Caret/registration does not prove conduct, ownership beyond the stated source date, trust validity, knowledge, intent, liability or merits.",
+  "identity_denominator": 17,
+  "identity_caret_confirmed": 17,
+  "identity_coverage_percent": 100,
+  "non_caret_registered_sources": [
+    "PD-HV-SRC-20120208-BORME-64020",
+    "PD-HV-SRC-20120612-BORME-248217",
+    "PD-HV-SRC-20230921-ANQ-P53",
+    "PD-HV-SRC-20260923-GM-ATTRIBUTION"
+  ],
+  "non_caret_registered_events": [
+    "PD-HV-EVT-20120127-01",
+    "PD-HV-EVT-20120531-01",
+    "PD-HV-EVT-20230921-01",
+    "PD-HV-EVT-20260923-01"
+  ],
+  "identity_result": "ALL_IDENTITY_OBJECTS_IN_STATED_SCOPE_CARET_CONFIRMED",
+  "remaining_exception": "The beneficial/trust proposition and current 2026 Hava Vida shareholder/administrator/UBO status remain open legal/source questions; registration is complete but merits/status proof is not."
 }
