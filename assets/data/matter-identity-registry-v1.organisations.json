@@ -6,20 +6,132 @@
     {
       "id": "PD-SP-O-0001",
       "type": "ORGANISATION",
-      "name": "AWESWELL LIMITED",
-      "aliases": [],
-      "official_registered_name": "AWESWELL LIMITED",
-      "company_number": "07716847",
-      "forbidden_generated_aliases": [
-        "Oswell",
-        "Oswell Limited",
-        "Awesell",
-        "Awswell",
-        "Aweswel",
-        "Aweswelll",
-        "AWESWELLL"
+      "name": "Aweswell Limited",
+      "aliases": [
+        "Aweswell",
+        "AWESWELL LIMITED",
+        "AWESWELL LTD.",
+        "Aweswell Ltd."
       ],
-      "identity_control": "This record has one current legal name and no current-name aliases. Forbidden variants are transcription/template errors. OSWELL 426 S.L. is a distinct Spanish entity."
+      "legacy": [
+        "E005"
+      ],
+      "source_mentions": [
+        {
+          "source_key": "SRC-360-AC-20130115-REPORT",
+          "source_literal": "Monterecco Sun Park Limited",
+          "role": "UK shareholder source name; ops same-company rule to Aweswell07716847; preserve MONTERECO variant",
+          "location": null,
+          "assertion_status": "SOURCE_STATEMENT_NOT_JUDICIAL_FINDING"
+        },
+        {
+          "source_key": "SRC-360-CAM-20180520, SRC-360-PROMONTORIA-20170515, SRC-360-AWESWELL-20180309",
+          "source_literal": "Aweswell Limited",
+          "role": "Shareholder/creditor/represented party as stated; historic-source roles kept dated",
+          "assertion_status": "SOURCE_SPECIFIC_NOT_COLLECTIVE_LIABILITY"
+        },
+        {
+          "source_key": "SRC-360-CAM-20180520",
+          "source_literal": "Aweswell Limited",
+          "role": "Shareholder/creditor/represented party as stated; historic-source roles kept dated",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        },
+        {
+          "source_key": "BM-SRC-0889c02f3cbb2c0b",
+          "source_literal": "Aweswell Limited",
+          "role": "Acknowledged recipient of legal services in original claim; 2019-07-30",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        },
+        {
+          "source_key": "BM-SRC-be55e05ef6da6431",
+          "source_literal": "Monterecco Sun Park Limited",
+          "role": "Company named in AC classification allegations; Source date",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        },
+        {
+          "source_key": "VAL-SRC-1cda7c38e64a327e",
+          "source_literal": "Aweswell Limited",
+          "role": "Solicitante",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        },
+        {
+          "source_key": "VAL-SRC-d786ccd59c131023",
+          "source_literal": "Aweswell Limited",
+          "role": "Peticionario/solicitante",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        },
+        {
+          "source_key": "VAL-SRC-f81b0bcf41e92361",
+          "source_literal": "Aweswell Limited",
+          "role": "Rendered cover/client headers say AWESWELL LTD. / Aweswell Ltd.",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "SRC-360-CAM-20180520",
+          "pages": [
+            1,
+            2,
+            3,
+            7
+          ],
+          "role": "Shareholder/creditor/represented party as stated; historic-source roles kept dated",
+          "source_literal_forms": [
+            "Aweswell"
+          ]
+        },
+        {
+          "source_key": "SRC-360-PROMONTORIA-20170515",
+          "pages": [
+            5,
+            6
+          ],
+          "role": "Shareholder/creditor/represented party as stated; historic-source roles kept dated",
+          "source_literal_forms": [
+            "Aweswell"
+          ]
+        },
+        {
+          "source_key": "SRC-360-AWESWELL-20180309",
+          "pages": [
+            1,
+            3,
+            6
+          ],
+          "role": "Shareholder/creditor/represented party as stated; historic-source roles kept dated",
+          "source_literal_forms": [
+            "Aweswell"
+          ]
+        },
+        {
+          "source_key": "BM-SRC-0889c02f3cbb2c0b",
+          "pages": [
+            4,
+            9,
+            22,
+            51
+          ],
+          "role": "Acknowledged recipient of legal services in original claim",
+          "source_literal_forms": []
+        },
+        {
+          "source_key": "BM-SRC-be55e05ef6da6431",
+          "pages": [
+            12,
+            15,
+            24
+          ],
+          "role": "Company named in AC classification allegations",
+          "source_literal_forms": []
+        }
+      ],
+      "related_organisation_ids": [
+        "PD-SP-O-0103"
+      ],
+      "relationship_control_refs": [
+        "archive/HAVA_VIDA_AWESWELL_BENEFICIAL_PERIMETER_CONTROL_23SEP2026.md"
+      ]
     },
     {
       "id": "PD-SP-O-0002",
@@ -28,6 +140,126 @@
       "aliases": [
         "Luchy Playa Blanca, S.L.",
         "LPB"
+      ],
+      "legacy": [
+        "E003"
+      ],
+      "source_mentions": [
+        {
+          "source_key": "SRC-360-AC-20130115-REPORT",
+          "source_literal": "Luchy Playa Blanca, S.L.U.",
+          "role": "Debtor/report subject",
+          "location": null,
+          "assertion_status": "SOURCE_STATEMENT_NOT_JUDICIAL_FINDING"
+        },
+        {
+          "source_key": "SRC-360-CAM-20180520, SRC-360-CAM-20180320, SRC-360-PROMONTORIA-20170515, SRC-360-LPB-20180306, SRC-360-AWESWELL-20180309",
+          "source_literal": "Luchy Playa Blanca, S.L.U.",
+          "role": "Concursada; one legal person despite LPB/Luchy source forms",
+          "assertion_status": "SOURCE_SPECIFIC_NOT_COLLECTIVE_LIABILITY"
+        },
+        {
+          "source_key": "SRC-360-CAM-20180520",
+          "source_literal": "Luchy Playa Blanca, S.L.U.",
+          "role": "Concursada; one legal person despite LPB/Luchy source forms",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        },
+        {
+          "source_key": "BM-SRC-0889c02f3cbb2c0b",
+          "source_literal": "Luchy Playa Blanca, S.L.U.",
+          "role": "Acknowledged recipient of legal services in original claim; 2019-07-30",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        },
+        {
+          "source_key": "VAL-SRC-1cda7c38e64a327e",
+          "source_literal": "Luchy Playa Blanca S.L.",
+          "role": "Report describes entity as majority registered owner",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        },
+        {
+          "source_key": "VAL-SRC-d786ccd59c131023",
+          "source_literal": "Luchy Playa Blanca S.L.",
+          "role": "Same majority registered-owner assertion",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "SRC-360-CAM-20180520",
+          "pages": [
+            1,
+            6,
+            7
+          ],
+          "role": "Concursada; one legal person despite LPB/Luchy source forms",
+          "source_literal_forms": [
+            "Luchy Playa Blanca",
+            "LUCHY PLAYA"
+          ]
+        },
+        {
+          "source_key": "SRC-360-CAM-20180320",
+          "pages": [
+            1,
+            2,
+            3
+          ],
+          "role": "Concursada; one legal person despite LPB/Luchy source forms",
+          "source_literal_forms": [
+            "Luchy Playa Blanca",
+            "LUCHY PLAYA"
+          ]
+        },
+        {
+          "source_key": "SRC-360-PROMONTORIA-20170515",
+          "pages": [
+            1
+          ],
+          "role": "Concursada; one legal person despite LPB/Luchy source forms",
+          "source_literal_forms": [
+            "Luchy Playa Blanca",
+            "LUCHY PLAYA"
+          ]
+        },
+        {
+          "source_key": "SRC-360-LPB-20180306",
+          "pages": [
+            1
+          ],
+          "role": "Concursada; one legal person despite LPB/Luchy source forms",
+          "source_literal_forms": [
+            "Luchy Playa Blanca",
+            "LUCHY PLAYA"
+          ]
+        },
+        {
+          "source_key": "SRC-360-AWESWELL-20180309",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            9
+          ],
+          "role": "Concursada; one legal person despite LPB/Luchy source forms",
+          "source_literal_forms": [
+            "Luchy Playa Blanca",
+            "LUCHY PLAYA"
+          ]
+        },
+        {
+          "source_key": "BM-SRC-0889c02f3cbb2c0b",
+          "pages": [
+            4,
+            9,
+            22,
+            51
+          ],
+          "role": "Acknowledged recipient of legal services in original claim",
+          "source_literal_forms": []
+        }
       ]
     },
     {
@@ -53,7 +285,31 @@
         "es": "/es/pwc-canarias-carlos-saavedra-sun-park/#registro-caret",
         "en": "/en/pwc-canarias-carlos-saavedra-sun-park/#caret-register"
       },
-      "capacity_boundary": "Exact incorporated single-member company identity only. The current primary NIF/status certificate, historic and current ownership, particular unit title, mandate, authority, benefit, knowledge, wrongdoing and liability remain separate proof questions."
+      "capacity_boundary": "Exact incorporated single-member company identity only. The current primary NIF/status certificate, historic and current ownership, particular unit title, mandate, authority, benefit, knowledge, wrongdoing and liability remain separate proof questions.",
+      "legacy": [
+        "E004"
+      ],
+      "source_mentions": [
+        {
+          "source_key": "BM-SRC-0889c02f3cbb2c0b",
+          "source_literal": "Matkator, S.L.",
+          "role": "Cambiario defendant, alleged note issuer and owner in historical registry information; 2019-07-30",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "BM-SRC-0889c02f3cbb2c0b",
+          "pages": [
+            4,
+            9,
+            22,
+            51
+          ],
+          "role": "Cambiario defendant, alleged note issuer and owner in historical registry information",
+          "source_literal_forms": []
+        }
+      ]
     },
     {
       "id": "PD-SP-O-0004",
@@ -62,6 +318,69 @@
       "aliases": [
         "Monterecco Sun Park, S.L.U.",
         "Pink Canary Services"
+      ],
+      "legacy": [
+        "E006"
+      ],
+      "source_mentions": [
+        {
+          "source_key": "SRC-360-AC-20130115-REPORT",
+          "source_literal": "Monterecco Sun Park, S.L.",
+          "role": "Spanish operator source name; preserve distinct UK company; ops historical continuity to Pink",
+          "location": null,
+          "assertion_status": "SOURCE_STATEMENT_NOT_JUDICIAL_FINDING"
+        },
+        {
+          "source_key": "SRC-360-AC-20130115-REPORT",
+          "source_literal": "Pink Canary Services SL",
+          "role": "Named2019 fiscal allegation; use controlled SLU narrative outside quotation",
+          "location": null,
+          "assertion_status": "SOURCE_STATEMENT_NOT_JUDICIAL_FINDING"
+        },
+        {
+          "source_key": "BM-SRC-fd87b9818a845067",
+          "source_literal": "Pink Canary Services, S.L.",
+          "role": "Classification opponent; Source date",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        },
+        {
+          "source_key": "BM-SRC-be55e05ef6da6431",
+          "source_literal": "Monterecco Sun Park, S.L.",
+          "role": "Company named in AC classification allegations; Source date",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        },
+        {
+          "source_key": "VAL-SRC-d786ccd59c131023",
+          "source_literal": "Monterecco Sun Park S.L.",
+          "role": "Valuer notes 2012 tourism-register holder",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        },
+        {
+          "source_key": "VAL-SRC-d786ccd59c131023",
+          "source_literal": "Monterecco Sun Park S.L.",
+          "role": "23 February 2012 tourism letter and registration name this Spanish company; CIF B76564517",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "BM-SRC-fd87b9818a845067",
+          "pages": [
+            1
+          ],
+          "role": "Classification opponent",
+          "source_literal_forms": []
+        },
+        {
+          "source_key": "BM-SRC-be55e05ef6da6431",
+          "pages": [
+            14,
+            15,
+            23
+          ],
+          "role": "Company named in AC classification allegations",
+          "source_literal_forms": []
+        }
       ]
     },
     {
@@ -81,7 +400,76 @@
       "not_same_as": [
         "PD-SP-O-0006"
       ],
-      "identity_boundary": "The Owners' Community is distinct from the Exploitation Community; identity does not establish valid organs, notice, resolutions, authority, capture, instrumentalisation or liability."
+      "identity_boundary": "The Owners' Community is distinct from the Exploitation Community; identity does not establish valid organs, notice, resolutions, authority, capture, instrumentalisation or liability.",
+      "legacy": [
+        "E001"
+      ],
+      "source_mentions": [
+        {
+          "source_key": "SRC-360-AC-20130115-REPORT",
+          "source_literal": "Comunidad de Propietario del Complejo Sun Park",
+          "role": "Source-named defendant inORD1355/2011; exact source literal preserved",
+          "location": null,
+          "assertion_status": "SOURCE_STATEMENT_NOT_JUDICIAL_FINDING"
+        },
+        {
+          "source_key": "SRC-360-CAM-20180520",
+          "source_literal": "Comunidad de Propietarios Sun Park",
+          "role": "Community whose asserted contingent debt is described inCAMMay2018",
+          "assertion_status": "SOURCE_SPECIFIC_NOT_COLLECTIVE_LIABILITY"
+        },
+        {
+          "source_key": "SRC-360-CAM-20180520",
+          "source_literal": "Comunidad de Propietarios Sun Park",
+          "role": "Community whose asserted contingent debt is described inCAMMay2018",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        },
+        {
+          "source_key": "BM-SRC-f442b6856ee73e24",
+          "source_literal": "Comunidad de Propietarios del Complejo Sun Park",
+          "role": "Property community described in Gil opposition; Source date",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        },
+        {
+          "source_key": "VAL-SRC-d786ccd59c131023",
+          "source_literal": "Comunidad de Propietarios Sun Park",
+          "role": "Report describes community/current operator assertion following 2015 judgment",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        },
+        {
+          "source_key": "VAL-SRC-d786ccd59c131023",
+          "source_literal": "Comunidad de Propietarios Sun Park",
+          "role": "Annex heading and historic actas-book margin",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        },
+        {
+          "source_key": "VAL-SRC-d786ccd59c131023",
+          "source_literal": "Comunidad de Propietarios Sun Park",
+          "role": "Historical tourism sheet says pending change in favour of the community",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "SRC-360-CAM-20180520",
+          "pages": [
+            6
+          ],
+          "role": "Community whose asserted contingent debt is described inCAMMay2018",
+          "source_literal_forms": [
+            "Comunidad de Propietarios del Complejo Sun Park"
+          ]
+        },
+        {
+          "source_key": "BM-SRC-f442b6856ee73e24",
+          "pages": [
+            11,
+            46
+          ],
+          "role": "Property community described in Gil opposition",
+          "source_literal_forms": []
+        }
+      ]
     },
     {
       "id": "PD-SP-O-0006",
@@ -93,6 +481,54 @@
       ],
       "not_same_as": [
         "PD-SP-O-0005"
+      ],
+      "formal_name": "Comunidad de Explotación del Complejo Sun Park",
+      "tax_identifier": "H35997568",
+      "tax_identifier_status": "DOCUMENTED_IN_2008_MODELO_036",
+      "tax_identity_review_date": "2026-09-07",
+      "current_tax_status": "NOT_VERIFIED_WITH_AEAT",
+      "identity_sources": [
+        "2008 Modelo 036, pages 1-2: exact name and H35997568; receipt stamp 21 May 2008; private source copy visually re-read 7 September 2026",
+        "Iberinform and Cinco Dias business-directory listings retrieved through public web search on 7 September 2026; shared Iberinform data provenance, not two independent tax certificates"
+      ],
+      "source_urls": [
+        "https://www.iberinform.es/empresa/5728940/comunidad-de-explotacion-del-complejo-sun-park",
+        "https://cincodias.elpais.com/directorio-empresas/empresa/5728940/comunidad-de-explotacion-del-complejo-sun-park"
+      ],
+      "directory_name_literal": "COMUNIDAD DE EXPLOTACION DEL COMPLEJO SUN PARK CPRPH",
+      "directory_form_literal": "Comunidad de Propietarios en Regimen de Propiedad Horizontal",
+      "form_reconciliation_status": "DIRECTORY_CLASSIFICATION_AND_CONSTITUTIVE_COMUNIDAD_CIVIL_RETAINED_SEPARATELY",
+      "email_first_reference": "Comunidad de Explotación del Complejo Sun Park (CEXP), NIF H35997568",
+      "communication_rule_ref": "ops/recovery-cross-thread/CEXP_TAX_IDENTITY_EMAIL_RULE_07SEP2026.md",
+      "capacity_boundary": "Tax-identity evidence only. Directory labels, active status and web presence do not certify current AEAT validity, legal personality, lawful operation, title, universal mandate or continuity. This is not the separate Owners' Community PD-SP-O-0005 or Monterecco/Pink PD-SP-O-0004. No new caret certification is made.",
+      "legacy": [
+        "E002"
+      ],
+      "source_mentions": [
+        {
+          "source_key": "SRC-360-AC-20130115-REPORT",
+          "source_literal": "Comunidad de Explotación Sun Park",
+          "role": "Source-named exploitation community; source report allegations do not establish debt",
+          "location": null,
+          "assertion_status": "SOURCE_STATEMENT_NOT_JUDICIAL_FINDING"
+        },
+        {
+          "source_key": "BM-SRC-fd87b9818a845067",
+          "source_literal": "Comunidad de Explotación del Complejo Sun Park",
+          "role": "Exploitation community described in opposition; Source date",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "BM-SRC-fd87b9818a845067",
+          "pages": [
+            3,
+            6
+          ],
+          "role": "Exploitation community described in opposition",
+          "source_literal_forms": []
+        }
       ]
     },
     {
@@ -113,12 +549,147 @@
         "PD-SP-O-0082"
       ],
       "legacy": [
-        "cam"
+        "cam",
+        "E021"
       ],
       "identity_resolution": "CARET_CONFIRMED",
       "identity_sources": [
         "AEAT Canarias INF 90-24 / REF 0025DKH1",
         "BORME-C-2023-6637"
+      ],
+      "source_mentions": [
+        {
+          "source_key": "SRC-360-CAM-20180520, SRC-360-CAM-20180320, SRC-360-PROMONTORIA-20170515, SRC-360-LPB-20180306, SRC-360-AWESWELL-20180309",
+          "source_literal": "Construcciones Acosta Matos, S.A.",
+          "role": "SA is represented CAM entity in body and receipt; mis-spelled ACOTAS/CONSTRUCIIONES source strings retained",
+          "assertion_status": "SOURCE_SPECIFIC_NOT_COLLECTIVE_LIABILITY"
+        },
+        {
+          "source_key": "SRC-360-CAM-20180520",
+          "source_literal": "Construcciones Acosta Matos, S.A.",
+          "role": "SA is represented CAM entity in body and receipt; mis-spelled ACOTAS/CONSTRUCIIONES source strings retained",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        },
+        {
+          "source_key": "BM-SRC-76f5ba3210b9a78d",
+          "source_literal": "Construcciones Acosta Matos, S.A.",
+          "role": "Concurso creditor and author of 2021 filing; Source date",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "SRC-360-CAM-20180520",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "role": "SA is represented CAM entity in body and receipt; mis-spelled ACOTAS/CONSTRUCIIONES source strings retained",
+          "source_literal_forms": [
+            "Construcciones Acosta Matos",
+            "CAM",
+            "CONSTRUCCIONES ACOTAS MATOS",
+            "CONSTRUCIIONES ACOSTA MATOS"
+          ]
+        },
+        {
+          "source_key": "SRC-360-CAM-20180320",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "role": "SA is represented CAM entity in body and receipt; mis-spelled ACOTAS/CONSTRUCIIONES source strings retained",
+          "source_literal_forms": [
+            "Construcciones Acosta Matos",
+            "CAM",
+            "CONSTRUCCIONES ACOTAS MATOS",
+            "CONSTRUCIIONES ACOSTA MATOS"
+          ]
+        },
+        {
+          "source_key": "SRC-360-PROMONTORIA-20170515",
+          "pages": [
+            9,
+            10
+          ],
+          "role": "SA is represented CAM entity in body and receipt; mis-spelled ACOTAS/CONSTRUCIIONES source strings retained",
+          "source_literal_forms": [
+            "Construcciones Acosta Matos",
+            "CAM",
+            "CONSTRUCCIONES ACOTAS MATOS",
+            "CONSTRUCIIONES ACOSTA MATOS"
+          ]
+        },
+        {
+          "source_key": "SRC-360-LPB-20180306",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "role": "SA is represented CAM entity in body and receipt; mis-spelled ACOTAS/CONSTRUCIIONES source strings retained",
+          "source_literal_forms": [
+            "Construcciones Acosta Matos",
+            "CAM",
+            "CONSTRUCCIONES ACOTAS MATOS",
+            "CONSTRUCIIONES ACOSTA MATOS"
+          ]
+        },
+        {
+          "source_key": "SRC-360-AWESWELL-20180309",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9
+          ],
+          "role": "SA is represented CAM entity in body and receipt; mis-spelled ACOTAS/CONSTRUCIIONES source strings retained",
+          "source_literal_forms": [
+            "Construcciones Acosta Matos",
+            "CAM",
+            "CONSTRUCCIONES ACOTAS MATOS",
+            "CONSTRUCIIONES ACOSTA MATOS"
+          ]
+        },
+        {
+          "source_key": "BM-SRC-76f5ba3210b9a78d",
+          "pages": [
+            1,
+            4
+          ],
+          "role": "Concurso creditor and author of 2021 filing",
+          "source_literal_forms": []
+        }
+      ],
+      "unresolved_source_identity_controls": [
+        {
+          "candidate_key": "VAL-O-ACOSTA-LITERAL",
+          "source_literal": "ACOSTA MATOS S.L. — critical-report literal",
+          "occurrences": [
+            {
+              "source_key": "VAL-SRC-f81b0bcf41e92361",
+              "pdf_pages": [
+                12,
+                20
+              ],
+              "role_literal_or_paraphrase": "Critic quotes/attributes commissioning and presentation of ACTUA valuation to ACOSTA MATOS S.L.",
+              "review_mode": "NATIVE_TEXT_AND_VISUAL_REVIEW"
+            }
+          ],
+          "status": "POSSIBLE_IDENTITY_LINK_NOT_ADMITTED_ALIAS",
+          "boundary": "This shortened S.L. literal cannot be silently promoted to Construcciones Acosta Matos S.A. or another similarly named company. Determine the actual commissioning entity from original ACTUA engagement/report and filing. Neither candidate is selected by this lane."
+        }
       ]
     },
     {
@@ -133,7 +704,52 @@
         "PD-SP-O-0074",
         "PD-SP-O-0082"
       ],
-      "status": "REFERENCED_LEGAL_FORM_VARIANT_UNRESOLVED"
+      "status": "REFERENCED_LEGAL_FORM_VARIANT_UNRESOLVED",
+      "source_mentions": [
+        {
+          "source_key": "SRC-360-CAM-20180320",
+          "source_literal": "Construcciones Acosta Matos, S.L.",
+          "role": "Quoted8Mar2018 DIOR uses SL; do not merge with SA or transfer exact-entity eligibility.",
+          "assertion_status": "SOURCE_SPECIFIC_NOT_COLLECTIVE_LIABILITY"
+        },
+        {
+          "source_key": "SRC-360-CAM-20180320-VARIANT",
+          "source_literal": "Construcciones Acosta Matos, S.L.",
+          "role": "Quoted8Mar2018 DIOR uses SL; do not merge with SA or transfer exact-entity eligibility.",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "SRC-360-CAM-20180320",
+          "pages": [
+            1
+          ],
+          "role": "Quoted8Mar2018 DIOR uses SL; do not merge with SA or transfer exact-entity eligibility.",
+          "source_literal_forms": [
+            "CONSTRUCCIONES ACOSTA MATOS, S.L."
+          ]
+        }
+      ],
+      "unresolved_source_identity_controls": [
+        {
+          "candidate_key": "VAL-O-ACOSTA-LITERAL",
+          "source_literal": "ACOSTA MATOS S.L. — critical-report literal",
+          "occurrences": [
+            {
+              "source_key": "VAL-SRC-f81b0bcf41e92361",
+              "pdf_pages": [
+                12,
+                20
+              ],
+              "role_literal_or_paraphrase": "Critic quotes/attributes commissioning and presentation of ACTUA valuation to ACOSTA MATOS S.L.",
+              "review_mode": "NATIVE_TEXT_AND_VISUAL_REVIEW"
+            }
+          ],
+          "status": "POSSIBLE_IDENTITY_LINK_NOT_ADMITTED_ALIAS",
+          "boundary": "This shortened S.L. literal cannot be silently promoted to Construcciones Acosta Matos S.A. or another similarly named company. Determine the actual commissioning entity from original ACTUA engagement/report and filing. Neither candidate is selected by this lane."
+        }
+      ]
     },
     {
       "id": "PD-SP-O-0009",
@@ -141,6 +757,27 @@
       "name": "Amenem, S.L.",
       "aliases": [
         "AMENEM"
+      ],
+      "legacy": [
+        "E012"
+      ],
+      "source_mentions": [
+        {
+          "source_key": "BM-SRC-f442b6856ee73e24",
+          "source_literal": "Amenem, S.L.",
+          "role": "Historical ownership narrative, source spelling; Source date",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "BM-SRC-f442b6856ee73e24",
+          "pages": [
+            11
+          ],
+          "role": "Historical ownership narrative, source spelling",
+          "source_literal_forms": []
+        }
       ]
     },
     {
@@ -149,6 +786,27 @@
       "name": "Tengolf, S.L.",
       "aliases": [
         "TENGOLF"
+      ],
+      "legacy": [
+        "E013"
+      ],
+      "source_mentions": [
+        {
+          "source_key": "BM-SRC-f442b6856ee73e24",
+          "source_literal": "Tengolf, S.L.",
+          "role": "Historical ownership narrative; Source date",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "BM-SRC-f442b6856ee73e24",
+          "pages": [
+            11
+          ],
+          "role": "Historical ownership narrative",
+          "source_literal_forms": []
+        }
       ]
     },
     {
@@ -157,6 +815,27 @@
       "name": "Muruga, S.L.",
       "aliases": [
         "MURUGA"
+      ],
+      "legacy": [
+        "E009"
+      ],
+      "source_mentions": [
+        {
+          "source_key": "BM-SRC-f442b6856ee73e24",
+          "source_literal": "Muruga, S.L.",
+          "role": "Historical ownership narrative; Source date",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "BM-SRC-f442b6856ee73e24",
+          "pages": [
+            11
+          ],
+          "role": "Historical ownership narrative",
+          "source_literal_forms": []
+        }
       ]
     },
     {
@@ -168,12 +847,36 @@
       ],
       "not_same_as": [
         "PD-SP-P-0004"
+      ],
+      "legacy": [
+        "E008"
+      ],
+      "source_mentions": [
+        {
+          "source_key": "BM-SRC-1d9e52e1845ee09a",
+          "source_literal": "Roque Prieto, S.L.",
+          "role": "DP332 creditor-side submitting party; Source date",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "BM-SRC-1d9e52e1845ee09a",
+          "pages": [
+            1
+          ],
+          "role": "DP332 creditor-side submitting party",
+          "source_literal_forms": []
+        }
       ]
     },
     {
       "id": "PD-SP-O-0013",
       "type": "ORGANISATION",
-      "name": "Explotaciones Oasis, S.L."
+      "name": "Explotaciones Oasis, S.L.",
+      "legacy": [
+        "E017"
+      ]
     },
     {
       "id": "PD-SP-O-0014",
@@ -186,12 +889,70 @@
       "routes": {
         "es": "/es/montelanza-monte-lanza-sl/",
         "en": "/en/montelanza-monte-lanza-sl/"
-      }
+      },
+      "legacy": [
+        "E016"
+      ],
+      "source_mentions": [
+        {
+          "source_key": "BM-SRC-f442b6856ee73e24",
+          "source_literal": "Montelanza, S.L.",
+          "role": "Historical exploitation company described by Gil; Source date",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "BM-SRC-f442b6856ee73e24",
+          "pages": [
+            11
+          ],
+          "role": "Historical exploitation company described by Gil",
+          "source_literal_forms": []
+        }
+      ],
+      "unresolved_source_identity_controls": [
+        {
+          "candidate_key": "VAL-O-MONTELANZA",
+          "source_literal": "Montelanza",
+          "occurrences": [
+            {
+              "source_key": "VAL-SRC-d786ccd59c131023",
+              "pdf_pages": [
+                94
+              ],
+              "role_literal_or_paraphrase": "Historical tourism sheet states Montelanza requested cessation of tourism exploitation",
+              "review_mode": "OCR_SCREEN"
+            }
+          ],
+          "status": "POSSIBLE_IDENTITY_LINK_NOT_ADMITTED_ALIAS",
+          "boundary": "Source short-name occurrence, not proof of current operations or legal corporate acts beyond the historical statement."
+        }
+      ]
     },
     {
       "id": "PD-SP-O-0015",
       "type": "ORGANISATION",
-      "name": "Acciones Canarias, S.L."
+      "name": "Acciones Canarias, S.L.",
+      "aliases": [],
+      "source_mentions": [
+        {
+          "source_key": "BM-SRC-f442b6856ee73e24",
+          "source_literal": "Acciones Canarias, S.L.",
+          "role": "Historical ownership narrative; Source date",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "BM-SRC-f442b6856ee73e24",
+          "pages": [
+            11
+          ],
+          "role": "Historical ownership narrative",
+          "source_literal_forms": []
+        }
+      ]
     },
     {
       "id": "PD-SP-O-0016",
@@ -200,12 +961,37 @@
       "routes": {
         "es": "/es/inversiones-salinetas-sl/",
         "en": "/en/inversiones-salinetas-sl/"
-      }
+      },
+      "legacy": [
+        "E010"
+      ],
+      "aliases": [],
+      "source_mentions": [
+        {
+          "source_key": "BM-SRC-1d9e52e1845ee09a",
+          "source_literal": "Inversiones Salinetas, S.L.",
+          "role": "DP332 creditor-side submitting party; Source date",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "BM-SRC-1d9e52e1845ee09a",
+          "pages": [
+            1
+          ],
+          "role": "DP332 creditor-side submitting party",
+          "source_literal_forms": []
+        }
+      ]
     },
     {
       "id": "PD-SP-O-0017",
       "type": "ORGANISATION",
-      "name": "Inmobiliaria Betancurt, S.L."
+      "name": "Inmobiliaria Betancurt, S.L.",
+      "legacy": [
+        "E018"
+      ]
     },
     {
       "id": "PD-SP-O-0018",
@@ -215,7 +1001,8 @@
         "HNT"
       ],
       "legacy": [
-        "ricpe_hnt_mynd"
+        "ricpe_hnt_mynd",
+        "E022"
       ]
     },
     {
@@ -231,7 +1018,10 @@
         "es": "/es/irea-colliers-meridian-sun-park/#laura-aguiar-acosta",
         "en": "/en/irea-colliers-meridian-sun-park/#laura-aguiar-acosta"
       },
-      "capacity_boundary": "Hotel manager identified for MYND Yaiza and Radisson Blu Lanzarote. Corporate management and an internship do not transfer RICPE financing decisions, historical Sun Park knowledge, intent, control, wrongdoing or liability to staff."
+      "capacity_boundary": "Hotel manager identified for MYND Yaiza and Radisson Blu Lanzarote. Corporate management and an internship do not transfer RICPE financing decisions, historical Sun Park knowledge, intent, control, wrongdoing or liability to staff.",
+      "legacy": [
+        "E023"
+      ]
     },
     {
       "id": "PD-SP-O-0020",
@@ -242,7 +1032,27 @@
         "RIC Private Equity"
       ],
       "legacy": [
-        "ricpe_hnt_mynd"
+        "ricpe_hnt_mynd",
+        "E024"
+      ],
+      "source_mentions": [
+        {
+          "source_key": "BM-SRC-7c746d9987807755",
+          "source_literal": "RIC Private Equity Investment Partners, S.C.R., S.A.",
+          "role": "Issuer of certificate; prior name RIC Capital Investment Partners; Source date",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "BM-SRC-7c746d9987807755",
+          "pages": [
+            1,
+            2
+          ],
+          "role": "Issuer of certificate; prior name RIC Capital Investment Partners",
+          "source_literal_forms": []
+        }
       ]
     },
     {
@@ -251,6 +1061,88 @@
       "name": "Promontoria Holding 122 B.V.",
       "aliases": [
         "PH122"
+      ],
+      "legacy": [
+        "E032"
+      ],
+      "source_mentions": [
+        {
+          "source_key": "SRC-360-CAM-20180320, SRC-360-PROMONTORIA-20170515, SRC-360-LPB-20180306, SRC-360-AWESWELL-20180309",
+          "source_literal": "Promontoria Holding 122 B.V.",
+          "role": "Creditor/assignor and litigant source roles",
+          "assertion_status": "SOURCE_SPECIFIC_NOT_COLLECTIVE_LIABILITY"
+        },
+        {
+          "source_key": "SRC-360-CAM-20180320-VARIANT",
+          "source_literal": "Promontoria Holding 122 B.V.",
+          "role": "Creditor/assignor and litigant source roles",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        },
+        {
+          "source_key": "BM-SRC-40eadbd957a62728",
+          "source_literal": "Promontoria Holding 122, B.V.",
+          "role": "Creditor in court party table; Source date",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "SRC-360-CAM-20180320",
+          "pages": [
+            2,
+            4,
+            5
+          ],
+          "role": "Creditor/assignor and litigant source roles",
+          "source_literal_forms": [
+            "Promontoria Holding 122",
+            "PROMONTORIA"
+          ]
+        },
+        {
+          "source_key": "SRC-360-PROMONTORIA-20170515",
+          "pages": [
+            1,
+            3,
+            7,
+            8
+          ],
+          "role": "Creditor/assignor and litigant source roles",
+          "source_literal_forms": [
+            "Promontoria Holding 122",
+            "PROMONTORIA"
+          ]
+        },
+        {
+          "source_key": "SRC-360-LPB-20180306",
+          "pages": [
+            5
+          ],
+          "role": "Creditor/assignor and litigant source roles",
+          "source_literal_forms": [
+            "Promontoria Holding 122",
+            "PROMONTORIA"
+          ]
+        },
+        {
+          "source_key": "SRC-360-AWESWELL-20180309",
+          "pages": [
+            2
+          ],
+          "role": "Creditor/assignor and litigant source roles",
+          "source_literal_forms": [
+            "Promontoria Holding 122",
+            "PROMONTORIA"
+          ]
+        },
+        {
+          "source_key": "BM-SRC-40eadbd957a62728",
+          "pages": [
+            1
+          ],
+          "role": "Creditor in court party table",
+          "source_literal_forms": []
+        }
       ]
     },
     {
@@ -268,7 +1160,8 @@
         "PD-SP-O-0023"
       ],
       "legacy": [
-        "pamanil"
+        "pamanil",
+        "E007"
       ]
     },
     {
@@ -287,7 +1180,8 @@
         "PD-SP-O-0024"
       ],
       "legacy": [
-        "pamalexsha"
+        "pamalexsha",
+        "E052"
       ]
     },
     {
@@ -305,7 +1199,8 @@
         "PD-SP-O-0023"
       ],
       "legacy": [
-        "noalpa"
+        "noalpa",
+        "E053"
       ]
     },
     {
@@ -320,7 +1215,8 @@
         "en": "/en/santa-lucia-real-estate-sl/"
       },
       "legacy": [
-        "santa_lucia"
+        "santa_lucia",
+        "E054"
       ]
     },
     {
@@ -333,7 +1229,10 @@
       "routes": {
         "es": "/es/millan-and-miners-slp/",
         "en": "/en/millan-and-miners-slp/"
-      }
+      },
+      "legacy": [
+        "E044"
+      ]
     },
     {
       "id": "PD-SP-O-0027",
@@ -364,6 +1263,42 @@
       "name": "Bankia, S.A.",
       "aliases": [
         "Bankia"
+      ],
+      "legacy": [
+        "E030"
+      ],
+      "source_mentions": [
+        {
+          "source_key": "SRC-360-AC-20130115-REPORT",
+          "source_literal": "BANKIA",
+          "role": "Source-named lender/enforcement claimant; exact credit chain separate",
+          "location": null,
+          "assertion_status": "SOURCE_STATEMENT_NOT_JUDICIAL_FINDING"
+        },
+        {
+          "source_key": "SRC-360-AWESWELL-20180309",
+          "source_literal": "Bankia, S.A.",
+          "role": "Named lender inAweswell principal; source statement concerning original mortgage lender is not independently adopted",
+          "assertion_status": "SOURCE_SPECIFIC_NOT_COLLECTIVE_LIABILITY"
+        },
+        {
+          "source_key": "SRC-360-AWESWELL-20180309-VARIANT",
+          "source_literal": "Bankia, S.A.",
+          "role": "Named lender inAweswell principal; source statement concerning original mortgage lender is not independently adopted",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "SRC-360-AWESWELL-20180309",
+          "pages": [
+            2
+          ],
+          "role": "Named lender inAweswell principal; source statement concerning original mortgage lender is not independently adopted",
+          "source_literal_forms": [
+            "BANKIA"
+          ]
+        }
       ]
     },
     {
@@ -372,6 +1307,9 @@
       "name": "Sociedad de Gestión de Activos Procedentes de la Reestructuración Bancaria, S.A.",
       "aliases": [
         "SAREB"
+      ],
+      "legacy": [
+        "E028"
       ]
     },
     {
@@ -478,7 +1416,8 @@
         "Hotel Sun Park"
       ],
       "legacy": [
-        "ricpe_hnt_mynd"
+        "ricpe_hnt_mynd",
+        "E025"
       ],
       "canonical_site_name": "Sun Park",
       "current_commercial_name": "MYND Yaiza",
@@ -522,7 +1461,16 @@
         "boundary": "Not a cadastral validation of all individual fincas, ownership, the estate perimeter, or comprehensive current boundaries."
       },
       "capacity_boundary": "Connections enable navigation and actor-specific source review; they do not merge people, companies, estates, proceedings, ownership, authority, knowledge or responsibility. The hotel site has no assigned single legal owner in this record.",
-      "record_semantics": "Enrichment of the existing hotel/establishment identity, not a new registry or a new legal person. Immutable legacy ORGANISATION storage category is retained; object_kind controls site interpretation."
+      "record_semantics": "Enrichment of the existing hotel/establishment identity, not a new registry or a new legal person. Immutable legacy ORGANISATION storage category is retained; object_kind controls site interpretation.",
+      "source_mentions": [
+        {
+          "source_key": "SRC-360-AC-20130115-REPORT",
+          "source_literal": "Hotel Sun Park",
+          "role": "Only brand/hotel-asset reference; do not treat source hotel as proof of laterMYND operator identity",
+          "location": null,
+          "assertion_status": "SOURCE_STATEMENT_NOT_JUDICIAL_FINDING"
+        }
+      ]
     },
     {
       "id": "PD-SP-O-0043",
@@ -537,6 +1485,9 @@
       "not_same_as": [
         "PD-SP-O-0080",
         "PD-SP-O-0081"
+      ],
+      "legacy": [
+        "E037"
       ]
     },
     {
@@ -546,7 +1497,10 @@
       "aliases": [
         "RSM"
       ],
-      "status": "CONTROLLED_PERIMETER_LABEL_EXACT_ENTITY_MAY_REQUIRE_SOURCE"
+      "status": "CONTROLLED_PERIMETER_LABEL_EXACT_ENTITY_MAY_REQUIRE_SOURCE",
+      "legacy": [
+        "E042"
+      ]
     },
     {
       "id": "PD-SP-O-0045",
@@ -582,9 +1536,70 @@
     {
       "id": "PD-SP-O-0049",
       "type": "ORGANISATION",
-      "name": "Cuatrecasas, Gonçalves Pereira, S.L.P.",
+      "name": "Cuatrecasas Legal, S.L.P.",
       "aliases": [
-        "Cuatrecasas"
+        "Cuatrecasas",
+        "Cuatrecasas, Gonçalves Pereira, S.L.P."
+      ],
+      "identity_sources": [
+        "SRC-360-ETJ-20260903; same NIF B59942110 and former-name statement"
+      ],
+      "source_refinements": [
+        {
+          "as_of": "2026-09-07",
+          "name": "Cuatrecasas Legal, S.L.P.",
+          "basis": "SRC-360-ETJ-20260903; same NIF B59942110 and former-name statement",
+          "boundary": "Historical Cuatrecasas, Gonçalves Pereira, S.L.P. retained as same-company name. An Auto party table wraps the name across rows; do not create a second entity or infer third-party assignee."
+        }
+      ],
+      "legacy": [
+        "E036"
+      ],
+      "source_mentions": [
+        {
+          "source_key": "SRC-360-AWESWELL-20180309",
+          "source_literal": "Cuatrecasas, Gonçalves Pereira, S.L.P.",
+          "role": "Historical exact firm form onAweswell9Mar2018 principal",
+          "assertion_status": "SOURCE_SPECIFIC_NOT_COLLECTIVE_LIABILITY"
+        },
+        {
+          "source_key": "SRC-360-AWESWELL-20180309-VARIANT",
+          "source_literal": "Cuatrecasas, Gonçalves Pereira, S.L.P.",
+          "role": "Historical exact firm form onAweswell9Mar2018 principal",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        },
+        {
+          "source_key": "BM-SRC-86a0007367ced7fe",
+          "source_literal": "Cuatrecasas Legal, S.L.P.",
+          "role": "2026 ETJ claimant; former name in historical title; 2019 to 2026",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "SRC-360-AWESWELL-20180309",
+          "pages": [
+            10
+          ],
+          "role": "Historical exact firm form onAweswell9Mar2018 principal",
+          "source_literal_forms": [
+            "CUATRECASAS GONÇALVES P EREIRA",
+            "CUATRECASAS GONÇALVES PEREIRA"
+          ]
+        },
+        {
+          "source_key": "BM-SRC-86a0007367ced7fe",
+          "pages": [
+            1,
+            2,
+            3
+          ],
+          "role": "2026 ETJ claimant; former name in historical title",
+          "source_literal_forms": [
+            "Cuatrecasas Gonçalves Pereira, S.L.P.",
+            "Cuatrecasas"
+          ]
+        }
       ]
     },
     {
@@ -593,6 +1608,9 @@
       "name": "J&A Garrigues, S.L.P.",
       "aliases": [
         "Garrigues"
+      ],
+      "legacy": [
+        "E043"
       ]
     },
     {
@@ -644,6 +1662,26 @@
       "aliases": [
         "eXW",
         "Expert Witness"
+      ],
+      "source_mentions": [
+        {
+          "source_key": "BM-SRC-750b1b344389c6e7",
+          "source_literal": "Expert Witness Forensic and Compliance",
+          "role": "Expert affiliation/brand named in LPB opposition; Source date",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "BM-SRC-750b1b344389c6e7",
+          "pages": [
+            5,
+            14,
+            26
+          ],
+          "role": "Expert affiliation/brand named in LPB opposition",
+          "source_literal_forms": []
+        }
       ]
     },
     {
@@ -658,7 +1696,10 @@
       "aliases": [
         "Andbank"
       ],
-      "status": "CONTROLLED_PERIMETER_LABEL_EXACT_ENTITY_MAY_REQUIRE_SOURCE"
+      "status": "CONTROLLED_PERIMETER_LABEL_EXACT_ENTITY_MAY_REQUIRE_SOURCE",
+      "alias_scope_control": {
+        "Andbank": "Only resolve this shorthand to this Luxembourg record when the source proves jurisdiction and legal person. Legacy generic term has separate pending ID PD-SP-O-0097."
+      }
     },
     {
       "id": "PD-SP-O-0060",
@@ -800,7 +1841,26 @@
         "es": "/es/ona-hotels-salida-concurso-36-2012/",
         "en": "/en/ona-hotels-insolvency-exit-36-2012/"
       },
-      "capacity_boundary": "Exact legal person in the 6-Jun-2018 operating instrument and 2019 personation lane. The ONA Hotels label remains a distinct commercial perimeter; this identity does not prove satisfaction of conditions, funding, operation, acquisition, causation or liability."
+      "capacity_boundary": "Exact legal person in the 6-Jun-2018 operating instrument and 2019 personation lane. The ONA Hotels label remains a distinct commercial perimeter; this identity does not prove satisfaction of conditions, funding, operation, acquisition, causation or liability.",
+      "source_mentions": [
+        {
+          "source_key": "BM-SRC-9ddecee18e4cc7ba",
+          "source_literal": "Clubotel La Dorada, S.L.",
+          "role": "Applicant for personation and reposición; Source date",
+          "assertion_status": "SOURCE_BOUND_ROLE_NOT_FINDING_OF_WRONGDOING"
+        }
+      ],
+      "source_census_occurrences": [
+        {
+          "source_key": "BM-SRC-9ddecee18e4cc7ba",
+          "pages": [
+            1,
+            7
+          ],
+          "role": "Applicant for personation and reposición",
+          "source_literal_forms": []
+        }
+      ]
     },
     {
       "id": "PD-SP-O-0076",
@@ -1015,6 +2075,40 @@
         "en": "/en/cuatrecasas-sun-park/#cuatrecasas-rauda-revision-20260905"
       },
       "capacity_boundary": "Source-literal professional recovery label from 2022 correspondence. Exact legal entity and legal-form history remain unverified. No original advisory mandate, ownership of the debt, purchaser identity, confidentiality misuse, group-wide knowledge or liability is inferred."
+    },
+    {
+      "id": "PD-SP-O-0103",
+      "type": "ORGANISATION",
+      "name": "Hava Vida Travel & Tourism, S.L.U.",
+      "aliases": [
+        "Hava Vida Travel & Tourism, S.L.",
+        "HAVA VIDA TRAVEL & TOURISM SL"
+      ],
+      "retrieval_aliases": [
+        "HAVAVIDA",
+        "Habavida"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "tax_identifier": "B76564434",
+      "tax_identifier_status": "REPOSITORY_RECORDED; CURRENT_PRIMARY_SPANISH_CERTIFICATE_OPEN",
+      "registry_sheet": "TF 49735",
+      "identity_sources": [
+        "BORME-A-2012-27-38, entry 64020: incorporation, declaration of unipersonality, Patricia Isabel Domínguez Montelongo as sole shareholder and sole administrator, sheet TF 49735",
+        "BORME-A-2012-110-38, entry 248217: change of registered office, same sheet TF 49735",
+        "ops/CANONICAL_ENTITY_NAMES.json E051"
+      ],
+      "source_urls": [
+        "https://www.boe.es/borme/dias/2012/02/08/pdfs/BORME-A-2012-27-38.pdf",
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-110-38"
+      ],
+      "capacity_boundary": "Exact historical legal-person identity and incorporation roles only. The 2012 BORME proves Patricia's sole-shareholder/sole-administrator status at incorporation, not unchanged 2026 status. Project-perimeter and asserted beneficial/trust positions are separately classified in PD-HV-AW-20260923-01 and do not prove Aweswell legal ownership, a valid trust, UBO/tax treatment, knowledge, intent or liability.",
+      "legacy": [
+        "E051"
+      ],
+      "relationship_control_refs": [
+        "archive/HAVA_VIDA_AWESWELL_BENEFICIAL_PERIMETER_CONTROL_23SEP2026.md",
+        "assets/data/hava-vida-aweswell-relationship-v1.json"
+      ]
     }
   ]
 }
