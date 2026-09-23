@@ -55,3 +55,11 @@ Source SHA-256: `4c1be5637c4cf58f18dcbea657c2200658394360ffb9c2302a6ef1a0cb34cbe
 Source pages: 9.
 
 The two final source pages are photographic annexes showing the 18-June Ref24 stamped presentation cover and the first page of the 25-June dependent judicial contribution. The CGPJ filing itself says it does not reproduce the complete complaint or complete judicial ampliación.
+
+## Upstream source — Audiencia Nacional querella, 21 September 2023
+The June frozen filings remain immutable. Their upstream 2023 comparison source is now complete and controlled separately:
+- [88/88-page public-safe transcription](../../criminal/an-dp91-2023/full-text/querella-21sep2023-full-public-transcription.md)
+- [source manifest](../../criminal/an-dp91-2023/source-manifest.json)
+- [canonical AN2023 → Ref21 / Ref22 / Ref24 lineage](../../criminal/an-dp91-2023/AN2023_REF21_REF22_REF24_LINEAGE.md)
+
+The 2023 pleading is an upstream allegation/source map, not automatic corroboration of a 2026 allegation.
