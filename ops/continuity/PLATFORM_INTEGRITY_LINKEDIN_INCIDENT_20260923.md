@@ -40,3 +40,12 @@ The public page requests preservation of native account-security, moderation, re
 - The form-ready packages request urgent restoration, preservation, trigger classification, repeated/linked-report analysis, stable-pseudonym fallback where reporter identity cannot be disclosed, Article 15 source information, DSA Article 23 review where applicable, statement-of-reasons/appeal routing where moderation is involved, and enhanced human review / targeted-account safeguards if LinkedIn has an equivalent internal mechanism.
 - The packages point to the public-safe platform-integrity hub, Por Derecho transparency / AI-control page, Google evidence-cooperation dossier, Control 21 public route and public source-control repository.
 - No Gmail message IDs, authentication-bearing links, private security telemetry or reporter identities are committed to the public repository.
+
+## 23 September 2026 — litigation relevance and next-provider programme
+
+- The 14 September 2026 AC opposition in RPL 3304/2025 expressly refers to Gil Marer's LinkedIn publications and the Por Derecho website and reproduces a LinkedIn post screenshot. This establishes litigation relevance of the publication channel; it does **not** identify the cause of the current LinkedIn restriction.
+- LinkedIn routing reference **260923-005700** is an auto-response/routing reference, not proof of substantive DPO or Trust & Safety review.
+- Current user intake remains the restricted-account form and DPO/data-rights form already recorded above.
+- The LinkedIn envelope is the first reusable provider-specific platform-integrity envelope. Google, Meta/Facebook, TripAdvisor and any later provider must be analysed separately; no common actor or mechanism is inferred from chronology.
+- Institutional outreach to PwC, Grant Thornton or RSM must rest on a documented pre-existing matter nexus and an appropriate risk/legal/forensics/cyber/ethics function. Do not manufacture a firm's own cyber incident. The legitimate questions are preservation, internal routing, and whether interference with a publication/evidence channel affects records, personnel, professional involvement or reporting already within that firm's knowledge or remit.
+- Gil alleges serious organised/economic wrongdoing and possible retaliatory digital suppression involving substantial economic interests. Those remain attributed allegations unless independently established. Provider-native records are required to prove or disprove coordinated reporting, account interference or a common actor.
