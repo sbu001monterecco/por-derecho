@@ -299,7 +299,15 @@
       "classification": "OUR_FORMER_PROFESSIONAL",
       "evidence_status": "CONFIRMED_SUBSTANTIVE",
       "firm_ids": [],
-      "matter_scope": "Concurso 36/2012 and related filings/transactions; also appears in Alas working-team correspondence."
+      "matter_scope": "Documented Luchy Playa Blanca / Concurso 36/2012 representation from 2012 through the client-side substitution communicated on 31 May 2020; related filings/transactions and Alas-team correspondence. The exact original engagement instrument and start day remain a source-closure item.",
+      "documented_role_window": {
+        "from": "2012",
+        "to": "2020-05-31",
+        "basis": "Contemporaneous 2012 matter records plus the 31-May-2020 substitution communication thanking counsel for the preceding eight years; exact engagement instrument/start day remains open."
+      },
+      "evidence_control": "assets/data/juan-tomas-parrilla-evidence-control-v1.json",
+      "portrait_asset": "assets/people/juan-tomas-parrilla/juan-tomas-parrilla-conference-crop-sharpened-nongenerative.jpg",
+      "portrait_identity_basis": "USER_SUPPLIED_IDENTIFICATION_NOT_FACE_RECOGNITION"
     },
     {
       "identity_id": "PD-SP-P-0046",
