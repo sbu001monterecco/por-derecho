@@ -40,7 +40,7 @@ Hava Vida Travel & Tourism, S.L.U.^ is `PD-SP-O-0103`. BORME-A-2012-27-38 entry 
 Gil Marer^ states, and accepts responsibility for the statement, that Hava Vida has always been thought of as part of the Aweswell / Group Sun Rock project perimeter. He further states that Patricia's registered shares are understood by him to be held on trust for AWESWELL LIMITED^'s benefit. This is an attributed beneficial-ownership/group-perimeter position, **not** an independently established legal conclusion. No current 2026 Spanish registry certificate, trust instrument, cap table/accounting bridge or counsel opinion establishing governing law/legal effect was located in this pass. Never merge Hava Vida and Aweswell as legal persons.
 
 ## Identity/caret scope for this release
-Finite CAEPR-eligible denominator: 23 identities. Required result after registry repairs: 23/23 CARET_CONFIRMED. The separate `Sun Rock Group / Aweswell project perimeter` is `PD-SP-S-0013`, a controlled STRUCTURE and therefore CARET_NOT_APPLICABLE as a presentation marker while fully registered under the broader `^` command.
+Finite CAEPR-eligible denominator: 23 identities. Required result after registry repairs: 23/23 CARET_CONFIRMED. The separate `Sun Rock Group / Aweswell project perimeter` is `PD-SP-S-0019`, a controlled STRUCTURE and therefore CARET_NOT_APPLICABLE as a presentation marker while fully registered under the broader `^` command.
 
 Evidence/events/relationships are registered in `assets/data/chatgpt-master-memory-v1.json` with stable `PD-MEM-EV-*` / `PD-MEM-REL-*` keys and source/proof ceilings.
 
