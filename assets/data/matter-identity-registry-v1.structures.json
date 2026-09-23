@@ -1,1 +1,127 @@
-{"schema":"por-derecho.matter-identity-registry.part.v1","registry_id":"PD-SP-IDENTITY-REGISTRY-001","type":"STRUCTURE","records":[{"id":"PD-SP-S-0001","type":"STRUCTURE","name":"2011 claimant/litigation perimeter","aliases":["JV1260 claimant perimeter"],"legacy":["claimants"]},{"id":"PD-SP-S-0002","type":"STRUCTURE","name":"Aizpurúa / Roque Prieto governance-owner perimeter","legacy":["aizpurua_roque"]},{"id":"PD-SP-S-0003","type":"STRUCTURE","name":"Pamanil → Pamalexsha administrative-function transition"},{"id":"PD-SP-S-0004","type":"STRUCTURE","name":"Community security/access implementation channel","legacy":["security_access"]},{"id":"PD-SP-S-0005","type":"STRUCTURE","name":"7 June 2018 material-control event","aliases":["7-Jun-2018 takeover event"],"legacy":["material_control"]},{"id":"PD-SP-S-0006","type":"STRUCTURE","name":"Acosta Matos / CAM perimeter"},{"id":"PD-SP-S-0007","type":"STRUCTURE","name":"RICPE / HNT / MYND project layer","legacy":["ricpe_hnt_mynd"]},{"id":"PD-SP-S-0008","type":"STRUCTURE","name":"Meeting Point legal-entity perimeter pending exact match"},{"id":"PD-SP-S-0009","type":"STRUCTURE","name":"2018 funded-exit package","aliases":["Ona / Stoneweg-Varia / Elaia-Lagune / Ben Oldman package"]},{"id":"PD-SP-S-0010","type":"STRUCTURE","name":"Insolvency-administrator enablement/adoption track"},{"id":"PD-SP-S-0011","type":"STRUCTURE","name":"AC Hotel Tenerife","aliases":["AC Tenerife Hotel","AC Hotels by Marriott Tenerife"],"identity_resolution":"CARET_CONFIRMED","address":"Calle Candelaria 31, 38003 Santa Cruz de Tenerife","identity_sources":["AEAT Canarias INF 90-24 / REF 0025DKH1","Marriott AC Hotel Tenerife current hotel page"],"routes":{"es":"/es/irea-colliers-meridian-sun-park/#achm-ac-hotel-tenerife","en":"/en/irea-colliers-meridian-sun-park/#achm-ac-hotel-tenerife"},"identity_boundary":"Hotel establishment/asset, not a legal person; identity does not determine current property title, manager liability or any person's project knowledge."}]}
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "STRUCTURE",
+  "records": [
+    {
+      "id": "PD-SP-S-0001",
+      "type": "STRUCTURE",
+      "name": "2011 claimant/litigation perimeter",
+      "aliases": [
+        "JV1260 claimant perimeter"
+      ],
+      "legacy": [
+        "claimants"
+      ]
+    },
+    {
+      "id": "PD-SP-S-0002",
+      "type": "STRUCTURE",
+      "name": "Aizpurúa / Roque Prieto governance-owner perimeter",
+      "legacy": [
+        "aizpurua_roque"
+      ]
+    },
+    {
+      "id": "PD-SP-S-0003",
+      "type": "STRUCTURE",
+      "name": "Pamanil → Pamalexsha administrative-function transition"
+    },
+    {
+      "id": "PD-SP-S-0004",
+      "type": "STRUCTURE",
+      "name": "Community security/access implementation channel",
+      "legacy": [
+        "security_access"
+      ]
+    },
+    {
+      "id": "PD-SP-S-0005",
+      "type": "STRUCTURE",
+      "name": "7 June 2018 material-control event",
+      "aliases": [
+        "7-Jun-2018 takeover event"
+      ],
+      "legacy": [
+        "material_control"
+      ]
+    },
+    {
+      "id": "PD-SP-S-0006",
+      "type": "STRUCTURE",
+      "name": "Acosta Matos / CAM perimeter"
+    },
+    {
+      "id": "PD-SP-S-0007",
+      "type": "STRUCTURE",
+      "name": "RICPE / HNT / MYND project layer",
+      "legacy": [
+        "ricpe_hnt_mynd"
+      ]
+    },
+    {
+      "id": "PD-SP-S-0008",
+      "type": "STRUCTURE",
+      "name": "Meeting Point legal-entity perimeter pending exact match"
+    },
+    {
+      "id": "PD-SP-S-0009",
+      "type": "STRUCTURE",
+      "name": "2018 funded-exit package",
+      "aliases": [
+        "Ona / Stoneweg-Varia / Elaia-Lagune / Ben Oldman package"
+      ]
+    },
+    {
+      "id": "PD-SP-S-0010",
+      "type": "STRUCTURE",
+      "name": "Insolvency-administrator enablement/adoption track"
+    },
+    {
+      "id": "PD-SP-S-0011",
+      "type": "STRUCTURE",
+      "name": "AC Hotel Tenerife",
+      "aliases": [
+        "AC Tenerife Hotel",
+        "AC Hotels by Marriott Tenerife"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "address": "Calle Candelaria 31, 38003 Santa Cruz de Tenerife",
+      "identity_sources": [
+        "AEAT Canarias INF 90-24 / REF 0025DKH1",
+        "Marriott AC Hotel Tenerife current hotel page"
+      ],
+      "routes": {
+        "es": "/es/irea-colliers-meridian-sun-park/#achm-ac-hotel-tenerife",
+        "en": "/en/irea-colliers-meridian-sun-park/#achm-ac-hotel-tenerife"
+      },
+      "identity_boundary": "Hotel establishment/asset, not a legal person; identity does not determine current property title, manager liability or any person's project knowledge."
+    },
+    {
+      "id": "PD-SP-S-0013",
+      "type": "STRUCTURE",
+      "name": "Sun Rock Group / Aweswell project perimeter",
+      "aliases": [
+        "Group Sun Rock",
+        "Grupo Sun Rock",
+        "Sun Rock Group",
+        "Aweswell / Group Sun Rock perimeter"
+      ],
+      "identity_resolution": "CARET_NOT_APPLICABLE",
+      "status": "CONTROLLED_PROJECT_PERIMETER_NOT_LEGAL_PERSON",
+      "identity_sources": [
+        "Repository public/project controls using Sun Rock / Grupo Sun Rock / Sun Rock Group with Aweswell.",
+        "Gil Marer statement 23-Sep-2026 concerning Hava Vida's intended/historic group treatment."
+      ],
+      "capacity_boundary": "Controlled analytical/project perimeter, not a legal person and not proof of ownership, agency, consolidation, beneficial ownership, common liability, knowledge or intent. Entity-specific legal and beneficial relationships require their own source bridges.",
+      "related_organisation_ids": [
+        "PD-SP-O-0001",
+        "PD-SP-O-0103"
+      ],
+      "related_person_ids": [
+        "PD-SP-P-0001",
+        "PD-SP-P-0002"
+      ]
+    }
+  ]
+}
