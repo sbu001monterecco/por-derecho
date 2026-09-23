@@ -1,0 +1,58 @@
+{
+  "schema": "por-derecho.evidence-control.v1",
+  "control_date": "2026-09-23",
+  "person": {
+    "canonical_name": "Juan Tomás Parrilla Suárez",
+    "canonical_id": "P077",
+    "repository_documentary_lock": "2015",
+    "project_role_assertion": "LPB counsel from the outset of Concurso 36/2012 until representation ended in 2020",
+    "exact_start_date_status": "REQUIRES_PRIMARY_SOURCE_RECONCILIATION"
+  },
+  "primary_source": {
+    "title": "Demanda administración desleal GM vs AC 248-2018 (4ENE2019).pdf",
+    "date": "2019-01-04",
+    "pages": 5,
+    "sha256": "c290ca017cbb4b9446b66452d9462733457b3cb81dff8baa7061034e1f1627a5",
+    "status": "PRIMARY_SOURCE_COPY",
+    "filing_status": "UNRESOLVED",
+    "drive_file_id": "1F8LwY5KN9pGxzl6wudwR14xPkXEnr9oq"
+  },
+  "visual_asset": {
+    "filename": "juan-tomas-parrilla_conference_cropped_sharpened.jpg",
+    "sha256": "8fb933e719301fff98db48f3cac4af39e64331e942906156b9dadaf7fe977482",
+    "provenance": "user-supplied photo; cropped to remove the standing woman on the left and sharpened/cleaned",
+    "identity_status": "USER_ATTRIBUTION_NOT_INDEPENDENT_FACE_IDENTIFICATION",
+    "drive_file_id": "1XwEVO4OjD_l5zaN9j64XlZ4C7z0oORkS"
+  },
+  "allegation_controls": {
+    "non_filing": "ATTRIBUTED_ALLEGATION_REQUIRING_VERIFICATION",
+    "protective_instruction_refusals": "ATTRIBUTED_ALLEGATION_REQUIRING_DATED_INSTRUCTION_RESPONSE_EVIDENCE",
+    "bribery_or_improper_payment": "NOT_ESTABLISHED",
+    "payment_causation": "NOT_ESTABLISHED"
+  },
+  "required_payment_reconciliation": [
+    "payer",
+    "payee",
+    "source_account_or_funds",
+    "legal_authority",
+    "invoice",
+    "VAT_tax_treatment",
+    "insolvency_estate_classification",
+    "ledger_entry",
+    "date",
+    "amount",
+    "communications",
+    "causation",
+    "lawful_alternatives"
+  ],
+  "cross_links": [
+    "Administrador Concursal claim family / 22-page opposition",
+    "28-Nov-2018 CAM transaction and liquidation-execution chronology",
+    "24-Oct-2019 order",
+    "professional isolation/attrition controls",
+    "AC separation proceedings / RPL 3304/2025",
+    "Acosta Matos perimeter",
+    "judge-related allegations with non-transfer of intent/liability"
+  ],
+  "drive_folder_id": "1cX6n4DSoCSGEF9Uo7c3zOkhnk3NXInFS"
+}
