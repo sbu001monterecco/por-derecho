@@ -149,11 +149,7 @@ These are Gil's allegations. Professional negligence, willfulness, improper moti
 
 Gil specifically recalls a **2016 refusal to send a prepared burofax to the AC**. The currently controlled repository establishes that in June–July 2016 the project side and advisers were preparing/escalating Community debt/authority issues to the AC, including a proposed written burofax/warning and extensive document transmission to Parrilla.
 
-However, the current public-safe corpus more clearly documents an **express instruction conflict in June 2017** concerning another requested Community-debt burofax. Therefore:
-
-- preserve Gil's 2016 refusal recollection as an attributed proposition;
-- do **not** rewrite it as source-proved until the exact 2016 instruction/refusal exchange is locked;
-- keep the 2016 escalation/burofax preparation and the 2017 express instruction conflict as separate events.
+**Source-status correction after targeted mailbox recovery:** the exact **12–13 July 2016** instruction/refusal exchange is now located. Patricia sent Parrilla the completed burofax and asked him to review and send it to the AC; Parrilla replied that he would not assess a document affecting a proceeding he handled if he had not drafted it and gave leave to change lawyer. Patricia then clarified that replacement was not the objective and asked what protective route remained. Keep this 2016 episode separate from the distinct June-2017 burofax conflict.
 
 ### Funded-exit causation architecture
 
