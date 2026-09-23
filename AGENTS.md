@@ -658,3 +658,11 @@ Whenever Francisco de Borja Rodríguez-Batllori Laffitte, the Administrador Conc
 - Shared evidence may connect removal, remuneration, criminal, professional-interference and appellate lanes without procedurally merging them. DP 1956 remains the actor-specific AC criminal route; DP 1901 is cross-evidence only.
 - For counsel/professional claims, apply both `PD-LAW-TRUTH-20260922-01` and the relevant AC claim family, especially `AC-CLM-011`.
 - Public pages must retain bidirectional links between the AC hub, R33, separation/remuneration, DP 1956 and the controlled claim register.
+
+
+## 15. ChatGPT Master Memory — PD-MEM-001
+For every Por Derecho / Project Sun Rock thread, treat `PD-MEM-001` as the durable ChatGPT control-plane memory. Read `governance/chatgpt-memory/README.md`, `governance/chatgpt-memory/MASTER_MEMORY_PUBLIC.md`, `assets/data/chatgpt-master-memory-v1.json` and the relevant specialist controls before substantive work. The ChatGPT Settings memory is a compact/lossy bootloader, not source authority. Re-resolve current repository authority and primary sources before relying on implementation or volatile facts.
+
+The master-memory package must preserve the P0 invariants in `assets/data/chatgpt-master-memory-required-controls-v1.json`: anti-fragmentation, no-too-narrow analysis, substance not erased by procedure, NEW→OLD/OLD→NEW propagation, supersession, evidence-state separation, source bridges, live-state verification, actor-specific attribution, contrary evidence, 7-Jun-2018 formal-v-real-control distinction, proceedings distinct-but-interconnected, stage-state discipline, privacy/action authority and substantive-answer-first.
+
+When Gil invokes `^` or asks to confirm all is^ for this package, audit not only CAEPR-eligible names but also evidence, events, filings, intake references, source families and interlinks under the broader user-command meaning in the caret protocol. Visible `Name^` remains identity-only. Do not force a caret onto an unresolved object: record CARET_PENDING/NOT_APPLICABLE and the exact gap. The current PD-MEM-001 audit is `ops/continuity/CHATGPT_MASTER_MEMORY_CARET_AUDIT_20260923.md`.
