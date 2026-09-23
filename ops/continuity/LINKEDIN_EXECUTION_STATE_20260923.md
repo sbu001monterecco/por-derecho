@@ -12,8 +12,12 @@
 | LinkedIn Ireland published written fallback — supplemental reporting-person/public-interest context | SENT + SENT-MAIL VERIFIED | Same case requested; no duplicate-case assumption |
 | LinkedIn Ireland published written fallback — formal Article 15 GDPR + preservation request, DPO routing requested | SENT + SENT-MAIL VERIFIED | Current live written contact used after legacy DPO mailbox rejected; web-form receipt still outstanding |
 | INCIBE-CERT incident mailbox | SENT + SENT-MAIL VERIFIED | Narrow technical incident report; no actor attribution; acknowledgement/reference pending |
-| Guardia Civil ciberdelincuencia information mailbox | SENT + SENT-MAIL VERIFIED | Information/routing communication, not represented as a formal criminal complaint |
+| Guardia Civil ciberdelincuencia information mailbox | ACKNOWLEDGED for initial LinkedIn information | Guardia Civil confirmed receipt of the initial information and distinguished it from a formal criminal complaint. A later six-page digital-evidence report has been sent with visual exhibits; acknowledgement of that report remains pending. The CC to the published Comandancia de Las Palmas address on the prior supplement bounced SMTP 550 5.1.1; internal routing was requested from the cybercrime channel. Do not claim Comandancia receipt. |
 | CNMC DSC contact mailbox | SENT + SENT-MAIL VERIFIED | DSA routing/guidance request, not represented as formal Article 53 complaint |
+
+## Provider decision and evidence-preservation supplement
+
+LinkedIn Trust & Safety informed the account holder on 23 September that the restriction remains after review, citing its policies or agreement generally without a specific content item or clause. The account-access and Article 15 processes remain open. The Guardia Civil supplement also records three Google Business ownership requests for Sun Park in 2021-2022; matching account identifiers do not prove the human operator or a common cause with the September platform incidents. The signed private report and underlying emails/screenshots remain outside this public repository.
 
 ## Outstanding provider-native form receipts
 
