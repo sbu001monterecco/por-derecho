@@ -427,7 +427,7 @@
     "intake": "ops/recovery-cross-thread/la-laguna-all-party-20260919/intake.json",
     "comparison": "ops/recovery-cross-thread/la-laguna-all-party-20260919/comparison.json",
     "review": "ops/recovery-cross-thread/la-laguna-all-party-20260919/REVIEW.md",
-    "current_verified_unique_ids": 379,
+    "current_verified_unique_ids": 381,
     "historical_reported_gitlab_ids": 515,
     "ids_allocated": 0,
     "rule": "Use the current allocator and exact source evidence to reconcile candidates. Do not replay historical IDs or promote name matches to identity, affiliation, property title or liability."
