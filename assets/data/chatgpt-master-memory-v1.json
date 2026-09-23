@@ -1,0 +1,176 @@
+{
+  "schema": "por-derecho.chatgpt-master-memory.v1",
+  "id": "PD-MEM-001",
+  "control_date": "2026-09-23",
+  "status": "ACTIVE_PUBLIC_SAFE_MASTER_MEMORY_CONTROL",
+  "source_layers": {
+    "L0": "primary/canonical sources and current specialist registers",
+    "L1_private": "private full master in Google Drive",
+    "L1_public": "governance/chatgpt-memory/MASTER_MEMORY_PUBLIC.md",
+    "L2_compact": "governance/chatgpt-memory/MASTER_MEMORY_COMPACT.txt",
+    "L3_observed": "observed ChatGPT Memory summary is QA derivative only"
+  },
+  "finite_caret_scope": {
+    "denominator": 23,
+    "expected_confirmed": 23,
+    "presentation_exceptions": [
+      {
+        "id": "PD-SP-S-0013",
+        "type": "STRUCTURE",
+        "state": "CARET_NOT_APPLICABLE"
+      }
+    ],
+    "people": [
+      "PD-SP-P-0001",
+      "PD-SP-P-0002",
+      "PD-SP-P-0007",
+      "PD-SP-P-0008",
+      "PD-SP-P-0009",
+      "PD-SP-P-0010",
+      "PD-SP-P-0011",
+      "PD-SP-P-0012",
+      "PD-SP-P-0057"
+    ],
+    "organisations": [
+      "PD-SP-O-0001",
+      "PD-SP-O-0002",
+      "PD-SP-O-0003",
+      "PD-SP-O-0004",
+      "PD-SP-O-0103"
+    ],
+    "institutions": [
+      "PD-SP-I-0002",
+      "PD-SP-I-0028",
+      "PD-SP-I-0029"
+    ],
+    "proceedings": [
+      "PD-SP-R-0001",
+      "PD-SP-R-0004",
+      "PD-SP-R-0005",
+      "PD-SP-R-0006",
+      "PD-SP-R-0011",
+      "PD-SP-R-0034"
+    ]
+  },
+  "controlled_non_proceeding_references": [
+    {
+      "id": "PD-MEM-REF-021",
+      "label": "Ref21",
+      "status": "CONTROLLED_INTAKE_REFERENCE_NOT_PROCEEDING"
+    },
+    {
+      "id": "PD-MEM-REF-022",
+      "label": "Ref22",
+      "status": "CONTROLLED_INTAKE_REFERENCE_NOT_PROCEEDING"
+    },
+    {
+      "id": "PD-MEM-REF-024",
+      "label": "Ref24",
+      "status": "CONTROLLED_INTAKE_REFERENCE_NOT_PROCEEDING",
+      "boundary": "Not DP24/NIG/formal proceeding absent primary proof"
+    }
+  ],
+  "evidence_events": [
+    {
+      "id": "PD-MEM-EV-001",
+      "date": "2018-06-07",
+      "label": "7 June 2018 material-control/takeover convergence pivot",
+      "source_control": "assets/data/sun-park-7june2018-criminal-pivot-v1.json",
+      "status": "ATTRIBUTED_CRIMINAL_HYPOTHESIS_WITH_SOURCE_CONTROL"
+    },
+    {
+      "id": "PD-MEM-EV-002",
+      "date": "2023-09-21",
+      "label": "Audiencia Nacional querella lineage",
+      "source_control": "evidence/criminal/an-dp91-2023/AN2023_REF21_REF22_REF24_LINEAGE.md",
+      "status": "PARTY_PLEADING_LINEAGE_NOT_FINDING"
+    },
+    {
+      "id": "PD-MEM-EV-003",
+      "date": "2026-06-25",
+      "label": "Ref21 private-actor complaint/intake",
+      "status": "CONTROLLED_INTAKE_REFERENCE"
+    },
+    {
+      "id": "PD-MEM-EV-004",
+      "date": "2026-06-18",
+      "label": "Ref22 AC complaint/intake",
+      "status": "CONTROLLED_INTAKE_REFERENCE"
+    },
+    {
+      "id": "PD-MEM-EV-005",
+      "date": "2026-06-18",
+      "label": "Ref24 judge-related intake reference and 25-Jun amplification",
+      "status": "CONTROLLED_INTAKE_REFERENCE_FORMAL_CAUSE_BRIDGE_OPEN"
+    },
+    {
+      "id": "PD-MEM-EV-006",
+      "date": "2026-09-14",
+      "label": "RPL 3304/2025 AC opposition / R33",
+      "source_control": "archive/AC_CLAIMS_R33_UNITARY_CANON_22SEP2026.md",
+      "status": "PARTY_EVIDENTIAL_RESPONSE_NOT_INDEPENDENT_TRUTH"
+    },
+    {
+      "id": "PD-MEM-EV-007",
+      "date": "2012-01-27",
+      "label": "Hava Vida incorporation registry act",
+      "source": "BORME-A-2012-27-38 entry 64020",
+      "status": "PRIMARY_REGISTRY_FACT"
+    },
+    {
+      "id": "PD-MEM-EV-008",
+      "date": "2012-05-31",
+      "label": "Hava Vida registered-office change",
+      "source": "BORME-A-2012-110-38 entry 248217",
+      "status": "PRIMARY_REGISTRY_FACT"
+    },
+    {
+      "id": "PD-MEM-EV-009",
+      "date": "2026-09-23",
+      "label": "Gil Marer Hava Vida/Aweswell beneficial-position adoption",
+      "status": "ATTRIBUTED_OWNER_STATEMENT"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "PD-MEM-REL-001",
+      "from": "PD-SP-P-0002",
+      "to": "PD-SP-O-0103",
+      "type": "REGISTERED_SOLE_SHAREHOLDER_AT_INCORPORATION",
+      "status": "PRIMARY_REGISTRY_FACT",
+      "source": "BORME-A-2012-27-38 entry 64020"
+    },
+    {
+      "id": "PD-MEM-REL-002",
+      "from": "PD-SP-P-0002",
+      "to": "PD-SP-O-0103",
+      "type": "REGISTERED_SOLE_ADMINISTRATOR_AT_INCORPORATION",
+      "status": "PRIMARY_REGISTRY_FACT",
+      "source": "BORME-A-2012-27-38 entry 64020"
+    },
+    {
+      "id": "PD-MEM-REL-003",
+      "from": "PD-SP-O-0103",
+      "to": "PD-SP-S-0013",
+      "type": "PROJECT_GROUP_PERIMETER",
+      "status": "ATTRIBUTED_PROJECT_POSITION",
+      "source": "Gil Marer 23-Sep-2026"
+    },
+    {
+      "id": "PD-MEM-REL-004",
+      "from": "PD-SP-P-0002",
+      "to": "PD-SP-O-0001",
+      "via": "PD-SP-O-0103",
+      "type": "BENEFICIAL_INTEREST_TRUST_POSITION",
+      "status": "ATTRIBUTED_POSITION_NOT_INDEPENDENTLY_ESTABLISHED",
+      "source": "Gil Marer 23-Sep-2026",
+      "proof_gap": "trust instrument/current registry/cap table/accounting/legal governing-law effect"
+    }
+  ],
+  "boundaries": [
+    "Hava Vida and Aweswell remain distinct legal persons.",
+    "2012 BORME proves Patricia capacities at incorporation, not current 2026 status.",
+    "The trust/beneficial proposition is Gil Marer's adopted statement, not an adjudicated or independently established legal conclusion.",
+    "Group/perimeter relationship does not transfer liability, knowledge, intent or acts."
+  ]
+}
