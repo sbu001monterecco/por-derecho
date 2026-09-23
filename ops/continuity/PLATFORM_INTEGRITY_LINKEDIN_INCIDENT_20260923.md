@@ -31,3 +31,12 @@ Do not attribute any LinkedIn restriction, report, profile edit, Google event, G
 - Machine-readable register: `assets/data/platform-integrity-events-v1.json`
 
 The public page requests preservation of native account-security, moderation, reporting and audit records while withholding authentication-bearing links, message IDs, private session/IP data and reporter identities.
+
+## Outbound LinkedIn escalation
+
+- Account Recovery / Trust & Safety email attempt: sent to the historical support mailbox from the official business account, but LinkedIn's automatic response states that the mailbox only accepts replies to an existing open case or recently closed case and that the new inquiry was **not received by the support team**. Current restricted-account intake: `https://www.linkedin.com/help/linkedin/solve`.
+- Privacy / DPO email attempt: sent separately, but LinkedIn's automatic response states that the DPO mailbox is no longer active or monitored. The response generated reference **260923-005700** and directs DPO contact to `https://www.linkedin.com/help/linkedin/ask/TSO-DPO`.
+- The attempted notices remain evidence of the content and timing of the attempted escalation, but they are not treated as proof that the relevant LinkedIn teams received or reviewed the substance.
+- The form-ready packages request urgent restoration, preservation, trigger classification, repeated/linked-report analysis, stable-pseudonym fallback where reporter identity cannot be disclosed, Article 15 source information, DSA Article 23 review where applicable, statement-of-reasons/appeal routing where moderation is involved, and enhanced human review / targeted-account safeguards if LinkedIn has an equivalent internal mechanism.
+- The packages point to the public-safe platform-integrity hub, Por Derecho transparency / AI-control page, Google evidence-cooperation dossier, Control 21 public route and public source-control repository.
+- No Gmail message IDs, authentication-bearing links, private security telemetry or reporter identities are committed to the public repository.
