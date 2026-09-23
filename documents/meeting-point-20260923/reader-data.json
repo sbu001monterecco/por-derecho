@@ -1,0 +1,310 @@
+{
+  "copy": {
+    "es": {
+      "eyebrow": "Expediente público · España / Alemania",
+      "title": "Sun Park, Club Sei y Meeting Point: la información que debe llegar a cada procedimiento.",
+      "claim": "<strong>Gil Marer denuncia comercialización de Sun Park desde 2018 y ocultación deliberada de sus acuerdos y contingencias.</strong> Atribuye esa operativa al perímetro Acosta Matos y a los particulares individualizados, con la participación que atribuye a personas vinculadas a la antigua dirección de Meeting Point. Denuncia que la ocultaron a los órganos de Meeting Point que debían conocerla y al concurso 36/2012. Sostiene que la falta de revelación perjudicó al concurso LPB 36/2012 y se proyectó sobre la posterior reestructuración Meeting Point 357/2024 y 93/2025, con efectos para afectados en España y Alemania.",
+      "status": "Posición del compareciente · edición pública de 23 septiembre 2026",
+      "limit": "La declaración de 2018 describe actos ya ejecutados; las ofertas minoristas posteriores muestran exposición real al consumidor. Aún deben acreditarse el mandato de cada persona, la entidad contratante y las reservas, pagos o ingresos completados. La atribución de ocultación no se presenta como condena.",
+      "read": "Leer el documento completo",
+      "letter": "Comunicación abierta",
+      "visual": "Prueba y cronología",
+      "map": "España ↔ Alemania",
+      "docs": "Documentos ES / EN",
+      "legacy": "Dossier y fuentes anteriores",
+      "timeline": [
+        [
+          "2018",
+          "Presentaciones y visitas",
+          "La declaración jurada de Barreiro relata actuaciones comerciales y de acceso realizadas."
+        ],
+        [
+          "2019",
+          "Lava Verde / Club Sei",
+          "Proyecto corporativo, marca hotelera y distribución anunciada."
+        ],
+        [
+          "2020",
+          "Oferta al consumidor",
+          "Anuncios, precios y pantallas de reserva; cobro completado no acreditado."
+        ],
+        [
+          "2024–26",
+          "Avisos y continuidad",
+          "Procedimientos españoles, insolvencias alemanas y custodia posterior."
+        ]
+      ],
+      "proof_title": "Qué ocurrió, qué se ofreció y qué falta acreditar.",
+      "proof_intro": "La tesis central se apoya en una secuencia documental. Cada pieza responde a una pregunta distinta; una pantalla posterior no puede trasladarse a 2018 ni una relación societaria sustituir un mandato.",
+      "cards": [
+        [
+          "2018 · declaración jurada",
+          "Actos comerciales ya realizados",
+          "Barreiro declaró el 25 de junio de 2018 sobre visitas de febrero/marzo: presentación del hotel a terceros como adquirido, planos y mediciones. También relata el episodio de control del 7 de junio. Es la base testimonial de la comercialización desde 2018 alegada por Gil.",
+          "Documento 2 · anexo 1, pp. 4–10, declaración de 25-06-2018; contraste con el acta y fotografías.",
+          "../toma-control-sun-park-7-junio-2018/",
+          "Abrir el dossier de 2018"
+        ],
+        [
+          "2019–2020 · fuentes comerciales",
+          "Producto expuesto al consumidor",
+          "Club Sei Lanzarote apareció en material Meeting Point y en distribuidores. La pantalla Loveholidays del 21 de enero de 2020 muestra una oferta. Otros registros del expediente llegan a precio total y depósito solicitado.",
+          "Galería archivada · anexo 21a, Documento 2, pp. 202–204 para las pantallas de pago.",
+          "#evidencia-visual",
+          "Examinar las capturas"
+        ],
+        [
+          "Prueba pendiente · contraste necesario",
+          "De la oferta al dinero",
+          "Se piden contrato, poder o mandato; inventario y allotments; reserva aceptada; depósito, cancelación o reembolso; factura, comisión y cuenta receptora. Sin esa cadena no se dan por acreditados los cobros de 2018 alegados ni la conclusión del pago de 2020.",
+          "Escrito · tercero y séptimo; requerimientos de producción y conservación.",
+          "lectura-publica/",
+          "Leer la atribución y sus límites"
+        ]
+      ],
+      "proof_note": "<strong>Contraste expreso:</strong> Barreiro no situó a José Daniel Acosta Matos en el lugar el 7 de junio ni conocía personalmente a Francisco Mario Matos Matas; la identificación y el mandato de «JOAN» requieren cotejo. El aplazamiento de Club Sei por la pandemia, comunicado en octubre de 2020, también debe conservarse.",
+      "map_title": "El perjuicio alegado circula en dos direcciones.",
+      "map_intro": "Gil sostiene que la fragmentación de la información puede impedir que cada masa y cada interesado identifique derechos, responsabilidades y posibilidades de recuperación. Las flechas muestran la circulación documental solicitada y el mecanismo alegado; no una transmisión ya cumplida ni una responsabilidad compartida declarada.",
+      "map_left": "España · titularidad, explotación y reestructuración",
+      "map_lbody": "<strong>LPB 36/2012:</strong> se pide reconstruir autoridad sobre las unidades, acceso, explotación, inventario, ingresos y acciones de recuperación.<br><br><strong>Meeting Point 357/2024 → 93/2025:</strong> se pide contrastar qué conocieron las deudoras, sus representantes y el experto, y qué se incorporó a los documentos de negociación y plan.",
+      "map_right": "Alemania · contratos, archivos y recuperación",
+      "map_rbody": "<strong>FTI y las sociedades Meeting Point alemanas:</strong> los contratos, archivos de cumplimiento, reservas, pagos, reclamaciones y contingencias pueden ser relevantes para sus respectivas masas y acreedores.<br><br>La documentación alemana puede aclarar el mandato y los flujos discutidos en España; los derechos y litigios españoles pueden afectar a la valoración y recuperación en Alemania.",
+      "map_bridge": "Documentos<br>y respuesta",
+      "tableheads": [
+        "Ámbito",
+        "Referencia y capacidad",
+        "Petición concreta"
+      ],
+      "rows": [
+        [
+          "LPB",
+          "36/2012 · Luchy Playa Blanca, S.L.U.",
+          "Derechos y obligaciones de esta masa; mantener separados Matkator y terceros."
+        ],
+        [
+          "Meeting Point España",
+          "357/2024 y 93/2025 · números distintos, NIG común 3501647120240001256",
+          "Identificar expediente receptor y custodia; comprobar la incorporación efectiva de los avisos."
+        ],
+        [
+          "FTI / Meeting Point Alemania",
+          "FTI: 1500 IN 1758/24 · MPI: 1500 IN 10126/24 · MP Hotelmanagement Holding: 1500 IN 10107/24",
+          "Traslado pertinente a la administración competente de cada sociedad, con índice y justificante."
+        ],
+        [
+          "Adquisición y custodia posterior",
+          "GESTORA BLUE SEA PARTNER, S.A. · PORTOBELLO CAPITAL, S.L. · entidades Partners Group que correspondan",
+          "Comprobar persona jurídica, representación, pertinencia y deber concreto; decidir motivadamente cualquier exclusión."
+        ]
+      ],
+      "map_note": "<strong>Sucesión publicada:</strong> el BORME de 11 de septiembre de 2026 registra la absorción de Meeting Point Spain y Meeting Point Investment por Meeting Point Hotelmanagement (Canaries), inscrita el 4 de septiembre. Esto orienta la búsqueda del custodio actual; no certifica el cierre de los procedimientos ni que Sun Park integrase lo transmitido.",
+      "open_title": "Que ninguna decisión sobre esta información quede sin documentar.",
+      "addressee": "A los órganos judiciales y administraciones competentes, a las sociedades y custodios identificados, a las entidades adquirentes pertinentes y a las personas afectadas en España y Alemania:",
+      "letter_intro": "Gil Marer solicita que la comercialización desde 2018 denunciada, los documentos que la sustentan y sus límites se examinen junto con la información que efectivamente recibió cada destinatario. La cuestión es quién conoció qué, cuándo, en qué capacidad y qué decisión adoptó respecto de su conservación, incorporación o comunicación.",
+      "asks": [
+        [
+          "Conservar y reconstruir",
+          "Identificar y preservar contratos, poderes, inventarios, reservas, cuentas, comunicaciones y contingencias; distinguir originales, versiones y lagunas."
+        ],
+        [
+          "Incorporar y dar cuenta",
+          "Determinar el cauce y expediente competente en España, sin confundir 36/2012, 357/2024 y 93/2025, ni presumir legitimación procesal por la mera comunicación."
+        ],
+        [
+          "Transmitir de forma trazable",
+          "Resolver el traslado pertinente a las administraciones alemanas de FTI/Meeting Point y a las personas jurídicas identificadas de BLUESEA, Portobello y, cuando corresponda, Partners Group. Dejar constancia de destinatario, fecha, índice, versión y recepción acreditada."
+        ],
+        [
+          "Motivar toda exclusión o reserva",
+          "Si se decide no transmitir, limitar el acceso o reservar documentos, identificar la decisión, su fundamento, alcance y custodia. Los deberes dependen de la persona, el cargo, la jurisdicción y la materia."
+        ]
+      ],
+      "quote": "Se insta expresamente a que no continúe la ocultación denunciada y a que toda decisión sobre la circulación de esta información material quede documentada.",
+      "contrary": "<strong>Respuestas que forman parte del expediente:</strong> Partners Group negó la vinculación inversora invocada en sus respuestas de 9 de octubre y 6 de noviembre de 2025 y pidió cesar los correos. La referencia alemana 566 Js 155187/24 consta en correspondencia de Fiscalía, pero no acredita por sí sola investigación activa: se conserva la respuesta contraria de K71 de 15 de septiembre de 2026. El archivo libre de DP 1901/2026 de 14 de septiembre de 2026 y su razonamiento adverso también permanecen en la lectura completa.",
+      "letter_status": "Esta es una comunicación pública de la posición y las solicitudes de Gil. La publicación no acredita presentación judicial, notificación, recepción por los destinatarios ni aceptación de las alegaciones. Las respuestas o correcciones documentadas deberán tratarse con la misma visibilidad.",
+      "doc_title": "El escrito, completo y legible en dos idiomas.",
+      "doc_intro": "Ediciones públicas de lectura del contenido sustantivo del escrito: hechos atribuidos, pruebas, límites, resoluciones contrarias, testigos propuestos y solicitudes. Incluyen una selección visual pública identificada. Los originales judiciales y el conjunto de anexos privados se conservan por separado; estas ediciones no los sustituyen.",
+      "doc_es": "Edición pública en español",
+      "doc_en": "English public reading edition",
+      "doc_es_body": "Texto sustantivo íntegro del escrito, con minimización de datos personales y correspondencia reservada. Referencias a los anexos originales conservadas.",
+      "doc_en_body": "Traducción completa de la edición pública. Las fuentes y citas originales mantienen su idioma; no es traducción jurada.",
+      "online": "Leer en la página",
+      "download": "Descargar PDF",
+      "scope": "Alcance de esta edición",
+      "scope_text": "La privacidad se protege mediante eliminación de datos innecesarios y resúmenes atribuidos de correspondencia reservada. No se publica el ZIP de trabajo ni se presentan los anexos privados como accesibles aquí. Las cifras de página de los anexos se refieren al paquete judicial privado. El registro de edición y las fuentes explican las sustituciones.",
+      "reply": "Aportar una respuesta o corrección documentada",
+      "reply_note": "El enlace abre el canal público ya existente. No publique datos personales ni documentos reservados en un comentario público.",
+      "reading": "lectura-publica",
+      "otherreading": "public-reading",
+      "record_title": "La historia completa y las fuentes del dossier anterior"
+    },
+    "en": {
+      "eyebrow": "Public record · Spain / Germany",
+      "title": "Sun Park, Club Sei and Meeting Point: information each proceeding needs to receive.",
+      "claim": "<strong>Gil Marer alleges commercialization of Sun Park from 2018 and deliberate concealment of its arrangements and contingencies.</strong> He attributes that activity to the Acosta Matos perimeter and the identified private individuals, with the alleged participation of people linked to former Meeting Point leadership. He says they concealed it from the Meeting Point corporate organs that should have known and from the 36/2012 insolvency. He says nondisclosure harmed the LPB 36/2012 insolvency and carried into the later Meeting Point 357/2024 and 93/2025 restructuring proceedings, affecting parties in Spain and Germany.",
+      "status": "The applicant’s position · public edition of 23 September 2026",
+      "limit": "The 2018 testimony describes acts already carried out; later retail offers show actual exposure to consumers. Each person’s mandate, the contracting entity and completed bookings, payments or receipts remain to be established. The concealment allegation is not presented as a conviction.",
+      "read": "Read the complete document",
+      "letter": "Open communication",
+      "visual": "Evidence and chronology",
+      "map": "Spain ↔ Germany",
+      "docs": "ES / EN documents",
+      "legacy": "Earlier dossier and sources",
+      "timeline": [
+        [
+          "2018",
+          "Presentations and visits",
+          "Barreiro’s sworn testimony describes commercial and access activities already performed."
+        ],
+        [
+          "2019",
+          "Lava Verde / Club Sei",
+          "Corporate project, hotel brand and announced distribution."
+        ],
+        [
+          "2020",
+          "Consumer offer",
+          "Listings, prices and booking screens; completed collection of money remains unproved."
+        ],
+        [
+          "2024–26",
+          "Notices and continuity",
+          "Spanish proceedings, German insolvencies and subsequent document custody."
+        ]
+      ],
+      "proof_title": "What happened, what was offered and what still needs proof.",
+      "proof_intro": "The central allegation rests on a documentary sequence. Each item answers a different question: a later screen cannot be projected back to 2018, and a corporate connection cannot replace a mandate.",
+      "cards": [
+        [
+          "2018 · sworn testimony",
+          "Commercial acts already carried out",
+          "On 25 June 2018, Barreiro described February/March visits: the hotel was presented to third parties as acquired, with plans and measurements. He also described the 7 June control episode. This is the testimonial basis for Gil’s allegation of commercialization from 2018.",
+          "Document 2 · Annex 1, pp. 4–10, testimony of 25 June 2018; cross-check against the minutes and photographs.",
+          "../sun-park-takeover-7-june-2018/",
+          "Open the 2018 dossier"
+        ],
+        [
+          "2019–2020 · commercial sources",
+          "A product exposed to consumers",
+          "Club Sei Lanzarote appeared in Meeting Point material and distributor listings. The 21 January 2020 Loveholidays screen shows an offer. Other preserved records reach a total price and requested deposit.",
+          "Archived gallery · Annex 21a, Document 2, pp. 202–204 for the payment screens.",
+          "#visual-evidence",
+          "Examine the captures"
+        ],
+        [
+          "Open proof · records required",
+          "From an offer to the money",
+          "The requests seek a contract, authority or mandate; inventory and allotments; accepted bookings; deposits, cancellations or refunds; invoices, commissions and receiving accounts. Without that chain, the alleged 2018 receipts and completion of the 2020 payment are not established by this evidence.",
+          "Pleading · third and seventh sections; requests to produce and preserve records.",
+          "public-reading/",
+          "Read the attribution and limits"
+        ]
+      ],
+      "proof_note": "<strong>Express cross-check:</strong> Barreiro did not place José Daniel Acosta Matos at the site on 7 June and did not personally know Francisco Mario Matos Matas; the identity and mandate of “JOAN” require verification. The October 2020 announcement postponing Club Sei because of the pandemic is also retained.",
+      "map_title": "The alleged harm runs in both directions.",
+      "map_intro": "Gil says fragmented information can prevent each estate and affected party from identifying rights, liabilities and recovery opportunities. The arrows represent requested document exchange and the alleged mechanism, not completed transmission or established shared responsibility.",
+      "map_left": "Spain · ownership, operation and restructuring",
+      "map_lbody": "<strong>LPB 36/2012:</strong> the request is to reconstruct authority over the units, access, operation, inventory, income and recovery claims.<br><br><strong>Meeting Point 357/2024 → 93/2025:</strong> the request is to establish what the debtors, their representatives and the expert knew, and what reached the negotiation and plan documents.",
+      "map_right": "Germany · contracts, records and recovery",
+      "map_rbody": "<strong>FTI and the German Meeting Point companies:</strong> contracts, compliance records, bookings, payments, claims and contingencies may matter to their respective estates and creditors.<br><br>German records may clarify the mandate and flows disputed in Spain; Spanish rights and litigation may affect valuation and recovery in Germany.",
+      "map_bridge": "Documents<br>and response",
+      "tableheads": [
+        "Perimeter",
+        "Reference and capacity",
+        "Specific request"
+      ],
+      "rows": [
+        [
+          "LPB",
+          "36/2012 · Luchy Playa Blanca, S.L.U.",
+          "Rights and obligations of this estate; keep Matkator and third parties separate."
+        ],
+        [
+          "Meeting Point Spain",
+          "357/2024 and 93/2025 · distinct numbers, common NIG 3501647120240001256",
+          "Identify the receiving file and custodian; verify actual incorporation of the notices."
+        ],
+        [
+          "FTI / Meeting Point Germany",
+          "FTI: 1500 IN 1758/24 · MPI: 1500 IN 10126/24 · MP Hotelmanagement Holding: 1500 IN 10107/24",
+          "Pertinent transmission to each company’s competent insolvency administration, with an index and receipt."
+        ],
+        [
+          "Acquisition and later custody",
+          "GESTORA BLUE SEA PARTNER, S.A. · PORTOBELLO CAPITAL, S.L. · the relevant Partners Group entities",
+          "Verify legal person, representation, relevance and specific duty; give reasons for any exclusion."
+        ]
+      ],
+      "map_note": "<strong>Published succession:</strong> the BORME of 11 September 2026 records the absorption of Meeting Point Spain and Meeting Point Investment by Meeting Point Hotelmanagement (Canaries), registered on 4 September. This guides the search for the current custodian; it does not certify closure of the proceedings or that Sun Park formed part of the transferred estate.",
+      "open_title": "Every decision about this information should leave a record.",
+      "addressee": "To the competent courts and administrations, the identified companies and custodians, the relevant acquisition entities, and affected parties in Spain and Germany:",
+      "letter_intro": "Gil Marer requests that the alleged commercialization from 2018, its supporting documents and their limits be examined alongside the information each recipient actually received. The question is who knew what, when, in which capacity, and what decision they made about preservation, incorporation or communication.",
+      "asks": [
+        [
+          "Preserve and reconstruct",
+          "Identify and preserve contracts, powers, inventories, bookings, accounts, communications and contingencies; distinguish originals, versions and gaps."
+        ],
+        [
+          "Incorporate and bring to attention",
+          "Identify the proper route and competent file in Spain, keeping 36/2012, 357/2024 and 93/2025 distinct and without presuming procedural standing from the communication alone."
+        ],
+        [
+          "Transmit with a verifiable record",
+          "Decide on pertinent transmission to the German FTI/Meeting Point insolvency administrations and the identified BLUESEA, Portobello and, where appropriate, Partners Group legal persons. Record the recipient, date, index, version and demonstrated receipt."
+        ],
+        [
+          "Give reasons for every exclusion or reservation",
+          "If transmission is declined, access limited or documents reserved, identify the decision, its grounds, scope and custodian. Duties depend on the person, office, jurisdiction and subject matter."
+        ]
+      ],
+      "quote": "An express request is made that the alleged concealment should not continue and that every decision about the circulation of this material information be documented.",
+      "contrary": "<strong>Responses retained in the record:</strong> Partners Group denied the asserted investment connection in its replies of 9 October and 6 November 2025 and requested that emails cease. German reference 566 Js 155187/24 appears in prosecutor correspondence but does not itself establish an active investigation: the contrary K71 response of 15 September 2026 is retained. The 14 September 2026 dismissal order (sobreseimiento libre) in DP 1901/2026, whose finality is not established here, and its adverse reasoning also remain in the complete reading edition.",
+      "letter_status": "This is a public communication of Gil’s position and requests. Publication does not establish court filing, service, receipt by the recipients or acceptance of the allegations. Documented responses or corrections should receive the same visibility.",
+      "doc_title": "The pleading, complete and readable in two languages.",
+      "doc_intro": "Public reading editions of the pleading’s substantive content: attributed facts, evidence, limits, contrary decisions, proposed witnesses and requests. They include an identified selection of public visual evidence. Original court documents and the private annex collection are retained separately; these editions do not replace them.",
+      "doc_es": "Edición pública en español",
+      "doc_en": "English public reading edition",
+      "doc_es_body": "Complete substantive text of the pleading, with personal-data minimization and protected correspondence summarized. References to the preserved original annexes remain.",
+      "doc_en_body": "Complete translation of the public edition. Sources and original quotations retain their language; this is not a certified translation.",
+      "online": "Read online",
+      "download": "Download PDF",
+      "scope": "Scope of this edition",
+      "scope_text": "Privacy is protected by removing unnecessary details and using attributed summaries of protected correspondence. The working ZIP is not public, and private annexes are not represented as accessible here. Annex page numbers refer to the private court package. The edition record and sources explain the substitutions.",
+      "reply": "Provide a documented response or correction",
+      "reply_note": "The link opens the existing public channel. Do not put personal data or protected documents in a public comment.",
+      "reading": "public-reading",
+      "otherreading": "lectura-publica",
+      "record_title": "The complete history and sources in the earlier dossier"
+    }
+  },
+  "figures": [
+    {
+      "src": "assets/evidence/club-sei-meeting-point-brochure-2019.svg",
+      "es": "Club Sei Lanzarote en el folleto de Meeting Point Hotels, edición enero de 2020, publicada el 11 de octubre de 2019. La página 111 presenta 315 habitaciones. Es una presentación comercial: no acredita apertura, título ni contrato de explotación. Document 2 Annex 5b p.47; original brochure PDF p.111",
+      "en": "Club Sei Lanzarote in the Meeting Point Hotels brochure, January 2020 edition, published on 11 October 2019. Page 111 presents 315 rooms. This is a commercial presentation; it does not establish opening, title or an operating contract. Document 2 Annex 5b p.47; original brochure PDF p.111",
+      "alt_es": "Página del folleto de Meeting Point Hotels que presenta Club Sei Lanzarote y 315 habitaciones",
+      "alt_en": "Meeting Point Hotels brochure page presenting Club Sei Lanzarote and 315 rooms"
+    },
+    {
+      "src": "assets/evidence/sun-park-lava-verde-club-sei-comparison-2021.svg",
+      "es": "Comparación archivada el 2 de noviembre de 2021: folleto Club Sei, presentación Hotel Lava Verde de Acosta Matos y ficha de RIC que menciona Sun Park. El pie de la ficha RIC conserva la salvedad «en estudio». La coincidencia comercial orienta la solicitud de contratos y mapas de unidades; no prueba propiedad integral, autorización ni identidad jurídica. Existing bilingual Club Sei dossier, evidence gallery; archived comparison dated 2 November 2021",
+      "en": "Comparison archived on 2 November 2021: the Club Sei brochure, Acosta Matos’s Hotel Lava Verde presentation and an RIC document naming Sun Park. The RIC footnote retains the qualification “under study.” This commercial correspondence supports requesting contracts and unit maps; it does not prove whole-site ownership, authority or legal identity. Existing bilingual Club Sei dossier, evidence gallery; archived comparison dated 2 November 2021",
+      "alt_es": "Tres fuentes públicas comparadas: Club Sei, Hotel Lava Verde y ficha inversora de Sun Park",
+      "alt_en": "Three public sources compared: Club Sei, Hotel Lava Verde and an investment document naming Sun Park"
+    },
+    {
+      "src": "assets/evidence/ric-webinar-sun-park.webp",
+      "es": "Dossier contemporáneo del webinar RIC de 11 de noviembre de 2020, página 27: el texto atribuye a «José Acosta» la presentación de Sun Park como proyecto de 220 apartamentos y 12 millones de euros. Captura y transcripción de la compilación; el audio original sigue pendiente de cotejo. La cifra es una propuesta de inversión, no un desembolso acreditado. Document 1 Annex 29 p.91; original contemporaneous webinar dossier p.27; webinar 11 November 2020",
+      "en": "Contemporaneous dossier of the RIC webinar of 11 November 2020, page 27: its text attributes to “José Acosta” the presentation of Sun Park as a 220-apartment, €12 million project. This is the compilation’s capture and attributed transcription; the original audio remains to be checked. The amount is a proposed investment, not a verified disbursement. Document 1 Annex 29 p.91; original contemporaneous webinar dossier p.27; webinar 11 November 2020",
+      "alt_es": "Página preservada del webinar RIC con la presentación de Sun Park como proyecto de 220 apartamentos",
+      "alt_en": "Preserved RIC webinar dossier page presenting Sun Park as a 220-apartment project"
+    },
+    {
+      "src": "assets/evidence/ric-webinar-title-claim.webp",
+      "es": "Dossier del mismo webinar, página 32: declaración atribuida sobre compra con fondos propios y ausencia de cargas. Se conserva como manifestación que debe contrastarse con títulos, cargas y contratos; no certifica esos extremos. Los rótulos y la transcripción pertenecen a la compilación, no a una transcripción judicial del audio. Document 1 Annex 29 p.96; original contemporaneous webinar dossier p.32; webinar 11 November 2020",
+      "en": "Page 32 of the same webinar dossier: an attributed statement about purchase with own funds and absence of charges. It is preserved as a statement to test against title, charges and contracts; it does not certify those matters. Labels and transcription belong to the compilation, not a judicial transcription of the audio. Document 1 Annex 29 p.96; original contemporaneous webinar dossier p.32; webinar 11 November 2020",
+      "alt_es": "Página del dossier webinar con la afirmación atribuida de compra con fondos propios y ausencia de cargas",
+      "alt_en": "Webinar dossier page with an attributed statement of purchase with own funds and absence of charges"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "pages": [
+    {
+      "path": "es/lava-verde-club-sei-meeting-point/index.html",
+      "h1_count": 1,
+      "words": 5665,
+      "ids": 21
+    },
+    {
+      "path": "en/lava-verde-club-sei-meeting-point/index.html",
+      "h1_count": 1,
+      "words": 5354,
+      "ids": 21
+    },
+    {
+      "path": "es/lava-verde-club-sei-meeting-point/lectura-publica/index.html",
+      "h1_count": 1,
+      "words": 21756,
+      "ids": 30
+    },
+    {
+      "path": "en/lava-verde-club-sei-meeting-point/public-reading/index.html",
+      "h1_count": 1,
+      "words": 21197,
+      "ids": 29
+    }
+  ],
+  "link_findings": [],
+  "preservation": "All original dossier body text retained",
+  "pdfs": [
+    {
+      "file": "MeetingPoint_Public_ES.pdf",
+      "pages": 41,
+      "bytes": 3792346,
+      "bookmarks": 30,
+      "sha256": "c5fb3eb5b0acb4cbe5e0dc091a0f6b34edd8c60b029073f965983ac26fe9411a"
+    },
+    {
+      "file": "MeetingPoint_Public_EN.pdf",
+      "pages": 42,
+      "bytes": 3789759,
+      "bookmarks": 29,
+      "sha256": "5231e2ee444b222f71ccf5ef2c535c96c60788e264df6034a27639bbd4ab464e"
+    }
+  ],
+  "pdf_under_10MB": true,
+  "combined_under_15MB": true,
+  "browser_render": "BLOCKED_BY_CLOUD_BROWSER_URL_SECURITY_POLICY; not verified",
+  "pdf_visual_review": "All page thumbnails inspected, covers/guide/contents/body samples/evidence inspected at readable resolution; no clipping or overlap observed",
+  "validators": {
+    "repository_preservation": "PASS",
+    "publication_integrity": "PASS",
+    "audience_experience": "PASS",
+    "fti_club_sei_recovery_closeout": "PASS",
+    "fti_meeting_point_ricpe_continuity": "PASS",
+    "alberto_meeting_point_cross_proceeding": "PASS"
+  },
+  "integration": "Worker delta only; single-integrator freeze applies; not deployed",
+  "court_originals": "Private court PDFs unchanged",
+  "final_commit_range": {
+    "base": "ea0c9175bc419dd27a011802d0295dc457d454f3",
+    "validated_content_commit": "93fc200b141fd64c76c10e2e58b62d1e18580973",
+    "publication_changed_files": 17,
+    "commands": [
+      "validate_repository_preservation.py",
+      "validate_publication_integrity.py",
+      "validate_audience_experience.py"
+    ],
+    "results": "PASS with explicit GITHUB_BASE_SHA and GITHUB_HEAD_SHA",
+    "report_update": "This report-only commit records the already completed result."
+  },
+  "pdf_rebuild": "Portable builder produced byte-identical PDFs from public HTML; source images unchanged."
+}
