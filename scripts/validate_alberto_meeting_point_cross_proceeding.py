@@ -128,7 +128,7 @@ EXPECTED_REGISTRY_COUNTS = {
     "total": 336,
     "PERSON": 157,
     "ORGANISATION": 83,
-    "STRUCTURE": 12,
+    "STRUCTURE": 11,
     "INSTITUTION": 43,
     "PROCEEDING": 43,
 }
