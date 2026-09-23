@@ -215,7 +215,7 @@
       "id": "AC-CLM-012",
       "label_es": "Denuncia penal específica contra el AC / DP 1956",
       "label_en": "Actor-specific criminal complaint against the AC / DP 1956",
-      "source_lane": "Control 22 / daily ref 22; DP 1956/2026",
+      "source_lane": "18-Jun-2026 complaint concerning the AC (reference-22 Decanato intake mark) and DP 1956/2026 procedural lane; certified bridge between them remains a separate proof question",
       "allegation": "A separate criminal complaint alleges actor-specific AC acts/omissions and seeks investigation; it is not merged with DP 1901 or the private-actor route.",
       "r33_test": "R33 becomes later knowledge/position evidence but does not itself reopen, prove or resolve DP 1956.",
       "counterevidence": "DP 1956 was provisionally dismissed on the controlled record; no merits guilt finding exists.",
@@ -226,14 +226,14 @@
         "allocation/service history"
       ],
       "cross_evidence_nodes": [
-        "Control 22 / DP1956 p.3: 'el control ejercido sobre la defensa y capacidad patrimonial de LPB' is an express episode to investigate",
+        "18-Jun-2026 complaint concerning the AC, p.3: 'el control ejercido sobre la defensa y capacidad patrimonial de LPB' is an express episode to investigate",
         "R33 p.5 · Joaquín withdrawal/apology",
         "4-Jan-2019 AC-adverse draft / reserve of responsibility and separation",
         "19-Feb-2020 Article 215.2 providencia",
         "21-Sep-2020 cessation of Joaquín's representation",
         "23-Apr-2025 successor-led filed separation application"
       ],
-      "cross_evidence_rule": "Use the R33/Joaquín sequence as later cross-evidence relevant to the complaint's expressly identified defence-control episode. It does not amend, merge, reopen or prove DP 1956, and any new-evidence/procedural threshold remains separate."
+      "cross_evidence_rule": "Use the R33/Joaquín sequence as later cross-evidence relevant to the defence-control episode expressly identified in the 18-Jun-2026 complaint concerning the AC. Keep the reference-22 intake mark and DP 1956/2026 procedural lane distinct unless the certified reparto bridge is produced. Cross-evidence does not amend, merge, reopen or prove either instrument."
     },
     {
       "id": "AC-CLM-013",
@@ -290,5 +290,5 @@
     "counsel_es": "/es/continuidad-defensa-letrados/",
     "counsel_en": "/en/counsel-defence-continuity/"
   },
-  "version_note": "23-Sep-2026: page-5 Joaquín/Armando continuity wired to AC-CLM-011 and AC-CLM-014; later cross-evidence link added to AC-CLM-012 / DP1956 defence-control episode."
+  "version_note": "23-Sep-2026: page-5 Joaquín/Armando continuity wired to AC-CLM-011 and AC-CLM-014; later cross-evidence added to AC-CLM-012 with the reference-22 intake mark kept distinct from DP 1956/2026 pending the certified bridge."
 }
