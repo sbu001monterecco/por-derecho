@@ -337,7 +337,8 @@
       "group_perimeter_context": {
         "status": "SOURCE_AND_OWNER_ATTRIBUTED_CONTEXT_NOT_LEGAL_GROUP_FINDING",
         "source_bridge": "The 21-Sep-2023 Audiencia Nacional querella states that LPB and Aweswell negotiated a project through Grupo Sun Rock with Hava Vida Travel & Tourism and other counterparties. This is party pleading content, not an independent judicial finding of group ownership.",
-        "owner_attribution": "On 23-Sep-2026 Gil Marer states that Hava Vida Travel & Tourism, S.L.U. has always been thought of as part of the Aweswell / Group Sun Rock perimeter."
+        "owner_attribution": "On 23-Sep-2026 Gil Marer states that Hava Vida Travel & Tourism, S.L.U. has always been thought of as part of the Aweswell / Group Sun Rock perimeter.",
+        "caepr_structure_id": "PD-SP-S-0012"
       },
       "beneficial_ownership_position": {
         "status": "GIL_MARER_ATTRIBUTED_POSITION_OPEN_PROOF",
