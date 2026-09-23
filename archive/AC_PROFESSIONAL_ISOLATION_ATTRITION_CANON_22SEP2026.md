@@ -44,11 +44,19 @@ The controlled record documents an AC communication stating an intention to repo
 **What remains open:** the legal scope and justification of the AC’s authority in liquidation, whether a Bar complaint was actually made, and later causal consequences.  
 **Non-transfer rule:** Cristo continued work elsewhere in the wider Sun Park perimeter; termination of one LPB mandate is not total project withdrawal.
 
-### Juan Tomás Parrilla Suárez — May–June 2020
-Contemporaneous material records discussions concerning recognition of substantial legal fees as estate claims, proposed immediate payment, and a transition in which Parrilla relayed the AC’s wish to speak with incoming counsel. Later accounting/report material records a payment requiring invoice, tax, authority and ledger reconciliation.
+### Juan Tomás Parrilla Suárez — January 2019 and May–June 2020
 
-**What this establishes:** AC economic involvement and intermediation were contemporaneous with a deteriorating lawyer-client relationship and change of counsel.  
-**What it does not establish:** bribery, corrupt inducement, criminal knowledge by a recipient, or sole causation of the transition.
+The controlled chronology now separates **non-filing**, **professional rationale**, **fee administration** and **transition causation** instead of treating them as one inference.
+
+- A 4 January 2019 draft sought judicial intervention, Fiscalía referral and reservation of AC separation/responsibility actions. A controlled Drive copy is explicitly labelled **NO PRESENTADA**, and a later project-side handover email also described it as not filed. Certified court/LexNET proof remains the decisive filing-status source.
+- Parrilla's direct 9 January 2019 email is mandatory counterevidence: he said he wanted the deed before advancing a substantive nullity/fraud challenge, opposed a precipitous broader filing at that stage and proposed the narrower step of asking the court to order production of the deed. Rosa Gual agreed with that scope.
+- The client-side substitution was communicated on 31 May 2020 as a **mutual loss of confidence** after an approximately eight-year relationship. Parrilla accepted the venia, briefed successor counsel and stated that his fee liquidation had to be communicated to the Administrador Concursal.
+- On 1 June 2020 incoming counsel Daniel Jiménez contemporaneously reported that the AC said Parrilla's and the procuradora's invoices would be paid from concurso funds and praised Parrilla's work.
+- On 18 June 2020 Jiménez separately recorded that his team had broken off negotiations with Parrilla and the AC because he perceived an attempt to condition the successor team's work on fee payment, and said he did not want his own fees to depend on the AC's view.
+
+**What this establishes:** a source-linked economic/intermediation sequence, a real non-filing/protective-action question and a direct successor-counsel report of perceived conditioning during the representation transition.
+
+**What it does not establish:** bribery, corrupt inducement, criminal knowledge, collusion, judge participation, an unlawful payment, or that AC conduct was the sole cause of Parrilla's replacement. A properly authorised estate payment and Parrilla's stated professional judgment remain material lawful explanations. The invoice, tax, authority, estate-ledger, bank-debit and certified-docket records remain priority closure items.
 
 ### Joaquín Ruiz de Infante / Alas team — February–September 2020
 The Article 215.2 CP sequence placed Gil, the procurador and the signing lawyer within the potential ambit of a criminal complaint arising from the central calificación defence pleading. Contemporary material records urgent professional/insurance concern and pressure surrounding ratification. Cristo contemporaneously characterised the effect as an attempt to “DAR MIEDO”; that remains his attributed assessment.
