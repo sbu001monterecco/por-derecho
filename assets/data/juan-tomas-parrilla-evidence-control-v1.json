@@ -115,7 +115,8 @@
     "Recover direct AC-Parrilla communications concerning fees, settlement, incoming counsel and any complaint/withdrawal discussions.",
     "Test lawful insolvency-fee administration and professional-judgment explanations against the project-side interference hypothesis.",
     "Keep the Concurso Judge outside the causal chain unless and until judge-specific acts and evidence independently support a proposition.",
-    "Reconcile the AC-reported 26750 jul-20 entry against the original invoice, IGIC/cost allocation, payment authority, estate ledger and matching bank debit."
+    "Reconcile the AC-reported 26750 jul-20 entry against the original invoice, IGIC/cost allocation, payment authority, estate ledger and matching bank debit.",
+    "Recover the primary fourth AC report and the matching CAM sale-consideration / estate-account bank movements to test the upstream payment chain."
   ],
   "non_transfer_rules": [
     "Non-filing does not prove corrupt motive.",
@@ -141,5 +142,17 @@
     "judge_participation_established": false,
     "complete_bank_trace_established": false,
     "certified_4jan_filing_status_closed": false
-  }
+  },
+  "upstream_transaction_context": {
+    "evidence_state": "CONTEMPORANEOUS_CUATRECASAS_REPORT_OF_FOURTH_AC_REPORT",
+    "proposition": "A contemporaneous Cuatrecasas email summarising the court notice and the AC's fourth report states that the AC reported selling the common-area properties to CAM in order to begin paying credits against the estate, 'por el momento, sus honorarios'.",
+    "boundary": "The primary fourth AC report and bank movements remain priority sources. This does not prove a direct personal CAM-to-AC payment, quid pro quo, bribery or corrupt inducement.",
+    "visual_rule": "Until a bank-complete chain proves otherwise, depict the upstream flow as CAM -> LPB estate / sale consideration -> estate claims / AC fees, not CAM -> AC personally."
+  },
+  "visualization_rules": [
+    "Do not label the CAM-to-estate transaction as a bribe or direct personal payment to the AC absent bank/source proof.",
+    "For Parrilla, label the flow as an AC-reported estate payment entry of 26750 in jul-20 for debtor-company legal fees; matching bank debit, invoice and authority remain open.",
+    "The non-filing question must be shown together with Parrilla's contemporaneous stated procedural/evidentiary rationale and proposed narrower production request.",
+    "Any question about causation of the end of representation remains a question for investigation, not a declared motive or finding."
+  ]
 }
