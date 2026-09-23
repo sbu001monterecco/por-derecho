@@ -1,0 +1,61 @@
+{
+  "schema": "por-derecho.platform-integrity-events.v1",
+  "control_id": "PD-PLATFORM-INTEGRITY-20260923-01",
+  "as_of": "2026-09-23",
+  "publication_boundary": "public-safe summaries only; no authentication URLs, provider message IDs, private IP/session data or reporter identities",
+  "proof_rule": "motive/incentive is not attribution; chronology is not causation; provider-native records required",
+  "events": [
+    {
+      "id": "PD-PLAT-LI-20241019-NOTICE",
+      "platform": "LinkedIn",
+      "date": "2024-10-19",
+      "status": "NOTICE",
+      "summary": "Formal whistleblower/public-interest preservation notice to LinkedIn Ireland.",
+      "attribution": "not applicable"
+    },
+    {
+      "id": "PD-PLAT-LI-20241024-R1",
+      "platform": "LinkedIn",
+      "date": "2024-10-24",
+      "status": "PROVIDER_DOCUMENTED",
+      "summary": "Case 241020-015316 restored after identity verification; LinkedIn described temporary restriction following detected suspicious activity.",
+      "attribution": "external cause not identified"
+    },
+    {
+      "id": "PD-PLAT-LI-20241028-R2",
+      "platform": "LinkedIn",
+      "date": "2024-10-28",
+      "status": "PROVIDER_DOCUMENTED",
+      "summary": "Case 241028-011722 restored after identity verification; LinkedIn again described detected suspicious activity.",
+      "attribution": "external cause not identified"
+    },
+    {
+      "id": "PD-PLAT-LI-20260922-PHOTO",
+      "platform": "LinkedIn",
+      "date": "2026-09-22",
+      "status": "PROVIDER_DOCUMENTED",
+      "summary": "Security alert: profile photo changed at 13:51 GMT via Android; provider-reported approximate location Kuwait City, Kuwait.",
+      "attribution": "actor/session/IP not established"
+    },
+    {
+      "id": "PD-PLAT-LI-20260923-RESTRICT",
+      "platform": "LinkedIn",
+      "date": "2026-09-23",
+      "status": "USER_REPORTED_OPEN",
+      "summary": "Account access blocked again; renewed identity verification completed; restoration/provider explanation pending.",
+      "attribution": "trigger not established"
+    }
+  ],
+  "connected_routes": {
+    "en": [
+      "/en/platform-integrity-evidence/",
+      "/en/google-sun-park-evidence-cooperation/",
+      "/en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/"
+    ],
+    "es": [
+      "/es/integridad-plataformas-evidencia/",
+      "/es/google-sun-park-cooperacion-evidencia/",
+      "/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/"
+    ]
+  }
+}
