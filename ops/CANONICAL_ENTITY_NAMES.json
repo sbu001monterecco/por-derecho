@@ -310,7 +310,7 @@
           "authority": "Boletín Oficial del Registro Mercantil",
           "reference": "BORME-A-2012-27-38, entry 64020",
           "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-27-38",
-          "proposition": "The registry publication records incorporation of HAVA VIDA TRAVEL & TOURISM SL, declaration of unipersonality and sheet TF 49735. The publication does not print the NIF."
+          "proposition": "The registry publication records incorporation of HAVA VIDA TRAVEL & TOURISM SL, declaration of unipersonality, Patricia Isabel Domínguez Montelongo as sole shareholder and sole administrator, and sheet TF 49735. The publication proves those capacities at incorporation, not current 2026 status."
         },
         {
           "authority": "UK Companies House",
@@ -318,7 +318,38 @@
           "url": "https://find-and-update.company-information.service.gov.uk/company/10762489/officers",
           "proposition": "The public officer record identifies HAVA VIDA TRAVEL AND TOURISM SL and company number B76564434; a current Spanish certificate remains the controlling target."
         }
-      ]
+      ],
+      "registered_ownership_at_incorporation": {
+        "person": "Patricia Isabel Domínguez Montelongo",
+        "caepr_id": "PD-SP-P-0002",
+        "capacity": "socio único / sole shareholder",
+        "source": "BORME-A-2012-27-38, entry 64020",
+        "status": "PRIMARY_REGISTRY_FACT_AT_INCORPORATION"
+      },
+      "registered_management_at_incorporation": {
+        "person": "Patricia Isabel Domínguez Montelongo",
+        "caepr_id": "PD-SP-P-0002",
+        "capacity": "administrador único / sole administrator",
+        "source": "BORME-A-2012-27-38, entry 64020",
+        "status": "PRIMARY_REGISTRY_FACT_AT_INCORPORATION"
+      },
+      "current_2026_status_rule": "Do not state current 2026 shareholder, administrator/director or beneficial-owner status as registry fact without a current Spanish registry certificate.",
+      "project_group_position": {
+        "structure_id": "PD-SP-S-0013",
+        "statement": "Gil Marer states that Hava Vida Travel & Tourism, S.L.U. has always been thought of within the Aweswell / Group Sun Rock project perimeter.",
+        "attribution": "Gil Marer",
+        "adopted_at": "2026-09-23",
+        "status": "ATTRIBUTED_PROJECT_POSITION"
+      },
+      "beneficial_ownership_position": {
+        "beneficiary_id": "PD-SP-O-0001",
+        "registered_holder_id": "PD-SP-P-0002",
+        "statement": "Gil Marer states, and accepts responsibility for the statement, that Patricia's registered Hava Vida shares are understood by him to be held on trust for Aweswell Limited's benefit.",
+        "attribution": "Gil Marer",
+        "adopted_at": "2026-09-23",
+        "status": "ATTRIBUTED_POSITION_NOT_INDEPENDENTLY_ESTABLISHED",
+        "proof_gap": "No trust instrument, current cap table/registry certificate, accounting treatment or counsel opinion on governing law/legal effectiveness was located in this pass. Do not treat the statement as a proved UK-law or Spanish-law conclusion."
+      }
     },
     {
       "id": "E052",
