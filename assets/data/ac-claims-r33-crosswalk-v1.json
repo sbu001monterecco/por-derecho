@@ -102,7 +102,21 @@
         "estate ledger",
         "later authorization chain",
         "finca-by-finca effect"
-      ]
+      ],
+      "parrilla_bridge_20260923": {
+        "status": "SOURCE_GATED",
+        "public_safe_derivative": "archive/PARRILLA_AC_CAM_400K_SOURCE_GATED_SUPPLEMENT_23SEP2026.md",
+        "proposition": "Parrilla acted for LPB while the 28-Nov-2018 CAM transaction and later non-convalidation/title-authority sequence were contested; use the material to test notice/advice/response, not participation in the sale.",
+        "knowledge_anchor": "Restricted Jan-2019 counsel correspondence records the AC report's €400,000 sale/payment description within the legal-team challenge chronology.",
+        "boundary": "No corrupt knowledge, CAM agreement, sale participation or criminal purpose is inferred from counsel status or notice.",
+        "open_proof": [
+          "finca-by-finca authority",
+          "2018 deed and 2019 non-convalidation",
+          "2021 approval/finality bridge",
+          "Registry/title history",
+          "estate bank trace"
+        ]
+      }
     },
     {
       "id": "AC-CLM-006",
@@ -149,7 +163,39 @@
         "estate bank statements",
         "ledger",
         "authority for professional payments"
-      ]
+      ],
+      "parrilla_fee_subclaim_20260923": {
+        "status": "ATTRIBUTED_SOURCE_BACKED_EPISODE_NOT_FINDING",
+        "source_status": "Restricted 28-May-2020 correspondence contains Parrilla's report of an oral AC discussion; not a direct AC writing or proof of payment.",
+        "reported_terms": {
+          "legal_fee_recognition": "€80,000 + IGIC",
+          "procurator_reported_claim": "approximately €20,000 + IGIC",
+          "proposed_immediate_parrilla_payment": "€25,000",
+          "proposed_immediate_procurator_payment": "€15,000",
+          "remainder": "reported as recognised/pending"
+        },
+        "amount_reconciliation": {
+          "patricia_recollection_20260923": "approximately €40,000 agreed / €30,000 paid / €10,000 outstanding",
+          "documentary_control": [
+            "€40,000 + IGIC original proforma",
+            "€32,250 acknowledged client-perimeter receipts",
+            "rejected €50,000 final proposal",
+            "€17,750 + IGIC stated balance",
+            "later AC report records €26,750 paid"
+          ],
+          "rule": "Do not silently harmonise memory and documents; reconcile agreement, invoices, IGIC, advances, offsets, authority, ledger and bank movement."
+        },
+        "boundary": "No proof here of bribery, quid pro quo, completed payment, payment source, corrupt purpose or criminal knowledge.",
+        "open_proof": [
+          "direct AC record",
+          "court/estate-cost authority",
+          "invoice and IGIC",
+          "ledger",
+          "bank debit/credit",
+          "source-of-funds trace",
+          "procurator reconciliation"
+        ]
+      }
     },
     {
       "id": "AC-CLM-009",
@@ -209,7 +255,28 @@
         "23-Apr-2025 filed separation application"
       ],
       "continuity_finding": "Joaquín ceased acting on 21-Sep-2020 and did not carry the AC-removal route through to the 23-Apr-2025 application; successor counsel had to continue/reconstruct that route.",
-      "causation_question": "Gil/Patricia allege AC conduct materially contributed to defence discontinuity. Test actor-by-actor against contemporaneous reaction, alternative causes, temporal proximity, capability/control, and subsequent workstream interruption; do not presume exclusive causation or unlawful purpose."
+      "causation_question": "Gil/Patricia allege AC conduct materially contributed to defence discontinuity. Test actor-by-actor against contemporaneous reaction, alternative causes, temporal proximity, capability/control, and subsequent workstream interruption; do not presume exclusive causation or unlawful purpose.",
+      "parrilla_subclaim_20260923": {
+        "status": "ATTRIBUTED_CAUSATION_HYPOTHESIS",
+        "public_safe_derivative": "archive/PARRILLA_AC_CAM_400K_SOURCE_GATED_SUPPLEMENT_23SEP2026.md",
+        "documented_context": [
+          "reported JT–AC fee discussion",
+          "client request for written communications",
+          "concern about possible immediate resignation",
+          "incoming-counsel continuity condition",
+          "later transition/intermediation chronology"
+        ],
+        "allegation": "Gil/Patricia allege AC economic/intermediation conduct may have affected professional independence or continuity.",
+        "alternatives": [
+          "lawfully due fees",
+          "ordinary estate-cost recognition",
+          "non-payment",
+          "strategy disagreement",
+          "client-lawyer conflict",
+          "independent resignation reasons"
+        ],
+        "rule": "Payment, refusal of a protective instruction and causation are separate propositions; none proves another."
+      }
     },
     {
       "id": "AC-CLM-012",
@@ -276,7 +343,16 @@
         "May-2020 removal workstream still active",
         "Joaquín's later cessation and non-participation in the 2025 filed separation application"
       ],
-      "reconstruction_rule": "Present the apology in full as genuine adverse evidence, then place beside it the contemporaneous chronology required to test whether R33 compresses cause/effect or overgeneralizes from one lawyer to successive counsel."
+      "reconstruction_rule": "Present the apology in full as genuine adverse evidence, then place beside it the contemporaneous chronology required to test whether R33 compresses cause/effect or overgeneralizes from one lawyer to successive counsel.",
+      "parrilla_boundary_20260923": {
+        "status": "NO_FABRICATED_R33_LINK",
+        "rule": "The currently controlled R33 extract/sidecar must not be described as naming Parrilla or proving the 2020 fee episode unless an exact relevant passage is located. R33 supplies broader adversarial/master-demonstrator context only.",
+        "related_claims": [
+          "AC-CLM-005",
+          "AC-CLM-008",
+          "AC-CLM-011"
+        ]
+      }
     }
   ],
   "canonical_routes": {
