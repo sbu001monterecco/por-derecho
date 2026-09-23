@@ -35,7 +35,11 @@ A contemporaneous email chain records Parrilla's own stated position after discu
 
 Rosa Gual replied that she agreed with Parrilla on the proposed scope after discussing the pros and cons.
 
-This is the most important presently located first-person explanation for the January 2019 non-filing decision. It must be displayed alongside any later allegation that the refusal was improper.
+This is material first-person and contrary evidence on the January decision. It must be displayed alongside the later client allegation.
+
+### Documented narrower filing and further court activity — 10–15 Jan 2019
+
+A LexNET acknowledgement records that a **distinct, narrower joint LPB/Aweswell request for production of the sale deed was filed on 10 January 2019**. On 15 January, counsel relayed court acceptance for processing of two LPB/Aweswell reposición appeals. Acceptance for processing was not a merits victory, and the complete filed texts and docket need reconciliation. The 4 January broad draft itself remains without a located filing receipt. A categorical claim that Parrilla took no protective steps would omit this contrary record.
 
 ### Later client-side record — 1 Jun 2020
 
@@ -43,45 +47,45 @@ A later client-side email to incoming lawyer Daniel Jiménez states that the 4-J
 
 **Classification:** contemporaneous client allegation / later description of the earlier event. It supports the existence of an instruction conflict but is not independent proof of an unlawful motive.
 
+### Actual procedural adversity — 2018 appeal decided in 2019
+
+Audiencia Provincial **Auto 78/2019** (rollo 1094/2018, decided 23 July 2019) identifies LPB as appellant with Parrilla as lawyer. Construcciones Acosta Matos opposed LPB's appeal on 12 July 2018; the Administrador Concursal opposed on 16 July 2018. The appeal was dismissed. Thus the AC and CAM were formally adverse to LPB in this proceeding, while Parrilla took a documented position against them. That contrary fact limits any suggestion he never opposed their positions. It also sharpens the later question of who controlled or influenced his remuneration. The order does not establish a covert relationship or corrupt agreement.
+
 ## 4. 2020 fee / Administrador Concursal intermediation sequence
 
 The located contemporaneous May–June 2020 correspondence materially strengthens the need to analyse the January 2019 filing dispute together with the later counsel-transition and payment workstream, while keeping causation separate from chronology.
 
 ### 28 May 2020
 
-Parrilla wrote that he had spoken with the Administrador Concursal concerning recognition of his fees and the procuradora's fees. He stated that the Administrador Concursal was prepared to recognise an estate claim for his legal fees and described an immediate partial payment of **€25,000** to him, with the balance to remain recognised in the concurso.
+Parrilla wrote that he had spoken with the Administrador Concursal concerning recognition of his fees and the procuradora's fees. He reported an AC discussion about **€80,000 + IGIC** as an estate claim for his legal fees, with **€25,000** to be paid immediately and the remainder recognised. This is Parrilla's report of a proposed arrangement, not the AC's independent acceptance instrument or a receipt.
 
-The same chain shows disagreement over the correct fee basis, what had previously been paid by the client side, who owned the relevant costs entitlement, and what should be reimbursed. Incoming counsel requested written formalisation and reconciliation.
+Incoming counsel's temporary client-side formulation concerned a **conditional costs recognition and allocation**, tied to continued representation and substantial return to the client side if collected. Disagreement about fee basis, earlier client-side advances and entitlement followed on the same day; Patricia sought direct written AC confirmation. It was not consent to Parrilla keeping €80,000 as a personal fee.
 
 ### 11–12 Jun 2020
 
 Parrilla later stated a final proposed fee of **€50,000 + IGIC**, acknowledged **€32,250** received from third parties associated with Gil/Patricia, and stated a remaining balance of **€17,750 + IGIC**. He described alternatives for communicating the claim to the Administrador Concursal and stated that the Administrador Concursal had told him there was insufficient liquidity to pay €50,000 in full immediately.
 
-The repository's later accounting source records an estate payment reported as **€25,000 + 7% IGIC = €26,750**. The present control continues to require the underlying invoice, payment authority, bank debit/credit evidence, tax treatment and complete ledger reconciliation before treating the final accounting route as closed.
+Patricia and Daniel rejected the **€50,000 + IGIC** proposal on 12 June. The AC's **21 July 2021 report** separately lists **€26,750** among mass claims *reported paid* in July 2020 for Parrilla as LPB lawyer. That figure equals €25,000 plus 7% arithmetically; the invoice, tax treatment, recognition authority, matched bank debit/recipient credit and complete ledger have not been independently reconciled. The same report discusses a **€400,000 CAM sale component**, but does not trace it into this fee entry.
 
-## 5. Evidential boundary on the payment graphic
+## 5. Adversity, attributed conduit allegation and payment graphic
 
-The visual may show a **documented payment/fee route** from the insolvency estate / Administrador Concursal control point toward Parrilla, but it must not visually imply bribery, corrupt inducement or a quid pro quo unless such a proposition is separately proved.
+The 2018–2019 appeal proves **procedural adversity** between LPB and CAM/the AC while Parrilla represented LPB. Gil Marer alleges that private actors used the Comunidad governance mechanism from 2011 and later instrumentalised the Administrador Concursal, his office and Concurso 36/2012 as a paying conduit for CAM's interests. In Gil's account, CAM-sourced value passed through the estate mechanism to counsel, with benefit to CAM and foreseeable harm to LPB and its wider perimeter. This is an **attributed allegation**, not a proved agency, economic-source, corrupt-exchange or liability finding. The Comunidad chronology from 2011, the AC's appointment in 2012 and CAM's documented 2017–2018 transaction phase must be dated separately.
 
-Likewise, a graphic connecting the Acosta Matos perimeter to estate liquidity or asset proceeds must distinguish:
-1. the documented transaction / estate-funds route;
-2. the Administrador Concursal's control and reporting role;
-3. the later fee-payment route; and
-4. the complainants' allegation that the combined sequence warrants investigation.
+An indirect transfer through an intermediary is a legitimate investigative question even without a direct CAM-to-Parrilla bank transfer. The documented positions are the CAM/AC opposition in the appeal, Parrilla's reported AC fee discussion, and the AC's later €26,750 paid-entry report. The record available here does **not** supply the complete CAM-origin → estate deposit/balances → fee-authorisation → bank debit → recipient credit path, or a specific reciprocal instruction and lawyer act. Former Concursal Law art. 84(2)(2) could permit qualifying debtor-counsel costs as an estate claim. It does not determine this fee's legal basis, amount, economic source, disclosure, independence or purpose. Assess each actor and each potential professional, insolvency and criminal threshold separately.
 
-No arrow should silently convert chronology or economic benefit into criminal causation.
+A graphic must label the **€26,750 as an AC-reported paid estate entry, pending banking and invoice corroboration**. Display the CAM economic-source and AC-as-agent theory as Gil's allegation with a dashed line, the unresolved money legs as questions, and a solid transaction arrow only where both sides of that exact transaction are documented. Do not use the visual to present bribery as a finding. A 2020 fee discussion cannot by itself explain a 2019 decision without evidence of an earlier arrangement.
 
 ## 6. Publication-grade question
 
 The strongest defensible headline question is:
 
-> **Why was the 4 January 2019 protective pleading not filed, and how — if at all — does that decision relate to the later counsel transition and the documented Administrador Concursal fee/payment sequence?**
+> **What happened to the 4 January 2019 broad draft, how did the narrower filed request and appeal differ, and what did the later AC-reported fee entry mean?**
 
 A sharper secondary question may be used immediately below it:
 
-> **Parrilla's 9 January email gives one stated reason: obtain the deed first and avoid premature allegations. Does the complete record support that explanation, or does the wider chronology require further investigation?**
+> **Parrilla gave a deed-first explanation and LPB filed a narrower request. The AC and CAM had formally opposed LPB's appeal. Who authorised and economically funded the later reported counsel fee, and did anyone condition it on a professional choice?**
 
-This formulation preserves the first-person explanation, the client's contrary allegation, the later payment/intermediation chronology and the unresolved causal question without presenting a disputed motive as an established fact.
+This formulation preserves the filed counterevidence, the demonstrated appellate adversity, the client's attributed account, the reported payment and the unresolved causal question.
 
 ## 7. Visual composition — not yet generated
 
@@ -97,12 +101,13 @@ Planned visual nodes:
 
 ## 8. Next source-closure tasks
 
-- Obtain or bind the exact filing/docket record confirming the 4-Jan-2019 draft was not lodged.
+- Obtain the certified filing/docket record to determine whether the exact 4-Jan-2019 draft or an equivalent was lodged; compare the complete 10-Jan filing, reposición papers and outcomes.
 - Bind the sale deed requested in the 9-Jan-2019 correspondence and its date of availability to the defence team.
 - Reconcile the original €40,000 fee proposal, acknowledged client-side payments, later €50,000 proposal, estate-recognition route and reported €26,750 payment.
-- Obtain invoice, payment instruction/authority, bank evidence and estate ledger entry for any payment made by the Administrador Concursal / estate to Parrilla.
+- Obtain the €26,750 invoice and approval, matched estate debit and recipient credit, complete ledger and opening/closing account balances; trace the €400,000 CAM component and all other inflows before attributing an ultimate economic payer.
 - Establish the exact date and procedural mechanics of Parrilla's cessation and replacement, separating client decision, counsel decision and court/procurator formalities.
-- Preserve all contrary or exculpatory material alongside inculpatory/adverse material.
+- Preserve the 2018–2019 appeal (including CAM and AC opposition and Parrilla's LPB position), the 10-Jan narrower filing, the 15-Jan procedural notices, and all other contrary or exculpatory material alongside adverse material.
+- Seek actor-specific AC–CAM–Parrilla communications, fee conditions and dated professional acts; do not infer an earlier agreement or third-party knowledge from the 2020 payment report.
 
 ## 9. Attribution rule
 
