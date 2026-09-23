@@ -32,6 +32,10 @@ substantive analysis or implementation.
 This scope gate is a workflow boundary only. It does not create publication,
 email, filing, contact or other external authority.
 
+### PD-MEM-001 durable memory gate
+
+For Por Derecho / Project Sun Rock substantive work, `governance/chatgpt-memory/README.md` and `MASTER_MEMORY_PUBLIC.md` are the durable public-safe memory/control index. ChatGPT Settings memory and prior chats are lossy orientation aids only. Re-resolve live repository authority, source state and applicable specialist controls before relying on remembered facts. Apply the Hava Vida/Aweswell relationship control when that perimeter is in scope; keep historical registered ownership/directorship, project/group context, attributed beneficial position and proved legal trust effect as separate propositions.
+
 ## 1. Start from the actual source of truth
 
 - Fetch and read the current remote `main` before analysing or editing. Never publish an older worktree, chat reconstruction or stale branch over later work.
