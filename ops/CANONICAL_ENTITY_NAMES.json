@@ -279,7 +279,7 @@
         "value": "B76564434",
         "verification_status": "REPOSITORY_RECORDED_PRIMARY_SPANISH_NIF_DOCUMENT_OPEN"
       },
-      "controlled_context": "Project-side Spanish company and separately identified payer in the Garrigues payment record",
+      "controlled_context": "Project-side Spanish company; historical Group Sun Rock/Aweswell project-perimeter context; separately identified payer in the Garrigues payment record",
       "registered_denominational_form": "HAVA VIDA TRAVEL & TOURISM SL",
       "registered_status_descriptor": "Declaración de unipersonalidad",
       "registry_coordinates": {
@@ -310,15 +310,50 @@
           "authority": "Boletín Oficial del Registro Mercantil",
           "reference": "BORME-A-2012-27-38, entry 64020",
           "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-27-38",
-          "proposition": "The registry publication records incorporation of HAVA VIDA TRAVEL & TOURISM SL, declaration of unipersonality and sheet TF 49735. The publication does not print the NIF."
+          "proposition": "The registry publication records incorporation of HAVA VIDA TRAVEL & TOURISM SL, declaration of unipersonality, Patricia Isabel Domínguez Montelongo as sole shareholder and sole administrator, and sheet TF 49735. The publication does not print the NIF."
         },
         {
           "authority": "UK Companies House",
           "reference": "Spanish company officer record for company 10762489",
           "url": "https://find-and-update.company-information.service.gov.uk/company/10762489/officers",
           "proposition": "The public officer record identifies HAVA VIDA TRAVEL AND TOURISM SL and company number B76564434; a current Spanish certificate remains the controlling target."
+        },
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2012-110-38, entry 248217",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-110-38",
+          "proposition": "The registry publication records the 31-May-2012 change of Hava Vida's registered address to Calle Heraclio Sánchez 54, San Cristóbal de La Laguna, on sheet TF 49735."
         }
-      ]
+      ],
+      "incorporation_roles": {
+        "effective_date": "2012-01-26",
+        "registry_act_date": "2012-01-27",
+        "sole_shareholder": "Patricia Isabel Domínguez Montelongo",
+        "sole_shareholder_caepr_id": "PD-SP-P-0002",
+        "sole_administrator": "Patricia Isabel Domínguez Montelongo",
+        "sole_administrator_caepr_id": "PD-SP-P-0002",
+        "status": "OFFICIAL_BORME_FACT_AT_INCORPORATION"
+      },
+      "group_perimeter_context": {
+        "status": "SOURCE_AND_OWNER_ATTRIBUTED_CONTEXT_NOT_LEGAL_GROUP_FINDING",
+        "source_bridge": "The 21-Sep-2023 Audiencia Nacional querella states that LPB and Aweswell negotiated a project through Grupo Sun Rock with Hava Vida Travel & Tourism and other counterparties. This is party pleading content, not an independent judicial finding of group ownership.",
+        "owner_attribution": "On 23-Sep-2026 Gil Marer states that Hava Vida Travel & Tourism, S.L.U. has always been thought of as part of the Aweswell / Group Sun Rock perimeter."
+      },
+      "beneficial_ownership_position": {
+        "status": "GIL_MARER_ATTRIBUTED_POSITION_OPEN_PROOF",
+        "attributed_to": "Gil Marer",
+        "attribution_date": "2026-09-23",
+        "proposition": "Gil Marer states that, although Patricia Isabel Domínguez Montelongo is/was the registered sole shareholder, he understands the Hava Vida shares to be held on trust for the benefit of AWESWELL LIMITED under UK-law thinking.",
+        "legal_boundary": "Do not state that a trust, nominee arrangement, beneficial ownership, resulting trust, constructive trust or other UK-law equitable interest is legally established without the relevant instrument, conduct/accounting evidence and jurisdiction-specific legal analysis. Spanish corporate registration and any UK beneficial/equitable characterization are separate layers.",
+        "proof_targets": [
+          "Any trust deed/declaration/nominee agreement or board/shareholder record",
+          "Hava Vida share register, incorporation/ownership records and current Spanish Registro Mercantil certificate",
+          "AWESWELL LIMITED board minutes, accounts, ledgers, tax/accounting treatment or investment records",
+          "Contemporaneous correspondence evidencing beneficial-ownership intention",
+          "Spanish and UK legal analysis on recognition/effect of any asserted trust over Spanish-company shares"
+        ]
+      },
+      "current_status_rule": "BORME confirms Patricia as sole shareholder and sole administrator at incorporation in January 2012. Do not state that this remains the current 2026 Spanish registry status without a current Spanish certificate or equivalent primary record."
     },
     {
       "id": "E052",
