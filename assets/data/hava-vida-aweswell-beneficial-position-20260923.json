@@ -17,6 +17,11 @@
       "canonical_id": "E005",
       "name": "AWESWELL LIMITED",
       "company_number": "07716847"
+    },
+    "group_sun_rock": {
+      "caepr_id": "PD-SP-S-0012",
+      "name": "Group Sun Rock / Sun Rock project perimeter",
+      "type": "PROJECT_STRUCTURE_NOT_LEGAL_PERSON"
     }
   },
   "facts": [
@@ -120,7 +125,8 @@
       "type": "PARTY_PLEADING_PROJECT_PERIMETER_REFERENCE",
       "objects": [
         "PD-SP-O-0103",
-        "PD-SP-O-0001"
+        "PD-SP-O-0001",
+        "PD-SP-S-0012"
       ],
       "source_ids": [
         "PD-HV-SRC-0003"
@@ -135,7 +141,8 @@
         "PD-SP-P-0001",
         "PD-SP-P-0002",
         "PD-SP-O-0103",
-        "PD-SP-O-0001"
+        "PD-SP-O-0001",
+        "PD-SP-S-0012"
       ],
       "source_ids": [
         "PD-HV-SRC-0004"
@@ -168,7 +175,8 @@
       "PD-HV-SRC-0001",
       "PD-HV-SRC-0002",
       "PD-HV-SRC-0003",
-      "PD-HV-SRC-0004"
+      "PD-HV-SRC-0004",
+      "PD-SP-S-0012"
     ],
     "open": [
       "PD-HV-COLL-0001 source-specific CIF collision B76694769 vs B76564434",
