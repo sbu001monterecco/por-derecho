@@ -21,7 +21,7 @@ def validate() -> list[str]:
 
     items={x.get("id"):x for x in data.get("items",[])}
     required={
-        "IDENTITY_REGISTRY_515_VS_379",
+        "IDENTITY_REGISTRY_515_VS_380",
         "RICPE_27AUG_STATUS",
         "PORTFOLIO_11SEP_STATUS",
         "RECOVERY_COMMAND_CENTER",
@@ -46,12 +46,12 @@ def validate() -> list[str]:
             if not (ROOT/route).is_file():
                 failures.append(f"github_route_missing:{ident}:{route}")
 
-    if items["IDENTITY_REGISTRY_515_VS_379"].get("status")!="PENDING_GITLAB_RESTORATION":
+    if items["IDENTITY_REGISTRY_515_VS_380"].get("status")!="PENDING_GITLAB_RESTORATION":
         failures.append("identity_gap_must_remain_pending")
     en_identity=(ROOT/"en/matter-identity-registry/index.html").read_text(encoding="utf-8")
     es_identity=(ROOT/"es/registro-identidad-materia/index.html").read_text(encoding="utf-8")
     for text,label in ((en_identity,"en"),(es_identity,"es")):
-        if "515" not in text or "379" not in text or "1535" not in text:
+        if "515" not in text or "380" not in text or "1535" not in text:
             failures.append(f"identity_gap_disclosure_missing:{label}")
 
     ric=(ROOT/"en/ric-private-equity-sun-park/index.html").read_text(encoding="utf-8")
