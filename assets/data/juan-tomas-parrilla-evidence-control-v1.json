@@ -15,7 +15,7 @@
     }
   },
   "portrait": {
-    "repository_asset": "assets/people/juan-tomas-parrilla/juan-tomas-parrilla-conference-crop-sharpened-nongenerative.jpg",
+    "repository_asset": "assets/people/juan-tomas-parrilla/juan-tomas-parrilla-conference-crop-sharpened-thumbnail.webp",
     "source_identity_basis": "USER_SUPPLIED_IDENTIFICATION",
     "face_recognition_used": false,
     "generative_edit_used": false,
@@ -39,7 +39,18 @@
       "purpose": "Remove the standing woman at left and retain the seated subject, audience and projection context.",
       "enhancement": "Deterministic contrast/sharpening only; no subject replacement, synthesis or scene alteration."
     },
-    "publication_boundary": "The project attributes the depicted seated man to Juan Tomás Parrilla based on the user's supplied identification; the repository does not claim independent biometric identification."
+    "publication_boundary": "The project attributes the depicted seated man to Juan Tomás Parrilla based on the user's supplied identification; the repository does not claim independent biometric identification.",
+    "repository_asset_role": "SOURCE_DERIVED_NON_GENERATIVE_THUMBNAIL",
+    "master_derivative_sha256": "43f2b66987a9a643107748f9ccd99478e55e87cdd3b69864f75259ed3b196fbc",
+    "thumbnail_sha256": "c79ad94022a9bbe6e8a0b68618b76520f327c1b8a08527b53207dcd0bdd5c1be",
+    "thumbnail_dimensions_px": [
+      220,
+      144
+    ],
+    "master_derivative_dimensions_px": [
+      915,
+      600
+    ]
   },
   "chronology": [
     {
@@ -85,10 +96,14 @@
       "boundary": "Perceived conditioning is evidence for investigation; it is not proof of bribery, unlawful payment or corrupt purpose."
     },
     {
-      "date": "LATER_CONTROLLED_ACCOUNT",
-      "proposition": "Existing Truth Machine controls record an AC payment of €26,750 to Parrilla against a disputed fee history and an unresolved reconciliation issue.",
-      "state": "FEE_MISMATCH_RECONCILIATION_OPEN",
-      "boundary": "Invoice, IGIC/cost allocation, authority, estate ledger and matching bank debit remain required before any bank-complete or illicit-payment conclusion."
+      "date": "2020-07 / later AC-report custody",
+      "proposition": "A controlled AC liquidation-operations report expressly lists 'Juan Tomás Parrilla 26750 jul-20 Honorarios abogado concursada'; the same entry is repeated in a later AC report.",
+      "state": "DIRECT_AC_REPORT_ENTRY",
+      "boundary": "This proves the AC reported the amount/month/concept. It is not the matching bank debit, invoice, payment authority or proof of impropriety; complete bank and accounting tracing remains required.",
+      "source_labels": [
+        "Informe AC 21JUL2021.pdf",
+        "ACR-20220125-LIQ.pdf"
+      ]
     }
   ],
   "central_question": "Why was the broader 4-Jan-2019 protective draft not filed, what narrower protective action was actually taken, and what—if any—causal relationship existed between later AC-controlled fee/payment discussions and the deterioration/end of Parrilla's representation?",
@@ -99,7 +114,8 @@
     "Recover the estate payment authority, ledger entry and matching bank debit for the later €26,750 payment.",
     "Recover direct AC-Parrilla communications concerning fees, settlement, incoming counsel and any complaint/withdrawal discussions.",
     "Test lawful insolvency-fee administration and professional-judgment explanations against the project-side interference hypothesis.",
-    "Keep the Concurso Judge outside the causal chain unless and until judge-specific acts and evidence independently support a proposition."
+    "Keep the Concurso Judge outside the causal chain unless and until judge-specific acts and evidence independently support a proposition.",
+    "Reconcile the AC-reported 26750 jul-20 entry against the original invoice, IGIC/cost allocation, payment authority, estate ledger and matching bank debit."
   ],
   "non_transfer_rules": [
     "Non-filing does not prove corrupt motive.",
