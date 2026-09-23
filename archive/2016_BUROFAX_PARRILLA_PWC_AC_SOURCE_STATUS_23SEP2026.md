@@ -8,7 +8,7 @@
 - **12-Jul-2016:** Patricia sent Parrilla the completed PDF/DOCX, stating that Gil wanted it sent to the AC the next day and asking Parrilla to send it.
 - **13-Jul-2016:** Parrilla replied in writing that he would not assess a document affecting a proceeding he handled if he had not drafted it and stated that Gil had his leave to change lawyer; he framed LPB's insolvency representation as either his or another lawyer's.
 - Patricia immediately replied that the purpose was not to replace counsel but to place the identified issues before the AC and asked what route remained available.
-- **Gil Marer now states from first-hand recollection that he personally sent the final 2016 burofax to the AC.** The exact delivery/receipt instrument for that transmission has not yet been located in the current source pass and remains an open production item.
+- **Gil Marer now states from first-hand recollection that he personally sent the final 2016 burofax to the AC.** This is materially corroborated at source-status level by the July-2026 DP1956 supplemental filing, which expressly states that the 12-Jul-2016 burofax **and proof of sending/receipt** were incorporated as evidence. The native Correos/other delivery certificate still requires isolated re-authentication and byte-level matching to the exact July version.
 - **11-Aug-2016:** Gil sent a separate direct written notice to the AC concerning the April-2016 Community minutes and disputed Community credit. This later notice is independent corroboration of direct notice activity but must not be substituted for proof of delivery of the exact July burofax.
 
 ## PwC / Landwell bridge
@@ -27,7 +27,7 @@ This source belongs in the existing counsel-continuity / professional-duty evide
 
 ## Open proof
 
-- exact July-2016 delivery receipt / Correos certification / AC acknowledgement;
+- isolate and re-authenticate the native July-2016 delivery receipt / Correos certification already described in the later filed evidential package;
 - native transmission cover and final sent bytes;
 - any AC response to the exact July document;
 - complete PwC June/July-2016 engagement and communication file;
