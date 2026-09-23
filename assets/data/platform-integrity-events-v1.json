@@ -44,6 +44,30 @@
       "status": "USER_REPORTED_OPEN",
       "summary": "Account access blocked again; renewed identity verification completed; restoration/provider explanation pending.",
       "attribution": "trigger not established"
+    },
+    {
+      "id": "PD-PLAT-GOOGLE-2021-2026",
+      "platform": "Google Business Profile",
+      "date_range": "2021-10-28/2026-01-08",
+      "status": "PROVIDER_AND_REPOSITORY_DOCUMENTED",
+      "summary": "Three 2021-2022 Sun Park management requests were documented and rejected; closed-state records followed; Google support confirmed reinstatement on 26 August 2022; later closure/change notices were preserved.",
+      "attribution": "closure-state cause and any causal link to rejected requests remain open"
+    },
+    {
+      "id": "PD-PLAT-GITLAB-20260917-403",
+      "platform": "GitLab",
+      "date_range": "2026-09-17/2026-09-23",
+      "status": "PROVIDER_CASE_DOCUMENTED_RESTORED",
+      "summary": "sbu001 account-level 403; Trust & Safety reference #1297 and Support Portal #753341 opened; connected workspace operational again by 23 September.",
+      "attribution": "Support described repeated-login temporary lock as a possible mechanism; observed 403 persisted beyond expected interval; no external actor or retaliatory cause established"
+    },
+    {
+      "id": "PD-PLAT-GITHUB-20260919-ACCESS",
+      "platform": "GitHub",
+      "date": "2026-09-19",
+      "status": "BOUNDED_ACCESS_PATH_EVENT",
+      "summary": "User-facing browser/account access path reported blocked while authenticated integration, repository API and GitHub Pages remained operational.",
+      "attribution": "cause, scope and duration of user-facing block not established"
     }
   ],
   "connected_routes": {
