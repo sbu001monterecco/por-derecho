@@ -61,5 +61,119 @@
     "AWESWELL board/accounting/tax/investment records",
     "Contemporaneous intention correspondence",
     "Spanish/UK legal analysis"
-  ]
+  ],
+  "sources": [
+    {
+      "source_id": "PD-HV-SRC-0001",
+      "type": "OFFICIAL_REGISTRY",
+      "label": "BORME-A-2012-27-38 entry 64020",
+      "status": "PRIMARY_OFFICIAL"
+    },
+    {
+      "source_id": "PD-HV-SRC-0002",
+      "type": "OFFICIAL_REGISTRY",
+      "label": "BORME-A-2012-110-38 entry 248217",
+      "status": "PRIMARY_OFFICIAL"
+    },
+    {
+      "source_id": "PD-HV-SRC-0003",
+      "type": "PARTY_PLEADING",
+      "label": "Audiencia Nacional querella 21-Sep-2023",
+      "status": "SOURCE_CONTENT_NOT_JUDICIAL_FINDING"
+    },
+    {
+      "source_id": "PD-HV-SRC-0004",
+      "type": "OWNER_ATTRIBUTION",
+      "label": "Gil Marer attribution 23-Sep-2026",
+      "status": "ATTRIBUTED_OPEN_PROOF"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "PD-HV-EVT-0001",
+      "date": "2012-01-26",
+      "type": "INCORPORATION_OPERATIONS_BEGIN",
+      "objects": [
+        "PD-SP-O-0103",
+        "PD-SP-P-0002"
+      ],
+      "source_ids": [
+        "PD-HV-SRC-0001"
+      ],
+      "status": "OFFICIAL_REGISTRY_FACT"
+    },
+    {
+      "event_id": "PD-HV-EVT-0002",
+      "date": "2012-05-31",
+      "type": "REGISTERED_ADDRESS_CHANGE",
+      "objects": [
+        "PD-SP-O-0103"
+      ],
+      "source_ids": [
+        "PD-HV-SRC-0002"
+      ],
+      "status": "OFFICIAL_REGISTRY_FACT"
+    },
+    {
+      "event_id": "PD-HV-EVT-0003",
+      "date": "2023-09-21",
+      "type": "PARTY_PLEADING_PROJECT_PERIMETER_REFERENCE",
+      "objects": [
+        "PD-SP-O-0103",
+        "PD-SP-O-0001"
+      ],
+      "source_ids": [
+        "PD-HV-SRC-0003"
+      ],
+      "status": "PARTY_PLEADING_NOT_JUDICIAL_FINDING"
+    },
+    {
+      "event_id": "PD-HV-EVT-0004",
+      "date": "2026-09-23",
+      "type": "GIL_MARER_ATTRIBUTED_GROUP_AND_BENEFICIAL_POSITION",
+      "objects": [
+        "PD-SP-P-0001",
+        "PD-SP-P-0002",
+        "PD-SP-O-0103",
+        "PD-SP-O-0001"
+      ],
+      "source_ids": [
+        "PD-HV-SRC-0004"
+      ],
+      "status": "OWNER_ATTRIBUTED_OPEN_PROOF"
+    }
+  ],
+  "open_collisions": [
+    {
+      "collision_id": "PD-HV-COLL-0001",
+      "source_literal": "Hava Vida Travel & Tourism S.L.",
+      "conflicting_identifier": "B76694769",
+      "canonical_identifier": "B76564434",
+      "status": "OPEN_DO_NOT_MERGE",
+      "rule": "Preserve the source occurrence and investigate the underlying document; do not use it to alter canonical Hava Vida identity or infer a second company without primary proof."
+    }
+  ],
+  "caret_audit": {
+    "scope": "Hava Vida/Aweswell/Patricia/Group Sun Rock relationship update",
+    "status": "PARTIAL_NOT_ALL_IS_CARET",
+    "verified": [
+      "PD-SP-P-0001",
+      "PD-SP-P-0002",
+      "PD-SP-O-0001",
+      "PD-SP-O-0103",
+      "PD-HV-EVT-0001",
+      "PD-HV-EVT-0002",
+      "PD-HV-EVT-0003",
+      "PD-HV-EVT-0004",
+      "PD-HV-SRC-0001",
+      "PD-HV-SRC-0002",
+      "PD-HV-SRC-0003",
+      "PD-HV-SRC-0004"
+    ],
+    "open": [
+      "PD-HV-COLL-0001 source-specific CIF collision B76694769 vs B76564434",
+      "Current 2026 Spanish Hava Vida share/director certificate",
+      "Trust/nominee/beneficial ownership documentary and UK/Spanish legal bridge"
+    ]
+  }
 }
