@@ -1,0 +1,129 @@
+{
+  "schema": "por-derecho.juan-tomas-parrilla-evidence-control.v1",
+  "control_id": "PD-JTP-EVIDENCE-20260923-01",
+  "control_date": "2026-09-23",
+  "status": "CONTROLLED_PUBLIC_SAFE_EVIDENCE_MAP",
+  "identity": {
+    "identity_id": "PD-SP-P-0041",
+    "public_name": "Juan Tomás Parrilla Suárez",
+    "role": "Former lawyer for Luchy Playa Blanca / Concurso 36/2012",
+    "documented_role_window": {
+      "from": "2012",
+      "to": "2020-05-31",
+      "precision": "YEAR_TO_CLIENT_SUBSTITUTION_DATE",
+      "limitation": "The precise original engagement instrument/start day remains to be recovered."
+    }
+  },
+  "portrait": {
+    "repository_asset": "assets/people/juan-tomas-parrilla/juan-tomas-parrilla-conference-crop-sharpened-nongenerative.jpg",
+    "source_identity_basis": "USER_SUPPLIED_IDENTIFICATION",
+    "face_recognition_used": false,
+    "generative_edit_used": false,
+    "original_sha256": "635508698fb0fe278f2c4403b6e5d5a62b8374b58fcb802cf9138451854ce5ce",
+    "derivative_sha256": "43f2b66987a9a643107748f9ccd99478e55e87cdd3b69864f75259ed3b196fbc",
+    "original_dimensions_px": [
+      1350,
+      600
+    ],
+    "derivative_dimensions_px": [
+      915,
+      600
+    ],
+    "transform": {
+      "crop_box_px": [
+        435,
+        0,
+        1350,
+        600
+      ],
+      "purpose": "Remove the standing woman at left and retain the seated subject, audience and projection context.",
+      "enhancement": "Deterministic contrast/sharpening only; no subject replacement, synthesis or scene alteration."
+    },
+    "publication_boundary": "The project attributes the depicted seated man to Juan Tomás Parrilla based on the user's supplied identification; the repository does not claim independent biometric identification."
+  },
+  "chronology": [
+    {
+      "date": "2018-12-19",
+      "proposition": "Contemporaneous correspondence records Parrilla preparing/coordinating a reposición concerning the sale of locales/pool and the unitary productive-unit issue.",
+      "state": "DOCUMENTED_PROTECTIVE_ACTIVITY",
+      "boundary": "This is counterevidence to any blanket claim of total non-action."
+    },
+    {
+      "date": "2019-01-04",
+      "proposition": "A draft pleading sought judicial intervention, Fiscalía referral and reservation of separation/responsibility actions concerning the Administrador Concursal.",
+      "state": "DRAFT_LOCATED_CURRENT_CONTROL_TREATS_AS_NOT_FILED",
+      "boundary": "A Drive custody copy is labelled NO PRESENTADA and later project-side correspondence says it was not filed; certified court/LexNET proof remains required."
+    },
+    {
+      "date": "2019-01-09",
+      "proposition": "Parrilla directly stated he wanted the deed before advancing a substantive nullity/fraud challenge, opposed a broader filing at that stage and proposed a narrower request for court-ordered production of the deed; Rosa Gual agreed with that scope.",
+      "state": "DIRECT_CONTEMPORANEOUS_PROFESSIONAL_RATIONALE",
+      "boundary": "Motive beyond the stated rationale is not inferred; whether the narrower protective request was filed/performed remains open."
+    },
+    {
+      "date": "2020-05-31",
+      "proposition": "The client communicated substitution of Parrilla as letrado director, expressly framing the immediate reason as mutual loss of confidence and thanking him for the preceding eight years of work.",
+      "state": "DIRECT_CLIENT_TRANSITION_RECORD",
+      "boundary": "This is the formal immediate transition cause on the current record."
+    },
+    {
+      "date": "2020-06-01",
+      "proposition": "Parrilla accepted the venia, briefed successor counsel and said his fee liquidation had to be communicated to the Administrador Concursal.",
+      "state": "DIRECT_OUTGOING_COUNSEL_RECORD",
+      "boundary": "This establishes the asserted fee route, not that any payment was improper."
+    },
+    {
+      "date": "2020-06-01",
+      "proposition": "Incoming counsel Daniel Jiménez contemporaneously reported that the AC said Parrilla's and the procuradora's invoices would be paid from concurso funds and praised Parrilla's work.",
+      "state": "DIRECT_SUCCESSOR_COUNSEL_REPORT_OF_AC_STATEMENTS",
+      "boundary": "This is Daniel's contemporaneous report, not a direct AC recording or independent finding."
+    },
+    {
+      "date": "2020-06-18",
+      "proposition": "Jiménez contemporaneously said his team had broken off negotiations with Parrilla and the AC because he perceived an attempt to condition the successor team's work on fee payment, and that he did not want his fees to depend on the AC's view.",
+      "state": "DIRECT_SUCCESSOR_COUNSEL_REPORT_OF_PERCEIVED_CONDITIONING",
+      "boundary": "Perceived conditioning is evidence for investigation; it is not proof of bribery, unlawful payment or corrupt purpose."
+    },
+    {
+      "date": "LATER_CONTROLLED_ACCOUNT",
+      "proposition": "Existing Truth Machine controls record an AC payment of €26,750 to Parrilla against a disputed fee history and an unresolved reconciliation issue.",
+      "state": "FEE_MISMATCH_RECONCILIATION_OPEN",
+      "boundary": "Invoice, IGIC/cost allocation, authority, estate ledger and matching bank debit remain required before any bank-complete or illicit-payment conclusion."
+    }
+  ],
+  "central_question": "Why was the broader 4-Jan-2019 protective draft not filed, what narrower protective action was actually taken, and what—if any—causal relationship existed between later AC-controlled fee/payment discussions and the deterioration/end of Parrilla's representation?",
+  "investigative_tests": [
+    "Recover certified court/LexNET filing history for the 4-Jan-2019 draft and the 9-Jan proposed deed-production request.",
+    "Establish the date and route by which the sale deed became available to project counsel.",
+    "Recover the complete Parrilla retainer, fee agreements, proformas, invoices, payments, refunds/credits and IGIC treatment.",
+    "Recover the estate payment authority, ledger entry and matching bank debit for the later €26,750 payment.",
+    "Recover direct AC-Parrilla communications concerning fees, settlement, incoming counsel and any complaint/withdrawal discussions.",
+    "Test lawful insolvency-fee administration and professional-judgment explanations against the project-side interference hypothesis.",
+    "Keep the Concurso Judge outside the causal chain unless and until judge-specific acts and evidence independently support a proposition."
+  ],
+  "non_transfer_rules": [
+    "Non-filing does not prove corrupt motive.",
+    "Payment does not prove bribery or criminal knowledge.",
+    "Successor counsel's perception of conditioning is attributed evidence, not an adjudicated fact.",
+    "A lawyer's act, knowledge or motive does not transfer to the Administrador Concursal, Acosta Matos perimeter, the Concurso Judge or another professional without actor-specific evidence.",
+    "The client's later allegation is not substituted for contemporaneous professional evidence."
+  ],
+  "source_classes": [
+    "Contemporaneous 2012–2020 project correspondence",
+    "4-Jan-2019 draft pleading and controlled Drive custody copies",
+    "9-Jan-2019 direct Parrilla/Cuatrecasas correspondence",
+    "31-May/1-Jun-2020 venia and handover correspondence",
+    "1-Jun and 18-Jun-2020 direct successor-counsel reports",
+    "Existing AC fee/accounting and legal-representation Truth Machine controls"
+  ],
+  "private_source_policy": "Provider message IDs, private addresses and privileged/native materials remain in controlled private custody and are not reproduced in this public-safe control.",
+  "evidence_boundaries": {
+    "bribery_established": false,
+    "corrupt_inducement_established": false,
+    "criminal_knowledge_established": false,
+    "collusion_established": false,
+    "judge_participation_established": false,
+    "complete_bank_trace_established": false,
+    "certified_4jan_filing_status_closed": false
+  }
+}
