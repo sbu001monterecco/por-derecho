@@ -1,0 +1,17 @@
+{
+  "schema": "por-derecho.external-visual-asset.v1",
+  "canonical_person": "Juan Tomás Parrilla Suárez",
+  "canonical_person_id": "P077",
+  "filename": "juan-tomas-parrilla_conference_cropped_sharpened.jpg",
+  "media_type": "image/jpeg",
+  "sha256": "8fb933e719301fff98db48f3cac4af39e64331e942906156b9dadaf7fe977482",
+  "provenance": "User-supplied conference photograph; edited only to crop out the standing woman on the left and improve clarity/sharpness.",
+  "identity_basis": "USER_ATTRIBUTION_NOT_INDEPENDENT_FACE_IDENTIFICATION",
+  "custody": {
+    "drive_file_id": "1XwEVO4OjD_l5zaN9j64XlZ4C7z0oORkS",
+    "drive_url": "https://drive.google.com/file/d/1XwEVO4OjD_l5zaN9j64XlZ4C7z0oORkS/view",
+    "drive_folder_id": "1cX6n4DSoCSGEF9Uo7c3zOkhnk3NXInFS"
+  },
+  "git_binary_status": "EXACT_BINARY_PRESERVED_IN_DRIVE__REPOSITORY_POINTER_AND_HASH_REGISTERED",
+  "publication_note": "Do not use the visual asset to infer conduct, intent, relationships or liability."
+}
