@@ -56,6 +56,8 @@ The controlled chronology now separates **non-filing**, **professional rationale
 
 **What this establishes:** a source-linked economic/intermediation sequence, a real non-filing/protective-action question and a direct successor-counsel report of perceived conditioning during the representation transition.
 
+A controlled AC liquidation-operations report itself expressly lists **“Juan Tomás Parrilla 26750 jul-20 Honorarios abogado concursada”**, with the same entry repeated in a later AC report. That proves the AC reported the amount/month/concept; it does not close the invoice, authority, estate-ledger or matching-bank-debit chain.
+
 **What it does not establish:** bribery, corrupt inducement, criminal knowledge, collusion, judge participation, an unlawful payment, or that AC conduct was the sole cause of Parrilla's replacement. A properly authorised estate payment and Parrilla's stated professional judgment remain material lawful explanations. The invoice, tax, authority, estate-ledger, bank-debit and certified-docket records remain priority closure items.
 
 ### Joaquín Ruiz de Infante / Alas team — February–September 2020
