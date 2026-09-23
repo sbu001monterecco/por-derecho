@@ -306,8 +306,11 @@
         "basis": "Contemporaneous 2012 matter records plus the 31-May-2020 substitution communication thanking counsel for the preceding eight years; exact engagement instrument/start day remains open."
       },
       "evidence_control": "assets/data/juan-tomas-parrilla-evidence-control-v1.json",
-      "portrait_asset": "assets/people/juan-tomas-parrilla/juan-tomas-parrilla-conference-crop-sharpened-nongenerative.jpg",
-      "portrait_identity_basis": "USER_SUPPLIED_IDENTIFICATION_NOT_FACE_RECOGNITION"
+      "portrait_asset": "assets/people/juan-tomas-parrilla/juan-tomas-parrilla-conference-crop-sharpened-thumbnail.webp",
+      "portrait_identity_basis": "USER_SUPPLIED_IDENTIFICATION_NOT_FACE_RECOGNITION",
+      "portrait_master_sha256": "43f2b66987a9a643107748f9ccd99478e55e87cdd3b69864f75259ed3b196fbc",
+      "portrait_thumbnail_sha256": "c79ad94022a9bbe6e8a0b68618b76520f327c1b8a08527b53207dcd0bdd5c1be",
+      "portrait_asset_role": "SOURCE_DERIVED_NON_GENERATIVE_THUMBNAIL"
     },
     {
       "identity_id": "PD-SP-P-0046",
