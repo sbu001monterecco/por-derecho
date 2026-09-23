@@ -41,6 +41,7 @@ Use professional × client × matter × period; parallel mandates allowed. Test 
 person≠entity≠estate≠Community/CEXP≠AC≠judge≠Fiscalía≠firm≠procedural capacity. AWESWELL LIMITED (07716847; former MONTERECCO SUN PARK LIMITED) ≠ Spanish Monterecco/Pink. OSWELL 426 S.L. unrelated.
 
 ### Hava Vida control
+Group Sun Rock / Sun Rock is registered as project/perimeter structure `PD-SP-S-0012`; it is not a separate legal person or a finding of statutory group/control.
 Hava Vida Travel & Tourism, S.L.U. = E051 / PD-SP-O-0103. BORME records Patricia Isabel Domínguez Montelongo as sole shareholder and sole administrator at incorporation in January 2012. The 2023 AN querella supplies historical Grupo Sun Rock/Aweswell project-perimeter pleading context. Gil Marer's 23-Sep-2026 position that Hava Vida has always been regarded within the Aweswell/Group Sun Rock perimeter and that Patricia's registered shares are understood as held for AWESWELL LIMITED's benefit is ATTRIBUTED / OPEN PROOF, not an established trust or beneficial-ownership finding.
 
 ## Boundary / authority
