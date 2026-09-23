@@ -1057,7 +1057,6 @@
         "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-27-38",
         "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-110-38"
       ],
-      "status": "CANONICAL_IDENTITY_RESOLVED_RELATIONSHIP_LAYERS_SEPARATE",
       "source_state": "PRIMARY_REGISTRY_IDENTITY_CONFIRMED_CURRENT_2026_STATUS_OPEN",
       "capacity_boundary": "Exact Spanish company identity. BORME proves Patricia Isabel Domínguez Montelongo was sole shareholder and sole administrator at incorporation. No current 2026 Spanish registry certificate was located in the bounded Drive/repository search. Gil Marer's Group Sun Rock/Aweswell perimeter and trust-for-Aweswell-benefit position is separately attributed and does not merge legal persons or establish legal effectiveness.",
       "relationships": [
@@ -1089,7 +1088,8 @@
           "status": "ATTRIBUTED_POSITION_NOT_INDEPENDENTLY_ESTABLISHED",
           "boundary": "Gil Marer states and accepts responsibility for the position that Patricia's registered shares are understood to be held on trust for Aweswell Limited's benefit. No trust instrument, current cap table, accounting entry or legal opinion establishing governing law/effect was located in this pass."
         }
-      ]
+      ],
+      "classification": "CANONICAL_IDENTITY_RESOLVED_RELATIONSHIP_LAYERS_SEPARATE"
     }
   ]
 }
