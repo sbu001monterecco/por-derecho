@@ -112,6 +112,17 @@ Connect this statement to:
 - Community/Molina/Montelanza/Pamanil/FMMM lanes — historical adverse/private-actor context, with actor-specific attribution;
 - judge/judicial-supervision lane — separate public-official decision/supervision analysis, never merged into Parrilla's professional responsibility.
 
+## 6A. Controlled 2016 PwC / meeting source family
+
+Use these existing repository controls when testing the PwC/meeting limb rather than relying on later recollection alone:
+
+- `archive/JONATHAN_SIMO_PWC_2016_PREMEETING_PRIMARY_EMAIL_ADDENDUM_17AUG2026.md` — contemporaneous 6–10 June report → PwC review → meeting sequence.
+- `archive/PWC_2016_TRANSCRIPT_MANDATE_PERIMETER_AND_PAGES_DEPLOY_AUDIT_17AUG2026.md` — transcript/mandate/capacity control.
+- `archive/CORRECTION_REGISTER_JONATHAN_SIMO_PWC_2016_APPEND_17AUG2026.md` — mandatory 10-Jun / 11-Jun date-discrepancy rule.
+- `archive/knowledge-project/PWC_AC_KNOWLEDGE_TRANSFER_CRIMINAL_ALLEGATIONS_GATE_19AUG2026.md` — separates what PwC knew, what the AC knew independently, what transfer is proved and what remains missing.
+
+The contemporaneous email chain supports a meeting scheduled for **10 June 2016** and the source AMR filenames also use `10JUN2016`; later transcript derivatives use **11JUN2016**. Preserve that discrepancy. The meeting/source family is evidence of contemporaneous professional involvement, knowledge and attributed statements; it is not by itself proof that PwC adopted Gil's allegations or that every attributed statement is true.
+
 ## 7. Adverse / limiting evidence that must remain visible
 
 - Parrilla did take some protective steps at other moments; the allegation is not literal total inactivity.
