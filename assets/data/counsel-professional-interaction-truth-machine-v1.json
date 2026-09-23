@@ -621,6 +621,11 @@
         "Certified court/LexNET proof of whether the 4-Jan-2019 draft or the narrower deed-production request was filed.",
         "Complete fee invoices, IGIC/cost allocation, authority, estate ledger and matching bank debit for the later AC-recorded payment.",
         "Direct AC-Parrilla communications relevant to the fee/payment and incoming-counsel transition sequence."
+      ],
+      "direct_ac_report_evidence": "A later AC liquidation-operations report located in controlled Drive custody expressly lists: 'Juan Tomás Parrilla 26750 jul-20 Honorarios abogado concursada'. This upgrades the existence/amount/month entry to direct AC-report evidence, but does not by itself prove the matching bank debit, invoice, payment authority, source of funds or legality.",
+      "direct_ac_report_source_labels": [
+        "Informe AC 21JUL2021.pdf",
+        "ACR-20220125-LIQ.pdf"
       ]
     },
     {
