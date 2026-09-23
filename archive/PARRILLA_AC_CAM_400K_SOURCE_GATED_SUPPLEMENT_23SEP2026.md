@@ -125,3 +125,78 @@ Gil and Patricia advance serious hypotheses about the legitimacy of the liquidit
 The correct public state is:
 
 **source-backed fee/intermediation episode + documented transaction/payment chronology + attributed criminal/prosecutorial hypothesis + decisive money/authority/causation gates still open.**
+
+
+## Gil clarification — professional-failure / funded-exit causal architecture
+
+**Speaker:** Gil Marer, 23 September 2026.  
+**Status:** attributed party position / clarification; not an adjudicated professional-negligence or criminal finding.
+
+Gil clarifies that the Parrilla issue is not a side issue and is not intended to displace responsibility alleged against the historic Molina/Montelanza dissident actors, the later Acosta Matos perimeter, the Administrador Concursal or the judge. His position is that multiple actor-specific causes may coexist and must not be collapsed into a single exclusive-causation theory.
+
+### Gil's clarified allegation concerning Juan Tomás Parrilla Suárez
+
+Gil alleges **willful professional negligence / deliberate failure to execute legitimate protective client instructions** by Parrilla during the LPB mandate. The alleged failures include, critically but not exhaustively:
+
+- failure/refusal to pursue the separation/removal of the Administrador Concursal when instructed;
+- failure/refusal to implement protective written communications to the AC concerning Community authority/debt and related irregularities;
+- inadequate follow-through on measures needed to preserve LPB's position while the funded-exit route was live;
+- later participation in or benefit from a fee-recognition/payment process controlled by the AC while the underlying estate-liquidity and sale-authority questions remained disputed.
+
+These are Gil's allegations. Professional negligence, willfulness, improper motive, causation and any criminal character require proposition-specific proof.
+
+### 2016 / 2017 burofax source-status correction
+
+Gil specifically recalls a **2016 refusal to send a prepared burofax to the AC**. The currently controlled repository establishes that in June–July 2016 the project side and advisers were preparing/escalating Community debt/authority issues to the AC, including a proposed written burofax/warning and extensive document transmission to Parrilla.
+
+However, the current public-safe corpus more clearly documents an **express instruction conflict in June 2017** concerning another requested Community-debt burofax. Therefore:
+
+- preserve Gil's 2016 refusal recollection as an attributed proposition;
+- do **not** rewrite it as source-proved until the exact 2016 instruction/refusal exchange is locked;
+- keep the 2016 escalation/burofax preparation and the 2017 express instruction conflict as separate events.
+
+### Funded-exit causation architecture
+
+Gil's clarified position is that Parrilla's alleged failures must be analysed inside the contemporaneous **ONA / Clubotel fully funded exit workstream**, not after the fact as a fee dispute alone.
+
+The controlled record already supports that an active financed exit / better-offer route was being pursued in 2018, involving debt determination, financing, operator participation, creditor payment/consignation and intended conclusion of Concurso 36/2012. The record does **not** establish that every financing condition had been satisfied or that closing was inevitable.
+
+Gil's causation theory is:
+
+`protective instruction failures / insufficient follow-through → weaker resistance and reduced protection of LPB's legal/economic position while funded exit live → AC/CAM able to advance disputed control/liquidation steps → 28-Nov-2018 CAM sale → later non-convalidation → disputed estate liquidity → later professional-payment questions`.
+
+This is a **causal hypothesis to test**, not a proven single-cause chain. It must be assessed alongside the independent conduct of CAM/Acosta Matos actors, the AC, the judge, Community/Molina/Montelanza actors, other advisers and the operative court decisions.
+
+### Non-acceptance of liquidation-to-CAM-to-Parrilla payment scenario
+
+Gil expressly clarifies that there was **no project-side accepted scenario** under which:
+
+1. LPB would simply be liquidated;
+2. the relevant assets would pass to CAM/Acosta Matos;
+3. that liquidation would create estate liquidity; and
+4. Parrilla would then be paid from that liquidity as an acceptable implementation of the client's objectives.
+
+Gil's position is that this was contrary to the project-side objective of protecting LPB, preserving the integrated economic unit and completing the funded exit. Any later professional-fee entitlement therefore must be analysed separately from whether the underlying liquidation/sale route was authorised, valid and consistent with client instructions.
+
+**Important boundary:** opposition by Gil/Patricia to that economic/legal outcome does not itself determine whether a professional fee was legally due, whether a payment was lawful, or whether the money was criminal property. Those remain separate legal and evidential questions.
+
+### Required causation test
+
+For Parrilla, the Truth Machine must now test separately:
+
+1. **Instruction:** what exact protective instruction was given, when, by whom and in what form?
+2. **Duty/mandate:** was it within Parrilla's retained role and professionally available?
+3. **Response:** did he refuse, delay, qualify, redirect or perform it?
+4. **Reason:** what reason did he give contemporaneously?
+5. **Counterfactual capacity:** what protective effect could the requested act realistically have had?
+6. **Temporal connection:** did the omission/refusal precede the relevant AC/CAM act?
+7. **Material effect:** did it materially reduce legal resistance, information, standing, preservation or exit optionality?
+8. **Alternative causes:** what independent acts by the AC, judge, CAM, Community actors, other advisers or market/financing conditions would have produced the same result anyway?
+9. **Economic interaction:** what fee/payment discussions or benefits existed before, during or after the alleged failure?
+10. **Mens rea boundary:** what, if anything, proves willfulness rather than mistake, professional judgment, mandate limitation, fee pressure, conflict, negligence or another lawful explanation?
+
+### Position-preservation rule
+
+Do not use Parrilla's alleged failures to dilute or substitute the actor-specific case against the AC, CAM/Acosta Matos, the historic dissident perimeter, the judge or any other actor. Conversely, do not use the alleged wrongdoing of those actors to excuse or automatically prove Parrilla's professional responsibility.
+
+The required model is **multiple potentially contributing actors + separate duties + separate knowledge + separate acts/omissions + separate causal contribution + no transferred liability**.
