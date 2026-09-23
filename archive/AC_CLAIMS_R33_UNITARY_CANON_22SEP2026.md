@@ -46,6 +46,7 @@ The exact allegation, R33 test, counterevidence and open proof live in `assets/d
 - R33 must preserve genuine adverse evidence, including Joaquín Ruiz de Infante's withdrawal/apology and other adverse rulings.
 - For R33 page 5, preserve two facts together: (a) Joaquín's apology/withdrawal is genuine adverse evidence; and (b) Joaquín ceased acting on 21-Sep-2020 and did not carry the adverse/removal work through to the separation application filed on 23-Apr-2025. The project-side causation/intent theory remains attributed and must be tested, not presumed.
 - Map that page-5 node to both `AC-CLM-011` and `AC-CLM-014`, using stable nodes `R33-P05-COUNSEL-DISCONTINUITY` and `R33-P05-NARRATIVE-COMPRESSION`.
+- Register the same sequence as **later cross-evidence** for `AC-CLM-012 / DP 1956` because Control 22 expressly includes control over LPB's defence/capacity among the investigative episodes. This does not amend, merge, reopen or prove DP 1956.
 
 ## Truth Machine integration
 
