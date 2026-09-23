@@ -1,0 +1,200 @@
+{
+  "schema": "por-derecho.hava-vida-aweswell-relationship.v1",
+  "control_id": "PD-HV-AW-20260923-01",
+  "control_date": "2026-09-23",
+  "status": "ACTIVE_MIXED_SOURCE_ESTABLISHED_AND_ATTRIBUTED_OPEN",
+  "objects": [
+    {
+      "id": "PD-SP-P-0002",
+      "type": "PERSON",
+      "name": "Patricia Domínguez",
+      "caret_state": "EXISTING_PERSON_RECORD"
+    },
+    {
+      "id": "PD-SP-O-0103",
+      "type": "ORGANISATION",
+      "name": "Hava Vida Travel & Tourism, S.L.U.",
+      "caret_state": "CARET_CONFIRMED_20260923",
+      "legacy_id": "E051"
+    },
+    {
+      "id": "PD-SP-O-0001",
+      "type": "ORGANISATION",
+      "name": "AWESWELL LIMITED",
+      "caret_state": "EXISTING_ORGANISATION_RECORD",
+      "company_number": "07716847"
+    },
+    {
+      "id": "PD-SP-STRUCT-GROUP-SUN-ROCK",
+      "type": "PROJECT_PERIMETER",
+      "name": "Group Sun Rock / Sun Rock",
+      "caret_state": "CARET_NOT_APPLICABLE_UNLESS_SEPARATELY_ADMITTED"
+    }
+  ],
+  "sources": [
+    {
+      "id": "PD-HV-SRC-20120208-BORME-64020",
+      "type": "OFFICIAL_REGISTRY_PUBLICATION",
+      "date": "2012-02-08",
+      "reference": "BORME-A-2012-27-38 entry 64020",
+      "status": "PRIMARY_PUBLIC_SOURCE",
+      "proves": [
+        "Hava Vida incorporation",
+        "unipersonality",
+        "Patricia Isabel Domínguez Montelongo sole shareholder at incorporation",
+        "Patricia Isabel Domínguez Montelongo sole administrator at incorporation",
+        "sheet TF 49735"
+      ],
+      "does_not_prove": [
+        "unchanged 2026 status",
+        "Aweswell ownership",
+        "trust validity",
+        "UBO/tax treatment"
+      ]
+    },
+    {
+      "id": "PD-HV-SRC-20120612-BORME-248217",
+      "type": "OFFICIAL_REGISTRY_PUBLICATION",
+      "date": "2012-06-12",
+      "reference": "BORME-A-2012-110-38 entry 248217",
+      "status": "PRIMARY_PUBLIC_SOURCE",
+      "proves": [
+        "registered office change",
+        "same sheet TF 49735"
+      ]
+    },
+    {
+      "id": "PD-HV-SRC-20230921-ANQ-P53",
+      "type": "PARTY_PLEADING",
+      "date": "2023-09-21",
+      "reference": "Audiencia Nacional querella page 53 / controlled transcription",
+      "status": "PARTY_ALLEGATION_SOURCE",
+      "proves": [
+        "the pleading contains a project narrative linking LPB/Aweswell via Grupo Sun Rock with Hava Vida and named counterparties"
+      ],
+      "does_not_prove": [
+        "Aweswell legal ownership of Hava Vida",
+        "truth of damages allegation",
+        "trust relationship"
+      ]
+    },
+    {
+      "id": "PD-HV-SRC-20260923-GM-ATTRIBUTION",
+      "type": "USER_ATTRIBUTED_STATEMENT",
+      "date": "2026-09-23",
+      "speaker": "Gil Marer",
+      "status": "ATTRIBUTED_POSITION",
+      "statement": "Gil Marer takes responsibility for the position that Hava Vida was always understood as part of the Aweswell / Group Sun Rock perimeter and that Patricia held the Hava Vida shares for AWESWELL LIMITED's benefit, described through a UK-law 'on trust' concept.",
+      "does_not_prove": [
+        "valid trust",
+        "governing law",
+        "Spanish recognition",
+        "current UBO filing",
+        "tax treatment",
+        "Aweswell legal title"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "PD-HV-EVT-20120127-01",
+      "date": "2012-01-27",
+      "type": "REGISTRY_INCORPORATION_ACT",
+      "source_ids": [
+        "PD-HV-SRC-20120208-BORME-64020"
+      ],
+      "object_ids": [
+        "PD-SP-P-0002",
+        "PD-SP-O-0103"
+      ]
+    },
+    {
+      "id": "PD-HV-EVT-20120531-01",
+      "date": "2012-05-31",
+      "type": "REGISTERED_OFFICE_CHANGE",
+      "source_ids": [
+        "PD-HV-SRC-20120612-BORME-248217"
+      ],
+      "object_ids": [
+        "PD-SP-O-0103"
+      ]
+    },
+    {
+      "id": "PD-HV-EVT-20230921-01",
+      "date": "2023-09-21",
+      "type": "PLEADING_PROJECT_PERIMETER_NARRATIVE",
+      "source_ids": [
+        "PD-HV-SRC-20230921-ANQ-P53"
+      ],
+      "object_ids": [
+        "PD-SP-O-0001",
+        "PD-SP-O-0103"
+      ],
+      "status": "SOURCE_CONTENT_NOT_FINDING"
+    },
+    {
+      "id": "PD-HV-EVT-20260923-01",
+      "date": "2026-09-23",
+      "type": "ATTRIBUTED_BENEFICIAL_TRUST_POSITION_RECORDED",
+      "source_ids": [
+        "PD-HV-SRC-20260923-GM-ATTRIBUTION"
+      ],
+      "object_ids": [
+        "PD-SP-P-0001",
+        "PD-SP-P-0002",
+        "PD-SP-O-0001",
+        "PD-SP-O-0103"
+      ],
+      "status": "ATTRIBUTED_OPEN"
+    }
+  ],
+  "relationships": [
+    {
+      "from": "PD-SP-P-0002",
+      "to": "PD-SP-O-0103",
+      "relation": "SOLE_SHAREHOLDER_AT_INCORPORATION",
+      "status": "SOURCE_ESTABLISHED_HISTORICAL",
+      "source_id": "PD-HV-SRC-20120208-BORME-64020"
+    },
+    {
+      "from": "PD-SP-P-0002",
+      "to": "PD-SP-O-0103",
+      "relation": "SOLE_ADMINISTRATOR_AT_INCORPORATION",
+      "status": "SOURCE_ESTABLISHED_HISTORICAL",
+      "source_id": "PD-HV-SRC-20120208-BORME-64020"
+    },
+    {
+      "from": "PD-SP-O-0103",
+      "to": "PD-SP-O-0001",
+      "relation": "PROJECT_PERIMETER_AWESWELL_GROUP_SUN_ROCK",
+      "status": "ATTRIBUTED_WITH_SOURCE_CONTEXT_SUPPORT",
+      "source_ids": [
+        "PD-HV-SRC-20230921-ANQ-P53",
+        "PD-HV-SRC-20260923-GM-ATTRIBUTION"
+      ]
+    },
+    {
+      "from": "PD-SP-P-0002",
+      "via": "PD-SP-O-0103 shares",
+      "to": "PD-SP-O-0001",
+      "relation": "ASSERTED_BENEFICIAL_TRUST_POSITION",
+      "status": "ATTRIBUTED_OPEN_LEGAL_SOURCE_BRIDGE",
+      "source_id": "PD-HV-SRC-20260923-GM-ATTRIBUTION"
+    }
+  ],
+  "open_proof": [
+    "current 2026 Spanish Registro Mercantil certification",
+    "current shareholder book / sole-member status",
+    "current administrator status",
+    "beneficial-owner/UBO filing",
+    "trust/nominee declaration or shareholder agreement",
+    "funding and bank-flow bridge",
+    "board/accounting/tax treatment",
+    "governing-law/conflict-of-laws/Spanish recognition analysis"
+  ],
+  "collision_control": {
+    "issue": "Archived recovery material contains an unrelated candidate Ernst & Young, S.L. using PD-SP-O-0103.",
+    "resolution": "That archived candidate is not active CAEPR authority. Active PD-SP-O-0103 is Hava Vida, promoted from the 7-Sep scan and E051 on 23-Sep-2026 using primary BORME. Preserve the archived snapshot as historical provenance; do not merge identities."
+  },
+  "caret_result": "PARTIAL_NOT_ALL_IS_CARET_BECAUSE_BENEFICIAL_TRUST_AND_CURRENT_2026_STATUS_REMAIN_OPEN"
+}
