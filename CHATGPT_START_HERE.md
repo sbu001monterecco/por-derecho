@@ -256,3 +256,7 @@ For any task concerning Francisco de Borja Rodríguez-Batllori Laffitte, the Adm
 - `.github/governance/AC_CLAIMS_R33_ACTOR_GRAPH_PROTOCOL_22SEP2026.md`
 
 Use `AC-CLM-001`–`AC-CLM-014`; keep the AC separate from the five private actors, judge, prosecutors and professional firms. R33 is a party filing and evidential response node, not an adjudicated truth. Compare it proposition by proposition and preserve adverse evidence and lawful explanations. DP 1956 remains the actor-specific AC criminal route; DP 1901 may supply cross-evidence but is not the AC complaint.
+
+
+## PD-MEM-001 — ChatGPT Master Memory bootstrap — 23 September 2026
+For every substantive Por Derecho / Project Sun Rock thread, treat `governance/chatgpt-memory/README.md` and `governance/chatgpt-memory/MASTER_MEMORY_PUBLIC.md` as the public-safe Master Memory control plane. ChatGPT Settings Memory is a compressed bootloader/QA derivative, not evidential or repository authority. Re-resolve live repository state, then load the applicable specialist controls and primary sources. Do not create a competing master-memory architecture or make Gil repeat recoverable context. Private full-memory material remains in approved private custody and must not be reconstructed into public Git from memory.
