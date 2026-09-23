@@ -64,7 +64,9 @@ window.PD_RPL3304_PUBLIC_SIDECAR = {
         {es:"Pág. 5 · Joaquín ↔ Armando",en:"Page 5 · Joaquín ↔ Armando",hrefEs:"/por-derecho/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/#joaquin-armando-2020",hrefEn:"/por-derecho/en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/"},
         {es:"Sala documental · página 5",en:"Page 5 document room",hrefEs:"/por-derecho/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/#document-room-joaquin-armando",hrefEn:"/por-derecho/en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/"},
         {es:"Cronología de separación 2012–2026",en:"Removal chronology 2012–2026",hrefEs:"/por-derecho/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/#historia-separacion",hrefEn:"/por-derecho/en/insolvency-36-2012-administrator-removal-rpl-3304-2025/"},
-        {es:"Continuidad de defensa",en:"Counsel defence continuity",hrefEs:"/por-derecho/es/continuidad-defensa-letrados/",hrefEn:"/por-derecho/en/counsel-defence-continuity/"}
+        {es:"Continuidad de defensa",en:"Counsel defence continuity",hrefEs:"/por-derecho/es/continuidad-defensa-letrados/",hrefEn:"/por-derecho/en/counsel-defence-continuity/"},
+        {es:"AC-CLM-011 · interferencia profesional",en:"AC-CLM-011 · professional interference",hrefEs:"/por-derecho/es/concurso-36-2012-administrador-concursal/#ac-clm-011",hrefEn:"/por-derecho/en/insolvency-36-2012-insolvency-administrator/"},
+        {es:"AC-CLM-014 · R33 / inversión narrativa",en:"AC-CLM-014 · R33 / narrative inversion",hrefEs:"/por-derecho/es/concurso-36-2012-administrador-concursal/#ac-clm-014",hrefEn:"/por-derecho/en/insolvency-36-2012-insolvency-administrator/"}
       ]
     },
     {
