@@ -108,7 +108,6 @@
         "Aweswell / Group Sun Rock perimeter"
       ],
       "identity_resolution": "CARET_NOT_APPLICABLE",
-      "status": "CONTROLLED_PROJECT_PERIMETER_NOT_LEGAL_PERSON",
       "identity_sources": [
         "Repository public/project controls using Sun Rock / Grupo Sun Rock / Sun Rock Group with Aweswell.",
         "Gil Marer statement 23-Sep-2026 concerning Hava Vida's intended/historic group treatment."
@@ -121,7 +120,8 @@
       "related_person_ids": [
         "PD-SP-P-0001",
         "PD-SP-P-0002"
-      ]
+      ],
+      "classification": "CONTROLLED_PROJECT_PERIMETER_NOT_LEGAL_PERSON"
     }
   ]
 }
