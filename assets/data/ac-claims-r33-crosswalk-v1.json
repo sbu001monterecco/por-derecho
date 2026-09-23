@@ -194,7 +194,22 @@
         "complete handover/fee files",
         "direct causation statements",
         "Bar/insurance records where lawfully obtainable"
-      ]
+      ],
+      "r33_nodes": [
+        "R33 p.5 · Joaquín withdrawal/apology",
+        "R33-P05-COUNSEL-DISCONTINUITY"
+      ],
+      "evidence_nodes": [
+        "4-Jan-2019 draft: AC conduct / express reserve of liability and separation actions",
+        "6-Jun-2019 opposition to calificación",
+        "19-Feb-2020 Article 215.2 providencia",
+        "Feb-Mar-2020 ratification / withdrawal-risk correspondence",
+        "25-May-2020 active 'escrito de remoción del cargo' workstream",
+        "21-Sep-2020 Joaquín withdrawal/apology",
+        "23-Apr-2025 filed separation application"
+      ],
+      "continuity_finding": "Joaquín ceased acting on 21-Sep-2020 and did not carry the AC-removal route through to the 23-Apr-2025 application; successor counsel had to continue/reconstruct that route.",
+      "causation_question": "Gil/Patricia allege AC conduct materially contributed to defence discontinuity. Test actor-by-actor against contemporaneous reaction, alternative causes, temporal proximity, capability/control, and subsequent workstream interruption; do not presume exclusive causation or unlawful purpose."
     },
     {
       "id": "AC-CLM-012",
@@ -209,7 +224,16 @@
         "signed prosecution materials",
         "new-evidence threshold",
         "allocation/service history"
-      ]
+      ],
+      "cross_evidence_nodes": [
+        "18-Jun-2026 complaint concerning the AC, p.3: 'el control ejercido sobre la defensa y capacidad patrimonial de LPB' is an express episode to investigate",
+        "R33 p.5 · Joaquín withdrawal/apology",
+        "4-Jan-2019 AC-adverse draft / reserve of responsibility and separation",
+        "19-Feb-2020 Article 215.2 providencia",
+        "21-Sep-2020 cessation of Joaquín's representation",
+        "23-Apr-2025 successor-led filed separation application"
+      ],
+      "cross_evidence_rule": "Use the R33/Joaquín sequence as later cross-evidence relevant to the defence-control episode expressly identified in the 18-Jun-2026 complaint concerning the AC. Keep the reference-22 intake mark and DP 1956/2026 procedural lane distinct unless the certified reparto bridge is produced. Cross-evidence does not amend, merge, reopen or prove either instrument."
     },
     {
       "id": "AC-CLM-013",
@@ -240,7 +264,19 @@
         "complete source exhibits incorporated by R33",
         "court treatment of the opposition",
         "right-of-reply/correction record"
-      ]
+      ],
+      "r33_nodes": [
+        "R33 p.5 · selective use of Joaquín apology",
+        "R33-P05-NARRATIVE-COMPRESSION"
+      ],
+      "omitted_context_test": [
+        "pre-existing adverse/removal work concerning the AC",
+        "Article 215.2 personal-exposure event",
+        "immediate professional/ratification/withdrawal reaction",
+        "May-2020 removal workstream still active",
+        "Joaquín's later cessation and non-participation in the 2025 filed separation application"
+      ],
+      "reconstruction_rule": "Present the apology in full as genuine adverse evidence, then place beside it the contemporaneous chronology required to test whether R33 compresses cause/effect or overgeneralizes from one lawyer to successive counsel."
     }
   ],
   "canonical_routes": {
