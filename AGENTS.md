@@ -1,6 +1,6 @@
 # Por Derecho repository stewardship rules
 
-These rules apply to every human or automated change in this repository. They preserve the public record; they do not turn allegations into findings.
+> **23-Sep-2026 PD-MEM-001 master-memory control:** ChatGPT Settings Memory is a compact bootstrap, not evidential authority. Before substantive Por Derecho / Project Sun Rock work, read `governance/chatgpt-memory/README.md`, `assets/data/chatgpt-master-memory-v1.json` and the relevant specialist controls; re-resolve live GitHub/GitLab authority and current sources. Apply the P0 anti-fragmentation / no-too-narrow / procedure-must-not-erase-substance invariants. Current Hava Vida control: `archive/HAVA_VIDA_AWESWELL_GROUP_BENEFICIAL_POSITION_CONTROL_23SEP2026.md`; BORME proves Patricia's sole-shareholder/sole-administrator status at incorporation, while Gil Marer's Aweswell/Group Sun Rock and trust-benefit position remains attributed/open as to current status and legal effect. No external action is authorised by this control alone.\n\nThese rules apply to every human or automated change in this repository. They preserve the public record; they do not turn allegations into findings.
 
 ## 0. Mandatory first-turn scope and continuity gate
 
