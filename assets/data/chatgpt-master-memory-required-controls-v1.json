@@ -1,0 +1,32 @@
+{
+  "schema": "por-derecho.chatgpt-master-memory-required-controls.v1",
+  "id": "PD-MEM-001-P0",
+  "control_date": "2026-09-23",
+  "required_invariants": [
+    "ANTI_FRAGMENTATION",
+    "NO_TOO_NARROW_ANALYSIS",
+    "SUBSTANCE_NOT_ERASED_BY_PROCEDURE",
+    "NEW_TO_OLD_PROPAGATION",
+    "OLD_TO_NEW_RETRIEVAL",
+    "SUPERSESSION_PRESERVATION",
+    "EVIDENCE_STATE_SEPARATION",
+    "NO_EVIDENTIAL_UPGRADE_WITHOUT_BRIDGE",
+    "THEMATIC_REPETITION_NOT_CORROBORATION",
+    "LIVE_REPOSITORY_REVALIDATION",
+    "NO_COMPETING_MASTER_ARCHITECTURE",
+    "CRIMINAL_FIRST_WHERE_APPLICABLE",
+    "ACTOR_SPECIFIC_ATTRIBUTION",
+    "IDENTITY_CAPACITY_SEPARATION",
+    "CONTRARY_EVIDENCE_PRESERVED",
+    "SEVEN_JUNE_2018_PIVOT",
+    "FORMAL_V_REAL_CONTROL",
+    "AWESWELL_IDENTITY_LOCK",
+    "PROCEEDINGS_DISTINCT_BUT_INTERCONNECTED",
+    "DRAFT_V_FILED_V_RECEIVED_V_DECIDED_V_IMPLEMENTED",
+    "PRIVATE_PUBLIC_BOUNDARY",
+    "EXTERNAL_ACTION_REQUIRES_AUTHORITY",
+    "SUBSTANTIVE_ANSWER_FIRST",
+    "RECOVER_DONT_RESTART"
+  ],
+  "rule": "A compact/observed memory may be shorter than the full master, but no P0 invariant may be silently omitted. Missing P0 controls require explicit coverage repair rather than repetition of the entire memory."
+}
