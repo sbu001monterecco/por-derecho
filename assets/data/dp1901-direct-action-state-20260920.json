@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho.dp1901-direct-action-state.v1",
-  "control_date": "2026-09-21",
+  "control_date": "2026-09-23",
   "control_timezone": "Atlantic/Canary",
   "status": "13_REGISTERED_POST_FILING_FOLLOWUP_OPEN",
   "counts": {
@@ -38,7 +38,22 @@
     "counsel_dependent_judicial_remedy": "Outside the 13 personal-action count.",
     "substantive_eg745_response": "Separate from A10: now registered in ten linked deliveries, principal REGAGE26e00082068814; all 27 PDF fingerprints verified. Admission/incorporation/examination remain unverified.",
     "provincial_email_follow_up": "Supplementary communication; not a filing and not evidence of delivery or institutional action.",
-    "eg745_delivery_control": "assets/data/eg745-final-delivery-control-20260920.json"
+    "eg745_delivery_control": "assets/data/eg745-final-delivery-control-20260920.json",
+    "counsel_directed_followup_20260923": {
+      "classification": "POST_FILING_JUDICIAL_FOLLOWUP_OUTSIDE_13_ACTION_CENSUS",
+      "registration": "S000000000000145381",
+      "presented_at": "2026-09-23 13:50",
+      "route": "Sede Judicial Electrónica de Canarias",
+      "destination": "Plaza 6 / DP 1901/2026",
+      "procedure": "0001901/2026",
+      "nig": "3501643220260016977",
+      "presenter": "Gil Marer",
+      "standing": "denunciante no personado",
+      "purpose": "Narrow documentary identification of initiating filing and later Ref.21 procedural treatment, following counsel advice.",
+      "proof": "Receipt proves telematic presentation to the named court/procedure only; substantive incorporation, examination, agreement and response remain unproved.",
+      "counsel_notification": "Javier Sixto-Seijas notified with Estefanía Sixto Seijas in CC; original DP1901 email thread also received a short filing confirmation.",
+      "continuity_record": "ops/2026-09-23_DP1901_COUNSEL_DIRECTED_FOLLOWUP.md"
+    }
   },
   "actions": [
     {
