@@ -1,17 +1,17 @@
 {
   "schema": "por-derecho.github-gitlab-public-gap-closure.v1",
   "control_id": "PD-GH-GL-GAP-CLOSURE-20260919-01",
-  "control_date": "2026-09-19",
+  "control_date": "2026-09-23",
   "status": "CURRENT_GITHUB_FUNCTIONAL_SUCCESSORS_ADDED_EXACT_GITLAB_SOURCE_STILL_PENDING",
   "github_base_sha": "c2d1f9f605086d05c84363c11df4cc04f7e0dfc1",
   "authenticated_gitlab_restoration_verified": false,
   "items": [
     {
-      "id": "IDENTITY_REGISTRY_515_VS_379",
+      "id": "IDENTITY_REGISTRY_515_VS_380",
       "status": "PENDING_GITLAB_RESTORATION",
       "github_route": "en/matter-identity-registry/index.html",
       "action": "VISIBLE_GAP_DISCLOSURE_ADDED",
-      "boundary": "GitLab aggregate 515-vs-379 freshness difference is disclosed; missing 136 identities are not reconstructed without exact source/object provenance."
+      "boundary": "GitLab aggregate 515-vs-380 freshness difference is disclosed; missing 135 identities are not reconstructed without exact source/object provenance."
     },
     {
       "id": "RICPE_27AUG_STATUS",
