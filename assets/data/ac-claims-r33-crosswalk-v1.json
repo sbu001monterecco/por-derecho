@@ -224,7 +224,16 @@
         "signed prosecution materials",
         "new-evidence threshold",
         "allocation/service history"
-      ]
+      ],
+      "cross_evidence_nodes": [
+        "Control 22 / DP1956 p.3: 'el control ejercido sobre la defensa y capacidad patrimonial de LPB' is an express episode to investigate",
+        "R33 p.5 · Joaquín withdrawal/apology",
+        "4-Jan-2019 AC-adverse draft / reserve of responsibility and separation",
+        "19-Feb-2020 Article 215.2 providencia",
+        "21-Sep-2020 cessation of Joaquín's representation",
+        "23-Apr-2025 successor-led filed separation application"
+      ],
+      "cross_evidence_rule": "Use the R33/Joaquín sequence as later cross-evidence relevant to the complaint's expressly identified defence-control episode. It does not amend, merge, reopen or prove DP 1956, and any new-evidence/procedural threshold remains separate."
     },
     {
       "id": "AC-CLM-013",
@@ -281,5 +290,5 @@
     "counsel_es": "/es/continuidad-defensa-letrados/",
     "counsel_en": "/en/counsel-defence-continuity/"
   },
-  "version_note": "23-Sep-2026: page-5 Joaquín/Armando continuity and document-room wiring added to AC-CLM-011 and AC-CLM-014."
+  "version_note": "23-Sep-2026: page-5 Joaquín/Armando continuity wired to AC-CLM-011 and AC-CLM-014; later cross-evidence link added to AC-CLM-012 / DP1956 defence-control episode."
 }
