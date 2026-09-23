@@ -29,7 +29,7 @@ S.L., CANARIAN HOSPITALITY, S.L., GOOD PEOPLE COMMUNITY,
 S.L., HOTEL NEW TREND, S.L., y PROYECTOS ACOSTA MATOS, S.L;
 3. DOÑA LAURA PATRICIA ACOSTA MATOS, con DNI [DATO PERSONAL SUPRIMIDO] y 
 domicilio [DATO PERSONAL SUPRIMIDO]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
+[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]Página 2 de 88
 4. DON FRANCISCO MARIO MATOS MATAS, con DNI [DATO PERSONAL SUPRIMIDO] y 
 domicilio [DATO PERSONAL SUPRIMIDO]
 [CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
@@ -51,43 +51,43 @@ domicilio [DATO PERSONAL SUPRIMIDO]
 [CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
 [CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
 [CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
+[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]Página 3 de 88
+6. Delito de publicidad engañosa, previsto y penado en el artículo 282 del Código 
+Penal.
+7. Delito de fraude de inversiones, previsto y penado en el artículo 282 bis del 
+Código Penal.
+8. Delito de falsedad documental, previsto y penado en los artículos 390 y siguientes 
+del Código Penal.
+9. Delito de malversación de caudales públicos previsto y penado en los artículos 
+432 y siguientes del Código Penal.
+10. Delito de cohecho, previsto y penado en los artículos 424 y siguientes del Código 
+Penal.
+11. Delito de pertenencia a organización criminal, previsto y penado en los artículos 
+570 bis y siguientes del Código Penal.
+Atendiendo a lo anterior, 
+EXPONGO
+I. - LEGITIMACIÓN ACTIVA DEL QUERELLANTE
+(1) Mi mandante, Don GIL MARER tienen la condición de interesado y legitimado para 
+interponer la presente querella, por ser titular de los derechos constitucionales y 
+fundamentales vulnerados por la actuación de los ahora denunciados, y haberse visto, a 
+raíz de todo ello, gravemente perjudicado como consecuencia de su actuación: tanto de 
+manera personal como en su condición de administrador de la sociedad Luchy Playa 
+Blanca, S.L. (en adelante, “LPB” o “Luchy”), así como en su condición de director de la Página 4 de 88
+sociedad Aweswell Limited, socio único de LPB. De esta manera, está legitimado para 
+ejercer la acción penal.
+1
+II. – COMPETENCIA DEL JUZGADO CENTRAL DE INSTRUCCIÓN
+(2) La presente querella se presenta ante el Juzgado Central de Instrucción que por turno de 
+reparto corresponda, toda vez que, en virtud de lo determinado en el artículo 65.1 de la 
+Ley Orgánica del Poder Judicial, este es competente para el conocimiento de las 
+defraudaciones y maquinaciones para alterar el precio de las cosas que produzcan o 
+puedan producir grave repercusión en la seguridad del tráfico mercantil, en la economía 
+nacional o perjuicio patrimonial en una generalidad de personas en el territorio de más de 
+una audiencia.
+(3) La jurisprudencia ha venido interpretando que el término “defraudaciones”, empleado por 
+la Ley Orgánica del Poder Judicial ha de ser interpretado en un sentido material, es decir, 
+entendiendo todas aquellas conductas que causan un daño patrimonial mediante el 
+engaño, el fraude o el abuso de derecho penalmente tipificadas; y no estrictamente formal, 
 referido únicamente a las figuras delictivas incluidas por el legislador bajo esa rúbrica, 
 por lo que los delitos denunciados en la presente querella entran en el concepto 
 defraudaciones. (Autos del Tribunal Supremo de 17 de octubre de 2018, de 19 de 
@@ -130,97 +130,97 @@ repercutida. Entre ellos destacan la existencia de domicilio [DATO PERSONAL SUPR
 [CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
 [CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
 [CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
+[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]Página 6 de 88
+administrador único de la sociedad, quien fue sucedido por D. Gil Marer en 2012. El 26 
+de mayo de 2008, LPB vendió y transmitió el pleno dominio de las 3.006 participaciones 
+sociales a la sociedad israelí Multimatrix Ltd., que el 20 de septiembre de 2008 amplió el 
+capital social a dos millones novecientos tres mil seis euros (2.903,006 euros), cotizados 
+en bolsa en Israel, por la compraventa del Hotel Sun Park. En el año 2012 LPB entró en 
+concurso de acreedores voluntario – con el fin de proteger su activo, quedando registrado 
+el concurso como Concurso Ordinario 36/2012 tramitado y en curso ante el Juzgado de 
+lo Mercantil n.º 1 de Las Palmas de Gran Canaria.
+(10) AWESWELL LIMITED: entidad británica propietaria del 100% de las participaciones 
+de LPB adquiridas de Multimatrix Ltd el 1 de diciembre 2011, y socia única de esta última 
+y acreedora de 1.051.306,08 euros en virtud de la subrogación de ésta, con motivo de la 
+compraventa de las participaciones sociales, en los múltiples préstamos más intereses 
+facilitados a LPB entre los años 2008 y 2011 para que la sociedad pudiera cumplir en 
+tiempo y forma con sus obligaciones financieras, cuantía contabilizada en las cuentas 
+anuales de la concursada, y que, sin embargo, ha sido rechazada por el AC sin 
+justificación alguna al tiempo que reconoce a Aweswell como acreedor de la concursada 
+por cero euros, y que, junto con la explotadora, ha realizado gestiones suficientes, 
+obteniendo financiación necesaria en múltiples ocasiones como para lograr la aprobación 
+del Convenio y posteriormente una la eventual salida de la situación concursal de LPB.
+(11) MONTELANZA, S.L.: con CIF B35279850, sociedad que, desde su constitución, se 
+dedicó a la explotación turística del Hotel Sun Park. Explotación que se realiza con 
+autorización y consentimiento de todos los co-propietarios de los 220 apartamentos del 
+Hotel siendo, además, por aquel entonces, Montelanza, S.L., titular dominical de los 40 
+locales y 2 piscinas que integran, junto a esos 220 apartamentos y zonas comunes, el 
+mencionado Hotel. Entre los socios de Montelanza, S.L. que incumplen el acuerdo de 
+venta al que se hará referencia, se incluyen las siguientes personas especialmente 
+relacionadas con la concursada: ROQUE PRIETO, S.L., con CIF B35598739, 
+representada por Asunción Aizpurúa Sánchez y Sebastián Molina Petit, AMENEM, S.L., 
+con CIF B35352145, representada por Miguel Ángel Calzada Molina (co-representada 
+por Shaila Cogolludo Ramos, en virtud de la presunta venta de la finca número 8718 / 
+apartamento número 453, con fecha “previa” al 12 de junio de 2017 según Acta de Junta 
+General Ordinaria de la Comunidad de Propietarios), TENGOLF, S.L., con CIF Página 7 de 88
+B35352137, representada por Luis Moreno Molina (co-representada por Shaila 
+Cogolludo Ramos, en virtud de la presunta venta de la finca número 8718 / urbana
+número 222 con fecha “previa” al 12 de junio de 2017 según Acta de Junta General 
+Ordinaria de la Comunidad de Propietarios), ACCIONES CANARIAS, S.L., con CIF 
+B35287812, representada por Agustín Calzada Molina, INVERSIONES SALINETAS,
+S.L., con CIF B35383520, representada por Natalia Molina Betancor (co-representada 
+por Antonio Cogolludo Rojas, en virtud de la presunta venta de la finca número 8501 / 
+urbana número 5, con fecha “previa” al 12 de junio de 2017 según Acta de Junta General 
+Ordinaria de la Comunidad de Propietarios), MURUGA, S.L., con CIF B35275288, 
+representada por Carmelo Marrero Molina y asistida por Emilio Molina Jiménez en 
+nombre y representación de Bandama S.A., con CIF A35005099, Miguel Molina 
+Betancor, y Cristina Molina Petit (co-representada por Construcciones Acosta Matos, 
+S.A., en virtud de la compraventa de la finca número 8706 / urbana 210, con fecha 27 de 
+diciembre de 2017 según Nota Simple del Regitsro de la Propiedad), siendo Francisco 
+Mario Matos Matas, Antonio Cogolludo Rojas, Shaila Cogolludo Ramos el 
+administrador de fincas, presidente de la comunidad y tesorera, respectivamente
+nombrados por PAMANIL, S.L. y PAMALEXSHA, S.L. respectivamente, según 
+contratación instada por los socios de Montelanza, S.L. para gestionar única y 
+exclusivamente sus intereses en el Hotel. La sociedad se encuentra extinguida desde el
+año 2018.
+(12) PINK CANARY SERVICES, S.L.: (previamente MONTERECCO SUN PARK, S.L., en 
+adelante, “PINK”), sociedad constituida por Patricia Domínguez Montelongo (en 
+adelante PDM) como medida de emergencia para, a iniciativa y con acuerdo de Gil Marer 
+actuando como Presidente de la Comunidad de Explotación del Hotel Sun Park, asistir 
+temporalmente en la gestión de la explotación turística del Hotel, y ayudar a solucionar 
+el repentino vacío que dejaba la Comunidad de Explotación Sun Park tras haber sido 
+expulsada del Hotel por los socios disidentes de Montelanza y, posteriormente, por la 
+administración concursal.
+(13) CONSTRUCCIONES ACOSTA MATOS, S.A.: (en adelante, CAM), sociedad no 
+financiera que adquiere – tal y como se detallará a continuación – los créditos hipotecarios 
+de primer y segundo rango de Cerberus Global Investments B.V – que había comprado 
+el crédito a través de su filial Promontoria Holding 122 B.V, de la SAREB en el 2015 y Página 8 de 88
+ésta, a su vez, de BANKIA en el 2014, quien había sustituido a Caja Insular de Ahorros 
+de Canarias durante el proceso de restructuración financiera en España – de los que era 
+titular frente a Luchy Playa Blanca, S.L., que traen causa de los contratos de financiación 
+originariamente suscritos por Luchy Playa Blanca, S.L. y Caja Insular de Ahorros de 
+Canarias, que están reconocidos en el concurso de Luchy Playa Blanca, S.L. con la 
+clasificación de créditos privilegiados especiales. La entidad está especialmente 
+relacionada con la concursada, así como con otros acreedores del concurso y 
+copropietarios del Hotel. JOSÉ DANIEL ACOSTA MATOS, igualmente querellado, es 
+el Presidente y Director de CAM, así como el Presidente del Grupo Acosta Matos y 
+Canaluz Infinita (del Grupo Canaluz). A través de CAM, siendo D. JOSÉ DANIEL 
+ACOSTA MATOS Consejero y actualmente Presidente de dicha sociedad, desde 
+comienzos del 2018, se promociona un proyecto detallado de reforma integral del Hotel 
+Sun Park, cuyo 72.976% es objeto de protección judicial en virtud del concurso de 
+acreedores del propietario mayoritario del Hotel, LPB. Así, CAM se identifica, 
+falsamente, como propietario único del inmueble, y procede, además de promocionar el 
+proyecto de reforma integral, a la comercialización del activo a través de diferentes tour 
+operadores internacionales, a pesar de no haber sido autorizado por los copropietarios del 
+Hotel ni por el concurso, ambos completamente ajenos a las acciones y omisiones de 
+CAM, siendo entidad especialmente relacionada con la concursada.
+(14) FRANCISCO MARIO MATOS MATAS: administrador de fincas nombrado a través 
+de PAMANIL, S.L.2, en Junta del 22 de junio del 2011, con efecto retroactivo a la junta 
+del 2 de febrero de 2011 para la “prestación de servicios de mantenimiento, limpieza 
+jardines, y asesoramiento jurídico de la comunidad”, quien ejecuta las órdenes de los 
+incumplidores, a pesar de ser estas contrarias a la ley de propiedad horizontal, a los 
+estatutos del inmueble, a los contratos autorizados en junta no impugnados, y a la 
+calificación turística permitida, en su calidad de “asesor jurídico de la comunidad”; 
 administra fraudulentamente el Complejo y valida todo con su firma, incluida la deuda 
 ficticia que desarrollaremos con posterioridad. Asimismo, participa con CAM en la toma 
 de posesión y certificación de deuda concursal a favor de la Comunidad sin justificación 
@@ -2502,7 +2502,7 @@ domicilio [DATO PERSONAL SUPRIMIDO]
 [CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
 4. DON FRANCISCO MARIO MATOS MATAS, con DNI [DATO PERSONAL SUPRIMIDO] y 
 domicilio [DATO PERSONAL SUPRIMIDO]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
+[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]Página 83 de 88
 5. DON FRANCISCO DE BORJA RODRÍGUEZ BATLLORI LAFFITTE, con 
 DNI [DATO PERSONAL SUPRIMIDO] y domicilio [DATO PERSONAL SUPRIMIDO]
 [CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
@@ -2610,7 +2610,7 @@ AC corrió a vender a CAM las fincas sin cargas estando la liquidación suspendi
 [CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
 [CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
 [CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
-[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]
+[CONTINUACIÓN DE DOMICILIO SUPRIMIDA]Página 87 de 88
 participación del 0.385% en el inmueble y negocio hotelero, afectado por las 
 acciones continuadas de los socios disidentes de Montelanza así como por las de 
 CAM dentro y fuera del concurso de acreedores incluso antes de su personación 
