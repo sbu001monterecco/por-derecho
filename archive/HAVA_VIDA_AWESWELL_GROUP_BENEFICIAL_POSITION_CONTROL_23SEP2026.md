@@ -20,7 +20,7 @@ They do **not** establish current 2026 shareholder/administrator status without 
 ## Gil Marer's adopted project/group position
 Gil Marer^ states, and expressly accepts responsibility for the statement, that Hava Vida has always been thought of within the **Aweswell / Group Sun Rock** project perimeter.
 
-The repository therefore registers **Sun Rock Group / Aweswell project perimeter** as PD-SP-S-0013. It is a STRUCTURE, not a legal person, and is CARET_NOT_APPLICABLE as a presentation marker.
+The repository therefore registers **Sun Rock Group / Aweswell project perimeter** as PD-SP-S-0019. It is a STRUCTURE, not a legal person, and is CARET_NOT_APPLICABLE as a presentation marker.
 
 ## Gil Marer's adopted beneficial-ownership/trust position
 Gil further states that Patricia's registered Hava Vida shares are understood by him to be held **on trust for AWESWELL LIMITED^'s benefit**.
