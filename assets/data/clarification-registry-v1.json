@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "control_id": "PD-CLAR-GLOBAL-20260923-01",
+  "status": "ACTIVE",
+  "response_codes": {
+    "A": "ADOPT",
+    "B": "QUALIFY",
+    "C": "REJECT",
+    "D": "OPEN"
+  },
+  "lifecycle": [
+    "OPEN",
+    "HUMAN_CLARIFIED",
+    "SOURCE_CORROBORATED",
+    "ADVERSARIALLY_TESTED",
+    "RECONCILED",
+    "CANONICAL"
+  ],
+  "exceptional_states": [
+    "CONFLICTED",
+    "SUPERSEDED",
+    "UNRESOLVED",
+    "DISPROVED"
+  ],
+  "rules": [
+    "answers are source-attributed human evidence, not verification",
+    "Gil and Patricia answers remain separate",
+    "free text always permitted",
+    "new evidence can reopen any proposition",
+    "anti-fragmentation does not transfer attribution or liability",
+    "non-response is not admission"
+  ],
+  "records": [
+    {
+      "id": "CLAR-JTP-001",
+      "topic": "Post-non-convalidation restoration",
+      "state": "OPEN",
+      "priority": "HIGH",
+      "ask": [
+        "Gil",
+        "Patricia"
+      ],
+      "question": "After the October-2019 refusal of convalidation, what did you understand should happen to the €400,000, deed, Registry position, CAM position and renewed competition/better-offer route?",
+      "dependencies": [
+        "AC-CLM-005"
+      ]
+    },
+    {
+      "id": "CLAR-JTP-002",
+      "topic": "€400k custody",
+      "state": "OPEN",
+      "priority": "HIGH",
+      "ask": [
+        "Gil",
+        "Patricia"
+      ],
+      "question": "What did you contemporaneously understand about where the €400,000 was held from November 2018 onward, including account, interest, charges and custody?",
+      "dependencies": [
+        "AC-CLM-005",
+        "AC-CLM-008"
+      ]
+    },
+    {
+      "id": "CLAR-JTP-003",
+      "topic": "First knowledge of professional payments",
+      "state": "OPEN",
+      "priority": "HIGH",
+      "ask": [
+        "Gil",
+        "Patricia"
+      ],
+      "question": "When did you first learn that the AC was paying or proposing to pay professionals/estate claims, from whom and by what medium?",
+      "dependencies": [
+        "AC-CLM-008",
+        "AC-CLM-011"
+      ]
+    },
+    {
+      "id": "CLAR-JTP-004",
+      "topic": "Meaning of everyone is getting paid",
+      "state": "OPEN",
+      "priority": "MEDIUM",
+      "ask": [
+        "Gil",
+        "Patricia"
+      ],
+      "question": "What did you understand Parrilla to mean by 'everyone is getting paid'—AC remuneration, lawyers, procuradores, other estate creditors, or something else?",
+      "dependencies": [
+        "AC-CLM-008"
+      ]
+    },
+    {
+      "id": "CLAR-JTP-005",
+      "topic": "Alleged inducement causal bridge",
+      "state": "OPEN",
+      "priority": "CRITICAL",
+      "ask": [
+        "Gil"
+      ],
+      "question": "What evidence and conduct connects the alleged offer/payment to Parrilla's professional acts or omissions, and what alternative explanations must be tested?",
+      "dependencies": [
+        "AC-CLM-008",
+        "AC-CLM-011"
+      ]
+    },
+    {
+      "id": "CLAR-JTP-006",
+      "topic": "AC removal instruction chronology",
+      "state": "OPEN",
+      "priority": "CRITICAL",
+      "ask": [
+        "Gil",
+        "Patricia"
+      ],
+      "question": "Reconstruct the first and later instructions to prepare/file separation/removal of the AC, Parrilla's response, any prediction about the judge, drafts, non-filing, withdrawal/venia and consequences.",
+      "dependencies": [
+        "AC-CLM-011"
+      ]
+    },
+    {
+      "id": "CLAR-JTP-007",
+      "topic": "Parrilla affirmative commissions",
+      "state": "OPEN",
+      "priority": "HIGH",
+      "ask": [
+        "Gil",
+        "Patricia"
+      ],
+      "question": "Beyond omissions, which affirmative acts—advice, communications, concessions, representations, intermediation, disclosures or other conduct—do you allege were professionally harmful?",
+      "dependencies": [
+        "AC-CLM-011"
+      ]
+    },
+    {
+      "id": "CLAR-JTP-008",
+      "topic": "ONA funded-exit maturity",
+      "state": "OPEN",
+      "priority": "CRITICAL",
+      "ask": [
+        "Gil",
+        "Patricia"
+      ],
+      "question": "At its most mature point, what funding, operator/buyer structure, creditor/CAM treatment, conditions and execution steps existed, and what specifically was lost when it did not close?",
+      "dependencies": [
+        "AC-CLM-007"
+      ]
+    },
+    {
+      "id": "CLAR-JTP-009",
+      "topic": "CAM offer indivisibility",
+      "state": "OPEN",
+      "priority": "HIGH",
+      "ask": [
+        "Gil",
+        "Patricia"
+      ],
+      "question": "Do you adopt the proposition that the encumbered-asset acquisition and unencumbered-locales purchase were legally/economically interdependent, and on what exact source/basis?",
+      "dependencies": [
+        "AC-CLM-005"
+      ]
+    },
+    {
+      "id": "CLAR-JTP-010",
+      "topic": "Parrilla knowledge boundary",
+      "state": "OPEN",
+      "priority": "MEDIUM",
+      "ask": [
+        "Gil",
+        "Patricia"
+      ],
+      "question": "What did Parrilla demonstrably know before departure, and what later knowledge, if any, is independently evidenced?",
+      "dependencies": [
+        "AC-CLM-011"
+      ]
+    },
+    {
+      "id": "CLAR-JTP-011",
+      "topic": "Shareholder/platform perimeter precision",
+      "state": "OPEN",
+      "priority": "HIGH",
+      "ask": [
+        "Gil",
+        "Patricia"
+      ],
+      "question": "Map the affected entity, legal owner/shareholder, asset/right, mandate, inside/outside-concurso status and affected interest without attributing every connected right directly to AWESWELL.",
+      "dependencies": [
+        "PD-JTP-FULL-PERIMETER-20260923-01"
+      ]
+    }
+  ],
+  "answers": [],
+  "evidence_links": [],
+  "generated_at": "2026-09-23"
+}
