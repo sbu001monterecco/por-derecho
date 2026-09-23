@@ -113,7 +113,8 @@
       "counterEvidence": "The client initiated Parrilla's substitution after loss of confidence. Parrilla contemporaneously articulated a procedural/evidentiary rationale for not making the broader January 2019 filing before obtaining the deed and proposed a narrower protective request; Rosa Gual agreed with that scope. A properly invoiced and authorised estate payment may be ordinary administration. The 28-May negotiations were unstable and not themselves the final fee account. Exact invoice, tax/cost allocation, authority and recoverable excess remain open. The reports disclose the €400,000 liquidity sequence and Gil says it was the only available source, but the matching €26,750 bank debit is not independently recovered. Receipt does not prove Parrilla knowledge of criminal origin, bribery or collusion.",
       "openQuestion": "Obtain certified court/LexNET evidence for the 4-Jan-2019 draft and the proposed narrower deed-production request; establish when the deed was obtained; recover the purchaser debit, LPB account credit, AC self-payment debits, complete Parrilla invoices/IGIC/cost allocation, authority, matching €26,750 debit and post-nonconvalidation ledger; distinguish each May/June fee proposal from the final accepted/authorised amount and obtain direct AC-Parrilla communications.",
       "protectiveActionSequence": "A 4-Jan-2019 draft sought judicial intervention, Fiscalía referral and reservation of AC separation/responsibility actions concerning the AC. A controlled Drive copy is explicitly labelled 'NO PRESENTADA', and a 1-Jun-2020 project-side handover email later described the draft as not filed. Crucially, Parrilla's direct 9-Jan-2019 email gives his contemporaneous rationale: he wanted the deed before making a substantive nullity/fraud challenge, opposed a precipitous broader filing and proposed a narrower request that the court order production of the deed; Rosa Gual agreed with that scope. The certified court/LexNET filing record for both the broader draft and proposed narrower request remains open.",
-      "successorCounselCharacterisation": "On 18-Jun-2020 incoming counsel Daniel Jiménez contemporaneously said his team had broken off negotiations with Parrilla and the AC because he perceived an attempt to condition the successor team's work on fee payment, and said he did not want his own fees to depend on the AC's view. This is a direct attorney report of perceived conditioning, not proof of bribery, unlawful payment or corrupt purpose."
+      "successorCounselCharacterisation": "On 18-Jun-2020 incoming counsel Daniel Jiménez contemporaneously said his team had broken off negotiations with Parrilla and the AC because he perceived an attempt to condition the successor team's work on fee payment, and said he did not want his own fees to depend on the AC's view. This is a direct attorney report of perceived conditioning, not proof of bribery, unlawful payment or corrupt purpose.",
+      "acReportedPaymentEvidence": "Direct AC report entry located: 'Juan Tomás Parrilla 26750 jul-20 Honorarios abogado concursada'. Repeated in a later AC liquidation report. The report proves the AC recorded this amount/month/concept; bank-complete tracing, invoice/IGIC treatment and authority remain open."
     },
     {
       "professional": "Cuatrecasas",
@@ -357,6 +358,19 @@
       "effect": "Creates a concrete protective-action/non-filing issue but also supplies contemporaneous professional counterevidence against attributing the non-filing to an unstated improper motive.",
       "exitLink": "BACKGROUND_TO_LATER_CONFIDENCE_BREAKDOWN_CAUSATION_OPEN",
       "strongestDefence": "Parrilla gave a contemporaneous evidentiary/procedural reason for caution and proposed a narrower protective step. Certified docket evidence is still required to establish exactly what was or was not filed and performed."
+    },
+    {
+      "id": "LRAC-EVT-2020-PARRILLA-26750-AC-REPORT",
+      "dateWindow": "2020-07 (payment entry reported in later AC liquidation reports)",
+      "actors": [
+        "Juan Tomás Parrilla Suárez",
+        "Administrador Concursal",
+        "Luchy Playa Blanca"
+      ],
+      "event": "A controlled copy of the AC's liquidation-operations report expressly lists 'Juan Tomás Parrilla 26750 jul-20 Honorarios abogado concursada'; the same entry is repeated in a later AC report.",
+      "effect": "Upgrades the payment amount/month/concept from derived reconciliation to direct AC-report evidence.",
+      "exitLink": "FEE_PAYMENT_AND_REPRESENTATION_TRANSITION_ANALYSIS",
+      "strongestDefence": "The report entry is consistent with ordinary payment of debtor-company legal fees. It does not establish bribery, corrupt inducement or an unlawful source, and it is not a bank debit, invoice or payment-authority record."
     }
   ],
   "patternTests": {
