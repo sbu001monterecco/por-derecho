@@ -4,17 +4,19 @@
   "control_date": "2026-09-23",
   "gitlab": {
     "branch": "governance/pd-mem-001-hava-vida-20260923",
-    "head_sha": "e75a486926c0cded7880daff90ddf1be29c078be",
+    "head_sha": "f653586f22bdeb226e7326533dbee97aa17c666c",
     "merge_request": "!569",
-    "state": "MR_OPEN_PIPELINE_REQUIRES_CURRENT_HEAD_RECHECK"
+    "pipeline_id": 2876522573,
+    "state": "MR_OPEN_CURRENT_HEAD_PIPELINE_RUNNING"
   },
   "github": {
-    "base_sha": "2798cbf236571e9fa8d413de08221bcfa2ab98a8",
-    "branch": "governance/pd-mem-001-hava-vida-20260923",
-    "state": "BRANCH_MIRROR_PREPARED"
+    "base_main": "c7bb34d4373bdd2bfeebbfaa7632654eee48b39a",
+    "branch": "governance/pd-mem-001-hava-vida-20260923-v2",
+    "pr": "#1791",
+    "state": "CURRENT_MAIN_DESCENDANT_PR_OPEN_CHECKS_PENDING"
   },
   "drive_private": {
-    "state": "VERIFIED_PRIVATE_MIRROR_EXISTS",
+    "state": "VERIFIED_PRIVATE_FULL_MASTER_RELATIONSHIP_CONTROL_COMPACT_PROJECTION_AND_SYNC_RECEIPT",
     "locator_policy": "Private Drive IDs/URLs intentionally omitted from public Git."
   },
   "chatgpt_settings": {
