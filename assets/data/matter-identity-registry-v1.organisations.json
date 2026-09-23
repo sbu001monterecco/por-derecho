@@ -19,7 +19,12 @@
         "Aweswelll",
         "AWESWELLL"
       ],
-      "identity_control": "This record has one current legal name and no current-name aliases. Forbidden variants are transcription/template errors. OSWELL 426 S.L. is a distinct Spanish entity."
+      "identity_control": "This record has one current legal name and no current-name aliases. Forbidden variants are transcription/template errors. OSWELL 426 S.L. is a distinct Spanish entity.",
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "UK Companies House company 07716847; repository canonical entity control E005."
+      ],
+      "capacity_boundary": "Exact UK company identity only. Group/perimeter descriptions, ownership of other entities, beneficial interests, instructions, liabilities and current asset relationships require separate source bridges."
     },
     {
       "id": "PD-SP-O-0002",
@@ -28,7 +33,12 @@
       "aliases": [
         "Luchy Playa Blanca, S.L.",
         "LPB"
-      ]
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "BOE/BORME records and Concurso 36/2012 source controls; repository canonical entity control E003."
+      ],
+      "capacity_boundary": "Exact LPB legal-person identity only. Insolvency estate, assets, Community/CEXP roles, shareholder relationships and liabilities remain separate layers."
     },
     {
       "id": "PD-SP-O-0003",
@@ -62,7 +72,12 @@
       "aliases": [
         "Monterecco Sun Park, S.L.U.",
         "Pink Canary Services"
-      ]
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "BORME/BOE records and repository canonical entity control E006."
+      ],
+      "capacity_boundary": "Exact Spanish legal-person identity and former-name continuity only. Never conflate with UK company 07716847; current corporate/tax status and particular acts require separate proof."
     },
     {
       "id": "PD-SP-O-0005",
@@ -1015,6 +1030,66 @@
         "en": "/en/cuatrecasas-sun-park/#cuatrecasas-rauda-revision-20260905"
       },
       "capacity_boundary": "Source-literal professional recovery label from 2022 correspondence. Exact legal entity and legal-form history remain unverified. No original advisory mandate, ownership of the debt, purchaser identity, confidentiality misuse, group-wide knowledge or liability is inferred."
+    },
+    {
+      "id": "PD-SP-O-0103",
+      "type": "ORGANISATION",
+      "name": "Hava Vida Travel & Tourism, S.L.U.",
+      "aliases": [
+        "HAVA VIDA TRAVEL & TOURISM SL",
+        "Hava Vida Travel & Tourism, S.L.",
+        "Hava Vida Travel & Tourism S.L.",
+        "Hava Vida",
+        "HAVAVIDA"
+      ],
+      "legacy": [
+        "E051"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "tax_identifier": "B76564434",
+      "registry_sheet": "TF 49735",
+      "identity_sources": [
+        "BORME-A-2012-27-38, entry 64020: incorporation of HAVA VIDA TRAVEL & TOURISM SL, declaration of unipersonality, Patricia Isabel Domínguez Montelongo as sole shareholder and sole administrator, sheet TF 49735.",
+        "BORME-A-2012-110-38, entry 248217: registered-office change on the same sheet TF 49735.",
+        "ops/CANONICAL_ENTITY_NAMES.json — E051."
+      ],
+      "source_urls": [
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-27-38",
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-110-38"
+      ],
+      "status": "CANONICAL_IDENTITY_RESOLVED_RELATIONSHIP_LAYERS_SEPARATE",
+      "source_state": "PRIMARY_REGISTRY_IDENTITY_CONFIRMED_CURRENT_2026_STATUS_OPEN",
+      "capacity_boundary": "Exact Spanish company identity. BORME proves Patricia Isabel Domínguez Montelongo was sole shareholder and sole administrator at incorporation. No current 2026 Spanish registry certificate was located in the bounded Drive/repository search. Gil Marer's Group Sun Rock/Aweswell perimeter and trust-for-Aweswell-benefit position is separately attributed and does not merge legal persons or establish legal effectiveness.",
+      "relationships": [
+        {
+          "relationship": "REGISTERED_SOLE_SHAREHOLDER_AT_INCORPORATION",
+          "target_id": "PD-SP-P-0002",
+          "date": "2012-01-27",
+          "source": "BORME-A-2012-27-38 entry 64020",
+          "status": "PRIMARY_REGISTRY_FACT_AT_INCORPORATION"
+        },
+        {
+          "relationship": "REGISTERED_SOLE_ADMINISTRATOR_AT_INCORPORATION",
+          "target_id": "PD-SP-P-0002",
+          "date": "2012-01-27",
+          "source": "BORME-A-2012-27-38 entry 64020",
+          "status": "PRIMARY_REGISTRY_FACT_AT_INCORPORATION"
+        },
+        {
+          "relationship": "PROJECT_GROUP_PERIMETER",
+          "target_id": "PD-SP-S-0013",
+          "source": "Gil Marer statement 23-Sep-2026; 2023 querella page-53 project-side group wording provides historical context",
+          "status": "ATTRIBUTED_PROJECT_POSITION"
+        },
+        {
+          "relationship": "BENEFICIAL_INTEREST_TRUST_POSITION",
+          "target_id": "PD-SP-O-0001",
+          "through_person_id": "PD-SP-P-0002",
+          "source": "Gil Marer statement 23-Sep-2026",
+          "status": "ATTRIBUTED_POSITION_NOT_INDEPENDENTLY_ESTABLISHED",
+          "boundary": "Gil Marer states and accepts responsibility for the position that Patricia's registered shares are understood to be held on trust for Aweswell Limited's benefit. No trust instrument, current cap table, accounting entry or legal opinion establishing governing law/effect was located in this pass."
+        }
+      ]
     }
   ]
 }
