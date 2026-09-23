@@ -1,8 +1,8 @@
 {
   "schema": "por-derecho.matter-identity-registry.v1",
   "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-  "control_date": "2026-09-05",
-  "status": "CANONICAL_ACTOR_REGISTER_COURT_HIERARCHY_AND_HOME_SEARCH_INDEXED_ARCHIVE_BACKFILL_OPEN",
+  "control_date": "2026-09-23",
+  "status": "RECOVERED_AND_EXPANDED_SOURCE_BOUND_REGISTRY_WITH_EXPLICIT_OPEN_IDENTITIES",
   "id_formats": {
     "PERSON": "PD-SP-P-####",
     "ORGANISATION": "PD-SP-O-####",
@@ -16,11 +16,10 @@
     "People, organisations, structures, institutions and proceedings never share an ID.",
     "A shared ID resolves identity only; it does not transfer knowledge, intent, control or liability.",
     "New controlled-surface identities require an ID before publication.",
-    "Legal professionals and procuradores belong in the separate Professionals and representatives perimeter; representation does not make them part of the claimant/ownership perimeter or an adverse private party.",
-    "A parent court, each section or court position, every proceeding and every named office-holder remain separate canonical objects; hierarchy supplies navigation only."
+    "Legal professionals and procuradores belong in the separate Professionals and representatives perimeter; representation does not make them part of the claimant/ownership perimeter or an adverse private party."
   ],
   "coverage": {
-    "state": "COMPLETE_FOR_CURRENT_CANONICAL_ACTOR_REGISTER_SOURCE_IDENTIFIED_HISTORIC_AUTHORITY_BACKFILL_GLOBAL_DOCKET_BACKFILL_OPEN",
+    "state": "ALL_158_LEGACY_ROWS_RECONCILED_WITH_PENDING_IDENTITIES_AND_SOURCE_BOUND_SCAN_ADDITIONS; FULL_CORPUS_AND_CERTIFIED_DOCKET_DENOMINATORS_OPEN",
     "archive_backfill": "OPEN",
     "required_names": [
       "Construcciones Acosta Matos, S.A.",
@@ -144,7 +143,6 @@
       "Soledad Tello Checa",
       "Andrés Castellano Rivero",
       "Juzgado de Instrucción nº 2 de Arrecife",
-      "Audiencia Provincial de Las Palmas",
       "Audiencia Provincial de Las Palmas — Sección Segunda",
       "Arrecife 1103/2018 → DP 1132/2018 → Rollo 1010/2018 / Auto 804/2018",
       "Graciela Pérez-Valencia Díaz",
@@ -166,53 +164,187 @@
       "Juzgado de Primera Instancia nº 5 de San Cristóbal de La Laguna",
       "Juzgado de Primera Instancia nº 2 de Arrecife",
       "Juzgado de Paz de Yaiza",
-      "Ángela López-Yuste Padial",
-      "Emma Galcerán Solsona",
-      "Juzgado de Instrucción nº 3 de Arrecife (antiguo Mixto nº 8)",
-      "Juzgado de Primera Instancia nº 4 de Arrecife",
-      "Juzgado de Instrucción nº 4 de Arrecife",
-      "Fernando Pérez Polo",
-      "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria",
-      "Juzgado de Primera Instancia nº 27 de Valencia",
-      "RAUDA"
-    ]
+      "Ramón Antonio Biforcos Sancho",
+      "Silvia López Monzó",
+      "Raimon Tagliavini Sansa",
+      "David García Martín",
+      "Marta Jiménez Fueyo",
+      "Asier Barañano Revuelta",
+      "Zigor Bilbao Acedos",
+      "Juan Carlos Santana Báez",
+      "PKF ATTEST SERVICIOS EMPRESARIALES, S.L.",
+      "Juzgado de Primera Instancia n.º 27 de Valencia"
+    ],
+    "legacy_crosswalk": "matter-identity-legacy-crosswalk-20260907.json",
+    "source_intake": "matter-identity-source-intake-20260907.json",
+    "caixabank_valencia_native_intake": {
+      "native_sources": 28,
+      "native_pages": 418,
+      "new_persons": 9,
+      "new_organisations": 1,
+      "new_institutions": 1,
+      "complete_identity_denominator": false,
+      "all_originals_release_pending": true
+    },
+    "grosvenor_2015_incident_intake": {
+      "matter_id": "PD-SP-MAT-0991",
+      "legacy_incident_id": "PD-SP-INC-2015-01",
+      "new_persons": 7,
+      "new_organisations": 2,
+      "canonical_reference_package": "grosvenor-2015-canonical-incident-register.json",
+      "authorship_boundary": "oral statement -> Gil immediate first-hand memorialisation -> separate Haya corroboration; no Coggle-authored threat email relied upon; predecessor person-ID collisions redirected by explicit crosswalk"
+    }
   },
-  "counts": {"total":379,"PERSON":176,"ORGANISATION":99,"STRUCTURE":11,"INSTITUTION":49,"PROCEEDING":44},
+  "counts": {
+    "total": 536,
+    "PERSON": 272,
+    "ORGANISATION": 123,
+    "STRUCTURE": 12,
+    "INSTITUTION": 69,
+    "PROCEEDING": 60
+  },
   "parts": [
-    {"path":"matter-identity-registry-v1.people.json","type":"PERSON","count":120},
-    {"path":"matter-identity-registry-v1.professional-people.json","type":"PERSON","count":27},
-    {"path":"matter-identity-registry-v1.joan-cruz.json","type":"PERSON","count":1},
-    {"path":"matter-identity-registry-v1.la-laguna-judicial-people.json","type":"PERSON","count":11},
-    {"path":"matter-identity-registry-v1.dp748-professional-people.json","type":"PERSON","count":3},
-    {"path":"matter-identity-registry-v1.organisations.json","type":"ORGANISATION","count":77},
-    {"path":"matter-identity-registry-v1.professional-organisations.json","type":"ORGANISATION","count":7},
-    {"path":"matter-identity-registry-v1.structures.json","type":"STRUCTURE","count":11},
-    {"path":"matter-identity-registry-v1.institutions.json","type":"INSTITUTION","count":37},
-    {"path":"matter-identity-registry-v1.dp3205-institutions.json","type":"INSTITUTION","count":1},
-    {"path":"matter-identity-registry-v1.la-laguna-judicial-institutions.json","type":"INSTITUTION","count":5},
-    {"path":"matter-identity-registry-v1.court-hierarchy.json","type":"INSTITUTION","count":2},
-    {"path":"matter-identity-registry-v1.proceedings.json","type":"PROCEEDING","count":42},
-    {"path":"matter-identity-registry-v1.dp3205-proceedings.json","type":"PROCEEDING","count":1},
-    {"path":"matter-identity-registry-v1.historic-arrecife-judicial-people-20260902.json","type":"PERSON","count":2},
-    {"path":"matter-identity-registry-v1.historic-arrecife-judicial-institutions-20260902.json","type":"INSTITUTION","count":3},
-    {"path":"matter-identity-registry-v1.historic-las-palmas-civil-judicial-people-20260902.json","type":"PERSON","count":1},
-    {"path":"matter-identity-registry-v1.historic-las-palmas-civil-judicial-institutions-20260902.json","type":"INSTITUTION","count":1},
-    {"path":"matter-identity-registry-v1.jsp-organisations-20260905.json","type":"ORGANISATION","count":15},
-    {"path":"matter-identity-registry-v1.jsp-people-20260905.json","type":"PERSON","count":11},
-    {"path":"matter-identity-registry-v1.jsp-proceedings-20260905.json","type":"PROCEEDING","count":1}
+    {
+      "path": "matter-identity-registry-v1.people.json",
+      "type": "PERSON",
+      "count": 122
+    },
+    {
+      "path": "matter-identity-registry-v1.professional-people.json",
+      "type": "PERSON",
+      "count": 27
+    },
+    {
+      "path": "matter-identity-registry-v1.joan-cruz.json",
+      "type": "PERSON",
+      "count": 1
+    },
+    {
+      "path": "matter-identity-registry-v1.la-laguna-judicial-people.json",
+      "type": "PERSON",
+      "count": 11
+    },
+    {
+      "path": "matter-identity-registry-v1.dp748-professional-people.json",
+      "type": "PERSON",
+      "count": 3
+    },
+    {
+      "path": "matter-identity-registry-v1.organisations.json",
+      "type": "ORGANISATION",
+      "count": 78
+    },
+    {
+      "path": "matter-identity-registry-v1.professional-organisations.json",
+      "type": "ORGANISATION",
+      "count": 8
+    },
+    {
+      "path": "matter-identity-registry-v1.structures.json",
+      "type": "STRUCTURE",
+      "count": 11
+    },
+    {
+      "path": "matter-identity-registry-v1.institutions.json",
+      "type": "INSTITUTION",
+      "count": 38
+    },
+    {
+      "path": "matter-identity-registry-v1.dp3205-institutions.json",
+      "type": "INSTITUTION",
+      "count": 1
+    },
+    {
+      "path": "matter-identity-registry-v1.la-laguna-judicial-institutions.json",
+      "type": "INSTITUTION",
+      "count": 5
+    },
+    {
+      "path": "matter-identity-registry-v1.proceedings.json",
+      "type": "PROCEEDING",
+      "count": 43
+    },
+    {
+      "path": "matter-identity-registry-v1.dp3205-proceedings.json",
+      "type": "PROCEEDING",
+      "count": 1
+    },
+    {
+      "path": "matter-identity-registry-v1.scan-20260907-proceeding.json",
+      "type": "PROCEEDING",
+      "count": 16
+    },
+    {
+      "path": "matter-identity-registry-v1.scan-20260907-person.json",
+      "type": "PERSON",
+      "count": 92
+    },
+    {
+      "path": "matter-identity-registry-v1.scan-20260907-organisation.json",
+      "type": "ORGANISATION",
+      "count": 34
+    },
+    {
+      "path": "matter-identity-registry-v1.scan-20260907-institution.json",
+      "type": "INSTITUTION",
+      "count": 24
+    },
+    {
+      "path": "matter-identity-registry-v1.scan-20260907-structure.json",
+      "type": "STRUCTURE",
+      "count": 1
+    },
+    {
+      "path": "matter-identity-registry-v1.caixabank-valencia-people.json",
+      "type": "PERSON",
+      "count": 9
+    },
+    {
+      "path": "matter-identity-registry-v1.caixabank-valencia-organisations.json",
+      "type": "ORGANISATION",
+      "count": 1
+    },
+    {
+      "path": "matter-identity-registry-v1.caixabank-valencia-institutions.json",
+      "type": "INSTITUTION",
+      "count": 1
+    },
+    {
+      "path": "matter-identity-registry-v1.grosvenor-2015-people.json",
+      "type": "PERSON",
+      "count": 7
+    },
+    {
+      "path": "matter-identity-registry-v1.grosvenor-2015-organisations.json",
+      "type": "ORGANISATION",
+      "count": 2
+    }
   ],
-  "recovery_identity_control": {
-    "control_id": "PD-CR-20260905-01",
-    "as_of": "2026-09-05",
-    "identity_id": "PD-SP-O-0084",
-    "state": "SOURCE_LITERAL_ONLY_NO_CARET_OR_EXACT_LEGAL_ENTITY_UPGRADE"
-  },
-  "jsp_registration_control": {
-    "control_id":"PD-JSP-2017-DOSSIER-20260905",
-    "as_of":"2026-09-05",
-    "new_records":27,
-    "publication_state":"WORKER_PENDING_INTEGRATION_AND_LIVE_VERIFICATION",
-    "scope":"2017 shareholder notice and source-qualified corporate/liquidation/insolvency bridge, not the entire historical candidate perimeter",
-    "boundary":"Preserve all pre-existing registry states. New pending records are registration dispositions, not caret confirmation; the proceeding PMR/certified-docket reconciliation remains explicit. Reuse PD-SP-P-0137 and PD-SP-P-0125; withdrawn unmerged proposals P-0174/P-0178 are reserved and never reallocated."
+  "recovery_control": {
+    "record": "ops/eg745/RECOVERY_AND_INTERLINK_VERIFICATION_07SEP2026.json",
+    "later_navigation_only_ids_reserved": [
+      "PD-SP-P-0163",
+      "PD-SP-P-0164",
+      "PD-SP-P-0165",
+      "PD-SP-I-0044",
+      "PD-SP-I-0045",
+      "PD-SP-I-0046",
+      "PD-SP-I-0047",
+      "PD-SP-I-0048",
+      "PD-SP-I-0049"
+    ],
+    "full_latest_identity_parity": false,
+    "boundary": "Recovered typed records are a preserved checkpoint, not proof that all missing 2–5 September typed parts have been recovered. Current organisation changes retained. Known later IDs reserved and not reused.",
+    "pinned_original_organisation_part": "PRESERVED_BYTE_FOR_BYTE; Godoy added to recovered professional-organisations part; relations supplied by scoped reverse index",
+    "uncommitted_duplicate_allocation_retired": [
+      "PD-SP-I-0053",
+      "legacy E051 for Cerberus European Servicing Ltd",
+      "MR !486 person-ID collision P0271/P0272 redirected to P0274/P0275"
+    ],
+    "hava_vida_20260923": {
+      "status": "PROMOTED_FROM_SCAN_TO_ACTIVE_CAEPR",
+      "id": "PD-SP-O-0103",
+      "note": "Active Hava Vida identity resolved from E051 + primary BORME; archived recovery snapshots containing unrelated candidate reuse of PD-SP-O-0103 remain historical provenance and are not active identity authority."
+    }
   }
 }
