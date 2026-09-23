@@ -45,7 +45,7 @@ class OutageBackendParityTests(unittest.TestCase):
         parity = json.loads(PARITY.read_text(encoding="utf-8"))
         identity = next(x for x in parity["layers"] if x["id"] == "IDENTITY_REGISTRY")
         self.assertEqual(registry["counts"]["total"], identity["known_count"])
-        self.assertEqual(registry["counts"]["total"], 379)
+        self.assertEqual(registry["counts"]["total"], 381)
 
     def test_classifier_fails_closed_for_public_runtime(self):
         self.assertEqual(mod.classify(["assets/site.js"]).result, "YES_OR_UNKNOWN")
