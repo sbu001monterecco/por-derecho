@@ -44,6 +44,8 @@ The exact allegation, R33 test, counterevidence and open proof live in `assets/d
 - A later structural finding may corroborate objective effect without proving earlier knowledge or intent.
 - DP 1956, DP 1901, removal, remuneration and private-actor proceedings remain procedurally distinct.
 - R33 must preserve genuine adverse evidence, including Joaquín Ruiz de Infante's withdrawal/apology and other adverse rulings.
+- For R33 page 5, preserve two facts together: (a) Joaquín's apology/withdrawal is genuine adverse evidence; and (b) Joaquín ceased acting on 21-Sep-2020 and did not carry the adverse/removal work through to the separation application filed on 23-Apr-2025. The project-side causation/intent theory remains attributed and must be tested, not presumed.
+- Map that page-5 node to both `AC-CLM-011` and `AC-CLM-014`, using stable nodes `R33-P05-COUNSEL-DISCONTINUITY` and `R33-P05-NARRATIVE-COMPRESSION`.
 
 ## Truth Machine integration
 
