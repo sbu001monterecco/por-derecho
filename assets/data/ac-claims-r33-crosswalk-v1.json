@@ -116,6 +116,11 @@
           "Registry/title history",
           "estate bank trace"
         ]
+      },
+      "funded_exit_counsel_context_20260923": {
+        "status": "CONTEXT_LINK",
+        "proposition": "Gil says the later CAM sale/liquidation outcome was contrary to the client-side funded-exit objective counsel was instructed to protect.",
+        "boundary": "Client objective does not determine the legal validity of liquidation or later judicial acts."
       }
     },
     {
@@ -161,6 +166,12 @@
           "alternative causes",
           "financing/closing conditions"
         ]
+      },
+      "parrilla_instruction_bridge_20260923": {
+        "status": "GIL_STATEMENT_PLUS_DOCUMENTED_INSTRUCTION_CONFLICT",
+        "statement_ref": "archive/declarations/019_GIL_PARRILLA_BUROFAX_PWC_FUNDED_EXIT_STATEMENT_23SEP2026.md",
+        "proposition": "Gil says counsel's refusal/non-follow-through on protective instructions must be tested as a separate contributing strand while the ONA/Clubotel and finance-backed exit remained active.",
+        "boundary": "The funded-exit route was conditional; counsel conduct does not by itself prove the counterfactual would have closed."
       }
     },
     {
@@ -209,6 +220,11 @@
           "source-of-funds trace",
           "procurator reconciliation"
         ]
+      },
+      "client_objective_boundary_20260923": {
+        "status": "GIL_STATEMENT",
+        "proposition": "Gil states there was no client-approved scenario in which liquidation-generated liquidity following CAM/Acosta Matos asset transfer would be used to remunerate Parrilla.",
+        "boundary": "This states client objective/acceptability; it does not prove the legal source of any later payment or corrupt motive."
       }
     },
     {
@@ -302,6 +318,23 @@
         "source_status_2016_burofax": "Gil recalls a 2016 refusal. Current corpus proves 2016 escalation/burofax preparation but the clearest express instruction-conflict source presently locked is June 2017. Keep separate pending exact 2016 source.",
         "no_displacement_rule": "Parrilla analysis does not reduce or transfer alleged responsibility of the AC, judge, CAM/Acosta Matos or historic dissident actors.",
         "causation_rule": "Multiple contributing causes may coexist; test duty, act/omission, knowledge, timing, material effect, alternative causes and economic interaction actor by actor."
+      },
+      "gil_2016_burofax_clarification_20260923": {
+        "status": "SOURCE_AUTHORED_STATEMENT_WITH_PARTIAL_DOCUMENTARY_CORROBORATION",
+        "statement_ref": "archive/declarations/019_GIL_PARRILLA_BUROFAX_PWC_FUNDED_EXIT_STATEMENT_23SEP2026.md",
+        "documented": [
+          "12-Jul-2016 draft/instruction",
+          "13-Jul-2016 Parrilla refusal/venia response",
+          "preserved burofax text",
+          "later filing reciting proof of sending/receipt"
+        ],
+        "gil_adoption": "Gil personally states he sent the 2016 burofax to the AC after counsel refused to do so.",
+        "distinction": "2016 burofax episode is separate from later instructions concerning separation/removal of the AC.",
+        "open_proof": [
+          "native delivery/receipt certificate",
+          "complete later removal instruction/draft/response/filed-state chain"
+        ],
+        "allegation": "Gil alleges wilful professional negligence and material contribution to weakened protection; this remains an attributed professional/legal allegation."
       }
     },
     {
@@ -392,5 +425,5 @@
     "counsel_es": "/es/continuidad-defensa-letrados/",
     "counsel_en": "/en/counsel-defence-continuity/"
   },
-  "version_note": "undefined Gil clarification 23-Sep-2026: Parrilla alleged protective-instruction failures linked to the live ONA/Clubotel funded-exit context; 2016 burofax refusal remains attributed pending exact source, separate from source-stronger June-2017 instruction conflict."
+  "version_note": "undefined Gil clarification 23-Sep-2026: Parrilla alleged protective-instruction failures linked to the live ONA/Clubotel funded-exit context; 2016 burofax refusal remains attributed pending exact source, separate from source-stronger June-2017 instruction conflict. 23-Sep-2026: Gil statement wires the distinct 2016 Parrilla burofax refusal, later removal-instruction allegation, PwC 2016 knowledge/contact lane and funded-exit incompatibility into AC-CLM-005/007/008/011."
 }
