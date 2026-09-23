@@ -15,7 +15,7 @@
     "expected_confirmed": 23,
     "presentation_exceptions": [
       {
-        "id": "PD-SP-S-0013",
+        "id": "PD-SP-S-0019",
         "type": "STRUCTURE",
         "state": "CARET_NOT_APPLICABLE"
       }
@@ -151,7 +151,7 @@
     {
       "id": "PD-MEM-REL-003",
       "from": "PD-SP-O-0103",
-      "to": "PD-SP-S-0013",
+      "to": "PD-SP-S-0019",
       "type": "PROJECT_GROUP_PERIMETER",
       "status": "ATTRIBUTED_PROJECT_POSITION",
       "source": "Gil Marer 23-Sep-2026"
