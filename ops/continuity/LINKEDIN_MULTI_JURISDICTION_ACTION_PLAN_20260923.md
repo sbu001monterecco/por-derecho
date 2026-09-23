@@ -16,7 +16,9 @@
 - LinkedIn's legacy support email is not a current intake route.
 - Current provider routes identified by LinkedIn:
   - restricted account / access: https://www.linkedin.com/help/linkedin/solve
+  - unauthorised account access / changes: https://www.linkedin.com/help/linkedin/ask/TS-RHA
   - DPO / privacy: https://www.linkedin.com/help/linkedin/ask/TSO-DPO
+  - current published written fallback contact: info_impressum@cs.linkedin.com
 - RPL 3304/2025: the Administrador Concursal's 14 Sep 2026 opposition expressly refers to Gil Marer's LinkedIn publications / Por Derecho material. This increases preservation relevance; it does not establish the cause of the LinkedIn restriction.
 - PwC, Grant Thornton and RSM preservation/escalation notices were sent on 23 Sep 2026 through existing documented channels.
 - GitHub PR #1776 and GitLab MR !557 publicly record the live incident and preservation status.
@@ -24,7 +26,7 @@
 ## 2. Fastest execution line
 
 ### P0-A — LinkedIn recovery / human review
-**Status:** READY FOR CURRENT FORM SUBMISSION  
+**Status:** READY FOR CURRENT FORM SUBMISSION; CURRENT PUBLISHED WRITTEN FALLBACK ESCALATION SENT 23 SEP 2026 AND VERIFIED IN SENT MAIL  
 Submit the restricted-account case using LinkedIn's current access/recovery form.
 
 Request:
@@ -38,6 +40,17 @@ Request:
 8. higher-risk / repeated-incident account handling where available.
 
 **Closure:** account restored + provider explanation obtained, or final reason/appeal route documented.
+
+### P0-A2 — LinkedIn unauthorised-access / account-change route
+**Status:** READY FOR CURRENT FORM SUBMISSION
+LinkedIn's current compromised-account guidance says to submit the Report Unauthorized Account Access or Changes form as soon as possible when the member cannot access the account and noticed changes or suspects another person had access.
+
+Current form:
+https://www.linkedin.com/help/linkedin/ask/TS-RHA
+
+Use the 22 Sep profile-photo change as the concrete account-change event; preserve the provider timestamp/device/location exactly; do not attribute the actor.
+
+**Closure:** LinkedIn acknowledges the security report and confirms the investigation/recovery outcome, or the refusal/failure is preserved for cyber/regulatory escalation.
 
 ### P0-B — LinkedIn DPO / Article 15 / preservation
 **Status:** READY FOR CURRENT DPO FORM SUBMISSION  
@@ -250,3 +263,11 @@ Minimum LinkedIn closure conditions:
 External communications are additionally governed by `ops/continuity/LINKEDIN_EXTERNAL_COMMS_LINK_AND_HOLD_RULE_20260923.md`.
 
 That control requires both GitHub and GitLab public-context links in every future relevant external email, and places PwC, Grant Thornton and RSM in **WAITING FOR RESPONSE / NO FURTHER EMAIL** status until a reply, a new explicit owner instruction, or an expressly authorised genuinely new urgent preservation event.
+
+
+## 8. Latest verified execution evidence
+
+- 23 Sep 2026: written LinkedIn escalation sent to `info_impressum@cs.linkedin.com`, the current fallback email published by LinkedIn Ireland's imprint for users who do not use the web form. Gmail Sent readback confirms delivery into Sent; no bounce or acknowledgement was present at the immediate verification scan.
+- This written route does not replace the restricted-account, unauthorised-access or DPO web forms.
+- LinkedIn's current DSA materials reserve `LERA_IE@linkedin.com` for certified Article 21 out-of-court dispute bodies; it is **not** a user-submission address and must not be used directly by Por Derecho/Gil Marer.
+- LinkedIn's current Article 12 EU contact guidance routes ordinary recipients to customer support, reinforcing the need to use the official customer-support/form routes and preserve their receipts.
