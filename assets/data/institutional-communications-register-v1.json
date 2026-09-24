@@ -46,11 +46,11 @@
   "control_date": "2026-09-24",
   "denominator_control": {
     "arithmetic_check": "75 detailed + 22 metadata-only = 97 reported total",
-    "curated_source_proved_events": 106,
+    "curated_source_proved_events": 99,
     "detailed_baseline_receipt_rows_expected": 75,
     "detailed_baseline_receipt_rows_registered": 75,
-    "event_row_arithmetic": "75 detailed baseline receipts + 106 curated source-proved events + 1 separately attributed user-supplied account + 156 mailbox transport events = 338; no global-completeness claim",
-    "event_rows_total": 338,
+    "event_row_arithmetic": "75 detailed baseline receipts + 99 curated source-proved events + 1 separately attributed user-supplied account + 156 mailbox transport events = 331; no global-completeness claim",
+    "event_rows_total": 337,
     "mailbox_draft_rows": 3,
     "mailbox_inbound_email_rows": 101,
     "mailbox_outbound_email_rows": 42,
@@ -17085,36 +17085,6 @@
       "does_not_prove": [
         "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
       ]
-    },
-    {
-      "event_id": "PD-SP-EVT-1160",
-      "event_date": "2026-09-24",
-      "record_type": "EMAIL_TRANSPORT",
-      "layer": "TRANSPORT",
-      "channel": "EMAIL",
-      "direction": "OUTBOUND_TO_COUNSEL",
-      "office": "External legal counsel",
-      "official_reference": "RPL 3304/2025 + 3319/2025",
-      "matter_references": [
-        "108-2026",
-        "RPL 3304/2025",
-        "RPL 3319/2025",
-        "RPL 2523/2025",
-        "RPL 421/2026"
-      ],
-      "proof_level": "SENT_EMAIL_VERIFIED",
-      "public_summary": "Official communication 108-2026 sent to external counsel with a request to assess targeted use before the Audiencia Provincial; dispatch does not prove a court filing.",
-      "proves": [
-        "Outbound counsel communication and original oficio attachment dispatch verified."
-      ],
-      "does_not_prove": [
-        "Counsel agreement, filing before the Audiencia Provincial, admission, examination or merits."
-      ],
-      "evidence_state": {
-        "dispatch": "PROVED",
-        "counsel_response": "NOT_ESTABLISHED",
-        "court_filing": "NOT_ESTABLISHED"
-      }
     }
   ],
   "id_allocation": {
@@ -17334,16 +17304,15 @@
     "boundary": "Institutional or individual notice does not prove the allegations, completed investigation, full-board knowledge or criminal responsibility. A supplied messaging transcription and native institutional email are distinct evidence objects."
   },
   "supplemental_control_20260924": {
-    "state": "OFICIO_108_CGPJ_SUCCESSOR_AND_COUNSEL_TRANSPORT_INTEGRATED",
+    "state": "OFICIO_108_AND_CGPJ_SUCCESSOR_EVENTS_ADDED",
     "added_event_ids": [
       "PD-SP-EVT-0497",
       "PD-SP-EVT-0498",
       "PD-SP-EVT-0499",
       "PD-SP-EVT-1157",
       "PD-SP-EVT-1158",
-      "PD-SP-EVT-1159",
-      "PD-SP-EVT-1160"
+      "PD-SP-EVT-1159"
     ],
-    "rule": "Additive successor events; historical states preserved. Registration, transport, incorporation, examination and merits remain distinct."
+    "rule": "Additive successor events; historical states preserved."
   }
 }
