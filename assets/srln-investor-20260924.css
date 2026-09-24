@@ -316,3 +316,13 @@ footer strong{color:#fff}
   .programme-ref{width:100%;min-width:0}
   .application-grid article{min-height:auto}
 }
+
+
+/* Disclosure-ladder reconciliation — controlling 17 Sep rule */
+.disclosure-bridge{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;background:#0c242b;color:#fff;border-radius:14px;padding:18px 20px;margin:-10px 0 26px}
+.disclosure-bridge>div{display:flex;align-items:center;gap:10px;min-width:0}
+.disclosure-bridge>div span{display:grid;place-items:center;min-width:46px;height:30px;border-radius:999px;background:#d5c18f;color:#142129;font-weight:800;font-size:.72rem;letter-spacing:.08em}
+.disclosure-bridge strong{font-family:Georgia,serif;font-weight:500;font-size:1.05rem}
+.disclosure-bridge p{margin:0;color:#c5d1d4;font-size:.82rem}
+.application-grid code{overflow-wrap:anywhere;word-break:break-word}
+@media (max-width:760px){.disclosure-bridge{grid-template-columns:1fr}.disclosure-bridge>div{align-items:flex-start;flex-direction:column}}
