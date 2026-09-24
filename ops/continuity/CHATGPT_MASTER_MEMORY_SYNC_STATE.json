@@ -1,0 +1,39 @@
+{
+  "schema": "por-derecho.chatgpt-master-memory.sync-state.v1",
+  "memory_id": "PD-MEM-001",
+  "control_date": "2026-09-23",
+  "gitlab": {
+    "branch": "governance/pd-mem-001-hava-vida-20260923",
+    "head_sha": "f653586f22bdeb226e7326533dbee97aa17c666c",
+    "merge_request": "!569",
+    "pipeline_id": 2876522573,
+    "state": "MR_OPEN_CURRENT_HEAD_PIPELINE_RUNNING"
+  },
+  "github": {
+    "base_main": "c7bb34d4373bdd2bfeebbfaa7632654eee48b39a",
+    "branch": "governance/pd-mem-001-hava-vida-20260923-v2",
+    "pr": "#1791",
+    "state": "CURRENT_MAIN_DESCENDANT_PR_OPEN_CHECKS_PENDING"
+  },
+  "drive_private": {
+    "state": "VERIFIED_PRIVATE_FULL_MASTER_RELATIONSHIP_CONTROL_COMPACT_PROJECTION_AND_SYNC_RECEIPT",
+    "locator_policy": "Private Drive IDs/URLs intentionally omitted from public Git."
+  },
+  "chatgpt_settings": {
+    "state": "USER_MANAGED_COMPACT_PROJECTION"
+  },
+  "host_differences": [
+    "GitLab contains legacy-crosswalk and source-intake registry files not present on GitHub; parity is semantic, not blind file-for-file replication."
+  ],
+  "finite_caret_scope": {
+    "status": "PARTIAL_NOT_ALL_IS_CARET",
+    "open": [
+      "Hava Vida source-specific CIF collision B76694769 vs canonical B76564434",
+      "Current 2026 Spanish Hava Vida share/director certificate",
+      "Trust/nominee/beneficial ownership documentary + UK/Spanish legal bridge"
+    ],
+    "objects": [
+      "PD-SP-S-0012 Group Sun Rock / Sun Rock project perimeter"
+    ]
+  }
+}

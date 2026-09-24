@@ -1,0 +1,16 @@
+{
+  "schema": "por-derecho.chatgpt-master-memory.v1",
+  "memory_id": "PD-MEM-001",
+  "control_date": "2026-09-23",
+  "authority": "orientation/control only; current primary sources, canonical registers, corrections and verified live repo state prevail",
+  "files": {
+    "public_master": "governance/chatgpt-memory/MASTER_MEMORY_PUBLIC.md",
+    "compact": "governance/chatgpt-memory/MASTER_MEMORY_COMPACT.txt",
+    "required_controls": "assets/data/chatgpt-master-memory-required-controls-v1.json",
+    "hava_vida_control": "archive/HAVA_VIDA_AWESWELL_GROUP_PERIMETER_BENEFICIAL_POSITION_23SEP2026.md"
+  },
+  "current_relationship_controls": [
+    "PD-HV-AW-20260923-01"
+  ],
+  "volatile_rule": "Do not hard-code current repo SHAs, procedural status, deadlines or office-holders into durable memory; revalidate live."
+}

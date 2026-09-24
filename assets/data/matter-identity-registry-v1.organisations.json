@@ -19,7 +19,10 @@
         "Aweswelll",
         "AWESWELLL"
       ],
-      "identity_control": "This record has one current legal name and no current-name aliases. Forbidden variants are transcription/template errors. OSWELL 426 S.L. is a distinct Spanish entity."
+      "identity_control": "This record has one current legal name and no current-name aliases. Forbidden variants are transcription/template errors. OSWELL 426 S.L. is a distinct Spanish entity.",
+      "related_structure_ids": [
+        "PD-SP-S-0012"
+      ]
     },
     {
       "id": "PD-SP-O-0002",
@@ -1015,6 +1018,76 @@
         "en": "/en/cuatrecasas-sun-park/#cuatrecasas-rauda-revision-20260905"
       },
       "capacity_boundary": "Source-literal professional recovery label from 2022 correspondence. Exact legal entity and legal-form history remain unverified. No original advisory mandate, ownership of the debt, purchaser identity, confidentiality misuse, group-wide knowledge or liability is inferred."
+    },
+    {
+      "id": "PD-SP-O-0103",
+      "type": "ORGANISATION",
+      "name": "Hava Vida Travel & Tourism, S.L.U.",
+      "aliases": [
+        "Hava Vida Travel & Tourism, S.L.",
+        "HAVA VIDA TRAVEL & TOURISM SL",
+        "HAVAVIDA T&T, S.L.",
+        "HAVAVIDA"
+      ],
+      "legacy": [
+        "E051"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "BORME-A-2012-27-38, entry 64020 — incorporation, unipersonality, Patricia Isabel Domínguez Montelongo as sole shareholder and sole administrator, sheet TF 49735",
+        "BORME-A-2012-110-38, entry 248217 — registered-address change, same sheet TF 49735",
+        "UK Companies House officer record for company 10762489 identifies HAVA VIDA TRAVEL AND TOURISM SL, Spain registration B76564434"
+      ],
+      "identity_boundary": "Identity and dated corporate facts only. The 2012 BORME proves Patricia's sole-shareholder/sole-administrator status at incorporation, not necessarily current 2026 status. Historical project-perimeter treatment does not itself prove legal group ownership. Gil Marer's 23-Sep-2026 trust/beneficial-ownership position is attributed and remains open to documentary and legal proof.",
+      "related_people": [
+        "PD-SP-P-0002"
+      ],
+      "related_organisations": [
+        "PD-SP-O-0001"
+      ],
+      "relationship_edges": [
+        {
+          "to": "PD-SP-P-0002",
+          "type": "SOLE_SHAREHOLDER_AT_INCORPORATION",
+          "date": "2012-01-26",
+          "status": "OFFICIAL_BORME_FACT"
+        },
+        {
+          "to": "PD-SP-P-0002",
+          "type": "SOLE_ADMINISTRATOR_AT_INCORPORATION",
+          "date": "2012-01-26",
+          "status": "OFFICIAL_BORME_FACT"
+        },
+        {
+          "to": "PD-SP-O-0001",
+          "type": "ATTRIBUTED_BENEFICIAL_INTEREST_TRUST_POSITION",
+          "date": "2026-09-23",
+          "status": "GIL_MARER_ATTRIBUTED_OPEN_PROOF"
+        }
+      ],
+      "source_mentions": [
+        {
+          "source_key": "BORME-A-2012-27-38-64020",
+          "source_literal": "HAVA VIDA TRAVEL & TOURISM SL",
+          "role": "Company incorporated; Patricia Isabel Domínguez Montelongo sole shareholder and sole administrator",
+          "assertion_status": "OFFICIAL_REGISTRY_FACT_AT_INCORPORATION"
+        },
+        {
+          "source_key": "AN-QUERELLA-2023-09-21",
+          "source_literal": "Hava Vida Travel & Tourism SL",
+          "role": "Named in party pleading as part of a project negotiated by LPB and Aweswell through Grupo Sun Rock",
+          "assertion_status": "PARTY_PLEADING_NOT_JUDICIAL_FINDING"
+        },
+        {
+          "source_key": "GM-ATTR-2026-09-23-HV-AW",
+          "source_literal": "Hava Vida Travel & Tourism, S.L.U.",
+          "role": "Gil Marer's attributed beneficial-ownership/trust position in favour of AWESWELL LIMITED",
+          "assertion_status": "OWNER_ATTRIBUTED_POSITION_OPEN_PROOF"
+        }
+      ],
+      "related_structure_ids": [
+        "PD-SP-S-0012"
+      ]
     }
   ]
 }

@@ -18,6 +18,19 @@
       "aliases": [
         "Patricia",
         "Patricia Dominguez"
+      ],
+      "source_mentions": [
+        {
+          "source_key": "BORME-A-2012-27-38-64020",
+          "source_literal": "DOMINGUEZ MONTELONGO PATRICIA ISABEL",
+          "role": "Sole shareholder and sole administrator of Hava Vida Travel & Tourism SL at incorporation on 26-Jan-2012",
+          "assertion_status": "OFFICIAL_REGISTRY_FACT_AT_INCORPORATION"
+        }
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "related_organisation_ids": [
+        "PD-SP-O-0103",
+        "PD-SP-O-0001"
       ]
     },
     {
@@ -1011,305 +1024,533 @@
       "id": "PD-SP-P-0114",
       "type": "PERSON",
       "name": "Tomás Fernández de Páiz",
-      "aliases": ["Tomas Fernandez de Paiz"],
-      "routes": {"es": "/es/registro-identidad-profesionales-justicia/#fiscalia", "en": "/en/justice-professionals-identity-register/#prosecution"},
+      "aliases": [
+        "Tomas Fernandez de Paiz"
+      ],
+      "routes": {
+        "es": "/es/registro-identidad-profesionales-justicia/#fiscalia",
+        "en": "/en/justice-professionals-identity-register/#prosecution"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Signed Ministerio Fiscal complaint in DI 273/2013 dated 27 December 2013", "archive/HANDOVER_MF_FISCALIA_FIRST_FRAME_JUSTICE_MAP_15AUG2026.md"],
+      "identity_sources": [
+        "Signed Ministerio Fiscal complaint in DI 273/2013 dated 27 December 2013",
+        "archive/HANDOVER_MF_FISCALIA_FIRST_FRAME_JUSTICE_MAP_15AUG2026.md"
+      ],
       "capacity_boundary": "Identity and signature of the 27-December-2013 DI 273/2013 complaint only. It does not establish motive, complete knowledge, participation in later proceedings, wrongdoing or liability."
     },
     {
       "id": "PD-SP-P-0115",
       "type": "PERSON",
       "name": "María Yolanda López Gómez",
-      "aliases": ["M.ª Yolanda López Gómez", "Maria Yolanda Lopez Gomez"],
-      "routes": {"es": "/es/registro-identidad-profesionales-justicia/#fiscalia", "en": "/en/justice-professionals-identity-register/#prosecution"},
+      "aliases": [
+        "M.ª Yolanda López Gómez",
+        "Maria Yolanda Lopez Gomez"
+      ],
+      "routes": {
+        "es": "/es/registro-identidad-profesionales-justicia/#fiscalia",
+        "en": "/en/justice-professionals-identity-register/#prosecution"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["BOE-A-2025-22347, appointment as Fiscal Jefa de Área de Arrecife-Puerto del Rosario", "Official Ministerio Fiscal Las Palmas office directory, reviewed 31 August 2026"],
+      "identity_sources": [
+        "BOE-A-2025-22347, appointment as Fiscal Jefa de Área de Arrecife-Puerto del Rosario",
+        "Official Ministerio Fiscal Las Palmas office directory, reviewed 31 August 2026"
+      ],
       "capacity_boundary": "Identity and current public office only. Office leadership does not establish personal receipt, review, direction, knowledge or responsibility for every Arrecife or Puerto del Rosario matter."
     },
     {
       "id": "PD-SP-P-0116",
       "type": "PERSON",
       "name": "Teresa Peramato Martín",
-      "aliases": ["Teresa Peramato Martin"],
-      "routes": {"es": "/es/registro-identidad-profesionales-justicia/#fiscalia", "en": "/en/justice-professionals-identity-register/#prosecution"},
+      "aliases": [
+        "Teresa Peramato Martin"
+      ],
+      "routes": {
+        "es": "/es/registro-identidad-profesionales-justicia/#fiscalia",
+        "en": "/en/justice-professionals-identity-register/#prosecution"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["BOE-A-2025-25144, appointment as Fiscal General del Estado"],
+      "identity_sources": [
+        "BOE-A-2025-25144, appointment as Fiscal General del Estado"
+      ],
       "capacity_boundary": "Identity and current public office only. Office does not establish personal review, direction, knowledge or responsibility for every prosecutorial or inspection file."
     },
     {
       "id": "PD-SP-P-0117",
       "type": "PERSON",
       "name": "Alejandro Luzón Cánovas",
-      "aliases": ["Alejandro Luzon Canovas"],
-      "routes": {"es": "/es/registro-identidad-profesionales-justicia/#fiscalia", "en": "/en/justice-professionals-identity-register/#prosecution"},
+      "aliases": [
+        "Alejandro Luzon Canovas"
+      ],
+      "routes": {
+        "es": "/es/registro-identidad-profesionales-justicia/#fiscalia",
+        "en": "/en/justice-professionals-identity-register/#prosecution"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Official Ministerio Fiscal Anticorruption office directory and curriculum, reviewed 31 August 2026"],
+      "identity_sources": [
+        "Official Ministerio Fiscal Anticorruption office directory and curriculum, reviewed 31 August 2026"
+      ],
       "capacity_boundary": "Identity and current public office as Fiscal de Sala Jefe of the Anti-Corruption Prosecution Office only. Office does not establish personal handling, knowledge or a merits view in the listed proceedings."
     },
     {
       "id": "PD-SP-P-0118",
       "type": "PERSON",
       "name": "Jesús Alonso Cristóbal",
-      "aliases": ["Jesus Alonso Cristobal"],
-      "routes": {"es": "/es/registro-identidad-profesionales-justicia/#fiscalia", "en": "/en/justice-professionals-identity-register/#prosecution"},
+      "aliases": [
+        "Jesus Alonso Cristobal"
+      ],
+      "routes": {
+        "es": "/es/registro-identidad-profesionales-justicia/#fiscalia",
+        "en": "/en/justice-professionals-identity-register/#prosecution"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["BOE-A-2022-7329, appointment as Fiscal Jefe de la Fiscalía de la Audiencia Nacional", "Official Ministerio Fiscal office directory, reviewed 31 August 2026"],
+      "identity_sources": [
+        "BOE-A-2022-7329, appointment as Fiscal Jefe de la Fiscalía de la Audiencia Nacional",
+        "Official Ministerio Fiscal office directory, reviewed 31 August 2026"
+      ],
       "capacity_boundary": "Identity and current public office only. Office does not establish personal handling, knowledge or a merits view in the listed proceedings."
     },
     {
       "id": "PD-SP-P-0119",
       "type": "PERSON",
       "name": "Luis Francisco Galván Mesa",
-      "aliases": ["Luis Francisco Galvan Mesa"],
-      "routes": {"es": "/es/dp-1901-2026/", "en": "/en/dp-1901-2026/"},
+      "aliases": [
+        "Luis Francisco Galvan Mesa"
+      ],
+      "routes": {
+        "es": "/es/dp-1901-2026/",
+        "en": "/en/dp-1901-2026/"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Signed DP 1901/2026 providencia dated 12 July 2026, NIG 3501643220260016977", "archive/judicial-intelligence/decisions.jsonl"],
+      "identity_sources": [
+        "Signed DP 1901/2026 providencia dated 12 July 2026, NIG 3501643220260016977",
+        "archive/judicial-intelligence/decisions.jsonl"
+      ],
       "capacity_boundary": "Identity and signature of the 12-July-2026 DP 1901/2026 providencia only. The transfer for a prosecution admission report does not establish final admission, proven facts, guilt or responsibility."
     },
     {
       "id": "PD-SP-P-0120",
       "type": "PERSON",
       "name": "Águeda Reyes Almeida",
-      "aliases": ["Agueda Reyes Almeida"],
-      "routes": {"es": "/es/dp-1901-2026/#laj", "en": "/en/justice-professionals-identity-register/#laj"},
+      "aliases": [
+        "Agueda Reyes Almeida"
+      ],
+      "routes": {
+        "es": "/es/dp-1901-2026/#laj",
+        "en": "/en/justice-professionals-identity-register/#laj"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Multiple signed LAJ acts in Concurso 36/2012, including 15 June 2018, 31 March 2023 and 2024-2026 acts", "archive/CONCURSO_36_2012_JUDICIAL_LAJ_ACTS_MASTER_REGISTER_17AUG2026.md"],
+      "identity_sources": [
+        "Multiple signed LAJ acts in Concurso 36/2012, including 15 June 2018, 31 March 2023 and 2024-2026 acts",
+        "archive/CONCURSO_36_2012_JUDICIAL_LAJ_ACTS_MASTER_REGISTER_17AUG2026.md"
+      ],
       "capacity_boundary": "Identity and the individually signed LAJ acts only. A procedural act does not establish knowledge of later external use, agreement with another actor, improper purpose, wrongdoing or liability."
     },
     {
       "id": "PD-SP-P-0121",
       "type": "PERSON",
       "name": "Eduardo José Rebollo Sanz",
-      "aliases": ["Eduardo Jose Rebollo Sanz"],
-      "routes": {"es": "/es/dp-1901-2026/#laj", "en": "/en/justice-professionals-identity-register/#laj"},
+      "aliases": [
+        "Eduardo Jose Rebollo Sanz"
+      ],
+      "routes": {
+        "es": "/es/dp-1901-2026/#laj",
+        "en": "/en/justice-professionals-identity-register/#laj"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Authentic electronic copy of the 26 June 2018 suspension order, signed by the LAJ on 27 June 2018", "archive/THREAD_DELETION_CONTINUITY_AUDIT_CONCURSO36_BATCH_A_PASS2_17AUG2026.md"],
+      "identity_sources": [
+        "Authentic electronic copy of the 26 June 2018 suspension order, signed by the LAJ on 27 June 2018",
+        "archive/THREAD_DELETION_CONTINUITY_AUDIT_CONCURSO36_BATCH_A_PASS2_17AUG2026.md"
+      ],
       "capacity_boundary": "Identity and the electronic signature associated with the 26-June-2018 order only. It does not establish later certification, delivery, external use, knowledge or responsibility."
     },
     {
       "id": "PD-SP-P-0122",
       "type": "PERSON",
       "name": "María Teresa Oliver Guerra",
-      "aliases": ["Maria Teresa Oliver Guerra"],
-      "routes": {"es": "/es/dp-1901-2026/#laj", "en": "/en/justice-professionals-identity-register/#laj"},
+      "aliases": [
+        "Maria Teresa Oliver Guerra"
+      ],
+      "routes": {
+        "es": "/es/dp-1901-2026/#laj",
+        "en": "/en/justice-professionals-identity-register/#laj"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Signed LAJ acts dated 11 March 2019 and 25 October 2021 in Concurso 36/2012", "es/dp-1901-2026/index.html"],
+      "identity_sources": [
+        "Signed LAJ acts dated 11 March 2019 and 25 October 2021 in Concurso 36/2012",
+        "es/dp-1901-2026/index.html"
+      ],
       "capacity_boundary": "Identity and the individually signed LAJ acts only. Issuing or routing testimony does not establish knowledge of later use, improper purpose, coordination, wrongdoing or liability."
     },
     {
       "id": "PD-SP-P-0123",
       "type": "PERSON",
       "name": "Carlos Víctor Rubio Faure",
-      "aliases": ["Carlos Victor Rubio Faure"],
-      "routes": {"es": "/es/tsj-canarias-exp-gub-38-2026/", "en": "/en/tsj-canarias-exp-gub-38-2026/"},
+      "aliases": [
+        "Carlos Victor Rubio Faure"
+      ],
+      "routes": {
+        "es": "/es/tsj-canarias-exp-gub-38-2026/",
+        "en": "/en/tsj-canarias-exp-gub-38-2026/"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["BOE-A-2024-4431", "Signed Exp. Gub. 38/2026 decision and notice dated 20 August 2026", "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md"],
+      "identity_sources": [
+        "BOE-A-2024-4431",
+        "Signed Exp. Gub. 38/2026 decision and notice dated 20 August 2026",
+        "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md"
+      ],
       "capacity_boundary": "Identity, official appointment and the signed/sent Exp. Gub. 38/2026 acts only. They do not transfer knowledge of the entire insolvency file or establish a merits determination."
     },
     {
       "id": "PD-SP-P-0124",
       "type": "PERSON",
       "name": "Juan Avello Formoso",
-      "routes": {"es": "/es/registro-identidad-profesionales-justicia/#judicatura", "en": "/en/justice-professionals-identity-register/#judiciary"},
+      "routes": {
+        "es": "/es/registro-identidad-profesionales-justicia/#judicatura",
+        "en": "/en/justice-professionals-identity-register/#judiciary"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Signed 20 January and 19 December 2017 judicial orders in Concurso 36/2012", "archive/ALBERTO_LOPEZ_VILLARRUBIA_SIGNED_ACTS_AND_KNOWLEDGE_REGISTER_17AUG2026.md"],
+      "identity_sources": [
+        "Signed 20 January and 19 December 2017 judicial orders in Concurso 36/2012",
+        "archive/ALBERTO_LOPEZ_VILLARRUBIA_SIGNED_ACTS_AND_KNOWLEDGE_REGISTER_17AUG2026.md"
+      ],
       "capacity_boundary": "Identity and signature of the identified 2017 judicial acts only. Those acts must not be attributed to Alberto López Villarrubia and do not establish responsibility for later decisions."
     },
     {
       "id": "PD-SP-P-0125",
       "type": "PERSON",
       "name": "Román García-Varela Iglesias",
-      "aliases": ["Roman Garcia-Varela Iglesias"],
-      "routes": {"es": "/es/concurso-36-2012-autos-resoluciones/#F02", "en": "/en/insolvency-36-2012-orders-decisions/#F02"},
+      "aliases": [
+        "Roman Garcia-Varela Iglesias"
+      ],
+      "routes": {
+        "es": "/es/concurso-36-2012-autos-resoluciones/#F02",
+        "en": "/en/insolvency-36-2012-orders-decisions/#F02"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Signed LAJ act reproduced in the controlled Insolvency 36/2012 decisions corpus"],
+      "identity_sources": [
+        "Signed LAJ act reproduced in the controlled Insolvency 36/2012 decisions corpus"
+      ],
       "capacity_boundary": "Identity and signature of the reproduced Mercantile Court No. 2 LAJ act only. It does not establish involvement in other acts, knowledge, intention or liability."
     },
     {
       "id": "PD-SP-P-0126",
       "type": "PERSON",
       "name": "María Victoria Henríquez Santana",
-      "aliases": ["Maria Victoria Henriquez Santana"],
-      "routes": {"es": "/es/concurso-36-2012-autos-resoluciones/#R12", "en": "/en/insolvency-36-2012-orders-decisions/#R12"},
+      "aliases": [
+        "Maria Victoria Henriquez Santana"
+      ],
+      "routes": {
+        "es": "/es/concurso-36-2012-autos-resoluciones/#R12",
+        "en": "/en/insolvency-36-2012-orders-decisions/#R12"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Signed 28 January 2026 order forming RPL 3319/2025, reproduced in the controlled decisions corpus"],
+      "identity_sources": [
+        "Signed 28 January 2026 order forming RPL 3319/2025, reproduced in the controlled decisions corpus"
+      ],
       "capacity_boundary": "Identity and signature of the 28-January-2026 procedural act only. The listed panel roster is not proof of the later deciding formation or merits."
     },
     {
       "id": "PD-SP-P-0127",
       "type": "PERSON",
       "name": "Francisco Javier Labella Ribes",
-      "routes": {"es": "/es/concurso-36-2012-autos-resoluciones/#R16", "en": "/en/insolvency-36-2012-orders-decisions/#R16"},
+      "routes": {
+        "es": "/es/concurso-36-2012-autos-resoluciones/#R16",
+        "en": "/en/insolvency-36-2012-orders-decisions/#R16"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Signed LAJ acts in RPL 3304/2025 and RPL 421/2026, reproduced in the controlled decisions corpus"],
+      "identity_sources": [
+        "Signed LAJ acts in RPL 3304/2025 and RPL 421/2026, reproduced in the controlled decisions corpus"
+      ],
       "capacity_boundary": "Identity and the individually signed procedural acts only. They do not establish the merits, later panel formation, knowledge, intention or liability."
     },
     {
       "id": "PD-SP-P-0128",
       "type": "PERSON",
       "name": "Amelia Villarreal Sancho",
-      "routes": {"es": "/es/concurso-36-2012-autos-resoluciones/#R21", "en": "/en/insolvency-36-2012-orders-decisions/#R21"},
+      "routes": {
+        "es": "/es/concurso-36-2012-autos-resoluciones/#R21",
+        "en": "/en/insolvency-36-2012-orders-decisions/#R21"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Signed LAJ acts in RPL 3319/2025 and related appeal processing, reproduced in the controlled decisions corpus"],
+      "identity_sources": [
+        "Signed LAJ acts in RPL 3319/2025 and related appeal processing, reproduced in the controlled decisions corpus"
+      ],
       "capacity_boundary": "Identity and the individually signed procedural acts only. They do not establish the merits, later panel formation, knowledge, intention or liability."
     },
     {
       "id": "PD-SP-P-0129",
       "type": "PERSON",
       "name": "Jesús Ángel Suárez Ramos",
-      "aliases": ["Jesus Angel Suarez Ramos"],
-      "routes": {"es": "/es/concurso-36-2012-autos-resoluciones/#R26", "en": "/en/insolvency-36-2012-orders-decisions/#R26"},
+      "aliases": [
+        "Jesus Angel Suarez Ramos"
+      ],
+      "routes": {
+        "es": "/es/concurso-36-2012-autos-resoluciones/#R26",
+        "en": "/en/insolvency-36-2012-orders-decisions/#R26"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Signed appellate decisions and panel records reproduced in the controlled court corpus"],
+      "identity_sources": [
+        "Signed appellate decisions and panel records reproduced in the controlled court corpus"
+      ],
       "capacity_boundary": "Identity and the dated panel or signed acts in the controlled sources only. A roster does not establish the final formation in another proceeding."
     },
     {
       "id": "PD-SP-P-0130",
       "type": "PERSON",
       "name": "María Elena Corral Losada",
-      "aliases": ["Maria Elena Corral Losada"],
-      "routes": {"es": "/es/concurso-36-2012-autos-resoluciones/#R26", "en": "/en/insolvency-36-2012-orders-decisions/#R26"},
+      "aliases": [
+        "Maria Elena Corral Losada"
+      ],
+      "routes": {
+        "es": "/es/concurso-36-2012-autos-resoluciones/#R26",
+        "en": "/en/insolvency-36-2012-orders-decisions/#R26"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Official appellate panel records reproduced in the controlled court corpus"],
+      "identity_sources": [
+        "Official appellate panel records reproduced in the controlled court corpus"
+      ],
       "capacity_boundary": "Identity and the dated panel records in the controlled sources only. A roster does not establish the final formation, vote or merits in another proceeding."
     },
     {
       "id": "PD-SP-P-0131",
       "type": "PERSON",
       "name": "Tomás González Marcos",
-      "aliases": ["Tomas Gonzalez Marcos"],
-      "routes": {"es": "/es/concurso-36-2012-autos-resoluciones/#R30", "en": "/en/insolvency-36-2012-orders-decisions/#R30"},
+      "aliases": [
+        "Tomas Gonzalez Marcos"
+      ],
+      "routes": {
+        "es": "/es/concurso-36-2012-autos-resoluciones/#R30",
+        "en": "/en/insolvency-36-2012-orders-decisions/#R30"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Auto 223/2026 in the controlled Insolvency 36/2012 appeals corpus"],
+      "identity_sources": [
+        "Auto 223/2026 in the controlled Insolvency 36/2012 appeals corpus"
+      ],
       "capacity_boundary": "Identity and reporting-judge capacity for Auto 223/2026 only. It does not establish the merits or panel formation in RPL 2523/2025."
     },
     {
       "id": "PD-SP-P-0132",
       "type": "PERSON",
       "name": "Cosme Antonio López Rodríguez",
-      "aliases": ["Cosme Antonio Lopez Rodriguez"],
-      "routes": {"es": "/es/concurso-36-2012-autos-resoluciones/#R12", "en": "/en/insolvency-36-2012-orders-decisions/#R12"},
+      "aliases": [
+        "Cosme Antonio Lopez Rodriguez"
+      ],
+      "routes": {
+        "es": "/es/concurso-36-2012-autos-resoluciones/#R12",
+        "en": "/en/insolvency-36-2012-orders-decisions/#R12"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Official appellate panel records reproduced in the controlled court corpus"],
+      "identity_sources": [
+        "Official appellate panel records reproduced in the controlled court corpus"
+      ],
       "capacity_boundary": "Identity and the dated panel records in the controlled sources only. A roster does not establish the final formation, vote or merits in another proceeding."
     },
     {
       "id": "PD-SP-P-0133",
       "type": "PERSON",
       "name": "Guzmán Eliseo Savirón Díez",
-      "aliases": ["Guzman Eliseo Saviron Diez"],
-      "routes": {"es": "/es/concurso-36-2012-autos-resoluciones/#R16", "en": "/en/insolvency-36-2012-orders-decisions/#R16"},
+      "aliases": [
+        "Guzman Eliseo Saviron Diez"
+      ],
+      "routes": {
+        "es": "/es/concurso-36-2012-autos-resoluciones/#R16",
+        "en": "/en/insolvency-36-2012-orders-decisions/#R16"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Official appellate panel records and Auto 223/2026 reproduced in the controlled court corpus"],
+      "identity_sources": [
+        "Official appellate panel records and Auto 223/2026 reproduced in the controlled court corpus"
+      ],
       "capacity_boundary": "Identity and the dated panel or signed acts in the controlled sources only. A roster does not establish the final formation, vote or merits in another proceeding."
     },
     {
       "id": "PD-SP-P-0134",
       "type": "PERSON",
       "name": "María del Carmen Izquierdo Moreno",
-      "aliases": ["Maria del Carmen Izquierdo Moreno"],
-      "routes": {"es": "/es/concurso-36-2012-autos-resoluciones/#R26", "en": "/en/insolvency-36-2012-orders-decisions/#R26"},
+      "aliases": [
+        "Maria del Carmen Izquierdo Moreno"
+      ],
+      "routes": {
+        "es": "/es/concurso-36-2012-autos-resoluciones/#R26",
+        "en": "/en/insolvency-36-2012-orders-decisions/#R26"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Official appellate panel roster reproduced in the 9 June 2026 providencia"],
+      "identity_sources": [
+        "Official appellate panel roster reproduced in the 9 June 2026 providencia"
+      ],
       "capacity_boundary": "Identity and appearance in the dated panel roster only. The roster does not establish the final deciding formation, vote or merits."
     },
     {
       "id": "PD-SP-P-0135",
       "type": "PERSON",
       "name": "Juan José Cobo Plana",
-      "aliases": ["Juan Jose Cobo Plana"],
-      "routes": {"es": "/es/registro-identidad-profesionales-justicia/#judicatura", "en": "/en/justice-professionals-identity-register/#judiciary"},
+      "aliases": [
+        "Juan Jose Cobo Plana"
+      ],
+      "routes": {
+        "es": "/es/registro-identidad-profesionales-justicia/#judicatura",
+        "en": "/en/justice-professionals-identity-register/#judiciary"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Signed AP Las Palmas Auto 78/2019, Rollo 1094/2018", "archive/concurso36-primary-autos-21aug2026/FORENSIC_SCAN_CRITICAL_AUTOS_CONCURSO_36_2012_21AUG2026.md"],
+      "identity_sources": [
+        "Signed AP Las Palmas Auto 78/2019, Rollo 1094/2018",
+        "archive/concurso36-primary-autos-21aug2026/FORENSIC_SCAN_CRITICAL_AUTOS_CONCURSO_36_2012_21AUG2026.md"
+      ],
       "capacity_boundary": "Identity and president capacity for AP Auto 78/2019 only. It does not establish participation in later appeals or responsibility beyond that act."
     },
     {
       "id": "PD-SP-P-0136",
       "type": "PERSON",
       "name": "Margarita Hidalgo Bilbao",
-      "routes": {"es": "/es/registro-identidad-profesionales-justicia/#judicatura", "en": "/en/justice-professionals-identity-register/#judiciary"},
+      "routes": {
+        "es": "/es/registro-identidad-profesionales-justicia/#judicatura",
+        "en": "/en/justice-professionals-identity-register/#judiciary"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Signed AP Las Palmas Auto 78/2019, Rollo 1094/2018", "archive/concurso36-primary-autos-21aug2026/FORENSIC_SCAN_CRITICAL_AUTOS_CONCURSO_36_2012_21AUG2026.md"],
+      "identity_sources": [
+        "Signed AP Las Palmas Auto 78/2019, Rollo 1094/2018",
+        "archive/concurso36-primary-autos-21aug2026/FORENSIC_SCAN_CRITICAL_AUTOS_CONCURSO_36_2012_21AUG2026.md"
+      ],
       "capacity_boundary": "Identity and panel capacity for AP Auto 78/2019 only. It does not establish participation in later appeals or responsibility beyond that act."
     },
     {
       "id": "PD-SP-P-0137",
       "type": "PERSON",
       "name": "Javier Jiménez Cerrajería",
-      "aliases": ["Javier Jimenez Cerrajeria"],
-      "routes": {"es": "/es/registro-identidad-profesionales-justicia/#notariado-registro", "en": "/en/justice-professionals-identity-register/#notaries-registry"},
+      "aliases": [
+        "Javier Jimenez Cerrajeria"
+      ],
+      "routes": {
+        "es": "/es/registro-identidad-profesionales-justicia/#notariado-registro",
+        "en": "/en/justice-professionals-identity-register/#notaries-registry"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Primary 10 April 2014 notarial Community act", "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md"],
+      "identity_sources": [
+        "Primary 10 April 2014 notarial Community act",
+        "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md"
+      ],
       "capacity_boundary": "Identity and authorisation of the identified dated notarial instruments only. Notarial authorisation does not establish the truth of every party statement, later use, knowledge, wrongdoing or liability."
     },
     {
       "id": "PD-SP-P-0138",
       "type": "PERSON",
       "name": "Carmen Martínez Socias",
-      "aliases": ["Carmen Martinez Socias"],
-      "routes": {"es": "/es/registro-identidad-profesionales-justicia/#notariado-registro", "en": "/en/justice-professionals-identity-register/#notaries-registry"},
+      "aliases": [
+        "Carmen Martinez Socias"
+      ],
+      "routes": {
+        "es": "/es/registro-identidad-profesionales-justicia/#notariado-registro",
+        "en": "/en/justice-professionals-identity-register/#notaries-registry"
+      },
       "identity_resolution": "CARET_PENDING",
-      "identity_sources": ["Source-literal reference to the 23 May 2008 LPB incorporation deed; primary deed not linked", "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md"],
+      "identity_sources": [
+        "Source-literal reference to the 23 May 2008 LPB incorporation deed; primary deed not linked",
+        "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md"
+      ],
       "capacity_boundary": "Pending identity reconciliation. Preserve the source literal without a caret until the primary deed or an official notarial record confirms exact identity, capacity, date and protocol."
     },
     {
       "id": "PD-SP-P-0139",
       "type": "PERSON",
       "name": "Nicolás Quintana Plasencia",
-      "aliases": ["Nicolas Quintana Plasencia"],
-      "routes": {"es": "/es/registro-identidad-profesionales-justicia/#notariado-registro", "en": "/en/justice-professionals-identity-register/#notaries-registry"},
+      "aliases": [
+        "Nicolas Quintana Plasencia"
+      ],
+      "routes": {
+        "es": "/es/registro-identidad-profesionales-justicia/#notariado-registro",
+        "en": "/en/justice-professionals-identity-register/#notaries-registry"
+      },
       "identity_resolution": "CARET_PENDING",
-      "identity_sources": ["Source-literal reference to a 3 January 2012 deed; primary deed not linked", "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md"],
+      "identity_sources": [
+        "Source-literal reference to a 3 January 2012 deed; primary deed not linked",
+        "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md"
+      ],
       "capacity_boundary": "Pending identity reconciliation. Preserve the source literal without a caret until the primary deed or an official notarial record confirms exact identity, capacity, date and protocol."
     },
     {
       "id": "PD-SP-P-0140",
       "type": "PERSON",
       "name": "Alfonso Cavallé Cruz",
-      "aliases": ["Alfonso Cavalle Cruz"],
-      "routes": {"es": "/es/registro-identidad-profesionales-justicia/#notariado-registro", "en": "/en/justice-professionals-identity-register/#notaries-registry"},
+      "aliases": [
+        "Alfonso Cavalle Cruz"
+      ],
+      "routes": {
+        "es": "/es/registro-identidad-profesionales-justicia/#notariado-registro",
+        "en": "/en/justice-professionals-identity-register/#notaries-registry"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Signed 19 April 2017 LPB proposal with signature notarisation", "archive/JUDICIAL_KNOWLEDGE_RESCUE_EXIT_CONCURSO36_16AUG2026.md"],
+      "identity_sources": [
+        "Signed 19 April 2017 LPB proposal with signature notarisation",
+        "archive/JUDICIAL_KNOWLEDGE_RESCUE_EXIT_CONCURSO36_16AUG2026.md"
+      ],
       "capacity_boundary": "Identity and notarisation of the signature on the identified 19-April-2017 instrument only. It does not establish filing, approval, performance, knowledge of later events, wrongdoing or liability."
     },
     {
       "id": "PD-SP-P-0141",
       "type": "PERSON",
       "name": "Ana Fernández-Tresguerres García",
-      "aliases": ["Ana Fernandez-Tresguerres Garcia"],
-      "routes": {"es": "/es/registro-identidad-profesionales-justicia/#notariado-registro", "en": "/en/justice-professionals-identity-register/#notaries-registry"},
+      "aliases": [
+        "Ana Fernandez-Tresguerres Garcia"
+      ],
+      "routes": {
+        "es": "/es/registro-identidad-profesionales-justicia/#notariado-registro",
+        "en": "/en/justice-professionals-identity-register/#notaries-registry"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Signed court order identifying the Promontoria-to-CAM deed dated 20 October 2017, protocol 2,248", "archive/THREAD_DELETION_CONTINUITY_AUDIT_GAP_CLOSURE_SCAN_17AUG2026.md"],
+      "identity_sources": [
+        "Signed court order identifying the Promontoria-to-CAM deed dated 20 October 2017, protocol 2,248",
+        "archive/THREAD_DELETION_CONTINUITY_AUDIT_GAP_CLOSURE_SCAN_17AUG2026.md"
+      ],
       "capacity_boundary": "Identity and the court-recorded notarial instrument reference only. The complete deed economics, payment, later use, knowledge, wrongdoing and liability remain separate."
     },
     {
       "id": "PD-SP-P-0142",
       "type": "PERSON",
       "name": "Manuel Guzmán Ramos",
-      "aliases": ["Manuel Guzman Ramos"],
-      "routes": {"es": "/es/registro-identidad-profesionales-justicia/#notariado-registro", "en": "/en/justice-professionals-identity-register/#notaries-registry"},
+      "aliases": [
+        "Manuel Guzman Ramos"
+      ],
+      "routes": {
+        "es": "/es/registro-identidad-profesionales-justicia/#notariado-registro",
+        "en": "/en/justice-professionals-identity-register/#notaries-registry"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["Controlled notarial instruments: protocols 869 and 870 of 17 May 2018 and protocol 2,150 of 28 November 2018", "archive/concurso36-primary-autos-21aug2026/connected_gap_scan.md"],
+      "identity_sources": [
+        "Controlled notarial instruments: protocols 869 and 870 of 17 May 2018 and protocol 2,150 of 28 November 2018",
+        "archive/concurso36-primary-autos-21aug2026/connected_gap_scan.md"
+      ],
       "capacity_boundary": "Identity and authorisation of the identified dated protocols only. Notarial authorisation does not establish judicial validation, economic performance, later Registry effect, knowledge, wrongdoing or liability."
     },
     {
       "id": "PD-SP-P-0143",
       "type": "PERSON",
       "name": "Pedro Eugenio Botella Torres",
-      "routes": {"es": "/es/registro-identidad-profesionales-justicia/#notariado-registro", "en": "/en/justice-professionals-identity-register/#notaries-registry"},
+      "routes": {
+        "es": "/es/registro-identidad-profesionales-justicia/#notariado-registro",
+        "en": "/en/justice-professionals-identity-register/#notaries-registry"
+      },
       "identity_resolution": "CARET_PENDING",
-      "identity_sources": ["Source-literal reference to protocol 1,377 dated 27 May 2010; primary deed not linked", "archive/knowledge-project/SUN_PARK_CANONICAL_REGISTER_SOURCE_MANIFEST_19AUG2026.md"],
+      "identity_sources": [
+        "Source-literal reference to protocol 1,377 dated 27 May 2010; primary deed not linked",
+        "archive/knowledge-project/SUN_PARK_CANONICAL_REGISTER_SOURCE_MANIFEST_19AUG2026.md"
+      ],
       "capacity_boundary": "Pending identity reconciliation. Preserve the source literal without a caret until the primary deed or an official notarial record confirms exact identity, capacity, date and protocol."
     },
     {
       "id": "PD-SP-P-0144",
       "type": "PERSON",
       "name": "José del Cerro Peñalver",
-      "aliases": ["Jose del Cerro Penalver"],
-      "routes": {"es": "/es/implementacion-notarial-protocolo-457/", "en": "/en/notarial-implementation-protocol-457/"},
+      "aliases": [
+        "Jose del Cerro Penalver"
+      ],
+      "routes": {
+        "es": "/es/implementacion-notarial-protocolo-457/",
+        "en": "/en/notarial-implementation-protocol-457/"
+      },
       "identity_resolution": "CARET_CONFIRMED",
-      "identity_sources": ["21 February 2022 deed, protocol 457, and controlled Registry/court reconstruction", "assets/data/concurso36-court-record-reconstruction-gapclose2-20260829.json"],
+      "identity_sources": [
+        "21 February 2022 deed, protocol 457, and controlled Registry/court reconstruction",
+        "assets/data/concurso36-court-record-reconstruction-gapclose2-20260829.json"
+      ],
       "capacity_boundary": "Identity and authorisation of protocol 457 dated 21-February-2022 only. Notarial authorisation does not establish court filing, judicial validation, full economic performance, Registry correctness, knowledge, wrongdoing or liability."
     },
     {
