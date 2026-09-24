@@ -65,6 +65,18 @@ The 28 May client-side reply is **not a fee-authorisation instrument and must no
 
 Parrilla later stated a final proposed fee of **€50,000 + IGIC**, acknowledged **€32,250** received from third parties associated with Gil/Patricia, and stated a remaining balance of **€17,750 + IGIC**. He described alternatives for communicating the claim to the Administrador Concursal and stated that the Administrador Concursal had told him there was insufficient liquidity to pay €50,000 in full immediately.
 
+The rejection is direct and strong. On 12 June Daniel Jiménez forwarded Parrilla's final proposal stating that he had already said it could not be accepted. Patricia replied for the client side that they agreed, that it was not acceptable, that the discussions were over, and that the next step was the insolvency incident. This is **documentary rejection**, not an inference.
+
+### Unitary / domino anti-fragmentation bridge
+
+The rejection must not be isolated from the earlier transaction and defence record:
+
+- **29–30 May 2018:** the ONA/Stoneweg correspondence records a planned Cuatrecasas meeting to advance the transaction, explain due diligence, discuss the term sheet and coordinate the concurso-facing document Parrilla was expected to present.
+- **7 June 2018:** contemporaneous emails record the asserted CAM/Community taking of possession, urgent legal escalation, photographs/videos, complaints and a request to Parrilla for Mercantile Court action rather than passive acceptance.
+- **12 June 2020:** the client side expressly rejected Parrilla's final fee proposal and moved away from further discussion toward an insolvency incident.
+
+**Evidence-state rule:** the 12-June messages directly prove rejection of Parrilla's final proposal. They do not literally say that every 2018 upstream act was being rejected again, and they do not by themselves prove sabotage, conspiracy or criminal causation. Gil's controlling unitary position is that the 2020 rejection is a downstream act of resistance within the same alleged causal chain: funded exit → 7-June disruption → defence/professional failures or conflicts → AC/JTP payment/intermediation → downstream loss/recovery consequences. That proposition remains attributed and must be tested arrow by arrow. Fragmenting the fee episode away from the exit chronology is prohibited; so is upgrading chronology into causation without a source bridge.
+
 Patricia and Daniel rejected the **€50,000 + IGIC** proposal on 12 June. The AC's **21 July 2021 report** separately lists **€26,750** among mass claims *reported paid* in July 2020 for Parrilla as LPB lawyer. That figure equals €25,000 plus 7% arithmetically; the invoice, tax treatment, recognition authority, matched bank debit/recipient credit and complete ledger have not been independently reconciled. The same report discusses a **€400,000 CAM sale component**, but does not trace it into this fee entry.
 
 ## 5. Adversity, attributed conduit allegation and payment graphic
