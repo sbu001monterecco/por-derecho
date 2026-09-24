@@ -12,6 +12,7 @@
   const fundingUrl = p(isEn ? 'same-hotel-multiple-financial-lives/' : 'mismo-hotel-multiples-vidas-financieras/');
   const ricpeControlsUrl = p(isEn ? 'ricpe-documentary-accountability/' : 'ricpe-responsabilidad-documental/');
   const controlUrl = p(isEn ? 'sun-park-takeover-7-june-2018/' : 'toma-control-sun-park-7-junio-2018/');
+  const jtpPaymentUrl = p(isEn ? 'estate-payment-counsel-independence/' : 'pago-masa-independencia-defensa/');
   const actasUrl = p(isEn ? 'community-instrumentalisation/minutes-2011-2022/' : 'comunidad-instrumentalizacion/actas-2011-2022/');
 
   const ensureMobileMenu = () => {
@@ -92,6 +93,7 @@
         navLink('#perimetros-juridicos', t('Perímetros', 'Perimeters')),
         navLink('#sun-park-no-estaba-abandonado', t('Actividad', 'Activity')),
         navLink('#salida-financiada-ona', 'ONA'),
+        navLink(jtpPaymentUrl, t('JTP · pago', 'JTP · payment')),
         navLink('#hechos-7-junio', t('Hechos', 'Events')),
         navLink('#administrador-y-juez', t('AC y Juez', 'Administrator / Court')),
         navLink('#proyecto-antes-del-titulo', 'RICPE'),
