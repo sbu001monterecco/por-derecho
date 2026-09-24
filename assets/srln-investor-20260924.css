@@ -241,3 +241,33 @@ footer strong{color:#fff}
   .vdr-group li b{justify-self:start}
   .vdr-foot .dual-actions{width:100%}
 }
+
+
+/* VDR maturity and readiness layer — 24 Sep 2026 */
+.vdr-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:-8px 0 22px}
+.vdr-summary>div{background:#0c242b;color:#fff;border-radius:12px;padding:17px 18px;min-height:82px}
+.vdr-summary strong{display:block;font-family:Georgia,serif;font-size:1.28rem;font-weight:500;color:var(--gold2)}
+.vdr-summary span{display:block;margin-top:4px;font-size:.7rem;line-height:1.35;text-transform:uppercase;letter-spacing:.08em;color:#bdcacf}
+.vdr-legend{display:flex;flex-wrap:wrap;gap:8px 16px;margin:0 0 20px;padding:0 2px;color:#5b686e;font-size:.72rem}
+.vdr-legend span{display:inline-flex;align-items:center;gap:6px}
+.vdr-legend .state{width:8px;height:8px;border-radius:50%;display:inline-block}
+.state.private-pack,.vdr-meta em.private-pack{--state-color:#6b5d96}
+.state.working,.vdr-meta em.working{--state-color:#9a7835}
+.state.evidence,.vdr-meta em.evidence{--state-color:#466d83}
+.state.live,.vdr-meta em.live{--state-color:#39705d}
+.state.external,.vdr-meta em.external{--state-color:#8b5a4c}
+.state.closing,.vdr-meta em.closing{--state-color:#6d6771}
+.vdr-legend .state{background:var(--state-color)}
+.vdr-meta{display:flex;align-items:center;justify-content:flex-end;gap:6px;white-space:nowrap}
+.vdr-meta b{font-size:.61rem!important}
+.vdr-meta em{font-style:normal;font-size:.6rem;letter-spacing:.065em;text-transform:uppercase;border:1px solid color-mix(in srgb,var(--state-color) 34%,transparent);color:var(--state-color);background:color-mix(in srgb,var(--state-color) 8%,white);border-radius:999px;padding:4px 7px}
+.vdr-status p{max-width:610px}
+@media (max-width:900px){
+  .vdr-summary{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .vdr-summary{grid-template-columns:1fr 1fr}
+  .vdr-summary>div{min-height:72px}
+  .vdr-group li{grid-template-columns:1fr}
+  .vdr-meta{justify-content:flex-start;flex-wrap:wrap}
+}
