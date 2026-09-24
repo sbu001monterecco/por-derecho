@@ -696,3 +696,6 @@ read and apply **PD-GOV-HUMAN-AI-20260924-01** in
 - Any grant, credits, sponsorship, professional contribution or recoverable support must support
   capacity to test the record, not purchase a conclusion. Preserve:
   **Help the capacity. Do not buy the answer.**
+- Run `python3 scripts/validate_human_ai_narrative.py` for every in-scope narrative change;
+  `Validate human AI narrative` is the deterministic structural guard. It enforces required
+  first-person/adverse-evidence/boundary/link controls but does not adjudicate factual truth.
