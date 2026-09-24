@@ -96,3 +96,17 @@ The project may call the structure **A+ target met** only when all of these are 
 - exact-head validation, merge, deployment and live readback are separately verified.
 
 No simulated score substitutes for an actual prosecutor, court, adverse party or professional body's assessment.
+
+
+## 24-September deep-source supplement
+
+The connected-source sweep in `archive/JTP_ONA_DEEP_SOURCE_SWEEP_24SEP2026.md` and `assets/data/jtp-ona-deep-source-sweep-20260924.json` is now a mandatory companion control.
+
+It materially strengthens four points without changing the unresolved bank boundary:
+
+1. **Contemporaneous criminal lens:** JTP's own 4-Jan-2019 broad draft expressly sought Ministerio Fiscal referral for possible *estafa procesal*, alteration of the liquidation process and *administración desleal*. The exact broad-draft filing remains unproved.
+2. **Funded-exit integration:** May–June 2018 ONA/Stoneweg/Cuatrecasas correspondence places JTP's concurso-facing and appeal work inside the same transaction/protection context. That is coordination, not proof of criminal concert.
+3. **1-Jun-2020 successor-counsel boundary:** successor counsel treated Parrilla as no longer LPB counsel, routed the fee issue through successor counsel, disputed the entitlement theory and raised double-payment risk. This further rebuts any use of the 28-May reply as continuing client authority.
+4. **Negative-search discipline:** the targeted Gmail/Drive sweep still did not locate the underlying €26,750 invoice, executed payment authority, matched estate debit/recipient credit or a bank-complete €400,000→€26,750 trace. This is a dated open-proof result, not proof of non-existence.
+
+Future hostile-reader testing must include these four points. No later editor may use the newly located contemporaneous criminal language to imply that an offence was adjudicated, or use the negative search to imply that the missing records do not exist.
