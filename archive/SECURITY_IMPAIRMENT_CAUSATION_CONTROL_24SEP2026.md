@@ -58,14 +58,15 @@ The route-specific module highlights one part of the same five-stage track rathe
 
 ## Implementation architecture
 
-- Shared loader: `assets/site.js`, advanced only through the exact append-only successor pinned in `ops/recovery-cross-thread/SECURITY_IMPAIRMENT_SITE_LOADER_REVIEWED_SUCCESSOR_20260924.json`.
-- Historical loader provenance remains unchanged; the first 18,055 bytes retain SHA-256 `ac8e67195d5ca02463d5edf5ce2d49fd97f784e077c4dab76ac16a1de28c51a4`.
-- Successor loader SHA-256: `3587d694cd37ca7287a36895d67321db1921d6145c88ec568b805297ae8f51d9`.
+- GitHub public loader: `assets/site.js`, advanced from GitHub's own `main` predecessor through the exact append-only successor pinned in `ops/recovery-cross-thread/SECURITY_IMPAIRMENT_SITE_LOADER_GITHUB_REVIEWED_SUCCESSOR_20260924.json`.
+- GitHub predecessor: 8,185 characters, Git blob `7d48f2f4e860b24c05a9f33647fb94643d7ec380`.
+- GitHub successor: 9,247 characters, Git blob `692ba6638ed7b75b7901857145afa561ce9593d0`.
+- The GitHub loader lineage is intentionally distinct from private GitLab's loader lineage. No GitLab loader body is imported into the public repository.
 - Renderer: `assets/security-impairment-track-20260924.js`.
 - Data: `assets/data/security-impairment-track-v1.json`, currently 26 route applications.
 - Deep-dive routes: `/es/garantia-deterioro-causacion-acreedor/` and `/en/security-impairment-creditor-causation/`.
-- Existing protected case-page bodies are not rewritten to carry this track. The shared reviewed loader invokes the component only for route families covered by the loader gate, while the data file decides whether a component is actually rendered.
-- GitLab-only narrower CEXP / CAM-offer routes and the public GitHub broader Community / active-estate equivalents coexist without inventing nonexistent mirror paths.
+- Existing protected case-page bodies are not rewritten to carry this track. The reviewed loader invokes the component only for relevant route families, while the data file decides whether a component is actually rendered.
+- Private GitLab contains narrower CEXP / CAM-offer routes; public GitHub maps the same issue to real public Community / active-estate equivalents rather than inventing nonexistent mirror paths.
 
 ## Release boundary
 
