@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Administración del Programa Privado de Notas Sun Rock | SRLN-2026</title>
+  <meta name="description" content="Arquitectura pública y prudente del modelo de administración de notas privadas Sun Rock: administración digital del emisor, roles independientes de trustee/agente, registro, pagos, garantías, información, transferencias y amortizaciones. Sin suscripción pública.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <meta name="theme-color" content="#0d2f38">
+  <link rel="canonical" href="https://sbu001monterecco.github.io/por-derecho/es/administracion-programa-notas-privadas/">
+  <link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/administracion-programa-notas-privadas/">
+  <link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/private-note-programme-administration/">
+  <link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/private-note-programme-administration/">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <link rel="stylesheet" href="../../assets/institutional-capital-20260921.css?v=20260921a">
+  <script src="../../assets/site.js" defer></script>
+</head>
+<body class="dossier-page ic-page">
+<a class="skip-link" href="#content">Saltar al contenido</a>
+<header class="site-header"><div class="shell header-inner">
+  <a class="brand" href="../capital-institucional/"><span class="brand-mark" aria-hidden="true">SR</span><span class="brand-copy"><strong>Sun Rock</strong><small>Administración de notas privadas</small></span></a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menú</button>
+  <nav class="main-nav" id="main-nav" aria-label="Navegación principal"><a href="../capital-institucional/">Programa de capital</a><a href="#roles">Roles</a><a href="#ciclo">Ciclo de vida</a><a href="#controles">Controles</a><a href="../montana-roja/">Montaña Roja</a><a class="language-link" href="../../en/private-note-programme-administration/" lang="en" hreflang="en">EN</a></nav>
+</div></header>
+
+<main id="content">
+<section class="ic-hero"><div class="ic-shell ic-hero-grid">
+  <div><p class="ic-kicker">SRLN-2026 · ADMINISTRACIÓN PRIVADA DE NOTAS</p><h1>Infraestructura de administración, no un checkout público.</h1><p class="lead">AWESWELL LIMITED está diseñando el Sun Rock Private Note Programme sobre una capa digital de administración controlada y roles profesionales independientes de agencia. El objetivo es hacer trazables la emisión, titularidad, pagos, garantías, avisos, transferencias y amortizaciones desde el cierre hasta el vencimiento, sin confundir el software con el trustee, registrador, custodio o agente de pagos legal.</p>
+  <div class="ic-actions"><a class="primary" href="#roles">Ver la arquitectura de roles</a><a href="../capital-institucional/">Programa de capital institucional</a></div></div>
+  <aside class="ic-panel"><span>Estado actual del programa</span><h3>PRE-EMISIÓN · cero Notas presentadas como vivas.</h3><p>No existe suscripción pública abierta. No se presenta a ningún trustee, agente de pagos, registrador o agente de garantías como designado hasta que exista un mandato firmado.</p></aside>
+</div></section>
+
+<aside class="ic-status"><div class="ic-shell">
+  <div><span>Emisor</span><strong>AWESWELL LIMITED</strong></div>
+  <div><span>Plataforma</span><strong>Capa administrativa Sun Rock</strong></div>
+  <div><span>Custodia de caja</span><strong>Agente externo / banco</strong></div>
+  <div><span>Garantías</span><strong>Trustee independiente si aplica</strong></div>
+</div></aside>
+
+<section class="ic-section" id="roles"><div class="ic-shell"><div class="ic-head"><div><p class="ic-kicker">Arquitectura de roles</p><h2>Un plano digital de control; funciones formales jurídicamente separadas.</h2></div><p>La plataforma busca facilitar la administración, no colapsar capacidades jurídicas que requieren independencia, permisos o autoridad fiduciaria.</p></div>
+<div class="ic-grid three">
+  <article class="ic-card"><span class="ic-pill">Emisor</span><h3>Administrador del Programa</h3><p>La plataforma de administración puede gestionar condiciones precedentes, referencias, versiones documentales, cálculos sombra, seguimiento de NAV, estado de garantías, subledger contable del emisor, repositorio de avisos e informes reconciliados.</p></article>
+  <article class="ic-card"><span class="ic-pill">Titularidad</span><h3>Registrador / Agente de Transferencias</h3><p>El registro controlador documenta emisión, titularidad, transferencia, cancelación y amortización. La plataforma replica ese registro y señala discrepancias; no sustituye silenciosamente a la fuente jurídicamente controladora.</p></article>
+  <article class="ic-card"><span class="ic-pill">Caja</span><h3>Agente de Emisión y Pagos / Liquidación</h3><p>Suscripciones, cupones y principal deben circular por infraestructura externa formalmente designada de liquidación, escrow, banco y agente de pagos. La web pública no recibe dinero de inversores.</p></article>
+  <article class="ic-card"><span class="ic-pill">Garantías</span><h3>Note Trustee / Security Trustee</h3><p>Cuando se adopte una estructura de trust/garantías, el trustee independiente representa a los titulares y/o mantiene las garantías conforme a la documentación definitiva. La plataforma no adquiere por descripción discreción fiduciaria, facultades de ejecución o custodia.</p></article>
+  <article class="ic-card"><span class="ic-pill">Cálculos</span><h3>Calculation Agent</h3><p>El agente formal calcula cupón, PIK, amortización y otros importes contractuales. La plataforma reproduce un cálculo sombra independiente para control de excepciones y reconciliación.</p></article>
+  <article class="ic-card"><span class="ic-pill">Información</span><h3>Information / Reporting Agent</h3><p>Los avisos formales y las comunicaciones a titulares corresponden a la parte nombrada en la documentación. No se usa «Information Trustee» como etiqueta genérica: la representación fiduciaria corresponde al Note Trustee; la información y reporting al Information Agent.</p></article>
+</div></div></section>
+
+<section class="ic-section alt" id="ciclo"><div class="ic-shell"><div class="ic-head"><div><p class="ic-kicker">Ciclo de vida</p><h2>Cada Nota debe tener una cadena probatoria desde la contraprestación hasta la amortización.</h2></div><p>La capacidad del programa no es deuda. Una Nota sólo pasa a estar en circulación cuando cierra la asignación correspondiente y se actualiza el registro controlador.</p></div>
+<div class="ic-flow">
+  <article class="ic-step"><strong>1 · Elegibilidad y KYC</strong><p>Receptor privado permitido, facultades, KYC/AML y sanciones.</p></article>
+  <article class="ic-step"><strong>2 · Documentación definitiva</strong><p>Memorando de Inversión, términos de Serie y acuerdo de suscripción o liquidación con acreedor.</p></article>
+  <article class="ic-step"><strong>3 · Contraprestación</strong><p>Caja liquidada en la capa externa, o deuda con acreedor válidamente documentada/novada.</p></article>
+  <article class="ic-step"><strong>4 · Certificado de cierre</strong><p>Se certifican las condiciones precedentes; sin certificado no hay emisión.</p></article>
+  <article class="ic-step"><strong>5 · Asiento registral</strong><p>Se incorporan al registro las referencias de titular, asignación y Nota individual.</p></article>
+  <article class="ic-step"><strong>6 · Servicio</strong><p>Cálculos, pagos, avisos, reporting de covenants/NAV y estado de garantías se reconcilian durante la vida del instrumento.</p></article>
+  <article class="ic-step"><strong>7 · Transferencia</strong><p>Sólo cesionarios permitidos, con elegibilidad/KYC y registro exigibles.</p></article>
+  <article class="ic-step"><strong>8 · Amortización</strong><p>Se calcula el importe, se paga, se cancela el registro, se da de baja contablemente y sólo se liberan garantías conforme a los documentos.</p></article>
+</div></div></section>
+
+<section class="ic-section" id="controles"><div class="ic-shell"><div class="ic-head"><div><p class="ic-kicker">Controles de fuente maestra</p><h2>El sistema se diseña alrededor de la reconciliación, no de un único dashboard editable.</h2></div><p>Cada clase material de datos tiene una fuente jurídicamente u operacionalmente controladora; la plataforma actúa como capa administrativa sincronizada.</p></div>
+<div class="ic-grid">
+  <article class="ic-card"><h3>Titularidad</h3><p><strong>Fuente maestra:</strong> Registrador / registro del emisor.<br><strong>Plataforma:</strong> réplica sincronizada de titulares y Notas.</p></article>
+  <article class="ic-card"><h3>Caja</h3><p><strong>Fuente maestra:</strong> Agente de Pagos/Liquidación y banco.<br><strong>Plataforma:</strong> estado y reconciliación de pagos.</p></article>
+  <article class="ic-card"><h3>Garantías</h3><p><strong>Fuente maestra:</strong> documentos del Trustee y evidencia de perfeccionamiento.<br><strong>Plataforma:</strong> registro de estado y alertas.</p></article>
+  <article class="ic-card"><h3>Contabilidad</h3><p><strong>Fuente maestra:</strong> mayor de AWESWELL.<br><strong>Plataforma:</strong> subledger Nota por Nota.</p></article>
+  <article class="ic-card"><h3>NAV de recuperación</h3><p><strong>Fuente maestra:</strong> versión de valoración aprobada.<br><strong>Plataforma:</strong> cobertura y control de supersesión.</p></article>
+  <article class="ic-card"><h3>Historial de auditoría</h3><p>Emisiones, transferencias, pagos, garantías y amortizaciones se preservan por referencia y fecha; las correcciones sustituyen sin borrar el historial.</p></article>
+</div>
+<div class="ic-note"><strong>Regla de cierre en tres vías.</strong> Una asignación no debería mostrarse como emitida/cerrada hasta reconciliar plataforma, registro/agente y banco/contabilidad, salvo excepción permitida formalmente documentada por el Closing Officer.</div>
+</div></section>
+
+<section class="ic-section alt"><div class="ic-shell"><div class="ic-head"><div><p class="ic-kicker">Límite público / privado</p><h2>La web pública explica la arquitectura. La ejecución permanece privada y controlada.</h2></div><p>El Memorando detallado, la valoración forense de recuperación, opiniones jurídicas, mandatos de agencia, registro e información de titulares no son materiales públicos de suscripción.</p></div>
+<div class="ic-grid">
+  <article class="ic-card"><h3>Web pública</h3><p>Puede explicar estructura del Sponsor, diseño administrativo, disciplina de underwriting y que se documenta un programa institucional privado.</p></article>
+  <article class="ic-card"><h3>Proceso privado controlado</h3><p>Clasificación del receptor → confidencialidad/data room → KYC → materiales definitivos → acuerdo bilateral → cierre → asiento registral.</p></article>
+</div>
+<div class="ic-note"><strong>Sin oferta pública.</strong> Esta página no contiene invitación pública de precio, formulario de orden, targeting retail, instrucción de pago, formulario ejecutable de suscripción ni afirmación de garantías, aprobación o Notas en circulación.</div>
+</div></section>
+</main>
+
+<footer class="ic-foot"><div class="ic-shell"><strong>Sun Rock · arquitectura de administración de notas privadas</strong><br>Fecha de control: 24 de septiembre de 2026 · Sólo información · PRE-EMISIÓN · sin suscripción pública ni compromiso de financiación.</div></footer>
+</body>
+</html>
