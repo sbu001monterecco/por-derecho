@@ -112,3 +112,17 @@
   s.defer = true;
   document.head.appendChild(s);
 })();
+
+// PD-SECURITY-IMPAIRMENT-CAUSATION-20260924
+// Reusable public-safe legal/causation track: formal security != unchanged enforceable position.
+(() => {
+  'use strict';
+  const current=document.currentScript;
+  if(!current) return;
+  const path=window.location.pathname;
+  if(!/(7-junio|7-june|salida-financiada|funded-ona|ona-hotels|acreedor|lender-of-record|adjudicacion-2022|2022-adjudication|cexp-(?:cadena|operation)|control-material|material-control|garantia-deterioro|security-impairment)/i.test(path)) return;
+  const url=new URL('security-impairment-track-20260924.js?v=20260924a',current.src);
+  const loaded=Array.from(document.scripts).some(s=>{try{return s.src&&new URL(s.src,current.src).pathname===url.pathname}catch(_){return false}});
+  if(loaded||document.querySelector('script[data-security-impairment-track-loader]')) return;
+  const s=document.createElement('script'); s.src=url.href; s.async=false; s.setAttribute('data-security-impairment-track-loader','20260924a'); document.head.appendChild(s);
+})();
