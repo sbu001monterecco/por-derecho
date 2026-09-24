@@ -26,7 +26,7 @@ PUBLIC_MASTER = ROOT / "assets/data/proceedings-master-public-v1.json"
 ASSERTIONS = ROOT / "assets/data/fiscalia-proceedings-link-assertions-v1.json"
 TARGET = ROOT / "assets/data/fiscalia-proceedings-interconnectivity-v1.json"
 
-EXPECTED_EVENTS = 320
+EXPECTED_EVENTS = 326
 EXPECTED_MATTER_LINKED_EVENTS = 141
 EXPECTED_FISCALIA_EXACT = 23
 EXPECTED_FISCALIA_UNRESOLVED = 3
