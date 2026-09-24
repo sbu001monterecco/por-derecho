@@ -1,3 +1,5 @@
+> **Controlling clarification — PD-MP-ADVERSE-360-20260924:** Apply G13–G16 below when reading every earlier gate. Protection against unintended admissions is not concealment, denial of adverse judicial outcomes, or withdrawal of maintained allegations. The adverse record must be prominent and integrated into the causal analysis. The earlier text is preserved below; inconsistent blanket interpretations are superseded, not silently erased.
+
 # Meeting Point 357/2024 · 93/2025 — pre-filing adverse-admission control
 
 **Control ID:** PD-MP-PREFILE-ADMISSION-20260924  
@@ -145,3 +147,47 @@ The filing cannot be marked FINAL_FOR_SIGNATURE until all are PASS:
 - `FINAL_FOR_SIGNATURE` — only after human final review of exact regenerated PDFs and recorded hashes.
 - `FILED_VERIFIED` — only after stamped/electronic receipt identifies actual package and destination.
 
+
+## Controlling supplement: prominent adverse record, non-retreat and 360-degree reconstruction
+
+**Control:** PD-MP-ADVERSE-360-20260924. **Origin:** Gil Marer's express clarification in the continuing Meeting Point workspace. **Publication boundary:** public-readable methodology; no private correspondence, source identifiers, account details or litigation-advice bodies are added. This is an additive clarification of G1–G12, not a new finding or a claim that successor PDFs have been generated.
+
+### G13 — Affirmative, prominent disclosure; no blanket retreat
+
+The calificación proceedings and adverse holdings concerning Luchy Playa Blanca, S.L.U., Gil Marer and Pink Canary Services, S.L.U.; the AC-initiated Pink contract-termination, rent and eviction proceedings; the unsuccessful convenio seeking full payment; and liquidation with transfer of patrimonial powers must be addressed prominently in the current account. They are not to be hidden in annexes, dismissed as mere allegations when they are judicial holdings, or removed because an opponent may rely on them.
+
+For each record distinguish the claim, findings accepted/rejected, operative order, legal person affected, judgment author, appeal, actual implementation and presently verified status. Do not infer present finality, a stay, reversal or continuing appellate pendency from an old source. A calificación holding is not silently relabelled a criminal conviction.
+
+G1 and G6 do not retract maintained complaints, disown the party's actual historical statements, or strip documents and judgments of their legally applicable evidential force or effects. A current qualification must identify the particular proposition and reason; it is not a universal evidential shield. Preserve genuine adverse facts as affirmatively acknowledged facts, not only as facts someone else alleged. Use: “Todo ello sin perjuicio del valor probatorio y de los efectos que legalmente correspondan a cada documento o resolución y de su valoración por el órgano competente.”
+
+### G14 — Outcome, scope and agency must be reconstructed together
+
+Use one linked review unit: source and exact holding → accepted adverse fact → earlier context → actor and dated capacity → legal powers and practical control → claim/defence/evidence before that actor → decision and implementation → later reuse → benefit/harm → contrary explanation → unresolved proof.
+
+The failure of a proposed convenio must not erase its proposed full-payment purpose or the later funded-exit work. “No proposal accepted” must not be rewritten as a proved unanimous merits rejection without the meeting/voting record.
+
+The suspension of LPB's patrimonial powers and substitution of its administrators must be stated, but without turning it into the loss of every separate entity's rights or a blanket disappearance of procedural representation. Read all operative clauses, including any express reservation of representation in the concurso and incidents. Choosing to appear personally in Meeting Point is not, without separate proof, an admission that no other capacity can exist anywhere.
+
+For Pink, preserve both the adverse rent/termination/eviction holding and the exact recipient to whom possession was ordered to be delivered. An order, its execution, later physical control by another actor and CEXP legal continuity are separate source questions. Do not attribute earlier judgments to a later judge merely because they concern the same court.
+
+### G15 — Funded-exit and sabotage allegation remain explicit
+
+Gil maintains the allegation that the owner-side/ONA-supported funded exit was sabotaged through connected acts and omissions of the identified private actors, the Administrador Concursal and judicial actors. Preserve that allegation prominently as his allegation, not as a judicial finding; identify each actor's contribution rather than inferring common knowledge or purpose from office, relationship or shared benefit.
+
+Reconstruct readiness before 7 June 2018, each later finance route and its date, each closing condition, what was satisfied or still executable, what alleged act impaired it, notice, response, actual control and alternatives. ONA's operating/coordination role does not establish that ONA was the lender. Preserve Gil's readiness account separately from documentary closure of each condition. Do not retrodate later financing documents; equally, do not turn the existence of conditions or ultimate non-completion into proof that the earlier alternative was fictitious or doomed independently.
+
+Trace alleged self-created impairment and later reliance on that impairment without confusing registered mortgage collateral with the wider operating/refinancing package. Apply the JTP economic-source, professional-independence and incentive inquiry where relevant; no direct transfer proved does not refute an indirect-route allegation, and a reported payment does not alone prove the route, inducement or earlier effect.
+
+### G16 — Integration, visibility and verification gate
+
+Document 1 needs a visible section “Antecedentes adversos expresamente reconocidos y reconstrucción causal integral”, not merely a stronger non-admission disclaimer. Document 2 preserves the relevant historical evidence with a coordinated index and explains its relationship to the current statement; original source pages are not rewritten. For each material source say attached in full, selected extract, cited only or requested; do not invent annex numbers or describe missing material as attached.
+
+The Meeting Point bridge is finite: identify the actual debtor/entity, contract or purported operating authority, availability of the asset, income/liability/contingency/recovery item, recipient of information, and treatment in the plan or expert materials. Related proceedings are factually connected, not procedurally merged. No claim that this communication itself reopens, reverses or nullifies another proceeding.
+
+The flagship R33/forensic reader must show source text, actual adverse outcome and positive recovery/exit activity alongside the alleged omission, inversion or instrumental reuse. A supported raw fact does not automatically validate a broader causal inference; disagreement with a holding does not make the holding a falsehood. Colour and counts measure identified mechanisms, source coverage and review state, never guilt or deliberate deceit by score. Every causal arrow requires its own source bridge.
+
+Apply G13–G16 in addition to G1–G12 before final review. A keyword-validator pass is not substantive or legal clearance. Record the actual revised PDFs, coverage and source checks, retained adverse passages, changed wording and hashes. Unresolved proof must remain explicit and is not automatically a reason to suppress a properly bounded allegation. No successor, merge, live publication or filing status is implied by this governance update.
+
+### Connected controls
+
+Read together with `archive/CALIFICACION_UNITARY_TRUTH_INVERSION_DIVERSION_THESIS_16AUG2026.md`, `archive/AC_CLAIMS_R33_UNITARY_CANON_22SEP2026.md`, `governance/LEGAL_PROFESSIONAL_INTERACTION_TRUTH_MACHINE_22SEP2026.md`, and `tools/forensic-reader/README.md`. Resolve host-specific missing controls rather than claiming cross-host parity from a reference alone. The existing finalisation prompt already requires this governance file; G13–G16 therefore control that prompt's implementation without creating an independent restart.
