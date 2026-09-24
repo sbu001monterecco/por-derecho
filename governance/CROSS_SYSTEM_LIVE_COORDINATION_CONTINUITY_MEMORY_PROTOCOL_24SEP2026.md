@@ -213,3 +213,10 @@ The coordination system exists to preserve human agency and evidential integrity
 AI may coordinate, compare, draft, test and propagate controlled changes. It must not convert system synchronization into factual corroboration.
 
 **One history can have many surfaces. It must not acquire many incompatible truths.**
+
+
+## 16. Deterministic structural guard
+
+Run `python3 scripts/validate_cross_system_coordination.py` and `python3 -m unittest tests/test_cross_system_coordination_20260924.py -v` for every in-scope coordination change.
+
+The `Validate cross-system coordination` workflow checks the control ID, parity-state vocabulary, Control Tower identity, Memory boundary, Drive control receipt state, required handoff fields and provider-specific instruction-hook exception. It is a structural guard only. It does not independently query external provider state or establish legal/evidential truth.
