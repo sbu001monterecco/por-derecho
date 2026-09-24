@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 42,
   "owner": "1840:96ed68f99de7c786eac53452c4a3a1c92b6e6fa8",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 1840,
   "base_sha": "1e392183c5aee75c6c28ee06bbb039625b69e82d",
   "candidate_sha": "96ed68f99de7c786eac53452c4a3a1c92b6e6fa8",
@@ -2297,6 +2297,32 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 1840,
+      "candidate_sha": "96ed68f99de7c786eac53452c4a3a1c92b6e6fa8",
+      "at": "2026-09-24T23:10:09.390965Z",
+      "merge_sha": "5b75eee891d5204c6a6a4bcf89e86bc6e1ab9a2b",
+      "pages_run_id": 36071238072,
+      "exact_matches": [
+        {
+          "path": "en/index.html",
+          "sha256": "d3917a91f8073c65c4a5b1e4395a0f5e10688fd09b97838ffe411e6dda42397b",
+          "bytes": 233625
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "0ae46753cc4880fed0770ef0237856587cb89f0d99c56d2a91d4f6b8d7e01d63",
+          "bytes": 242931
+        },
+        {
+          "path": "ops/continuity/CONTEXT_INTEGRITY_IMPLEMENTATION_20260924.json",
+          "sha256": "d71e644cacd418b07f4ac49100ee8dbf5da5b97b26e89f4a3686865ef71d6edc",
+          "bytes": 785
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -2339,7 +2365,34 @@
         "pages_run_id": 36071238072,
         "merge_sha": "5b75eee891d5204c6a6a4bcf89e86bc6e1ab9a2b"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-24T23:10:09.390929Z",
+      "evidence": {
+        "merge_sha": "5b75eee891d5204c6a6a4bcf89e86bc6e1ab9a2b",
+        "pages_run_id": 36071238072,
+        "exact_matches": [
+          {
+            "path": "en/index.html",
+            "sha256": "d3917a91f8073c65c4a5b1e4395a0f5e10688fd09b97838ffe411e6dda42397b",
+            "bytes": 233625
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "0ae46753cc4880fed0770ef0237856587cb89f0d99c56d2a91d4f6b8d7e01d63",
+            "bytes": 242931
+          },
+          {
+            "path": "ops/continuity/CONTEXT_INTEGRITY_IMPLEMENTATION_20260924.json",
+            "sha256": "d71e644cacd418b07f4ac49100ee8dbf5da5b97b26e89f4a3686865ef71d6edc",
+            "bytes": 785
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-24T23:10:06.971357Z"
+  "updated_at": "2026-09-24T23:10:09.390929Z"
 }
