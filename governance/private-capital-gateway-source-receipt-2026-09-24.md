@@ -32,3 +32,13 @@ The private GitLab mirror is the canonical repository for sensitive source mater
 ## Publication state
 
 This is a draft control receipt. It does not authorize merging, public circulation, lender distribution or representation that the proposed Sun Rock Loan Notes, security package or financing are issued, perfected or committed.
+
+## Poll-driven refinement
+
+A simulated review across bank, private-credit, institutional-capital, family-office and seller-finance audiences identified the principal Level-1 gap: the first response requested from a recipient was not explicit enough. The bilingual gateway now includes:
+
+- a “What we are asking now” section;
+- a “What is not being requested” boundary;
+- the expected first-response fields: capital lane, ticket range, jurisdiction, security appetite, diligence route and timing.
+
+The bilingual Montaña Roja pages now include a “next-stage information” section covering corporate/rights, project proof, sources and uses, and security/governance. The full simulated poll and recipient-specific gap review remain private in GitLab.
