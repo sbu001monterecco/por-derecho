@@ -1,0 +1,37 @@
+{
+  "schema": "por-derecho.jtp-visual-pair.v1",
+  "control_id": "PD-JTP-VIS-20260924",
+  "date": "2026-09-24",
+  "languages": ["en", "es"],
+  "purpose": "Connect the canonical actors/payment visual with the 1 June 2020 representation and invoice-authority correspondence, criminal/prosecutorial first, without publishing the second sender's identity.",
+  "surfaces": {
+    "en": {"page": "en/estate-payment-counsel-independence/index.html", "actors_anchor": "visual", "authority_anchor": "invoice-authority-source", "actors_image": "assets/jtp-money-route-context-v8-en.svg", "authority_image": "assets/jtp-representation-invoice-20260924-en.svg"},
+    "es": {"page": "es/pago-masa-independencia-defensa/index.html", "actors_anchor": "visual", "authority_anchor": "invoice-authority-source", "actors_image": "assets/jtp-money-route-context-v8-es.svg", "authority_image": "assets/jtp-representation-invoice-20260924-es.svg"}
+  },
+  "sources": [
+    {"id": "JTP-NOTICE-20200601-A", "date": "2020-06-01", "status": "DIRECT_CORRESPONDENCE_STATEMENT", "speaker": "JTP", "recipient_class": "client team", "summary": "JTP stated that the AC knew he no longer held the client's venia.", "limit": "JTP's statement about AC knowledge is not an independently authenticated acknowledgement by the AC."},
+    {"id": "JTP-NOTICE-20200601-B", "date": "2020-06-01", "status": "DIRECT_CORRESPONDENCE_INSTRUCTION", "speaker": "withheld", "recipient_class": "client team", "summary": "JTP was no longer LPB's lawyer; no invoice to the AC was to be authorised until matters with the AC were clarified.", "limit": "The recovered copy is addressed to the client team, not the AC; delivery of this instruction to the AC remains an open proof question. Preserve the conditional wording."}
+  ],
+  "linked_dates": [
+    {"date": "2018-06-07", "role": "separate material-control event"},
+    {"date": "2020-05-28", "role": "secondary client-side pressure context, not consent or fee authority; not central to the new visual"},
+    {"date": "2020-06-12", "role": "separate final fee-proposal rejection"},
+    {"date": "2020-07", "role": "payment month reported by AC"},
+    {"date": "2021-07-21", "role": "date of AC report listing EUR 26750 as paid"}
+  ],
+  "corrections": [
+    "The unverified chat infographic's fee-correspondence years 2018 are superseded by 2020.",
+    "Do not label the two 1 June messages as a single communication delivered to the AC.",
+    "Public wording is faithful summary/translation, not a fabricated combined quotation.",
+    "ONA-led funded-exit architecture does not identify ONA as the lender.",
+    "Representation ending and invoice authority withheld do not themselves extinguish an independently established accrued entitlement."
+  ],
+  "invariants": [
+    "Sender name, private headers, addresses and provider identifiers absent from both new SVGs and their metadata/alt/captions.",
+    "Existing v8 actor-image bytes retained unchanged.",
+    "Bidirectional actors/authority anchor links and matching-language switches.",
+    "CAM EUR 400000 to estate to later JTP EUR 26750 is not described as a matched bank-complete trace.",
+    "No payment, association or correspondence is treated as an adjudicated criminal finding.",
+    "Repository commit, merge, deployment and live verification are separately established, not implied by this control file."
+  ]
+}
