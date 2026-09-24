@@ -36,7 +36,8 @@ BASELINE_SOURCE_SHA256 = "784b45bb9ef9e5934d4b4dedc7068dfef90b6e19a10d55bfc11709
 REGISTER_SOURCE_PDF_SHA256 = "4636b0da487f9150cd8f229d36f9c44f1bd16c9005f6bfa1415bcbc84595e03f"
 PUBLIC_TRANSCRIPT_SHA256 = "18a5d1687234e18d9293a3563d51118ea7b16fb5611adac9b8b428876d875df1"
 EVENT_ID_RE = re.compile(r"^PD-SP-EVT-(\d{4})$")
-MAILBOX_COHORT = "MAILBOX_TRANSPORT_SOURCE_PROVED"\nSUPPLEMENTAL_COHORT_20260924 = "SUPPLEMENTAL_SOURCE_PROVED_20260924"
+MAILBOX_COHORT = "MAILBOX_TRANSPORT_SOURCE_PROVED"
+SUPPLEMENTAL_COHORT_20260924 = "SUPPLEMENTAL_SOURCE_PROVED_20260924"
 MAILBOX_EXPECTED = 156
 PRIVATE_MANIFEST_SHA256 = "bdd12a8fa62b5058525e1c37053fb7899ac24a60d12ff48ab8b74bda617cd6f6"
 PRIVATE_MANIFEST_ROWS = 231
@@ -1758,7 +1759,8 @@ def reconcile_register(
     register["events"] = sorted(receipts + key_events + status_events + mailbox_events + supplemental_events, key=lambda event: event["event_id"])
     register["denominator_control"]["curated_source_proved_events"] = len(key_events) + len(status_events)
     register["denominator_control"]["mailbox_transport_events"] = len(mailbox_events)
-    register["denominator_control"]["event_rows_total"] = len(register["events"])\n    register["denominator_control"]["supplemental_source_proved_events"] = len(supplemental_events)
+    register["denominator_control"]["event_rows_total"] = len(register["events"])
+    register["denominator_control"]["supplemental_source_proved_events"] = len(supplemental_events)
     register["source_controls"]["mailbox_index_sha256"] = mailbox_index_sha256
     register["control_date"] = "2026-09-24" if supplemental_events else "2026-09-21"
     if status_control["added_status_events"] != REGAGE_STATUS_EXPORT_EXPECTED:
