@@ -39,6 +39,10 @@ El escrito del AC reproduce una renuncia fechada el **21 de septiembre de 2020**
 
 **Conexión histórica:** la renuncia de 2020 no debe aislarse del rastro de separación/remoción: una tarea explícita de «remoción por causa justa» aparece en septiembre de 2018; un borrador judicial de enero de 2019 reserva acciones de separación; en mayo de 2020 Daniel Jiménez trata el «escrito de remoción del cargo» como workstream activo; y en enero de 2021 se vuelve a instruir expresamente presentar la separación en el concurso.
 
+**Consecuencia de continuidad documentada:** Joaquín cesó su actuación el 21 de septiembre de 2020. No fue quien llevó la vía de separación hasta la solicitud de 58 páginas presentada el 23 de abril de 2025; esa ruta fue retomada y desarrollada por equipos sucesores. Este dato conecta la página 5 de R33 con **AC-CLM-011 (interferencia profesional / aislamiento / desgaste)** y **AC-CLM-014 (R33 / posible compresión o inversión narrativa)**. La posición de Gil/Patricia es que la iniciativa del AC bajo el art. 215.2 CP contribuyó materialmente a la discontinuidad de la defensa. Esa causalidad e intención no se presumen: deben contrastarse con la reacción contemporánea, motivos formales de salida, honorarios, estrategia, capacidad, temporalidad y explicaciones alternativas.
+
+**Nodo exacto R33:** `R33-P05-COUNSEL-DISCONTINUITY` / `R33-P05-NARRATIVE-COMPRESSION`. El lector debe poder saltar desde la cita de la disculpa a la sala documental de página 5, a la cronología de separación y al registro unitario de reclamaciones contra el AC.
+
 ## Páginas 19–20 · origen 2011 frente a conocimiento 2016
 
 El AC sostiene que los conflictos acreditados con actas de 2011 eran anteriores al concurso y a su designación, y por ello no pudo intervenir en su origen.

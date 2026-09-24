@@ -147,3 +147,31 @@ Accordingly, the supported publication state is **criminal/prosecutorial allegat
 
 The same institutional actor appearing across several lawyer transitions can justify a pattern investigation. It does not allow knowledge, intent, liability or causation to be transferred from one lawyer, payment, threat or proceeding to another.
 
+
+
+## 23 September 2026 — Patricia statement / 28-May-2020 source reconciliation
+
+**Source-status lock.** Gil Marer identified Patricia Domínguez's immediately preceding 23-Sep-2026 account as her “statement of truth and clarification”. Preserve it as a source-authored account, not as independent verification. A public-safe derivative is stored at `archive/PARRILLA_AC_CAM_400K_SOURCE_GATED_SUPPLEMENT_23SEP2026.md`; the detailed source record remains outside public Git.
+
+**Direct 2020 source refinement.** Restricted contemporaneous correspondence dated 28-May-2020 records Parrilla reporting to incoming counsel that he had spoken with the AC about fee recognition: €80,000 + IGIC legal fees, a reported procurator claim around €20,000 + IGIC, proposed immediate payments of €25,000 to Parrilla and €15,000 to the procurator, with the remainder pending. The chain also records the client side asking for written JT–AC communications and concern about a possible immediate resignation; incoming counsel proposed continued work as a condition. This is a report of an oral AC discussion, **not** a direct AC authorisation, court order, ledger or bank proof.
+
+**Number-conflict rule.** Patricia's recollection of approximately €40,000 agreed / €30,000 paid / €10,000 outstanding must not overwrite the documentary set already controlled here (€40,000 + IGIC original proforma; €32,250 acknowledged client receipts; rejected €50,000 final proposal; €17,750 + IGIC stated balance; later AC report €26,750). Reconcile rather than average.
+
+**Cross-family rule.** Treat this episode jointly but non-fusively under `AC-CLM-005` (CAM €400k/title-authority), `AC-CLM-008` (fees/estate funds) and `AC-CLM-011` (professional intermediation/continuity). `AC-CLM-014` supplies broader R33 adversarial context only unless an exact R33 Parrilla passage is located. Do not fabricate a page-level link.
+
+**Acosta Matos boundary.** The direct transaction node is CAM. Wider Acosta Matos actors/entities remain connected through the existing canonical perimeter map, but this episode does not transfer knowledge, intent or liability to any individual or successor entity. Payment, refusal of a protective instruction and causation remain separate propositions.
+
+
+## 23 September 2026 — Gil clarification: 2016 burofax / funded-exit incompatibility
+
+Read `archive/declarations/019_GIL_PARRILLA_BUROFAX_PWC_FUNDED_EXIT_STATEMENT_23SEP2026.md`.
+
+Gil separately adopts the following propositions as his own statement:
+- the 2016 burofax refusal and later AC-removal/separation instruction episode are distinct;
+- he personally sent the 2016 burofax to the AC after Parrilla refused to adopt/send it;
+- there was no client-approved strategy in which LPB liquidation → CAM/Acosta Matos asset transfer → liquidation-created funds → Parrilla remuneration was an acceptable objective;
+- he alleges Parrilla's instruction refusals/non-follow-through materially weakened protection during the broader sequence, including the live ONA/funded-exit period.
+
+The 12–13 Jul 2016 refusal chain is independently located. A later DP1956 evidential filing expressly says the burofax and proof of sending/receipt were attached. The native delivery certificate still requires isolated re-authentication. Preserve contrary Parrilla conduct and procedural alternatives; do not convert Gil's allegation of wilful professional negligence into a finding.
+
+Cross-link: `AC-CLM-007` (funded exit), `AC-CLM-011` (professional instruction/continuity), with `AC-CLM-005/008` for the later CAM-sale/money chain.

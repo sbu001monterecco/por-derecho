@@ -102,7 +102,26 @@
         "estate ledger",
         "later authorization chain",
         "finca-by-finca effect"
-      ]
+      ],
+      "parrilla_bridge_20260923": {
+        "status": "SOURCE_GATED",
+        "public_safe_derivative": "archive/PARRILLA_AC_CAM_400K_SOURCE_GATED_SUPPLEMENT_23SEP2026.md",
+        "proposition": "Parrilla acted for LPB while the 28-Nov-2018 CAM transaction and later non-convalidation/title-authority sequence were contested; use the material to test notice/advice/response, not participation in the sale.",
+        "knowledge_anchor": "Restricted Jan-2019 counsel correspondence records the AC report's €400,000 sale/payment description within the legal-team challenge chronology.",
+        "boundary": "No corrupt knowledge, CAM agreement, sale participation or criminal purpose is inferred from counsel status or notice.",
+        "open_proof": [
+          "finca-by-finca authority",
+          "2018 deed and 2019 non-convalidation",
+          "2021 approval/finality bridge",
+          "Registry/title history",
+          "estate bank trace"
+        ]
+      },
+      "funded_exit_counsel_context_20260923": {
+        "status": "CONTEXT_LINK",
+        "proposition": "Gil says the later CAM sale/liquidation outcome was contrary to the client-side funded-exit objective counsel was instructed to protect.",
+        "boundary": "Client objective does not determine the legal validity of liquidation or later judicial acts."
+      }
     },
     {
       "id": "AC-CLM-006",
@@ -133,7 +152,31 @@
         "court-stamped exit submissions",
         "complete AC response chain",
         "counterfactual debt/value model"
-      ]
+      ],
+      "parrilla_funded_exit_bridge_20260923": {
+        "status": "ATTRIBUTED_CAUSATION_HYPOTHESIS",
+        "allegation": "Gil alleges Parrilla's failure/refusal to execute protective instructions and insufficient follow-through materially weakened LPB's position while the ONA/Clubotel funded-exit route was live.",
+        "boundary": "The record supports an active financed exit/better-offer workstream but does not establish inevitable closing or that Parrilla's conduct was a but-for or exclusive cause of failure.",
+        "test": [
+          "exact protective instruction",
+          "mandate/duty",
+          "response/reason",
+          "timing",
+          "counterfactual protective effect",
+          "alternative causes",
+          "financing/closing conditions"
+        ]
+      },
+      "parrilla_instruction_bridge_20260923": {
+        "status": "GIL_STATEMENT_PLUS_DOCUMENTED_INSTRUCTION_CONFLICT",
+        "statement_ref": "archive/declarations/019_GIL_PARRILLA_BUROFAX_PWC_FUNDED_EXIT_STATEMENT_23SEP2026.md",
+        "proposition": "Gil says counsel's refusal/non-follow-through on protective instructions must be tested as a separate contributing strand while the ONA/Clubotel and finance-backed exit remained active.",
+        "boundary": "The funded-exit route was conditional; counsel conduct does not by itself prove the counterfactual would have closed."
+      },
+      "burofax_2016_cross_context": {
+        "status": "LATER_COUNTERFACTUAL_CONTEXT_ONLY",
+        "rule": "Cross-read the 2016 protective-instruction record when assessing the 2018 ONA/Clubotel funded-exit chronology, but do not infer that the 2016 exchange caused the 2018 outcome."
+      }
     },
     {
       "id": "AC-CLM-008",
@@ -149,7 +192,44 @@
         "estate bank statements",
         "ledger",
         "authority for professional payments"
-      ]
+      ],
+      "parrilla_fee_subclaim_20260923": {
+        "status": "ATTRIBUTED_SOURCE_BACKED_EPISODE_NOT_FINDING",
+        "source_status": "Restricted 28-May-2020 correspondence contains Parrilla's report of an oral AC discussion; not a direct AC writing or proof of payment.",
+        "reported_terms": {
+          "legal_fee_recognition": "€80,000 + IGIC",
+          "procurator_reported_claim": "approximately €20,000 + IGIC",
+          "proposed_immediate_parrilla_payment": "€25,000",
+          "proposed_immediate_procurator_payment": "€15,000",
+          "remainder": "reported as recognised/pending"
+        },
+        "amount_reconciliation": {
+          "patricia_recollection_20260923": "approximately €40,000 agreed / €30,000 paid / €10,000 outstanding",
+          "documentary_control": [
+            "€40,000 + IGIC original proforma",
+            "€32,250 acknowledged client-perimeter receipts",
+            "rejected €50,000 final proposal",
+            "€17,750 + IGIC stated balance",
+            "later AC report records €26,750 paid"
+          ],
+          "rule": "Do not silently harmonise memory and documents; reconcile agreement, invoices, IGIC, advances, offsets, authority, ledger and bank movement."
+        },
+        "boundary": "No proof here of bribery, quid pro quo, completed payment, payment source, corrupt purpose or criminal knowledge.",
+        "open_proof": [
+          "direct AC record",
+          "court/estate-cost authority",
+          "invoice and IGIC",
+          "ledger",
+          "bank debit/credit",
+          "source-of-funds trace",
+          "procurator reconciliation"
+        ]
+      },
+      "client_objective_boundary_20260923": {
+        "status": "GIL_STATEMENT",
+        "proposition": "Gil states there was no client-approved scenario in which liquidation-generated liquidity following CAM/Acosta Matos asset transfer would be used to remunerate Parrilla.",
+        "boundary": "This states client objective/acceptability; it does not prove the legal source of any later payment or corrupt motive."
+      }
     },
     {
       "id": "AC-CLM-009",
@@ -194,7 +274,98 @@
         "complete handover/fee files",
         "direct causation statements",
         "Bar/insurance records where lawfully obtainable"
-      ]
+      ],
+      "r33_nodes": [
+        "R33 p.5 · Joaquín withdrawal/apology",
+        "R33-P05-COUNSEL-DISCONTINUITY"
+      ],
+      "evidence_nodes": [
+        "4-Jan-2019 draft: AC conduct / express reserve of liability and separation actions",
+        "6-Jun-2019 opposition to calificación",
+        "19-Feb-2020 Article 215.2 providencia",
+        "Feb-Mar-2020 ratification / withdrawal-risk correspondence",
+        "25-May-2020 active 'escrito de remoción del cargo' workstream",
+        "21-Sep-2020 Joaquín withdrawal/apology",
+        "23-Apr-2025 filed separation application"
+      ],
+      "continuity_finding": "Joaquín ceased acting on 21-Sep-2020 and did not carry the AC-removal route through to the 23-Apr-2025 application; successor counsel had to continue/reconstruct that route.",
+      "causation_question": "Gil/Patricia allege AC conduct materially contributed to defence discontinuity. Test actor-by-actor against contemporaneous reaction, alternative causes, temporal proximity, capability/control, and subsequent workstream interruption; do not presume exclusive causation or unlawful purpose.",
+      "parrilla_subclaim_20260923": {
+        "status": "ATTRIBUTED_CAUSATION_HYPOTHESIS",
+        "public_safe_derivative": "archive/PARRILLA_AC_CAM_400K_SOURCE_GATED_SUPPLEMENT_23SEP2026.md",
+        "documented_context": [
+          "reported JT–AC fee discussion",
+          "client request for written communications",
+          "concern about possible immediate resignation",
+          "incoming-counsel continuity condition",
+          "later transition/intermediation chronology"
+        ],
+        "allegation": "Gil/Patricia allege AC economic/intermediation conduct may have affected professional independence or continuity.",
+        "alternatives": [
+          "lawfully due fees",
+          "ordinary estate-cost recognition",
+          "non-payment",
+          "strategy disagreement",
+          "client-lawyer conflict",
+          "independent resignation reasons"
+        ],
+        "rule": "Payment, refusal of a protective instruction and causation are separate propositions; none proves another."
+      },
+      "gil_clarification_20260923": {
+        "status": "ATTRIBUTED_PROFESSIONAL_FAILURE_ALLEGATION",
+        "allegations": [
+          "willful professional negligence",
+          "refusal/failure to pursue AC removal when instructed",
+          "refusal/failure to implement protective written communications",
+          "insufficient protective follow-through while funded exit was live"
+        ],
+        "source_status_2016_burofax": "Exact 12–13 Jul 2016 instruction/refusal chain is now located: completed burofax sent to Parrilla for review/transmission; Parrilla declined to assess it on stated authorship/representation grounds and gave leave to change lawyer. Gil separately states he personally sent the burofax to the AC; later filed material recites proof of sending/receipt, while the native delivery certificate remains to be isolated/re-authenticated.",
+        "no_displacement_rule": "Parrilla analysis does not reduce or transfer alleged responsibility of the AC, judge, CAM/Acosta Matos or historic dissident actors.",
+        "causation_rule": "Multiple contributing causes may coexist; test duty, act/omission, knowledge, timing, material effect, alternative causes and economic interaction actor by actor."
+      },
+      "gil_2016_burofax_clarification_20260923": {
+        "status": "SOURCE_AUTHORED_STATEMENT_WITH_PARTIAL_DOCUMENTARY_CORROBORATION",
+        "statement_ref": "archive/declarations/019_GIL_PARRILLA_BUROFAX_PWC_FUNDED_EXIT_STATEMENT_23SEP2026.md",
+        "documented": [
+          "12-Jul-2016 draft/instruction",
+          "13-Jul-2016 Parrilla refusal/venia response",
+          "preserved burofax text",
+          "later filing reciting proof of sending/receipt"
+        ],
+        "gil_adoption": "Gil personally states he sent the 2016 burofax to the AC after counsel refused to do so.",
+        "distinction": "2016 burofax episode is separate from later instructions concerning separation/removal of the AC.",
+        "open_proof": [
+          "native delivery/receipt certificate",
+          "complete later removal instruction/draft/response/filed-state chain"
+        ],
+        "allegation": "Gil alleges wilful professional negligence and material contribution to weakened protection; this remains an attributed professional/legal allegation."
+      },
+      "burofax_2016_source_status": {
+        "status": "DOCUMENTED_INSTRUCTION_AND_REFUSAL_PLUS_FIRST_HAND_SEND_STATEMENT",
+        "public_safe_source": "archive/2016_BUROFAX_PARRILLA_PWC_AC_SOURCE_STATUS_23SEP2026.md",
+        "documented_events": [
+          "12-Jul-2016 final burofax prepared for AC",
+          "12-Jul-2016 client instruction to Parrilla to review/send",
+          "13-Jul-2016 written refusal to assess/send on stated representation grounds",
+          "11-Aug-2016 separate direct Gil notice to AC"
+        ],
+        "witness_statement": "Gil Marer states he personally sent the July-2016 final burofax to the AC.",
+        "open_proof": [
+          "exact delivery/receipt instrument",
+          "AC response to exact July document"
+        ],
+        "boundary": "Use for professional-duty/continuity analysis only; no automatic finding of breach, intent, causation or liability."
+      },
+      "pwc_2016_bridge": {
+        "status": "DOCUMENTED_CONTEMPORANEOUS_PROFESSIONAL_PERIMETER",
+        "facts": [
+          "PwC review/coordination around Jonathan Simó accounting work and 10-Jun-2016 meeting",
+          "June-2016 contemplated AC meeting involving PwC/Jonathan/Cristo",
+          "17-Jun-2016 Miguel Hernández Lorenzo copied on Parrilla/client strategy correspondence",
+          "22-Jun-2016 AC written-response route relayed by Parrilla; Patricia referenced PwC report before meeting"
+        ],
+        "boundary": "Does not prove PwC's position on the exact July burofax absent an exact source."
+      }
     },
     {
       "id": "AC-CLM-012",
@@ -209,7 +380,16 @@
         "signed prosecution materials",
         "new-evidence threshold",
         "allocation/service history"
-      ]
+      ],
+      "cross_evidence_nodes": [
+        "18-Jun-2026 complaint concerning the AC, p.3: 'el control ejercido sobre la defensa y capacidad patrimonial de LPB' is an express episode to investigate",
+        "R33 p.5 · Joaquín withdrawal/apology",
+        "4-Jan-2019 AC-adverse draft / reserve of responsibility and separation",
+        "19-Feb-2020 Article 215.2 providencia",
+        "21-Sep-2020 cessation of Joaquín's representation",
+        "23-Apr-2025 successor-led filed separation application"
+      ],
+      "cross_evidence_rule": "Use the R33/Joaquín sequence as later cross-evidence relevant to the defence-control episode expressly identified in the 18-Jun-2026 complaint concerning the AC. Keep the reference-22 intake mark and DP 1956/2026 procedural lane distinct unless the certified reparto bridge is produced. Cross-evidence does not amend, merge, reopen or prove either instrument."
     },
     {
       "id": "AC-CLM-013",
@@ -240,7 +420,28 @@
         "complete source exhibits incorporated by R33",
         "court treatment of the opposition",
         "right-of-reply/correction record"
-      ]
+      ],
+      "r33_nodes": [
+        "R33 p.5 · selective use of Joaquín apology",
+        "R33-P05-NARRATIVE-COMPRESSION"
+      ],
+      "omitted_context_test": [
+        "pre-existing adverse/removal work concerning the AC",
+        "Article 215.2 personal-exposure event",
+        "immediate professional/ratification/withdrawal reaction",
+        "May-2020 removal workstream still active",
+        "Joaquín's later cessation and non-participation in the 2025 filed separation application"
+      ],
+      "reconstruction_rule": "Present the apology in full as genuine adverse evidence, then place beside it the contemporaneous chronology required to test whether R33 compresses cause/effect or overgeneralizes from one lawyer to successive counsel.",
+      "parrilla_boundary_20260923": {
+        "status": "NO_FABRICATED_R33_LINK",
+        "rule": "The currently controlled R33 extract/sidecar must not be described as naming Parrilla or proving the 2020 fee episode unless an exact relevant passage is located. R33 supplies broader adversarial/master-demonstrator context only.",
+        "related_claims": [
+          "AC-CLM-005",
+          "AC-CLM-008",
+          "AC-CLM-011"
+        ]
+      }
     }
   ],
   "canonical_routes": {
@@ -253,5 +454,6 @@
     "dp1956_es": "/es/dp-1956-2026/",
     "counsel_es": "/es/continuidad-defensa-letrados/",
     "counsel_en": "/en/counsel-defence-continuity/"
-  }
+  },
+  "version_note": "Gil clarification 23-Sep-2026: Parrilla alleged protective-instruction failures linked to the live ONA/Clubotel funded-exit context; 2016 burofax refusal remains attributed pending exact source, separate from source-stronger June-2017 instruction conflict. 23-Sep-2026: Gil statement wires the distinct 2016 Parrilla burofax refusal, later removal-instruction allegation, PwC 2016 knowledge/contact lane and funded-exit incompatibility into AC-CLM-005/007/008/011. 23-Sep-2026: added documented July-2016 burofax instruction/refusal, Gil first-hand send statement, separate Aug-2016 direct notice and bounded PwC contemporaneous bridge. 23-Sep-2026 control repair: removed accidental literal 'undefined'; linked the 2016 PwC meeting/transcript source family and retained the 10/11-Jun date discrepancy pending native metadata reconciliation."
 }

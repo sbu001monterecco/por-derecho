@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Por Derecho Clarification Answer",
+  "type": "object",
+  "required": [
+    "clar_id",
+    "declarant",
+    "response_code",
+    "recorded_at",
+    "source_class"
+  ],
+  "properties": {
+    "clar_id": {
+      "type": "string",
+      "pattern": "^CLAR-[A-Z0-9-]+$"
+    },
+    "declarant": {
+      "enum": [
+        "Gil Marer",
+        "Patricia Domínguez",
+        "OTHER"
+      ]
+    },
+    "response_code": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "free_text": {
+      "type": "string"
+    },
+    "recorded_at": {
+      "type": "string"
+    },
+    "source_class": {
+      "enum": [
+        "FIRSTHAND",
+        "RECOLLECTION",
+        "INFERENCE",
+        "LEGAL_CHARACTERISATION",
+        "MIXED"
+      ]
+    },
+    "source_locator": {
+      "type": "string"
+    },
+    "supersedes_answer_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_status": {
+      "enum": [
+        "HUMAN_ONLY",
+        "PARTIALLY_CORROBORATED",
+        "SOURCE_CORROBORATED",
+        "CONFLICTED"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

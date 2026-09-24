@@ -53,3 +53,19 @@ Retrieve and reconcile whenever available:
 
 ## Public evidence grammar
 Classify every proposition as: **verified fact / party allegation / institutional statement / inference / open question / evidence gap**. Preserve right of reply and equivalent prominence for any substantiated correction.
+
+## 23 September 2026 — Gil / Parrilla / 2016 burofax clarification
+
+Gil Marer now expressly asks that the 2016 PwC lane be interconnected with his separate Parrilla professional-responsibility allegation and the 12–13 July 2016 burofax episode.
+
+### Source-controlled additions
+
+- The 21–22 Apr 2016 AC email exchange directly copied PwC professionals and Juan Tomás Parrilla and establishes contemporaneous awareness of the PwC involvement/authority dispute.
+- The 10/11-Jun professional-meeting source family and 12-Jun follow-up place PwC inside the Community/accounting/authority reconstruction before the later 2018 events.
+- The July 2016 client penal-route instruction and PwC acknowledgement remain a client-instruction/notice event, not PwC's independent criminal conclusion.
+- PwC's September confirmation of a general AC telephone conversation is a direct professional-contact bridge, subject to PwC's express limitation that it was general and not accompanied by a detailed report/email exchange.
+- Gil separately states that he personally sent the 12-Jul-2016 burofax after Parrilla refused to adopt/send it. The native delivery certificate remains to be isolated and re-authenticated even though a later filed evidential package expressly recites that proof of sending/receipt accompanied the burofax.
+
+### Integration rule
+
+PwC is a contemporaneous professional witness/custodian lane for what was known, discussed, instructed and communicated. Do not use PwC involvement to transfer liability or to imply PwC adopted Gil's legal characterisations. Conversely, do not fragment the 2016 record so that Parrilla, PwC and AC communications are analysed as if they occurred in unrelated factual worlds.

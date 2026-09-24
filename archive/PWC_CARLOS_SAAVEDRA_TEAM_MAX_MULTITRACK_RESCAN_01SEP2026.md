@@ -134,3 +134,12 @@ This is not a second backlog. Each PwC-specific request is a scoped production r
 - Public official URLs may be published; private evidence remains source-safe summaries until a separate authority and privacy review permits more.
 - The rescan itself did not perform publication. Gil Marer later expressly authorised the source-safe package, portrait, push, PR, merge, Pages deployment and live verification; the completed sequence is recorded in `publication-manifests/pwc-carlos-saavedra-20260901.json` and `archive/PWC_CARLOS_SAAVEDRA_PUBLICATION_CLOSEOUT_01SEP2026.md`.
 - The page must continue to display `PARTIAL — NOT ALL IS^` while any of the three controlled identity perimeters remains pending.
+
+
+## 23 September 2026 — 2016 burofax / Parrilla source-status cross-link
+
+- Public-safe source-status supplement: `archive/2016_BUROFAX_PARRILLA_PWC_AC_SOURCE_STATUS_23SEP2026.md`.
+- The 12–13 Jul 2016 chain now supplies direct contemporaneous evidence that the final AC burofax was sent to Parrilla for review/transmission and that Parrilla declined to assess/send it on stated representation/authorship grounds.
+- Gil Marer now states from first-hand recollection that he personally sent the final burofax to the AC; exact delivery/receipt proof remains an open production item.
+- The PwC bridge is limited to what the 2016 record supports: accounting-report review/coordination, meeting planning, Miguel Hernández Lorenzo copied into Parrilla/client strategy correspondence, and the later written-route discussion with the AC. Do not infer PwC approval of the exact July burofax unless an exact source proves it.
+- Cross-read with counsel-continuity and the later ONA/Clubotel lane, but preserve causation as open.
