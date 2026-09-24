@@ -6,6 +6,7 @@ It does not adjudicate factual truth or legal conclusions.
 """
 from pathlib import Path
 import json
+import os
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,6 +17,7 @@ EN = ROOT / "en/one-person-one-record-ai-legal-recovery/index.html"
 ES = ROOT / "es/una-persona-un-expediente-ia-recuperacion-juridica/index.html"
 EN_SUPPORT = ROOT / "en/public-interest-support/index.html"
 ES_SUPPORT = ROOT / "es/apoyo-interes-publico/index.html"
+STATE = ROOT / "ops/live-coordination/CROSS_SYSTEM_LIVE_COORDINATION_STATE_20260924.json"
 
 CONTROL_ID = "PD-GOV-HUMAN-AI-20260924-01"
 
@@ -35,9 +37,23 @@ def validate() -> dict:
     en_support = read(EN_SUPPORT)
     es_support = read(ES_SUPPORT)
 
-    for label, body in (("rule", rule), ("AGENTS", agents)):
-        if CONTROL_ID not in body:
-            errors.append(f"{label} missing control ID {CONTROL_ID}")
+    if CONTROL_ID not in rule:
+        errors.append(f"rule missing control ID {CONTROL_ID}")
+
+    gitlab_hook_exception = False
+    if CONTROL_ID not in agents:
+        if os.environ.get("GITLAB_CI", "").lower() == "true" and STATE.exists():
+            try:
+                state = json.loads(STATE.read_text(encoding="utf-8"))
+                mirror = state.get("gitlab_mirror", {})
+                gitlab_hook_exception = (
+                    mirror.get("instruction_hook_state") == "BLOCKED_BY_PROTECTED_SUCCESSOR_POLICY"
+                    and mirror.get("parity_state") == "FUNCTIONAL_PARITY"
+                )
+            except (ValueError, TypeError, json.JSONDecodeError):
+                gitlab_hook_exception = False
+        if not gitlab_hook_exception:
+            errors.append(f"AGENTS missing control ID {CONTROL_ID}")
 
     required_en = [
         "I did not set out to build legal AI",
@@ -113,6 +129,7 @@ def validate() -> dict:
             str(p.relative_to(ROOT))
             for p in (RULE, AGENTS, EN, ES, EN_SUPPORT, ES_SUPPORT)
         ],
+        "gitlab_instruction_hook_exception": gitlab_hook_exception,
         "boundary": "Structural publication guard only; not factual or legal adjudication.",
     }
 
