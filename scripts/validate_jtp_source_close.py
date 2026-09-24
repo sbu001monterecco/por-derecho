@@ -56,8 +56,8 @@ if data:
     for pid in ("JTP-SC-001","JTP-SC-002","JTP-SC-003","JTP-SC-004","JTP-SC-006","JTP-SC-007","JTP-SC-008"):
         if pid not in props:
             errors.append(f"missing proposition {pid}")
-    if "bounded" not in props.get("JTP-SC-007",{}).get("limit","").lower():
-        errors.append("mailbox negative-search boundary missing")
+    if props.get("JTP-SC-007",{}).get("status") != "BOUNDED_NEGATIVE_MAILBOX_SEARCH":
+        errors.append("mailbox negative-search status lock missing")
     if "open" not in props.get("JTP-SC-008",{}).get("limit","").lower():
         errors.append("bank-trace open boundary missing")
 for path in ("en/counsel-defence-continuity/index.html","es/continuidad-defensa-letrados/index.html"):
