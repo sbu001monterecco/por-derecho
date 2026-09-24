@@ -64,3 +64,17 @@ What is presently located:
 User-directed publication has enabled PDF viewers for the seven Cuatrecasas report versions in the controlled set (CUA-RPT-001, 002, 003A, 003, 006, 004, 005) plus the defensive contextual-analysis PDF. The evidential ceilings remain unchanged by publication. Any professional-secrecy/privilege consequence should be reviewed by counsel before the public site is relied upon as a court annex.
 
 Google Drive package root: 1YC23c3e67WKNHQhQS68yhTVRiU1AooBz (01_SOURCE_PDFS, 02_CONTEXTUAL_ANALYSIS, 03_CONTROL_MANIFESTS).
+
+### Pre-7 June institutional knowledge — strengthened 24 September 2026
+
+The readiness proposition is now supported by two different pre-7-June knowledge bridges and one later direct-communication bridge:
+
+1. **AC knowledge — 23 January 2018.** Rosa Gual recorded immediately after speaking with Francisco de Borja Rodríguez-Batllori that she had updated him on the investor calls and that he stated that, if the entirety of the recognised claims were consigned, he would not oppose payment to creditors or conclusion of the concurso. He declined to meet the investors on the basis that financing belonged to AWESWELL's sphere and that he had to act as LPB liquidator. This proves reported AC knowledge of the investor/full-consignation/conclusion route months before 7 June; it does not prove acceptance of every financing condition or a duty to negotiate with investors.
+
+2. **Court notice — filed AWESWELL pleading of 1 February 2018 (CUA-FIL-004; LexNET receipt CUA-REC-004).** The pleading expressly told the insolvency court that several investors had shown interest in providing AWESWELL the funds needed for LPB to overcome insolvency, seek conclusion under Article 176 LC and continue activity outside the concurso. This is formal pre-7-June court notice of the funded Article 176 route. It is stronger than a later reconstruction of what the court supposedly knew.
+
+3. **Direct judge/AC communication — 13 June 2018.** Daniel Irigoyen's contemporaneous meeting/report supplies a different and later bridge: personal presentation of the funded-exit architecture to the judge and AC after the 7 June material-control event. Keep this date exact; it must not be retrodated.
+
+**Controlled conclusion:** before 7 June 2018 there was (a) a professionally developed Article 176 route, (b) a documented investor/funding process, (c) reported AC knowledge, and (d) formal court notice through a filed pleading. The 13 June meeting then adds direct personal communication to the judge and AC. The repository should therefore distinguish **readiness + institutional knowledge** from the narrower and still-unproved proposition of **complete pre-7-June consignation / final Article 176 filing**.
+
+This distinction is the defensive answer to any later attempt to equate absence of proof of the final procedural step with absence of a real exit project or absence of institutional knowledge.
