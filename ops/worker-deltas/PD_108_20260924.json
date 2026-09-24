@@ -1,0 +1,71 @@
+{
+  "schema": "por-derecho.worker-delta.v1",
+  "package_id": "PD-108-20260924-CONTINUITY",
+  "control_date": "2026-09-24",
+  "status": "WORKER_PRESERVED_PENDING_CANONICAL_INTEGRATION",
+  "canonical_register": "assets/data/institutional-communications-register-v1.json",
+  "replacement_register": false,
+  "canonical_ids_allocated": false,
+  "existing_event_links": {
+    "A01": "PD-SP-EVT-0181",
+    "A02_principal": "PD-SP-EVT-0182",
+    "A02_supplement": "PD-SP-EVT-0183",
+    "A03_CGPJ": "PD-SP-EVT-0184",
+    "A04_TSJC": "PD-SP-EVT-0185",
+    "A05_Coordinacion": "PD-SP-EVT-0186",
+    "A06_Ministry": "PD-SP-EVT-0187"
+  },
+  "new_atomic_object_denominator": 5,
+  "objects": [
+    {"local_key":"notice-1","kind":"electronic_availability_notice","date":"2026-09-24","evidence":"authorised_mailbox_read","distinct_from":"notice-2","private_details":"withheld","canonical_id":null},
+    {"local_key":"notice-2","kind":"electronic_availability_notice","date":"2026-09-24","evidence":"authorised_mailbox_read","same_underlying_communication_as":"notice-1","private_details":"withheld","canonical_id":null},
+    {"local_key":"oficio-108","kind":"official_communication","reference":"108-2026","document_date":"2026-09-24","native_bytes":371631,"native_pages":1,"native_sha256":"20eee667e206c982a293a8dd3f7ade2041cbbfb0a113bb864def7a8ec9307a5f","native_custody":"private","state":"RECEIPT_AND_INFORMATION_REQUEST_REPORTED_RESOLUTION_PENDING","canonical_id":null},
+    {"local_key":"outbound-1","kind":"sent_communication","date":"2026-09-24","state":"SENT_PACKAGE_VERIFIED","attachment_count":4,"private_details":"withheld","canonical_id":null},
+    {"local_key":"outbound-2","kind":"sent_communication","date":"2026-09-24","state":"SENT_PACKAGE_VERIFIED","attachment_count":1,"private_details":"withheld","canonical_id":null}
+  ],
+  "source_deduplication": {
+    "distinct_native_attachment_binaries_in_two_sends":4,
+    "oficio_reused_not_counted_as_two_decisions":true,
+    "notice_emails_not_byte_identical_duplicates":true
+  },
+  "a06_relationship": {
+    "existing_state":"REGISTERED_RECEIPT_HASH_VERIFIED_HANDLING_PENDING",
+    "registration":"REGAGE26e00082058165",
+    "successor_source":"oficio-108",
+    "relationship":"STRONGLY_SUPPORTED_NOT_EXPLICITLY_CROSS_REFERENCED",
+    "printed_REGAGE_in_oficio":false,
+    "automatic_exact_filing_state_upgrade":false,
+    "preserve_prior_rejected_route":true
+  },
+  "required_propagation": [
+    "Add the official source and each independently evidenced communication to the existing register after deduplication; keep private locators outside Git.",
+    "Add a bounded A06 successor annotation without inventing a printed REGAGE cross-reference.",
+    "Reconcile CGPJ A03 with its 20 September receipt and later communication, preserving presentation/incorporation distinctions.",
+    "Retain A02 principal/supplement and the 23 September direct follow-up; neither is a criminal appeal.",
+    "Update relevant existing chronology/proceeding/source/gap backlinks, including the three distinct June references and supplements.",
+    "Preserve the private counsel-use analysis without publishing strategy or claiming an AP filing.",
+    "Check the earlier source-transcription recovery queue before relying on full-source or 100-percent-mastery labels.",
+    "Apply existing public-reader/privacy controls before any PDF derivative or viewer release; verify exact deployed SHA and links."
+  ],
+  "open_production": [
+    "Ministry request and exact originating-registration correspondence",
+    "TSJC response and attachments if already created",
+    "Ref21/Ref22/Ref24 certified entry/reparto and subsequent association histories",
+    "Official annex inventories and complete certified court indices",
+    "Signed 29 July Fiscal report, author/assignment and transmitted corpus",
+    "Native judicial decisions and effective service records",
+    "Current CGPJ disposition, incorporation and transmission records",
+    "Counsel response and any actual AP filing or production order"
+  ],
+  "gates": {
+    "private_source_custody":"see_private_audit",
+    "full_mailbox_export":false,
+    "canonical_register_updated":false,
+    "main_merged":false,
+    "deployed":false,
+    "public_pdf_viewer_deployed":false,
+    "new_email_sent_by_this_audit":false,
+    "new_court_filing_by_this_audit":false,
+    "universal_mastery_claim":false
+  }
+}
