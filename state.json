@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 40,
   "owner": "1813:9fb1b1a340908ae878a516cde7b895ff2ebe924e",
-  "phase": "ACCEPTED",
+  "phase": "MERGE_PENDING",
   "pr": 1813,
   "base_sha": "57f8db9e70fcf7ac35e1cfe7bbfd47df73cffa73",
   "candidate_sha": "9fb1b1a340908ae878a516cde7b895ff2ebe924e",
@@ -2245,8 +2245,15 @@
         ],
         "bootstrap_recovery": true
       }
+    },
+    {
+      "phase": "MERGE_PENDING",
+      "at": "2026-09-24T14:19:10.752956Z",
+      "evidence": {
+        "pr": 1813
+      }
     }
   ],
   "recovery_basis": "Explicit owner recovery of exact completed merge; not a retrospective exclusive-lock claim.",
-  "updated_at": "2026-09-24T14:19:09.435354Z"
+  "updated_at": "2026-09-24T14:19:10.752956Z"
 }
