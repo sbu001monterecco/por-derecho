@@ -1,0 +1,43 @@
+{
+  "schema": "por-derecho.oficio-108-2026-public-state.v1",
+  "control_date": "2026-09-24",
+  "official_reference": "108-2026",
+  "document_date": "2026-09-24",
+  "source_state": "OFFICIAL_COMMUNICATION_RECEIVED_INFORMATION_REQUEST_REPORTED_RESOLUTION_PENDING",
+  "native_private_source": {
+    "sha256": "20eee667e206c982a293a8dd3f7ade2041cbbfb0a113bb864def7a8ec9307a5f",
+    "pages": 1,
+    "custody": "PRIVATE_SIGNED_NATIVE_CONTROLS"
+  },
+  "public_viewer": {
+    "path": "evidence/justice/2026/oficio-108-2026/viewer.html",
+    "mode": "BROWSER_GENERATED_PUBLIC_SAFE_PDF_TRANSCRIPTION",
+    "privacy": "CONTACT_AND_SIGNATURE_VERIFICATION_BLOCKS_EXCLUDED"
+  },
+  "relationship_to_A06": {
+    "registration": "REGAGE26e00082058165",
+    "state": "STRONGLY_SUPPORTED_NOT_EXPLICITLY_CROSS_REFERENCED",
+    "printed_in_oficio": false
+  },
+  "cgpj_successor": {
+    "registration": "REGAGE26e00083453059",
+    "state": "REGISTERED_SELF_CONTAINED_17_PAGE_DOCUMENT_HASH_VERIFIED",
+    "incorporation": "NOT_ESTABLISHED"
+  },
+  "counsel_use": {
+    "state": "SENT_TO_COUNSEL_VERIFIED_AP_FILING_NOT_ESTABLISHED"
+  },
+  "proves": [
+    "Communicated receipt",
+    "Ministry reports requesting information from the TSJC Government Secretariat",
+    "Assessment and future resolution pending"
+  ],
+  "does_not_prove": [
+    "Allowance of allegations",
+    "Disciplinary opening",
+    "Irregularity or responsibility",
+    "Originating REGAGE printed in the oficio",
+    "TSJC response already issued",
+    "CGPJ incorporation or Audiencia Provincial filing"
+  ]
+}
