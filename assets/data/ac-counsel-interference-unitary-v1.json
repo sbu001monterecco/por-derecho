@@ -138,5 +138,20 @@
     "Do not state the IA caused every counsel withdrawal.",
     "Keep Joaquín's apology and lawyer-client breakdown as contrary evidence.",
     "Keep Cristo restorative/non-adverse classification."
-  ]
+  ],
+  "anti_fragmentation_domino_rule": {
+    "status": "CONTROLLING_24SEP2026",
+    "documented": [
+      "29–30-May-2018 ONA/Stoneweg/Cuatrecasas correspondence advancing transaction, DD/term-sheet and concurso-facing document",
+      "7-Jun-2018 contemporaneous asserted-possession emails plus immediate complaint/evidence-preservation response",
+      "12-Jun-2020 Daniel/Patricia correspondence expressly rejecting Parrilla's final fee proposal and moving toward insolvency incident"
+    ],
+    "attributed_unitary_position": "Gil Marer treats the 2020 rejection as a downstream act of resistance within one alleged chain from funded exit through 7-Jun disruption, defence/professional conflict, payment/intermediation and downstream loss/recovery consequences.",
+    "rules": [
+      "Do not treat the 28-May client-side reply as consent or validation.",
+      "Do not isolate the fee episode as a standalone billing dispute when analysing the wider causal chronology.",
+      "Do not claim the 12-Jun rejection itself proves sabotage, common intent, criminality or each upstream causal link.",
+      "Every domino/arrow requires its own source bridge, contrary evidence and actor-specific attribution."
+    ]
+  }
 }
