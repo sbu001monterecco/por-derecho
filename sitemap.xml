@@ -1327,17 +1327,4 @@
     <html:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/platform-integrity-evidence/" />
     <html:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/platform-integrity-evidence/" />
   </url>
-
-  <url>
-    <loc>https://sbu001monterecco.github.io/por-derecho/en/public-interest-support/</loc><lastmod>2026-09-24</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/public-interest-support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/apoyo-interes-publico/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/public-interest-support/"/>
-  </url>
-  <url>
-    <loc>https://sbu001monterecco.github.io/por-derecho/es/apoyo-interes-publico/</loc><lastmod>2026-09-24</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/public-interest-support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/apoyo-interes-publico/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/public-interest-support/"/>
-  </url>
 </urlset>
