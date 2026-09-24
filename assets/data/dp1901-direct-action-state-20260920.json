@@ -1,13 +1,13 @@
 {
   "schema": "por-derecho.dp1901-direct-action-state.v1",
-  "control_date": "2026-09-23",
+  "control_date": "2026-09-24",
   "control_timezone": "Atlantic/Canary",
-  "status": "13_REGISTERED_POST_FILING_FOLLOWUP_OPEN",
+  "status": "13_REGISTERED_POST_FILING_FOLLOWUP_OPEN_WITH_108_2026_SUCCESSORS",
   "counts": {
     "candidates": 13,
     "registered_actions": 13,
     "held_not_filed": 0,
-    "registration_events": 14
+    "registration_events": 16
   },
   "legal_effect": {
     "receipt_proves": "Presentation/registration metadata and, where expressly stated, listed attachment hashes.",
@@ -91,7 +91,16 @@
       "registered_at": "2026-09-20 12:32:19",
       "purpose": "Supervening fact, preservation and functional classification.",
       "proof": "Receipt proves registration; classification, admission, examination and action remain unproved.",
-      "canonical_event_id": "PD-SP-EVT-0184"
+      "canonical_event_id": "PD-SP-EVT-0184",
+      "successor_20260924": {
+        "state": "REGISTERED_SELF_CONTAINED_17_PAGE_DOCUMENT_HASH_VERIFIED",
+        "first_registration": "REGAGE26e00083448218",
+        "controlling_registration": "REGAGE26e00083453059",
+        "document_pages": 17,
+        "document_sha256": "0e27fcd481c29a0b69837fc5cdeb393ddf9fbbb7c03390f6c6b7409efe5228b4",
+        "proof": "Later receipt proves registration of one self-contained 17-page PDF containing all four annexes as visible pages; it does not prove four separately registered native annex files, incorporation into Alzada 286/2026, admission, examination or decision.",
+        "do_not_repeat": true
+      }
     },
     {
       "id": "A04",
@@ -119,7 +128,7 @@
     },
     {
       "id": "A06",
-      "state": "REGISTERED_RECEIPT_HASH_VERIFIED_HANDLING_PENDING",
+      "state": "REGISTERED_RECEIPT_HASH_VERIFIED_OFFICIAL_INFORMATION_REQUEST_REPORTED_RESOLUTION_PENDING",
       "destination": "Secretaría General para la Innovación y Calidad del Servicio Público de Justicia",
       "rejected_registration": "REGAGE26e00073341477",
       "purpose": "National supervisory incorporation within lawful competence.",
@@ -187,7 +196,18 @@
         "illustration_count": 6
       },
       "do_not_repeat_whole_filing": true,
-      "canonical_event_id": "PD-SP-EVT-0187"
+      "canonical_event_id": "PD-SP-EVT-0187",
+      "successor_20260924": {
+        "official_reference": "108-2026",
+        "document_date": "2026-09-24",
+        "source_state": "OFFICIAL_COMMUNICATION_RECEIVED_INFORMATION_REQUEST_REPORTED_RESOLUTION_PENDING",
+        "relationship_to_registration": "STRONGLY_SUPPORTED_NOT_EXPLICITLY_CROSS_REFERENCED",
+        "printed_registration_reference": false,
+        "public_derivative_sha256": "96eb88b08d85c4dff21f26c14f52005100c0a0d294b81d2ceaf4c2d8f5a1abae",
+        "public_state_record": "assets/data/oficio-108-2026-public-state.json",
+        "viewer": "evidence/justice/2026/oficio-108-2026/viewer.html?doc=oficio108",
+        "proof": "Ministry communication reports receipt and an information request to the TSJC Government Secretariat, with assessment and resolution pending. It does not establish acceptance of allegations or print the originating REGAGE."
+      }
     },
     {
       "id": "A07",
