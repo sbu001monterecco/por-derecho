@@ -1,0 +1,64 @@
+{
+  "schema": "por-derecho.pd108-integration.v2",
+  "package_id": "PD-108-20260924-CONTINUITY",
+  "control_date": "2026-09-24",
+  "status": "CANONICAL_REGISTER_AND_VIEWER_INTEGRATION_CANDIDATE",
+  "official_document": {
+    "reference": "108-2026",
+    "event_id": "PD-SP-EVT-0497",
+    "native_sha256": "20eee667e206c982a293a8dd3f7ade2041cbbfb0a113bb864def7a8ec9307a5f",
+    "public_derivative_sha256": "96eb88b08d85c4dff21f26c14f52005100c0a0d294b81d2ceaf4c2d8f5a1abae",
+    "a06_bridge": "STRONGLY_SUPPORTED_NOT_EXPLICITLY_CROSS_REFERENCED"
+  },
+  "canonical_events": [
+    "PD-SP-EVT-0497",
+    "PD-SP-EVT-0498",
+    "PD-SP-EVT-0499",
+    "PD-SP-EVT-0500",
+    "PD-SP-EVT-0501",
+    "PD-SP-EVT-0502",
+    "PD-SP-EVT-0503",
+    "PD-SP-EVT-0504"
+  ],
+  "registration_successor": {
+    "registration": "REGAGE26e00083453059",
+    "event_id": "PD-SP-EVT-0502",
+    "state": "REGISTERED_SELF_CONTAINED_17_PAGE_DOCUMENT_HASH_VERIFIED",
+    "sha256": "0e27fcd481c29a0b69837fc5cdeb393ddf9fbbb7c03390f6c6b7409efe5228b4",
+    "pages": 17,
+    "separate_native_annex_registration": "NOT_ESTABLISHED"
+  },
+  "viewer": {
+    "record": "assets/data/pd108-public-viewer-v1.json",
+    "transport": "evidence/mjusticia/108-2026/public-redacted/pdf-transport-v1.json",
+    "routes_es": [
+      "es/cgpj-comision-permanente-sala-lectura/",
+      "es/tsj-canarias-exp-gub-38-2026-alzada-presentada/"
+    ],
+    "routes_en": [
+      "en/cgpj-permanent-commission-reader-room/",
+      "en/tsj-canarias-exp-gub-38-2026-appeal-filed/"
+    ]
+  },
+  "privacy": {
+    "native_public": false,
+    "public_derivative_redactions": [
+      "contact details",
+      "signature/verification/QR block"
+    ],
+    "private_counsel_email_public": false
+  },
+  "open_evidence": [
+    "CGPJ incorporation/current decision and notification",
+    "Ministry request to TSJC and any TSJC response/annexes",
+    "certified Ref.21/Ref.22/Ref.24 intake/reparto/association histories",
+    "signed 29 July Fiscal report and transmitted corpus",
+    "counsel response and any actual Audiencia Provincial filing"
+  ],
+  "proof_boundaries": [
+    "Registration does not establish CGPJ incorporation, admission, examination or decision.",
+    "The oficio does not print REGAGE26e00082058165.",
+    "The two availability emails are not two substantive decisions.",
+    "Counsel notification does not establish an AP filing."
+  ]
+}
