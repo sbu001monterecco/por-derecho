@@ -421,6 +421,42 @@
       "documented": "BOE legal texts and facts only by reference to their source pages.",
       "alleged": "Application to Sun Park as an attributed, falsifiable hypothesis.",
       "open": "Attribution, causation, quantum, defences and the precise remedy."
+    },
+    {
+      "path": "/es/comunidad-instrumentalizacion/",
+      "lang": "es",
+      "focus": "impairment",
+      "contribution": "La página general de Comunidad/CEXP aporta la arquitectura de autoridad y explotación necesaria para distinguir derechos operativos de propiedad e hipoteca.",
+      "documented": "Actas, instrumentos y registros sólo en la medida individualmente documentada.",
+      "alleged": "Que la instrumentalización o desplazamiento de la estructura operativa degradó valor, control o refinanciabilidad.",
+      "open": "Continuidad CEXP, autoridad por periodo, atribución y traducción del efecto operativo a daño económico."
+    },
+    {
+      "path": "/en/community-instrumentalisation/",
+      "lang": "en",
+      "focus": "impairment",
+      "contribution": "The general Community/CEXP page supplies the authority and operating architecture needed to distinguish operating rights from property and mortgage security.",
+      "documented": "Minutes, instruments and records only to the extent individually sourced.",
+      "alleged": "That instrumentalisation or displacement of the operating structure impaired value, control or refinanceability.",
+      "open": "CEXP continuity, authority by period, attribution and translation of operating effect into economic damage."
+    },
+    {
+      "path": "/es/concurso-36-2012-masa-activa-2018-2021/",
+      "lang": "es",
+      "focus": "legal-consequences",
+      "contribution": "La reconstrucción de masa activa permite comprobar qué valor pertenecía realmente a LPB, qué quedaba fuera y cómo cualquier deterioro alegado afecta al déficit, remanente y posición neta del crédito.",
+      "documented": "Inventario, masa activa y actos concursales según fuentes controladas.",
+      "alleged": "Que parte del valor perdido o déficit posterior procede de deterioro atribuible y no de una caída externa neutral.",
+      "open": "Perímetro patrimonial exacto, valor contrafactual, causalidad, daños y efecto sobre el crédito."
+    },
+    {
+      "path": "/en/insolvency-36-2012-active-estate-2018-2021/",
+      "lang": "en",
+      "focus": "legal-consequences",
+      "contribution": "The active-estate reconstruction tests what value actually belonged to LPB, what remained outside the estate and how alleged impairment bears on deficiency, residual value and the net claim position.",
+      "documented": "Inventory, active-estate and insolvency acts as source-controlled.",
+      "alleged": "That part of later lost value or deficiency reflects attributable impairment rather than neutral external decline.",
+      "open": "Exact patrimonial perimeter, counterfactual value, causation, damages and effect on the claim."
     }
   ]
 }
