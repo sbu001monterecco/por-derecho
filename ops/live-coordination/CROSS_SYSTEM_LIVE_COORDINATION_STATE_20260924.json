@@ -15,7 +15,10 @@
     "default_branch": "main",
     "active_mirror_mr": 573,
     "role": "mirror_review_ci_recovery",
-    "known_state": "MR_OPEN_WITH_REVIEW_AND_CI"
+    "known_state": "MR_OPEN_WITH_REVIEW_AND_CI",
+    "instruction_hook_state": "BLOCKED_BY_PROTECTED_SUCCESSOR_POLICY",
+    "parity_state": "FUNCTIONAL_PARITY",
+    "note": "Protocol/state files are mirrored; protected AGENTS.md and CHATGPT_START_HERE.md remain at GitLab main predecessor bytes pending a separately reviewed successor."
   },
   "google_drive": {
     "chatgpt_folder_id": "1u9IYxjk64966n8kns4Zaw3R_6-AertPd",
