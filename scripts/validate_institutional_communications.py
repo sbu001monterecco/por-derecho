@@ -24,6 +24,7 @@ from reconcile_institutional_communications import (
     KEY_EVENTS,
     MAILBOX_COHORT,
     MAILBOX_EXPECTED,
+    SUPPLEMENTAL_COHORT_20260924,
     PRIVATE_MANIFEST_ROWS,
     PRIVATE_MANIFEST_SHA256,
     REGAGE_STATUS_EXPORT_EXPECTED,
@@ -207,7 +208,8 @@ def validate_register(
     if [event.get("event_id") for event in authority_events] != expected_authority_ids:
         errors.append("19-event public-authority communication set changed")
     expected_status_events, expected_status_control = load_regage_status_export_events()
-    expected_event_total = BASELINE_EXPECTED + MAILBOX_EXPECTED + len(KEY_EVENTS) + len(expected_status_events)
+    supplemental_count = sum(event.get("cohort") == SUPPLEMENTAL_COHORT_20260924 for event in events)
+    expected_event_total = BASELINE_EXPECTED + MAILBOX_EXPECTED + len(KEY_EVENTS) + len(expected_status_events) + supplemental_count
     if denominator.get("event_rows_total") != len(events) or len(events) != expected_event_total:
         errors.append(f"event-row denominator drift: expected {expected_event_total}, found {len(events)}")
     try:
