@@ -1,13 +1,14 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 40,
-  "owner": "1813:9fb1b1a340908ae878a516cde7b895ff2ebe924e",
-  "phase": "VERIFIED_FOR_SCOPE",
-  "pr": 1813,
-  "base_sha": "57f8db9e70fcf7ac35e1cfe7bbfd47df73cffa73",
-  "candidate_sha": "9fb1b1a340908ae878a516cde7b895ff2ebe924e",
-  "run_id": 36011868756,
-  "claimed_at": "2026-09-24T14:19:08.377887Z",
+  "fence": 41,
+  "owner": "1839:7b1bb44e21dd4b061e6431491398ede41e02e395",
+  "phase": "CLAIMED",
+  "pr": 1839,
+  "base_sha": "1638dd877c506699cd835ecb86e20ac5b9e18443",
+  "candidate_sha": "7b1bb44e21dd4b061e6431491398ede41e02e395",
+  "run_id": 36066577496,
+  "claimed_at": "2026-09-24T22:17:48.088031Z",
+  "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
     {
       "pr": 1470,
@@ -2272,96 +2273,5 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-09-24T14:19:09.435354Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "publication-integrity",
-            "id": 107650389059,
-            "conclusion": "success"
-          },
-          {
-            "name": "PD release acceptance",
-            "id": 107650388306,
-            "conclusion": "success"
-          }
-        ],
-        "bootstrap_recovery": true
-      }
-    },
-    {
-      "phase": "MERGE_PENDING",
-      "at": "2026-09-24T14:19:10.752956Z",
-      "evidence": {
-        "pr": 1813
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-09-24T14:19:11.957018Z",
-      "evidence": {
-        "merge_sha": "250ec3198389f71909c4fffff50b7230f851f466"
-      }
-    },
-    {
-      "phase": "DEPLOYED",
-      "at": "2026-09-24T14:19:14.117757Z",
-      "evidence": {
-        "pages_run_id": 36006895498,
-        "merge_sha": "250ec3198389f71909c4fffff50b7230f851f466"
-      }
-    },
-    {
-      "phase": "VERIFIED_FOR_SCOPE",
-      "at": "2026-09-24T14:19:17.320468Z",
-      "evidence": {
-        "merge_sha": "250ec3198389f71909c4fffff50b7230f851f466",
-        "pages_run_id": 36006895498,
-        "exact_matches": [
-          {
-            "path": "assets/data/jtp-visual-pair-20260924.json",
-            "sha256": "df2c320b26d6cddd776c51534fbd748f8de15922fbb5d4bba000ed432d820f96",
-            "bytes": 3370
-          },
-          {
-            "path": "assets/jtp-representation-invoice-20260924-en.svg",
-            "sha256": "9bfb44ce628197573b058cbb9ea893c4373f2f0c988ae5bc8daee0c228d6e332",
-            "bytes": 5735
-          },
-          {
-            "path": "assets/jtp-representation-invoice-20260924-es.svg",
-            "sha256": "987db9ad12fc05a416129e3ec334cf4a7a8c75e25092d88b42eb5d714d65a95a",
-            "bytes": 5856
-          },
-          {
-            "path": "en/estate-payment-counsel-independence/index.html",
-            "sha256": "cee31ef9ffd49884df5130be90f23d5fbe9d77f936395dc85da3a6e2296b65bf",
-            "bytes": 39281
-          },
-          {
-            "path": "en/index.html",
-            "sha256": "ed69a69a268c60c53ad61e63a2043555cba6af3a8af33ec43eb3784b324d9fbd",
-            "bytes": 231490
-          },
-          {
-            "path": "es/index.html",
-            "sha256": "30b2202517b98a387e4e46ffb3589e6808a877ebe3032235f0089d48ca20c262",
-            "bytes": 240640
-          },
-          {
-            "path": "es/pago-masa-independencia-defensa/index.html",
-            "sha256": "96df7aa7ac495d035fda9bd89d4189e92e197ee23d6fc47665a95a902acb19e9",
-            "bytes": 40635
-          }
-        ],
-        "pending": [],
-        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
-      }
-    }
-  ],
-  "recovery_basis": "Explicit owner recovery of exact completed merge; not a retrospective exclusive-lock claim.",
-  "updated_at": "2026-09-24T14:19:17.320468Z"
+  "checkpoints": []
 }
