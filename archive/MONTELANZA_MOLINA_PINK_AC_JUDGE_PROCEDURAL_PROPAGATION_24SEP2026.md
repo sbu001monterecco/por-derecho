@@ -11,13 +11,33 @@ The verified Track A route in the controlled repository is:
 
 **JPI no. 4 Arrecife · JV 1260/2011 → Roll 793/2012 → Audiencia Provincial de Las Palmas · Sentencia 89/2014 (13-Jan-2014).**
 
-No canonical proceeding labelled **“ICFE”** has been located in the current repository/Drive control set. Until a primary source fixes that label, do not substitute it for the verified JPI/AP identifiers.
+Earlier references to **“ICFE”** are superseded: **“ICFE” was a voice-to-text error for “Audiencia Provincial,” not a separate proceeding or institution.** The verified route is the JPI/appeal chain stated above.
 
 The relevant Spanish company in Track B is **Monterecco Sun Park, S.L./S.R.L. → Pink Canary Services, S.L./S.L.U. (same Spanish legal person)**. It is separate from the UK company now named **AWESWELL LIMITED**. This control does not create a separate legal person called “Big Canary”.
 
 ## 2. Controlling conclusion
 
-The strongest source-controlled analysis is not “the same case twice”. It is a **procedural-propagation problem across two distinct tracks sharing disputed assumptions about exploitation authority, possession, keys, Community/CEXP competence, operating costs and the legal/economic status of the hotel as an integrated business over divided titles.**
+The controlling thesis is stronger than mere “procedural propagation”. It is a **functional-repetition / operator-displacement hypothesis across two legally distinct routes**.
+
+**Track A** used owner-specific possession/exploitation litigation concerning 18 dissident units, later extended against Monterecco, to remove those units from the operative reach attributed to CEXP/Monterecco and ultimately obtain an adverse appellate result against Monterecco/Pink for that bounded unit perimeter. **Track B** later used the insolvency-administration route — contract termination/rent litigation, possession and keys narratives, later calificación propositions and their proposition-specific judicial adoption — to challenge, burden and displace Pink’s operating position within the LPB/concurso perimeter. The concursal judge belongs on Track B as an adjudicator who adopted or rejected particular propositions; that is legally different from originating Track A.
+
+The commonality to test is therefore **same practical direction / different juridical mechanism**: fragmentation or exclusion of the hotel operator from an economically integrated hotel, first through private-owner litigation and later through insolvency/institutional processes. The investigative question is whether Track B arose independently, merely converged with Track A, reused assumptions or evidence from it, or functionally broadened the earlier exclusionary effect — and, proposition by proposition, who knew, supplied, adopted, rejected or benefited from each step.
+
+This thesis does **not** establish a common plan, concert, criminal agreement, transferred intent or collective liability. Those require independent proof. The bridge must remain actor-specific, capacity-specific and source-specific.
+
+### 2A. Gil Marer's allegation — mutual / cross-proceeding instrumentalisation
+
+Gil Marer's current investigative position goes further than parallel effect. He alleges a **reciprocal instrumentalisation architecture** in which private actors and their successors, the insolvency administrator, and later judicial acts can function as procedural or evidential instruments for one another across otherwise distinct proceedings.
+
+The allegation to test is not that these actors are legally interchangeable. It is that **acts generated in one lane may be reused in another lane as inputs, leverage, legitimating premises, evidential shortcuts, enforcement effects or later institutional authority**. On that hypothesis:
+
+- private-owner pleadings, possession theories, Community acts and adverse judgments may supply propositions later useful in the concurso;
+- AC reports, litigation positions, certifications, testimony or possession narratives may supply propositions later useful to private actors or later judicial reasoning;
+- judicial orders and judgments may then be invoked downstream by the AC or private actors as institutional validation or practical leverage;
+- later private acquisitions, Community control or successor positions may benefit from procedural/evidential states produced in earlier private, concursal or judicial tracks;
+- the same proposition can therefore travel **private actor → AC → court**, **AC → court → private actor**, **private actor → court → AC**, or through other source-proved sequences.
+
+For this workspace, **“interchangeably” means functional cross-use, not identity merger**. No relationship, succession, repeated outcome or downstream benefit proves a common plan, instruction, corrupt agreement, transferred knowledge or criminal intent. Every claimed cross-use must identify the exact originating act or proposition, the receiving actor, the knowledge route, the later source that actually adopts or deploys it, the practical effect, contrary evidence and an innocent alternative.
 
 ### Track A — private actors / minority-unit exploitation litigation
 

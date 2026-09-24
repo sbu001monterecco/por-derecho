@@ -86,6 +86,16 @@ The critical ladder is mandatory:
 
 No actor-specific criminal conclusion may be stated without element-by-element primary evidence and the competent procedural outcome. Criticism must identify the act, actor, contemporaneous source, knowledge, materiality, effect on the decision, benefit/harm, causation, contrary evidence and innocent alternative.
 
+### 3B. Reciprocal instrumentalisation hypothesis — linked control
+
+Gil Marer further alleges that the historic private-actor perimeter and its successors, the insolvency administrator, and later judicial acts have been **functionally instrumentalised across proceedings in more than one direction**. The allegation is not that those actors are legally identical or that a judgment automatically proves coordination. The question is whether pleadings, possession theories, Community acts, AC reports/testimony, judicial findings and later procedural effects generated in one proceeding were then adopted, invoked or operationalised in another proceeding for another actor's practical benefit or against the same operating/ownership perimeter.
+
+This must be tested as a directed source graph rather than a narrative shortcut:
+
+`originating actor/source → exact proposition/act → receiving actor → knowledge route → later proceeding/source → adoption/use → practical effect → benefit/harm → contrary evidence → innocent alternative`.
+
+The dedicated control is `archive/MONTELANZA_MOLINA_PINK_AC_JUDGE_PROCEDURAL_PROPAGATION_24SEP2026.md`, with reciprocal public links from the bilingual flagship pages. “Interchangeable” is therefore limited to **functional cross-use**; it does not merge persons, entities, estates, capacities, proceedings, knowledge, intent or liability.
+
 ## 4. Key appellate source findings — use with precision
 
 The appellate source is important because the complete page-faithful review records three points that must remain separate:
