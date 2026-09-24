@@ -1,0 +1,51 @@
+name: Validate human AI narrative
+
+on:
+  pull_request:
+    paths:
+      - 'AGENTS.md'
+      - 'governance/HUMAN_STORY_AI_LEGAL_RECOVERY_NARRATIVE_PROTOCOL_24SEP2026.md'
+      - 'archive/POR_DERECHO_HUMAN_STORY_AI_UNITARY_DIGEST_24SEP2026.md'
+      - 'en/one-person-one-record-ai-legal-recovery/**'
+      - 'es/una-persona-un-expediente-ia-recuperacion-juridica/**'
+      - 'en/public-interest-support/index.html'
+      - 'es/apoyo-interes-publico/index.html'
+      - 'scripts/validate_human_ai_narrative.py'
+      - 'tests/test_human_ai_narrative_protocol_20260924.py'
+      - '.github/workflows/validate-human-ai-narrative.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'AGENTS.md'
+      - 'governance/HUMAN_STORY_AI_LEGAL_RECOVERY_NARRATIVE_PROTOCOL_24SEP2026.md'
+      - 'archive/POR_DERECHO_HUMAN_STORY_AI_UNITARY_DIGEST_24SEP2026.md'
+      - 'en/one-person-one-record-ai-legal-recovery/**'
+      - 'es/una-persona-un-expediente-ia-recuperacion-juridica/**'
+      - 'en/public-interest-support/index.html'
+      - 'es/apoyo-interes-publico/index.html'
+      - 'scripts/validate_human_ai_narrative.py'
+      - 'tests/test_human_ai_narrative_protocol_20260924.py'
+      - '.github/workflows/validate-human-ai-narrative.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: human-ai-narrative-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v6.0.0
+        with:
+          python-version: '3.12'
+      - name: Validate mandatory human-story controls
+        run: python3 scripts/validate_human_ai_narrative.py
+      - name: Run narrative protocol unit tests
+        run: python3 -m unittest tests/test_human_ai_narrative_protocol_20260924.py -v
