@@ -160,3 +160,52 @@ footer strong{color:#fff}
   .footer-grid{display:block}
   .footer-right{text-align:left;margin-top:16px}
 }
+
+
+/* Unified First Capital / Scale Capital UX — 24 Sep 2026 */
+.route-band{background:#f1ecdf;padding:68px 0;border-bottom:1px solid #ddd2bb}
+.route-intro{max-width:850px;margin-bottom:28px}
+.route-intro h2{font-family:Georgia,serif;font-weight:500;font-size:clamp(2rem,3.7vw,3.35rem);line-height:1.06;letter-spacing:-.03em;margin-bottom:14px}
+.route-intro>p:last-child{color:#5e6b71;max-width:760px}
+.route-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.route-card{display:block;text-decoration:none;border:1px solid rgba(11,23,29,.13);border-radius:18px;padding:30px 30px 28px;background:#fff;box-shadow:0 12px 38px rgba(6,17,22,.06);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+.route-card:hover,.route-card:focus-visible{transform:translateY(-2px);box-shadow:0 18px 48px rgba(6,17,22,.11);border-color:#b69a61;outline:none}
+.route-card.first{background:linear-gradient(145deg,#fbf7ec,#f1ead8)}
+.route-card.scale{background:linear-gradient(145deg,#0c242b,#14343c);color:#fff;border-color:rgba(255,255,255,.12)}
+.route-label{display:block;font-size:.68rem;letter-spacing:.17em;font-weight:800;color:var(--green);margin-bottom:10px}
+.route-card.scale .route-label{color:var(--gold2)}
+.route-card>strong{display:block;font-family:Georgia,serif;font-size:2.15rem;font-weight:500;margin-bottom:9px}
+.route-card p{font-size:1rem;margin-bottom:15px;max-width:520px}
+.route-card.first p,.route-card.first small{color:#566269}
+.route-card.scale p,.route-card.scale small{color:#c0cdd0}
+.route-card small{display:block;font-size:.78rem;line-height:1.5;min-height:38px}
+.route-card b{display:block;margin-top:24px;font-size:.82rem;letter-spacing:.04em}
+.route-card.scale b{color:var(--gold2)}
+.route-cta{margin-top:30px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-top:1px solid var(--line);padding-top:22px}
+.route-cta div strong,.route-cta div span{display:block}
+.route-cta div span{font-size:.83rem;color:#617077;margin-top:3px}
+.dark-button{background:var(--deep)!important;color:#fff!important;border-color:var(--deep)!important}
+.outline-dark{background:transparent!important;color:var(--deep)!important;border-color:rgba(8,25,31,.35)!important}
+.dual-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.scale-section{background:#eef1ee}
+.scale-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.scale-grid article{background:#fff;border:1px solid var(--line);border-radius:15px;padding:25px 22px;min-height:225px}
+.scale-grid article span{font-family:Georgia,serif;color:var(--gold);font-size:.95rem}
+.scale-grid h3{font-family:Georgia,serif;font-size:1.28rem;font-weight:500;margin:24px 0 8px}
+.scale-grid p{color:#607078;font-size:.88rem;margin-bottom:0}
+.scale-note{margin-top:24px;background:#0c242b;color:#fff;border-radius:14px;padding:22px 24px}
+.scale-note strong{display:block;font-family:Georgia,serif;font-size:1.25rem;font-weight:500;margin-bottom:6px}
+.scale-note p{color:#c2cfd2;margin-bottom:0;font-size:.9rem}
+@media (max-width:900px){
+  .route-grid{grid-template-columns:1fr}
+  .scale-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .route-band{padding:54px 0}
+  .route-card{padding:24px 22px}
+  .route-card small{min-height:0}
+  .route-cta{align-items:flex-start;flex-direction:column}
+  .scale-grid{grid-template-columns:1fr}
+  .dual-actions{display:grid;grid-template-columns:1fr}
+  .dual-actions .button{width:100%}
+}
