@@ -658,3 +658,41 @@ Whenever Francisco de Borja Rodríguez-Batllori Laffitte, the Administrador Conc
 - Shared evidence may connect removal, remuneration, criminal, professional-interference and appellate lanes without procedurally merging them. DP 1956 remains the actor-specific AC criminal route; DP 1901 is cross-evidence only.
 - For counsel/professional claims, apply both `PD-LAW-TRUTH-20260922-01` and the relevant AC claim family, especially `AC-CLM-011`.
 - Public pages must retain bidirectional links between the AC hub, R33, separation/remuneration, DP 1956 and the controlled claim register.
+
+
+## 15. Human story / AI legal recovery narrative — mandatory public-interest rule
+
+Whenever a task explains Gil Marer's lived experience, Por Derecho's AI contribution,
+public-interest support, OpenAI/research significance, LinkedIn/social storytelling,
+book/documentary narrative or the relationship between AI and the Sun Park recovery,
+read and apply **PD-GOV-HUMAN-AI-20260924-01** in
+`governance/HUMAN_STORY_AI_LEGAL_RECOVERY_NARRATIVE_PROTOCOL_24SEP2026.md`.
+
+- Do not reduce the matter to technology, case numbers or a generic corruption narrative.
+  The evidence layer answers **what happened and how we know**; the human layer must also
+  explain **what it was like to live through it, what was at stake and why AI became necessary**.
+- Use concrete dated scenes. The canonical June-2018 anchor is
+  **6-Jun lease/annex → 7-Jun alleged material-control event → 12-Jun conditional binding offer
+  → 13-Jun reported presentation of the funded exit to judge and Insolvency Administrator**.
+  This sequence does not by itself prove sabotage, criminal participation, causation or closing.
+- Gil may describe the lived experience as feeling like **"one person against the local world"**.
+  Treat that as resource/information/institutional asymmetry, never as proof of a collective
+  conspiracy or inherited guilt.
+- The preferred analytical concept is **institutional convergence failure**: several normally
+  corrective layers become simultaneously disputed, fragmented or incomplete. Identify each
+  actor, office, act, date, source, lawful alternative and adverse outcome separately.
+- Strong public prose must preserve adverse evidence, including the 2018 provisional criminal
+  dismissal/appellate confirmation and other material adverse outcomes where relevant.
+- Prefer first-person language for Gil's lived experience; never invent emotions, dialogue,
+  motives or sensory detail.
+- Use names only when necessary to understand a sourced act/capacity. Prefer roles/anonymisation
+  where naming adds heat without evidential value. Anonymisation must never merge distinct actors.
+- AI is **a second pair of eyes, not a judge**. Its role is long-horizon memory, contradiction
+  detection, provenance, identity/capacity separation, correction propagation, adverse-evidence
+  preservation, bilingual/cross-jurisdictional comparison and anti-fragmentation.
+- The controlling AI self-correction test is:
+  **make it progressively harder for anyone — including Gil Marer — to maintain a proposition
+  that the evidence does not support.**
+- Any grant, credits, sponsorship, professional contribution or recoverable support must support
+  capacity to test the record, not purchase a conclusion. Preserve:
+  **Help the capacity. Do not buy the answer.**
