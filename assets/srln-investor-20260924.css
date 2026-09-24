@@ -209,3 +209,35 @@ footer strong{color:#fff}
   .dual-actions{display:grid;grid-template-columns:1fr}
   .dual-actions .button{width:100%}
 }
+
+
+/* Private Data Room diligence index */
+.vdr-section{background:#f7f4eb}
+.vdr-status{display:flex;align-items:center;justify-content:space-between;gap:28px;border:1px solid #d9c99f;background:#fffaf0;border-radius:16px;padding:18px 20px;margin-bottom:24px}
+.vdr-status>div{display:grid;grid-template-columns:auto auto;column-gap:10px;align-items:center}
+.vdr-status strong{font-size:.85rem;letter-spacing:.08em;text-transform:uppercase}
+.vdr-status small{grid-column:2;display:block;color:#68747a;font-size:.74rem;margin-top:2px}
+.vdr-status p{margin:0;color:#657179;font-size:.82rem;text-align:right}
+.vdr-lock{font-size:1.05rem;grid-row:1/3}
+.vdr-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.vdr-group{background:#fff;border:1px solid var(--line);border-radius:16px;padding:25px 24px}
+.vdr-group h3{font-family:Georgia,serif;font-size:1.4rem;font-weight:500;margin:0 0 15px}
+.vdr-group ul{list-style:none;padding:0;margin:0}
+.vdr-group li{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;padding:11px 0;border-top:1px solid rgba(11,23,29,.09)}
+.vdr-group li:first-child{border-top:0}
+.vdr-group li span{font-size:.86rem;color:#48565d}
+.vdr-group li b{font-size:.64rem;letter-spacing:.09em;text-transform:uppercase;color:#6a5a36;background:#f0e6cf;border:1px solid #ddcfac;border-radius:999px;padding:4px 8px;white-space:nowrap}
+.vdr-foot{margin-top:22px;display:flex;justify-content:space-between;align-items:center;gap:28px;border-top:1px solid var(--line);padding-top:22px}
+.vdr-foot>div:first-child strong,.vdr-foot>div:first-child span{display:block}
+.vdr-foot>div:first-child span{font-size:.82rem;color:#66737a;margin-top:4px;max-width:650px}
+@media (max-width:900px){
+  .vdr-grid{grid-template-columns:1fr}
+  .vdr-status,.vdr-foot{align-items:flex-start;flex-direction:column}
+  .vdr-status p{text-align:left}
+}
+@media (max-width:640px){
+  .vdr-group{padding:22px 18px}
+  .vdr-group li{grid-template-columns:1fr}
+  .vdr-group li b{justify-self:start}
+  .vdr-foot .dual-actions{width:100%}
+}
