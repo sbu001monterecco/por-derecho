@@ -1,0 +1,38 @@
+{
+  "schema": "por-derecho.pd108-public-viewer.v1",
+  "control_date": "2026-09-24",
+  "official_reference": "108-2026",
+  "source_event_id": "PD-SP-EVT-0497",
+  "public_derivative": {
+    "sha256": "96eb88b08d85c4dff21f26c14f52005100c0a0d294b81d2ceaf4c2d8f5a1abae",
+    "bytes": 185032,
+    "pages": 1,
+    "transport_manifest": "evidence/mjusticia/108-2026/public-redacted/pdf-transport-v1.json"
+  },
+  "native_source": {
+    "sha256": "20eee667e206c982a293a8dd3f7ade2041cbbfb0a113bb864def7a8ec9307a5f",
+    "bytes": 371631,
+    "custody": "PRIVATE_CONTROLLED",
+    "public": false
+  },
+  "redactions": [
+    "recipient contact block",
+    "signature/verification/QR block"
+  ],
+  "proof_boundary_es": "El oficio acredita que el Ministerio comunicó la recepción de la denuncia y que había solicitado información a la Secretaría de Gobierno del TSJC antes de resolver. No acredita estimación de alegaciones, respuesta ya recibida, reapertura, incorporación al CGPJ ni presentación ante la Audiencia Provincial.",
+  "proof_boundary_en": "The letter establishes that the Ministry communicated receipt of the complaint and stated that it had requested information from the TSJC Government Secretariat before deciding. It does not establish acceptance of allegations, that a response had already arrived, reopening, CGPJ incorporation or an Audiencia Provincial filing.",
+  "a06_bridge": "STRONGLY_SUPPORTED_NOT_EXPLICITLY_CROSS_REFERENCED",
+  "selected_context_routes": {
+    "es": [
+      "es/cgpj-comision-permanente-sala-lectura/index.html",
+      "es/tsj-canarias-exp-gub-38-2026-alzada-presentada/index.html"
+    ],
+    "en": [
+      "en/cgpj-permanent-commission-reader-room/index.html",
+      "en/tsj-canarias-exp-gub-38-2026-appeal-filed/index.html"
+    ]
+  },
+  "registration_successor": "REGAGE26e00083453059",
+  "registration_state": "REGISTERED_SELF_CONTAINED_17_PAGE_DOCUMENT_HASH_VERIFIED",
+  "separate_native_annex_registration": "NOT_ESTABLISHED"
+}
