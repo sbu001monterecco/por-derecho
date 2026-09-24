@@ -20,6 +20,8 @@ def require(path: str, markers: list[str]) -> None:
         if marker not in text:
             errors.append(f"{path}: missing marker {marker!r}")
 
+# Seven wording successors bind to the reconciled reader. All earlier
+# substantive concessions, source controls and reciprocal-link gates stay.
 require("en/estate-payment-counsel-independence/index.html", [
     "This is not presented as a fee dispute.",
     'id="prosecutorial-spine"',
@@ -30,8 +32,8 @@ require("en/estate-payment-counsel-independence/index.html", [
     'id="proof-plan"',
     "Evidence that would narrow or falsify material parts",
     "Priority prosecutor production",
-    "The 28 May reply was conditional and information-seeking and is not used as consent or ratification.",
-    "Parrilla’s final 11 June proposal was expressly rejected on 12 June.",
+    "The 28 May reply is not used as consent or ratification.",
+    "On 11 June Parrilla himself said he required written Gil/Patricia approval before proceeding; on 12 June the client side expressly rejected the proposal.",
     "no direct transfer",
     "bank trace is incomplete",
     "Closing was not guaranteed.",
@@ -54,17 +56,17 @@ require("es/pago-masa-independencia-defensa/index.html", [
     'id="proof-plan"',
     "Prueba que reduciría o falsaría partes materiales",
     "Producción prioritaria para Fiscalía",
-    "La respuesta del 28 de mayo fue condicional e informativa y no se usa como consentimiento o ratificación.",
-    "La propuesta final de 11 de junio fue rechazada expresamente el 12 de junio.",
+    "La respuesta de 28 de mayo no se usa como consentimiento ni ratificación.",
+    "El 11 de junio el propio Parrilla dijo necesitar visto bueno escrito de Gil/Patricia antes de proceder; el 12 de junio el cliente rechazó expresamente la propuesta.",
     "No existe transferencia CAM→JTP.",
     "trazabilidad bancaria está incompleta",
     "El cierre no estaba garantizado.",
     "Eje penal / fiscal",
     "Presupuestos y remedios civil / mercantil / concursal",
     "JTP_PAYMENT_FUNDED_EXIT_HOSTILE_READER_RED_TEAM_24SEP2026.md",
-    "Óptica penal contemporánea — 4 de enero de 2019.",
-    "Ya el 1 de junio el letrado entrante trataba a Parrilla como antiguo letrado de LPB",
-    "Barrido profundo de fuentes · 24 septiembre 2026:",
+    "Perspectiva penal contemporánea — 4 de enero de 2019.",
+    "El 1 de junio el letrado entrante ya trataba a Parrilla como antiguo letrado de LPB",
+    "Barrido de fuentes de 24 de septiembre de 2026:",
     "JTP_ONA_DEEP_SOURCE_SWEEP_24SEP2026.md",
 ])
 
