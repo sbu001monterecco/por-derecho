@@ -109,3 +109,30 @@ Do not publish as established fact that:
 - Joaquín’s apology proves every underlying factual allegation false.
 
 The public-safe formulation is that **Gil alleges a criminal pattern of interference with defence continuity and characterises the Parrilla payment/“peace” sequence as an illicit inducement or bribe-like intervention; the documentary record materially supports investigation of that thesis while leaving the decisive bank, authority, intent and causation gates open.**
+
+
+## 22 September 2026 — bounded email re-verification
+
+This additive review reuses A2a, A3, A5, A8, LRAC-EVT-2018-CRISTO-001 and LRAC-EVT-2020-JOAQUIN-2152. It is a targeted business-mail review, not a full-mailbox census or a new finding of criminal liability. The source bodies were read, including contrary accounts. Raw correspondence, private locators and privileged advice remain in the authorised source system.
+
+| Existing ref. | Source date / provenance | Reconciled public-safe conclusion | Open boundary |
+|---|---|---|---|
+| A5 | 15 February 2021 direct withdrawal communication | Luis Miguel López described continuing help during a transition, cited time/non-payment, and offered further assistance to Cristo. | Announcement does not establish effective court substitution. |
+| A5 | 13 May 2025 direct withdrawal and follow-up exchange | Preserve his account of continued work, postponed withdrawals and disagreement with alleged procedural disconnection; preserve the client's acknowledgement of his contribution and his offer of handover coordination. | His stated non-payment reason is not proof that the AC refused a particular fee request or caused the exit. |
+| A3 | 21 September 2020 direct notice | Joaquín's notice concerns Gil personally and cites irreparable lawyer-client breakdown. | The notice is distinct from the court filing containing the apology. Preserve both and their different content. |
+| A2a | 21 September 2020 direct notice | Armando's broader notice concerns the client group, cites breakdown and reserves unpaid-fee claims. | Shared date does not establish identical individual reasons or exclusive AC causation. |
+| A8 | 25 January 2018 text forwarded by Cristo on 4 February 2023 | Reconfirms the already recorded Bar warning, termination, abstention and procurator-authorisation restrictions. | Forwarded source, not independent recovery of original delivery; no actual Bar filing proved. |
+
+### Reader and follow-up treatment
+
+- Cristo remains valued former counsel, with an explicitly favourable and restorative client position. Obtain the actual institutional record before describing a complaint or sanction as filed or imposed.
+- Follow-up priority is LML (A5), JR (A3), AB (A2a). Clarify mandate, effective withdrawal/substitution, work completed, handover, specific AC contacts and supporting documents. No email was sent in this task.
+- Use the source-supported short form Luis Miguel López in the new layer. Existing controls disagree on the expanded surname; this review does not resolve or silently rewrite that identity.
+- Add accessible cards on the existing bilingual pages, preserving the complete analysis. Avoid portraits without verified assets, guilt scores and arrows implying one universal exit cause.
+- Atomic central-register reconciliation remains open: these are dated source-review rows attached to existing actor/event controls, not newly allocated global event IDs or a claim that every message is registered.
+
+### Public GitLab comparator, 22 September 2026
+
+Direct HTTP checks returned 200 for the actors register, separation/honorarios page and court-document catalogue. The dedicated ES/EN counsel pages returned 404 at both root and project-prefixed paths; the checked September-opposition route also returned 404. This is an observed publication gap, not loss of the GitHub source. GitHub remains canonical; no GitLab repository write or deployment occurred.
+
+Recovery: re-query the authorised business mailbox by the above dated professionals/episodes; use the existing source controls and compare the current remote main before integrating. The 2021/2025 LML and 2020 JR/AB notices were read directly; the 2018 Cristo communication was read through his 2023 forward. February 2020 team-response material was also read for context without publishing private advice. Original-source custody independence and full atomic reconciliation remain open.
