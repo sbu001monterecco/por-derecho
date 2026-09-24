@@ -20,7 +20,11 @@
   "google_drive": {
     "chatgpt_folder_id": "1u9IYxjk64966n8kns4Zaw3R_6-AertPd",
     "evidence_manifest_id": "1hhLw3S6lkl7ALyNHgj1NvG82ZanqwFFyLpDCgR26LSs",
-    "role": "private_native_custody_and_human_control"
+    "role": "private_native_custody_and_human_control",
+    "coordination_control_doc_id": "1HPXtnyfnAnURB9MoykNkc4bUQY84rwkZwyBmLKdHe2I",
+    "coordination_control_doc_url": "https://docs.google.com/document/d/1HPXtnyfnAnURB9MoykNkc4bUQY84rwkZwyBmLKdHe2I/edit",
+    "coordination_control_doc_parent_id": "1u9IYxjk64966n8kns4Zaw3R_6-AertPd",
+    "coordination_control_doc_state": "READBACK_VERIFIED"
   },
   "chatgpt": {
     "conversation_role": "operational_context_and_handoff",
