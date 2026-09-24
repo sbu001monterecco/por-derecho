@@ -31406,6 +31406,302 @@
       "subject_text_published": false,
       "transport_link_state": "THIS_ROW_IS_THE_TRANSPORT_LAYER",
       "transport_state": "RECEIVED_EMAIL_LOCATED"
+    },
+    {
+      "event_id": "PD-SP-EVT-0497",
+      "source_key": "CURATED:PD-SP-EVT-0497",
+      "event_date": "2026-09-24",
+      "record_type": "AVAILABILITY_NOTICE",
+      "channel": "NOTIFICATION_PLATFORM_NOTICE",
+      "direction": "INBOUND_FROM_PLATFORM",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "institution_key": "MJUSTICIA",
+      "office": "Notifica availability notice",
+      "attribution_state": "SOURCE_SPECIFIC_PUBLIC_SAFE_RECORD",
+      "matter_references": [
+        "Oficio 108-2026",
+        "Alzada 286/2026 / DI 169/2026",
+        "REGAGE26e00082030716"
+      ],
+      "evidence_classes": [
+        "NOTICE"
+      ],
+      "proof_level": "AUTHENTICATED_RECORD_REVIEWED",
+      "proves": [
+        "A platform notice announced availability of the Ministry communication later identified as oficio 108-2026."
+      ],
+      "proves_es": "Un aviso de plataforma anunció la disponibilidad de la comunicación ministerial posteriormente identificada como oficio 108-2026.",
+      "does_not_prove": [
+        "It is a transport/availability event, not a separate merits decision; access, examination and outcome are not proved."
+      ],
+      "does_not_prove_es": "No es una resolución de fondo separada; no acredita acceso, examen ni resultado.",
+      "public_summary": "A platform notice announced availability of the Ministry communication later identified as oficio 108-2026.",
+      "public_summary_es": "Un aviso de plataforma anunció la disponibilidad de la comunicación ministerial posteriormente identificada como oficio 108-2026.",
+      "source_ids": [
+        "PD-SP-SRC-0023"
+      ],
+      "criminal_responsibility_transfer": false,
+      "evidence_state": {
+        "transmission": "SOURCE_REVIEWED",
+        "delivery": "NOT_ESTABLISHED_BEYOND_SOURCE",
+        "registration": "NOT_APPLICABLE_OR_NOT_ESTABLISHED",
+        "internal_association": "NOT_ESTABLISHED",
+        "substantive_examination": "NOT_ESTABLISHED_OR_PENDING",
+        "merits": "NOT_ESTABLISHED"
+      },
+      "source_integrity": {
+        "status": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+        "source_description": "Private native/provider material is withheld; public-safe state only."
+      },
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE"
+    },
+    {
+      "event_id": "PD-SP-EVT-0498",
+      "source_key": "CURATED:PD-SP-EVT-0498",
+      "event_date": "2026-09-24",
+      "record_type": "AVAILABILITY_NOTICE",
+      "channel": "DEHU_COURTESY_NOTICE",
+      "direction": "INBOUND_FROM_PLATFORM",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "institution_key": "MJUSTICIA",
+      "office": "DEHú courtesy notice",
+      "attribution_state": "SOURCE_SPECIFIC_PUBLIC_SAFE_RECORD",
+      "matter_references": [
+        "Oficio 108-2026",
+        "Alzada 286/2026 / DI 169/2026",
+        "REGAGE26e00082030716"
+      ],
+      "evidence_classes": [
+        "NOTICE"
+      ],
+      "proof_level": "AUTHENTICATED_RECORD_REVIEWED",
+      "proves": [
+        "DEHú separately notified availability of the same underlying Ministry communication."
+      ],
+      "proves_es": "DEHú notificó por separado la disponibilidad de la misma comunicación ministerial subyacente.",
+      "does_not_prove": [
+        "The DEHú and Notifica notices are not two substantive decisions and do not alone establish an official access/acceptance receipt."
+      ],
+      "does_not_prove_es": "Los avisos de DEHú y Notifica no son dos resoluciones sustantivas ni acreditan por sí solos un acuse oficial de acceso/aceptación.",
+      "public_summary": "DEHú separately notified availability of the same underlying Ministry communication.",
+      "public_summary_es": "DEHú notificó por separado la disponibilidad de la misma comunicación ministerial subyacente.",
+      "source_ids": [
+        "PD-SP-SRC-0024"
+      ],
+      "criminal_responsibility_transfer": false,
+      "evidence_state": {
+        "transmission": "SOURCE_REVIEWED",
+        "delivery": "NOT_ESTABLISHED_BEYOND_SOURCE",
+        "registration": "NOT_APPLICABLE_OR_NOT_ESTABLISHED",
+        "internal_association": "NOT_ESTABLISHED",
+        "substantive_examination": "NOT_ESTABLISHED_OR_PENDING",
+        "merits": "NOT_ESTABLISHED"
+      },
+      "source_integrity": {
+        "status": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+        "source_description": "Private native/provider material is withheld; public-safe state only."
+      },
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE"
+    },
+    {
+      "event_id": "PD-SP-EVT-0499",
+      "source_key": "CURATED:PD-SP-EVT-0499",
+      "event_date": "2026-09-24",
+      "record_type": "OFFICIAL_ACKNOWLEDGEMENT_AND_INFORMATION_REQUEST",
+      "channel": "OFFICIAL_PDF_COMMUNICATION",
+      "direction": "INBOUND_FROM_AUTHORITY",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "institution_key": "MJUSTICIA",
+      "office": "Subdirección General para la Innovación y Calidad de la Oficina Judicial y Fiscal",
+      "attribution_state": "SOURCE_SPECIFIC_PUBLIC_SAFE_RECORD",
+      "matter_references": [
+        "Oficio 108-2026",
+        "Alzada 286/2026 / DI 169/2026",
+        "REGAGE26e00082030716"
+      ],
+      "evidence_classes": [
+        "NOTICE"
+      ],
+      "proof_level": "NATIVE_OFFICIAL_PDF_REVIEWED_PUBLIC_DERIVATIVE_AVAILABLE",
+      "proves": [
+        "Oficio 108-2026 records Ministry receipt and an information request to the TSJC Government Secretariat, with assessment and resolution pending."
+      ],
+      "proves_es": "El oficio 108-2026 comunica recepción ministerial y una solicitud de información a la Secretaría de Gobierno del TSJC, quedando pendientes la valoración y resolución.",
+      "does_not_prove": [
+        "It does not establish acceptance of the allegations, a disciplinary opening, wrongdoing, the request's contents/date, receipt of the TSJC response or an exact printed cross-reference to REGAGE26e00082058165."
+      ],
+      "does_not_prove_es": "No acredita aceptación de las alegaciones, apertura disciplinaria, irregularidad, el contenido/fecha del requerimiento, recepción de la respuesta del TSJC ni una referencia impresa exacta a REGAGE26e00082058165.",
+      "public_summary": "Oficio 108-2026 records Ministry receipt and an information request to the TSJC Government Secretariat, with assessment and resolution pending.",
+      "public_summary_es": "El oficio 108-2026 comunica recepción ministerial y una solicitud de información a la Secretaría de Gobierno del TSJC, quedando pendientes la valoración y resolución.",
+      "source_ids": [
+        "PD-SP-SRC-0025"
+      ],
+      "criminal_responsibility_transfer": false,
+      "evidence_state": {
+        "transmission": "SOURCE_REVIEWED",
+        "delivery": "NOT_ESTABLISHED_BEYOND_SOURCE",
+        "registration": "NOT_APPLICABLE_OR_NOT_ESTABLISHED",
+        "internal_association": "NOT_ESTABLISHED",
+        "substantive_examination": "NOT_ESTABLISHED_OR_PENDING",
+        "merits": "NOT_ESTABLISHED"
+      },
+      "source_integrity": {
+        "status": "NATIVE_OFFICIAL_PDF_PRIVATE_PUBLIC_CONTEXTUAL_DERIVATIVE_HASH_BOUND",
+        "source_description": "Private native/provider material is withheld; public-safe state only."
+      },
+      "public_derivative_state": "VIEWER_PUBLIC_CONTEXTUAL_DERIVATIVE"
+    },
+    {
+      "event_id": "PD-SP-EVT-0500",
+      "source_key": "CURATED:PD-SP-EVT-0500",
+      "event_date": "2026-09-24",
+      "record_type": "OUTBOUND_COMMUNICATION",
+      "channel": "EMAIL",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "institution_key": "CGPJ",
+      "office": "CGPJ Appeals Section / Alzada 286/2026",
+      "attribution_state": "SOURCE_SPECIFIC_PUBLIC_SAFE_RECORD",
+      "matter_references": [
+        "Oficio 108-2026",
+        "Alzada 286/2026 / DI 169/2026",
+        "REGAGE26e00082030716"
+      ],
+      "evidence_classes": [
+        "NOTICE"
+      ],
+      "proof_level": "AUTHENTICATED_RECORD_REVIEWED",
+      "proves": [
+        "A 24 September public-safe status record notes an update sent to the CGPJ Appeals Section linking oficio 108-2026 and later official material to the existing appeal."
+      ],
+      "proves_es": "Un registro público mínimo recoge una actualización remitida el 24 de septiembre a la Sección de Recursos del CGPJ vinculando el oficio 108-2026 y material oficial posterior con la alzada existente.",
+      "does_not_prove": [
+        "Sending does not establish delivery, incorporation into Alzada 286/2026, examination or agreement."
+      ],
+      "does_not_prove_es": "El envío no acredita entrega, incorporación a la Alzada 286/2026, examen ni conformidad.",
+      "public_summary": "A 24 September public-safe status record notes an update sent to the CGPJ Appeals Section linking oficio 108-2026 and later official material to the existing appeal.",
+      "public_summary_es": "Un registro público mínimo recoge una actualización remitida el 24 de septiembre a la Sección de Recursos del CGPJ vinculando el oficio 108-2026 y material oficial posterior con la alzada existente.",
+      "source_ids": [
+        "PD-SP-SRC-0026"
+      ],
+      "criminal_responsibility_transfer": false,
+      "evidence_state": {
+        "transmission": "SOURCE_REVIEWED",
+        "delivery": "NOT_ESTABLISHED_BEYOND_SOURCE",
+        "registration": "NOT_APPLICABLE_OR_NOT_ESTABLISHED",
+        "internal_association": "NOT_ESTABLISHED",
+        "substantive_examination": "NOT_ESTABLISHED_OR_PENDING",
+        "merits": "NOT_ESTABLISHED"
+      },
+      "source_integrity": {
+        "status": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+        "source_description": "Private native/provider material is withheld; public-safe state only."
+      },
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE"
+    },
+    {
+      "event_id": "PD-SP-EVT-0501",
+      "source_key": "CURATED:PD-SP-EVT-0501",
+      "event_date": "2026-09-24",
+      "record_type": "ELECTRONIC_REGISTRATION",
+      "channel": "REG_AGE",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "layer": "REGISTRATION_OR_ROUTING",
+      "institution_key": "CGPJ",
+      "office": "I00005220 — CGPJ Registry and Archive Unit",
+      "attribution_state": "SOURCE_SPECIFIC_PUBLIC_SAFE_RECORD",
+      "matter_references": [
+        "Oficio 108-2026",
+        "Alzada 286/2026 / DI 169/2026",
+        "REGAGE26e00082030716"
+      ],
+      "evidence_classes": [
+        "REGISTRATION_RECEIPT",
+        "DOCUMENT_INTEGRITY"
+      ],
+      "proof_level": "OFFICIAL_RECEIPT_HASH_VERIFIED",
+      "proves": [
+        "REGAGE26e00083448218 registered the six-page principal; its attachment inventory listed only that principal, preserving a historical annex-content gap."
+      ],
+      "proves_es": "REGAGE26e00083448218 registró el principal de seis páginas; su inventario de anexos enumeró únicamente ese principal, quedando preservada una carencia histórica de contenido anexo.",
+      "does_not_prove": [
+        "It did not establish registration of the four separately intended annex files, incorporation into the appeal, admission or examination."
+      ],
+      "does_not_prove_es": "No acreditó el registro de los cuatro anexos separados previstos, incorporación a la alzada, admisión ni examen.",
+      "public_summary": "REGAGE26e00083448218 registered the six-page principal; its attachment inventory listed only that principal, preserving a historical annex-content gap.",
+      "public_summary_es": "REGAGE26e00083448218 registró el principal de seis páginas; su inventario de anexos enumeró únicamente ese principal, quedando preservada una carencia histórica de contenido anexo.",
+      "source_ids": [
+        "PD-SP-SRC-0027"
+      ],
+      "criminal_responsibility_transfer": false,
+      "evidence_state": {
+        "transmission": "SOURCE_REVIEWED",
+        "delivery": "REGISTRY_DESTINATION_PROVED",
+        "registration": "REGAGE26e00083448218",
+        "internal_association": "NOT_ESTABLISHED",
+        "substantive_examination": "NOT_ESTABLISHED_OR_PENDING",
+        "merits": "NOT_ESTABLISHED"
+      },
+      "source_integrity": {
+        "status": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+        "source_description": "Private native/provider material is withheld; public-safe state only."
+      },
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE"
+    },
+    {
+      "event_id": "PD-SP-EVT-0502",
+      "source_key": "CURATED:PD-SP-EVT-0502",
+      "event_date": "2026-09-24",
+      "record_type": "ELECTRONIC_REGISTRATION",
+      "channel": "REG_AGE",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "layer": "REGISTRATION_OR_ROUTING",
+      "institution_key": "CGPJ",
+      "office": "I00005220 — CGPJ Registry and Archive Unit",
+      "attribution_state": "SOURCE_SPECIFIC_PUBLIC_SAFE_RECORD",
+      "matter_references": [
+        "Oficio 108-2026",
+        "Alzada 286/2026 / DI 169/2026",
+        "REGAGE26e00082030716"
+      ],
+      "evidence_classes": [
+        "REGISTRATION_RECEIPT",
+        "DOCUMENT_INTEGRITY"
+      ],
+      "proof_level": "OFFICIAL_RECEIPT_REGISTERED_BINARY_SHA512_MATCHED",
+      "proves": [
+        "REGAGE26e00083453059 registered the complete self-contained 17-page compilation containing the earlier principal and all visible pages of the four annexes."
+      ],
+      "proves_es": "REGAGE26e00083453059 registró la compilación autosuficiente completa de 17 páginas con el principal anterior y todas las páginas visibles de los cuatro anexos.",
+      "does_not_prove": [
+        "The receipt lists one compiled PDF, not four separately registered native annex files; registration does not establish incorporation, admission, examination or decision."
+      ],
+      "does_not_prove_es": "El justificante enumera un PDF compilado, no cuatro anexos nativos registrados separadamente; el registro no acredita incorporación, admisión, examen ni resolución.",
+      "public_summary": "REGAGE26e00083453059 registered the complete self-contained 17-page compilation containing the earlier principal and all visible pages of the four annexes.",
+      "public_summary_es": "REGAGE26e00083453059 registró la compilación autosuficiente completa de 17 páginas con el principal anterior y todas las páginas visibles de los cuatro anexos.",
+      "source_ids": [
+        "PD-SP-SRC-0028"
+      ],
+      "criminal_responsibility_transfer": false,
+      "evidence_state": {
+        "transmission": "SOURCE_REVIEWED",
+        "delivery": "REGISTRY_DESTINATION_PROVED",
+        "registration": "REGAGE26e00083453059",
+        "internal_association": "NOT_ESTABLISHED",
+        "substantive_examination": "NOT_ESTABLISHED_OR_PENDING",
+        "merits": "NOT_ESTABLISHED"
+      },
+      "source_integrity": {
+        "status": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+        "source_description": "Private native/provider material is withheld; public-safe state only."
+      },
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE"
     }
   ],
   "id_allocation": {
@@ -31468,7 +31764,15 @@
       "public_pdf_derivative_sha256": "56203fa87b711bafca6a03b90ba40ef42f51b07e4b4811c1a3ebfaab23f96ab3",
       "private_source_boundary": "Native signed oficio, notification metadata, registration receipts, complete email bodies and legal-professional correspondence remain in controlled private custody.",
       "relationship_boundary": "Oficio 108-2026 is strongly supported as a successor to the national 20 September route, but the oficio does not print REGAGE26e00082058165; no exact cross-reference is inferred.",
-      "counsel_boundary": "Professional counsel was notified privately; no Audiencia Provincial filing is established by that communication."
+      "counsel_boundary": "Professional counsel was notified privately; no Audiencia Provincial filing is established by that communication.",
+      "canonical_event_ids": [
+        "PD-SP-EVT-0497",
+        "PD-SP-EVT-0498",
+        "PD-SP-EVT-0499",
+        "PD-SP-EVT-0500",
+        "PD-SP-EVT-0501",
+        "PD-SP-EVT-0502"
+      ]
     }
   },
   "unresolved_batches": [
