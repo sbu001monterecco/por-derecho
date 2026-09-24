@@ -1,0 +1,45 @@
+name: Validate cross-system coordination
+
+on:
+  pull_request:
+    paths:
+      - 'AGENTS.md'
+      - 'CHATGPT_START_HERE.md'
+      - 'governance/CROSS_SYSTEM_LIVE_COORDINATION_CONTINUITY_MEMORY_PROTOCOL_24SEP2026.md'
+      - 'ops/live-coordination/**'
+      - 'scripts/validate_cross_system_coordination.py'
+      - 'tests/test_cross_system_coordination_20260924.py'
+      - '.github/workflows/validate-cross-system-coordination.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'AGENTS.md'
+      - 'CHATGPT_START_HERE.md'
+      - 'governance/CROSS_SYSTEM_LIVE_COORDINATION_CONTINUITY_MEMORY_PROTOCOL_24SEP2026.md'
+      - 'ops/live-coordination/**'
+      - 'scripts/validate_cross_system_coordination.py'
+      - 'tests/test_cross_system_coordination_20260924.py'
+      - '.github/workflows/validate-cross-system-coordination.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cross-system-coordination-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Validate cross-system coordination control
+        run: python3 scripts/validate_cross_system_coordination.py
+      - name: Run coordination unit tests
+        run: python3 -m unittest tests/test_cross_system_coordination_20260924.py -v
