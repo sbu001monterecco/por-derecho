@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.redsara-age-filings-register.v1",
   "register_id": "PD-SP-REDSARA-AGE-FILINGS-001",
-  "control_date": "2026-09-21",
+  "control_date": "2026-09-24",
   "derived_projection": {
     "canonical_communications_register": "assets/data/institutional-communications-register-v1.json",
     "canonical_communications_register_id": "PD-SP-INSTITUTIONAL-COMMUNICATIONS-001",
@@ -10,9 +10,9 @@
     "source_of_truth_rule": "This is a deterministic, read-only projection. The institutional communications register remains the sole canonical communications register."
   },
   "scope_and_boundary": {
-    "filing_event_rows_currently_individualised": 398,
+    "filing_event_rows_currently_individualised": 400,
     "detailed_baseline_receipts": 75,
-    "separate_source_proved_regage_events": 323,
+    "separate_source_proved_regage_events": 325,
     "historic_regage_total_reported": 97,
     "aggregate_only_batch": [
       {
@@ -15791,6 +15791,74 @@
         "repository_anchor": "evidence/preservation/eg745-redsara-revision-20260921/receipts/REGAGE26e00082070021.json",
         "sha256": "0c5954a3c8bddde6531808dc3a9d648dabec2955d3614e1b9ea482c86f9be9ea",
         "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      }
+    },
+    {
+      "event_id": "PD-SP-EVT-0498",
+      "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-0498",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "event_date": "2026-09-24",
+      "record_type": "REGISTRATION_RECEIPT",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "channel": "REGAGE",
+      "official_reference": "REGAGE26e00083448218",
+      "office": "CGPJ Unidad de Registro y Archivo",
+      "public_summary": "First 24 September CGPJ registration; receipt listed the six-page principal only.",
+      "proves": [
+        "Registration of the listed six-page principal."
+      ],
+      "does_not_prove": [
+        "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
+      ],
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "matter_references": [],
+      "source_integrity": {
+        "repository_anchor": "assets/data/oficio-108-2026-public-state.json",
+        "status": "SOURCE_PROVED_PUBLIC_SAFE_DERIVATIVE"
+      }
+    },
+    {
+      "event_id": "PD-SP-EVT-0499",
+      "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-0499",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "event_date": "2026-09-24",
+      "record_type": "REGISTRATION_RECEIPT",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "channel": "REGAGE",
+      "official_reference": "REGAGE26e00083453059",
+      "office": "CGPJ Unidad de Registro y Archivo",
+      "public_summary": "Successor registration of a self-contained 17-page compilation containing all four annexes as visible pages.",
+      "proves": [
+        "Registration of one 17-page compiled PDF; all four annex contents visibly included."
+      ],
+      "does_not_prove": [
+        "Four separately registered native annex files.",
+        "CGPJ incorporation, admission, examination or decision."
+      ],
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "matter_references": [],
+      "source_integrity": {
+        "repository_anchor": "assets/data/oficio-108-2026-public-state.json",
+        "sha256": "0e27fcd481c29a0b69837fc5cdeb393ddf9fbbb7c03390f6c6b7409efe5228b4",
+        "status": "REGISTERED_COMPILED_DOCUMENT_HASH_VERIFIED"
       }
     }
   ],

@@ -1743,20 +1743,24 @@ def reconcile_register(
     key_events = deepcopy(KEY_EVENTS)
     status_events, status_control = load_regage_status_export_events()
     mailbox_events = build_mailbox_events(mailbox_index, mailbox_index_sha256)
+    supplemental_events = [
+        deepcopy(event) for event in (existing or {}).get("events", [])
+        if str(event.get("source_key", "")).startswith("SUPPLEMENTAL_20260924:")
+    ]
 
-    event_ids = [event["event_id"] for event in receipts + key_events + status_events + mailbox_events]
+    event_ids = [event["event_id"] for event in receipts + key_events + status_events + mailbox_events + supplemental_events]
     if len(event_ids) != len(set(event_ids)):
         raise ValueError("event ID collision during reconciliation")
-    source_keys = [event["source_key"] for event in receipts + key_events + status_events + mailbox_events]
+    source_keys = [event["source_key"] for event in receipts + key_events + status_events + mailbox_events + supplemental_events]
     if len(source_keys) != len(set(source_keys)):
         raise ValueError("source-key collision during reconciliation")
 
-    register["events"] = sorted(receipts + key_events + status_events + mailbox_events, key=lambda event: event["event_id"])
-    register["denominator_control"]["curated_source_proved_events"] = len(key_events) + len(status_events)
+    register["events"] = sorted(receipts + key_events + status_events + mailbox_events + supplemental_events, key=lambda event: event["event_id"])
+    register["denominator_control"]["curated_source_proved_events"] = len(key_events) + len(status_events) + len(supplemental_events)
     register["denominator_control"]["mailbox_transport_events"] = len(mailbox_events)
     register["denominator_control"]["event_rows_total"] = len(register["events"])
     register["source_controls"]["mailbox_index_sha256"] = mailbox_index_sha256
-    register["control_date"] = "2026-09-21"
+    register["control_date"] = "2026-09-24" if supplemental_events else "2026-09-21"
     if status_control["added_status_events"] != REGAGE_STATUS_EXPORT_EXPECTED:
         raise ValueError("REGAGE status-export canonical denominator drift")
     return register
@@ -1766,7 +1770,7 @@ def build_checkpoint(register_sha256: str, source_sha256: str, mailbox_index_sha
     return {
         "schema": "por-derecho.institutional-communications-scan-checkpoint.v1",
         "checkpoint_id": "PD-SP-MF-SCAN-CHECKPOINT-001",
-        "control_date": "2026-09-21",
+        "control_date": "2026-09-24",
         "register_path": "assets/data/institutional-communications-register-v1.json",
         "register_sha256": register_sha256,
         "private_custody": {

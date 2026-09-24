@@ -44,13 +44,13 @@
     "The caret marker remains identity-only; communication events receive stable IDs and bilingual anchors, never presentation carets.",
     "Criminal relevance may be linked as an open hypothesis, but criminal responsibility never transfers through an ACTA, communication, referral, office or institutional tier."
   ],
-  "control_date": "2026-09-21",
+  "control_date": "2026-09-24",
   "denominator_control": {
     "arithmetic_check": "Historical control: 75 detailed + 22 metadata-only = 97 reported total. Current 21-Sep status export: 398 distinct REGAGE rows (114 formal-event identities reused, including 22 receipt-controlled identities added in this release; 284 status-only rows added).",
-    "curated_source_proved_events": 412,
+    "curated_source_proved_events": 418,
     "detailed_baseline_receipt_rows_expected": 75,
     "detailed_baseline_receipt_rows_registered": 75,
-    "event_rows_total": 643,
+    "event_rows_total": 649,
     "mailbox_draft_rows": 3,
     "mailbox_inbound_email_rows": 101,
     "mailbox_outbound_email_rows": 42,
@@ -23631,6 +23631,123 @@
       "transport_link_state": "STATUS_EXPORT_SEPARATE_FROM_ANY_EMAIL_OR_NATIVE_RECEIPT"
     },
     {
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "channel": "DEHU",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
+      ],
+      "event_date": "2026-09-24",
+      "event_id": "PD-SP-EVT-0497",
+      "evidence_state": {
+        "delivery": "ONLY_AS_STATED_IN_SOURCE",
+        "destination": "ONLY_AS_STATED_IN_SOURCE",
+        "filing": "NOT_INFERRED_UNLESS_EXPRESSLY_STATED",
+        "internal_association": "NOT_ESTABLISHED_UNLESS_EXPRESSLY_STATED",
+        "merits": "PROCEDURAL_ACT_ONLY_NOT_TRUTH_OF_UNDERLYING_ALLEGATIONS",
+        "registration": "NOT_INFERRED_UNLESS_EXPRESSLY_STATED",
+        "substantive_examination": "INFORMATION_REQUEST_REPORTED_AS_PRE_DECISION_STEP",
+        "transmission": "SOURCE_ACT_OR_CORRESPONDENCE_LOCATED"
+      },
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [],
+      "office": "Subdirección General para la Innovación y Calidad de la Oficina Judicial y Fiscal",
+      "official_reference": "108-2026",
+      "proof_level": "OFFICIAL_SOURCE_RECEIVED",
+      "proves": [
+        "Communicated receipt; information request to TSJC reported; resolution pending."
+      ],
+      "public_summary": "Ministry communication reports receipt, an information request to the TSJC Government Secretariat and a future resolution after assessment.",
+      "record_type": "INSTITUTIONAL_ACKNOWLEDGEMENT",
+      "source_integrity": {
+        "repository_anchor": "assets/data/oficio-108-2026-public-state.json",
+        "sha256": "96eb88b08d85c4dff21f26c14f52005100c0a0d294b81d2ceaf4c2d8f5a1abae",
+        "status": "PUBLIC_REDACTED_DERIVATIVE_PRIVATE_SIGNED_NATIVE_CONTROLS"
+      },
+      "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-0497",
+      "transport_link_state": "NO_PUBLIC_TRANSPORT_LINK_ASSERTED"
+    },
+    {
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
+      ],
+      "event_date": "2026-09-24",
+      "event_id": "PD-SP-EVT-0498",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_transport_event_ids": [],
+      "matter_references": [],
+      "office": "CGPJ Unidad de Registro y Archivo",
+      "official_reference": "REGAGE26e00083448218",
+      "proof_level": "REGISTERED_PRINCIPAL_HASH_VERIFIED",
+      "proves": [
+        "Registration of the listed six-page principal."
+      ],
+      "public_summary": "First 24 September CGPJ registration; receipt listed the six-page principal only.",
+      "record_type": "REGISTRATION_RECEIPT",
+      "source_integrity": {
+        "repository_anchor": "assets/data/oficio-108-2026-public-state.json",
+        "status": "SOURCE_PROVED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-0498",
+      "transport_link_state": "NO_PUBLIC_TRANSPORT_LINK_ASSERTED"
+    },
+    {
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Four separately registered native annex files.",
+        "CGPJ incorporation, admission, examination or decision."
+      ],
+      "event_date": "2026-09-24",
+      "event_id": "PD-SP-EVT-0499",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_transport_event_ids": [],
+      "matter_references": [],
+      "office": "CGPJ Unidad de Registro y Archivo",
+      "official_reference": "REGAGE26e00083453059",
+      "proof_level": "REGISTERED_SELF_CONTAINED_17_PAGE_DOCUMENT_HASH_VERIFIED",
+      "proves": [
+        "Registration of one 17-page compiled PDF; all four annex contents visibly included."
+      ],
+      "public_summary": "Successor registration of a self-contained 17-page compilation containing all four annexes as visible pages.",
+      "record_type": "REGISTRATION_RECEIPT",
+      "source_integrity": {
+        "repository_anchor": "assets/data/oficio-108-2026-public-state.json",
+        "sha256": "0e27fcd481c29a0b69837fc5cdeb393ddf9fbbb7c03390f6c6b7409efe5228b4",
+        "status": "REGISTERED_COMPILED_DOCUMENT_HASH_VERIFIED"
+      },
+      "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-0499",
+      "transport_link_state": "NO_PUBLIC_TRANSPORT_LINK_ASSERTED"
+    },
+    {
       "attachment_count": 0,
       "attachment_count_basis": "NON_INLINE_NATIVE_ATTACHMENTS_COUNTED_PRIVATELY; NAMES_NOT_PUBLISHED",
       "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
@@ -31406,6 +31523,120 @@
       "subject_text_published": false,
       "transport_link_state": "THIS_ROW_IS_THE_TRANSPORT_LAYER",
       "transport_state": "RECEIVED_EMAIL_LOCATED"
+    },
+    {
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
+      ],
+      "event_date": "2026-09-24",
+      "event_id": "PD-SP-EVT-1157",
+      "evidence_state": {
+        "delivery": "ONLY_AS_STATED_IN_SOURCE",
+        "destination": "ONLY_AS_STATED_IN_SOURCE",
+        "filing": "NOT_INFERRED_UNLESS_EXPRESSLY_STATED",
+        "internal_association": "NOT_ESTABLISHED_UNLESS_EXPRESSLY_STATED",
+        "merits": "PROCEDURAL_ACT_ONLY_NOT_TRUTH_OF_UNDERLYING_ALLEGATIONS",
+        "registration": "NOT_INFERRED_UNLESS_EXPRESSLY_STATED",
+        "substantive_examination": "NOT_ESTABLISHED_UNLESS_EXPRESSLY_STATED",
+        "transmission": "SOURCE_ACT_OR_CORRESPONDENCE_LOCATED"
+      },
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [],
+      "office": "Electronic-notification service",
+      "official_reference": "108-26",
+      "proof_level": "RECEIVED_EMAIL_LOCATED",
+      "proves": [
+        "Availability notice received."
+      ],
+      "public_summary": "Electronic-availability notice for the underlying 108-2026 communication.",
+      "record_type": "INSTITUTIONAL_ACKNOWLEDGEMENT",
+      "source_integrity": {
+        "repository_anchor": "assets/data/oficio-108-2026-public-state.json",
+        "status": "SOURCE_PROVED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-1157",
+      "transport_link_state": "NO_PUBLIC_TRANSPORT_LINK_ASSERTED"
+    },
+    {
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
+      ],
+      "event_date": "2026-09-24",
+      "event_id": "PD-SP-EVT-1158",
+      "evidence_state": {
+        "delivery": "ONLY_AS_STATED_IN_SOURCE",
+        "destination": "ONLY_AS_STATED_IN_SOURCE",
+        "filing": "NOT_INFERRED_UNLESS_EXPRESSLY_STATED",
+        "internal_association": "NOT_ESTABLISHED_UNLESS_EXPRESSLY_STATED",
+        "merits": "PROCEDURAL_ACT_ONLY_NOT_TRUTH_OF_UNDERLYING_ALLEGATIONS",
+        "registration": "NOT_INFERRED_UNLESS_EXPRESSLY_STATED",
+        "substantive_examination": "NOT_ESTABLISHED_UNLESS_EXPRESSLY_STATED",
+        "transmission": "SOURCE_ACT_OR_CORRESPONDENCE_LOCATED"
+      },
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [],
+      "office": "Electronic-notification service",
+      "official_reference": "108-26",
+      "proof_level": "RECEIVED_EMAIL_LOCATED",
+      "proves": [
+        "Second transport event for the same underlying communication."
+      ],
+      "public_summary": "Second availability notice for the same underlying 108-2026 communication; not a second substantive decision.",
+      "record_type": "INSTITUTIONAL_ACKNOWLEDGEMENT",
+      "source_integrity": {
+        "repository_anchor": "assets/data/oficio-108-2026-public-state.json",
+        "status": "SOURCE_PROVED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-1158",
+      "transport_link_state": "NO_PUBLIC_TRANSPORT_LINK_ASSERTED"
+    },
+    {
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
+      ],
+      "event_date": "2026-09-24",
+      "event_id": "PD-SP-EVT-1159",
+      "evidence_state": {
+        "delivery": "ONLY_AS_STATED_IN_SOURCE",
+        "destination": "ONLY_AS_STATED_IN_SOURCE",
+        "filing": "NOT_INFERRED_UNLESS_EXPRESSLY_STATED",
+        "internal_association": "NOT_ESTABLISHED_UNLESS_EXPRESSLY_STATED",
+        "merits": "PROCEDURAL_ACT_ONLY_NOT_TRUTH_OF_UNDERLYING_ALLEGATIONS",
+        "registration": "NOT_INFERRED_UNLESS_EXPRESSLY_STATED",
+        "substantive_examination": "NOT_ESTABLISHED_UNLESS_EXPRESSLY_STATED",
+        "transmission": "SOURCE_ACT_OR_CORRESPONDENCE_LOCATED"
+      },
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [],
+      "office": "CGPJ Sección de Recursos",
+      "official_reference": "Alzada 286/2026 / DI 169/2026",
+      "proof_level": "SENT_EMAIL_VERIFIED",
+      "proves": [
+        "Outbound email dispatch and attachment package verified."
+      ],
+      "public_summary": "Update sent to the CGPJ Appeals Section with four supporting PDFs; dispatch does not prove reading or incorporation.",
+      "record_type": "OUTBOUND_COMMUNICATION",
+      "source_integrity": {
+        "repository_anchor": "assets/data/oficio-108-2026-public-state.json",
+        "status": "SOURCE_PROVED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-1159",
+      "transport_link_state": "NO_PUBLIC_TRANSPORT_LINK_ASSERTED"
     }
   ],
   "id_allocation": {

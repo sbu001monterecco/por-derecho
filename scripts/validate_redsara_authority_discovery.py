@@ -43,10 +43,10 @@ def main() -> int:
     if projection.get("schema") != "por-derecho.redsara-age-filings-register.v1":
         fail("unexpected Red SARA/AGE projection schema", errors)
     scope = projection.get("scope_and_boundary", {})
-    if scope.get("filing_event_rows_currently_individualised") != 398:
-        fail("projection must contain the current 398 individually represented REGAGE references", errors)
-    if scope.get("separate_source_proved_regage_events") != 323:
-        fail("projection must contain 323 non-baseline source-proved REGAGE events", errors)
+    if scope.get("filing_event_rows_currently_individualised") != 400:
+        fail("projection must contain the 398-row 21-Sep census plus two source-proved 24-Sep REGAGE successors", errors)
+    if scope.get("separate_source_proved_regage_events") != 325:
+        fail("projection must contain 325 non-baseline source-proved REGAGE events after the two 24-Sep successors", errors)
     if scope.get("detailed_baseline_receipts") != 75:
         fail("projection must retain 75 detailed baseline receipts", errors)
     if scope.get("historic_regage_total_reported") != 97:
@@ -62,14 +62,14 @@ def main() -> int:
     events = communications.get("events", [])
     regage = [event for event in events if event.get("channel") == "REGAGE"]
     incoming = [event for event in events if event.get("direction") == "INBOUND_FROM_INSTITUTION"]
-    if len(regage) != 398:
-        fail(f"canonical source has {len(regage)} rather than 398 REGAGE events", errors)
+    if len(regage) != 400:
+        fail(f"canonical source has {len(regage)} rather than 400 REGAGE events", errors)
     status_export_regage = [event for event in regage if str(event.get("source_key", "")).startswith("REGAGE_STATUS_EXPORT_20260921:")]
     formal_regage = [event for event in regage if not str(event.get("source_key", "")).startswith("REGAGE_STATUS_EXPORT_20260921:")]
     if len(status_export_regage) != 284:
         fail(f"canonical source has {len(status_export_regage)} rather than 284 status-export-only REGAGE events", errors)
-    if len(formal_regage) != 114:
-        fail(f"canonical source has {len(formal_regage)} rather than 114 formal REGAGE event identities", errors)
+    if len(formal_regage) != 116:
+        fail(f"canonical source has {len(formal_regage)} rather than 116 formal REGAGE event identities", errors)
     # The historical 163-row incoming cohort is preserved, not silently redefined.
     # New notice rows are independently compared with their controlled source set.
     notice_expected = {
@@ -81,7 +81,8 @@ def main() -> int:
         if event.get('direction') == 'INBOUND_FROM_INSTITUTION'
     }
     additive_batches = {'PD-SP-ORION-NOTICE-20260905', 'PD-CAJASIETE-ACCOUNTABILITY-20260918'}
-    legacy_incoming = [event for event in incoming if event.get('source_batch_id') not in additive_batches]
+    supplemental_incoming = [event for event in incoming if str(event.get('source_key', '')).startswith('SUPPLEMENTAL_20260924:')]
+    legacy_incoming = [event for event in incoming if event.get('source_batch_id') not in additive_batches and not str(event.get('source_key', '')).startswith('SUPPLEMENTAL_20260924:')]
     notice_found = {event['event_id']: event for event in incoming if event.get('source_batch_id') == 'PD-SP-ORION-NOTICE-20260905'}
     cajasiete_found = {event['event_id']: event for event in incoming if event.get('source_batch_id') == 'PD-CAJASIETE-ACCOUNTABILITY-20260918'}
     if len(legacy_incoming) != 163:
@@ -90,7 +91,9 @@ def main() -> int:
         fail("additive Orion notice incoming cohort differs from its source-controlled records", errors)
     if cajasiete_found != cajasiete_expected:
         fail("additive Cajasiete incoming cohort differs from its source-controlled records", errors)
-    if len(incoming) != 163 + len(notice_expected) + len(cajasiete_expected):
+    if len(supplemental_incoming) != 3:
+        fail(f"24-Sep supplemental incoming cohort has {len(supplemental_incoming)} rather than 3 events", errors)
+    if len(incoming) != 163 + len(notice_expected) + len(cajasiete_expected) + len(supplemental_incoming):
         fail("combined incoming-event denominator does not reconcile", errors)
     for event in incoming:
         for field in ("event_id", "event_date", "official_reference", "office", "source_integrity"):
