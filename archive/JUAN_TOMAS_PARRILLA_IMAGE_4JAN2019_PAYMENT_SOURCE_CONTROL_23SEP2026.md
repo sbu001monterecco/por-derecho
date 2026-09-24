@@ -59,7 +59,7 @@ The located contemporaneous May–June 2020 correspondence materially strengthen
 
 Parrilla wrote that he had spoken with the Administrador Concursal concerning recognition of his fees and the procuradora's fees. He reported an AC discussion about **€80,000 + IGIC** as an estate claim for his legal fees, with **€25,000** to be paid immediately and the remainder recognised. This is Parrilla's report of a proposed arrangement, not the AC's independent acceptance instrument or a receipt.
 
-Incoming counsel's temporary client-side formulation concerned a **conditional costs recognition and allocation**, tied to continued representation and substantial return to the client side if collected. Disagreement about fee basis, earlier client-side advances and entitlement followed on the same day; Patricia sought direct written AC confirmation. It was not consent to Parrilla keeping €80,000 as a personal fee.
+The 28 May client-side reply is **not a fee-authorisation instrument and must not be used as one**. Gil states that Patricia was acting locally on his behalf as his partner and representative in the Canary Islands, and that in the circumstances she felt vulnerable and threatened by Parrilla's pressure, against the background of the representation failures, omissions, acts and refusals Gil alleges. Its evidential relevance is therefore limited to the pressure / vulnerability / information-asymmetry lane and to her request for direct written AC confirmation. It must not be characterised as consent, waiver, ratification, negotiation, acceptance, allocation authority or validation of Parrilla's proposal.
 
 ### 11–12 Jun 2020
 
@@ -83,7 +83,7 @@ The strongest defensible headline question is:
 
 A sharper secondary question may be used immediately below it:
 
-> **Parrilla gave a deed-first explanation and LPB filed a narrower request. The AC and CAM had formally opposed LPB's appeal. Who authorised and economically funded the later reported counsel fee, and did anyone condition it on a professional choice?**
+> **Parrilla gave a deed-first explanation and LPB filed a narrower request. The AC and CAM had formally opposed LPB's appeal. What was the economic source and control path of the later reported counsel fee, and did the payment relationship condition or affect a professional choice?**
 
 This formulation preserves the filed counterevidence, the demonstrated appellate adversity, the client's attributed account, the reported payment and the unresolved causal question.
 
@@ -109,6 +109,10 @@ Planned visual nodes:
 - Preserve the 2018–2019 appeal (including CAM and AC opposition and Parrilla's LPB position), the 10-Jan narrower filing, the 15-Jan procedural notices, and all other contrary or exculpatory material alongside adverse material.
 - Seek actor-specific AC–CAM–Parrilla communications, fee conditions and dated professional acts; do not infer an earlier agreement or third-party knowledge from the 2020 payment report.
 
-## 9. Attribution rule
+## 9. Controlling Patricia / 28-May rule
+
+For all future public pages, visuals, pleadings, summaries and machine controls in this workstream, Patricia's 28-May-2020 reply must remain **secondary pressure-context evidence only**. It is not part of the centre-stage money-route proof and must not be used to imply consent, waiver, ratification, negotiation, acceptance, fee allocation, authority or validation. Gil's statement that Patricia felt vulnerable and threatened is an attributed first-hand partner/client-side account unless and until independently supported by Patricia's own declaration or other evidence.
+
+## 10. Attribution rule
 
 Statements alleging that the Administrador Concursal, the Concurso judge, Acosta Matos actors or former counsel acted together unlawfully remain **complainant allegations unless and until independently established by source or adjudication**. The repository must preserve those allegations, their supporting evidence and their contradictions without upgrading inference into fact.
