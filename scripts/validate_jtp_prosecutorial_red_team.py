@@ -34,7 +34,7 @@ require("en/estate-payment-counsel-independence/index.html", [
     "Parrilla’s final 11 June proposal was expressly rejected on 12 June.",
     "no direct transfer",
     "bank trace is incomplete",
-    "closing was not guaranteed",
+    "Closing was not guaranteed.",
     "Criminal / prosecutorial spine",
     "Civil / mercantile / insolvency predicates and remedies",
     "JTP_PAYMENT_FUNDED_EXIT_HOSTILE_READER_RED_TEAM_24SEP2026.md",
