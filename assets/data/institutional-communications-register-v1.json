@@ -23632,6 +23632,110 @@
       "transport_link_state": "STATUS_EXPORT_SEPARATE_FROM_ANY_EMAIL_OR_NATIVE_RECEIPT"
     },
     {
+      "channel": "DEHU",
+      "cohort": "SUPPLEMENTAL_SOURCE_PROVED_20260924",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
+      ],
+      "event_date": "2026-09-24",
+      "event_id": "PD-SP-EVT-0497",
+      "evidence_state": {
+        "internal_association": "NOT_ESTABLISHED",
+        "merits": "NOT_ESTABLISHED",
+        "registration": "NOT_PRINTED_IN_SOURCE",
+        "substantive_examination": "INFORMATION_REQUEST_REPORTED_AS_PRE_DECISION_STEP"
+      },
+      "layer": "SOURCE",
+      "matter_references": [
+        "A06",
+        "REGAGE26e00082058165"
+      ],
+      "office": "Subdirección General para la Innovación y Calidad de la Oficina Judicial y Fiscal",
+      "official_reference": "108-2026",
+      "proof_level": "OFFICIAL_SOURCE_RECEIVED",
+      "proves": [
+        "Communicated receipt; information request to TSJC reported; resolution pending."
+      ],
+      "public_summary": "Ministry communication reports receipt, an information request to the TSJC Government Secretariat and a future resolution after assessment.",
+      "record_type": "OFFICIAL_COMMUNICATION",
+      "source_integrity": {
+        "sha256": "96eb88b08d85c4dff21f26c14f52005100c0a0d294b81d2ceaf4c2d8f5a1abae",
+        "status": "PUBLIC_REDACTED_DERIVATIVE_PRIVATE_SIGNED_NATIVE_CONTROLS"
+      },
+      "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-0497"
+    },
+    {
+      "channel": "REGAGE",
+      "cohort": "SUPPLEMENTAL_SOURCE_PROVED_20260924",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
+      ],
+      "event_date": "2026-09-24",
+      "event_id": "PD-SP-EVT-0498",
+      "evidence_state": {
+        "internal_association": "NOT_ESTABLISHED",
+        "merits": "NOT_ESTABLISHED",
+        "registration": "PROVED",
+        "substantive_examination": "NOT_ESTABLISHED"
+      },
+      "layer": "FILING",
+      "matter_references": [
+        "Alzada 286/2026",
+        "DI 169/2026",
+        "REGAGE26e00082030716",
+        "108-2026"
+      ],
+      "office": "CGPJ Unidad de Registro y Archivo",
+      "official_reference": "REGAGE26e00083448218",
+      "proof_level": "REGISTERED_PRINCIPAL_HASH_VERIFIED",
+      "proves": [
+        "Registration of the listed six-page principal."
+      ],
+      "public_summary": "First 24 September CGPJ registration; receipt listed the six-page principal only.",
+      "record_type": "REGISTRATION",
+      "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-0498"
+    },
+    {
+      "channel": "REGAGE",
+      "cohort": "SUPPLEMENTAL_SOURCE_PROVED_20260924",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Four separately registered native annex files.",
+        "CGPJ incorporation, admission, examination or decision."
+      ],
+      "event_date": "2026-09-24",
+      "event_id": "PD-SP-EVT-0499",
+      "evidence_state": {
+        "internal_association": "NOT_ESTABLISHED",
+        "merits": "NOT_ESTABLISHED",
+        "registration": "PROVED",
+        "substantive_examination": "NOT_ESTABLISHED"
+      },
+      "layer": "FILING",
+      "matter_references": [
+        "Alzada 286/2026",
+        "DI 169/2026",
+        "REGAGE26e00083448218",
+        "REGAGE26e00082030716",
+        "108-2026"
+      ],
+      "office": "CGPJ Unidad de Registro y Archivo",
+      "official_reference": "REGAGE26e00083453059",
+      "proof_level": "REGISTERED_SELF_CONTAINED_17_PAGE_DOCUMENT_HASH_VERIFIED",
+      "proves": [
+        "Registration of one 17-page compiled PDF; all four annex contents visibly included."
+      ],
+      "public_summary": "Successor registration of a self-contained 17-page compilation containing all four annexes as visible pages.",
+      "record_type": "REGISTRATION",
+      "source_integrity": {
+        "sha256": "0e27fcd481c29a0b69837fc5cdeb393ddf9fbbb7c03390f6c6b7409efe5228b4",
+        "status": "REGISTERED_COMPILED_DOCUMENT_HASH_VERIFIED"
+      },
+      "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-0499"
+    },
+    {
       "attachment_count": 0,
       "attachment_count_basis": "NON_INLINE_NATIVE_ATTACHMENTS_COUNTED_PRIVATELY; NAMES_NOT_PUBLISHED",
       "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
@@ -31409,110 +31513,6 @@
       "transport_state": "RECEIVED_EMAIL_LOCATED"
     },
     {
-      "channel": "DEHU",
-      "cohort": "SUPPLEMENTAL_SOURCE_PROVED_20260924",
-      "direction": "INBOUND_FROM_INSTITUTION",
-      "does_not_prove": [
-        "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
-      ],
-      "event_date": "2026-09-24",
-      "event_id": "PD-SP-EVT-0497",
-      "evidence_state": {
-        "internal_association": "NOT_ESTABLISHED",
-        "merits": "NOT_ESTABLISHED",
-        "registration": "NOT_PRINTED_IN_SOURCE",
-        "substantive_examination": "INFORMATION_REQUEST_REPORTED_AS_PRE_DECISION_STEP"
-      },
-      "layer": "SOURCE",
-      "matter_references": [
-        "A06",
-        "REGAGE26e00082058165"
-      ],
-      "office": "Subdirección General para la Innovación y Calidad de la Oficina Judicial y Fiscal",
-      "official_reference": "108-2026",
-      "proof_level": "OFFICIAL_SOURCE_RECEIVED",
-      "proves": [
-        "Communicated receipt; information request to TSJC reported; resolution pending."
-      ],
-      "public_summary": "Ministry communication reports receipt, an information request to the TSJC Government Secretariat and a future resolution after assessment.",
-      "record_type": "OFFICIAL_COMMUNICATION",
-      "source_integrity": {
-        "sha256": "96eb88b08d85c4dff21f26c14f52005100c0a0d294b81d2ceaf4c2d8f5a1abae",
-        "status": "PUBLIC_REDACTED_DERIVATIVE_PRIVATE_SIGNED_NATIVE_CONTROLS"
-      },
-      "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-0497"
-    },
-    {
-      "channel": "REGAGE",
-      "cohort": "SUPPLEMENTAL_SOURCE_PROVED_20260924",
-      "direction": "OUTBOUND_TO_INSTITUTION",
-      "does_not_prove": [
-        "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
-      ],
-      "event_date": "2026-09-24",
-      "event_id": "PD-SP-EVT-0498",
-      "evidence_state": {
-        "internal_association": "NOT_ESTABLISHED",
-        "merits": "NOT_ESTABLISHED",
-        "registration": "PROVED",
-        "substantive_examination": "NOT_ESTABLISHED"
-      },
-      "layer": "FILING",
-      "matter_references": [
-        "Alzada 286/2026",
-        "DI 169/2026",
-        "REGAGE26e00082030716",
-        "108-2026"
-      ],
-      "office": "CGPJ Unidad de Registro y Archivo",
-      "official_reference": "REGAGE26e00083448218",
-      "proof_level": "REGISTERED_PRINCIPAL_HASH_VERIFIED",
-      "proves": [
-        "Registration of the listed six-page principal."
-      ],
-      "public_summary": "First 24 September CGPJ registration; receipt listed the six-page principal only.",
-      "record_type": "REGISTRATION",
-      "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-0498"
-    },
-    {
-      "channel": "REGAGE",
-      "cohort": "SUPPLEMENTAL_SOURCE_PROVED_20260924",
-      "direction": "OUTBOUND_TO_INSTITUTION",
-      "does_not_prove": [
-        "Four separately registered native annex files.",
-        "CGPJ incorporation, admission, examination or decision."
-      ],
-      "event_date": "2026-09-24",
-      "event_id": "PD-SP-EVT-0499",
-      "evidence_state": {
-        "internal_association": "NOT_ESTABLISHED",
-        "merits": "NOT_ESTABLISHED",
-        "registration": "PROVED",
-        "substantive_examination": "NOT_ESTABLISHED"
-      },
-      "layer": "FILING",
-      "matter_references": [
-        "Alzada 286/2026",
-        "DI 169/2026",
-        "REGAGE26e00083448218",
-        "REGAGE26e00082030716",
-        "108-2026"
-      ],
-      "office": "CGPJ Unidad de Registro y Archivo",
-      "official_reference": "REGAGE26e00083453059",
-      "proof_level": "REGISTERED_SELF_CONTAINED_17_PAGE_DOCUMENT_HASH_VERIFIED",
-      "proves": [
-        "Registration of one 17-page compiled PDF; all four annex contents visibly included."
-      ],
-      "public_summary": "Successor registration of a self-contained 17-page compilation containing all four annexes as visible pages.",
-      "record_type": "REGISTRATION",
-      "source_integrity": {
-        "sha256": "0e27fcd481c29a0b69837fc5cdeb393ddf9fbbb7c03390f6c6b7409efe5228b4",
-        "status": "REGISTERED_COMPILED_DOCUMENT_HASH_VERIFIED"
-      },
-      "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-0499"
-    },
-    {
       "channel": "EMAIL",
       "cohort": "SUPPLEMENTAL_SOURCE_PROVED_20260924",
       "direction": "INBOUND_FROM_INSTITUTION",
@@ -31653,18 +31653,6 @@
     "private_custody_manifest_row_count": 231,
     "private_custody_manifest_sha256": "bdd12a8fa62b5058525e1c37053fb7899ac24a60d12ff48ab8b74bda617cd6f6",
     "public_safe_transcript_sha256": "18a5d1687234e18d9293a3563d51118ea7b16fb5611adac9b8b428876d875df1"
-  },
-  "supplemental_control_20260924": {
-    "added_event_ids": [
-      "PD-SP-EVT-0497",
-      "PD-SP-EVT-0498",
-      "PD-SP-EVT-0499",
-      "PD-SP-EVT-1157",
-      "PD-SP-EVT-1158",
-      "PD-SP-EVT-1159"
-    ],
-    "rule": "Additive successor events; historical states remain preserved. Registration, transport, incorporation, examination and merits remain distinct.",
-    "state": "OFICIO_108_AND_CGPJ_SUCCESSOR_EVENTS_ADDED"
   },
   "unresolved_batches": [
     {
