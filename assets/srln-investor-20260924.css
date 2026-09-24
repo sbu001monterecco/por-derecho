@@ -271,3 +271,48 @@ footer strong{color:#fff}
   .vdr-group li{grid-template-columns:1fr}
   .vdr-meta{justify-content:flex-start;flex-wrap:wrap}
 }
+
+
+/* Four-level disclosure architecture + Level 1 public-support register */
+.disclosure-section{background:#eef1ef;border-top:1px solid rgba(11,23,29,.08);border-bottom:1px solid rgba(11,23,29,.08)}
+.disclosure-ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;position:relative;margin-bottom:34px}
+.disclosure-ladder:before{content:"";position:absolute;left:5%;right:5%;top:44px;height:1px;background:#c6cfc9;z-index:0}
+.disclosure-level{position:relative;z-index:1;background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 20px;min-height:238px}
+.disclosure-level.active{background:linear-gradient(145deg,#fbf7ec,#f0eadb);border-color:#d7c59a}
+.level-no{display:block;font-size:.62rem;letter-spacing:.14em;font-weight:800;color:#7b8589}
+.level-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#f2f3ef;border:1px solid #d0d7d2;margin:9px 0 22px;font-size:.9rem}
+.disclosure-level.active .level-icon{background:#0c242b;color:#fff;border-color:#0c242b}
+.disclosure-level h3{font-family:Georgia,serif;font-size:1.2rem;font-weight:500;margin-bottom:8px}
+.disclosure-level p{font-size:.85rem;color:#5d6a70;margin-bottom:16px}
+.disclosure-level small{display:block;font-size:.68rem;line-height:1.45;text-transform:uppercase;letter-spacing:.06em;color:#7a858a}
+.level-one-panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px}
+.level-one-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;padding-bottom:22px;border-bottom:1px solid rgba(11,23,29,.1)}
+.level-one-head h3{font-family:Georgia,serif;font-size:1.65rem;line-height:1.12;font-weight:500;margin-bottom:0;max-width:740px}
+.programme-ref{min-width:200px;background:#0c242b;color:#fff;border-radius:12px;padding:15px 17px}
+.programme-ref span,.programme-ref strong{display:block}
+.programme-ref span{font-size:.62rem;text-transform:uppercase;letter-spacing:.09em;color:#b7c5c9}
+.programme-ref strong{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;margin-top:4px;font-size:.92rem;color:var(--gold2)}
+.level-one-note{font-size:.82rem;color:#5c686e;background:#faf7ef;border-left:3px solid #c5aa72;padding:13px 15px;margin:20px 0}
+.application-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.application-grid article{border:1px solid rgba(11,23,29,.1);border-radius:12px;padding:15px 15px 14px;background:#fbfcfa;min-height:118px}
+.application-grid code{display:inline-block;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.7rem;color:#715c2f;background:#f0e7d1;border-radius:5px;padding:3px 6px}
+.application-grid h4{font-family:Georgia,serif;font-size:1rem;line-height:1.2;font-weight:500;margin:12px 0 9px}
+.application-grid span{font-size:.65rem;text-transform:uppercase;letter-spacing:.07em;color:#6f7b80}
+.application-foot{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px;padding-top:20px;border-top:1px solid rgba(11,23,29,.1)}
+.application-foot>div{padding-right:16px}
+.application-foot strong,.application-foot span{display:block}
+.application-foot strong{font-family:Georgia,serif;font-size:1.05rem;font-weight:500}
+.application-foot span{margin-top:5px;font-size:.75rem;color:#657278;line-height:1.45}
+@media (max-width:950px){
+  .disclosure-ladder{grid-template-columns:1fr 1fr}
+  .disclosure-ladder:before{display:none}
+  .application-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .disclosure-ladder,.application-grid,.application-foot{grid-template-columns:1fr}
+  .disclosure-level{min-height:auto}
+  .level-one-panel{padding:22px 18px}
+  .level-one-head{align-items:flex-start;flex-direction:column}
+  .programme-ref{width:100%;min-width:0}
+  .application-grid article{min-height:auto}
+}
