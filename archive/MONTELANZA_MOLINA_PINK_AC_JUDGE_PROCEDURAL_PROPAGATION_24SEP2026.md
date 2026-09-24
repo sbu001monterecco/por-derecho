@@ -17,7 +17,13 @@ The relevant Spanish company in Track B is **Monterecco Sun Park, S.L./S.R.L. �
 
 ## 2. Controlling conclusion
 
-The strongest source-controlled analysis is not “the same case twice”. It is a **procedural-propagation problem across two distinct tracks sharing disputed assumptions about exploitation authority, possession, keys, Community/CEXP competence, operating costs and the legal/economic status of the hotel as an integrated business over divided titles.**
+The controlling thesis is stronger than mere “procedural propagation”. It is a **functional-repetition / operator-displacement hypothesis across two legally distinct routes**.
+
+**Track A** used owner-specific possession/exploitation litigation concerning 18 dissident units, later extended against Monterecco, to remove those units from the operative reach attributed to CEXP/Monterecco and ultimately obtain an adverse appellate result against Monterecco/Pink for that bounded unit perimeter. **Track B** later used the insolvency-administration route — contract termination/rent litigation, possession and keys narratives, later calificación propositions and their proposition-specific judicial adoption — to challenge, burden and displace Pink’s operating position within the LPB/concurso perimeter. The concursal judge belongs on Track B as an adjudicator who adopted or rejected particular propositions; that is legally different from originating Track A.
+
+The commonality to test is therefore **same practical direction / different juridical mechanism**: fragmentation or exclusion of the hotel operator from an economically integrated hotel, first through private-owner litigation and later through insolvency/institutional processes. The investigative question is whether Track B arose independently, merely converged with Track A, reused assumptions or evidence from it, or functionally broadened the earlier exclusionary effect — and, proposition by proposition, who knew, supplied, adopted, rejected or benefited from each step.
+
+This thesis does **not** establish a common plan, concert, criminal agreement, transferred intent or collective liability. Those require independent proof. The bridge must remain actor-specific, capacity-specific and source-specific.
 
 ### Track A — private actors / minority-unit exploitation litigation
 
