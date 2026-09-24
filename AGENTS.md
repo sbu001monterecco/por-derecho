@@ -734,3 +734,7 @@ and the current state file in
   **PARTIAL — NOT FULLY ALIGNED** and name the exception.
 - Repository/Drive synchronization never authorizes filing, email, service,
   authority contact, social publication, payment or contract acceptance.
+- Run `python3 scripts/validate_cross_system_coordination.py` for every in-scope
+  cross-system coordination change. The `Validate cross-system coordination`
+  workflow is a structural guard; passing it does not prove external provider
+  state beyond the receipts recorded in the state file.
