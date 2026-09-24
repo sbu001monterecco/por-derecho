@@ -11,7 +11,7 @@ The verified Track A route in the controlled repository is:
 
 **JPI no. 4 Arrecife · JV 1260/2011 → Roll 793/2012 → Audiencia Provincial de Las Palmas · Sentencia 89/2014 (13-Jan-2014).**
 
-No canonical proceeding labelled **“ICFE”** has been located in the current repository/Drive control set. Until a primary source fixes that label, do not substitute it for the verified JPI/AP identifiers.
+Earlier references to **“ICFE”** are superseded: **“ICFE” was a voice-to-text error for “Audiencia Provincial,” not a separate proceeding or institution.** The verified route is the JPI/appeal chain stated above.
 
 The relevant Spanish company in Track B is **Monterecco Sun Park, S.L./S.R.L. → Pink Canary Services, S.L./S.L.U. (same Spanish legal person)**. It is separate from the UK company now named **AWESWELL LIMITED**. This control does not create a separate legal person called “Big Canary”.
 
