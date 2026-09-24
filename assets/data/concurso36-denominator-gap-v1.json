@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_on": "2026-08-24",
+  "generated_on": "2026-09-24",
   "scope": "Certified-docket denominator gap closure for Concurso ordinario 36/2012, from opening through current/closure status.",
   "certified_court_laj_index_located": false,
   "official_relation_of_procedural_acts_located": false,
@@ -118,7 +118,10 @@
         "recipient_lane": "Secretaría de Coordinación Provincial de Las Palmas",
         "registration": "REGAGE26e00073341382",
         "date": "2026-08-15",
-        "status": "receipt_located_response_or_production_not_located"
+        "status": "answered_by_eg17_20_26_decision; limited_alzada_REGAGE26e00083460291_filed_2026_09_24; requested_index_not_produced; forwarding_and_production_open",
+        "supervening_registration": "REGAGE26e00082040006",
+        "corrected_genealogy": "15-Aug Provincial LAJ lane remains origin; 20-Sep DP1901/Ref21/Ref24 filing is a supervening linked contribution",
+        "open_next": "confirm mapping to registro general 20-2026; prove ordered transfer to TSJC; prove alzada forwarding and ordered file"
       },
       {
         "recipient_lane": "Secretaría General de la Administración de Justicia",
@@ -137,6 +140,15 @@
       "registry_processing_confirmed": "2026-08-21",
       "superior_merits_decision": "not_located",
       "publication_boundary": "Appeal filed and registry processing confirmed is not a superior merits admission or outcome."
+    },
+    "provincial_supervisory_response": {
+      "reference": "EG 17 / N.º 20-26",
+      "communication_date": "2026-09-22",
+      "meaning": "Competence/routing decision; identifies judicial/office/LAJ custodians for particular certification/access acts and orders transfer to TSJC Government Secretariat; not a merits determination on DP1901/Ref21/Ref24.",
+      "appeal_registration": "REGAGE26e00083460291",
+      "appeal_date": "2026-09-24",
+      "appeal_scope": "limited service-coordination/competence/congruence challenge; accepts judicial-custodian boundary",
+      "publication_boundary": "Filing and exact carrier verified; forwarding, admission, examination and outcome remain open."
     }
   },
   "completeness_tests": {

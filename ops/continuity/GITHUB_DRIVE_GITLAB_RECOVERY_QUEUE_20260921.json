@@ -2,7 +2,7 @@
   "schema": "por-derecho.github-drive-gitlab-dual-write.v1",
   "control_id": "PD-DUALWRITE-20260921-01",
   "control_date": "2026-09-21",
-  "status": "ACTIVE_OUTAGE_CONTINUITY",
+  "status": "RESTORED_ADDITIVE_RECONCILIATION_ACTIVE",
   "public_github_control": ".github/governance/GITHUB_DRIVE_GITLAB_DUAL_WRITE_CONTINUITY_21SEP2026.md",
   "private_drive_control_mirror": {
     "status": "PRESENT_IN_APPROVED_PRIVATE_CUSTODY",
@@ -20,7 +20,8 @@
     },
     "gitlab_replay_queue": {
       "required_during_block": true,
-      "restoration_mode": "ADDITIVE_RECONCILIATION_ONLY"
+      "restoration_mode": "ADDITIVE_RECONCILIATION_ONLY",
+      "current_mode": "RESTORED_ACTIVE_RECONCILIATION"
     }
   },
   "recovery_classes": [
@@ -87,6 +88,30 @@
       "replay_rule": "Freeze GitHub/GitLab heads, preserve newer GitLab work, port only the source-proved net public-safe delta, run GitLab validators/pipeline, verify affected Pages routes, and record residual conflicts.",
       "github_pr": 1701,
       "github_prepared_head": "1b993927f4ed26875ba6bd28901e9231aa8fc7f4"
+    },
+    {
+      "id": "PD-GL-REC-EG17-20-26-20260924-01",
+      "scope": "EG17/20-26 corrected LAJ genealogy, filed alzada and thread continuity",
+      "recovery_class": "EXACT_GITLAB_RECOVERY",
+      "github_branch": "continuity/eg17-20-26-alzada-20260924",
+      "github_state": "BRANCH_PREPARED_PENDING_MERGE",
+      "public_paths": [
+        "archive/THREAD_DELETION_CONTINUITY_AUDIT_EG17_20_26_ALZADA_24SEP2026.md",
+        "assets/data/eg17-20-26-alzada-continuity-20260924.json",
+        "CHATGPT_START_HERE.md",
+        ".github/governance/GITHUB_DRIVE_GITLAB_DUAL_WRITE_CONTINUITY_21SEP2026.md",
+        "ops/continuity/GITHUB_DRIVE_GITLAB_RECOVERY_QUEUE_20260921.json"
+      ],
+      "private_drive_native_custody": "PRESENT_VERIFIED_LOCATOR_NOT_PUBLIC",
+      "gitlab_state": "WRITE_PENDING",
+      "replay_rule": "Additive source-proved reconciliation only; preserve newer GitLab work; no native private filing bytes in public Git."
     }
-  ]
+  ],
+  "restoration_observed": {
+    "date": "2026-09-24",
+    "gitlab_project_id": 86151898,
+    "gitlab_main_pre_transaction": "5985a64af79dd9753aedc4b462c5328583d57b42",
+    "github_main_pre_transaction": "bf090caac4f8ab0a63d13c73e5c71eb177daf51c",
+    "mode": "ADDITIVE_RECONCILIATION_NO_WHOLESALE_OVERWRITE"
+  }
 }

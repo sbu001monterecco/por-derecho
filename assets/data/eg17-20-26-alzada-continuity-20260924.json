@@ -1,0 +1,86 @@
+{
+  "schema": "por-derecho.eg17-20-26-alzada-continuity.v1",
+  "control_id": "PD-LAJ-20-26-20260924-01",
+  "control_date": "2026-09-24",
+  "timezone": "Atlantic/Canary",
+  "status": "FILED_RECEIPT_VERIFIED_OPEN_FORWARDING_AND_PRODUCTION_GAPS",
+  "corrected_genealogy": [
+    {
+      "date": "2026-08-15",
+      "registration": "REGAGE26e00073341382",
+      "role": "PROVINCIAL_LAJ_OFFICE_JUDICIAL_ORIGIN"
+    },
+    {
+      "date": "2026-08-15",
+      "registration": "REGAGE26e00073341191",
+      "role": "PARALLEL_TSJC_LAJ_LANE_BECAME_EG38"
+    },
+    {
+      "date": "2026-08-15",
+      "registration": "REGAGE26e00073341477",
+      "role": "PARALLEL_NATIONAL_JUSTICE_SERVICE_LANE"
+    },
+    {
+      "date": "2026-09-20",
+      "registration": "REGAGE26e00082040006",
+      "role": "SUPERVENING_PROVINCIAL_CONTRIBUTION_ADDS_DP1901_REF21_REF24"
+    },
+    {
+      "date": "2026-09-24",
+      "registration": "REGAGE26e00083460291",
+      "role": "LIMITED_ALZADA_AGAINST_EG17_20_26"
+    }
+  ],
+  "supersession_rule": "DP1901_IS_LATER_LINKED_DEVELOPMENT_NOT_ORIGIN_OF_EG17_20_26",
+  "filed_appeal": {
+    "registration": "REGAGE26e00083460291",
+    "presented_at_local": "2026-09-24T20:46:23+01:00",
+    "destination_dir3": "J00022837",
+    "file": "EG17_20-26_RECURSO_ALZADA_ALL_IN_REBUILT_24SEP2026.pdf",
+    "pages": 91,
+    "size_bytes": 5484572,
+    "sha256": "5d715891ae9a0897adedb26c8f7e809efb0f2126988fd35fd9f4d103d1552fca",
+    "sha512": "dfe12b91bd601d8fc308e8353c803999f4c2bc8c4228483b6e6a542ec1736264af0cdd1a5f69f5adb7e8493d4733c390269e750bdcb6428211d6a33e1053104d",
+    "proof_ceiling": "FILING_AND_EXACT_CARRIER_VERIFIED_NOT_FORWARDING_ADMISSION_OR_MERITS"
+  },
+  "receipt": {
+    "size_bytes": 84040,
+    "sha256": "026b084da967022c1c44122d1576bb25dd6cd9a8c799599e779768148a05f8d6",
+    "sha512": "e113713dbc85539a13bd3aa11cba8dee22fef136b786b9ff4b37c91f97097151d405598cf9bccc569e2f9ff335bf0106f19d52ab351099cf09169f5ba420a8ab"
+  },
+  "appeal_scope": "PARTIAL_COMPETENCE_AND_CONGRUENCE_SERVICE_COORDINATION_ONLY",
+  "parallel_tracks": [
+    "EG38_ALZADA",
+    "DP1901_JUDICIAL",
+    "CGPJ_ALZADA_286_DI169",
+    "MINISTRY_108_2026",
+    "FISCALIA_FGE_ROUTES"
+  ],
+  "private_native_custody": {
+    "status": "VERIFIED_APPROVED_PRIVATE_DRIVE",
+    "public_locator_recorded": false,
+    "native_bytes_in_public_git": false
+  },
+  "post_filing": {
+    "provincial_traceability_email_sent": true,
+    "counsel_coordination_sent": true,
+    "new_redsara_filing_required": false
+  },
+  "open_gaps": [
+    "PROVINCIAL_73341382_TO_REGISTRO_GENERAL_20_2026_AUTHORITY_CONFIRMATION",
+    "EG17_20_26_TO_TSJC_TRANSFER_EXECUTION_PROOF",
+    "ALZADA_83460291_FORWARDING_TO_SECRETARIO_GOBIERNO_AND_ORDERED_FILE",
+    "EG38_ALZADA_CURRENT_TRANSMITTED_CORPUS_STATUS",
+    "DP1901_INITIATING_DOCUMENT_AND_REF21_REF24_09JUL_TREATMENT",
+    "SIGNED_29JUL_FISCAL_REPORT_AND_CORPUS",
+    "NATIVE_14SEP_AUTO_AND_NOTIFICATION",
+    "ATLANTE_REGISTRO_REPARTO_TECHNICAL_TRACEABILITY"
+  ],
+  "evidence_controls": [
+    "REGISTRATION_NE_INCORPORATION",
+    "ORDERED_TRANSFER_NE_EXECUTED_TRANSFER",
+    "CHRONOLOGY_NE_CAUSATION",
+    "RELATIONSHIP_NE_ATTRIBUTION",
+    "OVERLAP_NE_CORROBORATION"
+  ]
+}
