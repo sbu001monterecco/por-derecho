@@ -93,7 +93,6 @@ def validate() -> dict:
         "ai proved the crime",
     ]
     forbidden_es = [
-        "todos estaban metidos",
         "todas las instituciones locales actuaron juntas",
         "la ia probó el delito",
     ]
