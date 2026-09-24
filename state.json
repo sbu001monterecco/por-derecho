@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 40,
   "owner": "1813:9fb1b1a340908ae878a516cde7b895ff2ebe924e",
-  "phase": "CLAIMED",
+  "phase": "ACCEPTED",
   "pr": 1813,
   "base_sha": "57f8db9e70fcf7ac35e1cfe7bbfd47df73cffa73",
   "candidate_sha": "9fb1b1a340908ae878a516cde7b895ff2ebe924e",
@@ -2226,6 +2226,27 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [],
-  "recovery_basis": "Explicit owner recovery of exact completed merge; not a retrospective exclusive-lock claim."
+  "checkpoints": [
+    {
+      "phase": "ACCEPTED",
+      "at": "2026-09-24T14:19:09.435354Z",
+      "evidence": {
+        "checks": [
+          {
+            "name": "publication-integrity",
+            "id": 107650389059,
+            "conclusion": "success"
+          },
+          {
+            "name": "PD release acceptance",
+            "id": 107650388306,
+            "conclusion": "success"
+          }
+        ],
+        "bootstrap_recovery": true
+      }
+    }
+  ],
+  "recovery_basis": "Explicit owner recovery of exact completed merge; not a retrospective exclusive-lock claim.",
+  "updated_at": "2026-09-24T14:19:09.435354Z"
 }
