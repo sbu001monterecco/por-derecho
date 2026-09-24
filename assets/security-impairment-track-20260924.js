@@ -36,7 +36,7 @@
     `; document.head.appendChild(s);
   };
   fetch(dataUrl).then(r=>{if(!r.ok) throw new Error('track data '+r.status); return r.json();}).then(d=>{
-    const route=d.routes.find(r=>normalise(r.path)===path); if(!route) return;
+    const route=d.routes.find(r=>normalise(r.path)===path); if(!route) return;\n    if(document.querySelector('[data-security-impairment-track="'+d.track_id+'"]')) return;
     const L=route.lang==='es'?'es':'en'; style();
     const labels=L==='es'?{
       app:'Qué aporta esta página',bridge:'Jurídicamente distintos · económicamente interdependientes',
