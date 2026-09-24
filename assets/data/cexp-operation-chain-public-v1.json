@@ -1,0 +1,41 @@
+{
+  "schema": "por-derecho.cexp-operation-chain.public.v1",
+  "as_of": "2026-09-24",
+  "control_id": "PD-SP-CEXP-CHAIN-20260924",
+  "proposition": "The documentary record supports continuity of a unitary hotel-operation architecture articulated through CEXP from the 2008 reorganisation into the 2018 window, while ownership, CEXP membership, direct operation and Owners' Community authority remain distinct and source-specific.",
+  "cautions": [
+    "Do not equate Owners' Community with CEXP.",
+    "Do not state that every owner automatically joined CEXP.",
+    "Do not state that CEXP physically operated every property without interruption.",
+    "Do not compress the Monte Lanza/Multimatrix transaction, CEXP constitution and Montelanza-to-CEXP exploitation cession into one legal act.",
+    "Direct operators/managers may differ from the exploitation-title/governance layer."
+  ],
+  "public_sources": [
+    {
+      "id": "SP-ACTA-2008-07-25",
+      "point": "Some owners recorded that they did not wish to integrate into CEXP and proposed individual leases."
+    },
+    {
+      "id": "SP-ACTA-2014-08-28-CEXP",
+      "point": "Distinct CEXP meeting recites 29-Apr-2008 constitutive session and governance under CEXP statutes."
+    },
+    {
+      "id": "SP-ACTA-2014-08-28-CP",
+      "point": "Owners' Community minutes recite one-unit tourist operation and Montelanza-to-CEXP continuity; this is the source's assertion, not an independent judgment."
+    }
+  ],
+  "controlled_sources": [
+    {
+      "id": "SP-CEXP-CESSION-2008-05-26",
+      "point": "Controlled primary scan located; no public source bytes added by this release."
+    },
+    {
+      "id": "SP-CEXP-DECL-GM-2018-06-08",
+      "point": "Contemporaneous Gil Marer declaration describes CEXP as current exploitation-holder/operator with guests and staff; party declaration, not independent adjudication."
+    },
+    {
+      "id": "CUA-RPT-006",
+      "point": "Contemporaneous professional analysis treats unitary exploitation as live and minority withdrawal as an obstacle; report remains subject to its publication controls."
+    }
+  ]
+}
