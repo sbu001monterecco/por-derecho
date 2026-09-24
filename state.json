@@ -1,14 +1,13 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 42,
-  "owner": "1840:96ed68f99de7c786eac53452c4a3a1c92b6e6fa8",
-  "phase": "VERIFIED_FOR_SCOPE",
-  "pr": 1840,
-  "base_sha": "1e392183c5aee75c6c28ee06bbb039625b69e82d",
-  "candidate_sha": "96ed68f99de7c786eac53452c4a3a1c92b6e6fa8",
-  "run_id": 36071248179,
-  "claimed_at": "2026-09-24T23:08:17.818365Z",
-  "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
+  "fence": 43,
+  "owner": "1841:c634363ba8fd2dbc68b78f471318085749f6d0ec",
+  "phase": "CLAIMED",
+  "pr": 1841,
+  "base_sha": "b88b75bfcd32e60e183a92493a5fbf29698f463a",
+  "candidate_sha": "c634363ba8fd2dbc68b78f471318085749f6d0ec",
+  "run_id": 36073551792,
+  "claimed_at": "2026-09-24T23:36:34.221050Z",
   "receipts": [
     {
       "pr": 1470,
@@ -2325,74 +2324,6 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-09-24T23:08:18.889132Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "PD release acceptance",
-            "id": 107871578886,
-            "conclusion": "success"
-          },
-          {
-            "name": "publication-integrity",
-            "id": 107871578665,
-            "conclusion": "success"
-          }
-        ]
-      }
-    },
-    {
-      "phase": "MERGE_PENDING",
-      "at": "2026-09-24T23:09:11.909350Z",
-      "evidence": {
-        "pr": 1840
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-09-24T23:09:12.933861Z",
-      "evidence": {
-        "merge_sha": "5b75eee891d5204c6a6a4bcf89e86bc6e1ab9a2b"
-      }
-    },
-    {
-      "phase": "DEPLOYED",
-      "at": "2026-09-24T23:10:06.971357Z",
-      "evidence": {
-        "pages_run_id": 36071238072,
-        "merge_sha": "5b75eee891d5204c6a6a4bcf89e86bc6e1ab9a2b"
-      }
-    },
-    {
-      "phase": "VERIFIED_FOR_SCOPE",
-      "at": "2026-09-24T23:10:09.390929Z",
-      "evidence": {
-        "merge_sha": "5b75eee891d5204c6a6a4bcf89e86bc6e1ab9a2b",
-        "pages_run_id": 36071238072,
-        "exact_matches": [
-          {
-            "path": "en/index.html",
-            "sha256": "d3917a91f8073c65c4a5b1e4395a0f5e10688fd09b97838ffe411e6dda42397b",
-            "bytes": 233625
-          },
-          {
-            "path": "es/index.html",
-            "sha256": "0ae46753cc4880fed0770ef0237856587cb89f0d99c56d2a91d4f6b8d7e01d63",
-            "bytes": 242931
-          },
-          {
-            "path": "ops/continuity/CONTEXT_INTEGRITY_IMPLEMENTATION_20260924.json",
-            "sha256": "d71e644cacd418b07f4ac49100ee8dbf5da5b97b26e89f4a3686865ef71d6edc",
-            "bytes": 785
-          }
-        ],
-        "pending": [],
-        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
-      }
-    }
-  ],
-  "updated_at": "2026-09-24T23:10:09.390929Z"
+  "checkpoints": [],
+  "recovery_basis": "Explicit owner recovery of exact completed merge; not a retrospective exclusive-lock claim."
 }
