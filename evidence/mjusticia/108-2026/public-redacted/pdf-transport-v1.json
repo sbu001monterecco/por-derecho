@@ -1,0 +1,20 @@
+{
+  "schema": "por-derecho.lossless-pdf-json-chunks.v1",
+  "source_pdf_filename": "108-2026-public-redacted.pdf",
+  "source_pdf_size_bytes": 185032,
+  "source_pdf_sha256": "96eb88b08d85c4dff21f26c14f52005100c0a0d294b81d2ceaf4c2d8f5a1abae",
+  "encoding": "json-contained-base64-independent-binary-chunks",
+  "binary_chunk_bytes": 65536,
+  "chunk_count": 3,
+  "chunks": [
+    "pdf-chunks/108-2026-public-redacted.part-001.json",
+    "pdf-chunks/108-2026-public-redacted.part-002.json",
+    "pdf-chunks/108-2026-public-redacted.part-003.json"
+  ],
+  "reconstruction": "Decode each chunk independently in listed order and concatenate the resulting bytes.",
+  "source_boundary": "Public redacted derivative only. Native signed original remains in controlled private custody.",
+  "native_source_sha256": "20eee667e206c982a293a8dd3f7ade2041cbbfb0a113bb864def7a8ec9307a5f",
+  "native_source_bytes": 371631,
+  "official_reference": "108-2026",
+  "document_date": "2026-09-24"
+}
