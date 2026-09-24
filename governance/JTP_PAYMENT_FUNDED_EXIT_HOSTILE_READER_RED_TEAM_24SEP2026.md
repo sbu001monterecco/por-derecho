@@ -79,6 +79,12 @@ A serious contrary source must narrow the theory at the affected link. Material 
 8. court docket and exact filing/non-filing record for the January 2019 protective work;
 9. contrary/exculpatory communications and later corrective/legal outcomes.
 
+## 24-Sep native-source close
+
+Read `archive/JTP_FEE_AUTHORITY_PAYMENT_SOURCE_CLOSE_24SEP2026.md` and `assets/data/jtp-fee-authority-source-close-20260924.json` before any future JTP fee/source/authority publication. The source close establishes the 2012 €40,000 + IGIC pro-forma baseline; Parrilla's 11-Jun-2020 €50,000 + IGIC proposal, €32,250 prior-receipt account and written-approval requirement; the 12-Jun express rejection; Jiménez's 18-Jun contemporaneous assessment that the negotiations were broken because he perceived an attempt to condition successor work on fee payment; and the AC's later €26,750 July-payment report. A bounded 12-Jun→31-Jul three-mailbox search found no later written client approval, and targeted Drive searches found no matching July bank debit/recipient credit. Those negative searches are bounded, not universal proof of absence.
+
+Arithmetic lock: **never state that €25,000 exceeds a €17,750 base balance by €9,000.** €25,000 − €17,750 = €7,250, but even that is not the correct publication comparison because Parrilla stated €17,750 **+ IGIC** and the AC reported a gross €26,750. The public-safe observation is that €26,750 equals €25,000 + 7% IGIC and does not numerically reproduce Parrilla's stated €17,750 + IGIC balance; invoice, tax, authority and bank reconciliation decide the legal/economic result.
+
 ## A+ target gates
 
 The project may call the structure **A+ target met** only when all of these are true at the candidate head:
