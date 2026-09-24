@@ -23647,10 +23647,7 @@
         "substantive_examination": "INFORMATION_REQUEST_REPORTED_AS_PRE_DECISION_STEP"
       },
       "layer": "SOURCE",
-      "matter_references": [
-        "A06",
-        "REGAGE26e00082058165"
-      ],
+      "matter_references": [],
       "office": "Subdirección General para la Innovación y Calidad de la Oficina Judicial y Fiscal",
       "official_reference": "108-2026",
       "proof_level": "OFFICIAL_SOURCE_RECEIVED",
@@ -23660,6 +23657,7 @@
       "public_summary": "Ministry communication reports receipt, an information request to the TSJC Government Secretariat and a future resolution after assessment.",
       "record_type": "OFFICIAL_COMMUNICATION",
       "source_integrity": {
+        "repository_anchor": "assets/data/oficio-108-2026-public-state.json",
         "sha256": "96eb88b08d85c4dff21f26c14f52005100c0a0d294b81d2ceaf4c2d8f5a1abae",
         "status": "PUBLIC_REDACTED_DERIVATIVE_PRIVATE_SIGNED_NATIVE_CONTROLS"
       },
@@ -23681,12 +23679,7 @@
         "substantive_examination": "NOT_ESTABLISHED"
       },
       "layer": "FILING",
-      "matter_references": [
-        "Alzada 286/2026",
-        "DI 169/2026",
-        "REGAGE26e00082030716",
-        "108-2026"
-      ],
+      "matter_references": [],
       "office": "CGPJ Unidad de Registro y Archivo",
       "official_reference": "REGAGE26e00083448218",
       "proof_level": "REGISTERED_PRINCIPAL_HASH_VERIFIED",
@@ -23695,6 +23688,10 @@
       ],
       "public_summary": "First 24 September CGPJ registration; receipt listed the six-page principal only.",
       "record_type": "REGISTRATION",
+      "source_integrity": {
+        "repository_anchor": "assets/data/oficio-108-2026-public-state.json",
+        "status": "SOURCE_PROVED_PUBLIC_SAFE_DERIVATIVE"
+      },
       "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-0498"
     },
     {
@@ -23714,13 +23711,7 @@
         "substantive_examination": "NOT_ESTABLISHED"
       },
       "layer": "FILING",
-      "matter_references": [
-        "Alzada 286/2026",
-        "DI 169/2026",
-        "REGAGE26e00083448218",
-        "REGAGE26e00082030716",
-        "108-2026"
-      ],
+      "matter_references": [],
       "office": "CGPJ Unidad de Registro y Archivo",
       "official_reference": "REGAGE26e00083453059",
       "proof_level": "REGISTERED_SELF_CONTAINED_17_PAGE_DOCUMENT_HASH_VERIFIED",
@@ -23730,6 +23721,7 @@
       "public_summary": "Successor registration of a self-contained 17-page compilation containing all four annexes as visible pages.",
       "record_type": "REGISTRATION",
       "source_integrity": {
+        "repository_anchor": "assets/data/oficio-108-2026-public-state.json",
         "sha256": "0e27fcd481c29a0b69837fc5cdeb393ddf9fbbb7c03390f6c6b7409efe5228b4",
         "status": "REGISTERED_COMPILED_DOCUMENT_HASH_VERIFIED"
       },
@@ -31527,9 +31519,7 @@
         "transmission": "RECEIVED_EMAIL_LOCATED"
       },
       "layer": "TRANSPORT",
-      "matter_references": [
-        "108-2026"
-      ],
+      "matter_references": [],
       "office": "Electronic-notification service",
       "official_reference": "108-26",
       "proof_level": "RECEIVED_EMAIL_LOCATED",
@@ -31538,6 +31528,10 @@
       ],
       "public_summary": "Electronic-availability notice for the underlying 108-2026 communication.",
       "record_type": "EMAIL_TRANSPORT",
+      "source_integrity": {
+        "repository_anchor": "assets/data/oficio-108-2026-public-state.json",
+        "status": "SOURCE_PROVED_PUBLIC_SAFE_DERIVATIVE"
+      },
       "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-1157"
     },
     {
@@ -31555,9 +31549,7 @@
         "transmission": "RECEIVED_EMAIL_LOCATED"
       },
       "layer": "TRANSPORT",
-      "matter_references": [
-        "108-2026"
-      ],
+      "matter_references": [],
       "office": "Electronic-notification service",
       "official_reference": "108-26",
       "proof_level": "RECEIVED_EMAIL_LOCATED",
@@ -31566,6 +31558,10 @@
       ],
       "public_summary": "Second availability notice for the same underlying 108-2026 communication; not a second substantive decision.",
       "record_type": "EMAIL_TRANSPORT",
+      "source_integrity": {
+        "repository_anchor": "assets/data/oficio-108-2026-public-state.json",
+        "status": "SOURCE_PROVED_PUBLIC_SAFE_DERIVATIVE"
+      },
       "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-1158"
     },
     {
@@ -31584,10 +31580,7 @@
         "transmission": "SENT_EMAIL_VERIFIED"
       },
       "layer": "TRANSPORT",
-      "matter_references": [
-        "REGAGE26e00082030716",
-        "108-2026"
-      ],
+      "matter_references": [],
       "office": "CGPJ Sección de Recursos",
       "official_reference": "Alzada 286/2026 / DI 169/2026",
       "proof_level": "SENT_EMAIL_VERIFIED",
@@ -31596,6 +31589,10 @@
       ],
       "public_summary": "Update sent to the CGPJ Appeals Section with four supporting PDFs; dispatch does not prove reading or incorporation.",
       "record_type": "EMAIL_TRANSPORT",
+      "source_integrity": {
+        "repository_anchor": "assets/data/oficio-108-2026-public-state.json",
+        "status": "SOURCE_PROVED_PUBLIC_SAFE_DERIVATIVE"
+      },
       "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-1159"
     }
   ],
