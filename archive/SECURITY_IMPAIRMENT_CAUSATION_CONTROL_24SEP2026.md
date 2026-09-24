@@ -54,3 +54,19 @@ ES hub: `es/garantia-deterioro-causacion-acreedor/`
 EN hub: `en/security-impairment-creditor-causation/`
 
 The route-specific module highlights one part of the same five-stage track rather than duplicating legal prose across pages.
+
+
+## Implementation architecture
+
+- Shared loader: `assets/site.js`, advanced only through the exact append-only successor pinned in `ops/recovery-cross-thread/SECURITY_IMPAIRMENT_SITE_LOADER_REVIEWED_SUCCESSOR_20260924.json`.
+- Historical loader provenance remains unchanged; the first 18,055 bytes retain SHA-256 `ac8e67195d5ca02463d5edf5ce2d49fd97f784e077c4dab76ac16a1de28c51a4`.
+- Successor loader SHA-256: `3587d694cd37ca7287a36895d67321db1921d6145c88ec568b805297ae8f51d9`.
+- Renderer: `assets/security-impairment-track-20260924.js`.
+- Data: `assets/data/security-impairment-track-v1.json`, currently 26 route applications.
+- Deep-dive routes: `/es/garantia-deterioro-causacion-acreedor/` and `/en/security-impairment-creditor-causation/`.
+- Existing protected case-page bodies are not rewritten to carry this track. The shared reviewed loader invokes the component only for route families covered by the loader gate, while the data file decides whether a component is actually rendered.
+- GitLab-only narrower CEXP / CAM-offer routes and the public GitHub broader Community / active-estate equivalents coexist without inventing nonexistent mirror paths.
+
+## Release boundary
+
+The implementation is a reviewed candidate until the applicable merge/release gates complete. Creation of a branch, MR/PR, or successful component-level test does not by itself mean the public site is live.
