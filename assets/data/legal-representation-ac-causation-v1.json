@@ -14,7 +14,8 @@
     "objectiveEffectSeparatedFromIntent": true,
     "privateSourceBoundary": "Underlying private Gmail and Drive material remains in connected source systems. This file preserves public-safe source descriptions, dates, evidential states and analytical consequences only.",
     "negativeEvidenceRule": "No evidence located is not proof of non-existence or non-occurrence.",
-    "counterfactualQuestion": "Would the engagement probably have ended, narrowed or failed to formalise if the identified AC event had not occurred?"
+    "counterfactualQuestion": "Would the engagement probably have ended, narrowed or failed to formalise if the identified AC event had not occurred?",
+    "antiFragmentationDominoRule": "Do not isolate the May–June 2020 Parrilla fee/payment episode from the documented May–June 2018 funded-exit and 7-June defence chronology. Documentary fact: the 12-Jun-2020 client side expressly rejected Parrilla's final fee proposal and moved toward an insolvency incident. Documentary context: ONA/Stoneweg/Cuatrecasas were actively advancing the transaction immediately before 7-Jun-2018, and 7-Jun emails record immediate legal/evidential resistance to CAM's asserted possession. Gil's wider proposition that the 2020 rejection was downstream resistance to one alleged sabotage/interference mechanism is an attributed unitary inference. Preserve each arrow separately; fragmentation is forbidden and chronology is not causation."
   },
   "causationScale": {
     "C0": "No identifiable causal connection on the current record.",
@@ -335,6 +336,25 @@
       "effect": "Created documented personal-exposure, reputation/insurance and defence-ratification pressure around the core pleading.",
       "exitLink": "MATERIAL_PRESSURE_SEQUENCE_EXCLUSIVE_CAUSATION_NOT_PROVED",
       "strongestDefence": "The order made no merits finding; later withdrawal cited irreparable lawyer-client breakdown and included apologies/withdrawal of subjective dishonesty characterisations."
+    },
+    {
+      "id": "LRAC-EVT-2018-2020-DOMINO-REJECTION",
+      "dateWindow": "2018-05-29/2020-06-12",
+      "actors": [
+        "Gil Marer",
+        "Patricia Domínguez",
+        "ONA",
+        "Stoneweg",
+        "Cuatrecasas",
+        "Juan Tomás Parrilla Suárez",
+        "Daniel Jiménez García",
+        "Administrador Concursal",
+        "CAM"
+      ],
+      "event": "Documented transaction-to-defence-to-fee sequence: ONA/Stoneweg transaction work immediately before 7 June 2018; immediate complaints/evidence response to CAM's asserted possession on 7 June; explicit rejection of Parrilla's final fee proposal on 12 June 2020 and move toward an insolvency incident.",
+      "effect": "Prevents the 2020 fee rejection being treated as acquiescence or as an isolated billing disagreement. It supplies a documented continuity bridge between the funded-exit context, defensive response and later counsel/payment conflict.",
+      "exitLink": "DOCUMENTED_CONTINUITY_BRIDGE_WITH_ATTRIBUTED_UNITARY_CAUSATION",
+      "strongestDefence": "The 2018 and 2020 events are separated by time and involve distinct acts and legal questions. The later rejection does not itself prove that the 2018 exit was sabotaged, that every downstream event shares one cause, or that any actor had criminal intent."
     }
   ],
   "patternTests": {
