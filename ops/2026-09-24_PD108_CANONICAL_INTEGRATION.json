@@ -1,0 +1,42 @@
+{
+  "schema": "por-derecho.pd108-canonical-integration.v1",
+  "control_date": "2026-09-24",
+  "status": "CANONICAL_INTEGRATION_CANDIDATE",
+  "controlling_registration": "REGAGE26e00083453059",
+  "historical_registration": "REGAGE26e00083448218",
+  "ministry_reference": "108-2026",
+  "canonical_events": [
+    "PD-SP-EVT-0200",
+    "PD-SP-EVT-0201",
+    "PD-SP-EVT-0202",
+    "PD-SP-EVT-0203",
+    "PD-SP-EVT-0204",
+    "PD-SP-EVT-0205"
+  ],
+  "public_pdf": {
+    "path": "assets/public-documents/108-2026-public-contextual-derivative.pdf",
+    "sha256": "56203fa87b711bafca6a03b90ba40ef42f51b07e4b4811c1a3ebfaab23f96ab3",
+    "classification": "PUBLIC_CONTEXTUAL_DERIVATIVE_NOT_SIGNED_ORIGINAL"
+  },
+  "viewer_routes": [
+    "es/cgpj-comision-permanente-sala-lectura/index.html",
+    "en/cgpj-permanent-commission-reader-room/index.html",
+    "es/tsj-canarias-exp-gub-38-2026-alzada-presentada/index.html",
+    "en/tsj-canarias-exp-gub-38-2026-appeal-filed/index.html"
+  ],
+  "boundaries": [
+    "registration != incorporation != admission != examination != decision",
+    "the 17-page receipt proves one compiled PDF, not four separately registered native annex files",
+    "oficio 108-2026 does not print REGAGE26e00082058165; relationship remains strongly supported, not explicitly cross-referenced",
+    "professional counsel notification is private; no Audiencia Provincial filing is established"
+  ],
+  "open_production": [
+    "Ministry request to TSJC: date, reference, questions and requested documents",
+    "TSJC response and annexes, or status if not yet issued",
+    "CGPJ confirmation of incorporation/current decision and notification",
+    "certified Ref.21/Ref.22/Ref.24 intake/reparto/association histories",
+    "signed 29 July Fiscal report, author/assignment and transmitted corpus",
+    "professional counsel response and any actual Audiencia Provincial filing"
+  ],
+  "privacy": "No native private email bodies, provider identifiers, one-time codes, residential addresses, signatures, CSV/QR data or privileged strategy are committed."
+}

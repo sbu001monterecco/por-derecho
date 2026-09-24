@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho.dp1901-direct-action-state.v1",
-  "control_date": "2026-09-23",
+  "control_date": "2026-09-24",
   "control_timezone": "Atlantic/Canary",
   "status": "13_REGISTERED_POST_FILING_FOLLOWUP_OPEN",
   "counts": {
@@ -91,7 +91,21 @@
       "registered_at": "2026-09-20 12:32:19",
       "purpose": "Supervening fact, preservation and functional classification.",
       "proof": "Receipt proves registration; classification, admission, examination and action remain unproved.",
-      "canonical_event_id": "PD-SP-EVT-0184"
+      "canonical_event_id": "PD-SP-EVT-0184",
+      "successor_20260924": {
+        "state": "REGISTERED_COMPLETE_CONTENT_SUCCESSOR_EXAMINATION_OPEN",
+        "public_events": [
+          "PD-SP-EVT-0203",
+          "PD-SP-EVT-0204",
+          "PD-SP-EVT-0205"
+        ],
+        "registrations": [
+          "REGAGE26e00083448218",
+          "REGAGE26e00083453059"
+        ],
+        "controlling_registration": "REGAGE26e00083453059",
+        "proof": "The second 24 September receipt and hash verification establish registration of the self-contained 17-page compilation; CGPJ incorporation, admission, examination and decision remain unproved."
+      }
     },
     {
       "id": "A04",
@@ -119,7 +133,7 @@
     },
     {
       "id": "A06",
-      "state": "REGISTERED_RECEIPT_HASH_VERIFIED_HANDLING_PENDING",
+      "state": "REGISTERED_RECEIPT_HASH_VERIFIED_OFFICIAL_ACKNOWLEDGEMENT_INFORMATION_REQUEST_REPORTED",
       "destination": "Secretaría General para la Innovación y Calidad del Servicio Público de Justicia",
       "rejected_registration": "REGAGE26e00073341477",
       "purpose": "National supervisory incorporation within lawful competence.",
@@ -187,7 +201,15 @@
         "illustration_count": 6
       },
       "do_not_repeat_whole_filing": true,
-      "canonical_event_id": "PD-SP-EVT-0187"
+      "canonical_event_id": "PD-SP-EVT-0187",
+      "successor_official_acknowledgement": {
+        "reference": "108-2026",
+        "date": "2026-09-24",
+        "relationship_to_A06": "STRONGLY_SUPPORTED_NOT_EXPLICITLY_CROSS_REFERENCED",
+        "proves": "The Ministry unit reports receipt of a complaint concerning Mercantile Section seat 1 and an information request to the TSJC Government Secretariat, with assessment/resolution pending.",
+        "limit": "The oficio does not print REGAGE26e00082058165 or the June control references; exact originating-registration identity remains to be confirmed.",
+        "canonical_event_id": "PD-SP-EVT-0202"
+      }
     },
     {
       "id": "A07",

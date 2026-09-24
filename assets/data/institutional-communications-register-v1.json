@@ -44,7 +44,7 @@
     "The caret marker remains identity-only; communication events receive stable IDs and bilingual anchors, never presentation carets.",
     "Criminal relevance may be linked as an open hypothesis, but criminal responsibility never transfers through an ACTA, communication, referral, office or institutional tier."
   ],
-  "control_date": "2026-09-21",
+  "control_date": "2026-09-24",
   "denominator_control": {
     "arithmetic_check": "Historical control: 75 detailed + 22 metadata-only = 97 reported total. Current 21-Sep status export: 398 distinct REGAGE rows (114 formal-event identities reused, including 22 receipt-controlled identities added in this release; 284 status-only rows added).",
     "curated_source_proved_events": 412,
@@ -31461,7 +31461,15 @@
     "mailbox_index_sha256": "d623d710aced7bf37417429afb75dcce43265c3ca0855fe7f1412f84193ff5b0",
     "private_custody_manifest_row_count": 231,
     "private_custody_manifest_sha256": "bdd12a8fa62b5058525e1c37053fb7899ac24a60d12ff48ab8b74bda617cd6f6",
-    "public_safe_transcript_sha256": "18a5d1687234e18d9293a3563d51118ea7b16fb5611adac9b8b428876d875df1"
+    "public_safe_transcript_sha256": "18a5d1687234e18d9293a3563d51118ea7b16fb5611adac9b8b428876d875df1",
+    "pd108_20260924": {
+      "status": "PUBLIC_SAFE_SUCCESSOR_SOURCES_REVIEWED_PRIVATE_NATIVES_WITHHELD",
+      "control_date": "2026-09-24",
+      "public_pdf_derivative_sha256": "56203fa87b711bafca6a03b90ba40ef42f51b07e4b4811c1a3ebfaab23f96ab3",
+      "private_source_boundary": "Native signed oficio, notification metadata, registration receipts, complete email bodies and legal-professional correspondence remain in controlled private custody.",
+      "relationship_boundary": "Oficio 108-2026 is strongly supported as a successor to the national 20 September route, but the oficio does not print REGAGE26e00082058165; no exact cross-reference is inferred.",
+      "counsel_boundary": "Professional counsel was notified privately; no Audiencia Provincial filing is established by that communication."
+    }
   },
   "unresolved_batches": [
     {
