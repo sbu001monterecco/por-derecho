@@ -1,0 +1,29 @@
+{
+  "schema": "por-derecho.chatgpt-memory-sync-state.v1",
+  "memory_id": "PD-MEM-001",
+  "version": "2026.09.23.1",
+  "generated_at": "2026-09-23T23:00:00+01:00",
+  "gitlab": {
+    "branch": "pd-mem-001-20260923",
+    "base_main": "db977edf059e6b6fb66c4f286c978a3c2f8c07d5",
+    "candidate_head": "b23fd4e4d9e02d4ae330dd5e856f904247a0f394",
+    "state": "CANDIDATE_WRITTEN_PENDING_MERGE"
+  },
+  "github": {
+    "branch": "pd-mem-001-20260923",
+    "base_main": "2798cbf236571e9fa8d413de08221bcfa2ab98a8",
+    "state": "CANDIDATE_WRITTEN_PENDING_MERGE"
+  },
+  "drive_private": {
+    "state": "VERIFIED_CREATED",
+    "full_master_id": "1Y74lL47TozjS-YelRtGSQBCg2dubayleanr2fKMhaQI",
+    "compact_id": "1hSt0npboOJG34O5EQLdV8XPfAF49p6JaZM0-qNLhYOc",
+    "custody_folder_id": "18BxxAIzQMmKs3CsRz2jA2p4kQHOYg5s4"
+  },
+  "chatgpt_memory": {
+    "state": "USER_OBSERVED_DIGEST_CAPTURED",
+    "note": "Settings digest is lossy projection, not source authority"
+  },
+  "public_private_boundary": "Repository files are public-safe; full private custody is Google Drive.",
+  "authority_rule": "Re-resolve live host authority before use; never infer canonical host from this historical receipt."
+}

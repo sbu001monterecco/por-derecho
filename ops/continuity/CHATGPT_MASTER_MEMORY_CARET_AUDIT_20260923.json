@@ -1,0 +1,143 @@
+{
+  "schema": "por-derecho.caret-audit.v1",
+  "audit_id": "PD-MEM-001-ALL-IS-20260923",
+  "command": "confirm all is^",
+  "scope": "PD-MEM-001 deliverable and materially relied-upon named objects/relationships/events/proceedings",
+  "result": "PARTIAL_NOT_ALL_IS_CARET",
+  "reason": "All named core objects are durably registered or source-controlled, but the Hava Vida beneficial/trust proposition remains an attributed open legal/source bridge and current 2026 Hava Vida shareholder/director status requires current Spanish registry proof.",
+  "objects": [
+    {
+      "name": "Gil Marer",
+      "id": "PD-SP-P-0001",
+      "state": "CARET_CONFIRMED"
+    },
+    {
+      "name": "Patricia Domínguez",
+      "id": "PD-SP-P-0002",
+      "state": "CARET_CONFIRMED"
+    },
+    {
+      "name": "AWESWELL LIMITED",
+      "ids": [
+        "E005",
+        "PD-SP-O-0001"
+      ],
+      "state": "CARET_CONFIRMED"
+    },
+    {
+      "name": "Hava Vida Travel & Tourism, S.L.U.",
+      "ids": [
+        "E051",
+        "PD-SP-O-0103"
+      ],
+      "state": "CARET_CONFIRMED"
+    },
+    {
+      "name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "id": "PD-SP-P-0010",
+      "state": "CARET_CONFIRMED"
+    },
+    {
+      "name": "Alberto López Villarrubia",
+      "id": "PD-SP-P-0057",
+      "state": "CARET_CONFIRMED"
+    },
+    {
+      "name": "Francisco Mario Matos Matas",
+      "id": "PD-SP-P-0009",
+      "state": "CARET_CONFIRMED"
+    },
+    {
+      "name": "Antonio Cogolludo Rojas",
+      "id": "PD-SP-P-0007",
+      "state": "CARET_CONFIRMED"
+    },
+    {
+      "name": "Shaila María Cogolludo Ramos",
+      "id": "PD-SP-P-0008",
+      "state": "CARET_CONFIRMED"
+    },
+    {
+      "name": "José Daniel Acosta Matos",
+      "id": "PD-SP-P-0011",
+      "state": "CARET_CONFIRMED"
+    },
+    {
+      "name": "Laura Patricia Acosta Matos",
+      "id": "PD-SP-P-0012",
+      "state": "CARET_CONFIRMED"
+    },
+    {
+      "name": "Concurso 36/2012",
+      "id": "PD-SP-R-0001",
+      "state": "CARET_CONFIRMED"
+    },
+    {
+      "name": "DP 1956/2026",
+      "id": "PD-SP-R-0004",
+      "state": "CARET_CONFIRMED"
+    },
+    {
+      "name": "DP 1901/2026",
+      "id": "PD-SP-R-0005",
+      "state": "CARET_CONFIRMED"
+    },
+    {
+      "name": "DIP 2/2026",
+      "id": "PD-SP-R-0006",
+      "state": "CARET_CONFIRMED"
+    },
+    {
+      "name": "RPL 3304/2025",
+      "id": "PD-SP-R-0011",
+      "state": "CARET_CONFIRMED"
+    },
+    {
+      "name": "E.G. 745/2026",
+      "id": "PD-SP-R-0034",
+      "state": "CARET_CONFIRMED"
+    }
+  ],
+  "material_events": [
+    {
+      "event": "7 June 2018 material-control/takeover convergence pivot",
+      "state": "REGISTERED_EXISTING_SPECIALIST_CONTROLS"
+    },
+    {
+      "event": "14 September 2026 RPL 3304/2025 AC opposition",
+      "state": "REGISTERED_EXISTING_R33_CONTROL"
+    },
+    {
+      "event": "21 September 2023 Audiencia Nacional querella project-perimeter narrative",
+      "state": "REGISTERED_SOURCE_TRANSCRIPTION"
+    },
+    {
+      "event": "23 September 2026 Gil Marer Hava Vida beneficial/trust attribution",
+      "state": "REGISTERED_NEW_ATTRIBUTED_PROPOSITION"
+    }
+  ],
+  "open_items": [
+    "Current Spanish registry proof for Hava Vida 2026 shareholder/director status",
+    "Trust/nominee/shareholder instrument if any",
+    "Funding/accounting/tax/UBO treatment",
+    "Governing-law and Spanish recognition/effect analysis"
+  ],
+  "boundary": "Caret/registration does not prove conduct, ownership beyond the stated source date, trust validity, knowledge, intent, liability or merits.",
+  "identity_denominator": 17,
+  "identity_caret_confirmed": 17,
+  "identity_coverage_percent": 100,
+  "non_caret_registered_sources": [
+    "PD-HV-SRC-20120208-BORME-64020",
+    "PD-HV-SRC-20120612-BORME-248217",
+    "PD-HV-SRC-20230921-ANQ-P53",
+    "PD-HV-SRC-20260923-GM-ATTRIBUTION"
+  ],
+  "non_caret_registered_events": [
+    "PD-HV-EVT-20120127-01",
+    "PD-HV-EVT-20120531-01",
+    "PD-HV-EVT-20230921-01",
+    "PD-HV-EVT-20260923-01"
+  ],
+  "identity_result": "ALL_IDENTITY_OBJECTS_IN_STATED_SCOPE_CARET_CONFIRMED",
+  "remaining_exception": "The beneficial/trust proposition and current 2026 Hava Vida shareholder/administrator/UBO status remain open legal/source questions; registration is complete but merits/status proof is not."
+}
