@@ -1,0 +1,190 @@
+{
+  "schema": "pd.r33-processing-ledger-public-projection.v1",
+  "control_id": "PD-R33-CONTINUITY-20260924-01",
+  "control_date": "2026-09-24",
+  "parent_controls": [
+    "PD-AC-CLAIMS-R33-20260922-01",
+    "PD-LAW-TRUTH-20260922-01"
+  ],
+  "source_id": "C36-SPECIALIST-R33",
+  "native_sha256": "5e0728185cf9b686abd723497d2a53a2656a5e0de4d323a734ed02880eb1d711",
+  "state": "TESTED_WORKER_IMPLEMENTATION_NOT_MAIN_NOT_DEPLOYED",
+  "recovery": {
+    "v3_zip_sha256": "16e2bd3a198997e8e139ea4862aa2b174fd898025b9e35077f5fba0b1321da16",
+    "v3_case_sha256": "ad3b9531986446f73b1bc39e7b5baca2bedb1efdeb8ece06b7175008655fc2c6",
+    "v3_csv_sha256": "d178842c0cc8fa6afe9dea9c0f29caa20150f588bca6dbd7725e0f855e4fcce3",
+    "zip_crc": "PASS",
+    "embedded_native_hash": "PASS",
+    "case_and_csv_member_equality": "PASS",
+    "correction": "Earlier Drive-only nondiscovery remains historical; the exact v3 objects are now recovered from private Library custody."
+  },
+  "versions": [
+    {
+      "id": "INITIAL",
+      "blocks": 181,
+      "review_units": 172
+    },
+    {
+      "id": "RUN2",
+      "blocks": 186,
+      "review_units": 261
+    },
+    {
+      "id": "V3",
+      "blocks": 206,
+      "review_units": 482
+    },
+    {
+      "id": "SEG251",
+      "blocks": 186,
+      "review_units": 251
+    }
+  ],
+  "denomination_rules": [
+    "V3=276 statement annotations +206 paragraph composites; CSV=276 rows.",
+    "Eight stored CONTRADICTS edges represent four statement/paragraph pairs, not eight independent findings.",
+    "Initial=148 index units+24 focused notes; Run2=148 index units+113 focused notes.",
+    "Segmentation, translation, presentation, preservation and verification are distinct operations."
+  ],
+  "actual_checks": {
+    "regression_tests": 39,
+    "quote_anchors": 915,
+    "successor_parent_spans": 251,
+    "initial_ids_retained_in_run2": 172,
+    "new_run2_ids": 89,
+    "v3_statements_to_251": {
+      "unique_exact_text": 215,
+      "ambiguous_exact": 3,
+      "split_merge_scope": 16,
+      "no_text_match": 42,
+      "new_without_candidate": 6
+    },
+    "dependency_nodes_visited": 485,
+    "original_related_edges": 552,
+    "automatic_evidential_promotions": 0
+  },
+  "bounded_retrieval": {
+    "hosts": [
+      "gitlab",
+      "github"
+    ],
+    "files_per_host": 1,
+    "unique_content_objects": 1,
+    "proposal_queries": 251,
+    "candidate_queries": 108,
+    "scope": "One identical R33 claim-family control, verified by connector revision and content hashes. Technical exercise only; no independent corroboration or exhaustive source search.",
+    "github_ref": "3f10c3bfc54c6723182c9150d67d810dbc5963ee",
+    "gitlab_ref": "19b84977dd185ddf8a8065305b37e036869d446e",
+    "inventory_sha256": "efadb56874d9dd2e031cb613f2512de40e30da25aaab6a874302a77293cce18a"
+  },
+  "event_projection": [
+    {
+      "id": "R33-H01",
+      "kind": "EVIDENCE_REVIEW",
+      "execution_state": "HISTORICAL_REPORTED",
+      "effective_at": "2026-09-21T18:20:23.079006+00:00"
+    },
+    {
+      "id": "R33-H02",
+      "kind": "EVIDENCE_REVIEW",
+      "execution_state": "HISTORICAL_REPORTED",
+      "effective_at": "2026-09-21T19:30:56.619611+00:00"
+    },
+    {
+      "id": "R33-H03",
+      "kind": "EVIDENCE_REVIEW",
+      "execution_state": "HISTORICAL_REPORTED",
+      "effective_at": "2026-09-21T20:22:00Z"
+    },
+    {
+      "id": "R33-H04",
+      "kind": "INTEGRITY_REVIEW",
+      "execution_state": "HISTORICAL_REPORTED",
+      "effective_at": "2026-09-21T20:42:42.142470+00:00"
+    },
+    {
+      "id": "R33-H05",
+      "kind": "TRANSLATION",
+      "execution_state": "HISTORICAL_REPORTED",
+      "effective_at": null
+    },
+    {
+      "id": "R33-H06",
+      "kind": "PRESENTATION",
+      "execution_state": "HISTORICAL_REPORTED",
+      "effective_at": null
+    },
+    {
+      "id": "R33-H07",
+      "kind": "SEGMENTATION",
+      "execution_state": "HISTORICAL_REPORTED",
+      "effective_at": "2026-09-22"
+    },
+    {
+      "id": "R33-H08",
+      "kind": "TOOLING",
+      "execution_state": "HISTORICAL_REPORTED",
+      "effective_at": "2026-09-22"
+    },
+    {
+      "id": "R33-A01",
+      "kind": "SOURCE_RECOVERY",
+      "execution_state": "EXECUTED",
+      "effective_at": null
+    },
+    {
+      "id": "R33-A02",
+      "kind": "INTEGRITY_REVIEW",
+      "execution_state": "EXECUTED",
+      "effective_at": null
+    },
+    {
+      "id": "R33-A03",
+      "kind": "TOOLING",
+      "execution_state": "EXECUTED",
+      "effective_at": null
+    },
+    {
+      "id": "R33-A04",
+      "kind": "TOOLING",
+      "execution_state": "EXECUTED",
+      "effective_at": null
+    },
+    {
+      "id": "R33-A05",
+      "kind": "TOOLING",
+      "execution_state": "EXECUTED",
+      "effective_at": null
+    },
+    {
+      "id": "R33-A06",
+      "kind": "INTEGRITY_REVIEW",
+      "execution_state": "EXECUTED",
+      "effective_at": null
+    },
+    {
+      "id": "R33-A07",
+      "kind": "NO_CHANGE",
+      "execution_state": "NO_CHANGE",
+      "effective_at": null
+    }
+  ],
+  "private_ledger_sha256": "242a6d4b2a3456629ac8471a978128ae02ffdffbb57127a8f5c9c4a2596d498f",
+  "private_ledger_tip": "5a041b1ac7f2eb7f196cf7a57343941c8df8ba0340028ef227cbaab8fd20f3c8",
+  "private_rows_and_locators": "WITHHELD_FROM_GIT",
+  "integration": {
+    "role": "WORKER",
+    "target_lane": "Existing Truth Machine !542 and R33 !556 integration; no competing release",
+    "public_paths_modified": [],
+    "main_modified": false,
+    "deployed": false,
+    "CI_claim": "39 local tests; no remote gate pass asserted"
+  },
+  "open_gaps": [
+    "42 historical-v3 statement text nonmatches and all split/merge/ambiguous mappings need semantic review",
+    "Private/source-complete cross-corpus search and 22-page native visual revalidation not performed",
+    "Exact first ChatGPT upload timestamp not established",
+    "Historical English companion bytes not restored in this run",
+    "Existing !542 and !556 integration/release lanes remain separate and unmerged as checked"
+  ]
+}
