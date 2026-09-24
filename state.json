@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 41,
   "owner": "1839:7b1bb44e21dd4b061e6431491398ede41e02e395",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 1839,
   "base_sha": "1638dd877c506699cd835ecb86e20ac5b9e18443",
   "candidate_sha": "7b1bb44e21dd4b061e6431491398ede41e02e395",
@@ -2271,6 +2271,32 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 1839,
+      "candidate_sha": "7b1bb44e21dd4b061e6431491398ede41e02e395",
+      "at": "2026-09-24T22:55:34.718407Z",
+      "merge_sha": "22fa41c019295c8c6372ca179cdfb6f4b466bc53",
+      "pages_run_id": 36066824551,
+      "exact_matches": [
+        {
+          "path": "en/index.html",
+          "sha256": "d3917a91f8073c65c4a5b1e4395a0f5e10688fd09b97838ffe411e6dda42397b",
+          "bytes": 233625
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "0ae46753cc4880fed0770ef0237856587cb89f0d99c56d2a91d4f6b8d7e01d63",
+          "bytes": 242931
+        },
+        {
+          "path": "ops/unitary-action-execution-20260924.json",
+          "sha256": "b5bd8b0da78f63cc24fb4e1589d08c6a81b3d4e71233305cfbdf268bef521b24",
+          "bytes": 2915
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -2313,7 +2339,34 @@
         "pages_run_id": 36066824551,
         "merge_sha": "22fa41c019295c8c6372ca179cdfb6f4b466bc53"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-24T22:55:34.718367Z",
+      "evidence": {
+        "merge_sha": "22fa41c019295c8c6372ca179cdfb6f4b466bc53",
+        "pages_run_id": 36066824551,
+        "exact_matches": [
+          {
+            "path": "en/index.html",
+            "sha256": "d3917a91f8073c65c4a5b1e4395a0f5e10688fd09b97838ffe411e6dda42397b",
+            "bytes": 233625
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "0ae46753cc4880fed0770ef0237856587cb89f0d99c56d2a91d4f6b8d7e01d63",
+            "bytes": 242931
+          },
+          {
+            "path": "ops/unitary-action-execution-20260924.json",
+            "sha256": "b5bd8b0da78f63cc24fb4e1589d08c6a81b3d4e71233305cfbdf268bef521b24",
+            "bytes": 2915
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-24T22:55:30.844037Z"
+  "updated_at": "2026-09-24T22:55:34.718367Z"
 }
