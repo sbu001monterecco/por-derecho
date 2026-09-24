@@ -38,6 +38,10 @@ require("en/estate-payment-counsel-independence/index.html", [
     "Criminal / prosecutorial spine",
     "Civil / mercantile / insolvency predicates and remedies",
     "JTP_PAYMENT_FUNDED_EXIT_HOSTILE_READER_RED_TEAM_24SEP2026.md",
+    "Contemporaneous criminal lens — 4 January 2019.",
+    "By 1 June incoming counsel was already treating Parrilla as no longer LPB counsel",
+    "24 September 2026 deep-source sweep:",
+    "JTP_ONA_DEEP_SOURCE_SWEEP_24SEP2026.md",
 ])
 
 require("es/pago-masa-independencia-defensa/index.html", [
@@ -58,6 +62,10 @@ require("es/pago-masa-independencia-defensa/index.html", [
     "Eje penal / fiscal",
     "Presupuestos y remedios civil / mercantil / concursal",
     "JTP_PAYMENT_FUNDED_EXIT_HOSTILE_READER_RED_TEAM_24SEP2026.md",
+    "Óptica penal contemporánea — 4 de enero de 2019.",
+    "Ya el 1 de junio el letrado entrante trataba a Parrilla como antiguo letrado de LPB",
+    "Barrido profundo de fuentes · 24 septiembre 2026:",
+    "JTP_ONA_DEEP_SOURCE_SWEEP_24SEP2026.md",
 ])
 
 require("en/pre-7-june-2018-funded-ona-exit/index.html", [
@@ -124,6 +132,18 @@ if control:
         if gate not in gates:
             errors.append(f"{control_path}: missing A+ target gate: {gate}")
 
+require("archive/JTP_ONA_DEEP_SOURCE_SWEEP_24SEP2026.md", [
+    "PD-JTP-SOURCE-SWEEP-20260924-01",
+    "JTP's own 4-Jan-2019 draft used a criminal / prosecutorial frame",
+    "By 1 June 2020 successor counsel was already disputing JTP's authority / entitlement position",
+    "TARGETED_NEGATIVE_SEARCH_RESULT / OPEN_PROOF",
+    "failure to retrieve a record in this bounded search is not proof that the record does not exist",
+])
+require("assets/data/jtp-ona-deep-source-sweep-20260924.json", [
+    '"control_id": "PD-JTP-SOURCE-SWEEP-20260924-01"',
+    '"classification": "TARGETED_NEGATIVE_SEARCH_RESULT_OPEN_PROOF"',
+    '"Non-retrieval in this bounded connected-source search is not proof of non-existence."',
+])
 require("governance/JTP_PAYMENT_FUNDED_EXIT_HOSTILE_READER_RED_TEAM_24SEP2026.md", [
     "simulated adversarial review; not statements by any named adverse party",
     "Criminal first means element first, not offence-label first.",
@@ -132,6 +152,8 @@ require("governance/JTP_PAYMENT_FUNDED_EXIT_HOSTILE_READER_RED_TEAM_24SEP2026.md
     "Priority prosecution production",
     "A+ target gates",
     "No simulated score substitutes for an actual prosecutor",
+    "## 24-September deep-source supplement",
+    "negative search",
 ])
 
 if errors:

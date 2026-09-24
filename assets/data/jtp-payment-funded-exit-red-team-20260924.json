@@ -93,6 +93,29 @@
     "reciprocal ONA/7June/counsel/payment links",
     "capacity/proceeding non-fusion",
     "exact-head validation",
-    "separate merge/deploy/live-readback verification"
-  ]
+    "separate merge/deploy/live-readback verification",
+    "deep-source audit and dated negative-search result public"
+  ],
+  "deep_source_sweep": {
+    "control_id": "PD-JTP-SOURCE-SWEEP-20260924-01",
+    "human_control": "archive/JTP_ONA_DEEP_SOURCE_SWEEP_24SEP2026.md",
+    "machine_control": "assets/data/jtp-ona-deep-source-sweep-20260924.json",
+    "strengthened": [
+      "JTP 4-Jan-2019 draft expressly used criminal/prosecutorial language and requested Ministerio Fiscal referral",
+      "May–June 2018 correspondence places JTP inside the ONA/Stoneweg/Cuatrecasas funded-exit/protective context",
+      "1-Jun-2020 successor counsel treated JTP as no longer LPB counsel and disputed fee entitlement/double-payment position",
+      "12-Jun-2020 final proposal rejection remains direct documentary evidence",
+      "AC 21-Jul-2021 report directly records €26,750 Jul-20 counsel payment and separately the €400,000 CAM sale component"
+    ],
+    "still_open": [
+      "JTP invoice",
+      "executed payment authority",
+      "estate debit",
+      "recipient credit",
+      "complete estate ledger sufficient to prove source",
+      "bank-complete €400,000→€26,750 trace",
+      "dated earlier assurance/arrangement proving prospective inducement in January 2019"
+    ],
+    "negative_search_rule": "Non-retrieval in the bounded connected-source sweep is not proof of non-existence."
+  }
 }
