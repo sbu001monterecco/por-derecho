@@ -3,7 +3,7 @@
   const current=document.currentScript;
   if(!current) return;
   const normalise=p=>{ let x=p.replace(/\/index\.html$/,''); if(!x.endsWith('/')) x+='/'; return x; };
-  const path=normalise(location.pathname.replace(/^\/por-derecho(?=\/)/,''));
+  const rawPath=location.pathname.replace(/\/index\\.html$/,'');\n  const langPath=rawPath.match(/\/(?:es|en)\/.+$/);\n  const path=normalise(langPath?langPath[0]:rawPath.replace(/^\/por-derecho(?=\/)/,''));
   const dataUrl=new URL('data/security-impairment-track-v1.json?v=20260924a',current.src);
   const root=new URL('../',current.src);
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
