@@ -23,7 +23,7 @@ The image may be used as an identification/illustrative asset only. It does not 
 
 A 4 January 2019 draft addressed to the Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria, Concurso Ordinario 36/2012, bears signature blocks for Juan Tomás Parrilla Suárez and procuradora Pilar García Coello.
 
-Its stated object is a complaint concerning alleged disloyal conduct and possible procedural fraud by the Administrador Concursal. Among other matters, the draft challenges the possible disposition of LPB properties, the treatment of the `ob rem` linkage, the position of Construcciones Acosta Matos, S.A., and requests referral to the Ministerio Fiscal in relation to possible offences.
+Its stated object is a complaint concerning alleged disloyal conduct and possible procedural fraud by the Administrador Concursal. Among other matters, the draft challenges the possible disposition of LPB properties, the treatment of the `ob rem` linkage, the position of Construcciones Acosta Matos, S.A., and requests referral to the Ministerio Fiscal in relation to possible offences. The offences expressly identified in the draft are possible **estafa procesal**, **alteración de la subasta / liquidación** and **administración desleal**. This is material because it proves that a criminal/prosecutorial lens existed contemporaneously in counsel's own prepared work, without proving that the draft was filed or that any offence occurred.
 
 ### Direct transmission evidence — 4 Jan 2019
 
@@ -60,6 +60,12 @@ The located contemporaneous May–June 2020 correspondence materially strengthen
 Parrilla wrote that he had spoken with the Administrador Concursal concerning recognition of his fees and the procuradora's fees. He reported an AC discussion about **€80,000 + IGIC** as an estate claim for his legal fees, with **€25,000** to be paid immediately and the remainder recognised. This is Parrilla's report of a proposed arrangement, not the AC's independent acceptance instrument or a receipt.
 
 The 28 May client-side reply is **not a fee-authorisation instrument and must not be used as one**. Gil characterises the exchange as part of repeated misuse of professional leverage and undue pressure. He states that Patricia was acting locally on his behalf as his partner and representative in the Canary Islands, that she experienced the exchange as threatening and felt particularly vulnerable while handling the matter locally, including the dimension he identifies of doing so as a woman, against the background of the representation failures, omissions, acts and refusals he attributes to Parrilla. Its evidential relevance is therefore limited to the pressure / vulnerability / information-asymmetry lane and to her request for direct written AC confirmation. It must not be characterised as consent, waiver, ratification, negotiation, acceptance, allocation authority or validation of Parrilla's proposal.
+
+### 1 Jun 2020 — successor-counsel authority / entitlement dispute
+
+The full handover thread records a materially stronger boundary than the 28-May exchange alone. Incoming counsel treated Parrilla as no longer LPB's lawyer, directed that the fee issue be handled through successor counsel, disputed Parrilla's legal entitlement theory and expressly raised the risk of double payment if the same work had already been funded by the client side. Another successor-counsel message criticised Parrilla for bypassing the incoming lawyer on the fee issue.
+
+**Classification:** direct contemporaneous successor-counsel position. It does not itself adjudicate fee entitlement or professional misconduct, but it materially rebuts any suggestion that the 28-May reply created continuing client authority for Parrilla to negotiate or receive a later estate payment.
 
 ### 11–12 Jun 2020
 
@@ -111,7 +117,19 @@ Planned visual nodes:
 - payment / estate-funds lane, clearly labelled by source status
 - a separate **Questions / allegations to investigate** lane, visually distinct from verified facts
 
-## 8. Next source-closure tasks
+## 8. Deep source sweep — 24 September 2026
+
+A targeted retrieval pass was run across the connected Gmail accounts and Google Drive for the JTP fee/handover, ONA/Stoneweg, 4-Jan-2019 draft, €400,000 sale component and €26,750 payment. The pass directly located:
+
+- the 4-Jan-2019 broad JTP draft and a duplicate public-context copy;
+- the May–June 2020 fee/handover threads, including the 1-Jun successor-counsel authority/entitlement dispute and 12-Jun express rejection;
+- the 29–31-May-2018 Stoneweg/Cuatrecasas/ONA coordination chain;
+- the June-2018 appeal chain showing JTP, Cuatrecasas and ONA counsel working on the same funded-exit/protective context;
+- the AC's 21-Jul-2021 liquidation report recording the €400,000 direct-sale component and, separately, **Juan Tomás Parrilla — €26,750 — Jul-20 — Honorarios abogado concursada**.
+
+The same targeted pass did **not** locate the underlying Parrilla invoice, an executed client/estate payment authority, a matched estate-account debit and recipient credit, or a bank-complete €400,000→€26,750 trace. This is a **negative search result, not proof of non-existence**. Provider-specific message/file identifiers remain outside public Git.
+
+## 9. Next source-closure tasks
 
 - Obtain the certified filing/docket record to determine whether the exact 4-Jan-2019 draft or an equivalent was lodged; compare the complete 10-Jan filing, reposición papers and outcomes.
 - Bind the sale deed requested in the 9-Jan-2019 correspondence and its date of availability to the defence team.
@@ -121,10 +139,10 @@ Planned visual nodes:
 - Preserve the 2018–2019 appeal (including CAM and AC opposition and Parrilla's LPB position), the 10-Jan narrower filing, the 15-Jan procedural notices, and all other contrary or exculpatory material alongside adverse material.
 - Seek actor-specific AC–CAM–Parrilla communications, fee conditions and dated professional acts; do not infer an earlier agreement or third-party knowledge from the 2020 payment report.
 
-## 9. Controlling Patricia / 28-May rule
+## 10. Controlling Patricia / 28-May rule
 
 For all future public pages, visuals, pleadings, summaries and machine controls in this workstream, Patricia's 28-May-2020 reply must remain **secondary pressure-context evidence only**. It is not part of the centre-stage money-route proof and must not be used to imply consent, waiver, ratification, negotiation, acceptance, fee allocation, authority or validation. Gil's statement that Patricia felt vulnerable and threatened is an attributed first-hand partner/client-side account unless and until independently supported by Patricia's own declaration or other evidence.
 
-## 10. Attribution rule
+## 11. Attribution rule
 
 Statements alleging that the Administrador Concursal, the Concurso judge, Acosta Matos actors or former counsel acted together unlawfully remain **complainant allegations unless and until independently established by source or adjudication**. The repository must preserve those allegations, their supporting evidence and their contradictions without upgrading inference into fact.
