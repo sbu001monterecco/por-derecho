@@ -131,7 +131,7 @@
     }
   },
   "register_path": "assets/data/institutional-communications-register-v1.json",
-  "register_sha256": "f114837b9bfdc3d45137f06ab70e227eff4268fb54e04bf4d3e9d9f323611c75",
+  "register_sha256": "3e059a76432e6a79c536dc58656058abdc00eb42e05df8d1b6c310c3b3763ed5",
   "schema": "por-derecho.institutional-communications-scan-checkpoint.v1",
   "source_required_and_normalisation_gates": [
     "Historical 22-record RedSARA/AGE aggregate remains provenance; the current 398-row status export is represented individually without inferring a one-to-one legacy mapping.",
