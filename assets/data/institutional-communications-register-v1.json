@@ -44,13 +44,13 @@
     "The caret marker remains identity-only; communication events receive stable IDs and bilingual anchors, never presentation carets.",
     "Criminal relevance may be linked as an open hypothesis, but criminal responsibility never transfers through an ACTA, communication, referral, office or institutional tier."
   ],
-  "control_date": "2026-09-21",
+  "control_date": "2026-09-24",
   "denominator_control": {
-    "arithmetic_check": "Historical control: 75 detailed + 22 metadata-only = 97 reported total. Current 21-Sep status export: 398 distinct REGAGE rows (114 formal-event identities reused, including 22 receipt-controlled identities added in this release; 284 status-only rows added).",
-    "curated_source_proved_events": 412,
+    "arithmetic_check": "24-Sep bounded reconciliation adds eight source-proved PD-108/CGPJ/TSJC events without renumbering prior rows.",
+    "curated_source_proved_events": 420,
     "detailed_baseline_receipt_rows_expected": 75,
     "detailed_baseline_receipt_rows_registered": 75,
-    "event_rows_total": 643,
+    "event_rows_total": 651,
     "mailbox_draft_rows": 3,
     "mailbox_inbound_email_rows": 101,
     "mailbox_outbound_email_rows": 42,
@@ -66,7 +66,8 @@
     "public_authority_communication_events": 19,
     "reported_received": 90,
     "reported_rejected": 7,
-    "wider_regage_records_reported": 97
+    "wider_regage_records_reported": 97,
+    "event_row_arithmetic": "Current 24-Sep register: prior 643 rows + 8 PD-108/CGPJ/TSJC source-proved successor events = 651; no global-completeness claim."
   },
   "events": [
     {
@@ -9411,7 +9412,12 @@
       },
       "source_key": "REGISTERED-20260921:REGAGE26e00082030716",
       "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
-      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT",
+      "linked_successor_event_ids": [
+        "PD-SP-EVT-0500",
+        "PD-SP-EVT-0501",
+        "PD-SP-EVT-0502"
+      ]
     },
     {
       "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
@@ -9521,7 +9527,10 @@
       },
       "source_key": "REGISTERED-20260921:REGAGE26e00082040006",
       "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
-      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT",
+      "linked_successor_event_ids": [
+        "PD-SP-EVT-0498"
+      ]
     },
     {
       "annex_count": 4,
@@ -9579,7 +9588,20 @@
       },
       "source_key": "REGISTERED-20260921:REGAGE26e00082058165",
       "source_timezone": "NOT_STATED; receipt time preserved literally without conversion",
-      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT",
+      "successor_handling": {
+        "event_id": "PD-SP-EVT-0497",
+        "reference": "108-2026",
+        "date": "2026-09-24",
+        "state": "OFFICIAL_RECEIPT_AND_INFORMATION_REQUEST_REPORTED_RESOLUTION_PENDING",
+        "relationship_to_a06": "STRONGLY_SUPPORTED_NOT_EXPLICITLY_CROSS_REFERENCED",
+        "printed_originating_regage": false,
+        "request_target": "Secretaría de Gobierno del TSJC",
+        "does_not_prove": "Admission, merits acceptance, TSJC response already received, or final resolution."
+      },
+      "linked_successor_event_ids": [
+        "PD-SP-EVT-0497"
+      ]
     },
     {
       "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
@@ -31406,13 +31428,407 @@
       "subject_text_published": false,
       "transport_link_state": "THIS_ROW_IS_THE_TRANSPORT_LAYER",
       "transport_state": "RECEIVED_EMAIL_LOCATED"
+    },
+    {
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "source_batch_id": "PD-108-20260924-CONTINUITY",
+      "review_record": "assets/data/pd108-public-viewer-v1.json",
+      "mirror_state": {
+        "github": "PENDING_MERGE_READBACK",
+        "gitlab": "PENDING_MERGE_READBACK",
+        "website": "PENDING_EXACT_SHA_DEPLOYMENT"
+      },
+      "event_id": "PD-SP-EVT-0497",
+      "source_key": "PD108:OFFICIO-108-2026",
+      "event_date": "2026-09-24",
+      "record_type": "OFFICIAL_COMMUNICATION",
+      "channel": "DEHU_DOCUMENT",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "office": "Subdirección General para la Innovación y Calidad de la Oficina Judicial y Fiscal",
+      "official_reference": "108-2026",
+      "matter_references": [
+        "A06",
+        "REGAGE26e00082058165",
+        "Exp.Gub.38/2026",
+        "Alzada 286/2026"
+      ],
+      "proof_level": "NATIVE_SIGNED_PDF_ACQUIRED_AND_PUBLIC_REDACTED_DERIVATIVE_HASH_BOUND",
+      "proves": [
+        "The Ministry unit communicated receipt of the complaint concerning Mercantile Plaza 1 and stated that it had requested information from the TSJC Government Secretariat before deciding."
+      ],
+      "proves_es": "La unidad ministerial comunicó la recepción de la denuncia relacionada con Mercantil, plaza n.º 1, y señaló que había solicitado información a la Secretaría de Gobierno del TSJC antes de resolver.",
+      "does_not_prove": [
+        "Acceptance of the allegations; that the TSJC response had already arrived; reopening of Government File 38/2026; CGPJ incorporation; an Audiencia Provincial filing; or an express printed cross-reference to REGAGE26e00082058165."
+      ],
+      "does_not_prove_es": "No acredita estimación de las alegaciones, respuesta ya recibida del TSJC, reapertura del Exp. Gub. 38/2026, incorporación al CGPJ, presentación ante la Audiencia Provincial ni referencia cruzada impresa a REGAGE26e00082058165.",
+      "public_summary": "Ministry letter 108-2026 reports receipt and a request for information from the TSJC Government Secretariat before a later decision.",
+      "public_summary_es": "El oficio ministerial 108-2026 comunica recepción y solicitud de información a la Secretaría de Gobierno del TSJC antes de una resolución posterior.",
+      "evidence_state": {
+        "transmission": "OFFICIAL_DOCUMENT_ACQUIRED",
+        "delivery": "RECEIVED_BY_ADDRESSEE",
+        "registration": "ORIGINATING_REGISTRATION_NOT_PRINTED_IN_OFFICIO",
+        "internal_association": "A06_RELATION_STRONGLY_SUPPORTED_NOT_EXPLICITLY_CROSS_REFERENCED",
+        "substantive_examination": "MINISTRY_ASSESSMENT_PENDING",
+        "merits": "NOT_ESTABLISHED"
+      },
+      "source_integrity": {
+        "status": "NATIVE_PRIVATE_PUBLIC_REDACTED_DERIVATIVE",
+        "native_sha256": "20eee667e206c982a293a8dd3f7ade2041cbbfb0a113bb864def7a8ec9307a5f",
+        "public_derivative_sha256": "96eb88b08d85c4dff21f26c14f52005100c0a0d294b81d2ceaf4c2d8f5a1abae",
+        "repository_anchor": "assets/data/pd108-public-viewer-v1.json"
+      },
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0497",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0497"
+    },
+    {
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "source_batch_id": "PD-108-20260924-CONTINUITY",
+      "review_record": "assets/data/pd108-public-viewer-v1.json",
+      "mirror_state": {
+        "github": "PENDING_MERGE_READBACK",
+        "gitlab": "PENDING_MERGE_READBACK",
+        "website": "PENDING_EXACT_SHA_DEPLOYMENT"
+      },
+      "event_id": "PD-SP-EVT-0498",
+      "source_key": "PD108:COORDINACION-EG17-20-26",
+      "event_date": "2026-09-22",
+      "record_type": "OFFICIAL_DECISION",
+      "channel": "OFFICIAL_PDF",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "office": "Secretaría Coordinadora Provincial de Las Palmas",
+      "official_reference": "EG 17 / n.º 20-26",
+      "matter_references": [
+        "A05",
+        "Exp.Gub.38/2026"
+      ],
+      "proof_level": "NATIVE_OFFICIAL_PDF_REVIEWED",
+      "proves": [
+        "The Coordination Secretariat declined specified reconstruction/certification requests on competence grounds and ordered a limited copy transfer to the TSJC Government Secretariat for possible consideration in Government File 38/2026 or its appeal."
+      ],
+      "proves_es": "La Secretaría de Coordinación declinó determinadas peticiones de reconstrucción/certificación por competencia y ordenó un traslado limitado de copia a la Secretaría de Gobierno del TSJC para valorar su eventual incorporación al Exp. Gub. 38/2026 o a su alzada.",
+      "does_not_prove": [
+        "Reopening, admission of allegations, irregularity, or completion of the requested documentary reconstruction."
+      ],
+      "does_not_prove_es": "No acredita reapertura, admisión de alegaciones, irregularidad ni reconstrucción documental completada.",
+      "public_summary": "Coordination decision EG 17 / 20-26 sets a competence boundary and a limited onward transfer to the TSJC Government Secretariat.",
+      "public_summary_es": "El Acuerdo EG 17 / 20-26 delimita competencia y ordena un traslado limitado a la Secretaría de Gobierno del TSJC.",
+      "evidence_state": {
+        "transmission": "OFFICIAL_DECISION_RECEIVED",
+        "delivery": "ADDRESSEE_RECEIPT_ESTABLISHED",
+        "registration": "INTERNAL_GEISER_REFERENCES_RECORDED_IN_DECISION",
+        "internal_association": "POSSIBLE_TSJC_INCORPORATION_LEFT_TO_TSJC",
+        "substantive_examination": "COORDINATION_DECISION_COMPLETED_WITH_COMPETENCE_REFUSAL",
+        "merits": "NO_IRREGULARITY_FINDING"
+      },
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0498",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0498"
+    },
+    {
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "source_batch_id": "PD-108-20260924-CONTINUITY",
+      "review_record": "assets/data/pd108-public-viewer-v1.json",
+      "mirror_state": {
+        "github": "PENDING_MERGE_READBACK",
+        "gitlab": "PENDING_MERGE_READBACK",
+        "website": "PENDING_EXACT_SHA_DEPLOYMENT"
+      },
+      "event_id": "PD-SP-EVT-0499",
+      "source_key": "PD108:DP1901-FOLLOWUP-145381",
+      "event_date": "2026-09-23",
+      "record_type": "JUDICIAL_PORTAL_RECEIPT",
+      "channel": "CANARY_JUDICIAL_PORTAL",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Tribunal de Instancia de Las Palmas de Gran Canaria · Instrucción Plaza 6",
+      "official_reference": "S000000000000145381",
+      "matter_references": [
+        "DP 1901/2026",
+        "Ref.21",
+        "Ref.24"
+      ],
+      "proof_level": "OFFICIAL_JUDICIAL_PORTAL_RECEIPT_REVIEWED",
+      "proves": [
+        "A narrow documentary follow-up was presented in DP 1901/2026 asking about the initiating document and procedural treatment of later private-actor material."
+      ],
+      "proves_es": "Se presentó en DP 1901/2026 un seguimiento documental acotado sobre el escrito iniciador y el tratamiento procesal del material posterior relativo a actores privados.",
+      "does_not_prove": [
+        "Incorporation, examination, a response, reopening, or that the follow-up is an appeal against the September order."
+      ],
+      "does_not_prove_es": "No acredita incorporación, examen, respuesta, reapertura ni que el seguimiento sea un recurso contra el Auto de septiembre.",
+      "public_summary": "Judicial receipt S000000000000145381 records the 23 September DP 1901 documentary follow-up.",
+      "public_summary_es": "El acuse judicial S000000000000145381 registra el seguimiento documental de DP 1901 presentado el 23 de septiembre.",
+      "evidence_state": {
+        "transmission": "OFFICIAL_JUDICIAL_PORTAL_RECEIPT_LOCATED",
+        "delivery": "PRESENTED_TO_NAMED_PROCEEDING",
+        "registration": "RECEIPT_ESTABLISHED",
+        "internal_association": "NOT_ESTABLISHED_BEYOND_RECEIPT",
+        "substantive_examination": "NOT_ESTABLISHED",
+        "merits": "NOT_ESTABLISHED"
+      },
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0499",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0499"
+    },
+    {
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "source_batch_id": "PD-108-20260924-CONTINUITY",
+      "review_record": "assets/data/pd108-public-viewer-v1.json",
+      "mirror_state": {
+        "github": "PENDING_MERGE_READBACK",
+        "gitlab": "PENDING_MERGE_READBACK",
+        "website": "PENDING_EXACT_SHA_DEPLOYMENT"
+      },
+      "event_id": "PD-SP-EVT-0500",
+      "source_key": "PD108:CGPJ-EMAIL-24SEP",
+      "event_date": "2026-09-24",
+      "record_type": "OUTBOUND_COMMUNICATION",
+      "channel": "EMAIL",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "office": "CGPJ · Sección de Recursos",
+      "official_reference": "Alzada 286/2026 / DI 169/2026",
+      "matter_references": [
+        "Alzada 286/2026",
+        "DI 169/2026",
+        "108-2026",
+        "REGAGE26e00082030716"
+      ],
+      "proof_level": "AUTHORISED_SENT_MAIL_READBACK_VERIFIED",
+      "proves": [
+        "A 24 September update concerning letter 108-2026 and documentary traceability was sent to the CGPJ Resources Section with four supporting PDFs."
+      ],
+      "proves_es": "El 24 de septiembre se remitió a la Sección de Recursos del CGPJ una actualización sobre el oficio 108-2026 y la trazabilidad documental, con cuatro PDF de apoyo.",
+      "does_not_prove": [
+        "Reading, incorporation into Alzada 286/2026, examination, agreement or a decision."
+      ],
+      "does_not_prove_es": "No acredita lectura, incorporación a Alzada 286/2026, examen, conformidad ni resolución.",
+      "public_summary": "CGPJ Resources Section was sent the 24 September 108-2026 / traceability update.",
+      "public_summary_es": "Se remitió a Recursos del CGPJ la actualización de 24 de septiembre sobre 108-2026 y trazabilidad.",
+      "evidence_state": {
+        "transmission": "SENT_PACKAGE_VERIFIED",
+        "delivery": "NOT_ESTABLISHED_BY_SENT_MAIL_ALONE",
+        "registration": "SEPARATE_LATER_REGAGE_EVENTS",
+        "internal_association": "NOT_ESTABLISHED",
+        "substantive_examination": "NOT_ESTABLISHED",
+        "merits": "NOT_ESTABLISHED"
+      },
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0500",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0500"
+    },
+    {
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "source_batch_id": "PD-108-20260924-CONTINUITY",
+      "review_record": "assets/data/pd108-public-viewer-v1.json",
+      "mirror_state": {
+        "github": "PENDING_MERGE_READBACK",
+        "gitlab": "PENDING_MERGE_READBACK",
+        "website": "PENDING_EXACT_SHA_DEPLOYMENT"
+      },
+      "event_id": "PD-SP-EVT-0501",
+      "source_key": "PD108:REGAGE-83448218",
+      "event_date": "2026-09-24",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "CGPJ · Unidad de Registro y Archivo",
+      "official_reference": "REGAGE26e00083448218",
+      "matter_references": [
+        "Alzada 286/2026",
+        "DI 169/2026",
+        "108-2026",
+        "REGAGE26e00082030716"
+      ],
+      "proof_level": "OFFICIAL_REGAGE_RECEIPT_HASH_VERIFIED",
+      "proves": [
+        "REGAGE26e00083448218 registered the six-page principal submission addressed to the CGPJ."
+      ],
+      "proves_es": "REGAGE26e00083448218 registró el escrito principal de seis páginas dirigido al CGPJ.",
+      "does_not_prove": [
+        "The four separately intended annex files were registered: the receipt inventory lists only the principal. It also does not prove incorporation, admission or examination."
+      ],
+      "does_not_prove_es": "No acredita el registro separado de los cuatro anexos previstos: el inventario del justificante enumera solo el principal. Tampoco acredita incorporación, admisión ni examen.",
+      "public_summary": "First 24 September CGPJ REGAGE registered the six-page principal; its receipt did not list the four intended annex files.",
+      "public_summary_es": "El primer REGAGE del 24 de septiembre registró el principal de seis páginas; su justificante no enumeró los cuatro anexos previstos.",
+      "evidence_state": {
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED",
+        "delivery": "PRESENTED_TO_CGPJ_REGISTRY",
+        "registration": "REGISTERED_PRINCIPAL_HASH_VERIFIED",
+        "internal_association": "NOT_ESTABLISHED",
+        "substantive_examination": "NOT_ESTABLISHED",
+        "merits": "NOT_ESTABLISHED"
+      },
+      "supersession": {
+        "status": "HISTORICAL_INTERMEDIATE_STATE",
+        "superseded_for_annex_content_completeness_by": "PD-SP-EVT-0502"
+      },
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0501",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0501"
+    },
+    {
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "source_batch_id": "PD-108-20260924-CONTINUITY",
+      "review_record": "assets/data/pd108-public-viewer-v1.json",
+      "mirror_state": {
+        "github": "PENDING_MERGE_READBACK",
+        "gitlab": "PENDING_MERGE_READBACK",
+        "website": "PENDING_EXACT_SHA_DEPLOYMENT"
+      },
+      "event_id": "PD-SP-EVT-0502",
+      "source_key": "PD108:REGAGE-83453059",
+      "event_date": "2026-09-24",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "CGPJ · Unidad de Registro y Archivo",
+      "official_reference": "REGAGE26e00083453059",
+      "matter_references": [
+        "Alzada 286/2026",
+        "DI 169/2026",
+        "108-2026",
+        "REGAGE26e00083448218",
+        "REGAGE26e00082030716"
+      ],
+      "proof_level": "OFFICIAL_REGAGE_RECEIPT_COMPILED_PDF_HASH_VERIFIED",
+      "proves": [
+        "REGAGE26e00083453059 registered the exact self-contained 17-page compiled PDF containing the complementary cover/index, prior principal, all visible pages of the four annexes and the prior receipt."
+      ],
+      "proves_es": "REGAGE26e00083453059 registró el PDF compilado autosuficiente exacto de 17 páginas, con portada/índice complementarios, principal anterior, todas las páginas visibles de los cuatro anexos y el justificante anterior.",
+      "does_not_prove": [
+        "Four separately uploaded native annex PDFs; incorporation into Alzada 286/2026; admission; examination; or a merits decision."
+      ],
+      "does_not_prove_es": "No acredita cuatro PDF nativos de anexos cargados por separado, incorporación a Alzada 286/2026, admisión, examen ni resolución de fondo.",
+      "public_summary": "REGAGE26e00083453059 closes the earlier annex-content gap by registering the complete 17-page compiled document.",
+      "public_summary_es": "REGAGE26e00083453059 cierra la carencia anterior de contenido anexo al registrar el documento compilado completo de 17 páginas.",
+      "evidence_state": {
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED",
+        "delivery": "PRESENTED_TO_CGPJ_REGISTRY",
+        "registration": "REGISTERED_SELF_CONTAINED_17_PAGE_DOCUMENT_HASH_VERIFIED",
+        "internal_association": "NOT_ESTABLISHED",
+        "substantive_examination": "NOT_ESTABLISHED",
+        "merits": "NOT_ESTABLISHED"
+      },
+      "source_integrity": {
+        "status": "REGISTERED_COMPILED_PDF_HASH_VERIFIED_PRIVATE_CUSTODY",
+        "sha256": "0e27fcd481c29a0b69837fc5cdeb393ddf9fbbb7c03390f6c6b7409efe5228b4",
+        "bytes": 701488,
+        "pages": 17,
+        "repository_anchor": "assets/data/pd108-public-viewer-v1.json"
+      },
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0502",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0502"
+    },
+    {
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "source_batch_id": "PD-108-20260924-CONTINUITY",
+      "review_record": "assets/data/pd108-public-viewer-v1.json",
+      "mirror_state": {
+        "github": "PENDING_MERGE_READBACK",
+        "gitlab": "PENDING_MERGE_READBACK",
+        "website": "PENDING_EXACT_SHA_DEPLOYMENT"
+      },
+      "event_id": "PD-SP-EVT-0503",
+      "source_key": "PD108:NOTIFICA-AVAILABILITY-NOTICE",
+      "event_date": "2026-09-24",
+      "record_type": "ELECTRONIC_AVAILABILITY_NOTICE",
+      "channel": "EMAIL",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "layer": "TRANSPORT",
+      "office": "Notifica",
+      "official_reference": "108-26",
+      "matter_references": [
+        "108-2026"
+      ],
+      "proof_level": "AUTHENTICATED_EMAIL_CONNECTOR_HEADERS_AND_BODY_REVIEWED",
+      "proves": [
+        "A Notifica availability email announced one electronic communication with concept 108-26 from the Justice Ministry unit."
+      ],
+      "proves_es": "Un aviso de disponibilidad de Notifica anunció una comunicación electrónica con concepto 108-26 procedente de la unidad del Ministerio de Justicia.",
+      "does_not_prove": [
+        "A second substantive decision, merits, or the content of the underlying PDF beyond the notice metadata."
+      ],
+      "does_not_prove_es": "No acredita una segunda decisión sustantiva, el fondo ni el contenido del PDF subyacente más allá de los metadatos del aviso.",
+      "public_summary": "Notifica availability notice for the same underlying 108-26 communication.",
+      "public_summary_es": "Aviso de disponibilidad de Notifica relativo a la misma comunicación subyacente 108-26.",
+      "evidence_state": {
+        "transmission": "RECEIVED_EMAIL_LOCATED",
+        "delivery": "NOTICE_RECEIVED",
+        "registration": "NOT_APPLICABLE_TO_NOTICE",
+        "internal_association": "SAME_UNDERLYING_COMMUNICATION_AS_PD-SP-EVT-0504_AND_PD-SP-EVT-0497",
+        "substantive_examination": "NOT_ESTABLISHED_BY_NOTICE",
+        "merits": "NOT_ESTABLISHED"
+      },
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0503",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0503"
+    },
+    {
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "source_batch_id": "PD-108-20260924-CONTINUITY",
+      "review_record": "assets/data/pd108-public-viewer-v1.json",
+      "mirror_state": {
+        "github": "PENDING_MERGE_READBACK",
+        "gitlab": "PENDING_MERGE_READBACK",
+        "website": "PENDING_EXACT_SHA_DEPLOYMENT"
+      },
+      "event_id": "PD-SP-EVT-0504",
+      "source_key": "PD108:DEHU-COURTESY-NOTICE",
+      "event_date": "2026-09-24",
+      "record_type": "ELECTRONIC_AVAILABILITY_NOTICE",
+      "channel": "EMAIL",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "layer": "TRANSPORT",
+      "office": "DEHú",
+      "official_reference": "108-26",
+      "matter_references": [
+        "108-2026"
+      ],
+      "proof_level": "AUTHENTICATED_EMAIL_CONNECTOR_HEADERS_AND_BODY_REVIEWED",
+      "proves": [
+        "A separate DEHú courtesy email announced the same electronic communication with concept 108-26."
+      ],
+      "proves_es": "Un aviso de cortesía separado de DEHú anunció la misma comunicación electrónica con concepto 108-26.",
+      "does_not_prove": [
+        "A second substantive decision, merits, or that the notice itself is the underlying official act."
+      ],
+      "does_not_prove_es": "No acredita una segunda decisión sustantiva, el fondo ni que el aviso sea el acto oficial subyacente.",
+      "public_summary": "DEHú courtesy notice for the same underlying 108-26 communication.",
+      "public_summary_es": "Aviso de cortesía de DEHú relativo a la misma comunicación subyacente 108-26.",
+      "evidence_state": {
+        "transmission": "RECEIVED_EMAIL_LOCATED",
+        "delivery": "NOTICE_RECEIVED",
+        "registration": "NOT_APPLICABLE_TO_NOTICE",
+        "internal_association": "SAME_UNDERLYING_COMMUNICATION_AS_PD-SP-EVT-0503_AND_PD-SP-EVT-0497",
+        "substantive_examination": "NOT_ESTABLISHED_BY_NOTICE",
+        "merits": "NOT_ESTABLISHED"
+      },
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0504",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0504"
     }
   ],
   "id_allocation": {
     "baseline_rule": "The 75 detailed receipts retain their first assigned IDs by official REGAGE reference.",
     "extension_rule": "Existing formal-event IDs are never renumbered. The 21-Sep-2026 status export reuses 114 formal-event identities (92 already on prior main plus 22 receipt-controlled identities added in this release) and assigns 284 remaining status-only rows to the unused PD-SP-EVT-0213..0496 band; mailbox 1001+ remains separate.",
     "mailbox_rule": "Mailbox transport rows use the stable public match key and the reserved PD-SP-EVT-1001+ allocation band; existing IDs are never renumbered.",
-    "pattern": "PD-SP-EVT-####"
+    "pattern": "PD-SP-EVT-####",
+    "cross_host_parity_20260924": "PD-SP-EVT-0497 through PD-SP-EVT-0504 are the first eight IDs confirmed unused in both current GitHub and GitLab canonical registers. They are allocated as a bounded cross-host parity exception to avoid renumbering divergent historical rows."
   },
   "id_namespace_authority": {
     "declared_pattern": "^PD-SP-EVT-[0-9]{4}$",
@@ -31476,5 +31892,36 @@
       "source_anchor": "archive/MF_EXTRACONCURSAL_REQUERIMIENTO_31JUL2026_FULL_TEXT_20AUG2026.md",
       "synthetic_event_rows_created": 0
     }
-  ]
+  ],
+  "reconciliation_20260924_pd108": {
+    "control": "PD-108-20260924-CONTINUITY",
+    "event_ids": [
+      "PD-SP-EVT-0497",
+      "PD-SP-EVT-0498",
+      "PD-SP-EVT-0499",
+      "PD-SP-EVT-0500",
+      "PD-SP-EVT-0501",
+      "PD-SP-EVT-0502",
+      "PD-SP-EVT-0503",
+      "PD-SP-EVT-0504"
+    ],
+    "existing_registration_event_ids": [
+      "PD-SP-EVT-0181",
+      "PD-SP-EVT-0182",
+      "PD-SP-EVT-0183",
+      "PD-SP-EVT-0184",
+      "PD-SP-EVT-0185",
+      "PD-SP-EVT-0186",
+      "PD-SP-EVT-0187"
+    ],
+    "controlling_registration": "REGAGE26e00083453059",
+    "controlling_state": "REGISTERED_SELF_CONTAINED_17_PAGE_DOCUMENT_HASH_VERIFIED",
+    "public_viewer_record": "assets/data/pd108-public-viewer-v1.json",
+    "boundaries": [
+      "Registration does not prove CGPJ incorporation, admission, examination or decision.",
+      "The exact A06-to-108-2026 bridge is strongly supported but not printed in the oficio.",
+      "The public PDF is a redacted derivative; the signed native remains private.",
+      "Counsel notification does not establish an Audiencia Provincial filing."
+    ]
+  }
 }
