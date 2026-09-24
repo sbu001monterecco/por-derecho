@@ -25,6 +25,20 @@ The commonality to test is therefore **same practical direction / different juri
 
 This thesis does **not** establish a common plan, concert, criminal agreement, transferred intent or collective liability. Those require independent proof. The bridge must remain actor-specific, capacity-specific and source-specific.
 
+### 2A. Gil Marer's allegation — mutual / cross-proceeding instrumentalisation
+
+Gil Marer's current investigative position goes further than parallel effect. He alleges a **reciprocal instrumentalisation architecture** in which private actors and their successors, the insolvency administrator, and later judicial acts can function as procedural or evidential instruments for one another across otherwise distinct proceedings.
+
+The allegation to test is not that these actors are legally interchangeable. It is that **acts generated in one lane may be reused in another lane as inputs, leverage, legitimating premises, evidential shortcuts, enforcement effects or later institutional authority**. On that hypothesis:
+
+- private-owner pleadings, possession theories, Community acts and adverse judgments may supply propositions later useful in the concurso;
+- AC reports, litigation positions, certifications, testimony or possession narratives may supply propositions later useful to private actors or later judicial reasoning;
+- judicial orders and judgments may then be invoked downstream by the AC or private actors as institutional validation or practical leverage;
+- later private acquisitions, Community control or successor positions may benefit from procedural/evidential states produced in earlier private, concursal or judicial tracks;
+- the same proposition can therefore travel **private actor → AC → court**, **AC → court → private actor**, **private actor → court → AC**, or through other source-proved sequences.
+
+For this workspace, **“interchangeably” means functional cross-use, not identity merger**. No relationship, succession, repeated outcome or downstream benefit proves a common plan, instruction, corrupt agreement, transferred knowledge or criminal intent. Every claimed cross-use must identify the exact originating act or proposition, the receiving actor, the knowledge route, the later source that actually adopts or deploys it, the practical effect, contrary evidence and an innocent alternative.
+
 ### Track A — private actors / minority-unit exploitation litigation
 
 The 23-Dec-2011 JV 1260/2011 claim was brought by a private-owner perimeter concerning 18 units. The controlled primary reconstruction identifies Acciones Canarias, Muruga, Roque Prieto, Amenem, Tengolf, Miguel Molina Betancor and Francisco Luis Molina Molina in the claimant perimeter. Álvaro Campanario Hernández represented much of the same perimeter in Community governance before acting in the litigation.
