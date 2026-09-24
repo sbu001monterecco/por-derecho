@@ -153,5 +153,26 @@
       "Do not claim the 12-Jun rejection itself proves sabotage, common intent, criminality or each upstream causal link.",
       "Every domino/arrow requires its own source bridge, contrary evidence and actor-specific attribution."
     ]
+  },
+  "deep_source_sweep_20260924": {
+    "control_id": "PD-JTP-SOURCE-SWEEP-20260924-01",
+    "human_control": "archive/JTP_ONA_DEEP_SOURCE_SWEEP_24SEP2026.md",
+    "machine_control": "assets/data/jtp-ona-deep-source-sweep-20260924.json",
+    "direct_source_updates": [
+      "JTP 4-Jan-2019 broad draft expressly requested Ministerio Fiscal referral for possible estafa procesal, alteration of liquidation and administración desleal",
+      "May–June-2018 ONA/Stoneweg/Cuatrecasas/JTP correspondence strengthens funded-exit/protective integration",
+      "1-Jun-2020 successor counsel treated JTP as no longer LPB counsel and disputed fee entitlement/double-payment position",
+      "12-Jun-2020 final proposal rejection is direct documentary evidence",
+      "AC 21-Jul-2021 report directly records €26,750 Jul-20 JTP counsel payment and separately €400,000 CAM sale component"
+    ],
+    "open_proof": [
+      "4-Jan broad-draft filing",
+      "JTP invoice",
+      "executed payment authority",
+      "matched estate debit and recipient credit",
+      "bank-complete €400,000→€26,750 trace",
+      "dated earlier assurance or arrangement proving prospective inducement in January 2019"
+    ],
+    "rule": "Strengthen only the specific supported links. Non-retrieval is not proof of non-existence; chronology is not causation; no bribery/common-plan/recipient-knowledge finding."
   }
 }

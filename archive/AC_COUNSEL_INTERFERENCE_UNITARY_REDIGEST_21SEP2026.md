@@ -113,3 +113,19 @@ Do not publish as established fact that:
 - Joaquín’s apology proves every underlying factual allegation false.
 
 The public-safe formulation is that **Gil alleges a criminal pattern of interference with defence continuity and characterises the Parrilla payment/“peace” sequence as an illicit inducement or bribe-like intervention; the documentary record materially supports investigation of that thesis while leaving the decisive bank, authority, intent and causation gates open.**
+
+
+## 24 September 2026 — JTP deep-source supplement
+
+Read `archive/JTP_ONA_DEEP_SOURCE_SWEEP_24SEP2026.md` and `assets/data/jtp-ona-deep-source-sweep-20260924.json` before any Parrilla / ONA / €400,000 / €26,750 analysis.
+
+The new connected-source pass establishes, without changing the unresolved bank boundary:
+
+- JTP's own 4-Jan-2019 broad draft expressly sought Ministerio Fiscal referral for possible *estafa procesal*, alteration of the liquidation process and *administración desleal*; exact filing remains unproved.
+- May–June 2018 ONA/Stoneweg/Cuatrecasas/JTP correspondence places JTP's work inside the funded-exit/protective architecture; coordination does not prove common criminal purpose.
+- By 1-Jun-2020 successor counsel treated JTP as no longer LPB counsel, routed the fee issue through successor counsel, disputed his entitlement theory and raised double-payment risk.
+- The 12-Jun final proposal was expressly rejected.
+- The AC's 21-Jul-2021 report directly records €26,750 as paid to JTP in Jul-2020 and separately records the €400,000 CAM sale component.
+- The same targeted Gmail/Drive sweep did not locate the invoice, executed payment authority, matched estate debit/recipient credit or bank-complete €400,000→€26,750 trace. This is a dated negative-search result, not proof of non-existence.
+
+This supplement strengthens the contemporaneous criminal lens and the non-consent / non-authority chronology. It does not establish bribery, criminal proceeds, recipient criminal knowledge, common plan or an earlier prospective inducement.

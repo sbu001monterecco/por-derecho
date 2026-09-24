@@ -156,6 +156,31 @@ require("governance/JTP_PAYMENT_FUNDED_EXIT_HOSTILE_READER_RED_TEAM_24SEP2026.md
     "negative search",
 ])
 
+require("assets/data/legal-representation-ac-causation-v1.json", [
+    '"status": "UPDATED_WITH_24SEP2026_JTP_DEEP_SOURCE_SWEEP"',
+    '"id": "LRAC-OF-011"',
+    "archive/JTP_ONA_DEEP_SOURCE_SWEEP_24SEP2026.md",
+    "Non-retrieval is not proof of non-existence",
+])
+require("assets/data/ac-counsel-interference-unitary-v1.json", [
+    '"control_id": "PD-JTP-SOURCE-SWEEP-20260924-01"',
+    "1-Jun-2020 successor counsel treated JTP as no longer LPB counsel",
+    "bank-complete €400,000→€26,750 trace",
+])
+require("archive/AC_COUNSEL_INTERFERENCE_UNITARY_REDIGEST_21SEP2026.md", [
+    "## 24 September 2026 — JTP deep-source supplement",
+    "1-Jun-2020 successor counsel treated JTP as no longer LPB counsel",
+])
+require("archive/CORRECTION_REGISTER.md", [
+    "| CR-163 |",
+    "JTP / ONA history read as a fee-only dispute",
+    "Non-retrieval is not proof of non-existence",
+])
+require("CHATGPT_START_HERE.md", [
+    "PD-JTP-SOURCE-SWEEP-20260924-01",
+    "JTP deep-source companion",
+])
+
 if errors:
     print("JTP PROSECUTORIAL RED-TEAM CONTRACT: FAIL")
     for error in errors:
