@@ -414,7 +414,7 @@ def validate_register(
 
     supplemental_ids = {event.get("event_id") for event in events if str(event.get("source_key", "")).startswith("SUPPLEMENTAL_20260924:")}
     curated_expected = {event["event_id"] for event in [*KEY_EVENTS, *expected_status_events]} | supplemental_ids
-    curated_found = {event.get("event_id") for event in events if event.get("cohort") == "CURATED_SOURCE_PROVED_EVENT" and not str(event.get("source_key", "")).startswith("SUPPLEMENTAL_20260924:")}
+    curated_found = {event.get("event_id") for event in events if event.get("cohort") == "CURATED_SOURCE_PROVED_EVENT"}
     if curated_found != curated_expected:
         errors.append(f"curated-event set drift: expected {sorted(curated_expected)}, found {sorted(curated_found)}")
 
