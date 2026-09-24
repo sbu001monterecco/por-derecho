@@ -1,0 +1,26 @@
+name: JTP reconciled evidence union
+on:
+  pull_request:
+    paths:
+      - 'en/estate-payment-counsel-independence/**'
+      - 'es/pago-masa-independencia-defensa/**'
+      - 'scripts/validate_jtp_reconciled_union_20260924.py'
+      - '.github/workflows/jtp-reconciled-union.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'en/estate-payment-counsel-independence/**'
+      - 'es/pago-masa-independencia-defensa/**'
+      - 'scripts/validate_jtp_reconciled_union_20260924.py'
+      - '.github/workflows/jtp-reconciled-union.yml'
+permissions:
+  contents: read
+jobs:
+  reconciled-union:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/validate_jtp_reconciled_union_20260924.py
