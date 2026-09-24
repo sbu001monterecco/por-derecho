@@ -15796,7 +15796,7 @@
     {
       "event_id": "PD-SP-EVT-0498",
       "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-0498",
-      "cohort": "SUPPLEMENTAL_SOURCE_PROVED_20260924",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
       "event_date": "2026-09-24",
       "record_type": "REGISTRATION_RECEIPT",
       "direction": "OUTBOUND_TO_INSTITUTION",
@@ -15829,7 +15829,7 @@
     {
       "event_id": "PD-SP-EVT-0499",
       "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-0499",
-      "cohort": "SUPPLEMENTAL_SOURCE_PROVED_20260924",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
       "event_date": "2026-09-24",
       "record_type": "REGISTRATION_RECEIPT",
       "direction": "OUTBOUND_TO_INSTITUTION",
