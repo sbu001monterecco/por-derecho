@@ -25,3 +25,5 @@ jobs:
           git add assets/data/institutional-communications-register-v1.json ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json
           git commit -m "Reconcile 24 Sep institutional communications generated state"
           git push origin HEAD:${{ github.head_ref }}
+
+# final-trigger: 2026-09-24T19:18
