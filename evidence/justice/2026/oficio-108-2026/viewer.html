@@ -1,0 +1,48 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oficio 108-2026 · visor PDF | Por Derecho</title><link rel="stylesheet" href="../../../../assets/styles.css">
+<style>.v{max-width:1180px}.v iframe{width:100%;height:78vh;border:1px solid #ccd6d6;border-radius:12px;background:#eee}.box{padding:1rem;border-left:5px solid #315c7b;background:#f4f7f8;border-radius:10px}.warn{border-left-color:#946b22;background:#fff8e8}.hash{word-break:break-all;font:13px ui-monospace,monospace}.actions{display:flex;gap:.8rem;flex-wrap:wrap}.actions a{font-weight:800}</style></head>
+<body><main class="section"><div class="shell v"><p class="eyebrow">PUBLIC-SAFE PDF TRANSCRIPTION · DERIVADA PÚBLICA</p><h1>Oficio 108-2026 · 24/09/2026</h1>
+<p class="box"><strong>Source boundary.</strong> The signed native is preserved privately and controls. This public PDF transcription omits contact data and the signature/verification block; it reproduces the substantive communication for contextual reading.</p>
+<div class="actions"><a id="download" download="oficio-108-2026-public-safe.pdf">Descargar PDF / Download PDF</a><a href="../../../../assets/data/oficio-108-2026-public-state.json">Estado probatorio JSON / Evidence state</a></div>
+<p id="status" class="box warn">Construyendo PDF público… / Building public PDF…</p><p id="hash" class="hash"></p><iframe id="frame" title="Oficio 108-2026 public-safe PDF"></iframe>
+<h2>Contexto / Context</h2><p>El oficio comunica recepción de la denuncia relacionada con la Sección de lo Mercantil, plaza n.º 1, e indica que se solicitó información a la Secretaría de Gobierno del TSJC antes de resolver. No identifica el REGAGE de origen ni el alcance del requerimiento.</p>
+<p><strong>Registration ≠ incorporation ≠ admission ≠ examination ≠ decision.</strong> The relationship to A06 / REGAGE26e00082058165 is strongly supported but not printed in the oficio.</p></div></main>
+<script>
+(function(){
+function esc(s){return s.replace(/\\/g,'\\\\').replace(/\(/g,'\\(').replace(/\)/g,'\\)');}
+function latin1(s){const a=new Uint8Array(s.length);for(let i=0;i<s.length;i++)a[i]=s.charCodeAt(i)&255;return a;}
+const lines=[
+'PUBLIC-SAFE TRANSCRIPTION - PRIVATE SIGNED NATIVE CONTROLS',
+'MINISTERIO DE JUSTICIA - N/REF 108-2026 - 24/09/2026',
+'Subdireccion General para la Innovacion y Calidad de la Oficina Judicial y Fiscal',
+'',
+'Se comunica la recepcion de la denuncia relacionada con la Seccion de lo Mercantil',
+'del Tribunal de Instancia de Las Palmas de Gran Canaria, plaza n. 1.',
+'',
+'El oficio indica que se ha solicitado informacion a la Secretaria de Gobierno del',
+'Tribunal Superior de Justicia de Canarias y que, una vez recibida y valorada la',
+'informacion solicitada, se comunicara la resolucion que se adopte.',
+'',
+'EVIDENTIARY BOUNDARY / LIMITE PROBATORIO',
+'This derivative omits contact data and signature/verification blocks.',
+'It does not establish allowance, disciplinary opening, irregularity or responsibility.',
+'It does not print REGAGE26e00082058165 or the scope of the Ministry request.',
+'Private signed native SHA-256:',
+'20eee667e206c982a293a8dd3f7ade2041cbbfb0a113bb864def7a8ec9307a5f'
+];
+let stream='BT\n/F1 11 Tf\n50 790 Td\n';
+lines.forEach((l,i)=>{if(i)stream+='0 -28 Td\n';stream+='('+esc(l)+') Tj\n';});stream+='ET\n';
+const objs=[
+'1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj\n',
+'2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj\n',
+'3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >> endobj\n',
+'4 0 obj << /Length '+latin1(stream).length+' >> stream\n'+stream+'endstream\nendobj\n',
+'5 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj\n'
+];
+let pdf='%PDF-1.4\n';const off=[0];for(const o of objs){off.push(latin1(pdf).length);pdf+=o;}const x=latin1(pdf).length;
+pdf+='xref\n0 6\n0000000000 65535 f \n';for(let i=1;i<=5;i++)pdf+=String(off[i]).padStart(10,'0')+' 00000 n \n';
+pdf+='trailer << /Size 6 /Root 1 0 R >>\nstartxref\n'+x+'\n%%EOF\n';
+const bytes=latin1(pdf), blob=new Blob([bytes],{type:'application/pdf'}), url=URL.createObjectURL(blob);
+document.getElementById('frame').src=url;document.getElementById('download').href=url;
+crypto.subtle.digest('SHA-256',bytes).then(b=>{const h=[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('');document.getElementById('hash').textContent='Public derivative SHA-256: '+h+' · '+bytes.length+' bytes';document.getElementById('status').textContent='PDF público construido y hash calculado / Public PDF built and hashed';});
+})();</script></body></html>
