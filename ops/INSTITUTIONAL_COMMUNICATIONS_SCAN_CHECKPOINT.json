@@ -30,7 +30,7 @@
     "registration_events_added": 24,
     "source_input": "ops/dp1901-eg745-registration-input-20260921.json"
   },
-  "control_date": "2026-09-21",
+  "control_date": "2026-09-24",
   "incremental_refresh_2026_08_31": {
     "already_indexed_in_scope_events": 7,
     "excluded_automated_repository_notifications": 4,
