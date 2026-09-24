@@ -23633,7 +23633,7 @@
     {
       "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
       "channel": "DEHU",
-      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "cohort": "SUPPLEMENTAL_SOURCE_PROVED_20260924",
       "direction": "INBOUND_FROM_INSTITUTION",
       "does_not_prove": [
         "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
@@ -23672,7 +23672,7 @@
     {
       "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
       "channel": "REGAGE",
-      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "cohort": "SUPPLEMENTAL_SOURCE_PROVED_20260924",
       "direction": "OUTBOUND_TO_INSTITUTION",
       "does_not_prove": [
         "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
@@ -23710,7 +23710,7 @@
     {
       "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
       "channel": "REGAGE",
-      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "cohort": "SUPPLEMENTAL_SOURCE_PROVED_20260924",
       "direction": "OUTBOUND_TO_INSTITUTION",
       "does_not_prove": [
         "Four separately registered native annex files.",
@@ -31527,7 +31527,7 @@
     {
       "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
       "channel": "EMAIL",
-      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "cohort": "SUPPLEMENTAL_SOURCE_PROVED_20260924",
       "direction": "INBOUND_FROM_INSTITUTION",
       "does_not_prove": [
         "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
@@ -31565,7 +31565,7 @@
     {
       "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
       "channel": "EMAIL",
-      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "cohort": "SUPPLEMENTAL_SOURCE_PROVED_20260924",
       "direction": "INBOUND_FROM_INSTITUTION",
       "does_not_prove": [
         "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
@@ -31603,7 +31603,7 @@
     {
       "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
       "channel": "EMAIL",
-      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "cohort": "SUPPLEMENTAL_SOURCE_PROVED_20260924",
       "direction": "OUTBOUND_TO_INSTITUTION",
       "does_not_prove": [
         "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
