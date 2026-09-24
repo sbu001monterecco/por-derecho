@@ -660,6 +660,9 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
 .platform-boundary span { font-size: .82rem; }
 .audience-note { margin-top: 1rem; background: var(--teal-light); border-left-color: var(--teal); }
 
+.capital-entry { padding: 1.7rem 0 0; background: var(--paper); }
+.capital-entry .capital-brief { margin-bottom: 2.2rem; }
+
 /* Investor-facing capital status module */
 .capital-brief {
   display: grid;
@@ -685,6 +688,15 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
 }
 .capital-brief-main > p { max-width: 48rem; margin: 0; color: #dce8e9; font-size: .98rem; }
 .capital-brief-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.6rem; }
+.capital-brief-main .capital-brief-disclaimer {
+  max-width: 46rem;
+  margin: 1.15rem 0 0;
+  padding-top: .9rem;
+  color: #b9cbcd;
+  border-top: 1px solid rgba(255,255,255,.14);
+  font-size: .76rem;
+  line-height: 1.55;
+}
 .capital-brief-status {
   display: grid;
   align-content: stretch;
