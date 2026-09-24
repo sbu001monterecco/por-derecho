@@ -1,6 +1,6 @@
 # DP1901 / E.G.745 / Fiscal Superior — filing-status register
 
-Control date: 21 September 2026  
+Control date: 24 September 2026  
 Control timezone for receipt timestamps: Atlantic/Canary as the working programme timezone; times below are transcribed as printed.  
 Repository state: public-safe receipt reconciliation. Private originals remain outside GitHub.
 
@@ -15,7 +15,7 @@ Repository state: public-safe receipt reconciliation. Private originals remain o
 | A03 | CGPJ — Alzada 286/2026 | `REGAGE26e00082030716` | REGISTERED_RECEIPT_VERIFIED |
 | A04 | Secretaría de Gobierno del TSJC | `REGAGE26e00082039117` | REGISTERED_RECEIPT_VERIFIED |
 | A05 | Coordinación Provincial de LAJ | `REGAGE26e00082040006` | REGISTERED_RECEIPT_VERIFIED |
-| A06 | Secretaría General para la Innovación y Calidad del Servicio Público de Justicia | `REGAGE26e00082058165` | REGISTERED_RECEIPT_HASH_VERIFIED_HANDLING_PENDING |
+| A06 | Secretaría General para la Innovación y Calidad del Servicio Público de Justicia | `REGAGE26e00082058165` | REGISTERED_RECEIPT_HASH_VERIFIED_SUCCESSOR_HANDLING_EVIDENCED |
 | A07 | Canary Justice Administration / ATLANTE | `REGAGE26e00082038176` | REGISTERED_RECEIPT_VERIFIED |
 | A08 | Fiscalía Provincial de Las Palmas | `REGAGE26e00082044751` | REGISTERED_RECEIPT_HASH_VERIFIED |
 | A09 | Fiscal Superior de Canarias | `REGAGE26e00082032153` | REGISTERED_RECEIPT_VERIFIED |
@@ -41,7 +41,7 @@ Repository publication is not filing or service. The private receipt PDFs, addre
 
 ## Remaining programme separation
 
-- **A06 — registered, handling pending:** `REGAGE26e00082058165`, presented 20 September 2026 at 21:19:02 and registered at 21:19:12, as printed. Four PDFs, forty-five pages, all receipt SHA-512 values matched. The earlier rejected attempt `REGAGE26e00073341477` remains disclosed. Admission, incorporation, preservation, response and any separate prior national alzada registration remain unproved.
+- **A06 — registered; successor handling now evidenced:** `REGAGE26e00082058165`, presented 20 September 2026 at 21:19:02 and registered at 21:19:12, as printed. Four PDFs, forty-five pages, all receipt SHA-512 values matched. On 24 September, official oficio `108-2026` communicated receipt of the related Mercantile Plaza 1 complaint and stated that information had been requested from the TSJC Government Secretariat before a later resolution. The institutional/chronological bridge to A06 is **strongly supported but not expressly printed in the oficio**. The earlier rejected attempt `REGAGE26e00073341477` remains disclosed. Acceptance of allegations, a TSJC response already received, reopening, merits and final resolution remain unproved.
 - **A13 — registered, formalisation/admission pending:** `REGAGE26e00082060401`, presented 20 September 2026 at 22:07:33 and registered at 22:07:42, as printed. Five PDFs, fifty pages, all receipt SHA-512 values matched. The existing Exp.Gub.352/2025 signature/formalisation/admission and channel questions remain post-filing follow-ups. No admission, incorporation, preservation or substantive outcome is inferred.
 - **Counsel-dependent judicial remedy:** separate; excluded from the personal-action count.
 - **Substantive E.G.745 response:** separate from A10; all ten linked deliveries are now registered, with 27 matching PDF fingerprints. Admission, incorporation and examination remain unverified.
@@ -97,3 +97,13 @@ Counsel notification was sent to Javier Sixto-Seijas with Estefanía Sixto Seija
 Proof ceiling: the receipt proves the recorded telematic presentation event to the named procedure. It does not by itself prove substantive incorporation, examination, agreement or response.
 
 Detailed continuity control: `ops/2026-09-23_DP1901_COUNSEL_DIRECTED_FOLLOWUP.md`.
+
+## 24 September 2026 — 108-2026 / CGPJ successor chain
+
+- **Oficio 108-2026 — `PD-SP-EVT-0497`:** official communication received through DEHú. It reports Ministry receipt and a request for information to the TSJC Government Secretariat; assessment and resolution remain pending. The two electronic-availability emails are separate transport events for the same underlying act, not two decisions (`PD-SP-EVT-0503`, `PD-SP-EVT-0504`).
+- **CGPJ update email — `PD-SP-EVT-0500`:** sent to the Sección de Recursos with four supporting PDFs. Dispatch does not establish reading or incorporation.
+- **First REGAGE — `PD-SP-EVT-0501` / `REGAGE26e00083448218`:** registered the six-page principal; its receipt listed only that principal.
+- **Complete successor — `PD-SP-EVT-0502` / `REGAGE26e00083453059`:** registers the exact self-contained 17-page compilation containing all visible pages of the four annexes and the earlier receipt. This closes the earlier annex-content gap at registration level. It does **not** establish four separately registered native annex files, incorporation into Alzada 286/2026, admission, examination or decision.
+- **Public reader:** the privacy-reviewed public derivative is governed by `assets/data/pd108-public-viewer-v1.json`; the signed native remains private.
+
+These are successor/post-filing events. They do not increase the 13-action personal filing census and do not replace the existing 20/23 September court requests.

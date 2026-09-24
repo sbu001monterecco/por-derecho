@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho.dp1901-direct-action-state.v1",
-  "control_date": "2026-09-23",
+  "control_date": "2026-09-24",
   "control_timezone": "Atlantic/Canary",
   "status": "13_REGISTERED_POST_FILING_FOLLOWUP_OPEN",
   "counts": {
@@ -53,6 +53,31 @@
       "proof": "Receipt proves telematic presentation to the named court/procedure only; substantive incorporation, examination, agreement and response remain unproved.",
       "counsel_notification": "Javier Sixto-Seijas notified with Estefanía Sixto Seijas in CC; original DP1901 email thread also received a short filing confirmation.",
       "continuity_record": "ops/2026-09-23_DP1901_COUNSEL_DIRECTED_FOLLOWUP.md"
+    },
+    "cgpj_24sep_successor": {
+      "classification": "POST_FILING_CGPJ_UPDATE_OUTSIDE_13_ACTION_CENSUS",
+      "email_event_id": "PD-SP-EVT-0500",
+      "first_registration": {
+        "event_id": "PD-SP-EVT-0501",
+        "registration": "REGAGE26e00083448218",
+        "state": "REGISTERED_PRINCIPAL_HASH_VERIFIED_FOUR_ANNEXES_NOT_LISTED"
+      },
+      "complete_successor": {
+        "event_id": "PD-SP-EVT-0502",
+        "registration": "REGAGE26e00083453059",
+        "state": "REGISTERED_SELF_CONTAINED_17_PAGE_DOCUMENT_HASH_VERIFIED"
+      },
+      "proof_boundary": "The complete 17-page compilation is registered. The receipt does not prove four separate native-annex uploads, CGPJ incorporation, admission, examination or decision.",
+      "do_not_repeat": true
+    },
+    "ministry_108_2026": {
+      "official_event_id": "PD-SP-EVT-0497",
+      "availability_notice_event_ids": [
+        "PD-SP-EVT-0503",
+        "PD-SP-EVT-0504"
+      ],
+      "same_underlying_communication": true,
+      "public_viewer_record": "assets/data/pd108-public-viewer-v1.json"
     }
   },
   "actions": [
@@ -119,7 +144,7 @@
     },
     {
       "id": "A06",
-      "state": "REGISTERED_RECEIPT_HASH_VERIFIED_HANDLING_PENDING",
+      "state": "REGISTERED_RECEIPT_HASH_VERIFIED_SUCCESSOR_HANDLING_EVIDENCED",
       "destination": "Secretaría General para la Innovación y Calidad del Servicio Público de Justicia",
       "rejected_registration": "REGAGE26e00073341477",
       "purpose": "National supervisory incorporation within lawful competence.",
@@ -187,7 +212,22 @@
         "illustration_count": 6
       },
       "do_not_repeat_whole_filing": true,
-      "canonical_event_id": "PD-SP-EVT-0187"
+      "canonical_event_id": "PD-SP-EVT-0187",
+      "prior_state_before_108_2026": "REGISTERED_RECEIPT_HASH_VERIFIED_HANDLING_PENDING",
+      "successor_handling": {
+        "event_id": "PD-SP-EVT-0497",
+        "reference": "108-2026",
+        "document_date": "2026-09-24",
+        "source_state": "OFFICIAL_RECEIPT_AND_INFORMATION_REQUEST_REPORTED_RESOLUTION_PENDING",
+        "request_target": "Secretaría de Gobierno del TSJC",
+        "relationship_to_registration": "STRONGLY_SUPPORTED_NOT_EXPLICITLY_CROSS_REFERENCED",
+        "printed_originating_regage": false,
+        "proof": "The oficio establishes that the Ministry unit communicated receipt of the complaint and stated that it requested information from the TSJC Government Secretariat before deciding.",
+        "limits": [
+          "It does not print REGAGE26e00082058165.",
+          "It does not establish acceptance of allegations, a TSJC response already received, reopening, merits, or a final resolution."
+        ]
+      }
     },
     {
       "id": "A07",

@@ -59,3 +59,11 @@ A02 has a principal and supplemental registration, with the supplemental receipt
 ## Dual-version June source archive — 21 September 2026
 
 For complete page-accounted public-safe frozen transcriptions and living interlinked readers for Ref21, Ref22 and Ref24, use [`../june-2026-three-track/README.md`](../june-2026-three-track/README.md). The frozen layer is never rewritten by later analysis; the dynamic layer carries later DP1901/CGPJ/TSJC/Fiscal/counsel context while preserving the official-production gaps.
+
+## 24 September 2026 — Ministry 108-2026 and CGPJ registration successor
+
+The A06 receipt state has a later official handling source. Oficio **108-2026** states that the Ministry unit received the complaint concerning Mercantile Plaza 1 and requested information from the TSJC Government Secretariat before adopting a later resolution. The link to **A06 / REGAGE26e00082058165** is strongly supported by institution, subject and timing, but the oficio does not print that REGAGE; preserve that boundary.
+
+A separate CGPJ update was then sent and formalised. `REGAGE26e00083448218` registered the six-page principal but listed no separate annex files. The corrective successor `REGAGE26e00083453059` registered an exact **17-page self-contained compilation** containing the principal, all visible pages of the four annexes and the earlier receipt. This closes the annex-content gap at registration level but does not prove four separately uploaded native annexes, CGPJ incorporation, admission, examination or decision.
+
+Canonical communications: `PD-SP-EVT-0497`, `0500`, `0501`, `0502`, with availability notices `0503`/`0504`. The public-safe viewer is controlled by [`assets/data/pd108-public-viewer-v1.json`](../../../assets/data/pd108-public-viewer-v1.json). Native signed source remains in private custody.
