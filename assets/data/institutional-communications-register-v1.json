@@ -44,26 +44,26 @@
     "The caret marker remains identity-only; communication events receive stable IDs and bilingual anchors, never presentation carets.",
     "Criminal relevance may be linked as an open hypothesis, but criminal responsibility never transfers through an ACTA, communication, referral, office or institutional tier."
   ],
-  "control_date": "2026-09-21",
+  "control_date": "2026-09-24",
   "denominator_control": {
     "arithmetic_check": "Historical control: 75 detailed + 22 metadata-only = 97 reported total. Current 21-Sep status export: 398 distinct REGAGE rows (114 formal-event identities reused, including 22 receipt-controlled identities added in this release; 284 status-only rows added).",
-    "curated_source_proved_events": 412,
+    "curated_source_proved_events": 415,
     "detailed_baseline_receipt_rows_expected": 75,
     "detailed_baseline_receipt_rows_registered": 75,
-    "event_rows_total": 643,
+    "event_rows_total": 649,
     "mailbox_draft_rows": 3,
-    "mailbox_inbound_email_rows": 101,
-    "mailbox_outbound_email_rows": 42,
+    "mailbox_inbound_email_rows": 103,
+    "mailbox_outbound_email_rows": 43,
     "mailbox_route_not_publicly_attested_rows": 81,
     "mailbox_self_archive_rows": 10,
-    "mailbox_transport_events": 156,
+    "mailbox_transport_events": 159,
     "metadata_only_records_reported": 22,
     "metadata_only_representation": "ONE_UNRESOLVED_BATCH_NOT_22_SYNTHETIC_EVENTS",
     "new_public_authority_communication_events": 17,
     "private_manifest_baseline_receipt_rows": 75,
     "private_manifest_mailbox_event_rows": 156,
     "private_manifest_rows": 231,
-    "public_authority_communication_events": 19,
+    "public_authority_communication_events": 22,
     "reported_received": 90,
     "reported_rejected": 7,
     "wider_regage_records_reported": 97
@@ -31406,6 +31406,184 @@
       "subject_text_published": false,
       "transport_link_state": "THIS_ROW_IS_THE_TRANSPORT_LAYER",
       "transport_state": "RECEIVED_EMAIL_LOCATED"
+    },
+    {
+      "event_id": "PD-SP-EVT-0497",
+      "event_date": "2026-09-24",
+      "record_type": "OFFICIAL_COMMUNICATION",
+      "layer": "SOURCE",
+      "channel": "DEHU",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "office": "Subdirección General para la Innovación y Calidad de la Oficina Judicial y Fiscal",
+      "official_reference": "108-2026",
+      "matter_references": [
+        "A06",
+        "REGAGE26e00082058165"
+      ],
+      "proof_level": "OFFICIAL_SOURCE_RECEIVED",
+      "public_summary": "Ministry communication reports receipt, an information request to the TSJC Government Secretariat and a future resolution after assessment.",
+      "proves": [
+        "Communicated receipt; information request to TSJC reported; resolution pending."
+      ],
+      "does_not_prove": [
+        "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
+      ],
+      "source_integrity": {
+        "sha256": "96eb88b08d85c4dff21f26c14f52005100c0a0d294b81d2ceaf4c2d8f5a1abae",
+        "status": "PUBLIC_REDACTED_DERIVATIVE_PRIVATE_SIGNED_NATIVE_CONTROLS"
+      },
+      "evidence_state": {
+        "registration": "NOT_PRINTED_IN_SOURCE",
+        "internal_association": "NOT_ESTABLISHED",
+        "substantive_examination": "INFORMATION_REQUEST_REPORTED_AS_PRE_DECISION_STEP",
+        "merits": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "event_id": "PD-SP-EVT-0498",
+      "event_date": "2026-09-24",
+      "record_type": "REGISTRATION",
+      "layer": "FILING",
+      "channel": "REGAGE",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "office": "CGPJ Unidad de Registro y Archivo",
+      "official_reference": "REGAGE26e00083448218",
+      "matter_references": [
+        "Alzada 286/2026",
+        "DI 169/2026",
+        "REGAGE26e00082030716",
+        "108-2026"
+      ],
+      "proof_level": "REGISTERED_PRINCIPAL_HASH_VERIFIED",
+      "public_summary": "First 24 September CGPJ registration; receipt listed the six-page principal only.",
+      "proves": [
+        "Registration of the listed six-page principal."
+      ],
+      "does_not_prove": [
+        "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
+      ],
+      "evidence_state": {
+        "registration": "PROVED",
+        "internal_association": "NOT_ESTABLISHED",
+        "substantive_examination": "NOT_ESTABLISHED",
+        "merits": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "event_id": "PD-SP-EVT-0499",
+      "event_date": "2026-09-24",
+      "record_type": "REGISTRATION",
+      "layer": "FILING",
+      "channel": "REGAGE",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "office": "CGPJ Unidad de Registro y Archivo",
+      "official_reference": "REGAGE26e00083453059",
+      "matter_references": [
+        "Alzada 286/2026",
+        "DI 169/2026",
+        "REGAGE26e00083448218",
+        "REGAGE26e00082030716",
+        "108-2026"
+      ],
+      "proof_level": "REGISTERED_SELF_CONTAINED_17_PAGE_DOCUMENT_HASH_VERIFIED",
+      "public_summary": "Successor registration of a self-contained 17-page compilation containing all four annexes as visible pages.",
+      "proves": [
+        "Registration of one 17-page compiled PDF; all four annex contents visibly included."
+      ],
+      "does_not_prove": [
+        "Four separately registered native annex files.",
+        "CGPJ incorporation, admission, examination or decision."
+      ],
+      "source_integrity": {
+        "sha256": "0e27fcd481c29a0b69837fc5cdeb393ddf9fbbb7c03390f6c6b7409efe5228b4",
+        "status": "REGISTERED_COMPILED_DOCUMENT_HASH_VERIFIED"
+      },
+      "evidence_state": {
+        "registration": "PROVED",
+        "internal_association": "NOT_ESTABLISHED",
+        "substantive_examination": "NOT_ESTABLISHED",
+        "merits": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "event_id": "PD-SP-EVT-1157",
+      "event_date": "2026-09-24",
+      "record_type": "EMAIL_TRANSPORT",
+      "layer": "TRANSPORT",
+      "channel": "EMAIL",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "office": "Electronic-notification service",
+      "official_reference": "108-26",
+      "matter_references": [
+        "108-2026"
+      ],
+      "proof_level": "RECEIVED_EMAIL_LOCATED",
+      "public_summary": "Electronic-availability notice for the underlying 108-2026 communication.",
+      "proves": [
+        "Availability notice received."
+      ],
+      "does_not_prove": [
+        "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
+      ],
+      "evidence_state": {
+        "transmission": "RECEIVED_EMAIL_LOCATED",
+        "registration": "NOT_ESTABLISHED_BY_EMAIL_TRANSPORT",
+        "substantive_examination": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "event_id": "PD-SP-EVT-1158",
+      "event_date": "2026-09-24",
+      "record_type": "EMAIL_TRANSPORT",
+      "layer": "TRANSPORT",
+      "channel": "EMAIL",
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "office": "Electronic-notification service",
+      "official_reference": "108-26",
+      "matter_references": [
+        "108-2026"
+      ],
+      "proof_level": "RECEIVED_EMAIL_LOCATED",
+      "public_summary": "Second availability notice for the same underlying 108-2026 communication; not a second substantive decision.",
+      "proves": [
+        "Second transport event for the same underlying communication."
+      ],
+      "does_not_prove": [
+        "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
+      ],
+      "evidence_state": {
+        "transmission": "RECEIVED_EMAIL_LOCATED",
+        "registration": "NOT_ESTABLISHED_BY_EMAIL_TRANSPORT",
+        "substantive_examination": "NOT_ESTABLISHED"
+      }
+    },
+    {
+      "event_id": "PD-SP-EVT-1159",
+      "event_date": "2026-09-24",
+      "record_type": "EMAIL_TRANSPORT",
+      "layer": "TRANSPORT",
+      "channel": "EMAIL",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "office": "CGPJ Sección de Recursos",
+      "official_reference": "Alzada 286/2026 / DI 169/2026",
+      "matter_references": [
+        "REGAGE26e00082030716",
+        "108-2026"
+      ],
+      "proof_level": "SENT_EMAIL_VERIFIED",
+      "public_summary": "Update sent to the CGPJ Appeals Section with four supporting PDFs; dispatch does not prove reading or incorporation.",
+      "proves": [
+        "Outbound email dispatch and attachment package verified."
+      ],
+      "does_not_prove": [
+        "Does not prove admission, incorporation, substantive examination, agreement with allegations, responsibility or merits correctness beyond the stated source."
+      ],
+      "evidence_state": {
+        "transmission": "SENT_EMAIL_VERIFIED",
+        "registration": "SEPARATE_LATER_REGAGE_EVENTS_PROVED",
+        "internal_association": "NOT_ESTABLISHED",
+        "substantive_examination": "NOT_ESTABLISHED"
+      }
     }
   ],
   "id_allocation": {
@@ -31476,5 +31654,17 @@
       "source_anchor": "archive/MF_EXTRACONCURSAL_REQUERIMIENTO_31JUL2026_FULL_TEXT_20AUG2026.md",
       "synthetic_event_rows_created": 0
     }
-  ]
+  ],
+  "supplemental_control_20260924": {
+    "state": "OFICIO_108_AND_CGPJ_SUCCESSOR_EVENTS_ADDED",
+    "added_event_ids": [
+      "PD-SP-EVT-0497",
+      "PD-SP-EVT-0498",
+      "PD-SP-EVT-0499",
+      "PD-SP-EVT-1157",
+      "PD-SP-EVT-1158",
+      "PD-SP-EVT-1159"
+    ],
+    "rule": "Additive successor events; historical states remain preserved. Registration, transport, incorporation, examination and merits remain distinct."
+  }
 }
