@@ -1922,7 +1922,6 @@ def run(args: argparse.Namespace) -> int:
     checkpoint_bytes = canonical_json_bytes(expected_checkpoint)
 
     if args.check:
-        print(f"EXPECTED_REGISTER_SHA256={register_sha256}")
         failures: list[str] = []
         if not register_path.exists() or register_path.read_bytes() != register_bytes:
             failures.append(str(register_path))
