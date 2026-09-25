@@ -90,10 +90,6 @@ def main() -> int:
     if data.get("proceeding", {}).get("later_merits_decision_located") is not False:
         errors.append("evidence map JSON: latest controlled merits state is not preserved")
 
-    for path in ["es/index.html", "en/index.html"]:
-        body = read(path)
-        if body.count('data-calificacion-misuse-thesis="featured"') != 1:
-            errors.append(f"{path}: expected one statically rendered homepage thesis block")
     # Root-homepage thesis promotion superseded 25 Sep 2026; dedicated routes control.
     appeal_markers = {
         "es/concurso-36-2012-ap-seccion-4/index.html": [
