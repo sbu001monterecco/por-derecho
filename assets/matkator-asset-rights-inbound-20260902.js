@@ -53,7 +53,9 @@
     const step4 = main.querySelector('[data-cuatrecasas-why-step4="20260902"]');
     const mandate = main.querySelector('#mandate-inversion,#inversion-mandato,#aweswell-gateway,[data-cuatrecasas-step4-publication="20260902"]');
     const anchor = step4 || mandate || main.querySelector('section');
-    if (anchor && anchor.nextSibling) main.insertBefore(section, anchor.nextSibling);
+    // The homepage controller may have placed the reference inside the full
+    // record. Insert beside its actual parent, not against an unrelated main.
+    if (anchor && anchor.parentNode) anchor.parentNode.insertBefore(section, anchor.nextSibling);
     else main.appendChild(section);
   };
   if (path.includes('/cuatrecasas-sun-park')) window.setTimeout(insert, 170);

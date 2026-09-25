@@ -76,7 +76,10 @@
     if (sanTelmo) coreSections.push(sanTelmo);
 
     let anchor = hero;
-    for (const section of [controlling, detailed, portfolioScope, homeSearch, ...protectedCriminalSequence, summary, audiences, perimeters]) {
+    // Keep the legacy criminal-misuse pin immediately after the detailed record.
+    // Inserting scope/search between them caused two observers to reorder on
+    // every frame and remove keyboard focus while readers typed into search.
+    for (const section of [controlling, detailed, ...protectedCriminalSequence, portfolioScope, homeSearch, summary, audiences, perimeters]) {
       if (section && anchor) {
         placeAfter(section, anchor);
         anchor = section;
