@@ -80,3 +80,11 @@ The four attached PDFs comprise the concise LinkedIn UK evidential-context note,
 
 Outbound transmission in the existing case is verified. LinkedIn review of the attachments, Persona acceptance, restoration and trigger classification remain open.
 
+## Independent Article 21 review and Spanish counsel preservation
+
+A separate Article 21 DSA filing pack has now been prepared for User Rights in relation to the single LinkedIn account-restriction decision. The intended complaint asks for independent review of the moderation/account-enforcement measure, a sufficiently particularised statement of reasons and restoration if the restriction is unsupported or disproportionate. It expressly does not present the matter as hacking or account compromise and does not attribute the restriction to an external reporter or actor.
+
+The User Rights live form has not yet been submitted; its live Rules/Fee declarations and final submission remain outstanding. No case receipt is claimed.
+
+In parallel, current Spanish appellate counsel for RPL 3304/2025 has been asked to assess whether the LinkedIn restriction should be presented as a supervening evidential/preservation development, reserved pending the Sala's current evidence decision, or handled through another procedural route. No court filing is represented as completed.
+

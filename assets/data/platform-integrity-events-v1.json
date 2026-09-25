@@ -101,6 +101,22 @@
       "status": "OUTBOUND_VERIFIED_PROVIDER_RESPONSE_PENDING",
       "summary": "After completing the fresh Persona flow, the account holder replied in the existing appeal case seeking urgent interim restoration or the least restrictive temporary security measure while review continues, and supplied a controlled four-PDF evidence package. Transmission is verified; provider review, Persona acceptance, restoration and trigger classification remain pending.",
       "attribution": "not applicable"
+    },
+    {
+      "id": "PD-PLAT-LI-20260925-ARTICLE21-PACK",
+      "platform": "LinkedIn / User Rights",
+      "date": "2026-09-25",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "summary": "A one-decision Article 21 DSA filing package was prepared for User Rights concerning the LinkedIn account restriction, framed as a moderation/account-enforcement dispute rather than hacking or account compromise. Live external form acceptance/submission remains outstanding; no User Rights receipt exists.",
+      "attribution": "not applicable"
+    },
+    {
+      "id": "PD-PLAT-LI-20260925-RPL3304-COUNSEL",
+      "platform": "LinkedIn / Spanish judicial preservation",
+      "date": "2026-09-25",
+      "status": "COUNSEL_INSTRUCTED_NO_FILING_RECEIPT",
+      "summary": "Counsel for RPL 3304/2025 was instructed to assess a narrowly framed supervening-evidence/preservation step concerning the LinkedIn restriction and provider-native evidence. No court filing or judicial receipt is claimed.",
+      "attribution": "not applicable"
     }
   ],
   "connected_routes": {
