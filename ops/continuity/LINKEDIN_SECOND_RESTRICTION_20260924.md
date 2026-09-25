@@ -45,3 +45,11 @@ Public routes:
 - Existing support and privacy/preservation threads were supplemented with a UK relationship-and-urgency escalation and source-controlled evidential context; no duplicate case was created.
 - Because LinkedIn / Por Derecho material is already relevant to RPL 3304/2025, the preservation request expressly distinguishes user-initiated content changes from LinkedIn-imposed restriction or visibility changes.
 - See `ops/continuity/LINKEDIN_UK_LONDON_ESCALATION_20260925.md`.
+
+## 25 September 2026 — fresh provider-requested identity check
+
+- LinkedIn changed appeal case **260923-029467** to **Waiting For Information** and requested a fresh government-ID verification through its Persona checkpoint, followed by a reply to the existing case.
+- LinkedIn stated that identity documents are no longer accepted by email attachment.
+- The account holder states that he completed the fresh Persona flow using a new selfie and government-issued identity document and then replied in the same case thread confirming completion.
+- The fresh verification completion is presently an account-holder statement plus a verified same-thread outbound notice. LinkedIn has not yet confirmed receipt of the Persona result, restored access, decided the appeal or supplied the restriction trigger.
+- No inference is drawn that the earlier Persona verification failed merely because LinkedIn requested a fresh verification.
