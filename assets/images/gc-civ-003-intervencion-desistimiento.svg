@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+<title id="title">GC-CIV-003 — intervención del AC y desistimiento</title>
+<desc id="desc">Secuencia visual basada en fuente primaria: diligencia de LPB, intervención del administrador concursal, conformidad de CAM y desistimiento registrado de LPB.</desc>
+<rect width="1400" height="820" fill="#f7f4ed"/>
+<rect x="40" y="40" width="1320" height="740" rx="28" fill="#fff" stroke="#d5dfdc" stroke-width="3"/>
+<text x="80" y="110" font-family="Arial,Helvetica,sans-serif" font-size="46" font-weight="700" fill="#111827">GC-CIV-003 · DP 1041/2017</text>
+<text x="80" y="158" font-family="Arial,Helvetica,sans-serif" font-size="26" fill="#6b1d1d">Intervención documentada → desistimiento registrado</text>
+<line x1="155" y1="260" x2="1245" y2="260" stroke="#243b53" stroke-width="8"/>
+<g font-family="Arial,Helvetica,sans-serif">
+  <circle cx="190" cy="260" r="34" fill="#243b53"/><text x="190" y="270" text-anchor="middle" font-size="28" font-weight="700" fill="#fff">1</text>
+  <rect x="90" y="320" width="300" height="185" rx="18" fill="#eef3f6" stroke="#243b53" stroke-width="3"/>
+  <text x="120" y="365" font-size="24" font-weight="700" fill="#111827">19-Dic-2017</text>
+  <text x="120" y="405" font-size="22" fill="#111827">Auto admite la vía</text>
+  <text x="120" y="437" font-size="22" fill="#111827">de LPB para obtener</text>
+  <text x="120" y="469" font-size="22" fill="#111827">escritura, precio, pago</text>
+  <text x="120" y="501" font-size="22" fill="#111827">y costes de CAM.</text>
+
+  <circle cx="520" cy="260" r="34" fill="#8b1e1e"/><text x="520" y="270" text-anchor="middle" font-size="28" font-weight="700" fill="#fff">2</text>
+  <rect x="420" y="320" width="300" height="185" rx="18" fill="#fbf4f2" stroke="#8b1e1e" stroke-width="4"/>
+  <text x="450" y="365" font-size="24" font-weight="700" fill="#8b1e1e">25-Ene-2018</text>
+  <text x="450" y="405" font-size="22" fill="#111827">El AC comunica el fin</text>
+  <text x="450" y="437" font-size="22" fill="#111827">de la relación con el</text>
+  <text x="450" y="469" font-size="22" fill="#111827">letrado de LPB y limita</text>
+  <text x="450" y="501" font-size="22" fill="#111827">nuevos escritos.</text>
+
+  <circle cx="850" cy="260" r="34" fill="#7b5d14"/><text x="850" y="270" text-anchor="middle" font-size="28" font-weight="700" fill="#fff">3</text>
+  <rect x="750" y="320" width="300" height="185" rx="18" fill="#fbf8ea" stroke="#7b5d14" stroke-width="3"/>
+  <text x="780" y="365" font-size="24" font-weight="700" fill="#7b5d14">25-Feb-2018</text>
+  <text x="780" y="405" font-size="22" fill="#111827">El Decreto posterior</text>
+  <text x="780" y="437" font-size="22" fill="#111827">registra conformidad</text>
+  <text x="780" y="469" font-size="22" fill="#111827">de CAM al desistimiento</text>
+  <text x="780" y="501" font-size="22" fill="#111827">(registro 1222/18).</text>
+
+  <circle cx="1180" cy="260" r="34" fill="#8b1e1e"/><text x="1180" y="270" text-anchor="middle" font-size="28" font-weight="700" fill="#fff">4</text>
+  <rect x="1080" y="320" width="240" height="185" rx="18" fill="#fbf4f2" stroke="#8b1e1e" stroke-width="4"/>
+  <text x="1110" y="365" font-size="24" font-weight="700" fill="#8b1e1e">05-Mar-2018</text>
+  <text x="1110" y="405" font-size="22" fill="#111827">Decreto 139/2018:</text>
+  <text x="1110" y="437" font-size="22" fill="#111827">LPB desiste;</text>
+  <text x="1110" y="469" font-size="22" fill="#111827">sobreseimiento y</text>
+  <text x="1110" y="501" font-size="22" fill="#111827">vista suspendida.</text>
+</g>
+<path d="M390 412 L420 412" stroke="#243b53" stroke-width="8" marker-end="url(#a)"/>
+<path d="M720 412 L750 412" stroke="#243b53" stroke-width="8" marker-end="url(#a)"/>
+<path d="M1050 412 L1080 412" stroke="#243b53" stroke-width="8" marker-end="url(#a)"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#243b53"/></marker></defs>
+<rect x="90" y="575" width="1230" height="130" rx="18" fill="#f7f4ed" stroke="#d0c7b4" stroke-width="2"/>
+<text x="120" y="620" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" fill="#111827">Lectura controlada</text>
+<text x="120" y="660" font-family="Arial,Helvetica,sans-serif" font-size="21" fill="#111827">La secuencia y el efecto procesal están documentados. Siguen abiertos: autor material del desistimiento, base jurídica de la intervención,</text>
+<text x="120" y="692" font-family="Arial,Helvetica,sans-serif" font-size="21" fill="#111827">resultado real de 19-Feb-2018, notificación/firmeza final y cualquier conexión individual con actores del perímetro Acosta Matos.</text>
+<text x="80" y="755" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#6b7280">Por Derecho · fuente primaria + SOURCE_GAPS · alegación investigativa, no declaración judicial de culpabilidad</text>
+</svg>

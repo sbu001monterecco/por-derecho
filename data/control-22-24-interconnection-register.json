@@ -1,0 +1,355 @@
+{
+  "schema_version": "1.0.0",
+  "register_id": "PD-C22-C24-INTERCONNECTION-20260904",
+  "title": "Control 22 / DP 1956/2026 and Control 24 interconnection register",
+  "created": "2026-09-04",
+  "evidence_cutoff": "2026-09-04",
+  "repository_anchor_at_creation": "56761b5fa7a06579b3db563d859d75c65fb0a0b6",
+  "status": "PUBLIC_STRUCTURED_DIGEST_WITH_PRIMARY_STATUS_GAPS",
+  "scope": {
+    "purpose": "Preserve separate procedural identities while exposing typed evidential connections among the private-actor, insolvency-administrator and judicial-supervision layers of Insolvency Proceeding 36/2012.",
+    "public_source_policy": "Public-safe summaries and status metadata only. Native pleadings, signatures, contact details, addresses, private correspondence, credentials and restricted material remain outside public Git.",
+    "does_not_do": [
+      "It does not consolidate proceedings.",
+      "It does not transfer allegations, knowledge, intent, causation, guilt or liability from one person or proceeding to another.",
+      "It does not treat a complaint as proof of its own allegations.",
+      "It does not treat a filing locator as a court case number.",
+      "It does not state that a formal querella has been filed without a filing receipt."
+    ]
+  },
+  "evidential_categories": [
+    "VERIFIED_FACT",
+    "PARTY_ALLEGATION",
+    "EVIDENCE_BASED_INFERENCE",
+    "UNRESOLVED_QUESTION",
+    "SUPERSEDED",
+    "CONTRADICTED_OR_CORRECTED"
+  ],
+  "nodes": [
+    {
+      "node_id": "control-21-dp-1901",
+      "label_es": "Control 21 / NEXUS 36 / DP 1901/2026",
+      "label_en": "Control 21 / NEXUS 36 / DP 1901/2026",
+      "node_type": "criminal_proceeding_private_actor_layer",
+      "procedural_status": "SEPARATE_PROCEEDING_STATUS_MAINTAINED_ON_CANONICAL_PAGE",
+      "routes": {
+        "es": "/por-derecho/es/dp-1901-2026/",
+        "en": "/por-derecho/en/dp-1901-2026/"
+      }
+    },
+    {
+      "node_id": "control-22",
+      "label_es": "Control 22 · denuncia sobre el Administrador Concursal",
+      "label_en": "Control 22 · insolvency-administrator complaint",
+      "node_type": "filing_locator_and_complaint",
+      "document_date": "2026-06-17",
+      "filing_date": "2026-06-18",
+      "page_count": 55,
+      "legal_nature": "DENUNCIA_NOTITIA_CRIMINIS_NOT_QUERELLA",
+      "procedural_status": "PRESENTED_AND_LATER_ASSOCIATED_WITH_DP_1956",
+      "canonical_identity_rule": "Control 22 is a filing locator and must not replace DP 1956/2026 or be assigned a duplicate proceeding identity.",
+      "routes": {
+        "es": "/por-derecho/es/control-22-denuncia-administrador-concursal/",
+        "en": "/por-derecho/en/control-22-insolvency-administrator-complaint/"
+      }
+    },
+    {
+      "node_id": "dp-1956-2026",
+      "label_es": "Diligencias Previas 1956/2026",
+      "label_en": "Preliminary Proceedings 1956/2026",
+      "node_type": "criminal_proceeding_insolvency_administrator_layer",
+      "official_identifiers": {
+        "procedure": "DP 1956/2026",
+        "nig": "3501643220260016826",
+        "iup": "LI2026016921"
+      },
+      "organ": "Plaza n.º 1, Sección de Instrucción, Tribunal de Instancia de Las Palmas de Gran Canaria",
+      "procedural_status": "PROVISIONAL_DISMISSAL_COMMUNICATED_2026_07_21_NO_FILED_APPEAL_VERIFIED",
+      "routes": {
+        "es": "/por-derecho/es/dp-1956-2026/",
+        "en": "/por-derecho/en/dp-1956-2026/"
+      }
+    },
+    {
+      "node_id": "control-24",
+      "label_es": "Control 24 · denuncia relativa al juez del Concurso 36/2012",
+      "label_en": "Control 24 · complaint concerning the judge in Proceeding 36/2012",
+      "node_type": "filing_locator_and_judge_related_complaint",
+      "document_date": "2026-06-17",
+      "filing_date": "2026-06-18",
+      "package_page_count": 79,
+      "principal_complaint_page_count": 31,
+      "legal_nature": "DENUNCIA_NOTITIA_CRIMINIS_NOT_FORMAL_QUERELLA",
+      "procedural_status": "PRESENTED_OFFICIAL_DESTINATION_AND_OUTCOME_NOT_CONFIRMED",
+      "official_identifiers": {
+        "procedure": null,
+        "nig": null,
+        "high_court_entry": null
+      },
+      "canonical_identity_rule": "Control 24 is a filing locator. It is not a NIG, preliminary-proceedings number, High Court case number or querella.",
+      "routes": {
+        "es": "/por-derecho/es/control-24-denuncia-juez-concurso-36-2012/",
+        "en": "/por-derecho/en/control-24-insolvency-judge-complaint-36-2012/"
+      }
+    },
+    {
+      "node_id": "control-24-complement-2026-06-25",
+      "label_es": "Aportación complementaria a Control 24 de 25 junio 2026",
+      "label_en": "25 June 2026 supplement to Control 24",
+      "node_type": "dependent_supplement",
+      "filing_date": "2026-06-25",
+      "page_count": 10,
+      "procedural_status": "PRESENTATION_RECORDED_PHYSICAL_JOINDER_REPORTED_ELECTRONIC_JOINDER_NOT_CERTIFIED",
+      "routes": {
+        "es": "/por-derecho/es/control-24-denuncia-juez-concurso-36-2012/#estado",
+        "en": "/por-derecho/en/control-24-insolvency-judge-complaint-36-2012/#status"
+      }
+    },
+    {
+      "node_id": "judge-querella-lane",
+      "label_es": "Vía de querella relativa al juez",
+      "label_en": "Formal private-prosecution complaint route concerning the judge",
+      "node_type": "intended_or_subsequent_procedural_route",
+      "procedural_status": "FORMAL_FILING_NOT_VERIFIED",
+      "public_wording_es": "Control 24 es la base documental de la vía de querella alegada o prevista por el denunciante; no se ha localizado justificante que permita afirmar su presentación formal.",
+      "public_wording_en": "Control 24 is the documentary basis of the formal private-prosecution route alleged or intended by the complainant; no receipt proving formal filing has been located."
+    },
+    {
+      "node_id": "dip-2-2026",
+      "label_es": "Fiscalía DIP 2/2026",
+      "label_en": "Prosecution Service DIP 2/2026",
+      "node_type": "prosecutorial_preprocess_file",
+      "procedural_status": "ARCHIVED_2026_03_06_AS_RECORDED_SEPARATE_FROM_CONTROL_24",
+      "routes": {
+        "es": "/por-derecho/es/fiscalia-dip-2-2026/",
+        "en": "/por-derecho/en/fiscalia-dip-2-2026/"
+      }
+    },
+    {
+      "node_id": "di-169-alzada-286",
+      "label_es": "CGPJ DI 169/2026 y Recurso de alzada 286/2026",
+      "label_en": "CGPJ Information File 169/2026 and Administrative Appeal 286/2026",
+      "node_type": "disciplinary_and_governance_route",
+      "procedural_status": "SEPARATE_FROM_CRIMINAL_ROUTE",
+      "routes": {
+        "es": "/por-derecho/es/cgpj-supervision-masa-activa/",
+        "en": "/por-derecho/en/cgpj-insolvency-estate-supervision/"
+      }
+    },
+    {
+      "node_id": "concurso-36-2012",
+      "label_es": "Concurso Ordinario 36/2012",
+      "label_en": "Insolvency Proceeding 36/2012",
+      "node_type": "shared_source_proceeding",
+      "procedural_status": "SOURCE_AND_CONTEXT_NODE",
+      "routes": {
+        "es": "/por-derecho/es/concurso-36-2012-magistrado-juez/",
+        "en": "/por-derecho/en/insolvency-36-2012-mercantile-court-1/"
+      }
+    },
+    {
+      "node_id": "administrator-removal-fees",
+      "label_es": "Separación y honorarios del Administrador Concursal",
+      "label_en": "Insolvency-administrator removal and fees",
+      "node_type": "insolvency_appeal_layer",
+      "procedural_status": "SEPARATE_APPELLATE_ROUTE",
+      "routes": {
+        "es": "/por-derecho/es/concurso-36-2012-separacion-ac-honorarios/",
+        "en": "/por-derecho/en/insolvency-36-2012-administrator-removal-fees/"
+      }
+    },
+    {
+      "node_id": "administrator-role-page",
+      "label_es": "Administrador Concursal · registro de función y supervisión",
+      "label_en": "Insolvency administrator · role and supervision record",
+      "node_type": "public_explanatory_page",
+      "routes": {
+        "es": "/por-derecho/es/concurso-36-2012-administrador-concursal/",
+        "en": "/por-derecho/en/insolvency-36-2012-insolvency-administrator/"
+      }
+    }
+  ],
+  "issue_modules": [
+    {
+      "module_id": "funded-exit-2018",
+      "label": "ONA/Clubotel and financing routes",
+      "classification": "PARTY_ALLEGATION_WITH_DOCUMENTARY_ROADMAP",
+      "required_bridge": "What reached each actor or organ, on what date, with what payoff figure, conditions and response."
+    },
+    {
+      "module_id": "material-control-2018",
+      "label": "Material control of Sun Park from June 2018",
+      "classification": "PARTY_ALLEGATION_REQUIRING_ACT_BY_ACT_ATTRIBUTION",
+      "required_bridge": "Title, instruction, affected space, actor, knowledge, response and effect."
+    },
+    {
+      "module_id": "ob-rem-400000",
+      "label": "28 November 2018 OB REM transaction, €400,000 and 24 October 2019 non-validation",
+      "classification": "DOCUMENTARY_RECONSTRUCTION_REQUIRED",
+      "required_bridge": "Banking, accounting, inventory, restitution, cancellation, new title and later adjudication treatment."
+    },
+    {
+      "module_id": "credit-threshold-final-amount",
+      "label": "Recognised credit, interest, improvement threshold and amount extinguished",
+      "classification": "CATEGORIES_MUST_NOT_BE_CONFLATED",
+      "required_bridge": "Exact court or accounting act supporting every transition between figures."
+    },
+    {
+      "module_id": "promontoria-cam-assignment",
+      "label": "Promontoria to CAM assignment and creditor substitution",
+      "classification": "CHAIN_OF_TITLE_AND_KNOWLEDGE_RECONSTRUCTION",
+      "required_bridge": "Version, schedules, allocation, powers, substitution decision and later operative use."
+    },
+    {
+      "module_id": "bidding-adjudication-2021-2022",
+      "label": "Bidding, competition, adjudication, deed and registry implementation",
+      "classification": "MULTI_DOCUMENT_CHAIN",
+      "required_bridge": "Publicity, access, comparability, decision, complement, testimony, deed, charges and registry entries."
+    },
+    {
+      "module_id": "final-accounts",
+      "label": "Final accounting and traceability",
+      "classification": "OPEN_PRODUCTION_REQUIREMENT",
+      "required_bridge": "General ledger, CAM sub-account, banking supports, final accounts, objections and approval status."
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "C22-E01",
+      "from": "control-22",
+      "to": "dp-1956-2026",
+      "relation": "reported_to_have_initiated_or_been_associated_with",
+      "status": "STRONGLY_SUPPORTED_OFFICIAL_BRIDGE_COPY_STILL_REQUIRED",
+      "does_not_mean": "Control 22 is not itself the court proceeding number."
+    },
+    {
+      "edge_id": "C22-E02",
+      "from": "control-22",
+      "to": "concurso-36-2012",
+      "relation": "draws_primary_facts_and_documents_from",
+      "status": "VERIFIED_CONTEXT_RELATION",
+      "does_not_mean": "Every act in the insolvency proceeding is attributed to the insolvency administrator or is criminal."
+    },
+    {
+      "edge_id": "C22-E03",
+      "from": "control-22",
+      "to": "administrator-role-page",
+      "relation": "actor_capacity_and_duty_interface",
+      "status": "PUBLIC_EXPLANATORY_LINK",
+      "does_not_mean": "The role page adjudicates the complaint."
+    },
+    {
+      "edge_id": "C22-E04",
+      "from": "control-22",
+      "to": "administrator-removal-fees",
+      "relation": "shares_facts_documents_and_duty_questions_with",
+      "status": "RELATED_NOT_CONSOLIDATED",
+      "does_not_mean": "An insolvency appeal determines criminal liability or vice versa."
+    },
+    {
+      "edge_id": "C24-E01",
+      "from": "control-24-complement-2026-06-25",
+      "to": "control-24",
+      "relation": "supplements",
+      "status": "PRESENTATION_RECORDED_PHYSICAL_ASSOCIATION_REPORTED",
+      "does_not_mean": "The supplement is not an autonomous complaint or new case."
+    },
+    {
+      "edge_id": "C24-E02",
+      "from": "control-24",
+      "to": "judge-querella-lane",
+      "relation": "intended_as_documentary_and_procedural_basis_for",
+      "status": "CLAIMANT_POSITION_FORMAL_QUERELLA_FILING_NOT_VERIFIED",
+      "does_not_mean": "Control 24 is not itself a querella and does not prove a querella was filed."
+    },
+    {
+      "edge_id": "C24-E03",
+      "from": "control-24",
+      "to": "concurso-36-2012",
+      "relation": "targets_identifiable_judicial_decisions_and_supervision_within",
+      "status": "VERIFIED_CONTEXT_RELATION_ALLEGED_CRIMINAL_SIGNIFICANCE_UNADJUDICATED",
+      "does_not_mean": "An adverse or omitted ruling alone proves judicial misconduct."
+    },
+    {
+      "edge_id": "C24-E04",
+      "from": "control-24",
+      "to": "dip-2-2026",
+      "relation": "shares_subject_matter_and_some_documents_with",
+      "status": "SEPARATE_ROUTE_SEPARATE_RESULT",
+      "does_not_mean": "The result in DIP 2/2026 determines the status or merits of Control 24."
+    },
+    {
+      "edge_id": "C24-E05",
+      "from": "control-24",
+      "to": "di-169-alzada-286",
+      "relation": "shares_judicial_supervision_subject_matter_with",
+      "status": "DISCIPLINARY_GOVERNANCE_ROUTE_SEPARATE_FROM_CRIMINAL_ROUTE",
+      "does_not_mean": "A CGPJ action proves or excludes criminal liability."
+    },
+    {
+      "edge_id": "X-E01",
+      "from": "control-21-dp-1901",
+      "to": "control-22",
+      "relation": "shares_some_facts_sources_and_alleged_effects_with",
+      "status": "PRIVATE_ACTOR_AND_ADMINISTRATOR_LAYERS_SEPARATE",
+      "does_not_mean": "Knowledge, conduct, intent or liability propagates from private actors to the administrator."
+    },
+    {
+      "edge_id": "X-E02",
+      "from": "control-22",
+      "to": "control-24",
+      "relation": "shares_the_same_insolvency_factual_matrix_with",
+      "status": "RELATED_NOT_CONSOLIDATED",
+      "does_not_mean": "Administrator conduct is automatically judicial conduct, or judicial approval absorbs the administrator's own duties and accounting."
+    },
+    {
+      "edge_id": "X-E03",
+      "from": "control-21-dp-1901",
+      "to": "control-24",
+      "relation": "shares_some_outcomes_and_documents_with",
+      "status": "PRIVATE_ACTOR_AND_JUDICIAL_LAYERS_SEPARATE",
+      "does_not_mean": "A beneficial effect for a private actor proves judicial intent, coordination or guilt."
+    }
+  ],
+  "priority_gaps": [
+    {
+      "gap_id": "C22-GAP-01",
+      "priority": "HIGH",
+      "description": "Obtain the primary bridge showing how Control 22 was allocated or associated with DP 1956/2026."
+    },
+    {
+      "gap_id": "C22-GAP-02",
+      "priority": "HIGH",
+      "description": "Confirm whether any reform or appeal was filed against the provisional dismissal; drafts are not filing proof."
+    },
+    {
+      "gap_id": "C24-GAP-01",
+      "priority": "CRITICAL",
+      "description": "Obtain Dean's Office and/or High Court certification of Control 24 entry, outgoing route, recipient organ, current location and result."
+    },
+    {
+      "gap_id": "C24-GAP-02",
+      "priority": "CRITICAL",
+      "description": "Obtain the electronic registry metadata and joinder record for the 25 June supplement."
+    },
+    {
+      "gap_id": "C24-GAP-03",
+      "priority": "CRITICAL",
+      "description": "Locate any filing receipt for a formal querella before representing that such a querella was filed."
+    },
+    {
+      "gap_id": "SHARED-GAP-01",
+      "priority": "HIGH",
+      "description": "Produce the certified insolvency docket and actor-specific document-to-knowledge-to-response matrix for the funded exit, €400,000, credit figures, 2021 bidding, 2022 adjudication and final accounts."
+    }
+  ],
+  "representation_rules": [
+    "Control 22 is not DP 1956/2026, though later sources associate them.",
+    "Control 24 is not a NIG, preliminary-proceedings number or formal querella.",
+    "A supplement does not create an autonomous complaint unless a primary source proves that status.",
+    "Prepared, reviewed or sent to counsel does not equal filed.",
+    "Presented does not equal admitted; admitted does not equal proven; archived does not equal a general merits adjudication.",
+    "Related does not equal consolidated; shared evidence does not equal shared responsibility.",
+    "The absence of a document from the finite repository is an open production question, not proof of non-existence."
+  ]
+}

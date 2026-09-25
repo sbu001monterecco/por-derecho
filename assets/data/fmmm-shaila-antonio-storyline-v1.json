@@ -1,0 +1,138 @@
+{
+  "schema": "por-derecho.fmmm-shaila-antonio-storyline.v1",
+  "control_id": "PD-SP-FSA-STORYLINE-20260922-01",
+  "control_date": "2026-09-22",
+  "status": "SOURCE_LED_ATTRIBUTION_MAP_NOT_ADJUDICATED_FINDING",
+  "actors": [
+    {
+      "id": "PD-SP-P-0009",
+      "name": "Francisco Mario Matos Matas",
+      "caret_state": "CARET_CONFIRMED",
+      "earliest_controlled_date": "2011-06-22",
+      "continuity_note": "Earliest and strongest continuous personal lane among the trio: Community/Pamanil administration from 2011, 2014 communications, 2016 knowledge checkpoint, 2017-2018 Community/control implementation allegations, 2022 secretary-administrator/bank lane and later AGM/Orion offices.",
+      "route_en": "/por-derecho/en/francisco-mario-matos-matas/",
+      "route_es": "/por-derecho/es/francisco-mario-matos-matas/"
+    },
+    {
+      "id": "PD-SP-P-0008",
+      "name": "Shaila María Cogolludo Ramos",
+      "caret_state": "CARET_CONFIRMED",
+      "earliest_controlled_date": "2014-04-08",
+      "continuity_note": "Pamanil/Community communications by 8 April 2014; later Community administration/voting/access allegations and later corporate powers. Later powers are not backdated.",
+      "route_en": "/por-derecho/en/shaila-maria-cogolludo-ramos/",
+      "route_es": "/por-derecho/es/shaila-maria-cogolludo-ramos/"
+    },
+    {
+      "id": "PD-SP-P-0007",
+      "name": "Antonio Cogolludo Rojas",
+      "caret_state": "CARET_CONFIRMED",
+      "earliest_controlled_date": "2014-04-10",
+      "continuity_note": "Community/Pamanil representation by 10 April 2014, Pamalexsha corporate office, Community presidency in the 2017-2018 security/access period and later corporate continuity.",
+      "route_en": "/por-derecho/en/antonio-cogolludo-rojas/",
+      "route_es": "/por-derecho/es/antonio-cogolludo-rojas/"
+    }
+  ],
+  "phases": [
+    {
+      "date": "2011-06-22",
+      "label": "FMMM enters controlled Community/Pamanil administration lane",
+      "actors": [
+        "PD-SP-P-0009"
+      ],
+      "route_en": "/por-derecho/en/community-instrumentalisation/acta-document-room/2011-06-22/",
+      "route_es": "/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/2011-06-22/"
+    },
+    {
+      "date": "2014-04-08/10",
+      "label": "Three-person documentary cluster becomes visible",
+      "actors": [
+        "PD-SP-P-0009",
+        "PD-SP-P-0008",
+        "PD-SP-P-0007"
+      ],
+      "route_en": "/por-derecho/en/community-instrumentalisation/communications-pamanil/",
+      "route_es": "/por-derecho/es/comunidad-instrumentalizacion/comunicaciones-pamanil/"
+    },
+    {
+      "date": "2016-04-26",
+      "label": "Pamanil/Pamalexsha administration-services transition appears in Community material",
+      "actors": [
+        "PD-SP-P-0009",
+        "PD-SP-P-0008",
+        "PD-SP-P-0007"
+      ],
+      "route_en": "/por-derecho/en/community-instrumentalisation/acta-document-room/2016-04-26/",
+      "route_es": "/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/2016-04-26/"
+    },
+    {
+      "date": "2017-06-12",
+      "label": "Community office / administration / Pamalexsha period",
+      "actors": [
+        "PD-SP-P-0007",
+        "PD-SP-P-0008",
+        "PD-SP-P-0009"
+      ],
+      "route_en": "/por-derecho/en/community-instrumentalisation/acta-document-room/2017-06-12/",
+      "route_es": "/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/2017-06-12/"
+    },
+    {
+      "date": "2018-05-18",
+      "label": "Security/access meeting: strongest joint operational attribution period begins",
+      "actors": [
+        "PD-SP-P-0007",
+        "PD-SP-P-0008",
+        "PD-SP-P-0009"
+      ],
+      "route_en": "/por-derecho/en/community-instrumentalisation/acta-document-room/2018-05-18/",
+      "route_es": "/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/2018-05-18/"
+    },
+    {
+      "date": "2018-06-07",
+      "label": "Material-control hinge; each actor requires separate act/instruction/knowledge proof",
+      "actors": [
+        "PD-SP-P-0007",
+        "PD-SP-P-0008",
+        "PD-SP-P-0009"
+      ],
+      "route_en": "/por-derecho/en/sun-park-takeover-7-june-2018/",
+      "route_es": "/por-derecho/es/toma-control-sun-park-7-junio-2018/"
+    },
+    {
+      "date": "2022-02-04",
+      "label": "Later Community/project continuity; FMMM continuity is direct, exact Antonio/Shaila act-specific participation must remain source-bounded",
+      "actors": [
+        "PD-SP-P-0009"
+      ],
+      "route_en": "/por-derecho/en/community-instrumentalisation/acta-document-room/2022-02-04/",
+      "route_es": "/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/2022-02-04/"
+    },
+    {
+      "date": "2024+",
+      "label": "Later corporate network and disclosure layer",
+      "actors": [
+        "PD-SP-P-0009",
+        "PD-SP-P-0008",
+        "PD-SP-P-0007"
+      ],
+      "route_en": "/por-derecho/en/orion-rental-socimi/",
+      "route_es": "/por-derecho/es/orion-rental-socimi/"
+    }
+  ],
+  "rescan_basis": {
+    "github": "Current main and actor/event/source controls rescanned 22 Sep 2026.",
+    "gitlab_public": "Public GitLab Pages comparator rescanned; it still exposes older/stale linked-act rendering on the homepage while its deeper takeover page contains the actor-specific 2018-2022 matrix.",
+    "gmail_accounts": [
+      "SBU001 Monterecco",
+      "Gil Marer",
+      "Patricia Domínguez"
+    ],
+    "file_library": "Conversation + Library source corpus rescanned for the trio, DP 1132/2018 and Community chronology."
+  },
+  "conclusion": "The record does not support equal three-person attribution from 2011. FMMM has the earliest and strongest continuous personal line from 22 June 2011. Shaila and Antonio are separately documented by April 2014. The strongest joint attribution to all three is the 2017-2018 Community/Pamalexsha/security/access period, with the 18 May and 7 June 2018 nodes requiring actor-specific proof.",
+  "boundary": "Attribution strength is an evidence-management assessment, not a finding of guilt, conspiracy, common intent or legal liability. Family or corporate relationship never transfers another person's acts or knowledge.",
+  "action_map": {
+    "control_id": "PD-SP-FSA-ACTION-MAP-20260922-01",
+    "path": "assets/data/fmmm-shaila-antonio-action-map-v1.json",
+    "scope": "Montelanza/Molina-linked representation → Community organ → Pamanil/Pamalexsha → 2017 offices → 2018 security/access → CAM/Acosta Matos interface → later corporate continuity"
+  }
+}

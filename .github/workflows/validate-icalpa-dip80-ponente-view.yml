@@ -1,0 +1,54 @@
+name: Validate ICALPA DIP 80 Ponente View
+
+on:
+  pull_request:
+    paths:
+      - "assets/por-derecho/ponente-view.css"
+      - "assets/por-derecho/ponente-view.js"
+      - "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/segundo-par-de-ojos/index.html"
+      - "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/second-pair-of-eyes/index.html"
+      - ".github/workflows/validate-icalpa-dip80-ponente-view.yml"
+  push:
+    branches: [main]
+    paths:
+      - "assets/por-derecho/ponente-view.css"
+      - "assets/por-derecho/ponente-view.js"
+      - "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/segundo-par-de-ojos/index.html"
+      - "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/second-pair-of-eyes/index.html"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Validate bilingual pages and boundaries
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          pages = [
+            (Path("es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/segundo-par-de-ojos/index.html"), "es", "/por-derecho/en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/second-pair-of-eyes/"),
+            (Path("en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/second-pair-of-eyes/index.html"), "en", "/por-derecho/es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/segundo-par-de-ojos/")
+          ]
+          for page, lang, reciprocal in pages:
+              assert page.exists(), page
+              text = page.read_text(encoding="utf-8")
+              assert f'<html lang="{lang}">' in text
+              assert "noindex,follow,noarchive" in text
+              assert "ponente-view.css" in text and "ponente-view.js" in text
+              assert "data-second-pair-app" in text
+              assert reciprocal in text
+              for token in ("🛑", "◆", "Registered ≠ reviewed" if lang == "en" else "Registrado ≠ revisado"):
+                  assert token in text, (page, token)
+              assert "red card" in text.lower() or "tarjeta roja" in text.lower()
+              assert "human" in text.lower() or "humana" in text.lower()
+          css = Path("assets/por-derecho/ponente-view.css").read_text()
+          for token in ("--r:#b42318", "--o:#c04a00", "--p:#6941c6", "@media print"):
+              assert token in css
+          print("ICALPA DIP 80 Ponente View validation PASSED")
+          PY
+      - name: Check JavaScript syntax
+        run: node --check assets/por-derecho/ponente-view.js

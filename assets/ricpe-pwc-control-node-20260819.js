@@ -1,0 +1,54 @@
+(()=>{
+  const d=document;
+  const p=location.pathname.replace(/\/+$/,'/');
+  const en=p.endsWith('/en/ric-private-equity-sun-park/');
+  const es=p.endsWith('/es/ric-private-equity-sun-park/');
+  if(!en&&!es)return;
+  const render=()=>{
+    if(d.querySelector('[data-ricpe-pwc-control-node]'))return;
+    const anchor=d.querySelector('#unitary-question');
+    if(!anchor)return;
+    const style=d.createElement('style');
+    style.textContent=`
+      .rpwc{margin:1.5rem auto;max-width:1180px;border:3px solid #8c2f2c;border-radius:22px;background:#fff8f5;color:#13252d;box-shadow:0 10px 30px rgba(19,37,45,.12);overflow:hidden}
+      .rpwc__head{padding:1.35rem 1.4rem;background:#13252d;color:#fff}.rpwc__k{font-size:.76rem;font-weight:950;letter-spacing:.09em;text-transform:uppercase;color:#f0cf9e}.rpwc h2{margin:.35rem 0 .65rem;font-size:clamp(1.8rem,4vw,3rem);line-height:1.04}.rpwc__lead{max-width:1020px;font-size:1.05rem}
+      .rpwc__timeline{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.7rem;padding:1.1rem}.rpwc__timeline article{background:#fff;border-top:5px solid #8c2f2c;border-radius:14px;padding:.9rem;min-height:190px}.rpwc__timeline time{display:block;font-weight:950;color:#8c2f2c;margin-bottom:.4rem}.rpwc__timeline h3{font-size:1rem;margin:.15rem 0 .45rem}.rpwc__timeline p{font-size:.92rem;margin:.35rem 0}
+      .rpwc__q{margin:0 1.1rem 1.1rem;padding:1rem 1.1rem;border-left:7px solid #9a6a20;background:#fff3cd;border-radius:12px;font-weight:850}.rpwc__roles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem;padding:0 1.1rem 1.1rem}.rpwc__roles article{background:#f4f7f8;border:1px solid #d8dfe1;border-radius:13px;padding:.9rem}.rpwc__roles h3{font-size:1rem;margin:.1rem 0 .4rem}.rpwc__boundary{margin:0 1.1rem 1.1rem;padding:.9rem 1rem;border-left:6px solid #315c7b;background:#f0f6fa;border-radius:12px;font-size:.92rem}.rpwc__links{padding:0 1.1rem 1.2rem;display:flex;flex-wrap:wrap;gap:.6rem}.rpwc__links a{font-weight:900;text-decoration:none;background:#13252d;color:#fff;padding:.65rem .85rem;border-radius:999px}
+      @media(max-width:960px){.rpwc__timeline{grid-template-columns:1fr 1fr}.rpwc__roles{grid-template-columns:1fr}}@media(max-width:620px){.rpwc__timeline{grid-template-columns:1fr}.rpwc{border-radius:14px}}
+    `;
+    d.head.appendChild(style);
+    const s=d.createElement('section');
+    s.className='rpwc';
+    s.dataset.ricpePwcControlNode='true';
+    s.id='pwc-control-node';
+    s.innerHTML=es?`
+      <div class="rpwc__head"><div class="rpwc__k">PWC · CONOCIMIENTO PREVIO · CONTROL PROFESIONAL · RICPE</div><h2>PwC no entra en esta historia en 2019: ya conocía Sun Park desde dentro en 2016.</h2><p class="rpwc__lead">La cuestión RICPE ya no es sólo qué controles se anunciaron en 2020. Es qué sabía cada entidad y equipo de PwC antes de que Sun Park entrara en el perímetro inversor, qué función desempeñó después y qué barreras de conflicto, confidencialidad y antiguo cliente se aplicaron.</p></div>
+      <div class="rpwc__timeline">
+        <article><time>2016</time><h3>Conocimiento previo del activo</h3><p>Carlos Saavedra, Miguel Hernández y Elena Santos aparecen en la respuesta jurídica de Sun Park. PwC conocía propietarios y unidades concretas, disputas de Comunidad, deuda, control y estrategia procesal.</p></article>
+        <article><time>JUN–SEP 2016</time><h3>Alerta penal y contacto con el AC</h3><p>El cliente comunica alegaciones consideradas potencialmente penales, instruye “la vía penal contra esta gente”, PwC acusa recibo y PwC confirma después una conversación directa con el Administrador Concursal.</p></article>
+        <article><time>2019</time><h3>PwC en el registro de auditoría RICPE</h3><p>Una entidad PwC figura como auditor estatutario de RICPE. Auditoría de estados financieros no equivale, por sí sola, a due diligence del proyecto Sun Park.</p></article>
+        <article><time>2020</time><h3>PwC invocado en el control legal/fiscal</h3><p>El webinar de RICPE presenta PwC dentro de la due diligence legal/fiscal mientras Sun Park se presenta como proyecto adquirido, consolidado y libre de cargas. Falta producir públicamente el mandato Sun Park específico, su alcance y reservas.</p></article>
+        <article><time>2021 → DESPUÉS</time><h3>Fragmentación y convergencia posterior</h3><p>La certificación interna de 2021 describe una realidad dominical fragmentada. Más tarde aparecen relaciones profesionales públicas de Carlos/PwC dentro del ecosistema RICPE/Grupo Acosta Matos en otros contextos. Debe explicarse el puente de conflicto e información.</p></article>
+      </div>
+      <p class="rpwc__q"><strong>Pregunta central a RICPE y PwC:</strong> si PwC ya poseía conocimiento material y sensible de Sun Park desde 2016 —incluidos propietarios extraconcursales, controversias de control, una instrucción penal expresa y contacto con el AC—, ¿qué sabía el equipo que intervino en RICPE, qué verificó realmente, qué encontró la búsqueda de conflictos, quién tuvo acceso a los archivos anteriores y cómo se reconciliaron esas circunstancias con la narrativa inversora de 2020 y la realidad dominical documentada en 2021?</p>
+      <div class="rpwc__roles"><article><h3>1 · Auditoría RICPE</h3><p>Identificar entidad PwC, ejercicios, alcance, riesgos, partes vinculadas y hechos posteriores. No presumir que la auditoría societaria validó título de Sun Park.</p></article><article><h3>2 · Due diligence legal/fiscal</h3><p>Producir cliente, engagement, equipo, fecha, alcance, dependencias, reservas, title work y versión usada para la inversión. La mención en webinar es una representación pública; no sustituye el expediente profesional.</p></article><article><h3>3 · Antiguo cliente / Carlos Saavedra</h3><p>Producir conflicto/KYC, Legal-Risk, barreras de información, recusaciones, accesos DMS y cualquier consentimiento o waiver. Separar siempre las entidades legales PwC.</p></article></div>
+      <p class="rpwc__boundary"><strong>Límite probatorio:</strong> esta cronología no demuestra que PwC validara el título de Sun Park, aprobara cada afirmación de RICPE, transmitiera información confidencial ni cometiera infracción alguna. Sí demuestra que PwC ocupa una posición de conocimiento previo y control profesional que exige una reconciliación documental mucho más precisa que una simple mención como proveedor externo.</p>
+      <div class="rpwc__links"><a href="../pwc-canarias-carlos-saavedra-sun-park/">Abrir expediente PwC / Carlos →</a><a href="#three-ricpe-realities">Ir al webinar 2020 →</a><a href="#controls">Ir a controles RICPE →</a></div>
+    `:`
+      <div class="rpwc__head"><div class="rpwc__k">PWC · PRIOR KNOWLEDGE · PROFESSIONAL CONTROL · RICPE</div><h2>PwC does not enter this story in 2019: it already knew Sun Park from the inside in 2016.</h2><p class="rpwc__lead">The RICPE question is no longer only which controls were advertised in 2020. It is what each PwC entity and team already knew before Sun Park entered the investment perimeter, what function it later performed, and what former-client, confidentiality and conflict safeguards were applied.</p></div>
+      <div class="rpwc__timeline">
+        <article><time>2016</time><h3>Prior asset knowledge</h3><p>Carlos Saavedra, Miguel Hernández and Elena Santos appear inside the Sun Park legal response. PwC knew specific owners and units, Community disputes, debt, control and litigation strategy.</p></article>
+        <article><time>JUN–SEP 2016</time><h3>Penal alarm and AC contact</h3><p>The client communicated allegations it regarded as potentially criminal, instructed “la vía penal contra esta gente”, PwC acknowledged the decision, and PwC later confirmed direct contact with the Insolvency Administrator.</p></article>
+        <article><time>2019</time><h3>PwC in RICPE audit history</h3><p>A PwC entity appears as RICPE statutory auditor. Financial-statement audit is not, by itself, Sun Park project due diligence.</p></article>
+        <article><time>2020</time><h3>PwC invoked in legal/fiscal control</h3><p>RICPE's webinar presents PwC within legal/fiscal due diligence while Sun Park is presented as an acquired, consolidated and unencumbered project. The Sun Park-specific engagement, scope and qualifications remain to be produced publicly.</p></article>
+        <article><time>2021 → LATER</time><h3>Fragmentation and later convergence</h3><p>The 2021 internal certificate describes a fragmented title reality. Later public records show further Carlos/PwC professional convergence within the RICPE/Grupo Acosta Matos ecosystem in other contexts. The conflict/information bridge requires an answer.</p></article>
+      </div>
+      <p class="rpwc__q"><strong>Central question to RICPE and PwC:</strong> if PwC already possessed material and sensitive Sun Park knowledge from 2016 —including non-estate owners, control disputes, an express penal-route instruction and contact with the AC— what did the team involved with RICPE know, what did it actually verify, what did the conflict search identify, who could access the earlier files, and how were those circumstances reconciled with the 2020 investor narrative and the fragmented ownership reality documented in 2021?</p>
+      <div class="rpwc__roles"><article><h3>1 · RICPE statutory audit</h3><p>Identify the PwC entity, periods, scope, risks, related parties and subsequent events. Do not infer that corporate audit validated Sun Park title.</p></article><article><h3>2 · Legal/fiscal due diligence</h3><p>Produce client, engagement, team, date, scope, dependencies, qualifications, title work and the version relied upon for the investment. Webinar attribution is a public representation, not the professional file itself.</p></article><article><h3>3 · Former client / Carlos Saavedra</h3><p>Produce conflict/KYC, Legal-Risk review, information barriers, recusals, DMS access and any consent or waiver. Keep PwC legal entities distinct throughout.</p></article></div>
+      <p class="rpwc__boundary"><strong>Evidential boundary:</strong> this chronology does not establish that PwC validated Sun Park title, approved every RICPE representation, transmitted confidential information or committed any breach. It does establish that PwC occupies a prior-knowledge and professional-control position requiring a much more precise documentary reconciliation than a generic external-provider reference.</p>
+      <div class="rpwc__links"><a href="../pwc-canarias-carlos-saavedra-sun-park/">Open PwC / Carlos record →</a><a href="#three-ricpe-realities">Go to 2020 webinar →</a><a href="#controls">Go to RICPE controls →</a></div>
+    `;
+    anchor.insertAdjacentElement('afterend',s);
+  };
+  if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',render,{once:true});else render();
+})();

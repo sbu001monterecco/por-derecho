@@ -1,0 +1,64 @@
+name: Validate Concurso 36/2012 Autos full-text publication
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/validate-concurso-autos-publication.yml'
+      - 'archive/CONCURSO36_AUTOS_FULLTEXT_UNITARY_RECORD_23AUG2026.md'
+      - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - 'assets/data/concurso36-autos-fulltext-v1.json'
+      - 'assets/data/unitary-route-registry-v1.json'
+      - 'evidence/insolvency-36-2012/ac-removal-fees/**'
+      - 'evidence/insolvency-36-2012/concurso-autos/**'
+      - 'en/insolvency-36-2012-orders-decisions/**'
+      - 'es/concurso-36-2012-autos-resoluciones/**'
+      - 'en/site-index/**'
+      - 'es/indice-web/**'
+      - 'sitemap.xml'
+      - 'sitemap-unitary-shell.xml'
+      - 'scripts/build_concurso_autos_*.py'
+      - 'scripts/build_public_ac_orders.py'
+      - 'scripts/validate_concurso_autos_publication.py'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/validate-concurso-autos-publication.yml'
+      - 'archive/CONCURSO36_AUTOS_FULLTEXT_UNITARY_RECORD_23AUG2026.md'
+      - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - 'assets/data/concurso36-autos-fulltext-v1.json'
+      - 'assets/data/unitary-route-registry-v1.json'
+      - 'evidence/insolvency-36-2012/ac-removal-fees/**'
+      - 'evidence/insolvency-36-2012/concurso-autos/**'
+      - 'en/insolvency-36-2012-orders-decisions/**'
+      - 'es/concurso-36-2012-autos-resoluciones/**'
+      - 'en/site-index/**'
+      - 'es/indice-web/**'
+      - 'sitemap.xml'
+      - 'sitemap-unitary-shell.xml'
+      - 'scripts/build_concurso_autos_*.py'
+      - 'scripts/build_public_ac_orders.py'
+      - 'scripts/validate_concurso_autos_publication.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-concurso-autos-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Install pinned PDF validator
+        run: python3 -m pip install --disable-pip-version-check PyMuPDF==1.26.6
+      - name: Validate full text, redaction, decisions, links and discovery
+        run: python3 scripts/validate_concurso_autos_publication.py

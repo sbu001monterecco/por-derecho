@@ -1,0 +1,106 @@
+{
+  "schema": "por-derecho.aeat-transparency-message-sequence.v2",
+  "control_date": "2026-09-16",
+  "canonical_repository": "GitLab main",
+  "timezone_note": "Government-notice times below are normalized to Europe/Madrid CEST where stated. CTBG REGAGE filing times are Canary local registry times from the filed receipts.",
+  "privacy_boundary": "No Gmail/provider message IDs, personal tax identifiers, direct DEHu acceptance URLs, one-time security codes, CSV verification codes, raw email bodies, addresses or contact details are published.",
+  "events": [
+    {
+      "type": "GESAT2_RESOLUTION_ISSUED",
+      "portal_exp": "00001-00112793",
+      "time_cest": "17:19:37"
+    },
+    {
+      "type": "NOTIFICA_NOTICE",
+      "portal_exp": "00001-00112793",
+      "concept": "RES - 00001-00112793 - 1185150",
+      "time_cest": "17:20:04",
+      "availability_expiry": "2026-09-26"
+    },
+    {
+      "type": "DEHU_COURTESY_NOTICE",
+      "portal_exp": "00001-00112793",
+      "concept": "RES - 00001-00112793 - 1185150",
+      "time_cest": "17:23:09",
+      "availability_expiry": "2026-09-26"
+    },
+    {
+      "type": "GESAT2_RESOLUTION_ISSUED",
+      "portal_exp": "00001-00113066",
+      "time_cest": "17:25:37"
+    },
+    {
+      "type": "NOTIFICA_NOTICE",
+      "portal_exp": "00001-00113066",
+      "concept": "RES - 00001-00113066 - 1185149",
+      "time_cest": "17:26:08",
+      "availability_expiry": "2026-09-26"
+    },
+    {
+      "type": "DEHU_COURTESY_NOTICE",
+      "portal_exp": "00001-00113066",
+      "concept": "RES - 00001-00113066 - 1185149",
+      "time_cest": "17:27:04",
+      "availability_expiry": "2026-09-26"
+    },
+    {
+      "type": "GESAT2_RESOLUTION_ISSUED",
+      "portal_exp": "00001-00113069",
+      "time_cest": "17:34:17"
+    },
+    {
+      "type": "NOTIFICA_NOTICE",
+      "portal_exp": "00001-00113069",
+      "concept": "RES - 00001-00113069 - 1185148",
+      "time_cest": "17:35:14",
+      "availability_expiry": "2026-09-26"
+    },
+    {
+      "type": "DEHU_COURTESY_NOTICE",
+      "portal_exp": "00001-00113069",
+      "concept": "RES - 00001-00113069 - 1185148",
+      "time_cest": "17:35:42",
+      "availability_expiry": "2026-09-26"
+    },
+    {
+      "type": "SELF_SENT_CARRIER",
+      "time_canary": "16:42:16",
+      "time_cest": "17:42:16",
+      "attachment_count": 3,
+      "unique_signed_decisions": 2
+    },
+    {
+      "type": "CTBG_REGAGE_FILING",
+      "regage": "REGAGE26e00081191241",
+      "time_canary": "20:10:00",
+      "registered_time_canary": "20:10:10",
+      "against": ["001-0113069"],
+      "destination_dir3": "EA0040111",
+      "attachment_count": 5,
+      "accumulation_requested": true
+    },
+    {
+      "type": "CTBG_REGAGE_FILING",
+      "regage": "REGAGE26e00081194039",
+      "time_canary": "20:25:07",
+      "against": ["001-0112793", "001-0113066"],
+      "destination_dir3": "EA0040111",
+      "attachment_count": 5,
+      "cross_references": ["REGAGE26e00081191241"],
+      "accumulation_requested": true
+    }
+  ],
+  "notification_rule": "The Notifica and DEHu notices state that if the same notification is accessed through more than one channel, legal effects begin from the first access. Exact effective-access evidence remains privately controlled.",
+  "decision_mapping": {
+    "00001-00112793": "AEAT-RES-20260916-A",
+    "00001-00113066": "AEAT-RES-20260916-A",
+    "00001-00113069": "AEAT-RES-20260916-B"
+  },
+  "ctbg_architecture": {
+    "complaints": 2,
+    "substantive_case": "one connected factual/legal case",
+    "accumulation_requested": true,
+    "common_supplement_status": "prepared_linked_follow_on",
+    "do_not_create_third_complaint_for_duplicate_pdf": true
+  }
+}

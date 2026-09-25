@@ -1,0 +1,49 @@
+name: Verify RICPE idoneidad live publication
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/verify_ricpe_idoneidad_live.py'
+      - '.github/workflows/verify-ricpe-idoneidad-live.yml'
+      - 'publication-manifests/ricpe-idoneidad-series-f-g-20260818.json'
+      - 'archive/intelligence/RICPE_IDONEIDAD_SERIES_F_G_THREAD_HANDOVER_20260818.md'
+      - 'INSTITUTIONAL_ACTIONS.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-ricpe-idoneidad-live-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  live-verification:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Poll public GitHub Pages publication
+        run: |
+          python scripts/verify_ricpe_idoneidad_live.py \
+            --attempts 36 \
+            --interval 10 \
+            --timeout 20 \
+            --output artifacts/ricpe-idoneidad-live/verification.json
+      - name: Show verification evidence
+        if: always()
+        run: |
+          test ! -f artifacts/ricpe-idoneidad-live/verification.json || cat artifacts/ricpe-idoneidad-live/verification.json
+      - name: Upload verification evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: ricpe-idoneidad-live-verification
+          path: artifacts/ricpe-idoneidad-live/verification.json
+          if-no-files-found: error
+          retention-days: 30

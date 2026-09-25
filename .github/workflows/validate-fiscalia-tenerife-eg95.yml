@@ -1,0 +1,60 @@
+name: Validate Fiscalía Tenerife EG 95/2026
+
+on:
+  pull_request:
+    paths:
+      - "es/fiscalia-tenerife-eg95-2026/**"
+      - "en/fiscalia-tenerife-eg95-2026/**"
+      - "assets/fiscalia-eg95-*"
+      - "assets/site-pre-intervencion-highlight-20260820.js"
+      - "assets/site-pre-intervencion-highlight-before-eg95-20260823.js"
+      - "assets/data/fiscalia-tenerife-eg95-20260823.json"
+      - "archive/FISCALIA_TENERIFE_EG95_RETRIEVAL_GATE_23AUG2026.md"
+      - "archive/CORRECTION_REGISTER_FISCALIA_TENERIFE_EG95_APPEND_23AUG2026.md"
+      - "archive/MISSING_EVIDENCE_REGISTER_FISCALIA_TENERIFE_EG95_APPEND_23AUG2026.md"
+      - "archive/public_office_communications/fiscalia_tenerife/**"
+      - "sitemap-fiscalia-tenerife.xml"
+      - "robots.txt"
+      - "scripts/validate_fiscalia_tenerife_eg95.py"
+      - ".github/workflows/validate-fiscalia-tenerife-eg95.yml"
+  push:
+    branches: [main]
+    paths:
+      - "es/fiscalia-tenerife-eg95-2026/**"
+      - "en/fiscalia-tenerife-eg95-2026/**"
+      - "assets/fiscalia-eg95-*"
+      - "assets/site-pre-intervencion-highlight-20260820.js"
+      - "assets/site-pre-intervencion-highlight-before-eg95-20260823.js"
+      - "assets/data/fiscalia-tenerife-eg95-20260823.json"
+      - "archive/FISCALIA_TENERIFE_EG95_RETRIEVAL_GATE_23AUG2026.md"
+      - "archive/CORRECTION_REGISTER_FISCALIA_TENERIFE_EG95_APPEND_23AUG2026.md"
+      - "archive/MISSING_EVIDENCE_REGISTER_FISCALIA_TENERIFE_EG95_APPEND_23AUG2026.md"
+      - "archive/public_office_communications/fiscalia_tenerife/**"
+      - "sitemap-fiscalia-tenerife.xml"
+      - "robots.txt"
+      - "scripts/validate_fiscalia_tenerife_eg95.py"
+      - ".github/workflows/validate-fiscalia-tenerife-eg95.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12"
+      - name: JavaScript syntax
+        run: |
+          node --check assets/site.js
+          node --check assets/site-pre-intervencion-highlight-20260820.js
+          node --check assets/site-pre-intervencion-highlight-before-eg95-20260823.js
+          node --check assets/fiscalia-eg95-propagation-20260823.js
+      - name: Source, route and publication controls
+        run: python scripts/validate_fiscalia_tenerife_eg95.py

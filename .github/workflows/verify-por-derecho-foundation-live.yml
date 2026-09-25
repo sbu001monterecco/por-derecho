@@ -1,0 +1,74 @@
+name: Verify Por Derecho Foundation public edge
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'es/por-derecho/origen/**'
+      - 'en/por-derecho/origin/**'
+      - 'es/por-derecho/gobernanza-e-independencia/**'
+      - 'en/por-derecho/governance-and-independence/**'
+      - 'es/por-derecho/investigacion-y-formacion/**'
+      - 'en/por-derecho/research-and-training/**'
+      - 'es/por-derecho/palacete/**'
+      - 'en/por-derecho/palacete/**'
+      - 'assets/por-derecho/foundation-stage-2.css'
+      - 'assets/por-derecho/por-derecho.js'
+      - 'sitemap-por-derecho-foundation.xml'
+      - 'robots.txt'
+      - '.github/workflows/verify-por-derecho-foundation-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-por-derecho-foundation-live-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  public-edge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Wait for all public routes and controls
+        shell: bash
+        run: |
+          set -euo pipefail
+          base='https://sbu001monterecco.github.io/por-derecho'
+          declare -a checks=(
+            "$base/es/por-derecho/origen/|Nacido de un caso"
+            "$base/en/por-derecho/origin/|Born from a case"
+            "$base/es/por-derecho/gobernanza-e-independencia/|Gobernanza antes que crecimiento"
+            "$base/en/por-derecho/governance-and-independence/|Governance before growth"
+            "$base/es/por-derecho/investigacion-y-formacion/|Diseñado para encontrar dónde falla"
+            "$base/en/por-derecho/research-and-training/|Designed to find where it fails"
+            "$base/es/por-derecho/palacete/|La casa no es la Fundación"
+            "$base/en/por-derecho/palacete/|The house is not the Foundation"
+            "$base/assets/por-derecho/foundation-stage-2.css|pds2-hero"
+            "$base/assets/por-derecho/por-derecho.js|pdMaturity20260820"
+            "$base/sitemap-por-derecho-foundation.xml|gobernanza-e-independencia"
+            "$base/robots.txt|sitemap-por-derecho-foundation.xml"
+          )
+
+          for attempt in $(seq 1 40); do
+            failed=0
+            echo "Public-edge attempt $attempt/40"
+            for item in "${checks[@]}"; do
+              url="${item%%|*}"
+              marker="${item#*|}"
+              body="$(curl --fail --silent --show-error --location --max-time 20 --header 'Cache-Control: no-cache' "${url}?verify=${GITHUB_SHA}-${attempt}" || true)"
+              if ! grep -Fq "$marker" <<<"$body"; then
+                echo "not ready: $url :: $marker"
+                failed=1
+              fi
+            done
+            if [[ "$failed" -eq 0 ]]; then
+              echo 'All Por Derecho Foundation stage-two routes and controls are live.'
+              exit 0
+            fi
+            sleep 15
+          done
+
+          echo 'Public-edge verification timed out before all markers were visible.' >&2
+          exit 1

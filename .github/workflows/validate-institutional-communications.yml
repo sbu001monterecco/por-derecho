@@ -1,0 +1,79 @@
+name: Validate institutional communications continuity
+
+on:
+  pull_request:
+    paths:
+      - 'assets/data/institutional-communications-register-v1.json'
+      - 'assets/data/redsara-age-filings-register-v1.json'
+      - 'assets/data/institutional-communications-mailbox-index-v1.json'
+      - 'ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json'
+      - 'archive/evidence/mf-redsara-anexo4/MF_REDSARA_REGISTRATION_INDEX_SHORT.csv'
+      - 'archive/evidence/mf-redsara-anexo4/MF_REDSARA_UNIQUE_ATTACHMENT_INDEX.csv'
+      - 'evidence/fiscalia/2026/MF_SOURCE_ARTIFACT_REGISTER_31AUG2026.csv'
+      - 'evidence/fiscalia/2026/MF_SOURCE_ARTIFACT_REGISTER_CONTROL_31AUG2026.md'
+      - 'evidence/fiscalia/2026/MF_MAILBOX_REGAGE_CONTROL_31AUG2026.md'
+      - 'assets/data/matter-identity-registry-v1.people.json'
+      - '.github/evidence-intelligence/id-extension-policy.json'
+      - '.github/evidence-intelligence/schemas/institutional-communications.schema.json'
+      - 'scripts/reconcile_institutional_communications.py'
+      - 'scripts/build_public_mailbox_event_index.py'
+      - 'scripts/validate_institutional_communications.py'
+      - 'scripts/build_redsara_age_filings_register.py'
+      - 'scripts/validate_redsara_authority_discovery.py'
+      - 'scripts/test_reconcile_institutional_communications.py'
+      - 'assets/unitary-public-shell-20260818.js'
+      - 'assets/authority-communications-register-20260901.js'
+      - 'assets/authority-communications-register-20260901.css'
+      - 'en/red-sara-age-filings-authority-responses/**'
+      - 'es/registros-redsara-age-y-respuestas-autoridades/**'
+      - '.github/workflows/validate-institutional-communications.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/institutional-communications-register-v1.json'
+      - 'assets/data/redsara-age-filings-register-v1.json'
+      - 'assets/data/institutional-communications-mailbox-index-v1.json'
+      - 'ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json'
+      - 'archive/evidence/mf-redsara-anexo4/MF_REDSARA_REGISTRATION_INDEX_SHORT.csv'
+      - 'archive/evidence/mf-redsara-anexo4/MF_REDSARA_UNIQUE_ATTACHMENT_INDEX.csv'
+      - 'evidence/fiscalia/2026/MF_SOURCE_ARTIFACT_REGISTER_31AUG2026.csv'
+      - 'evidence/fiscalia/2026/MF_SOURCE_ARTIFACT_REGISTER_CONTROL_31AUG2026.md'
+      - 'evidence/fiscalia/2026/MF_MAILBOX_REGAGE_CONTROL_31AUG2026.md'
+      - 'assets/data/matter-identity-registry-v1.people.json'
+      - '.github/evidence-intelligence/id-extension-policy.json'
+      - '.github/evidence-intelligence/schemas/institutional-communications.schema.json'
+      - 'scripts/reconcile_institutional_communications.py'
+      - 'scripts/build_public_mailbox_event_index.py'
+      - 'scripts/validate_institutional_communications.py'
+      - 'scripts/build_redsara_age_filings_register.py'
+      - 'scripts/validate_redsara_authority_discovery.py'
+      - 'scripts/test_reconcile_institutional_communications.py'
+      - 'assets/unitary-public-shell-20260818.js'
+      - 'assets/authority-communications-register-20260901.js'
+      - 'assets/authority-communications-register-20260901.css'
+      - 'en/red-sara-age-filings-authority-responses/**'
+      - 'es/registros-redsara-age-y-respuestas-autoridades/**'
+      - '.github/workflows/validate-institutional-communications.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v4
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v5
+        with:
+          python-version: '3.12'
+      - name: Check deterministic reconciliation
+        run: python scripts/reconcile_institutional_communications.py --check
+      - name: Validate register, checkpoint, IDs and privacy boundary
+        run: python scripts/validate_institutional_communications.py
+      - name: Validate Red SARA/AGE projection and authority-search discoverability
+        run: |
+          python scripts/build_redsara_age_filings_register.py --check
+          python scripts/validate_redsara_authority_discovery.py
+      - name: Run reconciliation regression tests
+        run: python -m unittest -v scripts/test_reconcile_institutional_communications.py

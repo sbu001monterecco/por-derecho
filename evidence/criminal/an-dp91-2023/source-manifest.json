@@ -1,0 +1,401 @@
+{
+  "schema_version": "1.0.0",
+  "control_id": "PD-AN2023-FULLTEXT-LINEAGE-20260923-01",
+  "control_date": "2026-09-23",
+  "source": {
+    "title": "Anexo_1_Querella_Audiencia_Nacional_21-09-2023_y_Resoluciones_Judiciales.pdf",
+    "source_file_id": "1Bdp5W9YvAjGy-pGS5GSdyJBqF1PA0DGu",
+    "source_pdf_sha512": "2c35052af7f869dfb13ca8593552a6997ee9f1f83a09299bcee883345482ae63b7502f76d6e85873b4b80c1b745d7a3c5797762400410e33c897140b9c36c2ab",
+    "querella_date": "2023-09-21",
+    "querella_pages": 88,
+    "extracted_verbatim_chars": 217162,
+    "extraction_boundary": "Start at Página 1 de 88; stop immediately before later 'Audiencia Nacional – Sala de lo Penal' material."
+  },
+  "coverage": {
+    "pages_present": "88/88",
+    "page_sequence_complete": true,
+    "page_stats": [
+      {
+        "page": 1,
+        "chars": 1602
+      },
+      {
+        "page": 2,
+        "chars": 1447
+      },
+      {
+        "page": 3,
+        "chars": 1255
+      },
+      {
+        "page": 4,
+        "chars": 2364
+      },
+      {
+        "page": 5,
+        "chars": 2197
+      },
+      {
+        "page": 6,
+        "chars": 2761
+      },
+      {
+        "page": 7,
+        "chars": 2542
+      },
+      {
+        "page": 8,
+        "chars": 2624
+      },
+      {
+        "page": 9,
+        "chars": 2453
+      },
+      {
+        "page": 10,
+        "chars": 2797
+      },
+      {
+        "page": 11,
+        "chars": 2159
+      },
+      {
+        "page": 12,
+        "chars": 2228
+      },
+      {
+        "page": 13,
+        "chars": 2398
+      },
+      {
+        "page": 14,
+        "chars": 2695
+      },
+      {
+        "page": 15,
+        "chars": 2393
+      },
+      {
+        "page": 16,
+        "chars": 2623
+      },
+      {
+        "page": 17,
+        "chars": 2616
+      },
+      {
+        "page": 18,
+        "chars": 2797
+      },
+      {
+        "page": 19,
+        "chars": 2757
+      },
+      {
+        "page": 20,
+        "chars": 2640
+      },
+      {
+        "page": 21,
+        "chars": 2688
+      },
+      {
+        "page": 22,
+        "chars": 2436
+      },
+      {
+        "page": 23,
+        "chars": 2802
+      },
+      {
+        "page": 24,
+        "chars": 2874
+      },
+      {
+        "page": 25,
+        "chars": 2572
+      },
+      {
+        "page": 26,
+        "chars": 2712
+      },
+      {
+        "page": 27,
+        "chars": 2743
+      },
+      {
+        "page": 28,
+        "chars": 2642
+      },
+      {
+        "page": 29,
+        "chars": 2784
+      },
+      {
+        "page": 30,
+        "chars": 2893
+      },
+      {
+        "page": 31,
+        "chars": 2697
+      },
+      {
+        "page": 32,
+        "chars": 2842
+      },
+      {
+        "page": 33,
+        "chars": 2728
+      },
+      {
+        "page": 34,
+        "chars": 2743
+      },
+      {
+        "page": 35,
+        "chars": 2856
+      },
+      {
+        "page": 36,
+        "chars": 2633
+      },
+      {
+        "page": 37,
+        "chars": 2557
+      },
+      {
+        "page": 38,
+        "chars": 2365
+      },
+      {
+        "page": 39,
+        "chars": 2757
+      },
+      {
+        "page": 40,
+        "chars": 2632
+      },
+      {
+        "page": 41,
+        "chars": 2795
+      },
+      {
+        "page": 42,
+        "chars": 2780
+      },
+      {
+        "page": 43,
+        "chars": 2537
+      },
+      {
+        "page": 44,
+        "chars": 2547
+      },
+      {
+        "page": 45,
+        "chars": 2571
+      },
+      {
+        "page": 46,
+        "chars": 2724
+      },
+      {
+        "page": 47,
+        "chars": 2730
+      },
+      {
+        "page": 48,
+        "chars": 2629
+      },
+      {
+        "page": 49,
+        "chars": 2771
+      },
+      {
+        "page": 50,
+        "chars": 2348
+      },
+      {
+        "page": 51,
+        "chars": 2904
+      },
+      {
+        "page": 52,
+        "chars": 2524
+      },
+      {
+        "page": 53,
+        "chars": 2389
+      },
+      {
+        "page": 54,
+        "chars": 2163
+      },
+      {
+        "page": 55,
+        "chars": 2495
+      },
+      {
+        "page": 56,
+        "chars": 2685
+      },
+      {
+        "page": 57,
+        "chars": 2409
+      },
+      {
+        "page": 58,
+        "chars": 2432
+      },
+      {
+        "page": 59,
+        "chars": 2650
+      },
+      {
+        "page": 60,
+        "chars": 2463
+      },
+      {
+        "page": 61,
+        "chars": 2769
+      },
+      {
+        "page": 62,
+        "chars": 2720
+      },
+      {
+        "page": 63,
+        "chars": 2512
+      },
+      {
+        "page": 64,
+        "chars": 2764
+      },
+      {
+        "page": 65,
+        "chars": 2638
+      },
+      {
+        "page": 66,
+        "chars": 2162
+      },
+      {
+        "page": 67,
+        "chars": 2580
+      },
+      {
+        "page": 68,
+        "chars": 2360
+      },
+      {
+        "page": 69,
+        "chars": 2660
+      },
+      {
+        "page": 70,
+        "chars": 2168
+      },
+      {
+        "page": 71,
+        "chars": 2324
+      },
+      {
+        "page": 72,
+        "chars": 2623
+      },
+      {
+        "page": 73,
+        "chars": 2601
+      },
+      {
+        "page": 74,
+        "chars": 2536
+      },
+      {
+        "page": 75,
+        "chars": 2549
+      },
+      {
+        "page": 76,
+        "chars": 2114
+      },
+      {
+        "page": 77,
+        "chars": 2433
+      },
+      {
+        "page": 78,
+        "chars": 2536
+      },
+      {
+        "page": 79,
+        "chars": 2602
+      },
+      {
+        "page": 80,
+        "chars": 2312
+      },
+      {
+        "page": 81,
+        "chars": 2427
+      },
+      {
+        "page": 82,
+        "chars": 1330
+      },
+      {
+        "page": 83,
+        "chars": 1657
+      },
+      {
+        "page": 84,
+        "chars": 1915
+      },
+      {
+        "page": 85,
+        "chars": 2024
+      },
+      {
+        "page": 86,
+        "chars": 2153
+      },
+      {
+        "page": 87,
+        "chars": 2116
+      },
+      {
+        "page": 88,
+        "chars": 727
+      }
+    ],
+    "anchors": {
+      "page_1": "AL JUZGADO CENTRAL DE INSTRUCCIÓN DE LA AUDIENCIA",
+      "page_88": "TERCER OTROSI DIGO",
+      "final_counsel_anchor": "Doña Estefanía Sixto Seijas"
+    }
+  },
+  "repositories": {
+    "gitlab_private": {
+      "repository": "por-derecho/por-derecho-setup-or-gitlab-setup",
+      "verbatim_master_path": "internal/evidence/an-dp91-2023/querella-21sep2023-verbatim.txt",
+      "status": "VERBATIM_88_OF_88_PRIVATE"
+    },
+    "public_safe_mirror": {
+      "gitlab_path": "evidence/criminal/an-dp91-2023/full-text/querella-21sep2023-full-public-transcription.md",
+      "github_path": "evidence/criminal/an-dp91-2023/full-text/querella-21sep2023-full-public-transcription.md",
+      "status": "PAGE_COMPLETE_88_OF_88_WITH_PRIVACY_REDACTIONS"
+    }
+  },
+  "lineage": {
+    "canonical_crosswalk": "evidence/criminal/an-dp91-2023/AN2023_REF21_REF22_REF24_LINEAGE.md",
+    "machine_graph": "data/an2023-ref21-ref22-ref24-lineage-20260923.json",
+    "june_2026_manifest": "evidence/judicial/june-2026-three-track/source-manifest.json"
+  },
+  "boundaries": [
+    "The 2023 querella is an upstream historical allegation/source map; it is not itself proof of the allegations.",
+    "Ref21, Ref22 and Ref24 are separate June 2026 intake references and must not be collapsed into one proceeding.",
+    "Daily references 21/22/24 are intake locators, not DP or NIG numbers.",
+    "Shared evidence does not transfer knowledge, intent, causation or criminal responsibility between actors or tracks.",
+    "The private verbatim master must never be mirrored to public GitHub or GitLab Pages."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "control_id": "PD-AWESWELL-CH-20260827-01",
+  "status": "PREPARED_FOR_AUTHORISED_PUBLICATION",
+  "base_sha": "618cb59e47e068d806d5daa714b8659ef7988ee8",
+  "date": "2026-08-27",
+  "routes": [
+    "/en/aweswell-limited/",
+    "/es/aweswell-limited/"
+  ],
+  "files": [
+    "en/aweswell-limited/index.html",
+    "es/aweswell-limited/index.html",
+    "assets/aweswell/aweswell-filed-accounts-20260827.css",
+    "assets/aweswell/aweswell-limited-filed-accounts-2025-public-data.json",
+    "archive/AWESWELL_COMPANIES_HOUSE_FILED_ACCOUNTS_PUBLICATION_CONTROL_27AUG2026.md",
+    "archive/AWESWELL_COMPANIES_HOUSE_FILED_ACCOUNTS_PUBLICATION_MANIFEST_27AUG2026.json"
+  ],
+  "source": {
+    "type": "user-supplied public filing copy",
+    "pages": 69,
+    "sha256": "5cc4f7564f05e836c8a42bcd830f09930cc41dce83a447aac120ac2657fc6dea"
+  },
+  "invariants": [
+    "Aweswell Limited canonical name enforced",
+    "ES/EN proposition parity",
+    "Companies House facts separated from directors' statements",
+    "No unnecessary address publication",
+    "No adjudicated-value inference"
+  ]
+}

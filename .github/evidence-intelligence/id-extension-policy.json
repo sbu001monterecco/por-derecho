@@ -1,0 +1,38 @@
+{
+  "schema": "por-derecho.evidence-intelligence-id-policy.v1",
+  "control_date": "2026-08-25",
+  "authoritative_identity_registry": {
+    "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+    "root": "assets/data/matter-identity-registry-v1.json",
+    "parts": [
+      "assets/data/matter-identity-registry-v1.people.json",
+      "assets/data/matter-identity-registry-v1.organisations.json",
+      "assets/data/matter-identity-registry-v1.structures.json",
+      "assets/data/matter-identity-registry-v1.institutions.json",
+      "assets/data/matter-identity-registry-v1.proceedings.json"
+    ],
+    "identity_pattern": "^PD-SP-(P|O|S|I|R)-[0-9]{4}$"
+  },
+  "extensions": {
+    "SOURCE": "^PD-SP-SRC-[0-9]{4}$",
+    "DOCUMENT": "^PD-SP-DOC-[0-9]{4}$",
+    "MATTER": "^PD-SP-MAT-[0-9]{4}$",
+    "EVENT": "^PD-SP-EVT-[0-9]{4}$",
+    "PROPOSITION": "^PD-SP-PROP-[0-9]{4}$",
+    "ASSET": "^PD-SP-ASSET-[0-9]{4}$",
+    "RIGHT": "^PD-SP-RIGHT-[0-9]{4}$",
+    "RECOVERY_OBJECT": "^PD-SP-REC-[0-9]{4}$",
+    "CITATION": "^PD-SP-CIT-[0-9]{4}$",
+    "EVALUATION": "^PD-SP-EVAL-[0-9]{4}$",
+    "CUSTODY_MANIFEST": "^PD-SP-CUST-[0-9]{4}$",
+    "RETRIEVAL_RUN": "^PD-SP-RUN-[0-9]{4}$"
+  },
+  "rules": [
+    "Existing PD-SP-P/O/S/I/R identities are authoritative and immutable.",
+    "Extension IDs complement the identity registry and never replace its actor or proceeding IDs.",
+    "Legacy IDs remain valid aliases or crosswalk values; they are not silently rewritten.",
+    "PD-ENT-* is prohibited for new evidence-intelligence objects.",
+    "A shared identity ID does not transfer knowledge, intent, control, benefit, responsibility or liability.",
+    "Private provider identifiers and vault locators never become public identity IDs."
+  ]
+}

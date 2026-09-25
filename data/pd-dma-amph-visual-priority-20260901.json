@@ -1,0 +1,46 @@
+{
+  "schema": "por-derecho.pd-dma.visual-priority.v1",
+  "control_id": "PD-DMA-AMHP-VISUAL-PRIORITY-20260901",
+  "control_date": "2026-09-01",
+  "family_id": "PD-DMA-FAM-AMHP-001",
+  "status": "ACTIVE_USER_LOCKED_CREATIVE_DIRECTION",
+  "instruction": "Future hero/poster treatments must be materially closer to legacy visual concepts 1 and 2 than to the third/data-explainer treatment, while retaining the corrected factual and role-governance boundaries.",
+  "preferred_blend": {
+    "legacy_concept_1_high_contrast_poster": 0.60,
+    "legacy_concept_2_vintage_resort_clearance": 0.30,
+    "third_data_explainer_language": 0.10
+  },
+  "dominant_characteristics": [
+    "oversized headline typography",
+    "high-contrast black-yellow-red palette",
+    "busy image-led poster composition",
+    "hotel/resort platform imagery",
+    "stamps labels badges and offer-board motifs",
+    "vintage travel/clearance parody energy",
+    "strong thumbnail stop-scroll effect",
+    "obvious satire/non-advertisement cue"
+  ],
+  "third_version_role": "SUPPORTING_INFORMATION_LAYER_ONLY",
+  "third_version_allowed_uses": [
+    "compact metric comparison inset",
+    "source box",
+    "small side panel",
+    "footer clarification",
+    "fact-checking companion"
+  ],
+  "avoid": [
+    "clean corporate dashboard as primary visual language",
+    "accounting-report aesthetic",
+    "large empty whitespace",
+    "charts or tables dominating hotel/platform imagery",
+    "mechanically adding managed-hotel sales to manager turnover",
+    "reusing legacy factual errors or unsupported portraits roles ownership or agency claims"
+  ],
+  "metric_inset": {
+    "left": "+100 M€ VENTAS HOTELERAS BAJO GESTIÓN",
+    "operator": "≠",
+    "right": "44 M€ / ~50 M€ / 60 M€ FACTURACIÓN PROPIA COMUNICADA DE LA GESTORA"
+  },
+  "publication_boundary": "Visual closeness to legacy concepts does not revive their non-canonical factual content. Names, hotel roster, ownership, agency, portraits and role labels remain governed by the current registers and source-graded relationship taxonomy.",
+  "human_control": "communications/creative/PD-DMA-AMHP-VARIANTS-COPY-DECK-01SEP2026.md"
+}

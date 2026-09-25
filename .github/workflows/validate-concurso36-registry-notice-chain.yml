@@ -1,0 +1,80 @@
+name: Validate Concurso 36/2012 Registry notice chain
+
+on:
+  pull_request:
+    paths:
+      - 'CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md'
+      - 'archive/CONCURSO36_REGISTRY_NOTICE_OBREM_CHAIN_31AUG2026.md'
+      - 'assets/concurso36-court-record-reconstruction.js'
+      - 'assets/data/concurso36-court-record-reconstruction-registry-notice-20260831.json'
+      - 'assets/data/legal-representation-ac-causation-v1.json'
+      - 'en/2018-loyal-protection-estate/**'
+      - 'en/cuatrecasas-dp748-civil-action/**'
+      - 'en/cuatrecasas-sun-park/**'
+      - 'en/insolvency-36-2012-court-record/**'
+      - 'en/insolvency-36-2012-insolvency-administrator/**'
+      - 'en/insolvency-36-2012-registry-ob-rem-notice/**'
+      - 'en/ric-private-equity-sun-park/**'
+      - 'es/2018-proteccion-leal-masa/**'
+      - 'es/concurso-36-2012-administrador-concursal/**'
+      - 'es/concurso-36-2012-aviso-registro-ob-rem/**'
+      - 'es/concurso-36-2012-registro-procesal/**'
+      - 'es/cuatrecasas-dp748-accion-civil/**'
+      - 'es/cuatrecasas-sun-park/**'
+      - 'es/ric-private-equity-sun-park/**'
+      - 'publication-manifests/concurso36-registry-notice-obrem-20260831.json'
+      - 'scripts/validate_concurso36_registry_notice_chain.py'
+      - 'sitemap.xml'
+      - 'sitemap-concurso36-court-orders.xml'
+      - '.github/workflows/validate-concurso36-registry-notice-chain.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md'
+      - 'archive/CONCURSO36_REGISTRY_NOTICE_OBREM_CHAIN_31AUG2026.md'
+      - 'assets/concurso36-court-record-reconstruction.js'
+      - 'assets/data/concurso36-court-record-reconstruction-registry-notice-20260831.json'
+      - 'assets/data/legal-representation-ac-causation-v1.json'
+      - 'en/2018-loyal-protection-estate/**'
+      - 'en/cuatrecasas-dp748-civil-action/**'
+      - 'en/cuatrecasas-sun-park/**'
+      - 'en/insolvency-36-2012-court-record/**'
+      - 'en/insolvency-36-2012-insolvency-administrator/**'
+      - 'en/insolvency-36-2012-registry-ob-rem-notice/**'
+      - 'en/ric-private-equity-sun-park/**'
+      - 'es/2018-proteccion-leal-masa/**'
+      - 'es/concurso-36-2012-administrador-concursal/**'
+      - 'es/concurso-36-2012-aviso-registro-ob-rem/**'
+      - 'es/concurso-36-2012-registro-procesal/**'
+      - 'es/cuatrecasas-dp748-accion-civil/**'
+      - 'es/cuatrecasas-sun-park/**'
+      - 'es/ric-private-equity-sun-park/**'
+      - 'publication-manifests/concurso36-registry-notice-obrem-20260831.json'
+      - 'scripts/validate_concurso36_registry_notice_chain.py'
+      - 'sitemap.xml'
+      - 'sitemap-concurso36-court-orders.xml'
+      - '.github/workflows/validate-concurso36-registry-notice-chain.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: concurso36-registry-notice-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Validate Registry notice and non-convalidation chain
+        run: |
+          python -B -m py_compile scripts/validate_concurso36_registry_notice_chain.py
+          python -B scripts/validate_concurso36_registry_notice_chain.py

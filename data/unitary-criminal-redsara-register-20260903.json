@@ -1,0 +1,37 @@
+{
+  "control": "PD-REDSARA-MF-REGISTER-20260903-01",
+  "generated_from": "ANEXO 4 RedSARA Ministerio Fiscal Comunicaciones Registradas.pdf",
+  "source_pages": 154,
+  "counts": {
+    "registered_communications": 75,
+    "attachment_hash_records": 125,
+    "communications_with_no_hashed_attachment": 15,
+    "verified_current_conversation_pdfs_by_exact_sha512": 9
+  },
+  "public_safety": {
+    "omitted": ["NIE/DNI", "street address", "email address", "telephone", "free-text Expone/Solicita"],
+    "scope": "registration and attachment provenance only",
+    "note": "This derivative omits personal identifiers and free-text narrative. Registration metadata, subjects and filenames are reproduced only as provenance; they do not prove the truth, legal characterisation, adoption or merits of any allegation."
+  },
+  "verified_current_uploads": [
+    {"uploaded_filename":"AMPLIACION_DENUNCIA_INSTRUMENTALIZACION_250126 (3).PDF","sha512":"4e63386aac84d72e8a0670a8645498ec56fb5a540d103461019c2ff299d2563e162e718262363b5093b178cad982534c48b934b7000ec55e70d5d4107b2bfc48","matches":[{"regage":"REGAGE26e00007274391","presented_at":"25/01/2026 19:56:07","registered_at":"25/01/2026 19:56:25","recipient":"J00001657  -  Fiscalia Provincial de Las Palmas","subject":"Ampliación de denuncia penal – investigación unitaria  SunPark /Concurso 36/2012","registered_filename":"AMPLIACION_DENUNCIA_INSTRUMENTALIZACION_250126.PDF"}]},
+    {"uploaded_filename":"DENUNCIA_PENAL_OB_REM_DESVINCULACION_Y_USO_FONDOS_LPB_AWESWELL_19ENE2026 (3).PDF","sha512":"300caa962e44bb9968d7b6d846745afa1fa84b25a487c035180cf82e2b68eea72fb55b2eda22f0cb090cb02952aa1656d88da2f44b69d0ef0f0896a8d63dd1c1","matches":[{"regage":"REGAGE26e00004639835","presented_at":"19/01/2026 22:17:34","registered_at":"19/01/2026 22:18:01","recipient":"J00001657  -  Fiscalia Provincial de Las Palmas","subject":"Denuncia penal – OB REM, uso de fondos no convalidados y opacidad concursal","registered_filename":"DENUNCIA_PENAL_OB_REM_DESVINCULACION_Y_USO_FONDOS_LPB_AWESWELL_19ENE2026.PDF"}]},
+    {"uploaded_filename":"Denuncia Concurso (acciones y omisiones AC) 31ENERO2026.pdf","sha512":"204f8c9845f1c59fde16ebfd6b827d9a894d897ed13dfde40f9429a4d6800dea6dca0560b2533aa0f93f2eb2f6e6ea469adba7fdbcbf2e4ba3b1c1893e02d8e0","matches":[{"regage":"REGAGE26e00009989396","presented_at":"31/01/2026 21:19:32","registered_at":"31/01/2026 21:19:35","recipient":"J00001657  -  Fiscalia Provincial de Las Palmas","subject":"Denuncia penal – Actuaciones y omisiones AC –Concurso 36/2012 (Mercantil 1 LPGC)","registered_filename":"Denuncia Concurso (acciones y omisiones AC) 31ENERO2026.pdf"}]},
+    {"uploaded_filename":"DENUNCIA_AUTONOMA_SUN_PARK_Instrumentalizacion_Unidades_2026-01-24 (2).PDF","sha512":"a7c858801192cf03ba0040f70e771bf9c1903a17b9a6a8fabf48186fea0f4c4f0cee405d3a27739c725518a19903fa3db8a3f6d7c8ca05716ba7aa4ae985bcbd","matches":[{"regage":"REGAGE26e00006889281","presented_at":"24/01/2026 22:07:07","registered_at":"24/01/2026 22:07:27","recipient":"J00001657  -  Fiscalia Provincial de Las Palmas","subject":"Denuncia penal autónoma – instrumentalización unidades hoteleras SUN PARK","registered_filename":"DENUNCIA_AUTONOMA_SUN_PARK_Instrumentalizacion_Unidades_2026-01-24.PDF"}]},
+    {"uploaded_filename":"Denuncia penal obstrucción a la justicia sabotaje de salida concursal (5).PDF","sha512":"27d61c9b383a2885b8511820c83dddb1d06f7e3e7d00363cdf2e87c55bb78e65de7c3e8e0b97014a057da35684434a3366a26f7d182268d8e39c96d1cec5e536","matches":[{"regage":"REGAGE26e00004212180","presented_at":"18/01/2026 18:47:32","registered_at":"18/01/2026 18:47:45","recipient":"J00001657  -  Fiscalia Provincial de Las Palmas","subject":"Denuncia penal por obstrucción a la justicia y sabotaje concursal (36/2012)","registered_filename":"Denuncia penal obstrucción a la justicia sabotaje de salida concursal.PDF"}]},
+    {"uploaded_filename":"Denuncia_Penal_Utilizacion_Extraprocesal_Auto_No_Firme (2).PDF","sha512":"1d1d096f241507dd55cbb00b117548f8962a2cc67ebec848bf606816943baf00db0d8a57acccf18b5c0d2fe5c7d2c5b1ae2d11ad398ac3cf443332de2814fad1","matches":[{"regage":"REGAGE26e00005031882","presented_at":"20/01/2026 23:05:13","registered_at":"20/01/2026 23:05:34","recipient":"J00001657  -  Fiscalia Provincial de Las Palmas","subject":"Acompaña denuncia penal – utilización extraprocesal de auto no firme","registered_filename":"Denuncia_Penal_Utilizacion_Extraprocesal_Auto_No_Firme.PDF"}]},
+    {"uploaded_filename":"DENUNCIA_PENAL_AUTONOMA_EJECUCION_PLAN_LIQUIDACION_LPB_2026-01-20 (1).PDF","sha512":"4f706becde9d9d802595f1fea106f921c1732aa7586bf94ad2389deaf0d719ea1d2098c56cf3ec133c106761ea944ee45af11f9983f9e002725285ed03e74af5","matches":[{"regage":"REGAGE26e00005026215","presented_at":"20/01/2026 22:24:26","registered_at":"20/01/2026 22:24:29","recipient":"J00001657  -  Fiscalia Provincial de Las Palmas","subject":"Denuncia penal por ejecución material divergente del plan de liquidación (LPB)","registered_filename":"DENUNCIA_PENAL_AUTONOMA_EJECUCION_PLAN_LIQUIDACION_LPB_2026-01-20.PDF"}]},
+    {"uploaded_filename":"DENUNCIA_PENAL_AUTONOMA_AC_GESTION_FONDOS_LPB_2018_2026.PDF","sha512":"680e04e09beb9dc7896fbf9287f5e97b5cc93ae92d85b50f9ba72e9c750863c86e2f09d45499f8acab28e340dd6a4a7cdce099f9a38d0d107df426e2af043507","matches":[{"regage":"REGAGE26e00006380826","presented_at":"23/01/2026 22:48:10","registered_at":"23/01/2026 22:48:30","recipient":"J00001657  -  Fiscalia Provincial de Las Palmas","subject":"DENUNCIA PENAL AUTÓNOMA – Hechos económicos en Concurso 36/2012","registered_filename":"DENUNCIA_PENAL_AUTONOMA_AC_GESTION_FONDOS_LPB_2018_2026.PDF"}]},
+    {"uploaded_filename":"AMPLIACION DE DENUNCIA (INDICIOS E IMPULSO INVESTI_260202 (1).pdf","sha512":"83652b89815156b2777bc7d461a0df3d5a56071ee5cc94bf01f43c961f303c5b1204aaae687fb86c574ab97ea2af1a768fb99ea2df270502b108c74486971b8c","matches":[{"regage":"REGAGE26e00010347207","presented_at":"02/02/2026 12:14:15","registered_at":"02/02/2026 12:14:38","recipient":"J00001657  -  Fiscalia Provincial de Las Palmas","subject":"Ampliación de denuncia: indicios de coordinación delictiva y fraude inversor","registered_filename":"AMPLIACION DE DENUNCIA (INDICIOS E IMPULSO INVESTI_260202.pdf"}]}
+  ],
+  "generated_from_sha512": "0e86b7af202e25f2a983d95d2a1fc12c1cd0567ad4ab18ace0d5b8e1fec85c0d73f1370454d1537de53530fdfa8825152f157678d9a89a55f228b5c06faac7b9",
+  "verification_method": "Full 154-page text parse + exact SHA-512 comparison of current conversation PDF bytes against registered attachment hashes.",
+  "record_shards": [
+    {"file":"unitary-criminal-redsara-register-20260903-part-01.json","records":15,"from_regage":"REGAGE26e00020919686","to_regage":"REGAGE26e00010347207"},
+    {"file":"unitary-criminal-redsara-register-20260903-part-02.json","records":15,"from_regage":"REGAGE26e00010093473","to_regage":"REGAGE26e00005045671"},
+    {"file":"unitary-criminal-redsara-register-20260903-part-03.json","records":15,"from_regage":"REGAGE26e00005031882","to_regage":"REGAGE26e00003654762"},
+    {"file":"unitary-criminal-redsara-register-20260903-part-04.json","records":15,"from_regage":"REGAGE26e00003639389","to_regage":"REGAGE25e00110747384"},
+    {"file":"unitary-criminal-redsara-register-20260903-part-05.json","records":15,"from_regage":"REGAGE25e00110746869","to_regage":"REGAGE25e00109044837"}
+  ],
+  "record_loading_note": "Load all files listed in record_shards and concatenate their records arrays to reconstruct the 75-record public-safe ledger."
+}

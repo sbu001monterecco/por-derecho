@@ -1,0 +1,36 @@
+name: Validate EG745 Fiscalía interconnectivity
+on:
+  pull_request:
+    paths:
+      - 'assets/eg745-fiscalia-interconnectivity-20260918.js'
+      - 'assets/data/eg745-fiscalia-interconnectivity-20260918.json'
+      - 'archive/EG745_FISCALIA_INTERCONNECTIVITY_EXHAUSTION_CONTROL_18SEP2026.md'
+      - 'es/eg-745-respuesta-inminente-matriz-fiscalia/**'
+      - 'en/eg-745-imminent-response-prosecution-matrix/**'
+      - 'es/fiscalia-inspeccion-exp-gub-745-2026/**'
+      - 'en/public-prosecution-inspection-exp-gub-745-2026/**'
+      - 'es/carta-abierta-ministerio-fiscal/**'
+      - 'en/open-letter-public-prosecution-service/**'
+      - 'es/dp-1901-2026-auto-14-septiembre-2026/**'
+      - 'en/dp-1901-2026-order-14-september-2026/**'
+      - 'es/fiscalia-dip-2-2026/**'
+      - 'en/fiscalia-dip-2-2026/**'
+      - 'es/calificacion-concurso-36-2012-vidas-paralelas/**'
+      - 'en/insolvency-classification-parallel-lives/**'
+      - 'es/ricardo-de-mosteyrin-sampalo/**'
+      - 'en/ricardo-de-mosteyrin-sampalo/**'
+      - 'scripts/validate_eg745_fiscalia_interconnectivity.py'
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/validate_eg745_fiscalia_interconnectivity.py

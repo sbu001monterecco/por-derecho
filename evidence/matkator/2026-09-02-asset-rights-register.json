@@ -1,0 +1,184 @@
+{
+  "id": "PD-REG-MATKATOR-ASSETS-RIGHTS-20260902",
+  "title_en": "Matkator asset and rights register",
+  "title_es": "Registro de activos y derechos de Matkator",
+  "status": "controlled_public_register",
+  "updated": "2026-09-02",
+  "entity": "Matkator, S.L.",
+  "purpose": "Finite, source-led map of Matkator property and patrimonial-right classes relevant to ETJ 163/2020, the Cuatrecasas fee-enforcement analysis and the indirect Aweswell gateway. This is not a balance sheet, asset declaration or statement that every listed class is attachable.",
+  "status_vocabulary": {
+    "ownership_status": [
+      "confirmed_historical",
+      "confirmed_current_proceeding_context",
+      "claimed",
+      "disputed",
+      "unknown",
+      "excluded_not_matkator"
+    ],
+    "exposure_status": [
+      "current_execution_object",
+      "potentially_attachable_subject_to_legal_and_title_proof",
+      "procedural_right_only_patrimonial_character_unproved",
+      "not_assessed",
+      "excluded_not_matkator",
+      "unknown"
+    ]
+  },
+  "assets_and_rights": [
+    {
+      "id": "MAT-ASSET-8584",
+      "class": "real_property",
+      "identity": "Finca registral 8,584 / historical apartment 758",
+      "registry_description_minimized": "Sun Park apartment 758, type C, block 14, second floor, approximately 30 m² built.",
+      "source_date": "2017-04-18",
+      "source": "Registro de la Propiedad de Tías nota simple preserved in the 13 May 2018 Cuatrecasas email chain as 'Matkator 8584.pdf'.",
+      "ownership_status": "confirmed_historical",
+      "ownership_detail": "The 18 April 2017 registry note records Matkator, S.L. as holder of 100% full ownership by purchase dated 26 June 2015.",
+      "historical_encumbrance_status": "No substantive mortgage was shown in the 2017 note; a tax-affection entry was shown.",
+      "current_context": "The controlled ETJ 163/2020 record identifies finca 8,584 as the present single auction/adjudication object and Matkator as executed debtor.",
+      "exposure_status": "current_execution_object",
+      "hotel_relationship": "Property is within the Sun Park complex. Any claim that it is operationally indispensable or the 'heart' of the hotel requires separate technical/layout evidence.",
+      "open_proof": [
+        "Fresh registry title/charges after the latest ETJ acts",
+        "Current adjudication/cession status",
+        "Current enforceable balance after any realization",
+        "Technical hotel plan showing present operational use and dependency"
+      ]
+    },
+    {
+      "id": "MAT-ASSET-8588",
+      "class": "real_property",
+      "identity": "Finca registral 8,588 / historical apartment 510",
+      "registry_description_minimized": "Sun Park apartment 510, type D, block 15, ground floor, approximately 35 m² built.",
+      "source_date": "2017-04-18",
+      "source": "Registro de la Propiedad de Tías nota simple preserved in the 13 May 2018 Cuatrecasas email chain as 'Matkartor 8588.pdf'.",
+      "ownership_status": "confirmed_historical",
+      "ownership_detail": "The 18 April 2017 registry note records Matkator, S.L. as holder of 100% full ownership by purchase dated 26 June 2015.",
+      "historical_encumbrance_status": "The 2017 note records a mortgage in favor of Caja Insular de Ahorros de Canarias with principal stated as EUR 53,926.12, plus a tax-affection entry.",
+      "current_context": "A 25 May 2020 client email described Matkator as holding 'a couple of properties' at Sun Park and stated a belief that the recorded mortgage had already been repaid. That belief is not a registry discharge and is not treated as current title evidence.",
+      "exposure_status": "potentially_attachable_subject_to_legal_and_title_proof",
+      "hotel_relationship": "Property is within the Sun Park complex. It is not identified as a current ETJ 163/2020 auction object in the controlled record.",
+      "open_proof": [
+        "Fresh registry note confirming current ownership and charges",
+        "Formal mortgage cancellation/discharge if applicable",
+        "Any existing attachment, enforcement or transfer affecting the finca",
+        "Technical hotel plan showing present operational use"
+      ]
+    },
+    {
+      "id": "MAT-ASSET-OTHER-REAL-ESTATE",
+      "class": "real_property_class",
+      "identity": "Other Matkator real estate",
+      "ownership_status": "unknown",
+      "source": "No third source-locked Matkator finca has been identified in the present controlled scan. The 25 May 2020 email's 'couple of properties' description is consistent with the two registry notes then attached, but does not prove that the portfolio was exhaustive in 2020 or remains exhaustive in 2026.",
+      "exposure_status": "unknown",
+      "open_proof": [
+        "Current Matkator property-index search",
+        "Current annual accounts / fixed-asset ledger",
+        "Land Registry searches in relevant districts"
+      ]
+    },
+    {
+      "id": "MAT-ASSET-CASH-ACCOUNTS",
+      "class": "cash_and_bank_accounts",
+      "identity": "Matkator cash / bank-account balances",
+      "ownership_status": "unknown",
+      "source": "No current Matkator bank-account balance or cash schedule has been source-locked in this register.",
+      "exposure_status": "potentially_attachable_subject_to_legal_and_title_proof",
+      "boundary": "This is an asset class recognized in enforcement generally, not evidence that a particular Matkator account exists or has a positive balance.",
+      "open_proof": [
+        "Current bank account schedule",
+        "Bank statements / accounting ledger",
+        "Existing court attachments or restrictions"
+      ]
+    },
+    {
+      "id": "MAT-ASSET-RECEIVABLES-INCOME",
+      "class": "receivables_income_rents",
+      "identity": "Matkator receivables, rents, fruits or income rights",
+      "ownership_status": "unknown",
+      "source": "The 2019 group financing record refers to lease/receivables within the wider Aweswell rescue package but does not allocate those rights to Matkator. No current entity-specific Matkator receivables schedule has been source-locked here.",
+      "exposure_status": "not_assessed",
+      "boundary": "Group-level financing rights must not be converted into Matkator assets without entity-specific title/accounting proof.",
+      "open_proof": [
+        "Matkator debtor ledger",
+        "Lease/licence agreements naming Matkator",
+        "Invoices and receivables ageing",
+        "Current income or rent streams"
+      ]
+    },
+    {
+      "id": "MAT-RIGHT-HNT-2025",
+      "class": "litigation_procedural_right",
+      "identity": "Matkator v HNT proceedings / preliminary and appellate procedural rights",
+      "ownership_status": "confirmed_current_proceeding_context",
+      "source": "2025 counsel/email record identifies Matkator proceedings against HNT, including preliminary-diligence and appeal workstreams.",
+      "exposure_status": "procedural_right_only_patrimonial_character_unproved",
+      "boundary": "Existence of proceedings does not establish a quantified damages receivable, restitution asset, enforceable judgment or attachable patrimonial claim. Monetary/patrimonial character must be proved from the pleadings and relief sought.",
+      "open_proof": [
+        "Operative pleadings and prayer for relief",
+        "Whether damages, restitution, ownership or monetary relief is claimed",
+        "Any quantified or contingent accounting recognition",
+        "Attachability analysis only after the patrimonial right is identified"
+      ]
+    }
+  ],
+  "explicit_exclusions": [
+    {
+      "id": "EXCL-LPB-DAMAGES-MINORITIES",
+      "identity": "LPB claim for damages against minorities described in the 11 June 2019 financing email",
+      "reason": "The contemporaneous financing record attributes that claim to LPB. It must not be counted as a Matkator asset without a later transfer or separate Matkator title.",
+      "exposure_status": "excluded_not_matkator"
+    },
+    {
+      "id": "EXCL-AWESWELL-SHARES-LEASE-RECEIVABLES",
+      "identity": "Aweswell/group share pledges, lease and receivables discussed in the 2019 rescue financing package",
+      "reason": "The financing architecture is group-level and does not establish Matkator ownership of those rights. Aweswell's shares in Matkator are an Aweswell asset, not a Matkator asset.",
+      "exposure_status": "excluded_not_matkator"
+    },
+    {
+      "id": "EXCL-LPB-CONCURSO-ESTATE",
+      "identity": "LPB insolvency-estate assets and claims",
+      "reason": "LPB is a separate legal person and debtor in Concurso 36/2012. Its estate is not Matkator's patrimony merely because both sit within the Aweswell group perimeter.",
+      "exposure_status": "excluded_not_matkator"
+    }
+  ],
+  "corporate_boundary": {
+    "parent": "Aweswell Limited",
+    "relationship": "The 15 April 2013 Matkator incorporation deed records Aweswell Limited as sole shareholder; later 2019 Cuatrecasas correspondence records the adviser's understanding that Aweswell owned 100% of Matkator and Luchy.",
+    "effect": "Loss of Matkator assets can reduce the value and strategic utility of Aweswell's subsidiary and hotel-recovery position, but a Matkator execution does not automatically permit seizure of Aweswell's separate assets."
+  },
+  "cross_record_connections": [
+    "PD-EV-CUAT-MANDATE-INVERSION-20260902",
+    "PD-PUB-CUAT-LINKEDIN-WHY-STEP4-20260902",
+    "ETJ 163/2020",
+    "Cambiario 1048/2019",
+    "DP 748/2026",
+    "Concurso 36/2012"
+  ],
+  "hard_boundaries": [
+    "Historical registry notes dated 18 April 2017 establish historical title/charges at that date; they are not a substitute for a fresh 2026 registry certificate.",
+    "Finca 8,584 is the only current ETJ auction/adjudication object source-locked in this register. Finca 8,588 is not presented as currently auctioned.",
+    "The 25 May 2020 statement that the 8,588 mortgage was believed repaid is a client-side belief, not proof of cancellation.",
+    "The 11 June 2019 phrase 'free assets owned by Markator' is not mapped automatically to either finca number because the email does not identify the fincas and the 2017 note for 8,588 showed a mortgage.",
+    "Not every procedural right or litigation position is a patrimonial asset capable of attachment.",
+    "No asset of LPB, Aweswell or another group company is treated as Matkator property merely because the companies are related.",
+    "This register does not establish the amount currently outstanding in ETJ 163/2020 or that further enforcement will in fact occur."
+  ],
+  "priority_production": [
+    "Fresh registry notes/certificates for fincas 8,584 and 8,588",
+    "Current ETJ 163/2020 balance, adjudication and any cession status",
+    "Matkator current annual accounts, trial balance and fixed-asset ledger",
+    "Matkator bank account and receivables schedules",
+    "Operative Matkator v HNT pleadings and relief sought",
+    "Hotel plan/use evidence locating apartments 758 and 510 in the present operating configuration"
+  ],
+  "public_routes": {
+    "en": "/por-derecho/en/matkator-asset-rights-register/",
+    "es": "/por-derecho/es/registro-activos-derechos-matkator/",
+    "cuatrecasas_bridge_en": "/por-derecho/en/cuatrecasas-mandate-ric-continuity/#mandate-inversion",
+    "cuatrecasas_bridge_es": "/por-derecho/es/cuatrecasas-mandato-continuidad-ric/#inversion-mandato",
+    "etj_en": "/por-derecho/en/cuatrecasas-dp748-civil-action/",
+    "etj_es": "/por-derecho/es/cuatrecasas-dp748-accion-civil/"
+  }
+}

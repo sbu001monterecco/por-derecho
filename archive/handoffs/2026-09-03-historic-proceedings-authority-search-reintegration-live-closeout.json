@@ -1,0 +1,269 @@
+{
+  "schema": "por-derecho.workspace-handoff.v1",
+  "handoff_id": "PD-WCH-20260903-AUTH-SEARCH-REINT-001",
+  "workspace_id": "PD-WS-20260902-0001",
+  "date": "2026-09-03",
+  "status": "DELETION_SAFE_WITH_OPEN_WORK",
+  "repository": "sbu001monterecco/por-derecho",
+  "release_state": "MERGED_DEPLOYED_LIVE_BROWSER_VERIFIED",
+  "production_release": {
+    "pr": 1373,
+    "reviewed_head_sha": "687c0a32a217f1db32a3e7e3be5e8650b677570a",
+    "merge_sha": "efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c",
+    "merge_tree_sha": "1e2295ccc94d3e020b2ef0db59924d439de2aa93",
+    "reviewed_head_tree_equals_merge_tree": true,
+    "pages_run_id": 33697357002,
+    "pages_run_number": 1420,
+    "pages_head_sha": "efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c",
+    "pages_conclusion": "success",
+    "reintegration_validation_run_id": 33696673412,
+    "idempotent_head_sha": "687c0a32a217f1db32a3e7e3be5e8650b677570a",
+    "idempotence_result": "NO_CONTROLLED_CHANGES"
+  },
+  "live_browser_verification": {
+    "branch": "verify/historic-proceedings-live-browser-20260903",
+    "branch_policy": "DISPOSABLE_DO_NOT_MERGE",
+    "run_id": 33700567926,
+    "run_number": 1,
+    "run_head_sha": "fcf03556f89c7cf6fe541efed381471f5ac360ca",
+    "conclusion": "success",
+    "target_public_site": "https://sbu001monterecco.github.io/por-derecho/",
+    "verified": [
+      "Spanish homepage",
+      "English homepage",
+      "GC-CIV-003 Spanish proceeding route",
+      "GC-CIV-003 English proceeding route",
+      "Las Palmas historic civil justice-authority route ES/EN",
+      "Master Proceedings register ES/EN",
+      "Proceedings map ES/EN",
+      "locked 1041/2017 NIG/court/Judge/LAJ/source-gap content",
+      "homepage search click-through for 1041/2017 reference, NIG and GC-CIV-003",
+      "homepage search click-through for Juan Avello Formoso / PD-SP-P-0124",
+      "homepage search click-through for Fernando Pérez Polo / PD-SP-P-0165 / ^P-0165",
+      "homepage search click-through for court PD-SP-I-0048 / ^I-0048",
+      "representative proceeding PD-SP-R-0001 / ^R-0001",
+      "representative organisation PD-SP-O-0003",
+      "LZ-CIV-050 ES/EN route 404",
+      "LZ-CIV-050 absent from ES/EN homepage search",
+      "LZ-CIV-050 absent from sitemap, public master data and proceeding route map"
+    ]
+  },
+  "proceedings_denominator": {
+    "canonical_master_rows": 131,
+    "public_master_rows": 130,
+    "canonical_exact": 107,
+    "public_exact": 106,
+    "private_exact": 1,
+    "public_non_exact_false_unverified": 24,
+    "bilingual_public_proceeding_routes": 130,
+    "reciprocal_formal_procedural_edges": 54,
+    "reciprocal_contextual_pairs": 416,
+    "fiscalia_public": 26,
+    "fiscalia_exact": 23,
+    "fiscalia_unresolved": 3,
+    "global_historic_docket": "OPEN_NOT_CERTIFIED_COMPLETE"
+  },
+  "authority_denominator": {
+    "caepr_total": 350,
+    "PERSON": 165,
+    "ORGANISATION": 83,
+    "STRUCTURE": 11,
+    "INSTITUTION": 48,
+    "PROCEEDING": 43,
+    "source_identified_justice_prosecutorial_notarial_people": 62,
+    "caret_confirmed": 59,
+    "caret_pending": 3,
+    "roles": {
+      "MINISTERIO_FISCAL": 17,
+      "JUDGE_MAGISTRATE": 20,
+      "LAJ": 17,
+      "NOTARY": 8
+    },
+    "denominator_boundary": "RECOVERED_SOURCE_DENOMINATOR_NOT_CERTIFIED_COMPLETE_DOCKET"
+  },
+  "locked_correction_gc_civ_003": {
+    "master_id": "GC-CIV-003",
+    "reference": "Diligencias Preliminares 1041/2017",
+    "court": "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria",
+    "court_id": "PD-SP-I-0048",
+    "nig": "3501642120170028407",
+    "judge": "Juan Avello Formoso",
+    "judge_id": "PD-SP-P-0124",
+    "laj": "Fernando Pérez Polo",
+    "laj_id": "PD-SP-P-0165",
+    "primary_act": "Providencia 12 January 2018",
+    "laj_signature_date": "2018-01-15",
+    "deprecated_duplicate": "LZ-CIV-050",
+    "deprecated_duplicate_policy": "MUST_NOT_REAPPEAR_IN_PUBLIC_ROUTE_MASTER_COVERAGE_SITEMAP_SEARCH_OR_SUCCESSOR_RECONSTRUCTION"
+  },
+  "gc_civ_003_source_gaps": [
+    "preceding signed Auto",
+    "complete docket / certified index",
+    "proof of 19-Feb-2018 appearance and/or production",
+    "5-Mar-2018 decree/closure sequence",
+    "service/notification evidence",
+    "finality evidence"
+  ],
+  "new_source_locked_authority": [
+    {
+      "id": "PD-SP-P-0124",
+      "name": "Juan Avello Formoso",
+      "role": "Magistrado-Juez",
+      "scope": "GC-CIV-003 Providencia 12-Jan-2018"
+    },
+    {
+      "id": "PD-SP-P-0165",
+      "name": "Fernando Pérez Polo",
+      "role": "LAJ",
+      "scope": "GC-CIV-003 electronic signature 15-Jan-2018"
+    },
+    {
+      "id": "PD-SP-I-0048",
+      "name": "Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria",
+      "role": "INSTITUTION",
+      "scope": "GC-CIV-003"
+    }
+  ],
+  "action_ledger": {
+    "control": "PD-CONT-DIGEST-001",
+    "repository_digest_actions": [
+      {
+        "action": "re_fetch_current_main_before_closeout",
+        "result": "efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c"
+      },
+      {
+        "action": "verify_final_production_pr_and_merge_tree",
+        "pr": 1373,
+        "merge_sha": "efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c",
+        "tree": "1e2295ccc94d3e020b2ef0db59924d439de2aa93"
+      },
+      {
+        "action": "verify_exact_sha_pages_deployment",
+        "run_id": 33697357002,
+        "run_number": 1420,
+        "head_sha": "efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c",
+        "result": "success"
+      },
+      {
+        "action": "run_network_capable_chromium_live_smoke",
+        "run_id": 33700567926,
+        "result": "success"
+      }
+    ],
+    "connected_source_actions": [
+      {
+        "action": "none_broad",
+        "reason": "Broad Gmail/Drive discovery was completed on 2 September and is not repeated. Future recovery is targeted only to an explicit SOURCE_GAP."
+      }
+    ],
+    "registration_and_identity_actions": [
+      {
+        "action": "advance_existing_workspace_to_successor_handoff",
+        "workspace_id": "PD-WS-20260902-0001",
+        "handoff_id": "PD-WCH-20260903-AUTH-SEARCH-REINT-001"
+      },
+      {
+        "action": "lock_gc_civ_003_correction",
+        "result": "GC-CIV-003 retained; LZ-CIV-050 removed from live/public/search surfaces"
+      },
+      {
+        "action": "preserve_source_locked_historic_las_palmas_authority",
+        "ids": ["PD-SP-P-0124", "PD-SP-P-0165", "PD-SP-I-0048"]
+      }
+    ],
+    "relationship_interlink_actions": [
+      {
+        "action": "preserve_formal_reciprocal_edges",
+        "count": 54
+      },
+      {
+        "action": "preserve_contextual_navigation_as_non_procedural",
+        "count": 416
+      }
+    ],
+    "chronology_and_proceedings_actions": [
+      {
+        "action": "record_final_proceedings_denominator",
+        "canonical": 131,
+        "public": 130,
+        "canonical_exact": 107,
+        "public_exact": 106
+      },
+      {
+        "action": "record_final_authority_denominator",
+        "source_identified_people": 62,
+        "confirmed": 59,
+        "pending": 3
+      },
+      {
+        "action": "preserve_global_historic_docket_boundary",
+        "state": "OPEN_NOT_CERTIFIED_COMPLETE"
+      }
+    ],
+    "publication_and_live_actions": [
+      {
+        "layer": "repository",
+        "state": "MERGED_TO_MAIN",
+        "pr": 1373,
+        "sha": "efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c",
+        "tree": "1e2295ccc94d3e020b2ef0db59924d439de2aa93"
+      },
+      {
+        "layer": "github_pages",
+        "state": "DEPLOYED_FROM_EXACT_MERGE_SHA",
+        "run_id": 33697357002,
+        "run_number": 1420
+      },
+      {
+        "layer": "live_browser",
+        "state": "LIVE_BROWSER_VERIFIED",
+        "run_id": 33700567926
+      }
+    ],
+    "completed_actions": [
+      "Reintegrated historic proceedings, justice authority, Fiscalía, search and interconnectivity into current main through PR #1373.",
+      "Preserved historical publication manifests as immutable historical release records.",
+      "Verified exact reviewed tree equals the production merge tree.",
+      "Verified GitHub Pages deployed from the exact production merge SHA.",
+      "Verified live public ES/EN routes and homepage search click-throughs in Chromium.",
+      "Verified deprecated LZ-CIV-050 is absent from routes, search, sitemap and public route/master data.",
+      "Registered the successor continuity checkpoint without claiming the broad historic docket complete."
+    ],
+    "open_actions": [
+      {
+        "priority": "P0",
+        "item": "GC-CIV-003 closure chain",
+        "close_trigger": "Recover preceding signed Auto, 19-Feb appearance/production proof, 5-Mar decree/closure, service and finality from primary/certified sources."
+      },
+      {
+        "priority": "P1",
+        "item": "24 public non-exact/unverified proceeding rows",
+        "close_trigger": "Close exact identity/organ/NIG/docket/status from primary or certified sources."
+      },
+      {
+        "priority": "P1",
+        "item": "Fiscalía 3 unresolved rows",
+        "close_trigger": "Recover specific primary records while preserving exact office/Fiscal attribution boundaries."
+      },
+      {
+        "priority": "P1",
+        "item": "Global historic justice-authority docket backfill",
+        "close_trigger": "Every applicable recovered source has explicit Judge/Magistrate, LAJ and Fiscal state; unknowns remain explicit gaps."
+      },
+      {
+        "priority": "P2",
+        "item": "Interconnectivity maintenance",
+        "close_trigger": "Formal and contextual graphs remain reciprocal and contextual proximity is never promoted to a procedural relationship."
+      }
+    ],
+    "do_not_infer": [
+      "Never infer a Judge, Magistrate, LAJ, Fiscal, court, NIG or procedural relationship from office succession, repeated personnel, geography or contextual proximity.",
+      "CARET identity does not prove conduct, authorship, knowledge, intent, wrongdoing, liability or outcome.",
+      "Current office-holder does not prove historical handling of a file.",
+      "Formal procedural edges and contextual-navigation links are different evidential categories.",
+      "The recovered-source denominator is not a certified complete historic/current docket denominator.",
+      "Repository merge, Pages deployment, live-browser verification and institutional filing/service are distinct states."
+    ],
+    "next_thread_bootstrap": "Continue PD-WS-20260902-0001 from CURRENT_WORKSPACE_HANDOFF.md and archive/handoffs/2026-09-03-historic-proceedings-authority-search-reintegration-live-closeout.md. Treat PR #1373, merge efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c, tree 1e2295ccc94d3e020b2ef0db59924d439de2aa93, Pages run 33697357002 and Chromium run 33700567926 as the completed release checkpoint. Do not restart broad discovery. Preserve GC-CIV-003 and never resurrect LZ-CIV-050."
+  }
+}

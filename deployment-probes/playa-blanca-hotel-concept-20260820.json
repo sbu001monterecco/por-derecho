@@ -1,0 +1,21 @@
+{
+  "probe_id": "psr-pages-playa-blanca-hotel-concept-20260820-v1",
+  "source_merge_sha": "11e1c69c4cf4bef4e89f64aef7d8d4162fe689e7",
+  "publication_id": "playa-blanca-hotel-services-concept-20260820",
+  "expected_routes": [
+    "en/playa-blanca-hotel-services-concept/",
+    "es/playa-blanca-concepto-hotel-servicios/"
+  ],
+  "homepage_sections": [
+    "en/#future",
+    "es/#futuro"
+  ],
+  "public_markers": [
+    "A new hotel and local-services concept for a place we continue to believe in.",
+    "Un nuevo concepto hotelero y de servicios locales para un lugar en el que seguimos creyendo.",
+    "Our confidence in Playa Blanca was not taken with it.",
+    "Nuestra confianza en Playa Blanca sigue intacta.",
+    "playa-blanca-concept-home-20260820.js"
+  ],
+  "publication_boundary": "Public concept only. No exact private site, parcel, seller, transaction, operator commitment, planning entitlement or public-authority endorsement is represented."
+}

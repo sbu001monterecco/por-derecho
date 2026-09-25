@@ -1,0 +1,264 @@
+{
+  "schema": "por-derecho.concurso36.controlling-conclusions-supplement.v1",
+  "date": "2026-08-29",
+  "status": "MANDATORY_NO_REGRESSION_OVERLAY",
+  "supersedes_conflicting_fields_in": [
+    "assets/data/concurso36-continuity-governance-20260829.json",
+    "older timelines, validators, generated datasets and handoffs"
+  ],
+  "canonical_governance": [
+    "CONCURSO36_UNITARY_CRIMINAL_FIRST_GOVERNANCE.md",
+    "CHATGPT_START_HERE_CONCURSO36_DUAL_LENS_GOVERNANCE.md",
+    "CONCURSO36_CONTROLLING_CONCLUSIONS_29AUG2026.md"
+  ],
+  "credit_ontology": {
+    "columns": [
+      "recognition",
+      "accrual",
+      "liquidation_payment",
+      "adjudication_setoff",
+      "modification"
+    ],
+    "rule": "Numerical continuity is not procedural authority. A later number is not a definitive-text amendment without the complete statutory modification bridge."
+  },
+  "definitive_text": {
+    "community_comparator": {
+      "date": "2017-01-20",
+      "classification": "GENUINE_DEFINITIVE_TEXT_MODIFICATION",
+      "meaning": "Formal machinery existed and was used to modify the definitive texts."
+    },
+    "cam_succession": {
+      "order_date": "2018-02-08",
+      "judge_signature_date": "2018-02-09",
+      "laj_signature_date": "2018-02-14",
+      "classification": "CREDITOR_SUCCESSION_WITHOUT_AMOUNT_CHANGE",
+      "visual_rule": "CHANGE OF CREDITOR ≠ CHANGE OF CREDIT",
+      "source_rule": "NOT CHANGE THE AMOUNT",
+      "recognized_components_eur": [
+        8194877.88,
+        857373.81
+      ],
+      "recognized_total_eur": 9052251.69
+    },
+    "june_liquidation_bridge": {
+      "date": "2018-06-04",
+      "classification": "LIQUIDATION_PLAN_CLARIFICATION_IMPLEMENTATION_NOT_DEMONSTRATED_FINAL_TEXT_AMENDMENT",
+      "certificate_date": "2018-05-17",
+      "components_eur": [
+        11887314.33,
+        1278518.03
+      ],
+      "total_eur": 13165832.36
+    },
+    "later_setoff_reference_eur": 13168082.02,
+    "unresolved_question": "Did approximately €13.166m lawfully operate only as the secured payoff/liquidation/bid amount while the definitive recognized credit remained approximately €9.052m, or was a further statutory modification of the definitive texts required for some part of that increase?",
+    "later_formal_amount_increase_bridge_status": "NOT_LOCATED_IN_CONTROLLED_CORPUS_NOT_PROVED_NONEXISTENT",
+    "permanent_gate": "No change to the texto definitivo is to be recorded unless the repository identifies the application, statutory gateway, contradictory procedure where required, judicial resolution ordering the modification, exact before/after entry, date of finality and resulting corrected inventory or creditor list."
+  },
+  "notice_and_protection": {
+    "ac_knowledge": {
+      "date": "2018-06-08",
+      "status": "ACTUAL_KNOWLEDGE_SUPPORTED_NOT_GENUINELY_OPEN",
+      "source_summary": "Juan Tomás Parrilla records ‘He llamado a Borja…’ and relays Borja's account.",
+      "remaining_question": "What Borja subsequently reported, verified, sought to protect, instructed, filed, accounted for and communicated.",
+      "takeover_specific_ac_mercantile_filing": "NOT_LOCATED"
+    },
+    "counsel_ledger": {
+      "date": "2018-06-13",
+      "sequence": [
+        "client_written_instruction",
+        "counsel_agrees_mercantile_should_be_informed",
+        "protective_escrito_drafted",
+        "tactical_timing_discussion",
+        "formal_filing_receipt_not_located"
+      ],
+      "interpretation": "Documented instruction/performance tension requiring explanation; not proof of criminal motive or intentional non-filing."
+    },
+    "arrecife_exhorto": {
+      "exhorto_date": "2018-05-02",
+      "mercantile_response_exists": true,
+      "arrecife_receipt_date": "2018-06-11",
+      "joined_by_arrecife_auto_date": "2018-06-13",
+      "proceeding": "DP 1132/2018",
+      "response_content": "MISSING",
+      "annexes": "MISSING",
+      "banner": "WE KNOW A RESPONSE EXISTED. WE DO NOT YET HAVE ITS CONTENT.",
+      "non_inference_rule": "A reply to the pre-7-June exhorto must not be presumed to address the 7-June events."
+    }
+  },
+  "convenio": {
+    "filed": true,
+    "lexnet_date": "2017-04-27",
+    "prohibited_legacy_statement": "LPB entered liquidation because it failed to present a convenio.",
+    "open_bridge": "Official/certified 28-Jun-2017 Junta record and complete Insolvency Administrator evaluation."
+  },
+  "article_176": {
+    "june_2018_historical_reference": "FORMER_LEY_CONCURSAL_ART_176",
+    "later_mapping": "TRLC_ART_465_6",
+    "rule": "Do not use later TRLC numbering as if it governed a June-2018 event."
+  },
+  "lender_track": {
+    "entity_chain": [
+      "Bankia",
+      "SAREB",
+      "Promontoria Holding 122 / Cerberus / Haya",
+      "Construcciones Acosta Matos"
+    ],
+    "loan_by_loan_required": true,
+    "loans": [
+      {
+        "loan": 1,
+        "recognized_comparator_eur": 8194877.88,
+        "june_2018_certificate_eur": 11887314.33
+      },
+      {
+        "loan": 2,
+        "recognized_comparator_eur": 857373.81,
+        "june_2018_certificate_eur": 1278518.03
+      }
+    ],
+    "required_components": [
+      "principal",
+      "contractual_interest",
+      "default_interest",
+      "mortgage_security_limit",
+      "enforcement_costs",
+      "exact_calculation_date",
+      "documentary_source",
+      "procedural_use",
+      "credit_ontology_column"
+    ]
+  },
+  "criminal_first_actor_test": [
+    "knowledge",
+    "historical_legal_duty_power",
+    "act_omission",
+    "stated_legal_basis",
+    "consistency_with_earlier_decisions",
+    "alleged_arbitrariness_deception",
+    "procedural_effect",
+    "patrimonial_effect",
+    "beneficiary_harm",
+    "evidence_bearing_on_intent",
+    "contrary_evidence",
+    "criminal_law_elements",
+    "adjudicative_status"
+  ],
+  "p0": [
+    "Actual 11-Jun-2018 Mercantile Court nº1 response to Arrecife and all annexes/content",
+    "Takeover-specific Concurso 36/2012 LexNET filing/receipt and judicial treatment, if filed",
+    "Any AC-authored takeover-specific report/filing or affirmative evidence of what he did instead",
+    "Official/certified 28-Jun-2017 Junta record and complete AC evaluation",
+    "Complete before/after/finality/corrected-list records for 20-Jan-2017 and 8-Feb-2018 definitive-text proceedings",
+    "Loan-by-loan €9.052m → €13.165832m → approximately €13.168082m reconciliation across the five credit columns",
+    "Adviser instruction → draft → timing decision → filing receipt → court-treatment chains",
+    "Certified electronic chronological index / official relation of procedural acts / equivalent per-piece export"
+  ],
+  "public_visuals": [
+    "CHANGE OF CREDITOR ≠ CHANGE OF CREDIT",
+    "8 FEBRUARY 2018 — NOT CHANGE THE AMOUNT",
+    "RECOGNITION → ACCRUAL → LIQUIDATION/PAYMENT → ADJUDICATION/SET-OFF → MODIFICATION",
+    "WE KNOW A RESPONSE EXISTED. WE DO NOT YET HAVE ITS CONTENT.",
+    "CLIENT INSTRUCTION → COUNSEL AGREES → DRAFT → TIMING DISCUSSION → FORMAL FILING RECEIPT NOT LOCATED",
+    "AC KNOWLEDGE BY 8 JUN → SUBSEQUENT PROTECTION/REPORTING/FILING/ACCOUNTING ACTION TO RECONSTRUCT"
+  ],
+  "connected_criminal_course_20260925": {
+    "control_id": "PD-CONNECTED-COURSE-2008-20260925",
+    "adopted_on": "2026-09-25",
+    "source_type": "OWNER_ADOPTED_CURRENT_THREAD_STATEMENT",
+    "attributed_to": "Gil Marer",
+    "evidentiary_status": "DIRECT_ATTRIBUTED_CRIMINAL_ALLEGATION_NOT_ADJUDICATED_FINDING",
+    "scope": "Connected, evolving alleged criminal conduct with civil, mercantile, Community, regulatory and recovery dimensions; those instruments may be alleged means, not reasons to fragment or downgrade the allegation.",
+    "chronology": [
+      {
+        "id": "ORIGIN_2008",
+        "period": "2008 sale and hotel-operating arrangements",
+        "actors": "Montelanza/Molina dissident owners, relevant companies and representatives, individually identified through the source record",
+        "allegation": "Breaches and interference with unified hotel operation, LPB investment and income; subsequent Community-governance capture, exclusion, debt/vote manipulation and operating interference develop that originating conflict.",
+        "boundary": "Not a claim that CAM originated the 2008 events or that every dissident/company/representative committed every act. A sale commitment is not proof of completed title transfer."
+      },
+      {
+        "id": "AC_FROM_INCEPTION",
+        "period": "From the outset of Francisco de Borja Rodríguez-Batllori Laffitte's involvement in Concurso 36/2012",
+        "allegation": "Affirmative alignment with dissident interests and representatives from inception, through acts and omissions, rather than merely later negligent supervision; alleged adoption of adverse premises, failure to protect or pursue rights, frustration of funded solutions, use of Community machinery and later facilitation or preservation of CAM advantages.",
+        "boundary": "2016 warnings are knowledge and subsequent-conduct evidence, not the alleged starting point. The earliest acts, appointment/acceptance record, contemporaneous knowledge, duties and contrary protective acts require their own sources."
+      },
+      {
+        "id": "CAM_LATER_ENTRY",
+        "period": "Approximately 2017–2018",
+        "allegation": "CAM/Acosta Matos allegedly joined, used and strengthened an existing adverse structure through credit acquisition, dealings with dissidents/representatives, particular-unit acquisitions and preparations for material control.",
+        "boundary": "Different actors have different entry dates and roles. FMMM and Cogolludo source dates must not be reset to CAM's later entry."
+      },
+      {
+        "id": "JUDICIAL_THRESHOLD",
+        "period": "At least by the failure of the convenio and opening of liquidación",
+        "actor": "Alberto López Villarrubia, then Magistrate-Judge of Commercial Court No. 1 of Las Palmas de Gran Canaria",
+        "allegation": "Judicial acts and treatment of evidence allegedly became part of the mechanism frustrating protective/restorative outcomes and enabling or preserving the adverse private outcome, not only during later 2018–2022 disputes.",
+        "exact_threshold_act_and_date": null,
+        "source_status": "EVENT_DEFINED_OWNER_ALLEGATION_REQUIRES_EXACT_ACT_SOURCE_MAP",
+        "boundary": "Do not invent the transition date or say that no convenio was presented. A filed convenio is already controlled at 27-Apr-2017; the certified Junta/evaluation and transition acts remain separately required. Adverse actor describes the alleged substantive role, not an opposing-litigant status. Preserve corrective and favourable judicial acts."
+      },
+      {
+        "id": "MATERIAL_CONTROL_PIVOT",
+        "date": "2018-06-07",
+        "allegation": "Principal alleged material-control and funded-exit sabotage/interruption pivot within the longer course of conduct.",
+        "boundary": "Not the origin of the entire alleged mechanism, and not proof of every person's physical presence or instruction."
+      },
+      {
+        "id": "ONGOING_CONDUCT",
+        "as_of": "2026-09-25",
+        "allegation": "Dissident and CAM interests allegedly continued together through later maintenance, defence, exploitation and consolidation: exclusion from rights/property/governance, physical incorporation, operation and retained income, use of disputed title/authority and resistance to accounting, restoration and recovery.",
+        "boundary": "Preserve alleged ongoing acts and benefits separately from accrued or lingering injury. The classification of each offence as continuing, repeated or completed and each remedy's time limits is a separate legal inquiry. No perpetual self-updating factual verification is implied."
+      }
+    ],
+    "private_actor_population": {
+      "broader_than_five_featured_people": true,
+      "five_featured_people": [
+        "José Daniel Acosta Matos",
+        "Laura Patricia Acosta Matos",
+        "Francisco Mario Matos Matas",
+        "Antonio Cogolludo Rojas",
+        "Shaila María Cogolludo Ramos"
+      ],
+      "rule": "Retain the five principal cards plus separate AC and judge presentations; make the originating dissidents, companies and representatives discoverable through the existing records. The seven-person homepage presentation is not a closed actor census."
+    },
+    "two_origins": {
+      "alleged_course_of_conduct": "2008 sale/operating conflict",
+      "protective_insolvency_filing": "2011/2012 acquisition, lender-enforcement and defensive-filing sequence",
+      "rule": "The protective-insolvency-origin control complements the earlier course-of-conduct origin; it must not reset the whole case to 2012."
+    },
+    "portfolio_scope": {
+      "rule": "WHOLE_PORTFOLIO_ALLEGATION_ASSET_BY_ASSET_SUBSTANTIATION",
+      "ricpe": "Separate regulated financing/documentary channel, not automatically a CAM group company or the ceiling on economic scope.",
+      "tests": ["direct proceeds/reinvestment", "asset/income-supported financing", "commercial-platform contribution"],
+      "boundary": "No consolidated illicit-AUM figure, automatic guilt, automatic transfer of intent, established Orion transfer or attribution of digital incidents. Distinguish lawful independent funding and third-party interests."
+    },
+    "reviewed_repository_context": [
+      "archive/MONTELANZA_2008_AND_COMMUNITY_ADOPTION_REVIEW_20SEP2026.md",
+      "archive/MONTELANZA_MOLINA_PINK_AC_JUDGE_PROCEDURAL_PROPAGATION_24SEP2026.md",
+      "CONCURSO36_UNITARY_CRIMINAL_FIRST_GOVERNANCE.md",
+      "governance/PROTECTIVE_INSOLVENCY_ORIGIN_ROLE_REVERSAL_25SEP2026.md"
+    ],
+    "source_limit": "Repository context corroborates that these themes are already recorded; it is not independent proof of every allegation. The pasted labels AUTO CONCURSO CULPOSO, AUTO CONCURSO CULPOSO(1), MeetingPoint_02_Anexos_357-2024 and Documento_1007821 are unresolved source references, not fresh page-level verification of originals or Ref.21/22/24.",
+    "next_evidence": [
+      "2008 seller/finca/commitment/operating-right/consideration/completion/breach schedule with original instruments and notices",
+      "AC appointment/acceptance and first acts, reports, rights-protection decisions and contacts from his initial involvement; do not start the audit in 2016",
+      "Filed convenio, complete AC evaluation, certified Junta and exact signed opening-of-liquidation/transition acts, knowledge and available remedies",
+      "Actor-specific dissident-to-CAM communication, credit, acquisition and material-control bridges without retroactive attribution",
+      "Dated post-2018 and current operation, exclusion, income, title-use, accounting and recovery-response ledger",
+      "Asset-by-asset later benefit, financing and acquisition reconstruction with lawful-resource and third-party controls"
+    ],
+    "review_failure_modes": [
+      "reset entire origin to 2012, 2016 or 2018",
+      "treat five featured private people as exhaustive actor population",
+      "reduce alleged AC inception alignment to later negligence",
+      "shift alleged judicial threshold to later particularised Ref.24 acts only",
+      "convert ongoing conduct allegation into only lingering unpaid loss",
+      "treat later judicial or financial formalisation as automatic validation of predecessor conduct",
+      "downgrade connected criminal allegation into unrelated civil disputes",
+      "promote attributed allegation to proved guilt or transfer responsibility through association"
+    ],
+    "implementation_state": "SOURCE_AMENDMENT_IN_EXISTING_PR_REQUIRES_REVIEW_INTEGRATION_AND_PUBLIC_READBACK",
+    "production_claim": "No merge, live deployment, GitLab parity or completed source census is established by this record."
+  }
+}

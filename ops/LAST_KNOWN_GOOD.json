@@ -1,0 +1,31 @@
+{
+  "schema": "por-derecho.operational-truth.rollback-anchor.v2",
+  "record_type": "HISTORICAL_ROLLBACK_ANCHOR",
+  "release_id": "five-actor-preservation-guard-20260824-pr922",
+  "is_current": false,
+  "rollback_eligible": true,
+  "state": "LIVE_VERIFIED",
+  "source_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
+  "source_tree_sha": "af1d15bf6e8418767fdeea80082fbdb15dc2d692",
+  "public_host": "https://sbu001monterecco.github.io/por-derecho/",
+  "verification": {
+    "pull_request": 922,
+    "head_sha": "850ee0909f6eb5914d2ced3a366d5576b28b6768",
+    "pages_run_id": 32750603024,
+    "workflow_run_id": 32750605646,
+    "source_of_funds_run_id": 32750605643,
+    "verified_at": "2026-08-24T16:27:17.010Z",
+    "scope": "Both homepages, fourteen canonical direct routes and the preserved legacy Spanish court route; 757 settled-DOM assertions across seventeen protected surfaces."
+  },
+  "historical_snapshots": {
+    "current_state_v1": "archive/ops-snapshots/CURRENT_STATE_20260824.json",
+    "production_status_v1": "archive/ops-snapshots/PRODUCTION_STATUS_20260824.json"
+  },
+  "supersession": {
+    "superseded_as_current": true,
+    "current_repository_truth": "Resolve refs/heads/main dynamically.",
+    "current_deployment_truth": "Use ops/PRODUCTION_STATUS.json plus a fresh live query.",
+    "historical_record": "ops/RELEASE_LEDGER.json"
+  },
+  "rollback_rule": "Use a normal revert PR to this release or another positively verified successor; never force-push main."
+}

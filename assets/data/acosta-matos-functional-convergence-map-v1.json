@@ -1,0 +1,184 @@
+{
+  "schema": "por-derecho.functional-convergence-map.v1",
+  "control_date": "2026-08-25",
+  "subject": "Attributed functional convergence of the 2011 Sun Park claimant/Community perimeter into the later Acosta Matos/CAM perimeter",
+  "attribution": {
+    "declarant": "Gil Marer",
+    "source": "archive/declarations/013_GIL_ATTRIBUTED_FUNCTIONAL_CONVERGENCE_INTO_ACOSTA_MATOS_PERIMETER_20260825.md",
+    "metaphor": "morphed",
+    "controlled_meaning": [
+      "functional succession",
+      "continuity of roles and representation",
+      "convergence of Community, corporate, title, voting, creditor and project capacities",
+      "adoption or use of earlier Community machinery by later actors",
+      "possible transmission of knowledge through continuing actors"
+    ],
+    "excluded_meaning": [
+      "literal identity of all actors",
+      "automatic corporate merger",
+      "automatic transfer of knowledge or criminal intent",
+      "proved continuous conspiracy from 2011"
+    ]
+  },
+  "grades": {
+    "DIRECT_DOCUMENTARY": "Primary, official or controlled records directly establish the stated relationship or transition.",
+    "STRONGLY_SUPPORTED_FUNCTIONAL": "Multiple dated records support continuity of function, representation or implementation, but legal succession or purpose remains open.",
+    "ATTRIBUTED_INFERENCE": "Gil or another declarant alleges continuity or common purpose; independent corroboration is incomplete.",
+    "OPEN_NOT_LOCATED": "A material relationship, handover, instruction or shared purpose has not been located."
+  },
+  "nodes": [
+    {"id":"campanario","label":"Álvaro Campanario Hernández","type":"person","phase":"2009-2014","role":"Molina/non-adherent lawyer; 2-Feb-2011 meeting secretary/strategy; JV1260/AP89 counsel"},
+    {"id":"aizpurua_roque","label":"Asunción Aizpurúa / Roque Prieto perimeter","type":"governance_owner_perimeter","phase":"2011-2015","role":"Community presidency, owner representation and later Prieto representation"},
+    {"id":"claimants","label":"JV1260 claimant perimeter: AMENEM/TENGOLF, Acciones Canarias, Muruga, Roque Prieto and named owners","type":"owner_litigation_perimeter","phase":"2011-2014","role":"Claimants and effective vote-related owner perimeter"},
+    {"id":"lopez","label":"Esteban López Noriega","type":"person","phase":"2011-2022","role":"Community-invited/side lawyer; later Millan and Miners partner with Prieto"},
+    {"id":"prieto","label":"Juan Carlos Prieto Puente","type":"person","phase":"2014-2022+","role":"Aizpurúa/Roque Prieto representative; Community/Molina-side lawyer; company officer"},
+    {"id":"pamanil","label":"PAMANIL SOCIEDAD LIMITADA","type":"company","phase":"2011-2016","role":"Community administration/maintenance ratification and communications perimeter"},
+    {"id":"fmmm","label":"Francisco Mario Matos Matas","type":"person","phase":"2011-2024+","role":"Community/Pamanil administration; 2016 knowledge checkpoint; 2018 implementation; later ORION/AGM offices"},
+    {"id":"shaila","label":"Shaila María Cogolludo Ramos","type":"person","phase":"2014-2026+","role":"Pamanil communications; 2018 vote/title line; later Noalpa/Pamalexsha powers"},
+    {"id":"antonio","label":"Antonio Cogolludo Rojas","type":"person","phase":"2013-2025","role":"Molina representation; Pamalexsha/Noalpa/Santa Lucia offices; Community presidency"},
+    {"id":"pamalexsha","label":"PAMALEXSHA SERVICIOS INTEGRALES, S.L.","type":"company","phase":"2013-2026+","role":"Antonio-founded services company; Community administration budget/functions; later Shaila power"},
+    {"id":"noalpa","label":"EXPLOTACIONES NOALPA, S.L.","type":"company","phase":"2017-2021+","role":"Antonio-founded tourism/property company; later Shaila power"},
+    {"id":"santa_lucia","label":"SANTA LUCIA REAL ESTATE, S.L.","type":"company","phase":"2017-2025","role":"Official Prieto-Antonio corporate bridge"},
+    {"id":"ac","label":"Francisco de Borja Rodríguez-Batllori Laffitte","type":"court_appointed_professional","phase":"2012+","role":"LPB insolvency administrator; separate alleged enablement/adoption track"},
+    {"id":"cam","label":"Construcciones Acosta Matos / CAM perimeter","type":"creditor_owner_project_perimeter","phase":"2017+","role":"Credit holder, unit owner, Community participant, bidder/purchaser and project axis"},
+    {"id":"jdam_lpam","label":"José Daniel Acosta Matos / Laura Patricia Acosta Matos","type":"persons","phase":"2018+","role":"Direct later Acosta Matos instruction/control/project allegations"},
+    {"id":"orion_agm","label":"ORION RENTAL SOCIMI / AGM CANARY ASSET MANAGEMENT","type":"later_corporate_perimeter","phase":"2024+","role":"Official later FMMM-JDAM board/power-holder convergence"},
+    {"id":"ricpe_hnt_mynd","label":"RICPE / Hotel New Trend / MYND project perimeter","type":"investment_title_operation_perimeter","phase":"2019+","role":"Later project, title, finance and operation layer"}
+  ],
+  "edges": [
+    {
+      "from":"campanario","to":"aizpurua_roque","grade":"DIRECT_DOCUMENTARY",
+      "proposition":"Campanario represented much of the later claimant perimeter, acted as secretary of the 2-Feb-2011 meeting and proposed procedural strategy while Aizpurúa was appointed/elected president.",
+      "sources":["archive/JV1260_AP89_UNITARY_REVERSE_ENGINEERING_CAM_CONTINUITY_17AUG2026.md","es/alvaro-campanario-hernandez/index.html","es/asuncion-aizpurua-sanchez/index.html"],
+      "limit":"No unlawful agreement or later Acosta Matos link is proved by the meeting roles alone."
+    },
+    {
+      "from":"aizpurua_roque","to":"prieto","grade":"DIRECT_DOCUMENTARY",
+      "proposition":"Prieto represented Aizpurúa/Roque Prieto in the controlled 2014 Community record and later appeared on the Community/Molina side.",
+      "sources":["archive/knowledge-project/SUN_PARK_MONTE_LANZA_MOLINA_COMMUNITY_PERIMETER.md","es/juan-carlos-prieto-puente/index.html"],
+      "limit":"No universal or indefinite mandate is inferred."
+    },
+    {
+      "from":"lopez","to":"prieto","grade":"DIRECT_DOCUMENTARY",
+      "proposition":"Prieto and López Noriega were professional partners and joint administrators of MILLAN AND MINERS, S.L.P.",
+      "sources":["archive/CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_CORPORATE_UNITARY_SCAN_25AUG2026.md","es/juan-carlos-prieto-puente/index.html"],
+      "limit":"The company link does not identify every client, matter, knowledge state or purpose."
+    },
+    {
+      "from":"prieto","to":"santa_lucia","grade":"DIRECT_DOCUMENTARY",
+      "proposition":"Prieto was an initial several administrator and later attorney-in-fact of SANTA LUCIA REAL ESTATE.",
+      "sources":["es/santa-lucia-real-estate-sl/index.html","es/juan-carlos-prieto-puente/index.html"],
+      "limit":"No Sun Park act by the company is established."
+    },
+    {
+      "from":"antonio","to":"santa_lucia","grade":"DIRECT_DOCUMENTARY",
+      "proposition":"Antonio was an initial several administrator, later sole administrator, of SANTA LUCIA REAL ESTATE alongside the Prieto bridge.",
+      "sources":["es/santa-lucia-real-estate-sl/index.html","es/antonio-cogolludo-rojas/index.html"],
+      "limit":"Corporate overlap does not prove joint instruction or criminal purpose."
+    },
+    {
+      "from":"antonio","to":"pamalexsha","grade":"DIRECT_DOCUMENTARY",
+      "proposition":"Antonio was the initial sole administrator of PAMALEXSHA; the Sun Park record later identifies Pamalexsha in Community administration functions.",
+      "sources":["es/pamalexsha-servicios-integrales-sl/index.html","es/antonio-cogolludo-rojas/index.html"],
+      "limit":"Each Sun Park contract and act remains to be proved."
+    },
+    {
+      "from":"antonio","to":"noalpa","grade":"DIRECT_DOCUMENTARY",
+      "proposition":"Antonio was the initial sole administrator of EXPLOTACIONES NOALPA.",
+      "sources":["es/explotaciones-noalpa-sl/index.html","es/antonio-cogolludo-rojas/index.html"],
+      "limit":"No direct Noalpa operation at Sun Park has been located."
+    },
+    {
+      "from":"pamanil","to":"pamalexsha","grade":"STRONGLY_SUPPORTED_FUNCTIONAL",
+      "proposition":"Community documentation transitions from Pamanil functions/communications to a Pamalexsha administration budget and later administrative references.",
+      "sources":["es/pamanil-sl/index.html","es/pamalexsha-servicios-integrales-sl/index.html","archive/SUN_PARK_COMMUNITY_PAMANIL_COMMUNICATIONS_DIGITISATION_REGISTER_22AUG2026.md"],
+      "limit":"No merger, universal succession or complete transfer of files, funds, keys or contracts is proved."
+    },
+    {
+      "from":"fmmm","to":"pamanil","grade":"DIRECT_DOCUMENTARY",
+      "proposition":"FMMM is documented in Community/Pamanil administration from 2011 and in later communications.",
+      "sources":["es/francisco-mario-matos-matas/index.html","es/pamanil-sl/index.html"],
+      "limit":"Act-specific powers and contractual scope remain necessary."
+    },
+    {
+      "from":"fmmm","to":"pamalexsha","grade":"STRONGLY_SUPPORTED_FUNCTIONAL",
+      "proposition":"FMMM's Community-administration continuity persists when Pamalexsha appears as the administration-services vehicle.",
+      "sources":["es/francisco-mario-matos-matas/index.html","es/pamalexsha-servicios-integrales-sl/index.html"],
+      "limit":"No FMMM corporate office in Pamalexsha or legal succession is proved."
+    },
+    {
+      "from":"shaila","to":"pamanil","grade":"DIRECT_DOCUMENTARY",
+      "proposition":"Shaila and FMMM appear as signatories/actors in the 2014 Pamanil/Community communications perimeter.",
+      "sources":["es/shaila-maria-cogolludo-ramos/index.html","es/pamanil-sl/index.html"],
+      "limit":"A communication does not establish universal authority or shared intent."
+    },
+    {
+      "from":"shaila","to":"pamalexsha","grade":"DIRECT_DOCUMENTARY",
+      "proposition":"A later official power to Shaila in Pamalexsha was registered in 2026.",
+      "sources":["es/shaila-maria-cogolludo-ramos/index.html","es/pamalexsha-servicios-integrales-sl/index.html"],
+      "limit":"The 2026 power cannot be backdated to 2011-2018."
+    },
+    {
+      "from":"shaila","to":"noalpa","grade":"DIRECT_DOCUMENTARY",
+      "proposition":"A power to Shaila in Noalpa was registered in 2021.",
+      "sources":["es/shaila-maria-cogolludo-ramos/index.html","es/explotaciones-noalpa-sl/index.html"],
+      "limit":"The power does not prove an earlier Sun Park role."
+    },
+    {
+      "from":"claimants","to":"cam","grade":"DIRECT_DOCUMENTARY",
+      "proposition":"The AMENEM/TENGOLF claimant lineage reappears in the 2018 vote/title chain; a traced formerly TENGOLF/AMENEM unit transferred to CAM immediately before the 7-Jun-2018 event.",
+      "sources":["archive/JV1260_AP89_UNITARY_REVERSE_ENGINEERING_CAM_CONTINUITY_17AUG2026.md"],
+      "limit":"Finca-specific continuity does not establish a universal claimant-to-CAM transfer or CAM direction of the 2011 case."
+    },
+    {
+      "from":"fmmm","to":"cam","grade":"DIRECT_DOCUMENTARY",
+      "proposition":"FMMM continued as Community secretary-administrator through the 2017-2018 security/access and later CAM project stages.",
+      "sources":["archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md","archive/AC_PRIVATE_ACTOR_DE_FACTO_ADMINISTRATION_COMMUNITY_DEBT_TEXTOS_FORENSIC_CONTROL_20AUG2026.md"],
+      "limit":"Continuity of office does not establish original criminal intent or every alleged instruction."
+    },
+    {
+      "from":"antonio","to":"cam","grade":"DIRECT_DOCUMENTARY",
+      "proposition":"Antonio's Community presidency and the 2017-2018 voting/security structure intersected with CAM's creditor/title/access route.",
+      "sources":["archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md"],
+      "limit":"Exact title, authority and command chain remain actor- and date-specific."
+    },
+    {
+      "from":"ac","to":"cam","grade":"STRONGLY_SUPPORTED_FUNCTIONAL",
+      "proposition":"The AC requested or used Community security/access implementation, relied on Community-generated debt material and later CAM relied on the same architecture inside the concurso.",
+      "sources":["archive/AC_PRIVATE_ACTOR_DE_FACTO_ADMINISTRATION_COMMUNITY_DEBT_TEXTOS_FORENSIC_CONTROL_20AUG2026.md"],
+      "limit":"This supports an enablement/adoption investigation, not automatic membership in the private Acosta Matos perimeter or criminal concert."
+    },
+    {
+      "from":"cam","to":"jdam_lpam","grade":"DIRECT_DOCUMENTARY",
+      "proposition":"JDAM/LPAM are the named natural-person axis of later CAM instruction, access/control and project allegations.",
+      "sources":["archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md","es/acosta-matos-perimetro/index.html"],
+      "limit":"Each instruction, presence, mandate, knowledge state and responsibility remains independently provable."
+    },
+    {
+      "from":"fmmm","to":"orion_agm","grade":"DIRECT_DOCUMENTARY",
+      "proposition":"Official 2024 records identify FMMM with JDAM on the ORION board and as an AGM CANARY ASSET MANAGEMENT power-holder.",
+      "sources":["es/francisco-mario-matos-matas/index.html"],
+      "limit":"Later corporate office does not prove historic Sun Park criminal coordination."
+    },
+    {
+      "from":"jdam_lpam","to":"ricpe_hnt_mynd","grade":"DIRECT_DOCUMENTARY",
+      "proposition":"The later Acosta Matos/CAM axis is documented through RICPE project, HNT title and MYND operation layers.",
+      "sources":["es/acosta-matos-perimetro/index.html"],
+      "limit":"Distinct companies and financing instruments remain separate; project continuity is not automatic co-authorship."
+    },
+    {
+      "from":"campanario","to":"cam","grade":"OPEN_NOT_LOCATED",
+      "proposition":"A direct Campanario-to-CAM/Acosta Matos mandate, instruction, company or handover has not been located.",
+      "sources":["archive/CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_CORPORATE_UNITARY_SCAN_25AUG2026.md"],
+      "limit":"Historic role continuity cannot substitute for the missing later bridge."
+    },
+    {
+      "from":"lopez","to":"cam","grade":"ATTRIBUTED_INFERENCE",
+      "proposition":"López is linked to the Community side and to Prieto; the direct Acosta Matos bridge is inferred through Prieto rather than independently established.",
+      "sources":["archive/CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_CORPORATE_UNITARY_SCAN_25AUG2026.md"],
+      "limit":"No direct Acosta company, mandate or instruction has been located for López."
+    }
+  ],
+  "core_inference": "Multiple independent bridges support a substantial functional-convergence investigation. The map does not establish universal absorption, automatic knowledge transfer or a single continuous criminal agreement.",
+  "future_thread_rule": "Load Declaration 013 and this dataset with Declaration 012 and the criminal-first graphs. Re-grade each edge whenever native documents confirm, limit or refute it; never transfer mens rea across an edge by association."
+}

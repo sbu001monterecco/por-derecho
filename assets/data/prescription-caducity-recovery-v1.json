@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0",
+  "controlDate": "2026-08-26",
+  "status": "PUBLIC-READY-WITH-QUALIFICATION",
+  "id": "PRESCRIPTION-CADUCITY-RECOVERY-20260826",
+  "coreRule": {
+    "es": "No existe un único reloj: prescripción penal, prescripción civil, caducidad, responsabilidad del administrador concursal y responsabilidad patrimonial de la Administración de Justicia requieren análisis separados por acción, sujeto y acto.",
+    "en": "There is no single clock: criminal prescription, civil limitation, caducity, insolvency-administrator liability and administration-of-justice damages require separate claim-, party- and act-specific analysis."
+  },
+  "clockClasses": [
+    {
+      "id": "CRIMINAL",
+      "basis": "Código Penal arts. 131-132",
+      "rule": "Period depends on the statutory maximum penalty and ordinarily runs from commission; special start rules apply to legally established continuing/permanent/habitual offences.",
+      "interruption": "Judicial direction against a sufficiently identified suspected person interrupts; a court-filed complaint/querella naming a person can suspend computation for up to six months under art. 132.2 pending a qualifying judicial resolution.",
+      "boundary": "Ordinary Fiscalía, police or administrative reporting must not be described as automatically interrupting criminal prescription."
+    },
+    {
+      "id": "CIVIL_PRESCRIPTION",
+      "basis": "Código Civil arts. 1964, 1968, 1969, 1973; LECrim arts. 111, 114; Supreme Court same-facts criminal/civil doctrine",
+      "rule": "Accrual and interruption depend on the cause of action. Same-facts criminal proceedings can delay commencement or interrupt civil prescription where they legally prevent or encompass the civil claim.",
+      "interruption": "Court exercise, extrajudicial creditor demand or debtor acknowledgment under art. 1973; criminal proceedings can have additional same-facts effects under Supreme Court doctrine.",
+      "boundary": "Not a universal tolling rule for every civil claim."
+    },
+    {
+      "id": "CADUCITY",
+      "basis": "Examples: CC arts. 1535 and 1524; LPH art. 18.3",
+      "rule": "Strict short periods require their own trigger analysis.",
+      "boundary": "Criminal proceedings do not automatically suspend caducity. LO 1/2025/MASC can be relevant to a live right only under its statutory conditions and does not automatically revive an expired right."
+    },
+    {
+      "id": "AC_LIABILITY",
+      "basis": "Ley 22/2003 art. 36; TRLC arts. 94-98",
+      "rule": "Estate-damage administrator liability has a special four-year prescription framework tied to knowledge of damage and, in any event, cessation in office; direct individual actions remain separately preserved.",
+      "boundary": "No single global AC limitation date; act, claimant, harm and action type must be separated."
+    },
+    {
+      "id": "JUSTICE_STATE_LIABILITY",
+      "basis": "LOPJ arts. 292-293",
+      "rule": "Judicial error and abnormal functioning have special procedural predicates and short periods, including the three-month error-declaration route and one-year compensation prescription.",
+      "boundary": "Do not merge State liability with personal criminal allegations or publish exact deadline calculations without counsel review."
+    }
+  ],
+  "criminalRecovery": {
+    "basis": ["CP arts. 109-112", "CP art. 121", "CP art. 122"],
+    "remedies": [
+      "restitution",
+      "repair",
+      "material damages",
+      "moral damages where legally available",
+      "subsidiary public-entity civil liability where statutory conditions are met",
+      "restitution/resarcimiento from a participant for profit up to the value of participation"
+    ],
+    "boundary": "A later increase in hotel value is not automatically criminal proceeds, unjust enrichment or recoverable loss."
+  },
+  "interimRelief": {
+    "criminal": [
+      "LECrim art. 589 security and embargo for possible pecuniary liabilities",
+      "LECrim art. 764 precautionary measures in abbreviated proceedings",
+      "CP art. 127 octies seizure/embargo/deposit to secure confiscation"
+    ],
+    "civil": [
+      "LEC arts. 721, 727, 728 precautionary framework",
+      "LPH art. 18.4 interim suspension of challenged Community resolutions"
+    ],
+    "controlQuestion": "What asset, title, income stream, evidence, Registry position or economic value could become harder to restore if no proportionate measure is taken before final judgment?"
+  },
+  "requiredLedgers": [
+    "criminal judicialisation ledger",
+    "civil interruption ledger",
+    "caducity/Day-Zero ledger",
+    "claim-specific damages and remedy ledger",
+    "no-double-counting quantitative denominator"
+  ],
+  "publicProhibitions": [
+    "A Fiscalía complaint stops criminal prescription.",
+    "A criminal case freezes every civil deadline.",
+    "Ongoing economic harm means the offence is legally continuing.",
+    "All retracto/tanteo rights remain alive because there are criminal proceedings.",
+    "All insolvency-administrator acts share one limitation date.",
+    "A criminal allegation automatically freezes CAM/HNT/MYND assets.",
+    "The full current hotel value is automatically recoverable damages."
+  ],
+  "privateCounselLedgerFields": [
+    "claim_id",
+    "claimant",
+    "defendant",
+    "act_or_omission",
+    "legal_basis",
+    "remedy",
+    "clock_type",
+    "statutory_period",
+    "law_in_force_date",
+    "accrual_or_day_zero",
+    "knowledge_date",
+    "criminal_same_facts_proceeding",
+    "court_filing_date",
+    "judicialisation_resolution_date",
+    "archive_finality_notification_date",
+    "judicial_or_extrajudicial_interruption",
+    "masc_event",
+    "ac_cessation_date_if_relevant",
+    "status",
+    "conservative_internal_action_date",
+    "interim_measure_candidate",
+    "missing_evidence"
+  ],
+  "publicationRule": "Do not publish conservative internal action dates or claim a clock status without identifying the exact legal basis, trigger and supporting act."
+}

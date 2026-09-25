@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sbu001monterecco.github.io/por-derecho/schemas/chatgpt-export-import-manifest-v1.schema.json",
+  "title": "Por Derecho ChatGPT export import manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "batch_id",
+    "imported_at_utc",
+    "source_filename",
+    "source_file_sha256",
+    "conversations_member",
+    "conversations_json_sha256",
+    "source_copied_into_vault",
+    "conversation_count",
+    "visible_message_count",
+    "mapping_node_count",
+    "included_roles",
+    "raw_publication_status",
+    "workspace_assignment_status"
+  ],
+  "properties": {
+    "schema": {"const": "por-derecho.chatgpt-export-import-manifest.v1"},
+    "batch_id": {"pattern": "^PD-CGX-[0-9]{8}-[A-Za-z0-9_-]{1,32}$"},
+    "imported_at_utc": {"type": "string", "format": "date-time"},
+    "source_filename": {"type": "string", "minLength": 1},
+    "source_file_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "conversations_member": {"type": "string", "minLength": 1},
+    "conversations_json_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "source_copied_into_vault": {"type": "boolean"},
+    "copied_source_path": {"type": ["string", "null"]},
+    "conversation_count": {"type": "integer", "minimum": 0},
+    "visible_message_count": {"type": "integer", "minimum": 0},
+    "mapping_node_count": {"type": "integer", "minimum": 0},
+    "included_roles": {
+      "type": "array",
+      "items": {"enum": ["user", "assistant", "system", "tool"]}
+    },
+    "raw_publication_status": {"const": "PRIVATE_ONLY_DO_NOT_PUBLISH"},
+    "workspace_assignment_status": {"const": "UNASSIGNED_REVIEW_REQUIRED"}
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "por-derecho.equilibrium-acceptance.v1",
+  "control_id": "PD-EQ-20260921-PHASE2",
+  "observed_at": "2026-09-21T22:06:15Z",
+  "repository": "sbu001monterecco/por-derecho",
+  "baseline": {
+    "main_sha": "e6447fbe3639ed78263889221affb316c31960f3",
+    "open_pull_requests_live_verified": 56,
+    "open_pr_verification_method": "GitHub open-PR search followed by individual live state readback for all 56 returned PRs",
+    "control_tower_issue": 1428,
+    "governance_observation_main_sha": "e6447fbe3639ed78263889221affb316c31960f3",
+    "governance_observation_open_prs_before_this_candidate": 56,
+    "governance_observation_active_integration_before_this_candidate": 0,
+    "governance_census": ".github/governance/EQUILIBRIUM_PHASE2_PR_CENSUS.json"
+  },
+  "acceptance": [
+    {
+      "id": "EQ-01",
+      "criterion": "Candidate is based on current remote main",
+      "state": "PASS_AT_CREATION",
+      "evidence": "base_main_sha e6447fbe3639ed78263889221affb316c31960f3",
+      "merge_rule": "Recheck immediately before merge; any main advance requires reconciliation and fresh checks."
+    },
+    {
+      "id": "EQ-02",
+      "criterion": "Exactly one Phase-2 PR-census integration lane",
+      "state": "PASS_WHILE_LEASE_LIVE",
+      "evidence": ".github/governance/ACTIVE_WRITER_LEASE.json"
+    },
+    {
+      "id": "EQ-03",
+      "criterion": "Rendered public/runtime/deployment paths unchanged",
+      "state": "PASS_IN_PROPOSED_DIFF",
+      "evidence": "Three .github/governance paths only; public-impact classifier and complete diff must confirm zero protected rendered/runtime paths."
+    },
+    {
+      "id": "EQ-04",
+      "criterion": "Presidencia publication remains outside the transaction",
+      "state": "PASS",
+      "evidence": "Explicit user boundary and candidate path allowlist."
+    },
+    {
+      "id": "EQ-05",
+      "criterion": "Open pull-request denominator is live-reconciled",
+      "state": "PASS_PRIMARY_DISPOSITION_COMPLETE",
+      "evidence": "56 open PRs individually read back as open and assigned exactly one primary handling disposition.",
+      "open_work": "Proposition/file-level unique-delta review remains open for all 56; no backlog PR is merged or closed here."
+    },
+    {
+      "id": "EQ-06",
+      "criterion": "Publicly served operational snapshots are not altered by a governance-only transaction",
+      "state": "PASS_DEFERRED_BY_PUBLIC_SURFACE_BOUNDARY",
+      "evidence": "The repository uses .nojekyll and live workflows read /ops routes from the public host; all ops paths were removed from this candidate after the conservative public-impact gate returned YES_OR_UNKNOWN.",
+      "boundary": "CURRENT_STATE, CURRENT_COLLABORATION_STATE, PR_RECONCILIATION_LEDGER, PRODUCTION_STATUS and RELEASE_LEDGER remain stale checked-in observations. Refresh requires a separately authorized public-surface transaction."
+    },
+    {
+      "id": "EQ-07",
+      "criterion": "All applicable exact-head gates are green",
+      "state": "PENDING_CI",
+      "merge_rule": "Do not merge if any applicable required or changed-surface check is pending, cancelled, skipped unexpectedly or failing."
+    },
+    {
+      "id": "EQ-08",
+      "criterion": "Control Tower contains candidate and closeout receipts",
+      "state": "PENDING_PR_AND_POST_MERGE",
+      "merge_rule": "Register the candidate before merge and record exact tested head, merge SHA and gate outcome after merge."
+    }
+  ],
+  "current_decision": "PHASE2_GOVERNANCE_CENSUS_WHEN_MERGED_AND_VERIFIED",
+  "reason": "The proposed transaction removes primary-routing ambiguity from the full 56-PR baseline denominator while preserving the no-public-change boundary. Exact-head CI, current-main recheck, merge and controller verification remain required before the decision becomes effective on main; public operational-snapshot refresh remains open.",
+  "claim_boundary": "This record measures repository coordination only. It is not a claim that the evidence corpus, legal programme, GitLab recovery, backup programme or Presidencia work is complete."
+}

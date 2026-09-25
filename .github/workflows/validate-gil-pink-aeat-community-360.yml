@@ -1,0 +1,59 @@
+name: Validate Gil Pink AEAT Community 360
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'CHATGPT_START_HERE.md'
+      - 'archive/declarations/**'
+      - 'archive/CORRECTION_REGISTER.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER.md'
+      - 'archive/GIL_PINK_TOTAL_NULLITY_AEAT_NEUTRALITY_COMMUNITY_360_REVERSE_ENGINEERING_22AUG2026.md'
+      - 'archive/SUN_PARK_COMMUNITY_PAMANIL_COMMUNICATIONS_DIGITISATION_REGISTER_22AUG2026.md'
+      - 'archive/THREAD_DELETION_CONTINUITY_AUDIT_GIL_PINK_NULLITY_AEAT_COMMUNITY_22AUG2026.md'
+      - 'evidence/community/ACTA_22JUN2011_PUBLIC_REDACTED_EDITION.md'
+      - 'evidence/community/COMMUNITY_PAMANIL_COMMUNICATIONS_PUBLIC_DIGITAL_INDEX.md'
+      - 'en/community-instrumentalisation/**'
+      - 'es/comunidad-instrumentalizacion/**'
+      - 'en/pink-canary-aeat-national-court/**'
+      - 'es/pink-canary-aeat-audiencia-nacional/**'
+      - 'sitemap.xml'
+      - 'sitemap-community-governance.xml'
+      - 'scripts/validate_gil_pink_aeat_community_360.py'
+      - '.github/workflows/validate-gil-pink-aeat-community-360.yml'
+  pull_request:
+    paths:
+      - 'CHATGPT_START_HERE.md'
+      - 'archive/declarations/**'
+      - 'archive/CORRECTION_REGISTER.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER.md'
+      - 'archive/GIL_PINK_TOTAL_NULLITY_AEAT_NEUTRALITY_COMMUNITY_360_REVERSE_ENGINEERING_22AUG2026.md'
+      - 'archive/SUN_PARK_COMMUNITY_PAMANIL_COMMUNICATIONS_DIGITISATION_REGISTER_22AUG2026.md'
+      - 'archive/THREAD_DELETION_CONTINUITY_AUDIT_GIL_PINK_NULLITY_AEAT_COMMUNITY_22AUG2026.md'
+      - 'evidence/community/ACTA_22JUN2011_PUBLIC_REDACTED_EDITION.md'
+      - 'evidence/community/COMMUNITY_PAMANIL_COMMUNICATIONS_PUBLIC_DIGITAL_INDEX.md'
+      - 'en/community-instrumentalisation/**'
+      - 'es/comunidad-instrumentalizacion/**'
+      - 'en/pink-canary-aeat-national-court/**'
+      - 'es/pink-canary-aeat-audiencia-nacional/**'
+      - 'sitemap.xml'
+      - 'sitemap-community-governance.xml'
+      - 'scripts/validate_gil_pink_aeat_community_360.py'
+      - '.github/workflows/validate-gil-pink-aeat-community-360.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Validate controlling evidence, corrections and bilingual routes
+        run: python scripts/validate_gil_pink_aeat_community_360.py

@@ -1,0 +1,640 @@
+{
+  "schema": "por-derecho.dp1901-eg745-fiscal-superior-action-state.v1",
+  "control_date": "2026-09-19",
+  "repository_layer": "github-active-during-gitlab-block",
+  "filing_status": {
+    "dp1901_judicial_response": "NOT_VERIFIED_FILED",
+    "fiscal_superior_notice": "DRAFT_NOT_FILED",
+    "fge_inspeccion_incorporation_copy": "DRAFT_NOT_FILED",
+    "eg745_successor": "PREPARED_NOT_VERIFIED_FILED"
+  },
+  "current_fiscal_superior": {
+    "name": "Jaime Serrano-Jover González",
+    "status": "SOURCE_VERIFIED_CURRENT_OFFICE_HOLDER",
+    "appointment": "Real Decreto 428/2026, 27 May 2026",
+    "sources": [
+      "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-11484",
+      "https://www.fiscal.es/w/fiscal-superior-canarias"
+    ]
+  },
+  "institutional_basis": {
+    "eomf": "https://www.boe.es/buscar/act.php?id=BOE-A-1982-837",
+    "article_13_2": "Fiscal Superior exercises ordinary inspection of Fiscalías in territorial area",
+    "article_22_4": "Fiscal Superior heads and represents Ministerio Fiscal in the Autonomous Community",
+    "article_22_7": "Provincial Fiscal chiefs are hierarchically subordinate to Fiscal Superior"
+  },
+  "controlling_dp1901_state": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING",
+  "three_tracks": [
+    "DP1901 judicial response",
+    "urgent Fiscal Superior competence/preservation/attribution notice",
+    "EG745 successor response with FGE/Inspection incorporation"
+  ],
+  "core_questions": [
+    "Who authored the 29 July Fiscal report?",
+    "Which Fiscalía and what assignment authorised the act?",
+    "What corpus did the Fiscal receive?",
+    "How was Article 73.3.b LOPJ / aforamiento treated?",
+    "What is the certified origin and current destination of Ref21?",
+    "How and when did Ref24/DIP2 become associated with DP1901?",
+    "What exact allegations does the 14 September sobreseimiento libre purport to extinguish?"
+  ],
+  "analytical_posture": {
+    "no_presumption_of_neutrality": true,
+    "no_presumption_of_regular_operation": true,
+    "no_presumption_of_good_faith": true,
+    "no_presumption_of_absence_of_external_influence": true,
+    "no_presumption_of_criminal_guilt": true,
+    "actor_specific_proof_required": true
+  },
+  "linked_files": [
+    "ops/DP1901_EG745_MF_IMMEDIATE_ACTION_MATRIX_18SEP2026.md",
+    "prompts/DP1901_EG745_FISCAL_SUPERIOR_MASTER_WORK_PROMPT_19SEP2026.md",
+    "drafts/fiscalia/2026-09-19_FISCAL_SUPERIOR_DP1901_URGENT_NOTICE_DRAFT.md",
+    "drafts/fiscalia/2026-09-19_EG745_FISCAL_SUPERIOR_INCORPORATION_COVER_DRAFT.md",
+    "evidence/fiscalia/2026/DP1901_FISCAL_SUPERIOR_COMPETENCE_CULPABILITY_MATRIX_19SEP2026.md",
+    "drafts/fiscalia/2026-09-18_EG745_DP1901_SUPERVENING_EVENT_PATCH_DRAFT.md"
+  ],
+  "gitlab_sync": {
+    "state": "QUEUED_WHILE_ACCOUNT_BLOCKED",
+    "rule": "GitHub current layer controls until GitLab access is restored; public GitLab Pages is comparator only."
+  },
+  "ref21_origin_control": {
+    "status": "CONTEMPORANEOUSLY_CORROBORATED",
+    "basis": [
+      "25-Jun 11:23 email to Procuradora María Díaz Vecino records autonomous Ref21 private-actor filing",
+      "9-Jul correspondence maps 1901 to CAM/private Community matter and 1956 to AC matter",
+      "9-Jul stamped private-actor tender under DP1901/Plaza6"
+    ],
+    "open": "Official court electronic creation/reparto event and later Ref24 association mechanism"
+  },
+  "weekend_response_objective": {
+    "source": "GIL_MARER_EXPRESS_INSTRUCTION_19SEP2026",
+    "target_date": "2026-09-20",
+    "target_period": "EVENING_AT_LATEST",
+    "timezone": "Atlantic/Canary",
+    "exact_hour": null,
+    "is_legal_deadline": false,
+    "scope": [
+      "personally available DP1901 notices/requests",
+      "distinct EG745 successor response"
+    ],
+    "sequence": [
+      "Complete and delimit personally controlled DP1901 package; preserve finite residuals",
+      "Freeze a reusable fact/source/open-question/request module",
+      "Complete EG745 successor without waiting indefinitely for authority replies"
+    ],
+    "counsel_lane": {
+      "matter": "DP1901 judicial remedy against Auto14Sep2026",
+      "state": "COUNSEL_DEPENDENT",
+      "reviewers": [
+        "Javier Sixto",
+        "Carlos Llamas Sanz"
+      ],
+      "excluded_from_personal_count": true
+    },
+    "filing_proof": [
+      "exact submitted bytes",
+      "official receipt"
+    ],
+    "no_new_filing_claim": true,
+    "court_deadline_rule": "Counsel must determine operative notification, standing, representation and remedy period; personal notices do not suspend that period."
+  },
+  "personal_action_census": {
+    "status": "RECOVERED_WORKING_CENSUS_NOT_EXHAUSTIVE",
+    "control_date": "2026-09-19",
+    "direct_candidate_count": 13,
+    "connected_route_count": 20,
+    "exhaustive_personal_total": null,
+    "counts_are_not_necessary_new_filings": true,
+    "historical_18_route_list": "NOT_FULLY_RECOVERED; website-surface count is not action count",
+    "deduplication": "Distinct recipient/function/proceeding; exclude covers, duplicate copies, internal updates and counsel-dependent court remedies.",
+    "source_base": "e22cd1a349b57fc81420105c9e1611afb65efd2a",
+    "direct_candidates": [
+      {
+        "id": "A01",
+        "recipient_en": "Decanato / Registro y Reparto, Tribunal de Instancia de Las Palmas",
+        "recipient_es": "Decanato / Registro y Reparto",
+        "function_en": "Intake and allocation record custodian",
+        "purpose_en": "Certify the initiating document, intake/scan dates, daily references, initial destination, NIG/IUP creation and association history for Ref.21, Ref.24 and the dependent supplement.",
+        "purpose_es": "Documento iniciador; reparto y asociación de Ref.21 y Ref.24.",
+        "level": "Canary judicial",
+        "state": "DRAFT",
+        "personal_scope_en": "No representation needed merely to ask; access/official certification may be restricted or require the procedural channel."
+      },
+      {
+        "id": "A02",
+        "recipient_en": "LAJ / Oficina Judicial, Plaza 6, Sección de Instrucción",
+        "recipient_es": "LAJ / Oficina Judicial de Plaza 6",
+        "function_en": "Access to the actual DP1901 docket and notification record",
+        "purpose_en": "Request existing file index, initiating act, 12 July order, transmitted corpus, 29 July report, native 14 September Auto and official notification/access records.",
+        "purpose_es": "Índice de DP1901, corpus, informe fiscal, Auto nativo y notificación; acceso sujeto al cauce aplicable.",
+        "level": "Canary judicial",
+        "state": "DRAFT",
+        "personal_scope_en": "Personal request possible on legitimate/direct interest; full-file access is not guaranteed. Counsel may be necessary for procedural relief or contested access."
+      },
+      {
+        "id": "A03",
+        "recipient_en": "CGPJ — Comisión Permanente / Sección de Recursos; functional referral to Promotor/Inspección",
+        "recipient_es": "CGPJ — Alzada 286/2026",
+        "function_en": "Existing Alzada 286/2026 / DI169/2026 and judicial-service oversight",
+        "purpose_en": "Add the Auto as a supervening event; request preservation and classification, with formal segregation if Plaza6 conduct falls outside the existing appeal.",
+        "purpose_es": "Hecho sobrevenido, preservación y clasificación entre recursos, disciplina e inspección.",
+        "level": "State",
+        "state": "DRAFT",
+        "personal_scope_en": "Gil can supplement his own administrative/governance matter; no lawyer/procurador needed for this notice."
+      },
+      {
+        "id": "A04",
+        "recipient_en": "Secretaría de Gobierno del TSJC",
+        "recipient_es": "Secretaría de Gobierno del TSJC",
+        "function_en": "Territorial supervision of LAJ services; existing Exp.Gub.38/2026",
+        "purpose_en": "Supplement the existing supervisory record with the DP1901 collision and test the earlier statement that ATLANTE preserves traceability.",
+        "purpose_es": "Supervisión territorial de la Oficina Judicial y trazabilidad en Exp.Gub.38/2026.",
+        "level": "Canary judicial administration",
+        "state": "DRAFT",
+        "personal_scope_en": "Personal supplemental supervisory submission; no instruction to a LAJ on the substance of certification in a case."
+      },
+      {
+        "id": "A05",
+        "recipient_en": "Secretaría de Coordinación Provincial de Las Palmas",
+        "recipient_es": "Coordinación Provincial de LAJ",
+        "function_en": "Operational coordination of LAJ/common services",
+        "purpose_en": "Identify the responsible services, routing handoffs and preservation implementation for the same finite records.",
+        "purpose_es": "Identificación y coordinación de los servicios que recibieron, digitalizaron y remitieron el material.",
+        "level": "Canary judicial administration",
+        "state": "DRAFT",
+        "personal_scope_en": "Personally initiable coordination request; no power to dictate court merits."
+      },
+      {
+        "id": "A06",
+        "recipient_en": "Competent national LAJ superior / Ministerio de Justicia administrative chain",
+        "recipient_es": "Jefatura nacional de LAJ / Ministerio de Justicia",
+        "function_en": "National LAJ hierarchy and review of the existing TSJC administrative decision",
+        "purpose_en": "Add the Auto to the existing national supervisory/alzada chain; request reasoned treatment of territorial/provincial coordination and records.",
+        "purpose_es": "Incorporación al expediente administrativo y supervisión nacional dentro de su competencia.",
+        "level": "State",
+        "state": "DRAFT",
+        "personal_scope_en": "Gil can supplement an administrative appeal in his own name; a new contentious court challenge is separate and excluded."
+      },
+      {
+        "id": "A07",
+        "recipient_en": "DG competente en relaciones con la Administración de Justicia — Gobierno de Canarias / ATLANTE technical custodian",
+        "recipient_es": "Administración de Justicia de Canarias / ATLANTE",
+        "function_en": "Technical custody, retention and incident management",
+        "purpose_en": "Preserve the defined logs and identify controller/custodian, retention policies and any relevant documented incident; produce lawful administrative information.",
+        "purpose_es": "Custodia técnica, conservación de registros y aclaración de incidencias documentadas.",
+        "level": "Canary administration",
+        "state": "DRAFT",
+        "personal_scope_en": "Personally initiable preservation/administrative request; disclosure is subject to judicial custody, security and data limits."
+      },
+      {
+        "id": "A08",
+        "recipient_en": "Fiscalía Provincial de Las Palmas — Chief/registry/file custodian",
+        "recipient_es": "Fiscalía Provincial de Las Palmas",
+        "function_en": "Local custody and allocation search",
+        "purpose_en": "Determine whether this office authored/received the 29 July report; identify author, assignment, corpus, outgoing transmission and relevant DIP2 material, or give a bounded negative search result.",
+        "purpose_es": "Búsqueda del informe de 29 de julio, autor, asignación y corpus; no se presume su autoría provincial.",
+        "level": "Canary prosecutorial",
+        "state": "DRAFT",
+        "personal_scope_en": "Gil can present a notice/request; entitlement to full internal material is not presumed. No accusation as a party is created."
+      },
+      {
+        "id": "A09",
+        "recipient_en": "Fiscal Superior de Canarias / Fiscalía de la Comunidad Autónoma",
+        "recipient_es": "Fiscal Superior de Canarias",
+        "function_en": "Territorial headship and ordinary inspection; DIP2 competence history",
+        "purpose_en": "Notify the Auto and collision; identify the report’s author/office and independently examine competence, DIP2 correction history and routing within lawful powers.",
+        "purpose_es": "Revisión territorial de competencia, atribución, DIP2 y preservación, dentro de sus potestades.",
+        "level": "Canary prosecutorial",
+        "state": "DRAFT",
+        "personal_scope_en": "Personally initiable notice; cannot require the Fiscal Superior to revoke the court Auto."
+      },
+      {
+        "id": "A10",
+        "recipient_en": "FGE / Inspección Fiscal — E.G.745/2026",
+        "recipient_es": "FGE / Inspección Fiscal",
+        "function_en": "National inspection: supervening incorporation and preservation",
+        "purpose_en": "Formally associate the Auto, dated Fiscal act and Fiscal Superior notice with EG745; seek identification from institutional records before determination.",
+        "purpose_es": "Incorporación del hecho sobrevenido a E.G.745; distinta de la respuesta de fondo.",
+        "level": "State prosecutorial",
+        "state": "DRAFT",
+        "personal_scope_en": "Personally initiable incorporation/preservation notice; any administrative contentious remedy excluded."
+      },
+      {
+        "id": "A11",
+        "recipient_en": "Presidencia / Sala de Gobierno del TSJC",
+        "recipient_es": "Presidencia / Sala de Gobierno del TSJC",
+        "function_en": "Governance of allocation rules and institutional functioning",
+        "purpose_en": "Request the applicable reparto rules, approved exceptions and governance handling of the Ref24 route/DP1901 identity problem.",
+        "purpose_es": "Normas de reparto y función gubernativa; no revisión del mérito del Auto.",
+        "level": "Canary judicial governance",
+        "state": "DRAFT",
+        "personal_scope_en": "Personally initiable governance request; merits/jurisdiction challenge stays with counsel."
+      },
+      {
+        "id": "A12",
+        "recipient_en": "Defensor del Pueblo",
+        "recipient_es": "Defensor del Pueblo",
+        "function_en": "Parliamentary supervision of administrative service and general problems",
+        "purpose_en": "Present a tightly limited complaint about administrative traceability, express responses and coordination, disclosing pending judicial/administrative routes.",
+        "purpose_es": "Problemas administrativos generales, coordinación y respuesta expresa; límites respecto de cuestiones judiciales pendientes.",
+        "level": "State",
+        "state": "DRAFT",
+        "personal_scope_en": "No lawyer/procurador required. Individual issues pending judicial decision are outside its examination; retain only admissible general/administrative scope."
+      },
+      {
+        "id": "A13",
+        "recipient_en": "Fiscalía Especial contra la Corrupción y la Criminalidad Organizada",
+        "recipient_es": "Fiscalía Anticorrupción",
+        "function_en": "Specialised competence screening; cure of existing signature/formality defect",
+        "purpose_en": "Reconcile the existing submission and signature-cure state; add the Auto/collision as a scoped development relevant to the economic-crime and preservation hypothesis.",
+        "purpose_es": "Estado y subsanación de la comunicación existente; examen competencial del módulo económico y preservación.",
+        "level": "State prosecutorial",
+        "state": "DRAFT",
+        "personal_scope_en": "A signed denuncia/notice can be personal. A querella or judicial attempt to defeat finality is counsel-dependent."
+      }
+    ],
+    "connected_routes": [
+      {
+        "id": "B01",
+        "recipient_en": "AEAT — competent tax/inspection unit",
+        "recipient_es": "AEAT — función tributaria",
+        "function_en": "Tax information / enforcement, distinct from access",
+        "state": "DRAFT",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B02",
+        "recipient_en": "CTBG — complaint concerning AEAT 001-0113069",
+        "recipient_es": "CTBG — AEAT001-0113069",
+        "function_en": "Review of refusal/delay in access to public information",
+        "state": "RECEIPT CONTROLLED",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B03",
+        "recipient_en": "CTBG — joint AEAT 001-0112793 + 001-0113066 complaint",
+        "recipient_es": "CTBG — reclamación conjunta AEAT001-0112793/001-0113066",
+        "function_en": "Access review of the other two joined requests",
+        "state": "RECEIPT CONTROLLED",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B04",
+        "recipient_en": "Comisionado de Transparencia de Canarias — Hacienda Res.28/2026 appeal",
+        "recipient_es": "Comisionado canario — Hacienda Res.28/2026",
+        "function_en": "Review of administrative-information refusal",
+        "state": "DRAFT",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B05",
+        "recipient_en": "CNMV — RICPE/SCR supervisory and infringement-reporting function",
+        "recipient_es": "CNMV — supervisión y posibles infracciones",
+        "function_en": "Regulated-entity supervision and exceptional measures screening",
+        "state": "DRAFT",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B06",
+        "recipient_en": "CNMV — public-information request2026114903",
+        "recipient_es": "CNMV — acceso 2026114903",
+        "function_en": "Access procedure, separate from confidential infringement reporting",
+        "state": "RECEIPT CONTROLLED",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B07",
+        "recipient_en": "Gobierno de Canarias — regional-incentives processing/custody unit",
+        "recipient_es": "Incentivos regionales — unidad canaria",
+        "function_en": "Regional administration of GC/836/P06 source file",
+        "state": "DRAFT",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B08",
+        "recipient_en": "State regional-incentives directorate",
+        "recipient_es": "Incentivos regionales — órgano estatal",
+        "function_en": "Grant decision, conditions, payment and compliance custody",
+        "state": "DRAFT",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B09",
+        "recipient_en": "Canary Finance / EU-relations body holding FEDER records",
+        "recipient_es": "Fondos europeos — unidad canaria",
+        "function_en": "Regional operation/certification and EU-funds custody",
+        "state": "DRAFT",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B10",
+        "recipient_en": "Dirección General de Fondos Europeos / exact State managing function",
+        "recipient_es": "Fondos europeos — órgano estatal",
+        "function_en": "State programme/management records and EU certification chain",
+        "state": "DRAFT",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B11",
+        "recipient_en": "Intervención General de Canarias",
+        "recipient_es": "Intervención General de Canarias",
+        "function_en": "Internal public-finance control",
+        "state": "DRAFT",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B12",
+        "recipient_en": "Audiencia de Cuentas de Canarias",
+        "recipient_es": "Audiencia de Cuentas de Canarias",
+        "function_en": "External public-sector audit/competence delimitation",
+        "state": "RECEIPT CONTROLLED",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B13",
+        "recipient_en": "Cabildo de Lanzarote / tourism file custodian",
+        "recipient_es": "Cabildo de Lanzarote — Turismo",
+        "function_en": "Existing tourism/operator administrative records",
+        "state": "DRAFT",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B14",
+        "recipient_en": "Gobierno de Canarias — tourism register / inspection custodian",
+        "recipient_es": "Registro e inspección turística de Canarias",
+        "function_en": "Autonomous register and inspection records",
+        "state": "DRAFT",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B15",
+        "recipient_en": "Ayuntamiento de Yaiza",
+        "recipient_es": "Ayuntamiento de Yaiza",
+        "function_en": "Municipal application/works/authority records",
+        "state": "DRAFT",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B16",
+        "recipient_en": "Comisionado de Transparencia de Canarias — Yaiza access appeal",
+        "recipient_es": "Comisionado canario — acceso Yaiza",
+        "function_en": "Review of municipal access handling",
+        "state": "DEPENDENT ON NEW EVIDENCE",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B17",
+        "recipient_en": "SEPI / FASEE — Meeting Point support-operation custodian",
+        "recipient_es": "SEPI / FASEE",
+        "function_en": "Public-credit conditions, disclosure, monitoring and exposure",
+        "state": "DRAFT",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B18",
+        "recipient_en": "CNMC — C/1549/25 / Portobello–BLUESEA–MPS",
+        "recipient_es": "CNMC — C/1549/25",
+        "function_en": "Competition-control file and permitted public records",
+        "state": "DRAFT",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B19",
+        "recipient_en": "CTBG — planned challenge concerning AC2000001007594",
+        "recipient_es": "CTBG — AC2000001007594",
+        "function_en": "Review of a distinct European-Funds information inadmissibility/refusal",
+        "state": "DEPENDENT ON NEW EVIDENCE",
+        "direct_new_dp1901_filing_required": null
+      },
+      {
+        "id": "B20",
+        "recipient_en": "Gerencia Regional del Catastro de Canarias",
+        "recipient_es": "Gerencia Regional del Catastro de Canarias",
+        "function_en": "Cadastral information and possible verification/discrepancy correction",
+        "state": "DRAFT",
+        "direct_new_dp1901_filing_required": null
+      }
+    ],
+    "conditional_or_excluded": [
+      {
+        "control": "C01",
+        "recipient_or_lane": "Judicial remedy against Auto14 September",
+        "state": "DEPENDENT ON COUNSEL"
+      },
+      {
+        "control": "C02",
+        "recipient_or_lane": "Full E.G.745 successor merits/reconsideration response",
+        "state": "DRAFT"
+      },
+      {
+        "control": "C03",
+        "recipient_or_lane": "Data protection: judicial CGPJ / prosecutorial FGE / administrative controller or AEPD",
+        "state": "DEPENDENT ON NEW EVIDENCE"
+      },
+      {
+        "control": "C04",
+        "recipient_or_lane": "IGAE / SNCA —141-2026-IRR02",
+        "state": "DEPENDENT ON NEW EVIDENCE"
+      },
+      {
+        "control": "C05",
+        "recipient_or_lane": "Tribunal de Cuentas",
+        "state": "DEPENDENT ON NEW EVIDENCE"
+      },
+      {
+        "control": "C06",
+        "recipient_or_lane": "OLAF",
+        "state": "DEPENDENT ON NEW EVIDENCE"
+      },
+      {
+        "control": "C07",
+        "recipient_or_lane": "EPPO / Fiscalía Europea and Unidad de Apoyo",
+        "state": "DEPENDENT ON NEW EVIDENCE"
+      },
+      {
+        "control": "C08",
+        "recipient_or_lane": "European Commission / precise FEDER management or audit authority",
+        "state": "DEPENDENT ON NEW EVIDENCE"
+      },
+      {
+        "control": "C09",
+        "recipient_or_lane": "SEPBLAC",
+        "state": "DEPENDENT ON NEW EVIDENCE"
+      },
+      {
+        "control": "C10",
+        "recipient_or_lane": "ORGA",
+        "state": "DUPLICATE / MERGE INTO OTHER ACTION"
+      },
+      {
+        "control": "C11",
+        "recipient_or_lane": "Guardia Civil/UCO; Policía/UDEF; cybercrime",
+        "state": "DEPENDENT ON NEW EVIDENCE"
+      },
+      {
+        "control": "C12",
+        "recipient_or_lane": "Fiscalía del Tribunal Supremo / other Fiscalía Especial",
+        "state": "DEPENDENT ON NEW EVIDENCE"
+      },
+      {
+        "control": "C13",
+        "recipient_or_lane": "Agencia Tributaria Canaria",
+        "state": "DEPENDENT ON NEW EVIDENCE"
+      },
+      {
+        "control": "C14",
+        "recipient_or_lane": "AIPI / Canary internal reporting / Diputado del Común",
+        "state": "DEPENDENT ON NEW EVIDENCE"
+      },
+      {
+        "control": "C15",
+        "recipient_or_lane": "Separate Canary Presidency / Council of Government blanket notice",
+        "state": "DUPLICATE / MERGE INTO OTHER ACTION"
+      },
+      {
+        "control": "C16",
+        "recipient_or_lane": "Separate FGE cover, Promotor cover, Fiscalía Community DIP2-only copy, Ministry general complaint",
+        "state": "DUPLICATE / MERGE INTO OTHER ACTION"
+      },
+      {
+        "control": "C17",
+        "recipient_or_lane": "Private custodians, professional bodies, Portfolio Requests81/82 and German insolvency routes",
+        "state": "DEPENDENT ON NEW EVIDENCE"
+      },
+      {
+        "control": "C18",
+        "recipient_or_lane": "DP1956; Concurso36/2012; AP appeals; pre-insolvency357/2024",
+        "state": "DEPENDENT ON COUNSEL"
+      },
+      {
+        "control": "C19",
+        "recipient_or_lane": "Repository/site/publication/backup actions",
+        "state": "DUPLICATE / MERGE INTO OTHER ACTION"
+      },
+      {
+        "control": "C20",
+        "recipient_or_lane": "Comisión para Integridad Pública y Lucha contra la Corrupción / Viceconsejería de Justicia referral",
+        "state": "DRAFT"
+      },
+      {
+        "control": "C21",
+        "recipient_or_lane": "Canary labour authority / workforce records / ERE–ERTE and Social Courts",
+        "state": "DEPENDENT ON NEW EVIDENCE"
+      }
+    ],
+    "late_source": {
+      "pull_request": 1648,
+      "state": "UNMERGED_WORKER_SOURCE",
+      "subjects": [
+        "AC2000001007594 planned CTBG challenge",
+        "Catastro",
+        "workforce"
+      ],
+      "no_main_or_filing_upgrade": true
+    },
+    "source_controls": [
+      "ops/DP1901_EG745_MF_IMMEDIATE_ACTION_MATRIX_18SEP2026.md",
+      "ops/UNITARY_360_ACTION_REGISTER_27AUG2026.json",
+      "ASSET_RECOVERY_AUTHORITY_MATRIX_21AUG2026.json",
+      "INSTITUTIONAL_ACTIONS.md",
+      "ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.json",
+      "archive/CTBG_AEAT_FILINGS_16SEP2026.md"
+    ],
+    "public_routes": [
+      "es/dp-1901-2026/#response-programme-20260920",
+      "en/dp-1901-2026/#response-programme-20260920"
+    ]
+  },
+  "response_programme_publication": {
+    "control_date": "2026-09-19",
+    "marker": "response-programme-20260920",
+    "routes": [
+      "es/fiscalia-inspeccion-exp-gub-745-2026/",
+      "en/public-prosecution-inspection-exp-gub-745-2026/",
+      "es/eg-745-respuesta-inminente-matriz-fiscalia/",
+      "en/eg-745-imminent-response-prosecution-matrix/",
+      "es/tsj-canarias-exp-gub-38-2026/",
+      "en/tsj-canarias-exp-gub-38-2026/",
+      "es/ministerio-fiscal/",
+      "en/ministerio-fiscal/",
+      "es/dp-1901-2026-auto-14-septiembre-2026/",
+      "en/dp-1901-2026-order-14-september-2026/",
+      "es/control-21-denuncia-actores-privados-25-junio-2026/",
+      "en/control-21-private-actors-complaint-25-june-2026/",
+      "es/control-24-denuncia-juez-concurso-36-2012/",
+      "en/control-24-insolvency-judge-complaint-36-2012/",
+      "es/fiscalia-dip-2-2026/",
+      "en/fiscalia-dip-2-2026/",
+      "es/recuperacion-activos-intervencion-decomiso/",
+      "en/asset-recovery-intervention-confiscation/",
+      "es/dp-1901-2026/",
+      "en/dp-1901-2026/",
+      "es/cgpj-comision-permanente-sala-lectura/",
+      "en/cgpj-permanent-commission-reader-room/"
+    ],
+    "meaning": "Informational programme, not filing evidence"
+  },
+  "cross_institutional_upgrade_20260920": {
+    "status": "IMPLEMENTED_IN_WORKING_BRANCH_NOT_FILED_EXTERNALLY",
+    "canonical_matrix": "ops/2026-09-20_DP1901_EG745_COMMON_TRACEABILITY_REFERRAL_MATRIX.md",
+    "atlante_incident": {
+      "official_window": "2026-07-08/2026-07-17",
+      "location": "Las Palmas province",
+      "official_characterisation": "performance slowdown; system reportedly remained operational",
+      "evidential_rule": "competing technical explanation to test; no causal or manipulation inference without exact NIG/IUP logs"
+    },
+    "coordinated_inspection": {
+      "instrument": "CGPJ–FGE coordinated inspection agreement signed 2019-09-19",
+      "extension_until": "2027-09-19",
+      "use": "request express consideration for common institutional interface; no private right to compel assumed"
+    },
+    "fiscal_identification": {
+      "rules": [
+        "RMF 163",
+        "RMF 164",
+        "RMF 165",
+        "RMF 167",
+        "RMF 144 if criminal indicia arise"
+      ],
+      "point": "29-Jul Fiscal act is institutionally identifiable from allocation and file records; request internal reconstruction before treating absent external name as terminal"
+    },
+    "judicial_office_layer": [
+      "Decanato / Registro y Reparto",
+      "LAJ / Oficina Judicial Plaza 6",
+      "Presidencia / Sala de Gobierno TSJC",
+      "Secretaría de Gobierno / Coordinación Provincial LAJ",
+      "Canary ATLANTE technical custodian"
+    ],
+    "anti_fragmentation": "separate competences; preserve common fact spine; reason and trace lawful onward referrals",
+    "p0_request_pack": {
+      "status": "PREPARED_NOT_FILED",
+      "index": "drafts/2026-09-20_DP1901_EG745_P0_IMMEDIATE_REQUEST_PACK_INDEX.md",
+      "drafts": [
+        "drafts/judicial-admin/2026-09-20_DECANATO_REPARTO_DP1901_CERTIFICATION_REQUEST_DRAFT.md",
+        "drafts/judicial-admin/2026-09-20_PLAZA6_LAJ_DP1901_FILE_PRODUCTION_REQUEST_DRAFT.md",
+        "drafts/judicial-admin/2026-09-20_TSJC_SECRETARIA_GOBIERNO_DP1901_SUPPLEMENT_DRAFT.md",
+        "drafts/judicial-admin/2026-09-20_COORDINACION_PROVINCIAL_LAJ_DP1901_REQUEST_DRAFT.md",
+        "drafts/canarias/2026-09-20_ATLANTE_DP1901_PRESERVATION_REQUEST_DRAFT.md",
+        "drafts/fiscalia/2026-09-20_FISCALIA_PROVINCIAL_DP1901_REPORT_IDENTIFICATION_REQUEST_DRAFT.md",
+        "drafts/judicial-admin/2026-09-20_TSJC_SALA_GOBIERNO_REPARTO_RULES_REQUEST_DRAFT.md"
+      ],
+      "direct_candidate_census": {
+        "status": "13_OF_13_WORKING_CANDIDATES_HAVE_PREPARED_CORE_OR_RECIPIENT_DRAFT",
+        "warning": "preparedness count; not all are necessarily new filings or simultaneously appropriate",
+        "additional_drafts": [
+          "drafts/judicial-admin/2026-09-20_MINJUSTICIA_LAJ_DP1901_SUPERVISORY_SUPPLEMENT_DRAFT.md",
+          "drafts/institutions/2026-09-20_DEFENSOR_PUEBLO_DP1901_ADMIN_SERVICE_DRAFT.md",
+          "drafts/fiscalia/2026-09-20_ANTICORRUPCION_DP1901_SCOPED_UPDATE_DRAFT.md"
+        ]
+      }
+    },
+    "cgpj_package_control": {
+      "locked_package": "drafts/cgpj/2026-09-19_DP1901_CGPJ_RESPONSE_PROPOSED.md",
+      "locked_package_state": "RESTORED_BYTE_IDENTICAL_TO_VALIDATED_19SEP_PACKAGE",
+      "addendum": "drafts/cgpj/2026-09-20_DP1901_CGPJ_CROSS_INSTITUTIONAL_ADDENDUM_DRAFT.md",
+      "addendum_state": "DRAFT_NOT_FILED",
+      "rule": "never mutate the hash-locked 19-Sep Markdown/PDF/DOCX package; later material travels as a separate addendum"
+    }
+  }
+}

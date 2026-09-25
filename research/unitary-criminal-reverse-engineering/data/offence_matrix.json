@@ -1,0 +1,101 @@
+{
+  "marker": "unitary-criminal-reverse-engineering-20260820",
+  "offences": [
+    [
+      "Procedural fraud / estafa procesal",
+      "Estafa procesal",
+      "CP 248, 250.1.7",
+      58,
+      "False or concealed premise → judicial error → patrimonial order → loss/benefit → intent",
+      "Premisa falsa/oculta → error judicial → resolución patrimonial → daño/beneficio → dolo"
+    ],
+    [
+      "Disposition without authority / simulation",
+      "Disposición sin poder / simulación",
+      "CP 251",
+      62,
+      "False power over LPB-external assets, hotel operation, premises or later title",
+      "Facultad falsa sobre bienes extraconcursales, explotación, locales o título posterior"
+    ],
+    [
+      "Disloyal administration",
+      "Administración desleal",
+      "CP 252",
+      68,
+      "Estate powers, conflict, detrimental act/excess, patrimonial harm and intent",
+      "Poderes sobre masa, conflicto, acto/exceso perjudicial, daño y dolo"
+    ],
+    [
+      "Insolvency-administrator-specific route",
+      "Vía penal específica del administrador concursal",
+      "CP 435.4, 440",
+      48,
+      "Estate/creditor interests, base offence, prohibited participation/benefit and temporal fit",
+      "Masa/acreedores, tipo base, participación/beneficio y encaje temporal"
+    ],
+    [
+      "Documentary/procedural/accounting falsity",
+      "Falsedad documental/procesal/contable",
+      "CP 390 et seq.",
+      44,
+      "Document category, objective falsity, author, intent, use and causal effect",
+      "Categoría, falsedad objetiva, autor, dolo, uso y efecto causal"
+    ],
+    [
+      "Punishable insolvency / frustration",
+      "Insolvencia punible / frustración",
+      "CP 257–261",
+      50,
+      "Exit or concealment of value, false accounts, detrimental acts and intent",
+      "Salida/ocultación de valor, cuentas falsas, actos perjudiciales y dolo"
+    ],
+    [
+      "Coercion/usurpation/damage",
+      "Coacciones/usurpación/daños",
+      "Act-specific CP provisions",
+      55,
+      "7 June access acts, absence/scope of authority, authorship and interference",
+      "Actos de acceso 7 junio, autoridad, autoría e interferencia"
+    ],
+    [
+      "Corporate liability — CAM",
+      "Responsabilidad penal corporativa — CAM",
+      "CP 31 bis",
+      60,
+      "Predicate offence by natural person, corporate capacity, benefit, controls and supervision",
+      "Delito de persona física, capacidad corporativa, beneficio, controles y supervisión"
+    ],
+    [
+      "CAM→HNT succession",
+      "Sucesión CAM→HNT",
+      "CP 130.2",
+      48,
+      "Economic-unit continuity, liabilities, knowledge and own conduct",
+      "Continuidad de unidad, pasivos, conocimiento y conducta propia"
+    ],
+    [
+      "Public funds / subsidy",
+      "Ayudas / fondos públicos",
+      "CP 306, 308 if elements fit",
+      35,
+      "Material false data/omission, eligibility, payment/use and intent",
+      "Dato/omisión material, elegibilidad, pago/uso y dolo"
+    ],
+    [
+      "Participation / omission",
+      "Participación / omisión",
+      "CP 11, 27–29",
+      52,
+      "Specific duty, power to prevent, causal contribution, knowledge and intent",
+      "Deber específico, poder de impedir, contribución, conocimiento y dolo"
+    ],
+    [
+      "Restitution / confiscation",
+      "Restitución / decomiso",
+      "CP 109–111, 127 et seq.",
+      55,
+      "Predicate offence, traceable property/benefit, third parties, interim measures",
+      "Delito base, bien/beneficio trazable, terceros y cautelares"
+    ]
+  ]
+}

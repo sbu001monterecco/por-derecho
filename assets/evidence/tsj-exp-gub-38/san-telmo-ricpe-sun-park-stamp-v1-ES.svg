@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">San Telmo, RICPE y Sun Park: dos vidas profesionales sobre el mismo hotel</title>
+<desc id="desc">Visualización fuente-controlada de la vida concursal y la vida inversora, con la manifestación pública de Eduardo Sánchez y sus límites probatorios.</desc>
+<defs><style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#13252d}.title{font-size:50px;font-weight:800}.sub{font-size:24px}.head{font-size:27px;font-weight:800}.body{font-size:21px}.small{font-size:17px}.white{fill:#fff}.muted{fill:#53656d}.arrow{stroke:#c89432;stroke-width:8;fill:none;marker-end:url(#a)}
+</style><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#c89432"/></marker></defs>
+<rect width="1600" height="1000" fill="#f4f1ea"/>
+<rect x="0" y="0" width="1600" height="150" fill="#13252d"/>
+<text x="70" y="70" class="title white">SAN TELMO · RICPE · SUN PARK</text>
+<text x="72" y="116" class="sub white">Mismo hotel · mismo periodo relevante · dos vidas profesionales en paralelo</text>
+
+<rect x="85" y="220" rx="25" width="520" height="470" fill="#fff" stroke="#315c7b" stroke-width="6"/>
+<text x="120" y="275" class="head">VIDA CONCURSAL</text>
+<text x="120" y="330" class="body">LPB · Concurso 36/2012</text>
+<text x="120" y="375" class="body">Administrador Concursal:</text>
+<text x="120" y="415" class="body" font-weight="800">Francisco de Borja</text>
+<text x="120" y="450" class="body" font-weight="800">Rodríguez-Batllori Laffitte</text>
+<text x="120" y="505" class="body">Perímetro profesional histórico:</text>
+<text x="120" y="545" class="body" font-weight="800">San Telmo</text>
+<line x1="120" y1="580" x2="570" y2="580" stroke="#ddd"/>
+<text x="120" y="625" class="small muted">Masa, activos LPB, liquidación, deberes del AC,</text>
+<text x="120" y="652" class="small muted">información concursal y tutela judicial.</text>
+
+<rect x="995" y="220" rx="25" width="520" height="470" fill="#fff" stroke="#8f2d27" stroke-width="6"/>
+<text x="1030" y="275" class="head">VIDA INVERSORA</text>
+<text x="1030" y="330" class="body">RIC Private Equity · Acosta Matos</text>
+<text x="1030" y="375" class="body">Interviniente público:</text>
+<text x="1030" y="415" class="body" font-weight="800">Eduardo Sánchez · socio de San Telmo</text>
+<rect x="1030" y="455" rx="16" width="450" height="120" fill="#fff4f2" stroke="#8f2d27" stroke-width="3"/>
+<text x="1055" y="500" class="body" font-weight="800">«en esa primera inversión…</text>
+<text x="1055" y="535" class="body" font-weight="800">metimos unos cuantos clientes»</text>
+<text x="1030" y="620" class="small muted">Fuente pública: 30 noviembre 2021.</text>
+<text x="1030" y="650" class="small muted">08:08–08:12 · contexto 07:57–08:27.</text>
+
+<circle cx="800" cy="455" r="145" fill="#fff8d9" stroke="#c89432" stroke-width="7"/>
+<text x="800" y="420" text-anchor="middle" class="head">SUN PARK</text>
+<text x="800" y="458" text-anchor="middle" class="body">actual MYND Yaiza</text>
+<text x="800" y="500" text-anchor="middle" class="small muted">mismo complejo / proyecto</text>
+<text x="800" y="530" text-anchor="middle" class="small muted">no un único título indiviso</text>
+<path d="M605 455 C650 455 660 455 655 455" class="arrow"/>
+<path d="M945 455 C935 455 930 455 945 455" class="arrow"/>
+<line x1="605" y1="455" x2="655" y2="455" stroke="#c89432" stroke-width="8"/>
+<line x1="945" y1="455" x2="995" y2="455" stroke="#c89432" stroke-width="8"/>
+
+<rect x="85" y="740" rx="18" width="1430" height="190" fill="#13252d"/>
+<text x="120" y="790" class="head white">PREGUNTA DOCUMENTAL</text>
+<text x="120" y="835" class="body white">¿Qué controles separaron asuntos, información, acceso, clientes, conflictos y funciones entre</text>
+<text x="120" y="868" class="body white">la vida concursal del hotel y la vida inversora vinculada al mismo proyecto?</text>
+<text x="120" y="910" class="small white">La manifestación y el solapamiento justifican trazabilidad; no acreditan coordinación, transferencia de información, ilicitud o responsabilidad.</text>
+</svg>

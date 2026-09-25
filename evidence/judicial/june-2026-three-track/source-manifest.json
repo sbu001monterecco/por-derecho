@@ -1,0 +1,76 @@
+{
+  "schema": "por-derecho.june-three-track-dual-version.v1",
+  "control_date": "2026-09-23",
+  "principle": "FROZEN source-time transcription is immutable except privacy/security correction; DYNAMIC dossier may improve, correct, interlink and add later sourced context without rewriting the frozen source.",
+  "tracks": {
+    "REF21": {
+      "frozen": {
+        "base_sha256": "3f4bd2bbbc963605e4cc94bc73d116157e2bf4a2266e2285b013f38de9e90736",
+        "pages": 86,
+        "working_26jun_sha256": "a7f057fd99d0bdf1a891cf4610f69ed19788d2e40f9f23a6ff66fc6255d97846",
+        "working_pages": 26,
+        "working_status": "SOURCE_PRESERVED_FILING_NOT_PROVED",
+        "ampliacion_09jul_sha256": "0d42dcbe30679331c557f4c3750e478e592a9a449c6b5ecb84e32f6fa56ad16f",
+        "ampliacion_pages": 19,
+        "ampliacion_status": "PHYSICAL_TENDER_CORROBORATED_ELECTRONIC_INGESTION_OPEN"
+      },
+      "dynamic": "dynamic/ref21-living-dossier.md",
+      "version_candidates": {
+        "observed_199_page_package": {
+          "sha256": "ad3f6aea269649a46212967ddb05225fa160b6e93393e8896e001aa3570e5c08",
+          "status": "CONTROLLED_LIBRARY_COPY_VERSION_CANDIDATE_NOT_COURT_INGESTION_PROOF"
+        },
+        "observed_202_page_package": {
+          "sha256": "28c238e719dace2197a7e30655a4727bf26ad01e7d6e73832e75e81582179b8e",
+          "status": "RECOVERED_HISTORICAL_PRINT_PACKAGE_VERSION_CANDIDATE_NOT_COURT_INGESTION_PROOF"
+        },
+        "rule": "Retain all variants; filename/page-count similarity does not establish exact filed payload."
+      }
+    },
+    "REF22": {
+      "frozen": {
+        "base_sha256": "b11f10e7410f922a8cd1796ea462ea7ea20d555b7308e4481f2cb23732b1002b",
+        "pages": 55
+      },
+      "dynamic": "dynamic/ref22-living-dossier.md"
+    },
+    "REF24": {
+      "frozen": {
+        "native_package_sha256": "1cae1912a20202c5f5779db07e77c7e1d3f0ae514676e07d3ace4dd56f6f76a0",
+        "native_package_pages": 79,
+        "principal_public_transcription": "../../judicial-governance/decanato-reference-24/full-text/denuncia-magistrado-18jun2026-public-transcription.md",
+        "supplement_sha256": "04051e33000f830c32ba06e31996ba4e6812c7d54c199ee03696b85e68589679",
+        "supplement_pages": 13,
+        "supplement_public_transcription": "../../judicial-governance/decanato-reference-24/full-text/ampliacion-denuncia-magistrado-25jun2026-public-transcription.md",
+        "judicial_supplement_alias_rule": "The 25-Jun 'APORTACIÓN COMPLEMENTARIA AUTOSUFICIENTE' is the same dependent judicial document later sometimes called the Ref24 ampliación; do not double-count it as two pleadings."
+      },
+      "dynamic": "dynamic/ref24-living-dossier.md",
+      "linked_institutional_traceability": {
+        "route": "CGPJ / DI 169/2026",
+        "document_date": "2026-06-25",
+        "label": "Aportación urgente de hecho sobrevenido concerning Ref24 traceability",
+        "sha256": "4c1be5637c4cf58f18dcbea657c2200658394360ffb9c2302a6ef1a0cb34cbe9",
+        "pages": 9,
+        "frozen_transcription": "frozen-linked/di169-ref24-traceability-aportacion-25jun2026.md",
+        "relationship": "SEPARATE_INSTITUTIONAL_ROUTE_NOT_SECOND_REF24_JUDICIAL_PLEADING"
+      }
+    }
+  },
+  "boundaries": [
+    "Daily references 21/22/24 are intake locators, not DP/NIG numbers.",
+    "Shared evidence does not merge proceedings or transfer knowledge, intent or responsibility.",
+    "Ref21→DP1901 is contemporaneously corroborated; official creation/reparto and later Ref24 association history remain outstanding.",
+    "Ref22 is contextual to the current Ref21/Ref24 identity collision and remains procedurally separate."
+  ],
+  "upstream_sources": {
+    "AN2023": {
+      "date": "2023-09-21",
+      "pages": 88,
+      "source_pdf_sha512": "2c35052af7f869dfb13ca8593552a6997ee9f1f83a09299bcee883345482ae63b7502f76d6e85873b4b80c1b745d7a3c5797762400410e33c897140b9c36c2ab",
+      "public_page_complete_transcription": "../../criminal/an-dp91-2023/full-text/querella-21sep2023-full-public-transcription.md",
+      "source_manifest": "../../criminal/an-dp91-2023/source-manifest.json",
+      "canonical_lineage": "../../criminal/an-dp91-2023/AN2023_REF21_REF22_REF24_LINEAGE.md",
+      "relationship": "UPSTREAM_HISTORICAL_ALLEGATION_AND_SOURCE_LINEAGE_NOT_AUTOMATIC_PROOF"
+    }
+  }
+}

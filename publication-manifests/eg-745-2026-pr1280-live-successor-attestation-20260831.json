@@ -1,0 +1,108 @@
+{
+  "publication_id": "eg-745-2026-pr1280-live-successor-attestation-20260831",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "owner": "Por Derecho / Project Sun Rock",
+  "as_of": "2026-08-31",
+  "expected_routes": {
+    "es": [
+      "es/fiscalia-inspeccion-exp-gub-745-2026/index.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/paquete-respuesta-29-agosto-2026.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/diario-actuaciones-29-agosto-2026.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/persecucion-abierta-transparencia-31-agosto-2026.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/continuidad-errores-omisiones-31-agosto-2026.html",
+      "es/fiscalia-inspeccion-exp-gub-745-2026/facsimil-visual-31-agosto-2026.html"
+    ],
+    "en": [
+      "en/public-prosecution-inspection-exp-gub-745-2026/index.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/response-package-29-august-2026.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/action-diary-29-august-2026.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/open-prosecution-transparency-31-august-2026.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/continuity-errors-omissions-31-august-2026.html",
+      "en/public-prosecution-inspection-exp-gub-745-2026/visual-facsimile-31-august-2026.html"
+    ]
+  },
+  "expected_source_files": [
+    ".github/workflows/verify-eg745-public-visual-live.yml",
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX.md",
+    "archive/EG_745_2026_PR1280_LIVE_SUCCESSOR_ATTESTATION_31AUG2026.md",
+    "publication-manifests/eg-745-2026-pr1280-live-successor-attestation-20260831.json"
+  ],
+  "attested_release": {
+    "pull_request": 1280,
+    "merge_sha": "b8d3276a65cf8dbb1e92fa905fbcfd3dafbbcd63",
+    "first_parent_sha": "b3c706a90ea6712ca1c487d9e725cef7b92cc447",
+    "reviewed_head_sha": "c7956736153f6193c463ec1e53eca111b50388fa",
+    "merge_tree_sha": "1e9d668957e8dd370c17aa28608b27fb61fca6da",
+    "changed_file_count": 15,
+    "pages_visible_changed_file_count": 14,
+    "premerge_workflow_census": {
+      "total": 54,
+      "success": 53,
+      "skipped": 1,
+      "failed": 0,
+      "cancelled": 0,
+      "pending": 0
+    }
+  },
+  "deployment": {
+    "pages_run_id": 33442014678,
+    "pages_run_number": 1342,
+    "head_sha": "b8d3276a65cf8dbb1e92fa905fbcfd3dafbbcd63",
+    "created_at": "2026-08-31T21:34:11Z",
+    "completed_at": "2026-08-31T21:37:41Z",
+    "conclusion": "success",
+    "eg745_validator_run_id": 33442016203,
+    "eg745_validator_conclusion": "success"
+  },
+  "independent_live_readback": {
+    "verified_at_utc": "2026-08-31T21:43:02Z",
+    "method": "HTTPS no-cache and cache-busting retrieval from production Pages, followed by byte comparison with the exact merge tree",
+    "verified_files": 14,
+    "failures": 0,
+    "files": [
+      {"path": "archive/CONTINUOUS_MAINTENANCE_MATRIX.md", "bytes": 60704, "sha256": "e91e40b1b32c4ed5202a130bbf67c796baca49e8a4bc5821448982a2c7938c65", "byte_identical": true},
+      {"path": "archive/EG_745_2026_CURRENT_AUDIT_INTERLINK_CLOSEOUT_31AUG2026.md", "bytes": 3160, "sha256": "4f8d1645f1ab10d1346ede229c120426935f676dba016ddddb04467889eb27aa", "byte_identical": true},
+      {"path": "assets/master-proceedings-publication-20260830.js", "bytes": 17139, "sha256": "664d35842a0fbae81c407fcd6b717e0f5db09b35ee6b98f7f89cc0a3bf8d8885", "byte_identical": true},
+      {"path": "assets/site.js", "bytes": 4699, "sha256": "7eeeca03a4cc72843a788ee65147e71851579818d9a8c678a1e0d757d33f24d6", "byte_identical": true},
+      {"path": "en/master-proceedings-register/index.html", "bytes": 8118, "sha256": "b5671f3dd304fd5d12664d0fb91cdece132af37364d841c319c429fee8dd5a9f", "byte_identical": true},
+      {"path": "en/public-prosecution-inspection-exp-gub-745-2026/continuity-errors-omissions-31-august-2026.html", "bytes": 11226, "sha256": "6fbe5cd4f869f65f89a4cb20e1aa3141af3fb3ec40cdfddb25a5289fd76f8cf9", "byte_identical": true},
+      {"path": "en/public-prosecution-inspection-exp-gub-745-2026/index.html", "bytes": 16526, "sha256": "a1a3403bea78bd5d0227db5b38f2ca44ead4ca544221930099f19d82d735f442", "byte_identical": true},
+      {"path": "es/fiscalia-inspeccion-exp-gub-745-2026/continuidad-errores-omisiones-31-agosto-2026.html", "bytes": 11649, "sha256": "423153b15e2c0ec87890dfaa3ceb4450dd83074af1edbb9653debf5a47fadad8", "byte_identical": true},
+      {"path": "es/fiscalia-inspeccion-exp-gub-745-2026/index.html", "bytes": 17633, "sha256": "6c419099ac915c8bba8c28f3036282d686f925399d66adad588b2ff0c24c428d", "byte_identical": true},
+      {"path": "es/registro-maestro-procedimientos/index.html", "bytes": 8777, "sha256": "994e989d15c232fad7a01b028051b09e367c33392e3ec54502d8cc60d120257a", "byte_identical": true},
+      {"path": "publication-manifests/eg-745-2026-current-audit-interlink-closeout-20260831.json", "bytes": 4896, "sha256": "032d6479b372b6b9670e6a190d8bb64756d664a58302a9d97ea804bd404ed6d6", "byte_identical": true},
+      {"path": "scripts/audit_master_proceedings_publication.py", "bytes": 16772, "sha256": "6d99b2aeedd32d294750ac302888c36a5365d32dbbf4abe19dada7f9c97678b2", "byte_identical": true},
+      {"path": "sitemap-fiscalia-exp-gub-745.xml", "bytes": 10349, "sha256": "50cb2d8d26bdae77c0eafb6da068cc96c943953471e14fbe57d2ee7e7a02c0e5", "byte_identical": true},
+      {"path": "sitemap.xml", "bytes": 122887, "sha256": "bb29a1914f3dcd800388e3cb45760e5fbc7123d02da5078230cd10ef3a1f94d2", "byte_identical": true}
+    ]
+  },
+  "workflow_correction": {
+    "initial_merge_run_id": 33442016902,
+    "initial_merge_run_conclusion": "success",
+    "initial_result_accepted_as_byte_proof": false,
+    "defect": "git diff-tree without an explicit merge-parent comparison could classify a merge commit as zero Pages-visible changed files",
+    "replacement": "git diff --name-only <target>^1 <target>",
+    "no_op_boundary": "The documented no-op is permitted only when the first-parent diff genuinely contains no Pages-visible files."
+  },
+  "canonical_proceeding": {
+    "master_id": "NAT-FIS-004",
+    "reference": "E.G. 745/2026",
+    "filing_status": "NOT_VERIFIED_AS_FILED",
+    "principal_signature_status": "UNSIGNED"
+  },
+  "private_package_boundary": {
+    "public_material_from_private_candidate": "NONE",
+    "excluded": [
+      "private pleading and annex files",
+      "private and native-source hashes",
+      "personal data",
+      "signature material",
+      "covering communications",
+      "legal strategy"
+    ]
+  },
+  "successor_self_reference": {
+    "state": "PREPARED_PENDING_MERGE",
+    "claim": "This successor attests PR #1280 only and makes no claim that its own carrier commit is deployed."
+  }
+}

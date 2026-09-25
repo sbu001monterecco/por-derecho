@@ -1,0 +1,272 @@
+{
+  "schema": "por-derecho.ministerio-fiscal-unitary-register-deployment-attestation.v1",
+  "publication_id": "PD-SP-MF-UNITARY-DEPLOYMENT-ATTESTATION-20260831-01",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "expected_routes": {
+    "es": [],
+    "en": []
+  },
+  "owner": "Gil Marer / Por Derecho",
+  "attestation_id": "PD-SP-MF-UNITARY-DEPLOYMENT-ATTESTATION-20260831-01",
+  "control_date": "2026-08-31",
+  "control_case": "E.G. 745/2026",
+  "attestation_file": "archive/EG_745_2026_UNITARY_REGISTER_DEPLOYMENT_ATTESTATION_31AUG2026.md",
+  "target_release_state": "DEPLOYED_EXACT_BYTES_VERIFIED_CONTROL_REMEDIATION_PENDING",
+  "target_release": {
+    "repository": "sbu001monterecco/por-derecho",
+    "pull_request": 1272,
+    "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/1272",
+    "title": "Close Ministerio Fiscal publication controls",
+    "base_sha_immediately_before_merge": "43359d4d77e895dea76b5373b09a70c844b428f2",
+    "reviewed_head_sha": "1fe33abad4ca0f3647d33447988f40a2ef25855d",
+    "reviewed_tree_sha": "92e55d81d3d15b89871513b22584c96253462163",
+    "merge_method": "squash",
+    "merge_sha": "4df51da33391c41869470ed539ad31fc4157fbfd",
+    "merge_tree_sha": "92e55d81d3d15b89871513b22584c96253462163",
+    "reviewed_tree_matches_merge_tree": true,
+    "merge_parent_sha": "43359d4d77e895dea76b5373b09a70c844b428f2",
+    "merge_parent_count": 1,
+    "merged_at_utc": "2026-08-31T14:33:53Z",
+    "reviewed_diff": {
+      "files": 28,
+      "additions": 571,
+      "deletions": 71
+    }
+  },
+  "workflow_census": {
+    "observed_at_utc": "2026-08-31T14:57:55Z",
+    "pagination_complete": true,
+    "per_page": 100,
+    "final_pr_head": {
+      "head_sha": "1fe33abad4ca0f3647d33447988f40a2ef25855d",
+      "event_scope": "pull_request",
+      "total": 43,
+      "success": 42,
+      "skipped": 1,
+      "failure": 0,
+      "cancelled": 0,
+      "pending": 0,
+      "first_created_at_utc": "2026-08-31T14:24:48Z",
+      "last_updated_at_utc": "2026-08-31T14:31:58Z",
+      "intentional_skips": [
+        {
+          "name": "Verify unitary criminal publication live",
+          "run_id": 33402472361,
+          "run_number": 359,
+          "run_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33402472361",
+          "reason": "The live job is expressly guarded by if: github.event_name != 'pull_request'; the same workflow completed successfully on the merge push."
+        }
+      ],
+      "result": "PASS_WITH_ONE_INTENTIONAL_PR_EVENT_SKIP"
+    },
+    "first_merge_sha_census": {
+      "head_sha": "4df51da33391c41869470ed539ad31fc4157fbfd",
+      "event_counts": {
+        "push": 52,
+        "dynamic_pages": 1
+      },
+      "total": 53,
+      "success": 47,
+      "skipped": 0,
+      "failure": 6,
+      "cancelled": 0,
+      "pending": 0,
+      "all_green": false,
+      "result": "EXACT_RELEASE_DEPLOYED_BUT_SIX_DETERMINISTIC_STALE_VERIFIER_CONTROLS_REQUIRE_REMEDIATION",
+      "failed_runs": [
+        {
+          "name": "Verify AC Community de facto administration live",
+          "run_id": 33403373932,
+          "run_number": 129,
+          "run_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33403373932",
+          "conclusion": "failure",
+          "classification": "DETERMINISTIC_STALE_VERIFIER_CONTROL_REMEDIATION_PENDING"
+        },
+        {
+          "name": "Verify criminal-engineering and case information architecture live",
+          "run_id": 33403374093,
+          "run_number": 91,
+          "run_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33403374093",
+          "conclusion": "failure",
+          "classification": "DETERMINISTIC_STALE_VERIFIER_CONTROL_REMEDIATION_PENDING"
+        },
+        {
+          "name": "Verify PR 830 CAM non-dilution live",
+          "run_id": 33403374183,
+          "run_number": 168,
+          "run_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33403374183",
+          "conclusion": "failure",
+          "classification": "DETERMINISTIC_STALE_VERIFIER_CONTROL_REMEDIATION_PENDING"
+        },
+        {
+          "name": "Verify elEconomista Acosta Matos dossier live",
+          "run_id": 33403374018,
+          "run_number": 46,
+          "run_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33403374018",
+          "conclusion": "failure",
+          "classification": "DETERMINISTIC_STALE_VERIFIER_CONTROL_REMEDIATION_PENDING"
+        },
+        {
+          "name": "Verify 2022 adjudication reconstruction live",
+          "run_id": 33403373948,
+          "run_number": 71,
+          "run_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33403373948",
+          "conclusion": "failure",
+          "classification": "DETERMINISTIC_STALE_VERIFIER_CONTROL_REMEDIATION_PENDING"
+        },
+        {
+          "name": "Verify public Pages propagation — Playa Blanca hotel concept",
+          "run_id": 33403374083,
+          "run_number": 50,
+          "run_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33403374083",
+          "conclusion": "failure",
+          "classification": "DETERMINISTIC_STALE_VERIFIER_CONTROL_REMEDIATION_PENDING"
+        }
+      ],
+      "boundary": "The failures do not negate the successful exact-SHA Pages deployment or 24/24 byte readback, but they prohibit an all-green workflow claim and remain open until separately corrected and proved."
+    }
+  },
+  "pages_deployment": {
+    "workflow": "pages build and deployment",
+    "workflow_path": "dynamic/pages/pages-build-deployment",
+    "run_id": 33403372033,
+    "run_number": 1335,
+    "run_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33403372033",
+    "event": "dynamic",
+    "head_sha": "4df51da33391c41869470ed539ad31fc4157fbfd",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at_utc": "2026-08-31T14:33:55Z",
+    "updated_at_utc": "2026-08-31T14:37:34Z",
+    "exact_merge_sha_match": true
+  },
+  "repository_integrity": {
+    "reviewed_tree_sha": "92e55d81d3d15b89871513b22584c96253462163",
+    "merge_tree_sha": "92e55d81d3d15b89871513b22584c96253462163",
+    "tree_parity": "MATCH",
+    "reviewed_changed_files": 28,
+    "pages_visible_changed_files": 24,
+    "repository_only_workflow_files": 4,
+    "repository_only_controls": [
+      {
+        "path": ".github/workflows/alberto-meeting-point-cross-proceeding.yml",
+        "bytes": 39994,
+        "sha256": "d282b2cf38e6346d64a09678e49240b275ee9c0cb6cc64c1e61094f6f8a729d4",
+        "git_blob": "91d16cf8f613cf20280e2c1f859c449575a505fc",
+        "merge_tree_match": true
+      },
+      {
+        "path": ".github/workflows/fti-meeting-point-ricpe-continuity.yml",
+        "bytes": 30758,
+        "sha256": "32ee70ecf66c72c0565b1c91cd905cb134f656c7a54c2bd3b4d6dc3084cf0ae6",
+        "git_blob": "e5348263b139baf83ba8db1bbb332ba4ed334c1a",
+        "merge_tree_match": true
+      },
+      {
+        "path": ".github/workflows/validate-institutional-communications.yml",
+        "bytes": 3103,
+        "sha256": "323f84c621484d0490b84c8577033ec554d87adb9c89f011069701b9ade44ae8",
+        "git_blob": "bda4e8a623d921eab1d145cc9093009891624da0",
+        "merge_tree_match": true
+      },
+      {
+        "path": ".github/workflows/verify-caepr-caret-unitary-live.yml",
+        "bytes": 10171,
+        "sha256": "2804eb2940c2d17eeb73d06a8bafaf97cccc9fd633e4f95b9482bf4593498387",
+        "git_blob": "388560dc9f8fcc1c173f873fafde7ff8325714f5",
+        "merge_tree_match": true
+      }
+    ]
+  },
+  "exact_byte_readback": {
+    "base_url": "https://sbu001monterecco.github.io/por-derecho/",
+    "cache_busting_query": "sha=4df51da33391c41869470ed539ad31fc4157fbfd",
+    "request_headers": {
+      "Cache-Control": "no-cache",
+      "Pragma": "no-cache"
+    },
+    "completed_at_utc": "2026-08-31T14:56:20Z",
+    "required_files": 24,
+    "http_200": 24,
+    "byte_identical": 24,
+    "failures": 0,
+    "result": "ALL_24_HTTP_200_AND_BYTE_IDENTICAL",
+    "results": [
+      {"path": "CURRENT_REVERSE_ENGINEERED_DIGEST.md", "repository_bytes": 30927, "repository_sha256": "7a54c05e1abf394abc962b5f2face084851107cffe4c0d899db3d2396782ad0b", "http_status": 200, "live_bytes": 30927, "live_sha256": "7a54c05e1abf394abc962b5f2face084851107cffe4c0d899db3d2396782ad0b", "byte_identical": true},
+      {"path": "CURRENT_UNITARY_STATE.md", "repository_bytes": 17033, "repository_sha256": "332c20c1d3fb575dddbbf145120582266df65b042f2080f521a9fd49dc1c20da", "http_status": 200, "live_bytes": 17033, "live_sha256": "332c20c1d3fb575dddbbf145120582266df65b042f2080f521a9fd49dc1c20da", "byte_identical": true},
+      {"path": "archive/CAEPR_CARET_UNITARY_DIGEST_VERIFICATION_26AUG2026.md", "repository_bytes": 9503, "repository_sha256": "551b9f2c762b4679e376a18d73edcc24b0ec7729c8dc39cf2ff627918f0d6888", "http_status": 200, "live_bytes": 9503, "live_sha256": "551b9f2c762b4679e376a18d73edcc24b0ec7729c8dc39cf2ff627918f0d6888", "byte_identical": true},
+      {"path": "archive/EG_745_2026_UNITARY_REGISTER_CLOSEOUT_31AUG2026.md", "repository_bytes": 11344, "repository_sha256": "cc1ba7cba09b68d5504decd7db0225ce6624b6be600e163bd6daf788f0c10675", "http_status": 200, "live_bytes": 11344, "live_sha256": "cc1ba7cba09b68d5504decd7db0225ce6624b6be600e163bd6daf788f0c10675", "byte_identical": true},
+      {"path": "assets/data/caepr-caret-unitary-digest-v1.json", "repository_bytes": 7458, "repository_sha256": "1c3093c7a9f5f9dfe5f3fb4c148f93537f23ae90461d1633e9a2b6bb469893be", "http_status": 200, "live_bytes": 7458, "live_sha256": "1c3093c7a9f5f9dfe5f3fb4c148f93537f23ae90461d1633e9a2b6bb469893be", "byte_identical": true},
+      {"path": "assets/site.js", "repository_bytes": 4699, "repository_sha256": "9f5829caee7036ec7bc62f7b3706733dfdf996089de2fa8d1cefbcfa24b4c7c9", "http_status": 200, "live_bytes": 4699, "live_sha256": "9f5829caee7036ec7bc62f7b3706733dfdf996089de2fa8d1cefbcfa24b4c7c9", "byte_identical": true},
+      {"path": "de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/index.html", "repository_bytes": 22861, "repository_sha256": "78d0c4e2a763044b0ef3fab53b06506698074a4a80023ae9d97112b7904b199a", "http_status": 200, "live_bytes": 22861, "live_sha256": "78d0c4e2a763044b0ef3fab53b06506698074a4a80023ae9d97112b7904b199a", "byte_identical": true},
+      {"path": "en/alberto-lopez-villarrubia-meeting-point-357-active-estate/index.html", "repository_bytes": 39207, "repository_sha256": "d6b5000e938f06b68a8b2c0e17fb25bd51edde4fca7e4462128e1b9951ef8ccd", "http_status": 200, "live_bytes": 39207, "live_sha256": "d6b5000e938f06b68a8b2c0e17fb25bd51edde4fca7e4462128e1b9951ef8ccd", "byte_identical": true},
+      {"path": "en/caepr-caret-unitary-digest/index.html", "repository_bytes": 8311, "repository_sha256": "dd3f698337a96b793ec9ef4488e1ac00ec0c694d20d381231dcc1b071c5c02da", "http_status": 200, "live_bytes": 8311, "live_sha256": "dd3f698337a96b793ec9ef4488e1ac00ec0c694d20d381231dcc1b071c5c02da", "byte_identical": true},
+      {"path": "en/fti-meeting-point-ricpe-whistleblower-continuity/index.html", "repository_bytes": 20325, "repository_sha256": "deba1992f2aeb90849bfd891661aa64d2fa841119d1ad31320dfacbbacab30f4", "http_status": 200, "live_bytes": 20325, "live_sha256": "deba1992f2aeb90849bfd891661aa64d2fa841119d1ad31320dfacbbacab30f4", "byte_identical": true},
+      {"path": "es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/index.html", "repository_bytes": 40571, "repository_sha256": "a23f14025bc316997747385cbf83db42903dbf93104ef0e8e09df0a3c6ae03d6", "http_status": 200, "live_bytes": 40571, "live_sha256": "a23f14025bc316997747385cbf83db42903dbf93104ef0e8e09df0a3c6ae03d6", "byte_identical": true},
+      {"path": "es/fti-meeting-point-ricpe-alertador-continuidad/index.html", "repository_bytes": 20944, "repository_sha256": "3c9d8a73c1be3fec0b903278a922c76580ef97cb4b03cf3095e23018ab1c31cb", "http_status": 200, "live_bytes": 20944, "live_sha256": "3c9d8a73c1be3fec0b903278a922c76580ef97cb4b03cf3095e23018ab1c31cb", "byte_identical": true},
+      {"path": "es/verificacion-caepr-caret-digest-unitario/index.html", "repository_bytes": 8639, "repository_sha256": "6356d79970aa64c1c7fb6bc1fe687cd5d409a3aa2cf922e38eb04925f625fbb4", "http_status": 200, "live_bytes": 8639, "live_sha256": "6356d79970aa64c1c7fb6bc1fe687cd5d409a3aa2cf922e38eb04925f625fbb4", "byte_identical": true},
+      {"path": "ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json", "repository_bytes": 15369, "repository_sha256": "3bbca890e8dd784e6bde3f18a27551e9f12338cbfccdefe46b5b7f0094fd9068", "http_status": 200, "live_bytes": 15369, "live_sha256": "3bbca890e8dd784e6bde3f18a27551e9f12338cbfccdefe46b5b7f0094fd9068", "byte_identical": true},
+      {"path": "ops/CURRENT_UNITARY_STATE.json", "repository_bytes": 20120, "repository_sha256": "5e9e88c7e2adedb0a3361b83920c93d629734f181cd9ee3e7a385d29430a51fb", "http_status": 200, "live_bytes": 20120, "live_sha256": "5e9e88c7e2adedb0a3361b83920c93d629734f181cd9ee3e7a385d29430a51fb", "byte_identical": true},
+      {"path": "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json", "repository_bytes": 4012, "repository_sha256": "4c4f3edee0f868116c75cf898fb738dda7297d7f54e81f7584141cc36dc6d1c9", "http_status": 200, "live_bytes": 4012, "live_sha256": "4c4f3edee0f868116c75cf898fb738dda7297d7f54e81f7584141cc36dc6d1c9", "byte_identical": true},
+      {"path": "publication-manifests/ministerio-fiscal-unitary-register-closeout-20260831.json", "repository_bytes": 9378, "repository_sha256": "59772a958d0c5547b97d316437fcd8645f2c21f2485a1f693240e91a283cc1c2", "http_status": 200, "live_bytes": 9378, "live_sha256": "59772a958d0c5547b97d316437fcd8645f2c21f2485a1f693240e91a283cc1c2", "byte_identical": true},
+      {"path": "scripts/production_smoke_check.py", "repository_bytes": 15383, "repository_sha256": "d16f0ea5d3f3988c69fd73383022a7637df794e19e546e8c9e408f80c52468b5", "http_status": 200, "live_bytes": 15383, "live_sha256": "d16f0ea5d3f3988c69fd73383022a7637df794e19e546e8c9e408f80c52468b5", "byte_identical": true},
+      {"path": "scripts/reconcile_institutional_communications.py", "repository_bytes": 81178, "repository_sha256": "aee956cfca2b6735b247ec396411b045e571ee9665034700e0267a6cf3ae650b", "http_status": 200, "live_bytes": 81178, "live_sha256": "aee956cfca2b6735b247ec396411b045e571ee9665034700e0267a6cf3ae650b", "byte_identical": true},
+      {"path": "scripts/render_acta_meeting_lineage.mjs", "repository_bytes": 16780, "repository_sha256": "56c234cdbf3178ca0332e03ac0a8bdef806553f80cc11471f7706ce638bdc01e", "http_status": 200, "live_bytes": 16780, "live_sha256": "56c234cdbf3178ca0332e03ac0a8bdef806553f80cc11471f7706ce638bdc01e", "byte_identical": true},
+      {"path": "scripts/validate_alberto_meeting_point_cross_proceeding.py", "repository_bytes": 84685, "repository_sha256": "33a237f1ba27cc3c119e42f6ddae308e90c99a5400879a568eaf2ca912421e2a", "http_status": 200, "live_bytes": 84685, "live_sha256": "33a237f1ba27cc3c119e42f6ddae308e90c99a5400879a568eaf2ca912421e2a", "byte_identical": true},
+      {"path": "scripts/validate_current_reverse_engineered_digest.py", "repository_bytes": 30736, "repository_sha256": "2244cc3bbf291929954108c1df9dcae2791ab4c923920eb2ab1cc27838267596", "http_status": 200, "live_bytes": 30736, "live_sha256": "2244cc3bbf291929954108c1df9dcae2791ab4c923920eb2ab1cc27838267596", "byte_identical": true},
+      {"path": "scripts/validate_fti_meeting_point_professional_institutional_caret.py", "repository_bytes": 16674, "repository_sha256": "0a873f55cc75c776b5779d09a741f44a2537cc3eb4dae23efe6cf478136e5d82", "http_status": 200, "live_bytes": 16674, "live_sha256": "0a873f55cc75c776b5779d09a741f44a2537cc3eb4dae23efe6cf478136e5d82", "byte_identical": true},
+      {"path": "scripts/validate_fti_meeting_point_ricpe_continuity.py", "repository_bytes": 23641, "repository_sha256": "678cd854303e9fe103f0dc7098b7a0a5f8c9d0e9225844176454a738c1e9e66c", "http_status": 200, "live_bytes": 23641, "live_sha256": "678cd854303e9fe103f0dc7098b7a0a5f8c9d0e9225844176454a738c1e9e66c", "byte_identical": true}
+    ]
+  },
+  "mailbox_filing_proof_boundary": {
+    "last_refresh_at_utc": "2026-08-31T14:12:58Z",
+    "pagination_complete": true,
+    "search_hits": 11,
+    "already_indexed_in_scope_events": 7,
+    "excluded_automated_repository_notifications": 4,
+    "new_in_scope_institutional_events": 0,
+    "new_filing_proof": false,
+    "reposicion_status": "PREPARED_NOT_FILED",
+    "email_sent_by_this_release": false,
+    "filing_made_by_this_release": false,
+    "status_change_rule": "Require a new official receipt or equivalent primary filing proof."
+  },
+  "attested_scope": [
+    "20-confirmed / 4-pending current CAEPR denominator with Clubotel and ONA identities kept distinct",
+    "truthful inherited loader-contract markers without double-loading",
+    "FTI canonical 43/101 and repository-wide 20/24 assertions",
+    "bounded ACTA retry only for transient live HTTPS 502/503/504 responses",
+    "current mission-critical reader probes and byte floors",
+    "institutional communications workflow path coverage and final mailbox checkpoint"
+  ],
+  "validation": {
+    "evidence": [
+      "PR #1272 final reviewed head 1fe33abad4ca0f3647d33447988f40a2ef25855d: 42 success plus one intentional PR-event skip, zero failures.",
+      "PR #1272 reviewed tree and squash-merge tree both equal 92e55d81d3d15b89871513b22584c96253462163.",
+      "Pages run 33403372033 / #1335 completed success for exact merge SHA 4df51da33391c41869470ed539ad31fc4157fbfd.",
+      "No-cache exact-byte readback completed 24/24 HTTP 200 and byte-identical at 2026-08-31T14:56:20Z.",
+      "First merge-SHA workflow census was not all green: 47 success and six deterministic stale-verifier failures, preserved as open remediation controls."
+    ]
+  },
+  "privacy_boundary": {
+    "provider_or_private_storage_identifiers_published": false,
+    "exact_private_subjects_or_message_bodies_published": false,
+    "personal_email_addresses_published": false,
+    "native_custody_resolver_published": false
+  },
+  "non_inference_rule": "Adverse outcomes, silence, routing gaps, repeated institutional contact and functional benefit do not prove coordination, obstruction, capture, favouritism, prevarication, criminality or deliberate protection of a private perimeter without additional actor-specific evidence.",
+  "self_reference_boundary": {
+    "attested_release": "PR #1272 only",
+    "attestation_artifact_publication_claim": "NONE",
+    "top_level_current_state_meaning": "Lifecycle state of this successor artifact, not the qualified target-release state.",
+    "rule": "Do not use this record as proof of the later PR that carries it; record any later corrective-PR, rerun, filing or mailbox fact in a new source-supported successor."
+  },
+  "expected_source_files": [
+    "archive/EG_745_2026_UNITARY_REGISTER_DEPLOYMENT_ATTESTATION_31AUG2026.md",
+    "archive/EG_745_2026_UNITARY_REGISTER_CLOSEOUT_31AUG2026.md",
+    "publication-manifests/ministerio-fiscal-unitary-register-closeout-20260831.json",
+    "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json",
+    "archive/INSTITUTIONAL_COMMUNICATIONS_RECONCILIATION_RUNBOOK_31AUG2026.md"
+  ],
+  "continuity_rule": "Begin from then-current main and these immutable controls. Scan only checkpoint overlap plus genuinely new material; preserve stable events and add a row only for a distinct source-proved proposition."
+}

@@ -1,0 +1,605 @@
+{
+  "schema": "por-derecho.canonical-names.v1",
+  "control_date": "2026-09-22",
+  "scope_note": "These are controlled names for repository narrative and the identified historical/procedural contexts. Historical official sources do not by themselves establish a company's present-day status.",
+  "rules": [
+    "Resolve an acronym through this register before expanding it.",
+    "Do not translate, paraphrase or invent a legal entity's registered or procedural name.",
+    "Use the first_reference form on first narrative mention and the acronym thereafter.",
+    "Preserve a different source spelling or entity-form suffix only when it is clearly labelled as a source literal.",
+    "Do not merge a company, former name, shareholder, client, payer or represented party without a separate source bridge."
+  ],
+  "records": [
+    {
+      "id": "E003",
+      "record_type": "legal_entity",
+      "acronym": "LPB",
+      "canonical_name": "Luchy Playa Blanca, S.L.U.",
+      "first_reference": "Luchy Playa Blanca, S.L.U. (LPB)",
+      "identifier": {
+        "type": "CIF",
+        "value": "B35998582"
+      },
+      "controlled_context": "Concurso 36/2012 and repository narrative concerning that proceeding",
+      "registered_denominational_form": "LUCHY PLAYA BLANCA SOCIEDAD LIMITADA",
+      "registered_status_descriptor": "Sociedad unipersonal",
+      "registry_coordinates": {
+        "volume": 395,
+        "folio": 220,
+        "section": 8,
+        "sheet": "IL 9469"
+      },
+      "do_not_translate_legal_name": true,
+      "source_literal_variants": [
+        "Luchy Playa Blanca, S.L.",
+        "LUCHY PLAYA BLANCA SOCIEDAD LIMITADA"
+      ],
+      "forbidden_generated_aliases": [
+        "Lanzarote Paradise Beach",
+        "Lanzarote Paradise Beach, S.L.",
+        "Lanzarote Playa Blanca",
+        "Luchi Playa Blanca",
+        "Luci Playa Blanca",
+        "Lucy Playa Blanca"
+      ],
+      "official_sources": [
+        {
+          "authority": "Agencia Estatal Boletín Oficial del Estado",
+          "reference": "BOE-B-2012-22189",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-B-2012-22189",
+          "proposition": "The 6 June 2012 order declared Concurso 36/2012 for Luchy Playa Blanca, S.L.U., CIF B35998582."
+        },
+        {
+          "authority": "Agencia Estatal Boletín Oficial del Estado",
+          "reference": "BOE-B-2013-26977",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-B-2013-26977",
+          "proposition": "The 2013 court notice again identifies Luchy Playa Blanca, S.L.U., CIF B35998582, in Concurso 36/2012."
+        },
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2012-39-35, entry 91405",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-39-35",
+          "proposition": "The registry publication records LUCHY PLAYA BLANCA SOCIEDAD LIMITADA as a sociedad unipersonal on sheet IL 9469."
+        },
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2012-198-35, entry 418095",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-198-35",
+          "proposition": "The registry publication records Concurso 36/2012 against the same company and registry sheet."
+        }
+      ]
+    },
+    {
+      "id": "E004",
+      "record_type": "legal_entity",
+      "jurisdiction": "Spain",
+      "project_side_spanish_company": true,
+      "canonical_name": "Matkator, S.L.U.",
+      "first_reference": "Matkator, S.L.U.",
+      "identifier": {
+        "type": "NIF",
+        "value": "B76621689",
+        "verification_status": "REPOSITORY_RECORDED_PRIMARY_NIF_DOCUMENT_OPEN"
+      },
+      "controlled_context": "Project-side owner of identified property outside the LPB insolvency estate",
+      "registered_denominational_form": "MATKATOR SL",
+      "registered_status_descriptor": "Declaración de unipersonalidad",
+      "registry_coordinates": {
+        "volume": 3305,
+        "folio": 61,
+        "section": 8,
+        "sheet": "TF 52875"
+      },
+      "source_literal_variants": [
+        "Matkator, S.L.",
+        "MATKATOR SL"
+      ],
+      "name_rule": "Use Matkator, S.L.U. in controlled narrative. Preserve Matkator, S.L. or MATKATOR SL only as an identified source literal. Do not merge Matkator property with LPB's insolvency estate.",
+      "official_sources": [
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2013-246-38, entry 551984",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2013-246-38",
+          "proposition": "The registry publication records incorporation of MATKATOR SL, declaration of unipersonality, Monterecco Sun Park as sole shareholder and sheet TF 52875. The publication does not print the NIF."
+        }
+      ]
+    },
+    {
+      "id": "E005",
+      "record_type": "legal_entity",
+      "canonical_name": "AWESWELL LIMITED",
+      "first_reference": "AWESWELL LIMITED",
+      "identifier": {
+        "type": "UK company number",
+        "value": "07716847"
+      },
+      "former_name": "MONTERECCO SUN PARK LIMITED",
+      "former_name_period": "2011-07-25/2014-06-03",
+      "name_continuity_rule": "AWESWELL LIMITED and MONTERECCO SUN PARK LIMITED are the same UK company under company number 07716847; use the registered name applicable to the source date.",
+      "official_sources": [
+        {
+          "authority": "UK Companies House",
+          "reference": "Company 07716847",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/07716847",
+          "proposition": "The register identifies AWESWELL LIMITED, company number 07716847, and lists MONTERECCO SUN PARK LIMITED as its previous name through 3 June 2014."
+        }
+      ],
+      "official_registered_name": "AWESWELL LIMITED",
+      "forbidden_generated_aliases": [
+        "Oswell",
+        "Oswell Limited",
+        "Awesell",
+        "Awesell Limited",
+        "Awswell",
+        "Awswell Limited",
+        "Aweswel",
+        "Aweswel Limited",
+        "Aweswelll",
+        "Aweswelll Limited",
+        "AWESWELLL"
+      ],
+      "separation_rule": "OSWELL 426 S.L. is a distinct Spanish entity and must never be treated as an alias, correction or bridge for UK company 07716847.",
+      "generation_rule": "Resolve the entity by company number 07716847 and use AWESWELL LIMITED in current assertions. Reject forbidden generated aliases outside expressly classified source literals, historical-error quotations or correction controls."
+    },
+    {
+      "id": "E006",
+      "record_type": "legal_entity",
+      "jurisdiction": "Spain",
+      "project_side_spanish_company": true,
+      "canonical_name": "Pink Canary Services, S.L.U.",
+      "first_reference": "Pink Canary Services, S.L.U.",
+      "identifier": {
+        "type": "NIF",
+        "value": "B76564517"
+      },
+      "former_name": "Monterecco Sun Park, S.L.U.",
+      "former_name_change_date": null,
+      "former_name_change_date_status": "OPEN_EXACT_REGISTRY_ACT_NOT_LOCATED",
+      "registered_denominational_form_at_incorporation": "MONTERECCO SUN PARK SL",
+      "registered_status_descriptor": "Declaración de unipersonalidad",
+      "registry_coordinates": {
+        "volume": 3217,
+        "folio": 73,
+        "section": 8,
+        "sheet": "TF 49739"
+      },
+      "name_continuity_rule": "Pink Canary Services, S.L.U. and the former Spanish name Monterecco Sun Park, S.L.U. refer to the same Spanish legal person under NIF B76564517. Use the name applicable to the source date. Do not infer the exact change date until the registry act is obtained.",
+      "separation_rule": "Never conflate this Spanish company with UK company 07716847, formerly Monterecco Sun Park Limited and now Aweswell Limited.",
+      "source_literal_variants": [
+        "Pink Canary Services, S.L.",
+        "PINK CANARY SERVICES SLU.",
+        "Monterecco Sun Park, S.L.",
+        "MONTERECCO SUN PARK SL"
+      ],
+      "official_sources": [
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2012-27-38, entry 64023",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-27-38",
+          "proposition": "The registry publication records incorporation of MONTERECCO SUN PARK SL, declaration of unipersonality and sheet TF 49739."
+        },
+        {
+          "authority": "Agencia Estatal Boletín Oficial del Estado",
+          "reference": "BOE-A-2019-14965",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2019-14965",
+          "proposition": "The 2019 notice identifies PINK CANARY SERVICES SLU., NIF B76564517, in the Tenerife registry. The recorded NIF-revocation agreement is not evidence of corporate extinction."
+        }
+      ],
+      "current_status_rule": "Do not state a current 2026 corporate or tax status without a current registry or tax certificate."
+    },
+    {
+      "id": "E007",
+      "record_type": "legal_entity",
+      "jurisdiction": "Spain",
+      "canonical_name": "Pamanil, S.L.",
+      "first_reference": "Pamanil, S.L.",
+      "registered_denominational_form": "PAMANIL SOCIEDAD LIMITADA",
+      "controlled_context": "Historical Sun Park Community administration/property-services source family",
+      "name_rule": "BORME account-deposit notices confirm the entity name only. Do not infer officers, mandate, performance or succession to Pamalexsha from those notices.",
+      "separation_rule": "Pamanil, S.L. and Pamalexsha Servicios Integrales, Sociedad Limitada are separate legal persons unless an act-specific assignment, novation, succession or other bridge is proved.",
+      "official_sources": [
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-B-2011-132-35",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-B-2011-132-35",
+          "proposition": "The official account-deposit list names PAMANIL SOCIEDAD LIMITADA in the Las Palmas registry for historical accounting periods; it does not identify officers."
+        },
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-B-2011-156-35",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-B-2011-156-35",
+          "proposition": "The official account-deposit list names PAMANIL SOCIEDAD LIMITADA for the 2010 deposit; it does not prove a Sun Park mandate or performance."
+        }
+      ]
+    },
+    {
+      "id": "E044",
+      "record_type": "legal_entity",
+      "jurisdiction": "Spain",
+      "canonical_name": "MILLAN AND MINERS SOCIEDAD LIMITADA PROFESIONAL",
+      "first_reference": "MILLAN AND MINERS SOCIEDAD LIMITADA PROFESIONAL",
+      "registered_denominational_form": "MILLAN AND MINERS SOCIEDAD LIMITADA PROFESIONAL",
+      "operations_start_date": "2014-04-02",
+      "registration_date": "2015-05-21",
+      "registered_object": "La actividad propia de los abogados.",
+      "registry_coordinates": {
+        "volume": 2111,
+        "folio": 194,
+        "section": 8,
+        "sheet": "GC 49668"
+      },
+      "retrieval_aliases_not_legal_names": [
+        "Millán & Miners, S.L.P.",
+        "Millan & Miners, S.L.P.",
+        "Millen and Miners",
+        "Millennium Miners"
+      ],
+      "formation_roles": [
+        {
+          "person": "Esteban López Noriega",
+          "capacities": [
+            "administrador mancomunado",
+            "socio profesional"
+          ]
+        },
+        {
+          "person": "Juan Carlos Prieto Puente",
+          "capacities": [
+            "administrador mancomunado",
+            "socio profesional"
+          ]
+        }
+      ],
+      "later_office_change": "On 17 November 2022 both ceased as joint administrators and Juan Carlos Prieto Puente became sole administrator.",
+      "temporal_rule": "The company did not yet exist in 2011. Do not attribute earlier individual mandates or conduct to the firm without a separate source bridge.",
+      "official_sources": [
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2015-100-35, entry 219204",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2015-100-35",
+          "proposition": "The registry act records the exact denomination, 2 April 2014 operations start, legal-practice object, both professional partners, both joint administrators and sheet GC 49668."
+        },
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2022-225-35, entry 518760",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2022-225-35",
+          "proposition": "The registry act records cessation of both joint administrators and appointment of Juan Carlos Prieto Puente as sole administrator on 17 November 2022."
+        }
+      ]
+    },
+    {
+      "id": "E051",
+      "record_type": "legal_entity",
+      "jurisdiction": "Spain",
+      "project_side_spanish_company": true,
+      "canonical_name": "Hava Vida Travel & Tourism, S.L.U.",
+      "first_reference": "Hava Vida Travel & Tourism, S.L.U.",
+      "identifier": {
+        "type": "NIF",
+        "value": "B76564434",
+        "verification_status": "REPOSITORY_RECORDED_PRIMARY_SPANISH_NIF_DOCUMENT_OPEN"
+      },
+      "controlled_context": "Project-side Spanish company and separately identified payer in the Garrigues payment record",
+      "registered_denominational_form": "HAVA VIDA TRAVEL & TOURISM SL",
+      "registered_status_descriptor": "Declaración de unipersonalidad",
+      "registry_coordinates": {
+        "volume": 3217,
+        "folio": 63,
+        "section": 8,
+        "sheet": "TF 49735"
+      },
+      "source_literal_variants": [
+        "Hava Vida Travel & Tourism, S.L.",
+        "HAVA VIDA TRAVEL & TOURISM SL",
+        "HAVAVIDA T&T, S.L.",
+        "HAVAVIDA"
+      ],
+      "search_aliases_not_legal_names": [
+        "Hava Vida",
+        "Habavida",
+        "HAVAVIDA"
+      ],
+      "forbidden_generated_aliases": [
+        "Habavida, S.L.",
+        "Habavida Travel & Tourism",
+        "Havidia Travel & Tourism"
+      ],
+      "separation_rule": "Do not conflate Hava Vida Travel & Tourism, S.L.U. with the separate US entity Havidia LLC or with LPB.",
+      "official_sources": [
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2012-27-38, entry 64020",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-27-38",
+          "proposition": "The registry publication records incorporation of HAVA VIDA TRAVEL & TOURISM SL, declaration of unipersonality and sheet TF 49735. The publication does not print the NIF."
+        },
+        {
+          "authority": "UK Companies House",
+          "reference": "Spanish company officer record for company 10762489",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/10762489/officers",
+          "proposition": "The public officer record identifies HAVA VIDA TRAVEL AND TOURISM SL and company number B76564434; a current Spanish certificate remains the controlling target."
+        }
+      ]
+    },
+    {
+      "id": "E052",
+      "record_type": "legal_entity",
+      "jurisdiction": "Spain",
+      "canonical_name": "PAMALEXSHA SERVICIOS INTEGRALES, SOCIEDAD LIMITADA",
+      "first_reference": "PAMALEXSHA SERVICIOS INTEGRALES, SOCIEDAD LIMITADA",
+      "registered_denominational_form": "PAMALEXSHA SERVICIOS INTEGRALES, SOCIEDAD LIMITADA",
+      "operations_start_date": "2013-09-17",
+      "registration_date": "2013-10-07",
+      "registry_coordinates": {
+        "volume": 2065,
+        "folio": 206,
+        "section": 8,
+        "sheet": "GC 47444"
+      },
+      "source_literal_variants": [
+        "Pamalexsha Servicios Integrales, S.L.",
+        "Pamalexsha, S.L."
+      ],
+      "retrieval_aliases_not_legal_names": [
+        "Pamalexa",
+        "Pamalexsha"
+      ],
+      "formation_role": {
+        "person": "Antonio Cogolludo Rojas",
+        "capacity": "administrador único"
+      },
+      "later_office_change": "The 16 July 2026 act names Shaila María Cogolludo Ramos as apoderada.",
+      "separation_rule": "Do not merge this company with Pamanil, S.L. or infer succession, a Sun Park mandate, FMMM corporate office, ownership or lawful hotel-operation authority without separate primary evidence.",
+      "official_sources": [
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2013-196-35, entry 438341",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2013-196-35",
+          "proposition": "The registry act records the exact denomination, 17 September 2013 operations start, Antonio Cogolludo Rojas as sole administrator and sheet GC 47444."
+        },
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2026-140-35, entry 345817",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-140-35",
+          "proposition": "The registry act records appointment of Shaila María Cogolludo Ramos as apoderada on 16 July 2026."
+        }
+      ]
+    },
+    {
+      "id": "E053",
+      "record_type": "legal_entity",
+      "jurisdiction": "Spain",
+      "canonical_name": "EXPLOTACIONES NOALPA, SOCIEDAD LIMITADA",
+      "first_reference": "EXPLOTACIONES NOALPA, SOCIEDAD LIMITADA",
+      "registered_denominational_form": "EXPLOTACIONES NOALPA, SOCIEDAD LIMITADA",
+      "operations_start_date": "2017-10-18",
+      "registration_date": "2017-12-26",
+      "registry_coordinates": {
+        "volume": 2181,
+        "folio": 103,
+        "section": 8,
+        "sheet": "GC 53519"
+      },
+      "retrieval_aliases_not_legal_names": [
+        "Explotaciones Noepa",
+        "Noepa"
+      ],
+      "formation_role": {
+        "person": "Antonio Cogolludo Rojas",
+        "capacity": "administrador único"
+      },
+      "later_office_change": "The 28 December 2021 act names Shaila María Cogolludo Ramos as apoderada.",
+      "separation_rule": "Do not infer succession from Pamanil or Pamalexsha, a Sun Park mandate, ownership, FMMM office or common unlawful purpose from the registered offices alone.",
+      "official_sources": [
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2018-3-35, entry 5482",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2018-3-35",
+          "proposition": "The registry act records the exact denomination, 18 October 2017 operations start, Antonio Cogolludo Rojas as sole administrator and sheet GC 53519."
+        },
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2022-3-35, entry 5279",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2022-3-35",
+          "proposition": "The registry act records appointment of Shaila María Cogolludo Ramos as apoderada on 28 December 2021."
+        }
+      ]
+    },
+    {
+      "id": "E054",
+      "record_type": "legal_entity",
+      "jurisdiction": "Spain",
+      "canonical_name": "SANTA LUCIA REAL ESTATE, SOCIEDAD LIMITADA",
+      "first_reference": "SANTA LUCIA REAL ESTATE, SOCIEDAD LIMITADA",
+      "registered_denominational_form": "SANTA LUCIA REAL ESTATE, SOCIEDAD LIMITADA",
+      "operations_start_date": "2017-12-22",
+      "registration_date": "2018-01-31",
+      "registry_coordinates": {
+        "volume": 2183,
+        "folio": 150,
+        "section": 8,
+        "sheet": "GC 53659"
+      },
+      "unresolved_oral_forms_not_aliases": [
+        "Inversiones Santa Lucía",
+        "Santa María"
+      ],
+      "formation_roles": [
+        {
+          "person": "Antonio Cogolludo Rojas",
+          "capacity": "administrador solidario"
+        },
+        {
+          "person": "Juan Carlos Prieto Puente",
+          "capacity": "administrador solidario"
+        },
+        {
+          "person": "Atilio Alberto Maddonni Citara",
+          "capacity": "administrador solidario"
+        }
+      ],
+      "later_office_changes": [
+        "On 18 May 2021 all three solidary administrators ceased, Antonio Cogolludo Rojas became sole administrator and Juan Carlos Prieto Puente became apoderado.",
+        "A July 2025 registry act records Antonio Cogolludo Rojas's cessation as sole administrator and appointment of Miguel Ángel García Pérez; it does not by itself resolve the current status of Prieto's 2021 power."
+      ],
+      "relationship_rule": "The company proves a direct dated Prieto–Antonio corporate link. It does not by itself prove a Sun Park mandate, conflict of interest, knowledge transfer, coordination or wrongdoing.",
+      "official_sources": [
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2018-27-35, entry 61450",
+          "url": "https://www.boe.es/borme/dias/2018/02/07/pdfs/BORME-A-2018-27-35.pdf",
+          "proposition": "The registry act records the exact denomination, 22 December 2017 operations start, the three solidary administrators and sheet GC 53659."
+        },
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2021-97-35, entries 249637-249638",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2021-97-35",
+          "proposition": "The registry acts record the 18 May 2021 administrator changes and Prieto's appointment as apoderado."
+        },
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2025-138-35",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2025-138-35",
+          "proposition": "The later registry act records Antonio Cogolludo Rojas's cessation as sole administrator and a replacement; a certified current extract remains necessary for present-office claims."
+        }
+      ]
+    },
+    {
+      "id": "P-JTPS",
+      "record_type": "person",
+      "canonical_name": "Juan Tomás Parrilla Suárez",
+      "first_reference": "Juan Tomás Parrilla Suárez",
+      "name_rule": "Retain both accents and both surnames on first reference; a later contextual short reference may use Parrilla.",
+      "official_sources": [
+        {
+          "authority": "Agencia Estatal Boletín Oficial del Estado",
+          "reference": "BOE-B-2010-5683",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-B-2010-5683",
+          "proposition": "The official court notice identifies Juan Tomás Parrilla Suárez by that full name."
+        }
+      ]
+    },
+    {
+      "id": "P-CVRF",
+      "record_type": "person",
+      "canonical_name": "Carlos Víctor Rubio Faure",
+      "first_reference": "Carlos Víctor Rubio Faure, Secretario de Gobierno del Tribunal Superior de Justicia de Canarias",
+      "source_literal_variants": [
+        "Carlos Victor Rubio Faure",
+        "CARLOS VÍCTOR RUBIO FAURE"
+      ],
+      "name_rule": "Use both surnames and the accented Víctor. The accent-free form may be preserved only as a source literal. Do not treat speech-to-text forms such as 'dubious faure' as a name.",
+      "capacity_rule": "Attribute only acts signed or sent in the identified capacity and period. Do not infer personal knowledge, intention or responsibility from the office relationship.",
+      "official_sources": [
+        {
+          "authority": "Agencia Estatal Boletín Oficial del Estado",
+          "reference": "BOE-A-2024-4431",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-4431",
+          "proposition": "The appointment order awards Carlos Víctor Rubio Faure the Government Secretariat of the High Court of Justice of the Canary Islands."
+        },
+        {
+          "authority": "Consejo General del Poder Judicial / Poder Judicial",
+          "reference": "Official TSJ Canarias document dated 13 March 2026",
+          "url": "https://www.poderjudicial.es/stfls/CGPJ/0%20LO%201-2025/TSJ%20CANARIAS/TENERIFE/SANTA%20CRUZ%20DE%20TENERIFE/20260313%20Santa%20Cruz%20de%20Tenerife%20-%20Junta%20Sectorial%20Civil%2C%20Aud.%20Prov.%20de%20Santa%20Cruz%20de%20Tenerife%20%28A%29.pdf",
+          "proposition": "The 2026 official document identifies him as Government Secretary of the TSJ Canarias."
+        }
+      ]
+    },
+    {
+      "id": "I-TSJC",
+      "record_type": "institution",
+      "acronym": "TSJC",
+      "canonical_name": "Tribunal Superior de Justicia de Canarias",
+      "first_reference": "Tribunal Superior de Justicia de Canarias (TSJ Canarias)",
+      "acronym_rule": "Prefer TSJ Canarias in reader-facing text because TSJC can also be ambiguous outside this repository.",
+      "separation_rule": "Do not merge the High Court, its judicial chambers, its Government Chamber and its Government Secretariat into one decision-maker.",
+      "official_sources": [
+        {
+          "authority": "Consejo General del Poder Judicial / Poder Judicial",
+          "reference": "TSJ Canarias portal",
+          "url": "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Tribunales-Superiores-de-Justicia/TSJ-Canarias/",
+          "proposition": "Official institutional portal for the High Court of Justice of the Canary Islands."
+        }
+      ]
+    },
+    {
+      "id": "I-SG-TSJC",
+      "record_type": "institutional_office",
+      "canonical_name": "Secretaría de Gobierno del Tribunal Superior de Justicia de Canarias",
+      "first_reference": "Secretaría de Gobierno del Tribunal Superior de Justicia de Canarias",
+      "separation_rule": "This is the LAJ governance/administrative issuing office for Exp. Gub. 38/2026, not a judicial chamber deciding the merits of Concurso 36/2012.",
+      "official_sources": [
+        {
+          "authority": "Agencia Estatal Boletín Oficial del Estado",
+          "reference": "BOE-A-2024-4431",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-4431",
+          "proposition": "The official appointment order identifies the Government Secretariat of the TSJ Canarias as the post awarded to Carlos Víctor Rubio Faure."
+        },
+        {
+          "authority": "Agencia Estatal Boletín Oficial del Estado",
+          "reference": "LOPJ Articles 463-465",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-12666#acuatrocientossesentaytres",
+          "proposition": "The LOPJ defines the LAJ hierarchy, Government Secretary post, powers and limits."
+        }
+      ]
+    },
+    {
+      "id": "I-SGAJ",
+      "record_type": "institutional_officeholder",
+      "canonical_name": "Secretario General de la Administración de Justicia",
+      "first_reference": "Secretario General de la Administración de Justicia",
+      "capacity_rule": "Use as the statutory superior officeholder and identified appeal authority. Do not state that a filing has been admitted, forwarded or decided without a primary record.",
+      "official_sources": [
+        {
+          "authority": "Agencia Estatal Boletín Oficial del Estado",
+          "reference": "LOPJ Article 463",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-12666#acuatrocientossesentaytres",
+          "proposition": "The LOPJ places the Secretary-General at the top of the LAJ governance hierarchy."
+        }
+      ]
+    },
+    {
+      "id": "I-SCP-LP",
+      "record_type": "institutional_office",
+      "canonical_name": "Secretaría de Coordinación Provincial de Las Palmas",
+      "first_reference": "Secretaría de Coordinación Provincial de Las Palmas",
+      "capacity_rule": "Use this form for the registered 15 August 2026 destination; distinguish it from the statutory officeholder title Secretario Coordinador Provincial.",
+      "separation_rule": "Registered destination does not prove incorporation, action by an individual LAJ or a merits conclusion.",
+      "repository_sources": [
+        "archive/TSJC_LAJ_EXP_GUB_38_IDENTITY_CAPACITY_RELATIONSHIP_CONTROL_25AUG2026.md",
+        "archive/TSJ_EXP_GUB_38_2026_ALZADA_FILED_REGAGE_CONTROL_20AUG2026.md"
+      ]
+    },
+    {
+      "id": "I-DGRAJ-CAN",
+      "record_type": "administrative_body",
+      "acronym": "DGRAJ",
+      "canonical_name": "Dirección General de Relaciones con la Administración de Justicia del Gobierno de Canarias",
+      "first_reference": "Dirección General de Relaciones con la Administración de Justicia del Gobierno de Canarias (DGRAJ)",
+      "separation_rule": "Its material and technical justice-infrastructure role does not make it the author of a decision signed by the TSJ Government Secretary.",
+      "official_sources": [
+        {
+          "authority": "Gobierno de Canarias",
+          "reference": "Principales líneas de actuación — modernización de Justicia",
+          "url": "https://www.gobiernodecanarias.org/justicia/modernizacion/Principaleslineasdeactuacion/",
+          "proposition": "The official page describes DGRAJ management of territorial judicial digital infrastructure and the ATLANTE environment."
+        }
+      ]
+    },
+    {
+      "id": "I-CGPJ",
+      "record_type": "constitutional_body",
+      "acronym": "CGPJ",
+      "canonical_name": "Consejo General del Poder Judicial",
+      "first_reference": "Consejo General del Poder Judicial (CGPJ)",
+      "separation_rule": "Keep judicial governance and judge-discipline functions separate from LAJ hierarchy, court-office services, judicial merits and criminal investigation.",
+      "official_sources": [
+        {
+          "authority": "Consejo General del Poder Judicial",
+          "reference": "Official portal",
+          "url": "https://www.poderjudicial.es/",
+          "proposition": "Official institutional source for the Council's constitutional judicial-governance role."
+        }
+      ]
+    }
+  ]
+}

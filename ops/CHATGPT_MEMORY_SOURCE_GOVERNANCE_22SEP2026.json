@@ -1,0 +1,91 @@
+{
+  "schema": "por-derecho.chatgpt-memory-source-governance.v1",
+  "control_date": "2026-09-22",
+  "status": "PROPOSED_ACTIVE_CONTROL",
+  "purpose": "Prevent conversational memory, stale summaries, source literals or generated text from overriding current primary evidence and repository-controlled facts.",
+  "canonical_identity_lock": {
+    "entity": "AWESWELL LIMITED",
+    "display_name": "Aweswell Limited",
+    "company_number": "07716847",
+    "former_name": "MONTERECCO SUN PARK LIMITED",
+    "former_name_end_date": "2014-06-03",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/07716847",
+    "governing_repository_records": [
+      "ops/CANONICAL_ENTITY_NAMES.json#E005",
+      "ops/AWESWELL_CANONICAL_NAME_RULE_27AUG2026.json"
+    ],
+    "forbidden_as_current_or_alias": [
+      "Oswell",
+      "Oswell Limited",
+      "OSWELL",
+      "OSWELL LIMITED",
+      "Awesell",
+      "Awesell Limited",
+      "Awswell",
+      "Awswell Limited",
+      "Aweswel",
+      "Aweswel Limited",
+      "Aweswelll",
+      "Aweswelll Limited"
+    ],
+    "historical_literal_rule": "A forbidden form may appear only inside a clearly labelled faithful quotation, transcription-error record, correction notice or retrieval-only search variant. It must never be normalized into a canonical identity.",
+    "separation_rule": "OSWELL 426 S.L. is a distinct Spanish entity and must never be merged with UK company 07716847."
+  },
+  "source_authority_order": [
+    "signed native primary documents",
+    "court and institutional originals",
+    "registered submissions and receipts",
+    "official registries and current public authorities",
+    "direct correspondence",
+    "contemporaneous third-party records",
+    "repository-controlled reconstructions",
+    "ChatGPT memory summaries and generated analysis"
+  ],
+  "memory_policy": {
+    "store": [
+      "canonical identities and identifiers",
+      "durable drafting and privacy constraints",
+      "bilingual-publication preference",
+      "allegation-versus-finding discipline",
+      "source hierarchy",
+      "fail-closed verification rules",
+      "official correspondence uses the SBU business account"
+    ],
+    "do_not_treat_as_memory_truth": [
+      "branch or commit SHA",
+      "open-PR denominator",
+      "CI or deployment status",
+      "temporary GitLab access state",
+      "current deadlines",
+      "recipient lists",
+      "live-page state",
+      "unverified allegations"
+    ],
+    "rule": "Memory selects retrieval and applies durable constraints; it never substitutes for live verification or primary evidence."
+  },
+  "source_roles": {
+    "github": "Active continuity and publication surface while GitLab repository access is blocked; live refs, checks and deployment state must be retrieved dynamically.",
+    "gitlab": "Intended canonical lineage and public website; public site may be read live, but inaccessible repository state must not be guessed.",
+    "email": "Original thread governs recipients and wording. Official correspondence uses sbu001@monterecco.com. Read back every sent message.",
+    "files": "Current controlled file version governs; do not treat an old extraction or summary as the native source.",
+    "web": "Use current authoritative primary sources for time-sensitive or registry facts.",
+    "chatgpt_memory": "Durable contextual aid only; correct, suppress or disregard stale summaries when they conflict with primary evidence or current repository controls."
+  },
+  "outbound_preflight": [
+    "Resolve every legal entity through ops/CANONICAL_ENTITY_NAMES.json.",
+    "Reject forbidden identity variants outside labelled historical quotations or correction notices.",
+    "Verify person names, case references, dates and identifiers.",
+    "Resolve recipients from the actual thread and preserve the narrow intended To/CC set.",
+    "Apply public/private and privilege boundaries.",
+    "Verify every public link before transmission.",
+    "Read back the exact Sent copy or deployed bytes.",
+    "Record the Gmail message ID, commit SHA or live URL as applicable."
+  ],
+  "correction_event": {
+    "date": "2026-09-22",
+    "issue": "Four external messages sent on 2026-09-21 inherited an erroneous Oswell/Oswell Limited template form.",
+    "resolution": "Thread-preserving corrections were sent to the Consejo Canario/inter-Colegio, PwC, RSM and Grant Thornton recipient sets, identifying AWESWELL LIMITED (company number 07716847) as the correct legal name.",
+    "recurrence_rule": "Do not silently rewrite preserved historical messages. Prevent recurrence at generation and preflight stages."
+  },
+  "account_memory_manual_boundary": "ChatGPT cannot directly edit the user's account-level Memory summary or settings. The user-controlled Memory UI must remove or correct any statement treating Oswell as canonical or as an alias of AWESWELL LIMITED."
+}

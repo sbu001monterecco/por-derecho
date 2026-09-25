@@ -1,0 +1,67 @@
+{
+  "schema":"por-derecho.concurso36-lexnet-supplement.v1",
+  "generated":"2026-08-29",
+  "status":"CONTROLLED SUPPLEMENT — DOES NOT REPLACE CERTIFIED COURT INDEX",
+  "purpose":"Promote newly re-verified LexNET filing/notification nodes that were not safely treated as part of the earlier canonical party-filing denominator. Dedupe against the canonical catalogue by LexNET id, document hash and date before future promotion.",
+  "records":[
+    {
+      "id":"C36-LX-SUP-20180424-01",
+      "record_class":"party_filing",
+      "date":"2018-04-24",
+      "section":"Concurso ordinario 36/2012; filing identifies section 1ª while the liquidation issue relates to the plan approval",
+      "party":"Luchy Playa Blanca, S.L.U.",
+      "title":"Solicitud de aclaración del Auto de 16 de abril de 2018 que aprobó el plan de liquidación",
+      "lexnet_id":"1201810205126334",
+      "sent_message_id":"201810205126334",
+      "filed_time":"09:14 (LexNET peninsular time)",
+      "principal_filename":"aclaracion auto plan liquidacion.pdf",
+      "principal_hash":"5c49a00269cf5659b68290698ccbb10b3797999d",
+      "catalogue_type":"ESCRITO DE ALEGACIONES",
+      "verified_proposition":"LPB asked the court to clarify the approved liquidation plan, including the amount of privileged special mortgage credit necessary to understand the bid/dacion mechanism.",
+      "proof_limit":"The receipt proves filing and content attribution, not that every legal/factual proposition was correct.",
+      "linked_response":"Later 4 June 2018 judicial treatment addressed implementation/credit/competition issues; exact proposition-by-proposition response pairing remains to be completed.",
+      "source":"Connected Gmail LexNET receipt re-verified 29 Aug 2026"
+    },
+    {
+      "id":"C36-LX-SUP-20180604-01",
+      "record_class":"party_filing",
+      "date":"2018-06-04",
+      "section":"Sección 5ª",
+      "party":"Luchy Playa Blanca, S.L.U.",
+      "title":"Oposición a la propuesta de liquidación de intereses de Construcciones Acosta Matos, S.A.",
+      "lexnet_id":"1201810213090383",
+      "sent_message_id":"201810213090383",
+      "filed_time":"19:24 (LexNET peninsular time)",
+      "principal_filename":"oposicion a la propuesta de liquidacion de intereses.pdf",
+      "principal_hash":"ff26034fd5db4acefc6673034f52367dda119ff6",
+      "annex_filename":"Deuda Hipotecaria - 31 de Mayo 2018 - Listado Fincas _1_.pdf",
+      "annex_hash":"f3a8fbb30b02199432b0ddcd6c68a696015d0e22",
+      "catalogue_type":"ESCRITO DE OPOSICIÓN",
+      "verified_proposition":"LPB opposed CAM's 18 May interest-liquidation proposal and argued that privileged interest had to be determined within the approved liquidation-plan framework, with ultimate judicial determination in case of dispute.",
+      "proof_limit":"The receipt proves the filing, annex and asserted position. It does not prove that CAM's calculation was false or that LPB's legal position was correct.",
+      "linked_response":"A court Auto dated 4 June was notified through LexNET on 7 June; the repository treats the operative judicial position as materially adverse on the relevant interest/implementation questions.",
+      "source":"Connected Gmail LexNET receipt re-verified 29 Aug 2026"
+    },
+    {
+      "id":"C36-LX-SUP-20180607-COURT-01",
+      "record_class":"court_notification",
+      "date":"2018-06-07",
+      "section":"Pieza 5 · Sección 5ª - Convenio liquidación",
+      "issuer":"Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria",
+      "title":"Notificación LexNET de Auto texto libre absoluto",
+      "lexnet_id":"201810213906846",
+      "sent_time":"14:16 (LexNET peninsular time)",
+      "collected_time":"14:46 (LexNET peninsular time)",
+      "principal_hash":"40cb174f0224f516fd3b07a47f9cad806841bf48",
+      "annex_hash":"902cd4871ef85e751cb453b59b6c7923a413b29b",
+      "verified_proposition":"The court notified an Auto in Piece 5/Section 5 on 7 June 2018 to the listed parties/professionals, including LPB's procuradora and the Insolvency Administrator.",
+      "proof_limit":"This metadata does not by itself establish that the order authorised the physical control/takeover events occurring on 7 June. The controlled repository separately states that no whole-hotel possession/eviction/operation authority has been identified in the order family.",
+      "source":"Connected Gmail LexNET notification re-verified 29 Aug 2026"
+    }
+  ],
+  "next_promotion_steps":[
+    "Dedupe these records against assets/data/concurso36-complete-record-v1.json and any later supplement by LexNET id/hash.",
+    "Bind each party filing to exact court/LAJ response, appeal, service, finality and implementation records.",
+    "Locate the exact Concurso 36/2012 receipt, if any, reporting the 7 June physical-control event to the court; do not infer nonexistence from current non-location."
+  ]
+}

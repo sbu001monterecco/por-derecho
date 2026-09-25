@@ -1,0 +1,84 @@
+{
+  "schema": "por-derecho.workspace-handoff.v1",
+  "handoff_id": "PD-WCH-20260903-GCCIV003-SRC-002",
+  "workspace_id": "PD-WS-20260902-0001",
+  "control_date": "2026-09-03",
+  "status": "BRANCH_REGISTERED_PR_PENDING",
+  "historic_docket_state": "OPEN_NOT_CERTIFIED_COMPLETE",
+  "baseline_main_sha": "231d25c12108579efdf92365cf7860bf281178f5",
+  "branch": "codex/gc-civ-003-primary-source-recovery-20260903",
+  "immutable_release": {
+    "pr": 1373,
+    "merge_sha": "efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c",
+    "tree_sha": "1e2295ccc94d3e020b2ef0db59924d439de2aa93",
+    "pages_run_id": 33697357002,
+    "live_browser_run_id": 33700567926,
+    "release_state": "MERGED_DEPLOYED_LIVE_BROWSER_VERIFIED"
+  },
+  "locked_proceeding": {
+    "id": "GC-CIV-003",
+    "reference": "Diligencias Preliminares 1041/2017",
+    "nig": "3501642120170028407",
+    "court_id": "PD-SP-I-0048",
+    "judge_id": "PD-SP-P-0124",
+    "laj_id": "PD-SP-P-0165",
+    "deprecated_duplicate": "LZ-CIV-050",
+    "deprecated_duplicate_state": "REMOVED_DO_NOT_RECREATE"
+  },
+  "closed_source_gaps": [
+    "19-Dec-2017 signed admission Auto",
+    "Finality of the 19-Dec-2017 Auto only",
+    "Positive CAM citation/requerimiento on 18-Jan-2018",
+    "CAM appearance/opposition"
+  ],
+  "open_source_gaps": [
+    "Complete docket / certified index",
+    "Actual 19-Feb-2018 act/result",
+    "Standalone primary 05-Mar-2018 archive decree",
+    "Original archive/desistimiento/request and exact procedural basis",
+    "Service/notification of 05-Mar decree",
+    "Finality of closure sequence"
+  ],
+  "closure_trace_state": "STRONGLY_TRACED_PRIMARY_FILE_STILL_TO_RECOVER",
+  "registered_files": [
+    "archive/GC_CIV_003_PRIMARY_ACTS_SOURCE_REGISTER_03SEP2026.md",
+    "assets/data/gc-civ-003-primary-source-state-20260903.json",
+    "es/procedimientos/gc-civ-003/index.html",
+    "en/proceedings/gc-civ-003/index.html"
+  ],
+  "source_overlay": {
+    "path": "assets/data/gc-civ-003-primary-source-state-20260903.json",
+    "state": "CONTROLLING_03SEP2026_SOURCE_CORRECTION_OVERLAY",
+    "supersedes_for_gap_interpretation": "02-Sep-2026 GC-CIV-003 Master-row wording only",
+    "identity_change": false
+  },
+  "targeted_recovery": {
+    "broad_scan": false,
+    "drive_source_families_checked": ["DILIGENCIA PRELIMINAR", "TANTEO Y RETRACTO"],
+    "nineteen_feb_result": "SOURCE_GAP",
+    "five_mar_primary_decree": "NOT_SURFACED",
+    "gmail_exact_case_hits_in_target_windows": 0,
+    "secondary_legacy_spreadsheet": "RECOVERY_LEAD_ONLY_WRONG_COURT_LABEL"
+  },
+  "do_not_infer": [
+    "19-Feb occurrence or production from scheduling",
+    "requester or reasoning of 5-Mar archive from later annex description",
+    "service or finality of closure from Auto finality",
+    "judicial authorship for party opposition filing",
+    "GC-CIV-003 authority from the separate 8-Feb-2018 Concurso 36/2012 Auto"
+  ],
+  "next_p0": [
+    "actual 19-Feb-2018 act/result",
+    "standalone 5-Mar-2018 decree",
+    "underlying archive/desistimiento request",
+    "service and finality of closure sequence"
+  ],
+  "publication_next": [
+    "re-fetch main",
+    "compare branch",
+    "open PR and run CI",
+    "merge with head safety",
+    "verify exact-SHA Pages deployment",
+    "live verify ES/EN/source-state"
+  ]
+}

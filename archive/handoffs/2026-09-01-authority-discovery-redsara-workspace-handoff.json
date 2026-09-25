@@ -1,0 +1,51 @@
+{
+  "schema": "por-derecho.workspace-handoff.v1",
+  "handoff_id": "PD-WCH-20260901-AUTH-REDSARA-001",
+  "workspace_id": "PD-WS-20260901-0002",
+  "date": "2026-09-01",
+  "topic": "Authority discovery, Red SARA/AGE filings and institutional responses",
+  "continuity_status": "DELETION_SAFE_WITH_OPEN_WORK",
+  "repository": "sbu001monterecco/por-derecho",
+  "audited_main_sha": "4de5b4c739a5e982e7953723eb0f19e63151f83d",
+  "publication": {
+    "pr": 1313,
+    "reviewed_head_sha": "b98f193b5beb952710387e2a9d9b9c081fa71d90",
+    "merge_sha": "4de5b4c739a5e982e7953723eb0f19e63151f83d",
+    "pages_deployment_id": 6201863449,
+    "pages_action_run": 33511479330,
+    "status": "LIVE_VERIFIED_WITH_OPEN_EVIDENCE_GAPS"
+  },
+  "canonical_controls": [
+    "assets/data/institutional-communications-register-v1.json",
+    "assets/data/redsara-age-filings-register-v1.json",
+    "scripts/build_redsara_age_filings_register.py",
+    "scripts/validate_redsara_authority_discovery.py",
+    "archive/AUTHORITY_DISCOVERY_REDSARA_LIVE_CLOSEOUT_01SEP2026.md"
+  ],
+  "public_routes": [
+    "/en/red-sara-age-filings-authority-responses/",
+    "/es/registros-redsara-age-y-respuestas-autoridades/",
+    "/en/search/?q=184368%2F2026"
+  ],
+  "controlled_counts": {
+    "individualised_regage_events": 92,
+    "detailed_baseline_receipts": 75,
+    "attachment_index_rows": 100,
+    "incoming_institutional_events": 163,
+    "historic_regage_denominator": 97,
+    "aggregate_only_batch": 22
+  },
+  "boundaries": [
+    "A receipt proves presentation metadata only, not downstream handling or merits.",
+    "The 92 current events and historic 97-record denominator are not asserted as one unduplicated population.",
+    "No receipt-to-attachment map is inferred from occurrence counts.",
+    "No private email, provider locator, native receipt bundle or unredacted attachment is public.",
+    "Caret is identity/provenance only; communications do not transfer knowledge, intent, liability or guilt."
+  ],
+  "open_work": [
+    "Obtain source-proved individual rows/statuses for the 22-record aggregate-only batch.",
+    "Obtain a permitted primary source before asserting any receipt-to-attachment mapping.",
+    "Advance P0 UCF gaps 001-011, 013, 015 and 016 under their existing closure criteria."
+  ],
+  "tooling_note": "Direct local git push lacked credentials; connected GitHub integration created and merged PR 1313."
+}

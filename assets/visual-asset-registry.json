@@ -1,0 +1,636 @@
+{
+  "registry_version": "1.4.0",
+  "policy_id": "PD-VISUAL-ID-LOCK-2026-08-19",
+  "control_date": "2026-09-25",
+  "purpose": "Canonical identity, provenance and byte-lock registry for named-person and material-asset images used by Por Derecho.",
+  "mandatory_rules": {
+    "named_person_images_must_be_registered": true,
+    "person_identity_must_not_be_inferred_by_ai_from_appearance": true,
+    "generated_or_stock_faces_cannot_substitute_for_named_people": true,
+    "published_composites_with_named_people_require_slot_map_sidecars": true,
+    "active_assets_are_byte_locked_by_git_blob_sha": true,
+    "pending_assets_must_not_be_published": true,
+    "replacements_require_new_variant_id_and_supersession_record": true
+  },
+  "assets": {
+    "person.francisco-de-borja-rodriguez-batllori.primary": {
+      "subject_type": "person",
+      "canonical_name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "caepr_id": "PD-SP-P-0010",
+      "short_label": "Borja / Administrador Concursal",
+      "roles": [
+        "Administrador Concursal · Concurso 36/2012",
+        "Insolvency Administrator · Concurso 36/2012"
+      ],
+      "path": "assets/actors/francisco-de-borja-rodriguez-batllori.jpg",
+      "git_blob_sha": "f2c3bfd6628e043940f58b4f4c76ffdba735bb57",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Existing website-approved canonical repository asset; the user expressly reconfirmed this exact image as Borja / the Administrador Concursal on 19 August 2026. No facial-identification inference performed.",
+      "approved_contexts": [
+        "Administrador Concursal page",
+        "5 + AC visualization",
+        "San Telmo / RICPE same-asset visualization",
+        "institutional-accountability documents"
+      ],
+      "alt_en": "Francisco de Borja Rodríguez-Batllori Laffitte, Insolvency Administrator in Concurso 36/2012",
+      "alt_es": "Francisco de Borja Rodríguez-Batllori Laffitte, Administrador Concursal en el Concurso 36/2012",
+      "do_not_confuse_with": [
+        "person.eduardo-sanchez-san-telmo.primary"
+      ],
+      "source_provenance": {
+        "sha256": "2fb1a49d1ed2011f390e44daa7770c18b31459bd25acc7b204b72eb315fba743",
+        "dimensions": "135x151",
+        "format": "jpg",
+        "user_reconfirmation_date": "2026-08-19"
+      }
+    },
+    "person.eduardo-sanchez-san-telmo.primary": {
+      "subject_type": "person",
+      "canonical_name": "Eduardo Sánchez Iglesias",
+      "caepr_id": "PD-SP-P-0161",
+      "short_label": "Eduardo Sánchez Iglesias / socio de San Telmo (30-Nov-2021)",
+      "roles": [
+        "Socio · San Telmo",
+        "Partner · San Telmo"
+      ],
+      "path": "assets/actors/eduardo-sanchez-san-telmo.url",
+      "git_blob_sha": "19fd487e34807715ce40fb357ceb6c58c7bf5e08",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "User expressly identified and authorised the supplied portrait as Eduardo Sánchez on 19 August 2026. The repository byte-locks a pointer to the corresponding first-party RSM profile image, with a first-party San Telmo fallback. No facial-identification inference performed.",
+      "alt_en": "Eduardo Sánchez Iglesias, identified as San Telmo partner in the 30 November 2021 source",
+      "alt_es": "Eduardo Sánchez Iglesias, identificado como socio de San Telmo en la fuente de 30 de noviembre de 2021",
+      "do_not_confuse_with": [
+        "person.francisco-de-borja-rodriguez-batllori.primary"
+      ],
+      "approved_contexts": [
+        "San Telmo / RICPE same-asset visualization",
+        "dedicated Eduardo Sánchez / San Telmo evidence context",
+        "documents and email exports"
+      ],
+      "source_provenance": {
+        "user_supplied_original_filename": "Eduardo Sánchez (1)(1).webp",
+        "user_supplied_sha256": "a46afb994e6fa0fb309d43fff45b72923a75db39680abc01e10a0c13a52af7d6",
+        "user_supplied_dimensions": "800x600",
+        "user_authorisation_date": "2026-08-19",
+        "live_source_page": "https://www.rsm.global/spain/es/people/eduardo-sanchez",
+        "live_source_type": "first-party RSM professional profile"
+      },
+      "storage_mode": "external-url-pointer",
+      "external_url": "https://res.cloudinary.com/rsmglobal/image/fetch/t_default/f_auto/q_auto/https%3A/www.rsm.global/spain/sites/default/files/media/01%20Global%20assets/02_Thumbnails%201240x930px/06_fotos%20profesionales/Eduardo%20S%C3%A1nchez%20%281%29.jpg",
+      "source_page": "https://www.rsm.global/spain/es/people/eduardo-sanchez",
+      "fallback_external_url": "https://abogadossantelmo.com/wp-content/uploads/2022/07/Eduardo-Sanchez-Iglesias-500x500.jpg"
+    },
+    "person.alberto-lopez-villarrubia.primary": {
+      "subject_type": "person",
+      "canonical_name": "Alberto López Villarrubia",
+      "short_label": "Magistrado D. Alberto López Villarrubia",
+      "path": "assets/actors/alberto-lopez-villarrubia.jpg",
+      "git_blob_sha": "52487a2fb01b2df6b231938668c9f858544fecc5",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Existing website-approved repository asset and canonical filename; no new facial identification performed.",
+      "alt_en": "Alberto López Villarrubia",
+      "alt_es": "Alberto López Villarrubia"
+    },
+    "person.francisco-mario-matos-matas.primary": {
+      "subject_type": "person",
+      "canonical_name": "Francisco Mario Matos Matas",
+      "short_label": "FMMM",
+      "path": "assets/actors/francisco-mario-matos-matas.jpg",
+      "git_blob_sha": "1a7d8c921b36ef9ad4504708417d3806c91cee13",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Existing website-approved repository asset and canonical filename; no new facial identification performed.",
+      "alt_en": "Francisco Mario Matos Matas",
+      "alt_es": "Francisco Mario Matos Matas"
+    },
+    "person.carlos-saavedra-rodriguez-del-palacio.primary": {
+      "subject_type": "person",
+      "canonical_name": "Carlos Saavedra Rodríguez del Palacio",
+      "short_label": "Carlos Saavedra / PwC Tax & Legal Canarias",
+      "roles": [
+        "Partner · PwC Spain",
+        "Legal-practice lead · PwC Canary Islands"
+      ],
+      "path": "assets/actors/carlos-saavedra--linkedin-profile--20260901.jpg",
+      "git_blob_sha": "3679d667b0236463dab66b0873a5200a9eadaa4e",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "User-supplied portrait named for Carlos Saavedra and identified in the continuing PwC/Carlos instruction as his LinkedIn image. The exact public LinkedIn profile URL identifies Carlos Saavedra as a PwC national partner in Santa Cruz de Tenerife; PwC Spain's exact-full-name professional profile independently identifies Carlos Saavedra Rodríguez del Palacio as a PwC Spain partner and Canary Islands legal-practice lead and displays a separate official portrait. Attribution follows the exact named profiles and the user's supplied-image context; no automated facial-recognition inference was performed.",
+      "approved_contexts": [
+        "PwC / Carlos Saavedra bilingual canonical profile",
+        "PwC / Carlos Saavedra first-hop caret register",
+        "Carlos Saavedra identity and professional-role records"
+      ],
+      "alt_en": "Public LinkedIn profile portrait attributed by the exact named profile to Carlos Saavedra Rodríguez del Palacio of PwC",
+      "alt_es": "Retrato del perfil público de LinkedIn atribuido por el perfil nominal exacto a Carlos Saavedra Rodríguez del Palacio de PwC",
+      "source_provenance": {
+        "source_class": "user-supplied professional-profile portrait",
+        "received_filename_public": false,
+        "library_or_private_locator_public": false,
+        "source_page": "https://es.linkedin.com/in/carlos-saavedra-b71418a8",
+        "first_party_identity_source": "https://www.pwc.es/es/contacts/c/carlos-saavedra-sector-publico.html",
+        "first_party_office_sources": [
+          "https://www.pwc.es/es/quienes-somos/pwc-grancanaria.html",
+          "https://www.pwc.es/es/quienes-somos/pwc-tenerife.html"
+        ],
+        "control_date": "2026-09-01",
+        "sha256": "6abc688f2eb1aabceaa68455a8679cb48debae7afb39f39b7eb31e799493f73d",
+        "dimensions": "800x800",
+        "bytes": 143942,
+        "format": "jpg",
+        "profile_match_basis": "Exact named LinkedIn profile, exact-full-name first-party PwC profile and user-supplied image context"
+      },
+      "storage_mode": "repository-byte-locked"
+    },
+    "person.fernando-aguiar-acosta.primary": {
+      "subject_type": "person",
+      "canonical_name": "Fernando Aguiar Acosta",
+      "short_label": "Fernando Aguiar Acosta / proposed witness",
+      "roles": [
+        "Proposed fact / records-custody witness",
+        "Public-profile sequence: RIC Private Equity, Belagua/ACHM and Colliers"
+      ],
+      "path": "assets/actors/fernando-aguiar-acosta--linkedin-profile--20260828.png",
+      "git_blob_sha": "79ed3679f0ca570301997ec93b4ccc2f62c2e1b5",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Public LinkedIn profile image retrieved from and matched to the exact named profile URL for Fernando Aguiar Acosta on 28 August 2026. Identity is attributed by that named profile and exact URL; no facial-recognition inference was performed.",
+      "approved_contexts": [
+        "Acosta Matos family page provisional witness lane",
+        "IREA / RICPE / Colliers continuity dossier",
+        "RICPE genealogy cross-link",
+        "proposed witness and records-preservation materials"
+      ],
+      "alt_en": "Public LinkedIn profile photograph attributed by the named profile to Fernando Aguiar Acosta",
+      "alt_es": "Fotografía del perfil público de LinkedIn atribuida por el perfil nominal a Fernando Aguiar Acosta",
+      "do_not_confuse_with": [
+        "person.laura-aguiar-acosta.primary"
+      ],
+      "source_provenance": {
+        "source_page": "https://www.linkedin.com/in/fernando-aguiar-acosta-894679235/",
+        "capture_date": "2026-08-28",
+        "captured_at": "2026-08-28T20:04:22.700Z",
+        "sha256": "7b3ce8c4cb0f047991595eb3e4de6cb9d85d18919c8f42cc0e45d9b35ceac466",
+        "dimensions": "800x800",
+        "format": "png",
+        "profile_match_basis": "Exact named public profile header and URL"
+      },
+      "storage_mode": "repository-byte-locked"
+    },
+    "person.laura-aguiar-acosta.primary": {
+      "subject_type": "person",
+      "canonical_name": "Laura Aguiar Acosta",
+      "short_label": "Laura Aguiar Acosta / proposed witness",
+      "roles": [
+        "Proposed fact / records-custody witness",
+        "Canarian Hospitality placement naming MYND Yaiza and Radisson Blu Lanzarote"
+      ],
+      "path": "assets/actors/laura-aguiar-acosta--linkedin-profile--20260828.jpg",
+      "git_blob_sha": "313b8adcaa2a9b718f6c1c707c881e59d8dcd9e7",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Public LinkedIn profile image retrieved from and matched to the exact named profile URL for Laura Aguiar Acosta on 28 August 2026. Identity is attributed by that named profile and exact URL; no facial-recognition inference was performed.",
+      "approved_contexts": [
+        "Acosta Matos family page provisional witness lane",
+        "IREA / RICPE / Colliers continuity dossier",
+        "RICPE genealogy cross-link",
+        "proposed witness and records-preservation materials"
+      ],
+      "alt_en": "Public LinkedIn profile photograph attributed by the named profile to Laura Aguiar Acosta",
+      "alt_es": "Fotografía del perfil público de LinkedIn atribuida por el perfil nominal a Laura Aguiar Acosta",
+      "do_not_confuse_with": [
+        "person.fernando-aguiar-acosta.primary"
+      ],
+      "source_provenance": {
+        "source_page": "https://www.linkedin.com/in/laura-aguiar-acosta/",
+        "capture_date": "2026-08-28",
+        "captured_at": "2026-08-28T20:04:23.748Z",
+        "sha256": "d2438087f18b9f9e210bb9b196208b6bee4ee8b4ee7533f3aa0740236354c04e",
+        "dimensions": "800x800",
+        "format": "jpg",
+        "profile_match_basis": "Exact named public profile header and URL"
+      },
+      "storage_mode": "repository-byte-locked"
+    },
+    "composite.acosta-matos-family-hotel-plans.source-v1": {
+      "subject_type": "object",
+      "canonical_name": "Acosta Matos family / hotel-plans source image",
+      "short_label": "Acosta Matos plans image",
+      "path": "assets/acosta-matos-family-hotel-plans.jpg",
+      "git_blob_sha": "7ccf4d196777b41abfd5e8c55779f9f5dbdb4eb4",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Existing source-labelled repository image reproduced in the El Economista/RICPE context. Gil identifies the people left-to-right as Javier Acosta Matos (younger person at far left), Laura Patricia Acosta Matos (standing), José Daniel Acosta Matos (second from right), and Gerardo Zacarías Acosta Matos (bearded person at far right), and assumes that editorial attribution. No facial-identification inference is performed. Corporate records corroborate the nominal four-sibling governance perimeter, not the pixels. The image alone does not prove that the plans concern Sun Park, capture date, title, mandate, invitation knowledge, agreement, wrongdoing or coordination.",
+      "approved_contexts": [
+        "homepage five-actor component",
+        "protected five-actor direct-route component",
+        "post-7-June-2018 to 4-February-2022 continuity analysis",
+        "El Economista/RICPE source context"
+      ],
+      "alt_en": "Four people around a table with plans and designs in front of an Acosta Matos logo",
+      "alt_es": "Cuatro personas alrededor de una mesa con planos y diseños ante el logotipo de Acosta Matos",
+      "source_provenance": {
+        "sha256": "aad5ebaffddf8211be21468f5936b6b1a0066c631919a43a06e9886a9061cd37",
+        "dimensions": "770x420",
+        "format": "jpg",
+        "repository_first_commit": "aff8bb0553753f07a3a80b5f35cd2f483b81e0a8"
+      }
+    },
+    "place.sun-park-mynd-yaiza.aerial-primary": {
+      "subject_type": "place",
+      "canonical_name": "Sun Park / MYND Yaiza",
+      "short_label": "Sun Park — same hotel",
+      "path": "assets/sun-park-mynd-yaiza.jpg",
+      "git_blob_sha": "88819bf8b70f0b9f978cca840131331bad122c68",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Existing primary website hero asset used for the Sun Park / MYND Yaiza physical complex.",
+      "approved_contexts": [
+        "homepage",
+        "same-hotel visualizations",
+        "San Telmo / RICPE same-asset visualization",
+        "documents and email exports"
+      ],
+      "alt_en": "Aerial view of the Sun Park hotel complex, currently marketed as MYND Yaiza",
+      "alt_es": "Vista aérea del complejo hotelero Sun Park, actualmente comercializado como MYND Yaiza"
+    },
+    "composite.san-telmo-ricpe-sun-park-stamp-v1": {
+      "subject_type": "object",
+      "canonical_name": "San Telmo / RICPE / Sun Park documentary collision stamp",
+      "short_label": "Eduardo → Sun Park → Borja source stamp",
+      "path": "assets/san-telmo-source-stamp-20260819.js",
+      "git_blob_sha": "adc1f705e0cee8a9013a9b9a23ae5e6fe22a1143",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Native HTML/CSS/JS source stamp rendered from the authorised Eduardo pointer, canonical Sun Park asset and canonical Borja asset under the fixed slot map; the direct statement is timestamped to 08:08–08:12 of the 30 Nov 2021 San Telmo/RICPE webinar.",
+      "source_provenance": {
+        "format": "native-html-css-js",
+        "component_path": "assets/san-telmo-source-stamp-20260819.js",
+        "control_date": "2026-08-19"
+      },
+      "approved_contexts": [
+        "homepage",
+        "RICPE",
+        "San Telmo",
+        "RSM",
+        "Administrador Concursal",
+        "Grant Thornton/Cuyás",
+        "PwC",
+        "7 June 2018",
+        "actor register",
+        "parallel-lives/accountability pages",
+        "documents and email exports"
+      ],
+      "alt_en": "Source-controlled visual connecting Eduardo Sánchez, the RICPE investment, Sun Park and Borja as Insolvency Administrator, with the Eduardo statement timestamp 08:08–08:12.",
+      "alt_es": "Visual controlado por fuentes que conecta a Eduardo Sánchez, la inversión RICPE, Sun Park y Borja como Administrador Concursal, con la manifestación de Eduardo en 08:08–08:12.",
+      "source_reference": {
+        "title": "Enrique Guerra, en #UnCaféenSanTelmo",
+        "publisher": "San Telmo Abogados y Economistas",
+        "publication_date": "2021-11-30",
+        "youtube_video_id": "mHn9IJU0qI4",
+        "statement_start": "00:08:08",
+        "statement_completion": "00:08:12",
+        "context_window": "00:07:57–00:08:27",
+        "transcript_pages": "29–30 of 85",
+        "controlled_words": "bueno, nosotros en el despacho... en esa primera inversión... metimos unos cuantos clientes"
+      },
+      "storage_mode": "native-html-css",
+      "rendered_asset_ids": [
+        "person.eduardo-sanchez-san-telmo.primary",
+        "place.sun-park-mynd-yaiza.aerial-primary",
+        "person.francisco-de-borja-rodriguez-batllori.primary"
+      ]
+    },
+    "person.gil-marer.official-base": {
+      "subject_type": "person",
+      "canonical_name": "Gil Marer",
+      "caepr_id": "PD-SP-P-0001",
+      "short_label": "Gil Marer / official base portrait",
+      "roles": [
+        "Founder and public voice · Por Derecho",
+        "Principal sponsor · Project Sun Rock / Aweswell"
+      ],
+      "path": "assets/actors/gil-marer--official-base--20260921.webp",
+      "git_blob_sha": "20988c0b79cd114688031eec881c3e78deb2150f",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "User supplied the source self-portrait in the current conversation, expressly stated that it is his own image and that he took it, approved the cleaned/stylised derivative, and on 21 September 2026 instructed that the resulting image be kept as his official base image. Attribution therefore follows explicit first-person user identification and approval; no facial-identification inference was performed.",
+      "approved_contexts": [
+        "official base portrait for future Por Derecho / Project Sun Rock visual work",
+        "editorial and LinkedIn graphics authored or approved by Gil Marer",
+        "document, presentation and poster derivatives where Gil is intentionally depicted",
+        "future profile/about-page use after an explicit publication switch"
+      ],
+      "alt_en": "Gil Marer — official base portrait for Por Derecho and Project Sun Rock visual work",
+      "alt_es": "Gil Marer — retrato base oficial para el trabajo visual de Por Derecho y Project Sun Rock",
+      "source_provenance": {
+        "source_class": "user-supplied self-portrait + user-approved enhancement",
+        "user_source_filename": "6bab33e4-8917-400b-9189-57065b458fca.png",
+        "user_source_sha256": "8452aa05cb85881e537bb7388200eefff228bff4ecafac02a63460c798e4ef04",
+        "user_source_dimensions": "200x200",
+        "user_source_format": "png",
+        "source_ownership_statement": "User stated: this is my image; I took it.",
+        "enhanced_master_sha256": "846164ebe3df80a40d9e153e7b22dfd4a5271738d8c7f44f188b06722ecbb589",
+        "enhanced_master_dimensions": "1254x1254",
+        "enhanced_master_format": "png",
+        "repository_derivative_sha256": "7ba5f8a3640a6669776084c6f373c6a9a21bf9c25b5ef8c036f828250c8b47a5",
+        "repository_derivative_dimensions": "800x800",
+        "repository_derivative_bytes": 50384,
+        "repository_derivative_format": "webp",
+        "enhancement_description": "Cleaned and sharpened portrait with the distracting original background removed/re-stylised into a soft professional backdrop; identity and expression intentionally preserved.",
+        "user_approval_date": "2026-09-21",
+        "legacy_public_asset_path": "assets/gil-marer.webp",
+        "legacy_public_asset_note": "Existing About-page portrait remains unchanged until a separate explicit publication switch."
+      },
+      "storage_mode": "repository-byte-locked",
+      "usage_note": "Use this asset as the official base reference for future visual derivatives of Gil Marer unless the user explicitly designates a newer official base."
+    },
+    "person.gil-marer.about-page": {
+      "subject_type": "person",
+      "canonical_name": "Gil Marer",
+      "caepr_id": "PD-SP-P-0001",
+      "short_label": "Gil Marer / About-page portrait",
+      "roles": [
+        "Founder and public voice · Por Derecho",
+        "Principal sponsor · Project Sun Rock / Aweswell"
+      ],
+      "path": "assets/actors/gil-marer--about-page--20260922.png",
+      "git_blob_sha": "3cbcd717b22be4330a335947343c1acc9e72e4b3",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Website derivative of the user-approved Gil Marer portrait. On 22 September 2026 the About-page delivery was corrected to use the exact approved PNG master after the previous WebP presentation rendered as a beige placeholder for the user. No facial-identification inference performed.",
+      "approved_contexts": [
+        "English About page",
+        "Spanish Sobre nosotros page",
+        "Open Graph preview for the About pages"
+      ],
+      "alt_en": "Portrait of Gil Marer, founder and principal sponsor of Aweswell and Project Sun Rock",
+      "alt_es": "Retrato de Gil Marer, fundador y promotor principal de Aweswell y Project Sun Rock",
+      "source_provenance": {
+        "derived_from_asset_id": "person.gil-marer.official-base",
+        "source_master_sha256": "e843a3c040781b0a2356620854b28839fbcafbc7873b7ef84e1578cce87138a6",
+        "source_master_dimensions": "1254x1254",
+        "source_master_format": "png",
+        "repository_derivative_sha256": "5a11c991401ed1c87a6770439a9e77113e4ff7a2b897c9b674c0d96ceb779ac4",
+        "repository_derivative_dimensions": "1254x1254",
+        "repository_derivative_bytes": 1892953,
+        "repository_derivative_format": "png",
+        "background_treatment": "Warm neutral editorial backdrop; no wine bottles, bar shelves or identifiable hospitality-background clutter.",
+        "user_approval_date": "2026-09-21",
+        "legacy_about_path": "assets/gil-marer.webp",
+        "legacy_about_blob_sha": "5f8fb1013fdce7953a5fdf3cb3083861c9e4576f",
+        "drive_master_file_id": "18iuElm27aQUX8z4Ou8WfvfY5Xjac4poC",
+        "drive_master_name": "Gil_Marer_ABOUT_MASTER_20260922_v2.png",
+        "replaced_webp_blob_sha": "577b78c9949a45cb41b493c4091c718f2cd64b6a",
+        "delivery_fix": "Use PNG bytes and long-standing root assets alias with cache-buster because the prior WebP displayed only the beige frame/background in the user's browser."
+      },
+      "storage_mode": "repository-byte-locked",
+      "usage_note": "Canonical registered About-page asset lives under assets/actors/. English and Spanish About pages publish the same exact PNG bytes through assets/gil-marer.png with cache-busting.",
+      "variant_of": "person.gil-marer.official-base",
+      "published_aliases": [
+        {
+          "path": "assets/gil-marer.png",
+          "git_blob_sha": "3cbcd717b22be4330a335947343c1acc9e72e4b3",
+          "purpose": "Stable About-page publication alias using exact approved PNG bytes.",
+          "cache_buster": "v=20260922a"
+        }
+      ]
+    },
+    "document.fmmm-shaila-antonio-family-source-20260921": {
+      "subject_type": "document",
+      "canonical_name": "FMMM–Shaila–Antonio family photograph · source-identified 21 September 2026",
+      "short_label": "FMMM · Shaila · Antonio family photograph",
+      "path": "assets/actors/fmmm-shaila-antonio-family-source-20260921.jpg",
+      "git_blob_sha": "06d4fb0a7e0f327f27406ca502be54a82ab42064",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Patricia Domínguez identified Francisco Mario Matos Matas and Shaila Cogolludo Ramos together and Antonio Cogolludo Rojas in the source email dated 21 September 2026; Gil Marer then expressly confirmed the left-to-right identification as Francisco Mario Matos Matas, Shaila María Cogolludo Ramos and Antonio Cogolludo Rojas. The repository does not infer these identities from facial appearance.",
+      "approved_contexts": [
+        "FMMM · Shaila · Antonio bilingual relationship dossier",
+        "source-attributed family / Community / corporate continuity explanation"
+      ],
+      "alt_en": "Source-provided family photograph identified by Patricia Domínguez and confirmed by Gil Marer as Francisco Mario Matos Matas, Shaila María Cogolludo Ramos and Antonio Cogolludo Rojas from left to right",
+      "alt_es": "Fotografía familiar aportada como fuente, identificada por Patricia Domínguez y confirmada por Gil Marer como Francisco Mario Matos Matas, Shaila María Cogolludo Ramos y Antonio Cogolludo Rojas de izquierda a derecha",
+      "source_provenance": {
+        "source_class": "source-email family photograph",
+        "source_email_subject": "FMMM + Shaila and Antonio Cogolludo",
+        "source_email_date": "2026-09-21",
+        "source_identification_by": "Patricia Domínguez",
+        "user_confirmation_by": "Gil Marer",
+        "user_confirmation_date": "2026-09-21",
+        "facial_recognition_used": false,
+        "sha256": "c5043df95ed4cc3ebeae3c60c6679f5435e4ca0080e4cdaf3e4dd6039e2b6a3b",
+        "dimensions": "640x246",
+        "bytes": 7578,
+        "format": "jpg",
+        "transformation": "Downscaled display derivative of the source photograph; no identity inference."
+      },
+      "storage_mode": "repository-byte-locked",
+      "publication_boundary": "Identity/relationship aid only. The image does not prove Community authority, corporate mandate, knowledge, coordination, wrongdoing, causation or liability."
+    },
+    "person.gil-marer.about-page-webp-legacy": {
+      "subject_type": "person",
+      "canonical_name": "Gil Marer",
+      "short_label": "Gil Marer / superseded About-page WebP retained for preservation",
+      "path": "assets/actors/gil-marer--about-page--20260921.webp",
+      "git_blob_sha": "577b78c9949a45cb41b493c4091c718f2cd64b6a",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Superseded user-approved Gil Marer About-page WebP retained solely for repository preservation and provenance after the live delivery was replaced by the PNG variant. No facial-identification inference performed.",
+      "alt_en": "Gil Marer — superseded About-page WebP retained for provenance",
+      "alt_es": "Gil Marer — WebP anterior de la página Sobre nosotros conservado por trazabilidad",
+      "variant_of": "person.gil-marer.official-base",
+      "approved_contexts": [
+        "repository preservation and provenance only"
+      ],
+      "storage_mode": "repository-byte-locked",
+      "publication_rule": "Do not use for current About-page publication; current website variant is person.gil-marer.about-page."
+    },
+    "document.fmmm-shaila-antonio-family-enhanced-display-20260922": {
+      "subject_type": "document",
+      "canonical_name": "FMMM–Shaila–Antonio family photograph · enhanced display derivative 22 September 2026",
+      "short_label": "FMMM · Shaila · Antonio enhanced display",
+      "path": "assets/actors/fmmm-shaila-antonio-family-enhanced-display-20260922.svg",
+      "git_blob_sha": "0ee13394cc18753d481d49b53851b1cdd6e0ac47",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Display identity follows the source-attributed and user-confirmed mapping in document.fmmm-shaila-antonio-family-source-20260921. No facial recognition is used.",
+      "approved_contexts": [
+        "FMMM · Shaila · Antonio bilingual relationship dossier",
+        "source-attributed family / Community / corporate continuity explanation"
+      ],
+      "alt_en": "AI-assisted enhanced display derivative of the source-identified family photograph: Francisco Mario Matos Matas, Shaila María Cogolludo Ramos and Antonio Cogolludo Rojas from left to right",
+      "alt_es": "Derivado de visualización mejorado con asistencia de IA de la fotografía familiar identificada por fuente: Francisco Mario Matos Matas, Shaila María Cogolludo Ramos y Antonio Cogolludo Rojas de izquierda a derecha",
+      "source_provenance": {
+        "source_asset_id": "document.fmmm-shaila-antonio-family-source-20260921",
+        "source_class": "AI-assisted editorial display derivative",
+        "user_requested_enhancement_date": "2026-09-22",
+        "facial_recognition_used": false,
+        "dimensions": "2022x778",
+        "format": "svg-with-embedded-jpeg",
+        "transformation": "AI-assisted clarity/resolution enhancement for display; not a new evidential source and not suitable for inferring new facial detail or identity."
+      },
+      "storage_mode": "repository-byte-locked",
+      "variant_of": "document.fmmm-shaila-antonio-family-source-20260921",
+      "publication_boundary": "Display derivative only. The preserved source photograph controls evidential provenance. The enhanced image does not prove identity independently, Community authority, corporate mandate, knowledge, coordination, wrongdoing, causation or liability."
+    },
+    "document.fmmm-shaila-antonio-family-editorial-display-20260922": {
+      "subject_type": "document",
+      "canonical_name": "FMMM–Shaila–Antonio family photograph · teal/cream editorial display derivative 22 September 2026",
+      "short_label": "FMMM · Shaila · Antonio editorial display",
+      "path": "assets/actors/fmmm-shaila-antonio-family-editorial-display-20260922.jpg",
+      "git_blob_sha": "9a589e91c3c6fabccb5e6b214c713e6840d16dd3",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Display identity follows the source-attributed and user-confirmed left-to-right mapping in document.fmmm-shaila-antonio-family-source-20260921: Francisco Mario Matos Matas, Shaila María Cogolludo Ramos and Antonio Cogolludo Rojas. Patricia Domínguez supplied the identification and Gil Marer expressly confirmed it. No facial recognition is used.",
+      "approved_contexts": [
+        "bilingual five-private-actor homepage visual architecture",
+        "FMMM · Shaila · Antonio bilingual relationship dossier",
+        "source-derived Shaila and Antonio individual-profile crops",
+        "source-attributed family / Community / corporate continuity explanation"
+      ],
+      "alt_en": "Editorial display derivative of the source-identified family photograph: Francisco Mario Matos Matas, Shaila María Cogolludo Ramos and Antonio Cogolludo Rojas from left to right",
+      "alt_es": "Derivado editorial de visualización de la fotografía familiar identificada por fuente: Francisco Mario Matos Matas, Shaila María Cogolludo Ramos y Antonio Cogolludo Rojas de izquierda a derecha",
+      "source_provenance": {
+        "source_asset_id": "document.fmmm-shaila-antonio-family-source-20260921",
+        "source_class": "AI-assisted editorial display derivative",
+        "user_requested_enhancement_date": "2026-09-22",
+        "facial_recognition_used": false,
+        "dimensions": "2172x724",
+        "format": "jpeg",
+        "transformation": "AI-assisted display restoration and replacement of the original room/artwork background with a restrained teal/cream editorial background. The derivative must not be used to infer identity or new facial detail."
+      },
+      "sha256": "0a0d3f135daaeb23ccae1a4dc55a2197515b41df04812ae72f180906f9d640b9",
+      "storage_mode": "repository-byte-locked",
+      "variant_of": "document.fmmm-shaila-antonio-family-source-20260921",
+      "publication_boundary": "Display derivative only. The preserved source photograph controls evidential provenance. Every reuse must retain the Patricia Domínguez / Gil Marer identification provenance, state that no facial recognition was used, and state that the image establishes identity/relationship context only—not authority, coordination, knowledge, intent, causation, wrongdoing or liability."
+    },
+    "person.jose-daniel-acosta-matos.primary": {
+      "subject_type": "person",
+      "canonical_name": "José Daniel Acosta Matos",
+      "short_label": "JDAM",
+      "path": "assets/actors/jose-daniel-acosta-matos-user-supplied-07sep2026.jpg",
+      "git_blob_sha": "8cb92bebcdfc67c7b7f3dd585f01482374be5fa9",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "The user expressly supplied and mapped portrait 2 to JDAM / José Daniel Acosta Matos in the working thread on 7 September 2026. No facial-identification inference performed.",
+      "approved_contexts": [
+        "P.O. 641/2024 accountability composite",
+        "actor register",
+        "source-controlled documents and internal review",
+        "JTP payment / AC / CAM actor-context composite"
+      ],
+      "alt_en": "José Daniel Acosta Matos",
+      "alt_es": "José Daniel Acosta Matos",
+      "source_provenance": {
+        "user_supplied_original_filename": "1000137527.png",
+        "stored_format": "jpg",
+        "sha256": "61cdf49e72f587ec1da875429454d58e3c902dafae43fe632e08b1c10e6ff042",
+        "dimensions": "1530x1536",
+        "user_mapping_date": "2026-09-07"
+      }
+    },
+    "person.laura-patricia-acosta-matos.primary": {
+      "subject_type": "person",
+      "canonical_name": "Laura Patricia Acosta Matos",
+      "short_label": "LPAM",
+      "path": "assets/actors/laura-patricia-acosta-matos-user-supplied-07sep2026.jpg",
+      "git_blob_sha": "b05f094b6dd392664b7d2c94b6f079207eee4106",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "The user expressly supplied and mapped portrait 1 to LPAM / Laura Patricia Acosta Matos in the working thread on 7 September 2026. No facial-identification inference performed.",
+      "approved_contexts": [
+        "P.O. 641/2024 accountability composite",
+        "actor register",
+        "source-controlled documents and internal review",
+        "JTP payment / AC / CAM actor-context composite"
+      ],
+      "alt_en": "Laura Patricia Acosta Matos",
+      "alt_es": "Laura Patricia Acosta Matos",
+      "source_provenance": {
+        "user_supplied_original_filename": "1000137526.jpg",
+        "stored_format": "jpg",
+        "sha256": "bef6ea30c155d505fd12901da654cbd9f365848ec586b23017e96ac78b21ea9f",
+        "dimensions": "1025x1536",
+        "user_mapping_date": "2026-09-07"
+      }
+    },
+    "person.juan-tomas-parrilla.primary": {
+      "subject_type": "person",
+      "canonical_name": "Juan Tomás Parrilla Suárez",
+      "short_label": "JTP",
+      "path": "assets/actors/juan-tomas-parrilla-canonical-20260923.jpg",
+      "git_blob_sha": "36b292e8b28a9c3fe01ee06a0f669dc3ce566d0b",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "User-supplied conference photograph selected and identified by the user as Juan Tomás Parrilla Suárez on 23 September 2026; canonical crop preserved from the approved working image. No facial-recognition inference performed.",
+      "approved_contexts": [
+        "JTP payment / AC / CAM actor-context composite",
+        "counsel-payment independence reader",
+        "source-controlled documents and internal review"
+      ],
+      "alt_en": "Juan Tomás Parrilla Suárez",
+      "alt_es": "Juan Tomás Parrilla Suárez",
+      "source_provenance": {
+        "stored_format": "jpg",
+        "sha256": "17f38a855da0e13f98c3eb9395455b96e9b3b844a6c16a5714346fe2ab4d1a62",
+        "dimensions": "1584x1056",
+        "user_mapping_date": "2026-09-23",
+        "drive_canonical_filename": "Juan_Tomas_Parrilla_canonical_20260923.jpg"
+      }
+    },
+    "composite.jtp-payment-actor-context-real-source-20260925": {
+      "subject_type": "document",
+      "canonical_name": "JTP payment / AC / CAM real-source actor-context composite",
+      "short_label": "JTP actor-context real-source composite",
+      "path": "assets/jtp-payment-actor-composite-real-sources-20260925.png",
+      "git_blob_sha": "39245262dc24ea8fbe66b9f53a00afc9028591de",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Deterministic composition from five controlled project portrait sources under the user's 25 September 2026 publication authorisation. Four non-JTP portrait rectangles were replaced with exact canonical repository images; the approved JTP portrait and every pixel outside the authorised portrait boxes were preserved.",
+      "approved_contexts": [
+        "JTP payment / AC / CAM actor-context composite",
+        "counsel-payment independence reader",
+        "public investigative/editorial visual"
+      ],
+      "alt_en": "Real-source actor-context visual for the JTP payment / AC / CAM evidence reader",
+      "alt_es": "Visual de contexto de actores con fuentes reales para el lector de pago JTP / AC / CAM",
+      "source_provenance": {
+        "sha256": "77895f4078ac3d3cad61077f5c33ac1865f95834e1d794014f024e00dd3587cc",
+        "dimensions": "1055x1491",
+        "format": "png",
+        "control_id": "PD-JTP-ACTOR-COMPOSITE-20260925-01",
+        "asset_map": "assets/composites/jtp-payment-actor-context-real-source-20260925.asset-map.json",
+        "provenance": "assets/data/jtp-payment-actor-composite-real-sources-20260925.json",
+        "changed_pixels_outside_authorised_boxes": 0,
+        "jtp_region_unchanged": true
+      }
+    },
+    "composite.five-private-actors-true-faces-20260925": {
+      "subject_type": "document",
+      "canonical_name": "Five private actors · source-backed true-faces identity composite",
+      "short_label": "Five private actors · true faces",
+      "path": "assets/actors/five-private-actors-true-faces-20260925.svg",
+      "git_blob_sha": "6e783f3b7dcd8eed4e1082a5ea0f6ee701f014fc",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Deterministic SVG composition using only the canonical user-mapped JDAM and LPAM portraits and the preserved source-identified FMMM–Shaila–Antonio family photograph. No generated, substituted or facial-recognition-derived face is used.",
+      "approved_contexts": [
+        "five private actors identity/reference composite",
+        "NEXUS 36 / Ref.21 private-actor identity context",
+        "source-controlled investigative/editorial visual"
+      ],
+      "alt_en": "Five private actors source-backed identity composite: José Daniel Acosta Matos, Laura Patricia Acosta Matos, Francisco Mario Matos Matas, Shaila María Cogolludo Ramos and Antonio Cogolludo Rojas",
+      "alt_es": "Composición de identidad con rostros de fuente controlada de cinco actores privados: José Daniel Acosta Matos, Laura Patricia Acosta Matos, Francisco Mario Matos Matas, Shaila María Cogolludo Ramos y Antonio Cogolludo Rojas",
+      "source_provenance": {
+        "control_id": "PD-SP-FIVE-TRUE-FACES-20260925-01",
+        "manifest": "assets/data/five-private-actors-true-faces-20260925.json",
+        "generated_faces": false,
+        "facial_recognition_used": false,
+        "ai_enhanced_family_derivative_used": false,
+        "source_paths": [
+          "assets/actors/jose-daniel-acosta-matos-user-supplied-07sep2026.jpg",
+          "assets/actors/laura-patricia-acosta-matos-user-supplied-07sep2026.jpg",
+          "assets/actors/fmmm-shaila-antonio-family-source-20260921.jpg"
+        ],
+        "asset_map": "assets/composites/five-private-actors-true-faces-20260925.asset-map.json"
+      },
+      "storage_mode": "repository-byte-locked",
+      "publication_boundary": "Identity/reference image only. Inclusion does not establish conduct, knowledge, coordination, wrongdoing, causation or liability."
+    }
+  },
+  "rejected_or_prohibited_mappings": [
+    {
+      "date": "2026-08-19",
+      "prohibited_mapping": "Use the user-uploaded Eduardo Sánchez portrait in the Borja / Administrador Concursal slot.",
+      "reason": "The user confirmed that portrait is Eduardo Sánchez. It is not the canonical Borja asset."
+    },
+    {
+      "date": "2026-08-19",
+      "prohibited_mapping": "Use any AI-generated, stock or silhouette-derived face as a named real person when a canonical repository asset exists.",
+      "reason": "Named-person identity must come from the registry, not visual similarity or generation."
+    }
+  ]
+}

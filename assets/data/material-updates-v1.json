@@ -1,0 +1,182 @@
+{
+  "schema": "por-derecho.material-updates.v1",
+  "control_id": "PD-MATERIAL-UPDATES-001",
+  "control_date": "2026-09-18",
+  "latest_material_date": "2026-09-18",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "public_routes": {
+    "es": "/es/actualizaciones/",
+    "en": "/en/updates/"
+  },
+  "rules": [
+    "A material update records what changed, the source class, affected routes and what must not be inferred.",
+    "A repository governance commit is not automatically a material public-case update.",
+    "A successful Pages deployment is not exact-content verification.",
+    "The homepage, ES/EN updates pages, feed, state controls and sitemap metadata must use the same latest material date."
+  ],
+  "entries": [
+    {
+      "update_id": "MU-20260918-CUATRECASAS-ETJ-DP748",
+      "date": "2026-09-18",
+      "type": "PROCEDURAL_UPDATE_PRIMARY_COURT_SOURCES_AND_AUTHORISED_PUBLIC_STRATEGY",
+      "title_es": "Cuatrecasas / ETJ 163 / DP 748: suspensión civil denegada y apelación penal en tramitación",
+      "title_en": "Cuatrecasas / ETJ 163 / DP 748: civil suspension refused and criminal appeal processing verified",
+      "affected_routes": [
+        "/es/cuatrecasas-etj163-dp748-18-septiembre-2026/",
+        "/en/cuatrecasas-etj163-dp748-18-september-2026/",
+        "/es/cuatrecasas-dp748-accion-civil/",
+        "/en/cuatrecasas-dp748-civil-action/",
+        "/es/cuatrecasas-sun-park/",
+        "/en/cuatrecasas-sun-park/",
+        "/es/procedimientos/tf-civ-002/",
+        "/en/proceedings/tf-civ-002/",
+        "/es/procedimientos/tf-cri-003/",
+        "/en/proceedings/tf-cri-003/",
+        "/es/procedimientos/tf-app-004/",
+        "/en/proceedings/tf-app-004/",
+        "/es/actualizaciones/",
+        "/en/updates/"
+      ],
+      "source_status": "SIGNED_16SEP_DP748_LAJ_ORDER_PLUS_SIGNED_17SEP_ETJ_ORDER_PLUS_FILED_09SEP_APPEAL_IMPULSE",
+      "what_changed": "The 16 September DP 748 LAJ order verifies origin-court processing of the subsidiary appeal and gives the Ministerio Fiscal five days for submissions. The 17 September ETJ order dismisses Matkator's reconsideration application against refusal to suspend and states no appeal lies; it was received 18 September. The public site now discloses the authorised intended next steps: Article 215.2 complement analysis concerning separately pleaded subsidiary irreversible-act relief, incorporation of the 17 September order in DP 748 as supervening material, immediate remate/cession traceability and a separate preservation / actual-notice communication to Cuatrecasas.",
+      "what_did_not_change": "The 17 September order does not decide DP 748, criminal liability, the criminal lawfulness of the Cambiario/ETJ chain or the identity of any adjudicatee/assignee. No source presently proves completed adjudication, cession, registration or possession. No prospective third party is accused merely by considering or receiving a cession. Audiencia remittal, a separate appellate roll and appellate outcome remain unverified."
+    },
+    {
+      "update_id": "MU-20260828-AEAT-PINK-DILIGENCE",
+      "date": "2026-08-28",
+      "type": "PRIMARY_EVIDENCE_PUBLICATION_AND_FACTUAL_PREMISE_CONTROL",
+      "title_es": "Diligencia AEAT / Pink: fuente completa, traducción y límites probatorios",
+      "title_en": "AEAT / Pink diligence: complete source, translation and evidential limits",
+      "affected_routes": [
+        "/es/evidencia/diligencia-aeat-vigilancia-aduanera-sun-park-6abril2022/",
+        "/en/evidence/aeat-customs-surveillance-sun-park-diligence-6april2022/",
+        "/es/pink-canary-aeat-audiencia-nacional/",
+        "/en/pink-canary-aeat-national-court/",
+        "/es/pink-canary-aeat-496-2026/",
+        "/en/pink-canary-aeat-496-2026/",
+        "/es/toma-control-sun-park-7-junio-2018/",
+        "/en/sun-park-takeover-7-june-2018/",
+        "/es/adjudicacion-2022-reconstruccion-documental/",
+        "/en/2022-adjudication-documentary-reconstruction/",
+        "/es/actualizaciones/",
+        "/en/updates/"
+      ],
+      "source_status": "PUBLIC_REDACTED_COMPLETE_FIVE_PAGE_DILIGENCE_WITH_TRANSCRIPTION_TRANSLATION_AND_PROPOSITION_MATRIX",
+      "what_changed": "The complete five-page diligence formalised on 6 April 2022 is published through a controlled public derivative, Spanish transcription, English translation and proposition-level matrix. The bilingual Pink/AEAT, 7 June 2018 and 2022 adjudication routes now link the source while separating direct observation, recorded statement, party allegation, inference and unresolved evidence.",
+      "what_did_not_change": "The source does not itself prove the truth of attributed statements, identify the unnamed male interlocutor, establish comprehensive Pink operation or income in 2017–2018, prove legal substitution of the Operating Community, establish criminality or retaliation, or show that the diligence initiated the inspection. The 2020 inspection and March 2022 supplementary action pre-date the visit; later reliance remains an open file-based question."
+    },
+    {
+      "update_id": "MU-20260826-AC-REMOVAL-FEES-UNITARY",
+      "date": "2026-08-26",
+      "type": "PROCEDURAL_IDENTITY_CORRECTION_AND_UNITARY_ANALYSIS",
+      "title_es": "Separación y honorarios del AC: identidad procesal, cuantía y tesis unificadas",
+      "title_en": "AC removal and remuneration: proceeding identity, quantum and thesis unified",
+      "affected_routes": [
+        "/es/concurso-36-2012-autos-resoluciones/",
+        "/en/insolvency-36-2012-orders-decisions/",
+        "/es/hipotesis-criminal-unitaria-2011-presente/",
+        "/en/unitary-criminal-hypothesis-2011-present/",
+        "/es/registro-identidad-materia/",
+        "/en/matter-identity-registry/",
+        "/es/actualizaciones/",
+        "/en/updates/"
+      ],
+      "source_status": "PUBLIC_REDACTED_FULLTEXT_CORPUS_PLUS_PROCEDURAL_IDENTITY_AUDIT",
+      "what_changed": "DP 1901/2026 is corrected as the separate private-actor/CAM route; the removal appeals, fee action, fee appeal, preliminary-disclosure reference and DIP 80/2026 now have separate identities. The site adds a reverse-engineered thread thesis, a four-component EUR 110,956.97 arithmetic ledger, contrary positions and ten finite production gaps. The canonical registry is now 194 identities: 86 people, 66 organisations, 10 structures, 15 institutions and 17 proceedings.",
+      "what_did_not_change": "The two first-instance outcomes remain standing dismissals, not merits findings. The arithmetic total is not a bank-verified loss. DP 1901, DP 1956, DIP 80 and handwritten intake reference 22 remain separate routes or locators; evidentiary overlap does not establish criminal intent, collusion, fee illegality or judicial wrongdoing."
+    },
+    {
+      "update_id": "MU-20260826-UNITARY-ATTRIBUTION-RDM-MANIFEST",
+      "date": "2026-08-26",
+      "type": "ATTRIBUTED_CRIMINAL_THEORY_AND_PRIVATE_MANIFEST_TRIAGE",
+      "title_es": "Atribución penal unitaria y análisis de Fase A del manifiesto recibido",
+      "title_en": "Unitary attributed economic-criminal theory and Phase-A analysis of the received manifest",
+      "affected_routes": [
+        "/es/",
+        "/en/",
+        "/es/mapa-probatorio-penal-unitario/",
+        "/en/unitary-criminal-evidence-map/",
+        "/es/ingenieria-inversa-criminal-unitaria/",
+        "/en/unitary-criminal-reverse-engineering/",
+        "/es/ingenieria-forense-criminal-sun-park/",
+        "/en/sun-park-criminal-engineering-investigation/",
+        "/es/registro-unitario/",
+        "/en/unitary-record/",
+        "/es/actualizaciones/",
+        "/en/updates/"
+      ],
+      "source_status": "PUBLIC_SAFE_PHASE_A_TRIAGE_OF_PRIVATE_MANIFEST_NOT_NATIVE_CORPUS",
+      "allegation_id": "ALG-ENT-018",
+      "what_changed": "The site now states Gil Marer and Aweswell's one-enterprise allegation expressly, preserves actor/offence-specific proof and temporal limits, and records only coarse public-safe manifest denominators and discovery consequences.",
+      "what_did_not_change": "The allegation is independent and is not inferred from the workbook. The manifest changes discovery priority only and adds no evidential support until native originals are acquired, preserved, authenticated and tested against contrary and exculpatory material. A manifest-only status describes this source track and does not overwrite the overall proposition status from all controlled evidence. The 24 August source-bounded assessment remains historical and non-controlling.",
+      "public_denominators": {
+        "email_index_rows": "approximately 10.6 thousand",
+        "attachment_rows": "approximately 9.0 thousand",
+        "threads": "approximately 4.3 thousand"
+      }
+    },
+    {
+      "update_id": "MU-20260825-ICAM-CCACM",
+      "date": "2026-08-25",
+      "type": "INSTITUTIONAL_RECORD_STRENGTHENING",
+      "title_es": "Control institucional ICAM / CCACM fortalecido",
+      "title_en": "ICAM / CCACM institutional control strengthened",
+      "affected_routes": [
+        "/es/cuatrecasas-icam-ccacm-2026/",
+        "/en/cuatrecasas-icam-ccacm-2026/",
+        "/es/registros-institucionales-colegios-abogacia-2026/",
+        "/en/institutional-records-bar-bodies-2026/"
+      ],
+      "source_status": "PUBLIC_REPOSITORY_AND_RECEIPT_STATUS_CONTROL",
+      "what_changed": "The record separates individual conduct, partner decision-making, professional-firm controls and the roles of ICAM, CCACM, ICALPA and ICATF.",
+      "what_did_not_change": "Receipt acknowledgements do not establish acceptance of allegations, a general firm investigation or a final decision."
+    },
+    {
+      "update_id": "MU-20260825-CAMPANARIO-OSINT",
+      "date": "2026-08-25",
+      "type": "NEW_BILINGUAL_DOSSIER",
+      "title_es": "Declaración 011 y red profesional/societaria Campanario–Prieto–Noriega",
+      "title_en": "Declaration 011 and Campanario–Prieto–Noriega professional/corporate network",
+      "affected_routes": [
+        "/es/alvaro-campanario-prieto-puente-lopez-noriega/",
+        "/en/alvaro-campanario-prieto-puente-lopez-noriega/"
+      ],
+      "source_status": "REGISTERED_VOICE_DERIVATIVE_PLUS_BOUNDED_OSINT",
+      "what_changed": "The public record now connects verified corporate capacities and exposes a finite clarification queue.",
+      "what_did_not_change": "A voice-derived declaration is not authenticated audio or a sworn word-for-word statement, and an unlocated edge is not proof of nonexistence."
+    },
+    {
+      "update_id": "MU-20260825-DIP2-JUDICIAL-COMPLAINT",
+      "date": "2026-08-25",
+      "type": "PRIMARY_EVIDENCE_PUBLICATION",
+      "title_es": "Denuncia judicial y ampliación publicadas con trazabilidad separada",
+      "title_en": "Judicial complaint and amplification published with separate traceability",
+      "affected_routes": [
+        "/es/fiscalia-dip-2-2026/",
+        "/en/fiscalia-dip-2-2026/"
+      ],
+      "source_status": "PUBLIC_REDACTED_FILED_COPY_AND_PARTY_ANALYSIS",
+      "what_changed": "The dossier includes page-accounted public copies, transcriptions, hashes and a separate Decanato/CGPJ traceability analysis.",
+      "what_did_not_change": "Daily reference no. 24 is not a NIG, proceeding number, allocation or proof of opening, and the allegations are not findings."
+    },
+    {
+      "update_id": "MU-20260825-CONTROL-PLANE-SYNC",
+      "date": "2026-08-25",
+      "type": "PUBLICATION_CONTROL",
+      "title_es": "Sincronización del estado unitario, denominador de identidades y verificación pública",
+      "title_en": "Unitary-state, identity-denominator and public-verification synchronization",
+      "affected_routes": [
+        "/es/registro-identidad-materia/",
+        "/en/matter-identity-registry/",
+        "/es/actualizaciones/",
+        "/en/updates/"
+      ],
+      "source_status": "PREPARED_PENDING_MERGE_AND_LIVE_READBACK",
+      "what_changed": "The canonical 185-identity denominator, current repository/deployment separation and latest-update date are placed under one validation contract.",
+      "what_did_not_change": "No case allegation, judicial result, claimant standing or recovery quantum is changed by the synchronization itself."
+    }
+  ]
+}

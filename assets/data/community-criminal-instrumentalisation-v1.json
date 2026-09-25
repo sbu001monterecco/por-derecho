@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0",
+  "control_id": "ND-COM-CRIM-001",
+  "control_date": "2026-08-21",
+  "status": "ACTIVE_ATTRIBUTED_CRIMINAL_THESIS",
+  "thesis": {
+    "es": "Por Derecho alega instrumentalización penal del órgano comunitario y de sus ACTAS para fabricar y propagar apariencia de autoridad; no es una mera cuestión civil, LPH, mercantil o concursal.",
+    "en": "Por Derecho alleges criminal instrumentalisation of the Community organ and its minutes to manufacture and propagate apparent authority; this is not merely a civil, horizontal-property, corporate or insolvency issue.",
+    "attribution_is_absolute": true,
+    "adjudicated_guilt": false,
+    "actor_specific_proof_required": true
+  },
+  "periodisation": [
+    {
+      "period": "2011",
+      "label": "alleged origin/authority rupture"
+    },
+    {
+      "period": "2011-2017",
+      "label": "propagation and compounding"
+    },
+    {
+      "period": "2017/2018",
+      "label": "later actor entry/adoption threshold"
+    },
+    {
+      "period": "2018-2022",
+      "label": "adoption/culmination and documentary conversion"
+    },
+    {
+      "period": "post-2022",
+      "label": "downstream use and benefit audit"
+    }
+  ],
+  "authority_chain": [
+    "title/owner",
+    "power/representation",
+    "appointment",
+    "notice",
+    "attendance",
+    "vote",
+    "quota",
+    "act",
+    "custody",
+    "certificate",
+    "downstream use"
+  ],
+  "acta_2022_copy": {
+    "source_status": "located scanned copy; not diligenced original",
+    "private_retrieval_locator": "Gmail message 1809a319667e145e",
+    "meeting_date_stated": "2022-02-04",
+    "attendance_stated_percent": 20.993,
+    "features_stated": [
+      "José Daniel Acosta Matos as president and Proyectos Acosta Matos representative",
+      "Laura Acosta Matos as Construcciones Acosta Matos representative",
+      "Javier Acosta Matos as Construcciones Acos-Matos representative",
+      "sole project supplied by CAM and described as prepared/explained by JDAM",
+      "purported unanimous project/licence/unified-operation authority",
+      "purported joint Community bank authority for JDAM and FMMM"
+    ],
+    "budget_annex": {
+      "date_stated": "2022-01-28",
+      "amount_eur": 4467793.26,
+      "signature_identity_authenticated": false
+    },
+    "greenwood_signature_block_date": "2022-03-29",
+    "copy_metadata": {
+      "created": "2022-03-31",
+      "modified": "2022-05-06"
+    },
+    "not_proved": [
+      "valid meeting notice, title, powers, vote denominator or signatures",
+      "lawful prior commission or ratification",
+      "knowledge, criminal intent, offence or liability"
+    ]
+  },
+  "project_control": {
+    "controlled_anchor": "COALZ visado 2022-02-25, reference 22/000036/7800",
+    "prohibited_unverified_claim": "JDAM signed the project on 5 January 2022",
+    "reason": "native commission, signature certificate, timestamp and version package are missing; prior date fields conflict",
+    "self_ratification_rejected": true
+  },
+  "potential_criminal_routes": [
+    {
+      "provision": "CP 390-396",
+      "issue": "documentary falsehood and knowing use",
+      "automatic_application": false
+    },
+    {
+      "provision": "CP 248/250",
+      "issue": "fraud and procedural fraud",
+      "automatic_application": false
+    },
+    {
+      "provision": "CP 251.1",
+      "issue": "false attribution of powers of disposition",
+      "automatic_application": false
+    },
+    {
+      "provision": "CP 252",
+      "issue": "disloyal administration subject to proof of actual powers and damage",
+      "automatic_application": false
+    },
+    {
+      "provision": "CP 290-293",
+      "issue": "corporate-offence analogy/application requires scope analysis",
+      "automatic_application": false
+    },
+    {
+      "provision": "CP 257-261",
+      "issue": "date-specific frustration/insolvency conduct",
+      "automatic_application": false
+    },
+    {
+      "provision": "CP 570 bis",
+      "issue": "criminal organisation requires proof of statutory structure and purpose",
+      "automatic_application": false
+    }
+  ],
+  "article_262_control": {
+    "codigo_penal": "alteration of prices in public contests/auctions; not generic insolvency manipulation",
+    "lecrim": "reporting provision referenced in College correspondence",
+    "must_not_conflate": true
+  },
+  "public_routes": [
+    "/por-derecho/es/comunidad-instrumentalizacion/",
+    "/por-derecho/en/community-instrumentalisation/",
+    "/por-derecho/es/comunidad-instrumentalizacion/actas-2011-2022/",
+    "/por-derecho/en/community-instrumentalisation/minutes-2011-2022/",
+    "/por-derecho/es/comunidad-instrumentalizacion/dos-registros-gobernanza-competidores/",
+    "/por-derecho/en/community-instrumentalisation/two-competing-governance-records/",
+    "/por-derecho/es/arquitectura-nodo-documental-jdam/",
+    "/por-derecho/en/architecture-documentary-node-jdam/"
+  ],
+  "follow_up": {
+    "broad_repeat_email_recommended": false,
+    "focused_evidence_supplement_recommended": true,
+    "send_condition": "public-safe ACTA copy/index and native project date/signature request ready, or imminent preservation risk",
+    "recipients": "COALZ existing entries with COAGC existing thread copied for its own records/coordination"
+  }
+}

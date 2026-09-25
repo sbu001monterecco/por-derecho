@@ -1,0 +1,154 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-AC-RPL3304-R33-20260921",
+  "control_date": "2026-09-22",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "DEPLOYED",
+  "expected_routes": {
+    "es": [
+      "es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/index.html"
+    ],
+    "en": [
+      "en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/index.html"
+    ]
+  },
+  "predecessor_pr": 1696,
+  "pull_request": 1741,
+  "source": {
+    "id": "C36-SPECIALIST-R33",
+    "date": "2026-09-14",
+    "received_date": "2026-09-21",
+    "pages": 22,
+    "native_sha256": "5e0728185cf9b686abd723497d2a53a2656a5e0de4d323a734ed02880eb1d711",
+    "custody": "Signed native source preserved separately; not committed to the public repository."
+  },
+  "public_pdf": {
+    "path": "evidence/insolvency-36-2012/concurso-autos/pdfs/R33-ac-oposicion-apelacion-lpb-septiembre-2026.pdf",
+    "sha256": "df43ba1d044c59177a85dea18c98f64b0c9c826ec7ba030c332a1e9cfb7abd14",
+    "pages": 22,
+    "source_relationship": "VISUALLY_EQUIVALENT_PUBLIC_SAFE_DERIVATIVE",
+    "removed": [
+      "AcroForm signature fields",
+      "PDF annotations/widgets",
+      "embedded digital-signature certificate credentials and unnecessary identifiers"
+    ],
+    "retained": [
+      "all 22 visible source pages",
+      "substantive text",
+      "embedded page screenshots",
+      "visible signature stamp and signature date"
+    ]
+  },
+  "private_forensic_pass": {
+    "status": "PROPOSED_PROVISIONAL_NOT_PUBLIC_CASE_DATA",
+    "source_blocks": 206,
+    "statement_propositions": 276,
+    "paragraph_composites": 206,
+    "truth_records_total": 482,
+    "pinpoint_contradiction_or_narrowing_relations": 4,
+    "rule": "No automated lie, intent or criminal-guilt finding; private JSON and locators remain outside public Git."
+  },
+  "publication_boundaries": [
+    "The filing proves what the Insolvency Administrator states and what source material he reproduces; it does not prove every characterization true.",
+    "Contradiction or narrowing does not by itself establish knowing falsity, intent, coordination or criminal responsibility.",
+    "The strongest lawful explanation and adverse/contrary material remain visible.",
+    "The public projection does not publish the native signed certificate, private forensic case JSON, private mailbox locators or privileged material."
+  ],
+  "integrated_surfaces": [
+    "Spanish and English dedicated R33 pages",
+    "Spanish and English insolvency-administrator/removal dossiers",
+    "Spanish and English PwC evidence-custodian crosslinks",
+    "R33 controlled extracts"
+  ],
+  "frozen_corpus_boundary": "The Aug-23 fixed 50-specialist / 127-complete-record catalogues remain unchanged; R33 is a post-cutoff additive source page, not silently inserted into those frozen denominators.",
+  "authority": "Gil Marer instruction: take over and do it now.",
+  "state_note": "PR #1741 merged as 0c2c8a1b6680e61e2c76ea1c96687e07c6672154. GitHub Pages build/deployment run 35672778473 completed successfully for that exact head SHA on 22-Sep-2026. Public routes are declared here as deployed; page-level evidence boundaries and rule-level visual linkage remain controlling.",
+  "controlled_extract_path": "evidence/insolvency-36-2012/rpl-3304-2025/R33-oposicion-ac-apelacion-lpb-septiembre-2026-controlled-extracts.md",
+  "sitemap_state": "Not manually edited in this release; dedicated routes are reachable through reciprocal in-site links. Global sitemap remains generator-owned.",
+  "viewer_upgrade": {
+    "version": "1.1.0",
+    "mode": "SPLIT_PDF_FORENSIC_SIDECAR",
+    "assets": [
+      "assets/ac-rpl3304-forensic-sidecar.css",
+      "assets/ac-rpl3304-forensic-sidecar.js",
+      "assets/data/ac-rpl3304-public-sidecar-v1.js"
+    ],
+    "behaviour": [
+      "scrollable embedded 22-page public-safe PDF",
+      "page-linked commentary cards",
+      "category filters and search",
+      "visual category summary",
+      "deep links to related Por Derecho dossiers"
+    ],
+    "public_commentary_items": 13,
+    "categories": [
+      "RHETORIC",
+      "CONTEXT",
+      "NOTICE",
+      "VERIFY",
+      "NARROWING",
+      "SUPPORTED"
+    ],
+    "boundary": "Colours are review categories, not truth percentages. NARROWING does not mean lie; NOTICE requires evidence of receipt/knowledge. Private 482-record case data remains outside public Git."
+  },
+  "native_source_boundary": "Signed native source remains separately preserved and unchanged; public web viewer uses the visually equivalent public-safe 22-page derivative and does not expose interactive signature certificate identifiers.",
+  "visual_linkage": {
+    "version": "1.0.0",
+    "rule": "Page-5 apology must not be visually isolated from signer identity, distinct-firm collaboration, pre-2020 removal chronology and source access.",
+    "manifest": "assets/data/ac-rpl3304-visual-linkage-v1.json",
+    "assets": [
+      "assets/visuals/ac-rpl3304/separacion-cronologia-documental-2012-2026.svg",
+      "assets/visuals/ac-rpl3304/oposicion-pagina5-contraste-documental.svg",
+      "assets/visuals/ac-rpl3304/separacion-ruta-procesal.svg"
+    ],
+    "drive_master_folder_id": "1rVrqrPbXON90jQZhYAm4Akmw2rkEszd0"
+  },
+  "merge_sha": "0c2c8a1b6680e61e2c76ea1c96687e07c6672154",
+  "validation": {
+    "evidence": [
+      "PR #1741: Publication integrity gate — success",
+      "PR #1741: Validate Borja separation detailed visual — success",
+      "PR #1741: Validate AC removal, remuneration and orders publication — success",
+      "PR #1741: Validate visual asset identity registry — success",
+      "PR #1741: Audit private-source, statement and OSINT governance — success",
+      "PR #1741: Release acceptance — success"
+    ]
+  },
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "workflow_run_id": 35672778473,
+    "workflow_name": "pages build and deployment",
+    "head_sha": "0c2c8a1b6680e61e2c76ea1c96687e07c6672154",
+    "conclusion": "success",
+    "completed_at": "2026-09-22T00:40:39Z",
+    "action_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/35672778473"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/",
+    "https://sbu001monterecco.github.io/por-derecho/es/continuidad-defensa-letrados/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-separacion-ac-honorarios/"
+  ],
+  "linkedin_release": {
+    "package_id": "PD-RPL3304-R33-LINKEDIN-20260922",
+    "state": "PRESERVED_PUBLIC_SAFE_NOT_AUTO_POSTED",
+    "control_timestamp_utc": "2026-09-22T01:49:00Z",
+    "package_root": "archive/rpl3304-linkedin-20260922",
+    "audit": "archive/rpl3304-linkedin-20260922/CONTINUITY_AUDIT.md",
+    "manifest": "archive/rpl3304-linkedin-20260922/release-manifest.json",
+    "images": [
+      "archive/rpl3304-linkedin-20260922/rpl3304-editorial-satire-es-20260922.png",
+      "archive/rpl3304-linkedin-20260922/rpl3304-editorial-satire-en-20260922.png"
+    ],
+    "posts": [
+      "archive/rpl3304-linkedin-20260922/linkedin-post-es-20260922.txt",
+      "archive/rpl3304-linkedin-20260922/linkedin-post-en-20260922.txt"
+    ],
+    "publication_rule": "Editorial satire and source-linked scrutiny; no court finding of lying is asserted. Corrections require primary-source support and silence is not an admission.",
+    "reference_artwork_boundary": "No Liar Liar poster, film still, actor image, child image or face replacement is included.",
+    "institutional_boundary": "RSM, Grant Thornton and PwC are tagged for distinct documentary reasons; no collective allegation is made.",
+    "google_drive_preservation": "COMPLETE_LOCATOR_WITHHELD_FROM_THIS_PUBLIC_OBJECT",
+    "gitlab_parity": "PENDING_ACCESS_RESTORATION_AND_REVIEWED_RECONCILIATION"
+  }
+}

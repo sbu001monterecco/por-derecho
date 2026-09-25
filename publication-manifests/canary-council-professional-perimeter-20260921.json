@@ -1,0 +1,57 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "CANARY-COUNCIL-PROFESSIONAL-PERIMETER-20260921",
+  "control_date": "2026-09-21",
+  "current_state": "PR_OPEN",
+  "owner": "Por Derecho / Project Sun Rock",
+  "authority": "Gil Marer — Update fully now",
+  "baseline_main": "8354af9935c66054388f70072e380eb46b2fdc39",
+  "branch": "chatgpt/consejo-canario-professional-perimeter-20260921",
+  "pull_request": 1708,
+  "package": "canary-council-professional-intercollegial-perimeter",
+  "publication_boundary": "Independent source-controlled Por Derecho coordination record. It does not establish collective liability, professional misconduct, bribery, criminal coordination, receipt of the ICAM→Tenerife referral, or merits acceptance by a Bar/Council.",
+  "expected_routes": {
+    "es": [
+      "es/consejo-canario-coordinacion-deontologica-2026/index.html",
+      "es/registros-institucionales-colegios-abogacia-2026/index.html"
+    ],
+    "en": [
+      "en/canary-council-deontological-coordination-2026/index.html",
+      "en/institutional-records-bar-bodies-2026/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/data/canary-professional-intercollegial-perimeter-v1.json",
+    "assets/data/matter-identity-registry-v1.institutions.json",
+    "assets/data/unitary-route-registry-v1.json",
+    "assets/ccca-institutional-mark-20260816.js",
+    "sitemap.xml",
+    "archive/CANARY_COUNCIL_INTERCOLLEGIAL_PROFESSIONAL_PERIMETER_CONTROL_21SEP2026.md"
+  ],
+  "open_gaps": [
+    "ICAM 1487/26 outgoing/ICATF receipt and local reference",
+    "substantive CGAE ethical-channel response",
+    "remaining exact Bar membership/competence verification",
+    "later professional mandate/conflict/custody records",
+    "professional-payment payer/source-of-funds proof"
+  ],
+  "validation": {
+    "evidence": [
+      "PR #1708 open from the controlled 21-Sep branch against main",
+      "canonical identity registry corrected to CCCA and separated from Madrid CCACM",
+      "bilingual route parity and source-control package present on the PR head",
+      "merge, deployment and live readback remain pending"
+    ],
+    "required": [
+      "repository preservation",
+      "publication integrity",
+      "audience experience",
+      "route/link integrity",
+      "ES/EN parity"
+    ],
+    "merge_and_live_verification": "pending"
+  },
+  "gitlab_recovery": "Reconcile additively against actual GitLab main when access returns; do not overwrite divergent history or use the public site as a write surface.",
+  "stage_rule": "Stage 1 publishes the routes and controls without promoting the canonical material-update date beyond 18 September. Stage 2 promotes the 21 September update only after these routes are merged and observable on Pages."
+}

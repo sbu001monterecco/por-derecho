@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "control_id": "PD-HOME-MISSION-CRITICAL-20260904-01",
+  "date": "2026-09-04",
+  "purpose": "Treat the bilingual homepage as the mission-critical command surface for the Sun Park / MYND Yaiza record without removing or suppressing existing critical content.",
+  "invariants": [
+    "No existing homepage section is removed or hidden by this enhancement.",
+    "The three principal accountability lanes remain procedurally separate.",
+    "Shared evidence does not transfer knowledge, intent, causation, guilt or liability.",
+    "Filing does not equal admission and later title/operation/financing does not validate predecessor authority.",
+    "The existing recovery, future, Por Derecho, institutional, evidence and accountability content remains reachable and unchanged in substance."
+  ],
+  "visual_model": {
+    "hero": "Stronger mission framing while preserving the existing headline, image, lead and calls to action.",
+    "sticky_rail": ["60-second summary", "case map", "DP 1901/2026", "DP 1956/2026", "Control 24", "evidence", "institutions", "future"],
+    "case_map": "Three linked lanes plus a six-stage shared factual spine.",
+    "action_network": ["Administrator page", "Judge page", "Control 22", "removal/fees", "Fiscalia/DIP 2", "institutional clean room", "full digitisation", "updates"]
+  },
+  "reader_model": "ACTOR -> CAPACITY -> EVENT -> SOURCE -> DECISION/OMISSION -> ASSET/RIGHT -> CONSEQUENCE -> CONTRARY/ALTERNATIVE -> OPEN PROOF",
+  "implementation": {
+    "asset": "assets/home-mission-critical-20260904.js",
+    "loader": "assets/site.js",
+    "languages": ["es", "en"],
+    "mode": "additive-only"
+  }
+}

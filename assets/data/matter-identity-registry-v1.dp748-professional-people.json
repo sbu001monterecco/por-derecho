@@ -1,0 +1,46 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "PERSON",
+  "records": [
+    {
+      "id": "PD-SP-P-0158",
+      "type": "PERSON",
+      "name": "Teresa Morenés Basabe",
+      "aliases": [
+        "Teresa Morenes Basabe"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "Signed ETJ 163/2020 pleadings dated 18-Oct-2024, 21-Feb-2025, 25-Apr-2025 and 10-Feb-2026"
+      ],
+      "capacity_boundary": "Lawyer signing the identified ETJ 163/2020 pleadings for Cuatrecasas in the stated acts only. Identity and act-specific representation do not establish the truth of a proposition, instructions, knowledge outside the documents, intent, wrongdoing or liability."
+    },
+    {
+      "id": "PD-SP-P-0159",
+      "type": "PERSON",
+      "name": "José Javier Bueno Mesa",
+      "aliases": [
+        "Jose Javier Bueno Mesa"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "Signed ETJ 163/2020 pleadings dated 18-Oct-2024, 21-Feb-2025, 25-Apr-2025 and 10-Feb-2026"
+      ],
+      "capacity_boundary": "Procurador signing/presenting the identified ETJ 163/2020 pleadings for Cuatrecasas in the stated acts only. Identity and act-specific representation do not establish the truth of a proposition, instructions, knowledge outside the documents, intent, wrongdoing or liability."
+    },
+    {
+      "id": "PD-SP-P-0160",
+      "type": "PERSON",
+      "name": "María Francisca Sánchez Álvarez",
+      "aliases": [
+        "Maria Francisca Sanchez Alvarez"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "Signed Ministerio Fiscal report in DP 748/2026 dated 08-Jun-2026"
+      ],
+      "capacity_boundary": "Fiscal signatory of the 08-Jun-2026 report in DP 748/2026 only. The source establishes the report and its stated position, not a broader institutional position, personal knowledge outside the file, support for criminality, requested diligences or opposition to provisional dismissal."
+    }
+  ]
+}

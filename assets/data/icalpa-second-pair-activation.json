@@ -1,0 +1,197 @@
+{
+  "method":"Por Derecho — El Segundo Par de Ojos",
+  "version":"1.1-active",
+  "activated":"2026-08-19",
+  "coreChecks":["source","authority","perimeter","contradiction","consequence","reversibility"],
+  "statusVocabulary":[
+    {"id":"not-checked","es":"Sin segunda comprobación","en":"Not second-checked"},
+    {"id":"open","es":"Segunda comprobación abierta","en":"Second check open"},
+    {"id":"survives","es":"Discrepancia material sobrevive al contraste","en":"Material discrepancy survives check"},
+    {"id":"resolved","es":"Preocupación resuelta por segunda comprobación","en":"Concern resolved by second check"},
+    {"id":"human","es":"Juicio humano requerido","en":"Human judgment required"}
+  ],
+  "rules":{
+    "noGuiltInference":true,
+    "silenceIsNotAdmission":true,
+    "registeredIsNotReviewed":true,
+    "caseEvidenceSeparated":true,
+    "humanDecisionOnly":true,
+    "unknownsMustBeAccountedFor":true
+  },
+  "cases":[
+    {
+      "caseId":"DIP-80-2026",
+      "institution":"ICALPA",
+      "applicationRole":"reference-implementation",
+      "publicCharacter":"independent-non-official-live-case-method-application",
+      "currentState":"active",
+      "nextHumanGate":"Certify the complete official file, hearing/response state, temporal treatment and current procedural route.",
+      "checkpoints":[
+        {
+          "id":"D80-01","module":"Disputed liabilities","status":"open",
+          "source":"Identify the contemporaneous liability schedules, challenges, insolvency reports and court-facing calculations actually used.",
+          "authority":"Separate what the insolvency administrator could verify/report from what only the insolvency judge could decide.",
+          "perimeter":"Each disputed liability must be dated and treated separately; do not use a global 2012–2026 allegation.",
+          "contradiction":"Test any contemporaneous reconciliation, legal basis, court order or professional explanation supporting the treatment adopted.",
+          "consequence":"A surviving unreconciled liability issue may affect the integrity of estate accounting or professional diligence; it does not by itself establish breach.",
+          "reversibility":"A certified liability ledger, source-to-calculation bridge and professional explanation can resolve, narrow or strengthen the concern.",
+          "missing":"Certified contemporaneous liability ledger and item-specific verification trail.",
+          "humanGate":"Decide whether finite verification is complete enough for archive, further inquiry or formal route selection."
+        },
+        {
+          "id":"D80-02","module":"Community debts","status":"open",
+          "source":"Locate the exact Community claims, minutes/certificates, challenges and documents available to the administrator at each material date.",
+          "authority":"ICALPA may examine professional diligence; it does not decide the underlying civil validity of Community debts.",
+          "perimeter":"Focus on verification and professional use of the debt, not a collateral determination of ownership or Community governance.",
+          "contradiction":"Give equal weight to evidence that the debt was competently verified, judicially accepted or reasonably treated on the information then available.",
+          "consequence":"An unexplained failure to confront a concrete documented challenge may be material; a reasoned verification record may clear the concern.",
+          "reversibility":"The contemporaneous checking record and the professional's explanation are capable of resolving the issue.",
+          "missing":"Source-level debt verification record tied to the challenged amounts and dates.",
+          "humanGate":"Determine whether the professional verification question survives contradiction."
+        },
+        {
+          "id":"D80-03","module":"Hotel operating unit","status":"open",
+          "source":"Identify notices, reports, court orders and estate documents concerning the operating unit and alleged risks to it.",
+          "authority":"Distinguish administrator powers from court powers and from the powers of owners/operators outside the insolvency estate.",
+          "perimeter":"Only conduct within the administrator's legal/professional remit belongs in the deontological question.",
+          "contradiction":"Test whether measures were requested, considered, rejected, judicially controlled or outside the administrator's power.",
+          "consequence":"Failure to protect an estate interest may matter only if a concrete duty, available measure and causal nexus are established.",
+          "reversibility":"A contemporaneous reasons record can convert an apparent omission into a documented professional judgment.",
+          "missing":"Decision trail showing risks notified, available measures, competence and response.",
+          "humanGate":"Classify each alleged omission as actionable professional conduct, justified decision, outside competence or unresolved."
+        },
+        {
+          "id":"D80-04","module":"Third-party conduct","status":"open",
+          "source":"Identify each third-party act actually reported to the administrator, with date and supporting documents.",
+          "authority":"Separate administrator response duties from judicial, police, prosecution, ownership and operator competences.",
+          "perimeter":"Do not attribute responsibility for third-party conduct merely because the administrator knew of the wider dispute.",
+          "contradiction":"Test whether the administrator lacked power, referred the matter, sought directions or had a reasonable basis for the response chosen.",
+          "consequence":"Professional significance depends on a concrete duty to respond and a material consequence of not doing so.",
+          "reversibility":"Court directions, referrals and contemporaneous communications may resolve an apparent omission.",
+          "missing":"Act-by-act notice and response map.",
+          "humanGate":"Decide which reported third-party events, if any, create a live professional-duty question."
+        },
+        {
+          "id":"D80-05","module":"Independence / impartiality","status":"open",
+          "source":"Use objective relationship, role, communication, disclosure and decision records; avoid appearance-by-association evidence alone.",
+          "authority":"ICALPA may assess professional independence within its competence; other legal consequences remain for their competent bodies.",
+          "perimeter":"A social, sectoral or professional association is not itself a conflict; require a nexus to a professional decision or duty.",
+          "contradiction":"Look actively for disclosures, recusals, independent checks, court knowledge, absence of decision influence or other safeguards.",
+          "consequence":"A material undisclosed conflict could affect confidence in professional decisions; a documented safeguard may resolve the concern.",
+          "reversibility":"Disclosure/control records and the professional's account can materially change the assessment.",
+          "missing":"Objective conflict-control record tied to the specific decisions questioned.",
+          "humanGate":"Determine whether an objectively material independence question remains after safeguards and explanation are tested."
+        },
+        {
+          "id":"D80-06","module":"CAM enhanced scrutiny","status":"open",
+          "source":"Fix what was known about CAM, its creditor/asset position and disputed matters at each relevant date.",
+          "authority":"Separate professional verification duties from the court's merits decisions and from criminal questions.",
+          "perimeter":"Do not infer concertation, fraud or prohibited conduct from proximity or chronology alone.",
+          "contradiction":"Test independent verification, court supervision, adverse/mixed decisions and explanations supporting the professional treatment.",
+          "consequence":"The issue is whether known circumstances objectively called for enhanced scrutiny and whether that scrutiny occurred.",
+          "reversibility":"A documented independent-check trail may clear the concern; absence of such a trail may justify finite further inquiry.",
+          "missing":"Contemporaneous CAM-specific verification and disclosure trail.",
+          "humanGate":"Decide whether enhanced scrutiny was required and adequately documented."
+        },
+        {
+          "id":"D80-07","module":"Financed alternatives and exit","status":"open",
+          "source":"Identify the exact proposal, financing evidence, conditions, timing and communications actually available.",
+          "authority":"Separate professional evaluation from court approval and from third-party financing discretion.",
+          "perimeter":"A preliminary proposal is not an executable alternative unless funding, conditions and authority are established.",
+          "contradiction":"Test whether financing was conditional, incomplete, impracticable, late or reasonably rejected for documented reasons.",
+          "consequence":"A lost alternative matters only if executability, knowledge, causation and decision responsibility are shown.",
+          "reversibility":"Financing commitments, conditions precedent and contemporaneous reasons can substantially change the counterfactual.",
+          "missing":"Complete contemporaneous financing/conditions file and decision record.",
+          "humanGate":"Determine whether a real professional-duty question exists, rather than a hindsight counterfactual."
+        },
+        {
+          "id":"D80-08","module":"2018 material control","status":"open",
+          "source":"Reconstruct access, possession, keys, security, operation, third-party units, orders and notices at the relevant dates.",
+          "authority":"Map what the administrator, judge, owners, Community/operator and enforcement bodies respectively could control.",
+          "perimeter":"Do not collapse physical events, ownership disputes and professional omissions into one allegation.",
+          "contradiction":"Test court orders, custody records, requests for directions and evidence that the administrator acted or lacked legal power.",
+          "consequence":"A material omission exists only if a concrete protective duty and feasible response are established.",
+          "reversibility":"A complete 2018 control chronology can resolve whether apparent inaction was action, judicial dependency, lack of power or a genuine gap.",
+          "missing":"Dated control/notice/response chronology linked to source documents.",
+          "humanGate":"Classify each 2018 event by duty, competence, response and unresolved consequence."
+        },
+        {
+          "id":"D80-09","module":"2022 credit / dation / €400k reconciliation","status":"open",
+          "source":"Require the credit calculation, legal basis, deed, schedules, ledger entries, banking evidence and final reconciliation.",
+          "authority":"Separate administrator accounting/reporting functions, court approval, creditor acts and notarial effects.",
+          "perimeter":"An unreconciled number is not proof of appropriation, fraud or breach; the question is whether the professional/legal-accounting bridge is complete and accurate.",
+          "contradiction":"Test certified calculations, notarial annexes, bank entries, approved accounts and professional explanation.",
+          "consequence":"A surviving material mismatch may justify further accounting verification; a full reconciliation can clear it.",
+          "reversibility":"This is highly reversible through source-level accounting reconciliation.",
+          "missing":"End-to-end source-to-ledger reconciliation for the credit, dation and separate €400k component.",
+          "humanGate":"Decide whether any discrepancy remains after full reconciliation and whether it engages a professional duty."
+        },
+        {
+          "id":"D80-10","module":"Accounting / rendering of accounts","status":"open",
+          "source":"Assemble final/interim accounts, balances, proceeds, income, expenses, fees, assets, objections and decisions.",
+          "authority":"Separate accounting duties of the administrator from judicial approval and third-party accounting responsibilities.",
+          "perimeter":"Assess specific accounting items and duties; avoid treating dissatisfaction with the insolvency outcome as an accounting breach.",
+          "contradiction":"Test approved/reconciled accounts, corrections, expert material and explanations for disputed entries.",
+          "consequence":"Material unexplained accounting gaps may engage diligence/transparency duties; reconciled accounts may resolve them.",
+          "reversibility":"A complete certified account and objection-decision trail can resolve most factual uncertainty.",
+          "missing":"Complete certified account set with reconciliation and treatment of objections.",
+          "humanGate":"Determine whether any accounting issue remains material after source reconciliation."
+        },
+        {
+          "id":"D80-11","module":"Later autonomous acts / omissions","status":"open",
+          "source":"Identify each alleged 2022–2026 professional act or omission by date, source and concrete duty.",
+          "authority":"Assess only acts within the relevant professional/collegiate competence; keep judicial and criminal questions separate.",
+          "perimeter":"Continuing harm or a continuing dispute is not automatically continuing professional misconduct.",
+          "contradiction":"Test whether the later event is genuinely autonomous, merely consequential, already judicially controlled or supported by a lawful explanation.",
+          "consequence":"Temporal viability and materiality depend on a distinct later professional act or omission, not on persistence of earlier effects.",
+          "reversibility":"Date-specific records can remove false continuity and sharply narrow the live perimeter.",
+          "missing":"Act-by-act 2022–2026 chronology with duty, source, response and explanation.",
+          "humanGate":"Determine which later items, if any, are autonomous and procedurally viable."
+        }
+      ]
+    },
+    {
+      "caseId":"DIP-79-2026",
+      "institution":"ICALPA",
+      "applicationRole":"next-live-application",
+      "publicCharacter":"independent-non-official-live-case-method-application",
+      "currentState":"active",
+      "nextHumanGate":"Certify the professional hearing/response and reconcile each of the three identified 2021 acts at source level.",
+      "checkpoints":[
+        {
+          "id":"D79-01","module":"15 February 2021 — filing concerning the Aweswell appeal","status":"open",
+          "source":"Original filing, source documents relied on, court record and any contemporaneous professional instructions/explanation.",
+          "authority":"Assess professional accuracy/diligence without asking ICALPA to re-decide the underlying insolvency/civil merits.",
+          "perimeter":"One identified professional act; do not import the wider DIP 80 longitudinal allegations.",
+          "contradiction":"Test whether the filing accurately reflected the record then available or was reasonably based on client/source material.",
+          "consequence":"Material professional significance depends on whether any inaccuracy was material, knowable and professionally attributable.",
+          "reversibility":"Source-to-filing reconciliation and the professional's explanation can resolve or materially narrow the concern.",
+          "missing":"Certified filing/source bundle and respondent explanation.",
+          "humanGate":"Decide whether a material deontological question survives source reconciliation and contradiction."
+        },
+        {
+          "id":"D79-02","module":"15 February 2021 — filing concerning the Community and certification","status":"open",
+          "source":"The filing, certification/minutes relied upon, underlying Community records and any verification trail.",
+          "authority":"Focus on professional verification/representation duties, not a final determination of Community validity or governance.",
+          "perimeter":"One defined use of apparently objective third-party material.",
+          "contradiction":"Test whether verification was reasonable, whether limitations were disclosed and whether contrary material was known or reasonably knowable.",
+          "consequence":"The concern strengthens only if a material representation remained unreliable after the professional's verification and explanation are tested.",
+          "reversibility":"A complete verification trail or disclosed limitation may clear the concern.",
+          "missing":"Underlying certification/minutes provenance plus professional verification record and response.",
+          "humanGate":"Determine whether the professional use of the certification raises a material duty question after contradiction."
+        },
+        {
+          "id":"D79-03","module":"21 July 2021 — RIC Private Equity filing and third-party certificate","status":"open",
+          "source":"The 21 July filing, certificate attributed to Enrique Guerra Suárez, underlying source material and contemporaneous communications.",
+          "authority":"Assess the lawyer's professional use/verification of third-party material; do not decide RICPE regulatory, criminal or transactional liability in this lane.",
+          "perimeter":"One identified professional act with its own date, source and knowledge state.",
+          "contradiction":"Test provenance, wording, limitations, professional reliance, information then available and the strongest innocent explanation.",
+          "consequence":"Materiality depends on what the certificate was used to establish and whether any unreliability was professionally knowable and consequential.",
+          "reversibility":"Source certification, correspondence and the professional's response can resolve or narrow the issue.",
+          "missing":"Complete certificate provenance/use bundle and respondent explanation.",
+          "humanGate":"Decide whether the third-party certificate issue survives a full source and contradiction review."
+        }
+      ]
+    }
+  ]
+}

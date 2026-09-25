@@ -1,0 +1,3 @@
+# REDACTION POLICY
+
+Public derivatives of the 8 May 2018 investigation should redact or omit investigator identity/accreditation, private addresses, telephone numbers, identity-document numbers, unrelated third-party profiles and unnecessary allegations. Preserve dates, methodology, relevant professional/corporate background, evidential limitations and the statement that complete identifying information is available to competent authorities.

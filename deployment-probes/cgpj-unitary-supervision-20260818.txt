@@ -1,0 +1,4 @@
+CGPJ-UNITARY-SUPERVISION-LIVE-PROBE-20260818-V1
+publication: CGPJ-UNITARY-SUPERVISION-UPGRADE-20260818
+purpose: prove GitHub Pages propagation after unitary CGPJ supervision merge
+expected-core-routes: ES/EN reader-room, insolvency-estate supervision, judge ledger

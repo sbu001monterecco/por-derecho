@@ -1,0 +1,50 @@
+name: Publication integrity gate
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publication-integrity-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  publication-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Validate publication and deletion-safety invariants
+        env:
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+          GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          GITHUB_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: python scripts/validate_publication_integrity_v2.py
+      - name: Validate repository preservation contract
+        env:
+          GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          GITHUB_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: python scripts/validate_repository_preservation.py
+      - name: Validate locked first-read actor presentation
+        run: python scripts/validate_audience_experience.py
+      - name: Validate actor and institutional linkage record
+        run: python scripts/validate_ac_community_de_facto_administration.py
+      - name: Validate LPB and whole-hotel insolvency perimeter language
+        run: python scripts/validate_insolvency_perimeter_language.py
+      - name: Validate operational control-plane invariants
+        run: python scripts/validate_operational_items.py
+      - name: Validate mission-critical repository invariants
+        run: python scripts/validate_mission_critical_repo.py
+      - name: Validate continuity of Por Derecho links already sent by email
+        run: python scripts/validate_sent_email_link_continuity.py

@@ -1,0 +1,106 @@
+{
+  "audit_id": "THREAD-DELETION-AUDIT-PRIVATE-ACTORS-PER-CONTROL-20260821",
+  "control_date": "2026-08-21",
+  "status": "SAFE_TO_DELETE_FOR_REPOSITORY_CONTINUITY_WHEN_PRESENT_ON_MAIN_AND_READ_BACK",
+  "effective_only_when_on_main": true,
+  "repository": "sbu001monterecco/por-derecho",
+  "thread_scope": "Private actors, statutory related-party status, communero roles, possible de facto administration, accumulated-role conflict and the related bilingual repository/website implementation.",
+  "original_implementation": {
+    "pull_request": 672,
+    "merge_sha": "4549f33adf4c030e10ac39f9a0be9ffb0ee7ba78",
+    "title": "Add dedicated private-actor PER and multi-capacity conflict pages",
+    "changed_files": 6,
+    "additions": 270,
+    "deletions": 2
+  },
+  "durable_files": [
+    "PRIVATE_ACTORS_PER_COMMUNERO_DE_FACTO_ADMINISTRATION_SYNTHESIS_20AUG2026.md",
+    "es/actores-privados-per-comunero-administracion-de-hecho/index.html",
+    "en/private-actors-related-party-community-de-facto-administration/index.html",
+    "sitemap-ac-community-de-facto-administration.xml",
+    "assets/site.js",
+    "scripts/validate_mission_critical_repo.py",
+    "archive/THREAD_DELETION_AUDIT_PRIVATE_ACTORS_PER_CONTROL_21AUG2026.md",
+    "archive/thread-deletion-audit-private-actors-per-control-20260821.json"
+  ],
+  "public_routes": {
+    "spanish": "/es/actores-privados-per-comunero-administracion-de-hecho/",
+    "english": "/en/private-actors-related-party-community-de-facto-administration/"
+  },
+  "preserved_detailed_routes": {
+    "spanish": "/es/administracion-de-hecho-comunidad-ac/",
+    "english": "/en/de-facto-administration-community-ac/"
+  },
+  "confidential_source_boundary": {
+    "confidential_report_committed": false,
+    "privileged_advice_committed": false,
+    "raw_private_emails_committed": false,
+    "unredacted_personal_data_committed": false,
+    "source_report_retention_required": true,
+    "underlying_evidence_retention_required": true,
+    "thread_deletion_authorises_source_destruction": false
+  },
+  "controlling_findings": {
+    "strict_statutory_per_status": "NOT_ESTABLISHED_ON_PRESENT_PUBLIC_RECORD",
+    "possible_de_facto_administration": "OPEN_INQUIRY_REQUIRING_STABLE_AUTONOMOUS_GENERAL_MANAGEMENT_EVIDENCE",
+    "communero_status_alone": "INSUFFICIENT",
+    "creditor_or_bidder_status_alone": "INSUFFICIENT",
+    "practical_control": "RELEVANT_EVIDENCE_NOT_AUTOMATIC_CORPORATE_MANAGEMENT",
+    "accumulated_role_conflict": "MATERIALLY_RELEVANT_INDEPENDENT_OF_STRICT_PER",
+    "community_cexp_lpb_matkator_third_party_separation": "REQUIRED",
+    "2017_composition_proposal": "FORMALLY_FILED",
+    "full_payment_objective": "SUPPORTED_BY_CONTEMPORARY_RECORD",
+    "varia_and_ben_oldman": "SERIOUS_BUT_CONDITIONAL",
+    "final_unconditional_executability": "NOT_PROVED",
+    "june_2018_control_change": "PROBABLE_MATERIAL_CONTRIBUTOR_NOT_PROVED_SOLE_CAUSE",
+    "january_2019_article_176_application": "COMPLETE_DRAFT_EXISTED_EFFECTIVE_FILING_UNPROVED",
+    "january_february_2022_sequence": "CRITICAL_LEAD_PENDING_COMPLETE_PRIMARY_PACKET",
+    "criminal_coordination": "NOT_ESTABLISHED_BY_THIS_MODULE",
+    "deliberate_ac_obstruction": "NOT_ESTABLISHED",
+    "judicial_bias_collusion_personal_interest_prevarication": "NOT_ESTABLISHED"
+  },
+  "publication_controls": [
+    "Do not state that an actor was a PER or de facto administrator until the historical legal and evidential test is closed.",
+    "Use possible de facto administrator only as an open legal inquiry.",
+    "Do not transfer one actor's conduct or knowledge to another without an attribution bridge.",
+    "Do not merge the owners' Community, CEXP, communities of property, LPB, Matkator or third-party assets.",
+    "Do not infer ownership from possession or practical control.",
+    "Do not infer causation, knowledge or wrongdoing from chronology alone.",
+    "Preserve the strongest legitimate contrary explanation, correction mechanism and right of reply.",
+    "Do not claim independent live HTTP verification solely from a source merge."
+  ],
+  "unresolved_work": [
+    "Full FMMM/Cogolludo/JDAM/LPAM saturation scan.",
+    "Historical Article 93/PER opinion applying the law date by date.",
+    "Complete January-February 2022 primary LexNET packet and institutional response chain.",
+    "Actor-specific evidence of stable management of LPB.",
+    "Native Community minutes, notices, titles, coefficients, proxies, votes, bank records, invoices and authorisation chains from 2011 onward.",
+    "Official payoff and complete estate-claim schedule.",
+    "Varia and Ben Oldman committee, closing and proof-of-funds records.",
+    "Property-by-property separation of LPB, Matkator and third-party assets.",
+    "Any express insolvency-administrator or judicial conflict/PER analysis.",
+    "Final merged privileged report, if still required.",
+    "Independent browser-level live read-back of the new public routes if not separately recorded."
+  ],
+  "recovery_sequence": [
+    "Read PR #672 and merge commit 4549f33adf4c030e10ac39f9a0be9ffb0ee7ba78.",
+    "Read PRIVATE_ACTORS_PER_COMMUNERO_DE_FACTO_ADMINISTRATION_SYNTHESIS_20AUG2026.md.",
+    "Read the new Spanish and English public pages.",
+    "Read the preserved detailed Community/AC pages.",
+    "Read sitemap-ac-community-de-facto-administration.xml.",
+    "Read the Markdown deletion audit and this JSON companion."
+  ],
+  "deletion_conditions": [
+    "The user instruction is durably recorded.",
+    "The exact original implementation PR and merge SHA are recorded.",
+    "The durable files and routes are identified.",
+    "The controlling findings and prohibited overstatements are recorded.",
+    "The confidential-source boundary is explicit.",
+    "Outstanding work is explicit.",
+    "The future recovery path is explicit.",
+    "This Markdown and JSON audit pair are merged to main and read back from main.",
+    "Underlying confidential sources and evidence remain securely retained outside the conversation."
+  ],
+  "thread_only_operational_dependency_remaining": false,
+  "final_declaration": "Once this audit pair is present on main and read back from main, the conversation is safe to delete for repository and project-continuity purposes, but not as authority to destroy underlying sources or evidence."
+}

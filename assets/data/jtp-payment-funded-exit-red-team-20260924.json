@@ -1,0 +1,121 @@
+{
+  "schema": "por-derecho.jtp-funded-exit-hostile-reader-red-team.v1",
+  "control_id": "PD-JTP-REDTEAM-20260924-01",
+  "control_date": "2026-09-24",
+  "status": "SIMULATED_ADVERSARIAL_REVIEW_NOT_ACTUAL_PARTY_STATEMENTS",
+  "criminal_first_rule": "element-first, not offence-label-first",
+  "panel": [
+    {
+      "reader": "CAM litigation counsel",
+      "attack": "No direct CAM→JTP transfer; 2018 and 2020 are separate.",
+      "answer": "Concede no direct transfer; test estate source and each bridge.",
+      "open": [
+        "bank trace",
+        "knowledge bridge",
+        "causal bridge"
+      ]
+    },
+    {
+      "reader": "AC counsel",
+      "attack": "Estate payment to debtor counsel can be lawful.",
+      "answer": "Concede abstract legality; test specific authority, source, disclosure, independence, condition and effect.",
+      "open": [
+        "invoice",
+        "authority",
+        "ledger",
+        "communications"
+      ]
+    },
+    {
+      "reader": "JTP defence",
+      "attack": "Client replaced JTP; protective acts exist; 28 May can be read as acceptance.",
+      "answer": "Preserve client substitution and protective acts; exclude 28 May as consent; foreground 12 June final rejection.",
+      "open": [
+        "full communication chain",
+        "act-by-act mandate"
+      ]
+    },
+    {
+      "reader": "Sceptical prosecutor",
+      "attack": "Where are act, knowledge, purpose, effect and benefit?",
+      "answer": "Put proof elements ahead of offence labels and publish falsification/production plan.",
+      "open": [
+        "actor-specific mens rea",
+        "causal effect"
+      ]
+    },
+    {
+      "reader": "Forensic accountant",
+      "attack": "€400,000→€26,750 trace is incomplete.",
+      "answer": "Treat as P0 gap and do not state a completed trace.",
+      "open": [
+        "purchaser debit",
+        "LPB credit",
+        "estate ledger",
+        "recipient credit"
+      ]
+    },
+    {
+      "reader": "Publication counsel",
+      "attack": "Leading/associative narrative.",
+      "answer": "Attribution, counterevidence, non-transfer rules, falsification and presumption of innocence.",
+      "open": [
+        "source-specific corrections"
+      ]
+    }
+  ],
+  "reading_order": [
+    "economic object",
+    "7 June pivot",
+    "control of value/information",
+    "professional/economic leverage",
+    "criminal proof elements",
+    "civil/mercantile/concursal predicates/remedies"
+  ],
+  "mandatory_concessions": [
+    "no proved direct CAM→JTP transfer",
+    "incomplete €400,000→€26,750 bank trace",
+    "estate counsel payment can be lawful in principle",
+    "client substitution is formal immediate transition act",
+    "JTP protective work preserved",
+    "chronology is not causation",
+    "ONA closing not guaranteed",
+    "later lawful outcomes preserved as contrary evidence",
+    "28-May reply not consent/waiver/ratification/validation",
+    "12-Jun final fee proposal expressly rejected",
+    "no adjudicated bribery/collusion/recipient-knowledge/common-plan finding"
+  ],
+  "a_plus_target_gates": [
+    "criminal spine before civil/concursal",
+    "hostile defence adjacent",
+    "public falsification tests",
+    "public P0 production",
+    "reciprocal ONA/7June/counsel/payment links",
+    "capacity/proceeding non-fusion",
+    "exact-head validation",
+    "separate merge/deploy/live-readback verification",
+    "deep-source audit and dated negative-search result public"
+  ],
+  "deep_source_sweep": {
+    "control_id": "PD-JTP-SOURCE-SWEEP-20260924-01",
+    "human_control": "archive/JTP_ONA_DEEP_SOURCE_SWEEP_24SEP2026.md",
+    "machine_control": "assets/data/jtp-ona-deep-source-sweep-20260924.json",
+    "strengthened": [
+      "JTP 4-Jan-2019 draft expressly used criminal/prosecutorial language and requested Ministerio Fiscal referral",
+      "May–June 2018 correspondence places JTP inside the ONA/Stoneweg/Cuatrecasas funded-exit/protective context",
+      "1-Jun-2020 successor counsel treated JTP as no longer LPB counsel and disputed fee entitlement/double-payment position",
+      "12-Jun-2020 final proposal rejection remains direct documentary evidence",
+      "AC 21-Jul-2021 report directly records €26,750 Jul-20 counsel payment and separately the €400,000 CAM sale component"
+    ],
+    "still_open": [
+      "JTP invoice",
+      "executed payment authority",
+      "estate debit",
+      "recipient credit",
+      "complete estate ledger sufficient to prove source",
+      "bank-complete €400,000→€26,750 trace",
+      "dated earlier assurance/arrangement proving prospective inducement in January 2019"
+    ],
+    "negative_search_rule": "Non-retrieval in the bounded connected-source sweep is not proof of non-existence."
+  }
+}

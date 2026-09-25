@@ -1,0 +1,307 @@
+{
+  "schema_version": "1.0.4",
+  "control_id": "PD-THREE-TRACK-DIGITISATION-20260904-01",
+  "created": "2026-09-04",
+  "base_main_sha": "b8ded173b06f17aaf91569f051dd11e621b139ae",
+  "status": "PUBLIC_SAFE_FULL_TEXT_DIGEST_WITH_PRIVATE_ORIGINALS_EXCLUDED",
+  "purpose": "Provide a source-controlled, page-aware reader digest for the private-actor complaint lane, DP 1901/2026, DP 1956/2026 and the daily-reference-24 judicial filing record while preserving procedural-identity uncertainty and actor-specific attribution.",
+  "continuity_governance": {
+    "control_id": "PD-C212224-001",
+    "canonical_state": "assets/data/control-21-22-24-continuity-v1.json",
+    "protocol": ".github/governance/CONTROL_21_22_24_CONTINUITY_INTERLINK_PROTOCOL_04SEP2026.md",
+    "binding_rule": "This reader-layer dataset is subordinate to the canonical continuity graph for procedural identity and bridge status. A reader-facing label or source filename cannot upgrade an unverified bridge.",
+    "track_bindings": {
+      "DP1901-C21": {
+        "control": "CONTROL-21",
+        "proceeding": "GC-CRI-008",
+        "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
+        "do_not_infer": "The 25-Jun private-actor complaint is documented and its 9-Jul amplification was physically tendered under DP1901/Plaza6. The 25-Jun Ref21 filing and 9-Jul mapping contemporaneously corroborate Gil's statement that Ref21 became DP1901. Do not state that the court's electronic initiating/reparto event or later Ref24 association mechanism is independently certified; those authority-controlled records remain required.",
+        "identity_collision_status": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING"
+      },
+      "DP1956-C22": {
+        "control": "CONTROL-22",
+        "intake_object": "GC-REF-029",
+        "proceeding": "GC-CRI-009",
+        "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
+        "do_not_infer": "Do not state that daily reference 22 became DP 1956/2026 without a source-certified intake/reparto bridge."
+      },
+      "C24-JUDGE": {
+        "control": "CONTROL-24",
+        "canonical_record": "GC-HC-010",
+        "formal_destination_status": "UNKNOWN",
+        "bridge_status": "UNVERIFIED_CANDIDATE_BRIDGE",
+        "do_not_infer": "Daily reference 24 is not itself a NIG or DP. Its separate 18-Jun judge filing and 25-Jun 13-page dependent supplement are documented, but the 14-Sep DP1901 order does not prove that daily reference 24 generated, was joined to or was reassigned into DP1901.",
+        "identity_collision_status": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING"
+      }
+    },
+    "same_date_safeguard": {
+      "control_21_object": "CONTROL-21-OBJECT-20260625",
+      "control_24_amplification": "CONTROL-24-AMPLIACION-20260625",
+      "bridge_status": "NO_BRIDGE",
+      "rule": "The two potentially distinct 25 June 2026 document objects remain separate unless a primary source proves identity."
+    },
+    "supervening_event_20260918": {
+      "order_date": "2026-09-14",
+      "dp": "DP 1901/2026",
+      "nig": "3501643220260016977",
+      "iup": "LI2026017152",
+      "fiscal_report_date": "2026-07-29",
+      "fiscal_requested_outcome": "archive",
+      "status": "REF21_TO_DP1901_CHRONOLOGY_CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_BRIDGE_OPEN",
+      "rule": "The 25-Jun Ref21 filing, same-day procuradora email, 9-Jul private-actor tender under DP1901/Plaza6 and 9-Jul operational mapping contemporaneously corroborate Gil's Ref21 → DP1901 chronology. The formal Control21→DP1901 bridge remains UNVERIFIED_CANDIDATE_BRIDGE until the court's electronic initiating/reparto event is certified; the later Ref24 association mechanism also remains open.",
+      "source_closure": "evidence/judicial/dp-1901-2026/PROCEDURAL_IDENTITY_SOURCE_CLOSURE_18SEP2026.md"
+    }
+  },
+  "global_boundary": [
+    "The three tracks are evidentially interconnected but procedurally separate.",
+    "Shared evidence does not transfer knowledge, intent, causation, guilt or liability.",
+    "A complaint proves that an allegation was made; it does not prove the allegation.",
+    "Private originals, signatures, personal identifiers, private addresses, emails, verification codes and privileged material are not published here.",
+    "Public digitisation means complete text-layer processing, structured indexing and public-safe presentation; it does not mean publication of the raw private pleading."
+  ],
+  "tracks": [
+    {
+      "track_id": "DP1901-C21",
+      "procedure": "DP 1901/2026",
+      "layer": "Autonomous private-actor complaint filed under Ref.21 on 25-Jun and contemporaneously mapped to DP1901; official court-system creation/reparto audit remains open",
+      "base_filing": {
+        "reported_filing_date": "2026-06-25",
+        "source_filename": "DENUNCIA_PENAL_DOCUMENTADA_FINAL_25JUN2026.pdf",
+        "pages": 86,
+        "sha256": "3f4bd2bbbc963605e4cc94bc73d116157e2bf4a2266e2285b013f38de9e90736",
+        "text_layer_processed": "86/86 pages",
+        "source_role": "operative final complaint source; same-date stamped daily-reference-21 cover proves presentation of an autonomous five-private-actor complaint, while exact byte-for-byte filed-payload identity remains to be certified",
+        "stamped_cover_sha256": "8ee03884d32b6b3d9e8377a646eca3d79a7ae199aebc8cc378a9180ba2aef846",
+        "public_raw_pdf": false,
+        "repository_digitisation_status": "FULL_PAGE_AWARE_DIGITISATION_IN_GIT"
+      },
+      "expansion": {
+        "reported_filing_date": "2026-07-09",
+        "source_filename": "CONTROL21_Ampliacion_JDAM_LPAM_AcostaMatos_09JUL2026_FINAL_FIRMA.pdf",
+        "pages": 19,
+        "sha256": "0d42dcbe30679331c557f4c3750e478e592a9a449c6b5ecb84e32f6fa56ad16f",
+        "text_layer_processed": "19/19 pages",
+        "source_role": "final signed 9-Jul amplification source; separate stamped cover proves private-actor amplification/documentary material was physically tendered under DP1901/Plaza6, while electronic incorporation and exact Fiscal corpus remain open",
+        "stamped_dp1901_tender_sha256": "dfad6f405b7a2ec047a98a7183a9cbfd0698427d3925d02b2a50b4de76de8f71",
+        "public_raw_pdf": false,
+        "repository_digitisation_status": "FULL_PAGE_AWARE_DIGITISATION_IN_GIT"
+      },
+      "official_status_control": {
+        "nig": "3501643220260016977",
+        "court_position": "Plaza n.º 6, Sección de Instrucción, Tribunal de Instancia de Las Palmas de Gran Canaria",
+        "latest_primary_event_on_public_page": "Auto dated 2026-09-14: proceeding described as alleged prevarication; records Ministerio Fiscal report dated 2026-07-29 seeking archive; orders sobreseimiento libre/archive",
+        "boundary": "The 25-Jun stamped Ref21 filing, same-day 11:23 email to Procuradora María Díaz Vecino, 9-Jul correspondence mapping 1901 to CAM/private Community actors and the 9-Jul stamped private-actor tender under DP1901 contemporaneously corroborate Gil's Ref21 → DP1901 chronology. The 12-Jul providencia and 14-Sep order prove later judicial treatment involving DIP2/prevaricación. The official electronic creation/reparto event and the later Ref24 association mechanism remain authority-production gaps; the signed Fiscal report also remains open.",
+        "routing_identity_status": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED_OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING"
+      },
+      "base_sections": [
+        "I. Personas denunciadas y entidades relacionadas",
+        "II. Naturaleza, objeto y disciplina probatoria de la denuncia",
+        "III. Competencia territorial, carácter autónomo y separación de procedimientos",
+        "IV. Cuestiones matrices que debe resolver la investigación",
+        "V. Relación circunstanciada de los hechos",
+        "VI. Individualización provisional de conductas y responsabilidades",
+        "VII. Daños, beneficios y nexo causal",
+        "VIII. Calificación jurídica provisional",
+        "IX. Prescripción y delimitación temporal",
+        "X. Disponibilidad asimétrica de la prueba y método de investigación",
+        "XI. Diligencias de investigación solicitadas",
+        "XII. Protección del denunciante y trazabilidad",
+        "XIII. Suplico al Juzgado"
+      ],
+      "expansion_sections": [
+        "I. Objeto exacto y regla de lectura no fragmentada",
+        "II. Teoría autoridad aparente → decisión → valor",
+        "III. Control de prudencia y fuentes nativas necesarias",
+        "IV. Comunidad como maquinaria documental previa y posible adopción posterior",
+        "V. JDAM: conocimiento, límite de titularidad y contradicción funcional",
+        "VI. LPAM: representación, autoridad, actas, acceso y beneficio empresarial",
+        "VII. RICPE 2020 y webinar de 11 noviembre 2020",
+        "VIII. RICPE, HNT/MYND y financiación/incentivos a reconciliar",
+        "IX. Google Business, cuentas y clientela",
+        "X. Comunidad SunRockers y valor de plataforma",
+        "XI. Ecosistema operativo, comunitario, comercial, cultural y artístico",
+        "XII. Solos/MCT/HVTT, Club Sei, Meeting Point/FTI, Loveholidays y comercialización",
+        "XIII. Canarias7 / Fiscalía: preservación y transparencia",
+        "XIV. PwC, San Telmo/RSM y custodios profesionales",
+        "XV. Desplazamiento patrimonial de plataforma",
+        "XVI. Tipicidad provisional",
+        "XVII. Diligencias por prioridad",
+        "XVIII. Matriz de anexos y control de no omisión"
+      ],
+      "public_route_es": "/por-derecho/es/dp-1901-2026/",
+      "public_route_en": "/por-derecho/en/dp-1901-2026/",
+      "immediate_amplification": {
+        "reported_filing_date": "2026-06-26",
+        "source_filename": "AMPLIACION_DENUNCIA_PENAL_ACOSTA_MATOS_CONTROL_21_FINAL_26JUN2026-1.pdf",
+        "pages": 26,
+        "sha256": "a7f057fd99d0bdf1a891cf4610f69ed19788d2e40f9f23a6ff66fc6255d97846",
+        "text_layer_processed": "26/26 pages",
+        "source_role": "controlled 26-Jun working source; source preserved but filing/ingestion is not proved and must not be described as filed absent primary presentation evidence",
+        "public_raw_pdf": false,
+        "repository_digitisation_status": "FULL_PAGE_AWARE_DIGITISATION_IN_GIT"
+      }
+    },
+    {
+      "track_id": "DP1956-C22",
+      "procedure": "DP 1956/2026",
+      "layer": "insolvency administrator / Control 22",
+      "base_filing": {
+        "reported_filing_date": "2026-06-18",
+        "source_filename": "01_Denuncia_Penal_AC_LPB_Sun_Park_AC-FINAL_17JUN2026.pdf",
+        "pages": 55,
+        "sha256": "b11f10e7410f922a8cd1796ea462ea7ea20d555b7308e4481f2cb23732b1002b",
+        "text_layer_processed": "55/55 pages",
+        "source_role": "operative Control 22 complaint candidate / reported filed copy",
+        "public_raw_pdf": false,
+        "repository_digitisation_status": "FULL_PAGE_AWARE_DIGITISATION_IN_GIT"
+      },
+      "official_status_control": {
+        "nig": "3501643220260016826",
+        "iup": "LI2026016921",
+        "court_position": "Plaza n.º 1, Sección de Instrucción, Tribunal de Instancia de Las Palmas de Gran Canaria",
+        "status": "sobreseimiento provisional communicated 2026-07-21",
+        "boundary": "Do not describe as acquittal, sobreseimiento libre or final merits exoneration."
+      },
+      "sections": [
+        "I. Objeto penal limitado y razón de la investigación",
+        "II. Continuidad de las vías de recuperación y carácter aún discutido",
+        "III. Identificación societaria y evitación de confusión denominativa",
+        "IV. Relación con la solicitud de separación del Administrador Concursal",
+        "V. Posiciones procesales actuales en los recursos de separación",
+        "VI. Identificación de la masa activa y deber reforzado del Administrador Concursal",
+        "VII. Antecedentes previos y ruptura de unidad",
+        "VIII. Conocimiento temprano: comunicación fehaciente de julio 2016",
+        "IX. Grabación de junio 2016: Comunidad y deuda controvertidas",
+        "X. CAM/Promontoria: acreedor con interés económico directo",
+        "XI. Primeros meses de 2018: salida legal del concurso",
+        "XII. Denuncia de abril 2018 contra CAM/JDAM",
+        "XIII. Conversación telefónica certificada de marzo 2018",
+        "XIV. Comunicación del AC a la Comunidad y acta de 18 mayo 2018",
+        "XV. 7 junio 2018: desplazamiento del control material",
+        "XVI. Hotel operativo: turistas, cursos y explotación",
+        "XVII. Supuesta autorización o validación del AC respecto de control/acceso",
+        "XVIII. Junio 2018: vía financiada y respaldada",
+        "XIX. Septiembre 2018: solicitud de cifra operativa para conclusión",
+        "XX. Denuncia de 12 septiembre 2018 contra AC y CAM"
+      ],
+      "public_route_es": "/por-derecho/es/dp-1956-2026/",
+      "public_route_en": "/por-derecho/en/dp-1956-2026/"
+    },
+    {
+      "track_id": "C24-JUDGE",
+      "procedure": "daily reference no. 24 / formal allocation unknown",
+      "layer": "judicial decisions and supervision — separate 18-Jun complaint + dependent 25-Jun supplement",
+      "base_filing": {
+        "reported_filing_date": "2026-06-18",
+        "source_filename": "02_Paquete_Unificado_Para_Presentacion_JUEZ_ FINAL 17JUNE2026 (signed).pdf",
+        "pages": 79,
+        "sha256": "1cae1912a20202c5f5779db07e77c7e1d3f0ae514676e07d3ace4dd56f6f76a0",
+        "source_role": "signed presentation package with principal complaint and selected annexes",
+        "legal_nature": "denuncia / notitia criminis; not formal querella",
+        "public_raw_pdf": false,
+        "principal_pleading_pages": 27,
+        "presentation_front_matter_pages": 4,
+        "principal_document_bundle_pages": 31,
+        "text_layer_processed": "79/79 pages",
+        "repository_digitisation_status": "FULL_PAGE_AWARE_DIGITISATION_IN_GIT",
+        "public_principal_transcription": "evidence/judicial-governance/decanato-reference-24/full-text/denuncia-magistrado-18jun2026-public-transcription.md"
+      },
+      "supplement": {
+        "reported_filing_date": "2026-06-25",
+        "source_filename": "APORTACION_COMPLEMENTARIA_CONTROL_24_AUTOSUFICIENTE_SIN_ANEXOS_25JUN2026.pdf",
+        "pages": 13,
+        "sha256": "04051e33000f830c32ba06e31996ba4e6812c7d54c199ee03696b85e68589679",
+        "stamped_cover_sha256": "724caf532c25159ead6ae4cfd88c21acbc2d1f202e2bc08cfd713ad07c0376f1",
+        "relationship": "dependent supplement expressly requested to be joined to the separate 18-Jun daily-reference-24 judge complaint; daily reference is not a proceeding number",
+        "text_layer_processed": "13/13 pages",
+        "repository_digitisation_status": "FULL_PAGE_AWARE_DIGITISATION_IN_GIT",
+        "public_transcription_with_stamped_cover": "evidence/judicial-governance/decanato-reference-24/full-text/ampliacion-denuncia-magistrado-25jun2026-public-transcription.md"
+      },
+      "status_control": {
+        "decanato_daily_locator": "24",
+        "official_case_number": null,
+        "nig": null,
+        "assigned_court": null,
+        "current_status": "FILED/PRESENTED — FORMAL ALLOCATION AND CURRENT STATUS NOT YET PRIMARY-VERIFIED",
+        "cgpj_relation": "reported to CGPJ within the 169/2026 appeal record; remains a separate institutional route",
+        "dp1901_collision": "Ref24 remains a distinct judge-related intake record. Ref21 → DP1901 is contemporaneously corroborated; the later mechanism associating Ref24 material with DP1901 is not produced in the official event history.",
+        "supervening_status_20260918": "REF21_TO_DP1901_CONTEMPORANEOUSLY_CORROBORATED — OFFICIAL_REPARTO_AND_REF24_ASSOCIATION_HISTORY_OUTSTANDING"
+      },
+      "principal_modules": [
+        "Funded exit and judicial knowledge",
+        "Recognised credit, threshold and res judicata",
+        "OB REM transaction and non-validation",
+        "Bidding, effective competition and adjudication",
+        "Identity of creditor, enforcing party, bidder, adjudicatee and registered owner"
+      ],
+      "public_route_es": "/por-derecho/es/control-24-denuncia-juez-concurso-36-2012/",
+      "public_route_en": "/por-derecho/en/control-24-insolvency-judge-complaint-36-2012/"
+    }
+  ],
+  "shared_context": [
+    {
+      "event": "Community authority / debt / voting architecture",
+      "dp1901": "alleged creation/use by private actors",
+      "dp1956": "knowledge, verification, reliance and estate-duty questions attributed to the Insolvency Administrator",
+      "control24": "judicial knowledge, supervision and decision-response questions",
+      "boundary": "same documents; different actor-specific legal questions"
+    },
+    {
+      "event": "7 June 2018 material control/access change",
+      "dp1901": "private-actor conduct and control",
+      "dp1956": "what the Insolvency Administrator knew, authorised, protected, reported or failed to correct",
+      "control24": "what reached the court and what protective or later decisions followed",
+      "boundary": "no automatic transfer of the physical acts to AC or judge"
+    },
+    {
+      "event": "2018 funded exit",
+      "dp1901": "knowledge, motive, interference and beneficiary questions concerning private actors",
+      "dp1956": "estate-preservation, payoff, facilitation and accounting duties",
+      "control24": "judicial knowledge, quantified conditions and decision sequence",
+      "boundary": "existence of a financing structure does not prove entitlement to approval or criminal obstruction"
+    },
+    {
+      "event": "28 November 2018 OB REM / €400,000 transaction and 24 October 2019 non-validation",
+      "dp1901": "private participation, benefit and downstream use",
+      "dp1956": "AC authority, safeguarding, accounting, restoration and reporting",
+      "control24": "judicial non-validation, implementation and later supervisory consistency",
+      "boundary": "each transition requires its own source; no inference from later title alone"
+    },
+    {
+      "event": "Credit / threshold / 2021 bidding / 2022 adjudication",
+      "dp1901": "private offer, information, control and beneficiary questions",
+      "dp1956": "calculation, reporting, equal-treatment and implementation questions",
+      "control24": "orders, scope, res judicata, competition and final decision bridge",
+      "boundary": "different figures have different legal/economic functions and must not be collapsed"
+    },
+    {
+      "event": "HNT / MYND / RICPE / later operation",
+      "dp1901": "downstream private control, commercialisation and benefit allegations",
+      "dp1956": "later evidence only where it bears on knowledge, restoration, accounts or continuing consequence",
+      "control24": "later context only; does not prove historical judicial knowledge",
+      "boundary": "later operation or financing does not validate predecessor authority or title"
+    }
+  ],
+  "reader_model": "ACTOR → CAPACITY → EVENT → SOURCE → DECISION/OMISSION → ASSET/RIGHT → CONSEQUENCE → CONTRARY/ALTERNATIVE → OPEN PROOF",
+  "release_scope": "Additive public presentation and structured context only; no court filing, email, authority contact, or publication of raw private evidence is authorised by this record.",
+  "updated": "2026-09-21",
+  "source_corpus_control": {
+    "control_id": "PD-C212224-SOURCE-CORPUS-20260921-01",
+    "path": "data/control-21-22-24-source-corpus-20260921.json",
+    "documents": 6,
+    "source_pages": 278,
+    "status": "FULL_PAGE_AWARE_DIGITISATION_COMPLETE_AND_INTERLINKED"
+  },
+  "dual_version_archive": {
+    "control_date": "2026-09-21",
+    "root": "evidence/judicial/june-2026-three-track/",
+    "frozen_index": "evidence/judicial/june-2026-three-track/FROZEN_INDEX.md",
+    "source_manifest": "evidence/judicial/june-2026-three-track/source-manifest.json",
+    "dynamic": {
+      "REF21": "evidence/judicial/june-2026-three-track/dynamic/ref21-living-dossier.md",
+      "REF22": "evidence/judicial/june-2026-three-track/dynamic/ref22-living-dossier.md",
+      "REF24": "evidence/judicial/june-2026-three-track/dynamic/ref24-living-dossier.md"
+    },
+    "rule": "Frozen source-time text is immutable except privacy/security redaction; dynamic readers may improve and interlink without overwriting frozen wording."
+  }
+}

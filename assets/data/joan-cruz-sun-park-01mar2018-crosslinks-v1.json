@@ -1,0 +1,25 @@
+{
+  "schema": "por-derecho.canonical-crosslinks.v1",
+  "control_date": "2026-09-01",
+  "nodes": {
+    "person": "PD-SP-P-0145",
+    "source": "PD-SP-SRC-0001",
+    "document": "PD-SP-DOC-0005",
+    "event": "PD-SP-EVT-0001",
+    "takeover_es": "/es/toma-control-sun-park-7-junio-2018/",
+    "takeover_en": "/en/sun-park-takeover-7-june-2018/"
+  },
+  "edges": [
+    {"from":"PD-SP-P-0145","to":"PD-SP-EVT-0001","relation":"NAMED_IN_SOURCE_FILENAME_FOR"},
+    {"from":"PD-SP-EVT-0001","to":"PD-SP-P-0145","relation":"SOURCE_FILENAME_NAMES_PERSON"},
+    {"from":"PD-SP-SRC-0001","to":"PD-SP-DOC-0005","relation":"CUSTODIAL_SOURCE_CONTAINS"},
+    {"from":"PD-SP-DOC-0005","to":"PD-SP-SRC-0001","relation":"PRESERVED_BY"},
+    {"from":"PD-SP-DOC-0005","to":"PD-SP-EVT-0001","relation":"DOCUMENTS_EVENT_DATE_BY_FILENAME_AND_CAPTION"},
+    {"from":"PD-SP-EVT-0001","to":"PD-SP-DOC-0005","relation":"HAS_CANONICAL_DOCUMENT"},
+    {"from":"PD-SP-EVT-0001","to":"/es/toma-control-sun-park-7-junio-2018/","relation":"PRECEDES_BY_98_DAYS"},
+    {"from":"/es/toma-control-sun-park-7-junio-2018/","to":"PD-SP-EVT-0001","relation":"HAS_PRIOR_OPERATIONAL_CHRONOLOGY_NODE"},
+    {"from":"PD-SP-EVT-0001","to":"/en/sun-park-takeover-7-june-2018/","relation":"PRECEDES_BY_98_DAYS"},
+    {"from":"/en/sun-park-takeover-7-june-2018/","to":"PD-SP-EVT-0001","relation":"HAS_PRIOR_OPERATIONAL_CHRONOLOGY_NODE"}
+  ],
+  "boundary": "These graph edges express traceability only. They do not transfer allegations or legal responsibility between nodes."
+}

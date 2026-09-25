@@ -1,0 +1,69 @@
+{
+  "schema": "por-derecho.outreach-asset-manifest.v1",
+  "manifest_id": "PD-OUT-AMHP-REMEDIAL-20260902",
+  "control_date": "2026-09-02",
+  "status": "ACTIVE_FOR_PREPARATION_NOT_SEND_AUTHORIZATION",
+  "purpose": "Prevent recurrence of the 1 September 2026 wrong-image attachment by binding the Acosta Matos hotel-platform remedial package to exact registered byte objects and public URLs.",
+  "public_page": "https://sbu001monterecco.github.io/por-derecho/es/acosta-matos-plataforma-hotelera/",
+  "email_attachment": {
+    "required_reference": "PD-DMA-0003-WEB-EMAIL-PNG^",
+    "required_filename": "pd-dma-0003-web-email-es.png",
+    "repository_path": "assets/media/pd-dma-0003-web-email-es.png",
+    "public_url": "https://sbu001monterecco.github.io/por-derecho/assets/media/pd-dma-0003-web-email-es.png",
+    "mime": "image/png",
+    "width_px": 1080,
+    "height_px": 1920,
+    "bytes": 3284092,
+    "sha256": "2677eb53121bb6d6f39d75b3652c30403d0b1980f69ef10cd31bdca372219165"
+  },
+  "linkedin_reference": {
+    "required_reference": "PD-DMA-0003-LINKEDIN-PNG^",
+    "required_filename": "pd-dma-0003-linkedin-es.png",
+    "repository_path": "assets/media/pd-dma-0003-linkedin-es.png",
+    "public_url": "https://sbu001monterecco.github.io/por-derecho/assets/media/pd-dma-0003-linkedin-es.png",
+    "mime": "image/png",
+    "width_px": 1080,
+    "height_px": 1350,
+    "bytes": 2425141,
+    "sha256": "6d86c54ceb5996ec2b72c00ad4d6fb405029843e34e399b929f622bd80d8f6a2"
+  },
+  "superseded_and_forbidden_for_new_outreach": [
+    {
+      "reference": "PD-DMA-0003-PNG^",
+      "filename": "plataforma_hotelera_catalogo_satirico_v1.png",
+      "sha256": "1bd492c1858bc911d14bbd046c5bb501947d4076c91472cdfe3f655927da113b",
+      "reason": "Generic catalogue attached in error on 1 September 2026; it is preserved only as incident history."
+    }
+  ],
+  "required_semantic_markers": [
+    "FRANCISCO DE BORJA RODRÍGUEZ-BATLLORI LAFFITTE",
+    "EDUARDO SÁNCHEZ IGLESIAS",
+    "ENRIQUE GUERRA SUÁREZ",
+    "CARICATURA / REPRESENTACIÓN SATÍRICA",
+    "PREGUNTAS, NO CONCLUSIONES"
+  ],
+  "recipient_classes_for_private_history_resolution": [
+    "PwC",
+    "Grant Thornton / Cuyás",
+    "RSM",
+    "RIC Private Equity / RIC Capital",
+    "Asociación Canaria de Asesores Fiscales",
+    "Canary media and journalists",
+    "Spanish national media and journalists"
+  ],
+  "required_links": [
+    "https://sbu001monterecco.github.io/por-derecho/es/acosta-matos-plataforma-hotelera/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/media/pd-dma-0003-web-email-es.png",
+    "https://sbu001monterecco.github.io/por-derecho/es/ric-private-equity-sun-park/"
+  ],
+  "fail_closed_pre_send_checks": [
+    "Resolve each recipient from the latest relevant Gmail thread and exhaust the person-and-organisation history search.",
+    "Download the live public email attachment URL and compare SHA-256, byte length, MIME and dimensions to this manifest.",
+    "Create or update a Gmail draft only with the required attachment reference; never select by a similar filename.",
+    "Read the draft attachment back from Gmail and compare its bytes or available identity metadata to this manifest.",
+    "Reject any attachment matching a superseded_and_forbidden_for_new_outreach entry.",
+    "Present every exact recipient, action, subject, final Spanish body, attachment, hash and link for fresh final authorization before sending."
+  ],
+  "send_status": "PREPARED_NOT_SENT",
+  "send_authority": "NONE_FROM_THIS_MANIFEST; EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md controls."
+}

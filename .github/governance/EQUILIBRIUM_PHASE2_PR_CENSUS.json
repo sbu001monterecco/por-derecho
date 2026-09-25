@@ -1,0 +1,115 @@
+{
+  "schema": "por-derecho.equilibrium-phase2-pr-census.v1",
+  "control_id": "PD-EQ-PR-CENSUS-20260921-01",
+  "observed_at": "2026-09-21T22:06:15Z",
+  "repository": "sbu001monterecco/por-derecho",
+  "baseline": {
+    "main_sha": "e6447fbe3639ed78263889221affb316c31960f3",
+    "main_tree_sha": "39aa63659fb5f0f633ee8ca808815a09c55c8edc",
+    "main_commit_time": "2026-09-21T22:04:45Z",
+    "pages_run_id": 35660768171,
+    "pages_run_number": 1669,
+    "pages_conclusion": "success",
+    "open_pull_requests_before_this_candidate": 56,
+    "open_pr_verification": "Connected GitHub open-PR search plus individual state readback for all 56 returned pull requests"
+  },
+  "relationship_facts": {
+    "heads_already_ancestors_of_baseline_main": 0,
+    "zero_delta_heads_against_baseline_main": 0,
+    "active_integration_before_this_candidate": 0,
+    "ready_to_integrate_without_reconciliation": 0,
+    "rule": "Non-ancestor or non-zero delta does not prove unique value. It proves only that wholesale merge or unsupported closure is unsafe until current-main semantic reconciliation."
+  },
+  "primary_dispositions": {
+    "ACTIVE_INTEGRATION": [],
+    "READY_TO_INTEGRATE": [],
+    "SUPERSEDED_BY_MAIN": [],
+    "EVIDENCE_BEARING_DO_NOT_CLOSE": [
+      450,
+      478,
+      701,
+      735,
+      737,
+      749,
+      771,
+      1041,
+      1403,
+      1406,
+      1445,
+      1446,
+      1451,
+      1452,
+      1453,
+      1467,
+      1471,
+      1472,
+      1475,
+      1477,
+      1478,
+      1479,
+      1527,
+      1528,
+      1552,
+      1573,
+      1612,
+      1651,
+      1652,
+      1656,
+      1661,
+      1664,
+      1696,
+      1702,
+      1703,
+      1705,
+      1707
+    ],
+    "PUBLIC_RELEASE_SEPARATE": [
+      526,
+      766,
+      1322,
+      1480,
+      1504,
+      1631,
+      1658,
+      1663,
+      1671,
+      1672,
+      1704
+    ],
+    "DELTA_SOURCE_RECONCILE": [
+      527,
+      767,
+      1321,
+      1412,
+      1437,
+      1555
+    ],
+    "PRIVATE_OR_UNSAFE_DO_NOT_PORT": [
+      780,
+      1654
+    ]
+  },
+  "disposition_rules": {
+    "EVIDENCE_BEARING_DO_NOT_CLOSE": "Preserve the branch and PR until its source, correction and unique-delta value are reconciled; do not merge wholesale.",
+    "PUBLIC_RELEASE_SEPARATE": "Requires a fresh current-main release, express publication authority, current evidence/privacy review and exact-head gates; this census grants none of them.",
+    "DELTA_SOURCE_RECONCILE": "Technical or continuity proposal only; extract unique still-correct improvements into a fresh bounded transaction after comparison with current controls.",
+    "PRIVATE_OR_UNSAFE_DO_NOT_PORT": "Outreach-oriented or potentially private-sensitive work; do not replay to another public host or send externally without a separate source/privacy/authority review."
+  },
+  "ambiguity": {
+    "primary_disposition_exceptions": 0,
+    "unique_delta_reviews_open": 56,
+    "meaning": "Every baseline open PR has one primary handling disposition. This is zero primary-routing ambiguity, not a claim that every unique delta has been adjudicated or that any PR is deletion-safe."
+  },
+  "preservation": {
+    "backlog_prs_merged": 0,
+    "backlog_prs_closed": 0,
+    "branches_deleted": 0,
+    "evidence_deleted": 0
+  },
+  "public_surface_boundary": {
+    "public_content_changed_by_this_candidate": false,
+    "ops_snapshot_refresh": "DEFERRED_REQUIRES_SEPARATE_PUBLIC_SURFACE_AUTHORITY",
+    "presidencia_publication": "NOT_STARTED",
+    "filing_or_email": "NONE"
+  }
+}

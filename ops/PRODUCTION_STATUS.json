@@ -1,0 +1,66 @@
+{
+  "schema": "por-derecho.operational-truth.production-status.v2",
+  "record_type": "OBSERVED_GITHUB_PAGES_DEPLOYMENT",
+  "observed_at": "2026-09-19T22:01:42Z",
+  "production_repository": "sbu001monterecco/por-derecho",
+  "production_branch": "main",
+  "public_host": "https://sbu001monterecco.github.io/por-derecho/",
+  "served_sha": "1e96f0d97323ba4c10ad0b7341d28017d6fa26dd",
+  "source_tree_sha": "78384988b8840479dd194ed559e1cc7990a25a3e",
+  "deployment": {
+    "platform": "GitHub Pages",
+    "workflow_name": "pages build and deployment",
+    "workflow_path": "dynamic/pages/pages-build-deployment",
+    "workflow_run_id": 35469702999,
+    "run_number": 1630,
+    "event": "dynamic",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-09-19T21:12:20Z",
+    "completed_at": "2026-09-19T21:13:29Z",
+    "head_sha": "1e96f0d97323ba4c10ad0b7341d28017d6fa26dd"
+  },
+  "verification": {
+    "state": "DEPLOYED_BUILD_SUCCESS",
+    "current_exact_route_content_verification": "NOT_RECORDED_FOR_SERVED_SHA",
+    "latest_live_verified_specialist_release": {
+      "state": "LIVE_VERIFIED",
+      "control_id": "PD-UNITARY-STATE-20260826-01",
+      "source_publication_sha": "77e2ba300af45a953947160af63283a64512e876",
+      "source_tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
+      "verification_head_sha": "77e2ba300af45a953947160af63283a64512e876",
+      "pages_run_id": 32942972472,
+      "pages_run_number": 1128,
+      "workflow_run_id": 32942975508,
+      "workflow_run_number": 4,
+      "job_id": 98097657687,
+      "verified_at": "2026-08-26T07:29:55Z",
+      "verification_scope": [
+        "Spanish and English home, evidence-map, reverse-engineering, criminal-engineering, unitary-record and update routes expose the attributed enterprise model with synchronized legal and evidential limits",
+        "Spanish and English update feeds expose the 26 August 2026 control",
+        "The prosecution and criminal-engineering JavaScript surfaces expose the synchronized allegation and boundary markers",
+        "CURRENT_UNITARY_STATE.json and the 26 August publication manifest parse and expose the promoted control",
+        "The public position addendum and private-analysis prompt routes are readable without publishing Patricia mailbox identifiers, provider IDs, hashes, exact manifest counts or private content"
+      ],
+      "limits": "Publication verification proves only the recorded deployment and public-route markers; it is not proof of the attributed enterprise allegation, any person's guilt, Penal Code articles 570 bis or 570 ter, an original pact, or evidential support from the Phase-A manifest."
+    },
+    "meaning": "GitHub recorded a successful Pages build for the served SHA. This refresh does not claim a new exact route-content readback for that SHA; the separately preserved specialist release remains historical evidence only."
+  },
+  "specialist_state_routing": {
+    "unitary_case_and_evidence_state": "ops/CURRENT_UNITARY_STATE.json",
+    "expected_control_id": "PD-UNITARY-STATE-20260826-01",
+    "expected_status": "LIVE_VERIFIED",
+    "rule": "Deployment metadata does not replace specialist case and evidence state."
+  },
+  "historical_rollback": {
+    "anchor": "ops/LAST_KNOWN_GOOD.json",
+    "release_ledger": "ops/RELEASE_LEDGER.json",
+    "legacy_snapshots": "archive/ops-snapshots/"
+  },
+  "relationship_to_current_state": {
+    "current_repository_truth_is_dynamic": true,
+    "may_lag_main": true,
+    "runtime_generator": "scripts/generate_operational_truth.py",
+    "release_ledger": "ops/RELEASE_LEDGER.json"
+  }
+}

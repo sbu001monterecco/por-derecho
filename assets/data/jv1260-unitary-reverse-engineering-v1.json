@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0",
+  "controlDate": "2026-08-17",
+  "status": "PUBLIC-SAFE-FORENSIC-SEED",
+  "case": {
+    "id": "CASE-JV1260-2011-AP89-2014",
+    "firstInstance": "Juzgado de Primera Instancia nº 4 de Arrecife — JV 1260/2011 — Sentencia 122/2012, 7-May-2012",
+    "appeal": "Audiencia Provincial de Las Palmas, Sección Cuarta — Rollo 793/2012 — Sentencia 89/2014, 13-Jan-2014",
+    "criminalFinding": false,
+    "method": "Separate documented fact, investigative inference, adverse/counter-evidence and unresolved criminal element."
+  },
+  "claimants": [
+    {"name":"Acciones Canarias, S.L.","units":["907","553"],"count":2},
+    {"name":"Muruga, S.L.","units":["504"],"count":1},
+    {"name":"Roque Prieto, S.L.","units":["509"],"count":1},
+    {"name":"Amenem, S.L.","units":["404","405","406","407","408","454","455","456","457","458"],"count":10},
+    {"name":"Amenem, S.L. + Tengolf, S.L.","units":["453"],"count":1},
+    {"name":"Miguel Molina Betancor","units":["911"],"count":1},
+    {"name":"Francisco Luis Molina Molina","units":["503","908"],"count":2}
+  ],
+  "findings": [
+    {
+      "id":"JV1260-F01",
+      "labelEs":"Las cinco sociedades demandantes estaban presentes o representadas en la constitución de CEXP del 29-abr-2008",
+      "labelEn":"All five corporate claimants were present or represented at the 29-Apr-2008 CEXP-formation meeting",
+      "status":"VERIFIED",
+      "limit":"The recovered ACTA does not yet identify the 10.01% non-participating vote unit by unit."
+    },
+    {
+      "id":"JV1260-F02",
+      "labelEs":"Álvaro Campanario integró representación de los futuros demandantes y gobierno comunitario antes de JV1260",
+      "labelEn":"Álvaro Campanario combined future-claimant representation with Community-governance participation before JV1260",
+      "status":"VERIFIED",
+      "detail":"2-Feb-2011 ACTA places him as representative of most of the future claimant perimeter, meeting Secretary and proponent of procedural strategy; he later acted as plaintiffs' lawyer in JV1260 and on appeal.",
+      "criminalInference":"NONE_BY_ROLE_ALONE"
+    },
+    {
+      "id":"JV1260-F03",
+      "labelEs":"El ACTA de 22-jun-2011 documenta un filtro deuda → derecho de voto → decisión",
+      "labelEn":"The 22-Jun-2011 ACTA documents a debt → voting-right → decision filter",
+      "status":"VERIFIED_WITH_LIMITATION",
+      "detail":"LPB's large represented coefficient is outside the separate voting-right list, while a claimant-linked minority perimeter appears inside it.",
+      "limit":"Legal validity of the debts and exclusions requires separate adjudication/reconstruction."
+    },
+    {
+      "id":"JV1260-F04",
+      "labelEs":"La demanda de 23-dic-2011 alegó toma de llaves 'manu militari' desde julio de 2008",
+      "labelEn":"The 23-Dec-2011 claim alleged a 'manu militari' taking of keys from July 2008",
+      "status":"VERIFIED_AS_PLEADING",
+      "investigativeQuestion":"Whether that origin account materially omitted the formal April/May-2008 collective CEXP transition and each claimant unit's participation status."
+    },
+    {
+      "id":"JV1260-F05",
+      "labelEs":"Los propios demandantes ampliaron el 23-feb-2012 contra Monterecco por un cambio de explotación",
+      "labelEn":"The claimants themselves expanded the case against Monterecco on 23-Feb-2012 after an alleged change of operation",
+      "status":"VERIFIED",
+      "classification":"PLAINTIFF_ORIGINATED_PROCEDURAL_EQUATION"
+    },
+    {
+      "id":"JV1260-F06",
+      "labelEs":"El allanamiento de CEXP fue cualificado: no admitió la afirmación de que explotaba los 18 apartamentos",
+      "labelEn":"CEXP's submission was qualified: it did not admit the allegation that it exploited the 18 apartments",
+      "status":"VERIFIED",
+      "counterEvidence":"Contemporaneous incoming-side records indicate return of owners' possession/maintenance keys was itself being considered voluntarily."
+    },
+    {
+      "id":"JV1260-F07",
+      "labelEs":"La primera instancia no encontró prueba suficiente de posesión/explotación de Monterecco",
+      "labelEn":"First instance found insufficient proof of Monterecco possession/operation of the claimant units",
+      "status":"VERIFIED"
+    },
+    {
+      "id":"JV1260-F08",
+      "labelEs":"La AP utilizó un hecho probatorio posterior a la sentencia —la entrega de llaves de 28-may-2012— para inferir posesión de Monterecco",
+      "labelEn":"The AP used a post-judgment evidential event —the 28-May-2012 key delivery— in inferring Monterecco possession",
+      "status":"VERIFIED",
+      "investigativeQuestion":"Contemporaneous sheets call the keys maintenance copies; full notarial act and appellate filing remain P1 before attributing mischaracterisation."
+    },
+    {
+      "id":"JV1260-F09",
+      "labelEs":"En 18-may-2018 la única línea listada con derecho a voto estaba vinculada a AMENEM/Shaila (0,385%), con CAM/Laura y LPB/Borja presentes/representados",
+      "labelEn":"On 18-May-2018 the only line listed with voting rights was AMENEM/Shaila-linked (0.385%), while CAM/Laura and LPB/Borja were present/represented",
+      "status":"VERIFIED",
+      "detail":"The meeting then approved Community security/access control unanimously by those listed with voting rights."
+    },
+    {
+      "id":"JV1260-F10",
+      "labelEs":"Finca 8718, distinta de las 18 litigadas, pasó del perímetro Tengolf/Amenem a CAM por escrituras de 23 y 31-may-2018",
+      "labelEn":"Finca 8718, separate from the 18 litigated units, passed from the Tengolf/Amenem perimeter to CAM by deeds dated 23 and 31-May-2018",
+      "status":"VERIFIED_WITH_LIMITATION",
+      "limit":"No present evidence establishes that the conveyances were consideration for a vote or part of a 2011 agreement."
+    }
+  ],
+  "convergenceChain": [
+    "29-Apr-2008 CEXP formation",
+    "2-Feb-2011 claimant-counsel/governance integration",
+    "22-Jun-2011 debt/voting-right filter",
+    "23-Dec-2011 JV1260 claim",
+    "23-Feb-2012 claimant extension to Monterecco",
+    "qualified CEXP submission",
+    "7-May-2012 first-instance rejection as to Monterecco",
+    "28-May-2012 post-judgment key-delivery event",
+    "13-Jan-2014 AP reversal",
+    "18-May-2018 claimant-linked voting-right line + CAM/AC presence",
+    "23/31-May-2018 Finca 8718 → CAM",
+    "7-Jun-2018 material-control event"
+  ],
+  "actorAccountability": [
+    {"actor":"Álvaro Campanario Hernández","grade":"HIGH_INVESTIGATIVE_RELEVANCE","finding":"Integrated claimant representation, Community governance and litigation role is documented.","notEstablished":"Knowing falsehood, intent, evidence manipulation or criminal agreement."},
+    {"actor":"Manuela Cabrera de la Cruz","grade":"PROCEDURAL_REPRESENTATIVE","finding":"Original/amendment procuradora.","notEstablished":"Substantive deception or knowledge."},
+    {"actor":"Araceli Colina Naranjo","grade":"PROCEDURAL_REPRESENTATIVE","finding":"Appeal procuradora in AP record.","notEstablished":"Role in characterising the 28-May evidence until actual appellate filings are recovered."},
+    {"actor":"Asunción Aizpurúa","grade":"HIGH_GOVERNANCE_KNOWLEDGE_RELEVANCE","finding":"2011 President and central debt/vote/governance actor.","notEstablished":"Criminal intent."},
+    {"actor":"Original claimants","grade":"MIXED_ACTOR_BY_ACTOR_REVIEW","finding":"Real owner grievances coexist with integrated governance/litigation activity and potentially incomplete origin framing.","notEstablished":"Collective criminal culpability."},
+    {"actor":"Construcciones Acosta Matos / Laura Acosta Matos","grade":"LATER_CONVERGENCE_PERIMETER","finding":"Documented presence in 18-May-2018 governance/security node and subsequent title acquisition in Finca 8718.","notEstablished":"Direction or participation in 2011 JV1260 litigation."}
+  ],
+  "criminalProceduralGrade": {
+    "proceduralOverreach":"SUPPORTED",
+    "laterJudicialOverreading":"STRONG_INVESTIGATIVE_HYPOTHESIS",
+    "maquinacionFraudulenta":"OPEN_ELEMENTS_NOT_CLOSED",
+    "estafaProcesal":"OPEN_ELEMENTS_NOT_CLOSED",
+    "rule":"Do not promote to criminal conclusion without actor-specific knowledge, deceptive conduct, causal judicial error and prejudice."
+  },
+  "p1KeystoneEvidence": [
+    "11-Jun-2012 appeal brief (AP f.706-716)",
+    "motion/filing offering the 28-May-2012 notarial act",
+    "complete 28-May-2012 notarial act (AP f.718 et seq.)",
+    "11-Jul-2012 Monterecco opposition (AP f.818-821)",
+    "CEXP qualified submission/allanamiento (f.656-657)",
+    "2008 unit-level accession/non-accession schedule for all 18 units",
+    "identity of the 29-Apr-2008 10.01% non-participating vote",
+    "complete detective report and Community certificate used in original claim",
+    "knowledge evidence concerning maintenance-key character when new evidence was filed",
+    "23/31-May-2018 Finca 8718 deeds, consideration and communications",
+    "systematic original-claimant → CAM title-transfer scan",
+    "communications linking 18-May security vote, acquisitions and 7-Jun event"
+  ]
+}

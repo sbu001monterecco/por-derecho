@@ -1,0 +1,252 @@
+{
+  "schema": "por-derecho.concurso36.continuity-governance.v1",
+  "cutoff": "2026-08-29",
+  "scope": "Concurso Ordinario 36/2012 — pre/post 7 June 2018 notice and protection; definitive texts; convenio-to-liquidation; lender workout continuity; CAM offer/liquidation-plan implementation; counsel instruction-to-filing control",
+  "evidence_rules": [
+    {
+      "id": "ER-01",
+      "es": "Separar aviso real, aviso constructivo/inferido, presentación formal y conocimiento testimonial. No convertir uno en otro.",
+      "en": "Separate actual notice, constructive/inferred notice, formal filing and testimonial knowledge. Do not collapse one into another."
+    },
+    {
+      "id": "ER-02",
+      "es": "La responsabilidad del Administrador Concursal se audita de forma independiente de la actuación de los abogados de LPB/Aweswell. El control pregunta qué verificó, comunicó, protegió, contabilizó e informó el AC una vez que tuvo conocimiento real.",
+      "en": "The Insolvency Administrator is audited independently from LPB/Aweswell counsel. The control asks what the IA verified, communicated, protected, accounted for and reported once he had actual knowledge."
+    },
+    {
+      "id": "ER-03",
+      "es": "Un borrador no es un escrito presentado. Sólo se marca presentado con recibo LexNET, sello, diligencia, traslado u otra vinculación primaria al expediente.",
+      "en": "A draft is not a filed pleading. Filing is recorded only with a LexNET receipt, stamp, procedural order, service record or other primary docket binding."
+    },
+    {
+      "id": "ER-04",
+      "es": "Una orden de exhorto no prueba por sí sola su recepción; y no localizar una respuesta no demuestra que nunca existiera.",
+      "en": "An order directing judicial assistance does not by itself prove receipt; and failure to locate a response does not prove none ever existed."
+    },
+    {
+      "id": "ER-05",
+      "es": "Una modificación de textos definitivos debe decir qué cambió: titularidad, cuantía, clasificación, contingencia u otro extremo. No equiparar sucesión con aumento de cuantía.",
+      "en": "A definitive-text modification must identify what changed: identity, amount, classification, contingency or another term. Do not equate succession with an increase in amount."
+    }
+  ],
+  "headline_findings": [
+    {
+      "id": "HF-01",
+      "status": "supported-with-open-binding-gaps",
+      "es": "La evidencia convergente sostiene una base seria de aviso institucional real —no sólo constructivo— antes y después del 7 de junio de 2018. La cadena incluye la orden de exhorto de Instrucción nº2 al Mercantil nº1; la ampliación contemporánea del 7 de junio; conocimiento documentado del AC el 8 de junio; recepción y lectura por Daniel Irigoyen del dossier antes de reunirse con juez y AC; y su informe contemporáneo de la reunión del 13 de junio. Faltan el recibo/respuesta exactos del exhorto y cerrar el contenido literal comunicado oralmente al juez.",
+      "en": "Convergent evidence supports a serious case of actual institutional notice — not merely constructive notice — before and after 7 June 2018. The chain includes Criminal Court no.2's judicial-assistance order to Mercantile Court no.1; the contemporaneous 7 June complaint expansion; documented IA knowledge on 8 June; Daniel Irigoyen's receipt and reading of the dossier before meeting the judge and IA; and his contemporaneous report of the 13 June meeting. The exact receipt/response to the judicial-assistance request and the literal content orally conveyed to the judge remain to be closed."
+    },
+    {
+      "id": "HF-02",
+      "status": "continuity-correction",
+      "es": "No es correcto afirmar que nunca hubo procedimiento para modificar los textos definitivos. Hubo al menos un Auto de 20 enero 2017 sobre crédito contingente de la Comunidad y un Auto de 8 febrero 2018 sobre sucesión Promontoria→CAM. Este último dice expresamente que la cesión cambia titularidad, no cuantía, y reconoce 857.373,81 € + 8.194.877,88 € de privilegiado especial: 9.052.251,69 €, más costas contingentes sin cuantía propia.",
+      "en": "It is incorrect to say that no definitive-text modification procedure ever existed. At least a 20 January 2017 order on the Community contingent credit and an 8 February 2018 Promontoria→CAM succession order existed. The latter expressly says assignment changes creditor identity, not amount, and recognises €857,373.81 + €8,194,877.88 of special privilege: €9,052,251.69, plus contingent enforcement costs without their own amount."
+    },
+    {
+      "id": "HF-03",
+      "status": "amount-reconciliation-open",
+      "es": "No se ha localizado en el corpus auditado una resolución posterior que modifique formalmente la cuantía fija de 9.052.251,69 € hasta 13.168.082,02 €. La escritura/adjudicación posterior utiliza 13.168.082,02 € como crédito compensado. Deben reconciliarse principal, intereses, costas, resoluciones y base de compensación; esta capa no lo califica por sí sola como incremento ilícito.",
+      "en": "No later order has been located in the audited corpus formally modifying the fixed amount of €9,052,251.69 to €13,168,082.02. The later deed/adjudication uses €13,168,082.02 as the credit set off. Principal, interest, costs, orders and the set-off basis must be reconciled; this layer does not by itself characterise the difference as an unlawful increase."
+    },
+    {
+      "id": "HF-04",
+      "status": "convenio-filed-official-meeting-record-open",
+      "es": "La propuesta de convenio de LPB fue presentada formalmente el 27 abril 2017 con plan de viabilidad y anexos. El 26 junio 2017 el juez mantuvo la Junta del 28 junio y puso a disposición la evaluación del AC. El Auto de 19 diciembre 2017 abrió liquidación porque ninguna propuesta había sido aceptada. Falta el acta oficial del 28 junio; una comunicación contemporánea del cliente afirma que no hubo Junta por falta de quórum.",
+      "en": "LPB's composition proposal was formally filed on 27 April 2017 with a viability plan and annexes. On 26 June 2017 the judge kept the 28 June creditors' meeting in place and made the IA's assessment available. The 19 December 2017 order opened liquidation because no proposal had been accepted. The official 28 June record remains missing; a contemporaneous client communication states that no meeting took place for lack of quorum."
+    }
+  ],
+  "notice_protection_chain": [
+    {
+      "id": "N-01",
+      "date": "2018-04-11/23",
+      "actor": "Arrecife complaint / LPB-Aweswell-Gil perimeter",
+      "status": "primary-complaint-located",
+      "es": "La denuncia previa al 7 de junio describe actuaciones atribuidas al perímetro CAM en Sun Park y las conecta expresamente con Concurso 36/2012, explotación y riesgo patrimonial. El Auto posterior registra recepción por Instrucción nº2 el 23 abril.",
+      "en": "The pre-7 June complaint describes conduct attributed to the CAM perimeter at Sun Park and expressly connects it to Insolvency 36/2012, operations and patrimonial risk. The later order records receipt by Criminal Court no.2 on 23 April.",
+      "closure": "Bind the complete filing receipt and annex set."
+    },
+    {
+      "id": "N-02",
+      "date": "2018-05-02",
+      "actor": "Juzgado de Instrucción nº2 de Arrecife",
+      "status": "signed-order-located",
+      "es": "Auto ordena exhorto al Juzgado Mercantil nº1 en Concurso 36/2012 para remitir declaración de concurso, poderes, informe AC, inventario, lista de acreedores y situación procesal de CAM; además remite al Decanato de Las Palmas una parte de la denuncia referida a conducta presuntamente dirigida al órgano mercantil.",
+      "en": "The order directs judicial assistance to Mercantile Court no.1 in Insolvency 36/2012 seeking the insolvency declaration, powers, IA report, inventory, creditor list and CAM procedural status; it also transfers to the Las Palmas court allocation office a complaint component concerning alleged conduct directed at the Mercantile Court.",
+      "closure": "Locate dispatch, Mercantile receipt, response and returned documents."
+    },
+    {
+      "id": "N-03",
+      "date": "2018-06-07",
+      "actor": "Complainants / Arrecife DP 1132/2018",
+      "status": "contemporaneous-document-located; same-day-receipt-open",
+      "es": "Ampliación fechada 7 junio relata entrada material, fuerza sobre puertas/cerraduras, cambio de cerraduras y control de acceso atribuidos a Laura Acosta Matos, Antonio Cogolludo y otros, y pide medidas cautelares urgentes. Son alegaciones y prueba a verificar, no hechos adjudicados.",
+      "en": "A 7 June complaint expansion describes material entry, force against doors/locks, lock changes and access control attributed to Laura Acosta Matos, Antonio Cogolludo and others, and seeks urgent protective measures. These are allegations and evidence to verify, not adjudicated facts.",
+      "closure": "Locate the same-day LexNET receipt or court stamp."
+    },
+    {
+      "id": "N-04",
+      "date": "2018-06-07",
+      "actor": "LPB/Aweswell → Daniel Irigoyen",
+      "status": "same-day-documentary-notice",
+      "es": "El mismo día se remiten a Irigoyen el Auto de Arrecife, denuncia previa, dossier de toma de posesión y ampliación del 7 junio.",
+      "en": "The same day Irigoyen is sent the Arrecife order, earlier complaint, takeover dossier and 7 June expansion.",
+      "closure": "Preserve full thread and attachment hashes."
+    },
+    {
+      "id": "N-05",
+      "date": "2018-06-08",
+      "actor": "Juan Tomás Parrilla ↔ Administrador Concursal",
+      "status": "actual-IA-notice-supported",
+      "es": "Parrilla registra que habló con el AC sobre la nueva seguridad/presencia CAM y traslada su posición. LPB/Aweswell disputa esa versión, alega entrada en dependencias LPB y cambio de cerraduras, y pide a Parrilla y Cuatrecasas actuación escrita ante el AC.",
+      "en": "Parrilla records speaking with the IA about the new security/CAM presence and relays his position. LPB/Aweswell disputes that account, alleges entry into LPB premises and lock changes, and asks Parrilla and Cuatrecasas for written action with the IA.",
+      "closure": "Locate the IA's contemporaneous note, written response, court report or instruction."
+    },
+    {
+      "id": "N-06",
+      "date": "2018-06-12",
+      "actor": "Daniel Irigoyen",
+      "status": "actual-document-knowledge-supported",
+      "es": "Irigoyen confirma recepción y lectura del dossier y, en su análisis profesional, caracteriza la situación como ocupación ilegal que afecta a la concursada y cuestiona la ausencia de una actuación proactiva del AC. Es valoración contemporánea, no declaración judicial.",
+      "en": "Irigoyen confirms receipt and reading of the dossier and, in his professional analysis, characterises the situation as an unlawful occupation affecting the insolvent company and questions the absence of proactive IA action. This is a contemporaneous assessment, not a judicial finding.",
+      "closure": "Preserve the complete source thread and bundle."
+    },
+    {
+      "id": "N-07",
+      "date": "2018-06-13",
+      "actor": "Cuatrecasas / Juan Tomás Parrilla",
+      "status": "draft-prepared; filing-not-located",
+      "es": "Tras pedirse que el asunto se pusiera ante el Mercantil, Rosa Gual registra que debía comunicarse y que había preparado un escrito en ese sentido; la cadena discute el momento de presentación. No se ha localizado recibo LexNET que vincule ese escrito a Concurso 36/2012.",
+      "en": "After a request that the matter be put before the Mercantile Court, Rosa Gual records that it should be communicated and that she had prepared a pleading to that effect; the thread discusses timing. No LexNET receipt has been located binding that pleading to Insolvency 36/2012.",
+      "closure": "Recover draft/final pleading, filing decision and receipt or evidence it remained unfiled."
+    },
+    {
+      "id": "N-08",
+      "date": "2018-06-13",
+      "actor": "Daniel Irigoyen → Mercantile judge + Insolvency Administrator",
+      "status": "actual-institutional-notice-strongly-supported; exact-oral-content-open",
+      "es": "Irigoyen —abogado y magistrado-juez de carrera en excedencia voluntaria— ya había recibido y leído el dossier. Informa contemporáneamente de reunión esa mañana con el juez y después con el AC; su nota registra conflicto, recuperación de control por LPB, continuidad del negocio, salida financiada, oferta CAM y posibles medidas/protección de la masa. La convergencia sostiene aviso institucional real; no se afirma que cada documento o detalle del 7 junio fuera leído o verbalizado literalmente al juez.",
+      "en": "Irigoyen — a lawyer and career magistrate-judge on voluntary leave — had already received and read the dossier. He contemporaneously reports a meeting that morning with the judge and then the IA; his note records the conflict, LPB recovering control, business continuity, a funded exit, the CAM offer and possible measures/protection of the estate. The convergence supports actual institutional notice; it is not asserted that every document or detail of 7 June was literally read or verbalised to the judge.",
+      "closure": "Obtain Irigoyen witness statement and any calendar, attendance or court note closing exact oral content."
+    },
+    {
+      "id": "N-09",
+      "date": "2018-06-25",
+      "actor": "Arrecife DP 1132/2018 / witnesses / IA-related material",
+      "status": "contemporaneous-counsel-report-located",
+      "es": "Informe de abogado tras declaraciones en Arrecife registra que el juzgado penal había recibido documentación del Mercantil, incluidas resoluciones recientes e informe AC; también refiere que la contraparte aportó un correo del AC al presidente de la Comunidad solicitando seguridad. Gil y Miguel Ángel Barreiro declararon ese día.",
+      "en": "Counsel's report after Arrecife testimony records that the criminal court had received material from the Mercantile Court, including recent orders and an IA report; it also states that the other side produced an IA email to the Community president requesting security. Gil and Miguel Ángel Barreiro gave evidence that day.",
+      "closure": "Recover the court-certified bundle, IA security email and witness records."
+    },
+    {
+      "id": "N-10",
+      "date": "2018-06-26",
+      "actor": "Juzgado Mercantil nº1",
+      "status": "signed-order-located",
+      "es": "Auto suspende la realización de determinadas fincas hipotecadas LPB. No constituye por sí mismo una orden de posesión del hotel entero ni autorización de obras, explotación, ingresos o llaves.",
+      "en": "Order suspends realisation of specified LPB mortgaged units. It does not by itself constitute a whole-hotel possession order or authority for works, operations, income or keys.",
+      "closure": "Bind the filings/evidence leading to the order and distinguish requested protection from protection actually granted."
+    },
+    {
+      "id": "N-11",
+      "date": "2018-07-03",
+      "actor": "Arrecife DP 1132/2018",
+      "status": "three-LexNET-receipts-located",
+      "es": "Se localizan tres justificantes LexNET de ampliación de denuncia, partes 1–3. Prueban presentación formal posterior pero no sustituyen el recibo exacto del documento fechado 7 junio.",
+      "en": "Three LexNET receipts are located for the complaint expansion, parts 1–3. They prove later formal filing but do not replace the exact receipt for the document dated 7 June.",
+      "closure": "Cross-map annex hashes and determine whether the 7 June document was earlier lodged separately."
+    }
+  ],
+  "administrator_concursal_lane": {
+    "legal_baseline_2018": [
+      "Ley Concursal 22/2003 art. 35 — diligencia del ordenado administrador y representante leal",
+      "Ley Concursal 22/2003 art. 36 — responsabilidad por daños a la masa por actos u omisiones contrarios a la ley o realizados sin la debida diligencia",
+      "Ley Concursal 22/2003 art. 43 — conservación y administración de la masa activa en interés del concurso; auxilio judicial",
+      "Ley Concursal 22/2003 art. 152 — informes periódicos de liquidación al juez"
+    ],
+    "safe_position_es": "La auditoría no acepta que la única carga de informar recayera en los abogados de LPB/Aweswell. Con conocimiento real del AC sobre una incidencia potencialmente relevante para acceso, posesión, explotación, frutos o valor de activos LPB, debe reconstruirse qué verificó, qué comunicó al juez, qué protección pidió o descartó, cómo lo reflejó en sus informes y cómo separó LPB de Comunidad, Matkator y terceros. Una infracción o responsabilidad personal exige análisis jurídico y causal separado.",
+    "safe_position_en": "The audit does not accept that the entire burden of communication rested on LPB/Aweswell counsel. Once the IA had actual knowledge of an event potentially relevant to access, possession, operation, fruits or value of LPB assets, the record must reconstruct what he verified, communicated to the judge, sought or rejected by way of protection, reported, and how he separated LPB from the Community, Matkator and third parties. Any personal breach or liability requires separate legal and causal analysis."
+  },
+  "definitive_texts_lane": [
+    {"date":"2016-06-06","status":"baseline","event":"Definitive-text baseline located; bind complete creditor list and inventory as master denominator."},
+    {"date":"2017-01-20","status":"formal-modification","event":"Court adds Community Sun Park contingent ordinary pre-insolvency dues without own amount."},
+    {"date":"2018-02-08","status":"formal-modification-title-not-amount","event":"Court recognises Promontoria→CAM creditor succession; assignment changes identity only, not amount; special privilege fixed at €9,052,251.69 plus contingent costs without own amount."},
+    {"date":"2018-06 onward","status":"reconciliation-open","event":"Later interest/liquidation treatment and final set-off reach a materially larger figure. Locate every order/calculation connecting €9,052,251.69 to €13,168,082.02 and determine whether any later definitive-text modification occurred."}
+  ],
+  "convenio_liquidation_lane": [
+    {"date":"2017-04-27","status":"formal-LexNET-filing","es":"LPB presenta propuesta de convenio con plan de viabilidad y anexos.","en":"LPB files a composition proposal with viability plan and annexes."},
+    {"date":"2017-06-26","status":"court-order","es":"El juez rechaza suspender la Junta del 28 junio y pone a disposición la evaluación del AC; considera que los litigios señalados no alteran los quórums necesarios.","en":"The judge refuses to suspend the 28 June creditors' meeting and makes the IA assessment available; he considers the identified disputes do not affect the required quorums."},
+    {"date":"2017-06-28","status":"official-minute-not-located","es":"Resultado oficial pendiente. Comunicación contemporánea del cliente afirma que no hubo Junta por falta de quórum.","en":"Official outcome remains open. A contemporaneous client communication states no meeting took place for lack of quorum."},
+    {"date":"2017-12-19","status":"signed-liquidation-order","es":"Auto abre liquidación porque ninguna propuesta de convenio fue aceptada.","en":"Order opens liquidation because no composition proposal was accepted."}
+  ],
+  "creditor_workout_continuity": [
+    {
+      "period":"2012–2013","counterparty":"Bankia / BFA perimeter","status":"dense-documentary-workout-chain",
+      "anchors":["February–May 2012 viability/refinancing work with Garrigues and Bankia","30 March 2012 viability plan/refinancing proposal transmitted to Bankia","April restructuring response cycle and May meeting","post-concurso contacts about cash/debt resolution"],
+      "audit":"Bind exact workout terms, authority, responses and what was reported to court/IA."
+    },
+    {
+      "period":"2014","counterparty":"SAREB","status":"dense-documentary-workout-chain",
+      "anchors":["direct LPB/Aweswell–Cuatrecasas–SAREB contacts","meeting and valuation work","90-day standstill drafting/negotiation","refinancing framework and mandate-of-sale drafts","April 2014 correspondence describing executed/working framework"],
+      "audit":"Bind executed versions, approvals, conditions and why the workout did not convert into concluded rescue."
+    },
+    {
+      "period":"2015–2017","counterparty":"Cerberus / Promontoria Holding 122 / Haya / Bankia external servicing","status":"documented-negotiation-and-succession-chain",
+      "anchors":["2015 Cerberus refinancing/bridge-finance workstream","12 May 2017 offer package to Haya concerning LPB credits and PH122/Cerberus","Haya identifies a Cerberus interlocutor","June 2017 creditor-meeting communications","late-2017 assignment notice and requests for assignment details"],
+      "audit":"Reconcile contractual creditor identity, servicer authority, amounts, negotiation authority and procedural succession."
+    },
+    {
+      "period":"late 2017–2018","counterparty":"Construcciones Acosta Matos, S.A.","status":"credit-acquisition-to-liquidation-offer-chain",
+      "anchors":["late-2017 assignment/succession material","8 February 2018 court recognition at unchanged definitive-text amount","January 2018 CAM acquisition/liquidation offer","February 2018 IA liquidation plan","16 April plan approval and later clarification/challenges"],
+      "audit":"Separate creditor succession from bid terms, title, possession/control, interest calculation and eventual set-off/adjudication."
+    }
+  ],
+  "counsel_instruction_filing_audit": [
+    {
+      "actor":"Juan Tomás Parrilla Suárez","period":"2017–2018",
+      "preserve":["27 April 2017 formal LexNET filing of LPB composition proposal","plan/clarification/appeal workstreams"],
+      "tension_es":"Tras el 7 junio consta contacto con el AC y una instrucción expresa del cliente para actuación escrita sobre entrada en dependencias LPB/cerraduras. Debe localizarse qué escrito protector redactó/presentó Parrilla, qué pidió y con qué recibo.",
+      "tension_en":"After 7 June, contact with the IA and an express client instruction for written action concerning entry into LPB premises/locks are documented. The audit must locate what protective pleading Parrilla drafted/filed, what it sought and its receipt."
+    },
+    {
+      "actor":"Cuatrecasas","period":"2014–2018",
+      "preserve":["substantial SAREB standstill/refinancing work in 2014","2018 ONA/Stoneweg/Elaia funded-exit and insolvency strategy work"],
+      "tension_es":"El 13 junio 2018 Rosa Gual registra que debía comunicarse el asunto al Mercantil y que había preparado un escrito; la cadena discute el momento. No se ha localizado su recibo LexNET. Cerrar borrador→decisión→presentación/no presentación→consecuencia.",
+      "tension_en":"On 13 June 2018 Rosa Gual records that the matter should be communicated to the Mercantile Court and that she had prepared a pleading; the thread discusses timing. Its LexNET receipt has not been located. Close draft→decision→filing/non-filing→consequence."
+    },
+    {
+      "actor":"Luis Miguel López","period":"2020–2021",
+      "preserve":["located drafting/filing work on interest, nullity and sale/adjudication challenges"],
+      "tension_es":"Auditar instrucción por instrucción qué protección se pidió frente a cuantía, intereses, masa activa, venta y conclusión y qué quedó sólo en asesoramiento/borrador. Esta capa no atribuye todavía una omisión específica no probada.",
+      "tension_en":"Audit instruction by instruction what protection was sought on amount, interest, estate, sale and conclusion, and what remained advice/draft only. This layer does not yet attribute a specific unproved omission."
+    },
+    {
+      "actor":"Cristo Suárez Pimentel","period":"2018 / 2021",
+      "preserve":["Arrecife criminal complaint work and 3 July 2018 LexNET receipts","2021 appeal/challenge drafting"],
+      "tension_es":"El 10 febrero 2021 existe instrucción escrita para revisar y presentar urgentemente en Mercantil una solicitud de conclusión bajo art. 465.6 TRLC como vía protectora si prosperaba CAM. Se localiza borrador circulado; no se ha localizado recibo Mercantil/LexNET de esa solicitud.",
+      "tension_en":"On 10 February 2021 there is a written instruction to review and urgently file in the Mercantile Court an Art. 465.6 TRLC conclusion application as a protective route if CAM prevailed. A circulated draft is located; no Mercantile/LexNET receipt for that application has been located."
+    }
+  ],
+  "cam_plan_compliance_questions": [
+    "What exact LPB assets/rights did the CAM offer cover, for what price/set-off and conditions, and what third-party property was outside it?",
+    "Which CAM terms did the IA incorporate into the liquidation plan, what valuation/publicity/improvement mechanism did the plan require, and what exclusions did it contain?",
+    "What did the 16 April and 4 June 2018 court orders actually approve/clarify, and what did they not authorise about physical possession, security, locks, works, operation or income?",
+    "What authority, if any, supported the 7 June material control/access event before final adjudication?",
+    "What did the IA verify/report/protect after notice, and what did the judge know/do through each notice channel?",
+    "How did the 26 June suspension affect later realisation, and how was later implementation shown to comply with plan, publicity, equal improvement opportunity and title limits?",
+    "How do the contradictory 15 October 2021 orders, new RICPE material, February 2022 testimonios, 21 February deed and April registration reconcile with plan, finality, amount and third-party rights?"
+  ],
+  "master_open_gaps": [
+    "Certified chronological electronic index / official per-piece docket denominator.",
+    "2 May 2018 judicial-assistance dispatch, Mercantile receipt and response.",
+    "Exact same-day filing receipt for the 7 June 2018 complaint expansion.",
+    "Any IA-authored post-7-June report/filing to the Mercantile Court and the protective response it generated.",
+    "Cuatrecasas 13 June prepared protective pleading: draft, final, filing decision and LexNET receipt.",
+    "Daniel Irigoyen witness statement closing exact oral content of the 13 June judge/IA meetings.",
+    "Official 28 June 2017 creditors' meeting minute/quorum record.",
+    "Any later definitive-text amount modification after 8 February 2018; full €9,052,251.69→€13,168,082.02 reconciliation.",
+    "Instruction/draft/filing ledgers for Parrilla, Cuatrecasas, Luis Miguel López and Cristo Suárez Pimentel.",
+    "Art. 465.6 TRLC conclusion application: Mercantile/LexNET receipt or proof it remained unfiled.",
+    "Full CAM offer→IA plan→court approval→publicity/improvement→suspension→2021/22 adjudication compliance ledger.",
+    "Asset-level LPB/Matkator/third-party title, possession, income, works, damage and remedy ledgers."
+  ]
+}

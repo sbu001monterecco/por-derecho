@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "control_id": "PD-C212224-SOURCE-CORPUS-20260921-01",
+  "control_date": "2026-09-23",
+  "status": "FULL_PAGE_AWARE_DIGITISATION_COMPLETE_AND_INTERLINKED",
+  "definition": "Full digitisation means exact source identity and SHA-256 are locked, every source page is processed into the controlled text/index layer, and the source is reachable through the three-track repository graph. This status does not by itself certify court receipt, electronic incorporation or judicial reading, and does not require publication of every unredacted raw binary.",
+  "totals": {
+    "documents": 6,
+    "source_pages": 278,
+    "controls": 3
+  },
+  "documents": [
+    {
+      "id": "C21-BASE-20260625",
+      "control": "CONTROL-21",
+      "date": "2026-06-25",
+      "filename": "DENUNCIA_PENAL_DOCUMENTADA_FINAL_25JUN2026.pdf",
+      "pages": 86,
+      "sha256": "3f4bd2bbbc963605e4cc94bc73d116157e2bf4a2266e2285b013f38de9e90736",
+      "text_layer_processed": "86/86 pages",
+      "digitisation_in_git": true,
+      "raw_source_pdf_public": false,
+      "reader_control": "data/three-track-full-digitisation-20260904.json",
+      "dossier_es": "es/control-21-denuncia-actores-privados-25-junio-2026/index.html",
+      "dossier_en": "en/control-21-private-actors-complaint-25-june-2026/index.html"
+    },
+    {
+      "id": "C21-AMP-20260626",
+      "control": "CONTROL-21",
+      "date": "2026-06-26",
+      "filename": "AMPLIACION_DENUNCIA_PENAL_ACOSTA_MATOS_CONTROL_21_FINAL_26JUN2026-1.pdf",
+      "pages": 26,
+      "sha256": "a7f057fd99d0bdf1a891cf4610f69ed19788d2e40f9f23a6ff66fc6255d97846",
+      "text_layer_processed": "26/26 pages",
+      "digitisation_in_git": true,
+      "raw_source_pdf_public": false,
+      "reader_control": "data/three-track-full-digitisation-20260904.json",
+      "dossier_es": "es/control-21-denuncia-actores-privados-25-junio-2026/index.html",
+      "dossier_en": "en/control-21-private-actors-complaint-25-june-2026/index.html"
+    },
+    {
+      "id": "C21-EXP-20260709",
+      "control": "CONTROL-21",
+      "date": "2026-07-09",
+      "filename": "CONTROL21_Ampliacion_JDAM_LPAM_AcostaMatos_09JUL2026_FINAL_FIRMA.pdf",
+      "pages": 19,
+      "sha256": "0d42dcbe30679331c557f4c3750e478e592a9a449c6b5ecb84e32f6fa56ad16f",
+      "text_layer_processed": "19/19 pages",
+      "digitisation_in_git": true,
+      "raw_source_pdf_public": false,
+      "reader_control": "data/three-track-full-digitisation-20260904.json",
+      "dossier_es": "es/control-21-denuncia-actores-privados-25-junio-2026/index.html",
+      "dossier_en": "en/control-21-private-actors-complaint-25-june-2026/index.html"
+    },
+    {
+      "id": "C22-BASE-20260618",
+      "control": "CONTROL-22",
+      "date": "2026-06-18",
+      "filename": "01_Denuncia_Penal_AC_LPB_Sun_Park_AC-FINAL_17JUN2026.pdf",
+      "pages": 55,
+      "sha256": "b11f10e7410f922a8cd1796ea462ea7ea20d555b7308e4481f2cb23732b1002b",
+      "text_layer_processed": "55/55 pages",
+      "digitisation_in_git": true,
+      "raw_source_pdf_public": false,
+      "reader_control": "data/three-track-full-digitisation-20260904.json",
+      "dossier_es": "es/control-22-denuncia-administrador-concursal/index.html",
+      "dossier_en": "en/control-22-insolvency-administrator-complaint/index.html"
+    },
+    {
+      "id": "C24-BASE-20260618",
+      "control": "CONTROL-24",
+      "date": "2026-06-18",
+      "filename": "02_Paquete_Unificado_Para_Presentacion_JUEZ_ FINAL 17JUNE2026 (signed).pdf",
+      "pages": 79,
+      "sha256": "1cae1912a20202c5f5779db07e77c7e1d3f0ae514676e07d3ace4dd56f6f76a0",
+      "text_layer_processed": "79/79 pages",
+      "digitisation_in_git": true,
+      "raw_source_pdf_public": false,
+      "reader_control": "data/three-track-full-digitisation-20260904.json",
+      "public_principal_transcription": "evidence/judicial-governance/decanato-reference-24/full-text/denuncia-magistrado-18jun2026-public-transcription.md",
+      "note": "The signed source package is 79 pages. The existing public principal transcription is a 31-page public-safe presentation/principal layer; the package-level digitisation control accounts for all 79 source pages including annexes.",
+      "dossier_es": "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+      "dossier_en": "en/control-24-insolvency-judge-complaint-36-2012/index.html"
+    },
+    {
+      "id": "C24-SUPP-20260625",
+      "control": "CONTROL-24",
+      "date": "2026-06-25",
+      "filename": "APORTACION_COMPLEMENTARIA_CONTROL_24_AUTOSUFICIENTE_SIN_ANEXOS_25JUN2026.pdf",
+      "pages": 13,
+      "sha256": "04051e33000f830c32ba06e31996ba4e6812c7d54c199ee03696b85e68589679",
+      "text_layer_processed": "13/13 pages",
+      "digitisation_in_git": true,
+      "raw_source_pdf_public": false,
+      "reader_control": "data/three-track-full-digitisation-20260904.json",
+      "public_transcription_with_stamped_cover": "evidence/judicial-governance/decanato-reference-24/full-text/ampliacion-denuncia-magistrado-25jun2026-public-transcription.md",
+      "note": "The controlled source is 13 pages. The public transcription has 14 public pages because it prepends the separately preserved stamped presentation cover.",
+      "dossier_es": "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+      "dossier_en": "en/control-24-insolvency-judge-complaint-36-2012/index.html"
+    }
+  ],
+  "interconnection": {
+    "rule": "Evidence may be shared; attribution, knowledge, intent, causation and procedural identity remain actor- and track-specific.",
+    "controls": {
+      "CONTROL-21": {
+        "subject": "five private actors",
+        "links_to": [
+          "CONTROL-22",
+          "CONTROL-24"
+        ],
+        "question": "private creation/use/adoption of authority, control and benefit"
+      },
+      "CONTROL-22": {
+        "subject": "insolvency administrator",
+        "links_to": [
+          "CONTROL-21",
+          "CONTROL-24"
+        ],
+        "question": "knowledge, verification, estate duty, authorisation, preservation and accounting"
+      },
+      "CONTROL-24": {
+        "subject": "judicial acts/supervision",
+        "links_to": [
+          "CONTROL-21",
+          "CONTROL-22"
+        ],
+        "question": "what reached the court, what was known, what resolution followed and with what effect"
+      }
+    },
+    "shared_event_families": [
+      "CP/CEXP authority, debt and voting",
+      "7 June 2018 access/material control",
+      "2018 funded exit",
+      "28 November 2018 OB REM / €400,000 and 24 October 2019 non-validation",
+      "credit/threshold/2021 bidding/2022 adjudication",
+      "later HNT/MYND/RICPE operation and consequence"
+    ]
+  },
+  "canonical_reader": "data/three-track-full-digitisation-20260904.json",
+  "canonical_continuity_graph": "assets/data/control-21-22-24-continuity-v1.json",
+  "audit": "archive/CONTROL_21_22_24_FULL_DIGITISATION_AND_INTERLINK_AUDIT_21SEP2026.md",
+  "upstream_sources": {
+    "AN2023": {
+      "outside_june_totals": true,
+      "date": "2023-09-21",
+      "pages": 88,
+      "source_pdf_sha512": "2c35052af7f869dfb13ca8593552a6997ee9f1f83a09299bcee883345482ae63b7502f76d6e85873b4b80c1b745d7a3c5797762400410e33c897140b9c36c2ab",
+      "manifest": "evidence/criminal/an-dp91-2023/source-manifest.json",
+      "lineage": "evidence/criminal/an-dp91-2023/AN2023_REF21_REF22_REF24_LINEAGE.md"
+    }
+  }
+}

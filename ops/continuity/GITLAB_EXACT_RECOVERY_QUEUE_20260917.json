@@ -1,0 +1,115 @@
+{
+  "schema": "por-derecho.gitlab-exact-recovery-queue.v1",
+  "control_id": "PD-GITLAB-EXACT-RECOVERY-20260917-01",
+  "control_date": "2026-09-18",
+  "status": "OPEN_BLOCKED_BY_GITLAB_AUTHENTICATION",
+  "last_verified_gitlab_main_sha": "7d086d098676eecc2c1647ed09b348d8dc0bdc69",
+  "items": [
+    {
+      "id": "GL-EXACT-001",
+      "path": ".gitlab/duo/agent-config.yml",
+      "state": "EXACT_BYTES_PENDING",
+      "known": "Present on last verified GitLab main; Duo review accepted final configuration; exact bytes not recovered.",
+      "recovery": "Fetch exact file from restored GitLab main and compare before any GitHub archival copy."
+    },
+    {
+      "id": "GL-EXACT-002",
+      "path": ".gitlab/duo/mr-review-instructions.yaml",
+      "state": "EXACT_BYTES_PENDING",
+      "known": "Present on last verified GitLab main and reviewed by GitLab Duo; exact bytes not recovered.",
+      "recovery": "Fetch exact file from restored GitLab main and preserve GitLab-specific semantics separately from GitHub agent instructions."
+    },
+    {
+      "id": "GL-EXACT-003",
+      "path": "tests/test_release_bundle_20260914.py",
+      "state": "EXACT_BYTES_PENDING",
+      "known": "Duo Developer ran 14/14 tests successfully on last verified GitLab main.",
+      "recovery": "Fetch exact source and execute unchanged before mapping any GitHub substitute to it."
+    },
+    {
+      "id": "GL-EXACT-004",
+      "object": "GitLab MR !529 public-impact shadow classifier",
+      "state": "BRANCH_EXACT_DELTA_PENDING",
+      "last_known_passing_commit": "738ab3ddb7d4c7ea91da705cf19045378b8d235f",
+      "known": "Pipeline #2857394442 passed immediately before the block.",
+      "recovery": "Fetch complete MR diff, discussions and exact head; compare with GitHub functional classifier; never overwrite authenticated GitLab work with the substitute."
+    },
+    {
+      "id": "GL-EXACT-005",
+      "object": "GitLab MR !528 institutional finance reusable overlay backend",
+      "state": "RESIDUAL_DELTA_PENDING",
+      "known": "Public institutional roadmap was mirrored to GitHub, but GitLab retained additional reusable template/test logic under Duo review.",
+      "recovery": "Fetch complete MR diff/head/discussions and isolate material not already mirrored."
+    },
+    {
+      "id": "GL-NATIVE-001",
+      "object": "GitLab native operational metadata",
+      "state": "PLATFORM_EXPORT_REQUIRED",
+      "components": [
+        "merge requests and discussions",
+        "approvals",
+        "issues/work items",
+        "Duo reviews and Developer sessions",
+        "pipelines/jobs/logs/artifacts",
+        "CI variables and protected settings",
+        "runner/environment configuration",
+        "project/group settings",
+        "Orbit/index state where available"
+      ],
+      "recovery": "Export or snapshot through authenticated GitLab APIs/UI after reinstatement; Git history cannot reconstruct these objects."
+    },
+    {
+      "id": "GL-OUTAGE-001",
+      "object": "Cabildo authority-access receipt continuity delta — 17–18 September 2026",
+      "state": "GITHUB_OUTAGE_DELTA_PENDING_CANONICAL_RECONCILIATION",
+      "github_base_sha": "e79d4233b172d45baf27964e8a5165447fe3b0c1",
+      "github_branch": "continuity/authority-access-20260918",
+      "github_paths": [
+        "assets/data/cabildo-authority-access-received-20260918.json",
+        "ops/authority-access/CABILDO_AUTHORITY_ACCESS_RECEIVED_20260918.md",
+        "en/cabildo-lanzarote-tourism-traceability/index.html",
+        "es/cabildo-lanzarote-turismo-trazabilidad/index.html"
+      ],
+      "known": "Public-safe outage continuity records Cabildo 13811/2026 / Decreto 2026-6999 grant acquisition, 13817/2026 / Decreto 2026-7000, Comisionado incoming register 2612/2026, privacy hold and the separate 3671/2022 native-byte custody gap. Raw private evidence was not published.",
+      "recovery": "After GitLab restoration, inspect then-current canonical evidence/event/CAEPR/communications controls and the existing dedicated authority-evidence-received page. Reconcile additively, preserve newer GitLab work, assign any canonical event/CAEPR identifiers only from the current registry, and record exact GitHub source and GitLab destination SHAs."
+    },
+    {
+      "id": "GL-OUTAGE-002",
+      "object": "ETJ 163/2020 / DP 748/2026 18-Sep source-safe procedural and custody reconciliation",
+      "state": "GITHUB_OUTAGE_DELTA_PENDING_CANONICAL_RECONCILIATION",
+      "github_base_sha": "b909f5fe39486ec0f5e792b544713c94b02d7360",
+      "github_branch": "continuity/etj-dp748-18sep-gapclose",
+      "github_pull_request": 1565,
+      "github_paths": [
+        "assets/data/dp748-2026-appeal-reopening-control-v1.json",
+        "assets/data/la-laguna-concurso-public-bridge-20260903.json",
+        "assets/data/proceedings-interlinkability-v1.json",
+        "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+        "archive/CUATRECASAS_ETJ163_DP748_PUBLIC_STRATEGY_AND_NOTICE_18SEP2026.md",
+        "archive/CUATRECASAS_CRITICAL_GAP_CLOSURE_CONTROL_20AUG2026.md",
+        "en/etj-163-2020/index.html",
+        "es/etj-163-2020/index.html",
+        "en/dp-748-2026/index.html",
+        "es/dp-748-2026/index.html",
+        "en/cuatrecasas-etj163-dp748-18-september-2026/index.html",
+        "es/cuatrecasas-etj163-dp748-18-septiembre-2026/index.html",
+        "en/la-laguna-concurso-map-2026/index.html",
+        "es/la-laguna-concurso-mapa-2026/index.html"
+      ],
+      "known": "GitHub outage-continuity delta records the signed 17-Sep ETJ suspension-reconsideration order, 18-Sep private-native service provenance hashes, 9/16-Sep DP748 subsidiary-appeal processing, counsel working-package handoff, and downstream adjudication/cession/Fiscal/Audiencia gaps. Raw LexNET wrapper/cover and counsel work product remain private.",
+      "recovery": "After GitLab restoration, inspect then-current canonical evidence/event/CAEPR/communications/proceedings controls and existing ETJ/DP748 public pages. Reconcile additively, preserve newer GitLab work, carry only missing or better-supported public-safe changes, and record exact GitHub source commit plus GitLab destination commit/MR and parity result."
+    }
+  ],
+  "rules": [
+    "No queue item may be marked recovered from chat memory alone.",
+    "Exact GitLab bytes and platform metadata outrank functional substitutes once authenticated.",
+    "Outage-period GitHub work must be reconciled additively; do not reset or force-push it away.",
+    "Every imported GitLab item must record source SHA, object ID/path, retrieval date and parity result."
+  ],
+  "restoration_status": {
+    "checked_date": "2026-09-18",
+    "authenticated_access": "BLOCKED_ACCOUNT_LEVEL_403",
+    "current_action": "HUMAN_REVIEW_IN_PROGRESS",
+    "public_boundary": "Support-ticket identifiers, email addresses, verification-channel details and private provider metadata remain outside the public repository."
+  }
+}

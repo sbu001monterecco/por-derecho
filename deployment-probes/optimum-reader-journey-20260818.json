@@ -1,0 +1,9 @@
+{
+  "probe_id": "psr-pages-optimum-reader-journey-20260818-v1",
+  "repository": "sbu001monterecco/por-derecho",
+  "site_path": "/por-derecho/",
+  "minimum_commit": "6deaba19d8db5c5c5e20f2965ae8ab7deb28d8de",
+  "purpose": "Prove that the public GitHub Pages host is serving the optimum reader-journey implementation commit or a descendant.",
+  "created_date": "2026-08-18",
+  "public_safe": true
+}

@@ -1,0 +1,141 @@
+name: Advisory unitary multi-track gap closure
+
+on:
+  pull_request:
+    paths:
+      - ".github/governance/**"
+      - ".github/evidence-intelligence/schemas/institutional-communications.schema.json"
+      - ".github/workflows/advisory-unitary-multitrack-gap-closure.yml"
+      - "AGENTS.md"
+      - "CHATGPT_START_HERE.md"
+      - "archive/**"
+      - "assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json"
+      - "assets/data/caepr-caret-fti-meeting-point-ricpe-continuity-v1.json"
+      - "assets/data/community-acta-authority-interconnectivity-v1.json"
+      - "assets/data/institutional-communications-register-v1.json"
+      - "assets/data/proceedings-master-public-v1.json"
+      - "assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json"
+      - "assets/unitary-multitrack-gap-closure-20260901.css"
+      - "assets/unitary-multitrack-gap-closure-20260901.js"
+      - "en/community-actas-public-authorities/index.html"
+      - "en/community-instrumentalisation/acta-document-room/meeting-lifecycle-lph-control/index.html"
+      - "en/de-facto-administration-community-ac/index.html"
+      - "en/insolvency-36-2012-unitary-criminal-forensic-analysis/index.html"
+      - "en/intervencion-general-siinf-traceability/index.html"
+      - "en/ric-private-equity-sun-park/index.html"
+      - "en/unitary-criminal-reverse-engineering/index.html"
+      - "es/actas-comunidad-autoridades-publicas/index.html"
+      - "es/comunidad-instrumentalizacion/sala-documental-actas/control-lph-ciclo-juntas/index.html"
+      - "es/administracion-de-hecho-comunidad-ac/index.html"
+      - "es/concurso-36-2012-analisis-penal-forense-unitario/index.html"
+      - "es/intervencion-general-siinf-trazabilidad/index.html"
+      - "es/ric-private-equity-sun-park/index.html"
+      - "es/ingenieria-inversa-criminal-unitaria/index.html"
+      - "publication-manifests/sun-park-acta-lph-lifecycle-pr1284-20260831.json"
+      - "publication-manifests/unitary-public-authority-communications-20260901.json"
+      - "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json"
+      - "ops/PUBLIC_AUTHORITY_COMMUNICATIONS_SCAN_CHECKPOINT_20260901.json"
+      - "scripts/build_acta_meeting_lineage.py"
+      - "scripts/build_community_acta_authority_interconnectivity.py"
+      - "scripts/build_public_proceedings_projection.py"
+      - "scripts/build_unitary_multitrack_gap_closure.py"
+      - "scripts/reconcile_institutional_communications.py"
+      - "scripts/smoke_unitary_multitrack_gap_closure.mjs"
+      - "scripts/validate_community_acta_authority_interconnectivity.py"
+      - "scripts/validate_institutional_communications.py"
+      - "scripts/validate_unitary_multitrack_gap_closure.py"
+      - "sitemap-criminal-engineering.xml"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/governance/**"
+      - ".github/evidence-intelligence/schemas/institutional-communications.schema.json"
+      - ".github/workflows/advisory-unitary-multitrack-gap-closure.yml"
+      - "AGENTS.md"
+      - "CHATGPT_START_HERE.md"
+      - "archive/**"
+      - "assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json"
+      - "assets/data/caepr-caret-fti-meeting-point-ricpe-continuity-v1.json"
+      - "assets/data/community-acta-authority-interconnectivity-v1.json"
+      - "assets/data/institutional-communications-register-v1.json"
+      - "assets/data/proceedings-master-public-v1.json"
+      - "assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json"
+      - "assets/unitary-multitrack-gap-closure-20260901.css"
+      - "assets/unitary-multitrack-gap-closure-20260901.js"
+      - "en/community-actas-public-authorities/index.html"
+      - "en/community-instrumentalisation/acta-document-room/meeting-lifecycle-lph-control/index.html"
+      - "en/de-facto-administration-community-ac/index.html"
+      - "en/insolvency-36-2012-unitary-criminal-forensic-analysis/index.html"
+      - "en/intervencion-general-siinf-traceability/index.html"
+      - "en/ric-private-equity-sun-park/index.html"
+      - "en/unitary-criminal-reverse-engineering/index.html"
+      - "es/actas-comunidad-autoridades-publicas/index.html"
+      - "es/comunidad-instrumentalizacion/sala-documental-actas/control-lph-ciclo-juntas/index.html"
+      - "es/administracion-de-hecho-comunidad-ac/index.html"
+      - "es/concurso-36-2012-analisis-penal-forense-unitario/index.html"
+      - "es/intervencion-general-siinf-trazabilidad/index.html"
+      - "es/ric-private-equity-sun-park/index.html"
+      - "es/ingenieria-inversa-criminal-unitaria/index.html"
+      - "publication-manifests/sun-park-acta-lph-lifecycle-pr1284-20260831.json"
+      - "publication-manifests/unitary-public-authority-communications-20260901.json"
+      - "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json"
+      - "ops/PUBLIC_AUTHORITY_COMMUNICATIONS_SCAN_CHECKPOINT_20260901.json"
+      - "scripts/build_acta_meeting_lineage.py"
+      - "scripts/build_community_acta_authority_interconnectivity.py"
+      - "scripts/build_public_proceedings_projection.py"
+      - "scripts/build_unitary_multitrack_gap_closure.py"
+      - "scripts/reconcile_institutional_communications.py"
+      - "scripts/smoke_unitary_multitrack_gap_closure.mjs"
+      - "scripts/validate_community_acta_authority_interconnectivity.py"
+      - "scripts/validate_institutional_communications.py"
+      - "scripts/validate_unitary_multitrack_gap_closure.py"
+      - "sitemap-criminal-engineering.xml"
+
+permissions:
+  contents: read
+
+jobs:
+  advisory-validation:
+    name: Advisory evidence and continuity validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    continue-on-error: true
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Set up Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+
+      - name: Validate generated surface and controls
+        run: |
+          python3 scripts/reconcile_institutional_communications.py --check
+          python3 scripts/validate_institutional_communications.py
+          python3 scripts/build_public_proceedings_projection.py --check
+          python3 scripts/build_community_acta_authority_interconnectivity.py --check
+          python3 scripts/validate_community_acta_authority_interconnectivity.py
+          python3 scripts/build_unitary_multitrack_gap_closure.py --check
+          python3 scripts/validate_unitary_multitrack_gap_closure.py
+
+      - name: Check browser module syntax
+        run: node --check scripts/smoke_unitary_multitrack_gap_closure.mjs
+
+      - name: Install isolated browser runner
+        run: |
+          npm install --no-save --no-package-lock playwright@1.62.1
+          npx playwright install --with-deps chromium
+
+      - name: Render bilingual desktop and mobile controls
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/pd-ucf-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          PSR_BASE_URL=http://127.0.0.1:8765 node scripts/smoke_unitary_multitrack_gap_closure.mjs

@@ -1,0 +1,240 @@
+{
+  "id": "PD-CAN-BAR-PERIMETER-20260921-01",
+  "version": "2026-09-25",
+  "status": "PUBLIC_SAFE_SOURCE_CONTROLLED_UPDATE",
+  "scope": "Professional-regulation and inter-Colegio coordination map for the Sun Park / MYND Yaiza matter.",
+  "rule_en": "Separate responsibility does not mean separate reality. Individual professional responsibility remains actor-specific; common evidence and economic context may require coordinated preservation and institutional treatment without collective attribution.",
+  "rule_es": "La responsabilidad separada no significa una realidad separada. La responsabilidad profesional sigue siendo individual; la prueba común y el contexto económico pueden exigir preservación coordinada y tratamiento institucional sin atribución colectiva.",
+  "institutional_layers": [
+    {
+      "id": "ICAM",
+      "jurisdiction": "Madrid",
+      "role": "territorial_first_instance",
+      "state": "active_source_record",
+      "references": [
+        "434/26",
+        "1487/26",
+        "1566/26"
+      ],
+      "boundary": "Madrid competence is distinct from Canary competence."
+    },
+    {
+      "id": "CCACM",
+      "jurisdiction": "Madrid",
+      "role": "autonomous_appeal",
+      "state": "active_source_record",
+      "references": [
+        "193/2026"
+      ],
+      "boundary": "Madrid appellate body; not the Canary Council."
+    },
+    {
+      "id": "ICALPA",
+      "jurisdiction": "Las Palmas",
+      "role": "territorial_first_instance",
+      "state": "active_source_record",
+      "references": [
+        "DIP 79/2026",
+        "DIP 80/2026"
+      ],
+      "boundary": "DIP 79 and DIP 80 remain separate preliminary matters."
+    },
+    {
+      "id": "ICATF",
+      "jurisdiction": "Santa Cruz de Tenerife",
+      "role": "territorial_first_instance",
+      "state": "active_source_record",
+      "references": [
+        "2647-ICATF",
+        "ICAM 1487/26 territorial referral ordered 1-Jul-2026"
+      ],
+      "boundary": "Receipt/file number for the 1487/26 referral remains to be certified."
+    },
+    {
+      "id": "CCCA",
+      "name": "Consejo Canario de Colegios de Abogados",
+      "jurisdiction": "Canary Islands",
+      "role": "autonomous_coordination_and_appellate_layer",
+      "state": "direct_registry_receipt_documented",
+      "boundary": "RE-000329 proves registry entry only; no merits position, competence ruling or substantive response is inferred.",
+      "references": [
+        "RE-000329 · Consejo Canario Registro de Entrada · 22-Sep-2026"
+      ]
+    },
+    {
+      "id": "CGAE",
+      "name": "Consejo General de la Abogacía Española",
+      "jurisdiction": "Spain",
+      "role": "national_professional_body",
+      "state": "prior_contact_documented",
+      "references": [
+        "CGAE response RS-001022/2026",
+        "separate 2026 ethical-channel track"
+      ],
+      "boundary": "CGAE stated it does not hear ordinary individual lawyer complaints at first instance; the inter-Colegio/systemic route remains a distinct question."
+    }
+  ],
+  "professional_nodes": [
+    {
+      "name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "route": "ICALPA",
+      "matter": "DIP 80/2026; historic Insolvency Administrator role",
+      "firm_context": [
+        "San Telmo Abogados y Economistas (historic professional environment)",
+        "Cuyás Abogados / Grant Thornton Canarias (later professional environment)"
+      ],
+      "classification": "direct_deontological_nexus",
+      "boundary": "Opening or existence of a file is not a finding of misconduct."
+    },
+    {
+      "name": "María del Carmen Ramírez de Prada",
+      "route": "ICALPA",
+      "matter": "DIP 79/2026; CAM representation in Concurso 36/2012",
+      "classification": "direct_deontological_nexus",
+      "boundary": "Professional responsibility remains individual and unresolved."
+    },
+    {
+      "name": "Cristo Ayose Suárez Pimentel",
+      "route": "ICATF",
+      "matter": "former Aweswell/LPB counsel; 21-Aug-2026 Tenerife communication and historical custody questions",
+      "classification": "direct_canary_bar_and_matter_nexus",
+      "boundary": "No disciplinary outcome is inferred."
+    },
+    {
+      "name": "Juan Tomás Parrilla Suárez",
+      "route": "ICATF",
+      "matter": "former counsel; historic payment/withdrawal chronology",
+      "classification": "direct_canary_bar_and_matter_nexus",
+      "boundary": "The record supports a payment/source/timing investigation question; bribery or improper inducement is not treated as established."
+    },
+    {
+      "name": "San Telmo Abogados y Economistas / RSM Spain",
+      "route": "Canary professional-services ecosystem",
+      "matter": "historic Sun Park/RICPE professional record; later integration into RSM; custody/conflict/preservation questions",
+      "classification": "firm_successor_custody_nexus",
+      "boundary": "Integration does not transfer historical liability automatically."
+    },
+    {
+      "name": "Garrigues",
+      "route": "Canary professional-services ecosystem",
+      "matter": "historic Sun Park/Community/LPB work and source custody",
+      "classification": "historic_mandate_custody_nexus",
+      "boundary": "Only source-proven individual acts may be attributed to named lawyers."
+    },
+    {
+      "name": "PwC Tax & Legal Canarias / Carlos Saavedra",
+      "route": "Canary professional-services ecosystem",
+      "matter": "2015–2016 LPB work and later professional-convergence/conflict questions",
+      "classification": "historic_mandate_and_later_conflict_question",
+      "boundary": "Later proximity does not prove adverse mandate, misuse of information or conflict breach."
+    },
+    {
+      "name": "Cuyás Abogados / Grant Thornton Canarias",
+      "route": "Las Palmas professional-services ecosystem",
+      "matter": "later professional environment of Rodríguez-Batllori and preservation/conflict questions",
+      "classification": "current_professional_environment_nexus",
+      "boundary": "Firm association does not transfer individual conduct or responsibility."
+    },
+    {
+      "name": "Cuatrecasas",
+      "route": "ICAM with Tenerife territorial component",
+      "matter": "ICAM 1487/26; ICAM ordered referral of territorially Tenerife acts to the competent Tenerife Bar",
+      "classification": "proved_intercolegio_bridge",
+      "boundary": "The order to refer is documented; actual receipt and local Tenerife reference remain unverified."
+    },
+    {
+      "name": "Juan Carlos Prieto Puente / Esteban López Noriega / MILLAN AND MINERS, S.L.P.",
+      "route": "Canary matter perimeter",
+      "matter": "historic Community-side legal/professional network",
+      "classification": "matter_nexus_bar_route_pending_verification",
+      "boundary": "Exact current/historic Colegio competence must be independently verified before disciplinary attribution."
+    }
+  ],
+  "intercollegial_bridges": [
+    {
+      "date": "2026-07-01",
+      "from": "ICAM",
+      "to": "competent Tenerife Bar",
+      "reference": "1487/26",
+      "proved": "ICAM archive decision ordered territorial referral of the decision and a copy of the file.",
+      "open": "Transmission, receipt, entry number, local file number and subsequent handling."
+    },
+    {
+      "date": "2026-08-20",
+      "from": "Gil Marer / reporting side",
+      "to": "ICALPA",
+      "reference": "DIP 79/2026",
+      "proved": "A general deontological-opinion request was raised alongside the individual file.",
+      "open": "Whether and how ICALPA treats the general recurring professional question."
+    },
+    {
+      "date": "2026-09-21",
+      "from": "source reconstruction",
+      "to": "Consejo Canario / CGAE strategy",
+      "reference": "coordination thesis",
+      "proved": "Multiple distinct professional routes now touch Las Palmas, Tenerife and Madrid.",
+      "open": "Competent regional coordination mechanism, abstention safeguards, preservation and any lawful national referral route."
+    }
+  ],
+  "open_gaps": [
+    "Obtain ICALAN confirmation of receipt, any registry/reference, and any required additional formal filing channel for the 25-Sep routing-confirmation re-forward.",
+    "Certify whether ICAM actually transmitted 1487/26 to ICATF and whether ICATF assigned a local reference.",
+    "Recover the substantive response behind the separate March–June 2026 CGAE ethical-channel track.",
+    "Complete individual Colegio verification where the present record establishes a matter nexus but not the exact Bar route.",
+    "Reconcile later PwC, RSM/San Telmo, Garrigues and Cuatrecasas mandates, conflicts and custody without transferring responsibility through association.",
+    "Continue primary-source tracing of professional payments, payer identity and source-of-funds questions."
+  ],
+  "public_sources": [
+    "es/registros-institucionales-colegios-abogacia-2026/",
+    "en/institutional-records-bar-bodies-2026/",
+    "es/icalpa-mesa-del-ponente/dip-79-2026/",
+    "es/icalpa-mesa-del-ponente/dip-80-2026/",
+    "es/pwc-canarias-carlos-saavedra-sun-park/",
+    "es/san-telmo-ricpe-sun-park/",
+    "es/rsm/nnr4-1025c2f66/",
+    "es/cuatrecasas-icam-ccacm-2026/"
+  ],
+  "routing_nodes": [
+    {
+      "id": "ICALAN",
+      "name": "Ilustre Colegio de Abogados de Lanzarote",
+      "jurisdiction": "Lanzarote / Las Palmas / Canary Islands",
+      "role": "territorial_bar_routing_and_coordination_recipient",
+      "state": "current_contact_route_confirmed_24_sep_2026__routing_confirmation_forward_sent_25_sep_2026",
+      "current_channel": "info@icalan.es",
+      "deprecated_channel": "icalanzarote@redabogacia.org",
+      "proved": "ICALAN stated on 24-Sep-2026 that the prior mailbox was ceasing to operate and directed communications to info@icalan.es. That current address had already been copied on 22-Sep; the chain was expressly re-forwarded there on 25-Sep.",
+      "boundary": "Transmission/routing is documented; ICALAN receipt, registry number, competence and merits handling remain open unless separately confirmed."
+    }
+  ],
+  "operational_updates": [
+    {
+      "date": "2026-09-22",
+      "body": "Consejo Canario de Colegios de Abogados",
+      "reference": "RE-000329",
+      "state": "registry_entry_documented",
+      "boundary": "Registry entry only; not a merits decision."
+    },
+    {
+      "date": "2026-09-22",
+      "body": "ICALPA",
+      "reference": "RE-012642/2026",
+      "state": "registry_entry_documented",
+      "boundary": "Registry entry only; no new DIP 79/2026 or DIP 80/2026 merits state inferred."
+    },
+    {
+      "date": "2026-09-24",
+      "body": "ICALAN",
+      "reference": "routing instruction",
+      "state": "current_channel_identified",
+      "boundary": "Prior mailbox discontinued; info@icalan.es identified as current route."
+    },
+    {
+      "date": "2026-09-25",
+      "body": "ICALAN",
+      "reference": "routing-confirmation re-forward",
+      "state": "sent",
+      "boundary": "Not a first transmission; current address had already been copied on 22-Sep. Receipt/registration remains to be confirmed."
+    }
+  ]
+}

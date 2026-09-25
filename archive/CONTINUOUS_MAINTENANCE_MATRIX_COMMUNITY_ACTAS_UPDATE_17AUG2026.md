@@ -1,0 +1,12 @@
+# CONTINUOUS MAINTENANCE MATRIX — COMMUNITY / ACTA AUTHORITY UPDATE
+
+**Date:** 17 August 2026  
+**Status:** targeted update to be read with `archive/CONTINUOUS_MAINTENANCE_MATRIX.md` until folded into the canonical matrix.
+
+| Track | Public surface | Canonical internal control | Current state after 17-Aug pass | Highest-value next evidence/action |
+|---|---|---|---|---|
+| Sun Park Community / CEXP authority provenance and public document room | `/es/comunidad-instrumentalizacion/` + `/en/community-instrumentalisation/`; `/es/comunidad-instrumentalizacion/actas-2011-2022/` + `/en/community-instrumentalisation/minutes-2011-2022/`; `/es/comunidad-instrumentalizacion/sala-documental-actas/` + `/en/community-instrumentalisation/acta-document-room/` | `archive/ACTA_DIGITISATION_PUBLICATION_CLOSEOUT_28AUG2026.md` + `evidence/community/COMMUNITY_AUTHORITY_EVENTS_EMAILS_MEETINGS_ACTAS_PUBLIC_REGISTER.md` + `evidence/community/actas/public-index.json` + v2 reconciliation/manifests | **LIVE VERIFIED through PR #1182 / merge `67b144e6fd1d2312f8d4ab1830c28eb17eca8d5f` / Pages run `33217481784`: 23 events/46 bilingual pages and 20 located packages—19 ACTA/minutes families plus one non-ACTA RICPE notice—412 source pages/images, 20 raster-only redacted source facsimiles, 17 public-redacted OCR editions, three explicit marker-only editions and 20 text PDFs/448 pages. Exact readback passed 158/158; reviewed desktop/mobile rendering passed 96/96 with 6/6 distinct perimeter pairs. The 2012 president's statement is located but the separate objection remains open; the standalone 20-Nov-2018 ACTA, 29-Dec-2021 RICPE primary records and March-2022 occurrence/outcome/minutes remain unlocated. OCR is not manually certified and copies are not official/certified originals.** | Recover the open sources; perform line-by-line verification; compare official books/audio/proxies and corporate records; establish provider-independent custody restoration; maintain privacy, variant and juridical-separation gates. |
+
+## Implementation note
+
+The legacy chronology keeps its stable URLs. The document room fails closed with a localized error when its restricted derivative index is unavailable, malformed or contains duplicate identities; it does not synthesize fallback evidence cards. Evidence text also remains indexable in repository/HTML form; JavaScript is a navigation layer, not the only copy. Current JPEG previews and retained historical WEBPs generated from text editions are labelled derivatives and must never be called source facsimiles.

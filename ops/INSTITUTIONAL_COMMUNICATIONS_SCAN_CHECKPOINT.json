@@ -1,0 +1,145 @@
+{
+  "aggregate_only_control": {
+    "current_status_export_supersedes_as_current_denominator": true,
+    "reported_rows": 22,
+    "representation": "MF-UNRESOLVED-BATCH-001",
+    "synthetic_event_rows": 0
+  },
+  "baseline_import": {
+    "annex_listings": 126,
+    "expected_rows": 75,
+    "first_presented_local": "2025-12-15T20:53:36",
+    "imported_rows": 75,
+    "last_presented_local": "2026-02-26T22:35:27",
+    "source_exhausted": true,
+    "source_path": "archive/evidence/mf-redsara-anexo4/MF_REDSARA_REGISTRATION_INDEX_SHORT.csv",
+    "source_sha256": "784b45bb9ef9e5934d4b4dedc7068dfef90b6e19a10d55bfc1170933d097dcc3",
+    "unique_regage_references": 75
+  },
+  "checkpoint_id": "PD-SP-MF-SCAN-CHECKPOINT-001",
+  "completed_filings_2026_09_21": {
+    "admission_incorporation_or_examination_proved": false,
+    "control_date": "2026-09-21",
+    "dp1901_actions": 13,
+    "dp1901_registration_events": 14,
+    "eg745_final_registration": "REGAGE26e00082070021",
+    "eg745_linked_registrations": 10,
+    "eg745_principal_registration": "REGAGE26e00082068814",
+    "historical_mail_scan_results_retained_as_dated_findings": true,
+    "new_mail_scan_performed": false,
+    "registration_events_added": 24,
+    "source_input": "ops/dp1901-eg745-registration-input-20260921.json"
+  },
+  "control_date": "2026-09-24",
+  "incremental_refresh_2026_08_31": {
+    "already_indexed_in_scope_events": 7,
+    "excluded_automated_repository_notifications": 4,
+    "exclusion_reason": "Automated GitHub list notifications matched only because repository text mentioned Ministerio Fiscal; they are not communications to or from a public institution and are not added to the institutional register or native-source manifest.",
+    "filing_status_change": false,
+    "new_filing_proof": false,
+    "new_in_scope_institutional_events": 0,
+    "pagination_complete": true,
+    "performed_at_utc": "2026-08-31T14:12:58Z",
+    "provider_locators_or_exact_subjects_published": false,
+    "scope": "Control-day overlap query for Ministerio Fiscal, Fiscalia, E.G. 745/2026 and REG-AGE references after the pagination-complete last-month scan.",
+    "search_hits": 11
+  },
+  "last_month_mail_control": {
+    "covered_date_from": "2026-07-31",
+    "covered_date_through": "2026-08-31",
+    "pagination_complete": true,
+    "performed_date": "2026-08-31",
+    "provider_locators_published": false,
+    "result": "No post-notification E.G. 745/2026 reposicion, matching REG-AGE receipt or equivalent merits-filing proof located.",
+    "scope": "Ministerio Fiscal offices and controlled expediente/REGAGE references; Gmail plus REG-AGE filing-proof control.",
+    "source_anchor": "evidence/fiscalia/2026/MINISTERIO_FISCAL_WIDER_MATTER_EG745_UNITARY_EVIDENCE_ACTION_DIGEST_31AUG2026.md"
+  },
+  "mailbox_index": {
+    "draft_rows": 3,
+    "event_rows": 156,
+    "inbound_email_rows": 101,
+    "outbound_email_rows": 42,
+    "route_not_publicly_attested_rows": 81,
+    "self_archive_rows": 10,
+    "source_exhausted": true,
+    "source_path": "assets/data/institutional-communications-mailbox-index-v1.json",
+    "source_sha256": "d623d710aced7bf37417429afb75dcce43265c3ca0855fe7f1412f84193ff5b0"
+  },
+  "next_incremental_scan": {
+    "overlap_from_date": "2026-08-24",
+    "rule": "Scan an overlap window, reconcile exact official references first, then add only source-proved public-safe events; keep private provider IDs outside Git.",
+    "strictly_new_after_date": "2026-08-31"
+  },
+  "private_custody": {
+    "custody_reference": "PD-SP-CUST-0001",
+    "manifest_rows": 231,
+    "manifest_sha256": "bdd12a8fa62b5058525e1c37053fb7899ac24a60d12ff48ab8b74bda617cd6f6",
+    "provider_or_storage_identifier_published": false,
+    "status": "PERSISTED_PRIVATE_CUSTODY"
+  },
+  "public_authority_scan": {
+    "canonical_authority_event_count": 19,
+    "checkpoint_path": "ops/PUBLIC_AUTHORITY_COMMUNICATIONS_SCAN_CHECKPOINT_20260901.json",
+    "checkpoint_sha256": "cead64dfc04f5a32cb39cc28b292b61e93e261a36aa8d2753f4ecc4e7cc60352",
+    "drive_unique_documents_across_lanes": 326,
+    "existing_event_ids_reused": [
+      "PD-SP-EVT-0004",
+      "PD-SP-EVT-0014"
+    ],
+    "gmail_unique_messages_across_lanes": 5514,
+    "new_event_ids": [
+      "PD-SP-EVT-0141",
+      "PD-SP-EVT-0142",
+      "PD-SP-EVT-0143",
+      "PD-SP-EVT-0144",
+      "PD-SP-EVT-0145",
+      "PD-SP-EVT-0146",
+      "PD-SP-EVT-0147",
+      "PD-SP-EVT-0148",
+      "PD-SP-EVT-0149",
+      "PD-SP-EVT-0150",
+      "PD-SP-EVT-0151",
+      "PD-SP-EVT-0152",
+      "PD-SP-EVT-0153",
+      "PD-SP-EVT-0154",
+      "PD-SP-EVT-0155",
+      "PD-SP-EVT-0156",
+      "PD-SP-EVT-0157"
+    ],
+    "provider_locators_or_exact_subjects_published": false,
+    "scope_status": "BOUNDED_METADATA_CENSUS_COMPLETE_ITEM_LEVEL_MERITS_REVIEW_OPEN",
+    "universal_completeness_claim": false
+  },
+  "regage_status_export_2026_09_21": {
+    "added_status_events": 284,
+    "generic_event_id_range": [
+      "PD-SP-EVT-0213",
+      "PD-SP-EVT-0496"
+    ],
+    "generic_id_additions": 284,
+    "proof_boundary": "Literal registry status only; no onward delivery, routing, incorporation, admission, examination, merits or criminal responsibility inferred.",
+    "raw_source_committed": false,
+    "raw_source_sha256": "5cc7eaa867b248b0bff7e9cd19e5093dfe2df494fae8ca84c8f12c15382016a3",
+    "receipt_controlled_overlap_events": 22,
+    "records": 398,
+    "reused_existing_formal_events": 114,
+    "source_path": "ops/regage-status-export-input-20260921.json",
+    "status_literal_es": {
+      "Enviado": 36,
+      "Rechazado": 26,
+      "Recibido": 336
+    }
+  },
+  "register_path": "assets/data/institutional-communications-register-v1.json",
+  "register_sha256": "a26c7417347ddc21dd3b8be5164c04a752e838d8a00260bc7a8f5fccc4ecb5a7",
+  "schema": "por-derecho.institutional-communications-scan-checkpoint.v1",
+  "source_required_and_normalisation_gates": [
+    "Historical 22-record RedSARA/AGE aggregate remains provenance; the current 398-row status export is represented individually without inferring a one-to-one legacy mapping.",
+    "EG 58/2026 discrete official act remains source-required.",
+    "DP 1901/2026 signed Fiscal report and later judicial act remain source-required.",
+    "EG 6/2026 underlying act substantive digest remains pending.",
+    "Six August-family receipt rows await one-to-one public destination-label normalisation; no destination is guessed.",
+    "81 mailbox rows retain ROUTE_NOT_PUBLICLY_ATTESTED pending a primary bridge.",
+    "Historical 31-Aug scan found no post-notification E.G. 745 native receipt; superseded by the separately verified 21-Sep principal and nine linked annex registrations."
+  ]
+}

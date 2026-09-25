@@ -1,0 +1,65 @@
+name: Validate CI control plane
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/**'
+      - 'scripts/**'
+      - 'schemas/**'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'en/matter-identity-registry/**'
+      - 'es/registro-identidad-materia/**'
+      - 'es/acosta-matos-familia/**'
+      - 'ops/CURRENT_UNITARY_STATE.json'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/**'
+      - 'scripts/**'
+      - 'schemas/**'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'en/matter-identity-registry/**'
+      - 'es/registro-identidad-materia/**'
+      - 'es/acosta-matos-familia/**'
+      - 'ops/CURRENT_UNITARY_STATE.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ci-control-plane-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+      GITHUB_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Ensure fail-closed PDF privacy inspection is available
+        run: command -v pdftotext || (sudo apt-get update -qq && sudo apt-get install -y poppler-utils)
+      - name: Validate all repaired contracts, negative cases and publication boundaries
+        run: python3 scripts/validate_ci_control_plane.py
+      - name: Reproduce outstanding specialist diagnostics on unchanged base and candidate
+        run: python3 scripts/compare_inherited_ci_diagnostics.py
+      - name: Install pinned browser test dependency
+        run: |
+          python3 -m pip install playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+      - name: Verify desktop/mobile and JavaScript/no-JavaScript projections
+        run: python3 scripts/verify_ci_control_plane_browser.py
+      - name: Confirm validators did not mutate source
+        run: git diff --exit-code
+      - name: Preserve exact acceptance evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: ci-control-plane-${{ github.run_id }}
+          path: /tmp/ci-control-plane/
+          if-no-files-found: error
+          retention-days: 30

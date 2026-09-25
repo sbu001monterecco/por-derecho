@@ -1,0 +1,1404 @@
+{
+  "schema": "por-derecho.icalpa-correspondence-register.v1",
+  "control_id": "PD-ICALPA-CORR-20260921-01",
+  "control_date": "2026-09-21",
+  "source": "Connected SBU Gmail search and readback",
+  "search_scope": {
+    "outgoing_query": "to:(registro@icalpa.org OR deontologia@icalpa.org OR notificaciones_secretaria@icalpa.com OR informacion@icalpa.com OR servicios@redabogacia.org)",
+    "incoming_query": "from:(registro@icalpa.org OR deontologia@icalpa.org OR notificaciones_secretaria@icalpa.com OR informacion@icalpa.com OR servicios@redabogacia.org)",
+    "note": "Excludes lawyer-specific ICALPA mailboxes such as 3077@icalpa.com / icalpa3077@icalpa.com from the institutional-correspondence denominator."
+  },
+  "operating_routes": {
+    "substantive": [
+      "registro@icalpa.org",
+      "deontologia@icalpa.org"
+    ],
+    "platform_or_registry": [
+      "servicios@redabogacia.org"
+    ],
+    "notification_copy": [
+      "notificaciones_secretaria@icalpa.com"
+    ],
+    "earlier_general_route": [
+      "informacion@icalpa.com"
+    ]
+  },
+  "counts": {
+    "unique_messages": 62,
+    "outgoing": 30,
+    "incoming": 32,
+    "substantive_outgoing": 24,
+    "registry_receipts": 29,
+    "opening_notices": 2,
+    "automated_route_notices": 3
+  },
+  "independence_control": {
+    "source_date": "2026-06-10",
+    "source_subjects": [
+      "DIP 79/2026 – Aportación preventiva urgente sobre integridad, instrumentalización procesal, Comunidad, moral hazard y cautelas reforzadas",
+      "DIP 80/2026 – Aportación preventiva urgente sobre Administrador Concursal, conclusión viable, Comunidad, testimonio Daniel Irigoyen, moral hazard y cautelas reforzadas"
+    ],
+    "controlled_summary": "Gil expressly said he was not alleging pressure or interference had already occurred at ICALPA. He identified a preventive structural-risk hypothesis and requested reinforced safeguards for ponente independence, confidentiality, formal traceability, logging of external approaches, and abstention/substitution or other protective measures if an incident affecting impartiality arose.",
+    "short_source_extracts": [
+      "riesgo objetivo de presión estructural y necesidad de proteger al ponente",
+      "aproximaciones informales ... llamadas de terceros ... contactos no procedimentales",
+      "máxima apariencia y realidad de independencia, confidencialidad, trazabilidad y no interferencia"
+    ]
+  },
+  "messages": [
+    {
+      "date": "2025-12-23T22:41:10",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "Solicitud urgente de orientación, competencia y canalización institucional",
+      "institutional_to": [
+        "informacion@icalpa.com"
+      ],
+      "institutional_cc": [],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2025-12-26T12:26:39",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de Entrada ICA Las Palmas RE-017363/2025",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-01-14T16:04:01",
+      "direction": "INCOMING",
+      "kind": "SUBSTANTIVE",
+      "subject": "CONSULTA SOBRE COMPETENCIA DE ESTE COLEGIO RESPECTO ACTUACION",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [],
+      "themes": [
+        "PRESSURE_SAFEGUARDS"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-01-14T22:19:15",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "Re: CONSULTA SOBRE COMPETENCIA DE ESTE COLEGIO RESPECTO ACTUACION",
+      "institutional_to": [
+        "Deontología ICALPA deontologia@icalpa.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [
+        "Outlook-tw4ywcvf.png",
+        "Outlook-MEDIO AMBI.png"
+      ],
+      "registry_refs": [],
+      "dip_refs": [],
+      "themes": [
+        "PRESSURE_SAFEGUARDS",
+        "SANTELMO_RSM"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-02-14T21:07:16",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "Presentación de denuncia deontológica – RE-017363/2025",
+      "institutional_to": [
+        "Deontología ICALPA deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [
+        "Denuncia_Deontologica_Administrador_Concursal_ICALPA_RE-017363-2025_14FEB2026.PDF",
+        "Outlook-tw4ywcvf.png",
+        "Outlook-MEDIO AMBI.png"
+      ],
+      "registry_refs": [],
+      "dip_refs": [],
+      "themes": [
+        "PRESSURE_SAFEGUARDS"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-02-16T09:39:52",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-002261/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-002261/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-02-19T16:19:42",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "Presentación de denuncia deontológica (Letrada CAM) – Conexión con Expte. RE-002261 / RE-017363/2025",
+      "institutional_to": [
+        "Deontología ICALPA deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [
+        "DENUNCIA_DEONTOLOGICA_ICALPA_Letrada_CAM_Concurso_36-2012_Gil_Marer_2026.PDF"
+      ],
+      "registry_refs": [],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-02-20T11:03:34",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-002494/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-002494/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-03-26T16:26:39",
+      "direction": "OUTGOING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Re: Registro de ENTRADA ICA Las Palmas RE-002261/2026",
+      "institutional_to": [
+        "Ilustre Colegio de Abogados de Las Palmas servicios@redabogacia.org",
+        "deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [
+        "ENTREVISTA SANTELMO (Parcial) 30NOV2021 (1).pdf",
+        "ANEXO_1_Comunicacion_IntervencionGeneral_ComisionIntegridad_05MAR2026.pdf",
+        "requerimiento ratificacion denunciante169.pdf",
+        "Comunicacion_institucional_CGPJ_supervision_concursal_LPB_36-2012 10MAR2026 (1).pdf",
+        "ANEXOS Comunicacion_institucional_CGPJ_supervision_concursal_LPB_36-2012 (1).pdf",
+        "DENUNCIA_FISCALIA_ESPECIAL_CORRUPCION_OPERACION_SUN_PARK_02ENE2026 (2).PDF",
+        "ANEXO_3_Respuesta_CNMV_RIC_PrivateEquity_22ENE2026.pdf"
+      ],
+      "registry_refs": [
+        "RE-002261/2026"
+      ],
+      "dip_refs": [],
+      "themes": [
+        "INDEPENDENCE"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-03-26T16:27:29",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Automatic reply: Registro de ENTRADA ICA Las Palmas RE-002261/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [],
+      "registry_refs": [
+        "RE-002261/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-03-26T16:41:38",
+      "direction": "OUTGOING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Re: Registro de ENTRADA ICA Las Palmas RE-002494/2026",
+      "institutional_to": [
+        "Ilustre Colegio de Abogados de Las Palmas servicios@redabogacia.org",
+        "registro@icalpa.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [
+        "ENTREVISTA SANTELMO (Parcial) 30NOV2021 (1).pdf",
+        "DENUNCIA_FISCALIA_ESPECIAL_CORRUPCION_OPERACION_SUN_PARK_02ENE2026 (2).PDF",
+        "ANEXO_1_Comunicacion_IntervencionGeneral_ComisionIntegridad_05MAR2026.pdf",
+        "ANEXO_3_Respuesta_CNMV_RIC_PrivateEquity_22ENE2026.pdf"
+      ],
+      "registry_refs": [
+        "RE-002494/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-03-27T09:02:12",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-004323/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-004323/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-03-27T09:03:29",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de Salida ICA Las Palmas RE-004324/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-004324/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-03-27T09:23:13",
+      "direction": "OUTGOING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Re: Registro de ENTRADA ICA Las Palmas RE-004323/2026",
+      "institutional_to": [
+        "Ilustre Colegio de Abogados de Las Palmas servicios@redabogacia.org",
+        "Deontología ICALPA deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [],
+      "registry_refs": [
+        "RE-004323/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-03-27T09:31:45",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "RE: Registro de ENTRADA ICA Las Palmas RE-004323/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [],
+      "registry_refs": [
+        "RE-004323/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-03-27T18:03:48",
+      "direction": "OUTGOING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Re: Registro de ENTRADA ICA Las Palmas RE-004323/2026",
+      "institutional_to": [
+        "Registro ICALPA registro@icalpa.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [
+        "Outlook-Presentaci.png"
+      ],
+      "registry_refs": [
+        "RE-004323/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-05-20T07:45:56",
+      "direction": "INCOMING",
+      "kind": "FORMAL_NOTICE",
+      "subject": "REQUERIMIENTO GIL MARER -",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-05-21T20:46:44",
+      "direction": "OUTGOING",
+      "kind": "FORMAL_NOTICE",
+      "subject": "Re: REQUERIMIENTO GIL MARER - Nº Registro de Salida RS-002398",
+      "institutional_to": [
+        "Notificaciones Secretaría notificaciones_secretaria@icalpa.com",
+        "registro@icalpa.org",
+        "servicios@redabogacia.org",
+        "deontologia@icalpa.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [
+        "ESCRITURA PUBLICIDAD CAMBIO SOCIO 03ENE2012.pdf",
+        "Aweswell Limited filed accounts.pdf",
+        "Representacion MATKATOR (Pag33).pdf",
+        "Certificado de Incorporación Companies House MONTERECCO LT 25JUL2011.pdf",
+        "LUCHY CAMBIO ADMON UNICO GIL 2012.pdf",
+        "Gil Marer Compnay Director Aweswell Limited 06MAR2026.pdf",
+        "Traducción Jurada Certificado de Aweswell y Apostilla 22ENE2018 (1).pdf",
+        "CERTIFICADO CAMBIO DENOMINACION MONTERECCO - AWESWELL 2JUN2014.pdf",
+        "Gil Marer Director Aweswell Limited 06MAR2026.pdf",
+        "ESCRITURA LPB PUBLICIDAD CAMBIO SOCIO 03ENE2012.pdf"
+      ],
+      "registry_refs": [],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-05-21T20:47:17",
+      "direction": "INCOMING",
+      "kind": "AUTOMATED_ROUTE_NOTICE",
+      "subject": "RESPUESTA NOTIFICACIONES",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-05-22T10:58:08",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-007028/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-007028/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-05-25T18:38:31",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "Aportación complementaria — Queja deontológica D. Francisco de Borja Rodríguez-Batllori Laffitte — RE-007028/2026",
+      "institutional_to": [
+        "Ilustre Colegio de Abogados de Las Palmas servicios@redabogacia.org",
+        "Deontología ICALPA deontologia@icalpa.org",
+        "Registro ICALPA registro@icalpa.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [
+        "Justificante de Presentación REG (6).pdf",
+        "ANEXO III.pdf",
+        "ANEXO IV.pdf",
+        "ANEXO II.pdf",
+        "ANEXO I.pdf",
+        "COMUNICACION INSTITUCIONAL URGENTE 23MAY2026.pdf"
+      ],
+      "registry_refs": [
+        "RE-007028/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-05-26T11:35:35",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-007200/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-007200/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-05-28T06:55:16",
+      "direction": "INCOMING",
+      "kind": "OPENING_NOTICE",
+      "subject": "APERTURA DIP 80/2026 -",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 80/2026"
+      ],
+      "themes": [
+        "DIP_80"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-05-28T07:18:17",
+      "direction": "INCOMING",
+      "kind": "OPENING_NOTICE",
+      "subject": "APERTURA DIP 79/2026 -",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 79/2026"
+      ],
+      "themes": [
+        "DIP_79"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-05-29T07:57:16",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "Asunto: DIP 80/2026 – Aportación complementaria: CGPJ DI 169/2026 y contexto San Telmo / RIC Private Equity",
+      "institutional_to": [
+        "Registro ICALPA registro@icalpa.org",
+        "Deontología ICALPA deontologia@icalpa.org",
+        "Ilustre Colegio de Abogados de Las Palmas servicios@redabogacia.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [
+        "ENTREVISTA SANTELMO (Parcial) 30NOV2021 (1).pdf",
+        "DENUNCIA_FISCALIA_ESPECIAL_CORRUPCION_OPERACION_SUN_PARK_02ENE2026 (2).PDF",
+        "Justificante de Presentación REG (12).pdf"
+      ],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 80/2026"
+      ],
+      "themes": [
+        "PONENTE",
+        "INDEPENDENCE",
+        "CONFLICT_RECUSAL",
+        "DIP_80",
+        "RICPE",
+        "SANTELMO_RSM"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-05-29T08:40:27",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "Asunto: DIP 79/2026 – Aportación complementaria: matriz documental CAM / Comunidad / RIC / Sun Park",
+      "institutional_to": [
+        "Registro ICALPA registro@icalpa.org",
+        "Deontología ICALPA deontologia@icalpa.org",
+        "Ilustre Colegio de Abogados de Las Palmas servicios@redabogacia.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [
+        "ANEXO III (1).pdf",
+        "ANEXO IV (1).pdf",
+        "ANEXO II (1).pdf",
+        "ANEXO I (1).pdf",
+        "COMUNICACION INSTITUCIONAL URGENTE 23MAY2026 (1).pdf",
+        "REGAGE26e00049434557.pdf"
+      ],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 79/2026"
+      ],
+      "themes": [
+        "PONENTE",
+        "DIP_79",
+        "DIP_80",
+        "RICPE"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-05-29T10:11:13",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-007421/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-007421/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-05-29T10:22:24",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-007423/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-007423/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-05-30T13:06:47",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "Asunto: DIP 79/2026 – Precisión aclaratoria sobre posible condición de CAM como persona especialmente relacionada / acreedor especialmente conflictuado",
+      "institutional_to": [
+        "Registro ICALPA registro@icalpa.org",
+        "Deontología ICALPA deontologia@icalpa.org",
+        "Ilustre Colegio de Abogados de Las Palmas servicios@redabogacia.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 79/2026"
+      ],
+      "themes": [
+        "PONENTE",
+        "INDEPENDENCE",
+        "CONFLICT_RECUSAL",
+        "DIP_79"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-06-01T10:14:02",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-007476/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-007476/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-06-01T11:20:36",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "Asunto: DIP 80/2026 – Precisión aclaratoria sobre deber del Administrador Concursal de escrutinio reforzado de la posición de CAM",
+      "institutional_to": [
+        "Registro ICALPA registro@icalpa.org",
+        "Deontología ICALPA deontologia@icalpa.org",
+        "Ilustre Colegio de Abogados de Las Palmas servicios@redabogacia.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [
+        "1780308838201_RE_007476_26.pdf"
+      ],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 80/2026"
+      ],
+      "themes": [
+        "PONENTE",
+        "INDEPENDENCE",
+        "PRESSURE_SAFEGUARDS",
+        "CONFLICT_RECUSAL",
+        "DIP_79",
+        "DIP_80"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-06-01T12:03:31",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-007499/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-007499/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-06-10T11:40:30",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "DIP 79/2026 – Aportación preventiva urgente sobre integridad, instrumentalización procesal, Comunidad, moral hazard y cautelas reforzadas",
+      "institutional_to": [
+        "Registro ICALPA registro@icalpa.org",
+        "Deontología ICALPA deontologia@icalpa.org",
+        "Ilustre Colegio de Abogados de Las Palmas servicios@redabogacia.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [
+        "Grabacion Reunión PwC Simo y Cristo con Prieto Puente y Matos Matas (1) 11JUN2016 (2).pdf",
+        "Transcripcion Conversacion Telefonica CAM-Trabajdor SP (1).pdf",
+        "ANEXO 4 RedSARA Ministerio Fiscal Comunicaciones Registradas.pdf",
+        "C7F-C29M22.pdf"
+      ],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 79/2026"
+      ],
+      "themes": [
+        "PONENTE",
+        "INDEPENDENCE",
+        "PRESSURE_SAFEGUARDS",
+        "CONFLICT_RECUSAL",
+        "MORAL_HAZARD",
+        "DIP_79",
+        "DIP_80",
+        "PWC"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-06-10T12:04:10",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "DIP 80/2026 – Aportación preventiva urgente sobre Administrador Concursal, conclusión viable, Comunidad, testimonio Daniel Irigoyen, moral hazard y cautelas reforzadas",
+      "institutional_to": [
+        "Registro ICALPA registro@icalpa.org",
+        "Deontología ICALPA deontologia@icalpa.org",
+        "Ilustre Colegio de Abogados de Las Palmas servicios@redabogacia.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [
+        "Daniel Irigoyen meeting with Judge and AC 13 June 2018 (3).PDF",
+        "Gmail - Laura Friend of Judge.PDF",
+        "ANEXO 4 RedSARA Ministerio Fiscal Comunicaciones Registradas.pdf",
+        "Grabacion Reunión PwC Simo y Cristo con Prieto Puente y Matos Matas (1) 11JUN2016 (1).pdf",
+        "Transcripcion Conversacion Telefonica CAM-Trabajdor SP.pdf",
+        "C7F-C29M22.pdf"
+      ],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 80/2026"
+      ],
+      "themes": [
+        "PONENTE",
+        "INDEPENDENCE",
+        "PRESSURE_SAFEGUARDS",
+        "CONFLICT_RECUSAL",
+        "MORAL_HAZARD",
+        "DIP_79",
+        "DIP_80",
+        "PWC"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-06-10T12:11:16",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-008079/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-008079/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-06-10T12:43:28",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-008087/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-008087/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-06-14T22:36:47",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "DIP 80/2026 – Ampliación sobre canales profesionales, acciones patrimoniales de LPB y separación del Administrador Concursal",
+      "institutional_to": [
+        "Registro ICALPA registro@icalpa.org",
+        "Deontología ICALPA deontologia@icalpa.org",
+        "Ilustre Colegio de Abogados de Las Palmas servicios@redabogacia.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 80/2026"
+      ],
+      "themes": [
+        "PONENTE",
+        "INDEPENDENCE",
+        "DIP_80"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-06-14T23:09:15",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "Solicitud de orientación institucional y acceso a representación independiente",
+      "institutional_to": [
+        "Registro ICALPA registro@icalpa.org",
+        "Deontología ICALPA deontologia@icalpa.org",
+        "Ilustre Colegio de Abogados de Las Palmas servicios@redabogacia.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [],
+      "themes": [
+        "INDEPENDENCE",
+        "CONFLICT_RECUSAL",
+        "DIP_79",
+        "DIP_80"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-06-15T11:12:04",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-008248/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-008248/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-06-15T11:13:50",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-008249/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-008249/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-06-18T10:43:26",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "Subject: Aportación complementaria a DIP 80/2026 – Presentación presencial de denuncia penal contra el Administrador Concursal",
+      "institutional_to": [
+        "Registro ICALPA registro@icalpa.org",
+        "Deontología ICALPA deontologia@icalpa.org",
+        "Ilustre Colegio de Abogados de Las Palmas servicios@redabogacia.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 80/2026"
+      ],
+      "themes": [
+        "INDEPENDENCE",
+        "DIP_80"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-06-18T10:45:48",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "Aportación complementaria a DIP 80/2026 – Presentación presencial de denuncia penal relativa a resoluciones dictadas en el Concurso Ordinario 36/2012",
+      "institutional_to": [
+        "Registro ICALPA registro@icalpa.org",
+        "Deontología ICALPA deontologia@icalpa.org",
+        "Ilustre Colegio de Abogados de Las Palmas servicios@redabogacia.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 80/2026"
+      ],
+      "themes": [
+        "INDEPENDENCE",
+        "DIP_80"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-06-25T23:27:44",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "DIP 80/2026 – Aportación de escrito y solicitud de acuse de recibo",
+      "institutional_to": [
+        "Registro ICALPA registro@icalpa.org",
+        "Deontología ICALPA deontologia@icalpa.org",
+        "Ilustre Colegio de Abogados de Las Palmas servicios@redabogacia.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [
+        "DIP_80_2026_Solicitud_impulso_Control_22_26JUN2026_firma_azul.pdf"
+      ],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 80/2026"
+      ],
+      "themes": [
+        "PONENTE",
+        "DIP_80"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-06-26T10:30:24",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-008887/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-008887/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-07-13T15:47:08",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "DIP 80/2026 – comunicación de procedimiento penal 1956/2026 y solicitud de impulso y decisión",
+      "institutional_to": [
+        "Registro ICALPA registro@icalpa.org",
+        "Deontología ICALPA deontologia@icalpa.org",
+        "Ilustre Colegio de Abogados de Las Palmas servicios@redabogacia.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 80/2026"
+      ],
+      "themes": [
+        "INDEPENDENCE",
+        "CONFLICT_RECUSAL",
+        "DIP_80"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-07-13T16:08:30",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "DIP 79/2026 – actualización procesal sobre 1901/2026 y solicitud de comprobaciones concretas",
+      "institutional_to": [
+        "Registro ICALPA registro@icalpa.org",
+        "Deontología ICALPA deontologia@icalpa.org",
+        "Ilustre Colegio de Abogados de Las Palmas servicios@redabogacia.org"
+      ],
+      "institutional_cc": [],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 79/2026"
+      ],
+      "themes": [
+        "PONENTE",
+        "DIP_79"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-07-14T08:58:46",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-009765/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-009765/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-07-14T09:30:09",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-009768/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-009768/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-08-20T09:24:28",
+      "direction": "OUTGOING",
+      "kind": "SUPERSEDED_DRAFT_TRANSMITTED",
+      "subject": "NO ENVIAR — BORRADOR SUSTITUIDO — DIP 80/2026",
+      "institutional_to": [
+        "deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "institutional_cc": [
+        "servicios@redabogacia.org",
+        "notificaciones_secretaria@icalpa.com"
+      ],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 80/2026"
+      ],
+      "themes": [
+        "PONENTE",
+        "INDEPENDENCE",
+        "PRESSURE_SAFEGUARDS",
+        "CONFLICT_RECUSAL",
+        "MORAL_HAZARD",
+        "DIP_80",
+        "RICPE",
+        "PWC",
+        "SANTELMO_RSM"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-08-20T09:37:06",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "DIP 80/2026 – requerimiento institucional urgente de decisión motivada, preservación probatoria y contención del riesgo profesional",
+      "institutional_to": [
+        "deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "institutional_cc": [
+        "servicios@redabogacia.org",
+        "notificaciones_secretaria@icalpa.com"
+      ],
+      "attachments": [
+        "san-telmo-ricpe-sun-park-stamp-v1-ES.png",
+        "pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png"
+      ],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 80/2026"
+      ],
+      "themes": [
+        "PONENTE",
+        "INDEPENDENCE",
+        "PRESSURE_SAFEGUARDS",
+        "CONFLICT_RECUSAL",
+        "MORAL_HAZARD",
+        "DIP_80",
+        "RICPE",
+        "PWC",
+        "SANTELMO_RSM"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-08-20T09:37:18",
+      "direction": "INCOMING",
+      "kind": "AUTOMATED_ROUTE_NOTICE",
+      "subject": "RESPUESTA NOTIFICACIONES",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-08-20T09:43:05",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "Re: DIP 80/2026 – requerimiento institucional urgente de decisión motivada, preservación probatoria y contención del riesgo profesional",
+      "institutional_to": [
+        "deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "institutional_cc": [
+        "servicios@redabogacia.org",
+        "notificaciones_secretaria@icalpa.com"
+      ],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 80/2026"
+      ],
+      "themes": [
+        "PONENTE",
+        "INDEPENDENCE",
+        "PRESSURE_SAFEGUARDS",
+        "CONFLICT_RECUSAL",
+        "MORAL_HAZARD",
+        "DIP_80",
+        "RICPE",
+        "PWC",
+        "SANTELMO_RSM"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-08-20T10:12:51",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de entrada ICA Las Palmas RE-011301/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-011301/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-08-20T10:15:44",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de entrada ICA Las Palmas RE-011302/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-011302/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-08-20T12:00:42",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "DIP 79/2026 – requerimiento urgente de decisión motivada, verificación de documentación judicial cuestionada y preservación de sus efectos extraconcursales",
+      "institutional_to": [
+        "deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "institutional_cc": [
+        "servicios@redabogacia.org",
+        "notificaciones_secretaria@icalpa.com"
+      ],
+      "attachments": [
+        "CERTIFICACION%20de%20Enrique%20Guerra%20Suarez%2021JUL2021.pdf",
+        "ESCRITO%20de%20CAM%20ref%20RIC%20PE%20y%20Enrique%20Guerra%20Suarez%2021JUL2021.pdf",
+        "21-2-15%20DOC_%201_firmado%281%29.pdf",
+        "Escrito%20de%20CAM%20ref%20Reforma%20Integral%202018%20%28entrada%20en%20funcionamiento%29%2015FEB2021.pdf",
+        "san-telmo-ricpe-sun-park-stamp-v1-ES.png",
+        "pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png"
+      ],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 79/2026"
+      ],
+      "themes": [
+        "PONENTE",
+        "INDEPENDENCE",
+        "CONFLICT_RECUSAL",
+        "DIP_79",
+        "DIP_80",
+        "RICPE",
+        "PWC"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-08-20T12:42:15",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de entrada ICA Las Palmas RE-011307/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-011307/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-08-20T19:47:46",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "DIP 79/2026 — ampliación sobre procedencia de fondos y solicitud de consulta/dictamen deontológico general respecto de abogados del perímetro CAM / Acosta Matos",
+      "institutional_to": [
+        "deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "institutional_cc": [
+        "servicios@redabogacia.org",
+        "notificaciones_secretaria@icalpa.com"
+      ],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 79/2026"
+      ],
+      "themes": [
+        "PONENTE",
+        "INDEPENDENCE",
+        "DIP_79",
+        "RICPE"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-08-21T07:58:07",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-011311/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-011311/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-08-22T12:14:47",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "DIP 80/2026 — aportación delimitada y preservación: correo de 21 de abril de 2016",
+      "institutional_to": [
+        "deontologia@icalpa.org",
+        "registro@icalpa.org"
+      ],
+      "institutional_cc": [
+        "notificaciones_secretaria@icalpa.com"
+      ],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 80/2026"
+      ],
+      "themes": [
+        "PONENTE",
+        "INDEPENDENCE",
+        "DIP_80",
+        "PWC"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-09-03T11:05:30",
+      "direction": "OUTGOING",
+      "kind": "SUBSTANTIVE",
+      "subject": "DIP 80/2026 — Ponente — hecho procesal sobrevenido 01/09/2026: separación del AC pendiente ante la Audiencia Provincial — GC-CIV-003, derecho de defensa y solicitud de investigación y decisión",
+      "institutional_to": [
+        "registro@icalpa.org",
+        "deontologia@icalpa.org",
+        "servicios@redabogacia.org"
+      ],
+      "institutional_cc": [
+        "notificaciones_secretaria@icalpa.com"
+      ],
+      "attachments": [
+        "ANEXO_2_GC_CIV_003_intervencion_AC_desistimiento_retracto_ES.png",
+        "ANEXO_1_AP_Las_Palmas_Decreto_000222_2026_RPL_3319_2025_01SEP2026.pdf"
+      ],
+      "registry_refs": [],
+      "dip_refs": [
+        "DIP 80/2026"
+      ],
+      "themes": [
+        "PONENTE",
+        "INDEPENDENCE",
+        "CONFLICT_RECUSAL",
+        "DIP_80"
+      ],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-09-03T11:05:47",
+      "direction": "INCOMING",
+      "kind": "AUTOMATED_ROUTE_NOTICE",
+      "subject": "RESPUESTA NOTIFICACIONES",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [],
+      "registry_refs": [],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    },
+    {
+      "date": "2026-09-03T11:24:28",
+      "direction": "INCOMING",
+      "kind": "REGISTRY_RECEIPT",
+      "subject": "Registro de ENTRADA ICA Las Palmas RE-011678/2026",
+      "institutional_to": [],
+      "institutional_cc": [],
+      "attachments": [
+        "smime.p7s"
+      ],
+      "registry_refs": [
+        "RE-011678/2026"
+      ],
+      "dip_refs": [],
+      "themes": [],
+      "full_body_preserved_in_source_mailbox": true,
+      "public_body_policy": "Original body not reproduced in this machine register; public page provides source-bounded digest and selected short extracts. Provider IDs/private contact data omitted."
+    }
+  ]
+}

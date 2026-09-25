@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.1",
+  "evidence_id": "SP-2018-02-27-AC-SECURITY-REQUEST",
+  "title": "27 February 2018 insolvency-administrator request to convene Sun Park security meeting",
+  "event_date": "2018-02-27T10:16:06+00:00",
+  "publication_date": "2026-08-21",
+  "language": "es",
+  "source": {
+    "type": "scanned_email_printout",
+    "original_filename": "emailAC a Cdad.pdf",
+    "restricted_source_reference": "Gmail message 16438f74a568214f / attachment emailAC a Cdad.pdf",
+    "restricted_source_sha256": "497ecb49495badbcee155397fe70d37d090c36c4e7998308172e7a612046dbed",
+    "restricted_source_size_bytes": 512711,
+    "public_repository_contains_unredacted_original": false
+  },
+  "public_derivative": {
+    "type": "deterministic searchable digital copy from manually checked diplomatic transcript",
+    "path": "public/2018-02-27-ac-community-security-request-redacted-searchable.pdf",
+    "sha256": "129cfdd2b74fe7f5e35b0db7890878aa10c5b81e6d4d6c9d3eaf0845eb820607",
+    "size_bytes": 88176,
+    "pages": 1,
+    "page_format": "A4",
+    "searchable": true,
+    "builder": "/tools/build_ac_security_request_public_pdf.py",
+    "builder_dependency": "reportlab==4.4.9; hash-locked DejaVu Sans/Serif fonts",
+    "font_sha256": {
+      "DejaVuSans.ttf": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+      "DejaVuSans-Bold.ttf": "5c1247acef7f2b8522a31742c76d6adcb5569bacc0be7ceaa4dc39dd252ce895",
+      "DejaVuSerif.ttf": "8f2c103bfa3fd5de71f1b92b18f21906b5a26871fb7e19a9a4c9af539c3cc7ab",
+      "DejaVuSerif-Bold.ttf": "847b33e13925f19ff87e4d934d6b3cf7cac35ce16424f6f670e40c2f377cf2df"
+    },
+    "authoritative_transcript": "transcript.es.md",
+    "translation": "transcript.en.md"
+  },
+  "supplementary_redacted_facsimile": {
+    "committed_to_public_repository": false,
+    "sha256": "91e8366e65496ff63d11877af6f81f90a89472c37c386db94622b4d1de180551",
+    "processing": "render at 300 dpi; burn redactions into pixels; OCR after redaction; visual and searchable-layer inspection",
+    "intermediate_redacted_png_sha256": "b6162108762ffcf1e2cc2afc07027ba885668cd75d14f2fa658da6931bd38d9d"
+  },
+  "redactions": [
+    {
+      "marker": "R1",
+      "category": "direct professional electronic address",
+      "location": "sender header"
+    },
+    {
+      "marker": "R2",
+      "category": "direct organisational/professional electronic address",
+      "location": "recipient header"
+    },
+    {
+      "marker": "R3",
+      "category": "direct professional electronic address",
+      "location": "cc header"
+    }
+  ],
+  "processing": {
+    "manual_visual_review_of_source": true,
+    "manual_transcript_review": true,
+    "silent_correction_prohibited": true,
+    "deterministic_pdf_generation": true,
+    "pdf_invariant_mode": true,
+    "search_layer_sensitive_string_check": "passed",
+    "pdf_structure_check": "passed",
+    "visual_render_check": "passed"
+  },
+  "controlled_meaning": {
+    "directly_supports": [
+      "request by the named insolvency administrator to the Community presidency to convene a General Meeting",
+      "proposed consideration of hiring a security service",
+      "stated purpose of preventing access by unauthorised persons",
+      "stated purpose of preventing deterioration and improper use of common and private areas"
+    ],
+    "does_not_establish_by_itself": [
+      "identity of unauthorised persons",
+      "property-by-property scope",
+      "authority for locks, chains, cylinders, key seizure or exclusionary acts",
+      "transfer of possession, title or hotel operation",
+      "validity or implementation of a later Community resolution",
+      "criminal agreement or final legal characterisation"
+    ]
+  }
+}

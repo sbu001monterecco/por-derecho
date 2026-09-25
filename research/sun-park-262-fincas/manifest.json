@@ -1,0 +1,56 @@
+{
+  "title": "Sun Park 262-finca forensic workstream",
+  "created": "2026-08-18",
+  "status": "separate future thread/task",
+  "canonical_register": {
+    "path": "research/sun-park-262-fincas/sun-park-262-fincas.csv",
+    "rows": 262,
+    "source": "Anexo III - Responsabilidad Máxima Hipotecaria - Intereses y Swap 1SEP2022 / GESVALT",
+    "integrity": "unit 1-262 consecutive; registry_finca unique",
+    "owner_field_caution": "owner_as_listed_gesvalt is a historical source label, not current registry title"
+  },
+  "acquisition_overlay": {
+    "path": "research/sun-park-262-fincas/acquisition-overlay.csv",
+    "source": "Datos Propietarios Hotel Sun Park May 2008 - Feb2022 / Fincas Matkator - Caixa",
+    "status_caution": "En Propiedad and Pdte. Compraventa reproduce the working source category and is not itself proof of registry title or completion"
+  },
+  "priority_tracks": {
+    "JSP_exceptional": [8503, 8504, 8505, 8506, 8507],
+    "Montelanza_CP_CAM": [8499, 8500],
+    "Matkator_owned_working_sheet": [8497, 8498, 8584, 8587, 8588],
+    "Matkator_2025_filing_confirmed_title": [8584, 8588],
+    "Matkator_2025_filing_disputed_HNT_registration": [8497, 8498]
+  },
+  "ac_proposal_integrity_warning": {
+    "reported_total_units": 261,
+    "explicit_registry_duplicate": 8497,
+    "explicit_registry_missing": 8500,
+    "rule": "preserve anomaly; do not silently repair the historical document"
+  },
+  "future_unit_level_fields": [
+    "registry_finca",
+    "horizontal_unit",
+    "physical_room_or_local",
+    "title_at_key_dates",
+    "seller",
+    "buyer",
+    "deed_or_judicial_instrument",
+    "authority_or_power",
+    "price",
+    "payment_recipient",
+    "community_debt_or_setoff",
+    "concurso_status",
+    "Aweswell_Matkator_prior_right_or_negotiation",
+    "CAM_knowledge_before_acquisition",
+    "material_possession_or_control_date",
+    "CAM_to_HNT_title",
+    "works_or_physical_transformation",
+    "source",
+    "evidence_level",
+    "contradiction",
+    "adverse_explanation",
+    "next_document_needed"
+  ],
+  "publication_rule": "Allegations and disputed conveyances remain labelled as allegations/disputes unless and until independently proved or judicially determined.",
+  "deletion_audit_rule": "Contradictory versions are added as temporal layers and are not overwritten or removed."
+}

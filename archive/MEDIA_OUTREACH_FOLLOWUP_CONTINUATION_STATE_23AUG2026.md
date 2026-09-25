@@ -1,0 +1,166 @@
+# Project Sun Rock / Por Derecho — Media outreach continuation and follow-up state
+
+**Control date:** 23 August 2026  
+**Last status correction:** 24 August 2026
+**Status:** controlling cross-thread continuation pointer for current media campaign
+
+## Superseding Gmail reconciliation — 24 August 2026
+
+Campaign execution state is now controlled by `MEDIA_OUTREACH_SENT_RECONCILIATION_AND_CORRECTION_READINESS_24AUG2026.md`. A fresh read-only audit located 57 sent copies across 55 threads. Accordingly, later sections of this 23-August snapshot that call Atlántico Hoy, Ramón Betancor, Sandra Tobar, Javi Rodríguez, Janire Alfaya, Daniel Toledo Quer or other reconciled lanes `PREPARED / NOT SENT` are historical and must not be executed.
+
+No substantive editorial response was located. Europa Press supplied an acknowledgement only; four route/delivery failures retain separate controlled classifications. CR-081 and CR-082 prepare, but do not authorise, corrections for Iván Alhambra and Nacho Calle. No outbound operation is authorised.
+
+## 24 August 2026 · UK-route correction and Cuatrecasas media lane
+
+The controlling current instruction supersedes any earlier outreach suggesting that a Sun Rock / Aweswell UK High Court claim was imminent, being finalised or remained a current option:
+
+- no UK legal action is being pursued;
+- no UK firm is currently instructed for such proceedings;
+- the civil and professional-liability work is Spain-led;
+- any SRA question is separate, non-litigation, contingent and not stated as filed; and
+- the Edgeworth matter is an independent partial-overlap comparator only—not a joint case, precedent, pattern finding or prospective Sun Rock / Aweswell UK claim.
+
+Any renewed approach to **The Lawyer** must lead with that correction because the May 2025 thread used now-stale imminent-UK-filing language. Do not reuse or silently carry forward that framing.
+
+### Recipient sequencing from the read-only Gmail and public-role audit
+
+**Best untouched legal/business lanes:** Iberian Lawyer; Law Society Gazette; Global Restructuring Review; Legal Business; and City A.M.
+
+**Warm but history-sensitive:** The Lawyer, subject to the correction above; and Debtwire, whose prior responsive dialogue concerned a separate Intrum/Haya/FTI/NPL topic and is not evidence of interest in the Cuatrecasas matter.
+
+**Recent-contact hold for a near-duplicate:** Cinco Días, Diario de Avisos and Canarias Ahora were contacted on 23 August 2026 on related Sun Park/MYND/concurso material and no substantive reply has yet been located. Do not send a near-duplicate Cuatrecasas package immediately. A later approach requires a genuinely new legal-professional angle and a current history scan.
+
+**Older contact requiring a fresh, narrower package:** Confilegal received a broad January 2025 approach without a located reply. Any new approach must be source-separated, Cuatrecasas-specific and materially narrower.
+
+No target identification, priority, repository entry or prior relationship authorises an email. No draft, send, correction, follow-up or reply is authorised by this section.
+
+### Controlled pitch proposition
+
+> This does not displace allegations concerning the primary adverse actors. It separately asks whether contemporaneous mandate, billing, correspondence and court records support a causal contribution by instructed advisers through acts, omissions, delay, silence or failure to escalate.
+
+For every UK recipient add:
+
+> No UK legal action is being pursued. The separate UK High Court matter is cited only as an independent partial-overlap comparator—not as a joint case, precedent or prospective claim.
+
+## Mandatory resume sequence
+
+`CURRENT MAIN → THIS STATE FILE → MULTI-JOURNALIST OUTLET DASHBOARD → RECIPIENT-SPECIFIC RECORD → CURRENT WEBSITE/DOSSIER → CONNECTED GMAIL BOTH DIRECTIONS → CURRENT PUBLIC ROLE/CONTACT CHECK → DRAFT/REPLY`.
+
+Do not infer silence and do not rely on chat memory.
+
+## Active sent media state — individual recipients
+
+- Ruth Ugalde / El Confidencial — SENT / corrective complete package sent / awaiting response.
+- Saúl García / Diario de Lanzarote — SENT + VERIFIED / awaiting response.
+- Teresa Acosta Hernández / La Voz de Lanzarote — SENT COPY VERIFIED / primary newsroom route BOUNCED (`554 5.7.1`); limited direction Cc route not listed as failed but delivery not independently confirmed / no substantive response located.
+- Taiana González / HOSTELTUR — SENT + VERIFIED / awaiting response.
+- Carlos Sosa / Canarias Ahora / elDiario.es Canarias — SENT + VERIFIED / awaiting response.
+- Joaquín Gil / EL PAÍS — SENT + VERIFIED / awaiting response.
+- Salvador Hernández / Biosfera Digital — SENT + VERIFIED / awaiting response.
+- Alfonso Canales Segovia / Crónicas de Lanzarote — SENT + VERIFIED / awaiting response.
+- Carlos Molina / Cinco Días — SENT + VERIFIED / awaiting response.
+- Silvia Fernández / CANARIAS7 — SENT + VERIFIED / awaiting response.
+- David Ojeda / CANARIAS7 — SENT + VERIFIED / awaiting response.
+- Fran Fajardo / CANARIAS7 — CONTROLLING V3 SENT ONCE + ACTUAL SENT COPY VERIFIED / awaiting response.
+
+Latest connected-Gmail media scan, refreshed after the Fran V3 redigest, found:
+
+`NO RESPONSE LOCATED YET`.
+
+For Teresa, preserve the separate route-level delivery classification above. For every other active media recipient, use only `NO RESPONSE LOCATED YET`. Silence is not evidence of reading, rejection, delivery failure, interest or editorial decision.
+
+## CANARIAS7 current outlet state
+
+Silvia Fernández = economics/RIC/business lane, SENT + VERIFIED.  
+David Ojeda = Local/Las Palmas/institutions/public-files lane, SENT + VERIFIED.
+
+CANARIAS7 satisfies the two-named-journalist minimum. The controlling instruction is maximum distribution: all suitable named lanes may be researched and prepared concurrently. No same-outlet hold, response window or spacing rule applies. Read `archive/MAXIMUM_MEDIA_DISTRIBUTION_MULTI_RECIPIENT_RULE_23AUG2026.md`.
+
+## Fran Fajardo — controlling V3 sent state
+
+**Status:** `CONTROLLING V3 SENT ONCE + ACTUAL SENT COPY VERIFIED / AWAITING RESPONSE`.
+
+Read:
+
+- `archive/CANARIAS7_FRAN_FAJARDO_ARTICLE_REPOSITORY_WEBSITE_EMAIL_REDIGEST_23AUG2026.md`;
+- `archive/CANARIAS7_FRAN_FAJARDO_PREPARATION_RECORD_23AUG2026.md`.
+
+### Supersession
+
+V1 and V2 Fran drafts are **SUPERSEDED / DO NOT SEND**.
+
+### Controlling V3 subject
+
+`Fran / Tribunales CANARIAS7 — Sun Park: autos procesales, testimonios judiciales y una cadena documental verificable`
+
+### Controlling routing
+
+- Fran’s verified direct professional CANARIAS7 route as `To`;
+- no `Cc`;
+- no `Bcc`.
+
+### New V3 archival checkpoint
+
+The full repository/website/Gmail redigest recovered a 2-Jun-2022 preservation package containing:
+
+- Google/Bing search captures for headline `La Fiscalía Provincial acusa a Acosta Matos de falsificación y estafa procesal`;
+- historical CANARIAS7 path `fiscalia-provincial-acusa-20220530232448-nt.html`;
+- a same-day direct 404 capture; and
+- contemporaneous Fran profile/article captures.
+
+**Do not infer authorship, motive, censorship, improper pressure or CMS intent.** V3 asks Fran to confirm/correct byline, original text, source and CMS status/history only.
+
+A fresh `main` search found no public Por Derecho page citing that article/path or another Fran report as Sun Park evidence.
+
+### Judicial/documentary core
+
+- Auto 1377/2025: removal dismissed for standing; substantive grounds not entered.
+- Auto 11-Nov-2025: reposiciones dismissed; no block-by-block merits adjudication.
+- Sentencia 4/2026: fee claim dismissed for standing; material legality/period/amount not decided on merits.
+- Auto 223/2026: appeals accumulated; merits not resolved.
+- Judge’s contrary ex-officio assessment retained.
+- AC complaint of 18-Jun-2026, DP 1901/2026 and GUB 86/2026 remain separate routes.
+- Judicial testimony issuance is ordinary and not itself evidence of irregularity.
+- Finite chain: `request → decision → issuance → firmness wording → notification/transfer → delivery → later external use`.
+- AP 89/2014 and the provisional 2018 dismissal confirmed on appeal remain prominent adverse evidence.
+- `54 CAM / 190 LPB / 18 terceros` remains a title checkpoint, not proof CAM owned Sun Park.
+
+### Verified V3 media core
+
+- `san-telmo-ricpe-sun-park-stamp-v1-ES.png` — 827,315 bytes;
+- `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png` — 489,983 bytes;
+- San Telmo webinar at approximately 08:08;
+- current Por Derecho judicial/title/funding/media-traceability routes;
+- explicit evidential limitations;
+- six finite tribunals checks and complete right of reply.
+
+**VERIFIED SEND:** fresh exact user authorisation was followed by a single send of V3. Post-send Gmail read-back confirmed the exact recipient, no Cc/Bcc, controlling subject/body, both mandatory PNGs with their expected byte sizes, the timestamped webinar route, and the RIC/regional-incentive/European-support context. No resend, correction, follow-up or reply is authorised.
+
+## CANARIAS7 queue after Fran
+
+1. Carmen Delia Aranda — institutional/social-public-affairs lane; reverify current role/contact.
+2. Francisco Suárez Álamo — director/commissioning/editorial-accountability lane; current verified role routing only.
+3. Javier Sheng Pang Blanco — economics/tourism/public-policy lane when a verified direct route is available.
+4. Historical `lpalacios@canarias7.es` remains `IDENTITY RESEARCH ACTIVE — DO NOT GUESS` until current named identity is resolved.
+
+## Current story core
+
+`fragmented property/operation → Community/CEXP conflict → creditor/enforcement/LPB-only insolvency → CAM specific-property acquisitions / 54-CAM provenance → 2018 material-control transition → pre-title project/commercialisation → 2020 integrated representation → 2021 internal 54/190/18 + conditional title/incomplete DD → RICPE/HNT/MYND/RIC/GC836/EU support → media/public narrative → 2026 judicial/fiscal/institutional routing and constructive Yaiza/Cabildo route`.
+
+This chain does not prove a single conspiracy, common criminal intent, institutional complicity, double funding or knowing media falsehood.
+
+## Outbound-control incident
+
+Read `archive/OUTBOUND_EMAIL_CONTROL_INCIDENT_NOOP_EXAMPLE_23AUG2026.md` before any live Gmail operation. Post-send verification must use read/search only. Never substitute a send action for verification/testing.
+
+## Current next action
+
+Read `archive/CANARY_AND_SPANISH_MEDIA_TARGET_REFRESH_23AUG2026.md`.
+
+All 11 current Atlántico Hoy editorial lanes have now passed the pagination-complete person-and-outlet Gmail history scan and have separate recipient-specific packages in `archive/ATLANTICO_HOY_MAXIMUM_DISTRIBUTION_PREPARATION_RECORD_23AUG2026.md`. No public direct staff address was verified. The official Tenerife and Las Palmas newsroom routes are verified and are labelled honestly as routing addresses, not personal mailboxes. A limited outlet-editor LinkedIn invitation acceptance remains prior-channel context, not substantive engagement. No Gmail draft exists and nothing is authorised or sent. Ramón Betancor / RTVC, Sandra Tobar / EL ESPAÑOL-Invertia, both additional SER lanes, Manuel Riveiro and Agustín Marco all remain active for history-aware research/preparation without same-outlet holds.
+
+Do not send, resend, correct, follow up or reply without fresh exact user authorisation for that specific package.
+
+## No autonomous send/follow-up
+
+No queue rank, coverage state, response, draft or repository instruction authorises a chase, resend, correction, reply or new-recipient send. `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md` controls.

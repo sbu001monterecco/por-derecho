@@ -1,0 +1,21 @@
+{
+  "schema": "por-derecho.action-addendum.v1",
+  "control_id": "PD-FTI-CLUB-SEI-RECOVERY-ACTIONS-20260827-01",
+  "control_date": "2026-08-27",
+  "default_state": "PREPARED_HOLD_NOT_AUTHORISED",
+  "publication_authorized": true,
+  "email_authorized": false,
+  "filing_authorized": false,
+  "external_contact_authorized": false,
+  "actions": [
+    {"id":"FTIR-A01","jurisdiction":"Germany","route":"FTI Touristik 1500 IN 1758/24 / administrator","purpose":"final claims, realisations, quota, Club Sei custody and any estate claim","state":"PREPARED_HOLD_NOT_AUTHORISED","trigger":"separate exact package preview and fresh authorization"},
+    {"id":"FTIR-A02","jurisdiction":"Germany","route":"BigXtra 1500 IN 1801/24; MPI 1500 IN 10126/24; MP Hotelmanagement Holding 1500 IN 10107/24","purpose":"debtor-separated custody, contracts, data and claim allocation","state":"PREPARED_HOLD_NOT_AUTHORISED","trigger":"debtor-specific evidence bridge and fresh authorization"},
+    {"id":"FTIR-A03","jurisdiction":"Germany/EU","route":"DRSF; BMF/WSF; competent EU cooperation routes","purpose":"funding, security, recovery, draw and loss reconciliation","state":"PREPARED_HOLD_NOT_AUTHORISED","trigger":"public-finance production schedule and fresh authorization"},
+    {"id":"FTIR-A04","jurisdiction":"Spain","route":"Meeting Point 357/2024; Auren; SEPI/FASEE; CNMC C/1549/25","purpose":"three-debtor disclosure, workfile, public-credit and transaction-perimeter production","state":"PREPARED_HOLD_NOT_AUTHORISED","trigger":"competent route verified and fresh authorization"},
+    {"id":"FTIR-A05","jurisdiction":"Spain","route":"former Mercantile Courts 1 and 3 / current Commercial Section of the Las Palmas Court of Instance","purpose":"signed act, allocation/substitution, active-estate and productive-unit traceability","state":"PREPARED_HOLD_NOT_AUTHORISED","trigger":"court/capacity-correct draft and fresh authorization"},
+    {"id":"FTIR-A06","jurisdiction":"Spain/EU","route":"competent prosecution, CGPJ, CNMV, RedSARA/AGE or other formal channel","purpose":"actor-specific preservation, conflict, concealment, creditor/public-funds and recovery allegations","state":"PREPARED_HOLD_NOT_AUTHORISED","trigger":"legal review, exact attachments/links/recipients and separate filing authorization"},
+    {"id":"FTIR-A07","jurisdiction":"Cross-border","route":"FTI/Meeting Point advisers, insurers, transactional counsel and custodians","purpose":"legal hold, data-room, contract, inventory, booking, payment, insurance and limitation records","state":"PREPARED_HOLD_NOT_AUTHORISED","trigger":"role and recipient identity verified; privilege-safe package; fresh authorization"},
+    {"id":"FTIR-A08","jurisdiction":"Public monitor","route":"official insolvency, company, competition, property/tourism and transaction sources","purpose":"track buyers, owners, managers, operators, advisers and capital transactions involving former Canary/Spanish assets","state":"REPOSITORY_MONITOR_ONLY_NO_EXTERNAL_ACTION","trigger":"record source changes; human review before any publication or contact"}
+  ],
+  "hard_rule": "No email, resend, forward, filing, RedSARA/AGE submission, portal action, authority contact or notification is authorized by this register or by website publication."
+}

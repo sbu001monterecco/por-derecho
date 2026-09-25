@@ -1,0 +1,60 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "INSTITUTION",
+  "scope": "Historic Arrecife courts source-identified in the 2-Sep-2026 backfill",
+  "records": [
+    {
+      "id": "PD-SP-I-0045",
+      "type": "INSTITUTION",
+      "name": "Juzgado de Instrucción nº 3 de Arrecife (antiguo Mixto nº 8)",
+      "aliases": [
+        "Juzgado de Instruccion nº 3 de Arrecife",
+        "Antiguo Mixto nº 8 de Arrecife"
+      ],
+      "routes": {
+        "es": "/es/registro-autoridad-historica-arrecife/#pd-sp-i-0045",
+        "en": "/en/historic-arrecife-justice-authority-register/#pd-sp-i-0045"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "Sentencia 39/2011 P.O. 467/2010 primary judicial copy"
+      ],
+      "identity_boundary": "Historic organ identity as printed on the source. The civil function in P.O. 467/2010 does not establish present successor allocation."
+    },
+    {
+      "id": "PD-SP-I-0046",
+      "type": "INSTITUTION",
+      "name": "Juzgado de Primera Instancia nº 4 de Arrecife",
+      "aliases": [
+        "JPI nº 4 de Arrecife"
+      ],
+      "routes": {
+        "es": "/es/registro-autoridad-historica-arrecife/#pd-sp-i-0046",
+        "en": "/en/historic-arrecife-justice-authority-register/#pd-sp-i-0046"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "Sentencia 89/2014 / Rollo 793/2012 identifies origin JPI nº4 and Juicio Verbal 1260/2011"
+      ],
+      "identity_boundary": "Historic first-instance organ identity only; the appellate copy does not identify the first-instance Judge or LAJ."
+    },
+    {
+      "id": "PD-SP-I-0047",
+      "type": "INSTITUTION",
+      "name": "Juzgado de Instrucción nº 4 de Arrecife",
+      "aliases": [
+        "JI nº 4 de Arrecife"
+      ],
+      "routes": {
+        "es": "/es/registro-autoridad-historica-arrecife/#pd-sp-i-0047",
+        "en": "/en/historic-arrecife-justice-authority-register/#pd-sp-i-0047"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "DP 3017/2014 citation dated 14-Oct-2014, primary judicial copy"
+      ],
+      "identity_boundary": "Historic criminal-investigation organ identity for the cited source. The citation does not identify Judge or LAJ."
+    }
+  ]
+}

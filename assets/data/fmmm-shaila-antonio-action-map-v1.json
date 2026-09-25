@@ -1,0 +1,328 @@
+{
+  "schema": "por-derecho.fmmm-shaila-antonio-action-map.v1",
+  "control_id": "PD-SP-FSA-ACTION-MAP-20260922-01",
+  "control_date": "2026-09-22",
+  "status": "SOURCE_LED_MULTI_PHASE_ACTION_MAP_NOT_ADJUDICATED_FINDING",
+  "scope": "Francisco Mario Matos Matas, Shaila María Cogolludo Ramos and Antonio Cogolludo Rojas across the Sun Park Owners' Community organ, the actor-specific Montelanza/Molina-linked dissenting-owner perimeter, Pamanil/Pamalexsha administration, the 2017-2018 security/access phase, the Acosta Matos/CAM perimeter and later corporate continuity.",
+  "attribution_rule": "Every row separates documented role/action, attributed allegation and open proof. A family, corporate, representative or chronological link does not transfer another actor's act, knowledge, intent, benefit or liability.",
+  "actors": [
+    {
+      "id": "PD-SP-P-0009",
+      "name": "Francisco Mario Matos Matas",
+      "short": "FMMM",
+      "earliest": "2011-06-22"
+    },
+    {
+      "id": "PD-SP-P-0008",
+      "name": "Shaila María Cogolludo Ramos",
+      "short": "Shaila",
+      "earliest": "2014-04-08"
+    },
+    {
+      "id": "PD-SP-P-0007",
+      "name": "Antonio Cogolludo Rojas",
+      "short": "Antonio",
+      "earliest": "2014-04-10"
+    }
+  ],
+  "phases": [
+    {
+      "id": "FSA-PH-01",
+      "period": "2008-2011",
+      "label": "Montelanza/Molina-linked dissident-owner origin and Community capture question",
+      "context": "The controlled record shows owner-by-owner CEXP accession/non-adherence, a defined Molina-linked split by 2009, the 2-Feb-2011 governance change and the 22-Jun-2011 debt/vote/authority matrix. This does not make every Molina-named owner one faction or prove common purpose.",
+      "routes": [
+        "en/community-instrumentalisation/2008-governance-instruments/",
+        "en/montelanza-monte-lanza-sl/",
+        "en/community-instrumentalisation/acta-document-room/2011-06-22/"
+      ],
+      "actions": [
+        {
+          "actor": "PD-SP-P-0009",
+          "date": "2011-06-22",
+          "status": "DOCUMENTED_ROLE",
+          "action": "Recorded in Community Administrator functions; Pamanil is ratified for administration/maintenance while debt, voting, document custody and litigation are addressed.",
+          "connection": "This places FMMM inside the Community mechanism that followed the AAS/Molina-linked governance shift.",
+          "limit": "Lawful appointment, contract, mandate, authorship of each debt/certificate and intent remain separate proof questions."
+        }
+      ]
+    },
+    {
+      "id": "FSA-PH-02",
+      "period": "2014-2016",
+      "label": "Representation and administration consolidation",
+      "context": "The Community record becomes a three-person documentary cluster without collapsing identities.",
+      "routes": [
+        "en/community-instrumentalisation/communications-pamanil/",
+        "en/community-instrumentalisation/acta-document-room/2016-04-26/",
+        "en/community-instrumentalisation/2016-transcript/"
+      ],
+      "actions": [
+        {
+          "actor": "PD-SP-P-0009",
+          "date": "2014-04-08",
+          "status": "DOCUMENTED_COMMUNICATION",
+          "action": "Appears with Shaila in the Pamanil/Community communications perimeter.",
+          "connection": "Carries the 2011 administrator lane into the 2014 dispute over convocation, debt, voting and authority.",
+          "limit": "A communication does not prove universal Community authority or criminal purpose."
+        },
+        {
+          "actor": "PD-SP-P-0008",
+          "date": "2014-04-08",
+          "status": "DOCUMENTED_COMMUNICATION",
+          "action": "Appears in the Pamanil/Community communication sent shortly before the 10-Apr meeting.",
+          "connection": "First controlled date placing Shaila in the administration/communications environment.",
+          "limit": "No corporate office or universal mandate is proved by this document alone."
+        },
+        {
+          "actor": "PD-SP-P-0007",
+          "date": "2014-04-10",
+          "status": "DOCUMENTED_REPRESENTATION",
+          "action": "Represented Cristina Molina Petit at the notarial Community meeting.",
+          "connection": "Direct bridge from Antonio into the named Molina-linked owner/representation perimeter.",
+          "limit": "Representation of Cristina does not prove representation of every Molina-linked owner or a common plan."
+        },
+        {
+          "actor": "PD-SP-P-0007",
+          "date": "2015-11-19",
+          "status": "DOCUMENTED_REPRESENTATION",
+          "action": "Again represented Cristina Molina Petit in the surviving Community act.",
+          "connection": "Shows continuity of the Antonio↔Cristina representation lane.",
+          "limit": "The act-specific power and legal effect remain source-specific."
+        },
+        {
+          "actor": "PD-SP-P-0009",
+          "date": "2016-04-26",
+          "status": "DOCUMENTED_ROLE",
+          "action": "Continues as Community administrator while the file records incomplete accounts, recalculated balances/certification authority and a Pamanil→Pamalexsha provider transition.",
+          "connection": "Preserves document/debt/administration continuity through the entity-label change.",
+          "limit": "No universal legal succession from Pamanil to Pamalexsha is proved."
+        },
+        {
+          "actor": "PD-SP-P-0007",
+          "date": "2016-04-26",
+          "status": "DOCUMENTED_REPRESENTATION",
+          "action": "Represented Inversiones Salinetas at the Community meeting.",
+          "connection": "Places Antonio in another named owner/corporate lane within the same Community organ.",
+          "limit": "Representation does not prove ownership, control of the Community or shared intent."
+        },
+        {
+          "actor": "PD-SP-P-0009",
+          "date": "2016-06-11",
+          "status": "DOCUMENTED_MEETING",
+          "action": "Participated in the recorded PwC/LPB/Community working meeting on operation, costs, debt, records and insolvency.",
+          "connection": "Connects Community administration and the debt/records architecture to professional notice and later insolvency questions.",
+          "limit": "It was not an Owners' Community ACTA; transcript/authentication limits remain."
+        }
+      ]
+    },
+    {
+      "id": "FSA-PH-03",
+      "period": "2017-2018",
+      "label": "Named Community offices, Pamalexsha administration and security/access",
+      "context": "This is the strongest jointly documented/attributed phase for the three, but their functions remain different.",
+      "routes": [
+        "en/community-instrumentalisation/acta-document-room/2017-06-12/",
+        "en/community-instrumentalisation/acta-document-room/2018-05-18/",
+        "en/sun-park-takeover-7-june-2018/"
+      ],
+      "actions": [
+        {
+          "actor": "PD-SP-P-0007",
+          "date": "2017-06-12",
+          "status": "DOCUMENTED_OFFICE",
+          "action": "Elected Community president.",
+          "connection": "Puts Antonio at the head of the organ during the period leading into security/access measures.",
+          "limit": "Election validity, title/power and each instruction remain separately auditable."
+        },
+        {
+          "actor": "PD-SP-P-0008",
+          "date": "2017-06-12",
+          "status": "DOCUMENTED_OFFICE",
+          "action": "Recorded as Community treasurer; the next-day Pamalexsha email signed 'Shaila' announced Antonio's presidency and that Pamalexsha had been renewed for administration services.",
+          "connection": "Connects Shaila personally to Community communication and the administration-services vehicle.",
+          "limit": "Email authorship/role does not prove every accounting, bank, voting or access act."
+        },
+        {
+          "actor": "PD-SP-P-0009",
+          "date": "2017-06-12",
+          "status": "DOCUMENTED_OFFICE",
+          "action": "Recorded as secretary-administrator; Pamalexsha/FMMM administration continues and bank/certification/claim functions are approved in the meeting record.",
+          "connection": "Extends the 2011 administration/custody lane into the immediate pre-2018 period.",
+          "limit": "Each certificate, bank act, debt figure and instruction requires its own source."
+        },
+        {
+          "actor": "PD-SP-P-0007",
+          "date": "2018-05-18",
+          "status": "DOCUMENTED_OFFICE",
+          "action": "Chaired the meeting that authorised the president to hire security up to €8,500/month for access control/preservation.",
+          "connection": "Direct office-level bridge into the security/access route immediately preceding 7 June.",
+          "limit": "The minute does not itself prove who later instructed guards/locksmiths, spatial scope, possession transfer or unlawful purpose."
+        },
+        {
+          "actor": "PD-SP-P-0008",
+          "date": "2018-05-18",
+          "status": "DOCUMENTED_OFFICE",
+          "action": "Recorded as treasurer; appears in the voting/administrative environment of the security meeting.",
+          "connection": "Places her in the organ at the access/security hinge.",
+          "limit": "Exact vote, bank/accounting act, communication or implementation remains actor-specific."
+        },
+        {
+          "actor": "PD-SP-P-0009",
+          "date": "2018-05-18",
+          "status": "DOCUMENTED_OFFICE",
+          "action": "Recorded as secretary-administrator in the security/access meeting.",
+          "connection": "Document and administration custody meets the new security/access authority path.",
+          "limit": "The minute alone does not prove operational instruction or physical implementation."
+        },
+        {
+          "actor": "PD-SP-P-0007",
+          "date": "2018-06-07",
+          "status": "ATTRIBUTED_OPERATIONAL_LINK",
+          "action": "Project Sun Rock alleges an authority/implementation role in the material-control operation.",
+          "connection": "Community presidency is the asserted bridge between the 18-May resolution and practical access/security implementation.",
+          "limit": "Provider contract, payer, instructions, presence, keys/locks acts and reaction must be proved individually."
+        },
+        {
+          "actor": "PD-SP-P-0008",
+          "date": "2018-06-07",
+          "status": "ATTRIBUTED_OPERATIONAL_LINK",
+          "action": "Project Sun Rock alleges a treasury/voting/administrative/access-rule role in implementation.",
+          "connection": "The allegation links her Community/Pamalexsha administrative lane to the 2018 operational phase.",
+          "limit": "Direct instruction, presence, bank use, communications and exact intervention remain open proof."
+        },
+        {
+          "actor": "PD-SP-P-0009",
+          "date": "2018-06-07",
+          "status": "ATTRIBUTED_OPERATIONAL_LINK",
+          "action": "Project Sun Rock alleges continuity from administration/debt/records into material implementation.",
+          "connection": "This is the asserted FMMM bridge from the earlier dissident/Community mechanism to the Acosta Matos/CAM phase.",
+          "limit": "Direct instruction, physical act, purpose and benefit must be shown actor by actor."
+        }
+      ]
+    },
+    {
+      "id": "FSA-PH-04",
+      "period": "2017-2022",
+      "label": "Acosta Matos/CAM perimeter interface",
+      "context": "CAM's credit/title entry and unit acquisitions are separate from the Community organ. The investigative question is where the two structures interacted and who supplied authority, information or implementation.",
+      "routes": [
+        "en/cam-creditor-control-shadow-administration-judicial-omission/",
+        "en/acosta-matos-perimeter/",
+        "en/sun-park-takeover-7-june-2018/",
+        "en/community-instrumentalisation/acta-document-room/2022-02-04/"
+      ],
+      "actions": [
+        {
+          "actor": "PD-SP-P-0007",
+          "date": "2017-2018",
+          "status": "DOCUMENTED_PLUS_ATTRIBUTED",
+          "action": "Community presidency overlaps in time with CAM's credit/title entry and the 2018 security/access route.",
+          "connection": "The controlled inquiry tests whether president/security functions became an authority bridge used by CAM/Acosta Matos.",
+          "limit": "Temporal overlap and office do not prove CAM instruction, agreement or unlawful purpose."
+        },
+        {
+          "actor": "PD-SP-P-0008",
+          "date": "2017-2018",
+          "status": "DOCUMENTED_PLUS_ATTRIBUTED",
+          "action": "Treasury/administrative/voting role overlaps the same CAM entry and access period.",
+          "connection": "The controlled inquiry tests records, accounting, voting lists, communications and access rules for CAM-linked use.",
+          "limit": "No automatic transfer of CAM conduct or knowledge."
+        },
+        {
+          "actor": "PD-SP-P-0009",
+          "date": "2017-2022",
+          "status": "DOCUMENTED_PLUS_ATTRIBUTED",
+          "action": "Secretary-administrator/document-custody continuity spans CAM's entry, the 2018 access phase and the later 2022 Community/project meeting.",
+          "connection": "This is the longest personal documentary bridge between the earlier Community mechanism and the later Acosta Matos project phase.",
+          "limit": "Continuity does not by itself prove a common criminal plan."
+        },
+        {
+          "actor": "PD-SP-P-0009",
+          "date": "2022-02-04",
+          "status": "DOCUMENTED_ROLE",
+          "action": "Continues in secretary-administrator/bank-authority lane while JDAM chairs the Community project meeting.",
+          "connection": "Creates a direct later Community↔Acosta Matos project interface requiring transaction/document tracing.",
+          "limit": "Exact instructions, benefit, causation and legal authority remain source-specific."
+        }
+      ]
+    },
+    {
+      "id": "FSA-PH-05",
+      "period": "2021-2026+",
+      "label": "Later corporate continuity and disclosure",
+      "context": "Later corporate facts can identify custody, economic relationships and disclosure questions, but must not be projected backward as proof of earlier conduct.",
+      "routes": [
+        "en/pamalexsha-servicios-integrales-sl/",
+        "en/explotaciones-noalpa-sl/",
+        "en/santa-lucia-real-estate-sl/",
+        "en/orion-rental-socimi/"
+      ],
+      "actions": [
+        {
+          "actor": "PD-SP-P-0007",
+          "date": "2013-2025",
+          "status": "OFFICIAL_CORPORATE",
+          "action": "Official BORME records place Antonio as Pamalexsha's initial sole administrator, later sole administrator of Noalpa and in Santa Lucia Real Estate offices.",
+          "connection": "Objectively connects Antonio's Community period to later corporate vehicles in the same personal/professional network.",
+          "limit": "Noalpa/Santa Lucia are not thereby proved to have operated Sun Park or shared a criminal purpose."
+        },
+        {
+          "actor": "PD-SP-P-0008",
+          "date": "2021-2026",
+          "status": "OFFICIAL_CORPORATE",
+          "action": "Official BORME records later powers to Shaila in Noalpa and Pamalexsha.",
+          "connection": "Supports later corporate continuity and custody/authority questions.",
+          "limit": "These powers must not be backdated to 2014, 2017 or 2018."
+        },
+        {
+          "actor": "PD-SP-P-0009",
+          "date": "2024+",
+          "status": "OFFICIAL_CORPORATE",
+          "action": "Official records place FMMM and José Daniel Acosta Matos together on Orion's board and FMMM among AGM power-holders.",
+          "connection": "Creates a later objective FMMM↔Acosta Matos corporate overlap.",
+          "limit": "A later board/power relationship does not prove earlier Sun Park coordination, knowledge or wrongdoing."
+        }
+      ]
+    }
+  ],
+  "contemporaneous_private_investigative_material": [
+    {
+      "date": "2018-06-29",
+      "source": "Email package 'RELACION MOLINA Y MATOS REGISTRADA - empresas y cargos'",
+      "meaning": "Shows contemporaneous effort to map CAM, Pamanil/Pamalexsha, Molina-linked entities and Community/professional actors.",
+      "limit": "Research/advocacy package; does not itself prove the relationships asserted beyond its underlying registry documents."
+    },
+    {
+      "date": "2018-07-18",
+      "source": "Q&A Penal 1132/2018 - CAM, Matos, Cogolludos, Borja",
+      "meaning": "Shows that by July 2018 the investigation expressly tested CAM/JDAM, FMMM, Antonio, Shaila, Molina-linked owners, Pamanil/Pamalexsha and Community/security questions as one connected hypothesis.",
+      "limit": "Question list/advocacy material, not adjudicated fact."
+    },
+    {
+      "date": "2018-11-12",
+      "source": "Email to counsel requesting the draft 'contra FMMM, Cogolludo y Shaila'",
+      "meaning": "Shows contemporaneous grouping of the trio in contemplated criminal work.",
+      "limit": "Proves the existence of the contemplated theory, not its truth or filing status."
+    }
+  ],
+  "source_classes": [
+    "primary/public ACTAs and corporate registers",
+    "controlled repository/source maps",
+    "public GitLab Pages comparator",
+    "all three connected Gmail accounts",
+    "Library/conversation files"
+  ],
+  "conclusion": "The strongest source-led continuity is a relay, not a single undifferentiated group: actor-specific Montelanza/Molina-linked owner positions and representation feed into the 2011 Community debt/vote/authority mechanism; FMMM/Pamanil provide the earliest continuous administration/custody lane; Antonio and Shaila enter by 2014; all three hold named Community/administration roles by 2017; the 18-May-2018 security/access resolution is the strongest documented three-person Community hinge; 7-Jun-2018 is the strongest attributed operational convergence with the Acosta Matos/CAM perimeter; later corporate links provide disclosure/custody context but cannot be backdated.",
+  "open_proof": [
+    "original powers/proxies for each represented owner and meeting",
+    "FMMM appointment/contract/remuneration and document/bank custody chain",
+    "Pamanil→Pamalexsha contract/archive/funds/personnel transfer",
+    "2017 and 2018 original audio/annexes/voting arithmetic",
+    "security provider contract, payer, instructions, keys/locksmith logs and spatial scope",
+    "CAM acquisition deed/payment/seller chain for each relevant unit",
+    "actor-specific communications with CAM/JDAM/LPAM and Insolvency Administrator",
+    "2022 bank, levy, project and implementation records",
+    "certified corporate/shareholder history for later Pamalexsha/AGM/Orion links"
+  ]
+}

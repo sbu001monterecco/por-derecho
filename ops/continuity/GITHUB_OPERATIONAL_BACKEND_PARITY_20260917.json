@@ -1,0 +1,113 @@
+{
+  "schema": "por-derecho.github-operational-backend-parity.v1",
+  "control_id": "PD-GH-BACKEND-PARITY-20260917-01",
+  "control_date": "2026-09-17",
+  "status": "ACTIVE_OUTAGE_CONTINUITY",
+  "github_base_sha": "da67c0c2731c550b0866dad1f679c437f2b612f9",
+  "last_verified_gitlab_main_sha": "7d086d098676eecc2c1647ed09b348d8dc0bdc69",
+  "outage_working_branch": "continuity/gitlab-block-working-lane-20260917",
+  "frozen_checkpoints": [
+    {
+      "branch": "continuity/gitlab-block-checkpoint-20260917-0920utc",
+      "sha": "9fdda70bb1e4dcc572b776b0a3ba7fa6cffd86fc"
+    },
+    {
+      "branch": "continuity/gitlab-block-parity-checkpoint-20260917",
+      "sha": "da67c0c2731c550b0866dad1f679c437f2b612f9"
+    },
+    {
+      "branch": "continuity/gitlab-block-checkpoint-20260919-0306utc",
+      "sha": "c2d1f9f605086d05c84363c11df4cc04f7e0dfc1"
+    }
+  ],
+  "checkpoint_ref_provenance": [
+    {
+      "branch": "continuity/gitlab-block-checkpoint-20260917-0920utc",
+      "recorded_snapshot_sha": "9fdda70bb1e4dcc572b776b0a3ba7fa6cffd86fc",
+      "observed_ref_sha_20260919": "d20416284e96bc706044b341b27ce5ba34ecb070",
+      "relationship": "VERIFIED_FAST_FORWARD",
+      "ahead_by_commits": 32,
+      "behind_by_commits": 0,
+      "merge_base_sha": "9fdda70bb1e4dcc572b776b0a3ba7fa6cffd86fc",
+      "verification_source": "GitHub compare commits",
+      "boundary": "The recorded snapshot SHA remains the immutable historical anchor. The current branch ref is a descendant fast-forward and must not be force-moved or rewritten to make the ledger match."
+    }
+  ],
+  "layers": [
+    {
+      "id": "IDENTITY_REGISTRY",
+      "status": "RECOVERED_STALE_RECONCILIATION_REQUIRED",
+      "github_control": "assets/data/matter-identity-registry-v1.json",
+      "known_count": 379,
+      "known_control_date": "2026-09-05",
+      "boundary": "Do not certify 17-Sep GitLab parity until exact delta reconciliation."
+    },
+    {
+      "id": "PROCEEDINGS_REGISTRY",
+      "status": "RECOVERED_STALE_RECONCILIATION_REQUIRED",
+      "github_control": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+      "known_latest_github_backfill": "2026-09-02"
+    },
+    {
+      "id": "EVIDENCE_INTELLIGENCE",
+      "status": "FUNCTIONAL_PARITY_SUBSTANTIAL",
+      "github_control": ".github/evidence-intelligence/README.md",
+      "components": ["schemas", "source classes", "records", "retrieval pilot", "monitoring", "identity compatibility"]
+    },
+    {
+      "id": "SECOND_PAIR_OF_EYES",
+      "status": "FUNCTIONAL_PARITY_SUBSTANTIAL",
+      "github_control": "research/por-derecho/second-pair-of-eyes/"
+    },
+    {
+      "id": "CASE_PRISM",
+      "status": "FUNCTIONAL_PARITY_SUBSTANTIAL",
+      "github_control": "assets/data/proceedings-case-prism-v1.json"
+    },
+    {
+      "id": "PUBLICATION_CONTROLLER",
+      "status": "FUNCTIONAL_PARITY_SUBSTANTIAL",
+      "github_control": "ops/PUBLICATION_CONTROLLER.md",
+      "boundary": "Server-side required status-check enforcement remains weaker than the repository-level controller."
+    },
+    {
+      "id": "GITHUB_ACTIONS_BACKEND",
+      "status": "OPERATIONAL",
+      "github_control": ".github/workflows/"
+    },
+    {
+      "id": "AGENT_GOVERNANCE",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT_ADDED",
+      "github_controls": ["AGENTS.md", ".github/copilot-instructions.md", "ops/duo/DUO_ORCHESTRATION_PROTOCOL_20260917.md"]
+    },
+    {
+      "id": "PUBLIC_IMPACT_SHADOW",
+      "status": "FUNCTIONAL_GITHUB_EQUIVALENT_ADDED_EXACT_GITLAB_BYTES_PENDING",
+      "github_control": "scripts/classify_public_impact_shadow_20260917.py",
+      "last_known_gitlab_branch_commit": "738ab3ddb7d4c7ea91da705cf19045378b8d235f"
+    },
+    {
+      "id": "RELEASE_BUNDLE_GUARD",
+      "status": "FUNCTIONAL_GITHUB_COMPATIBILITY_TEST_ADDED_EXACT_GITLAB_TEST_PENDING",
+      "github_control": "tests/test_github_outage_backend_20260917.py",
+      "gitlab_exact_pending": "tests/test_release_bundle_20260914.py"
+    },
+    {
+      "id": "GITLAB_DUO_EXECUTION_CONFIG",
+      "status": "EXACT_BYTES_PENDING_PLATFORM_SPECIFIC",
+      "gitlab_paths": [".gitlab/duo/agent-config.yml", ".gitlab/duo/mr-review-instructions.yaml"]
+    },
+    {
+      "id": "GITLAB_NATIVE_METADATA",
+      "status": "PLATFORM_NATIVE_UNRECOVERED",
+      "components": ["merge request discussions", "approvals", "work items", "Duo sessions and reviews", "pipeline history and artifacts", "CI variables", "runner state", "environments", "project/group settings", "Orbit/index state"]
+    }
+  ],
+  "truth_rules": [
+    "Functional parity is not exact byte parity.",
+    "GitHub outage-period code must identify its provenance class.",
+    "Unavailable GitLab-native state remains pending rather than inferred.",
+    "Private evidence remains outside public Git.",
+    "Restored GitLab state controls only after exact reconciliation with outage-period GitHub work."
+  ]
+}

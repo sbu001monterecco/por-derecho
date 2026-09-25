@@ -1,0 +1,21 @@
+# CORRECTION REGISTER ADDENDUM — DE FACTO ADMINISTRATION / COMMUNITY DEBT
+
+**Control date:** 20 August 2026  
+**Status:** supplements `archive/CORRECTION_REGISTER.md`; apply before reusing older Community/AC/shadow-administration wording.
+
+| ID | Prior / unsafe proposition | Corrected controlling proposition | Basis / consequence |
+|---|---|---|---|
+| CR-DFA-001 | Every post-2016 change required an incidente concursal | The applicable mechanism depended on the field changed. Former Article 97 bis was used for the Community contingency and creditor-holder substitution; claims against the estate were expressly updateable. Every later amount still requires an identified lawful basis. | Separate holder, amount, classification, contingency, estate claim, bid condition and deed consideration. |
+| CR-DFA-002 | The Community’s €718,663.24 remained a fixed definitive debt throughout liquidation | The 20-Jan-2017 order changed the pre-concurso claim to ordinary contingent **without own amount**. Later use of €718,663.24 was hypothetical/reserve-based pending the underlying litigation. | Do not present €718,663.24 as a final quantified claim after Jan-2017 without a later final determination. |
+| CR-DFA-003 | Later Community figures were clandestinely inserted | The 2019 and 2020 AC filings disclosed the creditor certificate/spreadsheet, the category problem and the requested better-bid reserve. The stronger current issue is substantive verification and functional category collapse, not proven concealment. | Public wording: visible but disputed treatment; clandestinity remains unproved. |
+| CR-DFA-004 | Private actors were already proved to be shadow administrators of LPB/the concurso | The record documents private control of debt, voting, access, security and maintenance functions and AC delegation/reliance. Full `administrador de hecho` status requires stable autonomous management or habitual decision influence under the applicable legal test. | Use `functional de facto-management elements` unless counsel validates the stronger legal conclusion. |
+| CR-DFA-005 | Operator payment evidence proves all Community debt was fabricated/double charged | The payment corpus strongly supports a duplicate-charge investigation. Double charging must be established invoice by invoice through service, period, beneficiary, payer and recharge identity. | Do not convert substantial payment evidence into a global falsity finding. |
+| CR-DFA-006 | AC and private actors’ aligned positions prove collusion | The record proves coordination, referrals, shared structures and mutual reliance in identified episodes. A criminal agreement requires communications or conduct showing shared knowledge of falsity and common unlawful purpose. | Distinguish ordinary lawful coordination, negligence, knowing facilitation and coordinated participation. |
+| CR-DFA-007 | Better-bid or deed figures automatically amended the definitive privileged credit | The 23-Jul-2019 appellate ruling expressly treated the calculation as liquidation/bid effect, not modification of the definitive texts. Later deed consideration is a separate legal quantity. | Preserve the €9,052,251.69 classification versus later threshold/payoff/consideration distinction. |
+| CR-DFA-008 | AC delegated hotel operation to CAM/private actors | Current evidence establishes delegation/reliance for access, security and maintenance functions, not the hotel-operation mandate itself. | Hotel operation/control must be proved by contracts, instructions, revenue and staff records. |
+| CR-DFA-009 | Community security was necessarily unlawful | The strongest defence is genuine preservation/safety need, facial meeting authority and AC statutory powers. The investigation concerns scope, voting legitimacy, property perimeter, implementation and later use. | Always state the lawful-protection explanation. |
+| CR-DFA-010 | No later incidente located means no later procedural act exists | The complete certified Section 1/5 docket has not yet been obtained. | Use `not yet located`; docket/index remains P0. |
+
+## Propagation rule
+
+When a later source changes one of these propositions, update this addendum, the canonical forensic control, machine-readable dataset, public ES/EN pages and any confidential prosecutorial memorandum. Do not erase the correction history.

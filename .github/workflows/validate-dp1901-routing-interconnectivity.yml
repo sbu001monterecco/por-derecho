@@ -1,0 +1,62 @@
+name: Validate DP1901 routing interconnectivity
+
+on:
+  pull_request:
+    paths:
+      - 'en/dp-1901-2026/**'
+      - 'es/dp-1901-2026/**'
+      - 'en/fiscalia-dip-2-2026/**'
+      - 'es/fiscalia-dip-2-2026/**'
+      - 'en/control-24-insolvency-judge-complaint-36-2012/**'
+      - 'es/control-24-denuncia-juez-concurso-36-2012/**'
+      - 'en/proceedings/gc-hc-010/**'
+      - 'es/procedimientos/gc-hc-010/**'
+      - 'en/proceedings/gc-cri-008/**'
+      - 'es/procedimientos/gc-cri-008/**'
+      - 'en/cgpj-permanent-commission-reader-room/**'
+      - 'es/cgpj-comision-permanente-sala-lectura/**'
+      - 'en/cgpj-public-prosecution-routing-update-20-august-2026/**'
+      - 'es/actualizacion-cgpj-fiscalia-20-agosto-2026/**'
+      - 'en/tsj-canarias-exp-gub-38-2026/**'
+      - 'es/tsj-canarias-exp-gub-38-2026/**'
+      - 'assets/dp1901-routing-collision-20260919.js'
+      - 'assets/data/dp1901-routing-collision-v1.json'
+      - 'assets/data/control-21-22-24-continuity-v1.json'
+      - 'assets/visuals/dp1901-routing-collision-20260919.svg'
+      - 'evidence/judicial/dp-1901-2026/**'
+      - 'scripts/validate_dp1901_routing_interconnectivity.py'
+  push:
+    branches: [main]
+    paths:
+      - 'en/dp-1901-2026/**'
+      - 'es/dp-1901-2026/**'
+      - 'en/fiscalia-dip-2-2026/**'
+      - 'es/fiscalia-dip-2-2026/**'
+      - 'en/control-24-insolvency-judge-complaint-36-2012/**'
+      - 'es/control-24-denuncia-juez-concurso-36-2012/**'
+      - 'en/proceedings/gc-hc-010/**'
+      - 'es/procedimientos/gc-hc-010/**'
+      - 'en/proceedings/gc-cri-008/**'
+      - 'es/procedimientos/gc-cri-008/**'
+      - 'assets/dp1901-routing-collision-20260919.js'
+      - 'assets/data/dp1901-routing-collision-v1.json'
+      - 'assets/data/control-21-22-24-continuity-v1.json'
+      - 'assets/visuals/dp1901-routing-collision-20260919.svg'
+      - 'evidence/judicial/dp-1901-2026/**'
+      - 'scripts/validate_dp1901_routing_interconnectivity.py'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/validate_dp1901_routing_interconnectivity.py

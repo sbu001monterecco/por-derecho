@@ -1,0 +1,109 @@
+{
+  "schema": "por-derecho.concurso36-ac-removal-fees-production-gaps.v1",
+  "control_id": "PD-C36-AC-GAPS-001",
+  "control_date": "2026-08-26",
+  "scope": "Finite production gaps for the removal, remuneration, appeal and separate cross-evidence routes.",
+  "rule": "A referenced document, intake receipt, filing or procedural act is not treated as an adjudicated fact or current proceeding status until the appropriate primary record is located and authenticated.",
+  "gaps": [
+    {
+      "id": "PD-C36-AC-GAP-001",
+      "priority": "P0",
+      "lane": "whole_concurso",
+      "state": "OPEN",
+      "missing": "Certified chronological docket/index for the complete Concurso 36/2012 file and all sections/incidents.",
+      "why_it_matters": "The 50-record specialist corpus and 127-record unitary catalogue remain discovery inventories, not the court-certified denominator.",
+      "next_source": "Court-office certified electronic index and authenticated export.",
+      "repository_cross_reference": "archive/CONCURSO36_AUTOS_FULLTEXT_UNITARY_RECORD_23AUG2026.md"
+    },
+    {
+      "id": "PD-C36-AC-GAP-002",
+      "priority": "P1",
+      "lane": "fees_first_instance",
+      "state": "OPEN",
+      "missing": "Standalone 1 September 2025 decree and the March 2025 procedural direction cited in the clarification incident.",
+      "why_it_matters": "The later clarification record cannot substitute for the complete earlier instruments.",
+      "next_source": "Certified court docket and source PDFs.",
+      "repository_cross_reference": "ME-073 / F10–F14"
+    },
+    {
+      "id": "PD-C36-AC-GAP-003",
+      "priority": "P0",
+      "lane": "fees_first_instance",
+      "state": "OPEN",
+      "missing": "Minutes, audiovisual record and admitted-evidence record for the 20 January 2026 preliminary hearing.",
+      "why_it_matters": "The hearing record may fix admissions, objections and evidentiary treatment that are not visible in Judgment 4/2026.",
+      "next_source": "Court audiovisual/minutes request and authenticated evidence list.",
+      "repository_cross_reference": "archive/CONCURSO36_AUTOS_FULLTEXT_UNITARY_RECORD_23AUG2026.md"
+    },
+    {
+      "id": "PD-C36-AC-GAP-004",
+      "priority": "P0",
+      "lane": "removal_appeals",
+      "state": "OPEN",
+      "missing": "Signed current merits disposition and finality record after Auto 223/2026 in combined RPL 3304/2025 and RPL 3319/2025.",
+      "why_it_matters": "Accumulation is not a merits decision and the first-instance orders did not determine the seven substantive removal blocks.",
+      "next_source": "Certified Section Four appellate roll and current signed disposition.",
+      "repository_cross_reference": "ME-071 / R30–R32"
+    },
+    {
+      "id": "PD-C36-AC-GAP-005",
+      "priority": "P0",
+      "lane": "fee_appeal",
+      "state": "OPEN",
+      "missing": "Signed current merits disposition and finality record in RPL 421/2026.",
+      "why_it_matters": "The located LAJ act proves appellate processing, not a later merits outcome.",
+      "next_source": "Certified appellate roll and current signed disposition.",
+      "repository_cross_reference": "ME-072 / F15–F18"
+    },
+    {
+      "id": "PD-C36-AC-GAP-006",
+      "priority": "P0",
+      "lane": "preliminary_disclosure",
+      "state": "OPEN_IDENTITY",
+      "missing": "Exact court, certified docket, opening/exhibition act, policy-exhibition record and closure for Diligencias Preliminares 459/2024.",
+      "why_it_matters": "The proceeding is recited in party filings and Judgment 4/2026, but its autonomous official record and exact organ are not in the public corpus.",
+      "next_source": "Certified court record and LexNET filing/notification chain.",
+      "repository_cross_reference": "PD-SP-R-0016 (no caret) / F01 / F06 / F13"
+    },
+    {
+      "id": "PD-C36-AC-GAP-007",
+      "priority": "P0",
+      "lane": "fee_quantum",
+      "state": "OPEN",
+      "missing": "Complete month-by-month remuneration, invoice, tax, interest, bank-payment and estate-ledger bridge, including every reasoned post-month-twelve extension order.",
+      "why_it_matters": "The pleaded EUR 110,956.97 reconciles arithmetically but is neither bank-verified nor merits-adjudicated.",
+      "next_source": "Certified orders, invoices, tax filings, unbroken bank statements, quarterly reports and estate accounts.",
+      "repository_cross_reference": "ME-073 / assets/data/concurso36-ac-remuneration-quantitative-ledger-v1.json"
+    },
+    {
+      "id": "PD-C36-AC-GAP-008",
+      "priority": "P0",
+      "lane": "criminal_intake_ac",
+      "state": "OPEN",
+      "missing": "Certified reparto document assigning the 18 June 2026 AC-focused complaint associated with handwritten daily intake/reference 22.",
+      "why_it_matters": "The handwritten locator is not an official case number and cannot be equated to DP 1956/2026 without the allocation bridge.",
+      "next_source": "Decanato/registry assignment certificate, official procedure number, organ and current status.",
+      "repository_cross_reference": "ME-070 / GC-REF-029"
+    },
+    {
+      "id": "PD-C36-AC-GAP-009",
+      "priority": "P1",
+      "lane": "dp1901_private_actor_cross_evidence",
+      "state": "OPEN",
+      "missing": "Fiscal report, later signed admission/dismissal order and authenticated annex index in DP 1901/2026.",
+      "why_it_matters": "DP 1901/2026 is a separate private-actor/CAM route; it supplies only finite cross-evidence for AC knowledge, authority, control or benefit unless a signed act joins or adopts a proposition.",
+      "next_source": "Certified DP 1901/2026 docket and later signed acts.",
+      "repository_cross_reference": "PD-SP-R-0005 (^) / GC-CRI-008"
+    },
+    {
+      "id": "PD-C36-AC-GAP-010",
+      "priority": "P1",
+      "lane": "dp1956_ac_concurso",
+      "state": "OPEN",
+      "missing": "Complete certified DP 1956/2026 file, signed provisional-dismissal act, challenges and current status.",
+      "why_it_matters": "DP 1956/2026 is the separate AC/Concurso criminal route and must not be inferred from intake reference 22 or merged with DP 1901/2026.",
+      "next_source": "Certified court docket, complaint/annex index, signed orders and appeal record.",
+      "repository_cross_reference": "PD-SP-R-0004 (^) / GC-CRI-009"
+    }
+  ]
+}

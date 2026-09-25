@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.1",
+  "control_date": "2026-08-20",
+  "record_id": "SUN-PARK-2018-TAKEOVER-WORKS-UNITARY-SPINE-20260820",
+  "status": "ACTIVE_INVESTIGATION_NOT_A_GUILT_FINDING",
+  "architecture": "ONE_UNITARY_CAUSAL_SPINE_FIVE_EVIDENCE_LANES",
+  "supersedes": "CLEAN_START_AS_COEQUAL_TRACK",
+  "public_boundary": {
+    "criminal_takeover_proved": false,
+    "every_work_criminal_proved": false,
+    "ona_exit_certain": false,
+    "estate_or_productive_unit_destruction_proved": false,
+    "criminal_coordination_proved": false,
+    "actor_specific_proof_required": true,
+    "no_presumption_of_neutrality": true,
+    "local_title_analysis_does_not_break_causation": true,
+    "not_yet_located_not_nonexistent": true
+  },
+  "unitary_spine": [
+    "LIVING_HOTEL_AND_FUNDED_EXIT",
+    "PRE_TAKEOVER_PREPARATION",
+    "FORCE_BASED_MATERIAL_CONTROL_RUPTURE_2018_06_07",
+    "EXCLUSION_INTERRUPTION_AND_ASSET_TRANSFORMATION",
+    "PRE_TITLE_PROJECT_AND_COMMERCIALISATION",
+    "FORMALISATION_FINANCE_AND_OPENING_2022",
+    "CURRENT_OPERATION_VALUE_BENEFIT_AND_HARM"
+  ],
+  "lanes": [
+    {
+      "id": "LANE-A",
+      "key": "LIVING_PRODUCTIVE_UNIT_AND_FUNDED_EXIT",
+      "status": "PARTIALLY_CONTROLLED",
+      "question": "What operating value, productive capacity and ONA/Lagune/bridge-finance exit existed immediately before the takeover, and what conditions remained?"
+    },
+    {
+      "id": "LANE-B",
+      "key": "PREPARATION_AND_FORCE_BASED_TAKEOVER",
+      "status": "STRONGLY_SUPPORTED_WITH_SCOPE_AND_ATTRIBUTION_GAPS",
+      "question": "Who prepared and executed the change in access, locks, guards, keys, onsite control and hotel-wide practical capacity, through what authority and knowledge?"
+    },
+    {
+      "id": "LANE-C",
+      "key": "POST_TAKEOVER_ASSET_TRANSFORMATION_AND_DISPLACEMENT",
+      "status": "MATERIAL_GAPS",
+      "question": "Did deterioration, demolition, pilots and refurbishment preserve independent property or physically execute the alleged capture and substitution of the prior productive platform?"
+    },
+    {
+      "id": "LANE-D",
+      "key": "FORMALISATION_FINANCE_AND_NORMALISATION",
+      "status": "PARTIALLY_DOCUMENTED",
+      "question": "Which 2018-2022 project, Community, title, licence, investor, tax, funding and opening processes independently verified upstream facts and which relied on the pre-title position?"
+    },
+    {
+      "id": "LANE-E",
+      "key": "ENABLEMENT_HARM_BENEFIT_AND_REMEDY",
+      "status": "ACTOR_SPECIFIC_OPEN",
+      "question": "Who enabled, failed to stop, formalised, financed, benefited from, corrected or can still remedy each concursal, extraconcursal and cross-border consequence?"
+    }
+  ],
+  "defence_overlay": {
+    "kind": "NODE_BY_NODE_RED_TEAM_NOT_SEPARATE_TIMELINE",
+    "propositions": [
+      "CAM acted only within independently owned units",
+      "security and preservation measures were proportionate",
+      "the final 2022 project was materially different",
+      "valid authority existed in records not yet located",
+      "ONA or finance would have failed for independent reasons",
+      "later actors independently verified limited remits",
+      "later rights and protected third parties survive upstream defects"
+    ]
+  },
+  "events": [
+    {
+      "id": "UNITARY-2018-BASELINE",
+      "period": "2014-2018-06-06",
+      "lanes": ["LANE-A"],
+      "proposition": "Phased refurbishment planning, occupied/activity baseline, Gesvalt valuation, Lagune proposal and ONA lease indicate a living productive platform and conditional funded exit",
+      "status": "PARTIALLY_CONTROLLED"
+    },
+    {
+      "id": "UNITARY-2017-PREPARATION",
+      "period": "2017-10-02/2018-05-17",
+      "lanes": ["LANE-B"],
+      "proposition": "Physical-incursion, access, security, locksmith, plans, measurements and project-preparation leads pre-date 7 June",
+      "status": "CONTROLLED_LEADS_PRIMARY_COMPLETION_REQUIRED"
+    },
+    {
+      "id": "UNITARY-2018-SECURITY",
+      "date": "2018-05-18",
+      "lanes": ["LANE-B", "LANE-E"],
+      "proposition": "Community/security authority must be compared literally with later forced access, exclusion and hotel-wide practical control",
+      "status": "PRIMARY_ACTA_CONTROLLED_IMPLEMENTATION_OPEN"
+    },
+    {
+      "id": "UNITARY-2018-TAKEOVER",
+      "date": "2018-06-07",
+      "lanes": ["LANE-A", "LANE-B", "LANE-C", "LANE-E"],
+      "proposition": "Force on access, changed locks/chains, guard control and exclusion mark the central material-control rupture before formal title",
+      "status": "STRONGLY_SUPPORTED_NOT_WHOLE_HOTEL_TITLE_FINDING"
+    },
+    {
+      "id": "UNITARY-2018-FINANCE",
+      "period": "2018-06-12/2018-07-20",
+      "lanes": ["LANE-A", "LANE-E"],
+      "proposition": "Bridge-finance routes, reported court/Administrator notice and blocked or incomplete ONA inspection require but-for causation analysis",
+      "status": "PARTIAL"
+    },
+    {
+      "id": "UNITARY-2018-2021-WORKS",
+      "period": "2018-06-07/2021-12-31",
+      "lanes": ["LANE-C", "LANE-D"],
+      "proposition": "Deterioration, demolition, works, pilots, Lava Verde, Club Sei and RICPE presentation must be tested as possible phases of one pre-title conversion sequence",
+      "status": "MIXED_CONTROLLED_ALLEGED_OPEN"
+    },
+    {
+      "id": "UNITARY-2022-FORMALISATION",
+      "period": "2022-01-01/2022-12-31",
+      "lanes": ["LANE-D", "LANE-E"],
+      "proposition": "Community, title, licence, HNT, RICPE/RIC, incentive, FEDER, tourism and opening processes formalised and financed the current result but do not automatically cleanse the earlier route",
+      "status": "PARTIALLY_CONTROLLED_DEPENDENCIES_OPEN"
+    },
+    {
+      "id": "UNITARY-CURRENT-HARM",
+      "period": "2023-present",
+      "lanes": ["LANE-E"],
+      "proposition": "Current operation, value, revenue, financing and third-party reliance require asset-specific benefit, harm and remedy analysis",
+      "status": "ONGOING_AUDIT"
+    }
+  ],
+  "criminal_forensic_tests": [
+    "unauthorised_or_coercive_material_control",
+    "property_or_common_element_damage",
+    "destruction_or_impairment_of_masa_activa_and_productive_unit",
+    "frustration_of_rescue_refinancing_sale_or_exit",
+    "punishable_insolvency_or_creditor_prejudice",
+    "disloyal_administration",
+    "procedural_deception",
+    "documentary_falsity_or_knowing_use",
+    "knowing_facilitation_or_coordinated_participation",
+    "concealment_or_retaliation_where_evidenced"
+  ],
+  "p0_evidence": [
+    "complete ONA Lagune and bridge-finance files",
+    "pre-7-June operating and valuation baseline",
+    "complete access security locksmith keys CCTV and police package",
+    "unit and common-element works/invoice/payment/as-built matrix",
+    "complete Lava Verde Club Sei RICPE HNT MYND project chain",
+    "complete EUR 4.467m levy source-and-use ledger",
+    "Yaiza Cabildo tourism RIC incentive FEDER and lender files",
+    "before-after architectural operational valuation and insolvency-exit experts",
+    "actor-specific knowledge instruction reliance and corrective-response evidence"
+  ],
+  "public_routes": {
+    "es": "/por-derecho/es/reforma-derrama-suministros-sun-park/",
+    "en": "/por-derecho/en/sun-park-refurbishment-levy-utilities/"
+  },
+  "canonical_internal": "archive/SUN_PARK_REFURBISHMENT_AUTHORITY_MULTITRACK_FORENSIC_CONTROL_20AUG2026.md",
+  "retrieval_gate": "archive/SUN_PARK_REFURBISHMENT_AUTHORITY_MULTITRACK_RETRIEVAL_GATE_20AUG2026.md"
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.1",
+  "controlDate": "2026-08-19",
+  "status": "CANONICAL-OVERRIDE-FOR-RETRACTO-WORKSTREAM",
+  "purpose": "Claim-specific override/addendum to assets/data/legal-representation-v1.json for DP 1041/2017 / Article 1535. Where the base seed conflicts on these specific people or this specific matter, this file controls until the base seed is safely regenerated in full.",
+  "controlsMatter": "Diligencias Preliminares 1041/2017 / Article 1535 and linked post-2018 recovery work",
+  "overrides": [
+    {
+      "person": "Cristo Ayose Suárez Pimentel",
+      "baseIssue": "A simple former/non-primary or resignation-style narrative is incorrect for this matter.",
+      "replacementStatus": "BROADER_ROLE_CONTINUED__SPECIFIC_FORMAL_LPB_MANDATE_TERMINATED_BY_AC_25JAN2018",
+      "causation": "C5_DIRECT_CONTEMPORANEOUS_EVIDENCE",
+      "verified": [
+        "Acted for LPB in DP 1041/2017.",
+        "No voluntary resignation has been located.",
+        "On 25 January 2018 the insolvency administrator communicated termination of Cristo's professional relationship with LPB, requested venia/transfer of representation in DP 1041 and instructed no future LPB action without AC authorisation.",
+        "Cristo continued broader Sun Park legal activity after January 2018.",
+        "The 5 March 2018 Decree records LPB's withdrawal from DP 1041 and lists Francisco Borja Rodríguez Batllori Laffitte as LPB's lawyer.",
+        "The 13 May 2024 judicial-office order confirms DP 1041 was archived because of the claimant's withdrawal under the 5 March 2018 Decree."
+      ],
+      "publicationRule": "State the matter-specific AC termination as verified. Do not state that Cristo voluntarily resigned, that the AC personally drafted/signed/instructed the withdrawal, or that the Article 1535 claim was legally certain to succeed."
+    },
+    {
+      "person": "Armando Betancor Álamo",
+      "replacementStatus": "VERIFIED_RETAINED_ADVISER_2019",
+      "verified": [
+        "Signed Aweswell services/success-fee engagement located for 2019.",
+        "Subsequent legal drafting, review and strategy are documented.",
+        "Coordination with Cristo Suárez Pimentel, Juan Tomás Parrilla and Joaquín Ruiz de Infante Abella is documented on parts of the post-2018 recovery/challenge work."
+      ],
+      "open": "Map exact client/matter perimeter task by task."
+    },
+    {
+      "person": "Joaquín Ruiz de Infante Abella",
+      "replacementStatus": "VERIFIED_COLLABORATING_LAWYER_2019",
+      "verified": [
+        "Direct substantive drafting/filing activity located.",
+        "Coordinated legal work with Armando, Cristo and other counsel is documented."
+      ],
+      "open": "A separate standalone engagement letter/retainer has not yet been located."
+    },
+    {
+      "person": "Javier Sixto / Estefanía Sixto-Seijas",
+      "replacementStatus": "CURRENT_COUNSEL_WITH_LATER_ARCHIVE_REVIEW",
+      "verified": [
+        "Later review of archived Promontoria / retracto / AC-Cristo material is documented."
+      ],
+      "open": "No later Sixto communication has yet been located that definitively concludes the Article 1535 claim was viable or non-viable. Do not attribute either conclusion."
+    }
+  ],
+  "handoverOverride": {
+    "from": "Cristo Ayose Suárez Pimentel",
+    "client": "Luchy Playa Blanca, S.L.U.",
+    "matter": "DP 1041/2017 / related formal LPB authority",
+    "status": "FORMAL_MANDATE_TERMINATION_VERIFIED__WITHDRAWAL_INSTRUCTION_CHAIN_OPEN",
+    "voluntaryResignationLocated": false,
+    "exactAuthorityTerminationEvidenceLocated": true,
+    "authorityTerminationDate": "2018-01-25",
+    "successorRecordedByDecree": "Francisco Borja Rodríguez Batllori Laffitte",
+    "successorRecordDate": "2018-03-05",
+    "exactWithdrawalPleadingLocated": false,
+    "exactWithdrawalInstructionChainComplete": false,
+    "rule": "Continued activity on other Sun Park matters does not negate the verified end of Cristo's specific formal LPB mandate. The 5 March decree proves claimant-side withdrawal and registered representation, but not who internally instructed or drafted that withdrawal."
+  }
+}

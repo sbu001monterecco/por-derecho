@@ -1,0 +1,69 @@
+{
+  "schema": "por-derecho.retrieval-evaluations.v1",
+  "pilot_id": "PD-SP-RUN-0001",
+  "evaluations": [
+    {
+      "evaluation_id": "PD-SP-EVAL-0001",
+      "proceeding_id": "PD-SP-R-0002",
+      "question": "Which immutable proceeding identity corresponds to RPL 2523/2025?",
+      "top_k": 3,
+      "expected_any": ["identity:PD-SP-R-0002"],
+      "required_text": ["RPL 2523/2025"],
+      "forbidden_text": ["PD-ENT-"]
+    },
+    {
+      "evaluation_id": "PD-SP-EVAL-0002",
+      "proceeding_id": "PD-SP-R-0002",
+      "question": "How many located or reported appeal instruments exist for how many appellant interests?",
+      "top_k": 3,
+      "expected_any": ["map:instrument_count_rule", "source-control:four-appellant-interests-are-not-four-located-appeal-pleadings"],
+      "required_text": ["three", "four appellant interests"],
+      "forbidden_text": ["four separate appeal instruments"]
+    },
+    {
+      "evaluation_id": "PD-SP-EVAL-0003",
+      "proceeding_id": "PD-SP-R-0002",
+      "question": "Is the actual filed LPB appeal and its principal receipt located?",
+      "top_k": 3,
+      "expected_any": ["map:instrument:appeal:luchy-playa-blanca-s-l-u"],
+      "required_text": ["REPORTED_FILED_SUPPORT_LOCATED", "actual filed appeal"],
+      "forbidden_text": ["LPB FILED_COPY_AND_RECEIPT_LOCATED"]
+    },
+    {
+      "evaluation_id": "PD-SP-EVAL-0004",
+      "proceeding_id": "PD-SP-R-0002",
+      "question": "Which appeal jointly represents Pink Canary Services and Patricia Domínguez, and what is its evidence state?",
+      "top_k": 3,
+      "expected_any": ["map:instrument:appeal:pink-canary-services-patricia-dominguez"],
+      "required_text": ["joint", "FILED_COPY_AND_RECEIPT_LOCATED", "17-page"],
+      "forbidden_text": ["instrument_count: 2"]
+    },
+    {
+      "evaluation_id": "PD-SP-EVAL-0005",
+      "proceeding_id": "PD-SP-R-0002",
+      "question": "Was Aweswell Limited an appellant from Sentencia 163/2023 in RPL 2523/2025?",
+      "top_k": 3,
+      "expected_any": ["map:instrument:appeal:aweswell-limited"],
+      "required_text": ["No appeal identified", "separate"],
+      "forbidden_text": ["Aweswell appellant"]
+    },
+    {
+      "evaluation_id": "PD-SP-EVAL-0006",
+      "proceeding_id": "PD-SP-R-0002",
+      "question": "What later merits decision, service record or finality certificate has been located after the 4 June 2026 scheduling?",
+      "top_k": 4,
+      "expected_any": ["map:proceeding", "map:open_gaps"],
+      "required_text": ["later merits decision", "service record", "finality", "not located"],
+      "forbidden_text": ["final judgment located"]
+    },
+    {
+      "evaluation_id": "PD-SP-EVAL-0007",
+      "proceeding_id": "PD-SP-R-0002",
+      "question": "What rule governs public post-record analysis in the RPL 2523/2025 appeal lane?",
+      "top_k": 3,
+      "expected_any": ["map:record_only_firewall"],
+      "required_text": ["procedurally usable record", "public post-record analysis"],
+      "forbidden_text": ["automatically part of the appeal record"]
+    }
+  ]
+}

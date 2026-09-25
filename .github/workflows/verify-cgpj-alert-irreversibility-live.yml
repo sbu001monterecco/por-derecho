@@ -1,0 +1,48 @@
+name: Verify CGPJ alert-to-irreversibility live publication
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/verify_cgpj_alert_irreversibility_live.py'
+      - '.github/workflows/verify-cgpj-alert-irreversibility-live.yml'
+      - 'publication-manifests/cgpj-alert-irreversibility-visual-20260818.json'
+      - 'archive/CGPJ_ALERT_TO_IRREVERSIBILITY_VISUAL_CONTROL_18AUG2026.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-cgpj-alert-irreversibility-live-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  live-verification:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Poll public GitHub Pages publication
+        run: |
+          python scripts/verify_cgpj_alert_irreversibility_live.py \
+            --attempts 36 \
+            --interval 10 \
+            --timeout 20 \
+            --output artifacts/cgpj-alert-irreversibility-live/verification.json
+      - name: Show verification evidence
+        if: always()
+        run: |
+          test ! -f artifacts/cgpj-alert-irreversibility-live/verification.json || cat artifacts/cgpj-alert-irreversibility-live/verification.json
+      - name: Upload verification evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: cgpj-alert-irreversibility-live-verification
+          path: artifacts/cgpj-alert-irreversibility-live/verification.json
+          if-no-files-found: error
+          retention-days: 30

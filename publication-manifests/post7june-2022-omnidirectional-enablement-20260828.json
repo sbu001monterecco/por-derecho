@@ -1,0 +1,259 @@
+{
+  "publication_id": "PD-SP-ACTA-OMNI-20260828-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-28",
+  "current_state": "LIVE_VERIFIED",
+  "state": "LIVE_VERIFIED",
+  "branch": "codex/post-7jun2018-2022-360-20260828",
+  "base_sha": "dbd4ec90bda426c61c55e60fb1aa56362abac3cd",
+  "upstream_reconciliation": {
+    "fetched_origin_main_sha": "a9e394a893251ba393ae37ead58be82987666820",
+    "upstream_pull_request": 1145,
+    "rule": "Preserve published origin/main IDs; renumber only the unpublished package; transfer no facts between identities.",
+    "people": {
+      "PD-SP-P-0088": "Fernando Aguiar Acosta",
+      "PD-SP-P-0089": "Laura Hernando",
+      "PD-SP-P-0090": "Miguel Vázquez",
+      "PD-SP-P-0091": "Fernando Banderas Monis",
+      "PD-SP-P-0092": "Juan José Vera Díaz",
+      "PD-SP-P-0093": "Javier Acosta Matos",
+      "PD-SP-P-0094": "Gerardo Zacarías Acosta Matos"
+    },
+    "organisations": {
+      "PD-SP-O-0072": "IREA Corporate Finance, S.L.",
+      "PD-SP-O-0073": "Colliers International Spain, S.L.",
+      "PD-SP-O-0074": "Construcciones Acos-Matos, S.L."
+    },
+    "combined_counts": {
+      "total": 214,
+      "PERSON": 94,
+      "ORGANISATION": 74,
+      "STRUCTURE": 10,
+      "INSTITUTION": 18,
+      "PROCEEDING": 18
+    },
+    "correction_record": "CR-125"
+  },
+  "subject": "Bilingual omnidirectional visual and evidence control for the alleged 4-February-2022 meeting/ACTA enabling episode",
+  "attribution": "Gil Marer and Aweswell allege that preparation, selective exclusion, meeting, resolutions, ACTA construction, lack of direct Community communication and later use formed one enabling episode in a longer post-7-June-2018 sequence.",
+  "publication_authorization": {
+    "date": "2026-08-28",
+    "instruction": "Publish",
+    "scope": "Current post-7-June-2018 through 4-February-2022 branch package, including the omnidirectional ACTA visual, bilingual routes, canonical controls, push, pull request, merge and GitHub Pages verification."
+  },
+  "routes": [
+    "en/sun-park-takeover-7-june-2018/index.html",
+    "es/toma-control-sun-park-7-junio-2018/index.html",
+    "en/community-instrumentalisation/acta-document-room/2022-02-04/index.html",
+    "es/comunidad-instrumentalizacion/sala-documental-actas/2022-02-04/index.html"
+  ],
+  "expected_routes": {
+    "es": [
+      "es/toma-control-sun-park-7-junio-2018/index.html",
+      "es/comunidad-instrumentalizacion/sala-documental-actas/2022-02-04/index.html"
+    ],
+    "en": [
+      "en/sun-park-takeover-7-june-2018/index.html",
+      "en/community-instrumentalisation/acta-document-room/2022-02-04/index.html"
+    ]
+  },
+  "visual_model": {
+    "incoming_tracks": 4,
+    "hub_stages": 6,
+    "outgoing_tracks": 4,
+    "connector_meaning": "Bridge to prove in both directions; never a finding of agreement, intent, causation, offence or collective guilt.",
+    "statuses": [
+      "documented",
+      "attributed",
+      "inference",
+      "open",
+      "contrary"
+    ]
+  },
+  "terminology_controls": {
+    "hotel_mobbing": "Gil/Aweswell-attributed umbrella label, not a standalone offence.",
+    "judicial_safeguards": "LPB assets formally subject to insolvency-administration and judicial-supervision safeguards, whose practical effectiveness is disputed; formal protection architecture, not a guaranteed outcome. Matkator remained outside it.",
+    "de_facto_administrator": "Discrete functional control may justify inquiry; full status requires the date-specific legal test and is not established by influence, office, family relationship or benefit alone."
+  },
+  "mandatory_boundaries": [
+    "The located ACTA is not the native invitation, complete service ledger, diligenced book or proof of deliberate exclusion.",
+    "Gil reports no invitation or pre-meeting knowledge and no direct Community ACTA communication, followed by indirect post-meeting Thompson forwarding; the native route remains open.",
+    "The known and attended 26-April-2016 meeting prevents a universal concealed-meeting formulation.",
+    "LPB was inside Concurso 36/2012; Matkator and its property were outside LPB's estate.",
+    "The 2018 provisional dismissal and appellate confirmation remain mandatory adverse evidence.",
+    "Valid common/necessary works may lawfully be allocated by coefficient while CAM bears only an additional four-star upgrade.",
+    "RICPE/RIC, regional incentives, FEDER, Community contributions and operating revenue remain separate legal and accounting lives."
+  ],
+  "expected_source_files": [
+    "assets/post7-2022-omnidirectional-map-20260828.css",
+    "assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json",
+    "scripts/build_acta_meeting_lineage.py",
+    "scripts/validate_post7june_2022_deliberate_exclusion.py",
+    "scripts/render_post7june_2022_omnidirectional_map.mjs",
+    ".github/workflows/alberto-meeting-point-cross-proceeding.yml",
+    "archive/SUN_PARK_POST_7JUNE_2018_TO_4FEB2022_CONTINUING_HARM_CRIMINAL_FIRST_REVERSE_ENGINEERING_28AUG2026.md",
+    "archive/CORRECTION_REGISTER.md",
+    "docs/deletion-audits/2026-08-28-2022-acta-omnidirectional-enablement-visual-continuity.md"
+  ],
+  "validation": {
+    "state": "PR_CI_AND_BROWSER_RENDER_PASS",
+    "json": "PASS_WITH_DUPLICATE_KEY_CONTROL",
+    "generator": "PASS_20_EVENTS_40_PAGES",
+    "dedicated_control": "PASS_4_IN_6_STAGE_4_OUT_AND_TERMINOLOGY_LOCKS",
+    "acta_lineage_and_local_links": "PASS_20_EVENTS_40_PAGES_17_FULL_SOURCE_FAMILIES",
+    "publication_integrity": "PASS_74_MANIFESTS",
+    "audience_experience": "PASS_588_HTML_PAGES_8599_INTERNAL_LINKS_1767_PUBLIC_FILES",
+    "four_route_static_preflight": "PASS_NO_DUPLICATE_IDS_8_NODES_6_STAGES_3_TERMS_LINK_TARGETS_AND_FRAGMENTS_RESOLVED_CSS_BRACES_AND_BREAKPOINTS_PRESENT",
+    "render_runner_syntax": "PASS",
+    "browser_routes": 4,
+    "browser_viewports_per_route": 3,
+    "pull_request_checks": "PASS_36_OF_36",
+    "evidence": [
+      "PR #1146 completed 36/36 required checks before merge.",
+      "Dedicated ACTA workflow run 33168858619 / #9 completed successfully with the four-route × three-viewport render matrix."
+    ],
+    "acta_workflow_run_id": 33168858619,
+    "acta_workflow_run_number": 9,
+    "acta_workflow_conclusion": "success",
+    "browser_render": "PASS_4_ROUTES_X_3_VIEWPORTS_12_SCREENSHOTS",
+    "browser_render_claimed": true
+  },
+  "merge_sha": "faea6677f3a4df30eeefa92916d77a09826a0bab",
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "workflow_run_id": 33169202514,
+    "workflow_run_number": 1217,
+    "status": "success",
+    "exact_merge_sha": "faea6677f3a4df30eeefa92916d77a09826a0bab"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/sun-park-takeover-7-june-2018/",
+    "https://sbu001monterecco.github.io/por-derecho/es/toma-control-sun-park-7-junio-2018/",
+    "https://sbu001monterecco.github.io/por-derecho/en/community-instrumentalisation/acta-document-room/2022-02-04/",
+    "https://sbu001monterecco.github.io/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/2022-02-04/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/post7-2022-omnidirectional-map-20260828.css",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/matter-identity-registry-v1.people.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/matter-identity-registry-v1.organisations.json"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS_8_OF_8_HTTP_200_EXACT_REPOSITORY_BYTES",
+    "verified_on": "2026-08-28",
+    "source_sha": "faea6677f3a4df30eeefa92916d77a09826a0bab",
+    "method": "cache-busted public-edge response compared byte-for-byte with the exact merge tree",
+    "sha256": {
+      "en/sun-park-takeover-7-june-2018/index.html": "79a0869b7c65e7e0a18a1587986723c9a6d0e890120f80acb82be34919331661",
+      "es/toma-control-sun-park-7-junio-2018/index.html": "e8583270f90f63d11ea205db486f8562b45108adc8c0cb9a81e631c91e33283c",
+      "en/community-instrumentalisation/acta-document-room/2022-02-04/index.html": "8fceec7197e299328f9a39cab5bf6aff4b4c7841d07daa84a74a4c25279bf820",
+      "es/comunidad-instrumentalizacion/sala-documental-actas/2022-02-04/index.html": "db2aee94b47412b5f1825ca96a28bc27f1982e825bc7245bac9415c06c5fcecd",
+      "assets/post7-2022-omnidirectional-map-20260828.css": "e90918718ea98d337720bd67d1faf4b48275b3f7046ccc773a95628d461066f7",
+      "assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json": "caaabc0b48431ef7c191687959fb2c2a7cff038ece8cfb894cb5a0add053d7bc",
+      "assets/data/matter-identity-registry-v1.people.json": "a05a95fe00a199e62ec415fc5f78558bb9b0b0cc4c871bc5c723b8b0547c7fc8",
+      "assets/data/matter-identity-registry-v1.organisations.json": "4c6340e03418e0ee769364d011de58b524b825a0011e902802c97e885a67fe15"
+    }
+  },
+  "governance_closeout": {
+    "pull_request": "https://github.com/sbu001monterecco/por-derecho/pull/1147",
+    "pull_request_head_sha": "2984c52a3c69da1c40015ecba66a05c0129d74e1",
+    "pull_request_tree_sha": "8d60f3d96a35e9214d25af15bf367c01796fd7de",
+    "pull_request_checks": "PASS_16_OF_16",
+    "merge_sha": "4f807502fc52f46fc80f369ba58decd4c25af733",
+    "pages_workflow_run_id": 33170196929,
+    "pages_workflow_run_number": 1218,
+    "pages_conclusion": "success",
+    "public_edge_readback": {
+      "status": "PASS_15_OF_15_HTTP_200_EXACT_REPOSITORY_BYTES",
+      "cache_key": "4f807502fc52f46fc80f369ba58decd4c25af733",
+      "scope": "seven changed governance/control files plus the four bilingual routes and four controlling assets",
+      "changed_file_sha256": {
+        "CHATGPT_START_HERE.md": "44832416b9ab28524cad70f8eb27684d0eff14622adb9e7547e2b70dae826cf6",
+        "archive/CONTINUOUS_MAINTENANCE_MATRIX.md": "1425b4fd31f481a532a614baa22b283815df0ecff67c287b4bcdf2543475d78d",
+        "archive/CORRECTION_REGISTER.md": "adf678f6109c841392146b667aa36c02d51ac97ffa84325a0f259f29b7c99b2a",
+        "docs/deletion-audits/2026-08-28-2022-acta-omnidirectional-enablement-visual-continuity.md": "a07f9e3ab3538c0ec22d89bf5492249e6c5f99291b53324ec978b502f2838df7",
+        "docs/deletion-audits/2026-08-28-post-7june-2018-to-2022-continuing-harm.md": "949c6376433ac5534337ac36b9a4f15d8eab730b630fcbb8fe34abe24b90ca6c",
+        "publication-manifests/post7june-2022-omnidirectional-enablement-20260828.json": "2b998f1905cb1ce8812cd0dfaed48517ebf6a078697e06cbcb8dfb4ccc6d7bc4",
+        "scripts/validate_post7june_2022_deliberate_exclusion.py": "c12f682806189e55924c114e0d702883a48971e4e1cfd40ce419e57a03da043c"
+      }
+    },
+    "post_merge_workflow_followup": {
+      "failed_run_id": 33170197823,
+      "failed_job_id": 98845268722,
+      "failed_step": "Read back exact deployed cross-proceeding graph",
+      "cause": "The push-only inline verifier reused the specialist package's immutable historical 204/87/71/10/18/18 release snapshot as the current live registry after the additive source registry reached 214/94/74/10/18/18.",
+      "remediation_rule": "Assert the current 214/94/74/10/18/18 registry and public markers while separately retaining the specialist manifest's historical identity_registry_parity value of 204.",
+      "verbatim_readback_reproduction": "PASS_41_EXACT_BYTE_SURFACES_CURRENT_214_HISTORICAL_204_18_SOURCE_BACKLINKS_32_LATERAL_LINKS_8_SUPPORTING_LINKS_13_GRAPH_EDGES",
+      "closure_requirement": "The corrected workflow must pass on a later exact main-merge SHA; no workflow failure changes the independently verified 15/15 Pages byte parity."
+    }
+  },
+  "publication_result": {
+    "pull_request": "https://github.com/sbu001monterecco/por-derecho/pull/1146",
+    "pull_request_head_sha": "0c5f2c69f61f45c3f6a6b9c7ddff22fa13349138",
+    "pull_request_tree_sha": "5b3989f0f029e18c18a1775036e6afd6a65da366",
+    "merge_sha": "faea6677f3a4df30eeefa92916d77a09826a0bab",
+    "pages_workflow_run_id": 33169202514,
+    "pages_workflow_run_number": 1217,
+    "pages_conclusion": "success",
+    "live_readback": {
+      "base_url": "https://sbu001monterecco.github.io/por-derecho/",
+      "method": "cache-busted HTTP 200 response compared byte-for-byte with the exact merge tree",
+      "results": [
+        {
+          "path": "en/sun-park-takeover-7-june-2018/",
+          "status": 200,
+          "parity": "EXACT",
+          "sha256": "79a0869b7c65e7e0a18a1587986723c9a6d0e890120f80acb82be34919331661"
+        },
+        {
+          "path": "es/toma-control-sun-park-7-junio-2018/",
+          "status": 200,
+          "parity": "EXACT",
+          "sha256": "e8583270f90f63d11ea205db486f8562b45108adc8c0cb9a81e631c91e33283c"
+        },
+        {
+          "path": "en/community-instrumentalisation/acta-document-room/2022-02-04/",
+          "status": 200,
+          "parity": "EXACT",
+          "sha256": "8fceec7197e299328f9a39cab5bf6aff4b4c7841d07daa84a74a4c25279bf820"
+        },
+        {
+          "path": "es/comunidad-instrumentalizacion/sala-documental-actas/2022-02-04/",
+          "status": 200,
+          "parity": "EXACT",
+          "sha256": "db2aee94b47412b5f1825ca96a28bc27f1982e825bc7245bac9415c06c5fcecd"
+        },
+        {
+          "path": "assets/post7-2022-omnidirectional-map-20260828.css",
+          "status": 200,
+          "parity": "EXACT",
+          "sha256": "e90918718ea98d337720bd67d1faf4b48275b3f7046ccc773a95628d461066f7"
+        },
+        {
+          "path": "assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json",
+          "status": 200,
+          "parity": "EXACT",
+          "sha256": "caaabc0b48431ef7c191687959fb2c2a7cff038ece8cfb894cb5a0add053d7bc"
+        },
+        {
+          "path": "assets/data/matter-identity-registry-v1.people.json",
+          "status": 200,
+          "parity": "EXACT",
+          "sha256": "a05a95fe00a199e62ec415fc5f78558bb9b0cc4c871bc5c723b8b0547c7fc8"
+        },
+        {
+          "path": "assets/data/matter-identity-registry-v1.organisations.json",
+          "status": 200,
+          "parity": "EXACT",
+          "sha256": "4c6340e03418e0ee769364d011de58b524b825a0011e902802c97e885a67fe15"
+        }
+      ]
+    }
+  },
+  "external_actions": {
+    "push": true,
+    "pull_request": true,
+    "merge": true,
+    "deployment": true,
+    "live_readback": true,
+    "filing_or_contact": false
+  }
+}

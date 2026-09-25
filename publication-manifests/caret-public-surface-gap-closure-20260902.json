@@ -1,0 +1,154 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "PD-SP-CARET-SURFACE-PUBLICATION-20260902-01",
+  "manifest_id": "PD-SP-PUB-CARET-SURFACE-20260902-01",
+  "control_date": "2026-09-02",
+  "owner": "Por Derecho / Project Sun Rock evidence governance",
+  "authority": "USER_DIRECT_INSTRUCTION_TAKE_ACTIONS_TO_CLOSE_GAPS_WITH_CONTINUITY_GOVERNANCE",
+  "repository": "sbu001monterecco/por-derecho",
+  "source_base_sha": "6013473e0e510948d2702fe0b4f5f6cfe45f7028",
+  "head_branch": "codex/caret-public-surface-gap-closure-20260902",
+  "pull_request": {
+    "number": 1349,
+    "url": "https://github.com/sbu001monterecco/por-derecho/pull/1349",
+    "status": "OPEN"
+  },
+  "current_state": "PR_OPEN",
+  "state": "REMOTE_VALIDATION_AND_SUCCESSOR_RECONCILIATION_IN_PROGRESS",
+  "scope": "Repair and govern public-surface propagation for two existing CARET_CONFIRMED identities in the bilingual Meeting Point 357/2024 dossier; add strict finite validation, advisory repository-wide discovery, historical-successor snapshot handling and successor-thread continuity.",
+  "canonical_control": "assets/data/caret-public-surface-coverage-v1.json",
+  "governance": ".github/governance/CAEPR_PUBLIC_SURFACE_PROPAGATION_AND_CONTINUITY_GATE_02SEP2026.md",
+  "parent_governance": ".github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md",
+  "validator": "scripts/validate_caret_public_surface.py",
+  "workflow": ".github/workflows/verify-caret-public-surface-propagation.yml",
+  "handover": "archive/CARET_PUBLIC_SURFACE_GAP_CLOSURE_CONTINUITY_HANDOVER_02SEP2026.md",
+  "expected_routes": {
+    "es": [
+      "es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/index.html"
+    ],
+    "en": [
+      "en/legal-notebook/meeting-point-357-2024-judicial-traceability/index.html"
+    ]
+  },
+  "expected_source_files": [
+    ".github/governance/CAEPR_PUBLIC_SURFACE_PROPAGATION_AND_CONTINUITY_GATE_02SEP2026.md",
+    ".github/workflows/verify-caret-public-surface-propagation.yml",
+    "archive/CARET_PUBLIC_SURFACE_GAP_CLOSURE_CONTINUITY_HANDOVER_02SEP2026.md",
+    "assets/data/caret-public-surface-coverage-v1.json",
+    "en/legal-notebook/meeting-point-357-2024-judicial-traceability/index.html",
+    "es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/index.html",
+    "publication-manifests/caret-public-surface-gap-closure-20260902.json",
+    "scripts/validate_caret_public_surface.py"
+  ],
+  "changed_public_routes": [
+    {
+      "language": "es",
+      "source_path": "es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/index.html",
+      "route": "/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/",
+      "required_markers": [
+        "data-caepr-id=\"PD-SP-O-0070\"",
+        "data-caepr-id=\"PD-SP-P-0087\"",
+        "AUREN REESTRUCTURACIONES SLP",
+        "Guillermo Fernández García",
+        "PD-SP-O-0070",
+        "PD-SP-P-0087",
+        "<sup>^</sup>",
+        "PD-SP-CARET-SURFACE-20260902-01"
+      ]
+    },
+    {
+      "language": "en",
+      "source_path": "en/legal-notebook/meeting-point-357-2024-judicial-traceability/index.html",
+      "route": "/en/legal-notebook/meeting-point-357-2024-judicial-traceability/",
+      "required_markers": [
+        "data-caepr-id=\"PD-SP-O-0070\"",
+        "data-caepr-id=\"PD-SP-P-0087\"",
+        "AUREN REESTRUCTURACIONES SLP",
+        "Guillermo Fernández García",
+        "PD-SP-O-0070",
+        "PD-SP-P-0087",
+        "<sup>^</sup>",
+        "PD-SP-CARET-SURFACE-20260902-01"
+      ]
+    }
+  ],
+  "identity_objects": [
+    {
+      "id": "PD-SP-O-0070",
+      "name": "AUREN REESTRUCTURACIONES SLP",
+      "type": "ORGANISATION",
+      "state": "CARET_CONFIRMED",
+      "repair": "Public occurrence shows a visible caret, immutable ID, machine-readable state and canonical registry link.",
+      "boundary": "Exact entity appointment in signed Auto 97/2025 does not establish mandate scope, material received, knowledge, disclosure or responsibility."
+    },
+    {
+      "id": "PD-SP-P-0087",
+      "name": "Guillermo Fernández García",
+      "type": "PERSON",
+      "state": "CARET_CONFIRMED",
+      "repair": "Public occurrence shows a visible caret, immutable ID, machine-readable state and canonical registry link.",
+      "boundary": "Electronic signature of Auto 97/2025 does not establish participation in the 24 October 2024 act or knowledge, wrongdoing or liability in another matter."
+    }
+  ],
+  "preserved_distinctions": [
+    "PD-SP-O-0046 generic Auren professional perimeter is not PD-SP-O-0070 exact AUREN REESTRUCTURACIONES SLP.",
+    "Canonical identity is not source-specific act attribution.",
+    "A signed 18 February 2025 act does not identify the signer of a separate 24 October 2024 act.",
+    "A public occurrence repair does not close the Auren custody, mandate or disclosure production questions.",
+    "The three notarial CARET_PENDING records remain pending and are not promoted by this release.",
+    "The predecessor 18-route first-hop snapshot remains immutable; intentional page drift must be pinned in the successor control rather than silently overwriting the historical attestation."
+  ],
+  "validation": {
+    "status": "REMOTE_VALIDATION_IN_PROGRESS",
+    "commands": [
+      "python3 -m py_compile scripts/validate_caret_public_surface.py",
+      "python3 scripts/validate_caret_public_surface.py --report artifacts/caret-public-surface-audit/report.json",
+      "python3 scripts/validate_operational_identity_registry.py",
+      "python3 scripts/validate_repository_preservation.py",
+      "python3 scripts/validate_publication_integrity.py",
+      "python3 scripts/validate_audience_experience.py",
+      "python3 scripts/validate_alberto_meeting_point_first_hop_caret.py",
+      "python3 scripts/audit_proceedings_interconnectivity_map.py"
+    ],
+    "known_initial_failures": [
+      "The first validator incorrectly required every legacy canonical record to carry an explicit CARET_CONFIRMED field; narrowed on branch without weakening explicit pending/suspended blocks.",
+      "The historical first-hop gate requires an explicit successor snapshot for intentional Meeting Point page drift.",
+      "The publication-integrity gate required this manifest and the inherited DP 748 manifest to use the common publication lifecycle fields.",
+      "The proceedings audit exposed inherited successor-hash chain gaps that must be reconciled rather than waived."
+    ]
+  },
+  "post_merge_live_verification": {
+    "required": true,
+    "state": "NOT_RUN",
+    "requirements": [
+      "Record the exact merge SHA.",
+      "Verify the Pages deployment corresponds to that SHA.",
+      "Perform cache-busted HTTP readback of both routes and the control JSON.",
+      "Confirm all required markers and ES/EN identity parity.",
+      "Update the closeout state before claiming LIVE_VERIFIED or publication deletion safety."
+    ]
+  },
+  "verification": {
+    "source_prepared": true,
+    "exact_head_ci_green": false,
+    "merged": false,
+    "pages_deployed": false,
+    "live_http_readback": false,
+    "deletion_safe": false
+  },
+  "continuity": {
+    "thread_state": "DURABLE_IMPLEMENTATION_AND_PR_HANDOVER_RECORDED",
+    "successor_bootstrap": [
+      "AGENTS.md",
+      "CHATGPT_START_HERE.md",
+      ".github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md",
+      ".github/governance/CAEPR_PUBLIC_SURFACE_PROPAGATION_AND_CONTINUITY_GATE_02SEP2026.md",
+      "assets/data/matter-identity-registry-v1.json",
+      "assets/data/caret-public-surface-coverage-v1.json",
+      "assets/data/justice-professionals-evidence-production-queue-v1.json",
+      "archive/CARET_PUBLIC_SURFACE_GAP_CLOSURE_CONTINUITY_HANDOVER_02SEP2026.md"
+    ],
+    "deletion_safety": "Implementation reasoning and PR identity are durable. Publication/deployment deletion safety is not claimed before merge and exact live readback."
+  },
+  "authority_boundary": "This repository package authorises no email, filing, service, authority contact, credential use, private-source disclosure, destructive edit or unsupported identity promotion."
+}

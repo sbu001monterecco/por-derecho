@@ -1,0 +1,74 @@
+name: Validate JTP criminal-first hostile-reader contract
+
+on:
+  pull_request:
+    paths:
+      - 'en/estate-payment-counsel-independence/index.html'
+      - 'es/pago-masa-independencia-defensa/index.html'
+      - 'en/pre-7-june-2018-funded-ona-exit/index.html'
+      - 'es/salida-financiada-ona-antes-7-junio-2018/index.html'
+      - 'en/counsel-defence-continuity/index.html'
+      - 'es/continuidad-defensa-letrados/index.html'
+      - 'assets/optimum-reader-journey-finish-20260818.js'
+      - 'governance/JTP_PAYMENT_FUNDED_EXIT_HOSTILE_READER_RED_TEAM_24SEP2026.md'
+      - 'assets/data/jtp-payment-funded-exit-red-team-20260924.json'
+      - 'assets/data/jtp-ona-deep-source-sweep-20260924.json'
+      - 'archive/JTP_ONA_DEEP_SOURCE_SWEEP_24SEP2026.md'
+      - 'archive/JTP_FEE_AUTHORITY_PAYMENT_SOURCE_CLOSE_24SEP2026.md'
+      - 'assets/data/jtp-fee-authority-source-close-20260924.json'
+      - 'assets/jtp-*.svg'
+      - 'assets/data/jtp-visual-pair-20260924.json'
+      - 'CHATGPT_START_HERE.md'
+      - 'scripts/validate_jtp_prosecutorial_red_team.py'
+      - 'scripts/validate_jtp_reconciled_union_20260924.py'
+      - '.github/workflows/validate-jtp-prosecutorial-red-team.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'en/estate-payment-counsel-independence/index.html'
+      - 'es/pago-masa-independencia-defensa/index.html'
+      - 'en/pre-7-june-2018-funded-ona-exit/index.html'
+      - 'es/salida-financiada-ona-antes-7-junio-2018/index.html'
+      - 'en/counsel-defence-continuity/index.html'
+      - 'es/continuidad-defensa-letrados/index.html'
+      - 'assets/optimum-reader-journey-finish-20260818.js'
+      - 'governance/JTP_PAYMENT_FUNDED_EXIT_HOSTILE_READER_RED_TEAM_24SEP2026.md'
+      - 'assets/data/jtp-payment-funded-exit-red-team-20260924.json'
+      - 'assets/data/jtp-ona-deep-source-sweep-20260924.json'
+      - 'archive/JTP_ONA_DEEP_SOURCE_SWEEP_24SEP2026.md'
+      - 'archive/JTP_FEE_AUTHORITY_PAYMENT_SOURCE_CLOSE_24SEP2026.md'
+      - 'assets/data/jtp-fee-authority-source-close-20260924.json'
+      - 'assets/jtp-*.svg'
+      - 'assets/data/jtp-visual-pair-20260924.json'
+      - 'CHATGPT_START_HERE.md'
+      - 'scripts/validate_jtp_prosecutorial_red_team.py'
+      - 'scripts/validate_jtp_reconciled_union_20260924.py'
+      - '.github/workflows/validate-jtp-prosecutorial-red-team.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: jtp-prosecutorial-red-team-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+      - name: Validate criminal-first hostile-reader contract
+        run: python3 scripts/validate_jtp_prosecutorial_red_team.py
+      - name: Validate complete bilingual source union and fail-closed regressions
+        run: python3 scripts/validate_jtp_reconciled_union_20260924.py
+      - name: Validate runtime JavaScript syntax
+        run: node --check assets/optimum-reader-journey-finish-20260818.js

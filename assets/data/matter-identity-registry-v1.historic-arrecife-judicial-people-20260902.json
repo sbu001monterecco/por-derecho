@@ -1,0 +1,47 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "PERSON",
+  "scope": "Historic Arrecife/AP Las Palmas judicial office-holders newly source-identified on 2-Sep-2026",
+  "records": [
+    {
+      "id": "PD-SP-P-0163",
+      "type": "PERSON",
+      "name": "Ángela López-Yuste Padial",
+      "aliases": [
+        "Angela Lopez-Yuste Padial",
+        "Ángela López Yuste Padial"
+      ],
+      "routes": {
+        "es": "/es/registro-autoridad-historica-arrecife/#pd-sp-p-0163",
+        "en": "/en/historic-arrecife-justice-authority-register/#pd-sp-p-0163"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "Sentencia 39/2011, Procedimiento Ordinario 467/2010, dated 14-Mar-2011, primary judicial copy"
+      ],
+      "verification_detail": "Primary signed judicial judgment identifies the Magistrada-Juez",
+      "capacity_boundary": "Magistrada-Juez deciding Sentencia 39/2011 in P.O. 467/2010 only. Identity does not establish authorship of any other act, LAJ identity, later office, knowledge, merits correctness, wrongdoing or liability.",
+      "role": "JUDGE_OR_MAGISTRATE"
+    },
+    {
+      "id": "PD-SP-P-0164",
+      "type": "PERSON",
+      "name": "Emma Galcerán Solsona",
+      "aliases": [
+        "Emma Galceran Solsona"
+      ],
+      "routes": {
+        "es": "/es/registro-autoridad-historica-arrecife/#pd-sp-p-0164",
+        "en": "/en/historic-arrecife-justice-authority-register/#pd-sp-p-0164"
+      },
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "Sentencia 89/2014, Rollo de Apelación 793/2012, dated 13-Jan-2014, primary judicial copy"
+      ],
+      "verification_detail": "Primary appellate judgment identifies Presidenta of the panel",
+      "capacity_boundary": "Presidenta of the Sección Cuarta panel recorded in Sentencia 89/2014 / Rollo 793/2012 only. This does not establish participation in any other appeal, vote beyond the signed panel act, knowledge, wrongdoing or liability.",
+      "role": "JUDGE_OR_MAGISTRATE"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+name: Verify Project Horizon live read-back
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/verify-project-horizon-pr-readback.yml'
+      - 'PROJECT_HORIZON_TENERIFE_SOUTH_PUBLICATION_CONTROL_20AUG2026.md'
+      - 'en/tenerife-south-active-holiday-community/**'
+      - 'es/tenerife-sur-comunidad-vacacional-activa/**'
+      - 'assets/project-horizon-*'
+      - 'assets/playa-blanca-concept-home-20260820.js'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: project-horizon-pr-readback-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify-live-readback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Verify public Project Horizon pages and assets
+        env:
+          BASE_URL: https://sbu001monterecco.github.io/por-derecho/
+        run: |
+          python3 - <<'PY'
+          from __future__ import annotations
+          import datetime as dt
+          import hashlib
+          import json
+          import os
+          import time
+          import urllib.error
+          import urllib.parse
+          import urllib.request
+          from pathlib import Path
+
+          base_url = os.environ['BASE_URL']
+          attempts = 42
+          interval = 10
+          timeout = 20
+          checks = [
+              {
+                  'kind': 'english_project_page',
+                  'path': 'en/tenerife-south-active-holiday-community/',
+                  'markers': [
+                      'Project Horizon',
+                      'Stay longer. Live better.',
+                      'South-West Tenerife · municipality of Adeje · Canary Islands',
+                      'Hospitality · not residential',
+                      'NO AWARENESS OR ENDORSEMENT IMPLIED',
+                  ],
+              },
+              {
+                  'kind': 'spanish_project_page',
+                  'path': 'es/tenerife-sur-comunidad-vacacional-activa/',
+                  'markers': [
+                      'Project Horizon',
+                      'Quédate más. Vive mejor.',
+                      'Suroeste de Tenerife · municipio de Adeje · Islas Canarias',
+                      'Hotelero · no residencial',
+                      'SIN CONOCIMIENTO O RESPALDO IMPLÍCITOS',
+                  ],
+              },
+              {
+                  'kind': 'future_home_feature',
+                  'path': 'assets/playa-blanca-concept-home-20260820.js',
+                  'markers': [
+                      'data-project-horizon-home-feature',
+                      "route: 'tenerife-south-active-holiday-community/'",
+                      "route: 'tenerife-sur-comunidad-vacacional-activa/'",
+                      'Live redevelopment · private site',
+                  ],
+              },
+              {
+                  'kind': 'horizon_styles',
+                  'path': 'assets/project-horizon-20260820.css',
+                  'markers': ['.hz-hero', '.hz-home-feature', '.hz-matrix'],
+              },
+              {
+                  'kind': 'hero_visual',
+                  'path': 'assets/project-horizon-hero.svg',
+                  'markers': ['PROJECT HORIZON', 'TENERIFE SOUTH', 'PRIVATE SITE NOT IDENTIFIED'],
+              },
+              {
+                  'kind': 'privacy_safe_map',
+                  'path': 'assets/project-horizon-location.svg',
+                  'markers': ['MUNICIPALITY OF ADEJE', 'No map pin', 'NOT TO SCALE'],
+              },
+          ]
+
+          def now():
+              return dt.datetime.now(dt.timezone.utc).isoformat().replace('+00:00', 'Z')
+
+          def fetch(url):
+              request = urllib.request.Request(url, headers={
+                  'User-Agent': 'Por-Derecho-Project-Horizon-Live-Readback/1.0',
+                  'Cache-Control': 'no-cache, no-store, max-age=0',
+                  'Pragma': 'no-cache',
+                  'Accept': 'text/html,text/javascript,text/css,image/svg+xml,*/*;q=0.8',
+              })
+              with urllib.request.urlopen(request, timeout=timeout) as response:
+                  body = response.read()
+                  return response.status, response.geturl(), response.headers, body.decode('utf-8', errors='replace'), hashlib.sha256(body).hexdigest(), len(body)
+
+          output = Path('artifacts/project-horizon-live-readback.json')
+          output.parent.mkdir(parents=True, exist_ok=True)
+          started = now()
+          final = []
+
+          for attempt in range(1, attempts + 1):
+              final = []
+              all_ok = True
+              nonce = f'{int(time.time())}-{attempt}'
+              for item in checks:
+                  url = urllib.parse.urljoin(base_url, item['path'])
+                  checked_url = f'{url}?project_horizon_live_readback={nonce}'
+                  record = {'kind': item['kind'], 'url': url, 'checked_url': checked_url, 'required_markers': item['markers'], 'checked_at': now()}
+                  try:
+                      status, final_url, headers, text, sha256, size = fetch(checked_url)
+                      missing = [marker for marker in item['markers'] if marker not in text]
+                      record.update({'status': status, 'final_url': final_url, 'bytes': size, 'sha256': sha256, 'etag': headers.get('ETag'), 'last_modified': headers.get('Last-Modified'), 'x_github_request_id': headers.get('X-GitHub-Request-Id'), 'missing_markers': missing, 'ok': status == 200 and not missing})
+                  except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, OSError) as exc:
+                      record.update({'ok': False, 'error': f'{type(exc).__name__}: {exc}'})
+                  if not record['ok']:
+                      all_ok = False
+                  final.append(record)
+
+              print(f"Attempt {attempt}/{attempts}: " + ', '.join(f"{item['kind']}={'OK' if item['ok'] else 'WAIT'}" for item in final), flush=True)
+              if all_ok:
+                  output.write_text(json.dumps({'verified': True, 'publication_id': 'project-horizon-tenerife-south-20260820', 'source_merge_sha': '696fe167ff049c3b3c20c568f473f15929490e14', 'verification_commit': os.environ.get('GITHUB_SHA'), 'workflow_run_id': os.environ.get('GITHUB_RUN_ID'), 'repository': os.environ.get('GITHUB_REPOSITORY'), 'base_url': base_url, 'started_at': started, 'verified_at': now(), 'attempt': attempt, 'checks': final}, indent=2), encoding='utf-8')
+                  print('PROJECT HORIZON: LIVE PUBLIC READ-BACK VERIFIED', flush=True)
+                  raise SystemExit(0)
+              if attempt < attempts:
+                  time.sleep(interval)
+
+          output.write_text(json.dumps({'verified': False, 'publication_id': 'project-horizon-tenerife-south-20260820', 'source_merge_sha': '696fe167ff049c3b3c20c568f473f15929490e14', 'verification_commit': os.environ.get('GITHUB_SHA'), 'workflow_run_id': os.environ.get('GITHUB_RUN_ID'), 'repository': os.environ.get('GITHUB_REPOSITORY'), 'base_url': base_url, 'started_at': started, 'failed_at': now(), 'attempts': attempts, 'checks': final}, indent=2), encoding='utf-8')
+          raise SystemExit('Project Horizon live read-back was not verified within the polling window')
+          PY
+
+      - name: Show live verification evidence
+        if: always()
+        run: cat artifacts/project-horizon-live-readback.json || true
+
+      - name: Upload live verification evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: project-horizon-live-readback
+          path: artifacts/project-horizon-live-readback.json
+          if-no-files-found: error
+          retention-days: 30

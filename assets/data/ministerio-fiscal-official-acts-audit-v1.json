@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "dataset": "ministerio-fiscal-official-acts-audit-v1",
+  "control_date": "2026-09-03",
+  "base_main_sha": "2f2e9a82fde1cb5af955dc262988c185cead4277",
+  "logical_sources": [
+    "assets/data/institutional-communications-register-v1.json",
+    "assets/data/institutional-communications-register-mf-supplement-20260903.json",
+    "assets/data/ministerio-fiscal-directory-v1.json"
+  ],
+  "denominator": {
+    "baseline_redsara_receipts": 75,
+    "mailbox_transport_events_31aug": 156,
+    "separate_source_proved_rows_31aug": 65,
+    "separate_row_event_range": "PD-SP-EVT-0076..PD-SP-EVT-0140",
+    "current_register_rows_before_supplement": 313,
+    "new_source_proved_event_this_control": "PD-SP-EVT-0158",
+    "aggregate_only_redsara_gaps": 22
+  },
+  "category_definitions": {
+    "A": "FULLY COMPLETE / LIVE — publication-safe source + complete checked text + IDs/interlinks + verified live page.",
+    "B": "SOURCE PRESENT / TEXT INCOMPLETE — source exists but complete checked searchable text is missing.",
+    "C": "TEXT PRESENT / ORIGINAL NOT PUBLICLY EXPOSED — complete text exists but no publication-safe source image/PDF is exposed.",
+    "D": "REGISTERED / PAGE INCOMPLETE — canonical event exists but one or more public presentation/link/live-verification conditions remain incomplete.",
+    "E": "SOURCE_GAP — act/reference is evidenced or referenced but underlying official source is not recovered.",
+    "F": "HISTORICAL RECOVERY — pre-2018/2011–2017 recovery lane requiring source-first work."
+  },
+  "complete_requires": [
+    "source recovered", "correct office and expediente link", "unique PD-SP-EVT", "source/custody link",
+    "complete text", "text checked against source", "publication-safe source committed", "searchable full text committed",
+    "page exposes full text", "page exposes or links source", "office link", "expediente link", "hub link",
+    "communications graph link", "Pages deployed", "live URL opened and verified"
+  ],
+  "default_31aug_separate_row_state": "D",
+  "default_reason": "Registered/source-controlled event but the stricter 3 September audit has not independently verified all 16 publication conditions.",
+  "overrides": {
+    "PD-SP-EVT-0101": {
+      "category": "B",
+      "reason": "Three-page scanned DI 114/2025 archive decision is source-controlled; native/searchable signature control remains desirable and complete public full-text publication is not independently closed."
+    },
+    "PD-SP-EVT-0158": {
+      "category": "C",
+      "reason": "Complete checked, public-safe transcription and custody hash are controlled; private original is retained and a NIE/private-email-redacted PDF facsimile is prepared/hash-locked, but its binary is not yet committed or publicly exposed.",
+      "full_text_path": "es/ministerio-fiscal/expedientes/eg-352-2025/",
+      "canonical_custody_id": "PD-SP-CUST-0001",
+      "prepared_public_redacted_derivative_sha256": "a255f7ffa8d6926b55826b27d77d7b4c392838ce046fd75408384ffcdd4f1980"
+    }
+  },
+  "source_gaps": [
+    {"reference": "22 later RedSARA/AGE records", "category": "E", "next_source": "Recover individual receipts/exports; do not synthesize item events from aggregate-only rows."},
+    {"reference": "EG 58/2026", "category": "E", "next_source": "Recover underlying official source."},
+    {"reference": "DIP 7/2026", "category": "E", "next_source": "Recover source and complete identity reconciliation; CARET_PENDING remains."},
+    {"reference": "DIP 12/2026", "category": "E", "next_source": "Recover source and complete identity reconciliation; CARET_PENDING remains."},
+    {"reference": "DP 1901/2026 Fiscal report/later official act", "category": "E", "next_source": "Recover and verify signed Fiscal report/later act."},
+    {"reference": "Receiving-office treatment after remissions", "category": "E", "next_source": "Recover receiving-office source; sending-office remittal is not proof of downstream treatment."},
+    {"reference": "EG 745/2026 reposición receipt", "category": "E", "next_source": "Keep PREPARED/OUTSTANDING unless an actual filing receipt is recovered."}
+  ],
+  "historical_recovery": [
+    {"reference": "DI 273/2013 / Fiscalía 39/2014 / DP 332/2014 and earlier 2011–2012 lane", "category": "F", "next_source": "Recover individual primary sources; a later request for traceability does not prove a 2011 Fiscalía filing."},
+    {"reference": "DI 248/2018 wider 2018/2019 submissions", "category": "F", "next_source": "Continue source-first recovery of ampliaciones/evidence around the controlled 2019 decree."}
+  ]
+}

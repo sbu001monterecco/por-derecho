@@ -1,0 +1,74 @@
+{
+  "schema": "por-derecho.public-authority-followup.v1",
+  "observation_date": "2026-09-19",
+  "event_date": "2026-09-07",
+  "source_status": "PUBLIC_SAFE_RECONSTRUCTION_FROM_VERIFIED_WORKSPACE_RECORD",
+  "host_continuity": {
+    "github": "ACTIVE_CONTINUITY_HOST",
+    "gitlab": "UNAVAILABLE_PENDING_RELEASE",
+    "reconcile_when_restored": true
+  },
+  "events": [
+    {
+      "institution": "CNMV",
+      "status": "SENT_VERIFIED",
+      "package": {
+        "pdfs": 13,
+        "links": 13
+      },
+      "limits": [
+        "NO_RECIPIENT_ACKNOWLEDGMENT_PROVED_BY_SEND",
+        "NO_MERITS_FINDING",
+        "NO_PROTECTIVE_MEASURE_PROVED_BY_SEND"
+      ]
+    },
+    {
+      "institution": "Portfolio Stock Exchange",
+      "status": "SENT_VERIFIED",
+      "package": {
+        "pdfs": 4,
+        "links": 8
+      },
+      "limits": [
+        "PRESERVATION_REQUEST_NOT_MERITS",
+        "NO_PUBLIC_POWER_ATTRIBUTED_TO_MARKET_OPERATOR"
+      ]
+    },
+    {
+      "institution": "Ayuntamiento de Yaiza",
+      "status": "SENT_VERIFIED",
+      "package": {
+        "pdfs": 6,
+        "pages": 69,
+        "links": 8
+      },
+      "limits": [
+        "MUNICIPAL_ACT_DOES_NOT_DECIDE_PRIVATE_TITLE",
+        "NO_SECURITIES_OR_CRIMINAL_POWER_ATTRIBUTED"
+      ]
+    },
+    {
+      "institution": "Cabildo de Lanzarote",
+      "status": "SENT_VERIFIED_FORWARDING_REQUESTED",
+      "package": {
+        "pdfs": 6,
+        "pages": 69,
+        "links": 8
+      },
+      "limits": [
+        "FORWARDING_REQUEST_NOT_PROOF_OF_TOURISM_RECEIPT",
+        "TOURISM_OPERATION_NOT_EQUAL_PRIVATE_TITLE"
+      ]
+    }
+  ],
+  "direct_relevance_rule": {
+    "positive": "Legal separation does not imply evidential irrelevance.",
+    "negative": "Direct relevance is not proof of asset transfer or shared liability."
+  },
+  "separate_workstreams": [
+    "SPANISH_MINISTERIO_FISCAL",
+    "EG_745_2026",
+    "EPPO"
+  ],
+  "private_material_excluded": true
+}

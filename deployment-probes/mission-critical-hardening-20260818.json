@@ -1,0 +1,7 @@
+{
+  "probe_id": "psr-mission-critical-hardening-20260818-v1",
+  "purpose": "Unique public marker for the mission-critical GitHub hardening release.",
+  "source_parent": "3ab3e55a86e1340bd574c9ee7988a592d3a90bbd",
+  "meaning": "If this file is served by the production Pages host, the hardening implementation commit or a descendant has propagated.",
+  "contains_no_sensitive_data": true
+}

@@ -1,0 +1,105 @@
+{
+  "schema": "por-derecho.sun-rock-platform-scale.v1",
+  "control_date": "2026-09-19",
+  "status": "ILLUSTRATIVE_STABILISED_MANAGEMENT_SCENARIO_NOT_FORECAST",
+  "purpose": "Public-safe scale model for the prospective Sun Rock two-hotel platform and its institutional-banking / private-capital logic.",
+  "architecture": {
+    "legal_uk_holdco_sponsor": "Aweswell Limited",
+    "commercial_group_platform": "Sun Rock",
+    "sun_rock_legal_status": "Commercial hospitality and investment group/platform identity; not represented as a separate incorporated parent company or automatic borrower",
+    "project_sun_rock_public_programme": "Public programme/site umbrella coordinating recovery, future-business and public-interest narratives; not an asset-owning or financing vehicle",
+    "project_structure": "Individual ring-fenced hotel ProjectCos with separate equity, debt, assets, accounts, cash flows, security, governance and underwriting",
+    "new_hotel_route": "Montaña Roja / Playa Blanca preferred current route, subject to transaction, planning, technical and financing work",
+    "recovery_route": "Sun Park / MYND Yaiza recovery pursued separately and only consolidated if and to the extent lawful control/economic rights are restored"
+  },
+  "model_assumptions": {
+    "combined_units_range": "approximately 560-600 hotel units",
+    "new_playa_blanca_hotel_units_for_modelling_only": "approximately 300",
+    "new_hotel_category_for_modelling_only": "five-star",
+    "sun_park_units_for_modelling_only": "approximately 260-300",
+    "sun_park_current_operation": "open and trading as MYND Yaiza; actual operating accounts are not represented here as presently controlled by Sun Rock",
+    "no_current_planning_entitlement_claim": true,
+    "no_current_operator_commitment_claim": true,
+    "no_current_financing_commitment_claim": true
+  },
+  "scenarios_eur_millions": {
+    "conservative": {
+      "new_hotel_revenue": 24,
+      "sun_park_revenue": 16,
+      "combined_revenue": 40,
+      "combined_operating_ebitda": 10,
+      "combined_ebitda_margin_percent": 25,
+      "indicative_gross_hotel_asset_base": 125
+    },
+    "central": {
+      "new_hotel_revenue": 29,
+      "sun_park_revenue": 20,
+      "combined_revenue": 49,
+      "combined_operating_ebitda": 14.5,
+      "combined_ebitda_margin_percent": 29.6,
+      "indicative_gross_hotel_asset_base": 165
+    },
+    "strong": {
+      "new_hotel_revenue": 34,
+      "sun_park_revenue": 24,
+      "combined_revenue": 58,
+      "combined_operating_ebitda": 18,
+      "combined_ebitda_margin_percent": 31,
+      "indicative_gross_hotel_asset_base": 200
+    }
+  },
+  "public_range": {
+    "combined_revenue_eur_millions": "40-58",
+    "combined_operating_ebitda_eur_millions": "10-18",
+    "indicative_gross_hotel_asset_base_eur_millions": "125-200",
+    "headline": "EUR 150m-class hospitality platform in the making"
+  },
+  "recovery_boundary": {
+    "unresolved_damages_included_in_base_case": false,
+    "unresolved_recovery_claims_included_in_gross_hotel_asset_base": false,
+    "rule": "Recovery claims, trading fruits, damages and other contingent rights remain a separate layer. Only realised or sufficiently recognised amounts should strengthen cash, net assets, debt repayment capacity or Sponsor capital.",
+    "ordinary_hotel_debt_service_dependency_on_recovery": false
+  },
+  "capital_boundary": {
+    "future_scale_is_current_collateral": false,
+    "rule": "Any early private-capital or lending instrument must stand on the contractual protections, covenants, controlled accounts, repayment rights and security actually granted at that time. Future platform scale is context, not present security.",
+    "public_subscription_route": false,
+    "retail_distribution_intended": false
+  },
+  "market_context": [
+    {
+      "source": "Colliers — Golden Tourist Destinations: Canary Islands vs. Balearic Islands, May 2026",
+      "url": "https://www.colliers.com/en-es/research/informe-destino-islas-canarias-vs-baleares-mayo-2026",
+      "period": "2025",
+      "facts": {
+        "canary_islands_occupancy_percent": 84.5,
+        "canary_islands_adr_eur": 142,
+        "canary_islands_revpar_eur": 120,
+        "canary_islands_hotel_investment_eur_billions": 1.039
+      },
+      "boundary": "Destination context only; not a Sun Rock forecast."
+    },
+    {
+      "source": "Colliers — Hotel Investment in Spain, 1H 2026",
+      "url": "https://www.colliers.com/en-es/research/informe-inversion-hotelera-en-espana-1er-semestre-2026",
+      "period": "H1 2026",
+      "facts": {
+        "spain_hotel_investment_eur_billions": 2.46,
+        "four_and_five_star_share_percent": 86,
+        "average_transaction_price_per_room_eur": 213300,
+        "canary_islands_h1_investment_eur_millions": 363
+      },
+      "boundary": "Market-liquidity and transaction context only; not a valuation of either Sun Rock hotel."
+    }
+  ],
+  "publication_rules": [
+    "Label every figure as illustrative, stabilised and management-scenario data.",
+    "Do not describe the scenario as today's statutory balance sheet, NAV, forecast or committed financing.",
+    "Do not publish a damages aggregate or add unresolved claims to hotel asset value.",
+    "Do not state that Sun Park / MYND Yaiza is presently controlled by Sun Rock.",
+    "Do not treat a future five-star 300-unit concept as a current planning entitlement or approved room count.",
+    "Do not use future scale as a substitute for current lender/investor security.",
+    "Keep the Sun Park recovery and Montaña Roja development tracks legally and financially separate until a lawful basis exists to consolidate them."
+  ],
+  "terminology_rule": "Aweswell Limited is the legal UK HoldCo/Sponsor. Sun Rock is the commercial hospitality and investment group/platform identity. Individual hotels use their own legal ProjectCos. Project Sun Rock is the wider public programme/site umbrella."
+}

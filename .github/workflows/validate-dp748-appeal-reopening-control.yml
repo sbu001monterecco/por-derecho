@@ -1,0 +1,50 @@
+name: Validate DP 748 appeal and reopening control
+
+on:
+  pull_request:
+    paths:
+      - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - 'assets/data/proceedings-master-public-v1.json'
+      - 'assets/data/dp748-2026-appeal-reopening-control-v1.json'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'assets/data/la-laguna-judicial-actors-canonical-interlink-control-v1.json'
+      - 'assets/data/counsel-filing-register-v1.json'
+      - 'assets/data/counsel-procurador-perimeter-register-v1.json'
+      - 'assets/data/counsel-procurador-gap-register-v1.json'
+      - 'assets/data/procurador-master-register-v1.json'
+      - 'scripts/validate_dp748_appeal_reopening_control.py'
+      - '.github/workflows/validate-dp748-appeal-reopening-control.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'archive/PROCEEDINGS_MASTER_REGISTER.csv'
+      - 'assets/data/proceedings-master-public-v1.json'
+      - 'assets/data/dp748-2026-appeal-reopening-control-v1.json'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'assets/data/la-laguna-judicial-actors-canonical-interlink-control-v1.json'
+      - 'assets/data/counsel-filing-register-v1.json'
+      - 'assets/data/counsel-procurador-perimeter-register-v1.json'
+      - 'assets/data/counsel-procurador-gap-register-v1.json'
+      - 'assets/data/procurador-master-register-v1.json'
+      - 'scripts/validate_dp748_appeal_reopening_control.py'
+      - '.github/workflows/validate-dp748-appeal-reopening-control.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Compile validator
+        run: python -B -m py_compile scripts/validate_dp748_appeal_reopening_control.py
+      - name: Run DP 748 control audit
+        run: python -B scripts/validate_dp748_appeal_reopening_control.py

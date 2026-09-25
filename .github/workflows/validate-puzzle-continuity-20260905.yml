@@ -1,0 +1,50 @@
+name: Validate Puzzle continuity 20260905
+on:
+  push:
+    paths:
+      - 'assets/puzzle-*'
+      - 'assets/docs/puzzle/PUZZLE-2024-original.pdf'
+      - 'data/puzzle/**'
+      - '.github/governance/PUZZLE_CONTINUITY_*'
+      - 'scripts/validate_puzzle_continuity_20260905.py'
+      - 'assets/site.js'
+      - '.github/workflows/validate-puzzle-continuity-20260905.yml'
+  pull_request:
+    paths:
+      - 'assets/puzzle-*'
+      - 'assets/docs/puzzle/PUZZLE-2024-original.pdf'
+      - 'data/puzzle/**'
+      - '.github/governance/PUZZLE_CONTINUITY_*'
+      - 'scripts/validate_puzzle_continuity_20260905.py'
+      - 'assets/site.js'
+      - '.github/workflows/validate-puzzle-continuity-20260905.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with: {python-version: '3.12'}
+      - name: Validate semantic controls and authenticated master
+        id: puzzle_gate
+        shell: bash
+        run: |
+          set +e
+          python3 scripts/validate_puzzle_continuity_20260905.py > puzzle-validation-output.txt 2>&1
+          status=$?
+          cat puzzle-validation-output.txt
+          echo "$status" > puzzle-validation-exit-code.txt
+          exit "$status"
+      - name: Upload Puzzle gate diagnostic
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: puzzle-continuity-gate-${{ github.run_id }}
+          path: |
+            puzzle-validation-output.txt
+            puzzle-validation-exit-code.txt
+          retention-days: 7
+      - run: node --check assets/puzzle-continuity-enhancement-20260905.js

@@ -1,0 +1,68 @@
+name: Validate evidence visibility, OCR, images and redaction continuity
+
+on:
+  pull_request:
+    paths:
+      - '.github/governance/EVIDENCE_VISIBILITY_*'
+      - '.github/evidence-intelligence/schemas/evidence-visibility.schema.json'
+      - '.github/workflows/validate-evidence-visibility.yml'
+      - 'EVIDENCE_VISIBILITY_CONTROL_04SEP2026.md'
+      - 'evidence/AGENTS.md'
+      - 'data/evidence-visibility/**'
+      - 'scripts/validate_evidence_visibility.py'
+      - 'assets/evidence-visibility-runtime-20260904.js'
+      - 'assets/site.js'
+      - 'en/evidence-visibility/**'
+      - 'es/visibilidad-evidencia/**'
+      - 'en/uria-menendez-sun-park/**'
+      - 'es/uria-menendez-sun-park/**'
+      - 'en/puzzle/**'
+      - 'es/puzzle/**'
+      - 'es/uria-menendez/**'
+      - 'es/haya-cerberus/**'
+  push:
+    branches: [main]
+    paths:
+      - '.github/governance/EVIDENCE_VISIBILITY_*'
+      - '.github/evidence-intelligence/schemas/evidence-visibility.schema.json'
+      - '.github/workflows/validate-evidence-visibility.yml'
+      - 'EVIDENCE_VISIBILITY_CONTROL_04SEP2026.md'
+      - 'evidence/AGENTS.md'
+      - 'data/evidence-visibility/**'
+      - 'scripts/validate_evidence_visibility.py'
+      - 'assets/evidence-visibility-runtime-20260904.js'
+      - 'assets/site.js'
+      - 'en/evidence-visibility/**'
+      - 'es/visibilidad-evidencia/**'
+      - 'en/uria-menendez-sun-park/**'
+      - 'es/uria-menendez-sun-park/**'
+      - 'en/puzzle/**'
+      - 'es/puzzle/**'
+      - 'es/uria-menendez/**'
+      - 'es/haya-cerberus/**'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: evidence-visibility-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate-evidence-visibility:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v6.0.0
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+      - name: Validate evidence visibility packages and continuity
+        run: python scripts/validate_evidence_visibility.py
+      - name: Validate evidence-visibility runtime syntax
+        run: node --check assets/evidence-visibility-runtime-20260904.js

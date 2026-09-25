@@ -1,0 +1,120 @@
+{
+  "schema_version": "2.0",
+  "generated_on": "2026-08-29",
+  "status": "CURRENT PRIMARY-REINSPECTION CONTROL",
+  "case": {
+    "court": "Juzgado de lo Mercantil n.º 1 de Las Palmas de Gran Canaria",
+    "proceeding": "Concurso ordinario 36/2012",
+    "debtor": "Luchy Playa Blanca, S.L.U. (LPB)",
+    "nig": "3501647120120000351"
+  },
+  "reading_rule": {
+    "es": "Texto judicial primario → fecha/capa documental → vía procesal → efecto operativo → condición/límite → implementación → cuestión no resuelta.",
+    "en": "Primary judicial text → documentary date layer → procedural route → operative effect → condition/limit → implementation → unresolved question."
+  },
+  "supersession": {
+    "legacy_file": "assets/data/concurso36-what-court-ordered-v1.json",
+    "scope": "The v1 creditor-order date control is superseded only as to its 15-February-as-order-date conclusion. The underlying selected-order reconstruction remains historical source material.",
+    "reason_es": "La reinspección directa del PDF primario de tres páginas resuelve el conflicto: el cuerpo del Auto dice 8 de febrero de 2018; la firma electrónica del juez es de 9 de febrero; la de la LAJ, de 14 de febrero; y la copia lleva la anotación visible NOTIFICADO 15/02/2018. Por tanto, 15 de febrero es una capa de notificación/custodia, no la fecha del Auto.",
+    "reason_en": "Direct reinspection of the three-page primary PDF resolves the conflict: the body of the order says 8 February 2018; the judge electronically signed on 9 February; the LAJ signed on 14 February; and the copy visibly bears NOTIFICADO 15/02/2018. Therefore 15 February is a notification/custody layer, not the date of the order."
+  },
+  "primary_date_control": {
+    "id": "C36-2018-02-08-CREDITOR",
+    "document": "Auto de modificación de textos definitivos / sustitución de acreedor",
+    "body_date": "2018-02-08",
+    "judge": "Alberto López Villarrubia",
+    "judge_signature": "2018-02-09T08:38:20",
+    "laj": "Águeda Reyes Almeida",
+    "laj_signature": "2018-02-14T09:09:34",
+    "notification_annotation": "NOTIFICADO 15/02/2018",
+    "custody_filename": "AUTO Modificación Textos Definitivos CAM+RETRACTO - 15FEB2018.pdf",
+    "source": "Gmail message 163d0e6f6da5d4ed · primary three-page PDF reinspected 2026-08-29",
+    "source_status": "PROVEN BY PRIMARY DOCUMENT",
+    "operative_effect_es": "Tras una solicitud de la administración concursal de 6 de noviembre de 2017 y oposición de LPB y Ayuntamiento de Yaiza, el juez acordó modificar los textos definitivos para sustituir a Promontoria Holding 122 B.V. por Construcciones Acosta Matos, S.A. como titular de los créditos identificados.",
+    "operative_effect_en": "After an Insolvency Administration request of 6 November 2017 and opposition by LPB and Yaiza Town Council, the judge ordered the definitive texts amended to substitute Construcciones Acosta Matos, S.A. for Promontoria Holding 122 B.V. as holder of the identified claims.",
+    "critical_rule_es": "El Auto razona que la cesión de créditos implica cambio de titularidad, pero no de cuantía, para la cual debe estarse a lo consignado en los textos definitivos.",
+    "critical_rule_en": "The order reasons that assignment changes the identity of the holder, but not the amount, for which the definitive texts control.",
+    "special_privilege_eur": [857373.81, 8194877.88],
+    "special_privilege_total_eur": 9052251.69,
+    "additional_item": "Contingent specially secured enforcement costs without a self-standing fixed amount in the dispositive section.",
+    "route": "Former Ley Concursal Article 97 bis definitive-text modification",
+    "remedy": "Appeal within 20 days, as stated in the order."
+  },
+  "critical_comparator_4_june_2018": {
+    "id": "C36-2018-06-04-CLARIFICATION",
+    "body_date": "2018-06-04",
+    "document": "Auto de aclaración del Auto de 16 de abril de 2018 sobre plan de liquidación",
+    "judge": "Alberto López Villarrubia",
+    "procedural_class": "ACLARACION_CORRECCION_COMPLEMENTO / PLAN_LIQUIDACION",
+    "not_an_incidente_concursal": true,
+    "not_verified_as_definitive_text_modification": true,
+    "source_status": "PROVEN BY PRIMARY DOCUMENT",
+    "source_mechanics_es": "Ante la petición de LPB de que la AC calculara previamente el crédito privilegiado actualizado, el Auto se apoyó en dos actas de fijación de saldo aportadas por CAM de 17 de mayo y dijo que debía estarse a esas cantidades sin requerimiento previo a la AC.",
+    "source_mechanics_en": "When LPB requested that the IA first calculate the updated specially secured claim, the order relied on two 17-May CAM balance-fixing instruments and stated that those amounts should be followed without first requiring an IA calculation.",
+    "first_rank_eur": 11887314.33,
+    "second_rank_eur": 1278518.03,
+    "operative_total_eur": 13165832.36,
+    "additional_interest": "Continuing default interest to the extent of the respective real-security limits, as stated by the order.",
+    "remedy_feature": "The dispositive section says it clarifies the 16-April order and states no appeal lies against the clarification under LEC Article 214.4.",
+    "user_position_es": "Posición declarada de Gil Marer/Aweswell: este Auto no era un incidente concursal y no era jurídicamente capaz, por sí solo, de modificar los textos definitivos ni de crear un crédito definitivo o importe de payoff/compensación concursal de aproximadamente 13 millones de euros.",
+    "user_position_en": "Declared Gil Marer/Aweswell position: this order was not an insolvency incident and was not legally capable, by itself, of amending the definitive texts or creating an approximately EUR 13 million definitive claim or insolvency payoff/set-off amount.",
+    "open_legal_tests": [
+      "Scope of clarification under LEC 214-215 and LOPJ 267.",
+      "Whether former LC Article 59 lawfully explains secured-interest accrual, mortgage by mortgage and only within the respective real-security ceiling.",
+      "Whether any formal change to the definitive creditor-list amount required the Article 97/97-bis modification route and where that chain is.",
+      "Consistency with the same judge's 8-February rule that assignment changes the holder but not the amount recorded in the definitive texts.",
+      "Equality-of-arms and meaningful-review effect of using a clarification order for an operative rival-bid threshold.",
+      "Economic and causal effect on funded exits, rival bidding and the estate; causation remains to be proved."
+    ]
+  },
+  "community_fees_comparator": {
+    "date": "2017-01-20",
+    "procedural_class": "MODIFICACION_TEXTOS_DEFINITIVOS",
+    "route": "Former LC Article 97 bis",
+    "status": "FORMAL FINAL-TEXT MODIFICATION VERIFIED; SEPARATE INCIDENT DOCKET NOT YET VERIFIED",
+    "effect_es": "El Auto expresamente acordó modificar los textos definitivos respecto del tratamiento contingente ordinario de determinadas cuotas preconcursales de la Comunidad tras solicitud/objeción de LPB, informe favorable de la AC y traslado sin oposición localizada.",
+    "effect_en": "The order expressly amended the definitive texts regarding the contingent ordinary treatment of certain pre-insolvency Community fees after LPB's request/objection, a favourable IA report and transfer with no located opposition.",
+    "forensic_use": "Comparator proving that formal final-text modification had an identifiable statutory route and an express modifying order. Do not call it an incidente concursal unless a separate primary incidental docket/claim/admission/decision is located."
+  },
+  "verified_incidentes_concursales_located": [
+    {
+      "piece": "0000007/2012",
+      "date_decision": "2016-04-01",
+      "caption": "Pz Incidente concursal impugnación inventario/lista de acreedores (Art 96.4)",
+      "claimant": "Luchy Playa Blanca, S.L.",
+      "defendant": "Garrigues Abogados y Asesores Tributarios",
+      "result": "Claim dismissed; no costs because the judgment recorded legal/factual doubts.",
+      "status": "PRIMARY JUDGMENT LOCATED"
+    },
+    {
+      "piece": "0000008/2012",
+      "date_decision": "2015-11-24",
+      "caption": "Pz Incidente concursal Resolución contrato por incumplimiento (Art 62 LC)",
+      "claimant": "Administración Concursal",
+      "defendants": "Luchy Playa Blanca, S.L. and Monterecco Sun Park, S.L.",
+      "result": "Claim granted; lease termination, vacating relief, EUR 2,733,923.64 plus interest/future rent and costs recorded.",
+      "status": "PRIMARY JUDGMENT LOCATED"
+    }
+  ],
+  "definitive_text_change_gate": [
+    "application/request and applicant",
+    "historical statutory gateway and qualifying ground",
+    "IA report and position",
+    "transfer/opposition and incidente concursal where legally required",
+    "signed judicial decision expressly ordering modification",
+    "exact before/after creditor-list or inventory entry",
+    "service, remedy and finality",
+    "corrected definitive list/inventory or equivalent implementation binding"
+  ],
+  "judicial_review_governance": {
+    "declared_position_es": "Gil Marer/Aweswell alega un patrón acumulativo de múltiples actos y omisiones potencialmente ilícitos del juez del concurso, no un único incidente, y ha promovido quejas/comunicaciones ante el CGPJ y otras vías. Esa historia se usa como contexto de hipótesis y debe confrontarse con cada nueva fuente; no constituye prueba de culpabilidad por sí sola.",
+    "declared_position_en": "Gil Marer/Aweswell alleges a cumulative pattern of multiple potentially unlawful acts and omissions by the insolvency judge, not a single incident, and has pursued complaints/communications before the CGPJ and other routes. That history is used as hypothesis context and must be tested against each new source; it is not proof of guilt by itself.",
+    "mandatory_lenses": [
+      "Dry-law procedural classification first.",
+      "Independent adversarial testing of judge/IA/private-actor authority, knowledge, route, consistency, asymmetry, harm/benefit, causation, repetition and alternative lawful explanation.",
+      "For CP Article 446 prevaricación, test unjust resolution and knowledge separately; adverse outcome or error alone is insufficient.",
+      "Preserve protective/corrective counterweights and contrary evidence in the same chronology."
+    ]
+  },
+  "denominator_caution": "This is a controlled current register for the date/taxonomy issue and selected critical comparators. It is not the certified court docket. The signed electronic chronological index / official per-piece export remains unlocated."
+}
