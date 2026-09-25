@@ -1,36 +1,32 @@
 {
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
   "publication_id": "PD-HOMEPAGE-READING-SCOPE-20260925",
   "current_state": "PR_OPEN",
   "owner": "Gil Marer / Project Sun Rock",
-  "expected_routes": {
-    "en": [
-      "en/index.html"
-    ],
-    "es": [
-      "es/index.html"
-    ]
-  },
+  "expected_routes": {"en": ["en/index.html"], "es": ["es/index.html"]},
   "expected_source_files": [
-    "en/index.html",
-    "es/index.html",
-    "assets/homepage-reading-20260925.css",
-    "assets/audience-experience-order-20260823.js"
+    "en/index.html", "es/index.html", "assets/homepage-reading-20260925.css",
+    "assets/audience-experience-order-20260823.js",
+    "assets/optimum-reader-journey-finish-20260818.js",
+    "assets/unitary-public-shell-20260818.js"
   ],
-  "schema": "por-derecho.homepage-reading-scope.v1",
+  "content_profile": "por-derecho.homepage-reading-scope.v1",
   "control_date": "2026-09-25",
   "state": "CANDIDATE_REQUIRES_PR_CHECKS_AND_LIVE_READBACK",
   "base_sha": "d457ed39af169d78d1f9e8eb538a0dbacbff52f6",
   "existing_pr": 1893,
   "prior_candidate_head": "d83f48d1f14f5f0b16eb1be344f9c245b7a826e5",
-  "authority": "Owner instruction in the homepage-refinement conversation, 25 September 2026. Retain the seven substantive front-page presentations and relevant appearances elsewhere; use the owner-supplied whole-portfolio framing.",
+  "runtime_repair_commit": "52c0e2998c999bf443ee6b8310da2730917116ff",
+  "authority": "Owner instruction in the homepage-refinement conversation, 25 September 2026. Retain the seven substantive front-page presentations and relevant appearances elsewhere; use the owner-supplied whole-portfolio framing. Take the next steps through required checks, normal merge and verified deployment.",
   "scope_source": "PD-OWNER-PORTFOLIO-SCOPE-20260925; owner-adopted allegation, not an independent report or adjudicated finding",
   "source_limit": "Unresolved embedded references in the supplied statement are not promoted as verified report citations. No new quantified AUM, guilt finding, third-party transfer or digital-incident attribution.",
   "statement_period": "The approximately six-to-eight-year acquisition cycle described as of 25 September 2026; not a moving window or a uniform start date for every asset.",
   "paths": [
-    "en/index.html",
-    "es/index.html",
-    "assets/homepage-reading-20260925.css",
+    "en/index.html", "es/index.html", "assets/homepage-reading-20260925.css",
     "assets/audience-experience-order-20260823.js",
+    "assets/optimum-reader-journey-finish-20260818.js",
+    "assets/unitary-public-shell-20260818.js",
     "publication-manifests/homepage-reading-and-scope-20260925.json"
   ],
   "preservation": {
@@ -47,37 +43,29 @@
       "all_original_text_links_images_and_ids_retained": true
     }
   },
-  "baseline_checks": [
-    {
-      "name": "baseline-0",
-      "exit_code": 0
+  "historical_authoring_checks": {
+    "run_id": 36192692748,
+    "artifact_id": 10888648371,
+    "artifact_sha256": "074f80fc20e4ca769f4baad1b741b1fa82c47a165c902ecef33226ccc33764bc",
+    "baseline_checks": [{"name":"baseline-0","exit_code":0},{"name":"baseline-1","exit_code":0},{"name":"baseline-2","exit_code":0}],
+    "candidate_checks": [{"name":"candidate-0","exit_code":0},{"name":"candidate-1","exit_code":0},{"name":"candidate-2","exit_code":1}],
+    "limit": "Historical helper checks, not final PR acceptance. The helper did not supply the changed-file range to the manifest classifier. Final PR validation exposed the schema mismatch corrected in this record. The old browser run failed legacy navigation replacement."
+  },
+  "validation": {
+    "status": "FINAL_CANDIDATE_REQUIRED",
+    "observed_at_runtime_repair": {
+      "commit": "52c0e2998c999bf443ee6b8310da2730917116ff",
+      "audience_workflow_run": 36194696505,
+      "attribution_workflow_run": 36194697351,
+      "audience_and_attribution": "SUCCESS",
+      "publication_workflow_run": 36194696455,
+      "publication": "FAILED_UNSUPPORTED_MANIFEST_SCHEMA"
     },
-    {
-      "name": "baseline-1",
-      "exit_code": 0
-    },
-    {
-      "name": "baseline-2",
-      "exit_code": 0
-    }
-  ],
-  "candidate_checks": [
-    {
-      "name": "candidate-0",
-      "exit_code": 0
-    },
-    {
-      "name": "candidate-1",
-      "exit_code": 0
-    },
-    {
-      "name": "candidate-2",
-      "exit_code": 1
-    }
-  ],
+    "remaining": ["Final required PR checks", "Complete sixteen-case delayed-runtime browser matrix", "Screenshot review", "Normal merge", "Exact deployed-source and live-page verification"]
+  },
   "seven_person_record": "Protected block retained byte-for-byte. No actor or institutional node hidden or moved off the homepage.",
-  "other_routes": "Untouched; repeated relevant appearances remain.",
+  "other_routes": "Dossier content and relevant repeated appearances unchanged. Shared runtime changes are guarded by the refined homepage marker.",
   "private_boundary": "No mailbox originals, provider message IDs, identity-document material, private financial ledgers or legal advice published.",
   "gitlab_state": "NOT_UPDATED_BY_THIS_PACKAGE",
-  "live_state": "NOT_VERIFIED_BY_AUTHORING_HELPER"
+  "live_state": "NOT_VERIFIED"
 }
