@@ -39,6 +39,16 @@ ancestor of current `main` and revalidate the recorded exact Pages run. The
 unresolved readback gap remains explicit, no `VERIFIED_FOR_SCOPE` receipt is
 created, and no historical bytes are rewritten or inferred.
 
+
+If a merged `RECOVERY_REQUIRED` release has been superseded by a later legitimate
+`main` but the controller never recorded an exact Pages deployment checkpoint,
+`/pd-release recover` may release only the stale ownership fence as
+`SUPERSEDED_WITH_OPEN_PUBLICATION_STATE`. The controller must prove the held
+merge is an ancestor of current `main`. Both deployment and scoped readback remain
+explicitly unverified; no deployment is inferred, no `VERIFIED_FOR_SCOPE` receipt
+is created, and no historical bytes are rewritten. This is the no-record counterpart
+to `SUPERSEDED_WITH_OPEN_READBACK`, not a weaker normal publication path.
+
 `queue: max` serializes participating workflow commands; compare-and-swap guards
 state. It does **not** prevent independent API merges with another credential.
 The controller uses contents write only to persist `pd-publication-state`.
