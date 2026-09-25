@@ -43,9 +43,10 @@
   ],
   "this_update": {
     "github_branch": "agent/community-debt-role-reversal-box-20260925",
-    "github_status": "INTEGRATION_BRANCH_PENDING_MERGE",
-    "gitlab_mirror_status": "NOT_UPDATED_BY_THIS_USER_INSTRUCTION",
-    "rule": "Do not claim parity until the same verified controls are reconciled to GitLab current main."
+    "github_status": "MERGED_TO_MAIN",
+    "gitlab_mirror_status": "PENDING_SEPARATE_RECONCILIATION_NOT_PART_OF_GITHUB_ONLY_INSTRUCTION",
+    "rule": "Do not claim parity until the same verified controls are reconciled to GitLab current main.",
+    "github_merge_sha": "2f9a7bad36f93dd440d6d64dc0839198daacaaec"
   },
   "new_controls": [
     ".github/governance/CHATGPT_UNITARY_PROSECUTORIAL_INTAKE_GATE_25SEP2026.md",
@@ -54,5 +55,17 @@
     "governance/COMMUNITY_COURT_INFORMATION_COMPLETENESS_25SEP2026.md",
     "governance/COMMUNITY_DEBT_ROLE_REVERSAL_BOX_25SEP2026.md",
     "assets/data/community-debt-role-reversal-20260925.json"
-  ]
+  ],
+  "latest_verified_github": {
+    "main_sha": "2f9a7bad36f93dd440d6d64dc0839198daacaaec",
+    "merged_pr": 1906,
+    "reviewed_head_sha": "9fd66527e52e817de38723c661a20351d53bdef8",
+    "workflow_result": "23_OF_23_SUCCESS",
+    "control_blobs": {
+      "CHATGPT_START_HERE.md": "62f05e599ec2f77015c4b15e4de49e1765a83e5a",
+      "AGENTS.md": "b2b5015d20660093131d119669ab5936c37f8a52",
+      ".github/governance/CHATGPT_UNITARY_PROSECUTORIAL_INTAKE_GATE_25SEP2026.md": "bce1ef47eb70c33a9f06d7822d92dfa75d621648",
+      "assets/data/chatgpt-unitary-prosecutorial-intake-v1.json": "52cb65ca2ab6323957764bbb371965b030ec2552"
+    }
+  }
 }

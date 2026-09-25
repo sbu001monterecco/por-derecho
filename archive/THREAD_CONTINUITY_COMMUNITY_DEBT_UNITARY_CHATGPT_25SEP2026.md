@@ -2,7 +2,7 @@
 
 **Control:** PD-THREAD-COMMUNITY-UCF-20260925-01  
 **Repository:** sbu001monterecco/por-derecho  
-**Status:** GITHUB INTEGRATION PACKAGE · CURRENT BRANCH BEFORE MERGE  
+**Status:** GITHUB MERGED · PR #1906 · MAIN `2f9a7bad36f93dd440d6d64dc0839198daacaaec`  
 **Purpose:** preserve all material reasoning and implementation from the 25-Sep-2026 workspace so a fresh ChatGPT thread can continue without relying on chat memory.
 
 ## 1. Controlling upstream rule already merged
@@ -256,8 +256,14 @@ This user instruction updates **GitHub**. It does not claim GitLab mirror parity
 11. complete money-in/money-out and funded-exit counterfactual;
 12. link each present-day economic consequence only through proved causal bridges.
 
-## 13. Thread deletion state
+## 13. Merge and deletion state
 
-This thread is not deletion-safe until the current GitHub integration package is merged and its final merge SHA is recorded here or in a successor close-out.
+PR **#1906 — Integrate Community debt role reversal and always-on unitary prosecutorial intake** merged to GitHub `main` as:
 
-Current state at creation: **ORANGE — preservation pending merge**.
+`2f9a7bad36f93dd440d6d64dc0839198daacaaec`
+
+Pre-merge validation on exact head `9fd66527e52e817de38723c661a20351d53bdef8`: **23/23 workflow runs completed successfully**.
+
+The complete reasoning unique to this thread is now durably recoverable from GitHub controls plus the already-updated private Google Drive continuity record. GitLab mirror parity remains a separate operational task and is not required to recover this thread.
+
+Current thread state: **GREEN — deletion-safe from a continuity/preservation perspective after this close-out is merged.**
