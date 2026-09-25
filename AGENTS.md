@@ -712,3 +712,17 @@ Mandatory special cases:
 - connector/CI/quota/host-parity failure → `CONTROL_SYSTEM_DEGRADED`.
 
 This control never authorises an email, filing, appeal, payment, publication or third-party contact. External acts still require their controlling authority gate. Raw mailbox content and private source locators remain outside public Git.
+
+## PD-GOV-TDS — THREAD DELETION-SAFETY SENTINEL
+
+Apply `PD-THREAD-SENTINEL-20260925-01` in `.github/governance/THREAD_DELETION_SAFETY_SENTINEL_25SEP2026.md` and `assets/data/thread-deletion-safety-sentinel-v1.json` to every substantive Por Derecho / Project Sun Rock thread.
+
+Every substantive assistant response must end with exactly one compact thread-safety cue:
+
+- `🟢 THREAD — safe to delete`
+- `🟠 THREAD — preservation pending · <short reason>`
+- `🔴 THREAD — do not delete · <short blocker>`
+
+A new substantive thread defaults to ORANGE until current evidence supports another state. RED overrides ORANGE whenever deletion would cause material loss, pause/orphan an active automation/task, lose the only usable source/artifact/recovery instruction, or interrupt an external action whose receipt/state is not preserved elsewhere. GREEN requires independent reconstructability, durable propagation/readback, no chat-only material and no chat-bound active operation.
+
+The cue is not proof and does not replace the universal deletion-safety protocol. Recompute it after material source, repository, Drive, automation, filing/send/publication or preservation-state changes. If verification is unavailable, remain ORANGE unless a RED trigger is known. Do not omit the cue merely because the user did not ask about deletion safety.
