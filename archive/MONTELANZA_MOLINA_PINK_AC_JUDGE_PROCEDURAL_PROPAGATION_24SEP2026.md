@@ -1,3 +1,5 @@
+> **25-Sep-2026 mandatory deep-law companion:** read `archive/MONTELANZA_MOLINA_PINK_AC_JUDGE_DEEP_CRIMINAL_LEGAL_ANALYSIS_25SEP2026.md` before criminal characterisation. It adds the six-plane legal separation, successive-adoption model, offence-by-offence tests, temporal-law/prescription controls and CRIM-XPROC-01–17. Where an older shorthand conflicts with the new criminal-characterisation rules, the 25-Sep companion controls without changing the underlying source status.
+
 # Montelanza / Molina → JV 1260/2011 → AP 89/2014 ↔ Pink / AC / Concurso 36/2012
 ## Procedural-propagation and actor-adoption control
 
