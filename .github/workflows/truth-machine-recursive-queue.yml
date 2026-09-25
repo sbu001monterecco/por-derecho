@@ -15,6 +15,10 @@ on:
       - "legaltech/unitary_review/context_integrity.py"
       - "legaltech/unitary_review/recursive_priority_queue.py"
       - "recovery_tests/test_recursive_priority_queue.py"
+      - "assets/data/r33-forensic-method-pass-v1.json"
+      - "assets/data/truth-machine-methodology-v3.json"
+      - "recovery_tests/test_method_stack.py"
+      - "legaltech/unitary_review/method_stack.py"
   pull_request:
     paths:
       - ".github/workflows/truth-machine-recursive-queue.yml"
@@ -38,6 +42,8 @@ jobs:
           python-version: "3.12"
       - name: Run recursive queue regression tests
         run: python -m unittest recovery_tests.test_recursive_priority_queue -v
+      - name: Run method-stack regression tests
+        run: python -m unittest recovery_tests.test_method_stack -v
       - name: Execute source-bound queue triage
         run: python legaltech/unitary_review/recursive_priority_queue.py --host github --output /tmp/truth-machine-queue-report.json
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
