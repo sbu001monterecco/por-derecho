@@ -13,6 +13,8 @@ ROUTE = ROOT / "assets/capital-relationships-route-20260916.js"
 SITE = ROOT / "assets/site.js"
 HOME = ROOT / "assets/home-future-institutional-20260916.js"
 SITEMAP = ROOT / "sitemap-sun-rock-institutional-20260916.xml"
+HOME_EN = ROOT / "en/index.html"
+HOME_ES = ROOT / "es/index.html"
 
 errors = []
 
@@ -23,7 +25,7 @@ def need(path, needle, label=None, case_sensitive=True):
     if target not in haystack:
         errors.append(f"{path.relative_to(ROOT)} missing {label or needle!r}")
 
-required = [EN, ES, IC_EN, IC_ES, PROCESS, DATA, ROUTE, SITE, HOME, SITEMAP]
+required = [EN, ES, IC_EN, IC_ES, PROCESS, DATA, ROUTE, SITE, HOME, SITEMAP, HOME_EN, HOME_ES]
 for p in required:
     if not p.exists():
         errors.append(f"missing required file: {p.relative_to(ROOT)}")
@@ -64,6 +66,27 @@ if not errors:
     need(IC_ES, "De un email a una decisión invertible.")
     need(IC_EN, "Committed financing / definitive offer")
     need(IC_ES, "Financiación comprometida / oferta definitiva")
+
+
+    # Homepage visibility lock: institutional capital must not be promoted directly
+    # from the homepage. The only permitted homepage route is from Future/Futuro.
+    home_en = HOME_EN.read_text(encoding="utf-8")
+    home_es = HOME_ES.read_text(encoding="utf-8")
+    homepage_forbidden = [
+        ('en/index.html', home_en, '<a href="institutional-capital/">Capital</a>'),
+        ('en/index.html', home_en, '<a class="button" href="institutional-capital/">Institutional capital</a>'),
+        ('en/index.html', home_en, 'class="capital-entry"'),
+        ('es/index.html', home_es, '<a href="capital-institucional/">Capital</a>'),
+        ('es/index.html', home_es, '<a class="button" href="capital-institucional/">Capital institucional</a>'),
+        ('es/index.html', home_es, 'class="capital-entry"'),
+    ]
+    for page, body, forbidden in homepage_forbidden:
+        if forbidden in body:
+            errors.append(f"{page} violates homepage institutional-capital visibility lock: {forbidden!r}")
+    if '<a class="button secondary" href="institutional-capital/">Explore institutional capital →</a>' not in home_en:
+        errors.append("en/index.html missing permitted Future-only institutional-capital route")
+    if '<a class="button secondary" href="capital-institucional/">Explorar capital institucional →</a>' not in home_es:
+        errors.append("es/index.html missing permitted Futuro-only institutional-capital route")
 
     process = json.loads(PROCESS.read_text(encoding="utf-8"))
     if process.get("public_status") != "INSTITUTIONAL_CONVERSATIONS_ACTIVE_NO_COMMITTED_FINANCING":
