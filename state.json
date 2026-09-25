@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 47,
   "owner": "1860:5cbad60eff3e921865d8a203f10f3d097422d424",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 1860,
   "base_sha": "0c6e83f957a6fa3657121f3d8ba51e8fca3f73a3",
   "candidate_sha": "5cbad60eff3e921865d8a203f10f3d097422d424",
@@ -2537,6 +2537,47 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 1860,
+      "candidate_sha": "5cbad60eff3e921865d8a203f10f3d097422d424",
+      "at": "2026-09-25T10:17:13.962772Z",
+      "merge_sha": "5f9f365e4019a2feaf0dabe0f0f6fe81bb3f0a96",
+      "pages_run_id": 36122996156,
+      "exact_matches": [
+        {
+          "path": "assets/data/truth-machine-methodology-v2.json",
+          "sha256": "d694fcdad685ff39ca0e7962d6baf2143043f84140599cb2e2b312ebda8487ec",
+          "bytes": 15864
+        },
+        {
+          "path": "en/index.html",
+          "sha256": "d3917a91f8073c65c4a5b1e4395a0f5e10688fd09b97838ffe411e6dda42397b",
+          "bytes": 233625
+        },
+        {
+          "path": "en/r33-truth-machine-visual/index.html",
+          "sha256": "e9a16778808b6e49a38aab71809e8aa4a1243ffc65c9136a1c3f594e7ba1b2d3",
+          "bytes": 8845
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "0ae46753cc4880fed0770ef0237856587cb89f0d99c56d2a91d4f6b8d7e01d63",
+          "bytes": 242931
+        },
+        {
+          "path": "es/r33-maquina-verdad-visual/index.html",
+          "sha256": "232d9268316e4af120d08f8d63c716af89ab9ed389d2efb368bbd789b89fdc41",
+          "bytes": 8979
+        },
+        {
+          "path": "ops/continuity/TRUTH_MACHINE_GLOBAL_METHODS_20260925.md",
+          "sha256": "54c996b4648f6eabe7637a23e60fa505cae8a3f8eebaeab49105f54741892e51",
+          "bytes": 1848
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -2579,7 +2620,49 @@
         "pages_run_id": 36122996156,
         "merge_sha": "5f9f365e4019a2feaf0dabe0f0f6fe81bb3f0a96"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-25T10:17:13.962675Z",
+      "evidence": {
+        "merge_sha": "5f9f365e4019a2feaf0dabe0f0f6fe81bb3f0a96",
+        "pages_run_id": 36122996156,
+        "exact_matches": [
+          {
+            "path": "assets/data/truth-machine-methodology-v2.json",
+            "sha256": "d694fcdad685ff39ca0e7962d6baf2143043f84140599cb2e2b312ebda8487ec",
+            "bytes": 15864
+          },
+          {
+            "path": "en/index.html",
+            "sha256": "d3917a91f8073c65c4a5b1e4395a0f5e10688fd09b97838ffe411e6dda42397b",
+            "bytes": 233625
+          },
+          {
+            "path": "en/r33-truth-machine-visual/index.html",
+            "sha256": "e9a16778808b6e49a38aab71809e8aa4a1243ffc65c9136a1c3f594e7ba1b2d3",
+            "bytes": 8845
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "0ae46753cc4880fed0770ef0237856587cb89f0d99c56d2a91d4f6b8d7e01d63",
+            "bytes": 242931
+          },
+          {
+            "path": "es/r33-maquina-verdad-visual/index.html",
+            "sha256": "232d9268316e4af120d08f8d63c716af89ab9ed389d2efb368bbd789b89fdc41",
+            "bytes": 8979
+          },
+          {
+            "path": "ops/continuity/TRUTH_MACHINE_GLOBAL_METHODS_20260925.md",
+            "sha256": "54c996b4648f6eabe7637a23e60fa505cae8a3f8eebaeab49105f54741892e51",
+            "bytes": 1848
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-25T10:17:08.721816Z"
+  "updated_at": "2026-09-25T10:17:13.962675Z"
 }
