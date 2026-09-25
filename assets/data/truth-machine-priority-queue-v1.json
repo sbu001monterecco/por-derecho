@@ -23,7 +23,7 @@
       "id": "C36-SPECIALIST-R33",
       "title": "R33 · AC opposition in RPL 3304/2025 · 14 Sep 2026",
       "mode": "document",
-      "status": "LIVE_VISUALIZED_GITHUB",
+      "status": "METHOD_STACK_APPLIED_SOURCE_REVIEW_ACTIVE",
       "source_scope": "22 pages; recovered v3 structure; private native source retained outside public Git",
       "sources": [
         {
@@ -36,7 +36,9 @@
         "en": "/en/r33-truth-machine-visual/",
         "es": "/es/r33-maquina-verdad-visual/"
       },
-      "next_action": "REOPEN_ONLY_ON_MATERIAL_SOURCE_OR_DEPENDENCY_CHANGE"
+      "next_action": "COMPLETE_FINITE_SOURCE_REVIEW_FOR_REMAINING_NARROWING_FALSEHOOD_AND_KNOWLEDGE_CANDIDATES",
+      "method_stack_control": "PD-TRUTH-METHOD-STACK-20260925-01",
+      "source_review_control": "PD-R33-METHOD-STACK-SOURCE-REVIEW-20260925-01"
     },
     {
       "rank": 1,

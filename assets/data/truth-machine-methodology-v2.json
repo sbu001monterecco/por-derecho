@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho.truth-machine-methodology.v2",
-  "control": "PD-TRUTH-METHOD-20260925-02",
+  "control": "PD-TRUTH-METHOD-20260925-04",
   "generated_at": "2026-09-25",
   "boundary": {
     "en": "Source-bound forensic review, not a linguistic lie detector. Language features generate review questions; they do not establish falsity, intent, credibility, criminality, guilt or liability.",
@@ -56,6 +56,16 @@
       "A10",
       "Human signoff & correction",
       "Revisión humana y corrección"
+    ],
+    [
+      "A11",
+      "Scientific method stack",
+      "Pila de métodos científicos"
+    ],
+    [
+      "A12",
+      "Falsehood / truth-inversion register",
+      "Registro de falsedad / inversión de verdad"
     ]
   ],
   "linguistic_layers": [
@@ -201,6 +211,54 @@
         "institutional reuse",
         "independent corroboration"
       ]
+    ],
+    [
+      "L13",
+      "Statement–evidence consistency",
+      "Consistencia declaración–prueba",
+      [
+        "account vs evidence",
+        "contrary evidence",
+        "unaddressed evidence",
+        "later evidence"
+      ]
+    ],
+    [
+      "L14",
+      "Verifiability",
+      "Verificabilidad",
+      [
+        "checkable detail",
+        "checked",
+        "confirmed",
+        "contradicted",
+        "unavailable"
+      ]
+    ],
+    [
+      "L15",
+      "Expected controls",
+      "Controles esperables",
+      [
+        "control owner",
+        "expected artefact",
+        "located",
+        "bounded absence",
+        "inconsistency"
+      ]
+    ],
+    [
+      "L16",
+      "Falsehood promotion firewall",
+      "Cortafuegos de promoción de falsedad",
+      [
+        "false",
+        "misleading",
+        "knowledge",
+        "intent",
+        "reliance",
+        "legal consequence"
+      ]
     ]
   ],
   "graph_chain": [
@@ -326,6 +384,56 @@
       "sources": [
         "https://www.uscourts.gov/sites/default/files/document/federal-rules-of-evidence.pdf"
       ]
+    },
+    {
+      "id": "US-CIA-ACH",
+      "jurisdiction": "United States · intelligence analysis",
+      "institution": "CIA structured analytic tradecraft",
+      "en": "ACH explicitly develops reasonable alternative hypotheses and arrays evidence against all of them, emphasizing disconfirming evidence.",
+      "es": "ACH desarrolla hipótesis alternativas razonables y contrasta la prueba frente a todas, priorizando la prueba que desconfirma.",
+      "sources": [
+        "https://www.cia.gov/resources/csi/static/955180a45afe3f5013772c313b16face/Tradecraft-Primer-apr09.pdf"
+      ]
+    },
+    {
+      "id": "UK-FCA-CONTROLS",
+      "jurisdiction": "United Kingdom",
+      "institution": "Financial Conduct Authority",
+      "en": "Risk-based financial-crime controls are used here as an expected-artefact lens, not a deception detector.",
+      "es": "Los controles de delito financiero basados en riesgo se usan aquí como lente de artefactos esperables, no detector de engaño.",
+      "sources": [
+        "https://www.fca.org.uk/publications/good-and-poor-practice/risk-assessment-processes-and-controls-firms-our-findings"
+      ]
+    },
+    {
+      "id": "UK-PSFA",
+      "jurisdiction": "United Kingdom",
+      "institution": "Public Sector Fraud Authority",
+      "en": "Fraud intelligence separates evidence from judgments, assesses source quality and uses alternative hypotheses, network, pattern, comparative and red-team analysis.",
+      "es": "La inteligencia antifraude separa prueba de juicios, evalúa calidad de fuente y utiliza hipótesis alternativas, redes, patrones, comparativa y red-team.",
+      "sources": [
+        "https://www.gov.uk/government/publications/government-counter-fraud-profession-standards-and-guidance-standard-for-fraud-intelligence-practitioner/standard-for-fraud-intelligence-practitioner-html"
+      ]
+    },
+    {
+      "id": "US-FBI-PROBE",
+      "jurisdiction": "United States · investigative practice",
+      "institution": "FBI Law Enforcement Bulletin",
+      "en": "Statement-analysis cues are prompts for further probing and corroboration; no single cue establishes lying.",
+      "es": "Las señales de análisis de declaraciones sirven para profundizar y corroborar; ninguna señal aislada acredita mentira.",
+      "sources": [
+        "https://leb.fbi.gov/articles/featured-articles/evaluating-truthfulness-and-detecting-deception"
+      ]
+    },
+    {
+      "id": "UK-PEACE",
+      "jurisdiction": "England and Wales · policing",
+      "institution": "College of Policing · PEACE",
+      "en": "Preserve the full account, clarify systematically, challenge where necessary, close accurately and evaluate against the wider investigation.",
+      "es": "Preservar el relato completo, aclarar sistemáticamente, contrastar cuando proceda, cerrar con precisión y evaluar frente a la investigación global.",
+      "sources": [
+        "https://www.college.police.uk/app/investigation/investigative-interviewing/investigative-interviewing"
+      ]
     }
   ],
   "outcome_states": [
@@ -371,5 +479,185 @@
     "observe → manifest → compare → classify → traverse dependencies → adversarial review → reconcile → exact-head verify → deploy/live readback → new envelope → recurse",
     "origin → authority → actor → act/omission → document → proceeding → treatment → consequence → later reuse → beneficiary → contradiction → open question → source",
     "AI proposes/retrieves/compares; deterministic controls verify anchors and source change; source/human review promotes merits"
-  ]
+  ],
+  "scientific_method_stack": [
+    {
+      "id": "CIA-ACH",
+      "class": "structured_analytic_technique",
+      "name": "Analysis of Competing Hypotheses (ACH)",
+      "en": "Generate reasonable alternative hypotheses and array evidence against all of them, emphasizing disconfirming evidence rather than only support for the preferred account.",
+      "es": "Generar hipótesis alternativas razonables y contrastar la prueba frente a todas, priorizando la prueba que desconfirma en lugar de acumular sólo apoyo para la hipótesis preferida.",
+      "transfer": "H1 accurate-as-used · H2 core fact true but overstated · H3 context changes meaning · H4 directly contradicted · H5 insufficient evidence.",
+      "sources": [
+        "https://www.cia.gov/resources/csi/static/955180a45afe3f5013772c313b16face/Tradecraft-Primer-apr09.pdf"
+      ]
+    },
+    {
+      "id": "SUE",
+      "class": "empirical_interview_research_adapted_to_documents",
+      "name": "Strategic Use of Evidence / statement-evidence consistency",
+      "en": "Use account–evidence inconsistency as a structured investigative cue. The project adapts the consistency concept only; it does not simulate interviews or transfer published detection rates to documents.",
+      "es": "Usar la inconsistencia relato–prueba como señal investigativa estructurada. El proyecto adapta sólo el concepto de consistencia; no simula entrevistas ni traslada tasas experimentales a documentos.",
+      "transfer": "Exact proposition → evidence known/available → evidence cited → contrary evidence → consistency state.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/16977348/",
+        "https://pubmed.ncbi.nlm.nih.gov/16133950/"
+      ]
+    },
+    {
+      "id": "VA",
+      "class": "empirical_verbal_veracity_research_adapted_to_checkability",
+      "name": "Verifiability Approach",
+      "en": "Identify objectively checkable details and whether they were actually checked. Meta-analytic findings support verifiable-detail differences in interview research, but the system does not infer truth from a detail ratio.",
+      "es": "Identificar detalles objetivamente comprobables y si fueron efectivamente verificados. El metaanálisis encuentra diferencias en detalle verificable en entrevistas, pero el sistema no deduce verdad de una proporción de detalles.",
+      "transfer": "Date · amount · actor · document · transaction · filing · account → checkable / checked / confirmed / contradicted / unavailable.",
+      "sources": [
+        "https://www.sciencedirect.com/science/article/pii/S2211368120300772"
+      ]
+    },
+    {
+      "id": "WIGMORE",
+      "class": "legal_evidence_mapping",
+      "name": "Wigmore evidence charting",
+      "en": "Map ultimate propositions, intermediate inferences, evidence, testimony and source-position-to-know so each inferential bridge is visible.",
+      "es": "Representar proposiciones finales, inferencias intermedias, prueba, testimonio y posición de la fuente para conocer, haciendo visible cada puente inferencial.",
+      "transfer": "Proposition node ↔ supporting/contrary evidence ↔ source quality/knowledge ↔ intermediate inference ↔ ultimate proposition.",
+      "sources": [
+        "https://academic.oup.com/lpr/article/24/1/mgaf002/8171465"
+      ]
+    },
+    {
+      "id": "FATF-FIN",
+      "class": "financial_investigation",
+      "name": "Parallel financial investigation",
+      "en": "Document origins, recipients, timing, storage/destination and beneficial use of funds in parallel with the narrative investigation.",
+      "es": "Documentar origen, receptores, momento, depósito/destino y uso/beneficiario de fondos en paralelo con la investigación narrativa.",
+      "transfer": "Source/balance → authority/invoice → debit → recipient credit → onward use/beneficiary.",
+      "sources": [
+        "https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Operational%20Issues_Financial%20investigations%20Guidance.pdf"
+      ]
+    },
+    {
+      "id": "FCA-CONTROLS",
+      "class": "financial_crime_controls",
+      "name": "Expected-control evidence",
+      "en": "Use risk-based systems-and-controls thinking to ask which approval, monitoring, accounting or governance artefacts should exist if an asserted process occurred.",
+      "es": "Aplicar el enfoque basado en riesgo de sistemas y controles para preguntar qué artefactos de aprobación, seguimiento, contabilidad o gobierno deberían existir si el proceso alegado ocurrió.",
+      "transfer": "Asserted process → control owner → expected artefact → located / bounded absence / inconsistent. Absence alone is not fraud.",
+      "sources": [
+        "https://www.fca.org.uk/publications/good-and-poor-practice/risk-assessment-processes-and-controls-firms-our-findings",
+        "https://www.fca.org.uk/publications/finalised-guidance/fg15-7-guidance-financial-crime-systems-and-controls"
+      ]
+    },
+    {
+      "id": "PSFA-INTEL",
+      "class": "fraud_intelligence",
+      "name": "Fraud intelligence analysis",
+      "en": "Separate evidence from assumptions/judgments, assess source quality, consider alternatives and use pattern, network, comparative-case and red-team products.",
+      "es": "Separar prueba de supuestos/juicios, evaluar calidad de fuente, considerar alternativas y usar patrones, redes, casos comparativos y red-team.",
+      "transfer": "Every network edge carries source quality, capacity/date and independence; patterns generate hypotheses, not collective liability.",
+      "sources": [
+        "https://www.gov.uk/government/publications/government-counter-fraud-profession-standards-and-guidance-standard-for-fraud-intelligence-practitioner/standard-for-fraud-intelligence-practitioner-html"
+      ]
+    },
+    {
+      "id": "PEACE",
+      "class": "investigative_interviewing_principles_adapted_to_documents",
+      "name": "PEACE account integrity",
+      "en": "Preserve the full account before clarification/challenge, systematically probe gaps, close accurately and evaluate against the wider investigation.",
+      "es": "Preservar el relato completo antes de aclarar/contrastar, explorar sistemáticamente vacíos, cerrar con precisión y evaluar frente al resto de la investigación.",
+      "transfer": "Original account first; document-review clarification/challenge only. The tool does not interview people.",
+      "sources": [
+        "https://www.college.police.uk/app/investigation/investigative-interviewing/investigative-interviewing"
+      ]
+    },
+    {
+      "id": "FBI-PROBE",
+      "class": "investigative_linguistic_probe",
+      "name": "FBI-hosted statement-analysis probe cues",
+      "en": "Use equivocation, tense/noun changes, editing/minimising language, imbalance and verbal-context inconsistency only to identify areas for further probing. No single cue establishes lying.",
+      "es": "Usar equívocos, cambios de tiempo/nombre, lenguaje de edición/minimización, desequilibrio e inconsistencia verbal-contextual sólo para localizar áreas a comprobar. Ninguna señal aislada acredita mentira.",
+      "transfer": "Linguistic cue → review question → source/context comparison; never cue → lie finding.",
+      "sources": [
+        "https://leb.fbi.gov/articles/featured-articles/evaluating-truthfulness-and-detecting-deception",
+        "https://leb.fbi.gov/articles/featured-articles/vetting-confidential-human-source-intelligence-through-investigative-statement-analysis"
+      ]
+    },
+    {
+      "id": "NIST-VAL",
+      "class": "method_validation",
+      "name": "NIST validation firewall",
+      "en": "Quantitative forensic methods need documented validation data and performance characterisation appropriate to the conditions of use before numeric output is treated as evidential weight.",
+      "es": "Los métodos forenses cuantitativos necesitan datos de validación documentados y caracterización de rendimiento apropiada al uso antes de tratar su resultado numérico como peso probatorio.",
+      "transfer": "No truth probability, credibility percentage or error-rate claim without a validated method and relevant reference data.",
+      "sources": [
+        "https://www.nist.gov/publications/validation-forensic-science-guiding-principles-collection-and-use-validation-data"
+      ]
+    },
+    {
+      "id": "ENFSI-EVAL",
+      "class": "forensic_evaluation_logic",
+      "name": "ENFSI competing-proposition discipline",
+      "en": "Evaluate findings against competing propositions with balance, logic, robustness and transparency. No likelihood ratio is assigned here because no validated case-relevant probability model/reference data exist.",
+      "es": "Evaluar hallazgos frente a proposiciones competidoras con equilibrio, lógica, robustez y transparencia. Aquí no se asigna razón de verosimilitud porque no existe modelo probabilístico/datos de referencia validados para el caso.",
+      "transfer": "Competing propositions yes; numeric LR/probability no unless future validation supports it.",
+      "sources": [
+        "https://enfsi.eu/wp-content/uploads/2016/09/m1_guideline.pdf"
+      ]
+    }
+  ],
+  "falsehood_register_policy": {
+    "fields": [
+      "literal_accuracy",
+      "underlying_fact",
+      "inference_invited",
+      "context_effect",
+      "final_truth_state",
+      "knowledge_state",
+      "intent_state",
+      "materiality",
+      "falsehood_record_id"
+    ],
+    "states": [
+      "SUPPORTED",
+      "ACCURATE_LIMITED_USE",
+      "NARROWS",
+      "UNSUPPORTED",
+      "MATERIAL_CONTEXT_OMISSION",
+      "MISLEADING_INFERENCE",
+      "SCOPE_MISMATCH",
+      "DIRECTLY_CONTRADICTED",
+      "NON_BINARY_RHETORIC_OR_LEGAL",
+      "OPEN",
+      "KNOWINGLY_FALSE",
+      "DELIBERATE_MISLEADING_USE"
+    ],
+    "promotion_rules": {
+      "directly_contradicted": "Exact proposition scope must be matched to inspected contrary source(s); a broad contrary theme is insufficient.",
+      "knowingly_false": "Requires a supported false/misleading state plus separate actor-specific evidence that the contradicting or omitted material was known at the relevant time.",
+      "deliberate_misleading_use": "Requires separate purpose/intent evidence beyond falsity, omission or notice.",
+      "legal_consequence": "Never inherited automatically from a falsehood or misleading-use finding."
+    },
+    "boundary": "False proposition, misleading inference, knowledge, intent, reliance and legal liability are separate evidential questions."
+  },
+  "method_validation_policy": {
+    "deterministic_outputs": [
+      "source hashes",
+      "anchors",
+      "counts",
+      "candidate cues",
+      "dependency changes",
+      "network/source lineage"
+    ],
+    "human_source_review_required": [
+      "final truth state",
+      "material context effect",
+      "source independence where disputed",
+      "knowledge",
+      "intent",
+      "causation",
+      "legal consequence"
+    ],
+    "numerical_evidential_weights": "PROHIBITED_UNLESS_METHOD_AND_REFERENCE_DATA_VALIDATED_FOR_CASE_RELEVANT_USE"
+  }
 }

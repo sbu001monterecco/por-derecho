@@ -19,3 +19,10 @@ No public or private component is authorised to output a linguistic lie score, c
 
 ## Dynamic publication
 The EN/ES Truth Machine surfaces read the methodology registry, recursive priority queue and R33 aggregate JSON at runtime with cache bypass and 60-second refresh. The interface therefore updates when reviewed repository data changes; it does not make background merits decisions.
+
+## Scientific method stack · system-wide extension
+
+The controlling system now adds ACH, SUE statement–evidence consistency, Verifiability, Wigmore evidence mapping, FATF parallel financial tracing, FCA expected-control evidence, PSFA fraud-intelligence discipline, PEACE account preservation/challenge, FBI-hosted linguistic probe cues and a NIST/ENFSI validation firewall. These methods have different epistemic jobs and must not be blended into one deception percentage.
+
+### Falsehood promotion rule
+`literal words → underlying fact → invited inference → restored context → truth state → knowledge → intent → reliance/materiality → legal consequence`. Every arrow needs its own source bridge. A historical contradiction link is preserved as lineage but may be narrowed after source review. A proposition is not marked knowingly false unless falsity/misleading use and actor-specific knowledge are separately evidenced.
