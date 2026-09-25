@@ -31,6 +31,18 @@ for locale in ("en","es"):
         if token in text:
             errors.append(f"{meta['path']} contains forbidden homepage token {token!r}")
 
+for rel in cfg.get("required_destination_files", []):
+    if not (ROOT/rel).is_file():
+        errors.append(f"missing required homepage destination: {rel}")
+
+for locale in ("en","es"):
+    p=ROOT/cfg["homepage"][locale]["path"]
+    if p.is_file():
+        t=p.read_text(encoding="utf-8")
+        canonical=cfg.get("expected_canonical",{}).get(locale)
+        if canonical and f'<link rel="canonical" href="{canonical}">' not in t:
+            errors.append(f"{p.relative_to(ROOT)} canonical origin drift: expected {canonical}")
+
 for rel in cfg["preserved_archives"]:
     p=ROOT/rel
     if not p.is_file():
