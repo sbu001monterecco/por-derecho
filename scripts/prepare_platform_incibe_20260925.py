@@ -292,6 +292,16 @@ def prepare():
     return spec
 
 
+def validated_platform_event_ids(events, root=ROOT):
+    """Fail closed on a missing, duplicated, altered or unsolicited cohort row."""
+    expected = {e['event_id']: e for e in load_events(root)}
+    selected = [e for e in events if str(e.get('source_key', '')).startswith(CONTROL + ':')]
+    actual = {e['event_id']: e for e in selected}
+    if len(selected) != len(actual) or actual != expected:
+        raise ValueError('Platform communication cohort differs from its reviewed source crosswalk')
+    return set(expected)
+
+
 def validate():
     spec=json.loads((ROOT/INPUT).read_text()); ev=load_events(ROOT)
     assert len(ev)==11 and len({e['event_id'] for e in ev})==11
