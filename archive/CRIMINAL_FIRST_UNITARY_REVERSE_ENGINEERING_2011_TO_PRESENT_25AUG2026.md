@@ -296,3 +296,10 @@ The possible causal lanes are separately attributed: Montelanza/Molina-linked di
 Formal Spanish `calificación culpable` remains a statutory insolvency mechanism and must not be repurposed as a generic finding of guilt against a judge, insolvency practitioner or unrelated private third party. Gil's "counter-calificación" language is preserved as an attributed causal-accountability thesis. Separate criminal, professional, civil and judicial routes control any legal conclusion.
 
 This addendum is controlled by `PD-PROTECTIVE-ORIGIN-ROLE-REVERSAL-20260925-01`.
+
+
+## 25 September 2026 — always-on ChatGPT intake and Community-debt addendum
+
+For any new source capable of changing the 2011→present criminal-first reconstruction, apply `PD-CHATGPT-UCF-INTAKE-20260925-01` before treating the source as an isolated event. Mandatory operations are backward genealogy, forward premise propagation, state-transition alarms, source independence, numeric genealogy, actor/capacity/date, criminal element test, contrary record, decisive missing proof and NEW→OLD / OLD→NEW propagation.
+
+For Community debt/voting/authority, apply `PD-COMMUNITY-DEBT-ROLE-REVERSAL-20260925-01` and `PD-COMMUNITY-COURT-COMPLETENESS-20260925-01`. The chain now requires explicit treatment of the 2011/2015/2016/2017/2018 voting-denominator sequence, the 28-Apr-2016 definitive-text debt layer, the 20-Jan-2017 contingent/no-own-amount state, later re-quantification/use, the EUR1,145,798.29 better-bid burden and the 10-Jul-2018 eXW expert analysis. Preserve Gil/AWESWELL's categorical attributed debt/capture conclusion, while keeping criminal responsibility actor- and element-specific.
