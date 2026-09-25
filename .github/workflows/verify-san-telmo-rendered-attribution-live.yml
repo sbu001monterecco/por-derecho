@@ -57,7 +57,7 @@ jobs:
           echo "PSR_BROWSER_PATH=$BROWSER_PATH" >> "$GITHUB_ENV"
           "$BROWSER_PATH" --version
 
-      - name: Verify rendered English and Spanish homepage attribution
+      - name: Verify rendered English and Spanish direct-route attribution
         id: verify_dom
         continue-on-error: true
         env:
