@@ -18,7 +18,7 @@ jobs:
           persist-credentials: false
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
-          ref: 52c0e2998c999bf443ee6b8310da2730917116ff
+          ref: b322b7d5cf58013ca561767770556ba275b1ff58
           path: site
           fetch-depth: 0
           persist-credentials: false
@@ -26,7 +26,7 @@ jobs:
         shell: bash
         env:
           GITHUB_BASE_SHA: d457ed39af169d78d1f9e8eb538a0dbacbff52f6
-          GITHUB_HEAD_SHA: 52c0e2998c999bf443ee6b8310da2730917116ff
+          GITHUB_HEAD_SHA: b322b7d5cf58013ca561767770556ba275b1ff58
         run: |
           set -euo pipefail
           mkdir -p review/source
