@@ -1,0 +1,33 @@
+name: Truth Machine recursive priority queue
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * *"
+  push:
+    paths:
+      - "assets/data/truth-machine-priority-queue-v1.json"
+      - "evidence/**"
+      - "archive/**"
+      - "assets/data/**"
+      - "legaltech/unitary_review/context_integrity.py"
+      - "legaltech/unitary_review/recursive_priority_queue.py"
+      - "recovery_tests/test_recursive_priority_queue.py"
+jobs:
+  verify-recursive-queue:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run recursive queue regression tests
+        run: python -m unittest recovery_tests.test_recursive_priority_queue -v
+      - name: Execute source-bound queue triage
+        run: python legaltech/unitary_review/recursive_priority_queue.py --output /tmp/truth-machine-queue-report.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: truth-machine-recursive-queue-${{ github.sha }}
+          path: /tmp/truth-machine-queue-report.json
+          retention-days: 30

@@ -1,0 +1,104 @@
+{
+  "schema": "por-derecho.truth-machine-priority-queue.v1",
+  "control": "PD-TRUTH-QUEUE-20260925-01",
+  "generated_date": "2026-09-25",
+  "policy": {
+    "automatic_stage": "source-integrity check + deterministic candidate triage + dependency reopen signal",
+    "semantic_stage": "source/context/contrary-evidence/lawful-alternative review required before merits promotion",
+    "no_auto_findings": [
+      "falsity",
+      "dishonesty",
+      "intent",
+      "credibility",
+      "criminality",
+      "guilt",
+      "liability"
+    ],
+    "recursion_rule": "material source change reopens affected review; duplicate hosts and derivative summaries are not independent corroboration"
+  },
+  "candidates": [
+    {
+      "rank": 0,
+      "id": "C36-SPECIALIST-R33",
+      "title": "R33 · AC opposition in RPL 3304/2025 · 14 Sep 2026",
+      "mode": "document",
+      "status": "LIVE_VISUALIZED_GITHUB",
+      "source_scope": "22 pages; recovered v3 structure; private native source retained outside public Git",
+      "source_paths": [
+        {
+          "path": "assets/data/r33-truth-machine-visual-20260925.json",
+          "git_blob_sha": "786094e8f163ab43a402a25eccf5ac866ea5849d"
+        }
+      ],
+      "public_routes": {
+        "en": "/en/r33-truth-machine-visual/",
+        "es": "/es/r33-maquina-verdad-visual/"
+      },
+      "next_action": "REOPEN_ONLY_ON_MATERIAL_SOURCE_OR_DEPENDENCY_CHANGE"
+    },
+    {
+      "rank": 1,
+      "id": "AN2023-QUERELLA-21SEP",
+      "title": "Audiencia Nacional querella · 21 Sep 2023",
+      "mode": "document",
+      "status": "READY_FOR_FULL_PASS",
+      "source_scope": "88/88-page public-safe page-complete transcription; private verbatim master controlled separately",
+      "source_paths": [
+        {
+          "path": "evidence/criminal/an-dp91-2023/full-text/querella-21sep2023-full-public-transcription.md",
+          "git_blob_sha": "3ce7110eda6b789bbf251c2bc7c217f613414113"
+        }
+      ],
+      "next_action": "BUILD_FORENSIC_PACKAGE_THEN_FULL_CONTEXT_PASS"
+    },
+    {
+      "rank": 2,
+      "id": "DP1901-AUTO-14SEP2026",
+      "title": "DP 1901/2026 · Auto · 14 Sep 2026",
+      "mode": "document",
+      "status": "READY_WITH_NATIVE_GAP",
+      "source_scope": "controlled 3-page public transcription checked to source photographs; native electronic court PDF and notice metadata remain outstanding",
+      "source_paths": [
+        {
+          "path": "evidence/judicial/dp-1901-2026/full-text/auto-14sep2026-public-transcription.md",
+          "git_blob_sha": "1f4b4108dc0d61b48e061277e0caadb0036863f5"
+        }
+      ],
+      "next_action": "RUN_WITH_NATIVE_GAP_EXPLICIT_AND_REOPEN_WHEN_NATIVE_PDF_ARRIVES"
+    },
+    {
+      "rank": 3,
+      "id": "JTP-4JAN2019-PROTECTIVE-DRAFT",
+      "title": "Juan Tomás Parrilla · 4 Jan 2019 protective draft / counsel transition",
+      "mode": "control_packet",
+      "status": "SOURCE_CONTROL_READY",
+      "source_scope": "public-safe source-control record; broad draft, narrower 10-Jan filing, counsel transition and later fee/payment records must remain distinct",
+      "source_paths": [
+        {
+          "path": "archive/JUAN_TOMAS_PARRILLA_IMAGE_4JAN2019_PAYMENT_SOURCE_CONTROL_23SEP2026.md",
+          "git_blob_sha": "d0964bb6ac6759dbf7c739b72c82c93038fa721b"
+        }
+      ],
+      "next_action": "MATERIALIZE_NATIVE_DRAFT_AND_FILED_REQUEST_BEFORE_FULL_SEMANTIC_SIGNOFF"
+    },
+    {
+      "rank": 4,
+      "id": "SUN-PARK-7JUNE2018-PACKET",
+      "title": "Sun Park · 7 June 2018 control shift",
+      "mode": "multi_source_packet",
+      "status": "PACKET_MODE_READY",
+      "source_scope": "event dossier plus continuing-harm machine-readable control; do not collapse orders, contemporary reports, testimony, later rulings or adverse outcomes into one document",
+      "source_paths": [
+        {
+          "path": "assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json",
+          "git_blob_sha": "2c005a501059995ba2f666855a6d2c8565b72f05"
+        },
+        {
+          "path": "en/sun-park-takeover-7-june-2018/index.html",
+          "git_blob_sha": "8610e5934e3054d4383bf544e9ebf3f12c8e6ade"
+        }
+      ],
+      "next_action": "PACKET_MODE_SOURCE_BY_SOURCE_REVIEW"
+    }
+  ]
+}
