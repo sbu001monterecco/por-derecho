@@ -15,6 +15,7 @@ def main():
             ('current-ci-contracts',[sys.executable,'scripts/validate_ci_control_plane.py']),
             ('specialist-regressions',[sys.executable,'scripts/compare_inherited_ci_diagnostics.py'])]
     checks.append(('source-observation-tests',[sys.executable,'-m','unittest','discover','-s','scripts','-p','test_source_observation_contracts.py','-v']))
+    checks.append(('homepage-canonical-contract',[sys.executable,'ci/homepage_canonical_contract_20260925.py']))
     checks.append(('master-mynd-projection-tests',[sys.executable,'-m','unittest','discover','-s','scripts','-p','test_master_mynd_projection_contract.py','-v']))
     results=[]
     try:
