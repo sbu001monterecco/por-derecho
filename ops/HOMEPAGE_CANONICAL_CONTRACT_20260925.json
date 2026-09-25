@@ -7,12 +7,12 @@
   "homepage": {
     "en": {
       "path": "en/index.html",
-      "sha256": "51e73bfcdceb1e80c1d944bde90d79add6ffa0e843b15a39e8e615cf82212ada",
+      "sha256": "77ef9aef497483d29aa7c2ceb52f0f0677c3ddcd5a4636a31483dc5a2ffba88b",
       "max_bytes": 120000
     },
     "es": {
       "path": "es/index.html",
-      "sha256": "13ae54cb1431257783e6646e814a118edc3b1a247f392151f12a3c5b9ae68595",
+      "sha256": "980412345e4a74b298e9d5ee4029706e3f571ff4a338246008a419c2aa8f80dc",
       "max_bytes": 125000
     }
   },
@@ -99,5 +99,16 @@
   "expected_canonical": {
     "en": "https://sbu001monterecco.github.io/por-derecho/en/",
     "es": "https://sbu001monterecco.github.io/por-derecho/es/"
+  },
+  "required_assets": [
+    "assets/homepage-legacy-route-20260925.js"
+  ],
+  "required_homepage_tokens": {
+    "en": [
+      "homepage-legacy-route-20260925.js"
+    ],
+    "es": [
+      "homepage-legacy-route-20260925.js"
+    ]
   }
 }
