@@ -1,0 +1,591 @@
+{
+  "schema": "por-derecho.truth-machine-methodology.v3",
+  "control": "PD-TRUTH-METHOD-20260925-04",
+  "generated_at": "2026-09-25",
+  "boundary": {
+    "en": "Source-bound forensic review, not a linguistic lie detector. Language features generate review questions; they do not establish falsity, intent, credibility, criminality, guilt or liability.",
+    "es": "Revisión forense anclada a fuentes, no detector lingüístico de mentiras. Los rasgos del lenguaje generan preguntas de revisión; no acreditan falsedad, intención, credibilidad, criminalidad, culpabilidad ni responsabilidad."
+  },
+  "architecture": [
+    [
+      "A01",
+      "Preserve & identify",
+      "Preservar e identificar"
+    ],
+    [
+      "A02",
+      "Decompose without atomising",
+      "Descomponer sin atomizar"
+    ],
+    [
+      "A03",
+      "Linguistic & semantic pass",
+      "Pasada lingüística y semántica"
+    ],
+    [
+      "A04",
+      "Actor / capacity / time",
+      "Actor / capacidad / tiempo"
+    ],
+    [
+      "A05",
+      "Source lineage & independence",
+      "Linaje e independencia"
+    ],
+    [
+      "A06",
+      "Adversarial reality check",
+      "Contraste adversarial"
+    ],
+    [
+      "A07",
+      "Financial & benefit trace",
+      "Trazado financiero y de beneficio"
+    ],
+    [
+      "A08",
+      "Procedural scope & authority",
+      "Alcance procesal y autoridad"
+    ],
+    [
+      "A09",
+      "Dependency graph & recursion",
+      "Grafo de dependencias y recursión"
+    ],
+    [
+      "A10",
+      "Human signoff & correction",
+      "Revisión humana y corrección"
+    ],
+    [
+      "A11",
+      "Competing hypotheses & statement–evidence consistency",
+      "Hipótesis competidoras y consistencia declaración–prueba"
+    ],
+    [
+      "A12",
+      "Validation, falsehood & knowledge firewall",
+      "Validación y cortafuegos falsedad–conocimiento"
+    ]
+  ],
+  "linguistic_layers": [
+    [
+      "L01",
+      "Literal fidelity",
+      "Fidelidad literal",
+      [
+        "quotation",
+        "ellipses",
+        "negation",
+        "exceptions",
+        "qualifiers"
+      ]
+    ],
+    [
+      "L02",
+      "Modality & certainty",
+      "Modalidad y certeza",
+      [
+        "may/might/could",
+        "conditional",
+        "categorical restatement"
+      ]
+    ],
+    [
+      "L03",
+      "Quantifiers & scope",
+      "Cuantificadores y alcance",
+      [
+        "some/all",
+        "one/many",
+        "always/never",
+        "denominator"
+      ]
+    ],
+    [
+      "L04",
+      "Attribution & speech act",
+      "Atribución y acto de habla",
+      [
+        "allegation",
+        "denial",
+        "thanks",
+        "apology",
+        "request",
+        "legal argument"
+      ]
+    ],
+    [
+      "L05",
+      "Temporal & knowledge",
+      "Temporal y conocimiento",
+      [
+        "event date",
+        "receipt",
+        "reading",
+        "notice",
+        "later adoption"
+      ]
+    ],
+    [
+      "L06",
+      "Actor / entity / capacity",
+      "Actor / entidad / capacidad",
+      [
+        "person",
+        "company",
+        "estate",
+        "Community",
+        "AC",
+        "judge",
+        "prosecutor"
+      ]
+    ],
+    [
+      "L07",
+      "Causation & inference",
+      "Causalidad e inferencia",
+      [
+        "premise→conclusion",
+        "correlation",
+        "benefit",
+        "mechanism",
+        "alternative cause"
+      ]
+    ],
+    [
+      "L08",
+      "Context delta",
+      "Delta de contexto",
+      [
+        "original purpose",
+        "later use",
+        "omitted material context",
+        "restored conclusion"
+      ]
+    ],
+    [
+      "L09",
+      "Procedural semantics",
+      "Semántica procesal",
+      [
+        "draft",
+        "filed",
+        "received",
+        "admitted",
+        "considered",
+        "held",
+        "appealed",
+        "final"
+      ]
+    ],
+    [
+      "L10",
+      "Numbers & denominators",
+      "Números y denominadores",
+      [
+        "amount category",
+        "sample/universe",
+        "double counting",
+        "precision"
+      ]
+    ],
+    [
+      "L11",
+      "Rhetoric vs proposition",
+      "Retórica frente a proposición",
+      [
+        "character attack",
+        "motive language",
+        "loaded framing"
+      ]
+    ],
+    [
+      "L12",
+      "Lineage & reuse",
+      "Linaje y reutilización",
+      [
+        "first source",
+        "copy/forward",
+        "later pleading",
+        "institutional reuse",
+        "independent corroboration"
+      ]
+    ]
+  ],
+  "graph_chain": [
+    "ORIGIN",
+    "AUTHORITY",
+    "ACTOR",
+    "CAPACITY",
+    "ACT_OR_OMISSION",
+    "DOCUMENT",
+    "PROCEEDING",
+    "TREATMENT",
+    "CONSEQUENCE",
+    "REUSE",
+    "BENEFICIARY",
+    "CONTRADICTION",
+    "OPEN_QUESTION",
+    "SOURCE"
+  ],
+  "agency_lenses": [
+    {
+      "id": "UK-CH-IS",
+      "jurisdiction": "United Kingdom",
+      "institution": "Companies House + Insolvency Service",
+      "en": "Link-analysis across apparently unrelated entities: compare incorporation histories, name changes and business descriptions; test filings against independent reality such as auditor confirmation, registered-office presence, legitimate trading and actual control. Non-cooperation can prevent verification but is not itself proof of the underlying allegation.",
+      "es": "Análisis de vínculos entre entidades aparentemente no relacionadas: comparar historiales de constitución, cambios de nombre y descripciones de actividad; contrastar los asientos con realidad independiente —confirmación del auditor, presencia en domicilio social, actividad legítima y control real—. La falta de cooperación puede impedir verificar, pero no prueba por sí sola la alegación.",
+      "sources": [
+        "https://www.gov.uk/government/news/seven-linked-companies-shut-down-after-insolvency-service-investigation-with-companies-house",
+        "https://www.gov.uk/government/publications/companies-house-strategic-intelligence-assessment/companies-house-strategic-intelligence-assessment",
+        "https://www.gov.uk/government/publications/insolvency-service-launches-5-year-investigation-and-enforcement-strategy/investigations-and-enforcement-strategy-2026-to-2031"
+      ]
+    },
+    {
+      "id": "UK-CPS",
+      "jurisdiction": "England and Wales",
+      "institution": "Crown Prosecution Service",
+      "en": "Thinking approach: pursue reasonable lines of enquiry toward and away from a suspect; keep requests focused, necessary and proportionate; examine linked investigations; consider cumulative effect and digital communications rather than treating disclosure as a box-ticking schedule.",
+      "es": "Enfoque razonado: seguir líneas razonables tanto a favor como en contra; mantener solicitudes focalizadas, necesarias y proporcionales; examinar investigaciones vinculadas; valorar el efecto acumulado y las comunicaciones digitales, no tratar la revelación como mero trámite.",
+      "sources": [
+        "https://www.cps.gov.uk/prosecution-guidance/disclosure-manual-chapter-5-reasonable-lines-enquiry-and-third-parties",
+        "https://www.cps.gov.uk/prosecution-guidance/disclosure-manual-chapter-12-applying-disclosure-test",
+        "https://www.cps.gov.uk/prosecution-guidance/disclosure-manual-chapter-30-digital-material"
+      ]
+    },
+    {
+      "id": "US-DOJ",
+      "jurisdiction": "United States",
+      "institution": "Department of Justice",
+      "en": "Preserve exculpatory and impeachment information, original notes and recordings; memorialise material witness variations; consider the cumulative impact of items; when precise words matter, return to agent notes rather than relying only on a later summary.",
+      "es": "Preservar información exculpatoria y de impugnación, notas originales y grabaciones; documentar variaciones materiales del testigo; valorar el efecto acumulado; cuando importan las palabras exactas, volver a las notas del agente y no depender sólo de un resumen posterior.",
+      "sources": [
+        "https://www.justice.gov/jm/jm-9-5000-issues-related-trials-and-other-court-proceedings"
+      ]
+    },
+    {
+      "id": "EU-OLAF",
+      "jurisdiction": "European Union",
+      "institution": "European Anti-Fraud Office",
+      "en": "Fact-establishment must seek evidence for and against the person concerned, objectively and impartially; digital-evidence specialists, analysts and computer-forensic examiners support casework. The transferable rule is bidirectional testing plus a separate source-integrity lane.",
+      "es": "La determinación de hechos busca prueba a favor y en contra, objetiva e imparcialmente; especialistas en prueba digital, analistas y examinadores forenses informáticos apoyan los casos. Regla transferible: contraste bidireccional y carril separado de integridad de fuente.",
+      "sources": [
+        "https://anti-fraud.ec.europa.eu/investigations/procedural-guarantees_en",
+        "https://anti-fraud.ec.europa.eu/investigations_en"
+      ]
+    },
+    {
+      "id": "FATF",
+      "jurisdiction": "International",
+      "institution": "Financial Action Task Force",
+      "en": "Parallel financial investigation alongside the predicate inquiry; document the money trail — where funds came from, who received them, when, where stored/deposited — and use financial data to identify associations, movements and other leads.",
+      "es": "Investigación financiera paralela junto a la investigación principal; documentar el rastro del dinero —origen, receptor, momento, depósito/destino— y usar los datos financieros para identificar asociaciones, movimientos y nuevas líneas.",
+      "sources": [
+        "https://www.fatf-gafi.org/en/publications/Methodsandtrends/Operationalissues-financialinvestigationsguidance.html"
+      ]
+    },
+    {
+      "id": "UNODC",
+      "jurisdiction": "International",
+      "institution": "United Nations Office on Drugs and Crime",
+      "en": "Start financial investigation early; trace where money came from and where it went; expected-record gaps are contextual leads, not automatic proof.",
+      "es": "Iniciar pronto la investigación financiera; rastrear origen y destino; las ausencias de registros esperables son indicios contextuales, no prueba automática.",
+      "sources": [
+        "https://track.unodc.org/uploads/documents/corruption/Publications/2024/UNODC_2024_Practical_Guide_on_the_Investigation_of_Corruption_Cases.pdf"
+      ]
+    },
+    {
+      "id": "EU-EFECC",
+      "jurisdiction": "European Union",
+      "institution": "Europol EFECC",
+      "en": "Centralise and analyse contributed information to identify international links, groups, suspects, trends and patterns; cross-check operational information against databases; combine financial-flow analysis, intelligence exchange, operational coordination and asset tracing.",
+      "es": "Centralizar y analizar información aportada para identificar vínculos internacionales, grupos, sospechosos, tendencias y patrones; contrastar información operativa con bases de datos; combinar flujos financieros, inteligencia, coordinación y rastreo de activos.",
+      "sources": [
+        "https://www.europol.europa.eu/about-europol/european-financial-and-economic-crime-centre-efecc",
+        "https://www.europol.europa.eu/media-press/newsroom/news/eu-wide-operation-targeting-criminal-assets-in-relation-to-russian-invasion-of-ukraine"
+      ]
+    },
+    {
+      "id": "NIST-SWGDE",
+      "jurisdiction": "United States / forensic practice",
+      "institution": "NIST + SWGDE",
+      "en": "Chain of custody, hashes, documented acquisition, reliable/repeatable methods, and separation of source integrity from substantive truth.",
+      "es": "Cadena de custodia, hashes, adquisición documentada, métodos fiables/repetibles y separación entre integridad de fuente y verdad sustantiva.",
+      "sources": [
+        "https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8387.pdf",
+        "https://www.swgde.org/documents/published-complete-listing/18-f-002-2-0/"
+      ]
+    },
+    {
+      "id": "INTERPOL-DOC",
+      "jurisdiction": "International",
+      "institution": "INTERPOL · document fraud",
+      "en": "Separate document authenticity from semantic truth. Classify counterfeit, forgery, pseudo-document, fraudulently obtained genuine document and genuine-document misuse; use technical references and forensic examination before asking what the document proves.",
+      "es": "Separar autenticidad documental de verdad semántica. Clasificar falsificación integral, alteración, pseudodocumento, documento genuino obtenido fraudulentamente y uso indebido de documento genuino; aplicar referencias técnicas y examen forense antes de decidir qué demuestra.",
+      "sources": [
+        "https://www.interpol.int/Crimes/Counterfeit-currency-and-security-documents/Identity-and-travel-document-fraud"
+      ]
+    },
+    {
+      "id": "US-FRE-CONTEXT",
+      "jurisdiction": "United States · evidence completeness",
+      "institution": "Federal Rules of Evidence · scope/completeness lens",
+      "en": "When a statement or part of it is used, test whether fairness requires contemporaneous completing context. This supports the project distinction between literal accuracy and misleading implication from context stripping; it is not imported as governing Spanish law.",
+      "es": "Cuando se usa una declaración o parte de ella, comprobar si la equidad exige contexto complementario contemporáneo. Refuerza la distinción entre literalidad correcta e inferencia engañosa por descontextualización; no se importa como derecho aplicable en España.",
+      "sources": [
+        "https://www.uscourts.gov/sites/default/files/document/federal-rules-of-evidence.pdf"
+      ]
+    }
+  ],
+  "outcome_states": [
+    "ACCURATE_LIMITED_USE",
+    "NO_MATERIAL_DISTORTION",
+    "NARROWS",
+    "MATERIAL_CONTEXT_OMISSION",
+    "MISLEADING_INFERENCE",
+    "SCOPE_MISMATCH",
+    "DIRECT_CONTRADICTION",
+    "INCONCLUSIVE"
+  ],
+  "metrics_policy": {
+    "permitted": [
+      "source_identity_coverage",
+      "page_coverage",
+      "anchor_carry_forward",
+      "statement_scan_coverage",
+      "candidate_review_load",
+      "source_complete_signoff_rate",
+      "verifiability_candidate_rate",
+      "financial_rail_candidate_rate",
+      "expected_control_candidate_rate",
+      "linguistic_probe_candidate_rate",
+      "contradiction_candidate_count",
+      "knowledge_state_coverage",
+      "statement_evidence_relation_count"
+    ],
+    "prohibited": [
+      "truth_score",
+      "lie_probability",
+      "credibility_score",
+      "guilt_score",
+      "linguistic_deception_score",
+      "automated_veracity_score"
+    ]
+  },
+  "dynamic_model": {
+    "polling_seconds": 60,
+    "en": "The public interface reloads methodology, priority queue and R33 aggregate JSON every 60 seconds. Source-change workflows reopen pinned candidates. New agency lenses enter through this source registry; semantic merits still require source/context/contrary-evidence review.",
+    "es": "La interfaz recarga metodología, cola prioritaria y JSON agregado de R33 cada 60 segundos. Los flujos de cambio de fuente reabren candidatos anclados. Nuevas lentes de agencias entran por este registro; el fondo sigue exigiendo revisión de fuente, contexto y prueba contraria."
+  },
+  "research_refresh": {
+    "checked_at": "2026-09-25",
+    "basis": "Open-workspace synthesis + current official-source verification",
+    "boundary": "External institutions supply transferable investigative principles only; this registry does not claim they endorse Por Derecho or use an automated linguistic lie detector."
+  },
+  "open_workspace_controls": [
+    "source → exact words → proposition → actor/capacity → event/knowledge time → source lineage → supporting/contrary evidence → notice/adoption → causation/benefit → open proof → restatement",
+    "observe → manifest → compare → classify → traverse dependencies → adversarial review → reconcile → exact-head verify → deploy/live readback → new envelope → recurse",
+    "origin → authority → actor → act/omission → document → proceeding → treatment → consequence → later reuse → beneficiary → contradiction → open question → source",
+    "AI proposes/retrieves/compares; deterministic controls verify anchors and source change; source/human review promotes merits"
+  ],
+  "scientific_methods": [
+    {
+      "id": "CIA-ACH",
+      "family": "structured_analysis",
+      "name": "Analysis of Competing Hypotheses",
+      "institution": "CIA Center for the Study of Intelligence",
+      "en": "Array evidence against multiple live hypotheses and emphasize disconfirming evidence. Por Derecho uses ACH as an anti-confirmation-bias matrix, not as a probability generator.",
+      "es": "Contrastar la prueba con varias hipótesis vivas y dar especial peso a la prueba que las refuta. Por Derecho usa ACH contra el sesgo de confirmación, no como generador de probabilidades.",
+      "sources": [
+        "https://www.cia.gov/resources/csi/books-monographs/a-tradecraft-primer/"
+      ]
+    },
+    {
+      "id": "UK-PSFA-INTEL",
+      "family": "fraud_intelligence",
+      "name": "Fraud intelligence / red team / network analysis",
+      "institution": "UK Public Sector Fraud Authority",
+      "en": "Distinguish evidence from assumptions and judgements; assess source quality; consider alternatives; use pattern, network, comparative-case and red-team products.",
+      "es": "Separar prueba, supuestos y juicios; valorar calidad de fuente; considerar alternativas; usar análisis de patrones, redes, casos comparables y red-team.",
+      "sources": [
+        "https://www.gov.uk/government/publications/government-counter-fraud-profession-standards-and-guidance-standard-for-fraud-intelligence-practitioner/standard-for-fraud-intelligence-practitioner-html"
+      ]
+    },
+    {
+      "id": "UK-PEACE",
+      "family": "account_integrity",
+      "name": "PEACE account / clarify / challenge",
+      "institution": "College of Policing",
+      "en": "Preserve the account before clarification and challenge; identify checkable facts; evaluate the account against the rest of the investigation. In document review this is an analogy, not an interview simulation.",
+      "es": "Preservar el relato antes de aclarar y contrastar; identificar hechos comprobables; evaluar el relato frente al resto de la investigación. En revisión documental es una analogía, no una entrevista simulada.",
+      "sources": [
+        "https://www.college.police.uk/app/investigation/investigative-interviewing/investigative-interviewing"
+      ]
+    },
+    {
+      "id": "EMP-SUE",
+      "family": "statement_evidence",
+      "name": "Strategic Use of Evidence / statement–evidence consistency",
+      "institution": "Empirical legal-psychology literature",
+      "en": "Compare statements with independently held evidence and record inconsistencies. The R33 implementation creates a consistency matrix only; it does not simulate strategic interview disclosure.",
+      "es": "Comparar declaraciones con prueba independiente y registrar inconsistencias. La aplicación R33 crea una matriz de consistencia; no simula revelación estratégica en entrevista.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/16977348/",
+        "https://pubmed.ncbi.nlm.nih.gov/16133950/"
+      ]
+    },
+    {
+      "id": "EMP-VA",
+      "family": "verifiability",
+      "name": "Verifiability Approach",
+      "institution": "Empirical deception-research literature",
+      "en": "Identify objectively checkable details and whether they were actually checked. Meta-analytic effects do not justify converting detail ratios into a case-specific truth probability.",
+      "es": "Identificar detalles objetivamente comprobables y si realmente se verificaron. Los efectos meta-analíticos no justifican convertir ratios de detalle en probabilidad de verdad del caso.",
+      "sources": [
+        "https://www.sciencedirect.com/science/article/pii/S2211368120300772"
+      ]
+    },
+    {
+      "id": "WIGMORE",
+      "family": "evidence_graph",
+      "name": "Wigmore evidence chart",
+      "institution": "Legal evidence methodology",
+      "en": "Map ultimate and intermediate propositions to supporting and contrary evidence, including source competence and position-to-know questions.",
+      "es": "Mapear proposiciones últimas e intermedias con prueba favorable y contraria, incluyendo competencia de fuente y posición para conocer.",
+      "sources": [
+        "https://academic.oup.com/lpr/article/24/1/mgaf002/8171465"
+      ]
+    },
+    {
+      "id": "UK-FCA-CONTROLS",
+      "family": "expected_control_evidence",
+      "name": "Expected-control evidence",
+      "institution": "UK Financial Conduct Authority",
+      "en": "For a claimed controlled process, identify the risk, responsible control, expected documentary residue, monitoring and remediation. Missing artefacts are gaps requiring context, not automatic fraud proof.",
+      "es": "Para un proceso presentado como controlado, identificar riesgo, control responsable, rastro documental esperable, seguimiento y remediación. La ausencia de artefactos es una laguna, no prueba automática de fraude.",
+      "sources": [
+        "https://handbook.fca.org.uk/handbook/fcg2",
+        "https://www.fca.org.uk/publications/good-and-poor-practice/risk-assessment-processes-and-controls-firms-our-findings"
+      ]
+    },
+    {
+      "id": "NIST-VALIDATION",
+      "family": "method_validation",
+      "name": "Validation / performance characterization",
+      "institution": "NIST",
+      "en": "Automated forensic methods require validation data, documented performance and case-relevant conditions before quantitative performance claims are used.",
+      "es": "Los métodos forenses automatizados requieren datos de validación, rendimiento documentado y condiciones relevantes al caso antes de usar afirmaciones cuantitativas.",
+      "sources": [
+        "https://www.nist.gov/publications/validation-forensic-science-guiding-principles-collection-and-use-validation-data"
+      ]
+    },
+    {
+      "id": "ENFSI-COMPETING",
+      "family": "evaluative_reporting",
+      "name": "Competing propositions / evaluative reporting firewall",
+      "institution": "European Network of Forensic Science Institutes",
+      "en": "Keep findings distinct from their evaluation against competing propositions. Por Derecho does not assign likelihood ratios without validated models, data and conditioning information.",
+      "es": "Separar los hallazgos de su evaluación frente a proposiciones competidoras. Por Derecho no asigna razones de verosimilitud sin modelos, datos e información condicionante validados.",
+      "sources": [
+        "https://enfsi.eu/wp-content/uploads/2016/09/m1_guideline.pdf"
+      ]
+    },
+    {
+      "id": "FBI-LING-PROBE",
+      "family": "linguistic_probe",
+      "name": "Investigative statement-analysis cues",
+      "institution": "FBI Law Enforcement Bulletin · investigative guidance",
+      "en": "Use equivocation, tense/noun changes, editing or intensifying language, imbalance and other linguistic features only to identify areas for further probing. Never treat a cue by itself as proof of lying.",
+      "es": "Usar equívocos, cambios de tiempo/nombre, lenguaje de edición o intensificación, desequilibrio y otros rasgos sólo para localizar áreas a profundizar. Nunca tratar un indicio aislado como prueba de mentira.",
+      "sources": [
+        "https://leb.fbi.gov/articles/featured-articles/evaluating-truthfulness-and-detecting-deception",
+        "https://leb.fbi.gov/articles/featured-articles/vetting-confidential-human-source-intelligence-through-investigative-statement-analysis"
+      ]
+    }
+  ],
+  "proposition_state_model": [
+    {
+      "id": "SUPPORTED",
+      "en": "Source record currently supports the proposition as used.",
+      "es": "La fuente actualmente apoya la proposición tal como se usa."
+    },
+    {
+      "id": "NARROWED",
+      "en": "Core fact exists but scope, quantifier, cause or procedural meaning is narrower.",
+      "es": "Existe un núcleo fáctico, pero el alcance, cuantificador, causa o significado procesal es menor."
+    },
+    {
+      "id": "OPEN",
+      "en": "Evidence is insufficient or not yet source-complete.",
+      "es": "La prueba es insuficiente o aún no está cerrada por fuente."
+    },
+    {
+      "id": "DIRECT_CONTRADICTION_CANDIDATE",
+      "en": "A contrary source relation exists; exact scope/source inspection is required before FALSE.",
+      "es": "Existe relación con fuente contraria; se exige inspección exacta antes de FALSO."
+    },
+    {
+      "id": "FALSE",
+      "en": "Reliable source review establishes the factual proposition is wrong within the matched scope.",
+      "es": "La revisión de fuente fiable establece que la proposición fáctica es incorrecta dentro del mismo alcance."
+    },
+    {
+      "id": "MATERIALLY_MISLEADING",
+      "en": "Literal or partial truth is used so that restored material context changes the inference.",
+      "es": "Una verdad literal o parcial se usa de modo que el contexto material restituido cambia la inferencia."
+    },
+    {
+      "id": "TRUTH_INVERSION",
+      "en": "A strong misleading-use case where restored context points materially in the opposite evidential direction.",
+      "es": "Caso fuerte de uso engañoso donde el contexto restituido apunta materialmente en dirección probatoria opuesta."
+    },
+    {
+      "id": "KNOWINGLY_FALSE",
+      "en": "FALSE plus separately sourced actor-specific knowledge at the relevant time.",
+      "es": "FALSO más prueba separada y específica del conocimiento del actor en el momento relevante."
+    },
+    {
+      "id": "NON_BINARY_RHETORIC_OR_LEGAL",
+      "en": "Rhetoric, opinion or legal argument not suitable for binary truth scoring.",
+      "es": "Retórica, opinión o argumento jurídico no apto para puntuación binaria de verdad."
+    }
+  ],
+  "falsehood_register_policy": {
+    "false_requires": [
+      "matched proposition scope",
+      "inspected reliable contrary source",
+      "adverse/lawful alternative considered",
+      "reviewer/source signoff"
+    ],
+    "knowingly_false_requires": [
+      "FALSE or materially misleading use",
+      "actor-specific knowledge evidence at relevant time"
+    ],
+    "deliberate_misleading_use_requires": [
+      "material context/inference distortion",
+      "knowledge of omitted/contrary context",
+      "separate intent/reliance analysis where legally relevant"
+    ],
+    "automatic_promotions": [],
+    "scores_prohibited": true
+  },
+  "system_application": {
+    "applies_to": "Every document, packet and claim-family entering the Truth Machine priority queue.",
+    "reusable_engine": "legaltech/unitary_review/method_stack.py",
+    "regression_tests": "recovery_tests/test_method_stack.py",
+    "required_lenses": [
+      "ACH",
+      "SUE",
+      "VERIFIABILITY",
+      "WIGMORE",
+      "FATF_FINANCIAL",
+      "FCA_CONTROLS",
+      "PSFA",
+      "PEACE",
+      "FBI_LINGUISTIC_PROBE",
+      "NIST_ENFSI_VALIDATION"
+    ],
+    "r33_flagship_run": "assets/data/r33-forensic-method-pass-v1.json"
+  }
+}

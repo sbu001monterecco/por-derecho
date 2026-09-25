@@ -1,0 +1,381 @@
+{
+  "schema": "por-derecho.truth-machine.method-stack.v1.aggregate",
+  "control": "PD-TRUTH-METHOD-STACK-20260925-01",
+  "document": {
+    "id": "RPL3304-AC-OP-20260914-LLFULLV3",
+    "title": "FULL Liar Liar v3 — Oposición del Administrador Concursal al recurso de apelación de Luchy Playa Blanca, S.L. · RPL 3304/2025",
+    "native_sha256": "5e0728185cf9b686abd723497d2a53a2656a5e0de4d323a734ed02880eb1d711"
+  },
+  "structure": {
+    "blocks": 206,
+    "statement_propositions": 276,
+    "paragraph_composites": 206,
+    "review_records": 482
+  },
+  "method_coverage": {
+    "ACH": {
+      "processed": 276,
+      "probabilities_assigned": 0,
+      "states": {
+        "NON_BINARY_EXCLUDED_FROM_FACTUAL_ACH": 64,
+        "H1_TO_H5_OPEN_INSUFFICIENT_CURRENT_REVIEW": 200,
+        "H2_NARROWER_THAN_USED_ACTIVE": 6,
+        "H1_ACCURATE_CURRENTLY_HAS_SUPPORT": 2,
+        "H2_OR_H4_NARROWING_OR_CONTRADICTION_ACTIVE": 4
+      }
+    },
+    "SUE": {
+      "processed": 276,
+      "states": {
+        "NON_BINARY_RHETORIC_OR_LEGAL": 64,
+        "OPEN_NOT_SOURCE_RESOLVED": 200,
+        "PARTIAL_OR_NARROWING": 6,
+        "CURRENTLY_SUPPORTED_IN_INPUT": 2,
+        "MIXED_WITH_CONTRARY_RELATION": 4
+      },
+      "interview_strategy_simulated": false
+    },
+    "VERIFIABILITY": {
+      "processed": 276,
+      "candidate_statements": 154,
+      "cue_types": {
+        "PROCEDURAL_OR_FILING_REF": 68,
+        "DATE_OR_YEAR": 54,
+        "NAMED_ACTOR_OR_ENTITY": 87,
+        "DOCUMENT_OR_TRANSACTION_REF": 98,
+        "AMOUNT_OR_PERCENT": 10,
+        "LEGAL_PROVISION": 8
+      },
+      "truth_inference_from_ratio": false
+    },
+    "WIGMORE": {
+      "proposition_nodes": 276,
+      "evidence_source_families": 14,
+      "statement_evidence_edges": 491,
+      "contrary_edges": 4
+    },
+    "FATF_FINANCIAL": {
+      "processed": 276,
+      "candidate_statements": 79,
+      "cue_types": {
+        "PAYMENT": 15,
+        "DEBT_CREDIT": 35,
+        "AMOUNT": 10,
+        "ACCOUNT": 26,
+        "INVOICE": 8
+      },
+      "completed_money_traces": 0
+    },
+    "FCA_CONTROLS": {
+      "processed": 276,
+      "candidate_statements": 91,
+      "cue_types": {
+        "FILING_NOTICE": 47,
+        "AUTHORITY_APPROVAL": 22,
+        "VALUATION_TRANSACTION": 11,
+        "ACCOUNTING_RECORD": 20
+      },
+      "completed_control_artifact_reconciliations": 0
+    },
+    "FBI_LINGUISTIC_PROBE": {
+      "processed": 276,
+      "candidate_statements": 119,
+      "cue_types": {
+        "PROCEDURAL_STATE": 35,
+        "HEDGE_MODAL": 13,
+        "RHETORIC_ATTACK": 5,
+        "ABSOLUTE_QUANTIFIER": 44,
+        "NEGATION_DENIAL": 64,
+        "CAUSAL_LANGUAGE": 24
+      },
+      "deception_findings": 0
+    }
+  },
+  "falsehood_register": {
+    "states": {
+      "NON_BINARY_RHETORIC_OR_LEGAL": 64,
+      "OPEN_UNRESOLVED": 200,
+      "NARROWING_OR_MISLEADING_USE_CANDIDATE": 6,
+      "CURRENTLY_SUPPORTED": 2,
+      "CONTRADICTION_REVIEW_CANDIDATE": 4
+    },
+    "contradiction_review_candidates": 4,
+    "source_complete_falsehood_signoffs": 0,
+    "knowingly_false_signoffs": 0,
+    "candidates": [
+      {
+        "id": "RPL3304-AC-OP-20260914-LLFULLV3-P05-B053-S001",
+        "page": 5,
+        "state": "CONTRADICTION_REVIEW_CANDIDATE_NOT_SIGNED_OFF",
+        "contrary_sources": [
+          {
+            "source": "PD-DEFENSE-CONTINUITY-20260921",
+            "locator": "Tabla 21-Sep-2026: motivos distintos documentados; no existe una causa única acreditada para todas las sustituciones"
+          }
+        ],
+        "knowledge_state": "INFERRED_ONLY",
+        "causation_state": "UNSUPPORTED_INFERENCE"
+      },
+      {
+        "id": "RPL3304-AC-OP-20260914-LLFULLV3-P09-B089-S001",
+        "page": 9,
+        "state": "CONTRADICTION_REVIEW_CANDIDATE_NOT_SIGNED_OFF",
+        "contrary_sources": [
+          {
+            "source": "PD-CALIF-A01",
+            "locator": "Audit result: global non-collaboration portrayal materially narrowed/contradicted by AC sources; specific missing materials remain separate"
+          }
+        ],
+        "knowledge_state": "NOT_ASSESSED",
+        "causation_state": "UNSUPPORTED_INFERENCE"
+      },
+      {
+        "id": "RPL3304-AC-OP-20260914-LLFULLV3-P09-B091-S001",
+        "page": 9,
+        "state": "CONTRADICTION_REVIEW_CANDIDATE_NOT_SIGNED_OFF",
+        "contrary_sources": [
+          {
+            "source": "PD-CALIF-A01",
+            "locator": "Audit result: global non-collaboration portrayal materially narrowed/contradicted by AC sources; specific missing materials remain separate"
+          }
+        ],
+        "knowledge_state": "NOT_ASSESSED",
+        "causation_state": "UNSUPPORTED_INFERENCE"
+      },
+      {
+        "id": "RPL3304-AC-OP-20260914-LLFULLV3-P10-B094-S001",
+        "page": 10,
+        "state": "CONTRADICTION_REVIEW_CANDIDATE_NOT_SIGNED_OFF",
+        "contrary_sources": [
+          {
+            "source": "PD-CALIF-A01",
+            "locator": "Audit result: global non-collaboration portrayal materially narrowed/contradicted by AC sources; specific missing materials remain separate"
+          }
+        ],
+        "knowledge_state": "NOT_ASSESSED",
+        "causation_state": "UNSUPPORTED_INFERENCE"
+      }
+    ]
+  },
+  "knowledge_states": {
+    "NOT_ASSESSED": 261,
+    "INFERRED_ONLY": 15
+  },
+  "causation_states": {
+    "NOT_ASSESSED": 235,
+    "UNSUPPORTED_INFERENCE": 41
+  },
+  "page_metrics": {
+    "1": {
+      "statements": 10,
+      "verifiable": 6,
+      "rhetorical_or_legal": 6,
+      "linguistic": 5,
+      "unresolved": 4,
+      "control": 2,
+      "financial": 1
+    },
+    "2": {
+      "statements": 5,
+      "financial": 4,
+      "control": 3,
+      "linguistic": 4,
+      "unresolved": 3,
+      "verifiable": 4,
+      "rhetorical_or_legal": 2
+    },
+    "3": {
+      "statements": 16,
+      "verifiable": 7,
+      "linguistic": 5,
+      "rhetorical_or_legal": 3,
+      "partial": 1,
+      "financial": 2,
+      "unresolved": 10,
+      "control": 2,
+      "supported": 2
+    },
+    "4": {
+      "statements": 36,
+      "verifiable": 12,
+      "unresolved": 33,
+      "rhetorical_or_legal": 3,
+      "financial": 8,
+      "linguistic": 8,
+      "control": 4
+    },
+    "5": {
+      "statements": 13,
+      "verifiable": 7,
+      "unresolved": 6,
+      "linguistic": 6,
+      "rhetorical_or_legal": 6,
+      "control": 2,
+      "contradiction_candidate": 1,
+      "partial": 1
+    },
+    "6": {
+      "statements": 10,
+      "verifiable": 8,
+      "control": 4,
+      "linguistic": 8,
+      "unresolved": 6,
+      "financial": 2,
+      "rhetorical_or_legal": 4
+    },
+    "7": {
+      "statements": 10,
+      "verifiable": 5,
+      "control": 6,
+      "linguistic": 5,
+      "rhetorical_or_legal": 2,
+      "unresolved": 8,
+      "financial": 2
+    },
+    "8": {
+      "statements": 14,
+      "verifiable": 8,
+      "financial": 6,
+      "control": 8,
+      "rhetorical_or_legal": 4,
+      "unresolved": 10,
+      "linguistic": 2
+    },
+    "9": {
+      "statements": 14,
+      "verifiable": 6,
+      "control": 10,
+      "linguistic": 6,
+      "unresolved": 8,
+      "financial": 9,
+      "rhetorical_or_legal": 4,
+      "contradiction_candidate": 2,
+      "partial": 2
+    },
+    "10": {
+      "statements": 10,
+      "verifiable": 9,
+      "control": 9,
+      "unresolved": 8,
+      "financial": 5,
+      "linguistic": 4,
+      "contradiction_candidate": 1,
+      "partial": 1,
+      "rhetorical_or_legal": 1
+    },
+    "11": {
+      "statements": 10,
+      "verifiable": 7,
+      "financial": 2,
+      "rhetorical_or_legal": 2,
+      "control": 5,
+      "linguistic": 5,
+      "unresolved": 8
+    },
+    "12": {
+      "statements": 12,
+      "verifiable": 8,
+      "partial": 1,
+      "control": 3,
+      "unresolved": 10,
+      "linguistic": 3,
+      "rhetorical_or_legal": 1,
+      "financial": 2
+    },
+    "13": {
+      "statements": 16,
+      "unresolved": 15,
+      "control": 2,
+      "linguistic": 5,
+      "verifiable": 6,
+      "rhetorical_or_legal": 1
+    },
+    "14": {
+      "statements": 14,
+      "unresolved": 14,
+      "verifiable": 7,
+      "control": 4,
+      "linguistic": 4,
+      "financial": 2
+    },
+    "15": {
+      "statements": 10,
+      "unresolved": 5,
+      "verifiable": 8,
+      "control": 6,
+      "rhetorical_or_legal": 5,
+      "linguistic": 6,
+      "financial": 2
+    },
+    "16": {
+      "statements": 8,
+      "verifiable": 8,
+      "financial": 5,
+      "rhetorical_or_legal": 4,
+      "linguistic": 6,
+      "unresolved": 4,
+      "control": 2
+    },
+    "17": {
+      "statements": 11,
+      "financial": 10,
+      "control": 4,
+      "rhetorical_or_legal": 5,
+      "verifiable": 8,
+      "linguistic": 3,
+      "unresolved": 6
+    },
+    "18": {
+      "statements": 12,
+      "linguistic": 7,
+      "rhetorical_or_legal": 4,
+      "verifiable": 8,
+      "financial": 7,
+      "control": 6,
+      "unresolved": 8
+    },
+    "19": {
+      "statements": 8,
+      "verifiable": 7,
+      "control": 3,
+      "linguistic": 5,
+      "unresolved": 6,
+      "financial": 3,
+      "rhetorical_or_legal": 1,
+      "partial": 1
+    },
+    "20": {
+      "statements": 15,
+      "verifiable": 6,
+      "control": 3,
+      "linguistic": 10,
+      "unresolved": 14,
+      "partial": 1,
+      "financial": 5
+    },
+    "21": {
+      "statements": 13,
+      "verifiable": 6,
+      "linguistic": 7,
+      "unresolved": 10,
+      "control": 2,
+      "rhetorical_or_legal": 1,
+      "partial": 2
+    },
+    "22": {
+      "statements": 9,
+      "verifiable": 3,
+      "linguistic": 5,
+      "unresolved": 4,
+      "rhetorical_or_legal": 5,
+      "financial": 2,
+      "control": 1
+    }
+  },
+  "validation": {
+    "statement_records_processed": 276,
+    "source_inputs_modified": false,
+    "automatic_merits_promotions": 0
+  },
+  "boundary": "Review workload and structured evidential states; not a truth, lie, credibility, intent, guilt or liability score."
+}

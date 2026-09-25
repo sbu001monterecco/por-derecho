@@ -15,7 +15,9 @@
       "liability"
     ],
     "recursion_rule": "material source change reopens affected review; duplicate hosts and derivative summaries are not independent corroboration",
-    "host_parity_rule": "a missing mirror is a disclosed host-parity gap, not evidence loss and not a reason to falsify a source pin"
+    "host_parity_rule": "a missing mirror is a disclosed host-parity gap, not evidence loss and not a reason to falsify a source pin",
+    "method_stack_required": "ACH + SUE + Verifiability + Wigmore + FATF financial rail + FCA controls + PSFA/red-team + PEACE account integrity + FBI linguistic probe + NIST/ENFSI validation firewall.",
+    "falsehood_promotion_rule": "DIRECT_CONTRADICTION/FALSE requires exact contrary-source review; KNOWINGLY_FALSE additionally requires separately sourced actor-specific knowledge at the relevant time."
   },
   "candidates": [
     {
@@ -23,20 +25,21 @@
       "id": "C36-SPECIALIST-R33",
       "title": "R33 · AC opposition in RPL 3304/2025 · 14 Sep 2026",
       "mode": "document",
-      "status": "LIVE_VISUALIZED_GITHUB",
+      "status": "METHOD_STACK_V1_COMPLETE_PUBLIC_SAFE",
       "source_scope": "22 pages; recovered v3 structure; private native source retained outside public Git",
       "sources": [
         {
           "path": "assets/data/r33-truth-machine-visual-20260925.json",
-          "github_blob_sha": "b657ef8deac0abffd02f68a72a6bf6b5814e4627",
-          "gitlab_blob_sha": "b657ef8deac0abffd02f68a72a6bf6b5814e4627"
+          "github_blob_sha": "67e939d81bc1b1f5baf32c2d4c30dbb3a2ed4b6f",
+          "gitlab_blob_sha": "67e939d81bc1b1f5baf32c2d4c30dbb3a2ed4b6f"
         }
       ],
       "public_routes": {
         "en": "/en/r33-truth-machine-visual/",
         "es": "/es/r33-maquina-verdad-visual/"
       },
-      "next_action": "REOPEN_ONLY_ON_MATERIAL_SOURCE_OR_DEPENDENCY_CHANGE"
+      "next_action": "SOURCE_REVIEW_4_CONTRADICTION_CANDIDATES_AND_6_NARROWING_CANDIDATES",
+      "method_stack": "assets/data/r33-forensic-method-pass-v1.json"
     },
     {
       "rank": 1,
@@ -52,7 +55,8 @@
           "gitlab_blob_sha": "3ce7110eda6b789bbf251c2bc7c217f613414113"
         }
       ],
-      "next_action": "BUILD_FORENSIC_PACKAGE_THEN_FULL_CONTEXT_PASS"
+      "next_action": "BUILD_FORENSIC_PACKAGE_THEN_FULL_CONTEXT_PASS",
+      "required_method_stack": "PD-TRUTH-METHOD-20260925-04"
     },
     {
       "rank": 2,
@@ -69,7 +73,8 @@
           "gitlab_gap": "PUBLIC_TRANSCRIPTION_NOT_MIRRORED_AT_CANONICAL_PATH"
         }
       ],
-      "next_action": "RUN_WITH_NATIVE_GAP_EXPLICIT_AND_REOPEN_WHEN_NATIVE_PDF_ARRIVES"
+      "next_action": "RUN_WITH_NATIVE_GAP_EXPLICIT_AND_REOPEN_WHEN_NATIVE_PDF_ARRIVES",
+      "required_method_stack": "PD-TRUTH-METHOD-20260925-04"
     },
     {
       "rank": 3,
@@ -86,7 +91,8 @@
           "host_versions_intentionally_distinct": true
         }
       ],
-      "next_action": "MATERIALIZE_NATIVE_DRAFT_AND_FILED_REQUEST_BEFORE_FULL_SEMANTIC_SIGNOFF"
+      "next_action": "MATERIALIZE_NATIVE_DRAFT_AND_FILED_REQUEST_BEFORE_FULL_SEMANTIC_SIGNOFF",
+      "required_method_stack": "PD-TRUTH-METHOD-20260925-04"
     },
     {
       "rank": 4,
@@ -109,7 +115,8 @@
           "host_versions_intentionally_distinct": true
         }
       ],
-      "next_action": "PACKET_MODE_SOURCE_BY_SOURCE_REVIEW"
+      "next_action": "PACKET_MODE_SOURCE_BY_SOURCE_REVIEW",
+      "required_method_stack": "PD-TRUTH-METHOD-20260925-04"
     }
   ],
   "updated_at": "2026-09-25",
