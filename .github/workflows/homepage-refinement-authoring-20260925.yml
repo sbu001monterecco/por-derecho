@@ -25,7 +25,7 @@ jobs:
       - name: Prepare source-preserving candidate; do not move any public ref
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 .maintenance-homepage/author.py "$GITHUB_WORKSPACE/site" "$GITHUB_WORKSPACE/review"
+        run: python3 .maintenance-homepage/repair-driver.py "$GITHUB_WORKSPACE/site" "$GITHUB_WORKSPACE/review"
       - name: Install bounded browser-test dependency
         run: python3 -m pip install --quiet playwright==1.55.0
       - name: Render and test both languages
