@@ -1,0 +1,39 @@
+name: Bounded homepage refinement authoring 20260925
+on:
+  push:
+    branches: [maintenance/homepage-refinement-authoring-20260925]
+    paths: ['.maintenance-homepage/**', '.github/workflows/homepage-refinement-authoring-20260925.yml']
+permissions:
+  contents: write
+concurrency:
+  group: homepage-refinement-authoring-20260925
+  cancel-in-progress: false
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: site
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Prepare source-preserving candidate; do not move any public ref
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .maintenance-homepage/author.py "$GITHUB_WORKSPACE/site" "$GITHUB_WORKSPACE/review"
+      - name: Install bounded browser-test dependency
+        run: python3 -m pip install --quiet playwright==1.55.0
+      - name: Render and test both languages
+        run: python3 .maintenance-homepage/browser.py "$GITHUB_WORKSPACE/site" "$GITHUB_WORKSPACE/review"
+      - name: Preserve review outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: homepage-refinement-review
+          path: review
+          retention-days: 7
