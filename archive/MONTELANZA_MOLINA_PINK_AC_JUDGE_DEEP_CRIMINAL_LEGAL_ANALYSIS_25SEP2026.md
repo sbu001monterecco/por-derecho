@@ -1004,3 +1004,69 @@ For every transfer, record:
 5. Build one transaction table with seller, buyer, protocol, date, price, payment, encumbrances, tax, presentation and registration.
 6. Compare acquisition dates against Community meetings, voting rights, security/access decisions, AC communications and the 7-Jun-2018 control event.
 7. Test whether any AP89 claimant unit did **not** ultimately enter the CAM perimeter; do not force an 18/18 conclusion if Registry evidence disproves it.
+
+
+---
+
+## 30. Appellate-evidence legality / procedural-good-faith supplement
+
+The fact that AP 89/2014 considered a **post-first-instance** May-2012 key event is not, by itself, evidence of procedural impropriety. The LEC expressly permits defined categories of new documents/evidence in second instance.
+
+### 30.1 LEC article 460 — new evidence on appeal
+
+Article 460 LEC permits:
+
+- documents falling within article 270 that could not be produced at first instance;
+- evidence wrongly refused below;
+- admitted evidence that could not be practised for reasons not attributable to the requesting party; and
+- evidence concerning facts relevant to the decision that occurred after the period for judgment began at first instance, or earlier facts only learned later with justification.
+
+Therefore the **28-May-2012 key event occurring after the 7-May-2012 first-instance judgment is capable, in principle, of belonging to a category of lawfully admissible appellate evidence**.
+
+The forensic issue is not “new on appeal = improper”. It is:
+
+**what exactly occurred → what document/testimony was offered → under which LEC 270/460 ground → admission decision → notice/opportunity to oppose → exact characterization urged by appellant → exact characterization urged by Monterecco/CEXP → what the Audiencia actually inferred → whether the inference stayed within the admitted evidence.**
+
+### 30.2 Consequence for the criminal hypothesis
+
+A criminal-procedural theory must distinguish:
+
+1. **lawful admission of genuinely new evidence**;
+2. **mischaracterisation of otherwise admissible evidence**;
+3. **fabrication/alteration/simulation of evidence**;
+4. **knowing use of false evidence**;
+5. **judicial evidential assessment that may be contestable but not criminal**.
+
+Only categories 2–4 can potentially move toward an estafa-procesal / falsity / false-evidence inquiry, subject to all offence elements. Category 5 remains protected by the legal-error/prevaricación firewall unless the separate judicial offence elements are proved.
+
+### 30.3 Procedural good faith / fraud of law / abuse
+
+The civil and judicial framework independently imposes good-faith controls:
+
+- **LEC art. 247** requires procedural actors to comply with good faith and permits rejection of petitions/incidents involving manifest abuse or fraud of law/process;
+- **LOPJ art. 11** contains the same system-level good-faith/fraud control and excludes evidence obtained by violating fundamental rights;
+- **Civil Code arts. 6.4 and 7** address fraud of law, good faith and abuse of rights.
+
+These are important **civil/procedural control norms**. Their breach does not automatically establish a Penal Code offence.
+
+### CRIM-XPROC-19 — lawful-admission / criminal-use separation
+
+**Before treating evidence introduced on appeal or later in another proceeding as a criminal instrument, first determine whether its admission/use was procedurally authorised. A lawfully admissible new fact can still be knowingly misdescribed or falsified, but late timing alone proves neither.**
+
+Mandatory appellate-evidence ledger:
+
+**event date → first-instance judgment date → evidence creation date → appeal filing date → LEC 270/460 ground invoked → court admission order → service/opposition → document/authentication → competing characterizations → appellate finding → materiality → later reuse.**
+
+### P0-J — reconstruct the 28-May-2012 appellate evidence route
+
+Obtain and sequence:
+
+1. complete 28-May-2012 notarial/key act;
+2. source sheet/inventory identifying whether keys were maintenance copies, possession keys or another category;
+3. claimant filing introducing the material;
+4. legal ground for admission under arts. 270/460 LEC;
+5. any order admitting/refusing the material;
+6. service to CEXP/Monterecco and opposition;
+7. the 11-Jul-2012 Monterecco opposition identified in the existing evidence queue;
+8. exact AP89 passages relying on the material;
+9. any later use of the same proposition by Community, AC, Fiscalía, CAM or later courts.
