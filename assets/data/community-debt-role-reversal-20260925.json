@@ -1,0 +1,88 @@
+{
+  "schema": "por-derecho.community-debt-role-reversal-box.v1",
+  "control_id": "PD-COMMUNITY-DEBT-ROLE-REVERSAL-20260925-01",
+  "status": "PUBLIC_SAFE_ATTRIBUTED_ALLEGATION_CONTROL",
+  "source_cutoff": "2026-09-25",
+  "documented_mechanism": {
+    "acta_date": "2016-04-26",
+    "lpb_participation_pct": 72.976,
+    "total_present_or_represented_pct": 89.727,
+    "vote_eligible_pct": 11.039,
+    "accounts_2010_2015": "INCOMPLETE_AND_NOT_APPROVED_AS_RECORDED_IN_ACTA",
+    "quota_before_eur_approx": 171.89,
+    "quota_after_eur_approx": 22.26,
+    "retroactive_period": "2010-01_to_2015-12",
+    "arrears_after_recalculation": "ACTA_STATES_FELL_CONSIDERABLY",
+    "later_steps": [
+      "DEBT_BALANCES",
+      "CERTIFICATION",
+      "JUDICIAL_RECOVERY",
+      "GOVERNANCE_DECISIONS"
+    ],
+    "proof_ceiling": "The ACTA records the mechanism; it does not itself prove invalidity, fabrication, fraud or intent."
+  },
+  "ac_notice": {
+    "date": "2016-04-29",
+    "state": "DIRECT_NOTICE_OF_DISPUTE",
+    "propositions_notified": [
+      "LPB disputed Community debts as unreal",
+      "Community accounting documentation was said to be absent/incomplete",
+      "operator-paid common expenditure required audit/reconciliation against quotas/debt",
+      "debt/morosity issue affected the intended convenio"
+    ],
+    "proof_ceiling": "Notice of the dispute is established by the public reproduced-source chain; truth of the allegations remains separate."
+  },
+  "attributed_thesis": {
+    "speaker": "Gil Marer / AWESWELL perimeter",
+    "capture": "Private actors captured/instrumentalised the Owners' Community through disputed debt/morosity and voting exclusion.",
+    "convergence": "Later CAM/Acosta Matos participation functionally converged with the earlier dissident/private-actor lane.",
+    "debt": "Gil alleges the debt/morosity mechanism was manufactured, baseless or manipulated.",
+    "later_control": "Gil characterises later material-control/access acts as clandestine, forcible and unauthorised where source families support that attribution.",
+    "counter_calificacion": "If anyone should face a 'calificación punible' / culpability lens, Gil says it is the actors who created, certified, used, enabled or knowingly adopted the invalid debt mechanism.",
+    "status": "ATTRIBUTED_ALLEGATION_NOT_ADJUDICATED"
+  },
+  "guardrails": [
+    "capture_hijack_fabricated_debt_are_not_repository_findings",
+    "formal_calificacion_culpable_is_not_transferred_to_judge_or_unrelated_third_party",
+    "relationship_does_not_transfer_conduct_knowledge_intent_or_liability",
+    "ac_notice_is_not_ac_guilt",
+    "judicial_adverse_act_is_not_criminality",
+    "later_benefit_is_not_procurement",
+    "2016_debt_dispute_does_not_by_itself_prove_2018_command_chain",
+    "2018_control_event_does_not_retroactively_prove_2016_debt_falsity"
+  ],
+  "finite_test": [
+    "cost actually incurred",
+    "proper payer",
+    "actual payer",
+    "Community charge",
+    "LPB allocation",
+    "debt calculation",
+    "due date",
+    "challenge_or_consignation_status",
+    "morosity classification",
+    "vote exclusion",
+    "resolution_or_certificate",
+    "later use",
+    "actor knowledge",
+    "effect",
+    "beneficiary_or_harm",
+    "contrary explanation"
+  ],
+  "public_sources": [
+    "evidence/community/ACTA_26APR2016_PUBLIC_REDACTED_EDITION.md",
+    "archive/knowledge-project/SUN_PARK_26APR_TO_11JUN2016_UNITARY_SCAN_19AUG2026.md",
+    "assets/evidence/ac-email-21-april-2016/AC2016-EMAIL-001-PUBLIC.md",
+    "en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/index.html",
+    "es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/index.html",
+    "TWO_COMPETING_GOVERNANCE_RECORDS_2008_2022.md"
+  ],
+  "target_routes": [
+    "/en/community-instrumentalisation/",
+    "/es/comunidad-instrumentalizacion/",
+    "/en/community-instrumentalisation/minutes-2011-2022/",
+    "/es/comunidad-instrumentalizacion/actas-2011-2022/",
+    "/en/insolvency-classification-parallel-lives/",
+    "/es/calificacion-concurso-36-2012-vidas-paralelas/"
+  ]
+}
