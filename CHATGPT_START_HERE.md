@@ -261,3 +261,5 @@ For any task concerning Francisco de Borja Rodríguez-Batllori Laffitte, the Adm
 - `.github/governance/AC_CLAIMS_R33_ACTOR_GRAPH_PROTOCOL_22SEP2026.md`
 
 Use `AC-CLM-001`–`AC-CLM-014`; keep the AC separate from the five private actors, judge, prosecutors and professional firms. R33 is a party filing and evidential response node, not an adjudicated truth. Compare it proposition by proposition and preserve adverse evidence and lawful explanations. DP 1956 remains the actor-specific AC criminal route; DP 1901 may supply cross-evidence but is not the AC complaint.
+
+> **Consequence-risk communications control — PD-CRC-20260925-01:** when a task touches Gmail, electronic notifications, court/procurador/counsel mail, institutional portals, delivery failures, expected replies or CI/connector monitoring, load `.github/governance/CONSEQUENCE_RISK_COMMUNICATION_CONTROL_25SEP2026.md` before concluding. A message may require an alert even without an attachment (for example a notice pointing to DEHú/Notifica/LexNET). Do not close a risk merely because the message was read or the source was added to Git.

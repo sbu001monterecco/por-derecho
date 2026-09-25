@@ -696,3 +696,19 @@ read and apply **PD-GOV-HUMAN-AI-20260924-01** in
 - Any grant, credits, sponsorship, professional contribution or recoverable support must support
   capacity to test the record, not purchase a conclusion. Preserve:
   **Help the capacity. Do not buy the answer.**
+
+## PD-GOV-CRC — CONSEQUENCE-RISK COMMUNICATIONS
+
+For every task that reads, scans, summarizes, routes, preserves or acts on incoming/outgoing communications, apply `.github/governance/CONSEQUENCE_RISK_COMMUNICATION_CONTROL_25SEP2026.md` and `assets/data/consequence-risk-control-v1.json`.
+
+A material communication is not complete because it was opened, marked read, summarised, indexed, committed or discussed. Test whether failure to notice, acquire, understand, preserve, route or act could cause material prejudice. Where yes, keep a persistent consequence-risk alert through explicit acknowledgement, disposition and verified action or verified no-action closure.
+
+Mandatory special cases:
+- official notice with underlying content not yet acquired → `CONTENT_ACQUISITION_REQUIRED`;
+- operative attachment not reviewed → alert remains open;
+- timing/service ambiguity → `DEADLINE_OR_SERVICE_DATE_UNRESOLVED`;
+- material outbound request/promised response → dependency object;
+- bounce/routing failure → reopen underlying matter;
+- connector/CI/quota/host-parity failure → `CONTROL_SYSTEM_DEGRADED`.
+
+This control never authorises an email, filing, appeal, payment, publication or third-party contact. External acts still require their controlling authority gate. Raw mailbox content and private source locators remain outside public Git.
