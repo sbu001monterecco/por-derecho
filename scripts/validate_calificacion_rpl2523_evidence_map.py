@@ -90,16 +90,16 @@ def main() -> int:
     if data.get("proceeding", {}).get("later_merits_decision_located") is not False:
         errors.append("evidence map JSON: latest controlled merits state is not preserved")
 
-    for path in ["es/index.html", "en/index.html"]:
+    for path in ["es/portada-archivo-20260925.html", "en/homepage-archive-20260925.html"]:
         body = read(path)
         if body.count('data-calificacion-misuse-thesis="featured"') != 1:
             errors.append(f"{path}: expected one statically rendered homepage thesis block")
     homepage_markers = {
-        "es/index.html": [
+        "es/portada-archivo-20260925.html": [
             "tesis investigativa seria y documental",
             "calificacion-rpl-2523-mapa-prueba/",
         ],
-        "en/index.html": [
+        "en/homepage-archive-20260925.html": [
             "serious, document-based investigative thesis",
             "calificacion-rpl-2523-evidence-map/",
         ],
