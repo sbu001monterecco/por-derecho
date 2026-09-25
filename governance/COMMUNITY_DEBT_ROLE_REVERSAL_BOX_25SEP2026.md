@@ -269,3 +269,46 @@ Until it is identified from the native record:
 - do not guess the exception;
 - do not nominate Judgment 91/2017 or another proceeding merely because it altered a charge;
 - preserve the exception as **OPEN — EXACT PROCEEDING TO IDENTIFY**.
+
+
+## 15. Contingent-credit treatment was procedurally consequential
+
+The Community-credit history must not be described as if the word **contingent** made the claim harmless or legally irrelevant.
+
+The present primary-source reconstruction fixes the sequence:
+
+- **15-Jan-2013:** AC Article-74 report filed.
+- **28-Apr-2016:** AC definitive texts filed. The controlled debt ledger records a quantified **EUR718,663.24 pre-concurso Community claim** and a separate post-concurso Community/estate-claim layer.
+- **20-Jan-2017:** after LPB opposed the definitive creditor list and the AC issued a report favourable to modification, the court modified the definitive texts so the pre-concurso Community claim became an **ordinary contingent claim without its own amount**. The post-concurso estate claim was not modified.
+- **2019–2020:** Community certifications/spreadsheets supplied later figures; the AC filed and used them in the court process.
+- **10-Jun-2020:** the AC retained **EUR718,663.24** as the hypothetical pre-concurso contingent amount while separately certifying **EUR427,135.05** post-concurso.
+- **2021 better-bid condition:** the Community components were combined as **EUR1,145,798.29**.
+
+**Consequence:** the 2017 contingent classification preserved the pre-concurso claim inside the insolvency architecture pending certainty/quantification; it did not extinguish it. Later reuse of the historical EUR718,663.24 figure therefore has to be explained against the 2017 order, the Community accounting, the 2017 charge judgment, and the source of every later certification.
+
+Gil/AWESWELL's categorical position is that preserving and later reusing this disputed claim was not an innocent administrative detail but part of the mechanism by which invalid Community debt continued to affect the concurso. That conclusion is preserved as the principal's attributed factual position; the repository separately records the procedural facts and the actor-specific knowledge/intent proof required for any legal responsibility.
+
+## 16. Community legal person ≠ private officeholders / private faction
+
+The repository must never use **"the Community"** as an evidential shortcut for the private people who happened to hold or claim Community offices at a given date.
+
+For every AC, court, party or public-body reference to **Comunidad de Propietarios Sun Park**, resolve:
+
+`legal Community/body → meeting/resolution relied upon → president → secretary/administrator → treasurer → signatory → represented owner/entity → voting eligibility → mandate/power → source document → act performed → beneficiary/effect`.
+
+A reference to the legal Community does not by itself prove:
+- valid appointment of the officeholder;
+- valid debt or voting exclusion;
+- valid mandate for a private individual;
+- authority over CEXP, hotel operation, LPB assets, Matkator or third-party units;
+- that a private dissident faction and the legal Community were the same actor.
+
+Gil/AWESWELL's categorical position is that repeated institutional treatment of the dissident/private officeholder perimeter as **"the Community"** gave those private actors an appearance of institutional authority they did not validly possess. The repository preserves that conclusion as attributed and tests it meeting by meeting and act by act.
+
+### Authority-reification risk
+
+When a contested officeholder, certificate, minute or debt schedule is repeatedly referred to simply as **"the Community"**, the shorthand can convert a disputed private act into apparent institutional authority. For each downstream use, test:
+
+`who actually authored/signed → in what capacity → under which valid resolution → with which voting base → what the recipient understood "the Community" to mean → what legal/economic consequence followed`.
+
+This is called **authority reification / organ-person conflation risk**. It is an analytical control, not itself a finding of fraud or guilt.
