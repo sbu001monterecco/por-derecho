@@ -1,13 +1,13 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 48,
-  "owner": "1863:cada7300acc7b42c9b11d3f9c8bd3892733ce5f3",
-  "phase": "SUPERSEDED_WITH_OPEN_PUBLICATION_STATE",
-  "pr": 1863,
-  "base_sha": "5f9f365e4019a2feaf0dabe0f0f6fe81bb3f0a96",
-  "candidate_sha": "cada7300acc7b42c9b11d3f9c8bd3892733ce5f3",
-  "run_id": 36164952525,
-  "claimed_at": "2026-09-25T10:20:10.710915Z",
+  "fence": 49,
+  "owner": "1889:5692241ccd6790a8e5bdaa3ff5b27f9e179572a5",
+  "phase": "CLAIMED",
+  "pr": 1889,
+  "base_sha": "b7d8a6143ea53d95f56b0f621d7abea2654030b9",
+  "candidate_sha": "5692241ccd6790a8e5bdaa3ff5b27f9e179572a5",
+  "run_id": 36168179493,
+  "claimed_at": "2026-09-25T17:36:50.247396Z",
   "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
     {
@@ -2580,58 +2580,5 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-09-25T10:20:12.132069Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "PD release acceptance",
-            "id": 108033084506,
-            "conclusion": "success"
-          },
-          {
-            "name": "publication-integrity",
-            "id": 108033084122,
-            "conclusion": "success"
-          }
-        ]
-      }
-    },
-    {
-      "phase": "MERGE_PENDING",
-      "at": "2026-09-25T10:21:35.372003Z",
-      "evidence": {
-        "pr": 1863
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-09-25T10:21:36.568581Z",
-      "evidence": {
-        "merge_sha": "825d69a4832d5dc3ac0666dedc9dadac88bb025d"
-      }
-    },
-    {
-      "phase": "RECOVERY_REQUIRED",
-      "at": "2026-09-25T10:22:42.366532Z",
-      "evidence": {
-        "failed_run": "36123510157"
-      }
-    },
-    {
-      "phase": "SUPERSEDED_WITH_OPEN_PUBLICATION_STATE",
-      "at": "2026-09-25T17:06:15.530424Z",
-      "evidence": {
-        "prior_merge_sha": "825d69a4832d5dc3ac0666dedc9dadac88bb025d",
-        "current_main_sha": "13b03e66bb8e5cc03a28cf0a2d6cbea12824cdb5",
-        "deployment_recorded": false,
-        "readback_verified": false,
-        "verification_gap_preserved": true,
-        "reason": "Later legitimate main superseded the merged release, but the controller has no recorded exact deployment or scoped readback. Fence release does not infer either."
-      }
-    }
-  ],
-  "updated_at": "2026-09-25T17:06:15.530424Z"
+  "checkpoints": []
 }
