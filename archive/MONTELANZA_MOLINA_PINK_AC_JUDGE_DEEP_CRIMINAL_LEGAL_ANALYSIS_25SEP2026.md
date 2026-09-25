@@ -909,3 +909,98 @@ The most productive criminal-first theory is:
 The most important open discriminator remains **knowledge**: who knew that a proposition was false, materially truncated, bounded, superseded, duplicated or legally inapplicable at the moment they used it, and what did that use cause?
 
 Until that discriminator is proved, the correct classifications are investigative hypotheses, not findings of guilt.
+
+
+---
+
+## 29. 25-Sep cross-source transfer-convergence supplement — AP89 claimant perimeter → CAM
+
+A new cross-source reconciliation materially strengthens the **later-successor / structural-convergence** inquiry. It does **not** establish retroactive CAM participation in JV 1260/2011, quid pro quo, criminal agreement or knowing adoption.
+
+### 29.1 What the cross-source comparison now shows
+
+The repository's public-safe pre-CAM unit-owner ledger contains working finca/unit mappings carrying AP89 cross-references. Comparing those rows against the private Google Drive workbook **Investigation 2019 → SP OWNERS** produces **17 matched AP89-unit rows whose corresponding private-ledger row is marked `SOLD/TRANSFERED = CAM`**:
+
+| Finca | AP89 unit | Working pre-CAM attribution | Private 2019 transfer flag |
+|---:|---:|---|---|
+| 8717 | 404 | AMENEM SL | CAM |
+| 8716 | 405 | AMENEM SL | CAM |
+| 8715 | 406 | AMENEM SL | CAM |
+| 8714 | 407 | AMENEM SL | CAM |
+| 8713 | 408 | AMENEM SL | CAM |
+| 8599 | 454 | AMENEM SL | CAM |
+| 8598 | 455 | AMENEM SL | CAM |
+| 8597 | 456 | AMENEM SL | CAM |
+| 8596 | 457 | AMENEM SL | CAM |
+| 8595 | 458 | AMENEM SL | CAM |
+| 8592 | 503 | ROQUE PRIETO SL in later working schedule | CAM |
+| 8591 | 504 | MURUGA SL | CAM |
+| 8586 | 509 | ROQUE PRIETO SL | CAM |
+| 8710 | 553 | ACCIONES CANARIAS SL | CAM |
+| 8647 | 907 | ACCIONES CANARIAS SL | CAM |
+| 8646 | 908 | ROQUE PRIETO SL in later working schedule | CAM |
+| 8643 | 911 | MIGUEL MOLINA BETANCORT | CAM |
+
+This comparison is a **discovery reconciliation**, not Registry proof. The private `Investigation 2019` workbook is a working ownership/transfer ledger. Its `CAM` flag must be closed by deed, Registry history, date, seller identity, price/consideration, presentation/registration and any intermediate title before the transfer is treated as established.
+
+### 29.2 The eighteenth AP89 unit — 453 / Finca 8718 — creates both a strong lead and a correction issue
+
+The AP89 extraction identifies unit **453** jointly with **Amenem/Tengolf**. A separate repository unit map links **Finca 8718** to apartment 180 / unit 453 / Tengolf. A controlled later chain records CAM acquiring interests in Finca 8718 by deeds dated **23-May-2018** and **31-May-2018**, described elsewhere as 5/15 and 10/15 interests.
+
+That combination creates a potential **18/18 claimant-unit successor-to-CAM working hypothesis**.
+
+But the repository also contains an older analytical sentence describing Finca 8718 as **"separate from the 18 litigated units."** That statement conflicts with the current 8718→453 mapping and with the AP89 extraction including unit 453. It must **not** be silently resolved. The conflict is now a formal correction/reconciliation target.
+
+### 29.3 Two separate ownership mismatches remain visible
+
+The project's existing reconciliation controls also record that:
+
+- AP89 extraction attributes unit 503 to **Francisco Luis Molina Molina**, while the later working schedule assigns the relevant finca/unit row to **Roque Prieto, S.L.**;
+- AP89 extraction attributes unit 908 to **Francisco Luis Molina Molina**, while the later working schedule assigns the relevant row to **Roque Prieto, S.L.**.
+
+These may reflect intermediate transfers, date-specific ownership changes, source errors or mapping errors. No inference about wrongdoing may be drawn until the title chain is closed.
+
+### 29.4 Current evidential conclusion
+
+The correct formulation is:
+
+> **A cross-source working reconciliation now produces a 17/18 exact-finca match in which every matched AP89-linked row is marked CAM in the private 2019 transfer ledger, plus a separately documented 8718 Tengolf/Amenem→CAM deed sequence that the current unit map associates with AP89 unit 453. This materially strengthens a full-claimant-perimeter successor-convergence hypothesis, but the project's own reconciliation controls still identify unit/title inconsistencies and the private transfer flags are not substitutes for deeds and Registry history.**
+
+This finding is important because it changes the later-convergence question from a single-unit anecdote to a potentially **perimeter-wide succession pattern**. It does **not** change the criminal attribution rule.
+
+### 29.5 Criminal significance — what this pattern can and cannot prove
+
+If deed/Registry verification closes the chains, the pattern can support inquiry into:
+
+- whether the practical beneficiaries of later control acquired the same private-unit perimeter whose earlier litigation produced the AP89 exclusionary result;
+- whether AP89, Community authority, owner votes, title acquisitions and later access/control were functionally cumulative;
+- whether later actors knew and used the earlier litigation history;
+- consideration, timing, communications and economic purpose of the acquisitions;
+- whether partial private titles were later represented as authority over a wider hotel perimeter.
+
+It does **not**, without separate evidence, prove:
+
+- CAM participated in or directed the 2011 claim;
+- original claimants litigated for CAM;
+- any unit sale was consideration for a vote or litigation act;
+- the AC, Fiscalía or judge knew of a private criminal purpose;
+- the acquisitions themselves were unlawful;
+- a criminal organisation, conspiracy, bribery or influence arrangement.
+
+### CRIM-XPROC-18 — transfer-continuity / successor-convergence firewall
+
+**A later concentration of the earlier claimant-unit perimeter in one successor is highly relevant to benefit, continuity and knowledge-route investigation, but it is not retroactive proof of participation in the earlier litigation.**
+
+For every transfer, record:
+
+**AP89 unit → finca → AP89 owner attribution → date-specific pre-transfer owner → deed date/protocol → buyer → consideration → payment → Registry entry → representatives → communications → Community role before/after → later operational use → financing/value consequence → contrary evidence.**
+
+### P0-I — close the 18-unit transfer denominator
+
+1. Obtain current and historical Registry certifications / notas simples for all 18 AP89 units.
+2. Obtain every deed conveying the 17 privately flagged rows to CAM or an intermediate holder.
+3. Reconcile unit 453 / Finca 8718 and formally correct or preserve the conflicting older "separate from the 18" statement.
+4. Close the unit 503 and 908 ownership mismatches by date.
+5. Build one transaction table with seller, buyer, protocol, date, price, payment, encumbrances, tax, presentation and registration.
+6. Compare acquisition dates against Community meetings, voting rights, security/access decisions, AC communications and the 7-Jun-2018 control event.
+7. Test whether any AP89 claimant unit did **not** ultimately enter the CAM perimeter; do not force an 18/18 conclusion if Registry evidence disproves it.
