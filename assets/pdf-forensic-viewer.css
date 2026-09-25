@@ -1,0 +1,65 @@
+/* Por Derecho canonical public PDF + forensic sidecar viewer v1.
+   Zero-network/public-safe default. Case-specific pages supply the commentary dataset. */
+.forensic-reader-section{padding-top:2rem}
+.forensic-reader-shell{width:min(1680px,96vw);margin:auto}
+.forensic-reader-intro{display:flex;gap:1rem;justify-content:space-between;align-items:end;flex-wrap:wrap;margin-bottom:1rem}
+.forensic-reader-intro p{max-width:78rem;margin:.25rem 0}
+.forensic-workbench{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(360px,.82fr);gap:1rem;align-items:start}
+.forensic-pdf-pane,.forensic-sidecar{background:#fff;border:1px solid rgba(19,37,45,.18);border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(16,42,53,.06)}
+.forensic-pdf-pane{position:sticky;top:.75rem}
+.forensic-pdf-toolbar{display:flex;gap:.55rem;align-items:center;flex-wrap:wrap;padding:.72rem .8rem;border-bottom:1px solid rgba(19,37,45,.12);background:#f8fafb}
+.forensic-pdf-toolbar button,.forensic-pdf-toolbar select,.forensic-pdf-toolbar a{font:inherit}
+.forensic-pdf-toolbar button,.forensic-pdf-toolbar select{border:1px solid #bdc9cf;background:#fff;border-radius:8px;padding:.48rem .62rem;color:#173442}
+.forensic-pdf-toolbar button{cursor:pointer;font-weight:800}
+.forensic-pdf-toolbar .forensic-open{margin-left:auto}
+.forensic-pdf-frame{width:100%;height:calc(100vh - 9.5rem);min-height:690px;border:0;background:#e9edef;display:block}
+.forensic-binary-note{padding:.7rem .9rem;border-top:1px solid rgba(19,37,45,.12);background:#fbfaf6;font-size:.82rem;color:#52636a}
+.forensic-sidecar{max-height:calc(100vh - 1.5rem);position:sticky;top:.75rem;display:flex;flex-direction:column}
+.forensic-sidecar-head{padding:1rem 1rem .75rem;background:linear-gradient(145deg,#102a35,#254956);color:#fff}
+.forensic-sidecar-head h3{margin:.15rem 0 .35rem;font-size:1.22rem}
+.forensic-sidecar-head p{margin:0;color:#d7e4e8;font-size:.91rem}
+.forensic-controls{padding:.8rem;border-bottom:1px solid rgba(19,37,45,.12);background:#fff}
+.forensic-controls input{width:100%;border:1px solid #bdc9cf;border-radius:8px;padding:.62rem .7rem;font:inherit;margin-bottom:.62rem}
+.forensic-filter-row{display:flex;gap:.38rem;flex-wrap:wrap}
+.forensic-filter{border:1px solid #c2cdd2;background:#fff;border-radius:999px;padding:.36rem .58rem;font-size:.76rem;font-weight:850;cursor:pointer}
+.forensic-filter[aria-pressed="true"]{background:#102a35;color:#fff;border-color:#102a35}
+.forensic-viz{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem;padding:.72rem .8rem;background:#f5f7f8;border-bottom:1px solid rgba(19,37,45,.12)}
+.forensic-viz-item{background:#fff;border:1px solid #d7e0e4;border-radius:9px;padding:.5rem .55rem}
+.forensic-viz-item strong{display:block;font-size:.76rem}
+.forensic-viz-bar{height:5px;border-radius:99px;background:#e4eaed;overflow:hidden;margin-top:.36rem}
+.forensic-viz-fill{height:100%;border-radius:99px;background:var(--viz,#315c7b)}
+.forensic-viz-item small{color:#61737c}
+.forensic-cards{overflow:auto;padding:.75rem}
+.forensic-card{--tone:#315c7b;border:1px solid #d3dde2;border-left:6px solid var(--tone);border-radius:11px;padding:.78rem .82rem;margin:0 0 .68rem;background:#fff;scroll-margin-top:1rem}
+.forensic-card.active{box-shadow:0 0 0 3px color-mix(in srgb,var(--tone) 22%,transparent);background:#fbfdfe}
+.forensic-card-head{display:flex;gap:.55rem;align-items:start;justify-content:space-between}
+.forensic-card h4{font-size:1rem;line-height:1.25;margin:.1rem 0 .35rem}
+.forensic-page-chip{white-space:nowrap;border:1px solid #ccd6db;border-radius:999px;padding:.24rem .48rem;background:#f5f8f9;font-size:.72rem;font-weight:900;cursor:pointer}
+.forensic-tag-row{display:flex;gap:.35rem;flex-wrap:wrap;margin:.18rem 0 .52rem}
+.forensic-tag{border-radius:999px;padding:.22rem .45rem;font-size:.68rem;font-weight:900;letter-spacing:.025em;background:#edf1f3}
+.forensic-quote{margin:.5rem 0;border-left:3px solid var(--tone);padding:.52rem .65rem;background:#f8fafb;font-family:Georgia,serif;font-size:.93rem;line-height:1.55}
+.forensic-comment{margin:.5rem 0;font-size:.91rem}
+.forensic-boundary{margin:.55rem 0 0;padding:.48rem .6rem;background:#fff8e9;border-radius:7px;font-size:.82rem;color:#574b31}
+.forensic-links{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.58rem}
+.forensic-links a{font-size:.76rem;text-decoration:none;border:1px solid #c7d3d8;border-radius:7px;padding:.3rem .45rem;background:#fff;color:#075789;font-weight:800}
+.forensic-empty{padding:1.2rem;color:#657780}
+.forensic-tone-RHETORIC{--tone:#767d81}
+.forensic-tone-CONTEXT{--tone:#c18119}
+.forensic-tone-NOTICE{--tone:#236da3}
+.forensic-tone-VERIFY{--tone:#a98000}
+.forensic-tone-NARROWING{--tone:#a83a46}
+.forensic-tone-SUPPORTED{--tone:#2b7b57}
+.forensic-reader-foot{margin-top:.8rem;padding:.72rem .85rem;background:#fff;border:1px solid rgba(19,37,45,.14);border-radius:11px;font-size:.84rem;color:#53666f}
+@media(max-width:1050px){
+ .forensic-workbench{grid-template-columns:1fr}
+ .forensic-pdf-pane,.forensic-sidecar{position:static}
+ .forensic-sidecar{max-height:none}
+ .forensic-cards{max-height:none}
+ .forensic-pdf-frame{height:70vh;min-height:520px}
+}
+@media(max-width:620px){
+ .forensic-reader-shell{width:min(100% - 1rem,1680px)}
+ .forensic-viz{grid-template-columns:1fr 1fr}
+ .forensic-pdf-toolbar .forensic-open{margin-left:0}
+ .forensic-pdf-frame{height:64vh;min-height:430px}
+}

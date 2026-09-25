@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sbu001monterecco.github.io/por-derecho/schemas/pdf-forensic-sidecar-v1.schema.json",
+  "title": "Por Derecho PDF forensic sidecar v1",
+  "type": "object",
+  "required": ["version","documentId","pages","pdf","categories","notes"],
+  "properties": {
+    "version": {"type":"string"},
+    "documentId": {"type":"string","minLength":1},
+    "pages": {"type":"integer","minimum":1},
+    "pdf": {"type":"string","minLength":1},
+    "categories": {
+      "type":"object",
+      "additionalProperties": {
+        "type":"object",
+        "required":["color"],
+        "properties":{
+          "color":{"type":"string"},
+          "es":{"type":"string"},
+          "en":{"type":"string"}
+        },
+        "additionalProperties":true
+      }
+    },
+    "notes": {
+      "type":"array",
+      "items":{
+        "type":"object",
+        "required":["id","page","category","title","commentary"],
+        "properties":{
+          "id":{"type":"string","minLength":1},
+          "page":{"type":"integer","minimum":1},
+          "category":{"type":"string","minLength":1},
+          "status":{"type":"string"},
+          "issue":{"type":"string"},
+          "title":{"$ref":"#/$defs/bilingual"},
+          "quote":{"$ref":"#/$defs/bilingual"},
+          "commentary":{"$ref":"#/$defs/bilingual"},
+          "boundary":{"$ref":"#/$defs/bilingual"},
+          "links":{
+            "type":"array",
+            "items":{
+              "type":"object",
+              "properties":{
+                "es":{"type":"string"},
+                "en":{"type":"string"},
+                "href":{"type":"string"},
+                "hrefEs":{"type":"string"},
+                "hrefEn":{"type":"string"}
+              },
+              "additionalProperties":false
+            }
+          }
+        },
+        "additionalProperties":true
+      }
+    }
+  },
+  "$defs":{
+    "bilingual":{
+      "type":"object",
+      "properties":{"es":{"type":"string"},"en":{"type":"string"}},
+      "minProperties":1,
+      "additionalProperties":false
+    }
+  },
+  "additionalProperties":true
+}
