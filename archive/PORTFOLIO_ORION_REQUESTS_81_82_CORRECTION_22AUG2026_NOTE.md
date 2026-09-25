@@ -1,1 +1,0 @@
-See `archive/PORTFOLIO_ORION_REQUESTS_81_82_CORRECTION_22AUG2026.md` and the bilingual public correction pages for the confirmed 22 August 2026 attachment resend, Requests 81/82 consolidation request, verified Portfolio distribution, and direct San Telmo source.

@@ -76,10 +76,10 @@
     if (sanTelmo) coreSections.push(sanTelmo);
 
     let anchor = hero;
-    // Keep the legacy criminal-misuse pin immediately after the detailed record.
-    // Inserting scope/search between them caused two observers to reorder on
-    // every frame and remove keyboard focus while readers typed into search.
-    for (const section of [controlling, detailed, ...protectedCriminalSequence, portfolioScope, homeSearch, summary, audiences, perimeters]) {
+    // Keep the protected first-read contract consecutive. The added portfolio
+    // scope and the existing live search stay visible as direct children after
+    // the collapsed full-record control, rather than interrupting that contract.
+    for (const section of [controlling, detailed, ...protectedCriminalSequence, summary, audiences, perimeters]) {
       if (section && anchor) {
         placeAfter(section, anchor);
         anchor = section;
@@ -87,10 +87,22 @@
     }
     const fullRecord = ensureFullRecord(main, isEnglish, coreSections);
     placeAfter(fullRecord, perimeters || audiences || summary || prosecution || anchor);
-    if (sourceFunds) placeAfter(sourceFunds, fullRecord);
+    let publicAnchor = fullRecord;
+    if (portfolioScope) {
+      placeAfter(portfolioScope, publicAnchor);
+      publicAnchor = portfolioScope;
+    }
+    if (homeSearch) {
+      placeAfter(homeSearch, publicAnchor);
+      publicAnchor = homeSearch;
+    }
+    if (sourceFunds) {
+      placeAfter(sourceFunds, publicAnchor);
+      publicAnchor = sourceFunds;
+    }
     if (sanTelmo) {
       sanTelmo.classList.add('shell');
-      placeAfter(sanTelmo, sourceFunds || fullRecord);
+      placeAfter(sanTelmo, publicAnchor);
       sanTelmo.dataset.audienceProtectedSanTelmo = '20260823';
     }
 

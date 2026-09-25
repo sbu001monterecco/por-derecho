@@ -18,54 +18,7 @@
   const ensureMobileMenu = () => {
     const header = document.querySelector('.site-header');
     const nav = header?.querySelector('.main-nav');
-    if (!header || !nav) return;
-    if (document.body.classList.contains('pd-home-refined')) {
-      if (header.querySelector('.pd-home-nav-disclosure')) return;
-      const wrapper = document.createElement('details');
-      wrapper.className = 'pd-home-nav-disclosure';
-      const summary = document.createElement('summary');
-      summary.textContent = t('Menú y rutas', 'Menu and routes');
-      wrapper.appendChild(summary);
-      nav.insertAdjacentElement('beforebegin', wrapper);
-      wrapper.appendChild(nav);
-      const narrow = matchMedia('(max-width: 800px)');
-      const layout = () => {
-        wrapper.open = !narrow.matches;
-        wrapper.dataset.wide = String(!narrow.matches);
-      };
-      layout();
-      narrow.addEventListener('change', layout);
-      nav.addEventListener('click', (event) => {
-        if (narrow.matches && event.target.closest('a')) wrapper.open = false;
-      });
-      wrapper.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && narrow.matches) {
-          wrapper.open = false;
-          summary.focus();
-        }
-      });
-      const style = document.createElement('style');
-      style.id = 'pd-home-native-menu-style';
-      style.textContent = `
-        .pd-home-refined .pd-home-nav-disclosure{flex:1;min-width:0}
-        .pd-home-refined .pd-home-nav-disclosure>summary{cursor:pointer;min-height:44px;padding:.65rem .8rem;border:1px solid #8a9ca0;border-radius:.5rem;color:#fff;font-weight:750}
-        .pd-home-refined .pd-home-nav-disclosure[data-wide="true"]>summary{display:none}
-        .pd-home-refined .pd-home-nav-disclosure:not([open]) #main-nav{display:none!important}
-        @media(max-width:800px){
-          .pd-home-refined .pd-home-nav-disclosure{flex-basis:100%}
-          .pd-home-refined .header-inner{padding-block:.6rem;gap:.55rem}
-          .pd-home-refined .pd-home-nav-disclosure>summary{width:max-content;max-width:100%}
-          .pd-home-refined .pd-home-nav-disclosure #main-nav{flex-direction:row;align-items:flex-start;gap:.15rem;padding-block:.5rem}
-          .pd-home-refined .pd-home-nav-disclosure #main-nav>a{flex:1 1 40%;white-space:normal}
-          .pd-home-refined .pd-home-nav-disclosure .pd-home-more{flex:1 1 40%;align-self:flex-start}
-          .pd-home-refined .pd-home-nav-disclosure .pd-home-more[open]{flex-basis:100%}
-          .pd-home-refined .pd-home-nav-disclosure .pd-home-more-links{position:static;max-width:100%}
-        }
-      `;
-      document.head.appendChild(style);
-      return;
-    }
-    if (header.querySelector('.nav-toggle')) return;
+    if (!header || !nav || header.querySelector('.nav-toggle')) return;
     if (!nav.id) nav.id = 'main-nav';
     const button = document.createElement('button');
     button.className = 'nav-toggle';
@@ -236,12 +189,6 @@
     restoreDeepLink();
   };
 
-  // Establish the native mobile menu without waiting for later presentation passes.
-  const initialiseMenu = () => {
-    if (document.body.classList.contains('pd-home-refined')) ensureMobileMenu();
-  };
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initialiseMenu, { once: true });
-  else initialiseMenu();
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => setTimeout(apply, 5600), { once: true });
   else setTimeout(apply, 5600);
   setTimeout(apply, 7200);
