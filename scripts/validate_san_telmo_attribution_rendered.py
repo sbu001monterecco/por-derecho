@@ -33,12 +33,6 @@ required = {
         "placeAfter(sanTelmo, sourceFunds || fullRecord)",
         "pd:san-telmo-attribution-ready",
     ],
-    "en/index.html": [
-        '<section class="interview-evidence"',
-    ],
-    "es/index.html": [
-        '<section class="interview-evidence"',
-    ],
     "en/san-telmo-ricpe-sun-park/index.html": [
         "The direct public source",
         "Proposition-by-proposition evidence map",
@@ -66,7 +60,7 @@ required = {
         "directChildOfMain",
     ],
     ".github/workflows/verify-san-telmo-rendered-attribution-live.yml": [
-        "Verify rendered English and Spanish homepage attribution",
+        "Verify rendered English and Spanish direct-route attribution",
         "scripts/render_san_telmo_attribution_live.mjs",
         "SOURCE_OUTCOME",
         "DOM_OUTCOME",
