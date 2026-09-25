@@ -66,12 +66,17 @@
     const sanTelmo = main.querySelector('section.interview-evidence[data-pd-san-telmo-attribution="20260819"]');
     const protectedCriminalSequence = [criminalMisuse, priority, prosecution];
     const portfolioScope = main.querySelector("#economic-scope-20260925");
-    const coreSections = [hero, controlling, detailed, portfolioScope, criminalMisuse, priority, prosecution, summary, audiences, perimeters];
+    // Extend, rather than replace, the protected source contract.
+    const coreSections = [hero, controlling, detailed, criminalMisuse, priority, prosecution, summary, audiences, perimeters];
+    if (portfolioScope) coreSections.push(portfolioScope);
+    // Move the existing live search node; retain its form, events and source data.
+    const homeSearch = portfolioScope ? document.querySelector('[data-canonical-home-search="20260902"]') : null;
+    if (homeSearch) coreSections.push(homeSearch);
     if (sourceFunds) coreSections.push(sourceFunds);
     if (sanTelmo) coreSections.push(sanTelmo);
 
     let anchor = hero;
-    for (const section of [controlling, detailed, portfolioScope, ...protectedCriminalSequence, summary, audiences, perimeters]) {
+    for (const section of [controlling, detailed, portfolioScope, homeSearch, ...protectedCriminalSequence, summary, audiences, perimeters]) {
       if (section && anchor) {
         placeAfter(section, anchor);
         anchor = section;
