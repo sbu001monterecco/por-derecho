@@ -40,11 +40,11 @@ def main() -> int:
     require(errors, tuple(lock.get("stable_actor_ids", [])) == ACTOR_ORDER, "preservation contract actor order/identity mismatch")
 
     homepage_rules = {
-        "en/index.html": (
+        "en/homepage-archive-20260925.html": (
             "Identification supplied by Patricia Domínguez and confirmed by Gil Marer; not derived from facial recognition.",
             "The photograph establishes identity/relationship context only. It does not establish authority, coordination, knowledge, intent or liability.",
         ),
-        "es/index.html": (
+        "es/portada-archivo-20260925.html": (
             "Identificación facilitada por Patricia Domínguez y confirmada por Gil Marer; no procede de reconocimiento facial.",
             "La fotografía aporta únicamente contexto de identidad y relación. No acredita por sí sola autoridad, coordinación, conocimiento, intención ni responsabilidad.",
         ),
