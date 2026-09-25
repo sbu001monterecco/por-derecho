@@ -1,0 +1,81 @@
+name: Criminal continuity pinned source snapshot
+on:
+  push:
+    branches: ['worker/criminal-continuity-snapshot-20260925']
+    paths: ['.github/workflows/criminal-continuity-snapshot-20260925.yml']
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 7bd0def057efa6ddf531d80c673c75030fc9f647
+          persist-credentials: false
+      - name: Inventory every tracked path and export UTF-8 sources only
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, pathlib, subprocess, zipfile
+          base = pathlib.Path.cwd()
+          out = base / '_continuity_snapshot'
+          out.mkdir()
+          head = subprocess.check_output(['git','rev-parse','HEAD'], text=True).strip()
+          assert head == '7bd0def057efa6ddf531d80c673c75030fc9f647'
+          tree = subprocess.check_output(['git','ls-tree','-rz','--long','HEAD'])
+          rows, errors, text_count, binary_count = [], [], 0, 0
+          with zipfile.ZipFile(out / 'public_utf8_sources.zip', 'w', zipfile.ZIP_DEFLATED, compresslevel=6) as z:
+              for record in tree.split(b'\0'):
+                  if not record:
+                      continue
+                  meta, rawpath = record.split(b'\t',1)
+                  mode, typ, oid, size = meta.decode().split()
+                  path = rawpath.decode('utf-8')
+                  row = dict(path=path, mode=mode, type=typ, git_blob=oid, size=None if size=='-' else int(size))
+                  if typ != 'blob' or mode == '120000':
+                      row['classification']='NONREGULAR_NOT_TEXT_REVIEWED'
+                      rows.append(row)
+                      continue
+                  try:
+                      data=(base/path).read_bytes()
+                      calculated=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()
+                      row['git_blob_verified']=calculated==oid
+                      if calculated!=oid:
+                          errors.append({'path':path,'reason':'blob hash mismatch'})
+                      row['sha256']=hashlib.sha256(data).hexdigest()
+                      try:
+                          data.decode('utf-8')
+                          if b'\0' in data:
+                              raise UnicodeError('NUL-containing binary')
+                      except UnicodeError:
+                          row['classification']='BINARY_INVENTORIED_NOT_SEMANTICALLY_REVIEWED'
+                          binary_count+=1
+                      else:
+                          row['classification']='UTF8_EXPORTED_FOR_TEXT_SCAN'
+                          z.writestr(path,data)
+                          text_count+=1
+                  except Exception as exc:
+                      row['classification']='READ_ERROR'
+                      errors.append({'path':path,'reason':str(exc)})
+                  rows.append(row)
+          report=dict(control_id='PD-SP-CRIMINAL-CONTINUITY-20260925-01', head_sha=head,
+                      tree_sha=subprocess.check_output(['git','rev-parse','HEAD^{tree}'],text=True).strip(),
+                      tracked_entries=len(rows),utf8_exported=text_count,binary_inventoried=binary_count,
+                      errors=errors,semantic_completeness_claim=False,
+                      limits=['Current pinned main only; not every historical branch or commit.',
+                              'Binary assets inventoried and hashed, not visually or evidentially authenticated.',
+                              'UTF-8 scanning is not equivalent to judicial proof or complete human reading.'])
+          (out/'inventory.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2))
+          (out/'coverage.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+          print(json.dumps(report,ensure_ascii=False,indent=2))
+          if errors:
+              raise SystemExit(1)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: criminal-continuity-public-source-snapshot-7bd0def
+          path: _continuity_snapshot/
+          retention-days: 3
+          if-no-files-found: error
