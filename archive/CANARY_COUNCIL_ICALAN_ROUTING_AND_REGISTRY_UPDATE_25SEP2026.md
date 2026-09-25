@@ -9,7 +9,7 @@
 The 21–25 September institutional sequence is now source-controlled as follows:
 
 1. **22 September 2026 — regional coordination communication.** The Consejo Canario / inter-Colegio communication was sent from the reporting side and copied to verified professional-body channels, including `info@icalan.es` and the then-used `icalanzarote@redabogacia.org`.
-2. **22 September 2026 — identity correction.** The reporting side corrected the erroneous “Oswell / Oswell Limited” wording. The controlling legal person is **AWESWELL LIMITED**, UK company no. **07716847**, formerly **MONTERECCO SUN PARK LIMITED**. **Matkator, S.L.U.** remains a separate legal person.
+2. **22 September 2026 — identity correction.** The reporting side corrected the erroneous the prior noncanonical company-name variants wording. The controlling legal person is **AWESWELL LIMITED**, UK company no. **07716847**, formerly **MONTERECCO SUN PARK LIMITED**. **Matkator, S.L.U.** remains a separate legal person.
 3. **22 September 2026 — Consejo Canario registry evidence.** A six-page stamped copy was returned by the Consejo Canario de Colegios de Abogados with **Registro de Entrada RE-000329**, dated 22-Sep-2026. This proves registry entry only; it is not a merits decision.
 4. **22 September 2026 — ICALPA registry evidence.** ICALPA issued **Registro de Entrada RE-012642/2026**. This proves entry/receipt only; it does not establish examination, agreement, disciplinary action or a merits outcome.
 5. **24 September 2026 — ICALAN routing instruction.** The Ilustre Colegio de Abogados de Lanzarote stated that `icalanzarote@redabogacia.org` was ceasing to operate and instructed that communications be sent to **`info@icalan.es`**.
@@ -21,7 +21,7 @@ For future professional-body communications on this track:
 
 - **Gil Marer** acts personally as an affected person and informant and, where the relevant representation is relied upon and evidenced, as director of **AWESWELL LIMITED**.
 - **AWESWELL LIMITED** — UK company no. **07716847**; formerly **MONTERECCO SUN PARK LIMITED**.
-- “Oswell”, “Oswell Limited” and materially similar variants are transcription/template errors, not aliases.
+- Prior noncanonical company-name variants are transcription/template errors, not aliases.
 - **Matkator, S.L.U.** remains legally and evidentially separate.
 
 ## Evidential boundaries
