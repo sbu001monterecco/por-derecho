@@ -7,6 +7,17 @@ on:
     - cron: "17 6 * * *"
   push:
     paths:
+      - ".github/workflows/truth-machine-recursive-queue.yml"
+      - "assets/data/truth-machine-priority-queue-v1.json"
+      - "evidence/**"
+      - "archive/**"
+      - "assets/data/**"
+      - "legaltech/unitary_review/context_integrity.py"
+      - "legaltech/unitary_review/recursive_priority_queue.py"
+      - "recovery_tests/test_recursive_priority_queue.py"
+  pull_request:
+    paths:
+      - ".github/workflows/truth-machine-recursive-queue.yml"
       - "assets/data/truth-machine-priority-queue-v1.json"
       - "evidence/**"
       - "archive/**"
