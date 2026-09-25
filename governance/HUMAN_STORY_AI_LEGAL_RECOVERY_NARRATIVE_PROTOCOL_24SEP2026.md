@@ -155,11 +155,19 @@ For any materially revised human/AI story:
 6. draft reader-facing EN/ES prose from the digest;
 7. run attribution, identity, privacy, link and publication gates;
 8. merge only through the normal protected review path;
-9. verify live/public state where tooling permits;
-10. record unresolved deployment or source gaps honestly.
+9. run `python3 scripts/validate_human_ai_narrative.py` and its unit tests;
+10. verify live/public state where tooling permits;
+11. record unresolved deployment or source gaps honestly.
 
 ## 13. Mandatory public-safe distinction
 
 A personal story may be emotionally strong.
 
 It may not become evidentially stronger than its sources.
+
+
+## 14. Deterministic structural guard
+
+The repository-level validator is `scripts/validate_human_ai_narrative.py`, backed by `tests/test_human_ai_narrative_protocol_20260924.py` and the `Validate human AI narrative` workflow.
+
+It checks required dated scenes, first-person/boundary language, adverse-outcome presence, support-page linkage and live route existence. It is a structural publication guard only. Passing it does not prove any factual allegation or legal conclusion.

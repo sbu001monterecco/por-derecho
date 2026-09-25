@@ -696,3 +696,45 @@ read and apply **PD-GOV-HUMAN-AI-20260924-01** in
 - Any grant, credits, sponsorship, professional contribution or recoverable support must support
   capacity to test the record, not purchase a conclusion. Preserve:
   **Help the capacity. Do not buy the answer.**
+- Run `python3 scripts/validate_human_ai_narrative.py` for every in-scope narrative change;
+  `Validate human AI narrative` is the deterministic structural guard. It enforces required
+  first-person/adverse-evidence/boundary/link controls but does not adjudicate factual truth.
+
+
+## 16. Cross-system live coordination, continuity and Memory
+
+For any task that spans or claims alignment across GitHub, GitLab, Google Drive,
+connected mail/source systems, ChatGPT threads/handoffs, ChatGPT Memory or public
+deployment, read and apply **PD-GOV-XSYS-20260924-01** in
+`governance/CROSS_SYSTEM_LIVE_COORDINATION_CONTINUITY_MEMORY_PROTOCOL_24SEP2026.md`
+and the current state file in
+`ops/live-coordination/CROSS_SYSTEM_LIVE_COORDINATION_STATE_20260924.json`.
+
+- **No silent divergence. No silent promotion. No "all updated" without verified state.**
+- Read current GitHub `main`, current GitLab `main`, the active Control Tower
+  issue #1428 and any in-scope Drive file before consequential writes.
+- Use one live integration/publication lane. Parallel workers return structured
+  deltas; they do not create competing canonical histories.
+- Classify cross-system state explicitly as `EXACT_PARITY`,
+  `FUNCTIONAL_PARITY`, `PENDING_PROPAGATION`, `INTENTIONAL_DIVERGENCE`,
+  `BLOCKED`, `STALE`, `SUPERSEDED` or `UNKNOWN`.
+- Google Drive is private/native custody and human control, not automatic proof
+  of publication, filing or repository state. Reuse the existing Evidence
+  Manifest rather than creating a competing custody ledger.
+- ChatGPT conversation is operational context; ChatGPT Memory is durable
+  orientation only. Neither is primary evidence or proof of current external
+  state. Re-check consequential facts against native/controlled sources.
+- Preserve mutation receipts: branch/commit/PR/merge SHA; GitLab branch/MR/
+  pipeline state; Drive file ID/revision where available; Gmail message/thread
+  ID; deployment SHA/readback.
+- A material correction must propagate through every affected chronology,
+  actor/entity, proceeding, proposition, source register, page and handoff.
+  Preserve supersession history rather than silently replacing it.
+- If any required surface is still pending or blocked, report
+  **PARTIAL — NOT FULLY ALIGNED** and name the exception.
+- Repository/Drive synchronization never authorizes filing, email, service,
+  authority contact, social publication, payment or contract acceptance.
+- Run `python3 scripts/validate_cross_system_coordination.py` for every in-scope
+  cross-system coordination change. The `Validate cross-system coordination`
+  workflow is a structural guard; passing it does not prove external provider
+  state beyond the receipts recorded in the state file.

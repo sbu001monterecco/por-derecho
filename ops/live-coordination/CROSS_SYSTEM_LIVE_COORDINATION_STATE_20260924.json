@@ -1,0 +1,58 @@
+{
+  "schema": "por-derecho.cross-system-live-coordination-state.v1",
+  "control_id": "PD-GOV-XSYS-20260924-01",
+  "control_date": "2026-09-24",
+  "status": "ACTIVE_COORDINATION_STATE",
+  "canonical_public_repository": {
+    "provider": "github",
+    "repository": "sbu001monterecco/por-derecho",
+    "default_branch": "main",
+    "control_tower_issue": 1428,
+    "active_hardening_pr": 1803
+  },
+  "gitlab_mirror": {
+    "project_id": 86151898,
+    "default_branch": "main",
+    "active_mirror_mr": 573,
+    "role": "mirror_review_ci_recovery",
+    "known_state": "MR_OPEN_WITH_REVIEW_AND_CI",
+    "instruction_hook_state": "BLOCKED_BY_PROTECTED_SUCCESSOR_POLICY",
+    "parity_state": "FUNCTIONAL_PARITY",
+    "note": "Protocol/state files are mirrored; protected AGENTS.md and CHATGPT_START_HERE.md remain at GitLab main predecessor bytes pending a separately reviewed successor."
+  },
+  "google_drive": {
+    "chatgpt_folder_id": "1u9IYxjk64966n8kns4Zaw3R_6-AertPd",
+    "evidence_manifest_id": "1hhLw3S6lkl7ALyNHgj1NvG82ZanqwFFyLpDCgR26LSs",
+    "role": "private_native_custody_and_human_control",
+    "coordination_control_doc_id": "1HPXtnyfnAnURB9MoykNkc4bUQY84rwkZwyBmLKdHe2I",
+    "coordination_control_doc_url": "https://docs.google.com/document/d/1HPXtnyfnAnURB9MoykNkc4bUQY84rwkZwyBmLKdHe2I/edit",
+    "coordination_control_doc_parent_id": "1u9IYxjk64966n8kns4Zaw3R_6-AertPd",
+    "coordination_control_doc_state": "READBACK_VERIFIED"
+  },
+  "chatgpt": {
+    "conversation_role": "operational_context_and_handoff",
+    "memory_role": "durable_orientation_only",
+    "memory_is_evidence": false,
+    "memory_proves_current_state": false
+  },
+  "parity_states": [
+    "EXACT_PARITY",
+    "FUNCTIONAL_PARITY",
+    "PENDING_PROPAGATION",
+    "INTENTIONAL_DIVERGENCE",
+    "BLOCKED",
+    "STALE",
+    "SUPERSEDED",
+    "UNKNOWN"
+  ],
+  "absolute_rules": [
+    "NO_SILENT_DIVERGENCE",
+    "NO_SILENT_PROMOTION",
+    "CURRENT_MAIN_BEFORE_WRITE",
+    "ONE_LIVE_INTEGRATION_LANE",
+    "MUTATION_RECEIPTS_REQUIRED",
+    "MEMORY_IS_NOT_PRIMARY_EVIDENCE",
+    "NO_ALL_UPDATED_CLAIM_WITH_UNVERIFIED_EXCEPTIONS"
+  ],
+  "boundary": "Coordination state only. It does not prove legal allegations, filing, service, publication deployment or external receipt."
+}
