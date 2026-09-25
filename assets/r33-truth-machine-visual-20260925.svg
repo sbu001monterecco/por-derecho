@@ -23,12 +23,12 @@
  <text x="138" y="440" font-size="17" fill="#718087">Each number has an explicit denominator.</text>
 </g>
 <g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
- <text x="138" y="508" font-size="21" fill="#5d6e76">Native source identity</text><text x="518" y="508" font-size="30" font-weight="800" fill="#102c38">SHA-256 bound</text><text x="748" y="508" font-size="18" fill="#8d352d">byte identity only</text>
- <text x="138" y="584" font-size="21" fill="#5d6e76">Pages represented</text><text x="518" y="584" font-size="30" font-weight="800" fill="#102c38">22 / 22</text><text x="724" y="584" font-size="18" fill="#2d6b53">100% coverage</text>
- <text x="138" y="660" font-size="21" fill="#5d6e76">Preserved review anchors</text><text x="518" y="660" font-size="30" font-weight="800" fill="#102c38">482 / 482</text><text x="724" y="660" font-size="18" fill="#2d6b53">100% carry-forward</text>
- <text x="138" y="736" font-size="21" fill="#5d6e76">Statements scanned</text><text x="518" y="736" font-size="30" font-weight="800" fill="#102c38">276 / 276</text><text x="724" y="736" font-size="18" fill="#2d6b53">100% scan coverage</text>
- <text x="138" y="812" font-size="21" fill="#5d6e76">Candidate review load</text><text x="518" y="812" font-size="30" font-weight="800" fill="#102c38">179 / 276</text><text x="724" y="812" font-size="18" fill="#8d352d">64.9% need ≥1 check</text>
- <text x="138" y="888" font-size="21" fill="#5d6e76">Source-complete signoffs</text><text x="518" y="888" font-size="30" font-weight="800" fill="#102c38">0 / 482</text><text x="748" y="888" font-size="18" fill="#8d352d">manual source review required</text>
+ <text x="138" y="508" font-size="21" fill="#5d6e76">Native source identity</text><text x="518" y="508" font-size="30" font-weight="800" fill="#102c38">SHA-256 bound</text><text x="880" y="508" text-anchor="end" font-size="16" fill="#8d352d">byte identity only</text>
+ <text x="138" y="584" font-size="21" fill="#5d6e76">Pages represented</text><text x="518" y="584" font-size="30" font-weight="800" fill="#102c38">22 / 22</text><text x="880" y="584" text-anchor="end" font-size="16" fill="#2d6b53">100% coverage</text>
+ <text x="138" y="660" font-size="21" fill="#5d6e76">Preserved review anchors</text><text x="518" y="660" font-size="30" font-weight="800" fill="#102c38">482 / 482</text><text x="880" y="660" text-anchor="end" font-size="16" fill="#2d6b53">100% carry-forward</text>
+ <text x="138" y="736" font-size="21" fill="#5d6e76">Statements scanned</text><text x="518" y="736" font-size="30" font-weight="800" fill="#102c38">276 / 276</text><text x="880" y="736" text-anchor="end" font-size="16" fill="#2d6b53">100% scan coverage</text>
+ <text x="138" y="812" font-size="21" fill="#5d6e76">Candidate review load</text><text x="518" y="812" font-size="30" font-weight="800" fill="#102c38">179 / 276</text><text x="880" y="812" text-anchor="end" font-size="16" fill="#8d352d">64.9% need ≥1 check</text>
+ <text x="138" y="888" font-size="21" fill="#5d6e76">Source-complete signoffs</text><text x="518" y="888" font-size="30" font-weight="800" fill="#102c38">0 / 482</text><text x="880" y="888" text-anchor="end" font-size="16" fill="#8d352d">manual source review required</text>
 </g>
 <g font-family="system-ui,-apple-system,Segoe UI,sans-serif" filter="url(#shadow)">
  <rect x="956" y="342" width="868" height="570" rx="24" fill="#fff" stroke="#d5cec2"/>
