@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
-          ref: 7bd0def057efa6ddf531d80c673c75030fc9f647
+          ref: 2f9a7bad36f93dd440d6d64dc0839198daacaaec
           fetch-depth: 1
           persist-credentials: false
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
@@ -33,9 +33,15 @@ jobs:
           import re
           p=Path('scripts/prepare_platform_incibe_20260925.py')
           text=p.read_text()
-          # Public validators use generic patterns, never exact private locator literals.
           text=re.sub(r"'1a[0-9a-f]{14}',?",'',text)
           text=re.sub(r"'[0-9]{7}',?",'',text)
+          text=text.replace('PROVIDER_OR_INSTITUTIONAL_REPLY','OFFICIAL_NOTIFICATION')
+          text=text.replace('INBOUND_TO_PROJECT','INBOUND_FROM_INSTITUTION')
+          text=text.replace('INSTITUTION_OR_PROVIDER_STATEMENT_NO_PERSONAL_CAUSATION','INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED')
+          text=text.replace("          'source_batch_id':CONTROL,\n",'')
+          text=text.replace(".get('source_batch_id')",".get('source_key','').split(':')[0]")
+          text=text.replace('e.get("source_batch_id")','e.get("source_key", "").split(":")[0]')
+          text=text.replace("e['attachment_source_refs']=[x['id'] for x in spec['attachments'] if x['parent_key']==key]","e['matter_references'].extend(x['id'] for x in spec['attachments'] if x['parent_key']==key)")
           text=text.replace('Un evento de seguridad confirmado por el proveedor; una restricción actual pendiente de explicación.','Un evento de seguridad confirmado por el proveedor; una restricción actual aún sin explicación.')
           old="text=text.replace('<main id=\"content\">','<main id=\"content\">\\n'+page_block(spec,lang),1)"
           new="section='<section class=\"section recipient-section-alt\" id=\"'+('actual' if es else 'current')+'\">'\n        if text.count(section)!=1:raise ValueError('Current section boundary drift')\n        text=text.replace(section,page_block(spec,lang)+section,1)"
@@ -57,7 +63,6 @@ jobs:
           assert all(pathlib.Path(p).is_file() for p in paths)
           for p in paths:
               t=pathlib.Path(p).read_text()
-              # Refuse newly introduced private account/message/storage locators.
               old=subprocess.run(['git','show','HEAD:'+p],capture_output=True,text=True)
               oldtext=old.stdout if old.returncode==0 else ''
               private=re.compile(r'\b1a[0-9a-f]{14}\b|https://mail\.google\.com/[^\s\"<>]+|https://drive\.google\.com/file/[^\s\"<>]+')
@@ -68,7 +73,7 @@ jobs:
           assert not subprocess.check_output(['git','diff','--cached','--name-only','--diff-filter=D'])
           patch=subprocess.check_output(['git','diff','--cached','--binary'])
           pathlib.Path('/tmp/incibe-candidate/candidate.patch').write_bytes(patch)
-          manifest={'base':'7bd0def057efa6ddf531d80c673c75030fc9f647','files':[{'path':p,'sha256':hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest(),'bytes':pathlib.Path(p).stat().st_size} for p in actual],'no_deletions':True,'transport_workflow_in_candidate':False,'private_source_bytes_in_candidate':False}
+          manifest={'base':'2f9a7bad36f93dd440d6d64dc0839198daacaaec','files':[{'path':p,'sha256':hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest(),'bytes':pathlib.Path(p).stat().st_size} for p in actual],'no_deletions':True,'transport_workflow_in_candidate':False,'private_source_bytes_in_candidate':False}
           pathlib.Path('/tmp/incibe-candidate/manifest.json').write_text(json.dumps(manifest,indent=2))
           with zipfile.ZipFile('/tmp/incibe-candidate/candidate-files.zip','w',zipfile.ZIP_DEFLATED) as z:
               for p in actual:z.write(p,p)
