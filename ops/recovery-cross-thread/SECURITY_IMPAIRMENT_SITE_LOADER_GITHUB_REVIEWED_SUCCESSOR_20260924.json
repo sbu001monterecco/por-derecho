@@ -1,0 +1,28 @@
+{
+  "schema": "por-derecho.github-site-loader-reviewed-successor.v1",
+  "control": "PD-SP-TRACK-SECURITY-IMPAIRMENT-01",
+  "review_date": "2026-09-24",
+  "repository": "sbu001monterecco/por-derecho",
+  "path": "assets/site.js",
+  "predecessor": {
+    "character_length": 8185,
+    "git_blob_sha1": "7d48f2f4e860b24c05a9f33647fb94643d7ec380",
+    "ref": "main"
+  },
+  "successor": {
+    "character_length": 9247,
+    "git_blob_sha1": "692ba6638ed7b75b7901857145afa561ce9593d0",
+    "branch": "feat/security-impairment-causation-20260924"
+  },
+  "exact_append": "\n // PD-SECURITY-IMPAIRMENT-CAUSATION-20260924:START\n(() => {\n  'use strict';\n  const current = document.currentScript;\n  if (!current) return;\n  const path = window.location.pathname;\n  if (!/(7-junio|7-june|salida-financiada|funded-ona|ona-hotels|acreedor|lender-of-record|administrador-concursal-puerta-credito|insolvency-administrator-credit-to-title|adjudicacion-2022|2022-adjudication|cexp-(?:cadena|operation)|comunidad-instrumentalizacion|community-instrumentalisation|control-material|material-control|masa-activa|active-estate|oferta-acosta-matos|offer-liquidation-plan|garantia-deterioro|security-impairment)/i.test(path)) return;\n  const url = new URL('security-impairment-track-20260924.js?v=20260924b', current.src);\n  if (document.querySelector('script[data-security-impairment-track-loader]')) return;\n  const s = document.createElement('script');\n  s.src = url.href;\n  s.async = false;\n  s.setAttribute('data-security-impairment-track-loader', '20260924b');\n  document.head.appendChild(s);\n})();\n// PD-SECURITY-IMPAIRMENT-CAUSATION-20260924:END\n",
+  "allowed_module": "assets/security-impairment-track-20260924.js",
+  "allowed_data": "assets/data/security-impairment-track-v1.json",
+  "scope": "Append-only route-gated loader successor for GitHub's own public-loader lineage. No GitLab loader bytes are imported.",
+  "public_release_approved": false,
+  "boundaries": [
+    "GitHub and GitLab have distinct site-loader lineages and are reviewed independently.",
+    "The GitHub successor is admissible only if the current branch loader equals the GitHub main predecessor followed by exact_append.",
+    "The module renders only when the current normalized route appears in its source-controlled route data.",
+    "Branch/PR creation does not establish public deployment or a merits finding."
+  ]
+}
