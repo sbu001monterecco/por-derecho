@@ -77,3 +77,16 @@ The public page requests preservation of native account-security, moderation, re
 - Only the provider-native restriction notice and provenance/metadata support were supplied at this stage. No passport, selfie or broader Sun Park evidential dossier was sent.
 - Transmission is verified. No User Rights case ID or Article 21 merits proceeding is yet established; that remains pending User Rights' reply.
 
+
+
+## 25 September 2026 — completed INCIBE supplements and source reconciliation
+
+**Control: PD-CPA-20260925-07.** This dated addendum controls over preliminary cross-platform explanations above; historical observations are retained.
+
+GitHub's original September restriction/review and 11-Sep restoration are separate from the bounded 19-Sep browser path episode. On 22-Sep GitLab expressly confirmed automatic anti-abuse flagging, restoration and adjustment of false-positive detections; its earlier temporary-login-lock suggestion is not the current provider explanation. The later compute-quota failure remains a separate operational constraint. LinkedIn's 23-Sep policy reply is now source-located; the photo edit remains self-attributed and the specific restriction trigger remains open.
+
+The existing INCIBE consultation now has two separate sent supplements: technical correction and institutional context, each with three verified attachments. Initial case assignment is not acknowledgment of these later transmissions. No new case, subsequent receipt, malware diagnosis, common actor, merits finding or asset valuation is inferred. The wider portfolio allegation is preserved in the private institutional supplement, not limited to one fundraise or grant; private documents are not published to achieve continuity.
+
+The bounded crosswalk `ops/continuity/PLATFORM_INTEGRITY_SOURCE_DELTA_20260925.json` feeds the existing canonical institutional communications register. It individualises all eleven selected communications and six attachment occurrences. The earlier source IDs and events survive unchanged. CNMV, IG Canarias, DGFE, BOE and SNCA sources retain their distinct and limiting meanings.
+
+Private Drive/Library retrieval and hash verification are preserved under the same audit key. The public source register and both existing language routes carry the minimised derivative. This source record does not itself certify a main merge or live deployment. GitLab replay is explicitly queued in the existing dual-write register; no CI-minute purchase, quota probe or gate weakening is requested. Thread deletion state remains ORANGE until applicable cross-host and task-dependency checks are independently closed. Future work must not resend the completed correspondence merely to preserve it.
