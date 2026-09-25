@@ -77,3 +77,11 @@ Public routes:
 - RPL 3304/2025 counsel has been instructed to assess a narrowly framed supervening-evidence/preservation step. No filing receipt exists and procedural admissibility remains for counsel/court determination.
 - CNMC remains the already-submitted DSA supervisory route; no duplicate CNMC complaint is opened. AEPD/DPC/ICO remain trigger-dependent.
 
+## 25 September 2026 — Article 21 / User Rights route
+
+- The independent Article 21 DSA route has been activated through User Rights GmbH's published email fallback for requesting its dispute-resolution form.
+- The request concerns one measure only: the 23 September LinkedIn account restriction.
+- It asks User Rights either to provide the complaint form or to confirm whether the supplied material can be converted into/opened as an Article 21 dispute.
+- The submission boundary remains strict: this is a moderation/account-enforcement dispute, not a hacking/compromise allegation, and no external actor is attributed.
+- Provider-native notice/provenance evidence was supplied. User Rights receipt/case opening remains pending.
+

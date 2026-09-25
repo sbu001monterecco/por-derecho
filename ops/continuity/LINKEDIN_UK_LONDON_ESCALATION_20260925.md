@@ -88,3 +88,11 @@ The User Rights live form has not yet been submitted; its live Rules/Fee declara
 
 In parallel, current Spanish appellate counsel for RPL 3304/2025 has been asked to assess whether the LinkedIn restriction should be presented as a supervening evidential/preservation development, reserved pending the Sala's current evidence decision, or handled through another procedural route. No court filing is represented as completed.
 
+## Article 21 independent review route activated
+
+User Rights GmbH's published General Terms provide that its Article 21 dispute-resolution form may be requested by email. On 25 September that official fallback was used for the single LinkedIn account-restriction decision.
+
+The request asks User Rights to provide the complaint form or confirm whether the supplied information can be converted into/opened as an Article 21 dispute. It expressly avoids hacking/account-compromise framing and does not attribute the restriction to any external actor.
+
+The provider-native restriction notice and provenance/metadata support were supplied. No identity-document copy or broader Sun Park evidential dossier was sent. Transmission is verified; a User Rights case ID and formal merits proceeding remain pending.
+
