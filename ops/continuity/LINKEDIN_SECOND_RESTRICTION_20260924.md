@@ -9,6 +9,13 @@ Gil Marer alleges that repeated LinkedIn and other platform events may form part
 
 **Proof rule:** repetition ≠ proof; chronology ≠ causation; incentive ≠ participation; a platform restriction ≠ proof of abusive reporting.
 
+## 22 September 2026 — profile-change clarification
+
+- Provider fact: LinkedIn sent a security alert stating that the profile photo had been changed at 13:51 GMT via Android, with provider-reported approximate location Kuwait City, Kuwait.
+- Account-holder statement: Gil Marer states that he made that profile-photo change himself and reports VPN use. The alert is therefore not evidence of an unauthorised edit or another actor.
+- The VPN is a possible explanation for the approximate provider location, not a provider-confirmed explanation. LinkedIn-native session/IP/risk records remain necessary to establish the technical context.
+- This clarification does not resolve the separate question of what triggered the 23 September restriction.
+
 ## Visual
 - Asset: `assets/linkedin-icon-20260924.svg`
 - Embedded JPEG crop SHA-256: `6c67de9ce091de79474acc4e546b5cb1e58249741d17625d77e3925889ab36b6`
