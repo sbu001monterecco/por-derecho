@@ -138,3 +138,17 @@ The following are selected jurisdictional and institutional sources, not a ranki
 - **S7 — FATF, Operational Issues: Financial Investigations Guidance:** documented movement of money, origin, beneficiaries, timing and location; investigative techniques depend on domestic legal authority. HTML guidance overview inspected; no claim to have reviewed every page of its linked report. https://www.fatf-gafi.org/en/publications/Methodsandtrends/Operationalissues-financialinvestigationsguidance.html
 
 The forty mechanism names, twelve process steps, software checks and metrics are the project's operational design. No empirical detection accuracy or complete coverage of all possible deceptive practices is claimed.
+
+## 9. Protective-origin / causal-role-reversal context check — 25 Sep 2026
+
+When an adverse insolvency or Calificación proposition is reviewed for context integrity, restore the **causal origin** as well as the quoted paragraph.
+
+A later statement may be literally accurate yet materially incomplete if it begins after the lender-enforcement / protective-filing origin, excludes substantial net-asset context while implying economic worthlessness, omits contemporaneous viability/recapitalisation/funded-exit work, or presents a downstream liquidation/loss result as if it proves the incoming perimeter's original intent.
+
+For these cases add the comparison:
+
+`starting economic/legal condition → protective act → positive-agency/rescue evidence → intervening actor acts/omissions → later adverse proposition → invited causal inference → restored causal context → result`.
+
+This is an extension of CI-013 chronology truncation, CI-015 cause/effect reversal, CI-016 benefit-as-causation risk and CI-029 fragmentation. It does not predetermine that the project-side causal account is correct.
+
+Controlling cross-reference: `PD-PROTECTIVE-ORIGIN-ROLE-REVERSAL-20260925-01`.

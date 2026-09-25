@@ -726,3 +726,16 @@ Every substantive assistant response must end with exactly one compact thread-sa
 A new substantive thread defaults to ORANGE until current evidence supports another state. RED overrides ORANGE whenever deletion would cause material loss, pause/orphan an active automation/task, lose the only usable source/artifact/recovery instruction, or interrupt an external action whose receipt/state is not preserved elsewhere. GREEN requires independent reconstructability, durable propagation/readback, no chat-only material and no chat-bound active operation.
 
 The cue is not proof and does not replace the universal deletion-safety protocol. Recompute it after material source, repository, Drive, automation, filing/send/publication or preservation-state changes. If verification is unavailable, remain ORANGE unless a RED trigger is known. Do not omit the cue merely because the user did not ask about deletion safety.
+
+## Protective insolvency origin and causal role-reversal lens
+
+For every material analysis of Concurso 36/2012 origin, Calificación causation, alleged debtor misconduct, estate deterioration, liquidation, asset/income displacement or recovery, apply `governance/PROTECTIVE_INSOLVENCY_ORIGIN_ROLE_REVERSAL_25SEP2026.md` and `assets/data/protective-insolvency-origin-role-reversal-v1.json`.
+
+- Do not treat entry into insolvency as a presumption that the incoming shareholder/management perimeter caused the economic harm.
+- Start from the verified 2012 lender-enforcement / auction / defensive-filing sequence and keep balance-sheet net asset value separate from the historical liquidity-based insolvency test.
+- Retrieve positive-agency evidence with the same diligence as adverse evidence: viability, creditor arrangement, recapitalisation, refinancing, operator, sale and funded-exit work.
+- Treat `money in, never money out` as an auditable attributed proposition until the complete payer→recipient→instrument→bank debit/credit→accounting→ultimate-use ledger is reconstructed.
+- For every adverse Calificación proposition, run the mirror question: which actor or event actually caused, aggravated, prevented cure of, benefited from or failed to mitigate the alleged loss?
+- Keep Montelanza/Molina-linked dissidents/representatives, the later Acosta Matos/CAM perimeter, the Insolvency Administrator and judicial actors legally and evidentially distinct. Functional convergence never transfers knowledge, intent or liability.
+- Formal `calificación culpable` is not a free-standing guilt label for judges or unrelated third parties. Keep formal insolvency classification, criminal liability, professional discipline, civil liability and judicial accountability on their correct routes.
+- Preserve the strongest contrary evidence, including genuine debtor-side failures if proved. Role reversal is a test, not a predetermined result.
