@@ -614,7 +614,8 @@
           "assets/actors/jose-daniel-acosta-matos-user-supplied-07sep2026.jpg",
           "assets/actors/laura-patricia-acosta-matos-user-supplied-07sep2026.jpg",
           "assets/actors/fmmm-shaila-antonio-family-source-20260921.jpg"
-        ]
+        ],
+        "asset_map": "assets/composites/five-private-actors-true-faces-20260925.asset-map.json"
       },
       "storage_mode": "repository-byte-locked",
       "publication_boundary": "Identity/reference image only. Inclusion does not establish conduct, knowledge, coordination, wrongdoing, causation or liability."
