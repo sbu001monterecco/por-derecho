@@ -36,3 +36,12 @@ LinkedIn is invited to consider a persistent public-interest / repeated-abusive-
 Public routes:
 - `/en/linkedin-second-restriction-evidence-2026/`
 - `/es/linkedin-segundo-episodio-restriccion-2026/`
+
+## 25 September 2026 — provider state
+
+- Appeal case **260923-029467** remains open. LinkedIn Customer Support states that the follow-up was forwarded to another group for additional review/advice and that additional research may be required; it asked that no additional cases be opened meanwhile.
+- This is a provider process statement, not a finding about cause, merits, external reporting or any named actor.
+- Gil Marer has told LinkedIn that renewed Persona identity verification with his UK passport was successful. Restoration remains pending.
+- Existing support and privacy/preservation threads were supplemented with a UK relationship-and-urgency escalation and source-controlled evidential context; no duplicate case was created.
+- Because LinkedIn / Por Derecho material is already relevant to RPL 3304/2025, the preservation request expressly distinguishes user-initiated content changes from LinkedIn-imposed restriction or visibility changes.
+- See `ops/continuity/LINKEDIN_UK_LONDON_ESCALATION_20260925.md`.

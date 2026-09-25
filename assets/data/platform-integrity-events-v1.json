@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.platform-integrity-events.v1",
   "control_id": "PD-PLATFORM-INTEGRITY-20260923-01",
-  "as_of": "2026-09-23",
+  "as_of": "2026-09-25",
   "publication_boundary": "public-safe summaries only; no authentication URLs, provider message IDs, private IP/session data or reporter identities",
   "proof_rule": "motive/incentive is not attribution; chronology is not causation; provider-native records required",
   "events": [
@@ -68,6 +68,22 @@
       "status": "BOUNDED_ACCESS_PATH_EVENT",
       "summary": "User-facing browser/account access path reported blocked while authenticated integration, repository API and GitHub Pages remained operational.",
       "attribution": "cause, scope and duration of user-facing block not established"
+    },
+    {
+      "id": "PD-PLAT-LI-20260925-REVIEW",
+      "platform": "LinkedIn",
+      "date": "2026-09-25",
+      "status": "PROVIDER_STATEMENT_OPEN",
+      "summary": "Appeal case 260923-029467 remains open; LinkedIn Customer Support states that the member follow-up was forwarded to another group for additional review/advice and may require additional research.",
+      "attribution": "process state confirmed; trigger, external reporting and causation not established"
+    },
+    {
+      "id": "PD-PLAT-LI-20260925-UKESC",
+      "platform": "LinkedIn",
+      "date": "2026-09-25",
+      "status": "OUTBOUND_PRESERVATION_AND_RELATIONSHIP_ESCALATION",
+      "summary": "Existing appeal/support and privacy/preservation threads were supplemented with UK-business relationship context, litigation-preservation requirements, source/trigger questions and a post-restoration paid-customer intention; no duplicate support case was created.",
+      "attribution": "outbound request only; no external actor or causal attribution"
     }
   ],
   "connected_routes": {
