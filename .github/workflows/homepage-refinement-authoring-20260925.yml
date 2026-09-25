@@ -53,23 +53,17 @@ jobs:
           from pathlib import Path
           p=Path('.maintenance-homepage/browser.py');s=p.read_text()
           old="page = context.new_page(); page.set_default_timeout(20000)"
-          new="page = context.new_page(); page.set_default_timeout(20000)\n                page_errors = []\n                page.on('pageerror', lambda e: page_errors.append(str(e)))"
+          new=old+'\n'+' '*16+"page_errors = []"+'\n'+' '*16+"page.on('pageerror', lambda e: page_errors.append(str(e)))"
           assert old in s;s=s.replace(old,new)
           old="search.locator('input').fill('Acosta')"
-          new="""search.locator('input').fill('Acosta')
-                        assert search.locator('input').input_value() == 'Acosta', 'Real input lost text'
-                        assert search.locator('input').evaluate('(e)=>document.activeElement===e'), 'Search loses keyboard focus'
-                        search.locator('input').fill('')
-                        search.locator('input').press_sequentially('Acosta', delay=100)
-                        page.wait_for_timeout(300)
-                        assert search.locator('input').input_value() == 'Acosta', 'Sequential typing was interrupted'
-                        assert search.locator('input').evaluate('(e)=>document.activeElement===e'), 'Typed query lost focus'"""
+          added=["assert search.locator('input').input_value() == 'Acosta', 'Real input lost text'", "assert search.locator('input').evaluate('(e)=>document.activeElement===e'), 'Search loses keyboard focus'", "search.locator('input').fill('')", "search.locator('input').press_sequentially('Acosta', delay=100)", "page.wait_for_timeout(300)", "assert search.locator('input').input_value() == 'Acosta', 'Sequential typing was interrupted'", "assert search.locator('input').evaluate('(e)=>document.activeElement===e'), 'Typed query lost focus'"]
+          new='\n'.join([old]+[' '*24+x for x in added])
           assert old in s;s=s.replace(old,new)
           old="row.update(private_cards=5, institution_cards=2, scope_visible=True, navigation_preserved=True, required_images_loaded=True)"
-          new="assert not page_errors, 'Uncaught runtime errors: ' + '; '.join(page_errors)\n                    "+old+"\n                    row['search_typing_and_focus'] = 'PASS' if js else 'NOT_APPLICABLE'\n                    row['runtime_errors'] = page_errors"
+          new="assert not page_errors, 'Uncaught runtime errors: ' + '; '.join(page_errors)"+'\n'+' '*20+old+'\n'+' '*20+"row['search_typing_and_focus'] = 'PASS' if js else 'NOT_APPLICABLE'"+'\n'+' '*20+"row['runtime_errors'] = page_errors"
           assert old in s;s=s.replace(old,new)
-          p.write_text(s)
-          Path('review/acceptance-browser.py').write_text(s)
+          compile(s,str(p),'exec')
+          p.write_text(s);Path('review/acceptance-browser.py').write_text(s)
           PY
       - name: Render all sixteen cases with real typing after legacy scripts settle
         run: python3 .maintenance-homepage/browser.py "$GITHUB_WORKSPACE/site" "$GITHUB_WORKSPACE/review"
