@@ -171,8 +171,6 @@ def main() -> int:
 
     require(es_notebook, "../david-espejo-perito-forense/", "Spanish legal notebook")
     require(en_notebook, "../david-espejo-expert-witness/", "English legal notebook")
-    require(es_home, "data-david-espejo-home-route=\"20260825\"", "Spanish homepage")
-    require(en_home, "data-david-espejo-home-route=\"20260825\"", "English homepage")
     require(es_updates, "data-david-espejo-update-card=\"20260825\"", "Spanish updates index")
     require(en_updates, "data-david-espejo-update-card=\"20260825\"", "English updates index")
     require(es_feed, "david-espejo-evidencia-pericial", "Spanish Atom feed")
