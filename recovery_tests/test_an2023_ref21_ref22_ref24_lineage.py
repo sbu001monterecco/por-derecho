@@ -19,7 +19,7 @@ def test_an2023_manifest_and_source_identity():
     assert m["source"]["source_pdf_sha512"]=="2c35052af7f869dfb13ca8593552a6997ee9f1f83a09299bcee883345482ae63b7502f76d6e85873b4b80c1b745d7a3c5797762400410e33c897140b9c36c2ab"
     private=ROOT/m["repositories"]["gitlab_private"]["verbatim_master_path"]
     if private.exists():
-        text=private.read_text(encoding="utf-8")
+        text=private.read_bytes().decode("utf-8")
         assert len(text)==m["source"]["extracted_verbatim_chars"]
         nums=[int(x) for x in re.findall(r"Página\s+(\d+)\s+de\s+88",text)]
         assert nums==list(range(1,89))
