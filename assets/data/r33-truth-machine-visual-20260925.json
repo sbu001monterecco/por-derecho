@@ -1,0 +1,182 @@
+{
+  "schema": "por-derecho.r33-truth-machine-visual.v1",
+  "control": "PD-R33-TRUTH-MACHINE-20260925-01",
+  "generated_from": {
+    "document_id": "C36-SPECIALIST-R33",
+    "native_pdf_sha256": "5e0728185cf9b686abd723497d2a53a2656a5e0de4d323a734ed02880eb1d711",
+    "private_v3_case_sha256": "ad3b9531986446f73b1bc39e7b5baca2bedb1efdeb8ece06b7175008655fc2c6"
+  },
+  "structure": {
+    "pages": 22,
+    "blocks": 206,
+    "statement_propositions": 276,
+    "paragraph_composites": 206,
+    "review_records": 482
+  },
+  "source_integrity": {
+    "native_hash_bound": true,
+    "pages_represented": "22/22",
+    "preserved_review_anchors": "482/482",
+    "statement_scan": "276/276"
+  },
+  "provisional_v3_statement_states": {
+    "UNRESOLVED": 200,
+    "RHETORICAL_OR_LEGAL": 64,
+    "PARTIAL": 10,
+    "SUPPORTED": 2
+  },
+  "candidate_scan": {
+    "statements_with_one_or_more_markers": 179,
+    "statement_denominator": 276,
+    "candidate_load_percent": 64.9,
+    "marker_instances": 271,
+    "rules": {
+      "CI-001": {
+        "label": "Exact quote/context comparison",
+        "count": 57
+      },
+      "CI-025": {
+        "label": "Actor/capacity separation",
+        "count": 56
+      },
+      "CI-012": {
+        "label": "Quantifier/generalisation",
+        "count": 56
+      },
+      "CI-016": {
+        "label": "Causation bridge",
+        "count": 41
+      },
+      "CI-007": {
+        "label": "Recontextualisation/context restoration",
+        "count": 27
+      },
+      "CI-014": {
+        "label": "Knowledge timing",
+        "count": 15
+      },
+      "CI-034": {
+        "label": "Numeric precision",
+        "count": 13
+      },
+      "CI-019": {
+        "label": "Character attack vs proposition",
+        "count": 4
+      },
+      "CI-021": {
+        "label": "Procedural/finality state",
+        "count": 2
+      }
+    },
+    "pages": {
+      "1": {
+        "candidates": 5,
+        "propositions": 10
+      },
+      "2": {
+        "candidates": 5,
+        "propositions": 5
+      },
+      "3": {
+        "candidates": 15,
+        "propositions": 16
+      },
+      "4": {
+        "candidates": 33,
+        "propositions": 36
+      },
+      "5": {
+        "candidates": 9,
+        "propositions": 13
+      },
+      "6": {
+        "candidates": 3,
+        "propositions": 10
+      },
+      "7": {
+        "candidates": 6,
+        "propositions": 10
+      },
+      "8": {
+        "candidates": 5,
+        "propositions": 14
+      },
+      "9": {
+        "candidates": 4,
+        "propositions": 14
+      },
+      "10": {
+        "candidates": 6,
+        "propositions": 10
+      },
+      "11": {
+        "candidates": 6,
+        "propositions": 10
+      },
+      "12": {
+        "candidates": 9,
+        "propositions": 12
+      },
+      "13": {
+        "candidates": 10,
+        "propositions": 16
+      },
+      "14": {
+        "candidates": 8,
+        "propositions": 14
+      },
+      "15": {
+        "candidates": 10,
+        "propositions": 10
+      },
+      "16": {
+        "candidates": 7,
+        "propositions": 8
+      },
+      "17": {
+        "candidates": 4,
+        "propositions": 11
+      },
+      "18": {
+        "candidates": 7,
+        "propositions": 12
+      },
+      "19": {
+        "candidates": 7,
+        "propositions": 8
+      },
+      "20": {
+        "candidates": 9,
+        "propositions": 15
+      },
+      "21": {
+        "candidates": 5,
+        "propositions": 13
+      },
+      "22": {
+        "candidates": 6,
+        "propositions": 9
+      }
+    }
+  },
+  "source_complete_context_signoffs": 0,
+  "signoff_denominator": 482,
+  "worked_examples": [
+    {
+      "page": 2,
+      "type": "false-positive control",
+      "summary": "The filing itself says the 2023 classification judgment is under appeal; citing the first-instance judgment is not by itself a finality inversion."
+    },
+    {
+      "page": 3,
+      "type": "context-restoration target",
+      "summary": "Hostile characterisations appear beside a reproduced project screenshot that visibly says matters remain 'No probado todavía'; later summaries should preserve that proof boundary."
+    },
+    {
+      "page": 5,
+      "type": "generalisation target",
+      "summary": "The 2020 withdrawal/apology is real adverse evidence. It does not by itself establish a common reason for every lawyer transition; the v3 review records that broader causal inference as unsupported/incomplete."
+    }
+  ],
+  "boundary": "Candidate markers are triage prompts and review-load measures, not findings of falsity, deception, intent, credibility, criminality, guilt or liability. Existing adverse evidence and lawful alternatives remain visible."
+}
