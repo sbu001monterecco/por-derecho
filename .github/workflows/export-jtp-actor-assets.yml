@@ -1,0 +1,43 @@
+name: Export exact JTP actor assets
+
+on:
+  push:
+    branches:
+      - publication/jtp-real-actor-assets-20260925
+    paths:
+      - 'assets/actors/**'
+      - '.github/workflows/export-jtp-actor-assets.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Verify exact approved portrait blobs
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git hash-object assets/actors/francisco-de-borja-rodriguez-batllori.jpg)" = "f2c3bfd6628e043940f58b4f4c76ffdba735bb57"
+          test "$(git hash-object assets/actors/jose-daniel-acosta-matos-user-supplied-07sep2026.jpg)" = "8cb92bebcdfc67c7b7f3dd585f01482374be5fa9"
+          test "$(git hash-object assets/actors/laura-patricia-acosta-matos-user-supplied-07sep2026.jpg)" = "b05f094b6dd392664b7d2c94b6f079207eee4106"
+          test "$(git hash-object assets/actors/alberto-lopez-villarrubia.jpg)" = "52487a2fb01b2df6b231938668c9f858544fecc5"
+          test "$(git hash-object assets/actors/juan-tomas-parrilla-canonical-20260923.jpg)" = "36b292e8b28a9c3fe01ee06a0f669dc3ce566d0b"
+          mkdir -p /tmp/jtp-actors
+          cp assets/actors/francisco-de-borja-rodriguez-batllori.jpg /tmp/jtp-actors/
+          cp assets/actors/jose-daniel-acosta-matos-user-supplied-07sep2026.jpg /tmp/jtp-actors/
+          cp assets/actors/laura-patricia-acosta-matos-user-supplied-07sep2026.jpg /tmp/jtp-actors/
+          cp assets/actors/alberto-lopez-villarrubia.jpg /tmp/jtp-actors/
+          cp assets/actors/juan-tomas-parrilla-canonical-20260923.jpg /tmp/jtp-actors/
+          sha256sum /tmp/jtp-actors/* | sort > /tmp/jtp-actors/SHA256SUMS.txt
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: jtp-exact-approved-actor-assets
+          path: /tmp/jtp-actors/
+          if-no-files-found: error
+          retention-days: 7
