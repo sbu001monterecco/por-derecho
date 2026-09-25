@@ -3,7 +3,7 @@
   const current = d.currentScript;
   const path = location.pathname.replace(/\/+$/, '/');
   const es = /\/es\//.test(path);
-  const isHome = /\/(en|es)\/$/.test(path);
+  const isHome = /\/en\/homepage-archive-20260925\.html\/?$/.test(path)\n    || /\/es\/portada-archivo-20260925\.html\/?$/.test(path);
   const isCanonical = /\/en\/de-facto-administration-community-ac\/$/.test(path)
     || /\/es\/administracion-de-hecho-comunidad-ac\/$/.test(path);
   const isPwc = /\/(en|es)\/pwc-canarias-carlos-saavedra-sun-park\/$/.test(path);
