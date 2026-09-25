@@ -53,3 +53,19 @@ Every reuse of the trio visual must retain the controlling provenance: Patricia 
 Every reuse must also preserve the visible boundary that the photograph establishes identity/relationship context only and does not establish authority, coordination, knowledge, intent or liability. A shared photograph, family relationship, company office, attendance or later economic relationship does not transfer conduct, knowledge, authority, causation, culpability or responsibility between actors.
 
 The Shaila and Antonio individual records may use clearly labelled layout crops from this same identified source derivative. The FMMM individual record retains its existing canonical individual portrait. No generated or inferred face may be substituted for any of the five actors, and automated rebuilding must not restore a “portrait awaiting verification” state where these controlled assets are available.
+
+## Explicit homepage supersession — 25 September 2026
+
+Gil Marer has now expressly authorised the homepage architecture to change from a detailed front-page dossier into an orientation and routing layer. This later instruction satisfies the earlier requirement for specific authorization to remove or demote the five-actor presentation from the bilingual root homepages.
+
+Effective rule:
+
+- the detailed five-private-actor + Insolvency Administrator + Magistrate-Judge presentation is no longer required on `/en/` or `/es/`;
+- it remains preserved on the existing bilingual direct dossiers and accountability routes identified above;
+- the root homepages should prioritise orientation, three-path routing (Recovery / Future / Por Derecho), the 60-second case explanation, evidential-status discipline and current updates;
+- removing the detailed actor component from the root homepages does **not** withdraw, dilute, settle or adjudicate any allegation or evidence proposition;
+- source-controlled images, provenance, proof boundaries and person-by-person attribution remain controlling wherever the detailed actor presentation is used;
+- automated publication must not reinsert the detailed actor dossier onto the homepage merely because this historical lock once required it.
+
+This section supersedes only the **front-page prominence requirement**. The direct-route preservation, provenance, attribution and evidence-discipline requirements remain in force.
+
