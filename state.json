@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 50,
   "owner": "1908:827d7c40010a11c724b5e93718682c28bbe481f8",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 1908,
   "base_sha": "d85dbf9b520dca7dd1fae3d12e6f963ca988dbc3",
   "candidate_sha": "827d7c40010a11c724b5e93718682c28bbe481f8",
@@ -2654,6 +2654,77 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 1908,
+      "candidate_sha": "827d7c40010a11c724b5e93718682c28bbe481f8",
+      "at": "2026-09-25T23:07:31.789578Z",
+      "merge_sha": "1c268449ec05c95ec32954c22fb282d317271a24",
+      "pages_run_id": 36199357566,
+      "exact_matches": [
+        {
+          "path": "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+          "sha256": "c40bb8fb747416375daf211ecd1d2c1bc63c1ab3ff787b8158f42bf7a9ea0129",
+          "bytes": 686844
+        },
+        {
+          "path": "assets/data/institutional-communications-register-v1.json",
+          "sha256": "c29f35bf9ead9bfe51e5ce4475e846d2e6d26512bb55a4aa73ea5482ce2a4095",
+          "bytes": 1857725
+        },
+        {
+          "path": "assets/data/platform-integrity-events-v1.json",
+          "sha256": "d59371f638e21b71529ba5092d2195a14ce5bcec75a7c323467fc72c9dfa5c21",
+          "bytes": 23518
+        },
+        {
+          "path": "assets/data/redsara-age-filings-register-v1.json",
+          "sha256": "9a2c115f32e23e1815e627512523b0ca34b5657f6ff947a9cf5a41111bfd19c4",
+          "bytes": 963739
+        },
+        {
+          "path": "en/index.html",
+          "sha256": "dcfb094898aeba75717da6afad71be72150c031e03e436f27bcf6503ad54b5c3",
+          "bytes": 226845
+        },
+        {
+          "path": "en/platform-integrity-evidence/index.html",
+          "sha256": "cff0fbd49f9493dfde5dd06aaa601656be05ab43d92d93e5b2806c91b8899f02",
+          "bytes": 28629
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "dab16c882053efb40f8c07d1332b6af5fe5d95f8764a6aed867ef8a52573b8d7",
+          "bytes": 235663
+        },
+        {
+          "path": "es/integridad-plataformas-evidencia/index.html",
+          "sha256": "2503eb618d7dc22f77ca979d3ce3c6536d45eb1e31f72547211b70a9c88f287a",
+          "bytes": 29525
+        },
+        {
+          "path": "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json",
+          "sha256": "b818f28b6637241cf3b10694ccc01e03ad153bfd9f770953d136891873cb62c9",
+          "bytes": 6662
+        },
+        {
+          "path": "ops/continuity/GITHUB_DRIVE_GITLAB_RECOVERY_QUEUE_20260921.json",
+          "sha256": "8c4ab3a5f8ef1b09715dd71a742cb4947cbf98dba2433fc2e2f5966ee3d6a5b7",
+          "bytes": 9896
+        },
+        {
+          "path": "ops/continuity/PLATFORM_INTEGRITY_LINKEDIN_INCIDENT_20260923.md",
+          "sha256": "3b0360290a01c9364e5ffa640eae907aad596a7243c7a45162d4c6576888a72b",
+          "bytes": 12521
+        },
+        {
+          "path": "ops/continuity/PLATFORM_INTEGRITY_SOURCE_DELTA_20260925.json",
+          "sha256": "8ec1d741addac91d43bfaa2702f0ddc37d170214c179909e6a8fdc50a2838691",
+          "bytes": 14083
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -2696,7 +2767,79 @@
         "pages_run_id": 36199357566,
         "merge_sha": "1c268449ec05c95ec32954c22fb282d317271a24"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-25T23:07:31.789523Z",
+      "evidence": {
+        "merge_sha": "1c268449ec05c95ec32954c22fb282d317271a24",
+        "pages_run_id": 36199357566,
+        "exact_matches": [
+          {
+            "path": "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+            "sha256": "c40bb8fb747416375daf211ecd1d2c1bc63c1ab3ff787b8158f42bf7a9ea0129",
+            "bytes": 686844
+          },
+          {
+            "path": "assets/data/institutional-communications-register-v1.json",
+            "sha256": "c29f35bf9ead9bfe51e5ce4475e846d2e6d26512bb55a4aa73ea5482ce2a4095",
+            "bytes": 1857725
+          },
+          {
+            "path": "assets/data/platform-integrity-events-v1.json",
+            "sha256": "d59371f638e21b71529ba5092d2195a14ce5bcec75a7c323467fc72c9dfa5c21",
+            "bytes": 23518
+          },
+          {
+            "path": "assets/data/redsara-age-filings-register-v1.json",
+            "sha256": "9a2c115f32e23e1815e627512523b0ca34b5657f6ff947a9cf5a41111bfd19c4",
+            "bytes": 963739
+          },
+          {
+            "path": "en/index.html",
+            "sha256": "dcfb094898aeba75717da6afad71be72150c031e03e436f27bcf6503ad54b5c3",
+            "bytes": 226845
+          },
+          {
+            "path": "en/platform-integrity-evidence/index.html",
+            "sha256": "cff0fbd49f9493dfde5dd06aaa601656be05ab43d92d93e5b2806c91b8899f02",
+            "bytes": 28629
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "dab16c882053efb40f8c07d1332b6af5fe5d95f8764a6aed867ef8a52573b8d7",
+            "bytes": 235663
+          },
+          {
+            "path": "es/integridad-plataformas-evidencia/index.html",
+            "sha256": "2503eb618d7dc22f77ca979d3ce3c6536d45eb1e31f72547211b70a9c88f287a",
+            "bytes": 29525
+          },
+          {
+            "path": "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json",
+            "sha256": "b818f28b6637241cf3b10694ccc01e03ad153bfd9f770953d136891873cb62c9",
+            "bytes": 6662
+          },
+          {
+            "path": "ops/continuity/GITHUB_DRIVE_GITLAB_RECOVERY_QUEUE_20260921.json",
+            "sha256": "8c4ab3a5f8ef1b09715dd71a742cb4947cbf98dba2433fc2e2f5966ee3d6a5b7",
+            "bytes": 9896
+          },
+          {
+            "path": "ops/continuity/PLATFORM_INTEGRITY_LINKEDIN_INCIDENT_20260923.md",
+            "sha256": "3b0360290a01c9364e5ffa640eae907aad596a7243c7a45162d4c6576888a72b",
+            "bytes": 12521
+          },
+          {
+            "path": "ops/continuity/PLATFORM_INTEGRITY_SOURCE_DELTA_20260925.json",
+            "sha256": "8ec1d741addac91d43bfaa2702f0ddc37d170214c179909e6a8fdc50a2838691",
+            "bytes": 14083
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-25T23:07:27.067593Z"
+  "updated_at": "2026-09-25T23:07:31.789523Z"
 }
