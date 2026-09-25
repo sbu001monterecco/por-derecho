@@ -102,7 +102,8 @@
     }
     if (sanTelmo) {
       sanTelmo.classList.add('shell');
-      placeAfter(sanTelmo, publicAnchor);
+      if (sourceFunds) placeAfter(sanTelmo, sourceFunds || fullRecord);
+      else placeAfter(sanTelmo, publicAnchor);
       sanTelmo.dataset.audienceProtectedSanTelmo = '20260823';
     }
 
