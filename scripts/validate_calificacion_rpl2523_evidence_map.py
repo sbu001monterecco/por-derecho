@@ -94,22 +94,7 @@ def main() -> int:
         body = read(path)
         if body.count('data-calificacion-misuse-thesis="featured"') != 1:
             errors.append(f"{path}: expected one statically rendered homepage thesis block")
-    homepage_markers = {
-        "es/index.html": [
-            "tesis investigativa seria y documental",
-            "calificacion-rpl-2523-mapa-prueba/",
-        ],
-        "en/index.html": [
-            "serious, document-based investigative thesis",
-            "calificacion-rpl-2523-evidence-map/",
-        ],
-    }
-    for path, markers in homepage_markers.items():
-        body = read(path)
-        for marker in markers:
-            if marker not in body:
-                errors.append(f"{path}: missing static strategic marker {marker!r}")
-
+    # Root-homepage thesis promotion superseded 25 Sep 2026; dedicated routes control.
     appeal_markers = {
         "es/concurso-36-2012-ap-seccion-4/index.html": [
             "Tres recursos para cuatro intereses apelantes",
