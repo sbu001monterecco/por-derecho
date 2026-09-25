@@ -1,0 +1,74 @@
+{
+  "schema": "por-derecho-evidence-package-v1",
+  "control_date": "2026-09-17",
+  "public_private_boundary": "public_safe_metadata_only",
+  "canonical_repository": "GitLab project 86151898 when restored; GitHub is continuity mirror",
+  "source_event": {
+    "description": "Cabildo de Lanzarote April 2026 six-ZIP production; this manifest covers three packages",
+    "contemporaneous_counsel_notice": "13-14 April 2026",
+    "native_custody": "controlled OneDrive; private locator withheld"
+  },
+  "packages": [
+    {
+      "filename": "3671_2022.zip",
+      "master_id": "LZ-CAB-019",
+      "administrative_file": "3671/2022",
+      "native_size_bytes": 356624754,
+      "native_sha256": null,
+      "native_sha256_status": "not acquired from source provider in this control",
+      "tablet_transfer_sha256": "0969a73fa7e4f74ecd581dd283c64eb1d0383212eb3172faf58e5a901042de7b",
+      "tablet_transfer_status": "structurally damaged central-directory/tail; not authoritative native hash",
+      "official_index_numbered_documents": 90,
+      "source_status": "native source exists in controlled OneDrive; front members CRC-recovered from tablet transfer; selected later PDFs independently preserved",
+      "public_raw_binary": false
+    },
+    {
+      "filename": "2984_2023.zip",
+      "master_id": "LZ-CAB-020",
+      "administrative_file": "2984/2023",
+      "size_bytes": 33557662,
+      "sha256": "c1f596511d95fd62ebdc4bf79e27e1a553a1a559177ac3eb06650524e53c76d5",
+      "zip_members": 14,
+      "zip_integrity": "passed",
+      "public_raw_binary": false
+    },
+    {
+      "filename": "17070_2023.zip",
+      "master_id": "LZ-CAB-021",
+      "administrative_file": "17070/2023",
+      "size_bytes": 25698372,
+      "sha256": "78d638e6f06f12e25384f7d237abe01ef538df5030a8f7f86cdbe4cefb158176",
+      "zip_members": 21,
+      "zip_integrity": "passed",
+      "public_raw_binary": false
+    }
+  ],
+  "bounded_findings": {
+    "3671_original_request": "220 units / 660 places",
+    "3671_cabildo_requirement": "specific authority plus deeds for own units and enabling titles from owners of remaining units",
+    "3671_august_response": "206 units / 618 places",
+    "3671_matrix": {
+      "rows": 206,
+      "camsa_rows": 205,
+      "other_owner_rows": 1,
+      "unique_apartment_labels": 205,
+      "duplicated_apartment_label": "159",
+      "distinct_labels_absent_when_compared_to_220_unit_schedule": ["501","505","507","511","551","559","561","603","701","708","808","901","909","910","914"]
+    },
+    "2984": "HNT sought property/exploitation titularity and MYND name; Cabildo required further title/classification material; no final merits act in reviewed package",
+    "17070": "HNT re-filed holder/exploitation/name change with explicit instruction not to modify capacity/category; RGT recorded HNT/MYND on 18 October 2023 and Cabildo notified HNT/Yaiza"
+  },
+  "non_findings": [
+    "No conclusion that CAMSA/HNT owned every Sun Park finca",
+    "No conclusion that every owner validly authorised all-unit exploitation or works",
+    "No conclusion that differing 18 February 2022 certificates were fabricated",
+    "No conclusion that RGT titularity determines civil title",
+    "No conclusion of criminal or patrimonial liability by Cabildo or any actor"
+  ],
+  "raw_binary_withholding_reasons": [
+    "personal identifiers/source evidence require public-private review",
+    "repository governance prohibits publishing raw private evidence merely for preservation",
+    "3671_2022.zip exceeds ordinary GitHub file-size limits",
+    "controlled native custody is separate from public continuity repository"
+  ]
+}
