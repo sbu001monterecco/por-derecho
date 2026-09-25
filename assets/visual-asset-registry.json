@@ -588,6 +588,36 @@
         "changed_pixels_outside_authorised_boxes": 0,
         "jtp_region_unchanged": true
       }
+    },
+    "composite.five-private-actors-true-faces-20260925": {
+      "subject_type": "document",
+      "canonical_name": "Five private actors · source-backed true-faces identity composite",
+      "short_label": "Five private actors · true faces",
+      "path": "assets/actors/five-private-actors-true-faces-20260925.svg",
+      "git_blob_sha": "6e783f3b7dcd8eed4e1082a5ea0f6ee701f014fc",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Deterministic SVG composition using only the canonical user-mapped JDAM and LPAM portraits and the preserved source-identified FMMM–Shaila–Antonio family photograph. No generated, substituted or facial-recognition-derived face is used.",
+      "approved_contexts": [
+        "five private actors identity/reference composite",
+        "NEXUS 36 / Ref.21 private-actor identity context",
+        "source-controlled investigative/editorial visual"
+      ],
+      "alt_en": "Five private actors source-backed identity composite: José Daniel Acosta Matos, Laura Patricia Acosta Matos, Francisco Mario Matos Matas, Shaila María Cogolludo Ramos and Antonio Cogolludo Rojas",
+      "alt_es": "Composición de identidad con rostros de fuente controlada de cinco actores privados: José Daniel Acosta Matos, Laura Patricia Acosta Matos, Francisco Mario Matos Matas, Shaila María Cogolludo Ramos y Antonio Cogolludo Rojas",
+      "source_provenance": {
+        "control_id": "PD-SP-FIVE-TRUE-FACES-20260925-01",
+        "manifest": "assets/data/five-private-actors-true-faces-20260925.json",
+        "generated_faces": false,
+        "facial_recognition_used": false,
+        "ai_enhanced_family_derivative_used": false,
+        "source_paths": [
+          "assets/actors/jose-daniel-acosta-matos-user-supplied-07sep2026.jpg",
+          "assets/actors/laura-patricia-acosta-matos-user-supplied-07sep2026.jpg",
+          "assets/actors/fmmm-shaila-antonio-family-source-20260921.jpg"
+        ]
+      },
+      "storage_mode": "repository-byte-locked",
+      "publication_boundary": "Identity/reference image only. Inclusion does not establish conduct, knowledge, coordination, wrongdoing, causation or liability."
     }
   },
   "rejected_or_prohibited_mappings": [
