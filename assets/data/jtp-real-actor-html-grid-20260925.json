@@ -1,0 +1,44 @@
+{
+  "schema": "por-derecho.jtp-exact-source-actor-grid.v1",
+  "control_id": "PD-JTP-HTML-ACTOR-GRID-20260925-01",
+  "rendering_mode": "HTML_CSS_EXACT_SOURCE_GRID",
+  "actors": [
+    {
+      "key": "jtp",
+      "name": "Juan Tomás Parrilla Suárez",
+      "role_en": "Former LPB counsel",
+      "role_es": "Antiguo letrado de LPB",
+      "path": "assets/actors/juan-tomas-parrilla-canonical-20260923.jpg"
+    },
+    {
+      "key": "borja",
+      "name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "role_en": "Insolvency Administrator · Concurso 36/2012",
+      "role_es": "Administrador Concursal · Concurso 36/2012",
+      "path": "assets/actors/francisco-de-borja-rodriguez-batllori.jpg"
+    },
+    {
+      "key": "jdam",
+      "name": "José Daniel Acosta Matos",
+      "role_en": "Private actor · CAM perimeter",
+      "role_es": "Actor privado · perímetro CAM",
+      "path": "assets/actors/jose-daniel-acosta-matos-user-supplied-07sep2026.jpg"
+    },
+    {
+      "key": "lpam",
+      "name": "Laura Patricia Acosta Matos",
+      "role_en": "Private actor · CAM perimeter",
+      "role_es": "Actora privada · perímetro CAM",
+      "path": "assets/actors/laura-patricia-acosta-matos-user-supplied-07sep2026.jpg"
+    },
+    {
+      "key": "alberto",
+      "name": "Alberto López Villarrubia",
+      "role_en": "Magistrate-Judge · judicial lane",
+      "role_es": "Magistrado-Juez · vía judicial",
+      "path": "assets/actors/alberto-lopez-villarrubia.jpg"
+    }
+  ],
+  "boundary_en": "Portrait inclusion identifies actors discussed in this reader. It does not prove payment participation, knowledge, coordination, intent, liability or criminality.",
+  "boundary_es": "La inclusión del retrato identifica actores tratados en este lector. No prueba participación en pagos, conocimiento, coordinación, intención, responsabilidad ni criminalidad."
+}
