@@ -55,14 +55,17 @@ for locale in ("en","es"):
         if canonical and f'<link rel="canonical" href="{canonical}">' not in t:
             errors.append(f"{p.relative_to(ROOT)} canonical origin drift: expected {canonical}")
 
+robots=(ROOT/"robots.txt").read_text(encoding="utf-8") if (ROOT/"robots.txt").is_file() else ""
 for rel in cfg["preserved_archives"]:
     p=ROOT/rel
     if not p.is_file():
         errors.append(f"missing continuity archive: {rel}")
     else:
         t=p.read_text(encoding="utf-8")
-        if 'noindex' not in t:
-            errors.append(f"continuity archive not noindex: {rel}")
+        disallow_root=f"Disallow: /{rel}"
+        disallow_project=f"Disallow: /por-derecho/{rel}"
+        if 'noindex' not in t and disallow_root not in robots and disallow_project not in robots:
+            errors.append(f"continuity archive not excluded from indexing: {rel}")
 
 for rel in ("en/future/index.html","es/futuro/index.html"):
     if not (ROOT/rel).is_file():
