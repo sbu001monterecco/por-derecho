@@ -117,6 +117,14 @@
       "status": "COUNSEL_INSTRUCTED_NO_FILING_RECEIPT",
       "summary": "Counsel for RPL 3304/2025 was instructed to assess a narrowly framed supervening-evidence/preservation step concerning the LinkedIn restriction and provider-native evidence. No court filing or judicial receipt is claimed.",
       "attribution": "not applicable"
+    },
+    {
+      "id": "PD-PLAT-LI-20260925-ARTICLE21-USER-RIGHTS",
+      "platform": "LinkedIn",
+      "date": "2026-09-25",
+      "status": "ARTICLE21_FORM_REQUEST_SENT_CASE_ID_PENDING",
+      "summary": "User Rights GmbH's published email fallback was used to request the Article 21 dispute-resolution form or case-opening instructions for the single 23 Sep LinkedIn account restriction. The request was framed as moderation/account enforcement, not hacking, and included the provider-native restriction notice/provenance support. No User Rights case ID is yet verified.",
+      "attribution": "not applicable"
     }
   ],
   "connected_routes": {
