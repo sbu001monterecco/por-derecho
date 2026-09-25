@@ -32,3 +32,25 @@ def test_ref21_ref22_ref24_lineage_paths():
         assert (ROOT/node["living_dossier"]).exists()
         for p in node["frozen_sources"]:
             assert (ROOT/p).exists()
+
+
+FROZEN_INDEX=ROOT/"evidence/judicial/june-2026-three-track/FROZEN_INDEX.md"
+CANONICAL_CONTROLS=(
+    "data/three-track-full-digitisation-20260904.json",
+    "assets/data/control-21-22-24-continuity-v1.json",
+    "archive/THREE_TRACK_FULL_DIGITISATION_CONTROL_04SEP2026.md",
+    "scripts/validate_control_21_22_24_reader_binding.py",
+    ".github/governance/CONTROL_21_22_24_CONTINUITY_INTERLINK_PROTOCOL_04SEP2026.md",
+)
+
+def test_frozen_index_has_no_dangling_local_links():
+    text=FROZEN_INDEX.read_text(encoding="utf-8")
+    for raw in re.findall(r"\[[^\]]+\]\(([^)]+)\)", text):
+        if "://" in raw or raw.startswith("#"):
+            continue
+        target=(FROZEN_INDEX.parent/raw.split("#",1)[0]).resolve()
+        assert target.exists(), f"dangling frozen-index link: {raw}"
+
+def test_three_track_canonical_controls_are_materialized():
+    for rel in CANONICAL_CONTROLS:
+        assert (ROOT/rel).exists(), f"missing canonical continuity control: {rel}"
