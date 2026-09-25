@@ -28,8 +28,9 @@
       "sources": [
         {
           "path": "assets/data/r33-truth-machine-visual-20260925.json",
-          "github_blob_sha": "b657ef8deac0abffd02f68a72a6bf6b5814e4627",
-          "gitlab_blob_sha": "b657ef8deac0abffd02f68a72a6bf6b5814e4627"
+          "github_blob_sha": "1fb21667cca5b065f16954204ece6372c4b26e3d",
+          "gitlab_blob_sha": "1fb21667cca5b065f16954204ece6372c4b26e3d",
+          "pin_note": "Updated only because the reviewed R33 public aggregate itself changed in PD-TRUTH-METHOD-STACK-20260925-01; exact same blob on both candidate hosts."
         }
       ],
       "public_routes": {
