@@ -68,8 +68,15 @@
     "community_minutes":{"es":"/es/comunidad-instrumentalizacion/actas-2011-2022/","en":"/en/community-instrumentalisation/minutes-2011-2022/"},
     "takeover_7_june":{"es":"/es/toma-control-sun-park-7-junio-2018/","en":"/en/sun-park-takeover-7-june-2018/"},
     "identity_register":{"es":"/es/registro-identidad-materia/","en":"/en/matter-identity-registry/"},
-    "public_authority_reconstruction":{"es":"/es/reconstruccion-unitaria-autoridades-publicas/","en":"/en/public-authority-unitary-case-reconstruction/"}
+    "public_authority_reconstruction":{"es":"/es/reconstruccion-unitaria-autoridades-publicas/","en":"/en/public-authority-unitary-case-reconstruction/"},
+    "r33_source_reader":{"es":"/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/","en":"/en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/"},
+    "r33_truth_machine":{"es":"/es/r33-maquina-verdad-visual/","en":"/en/r33-truth-machine-visual/"},
+    "r33_procedural_utility":{"es":"/es/r33-maquina-verdad-visual/#utilidad-procesal-r33","en":"/en/r33-truth-machine-visual/#r33-procedural-utility","control":"PD-R33-PROCEDURAL-UTILITY-20260925-01","data":"assets/data/r33-procedural-utility-map-v1.json"},
+    "dp1956":{"es":"/es/dp-1956-2026/","en":"/en/dp-1956-2026/"},
+    "judge_supervision":{"es":"/es/concurso-36-2012-magistrado-juez/","en":"/en/insolvency-36-2012-mercantile-court-1/"},
+    "acosta_matos_perimeter":{"es":"/es/acosta-matos-perimetro/","en":"/en/acosta-matos-perimeter/"},
+    "ac_fees":{"es":"/es/concurso-36-2012-separacion-ac-honorarios/","en":"/en/insolvency-36-2012-administrator-removal-fees/"}
   },
   "search_terms": ["Borja","Rodríguez-Batllori","separación administrador concursal","RPL 3304/2025","RPL 3319/2025","Aweswell","Luchy Playa Blanca","artículo 100 TRLC","artículo 101 TRLC","Decreto 222/2026"],
-  "publication_boundary": "No raw private email, unnecessary personal data or restricted annex is exposed. Allegations and requested relief remain distinguished from judicial findings."
+  "publication_boundary": "No raw private email, unnecessary personal data or restricted annex is exposed. Allegations and requested relief remain distinguished from judicial findings. The R33 procedural-utility map connects shared evidence across removal, AC-specific, judicial-supervision and private-actor lanes without merging proceedings or transferring knowledge, intent or liability."
 }
