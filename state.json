@@ -1,13 +1,14 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 43,
-  "owner": "1841:c634363ba8fd2dbc68b78f471318085749f6d0ec",
-  "phase": "VERIFIED_FOR_SCOPE",
-  "pr": 1841,
-  "base_sha": "b88b75bfcd32e60e183a92493a5fbf29698f463a",
-  "candidate_sha": "c634363ba8fd2dbc68b78f471318085749f6d0ec",
-  "run_id": 36073551792,
-  "claimed_at": "2026-09-24T23:36:34.221050Z",
+  "fence": 44,
+  "owner": "1847:b15cea84b21434cc30a0c664eef3b12c2560c105",
+  "phase": "CLAIMED",
+  "pr": 1847,
+  "base_sha": "94660d57dfc86b2af7457eecc08c184a19f34ffc",
+  "candidate_sha": "b15cea84b21434cc30a0c664eef3b12c2560c105",
+  "run_id": 36110877984,
+  "claimed_at": "2026-09-25T08:04:10.912305Z",
+  "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
     {
       "pr": 1470,
@@ -2360,86 +2361,5 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-09-24T23:36:35.439167Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "publication-integrity",
-            "id": 107877609486,
-            "conclusion": "success"
-          },
-          {
-            "name": "PD release acceptance",
-            "id": 107877609391,
-            "conclusion": "success"
-          }
-        ],
-        "bootstrap_recovery": true
-      }
-    },
-    {
-      "phase": "MERGE_PENDING",
-      "at": "2026-09-24T23:36:37.074685Z",
-      "evidence": {
-        "pr": 1841
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-09-24T23:36:38.666387Z",
-      "evidence": {
-        "merge_sha": "30fb29238c92982c36fedd1b313feb0f37917621"
-      }
-    },
-    {
-      "phase": "DEPLOYED",
-      "at": "2026-09-24T23:36:41.012553Z",
-      "evidence": {
-        "pages_run_id": 36073398869,
-        "merge_sha": "30fb29238c92982c36fedd1b313feb0f37917621"
-      }
-    },
-    {
-      "phase": "VERIFIED_FOR_SCOPE",
-      "at": "2026-09-24T23:36:45.530471Z",
-      "evidence": {
-        "merge_sha": "30fb29238c92982c36fedd1b313feb0f37917621",
-        "pages_run_id": 36073398869,
-        "exact_matches": [
-          {
-            "path": "assets/data/jtp-fee-authority-source-close-20260924.json",
-            "sha256": "6882d5982910ec42cf8099bcafe7fba415d3c4f95ad15c8a89df6be411816074",
-            "bytes": 4106
-          },
-          {
-            "path": "en/estate-payment-counsel-independence/index.html",
-            "sha256": "d7e9e85de36382342c7b83f1db0d38bc43ffd294af13ffe013e86943dd086d8f",
-            "bytes": 42846
-          },
-          {
-            "path": "en/index.html",
-            "sha256": "d3917a91f8073c65c4a5b1e4395a0f5e10688fd09b97838ffe411e6dda42397b",
-            "bytes": 233625
-          },
-          {
-            "path": "es/index.html",
-            "sha256": "0ae46753cc4880fed0770ef0237856587cb89f0d99c56d2a91d4f6b8d7e01d63",
-            "bytes": 242931
-          },
-          {
-            "path": "es/pago-masa-independencia-defensa/index.html",
-            "sha256": "a04c55022311b7cc63d9029ac8677fb5505f006be881bbcdd052b9c96b9d538d",
-            "bytes": 44621
-          }
-        ],
-        "pending": [],
-        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
-      }
-    }
-  ],
-  "recovery_basis": "Explicit owner recovery of exact completed merge; not a retrospective exclusive-lock claim.",
-  "updated_at": "2026-09-24T23:36:45.530471Z"
+  "checkpoints": []
 }
