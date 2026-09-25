@@ -3,6 +3,42 @@
   const current = document.currentScript;
   if (!current) return;
 
+  const pagePath = location.pathname.replace(/index\.html$/, '').replace(/\/+$/, '/');
+  const isCanonicalOrientationHome = /^\/(?:por-derecho\/)?(?:en|es)\/$/.test(pagePath);
+
+  // The current homepage is intentionally a concise orientation/trust layer.
+  // Do not execute the inherited long-form dossier loader chain here. The full
+  // historical homepage runtime is preserved on the dated archive routes.
+  if (isCanonicalOrientationHome) {
+    const header = document.querySelector('.site-header');
+    const nav = header?.querySelector('.main-nav');
+    const button = header?.querySelector('.nav-toggle');
+    if (nav && button && button.dataset.psrMenuBound !== '1') {
+      button.dataset.psrMenuBound = '1';
+      const close = () => {
+        nav.classList.remove('open');
+        button.setAttribute('aria-expanded', 'false');
+      };
+      button.addEventListener('click', () => {
+        const open = !nav.classList.contains('open');
+        nav.classList.toggle('open', open);
+        button.setAttribute('aria-expanded', String(open));
+      });
+      nav.addEventListener('click', (event) => {
+        if (event.target.closest('a')) close();
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') close();
+      });
+    }
+    document.querySelectorAll('[data-current-year]').forEach((node) => {
+      node.textContent = String(new Date().getFullYear());
+    });
+    document.documentElement.dataset.homepageMode = 'orientation-v1';
+    return;
+  }
+
+
   /*
    * Compatibility marker for the inherited loader chain.
    * site-pre-matkator-8584-20260903.js transitively executes the preserved
