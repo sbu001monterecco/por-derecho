@@ -17,7 +17,7 @@ fs.mkdirSync(artifactDir, { recursive: true });
 const routes = [
   {
     language: 'en',
-    route: '/en/',
+    route: '/en/homepage-archive-20260925.html',
     required: [
       'Speaker correction.',
       'Eduardo Sánchez',
@@ -33,7 +33,7 @@ const routes = [
   },
   {
     language: 'es',
-    route: '/es/',
+    route: '/es/portada-archivo-20260925.html',
     required: [
       'Corrección de atribución.',
       'Eduardo Sánchez',
@@ -129,7 +129,7 @@ try {
         primarySourceLink: sourceMatches,
       };
 
-      const screenshotPath = path.join(artifactDir, `${target.language}-homepage-san-telmo-attribution.png`);
+      const screenshotPath = path.join(artifactDir, `${target.language}-archived-homepage-san-telmo-attribution.png`);
       await page.locator(selector).screenshot({ path: screenshotPath });
       entry.screenshot = screenshotPath;
       entry.pass = Object.values(entry.checks).every(Boolean);
