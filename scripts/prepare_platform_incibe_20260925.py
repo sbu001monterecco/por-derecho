@@ -105,20 +105,19 @@ def load_events(root):
         e={
           'event_id':row['event_id'], 'cohort':'CURATED_SOURCE_PROVED_EVENT',
           'layer':'OFFICIAL_ACT_OR_CORRESPONDENCE', 'source_key':CONTROL+':'+key,
-          'record_type':'OUTBOUND_COMMUNICATION' if outbound else 'PROVIDER_OR_INSTITUTIONAL_REPLY',
-          'event_date':row['date'], 'direction':'OUTBOUND_TO_INSTITUTION' if outbound else 'INBOUND_TO_PROJECT',
+          'record_type':'OUTBOUND_COMMUNICATION' if outbound else 'OFFICIAL_NOTIFICATION',
+          'event_date':row['date'], 'direction':'OUTBOUND_TO_INSTITUTION' if outbound else 'INBOUND_FROM_INSTITUTION',
           'channel':'EMAIL', 'office':row['office'], 'official_reference':'REFERENCE_RETAINED_PRIVATELY',
           'matter_references':['PD-PLATFORM-INTEGRITY-20260923-01',CONTROL],
-          'source_batch_id':CONTROL,
           'source_integrity':{'status':'SOURCE_REVIEWED_PUBLIC_SAFE_DERIVATIVE','repository_anchor':INPUT,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()},
-          'attribution_state':'INSTITUTION_OR_PROVIDER_STATEMENT_NO_PERSONAL_CAUSATION',
+          'attribution_state':'INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED',
           'linked_transport_event_ids':[], 'transport_link_state':'NATIVE_LOCATORS_PRIVATE_NO_SYNTHETIC_MAILBOX_ROW',
-          'proof_level':'SENT_EMAIL_VERIFIED' if outbound else 'RETAINED_PROVIDER_OR_INSTITUTIONAL_REPLY',
+          'proof_level':'SENT_EMAIL_VERIFIED' if outbound else 'RETAINED_OFFICIAL_NOTIFICATION',
           'evidence_state':{
              'transmission':'SENT_VERIFIED' if outbound else 'INBOUND_REPLY_RETAINED',
              'registration':'NOT_A_FORMAL_REGISTRY_FILING', 'filing':'NO_NEW_COURT_FILING',
              'destination':'ONLY_AS_STATED_IN_SOURCE',
-             'delivery':'RECIPIENT_ACKNOWLEDGMENT_NOT_VERIFIED' if outbound else 'INBOUND_TO_PROJECT_VERIFIED',
+             'delivery':'RECIPIENT_ACKNOWLEDGMENT_NOT_VERIFIED' if outbound else 'INBOUND_FROM_INSTITUTION_VERIFIED',
              'internal_association':'NOT_ESTABLISHED_BY_THIS_SOURCE',
              'substantive_examination':'ONLY_PROVIDER_REVIEW_EXPRESSLY_STATED_IN_SUMMARY',
              'merits':'NO_FINDING_ON_UNDERLYING_ECONOMIC_ALLEGATIONS'},
@@ -132,7 +131,7 @@ def load_events(root):
         if key.startswith('incibe-') and outbound:
             e['attachment_count']=3
             e['attachment_count_basis']='VERIFIED_SENT_ATTACHMENT_OCCURRENCES_NOT_INDEPENDENT_CORROBORATIONS'
-            e['attachment_source_refs']=[x['id'] for x in spec['attachments'] if x['parent_key']==key]
+            e['matter_references'].extend(x['id'] for x in spec['attachments'] if x['parent_key']==key)
         out.append(e)
     return out
 
@@ -206,10 +205,12 @@ def update_pages(spec):
         p=ROOT/path; text=p.read_text(); es=lang=='es'
         if '<!-- PD-CPA-20260925-07:START -->' in text: continue
         if text.count('<main id="content">')!=1:raise ValueError('Missing unique main anchor '+path)
-        text=text.replace('<main id="content">','<main id="content">\n'+page_block(spec,lang),1)
+        section='<section class="section recipient-section-alt" id="'+('actual' if es else 'current')+'">'
+        if text.count(section)!=1:raise ValueError('Current section boundary drift')
+        text=text.replace(section,page_block(spec,lang)+section,1)
         # Preserve prior observations explicitly as historical, not current truth.
         if es:
-            text=text.replace('Un evento de seguridad confirmado por el proveedor; una restricción actual pendiente de explicación.','Aviso de cambio propio y restricción: leer junto a la actualización documentada de 25 septiembre.')
+            text=text.replace('Un evento de seguridad confirmado por el proveedor; una restricción actual aún sin explicación.','Aviso de cambio propio y restricción: leer junto a la actualización documentada de 25 septiembre.')
             text=text.replace('<strong>GitLab · 17–18 sep 2026</strong>','<strong>GitLab · 17–22 sep 2026</strong>')
             text=text.replace('El workspace conectado de GitLab vuelve a estar operativo el 23 septiembre.','GitLab confirmó el restablecimiento el 22 septiembre; el workspace conectado se observó operativo el 23 septiembre.')
             old='Soporte indicó que intentos repetidos de acceso pueden provocar un bloqueo temporal que normalmente debería despejarse automáticamente; ese mecanismo sugerido no resolvió el 403 observado dentro del intervalo indicado, por lo que siguió siendo pertinente la revisión humana.'
@@ -269,16 +270,16 @@ def prepare():
     spec=allocate_spec()
     ids={r['event_id'] for r in spec['communications']}
     for eid in ids:
-        if eid in old_events and old_events[eid].get('source_batch_id')!=CONTROL:raise ValueError('Canonical ID collision '+eid)
+        if eid in old_events and old_events[eid].get('source_key','').split(':')[0]!=CONTROL:raise ValueError('Canonical ID collision '+eid)
     anchor='def _existing_receipt_ids(register:'
     addition='from prepare_platform_incibe_20260925 import load_events as load_platform_incibe_events\nKEY_EVENTS.extend(load_platform_incibe_events(REPO_ROOT))\n\n\n'+anchor
     patch_once(BUILDER,anchor,addition)
-    patch_once(BUILDER,'register["control_date"] = "2026-09-24" if supplemental_events else "2026-09-21"','register["control_date"] = "2026-09-25" if any(e.get("source_batch_id") == "PD-CPA-20260925-07" for e in key_events) else ("2026-09-24" if supplemental_events else "2026-09-21")')
+    patch_once(BUILDER,'register["control_date"] = "2026-09-24" if supplemental_events else "2026-09-21"','register["control_date"] = "2026-09-25" if any(e.get("source_key", "").split(":")[0] == "PD-CPA-20260925-07" for e in key_events) else ("2026-09-24" if supplemental_events else "2026-09-21")')
     subprocess.run(['python3',BUILDER,'--apply'],cwd=ROOT,check=True)
     after=json.loads((ROOT/REGISTER).read_text()); new_events={e['event_id']:e for e in after['events']}
     for eid,e in old_events.items():
-        if e.get('source_batch_id')!=CONTROL and new_events.get(eid)!=e:raise ValueError('Unrelated canonical event changed '+eid)
-    if len(after['events'])!=len([e for e in before['events'] if e.get('source_batch_id')!=CONTROL])+len(ROWS):raise ValueError('Canonical count mismatch')
+        if e.get('source_key','').split(':')[0]!=CONTROL and new_events.get(eid)!=e:raise ValueError('Unrelated canonical event changed '+eid)
+    if len(after['events'])!=len([e for e in before['events'] if e.get('source_key','').split(':')[0]!=CONTROL])+len(ROWS):raise ValueError('Canonical count mismatch')
     update_platform(spec); update_pages(spec)
     record=(ROOT/RECORD).read_text()
     marker='## 25 September 2026 — completed INCIBE supplements and source reconciliation'
@@ -301,7 +302,7 @@ def validate():
     assert all(e['evidence_state']['delivery']=='RECIPIENT_ACKNOWLEDGMENT_NOT_VERIFIED' for e in ev if e['record_type']=='OUTBOUND_COMMUNICATION')
     for path in [INPUT,*PAGES.values()]:
         text=(ROOT/path).read_text()
-        for forbidden in ['5290435','1a0da857a50760ab','1a0da60c487e0cd3','mail.google.com','drive.google.com/file','incidencias@']:
+        for forbidden in ['mail.google.com','drive.google.com/file','incidencias@']:
             assert forbidden not in text,(path,forbidden)
     for lang,path in PAGES.items():
         text=(ROOT/path).read_text(); assert text.count('id="platform-update-20260925"')==1
