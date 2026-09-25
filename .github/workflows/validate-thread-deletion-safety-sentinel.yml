@@ -14,6 +14,7 @@ on:
       - "CHATGPT_START_HERE.md"
       - "archive/UNIVERSAL_PUBLICATION_AND_THREAD_DELETION_SAFETY_PROTOCOL_18AUG2026.md"
       - "ops/continuity/CONTINUITY_PRESERVATION_PROPAGATION_RULE.md"
+      - "ops/continuity/CHATGPT_GITHUB_GITLAB_SYNERGY_20260925.md"
   pull_request:
     paths:
       - ".github/governance/THREAD_DELETION_SAFETY_SENTINEL_25SEP2026.md"
@@ -24,6 +25,7 @@ on:
       - "CHATGPT_START_HERE.md"
       - "archive/UNIVERSAL_PUBLICATION_AND_THREAD_DELETION_SAFETY_PROTOCOL_18AUG2026.md"
       - "ops/continuity/CONTINUITY_PRESERVATION_PROPAGATION_RULE.md"
+      - "ops/continuity/CHATGPT_GITHUB_GITLAB_SYNERGY_20260925.md"
 
 permissions:
   contents: read

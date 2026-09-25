@@ -1,0 +1,83 @@
+{
+  "publication_id": "PD-HOMEPAGE-READING-SCOPE-20260925",
+  "current_state": "PR_OPEN",
+  "owner": "Gil Marer / Project Sun Rock",
+  "expected_routes": {
+    "en": [
+      "en/index.html"
+    ],
+    "es": [
+      "es/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "en/index.html",
+    "es/index.html",
+    "assets/homepage-reading-20260925.css",
+    "assets/audience-experience-order-20260823.js"
+  ],
+  "schema": "por-derecho.homepage-reading-scope.v1",
+  "control_date": "2026-09-25",
+  "state": "CANDIDATE_REQUIRES_PR_CHECKS_AND_LIVE_READBACK",
+  "base_sha": "d457ed39af169d78d1f9e8eb538a0dbacbff52f6",
+  "existing_pr": 1893,
+  "prior_candidate_head": "d83f48d1f14f5f0b16eb1be344f9c245b7a826e5",
+  "authority": "Owner instruction in the homepage-refinement conversation, 25 September 2026. Retain the seven substantive front-page presentations and relevant appearances elsewhere; use the owner-supplied whole-portfolio framing.",
+  "scope_source": "PD-OWNER-PORTFOLIO-SCOPE-20260925; owner-adopted allegation, not an independent report or adjudicated finding",
+  "source_limit": "Unresolved embedded references in the supplied statement are not promoted as verified report citations. No new quantified AUM, guilt finding, third-party transfer or digital-incident attribution.",
+  "statement_period": "The approximately six-to-eight-year acquisition cycle described as of 25 September 2026; not a moving window or a uniform start date for every asset.",
+  "paths": [
+    "en/index.html",
+    "es/index.html",
+    "assets/homepage-reading-20260925.css",
+    "assets/audience-experience-order-20260823.js",
+    "publication-manifests/homepage-reading-and-scope-20260925.json"
+  ],
+  "preservation": {
+    "en": {
+      "old_sha256": "dcfb094898aeba75717da6afad71be72150c031e03e436f27bcf6503ad54b5c3",
+      "new_sha256": "681064c3c11b5e0d5780396462a12b2c3fdd74a2f75fdf03104701f00e9777b9",
+      "protected_block_sha256": "5a4cbda689f85378b1f2c051d6db62b2ff5e1cd7297296fa5b364b69cba91189",
+      "all_original_text_links_images_and_ids_retained": true
+    },
+    "es": {
+      "old_sha256": "dab16c882053efb40f8c07d1332b6af5fe5d95f8764a6aed867ef8a52573b8d7",
+      "new_sha256": "5e2811b983620c0d1d3d644faa3bec0836138295820092ea1d3002fd750afdbe",
+      "protected_block_sha256": "5298abf116a07e98f4e56cb46a98c0a65776fa1d9e8717c08563015d8aad2589",
+      "all_original_text_links_images_and_ids_retained": true
+    }
+  },
+  "baseline_checks": [
+    {
+      "name": "baseline-0",
+      "exit_code": 0
+    },
+    {
+      "name": "baseline-1",
+      "exit_code": 0
+    },
+    {
+      "name": "baseline-2",
+      "exit_code": 0
+    }
+  ],
+  "candidate_checks": [
+    {
+      "name": "candidate-0",
+      "exit_code": 0
+    },
+    {
+      "name": "candidate-1",
+      "exit_code": 0
+    },
+    {
+      "name": "candidate-2",
+      "exit_code": 1
+    }
+  ],
+  "seven_person_record": "Protected block retained byte-for-byte. No actor or institutional node hidden or moved off the homepage.",
+  "other_routes": "Untouched; repeated relevant appearances remain.",
+  "private_boundary": "No mailbox originals, provider message IDs, identity-document material, private financial ledgers or legal advice published.",
+  "gitlab_state": "NOT_UPDATED_BY_THIS_PACKAGE",
+  "live_state": "NOT_VERIFIED_BY_AUTHORING_HELPER"
+}

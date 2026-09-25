@@ -100,6 +100,16 @@ This package does **not** establish:
 4. Later mandate/conflict/custody files for PwC, RSM/San Telmo, Garrigues and Cuatrecasas.
 5. Primary payment/payer/source-of-funds proof for disputed professional-payment episodes.
 
+## Operational update — 25 September 2026
+
+The post-send state is recorded in `archive/CANARY_COUNCIL_ICALAN_ROUTING_AND_REGISTRY_UPDATE_25SEP2026.md` and must be read with this baseline.
+
+- **Consejo Canario:** registry entry **RE-000329** is documented from 22-Sep-2026. This supersedes the operational statement that no direct Council correspondence had been located; it does not convert registry entry into merits acceptance or a substantive decision.
+- **ICALPA:** registry entry **RE-012642/2026** is documented from 22-Sep-2026. No new substantive DIP 79/2026 or DIP 80/2026 decision is inferred from that receipt.
+- **ICALAN:** on 24-Sep-2026 the Lanzarote Bar stated that the prior mailbox was being discontinued and identified **info@icalan.es** as the current communications route. That current address had already been copied on 22-Sep; on 25-Sep the chain was re-forwarded expressly as a routing-confirmation transmission, with a request for receipt, any local reference and any additional formal filing channel.
+- **Identity:** the correction remains controlling: **AWESWELL LIMITED**, UK company no. **07716847**, formerly **MONTERECCO SUN PARK LIMITED**. Matkator, S.L.U. remains separate.
+
+
 ## GitLab recovery rule
 
 The GitLab repository is not to be bypassed while blocked. The public GitLab-hosted website remains a read-only comparison surface. When repository access returns:
