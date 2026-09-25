@@ -1,0 +1,22 @@
+{
+  "schema": "por-derecho.jtp-real-actor-composite-provenance.v1",
+  "control_id": "PD-JTP-ACTOR-COMPOSITE-20260925-01",
+  "date": "2026-09-25",
+  "status": "DETERMINISTIC_EXACT_SOURCE_COMPOSITE",
+  "path": "assets/jtp-payment-actor-composite-real-sources-20260925.png",
+  "git_blob_sha": "39245262dc24ea8fbe66b9f53a00afc9028591de",
+  "sha256": "77895f4078ac3d3cad61077f5c33ac1865f95834e1d794014f024e00dd3587cc",
+  "dimensions": [1055, 1491],
+  "verification": {
+    "changed_pixels": 92820,
+    "changed_pixels_outside_authorised_boxes": 0,
+    "jtp_region_unchanged": true
+  },
+  "sources": {
+    "jtp": "person.juan-tomas-parrilla.primary",
+    "borja": "person.francisco-de-borja-rodriguez-batllori.primary",
+    "jdam": "person.jose-daniel-acosta-matos.primary",
+    "lpam": "person.laura-patricia-acosta-matos.primary",
+    "alberto": "person.alberto-lopez-villarrubia.primary"
+  }
+}

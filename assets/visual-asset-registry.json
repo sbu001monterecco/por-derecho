@@ -1,7 +1,7 @@
 {
   "registry_version": "1.4.0",
   "policy_id": "PD-VISUAL-ID-LOCK-2026-08-19",
-  "control_date": "2026-09-22",
+  "control_date": "2026-09-25",
   "purpose": "Canonical identity, provenance and byte-lock registry for named-person and material-asset images used by Por Derecho.",
   "mandatory_rules": {
     "named_person_images_must_be_registered": true,
@@ -561,6 +561,32 @@
         "dimensions": "1584x1056",
         "user_mapping_date": "2026-09-23",
         "drive_canonical_filename": "Juan_Tomas_Parrilla_canonical_20260923.jpg"
+      }
+    },
+    "composite.jtp-payment-actor-context-real-source-20260925": {
+      "subject_type": "document",
+      "canonical_name": "JTP payment / AC / CAM real-source actor-context composite",
+      "short_label": "JTP actor-context real-source composite",
+      "path": "assets/jtp-payment-actor-composite-real-sources-20260925.png",
+      "git_blob_sha": "39245262dc24ea8fbe66b9f53a00afc9028591de",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Deterministic composition from five controlled project portrait sources under the user's 25 September 2026 publication authorisation. Four non-JTP portrait rectangles were replaced with exact canonical repository images; the approved JTP portrait and every pixel outside the authorised portrait boxes were preserved.",
+      "approved_contexts": [
+        "JTP payment / AC / CAM actor-context composite",
+        "counsel-payment independence reader",
+        "public investigative/editorial visual"
+      ],
+      "alt_en": "Real-source actor-context visual for the JTP payment / AC / CAM evidence reader",
+      "alt_es": "Visual de contexto de actores con fuentes reales para el lector de pago JTP / AC / CAM",
+      "source_provenance": {
+        "sha256": "77895f4078ac3d3cad61077f5c33ac1865f95834e1d794014f024e00dd3587cc",
+        "dimensions": "1055x1491",
+        "format": "png",
+        "control_id": "PD-JTP-ACTOR-COMPOSITE-20260925-01",
+        "asset_map": "assets/composites/jtp-payment-actor-context-real-source-20260925.asset-map.json",
+        "provenance": "assets/data/jtp-payment-actor-composite-real-sources-20260925.json",
+        "changed_pixels_outside_authorised_boxes": 0,
+        "jtp_region_unchanged": true
       }
     }
   },
