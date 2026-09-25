@@ -103,118 +103,74 @@ def validate_identity(errors: list[str]) -> int:
 
 
 def validate_home(errors: list[str], lang: str) -> None:
+    """Validate the expressly authorised 25 Sep 2026 orientation-first homepage."""
     page = ROOT / lang / "index.html"
     text = page.read_text(encoding="utf-8")
-    if lang == "es":
-        ordered_ids = ("inicio", "resumen-60-segundos", "psr-reader-intent", "perimetros-del-caso", "historia-reconstruida")
-        required_routes = (
-            "reconstruccion-unitaria-autoridades-publicas/",
-            "medios-trazabilidad-relato-publico/",
-            "objetivos-recuperacion-restitucion/",
-            "colaborar/",
-            "mapa-forense-sun-park-262-fincas/",
-            "comunidad-instrumentalizacion/",
-            "matkator-nucleo-extraconcursal/",
-            "control-acreedor-cam-administracion-hecho-omision-judicial/",
-        )
-    else:
-        ordered_ids = ("home", "sixty-second-summary", "psr-reader-intent", "case-perimeters", "reverse-engineered-story")
-        required_routes = (
-            "public-authority-unitary-case-reconstruction/",
-            "media-public-narrative-traceability/",
-            "recovery-restitution-objectives/",
-            "collaborate/",
-            "sun-park-forensic-map-262-properties/",
-            "community-instrumentalisation/",
-            "matkator-extraconcursal-core/",
-            "cam-creditor-control-shadow-administration-judicial-omission/",
-        )
-
-    positions = [text.find(f'id="{item}"') for item in ordered_ids]
-    if any(position < 0 for position in positions):
-        fail(errors, f"{lang}/index.html: missing audience-order id; got {positions}")
-    elif positions != sorted(positions):
-        fail(errors, f"{lang}/index.html: source audience order is incorrect: {positions}")
 
     ids = re.findall(r'\bid="([^"]+)"', text)
     duplicates = sorted({item for item in ids if ids.count(item) > 1})
     if duplicates:
         fail(errors, f"{lang}/index.html: duplicate ids: {', '.join(duplicates)}")
 
+    if lang == "es":
+        required_routes = (
+            "centro-mando-recuperacion/",
+            "futuro/",
+            "por-derecho/",
+            "evidencia/",
+            "actualizaciones/",
+            "cuaderno-juridico/",
+            "inicio/",
+        )
+        required_copy = (
+            "Tres vías. Propósitos distintos. Límites claros.",
+            "Recuperación basada en evidencia",
+            "Hotelería sobre bases limpias",
+            "Cómo leer el expediente",
+        )
+        forbidden = ("capital-institucional/", 'href="#futuro"')
+    else:
+        required_routes = (
+            "recovery-command-center/",
+            "future/",
+            "por-derecho/",
+            "evidence/",
+            "updates/",
+            "legal-notebook/",
+            "start/",
+        )
+        required_copy = (
+            "Three paths. Different purposes. Clear boundaries.",
+            "Evidence-led recovery",
+            "Hospitality built on clean foundations",
+            "How to read the record",
+        )
+        forbidden = ("institutional-capital/", 'href="#future"')
+
     for route in required_routes:
         if f'href="{route}"' not in text:
-            fail(errors, f"{lang}/index.html: missing audience route {route}")
-    if text.count('class="psr-intent-card"') != 4:
-        fail(errors, f"{lang}/index.html: expected exactly four role gateways")
-    for marker in (
-        'rel="canonical"',
-        'hreflang="es"',
-        'hreflang="en"',
-        'hreflang="x-default"',
-        'name="twitter:card"',
-        'data-optimum-reader-journey="20260823"',
-    ):
+            fail(errors, f"{lang}/index.html: missing orientation route {route}")
+    for marker in required_copy:
         if marker not in text:
-            fail(errors, f"{lang}/index.html: missing metadata/stylesheet marker {marker}")
+            fail(errors, f"{lang}/index.html: missing orientation copy {marker}")
+    for marker in forbidden:
+        if marker in text:
+            fail(errors, f"{lang}/index.html: forbidden homepage route/anchor {marker}")
+
+    if text.count('class="panel"') < 8:
+        fail(errors, f"{lang}/index.html: orientation homepage lost pathway/status cards")
+    if 'class="hero-photo"' not in text or '../assets/sun-park-mynd-yaiza.jpg' not in text:
+        fail(errors, f"{lang}/index.html: missing controlled hero asset")
+    if 'mailto:sbu001@monterecco.com' not in text:
+        fail(errors, f"{lang}/index.html: missing formal correction/contact route")
 
     for marker in (
-        'data-pd-five-ac="20260824b"',
-        'data-five-actor-accountability-static="true"',
-        'data-five-actor-front-page-lock="express-authorization-required"',
-        'data-key-direct-route-presentation="front-page"',
-        'data-pd-five-ac-css="20260824b"',
-        'site.js?v=20260824e',
-        '../assets/actors/fmmm-shaila-antonio-family-editorial-display-20260922.jpg',
-        '../assets/acosta-matos-family-hotel-plans.jpg',
-        '../assets/actors/francisco-de-borja-rodriguez-batllori.jpg',
-        '../assets/actors/alberto-lopez-villarrubia.jpg',
-        'Francisco Mario Matos Matas',
-        'Antonio Cogolludo Rojas',
-        'Shaila María Cogolludo Ramos',
-        'José Daniel Acosta Matos',
-        'Laura Patricia Acosta Matos',
+        'data-five-actor-front-page-lock=',
+        'data-private-actor-card=',
+        'class="capital-entry"',
     ):
-        if marker not in text:
-            fail(errors, f"{lang}/index.html: missing static five-actor accountability marker {marker}")
-    for marker, expected in (
-        ('data-private-actor-card=', 5),
-        ('data-institution-card=', 2),
-        ('data-linkage-row', 5),
-    ):
-        count = text.count(marker)
-        if count != expected:
-            fail(errors, f"{lang}/index.html: expected {expected} {marker} markers, got {count}")
-    for actor_id in ("fmmm", "smcr", "acr", "jdam", "lpam"):
-        if text.count(f'data-private-actor-id="{actor_id}"') != 1:
-            fail(errors, f"{lang}/index.html: expected one independently labelled {actor_id} actor record")
-    visual_markers = (
-        ("Patricia Domínguez", "Gil Marer", "no procede de reconocimiento facial", "La fotografía aporta únicamente contexto de identidad y relación")
-        if lang == "es"
-        else ("Patricia Domínguez", "Gil Marer", "not derived from facial recognition", "The photograph establishes identity/relationship context only")
-    )
-    for marker in visual_markers:
-        if marker not in text:
-            fail(errors, f"{lang}/index.html: missing controlled visual provenance/boundary marker {marker}")
-
-    preservation_links = (
-        (
-            'concurso-36-2012-magistrado-juez/',
-            'pwc-canarias-carlos-saavedra-sun-park/',
-            'ric-private-equity-sun-park/',
-        )
-        if lang == "es"
-        else (
-            'insolvency-36-2012-mercantile-court-1/',
-            'pwc-canarias-carlos-saavedra-sun-park/',
-            'ric-private-equity-sun-park/',
-        )
-    )
-    for route in preservation_links:
-        if f'href="{route}"' not in text:
-            fail(errors, f"{lang}/index.html: locked static component missing reciprocal route {route}")
-    footer_match = re.search(r'<footer class="pd-five-ac__footer">(.*?)</footer>', text, re.DOTALL)
-    if not footer_match or footer_match.group(1).count('<a href=') != 7:
-        fail(errors, f"{lang}/index.html: locked static component must retain seven reciprocal dossier links")
+        if marker in text:
+            fail(errors, f"{lang}/index.html: legacy detailed homepage component returned: {marker}")
 
 
 def validate_key_direct_routes(errors: list[str]) -> None:
