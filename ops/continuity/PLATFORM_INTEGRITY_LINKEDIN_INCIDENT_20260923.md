@@ -7,6 +7,7 @@
 ## Current evidence
 
 - 22 September 2026 LinkedIn security email: profile photo changed at 13:51 GMT, Android, provider-reported approximate location Kuwait City, Kuwait.
+- **Account-holder clarification / supersession:** Gil Marer states that he made the profile-photo change himself and reports that he was using a VPN. The alert therefore must not be treated as evidence of an unauthorised profile edit or another actor. The provider-reported location may be VPN-related, but LinkedIn-native session/IP/risk records are still required to establish that technical context.
 - The alert was found in the business mailbox Trash folder during the 23 September review. Cause of that mailbox state is unknown.
 - 23 September 2026: Gil Marer reports LinkedIn account access blocked again; renewed identity verification completed; restoration and provider explanation pending.
 - LinkedIn has not yet supplied a case-specific cause for the 23 September restriction. Case **260923-029467** is open; on 24 September Customer Support stated that the follow-up was forwarded to another group for additional review/advice and may require additional research. That provider statement confirms review state only, not the restriction trigger or merits.

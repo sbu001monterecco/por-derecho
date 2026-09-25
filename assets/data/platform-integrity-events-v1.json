@@ -34,8 +34,8 @@
       "platform": "LinkedIn",
       "date": "2026-09-22",
       "status": "PROVIDER_DOCUMENTED",
-      "summary": "Security alert: profile photo changed at 13:51 GMT via Android; provider-reported approximate location Kuwait City, Kuwait.",
-      "attribution": "actor/session/IP not established"
+      "summary": "Security alert: profile photo changed at 13:51 GMT via Android; provider-reported approximate location Kuwait City, Kuwait. Account holder states that he made the profile-photo change himself and reports VPN use.",
+      "attribution": "edit self-attributed by account holder; provider session/IP/risk context not established; approximate location may be VPN-related but is not provider-confirmed as such"
     },
     {
       "id": "PD-PLAT-LI-20260923-RESTRICT",
