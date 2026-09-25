@@ -8,10 +8,10 @@
     return path;
   };
   const path = normalise(location.pathname);
-  const home = new Set(['/es/', '/en/']);
+  const home = new Set(['/es/portada-archivo-20260925.html/', '/en/homepage-archive-20260925.html/']);
   const featured = new Set([
-    '/es/',
-    '/en/',
+    '/es/portada-archivo-20260925.html/',
+    '/en/homepage-archive-20260925.html/',
     '/es/concurso-36-2012-responsabilidad-institucional/',
     '/en/insolvency-36-2012-institutional-accountability/'
   ]);
