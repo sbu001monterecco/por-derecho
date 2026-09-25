@@ -1,0 +1,255 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://por-derecho.example/schemas/por-derecho-federation-envelope-v1.schema.json",
+  "title": "Por Derecho recursive federation state envelope",
+  "type": "object",
+  "required": [
+    "schema",
+    "envelope_id",
+    "iteration",
+    "observed_heads",
+    "ruleset_digest",
+    "manifest_digests",
+    "decisions",
+    "review_queue",
+    "receipts",
+    "recursion"
+  ],
+  "properties": {
+    "schema": {
+      "const": "por-derecho.federation-state-envelope.v1"
+    },
+    "envelope_id": {
+      "type": "string",
+      "minLength": 8
+    },
+    "iteration": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "predecessor": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "required": [
+            "envelope_id",
+            "sha256"
+          ],
+          "properties": {
+            "envelope_id": {
+              "type": "string",
+              "minLength": 8
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "observed_heads": {
+      "type": "object",
+      "required": [
+        "github",
+        "gitlab"
+      ],
+      "properties": {
+        "github": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "gitlab": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ruleset_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "manifest_digests": {
+      "type": "object",
+      "required": [
+        "github",
+        "gitlab"
+      ],
+      "properties": {
+        "github": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "gitlab": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "object_id",
+          "classification",
+          "reason"
+        ],
+        "properties": {
+          "object_id": {
+            "type": "string",
+            "minLength": 3
+          },
+          "classification": {
+            "enum": [
+              "IMPORT_CANDIDATE",
+              "MANUAL_RECONCILIATION",
+              "EVIDENCE_ONLY",
+              "PRIVATE_ONLY",
+              "SUPERSEDED",
+              "UNSAFE",
+              "EXPLAINED_DIVERGENCE",
+              "BYTE_IDENTICAL"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 3
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "review_queue": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "object_id",
+          "trigger",
+          "depth",
+          "state"
+        ],
+        "properties": {
+          "object_id": {
+            "type": "string",
+            "minLength": 3
+          },
+          "trigger": {
+            "type": "string",
+            "minLength": 3
+          },
+          "depth": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 32
+          },
+          "state": {
+            "enum": [
+              "OPEN",
+              "IN_REVIEW",
+              "CLEARED",
+              "BLOCKED"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "receipts": {
+      "type": "object",
+      "required": [
+        "github",
+        "gitlab",
+        "live"
+      ],
+      "properties": {
+        "github": {
+          "type": "array"
+        },
+        "gitlab": {
+          "type": "array"
+        },
+        "live": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": false
+    },
+    "recursion": {
+      "type": "object",
+      "required": [
+        "triggered",
+        "visited_ids",
+        "next_action"
+      ],
+      "properties": {
+        "triggered": {
+          "type": "boolean"
+        },
+        "visited_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "next_action": {
+          "enum": [
+            "REVIEW",
+            "INTEGRATE",
+            "VERIFY",
+            "RECURSE",
+            "CLOSED",
+            "BLOCKED"
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "iteration": {
+            "const": 0
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "predecessor": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "iteration": {
+            "minimum": 1
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "predecessor"
+        ],
+        "properties": {
+          "predecessor": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}
