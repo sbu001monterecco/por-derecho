@@ -187,5 +187,22 @@
     "vector": true,
     "dynamic_renderer": "assets/truth-machine-live.js",
     "refresh_seconds": 60
+  },
+  "method_stack": {
+    "control": "PD-TRUTH-METHOD-STACK-20260925-01",
+    "aggregate": "assets/data/r33-forensic-method-pass-v1.json",
+    "visual": "assets/r33-method-stack-visual-20260925.svg",
+    "processed": 276,
+    "falsehood_register": {
+      "NON_BINARY_RHETORIC_OR_LEGAL": 64,
+      "OPEN_UNRESOLVED": 200,
+      "NARROWING_OR_MISLEADING_USE_CANDIDATE": 6,
+      "CURRENTLY_SUPPORTED": 2,
+      "CONTRADICTION_REVIEW_CANDIDATE": 4
+    },
+    "contradiction_review_candidates": 4,
+    "source_complete_falsehood_signoffs": 0,
+    "knowingly_false_signoffs": 0,
+    "boundary": "Review workload and structured evidential states; not a truth, lie, credibility, intent, guilt or liability score."
   }
 }

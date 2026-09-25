@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "por-derecho.truth-machine.method-stack.aggregate.v1",
+  "title": "Por Derecho Truth Machine method-stack aggregate",
+  "type": "object",
+  "required": [
+    "schema",
+    "control",
+    "document",
+    "structure",
+    "method_coverage",
+    "falsehood_register",
+    "boundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "por-derecho.truth-machine.method-stack.v1.aggregate"
+    },
+    "control": {
+      "type": "string"
+    },
+    "document": {
+      "type": "object",
+      "required": [
+        "id",
+        "native_sha256"
+      ]
+    },
+    "structure": {
+      "type": "object",
+      "required": [
+        "statement_propositions",
+        "review_records"
+      ]
+    },
+    "method_coverage": {
+      "type": "object",
+      "required": [
+        "ACH",
+        "SUE",
+        "VERIFIABILITY",
+        "WIGMORE",
+        "FATF_FINANCIAL",
+        "FCA_CONTROLS",
+        "FBI_LINGUISTIC_PROBE"
+      ]
+    },
+    "falsehood_register": {
+      "type": "object",
+      "required": [
+        "states",
+        "source_complete_falsehood_signoffs",
+        "knowingly_false_signoffs"
+      ]
+    },
+    "boundary": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}
