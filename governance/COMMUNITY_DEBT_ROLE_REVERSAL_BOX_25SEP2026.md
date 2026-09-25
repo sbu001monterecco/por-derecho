@@ -202,3 +202,70 @@ The review rule is:
 - the project must distinguish **what the judgment decided** from **whether the underlying debt/voting/authority mechanism was valid and accurately presented**.
 
 This prevents circular reasoning of either kind: "the judge/AC rejected the allegation, therefore it is false" and "the judge/AC rejected the allegation, therefore they are guilty" are both prohibited shortcuts.
+
+
+## 15. Court-information completeness / alleged procedural instrumentalisation
+
+Gil/AWESWELL's present position is that, with one exception not yet source-identified in this control, proceedings touching Community governance, fees, arrears or related authority generally did **not** adjudicate the complete underlying economic/accounting truth of the Community debt on a full evidential record.
+
+This position is preserved categorically as Gil's attributed conclusion. The repository must test it proceeding by proceeding rather than treating any isolated court result as a universal validation of the debt.
+
+### Source-controlled examples
+
+**P.O. 562/2014.** A contemporaneous 2020 case review states that this proceeding stopped at interim-measures stage and did not proceed to a final merits determination of the Community debt.
+
+**P.O. 213/2015 / later appellate treatment.** The same 2020 review states that the dispute concerned the right to convene/govern the Community and related meeting validity; it expressly records the project-side understanding that the underlying truth of the debt was not itself adjudicated there. Later Audiencia treatment must therefore be read by its exact object, parties, standing and holding rather than as a global debt-validity finding.
+
+**18-Apr-2017 Judgment 91/2017.** The controlled chronology records that the old EUR171.81 monthly charge was set aside after the Community submitted to the claim and that the 2016 EUR22.26 figure was noted. That is a material judicial change to the quantitative basis, but it still does not adjudicate every later Community charge, every finca, every accounting period or every voting exclusion.
+
+**20-Jan-2017 concurso treatment / May-2020 AC request.** The AC's 19-May-2020 email quotes the 20-Jan-2017 order modifying the final insolvency texts to include a **contingent Community credit without its own amount**, then asks for the results of P.O. 562/2014, P.O. 213/2015 and DP 168/2015 to determine whether the reasons for that contingent treatment still subsisted. This is incompatible with treating those proceedings as though they had already finally established a complete quantified Community debt.
+
+### Gil's attributed institutional conclusion
+
+Gil states that courts and judges dealing with Community fees/authority were generally operating on a partial, selected or distorted record; that private/Community actors most probably supplied or propagated that distortion; and that some judicial outcomes were thereby instrumentalised downstream.
+
+He further states that the Juzgado and later Audiencia Provincial treatment must be audited for whether they were given:
+- the complete historical Community accounting;
+- the operator/CEXP common-cost ledger;
+- the retroactive quota changes;
+- the exact owner/finca/debt denominator;
+- the challenge/consignation position;
+- the full vote counterfactual;
+- the complete chronology of changes in claimed debt;
+- the relationship between meeting validity and debt validity;
+- the 2016 reconciliation/audit material;
+- the 2017 charge judgment;
+- and the later use made of the resulting resolutions/certificates.
+
+### Criminal-misdirection test
+
+The project does **not** infer criminal deception merely because a court had an incomplete record or reached an adverse result.
+
+For any allegation that a court was deliberately or criminally misled, require:
+
+`exact representation or omission → author/transmitter → underlying source truth → knowledge of falsity/material incompleteness → duty/context of disclosure → recipient court → actual availability of contrary material → materiality → reliance/adoption → decision effect → causation → benefit/harm → contrary lawful explanation`.
+
+A party pleading, Community certificate or adverse judgment is not by itself proof of procedural fraud.
+
+### Judge-specific boundary
+
+Gil's position is that a judge who knowingly adopts or maintains an invalid debt/authority mechanism after sufficient contrary notice may itself require accountability. The repository must still distinguish:
+- misinformation supplied to the court;
+- court possession of contrary material;
+- actual judicial examination;
+- judicial reasoning;
+- legal error;
+- grossly deficient verification;
+- knowing adoption;
+- and any offence-specific intent.
+
+An adverse or mistaken judgment is not automatically criminal. Conversely, the existence of a judgment does not validate every factual premise fed into it.
+
+### One-exception placeholder
+
+Gil has stated that there was **one exception** in which a court dealt with the Community-fee issue on a materially fuller record. The exact proceeding is not yet source-locked in this control.
+
+Until it is identified from the native record:
+- do not guess the exception;
+- do not nominate Judgment 91/2017 or another proceeding merely because it altered a charge;
+- preserve the exception as **OPEN — EXACT PROCEEDING TO IDENTIFY**.
