@@ -61,3 +61,12 @@ Public routes:
 - The account holder states that he completed the fresh Persona flow using a new selfie and government-issued identity document and then replied in the same case thread confirming completion.
 - The fresh verification completion is presently an account-holder statement plus a verified same-thread outbound notice. LinkedIn has not yet confirmed receipt of the Persona result, restored access, decided the appeal or supplied the restriction trigger.
 - No inference is drawn that the earlier Persona verification failed merely because LinkedIn requested a fresh verification.
+
+## 25 September 2026 — urgent interim-restoration request
+
+- Following the fresh Persona completion, the account holder sent a further reply in the existing case seeking an urgent human decision rather than another identity-verification loop.
+- The request seeks interim restoration during any remaining review, or alternatively the least restrictive temporary security measure LinkedIn considers sufficient, while preserving the account and evidential record.
+- It asks for confirmation that the fresh Persona result is received and linked, identification of any specific remaining identity issue, the responsible review team, the case-specific restriction basis/trigger insofar as disclosable, and confirmation of preservation.
+- A controlled four-document evidence package was attached. Its institutional communications evidence notice/reporting history and requests; they are not recipient-authority findings.
+- Provider response remains pending. No new external actor, reporter identity, reporter geography or causation inference arises from this outbound act.
+
