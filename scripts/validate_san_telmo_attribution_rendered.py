@@ -33,10 +33,10 @@ required = {
         "placeAfter(sanTelmo, sourceFunds || fullRecord)",
         "pd:san-telmo-attribution-ready",
     ],
-    "en/index.html": [
+    "en/homepage-archive-20260925.html": [
         '<section class="interview-evidence"',
     ],
-    "es/index.html": [
+    "es/portada-archivo-20260925.html": [
         '<section class="interview-evidence"',
     ],
     "en/san-telmo-ricpe-sun-park/index.html": [
