@@ -111,5 +111,11 @@
       ],
       "next_action": "PACKET_MODE_SOURCE_BY_SOURCE_REVIEW"
     }
-  ]
+  ],
+  "updated_at": "2026-09-25",
+  "dynamic_surface": {
+    "renderer": "assets/truth-machine-live.js",
+    "poll_seconds": 60,
+    "boundary": "Presentation may refresh from deployed public-safe JSON; evidential state changes remain source-review and human-signoff controlled."
+  }
 }

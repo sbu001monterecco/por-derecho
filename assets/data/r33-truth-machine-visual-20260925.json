@@ -178,5 +178,14 @@
       "summary": "The 2020 withdrawal/apology is real adverse evidence. It does not by itself establish a common reason for every lawyer transition; the v3 review records that broader causal inference as unsupported/incomplete."
     }
   ],
-  "boundary": "Candidate markers are triage prompts and review-load measures, not findings of falsity, deception, intent, credibility, criminality, guilt or liability. Existing adverse evidence and lawful alternatives remain visible."
+  "boundary": "Candidate markers are triage prompts and review-load measures, not findings of falsity, deception, intent, credibility, criminality, guilt or liability. Existing adverse evidence and lawful alternatives remain visible.",
+  "updated_at": "2026-09-25",
+  "visualization": {
+    "fallback": "assets/r33-truth-machine-visual-20260925.svg",
+    "width": 1920,
+    "height": 1080,
+    "vector": true,
+    "dynamic_renderer": "assets/truth-machine-live.js",
+    "refresh_seconds": 60
+  }
 }
