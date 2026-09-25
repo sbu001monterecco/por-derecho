@@ -122,5 +122,36 @@
       "summary": "Approximately 86.715% present/represented; approximately 0.385% vote-qualified; security up to EUR8,500/month authorised; source family records AC request to convene measure on LPB's behalf as majority holder.",
       "boundary": "Does not by itself prove 7-June command chain or criminal intent."
     }
-  ]
+  ],
+  "contingent_credit_consequence": {
+    "definitive_texts_filed": "2016-04-28",
+    "pre_insolvency_community_claim_eur": 718663.24,
+    "formal_contingent_modification": "2017-01-20",
+    "modification_effect": "ORDINARY_CONTINGENT_CLAIM_WITHOUT_OWN_AMOUNT",
+    "post_insolvency_claim_unchanged": true,
+    "ac_2020_pre_insolvency_amount_reused_eur": 718663.24,
+    "ac_2020_post_insolvency_amount_eur": 427135.05,
+    "combined_2021_bid_condition_eur": 1145798.29,
+    "principal_position": "Gil/AWESWELL state that preserving and later reusing the disputed claim was a substantive part of the harmful mechanism, not an innocent administrative detail.",
+    "repository_boundary": "Procedural consequences are source-controlled; criminal or professional responsibility remains actor-specific."
+  },
+  "community_identity_control": {
+    "rule": "LEGAL_COMMUNITY_IS_NOT_AUTOMATICALLY_IDENTICAL_TO_PRIVATE_OFFICEHOLDERS_OR_DISSIDENT_FACTION",
+    "required_resolution": [
+      "legal_body",
+      "meeting_or_resolution",
+      "president",
+      "secretary_or_administrator",
+      "treasurer",
+      "signatory",
+      "represented_owner_or_entity",
+      "voting_eligibility",
+      "mandate_or_power",
+      "source",
+      "act",
+      "beneficiary_or_effect"
+    ],
+    "risk_label": "AUTHORITY_REIFICATION_ORGAN_PERSON_CONFLATION",
+    "principal_position": "Gil/AWESWELL state that repeated institutional use of 'the Community' for the dissident/private officeholder perimeter gave private actors an appearance of authority they did not validly possess."
+  }
 }
