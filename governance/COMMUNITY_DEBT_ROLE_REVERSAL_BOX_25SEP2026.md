@@ -187,3 +187,18 @@ Read the sequence as:
 `debt basis → vote exclusion → reduced electorate → office/control → certificates/claims → retroactive recalculation → changed debt basis → continued reduced electorate → security/access authority → downstream use`.
 
 The question is whether each link had a valid factual/legal foundation and which actor knew, certified, relied upon or benefited from each link at the relevant date.
+
+
+## 15. Non-dependence on institutional self-acceptance
+
+Gil/AWESWELL's categorical position does not depend on the Insolvency Administrator, the insolvency judge or another challenged actor agreeing with the accusation.
+
+The review rule is:
+
+- an actor's denial, adverse pleading or adverse decision is **contrary evidence / institutional position**, not an automatic disproof of the underlying documentary chain;
+- equally, an actor's failure to admit fault, self-report or accept the project's characterisation is **not proof of guilt**;
+- the merits are tested through source, authority, debt validity, knowledge, power, act/omission, adoption/use, effect, causation, benefit/harm and applicable legal elements;
+- a judgment may have binding procedural or substantive effects within its scope while still being challenged on appeal or examined as a source/use event in a separate accountability analysis;
+- the project must distinguish **what the judgment decided** from **whether the underlying debt/voting/authority mechanism was valid and accurately presented**.
+
+This prevents circular reasoning of either kind: "the judge/AC rejected the allegation, therefore it is false" and "the judge/AC rejected the allegation, therefore they are guilty" are both prohibited shortcuts.
