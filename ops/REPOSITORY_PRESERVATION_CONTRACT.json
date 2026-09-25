@@ -86,10 +86,7 @@
         "classification": "Magistrate-Judge exercising judicial power"
       }
     },
-    "homepages": [
-      "es/index.html",
-      "en/index.html"
-    ],
+    "homepages": [],
     "direct_routes": {
       "es": [
         "es/administracion-de-hecho-comunidad-ac/index.html",
@@ -160,7 +157,10 @@
       "reciprocal_dossier_links": 7,
       "outside_closed_progressive_disclosure": true,
       "static_first": true
-    }
+    },
+    "homepage_requirement_status": "SUPERSEDED_BY_OWNER_2026-09-25_ORIENTATION_FIRST_HOMEPAGE",
+    "homepage_successor_control": "archive/FIVE_ACTOR_FRONT_PAGE_AND_DIRECT_ROUTE_PRESERVATION_LOCK_24AUG2026.md#explicit-homepage-supersession--25-september-2026",
+    "direct_route_preservation_remains_required": true
   },
   "first_read_sequence": [
     "case position and controlling allegation",
