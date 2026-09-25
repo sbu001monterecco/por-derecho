@@ -96,3 +96,11 @@ The request asks User Rights to provide the complaint form or confirm whether th
 
 The provider-native restriction notice and provenance/metadata support were supplied. No identity-document copy or broader Sun Park evidential dossier was sent. Transmission is verified; a User Rights case ID and formal merits proceeding remain pending.
 
+
+## Public-interest digital publication / evidential-event rule
+
+The public position is now explicit: LinkedIn, GitHub, GitLab, independent sites and repositories can operate together as distributed public-interest publishing and evidence-preservation infrastructure. A third-party report followed by restriction/removal is treated as a potential evidential event: preserve the provider-native report/moderation/security chain and use lawful access, transparency, appeal, regulatory or judicial routes to establish provenance.
+
+Boundary: a complaint or takedown is not proof of retaliation, abuse, coordination or crime. If reliable evidence establishes disadvantage imposed because of qualifying reporting/public disclosure, place that evidence before the competent authority. In Spain, Law 2/2023 Article 36.2 defines retaliation; Article 63.1(b) addresses intentional retaliation as a very serious administrative infringement and Article 65 provides sanctions. Criminal consequences require separate criminal-law elements and proof. Apply EU/German/UK protections only where their own scope and conditions are satisfied.
+
+Restoration is not full closure: account recovery does not withdraw pending requests for reasons, appeal determination, source/data-access information or preservation and does not erase the provider-native history.
