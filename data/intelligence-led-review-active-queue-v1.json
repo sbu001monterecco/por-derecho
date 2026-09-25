@@ -1,0 +1,122 @@
+{
+  "schema": "por-derecho.intelligence-review-active-queue.v1",
+  "control_id": "PD-UK-INTEL-QUEUE-20260925-01",
+  "status": "ADVISORY_ACTIVE_REVIEW_QUEUE",
+  "purpose": "Operationalise the intelligence-led method against existing live-matter controls without changing their evidence state.",
+  "rules": [
+    "A queue entry is a review task, not a finding.",
+    "Current-main source controls and corrections govern every task.",
+    "The same-origin source family is not independent corroboration.",
+    "Every lane must preserve the strongest contrary/lawful alternative and a decisive test.",
+    "External action remains separately authorised."
+  ],
+  "entries": [
+    {
+      "review_id": "PD-IR-AWESWELL-REGISTRY-20260925",
+      "lane": "CORPORATE_REGISTRY_REALITY",
+      "priority": "ACTIVE_PILOT",
+      "question": "What does the current Companies House record establish about AWESWELL LIMITED, and what wider propositions require independent evidence?",
+      "host_controls": [
+        "archive/AWESWELL_MONTERECCO_COMPANIES_HOUSE_CONTINUITY_16AUG2026.md"
+      ],
+      "current_output": "ops/intelligence-review/AWESWELL_COMPANIES_HOUSE_REALITY_CHECK_25SEP2026.md",
+      "decisive_test": "Native legal/economic source for any proposition that goes beyond the current public register.",
+      "state": "NARROW_SCOPE"
+    },
+    {
+      "review_id": "PD-IR-R33-CONTEXT-20260925",
+      "lane": "CONTEXT_INTEGRITY_TRUTH_INVERSION",
+      "priority": "ACTIVE_NEXT",
+      "question": "For each material R33/adverse proposition, what does the underlying source say in context, how was it later used, and what inference does the full record support?",
+      "candidate_controls": [
+        {
+          "path": "governance/CONTEXT_INTEGRITY_TRUTH_INVERSION_24SEP2026.md",
+          "host_state": "GITHUB_CURRENT_MAIN"
+        },
+        {
+          "path": "archive/PINK_CEXP_AC_UNITARY_ANTI_FRAGMENTATION_CONTROL_22SEP2026.md",
+          "host_state": "GITLAB_CURRENT_MAIN"
+        }
+      ],
+      "decisive_test": "Source-by-source comparison retaining exact context, contrary material, knowledge state and actual reliance/effect.",
+      "state": "VERIFY_FURTHER"
+    },
+    {
+      "review_id": "PD-IR-CROSSPROCEEDING-20260925",
+      "lane": "CROSS_PROCEEDING_COMMONALITY",
+      "priority": "ACTIVE_NEXT",
+      "question": "Which Montelanza/Molina/private-actor, Community/CEXP, AC and judicial sequences share only thematic features, and which are connected by independent source bridges?",
+      "candidate_controls": [
+        {
+          "path": "archive/PINK_CEXP_AC_UNITARY_ANTI_FRAGMENTATION_CONTROL_22SEP2026.md",
+          "host_state": "GITLAB_CURRENT_MAIN"
+        },
+        {
+          "path": "en/proceedings/gc-civ-003/ac-intervention-retracto/index.html",
+          "host_state": "GITHUB_CURRENT_MAIN"
+        }
+      ],
+      "decisive_test": "Actor-specific act/authority/knowledge/use/effect bridge for each claimed connection; preserve legal separation of proceedings.",
+      "state": "VERIFY_FURTHER"
+    },
+    {
+      "review_id": "PD-IR-JTP-VALUE-20260925",
+      "lane": "MONEY_VALUE_BENEFIT_RECOVERY",
+      "priority": "ACTIVE_NEXT",
+      "question": "What is independently established about the JTP fee/payment sequence, its authority, economic source, recipient and any claimed upstream/downstream significance?",
+      "host_controls": [
+        "archive/JUAN_TOMAS_PARRILLA_IMAGE_4JAN2019_PAYMENT_SOURCE_CONTROL_23SEP2026.md"
+      ],
+      "decisive_test": "Invoice/authority plus matched payer debit and recipient credit, with complete ledger/source-of-funds bridge.",
+      "state": "KEEP_OPEN_SOURCE_GAP"
+    },
+    {
+      "review_id": "PD-IR-7JUNE-CONTROL-20260925",
+      "lane": "FORMAL_REAL_CONTROL_INCOME",
+      "priority": "ACTIVE_NEXT",
+      "question": "Which formal title/authority, possession/access, operation, commercial control, payment/income and beneficial-use states are proved at and after the 7 June 2018 pivot?",
+      "candidate_controls": [
+        {
+          "path": "assets/data/sun-park-7june2018-criminal-pivot-v1.json",
+          "host_state": "GITLAB_CURRENT_MAIN"
+        },
+        {
+          "path": "CHATGPT_START_HERE.md",
+          "host_state": "GITHUB_AND_GITLAB_CONTROL_CONTEXT"
+        }
+      ],
+      "decisive_test": "Date-specific primary source for each control dimension; no single 'control' label substitutes for the state-by-state chain.",
+      "state": "VERIFY_FURTHER"
+    },
+    {
+      "review_id": "PD-IR-DP1901-KNOWLEDGE-20260925",
+      "lane": "INSTITUTIONAL_NOTICE_KNOWLEDGE_DECISION",
+      "priority": "ACTIVE_NEXT",
+      "question": "For DP1901/Ref21/DIP2-related material, what was transmitted, registered, routed, incorporated, examined, adopted and used, by whom and when?",
+      "host_controls": [
+        "assets/data/dp1901-direct-action-state-20260920.json"
+      ],
+      "decisive_test": "Certified transmitted index/source corpus plus signed Fiscal/judicial records and handling/receipt trace capable of proving each rung separately.",
+      "state": "KEEP_OPEN_SOURCE_GAP"
+    },
+    {
+      "review_id": "PD-IR-OUTCOME-ROUTING-20260925",
+      "lane": "COMPETENT_OUTCOME_RECOVERY_ROUTE",
+      "priority": "CONTINUOUS",
+      "question": "For every material open proposition, which competent route can obtain the decisive record or grant the relevant preservation/recovery/correction act?",
+      "candidate_controls": [
+        {
+          "path": "ops/institutional-decision-accountability/README.md",
+          "host_state": "GITLAB_CURRENT_MAIN"
+        },
+        {
+          "path": "UNITARY_CRIMINAL_PROSECUTORIAL_DIGEST_03SEP2026.md",
+          "host_state": "GITHUB_CURRENT_MAIN"
+        }
+      ],
+      "decisive_test": "Finite competence-specific request with reusable source pack, contrary evidence, proof ceiling and closure/reopen criterion.",
+      "state": "PRESERVE_AND_MONITOR"
+    }
+  ],
+  "cross_host_note": "Candidate controls are intentionally host-qualified where current mains differ. Do not blind-copy host-specific material or treat an open branch as canonical."
+}
