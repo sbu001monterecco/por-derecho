@@ -4,8 +4,8 @@ on:
   pull_request:
     branches: [main]
     paths:
-      - 'es/index.html'
-      - 'en/index.html'
+      - 'es/portada-archivo-20260925.html'
+      - 'en/homepage-archive-20260925.html'
       - 'es/mapa-probatorio-penal-unitario/**'
       - 'en/unitary-criminal-evidence-map/**'
       - 'es/ingenieria-inversa-criminal-unitaria/**'
@@ -57,8 +57,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'es/index.html'
-      - 'en/index.html'
+      - 'es/portada-archivo-20260925.html'
+      - 'en/homepage-archive-20260925.html'
       - 'es/mapa-probatorio-penal-unitario/**'
       - 'en/unitary-criminal-evidence-map/**'
       - 'es/ingenieria-inversa-criminal-unitaria/**'
@@ -191,7 +191,7 @@ jobs:
 
           targets = {}
           for route in (
-              '/en/',
+              '/en/homepage-archive-20260925.html',
               '/en/unitary-criminal-evidence-map/',
               '/en/unitary-criminal-reverse-engineering/',
               '/en/sun-park-criminal-engineering-investigation/',
@@ -201,7 +201,7 @@ jobs:
           ):
               targets[route] = en_boundary
           for route in (
-              '/es/',
+              '/es/portada-archivo-20260925.html',
               '/es/mapa-probatorio-penal-unitario/',
               '/es/ingenieria-inversa-criminal-unitaria/',
               '/es/ingenieria-forense-criminal-sun-park/',
