@@ -10,7 +10,22 @@ try {
   const dataResponse = await context.request.get(`${base}/assets/data/fiscalia-proceedings-interconnectivity-v1.json`);
   if (!dataResponse.ok()) fail(`interconnectivity data returned ${dataResponse.status()}`);
   const data = await dataResponse.json();
-  if (data.coverage.communication_events !== 320) fail('communication denominator is not 320');
+  const successorIds = new Set([
+    'PD-SP-EVT-0497', 'PD-SP-EVT-0498', 'PD-SP-EVT-0499',
+    'PD-SP-EVT-1157', 'PD-SP-EVT-1158', 'PD-SP-EVT-1159',
+  ]);
+  const projectedIds = new Set(data.events.map(event => event.event_id));
+  const legacyEvents = data.events.filter(event => !successorIds.has(event.event_id));
+  if (projectedIds.size !== data.events.length) fail('duplicate projected communication');
+  if (legacyEvents.length !== 320 || ![...successorIds].every(id => projectedIds.has(id))) fail('legacy 320 / six successor identities not preserved');
+  if (data.coverage.communication_events !== 320 + successorIds.size || data.events.length !== 320 + successorIds.size) fail('communication projection denominator mismatch');
+  const canonicalResponse = await context.request.get(`${base}/assets/data/institutional-communications-register-v1.json`);
+  if (!canonicalResponse.ok()) fail(`canonical register returned ${canonicalResponse.status()}`);
+  const canonical = await canonicalResponse.json();
+  const successors = canonical.events.filter(event => String(event.source_key || '').startsWith('SUPPLEMENTAL_20260924:'));
+  if (successors.length !== successorIds.size || new Set(successors.map(event => event.event_id)).size !== successorIds.size || successors.some(event => !successorIds.has(event.event_id))) fail('source-controlled successor cohort differs');
+  const platformEvents = canonical.events.filter(event => String(event.source_key || '').startsWith('PD-CPA-20260925-07:'));
+  if (platformEvents.length !== 11 || new Set(platformEvents.map(event => event.event_id)).size !== 11 || platformEvents.some(event => projectedIds.has(event.event_id))) fail('platform correspondence incorrectly projected as a Fiscalia filing');
   if (data.coverage.matter_linked_events !== 141) fail('matter-linked denominator is not 141');
   if (data.coverage.fiscalia_exact_files !== 23 || data.coverage.fiscalia_unresolved_references !== 3) fail('Fiscalía identity denominator is not 23 + 3');
   if (data.event_proceeding_edges.length !== 164 || data.event_event_edges.length !== 84) fail('graph edge denominator changed');

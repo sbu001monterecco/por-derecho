@@ -151,6 +151,7 @@
         "scripts/build_fiscalia_proceedings_interconnectivity.py",
         "scripts/prepare_platform_incibe_20260925.py",
         "scripts/reconcile_institutional_communications.py",
+        "scripts/smoke_fiscalia_proceedings_interconnectivity.mjs",
         "scripts/test_build_fiscalia_proceedings_interconnectivity.py",
         "scripts/validate_fiscalia_proceedings_interconnectivity.py",
         "scripts/validate_redsara_authority_discovery.py"
