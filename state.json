@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 50,
   "owner": "1908:827d7c40010a11c724b5e93718682c28bbe481f8",
-  "phase": "MERGED",
+  "phase": "DEPLOYED",
   "pr": 1908,
   "base_sha": "d85dbf9b520dca7dd1fae3d12e6f963ca988dbc3",
   "candidate_sha": "827d7c40010a11c724b5e93718682c28bbe481f8",
@@ -2688,7 +2688,15 @@
       "evidence": {
         "merge_sha": "1c268449ec05c95ec32954c22fb282d317271a24"
       }
+    },
+    {
+      "phase": "DEPLOYED",
+      "at": "2026-09-25T23:07:27.067593Z",
+      "evidence": {
+        "pages_run_id": 36199357566,
+        "merge_sha": "1c268449ec05c95ec32954c22fb282d317271a24"
+      }
     }
   ],
-  "updated_at": "2026-09-25T23:04:14.070044Z"
+  "updated_at": "2026-09-25T23:07:27.067593Z"
 }
