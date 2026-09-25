@@ -1,0 +1,60 @@
+{
+  "schema": "por-derecho.homepage-orientation-successor.v1",
+  "control_date": "2026-09-25",
+  "status": "CURRENT_MAIN_SUCCESSOR_PENDING_MERGE",
+  "authorized_by": "Gil Marer",
+  "instruction": "Bring both GitHub and GitLab homepages to the best state while preserving substantive material and keeping institutional capital off the homepage.",
+  "current_homepages": {
+    "en": {
+      "path": "en/index.html",
+      "role": "orientation_and_trust_layer",
+      "sha256": "51e73bfcdceb1e80c1d944bde90d79add6ffa0e843b15a39e8e615cf82212ada"
+    },
+    "es": {
+      "path": "es/index.html",
+      "role": "orientation_and_trust_layer",
+      "sha256": "13ae54cb1431257783e6646e814a118edc3b1a247f392151f12a3c5b9ae68595"
+    }
+  },
+  "preserved_long_form_archives": {
+    "en": {
+      "path": "en/homepage-archive-20260925.html",
+      "source_blob_sha1": "63bfcc5c61cbe767bad9fa0da74d0afe6e641c95",
+      "robots": "noindex,nofollow"
+    },
+    "es": {
+      "path": "es/portada-archivo-20260925.html",
+      "source_blob_sha1": "d64bc5f7a19057702822442284f13d8fc4c860a2",
+      "robots": "noindex,nofollow"
+    }
+  },
+  "preservation_policy": {
+    "deleted_substantive_content": false,
+    "archive_linked_from_recovery": true,
+    "five_actor_lock_relocated_not_removed": true,
+    "san_telmo_attribution_relocated_not_removed": true,
+    "valencia_calificacion_david_espejo_unitary_icam_and_related_legacy_homepage_checks_retargeted_to_archives": true
+  },
+  "homepage_routes": {
+    "en": [
+      "Recovery",
+      "Future",
+      "Por Derecho",
+      "Evidence",
+      "Updates",
+      "More"
+    ],
+    "es": [
+      "Recuperación",
+      "Futuro",
+      "Por Derecho",
+      "Evidencia",
+      "Actualizaciones",
+      "Más"
+    ]
+  },
+  "capital_boundary": "Homepage → Future/Futuro → Institutional Capital/Capital Institucional. No direct capital promotion on the homepage.",
+  "canonical_contract": "ops/HOMEPAGE_CANONICAL_CONTRACT_20260925.json",
+  "gitlab_role": "byte-identical resilience/mirror source; canonical metadata remains pointed at GitHub public origin",
+  "open_external_blocker": "GitLab Pages live deployment remains contingent on available GitLab CI/shared-runner quota."
+}
