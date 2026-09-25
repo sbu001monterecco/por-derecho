@@ -64,3 +64,19 @@ No separate public LinkedIn London leadership/support mailbox is treated as veri
 Documented fact ≠ provider statement ≠ allegation ≠ inference ≠ hypothesis ≠ official finding.  
 Repetition ≠ proof. Chronology ≠ causation. Incentive ≠ participation. Public funding ≠ misuse. Account restriction ≠ proof of abusive reporting.  
 Reporter identity, reporter geography and restriction causation remain open unless provider-native or authoritative legal evidence establishes them.
+
+## Interim restoration / complete controlled package
+
+Later on 25 September, after the fresh Persona flow was completed and the same-case completion notice sent, the existing appeal thread was supplemented again with an urgent interim-restoration request.
+
+The request:
+- asks LinkedIn to move from repeated identity verification to an urgent human decision;
+- seeks interim restoration while any remaining review continues, or the least restrictive temporary security measure LinkedIn considers sufficient;
+- asks LinkedIn to identify any specific remaining identity defect rather than restarting identity verification without explanation;
+- seeks confirmation of the fresh Persona result, responsible review team, case-specific restriction basis/trigger and preservation; and
+- re-supplies the complete controlled evidence package already used for the UK/evidential escalation.
+
+The four attached PDFs comprise the concise LinkedIn UK evidential-context note, Gil Marer's signed SNCA/IGAE communication, his CNMV institutional communication and the source-controlled Sun Park / MYND Yaiza documentary dossier. The institutional communications establish the content/timing of his notices and requests, not adoption of their allegations by the recipient authorities.
+
+Outbound transmission in the existing case is verified. LinkedIn review of the attachments, Persona acceptance, restoration and trigger classification remain open.
+
