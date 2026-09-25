@@ -645,6 +645,35 @@ When any lawyer, firm, procurador, counsel handover, fee dispute, venia, filing,
 - Native Gmail/Drive material and privileged/private material stay outside public Git.
 
 
+## 13A. Global Truth Machine v2 — mandatory adverse-filing intake
+
+Apply `PD-TRUTH-METHOD-20260925-02` / the current successor in
+`governance/GLOBAL_FORENSIC_DOCUMENT_REVIEW_25SEP2026.md` and
+`assets/data/truth-machine-methodology-v2.json` to **every incoming filing,
+pleading, opposition, submission, annex, evidential package or material
+representation from a non-project party or actor that is adverse or materially
+adverse in the relevant matter**.
+
+- This is an automatic **review trigger**, not a presumption that the source is
+  false, dishonest or acting in bad faith.
+- Treat selection/context risk as the standing question: test whether the
+  document is fair and complete, narrowly selective, materially incomplete,
+  context-distorting, contradictory, derivative, misattributed, temporally
+  misleading, numerically distorted or procedurally overstated.
+- Give each filing its own source-bound track/envelope and link it to the unitary
+  evidence graph; preserve both proposition-level detail and the filing's
+  cumulative theory/effect.
+- Test exact words, omissions, underlying sources, full contemporaneous context,
+  contrary/adverse material, actor/capacity/time, denominators, financial scope,
+  procedural status, source lineage/reuse, adoption/effect, benefit/harm,
+  causation, lawful alternatives and decisive open proof.
+- Never promote omission/selectivity alone into lie, dishonesty, knowing
+  falsehood, bad faith, intent or criminal purpose. Those are separate
+  high-threshold conclusions requiring actor-specific source support.
+- An unfavourable judicial, prosecutorial or institutional act is not
+  automatically an adverse-party filing; use a separate institutional-output
+  lane where the same fidelity/context/provenance tests are materially useful.
+
 ## 14. Administrador Concursal claim-family graph and R33 crosswalk
 
 Whenever Francisco de Borja Rodríguez-Batllori Laffitte, the Administrador Concursal, RPL 3304/2025, R33, removal, remuneration, DP 1956, 2018 access/control, ONA/Clubotel, estate reconciliation or an AC-linked professional interaction is in scope, apply **PD-AC-CLAIMS-R33-20260922-01** through `.github/governance/AC_CLAIMS_R33_ACTOR_GRAPH_PROTOCOL_22SEP2026.md` and `assets/data/ac-claims-r33-crosswalk-v1.json`.
