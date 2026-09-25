@@ -23,20 +23,23 @@
       "id": "C36-SPECIALIST-R33",
       "title": "R33 · AC opposition in RPL 3304/2025 · 14 Sep 2026",
       "mode": "document",
-      "status": "LIVE_VISUALIZED_GITHUB",
+      "status": "METHOD_STACK_APPLIED_SOURCE_REVIEW_ACTIVE",
       "source_scope": "22 pages; recovered v3 structure; private native source retained outside public Git",
       "sources": [
         {
           "path": "assets/data/r33-truth-machine-visual-20260925.json",
-          "github_blob_sha": "b657ef8deac0abffd02f68a72a6bf6b5814e4627",
-          "gitlab_blob_sha": "b657ef8deac0abffd02f68a72a6bf6b5814e4627"
+          "github_blob_sha": "1fb21667cca5b065f16954204ece6372c4b26e3d",
+          "gitlab_blob_sha": "1fb21667cca5b065f16954204ece6372c4b26e3d",
+          "pin_note": "Updated only because the reviewed R33 public aggregate itself changed in PD-TRUTH-METHOD-STACK-20260925-01; exact same blob on both candidate hosts."
         }
       ],
       "public_routes": {
         "en": "/en/r33-truth-machine-visual/",
         "es": "/es/r33-maquina-verdad-visual/"
       },
-      "next_action": "REOPEN_ONLY_ON_MATERIAL_SOURCE_OR_DEPENDENCY_CHANGE"
+      "next_action": "COMPLETE_FINITE_SOURCE_REVIEW_FOR_REMAINING_NARROWING_FALSEHOOD_AND_KNOWLEDGE_CANDIDATES",
+      "method_stack_control": "PD-TRUTH-METHOD-STACK-20260925-01",
+      "source_review_control": "PD-R33-METHOD-STACK-SOURCE-REVIEW-20260925-01"
     },
     {
       "rank": 1,

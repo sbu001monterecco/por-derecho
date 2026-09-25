@@ -13,7 +13,9 @@ on:
       - "archive/**"
       - "assets/data/**"
       - "legaltech/unitary_review/context_integrity.py"
+      - "legaltech/unitary_review/method_stack.py"
       - "legaltech/unitary_review/recursive_priority_queue.py"
+      - "recovery_tests/test_method_stack.py"
       - "recovery_tests/test_recursive_priority_queue.py"
   pull_request:
     paths:
@@ -36,8 +38,10 @@ jobs:
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: "3.12"
-      - name: Run recursive queue regression tests
-        run: python -m unittest recovery_tests.test_recursive_priority_queue -v
+      - name: Run method-stack and recursive queue regression tests
+        run: |
+          python -m unittest recovery_tests.test_method_stack -v
+          python -m unittest recovery_tests.test_recursive_priority_queue -v
       - name: Execute source-bound queue triage
         run: python legaltech/unitary_review/recursive_priority_queue.py --host github --output /tmp/truth-machine-queue-report.json
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
