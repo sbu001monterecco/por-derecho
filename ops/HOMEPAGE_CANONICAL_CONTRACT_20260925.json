@@ -1,0 +1,79 @@
+{
+  "schema": "por-derecho.homepage-canonical-contract.v1",
+  "control_date": "2026-09-25",
+  "canonical_public_origin": "https://sbu001monterecco.github.io/por-derecho/",
+  "mirror_origin": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/",
+  "purpose": "Keep the public homepage a concise orientation and trust layer while preserving the long-form record behind Recovery/Evidence routes.",
+  "homepage": {
+    "en": {
+      "path": "en/index.html",
+      "sha256": "51e73bfcdceb1e80c1d944bde90d79add6ffa0e843b15a39e8e615cf82212ada",
+      "max_bytes": 120000
+    },
+    "es": {
+      "path": "es/index.html",
+      "sha256": "13ae54cb1431257783e6646e814a118edc3b1a247f392151f12a3c5b9ae68595",
+      "max_bytes": 125000
+    }
+  },
+  "required_first_level": {
+    "en": [
+      "Recovery",
+      "Future",
+      "Por Derecho",
+      "Evidence",
+      "Updates",
+      "More"
+    ],
+    "es": [
+      "Recuperación",
+      "Futuro",
+      "Por Derecho",
+      "Evidencia",
+      "Actualizaciones",
+      "Más"
+    ]
+  },
+  "required_routes": {
+    "en": [
+      "recovery-command-center/",
+      "future/",
+      "por-derecho/",
+      "evidence/",
+      "updates/",
+      "legal-notebook/"
+    ],
+    "es": [
+      "centro-mando-recuperacion/",
+      "futuro/",
+      "por-derecho/",
+      "evidencia/",
+      "actualizaciones/",
+      "cuaderno-juridico/"
+    ]
+  },
+  "required_sections": {
+    "en": [
+      "id=\"choose-route\"",
+      "60-second orientation",
+      "How to read the record"
+    ],
+    "es": [
+      "id=\"elegir-via\"",
+      "60 segundos",
+      "Cómo leer el expediente"
+    ]
+  },
+  "forbidden_homepage_tokens": [
+    "institutional-capital/",
+    "capital-institucional/",
+    "class=\"capital-entry\"",
+    "href=\"#future\"",
+    "href=\"#futuro\""
+  ],
+  "preserved_archives": [
+    "en/homepage-archive-20260925.html",
+    "es/portada-archivo-20260925.html"
+  ],
+  "capital_boundary": "Homepage → Future/Futuro → Institutional Capital/Capital Institucional. No direct homepage capital promotion."
+}
