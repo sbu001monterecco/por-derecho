@@ -69,3 +69,11 @@ The public page requests preservation of native account-security, moderation, re
 - Separately, Spanish appellate counsel has been instructed to assess whether the LinkedIn restriction and related provider-native records should be introduced now as a supervening evidential/preservation development in RPL 3304/2025, reserved until the Sala rules on pending evidence, or handled through another procedural vehicle.
 - No court filing or judicial receipt is claimed at this stage. The purpose is preservation and evidential continuity, not attribution of the restriction to any external actor.
 
+## 25 September 2026 — Article 21 independent redress activated
+
+- User Rights GmbH's published terms state that its Article 21 dispute-resolution form may be requested by email as an alternative to the web form.
+- A formal email request was sent to User Rights concerning the single 23 September LinkedIn account-restriction decision. The request asks User Rights to provide the complaint form or confirm whether the supplied information can be converted into/opened as an Article 21 dispute.
+- The request was deliberately framed as a moderation/account-enforcement dispute, not a hacking/account-compromise complaint.
+- Only the provider-native restriction notice and provenance/metadata support were supplied at this stage. No passport, selfie or broader Sun Park evidential dossier was sent.
+- Transmission is verified. No User Rights case ID or Article 21 merits proceeding is yet established; that remains pending User Rights' reply.
+
