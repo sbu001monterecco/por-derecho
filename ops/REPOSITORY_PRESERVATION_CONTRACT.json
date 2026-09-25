@@ -135,7 +135,10 @@
       "scripts/render_ac_community_de_facto_administration.mjs",
       "scripts/render_audience_experience.mjs",
       "scripts/validate_ac_community_de_facto_administration.py",
-      "scripts/validate_audience_experience.py"
+      "scripts/validate_audience_experience.py",
+      "ops/HOMEPAGE_CANONICAL_CONTRACT_20260925.json",
+      "publication-manifests/homepage-orientation-successor-20260925.json",
+      "ci/homepage_canonical_contract_20260925.py"
     ],
     "required_homepage_structure": {
       "private_actor_cards": 5,
