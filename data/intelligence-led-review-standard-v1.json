@@ -151,7 +151,11 @@
     "independent_or_second_pair_review_should_be_recorded_where_practicable": true,
     "self_review_only_must_be_disclosed_when_no_independent_reviewer_is_available": true,
     "no_institutional_endorsement_claimed": true,
-    "does_not_activate_new_ci_hard_gate": true
+    "does_not_activate_new_ci_hard_gate": true,
+    "insolvency_entry_is_not_causation_or_culpability": true,
+    "positive_agency_must_be_retrieved_when_causation_is_assessed": true,
+    "money_in_money_out_requires_complete_ledger": true,
+    "formal_calificacion_not_generic_guilt_label": true
   },
   "priority_factors": [
     "actual_or_potential_harm",
@@ -184,5 +188,8 @@
     "records_corrected_or_status_updated",
     "referrals_with_complete_source_pack",
     "reviews_completed_or_self_review_limitation_recorded"
+  ],
+  "cross_controls": [
+    "PD-PROTECTIVE-ORIGIN-ROLE-REVERSAL-20260925-01"
   ]
 }
