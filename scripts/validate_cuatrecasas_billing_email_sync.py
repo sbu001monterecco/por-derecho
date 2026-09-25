@@ -97,21 +97,21 @@ route_markers = {
         "ruta Elaia/Lagune documentada",
         'href="../cuatrecasas-sun-park/"',
     ),
-    "en/index.html": (
+    "en/homepage-archive-20260925.html": (
         "Stoneweg binding conditional offer issued",
         "documented Elaia/Lagune downside route",
         'href="cuatrecasas-sun-park/"',
     ),
-    "es/index.html": (
+    "es/portada-archivo-20260925.html": (
         "oferta vinculante condicional Stoneweg emitida",
         "ruta Elaia/Lagune documentada",
         'href="cuatrecasas-sun-park/"',
     ),
-    "en/updates/index.html": (
+    "en/updates/portada-archivo-20260925.html": (
         "cuatrecasas-package-billing-24aug",
         "Campaign research and drafting may resume",
     ),
-    "es/actualizaciones/index.html": (
+    "es/actualizaciones/portada-archivo-20260925.html": (
         "cuatrecasas-paquete-facturacion-24ago",
         "Pueden reanudarse investigación y preparación de borradores",
     ),
