@@ -1,39 +1,60 @@
-name: Bounded homepage refinement authoring 20260925
+name: Bounded homepage refinement verification 20260925
 on:
   push:
     branches: [maintenance/homepage-refinement-authoring-20260925]
     paths: ['.maintenance-homepage/**', '.github/workflows/homepage-refinement-authoring-20260925.yml']
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: homepage-refinement-authoring-20260925
   cancel-in-progress: false
 jobs:
-  prepare:
+  verify:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
-          ref: main
+          ref: 52c0e2998c999bf443ee6b8310da2730917116ff
           path: site
           fetch-depth: 0
           persist-credentials: false
-      - name: Prepare source-preserving candidate; do not move any public ref
+      - name: Validate the exact committed candidate without writing any repository ref
+        shell: bash
         env:
-          GH_TOKEN: ${{ github.token }}
-        run: python3 .maintenance-homepage/repair-driver.py "$GITHUB_WORKSPACE/site" "$GITHUB_WORKSPACE/review"
+          GITHUB_BASE_SHA: d457ed39af169d78d1f9e8eb538a0dbacbff52f6
+          GITHUB_HEAD_SHA: 52c0e2998c999bf443ee6b8310da2730917116ff
+        run: |
+          set -euo pipefail
+          mkdir -p review/source
+          cd site
+          test "$(git rev-parse HEAD)" = "$GITHUB_HEAD_SHA"
+          git diff --check "$GITHUB_BASE_SHA" HEAD
+          git diff --binary "$GITHUB_BASE_SHA" HEAD > ../review/candidate.patch
+          git diff --name-only "$GITHUB_BASE_SHA" HEAD > ../review/changed-paths.txt
+          git rev-parse HEAD > ../review/tested-sha.txt
+          while IFS= read -r path; do
+            mkdir -p "../review/source/$(dirname "$path")"
+            cp "$path" "../review/source/$path"
+          done < ../review/changed-paths.txt
+          python3 scripts/validate_repository_preservation.py | tee ../review/preservation.log
+          python3 scripts/validate_publication_integrity.py | tee ../review/publication.log
+          python3 scripts/validate_audience_experience.py | tee ../review/audience.log
+          python3 scripts/validate_cam_creditor_control_criminal_lead.py | tee ../review/attribution.log
+          node --check assets/audience-experience-order-20260823.js
+          node --check assets/optimum-reader-journey-finish-20260818.js
+          node --check assets/unitary-public-shell-20260818.js
       - name: Install bounded browser-test dependency
         run: python3 -m pip install --quiet playwright==1.55.0
-      - name: Render and test both languages
+      - name: Render both languages with and without JavaScript after legacy scripts settle
         run: python3 .maintenance-homepage/browser.py "$GITHUB_WORKSPACE/site" "$GITHUB_WORKSPACE/review"
       - name: Preserve review outputs
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
-          name: homepage-refinement-review
+          name: homepage-refinement-completion-review
           path: review
-          retention-days: 7
+          retention-days: 14
