@@ -1,0 +1,145 @@
+{
+  "schema": "por-derecho.uk-intelligence-method-crosswalk.v1",
+  "control_id": "PD-UK-INTEL-CROSSWALK-20260925-01",
+  "status": "ADVISORY_CROSS_CUTTING_MAPPING",
+  "principle": "Import methodology, not foreign-matter facts, actors, powers or outcomes.",
+  "mappings": [
+    {
+      "uk_practice": "Authoritative register data: known / checking / concerns / corrections",
+      "por_derecho_function": "Authoritative-data state + correction/supersession propagation",
+      "existing_systems": [
+        "evidence-state controls",
+        "correction register",
+        "context-integrity controls"
+      ],
+      "implementation": [
+        "data/intelligence-led-review-standard-v1.json",
+        ".github/evidence-intelligence/schemas/intelligence-review.schema.json"
+      ]
+    },
+    {
+      "uk_practice": "Pattern analytics and connected-company intelligence",
+      "por_derecho_function": "Signal and graph-edge generation without guilt-by-association",
+      "existing_systems": [
+        "case interlink",
+        "Puzzle/evidence graph",
+        "identity registry"
+      ],
+      "implementation": [
+        "source-independence state",
+        "link-hypothesis falsification",
+        "edge qualification"
+      ]
+    },
+    {
+      "uk_practice": "Independent checks against real-world presence, auditors, trading and control",
+      "por_derecho_function": "Formal-record-versus-reality test",
+      "existing_systems": [
+        "source bridge",
+        "truth inversion/context integrity",
+        "evidence ingestion"
+      ],
+      "implementation": [
+        "record_vs_reality",
+        "decisive_test"
+      ]
+    },
+    {
+      "uk_practice": "Strategic assessment / horizon scanning / prioritisation",
+      "por_derecho_function": "Priority work allocation",
+      "existing_systems": [
+        "unitary action programme",
+        "priority actions"
+      ],
+      "implementation": [
+        "priority_rationale",
+        "review_trigger"
+      ],
+      "guardrail": "No guilt/electability/credibility style score; narrative prioritisation only."
+    },
+    {
+      "uk_practice": "4P control strategy",
+      "por_derecho_function": "Prepare / Prevent / Pursue / Protect workflow overlay",
+      "existing_systems": [
+        "Second Pair of Eyes",
+        "authority routing",
+        "publication/custody controls"
+      ],
+      "implementation": [
+        "four_p_lanes"
+      ]
+    },
+    {
+      "uk_practice": "Fraud Risk Assessments and control inventory",
+      "por_derecho_function": "Recurring-failure control review",
+      "existing_systems": [
+        "governance validators",
+        "continuity controls"
+      ],
+      "implementation": [
+        "control_assessment"
+      ],
+      "guardrail": "System control effectiveness and residual risk are not actor culpability."
+    },
+    {
+      "uk_practice": "Joined case management",
+      "por_derecho_function": "One source-referenced review packet rather than fragmented narratives",
+      "existing_systems": [
+        "institutional decision accountability",
+        "unitary review",
+        "evidence intelligence"
+      ],
+      "implementation": [
+        "case_packet_minimum",
+        "case_packet_gaps"
+      ]
+    },
+    {
+      "uk_practice": "Structured referrals and evidential standards",
+      "por_derecho_function": "Finite competent-authority handoff envelope",
+      "existing_systems": [
+        "institutional communications",
+        "authority action matrix",
+        "Second Pair handoff"
+      ],
+      "implementation": [
+        "competence_route",
+        "finite_requested_act",
+        "reusable source pack"
+      ]
+    },
+    {
+      "uk_practice": "Peer/supervisory/independent review",
+      "por_derecho_function": "Second-pair challenge before consequential action",
+      "existing_systems": [
+        "Second Pair of Eyes",
+        "Test the Argument"
+      ],
+      "implementation": [
+        "second_pair"
+      ],
+      "guardrail": "If independence is unavailable, record SELF_REVIEW_ONLY."
+    },
+    {
+      "uk_practice": "Monitoring, outcome measurement and iterative controls",
+      "por_derecho_function": "Review / correction / reopen cycle",
+      "existing_systems": [
+        "control plane",
+        "status history",
+        "supersession"
+      ],
+      "implementation": [
+        "review_trigger",
+        "status_history",
+        "quality metrics"
+      ]
+    }
+  ],
+  "foreign_matter_firewall": {
+    "uk_case_actors_ingested_into_sun_park_graph": false,
+    "uk_case_outcomes_ingested_as_sun_park_evidence": false,
+    "uk_statutory_powers_imported": false,
+    "method_and_control_design_only": true
+  },
+  "cross_host_rule": "If an existing target control is present on only one current main, preserve the mirror gap and reconcile from verified source bytes; do not reconstruct it from chat memory."
+}
