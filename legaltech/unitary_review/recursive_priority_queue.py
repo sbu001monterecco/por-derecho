@@ -6,12 +6,15 @@ parity, and applies bounded candidate cues to readable text. It never promotes
 truth, intent, credibility, guilt or liability and never mutates evidence.
 """
 from __future__ import annotations
-import argparse,json,os,re,subprocess
+import argparse,json,os,re,subprocess,sys
 from collections import Counter
 from pathlib import Path
-from legaltech.unitary_review.context_integrity import candidate_cues
 
 ROOT=Path(__file__).resolve().parents[2]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0,str(ROOT))
+
+from legaltech.unitary_review.context_integrity import candidate_cues
 
 def detect_host():
     if os.environ.get("GITLAB_CI"): return "gitlab"
