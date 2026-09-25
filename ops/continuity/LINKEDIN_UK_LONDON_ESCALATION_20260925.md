@@ -10,6 +10,7 @@
 - On 24 September 2026, LinkedIn Customer Support stated that the member's follow-up had been forwarded to another group for additional review and advice, that additional research might be required, and that additional cases should not be created while the inquiry remains under review.
 - That is a provider statement about process only. It is not a merits determination, restoration decision, trigger classification or finding that any external person reported the account.
 - Gil Marer has told LinkedIn that Persona identity verification was successfully completed using a renewed UK passport. Restoration and the provider's case-specific explanation remain pending.
+- On 25 September 2026 LinkedIn changed case **260923-029467** to **Waiting For Information** and requested a fresh government-ID verification through its Persona checkpoint, followed by a reply to the existing case. LinkedIn stated that identity documents are no longer accepted by email attachment. The account holder states that he completed the fresh Persona flow with a new selfie and government-issued identity document and then replied in the same case thread. LinkedIn has not yet confirmed receipt of the new Persona result or restored access.
 - Reference **260923-005700** remains the privacy / Article 15 / preservation lane and is kept distinct from the open appeal.
 
 ## Relationship-and-urgency escalation

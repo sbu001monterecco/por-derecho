@@ -84,6 +84,14 @@
       "status": "OUTBOUND_PRESERVATION_AND_RELATIONSHIP_ESCALATION",
       "summary": "Existing appeal/support and privacy/preservation threads were supplemented with UK-business relationship context, litigation-preservation requirements, source/trigger questions and a post-restoration paid-customer intention; no duplicate support case was created.",
       "attribution": "outbound request only; no external actor or causal attribution"
+    },
+    {
+      "id": "PD-PLAT-LI-20260925-IDV2",
+      "platform": "LinkedIn",
+      "date": "2026-09-25",
+      "status": "PROVIDER_WAITING_FOR_INFORMATION_USER_COMPLETED",
+      "summary": "LinkedIn changed case 260923-029467 to Waiting For Information and requested a fresh Persona government-ID verification followed by a reply to the existing case. The account holder states that the new Persona flow was completed and a same-thread completion notice was sent.",
+      "attribution": "provider request documented; user completion reported and outbound notice verified; provider receipt, restoration, trigger and external cause not established"
     }
   ],
   "connected_routes": {
