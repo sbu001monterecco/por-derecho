@@ -93,6 +93,14 @@
       "status": "PROVIDER_WAITING_FOR_INFORMATION_USER_COMPLETED",
       "summary": "LinkedIn changed case 260923-029467 to Waiting For Information and requested a fresh Persona government-ID verification followed by a reply to the existing case. The account holder states that the new Persona flow was completed and a same-thread completion notice was sent.",
       "attribution": "provider request documented; user completion reported and outbound notice verified; provider receipt, restoration, trigger and external cause not established"
+    },
+    {
+      "id": "PD-PLAT-LI-20260925-INTERIM-RESTORATION",
+      "platform": "LinkedIn",
+      "date": "2026-09-25",
+      "status": "OUTBOUND_VERIFIED_PROVIDER_RESPONSE_PENDING",
+      "summary": "After completing the fresh Persona flow, the account holder replied in the existing appeal case seeking urgent interim restoration or the least restrictive temporary security measure while review continues, and supplied a controlled four-PDF evidence package. Transmission is verified; provider review, Persona acceptance, restoration and trigger classification remain pending.",
+      "attribution": "not applicable"
     }
   ],
   "connected_routes": {
