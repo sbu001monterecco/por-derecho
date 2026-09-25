@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 45,
   "owner": "1850:196bbee5fe50418f8f530cc1aa6ffc2189f8e6ce",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 1850,
   "base_sha": "1f8a2f6c5e4b23bae21bffa6a7f653eb15e01484",
   "candidate_sha": "196bbee5fe50418f8f530cc1aa6ffc2189f8e6ce",
@@ -2415,6 +2415,57 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 1850,
+      "candidate_sha": "196bbee5fe50418f8f530cc1aa6ffc2189f8e6ce",
+      "at": "2026-09-25T08:50:18.077689Z",
+      "merge_sha": "ef9b81d7cb5ce0514719c254793f39447c38af59",
+      "pages_run_id": 36114907217,
+      "exact_matches": [
+        {
+          "path": "assets/data/truth-machine-priority-queue-v1.json",
+          "sha256": "b60c6edc5b72856c507e911cd6e2a74a4f6f1de2cb597af254107a5d9e6741ba",
+          "bytes": 4971
+        },
+        {
+          "path": "en/index.html",
+          "sha256": "d3917a91f8073c65c4a5b1e4395a0f5e10688fd09b97838ffe411e6dda42397b",
+          "bytes": 233625
+        },
+        {
+          "path": "en/r33-truth-machine-visual/index.html",
+          "sha256": "76a24065c66b32cd1b1ef2898152e8721a9885c7676fa04c99335557f932c4a8",
+          "bytes": 8477
+        },
+        {
+          "path": "en/truth-machine/index.html",
+          "sha256": "9a83c311c1c9317e3cf96ad22be22d4381e27a1f83c1b6b8d18e06068dea64a9",
+          "bytes": 4503
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "0ae46753cc4880fed0770ef0237856587cb89f0d99c56d2a91d4f6b8d7e01d63",
+          "bytes": 242931
+        },
+        {
+          "path": "es/maquina-verdad/index.html",
+          "sha256": "4eb5e83587e7e8e8d863ea8cb8ad9e68a11b1782c25de7f63129024ecc51bbd3",
+          "bytes": 4642
+        },
+        {
+          "path": "es/r33-maquina-verdad-visual/index.html",
+          "sha256": "53780ed9c38dadba171c9b722d7e7f54f8a43925571001e679f65cc2009ff692",
+          "bytes": 8602
+        },
+        {
+          "path": "ops/continuity/TRUTH_MACHINE_RECURSIVE_QUEUE_20260925.md",
+          "sha256": "71f45d5c22594d0002b8876c34a93a34bad2202254d6d083c7283674bd91d5fd",
+          "bytes": 1756
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -2457,7 +2508,59 @@
         "pages_run_id": 36114907217,
         "merge_sha": "ef9b81d7cb5ce0514719c254793f39447c38af59"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-25T08:50:18.077640Z",
+      "evidence": {
+        "merge_sha": "ef9b81d7cb5ce0514719c254793f39447c38af59",
+        "pages_run_id": 36114907217,
+        "exact_matches": [
+          {
+            "path": "assets/data/truth-machine-priority-queue-v1.json",
+            "sha256": "b60c6edc5b72856c507e911cd6e2a74a4f6f1de2cb597af254107a5d9e6741ba",
+            "bytes": 4971
+          },
+          {
+            "path": "en/index.html",
+            "sha256": "d3917a91f8073c65c4a5b1e4395a0f5e10688fd09b97838ffe411e6dda42397b",
+            "bytes": 233625
+          },
+          {
+            "path": "en/r33-truth-machine-visual/index.html",
+            "sha256": "76a24065c66b32cd1b1ef2898152e8721a9885c7676fa04c99335557f932c4a8",
+            "bytes": 8477
+          },
+          {
+            "path": "en/truth-machine/index.html",
+            "sha256": "9a83c311c1c9317e3cf96ad22be22d4381e27a1f83c1b6b8d18e06068dea64a9",
+            "bytes": 4503
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "0ae46753cc4880fed0770ef0237856587cb89f0d99c56d2a91d4f6b8d7e01d63",
+            "bytes": 242931
+          },
+          {
+            "path": "es/maquina-verdad/index.html",
+            "sha256": "4eb5e83587e7e8e8d863ea8cb8ad9e68a11b1782c25de7f63129024ecc51bbd3",
+            "bytes": 4642
+          },
+          {
+            "path": "es/r33-maquina-verdad-visual/index.html",
+            "sha256": "53780ed9c38dadba171c9b722d7e7f54f8a43925571001e679f65cc2009ff692",
+            "bytes": 8602
+          },
+          {
+            "path": "ops/continuity/TRUTH_MACHINE_RECURSIVE_QUEUE_20260925.md",
+            "sha256": "71f45d5c22594d0002b8876c34a93a34bad2202254d6d083c7283674bd91d5fd",
+            "bytes": 1756
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-25T08:50:14.792160Z"
+  "updated_at": "2026-09-25T08:50:18.077640Z"
 }
