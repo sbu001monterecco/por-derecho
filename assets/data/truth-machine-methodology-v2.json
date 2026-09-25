@@ -1,0 +1,338 @@
+{
+  "schema": "por-derecho.truth-machine-methodology.v2",
+  "control": "PD-TRUTH-METHOD-20260925-02",
+  "generated_at": "2026-09-25",
+  "boundary": {
+    "en": "Source-bound forensic review, not a linguistic lie detector. Language features generate review questions; they do not establish falsity, intent, credibility, criminality, guilt or liability.",
+    "es": "Revisión forense anclada a fuentes, no detector lingüístico de mentiras. Los rasgos del lenguaje generan preguntas de revisión; no acreditan falsedad, intención, credibilidad, criminalidad, culpabilidad ni responsabilidad."
+  },
+  "architecture": [
+    [
+      "A01",
+      "Preserve & identify",
+      "Preservar e identificar"
+    ],
+    [
+      "A02",
+      "Decompose without atomising",
+      "Descomponer sin atomizar"
+    ],
+    [
+      "A03",
+      "Linguistic & semantic pass",
+      "Pasada lingüística y semántica"
+    ],
+    [
+      "A04",
+      "Actor / capacity / time",
+      "Actor / capacidad / tiempo"
+    ],
+    [
+      "A05",
+      "Source lineage & independence",
+      "Linaje e independencia"
+    ],
+    [
+      "A06",
+      "Adversarial reality check",
+      "Contraste adversarial"
+    ],
+    [
+      "A07",
+      "Financial & benefit trace",
+      "Trazado financiero y de beneficio"
+    ],
+    [
+      "A08",
+      "Procedural scope & authority",
+      "Alcance procesal y autoridad"
+    ],
+    [
+      "A09",
+      "Dependency graph & recursion",
+      "Grafo de dependencias y recursión"
+    ],
+    [
+      "A10",
+      "Human signoff & correction",
+      "Revisión humana y corrección"
+    ]
+  ],
+  "linguistic_layers": [
+    [
+      "L01",
+      "Literal fidelity",
+      "Fidelidad literal",
+      [
+        "quotation",
+        "ellipses",
+        "negation",
+        "exceptions",
+        "qualifiers"
+      ]
+    ],
+    [
+      "L02",
+      "Modality & certainty",
+      "Modalidad y certeza",
+      [
+        "may/might/could",
+        "conditional",
+        "categorical restatement"
+      ]
+    ],
+    [
+      "L03",
+      "Quantifiers & scope",
+      "Cuantificadores y alcance",
+      [
+        "some/all",
+        "one/many",
+        "always/never",
+        "denominator"
+      ]
+    ],
+    [
+      "L04",
+      "Attribution & speech act",
+      "Atribución y acto de habla",
+      [
+        "allegation",
+        "denial",
+        "thanks",
+        "apology",
+        "request",
+        "legal argument"
+      ]
+    ],
+    [
+      "L05",
+      "Temporal & knowledge",
+      "Temporal y conocimiento",
+      [
+        "event date",
+        "receipt",
+        "reading",
+        "notice",
+        "later adoption"
+      ]
+    ],
+    [
+      "L06",
+      "Actor / entity / capacity",
+      "Actor / entidad / capacidad",
+      [
+        "person",
+        "company",
+        "estate",
+        "Community",
+        "AC",
+        "judge",
+        "prosecutor"
+      ]
+    ],
+    [
+      "L07",
+      "Causation & inference",
+      "Causalidad e inferencia",
+      [
+        "premise→conclusion",
+        "correlation",
+        "benefit",
+        "mechanism",
+        "alternative cause"
+      ]
+    ],
+    [
+      "L08",
+      "Context delta",
+      "Delta de contexto",
+      [
+        "original purpose",
+        "later use",
+        "omitted material context",
+        "restored conclusion"
+      ]
+    ],
+    [
+      "L09",
+      "Procedural semantics",
+      "Semántica procesal",
+      [
+        "draft",
+        "filed",
+        "received",
+        "admitted",
+        "considered",
+        "held",
+        "appealed",
+        "final"
+      ]
+    ],
+    [
+      "L10",
+      "Numbers & denominators",
+      "Números y denominadores",
+      [
+        "amount category",
+        "sample/universe",
+        "double counting",
+        "precision"
+      ]
+    ],
+    [
+      "L11",
+      "Rhetoric vs proposition",
+      "Retórica frente a proposición",
+      [
+        "character attack",
+        "motive language",
+        "loaded framing"
+      ]
+    ],
+    [
+      "L12",
+      "Lineage & reuse",
+      "Linaje y reutilización",
+      [
+        "first source",
+        "copy/forward",
+        "later pleading",
+        "institutional reuse",
+        "independent corroboration"
+      ]
+    ]
+  ],
+  "graph_chain": [
+    "ORIGIN",
+    "AUTHORITY",
+    "ACTOR",
+    "CAPACITY",
+    "ACT_OR_OMISSION",
+    "DOCUMENT",
+    "PROCEEDING",
+    "TREATMENT",
+    "CONSEQUENCE",
+    "REUSE",
+    "BENEFICIARY",
+    "CONTRADICTION",
+    "OPEN_QUESTION",
+    "SOURCE"
+  ],
+  "agency_lenses": [
+    {
+      "id": "UK-CH-IS",
+      "jurisdiction": "United Kingdom",
+      "institution": "Companies House + Insolvency Service",
+      "en": "Pattern intelligence; register-versus-reality; signal → link hypothesis → independent reality check; confidence separate from evidence state; decisive tests, 4P, competence routing and second-pair review.",
+      "es": "Inteligencia de patrones; contraste registro-realidad; señal → hipótesis de vínculo → comprobación independiente; confianza separada del estado probatorio; prueba decisiva, 4P, competencia y segunda revisión.",
+      "sources": [
+        "https://www.gov.uk/government/publications/companies-house-strategic-intelligence-assessment/companies-house-strategic-intelligence-assessment",
+        "https://www.gov.uk/government/publications/insolvency-service-launches-5-year-investigation-and-enforcement-strategy/investigations-and-enforcement-strategy-2026-to-2031",
+        "https://www.gov.uk/government/news/seven-linked-companies-shut-down-after-insolvency-service-investigation-with-companies-house"
+      ]
+    },
+    {
+      "id": "UK-CPS",
+      "jurisdiction": "England and Wales",
+      "institution": "Crown Prosecution Service",
+      "en": "Reasonable lines of enquiry toward and away from a suspect; focused, necessary and proportionate third-party requests; documented reasoning and inspection logs.",
+      "es": "Líneas razonables de investigación a favor y en contra; solicitudes focalizadas, necesarias y proporcionales; razonamiento y registros de inspección.",
+      "sources": [
+        "https://www.cps.gov.uk/prosecution-guidance/disclosure-manual-chapter-5-reasonable-lines-enquiry-and-third-parties"
+      ]
+    },
+    {
+      "id": "US-DOJ",
+      "jurisdiction": "United States",
+      "institution": "Department of Justice",
+      "en": "Exculpatory and impeachment information; preserve notes and recordings; memorialise material witness variations; substance over information format.",
+      "es": "Información exculpatoria y de impugnación; preservar notas y grabaciones; documentar variaciones materiales; sustancia sobre formato.",
+      "sources": [
+        "https://www.justice.gov/jm/jm-9-5000-issues-related-trials-and-other-court-proceedings"
+      ]
+    },
+    {
+      "id": "EU-OLAF",
+      "jurisdiction": "European Union",
+      "institution": "European Anti-Fraud Office",
+      "en": "Evidence for and against; objectivity, impartiality and presumption of innocence.",
+      "es": "Prueba a favor y en contra; objetividad, imparcialidad y presunción de inocencia.",
+      "sources": [
+        "https://anti-fraud.ec.europa.eu/investigations/procedural-guarantees_en"
+      ]
+    },
+    {
+      "id": "FATF",
+      "jurisdiction": "International",
+      "institution": "Financial Action Task Force",
+      "en": "Parallel financial investigation: financial intelligence, evidence gathering and asset tracing/freezing; follow origin, movement, control and destination.",
+      "es": "Investigación financiera paralela: inteligencia, prueba y rastreo/congelación de activos; seguir origen, movimiento, control y destino.",
+      "sources": [
+        "https://www.fatf-gafi.org/en/publications/Fatfgeneral/Outcomesoftheplenarymeetingofthefatfrome20-22june2012.html"
+      ]
+    },
+    {
+      "id": "UNODC",
+      "jurisdiction": "International",
+      "institution": "United Nations Office on Drugs and Crime",
+      "en": "Start financial investigation early; trace where money came from and where it went; expected-record gaps are contextual leads, not automatic proof.",
+      "es": "Iniciar pronto la investigación financiera; rastrear origen y destino; las ausencias de registros esperables son indicios contextuales, no prueba automática.",
+      "sources": [
+        "https://track.unodc.org/uploads/documents/corruption/Publications/2024/UNODC_2024_Practical_Guide_on_the_Investigation_of_Corruption_Cases.pdf"
+      ]
+    },
+    {
+      "id": "EU-EFECC",
+      "jurisdiction": "European Union",
+      "institution": "Europol EFECC",
+      "en": "Centralise and analyse contributed information to identify links, groups, suspects, trends and patterns; combine information exchange, analysis, coordination and asset tracing.",
+      "es": "Centralizar y analizar información para identificar vínculos, grupos, sospechosos, tendencias y patrones; combinar intercambio, análisis, coordinación y rastreo de activos.",
+      "sources": [
+        "https://www.europol.europa.eu/about-europol/european-financial-and-economic-crime-centre-efecc"
+      ]
+    },
+    {
+      "id": "NIST-SWGDE",
+      "jurisdiction": "United States / forensic practice",
+      "institution": "NIST + SWGDE",
+      "en": "Chain of custody, hashes, documented acquisition, reliable/repeatable methods, and separation of source integrity from substantive truth.",
+      "es": "Cadena de custodia, hashes, adquisición documentada, métodos fiables/repetibles y separación entre integridad de fuente y verdad sustantiva.",
+      "sources": [
+        "https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8387.pdf",
+        "https://www.swgde.org/documents/published-complete-listing/18-f-002-2-0/"
+      ]
+    }
+  ],
+  "outcome_states": [
+    "ACCURATE_LIMITED_USE",
+    "NO_MATERIAL_DISTORTION",
+    "NARROWS",
+    "MATERIAL_CONTEXT_OMISSION",
+    "MISLEADING_INFERENCE",
+    "SCOPE_MISMATCH",
+    "DIRECT_CONTRADICTION",
+    "INCONCLUSIVE"
+  ],
+  "metrics_policy": {
+    "permitted": [
+      "source_identity_coverage",
+      "page_coverage",
+      "anchor_carry_forward",
+      "statement_scan_coverage",
+      "candidate_review_load",
+      "source_complete_signoff_rate"
+    ],
+    "prohibited": [
+      "truth_score",
+      "lie_probability",
+      "credibility_score",
+      "guilt_score"
+    ]
+  },
+  "dynamic_model": {
+    "polling_seconds": 60,
+    "en": "The public interface reloads methodology, queue and R33 aggregate JSON; workflows detect source changes and reopen work; source/human review controls merits promotion.",
+    "es": "La interfaz recarga metodología, cola y JSON agregado de R33; los flujos detectan cambios y reabren trabajo; la revisión de fuente/humana controla cualquier promoción de fondo."
+  }
+}

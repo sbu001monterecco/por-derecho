@@ -28,8 +28,8 @@
       "sources": [
         {
           "path": "assets/data/r33-truth-machine-visual-20260925.json",
-          "github_blob_sha": "786094e8f163ab43a402a25eccf5ac866ea5849d",
-          "gitlab_blob_sha": "786094e8f163ab43a402a25eccf5ac866ea5849d"
+          "github_blob_sha": "b657ef8deac0abffd02f68a72a6bf6b5814e4627",
+          "gitlab_blob_sha": "b657ef8deac0abffd02f68a72a6bf6b5814e4627"
         }
       ],
       "public_routes": {
@@ -111,5 +111,11 @@
       ],
       "next_action": "PACKET_MODE_SOURCE_BY_SOURCE_REVIEW"
     }
-  ]
+  ],
+  "updated_at": "2026-09-25",
+  "dynamic_surface": {
+    "renderer": "assets/truth-machine-live.js",
+    "poll_seconds": 60,
+    "boundary": "Presentation may refresh from deployed public-safe JSON; evidential state changes remain source-review and human-signoff controlled."
+  }
 }
