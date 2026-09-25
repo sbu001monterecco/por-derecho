@@ -1,4 +1,4 @@
-name: Bounded homepage refinement verification 20260925
+name: Bounded homepage search diagnostic 20260925
 on:
   push:
     branches: [maintenance/homepage-refinement-authoring-20260925]
@@ -9,9 +9,9 @@ concurrency:
   group: homepage-refinement-authoring-20260925
   cancel-in-progress: false
 jobs:
-  verify:
+  diagnose:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
@@ -20,41 +20,48 @@ jobs:
         with:
           ref: b08bf1071e35ad74429877588b86a3a0f3391377
           path: site
-          fetch-depth: 0
           persist-credentials: false
-      - name: Validate the exact committed candidate without writing any repository ref
+      - run: python3 -m pip install --quiet playwright==1.55.0
+      - name: Inspect exact search nodes and listener continuity; this is not release acceptance
         shell: bash
-        env:
-          GITHUB_BASE_SHA: 7bd0def057efa6ddf531d80c673c75030fc9f647
-          GITHUB_HEAD_SHA: b08bf1071e35ad74429877588b86a3a0f3391377
         run: |
-          set -euo pipefail
-          mkdir -p review/source
-          cd site
-          test "$(git rev-parse HEAD)" = "$GITHUB_HEAD_SHA"
-          git diff --check "$GITHUB_BASE_SHA" HEAD
-          git diff --binary "$GITHUB_BASE_SHA" HEAD > ../review/candidate.patch
-          git diff --name-only "$GITHUB_BASE_SHA" HEAD > ../review/changed-paths.txt
-          git rev-parse HEAD > ../review/tested-sha.txt
-          while IFS= read -r path; do
-            mkdir -p "../review/source/$(dirname "$path")"
-            cp "$path" "../review/source/$path"
-          done < ../review/changed-paths.txt
-          python3 scripts/validate_repository_preservation.py | tee ../review/preservation.log
-          python3 scripts/validate_publication_integrity.py | tee ../review/publication.log
-          python3 scripts/validate_audience_experience.py | tee ../review/audience.log
-          python3 scripts/validate_cam_creditor_control_criminal_lead.py | tee ../review/attribution.log
-          node --check assets/audience-experience-order-20260823.js
-          node --check assets/optimum-reader-journey-finish-20260818.js
-          node --check assets/unitary-public-shell-20260818.js
-      - name: Install bounded browser-test dependency
-        run: python3 -m pip install --quiet playwright==1.55.0
-      - name: Render both languages with and without JavaScript after legacy scripts settle
-        run: python3 .maintenance-homepage/browser.py "$GITHUB_WORKSPACE/site" "$GITHUB_WORKSPACE/review"
-      - name: Preserve review outputs
+          mkdir -p review
+          python3 - <<'PY'
+          from pathlib import Path
+          from playwright.sync_api import sync_playwright
+          from http.server import ThreadingHTTPServer,SimpleHTTPRequestHandler
+          from functools import partial
+          import tempfile,threading,shutil,json
+          root=Path('site').resolve();out=Path('review');serve=Path(tempfile.mkdtemp());(serve/'por-derecho').symlink_to(root,target_is_directory=True)
+          class Quiet(SimpleHTTPRequestHandler):
+              def log_message(self,*a):pass
+          server=ThreadingHTTPServer(('127.0.0.1',8765),partial(Quiet,directory=str(serve)));threading.Thread(target=server.serve_forever,daemon=True).start()
+          init='''window.__searchBindings=[]; const original=EventTarget.prototype.addEventListener; EventTarget.prototype.addEventListener=function(type,handler,options){if((type==='input'||type==='submit')&&this instanceof Element&&this.closest('[data-canonical-home-search]'))window.__searchBindings.push({type,node:this});return original.call(this,type,handler,options);};'''
+          inspect='''()=>{const s=document.querySelector('[data-canonical-home-search]');const i=s?.querySelector('input');return {sections:document.querySelectorAll('[data-canonical-home-search]').length,value:i?.value,html:s?.outerHTML,engineCount:window.PorDerechoCanonicalSearch?.count,engineMatches:window.PorDerechoCanonicalSearch?.search('Acosta').length,results:s?.querySelectorAll('.canonical-search-result').length,bindings:window.__searchBindings.map(b=>({type:b.type,connected:b.node.isConnected,currentInput:b.node===i,currentForm:b.node===s?.querySelector('form'),html:b.node.outerHTML})),ancestors:[s,...function*(n){while(n?.parentElement){n=n.parentElement;yield n;}}(s)].map(n=>({tag:n.tagName,id:n.id,cls:n.className,hidden:n.hidden,display:getComputedStyle(n).display,visibility:getComputedStyle(n).visibility,opacity:getComputedStyle(n).opacity}))};}'''
+          rows=[]
+          with sync_playwright() as p:
+              browser=p.chromium.launch(headless=True,executable_path=shutil.which('google-chrome') or shutil.which('chromium'),args=['--no-sandbox'])
+              for lang in ['en','es']:
+                  for attempt in range(2):
+                      c=browser.new_context(viewport={'width':390,'height':900},reduced_motion='reduce');c.add_init_script(init);page=c.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
+                      page.route('**/*',lambda r:r.continue_() if r.request.url.startswith('http://127.0.0.1:8765/') else r.abort())
+                      page.goto(f'http://127.0.0.1:8765/por-derecho/{lang}/',wait_until='load');page.wait_for_timeout(11000)
+                      page.wait_for_function('window.PorDerechoCanonicalSearch?.count>0')
+                      before=page.evaluate(inspect)
+                      page.locator('[data-canonical-home-search] input').fill('Acosta');page.wait_for_timeout(1000);after=page.evaluate(inspect)
+                      page.locator('[data-canonical-home-search] button').click();page.wait_for_timeout(1000);submit=page.evaluate(inspect)
+                      page.screenshot(path=str(out/f'{lang}-{attempt}-search.png'))
+                      row={'lang':lang,'attempt':attempt,'before':before,'after':after,'submit':submit,'pageerrors':errors};rows.append(row)
+                      print('DIAGNOSTIC',json.dumps({k:v for k,v in row.items() if k not in ['before','after','submit']}),flush=True)
+                      print('SEARCH_SUMMARY',json.dumps({'lang':lang,'attempt':attempt,'before_bindings':before['bindings'],'after_results':after['results'],'submit_results':submit['results'],'engineMatches':after['engineMatches']}),flush=True)
+                      c.close()
+              browser.close()
+          server.shutdown();(out/'search-diagnostics.json').write_text(json.dumps(rows,indent=2));(out/'tested-sha.txt').write_text('b08bf1071e35ad74429877588b86a3a0f3391377\n')
+          PY
+      - name: Preserve diagnostics
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
-          name: homepage-refinement-completion-review
+          name: homepage-search-diagnostics
           path: review
           retention-days: 14
