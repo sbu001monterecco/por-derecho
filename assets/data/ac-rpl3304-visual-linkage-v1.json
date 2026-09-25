@@ -32,7 +32,10 @@
     "es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/",
     "es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/",
     "es/continuidad-defensa-letrados/",
-    "es/concurso-36-2012-separacion-ac-honorarios/"
+    "es/concurso-36-2012-separacion-ac-honorarios/",
+    "en/r33-truth-machine-visual/",
+    "es/r33-maquina-verdad-visual/",
+    "en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/"
   ],
   "boundaries": [
     "Explanatory derivative, not primary evidence.",
@@ -41,5 +44,13 @@
     "Distinct-firm collaboration does not establish identity of law firms."
   ],
   "governance_rule": ".github/governance/CONCURSO36_R33_VISUAL_LINKAGE_RULE_22SEP2026.md",
-  "drive_master_folder_id": "1rVrqrPbXON90jQZhYAm4Akmw2rkEszd0"
+  "drive_master_folder_id": "1rVrqrPbXON90jQZhYAm4Akmw2rkEszd0",
+  "procedural_utility_component": {
+    "control": "PD-R33-PROCEDURAL-UTILITY-20260925-01",
+    "data": "assets/data/r33-procedural-utility-map-v1.json",
+    "css": "assets/r33-procedural-utility-map.css",
+    "renderer": "assets/r33-procedural-utility-map.js",
+    "role": "cross_proceeding_procedural_utility",
+    "boundary": "Connect shared evidence without merging proceedings or transferring actor-specific knowledge, intent, responsibility or liability."
+  }
 }
