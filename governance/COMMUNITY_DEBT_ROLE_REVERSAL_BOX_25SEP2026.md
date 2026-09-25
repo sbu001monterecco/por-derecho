@@ -312,3 +312,68 @@ When a contested officeholder, certificate, minute or debt schedule is repeatedl
 `who actually authored/signed → in what capacity → under which valid resolution → with which voting base → what the recipient understood "the Community" to mean → what legal/economic consequence followed`.
 
 This is called **authority reification / organ-person conflation risk**. It is an analytical control, not itself a finding of fraud or guilt.
+
+
+## 17. Independent-expert debt analysis — 10 July 2018
+
+The private Google Drive source **Análisis de la razonabilidad y sentido económico-financiero de la deuda reconocida a favor de la Comunidad de Propietarios del Complejo Turístico Sun Park en el Concurso Ordinario nº 36/2012**, dated 10 July 2018, is a 59-page expert report prepared by David Espejo Navarro / eXW at Aweswell's request for LPB's benefit.
+
+The report states that the expert's duty is to the court and records the Article 335.2 LEC objectivity declaration. It also states that the work was based on client-supplied information plus identified public sources. This is therefore **independent expert opinion commissioned by the project side**, not a judicial finding and not source-independent of every factual input.
+
+Material conclusions reported by the expert include:
+
+- after analysing accounting, minutes, Costa Papagayo material and functional evidence, the expert considered CEXP to have been current in its obligations in June 2011, apart from ordinary trading balances;
+- the expert concluded that the initial Community debt lacked logical, accounting or other documentary foundation;
+- the expert considered the debt particularly serious because it removed LPB's majority voting rights;
+- even on a hypothetical assumption that a Community debt existed, the report concluded that the same economic logic would imply LPB/CEXP participants should not have owed the asserted Community quota and that the relevant balance could be zero;
+- the report identified repeated inconsistencies, unsupported morosity classifications and large movements in the claimed debt;
+- it compared an approximately EUR55,000 Costa Papagayo obligation against an approximately EUR600,000 amount attributed to LPB;
+- it expressly analysed the 18-Apr-2017 Judgment 91/2017 and recalculated the debt basis.
+
+**Repository consequence:** Gil/AWESWELL's categorical position that the debt was fabricated or lacked valid foundation is not supported only by party assertion. It is also supported by a signed expert report expressly directed to the economic/accounting reasonableness of the Community claim.
+
+**Boundary:** the expert report does not itself establish criminal intent, authorship of a false entry, knowing use by a later actor, procedural fraud, or liability of the AC/judge. Those require the actor-specific source/use chain below.
+
+## 18. Better-bid Community burden — procedural-fraud / insolvency-crime lead
+
+The Community-debt issue became economically operative in the liquidation/bid architecture.
+
+Current controlled sources show:
+
+- the pre-concurso Community claim had been converted on 20-Jan-2017 into an ordinary contingent claim without its own amount;
+- the AC later reused the historical EUR718,663.24 pre-concurso figure and a EUR427,135.05 post-concurso figure;
+- the January-2021 better-bid condition included the combined **EUR1,145,798.29 Community burden**.
+
+Gil/AWESWELL's attributed legal position is that the insertion/use of that Community burden in the competing-bid condition forms part of an alleged **estafa procesal / insolvency-crime / disloyal-administration chain** because, on their case, the debt lacked a valid foundation and the burden materially affected the ability of a third party to outbid the CAM route.
+
+### Article 250.1.7 CP — estafa procesal test
+
+The current Criminal Code defines procedural fraud as manipulation of evidence or analogous procedural fraud in a judicial proceeding that causes judicial error leading to a decision prejudicing another party's or third party's economic interests.
+
+For this Community-bid condition, the project must prove:
+
+`false/manipulated debt premise or analogous procedural fraud → exact author/transmitter → knowledge → submission/use in the concurso → judicial error → adoption into bid condition → economic prejudice / lost or impaired competing bid → benefit → causation`.
+
+No shortcut from "wrong amount" to estafa procesal is permitted.
+
+### Articles 259–260 CP — insolvency-crime test
+
+The current Criminal Code separately includes, among insolvency offences, simulation of third-party credits or recognition of fictitious credits, certain unjustified asset/debt acts and serious breaches of economic-management duties causing patrimonial diminution or concealing the debtor's real position.
+
+For this matter, the correct question is not "does Article 259 automatically apply to every private or institutional actor?" It is:
+
+- who was the debtor or acted in the debtor's name for the relevant act;
+- whether a fictitious or invalid third-party credit was simulated or recognised;
+- whether an act generated an unjustified obligation or patrimonial burden;
+- whether the relevant person had the legally required role/capacity;
+- and what loss to LPB's estate or creditors resulted.
+
+Gil/AWESWELL call the wider pattern **estafa concursal** as shorthand. The repository uses the statutory labels **estafa procesal**, **insolvencias punibles**, **administración desleal** and any other applicable offence only after matching the elements and actor capacity.
+
+### Causal bridge to present-day outcome
+
+The investigation must trace:
+
+`Community debt/vote mechanism → recognition/contingency in concurso → later certification/spreadsheet → EUR1.14579829 better-bid burden → effect on competing offer(s) → adjudication/implementation → title/control/operation/income → present MYND outcome`.
+
+Each arrow is a separate proposition. The chain may support cumulative causation; it must not be declared proved merely because the endpoints exist.
