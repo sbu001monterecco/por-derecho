@@ -1,13 +1,13 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 49,
-  "owner": "1889:5692241ccd6790a8e5bdaa3ff5b27f9e179572a5",
-  "phase": "VERIFIED_FOR_SCOPE",
-  "pr": 1889,
-  "base_sha": "b7d8a6143ea53d95f56b0f621d7abea2654030b9",
-  "candidate_sha": "5692241ccd6790a8e5bdaa3ff5b27f9e179572a5",
-  "run_id": 36168266968,
-  "claimed_at": "2026-09-25T17:36:50.247396Z",
+  "fence": 50,
+  "owner": "1908:827d7c40010a11c724b5e93718682c28bbe481f8",
+  "phase": "CLAIMED",
+  "pr": 1908,
+  "base_sha": "d85dbf9b520dca7dd1fae3d12e6f963ca988dbc3",
+  "candidate_sha": "827d7c40010a11c724b5e93718682c28bbe481f8",
+  "run_id": 36199164014,
+  "claimed_at": "2026-09-25T22:59:39.199695Z",
   "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
     {
@@ -2656,124 +2656,5 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-09-25T17:36:51.644597Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "PD release acceptance",
-            "id": 108180057597,
-            "conclusion": "success"
-          },
-          {
-            "name": "publication-integrity",
-            "id": 108179886810,
-            "conclusion": "success"
-          }
-        ]
-      }
-    },
-    {
-      "phase": "MERGE_PENDING",
-      "at": "2026-09-25T17:37:58.286343Z",
-      "evidence": {
-        "pr": 1889
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-09-25T17:37:59.584200Z",
-      "evidence": {
-        "merge_sha": "e6a9ff9fdcc477f07f4407a8a35b8f2e5d3d64bf"
-      }
-    },
-    {
-      "phase": "DEPLOYED",
-      "at": "2026-09-25T17:39:52.071053Z",
-      "evidence": {
-        "pages_run_id": 36168256092,
-        "merge_sha": "e6a9ff9fdcc477f07f4407a8a35b8f2e5d3d64bf"
-      }
-    },
-    {
-      "phase": "VERIFIED_FOR_SCOPE",
-      "at": "2026-09-25T17:39:58.980841Z",
-      "evidence": {
-        "merge_sha": "e6a9ff9fdcc477f07f4407a8a35b8f2e5d3d64bf",
-        "pages_run_id": 36168256092,
-        "exact_matches": [
-          {
-            "path": "assets/data/r33-truth-machine-visual-20260925.json",
-            "sha256": "d27ba8f24058049ae828e5c27b1648cc2c401780cb6e9099ecd94402c265a5e6",
-            "bytes": 20086
-          },
-          {
-            "path": "assets/data/truth-machine-methodology-v2.json",
-            "sha256": "b843a89d7c982ace42cb74dc5f806e4eab259d3ecbb4e18b3e0a965fb7f7cf95",
-            "bytes": 31099
-          },
-          {
-            "path": "assets/data/truth-machine-priority-queue-v1.json",
-            "sha256": "3d19438da663384f4b415725be525b1d2e4bf69076e821db25c1d44ce5680bea",
-            "bytes": 5629
-          },
-          {
-            "path": "assets/r33-truth-machine-visual-20260925.svg",
-            "sha256": "e6b7efa506d879666219f1632347efb2c8ea9664a7b2ad1cbf8be2bd9eb06519",
-            "bytes": 9014
-          },
-          {
-            "path": "assets/truth-machine-live.js",
-            "sha256": "f49dcfd4bdf56483b4fb2ede31c04a2337ce74b5446e02bcc2d0051b4ec602e6",
-            "bytes": 7922
-          },
-          {
-            "path": "en/index.html",
-            "sha256": "dcfb094898aeba75717da6afad71be72150c031e03e436f27bcf6503ad54b5c3",
-            "bytes": 226845
-          },
-          {
-            "path": "en/r33-truth-machine-visual/index.html",
-            "sha256": "eefc20dc368dc331c2b54e3e7807c10fc25e4718f204aa83a3e9ce318ba135d9",
-            "bytes": 10200
-          },
-          {
-            "path": "en/truth-machine/index.html",
-            "sha256": "6e489a8357833b44ac55b41e371d4e3b94ea3679bde25aed43eb7764f4a6332a",
-            "bytes": 6953
-          },
-          {
-            "path": "es/index.html",
-            "sha256": "dab16c882053efb40f8c07d1332b6af5fe5d95f8764a6aed867ef8a52573b8d7",
-            "bytes": 235663
-          },
-          {
-            "path": "es/maquina-verdad/index.html",
-            "sha256": "9b05c6fc02cff5ddfecab184f69148dfbec4373fd69381dde6d05edb6df97563",
-            "bytes": 7178
-          },
-          {
-            "path": "es/r33-maquina-verdad-visual/index.html",
-            "sha256": "8408510e7842f0d0d9939cbe3506772ca25ed919b29e6f1c1f6c09e716c21e9a",
-            "bytes": 10441
-          },
-          {
-            "path": "ops/continuity/R33_METHOD_STACK_SOURCE_REVIEW_20260925.md",
-            "sha256": "7c1e542b999623146881d941a920d81a3049fd71eb979836bc379f12d49f84ea",
-            "bytes": 1616
-          },
-          {
-            "path": "ops/continuity/TRUTH_MACHINE_GLOBAL_METHODS_20260925.md",
-            "sha256": "d848d9ec737f10dd15f9ee4636684b86457e809640ecd0606697ef53c25f7ade",
-            "bytes": 2791
-          }
-        ],
-        "pending": [],
-        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
-      }
-    }
-  ],
-  "updated_at": "2026-09-25T17:39:58.980841Z"
+  "checkpoints": []
 }
