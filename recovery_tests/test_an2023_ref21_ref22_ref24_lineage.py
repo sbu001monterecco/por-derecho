@@ -54,3 +54,30 @@ def test_frozen_index_has_no_dangling_local_links():
 def test_three_track_canonical_controls_are_materialized():
     for rel in CANONICAL_CONTROLS:
         assert (ROOT/rel).exists(), f"missing canonical continuity control: {rel}"
+
+
+FROZEN_PAGE_RANGES={
+    "evidence/judicial/june-2026-three-track/frozen/ref21-25jun2026-pages-001-030.md": (1,30),
+    "evidence/judicial/june-2026-three-track/frozen/ref21-25jun2026-pages-031-060.md": (31,60),
+    "evidence/judicial/june-2026-three-track/frozen/ref21-25jun2026-pages-061-086.md": (61,86),
+    "evidence/judicial/june-2026-three-track/frozen/ref21-26jun2026-working-pages-001-026.md": (1,26),
+    "evidence/judicial/june-2026-three-track/frozen/ref21-09jul2026-ampliacion-pages-001-019.md": (1,19),
+    "evidence/judicial/june-2026-three-track/frozen/ref22-18jun2026-pages-001-030.md": (1,30),
+    "evidence/judicial/june-2026-three-track/frozen/ref22-18jun2026-pages-031-055.md": (31,55),
+    "evidence/judicial/june-2026-three-track/frozen-linked/di169-ref24-traceability-aportacion-25jun2026.md": (1,9),
+}
+
+def test_frozen_page_ranges_are_complete():
+    for rel,(first,last) in FROZEN_PAGE_RANGES.items():
+        text=(ROOT/rel).read_text(encoding="utf-8")
+        nums=[int(x) for x in re.findall(r"^## Source page\s+(\d+)(?:\s+of\s+\d+)?\s*$",text,re.M|re.I)]
+        assert nums==list(range(first,last+1)), f"incomplete frozen page range: {rel}: {nums[:2]}..{nums[-2:] if nums else []}"
+
+if __name__=="__main__":
+    test_an2023_public_page_coverage()
+    test_an2023_manifest_and_source_identity()
+    test_ref21_ref22_ref24_lineage_paths()
+    test_frozen_index_has_no_dangling_local_links()
+    test_three_track_canonical_controls_are_materialized()
+    test_frozen_page_ranges_are_complete()
+    print("AN2023_REF21_REF22_REF24_CONTINUITY_PASS")
