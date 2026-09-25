@@ -121,7 +121,7 @@ This is a controlling invariant for all future capital work:
 - **Do not place Institutional Capital / Capital Institucional in the homepage top navigation.**
 - **Do not place an institutional-capital CTA in the homepage hero.**
 - **Do not place a standalone institutional-capital promotional/status block on the homepage.**
-- The homepage may expose the institutional-capital route **only from inside the existing Future / Futuro section**, which may link onward to the separate institutional-capital page.
+- The homepage must route **Future / Futuro to standalone pages** at `/en/future/` and `/es/futuro/`. Institutional capital must not be linked directly from the homepage; it is reached one level deeper from those Future pages.
 - The underlying `/en/institutional-capital/` and `/es/capital-institucional/` pages remain available and may continue to evolve within the existing disclosure and regulatory boundaries.
 - Any future capital thread or automation must preserve this invariant unless Gil Marer expressly changes it.
-- CI must fail closed if the homepage nav, hero or standalone capital block is reintroduced.
+- CI must fail closed if the homepage directly links institutional capital, if Future/Futuro reverts to an on-page scroll target, or if the standalone Future pages lose their controlled onward capital route.
