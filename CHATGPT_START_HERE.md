@@ -263,3 +263,9 @@ For any task concerning Francisco de Borja Rodríguez-Batllori Laffitte, the Adm
 Use `AC-CLM-001`–`AC-CLM-014`; keep the AC separate from the five private actors, judge, prosecutors and professional firms. R33 is a party filing and evidential response node, not an adjudicated truth. Compare it proposition by proposition and preserve adverse evidence and lawful explanations. DP 1956 remains the actor-specific AC criminal route; DP 1901 may supply cross-evidence but is not the AC complaint.
 
 > **Consequence-risk communications control — PD-CRC-20260925-01:** when a task touches Gmail, electronic notifications, court/procurador/counsel mail, institutional portals, delivery failures, expected replies or CI/connector monitoring, load `.github/governance/CONSEQUENCE_RISK_COMMUNICATION_CONTROL_25SEP2026.md` before concluding. A message may require an alert even without an attachment (for example a notice pointing to DEHú/Notifica/LexNET). Do not close a risk merely because the message was read or the source was added to Git.
+
+## Exact named-person image edits (25 Sep 2026)
+
+Control: `PD-EXACT-NAMED-PERSON-IMAGE-20260925-01` → `governance/EXACT_NAMED_PERSON_IMAGE_EDITING_CONTROL_25SEP2026.md`.
+
+For Por Derecho visuals containing named people: verify GitHub + GitLab + Drive source provenance before declaring an image missing; materialize exact approved bytes before editing; use deterministic masked compositing for face/portrait corrections; never substitute a generated likeness; fail if any unauthorised pixel changes; preserve evidence-state and identity/capacity boundaries; and do not claim LIVE without normal deploy + anonymous readback.
