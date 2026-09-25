@@ -9,7 +9,7 @@
 - 22 September 2026 LinkedIn security email: profile photo changed at 13:51 GMT, Android, provider-reported approximate location Kuwait City, Kuwait.
 - The alert was found in the business mailbox Trash folder during the 23 September review. Cause of that mailbox state is unknown.
 - 23 September 2026: Gil Marer reports LinkedIn account access blocked again; renewed identity verification completed; restoration and provider explanation pending.
-- At the time of the review, no fresh LinkedIn restriction/moderation email explaining the 23 September event was located.
+- LinkedIn has not yet supplied a case-specific cause for the 23 September restriction. Case **260923-029467** is open; on 24 September Customer Support stated that the follow-up was forwarded to another group for additional review/advice and may require additional research. That provider statement confirms review state only, not the restriction trigger or merits.
 - Historical cases 241020-015316 and 241028-011722 were both restored after identity verification; LinkedIn described detected suspicious activity but did not identify an external actor.
 
 ## Bounded cross-platform controls
@@ -40,3 +40,12 @@ The public page requests preservation of native account-security, moderation, re
 - The form-ready packages request urgent restoration, preservation, trigger classification, repeated/linked-report analysis, stable-pseudonym fallback where reporter identity cannot be disclosed, Article 15 source information, DSA Article 23 review where applicable, statement-of-reasons/appeal routing where moderation is involved, and enhanced human review / targeted-account safeguards if LinkedIn has an equivalent internal mechanism.
 - The packages point to the public-safe platform-integrity hub, Por Derecho transparency / AI-control page, Google evidence-cooperation dossier, Control 21 public route and public source-control repository.
 - No Gmail message IDs, authentication-bearing links, private security telemetry or reporter identities are committed to the public repository.
+
+## 25 September 2026 — relationship escalation and litigation continuity
+
+- The existing appeal/support and privacy/preservation lanes were supplemented without opening a duplicate case. The escalation asks for coordination across Trust & Safety, Privacy/DPO, Legal, account security and LinkedIn's UK business/customer organisation.
+- The account holder has told LinkedIn that Persona identity verification was successfully completed with a renewed UK passport; restoration remains pending.
+- LinkedIn / Por Derecho material is already relevant to Spanish proceedings, including RPL 3304/2025. Preservation therefore includes the distinction between member-initiated edits/deletions and provider-imposed restriction/removal/demotion/visibility actions.
+- The source question remains open: own-initiative automated/security/integrity process, internal human review, external report(s)/notice(s), combination, or other. No reporter identity or geography is inferred.
+- Public-authority records supplied as context establish regulated/public-support dimensions only; they do not establish misuse, retaliation or responsibility for the LinkedIn restriction.
+- UK relationship control: `ops/continuity/LINKEDIN_UK_LONDON_ESCALATION_20260925.md`.
