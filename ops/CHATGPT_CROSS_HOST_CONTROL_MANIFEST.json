@@ -1,0 +1,44 @@
+{
+  "schema": "por-derecho.chatgpt-cross-host-control-manifest.v1",
+  "control_id": "PD-CHATGPT-CROSSHOST-20260925-01",
+  "generated_date": "2026-09-25",
+  "source_of_truth_policy": "Use current GitHub main for controls newer or richer there; never blend GitHub/GitLab controls by memory. Reconcile explicitly.",
+  "github": {
+    "repository": "sbu001monterecco/por-derecho",
+    "main_sha": "7bd0def057efa6ddf531d80c673c75030fc9f647",
+    "role": "ACTIVE_CONTROL_SOURCE_FOR_THIS_UPDATE"
+  },
+  "gitlab": {
+    "project_id": 86151898,
+    "project": "por-derecho/por-derecho-setup-or-gitlab-setup",
+    "main_sha": "5d90b0fd0e80a655599a2b18fc88b6b4a876c9f1",
+    "role": "MIRROR_WITH_KNOWN_CONTROL_DIVERGENCE"
+  },
+  "controlled_files": [
+    {
+      "path": "CHATGPT_START_HERE.md",
+      "github_blob": "f0361c2fa7b00cf82a8655501e793ad528bdf5b6",
+      "gitlab_blob": "45b0fd29683a2ff2c56b7ccd682ce5d06a7061bc",
+      "state": "DIVERGED_GITHUB_NEWER_CONTROL_LAYER"
+    },
+    {
+      "path": "AGENTS.md",
+      "github_blob": "640e2c53b630c209dc96d12bc514678a0735ecbb",
+      "gitlab_blob": "989b50234ee8dd2a3e40350883e484da8cd3fc52",
+      "state": "DIVERGED"
+    },
+    {
+      "path": "assets/data/unitary-multitrack-criminal-first-gap-closure-v1.json",
+      "github_blob": "9eb312c2602df86c525319b9066e578a86994d1f",
+      "gitlab_blob": "570c872a77e5f64f5d75741fb183959c2d7784a2",
+      "state": "DIVERGED"
+    }
+  ],
+  "rules": [
+    "CURRENT_MAIN_BEFORE_MEMORY",
+    "HOST_SPECIFIC_FILE_BLOBS_MUST_BE_COMPARED",
+    "NO_SILENT_BLIND_COPY",
+    "NO_CLAIM_OF_MIRROR_PARITY_WHILE_DIVERGED",
+    "RECONCILE_ADDITIVELY_FROM_VERIFIED_SOURCE_BYTES"
+  ]
+}
