@@ -10,6 +10,7 @@
 - The alert was found in the business mailbox Trash folder during the 23 September review. Cause of that mailbox state is unknown.
 - 23 September 2026: Gil Marer reports LinkedIn account access blocked again; renewed identity verification completed; restoration and provider explanation pending.
 - LinkedIn has not yet supplied a case-specific cause for the 23 September restriction. Case **260923-029467** is open; on 24 September Customer Support stated that the follow-up was forwarded to another group for additional review/advice and may require additional research. That provider statement confirms review state only, not the restriction trigger or merits.
+- On 25 September LinkedIn changed case **260923-029467** to **Waiting For Information** and requested a fresh Persona government-ID verification followed by a reply to the same case. The account holder states that the new Persona flow was completed and the same-thread completion notice was sent. Provider receipt of the fresh verification and access restoration are not yet confirmed.
 - Historical cases 241020-015316 and 241028-011722 were both restored after identity verification; LinkedIn described detected suspicious activity but did not identify an external actor.
 
 ## Bounded cross-platform controls
