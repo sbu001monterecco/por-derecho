@@ -31,6 +31,18 @@ for locale in ("en","es"):
         if token in text:
             errors.append(f"{meta['path']} contains forbidden homepage token {token!r}")
 
+for rel in cfg.get("required_assets", []):
+    if not (ROOT/rel).is_file():
+        errors.append(f"missing required homepage asset: {rel}")
+
+for locale in ("en","es"):
+    p=ROOT/cfg["homepage"][locale]["path"]
+    if p.is_file():
+        t=p.read_text(encoding="utf-8")
+        for token in cfg.get("required_homepage_tokens",{}).get(locale,[]):
+            if token not in t:
+                errors.append(f"{p.relative_to(ROOT)} missing required homepage token: {token}")
+
 for rel in cfg.get("required_destination_files", []):
     if not (ROOT/rel).is_file():
         errors.append(f"missing required homepage destination: {rel}")
