@@ -1,0 +1,69 @@
+{
+  "schema": "por-derecho.homepage-publication-contract.v1",
+  "control_date": "2026-09-25",
+  "canonical_public_host": "https://sbu001monterecco.github.io/por-derecho/",
+  "resilience_mirror_host": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/",
+  "principle": "Homepage is an orientation and trust layer; detailed recovery, evidence and capital material lives behind dedicated routes.",
+  "homepage_files": {
+    "en": "en/index.html",
+    "es": "es/index.html"
+  },
+  "byte_budget": {
+    "en": 120000,
+    "es": 125000
+  },
+  "required_routes": [
+    "en/recovery-command-center/index.html",
+    "es/centro-mando-recuperacion/index.html",
+    "en/future/index.html",
+    "es/futuro/index.html",
+    "en/por-derecho/index.html",
+    "es/por-derecho/index.html",
+    "en/evidence/index.html",
+    "es/evidencia/index.html",
+    "en/updates/index.html",
+    "es/actualizaciones/index.html",
+    "en/legal-notebook/index.html",
+    "es/cuaderno-juridico/index.html",
+    "en/start/index.html",
+    "es/inicio/index.html"
+  ],
+  "required_en": [
+    "href=\"recovery-command-center/\">Recovery</a>",
+    "href=\"future/\">Future</a>",
+    "href=\"por-derecho/\">Por Derecho</a>",
+    "href=\"evidence/\">Evidence</a>",
+    "href=\"updates/\">Updates",
+    "href=\"legal-notebook/\">More</a>",
+    "id=\"choose-route\"",
+    "How to read the record",
+    "Understand the case in 60 seconds"
+  ],
+  "required_es": [
+    "href=\"centro-mando-recuperacion/\">Recuperación</a>",
+    "href=\"futuro/\">Futuro</a>",
+    "href=\"por-derecho/\">Por Derecho</a>",
+    "href=\"evidencia/\">Evidencia</a>",
+    "href=\"actualizaciones/\">Actualizaciones",
+    "href=\"cuaderno-juridico/\">Más</a>",
+    "id=\"elegir-via\"",
+    "Cómo leer el expediente",
+    "Entender el caso en 60 segundos"
+  ],
+  "forbidden_en": [
+    "href=\"institutional-capital/\"",
+    "class=\"capital-entry\"",
+    "href=\"#future\"",
+    "id=\"reverse-engineered-story\"",
+    "id=\"platform-built-2011-2018\""
+  ],
+  "forbidden_es": [
+    "href=\"capital-institucional/\"",
+    "class=\"capital-entry\"",
+    "href=\"#futuro\"",
+    "id=\"historia-reconstruida\"",
+    "id=\"plataforma-construida-2011-2018\""
+  ],
+  "public_capital_route": "Homepage → Future/Futuro → Institutional Capital/Capital Institucional",
+  "release_gate": "GitHub source = GitHub live = GitLab source = GitLab live, except deliberately host-specific deployment metadata."
+}
