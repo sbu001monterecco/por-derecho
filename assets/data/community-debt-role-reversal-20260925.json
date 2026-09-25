@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.community-debt-role-reversal-box.v1",
   "control_id": "PD-COMMUNITY-DEBT-ROLE-REVERSAL-20260925-01",
-  "status": "PUBLIC_SAFE_ATTRIBUTED_ALLEGATION_CONTROL",
+  "status": "PUBLIC_SAFE_CATEGORICAL_ATTRIBUTED_POSITION_CONTROL",
   "source_cutoff": "2026-09-25",
   "documented_mechanism": {
     "acta_date": "2016-04-26",
@@ -34,12 +34,12 @@
   },
   "attributed_thesis": {
     "speaker": "Gil Marer / AWESWELL perimeter",
-    "capture": "Private actors captured/instrumentalised the Owners' Community through disputed debt/morosity and voting exclusion.",
+    "capture": "Gil Marer states as a factual conclusion that the private-actor perimeter captured/instrumentalised the Owners' Community through the debt/morosity and voting mechanism.",
     "convergence": "Later CAM/Acosta Matos participation functionally converged with the earlier dissident/private-actor lane.",
-    "debt": "Gil alleges the debt/morosity mechanism was manufactured, baseless or manipulated.",
+    "debt": "Gil Marer states as a factual conclusion that the debt/morosity mechanism used against LPB was fabricated or lacked a valid foundation.",
     "later_control": "Gil characterises later material-control/access acts as clandestine, forcible and unauthorised where source families support that attribution.",
-    "counter_calificacion": "If anyone should face a 'calificación punible' / culpability lens, Gil says it is the actors who created, certified, used, enabled or knowingly adopted the invalid debt mechanism.",
-    "status": "ATTRIBUTED_ALLEGATION_NOT_ADJUDICATED"
+    "counter_calificacion": "Gil Marer states that the culpability/accountability lens should run to those who created, certified, used, enabled or knowingly adopted the invalid debt mechanism.",
+    "status": "CATEGORICAL_USER_POSITION_NOT_ADJUDICATED_FINDING"
   },
   "guardrails": [
     "capture_hijack_fabricated_debt_are_not_repository_findings",
@@ -49,7 +49,9 @@
     "judicial_adverse_act_is_not_criminality",
     "later_benefit_is_not_procurement",
     "2016_debt_dispute_does_not_by_itself_prove_2018_command_chain",
-    "2018_control_event_does_not_retroactively_prove_2016_debt_falsity"
+    "2018_control_event_does_not_retroactively_prove_2016_debt_falsity",
+    "categorical_user_position_must_not_be_silently_weakened",
+    "repository_attribution_does_not_convert_user_position_into_adjudicated_finding"
   ],
   "finite_test": [
     "cost actually incurred",
