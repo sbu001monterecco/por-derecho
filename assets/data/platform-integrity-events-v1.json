@@ -1,6 +1,7 @@
 {
   "schema": "por-derecho.platform-integrity-events.v1",
   "control_id": "PD-PLATFORM-INTEGRITY-20260923-01",
+  "governed_by": "ops/continuity/CONTINUITY_PRESERVATION_PROPAGATION_RULE.md",
   "as_of": "2026-09-25",
   "publication_boundary": "public-safe summaries only; no authentication URLs, provider message IDs, private IP/session data or reporter identities",
   "proof_rule": "motive/incentive is not attribution; chronology is not causation; provider-native records required",
