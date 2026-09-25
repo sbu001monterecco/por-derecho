@@ -1,0 +1,69 @@
+name: INCIBE projection reconciliation final
+on:
+  push:
+    branches: ['prep/platform-integrity-incibe-20260925']
+    paths: ['.github/workflows/incibe-projection-reconcile-final.yml']
+permissions:
+  contents: write
+jobs:
+  prepare:
+    if: github.repository == 'sbu001monterecco/por-derecho' && github.ref == 'refs/heads/prep/platform-integrity-incibe-20260925'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: cf9a33062bcb8c12ae4585590d416705735d8228
+          fetch-depth: 1
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: 61872625728efe9fbcc8a6b7afb1a82d4c4a9a89
+          path: preparation-control
+          sparse-checkout: .github/workflows/incibe-scoped-source-export.yml
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - name: Prepare bounded repair scripts from pinned reviewed control
+        run: |
+          python3 -m pip install --quiet PyYAML
+          python3 - <<'PY'
+          from pathlib import Path
+          import yaml
+          spec=yaml.safe_load(Path('preparation-control/.github/workflows/incibe-scoped-source-export.yml').read_text())
+          steps=spec['jobs']['prepare']['steps']; first=steps[1]['run']; second=steps[2]['run']
+          old="assert old_graph==new_graph,'Unexpected change to historical Fiscalia graph beyond source digest'"
+          replacement="""old_by={e['event_id']:e for e in old_graph['events']}
+          new_by={e['event_id']:e for e in new_graph['events']}
+          expected_supplemental={'PD-SP-EVT-0497','PD-SP-EVT-0498','PD-SP-EVT-0499','PD-SP-EVT-1157','PD-SP-EVT-1158','PD-SP-EVT-1159'}
+          assert all(new_by.get(k)==v for k,v in old_by.items()),'Historical projected event changed or removed'
+          assert set(new_by)-set(old_by)==expected_supplemental-set(old_by),'Unexpected new projected event'
+          assert set(old_by)<=set(new_by),'Historical projected event lost'
+          for k in old_graph:
+              if k not in {'events','coverage','canonical_sources'}:
+                  assert old_graph[k]==new_graph[k],('Historical graph relationship changed',k)
+          for k in old_graph['canonical_sources']:
+              assert old_graph['canonical_sources'][k]==new_graph['canonical_sources'][k],('Unexpected source change',k)
+          for k in old_graph['coverage']:
+              if k not in {'communication_events','allocation_counts','scope_counts'}:
+                  assert old_graph['coverage'][k]==new_graph['coverage'][k],('Unexpected coverage change',k)
+          assert len(new_by)==320+6
+          print('Preserved all historical graph records/edges; only the six already-canonical successors are projected additionally.')"""
+          assert first.count(old)==1
+          first=first.replace(old,replacement,1)
+          first=first.replace("'prior_fiscalia_graph_unchanged_except_source_digest':True","'historical_graph_records_and_edges_unchanged':True,'existing_six_successors_projected_without_new_proceeding_links':True")
+          Path('/tmp/incibe-prepare.sh').write_text(first)
+          Path('/tmp/incibe-export.sh').write_text(second)
+          PY
+      - name: Run the exact bounded source and regression checks
+        run: bash -eo pipefail /tmp/incibe-prepare.sh
+      - name: Export correction objects without moving refs
+        env:
+          GH_OBJECT_TOKEN: ${{ github.token }}
+        run: bash -eo pipefail /tmp/incibe-export.sh
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: incibe-projection-repair-final-${{ github.run_id }}
+          path: /tmp/incibe-projection-repair/
+          if-no-files-found: error
+          retention-days: 14
