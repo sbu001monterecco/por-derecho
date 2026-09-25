@@ -153,5 +153,58 @@
     ],
     "risk_label": "AUTHORITY_REIFICATION_ORGAN_PERSON_CONFLATION",
     "principal_position": "Gil/AWESWELL state that repeated institutional use of 'the Community' for the dissident/private officeholder perimeter gave private actors an appearance of authority they did not validly possess."
+  },
+  "expert_debt_analysis": {
+    "date": "2018-07-10",
+    "author": "David Espejo Navarro / eXW",
+    "pages": 59,
+    "commissioned_by": "Aweswell Limited for benefit of LPB",
+    "status": "PROJECT_COMMISSIONED_INDEPENDENT_EXPERT_OPINION_NOT_JUDICIAL_FINDING",
+    "expert_duty_to_court_declared": true,
+    "conclusions_supported": [
+      "CEXP considered current in obligations in June 2011 apart from ordinary trading balances",
+      "initial Community debt considered without logical/accounting/documentary foundation",
+      "debt considered material because it removed LPB majority voting rights",
+      "hypothetical valid-debt analysis could imply zero debt for CEXP participants",
+      "unsupported morosity and large debt movements identified"
+    ],
+    "limitations": [
+      "commissioned by project side",
+      "relies partly on client-supplied information",
+      "does not by itself prove criminal intent or later knowing use"
+    ]
+  },
+  "better_bid_criminal_lead": {
+    "community_pre_insolvency_eur": 718663.24,
+    "community_post_insolvency_eur": 427135.05,
+    "combined_bid_condition_eur": 1145798.29,
+    "legal_theories_attributed": [
+      "ESTAFA_PROCESAL_ART_250_1_7_CP",
+      "INSOLVENCIAS_PUNIBLES_ART_259_CP",
+      "ADMINISTRACION_DESLEAL_ART_252_CP"
+    ],
+    "status": "ATTRIBUTED_CRIMINAL_LEAD_ELEMENT_BY_ELEMENT_PROOF_REQUIRED",
+    "procedural_fraud_elements": [
+      "false_or_manipulated_premise_or_analogous_fraud",
+      "author_or_transmitter",
+      "knowledge",
+      "judicial_submission_or_use",
+      "judicial_error",
+      "adoption_into_resolution_or_bid_condition",
+      "economic_prejudice",
+      "benefit",
+      "causation"
+    ],
+    "causation_chain": [
+      "community_debt_vote_mechanism",
+      "concurso_recognition_or_contingency",
+      "later_certificate_or_spreadsheet",
+      "bid_condition_1145798_29",
+      "effect_on_competing_offer",
+      "adjudication_or_implementation",
+      "title_control_operation_income",
+      "present_Mynd_outcome"
+    ],
+    "guardrail": "Each arrow must be independently proved; endpoints do not prove the chain."
   }
 }
