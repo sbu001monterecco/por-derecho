@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 44,
   "owner": "1847:b15cea84b21434cc30a0c664eef3b12c2560c105",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 1847,
   "base_sha": "94660d57dfc86b2af7457eecc08c184a19f34ffc",
   "candidate_sha": "b15cea84b21434cc30a0c664eef3b12c2560c105",
@@ -2359,6 +2359,62 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 1847,
+      "candidate_sha": "b15cea84b21434cc30a0c664eef3b12c2560c105",
+      "at": "2026-09-25T08:06:06.298918Z",
+      "merge_sha": "1f8a2f6c5e4b23bae21bffa6a7f653eb15e01484",
+      "pages_run_id": 36110957678,
+      "exact_matches": [
+        {
+          "path": "assets/data/r33-truth-machine-visual-20260925.json",
+          "sha256": "2ed11c5dea342d4d77bcdb82e1fa6fec8e97da5f103247f41aa5ecdd0562619f",
+          "bytes": 4654
+        },
+        {
+          "path": "assets/r33-truth-machine-visual-20260925.svg",
+          "sha256": "48c56ca1037a76ac209f4e4c509231f00cb1edc0d37b455d1d2df6e2153e4213",
+          "bytes": 8307
+        },
+        {
+          "path": "en/index.html",
+          "sha256": "d3917a91f8073c65c4a5b1e4395a0f5e10688fd09b97838ffe411e6dda42397b",
+          "bytes": 233625
+        },
+        {
+          "path": "en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/index.html",
+          "sha256": "e6b4d571500e3144d1d198d6578d0c82512ddc98da05e43b4c809f07bc1ff026",
+          "bytes": 23410
+        },
+        {
+          "path": "en/r33-truth-machine-visual/index.html",
+          "sha256": "fdfb22b73d7fe745affabd6ddb6c7ac30764a69829c6ec34181a5f91ad746ed8",
+          "bytes": 8300
+        },
+        {
+          "path": "es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/index.html",
+          "sha256": "826293da9306246b03f0effe42c4d78682a077c52be78c698a80145049372f35",
+          "bytes": 36071
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "0ae46753cc4880fed0770ef0237856587cb89f0d99c56d2a91d4f6b8d7e01d63",
+          "bytes": 242931
+        },
+        {
+          "path": "es/r33-maquina-verdad-visual/index.html",
+          "sha256": "b7c7d23054be590cedb4fef0a146f0b912d5b0e1865f23893f9730aaebd37acc",
+          "bytes": 8434
+        },
+        {
+          "path": "ops/continuity/R33_TRUTH_MACHINE_RUN_20260925.md",
+          "sha256": "f857c0b0f0d8c3abdf0e87550b7a7b0f1d31944441e470f3e6b8aa8a8e4d344f",
+          "bytes": 3595
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -2401,7 +2457,64 @@
         "pages_run_id": 36110957678,
         "merge_sha": "1f8a2f6c5e4b23bae21bffa6a7f653eb15e01484"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-25T08:06:06.298866Z",
+      "evidence": {
+        "merge_sha": "1f8a2f6c5e4b23bae21bffa6a7f653eb15e01484",
+        "pages_run_id": 36110957678,
+        "exact_matches": [
+          {
+            "path": "assets/data/r33-truth-machine-visual-20260925.json",
+            "sha256": "2ed11c5dea342d4d77bcdb82e1fa6fec8e97da5f103247f41aa5ecdd0562619f",
+            "bytes": 4654
+          },
+          {
+            "path": "assets/r33-truth-machine-visual-20260925.svg",
+            "sha256": "48c56ca1037a76ac209f4e4c509231f00cb1edc0d37b455d1d2df6e2153e4213",
+            "bytes": 8307
+          },
+          {
+            "path": "en/index.html",
+            "sha256": "d3917a91f8073c65c4a5b1e4395a0f5e10688fd09b97838ffe411e6dda42397b",
+            "bytes": 233625
+          },
+          {
+            "path": "en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/index.html",
+            "sha256": "e6b4d571500e3144d1d198d6578d0c82512ddc98da05e43b4c809f07bc1ff026",
+            "bytes": 23410
+          },
+          {
+            "path": "en/r33-truth-machine-visual/index.html",
+            "sha256": "fdfb22b73d7fe745affabd6ddb6c7ac30764a69829c6ec34181a5f91ad746ed8",
+            "bytes": 8300
+          },
+          {
+            "path": "es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/index.html",
+            "sha256": "826293da9306246b03f0effe42c4d78682a077c52be78c698a80145049372f35",
+            "bytes": 36071
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "0ae46753cc4880fed0770ef0237856587cb89f0d99c56d2a91d4f6b8d7e01d63",
+            "bytes": 242931
+          },
+          {
+            "path": "es/r33-maquina-verdad-visual/index.html",
+            "sha256": "b7c7d23054be590cedb4fef0a146f0b912d5b0e1865f23893f9730aaebd37acc",
+            "bytes": 8434
+          },
+          {
+            "path": "ops/continuity/R33_TRUTH_MACHINE_RUN_20260925.md",
+            "sha256": "f857c0b0f0d8c3abdf0e87550b7a7b0f1d31944441e470f3e6b8aa8a8e4d344f",
+            "bytes": 3595
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-25T08:06:01.347047Z"
+  "updated_at": "2026-09-25T08:06:06.298866Z"
 }
