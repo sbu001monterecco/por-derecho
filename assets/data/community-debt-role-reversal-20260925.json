@@ -206,5 +206,15 @@
       "present_Mynd_outcome"
     ],
     "guardrail": "Each arrow must be independently proved; endpoints do not prove the chain."
+  },
+  "cross_controls": [
+    "PD-CHATGPT-UCF-INTAKE-20260925-01",
+    "PD-COMMUNITY-COURT-COMPLETENESS-20260925-01"
+  ],
+  "court_completeness": {
+    "control_id": "PD-COMMUNITY-COURT-COMPLETENESS-20260925-01",
+    "principal_position": "With one exact exception still to be source-identified, Gil/AWESWELL state that Community-fee/governance proceedings generally did not adjudicate the complete underlying accounting/debt record.",
+    "exact_exception": "OPEN_DO_NOT_GUESS",
+    "mandatory_distinction": "PROCEEDING_OBJECT_VS_FULL_DEBT_VALIDITY"
   }
 }
