@@ -36,7 +36,9 @@ jobs:
           GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
           GITHUB_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         run: python scripts/validate_repository_preservation.py
-      - name: Validate locked first-read actor presentation
+      - name: Validate homepage orientation contract
+        run: python ci/homepage_orientation_contract_20260925.py
+      - name: Validate audience experience and preserved direct-route presentation
         run: python scripts/validate_audience_experience.py
       - name: Validate actor and institutional linkage record
         run: python scripts/validate_ac_community_de_facto_administration.py
