@@ -39,27 +39,15 @@ def main() -> int:
     require(errors, lock.get("acosta_visual_asset") == ACOSTA_ASSET, "preservation contract Acosta asset mismatch")
     require(errors, tuple(lock.get("stable_actor_ids", [])) == ACTOR_ORDER, "preservation contract actor order/identity mismatch")
 
-    homepage_rules = {
-        "en/index.html": (
-            "Identification supplied by Patricia Domínguez and confirmed by Gil Marer; not derived from facial recognition.",
-            "The photograph establishes identity/relationship context only. It does not establish authority, coordination, knowledge, intent or liability.",
-        ),
-        "es/index.html": (
-            "Identificación facilitada por Patricia Domínguez y confirmada por Gil Marer; no procede de reconocimiento facial.",
-            "La fotografía aporta únicamente contexto de identidad y relación. No acredita por sí sola autoridad, coordinación, conocimiento, intención ni responsabilidad.",
-        ),
-    }
-    for route, markers in homepage_rules.items():
+    # 25 Sep 2026 owner-authorised orientation-first homepage:
+    # controlled actor visuals stay out of the root homepages and remain
+    # source-controlled through the dedicated dossiers, actor pages and runtime.
+    for route in ("en/index.html", "es/index.html"):
         text = read(route)
-        require(errors, text.count("data-private-actor-card=") == 5, f"{route}: expected five private actor cards")
-        positions = [text.find(f'data-private-actor-id="{actor_id}"') for actor_id in ACTOR_ORDER]
-        require(errors, all(position >= 0 for position in positions), f"{route}: missing stable actor ID")
-        require(errors, positions == sorted(positions), f"{route}: actor order must be FMMM, Shaila, Antonio, JDAM, LPAM")
-        require(errors, text.count(TRIO_ASSET.split("assets/", 1)[1]) == 1, f"{route}: expected one trio visual")
-        require(errors, text.count(ACOSTA_ASSET.split("assets/", 1)[1]) >= 1, f"{route}: controlled Acosta visual missing")
-        require(errors, "portrait awaiting verification" not in text.lower(), f"{route}: stale portrait-awaiting state returned")
-        for marker in markers:
-            require(errors, marker in text, f"{route}: missing provenance/evidence boundary: {marker}")
+        require(errors, "data-private-actor-card=" not in text, f"{route}: actor-card dossier content returned to orientation homepage")
+        require(errors, TRIO_ASSET.split("assets/", 1)[1] not in text, f"{route}: trio dossier visual returned to orientation homepage")
+        require(errors, ACOSTA_ASSET.split("assets/", 1)[1] not in text, f"{route}: Acosta dossier visual returned to orientation homepage")
+
 
     dossier_rules = {
         "en/fmmm-shaila-antonio-family-community-corporate-continuity/index.html": "not derived from facial recognition",
