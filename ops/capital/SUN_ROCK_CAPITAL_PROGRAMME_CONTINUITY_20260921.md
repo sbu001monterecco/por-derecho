@@ -113,3 +113,15 @@ No public repository statement may imply:
 ## 12. Current operational instruction
 
 Future capital threads should first read this file, the capital response playbook, the private Master Principal Capital Providers Sheet and current Gmail where recipient-level truth is required. The 17-Sep handover remains historical evidence, not the current queue.
+
+## 13. Homepage visibility lock — 25 September 2026
+
+This is a controlling invariant for all future capital work:
+
+- **Do not place Institutional Capital / Capital Institucional in the homepage top navigation.**
+- **Do not place an institutional-capital CTA in the homepage hero.**
+- **Do not place a standalone institutional-capital promotional/status block on the homepage.**
+- The homepage must route **Future / Futuro to standalone pages** at `/en/future/` and `/es/futuro/`. Institutional capital must not be linked directly from the homepage; it is reached one level deeper from those Future pages.
+- The underlying `/en/institutional-capital/` and `/es/capital-institucional/` pages remain available and may continue to evolve within the existing disclosure and regulatory boundaries.
+- Any future capital thread or automation must preserve this invariant unless Gil Marer expressly changes it.
+- CI must fail closed if the homepage directly links institutional capital, if Future/Futuro reverts to an on-page scroll target, or if the standalone Future pages lose their controlled onward capital route.
