@@ -116,3 +116,23 @@ The preferred repair is not indefinite chunk-by-chunk CI reconstruction. Recover
 ## Canonical maxim
 
 > **Git proves preservation. CI proves reproducibility. `main` proves merge. The public host proves deployment. Only the complete chain can prove deletion safety.**
+
+## Continuous three-colour sentinel — 25 September 2026
+
+This protocol now exposes its current thread-level result through **PD-THREAD-SENTINEL-20260925-01**.
+
+The sentinel does not replace this protocol; it is its continuously visible front end:
+
+- **🟢 GREEN — SAFE TO DELETE:** all applicable deletion-safety gates are satisfied and a fresh thread can reconstruct the material state without the originating chat.
+- **🟠 ORANGE — PRESERVATION PENDING:** deletion safety is not yet established, but no known condition proves that deletion itself would immediately cause material loss/interruption. Archive rather than delete.
+- **🔴 RED — DO NOT DELETE:** deletion would credibly lose unique material or interrupt/orphan an active task, automation, action or recovery dependency.
+
+A substantive thread starts ORANGE unless a current durable record proves GREEN. RED always overrides ORANGE. A prior GREEN may revert immediately when new material, a local-only artifact, an unpreserved action, an expired/inaccessible source or a chat-bound automation appears.
+
+The required compact response cue, exact machine semantics and transition triggers are controlled by:
+
+- `.github/governance/THREAD_DELETION_SAFETY_SENTINEL_25SEP2026.md`
+- `assets/data/thread-deletion-safety-sentinel-v1.json`
+- `scripts/validate_thread_deletion_safety_sentinel.py`
+
+The full audit need not be regenerated on every turn. Maintain the cue continuously; create/update the detailed closeout only when moving to GREEN or when a RED blocker needs durable treatment.

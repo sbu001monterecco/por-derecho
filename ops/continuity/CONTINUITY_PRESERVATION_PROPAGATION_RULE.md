@@ -79,3 +79,17 @@ If a protected branch or workflow blocks a write, use the required PR/MR/check p
 This rule applies prospectively to every material Por Derecho / Sun Rock update. It also applies retrospectively whenever a new review reveals that a prior correction, provider statement or evidence-state change was not fully propagated.
 
 The operational objective is anti-fragmentation with evidential discipline: one developing factual system, many legally distinct proceedings and publication surfaces, with no silent drift between them.
+
+## Thread deletion-safety sentinel
+
+Continuity propagation is incomplete until its thread-level deletion state is also evaluated under **PD-THREAD-SENTINEL-20260925-01**.
+
+Every substantive Por Derecho / Sun Rock thread carries one compact state:
+
+`🔴 RED` = deletion would cause material loss/interruption.  
+`🟠 ORANGE` = preservation/deletion safety is incomplete or not yet verified.  
+`🟢 GREEN` = material continuity is independently reconstructable and deletion will not interrupt a chat-bound operation.
+
+New threads default ORANGE. Material propagation, source-custody, repo/Drive writes, automation changes, external actions and readback results must recalculate the state. The visible ChatGPT cue is a projection of the durable preservation state, not a replacement for it.
+
+Private thread-specific source locators and active dependencies belong in the private Drive sentinel/dashboard. Public Git stores only the policy, machine semantics, validators and public-safe closeouts.
