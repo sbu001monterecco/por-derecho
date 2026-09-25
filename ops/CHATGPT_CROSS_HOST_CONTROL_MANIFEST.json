@@ -5,14 +5,14 @@
   "source_of_truth_policy": "Use current GitHub main for controls newer or richer there; never blend GitHub/GitLab controls by memory. Reconcile explicitly.",
   "github": {
     "repository": "sbu001monterecco/por-derecho",
-    "main_sha": "7bd0def057efa6ddf531d80c673c75030fc9f647",
-    "role": "ACTIVE_CONTROL_SOURCE_FOR_THIS_UPDATE"
+    "role": "ACTIVE_CONTROL_SOURCE_FOR_THIS_UPDATE",
+    "base_main_sha_at_generation": "7bd0def057efa6ddf531d80c673c75030fc9f647"
   },
   "gitlab": {
     "project_id": 86151898,
     "project": "por-derecho/por-derecho-setup-or-gitlab-setup",
-    "main_sha": "5d90b0fd0e80a655599a2b18fc88b6b4a876c9f1",
-    "role": "MIRROR_WITH_KNOWN_CONTROL_DIVERGENCE"
+    "role": "MIRROR_WITH_KNOWN_CONTROL_DIVERGENCE",
+    "main_sha_at_generation": "5d90b0fd0e80a655599a2b18fc88b6b4a876c9f1"
   },
   "controlled_files": [
     {
@@ -40,5 +40,19 @@
     "NO_SILENT_BLIND_COPY",
     "NO_CLAIM_OF_MIRROR_PARITY_WHILE_DIVERGED",
     "RECONCILE_ADDITIVELY_FROM_VERIFIED_SOURCE_BYTES"
+  ],
+  "this_update": {
+    "github_branch": "agent/community-debt-role-reversal-box-20260925",
+    "github_status": "INTEGRATION_BRANCH_PENDING_MERGE",
+    "gitlab_mirror_status": "NOT_UPDATED_BY_THIS_USER_INSTRUCTION",
+    "rule": "Do not claim parity until the same verified controls are reconciled to GitLab current main."
+  },
+  "new_controls": [
+    ".github/governance/CHATGPT_UNITARY_PROSECUTORIAL_INTAKE_GATE_25SEP2026.md",
+    "assets/data/chatgpt-unitary-prosecutorial-intake-v1.json",
+    "ops/templates/UNITARY_PROSECUTORIAL_REVIEW.md",
+    "governance/COMMUNITY_COURT_INFORMATION_COMPLETENESS_25SEP2026.md",
+    "governance/COMMUNITY_DEBT_ROLE_REVERSAL_BOX_25SEP2026.md",
+    "assets/data/community-debt-role-reversal-20260925.json"
   ]
 }
