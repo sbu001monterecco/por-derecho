@@ -142,3 +142,48 @@ For public-facing professional language, the project may say:
 > **Por Derecho's attributed position is that the Community debt-and-voting architecture lacked a valid factual and legal foundation, that it was used to displace LPB's majority governance position, and that later private and institutional acts adopted or relied on that architecture. The accountability question therefore runs through the origin, certification, use, adoption and consequences of that mechanism rather than beginning and ending with the debtor-side parties.**
 
 Where responsibility of the Insolvency Administrator or a judge is discussed, keep the formulation actor-specific: the project contends that knowing adoption, enablement, maintenance or use of an invalid mechanism can itself require accountability; whether any particular criminal offence is established remains an element-by-element legal question and is not inferred merely from an adverse act or decision.
+
+
+## 14. Longitudinal debt → vote → authority chain
+
+The role-reversal analysis must not isolate 26 April 2016 from the surrounding primary-source chronology.
+
+### 22 June 2011
+
+Current controlled repository treatment records FMMM acting as Community administrator; LPB appearing with approximately 72% participation but being denied a vote because of attributed debt; debt/claims being approved; and Pamanil being ratified for administration, maintenance, custody and litigation.
+
+**Boundary:** this is a documented governance/debt node. Exact validity, complete attendance/proxy chain, debt basis and legal effect remain source-specific.
+
+### 19 November 2015
+
+The controlled minutes chronology records approximately 89.02% present/represented but only Roque Prieto and Cristina Molina — approximately 0.770% — treated as entitled to vote. The minutes report debt of EUR3,641,456.50, acknowledge that charges were very high and propose a retroactive reduction.
+
+**Boundary:** the exact attendance hundredth and complete accounting denominator remain subject to the signed-source controls.
+
+### 26 April 2016
+
+The signed ACTA family records 89.727% present/represented, LPB at 72.976%, only 11.039% treated as vote-eligible, incomplete/unapproved 2010–2015 accounts, and the retroactive EUR171.89→EUR22.26 quota reset followed by a recorded material fall in arrears.
+
+### 18 April 2017 — Judgment 91/2017
+
+The current repository source-control records that Judgment 91/2017 set aside the EUR171.81 monthly charge fixed in May 2009 after the Community submitted to the claim, and notes the 2016 EUR22.26 figure.
+
+**Boundary:** the judgment does not by itself invalidate every charge, debt certificate or later vote. Its exact finca/period/application effect must be reconciled.
+
+### 12 June 2017
+
+The primary minutes record approximately 87.098% present/represented but only approximately 6.545% treated as vote-qualified. Antonio Cogolludo is recorded as president, Shaila Cogolludo as treasurer and FMMM as secretary-administrator; budget, fees, certificates, claims and banking powers are processed through that reduced electorate.
+
+### 18 May 2018
+
+The minutes record approximately 86.715% present/represented but only the Amenen/Shaila Cogolludo-linked 0.385% interest treated as vote-qualified. Antonio Cogolludo is president, FMMM secretary-administrator and Shaila Cogolludo treasurer. The minutes approve security expenditure up to EUR8,500/month for access control. The controlled source family also records an Insolvency Administrator email asking the Community president to convene the measure on LPB's behalf as majority holder.
+
+**Boundary:** this is a documentary bridge between majority ownership, debt-based voting exclusion, Community offices, insolvency-administration authority, security and access. It does not by itself prove the later physical command chain or criminal intent.
+
+### Required whole-chain test
+
+Read the sequence as:
+
+`debt basis → vote exclusion → reduced electorate → office/control → certificates/claims → retroactive recalculation → changed debt basis → continued reduced electorate → security/access authority → downstream use`.
+
+The question is whether each link had a valid factual/legal foundation and which actor knew, certified, relied upon or benefited from each link at the relevant date.
