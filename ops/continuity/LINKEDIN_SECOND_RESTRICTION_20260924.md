@@ -2,6 +2,7 @@
 
 **Control:** PD-LINKEDIN-SECOND-EPISODE-20260924-01  
 **Status:** PUBLIC-SAFE CONTINUITY RECORD
+**Governed by:** `ops/continuity/CONTINUITY_PRESERVATION_PROPAGATION_RULE.md`
 
 Por Derecho classifies the October 2024 restriction/recovery sequence (LinkedIn cases 241020-015316 and 241028-011722) as **Episode 1**, and the 22–23 September 2026 security/restriction sequence as **Episode 2**.
 

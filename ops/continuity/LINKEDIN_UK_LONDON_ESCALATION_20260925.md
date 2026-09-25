@@ -2,6 +2,7 @@
 
 **Control:** PD-LINKEDIN-UK-LONDON-20260925-01  
 **Status:** PUBLIC-SAFE CONTINUITY / EVIDENCE-PRESERVATION RECORD  
+**Governed by:** `ops/continuity/CONTINUITY_PRESERVATION_PROPAGATION_RULE.md`
 **Scope:** existing LinkedIn cases 260923-005700 and 260923-029467; no duplicate support case.
 
 ## Provider-native state

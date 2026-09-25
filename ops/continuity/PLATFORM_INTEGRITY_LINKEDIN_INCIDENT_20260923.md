@@ -2,6 +2,7 @@
 
 **Control:** PD-PLATFORM-INTEGRITY-20260923-01  
 **Status:** PUBLIC-SAFE CONTINUITY RECORD  
+**Governed by:** `ops/continuity/CONTINUITY_PRESERVATION_PROPAGATION_RULE.md`
 **Scope:** LinkedIn current restriction + cross-platform preservation hub.
 
 ## Current evidence
