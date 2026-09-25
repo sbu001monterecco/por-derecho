@@ -1,16 +1,16 @@
 # Community debt / voting / role-reversal publication control — 25 Sep 2026
 
 **Control ID:** PD-COMMUNITY-DEBT-ROLE-REVERSAL-20260925-01  
-**Status:** PUBLIC-SAFE ATTRIBUTED-ALLEGATION CONTROL · DOCUMENTARY MECHANISM VISIBLE · GUILT NOT ADJUDICATED  
+**Status:** PUBLIC-SAFE CATEGORICAL ATTRIBUTED POSITION · DOCUMENTARY MECHANISM VISIBLE · GUILT NOT ADJUDICATED  
 **Scope:** Sun Park Owners' Community debt/morosity/voting chain, private-actor capture/instrumentalisation allegation, Insolvency Administrator notice, later access/control effects, and Calificación role-reversal analysis.
 
 ## 1. Publication purpose
 
-Por Derecho may state Gil Marer/AWESWELL's allegation at full strength:
+Por Derecho must preserve Gil Marer/AWESWELL's present position at full categorical strength, while keeping attribution and evidential state explicit:
 
-> Gil alleges that the private-actor perimeter captured and instrumentalised the Sun Park Owners' Community, used a disputed Community-debt/morosity mechanism to neutralise LPB's majority voting power, and later used Community offices, certificates, resolutions, litigation, access/security authority and related acts to produce effects against LPB/Sun Park. He further alleges that later Acosta Matos/CAM participation functionally converged with that earlier private-actor line.
+> **Gil Marer states as a factual conclusion from the evidential record that the private-actor perimeter captured and instrumentalised the Sun Park Owners' Community; that the Community-debt/morosity mechanism used against LPB was fabricated or without valid foundation; and that this mechanism was then used to neutralise LPB's majority voting power and produce later governance, certification, litigation, access/security and control effects. He states that later Acosta Matos/CAM participation functionally converged with that earlier private-actor line.**
 
-This remains an **attributed allegation / causal hypothesis**, not a repository finding that the Community was unlawfully captured, that every debt entry was false, or that any named actor committed a crime.
+**Repository treatment:** this is Gil/AWESWELL's categorical attributed factual position. It is not silently weakened to 'mere concern' or 'possible issue'. The repository itself, however, continues to separate that position from an adjudicated or independently established finding against any named person. The documentary mechanism, source limits, contrary material and actor-specific criminal elements remain separately controlled.
 
 ## 2. Documentary mechanism that may be stated as fact
 
@@ -63,8 +63,8 @@ The repository may use the words **capture**, **hijack**, **manufactured/fabrica
 
 Use:
 
-- "Gil alleges capture/instrumentalisation of the Community";
-- "Gil alleges that the disputed debt/morosity mechanism was manufactured or knowingly manipulated";
+- "Gil Marer states that the Community was captured/instrumentalised by the private-actor perimeter";
+- "Gil Marer states that the debt/morosity mechanism used against LPB was fabricated or lacked valid foundation";
 - "Gil characterises the later 7-June-2018 material-control event as clandestine, forcible and unauthorised";
 - "the record documents debt/voting/accounting and access/control mechanisms that make those allegations finite and testable."
 
@@ -74,7 +74,7 @@ Do **not** publish those words as adjudicated historical facts absent a competen
 
 Gil's formulation may be reproduced as attributed speech:
 
-> "If anyone should face a 'calificación punible' or culpability lens, it is the actors who allegedly captured the Community and created, certified, used or enabled the invalid debt mechanism."
+> **"If anyone should face the culpability or criminal-accountability lens, it is the actors who, in my position, captured the Community and created, certified, used or enabled the invalid debt mechanism."**
 
 The phrase **"calificación punible" is not treated as the statutory name of a Spanish insolvency remedy**.
 
@@ -133,3 +133,12 @@ Formal legal conclusions require the historical applicable text, complete litiga
 ## 12. External-action boundary
 
 This control authorises repository/publication work only. It does not itself authorise a filing, complaint, witness contact or communication to any authority.
+
+
+## 13. Institutional formulation of Gil's categorical position
+
+For public-facing professional language, the project may say:
+
+> **Por Derecho's attributed position is that the Community debt-and-voting architecture lacked a valid factual and legal foundation, that it was used to displace LPB's majority governance position, and that later private and institutional acts adopted or relied on that architecture. The accountability question therefore runs through the origin, certification, use, adoption and consequences of that mechanism rather than beginning and ending with the debtor-side parties.**
+
+Where responsibility of the Insolvency Administrator or a judge is discussed, keep the formulation actor-specific: the project contends that knowing adoption, enablement, maintenance or use of an invalid mechanism can itself require accountability; whether any particular criminal offence is established remains an element-by-element legal question and is not inferred merely from an adverse act or decision.
