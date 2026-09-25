@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 45,
   "owner": "1850:196bbee5fe50418f8f530cc1aa6ffc2189f8e6ce",
-  "phase": "MERGE_PENDING",
+  "phase": "MERGED",
   "pr": 1850,
   "base_sha": "1f8a2f6c5e4b23bae21bffa6a7f653eb15e01484",
   "candidate_sha": "196bbee5fe50418f8f530cc1aa6ffc2189f8e6ce",
@@ -2442,7 +2442,14 @@
       "evidence": {
         "pr": 1850
       }
+    },
+    {
+      "phase": "MERGED",
+      "at": "2026-09-25T08:48:37.855899Z",
+      "evidence": {
+        "merge_sha": "ef9b81d7cb5ce0514719c254793f39447c38af59"
+      }
     }
   ],
-  "updated_at": "2026-09-25T08:48:36.880604Z"
+  "updated_at": "2026-09-25T08:48:37.855899Z"
 }
