@@ -225,7 +225,7 @@ Locked operational state:
 - Consejo Canario registry entry **RE-000329** is documented from 22-Sep-2026; registry entry is not merits acceptance.
 - ICALPA registry entry **RE-012642/2026** is documented from 22-Sep-2026; do not infer a new DIP 79/2026 or DIP 80/2026 merits decision from it.
 - ICALAN confirmed on 24-Sep-2026 that its prior mailbox was being retired and that **info@icalan.es** is the current communications route. That route was already copied on 22-Sep; the chain was re-forwarded on 25-Sep as a routing-confirmation transmission. Receipt, local reference and any additional formal channel remain open.
-- Use **AWESWELL LIMITED**, UK company no. **07716847**, formerly **MONTERECCO SUN PARK LIMITED**. “Oswell / Oswell Limited” are historical transcription/template errors, not aliases. Keep Matkator, S.L.U. separate.
+- Use **AWESWELL LIMITED**, UK company no. **07716847**, formerly **MONTERECCO SUN PARK LIMITED**. the prior noncanonical company-name variants are historical transcription/template errors, not aliases. Keep Matkator, S.L.U. separate.
 
 
 ## 100% platform-provenance allegation / pre-title commercialisation — 21 September 2026
