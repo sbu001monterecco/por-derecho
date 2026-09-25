@@ -409,9 +409,9 @@
         "user_confirmation_by": "Gil Marer",
         "user_confirmation_date": "2026-09-21",
         "facial_recognition_used": false,
-      "sha256": "c5043df95ed4cc3ebeae3c60c6679f5435e4ca0080e4cdaf3e4dd6039e2b6a3b",
+        "sha256": "c5043df95ed4cc3ebeae3c60c6679f5435e4ca0080e4cdaf3e4dd6039e2b6a3b",
         "dimensions": "640x246",
-      "bytes": 7578,
+        "bytes": 7578,
         "format": "jpg",
         "transformation": "Downscaled display derivative of the source photograph; no identity inference."
       },
@@ -491,6 +491,77 @@
       "storage_mode": "repository-byte-locked",
       "variant_of": "document.fmmm-shaila-antonio-family-source-20260921",
       "publication_boundary": "Display derivative only. The preserved source photograph controls evidential provenance. Every reuse must retain the Patricia Domínguez / Gil Marer identification provenance, state that no facial recognition was used, and state that the image establishes identity/relationship context only—not authority, coordination, knowledge, intent, causation, wrongdoing or liability."
+    },
+    "person.jose-daniel-acosta-matos.primary": {
+      "subject_type": "person",
+      "canonical_name": "José Daniel Acosta Matos",
+      "short_label": "JDAM",
+      "path": "assets/actors/jose-daniel-acosta-matos-user-supplied-07sep2026.jpg",
+      "git_blob_sha": "8cb92bebcdfc67c7b7f3dd585f01482374be5fa9",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "The user expressly supplied and mapped portrait 2 to JDAM / José Daniel Acosta Matos in the working thread on 7 September 2026. No facial-identification inference performed.",
+      "approved_contexts": [
+        "P.O. 641/2024 accountability composite",
+        "actor register",
+        "source-controlled documents and internal review",
+        "JTP payment / AC / CAM actor-context composite"
+      ],
+      "alt_en": "José Daniel Acosta Matos",
+      "alt_es": "José Daniel Acosta Matos",
+      "source_provenance": {
+        "user_supplied_original_filename": "1000137527.png",
+        "stored_format": "jpg",
+        "sha256": "61cdf49e72f587ec1da875429454d58e3c902dafae43fe632e08b1c10e6ff042",
+        "dimensions": "1530x1536",
+        "user_mapping_date": "2026-09-07"
+      }
+    },
+    "person.laura-patricia-acosta-matos.primary": {
+      "subject_type": "person",
+      "canonical_name": "Laura Patricia Acosta Matos",
+      "short_label": "LPAM",
+      "path": "assets/actors/laura-patricia-acosta-matos-user-supplied-07sep2026.jpg",
+      "git_blob_sha": "b05f094b6dd392664b7d2c94b6f079207eee4106",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "The user expressly supplied and mapped portrait 1 to LPAM / Laura Patricia Acosta Matos in the working thread on 7 September 2026. No facial-identification inference performed.",
+      "approved_contexts": [
+        "P.O. 641/2024 accountability composite",
+        "actor register",
+        "source-controlled documents and internal review",
+        "JTP payment / AC / CAM actor-context composite"
+      ],
+      "alt_en": "Laura Patricia Acosta Matos",
+      "alt_es": "Laura Patricia Acosta Matos",
+      "source_provenance": {
+        "user_supplied_original_filename": "1000137526.jpg",
+        "stored_format": "jpg",
+        "sha256": "bef6ea30c155d505fd12901da654cbd9f365848ec586b23017e96ac78b21ea9f",
+        "dimensions": "1025x1536",
+        "user_mapping_date": "2026-09-07"
+      }
+    },
+    "person.juan-tomas-parrilla.primary": {
+      "subject_type": "person",
+      "canonical_name": "Juan Tomás Parrilla Suárez",
+      "short_label": "JTP",
+      "path": "assets/actors/juan-tomas-parrilla-canonical-20260923.jpg",
+      "git_blob_sha": "36b292e8b28a9c3fe01ee06a0f669dc3ce566d0b",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "User-supplied conference photograph selected and identified by the user as Juan Tomás Parrilla Suárez on 23 September 2026; canonical crop preserved from the approved working image. No facial-recognition inference performed.",
+      "approved_contexts": [
+        "JTP payment / AC / CAM actor-context composite",
+        "counsel-payment independence reader",
+        "source-controlled documents and internal review"
+      ],
+      "alt_en": "Juan Tomás Parrilla Suárez",
+      "alt_es": "Juan Tomás Parrilla Suárez",
+      "source_provenance": {
+        "stored_format": "jpg",
+        "sha256": "17f38a855da0e13f98c3eb9395455b96e9b3b844a6c16a5714346fe2ab4d1a62",
+        "dimensions": "1584x1056",
+        "user_mapping_date": "2026-09-23",
+        "drive_canonical_filename": "Juan_Tomas_Parrilla_canonical_20260923.jpg"
+      }
     }
   },
   "rejected_or_prohibited_mappings": [
