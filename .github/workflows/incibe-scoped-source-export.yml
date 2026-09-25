@@ -1,55 +1,110 @@
-name: INCIBE scoped source export
+name: INCIBE scoped source preparation
 on:
   push:
     branches: ['prep/platform-integrity-incibe-20260925']
     paths: ['.github/workflows/incibe-scoped-source-export.yml']
 permissions:
-  contents: read
+  contents: write
 jobs:
-  export:
+  prepare:
     if: github.repository == 'sbu001monterecco/por-derecho' && github.ref == 'refs/heads/prep/platform-integrity-incibe-20260925'
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 18
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           ref: 7bd0def057efa6ddf531d80c673c75030fc9f647
           fetch-depth: 1
           persist-credentials: false
-      - name: Export exact public text sources and diagnostic index
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: d7cbe4932aefb18ec70c080a66789147673f12be
+          path: preparation-input
+          sparse-checkout: scripts/prepare_platform_incibe_20260925.py
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - name: Materialise reviewed bounded delta and capture exact diff
+        shell: bash
+        run: |
+          mkdir -p /tmp/incibe-candidate
+          cp preparation-input/scripts/prepare_platform_incibe_20260925.py scripts/prepare_platform_incibe_20260925.py
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          p=Path('scripts/prepare_platform_incibe_20260925.py')
+          text=p.read_text()
+          # Public validators use generic patterns, never exact private locator literals.
+          text=re.sub(r"'1a[0-9a-f]{14}',?",'',text)
+          text=re.sub(r"'[0-9]{7}',?",'',text)
+          text=text.replace('Un evento de seguridad confirmado por el proveedor; una restricción actual pendiente de explicación.','Un evento de seguridad confirmado por el proveedor; una restricción actual aún sin explicación.')
+          old="text=text.replace('<main id=\"content\">','<main id=\"content\">\\n'+page_block(spec,lang),1)"
+          new="section='<section class=\"section recipient-section-alt\" id=\"'+('actual' if es else 'current')+'\">'\n        if text.count(section)!=1:raise ValueError('Current section boundary drift')\n        text=text.replace(section,page_block(spec,lang)+section,1)"
+          if old not in text:raise ValueError('Preparation placement anchor changed')
+          text=text.replace(old,new,1)
+          p.write_text(text)
+          PY
+          git switch -c materialize/platform-integrity-incibe-20260925
+          python3 scripts/prepare_platform_incibe_20260925.py --apply 2>&1 | tee /tmp/incibe-candidate/preparation.log
+          python3 scripts/reconcile_institutional_communications.py --check 2>&1 | tee /tmp/incibe-candidate/reconciliation-check.log
+          python3 scripts/validate_institutional_communications.py 2>&1 | tee /tmp/incibe-candidate/institutional-validation.log
+          python3 scripts/test_reconcile_institutional_communications.py 2>&1 | tee /tmp/incibe-candidate/reconciliation-tests.log
+          python3 - <<'PY'
+          import pathlib, json, hashlib, subprocess, sys, re, zipfile
+          sys.path.insert(0,'scripts')
+          from prepare_platform_incibe_20260925 import PATHS
+          paths=sorted(set(PATHS))
+          assert all(not p.startswith('.github/workflows/') for p in paths)
+          assert all(pathlib.Path(p).is_file() for p in paths)
+          for p in paths:
+              t=pathlib.Path(p).read_text()
+              # Refuse newly introduced private account/message/storage locators.
+              old=subprocess.run(['git','show','HEAD:'+p],capture_output=True,text=True)
+              oldtext=old.stdout if old.returncode==0 else ''
+              private=re.compile(r'\b1a[0-9a-f]{14}\b|https://mail\.google\.com/[^\s\"<>]+|https://drive\.google\.com/file/[^\s\"<>]+')
+              assert set(private.findall(t))<=set(private.findall(oldtext)),p
+          subprocess.run(['git','add','--',*paths],check=True)
+          actual=subprocess.check_output(['git','diff','--cached','--name-only']).decode().splitlines()
+          assert set(actual)<=set(paths)
+          assert not subprocess.check_output(['git','diff','--cached','--name-only','--diff-filter=D'])
+          patch=subprocess.check_output(['git','diff','--cached','--binary'])
+          pathlib.Path('/tmp/incibe-candidate/candidate.patch').write_bytes(patch)
+          manifest={'base':'7bd0def057efa6ddf531d80c673c75030fc9f647','files':[{'path':p,'sha256':hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest(),'bytes':pathlib.Path(p).stat().st_size} for p in actual],'no_deletions':True,'transport_workflow_in_candidate':False,'private_source_bytes_in_candidate':False}
+          pathlib.Path('/tmp/incibe-candidate/manifest.json').write_text(json.dumps(manifest,indent=2))
+          with zipfile.ZipFile('/tmp/incibe-candidate/candidate-files.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for p in actual:z.write(p,p)
+          print(json.dumps(manifest,indent=2))
+          PY
+      - name: Create unreferenced Git objects for connector review
+        env:
+          GH_OBJECT_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           python3 - <<'PY'
-          import pathlib, subprocess, zipfile, json, hashlib, re
-          root=pathlib.Path('.')
-          output=pathlib.Path('/tmp/incibe-source-export'); output.mkdir()
-          names=subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
-          exact={'AGENTS.md','CHATGPT_START_HERE.md','ops/CURRENT_COLLABORATION_STATE.json','ops/PUBLICATION_CONTROLLER.md','assets/data/institutional-communications-register-v1.json','assets/data/platform-integrity-events-v1.json','en/platform-integrity-evidence/index.html','es/integridad-plataformas-evidencia/index.html','en/linkedin-second-restriction-evidence-2026/index.html','es/linkedin-segunda-restriccion-evidencia-2026/index.html'}
-          patterns=('scripts/','.github/governance/','.github/workflows/','ops/continuity/','ops/linkedin-register/','tests/')
-          selected=[]; matches=[]
-          for n in names:
-              p=root/n
-              if not n or not p.is_file(): continue
-              is_text=p.suffix.lower() in {'.json','.md','.html','.py','.js','.csv','.yml','.yaml','.txt','.css','.toml'}
-              if not is_text: continue
-              data=p.read_bytes()
-              if len(data)>5000000: continue
-              text=data.decode('utf-8',errors='replace')
-              if ('repeated-login' in text or 'repeated login attempts can cause' in text or 'intentos de inicio' in text) and ('GitLab' in text or 'gitlab' in text): matches.append(n)
-              include=n in exact or n.startswith(patterns) or ('platform-integrity' in n or 'integridad-plataformas' in n or 'linkedin' in n.lower()) or n in {'assets/recipient-forensic-20260922.css','assets/styles.css','assets/site.js','scripts/reconcile_institutional_communications.py','scripts/validate_institutional_communications.py'} or (n.startswith('assets/data/') and ('communications' in n or 'recovery' in n or 'sentinel' in n or 'collaboration' in n))
-              if include: selected.append((n,data))
-          with zipfile.ZipFile(output/'sources.zip','w',zipfile.ZIP_DEFLATED) as z:
-              for n,data in selected: z.writestr(n,data)
-          manifest={'base':'7bd0def057efa6ddf531d80c673c75030fc9f647','files':[{'path':n,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()} for n,b in selected],'possible_stale_gitlab_matches':matches}
-          (output/'manifest.json').write_text(json.dumps(manifest,indent=2))
-          reg=json.loads(pathlib.Path('assets/data/institutional-communications-register-v1.json').read_text())
-          print('REGISTER_TOP_KEYS',list(reg)); print('EVENT_COUNT',len(reg.get('events',[])))
-          print('LAST_EVENT',json.dumps(reg.get('events',[])[-1],ensure_ascii=False)); print('MATCHES',matches)
-          print('EXPORTED',len(selected),'public text files')
+          import os, json, pathlib, urllib.request, hashlib, base64
+          repo='sbu001monterecco/por-derecho'; api='https://api.github.com/repos/'+repo
+          token=os.environ['GH_OBJECT_TOKEN']
+          manifest=json.loads(pathlib.Path('/tmp/incibe-candidate/manifest.json').read_text())
+          def request(path,data=None):
+              assert path.startswith('/git/commits/') or path in {'/git/blobs','/git/trees'}
+              if data is not None:assert path in {'/git/blobs','/git/trees'}
+              req=urllib.request.Request(api+path,data=None if data is None else json.dumps(data).encode(),headers={'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json','Content-Type':'application/json'})
+              with urllib.request.urlopen(req,timeout=60) as r:return json.load(r)
+          base=request('/git/commits/'+manifest['base'])
+          entries=[]
+          for f in manifest['files']:
+              raw=pathlib.Path(f['path']).read_bytes()
+              assert hashlib.sha256(raw).hexdigest()==f['sha256']
+              b=request('/git/blobs',{'content':base64.b64encode(raw).decode(),'encoding':'base64'})
+              entries.append({'path':f['path'],'mode':'100755' if os.access(f['path'],os.X_OK) else '100644','type':'blob','sha':b['sha']})
+          tree=request('/git/trees',{'base_tree':base['tree']['sha'],'tree':entries})
+          receipt={'base_commit':manifest['base'],'base_tree':base['tree']['sha'],'candidate_tree':tree['sha'],'entries':entries,'commit_created':False,'ref_moved':False,'main_modified':False,'next':'Independent review, then connector creates commit/PR and requires normal protected checks/controller.'}
+          pathlib.Path('/tmp/incibe-candidate/object-receipt.json').write_text(json.dumps(receipt,indent=2))
+          print(json.dumps(receipt,indent=2))
           PY
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
         with:
-          name: incibe-scoped-source-${{ github.run_id }}
-          path: /tmp/incibe-source-export/
+          name: incibe-public-candidate-${{ github.run_id }}
+          path: /tmp/incibe-candidate/
           if-no-files-found: error
-          retention-days: 7
+          retention-days: 14
