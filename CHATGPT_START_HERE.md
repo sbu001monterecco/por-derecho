@@ -217,6 +217,17 @@ Before changing the Sun Park/MYND Yaiza address or either Acosta Matos family ed
 
 For any work involving ICALPA DIP 79/2026, ICALPA DIP 80/2026, ICATF/2647-ICATF, the ICAM 1487/26 Tenerife referral, Consejo Canario, CGAE, RSM/San Telmo, Garrigues, PwC, Cuyás/Grant Thornton, Cuatrecasas, Juan Tomás Parrilla, Cristo Ayose Suárez Pimentel or professional-payment/source-of-funds questions, first read `archive/CANARY_COUNCIL_INTERCOLLEGIAL_PROFESSIONAL_PERIMETER_CONTROL_21SEP2026.md`, `assets/data/canary-professional-intercollegial-perimeter-v1.json`, the two 21-Sep correction/missing-evidence addenda and the bilingual coordination routes. Preserve the rule: **separate responsibility does not mean separate reality**. Keep files and liability individual, but do not fragment common evidence or the inter-Colegio competence map. Use **Consejo Canario de Colegios de Abogados (CCCA)**; **CCACM** remains Madrid.
 
+## Consejo Canario / ICALAN operational update — 25 September 2026
+
+For the current professional-regulation state, read `archive/CANARY_COUNCIL_ICALAN_ROUTING_AND_REGISTRY_UPDATE_25SEP2026.md` together with the 21-Sep perimeter control and `assets/data/canary-professional-intercollegial-perimeter-v1.json`.
+
+Locked operational state:
+- Consejo Canario registry entry **RE-000329** is documented from 22-Sep-2026; registry entry is not merits acceptance.
+- ICALPA registry entry **RE-012642/2026** is documented from 22-Sep-2026; do not infer a new DIP 79/2026 or DIP 80/2026 merits decision from it.
+- ICALAN confirmed on 24-Sep-2026 that its prior mailbox was being retired and that **info@icalan.es** is the current communications route. That route was already copied on 22-Sep; the chain was re-forwarded on 25-Sep as a routing-confirmation transmission. Receipt, local reference and any additional formal channel remain open.
+- Use **AWESWELL LIMITED**, UK company no. **07716847**, formerly **MONTERECCO SUN PARK LIMITED**. the prior noncanonical company-name variants are historical transcription/template errors, not aliases. Keep Matkator, S.L.U. separate.
+
+
 ## 100% platform-provenance allegation / pre-title commercialisation — 21 September 2026
 
 For Acosta Matos wealth/growth, RICPE, Sun Park→MYND, whole-platform recovery, Consejo Canario context or moral-hazard drafting, first read `archive/ATTRIBUTED_100_PERCENT_PLATFORM_PROVENANCE_CONTROL_21SEP2026.md` and `assets/data/acosta-matos-platform-provenance-allegation-20260921.json` together with the 20-Sep platform/whole-wealth rules.
