@@ -41,16 +41,24 @@ jobs:
           for k in old_graph:
               if k not in {'events','coverage','canonical_sources'}:
                   assert old_graph[k]==new_graph[k],('Historical graph relationship changed',k)
+          import hashlib
+          digest_sources={'communications_sha256':'communications_register','proceedings_master_sha256':'proceedings_master','link_assertions_sha256':'link_assertions'}
           for k in old_graph['canonical_sources']:
-              assert old_graph['canonical_sources'][k]==new_graph['canonical_sources'][k],('Unexpected source change',k)
+              if k in digest_sources:
+                  path=new_graph['canonical_sources'][digest_sources[k]]
+                  expected=hashlib.sha256(Path(path).read_bytes()).hexdigest()
+                  assert new_graph['canonical_sources'][k]==expected,('Source digest not reproducible',k)
+                  assert not subprocess.check_output(['git','diff','--name-only','--',path]),('Unapproved source edit',path)
+              else:
+                  assert old_graph['canonical_sources'][k]==new_graph['canonical_sources'][k],('Unexpected source change',k)
           for k in old_graph['coverage']:
               if k not in {'communication_events','allocation_counts','scope_counts'}:
                   assert old_graph['coverage'][k]==new_graph['coverage'][k],('Unexpected coverage change',k)
           assert len(new_by)==320+6
-          print('Preserved all historical graph records/edges; only the six already-canonical successors are projected additionally.')"""
+          print('Preserved all historical graph records/edges; current digests verified and six already-canonical successors reconciled.')"""
           assert first.count(old)==1
           first=first.replace(old,replacement,1)
-          first=first.replace("'prior_fiscalia_graph_unchanged_except_source_digest':True","'historical_graph_records_and_edges_unchanged':True,'existing_six_successors_projected_without_new_proceeding_links':True")
+          first=first.replace("'prior_fiscalia_graph_unchanged_except_source_digest':True","'historical_graph_records_and_edges_unchanged':True,'existing_six_successors_projected_without_new_proceeding_links':True,'source_digests_recomputed_from_unchanged_current_sources':True")
           Path('/tmp/incibe-prepare.sh').write_text(first)
           Path('/tmp/incibe-export.sh').write_text(second)
           PY
