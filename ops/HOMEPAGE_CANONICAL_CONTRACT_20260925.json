@@ -75,5 +75,29 @@
     "en/homepage-archive-20260925.html",
     "es/portada-archivo-20260925.html"
   ],
-  "capital_boundary": "Homepage → Future/Futuro → Institutional Capital/Capital Institucional. No direct homepage capital promotion."
+  "capital_boundary": "Homepage → Future/Futuro → Institutional Capital/Capital Institucional. No direct homepage capital promotion.",
+  "required_destination_files": [
+    "en/recovery-command-center/index.html",
+    "es/centro-mando-recuperacion/index.html",
+    "en/future/index.html",
+    "es/futuro/index.html",
+    "en/por-derecho/index.html",
+    "es/por-derecho/index.html",
+    "en/evidence/index.html",
+    "es/evidencia/index.html",
+    "en/start/index.html",
+    "es/inicio/index.html",
+    "en/updates/index.html",
+    "es/actualizaciones/index.html",
+    "en/legal-notebook/index.html",
+    "es/cuaderno-juridico/index.html",
+    "en/matter-identity-registry/index.html",
+    "es/registro-identidad-materia/index.html",
+    "en/legal-privacy/index.html",
+    "es/aviso-legal-privacidad/index.html"
+  ],
+  "expected_canonical": {
+    "en": "https://sbu001monterecco.github.io/por-derecho/en/",
+    "es": "https://sbu001monterecco.github.io/por-derecho/es/"
+  }
 }
