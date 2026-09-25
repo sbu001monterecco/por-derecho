@@ -1,0 +1,55 @@
+name: INCIBE scoped source export
+on:
+  push:
+    branches: ['prep/platform-integrity-incibe-20260925']
+    paths: ['.github/workflows/incibe-scoped-source-export.yml']
+permissions:
+  contents: read
+jobs:
+  export:
+    if: github.repository == 'sbu001monterecco/por-derecho' && github.ref == 'refs/heads/prep/platform-integrity-incibe-20260925'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: 7bd0def057efa6ddf531d80c673c75030fc9f647
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Export exact public text sources and diagnostic index
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import pathlib, subprocess, zipfile, json, hashlib, re
+          root=pathlib.Path('.')
+          output=pathlib.Path('/tmp/incibe-source-export'); output.mkdir()
+          names=subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
+          exact={'AGENTS.md','CHATGPT_START_HERE.md','ops/CURRENT_COLLABORATION_STATE.json','ops/PUBLICATION_CONTROLLER.md','assets/data/institutional-communications-register-v1.json','assets/data/platform-integrity-events-v1.json','en/platform-integrity-evidence/index.html','es/integridad-plataformas-evidencia/index.html','en/linkedin-second-restriction-evidence-2026/index.html','es/linkedin-segunda-restriccion-evidencia-2026/index.html'}
+          patterns=('scripts/','.github/governance/','.github/workflows/','ops/continuity/','ops/linkedin-register/','tests/')
+          selected=[]; matches=[]
+          for n in names:
+              p=root/n
+              if not n or not p.is_file(): continue
+              is_text=p.suffix.lower() in {'.json','.md','.html','.py','.js','.csv','.yml','.yaml','.txt','.css','.toml'}
+              if not is_text: continue
+              data=p.read_bytes()
+              if len(data)>5000000: continue
+              text=data.decode('utf-8',errors='replace')
+              if ('repeated-login' in text or 'repeated login attempts can cause' in text or 'intentos de inicio' in text) and ('GitLab' in text or 'gitlab' in text): matches.append(n)
+              include=n in exact or n.startswith(patterns) or ('platform-integrity' in n or 'integridad-plataformas' in n or 'linkedin' in n.lower()) or n in {'assets/recipient-forensic-20260922.css','assets/styles.css','assets/site.js','scripts/reconcile_institutional_communications.py','scripts/validate_institutional_communications.py'} or (n.startswith('assets/data/') and ('communications' in n or 'recovery' in n or 'sentinel' in n or 'collaboration' in n))
+              if include: selected.append((n,data))
+          with zipfile.ZipFile(output/'sources.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for n,data in selected: z.writestr(n,data)
+          manifest={'base':'7bd0def057efa6ddf531d80c673c75030fc9f647','files':[{'path':n,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()} for n,b in selected],'possible_stale_gitlab_matches':matches}
+          (output/'manifest.json').write_text(json.dumps(manifest,indent=2))
+          reg=json.loads(pathlib.Path('assets/data/institutional-communications-register-v1.json').read_text())
+          print('REGISTER_TOP_KEYS',list(reg)); print('EVENT_COUNT',len(reg.get('events',[])))
+          print('LAST_EVENT',json.dumps(reg.get('events',[])[-1],ensure_ascii=False)); print('MATCHES',matches)
+          print('EXPORTED',len(selected),'public text files')
+          PY
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: incibe-scoped-source-${{ github.run_id }}
+          path: /tmp/incibe-source-export/
+          if-no-files-found: error
+          retention-days: 7
