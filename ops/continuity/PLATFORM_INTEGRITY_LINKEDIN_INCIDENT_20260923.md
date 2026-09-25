@@ -62,3 +62,10 @@ The public page requests preservation of native account-security, moderation, re
 - The two institutional communications are evidence of notice, timing and requests made by Gil Marer; they are not presented as findings or merits determinations by the recipient authorities.
 - Verified outbound transmission establishes that the request and attachment package were sent in the existing case. It does not establish that LinkedIn has reviewed the attachments, accepted the Persona result, restored access or determined the restriction trigger.
 
+## 25 September 2026 — independent review and judicial-preservation actions
+
+- A form-ready Article 21 DSA out-of-court dispute package has been prepared for User Rights concerning the single LinkedIn account-restriction decision. It is framed as a moderation/account-enforcement dispute, not as hacking, account compromise, automated-behaviour enforcement or coordinated reporting.
+- The User Rights live web submission remains pending because its Rules/Fee declarations and final Submit require action in the external form. No User Rights case receipt is claimed.
+- Separately, Spanish appellate counsel has been instructed to assess whether the LinkedIn restriction and related provider-native records should be introduced now as a supervening evidential/preservation development in RPL 3304/2025, reserved until the Sala rules on pending evidence, or handled through another procedural vehicle.
+- No court filing or judicial receipt is claimed at this stage. The purpose is preservation and evidential continuity, not attribution of the restriction to any external actor.
+
