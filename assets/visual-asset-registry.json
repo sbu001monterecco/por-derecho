@@ -564,12 +564,12 @@
       }
     },
     "composite.jtp-payment-actor-context-real-source-20260925": {
-      "subject_type": "composite",
+      "subject_type": "document",
       "canonical_name": "JTP payment / AC / CAM real-source actor-context composite",
       "short_label": "JTP actor-context real-source composite",
       "path": "assets/jtp-payment-actor-composite-real-sources-20260925.png",
       "git_blob_sha": "39245262dc24ea8fbe66b9f53a00afc9028591de",
-      "identity_status": "OWNER_AUTHORIZED_EDITORIAL_RELEASE",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
       "identity_basis": "Deterministic composition from five controlled project portrait sources under the user's 25 September 2026 publication authorisation. Four non-JTP portrait rectangles were replaced with exact canonical repository images; the approved JTP portrait and every pixel outside the authorised portrait boxes were preserved.",
       "approved_contexts": [
         "JTP payment / AC / CAM actor-context composite",
