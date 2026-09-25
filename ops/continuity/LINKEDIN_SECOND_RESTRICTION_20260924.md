@@ -70,3 +70,10 @@ Public routes:
 - A controlled four-document evidence package was attached. Its institutional communications evidence notice/reporting history and requests; they are not recipient-authority findings.
 - Provider response remains pending. No new external actor, reporter identity, reporter geography or causation inference arises from this outbound act.
 
+## 25 September 2026 — next lawful redress lanes
+
+- The Article 21 DSA User Rights route is prepared as a one-decision dispute concerning the LinkedIn account restriction. The filing package uses the provider restriction notice as the primary evidence and preserves the boundary that this is not a hacking/account-compromise claim.
+- The live User Rights submission has not yet been completed; no case number or receipt exists.
+- RPL 3304/2025 counsel has been instructed to assess a narrowly framed supervening-evidence/preservation step. No filing receipt exists and procedural admissibility remains for counsel/court determination.
+- CNMC remains the already-submitted DSA supervisory route; no duplicate CNMC complaint is opened. AEPD/DPC/ICO remain trigger-dependent.
+
