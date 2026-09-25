@@ -1,0 +1,21 @@
+name: JSP options reader check
+on:
+  pull_request:
+    paths:
+      - 'es/jsp-montelanza-concurso-liquidacion/opciones-multimatrix.html'
+      - 'en/jsp-montelanza-insolvency-liquidation/multimatrix-options.html'
+      - 'archive/JSP_OPTIONS_FRUSTRATION_05SEP2026.md'
+      - 'scripts/validate_jsp_options.py'
+      - '.github/workflows/jsp-options-reader-check.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  jsp-options-reader:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Validate bilingual reader, boundaries and repository destinations
+        run: python3 scripts/validate_jsp_options.py --full-repository
+      - name: Confirm validation made no tracked changes
+        run: git diff --exit-code
