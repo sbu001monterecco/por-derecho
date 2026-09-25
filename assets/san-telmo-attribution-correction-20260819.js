@@ -1,7 +1,7 @@
 (() => {
   const path = window.location.pathname.replace(/\/+$/, '/');
-  const isEnglish = /(?:\/por-derecho)?\/en\/$/.test(path);
-  const isSpanish = /(?:\/por-derecho)?\/es\/$/.test(path);
+  const isEnglish = /(?:\/por-derecho)?\/en\/homepage-archive-20260925\.html\/?$/.test(path);
+  const isSpanish = /(?:\/por-derecho)?\/es\/portada-archivo-20260925\.html\/?$/.test(path);
   if (!isEnglish && !isSpanish) return;
 
   const source = 'https://www.youtube.com/watch?v=mHn9IJU0qI4&t=488s';
