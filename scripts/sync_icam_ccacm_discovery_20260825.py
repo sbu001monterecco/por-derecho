@@ -345,8 +345,8 @@ def check() -> None:
         "cuatrecasas-icam-ccacm-2026/",
         "Fourteen core records + ICAM",
     )
-    require("es/index.html", "registros-institucionales-colegios-abogacia-2026/")
-    require("en/index.html", "institutional-records-bar-bodies-2026/")
+    require("es/registros-institucionales/index.html", "registros-institucionales-colegios-abogacia-2026/")
+    require("en/institutional-records/index.html", "institutional-records-bar-bodies-2026/")
 
     for route in (
         "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-icam-ccacm-2026/",
