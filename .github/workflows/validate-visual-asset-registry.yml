@@ -6,6 +6,10 @@ on:
       - "assets/actors/**"
       - "assets/composites/**"
       - "assets/visual-asset-registry.json"
+      - "tests/test_named_person_visual_control_20260925.py"
+      - "scripts/validate_named_person_visual_control.py"
+      - "governance/FACE_IDENTITY_CONTROL_RULE.md"
+      - "assets/data/named-person-visual-control-v1.json"
       - "assets/five-actor-accountability-20260824.css"
       - "assets/community-professional-corporate-network-20260825.css"
       - "ops/REPOSITORY_PRESERVATION_CONTRACT.json"
@@ -53,3 +57,6 @@ jobs:
 
       - name: Validate five-private-actor visual architecture and provenance
         run: python scripts/validate_five_private_actor_visual_integration.py
+
+      - name: Validate deterministic named-person rendering and factual-manifest controls
+        run: python scripts/validate_named_person_visual_control.py
