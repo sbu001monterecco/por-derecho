@@ -52,3 +52,13 @@ The public page requests preservation of native account-security, moderation, re
 - The source question remains open: own-initiative automated/security/integrity process, internal human review, external report(s)/notice(s), combination, or other. No reporter identity or geography is inferred.
 - Public-authority records supplied as context establish regulated/public-support dimensions only; they do not establish misuse, retaliation or responsibility for the LinkedIn restriction.
 - UK relationship control: `ops/continuity/LINKEDIN_UK_LONDON_ESCALATION_20260925.md`.
+
+## 25 September 2026 — interim-restoration request after fresh Persona completion
+
+- After completing the provider-requested fresh Persona verification and sending the same-thread completion notice, Gil Marer sent a further reply in the existing appeal case rather than opening a duplicate case.
+- The reply asks LinkedIn to move from repeated identity verification to an urgent human decision and requests interim restoration while any remaining Trust & Safety, Legal, Privacy/DPO or integrity review continues. If unrestricted restoration is not immediately available, it asks for the least restrictive temporary security measure LinkedIn considers sufficient.
+- It asks LinkedIn to confirm receipt/linkage of the fresh Persona result, identify any remaining identity defect, identify the responsible review team, provide the case-specific restriction basis/trigger insofar as lawfully disclosable, and confirm preservation.
+- Four controlled PDFs were attached: a concise LinkedIn evidential-context note, Gil Marer's signed SNCA/IGAE communication, his CNMV institutional communication, and the source-controlled Sun Park / MYND Yaiza documentary dossier.
+- The two institutional communications are evidence of notice, timing and requests made by Gil Marer; they are not presented as findings or merits determinations by the recipient authorities.
+- Verified outbound transmission establishes that the request and attachment package were sent in the existing case. It does not establish that LinkedIn has reviewed the attachments, accepted the Persona result, restored access or determined the restriction trigger.
+
