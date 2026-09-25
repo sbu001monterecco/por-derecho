@@ -1,50 +1,82 @@
-name: Bounded homepage query-reset trace
+name: Bounded homepage completion acceptance 20260925
 on:
   push:
     branches: [maintenance/homepage-refinement-authoring-20260925]
     paths: ['.maintenance-homepage/**', '.github/workflows/homepage-refinement-authoring-20260925.yml']
 permissions:
   contents: read
+concurrency:
+  group: homepage-refinement-authoring-20260925
+  cancel-in-progress: false
 jobs:
-  trace:
+  verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
-          ref: b08bf1071e35ad74429877588b86a3a0f3391377
           persist-credentials: false
-      - run: python3 -m pip install --quiet playwright==1.55.0
-      - name: Trace only; no release acceptance or source mutation
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: 230cd172f17f3cd8db0c18e6b07d63bda7f40b7a
+          path: site
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Validate the exact committed candidate; do not mutate any repository ref
+        shell: bash
+        env:
+          GITHUB_BASE_SHA: 7bd0def057efa6ddf531d80c673c75030fc9f647
+          GITHUB_HEAD_SHA: 230cd172f17f3cd8db0c18e6b07d63bda7f40b7a
         run: |
-          mkdir -p review
+          set -euo pipefail
+          mkdir -p review/source
+          cd site
+          test "$(git rev-parse HEAD)" = "$GITHUB_HEAD_SHA"
+          git diff --check "$GITHUB_BASE_SHA" HEAD
+          git diff --binary "$GITHUB_BASE_SHA" HEAD > ../review/candidate.patch
+          git diff --name-only "$GITHUB_BASE_SHA" HEAD > ../review/changed-paths.txt
+          git rev-parse HEAD > ../review/tested-sha.txt
+          while IFS= read -r path; do
+            mkdir -p "../review/source/$(dirname "$path")"
+            cp "$path" "../review/source/$path"
+          done < ../review/changed-paths.txt
+          python3 scripts/validate_repository_preservation.py | tee ../review/preservation.log
+          python3 scripts/validate_publication_integrity.py | tee ../review/publication.log
+          python3 scripts/validate_audience_experience.py | tee ../review/audience.log
+          python3 scripts/validate_cam_creditor_control_criminal_lead.py | tee ../review/attribution.log
+          for path in assets/audience-experience-order-20260823.js assets/optimum-reader-journey-finish-20260818.js assets/unitary-public-shell-20260818.js assets/matkator-asset-rights-inbound-20260902.js; do node --check "$path"; done
+      - name: Install bounded browser-test dependency
+        run: python3 -m pip install --quiet playwright==1.55.0
+      - name: Strengthen existing browser acceptance with real keyboard input and runtime error checks
+        run: |
           python3 - <<'PY'
           from pathlib import Path
-          from playwright.sync_api import sync_playwright
-          from http.server import ThreadingHTTPServer,SimpleHTTPRequestHandler
-          from functools import partial
-          import tempfile,threading,shutil,json
-          root=Path('.').resolve();serve=Path(tempfile.mkdtemp());(serve/'por-derecho').symlink_to(root,target_is_directory=True)
-          class Q(SimpleHTTPRequestHandler):
-              def log_message(self,*a):pass
-          server=ThreadingHTTPServer(('127.0.0.1',8765),partial(Q,directory=str(serve)));threading.Thread(target=server.serve_forever,daemon=True).start()
-          init=r'''window.trace=[];const d=Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value');Object.defineProperty(HTMLInputElement.prototype,'value',{...d,set(v){if(this.id==='canonical-home-search-input')window.trace.push({kind:'set',value:v,stack:new Error().stack,time:performance.now()});d.set.call(this,v);}});for(const type of ['focusin','focusout','input','change'])document.addEventListener(type,e=>{if(e.target.id==='canonical-home-search-input')window.trace.push({kind:type,value:e.target.value,active:document.activeElement?.id,time:performance.now()});},true);for(const name of ['appendChild','insertBefore','removeChild']){const old=Node.prototype[name];Node.prototype[name]=function(...args){const a=document.activeElement;if(a?.id==='canonical-home-search-input'&&args.some(n=>n instanceof Node&&(n===a||n.contains?.(a))))window.trace.push({kind:name,stack:new Error().stack,time:performance.now()});return old.apply(this,args);};}'''
-          rows=[]
-          with sync_playwright() as p:
-              b=p.chromium.launch(headless=True,executable_path=shutil.which('google-chrome'),args=['--no-sandbox'])
-              for attempt in range(3):
-                  c=b.new_context(viewport={'width':390,'height':900});c.add_init_script(init);page=c.new_page();errors=[];page.on('pageerror',lambda e:errors.append(e.stack))
-                  page.route('**/*',lambda r:r.continue_() if r.request.url.startswith('http://127.0.0.1:8765/') else r.abort());page.goto('http://127.0.0.1:8765/por-derecho/en/',wait_until='load');page.wait_for_timeout(11000)
-                  page.wait_for_function('window.PorDerechoCanonicalSearch?.count>0');i=page.locator('#canonical-home-search-input');i.fill('Acosta');page.wait_for_timeout(1000)
-                  filled={'value':i.input_value(),'results':page.locator('.canonical-search-result').count()}
-                  i.click();i.press('ControlOrMeta+A');i.press_sequentially('Acosta',delay=100);page.wait_for_timeout(1000)
-                  row={'attempt':attempt,'filled':filled,'typed':{'value':i.input_value(),'results':page.locator('.canonical-search-result').count()},'trace':page.evaluate('window.trace'),'errors':errors};rows.append(row);print(json.dumps(row),flush=True);c.close()
-              b.close()
-          server.shutdown();Path('review/query-reset-trace.json').write_text(json.dumps(rows,indent=2))
+          p=Path('.maintenance-homepage/browser.py');s=p.read_text()
+          old="page = context.new_page(); page.set_default_timeout(20000)"
+          new="page = context.new_page(); page.set_default_timeout(20000)\n                page_errors = []\n                page.on('pageerror', lambda e: page_errors.append(str(e)))"
+          assert old in s;s=s.replace(old,new)
+          old="search.locator('input').fill('Acosta')"
+          new="""search.locator('input').fill('Acosta')
+                        assert search.locator('input').input_value() == 'Acosta', 'Real input lost text'
+                        assert search.locator('input').evaluate('(e)=>document.activeElement===e'), 'Search loses keyboard focus'
+                        search.locator('input').fill('')
+                        search.locator('input').press_sequentially('Acosta', delay=100)
+                        page.wait_for_timeout(300)
+                        assert search.locator('input').input_value() == 'Acosta', 'Sequential typing was interrupted'
+                        assert search.locator('input').evaluate('(e)=>document.activeElement===e'), 'Typed query lost focus'"""
+          assert old in s;s=s.replace(old,new)
+          old="row.update(private_cards=5, institution_cards=2, scope_visible=True, navigation_preserved=True, required_images_loaded=True)"
+          new="assert not page_errors, 'Uncaught runtime errors: ' + '; '.join(page_errors)\n                    "+old+"\n                    row['search_typing_and_focus'] = 'PASS' if js else 'NOT_APPLICABLE'\n                    row['runtime_errors'] = page_errors"
+          assert old in s;s=s.replace(old,new)
+          p.write_text(s)
+          Path('review/acceptance-browser.py').write_text(s)
           PY
-      - if: always()
+      - name: Render all sixteen cases with real typing after legacy scripts settle
+        run: python3 .maintenance-homepage/browser.py "$GITHUB_WORKSPACE/site" "$GITHUB_WORKSPACE/review"
+      - name: Preserve exact acceptance inputs and outputs
+        if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
-          name: homepage-query-reset-trace
+          name: homepage-refinement-completion-review
           path: review
           retention-days: 14
