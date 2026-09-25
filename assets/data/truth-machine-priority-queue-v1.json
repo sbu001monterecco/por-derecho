@@ -14,7 +14,8 @@
       "guilt",
       "liability"
     ],
-    "recursion_rule": "material source change reopens affected review; duplicate hosts and derivative summaries are not independent corroboration"
+    "recursion_rule": "material source change reopens affected review; duplicate hosts and derivative summaries are not independent corroboration",
+    "host_parity_rule": "a missing mirror is a disclosed host-parity gap, not evidence loss and not a reason to falsify a source pin"
   },
   "candidates": [
     {
@@ -24,10 +25,11 @@
       "mode": "document",
       "status": "LIVE_VISUALIZED_GITHUB",
       "source_scope": "22 pages; recovered v3 structure; private native source retained outside public Git",
-      "source_paths": [
+      "sources": [
         {
           "path": "assets/data/r33-truth-machine-visual-20260925.json",
-          "git_blob_sha": "786094e8f163ab43a402a25eccf5ac866ea5849d"
+          "github_blob_sha": "786094e8f163ab43a402a25eccf5ac866ea5849d",
+          "gitlab_blob_sha": "786094e8f163ab43a402a25eccf5ac866ea5849d"
         }
       ],
       "public_routes": {
@@ -43,10 +45,11 @@
       "mode": "document",
       "status": "READY_FOR_FULL_PASS",
       "source_scope": "88/88-page public-safe page-complete transcription; private verbatim master controlled separately",
-      "source_paths": [
+      "sources": [
         {
           "path": "evidence/criminal/an-dp91-2023/full-text/querella-21sep2023-full-public-transcription.md",
-          "git_blob_sha": "3ce7110eda6b789bbf251c2bc7c217f613414113"
+          "github_blob_sha": "3ce7110eda6b789bbf251c2bc7c217f613414113",
+          "gitlab_blob_sha": "3ce7110eda6b789bbf251c2bc7c217f613414113"
         }
       ],
       "next_action": "BUILD_FORENSIC_PACKAGE_THEN_FULL_CONTEXT_PASS"
@@ -58,10 +61,12 @@
       "mode": "document",
       "status": "READY_WITH_NATIVE_GAP",
       "source_scope": "controlled 3-page public transcription checked to source photographs; native electronic court PDF and notice metadata remain outstanding",
-      "source_paths": [
+      "sources": [
         {
           "path": "evidence/judicial/dp-1901-2026/full-text/auto-14sep2026-public-transcription.md",
-          "git_blob_sha": "1f4b4108dc0d61b48e061277e0caadb0036863f5"
+          "github_blob_sha": "1f4b4108dc0d61b48e061277e0caadb0036863f5",
+          "gitlab_blob_sha": null,
+          "gitlab_gap": "PUBLIC_TRANSCRIPTION_NOT_MIRRORED_AT_CANONICAL_PATH"
         }
       ],
       "next_action": "RUN_WITH_NATIVE_GAP_EXPLICIT_AND_REOPEN_WHEN_NATIVE_PDF_ARRIVES"
@@ -73,10 +78,12 @@
       "mode": "control_packet",
       "status": "SOURCE_CONTROL_READY",
       "source_scope": "public-safe source-control record; broad draft, narrower 10-Jan filing, counsel transition and later fee/payment records must remain distinct",
-      "source_paths": [
+      "sources": [
         {
           "path": "archive/JUAN_TOMAS_PARRILLA_IMAGE_4JAN2019_PAYMENT_SOURCE_CONTROL_23SEP2026.md",
-          "git_blob_sha": "d0964bb6ac6759dbf7c739b72c82c93038fa721b"
+          "github_blob_sha": "d0964bb6ac6759dbf7c739b72c82c93038fa721b",
+          "gitlab_blob_sha": "724dda4fa24f1ec1f384262dcb103b01231a099a",
+          "host_versions_intentionally_distinct": true
         }
       ],
       "next_action": "MATERIALIZE_NATIVE_DRAFT_AND_FILED_REQUEST_BEFORE_FULL_SEMANTIC_SIGNOFF"
@@ -87,15 +94,19 @@
       "title": "Sun Park · 7 June 2018 control shift",
       "mode": "multi_source_packet",
       "status": "PACKET_MODE_READY",
-      "source_scope": "event dossier plus continuing-harm machine-readable control; do not collapse orders, contemporary reports, testimony, later rulings or adverse outcomes into one document",
-      "source_paths": [
+      "source_scope": "event dossier plus structured continuity control; orders, reports, testimony, later rulings and adverse outcomes remain separate",
+      "sources": [
         {
           "path": "assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json",
-          "git_blob_sha": "2c005a501059995ba2f666855a6d2c8565b72f05"
+          "github_blob_sha": "2c005a501059995ba2f666855a6d2c8565b72f05",
+          "gitlab_blob_sha": null,
+          "gitlab_gap": "STRUCTURED_MODEL_REFERENCED_BUT_NOT_MIRRORED_AT_CANONICAL_PATH"
         },
         {
           "path": "en/sun-park-takeover-7-june-2018/index.html",
-          "git_blob_sha": "8610e5934e3054d4383bf544e9ebf3f12c8e6ade"
+          "github_blob_sha": "8610e5934e3054d4383bf544e9ebf3f12c8e6ade",
+          "gitlab_blob_sha": "079d94b52195fdb744bad9c6e3b6a1c705766636",
+          "host_versions_intentionally_distinct": true
         }
       ],
       "next_action": "PACKET_MODE_SOURCE_BY_SOURCE_REVIEW"

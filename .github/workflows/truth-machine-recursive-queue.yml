@@ -25,7 +25,7 @@ jobs:
       - name: Run recursive queue regression tests
         run: python -m unittest recovery_tests.test_recursive_priority_queue -v
       - name: Execute source-bound queue triage
-        run: python legaltech/unitary_review/recursive_priority_queue.py --output /tmp/truth-machine-queue-report.json
+        run: python legaltech/unitary_review/recursive_priority_queue.py --host github --output /tmp/truth-machine-queue-report.json
       - uses: actions/upload-artifact@v4
         with:
           name: truth-machine-recursive-queue-${{ github.sha }}
