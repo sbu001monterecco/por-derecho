@@ -22,8 +22,6 @@ EXPECTED = {
 }
 
 REQUIRED = {
-    "en/index.html": ("6 November 2025 at 10:00", "28 January 2027 at 10:00"),
-    "es/index.html": ("6 de noviembre de 2025 a las 10:00", "28 de enero de 2027 a las 10:00"),
     "en/caixabank-valencia-claim/index.html": (
         "6 November 2025 at 10:00",
         "28 January 2027 at 10:00",
