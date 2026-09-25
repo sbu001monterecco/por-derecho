@@ -1,4 +1,4 @@
-name: INCIBE scoped source preparation
+name: INCIBE scoped projection reconciliation
 on:
   push:
     branches: ['prep/platform-integrity-incibe-20260925']
@@ -9,107 +9,156 @@ jobs:
   prepare:
     if: github.repository == 'sbu001monterecco/por-derecho' && github.ref == 'refs/heads/prep/platform-integrity-incibe-20260925'
     runs-on: ubuntu-latest
-    timeout-minutes: 18
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
-          ref: 2f9a7bad36f93dd440d6d64dc0839198daacaaec
+          ref: cf9a33062bcb8c12ae4585590d416705735d8228
           fetch-depth: 1
           persist-credentials: false
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
-        with:
-          ref: d7cbe4932aefb18ec70c080a66789147673f12be
-          path: preparation-input
-          sparse-checkout: scripts/prepare_platform_incibe_20260925.py
-          sparse-checkout-cone-mode: false
-          persist-credentials: false
-      - name: Materialise reviewed bounded delta and capture exact diff
+      - name: Reconcile source-qualified cohorts without changing historical event sets
         shell: bash
         run: |
-          mkdir -p /tmp/incibe-candidate
-          cp preparation-input/scripts/prepare_platform_incibe_20260925.py scripts/prepare_platform_incibe_20260925.py
+          mkdir -p /tmp/incibe-projection-repair
           python3 - <<'PY'
           from pathlib import Path
-          import re
-          p=Path('scripts/prepare_platform_incibe_20260925.py')
-          text=p.read_text()
-          text=re.sub(r"'1a[0-9a-f]{14}',?",'',text)
-          text=re.sub(r"'[0-9]{7}',?",'',text)
-          text=text.replace('PROVIDER_OR_INSTITUTIONAL_REPLY','OFFICIAL_NOTIFICATION')
-          text=text.replace('INBOUND_TO_PROJECT','INBOUND_FROM_INSTITUTION')
-          text=text.replace('INSTITUTION_OR_PROVIDER_STATEMENT_NO_PERSONAL_CAUSATION','INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED')
-          text=text.replace("          'source_batch_id':CONTROL,\n",'')
-          text=text.replace(".get('source_batch_id')",".get('source_key','').split(':')[0]")
-          text=text.replace('e.get("source_batch_id")','e.get("source_key", "").split(":")[0]')
-          text=text.replace("e['attachment_source_refs']=[x['id'] for x in spec['attachments'] if x['parent_key']==key]","e['matter_references'].extend(x['id'] for x in spec['attachments'] if x['parent_key']==key)")
-          text=text.replace('Un evento de seguridad confirmado por el proveedor; una restricción actual pendiente de explicación.','Un evento de seguridad confirmado por el proveedor; una restricción actual aún sin explicación.')
-          old="text=text.replace('<main id=\"content\">','<main id=\"content\">\\n'+page_block(spec,lang),1)"
-          new="section='<section class=\"section recipient-section-alt\" id=\"'+('actual' if es else 'current')+'\">'\n        if text.count(section)!=1:raise ValueError('Current section boundary drift')\n        text=text.replace(section,page_block(spec,lang)+section,1)"
-          if old not in text:raise ValueError('Preparation placement anchor changed')
-          text=text.replace(old,new,1)
-          p.write_text(text)
+          import json, subprocess
+          def patch(path,old,new):
+              p=Path(path); t=p.read_text()
+              if t.count(old)!=1:raise ValueError('Non-unique repair anchor: '+path+' '+old[:100])
+              p.write_text(t.replace(old,new,1))
+          helper='scripts/prepare_platform_incibe_20260925.py'
+          addition='''def validated_platform_event_ids(events, root=ROOT):
+              """Fail closed on a missing, duplicated, altered or unsolicited cohort row."""
+              expected = {e['event_id']: e for e in load_events(root)}
+              selected = [e for e in events if str(e.get('source_key', '')).startswith(CONTROL + ':')]
+              actual = {e['event_id']: e for e in selected}
+              if len(selected) != len(actual) or actual != expected:
+                  raise ValueError('Platform communication cohort differs from its reviewed source crosswalk')
+              return set(expected)
+
+
+          '''
+          patch(helper,'def validate():',addition+'def validate():')
+          discovery='scripts/validate_redsara_authority_discovery.py'
+          patch(discovery,'    incoming = [event for event in events if event.get("direction") == "INBOUND_FROM_INSTITUTION"]','''    incoming = [event for event in events if event.get("direction") == "INBOUND_FROM_INSTITUTION"]
+              from prepare_platform_incibe_20260925 import validated_platform_event_ids
+              platform_ids = validated_platform_event_ids(events, ROOT)
+              platform_incoming = [e for e in incoming if e['event_id'] in platform_ids]''')
+          old="    legacy_incoming = [event for event in incoming if event.get('source_batch_id') not in additive_batches and not str(event.get('source_key', '')).startswith('SUPPLEMENTAL_20260924:')]"
+          patch(discovery,old,old[:-1]+" and event['event_id'] not in platform_ids]")
+          patch(discovery,'163 + len(notice_expected) + len(cajasiete_expected) + len(supplemental_incoming):','163 + len(notice_expected) + len(cajasiete_expected) + len(supplemental_incoming) + len(platform_incoming):')
+          builder='scripts/build_fiscalia_proceedings_interconnectivity.py'
+          anchor='    events = [\n        event\n        for event in communications["events"]'
+          patch(builder,anchor,'''    # The separately reviewed platform/incident correspondence is not a Fiscalia
+              # filing or a source-allocated prosecution event. Validate every row
+              # before excluding it from this historical proceedings projection.
+              from prepare_platform_incibe_20260925 import validated_platform_event_ids
+              platform_ids = validated_platform_event_ids(communications['events'], ROOT)
+              non_fiscalia_notice_ids |= platform_ids
+          '''+anchor)
+          validator='scripts/validate_fiscalia_proceedings_interconnectivity.py'
+          old='    event_ids = canonical_event_ids - excluded_authority_ids - set(expected_notices) - cajasiete_notice_ids - status_export_ids'
+          new='''    from prepare_platform_incibe_20260925 import validated_platform_event_ids
+              platform_ids = validated_platform_event_ids(communications['events'], ROOT)
+              # Preserve the six already-canonical 24-Sep successor identities.
+              # The legacy 643/320 controls remain exact for their original scope.
+              expected_supplemental_ids = {'PD-SP-EVT-0497', 'PD-SP-EVT-0498', 'PD-SP-EVT-0499',
+                                          'PD-SP-EVT-1157', 'PD-SP-EVT-1158', 'PD-SP-EVT-1159'}
+              supplemental_ids = {e['event_id'] for e in communications['events']
+                                  if str(e.get('source_key', '')).startswith('SUPPLEMENTAL_20260924:')}
+              require(supplemental_ids == expected_supplemental_ids, '24-Sep successor identity set mismatch', errors)
+          '''+old+' - platform_ids'
+          patch(validator,old,new)
+          patch(validator,'        len(canonical_event_ids) == 643','        len(canonical_event_ids - platform_ids - supplemental_ids) == 643')
+          patch(validator,'        and len(event_ids) == len(projected_ids) == 320','''        and len(event_ids - supplemental_ids) == 320
+                  and len(event_ids) == len(projected_ids) == 320 + len(expected_supplemental_ids)
+                  and supplemental_ids <= projected_ids''')
+          tests='scripts/test_build_fiscalia_proceedings_interconnectivity.py'
+          patch(tests,'        self.assertEqual(payload["coverage"]["communication_events"], 320)','''        expected_successors = {'PD-SP-EVT-0497', 'PD-SP-EVT-0498', 'PD-SP-EVT-0499',
+                                         'PD-SP-EVT-1157', 'PD-SP-EVT-1158', 'PD-SP-EVT-1159'}
+                  projected = {e['event_id'] for e in payload['events']}
+                  self.assertEqual(len(projected - expected_successors), 320)
+                  self.assertTrue(expected_successors <= projected)
+                  self.assertEqual(payload['coverage']['communication_events'], 320 + len(expected_successors))''')
+          patch(tests,'    def test_reference_normalisation_is_presentation_only(self):','''    def test_platform_cohort_is_source_checked_and_not_a_fiscalia_filing(self):
+                  import copy
+                  import json
+                  from prepare_platform_incibe_20260925 import validated_platform_event_ids
+                  events = json.loads(builder.COMMUNICATIONS.read_text())['events']
+                  cohort = validated_platform_event_ids(events, ROOT)
+                  projected = {e['event_id'] for e in builder.build()['events']}
+                  self.assertEqual(len(cohort), 11)
+                  self.assertFalse(cohort & projected)
+                  row = next(e for e in events if e['event_id'] in cohort)
+                  changed = copy.deepcopy(events)
+                  next(e for e in changed if e['event_id'] == row['event_id'])['public_summary'] += ' altered'
+                  with self.assertRaises(ValueError):
+                      validated_platform_event_ids(changed, ROOT)
+                  with self.assertRaises(ValueError):
+                      validated_platform_event_ids([e for e in events if e['event_id'] != row['event_id']], ROOT)
+                  with self.assertRaises(ValueError):
+                      validated_platform_event_ids(events + [row], ROOT)
+
+              def test_reference_normalisation_is_presentation_only(self):''')
+          old_red=json.loads(Path('assets/data/redsara-age-filings-register-v1.json').read_text())
+          old_graph=json.loads(Path('assets/data/fiscalia-proceedings-interconnectivity-v1.json').read_text())
+          subprocess.run(['python3','scripts/build_redsara_age_filings_register.py','--write'],check=True)
+          subprocess.run(['python3',builder,'--apply'],check=True)
+          new_red=json.loads(Path('assets/data/redsara-age-filings-register-v1.json').read_text())
+          new_graph=json.loads(Path('assets/data/fiscalia-proceedings-interconnectivity-v1.json').read_text())
+          old_red['control_date']=new_red['control_date']
+          assert old_red==new_red,'Unexpected change to REGAGE filing or attachment identities'
+          old_graph['canonical_sources']['communications_sha256']=new_graph['canonical_sources']['communications_sha256']
+          assert old_graph==new_graph,'Unexpected change to historical Fiscalia graph beyond source digest'
+          extra=[discovery,builder,validator,tests,'assets/data/redsara-age-filings-register-v1.json','assets/data/fiscalia-proceedings-interconnectivity-v1.json']
+          queue=Path('ops/continuity/GITHUB_DRIVE_GITLAB_RECOVERY_QUEUE_20260921.json')
+          data=json.loads(queue.read_text()); row=next(x for x in data['replay_items'] if x['id']=='PD-GL-REC-CPA-20260925-07')
+          row['public_paths']=sorted(set(row['public_paths']+extra))
+          queue.write_text(json.dumps(data,ensure_ascii=False,indent=2,sort_keys=True)+'\n')
+          Path('/tmp/incibe-projection-repair/preservation.json').write_text(json.dumps({'prior_regage_projection_unchanged_except_control_date':True,'prior_fiscalia_graph_unchanged_except_source_digest':True,'legacy_incoming_163_preserved':True,'legacy_canonical_643_and_fiscalia_320_preserved':True,'six_existing_24sep_successors_retained':True,'eleven_new_platform_rows_validated_before_scope_exclusion':True,'no_schema_changed':True},indent=2))
           PY
-          git switch -c materialize/platform-integrity-incibe-20260925
-          python3 scripts/prepare_platform_incibe_20260925.py --apply 2>&1 | tee /tmp/incibe-candidate/preparation.log
-          python3 scripts/reconcile_institutional_communications.py --check 2>&1 | tee /tmp/incibe-candidate/reconciliation-check.log
-          python3 scripts/validate_institutional_communications.py 2>&1 | tee /tmp/incibe-candidate/institutional-validation.log
-          python3 scripts/test_reconcile_institutional_communications.py 2>&1 | tee /tmp/incibe-candidate/reconciliation-tests.log
-          python3 - <<'PY'
-          import pathlib, json, hashlib, subprocess, sys, re, zipfile
-          sys.path.insert(0,'scripts')
-          from prepare_platform_incibe_20260925 import PATHS
-          paths=sorted(set(PATHS))
-          assert all(not p.startswith('.github/workflows/') for p in paths)
-          assert all(pathlib.Path(p).is_file() for p in paths)
-          for p in paths:
-              t=pathlib.Path(p).read_text()
-              old=subprocess.run(['git','show','HEAD:'+p],capture_output=True,text=True)
-              oldtext=old.stdout if old.returncode==0 else ''
-              private=re.compile(r'\b1a[0-9a-f]{14}\b|https://mail\.google\.com/[^\s\"<>]+|https://drive\.google\.com/file/[^\s\"<>]+')
-              assert set(private.findall(t))<=set(private.findall(oldtext)),p
-          subprocess.run(['git','add','--',*paths],check=True)
-          actual=subprocess.check_output(['git','diff','--cached','--name-only']).decode().splitlines()
-          assert set(actual)<=set(paths)
-          assert not subprocess.check_output(['git','diff','--cached','--name-only','--diff-filter=D'])
-          patch=subprocess.check_output(['git','diff','--cached','--binary'])
-          pathlib.Path('/tmp/incibe-candidate/candidate.patch').write_bytes(patch)
-          manifest={'base':'2f9a7bad36f93dd440d6d64dc0839198daacaaec','files':[{'path':p,'sha256':hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest(),'bytes':pathlib.Path(p).stat().st_size} for p in actual],'no_deletions':True,'transport_workflow_in_candidate':False,'private_source_bytes_in_candidate':False}
-          pathlib.Path('/tmp/incibe-candidate/manifest.json').write_text(json.dumps(manifest,indent=2))
-          with zipfile.ZipFile('/tmp/incibe-candidate/candidate-files.zip','w',zipfile.ZIP_DEFLATED) as z:
-              for p in actual:z.write(p,p)
-          print(json.dumps(manifest,indent=2))
-          PY
-      - name: Create unreferenced Git objects for connector review
+          python3 scripts/prepare_platform_incibe_20260925.py --check
+          python3 scripts/reconcile_institutional_communications.py --check
+          python3 scripts/validate_institutional_communications.py
+          python3 scripts/build_redsara_age_filings_register.py --check
+          python3 scripts/validate_redsara_authority_discovery.py
+          python3 scripts/prepare_orion_notice_register_20260905.py check
+          python3 scripts/build_fiscalia_proceedings_interconnectivity.py --check
+          python3 scripts/validate_fiscalia_proceedings_interconnectivity.py
+          python3 -m unittest -v scripts/test_reconcile_institutional_communications.py scripts/test_build_fiscalia_proceedings_interconnectivity.py
+      - name: Export reviewed correction objects without moving refs
         env:
           GH_OBJECT_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           python3 - <<'PY'
-          import os, json, pathlib, urllib.request, hashlib, base64
-          repo='sbu001monterecco/por-derecho'; api='https://api.github.com/repos/'+repo
-          token=os.environ['GH_OBJECT_TOKEN']
-          manifest=json.loads(pathlib.Path('/tmp/incibe-candidate/manifest.json').read_text())
+          import json, pathlib, subprocess, hashlib, base64, os, urllib.request, zipfile
+          base='cf9a33062bcb8c12ae4585590d416705735d8228'; api='https://api.github.com/repos/sbu001monterecco/por-derecho'
+          paths=subprocess.check_output(['git','diff','--name-only']).decode().splitlines()
+          allowed={'scripts/prepare_platform_incibe_20260925.py','scripts/validate_redsara_authority_discovery.py','scripts/build_fiscalia_proceedings_interconnectivity.py','scripts/validate_fiscalia_proceedings_interconnectivity.py','scripts/test_build_fiscalia_proceedings_interconnectivity.py','assets/data/redsara-age-filings-register-v1.json','assets/data/fiscalia-proceedings-interconnectivity-v1.json','ops/continuity/GITHUB_DRIVE_GITLAB_RECOVERY_QUEUE_20260921.json'}
+          assert set(paths)==allowed
+          assert not subprocess.check_output(['git','diff','--name-only','--diff-filter=D'])
           def request(path,data=None):
-              assert path.startswith('/git/commits/') or path in {'/git/blobs','/git/trees'}
-              if data is not None:assert path in {'/git/blobs','/git/trees'}
-              req=urllib.request.Request(api+path,data=None if data is None else json.dumps(data).encode(),headers={'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json','Content-Type':'application/json'})
+              assert (data is None and path=='/git/commits/'+base) or (data is not None and path in {'/git/blobs','/git/trees'})
+              req=urllib.request.Request(api+path,data=None if data is None else json.dumps(data).encode(),headers={'Authorization':'Bearer '+os.environ['GH_OBJECT_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json'})
               with urllib.request.urlopen(req,timeout=60) as r:return json.load(r)
-          base=request('/git/commits/'+manifest['base'])
-          entries=[]
-          for f in manifest['files']:
-              raw=pathlib.Path(f['path']).read_bytes()
-              assert hashlib.sha256(raw).hexdigest()==f['sha256']
-              b=request('/git/blobs',{'content':base64.b64encode(raw).decode(),'encoding':'base64'})
-              entries.append({'path':f['path'],'mode':'100755' if os.access(f['path'],os.X_OK) else '100644','type':'blob','sha':b['sha']})
-          tree=request('/git/trees',{'base_tree':base['tree']['sha'],'tree':entries})
-          receipt={'base_commit':manifest['base'],'base_tree':base['tree']['sha'],'candidate_tree':tree['sha'],'entries':entries,'commit_created':False,'ref_moved':False,'main_modified':False,'next':'Independent review, then connector creates commit/PR and requires normal protected checks/controller.'}
-          pathlib.Path('/tmp/incibe-candidate/object-receipt.json').write_text(json.dumps(receipt,indent=2))
-          print(json.dumps(receipt,indent=2))
+          commit=request('/git/commits/'+base); entries=[]; manifest=[]
+          with zipfile.ZipFile('/tmp/incibe-projection-repair/files.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for p in paths:
+                  b=pathlib.Path(p).read_bytes(); sha=request('/git/blobs',{'content':base64.b64encode(b).decode(),'encoding':'base64'})['sha']
+                  mode=subprocess.check_output(['git','ls-files','-s',p]).decode().split()[0]
+                  entries.append({'path':p,'mode':mode,'type':'blob','sha':sha}); manifest.append({'path':p,'sha256':hashlib.sha256(b).hexdigest(),'bytes':len(b)})
+                  z.writestr(p,b)
+          tree=request('/git/trees',{'base_tree':commit['tree']['sha'],'tree':entries})
+          pathlib.Path('/tmp/incibe-projection-repair/object-receipt.json').write_text(json.dumps({'base':base,'tree':tree['sha'],'entries':entries,'files':manifest,'commit_created':False,'ref_moved':False},indent=2))
+          pathlib.Path('/tmp/incibe-projection-repair/repair.patch').write_bytes(subprocess.check_output(['git','diff','--binary']))
+          print('Correction objects prepared; exact contents require connector review before integration.')
           PY
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         if: always()
         with:
-          name: incibe-public-candidate-${{ github.run_id }}
-          path: /tmp/incibe-candidate/
+          name: incibe-projection-repair-${{ github.run_id }}
+          path: /tmp/incibe-projection-repair/
           if-no-files-found: error
           retention-days: 14
