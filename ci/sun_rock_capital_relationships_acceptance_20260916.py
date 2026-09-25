@@ -15,6 +15,8 @@ HOME = ROOT / "assets/home-future-institutional-20260916.js"
 SITEMAP = ROOT / "sitemap-sun-rock-institutional-20260916.xml"
 HOME_EN = ROOT / "en/index.html"
 HOME_ES = ROOT / "es/index.html"
+FUTURE_EN = ROOT / "en/future/index.html"
+FUTURE_ES = ROOT / "es/futuro/index.html"
 
 errors = []
 
@@ -25,7 +27,7 @@ def need(path, needle, label=None, case_sensitive=True):
     if target not in haystack:
         errors.append(f"{path.relative_to(ROOT)} missing {label or needle!r}")
 
-required = [EN, ES, IC_EN, IC_ES, PROCESS, DATA, ROUTE, SITE, HOME, SITEMAP, HOME_EN, HOME_ES]
+required = [EN, ES, IC_EN, IC_ES, PROCESS, DATA, ROUTE, SITE, HOME, SITEMAP, HOME_EN, HOME_ES, FUTURE_EN, FUTURE_ES]
 for p in required:
     if not p.exists():
         errors.append(f"missing required file: {p.relative_to(ROOT)}")
@@ -83,10 +85,20 @@ if not errors:
     for page, body, forbidden in homepage_forbidden:
         if forbidden in body:
             errors.append(f"{page} violates homepage institutional-capital visibility lock: {forbidden!r}")
-    if '<a class="button secondary" href="institutional-capital/">Explore institutional capital →</a>' not in home_en:
-        errors.append("en/index.html missing permitted Future-only institutional-capital route")
-    if '<a class="button secondary" href="capital-institucional/">Explorar capital institucional →</a>' not in home_es:
-        errors.append("es/index.html missing permitted Futuro-only institutional-capital route")
+    if 'href="future/"' not in home_en:
+        errors.append("en/index.html missing standalone Future route")
+    if 'href="futuro/"' not in home_es:
+        errors.append("es/index.html missing standalone Futuro route")
+    if 'institutional-capital/' in home_en:
+        errors.append("en/index.html must not link directly to institutional capital; route via Future")
+    if 'capital-institucional/' in home_es:
+        errors.append("es/index.html must not link directly to institutional capital; route via Futuro")
+    future_en = FUTURE_EN.read_text(encoding="utf-8")
+    future_es = FUTURE_ES.read_text(encoding="utf-8")
+    if '../institutional-capital/' not in future_en:
+        errors.append("en/future/index.html missing institutional-capital onward route")
+    if '../capital-institucional/' not in future_es:
+        errors.append("es/futuro/index.html missing capital-institucional onward route")
 
     process = json.loads(PROCESS.read_text(encoding="utf-8"))
     if process.get("public_status") != "INSTITUTIONAL_CONVERSATIONS_ACTIVE_NO_COMMITTED_FINANCING":
