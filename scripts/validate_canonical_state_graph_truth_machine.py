@@ -196,9 +196,17 @@ def main():
     required_hist={
         "PD-SP-EVT-SP-1988-1991-CONSTRUCTION-OPENING",
         "PD-SP-EVT-SP-2008-06-AGREEMENT-MARKET-OBJECT",
+        "PD-SP-EVT-SP-2008-06-17-MONTELANZA-SALE-RESIDUAL-OPTION",
         "PD-SP-EVT-SP-2008-06-18-COMPLETION-PERIMETER",
         "PD-SP-EVT-SP-2008-07-15-POST-COMPLETION-SNAPSHOT",
+        "PD-SP-EVT-SP-2009-09-30-RESIDUAL-ASSET-SNAPSHOT",
+        "PD-SP-EVT-SP-2009-RESIDUAL-DISPOSITIONS",
+        "PD-SP-EVT-SP-2010-IN-KIND-DEBT-SETTLEMENTS",
+        "PD-SP-EVT-SP-2011-11-28-PRE-SUCCESSION-SPA-SNAPSHOT",
         "PD-SP-EVT-SP-2011-12-01-UK-HOLDCO-SUCCESSION",
+        "PD-SP-EVT-SP-2011-12-13-PREOPERATING-BUSINESS-DIAGNOSTIC",
+        "PD-SP-EVT-SP-2011-12-15-CEXP-RECORDS-HANDOVER",
+        "PD-SP-EVT-SP-2012-01-EARLY-THIRD-PARTY-SECURITY-CLAIM",
         "PD-SP-EVT-SP-2012-01-03-SPANISH-PUBLICITY",
     }
     if not required_hist.issubset(set(hist_event_ids)):
@@ -212,6 +220,24 @@ def main():
         fail("2008 171+29 buyer-side completed perimeter must remain explicit",failures)
     if not any(g.get("id")=="GAP-SP-SAN-HOTELS-LABEL" for g in hist.get("open_gaps",[])):
         fail("unverified San Hotels label must remain an explicit source gap",failures)
+
+    spa=next((e for p in hist.get("phase_freezes",[]) for e in p.get("events",[]) if e.get("event_id")=="PD-SP-EVT-SP-2011-11-28-PRE-SUCCESSION-SPA-SNAPSHOT"),{})
+    if spa.get("execution_state")!="TRANSMITTED_FINAL_FORM_COPY__REVIEWED_SIGNATURE_PAGE_BLANK":
+        fail("28-Nov-2011 final-form SPA must remain explicitly non-executed on the reviewed copy",failures)
+    if "159" not in str(spa.get("asset_state",{}).get("lpb_accommodation_units","")):
+        fail("late-2011 159-unit pre-succession state must remain explicit",failures)
+    if "171" not in str(spa.get("asset_state",{}).get("transition_from_2008","")) or "12" not in str(spa.get("asset_state",{}).get("transition_from_2008","")):
+        fail("171-to-159 bridge via twelve disposals must remain explicit and qualified",failures)
+
+    required_history_sources={"SP-HIST-SRC-010","SP-HIST-SRC-011","SP-HIST-SRC-012","SP-HIST-SRC-013","SP-HIST-SRC-014","SP-HIST-SRC-015","SP-HIST-SRC-016","SP-HIST-SRC-017","SP-HIST-SRC-018"}
+    if not required_history_sources.issubset(sources):
+        fail("targeted early-years source controls were dropped",failures)
+
+    required_history_gaps={"GAP-SP-2011-THIRD-PARTY-SECURITY-CLAIMS","GAP-SP-MULTIMATRIX-ISRAELI-STATUS","GAP-SP-LATE2011-CEXP-KNOWLEDGE-PROVENANCE"}
+    hist_gap_ids={g.get("id") for g in hist.get("open_gaps",[])}
+    if not required_history_gaps.issubset(hist_gap_ids):
+        fail("targeted early-years recursive gaps were dropped",failures)
+
     if prequel.get("handoff_event") not in set(hist_event_ids):
         fail("historical prequel handoff event does not resolve",failures)
 
