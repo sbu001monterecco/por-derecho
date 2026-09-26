@@ -1,0 +1,67 @@
+{
+  "schema": "por-derecho.former-professional-communications-context.v1",
+  "control_id": "PD-SP-FORMER-PRO-COMMS-CONTEXT-001",
+  "adopted": "2026-09-26",
+  "canonical_client_view": "AWESWELL LIMITED / wider Sun Park travel-hotel business perimeter",
+  "aliases_search_only": [
+    "Oswell",
+    "Aweswel",
+    "Awesell",
+    "Awswell"
+  ],
+  "explanation_sequence": [
+    "business objective",
+    "professional instruction",
+    "work product",
+    "alleged interference or obstacle",
+    "practical consequence",
+    "later reuse/benefit",
+    "present recovery/reconciliation relevance"
+  ],
+  "chronology_lanes": [
+    "2008 Multimatrix whole-hotel sale and Montelanza/Molina dissent allegation",
+    "restructuring/convenio/protective insolvency",
+    "Concurso 36/2012",
+    "ONA-led funded exit / Article 176 / financing",
+    "7 June 2018 material-control event",
+    "post-event complaints/protective work",
+    "calificación",
+    "former-counsel continuity / Article 215.2 / withdrawal",
+    "AC separation/removal",
+    "RPL 3304/2025 / R33",
+    "RIC / RICPE / regional incentives / FEDER / later platform tracing"
+  ],
+  "public_scale_metric": {
+    "proposition": "Canarian Hospitality self-description: 12 hotels, 2,500 rooms, >€100m 2025 sales",
+    "status": "COMPANY_SELF_DESCRIPTION_RECORDED_IN_REPOSITORY",
+    "limits": [
+      "not proof of common ownership",
+      "not proof all revenue derives from Sun Park",
+      "not proof of liability or criminal tracing"
+    ]
+  },
+  "full_name_authorization": true,
+  "naming_limits": [
+    "naming does not imply wrongdoing",
+    "professional continuity does not prove juridical succession",
+    "behind-scenes drafting does not prove concealment"
+  ],
+  "fee_rule": {
+    "client_intent": "reconcile and address legitimate outstanding professional fees",
+    "separate_lane": "preserve/pursue third-party recovery for work allegedly frustrated, duplicated or economically shifted",
+    "no_transfer": "third-party responsibility does not automatically extinguish client debt",
+    "disclosure_question": "identify any third-party payment, assumption, promise, settlement, credit, offset or discharge"
+  },
+  "work_product_right_of_reply": true,
+  "source_statuses": [
+    "VERIFIED_DIRECT_DOCUMENT",
+    "VERIFIED_OFFICIAL_OR_FILED",
+    "STRONGLY_SUPPORTED",
+    "SUPPORTED_INFERENCE",
+    "GIL_AWESWELL_ALLEGATION",
+    "CONTRADICTED_MIXED",
+    "OPEN",
+    "NEGATIVE_SEARCH_RESULT"
+  ],
+  "replication_control": "PD-SP-COUNSEL-WORK-REPLICATION-001"
+}
