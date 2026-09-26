@@ -279,7 +279,7 @@
         "value": "B76564434",
         "verification_status": "REPOSITORY_RECORDED_PRIMARY_SPANISH_NIF_DOCUMENT_OPEN"
       },
-      "controlled_context": "Project-side Spanish company and separately identified payer in the Garrigues payment record",
+      "controlled_context": "Project-side Spanish travel/commercialisation company within the AWESWELL LIMITED / Sun Rock business and economic perimeter; legally distinct from AWESWELL LIMITED, LPB and Pink Canary Services.",
       "registered_denominational_form": "HAVA VIDA TRAVEL & TOURISM SL",
       "registered_status_descriptor": "Declaración de unipersonalidad",
       "registry_coordinates": {
@@ -318,7 +318,8 @@
           "url": "https://find-and-update.company-information.service.gov.uk/company/10762489/officers",
           "proposition": "The public officer record identifies HAVA VIDA TRAVEL AND TOURISM SL and company number B76564434; a current Spanish certificate remains the controlling target."
         }
-      ]
+      ],
+      "perimeter_rule": "Treat Hava Vida Travel & Tourism, S.L.U. as part of the AWESWELL LIMITED / Sun Rock platform perimeter while preserving its separate Spanish legal personality. Registered ownership/shareholding, any beneficial-interest or trust analysis, and platform/economic-perimeter treatment are distinct propositions and must not be collapsed."
     },
     {
       "id": "E052",
