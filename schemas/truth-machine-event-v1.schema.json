@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "por-derecho.truth-machine-event.v1",
+  "title": "Por Derecho Truth Machine Event",
+  "type": "object",
+  "required": [
+    "schema",
+    "event_id",
+    "created_at",
+    "event_type",
+    "release_lane",
+    "affected_nodes",
+    "source_refs",
+    "three_state",
+    "requires",
+    "boundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "por-derecho.truth-machine-event.v1"
+    },
+    "event_id": {
+      "type": "string",
+      "pattern": "^TM-EVT-[0-9]{8}-[0-9]{4}$"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "event_type": {
+      "enum": [
+        "NEW_SOURCE",
+        "SOURCE_CHANGE",
+        "METHOD_CHANGE",
+        "CORRECTION",
+        "RELEASE_STATE_CHANGE",
+        "DEPENDENCY_CHANGE"
+      ]
+    },
+    "release_lane": {
+      "enum": [
+        "FAST",
+        "FULL",
+        "NO_PUBLIC_RELEASE"
+      ]
+    },
+    "affected_nodes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "github_blob_sha": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "gitlab_blob_sha": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "role": {
+            "type": "string"
+          },
+          "host_versions_intentionally_distinct": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "three_state": {
+      "type": "object",
+      "required": [
+        "machine",
+        "analyst",
+        "release"
+      ],
+      "properties": {
+        "machine": {
+          "type": "string"
+        },
+        "analyst": {
+          "type": "string"
+        },
+        "release": {
+          "type": "string"
+        }
+      }
+    },
+    "requires": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "boundary": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

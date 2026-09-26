@@ -25,6 +25,17 @@ class RecursiveQueueTests(unittest.TestCase):
         d=json.loads((ROOT/"assets/data/truth-machine-priority-queue-v1.json").read_text())
         dp=next(x for x in d["candidates"] if x["id"]=="DP1901-AUTO-14SEP2026")
         self.assertIsNone(dp["sources"][0]["gitlab_blob_sha"])
+    def test_event_bus_reopens_all_method_dependents_without_merits_promotion(self):
+        r=q.run(ROOT/"assets/data/truth-machine-priority-queue-v1.json","github")
+        self.assertEqual(r["event_bus"]["event_count"],1)
+        ev=r["event_bus"]["events"][0]
+        self.assertEqual(ev["event_id"],"TM-EVT-20260925-0001")
+        self.assertEqual(len(ev["reopen_candidates"]),5)
+        self.assertFalse(ev["automatic_merits_promotion"])
+    def test_three_state_runtime_is_explicit(self):
+        d=json.loads((ROOT/"assets/data/truth-machine-runtime-state-v1.json").read_text())
+        self.assertEqual(len(d["states"]),5)
+        self.assertTrue(all({"machine_state","analyst_state","release_state"} <= set(x) for x in d["states"]))
     def test_no_truth_score_field(self):
         raw=json.dumps(q.run(ROOT/"assets/data/truth-machine-priority-queue-v1.json","github")).lower()
         self.assertNotIn('"truth_score"',raw);self.assertNotIn('"guilt_score"',raw)
