@@ -47,3 +47,28 @@ The ALAS invoices may be used with Joaquín as **work-product/economic-envelope 
 For outreach, provide a redacted/public-safe invoice schedule preserving: creditor, invoice reference/date, debtor, matter, total, billed task/date/time and linked work-product reference. Redact or omit bank details, home addresses, tax/NIE/passport identifiers and unnecessary private contact data. Preserve amounts and professional-work descriptions because they are directly relevant to reconciliation.
 
 Ask Joaquín to confirm whether: (1) ALAS billed the client for work including his participation; (2) he had any separate retainer or fee arrangement; (3) ALAS or another person paid/owed him internally; (4) any third party ever paid, promised, assumed, settled, credited or otherwise satisfied any fee/expense connected with his work.
+
+
+## 4 January 2019 unfiled source / public-safe derivative — 26 September 2026
+
+- Private source: `8. Demanda administración desleal GM vs AC 248-2018 (NO PRESENTADA) 4ENE2019.pdf`.
+- Source date: 4 January 2019.
+- Source status: DRAFT / NO PRESENTADA / UNFILED.
+- Original SHA-256: `c290ca017cbb4b9446b66452d9462733457b3cb81dff8baa7061034e1f1627a5`.
+- Public derivative path: `evidence/insolvency-36-2012/former-counsel/alas-joaquin/unfiled-ac-challenge-4jan2019-public-safe.pdf`.
+- The public derivative is an exact-byte reviewed copy of the five-page source. No bank details, private addresses, tax/NIE/passport identifiers were found to require redaction. Professional names and land-registry references are retained because they are evidentially material.
+- It must never be renamed or described as a standalone `demanda de separación`. It is an AC-directed pleading/precursor that expressly reserves responsibility and separation under Articles 36/37 LC.
+- Native PDF metadata records `Author: ALEJANDRO NANTON`. This is a technical metadata datum, not proof of legal authorship, mandate, review, approval, filing authority or responsibility.
+- Intended signature lines: Juan Tomás Parrilla Suárez and Pilar García Coello.
+- Circulation/preparation record: Armando Betancor Álamo; Joaquín Ruiz de Infante Abella; Davinia Sánchez de la Cruz; Luis A. Barber Marrero. José María Betancor Álamo is part of the wider team but is not attributed this specific circulation without additional evidence.
+- Crosswalk: `PD-AJ-INV6-016/017` → `PD-AJ-WP-013`; later 15-Jan-2019 filed work remains separately `PD-AJ-WP-002`.
+
+## Separate 25 May 2020 removal workstream
+
+`PD-AJ-WP-014` records Daniel Jiménez's contemporaneous treatment of an active “escrito de remoción del cargo”, with proposed support from a Commercial Law professor. The standalone May-2020 draft remains OPEN / not located. It is not collapsed into the 4-Jan-2019 document. `Responsabilidades del AC.pdf` has been inspected and excluded as a false match: it is general doctrinal material, not the missing pleading.
+
+## Non-exculpation-by-diffusion rule
+
+> Shared responsibility must be analysed cumulatively and individually. The involvement or omission of one lawyer does not automatically excuse another lawyer's independently established responsibility, but responsibility must still be proved role-by-role.
+
+For each professional separately test knowledge, mandate, drafting, review, advice, filing authority, practical opportunity, client/co-counsel communications, decisions, actual filing/non-filing, reasons, contrary evidence and causation. Team membership does not establish collective liability; non-filing does not automatically establish negligence or misconduct.
