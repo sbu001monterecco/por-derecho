@@ -1,0 +1,71 @@
+{
+  "schema": "por-derecho.sun-rock-guernsey-disruption-causation-ledger.v1",
+  "register_id": "PD-SUNROCK-GSY-DISRUPTION-001",
+  "control_date": "2026-09-26",
+  "status": "PRIVATE_CANONICAL_CAUSATION_AND_DAMAGES_LEDGER",
+  "purpose": "Test the causal chain from the 2018 Sun Park disruption into the Guernsey Foundation/operating platform without treating temporal sequence as proof of actor-specific causation.",
+  "controlling_chain": "Sun Park access/control and operating disruption → bookings/resident/customer receipts and contractual performance → GoCardless / Guernsey platform cash → payment of operating/professional/statutory costs → corporate good standing / Foundation administration → continuation of sales, distribution, acquisitions and claims.",
+  "evidence_events": [
+    {
+      "date": "2018-06-07",
+      "event": "Principal alleged Sun Park material-control pivot",
+      "status": "ALLEGED_CONTROL_EVENT_SUPPORTED_BY_SEPARATE_CASE_REGISTER",
+      "causal_role": "Starting event to be tested, not automatic cause of every later Guernsey consequence."
+    },
+    {
+      "date": "2018-08 onward",
+      "event": "GoCardless receipts cease according to Jupiter's October 2018 email",
+      "status": "CONTEMPORANEOUS_THIRD_PARTY_STATEMENT",
+      "causal_question": "Which resident/customer payments ceased, what contracts/bookings generated them, and was cessation caused by loss of Sun Park control/operation?"
+    },
+    {
+      "date": "2018-10 to 2018-12",
+      "event": "Sun Rock Limited unable to continue paying Jupiter/Hamlins; strike-off/wind-up threatened",
+      "status": "CONTEMPORANEOUS_FIDUCIARY_ADMINISTRATOR_RECORD",
+      "causal_question": "Reconcile bank statements, GoCardless data, invoices and hotel cash flows."
+    },
+    {
+      "date": "2019-01-10",
+      "event": "Foundation, Sun Rock Limited and 499 still described by Jupiter as active; records/nominee trust structure identified",
+      "status": "CONTEMPORANEOUS_FIDUCIARY_ADMINISTRATOR_RECORD",
+      "causal_question": "Establish exact handover failure, funding requirement, service-provider replacement attempts and mitigation."
+    },
+    {
+      "date": "2019-06-28",
+      "event": "Guernsey Registry confirms Sun Rock Limited compulsorily struck off",
+      "status": "PRIMARY_INSTITUTIONAL_RECORD",
+      "causal_question": "Obtain court/registry file to fix statutory cause, effective date and restoration consequences."
+    },
+    {
+      "date": "2020-2022",
+      "event": "Professional KYC/law-firm records repeatedly identify Foundation/Sun Rock Group as affected and pursue restoration/claim structures",
+      "status": "CONTEMPORANEOUS_PROFESSIONAL_INSTRUCTION_RECORD",
+      "causal_question": "Separate preservation/mitigation attempts from proof of underlying liability."
+    }
+  ],
+  "damage_hypotheses": [
+    "Direct loss to Sun Rock Limited of sales/marketing income, receivables, contracts, IP/goodwill and acquisition/distribution opportunities if legally owned and causally affected.",
+    "Direct loss to The Sun Rock Foundation through diminution/loss of Foundation-owned company interests or other Foundation assets if proved.",
+    "Restoration, fiduciary, legal and compliance costs that were reasonably incurred or became necessary because of the disruption, subject to remoteness/mitigation.",
+    "Loss of the Solos acquisition opportunity and related distribution capability through Sun Rock Limited, subject to transaction-condition and counterfactual proof.",
+    "Reputational and platform loss only where a recognised cause of action and reliable valuation method exist."
+  ],
+  "mandatory_controls": [
+    "Temporal proximity is not proof that the 7 June 2018 event caused every later corporate failure.",
+    "Jupiter's statement that receipts stopped is evidence of the cash shock; booking/payment records are required to identify source and cause.",
+    "Strike-off/winding-up consequences may also involve unpaid fees, service-provider transition, statutory filing decisions and mitigation choices; these are competing/interactive causes to be analysed.",
+    "Do not attribute Jupiter's or advisers' acts to Spanish actors absent proof of instruction, foreseeability or causal necessity.",
+    "Do not double count company value, lost income, receivables, IP, Solos opportunity and beneficiary/shareholder diminution."
+  ],
+  "priority_proof": [
+    "GoCardless 2017–2019 transaction export",
+    "Sun Rock Limited bank statements / general ledger",
+    "resident/customer booking and payment records",
+    "Jupiter invoices and statutory fee schedules",
+    "Hamlins debt ledger",
+    "Appleby/Dixcart transfer correspondence and uncompleted handover documents",
+    "Guernsey Registry/court strike-off and restoration file",
+    "Foundation Charter/Rules and Sun Rock Limited/499 Declarations of Trust",
+    "Solos SPA/exclusivity and transaction payment/escrow records"
+  ]
+}
