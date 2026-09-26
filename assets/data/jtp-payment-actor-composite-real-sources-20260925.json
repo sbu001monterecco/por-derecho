@@ -1,16 +1,27 @@
 {
   "schema": "por-derecho.jtp-real-actor-composite-provenance.v1",
   "control_id": "PD-JTP-ACTOR-COMPOSITE-20260925-01",
-  "date": "2026-09-25",
-  "status": "DETERMINISTIC_EXACT_SOURCE_COMPOSITE",
+  "date": "2026-09-26",
+  "status": "DETERMINISTIC_EXACT_SOURCE_COMPOSITE_JTP_REPLACED_WITH_USER_APPROVED_CANONICAL",
   "path": "assets/jtp-payment-actor-composite-real-sources-20260925.png",
-  "git_blob_sha": "39245262dc24ea8fbe66b9f53a00afc9028591de",
-  "sha256": "77895f4078ac3d3cad61077f5c33ac1865f95834e1d794014f024e00dd3587cc",
-  "dimensions": [1055, 1491],
+  "git_blob_sha": "aad88000885d606c1a83ea874fb2c864c483b7b3",
+  "sha256": "0f266cce492b62b8e1d278abddbf41368bf7b60671f8e0f42b6c154953e3cc3d",
+  "dimensions": [
+    1055,
+    1491
+  ],
   "verification": {
-    "changed_pixels": 92820,
+    "changed_pixels": 67865,
     "changed_pixels_outside_authorised_boxes": 0,
-    "jtp_region_unchanged": true
+    "authorised_jtp_box_xyxy": [
+      408,
+      203,
+      653,
+      480
+    ],
+    "jtp_region_unchanged": false,
+    "jtp_region_replaced_with_approved_canonical": true,
+    "four_other_individual_regions_unchanged": true
   },
   "sources": {
     "jtp": "person.juan-tomas-parrilla.primary",
@@ -18,5 +29,17 @@
     "jdam": "person.jose-daniel-acosta-matos.primary",
     "lpam": "person.laura-patricia-acosta-matos.primary",
     "alberto": "person.alberto-lopez-villarrubia.primary"
+  },
+  "approved_jtp_master": {
+    "canonical_person_ref": "PD-SP-P-0041",
+    "repository_path": "assets/actors/PD-SP-P-0041_JTP_APPROVED_CANONICAL_20260926.png",
+    "sha256": "331c679a4d5fb44b4467712c90c2d29792a8d7fb49dc96e55bae186f5d9fb27f",
+    "git_blob_sha": "d0df2a148c9dbe626b77a85570e9989e14baa14c",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "approval_date": "2026-09-26",
+    "provenance_note": "User-approved AI-assisted derivative from the user-supplied source; not an independent documentary identification. Exact approved portrait preserved without facial alteration."
   }
 }
