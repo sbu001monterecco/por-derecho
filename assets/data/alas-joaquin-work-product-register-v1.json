@@ -494,13 +494,13 @@
     },
     {
       "id": "PD-AJ-WP-002",
-      "date": "2019-01-15",
-      "title": "Escrito al Juzgado Mercantil — denuncia actuación desleal y posible fraude procesal del AC",
-      "status": "SIGNED_AND_FILED_STRONGLY_SUPPORTED; exact LexNET receipt still to be paired",
+      "date": "2019-01-15/2019-01-16",
+      "title": "Denuncia y oposición al 4º informe de liquidación por incumplimiento del plan de liquidación",
+      "status": "SIGNED_AND_FILED_STRONGLY_SUPPORTED; signed text dated 16-Jan-2019; contemporaneous filename uses 15ENE2019; exact LexNET receipt still to be paired",
       "actors": [
-        "Joaquín Ruiz de Infante — letrado/signatory",
-        "Javier Pérez Almeida — procurador",
-        "ALAS/Armando drafting trail"
+        "Joaquín Ruiz de Infante Abella — letrado/signatory",
+        "Francisco Javier Pérez Almeida — procurador/signatory",
+        "ALAS/Armando drafting and circulation trail"
       ],
       "links": [
         "PD-AJ-INV6-016",
@@ -508,7 +508,7 @@
         "PD-AJ-INV6-024",
         "PD-AJ-INV6-025"
       ],
-      "separation_relevance": "Second otrosí expressly reserves responsibility and separation actions under arts. 36 and 37 LC; direct predecessor of later AC-removal demand."
+      "separation_relevance": "Distinct later Mercantile opposition concerning liquidation operations. It does NOT contain the 4-Jan-2019 arts. 36/37 reservation and must not be conflated with the unfiled predecessor."
     },
     {
       "id": "PD-AJ-WP-003",
@@ -657,6 +657,42 @@
       ],
       "links": [],
       "separation_relevance": "Expressly instrumentalised by AC on R33 page 5 in 2026; must be read with entire work-product and pressure record."
+    },
+    {
+      "id": "PD-AJ-WP-013",
+      "date": "2019-01-04",
+      "title": "DENUNCIA ACTUACIÓN DESLEAL Y POSIBLE FRAUDE PROCESAL DEL ADMINISTRADOR CONCURSAL — unfiled AC-directed precursor",
+      "status": "DRAFT_UNFILED_VERIFIED_BY_SOURCE_AND_CONTEMPORANEOUS_CIRCULATION",
+      "source_title": "8. Demanda administración desleal GM vs AC 248-2018 (NO PRESENTADA) 4ENE2019.pdf",
+      "source_custody": "Private Google Drive corpus; public repository carries only the controlled public-safe source copy/derivative and provenance summary.",
+      "actors": [
+        "Armando Betancor Álamo — contemporaneous circulation; drafting attribution supported by contemporaneous client report and matching ALAS work-family billing, exact authoring sequence still open",
+        "Joaquín Ruiz de Infante Abella — contemporaneous recipient/collaborator; review or approval of this draft not established",
+        "Davinia Sánchez de la Cruz — contemporaneous recipient; review or approval not established",
+        "Luis A. Barber Marrero — contemporaneous recipient; 2-Jan Betancor-Barber coordination is separately billed; review or approval of this draft not established",
+        "Juan Tomás Parrilla Suárez — named in draft signature block / intended filing role according to Armando's circulation; actual signature or filing not established",
+        "Pilar García Coello — named procurator/signature block; receipt of final instruction to file not yet established",
+        "ALEJANDRO NANTON — PDF metadata author field only; identity, role and contribution unresolved"
+      ],
+      "links": [
+        "PD-AJ-INV6-016",
+        "PD-AJ-INV6-017"
+      ],
+      "separation_relevance": "Second otrosí expressly reserves responsibility and separation actions under arts. 36 and 37 LC. This is an unfiled precursor, not a standalone filed separation/removal petition.",
+      "proves": [
+        "A five-page AC-directed draft existed by 4-Jan-2019.",
+        "The draft expressly reserved arts. 36/37 LC responsibility and separation actions.",
+        "Armando circulated it as an escrito intended to be presented by Juan Tomás and copied Joaquín, Davinia and Luis Barber.",
+        "The source itself is marked NO PRESENTADA / UNFILED in the recovered custody filename."
+      ],
+      "does_not_prove": [
+        "That Juan Tomás or Pilar actually signed it.",
+        "That it was filed or judicially admitted.",
+        "That every copied professional reviewed or approved it.",
+        "Why it was not filed.",
+        "Professional negligence, misconduct, collective liability or AC causation."
+      ],
+      "later_connection": "On 25-May-2020 Daniel Jiménez separately referred to an active escrito de remoción del cargo; that later standalone draft remains OPEN / not recovered."
     }
   ],
   "replication_rule": {
@@ -678,6 +714,167 @@
     "Reconcile exact instrument behind 16-Jan-2019 billed 'oposición Informe Trimestral AC'.",
     "Pair February 2019 Fiscalía new-evidence filing with stamped/receipt copy.",
     "Complete author/reviewer/signatory/billing chain for every draft and version.",
-    "Materialise authenticated private source PDFs into stable private custody where connector path permits."
+    "Materialise authenticated private source PDFs into stable private custody where connector path permits.",
+    "Standalone May-2020 escrito de remoción del cargo draft — targeted Gmail/Drive searches confirm the workstream but have not yet recovered the standalone draft.",
+    "Direct Juan Tomás explanation / file note for the 4-Jan-2019 non-filing decision.",
+    "Final instruction / procurator filing chain for the 4-Jan-2019 draft, including whether Pilar García Coello received a filing instruction.",
+    "Identity and professional role of ALEJANDRO NANTON, preserved only as the recovered PDF metadata Author field pending independent source confirmation."
+  ],
+  "non_filing_analysis": {
+    "control": "PD-SP-COUNSEL-WORK-ALAS-JRI-001 / non-exculpation-by-diffusion rule",
+    "rule": "Shared responsibility must be analysed cumulatively and individually. The involvement or omission of one lawyer does not automatically excuse another lawyer's independently established responsibility, but responsibility must still be proved role-by-role.",
+    "criteria": [
+      "knowledge",
+      "engagement_or_mandate",
+      "drafting_contribution",
+      "review",
+      "advice",
+      "authority_to_file",
+      "ability_or_opportunity_to_cause_filing",
+      "client_and_cocounsel_communications",
+      "decisions_taken",
+      "actual_filing_or_nonfiling",
+      "reasons_given",
+      "contrary_evidence",
+      "causation"
+    ],
+    "rows": [
+      {
+        "person": "Armando Betancor Álamo",
+        "jan4_knowledge": "DOCUMENTED — sender of 4-Jan circulation",
+        "mandate": "ALAS lead/coordination documented in wider engagement record",
+        "drafting": "SUPPORTED but not exclusively proved — contemporaneous client report attributes preparation to Armando; invoice work family matches",
+        "review": "SUPPORTED by circulation role; exact revision history open",
+        "authority_to_file": "Not established as court-facing filing authority for this draft",
+        "ability_opportunity": "Documented ability to coordinate with intended filing counsel; exact instruction chain open",
+        "actual_result": "4-Jan draft unfiled; later distinct Mercantile pleading filed",
+        "reasons": "Client-side June-2020 account attributes non-filing to Juan Tomás refusal; requires direct reconciliation",
+        "contrary_limit": "No source located proving Armando alone controlled filing or caused non-filing",
+        "causation": "OPEN"
+      },
+      {
+        "person": "Joaquín Ruiz de Infante Abella",
+        "jan4_knowledge": "DOCUMENTED — copied on 4-Jan circulation as team involved",
+        "mandate": "Collaborator status documented in ALAS engagement; exact Jan4 filing mandate open",
+        "drafting": "Not established for Jan4 draft",
+        "review": "Not established",
+        "authority_to_file": "Not established for Jan4 draft; later separate pleadings signed/filed by Joaquín",
+        "ability_opportunity": "Potential professional opportunity requires source-specific proof, not inferred from later signatory role",
+        "actual_result": "No evidence he signed/filed Jan4 draft",
+        "reasons": "OPEN; invite direct explanation",
+        "contrary_limit": "Receipt/collaboration does not prove approval, filing authority or responsibility for non-filing",
+        "causation": "OPEN"
+      },
+      {
+        "person": "Davinia Sánchez de la Cruz",
+        "jan4_knowledge": "DOCUMENTED — copied on 4-Jan circulation",
+        "mandate": "ALAS team role documented",
+        "drafting": "Not established for Jan4 draft",
+        "review": "Not established",
+        "authority_to_file": "Not established",
+        "ability_opportunity": "OPEN",
+        "actual_result": "No filing act identified for Jan4 draft",
+        "reasons": "OPEN",
+        "contrary_limit": "CC receipt/team membership is insufficient for liability",
+        "causation": "OPEN"
+      },
+      {
+        "person": "Luis A. Barber Marrero",
+        "jan4_knowledge": "DOCUMENTED — copied on 4-Jan circulation; 2-Jan Betancor-Barber coordination separately billed",
+        "mandate": "Collaborator status documented in engagement record",
+        "drafting": "Not established for Jan4 draft",
+        "review": "Not established",
+        "authority_to_file": "Not established",
+        "ability_opportunity": "OPEN",
+        "actual_result": "No filing act identified for Jan4 draft",
+        "reasons": "OPEN",
+        "contrary_limit": "Coordination and receipt do not prove review, approval or filing control",
+        "causation": "OPEN"
+      },
+      {
+        "person": "José María Betancor Álamo",
+        "jan4_knowledge": "Not established from the located 4-Jan circulation",
+        "mandate": "Later/formal ALAS team role documented",
+        "drafting": "Not established for Jan4 draft",
+        "review": "Not established",
+        "authority_to_file": "Not established",
+        "ability_opportunity": "OPEN",
+        "actual_result": "No Jan4-specific act identified",
+        "reasons": "OPEN",
+        "contrary_limit": "Later team membership cannot be back-projected to this document",
+        "causation": "OPEN"
+      },
+      {
+        "person": "Juan Tomás Parrilla Suárez",
+        "jan4_knowledge": "Intended recipient/presentation role documented by Armando's 4-Jan email; direct receipt still to pair",
+        "mandate": "Existing concurso-counsel role documented elsewhere; exact authority for this draft requires source pairing",
+        "drafting": "Not established; signature block names him as letrado",
+        "review": "OPEN",
+        "authority_to_file": "Intended filing role strongly supported; exact final instruction/authority chain open",
+        "ability_opportunity": "Strongly relevant but must be established from his own file/communications",
+        "actual_result": "4-Jan draft unfiled",
+        "reasons": "June-2020 client account says he declined to present this or his own version; this is a client report, not independently adopted as fact",
+        "contrary_limit": "No direct Juan Tomás explanation located in this targeted cycle",
+        "causation": "OPEN"
+      },
+      {
+        "person": "Daniel Jiménez García / SLJ successor workstream",
+        "jan4_knowledge": "DOCUMENTED by 1-Jun-2020 transmission of Jan4 draft",
+        "mandate": "May-Jun 2020 successor engagement/workstream documented",
+        "drafting": "Distinct May-2020 removal petition draft authorship not established",
+        "review": "Daniel acknowledged Jan4 source and said team would do what it could to get it presented",
+        "authority_to_file": "Successor filing authority and procurator chain require exact mandate/source check",
+        "ability_opportunity": "Documented active removal workstream; exact filing decision chain open",
+        "actual_result": "No May/June 2020 removal filing located in current bounded search",
+        "reasons": "OPEN",
+        "contrary_limit": "Existence of workstream does not prove completed draft or duty breach",
+        "causation": "OPEN"
+      }
+    ]
+  },
+  "removal_chronology": [
+    {
+      "stage": 1,
+      "date": "2018-09",
+      "status": "DOCUMENTED_WORKSTREAM",
+      "description": "Explicit remoción por causa justa work; keep source-specific and separate from later documents."
+    },
+    {
+      "stage": 2,
+      "date": "2019-01-04",
+      "status": "DRAFT_UNFILED_VERIFIED",
+      "description": "Five-page AC-directed draft; arts. 36/37 LC responsibility/separation reservation; not a standalone filed separation petition.",
+      "work_product": "PD-AJ-WP-013"
+    },
+    {
+      "stage": 3,
+      "date": "2019-01 onward",
+      "status": "DOCUMENTED_DISCUSSIONS",
+      "description": "Further AC accountability/separation discussions and later pleadings; do not collapse them into the 4-Jan draft."
+    },
+    {
+      "stage": 4,
+      "date": "2020-05-25",
+      "status": "ACTIVE_WORKSTREAM_VERIFIED_DRAFT_NOT_RECOVERED",
+      "description": "Daniel Jiménez expressly refers to el escrito de remoción del cargo and proposes a Commercial-Law professor report; standalone removal draft remains OPEN / not recovered."
+    },
+    {
+      "stage": 5,
+      "date": "2020-09-21",
+      "status": "WITHDRAWALS_VERIFIED",
+      "description": "Joaquín withdrawal and separate ALAS/team withdrawal; later used by AC in R33 page 5."
+    },
+    {
+      "stage": 6,
+      "date": "post-2020",
+      "status": "RENEWED_INSTRUCTIONS / SOURCE-BY-SOURCE",
+      "description": "Later renewed instructions must be tracked without assuming continuity of mandate or responsibility."
+    },
+    {
+      "stage": 7,
+      "date": "2025-2026",
+      "status": "FILED_PROCEEDINGS",
+      "description": "Eventual separation proceedings and RPL 3304/2025; R33 14-Sep-2026 opposition makes the historical counsel record presently material."
+    }
   ]
 }
