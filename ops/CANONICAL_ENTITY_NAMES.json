@@ -835,6 +835,41 @@
         "Google Drive: Sun Rock Foundation Structure Chart 20JAN2015",
         "Google Drive: Company Structure for THB Feb2015"
       ]
+    },
+    {
+      "id": "E066",
+      "record_type": "legal_entity",
+      "jurisdiction": "Guernsey",
+      "canonical_name": "Jupiter Trustees Limited",
+      "first_reference": "Jupiter Trustees Limited",
+      "identifier": {
+        "type": "Guernsey company number",
+        "value": "28822",
+        "verification_status": "CONTEMPORANEOUS_EMAIL_SIGNATURE_CURRENT_STATUS_OPEN"
+      },
+      "controlled_context": "Historical licensed Guernsey fiduciary / Foundation council and administrator node for the Sun Rock Foundation/Guernsey entities.",
+      "role_boundary": "Historical engagement, council, nominee, administration and custody roles are date- and instrument-specific. Do not infer present appointment or responsibility outside the identified acts.",
+      "repository_sources": [
+        "Gmail Jupiter correspondence 2015–2019",
+        "Google Drive: Sun Rock Foundation Structure Chart 20JAN2015"
+      ]
+    },
+    {
+      "id": "E067",
+      "record_type": "legal_entity",
+      "jurisdiction": "Guernsey",
+      "canonical_name": "Jupiter Nominees Limited",
+      "first_reference": "Jupiter Nominees Limited",
+      "identifier": {
+        "type": "Guernsey company number",
+        "value": null,
+        "verification_status": "OPEN"
+      },
+      "controlled_context": "Historical nominee shareholder identified by Jupiter in January 2019 as holder of share certificates for Sun Rock Limited / 499 Retirement Living Limited under declarations of trust in favour of The Sun Rock Foundation.",
+      "ownership_boundary": "Nominee registered holding and beneficial ownership under the declarations of trust must remain distinct. Exact share numbers/classes and current status require the share certificates, declarations of trust and registry records.",
+      "repository_sources": [
+        "Gmail 10 Jan 2019 Jupiter → Appleby re Sun Rock Limited and Sun Rock Foundation"
+      ]
     }
   ]
 }
