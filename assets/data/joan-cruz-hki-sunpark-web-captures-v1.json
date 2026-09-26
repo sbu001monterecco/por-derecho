@@ -27,9 +27,20 @@
         "Sun Park (Lanzarote)"
       ],
       "public_derivative": {
+        "path": "assets/evidence/2019-11-25-hki-sun-park/hki-hotels-sun-park-live-project-2019-11-25-source-restored-20260926.png",
+        "dimensions": "1920x1080",
+        "sha256": "5d88b9c3f9301b44dd1f38e5f5338de3f320908a50c10befb9c01fdb9ec30163",
+        "bytes": 378965,
+        "transformation": "Unmodified byte-for-byte copy of the recovered public-website screenshot; no generated or retouched pixels.",
+        "restoration_date": "2026-09-26"
+      },
+      "historical_public_derivative": {
         "path": "assets/evidence/2019-11-25-hki-sun-park/hki-hotels-sun-park-live-project-2019-11-25.jpg",
         "dimensions": "1280x720",
-        "sha256": "7fc70c6f02832db2eba8a3f6d74afa21c0120096599c66da23bdb29d6bbfda71"
+        "sha256": "7fc70c6f02832db2eba8a3f6d74afa21c0120096599c66da23bdb29d6bbfda71",
+        "observed_sha256_20260926": "4ac1be36f00d1b841d49c2eb1bb6c26bfc3a0656e9bf60127e70d625756b3a6e",
+        "observed_bytes_20260926": 14999,
+        "status": "INVALID_IMAGE_BYTES_PRESERVED_NOT_USED_FOR_DISPLAY"
       }
     },
     {
@@ -48,9 +59,20 @@
         "Tenerife office/contact block"
       ],
       "public_derivative": {
+        "path": "assets/evidence/2019-11-25-hki-sun-park/joan-cruz-hki-hotels-team-2019-11-25-source-restored-20260926.png",
+        "dimensions": "1920x1080",
+        "sha256": "e78b83d8b3c8741dd44e4e80c2ddd8a1ec3c3b77e8dcac3ed0bbd825d6783785",
+        "bytes": 425078,
+        "transformation": "Unmodified byte-for-byte copy of the recovered public-website screenshot; no generated or retouched pixels.",
+        "restoration_date": "2026-09-26"
+      },
+      "historical_public_derivative": {
         "path": "assets/evidence/2019-11-25-hki-sun-park/joan-cruz-hki-hotels-team-2019-11-25.jpg",
         "dimensions": "1280x720",
-        "sha256": "9d74c8a08288667c4805bd43140cff8aa0914701bf449bfe19b10c34bd338d3f"
+        "sha256": "9d74c8a08288667c4805bd43140cff8aa0914701bf449bfe19b10c34bd338d3f",
+        "observed_sha256_20260926": "1e10ed2067f1319cc6f64734c77f02dcc631b206a249b1e3626c2c4806c5289d",
+        "observed_bytes_20260926": 14998,
+        "status": "INVALID_IMAGE_BYTES_PRESERVED_NOT_USED_FOR_DISPLAY"
       }
     }
   ],
@@ -81,6 +103,29 @@
     "PD-SP-EVT-0001",
     "PD-SP-DOC-0005",
     "/es/toma-control-sun-park-7-junio-2018/",
-    "/en/sun-park-takeover-7-june-2018/"
-  ]
+    "/en/sun-park-takeover-7-june-2018/",
+    "PD-SP-O-0038",
+    "PD-SP-O-0076",
+    "SRC-TRAVELNEWS-20190131",
+    "SRC-TRAVELWEEKLY-20190201",
+    "SRC-LOCAL-MP-BROCHURE-2019",
+    "SRC-LOCAL-1-2-FLY-20191125",
+    "SRC-LOCAL-AIDU-20191125",
+    "SRC-LOCAL-LOVEHOLIDAYS-20200121",
+    "SRC-TOURISTIK-AKTUELL-20201027",
+    "/es/joan-cruz-nuez/",
+    "/en/joan-cruz-nuez/",
+    "/es/lava-verde-club-sei-meeting-point/",
+    "/en/lava-verde-club-sei-meeting-point/",
+    "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+    "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
+    "PD-SP-O-0042"
+  ],
+  "last_interlink_update": "2026-09-26",
+  "display_integrity_restoration": {
+    "date": "2026-09-26",
+    "reason": "Both previously published JPEG-labelled objects were invalid image data. Recovered original PNG bytes match the pre-existing original-source hash register. Historical paths and expected derivative hashes are retained; no source is overwritten or reconstructed.",
+    "capture_dates_unchanged": true,
+    "first_publication_date_still_open": true
+  }
 }
