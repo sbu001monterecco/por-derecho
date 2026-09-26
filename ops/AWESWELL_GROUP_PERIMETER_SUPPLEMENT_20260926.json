@@ -18,9 +18,19 @@
     "beneficial_economic_perimeter": {
       "Pink Canary Services, S.L.U.": "Registered shares held by Patricia Isabel Domínguez Montelongo; Gil Marer states they were held for the benefit of AWESWELL LIMITED / Sun Rock. Treat this as the controlling owner declaration pending instrument-specific legal analysis.",
       "Hava Vida Travel & Tourism, S.L.U.": "Registered shares held by Patricia Isabel Domínguez Montelongo; Gil Marer states they were held for the benefit of AWESWELL LIMITED / Sun Rock. Treat this as the controlling owner declaration pending instrument-specific legal analysis."
+    },
+    "platform_beneficial_layer": {
+      "founders_ultimate_principals": [
+        "Gil Marer",
+        "Patricia Domínguez"
+      ],
+      "guernsey_foundation": "The Sun Rock Foundation (registration no. 27)",
+      "guernsey_operating_company": "Sun Rock Limited (company no. 59696)",
+      "rule": "This layer is part of the wider Sun Rock perimeter and may sit above or alongside AWESWELL economically/beneficially. Do not assert a direct Foundation→AWESWELL legal ownership edge unless a share/governing instrument proves it."
     }
   },
   "relationship_controls": [
+    "The wider Sun Rock perimeter is not limited to AWESWELL LIMITED. Contemporary 2015–2016 records evidence a Guernsey Foundation/operating leg (The Sun Rock Foundation and Sun Rock Limited) under the Gil/Patricia founder-beneficiary platform alongside the AWESWELL asset-holding leg.",
     "LPB and Matkator are within the AWESWELL LIMITED / Sun Rock perimeter and are recorded in the repository as directly controlled wholly-owned Spanish subsidiaries, subject to the date-specific company/share records.",
     "Pink Canary Services and Hava Vida are legally separate Spanish companies within the same AWESWELL LIMITED / Sun Rock business and economic perimeter.",
     "Patricia Isabel Domínguez Montelongo was the registered shareholder of Pink and Hava Vida; Gil Marer states that those shares were held for the benefit of AWESWELL LIMITED / Sun Rock. Preserve that as a declared beneficial/economic ownership position unless and until the governing instruments and applicable law establish its precise legal effect.",
@@ -48,5 +58,8 @@
     "evidential_use": "The abandoned acquisition file, professional work, signed commercial agreements, payments, escrow architecture, diligence, funding work and operating integration are contemporaneous evidence of the scale, maturity and direction of the Sun Rock platform before the Spanish disruption.",
     "damages_use": "Potential heads of loss include sunk professional/transaction costs, acquisition payments or credited Net Payments, loss of contractual/exclusivity rights, loss of acquired-business opportunity, lost distribution margin/capability, lost platform growth and consequential enterprise-value effects. Each head requires legal entitlement, causation, remoteness, mitigation, valuation and double-counting controls.",
     "no_double_count_rule": "Do not count the same booking receipt, acquisition payment, lost margin, goodwill, enterprise value or hotel-income loss twice across LPB, Pink, Hava Vida, AWESWELL LIMITED or personal claimant positions."
-  }
+  },
+  "cross_registers": [
+    "ops/SUN_ROCK_FOUNDATION_BENEFICIAL_PLATFORM_REGISTER_20260926.json"
+  ]
 }
