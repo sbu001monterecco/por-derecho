@@ -235,3 +235,86 @@ The former broad “recover complete 13-Jun court/AC presentation” gap is **su
 The 26-Jun-2017 court order now provides primary institutional proof that an AC `escrito ... de evaluación de la propuesta de convenio` had been filed and was ordered made available in the Judicial Office. Same-day contemporaneous emails preserve the court order and creditor outreach around a proposed 100%-payment convenio.
 
 The gap is therefore no longer “does the AC evaluation exist / was it filed?” It is narrowed to **production of the underlying evaluation text and its exact conclusions**. Until recovered, do not infer the content of the AC evaluation from the court order alone.
+
+
+## 15. Canonical material-email / conversation evidence-graph rule — 26 Sep 2026
+
+### 15.1 Mandatory registration
+Every material email, email chain, professional conversation memorialised contemporaneously in writing, meeting report, call note, transmitted attachment or materially evidential message located in the 2014-present corpus must be registered as a canonical evidence node when it supports, contradicts, qualifies, dates, authenticates or causally connects a material event, actor, document, financing route, insolvency step, operator route, possession/control event, judicial/prosecutorial act or later consequence.
+
+No material email may remain only as narrative prose on a webpage or buried in an inbox search result.
+
+### 15.2 Minimum canonical fields
+Each node must record, where available:
+- stable evidence ID;
+- provider-native account/mailbox and provider message ID;
+- exact timestamp/timezone if available;
+- sender, recipients and CC;
+- exact subject;
+- conversation/thread lineage and whether the item is original, reply, forward or later republication;
+- attachment filenames and canonical attachment IDs/Drive IDs;
+- source-state: native email, native attachment, Drive preservation copy, repository derivative, later reconstruction;
+- concise proposition(s) directly supported;
+- proposition(s) contradicted or qualified;
+- attribution class: documentary fact / contemporaneous professional account / party statement / judicial or institutional record / inference / attributed allegation;
+- maturity class where financing/transaction evidence is involved;
+- linked actors, entities, proceedings and assets;
+- linked material event IDs and dates;
+- predecessor/successor communications where they show development, reliance, notice or response;
+- duplicate/forward family ID so repetition is not miscounted as independent corroboration;
+- privacy/publication classification;
+- unresolved authenticity, completeness, attachment or production gaps.
+
+### 15.3 Reciprocal interlink requirement
+Interlinking is bidirectional:
+1. email/conversation node → every material event/proposition it supports, contradicts or qualifies; and
+2. event/proposition node → the canonical emails/conversations and primary documents supporting it.
+
+A later event that confirms, implements, frustrates or contradicts an earlier communication must be linked back to that communication. A contemporaneous communication that anticipates a later confirmed event must be linked forward to the confirmation.
+
+### 15.4 Conversation lineage and anti-double-counting
+A forwarded email does not become a second independent witness merely because it exists in another mailbox or later chain. Preserve:
+- earliest located original/native message;
+- material replies that add new information;
+- material forwards where the act of forwarding proves notice, reliance, escalation or audience;
+- attachment lineage and version changes.
+
+Duplicate mailbox copies, migrations and pure forwards with no new evidential proposition are aliases of the canonical node.
+
+### 15.5 Confirmed-event reinforcement
+For every confirmed material event, recursively ask:
+- what prior email/conversation predicted, prepared or authorised it?
+- what same-day communication records it?
+- what later communication confirms implementation or consequences?
+- what independent participant or institutional record corroborates it?
+- what contrary communication weakens or limits the proposition?
+- what attachments were relied upon in the communication?
+
+The result should be an evidence chain, not a chronological inbox dump.
+
+### 15.6 Priority application to ONA funded-exit / 7-Jun workstream
+Apply immediately to, at minimum:
+- 2017 convenio / creditor-payment communications and AC-evaluation notice;
+- Cuatrecasas Article 176 / consignation work;
+- Pledge/Carlos Sanz lender coordination;
+- Ben Oldman / Avenue / Mediterranean routes;
+- Santander / Proyecto Mona Lisa;
+- ONA / Nacho Barrau operator and lender-support communications;
+- Elaia/Lagune/Batipart preferential-right and €26m LOI chain;
+- Gesvalt / Expert-Witness valuation and debt work;
+- Stoneweg/Varia security and 12-Jun offer chain;
+- 6-Jun ONA execution;
+- 7-Jun possession/control communications;
+- Daniel Irigoyen 7–14 Jun advice, Judge/AC meeting report and conclusion draft;
+- Parrilla/Cuatrecasas responses and appeal/consignation continuity;
+- later communications confirming continuation, impairment, expiry, replacement or failure of each route.
+
+### 15.7 Evidential discipline
+Interlinking does not upgrade the underlying evidence. A party email remains a party statement unless independently corroborated. A lawyer's report of a meeting remains a contemporaneous professional account unless the court/AC record confirms it. Multiple copies of the same statement do not create independent corroboration.
+
+### 15.8 Exhaustion consequence
+The workstream cannot be certified email/file exhausted until every material located communication has either:
+- a canonical node and reciprocal event/proposition links; or
+- a documented exclusion reason (duplicate, administrative/non-material, privileged/publication-restricted but privately preserved, or outside scope).
+
+The negative-search ledger must also record material expected communications that were not located.
