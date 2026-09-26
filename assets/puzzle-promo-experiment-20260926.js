@@ -229,14 +229,25 @@
   document.body.appendChild(promo);
 
   // R33's sticky source viewer is evidence-first. Do not cover the PDF while it is
-  // materially in view; the promo returns automatically above/below that workbench.
+  // in the viewport; the promo returns automatically above/below that workbench.
+  // A geometry check is used instead of relying only on IntersectionObserver so
+  // WebKit, Chromium and Firefox behave identically during scripted/manual scroll.
   const evidenceViewer = document.querySelector('[data-rpl3304-forensic-reader]');
-  if (evidenceViewer && 'IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      promo.dataset.paused = String(Boolean(entry && entry.isIntersecting));
-    }, {threshold:[0]});
-    observer.observe(evidenceViewer);
+  if (evidenceViewer) {
+    let pauseFrame = 0;
+    const syncPause = () => {
+      pauseFrame = 0;
+      const rect = evidenceViewer.getBoundingClientRect();
+      const intersectsViewport = rect.bottom > 0 && rect.top < window.innerHeight;
+      promo.dataset.paused = String(intersectsViewport);
+    };
+    const queuePause = () => {
+      if (pauseFrame) return;
+      pauseFrame = requestAnimationFrame(syncPause);
+    };
+    window.addEventListener('scroll', queuePause, {passive:true});
+    window.addEventListener('resize', queuePause, {passive:true});
+    requestAnimationFrame(syncPause);
   }
 
   const emit = (action) => {
