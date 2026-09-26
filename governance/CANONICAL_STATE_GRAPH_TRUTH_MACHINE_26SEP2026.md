@@ -180,3 +180,25 @@ The correct status is:
 - identified material nodes progressively normalised;
 - explicit gaps retained;
 - completeness not certified.
+
+
+## 13. Historical phase-freeze rule — 1987/1991 → 2008 → 2011
+
+Read and apply `archive/SUN_PARK_ORIGIN_MULTIMATRIX_AWESWELL_PHASE_FREEZE_26SEP2026.md` and `assets/data/sun-park-historical-state-graph-1987-2011-v1.json`.
+
+The graph must begin before the 2008 transaction. Preserve distinct phases for:
+1. property/legal baseline and construction/development/opening evidence;
+2. Sun Group/JSP / Monte Lanza operating period;
+3. the 2008 whole-hotel transaction object and its individual instruments;
+4. the Multimatrix/LPB period, residual Monte Lanza assets/options and later dispositions;
+5. 1-Dec-2011 UK-holdco succession into the same company later named AWESWELL LIMITED;
+6. the 2012 protective-insolvency sequence as the next, not the first, phase.
+
+The 2008 transaction requires two simultaneous state objects:
+- **whole hotel** as the transaction intention/market description evidenced by contemporaneous Alimarket reporting; and
+- the presently supported completed buyer-side perimeter of **171 units + 29 facility areas + management rights**.
+
+The difference is itself a material state transition. Do not use incomplete completion to erase the whole-hotel transaction object, and do not use the whole-hotel transaction object to invent finca-by-finca completion.
+
+The exact construction/first-opening date remains open. The controlled hard tourism anchor is 15-May-1991 for SUN PARK / 220 accommodation units. “San Hotels” remains a user-supplied label pending a source bridge; current sourced historical grouping is Sun Group/JSP.
+
