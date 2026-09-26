@@ -54,11 +54,13 @@ def inspect(page, width: int, height: int, lang: str):
     assert expected in href, (expected, href)
     assert page.evaluate("getComputedStyle(document.querySelector('[data-pd-puzzle-promo]')).position") == "fixed"
     if width <= 700:
-        assert box["width"] <= 155, box
-    else:
-        assert box["width"] <= 225, box
-    if height <= 500:
         assert box["width"] <= 132, box
+    elif width <= 1024:
+        assert box["width"] <= 180, box
+    else:
+        assert box["width"] <= 202, box
+    if height <= 500:
+        assert box["width"] <= 120, box
     return {"box": box, "close": close, "href": href}
 
 
