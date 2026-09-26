@@ -31,20 +31,20 @@
       "id": "E003",
       "name": "Luchy Playa Blanca, S.L.U.",
       "type": "SPANISH_OWNER_INSOLVENCY_DEBTOR",
-      "scope": "Concurso 36/2012; majority property/right perimeter only, not the whole hotel."
+      "scope": "Direct wholly-owned Spanish subsidiary within the AWESWELL LIMITED / Sun Rock perimeter and insolvency debtor in Concurso 36/2012; the insolvency estate is not the whole hotel or platform."
     },
     {
       "id": "E006",
       "name": "Pink Canary Services, S.L.U.",
       "type": "SPANISH_OPERATOR",
       "former_name": "Monterecco Sun Park, S.L.U.",
-      "scope": "Historical hotel-operation/commercialisation company; separate from UK HoldCo."
+      "scope": "Historical Spanish hotel operator within the AWESWELL LIMITED / Sun Rock business and economic perimeter; registered shareholding and asserted beneficial ownership remain separate propositions."
     },
     {
       "id": "E051",
       "name": "Hava Vida Travel & Tourism, S.L.U.",
       "type": "SPANISH_TRAVEL_COMMERCIALISATION_COMPANY_WITHIN_AWESWELL_SUN_ROCK_PERIMETER",
-      "scope": "Part of the AWESWELL LIMITED / Sun Rock business and economic perimeter while remaining a separate Spanish legal person. Registered ownership/shareholding and any claimed beneficial-interest or trust analysis remain distinct from perimeter classification."
+      "scope": "Historical Spanish travel/commercialisation company within the AWESWELL LIMITED / Sun Rock business and economic perimeter; registered shareholding and asserted beneficial ownership remain separate propositions."
     },
     {
       "id": "E055",
@@ -79,6 +79,13 @@
       "name": "The Mid-Counties Co-operative Ltd",
       "type": "UK_TRAVEL_SALES_AGENT_HISTORICAL",
       "identifier": "IP19025R"
+    },
+    {
+      "id": "E060",
+      "name": "Solo's Holidays 2002 Limited",
+      "type": "PROPOSED_SHARE_ACQUISITION_TARGET_HISTORICAL",
+      "company_number": "04511481",
+      "later_name": "Arnloft 2002 Limited"
     }
   ],
   "relationship_edges": [
@@ -162,6 +169,37 @@
       "relationship": "TRAVEL_SALES_AGENCY",
       "period": "2017",
       "status": "DOCUMENTED"
+    },
+    {
+      "from": "E005",
+      "to": "E003",
+      "relationship": "DIRECT_SOLE_SHAREHOLDER_CONTROL_HISTORICAL",
+      "status": "PRIMARY_CORPORATE_RECORD_SUPPORTED_DATE_SPECIFIC"
+    },
+    {
+      "from": "E005",
+      "to": "E004",
+      "relationship": "DIRECT_SOLE_SHAREHOLDER_CONTROL_HISTORICAL",
+      "status": "REPOSITORY_CORPORATE_RECORD_SUPPORTED_DATE_SPECIFIC"
+    },
+    {
+      "from": "E005",
+      "to": "E006",
+      "relationship": "ASSERTED_BENEFICIAL_ECONOMIC_OWNERSHIP_VIA_PATRICIA_REGISTERED_HOLDER",
+      "status": "OWNER_DECLARATION_REQUIRES_INSTRUMENT_AND_LAW_ANALYSIS"
+    },
+    {
+      "from": "E005",
+      "to": "E051",
+      "relationship": "ASSERTED_BENEFICIAL_ECONOMIC_OWNERSHIP_VIA_PATRICIA_REGISTERED_HOLDER",
+      "status": "OWNER_DECLARATION_REQUIRES_INSTRUMENT_AND_LAW_ANALYSIS"
+    },
+    {
+      "from": "PLATFORM-SUNROCK",
+      "to": "E060",
+      "relationship": "PROPOSED_100_PERCENT_SHARE_ACQUISITION",
+      "period": "2015–2018",
+      "status": "ADVANCED_SIGNED_DOCUMENTATION_NOT_COMPLETED"
     }
   ],
   "historical_tracks": [
@@ -237,6 +275,15 @@
         "Gmail Meliá / Jordi Sanchís correspondence Feb–Mar 2018"
       ],
       "boundary": "Interest and diligence are not completed management, investment or acquisition commitments."
+    },
+    {
+      "track_id": "UKH-08",
+      "name": "Solos lost-acquisition / damages evidence track",
+      "proposition": "The Solos file is preserved not only as proof of commercial ambition but as a potential lost-transaction and damages evidence family: signed acquisition/distribution documentation, professional work, incremental performance/payment architecture and later loss of the opportunity.",
+      "claimant_and_entitlement_rule": "Identify the legal payer, contracting buyer, owner of each contractual right and claimant for each loss before quantification.",
+      "causation_rule": "The proposition that Spanish events caused breach/non-completion is attributed to Gil Marer and must be proved against the SPA/exclusivity conditions, funding dependencies, seller conduct, timelines, mitigation and alternative causes.",
+      "later_event_rule": "Later third-party acquisition and dissolution of the old acquisition target may evidence irreversibility of the opportunity but do not themselves prove causation or quantum.",
+      "damages_rule": "Quantify sunk cost, payments/credits, lost contractual rights, lost margin, lost business opportunity and enterprise effects separately; control remoteness, mitigation and double counting."
     }
   ],
   "advisers_and_professional_nodes": [
