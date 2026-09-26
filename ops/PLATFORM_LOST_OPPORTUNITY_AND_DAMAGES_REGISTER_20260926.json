@@ -118,7 +118,15 @@
         "causal bridge from Spanish acts to Guernsey loss",
         "mitigation/reactivation history",
         "valuation and reflective-loss analysis"
-      ]
+      ],
+      "contemporaneous_disruption_evidence": [
+        "Jupiter 16 Oct / 12 Dec 2018: GoCardless receipts ceased since August; insufficient funds to continue paying Sun Rock Limited creditors; strike-off/wind-up consequences contemplated.",
+        "Jupiter 10 Jan 2019: Foundation / Sun Rock Limited / 499 document-and-ownership handover record, including nominee share certificates and declarations of trust for Foundation.",
+        "Guernsey Registry 28 Jun 2019: Sun Rock Limited no. 59696 confirmed compulsorily struck off; court restoration route required.",
+        "DLA Piper / Collas Crill KYC Dec 2020: Group 1 AWESWELL hotel ownership and Group 2 Sun Rock sales/marketing, both stated by Gil as beneficially owned by Gil/Patricia.",
+        "Mourant Jan 2021: restoration requirement and Foundation described by Gil as intended beneficiary of affected economic interests."
+      ],
+      "causation_focus": "Primary next test: reconcile the August 2018 cessation of Guernsey/GoCardless receipts against Sun Park access/control, bookings, resident contracts and cash-flow records, then separate any consequences caused by the Spanish disruption from independent fee, filing, administration or mitigation decisions."
     }
   ],
   "evidential_value_rule": "Preserve abandoned, expired, superseded and failed transaction documents. Their lack of current commercial value does not negate contemporaneous evidential value concerning intention, readiness, professionalisation, financing, commercial relationships, counterfactual alternatives or loss.",
@@ -128,6 +136,7 @@
     "Later sale/liquidation can support irreversibility and mitigation analysis but does not by itself prove liability for the original loss."
   ],
   "cross_registers": [
-    "ops/SUN_ROCK_FOUNDATION_BENEFICIAL_PLATFORM_REGISTER_20260926.json"
+    "ops/SUN_ROCK_FOUNDATION_BENEFICIAL_PLATFORM_REGISTER_20260926.json",
+    "ops/SUN_ROCK_GUERNSEY_DISRUPTION_CAUSATION_LEDGER_20260926.json"
   ]
 }
