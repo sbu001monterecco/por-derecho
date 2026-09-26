@@ -11,7 +11,8 @@
     "registration_number": "27",
     "source_status": "Registration number, historical address and officials are evidenced by contemporaneous group structure documents; a current Guernsey Registry extract remains required for current status.",
     "legal_personality_rule": "A Guernsey foundation is a separate legal person and has no shareholders. Assets belonging to it are Foundation assets, not automatically assets of a founder, beneficiary, guardian, councillor or another group company.",
-    "charter_rules_gap": "Foundation Charter and Rules remain priority primary instruments because they control purpose, beneficiary classes, founder-reserved powers, asset application, council functions, guardian role and termination/default-recipient provisions."
+    "charter_rules_gap": "Foundation Charter and Rules remain priority primary instruments because they control purpose, beneficiary classes, founder-reserved powers, asset application, council functions, guardian role and termination/default-recipient provisions.",
+    "current_status_limit": "The current public Guernsey registry record was not independently retrieved in this scan. Historical and later-status claims below are therefore date-specific."
   },
   "historical_roles": {
     "founders": [
@@ -51,7 +52,13 @@
         "Retirement Holiday Limited (Guernsey, no. 59704)",
         "499 Retirement Living Limited (Guernsey; number open)",
         "Sun Rock Member Services Limited (Guernsey; number open)"
-      ]
+      ],
+      "beneficial_ownership_evidence": {
+        "source": "Jupiter Trustees / Appleby handover correspondence, 10 January 2019",
+        "proposition": "Jupiter stated that share certificates for Sun Rock Limited and 499 Retirement Living Limited were issued to Jupiter Nominees Limited with Declarations of Trust in favour of The Sun Rock Foundation.",
+        "evidential_effect": "This materially strengthens the Foundation→Sun Rock Limited / 499 beneficial ownership edge beyond marketing descriptions.",
+        "boundary": "Exact registered shareholder, share classes/numbers, declaration terms, dates and any later changes require the native share certificates and declarations of trust."
+      }
     },
     "asset_leg": {
       "uk_holdco": "AWESWELL LIMITED (UK company no. 07716847; formerly MONTERECCO SUN PARK LIMITED)",
@@ -255,6 +262,66 @@
     "Jupiter Trustees / Jupiter Directors engagement, administration and beneficial-owner/KYC files",
     "Foundation/Sun Rock Limited bank and general ledgers",
     "2015 BDO/pro-forma aggregation files and any group consolidation schedules",
-    "contracts bridging Foundation/Sun Rock Limited to Pink, Hava Vida, AWESWELL and third-party distributors"
+    "contracts bridging Foundation/Sun Rock Limited to Pink, Hava Vida, AWESWELL and third-party distributors",
+    "10 January 2019 Jupiter handover package: Foundation Certificate, Charter, Rules, Council minutes, Guardian consent, Sun Rock Limited / 499 share certificates and Declarations of Trust",
+    "Guernsey court/registry restoration and strike-off records for Sun Rock Limited no. 59696 and 499 Retirement Living Limited",
+    "GoCardless statements / resident receipts for 2018 and booking ledger linking the August 2018 receipt cessation to the Sun Park operating disruption"
+  ],
+  "status_and_disruption_history": [
+    {
+      "date": "2017-01-04",
+      "source": "Jupiter annual-validation correspondence",
+      "fact": "Jupiter requested registry annual-validation fees for the Guernsey company perimeter including Sun Rock Limited, Retirement Holiday Limited, 499 Retirement Living Limited and Sun Rock Member Services Limited.",
+      "meaning": "Corroborates an administered live Guernsey corporate perimeter before the later disruption."
+    },
+    {
+      "date": "2018-10-16",
+      "source": "Jupiter Trustees → Gil Marer",
+      "fact": "Jupiter stated that no further GoCardless funds had been received since August 2018, that it could no longer continue paying down Sun Rock Limited creditors including Jupiter and Hamlins, and that absent funding it intended to file strike-off papers for Sun Rock Limited and 499 Retirement Living Limited and thereafter wind up the Foundation.",
+      "meaning": "Independent contemporaneous evidence of a severe funding/receipt collapse in the Guernsey platform after the June 2018 Sun Park control pivot.",
+      "causation_boundary": "The email proves the funding condition and contemplated corporate consequences; it does not by itself prove why GoCardless receipts stopped or that a specific Spanish actor caused the stoppage."
+    },
+    {
+      "date": "2018-12-12",
+      "source": "Jupiter Trustees → Gil Marer",
+      "fact": "Jupiter repeated that it had received neither the required funds nor confirmation of a replacement service provider and stated it would continue strike-off steps unless conditions were satisfied.",
+      "meaning": "Shows the liquidity/service-provider problem persisted into December 2018."
+    },
+    {
+      "date": "2019-01-10",
+      "source": "Jupiter Trustees → Appleby, copied to Gil",
+      "fact": "Jupiter described three then-active entities—The Sun Rock Foundation, Sun Rock Limited and 499 Retirement Living Limited—and two earlier Foundation-owned entities, Retirement Holiday Limited and Sun Rock Member Services Limited, that had never traded, held no assets and had been struck off after annual validations/beneficial-ownership filings were not made. Jupiter listed original Foundation/corporate records and stated that Sun Rock Limited / 499 shares were held via Jupiter Nominees under declarations of trust for the Foundation.",
+      "meaning": "Strong professional-administrator evidence of legal-document custody, Foundation beneficial ownership of the principal Guernsey companies, and the differentiated status of the wider Guernsey perimeter."
+    },
+    {
+      "date": "2019-06-28",
+      "source": "Guernsey Registry email forwarded by Dixcart",
+      "fact": "The Registry stated that Sun Rock Limited no. 59696 had been compulsorily struck off and that restoration required a court application, outstanding annual validations and restoration fees.",
+      "meaning": "Primary institutional confirmation that Sun Rock Limited had lost good-standing/existence-on-register status by that date, subject to Guernsey restoration law."
+    },
+    {
+      "date": "2020-12-22",
+      "source": "Gil → DLA Piper / Collas Crill KYC correspondence",
+      "fact": "Gil divided the affected structure into Group 1 'Aweswell – Hotel ownership' and Group 2 'Sun Rock Group – Sales & Marketing' and stated Patricia and Gil were the beneficial owners of both groups.",
+      "meaning": "Contemporaneous litigation/KYC articulation of the two-leg affected perimeter before the present 2026 reconstruction.",
+      "source_boundary": "Party statement submitted for professional KYC, not independent adjudication."
+    },
+    {
+      "date": "2021-01-05",
+      "source": "Mourant call summary confirmed by Gil",
+      "fact": "Mourant recorded a need to restore two Guernsey companies and Gil stated that the Foundation was an intended beneficiary of part of the economic interests affected by the legal matter and was relevant to a proposed claim/PCC-like recovery structure.",
+      "meaning": "Professional legal-instruction record connecting the Foundation/Guernsey layer to the affected economic interests and recovery strategy.",
+      "source_boundary": "Legal-instruction/fact-pattern record, not a judicial finding of entitlement or causation."
+    },
+    {
+      "date": "2022-05-25/26",
+      "source": "Gil / Rosling King correspondence",
+      "fact": "Gil explained that the proposed Solos acquisition had been pursued through Sun Rock Limited of Guernsey; he identified the Foundation above Sun Rock Limited, said both required activation, and considered Sun Rock Limited and Solos relevant to the claims.",
+      "meaning": "Connects the Guernsey operating company directly to the Solos lost-acquisition evidence family.",
+      "source_boundary": "Gil's attributed position; restoration, asset ownership and claim standing remain to be proved through primary corporate and transaction records."
+    }
+  ],
+  "cross_registers": [
+    "ops/SUN_ROCK_GUERNSEY_DISRUPTION_CAUSATION_LEDGER_20260926.json"
   ]
 }
