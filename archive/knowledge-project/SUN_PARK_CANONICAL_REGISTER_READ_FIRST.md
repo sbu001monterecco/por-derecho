@@ -98,3 +98,13 @@ For every material event family, traverse precursor → filing/instrument → re
 Run the recursive anti-orphan audit: a material source-named actor without a canonical ID, event without typed actor/proceeding/source edges, actor without event backlinks, filing without outcome, decision without service/finality, implementation without authority genealogy, or later state without predecessor must be resolved or retained as a finite gap with a next source target.
 
 The validator is `scripts/validate_canonical_state_graph_truth_machine.py`. Passing it proves referential integrity of the progressive overlay only; it does not certify corpus or docket completeness.
+
+
+### Historical prequel is mandatory
+
+Before analysing the 2008 sale, Multimatrix, the 2011 project-side succession or the 2012 concurso, also read:
+
+- `archive/SUN_PARK_ORIGIN_MULTIMATRIX_AWESWELL_PHASE_FREEZE_26SEP2026.md`;
+- `assets/data/sun-park-historical-state-graph-1987-2011-v1.json`.
+
+The historical sequence must preserve: late-1980s/1991 development/opening evidence; Sun Group/JSP / Monte Lanza operation; the whole-hotel object of the 2008 transaction; the separate 171+29 buyer-side completed perimeter; residual options/title and 2009–2011 dispositions; and 1-Dec-2011 succession from Multimatrix into the same UK company later named AWESWELL LIMITED. Do not silently equate the user-supplied “San Hotels” label with Sun Group unless a source bridge is found.
