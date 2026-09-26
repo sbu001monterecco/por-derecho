@@ -64,7 +64,7 @@
       left:calc(12px + env(safe-area-inset-left,0px));
       bottom:calc(12px + env(safe-area-inset-bottom,0px));
       z-index:74;
-      width:min(222px,calc(100vw - 24px));
+      width:min(196px,calc(100vw - 24px));
       opacity:0;
       transform:translate3d(0,18px,0) scale(.97);
       pointer-events:none;
@@ -92,9 +92,9 @@
         linear-gradient(145deg,#f6d55e 0%,var(--pp-gold) 56%,#e9b52b 100%);
       border:1px solid rgba(16,42,53,.18);
       border-radius:31px 38px 25px 42px / 35px 28px 40px 31px;
-      padding:18px 17px 15px;
+      padding:16px 15px 13px;
       text-decoration:none;
-      min-height:186px;
+      min-height:164px;
       isolation:isolate;
     }
     .pd-puzzle-promo__link:focus-visible,
@@ -105,7 +105,7 @@
     .pd-puzzle-promo__network{
       display:block;
       width:100%;
-      height:66px;
+      height:54px;
       margin:-2px 0 8px;
     }
     .pd-puzzle-promo__network path{stroke:rgba(16,42,53,.52);stroke-width:2;fill:none}
@@ -122,13 +122,13 @@
     .pd-puzzle-promo__title{
       display:block;
       margin:.22rem 0 .25rem;
-      font:700 1.24rem/1.04 Georgia,"Times New Roman",serif;
+      font:700 1.1rem/1.04 Georgia,"Times New Roman",serif;
       letter-spacing:-.02em;
     }
     .pd-puzzle-promo__body{
       display:block;
       max-width:18ch;
-      font-size:.78rem;
+      font-size:.73rem;
       line-height:1.34;
       font-weight:650;
     }
@@ -165,29 +165,36 @@
     @media (hover:hover){
       .pd-puzzle-promo__link:hover{transform:translateY(-1px)}
     }
+    @media (max-width:1024px){
+      .pd-puzzle-promo{width:min(174px,28vw)}
+      .pd-puzzle-promo__link{min-height:148px;padding:14px 13px 12px}
+      .pd-puzzle-promo__network{height:47px;margin:-1px 0 6px}
+      .pd-puzzle-promo__title{font-size:1rem}
+      .pd-puzzle-promo__body{font-size:.68rem}
+    }
     @media (max-width:700px){
       .pd-puzzle-promo{
-        width:min(148px,38vw);
+        width:min(124px,34vw);
         left:calc(9px + env(safe-area-inset-left,0px));
         bottom:calc(9px + env(safe-area-inset-bottom,0px));
       }
       .pd-puzzle-promo__link{
-        min-height:132px;
-        padding:13px 11px 11px;
+        min-height:110px;
+        padding:10px 9px 9px;
         border-radius:24px 29px 20px 31px / 27px 22px 30px 24px;
       }
-      .pd-puzzle-promo__network{height:43px;margin:-1px 0 6px}
+      .pd-puzzle-promo__network{height:33px;margin:0 0 4px}
       .pd-puzzle-promo__eyebrow{font-size:.55rem;letter-spacing:.08em}
-      .pd-puzzle-promo__title{font-size:1rem;margin:.16rem 0 .25rem}
+      .pd-puzzle-promo__title{font-size:.88rem;margin:.14rem 0 .2rem}
       .pd-puzzle-promo__body{display:none}
-      .pd-puzzle-promo__cta{margin-top:.4rem;font-size:.59rem;padding:.32rem .43rem}
+      .pd-puzzle-promo__cta{margin-top:.3rem;font-size:.53rem;padding:.3rem .4rem}
       .pd-puzzle-promo__close{top:-8px;right:-8px}
     }
     @media (max-width:380px),(max-height:500px){
-      .pd-puzzle-promo{width:min(126px,36vw)}
-      .pd-puzzle-promo__link{min-height:112px;padding:11px 9px 9px}
-      .pd-puzzle-promo__network{height:34px;margin:0 0 4px}
-      .pd-puzzle-promo__title{font-size:.9rem}
+      .pd-puzzle-promo{width:min(112px,32vw)}
+      .pd-puzzle-promo__link{min-height:100px;padding:9px 8px 8px}
+      .pd-puzzle-promo__network{height:29px;margin:0 0 3px}
+      .pd-puzzle-promo__title{font-size:.82rem}
       .pd-puzzle-promo__cta{font-size:.54rem}
     }
     @media (prefers-reduced-motion:reduce){
@@ -227,8 +234,8 @@
   if (evidenceViewer && 'IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
-      promo.dataset.paused = String(Boolean(entry && entry.isIntersecting && entry.intersectionRatio >= .12));
-    }, {threshold:[0,.12,.5]});
+      promo.dataset.paused = String(Boolean(entry && entry.isIntersecting));
+    }, {threshold:[0]});
     observer.observe(evidenceViewer);
   }
 
@@ -251,7 +258,7 @@
   const onScroll = () => {
     const h = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
     const progress = h > innerHeight ? (scrollY + innerHeight) / h : 1;
-    if (progress >= .18) show();
+    if (progress >= .22) show();
   };
 
   promo.querySelector('.pd-puzzle-promo__close').addEventListener('click', () => {
@@ -265,6 +272,6 @@
     requestAnimationFrame(show);
   } else {
     window.addEventListener('scroll', onScroll, {passive:true});
-    window.setTimeout(show, 6500);
+    window.setTimeout(show, 8000);
   }
 })();
