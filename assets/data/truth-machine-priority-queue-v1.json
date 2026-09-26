@@ -29,8 +29,9 @@
         {
           "path": "assets/data/r33-truth-machine-visual-20260925.json",
           "github_blob_sha": "1fb21667cca5b065f16954204ece6372c4b26e3d",
-          "gitlab_blob_sha": "1fb21667cca5b065f16954204ece6372c4b26e3d",
-          "pin_note": "Updated only because the reviewed R33 public aggregate itself changed in PD-TRUTH-METHOD-STACK-20260925-01; exact same blob on both candidate hosts."
+          "gitlab_blob_sha": null,
+          "pin_note": "GitHub remains pinned to the reviewed later aggregate. GitLab parity is explicitly open as of 26 Sep 2026 because its branch carries the earlier aggregate; reconcile through the R33 workstream before claiming mirror parity.",
+          "gitlab_gap": "R33_PUBLIC_AGGREGATE_HOST_DIVERGENCE: GitHub reviewed blob includes the later scientific_method_pass; GitLab branch currently carries the earlier aggregate ending before that block. Preserve as an explicit parity gap; do not fabricate identical-host provenance."
         }
       ],
       "public_routes": {
