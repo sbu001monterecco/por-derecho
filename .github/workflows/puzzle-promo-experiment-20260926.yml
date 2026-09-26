@@ -12,6 +12,17 @@ on:
       - 'en/estate-payment-counsel-independence/index.html'
       - 'es/pago-masa-independencia-defensa/index.html'
       - '.github/workflows/puzzle-promo-experiment-20260926.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'assets/puzzle-promo-experiment-20260926.js'
+      - 'scripts/check_puzzle_promo_experiment_20260926.py'
+      - 'en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/index.html'
+      - 'es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/index.html'
+      - 'en/estate-payment-counsel-independence/index.html'
+      - 'es/pago-masa-independencia-defensa/index.html'
+      - '.github/workflows/puzzle-promo-experiment-20260926.yml'
   workflow_dispatch:
 
 permissions:
