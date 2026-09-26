@@ -1,0 +1,467 @@
+{
+  "schema": "por-derecho.canonical-state-graph-overlay.v1",
+  "control_id": "PD-CANONICAL-STATE-GRAPH-20260926-01",
+  "control_date": "2026-09-26",
+  "status": "ACTIVE_PROGRESSIVE_OVERLAY_NOT_COMPLETE_DENOMINATOR",
+  "canonical_registries": {
+    "people": "assets/data/matter-identity-registry-v1.people.json",
+    "organisations": "assets/data/matter-identity-registry-v1.organisations.json",
+    "institutions": "assets/data/matter-identity-registry-v1.institutions.json",
+    "proceedings": "assets/data/matter-identity-registry-v1.proceedings.json",
+    "concurso_complete_record": "assets/data/concurso36-complete-record-v1.json",
+    "concurso_court_file": "assets/data/concurso36-court-file-v1.json"
+  },
+  "position_states": [
+    "SUPPORTS",
+    "OPPOSES",
+    "ABSTAINS",
+    "WITHDRAWS",
+    "NO_ACTION_RECORDED",
+    "MIXED",
+    "PROCEDURAL_ONLY",
+    "UNKNOWN"
+  ],
+  "evidence_states": [
+    "PRIMARY_DOCUMENT",
+    "CONTEMPORANEOUS_SOURCE_STATEMENT",
+    "ATTRIBUTED_ALLEGATION",
+    "INFERENCE",
+    "CONTRARY_EVIDENCE",
+    "OPEN_QUESTION",
+    "EVIDENCE_GAP"
+  ],
+  "critical_chain": [
+    {
+      "graph_event_id": "PD-SP-EVT-C36-2012-06-06-OPENING",
+      "date": "2012-06-06",
+      "event_type": "INSOLVENCY_OPENING",
+      "record_ids": [
+        "C36-E001",
+        "C36-JUD-2012-06-06-001"
+      ],
+      "proceeding_id": "PD-SP-R-0001",
+      "institution_id": "PD-SP-I-0001",
+      "actor_edges": [
+        {
+          "actor_id": "PD-SP-P-0057",
+          "relation": "SIGNED",
+          "capacity": "Magistrate-Judge",
+          "evidence_state": "PRIMARY_DOCUMENT"
+        },
+        {
+          "actor_id": "PD-SP-P-0010",
+          "relation": "APPOINTED",
+          "capacity": "Insolvency Administrator",
+          "evidence_state": "PRIMARY_DOCUMENT"
+        },
+        {
+          "actor_id": "PD-SP-P-0001",
+          "relation": "SUFFERED_EFFECT",
+          "capacity": "LPB administrator",
+          "evidence_state": "PRIMARY_DOCUMENT"
+        }
+      ],
+      "organisation_edges": [
+        {
+          "organisation_id": "PD-SP-O-0002",
+          "relation": "SUBJECT_OF_PROCEEDING"
+        }
+      ],
+      "open_gap_ids": [
+        "GAP-C36-OPENING-PRECURSOR"
+      ],
+      "predecessor_graph_event_ids": [
+        "PD-SP-EVT-SP-2012-01-03-SPANISH-PUBLICITY"
+      ]
+    },
+    {
+      "graph_event_id": "PD-SP-EVT-C36-2017-03-22-OPEN-CONVENIO",
+      "date": "2017-03-22",
+      "event_type": "CONVENIO_OPENING",
+      "record_ids": [
+        "C36-JUD-2017-03-22-OPEN-CONVENIO",
+        "C36-JUD-2017-03-22-001",
+        "C36-DC-2017-03-22-CONVENIO"
+      ],
+      "proceeding_id": "PD-SP-R-0001",
+      "institution_id": "PD-SP-I-0001",
+      "actor_edges": [
+        {
+          "actor_id": "PD-SP-P-0057",
+          "relation": "SIGNED",
+          "capacity": "Magistrate-Judge",
+          "evidence_state": "PRIMARY_DOCUMENT"
+        },
+        {
+          "actor_id": "PD-SP-P-0041",
+          "relation": "NOTIFIED",
+          "capacity": "LPB counsel",
+          "evidence_state": "PRIMARY_DOCUMENT"
+        }
+      ],
+      "organisation_edges": [
+        {
+          "organisation_id": "PD-SP-O-0002",
+          "relation": "SUBJECT_OF_STAGE"
+        }
+      ],
+      "successor_graph_event_ids": [
+        "PD-SP-EVT-C36-2017-04-27-CONVENIO-PACKAGE",
+        "PD-SP-EVT-C36-2017-06-28-JUNTA-STATE"
+      ]
+    },
+    {
+      "graph_event_id": "PD-SP-EVT-C36-2017-04-27-CONVENIO-PACKAGE",
+      "date": "2017-04-27",
+      "event_type": "CONVENIO_PROPOSAL_AND_VIABILITY_PACKAGE",
+      "record_ids": [
+        "C36-FIL-2017-04-19-VIABILITY",
+        "C36-FIL-2017-04-27-CONVENIO-PRESENT",
+        "C36-FIL-2017-04-27-CONVENIO-PROPOSAL"
+      ],
+      "proceeding_id": "PD-SP-R-0001",
+      "institution_id": "PD-SP-I-0001",
+      "organisation_edges": [
+        {
+          "organisation_id": "PD-SP-O-0002",
+          "relation": "FILED"
+        },
+        {
+          "organisation_id": "PD-SP-O-0001",
+          "relation": "GUARANTEE_DESCRIBED_IN_PROPOSAL"
+        }
+      ],
+      "evidence_boundary": "Party proposal/presentation proves submission and terms represented; it does not prove approval, creditor adhesion or feasibility.",
+      "open_gap_ids": [
+        "GAP-C36-CONVENIO-ACTOR-TYPED-EDGES"
+      ]
+    },
+    {
+      "graph_event_id": "PD-SP-EVT-C36-2017-06-28-JUNTA-STATE",
+      "date": "2017-06-28",
+      "event_type": "CREDITORS_MEETING_OUTCOME_STATE",
+      "record_ids": [
+        "C36-JUD-2017-03-22-OPEN-CONVENIO",
+        "C36-E003"
+      ],
+      "proceeding_id": "PD-SP-R-0001",
+      "institution_id": "PD-SP-I-0001",
+      "organisation_edges": [
+        {
+          "organisation_id": "PD-SP-O-0002",
+          "relation": "DEBTOR_IN_STAGE"
+        }
+      ],
+      "evidence_boundary": "Court sources establish the meeting was called and the later liquidation order states no proposal was accepted. Contemporary party correspondence describes nonattendance. Exact constitution, attendance, quorum, minutes and recording remain unverified in this overlay.",
+      "open_gap_ids": [
+        "GAP-C36-2017-JUNTA-PRIMARY"
+      ]
+    },
+    {
+      "graph_event_id": "PD-SP-EVT-C36-2017-12-19-LIQUIDATION",
+      "date": "2017-12-19",
+      "event_type": "LIQUIDATION_OPENING",
+      "record_ids": [
+        "C36-E003",
+        "C36-JUD-2017-12-19-001",
+        "C36-DC-2017-12-19-LIQUIDATION"
+      ],
+      "proceeding_id": "PD-SP-R-0001",
+      "institution_id": "PD-SP-I-0001",
+      "actor_edges": [
+        {
+          "actor_id": "PD-SP-P-0124",
+          "relation": "SIGNED",
+          "capacity": "Magistrate-Judge",
+          "evidence_state": "PRIMARY_DOCUMENT"
+        },
+        {
+          "actor_id": "PD-SP-P-0121",
+          "relation": "SIGNED_ELECTRONIC_COPY_AS_LAJ",
+          "capacity": "LAJ",
+          "evidence_state": "PRIMARY_DOCUMENT"
+        },
+        {
+          "actor_id": "PD-SP-P-0010",
+          "relation": "REPLACED_DEBTOR_ADMINISTRATION_FOR_LIQUIDATION_FUNCTIONS",
+          "capacity": "Insolvency Administrator",
+          "evidence_state": "PRIMARY_DOCUMENT"
+        },
+        {
+          "actor_id": "PD-SP-P-0001",
+          "relation": "SUFFERED_EFFECT",
+          "capacity": "LPB administrator",
+          "evidence_state": "PRIMARY_DOCUMENT"
+        },
+        {
+          "actor_id": "PD-SP-P-0041",
+          "relation": "NOTIFIED",
+          "capacity": "LPB counsel",
+          "evidence_state": "PRIMARY_DOCUMENT"
+        }
+      ],
+      "organisation_edges": [
+        {
+          "organisation_id": "PD-SP-O-0002",
+          "relation": "ENTERED_LIQUIDATION"
+        }
+      ],
+      "open_gap_ids": [
+        "GAP-C36-LIQUIDATION-DECISION-PROVENANCE",
+        "GAP-C36-LIQUIDATION-PUBLICATION-SERVICE"
+      ]
+    },
+    {
+      "graph_event_id": "PD-SP-EVT-C36-2018-01-15-CAM-OFFER",
+      "date": "2018-01-15",
+      "event_type": "CAM_LIQUIDATION_OFFER",
+      "record_ids": [
+        "C36-E005"
+      ],
+      "proceeding_id": "PD-SP-R-0001",
+      "institution_id": "PD-SP-I-0001",
+      "actor_edges": [
+        {
+          "actor_id": "PD-SP-P-0012",
+          "relation": "SIGNED",
+          "capacity": "source-identified CAM signatory",
+          "evidence_state": "PRIMARY_DOCUMENT"
+        }
+      ],
+      "organisation_edges": [
+        {
+          "organisation_id": "PD-SP-O-0007",
+          "relation": "FILED_OFFER"
+        }
+      ],
+      "open_gap_ids": [
+        "GAP-C36-CAM-OFFER-AUTHORITY-ATTACHMENTS"
+      ]
+    },
+    {
+      "graph_event_id": "PD-SP-EVT-C36-2018-01-18-AC-PLAN",
+      "date": "2018-01-18",
+      "event_type": "LIQUIDATION_PLAN_FILED",
+      "record_ids": [
+        "C36-E006"
+      ],
+      "proceeding_id": "PD-SP-R-0001",
+      "institution_id": "PD-SP-I-0001",
+      "actor_edges": [
+        {
+          "actor_id": "PD-SP-P-0010",
+          "relation": "FILED",
+          "capacity": "Insolvency Administrator",
+          "evidence_state": "PRIMARY_DOCUMENT"
+        }
+      ],
+      "organisation_edges": [
+        {
+          "organisation_id": "PD-SP-O-0002",
+          "relation": "ASSET_PERIMETER_SUBJECT_TO_PLAN"
+        },
+        {
+          "organisation_id": "PD-SP-O-0007",
+          "relation": "OFFER_INCORPORATED_OR_REFERENCED"
+        }
+      ],
+      "open_gap_ids": [
+        "GAP-C36-PLAN-FILED-ANNEX-I"
+      ]
+    },
+    {
+      "graph_event_id": "PD-SP-EVT-C36-2018-04-16-PLAN-APPROVAL",
+      "date": "2018-04-16",
+      "event_type": "LIQUIDATION_PLAN_APPROVAL",
+      "record_ids": [
+        "C36-E008",
+        "C36-JUD-2018-04-16-001"
+      ],
+      "proceeding_id": "PD-SP-R-0001",
+      "institution_id": "PD-SP-I-0001",
+      "actor_edges": [
+        {
+          "actor_id": "PD-SP-P-0057",
+          "relation": "SIGNED",
+          "capacity": "Magistrate-Judge",
+          "evidence_state": "PRIMARY_DOCUMENT"
+        },
+        {
+          "actor_id": "PD-SP-P-0120",
+          "relation": "SIGNED_ELECTRONIC_COPY_AS_LAJ",
+          "capacity": "LAJ",
+          "evidence_state": "PRIMARY_DOCUMENT"
+        }
+      ],
+      "organisation_edges": [
+        {
+          "organisation_id": "PD-SP-O-0002",
+          "relation": "OBSERVATIONS_CONSIDERED"
+        },
+        {
+          "organisation_id": "PD-SP-O-0001",
+          "relation": "OBSERVATIONS_CONSIDERED"
+        },
+        {
+          "organisation_id": "PD-SP-O-0007",
+          "relation": "PROPOSED_TRANSFEREE_OR_PURCHASER"
+        }
+      ],
+      "evidence_boundary": "The order approved a conditioned route, considered objections and expressly excluded property of others. It is not itself proof of later implementation, whole-hotel control or criminal purpose."
+    },
+    {
+      "graph_event_id": "PD-SP-EVT-C36-2018-06-15-PUBLICITY",
+      "date": "2018-06-15",
+      "event_type": "PUBLICITY_AND_BETTER_OFFER_DIRECTION",
+      "record_ids": [
+        "C36-E013"
+      ],
+      "proceeding_id": "PD-SP-R-0001",
+      "institution_id": "PD-SP-I-0001",
+      "actor_edges": [
+        {
+          "actor_id": "PD-SP-P-0120",
+          "relation": "SIGNED",
+          "capacity": "LAJ",
+          "evidence_state": "PRIMARY_DOCUMENT"
+        }
+      ],
+      "organisation_edges": [],
+      "open_gap_ids": [
+        "GAP-C36-PUBLICITY-RETURNS"
+      ],
+      "institution_edges": [
+        {
+          "institution_id": "PD-SP-I-0018",
+          "relation": "PUBLICATION_DESTINATION"
+        }
+      ]
+    },
+    {
+      "graph_event_id": "PD-SP-EVT-C36-2018-06-26-PARTIAL-SUSPENSION",
+      "date": "2018-06-26",
+      "event_type": "PARTIAL_REALISATION_SUSPENSION",
+      "record_ids": [
+        "C36-E014",
+        "C36-JUD-2018-06-26-001"
+      ],
+      "proceeding_id": "PD-SP-R-0001",
+      "institution_id": "PD-SP-I-0001",
+      "actor_edges": [
+        {
+          "actor_id": "PD-SP-P-0057",
+          "relation": "SIGNED",
+          "capacity": "Magistrate-Judge",
+          "evidence_state": "PRIMARY_DOCUMENT"
+        },
+        {
+          "actor_id": "PD-SP-P-0121",
+          "relation": "SIGNED_ELECTRONIC_COPY_AS_LAJ",
+          "capacity": "LAJ",
+          "evidence_state": "PRIMARY_DOCUMENT"
+        },
+        {
+          "actor_id": "PD-SP-P-0041",
+          "relation": "NOTIFIED",
+          "capacity": "LPB counsel",
+          "evidence_state": "PRIMARY_DOCUMENT"
+        }
+      ],
+      "organisation_edges": [
+        {
+          "organisation_id": "PD-SP-O-0002",
+          "relation": "APPELLANT_OR_AFFECTED_DEBTOR"
+        }
+      ],
+      "evidence_boundary": "Suspends realisation of identified mortgaged apartments while other pronouncements remain; it does not establish a whole-proceeding suspension.",
+      "open_gap_ids": [
+        "GAP-C36-SUSPENSION-IMPLEMENTATION-LIFTING"
+      ]
+    }
+  ],
+  "open_gaps": [
+    {
+      "id": "GAP-C36-OPENING-PRECURSOR",
+      "priority": "P0",
+      "target": "Voluntary petition, AC acceptance, updated inventory, service and appointment-continuity family."
+    },
+    {
+      "id": "GAP-C36-CONVENIO-ACTOR-TYPED-EDGES",
+      "priority": "P0",
+      "target": "Bind proposal/viability/presentation signatories, representatives and recipients to immutable person/entity IDs without inferring authority."
+    },
+    {
+      "id": "GAP-C36-2017-JUNTA-PRIMARY",
+      "priority": "P0",
+      "target": "Certified Junta constitution/nonconstitution record, attendance, quorum, presidency, minutes/recording, service and resulting closure."
+    },
+    {
+      "id": "GAP-C36-LIQUIDATION-DECISION-PROVENANCE",
+      "priority": "P0",
+      "target": "Official commission/substitution/work-allocation record and any lawful preparation/signature-routing provenance; do not infer proxy signing."
+    },
+    {
+      "id": "GAP-C36-LIQUIDATION-PUBLICATION-SERVICE",
+      "priority": "P1",
+      "target": "Publication returns, underlying service receipts, appeal filing/result/finality and plan deadline implementation."
+    },
+    {
+      "id": "GAP-C36-CAM-OFFER-AUTHORITY-ATTACHMENTS",
+      "priority": "P0",
+      "target": "Referenced authority deed, reasonable-value appraisal and exact submission/receipt chain."
+    },
+    {
+      "id": "GAP-C36-PLAN-FILED-ANNEX-I",
+      "priority": "P0",
+      "target": "Exact filed ACTÚA Annex I, service/opposition set and definitive inventory crosswalk."
+    },
+    {
+      "id": "GAP-C36-PUBLICITY-RETURNS",
+      "priority": "P1",
+      "target": "RPC/notice-board publication proofs, last-publication date and ten-day calculation."
+    },
+    {
+      "id": "GAP-C36-SUSPENSION-IMPLEMENTATION-LIFTING",
+      "priority": "P0",
+      "target": "Exact implementation, downstream AC treatment, lifting/modification and appeal/finality chain."
+    },
+    {
+      "id": "GAP-CANONICAL-REMAINING-PEOPLE-IDS",
+      "priority": "P0",
+      "target": "Allocate immutable IDs or pending identities to all material source-named advisers, procurators, representatives and originating dissident actors."
+    },
+    {
+      "id": "GAP-CANONICAL-TYPED-BACKLINK-BACKFILL",
+      "priority": "P0",
+      "target": "Backfill event↔person/entity/proceeding/institution/source edges across material existing records."
+    },
+    {
+      "id": "GAP-CANONICAL-CERTIFIED-DENOMINATOR",
+      "priority": "P0",
+      "target": "Certified court/procedural denominator and recursive orphan audit before any completeness claim."
+    }
+  ],
+  "recursive_cycle": [
+    "DISCOVER",
+    "CANONICALISE",
+    "CROSSWALK",
+    "LINK",
+    "DETECT_TRANSITION",
+    "TEST_EFFECT",
+    "RETRIEVE_CONTRARY",
+    "REGISTER_GAP",
+    "CORRECT_OR_SUPERSEDE",
+    "PROPAGATE_BACKLINKS",
+    "VALIDATE",
+    "REPEAT"
+  ],
+  "completeness_claim_permitted": false,
+  "historical_prequel": {
+    "control_id": "PD-SP-HISTORY-STATE-GRAPH-1987-2011-20260926",
+    "path": "assets/data/sun-park-historical-state-graph-1987-2011-v1.json",
+    "first_phase": "SP-PHASE-0-ORIGIN-1987-1991",
+    "handoff_event": "PD-SP-EVT-SP-2012-01-03-SPANISH-PUBLICITY",
+    "successor_event": "PD-SP-EVT-C36-2012-06-06-OPENING",
+    "rule": "Do not start the material history at the concurso; traverse the hotel origin, Sun Group/JSP/Monte Lanza operating phase, 2008 whole-hotel transaction object versus incomplete completion, Multimatrix phase and 2011 UK-holdco succession first."
+  }
+}

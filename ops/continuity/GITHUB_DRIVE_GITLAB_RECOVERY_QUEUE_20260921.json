@@ -7,11 +7,11 @@
     "evidence_pipeline_id": 2883898572,
     "evidence_pipeline_status": "failed",
     "evidence_runner_assigned": false,
-    "github_main": "3b51629e7083202776be027a7dcb685ca46a7d45",
+    "github_main": "1c268449ec05c95ec32954c22fb282d317271a24",
     "gitlab_ci": "CONTROL_SYSTEM_DEGRADED",
     "gitlab_main": "5d90b0fd0e80a655599a2b18fc88b6b4a876c9f1",
     "gitlab_project_id": 86151898,
-    "observed_date": "2026-09-25",
+    "observed_date": "2026-09-26",
     "policy": "NO_CAPACITY_PROBE_PIPELINES__NO_GRATUITOUS_CI_WHILE_BLOCKED"
   },
   "external_action_authority": false,
@@ -159,6 +159,44 @@
       "recovery_class": "GITHUB_NEWER_OR_EQUIVALENT",
       "replay_rule": "Refresh both heads; preserve newer GitLab source and merge only this reviewed net delta through normal gates. No quota-probe pipeline or paid action. Do not port the temporary preparation workflow.",
       "scope": "Source-qualified cross-platform chronology and completed institutional correspondence"
+    },
+    {
+      "id": "PD-GL-REC-CANONICAL-HISTORY-20260926-01",
+      "scope": "Canonical state graph plus Sun Park 1987/1991→2008→Multimatrix→1-Dec-2011 Aweswell historical phase freeze",
+      "recovery_class": "EXACT_GITLAB_RECOVERY_WITH_HISTORY_PAGE_RECONCILIATION",
+      "github_branch": "governance/canonical-state-graph-20260926",
+      "github_pr": 1910,
+      "github_state": "DRAFT_SOURCE_CANDIDATE__NOT_MAIN_NOT_LIVE",
+      "gitlab_main_at_preparation": "5d90b0fd0e80a655599a2b18fc88b6b4a876c9f1",
+      "gitlab_state": "SOURCE_PRESENT_PARTIAL__HISTORY_PAGE_EXISTS__CANONICAL_GRAPH_REPLAY_PENDING__CI_QUOTA_BLOCKED",
+      "gitlab_existing_history_paths": [
+        "es/historia-sun-park/index.html",
+        "en/sun-park-history/index.html"
+      ],
+      "github_replay_paths": [
+        "governance/CANONICAL_STATE_GRAPH_TRUTH_MACHINE_26SEP2026.md",
+        "assets/data/canonical-state-graph-overlay-v1.json",
+        "assets/data/sun-park-historical-state-graph-1987-2011-v1.json",
+        "archive/SUN_PARK_ORIGIN_MULTIMATRIX_AWESWELL_PHASE_FREEZE_26SEP2026.md",
+        "assets/data/matter-identity-registry-v1.organisations.json",
+        "assets/data/matter-identity-registry-v1.people.json",
+        "archive/knowledge-project/SUN_PARK_CANONICAL_REGISTER_READ_FIRST.md",
+        "AGENTS.md",
+        "scripts/validate_canonical_state_graph_truth_machine.py",
+        ".github/workflows/validate-canonical-state-graph.yml"
+      ],
+      "reconciliation_requirements": [
+        "Freeze current GitHub/GitLab heads immediately before replay.",
+        "Preserve richer GitLab history-page content, including its tourism-authorisation and ownership/operation distinctions.",
+        "Add GitHub canonical graph controls and promoted JSP/Multimatrix IDs additively; do not overwrite GitLab pages wholesale.",
+        "Reconcile whole-hotel Alimarket transaction object with 171+29 buyer-side completed perimeter.",
+        "Keep San Hotels as unverified user-supplied label until source bridge exists.",
+        "Preserve MONTERECCO SUN PARK LIMITED as former name of same AWESWELL LIMITED legal person, not a duplicate entity.",
+        "Run relevant GitLab source/integrity checks only when shared-runner capacity is actually restored; no quota probe or purchase.",
+        "Verify GitLab Pages history routes and canonical data readback separately before parity claim."
+      ],
+      "private_drive_state": "RECONSTRUCTION_PACKAGE_TO_BE_WRITTEN_AND_READ_BACK_IN_EXISTING_OWNER_ONLY_SOURCE_INTAKE_FOLDER",
+      "replay_rule": "ADDITIVE_RECONCILIATION_ONLY__NO_WHOLESALE_MIRROR__NO_PARITY_CLAIM_UNTIL_SOURCE_AND_PAGES_VERIFIED"
     }
   ],
   "restoration_observed": {
