@@ -110,3 +110,32 @@ Purpose: reconcile legitimate balances; identify present creditor; preserve file
 Do not declare closed until all 3 Gmail accounts, Drive, GitHub, GitLab, website/source maps, public professional/corporate sources, inaccessible-source register and contrary evidence are reconciled.
 
 Final permitted status: SEARCH EXHAUSTED TO THE LIMITS OF CURRENTLY ACCESSIBLE SOURCES.
+
+
+## JTP cross-evidence relevance added 26 September 2026
+
+The Juan Tomás Parrilla (JTP) source-close is directly relevant to communications with Joaquín Ruiz de Infante and the former ALAS professionals, but only as a bounded comparator.
+
+Verified JTP facts:
+- Parrilla's 11-Jun-2020 email stated a proposed definitive fee of €50,000 + IGIC, €32,250 already received, and €17,750 + IGIC remaining; he expressly required Gil/Patricia's written approval before proceeding with either proposed route involving the AC.
+- Incoming counsel Daniel Jiménez transmitted the proposal on 12-Jun-2020 stating it could not be accepted; Patricia expressly agreed and ended the negotiations.
+- Jiménez's contemporaneous 18-Jun-2020 assessment said negotiations with Parrilla and the AC had been broken off because, in his professional assessment, they were trying to condition the successor team's work on payment of fees. This is an attributed professional assessment, not an adjudicated finding.
+- The AC's 21-Jul-2021 filed report records €26,750 paid in July 2020 to Juan Tomás Parrilla for "Honorarios abogado concursada".
+- €26,750 equals €25,000 + 7% IGIC, numerically matching an earlier immediate-payment figure, but the arithmetic does not establish which proposal, invoice, authority or instruction the July payment implemented.
+- No later written Gil/Patricia approval, matching final 2020 invoice/minuta, direct LPB bank debit or recipient credit has yet been located in the bounded connected-source searches.
+
+Permitted use in ALAS/Joaquín communications:
+- Inform them that an independent reconstruction of former-counsel economics has identified a documented estate-side payment to another former LPB lawyer after a contemporaneously rejected fee route.
+- Explain that this makes it necessary to reconcile whether any historical ALAS/Joaquín fee, balance or professional expense was ever paid, settled, assumed, credited or otherwise satisfied by any person other than AWESWELL/Gil/Patricia, directly or indirectly.
+- Request preservation and disclosure of any such payment/settlement record.
+- State that the investigation is independent of them and extends to possible economic/professional interference with former advisers.
+- Do not state or imply that ALAS or Joaquín received any such payment unless source evidence is recovered.
+
+Prohibited overstatement:
+- JTP payment does not prove bribery or a quid pro quo.
+- No completed CAM → JTP or RICPE → JTP bank trace is presently established.
+- The project's allegation that estate liquidity ultimately derived from the Acosta Matos / wider adverse perimeter remains an attributed theory requiring transaction-by-transaction proof.
+- The JTP episode cannot be transferred factually to ALAS/Joaquín; it justifies asking the reconciliation question and preserving their independent account.
+
+R33 linkage:
+Page 5 of the AC's 14-Sep-2026 RPL 3304/2025 opposition expressly generalises from successive lawyer changes, states it is reasonable to think professionals withdrew after finding lack of objective/legal consistency, quotes Joaquín's 21-Sep-2020 resignation/apology, and says repeated substitutions "presumiblemente" reflect unwillingness to continue sustaining Gil's account. This makes ALAS/Joaquín's independent explanation of their 2020 role, pressure, withdrawal, fees and any third-party economic contact directly material to a live 2026 adversarial filing.
