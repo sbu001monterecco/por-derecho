@@ -758,3 +758,19 @@ Apply `PD-CHATGPT-UCF-INTAKE-20260925-01` from `.github/governance/CHATGPT_UNITA
 - ChatGPT/account memory is retrieval assistance only; current primary sources and current repository controls govern.
 - Before using GitLab as a control source, read `ops/CHATGPT_CROSS_HOST_CONTROL_MANIFEST.json`; current GitHub/GitLab bootstrap blobs are not presumed identical.
 - For Community fees/debt/vote cases, apply both `PD-COMMUNITY-DEBT-ROLE-REVERSAL-20260925-01` and `PD-COMMUNITY-COURT-COMPLETENESS-20260925-01`.
+
+
+## PD-GOV-CSG — CANONICAL STATE GRAPH / TRUTH MACHINE RECURSION
+
+Apply `PD-CANONICAL-STATE-GRAPH-20260926-01` from `governance/CANONICAL_STATE_GRAPH_TRUTH_MACHINE_26SEP2026.md` to every substantive Sun Park / Por Derecho task.
+
+- Treat the canonical system as a graph of people, entities, institutions, proceedings, events, instruments, sources, assets/rights, propositions and objectives—not as an address book.
+- Every material object gets one immutable canonical node or an explicit pending-node record. Unknown is a state; omission is not.
+- Every material relationship gets a dated typed edge with capacity and evidential status. Human-readable prose does not substitute for the machine edge.
+- Track source-supported position changes relative to a specific objective/proposition: SUPPORTS / OPPOSES / ABSTAINS / WITHDRAWS / NO_ACTION_RECORDED / MIXED / PROCEDURAL_ONLY / UNKNOWN. Never use a permanent faction label as proof of conduct or intent.
+- A state change is a first-class event: previous state → transition event → new state. Do not infer culpable omission from silence; identify duty/opportunity and causal significance separately.
+- Enforce bidirectional traversal: person↔event, entity↔instrument, event↔proceeding, decision↔source, asset↔transfer, proposition↔support/contrary source, predecessor↔successor.
+- Run recursive orphan detection on every gap-closure pass. Resolve or explicitly register missing actor IDs, event IDs, typed backlinks, source lineage, predecessor/successor nodes, service/finality and implementation chains.
+- Preserve identity, capacity, source signatory, institutional act, preparation/provenance, implementation, alleged causal responsibility and legal responsibility as distinct fields.
+- Current critical-chain overlay: `assets/data/canonical-state-graph-overlay-v1.json`; validator: `scripts/validate_canonical_state_graph_truth_machine.py`.
+- Passing the validator is not a completeness certificate. The certified denominator and explicit orphan/gap closures still control any claim of 100% coverage.
