@@ -1,0 +1,260 @@
+{
+  "schema": "por-derecho.sun-rock-foundation-beneficial-platform-register.v1",
+  "register_id": "PD-SUNROCK-FOUNDATION-PLATFORM-001",
+  "control_date": "2026-09-26",
+  "status": "PRIVATE_CANONICAL_HISTORICAL_STRUCTURE_AND_RIGHTS_REGISTER",
+  "purpose": "Record the historical Sun Rock Foundation / Guernsey beneficial-platform layer and its relationship to the AWESWELL asset-holding leg without collapsing distinct legal persons, founder/beneficiary rights, share ownership, operating rights or claimant positions.",
+  "controlling_conclusion": "The historical Sun Rock perimeter was not a single vertical group headed only by AWESWELL LIMITED. Contemporary 2015–2016 sources evidence a Guernsey Foundation/operating leg and a UK/Spanish asset leg under the common beneficial/founder platform of Gil Marer and Patricia Domínguez.",
+  "legal_form_control": {
+    "foundation": "The Sun Rock Foundation",
+    "jurisdiction": "Guernsey",
+    "registration_number": "27",
+    "source_status": "Registration number, historical address and officials are evidenced by contemporaneous group structure documents; a current Guernsey Registry extract remains required for current status.",
+    "legal_personality_rule": "A Guernsey foundation is a separate legal person and has no shareholders. Assets belonging to it are Foundation assets, not automatically assets of a founder, beneficiary, guardian, councillor or another group company.",
+    "charter_rules_gap": "Foundation Charter and Rules remain priority primary instruments because they control purpose, beneficiary classes, founder-reserved powers, asset application, council functions, guardian role and termination/default-recipient provisions."
+  },
+  "historical_roles": {
+    "founders": [
+      {
+        "person": "Gil Marer",
+        "source_name": "Gil Summers"
+      },
+      {
+        "person": "Patricia Domínguez",
+        "source_name": "Patricia Dominguez / Patricia Summers"
+      }
+    ],
+    "beneficiaries": {
+      "controlled_statement": "A March 2016 Sun Rock corporate-presentation Q&A states: 'The Sun Rock Foundation, Patricia and Gil are cofounders and beneficiaries.' A February 2016 Solos/Sun Rock biography describes Gil as 'Cofounder ... and the Sun Rock Foundation' and 'Controlling Beneficiary.'",
+      "boundary": "Do not infer an equal percentage, sole beneficiary class, enfranchisement status, economic percentage or present beneficiary status without the Foundation Charter/Rules and current records."
+    },
+    "guardian": {
+      "person": "Gil Marer",
+      "source_name": "Gil Summers",
+      "historical_status": "Shown as Guardian in the 20 January 2015 structure chart."
+    },
+    "council_member": {
+      "organisation": "Jupiter Trustees",
+      "historical_status": "Shown as Council Member in the 20 January 2015 structure chart and related 2015 structure document."
+    }
+  },
+  "topology": {
+    "beneficial_founder_layer": [
+      "Gil Marer",
+      "Patricia Domínguez"
+    ],
+    "foundation_leg": {
+      "foundation": "The Sun Rock Foundation (Guernsey, no. 27)",
+      "documented_child_or_operational_entity": "Sun Rock Limited (Guernsey, no. 59696)",
+      "explicit_source_bridge": "2016 Sun Rock Q&A: 'The Sun Rock Foundation owns the operational business Sun Rock Limited, which is responsible for sales and marketing.'",
+      "related_historical_entities": [
+        "Retirement Holiday Limited (Guernsey, no. 59704)",
+        "499 Retirement Living Limited (Guernsey; number open)",
+        "Sun Rock Member Services Limited (Guernsey; number open)"
+      ]
+    },
+    "asset_leg": {
+      "uk_holdco": "AWESWELL LIMITED (UK company no. 07716847; formerly MONTERECCO SUN PARK LIMITED)",
+      "direct_spanish_subsidiaries": [
+        "Luchy Playa Blanca, S.L.U.",
+        "Matkator, S.L.U."
+      ],
+      "economic_perimeter_via_registered_Patricia_holdings": [
+        "Pink Canary Services, S.L.U.",
+        "Hava Vida Travel & Tourism, S.L.U."
+      ]
+    },
+    "cross_leg_bridges": [
+      "2015 Foundation structure chart places AWESWELL, Matkator and Hava Vida within the same Sun Rock architecture but does not, from the presently extracted text alone, prove a direct Foundation→AWESWELL shareholding edge.",
+      "2024 and 2025 AWESWELL board minutes record Patricia explaining Hava Vida and Pink as used in joint-venture/trading arrangements with The Sun Rock Foundation and other parties.",
+      "2016 corporate Q&A describes the Foundation as owning Sun Rock Limited and as the self-sustaining operational platform, while separate materials identify AWESWELL as the UK holding company for the Spanish asset leg."
+    ],
+    "no_false_tree_rule": "Do not force a single parent-subsidiary tree. Model common beneficial/founder control and contractual/economic integration separately from registered legal ownership."
+  },
+  "contemporaneous_source_spine": [
+    {
+      "date": "2015-01-20",
+      "source": "Sun Rock Foundation Structure Chart",
+      "propositions": [
+        "Foundation in Guernsey",
+        "Founders Gil/Patricia",
+        "Guardian Gil",
+        "Council Member Jupiter Trustees",
+        "Sun Rock Limited / Guernsey operating companies",
+        "AWESWELL / Spanish entities shown inside wider architecture"
+      ]
+    },
+    {
+      "date": "2015-02",
+      "source": "Company Structure for THB Feb2015",
+      "propositions": [
+        "Foundation registration no. 27",
+        "historical registered address",
+        "Sun Rock Limited no. 59696",
+        "Retirement Holiday Limited no. 59704",
+        "Jupiter director entities"
+      ]
+    },
+    {
+      "date": "2016-02",
+      "source": "Narrative & Bios (GB) Solos-SunRock",
+      "propositions": [
+        "Gil described as cofounder of Sun Rock Foundation and Controlling Beneficiary",
+        "Sun Rock operational/distribution platform described contemporaneously"
+      ]
+    },
+    {
+      "date": "2016-03",
+      "source": "Sun Rock Group – Corporate Presentation / Questions",
+      "propositions": [
+        "Sun Rock Foundation, Patricia and Gil described as cofounders and beneficiaries",
+        "Jupiter Trustees identified as third-party trustee/fiduciary group",
+        "Foundation guarantee/security language appears in transaction preparation"
+      ]
+    },
+    {
+      "date": "2016-09",
+      "source": "Sun Rock Media Q&A v1.2",
+      "propositions": [
+        "journey began 2011",
+        "Foundation legally established in 2015",
+        "Gil/Patricia founded and endowed it",
+        "Foundation owns Sun Rock Limited",
+        "Foundation and operational businesses professionally managed in Guernsey",
+        "Foundation intended to be self-sustaining"
+      ]
+    },
+    {
+      "date": "2023-12",
+      "source": "Sun Rock Narrative Dec 23 LawBite V3",
+      "source_class": "LATER_PRIVATE_PARTY/LAWYER_NARRATIVE",
+      "propositions": [
+        "historical Sun Rock group described as Aweswell Limited, Sun Rock Limited and Sun Rock Foundation",
+        "ultimate beneficial ownership attributed to Gil/Patricia",
+        "Sun Rock Limited and Foundation described as needing reactivation",
+        "loss of income and reputational damage to Guernsey group alleged"
+      ]
+    }
+  ],
+  "affected_rights_and_loss_map": [
+    {
+      "holder_or_candidate": "The Sun Rock Foundation",
+      "possible_rights": [
+        "its own assets/endowment",
+        "its interest in/ownership of Sun Rock Limited if confirmed by governing/corporate records",
+        "Foundation contractual rights",
+        "purpose/beneficiary-related economic platform value"
+      ],
+      "possible_loss": [
+        "impairment of Foundation assets",
+        "loss of operating platform value",
+        "loss of distributions/value through owned entities",
+        "reputational/platform impairment"
+      ],
+      "proof_required": [
+        "Charter and Rules",
+        "asset register/accounts",
+        "Sun Rock Limited share register",
+        "current/historical registry extracts",
+        "transaction contracts",
+        "causation and valuation"
+      ]
+    },
+    {
+      "holder_or_candidate": "Sun Rock Limited (Guernsey)",
+      "possible_rights": [
+        "sales/marketing business",
+        "commercial contracts",
+        "brand/IP/goodwill if legally held",
+        "customer/distribution relationships",
+        "operating revenues"
+      ],
+      "possible_loss": [
+        "lost income",
+        "lost commercial agreements",
+        "lost expansion",
+        "goodwill/reputation loss"
+      ],
+      "proof_required": [
+        "share register",
+        "accounts",
+        "IP ownership",
+        "contracts",
+        "bank/ledger records",
+        "counterfactual and mitigation evidence"
+      ]
+    },
+    {
+      "holder_or_candidate": "AWESWELL LIMITED",
+      "possible_rights": [
+        "shares/interests in Spanish subsidiaries",
+        "asset-holding/investment rights",
+        "financing and recovery rights",
+        "hotel-related value and income where legally attributable"
+      ],
+      "possible_loss": [
+        "asset/income impairment",
+        "financing/exit loss",
+        "loss of opportunity",
+        "claim/recovery costs"
+      ],
+      "proof_required": [
+        "company/share records",
+        "accounts",
+        "contracts",
+        "court/insolvency record",
+        "causation",
+        "valuation"
+      ]
+    },
+    {
+      "holder_or_candidate": "LPB / Matkator / Pink / Hava Vida",
+      "possible_rights": [
+        "entity-specific property, operator, sales, distribution and contractual rights"
+      ],
+      "possible_loss": [
+        "property/estate value",
+        "operator income",
+        "sunk expenditure",
+        "commercial/distribution loss"
+      ],
+      "proof_required": [
+        "entity-specific contract/title/accounting evidence"
+      ]
+    },
+    {
+      "holder_or_candidate": "Gil Marer and Patricia Domínguez",
+      "possible_rights": [
+        "founder/beneficiary rights under Foundation constitution",
+        "shareholder/beneficial interests",
+        "personal advances/investments if proved"
+      ],
+      "possible_loss": [
+        "only losses legally personal to each person and not already belonging to Foundation/group entities"
+      ],
+      "proof_required": [
+        "Charter/Rules",
+        "share instruments",
+        "loan/advance records",
+        "personal legal entitlement",
+        "no reflective/double recovery"
+      ]
+    }
+  ],
+  "damages_control": [
+    "The fact that multiple group entities were affected does not make each the owner of the same loss.",
+    "Trace each right to its legal holder at the relevant date before quantification.",
+    "Separate direct corporate loss, beneficiary/shareholder economic diminution, personal expenditure and reflective loss issues.",
+    "Do not double count hotel income, enterprise value, Solos opportunity, brand/goodwill, contractual margin or asset value across Foundation, Sun Rock Limited, AWESWELL and Spanish entities.",
+    "Later inability to reactivate or commercialise a vehicle may be evidence of consequence but does not itself establish legal causation."
+  ],
+  "priority_retrieval": [
+    "Sun Rock Foundation Charter and Rules/Constitution",
+    "current and historical Guernsey Registry extracts for Foundation no. 27, Sun Rock Limited no. 59696 and Retirement Holiday Limited no. 59704",
+    "Sun Rock Limited share register and Foundation asset/accounts records",
+    "Jupiter Trustees / Jupiter Directors engagement, administration and beneficial-owner/KYC files",
+    "Foundation/Sun Rock Limited bank and general ledgers",
+    "2015 BDO/pro-forma aggregation files and any group consolidation schedules",
+    "contracts bridging Foundation/Sun Rock Limited to Pink, Hava Vida, AWESWELL and third-party distributors"
+  ]
+}
