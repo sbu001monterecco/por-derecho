@@ -13,6 +13,7 @@ CONTROL = ROOT / "assets/data/canonical-state-graph-overlay-v1.json"
 HISTORY = ROOT / "assets/data/sun-park-historical-state-graph-1987-2011-v1.json"
 
 PATHS = {
+    "identity_index": ROOT / "assets/data/matter-identity-registry-v1.json",
     "people": ROOT / "assets/data/matter-identity-registry-v1.people.json",
     "organisations": ROOT / "assets/data/matter-identity-registry-v1.organisations.json",
     "institutions": ROOT / "assets/data/matter-identity-registry-v1.institutions.json",
@@ -38,6 +39,14 @@ def records(payload):
 def fail(msg, failures):
     failures.append(msg)
 
+def canonical_identity_records():
+    index = load(PATHS["identity_index"])
+    rows = []
+    for part in index.get("parts", []):
+        rel = ROOT / "assets/data" / part["path"]
+        rows.extend(records(load(rel)))
+    return rows
+
 def main():
     failures=[]
     ctl=load(CONTROL)
@@ -52,22 +61,21 @@ def main():
     if prequel.get("path")!="assets/data/sun-park-historical-state-graph-1987-2011-v1.json":
         fail("canonical state graph must retain historical prequel pointer",failures)
 
-    people={r["id"] for r in records(load(PATHS["people"]))}
-    orgs={r["id"] for r in records(load(PATHS["organisations"]))}
-    inst={r["id"] for r in records(load(PATHS["institutions"]))}
-    procs={r["id"] for r in records(load(PATHS["proceedings"]))}
+    identities=canonical_identity_records()
+    people={r["id"] for r in identities if r.get("type")=="PERSON"}
+    orgs={r["id"] for r in identities if r.get("type")=="ORGANISATION"}
+    inst={r["id"] for r in identities if r.get("type")=="INSTITUTION"}
+    procs={r["id"] for r in identities if r.get("type")=="PROCEEDING"}
+    org_by_id={r["id"]:r for r in identities if r.get("type")=="ORGANISATION"}
 
-    people_payload=load(PATHS["people"])
-    org_payload=load(PATHS["organisations"])
-    people_by_id={r["id"]:r for r in records(people_payload)}
-    org_by_id={r["id"]:r for r in records(org_payload)}
     if "PD-SP-O-0085" not in orgs or "PD-SP-O-0099" not in orgs:
-        fail("JSP and Multimatrix canonical organisation nodes must be promoted to core registry",failures)
+        fail("JSP and Multimatrix canonical organisation nodes must remain in the canonical identity shards",failures)
     if "PD-SP-P-0166" not in people:
-        fail("José Sánchez Rodríguez canonical person node missing from core registry",failures)
+        fail("José Sánchez Rodríguez canonical person node missing from canonical identity shards",failures)
+
     aw=org_by_id.get("PD-SP-O-0001",{})
-    if "MONTERECCO SUN PARK LIMITED" not in aw.get("former_names",[]):
-        fail("AWESWELL former registered name must remain explicit without a duplicate legal-person node",failures)
+    if aw.get("name")!="AWESWELL LIMITED" or aw.get("company_number")!="07716847":
+        fail("AWESWELL canonical legal-person identity drift",failures)
     complete={r.get("canonical_id") for r in records(load(PATHS["complete"]))}
     court={r.get("id") for r in records(load(PATHS["court_file"]))}
     continuity={r.get("id") for r in records(load(PATHS["decision_continuity"]))}
