@@ -544,10 +544,10 @@
       "subject_type": "person",
       "canonical_name": "Juan Tomás Parrilla Suárez",
       "short_label": "JTP",
-      "path": "assets/actors/juan-tomas-parrilla-canonical-20260923.jpg",
-      "git_blob_sha": "36b292e8b28a9c3fe01ee06a0f669dc3ce566d0b",
-      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
-      "identity_basis": "User-supplied conference photograph selected and identified by the user as Juan Tomás Parrilla Suárez on 23 September 2026; canonical crop preserved from the approved working image. No facial-recognition inference performed.",
+      "path": "assets/actors/PD-SP-P-0041_JTP_APPROVED_CANONICAL_20260926.png",
+      "git_blob_sha": "d0df2a148c9dbe626b77a85570e9989e14baa14c",
+      "identity_status": "LOCKED_CANONICAL_USER_APPROVED_20260926",
+      "identity_basis": "User approved this exact JTP portrait for canonical publication on 26 September 2026. It is an AI-assisted derivative made from the user-supplied JTP source photograph and is not treated as independent documentary identification. No facial-recognition inference is used.",
       "approved_contexts": [
         "JTP payment / AC / CAM actor-context composite",
         "counsel-payment independence reader",
@@ -556,11 +556,12 @@
       "alt_en": "Juan Tomás Parrilla Suárez",
       "alt_es": "Juan Tomás Parrilla Suárez",
       "source_provenance": {
-        "stored_format": "jpg",
-        "sha256": "17f38a855da0e13f98c3eb9395455b96e9b3b844a6c16a5714346fe2ab4d1a62",
-        "dimensions": "1584x1056",
-        "user_mapping_date": "2026-09-23",
-        "drive_canonical_filename": "Juan_Tomas_Parrilla_canonical_20260923.jpg"
+        "stored_format": "png",
+        "sha256": "331c679a4d5fb44b4467712c90c2d29792a8d7fb49dc96e55bae186f5d9fb27f",
+        "dimensions": "1254x1254",
+        "user_mapping_date": "2026-09-26",
+        "drive_canonical_filename": "PD-SP-P-0041_JTP_APPROVED_CANONICAL_20260926.png",
+        "lineage": "Derivative of user-supplied JTP source; exact user-approved canonical publication asset."
       }
     },
     "composite.jtp-payment-actor-context-real-source-20260925": {
@@ -568,9 +569,9 @@
       "canonical_name": "JTP payment / AC / CAM real-source actor-context composite",
       "short_label": "JTP actor-context real-source composite",
       "path": "assets/jtp-payment-actor-composite-real-sources-20260925.png",
-      "git_blob_sha": "39245262dc24ea8fbe66b9f53a00afc9028591de",
-      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
-      "identity_basis": "Deterministic composition from five controlled project portrait sources under the user's 25 September 2026 publication authorisation. Four non-JTP portrait rectangles were replaced with exact canonical repository images; the approved JTP portrait and every pixel outside the authorised portrait boxes were preserved.",
+      "git_blob_sha": "aad88000885d606c1a83ea874fb2c864c483b7b3",
+      "identity_status": "LOCKED_COMPOSITE_JTP_SLOT_UPDATED_20260926",
+      "identity_basis": "Deterministic single-slot replacement: only the JTP portrait interior was changed to the user-approved canonical JTP asset; the four other individual portrait regions and all pixels outside the authorised JTP box were preserved.",
       "approved_contexts": [
         "JTP payment / AC / CAM actor-context composite",
         "counsel-payment independence reader",
@@ -587,7 +588,12 @@
         "provenance": "assets/data/jtp-payment-actor-composite-real-sources-20260925.json",
         "changed_pixels_outside_authorised_boxes": 0,
         "jtp_region_unchanged": true
-      }
+      },
+      "sha256": "0f266cce492b62b8e1d278abddbf41368bf7b60671f8e0f42b6c154953e3cc3d",
+      "changed_pixels_outside_authorised_boxes": 0,
+      "jtp_region_unchanged": false,
+      "jtp_region_replaced_with_approved_canonical": true,
+      "four_other_individual_regions_unchanged": true
     },
     "composite.five-private-actors-true-faces-20260925": {
       "subject_type": "document",
