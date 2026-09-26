@@ -46,3 +46,14 @@ Create a distinct incident for every material payment/proposed payment, fee reco
 - internal Google Drive control: *Former-Counsel Incident Register & Contact Control — 26 September 2026*
 
 No external email has been sent by this control.
+
+
+## Communications and ICALPA cross-link
+
+Outgoing communications are governed by `PD-FCCOM-20260926-01` / `governance/FORMER_COUNSEL_COMMUNICATION_PROTOCOL_26SEP2026.md`.
+
+The incident register is cross-linked to **ICALPA DIP 80/2026** as contextual evidence concerning the Administrador Concursal where an incident bears on professional independence, defence continuity, counsel access, payment/fee-control, pressure or information flow. This cross-link does not make a former lawyer a subject/respondent of DIP 80, does not imply ICALPA has accepted the allegation, and does not convert registration/opening into a merits finding.
+
+Former-counsel outreach must expressly state that it seeks factual clarification, preservation, reconciliation and correction/right of reply only and is not a request for legal advice, analysis, renewed representation, recommencement of work, retainer or mandate.
+
+For ALAS/current-platform routing, present public professional continuity may justify writing to Kepler-Karst. Do not assert corporate/juridical succession without proof. If the current platform says it is not the appropriate recipient, request the correct present firm/entity and professional email address for future factual communications.
