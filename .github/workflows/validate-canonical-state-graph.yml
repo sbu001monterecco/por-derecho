@@ -35,7 +35,8 @@ permissions:
 jobs:
   canonical-state-graph:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
       - name: Validate canonical state graph
         run: python3 scripts/validate_canonical_state_graph_truth_machine.py
