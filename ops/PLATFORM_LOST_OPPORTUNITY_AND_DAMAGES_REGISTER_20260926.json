@@ -15,7 +15,14 @@
       "Hava Vida Travel & Tourism, S.L.U."
     ],
     "uk_holdco": "AWESWELL LIMITED",
-    "platform": "Sun Rock"
+    "platform": "Sun Rock",
+    "foundation_and_guernsey_leg": [
+      "The Sun Rock Foundation (Guernsey no. 27)",
+      "Sun Rock Limited (Guernsey no. 59696)",
+      "Retirement Holiday Limited (Guernsey no. 59704)",
+      "499 Retirement Living Limited (registration number open)",
+      "Sun Rock Member Services Limited (registration number open)"
+    ]
   },
   "loss_families": [
     {
@@ -78,6 +85,40 @@
         "mitigation",
         "overlap with hotel-income/recovery claims"
       ]
+    },
+    {
+      "id": "LOSS-FOUNDATION-03",
+      "asset_or_opportunity": "Historical Sun Rock Foundation / Guernsey operating platform",
+      "evidence": [
+        "20 Jan 2015 Foundation structure chart",
+        "Company Structure for THB Feb2015",
+        "2016 Sun Rock Group corporate presentation/Q&A",
+        "2016 Sun Rock Media Q&A",
+        "2016 Solos/SunRock narrative and biographies",
+        "Sun Rock general ledger and Guernsey professional-administration records (further reconciliation required)"
+      ],
+      "present_position": "Contemporaneous records establish a real Guernsey Foundation/group layer with Gil and Patricia as founders/beneficiaries, Gil described as Controlling Beneficiary, the Foundation owning Sun Rock Limited in the 2016 corporate Q&A, and professional Guernsey administration. Later private narrative states Foundation/Sun Rock Limited needed reactivation and alleges destruction of the Guernsey group business following the Spanish events.",
+      "possible_heads": [
+        "Foundation-owned asset/value impairment",
+        "Sun Rock Limited lost operating/sales-and-marketing income",
+        "lost commercial/distribution contracts",
+        "brand/IP/goodwill loss if ownership proved",
+        "lost community/member-services platform value",
+        "lost expansion/acquisition opportunity",
+        "reputational damage where legally cognisable and provable"
+      ],
+      "claimant_control": "Foundation, Sun Rock Limited, AWESWELL, Spanish entities and Gil/Patricia are not interchangeable claimants. Assign each loss to the holder of the right at the date of loss.",
+      "proof_gaps": [
+        "Foundation Charter and Rules",
+        "current/historical Guernsey registry extracts",
+        "Foundation/Sun Rock Limited accounts and asset registers",
+        "share register",
+        "IP/brand ownership",
+        "contract-by-contract rights",
+        "causal bridge from Spanish acts to Guernsey loss",
+        "mitigation/reactivation history",
+        "valuation and reflective-loss analysis"
+      ]
     }
   ],
   "evidential_value_rule": "Preserve abandoned, expired, superseded and failed transaction documents. Their lack of current commercial value does not negate contemporaneous evidential value concerning intention, readiness, professionalisation, financing, commercial relationships, counterfactual alternatives or loss.",
@@ -85,5 +126,8 @@
     "User declarations are recorded as attributed positions unless independently corroborated.",
     "Signed documents prove their terms and transaction maturity, not automatic completion or recoverability.",
     "Later sale/liquidation can support irreversibility and mitigation analysis but does not by itself prove liability for the original loss."
+  ],
+  "cross_registers": [
+    "ops/SUN_ROCK_FOUNDATION_BENEFICIAL_PLATFORM_REGISTER_20260926.json"
   ]
 }
