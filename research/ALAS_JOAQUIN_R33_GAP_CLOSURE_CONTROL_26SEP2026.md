@@ -139,3 +139,17 @@ Prohibited overstatement:
 
 R33 linkage:
 Page 5 of the AC's 14-Sep-2026 RPL 3304/2025 opposition expressly generalises from successive lawyer changes, states it is reasonable to think professionals withdrew after finding lack of objective/legal consistency, quotes Joaquín's 21-Sep-2020 resignation/apology, and says repeated substitutions "presumiblemente" reflect unwillingness to continue sustaining Gil's account. This makes ALAS/Joaquín's independent explanation of their 2020 role, pressure, withdrawal, fees and any third-party economic contact directly material to a live 2026 adversarial filing.
+
+
+## Luis Barber contact / incident-register linkage — 26 September 2026
+
+- Canonical person: Luis A. Barber Marrero (PD-SP-P-0074).
+- Historic professional mailbox preserved from the matter record: `luis@barberasociados.com`.
+- Current professional mailbox independently verified from Kepler-Karst public professional pages: `lbarber@keplerkarst.com`.
+- Future-contact rule: when external contact is separately authorised, use both professional addresses; treat the Barber & Asociados address as historic and do not assume it remains active.
+- No email is authorised, drafted or sent by this control.
+- Canonical internal incident register: `assets/data/professional-interference-incident-register-v1.json`.
+- Human control: `research/PROFESSIONAL_INTERFERENCE_INCIDENT_REGISTER_26SEP2026.md`.
+- Luis-specific incident reference: `PD-PII-0010`.
+- Kepler-Karst is treated as present professional-platform continuity for Luis Barber / Davinia Sánchez / Armando Betancor, not automatically as ALAS Legal Advisors' juridical/corporate successor or owner of historic ALAS receivables/files.
+
