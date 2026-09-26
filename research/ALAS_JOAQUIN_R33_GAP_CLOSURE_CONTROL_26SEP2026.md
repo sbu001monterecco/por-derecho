@@ -163,3 +163,18 @@ Page 5 of the AC's 14-Sep-2026 RPL 3304/2025 opposition expressly generalises fr
 - Human control: `governance/FORMER_COUNSEL_INCIDENT_REGISTER_26SEP2026.md`.
 - Luis-specific incident: `PD-CIR-LUISBARBER-2019-01`.
 - Kepler-Karst is treated as verified present professional-platform continuity for relevant former ALAS-team professionals, not as proven juridical/corporate successor to ALAS Legal Advisors or owner/custodian of historic ALAS receivables, liabilities or files.
+
+
+## Recursive Run-2 preservation reconciliation — 26 September 2026 15:37 WEST
+
+Control: PD-SP-COUNSEL-WORK-ALAS-JRI-001. Continuity-authoritative for the next recursion.
+- Onboarding chronology: 11-Dec addressee query; AWESWELL LIMITED identified 14-Dec; proposal sent 21-Dec; resent 16-Jan; client acknowledgement 17-Jan. Explicit conflict/KYC/PBC/AML result/waiver not located: NEGATIVE SEARCH RESULT ONLY.
+- PD-AJ-WP-003 final located: contemporaneous 21-Jan chain attributes joint preparation to Juan Tomás Parrilla + Rosa Gual; Armando subsequently reviewed. PD-AJ-INV6-026/027 remain OPEN ATTRIBUTION RECONCILIATION; no false-billing inference. Preserve literal 19-Dec-2018 closing date anomaly.
+- PD-AJ-WP-001: Joaquín revision/circulation after Cristo review; Cristo reviewed/signed return.
+- PD-AJ-WP-005: signed 6-Feb source located; Joaquín/Carmen Dolores Padilla/Cristo signatories; next-day filing plan verified; definitive receipt OPEN.
+- PD-AJ-WP-011: 3-Mar reposición preparation verified; original/final/signatory/procurator/receipt OPEN.
+- PD-AJ-WP-013: Acta de Manifestaciones Gil — ratification draft; draft/intended notarisation/procedural use VERIFIED; execution/notarisation/filing OPEN.
+- No formal post-21-Sep-2020 venia/handover located and no separate client-facing Joaquín retainer/invoice/minuta/provision/payment located: negative search results only. Internal collaborator economics OPEN.
+- Preserve contrary evidence/multi-cause analysis; no exclusive withdrawal cause established. Shared proceedings/professional proximity do not establish collusion.
+
+Residual queue: ALAS Jan-2019 version + INV6-026/027 reconciliation; exact receipt; original/final 3-Mar-2020 reposición; executed/notarised Acta or abandonment evidence; February Fiscalía receipt; venia/handover; current ALAS registry/current creditor status; internal collaborator economics; remaining full invoice/work-product chains; then Garrigues/Cuatrecasas replication under PD-SP-COUNSEL-WORK-REPLICATION-001.
