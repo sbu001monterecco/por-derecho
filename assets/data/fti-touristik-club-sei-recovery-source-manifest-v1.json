@@ -3,7 +3,11 @@
   "control_id": "PD-FTI-DEFICIT-CLUB-SEI-SOURCES-20260827-01",
   "control_date": "2026-08-27",
   "state": "LIVE_VERIFIED",
-  "retrieval_languages": ["de", "es", "en"],
+  "retrieval_languages": [
+    "de",
+    "es",
+    "en"
+  ],
   "sources": [
     {
       "id": "SRC-FTI-PORTAL-20260415",
@@ -147,6 +151,17 @@
       "status": "VERIFIED_ATTRIBUTED_BUYER_ACKNOWLEDGMENT",
       "supports": "Buyer-side statement that the Labranda/Meeting Point Hotels transaction had recently closed and included 15 Canary properties.",
       "ceiling": "Does not supply signed closing date, consideration, liabilities or exact assets/contracts."
+    },
+    {
+      "id": "SRC-TRAVELNEWS-20190131",
+      "date": "2019-01-31",
+      "language": "de",
+      "publisher": "Travelnews Switzerland",
+      "url": "https://www.travelnews.ch/reiseanbieter/11326-eine-neue-hotelmarke-fuer-fti-club-sei.html",
+      "class": "CONTEMPORANEOUS_TRADE_REPORT",
+      "status": "ANNOUNCEMENT_AND_ATTRIBUTED_EXECUTIVE_STATEMENT",
+      "supports": "Reports Meeting Point Hotels/MP Hotels as an FTI subsidiary presenting Club Sei; attributes launch statements to Roula Jouny as MP Hotels CEO and FTI Group Chief Content Officer, and describes collaboration with Dr Cem Kinay on the concept; names Club Sei Lanzarote among planned 2019/20 resorts.",
+      "ceiling": "Does not identify Sun Park, establish Joan Cruz participation, a Club Sei Lanzarote contract, loaded inventory, completed booking, payment, revenue or actual opening."
     },
     {
       "id": "SRC-TRAVELWEEKLY-20190201",

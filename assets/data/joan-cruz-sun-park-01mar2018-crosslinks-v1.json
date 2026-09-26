@@ -7,19 +7,143 @@
     "document": "PD-SP-DOC-0005",
     "event": "PD-SP-EVT-0001",
     "takeover_es": "/es/toma-control-sun-park-7-junio-2018/",
-    "takeover_en": "/en/sun-park-takeover-7-june-2018/"
+    "takeover_en": "/en/sun-park-takeover-7-june-2018/",
+    "hki_project_capture": "PD-SP-WEB-HKI-20191125-001-A",
+    "hki_team_capture": "PD-SP-WEB-HKI-20191125-001-B",
+    "club_sei_launch_source": "SRC-TRAVELNEWS-20190131",
+    "club_sei_wholesale_source": "SRC-TRAVELWEEKLY-20190201",
+    "meeting_point_commercial_perimeter": "PD-SP-O-0038",
+    "club_sei_brand_holder": "PD-SP-O-0076",
+    "joan_profile_es": "/es/joan-cruz-nuez/",
+    "joan_profile_en": "/en/joan-cruz-nuez/",
+    "club_sei_es": "/es/lava-verde-club-sei-meeting-point/#meeting-point",
+    "club_sei_en": "/en/lava-verde-club-sei-meeting-point/#meeting-point",
+    "fti_es": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+    "fti_en": "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
+    "sun_park_hotel_site": "PD-SP-O-0042"
   },
   "edges": [
-    {"from":"PD-SP-P-0145","to":"PD-SP-EVT-0001","relation":"NAMED_IN_SOURCE_FILENAME_FOR"},
-    {"from":"PD-SP-EVT-0001","to":"PD-SP-P-0145","relation":"SOURCE_FILENAME_NAMES_PERSON"},
-    {"from":"PD-SP-SRC-0001","to":"PD-SP-DOC-0005","relation":"CUSTODIAL_SOURCE_CONTAINS"},
-    {"from":"PD-SP-DOC-0005","to":"PD-SP-SRC-0001","relation":"PRESERVED_BY"},
-    {"from":"PD-SP-DOC-0005","to":"PD-SP-EVT-0001","relation":"DOCUMENTS_EVENT_DATE_BY_FILENAME_AND_CAPTION"},
-    {"from":"PD-SP-EVT-0001","to":"PD-SP-DOC-0005","relation":"HAS_CANONICAL_DOCUMENT"},
-    {"from":"PD-SP-EVT-0001","to":"/es/toma-control-sun-park-7-junio-2018/","relation":"PRECEDES_BY_98_DAYS"},
-    {"from":"/es/toma-control-sun-park-7-junio-2018/","to":"PD-SP-EVT-0001","relation":"HAS_PRIOR_OPERATIONAL_CHRONOLOGY_NODE"},
-    {"from":"PD-SP-EVT-0001","to":"/en/sun-park-takeover-7-june-2018/","relation":"PRECEDES_BY_98_DAYS"},
-    {"from":"/en/sun-park-takeover-7-june-2018/","to":"PD-SP-EVT-0001","relation":"HAS_PRIOR_OPERATIONAL_CHRONOLOGY_NODE"}
+    {
+      "from": "PD-SP-P-0145",
+      "to": "PD-SP-EVT-0001",
+      "relation": "NAMED_IN_SOURCE_FILENAME_FOR"
+    },
+    {
+      "from": "PD-SP-EVT-0001",
+      "to": "PD-SP-P-0145",
+      "relation": "SOURCE_FILENAME_NAMES_PERSON"
+    },
+    {
+      "from": "PD-SP-SRC-0001",
+      "to": "PD-SP-DOC-0005",
+      "relation": "CUSTODIAL_SOURCE_CONTAINS"
+    },
+    {
+      "from": "PD-SP-DOC-0005",
+      "to": "PD-SP-SRC-0001",
+      "relation": "PRESERVED_BY"
+    },
+    {
+      "from": "PD-SP-DOC-0005",
+      "to": "PD-SP-EVT-0001",
+      "relation": "DOCUMENTS_EVENT_DATE_BY_FILENAME_AND_CAPTION"
+    },
+    {
+      "from": "PD-SP-EVT-0001",
+      "to": "PD-SP-DOC-0005",
+      "relation": "HAS_CANONICAL_DOCUMENT"
+    },
+    {
+      "from": "PD-SP-EVT-0001",
+      "to": "/es/toma-control-sun-park-7-junio-2018/",
+      "relation": "PRECEDES_BY_98_DAYS"
+    },
+    {
+      "from": "/es/toma-control-sun-park-7-junio-2018/",
+      "to": "PD-SP-EVT-0001",
+      "relation": "HAS_PRIOR_OPERATIONAL_CHRONOLOGY_NODE"
+    },
+    {
+      "from": "PD-SP-EVT-0001",
+      "to": "/en/sun-park-takeover-7-june-2018/",
+      "relation": "PRECEDES_BY_98_DAYS"
+    },
+    {
+      "from": "/en/sun-park-takeover-7-june-2018/",
+      "to": "PD-SP-EVT-0001",
+      "relation": "HAS_PRIOR_OPERATIONAL_CHRONOLOGY_NODE"
+    },
+    {
+      "from": "PD-SP-P-0145",
+      "to": "PD-SP-WEB-HKI-20191125-001-B",
+      "relation": "NAMED_AS_HKI_TEAM_MEMBER_IN_CAPTURED_PAGE_STATE"
+    },
+    {
+      "from": "PD-SP-WEB-HKI-20191125-001-B",
+      "to": "PD-SP-P-0145",
+      "relation": "CAPTURED_TEAM_PAGE_NAMES_JOAN_CRUZ_AND_DISPLAYS_PROFILE_PORTRAIT"
+    },
+    {
+      "from": "PD-SP-P-0145",
+      "to": "PD-SP-O-0038",
+      "relation": "EARLIER_DOCUMENTED_MEETING_POINT_CORPORATE_CHRONOLOGY"
+    },
+    {
+      "from": "SRC-TRAVELNEWS-20190131",
+      "to": "PD-SP-O-0038",
+      "relation": "CONTEMPORANEOUS_REPORT_OF_CLUB_SEI_LAUNCH_IN_MP_HOTELS_FTI_CONTEXT"
+    },
+    {
+      "from": "PD-SP-P-0145",
+      "to": "/es/joan-cruz-nuez/",
+      "relation": "CANONICAL_PERSON_PROFILE"
+    },
+    {
+      "from": "/es/joan-cruz-nuez/",
+      "to": "/es/lava-verde-club-sei-meeting-point/#meeting-point",
+      "relation": "LINKS_TO_SEPARATE_CLUB_SEI_DOSSIER_WITH_DIRECT_ROLE_GAP"
+    },
+    {
+      "from": "/es/lava-verde-club-sei-meeting-point/#meeting-point",
+      "to": "/es/joan-cruz-nuez/",
+      "relation": "RECIPROCAL_LINK_TO_PERSON_PROFILE_WITH_DIRECT_ROLE_GAP"
+    },
+    {
+      "from": "/es/joan-cruz-nuez/",
+      "to": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+      "relation": "LINKS_TO_DISTINCT_FTI_MEETING_POINT_INSOLVENCY_PERIMETERS"
+    },
+    {
+      "from": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+      "to": "/es/joan-cruz-nuez/",
+      "relation": "RECIPROCAL_LINK_TO_PERSON_PROFILE_WITH_CAPACITY_BOUNDARY"
+    },
+    {
+      "from": "/en/joan-cruz-nuez/",
+      "to": "/en/lava-verde-club-sei-meeting-point/#meeting-point",
+      "relation": "LINKS_TO_SEPARATE_CLUB_SEI_DOSSIER_WITH_DIRECT_ROLE_GAP"
+    },
+    {
+      "from": "/en/lava-verde-club-sei-meeting-point/#meeting-point",
+      "to": "/en/joan-cruz-nuez/",
+      "relation": "RECIPROCAL_LINK_TO_PERSON_PROFILE_WITH_DIRECT_ROLE_GAP"
+    },
+    {
+      "from": "/en/joan-cruz-nuez/",
+      "to": "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
+      "relation": "LINKS_TO_DISTINCT_FTI_MEETING_POINT_INSOLVENCY_PERIMETERS"
+    },
+    {
+      "from": "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
+      "to": "/en/joan-cruz-nuez/",
+      "relation": "RECIPROCAL_LINK_TO_PERSON_PROFILE_WITH_CAPACITY_BOUNDARY"
+    },
+    {
+      "from": "PD-SP-WEB-HKI-20191125-001-A",
+      "to": "PD-SP-O-0042",
+      "relation": "CAPTURED_HKI_PROJECT_LISTING_FOR_SUN_PARK_SITE; NOT_TITLE_OR_CONTRACT_PROOF"
+    }
   ],
-  "boundary": "These graph edges express traceability only. They do not transfer allegations or legal responsibility between nodes."
+  "boundary": "These graph edges express traceability only. They do not transfer allegations or legal responsibility between nodes.",
+  "last_interlink_update": "2026-09-26"
 }

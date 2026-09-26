@@ -564,6 +564,30 @@
         "lineage": "Derivative of user-supplied JTP source; exact user-approved canonical publication asset."
       }
     },
+    "person.joan-cruz-nuez.user-approved-20260926": {
+      "subject_type": "person",
+      "canonical_name": "Joan Cruz Nuez",
+      "caepr_id": "PD-SP-P-0145",
+      "short_label": "Joan Cruz Nuez^",
+      "path": "assets/actors/joan-cruz-nuez-user-approved-20260926.jpg",
+      "git_blob_sha": "0de4b4c1080281938726725ee23241964ef1c078",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "On 26 September 2026 the user expressly designated this exact uploaded portrait as their approved image of Joan Cruz. This is a user-approved display mapping linked to CARET_CONFIRMED person record PD-SP-P-0145; it does not independently authenticate the depicted person's identity. No facial-recognition inference performed.",
+      "approved_contexts": [
+        "neutral Joan Cruz person-profile display"
+      ],
+      "alt_en": "User-approved display portrait for Joan Cruz Nuez",
+      "alt_es": "Retrato de visualización aprobado por el usuario para Joan Cruz Nuez",
+      "source_provenance": {
+        "user_supplied_original_filename": "17904528406528304744092234674124.jpg",
+        "format": "jpg",
+        "sha256": "13fbe08498d5026e74d6442a4baed27312d7d5168d0a9bba7e3de06c0059aa4d",
+        "dimensions": "1536x864",
+        "user_approval_date": "2026-09-26"
+      },
+      "storage_mode": "repository-byte-locked",
+      "publication_boundary": "Approved display portrait only. This image does not authenticate identity in any Sun Park evidence photograph and establishes no event presence, conduct, authority, coordination, knowledge, wrongdoing, causation or liability."
+    },
     "composite.jtp-payment-actor-context-real-source-20260925": {
       "subject_type": "document",
       "canonical_name": "JTP payment / AC / CAM real-source actor-context composite",
