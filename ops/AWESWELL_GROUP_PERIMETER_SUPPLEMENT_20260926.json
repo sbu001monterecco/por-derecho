@@ -10,20 +10,43 @@
       "Matkator, S.L.U.",
       "Pink Canary Services, S.L.U.",
       "Hava Vida Travel & Tourism, S.L.U."
-    ]
+    ],
+    "direct_legal_ownership": {
+      "Luchy Playa Blanca, S.L.U.": "Direct wholly-owned Spanish subsidiary of AWESWELL LIMITED / its former name Monterecco Sun Park Limited, subject to date-specific corporate records.",
+      "Matkator, S.L.U.": "Direct wholly-owned Spanish subsidiary within the AWESWELL LIMITED / Sun Rock perimeter, subject to date-specific corporate records."
+    },
+    "beneficial_economic_perimeter": {
+      "Pink Canary Services, S.L.U.": "Registered shares held by Patricia Isabel Domínguez Montelongo; Gil Marer states they were held for the benefit of AWESWELL LIMITED / Sun Rock. Treat this as the controlling owner declaration pending instrument-specific legal analysis.",
+      "Hava Vida Travel & Tourism, S.L.U.": "Registered shares held by Patricia Isabel Domínguez Montelongo; Gil Marer states they were held for the benefit of AWESWELL LIMITED / Sun Rock. Treat this as the controlling owner declaration pending instrument-specific legal analysis."
+    }
   },
   "relationship_controls": [
-    "LPB and Matkator are recorded in AWESWELL board/accounting material as directly controlled wholly-owned Spanish subsidiaries.",
-    "Pink and Hava Vida were incorporated with Patricia Isabel Domínguez Montelongo as sole shareholder.",
-    "Gil Marer states that Patricia held the Pink and Hava Vida shares for the benefit of AWESWELL LIMITED / Sun Rock; the legal effect of that beneficial-interest position remains a separate proof question.",
-    "Legal personality, registered ownership, beneficial/economic interest and platform membership must remain separate fields."
+    "LPB and Matkator are within the AWESWELL LIMITED / Sun Rock perimeter and are recorded in the repository as directly controlled wholly-owned Spanish subsidiaries, subject to the date-specific company/share records.",
+    "Pink Canary Services and Hava Vida are legally separate Spanish companies within the same AWESWELL LIMITED / Sun Rock business and economic perimeter.",
+    "Patricia Isabel Domínguez Montelongo was the registered shareholder of Pink and Hava Vida; Gil Marer states that those shares were held for the benefit of AWESWELL LIMITED / Sun Rock. Preserve that as a declared beneficial/economic ownership position unless and until the governing instruments and applicable law establish its precise legal effect.",
+    "Legal personality, registered ownership, beneficial/economic interest, accounting consolidation and platform membership remain distinct fields.",
+    "Do not describe the AWESWELL / Sun Rock perimeter as an insolvency estate; only LPB was the debtor in Concurso 36/2012."
   ],
   "solos": {
-    "target": "Solo's Holidays 2002 Limited (04511481)",
-    "transaction": "Proposed acquisition of 100% of the target and subsidiaries, linked to signed commercial distribution agreements.",
-    "payment_mechanism": "Signed exclusivity terms provided for Net Payments from the commercial agreements to accumulate in escrow and, on completion, to be set off against the purchase price.",
-    "outcome": "Sun Rock did not complete the acquisition. Gil attributes the failure to the Spanish events affecting the wider Sun Rock matter.",
-    "later_history": "The Solos business was acquired by a third party in April 2019; the old target later became Arnloft 2002 Limited, entered members' voluntary liquidation and was dissolved in 2023.",
-    "damages_use": "Preserve transaction documents, professional work and payment architecture as contemporaneous evidence and potential damages material, subject to causation, valuation and double-counting controls."
+    "target": "Solo's Holidays 2002 Limited (04511481), later Arnloft 2002 Limited",
+    "operating_distribution_entities": [
+      "Solo's Holidays Limited (00964895)",
+      "The Fabulous Experience Company Limited (07117742)"
+    ],
+    "transaction": "Proposed acquisition of 100% of the Solo's parent/business perimeter, integrated with signed UK sales/distribution arrangements for Sun Park.",
+    "signed_documentation": [
+      "Exclusivity / acquisition arrangements",
+      "Hamlins-drafted share purchase agreement",
+      "17 January 2017 Sales and Distribution Agreement",
+      "Novation / annex / lender-facing amendments",
+      "Investment memorandum and funding model"
+    ],
+    "payment_mechanism": "The signed exclusivity/commercial structure provided for Net Payments generated under the commercial arrangements to accumulate toward the acquisition price, including escrow/set-off mechanics. Transaction-level amounts remain to be reconciled from bank, escrow, booking and ledger evidence.",
+    "performance_position": "Gil Marer states that the group made incremental payments/performance toward the acquisition price while the acquisition remained uncompleted.",
+    "failure_and_causation": "Gil Marer states that events in Spain materially caused the Sun Rock side to breach or become unable to complete the acquisition and that the acquisition was consequently lost. This is a causation and damages position requiring condition-by-condition proof; it is not yet an adjudicated finding.",
+    "later_history": "The current controlled record states that the Solo's business/assets were later acquired by a third party in April 2019. Companies House later records company no. 04511481 as Arnloft 2002 Limited and dissolved. Exact transaction, members' voluntary liquidation and dissolution dates remain to be pinned to primary filings.",
+    "evidential_use": "The abandoned acquisition file, professional work, signed commercial agreements, payments, escrow architecture, diligence, funding work and operating integration are contemporaneous evidence of the scale, maturity and direction of the Sun Rock platform before the Spanish disruption.",
+    "damages_use": "Potential heads of loss include sunk professional/transaction costs, acquisition payments or credited Net Payments, loss of contractual/exclusivity rights, loss of acquired-business opportunity, lost distribution margin/capability, lost platform growth and consequential enterprise-value effects. Each head requires legal entitlement, causation, remoteness, mitigation, valuation and double-counting controls.",
+    "no_double_count_rule": "Do not count the same booking receipt, acquisition payment, lost margin, goodwill, enterprise value or hotel-income loss twice across LPB, Pink, Hava Vida, AWESWELL LIMITED or personal claimant positions."
   }
 }
