@@ -69,3 +69,14 @@ This control is additive and source-first. It does not authorise external contac
 Where an interaction envelope concerns an act, omission, payment, access decision, professional-exposure event or other conduct attributed to the Administrador Concursal, bind the professional envelope to **PD-AC-CLAIMS-R33-20260922-01** and the most specific `AC-CLM-*` family in `assets/data/ac-claims-r33-crosswalk-v1.json`. Professional analysis and AC-claim analysis are complementary, not substitutes: the former asks what happened to the professional mandate; the latter asks what exact AC act/omission, duty, knowledge, effect, counterevidence and open proof are alleged.
 
 The professional-isolation theory is specifically `AC-CLM-011`. Do not use that family as a catch-all for unrelated AC allegations.
+
+
+## Canonical counsel-incident binding — 26 September 2026
+
+The Truth Machine now binds every material counsel-continuity event to `PD-SP-COUNSEL-INCIDENT-REGISTRY-001` and a distinct immutable `PD-CIR-*` incident reference. A professional × client × matter envelope can contain multiple incidents; firm-level and person-level incidents may coexist. Do not merge incidents solely because the same professional, law firm, AC, adverse actor, court or proceeding recurs.
+
+Create or update a `PD-CIR-*` record whenever the source set shows a material payment/proposed payment, fee recognition/assignment, mandate displacement, Bar/disciplinary route, personal professional exposure linked to a pleading, AC/adverse-party contact, filing condition/refusal, handover/file-access or confidentiality event, or a withdrawal for which interference is alleged. Every incident must preserve contrary evidence, lawful alternatives and negative searches.
+
+Current seed register: `assets/data/former-counsel-incident-register-v1.json`. Human control: `governance/FORMER_COUNSEL_INCIDENT_REGISTER_26SEP2026.md`.
+
+Luis A. Barber Marrero is now bound to `PD-CIR-LUISBARBER-2019-01`: the source set verifies substantive ALAS collaboration and ALAS client billing involving Barber, while internal collaborator economics and any later file/receivable transfer remain open. Current professional-platform continuity is not juridical succession. No external contact is authorised by this binding.
