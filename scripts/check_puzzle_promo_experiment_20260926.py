@@ -61,6 +61,7 @@ def inspect(page, width: int, height: int, lang: str):
         assert box["width"] <= 202, box
     if height <= 500:
         assert box["width"] <= 120, box
+        assert box["height"] <= 130, box
     return {"box": box, "close": close, "href": href}
 
 
