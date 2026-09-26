@@ -47,3 +47,26 @@ The ALAS invoices may be used with Joaquín as **work-product/economic-envelope 
 For outreach, provide a redacted/public-safe invoice schedule preserving: creditor, invoice reference/date, debtor, matter, total, billed task/date/time and linked work-product reference. Redact or omit bank details, home addresses, tax/NIE/passport identifiers and unnecessary private contact data. Preserve amounts and professional-work descriptions because they are directly relevant to reconciliation.
 
 Ask Joaquín to confirm whether: (1) ALAS billed the client for work including his participation; (2) he had any separate retainer or fee arrangement; (3) ALAS or another person paid/owed him internally; (4) any third party ever paid, promised, assumed, settled, credited or otherwise satisfied any fee/expense connected with his work.
+
+
+## Source lock — 4 January 2019 / 25 May 2020 / 1 June 2020
+
+### 4 January 2019 — recovered unfiled AC-directed pleading
+- Exact source title: `8. Demanda administración desleal GM vs AC 248-2018 (NO PRESENTADA) 4ENE2019.pdf`.
+- Drive custody ID: `122UaazgSIcNpUCjHZRZlqJYmQtqvxlxW`.
+- State: **DRAFT / UNFILED AT THAT STAGE**.
+- Object line: “DENUNCIA ACTUACIÓN DESLEAL Y POSIBLE FRAUDE PROCESAL DEL ADMINISTRADOR CONCURSAL”.
+- Draft signature route: Juan Tomás Parrilla Suárez (letrado) + Pilar García Coello (procuradora).
+- First otrosí requests transmission to Ministerio Fiscal concerning possible offences identified in the draft.
+- Second otrosí expressly reserves the actions of responsibility and separation under arts. 36 and 37 LC.
+- It is therefore an AC-directed precursor inside the unitary removal/separation workstream; it must **not** be renamed as a standalone “demanda de separación”.
+- Public-safe textual viewer: `evidence/former-counsel/alas-joaquin/2019-01-04-ac-directed-unfiled-public-safe.html`.
+
+### 1 June 2020 — provenance / contemplated filing route
+A contemporaneous SBU email to Daniel Jiménez (subject: “administración desleal del ac”) transmitted the same 243,382-byte PDF and stated that Armando had made it for Juan Tomás to present, but that it remained unfiled because Juan Tomás declined to present it or his own version. This is client-side contemporaneous provenance evidence. It does not by itself adjudicate authorship, authority, professional duty, causation or responsibility for non-filing.
+
+### 25 May 2020 — active removal workstream
+Daniel Jiménez wrote that it would be useful to accompany the **“escrito de remoción del cargo”** with an opinion from a professor of Commercial Law and that this would add value to the **“petición de remoción del Administrador concursal”**. This positively establishes a developed May-2020 removal workstream. The absence, so far, of a separately labelled standalone May-2020 file must not be used to imply absence of the work product or objective.
+
+### Non-exculpation-by-diffusion
+Shared responsibility must be analysed cumulatively and individually. The involvement or omission of one lawyer does not automatically excuse another lawyer's independently established responsibility, but responsibility must still be proved role-by-role. For each professional record knowledge, mandate, drafting, review, advice, filing authority, practical opportunity, communications, decision, actual filing/non-filing, explanation, contrary evidence and causation.
