@@ -1,0 +1,92 @@
+{
+  "schema": "por-derecho.community-pink-cam-bridge.v1",
+  "control_id": "PD-COMMUNITY-PINK-CAM-BRIDGE-20260926-01",
+  "status": "PUBLIC_SAFE_INTAKE_SOURCE_LOCK_QUEUE",
+  "parent_controls": [
+    "PD-COMMUNITY-DEBT-ROLE-REVERSAL-20260925-01",
+    "PD-COMMUNITY-COURT-COMPLETENESS-20260925-01"
+  ],
+  "attribution_rule": "Do not use 'the Community did X' where the evidence permits attribution to the legal body, organ, officeholder, natural person, represented owner/entity, proxy, administrator, lawyer or signatory.",
+  "nodes": [
+    {
+      "node": "2015_PINK_JUDGMENT",
+      "state": "WITNESS_INTAKE_SOURCE_LOCK_REQUIRED",
+      "claim": "Approx EUR1.5m judgment said to concern LPB/Luchy Community quotas",
+      "required": [
+        "native_judgment",
+        "proceeding_number",
+        "parties",
+        "exact_amount",
+        "legal_basis",
+        "finality",
+        "enforcement_record",
+        "debt_certificates",
+        "calculation"
+      ]
+    },
+    {
+      "node": "2016_QUOTA_ACCOUNTING_RESET",
+      "state": "DOCUMENTARY_CORE_PRESENT",
+      "facts": [
+        "2010_2015_accounts_incomplete_or_unapproved_as_recorded",
+        "quota_about_171_89_or_171_81_to_22_26",
+        "retroactive_recalculation",
+        "arrears_recorded_as_falling"
+      ],
+      "boundary": "Does not automatically invalidate every debt or judgment."
+    },
+    {
+      "node": "2016_PWC_FMMM_RECONSTRUCTION",
+      "state": "CORPUS_PRESENT",
+      "test": "what_was_paid_who_paid_and_on_whose_account",
+      "boundary": "Quota/certificate is not proof that the Owners' Community incurred the underlying operating expenditure."
+    },
+    {
+      "node": "2018_CAM_ACQUISITION_OFFER",
+      "state": "WITNESS_INTAKE_SOURCE_LOCK_REQUIRED",
+      "claim": "CAM allegedly undertook to assume/satisfy ordinary and/or extraordinary LPB Community liabilities",
+      "required": [
+        "original_offer",
+        "annexes",
+        "approval_order",
+        "exact_clause",
+        "debt_schedule",
+        "AC_verification",
+        "closing_documents"
+      ]
+    },
+    {
+      "node": "PERFORMANCE_AND_NON_ENFORCEMENT",
+      "state": "OPEN_RECONCILIATION",
+      "required": [
+        "amount_due",
+        "amount_paid",
+        "payment_date",
+        "payee",
+        "bank_proof",
+        "accounting_entry",
+        "balance",
+        "later_claim",
+        "Pink_enforcement_history"
+      ]
+    }
+  ],
+  "truth_inversion_test": [
+    "real_operating_cost",
+    "contracting_party",
+    "actual_payer",
+    "community_budget_or_quota",
+    "certificate",
+    "LPB_or_Pink_liability_representation",
+    "judicial_or_procedural_use",
+    "later_recalculation",
+    "CAM_assumption",
+    "actual_performance",
+    "enforcement_or_non_enforcement",
+    "asset_or_control_consequence",
+    "beneficiary",
+    "lawful_alternative"
+  ],
+  "criminal_guardrail": "Collusion, fraud, procedural fraud, insolvency crime or other criminal liability requires actor-specific element-by-element proof; no inference from relationship, office, adverse decision, later benefit or parallel conduct alone.",
+  "source_queue_priority": "P0"
+}
