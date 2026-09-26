@@ -533,5 +533,169 @@
       "reason": "later reconstruction, forensic/criminal review and recovery"
     }
   ],
-  "global_rule": "Do not claim that a professional work product supports the client's current allegation merely because it exists. Identify the proposition actually supported, the contrary evidence and the business/recovery relevance."
+  "global_rule": "Do not claim that a professional work product supports the client's current allegation merely because it exists. Identify the proposition actually supported, the contrary evidence and the business/recovery relevance.",
+  "seed_crosswalk_status": "SOURCE_CONTROLLED_STARTING_MAP_NOT_EXHAUSTIVE",
+  "firm_seed_crosswalk": [
+    {
+      "firm": "Garrigues",
+      "status": "SEED_VERIFIED_DEEP_RECONCILIATION_REQUIRED",
+      "documented_work": [
+        "pre-Concurso restructuring and insolvency preparation",
+        "Bankia enforcement / scheduled-auction strategy in May 2012",
+        "financing/security work through early June 2012"
+      ],
+      "chronology_lanes": [
+        "LANE-RESCUE",
+        "LANE-C36"
+      ],
+      "limits": [
+        "current repository does not tie the Garrigues transition to AC causation",
+        "earlier 2011 predecessor question remains open"
+      ]
+    },
+    {
+      "firm": "Cuatrecasas",
+      "status": "SEED_VERIFIED_DEEP_RECONCILIATION_REQUIRED",
+      "documented_work": [
+        "2018 and Jan-Mar 2019 advice billed to AWESWELL on liquidation plan and IA requests",
+        "Acosta Matos / Community claim analysis",
+        "ONA contract, diligence, financing, security and exit-from-concurso work",
+        "2019 lender legal-comfort work and AWESWELL appearance/opposition filings",
+        "favourable results including rejection of IA request to exclude AWESWELL"
+      ],
+      "chronology_lanes": [
+        "LANE-C36",
+        "LANE-FUNDED-EXIT",
+        "LANE-7JUN",
+        "LANE-AC-CAM",
+        "LANE-HANDOVER"
+      ],
+      "limits": [
+        "broad mandate and favourable work preserved",
+        "entity/authority limits and unpaid-fee withdrawal evidence must remain visible"
+      ]
+    },
+    {
+      "firm": "ALAS Legal Advisors / Joaquín Ruiz de Infante",
+      "status": "ACTIVE_DETAILED_REGISTER",
+      "documented_work": [
+        "see PD-SP-COUNSEL-WORK-ALAS-JRI-001"
+      ],
+      "chronology_lanes": [
+        "LANE-C36",
+        "LANE-FUNDED-EXIT",
+        "LANE-AC-CAM",
+        "LANE-CAL",
+        "LANE-HANDOVER",
+        "LANE-REMOVAL"
+      ],
+      "limits": [
+        "no ALAS/Joaquín authorship of the separate 2023 calificación appeal established"
+      ]
+    },
+    {
+      "firm": "Juan Tomás Parrilla practice",
+      "status": "SEED_VERIFIED_DEEP_RECONCILIATION_REQUIRED",
+      "documented_work": [
+        "long-running LPB Concurso 36/2012 representation",
+        "protective filings and liquidation challenges",
+        "2018 access/Community-document requests",
+        "2020 counsel transition and fee/payment sequence"
+      ],
+      "chronology_lanes": [
+        "LANE-C36",
+        "LANE-7JUN",
+        "LANE-AC-CAM",
+        "LANE-HANDOVER"
+      ],
+      "limits": [
+        "protective work and client-initiated substitution preserved",
+        "payment does not prove bribery or AC-caused exit"
+      ]
+    },
+    {
+      "firm": "Cristo Ayose Suárez Pimentel",
+      "status": "SEED_VERIFIED_DEEP_RECONCILIATION_REQUIRED",
+      "documented_work": [
+        "Community, criminal and Concurso-related work",
+        "2018 LPB mandate affected by AC termination/venia/abstention demand",
+        "continued wider project work after that event"
+      ],
+      "chronology_lanes": [
+        "LANE-C36",
+        "LANE-7JUN",
+        "LANE-AC-CAM",
+        "LANE-HANDOVER"
+      ],
+      "limits": [
+        "one interrupted LPB mandate is not total project withdrawal"
+      ]
+    },
+    {
+      "firm": "Daniel Irigoyen / DPM",
+      "status": "SEED_VERIFIED_ROLE_REVIEW_REQUIRED",
+      "documented_work": [
+        "funded-exit strategy and transaction support",
+        "meetings/communications involving judge and AC",
+        "Article 176 / financing context"
+      ],
+      "chronology_lanes": [
+        "LANE-FUNDED-EXIT",
+        "LANE-7JUN",
+        "LANE-AC-CAM"
+      ],
+      "limits": [
+        "precise retained client and mandate remain under verification"
+      ]
+    },
+    {
+      "firm": "SLJ / Daniel Jiménez / Almudena Santafé",
+      "status": "SEED_VERIFIED_DEEP_RECONCILIATION_REQUIRED",
+      "documented_work": [
+        "2020 successor-counsel review and handover",
+        "AC-removal and possible AC/CAM claims workstream",
+        "incoming-counsel contact and fee/venia record"
+      ],
+      "chronology_lanes": [
+        "LANE-AC-CAM",
+        "LANE-HANDOVER",
+        "LANE-REMOVAL"
+      ],
+      "limits": [
+        "later resignation has independent stated strategy/client-direction/non-payment reasons"
+      ]
+    },
+    {
+      "firm": "López Castelo / Luis Miguel López",
+      "status": "SEED_VERIFIED_DEEP_RECONCILIATION_REQUIRED",
+      "documented_work": [
+        "post-Parrilla LPB representation",
+        "nullity, classification, appeals and amparo work",
+        "later withdrawal/limited assistance chronology"
+      ],
+      "chronology_lanes": [
+        "LANE-CAL",
+        "LANE-HANDOVER",
+        "LANE-REMOVAL"
+      ],
+      "limits": [
+        "fees/time/non-payment are documented alternative explanations; AC causation not assumed"
+      ]
+    },
+    {
+      "firm": "DRAS / Bernardo del Rosal team",
+      "status": "SEED_VERIFIED_HISTORIC_REVIEW",
+      "documented_work": [
+        "2022 substantive professional review",
+        "meetings and document classification",
+        "penal/investigative analysis"
+      ],
+      "chronology_lanes": [
+        "LANE-RECOVERY"
+      ],
+      "limits": [
+        "historic professional review does not establish a current mandate or endorsement of later 2026 theories"
+      ]
+    }
+  ]
 }
