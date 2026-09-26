@@ -4,7 +4,7 @@
   "control_date": "2026-09-26",
   "search_window": "2018-09-01 to present",
   "subject": "ALAS Legal Advisors / Armando Betancor / Joaquín Ruiz de Infante / collaborators",
-  "status": "ACTIVE_RECURSIVE_RECONCILIATION",
+  "status": "ACTIVE_RECURSIVE_RECONCILIATION_RUN2_PRESERVED",
   "public_privacy_rule": "No private addresses, personal identifiers, bank details or private mailbox locators in public registry.",
   "invoices": [
     {
@@ -490,7 +490,8 @@
         "PD-AJ-INV6-022",
         "PD-AJ-INV6-023"
       ],
-      "separation_relevance": "Direct criminal/prosecutorial challenge to AC and CAM; part of factual foundation later invoked for removal/separation."
+      "separation_relevance": "Direct criminal/prosecutorial challenge to AC and CAM; part of factual foundation later invoked for removal/separation.",
+      "provenance_note": "14-Jan: Joaquín circulated after small revisions to Cristo prior review; Cristo returned reviewed/signed."
     },
     {
       "id": "PD-AJ-WP-002",
@@ -514,15 +515,18 @@
       "id": "PD-AJ-WP-003",
       "date": "2019-01-16",
       "title": "Oposición / challenge to AC quarterly-report material",
-      "status": "WORK_PRODUCT_FAMILY_VERIFIED; exact final filed instrument reconciliation open",
+      "status": "FINAL_INSTRUMENT_LOCATED_ATTRIBUTION_RECONCILIATION_OPEN",
       "actors": [
-        "ALAS/Armando"
+        "Juan Tomás Parrilla + Rosa Gual — contemporaneously stated joint preparation",
+        "Armando Betancor — subsequent review",
+        "ALAS PD-AJ-INV6-026/027 — billed analysis/drafting, exact relationship open"
       ],
       "links": [
         "PD-AJ-INV6-026",
         "PD-AJ-INV6-027"
       ],
-      "separation_relevance": "Tests liquidation reporting and AC conduct; must be linked into removal chronology."
+      "separation_relevance": "Tests liquidation reporting and AC conduct; must be linked into removal chronology.",
+      "source_anomaly": "Literal 19-Dec-2018 closing date preserved although instrument recites 16-Jan-2019 notification."
     },
     {
       "id": "PD-AJ-WP-004",
@@ -543,10 +547,12 @@
       "id": "PD-AJ-WP-005",
       "date": "2019-02-07",
       "title": "Aportación de nuevas pruebas a Fiscalía",
-      "status": "SIGNED_PREPARED_AND_FILING_STRONGLY_SUPPORTED; receipt pairing open",
+      "status": "SIGNED_SOURCE_LOCATED_NEXT_DAY_FILING_PLAN_VERIFIED_RECEIPT_OPEN",
       "actors": [
-        "ALAS team",
-        "Cristo/Luis Barber coordination"
+        "Joaquín Ruiz de Infante Abella — signatory",
+        "Carmen Dolores Padilla Nieto — procuradora/signatory",
+        "Cristo Ayose Suárez Pimental — signatory",
+        "ALAS team — billed work"
       ],
       "links": [
         "PD-AJ-INV14-006",
@@ -638,7 +644,7 @@
       "id": "PD-AJ-WP-011",
       "date": "2020-02/2020-03-03",
       "title": "Article 215.2 response, ratification/acta work and recurso de reposición",
-      "status": "WORKSTREAM_AND_3-MAR_REPOSICION_STRONGLY_SUPPORTED; original 3-Mar pleading still to recover/pair",
+      "status": "REPOSICION_PREPARATION_CONTEMPORANEOUSLY_VERIFIED_ORIGINAL_FINAL_AND_RECEIPT_OPEN",
       "actors": [
         "ALAS/Armando/José María/Davinia",
         "Joaquín"
@@ -657,6 +663,19 @@
       ],
       "links": [],
       "separation_relevance": "Expressly instrumentalised by AC on R33 page 5 in 2026; must be read with entire work-product and pressure record."
+    },
+    {
+      "id": "PD-AJ-WP-013",
+      "date": "2020-03-02/2020-03-03",
+      "title": "Acta de Manifestaciones Gil — ratification draft",
+      "status": "DRAFT_AND_INTENDED_NOTARISATION_PROCEDURAL_USE_VERIFIED_EXECUTION_FILING_OPEN",
+      "actors": [
+        "José María Betancor / ALAS — transmitted draft",
+        "Gil/client — intended notarisation/use",
+        "Cristo — requested review"
+      ],
+      "links": [],
+      "separation_relevance": "Article 215.2 ratification/professional-pressure sequence; material to R33 page-5 causation analysis."
     }
   ],
   "replication_rule": {
@@ -673,11 +692,26 @@
     ]
   },
   "open_gaps": [
-    "Pair exact LexNET/court receipts for all 2019 Mercantile filings.",
-    "Recover and classify original 3-Mar-2020 recurso de reposición.",
-    "Reconcile exact instrument behind 16-Jan-2019 billed 'oposición Informe Trimestral AC'.",
-    "Pair February 2019 Fiscalía new-evidence filing with stamped/receipt copy.",
-    "Complete author/reviewer/signatory/billing chain for every draft and version.",
-    "Materialise authenticated private source PDFs into stable private custody where connector path permits."
-  ]
+    "ALAS Jan-2019 quarterly-report version + PD-AJ-INV6-026/027 reconciliation.",
+    "Exact court/LexNET receipt for January opposition.",
+    "Original/final March 2020 Article 215.2 reposición full chain.",
+    "Executed/notarised Acta or abandonment evidence and procedural use.",
+    "February 2019 Fiscalía definitive receipt/stamp.",
+    "Formal post-21-Sep-2020 venia/substitution/file-transfer/handover.",
+    "Current official ALAS registry/current creditor status.",
+    "Internal ALAS↔Joaquín collaborator-compensation/fee-sharing instrument if extant.",
+    "Complete reverse invoice-row/full work-product chain.",
+    "Then Garrigues/Cuatrecasas replication under PD-SP-COUNSEL-WORK-REPLICATION-001."
+  ],
+  "last_continuity_update": "2026-09-26T15:37:00+01:00",
+  "run2_controls": {
+    "negative_search_rule": "Absence is not proof of non-existence.",
+    "negative_searches": [
+      "No explicit conflict/KYC/PBC/AML result or waiver located in bounded search.",
+      "No separate client-facing Joaquín retainer/invoice/minuta/provision/payment located.",
+      "No formal post-21-Sep-2020 venia/handover located."
+    ],
+    "causation_control": "Preserve resignation/apology, client distrust/continuity concerns, fee arrears/recovery, Article 215.2 professional/reputational/insurance concerns; no exclusive withdrawal cause.",
+    "network_control": "No new separate ALAS/Joaquín mandate for CAM, Afisca or RICPE established; shared proceeding/professional proximity is not collusion."
+  }
 }
