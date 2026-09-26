@@ -19,6 +19,9 @@ CORE = {
     'criminal_allegation_control': ['calificaciones penales históricas', 'hechos probados'],
     'historical_current_controller': ['posición actual', 'Documento 1'],
 }
+# Intentional scope decision: v12/v6 removed the former collateral exhibits.
+# The bounded successor prohibits their reintroduction; legacy mode still
+# requires their safeguards. See the version-specific repository review record.
 LEGACY = {
     'hava_vida_control': ['Hava Vida', 'titularidad registral'],
     'term_sheet_control': ['Hoja de Términos', 'exigibilidad'],
@@ -87,6 +90,32 @@ def check_manifest_shape(m: dict) -> list[str]:
         errors.append('Incomplete manifest')
     return errors
 
+def check_front_versions(front: str, document_number: int) -> list[str]:
+    """Validate the declarations actually present, not an invented PDF layout.
+
+    Document 1 declares v13. Document 2 declares v7 and its v13 controller.
+    The reciprocal pair is bound by both exact-file entries in the private
+    manifest; Document 1 does not purport to contain a v7 front declaration.
+    """
+    if document_number not in (1, 2):
+        return ['Unknown document number']
+    required = ('v13',) if document_number == 1 else ('v7', 'v13')
+    tokens = set(re.findall(r'\bv[0-9]+\b', norm(front)))
+    return [f'Document {document_number}: missing exact front version {v}'
+            for v in required if v not in tokens]
+
+
+def check_size(observed: int, expected: int, document_number: int) -> list[str]:
+    errors = []
+    if observed != expected:
+        errors.append(f'Document {document_number}: byte-count mismatch '
+                      f'(observed={observed}, manifest={expected})')
+    if observed >= 10_000_000:
+        errors.append(f'Document {document_number}: internal size target exceeded '
+                      f'(observed={observed}, required<10000000; not a portal-limit certification)')
+    return errors
+
+
 def digest(p: Path) -> str:
     return hashlib.sha256(p.read_bytes()).hexdigest()
 
@@ -103,15 +132,12 @@ def verify_package(paths: list[Path], manifest_path: Path) -> list[str]:
                 return ['The bounded profile requires the exact PDFs, not text surrogates']
             if digest(path) != expected['sha256']:
                 errors.append(f'Document {i+1}: SHA-256 mismatch')
-            if path.stat().st_size != expected['bytes'] or path.stat().st_size >= 10_000_000:
-                errors.append(f'Document {i+1}: byte count/internal size target failure')
+            errors += check_size(path.stat().st_size, expected['bytes'], i + 1)
             d = fitz.open(path); docs.append(d)
             if len(d) != expected['pages'] or len(d) != (165 if i == 0 else 213):
                 errors.append(f'Document {i+1}: page-count mismatch')
             front = norm(' '.join(p.get_text() for p in list(d)[:2]))
-            version = 'v13' if i == 0 else 'v7'
-            if version not in front or (i == 1 and 'v13' not in front):
-                errors.append(f'Document {i+1}: front version/pair mismatch')
+            errors += check_front_versions(front, i + 1)
         if errors:
             return errors
         for src in m['sources']:
@@ -161,7 +187,11 @@ def main(argv: list[str] | None = None) -> int:
         print('MACHINE_CONTROLS_PASS_HUMAN_REVIEW_REQUIRED')
         print('Not legal approval, signature clearance, remote CI, submission or receipt.')
         return 0
-    except (OSError, ValueError, KeyError, TypeError, IndexError, ImportError) as exc:
+    except ImportError as exc:
+        print(f'BLOCKED_ENVIRONMENT: PDF profile requires PyMuPDF (import fitz): {exc}')
+        print('No content-integrity conclusion was reached; install the required dependency and rerun.')
+        return 2
+    except (OSError, ValueError, KeyError, TypeError, IndexError) as exc:
         print(f'BLOCKED: {type(exc).__name__}: {exc}')
         return 2
 

@@ -4,9 +4,16 @@ from contextlib import redirect_stdout
 import importlib.util
 from pathlib import Path
 import unittest
+from unittest.mock import patch
 PATH=Path(__file__).resolve().parents[1]/'scripts'/'validate_meeting_point_prefiling_controls.py'
-if not PATH.exists(): PATH=Path(__file__).with_name('validate_meeting_point_prefiling_controls.py')
+# The private audit bundle colocates scripts; repository execution uses scripts/.
+if not PATH.is_file():
+    PATH=Path(__file__).with_name('validate_meeting_point_prefiling_controls.py')
+if not PATH.is_file():
+    raise FileNotFoundError(f'Meeting Point validator script not found: {PATH}')
 spec=importlib.util.spec_from_file_location('controls',PATH)
+if spec is None or spec.loader is None:
+    raise ImportError(f'Cannot load Meeting Point validator script: {PATH}')
 v=importlib.util.module_from_spec(spec);spec.loader.exec_module(v)
 class ControlTests(unittest.TestCase):
     def setUp(self):
@@ -53,4 +60,29 @@ class ControlTests(unittest.TestCase):
         self.assertTrue(v.check_manifest_shape([]))
     def test_malformed_manifest_fails(self):
         self.assertTrue(v.check_manifest_shape({}))
+    def test_front_declarations_match_actual_document_roles(self):
+        self.assertEqual(v.check_front_versions('Documento 1 v13',1),[])
+        self.assertEqual(v.check_front_versions('Documento 2 v7 controller v13',2),[])
+    def test_each_declared_version_is_required(self):
+        for front,number in [('Documento 1',1),('v7 only',2),('v13 only',2)]:
+            with self.subTest(front=front):self.assertTrue(v.check_front_versions(front,number))
+    def test_version_substrings_do_not_pass(self):
+        self.assertTrue(v.check_front_versions('v130',1))
+        self.assertTrue(v.check_front_versions('v70 v13',2))
+    def test_size_mismatch_and_threshold_are_separate(self):
+        errors=v.check_size(20,21,1)
+        self.assertEqual(len(errors),1)
+        self.assertIn('byte-count mismatch',errors[0])
+        errors=v.check_size(10_000_000,10_000_000,1)
+        self.assertEqual(len(errors),1)
+        self.assertIn('internal size target exceeded',errors[0])
+        self.assertEqual(len(v.check_size(10_000_000,9,1)),2)
+    def test_dependency_failure_is_not_content_failure(self):
+        output=io.StringIO()
+        with patch.object(v,'verify_package',side_effect=ImportError('No module named fitz')):
+            with redirect_stdout(output):
+                result=v.main(['a.pdf','b.pdf','--profile',v.PROFILE,'--manifest','m.json'])
+        self.assertEqual(result,2)
+        self.assertIn('BLOCKED_ENVIRONMENT',output.getvalue())
+        self.assertIn('No content-integrity conclusion',output.getvalue())
 if __name__=='__main__':unittest.main()
