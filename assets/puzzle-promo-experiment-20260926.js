@@ -77,6 +77,11 @@
       transform:none;
       pointer-events:auto;
     }
+    .pd-puzzle-promo[data-paused="true"]{
+      opacity:0;
+      transform:translate3d(0,14px,0) scale(.97);
+      pointer-events:none;
+    }
     .pd-puzzle-promo__link{
       display:block;
       position:relative;
@@ -215,6 +220,17 @@
     </a>
   `;
   document.body.appendChild(promo);
+
+  // R33's sticky source viewer is evidence-first. Do not cover the PDF while it is
+  // materially in view; the promo returns automatically above/below that workbench.
+  const evidenceViewer = document.querySelector('[data-rpl3304-forensic-reader]');
+  if (evidenceViewer && 'IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      promo.dataset.paused = String(Boolean(entry && entry.isIntersecting && entry.intersectionRatio >= .12));
+    }, {threshold:[0,.12,.5]});
+    observer.observe(evidenceViewer);
+  }
 
   const emit = (action) => {
     try {
