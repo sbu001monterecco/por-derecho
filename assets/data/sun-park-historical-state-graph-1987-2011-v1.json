@@ -2,7 +2,7 @@
   "schema": "por-derecho.sun-park-historical-state-graph.1987-2011.v1",
   "control_id": "PD-SP-HISTORY-STATE-GRAPH-1987-2011-20260926",
   "control_date": "2026-09-26",
-  "status": "SOURCE_QUALIFIED_PHASE_FREEZE__NOT_COMPLETE_TITLE_DENOMINATOR",
+  "status": "SOURCE_QUALIFIED_PHASE_FREEZE__TARGETED_EARLY_YEARS_SCAN_26SEP2026__NOT_COMPLETE_TITLE_DENOMINATOR",
   "purpose": "Freeze and reconstruct the pre-Aweswell hotel phases so later conduct can be tested against the state of ownership, operation, governance and transaction rights that existed immediately before each transition.",
   "structures": [
     {
@@ -98,6 +98,60 @@
       "description": "BORME-C-2017-7368 records JSP shareholders requesting further explanations concerning the 'venta del Complejo Sun Park' and majority sale of Explobeach, expanding explanations given at prior general meetings.",
       "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2017-7368",
       "boundary": "Confirms the sale remained a corporate-history subject; does not itself prove purchaser, price, exact asset perimeter or wrongdoing."
+    },
+    {
+      "id": "SP-HIST-SRC-010",
+      "class": "SIGNED_2008_FOUNDATION_MINUTES",
+      "description": "Signed 29-Apr-2008 extraordinary owners' meeting minutes for the CEXP formation/reorganisation. The reviewed source records an earlier 18-Feb-2008 owners' resolution/option context, separately lists JSP and Monte Lanza as represented owners, and records a 74.90% approval for the operating-community structure.",
+      "boundary": "Signed minutes with later signature legitimation are evidence of the recorded meeting and resolutions, not the missing 18-Feb original mandate, the underlying option instrument, every proxy/title, or 100% individual conveyance consent."
+    },
+    {
+      "id": "SP-HIST-SRC-011",
+      "class": "LPB_INTERIM_FINANCIAL_REVIEW_2009",
+      "description": "LPB interim financial review as at 30-Sep-2009 describes 29 premises plus two pools/ancillary areas acquired from Monte Lanza and use of 11 premises still belonging to Monte Lanza, with an expected further purchase at the end of 2010.",
+      "boundary": "Limited financial review, not an audit or conveyance instrument. It supports the residual-asset state but does not establish legal enforceability, exercise or release of the underlying option."
+    },
+    {
+      "id": "SP-HIST-SRC-012",
+      "class": "RETROSPECTIVE_MONTE_LANZA_ACCOUNTS",
+      "description": "Monte Lanza deposited-account family records a 17-Jun-2008 asset sale, a same-date option over 11 unsold premises expiring 31-Dec-2010, later 2009 sales and 2010 in-kind transfers to shareholders/creditors, and later option accounting.",
+      "boundary": "Retrospective company-account disclosures. They do not replace the original contracts, deeds, corporate approvals, recipient-level title evidence or any release/waiver instrument."
+    },
+    {
+      "id": "SP-HIST-SRC-013",
+      "class": "CONTEMPORANEOUS_ACCOUNTANT_BUSINESS_DIAGNOSTIC",
+      "description": "A 13-Dec-2011 accountant/tax-adviser diagnostic prepared for the incoming project principals described LPB cash-flow pressure, 2009-2010 unit-sale activity, CP/CEXP conflicts, non-participating owners and proposed acquisition/agreement solutions.",
+      "boundary": "Contemporaneous adviser analysis and reported management/accounting figures; not an audit, adjudicated finding, or independent proof of every debt, unit sale, authority dispute or causal proposition."
+    },
+    {
+      "id": "SP-HIST-SRC-014",
+      "class": "CONTEMPORANEOUS_FINAL_FORM_SPA_COPY",
+      "description": "A final-form share-purchase agreement copy transmitted on 28-Nov-2011 describes LPB as owning 159 of 220 accommodation units and 29 public areas, Multimatrix as holder of 100% of LPB shares and a controlling CEXP stake, and proposed transfer to Monterecco Sun Park Limited of the LPB shares plus specified wider claims/rights.",
+      "boundary": "The reviewed copy is strong contemporaneous evidence of intended/final-form terms and the pre-closing state. Its reviewed signature page is blank, so this copy is NOT execution proof. The 1-Dec-2011 Tel Aviv notarial share transfer remains the primary execution anchor; wider claims/right assignments require separate executed-source proof."
+    },
+    {
+      "id": "SP-HIST-SRC-015",
+      "class": "CONTEMPORANEOUS_RECORDS_HANDOVER",
+      "description": "A 15-Dec-2011 source-handover communication to the incoming project principals supplied CEXP historical records including constitution/agreements/statutes, tax setup and 2008-2010 member/tax materials.",
+      "boundary": "Proves a contemporaneous records handover/provenance event. Receipt does not authenticate every enclosed document, prove legal effectiveness of every CEXP act, or establish knowledge beyond the material actually supplied."
+    },
+    {
+      "id": "SP-HIST-SRC-016",
+      "class": "THIRD_PARTY_POST_CLOSING_CREDITOR_ASSERTION",
+      "description": "Immediately after the project-side acquisition, a third-party lawyer asserted that a creditor had an outstanding loan, claimed security over LPB shares and/or a second-mortgage position, and sought assurance of repayment/security from the incoming side.",
+      "boundary": "Third-party assertion only. It does not establish the debt, lien, profit-sharing entitlement, buyer assumption or default. Underlying loan/security instruments and any settlement are required before promoting the claimant into the public canonical actor graph."
+    },
+    {
+      "id": "SP-HIST-SRC-017",
+      "class": "CONTEMPORANEOUS_ACCOUNTANT_MULTIMATRIX_BALANCE_STATEMENT",
+      "description": "A March-2012 accountant response quantified asserted LPB obligations to Multimatrix in separate service and funding categories.",
+      "boundary": "Contemporaneous accounting statement, not an independent audit or proof that every asserted balance was legally due, assigned to Aweswell, recognised in Concurso 36/2012 or unrepaid."
+    },
+    {
+      "id": "SP-HIST-SRC-018",
+      "class": "MULTIMATRIX_ISRAELI_LIQUIDATION_RESEARCH_LEAD",
+      "description": "Early-2012 correspondence preserved links and a note concerning possible Multimatrix liquidation/financing developments in Israel.",
+      "boundary": "Research lead only. The linked Israeli corporate/market records have not been independently authenticated in this graph and no liquidation status or effect on the 2011 transfer is inferred."
     }
   ],
   "phase_freezes": [
@@ -183,10 +237,15 @@
           "date": "2008-02-18",
           "event_type": "OWNER_SALE_MANDATE_OR_OPTION_PREPARATION",
           "source_ids": [
-            "SP-HIST-SRC-007"
+            "SP-HIST-SRC-007",
+            "SP-HIST-SRC-010"
           ],
           "evidence_state": "CONTROLLED_DERIVED_LEDGER_PRIMARY_INSTRUMENT_REBIND_OPEN",
-          "gap": "Recover the original owner mandate/resolution and exact denominator/authority."
+          "gap": "Recover the original owner mandate/resolution and exact denominator/authority.",
+          "pending_actor_labels": [
+            "Victory Properties — option-side entity referenced in later signed minutes; exact legal identity/mandate instrument not yet canonically admitted"
+          ],
+          "evidence_boundary": "The signed 29-Apr minutes record an earlier 18-Feb owners' resolution/option context. The original 18-Feb ACTA, attendance/proxy annex, mandate denominator and underlying option remain missing; later attendance is not back-projected."
         },
         {
           "event_id": "PD-SP-EVT-SP-2008-03-12-OPTION",
@@ -207,15 +266,18 @@
           "event_type": "OPERATING_STRUCTURE_REORGANISATION",
           "organisation_ids": [
             "PD-SP-O-0006",
-            "PD-SP-O-0014"
+            "PD-SP-O-0014",
+            "PD-SP-O-0085"
           ],
           "structure_ids": [
             "PD-SP-S-0013"
           ],
           "source_ids": [
-            "SP-HIST-SRC-003"
+            "SP-HIST-SRC-003",
+            "SP-HIST-SRC-010"
           ],
-          "evidence_boundary": "CEXP/operating reorganisation is not itself a conveyance of each finca."
+          "evidence_boundary": "Signed minutes establish the recorded CEXP/operating reorganisation and 74.90% approval among those recorded present/represented. They are not a conveyance, do not prove 100% individual seller consent, and do not prove every proxy/title or the missing 18-Feb mandate.",
+          "recorded_approval_percentage": "74.90% of owners present or represented, as recorded in the minutes"
         },
         {
           "event_id": "PD-SP-EVT-SP-2008-05-26-27-OPERATING-HANDOVER",
@@ -283,6 +345,24 @@
           ],
           "state": "LPB recorded with 171 apartments and 29 commercial properties; Monte Lanza recorded with 11 commercial properties.",
           "evidence_boundary": "This discrepancy is a central state transition and must remain visible rather than being flattened into either 'whole hotel sold' or 'only part was ever intended'."
+        },
+        {
+          "event_id": "PD-SP-EVT-SP-2008-06-17-MONTELANZA-SALE-RESIDUAL-OPTION",
+          "date": "2008-06-17",
+          "event_type": "SELLER_SIDE_ASSET_SALE_AND_RESIDUAL_OPTION",
+          "organisation_ids": [
+            "PD-SP-O-0014"
+          ],
+          "source_ids": [
+            "SP-HIST-SRC-012",
+            "SP-HIST-SRC-011"
+          ],
+          "asset_state": {
+            "pre_sale_company_property": "40 commercial/service premises + 2 pools, as recited in the controlled 26-May operating instrument",
+            "first_acquisition_supported": "29 commercial/service premises + 2 pools/ancillary areas",
+            "residual_supported": "11 commercial/service premises retained by Monte Lanza and subject to a later-purchase/option framework"
+          },
+          "evidence_boundary": "Seller accounts and the later LPB review corroborate a 29+2 acquired / 11 residual company-property split. The original sale deed, residual-option instrument, exercise/assignment/release chain and finca annexes remain controlling for legal completion."
         }
       ],
       "truth_machine_rule": "Preserve both layers: WHOLE HOTEL AS TRANSACTION OBJECT / INTENTION / MARKET REPRESENTATION versus LESS-THAN-WHOLE COMPLETED LEGAL/ECONOMIC PERIMETER. Investigate the bridge and why the intended/marketed state did not match the post-completion state."
@@ -324,6 +404,77 @@
         "Which apartment sales occurred 2009–2011 and why?",
         "How did CEXP/Community governance change after Multimatrix entry?",
         "What rights/claims remained with Multimatrix/LPB at exit?"
+      ],
+      "events": [
+        {
+          "event_id": "PD-SP-EVT-SP-2009-09-30-RESIDUAL-ASSET-SNAPSHOT",
+          "date": "2009-09-30",
+          "event_type": "BUYER_SIDE_RESIDUAL_ASSET_FINANCIAL_SNAPSHOT",
+          "organisation_ids": [
+            "PD-SP-O-0002",
+            "PD-SP-O-0014",
+            "PD-SP-O-0099"
+          ],
+          "source_ids": [
+            "SP-HIST-SRC-011"
+          ],
+          "state": {
+            "lpb_company_property": "29 premises + 2 pools/ancillary areas described as acquired from Monte Lanza",
+            "monte_lanza_residual": "11 premises described as still belonging to Monte Lanza, with use continuing and expected further purchase at end-2010"
+          },
+          "evidence_boundary": "Limited financial review supplies a contemporaneous buyer-side state description, not conveyance title or proof that the contemplated end-2010 purchase was legally mandatory or completed."
+        },
+        {
+          "event_id": "PD-SP-EVT-SP-2009-RESIDUAL-DISPOSITIONS",
+          "date_range": "2009-01-01/2009-12-31",
+          "event_type": "SELLER_SIDE_RESIDUAL_PROPERTY_SALES_DISCLOSED",
+          "organisation_ids": [
+            "PD-SP-O-0014"
+          ],
+          "source_ids": [
+            "SP-HIST-SRC-012"
+          ],
+          "evidence_boundary": "Later Monte Lanza accounts disclose 2009 sales. Exact fincas, purchasers, prices, authority and interaction with earlier buyer rights/options remain unverified and must be reconstructed transaction by transaction."
+        },
+        {
+          "event_id": "PD-SP-EVT-SP-2010-IN-KIND-DEBT-SETTLEMENTS",
+          "date_range": "2010-01-01/2010-12-31",
+          "event_type": "SELLER_SIDE_IN_KIND_TRANSFERS_TO_SHAREHOLDER_CREDITORS_DISCLOSED",
+          "organisation_ids": [
+            "PD-SP-O-0014"
+          ],
+          "source_ids": [
+            "SP-HIST-SRC-012"
+          ],
+          "evidence_boundary": "Later company accounts describe in-kind property transfers to shareholders/creditors in settlement of company debt. This is not automatically a liquidation distribution and does not establish recipient, finca, valuation, prior-buyer consent or release of any earlier option."
+        },
+        {
+          "event_id": "PD-SP-EVT-SP-2011-11-28-PRE-SUCCESSION-SPA-SNAPSHOT",
+          "date": "2011-11-28",
+          "event_type": "PRE_CLOSING_FINAL_FORM_SHARE_AND_RIGHTS_PACKAGE_SNAPSHOT",
+          "organisation_ids": [
+            "PD-SP-O-0099",
+            "PD-SP-O-0002",
+            "PD-SP-O-0001",
+            "PD-SP-O-0006",
+            "PD-SP-O-0029"
+          ],
+          "source_ids": [
+            "SP-HIST-SRC-014"
+          ],
+          "asset_state": {
+            "lpb_accommodation_units": "159 of 220, as represented in the transmitted final-form SPA copy",
+            "lpb_public_areas": "29, as represented in the transmitted final-form SPA copy",
+            "transition_from_2008": "Consistent with the later documented 171 initial apartments minus 12 prior apartment disposals; exact 12-finca sale crosswalk remains separately controlled."
+          },
+          "corporate_state": {
+            "multimatrix_lpb_shares": "100% represented in the final-form copy",
+            "cexp_position": "controlling stake represented in the final-form copy; exact legal character and enforceability remain source-specific"
+          },
+          "wider_rights_terms_as_drafted": "The transmitted final-form copy contemplated transfer, alongside LPB shares, of specified past/current/future claims or debt rights asserted by Multimatrix and Sun Energy Spaces against LPB, CEXP and the owners' Community.",
+          "execution_state": "TRANSMITTED_FINAL_FORM_COPY__REVIEWED_SIGNATURE_PAGE_BLANK",
+          "evidence_boundary": "Do not call this reviewed copy an executed SPA. Its blank signature page is affirmative source evidence that this particular copy does not prove execution. The 1-Dec-2011 Tel Aviv notarial share transfer controls executed shareholder succession; execution/scope of the wider claims-rights package remains open."
+        }
       ]
     },
     {
@@ -342,10 +493,11 @@
             "PD-SP-O-0002"
           ],
           "source_ids": [
-            "SP-HIST-SRC-008"
+            "SP-HIST-SRC-008",
+            "SP-HIST-SRC-014"
           ],
           "state": "Monterecco Sun Park Limited (same UK company later renamed AWESWELL LIMITED) acquired all LPB shares from Multimatrix Limited under the recited Tel Aviv deed.",
-          "evidence_boundary": "Controls shareholder succession. It does not erase pre-existing finca/title/community/option disputes or automatically transfer third-party property."
+          "evidence_boundary": "Executed shareholder succession is controlled by the 1-Dec-2011 Tel Aviv notarial transfer as later publicised in Spain. The 28-Nov final-form copy independently illuminates the pre-closing asset/corporate state and proposed wider rights package but, because its reviewed signature page is blank, does not prove execution of those wider terms."
         },
         {
           "event_id": "PD-SP-EVT-SP-2012-01-03-SPANISH-PUBLICITY",
@@ -362,6 +514,47 @@
             "SP-HIST-SRC-008"
           ],
           "evidence_boundary": "Spanish deed/publicity records the prior 1-Dec-2011 share transfer and administration change; it is not the sale of every hotel finca."
+        },
+        {
+          "event_id": "PD-SP-EVT-SP-2011-12-13-PREOPERATING-BUSINESS-DIAGNOSTIC",
+          "date": "2011-12-13",
+          "event_type": "INCOMING_PROJECT_BUSINESS_AND_GOVERNANCE_DIAGNOSTIC",
+          "organisation_ids": [
+            "PD-SP-O-0001",
+            "PD-SP-O-0002",
+            "PD-SP-O-0006"
+          ],
+          "source_ids": [
+            "SP-HIST-SRC-013"
+          ],
+          "evidence_boundary": "Contemporaneous adviser diagnostic records the problems being presented to the incoming principals—cash-flow pressure, prior unit-sale activity, CP/CEXP conflict and the possible acquisition/agreement solution. It is not an audit or adjudication of those propositions."
+        },
+        {
+          "event_id": "PD-SP-EVT-SP-2011-12-15-CEXP-RECORDS-HANDOVER",
+          "date": "2011-12-15",
+          "event_type": "HISTORICAL_CEXP_RECORDS_HANDOVER_TO_INCOMING_PROJECT",
+          "organisation_ids": [
+            "PD-SP-O-0001",
+            "PD-SP-O-0006"
+          ],
+          "source_ids": [
+            "SP-HIST-SRC-015"
+          ],
+          "evidence_boundary": "Shows that incoming principals requested/received a historical CEXP document package soon after shareholder succession. It does not authenticate each enclosed record or prove legal effectiveness of every historical CEXP act."
+        },
+        {
+          "event_id": "PD-SP-EVT-SP-2012-01-EARLY-THIRD-PARTY-SECURITY-CLAIM",
+          "date_range": "2012-01-03/2012-01-12",
+          "event_type": "THIRD_PARTY_CREDITOR_AND_SECURITY_ASSERTION_AFTER_CLOSING",
+          "organisation_ids": [
+            "PD-SP-O-0001",
+            "PD-SP-O-0002",
+            "PD-SP-O-0099"
+          ],
+          "source_ids": [
+            "SP-HIST-SRC-016"
+          ],
+          "evidence_boundary": "A third party asserted debt/security/profit-related rights immediately after the acquisition. No merits admission is inferred from the incoming side's acknowledgement/response; underlying instruments and any settlement must be produced."
         }
       ],
       "successor_graph_event_id": "PD-SP-EVT-C36-2012-06-06-OPENING"
@@ -386,12 +579,12 @@
     {
       "id": "GAP-SP-2008-OWNER-MANDATE",
       "priority": "P0",
-      "target": "Original 2008 owner sale mandate/resolution, participant denominator, powers and exact obligation to sell."
+      "target": "Recover the original 18-Feb-2008 owners' ACTA/mandate, attendance and proxy annex, exact authority denominator and the underlying Victory Properties option. The signed 29-Apr minutes now corroborate that an earlier option/resolution existed but do not supply the missing instrument."
     },
     {
       "id": "GAP-SP-2008-OPTION-INSTRUMENTS",
       "priority": "P0",
-      "target": "Signed 12-Mar option, exercise/assignment instruments, residual 11-premises option, notices, objections, expiry/release and consideration."
+      "target": "Recover signed 12-Mar option, 17-Jun exercise/assignment/sale and same-date residual 11-premises option, plus notices, amendments, expiry/release/waiver and consideration. Seller accounts and buyer-side review now narrow the asset split but do not close the legal instrument chain."
     },
     {
       "id": "GAP-SP-2008-WHOLE-VS-COMPLETED",
@@ -401,7 +594,7 @@
     {
       "id": "GAP-SP-2009-2011-DISPOSITIONS",
       "priority": "P0",
-      "target": "All 2009-2011 LPB/Monte Lanza sales, in-kind transfers, releases and economic use, with buyer/seller/price/credit effects."
+      "target": "Build finca-by-finca ledger for the disclosed 2009 sales, 2010 in-kind debt settlements and the 12 LPB apartment disposals that bridge 171 apartments to the 159 represented immediately before the 2011 succession. Capture buyer/recipient, date, price/valuation, authority, debt effect, notice/consent and interaction with residual options."
     },
     {
       "id": "GAP-SP-MULTIMATRIX-IDENTITY-BRIDGE",
@@ -411,7 +604,22 @@
     {
       "id": "GAP-SP-2011-COMPLETE-SPA-RIGHTS",
       "priority": "P0",
-      "target": "Complete 1-Dec-2011 share purchase/rights package and retained claims/option/Community/CEXP rights beyond the primary share-succession recital."
+      "target": "The 28-Nov-2011 final-form SPA copy is now recovered and its reviewed signature page is blank. Obtain the executed 1-Dec closing package and determine whether/how the drafted wider claims/right transfers (including Multimatrix/Sun Energy Spaces claims against LPB/CEXP/CP) were executed, assigned, valued, paid, retained or later asserted."
+    },
+    {
+      "id": "GAP-SP-2011-THIRD-PARTY-SECURITY-CLAIMS",
+      "priority": "P0",
+      "target": "Recover the underlying third-party loan/security/profit-sharing instruments asserted immediately after closing, identify the exact claimant and collateral, determine whether any buyer assumption existed, and trace settlement/release/enforcement. Do not canonically publish the claimant from private correspondence alone."
+    },
+    {
+      "id": "GAP-SP-MULTIMATRIX-ISRAELI-STATUS",
+      "priority": "P1",
+      "target": "Acquire/authenticate the original Israeli corporate/market records underlying the early-2012 Multimatrix liquidation/financing lead and reconcile them to the exact Israeli Multimatrix legal person involved in the 2008/2011 chain."
+    },
+    {
+      "id": "GAP-SP-LATE2011-CEXP-KNOWLEDGE-PROVENANCE",
+      "priority": "P1",
+      "target": "Crosswalk the 15-Dec-2011 CEXP handover package document-by-document into the canonical source graph, preserving authenticity/status separately from receipt and mapping what the incoming principals actually had before each early-2012 decision."
     }
   ],
   "no_regression": [
@@ -422,5 +630,29 @@
     "Do not promote 'San Hotels' to a canonical alias absent a source bridge.",
     "Do not treat Multimatrix, LPB, CEXP, Monte Lanza, Sun Group or the hotel economic unit as the same legal object.",
     "Do not create a separate legal person for MONTERECCO SUN PARK LIMITED; it is the former name of AWESWELL LIMITED, UK company no. 07716847."
-  ]
+  ],
+  "post_handoff_corroboration": [
+    {
+      "source_id": "SP-HIST-SRC-017",
+      "relevance": "Later contemporaneous accountant statement provides a quantified Multimatrix-to-LPB asserted balance for reconciliation against any executed assignment, Concurso recognition and payment history.",
+      "boundary": "Accounting statement only; do not treat as an adjudicated or automatically transferred Aweswell claim."
+    },
+    {
+      "source_id": "SP-HIST-SRC-018",
+      "relevance": "Israeli liquidation/financing lead may bear on Multimatrix's post-sale status and corporate identity.",
+      "boundary": "Research lead only until original Israeli records are independently acquired and authenticated."
+    }
+  ],
+  "last_targeted_source_scan": {
+    "date": "2026-09-26",
+    "scope": "Targeted all-connected-mailbox and Library/file review focused on opening/history, 2008 transaction/completion, Multimatrix period and 2011 succession. Not a certified exhaustive mailbox denominator.",
+    "material_closures": [
+      "Signed 29-Apr-2008 minutes now source the 18-Feb option/resolution lead and 74.90% operating-community approval without upgrading it to 100% seller consent.",
+      "17-Jun-2008 seller-side sale/residual-option state narrowed to 29+2 acquired and 11 residual company-property units, subject to original instruments.",
+      "2009 sales and 2010 in-kind transfers are now distinct state-transition events rather than one generic residual-asset gap.",
+      "Late-2011 state bridges 171 initial apartments to 159 represented pre-succession through the known 12-disposal history, pending finca-level crosswalk.",
+      "28-Nov-2011 final-form SPA copy is preserved as terms/state evidence with reviewed signature page blank; it is not execution proof.",
+      "Post-closing third-party security claim, CEXP records handover and later Multimatrix balance/status leads are explicit follow-up objects."
+    ]
+  }
 }
