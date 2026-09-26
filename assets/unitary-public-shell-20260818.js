@@ -43,9 +43,14 @@
   };
   const simplifyHomeNav=()=>{
     if(!isHome())return;
-    const nav=d.querySelector('#main-nav.main-nav,.main-nav#main-nav');if(!nav||(nav.dataset.psrConsolidatedNav==='true'&&nav.querySelector('.nav-accountability')))return;
+    const nav=d.querySelector('#main-nav.main-nav,.main-nav#main-nav');
+    if(!nav)return;
+    // Keep the complete native menu on the refined homepage, without skipping
+    // the control-room gateway or the shell's utility and search functions.
+    const refined=d.body.classList.contains('pd-home-refined')&&nav.querySelector('.pd-home-more');
+    if(!refined&&nav.dataset.psrConsolidatedNav==='true'&&nav.querySelector('.nav-accountability'))return;
     nav.dataset.psrConsolidatedNav='true';
-    nav.innerHTML=`<a class="psr-nav-primary" href="${urls.control}">${strings.case}</a><a class="psr-nav-evidence" href="#record">${strings.evidence}</a><a class="psr-nav-institutions" href="#institutional-map">${strings.institutions}</a><a class="nav-accountability" href="${isEs?'#institutional-accountability-12aug':'#institutional-accountability-12aug-en'}">${strings.accountability}</a><a href="${urls.proceedings}">${strings.proceedings}</a><a href="${urls.updates}">${strings.updates}</a><a href="${urls.about}">${strings.about}</a><a class="psr-nav-search" href="${urls.search}">${strings.search}</a><a class="language-link" href="${urls.other}" hreflang="${isEs?'en':'es'}">${isEs?'EN':'ES'}</a>`;
+    if(!refined)nav.innerHTML=`<a class="psr-nav-primary" href="${urls.control}">${strings.case}</a><a class="psr-nav-evidence" href="#record">${strings.evidence}</a><a class="psr-nav-institutions" href="#institutional-map">${strings.institutions}</a><a class="nav-accountability" href="${isEs?'#institutional-accountability-12aug':'#institutional-accountability-12aug-en'}">${strings.accountability}</a><a href="${urls.proceedings}">${strings.proceedings}</a><a href="${urls.updates}">${strings.updates}</a><a href="${urls.about}">${strings.about}</a><a class="psr-nav-search" href="${urls.search}">${strings.search}</a><a class="language-link" href="${urls.other}" hreflang="${isEs?'en':'es'}">${isEs?'EN':'ES'}</a>`;
     if(!d.querySelector('.psr-home-control-gateway')){
       const gateway=d.createElement('aside');gateway.className='psr-home-control-gateway';gateway.setAttribute('aria-label',strings.caseLong);
       gateway.innerHTML=`<div class="shell psr-gateway-inner"><p><strong>${strings.caseLong}.</strong> ${strings.gateway}</p><a href="${urls.control}">${strings.openControl} →</a></div>`;

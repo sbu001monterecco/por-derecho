@@ -65,11 +65,20 @@
     const sourceFunds = main.querySelector('.source-funds-notice-section');
     const sanTelmo = main.querySelector('section.interview-evidence[data-pd-san-telmo-attribution="20260819"]');
     const protectedCriminalSequence = [criminalMisuse, priority, prosecution];
+    const portfolioScope = main.querySelector("#economic-scope-20260925");
+    // Extend, rather than replace, the protected source contract.
     const coreSections = [hero, controlling, detailed, criminalMisuse, priority, prosecution, summary, audiences, perimeters];
+    if (portfolioScope) coreSections.push(portfolioScope);
+    // Move the existing live search node; retain its form, events and source data.
+    const homeSearch = portfolioScope ? document.querySelector('[data-canonical-home-search="20260902"]') : null;
+    if (homeSearch) coreSections.push(homeSearch);
     if (sourceFunds) coreSections.push(sourceFunds);
     if (sanTelmo) coreSections.push(sanTelmo);
 
     let anchor = hero;
+    // Keep the protected first-read contract consecutive. The added portfolio
+    // scope and the existing live search stay visible as direct children after
+    // the collapsed full-record control, rather than interrupting that contract.
     for (const section of [controlling, detailed, ...protectedCriminalSequence, summary, audiences, perimeters]) {
       if (section && anchor) {
         placeAfter(section, anchor);
@@ -78,10 +87,23 @@
     }
     const fullRecord = ensureFullRecord(main, isEnglish, coreSections);
     placeAfter(fullRecord, perimeters || audiences || summary || prosecution || anchor);
-    if (sourceFunds) placeAfter(sourceFunds, fullRecord);
+    let publicAnchor = fullRecord;
+    if (portfolioScope) {
+      placeAfter(portfolioScope, publicAnchor);
+      publicAnchor = portfolioScope;
+    }
+    if (homeSearch) {
+      placeAfter(homeSearch, publicAnchor);
+      publicAnchor = homeSearch;
+    }
+    if (sourceFunds) {
+      placeAfter(sourceFunds, publicAnchor);
+      publicAnchor = sourceFunds;
+    }
     if (sanTelmo) {
       sanTelmo.classList.add('shell');
-      placeAfter(sanTelmo, sourceFunds || fullRecord);
+      if (sourceFunds) placeAfter(sanTelmo, sourceFunds || fullRecord);
+      else placeAfter(sanTelmo, publicAnchor);
       sanTelmo.dataset.audienceProtectedSanTelmo = '20260823';
     }
 
