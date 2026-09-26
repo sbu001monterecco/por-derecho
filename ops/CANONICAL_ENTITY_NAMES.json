@@ -107,15 +107,15 @@
     {
       "id": "E005",
       "record_type": "legal_entity",
-      "canonical_name": "AWESWELL LIMITED",
-      "first_reference": "AWESWELL LIMITED",
+      "canonical_name": "Aweswell Limited",
+      "first_reference": "Aweswell Limited",
       "identifier": {
         "type": "UK company number",
         "value": "07716847"
       },
-      "former_name": "MONTERECCO SUN PARK LIMITED",
+      "former_name": "Monterecco Sun Park Limited",
       "former_name_period": "2011-07-25/2014-06-03",
-      "name_continuity_rule": "AWESWELL LIMITED and MONTERECCO SUN PARK LIMITED are the same UK company under company number 07716847; use the registered name applicable to the source date.",
+      "name_continuity_rule": "Aweswell Limited and Monterecco Sun Park Limited are the same UK company under company number 07716847; use the name applicable to the source date.",
       "official_sources": [
         {
           "authority": "UK Companies House",
@@ -124,22 +124,24 @@
           "proposition": "The register identifies AWESWELL LIMITED, company number 07716847, and lists MONTERECCO SUN PARK LIMITED as its previous name through 3 June 2014."
         }
       ],
-      "official_registered_name": "AWESWELL LIMITED",
-      "forbidden_generated_aliases": [
-        "Oswell",
-        "Oswell Limited",
-        "Awesell",
-        "Awesell Limited",
-        "Awswell",
-        "Awswell Limited",
-        "Aweswel",
-        "Aweswel Limited",
-        "Aweswelll",
-        "Aweswelll Limited",
-        "AWESWELLL"
-      ],
-      "separation_rule": "OSWELL 426 S.L. is a distinct Spanish entity and must never be treated as an alias, correction or bridge for UK company 07716847.",
-      "generation_rule": "Resolve the entity by company number 07716847 and use AWESWELL LIMITED in current assertions. Reject forbidden generated aliases outside expressly classified source literals, historical-error quotations or correction controls."
+      "canonical_short_name": "Aweswell",
+      "name_rule": "Use Aweswell Limited on first reference and Aweswell thereafter; uppercase AWESWELL LIMITED is valid. Normalize voice-to-text, translation and spelling errors before writing narrative, labels, search data, metadata or generated output. Noncanonical inputs are errors, not company aliases. The valid former name Monterecco Sun Park Limited remains date-dependent.",
+      "normalization_control": {
+        "authority": "Gil Marer explicit spelling correction, reaffirmed 14 September 2026",
+        "canonical_replacement": "Aweswell",
+        "policy": "Any noncanonical spelling variant of Aweswell must be normalized before repository narrative, labels, search data, metadata or generated output are written. The repository itself must not publish those erroneous variants as aliases.",
+        "source_policy": "Preserve native evidential originals unchanged. Repository-authored derivatives must use Aweswell Limited and may state generically that a native source contains a company-name transcription error without reproducing the erroneous spelling.",
+        "guard": "scripts/validate_aweswell_spelling.py",
+        "derivative_corrections": [
+          {
+            "path": "assets/data/concurso36-complete-record-v1.json",
+            "canonical_id": "C36-E021",
+            "field": "source_locator",
+            "correction_date": "2026-09-12",
+            "note": "Corrected the company-name transcription in this derivative locator and replaced its private retrieval details with a public-safe report description. Stable evidence identifiers and native source remain unchanged."
+          }
+        ]
+      }
     },
     {
       "id": "E006",
@@ -699,6 +701,26 @@
       "repository_sources": [
         "Gmail: dbellau@hamlins.co.uk historical correspondence, 2016–2018",
         "Google Drive: Hamlins-drafted Solos transaction documents"
+      ]
+    },
+    {
+      "id": "E060",
+      "record_type": "legal_entity",
+      "jurisdiction": "England and Wales",
+      "canonical_name": "Solo's Holidays 2002 Limited",
+      "first_reference": "Solo's Holidays 2002 Limited",
+      "identifier": {
+        "type": "UK company number",
+        "value": "04511481"
+      },
+      "later_name": "Arnloft 2002 Limited",
+      "controlled_context": "Historical parent/share-acquisition target in the proposed Sun Rock acquisition of the Solo's business perimeter.",
+      "acquisition_boundary": "Keep this company distinct from Solo's Holidays Limited (00964895), which appears as an operating/distribution company in the commercial agreements.",
+      "later_status": "Companies House records later identify the same company number under Arnloft 2002 Limited and as dissolved. Exact sale, liquidation and dissolution chronology remains source-date specific.",
+      "repository_sources": [
+        "Google Drive: Solo's Holidays Investment Memorandum 111116.docx",
+        "Google Drive: Sun Rock - Solos SPA - Hamlins draft - 13.12.2016.DOCX",
+        "ops/AWESWELL_GROUP_PERIMETER_SUPPLEMENT_20260926.json"
       ]
     }
   ]
