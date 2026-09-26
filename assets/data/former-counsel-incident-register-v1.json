@@ -26,7 +26,8 @@
       "event_type": "EARLY_REPRESENTATION_RELATIONSHIP_DISCONTINUITY_CONTROL",
       "evidence_state": "OPEN_BASELINE",
       "payment_state": "OPEN",
-      "causation_state": "NO_AC_CAUSATION_LOCATED"
+      "causation_state": "NO_AC_CAUSATION_LOCATED",
+      "communication_status": "NOT_SENT"
     },
     {
       "incident_id": "PD-CIR-CRISTO-2018-01",
@@ -36,7 +37,8 @@
       "event_type": "DEFINED_MANDATE_DISPLACEMENT_PROFESSIONAL_ESCALATION",
       "evidence_state": "VERIFIED_DIRECT_EFFECT_ON_DEFINED_MANDATE",
       "payment_state": "NOT_CORE_MECHANISM",
-      "causation_state": "DIRECT_FOR_DEFINED_MANDATE_ONLY"
+      "causation_state": "DIRECT_FOR_DEFINED_MANDATE_ONLY",
+      "communication_status": "NOT_SENT"
     },
     {
       "incident_id": "PD-CIR-CUATRECASAS-2018-01",
@@ -46,7 +48,8 @@
       "event_type": "PROTECTIVE_ARCHITECTURE_AC_INTERACTION_WITHDRAWAL_ECONOMICS",
       "evidence_state": "MIXED_VERIFIED_WORK_OPEN_CAUSATION",
       "payment_state": "FEE_RECONCILIATION_REQUIRED",
-      "causation_state": "OPEN_NO_SINGLE_CAUSE"
+      "causation_state": "OPEN_NO_SINGLE_CAUSE",
+      "communication_status": "NOT_SENT"
     },
     {
       "incident_id": "PD-CIR-ALAS-2019-01",
@@ -59,7 +62,8 @@
       "event_type": "ENGAGEMENT_BILLING_DEFENCE_ENVIRONMENT_CONTROL",
       "evidence_state": "VERIFIED_ENGAGEMENT_COMPROMISE_ALLEGATION_OPEN",
       "payment_state": "HISTORIC_INVOICES_CURRENT_CREDITOR_RECONCILIATION_OPEN",
-      "causation_state": "MULTI_CAUSE_OPEN"
+      "causation_state": "MULTI_CAUSE_OPEN",
+      "communication_status": "NOT_SENT"
     },
     {
       "incident_id": "PD-CIR-LUISBARBER-2019-01",
@@ -69,7 +73,8 @@
       "event_type": "ALAS_COLLABORATOR_BILLING_PROFESSIONAL_CONTINUITY",
       "evidence_state": "VERIFIED_SUBSTANTIVE_COLLABORATION_INTERNAL_ECONOMICS_OPEN",
       "payment_state": "ALAS_CLIENT_BILLING_INVOLVING_BARBER_VERIFIED_INTERNAL_ALLOCATION_OPEN",
-      "causation_state": "NO_ADVERSE_PARTY_CAUSATION_ESTABLISHED"
+      "causation_state": "NO_ADVERSE_PARTY_CAUSATION_ESTABLISHED",
+      "communication_status": "NOT_SENT"
     },
     {
       "incident_id": "PD-CIR-JOAQUIN-2020-01",
@@ -79,7 +84,8 @@
       "event_type": "PERSONAL_PROFESSIONAL_EXPOSURE_WITHDRAWAL",
       "evidence_state": "VERIFIED_PROCEDURAL_EXPOSURE_AND_WITHDRAWAL",
       "payment_state": "SEPARATE_ECONOMIC_ARRANGEMENT_NOT_LOCATED",
-      "causation_state": "NO_EXCLUSIVE_CAUSE_ESTABLISHED"
+      "causation_state": "NO_EXCLUSIVE_CAUSE_ESTABLISHED",
+      "communication_status": "NOT_SENT"
     },
     {
       "incident_id": "PD-CIR-JTP-2020-01",
@@ -89,7 +95,8 @@
       "event_type": "FEE_PAYMENT_INTERMEDIATION_DURING_TRANSITION",
       "evidence_state": "DOCUMENTED_PAYMENT_AND_REJECTED_FEE_ROUTE_INTENT_OPEN",
       "payment_state": "REPORTED_PAYMENT_VERIFIED_TRANSACTION_TRACE_OPEN",
-      "causation_state": "OPEN_MULTI_CAUSE"
+      "causation_state": "OPEN_MULTI_CAUSE",
+      "communication_status": "NOT_SENT"
     },
     {
       "incident_id": "PD-CIR-DANIELJIMENEZ-2020-01",
@@ -100,7 +107,8 @@
       "event_type": "INCOMING_COUNSEL_ACCESS_CONTACT_RESIGNATION_CONTROL",
       "evidence_state": "VERIFIED_CONTACT_SEQUENCE_IMPROPER_INFLUENCE_ALLEGATION_OPEN",
       "payment_state": "FEES_NONPAYMENT_MATERIAL",
-      "causation_state": "NO_PROVED_ADVERSE_CAUSED_RESIGNATION"
+      "causation_state": "NO_PROVED_ADVERSE_CAUSED_RESIGNATION",
+      "communication_status": "NOT_SENT"
     },
     {
       "incident_id": "PD-CIR-LUISMIGUELLOPEZ-2021-01",
@@ -111,7 +119,8 @@
       "event_type": "FEE_PAYMENT_DEPENDENCY_WITHDRAWAL",
       "evidence_state": "VERIFIED_REPRESENTATION_AND_WITHDRAWAL_HISTORY",
       "payment_state": "INVOICE_BY_INVOICE_AUDIT_REQUIRED",
-      "causation_state": "OPEN_NO_SPECIFIC_CAUSATIVE_REFUSAL_ESTABLISHED"
+      "causation_state": "OPEN_NO_SPECIFIC_CAUSATIVE_REFUSAL_ESTABLISHED",
+      "communication_status": "NOT_SENT"
     }
   ],
   "contact_controls": {
@@ -121,6 +130,22 @@
       "current_mgi_address_status": "VERIFIED_CURRENT_OR_AVAILABLE_PROFESSIONAL_ROUTE",
       "exact_addresses_location": "PRIVATE_INTERNAL_GOOGLE_DRIVE_CONTACT_CONTROL",
       "outreach_status": "NOT_SENT"
+    }
+  },
+  "communication_control": {
+    "control_id": "PD-FCCOM-20260926-01",
+    "human_control": "governance/FORMER_COUNSEL_COMMUNICATION_PROTOCOL_26SEP2026.md",
+    "non_engagement_rule": "Factual clarification, reconciliation, preservation and correction/right-of-reply only; no request for legal advice, legal analysis, resumed work, retainer, mandate or professional-service relationship.",
+    "silence_rule": "Non-response is not admission.",
+    "successor_platform_rule": "Current professional-platform continuity may justify routing; do not assert corporate/juridical succession without proof. If recipient says current platform is not appropriate, request the correct present firm/entity and professional email address.",
+    "disclosure_levels": [
+      "DETAILED_INCIDENT",
+      "REFERENCE_ONLY_WITH_NO_INFERENCE"
+    ],
+    "icalpa_link": {
+      "file": "ICALPA-DIP-80-2026",
+      "status": "CONTEXTUAL_EVIDENCE_LINK_ONLY",
+      "boundary": "DIP 80/2026 concerns the Administrador Concursal. Former-counsel incidents may be relevant factual context but do not make the former lawyer a respondent/subject and do not imply ICALPA acceptance or merits findings."
     }
   }
 }
