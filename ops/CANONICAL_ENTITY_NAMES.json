@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho.canonical-names.v1",
-  "control_date": "2026-09-22",
+  "control_date": "2026-09-26",
   "scope_note": "These are controlled names for repository narrative and the identified historical/procedural contexts. Historical official sources do not by themselves establish a company's present-day status.",
   "rules": [
     "Resolve an acronym through this register before expanding it.",
@@ -599,6 +599,105 @@
           "url": "https://www.poderjudicial.es/",
           "proposition": "Official institutional source for the Council's constitutional judicial-governance role."
         }
+      ]
+    },
+    {
+      "id": "E055",
+      "record_type": "legal_entity",
+      "jurisdiction": "England and Wales",
+      "canonical_name": "Hamlins LLP",
+      "first_reference": "Hamlins LLP",
+      "identifier": {
+        "type": "UK LLP number",
+        "value": "OC314426"
+      },
+      "controlled_context": "Historical UK legal adviser to the Sun Rock / Monterecco / Pink / Solos transaction and financing perimeter, evidenced in 2016–2018 correspondence and transaction documents.",
+      "role_rule": "Use only for the identified historical legal-adviser role and documents. Do not infer current retainer, current personnel, present professional status or endorsement.",
+      "repository_sources": [
+        "Gmail historical HAMLINS-DMS.S08081.1 and S08081.2 correspondence",
+        "Google Drive: MontereccoSolosDistributionAgreement-17012017.pdf",
+        "Google Drive: Sun Rock - Solos SPA - Hamlins draft - 13.12.2016.DOCX"
+      ]
+    },
+    {
+      "id": "E056",
+      "record_type": "legal_entity",
+      "jurisdiction": "England and Wales",
+      "canonical_name": "Solo's Holidays Limited",
+      "first_reference": "Solo's Holidays Limited",
+      "identifier": {
+        "type": "UK company number",
+        "value": "00964895"
+      },
+      "controlled_context": "Historical Solos group operating company; party to the 17 January 2017 Sales and Distribution Agreement and part of the proposed Sun Rock acquisition perimeter.",
+      "transaction_boundary": "The record supports a serious proposed acquisition and an executed/signed commercial distribution architecture. It does not establish that Sun Rock completed the share acquisition.",
+      "repository_sources": [
+        "Google Drive: MontereccoSolosDistributionAgreement-17012017.pdf",
+        "Google Drive: Solo's Holidays Investment Memorandum 111116.docx",
+        "Google Drive: Sun Rock - Solos SPA - Hamlins draft - 13.12.2016.DOCX"
+      ]
+    },
+    {
+      "id": "E057",
+      "record_type": "legal_entity",
+      "jurisdiction": "England and Wales",
+      "canonical_name": "The Fabulous Experience Company Limited",
+      "first_reference": "The Fabulous Experience Company Limited",
+      "identifier": {
+        "type": "UK company number",
+        "value": "07117742"
+      },
+      "controlled_context": "Historical Solos-group company and party to the 17 January 2017 Sales and Distribution Agreement, used for the couples distribution lane in the Sun Park UK sales architecture.",
+      "transaction_boundary": "Party/role in the historical distribution contract does not by itself establish present ownership, current status or completion of the wider Solos acquisition.",
+      "repository_sources": [
+        "Google Drive: MontereccoSolosDistributionAgreement-17012017.pdf"
+      ]
+    },
+    {
+      "id": "E058",
+      "record_type": "legal_entity",
+      "jurisdiction": "England and Wales",
+      "canonical_name": "Kerman & Co LLP",
+      "first_reference": "Kerman & Co LLP",
+      "identifier": {
+        "type": "UK registration",
+        "value": null,
+        "verification_status": "OPEN_EXACT_IDENTIFIER"
+      },
+      "controlled_context": "Historical counterparty/advisory-law-firm node in the 2016–2017 Solos documentation process, including review with Hamlins and Spanish counsel.",
+      "role_rule": "Use only for the historical document-review/counterparty-counsel role proved by the correspondence. Do not infer current firm status, current mandate or responsibility for Spanish-law conclusions.",
+      "repository_sources": [
+        "Gmail: Daniel Bellau / Yvonne Costello Solos correspondence, 2016–2017",
+        "Google Drive: Solos novation/annex document family"
+      ]
+    },
+    {
+      "id": "E059",
+      "record_type": "legal_entity",
+      "jurisdiction": "England and Wales",
+      "canonical_name": "The Mid-Counties Co-operative Ltd",
+      "first_reference": "The Mid-Counties Co-operative Ltd",
+      "identifier": {
+        "type": "registered society/company number",
+        "value": "IP19025R"
+      },
+      "controlled_context": "Historical UK travel-sales agent/counterparty in the 2017 Hava Vida sales-agreement architecture.",
+      "regulatory_boundary": "ATOL/ABTA credentials stated in the 2017 agreement are historical contractual recitals and must not be represented as current 2026 regulatory status without current verification.",
+      "repository_sources": [
+        "Google Drive: Hava Vida Sales Agreement Final.docx",
+        "Google Drive: Sales Agreement Hava Vida - MCT (27NOV2017).pdf"
+      ]
+    },
+    {
+      "id": "P-DBELLAU",
+      "record_type": "person",
+      "canonical_name": "Daniel Bellau",
+      "first_reference": "Daniel Bellau",
+      "controlled_context": "Historical Hamlins LLP partner leading/working on the identified Sun Rock / Solos / distribution / bond matters in contemporaneous 2016–2018 correspondence.",
+      "capacity_rule": "Attribute only the historical acts, advice, drafting and correspondence evidenced by the source. Do not state a current Hamlins role or current professional status without fresh verification.",
+      "repository_sources": [
+        "Gmail: dbellau@hamlins.co.uk historical correspondence, 2016–2018",
+        "Google Drive: Hamlins-drafted Solos transaction documents"
       ]
     }
   ]
