@@ -1,7 +1,7 @@
 # Thread continuity and preservation audit — ONA funded exit / 7 June / homepage recovery — 26 September 2026
 
 **Control:** PD-THREAD-CONTINUITY-ONA-7JUN-HOMEPAGE-20260926-01  
-**Status:** ACTIVE — PRESERVED ACROSS REVIEW/MAIN/DRIVE — PUBLIC GITLAB PAGES READBACK STILL STALE AT AUDIT CUTOFF
+**Status:** ACTIVE — PRESERVED ACROSS REVIEW/MAIN/DRIVE — RESTORED GITLAB PAGES LIVE READBACK VERIFIED
 
 ## Scope preserved
 
@@ -59,12 +59,18 @@ The five private actors remain individually attributable and distinct from the I
 
 ## Public website readback boundary
 
-At the audit cutoff, the public GitLab Pages EN/ES homepages still served the compact 25 September orientation version stating that detailed actor material had moved into Recovery. Therefore:
+The earlier audit cutoff captured the compact 25 September orientation page. That state was subsequently superseded by a successful reviewed deployment.
 
-- repository restoration is established;
-- public GitLab Pages restoration is **not yet established by live readback**;
-- a merge or successful source comparison is not proof of publication;
-- deployment/readback remains an open P0 continuity item until the public EN/ES pages visibly carry the restored actors/images/main-matter presentation and the release controls prevent reversion.
+GitLab pipeline **2885413067**, source commit `5f6d8a8bf5bd1f7563b69d5a77225f75b4e67230`, completed successfully after additional GitLab compute capacity became available.
+
+The Pages deployment job and live-readback job both succeeded. GitLab's live verifier reported exact HTTP 200 / SHA-256 matches for both root and canonical-prefixed aliases of:
+
+- EN homepage: **226,845 bytes**, SHA-256 `dcfb094898aeba75717da6afad71be72150c031e03e436f27bcf6503ad54b5c3`;
+- ES homepage: **235,663 bytes**, SHA-256 `dab16c882053efb40f8c07d1332b6af5fe5d95f8764a6aed867ef8a52573b8d7`.
+
+The deployment receipt also included the restored actor routes/assets. Therefore the live public actor/homepage restoration is established by GitLab's exact-byte readback for that deployment.
+
+Later GitLab `main` commits remain a separate repository state. A later merge is not automatically treated as a later public deployment unless independently read back.
 
 ## Cross-host omission control
 
