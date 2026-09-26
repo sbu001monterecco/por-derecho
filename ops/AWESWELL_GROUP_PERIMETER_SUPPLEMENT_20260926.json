@@ -1,0 +1,29 @@
+{
+  "schema": "por-derecho.aweswell-group-perimeter-supplement.v1",
+  "control_date": "2026-09-26",
+  "register_id": "PD-AWESWELL-PERIMETER-20260926-01",
+  "controlling_position": {
+    "holdco": "AWESWELL LIMITED",
+    "platform": "Sun Rock",
+    "perimeter_entities": [
+      "Luchy Playa Blanca, S.L.U.",
+      "Matkator, S.L.U.",
+      "Pink Canary Services, S.L.U.",
+      "Hava Vida Travel & Tourism, S.L.U."
+    ]
+  },
+  "relationship_controls": [
+    "LPB and Matkator are recorded in AWESWELL board/accounting material as directly controlled wholly-owned Spanish subsidiaries.",
+    "Pink and Hava Vida were incorporated with Patricia Isabel Domínguez Montelongo as sole shareholder.",
+    "Gil Marer states that Patricia held the Pink and Hava Vida shares for the benefit of AWESWELL LIMITED / Sun Rock; the legal effect of that beneficial-interest position remains a separate proof question.",
+    "Legal personality, registered ownership, beneficial/economic interest and platform membership must remain separate fields."
+  ],
+  "solos": {
+    "target": "Solo's Holidays 2002 Limited (04511481)",
+    "transaction": "Proposed acquisition of 100% of the target and subsidiaries, linked to signed commercial distribution agreements.",
+    "payment_mechanism": "Signed exclusivity terms provided for Net Payments from the commercial agreements to accumulate in escrow and, on completion, to be set off against the purchase price.",
+    "outcome": "Sun Rock did not complete the acquisition. Gil attributes the failure to the Spanish events affecting the wider Sun Rock matter.",
+    "later_history": "The Solos business was acquired by a third party in April 2019; the old target later became Arnloft 2002 Limited, entered members' voluntary liquidation and was dissolved in 2023.",
+    "damages_use": "Preserve transaction documents, professional work and payment architecture as contemporaneous evidence and potential damages material, subject to causation, valuation and double-counting controls."
+  }
+}
