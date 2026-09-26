@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /es/portada-archivo-20260925.html
+Disallow: /en/homepage-archive-20260925.html
+Disallow: /por-derecho/es/portada-archivo-20260925.html
+Disallow: /por-derecho/en/homepage-archive-20260925.html
 
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-unitary-control-plane.xml

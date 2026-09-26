@@ -1,0 +1,114 @@
+{
+  "schema": "por-derecho.homepage-canonical-contract.v1",
+  "control_date": "2026-09-25",
+  "canonical_public_origin": "https://sbu001monterecco.github.io/por-derecho/",
+  "mirror_origin": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/",
+  "purpose": "Keep the public homepage a concise orientation and trust layer while preserving the long-form record behind Recovery/Evidence routes.",
+  "homepage": {
+    "en": {
+      "path": "en/index.html",
+      "sha256": "77ef9aef497483d29aa7c2ceb52f0f0677c3ddcd5a4636a31483dc5a2ffba88b",
+      "max_bytes": 120000
+    },
+    "es": {
+      "path": "es/index.html",
+      "sha256": "980412345e4a74b298e9d5ee4029706e3f571ff4a338246008a419c2aa8f80dc",
+      "max_bytes": 125000
+    }
+  },
+  "required_first_level": {
+    "en": [
+      "Recovery",
+      "Future",
+      "Por Derecho",
+      "Evidence",
+      "Updates",
+      "More"
+    ],
+    "es": [
+      "Recuperación",
+      "Futuro",
+      "Por Derecho",
+      "Evidencia",
+      "Actualizaciones",
+      "Más"
+    ]
+  },
+  "required_routes": {
+    "en": [
+      "recovery-command-center/",
+      "future/",
+      "por-derecho/",
+      "evidence/",
+      "updates/",
+      "legal-notebook/"
+    ],
+    "es": [
+      "centro-mando-recuperacion/",
+      "futuro/",
+      "por-derecho/",
+      "evidencia/",
+      "actualizaciones/",
+      "cuaderno-juridico/"
+    ]
+  },
+  "required_sections": {
+    "en": [
+      "id=\"choose-route\"",
+      "60-second orientation",
+      "How to read the record"
+    ],
+    "es": [
+      "id=\"elegir-via\"",
+      "60 segundos",
+      "Cómo leer el expediente"
+    ]
+  },
+  "forbidden_homepage_tokens": [
+    "institutional-capital/",
+    "capital-institucional/",
+    "class=\"capital-entry\"",
+    "href=\"#future\"",
+    "href=\"#futuro\""
+  ],
+  "preserved_archives": [
+    "en/homepage-archive-20260925.html",
+    "es/portada-archivo-20260925.html"
+  ],
+  "capital_boundary": "Homepage → Future/Futuro → Institutional Capital/Capital Institucional. No direct homepage capital promotion.",
+  "required_destination_files": [
+    "en/recovery-command-center/index.html",
+    "es/centro-mando-recuperacion/index.html",
+    "en/future/index.html",
+    "es/futuro/index.html",
+    "en/por-derecho/index.html",
+    "es/por-derecho/index.html",
+    "en/evidence/index.html",
+    "es/evidencia/index.html",
+    "en/start/index.html",
+    "es/inicio/index.html",
+    "en/updates/index.html",
+    "es/actualizaciones/index.html",
+    "en/legal-notebook/index.html",
+    "es/cuaderno-juridico/index.html",
+    "en/matter-identity-registry/index.html",
+    "es/registro-identidad-materia/index.html",
+    "en/legal-privacy/index.html",
+    "es/aviso-legal-privacidad/index.html"
+  ],
+  "expected_canonical": {
+    "en": "https://sbu001monterecco.github.io/por-derecho/en/",
+    "es": "https://sbu001monterecco.github.io/por-derecho/es/"
+  },
+  "required_assets": [
+    "assets/homepage-legacy-route-20260925.js"
+  ],
+  "required_homepage_tokens": {
+    "en": [
+      "homepage-legacy-route-20260925.js"
+    ],
+    "es": [
+      "homepage-legacy-route-20260925.js"
+    ]
+  }
+}
