@@ -174,10 +174,10 @@
         "51ae50d951b5129b6559f6491fa7635edfc64282"
       ],
       "github_latest_clarification_blob": "4db573242d8ed2ead09e5e5b3bccb0234aabdce4",
-      "github_state": "PRESERVED_ON_EXISTING_PR__NOT_YET_MAIN_OR_LIVE",
+      "github_state": "SOURCE_CORRECTION_MERGED_ON_MAIN__HOMEPAGE_PR1893_REMAINS_SEPARATE_HELD_LANE",
       "gitlab_target_main_at_observation": "5d90b0fd0e80a655599a2b18fc88b6b4a876c9f1",
-      "gitlab_state": "QUEUED_ADDITIVE_REPLAY__CI_CAPACITY_BLOCKED__NO_PARITY_CLAIM",
-      "private_custody_state": "EXISTING_ORIGINALS_RETAINED_PRIVATE__NEW_RELEASE_PACKAGE_READBACK_NOT_YET_CLAIMED",
+      "gitlab_state": "SOURCE_REPAIR_COMMITTED_IN_MR640__CI_REPAIR_MR637_RED__NO_MAIN_PARITY_CLAIM",
+      "private_custody_state": "CURRENT_CONTROL_RECEIPTS_SYNCED__ORIGINALS_RETAINED_PRIVATE__NATIVE_ORIGINALS_NOT_FRESHLY_RECERTIFIED",
       "public_paths": [
         "archive/ALBERTO_LOPEZ_VILLARRUBIA_SIGNED_ACTS_AND_KNOWLEDGE_REGISTER_17AUG2026.md",
         "CONCURSO36_UNITARY_CRIMINAL_FIRST_GOVERNANCE.md",
@@ -237,7 +237,11 @@
         "gitlab_ci_head": "00dc56ecf8781320a42edfe64cb5801777b897a7",
         "gitlab_ci_pipeline": 2885735235,
         "gitlab_ci_state": "RUNNER_EXECUTED_REQUIRED_SCRIPT_FAILURES_NOT_GREEN",
-        "gitlab_ci_failed_job_references": [16756516572, 16756516569, 16756516571],
+        "gitlab_ci_failed_job_references": [
+          16756516572,
+          16756516569,
+          16756516571
+        ],
         "gitlab_source_lane": 640,
         "gitlab_source_predecessor": "47c5ac6a8409de66fd8b1dd9b7c076c53f07220b",
         "gitlab_source_result": "968d01ea2ef690ba63462f320471c2b8e22e833b",
@@ -247,18 +251,58 @@
         "gitlab_control_issue": 31,
         "gitlab_control_note": 3910684241,
         "github_control_tower_note": 5849530135,
-        "restored_row_dates": ["2018-06-26", "2019-10-24", "2021-02-24", "2021-05-12", "2021-07-08", "2023-07-25", "2023-09-28"],
+        "restored_row_dates": [
+          "2018-06-26",
+          "2019-10-24",
+          "2021-02-24",
+          "2021-05-12",
+          "2021-07-08",
+          "2023-07-25",
+          "2023-09-28"
+        ],
         "scoped_table_rows": 12,
         "complete_docket_claim": false,
         "changed_source_path": "archive/ALBERTO_LOPEZ_VILLARRUBIA_SIGNED_ACTS_AND_KNOWLEDGE_REGISTER_17AUG2026.md",
-        "excluded_paths_and_actions": ["homepage refinement", "runtime and images", "CI configuration changes", "private originals and locators", "email or filing", "account or runner changes", "pipeline capacity probes"],
-        "private_custody_state": "NO_NATIVE_BYTES_CHANGED_OR_REPUBLISHED_OR_FRESHLY_RECERTIFIED_NEW_RECEIPT_SYNC_PENDING",
+        "excluded_paths_and_actions": [
+          "homepage refinement",
+          "runtime and images",
+          "CI configuration changes",
+          "private originals and locators",
+          "email or filing",
+          "account or runner changes",
+          "pipeline capacity probes"
+        ],
+        "private_custody_state": "CURRENT_CONTROL_RECEIPTS_SYNCED_TO_DRIVE_AND_LIBRARY__NATIVE_JUDICIAL_ORIGINALS_NOT_FRESHLY_RECERTIFIED",
         "hash_genealogy_state": "2012_CURRENT_COPY_VS_HISTORICAL_DIGEST_RELATIONSHIP_UNRESOLVED_NOT_A_CRYPTOGRAPHIC_COLLISION",
-        "parallel_work": ["!637 historical-source composition", "!637 test-isolation diagnosis", "!637 exact remote-artifact provenance", "!640 source completeness and current-main reconciliation", "existing private custody and downstream-use correction queue"],
+        "parallel_work": [
+          "!637 historical-source composition",
+          "!637 test-isolation diagnosis",
+          "!637 exact remote-artifact provenance",
+          "!640 source completeness and current-main reconciliation",
+          "existing private custody and downstream-use correction queue"
+        ],
         "integration_rule": "Parallel diagnosis/preparation; one integrator; preserve newer work and all source qualifications. No skipped/manual/old-head result counts as a pass. No weakening or bypass of required checks.",
         "evidentiary_rule": "Preserve the connected criminal/prosecutorial allegation and actor-specific causal inquiry. Distinguish primary-source integrity, derivative completeness and CI assurance. Retain supporting, neutral and contrary acts. Copies from one origin are not independent corroboration. No incident-to-guilt or defect-to-falsity inference.",
-        "open_holds": ["!637 required exact-head checks", "!640 then-current-main integration and required exact-head checks", "2012 binary provenance genealogy", "affected downstream-use reconciliation", "independent private receipt readback"],
-        "overall_state": "ORANGE_NOT_COMPLETE"
+        "open_holds": [
+          "!637 required exact-head checks",
+          "!640 then-current-main integration and required exact-head checks",
+          "2012 binary provenance genealogy",
+          "affected downstream-use reconciliation"
+        ],
+        "overall_state": "ORANGE_NOT_COMPLETE",
+        "github_main_after_source_merge": "cef20bbac4e27be69f1b4a50b8eab36a71e419ad",
+        "github_source_pr": 1943,
+        "github_source_head": "dcae4d8e6a3adf0d84b3c5ec7ee1c76d37047164",
+        "github_source_merge_commit": "cef20bbac4e27be69f1b4a50b8eab36a71e419ad",
+        "github_source_state": "MERGED_TO_MAIN_EXACT_HEAD_CHECKS_PASSED_CONTROLLER_VERIFIED_FOR_SCOPE",
+        "github_controller_fence": 51,
+        "github_controller_verification_run": 36269396238,
+        "github_controller_state_blob": "f108c025cc622f7d987b8c0affd393d915921129",
+        "drive_anchor_state": "CURRENT_ACCOUNT_ROOT_POINTER_AND_FINAL_SOURCE_RECEIPTS_SYNCED_AND_READ_BACK",
+        "library_successor": "PD_RECURSIVE_GREEN_AUDIT_ACCOUNT_ROOT_CURRENT_20260926_v4.md",
+        "library_successor_state": "SYNCED_AND_READ_BACK",
+        "library_successor_sha256": "38ae53de4b8aa856777fcacbbaeff15370d1f4aa8725c6abc7cb6618d678896f",
+        "canonical_registration_closeout": "COMPLETE_FOR_CURRENT_RECEIPTS__OVERALL_AUDIT_REMAINS_ORANGE"
       }
     }
   ],
