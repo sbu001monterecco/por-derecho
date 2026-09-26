@@ -190,12 +190,20 @@
       .pd-puzzle-promo__cta{margin-top:.3rem;font-size:.53rem;padding:.3rem .4rem}
       .pd-puzzle-promo__close{top:-8px;right:-8px}
     }
-    @media (max-width:380px),(max-height:500px){
+    @media (max-width:380px){
       .pd-puzzle-promo{width:min(112px,32vw)}
       .pd-puzzle-promo__link{min-height:100px;padding:9px 8px 8px}
       .pd-puzzle-promo__network{height:29px;margin:0 0 3px}
       .pd-puzzle-promo__title{font-size:.82rem}
       .pd-puzzle-promo__cta{font-size:.54rem}
+    }
+    @media (max-height:500px){
+      .pd-puzzle-promo{width:112px}
+      .pd-puzzle-promo__link{min-height:84px;padding:8px 8px 7px}
+      .pd-puzzle-promo__network{height:25px;margin:0 0 3px}
+      .pd-puzzle-promo__eyebrow{font-size:.5rem;white-space:nowrap}
+      .pd-puzzle-promo__title,.pd-puzzle-promo__body{display:none}
+      .pd-puzzle-promo__cta{margin-top:.28rem;font-size:.52rem;padding:.28rem .38rem}
     }
     @media (prefers-reduced-motion:reduce){
       .pd-puzzle-promo{transition:none;transform:none}
