@@ -211,3 +211,27 @@ The publication must separately show:
 - contrary explanations and missing proof.
 
 No republished page should state that every element was unconditional, fully executed or certain to close unless the underlying primary document proves that exact proposition.
+
+
+## 13. Irigoyen 13-Jun first-hop closure — 26 Sep 2026
+
+A targeted three-mailbox search recovered the first-hop contemporaneous 13-Jun-2018 report from Daniel Irigoyen following his same-day meetings with the Mercantile Judge and the Insolvency Administrator, plus his attached one-page draft `Esquema Escrito para proceder a la conclusión del concurso`.
+
+### Source-qualified findings
+- Irigoyen reported that he presented himself as counsel tasked with coordinating the fund, shareholder/company and hotel operator and explained that negotiations were progressing while the improved-offer timetable was running.
+- He reported proposing conclusion of the concurso by paying the insolvency debt and asking whether the court would permit that route.
+- According to Irigoyen's contemporaneous account, the Judge regarded conclusion as a route worth exploring and asked for the conclusion request to be presented immediately, with the AC to update the debt and a possible deposit/guarantee to follow. This is a **contemporaneous professional account of the meeting**, not a judicial order.
+- Irigoyen's stated implementation sequence was: file conclusion request → court may require deposit/guarantee and AC debt update → debt update and deposit/guarantee → clarification/rectification or payment/consignation → AC report and accounts → conclusion order, subject to any incident/objection.
+- The attached draft states that the applicant had the firm intention to consign and satisfy all identified claims, with financial means/support for that purpose and viable operation of the complex; contemplated a comfort letter, financier declaration to consign the certified amount up to an agreed cap, fund/operator contracts and any guarantee/deposit required by the court; and requested an exact AC debt certificate so consignation and Article 176 conclusion could proceed.
+- Irigoyen separately reported meeting the AC and requesting cooperation; his account records the AC saying it would provide the collaboration required by law.
+- On 14 Jun 2018 Juan Tomás Parrilla wrote to the team that Rosa Gual had briefed him on developments after the ONA lawyer's court visit, described them as apparently good news, and expressly said the consignation route continued in parallel.
+- The draft source is now preserved in the canonical Drive source folder as `ONA-EXIT-016__Irigoyen__Esquema_Conclusion_Concurso_Art176__13JUN2018.docx` (Drive ID `1uYV9Gt5mG9uS_GKJIskHQ7Mygy95GA-U`).
+
+### Gap reclassification
+The former broad “recover complete 13-Jun court/AC presentation” gap is **substantially closed for the contemporaneous professional-account and draft-scheme layer**. It remains open only for provider-native institutional proof: any actual filed/signed conclusion application, LexNET/registry receipt, court docket entry, judicial order responding to it, and any AC written response. Do not promote the recovered draft into a filed pleading without those sources.
+
+## 14. AC convenio-evaluation gap reclassification — 26 Sep 2026
+
+The 26-Jun-2017 court order now provides primary institutional proof that an AC `escrito ... de evaluación de la propuesta de convenio` had been filed and was ordered made available in the Judicial Office. Same-day contemporaneous emails preserve the court order and creditor outreach around a proposed 100%-payment convenio.
+
+The gap is therefore no longer “does the AC evaluation exist / was it filed?” It is narrowed to **production of the underlying evaluation text and its exact conclusions**. Until recovered, do not infer the content of the AC evaluation from the court order alone.
