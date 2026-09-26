@@ -98,3 +98,36 @@ The principal close-out control file was read from both GitHub and GitLab and ma
 Do not restart this work from memory or reduce it to one lender, one buyer, one legal opinion or one procedural event. Continue from the canonical controls above; add evidence with provenance and maturity; preserve contrary evidence; preserve earlier versions; and keep the distinction between documentary fact, contemporaneous professional account, judicial finding, inference and attributed allegation.
 
 If a remaining source exists only as an expired ChatGPT conversation upload and has no Gmail/Drive/repository copy, identify that exact source for re-upload rather than silently substituting another document.
+
+
+## 9. Final CI readback after alignment repair
+
+### GitHub
+After merging current `main` forward and adding this audit record, PR #1911 remained open and mergeable. The branch is no longer behind current `main`. At final audit readback, most required workflows had completed successfully and several remained in progress. No merge was forced or claimed.
+
+### GitLab
+The rebased MR !618 produced a fresh pipeline after current-main alignment, but the pipeline failed. This audit therefore leaves MR !618 open and **not merge-ready**.
+
+The failing jobs are not evidence that the ONA documentary proposition has been falsified. They are repository publication/control gates and must be treated separately:
+
+- `verify-tested-build-handoff`: the test continues to report an immutable tested-build configuration mismatch, including the explicit error `Unreviewed current implementation: tested-build CI configuration` and a stored/config SHA mismatch.
+- `verify-publication-controls`: publication-control checks remain blocked by reviewed-source / release-control state.
+- `verify-gitlab-public-frontend`: the frontend release path reports a separately reviewed R33 source-byte change (`assets/r33-truth-machine-visual-20260925.svg`) and blocks publication.
+- `verify-ricpe-static-readers`: downstream history/config tests inherit the same tested-build configuration guard.
+- `audit-connected-automation`: failed but is an allow-failure diagnostic; the ONA evidence automation itself was separately read through Automations and is enabled.
+
+Current GitLab `main` separately had a successful pipeline at the time of this audit. Accordingly, do not “fix” or bypass these publication controls by weakening checks. Reconcile the immutable CI/release lineage in its own controlled workstream before merging this evidence branch.
+
+### Automation visibility caveat
+The ONA Evidence Cycle is enabled with its hourly RRULE and Atlantic/Canary timezone. The automation service currently reports the last run time but returns no populated `next_run_time`. Treat this as a scheduling-visibility caveat: the task is enabled, but its next-fire timestamp is not independently confirmed by the returned state.
+
+## 10. Audit conclusion
+
+**Continuity and preservation are secured at the evidence/control level. Publication is intentionally not represented as complete.**  
+The controlling state is:
+- Drive evidence and control copies preserved;
+- GitHub/GitLab audit record parity verified;
+- GitHub branch current-main alignment repaired and review remains open;
+- GitLab branch rebased but merge blocked by repository publication/CI controls;
+- hourly recursive evidence task re-enabled;
+- corpus remains **NOT EXHAUSTED** and no final exhaustion certificate has been issued.
