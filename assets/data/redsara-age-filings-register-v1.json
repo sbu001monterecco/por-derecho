@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.redsara-age-filings-register.v1",
   "register_id": "PD-SP-REDSARA-AGE-FILINGS-001",
-  "control_date": "2026-09-24",
+  "control_date": "2026-09-25",
   "derived_projection": {
     "canonical_communications_register": "assets/data/institutional-communications-register-v1.json",
     "canonical_communications_register_id": "PD-SP-INSTITUTIONAL-COMMUNICATIONS-001",

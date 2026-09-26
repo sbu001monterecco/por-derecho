@@ -62,6 +62,9 @@ def main() -> int:
     events = communications.get("events", [])
     regage = [event for event in events if event.get("channel") == "REGAGE"]
     incoming = [event for event in events if event.get("direction") == "INBOUND_FROM_INSTITUTION"]
+    from prepare_platform_incibe_20260925 import validated_platform_event_ids
+    platform_ids = validated_platform_event_ids(events, ROOT)
+    platform_incoming = [e for e in incoming if e['event_id'] in platform_ids]
     if len(regage) != 400:
         fail(f"canonical source has {len(regage)} rather than 400 REGAGE events", errors)
     status_export_regage = [event for event in regage if str(event.get("source_key", "")).startswith("REGAGE_STATUS_EXPORT_20260921:")]
@@ -82,7 +85,7 @@ def main() -> int:
     }
     additive_batches = {'PD-SP-ORION-NOTICE-20260905', 'PD-CAJASIETE-ACCOUNTABILITY-20260918'}
     supplemental_incoming = [event for event in incoming if str(event.get('source_key', '')).startswith('SUPPLEMENTAL_20260924:')]
-    legacy_incoming = [event for event in incoming if event.get('source_batch_id') not in additive_batches and not str(event.get('source_key', '')).startswith('SUPPLEMENTAL_20260924:')]
+    legacy_incoming = [event for event in incoming if event.get('source_batch_id') not in additive_batches and not str(event.get('source_key', '')).startswith('SUPPLEMENTAL_20260924:') and event['event_id'] not in platform_ids]
     notice_found = {event['event_id']: event for event in incoming if event.get('source_batch_id') == 'PD-SP-ORION-NOTICE-20260905'}
     cajasiete_found = {event['event_id']: event for event in incoming if event.get('source_batch_id') == 'PD-CAJASIETE-ACCOUNTABILITY-20260918'}
     if len(legacy_incoming) != 163:
@@ -93,7 +96,7 @@ def main() -> int:
         fail("additive Cajasiete incoming cohort differs from its source-controlled records", errors)
     if len(supplemental_incoming) != 3:
         fail(f"24-Sep supplemental incoming cohort has {len(supplemental_incoming)} rather than 3 events", errors)
-    if len(incoming) != 163 + len(notice_expected) + len(cajasiete_expected) + len(supplemental_incoming):
+    if len(incoming) != 163 + len(notice_expected) + len(cajasiete_expected) + len(supplemental_incoming) + len(platform_incoming):
         fail("combined incoming-event denominator does not reconcile", errors)
     for event in incoming:
         for field in ("event_id", "event_date", "official_reference", "office", "source_integrity"):

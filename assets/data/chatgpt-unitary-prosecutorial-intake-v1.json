@@ -1,0 +1,135 @@
+{
+  "schema": "por-derecho.chatgpt-unitary-prosecutorial-intake.v1",
+  "control_id": "PD-CHATGPT-UCF-INTAKE-20260925-01",
+  "effective_date": "2026-09-25",
+  "status": "ALWAYS_ON_ADVISORY_ANALYTICAL_INTAKE",
+  "case_model": "ONE_EVIDENCE_GRAPH_MULTIPLE_LEGAL_OUTPUTS",
+  "mandatory_intake": [
+    "SOURCE_IDENTITY",
+    "MATTER_ACTOR_CAPACITY_DATE",
+    "BOUNDED_PROPOSITIONS",
+    "EXISTING_GRAPH_MATCH",
+    "SOURCE_ORIGIN_INDEPENDENCE",
+    "CONTRARY_RECORD",
+    "CORRECTION_SUPERSESSION",
+    "BACKWARD_GENEALOGY",
+    "FORWARD_PROPAGATION",
+    "CRIMINAL_ELEMENT_TEST",
+    "NONCRIMINAL_OUTPUTS",
+    "DECISIVE_MISSING_SOURCE",
+    "NEW_TO_OLD_PROPAGATION",
+    "OLD_TO_NEW_PROPAGATION"
+  ],
+  "transition_alarms": [
+    "ALLEGATION_TO_ASSUMED_FACT",
+    "ATTRIBUTED_STATEMENT_TO_INSTITUTIONAL_PREMISE",
+    "DISPUTED_DEBT_TO_RECOGNISED_CLAIM",
+    "QUANTIFIED_TO_CONTINGENT_NO_AMOUNT",
+    "CONTINGENT_NO_AMOUNT_TO_REQUANTIFIED_REUSE",
+    "PRIVATE_OFFICEHOLDER_TO_COMMUNITY",
+    "COMMUNITY_ORGAN_TO_UNIVERSAL_HOTEL_AUTHORITY",
+    "CREDITOR_TO_OWNER",
+    "CREDITOR_TO_MATERIAL_CONTROLLER",
+    "LATER_TITLE_TO_EARLIER_AUTHORITY",
+    "RECEIPT_TO_PERSONAL_KNOWLEDGE",
+    "NOTICE_TO_ADOPTION",
+    "ADVERSE_JUDGMENT_TO_UNIVERSAL_FACT",
+    "MEETING_VALIDITY_TO_DEBT_VALIDITY",
+    "PROVISIONAL_TO_FINAL",
+    "SAME_ORIGIN_TO_CORROBORATION",
+    "BENEFIT_TO_INTENT",
+    "CHRONOLOGY_TO_CAUSATION",
+    "INSTITUTIONAL_POSSESSION_TO_EXAMINATION",
+    "EXAMINATION_TO_AGREEMENT",
+    "OPEN_GAP_TO_NEGATIVE_FACT"
+  ],
+  "criminal_element_fields": [
+    "actor",
+    "capacity",
+    "date_or_period",
+    "source",
+    "act_or_omission",
+    "authority",
+    "alleged_falsity_or_invalid_premise",
+    "knowledge",
+    "intent",
+    "adoption_or_use",
+    "recipient",
+    "effect",
+    "causation",
+    "beneficiary_or_harm",
+    "contrary_or_lawful_alternative",
+    "decisive_missing_proof"
+  ],
+  "numeric_genealogy_fields": [
+    "amount",
+    "category",
+    "date",
+    "source",
+    "legal_status",
+    "calculation",
+    "change_event",
+    "later_reuse",
+    "economic_or_procedural_consequence"
+  ],
+  "organ_person_resolution": [
+    "legal_person_or_body",
+    "office_or_role",
+    "named_actor",
+    "date",
+    "mandate_or_power",
+    "source",
+    "act_or_omission",
+    "recipient",
+    "effect"
+  ],
+  "propagation": [
+    "NEW_TO_OLD",
+    "OLD_TO_NEW"
+  ],
+  "special_triggers": {
+    "community_debt": [
+      "COMMUNITY_DEBT",
+      "MOROSITY",
+      "QUOTA",
+      "VOTE_EXCLUSION",
+      "COMMUNITY_CERTIFICATE",
+      "2017_CONTINGENT_CREDIT",
+      "BETTER_BID_1145798_29"
+    ],
+    "protective_origin": [
+      "CONCURSO_ORIGIN",
+      "CALIFICACION_CAUSATION",
+      "MONEY_IN_OUT",
+      "FUNDED_EXIT"
+    ],
+    "truth_machine": [
+      "ADVERSE_FILING",
+      "INSTITUTIONAL_SUMMARY",
+      "NUMERIC_REUSE",
+      "LATER_USE",
+      "CORRECTION",
+      "FAVOURABLE_EVIDENCE"
+    ]
+  },
+  "required_outputs": [
+    "CRIMINAL_PROSECUTORIAL",
+    "INSOLVENCY",
+    "CIVIL_LPH",
+    "ADMINISTRATIVE",
+    "REGULATORY_PUBLIC_FUNDS",
+    "PROFESSIONAL_DISCIPLINE",
+    "RECOVERY_RESTITUTION"
+  ],
+  "guardrails": [
+    "ONE_GRAPH_DOES_NOT_MEAN_ONE_PROCEEDING",
+    "ONE_GRAPH_DOES_NOT_MEAN_COLLECTIVE_GUILT",
+    "CRIMINAL_FIRST_MEANS_ELEMENT_FIRST",
+    "OFFENCE_LABEL_DOES_NOT_UPGRADE_EVIDENCE",
+    "SOURCE_REPETITION_IS_NOT_CORROBORATION",
+    "RELATIONSHIP_DOES_NOT_TRANSFER_INTENT_OR_LIABILITY",
+    "JUDGMENT_PROVES_HOLDING_NOT_EVERY_INPUT_PREMISE",
+    "MEMORY_IS_NOT_EVIDENTIAL_AUTHORITY",
+    "NO_EXTERNAL_ACTION_WITHOUT_SEPARATE_AUTHORITY"
+  ]
+}

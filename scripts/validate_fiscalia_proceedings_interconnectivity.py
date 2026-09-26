@@ -91,17 +91,28 @@ def main() -> int:
         event["event_id"] for event in communications["events"]
         if event.get("source_batch_id") == "PD-DP1901-EG745-REGISTERED-20260921"
     }
-    event_ids = canonical_event_ids - excluded_authority_ids - set(expected_notices) - cajasiete_notice_ids - status_export_ids
+    from prepare_platform_incibe_20260925 import validated_platform_event_ids
+    platform_ids = validated_platform_event_ids(communications['events'], ROOT)
+    # Preserve the six already-canonical 24-Sep successor identities.
+    # The legacy 643/320 controls remain exact for their original scope.
+    expected_supplemental_ids = {'PD-SP-EVT-0497', 'PD-SP-EVT-0498', 'PD-SP-EVT-0499',
+                                'PD-SP-EVT-1157', 'PD-SP-EVT-1158', 'PD-SP-EVT-1159'}
+    supplemental_ids = {e['event_id'] for e in communications['events']
+                        if str(e.get('source_key', '')).startswith('SUPPLEMENTAL_20260924:')}
+    require(supplemental_ids == expected_supplemental_ids, '24-Sep successor identity set mismatch', errors)
+    event_ids = canonical_event_ids - excluded_authority_ids - set(expected_notices) - cajasiete_notice_ids - status_export_ids - platform_ids
     projected_ids = {event["event_id"] for event in payload["events"]}
 
     require(payload.get("schema_version") == "1.0.0", "schema version changed", errors)
     require(payload.get("status") == "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION", "projection status changed", errors)
     require(
-        len(canonical_event_ids) == 643
+        len(canonical_event_ids - platform_ids - supplemental_ids) == 643
         and len(status_export_ids) == 284
         and len(completed_filing_ids) == 24
         and completed_filing_ids <= event_ids
-        and len(event_ids) == len(projected_ids) == 320
+        and len(event_ids - supplemental_ids) == 320
+        and len(event_ids) == len(projected_ids) == 320 + len(expected_supplemental_ids)
+        and supplemental_ids <= projected_ids
         and event_ids == projected_ids,
         "event denominator or identity mismatch",
         errors,

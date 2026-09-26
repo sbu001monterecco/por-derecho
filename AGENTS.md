@@ -739,3 +739,22 @@ For every material analysis of Concurso 36/2012 origin, Calificación causation,
 - Keep Montelanza/Molina-linked dissidents/representatives, the later Acosta Matos/CAM perimeter, the Insolvency Administrator and judicial actors legally and evidentially distinct. Functional convergence never transfers knowledge, intent or liability.
 - Formal `calificación culpable` is not a free-standing guilt label for judges or unrelated third parties. Keep formal insolvency classification, criminal liability, professional discipline, civil liability and judicial accountability on their correct routes.
 - Preserve the strongest contrary evidence, including genuine debtor-side failures if proved. Role reversal is a test, not a predetermined result.
+
+
+## PD-GOV-UCF-INTAKE — ALWAYS-ON UNITARY PROSECUTORIAL INTAKE
+
+Apply `PD-CHATGPT-UCF-INTAKE-20260925-01` from `.github/governance/CHATGPT_UNITARY_PROSECUTORIAL_INTAKE_GATE_25SEP2026.md` to every substantive Por Derecho source review.
+
+- One evidence graph; multiple legally distinct outputs.
+- Do not answer a material source as an isolated civil, insolvency, accounting or regulatory item when it changes another track.
+- Run backward genealogy and forward propagation before finalising significance.
+- Run actor × capacity × date and legal-person/body → officeholder resolution.
+- Run source-independence and same-origin deduplication before describing corroboration.
+- Run numeric genealogy on material debt, credit, valuation, payment, bid, funding and income figures.
+- Run state-transition alarms, including disputed→recognised, quantified→contingent→requantified, private actor→institutional label, creditor→owner/controller, notice→adoption, meeting validity→debt validity and later title→earlier authority.
+- Criminal/prosecutorial first means element-first: actor, capacity, act/omission, authority, alleged false/invalid premise, knowledge, intent, use, recipient, effect, causation, benefit/harm, contrary explanation and decisive proof.
+- Preserve the principal's direct attributed criminal position strongly, but never convert it into adjudicated guilt or use an offence label to upgrade evidence.
+- Every material correction, favourable source and adverse source must propagate both NEW→OLD and OLD→NEW.
+- ChatGPT/account memory is retrieval assistance only; current primary sources and current repository controls govern.
+- Before using GitLab as a control source, read `ops/CHATGPT_CROSS_HOST_CONTROL_MANIFEST.json`; current GitHub/GitLab bootstrap blobs are not presumed identical.
+- For Community fees/debt/vote cases, apply both `PD-COMMUNITY-DEBT-ROLE-REVERSAL-20260925-01` and `PD-COMMUNITY-COURT-COMPLETENESS-20260925-01`.
