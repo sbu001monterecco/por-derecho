@@ -18,6 +18,8 @@ PATHS = {
     "proceedings": ROOT / "assets/data/matter-identity-registry-v1.proceedings.json",
     "complete": ROOT / "assets/data/concurso36-complete-record-v1.json",
     "court_file": ROOT / "assets/data/concurso36-court-file-v1.json",
+    "decision_continuity": ROOT / "assets/data/concurso36-decision-continuity-2014-2026-v1.json",
+    "binary_register": ROOT / "archive/CONCURSO_36_2012_CANONICAL_COURT_BINARY_REGISTER_17AUG2026.md",
 }
 
 def load(path):
@@ -48,6 +50,8 @@ def main():
     procs={r["id"] for r in records(load(PATHS["proceedings"]))}
     complete={r.get("canonical_id") for r in records(load(PATHS["complete"]))}
     court={r.get("id") for r in records(load(PATHS["court_file"]))}
+    continuity={r.get("id") for r in records(load(PATHS["decision_continuity"]))}
+    binary_text=PATHS["binary_register"].read_text(encoding="utf-8")
 
     gap_ids=[g.get("id") for g in ctl.get("open_gaps",[])]
     if len(gap_ids)!=len(set(gap_ids)) or any(not x for x in gap_ids):
@@ -82,10 +86,9 @@ def main():
                 fail(f"{eid}: institution edge lacks relation",failures)
         for rid in ev.get("record_ids",[]):
             record_refs.add(rid)
-            if rid not in complete and rid not in court:
-                # decision-continuity aliases are allowed only where the underlying record also appears.
-                if not rid.startswith("C36-DC-"):
-                    fail(f"{eid}: record ID not resolved in complete/court-file registry: {rid}",failures)
+            resolved = rid in complete or rid in court or rid in continuity or rid in binary_text
+            if not resolved:
+                fail(f"{eid}: record ID not resolved in canonical record/court-file/continuity/binary registers: {rid}",failures)
         for gid in ev.get("open_gap_ids",[]):
             if gid not in gap_set:
                 fail(f"{eid}: unknown open gap {gid}",failures)
