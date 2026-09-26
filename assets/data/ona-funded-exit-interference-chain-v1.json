@@ -6,27 +6,114 @@
   "supplements": "PD-ONA-FX-20260826-01",
   "publication_boundary": "Underlying acts/effects may be documented or judicially found; deliberate sabotage, concert and criminal liability remain attributed allegations unless finally adjudicated.",
   "nodes": [
-    {"id":"ONA-FX-010","date":"2018-06-06","type":"DOCUMENTED_FACT","label":"Signed operator + €26m exit/LOI + ECO valuation + DD + term-sheet package"},
-    {"id":"ONA-FX-011","date":"2018-06-07","type":"ATTRIBUTED_CONTEMPORANEOUS_ACCOUNT","label":"Irigoyen maps bid route and all-creditor pay/consign/conclude route with ONA plan"},
-    {"id":"ONA-FX-012","date":"2018-06-13","type":"ATTRIBUTED_CONTEMPORANEOUS_ACCOUNT","label":"Sanz reports court receptive to debt-payment conclusion route"},
-    {"id":"ONA-FX-013","date":"2018-09-26","type":"ATTRIBUTED_CONTEMPORANEOUS_ACCOUNT","label":"AC/judge meeting: €13.1m figure accepted as erroneous; bid relevance disputed"},
-    {"id":"ONA-FX-014","date":"2018-11-28","type":"DOCUMENTED_PROCEDURAL_FACT","label":"Separate locales/pools sale to CAM for €400,000"},
-    {"id":"ONA-FX-015","date":"2018-12-24","type":"ATTRIBUTED_CONTEMPORANEOUS_ACCOUNT","label":"Irigoyen warns AC separation damages debt-payment exit and future auction"},
-    {"id":"ONA-FX-016","date":"2018-12-24","type":"ATTRIBUTED_PROFESSIONAL_ASSESSMENT","label":"Irigoyen says process broken and proposes court/AP recourse"},
-    {"id":"ONA-FX-017","date":"2019-02","type":"DOCUMENTED_FACT","label":"ONA/Clubotel continues Sun Park contractual/addendum work"},
-    {"id":"ONA-FX-018","date":"2019-10-24","type":"JUDICIAL_FINDING","label":"Court refuses validation: separate sale contradicted unitary liquidation structure"},
-    {"id":"ONA-FX-019","date":"2019-10-24","type":"JUDICIAL_FINDING","label":"Court: stripping unencumbered installations impairs improved bids; no prior judicial authorization"},
-    {"id":"ONA-FX-020","date":"2019-10-30","type":"CONTEMPORANEOUS_PROFESSIONAL_SUMMARY","label":"Cuatrecasas summarises unitary-sale ruling and reopened bid window"}
+    {
+      "id": "ONA-FX-010",
+      "date": "2018-06-06",
+      "type": "DOCUMENTED_FACT",
+      "label": "Signed operator + €26m exit/LOI + ECO valuation + DD + term-sheet package"
+    },
+    {
+      "id": "ONA-FX-011",
+      "date": "2018-06-07",
+      "type": "ATTRIBUTED_CONTEMPORANEOUS_ACCOUNT",
+      "label": "Irigoyen maps bid route and all-creditor pay/consign/conclude route with ONA plan"
+    },
+    {
+      "id": "ONA-FX-012",
+      "date": "2018-06-13",
+      "type": "ATTRIBUTED_CONTEMPORANEOUS_ACCOUNT",
+      "label": "Sanz reports court receptive to debt-payment conclusion route"
+    },
+    {
+      "id": "ONA-FX-013",
+      "date": "2018-09-26",
+      "type": "ATTRIBUTED_CONTEMPORANEOUS_ACCOUNT",
+      "label": "AC/judge meeting: €13.1m figure accepted as erroneous; bid relevance disputed"
+    },
+    {
+      "id": "ONA-FX-014",
+      "date": "2018-11-28",
+      "type": "DOCUMENTED_PROCEDURAL_FACT",
+      "label": "Separate locales/pools sale to CAM for €400,000"
+    },
+    {
+      "id": "ONA-FX-015",
+      "date": "2018-12-24",
+      "type": "ATTRIBUTED_CONTEMPORANEOUS_ACCOUNT",
+      "label": "Irigoyen warns AC separation damages debt-payment exit and future auction"
+    },
+    {
+      "id": "ONA-FX-016",
+      "date": "2018-12-24",
+      "type": "ATTRIBUTED_PROFESSIONAL_ASSESSMENT",
+      "label": "Irigoyen says process broken and proposes court/AP recourse"
+    },
+    {
+      "id": "ONA-FX-017",
+      "date": "2019-02",
+      "type": "DOCUMENTED_FACT",
+      "label": "ONA/Clubotel continues Sun Park contractual/addendum work"
+    },
+    {
+      "id": "ONA-FX-018",
+      "date": "2019-10-24",
+      "type": "JUDICIAL_FINDING",
+      "label": "Court refuses validation: separate sale contradicted unitary liquidation structure"
+    },
+    {
+      "id": "ONA-FX-019",
+      "date": "2019-10-24",
+      "type": "JUDICIAL_FINDING",
+      "label": "Court: stripping unencumbered installations impairs improved bids; no prior judicial authorization"
+    },
+    {
+      "id": "ONA-FX-020",
+      "date": "2019-10-30",
+      "type": "CONTEMPORANEOUS_PROFESSIONAL_SUMMARY",
+      "label": "Cuatrecasas summarises unitary-sale ruling and reopened bid window"
+    }
   ],
   "edges": [
-    {"from":"ONA-FX-010","to":"ONA-FX-011","relation":"TRANSACTION_ARCHITECTURE_TO_EXIT_ROUTE"},
-    {"from":"ONA-FX-011","to":"ONA-FX-012","relation":"EXIT_ROUTE_TO_COURT_PRESENTATION"},
-    {"from":"ONA-FX-012","to":"ONA-FX-013","relation":"COURT_KNOWLEDGE_TO_DEBT_QUANTUM_WORK"},
-    {"from":"ONA-FX-013","to":"ONA-FX-014","relation":"DEBT_AND_BID_CONTEXT_TO_SEPARATE_ASSET_SALE"},
-    {"from":"ONA-FX-014","to":"ONA-FX-015","relation":"SALE_TO_CONTEMPORANEOUS_HARM_WARNING"},
-    {"from":"ONA-FX-015","to":"ONA-FX-017","relation":"WARNING_TO_CONTINUING_OPERATOR_WORKSTREAM"},
-    {"from":"ONA-FX-014","to":"ONA-FX-018","relation":"SALE_TO_LATER_JUDICIAL_REJECTION"},
-    {"from":"ONA-FX-015","to":"ONA-FX-019","relation":"CONTEMPORANEOUS_WARNING_CORROBORATED_STRUCTURALLY_BY_LATER_JUDICIAL_FINDING"}
+    {
+      "from": "ONA-FX-010",
+      "to": "ONA-FX-011",
+      "relation": "TRANSACTION_ARCHITECTURE_TO_EXIT_ROUTE"
+    },
+    {
+      "from": "ONA-FX-011",
+      "to": "ONA-FX-012",
+      "relation": "EXIT_ROUTE_TO_COURT_PRESENTATION"
+    },
+    {
+      "from": "ONA-FX-012",
+      "to": "ONA-FX-013",
+      "relation": "COURT_KNOWLEDGE_TO_DEBT_QUANTUM_WORK"
+    },
+    {
+      "from": "ONA-FX-013",
+      "to": "ONA-FX-014",
+      "relation": "DEBT_AND_BID_CONTEXT_TO_SEPARATE_ASSET_SALE"
+    },
+    {
+      "from": "ONA-FX-014",
+      "to": "ONA-FX-015",
+      "relation": "SALE_TO_CONTEMPORANEOUS_HARM_WARNING"
+    },
+    {
+      "from": "ONA-FX-015",
+      "to": "ONA-FX-017",
+      "relation": "WARNING_TO_CONTINUING_OPERATOR_WORKSTREAM"
+    },
+    {
+      "from": "ONA-FX-014",
+      "to": "ONA-FX-018",
+      "relation": "SALE_TO_LATER_JUDICIAL_REJECTION"
+    },
+    {
+      "from": "ONA-FX-015",
+      "to": "ONA-FX-019",
+      "relation": "CONTEMPORANEOUS_WARNING_CORROBORATED_STRUCTURALLY_BY_LATER_JUDICIAL_FINDING"
+    }
   ],
   "transaction_dependencies": [
     "reliable_debt_amount",
@@ -48,5 +135,22 @@
   "public_routes": {
     "es": "/es/ona-hotels-salida-concurso-36-2012/cadena-interferencia-salida-financiada/",
     "en": "/en/ona-hotels-insolvency-exit-36-2012/funded-exit-interference-chain/"
+  },
+  "canonical_readiness_rule": {
+    "updated": "2026-09-26",
+    "status": "CONTROLLING_CASE_POSITION_WITH_EVIDENTIAL_BOUNDARY",
+    "proposition": "By the June 2018 Las Palmas court/judge presentation involving Daniel Irigoyen, the Article 176 exit is to be analysed as closure-capable and execution-ready on an aggregate, multi-layered basis; document-specific incompleteness must not be converted into transaction-level unreadiness.",
+    "exact_labels": [
+      "signed direct instrument",
+      "issuer-labelled binding/conditional offer",
+      "term sheet/active negotiation",
+      "diligence/security preparation",
+      "institutional interest/outreach",
+      "preliminary verbal fallback",
+      "post-cutoff continuity",
+      "not established/missing proof"
+    ],
+    "seven_june_interlock": "Gil Marer and the Aweswell/LPB-side case theory attribute the failure to consummate the funded exit in full / 100% to the 7 June 2018 takeover by force and the lack or denial of effective judicial protection that followed, and allege deliberate sabotage of the ONA-led funded exit. Causation, intent, concert and criminal liability remain attributed allegations unless established by competent adjudication.",
+    "contrary_evidence_rule": "Search and preserve independent route-specific failure explanations, but test them against the aggregate redundant package rather than using one failed or incomplete route to downgrade the whole exit architecture."
   }
 }

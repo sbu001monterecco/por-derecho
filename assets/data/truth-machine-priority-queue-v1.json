@@ -29,8 +29,9 @@
         {
           "path": "assets/data/r33-truth-machine-visual-20260925.json",
           "github_blob_sha": "1fb21667cca5b065f16954204ece6372c4b26e3d",
-          "gitlab_blob_sha": "1fb21667cca5b065f16954204ece6372c4b26e3d",
-          "pin_note": "Updated only because the reviewed R33 public aggregate itself changed in PD-TRUTH-METHOD-STACK-20260925-01; exact same blob on both candidate hosts."
+          "gitlab_blob_sha": null,
+          "pin_note": "GitHub remains pinned to the reviewed later aggregate. GitLab parity is explicitly open as of 26 Sep 2026 because its branch carries the earlier aggregate; reconcile through the R33 workstream before claiming mirror parity.",
+          "gitlab_gap": "R33_PUBLIC_AGGREGATE_HOST_DIVERGENCE: GitHub reviewed blob includes the later scientific_method_pass; GitLab branch currently carries the earlier aggregate ending before that block. Preserve as an explicit parity gap; do not fabricate identical-host provenance."
         }
       ],
       "public_routes": {
@@ -107,15 +108,16 @@
         },
         {
           "path": "en/sun-park-takeover-7-june-2018/index.html",
-          "github_blob_sha": "8610e5934e3054d4383bf544e9ebf3f12c8e6ade",
-          "gitlab_blob_sha": "079d94b52195fdb744bad9c6e3b6a1c705766636",
-          "host_versions_intentionally_distinct": true
+          "github_blob_sha": "0a59fc6771edd8c4d1a84519e42907bc18f6483b",
+          "gitlab_blob_sha": "0a59fc6771edd8c4d1a84519e42907bc18f6483b",
+          "host_versions_intentionally_distinct": false,
+          "pin_note": "Refreshed 26 Sep 2026 after the protected ONA-funded-exit / 7 June interlock update; exact same reviewed blob is preserved on GitHub PR #1911 and GitLab MR !618."
         }
       ],
       "next_action": "PACKET_MODE_SOURCE_BY_SOURCE_REVIEW"
     }
   ],
-  "updated_at": "2026-09-25",
+  "updated_at": "2026-09-26",
   "dynamic_surface": {
     "renderer": "assets/truth-machine-live.js",
     "poll_seconds": 60,
