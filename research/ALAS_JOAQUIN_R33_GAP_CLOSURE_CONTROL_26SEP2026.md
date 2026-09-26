@@ -1,5 +1,17 @@
 # ALAS–Joaquín / R33 Gap-Closure Control — 26 September 2026
 
+## Canonical workspace lineage — 26 September 2026
+
+This control is a continuation inside the canonical Por Derecho / Project Sun Rock former-counsel workspace:
+
+- Workspace root: `PD-SP-COUNSEL-INCIDENT-REGISTRY-001`
+- Communications protocol: `PD-FCCOM-20260926-01`
+- Dual-capacity / alertador rule: `PD-COMMS-DUALCAP-ALERTADOR-20260926-01`
+- Counsel-continuity parent: `PD-AC-COUNSEL-20260921-01`
+- Thread handoff/deletion audit: `PD-THREAD-AUDIT-ALAS-FC-20260926-01`
+
+The earlier audit's instruction to continue in the “other active ALAS/former-counsel thread” now resolves to this continuation workspace. Do not create a new incident namespace, a competing former-counsel workspace, or a parallel communications architecture.
+
 ## Status
 Canonical working control for the targeted intelligence search concerning ALAS Legal Advisors, Armando Betancor, Davinia Sánchez, José María Betancor, Joaquín Ruiz de Infante, relevant collaborators/procurators, the Administrador Concursal, Acosta Matos/CAM, RICPE and other adverse-party perimeter actors where documentary links exist. This is a search-control and continuity record, not a finding of wrongdoing.
 
