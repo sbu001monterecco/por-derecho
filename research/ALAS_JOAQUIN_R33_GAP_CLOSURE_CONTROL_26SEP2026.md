@@ -5,7 +5,7 @@ Canonical working control for the targeted intelligence search concerning ALAS L
 
 ## Locked identity rules
 - Correct UK entity: AWESWELL LIMITED.
-- Do not use “Oswell” or variants except as search aliases.
+- Do not use known erroneous AWESWELL transcription variants in substantive text; retain them only inside the controlled alias/search registry.
 - Professional continuity is not corporate succession.
 - Do not state Kepler–Karst owns historical ALAS receivables without documentary proof.
 - Davinia Sánchez de la Cruz is a person; “Devina” is an error.
