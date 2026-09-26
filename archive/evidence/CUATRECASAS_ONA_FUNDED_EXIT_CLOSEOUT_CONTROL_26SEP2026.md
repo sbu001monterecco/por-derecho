@@ -138,3 +138,65 @@ Do not mark this workstream exhausted until:
 - `archive/JTP_ONA_DEEP_SOURCE_SWEEP_24SEP2026.md`
 
 This control is additive and must not overwrite earlier source-state distinctions.
+
+
+## 11. Supporting + contrary source refresh — 26 Sep 2026
+
+### 11.1 Pre-7-Jun execution depth newly reconfirmed
+- **20 Apr 2018:** Carlos Sanz wrote to the Cuatrecasas team and Aweswell that the focused strategy was to work with the three funds already presented the transaction and showing interest: **Ben Oldman, Avenue Capital and Mediterranean Capital**. The same email identified three operator routes already familiar with the asset: **Pierre & Vacances, ONA Corporation and SBH Hotels**, with ONA being advanced for contract negotiation and lender comfort.
+- **10 May 2018:** lender-chain correspondence expressly framed the work as reducing transaction risk. It recorded: the ONA contract being marked up by Cuatrecasas; a REIT/SOCIMI sale route as possible lender exit; positive Santander structured-finance/hotel-real-estate discussions; two HNW clients willing, at a preliminary verbal level, to support the transaction with a bank if required; Cuatrecasas DD substantially complete pending final review; Expert-Witness forensic work; and a Cuatrecasas-drafted ONA court-offer route.
+- **5 Jun 2018:** Patricia circulated what she described as the latest DD version plus David Espejo valuation/debt/swap expert materials. The email itself says certain DD corrections concerning attachments/registry notation were still pending. This is supporting readiness evidence and contrary evidence against describing DD as absolutely final at that moment.
+- **7 Jun 2018:** the Gesvalt ECO valuation later used in the lender package valued the 100% hotel perimeter at approximately **€25.6m**. Canonical preservation copy: `1AQaNioCmAgMWv02cnEa1-0pyk07Hhvtu`.
+- **12 Jun 2018:** Stoneweg sent an **“Oferta Vinculante”** after legal/security-package discussion involving its lawyers, Cuatrecasas, Carlos Sanz and ONA/Nacho Barrau. Canonical preservation copy: `1zGpPogEFshSNz4QLvJd5ar4geIb93orh`. This is post-7-Jun continuity and must not be backdated as proof of a 6-Jun commitment.
+- **1 Aug 2018:** Ben Oldman term-sheet continuity is separately preserved at `1RV2NmDeNeApG--vaCXT3YR5fPpZQfSAz`. Existing repository controls note borrower-side execution but an apparently blank Ben Oldman signature line in the controlled copy; do not call it a fully executed facility absent stronger proof.
+- **9 May 2018:** the “Proyecto Mona Lisa” bridge term-sheet document circulated into the Santander discussion is now co-located at `1fpWvBOFljKWyml4O4l1FdP50Q_jkNkTd`. Its presence proves a concrete financing proposal/workstream; it does not by itself prove Santander credit approval or commitment.
+
+### 11.2 Lagune / Elaia precision control
+The record must preserve the following distinctions:
+- **Lagune Hospitalidad, S.L. / Batipart Group** is the named prospective buyer on the 30-May LOI.
+- The contemporaneous transaction package and correspondence referred to the route as **Elaia / SOCIMI** and ONA/Nacho Barrau facilitated the introduction/workstream.
+- Aweswell's signed 25-May preferential-acquisition letter is a separate instrument from the Lagune LOI.
+- The controlled preferential-right copy has the Aweswell side signed, while the counterparty acceptance line is blank.
+- The Lagune LOI's statement that the buyer had the €26m purchase price in own funds is **buyer documentary wording**, not independent bank proof-of-funds verification.
+- Do not infer without a separate corporate source that Lagune was legally a subsidiary of Elaia or that Elaia itself approved/bound the €26m purchase.
+
+### 11.3 Redundancy classification rule
+For every financing / take-out / operator route, retain a maturity label:
+- **signed direct instrument**;
+- **binding/conditional offer as labelled by issuer**;
+- **term sheet / active negotiation**;
+- **due-diligence / security preparation**;
+- **institutional interest / outreach**;
+- **preliminary verbal fallback**;
+- **post-cutoff continuity**;
+- **not established / missing proof**.
+
+The readiness proposition is cumulative redundancy, not an instruction to upgrade weaker routes into commitments.
+
+### 11.4 Current high-priority gaps
+P0/P1 closure remains:
+1. recover or definitively bound the missing **AC/convenio evaluation report text**;
+2. obtain the complete native/fully readable 30-May Lagune LOI and reconcile all copies, signatures, acceptance and expiry;
+3. recover any independent proof-of-funds / bank evidence behind the Lagune own-funds statement, if it exists;
+4. reconcile the 9-May “Mona Lisa” term sheet against the Santander bank correspondence and identify whether any internal credit/risk approval was ever issued;
+5. preserve the full Stoneweg 12-Jun offer, conditions, security package and subsequent acceptance/rejection/expiry chain;
+6. reconcile Ben Oldman, Avenue Capital and Mediterranean Capital route maturity individually;
+7. recover complete 13-Jun court/AC presentation materials and annexes rather than relying only on contemporaneous professional accounts;
+8. build an actor-by-actor causation ledger tying the 7-Jun and later acts/omissions to the exact financing, security, possession, information, operator or sale-backstop condition affected;
+9. continue contrary-source search for any route that failed for reasons independent of the alleged adverse conduct.
+
+## 12. Republish rule
+
+The next public/private derivative should present **one integrated readiness architecture**, not separate disconnected adviser stories:
+
+**legal exit mechanics + creditor/debt work + valuation + DD + security + professional operator + multiple bridge routes + bank replacement/refinancing + independent sale backstop + court presentation work.**
+
+The publication must separately show:
+- what was complete before 7 Jun;
+- what was active but conditional;
+- what matured only after 7 Jun;
+- what later failed/expired;
+- the user's allegation of interference/sabotage;
+- contrary explanations and missing proof.
+
+No republished page should state that every element was unconditional, fully executed or certain to close unless the underlying primary document proves that exact proposition.
