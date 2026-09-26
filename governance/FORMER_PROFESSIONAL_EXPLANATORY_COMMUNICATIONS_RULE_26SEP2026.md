@@ -20,7 +20,6 @@ Applies to: all future external communications to former lawyers, law firms, pro
 
 ## 1. Business-client viewpoint
 Every communication must explain the matter from the viewpoint of AWESWELL LIMITED and the wider Sun Park travel-hotel business perimeter as the business client, not as a narrow succession of isolated lawsuits.
-Use AWESWELL LIMITED as the canonical UK entity name. Historical misspellings such as Oswell may be search aliases only.
 
 ## 2. Explanatory arc
 Where relevant, explain the chronology as: business objective → 2008 Multimatrix whole-hotel sale and later project-side allegation concerning Montelanza/Molina dissent → restructuring/convenio/protective insolvency → Concurso 36/2012 → alleged economic/procedural wrongdoing → ONA-led funded exit / Article 176 / financing → 7 June 2018 material-control event → post-event protection/recovery → calificación → former-counsel pressure/withdrawal record → AC separation/removal → RPL 3304/2025 / R33 → later RIC/RICPE/regional-incentive/FEDER/hotel-platform tracing → present recovery.
