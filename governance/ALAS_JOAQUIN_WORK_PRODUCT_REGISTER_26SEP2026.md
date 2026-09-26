@@ -47,3 +47,13 @@ The ALAS invoices may be used with Joaquín as **work-product/economic-envelope 
 For outreach, provide a redacted/public-safe invoice schedule preserving: creditor, invoice reference/date, debtor, matter, total, billed task/date/time and linked work-product reference. Redact or omit bank details, home addresses, tax/NIE/passport identifiers and unnecessary private contact data. Preserve amounts and professional-work descriptions because they are directly relevant to reconciliation.
 
 Ask Joaquín to confirm whether: (1) ALAS billed the client for work including his participation; (2) he had any separate retainer or fee arrangement; (3) ALAS or another person paid/owed him internally; (4) any third party ever paid, promised, assumed, settled, credited or otherwise satisfied any fee/expense connected with his work.
+
+
+## Run-2 work-product reconciliation — 26 September 2026 15:37 WEST
+- PD-AJ-WP-001 provenance expanded: Joaquín revision/circulation after Cristo review; Cristo reviewed/signed return.
+- PD-AJ-WP-003: final located; Parrilla + Rosa Gual joint preparation contemporaneously stated; Armando review follows. PD-AJ-INV6-026/027 = OPEN ATTRIBUTION RECONCILIATION; preserve literal 19-Dec-2018 closing date.
+- PD-AJ-WP-005: signed 6-Feb source located; Joaquín/Carmen Dolores Padilla/Cristo signatories; next-day filing plan verified; receipt OPEN.
+- PD-AJ-WP-011: 3-Mar reposición preparation verified; original/final instrument/signatory/procurator/receipt OPEN.
+- PD-AJ-WP-013: Acta de Manifestaciones Gil — ratification draft; draft/intended notarisation/procedural use VERIFIED; execution/notarisation/filing OPEN.
+- Every invoice row remains subject to reverse work_product_ids + reconciliation_status completion; unmapped rows stay OPEN.
+- Preserve PD-AJ-INV6-007 26/12/2019 source-date anomaly unchanged.
