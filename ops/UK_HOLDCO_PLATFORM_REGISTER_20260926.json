@@ -6,7 +6,7 @@
   "purpose": "Canonical relationship and function register for the historical and current AWESWELL LIMITED / Sun Rock platform. It supplements, and does not replace, legal-entity, identity, insolvency, evidence or proceeding registers.",
   "controlling_rules": [
     "AWESWELL LIMITED is the legal UK Sponsor/HoldCo; Sun Rock is the hospitality/investment platform identity and is not automatically a legal person.",
-    "LPB, Pink Canary Services, Hava Vida, Matkator, the Communities, UK distributors, advisers and counterparties remain legally distinct.",
+    "LPB, Pink Canary Services, Hava Vida, Matkator, the Communities, UK distributors, advisers and counterparties remain legally distinct; Hava Vida is nevertheless canonically within the AWESWELL LIMITED / Sun Rock business and economic perimeter.",
     "A historical commercial relationship does not prove ownership, agency outside the contract, common knowledge, wrongdoing or present-day status.",
     "Proposed acquisition is not completed acquisition. Signed distribution documentation is not the same thing as ownership of the distributor.",
     "LPB's insolvency estate is not the whole mixed-ownership Sun Park hotel and is not the whole Sun Rock business/platform.",
@@ -43,8 +43,8 @@
     {
       "id": "E051",
       "name": "Hava Vida Travel & Tourism, S.L.U.",
-      "type": "SPANISH_COMMERCIALISATION_COMPANY",
-      "scope": "Historical project-side travel/commercialisation vehicle; registered ownership and claimed economic/beneficial perimeter remain separate questions."
+      "type": "SPANISH_TRAVEL_COMMERCIALISATION_COMPANY_WITHIN_AWESWELL_SUN_ROCK_PERIMETER",
+      "scope": "Part of the AWESWELL LIMITED / Sun Rock business and economic perimeter while remaining a separate Spanish legal person. Registered ownership/shareholding and any claimed beneficial-interest or trust analysis remain distinct from perimeter classification."
     },
     {
       "id": "E055",
@@ -103,8 +103,8 @@
     {
       "from": "PLATFORM-SUNROCK",
       "to": "E051",
-      "relationship": "HISTORICAL_TRAVEL_COMMERCIALISATION_PERIMETER",
-      "status": "LEGAL_PERSONS_SEPARATE"
+      "relationship": "BUSINESS_AND_ECONOMIC_PERIMETER",
+      "status": "CANONICAL_USER_CONFIRMED_LEGAL_PERSON_SEPARATE"
     },
     {
       "from": "E006",
