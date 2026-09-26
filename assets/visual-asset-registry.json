@@ -561,7 +561,8 @@
         "dimensions": "1584x1056",
         "user_mapping_date": "2026-09-23",
         "drive_canonical_filename": "Juan_Tomas_Parrilla_canonical_20260923.jpg"
-      }
+      },
+      "superseded_for_public_composite_by": "person.juan-tomas-parrilla.approved-20260926"
     },
     "composite.jtp-payment-actor-context-real-source-20260925": {
       "subject_type": "document",
@@ -587,7 +588,8 @@
         "provenance": "assets/data/jtp-payment-actor-composite-real-sources-20260925.json",
         "changed_pixels_outside_authorised_boxes": 0,
         "jtp_region_unchanged": true
-      }
+      },
+      "superseded_by": "composite.jtp-payment-actor-context-approved-jtp-20260926"
     },
     "composite.five-private-actors-true-faces-20260925": {
       "subject_type": "document",
@@ -619,6 +621,55 @@
       },
       "storage_mode": "repository-byte-locked",
       "publication_boundary": "Identity/reference image only. Inclusion does not establish conduct, knowledge, coordination, wrongdoing, causation or liability."
+    },
+    "person.juan-tomas-parrilla.approved-20260926": {
+      "subject_type": "person",
+      "canonical_name": "Juan Tomás Parrilla Suárez",
+      "short_label": "JTP · user-approved 26-Sep-2026 derivative",
+      "path": "assets/actors/juan-tomas-parrilla-user-approved-20260926.jpg",
+      "identity_status": "USER_APPROVED_DERIVATIVE_FROM_REAL_SOURCE_PHOTO",
+      "identity_basis": "The user supplied the real conference photograph in the current conversation, confirmed the generated portrait derivative as the correct JTP image, and explicitly authorised replacing only JTP in the existing composite. No automated facial recognition was used.",
+      "supersedes_for_public_composite": "person.juan-tomas-parrilla.primary",
+      "approved_contexts": [
+        "JTP payment / AC / CAM actor-context composite",
+        "counsel-payment independence reader"
+      ],
+      "alt_en": "Juan Tomás Parrilla Suárez — user-approved portrait derivative from supplied conference photograph",
+      "alt_es": "Juan Tomás Parrilla Suárez — retrato derivado aprobado por el usuario a partir de la fotografía de conferencia aportada",
+      "source_provenance": {
+        "source_class": "user-supplied real conference photograph + user-approved portrait derivative",
+        "approval_date": "2026-09-26",
+        "sha256": "fdd0308df79312e1c666e48ba651eb5e34800057b62a0486c21bfa1cdf837489",
+        "dimensions": "320x320",
+        "format": "jpg",
+        "facial_recognition_used": false
+      }
+    },
+    "composite.jtp-payment-actor-context-approved-jtp-20260926": {
+      "subject_type": "document",
+      "canonical_name": "JTP payment / AC / CAM actor-context composite — JTP-only approved replacement",
+      "short_label": "JTP actor-context composite · JTP-only 26-Sep replacement",
+      "path": "assets/jtp-payment-actor-composite-real-sources-20260926.png",
+      "identity_status": "LOCKED_JTP_ONLY_REPLACEMENT",
+      "identity_basis": "Deterministic replacement of only the JTP rectangle in the previously published composite. Borja, JDAM, LPAM and Alberto rectangles are pixel-identical to the prior approved composite.",
+      "supersedes": "composite.jtp-payment-actor-context-real-source-20260925",
+      "approved_contexts": [
+        "JTP payment / AC / CAM actor-context composite",
+        "counsel-payment independence reader",
+        "public investigative/editorial visual"
+      ],
+      "alt_en": "Actor-context visual with user-approved JTP portrait and four unchanged actor portraits",
+      "alt_es": "Visual de contexto con retrato JTP aprobado por el usuario y los otros cuatro retratos sin cambios",
+      "source_provenance": {
+        "sha256": "110ccd32d7320180e798efbb8e835acd3838f74a7d0da8dab30bdb2029d4b621",
+        "dimensions": "1055x1491",
+        "format": "png",
+        "control_id": "PD-JTP-ACTOR-COMPOSITE-20260926-02",
+        "asset_map": "assets/composites/jtp-payment-actor-context-user-approved-jtp-20260926.asset-map.json",
+        "provenance": "assets/data/jtp-payment-actor-composite-user-approved-jtp-20260926.json",
+        "changed_pixels_outside_jtp_box": 0,
+        "other_four_actor_regions_unchanged": true
+      }
     }
   },
   "rejected_or_prohibited_mappings": [
