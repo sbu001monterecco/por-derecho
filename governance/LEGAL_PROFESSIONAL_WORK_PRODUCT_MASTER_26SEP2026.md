@@ -1,5 +1,17 @@
 # Master legal-professional work-product programme
 
+## Canonical workspace lineage — 26 September 2026
+
+This control is a continuation inside the canonical Por Derecho / Project Sun Rock former-counsel workspace:
+
+- Workspace root: `PD-SP-COUNSEL-INCIDENT-REGISTRY-001`
+- Communications protocol: `PD-FCCOM-20260926-01`
+- Dual-capacity / alertador rule: `PD-COMMS-DUALCAP-ALERTADOR-20260926-01`
+- Counsel-continuity parent: `PD-AC-COUNSEL-20260921-01`
+- Thread handoff/deletion audit: `PD-THREAD-AUDIT-ALAS-FC-20260926-01`
+
+The earlier audit's instruction to continue in the “other active ALAS/former-counsel thread” now resolves to this continuation workspace. Do not create a new incident namespace, a competing former-counsel workspace, or a parallel communications architecture.
+
 Control ID: PD-SP-LEGAL-WORK-PRODUCT-MASTER-001
 Date: 26 September 2026
 
