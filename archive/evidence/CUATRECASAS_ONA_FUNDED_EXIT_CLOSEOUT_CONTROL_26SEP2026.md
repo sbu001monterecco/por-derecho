@@ -1,5 +1,16 @@
 # Cuatrecasas / ONA funded-exit evidence close-out control — 26 Sep 2026
 
+<!-- PD-ONA-READINESS-7JUN-CANONICAL-20260926 -->
+## Controlling transaction-level readiness / 7 June 2018 interlock — 26 Sep 2026
+
+**Mandatory transaction-level rule.** By the June 2018 Las Palmas court/judge presentation involving Daniel Irigoyen, the Aweswell/LPB/Matkator/Sun Park case position is that the Article 176 exit was **closure-capable and execution-ready on an aggregate, multi-layered basis**. The package must be assessed cumulatively: the signed ONA operating package; bridge/private-credit alternatives; Stoneweg/Varia; EG/CR and other lender routes; Santander/bank replacement work; the Lagune/Elaia/Batipart €26m own-funds sale/backstop; Gesvalt and Expert-Witness work; Cuatrecasas DD, Article 176, consignation and security work; readiness to fund or consign the amount required against the *texto definitivo*; solvency/support material; and specialist insolvency/court-exit implementation.
+
+**Anti-downgrade rule.** A document-specific proof gap — including the absence in the controlled corpus of a countersigned copy of Irigoyen's engagement proposal, non-drawdown on one route, expiry of one offer or an unmet condition on one instrument — **must not be used as evidence that the aggregate funded-exit package was merely preliminary, speculative or unready**. Each constituent item keeps its exact maturity label: **signed direct instrument; issuer-labelled binding/conditional offer; term sheet/active negotiation; diligence/security preparation; institutional interest/outreach; preliminary verbal fallback; post-cutoff continuity; or not established/missing proof**.
+
+**7 June interlock.** The separate 7 June takeover dossier records forced/material access acts and the absence, in the controlled record, of an identified judicial possession order authorising a whole-hotel takeover. Gil Marer and the Aweswell/LPB-side case theory attribute the failure to consummate the funded exit **in full / 100%** to the **7 June 2018 takeover by force** and the lack or denial of effective judicial protection that followed, and allege that the ONA-led funded exit was deliberately sabotaged. That causation/intent proposition is an attributed litigation/investigative position unless and until established by competent adjudication. Contrary explanations and route-specific failures must still be searched and tested, but they must be tested against the **aggregate redundant package**, not used silently to relabel the package as undeveloped.
+
+**Mandatory cross-links:** `CONCURSO36_UNITARY_CRIMINAL_FIRST_GOVERNANCE.md` · `archive/evidence/CUATRECASAS_ONA_FUNDED_EXIT_CLOSEOUT_CONTROL_26SEP2026.md` · `research/pre-7-june-2018-funded-ona-exit-source-map.md` · `archive/evidence/ONA_FUNDED_EXIT_SABOTAGE_CHAIN_20260903.md` · `en/sun-park-takeover-7-june-2018/` / `es/toma-control-sun-park-7-junio-2018/`.
+
 **Control ID:** PD-CUA-ONA-CLOSEOUT-20260926-01  
 **Status:** ACTIVE CLOSE-OUT — NOT YET CERTIFIED EXHAUSTED  
 **Purpose:** preserve the Cuatrecasas contemporaneous-report spine and interlink it to the ONA/Clubotel-led funded-exit record without converting attributed allegations into adjudicated findings.
