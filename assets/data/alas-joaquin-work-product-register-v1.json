@@ -1,0 +1,683 @@
+{
+  "schema": "por-derecho.counsel-work-product-register.v1",
+  "control_id": "PD-SP-COUNSEL-WORK-ALAS-JRI-001",
+  "control_date": "2026-09-26",
+  "search_window": "2018-09-01 to present",
+  "subject": "ALAS Legal Advisors / Armando Betancor / Joaquín Ruiz de Infante / collaborators",
+  "status": "ACTIVE_RECURSIVE_RECONCILIATION",
+  "public_privacy_rule": "No private addresses, personal identifiers, bank details or private mailbox locators in public registry.",
+  "invoices": [
+    {
+      "invoice": "6/2019",
+      "date": "2019-01-24",
+      "debtor": "AWESWELL LIMITED",
+      "total_eur": 18586.65,
+      "items": [
+        {
+          "id": "PD-AJ-INV6-001",
+          "source_invoice": "6/2019",
+          "source_date": "2018-11-25",
+          "professional_role": "Socio",
+          "time": "3 h",
+          "matter": "Revisión y análisis de documentación",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-002",
+          "source_invoice": "6/2019",
+          "source_date": "2018-11-25",
+          "professional_role": "Asociada Senior",
+          "time": "2 h",
+          "matter": "Revisión y análisis de documentación",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-003",
+          "source_invoice": "6/2019",
+          "source_date": "2018-11-29",
+          "professional_role": "Socio",
+          "time": "3 h",
+          "matter": "Aclaración Plan de liquidación",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-004",
+          "source_invoice": "6/2019",
+          "source_date": "2018-11-29",
+          "professional_role": "Asociada Senior",
+          "time": "2 h",
+          "matter": "Aclaración Plan de liquidación",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-005",
+          "source_invoice": "6/2019",
+          "source_date": "2018-12-07",
+          "professional_role": "Socio",
+          "time": "2 h",
+          "matter": "Reunión",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-006",
+          "source_invoice": "6/2019",
+          "source_date": "2018-12-26",
+          "professional_role": "Socio",
+          "time": "2 h",
+          "matter": "Reunión",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-007",
+          "source_invoice": "6/2019",
+          "source_date": "2019-12-26",
+          "professional_role": "Socio",
+          "time": "2 h",
+          "matter": "Análisis de documentación",
+          "date_control": "SOURCE_DATE_ANOMALY: invoice shows 26/12/2019 although invoice was issued 24/01/2019; do not silently correct"
+        },
+        {
+          "id": "PD-AJ-INV6-008",
+          "source_invoice": "6/2019",
+          "source_date": "2018-12-27",
+          "professional_role": "Socio",
+          "time": "20 min",
+          "matter": "Estudio Recursos reposición a Dil. Ord. 12-12-18",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-009",
+          "source_invoice": "6/2019",
+          "source_date": "2018-12-27",
+          "professional_role": "Asociada Senior",
+          "time": "1 h",
+          "matter": "Estudio documentación remitida al Registro Propiedad",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-010",
+          "source_invoice": "6/2019",
+          "source_date": "2018-12-28",
+          "professional_role": "Socio",
+          "time": "30 min",
+          "matter": "Estudio documentación remitida al Registro Propiedad",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-011",
+          "source_invoice": "6/2019",
+          "source_date": "2019-01-02",
+          "professional_role": "Socio",
+          "time": "40 min",
+          "matter": "Conference Call Betancor-Barber",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-012",
+          "source_invoice": "6/2019",
+          "source_date": "2019-01-02",
+          "professional_role": "Socio",
+          "time": "40 min",
+          "matter": "Conference Call Betancor-Barber",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-013",
+          "source_invoice": "6/2019",
+          "source_date": "2019-01-02",
+          "professional_role": "Socio",
+          "time": "40 min",
+          "matter": "Conference Call Betancor-Barber",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-014",
+          "source_invoice": "6/2019",
+          "source_date": "2019-01-02",
+          "professional_role": "Socio",
+          "time": "2 h",
+          "matter": "Estudio y análisis de antecedentes",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-015",
+          "source_invoice": "6/2019",
+          "source_date": "2019-01-03",
+          "professional_role": "Socio",
+          "time": "2 h",
+          "matter": "Estudio antecedentes. Análisis jurídico penal. Comunicaciones",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-016",
+          "source_invoice": "6/2019",
+          "source_date": "2019-01-03",
+          "professional_role": "Socio",
+          "time": "3 h",
+          "matter": "Estudio, análisis y redacción escrito de denuncia actuación AC ante JM",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-017",
+          "source_invoice": "6/2019",
+          "source_date": "2019-01-04",
+          "professional_role": "Socio",
+          "time": "2 h",
+          "matter": "Análisis Denuncia-ampliación y documentos",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-018",
+          "source_invoice": "6/2019",
+          "source_date": "2019-01-10",
+          "professional_role": "Socio",
+          "time": "3 h",
+          "matter": "Estudio escrito de ampliación de denuncia Fiscalía",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-019",
+          "source_invoice": "6/2019",
+          "source_date": "2019-01-10",
+          "professional_role": "Socio",
+          "time": "6 h",
+          "matter": "Estudio, análisis y redacción escrito de ampliación de denuncia Fiscalía",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-020",
+          "source_invoice": "6/2019",
+          "source_date": "2019-01-11",
+          "professional_role": "Socio",
+          "time": "3 h",
+          "matter": "Estudio, análisis y redacción escrito de ampliación de denuncia Fiscalía",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-021",
+          "source_invoice": "6/2019",
+          "source_date": "2019-01-11",
+          "professional_role": "Socio",
+          "time": "35 min",
+          "matter": "Revisión documentación y comunicaciones",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-022",
+          "source_invoice": "6/2019",
+          "source_date": "2019-01-14",
+          "professional_role": "Socio",
+          "time": "30 min",
+          "matter": "Análisis y revisión documentación. Presentación",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-023",
+          "source_invoice": "6/2019",
+          "source_date": "2019-01-14",
+          "professional_role": "Socio",
+          "time": "48 min",
+          "matter": "Conversación telefónica con Fiscal Dña. Elena Herrera",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-024",
+          "source_invoice": "6/2019",
+          "source_date": "2019-01-15",
+          "professional_role": "Socio",
+          "time": "20 min",
+          "matter": "Revisión y análisis documentación",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-025",
+          "source_invoice": "6/2019",
+          "source_date": "2019-01-16",
+          "professional_role": "Socio",
+          "time": "25 min",
+          "matter": "Revisión y análisis documentación",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-026",
+          "source_invoice": "6/2019",
+          "source_date": "2019-01-16",
+          "professional_role": "Socio",
+          "time": "1 h",
+          "matter": "Estudio y análisis de Plan de Liquidación e Informes Trimestrales (2)",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV6-027",
+          "source_invoice": "6/2019",
+          "source_date": "2019-01-16",
+          "professional_role": "Socio",
+          "time": "4 h",
+          "matter": "Estudio, análisis y redacción escrito de oposición Informe Trimestral AC",
+          "date_control": "SOURCE_LITERAL"
+        }
+      ]
+    },
+    {
+      "invoice": "14/2019",
+      "date": "2019-03-14",
+      "debtor": "AWESWELL LIMITED",
+      "total_eur": 12320,
+      "items": [
+        {
+          "id": "PD-AJ-INV14-001",
+          "source_invoice": "14/2019",
+          "source_date": "2019-01-18",
+          "professional_role": "Socio",
+          "time": "1 h",
+          "matter": "Estudio y preparación carta a la BBC",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV14-002",
+          "source_invoice": "14/2019",
+          "source_date": "2019-01-21",
+          "professional_role": "Socio",
+          "time": "1 h",
+          "matter": "Estudio y preparación carta a la BBC",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV14-003",
+          "source_invoice": "14/2019",
+          "source_date": "2019-02-01",
+          "professional_role": "Socio",
+          "time": "2 h",
+          "matter": "Escrito varias cuestiones y reclamando póliza AC",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV14-004",
+          "source_invoice": "14/2019",
+          "source_date": "2019-02-01",
+          "professional_role": "Asociada Senior",
+          "time": "1 h",
+          "matter": "Escrito varias cuestiones y reclamando póliza AC",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV14-005",
+          "source_invoice": "14/2019",
+          "source_date": "2019-02-01",
+          "professional_role": "Socio",
+          "time": "2 h",
+          "matter": "Estudio y revisión documentación póliza AC",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV14-006",
+          "source_invoice": "14/2019",
+          "source_date": "2019-02-05",
+          "professional_role": "Socio",
+          "time": "2 h",
+          "matter": "Escrito de nuevas pruebas Fiscalía",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV14-007",
+          "source_invoice": "14/2019",
+          "source_date": "2019-02-05",
+          "professional_role": "Asociada Senior",
+          "time": "1 h",
+          "matter": "Escrito de nuevas pruebas Fiscalía",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV14-008",
+          "source_invoice": "14/2019",
+          "source_date": "2019-02-06",
+          "professional_role": "Socio",
+          "time": "1 h",
+          "matter": "Escrito de nuevas pruebas Fiscalía",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV14-009",
+          "source_invoice": "14/2019",
+          "source_date": "2019-02-06",
+          "professional_role": "Socio",
+          "time": "3 h",
+          "matter": "Estudio audios, información registral y pruebas y escrito de nuevas pruebas Fiscalía",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV14-010",
+          "source_invoice": "14/2019",
+          "source_date": "2019-02-06",
+          "professional_role": "Asociada Senior",
+          "time": "1 h",
+          "matter": "Estudio audios, información registral y pruebas y escrito de nuevas pruebas Fiscalía",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV14-011",
+          "source_invoice": "14/2019",
+          "source_date": "2019-02-06",
+          "professional_role": "Socio",
+          "time": "3 h",
+          "matter": "Estudio, análisis y redacción de escrito de solicitud de conclusión concurso",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV14-012",
+          "source_invoice": "14/2019",
+          "source_date": "2019-02-06",
+          "professional_role": "Socio",
+          "time": "1 h",
+          "matter": "Estudio, análisis y redacción de escrito de solicitud de conclusión concurso",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV14-013",
+          "source_invoice": "14/2019",
+          "source_date": "2019-02-07",
+          "professional_role": "Socio",
+          "time": "4 h",
+          "matter": "Escrito de solicitud de conclusión concurso",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV14-014",
+          "source_invoice": "14/2019",
+          "source_date": "2019-02-07",
+          "professional_role": "Socio",
+          "time": "1 h",
+          "matter": "Escrito de solicitud de conclusión concurso",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV14-015",
+          "source_invoice": "14/2019",
+          "source_date": "2019-02-08",
+          "professional_role": "Socio",
+          "time": "4 h",
+          "matter": "Escrito de solicitud de conclusión concurso",
+          "date_control": "SOURCE_LITERAL"
+        },
+        {
+          "id": "PD-AJ-INV14-016",
+          "source_invoice": "14/2019",
+          "source_date": "2019-02-08",
+          "professional_role": "Socio",
+          "time": "1 h",
+          "matter": "Escrito de solicitud de conclusión concurso",
+          "date_control": "SOURCE_LITERAL"
+        }
+      ]
+    },
+    {
+      "invoice": "16/2019",
+      "date": "2019-04-17",
+      "debtor": "Gil Marer",
+      "total_eur": 20000,
+      "items": [
+        {
+          "id": "PD-AJ-INV16-001",
+          "source_invoice": "16/2019",
+          "source_date": "2019-04-17",
+          "professional_role": "ALAS Legal Advisors",
+          "time": "lump-sum tranche",
+          "matter": "Honorarios conforme a propuesta de servicios de 9 de abril de 2019 — defensa de Gil Marer en la Sección 6ª / Pieza de Calificación",
+          "amount_eur": 20000
+        }
+      ]
+    }
+  ],
+  "calificacion_scope": [
+    {
+      "id": "PD-AJ-CAL-SCOPE-001",
+      "source": "Propuesta Gil — 9 abril 2019",
+      "matter": "Estudio y análisis del Informe de Calificación y documentación de la pieza",
+      "execution_status": "SCOPE; execution tested against work-product register"
+    },
+    {
+      "id": "PD-AJ-CAL-SCOPE-002",
+      "source": "Propuesta Gil — 9 abril 2019",
+      "matter": "Preparación de alegaciones, argumentos de defensa y prueba",
+      "execution_status": "SCOPE; execution tested against work-product register"
+    },
+    {
+      "id": "PD-AJ-CAL-SCOPE-003",
+      "source": "Propuesta Gil — 9 abril 2019",
+      "matter": "Asistencia y defensa en la vista",
+      "execution_status": "SCOPE; execution tested against work-product register"
+    },
+    {
+      "id": "PD-AJ-CAL-SCOPE-004",
+      "source": "Propuesta Gil — 9 abril 2019",
+      "matter": "Seguimiento hasta Sentencia de Calificación",
+      "execution_status": "SCOPE; execution tested against work-product register"
+    },
+    {
+      "id": "PD-AJ-CAL-SCOPE-005",
+      "source": "Propuesta Gil — 9 abril 2019",
+      "matter": "Trámites y gestiones necesarios hasta sentencia",
+      "execution_status": "SCOPE; execution tested against work-product register"
+    },
+    {
+      "id": "PD-AJ-CAL-SCOPE-006",
+      "source": "Propuesta Gil — 9 abril 2019",
+      "matter": "Tramitación del recurso de apelación contra la Sentencia de Calificación",
+      "execution_status": "CONTRACTUAL_SCOPE_ONLY; no ALAS/Joaquín 2023 appeal established"
+    },
+    {
+      "id": "PD-AJ-CAL-SCOPE-007",
+      "source": "Propuesta Gil — 9 abril 2019",
+      "matter": "Consultas, correo y reuniones sobre el encargo",
+      "execution_status": "SCOPE; execution tested against work-product register"
+    }
+  ],
+  "work_products": [
+    {
+      "id": "PD-AJ-WP-001",
+      "date": "2019-01-14",
+      "title": "Ampliación de denuncia — Fiscalía Provincial / DI 248/2018",
+      "status": "FILED_VERIFIED_BY_STAMPED_COPY_CHAIN",
+      "actors": [
+        "ALAS/Armando drafting",
+        "Joaquín collaboration chain",
+        "Procuradora Carmen Dolores Padilla"
+      ],
+      "links": [
+        "PD-AJ-INV6-018",
+        "PD-AJ-INV6-019",
+        "PD-AJ-INV6-020",
+        "PD-AJ-INV6-022",
+        "PD-AJ-INV6-023"
+      ],
+      "separation_relevance": "Direct criminal/prosecutorial challenge to AC and CAM; part of factual foundation later invoked for removal/separation."
+    },
+    {
+      "id": "PD-AJ-WP-002",
+      "date": "2019-01-15",
+      "title": "Escrito al Juzgado Mercantil — denuncia actuación desleal y posible fraude procesal del AC",
+      "status": "SIGNED_AND_FILED_STRONGLY_SUPPORTED; exact LexNET receipt still to be paired",
+      "actors": [
+        "Joaquín Ruiz de Infante — letrado/signatory",
+        "Javier Pérez Almeida — procurador",
+        "ALAS/Armando drafting trail"
+      ],
+      "links": [
+        "PD-AJ-INV6-016",
+        "PD-AJ-INV6-017",
+        "PD-AJ-INV6-024",
+        "PD-AJ-INV6-025"
+      ],
+      "separation_relevance": "Second otrosí expressly reserves responsibility and separation actions under arts. 36 and 37 LC; direct predecessor of later AC-removal demand."
+    },
+    {
+      "id": "PD-AJ-WP-003",
+      "date": "2019-01-16",
+      "title": "Oposición / challenge to AC quarterly-report material",
+      "status": "WORK_PRODUCT_FAMILY_VERIFIED; exact final filed instrument reconciliation open",
+      "actors": [
+        "ALAS/Armando"
+      ],
+      "links": [
+        "PD-AJ-INV6-026",
+        "PD-AJ-INV6-027"
+      ],
+      "separation_relevance": "Tests liquidation reporting and AC conduct; must be linked into removal chronology."
+    },
+    {
+      "id": "PD-AJ-WP-004",
+      "date": "2019-02-01",
+      "title": "Escrito al Mercantil reclamando / requiriendo póliza del AC",
+      "status": "FILED_VERIFIED_BY_CONTEMPORANEOUS_EMAIL",
+      "actors": [
+        "ALAS team / Gil-side counsel chain"
+      ],
+      "links": [
+        "PD-AJ-INV14-003",
+        "PD-AJ-INV14-004",
+        "PD-AJ-INV14-005"
+      ],
+      "separation_relevance": "Professional-liability / accountability control concerning AC."
+    },
+    {
+      "id": "PD-AJ-WP-005",
+      "date": "2019-02-07",
+      "title": "Aportación de nuevas pruebas a Fiscalía",
+      "status": "SIGNED_PREPARED_AND_FILING_STRONGLY_SUPPORTED; receipt pairing open",
+      "actors": [
+        "ALAS team",
+        "Cristo/Luis Barber coordination"
+      ],
+      "links": [
+        "PD-AJ-INV14-006",
+        "PD-AJ-INV14-007",
+        "PD-AJ-INV14-008",
+        "PD-AJ-INV14-009",
+        "PD-AJ-INV14-010"
+      ],
+      "separation_relevance": "Continues DI 248/2018 evidential challenge to AC/CAM."
+    },
+    {
+      "id": "PD-AJ-WP-006",
+      "date": "2019-02-06/2019-02-08",
+      "title": "Solicitud de conclusión del concurso — artículo 176",
+      "status": "DRAFT_WORK_PRODUCT_VERIFIED; not established as filed in 2019; later reused/circulated",
+      "actors": [
+        "ALAS/Armando"
+      ],
+      "links": [
+        "PD-AJ-INV14-011",
+        "PD-AJ-INV14-012",
+        "PD-AJ-INV14-013",
+        "PD-AJ-INV14-014",
+        "PD-AJ-INV14-015",
+        "PD-AJ-INV14-016"
+      ],
+      "separation_relevance": "Alternative funded-exit/conclusion route; relevant to whether AC conduct impaired a closure-capable route."
+    },
+    {
+      "id": "PD-AJ-WP-007",
+      "date": "2019-03-21",
+      "title": "Recurso / request presented by Joaquín concerning registry/title documentation",
+      "status": "FILED_VERIFIED_BY_CONTEMPORANEOUS_CHAIN; exact instrument classification to reconcile",
+      "actors": [
+        "Joaquín Ruiz de Infante",
+        "ALAS/Armando coordination"
+      ],
+      "links": [],
+      "separation_relevance": "Connected to challenge of CAM acquisition/title and AC disposition route."
+    },
+    {
+      "id": "PD-AJ-WP-008",
+      "date": "2019-04-09/2019-04-16",
+      "title": "Signed ALAS engagement — Gil Marer calificación defence",
+      "status": "SIGNED_ENGAGEMENT_VERIFIED",
+      "actors": [
+        "Armando Betancor",
+        "Davinia Sánchez",
+        "José María Betancor",
+        "Luis Barber"
+      ],
+      "links": [
+        "PD-AJ-INV16-001"
+      ],
+      "separation_relevance": "Defines scope and professional responsibility for defence against AC calificación report, including future appeal scope."
+    },
+    {
+      "id": "PD-AJ-WP-009",
+      "date": "2019-06-05/2019-06-10",
+      "title": "64-page opposition to AC calificación report — Gil Marer",
+      "status": "DRAFT_CHAIN_AND_FINAL_SIGNED_FILED_COPY_VERIFIED",
+      "actors": [
+        "José María Betancor / ALAS — drafting",
+        "Armando/Davinia/Luis Barber — team chain",
+        "Gil/Patricia — revisions",
+        "Joaquín Ruiz de Infante — signatory"
+      ],
+      "links": [
+        "PD-AJ-INV16-001",
+        "PD-AJ-CAL-SCOPE-001",
+        "PD-AJ-CAL-SCOPE-002"
+      ],
+      "separation_relevance": "Core defence pleading later targeted by AC Article 215.2 initiative and cited indirectly in the 2026 counsel-succession narrative."
+    },
+    {
+      "id": "PD-AJ-WP-010",
+      "date": "2019-04-09 onward",
+      "title": "Future appeal against calificación judgment",
+      "status": "CONTRACTUAL_SCOPE_VERIFIED; NO ALAS/Joaquín 2023 APPEAL ESTABLISHED",
+      "actors": [
+        "ALAS engagement scope"
+      ],
+      "links": [
+        "PD-AJ-CAL-SCOPE-006"
+      ],
+      "separation_relevance": "Important negative control: 2023 appeal is a later separate instrument; do not attribute it to ALAS/Joaquín."
+    },
+    {
+      "id": "PD-AJ-WP-011",
+      "date": "2020-02/2020-03-03",
+      "title": "Article 215.2 response, ratification/acta work and recurso de reposición",
+      "status": "WORKSTREAM_AND_3-MAR_REPOSICION_STRONGLY_SUPPORTED; original 3-Mar pleading still to recover/pair",
+      "actors": [
+        "ALAS/Armando/José María/Davinia",
+        "Joaquín"
+      ],
+      "links": [],
+      "separation_relevance": "Direct professional-pressure sequence preceding later withdrawal; material to R33 page-5 generalisation."
+    },
+    {
+      "id": "PD-AJ-WP-012",
+      "date": "2020-09-21",
+      "title": "Joaquín withdrawal + separate ALAS/team withdrawal",
+      "status": "VERIFIED",
+      "actors": [
+        "Joaquín Ruiz de Infante",
+        "Armando/ALAS team"
+      ],
+      "links": [],
+      "separation_relevance": "Expressly instrumentalised by AC on R33 page 5 in 2026; must be read with entire work-product and pressure record."
+    }
+  ],
+  "replication_rule": {
+    "id": "PD-SP-COUNSEL-WORK-REPLICATION-001",
+    "instruction": "Apply the same work-product + invoice-line + draft/signature/filing/billing crosswalk to every former project-side firm.",
+    "priority": [
+      "Garrigues",
+      "Cuatrecasas",
+      "Juan Tomás Parrilla",
+      "Cristo Suárez Pimentel",
+      "SLJ / Daniel Jiménez",
+      "Luis Miguel López",
+      "all other verified firms/procuradores"
+    ]
+  },
+  "open_gaps": [
+    "Pair exact LexNET/court receipts for all 2019 Mercantile filings.",
+    "Recover and classify original 3-Mar-2020 recurso de reposición.",
+    "Reconcile exact instrument behind 16-Jan-2019 billed 'oposición Informe Trimestral AC'.",
+    "Pair February 2019 Fiscalía new-evidence filing with stamped/receipt copy.",
+    "Complete author/reviewer/signatory/billing chain for every draft and version.",
+    "Materialise authenticated private source PDFs into stable private custody where connector path permits."
+  ]
+}
