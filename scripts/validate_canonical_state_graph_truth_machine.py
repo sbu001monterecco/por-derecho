@@ -71,10 +71,15 @@ def main():
             if not edge.get("relation") or not edge.get("capacity"):
                 fail(f"{eid}: actor edge lacks relation/capacity",failures)
         for edge in ev.get("organisation_edges",[]):
-            if edge.get("organisation_id") not in orgs and edge.get("organisation_id") not in inst:
-                fail(f"{eid}: unresolved organisation/institution {edge.get('organisation_id')}",failures)
+            if edge.get("organisation_id") not in orgs:
+                fail(f"{eid}: unresolved organisation {edge.get('organisation_id')}",failures)
             if not edge.get("relation"):
                 fail(f"{eid}: organisation edge lacks relation",failures)
+        for edge in ev.get("institution_edges",[]):
+            if edge.get("institution_id") not in inst:
+                fail(f"{eid}: unresolved linked institution {edge.get('institution_id')}",failures)
+            if not edge.get("relation"):
+                fail(f"{eid}: institution edge lacks relation",failures)
         for rid in ev.get("record_ids",[]):
             record_refs.add(rid)
             if rid not in complete and rid not in court:
