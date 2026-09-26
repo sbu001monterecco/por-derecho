@@ -35,3 +35,15 @@ Every materially distinct professional product is tracked separately as DISCUSSE
 PD-SP-COUNSEL-WORK-REPLICATION-001 applies this model to every former firm, with Garrigues and Cuatrecasas next priority.
 
 Machine source: assets/data/alas-joaquin-work-product-register-v1.json
+
+## Joaquín economic-envelope rule — 26 September 2026
+
+Targeted searches across the three connected Gmail accounts and Google Drive have not located a separate invoice, fee note, provision-of-funds request, payment record or standalone commercial retainer issued by Joaquín Ruiz de Infante Abella / Bufete Ruiz de Infante.
+
+This is a **NEGATIVE SEARCH RESULT**, not proof that no separate arrangement ever existed.
+
+The ALAS invoices may be used with Joaquín as **work-product/economic-envelope evidence** where the billed task is documentarily connected to work in which he collaborated, signed, filed, reviewed or acted as court-facing counsel. They must not be relabelled as Joaquín's own invoices or proof that he personally received any part of the invoiced sums without source evidence or his confirmation.
+
+For outreach, provide a redacted/public-safe invoice schedule preserving: creditor, invoice reference/date, debtor, matter, total, billed task/date/time and linked work-product reference. Redact or omit bank details, home addresses, tax/NIE/passport identifiers and unnecessary private contact data. Preserve amounts and professional-work descriptions because they are directly relevant to reconciliation.
+
+Ask Joaquín to confirm whether: (1) ALAS billed the client for work including his participation; (2) he had any separate retainer or fee arrangement; (3) ALAS or another person paid/owed him internally; (4) any third party ever paid, promised, assumed, settled, credited or otherwise satisfied any fee/expense connected with his work.
