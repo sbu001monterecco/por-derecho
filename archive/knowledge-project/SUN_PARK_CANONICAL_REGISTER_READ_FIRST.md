@@ -83,3 +83,18 @@ Before generating actor chronology or family/entity relationships, search this r
 | S13 | Acta / notarial record — 28 Aug 2014 | primary contemporaneous notarial record; `VF/SSA/CA` | Community history, exploitation, Montelanza, AAS/Pamanil and stated litigation context. |
 | S14 | San Telmo / RICPE full webinar control — 30 Nov 2021 | contemporaneous audiovisual record and controlled transcript; `VF/SSA` | Eduardo Sánchez, Enrique Guerra, San Telmo client/investor introduction and RICPE project discussion. |
 | S15 | RICPE investor webinar / project chronology — 11 Nov 2020 onward | contemporaneous audiovisual/corporate record; `SSA/VF` | RICPE/CAM/Sun Park project narrative and later title/control records. |
+
+
+## 26 September 2026 — canonical state graph / recursive Truth Machine rule
+
+Apply `PD-CANONICAL-STATE-GRAPH-20260926-01` in `governance/CANONICAL_STATE_GRAPH_TRUTH_MACHINE_26SEP2026.md` and `assets/data/canonical-state-graph-overlay-v1.json`.
+
+The canonical register is the state graph of the matter, not only a people/entity list. Every material person, legal person, institution, proceeding, event, instrument, source, asset/right and proposition must receive a stable canonical identity or an explicit pending-node record. Every material relationship must be a dated typed edge.
+
+A change of role, support/opposition, withdrawal, abstention, no-action state, institutional hand-off, adoption/rejection, capacity or objective is itself potentially material and must be registered as a state transition when source-supported. Do not encode permanent factions or transfer guilt/intent by association.
+
+For every material event family, traverse precursor → filing/instrument → receipt/allocation → actor/capacity → contradiction/hearing → decision/signature → notice/service → appeal/review/finality → implementation → asset/economic effect → later adoption/use → contrary/corrective act → current state. Missing links become explicit gap IDs, never silent omissions.
+
+Run the recursive anti-orphan audit: a material source-named actor without a canonical ID, event without typed actor/proceeding/source edges, actor without event backlinks, filing without outcome, decision without service/finality, implementation without authority genealogy, or later state without predecessor must be resolved or retained as a finite gap with a next source target.
+
+The validator is `scripts/validate_canonical_state_graph_truth_machine.py`. Passing it proves referential integrity of the progressive overlay only; it does not certify corpus or docket completeness.
