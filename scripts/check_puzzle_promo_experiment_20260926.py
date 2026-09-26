@@ -95,6 +95,15 @@ def run(root: Path, output: Path):
                                 response = page.goto(url, wait_until="domcontentloaded", timeout=60000)
                                 assert response and response.ok, (url, response.status if response else None)
                                 row.update(inspect(page, width, height, lang))
+                                if route_name.startswith("r33-"):
+                                    viewer = page.locator("[data-rpl3304-forensic-reader]")
+                                    viewer.scroll_into_view_if_needed()
+                                    page.wait_for_timeout(250)
+                                    assert page.locator("[data-pd-puzzle-promo]").get_attribute("data-paused") == "true"
+                                    page.evaluate("window.scrollTo(0,0)")
+                                    page.wait_for_timeout(250)
+                                    assert page.locator("[data-pd-puzzle-promo]").get_attribute("data-paused") != "true"
+                                    row["r33_viewer_pause"] = True
                                 assert not errors, errors
                                 shot = output / f"{engine_name}-{route_name}-{label}.png"
                                 page.screenshot(path=str(shot), full_page=False)
