@@ -190,3 +190,127 @@ Do not:
 The Truth Machine should treat the 2008 discrepancy as a state-change question:
 
 **intended / represented state → completion event → actual post-completion state → residual rights → later conduct → 2011 succession.**
+
+
+## Targeted early-years source closure — 26 September 2026
+
+A targeted review of the connected historical mail/file corpus materially narrows the 2008–2011 state graph. These additions do not certify exhaustive mailbox coverage and do not expose private provider locators.
+
+### 1. The 18-February / 29-April 2008 bridge is now better sourced
+
+The signed 29-April-2008 CEXP-formation minutes record an earlier owners' resolution / option context dated 18 February and identify the option-side label **Victory Properties**. The same minutes separately list **José Sánchez Peñate, S.A.** and **Monte Lanza, S.L.** as represented owners and record a **74.90%** approval for the operating-community structure among those recorded present or represented.
+
+That closes a provenance gap: the 18-Feb event is no longer supported only by later narrative reconstruction.
+
+It does **not** close:
+- the original 18-Feb ACTA;
+- its attendance/proxy annex;
+- the precise seller/owner mandate denominator;
+- the underlying Victory option;
+- or 100% individual title consent.
+
+The 74.90% operating-community vote must never be silently converted into a 100% conveyance mandate.
+
+### 2. The 17-Jun-2008 seller-side split is now an explicit event
+
+The controlled seller accounts and the buyer-side 30-Sep-2009 review now support a more exact company-property bridge:
+
+| State | Commercial/service premises | Pools / associated areas |
+|---|---:|---:|
+| Pre-sale recital | 40 | 2 |
+| First acquisition described | 29 | 2 |
+| Residual Monte Lanza class | 11 | — |
+
+The seller accounts place an asset sale on **17 June 2008** and describe a same-date option over the eleven unsold premises, with a stated end date of **31 December 2010**. The LPB review later describes those eleven as still belonging to Monte Lanza while being available for use and expected to be purchased at the end of 2010.
+
+That is now a first-class state transition. It still does not replace the sale deed, residual option, exercise/assignment/release instruments or original finca annexes.
+
+### 3. 2009 and 2010 are separate disposition mechanisms
+
+The later Monte Lanza accounts disclose:
+- property sales during **2009**; and
+- certain **2010** property transfers to shareholder-creditors in settlement of company debts.
+
+Those mechanisms are now separate graph events.
+
+They are not automatically:
+- transfers of the same eleven residual properties;
+- breaches of a surviving buyer right;
+- final liquidation distributions;
+- or unlawful transactions.
+
+The Truth Machine must reconstruct recipient → finca → date → consideration/value → debt extinguished → authority → notice/consent → interaction with any surviving option.
+
+### 4. The missing bridge from 171 apartments to 159 is now visible before succession
+
+A contemporaneous final-form share-purchase agreement copy transmitted on **28 November 2011** describes LPB as owning:
+
+- **159 of the 220 accommodation units**; and
+- **29 public areas**.
+
+That late-2011 snapshot is consistent with the separately documented history of an initial 171-apartment acquisition followed by **twelve apartment disposals**, leaving 159. The exact twelve-finca disposition map remains an open P0 task.
+
+This means the Multimatrix period should no longer be modelled as a static “171-apartment” state from 2008 until exit. The graph must represent:
+
+**171 initial apartments → intervening disposals → 159 represented immediately before the project-side succession.**
+
+### 5. Critical execution boundary: the reviewed 28-Nov-2011 SPA copy is not execution proof
+
+The 28-November copy is headed as a final legally binding contract and contains a detailed final-form commercial package. It is highly material evidence of the state represented immediately before closing.
+
+However, the reviewed signature page contains blank signature/date/witness fields.
+
+Therefore the source status is locked as:
+
+> **TRANSMITTED FINAL-FORM COPY — REVIEWED SIGNATURE PAGE BLANK — NOT EXECUTION PROOF.**
+
+The copy is useful for:
+- the 159 + 29 asset snapshot;
+- the represented 100% Multimatrix LPB shareholding;
+- the represented controlling CEXP position;
+- and the terms the parties contemplated.
+
+It cannot by itself prove execution.
+
+The executed shareholder succession remains anchored to the **1-Dec-2011 Tel Aviv notarial transfer**, later publicised in Spain.
+
+### 6. The wider rights package is now more precisely framed
+
+The 28-Nov final-form copy contemplated, alongside the LPB shares, transfer to Monterecco Sun Park Limited of specified past, current and future claims/debt rights asserted by **Multimatrix** and **Sun Energy Spaces** against LPB, CEXP and the owners' Community.
+
+Because the reviewed final-form copy is unsigned, the correct question is no longer whether such a wider-rights concept existed. It plainly appears in the final-form transaction documentation.
+
+The remaining question is:
+
+> **Which of those wider rights were actually executed/assigned at closing, by which instrument, with what consideration, and how were they later recorded, asserted, paid or recognised?**
+
+This distinction is particularly important when reconciling later Aweswell creditor positions.
+
+### 7. Incoming-project knowledge has a dated provenance chain
+
+The source scan also identifies two immediate post-acquisition states:
+
+- **13-Dec-2011:** an accountant/tax-adviser diagnostic presented the incoming principals with LPB cash-flow pressure, previous unit-sale activity, CP/CEXP conflicts, non-participating-owner problems and acquisition/agreement options. It is adviser analysis, not an audit or adjudication.
+- **15-Dec-2011:** the incoming principals received a CEXP historical-document package including constitution/agreement/statute and 2008–2010 tax/member materials. Receipt is a provenance fact; it does not authenticate every enclosed instrument.
+
+These events matter to the Truth Machine because later assertions about what the incoming side knew must be tested against a dated custody/knowledge chain rather than inferred retrospectively.
+
+### 8. Immediate post-closing third-party security claim is preserved, not adopted
+
+Contemporaneous early-January correspondence records a third-party lawyer asserting an outstanding loan and security/profit-related rights connected with LPB and the share transaction, and seeking assurance of repayment/security from the incoming side.
+
+That source is preserved as a **third-party assertion**, not as an admitted or adjudicated debt/security interest. The underlying loan, collateral, alleged profit entitlement, any buyer assumption and any settlement/release must be recovered before the claimant is promoted into the public canonical actor graph.
+
+### 9. Later corroborating leads remain separate
+
+A March-2012 accountant communication quantified asserted LPB obligations to Multimatrix in service and funding categories. That is a useful reconciliation source for the wider-rights/credit chain, but it is not an audit, recognition by the Concurso or automatic proof that the balance transferred to Aweswell.
+
+Early-2012 correspondence also preserved an Israeli corporate/financing/liquidation research lead concerning Multimatrix. It remains a retrieval target until the underlying Israeli records are independently obtained and authenticated.
+
+## Resulting historical state sequence
+
+The early-years Truth Machine should now traverse:
+
+**hotel creation / opening → long JSP/Sun Group / Monte Lanza operating state → 18-Feb sale/option authority event → 29-Apr CEXP reorganisation → May operating handover → whole-hotel transaction object → 17-Jun company-asset sale + residual option → 18-Jun buyer-side completion perimeter → 15-Jul ownership/operation snapshot → 2009 residual state and sales → 2010 in-kind transfers / option-end questions → 171-to-159 apartment transition → 28-Nov pre-closing final-form terms → 1-Dec executed LPB-share succession → 13/15-Dec diagnostic and records handover → early-Jan third-party security assertion → 2012 lender/protective-insolvency sequence.**
+
+Each arrow is an evidential transition. None transfers guilt, authority, title or intent automatically.
