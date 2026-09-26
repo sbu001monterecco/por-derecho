@@ -159,6 +159,65 @@
       "recovery_class": "GITHUB_NEWER_OR_EQUIVALENT",
       "replay_rule": "Refresh both heads; preserve newer GitLab source and merge only this reviewed net delta through normal gates. No quota-probe pipeline or paid action. Do not port the temporary preparation workflow.",
       "scope": "Source-qualified cross-platform chronology and completed institutional correspondence"
+    },
+    {
+      "id": "PD-GL-REC-HOMEPAGE-JUDICIAL-20260926-01",
+      "scope": "Existing PR1893 homepage continuation, connected-course governance and source-signature versus liquidation-causation clarification",
+      "recovery_class": "GITHUB_NEWER_OR_EQUIVALENT",
+      "github_pr": 1893,
+      "github_branch": "ux/homepage-current-main-successor-20260925",
+      "github_base_at_observation": "1c268449ec05c95ec32954c22fb282d317271a24",
+      "github_source_commits": [
+        "b880b1cd4820eb3458120fedea64fc7801e0694e",
+        "71a5375296aa6cd20d83d9bed06fb9a9babba9a5",
+        "51ae50d951b5129b6559f6491fa7635edfc64282"
+      ],
+      "github_latest_clarification_blob": "4db573242d8ed2ead09e5e5b3bccb0234aabdce4",
+      "github_state": "PRESERVED_ON_EXISTING_PR__NOT_YET_MAIN_OR_LIVE",
+      "gitlab_target_main_at_observation": "5d90b0fd0e80a655599a2b18fc88b6b4a876c9f1",
+      "gitlab_state": "QUEUED_ADDITIVE_REPLAY__CI_CAPACITY_BLOCKED__NO_PARITY_CLAIM",
+      "private_custody_state": "EXISTING_ORIGINALS_RETAINED_PRIVATE__NEW_RELEASE_PACKAGE_READBACK_NOT_YET_CLAIMED",
+      "public_paths": [
+        "archive/ALBERTO_LOPEZ_VILLARRUBIA_SIGNED_ACTS_AND_KNOWLEDGE_REGISTER_17AUG2026.md",
+        "CONCURSO36_UNITARY_CRIMINAL_FIRST_GOVERNANCE.md",
+        "assets/data/concurso36-controlling-conclusions-supplement-20260829.json",
+        "en/index.html",
+        "es/index.html",
+        "assets/homepage-reading-20260925.css",
+        "assets/audience-experience-order-20260823.js",
+        "assets/unitary-public-shell-20260818.js",
+        "assets/optimum-reader-journey-finish-20260818.js",
+        "ops/continuity/GITHUB_DRIVE_GITLAB_RECOVERY_QUEUE_20260921.json"
+      ],
+      "path_scope_rule": "This is the known affected family, not certification of the final PR diff. At replay enumerate the then-reviewed exact changed paths and relevant dependencies; preserve unrelated files and any newer host-specific corrections.",
+      "content_requirements": [
+        "Retain Avello as the identified signatory of the court's 19-Dec-2017 liquidation-opening order; no personal signature attribution to López Villarrubia.",
+        "Do not infer an independent substantive reset, exoneration, proxy signing, absence or guilt from signature alone. Preserve Gil Marer's attributed hypothesis and the actor-specific preparation, decision and causal inquiry.",
+        "Keep 2008 dissident origin, AC alignment-from-inception allegation, CAM later entry, alleged convenio/liquidación judicial threshold, 7-Jun-2018 pivot and later/ongoing acts distinct but connected.",
+        "Retain all five private principals plus separately attributed AC and judge visibly on both homepages and useful appearances elsewhere; seven is not an exhaustive actor census.",
+        "Preserve whole-portfolio allegation; asset-by-asset substantiation, RICPE separation, contrary evidence and source limits."
+      ],
+      "gitlab_stale_source_findings": [
+        "The inspected GitLab signed-acts register still names Fernando de León Marrero as the 6-Jun-2012 appointee; source-controlled GitHub correctly names Francisco de Borja Rodríguez-Batllori Laffitte. Preserve the existing C36-CORR-OPENING-AC-20260823 correction, not the stale GitLab wording.",
+        "The inspected GitLab register lacks the two distinct source-promoted 16-Apr-2018 plan and interest rows and later dated publication-state clarification already on GitHub; reconcile those established corrections together with the new signature-only clarification.",
+        "The older concise-homepage proposal must not overwrite the later owner-authorised seven-person-preserving refinement."
+      ],
+      "readiness_holds": [
+        "The new GitHub head needs its own required checks; prior green results do not certify new content.",
+        "At observation the English connected-course paragraph lacked its Spanish counterpart; complete and verify bilingual parity before public release.",
+        "No GitLab release without its own required exact-head checks and affected-route readback."
+      ],
+      "restoration_trigger": "Evidence of actual usable GitLab capacity from existing provider/native state, not expiry of a guessed one-or-two-day wait.",
+      "replay_rule": "Re-read current main, PR1893 and this item; freeze both actual heads. Separate already-reviewed source corrections from pending homepage bytes. Preserve newer GitLab work and reconcile only approved net public-safe deltas into the existing suitable recovery MR. No wholesale overwrite, no new competing homepage, no probe-only pipeline, no purchases, no private source identifiers or originals. Run only required validation for the real replay. Verify source merge and Pages separately and append exact commit/MR/job/live receipts. If a gate or writer conflict blocks one tranche, retain its disposition without blocking independent safe tranches.",
+      "completion_rule": "Complete only when every in-scope path/proposition is verified on GitLab or has an explicit accepted exclusion, required checks pass, changed public routes are live-verified, and current recovery controls record the source and result. Disable the scoped recovery watcher after completion; do not reactivate unrelated paused tasks.",
+      "github_main_at_recovery_action": "791789ebbdab3cc33702bdc4ac3ce0ed8ca92b4c",
+      "gitlab_main_at_recovery_action": "5a4c1b14e1f751456e2275cc7648696ae874b513",
+      "gitlab_source_recovery_branch": "recovery/judicial-signature-causation-20260926",
+      "gitlab_source_recovery_commit": "9862fd55ebd73ade78733f0b46efeab281d504ae",
+      "gitlab_source_recovery_mr": 640,
+      "gitlab_source_recovery_state": "MR_OPEN_EXACT_HEAD_CI_RUNNING__NO_MERGE_CLAIM",
+      "homepage_baseline_state": "CURRENT_GITHUB_GITLAB_HOME_BYTES_EXACT_FOR_EN_ES_BASELINE__PR1893_EXTRA_REFINEMENT_HELD_SEPARATELY",
+      "continuity_audit_date": "2026-09-26"
     }
   ],
   "restoration_observed": {
