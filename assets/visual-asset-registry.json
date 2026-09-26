@@ -546,7 +546,7 @@
       "short_label": "JTP",
       "path": "assets/actors/PD-SP-P-0041_JTP_APPROVED_CANONICAL_20260926.png",
       "git_blob_sha": "d0df2a148c9dbe626b77a85570e9989e14baa14c",
-      "identity_status": "LOCKED_CANONICAL_USER_APPROVED_20260926",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
       "identity_basis": "User approved this exact JTP portrait for canonical publication on 26 September 2026. It is an AI-assisted derivative made from the user-supplied JTP source photograph and is not treated as independent documentary identification. No facial-recognition inference is used.",
       "approved_contexts": [
         "JTP payment / AC / CAM actor-context composite",
@@ -570,7 +570,7 @@
       "short_label": "JTP actor-context real-source composite",
       "path": "assets/jtp-payment-actor-composite-real-sources-20260925.png",
       "git_blob_sha": "aad88000885d606c1a83ea874fb2c864c483b7b3",
-      "identity_status": "LOCKED_COMPOSITE_JTP_SLOT_UPDATED_20260926",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
       "identity_basis": "Deterministic single-slot replacement: only the JTP portrait interior was changed to the user-approved canonical JTP asset; the four other individual portrait regions and all pixels outside the authorised JTP box were preserved.",
       "approved_contexts": [
         "JTP payment / AC / CAM actor-context composite",
