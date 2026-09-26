@@ -174,7 +174,7 @@
         "51ae50d951b5129b6559f6491fa7635edfc64282"
       ],
       "github_latest_clarification_blob": "4db573242d8ed2ead09e5e5b3bccb0234aabdce4",
-      "github_state": "SOURCE_CORRECTION_MERGED_ON_MAIN__HOMEPAGE_PR1893_REMAINS_SEPARATE_HELD_LANE",
+      "github_state": "SOURCE_CORRECTION_AND_FINAL_GREEN_RECEIPT_MERGED_ON_MAIN__HOMEPAGE_PR1893_REMAINS_SEPARATE_HELD_LANE",
       "gitlab_target_main_at_observation": "5d90b0fd0e80a655599a2b18fc88b6b4a876c9f1",
       "gitlab_state": "CI_REPAIR_AND_JUDICIAL_SOURCE_SUCCESSOR_MERGED__MAIN_READBACK_CONFIRMED",
       "private_custody_state": "FINAL_CONTROL_RECEIPTS_PRESENT_IN_GOOGLE_DRIVE_AND_CHATGPT_LIBRARY__PRIVATE_ORIGINALS_RETAINED__NO_PRIVATE_LOCATOR_PUBLICATION",
@@ -232,7 +232,7 @@
         "github_source_successor_branch": "continuity/judicial-evidentiary-repair-20260926",
         "github_register_commit": "d252b5838878766c5cf8f652cb9df279e70b8b53",
         "github_register_blob": "5c537769afbf42d99b34163996fccf4919c87ea0",
-        "github_state": "CANONICAL_SOURCE_CORRECTION_ALREADY_MERGED__FINAL_GREEN_RECEIPT_BEING_REGISTERED__PR1893_SEPARATE",
+        "github_state": "SOURCE_CORRECTION_AND_FINAL_GREEN_RECEIPT_MERGED__PR1893_SEPARATE",
         "gitlab_ci_lane": 637,
         "gitlab_ci_head": "4661d94ad959d7fe5a3bdf4fd382a150fe678939",
         "gitlab_ci_pipeline": 2885859823,
@@ -286,7 +286,7 @@
         "drive_anchor_state": "FINAL_GREEN_CONVERGENCE_RECEIPT_APPENDED_AND_READBACK_AVAILABLE",
         "library_successor": "PD_RECURSIVE_GREEN_AUDIT_ACCOUNT_ROOT_CURRENT_20260926_v6.md",
         "library_successor_state": "SYNCED_AND_READ_BACK__REPOSITORY_JUDICIAL_TRANCHE_GREEN",
-        "canonical_registration_closeout": "FINAL_GITHUB_RECEIPT_PENDING_THIS_PR__ALL_NON_GITHUB_IN_SCOPE_CRITERIA_GREEN",
+        "canonical_registration_closeout": "COMPLETE__CURRENT_MAIN_GREEN_IN_SCOPE",
         "gitlab_ci_merge_commit": "916d6e0a6403b3ec06d1d2c4b260523af333b05d",
         "gitlab_source_predecessor_lane": 640,
         "gitlab_source_merge_commit": "b91a45182c88a96f1bef1ea70a43a97ab194d369",
@@ -299,7 +299,49 @@
         "gitlab_ci_final_receipt_note": 3910811536,
         "gitlab_source_final_receipt_note": 3910811565,
         "gitlab_control_final_receipt_note": 3910811590,
-        "public_route_disposition": "NO_PUBLIC_ROUTE_CHANGED__NO_HOMEPAGE_DEPLOYMENT_REQUIRED"
+        "public_route_disposition": "NO_PUBLIC_ROUTE_CHANGED__NO_HOMEPAGE_DEPLOYMENT_REQUIRED",
+        "github_final_green_receipt_pr": 1948,
+        "github_final_green_receipt_head": "2b293153bad2b11436b02b40f3ac4e41de6243da",
+        "github_final_green_receipt_merge_commit": "6a8420ee5b0bf49afee03d725d8a94322caf6d3e",
+        "github_final_green_receipt_checks": [
+          {
+            "name": "PD release acceptance",
+            "run_id": 36275093533,
+            "status": "SUCCESS"
+          },
+          {
+            "name": "Outage backend parity / validate",
+            "run_id": 36275093530,
+            "status": "SUCCESS"
+          },
+          {
+            "name": "validate",
+            "run_id": 36275093538,
+            "status": "SUCCESS"
+          },
+          {
+            "name": "validate",
+            "run_id": 36275093524,
+            "status": "SUCCESS"
+          },
+          {
+            "name": "validate",
+            "run_id": 36275093508,
+            "status": "SUCCESS"
+          },
+          {
+            "name": "publication-integrity",
+            "run_id": 36275093505,
+            "status": "SUCCESS"
+          },
+          {
+            "name": "advisory-audit",
+            "run_id": 36275093493,
+            "status": "SUCCESS"
+          }
+        ],
+        "github_main_after_final_green_receipt": "6a8420ee5b0bf49afee03d725d8a94322caf6d3e",
+        "final_disposition_readback": "GREEN_IN_SCOPE__NO_OPEN_HOLDS__NO_PUBLIC_ROUTE_CHANGE__HOMEPAGE_PR1893_EXCLUDED"
       }
     }
   ],
