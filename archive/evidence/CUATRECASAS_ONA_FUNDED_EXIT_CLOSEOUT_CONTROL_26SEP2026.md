@@ -51,8 +51,7 @@ The funded-exit architecture must not be reduced to a single prospective lender 
 The record shows concurrent or backup routes, including:
 - EG / CR Management bridge financing and term-sheet work;
 - Stoneweg / Varia route;
-- Ben Oldman Partners / related financing route;
-- Mediterranean Capital Management route;
+- Ben Oldman Partners, Avenue Capital and Mediterranean Capital Management — identified on 20 Apr as the three funds already presented the transaction and showing interest; Ben Oldman and Mediterranean later specifically requested greater exit visibility / the SOCIMI LOI to move forward;
 - Santander structured-finance / hotel-real-estate team review;
 - additional HNW-plus-bank support discussed as a fallback if bank capacity did not cover the full requirement;
 - further institutional outreach identified in the existing pre-7-Jun source map.
