@@ -5,6 +5,7 @@
   "status": "CANONICAL_PRIVATE_RELATIONSHIP_REGISTER",
   "purpose": "Canonical relationship and function register for the historical and current AWESWELL LIMITED / Sun Rock platform. It supplements, and does not replace, legal-entity, identity, insolvency, evidence or proceeding registers.",
   "controlling_rules": [
+    "The wider Sun Rock perimeter contains a historical Guernsey Foundation/operating leg and an AWESWELL UK/Spanish asset leg. Common founder/beneficial platform does not itself prove direct corporate parentage between those legs.",
     "AWESWELL LIMITED is the legal UK Sponsor/HoldCo; Sun Rock is the hospitality/investment platform identity and is not automatically a legal person.",
     "LPB, Pink Canary Services, Hava Vida, Matkator, the Communities, UK distributors, advisers and counterparties remain legally distinct; Hava Vida is nevertheless canonically within the AWESWELL LIMITED / Sun Rock business and economic perimeter.",
     "A historical commercial relationship does not prove ownership, agency outside the contract, common knowledge, wrongdoing or present-day status.",
@@ -86,6 +87,24 @@
       "type": "PROPOSED_SHARE_ACQUISITION_TARGET_HISTORICAL",
       "company_number": "04511481",
       "later_name": "Arnloft 2002 Limited"
+    },
+    {
+      "id": "E061",
+      "name": "The Sun Rock Foundation",
+      "type": "GUERNSEY_FOUNDATION_BENEFICIAL_PLATFORM_LAYER",
+      "registration_number": "27"
+    },
+    {
+      "id": "E062",
+      "name": "Sun Rock Limited",
+      "type": "GUERNSEY_OPERATIONAL_SALES_MARKETING_COMPANY",
+      "company_number": "59696"
+    },
+    {
+      "id": "E063",
+      "name": "Retirement Holiday Limited",
+      "type": "GUERNSEY_HISTORICAL_PLATFORM_COMPANY",
+      "company_number": "59704"
     }
   ],
   "relationship_edges": [
@@ -200,6 +219,30 @@
       "relationship": "PROPOSED_100_PERCENT_SHARE_ACQUISITION",
       "period": "2015–2018",
       "status": "ADVANCED_SIGNED_DOCUMENTATION_NOT_COMPLETED"
+    },
+    {
+      "from": "FOUNDERS-GIL-PATRICIA",
+      "to": "E061",
+      "relationship": "FOUNDERS_AND_HISTORICAL_BENEFICIARIES",
+      "status": "CONTEMPORANEOUS_SOURCE_SUPPORTED_CONSTITUTION_DETAILS_OPEN"
+    },
+    {
+      "from": "E061",
+      "to": "E062",
+      "relationship": "FOUNDATION_OWNS_OPERATIONAL_BUSINESS",
+      "status": "2016_CORPORATE_QA_EXPLICIT_PRIMARY_CORPORATE_RECORD_OPEN"
+    },
+    {
+      "from": "FOUNDERS-GIL-PATRICIA",
+      "to": "E005",
+      "relationship": "ULTIMATE_BENEFICIAL_PRINCIPALS_OF_ASSET_HOLDCO",
+      "status": "OWNER_DECLARATION_AND_LATER_PLANNING_RECORDS_SHARE_TITLE_DETAILS_DATE_SPECIFIC"
+    },
+    {
+      "from": "E061",
+      "to": "E005",
+      "relationship": "WIDER_PLATFORM_INTEGRATION_NOT_PROVEN_SHARE_OWNERSHIP",
+      "status": "DO_NOT_CONVERT_TO_PARENT_SUBSIDIARY_EDGE_WITHOUT_INSTRUMENT"
     }
   ],
   "historical_tracks": [
@@ -338,5 +381,10 @@
     "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
     "PINK_CANARY_UNITARY_PROSECUTORIAL_FIRST_MASTER_21SEP2026_CURRENT",
     "ops/continuity/CONTINUITY_PRESERVATION_PROPAGATION_RULE.md"
-  ]
+  ],
+  "scope_supersession": {
+    "status": "SUPPLEMENTED_NOT_REPLACED",
+    "higher_level_register": "ops/SUN_ROCK_FOUNDATION_BENEFICIAL_PLATFORM_REGISTER_20260926.json",
+    "reason": "The historical Sun Rock perimeter includes a Guernsey Foundation/operating layer above or alongside the UK asset HoldCo and cannot be represented accurately as a UK-HoldCo-only tree."
+  }
 }
