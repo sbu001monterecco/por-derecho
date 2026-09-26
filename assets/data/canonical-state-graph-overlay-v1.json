@@ -69,6 +69,9 @@
       ],
       "open_gap_ids": [
         "GAP-C36-OPENING-PRECURSOR"
+      ],
+      "predecessor_graph_event_ids": [
+        "PD-SP-EVT-SP-2012-01-03-SPANISH-PUBLICITY"
       ]
     },
     {
@@ -452,5 +455,13 @@
     "VALIDATE",
     "REPEAT"
   ],
-  "completeness_claim_permitted": false
+  "completeness_claim_permitted": false,
+  "historical_prequel": {
+    "control_id": "PD-SP-HISTORY-STATE-GRAPH-1987-2011-20260926",
+    "path": "assets/data/sun-park-historical-state-graph-1987-2011-v1.json",
+    "first_phase": "SP-PHASE-0-ORIGIN-1987-1991",
+    "handoff_event": "PD-SP-EVT-SP-2012-01-03-SPANISH-PUBLICITY",
+    "successor_event": "PD-SP-EVT-C36-2012-06-06-OPENING",
+    "rule": "Do not start the material history at the concurso; traverse the hotel origin, Sun Group/JSP/Monte Lanza operating phase, 2008 whole-hotel transaction object versus incomplete completion, Multimatrix phase and 2011 UK-holdco succession first."
+  }
 }
