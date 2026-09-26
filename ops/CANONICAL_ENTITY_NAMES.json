@@ -722,6 +722,119 @@
         "Google Drive: Sun Rock - Solos SPA - Hamlins draft - 13.12.2016.DOCX",
         "ops/AWESWELL_GROUP_PERIMETER_SUPPLEMENT_20260926.json"
       ]
+    },
+    {
+      "id": "E061",
+      "record_type": "foundation",
+      "jurisdiction": "Guernsey",
+      "canonical_name": "The Sun Rock Foundation",
+      "first_reference": "The Sun Rock Foundation",
+      "identifier": {
+        "type": "Guernsey foundation registration number",
+        "value": "27",
+        "verification_status": "CONTEMPORANEOUS_2015_STRUCTURE_DOCUMENT_CURRENT_REGISTRY_EXTRACT_OPEN"
+      },
+      "establishment_year": 2015,
+      "establishment_year_source_status": "CONTEMPORANEOUS_2016_CORPORATE_QA",
+      "registered_address_historical": "Mont Crevelt House, Bulwer Avenue, St Sampson, Guernsey, GY2 4LH",
+      "founders": [
+        "Gil Marer (historical source name: Gil Summers)",
+        "Patricia Domínguez"
+      ],
+      "historical_guardian": "Gil Marer (historical source name: Gil Summers)",
+      "historical_council_member": "Jupiter Trustees",
+      "controlled_context": "Historical Guernsey foundation and beneficial/family-platform layer of the wider Sun Rock perimeter. Contemporary materials identify Gil and Patricia as founders/beneficiaries and identify Gil as 'Controlling Beneficiary' in a 2016 Solos/Sun Rock biography.",
+      "ownership_boundary": "A Guernsey foundation is a separate legal person without shareholders. Founder, beneficiary, guardian and council roles are not company-shareholding roles. Do not state that the Foundation legally owned AWESWELL LIMITED unless a governing instrument or share record proves that specific edge.",
+      "current_status_rule": "Do not state a current 2026 registration, council, guardian, beneficiary or operating status without a current Guernsey Registry extract and, where needed, the Foundation charter/rules.",
+      "repository_sources": [
+        "Google Drive: Sun Rock Foundation - Structure Chart - Doc #54683 - 20JAN2015",
+        "Google Drive: Company Structure for THB Feb2015",
+        "Google Drive: Sun Rock QA DSep16 v1.2",
+        "Google Drive: Narrative & Bios (GB) Solos-SunRock"
+      ]
+    },
+    {
+      "id": "E062",
+      "record_type": "legal_entity",
+      "jurisdiction": "Guernsey",
+      "canonical_name": "Sun Rock Limited",
+      "first_reference": "Sun Rock Limited (Guernsey)",
+      "identifier": {
+        "type": "Guernsey company number",
+        "value": "59696",
+        "verification_status": "CONTEMPORANEOUS_2015_STRUCTURE_DOCUMENT_CURRENT_REGISTRY_EXTRACT_OPEN"
+      },
+      "registered_address_historical": "Mont Crevelt House, Bulwer Avenue, St Sampson, Guernsey, GY2 4LH",
+      "historical_directors": [
+        "Jupiter Directors One Limited",
+        "Jupiter Directors Two Limited"
+      ],
+      "controlled_context": "Historical Guernsey operational/sales-and-marketing business in the Sun Rock Foundation perimeter. A 2016 corporate Q&A states that The Sun Rock Foundation owned Sun Rock Limited.",
+      "separation_rule": "Do not confuse this Guernsey company no. 59696 with any similarly named UK company. Do not infer current status or current ownership without a current Guernsey Registry extract.",
+      "repository_sources": [
+        "Google Drive: Company Structure for THB Feb2015",
+        "Google Drive: Sun Rock QA DSep16 v1.2",
+        "Google Drive: Narrative & Bios (GB) Solos-SunRock"
+      ]
+    },
+    {
+      "id": "E063",
+      "record_type": "legal_entity",
+      "jurisdiction": "Guernsey",
+      "canonical_name": "Retirement Holiday Limited",
+      "first_reference": "Retirement Holiday Limited (Guernsey)",
+      "identifier": {
+        "type": "Guernsey company number",
+        "value": "59704",
+        "verification_status": "CONTEMPORANEOUS_2015_STRUCTURE_DOCUMENT_CURRENT_REGISTRY_EXTRACT_OPEN"
+      },
+      "registered_address_historical": "Mont Crevelt House, Bulwer Avenue, St Sampson, Guernsey, GY2 4LH",
+      "historical_directors": [
+        "Jupiter Directors One Limited",
+        "Jupiter Directors Two Limited"
+      ],
+      "controlled_context": "Historical Guernsey company appearing within the Sun Rock Foundation structure and the long-stay / Summers Villages operating architecture.",
+      "current_status_rule": "Current status and precise ownership require current registry/corporate records.",
+      "repository_sources": [
+        "Google Drive: Company Structure for THB Feb2015",
+        "Google Drive: Sun Rock Foundation Structure Chart 20JAN2015"
+      ]
+    },
+    {
+      "id": "E064",
+      "record_type": "legal_entity",
+      "jurisdiction": "Guernsey",
+      "canonical_name": "499 Retirement Living Limited",
+      "first_reference": "499 Retirement Living Limited (Guernsey)",
+      "identifier": {
+        "type": "Guernsey company number",
+        "value": null,
+        "verification_status": "OPEN"
+      },
+      "controlled_context": "Historical company shown in the 2015 Sun Rock Foundation structure.",
+      "current_status_rule": "Exact registration number, ownership and current status remain open until primary corporate/registry records are obtained.",
+      "repository_sources": [
+        "Google Drive: Sun Rock Foundation Structure Chart 20JAN2015",
+        "Google Drive: Company Structure for THB Feb2015"
+      ]
+    },
+    {
+      "id": "E065",
+      "record_type": "legal_entity",
+      "jurisdiction": "Guernsey",
+      "canonical_name": "Sun Rock Member Services Limited",
+      "first_reference": "Sun Rock Member Services Limited (Guernsey)",
+      "identifier": {
+        "type": "Guernsey company number",
+        "value": null,
+        "verification_status": "OPEN"
+      },
+      "controlled_context": "Historical company shown in the 2015 Sun Rock Foundation structure, associated with the member-services / Gold Card platform.",
+      "current_status_rule": "Exact registration number, ownership and current status remain open until primary corporate/registry records are obtained.",
+      "repository_sources": [
+        "Google Drive: Sun Rock Foundation Structure Chart 20JAN2015",
+        "Google Drive: Company Structure for THB Feb2015"
+      ]
     }
   ]
 }
