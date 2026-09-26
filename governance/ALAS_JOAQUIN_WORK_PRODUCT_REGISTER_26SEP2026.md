@@ -70,3 +70,7 @@ Daniel Jiménez wrote that it would be useful to accompany the **“escrito de r
 
 ### Non-exculpation-by-diffusion
 Shared responsibility must be analysed cumulatively and individually. The involvement or omission of one lawyer does not automatically excuse another lawyer's independently established responsibility, but responsibility must still be proved role-by-role. For each professional record knowledge, mandate, drafting, review, advice, filing authority, practical opportunity, communications, decision, actual filing/non-filing, explanation, contrary evidence and causation.
+
+
+### Removal-support source classified — `Responsabilidades del AC.pdf`
+Targeted Drive recovery returned `Responsabilidades del AC.pdf` (Drive ID `1AmqwfXp4eCiKtpiR_Bbu8XyAfEMO1rfj`, Drive modified timestamp 22-Jul-2020). Inspection establishes that it is a Tirant Online doctrinal article, *La responsabilidad de los administradores concursales en la nueva regulación concursal* by Pilar Iñiguez Ortega (RJCV 17/2006), not a project pleading. It discusses AC civil responsibility, arts. 36/37 LC and separation for just cause. Classification: **LEGAL / DOCTRINAL SUPPORT MATERIAL** potentially relevant to the 2020 responsibility/removal workstream. It is **not** the May-2020 “escrito de remoción del cargo”, does not prove that a petition was filed, and does not identify which project professional selected or relied upon it without further provenance evidence.
