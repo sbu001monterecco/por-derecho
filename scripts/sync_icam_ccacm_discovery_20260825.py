@@ -63,7 +63,7 @@ def update_four_body_pages(changed: list[str]) -> None:
 
 
 def update_general_registers(changed: list[str]) -> None:
-    rel = "es/registros-institucionales/index.html"
+    rel = "es/registros-institucionales/portada-archivo-20260925.html"
     text = read(rel)
     if "registros-institucionales-colegios-abogacia-2026/" not in text:
         text = replace_once(
@@ -168,7 +168,7 @@ def update_homepages(changed: list[str]) -> None:
         '                </a>\n              '
     )
     insert_home_card(
-        "es/index.html",
+        "es/portada-archivo-20260925.html",
         "registros-institucionales-colegios-abogacia-2026/",
         es_card,
         changed,
@@ -182,7 +182,7 @@ def update_homepages(changed: list[str]) -> None:
         '                </a>\n              '
     )
     insert_home_card(
-        "en/index.html",
+        "en/homepage-archive-20260925.html",
         "institutional-records-bar-bodies-2026/",
         en_card,
         changed,
@@ -231,7 +231,7 @@ def update_sitemap(changed: list[str]) -> None:
 
 
 def update_updates_pages(changed: list[str]) -> None:
-    rel = "es/actualizaciones/index.html"
+    rel = "es/actualizaciones/portada-archivo-20260925.html"
     text = read(rel)
     if 'id="icam-ccacm-control-institucional-25ago"' not in text:
         marker = '    <section class="updates-section">'
@@ -241,7 +241,7 @@ def update_updates_pages(changed: list[str]) -> None:
         text = text.replace(marker, entry + marker, 1)
     write(rel, text, changed)
 
-    rel = "en/updates/index.html"
+    rel = "en/updates/portada-archivo-20260925.html"
     text = read(rel)
     if 'id="icam-ccacm-institutional-control-25aug"' not in text:
         marker = '    <section class="updates-section">'
@@ -334,7 +334,7 @@ def check() -> None:
     forbid("en/institutional-records-bar-bodies-2026/index.html", "Today's two emails")
 
     require(
-        "es/registros-institucionales/index.html",
+        "es/registros-institucionales/portada-archivo-20260925.html",
         "registros-institucionales-colegios-abogacia-2026/",
         "cuatrecasas-icam-ccacm-2026/",
         "Catorce registros base + suplemento colegial",
@@ -345,8 +345,8 @@ def check() -> None:
         "cuatrecasas-icam-ccacm-2026/",
         "Fourteen core records + ICAM",
     )
-    require("es/index.html", "registros-institucionales-colegios-abogacia-2026/")
-    require("en/index.html", "institutional-records-bar-bodies-2026/")
+    require("es/portada-archivo-20260925.html", "registros-institucionales-colegios-abogacia-2026/")
+    require("en/homepage-archive-20260925.html", "institutional-records-bar-bodies-2026/")
 
     for route in (
         "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-icam-ccacm-2026/",
@@ -356,8 +356,8 @@ def check() -> None:
     ):
         require("sitemap.xml", route)
 
-    require("es/actualizaciones/index.html", 'id="icam-ccacm-control-institucional-25ago"', "no se envió una nueva respuesta")
-    require("en/updates/index.html", 'id="icam-ccacm-institutional-control-25aug"', "no new response was sent")
+    require("es/actualizaciones/portada-archivo-20260925.html", 'id="icam-ccacm-control-institucional-25ago"', "no se envió una nueva respuesta")
+    require("en/updates/portada-archivo-20260925.html", 'id="icam-ccacm-institutional-control-25aug"', "no new response was sent")
     require("es/actualizaciones/feed.xml", "#icam-ccacm-control-institucional-25ago", STAMP)
     require("en/updates/feed.xml", "#icam-ccacm-institutional-control-25aug", STAMP)
 

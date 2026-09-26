@@ -49,14 +49,14 @@ FILES = {
 }
 
 PAIR_SPECS = [
-    ("es/index.html", "en/index.html"),
+    ("es/portada-archivo-20260925.html", "en/homepage-archive-20260925.html"),
     ("es/reclamacion-caixabank-valencia/index.html", "en/caixabank-valencia-claim/index.html"),
     ("es/acreedor-de-registro/responsabilidad/index.html", "en/lender-of-record/liability/index.html"),
     ("es/perimetro-ph122-cerberus-haya-bankia-externo/index.html", "en/ph122-cerberus-haya-bankia-external-perimeter/index.html"),
     ("es/ingenieria-forense-criminal-sun-park/index.html", "en/sun-park-criminal-engineering-investigation/index.html"),
     ("es/implementacion-notarial-protocolo-457/index.html", "en/notarial-implementation-protocol-457/index.html"),
     ("es/dp-1956-2026/index.html", "en/dp-1956-2026/index.html"),
-    ("es/actualizaciones/index.html", "en/updates/index.html"),
+    ("es/actualizaciones/portada-archivo-20260925.html", "en/updates/portada-archivo-20260925.html"),
     ("es/pacto-comisorio-arquitectura-credito-titulo/index.html", "en/pacto-comisorio-credit-to-title-architecture/index.html"),
 ]
 

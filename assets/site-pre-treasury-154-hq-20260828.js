@@ -29,8 +29,8 @@
   };
   const path = normalise(location.pathname);
   const exact = new Map([
-    ['/es/', ['full', '#historia-reconstruida', 'after']],
-    ['/en/', ['full', null, 'append']],
+    ['/es/portada-archivo-20260925.html/', ['full', '#historia-reconstruida', 'after']],
+    ['/en/homepage-archive-20260925.html/', ['full', null, 'append']],
     ['/es/ric-private-equity-sun-park/', ['full', 'main > section:first-of-type', 'after', true]],
     ['/en/ric-private-equity-sun-park/', ['full', 'main > section:first-of-type', 'after', true]],
     ['/es/mismo-hotel-multiples-vidas-financieras/', ['full', null, 'append']],

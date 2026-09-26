@@ -27,20 +27,20 @@ TEMPORAL = {
 
 HTML_FILES = {
     "es": (
-        "es/index.html",
+        "es/portada-archivo-20260925.html",
         "es/mapa-probatorio-penal-unitario/index.html",
         "es/ingenieria-inversa-criminal-unitaria/index.html",
         "es/ingenieria-forense-criminal-sun-park/index.html",
         "es/registro-unitario/index.html",
-        "es/actualizaciones/index.html",
+        "es/actualizaciones/portada-archivo-20260925.html",
     ),
     "en": (
-        "en/index.html",
+        "en/homepage-archive-20260925.html",
         "en/unitary-criminal-evidence-map/index.html",
         "en/unitary-criminal-reverse-engineering/index.html",
         "en/sun-park-criminal-engineering-investigation/index.html",
         "en/unitary-record/index.html",
-        "en/updates/index.html",
+        "en/updates/portada-archivo-20260925.html",
     ),
 }
 FEED_FILES = {

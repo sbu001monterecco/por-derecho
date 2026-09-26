@@ -7,8 +7,8 @@ on:
       - "assets/site.js"
       - "assets/audience-experience-order-20260823.js"
       - "assets/san-telmo-attribution-correction-20260819.js"
-      - "en/index.html"
-      - "es/index.html"
+      - "en/homepage-archive-20260925.html"
+      - "es/portada-archivo-20260925.html"
       - "en/san-telmo-ricpe-sun-park/index.html"
       - "es/san-telmo-ricpe-sun-park/index.html"
       - "sitemap-san-telmo.xml"
@@ -57,7 +57,7 @@ jobs:
           echo "PSR_BROWSER_PATH=$BROWSER_PATH" >> "$GITHUB_ENV"
           "$BROWSER_PATH" --version
 
-      - name: Verify rendered English and Spanish homepage attribution
+      - name: Verify rendered English and Spanish archived-homepage attribution
         id: verify_dom
         continue-on-error: true
         env:
@@ -94,7 +94,7 @@ jobs:
               "state": "success" if success else "failure",
               "target_url": f"https://github.com/{repository}/actions/runs/{run_id}",
               "description": (
-                  "San Telmo attribution and rendered homepages verified live"
+                  "San Telmo attribution and rendered archived homepages verified live"
                   if success
                   else "San Telmo rendered public-edge verification failed"
               ),

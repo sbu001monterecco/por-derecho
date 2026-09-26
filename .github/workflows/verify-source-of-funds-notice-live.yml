@@ -183,7 +183,7 @@ jobs:
           const base = process.env.RENDER_BASE;
           const q = `source=${process.env.SOURCE_SHA.slice(0, 12)}&run=${process.env.RUN_ID}`;
           const full = [
-            '/es/', '/en/',
+            '/es/portada-archivo-20260925.html', '/en/homepage-archive-20260925.html',
             '/es/ric-private-equity-sun-park/', '/en/ric-private-equity-sun-park/',
             '/es/mismo-hotel-multiples-vidas-financieras/', '/en/same-hotel-multiple-financial-lives/',
             '/es/acosta-matos-perimetro/', '/en/acosta-matos-perimeter/',

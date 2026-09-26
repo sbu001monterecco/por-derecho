@@ -10,8 +10,8 @@ const outputDir = process.env.PSR_CALIFICACION_THESIS_ARTIFACT_DIR || 'artifacts
 const routes = [
   { key: 'es-canonical', route: '/es/tesis-uso-criminal-procedimiento-calificacion/', variant: 'canonical', anchor: 'hero', pillars: 5, canonical: true },
   { key: 'en-canonical', route: '/en/insolvency-classification-criminal-misuse-thesis/', variant: 'canonical', anchor: 'hero', pillars: 5, canonical: true },
-  { key: 'es-home', route: '/es/', variant: 'featured', anchor: 'controlling', persistent: true },
-  { key: 'en-home', route: '/en/', variant: 'featured', anchor: 'controlling', persistent: true },
+  { key: 'es-home-archive', route: '/es/portada-archivo-20260925.html', variant: 'featured', anchor: 'controlling', persistent: true },
+  { key: 'en-home-archive', route: '/en/homepage-archive-20260925.html', variant: 'featured', anchor: 'controlling', persistent: true },
   { key: 'es-institutional', route: '/es/concurso-36-2012-responsabilidad-institucional/', variant: 'featured', anchor: 'hero', persistent: true },
   { key: 'en-institutional', route: '/en/insolvency-36-2012-institutional-accountability/', variant: 'featured', anchor: 'hero', persistent: true },
   { key: 'es-appeal', route: '/es/concurso-36-2012-ap-seccion-4/', variant: 'appeal', anchor: 'hero', appeal: true },

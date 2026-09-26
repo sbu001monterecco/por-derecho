@@ -408,8 +408,8 @@ def main() -> int:
     for path, markers in bilingual_pages.items():
         require_markers(path, markers)
 
-    require_markers(ROOT / "es/index.html", ["Javier Acosta Matos (joven del extremo izquierdo)", "Gerardo Zacarías Acosta Matos (hombre barbado del extremo derecho)"])
-    require_markers(ROOT / "en/index.html", ["Javier Acosta Matos (the younger person at far left)", "Gerardo Zacarías Acosta Matos (the bearded person at far right)"])
+    require_markers(ROOT / "es/portada-archivo-20260925.html", ["Javier Acosta Matos (joven del extremo izquierdo)", "Gerardo Zacarías Acosta Matos (hombre barbado del extremo derecho)"])
+    require_markers(ROOT / "en/homepage-archive-20260925.html", ["Javier Acosta Matos (the younger person at far left)", "Gerardo Zacarías Acosta Matos (the bearded person at far right)"])
     require_markers(ROOT / "en/sun-park-owner-register/index.html", ["Gil separately identifies Thompson 708 / property 8,557 as a further attributed lead"])
     require_markers(ROOT / "es/registro-propietarios-sun-park/index.html", ["Gil identifica separadamente Thompson 708 / finca 8.557 como otra pista atribuida"])
 

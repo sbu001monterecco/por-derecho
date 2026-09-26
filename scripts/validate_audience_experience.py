@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Release gate for the 23 August 2026 audience-experience update."""
+"""Release gate for audience experience, including the preserved long-form homepage archives."""
 
 from __future__ import annotations
 
@@ -103,7 +103,8 @@ def validate_identity(errors: list[str]) -> int:
 
 
 def validate_home(errors: list[str], lang: str) -> None:
-    page = ROOT / lang / "index.html"
+    archive_name = "portada-archivo-20260925.html" if lang == "es" else "homepage-archive-20260925.html"
+    page = ROOT / lang / archive_name
     text = page.read_text(encoding="utf-8")
     if lang == "es":
         ordered_ids = ("inicio", "resumen-60-segundos", "psr-reader-intent", "perimetros-del-caso", "historia-reconstruida")

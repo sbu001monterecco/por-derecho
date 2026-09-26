@@ -5,6 +5,8 @@
   const root = `/por-derecho/${lang}/`;
   const p = (slug = '') => `${root}${slug}`;
   const t = (es, en) => isEn ? en : es;
+  const isArchivedHome = /\/en\/homepage-archive-20260925\.html\/?$/.test(path)
+    || /\/es\/portada-archivo-20260925\.html\/?$/.test(path);
 
   const updatesUrl = p(isEn ? 'updates/' : 'actualizaciones/');
   const collaborateUrl = p(isEn ? 'collaborate/' : 'colaborar/');
@@ -18,14 +20,20 @@
   const ensureMobileMenu = () => {
     const header = document.querySelector('.site-header');
     const nav = header?.querySelector('.main-nav');
-    if (!header || !nav || header.querySelector('.nav-toggle')) return;
+    if (!header || !nav) return;
     if (!nav.id) nav.id = 'main-nav';
-    const button = document.createElement('button');
-    button.className = 'nav-toggle';
-    button.type = 'button';
-    button.setAttribute('aria-expanded', 'false');
-    button.setAttribute('aria-controls', nav.id);
-    button.textContent = t('Menú', 'Menu');
+    let button = header.querySelector('.nav-toggle');
+    const created = !button;
+    if (!button) {
+      button = document.createElement('button');
+      button.className = 'nav-toggle';
+      button.type = 'button';
+      button.setAttribute('aria-expanded', 'false');
+      button.setAttribute('aria-controls', nav.id);
+      button.textContent = t('Menú', 'Menu');
+    }
+    if (button.dataset.psrMenuBound === '1') return;
+    button.dataset.psrMenuBound = '1';
     const close = () => {
       nav.classList.remove('open');
       button.setAttribute('aria-expanded', 'false');
@@ -41,7 +49,7 @@
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape') close();
     });
-    nav.insertAdjacentElement('beforebegin', button);
+    if (created) nav.insertAdjacentElement('beforebegin', button);
   };
 
   const navLink = (href, label, extra = '') => `<a ${extra} href="${href}">${label}</a>`;
@@ -50,7 +58,7 @@
     const nav = document.querySelector('.site-header .main-nav');
     if (!nav || nav.dataset.psrOptimised === '1') return;
     let html = null;
-    if (new RegExp(`/por-derecho/${lang}/?$`).test(path)) {
+    if (isArchivedHome) {
       html = [
         navLink(isEn ? '#sixty-second-summary' : '#resumen-60-segundos', t('Caso', 'Case')),
         navLink('#recuperacion', t('Recuperación', 'Recovery')),
@@ -108,7 +116,7 @@
   };
 
   const simplifyHomeHero = () => {
-    if (!new RegExp(`/por-derecho/${lang}/?$`).test(path)) return;
+    if (!isArchivedHome) return;
     const actions = document.querySelector('main > .hero .actions');
     if (!actions || actions.dataset.psrOptimised === '1') return;
     actions.dataset.psrOptimised = '1';

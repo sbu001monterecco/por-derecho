@@ -22,8 +22,8 @@ EXPECTED = {
 }
 
 REQUIRED = {
-    "en/index.html": ("6 November 2025 at 10:00", "28 January 2027 at 10:00"),
-    "es/index.html": ("6 de noviembre de 2025 a las 10:00", "28 de enero de 2027 a las 10:00"),
+    "en/homepage-archive-20260925.html": ("6 November 2025 at 10:00", "28 January 2027 at 10:00"),
+    "es/portada-archivo-20260925.html": ("6 de noviembre de 2025 a las 10:00", "28 de enero de 2027 a las 10:00"),
     "en/caixabank-valencia-claim/index.html": (
         "6 November 2025 at 10:00",
         "28 January 2027 at 10:00",
@@ -44,8 +44,8 @@ REQUIRED = {
         "6 de noviembre de 2025 a las 10:00",
         "28 de enero de 2027 a las 10:00",
     ),
-    "en/updates/index.html": ("valencia-hearing-chronology-24aug", "28 January 2027 at 10:00"),
-    "es/actualizaciones/index.html": ("cronologia-vista-valencia-24ago", "28 de enero de 2027 a las 10:00"),
+    "en/updates/portada-archivo-20260925.html": ("valencia-hearing-chronology-24aug", "28 January 2027 at 10:00"),
+    "es/actualizaciones/portada-archivo-20260925.html": ("cronologia-vista-valencia-24ago", "28 de enero de 2027 a las 10:00"),
 }
 
 FORBIDDEN_PATTERNS = (

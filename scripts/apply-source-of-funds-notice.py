@@ -79,18 +79,18 @@ LOADER_JS = dedent(r'''
 ''')
 
 TARGETS = [
-    'es/index.html', 'en/index.html',
+    'es/portada-archivo-20260925.html', 'en/homepage-archive-20260925.html',
     'es/ric-private-equity-sun-park/index.html', 'en/ric-private-equity-sun-park/index.html',
-    'es/mismo-hotel-multiples-vidas-financieras/index.html', 'en/same-hotel-multiple-financial-lives/index.html',
+    'es/mismo-hotel-multiples-vidas-financieras/index.html', 'en/same-hotel-multiple-financial-lives/portada-archivo-20260925.html',
     'es/acosta-matos-perimetro/index.html', 'en/acosta-matos-perimeter/index.html',
-    'es/objetivos-recuperacion-restitucion/index.html', 'en/recovery-restitution-objectives/index.html',
-    'es/cadena-instrumentalizacion-ric-fondos-incentivos/index.html', 'en/institutionalisation-chain-ric-eu-incentives/index.html',
+    'es/objetivos-recuperacion-restitucion/index.html', 'en/recovery-restitution-objectives/portada-archivo-20260925.html',
+    'es/cadena-instrumentalizacion-ric-fondos-incentivos/index.html', 'en/institutionalisation-chain-ric-eu-incentives/portada-archivo-20260925.html',
     'es/ricpe-responsabilidad-documental/index.html', 'en/ricpe-documentary-accountability/index.html',
     'es/pwc-canarias-carlos-saavedra-sun-park/index.html', 'en/pwc-canarias-carlos-saavedra-sun-park/index.html',
     'es/rsm/nnr4-1025c2f66/index.html', 'en/rsm/nnr4-1025c2f66/index.html',
     'es/grant-thornton/cuyas-canarias/index.html', 'en/grant-thornton/cuyas-canarias/index.html',
     'es/grant-thornton/2024-04/index.html', 'en/grant-thornton/2024-04/index.html',
-    'es/actores-partes-abogados-representantes/index.html', 'en/actors-parties-lawyers-representatives/index.html',
+    'es/actores-partes-abogados-representantes/portada-archivo-20260925.html', 'en/actors-parties-lawyers-representatives/portada-archivo-20260925.html',
     'es/san-telmo-ricpe-sun-park/index.html', 'en/san-telmo-ricpe-sun-park/index.html',
 ]
 
@@ -139,7 +139,7 @@ def validate() -> None:
     required = [
         'assets/source-of-funds-notice-20260820.css',
         'assets/source-of-funds-notice-20260820.js',
-        'es/aviso-procedencia-fondos-servicios-profesionales/index.html',
+        'es/aviso-procedencia-fondos-servicios-profesionales/portada-archivo-20260925.html',
         'en/source-of-funds-professional-services-notice/index.html',
         'assets/por-derecho/second-pair-eyes.svg',
     ]
