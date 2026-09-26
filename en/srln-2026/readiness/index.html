@@ -18,6 +18,15 @@
     .ready-status strong,.ready-status span{display:block}.ready-status span{margin-top:5px;color:#c8d6da;font-size:.82rem}
     .visual-context{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}
     .visual-context img{width:100%;border-radius:16px;border:1px solid rgba(11,23,29,.12);background:#f4f7f6}
+    .visual-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+    .visual-gallery figure{margin:0;background:#fff;border:1px solid rgba(11,23,29,.12);border-radius:16px;overflow:hidden}
+    .visual-gallery img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border:0;border-radius:0}
+    .visual-gallery figcaption{padding:12px 14px;font-size:.72rem;line-height:1.45;color:#5f6b71}
+    .starter-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .starter-card{background:#fff;border:1px solid rgba(11,23,29,.12);border-radius:14px;padding:20px}
+    .starter-card b{display:block;color:#7c6430;font-size:.68rem;letter-spacing:.08em;margin-bottom:8px}
+    .starter-card h3{font-family:Georgia,serif;font-weight:500;margin:0 0 8px;font-size:1.15rem}
+    .starter-card p{font-size:.8rem;color:#5f6b71;margin:0}
     .readiness-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
     .ready-panel{border:1px solid rgba(11,23,29,.12);border-radius:14px;background:#fff;overflow:hidden}
     .ready-panel h3{margin:0;padding:16px 18px;background:#102b33;color:#fff;font-family:Georgia,serif;font-weight:500}
@@ -29,8 +38,8 @@
     .journey div{background:#eef3f3;border-radius:10px;padding:12px 9px;min-height:102px;font-size:.7rem}
     .journey b{display:block;font-size:.65rem;color:#7c6430;margin-bottom:7px}
     .boundary{background:#faf7ef;border-left:4px solid #c6aa70;padding:17px 19px;font-size:.82rem}
-    @media(max-width:1000px){.readiness-grid{grid-template-columns:1fr 1fr}.journey{grid-template-columns:repeat(3,1fr)}}
-    @media(max-width:700px){.ready-status,.visual-context,.readiness-grid,.journey{grid-template-columns:1fr}}
+    @media(max-width:1000px){.readiness-grid{grid-template-columns:1fr 1fr}.journey{grid-template-columns:repeat(3,1fr)}.starter-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:700px){.ready-status,.visual-context,.readiness-grid,.journey,.visual-gallery,.starter-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -48,11 +57,18 @@
   </div>
 </div></section>
 
-<section class="section"><div class="wrap visual-context">
-  <div><p class="eyebrow">Public-safe visual context</p><h2>Enough context to start a serious conversation—without opening the transaction file.</h2>
-  <p>This level may show AWESWELL / Sun Rock identity, capital-role architecture, process, high-level public project context and sanitised preparation references. Transaction-sensitive pitch-deck pages, exact economics, counterparties, application files and underlying evidence remain locked until the appropriate deeper disclosure level.</p>
-  <div class="actions"><a class="button primary" href="../#data-room">View the locked diligence index</a><a class="button ghost" href="mailto:sbu001@monterecco.com?subject=Sun%20Rock%20%E2%80%94%20controlled%20eligibility%20review">Request controlled eligibility review</a></div></div>
-  <figure><img src="../../../assets/playa-blanca-return-poster.svg" alt="Sun Rock public-safe Playa Blanca project context visual"><figcaption class="micro">Public-safe project-context visual already used within the institutional Sun Rock pages. It is not a representation of a completed acquisition, committed financing or approved future development.</figcaption></figure>
+<section class="section"><div class="wrap">
+  <div class="visual-context">
+    <div><p class="eyebrow">Public-safe visual context</p><h2>Enough context to start a serious conversation—without opening the transaction file.</h2>
+    <p>This level may show AWESWELL / Sun Rock identity, capital-role architecture, process, high-level public project context and sanitised preparation references. Transaction-sensitive pitch-deck pages, exact economics, counterparties, application files and underlying evidence remain locked until the appropriate deeper disclosure level.</p>
+    <div class="actions"><a class="button primary" href="../#data-room">View the locked diligence index</a><a class="button ghost" href="mailto:sbu001@monterecco.com?subject=Sun%20Rock%20%E2%80%94%20controlled%20eligibility%20review">Request controlled eligibility review</a></div></div>
+    <figure><img src="../../../assets/playa-blanca-return-poster.svg" alt="Sun Rock public-safe Playa Blanca project context visual"><figcaption class="micro">Public-safe project-context visual already used within the institutional Sun Rock pages. It is not a representation of a completed acquisition, committed financing or approved future development.</figcaption></figure>
+  </div>
+  <div class="visual-gallery" aria-label="Public-safe Sun Rock concept imagery">
+    <figure><img src="../../../assets/playa-blanca-return-poster.svg" alt="Illustrative Sun Rock destination study looking toward Playa Blanca and the Atlantic"><figcaption><strong>Destination study.</strong> Site-neutral public concept imagery. Not a representation of completed acquisition, planning approval or committed financing.</figcaption></figure>
+    <figure><img src="../../../assets/playa-blanca-arrival-poster.svg" alt="Illustrative Sun Rock arrival and hospitality concept"><figcaption><strong>Arrival concept.</strong> Public-safe hospitality and placemaking study. No private transaction identity or economics disclosed.</figcaption></figure>
+    <figure><img src="../../../assets/playa-blanca-oasis-poster.svg" alt="Illustrative Sun Rock courtyard and hospitality concept"><figcaption><strong>Hospitality concept.</strong> Illustrative design context only; not approved architecture, valuation evidence or security collateral.</figcaption></figure>
+  </div>
 </div></section>
 
 <section class="section"><div class="wrap">
@@ -113,6 +129,17 @@
     <article><span>03</span><h3>Instrument flexibility</h3><p>The programme is designed to support an appropriate private note, facility or other negotiated structure without forcing one bilateral lender or one immutable format.</p></article>
     <article><span>04</span><h3>Cash discipline</h3><p>Agreement is not cash. Commitment is not cash. Undrawn availability is not cash. Funding becomes liquidity only when validly drawn and received.</p></article>
   </div>
+</div></section>
+
+<section class="section soft"><div class="wrap">
+  <div class="section-head"><div><p class="eyebrow">Suitability starts here</p><h2>Four facts are enough to open the correct private route.</h2></div><p>No money, bank details or investment instruction should be sent through this page. The first step is to establish who the counterparty is, which lawful communication / eligibility route applies, and what information can be disclosed next.</p></div>
+  <div class="starter-grid">
+    <article class="starter-card"><b>01 · JURISDICTION</b><h3>Where are you based?</h3><p>Country of residence / establishment and the jurisdiction from which the private discussion will be conducted.</p></article>
+    <article class="starter-card"><b>02 · CAPACITY</b><h3>In what capacity?</h3><p>Individual principal, company, family office, trust / nominee structure, private bank, professional manager or other professional counterparty.</p></article>
+    <article class="starter-card"><b>03 · ELIGIBILITY</b><h3>Which route applies?</h3><p>Any HNW, sophisticated, professional or institutional classification / self-certification is confirmed privately where lawful; a label on this page is never enough.</p></article>
+    <article class="starter-card"><b>04 · ADVISERS</b><h3>Who is advising you?</h3><p>Legal, tax, investment or other professional advisers can be brought into the controlled process from the outset where appropriate.</p></article>
+  </div>
+  <div class="route-cta"><div><strong>Request the controlled suitability starter pack.</strong><span>The response provides the appropriate private classification, NDA / access and next-step documents. It is not a subscription form.</span></div><a class="button dark-button" href="mailto:sbu001@monterecco.com?subject=Sun%20Rock%20%E2%80%94%20suitability%20starter%20pack">Request suitability starter pack</a></div>
 </div></section>
 
 <section class="section"><div class="wrap">

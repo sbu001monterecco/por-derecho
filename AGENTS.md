@@ -696,3 +696,65 @@ read and apply **PD-GOV-HUMAN-AI-20260924-01** in
 - Any grant, credits, sponsorship, professional contribution or recoverable support must support
   capacity to test the record, not purchase a conclusion. Preserve:
   **Help the capacity. Do not buy the answer.**
+
+## PD-GOV-CRC — CONSEQUENCE-RISK COMMUNICATIONS
+
+For every task that reads, scans, summarizes, routes, preserves or acts on incoming/outgoing communications, apply `.github/governance/CONSEQUENCE_RISK_COMMUNICATION_CONTROL_25SEP2026.md` and `assets/data/consequence-risk-control-v1.json`.
+
+A material communication is not complete because it was opened, marked read, summarised, indexed, committed or discussed. Test whether failure to notice, acquire, understand, preserve, route or act could cause material prejudice. Where yes, keep a persistent consequence-risk alert through explicit acknowledgement, disposition and verified action or verified no-action closure.
+
+Mandatory special cases:
+- official notice with underlying content not yet acquired → `CONTENT_ACQUISITION_REQUIRED`;
+- operative attachment not reviewed → alert remains open;
+- timing/service ambiguity → `DEADLINE_OR_SERVICE_DATE_UNRESOLVED`;
+- material outbound request/promised response → dependency object;
+- bounce/routing failure → reopen underlying matter;
+- connector/CI/quota/host-parity failure → `CONTROL_SYSTEM_DEGRADED`.
+
+This control never authorises an email, filing, appeal, payment, publication or third-party contact. External acts still require their controlling authority gate. Raw mailbox content and private source locators remain outside public Git.
+
+## PD-GOV-TDS — THREAD DELETION-SAFETY SENTINEL
+
+Apply `PD-THREAD-SENTINEL-20260925-01` in `.github/governance/THREAD_DELETION_SAFETY_SENTINEL_25SEP2026.md` and `assets/data/thread-deletion-safety-sentinel-v1.json` to every substantive Por Derecho / Project Sun Rock thread.
+
+Every substantive assistant response must end with exactly one compact thread-safety cue:
+
+- `🟢 THREAD — safe to delete`
+- `🟠 THREAD — preservation pending · <short reason>`
+- `🔴 THREAD — do not delete · <short blocker>`
+
+A new substantive thread defaults to ORANGE until current evidence supports another state. RED overrides ORANGE whenever deletion would cause material loss, pause/orphan an active automation/task, lose the only usable source/artifact/recovery instruction, or interrupt an external action whose receipt/state is not preserved elsewhere. GREEN requires independent reconstructability, durable propagation/readback, no chat-only material and no chat-bound active operation.
+
+The cue is not proof and does not replace the universal deletion-safety protocol. Recompute it after material source, repository, Drive, automation, filing/send/publication or preservation-state changes. If verification is unavailable, remain ORANGE unless a RED trigger is known. Do not omit the cue merely because the user did not ask about deletion safety.
+
+## Protective insolvency origin and causal role-reversal lens
+
+For every material analysis of Concurso 36/2012 origin, Calificación causation, alleged debtor misconduct, estate deterioration, liquidation, asset/income displacement or recovery, apply `governance/PROTECTIVE_INSOLVENCY_ORIGIN_ROLE_REVERSAL_25SEP2026.md` and `assets/data/protective-insolvency-origin-role-reversal-v1.json`.
+
+- Do not treat entry into insolvency as a presumption that the incoming shareholder/management perimeter caused the economic harm.
+- Start from the verified 2012 lender-enforcement / auction / defensive-filing sequence and keep balance-sheet net asset value separate from the historical liquidity-based insolvency test.
+- Retrieve positive-agency evidence with the same diligence as adverse evidence: viability, creditor arrangement, recapitalisation, refinancing, operator, sale and funded-exit work.
+- Treat `money in, never money out` as an auditable attributed proposition until the complete payer→recipient→instrument→bank debit/credit→accounting→ultimate-use ledger is reconstructed.
+- For every adverse Calificación proposition, run the mirror question: which actor or event actually caused, aggravated, prevented cure of, benefited from or failed to mitigate the alleged loss?
+- Keep Montelanza/Molina-linked dissidents/representatives, the later Acosta Matos/CAM perimeter, the Insolvency Administrator and judicial actors legally and evidentially distinct. Functional convergence never transfers knowledge, intent or liability.
+- Formal `calificación culpable` is not a free-standing guilt label for judges or unrelated third parties. Keep formal insolvency classification, criminal liability, professional discipline, civil liability and judicial accountability on their correct routes.
+- Preserve the strongest contrary evidence, including genuine debtor-side failures if proved. Role reversal is a test, not a predetermined result.
+
+
+## PD-GOV-UCF-INTAKE — ALWAYS-ON UNITARY PROSECUTORIAL INTAKE
+
+Apply `PD-CHATGPT-UCF-INTAKE-20260925-01` from `.github/governance/CHATGPT_UNITARY_PROSECUTORIAL_INTAKE_GATE_25SEP2026.md` to every substantive Por Derecho source review.
+
+- One evidence graph; multiple legally distinct outputs.
+- Do not answer a material source as an isolated civil, insolvency, accounting or regulatory item when it changes another track.
+- Run backward genealogy and forward propagation before finalising significance.
+- Run actor × capacity × date and legal-person/body → officeholder resolution.
+- Run source-independence and same-origin deduplication before describing corroboration.
+- Run numeric genealogy on material debt, credit, valuation, payment, bid, funding and income figures.
+- Run state-transition alarms, including disputed→recognised, quantified→contingent→requantified, private actor→institutional label, creditor→owner/controller, notice→adoption, meeting validity→debt validity and later title→earlier authority.
+- Criminal/prosecutorial first means element-first: actor, capacity, act/omission, authority, alleged false/invalid premise, knowledge, intent, use, recipient, effect, causation, benefit/harm, contrary explanation and decisive proof.
+- Preserve the principal's direct attributed criminal position strongly, but never convert it into adjudicated guilt or use an offence label to upgrade evidence.
+- Every material correction, favourable source and adverse source must propagate both NEW→OLD and OLD→NEW.
+- ChatGPT/account memory is retrieval assistance only; current primary sources and current repository controls govern.
+- Before using GitLab as a control source, read `ops/CHATGPT_CROSS_HOST_CONTROL_MANIFEST.json`; current GitHub/GitLab bootstrap blobs are not presumed identical.
+- For Community fees/debt/vote cases, apply both `PD-COMMUNITY-DEBT-ROLE-REVERSAL-20260925-01` and `PD-COMMUNITY-COURT-COMPLETENESS-20260925-01`.

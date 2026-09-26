@@ -1,0 +1,701 @@
+{
+  "schema": "por-derecho.legal-professional-work-product-master.v1",
+  "control_id": "PD-SP-LEGAL-WORK-PRODUCT-MASTER-001",
+  "control_date": "2026-09-26",
+  "parent_rules": [
+    "PD-LAW-TRUTH-20260922-01",
+    "PD-SP-COUNSEL-WORK-REPLICATION-001",
+    "PD-SP-FORMER-PRO-COMMS-CONTEXT-001"
+  ],
+  "purpose": "Force every former/review legal professional and procurador into a work-product, invoice/payment, business-objective, evidential-status and present-relevance reconciliation. Inclusion is not an allegation of wrongdoing.",
+  "chronology_lanes": [
+    {
+      "id": "LANE-2008",
+      "label": "2008 Multimatrix whole-hotel sale / Montelanza-Molina dissent origin"
+    },
+    {
+      "id": "LANE-RESCUE",
+      "label": "Business rescue / restructuring / convenio / protective insolvency entry"
+    },
+    {
+      "id": "LANE-C36",
+      "label": "Concurso 36/2012 core representation"
+    },
+    {
+      "id": "LANE-FUNDED-EXIT",
+      "label": "ONA-led funded exit / financing / Article 176 / transaction support"
+    },
+    {
+      "id": "LANE-7JUN",
+      "label": "7 June 2018 material-control event and immediate protection"
+    },
+    {
+      "id": "LANE-AC-CAM",
+      "label": "AC/CAM complaints, criminal/prosecutorial and protective work"
+    },
+    {
+      "id": "LANE-CAL",
+      "label": "Calificación defence / appeals / related professional pressure"
+    },
+    {
+      "id": "LANE-HANDOVER",
+      "label": "Counsel transition / fees / venia / handover"
+    },
+    {
+      "id": "LANE-REMOVAL",
+      "label": "AC separation/removal / RPL 3304/2025 / R33"
+    },
+    {
+      "id": "LANE-RECOVERY",
+      "label": "Later asset, income, RIC/RICPE, regional-incentive/FEDER and recovery tracing"
+    }
+  ],
+  "mandatory_fields": [
+    "client",
+    "matter",
+    "period",
+    "instruction",
+    "work_product",
+    "draft_status",
+    "authorship",
+    "reviewer",
+    "signatory",
+    "procurator",
+    "filing_or_delivery",
+    "court_or_authority",
+    "invoice_or_fee",
+    "payer",
+    "payment_status",
+    "business_objective",
+    "chronology_lanes",
+    "adverse_interference_issue_if_any",
+    "contrary_evidence",
+    "present_relevance",
+    "source_status",
+    "open_proof"
+  ],
+  "professional_universe": [
+    {
+      "identity_id": "PD-SP-P-0052",
+      "public_name": "Miguel Méndez Itarte",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0050"
+      ],
+      "source_matter_scope": "Garrigues restructuring, insolvency and related Sun Park/LPB work.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0053",
+      "public_name": "José María Martínez de Artola",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0050"
+      ],
+      "source_matter_scope": "Garrigues restructuring and financing work.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0068",
+      "public_name": "Víctor de la Torre García",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0050"
+      ],
+      "source_matter_scope": "Garrigues insolvency/restructuring team.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0054",
+      "public_name": "Zulay Carmen Rodríguez Cabrera",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0050"
+      ],
+      "source_matter_scope": "Garrigues litigation/insolvency team.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0051",
+      "public_name": "Pedro Campaña Ávila",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0049"
+      ],
+      "source_matter_scope": "Cuatrecasas project-side legal work.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0069",
+      "public_name": "Mónica Lasquibar Rodríguez",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0049"
+      ],
+      "source_matter_scope": "Cuatrecasas matter work.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0048",
+      "public_name": "Rosa Gual Tomás",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0049"
+      ],
+      "source_matter_scope": "Cuatrecasas representation in Concurso 36/2012 and related work.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0049",
+      "public_name": "Iñigo de Luisa Maíz",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0049"
+      ],
+      "source_matter_scope": "Cuatrecasas representation in Concurso 36/2012 and related work.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0050",
+      "public_name": "Adriana González García",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0049"
+      ],
+      "source_matter_scope": "Cuatrecasas matter work.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0070",
+      "public_name": "Pablo Villaseca Rico",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0049"
+      ],
+      "source_matter_scope": "Cuatrecasas criminal/litigation source family and later handover reconstruction.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0071",
+      "public_name": "Luis Álvarez de la Vega Gaztelu",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0049"
+      ],
+      "source_matter_scope": "Cuatrecasas banking, debt and transaction work.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0072",
+      "public_name": "Cristóbal Cotta",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0049"
+      ],
+      "source_matter_scope": "Early SAREB/restructuring discussions; Cota/Cotta source spelling remains flagged for final lock.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0042",
+      "public_name": "Armando Betancor Álamo",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0052",
+        "PD-SP-O-0053"
+      ],
+      "source_matter_scope": "Alas Legal insolvency, calificación, complaints and strategic coordination; later professional continuity kept separate from historical firm liability.",
+      "reconciliation_status": "ACTIVE_ALAS_JRI_REGISTER",
+      "work_product_register": "PD-SP-COUNSEL-WORK-ALAS-JRI-001"
+    },
+    {
+      "identity_id": "PD-SP-P-0043",
+      "public_name": "José María Betancor Álamo",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0052"
+      ],
+      "source_matter_scope": "Alas Legal historical insolvency/calificación team.",
+      "reconciliation_status": "ACTIVE_ALAS_JRI_REGISTER",
+      "work_product_register": "PD-SP-COUNSEL-WORK-ALAS-JRI-001"
+    },
+    {
+      "identity_id": "PD-SP-P-0044",
+      "public_name": "Davinia Sánchez de la Cruz",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0052"
+      ],
+      "source_matter_scope": "Alas Legal historical insolvency/calificación team.",
+      "reconciliation_status": "ACTIVE_ALAS_JRI_REGISTER",
+      "work_product_register": "PD-SP-COUNSEL-WORK-ALAS-JRI-001"
+    },
+    {
+      "identity_id": "PD-SP-P-0073",
+      "public_name": "Ruth Pérez Castilla",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0052"
+      ],
+      "source_matter_scope": "Alas Legal working team; directly identified herself in matter correspondence as an Alas lawyer.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0074",
+      "public_name": "Luis A. Barber Marrero",
+      "role": "Lawyer / collaborating professional",
+      "track": "FORMER_COUNSEL_COLLABORATOR",
+      "firm_ids": [
+        "PD-SP-O-0052",
+        "PD-SP-O-0053"
+      ],
+      "source_matter_scope": "Repeatedly included in substantive Alas working-team chains; exact matter-specific authorship and retainer remain under verification.",
+      "reconciliation_status": "ACTIVE_ALAS_JRI_REGISTER",
+      "work_product_register": "PD-SP-COUNSEL-WORK-ALAS-JRI-001"
+    },
+    {
+      "identity_id": "PD-SP-P-0045",
+      "public_name": "Joaquín Ruiz de Infante Abella",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0054"
+      ],
+      "source_matter_scope": "Distinct classification-defence mandate coordinated with the Alas drafting team.",
+      "reconciliation_status": "ACTIVE_ALAS_JRI_REGISTER",
+      "work_product_register": "PD-SP-COUNSEL-WORK-ALAS-JRI-001"
+    },
+    {
+      "identity_id": "PD-SP-P-0055",
+      "public_name": "Cristo Ayose Suárez Pimentel",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0056"
+      ],
+      "source_matter_scope": "Historical project-side counsel across Community, criminal and Concurso-related matters; also appears in Alas working-team correspondence.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0041",
+      "public_name": "Juan Tomás Parrilla Suárez",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [],
+      "source_matter_scope": "Concurso 36/2012 and related filings/transactions; also appears in Alas working-team correspondence.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0046",
+      "public_name": "Daniel Jiménez García",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0051"
+      ],
+      "source_matter_scope": "SLJ Abogados Concurso-related representation and handover period.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0075",
+      "public_name": "Almudena Santafé Blecua",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0051"
+      ],
+      "source_matter_scope": "SLJ Abogados direct matter correspondence and 2020 handover/work.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0047",
+      "public_name": "Luis Miguel López Gómez",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0055"
+      ],
+      "source_matter_scope": "López Castelo Abogados; Concurso 36/2012 work and later formal renunciation.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0076",
+      "public_name": "Manuel Gallego Águeda",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [
+        "PD-SP-O-0063"
+      ],
+      "source_matter_scope": "2020 Luchy/Concurso coordination, representation and closure episode; chronology must remain precise.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0077",
+      "public_name": "Bernardino Afonso",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL_ROLE_REVIEW",
+      "firm_ids": [
+        "PD-SP-O-0064"
+      ],
+      "source_matter_scope": "DWF-RCD / Rousaud Costas Duran venia and insolvency-team transition evidence; accepted mandate and exact canonical name remain under verification.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0078",
+      "public_name": "Jordi Albiol",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL_ROLE_REVIEW",
+      "firm_ids": [
+        "PD-SP-O-0064"
+      ],
+      "source_matter_scope": "DWF-RCD / Rousaud Costas Duran insolvency-team/venia transition evidence; accepted mandate remains under verification.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0079",
+      "public_name": "Bernardo del Rosal Blasco",
+      "role": "Lawyer",
+      "track": "HISTORIC_PROFESSIONAL_REVIEW",
+      "firm_ids": [
+        "PD-SP-O-0065"
+      ],
+      "source_matter_scope": "Documented 2022 substantive professional work, including meetings, chronological Concurso document classification and penal/investigative analysis. No current mandate is asserted; the precise contractual/retainer status is not characterised publicly.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0080",
+      "public_name": "Félix Adame",
+      "role": "Lawyer",
+      "track": "HISTORIC_PROFESSIONAL_REVIEW",
+      "firm_ids": [
+        "PD-SP-O-0065"
+      ],
+      "source_matter_scope": "Documented DRAS team role in the 2022 substantive professional review and document-classification workstream. No current mandate is asserted; the precise contractual/retainer status is not characterised publicly.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0081",
+      "public_name": "Natalia García",
+      "role": "Lawyer / legal-team professional",
+      "track": "HISTORIC_PROFESSIONAL_REVIEW",
+      "firm_ids": [
+        "PD-SP-O-0065"
+      ],
+      "source_matter_scope": "Documented DRAS team role in the 2022 substantive professional review and document-classification workstream. No current mandate is asserted; the precise contractual/retainer status is not characterised publicly.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0082",
+      "public_name": "Juan Daniel Fajardo Expósito",
+      "role": "Lawyer",
+      "track": "FORMER_COUNSEL",
+      "firm_ids": [],
+      "source_matter_scope": "Project-side criminal-proceeding representation evidenced in the 2018 Arrecife court record.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0063",
+      "public_name": "Daniel Irigoyen Fujiwara",
+      "role": "Lawyer / transaction adviser",
+      "track": "FORMER_COUNSEL_ROLE_REVIEW",
+      "firm_ids": [
+        "PD-SP-O-0066"
+      ],
+      "source_matter_scope": "DPM-related funded-exit strategy, judge/AC meetings and transaction-support work; precise retained client and mandate remain under verification.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0083",
+      "public_name": "María del Pilar García Coello",
+      "role": "Procuradora",
+      "track": "PROCURADOR_FORMER",
+      "firm_ids": [],
+      "source_matter_scope": "Former project-side procedural representation; exact client/proceeding periods remain mapped separately.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0084",
+      "public_name": "Tania Domínguez Limiñana",
+      "role": "Procuradora",
+      "track": "PROCURADOR_FORMER",
+      "firm_ids": [],
+      "source_matter_scope": "Former procuradora in Concurso 36/2012; precise periods remain proceeding-specific.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0085",
+      "public_name": "Manuela Cabrera de la Cruz",
+      "role": "Procuradora",
+      "track": "PROCURADOR_FORMER",
+      "firm_ids": [],
+      "source_matter_scope": "Former procuradora in project-side criminal matters.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    },
+    {
+      "identity_id": "PD-SP-P-0056",
+      "public_name": "Francisco Javier Pérez Almeida",
+      "role": "Procurador",
+      "track": "PROCURADOR_FORMER",
+      "firm_ids": [],
+      "source_matter_scope": "Former Concurso-related procurador; source variant Pérez Alemán-Almeida remains an exact-name reconciliation point.",
+      "reconciliation_status": "REQUIRED",
+      "work_product_register": null
+    }
+  ],
+  "firm_priority": [
+    {
+      "firm": "Garrigues",
+      "priority": 1,
+      "reason": "first verified 2012+ firm; restructuring/financing/protective-insolvency origin"
+    },
+    {
+      "firm": "Cuatrecasas",
+      "priority": 2,
+      "reason": "Concurso, ONA/funded-exit, 7-Jun period and transaction/legal-comfort work"
+    },
+    {
+      "firm": "ALAS Legal Advisors / Joaquín Ruiz de Infante",
+      "priority": 3,
+      "reason": "active detailed work-product registry exists"
+    },
+    {
+      "firm": "Juan Tomás Parrilla practice",
+      "priority": 4,
+      "reason": "long-running Concurso/protective work and fee/payment source-close"
+    },
+    {
+      "firm": "Cristo Suárez Pimentel",
+      "priority": 5,
+      "reason": "Community/criminal/Concurso continuity and professional-pressure evidence"
+    },
+    {
+      "firm": "SLJ / Daniel Jiménez",
+      "priority": 6,
+      "reason": "2020 handover, AC-removal and successor-counsel work"
+    },
+    {
+      "firm": "López Castelo / Luis Miguel López",
+      "priority": 7,
+      "reason": "2020-2021 continuation/renunciation"
+    },
+    {
+      "firm": "DWF-RCD / other 2020 handover teams",
+      "priority": 8,
+      "reason": "transition, review and protective work"
+    },
+    {
+      "firm": "DRAS / later forensic-criminal reviewers",
+      "priority": 9,
+      "reason": "later reconstruction, forensic/criminal review and recovery"
+    }
+  ],
+  "global_rule": "Do not claim that a professional work product supports the client's current allegation merely because it exists. Identify the proposition actually supported, the contrary evidence and the business/recovery relevance.",
+  "seed_crosswalk_status": "SOURCE_CONTROLLED_STARTING_MAP_NOT_EXHAUSTIVE",
+  "firm_seed_crosswalk": [
+    {
+      "firm": "Garrigues",
+      "status": "SEED_VERIFIED_DEEP_RECONCILIATION_REQUIRED",
+      "documented_work": [
+        "pre-Concurso restructuring and insolvency preparation",
+        "Bankia enforcement / scheduled-auction strategy in May 2012",
+        "financing/security work through early June 2012"
+      ],
+      "chronology_lanes": [
+        "LANE-RESCUE",
+        "LANE-C36"
+      ],
+      "limits": [
+        "current repository does not tie the Garrigues transition to AC causation",
+        "earlier 2011 predecessor question remains open"
+      ]
+    },
+    {
+      "firm": "Cuatrecasas",
+      "status": "SEED_VERIFIED_DEEP_RECONCILIATION_REQUIRED",
+      "documented_work": [
+        "2018 and Jan-Mar 2019 advice billed to AWESWELL on liquidation plan and IA requests",
+        "Acosta Matos / Community claim analysis",
+        "ONA contract, diligence, financing, security and exit-from-concurso work",
+        "2019 lender legal-comfort work and AWESWELL appearance/opposition filings",
+        "favourable results including rejection of IA request to exclude AWESWELL"
+      ],
+      "chronology_lanes": [
+        "LANE-C36",
+        "LANE-FUNDED-EXIT",
+        "LANE-7JUN",
+        "LANE-AC-CAM",
+        "LANE-HANDOVER"
+      ],
+      "limits": [
+        "broad mandate and favourable work preserved",
+        "entity/authority limits and unpaid-fee withdrawal evidence must remain visible"
+      ]
+    },
+    {
+      "firm": "ALAS Legal Advisors / Joaquín Ruiz de Infante",
+      "status": "ACTIVE_DETAILED_REGISTER",
+      "documented_work": [
+        "see PD-SP-COUNSEL-WORK-ALAS-JRI-001"
+      ],
+      "chronology_lanes": [
+        "LANE-C36",
+        "LANE-FUNDED-EXIT",
+        "LANE-AC-CAM",
+        "LANE-CAL",
+        "LANE-HANDOVER",
+        "LANE-REMOVAL"
+      ],
+      "limits": [
+        "no ALAS/Joaquín authorship of the separate 2023 calificación appeal established"
+      ]
+    },
+    {
+      "firm": "Juan Tomás Parrilla practice",
+      "status": "SEED_VERIFIED_DEEP_RECONCILIATION_REQUIRED",
+      "documented_work": [
+        "long-running LPB Concurso 36/2012 representation",
+        "protective filings and liquidation challenges",
+        "2018 access/Community-document requests",
+        "2020 counsel transition and fee/payment sequence"
+      ],
+      "chronology_lanes": [
+        "LANE-C36",
+        "LANE-7JUN",
+        "LANE-AC-CAM",
+        "LANE-HANDOVER"
+      ],
+      "limits": [
+        "protective work and client-initiated substitution preserved",
+        "payment does not prove bribery or AC-caused exit"
+      ]
+    },
+    {
+      "firm": "Cristo Ayose Suárez Pimentel",
+      "status": "SEED_VERIFIED_DEEP_RECONCILIATION_REQUIRED",
+      "documented_work": [
+        "Community, criminal and Concurso-related work",
+        "2018 LPB mandate affected by AC termination/venia/abstention demand",
+        "continued wider project work after that event"
+      ],
+      "chronology_lanes": [
+        "LANE-C36",
+        "LANE-7JUN",
+        "LANE-AC-CAM",
+        "LANE-HANDOVER"
+      ],
+      "limits": [
+        "one interrupted LPB mandate is not total project withdrawal"
+      ]
+    },
+    {
+      "firm": "Daniel Irigoyen / DPM",
+      "status": "SEED_VERIFIED_ROLE_REVIEW_REQUIRED",
+      "documented_work": [
+        "funded-exit strategy and transaction support",
+        "meetings/communications involving judge and AC",
+        "Article 176 / financing context"
+      ],
+      "chronology_lanes": [
+        "LANE-FUNDED-EXIT",
+        "LANE-7JUN",
+        "LANE-AC-CAM"
+      ],
+      "limits": [
+        "precise retained client and mandate remain under verification"
+      ]
+    },
+    {
+      "firm": "SLJ / Daniel Jiménez / Almudena Santafé",
+      "status": "SEED_VERIFIED_DEEP_RECONCILIATION_REQUIRED",
+      "documented_work": [
+        "2020 successor-counsel review and handover",
+        "AC-removal and possible AC/CAM claims workstream",
+        "incoming-counsel contact and fee/venia record"
+      ],
+      "chronology_lanes": [
+        "LANE-AC-CAM",
+        "LANE-HANDOVER",
+        "LANE-REMOVAL"
+      ],
+      "limits": [
+        "later resignation has independent stated strategy/client-direction/non-payment reasons"
+      ]
+    },
+    {
+      "firm": "López Castelo / Luis Miguel López",
+      "status": "SEED_VERIFIED_DEEP_RECONCILIATION_REQUIRED",
+      "documented_work": [
+        "post-Parrilla LPB representation",
+        "nullity, classification, appeals and amparo work",
+        "later withdrawal/limited assistance chronology"
+      ],
+      "chronology_lanes": [
+        "LANE-CAL",
+        "LANE-HANDOVER",
+        "LANE-REMOVAL"
+      ],
+      "limits": [
+        "fees/time/non-payment are documented alternative explanations; AC causation not assumed"
+      ]
+    },
+    {
+      "firm": "DRAS / Bernardo del Rosal team",
+      "status": "SEED_VERIFIED_HISTORIC_REVIEW",
+      "documented_work": [
+        "2022 substantive professional review",
+        "meetings and document classification",
+        "penal/investigative analysis"
+      ],
+      "chronology_lanes": [
+        "LANE-RECOVERY"
+      ],
+      "limits": [
+        "historic professional review does not establish a current mandate or endorsement of later 2026 theories"
+      ]
+    }
+  ]
+}

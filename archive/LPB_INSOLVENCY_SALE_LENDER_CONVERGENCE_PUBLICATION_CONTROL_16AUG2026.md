@@ -114,3 +114,18 @@ The pages cite public-safe propositions only. Private source binaries, privilege
 ## Right of reply / correction
 
 Any source-verifiable correction, later appellate result, banking reconciliation, complete execution file or exculpatory material should be incorporated promptly and with comparable prominence.
+
+
+## 25-Sep-2026 protective-origin / role-reversal addendum
+
+The 2012 banking-origin control now feeds a mandatory causal role-reversal review under `PD-PROTECTIVE-ORIGIN-ROLE-REVERSAL-20260925-01`.
+
+The existing findings remain unchanged: the filing sequence supports a time-critical defensive measure before the scheduled auction; positive net assets do not by themselves disprove legal insolvency; and lender/account validity remains open. The new analytical consequence is that later Calificación causation must not begin with "LPB entered concurso, therefore Gil/the incoming perimeter caused the relevant deterioration."
+
+For every later loss or culpability proposition, reconstruct:
+
+`2012 starting condition → lender/enforcement effect → project-side funds/work/rescue effort → private-owner/CEXP/Community effect → AC decision/omission → judicial act/remedy → 7-Jun-2018 control effect where relevant → asset/income/exit consequence → ultimate beneficiary/harmed entity`.
+
+Gil's statement that his/Aweswell's perimeter put money in and took no value out is preserved as an attributed proposition. It requires a complete money-in/money-out ledger across LPB, Aweswell and any connected entity before being labelled verified. The same ledger must actively seek distributions, related-party payments, fees, repayments and contrary evidence.
+
+The formal Calificación mechanism and the broader causal-accountability lens remain distinct.

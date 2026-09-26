@@ -12,7 +12,7 @@ import subprocess
 import unicodedata
 
 SCHEMA = 'por-derecho.release-acceptance.v1'
-TERMINAL = {'VERIFIED_FOR_SCOPE', 'ABORTED_BEFORE_MERGE', 'SUPERSEDED_WITH_OPEN_READBACK'}
+TERMINAL = {'VERIFIED_FOR_SCOPE', 'ABORTED_BEFORE_MERGE', 'SUPERSEDED_WITH_OPEN_READBACK', 'SUPERSEDED_WITH_OPEN_PUBLICATION_STATE'}
 TRANSITIONS = {
     'CLAIMED': {'ACCEPTED', 'BLOCKED', 'ABORTED_BEFORE_MERGE'},
     'ACCEPTED': {'MERGE_PENDING', 'BLOCKED', 'ABORTED_BEFORE_MERGE'},
@@ -20,7 +20,7 @@ TRANSITIONS = {
     'MERGED': {'DEPLOYED', 'RECOVERY_REQUIRED'},
     'DEPLOYED': {'VERIFIED_FOR_SCOPE', 'RECOVERY_REQUIRED'},
     'BLOCKED': {'CLAIMED', 'ABORTED_BEFORE_MERGE'},
-    'RECOVERY_REQUIRED': {'MERGED', 'DEPLOYED', 'VERIFIED_FOR_SCOPE', 'ABORTED_BEFORE_MERGE', 'SUPERSEDED_WITH_OPEN_READBACK'},
+    'RECOVERY_REQUIRED': {'MERGED', 'DEPLOYED', 'VERIFIED_FOR_SCOPE', 'ABORTED_BEFORE_MERGE', 'SUPERSEDED_WITH_OPEN_READBACK', 'SUPERSEDED_WITH_OPEN_PUBLICATION_STATE'},
 }
 
 
@@ -254,6 +254,14 @@ def advance(state: dict, phase: str, owner: str, fence: int, evidence: dict | No
                 and record.get('verification_gap_preserved') is True
                 and record.get('prior_merge_sha') != record.get('current_main_sha')):
             raise ValueError('Superseded recovery requires prior/current SHAs, successful deployment evidence and an explicit open readback gap')
+    if phase == 'SUPERSEDED_WITH_OPEN_PUBLICATION_STATE':
+        record = evidence or {}
+        if not (record.get('prior_merge_sha') and record.get('current_main_sha')
+                and record.get('deployment_recorded') is False
+                and record.get('readback_verified') is False
+                and record.get('verification_gap_preserved') is True
+                and record.get('prior_merge_sha') != record.get('current_main_sha')):
+            raise ValueError('Superseded open-publication recovery requires prior/current SHAs and explicit unrecorded-deployment/readback gaps')
     result = deepcopy(state)
     result['phase'] = phase
     result['updated_at'] = utc_now()

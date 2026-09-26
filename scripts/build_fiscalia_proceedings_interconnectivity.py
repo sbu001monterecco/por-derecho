@@ -186,6 +186,12 @@ def build() -> dict[str, Any]:
         event["event_id"] for event in communications["events"]
         if event.get("source_batch_id") in NON_FISCALIA_SOURCE_BATCHES
     }
+    # The separately reviewed platform/incident correspondence is not a Fiscalia
+    # filing or a source-allocated prosecution event. Validate every row
+    # before excluding it from this historical proceedings projection.
+    from prepare_platform_incibe_20260925 import validated_platform_event_ids
+    platform_ids = validated_platform_event_ids(communications['events'], ROOT)
+    non_fiscalia_notice_ids |= platform_ids
     events = [
         event
         for event in communications["events"]

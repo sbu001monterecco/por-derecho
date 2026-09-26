@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+<title id="title">The Pulse — Por Derecho</title>
+<desc id="desc">A minimalist fingertip touches a wrist pulse point. A small gold contact point emits a short evidential pulse.</desc>
+<g fill="none" stroke="#0b2b45" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M420 58c-24 58-29 116-25 177 4 68 19 132 42 188"/>
+  <path d="M521 54c-28 65-34 126-31 188 3 62 18 124 41 181"/>
+  <path d="M83 363c55-54 103-108 144-165 23-32 52-48 88-46 42 2 73 18 94 47"/>
+  <path d="M84 363c49-35 94-53 136-56 43-3 78 7 108 31"/>
+  <path d="M207 267c42-7 77 2 105 28"/>
+  <path d="M238 220c35-2 65 8 90 31"/>
+  <path d="M313 208c20 10 38 27 51 49"/>
+</g>
+<circle cx="405" cy="246" r="18" fill="#b08a35"/>
+<g fill="none" stroke="#b08a35" stroke-width="7" stroke-linecap="round">
+  <path d="M431 246h43l16-34 21 68 18-34h49"/>
+  <path d="M422 219c22 8 36 26 36 47"/>
+  <path d="M429 199c38 14 62 46 62 83"/>
+</g>
+<g font-family="Arial,Helvetica,sans-serif" fill="#0b2b45">
+  <text x="82" y="430" font-size="34" font-weight="700" letter-spacing="7">THE PULSE</text>
+  <text x="84" y="462" font-size="14" letter-spacing="5" fill="#365b66">EL PULSO DE LA PRUEBA · POR DERECHO</text>
+</g>
+</svg>

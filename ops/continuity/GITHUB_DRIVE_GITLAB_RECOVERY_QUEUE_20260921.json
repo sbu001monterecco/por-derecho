@@ -1,29 +1,42 @@
 {
-  "schema": "por-derecho.github-drive-gitlab-dual-write.v1",
-  "control_id": "PD-DUALWRITE-20260921-01",
+  "completion_rule": "A material item is continuity-complete only when the applicable GitHub, private-custody and GitLab-replay states are explicit.",
   "control_date": "2026-09-21",
-  "status": "RESTORED_ADDITIVE_RECONCILIATION_ACTIVE",
-  "public_github_control": ".github/governance/GITHUB_DRIVE_GITLAB_DUAL_WRITE_CONTINUITY_21SEP2026.md",
-  "private_drive_control_mirror": {
-    "status": "PRESENT_IN_APPROVED_PRIVATE_CUSTODY",
-    "public_locator_recorded": false
+  "control_id": "PD-DUALWRITE-20260921-01",
+  "current_infrastructure_state": {
+    "evidence_failure_reason": "ci_quota_exceeded",
+    "evidence_pipeline_id": 2883898572,
+    "evidence_pipeline_status": "failed",
+    "evidence_runner_assigned": false,
+    "github_main": "3b51629e7083202776be027a7dcb685ca46a7d45",
+    "gitlab_ci": "CONTROL_SYSTEM_DEGRADED",
+    "gitlab_main": "5d90b0fd0e80a655599a2b18fc88b6b4a876c9f1",
+    "gitlab_project_id": 86151898,
+    "observed_date": "2026-09-25",
+    "policy": "NO_CAPACITY_PROBE_PIPELINES__NO_GRATUITOUS_CI_WHILE_BLOCKED"
   },
+  "external_action_authority": false,
   "layers": {
     "github_public_safe_canonical": {
-      "required": true,
-      "private_native_bytes_allowed_in_public_git": false
-    },
-    "private_drive_native_custody": {
-      "required_for_private_or_restricted_sources": true,
-      "exact_native_preservation": true,
-      "public_locator_recorded": false
+      "private_native_bytes_allowed_in_public_git": false,
+      "required": true
     },
     "gitlab_replay_queue": {
+      "current_mode": "CI_RELEASE_BLOCKED__NON_CI_WRITES_AVAILABLE",
       "required_during_block": true,
       "restoration_mode": "ADDITIVE_RECONCILIATION_ONLY",
-      "current_mode": "RESTORED_ACTIVE_RECONCILIATION"
+      "restoration_trigger": "AUTOMATIC_BACKLOG_RECOVERY_WHEN_SHARED_RUNNER_CAPACITY_RETURNS"
+    },
+    "private_drive_native_custody": {
+      "exact_native_preservation": true,
+      "public_locator_recorded": false,
+      "required_for_private_or_restricted_sources": true
     }
   },
+  "private_drive_control_mirror": {
+    "public_locator_recorded": false,
+    "status": "PRESENT_IN_APPROVED_PRIVATE_CUSTODY"
+  },
+  "public_github_control": ".github/governance/GITHUB_DRIVE_GITLAB_DUAL_WRITE_CONTINUITY_21SEP2026.md",
   "recovery_classes": [
     "EXACT_GITLAB_RECOVERY",
     "ALREADY_ON_GITHUB",
@@ -32,6 +45,197 @@
     "PRIVATE_OR_RESTRICTED",
     "PLATFORM_NATIVE_PENDING"
   ],
+  "replay_items": [
+    {
+      "github_branch": "integration/sun-rock-capital-programme-20260921",
+      "github_pr": 1701,
+      "github_prepared_head": "1b993927f4ed26875ba6bd28901e9231aa8fc7f4",
+      "github_state": "INTEGRATION_PREPARED",
+      "gitlab_state": "PENDING_AUTHENTICATED_ACCESS",
+      "id": "PD-GL-REC-SR-CAP-20260921-01",
+      "private_drive_handoff": "PRESENT_IN_APPROVED_PRIVATE_CUSTODY_LOCATOR_NOT_PUBLIC",
+      "public_paths": [
+        "en/institutional-capital/index.html",
+        "es/capital-institucional/index.html",
+        "assets/institutional-capital-20260921.css",
+        "assets/data/sun-rock-capital-process-v1.json",
+        "en/capital-relationships/index.html",
+        "es/relaciones-de-capital/index.html",
+        "sitemap-sun-rock-institutional-20260916.xml",
+        "ops/capital/INSTITUTIONAL_RESPONSE_PLAYBOOK_20260921.md",
+        "ops/capital/SUN_ROCK_CAPITAL_PROGRAMME_CONTINUITY_20260921.md",
+        "CURRENT_HANDOVER_PRINCIPAL_FINANCIAL_RELATIONSHIPS_17SEP2026.md",
+        ".github/workflows/sun-rock-capital-relationships.yml",
+        "ci/sun_rock_capital_relationships_acceptance_20260916.py",
+        "publication-manifests/sun-rock-institutional-capital-20260921.json"
+      ],
+      "recovery_class": "EXACT_GITLAB_RECOVERY",
+      "replay_rule": "Freeze GitHub/GitLab heads, preserve newer GitLab work, port only the source-proved net public-safe delta, run GitLab validators/pipeline, verify affected Pages routes, and record residual conflicts.",
+      "scope": "Sun Rock institutional capital programme successor release"
+    },
+    {
+      "github_branch": "continuity/eg17-20-26-alzada-20260924",
+      "github_state": "BRANCH_PREPARED_PENDING_MERGE",
+      "gitlab_state": "WRITE_PENDING",
+      "id": "PD-GL-REC-EG17-20-26-20260924-01",
+      "private_drive_native_custody": "PRESENT_VERIFIED_LOCATOR_NOT_PUBLIC",
+      "public_paths": [
+        "archive/THREAD_DELETION_CONTINUITY_AUDIT_EG17_20_26_ALZADA_24SEP2026.md",
+        "assets/data/eg17-20-26-alzada-continuity-20260924.json",
+        "CHATGPT_START_HERE.md",
+        ".github/governance/GITHUB_DRIVE_GITLAB_DUAL_WRITE_CONTINUITY_21SEP2026.md",
+        "ops/continuity/GITHUB_DRIVE_GITLAB_RECOVERY_QUEUE_20260921.json"
+      ],
+      "recovery_class": "EXACT_GITLAB_RECOVERY",
+      "replay_rule": "Additive source-proved reconciliation only; preserve newer GitLab work; no native private filing bytes in public Git.",
+      "scope": "EG17/20-26 corrected LAJ genealogy, filed alzada and thread continuity"
+    },
+    {
+      "blocking_reason": "CI_QUOTA_EXCEEDED_PIPELINE_2883898572",
+      "disposition": "HOLD_FOR_CAPACITY_RESTORE_THEN_RUN_ONLY_REQUIRED_VALIDATORS_AND_VERIFY_PARITY",
+      "github_base_at_pr_creation": "f2685b206180fd4c1b551c4b384223022e3e58b4",
+      "github_head": "42bb3b12bbf42fa17d97f31a89eb0cf7aa89acf0",
+      "github_pr": 1901,
+      "github_pr_state": "OPEN",
+      "gitlab_head": "34ae50955798d9d203d48c7a1ce7d6ecb90afc4c",
+      "gitlab_mr": 615,
+      "gitlab_mr_state": "OPEN_MERGEABLE_CI_BLOCKED",
+      "gitlab_target_main": "5d90b0fd0e80a655599a2b18fc88b6b4a876c9f1",
+      "id": "PD-GL-REC-TRUTH-MACHINE-20260925-01",
+      "recovery_class": "EXACT_GITLAB_RECOVERY",
+      "scope": "Truth Machine mandatory adverse-filing intake successors",
+      "supersedes_github_pr": 1900
+    },
+    {
+      "conflict_review_paths": [
+        "CHATGPT_START_HERE.md"
+      ],
+      "exact_gitlab_recovery_paths": [
+        "archive/CANARY_COUNCIL_ICALAN_ROUTING_AND_REGISTRY_UPDATE_25SEP2026.md",
+        "archive/CANARY_COUNCIL_INTERCOLLEGIAL_PROFESSIONAL_PERIMETER_CONTROL_21SEP2026.md",
+        "assets/data/canary-professional-intercollegial-perimeter-v1.json",
+        "en/canary-council-deontological-coordination-2026/index.html",
+        "en/institutional-records-bar-bodies-2026/index.html",
+        "es/consejo-canario-coordinacion-deontologica-2026/index.html",
+        "es/registros-institucionales-colegios-abogacia-2026/index.html"
+      ],
+      "github_commits_ahead": 12,
+      "github_delta_base": "f2685b206180fd4c1b551c4b384223022e3e58b4",
+      "github_main": "3b51629e7083202776be027a7dcb685ca46a7d45",
+      "gitlab_main": "5d90b0fd0e80a655599a2b18fc88b6b4a876c9f1",
+      "id": "PD-GL-REC-CANARY-BAR-20260925-01",
+      "recovery_class": "EXACT_GITLAB_RECOVERY_WITH_ONE_CONFLICT_REVIEW",
+      "replay_rule": "FREEZE_HEADS_AT_RESTORE__ADDITIVE_SOURCE_PROVED_RECONCILIATION__BATCH_COMPATIBLE_ITEMS__NO_WHOLESALE_OVERWRITE",
+      "scope": "Canary professional-regulation/routing delta now on GitHub main",
+      "state": "QUEUED_WHILE_GITLAB_CI_QUOTA_BLOCKED"
+    },
+    {
+      "closure": "Record exact merged GitHub head/readback separately; GitLab remains pending until exact relevant source/release checks pass.",
+      "github_branch": "integration/platform-integrity-incibe-20260925",
+      "github_state": "SOURCE_CANDIDATE_REQUIRE_EXACT_MAIN_AND_LIVE_RECEIPT",
+      "gitlab_state": "ADDITIVE_REPLAY_PENDING_NO_PARITY_CLAIM",
+      "id": "PD-GL-REC-CPA-20260925-07",
+      "private_custody_state": "DRIVE_LIBRARY_RETRIEVAL_HASH_VERIFIED",
+      "private_native_disposition": "PRIVATE_OR_RESTRICTED_NO_PUBLIC_GIT_TRANSFER",
+      "public_paths": [
+        "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+        "assets/data/institutional-communications-register-v1.json",
+        "assets/data/platform-integrity-events-v1.json",
+        "assets/data/redsara-age-filings-register-v1.json",
+        "en/platform-integrity-evidence/index.html",
+        "es/integridad-plataformas-evidencia/index.html",
+        "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json",
+        "ops/continuity/GITHUB_DRIVE_GITLAB_RECOVERY_QUEUE_20260921.json",
+        "ops/continuity/PLATFORM_INTEGRITY_LINKEDIN_INCIDENT_20260923.md",
+        "ops/continuity/PLATFORM_INTEGRITY_SOURCE_DELTA_20260925.json",
+        "scripts/build_fiscalia_proceedings_interconnectivity.py",
+        "scripts/prepare_platform_incibe_20260925.py",
+        "scripts/reconcile_institutional_communications.py",
+        "scripts/smoke_fiscalia_proceedings_interconnectivity.mjs",
+        "scripts/test_build_fiscalia_proceedings_interconnectivity.py",
+        "scripts/validate_fiscalia_proceedings_interconnectivity.py",
+        "scripts/validate_redsara_authority_discovery.py"
+      ],
+      "recovery_class": "GITHUB_NEWER_OR_EQUIVALENT",
+      "replay_rule": "Refresh both heads; preserve newer GitLab source and merge only this reviewed net delta through normal gates. No quota-probe pipeline or paid action. Do not port the temporary preparation workflow.",
+      "scope": "Source-qualified cross-platform chronology and completed institutional correspondence"
+    },
+    {
+      "id": "PD-GL-REC-HOMEPAGE-JUDICIAL-20260926-01",
+      "scope": "Existing PR1893 homepage continuation, connected-course governance and source-signature versus liquidation-causation clarification",
+      "recovery_class": "GITHUB_NEWER_OR_EQUIVALENT",
+      "github_pr": 1893,
+      "github_branch": "ux/homepage-current-main-successor-20260925",
+      "github_base_at_observation": "1c268449ec05c95ec32954c22fb282d317271a24",
+      "github_source_commits": [
+        "b880b1cd4820eb3458120fedea64fc7801e0694e",
+        "71a5375296aa6cd20d83d9bed06fb9a9babba9a5",
+        "51ae50d951b5129b6559f6491fa7635edfc64282"
+      ],
+      "github_latest_clarification_blob": "4db573242d8ed2ead09e5e5b3bccb0234aabdce4",
+      "github_state": "PRESERVED_ON_EXISTING_PR__NOT_YET_MAIN_OR_LIVE",
+      "gitlab_target_main_at_observation": "5d90b0fd0e80a655599a2b18fc88b6b4a876c9f1",
+      "gitlab_state": "QUEUED_ADDITIVE_REPLAY__CI_CAPACITY_BLOCKED__NO_PARITY_CLAIM",
+      "private_custody_state": "EXISTING_ORIGINALS_RETAINED_PRIVATE__NEW_RELEASE_PACKAGE_READBACK_NOT_YET_CLAIMED",
+      "public_paths": [
+        "archive/ALBERTO_LOPEZ_VILLARRUBIA_SIGNED_ACTS_AND_KNOWLEDGE_REGISTER_17AUG2026.md",
+        "CONCURSO36_UNITARY_CRIMINAL_FIRST_GOVERNANCE.md",
+        "assets/data/concurso36-controlling-conclusions-supplement-20260829.json",
+        "en/index.html",
+        "es/index.html",
+        "assets/homepage-reading-20260925.css",
+        "assets/audience-experience-order-20260823.js",
+        "assets/unitary-public-shell-20260818.js",
+        "assets/optimum-reader-journey-finish-20260818.js",
+        "ops/continuity/GITHUB_DRIVE_GITLAB_RECOVERY_QUEUE_20260921.json"
+      ],
+      "path_scope_rule": "This is the known affected family, not certification of the final PR diff. At replay enumerate the then-reviewed exact changed paths and relevant dependencies; preserve unrelated files and any newer host-specific corrections.",
+      "content_requirements": [
+        "Retain Avello as the identified signatory of the court's 19-Dec-2017 liquidation-opening order; no personal signature attribution to López Villarrubia.",
+        "Do not infer an independent substantive reset, exoneration, proxy signing, absence or guilt from signature alone. Preserve Gil Marer's attributed hypothesis and the actor-specific preparation, decision and causal inquiry.",
+        "Keep 2008 dissident origin, AC alignment-from-inception allegation, CAM later entry, alleged convenio/liquidación judicial threshold, 7-Jun-2018 pivot and later/ongoing acts distinct but connected.",
+        "Retain all five private principals plus separately attributed AC and judge visibly on both homepages and useful appearances elsewhere; seven is not an exhaustive actor census.",
+        "Preserve whole-portfolio allegation; asset-by-asset substantiation, RICPE separation, contrary evidence and source limits."
+      ],
+      "gitlab_stale_source_findings": [
+        "The inspected GitLab signed-acts register still names Fernando de León Marrero as the 6-Jun-2012 appointee; source-controlled GitHub correctly names Francisco de Borja Rodríguez-Batllori Laffitte. Preserve the existing C36-CORR-OPENING-AC-20260823 correction, not the stale GitLab wording.",
+        "The inspected GitLab register lacks the two distinct source-promoted 16-Apr-2018 plan and interest rows and later dated publication-state clarification already on GitHub; reconcile those established corrections together with the new signature-only clarification.",
+        "The older concise-homepage proposal must not overwrite the later owner-authorised seven-person-preserving refinement."
+      ],
+      "readiness_holds": [
+        "The new GitHub head needs its own required checks; prior green results do not certify new content.",
+        "At observation the English connected-course paragraph lacked its Spanish counterpart; complete and verify bilingual parity before public release.",
+        "No GitLab release without its own required exact-head checks and affected-route readback."
+      ],
+      "restoration_trigger": "Evidence of actual usable GitLab capacity from existing provider/native state, not expiry of a guessed one-or-two-day wait.",
+      "replay_rule": "Re-read current main, PR1893 and this item; freeze both actual heads. Separate already-reviewed source corrections from pending homepage bytes. Preserve newer GitLab work and reconcile only approved net public-safe deltas into the existing suitable recovery MR. No wholesale overwrite, no new competing homepage, no probe-only pipeline, no purchases, no private source identifiers or originals. Run only required validation for the real replay. Verify source merge and Pages separately and append exact commit/MR/job/live receipts. If a gate or writer conflict blocks one tranche, retain its disposition without blocking independent safe tranches.",
+      "completion_rule": "Complete only when every in-scope path/proposition is verified on GitLab or has an explicit accepted exclusion, required checks pass, changed public routes are live-verified, and current recovery controls record the source and result. Disable the scoped recovery watcher after completion; do not reactivate unrelated paused tasks.",
+      "github_main_at_recovery_action": "791789ebbdab3cc33702bdc4ac3ce0ed8ca92b4c",
+      "gitlab_main_at_recovery_action": "5a4c1b14e1f751456e2275cc7648696ae874b513",
+      "gitlab_source_recovery_branch": "recovery/judicial-signature-causation-20260926",
+      "gitlab_source_recovery_commit": "9862fd55ebd73ade78733f0b46efeab281d504ae",
+      "gitlab_source_recovery_mr": 640,
+      "gitlab_source_recovery_state": "MR_OPEN_EXACT_HEAD_CI_RUNNING__NO_MERGE_CLAIM",
+      "homepage_baseline_state": "CURRENT_GITHUB_GITLAB_HOME_BYTES_EXACT_FOR_EN_ES_BASELINE__PR1893_EXTRA_REFINEMENT_HELD_SEPARATELY",
+      "continuity_audit_date": "2026-09-26"
+    }
+  ],
+  "restoration_observed": {
+    "date": "2026-09-24",
+    "github_main_pre_transaction": "bf090caac4f8ab0a63d13c73e5c71eb177daf51c",
+    "gitlab_main_pre_transaction": "5985a64af79dd9753aedc4b462c5328583d57b42",
+    "gitlab_project_id": 86151898,
+    "mode": "ADDITIVE_RECONCILIATION_NO_WHOLESALE_OVERWRITE"
+  },
+  "restoration_rules": [
+    "Freeze exact GitHub and GitLab heads before reconciliation.",
+    "Preserve newer GitLab work.",
+    "Port only source-proved net deltas.",
+    "Never overwrite either host wholesale.",
+    "Run GitLab validators and verify affected Pages routes.",
+    "Keep private source bytes outside public Git."
+  ],
+  "schema": "por-derecho.github-drive-gitlab-dual-write.v1",
   "source_perimeter": [
     "SBU_BUSINESS_EMAIL",
     "GIL_AUTHORISED_PRIVATE_EMAIL",
@@ -51,67 +255,5 @@
     "PUBLIC_SAFE_DERIVATIVE",
     "CERTIFIED_FILE_COMPLETENESS"
   ],
-  "restoration_rules": [
-    "Freeze exact GitHub and GitLab heads before reconciliation.",
-    "Preserve newer GitLab work.",
-    "Port only source-proved net deltas.",
-    "Never overwrite either host wholesale.",
-    "Run GitLab validators and verify affected Pages routes.",
-    "Keep private source bytes outside public Git."
-  ],
-  "completion_rule": "A material item is continuity-complete only when the applicable GitHub, private-custody and GitLab-replay states are explicit.",
-  "external_action_authority": false,
-  "replay_items": [
-    {
-      "id": "PD-GL-REC-SR-CAP-20260921-01",
-      "scope": "Sun Rock institutional capital programme successor release",
-      "recovery_class": "EXACT_GITLAB_RECOVERY",
-      "github_branch": "integration/sun-rock-capital-programme-20260921",
-      "github_state": "INTEGRATION_PREPARED",
-      "public_paths": [
-        "en/institutional-capital/index.html",
-        "es/capital-institucional/index.html",
-        "assets/institutional-capital-20260921.css",
-        "assets/data/sun-rock-capital-process-v1.json",
-        "en/capital-relationships/index.html",
-        "es/relaciones-de-capital/index.html",
-        "sitemap-sun-rock-institutional-20260916.xml",
-        "ops/capital/INSTITUTIONAL_RESPONSE_PLAYBOOK_20260921.md",
-        "ops/capital/SUN_ROCK_CAPITAL_PROGRAMME_CONTINUITY_20260921.md",
-        "CURRENT_HANDOVER_PRINCIPAL_FINANCIAL_RELATIONSHIPS_17SEP2026.md",
-        ".github/workflows/sun-rock-capital-relationships.yml",
-        "ci/sun_rock_capital_relationships_acceptance_20260916.py",
-        "publication-manifests/sun-rock-institutional-capital-20260921.json"
-      ],
-      "private_drive_handoff": "PRESENT_IN_APPROVED_PRIVATE_CUSTODY_LOCATOR_NOT_PUBLIC",
-      "gitlab_state": "PENDING_AUTHENTICATED_ACCESS",
-      "replay_rule": "Freeze GitHub/GitLab heads, preserve newer GitLab work, port only the source-proved net public-safe delta, run GitLab validators/pipeline, verify affected Pages routes, and record residual conflicts.",
-      "github_pr": 1701,
-      "github_prepared_head": "1b993927f4ed26875ba6bd28901e9231aa8fc7f4"
-    },
-    {
-      "id": "PD-GL-REC-EG17-20-26-20260924-01",
-      "scope": "EG17/20-26 corrected LAJ genealogy, filed alzada and thread continuity",
-      "recovery_class": "EXACT_GITLAB_RECOVERY",
-      "github_branch": "continuity/eg17-20-26-alzada-20260924",
-      "github_state": "BRANCH_PREPARED_PENDING_MERGE",
-      "public_paths": [
-        "archive/THREAD_DELETION_CONTINUITY_AUDIT_EG17_20_26_ALZADA_24SEP2026.md",
-        "assets/data/eg17-20-26-alzada-continuity-20260924.json",
-        "CHATGPT_START_HERE.md",
-        ".github/governance/GITHUB_DRIVE_GITLAB_DUAL_WRITE_CONTINUITY_21SEP2026.md",
-        "ops/continuity/GITHUB_DRIVE_GITLAB_RECOVERY_QUEUE_20260921.json"
-      ],
-      "private_drive_native_custody": "PRESENT_VERIFIED_LOCATOR_NOT_PUBLIC",
-      "gitlab_state": "WRITE_PENDING",
-      "replay_rule": "Additive source-proved reconciliation only; preserve newer GitLab work; no native private filing bytes in public Git."
-    }
-  ],
-  "restoration_observed": {
-    "date": "2026-09-24",
-    "gitlab_project_id": 86151898,
-    "gitlab_main_pre_transaction": "5985a64af79dd9753aedc4b462c5328583d57b42",
-    "github_main_pre_transaction": "bf090caac4f8ab0a63d13c73e5c71eb177daf51c",
-    "mode": "ADDITIVE_RECONCILIATION_NO_WHOLESALE_OVERWRITE"
-  }
+  "status": "CONTROL_SYSTEM_DEGRADED_CI_QUOTA__SOURCE_REVIEW_WRITES_AVAILABLE"
 }

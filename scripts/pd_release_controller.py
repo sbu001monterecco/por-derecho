@@ -231,9 +231,10 @@ def verify(api, state, blob, pr):
 def supersede_unverified_recovery(api, state, blob, pr):
     """Release a stale recovery fence without converting an unverified readback into a receipt.
 
-    This is permitted only when the held PR was merged, its exact Pages deployment
-    previously succeeded, and that merge is an ancestor of a later current main.
-    The unresolved byte-readback gap remains explicit and no VERIFIED receipt is added.
+    This is permitted only when the held PR was merged and that merge is an ancestor
+    of a later current main. If an exact Pages deployment is recorded, it is revalidated
+    and the open readback gap is preserved. If no deployment checkpoint exists, both
+    deployment and readback remain explicitly unverified. No VERIFIED receipt is added.
     """
     if state.get('phase') != 'RECOVERY_REQUIRED' or not pr.get('merged'):
         raise ValueError('Superseded recovery requires a merged RECOVERY_REQUIRED release')
@@ -249,7 +250,18 @@ def supersede_unverified_recovery(api, state, blob, pr):
                      and item.get('evidence', {}).get('merge_sha') == merge
                      and item.get('evidence', {}).get('pages_run_id')), None)
     if not deployed:
-        raise ValueError('No recorded exact deployment exists for the held merge')
+        evidence = {
+            'prior_merge_sha': merge,
+            'current_main_sha': current,
+            'deployment_recorded': False,
+            'readback_verified': False,
+            'verification_gap_preserved': True,
+            'reason': 'Later legitimate main superseded the merged release, but the controller has no recorded exact deployment or scoped readback. Fence release does not infer either.',
+        }
+        state = advance(state, 'SUPERSEDED_WITH_OPEN_PUBLICATION_STATE', state['owner'], state['fence'], evidence)
+        state['run_id'] = int(os.environ['GITHUB_RUN_ID'])
+        blob = api.save(state, blob)
+        return state, blob
     pages_run_id = deployed['evidence']['pages_run_id']
     pages_run = api.request('actions/runs/'+str(pages_run_id))
     if (pages_run.get('name') != 'pages build and deployment' or pages_run.get('head_sha') != merge

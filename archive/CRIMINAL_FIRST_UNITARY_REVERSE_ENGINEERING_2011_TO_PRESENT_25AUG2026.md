@@ -276,3 +276,30 @@ Canonical pages to cross-read include:
 Equivalent English routes must remain linked from the public page.
 
 **Canonical status:** this file is a reusable investigative control, not a pleading, expert opinion, prosecutorial finding or adjudication of criminal liability.
+
+---
+
+## 18. 25-September-2026 protective-origin and causal role-reversal addendum
+
+The reverse-engineering sequence must now begin one step earlier whenever Calificación causation or "who made the insolvency worse" is in scope.
+
+The controlling source family records a 28-February-2012 restructuring plan, a 15-May-2012 mortgage-execution diligence scheduling 158 LPB properties for auction on 22 June, and the 1/4/6-June filing/declaration sequence before that auction. The declaration recorded approximately EUR 21.603m assets and EUR 10.186m liabilities. That supports substantial net asset value but does not displace the historical regular-payment/liquidity insolvency test.
+
+Gil Marer's attributed position is that the concurso was used in good faith as a protective mechanism against execution while restructuring was pursued, that his/Aweswell's perimeter injected rather than extracted value, and that the project side continually sought to end or overcome the insolvency. The repository must test that position through a complete money-in/money-out ledger and a complete rescue/exit chronology rather than accepting or rejecting it by narrative.
+
+Every Calificación proposition now requires a **role-reversal matrix**:
+
+`adverse premise against Gil/LPB/Pink → complete origin and positive-agency record → independently identified loss → actor-specific act/omission → authority → knowledge → effect → benefit → lawful alternative → decisive missing proof`.
+
+The possible causal lanes are separately attributed: Montelanza/Molina-linked dissident/representative acts; later CAM/Acosta Matos functional convergence; the Insolvency Administrator; and judicial acts/omissions. No lane transfers guilt to another. The purpose is to identify actual causal contribution, including a multi-causal or project-position-narrowed outcome where that is what the evidence supports.
+
+Formal Spanish `calificación culpable` remains a statutory insolvency mechanism and must not be repurposed as a generic finding of guilt against a judge, insolvency practitioner or unrelated private third party. Gil's "counter-calificación" language is preserved as an attributed causal-accountability thesis. Separate criminal, professional, civil and judicial routes control any legal conclusion.
+
+This addendum is controlled by `PD-PROTECTIVE-ORIGIN-ROLE-REVERSAL-20260925-01`.
+
+
+## 25 September 2026 — always-on ChatGPT intake and Community-debt addendum
+
+For any new source capable of changing the 2011→present criminal-first reconstruction, apply `PD-CHATGPT-UCF-INTAKE-20260925-01` before treating the source as an isolated event. Mandatory operations are backward genealogy, forward premise propagation, state-transition alarms, source independence, numeric genealogy, actor/capacity/date, criminal element test, contrary record, decisive missing proof and NEW→OLD / OLD→NEW propagation.
+
+For Community debt/voting/authority, apply `PD-COMMUNITY-DEBT-ROLE-REVERSAL-20260925-01` and `PD-COMMUNITY-COURT-COMPLETENESS-20260925-01`. The chain now requires explicit treatment of the 2011/2015/2016/2017/2018 voting-denominator sequence, the 28-Apr-2016 definitive-text debt layer, the 20-Jan-2017 contingent/no-own-amount state, later re-quantification/use, the EUR1,145,798.29 better-bid burden and the 10-Jul-2018 eXW expert analysis. Preserve Gil/AWESWELL's categorical attributed debt/capture conclusion, while keeping criminal responsibility actor- and element-specific.

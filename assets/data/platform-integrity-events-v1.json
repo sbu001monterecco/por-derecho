@@ -1,75 +1,5 @@
 {
-  "schema": "por-derecho.platform-integrity-events.v1",
-  "control_id": "PD-PLATFORM-INTEGRITY-20260923-01",
-  "as_of": "2026-09-23",
-  "publication_boundary": "public-safe summaries only; no authentication URLs, provider message IDs, private IP/session data or reporter identities",
-  "proof_rule": "motive/incentive is not attribution; chronology is not causation; provider-native records required",
-  "events": [
-    {
-      "id": "PD-PLAT-LI-20241019-NOTICE",
-      "platform": "LinkedIn",
-      "date": "2024-10-19",
-      "status": "NOTICE",
-      "summary": "Formal whistleblower/public-interest preservation notice to LinkedIn Ireland.",
-      "attribution": "not applicable"
-    },
-    {
-      "id": "PD-PLAT-LI-20241024-R1",
-      "platform": "LinkedIn",
-      "date": "2024-10-24",
-      "status": "PROVIDER_DOCUMENTED",
-      "summary": "Case 241020-015316 restored after identity verification; LinkedIn described temporary restriction following detected suspicious activity.",
-      "attribution": "external cause not identified"
-    },
-    {
-      "id": "PD-PLAT-LI-20241028-R2",
-      "platform": "LinkedIn",
-      "date": "2024-10-28",
-      "status": "PROVIDER_DOCUMENTED",
-      "summary": "Case 241028-011722 restored after identity verification; LinkedIn again described detected suspicious activity.",
-      "attribution": "external cause not identified"
-    },
-    {
-      "id": "PD-PLAT-LI-20260922-PHOTO",
-      "platform": "LinkedIn",
-      "date": "2026-09-22",
-      "status": "PROVIDER_DOCUMENTED",
-      "summary": "Security alert: profile photo changed at 13:51 GMT via Android; provider-reported approximate location Kuwait City, Kuwait.",
-      "attribution": "actor/session/IP not established"
-    },
-    {
-      "id": "PD-PLAT-LI-20260923-RESTRICT",
-      "platform": "LinkedIn",
-      "date": "2026-09-23",
-      "status": "USER_REPORTED_OPEN",
-      "summary": "Gil Marer reports that LinkedIn account access was blocked again; renewed identity verification was completed; restoration/provider explanation remains pending.",
-      "attribution": "trigger not established"
-    },
-    {
-      "id": "PD-PLAT-GOOGLE-2021-2026",
-      "platform": "Google Business Profile",
-      "date_range": "2021-10-28/2026-01-08",
-      "status": "PROVIDER_AND_REPOSITORY_DOCUMENTED",
-      "summary": "Three 2021-2022 Sun Park management requests were documented and rejected; closed-state records followed; Google support confirmed reinstatement on 26 August 2022; later closure/change notices were preserved.",
-      "attribution": "closure-state cause and any causal link to rejected requests remain open"
-    },
-    {
-      "id": "PD-PLAT-GITLAB-20260917-403",
-      "platform": "GitLab",
-      "date_range": "2026-09-17/2026-09-23",
-      "status": "PROVIDER_CASE_DOCUMENTED_RESTORED",
-      "summary": "sbu001 account-level 403; Trust & Safety reference #1297 and Support Portal #753341 opened; connected workspace operational again by 23 September.",
-      "attribution": "Support described repeated-login temporary lock as a possible mechanism; observed 403 persisted beyond expected interval; no external actor or retaliatory cause established"
-    },
-    {
-      "id": "PD-PLAT-GITHUB-20260919-ACCESS",
-      "platform": "GitHub",
-      "date": "2026-09-19",
-      "status": "BOUNDED_ACCESS_PATH_EVENT",
-      "summary": "User-facing browser/account access path reported blocked while authenticated integration, repository API and GitHub Pages remained operational.",
-      "attribution": "cause, scope and duration of user-facing block not established"
-    }
-  ],
+  "as_of": "2026-09-25",
   "connected_routes": {
     "en": [
       "/en/platform-integrity-evidence/",
@@ -81,5 +11,309 @@
       "/es/google-sun-park-cooperacion-evidencia/",
       "/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/"
     ]
-  }
+  },
+  "control_id": "PD-PLATFORM-INTEGRITY-20260923-01",
+  "events": [
+    {
+      "attribution": "not applicable",
+      "date": "2024-10-19",
+      "id": "PD-PLAT-LI-20241019-NOTICE",
+      "platform": "LinkedIn",
+      "status": "NOTICE",
+      "summary": "Formal whistleblower/public-interest preservation notice to LinkedIn Ireland."
+    },
+    {
+      "attribution": "external cause not identified",
+      "date": "2024-10-24",
+      "id": "PD-PLAT-LI-20241024-R1",
+      "platform": "LinkedIn",
+      "status": "PROVIDER_DOCUMENTED",
+      "summary": "Case 241020-015316 restored after identity verification; LinkedIn described temporary restriction following detected suspicious activity."
+    },
+    {
+      "attribution": "external cause not identified",
+      "date": "2024-10-28",
+      "id": "PD-PLAT-LI-20241028-R2",
+      "platform": "LinkedIn",
+      "status": "PROVIDER_DOCUMENTED",
+      "summary": "Case 241028-011722 restored after identity verification; LinkedIn again described detected suspicious activity."
+    },
+    {
+      "attribution": "edit self-attributed by account holder; provider session/IP/risk context not established; approximate location may be VPN-related but is not provider-confirmed as such",
+      "date": "2026-09-22",
+      "id": "PD-PLAT-LI-20260922-PHOTO",
+      "platform": "LinkedIn",
+      "status": "PROVIDER_DOCUMENTED",
+      "summary": "Security alert: profile photo changed at 13:51 GMT via Android; provider-reported approximate location Kuwait City, Kuwait. Account holder states that he made the profile-photo change himself and reports VPN use."
+    },
+    {
+      "attribution": "This is a provider policy statement, not a particularised identification of content, reporting source, technical trigger or independently established misconduct by the holder.",
+      "communication_event_id": "PD-SP-EVT-1163",
+      "date": "2026-09-23",
+      "id": "PD-PLAT-LI-20260923-RESTRICT",
+      "platform": "LinkedIn",
+      "status": "PROVIDER_POLICY_STATEMENT_APPEAL_OPEN",
+      "summary": "LinkedIn stated after another review that the account did not comply with its Professional Community Policies or User Agreement and that the restriction would remain. Later appeal and identity-verification steps are separate process events.",
+      "supersession_history": [
+        {
+          "meaning": "INITIAL_HOLDER_REPORT_PRESERVED",
+          "status": "USER_REPORTED_OPEN",
+          "summary": "Gil Marer reports that LinkedIn account access was blocked again; renewed identity verification was completed; restoration/provider explanation remains pending."
+        }
+      ]
+    },
+    {
+      "attribution": "closure-state cause and any causal link to rejected requests remain open",
+      "date_range": "2021-10-28/2026-01-08",
+      "id": "PD-PLAT-GOOGLE-2021-2026",
+      "platform": "Google Business Profile",
+      "status": "PROVIDER_AND_REPOSITORY_DOCUMENTED",
+      "summary": "Three 2021-2022 Sun Park management requests were documented and rejected; closed-state records followed; Google support confirmed reinstatement on 26 August 2022; later closure/change notices were preserved."
+    },
+    {
+      "attribution": "The specific internal signals were withheld. This later explanation supersedes the earlier suggested temporary login-lock mechanism; it does not identify an outside actor. Subsequent compute quota failures are separate.",
+      "communication_event_id": "PD-SP-EVT-1162",
+      "date_range": "2026-09-17/2026-09-22",
+      "id": "PD-PLAT-GITLAB-20260917-403",
+      "platform": "GitLab",
+      "status": "PROVIDER_CONFIRMED_RESTORED_FALSE_POSITIVE",
+      "summary": "GitLab Support relayed Trust & Safety's confirmation that the account had been automatically flagged by anti-abuse tools, was reinstated, and detections had been updated to avoid similar false-positive alerts.",
+      "supersession_history": [
+        {
+          "attribution": "Support described repeated-login temporary lock as a possible mechanism; observed 403 persisted beyond expected interval; no external actor or retaliatory cause established",
+          "date_range": "2026-09-17/2026-09-23",
+          "recorded_state": "PRE_25SEP_SOURCE_RECONCILIATION",
+          "status": "HISTORICAL_PRELIMINARY_EXPLANATION_SUPERSEDED",
+          "summary": "sbu001 account-level 403; Trust & Safety reference #1297 and Support Portal #753341 opened; connected workspace operational again by 23 September."
+        }
+      ]
+    },
+    {
+      "attribution": "cause, scope and duration of user-facing block not established",
+      "date": "2026-09-19",
+      "id": "PD-PLAT-GITHUB-20260919-ACCESS",
+      "platform": "GitHub",
+      "status": "BOUNDED_ACCESS_PATH_EVENT",
+      "summary": "User-facing browser/account access path reported blocked while authenticated integration, repository API and GitHub Pages remained operational."
+    },
+    {
+      "attribution": "process state confirmed; trigger, external reporting and causation not established",
+      "date": "2026-09-25",
+      "id": "PD-PLAT-LI-20260925-REVIEW",
+      "platform": "LinkedIn",
+      "status": "PROVIDER_STATEMENT_OPEN",
+      "summary": "Appeal case 260923-029467 remains open; LinkedIn Customer Support states that the member follow-up was forwarded to another group for additional review/advice and may require additional research."
+    },
+    {
+      "attribution": "outbound request only; no external actor or causal attribution",
+      "date": "2026-09-25",
+      "id": "PD-PLAT-LI-20260925-UKESC",
+      "platform": "LinkedIn",
+      "status": "OUTBOUND_PRESERVATION_AND_RELATIONSHIP_ESCALATION",
+      "summary": "Existing appeal/support and privacy/preservation threads were supplemented with UK-business relationship context, litigation-preservation requirements, source/trigger questions and a post-restoration paid-customer intention; no duplicate support case was created."
+    },
+    {
+      "attribution": "provider request documented; user completion reported and outbound notice verified; provider receipt, restoration, trigger and external cause not established",
+      "date": "2026-09-25",
+      "id": "PD-PLAT-LI-20260925-IDV2",
+      "platform": "LinkedIn",
+      "status": "PROVIDER_WAITING_FOR_INFORMATION_USER_COMPLETED",
+      "summary": "LinkedIn changed case 260923-029467 to Waiting For Information and requested a fresh Persona government-ID verification followed by a reply to the existing case. The account holder states that the new Persona flow was completed and a same-thread completion notice was sent."
+    },
+    {
+      "attribution": "not applicable",
+      "date": "2026-09-25",
+      "id": "PD-PLAT-LI-20260925-INTERIM-RESTORATION",
+      "platform": "LinkedIn",
+      "status": "OUTBOUND_VERIFIED_PROVIDER_RESPONSE_PENDING",
+      "summary": "After completing the fresh Persona flow, the account holder replied in the existing appeal case seeking urgent interim restoration or the least restrictive temporary security measure while review continues, and supplied a controlled four-PDF evidence package. Transmission is verified; provider review, Persona acceptance, restoration and trigger classification remain pending."
+    },
+    {
+      "attribution": "not applicable",
+      "date": "2026-09-25",
+      "id": "PD-PLAT-LI-20260925-ARTICLE21-PACK",
+      "platform": "LinkedIn / User Rights",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "summary": "A one-decision Article 21 DSA filing package was prepared for User Rights concerning the LinkedIn account restriction, framed as a moderation/account-enforcement dispute rather than hacking or account compromise. Live external form acceptance/submission remains outstanding; no User Rights receipt exists."
+    },
+    {
+      "attribution": "not applicable",
+      "date": "2026-09-25",
+      "id": "PD-PLAT-LI-20260925-RPL3304-COUNSEL",
+      "platform": "LinkedIn / Spanish judicial preservation",
+      "status": "COUNSEL_INSTRUCTED_NO_FILING_RECEIPT",
+      "summary": "Counsel for RPL 3304/2025 was instructed to assess a narrowly framed supervening-evidence/preservation step concerning the LinkedIn restriction and provider-native evidence. No court filing or judicial receipt is claimed."
+    },
+    {
+      "attribution": "not applicable",
+      "date": "2026-09-25",
+      "id": "PD-PLAT-LI-20260925-ARTICLE21-USER-RIGHTS",
+      "platform": "LinkedIn",
+      "status": "ARTICLE21_FORM_REQUEST_SENT_CASE_ID_PENDING",
+      "summary": "User Rights GmbH's published email fallback was used to request the Article 21 dispute-resolution form or case-opening instructions for the single 23 Sep LinkedIn account restriction. The request was framed as moderation/account enforcement, not hacking, and included the provider-native restriction notice/provenance support. No User Rights case ID is yet verified."
+    },
+    {
+      "attribution": "The provider did not identify the triggering activity or confirm a third-party report. The Pages impact is the holder's contemporaneous report, not an independent provider uptime measurement.",
+      "attribution_es": "El proveedor no identificó la actividad desencadenante ni confirmó una denuncia de tercero. El efecto en Pages es el relato contemporáneo del titular, no una medición independiente del proveedor.",
+      "communication_event_id": "PD-SP-EVT-1160",
+      "date": "2026-09-06",
+      "id": "PD-PLAT-CPA-20260925-GITHUB-REVIEW",
+      "platform": "GitHub",
+      "sequence_role": "INDIVIDUAL_COMMUNICATION",
+      "source_control": "PD-CPA-20260925-07",
+      "status": "SOURCE_REVIEWED_PROVIDER_OR_INSTITUTION_STATEMENT",
+      "summary": "GitHub said account activity had been flagged by its abuse-detection systems for manual review. The holder contemporaneously reported loss of access to the account, repository and associated Pages site.",
+      "summary_es": "GitHub indicó que sus sistemas de detección de abuso habían marcado actividad de la cuenta para revisión manual. El titular comunicó contemporáneamente la pérdida de acceso a la cuenta, al repositorio y al sitio Pages asociado."
+    },
+    {
+      "attribution": "Restoration does not identify an outside actor or prove retaliation. GitHub did not expressly classify this event as a false positive.",
+      "attribution_es": "El restablecimiento no identifica un actor externo ni acredita represalia. GitHub no calificó expresamente este episodio como falso positivo.",
+      "communication_event_id": "PD-SP-EVT-1161",
+      "date": "2026-09-11",
+      "id": "PD-PLAT-CPA-20260925-GITHUB-RESTORATION",
+      "platform": "GitHub",
+      "sequence_role": "INDIVIDUAL_COMMUNICATION",
+      "source_control": "PD-CPA-20260925-07",
+      "status": "SOURCE_REVIEWED_PROVIDER_OR_INSTITUTION_STATEMENT",
+      "summary": "Following review, GitHub confirmed that it had cleared the account restrictions and restored full access.",
+      "summary_es": "Tras la revisión, GitHub confirmó que había retirado las restricciones de la cuenta y restablecido el acceso completo."
+    },
+    {
+      "attribution": "The specific internal signals were withheld. This later explanation supersedes the earlier suggested temporary login-lock mechanism; it does not identify an outside actor. Subsequent compute quota failures are separate.",
+      "attribution_es": "No se facilitaron las señales internas concretas. Esta explicación posterior sustituye como explicación actual la hipótesis inicial de bloqueo temporal por acceso; no identifica actor externo. Los fallos posteriores por cuota de cómputo son distintos.",
+      "communication_event_id": "PD-SP-EVT-1162",
+      "date": "2026-09-22",
+      "id": "PD-PLAT-CPA-20260925-GITLAB-RESTORATION",
+      "platform": "GitLab",
+      "sequence_role": "LATER_PROVIDER_EXPLANATION",
+      "source_control": "PD-CPA-20260925-07",
+      "status": "SOURCE_REVIEWED_PROVIDER_OR_INSTITUTION_STATEMENT",
+      "summary": "GitLab Support relayed Trust & Safety's confirmation that the account had been automatically flagged by anti-abuse tools, was reinstated, and detections had been updated to avoid similar false-positive alerts.",
+      "summary_es": "Soporte de GitLab trasladó la confirmación de Trust & Safety: la cuenta había sido marcada automáticamente por herramientas antiabuso, se había restablecido y se habían ajustado las detecciones para evitar avisos falsos positivos similares."
+    },
+    {
+      "attribution": "This is a provider policy statement, not a particularised identification of content, reporting source, technical trigger or independently established misconduct by the holder.",
+      "attribution_es": "Es una declaración normativa del proveedor, no la identificación concreta del contenido, origen de denuncia, disparador técnico o conducta irregular del titular acreditada independientemente.",
+      "communication_event_id": "PD-SP-EVT-1163",
+      "date": "2026-09-23",
+      "id": "PD-PLAT-CPA-20260925-LINKEDIN-POLICY",
+      "platform": "LinkedIn",
+      "sequence_role": "INDIVIDUAL_COMMUNICATION",
+      "source_control": "PD-CPA-20260925-07",
+      "status": "SOURCE_REVIEWED_PROVIDER_OR_INSTITUTION_STATEMENT",
+      "summary": "LinkedIn stated after another review that the account did not comply with its Professional Community Policies or User Agreement and that the restriction would remain. Later appeal and identity-verification steps are separate process events.",
+      "summary_es": "LinkedIn indicó tras otra revisión que la cuenta no cumplía sus políticas profesionales o acuerdo de usuario y que mantendría la restricción. Los pasos posteriores de apelación y verificación de identidad son eventos procesales separados."
+    },
+    {
+      "attribution": "The initial response does not diagnose malware and predates the two later supplements. It is not acknowledgment or acceptance of those attachments.",
+      "attribution_es": "La respuesta inicial no diagnostica malware y precede a los dos complementos posteriores. No acredita recepción ni aceptación de esos adjuntos.",
+      "communication_event_id": "PD-SP-EVT-1164",
+      "date": "2026-09-25",
+      "id": "PD-PLAT-CPA-20260925-INCIBE-INTAKE",
+      "platform": "INCIBE-CERT",
+      "sequence_role": "INDIVIDUAL_COMMUNICATION",
+      "source_control": "PD-CPA-20260925-07",
+      "status": "SOURCE_REVIEWED_PROVIDER_OR_INSTITUTION_STATEMENT",
+      "summary": "INCIBE-CERT assigned an incident reference and supplied general device-security guidance. The assigned reference is retained in private custody.",
+      "summary_es": "INCIBE-CERT asignó una referencia de incidente y facilitó orientación general sobre seguridad de dispositivos. La referencia asignada se conserva en custodia privada."
+    },
+    {
+      "attribution": "Sent-state and attachment inclusion are verified. Recipient acknowledgment, internal incorporation, technical assessment, malware and a common actor are not established by this transmission.",
+      "attribution_es": "Se verifican el estado enviado y la inclusión de adjuntos. Este envío no acredita acuse del destinatario, incorporación interna, valoración técnica, malware ni autor común.",
+      "communication_event_id": "PD-SP-EVT-1165",
+      "date": "2026-09-25",
+      "id": "PD-PLAT-CPA-20260925-INCIBE-TECHNICAL",
+      "platform": "INCIBE-CERT",
+      "sequence_role": "INDIVIDUAL_COMMUNICATION",
+      "source_control": "PD-CPA-20260925-07",
+      "status": "OUTBOUND_VERIFIED_RESPONSE_PENDING",
+      "summary": "A corrective technical supplement was sent in the existing incident thread with three attachments. It separates GitHub, GitLab, LinkedIn, Google and X events, preserves provider explanations, and expressly corrects the earlier photo-change premise.",
+      "summary_es": "Se remitió una ampliación técnica correctiva en el hilo del incidente existente con tres adjuntos. Separa los eventos de GitHub, GitLab, LinkedIn, Google y X, conserva las explicaciones de los proveedores y rectifica expresamente la premisa anterior sobre el cambio de foto."
+    },
+    {
+      "attribution": "Transmission is not institutional endorsement of the underlying portfolio allegation. No consolidated illicit AUM, grant payment, digital attacker or common campaign is established. Restricted documents and the detailed allegation remain privately preserved.",
+      "attribution_es": "El envío no es aval institucional de la alegación patrimonial subyacente. No se acredita patrimonio ilícito consolidado, pago de ayuda, atacante digital ni campaña común. Los documentos restringidos y la alegación detallada permanecen preservados privadamente.",
+      "communication_event_id": "PD-SP-EVT-1166",
+      "date": "2026-09-25",
+      "id": "PD-PLAT-CPA-20260925-INCIBE-CONTEXT",
+      "platform": "INCIBE-CERT",
+      "sequence_role": "INDIVIDUAL_COMMUNICATION",
+      "source_control": "PD-CPA-20260925-07",
+      "status": "OUTBOUND_VERIFIED_RESPONSE_PENDING",
+      "summary": "A separate institutional-context supplement was sent in the same incident thread with three attachments. It explains the broader asset-tracing context beyond one fundraising vehicle or subsidy and identifies CNMV, RICPE, Intervención General de Canarias, Fondos Europeos, BOE and SNCA/IGAE sources with their limits.",
+      "summary_es": "Se remitió un complemento institucional separado en el mismo hilo con tres adjuntos. Explica el contexto de trazabilidad patrimonial más amplio que un vehículo de captación o subvención e identifica fuentes de CNMV, RICPE, Intervención General de Canarias, Fondos Europeos, BOE y SNCA/IGAE con sus límites."
+    },
+    {
+      "attribution": "The notice does not identify a third-party cause or establish later restoration. Associated listing notices are not automatically separate attacks.",
+      "attribution_es": "El aviso no identifica una causa de tercero ni acredita un restablecimiento posterior. Los avisos sobre fichas asociadas no son automáticamente ataques separados.",
+      "communication_event_id": "PD-SP-EVT-1167",
+      "date": "2022-08-08",
+      "id": "PD-PLAT-CPA-20260925-GOOGLE-SUNROCKERS",
+      "platform": "Google Business Profile",
+      "sequence_role": "INDIVIDUAL_COMMUNICATION",
+      "source_control": "PD-CPA-20260925-07",
+      "status": "SOURCE_REVIEWED_PROVIDER_OR_INSTITUTION_STATEMENT",
+      "summary": "A provider notice records suspension of the SunRockers Cafe - Community Social Lounge profile following a suspicious-activity flag.",
+      "summary_es": "Un aviso del proveedor documenta la suspensión del perfil SunRockers Cafe - Community Social Lounge tras una señal de actividad sospechosa."
+    },
+    {
+      "attribution": "The notice does not establish who caused the flag or whether it shares a mechanism with other profiles. Sun Park's reinstatement cannot be applied to this profile without its own record.",
+      "attribution_es": "El aviso no acredita quién causó la señal ni si comparte mecanismo con otras fichas. El restablecimiento de Sun Park no se extiende a esta ficha sin registro propio.",
+      "communication_event_id": "PD-SP-EVT-1168",
+      "date": "2022-08-08",
+      "id": "PD-PLAT-CPA-20260925-GOOGLE-U3A",
+      "platform": "Google Business Profile",
+      "sequence_role": "INDIVIDUAL_COMMUNICATION",
+      "source_control": "PD-CPA-20260925-07",
+      "status": "SOURCE_REVIEWED_PROVIDER_OR_INSTITUTION_STATEMENT",
+      "summary": "A provider notice records suspension of the U3A Lanzarote profile following a suspicious-activity flag.",
+      "summary_es": "Un aviso del proveedor documenta la suspensión del perfil U3A Lanzarote tras una señal de actividad sospechosa."
+    },
+    {
+      "attribution": "This is a separately identified notification, not independent corroboration of a common attack. Its subsequent outcome remains unverified in this selected record.",
+      "attribution_es": "Es una notificación individualizada, no corroboración independiente de un ataque común. Su resultado posterior no está verificado en este registro seleccionado.",
+      "communication_event_id": "PD-SP-EVT-1169",
+      "date": "2022-08-08",
+      "id": "PD-PLAT-CPA-20260925-GOOGLE-WI",
+      "platform": "Google Business Profile",
+      "sequence_role": "INDIVIDUAL_COMMUNICATION",
+      "source_control": "PD-CPA-20260925-07",
+      "status": "SOURCE_REVIEWED_PROVIDER_OR_INSTITUTION_STATEMENT",
+      "summary": "A provider notice records suspension of The Women’s Institute - Lanzarote profile following a suspicious-activity flag.",
+      "summary_es": "Un aviso del proveedor documenta la suspensión del perfil The Women’s Institute - Lanzarote tras una señal de actividad sospechosa."
+    },
+    {
+      "attribution": "This is the provider's stated classification, not an independently established violation. Current account status, an outside actor and linkage to other platforms are not verified.",
+      "attribution_es": "Es la clasificación declarada por el proveedor, no una infracción acreditada independientemente. No se verifican el estado actual de la cuenta, un actor externo ni vínculos con otras plataformas.",
+      "communication_event_id": "PD-SP-EVT-1170",
+      "date": "2024-12-19",
+      "id": "PD-PLAT-CPA-20260925-X-NOTICE",
+      "platform": "X",
+      "sequence_role": "INDIVIDUAL_COMMUNICATION",
+      "source_control": "PD-CPA-20260925-07",
+      "status": "SOURCE_REVIEWED_PROVIDER_OR_INSTITUTION_STATEMENT",
+      "summary": "X notified an automatic account suspension, invoking its rules against inauthentic behaviours.",
+      "summary_es": "X notificó una suspensión automática de cuenta, invocando sus reglas contra comportamientos no auténticos."
+    },
+    {
+      "attribution": "Quota is the recorded failure reason, not proof of external interference or a renewed account block. Current capacity must be rechecked before later execution.",
+      "date": "2026-09-25",
+      "id": "PD-PLAT-GITLAB-20260925-COMPUTE-QUOTA",
+      "platform": "GitLab CI",
+      "source_control": "PD-CPA-20260925-07",
+      "status": "OPERATIONAL_CAPACITY_LIMIT_SEPARATE_FROM_ACCOUNT_BLOCK",
+      "summary": "An inspected existing job failed before execution with ci_quota_exceeded and no runner assigned while repository/API access was operational."
+    }
+  ],
+  "governed_by": "ops/continuity/CONTINUITY_PRESERVATION_PROPAGATION_RULE.md",
+  "interpretation_boundaries": [
+    "communication_count_is_not_attack_count",
+    "GitHub_reinstatement_is_not_GitLab_false_positive",
+    "provider_statement_is_not_independent_merits_finding",
+    "initial_incident_reference_is_not_acknowledgment_of_later_attachments"
+  ],
+  "latest_source_control": "ops/continuity/PLATFORM_INTEGRITY_SOURCE_DELTA_20260925.json",
+  "proof_rule": "motive/incentive is not attribution; chronology is not causation; provider-native records required",
+  "publication_boundary": "public-safe summaries only; no authentication URLs, provider message IDs, private IP/session data or reporter identities",
+  "schema": "por-derecho.platform-integrity-events.v1"
 }

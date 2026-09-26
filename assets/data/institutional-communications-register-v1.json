@@ -44,13 +44,13 @@
     "The caret marker remains identity-only; communication events receive stable IDs and bilingual anchors, never presentation carets.",
     "Criminal relevance may be linked as an open hypothesis, but criminal responsibility never transfers through an ACTA, communication, referral, office or institutional tier."
   ],
-  "control_date": "2026-09-24",
+  "control_date": "2026-09-25",
   "denominator_control": {
     "arithmetic_check": "Historical control: 75 detailed + 22 metadata-only = 97 reported total. Current 21-Sep status export: 398 distinct REGAGE rows (114 formal-event identities reused, including 22 receipt-controlled identities added in this release; 284 status-only rows added).",
-    "curated_source_proved_events": 418,
+    "curated_source_proved_events": 429,
     "detailed_baseline_receipt_rows_expected": 75,
     "detailed_baseline_receipt_rows_registered": 75,
-    "event_rows_total": 649,
+    "event_rows_total": 660,
     "mailbox_draft_rows": 3,
     "mailbox_inbound_email_rows": 101,
     "mailbox_outbound_email_rows": 42,
@@ -31637,6 +31637,566 @@
       },
       "source_key": "SUPPLEMENTAL_20260924:PD-SP-EVT-1159",
       "transport_link_state": "NO_PUBLIC_TRANSPORT_LINK_ASSERTED"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-1160",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-1160",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "The provider did not identify the triggering activity or confirm a third-party report. The Pages impact is the holder's contemporaneous report, not an independent provider uptime measurement."
+      ],
+      "does_not_prove_es": "El proveedor no identificó la actividad desencadenante ni confirmó una denuncia de tercero. El efecto en Pages es el relato contemporáneo del titular, no una medición independiente del proveedor.",
+      "event_date": "2026-09-06",
+      "event_id": "PD-SP-EVT-1160",
+      "evidence_state": {
+        "delivery": "INBOUND_FROM_INSTITUTION_VERIFIED",
+        "destination": "ONLY_AS_STATED_IN_SOURCE",
+        "filing": "NO_NEW_COURT_FILING",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_FINDING_ON_UNDERLYING_ECONOMIC_ALLEGATIONS",
+        "registration": "NOT_A_FORMAL_REGISTRY_FILING",
+        "substantive_examination": "ONLY_PROVIDER_REVIEW_EXPRESSLY_STATED_IN_SUMMARY",
+        "transmission": "INBOUND_REPLY_RETAINED"
+      },
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "PD-PLATFORM-INTEGRITY-20260923-01",
+        "PD-CPA-20260925-07"
+      ],
+      "office": "GitHub",
+      "official_reference": "REFERENCE_RETAINED_PRIVATELY",
+      "proof_level": "RETAINED_OFFICIAL_NOTIFICATION",
+      "proves": [
+        "GitHub said account activity had been flagged by its abuse-detection systems for manual review. The holder contemporaneously reported loss of access to the account, repository and associated Pages site."
+      ],
+      "proves_es": "GitHub indicó que sus sistemas de detección de abuso habían marcado actividad de la cuenta para revisión manual. El titular comunicó contemporáneamente la pérdida de acceso a la cuenta, al repositorio y al sitio Pages asociado.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "GitHub said account activity had been flagged by its abuse-detection systems for manual review. The holder contemporaneously reported loss of access to the account, repository and associated Pages site.",
+      "public_summary_es": "GitHub indicó que sus sistemas de detección de abuso habían marcado actividad de la cuenta para revisión manual. El titular comunicó contemporáneamente la pérdida de acceso a la cuenta, al repositorio y al sitio Pages asociado.",
+      "record_type": "OFFICIAL_NOTIFICATION",
+      "source_integrity": {
+        "repository_anchor": "ops/continuity/PLATFORM_INTEGRITY_SOURCE_DELTA_20260925.json",
+        "sha256": "8ec1d741addac91d43bfaa2702f0ddc37d170214c179909e6a8fdc50a2838691",
+        "status": "SOURCE_REVIEWED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "PD-CPA-20260925-07:github-review",
+      "source_timezone": "DATE_ONLY_PUBLIC_PROJECTION_EXACT_TIMESTAMP_PRIVATE",
+      "transport_link_state": "NATIVE_LOCATORS_PRIVATE_NO_SYNTHETIC_MAILBOX_ROW"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-1161",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-1161",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "Restoration does not identify an outside actor or prove retaliation. GitHub did not expressly classify this event as a false positive."
+      ],
+      "does_not_prove_es": "El restablecimiento no identifica un actor externo ni acredita represalia. GitHub no calificó expresamente este episodio como falso positivo.",
+      "event_date": "2026-09-11",
+      "event_id": "PD-SP-EVT-1161",
+      "evidence_state": {
+        "delivery": "INBOUND_FROM_INSTITUTION_VERIFIED",
+        "destination": "ONLY_AS_STATED_IN_SOURCE",
+        "filing": "NO_NEW_COURT_FILING",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_FINDING_ON_UNDERLYING_ECONOMIC_ALLEGATIONS",
+        "registration": "NOT_A_FORMAL_REGISTRY_FILING",
+        "substantive_examination": "ONLY_PROVIDER_REVIEW_EXPRESSLY_STATED_IN_SUMMARY",
+        "transmission": "INBOUND_REPLY_RETAINED"
+      },
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "PD-PLATFORM-INTEGRITY-20260923-01",
+        "PD-CPA-20260925-07"
+      ],
+      "office": "GitHub",
+      "official_reference": "REFERENCE_RETAINED_PRIVATELY",
+      "proof_level": "RETAINED_OFFICIAL_NOTIFICATION",
+      "proves": [
+        "Following review, GitHub confirmed that it had cleared the account restrictions and restored full access."
+      ],
+      "proves_es": "Tras la revisión, GitHub confirmó que había retirado las restricciones de la cuenta y restablecido el acceso completo.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "Following review, GitHub confirmed that it had cleared the account restrictions and restored full access.",
+      "public_summary_es": "Tras la revisión, GitHub confirmó que había retirado las restricciones de la cuenta y restablecido el acceso completo.",
+      "record_type": "OFFICIAL_NOTIFICATION",
+      "source_integrity": {
+        "repository_anchor": "ops/continuity/PLATFORM_INTEGRITY_SOURCE_DELTA_20260925.json",
+        "sha256": "8ec1d741addac91d43bfaa2702f0ddc37d170214c179909e6a8fdc50a2838691",
+        "status": "SOURCE_REVIEWED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "PD-CPA-20260925-07:github-restoration",
+      "source_timezone": "DATE_ONLY_PUBLIC_PROJECTION_EXACT_TIMESTAMP_PRIVATE",
+      "transport_link_state": "NATIVE_LOCATORS_PRIVATE_NO_SYNTHETIC_MAILBOX_ROW"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-1162",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-1162",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "The specific internal signals were withheld. This later explanation supersedes the earlier suggested temporary login-lock mechanism; it does not identify an outside actor. Subsequent compute quota failures are separate."
+      ],
+      "does_not_prove_es": "No se facilitaron las señales internas concretas. Esta explicación posterior sustituye como explicación actual la hipótesis inicial de bloqueo temporal por acceso; no identifica actor externo. Los fallos posteriores por cuota de cómputo son distintos.",
+      "event_date": "2026-09-22",
+      "event_id": "PD-SP-EVT-1162",
+      "evidence_state": {
+        "delivery": "INBOUND_FROM_INSTITUTION_VERIFIED",
+        "destination": "ONLY_AS_STATED_IN_SOURCE",
+        "filing": "NO_NEW_COURT_FILING",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_FINDING_ON_UNDERLYING_ECONOMIC_ALLEGATIONS",
+        "registration": "NOT_A_FORMAL_REGISTRY_FILING",
+        "substantive_examination": "ONLY_PROVIDER_REVIEW_EXPRESSLY_STATED_IN_SUMMARY",
+        "transmission": "INBOUND_REPLY_RETAINED"
+      },
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "PD-PLATFORM-INTEGRITY-20260923-01",
+        "PD-CPA-20260925-07"
+      ],
+      "office": "GitLab",
+      "official_reference": "REFERENCE_RETAINED_PRIVATELY",
+      "proof_level": "RETAINED_OFFICIAL_NOTIFICATION",
+      "proves": [
+        "GitLab Support relayed Trust & Safety's confirmation that the account had been automatically flagged by anti-abuse tools, was reinstated, and detections had been updated to avoid similar false-positive alerts."
+      ],
+      "proves_es": "Soporte de GitLab trasladó la confirmación de Trust & Safety: la cuenta había sido marcada automáticamente por herramientas antiabuso, se había restablecido y se habían ajustado las detecciones para evitar avisos falsos positivos similares.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "GitLab Support relayed Trust & Safety's confirmation that the account had been automatically flagged by anti-abuse tools, was reinstated, and detections had been updated to avoid similar false-positive alerts.",
+      "public_summary_es": "Soporte de GitLab trasladó la confirmación de Trust & Safety: la cuenta había sido marcada automáticamente por herramientas antiabuso, se había restablecido y se habían ajustado las detecciones para evitar avisos falsos positivos similares.",
+      "record_type": "OFFICIAL_NOTIFICATION",
+      "source_integrity": {
+        "repository_anchor": "ops/continuity/PLATFORM_INTEGRITY_SOURCE_DELTA_20260925.json",
+        "sha256": "8ec1d741addac91d43bfaa2702f0ddc37d170214c179909e6a8fdc50a2838691",
+        "status": "SOURCE_REVIEWED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "PD-CPA-20260925-07:gitlab-restoration",
+      "source_timezone": "DATE_ONLY_PUBLIC_PROJECTION_EXACT_TIMESTAMP_PRIVATE",
+      "transport_link_state": "NATIVE_LOCATORS_PRIVATE_NO_SYNTHETIC_MAILBOX_ROW"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-1163",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-1163",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "This is a provider policy statement, not a particularised identification of content, reporting source, technical trigger or independently established misconduct by the holder."
+      ],
+      "does_not_prove_es": "Es una declaración normativa del proveedor, no la identificación concreta del contenido, origen de denuncia, disparador técnico o conducta irregular del titular acreditada independientemente.",
+      "event_date": "2026-09-23",
+      "event_id": "PD-SP-EVT-1163",
+      "evidence_state": {
+        "delivery": "INBOUND_FROM_INSTITUTION_VERIFIED",
+        "destination": "ONLY_AS_STATED_IN_SOURCE",
+        "filing": "NO_NEW_COURT_FILING",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_FINDING_ON_UNDERLYING_ECONOMIC_ALLEGATIONS",
+        "registration": "NOT_A_FORMAL_REGISTRY_FILING",
+        "substantive_examination": "ONLY_PROVIDER_REVIEW_EXPRESSLY_STATED_IN_SUMMARY",
+        "transmission": "INBOUND_REPLY_RETAINED"
+      },
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "PD-PLATFORM-INTEGRITY-20260923-01",
+        "PD-CPA-20260925-07"
+      ],
+      "office": "LinkedIn",
+      "official_reference": "REFERENCE_RETAINED_PRIVATELY",
+      "proof_level": "RETAINED_OFFICIAL_NOTIFICATION",
+      "proves": [
+        "LinkedIn stated after another review that the account did not comply with its Professional Community Policies or User Agreement and that the restriction would remain. Later appeal and identity-verification steps are separate process events."
+      ],
+      "proves_es": "LinkedIn indicó tras otra revisión que la cuenta no cumplía sus políticas profesionales o acuerdo de usuario y que mantendría la restricción. Los pasos posteriores de apelación y verificación de identidad son eventos procesales separados.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "LinkedIn stated after another review that the account did not comply with its Professional Community Policies or User Agreement and that the restriction would remain. Later appeal and identity-verification steps are separate process events.",
+      "public_summary_es": "LinkedIn indicó tras otra revisión que la cuenta no cumplía sus políticas profesionales o acuerdo de usuario y que mantendría la restricción. Los pasos posteriores de apelación y verificación de identidad son eventos procesales separados.",
+      "record_type": "OFFICIAL_NOTIFICATION",
+      "source_integrity": {
+        "repository_anchor": "ops/continuity/PLATFORM_INTEGRITY_SOURCE_DELTA_20260925.json",
+        "sha256": "8ec1d741addac91d43bfaa2702f0ddc37d170214c179909e6a8fdc50a2838691",
+        "status": "SOURCE_REVIEWED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "PD-CPA-20260925-07:linkedin-policy",
+      "source_timezone": "DATE_ONLY_PUBLIC_PROJECTION_EXACT_TIMESTAMP_PRIVATE",
+      "transport_link_state": "NATIVE_LOCATORS_PRIVATE_NO_SYNTHETIC_MAILBOX_ROW"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-1164",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-1164",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "The initial response does not diagnose malware and predates the two later supplements. It is not acknowledgment or acceptance of those attachments."
+      ],
+      "does_not_prove_es": "La respuesta inicial no diagnostica malware y precede a los dos complementos posteriores. No acredita recepción ni aceptación de esos adjuntos.",
+      "event_date": "2026-09-25",
+      "event_id": "PD-SP-EVT-1164",
+      "evidence_state": {
+        "delivery": "INBOUND_FROM_INSTITUTION_VERIFIED",
+        "destination": "ONLY_AS_STATED_IN_SOURCE",
+        "filing": "NO_NEW_COURT_FILING",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_FINDING_ON_UNDERLYING_ECONOMIC_ALLEGATIONS",
+        "registration": "NOT_A_FORMAL_REGISTRY_FILING",
+        "substantive_examination": "ONLY_PROVIDER_REVIEW_EXPRESSLY_STATED_IN_SUMMARY",
+        "transmission": "INBOUND_REPLY_RETAINED"
+      },
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "PD-PLATFORM-INTEGRITY-20260923-01",
+        "PD-CPA-20260925-07"
+      ],
+      "office": "INCIBE-CERT",
+      "official_reference": "REFERENCE_RETAINED_PRIVATELY",
+      "proof_level": "RETAINED_OFFICIAL_NOTIFICATION",
+      "proves": [
+        "INCIBE-CERT assigned an incident reference and supplied general device-security guidance. The assigned reference is retained in private custody."
+      ],
+      "proves_es": "INCIBE-CERT asignó una referencia de incidente y facilitó orientación general sobre seguridad de dispositivos. La referencia asignada se conserva en custodia privada.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "INCIBE-CERT assigned an incident reference and supplied general device-security guidance. The assigned reference is retained in private custody.",
+      "public_summary_es": "INCIBE-CERT asignó una referencia de incidente y facilitó orientación general sobre seguridad de dispositivos. La referencia asignada se conserva en custodia privada.",
+      "record_type": "OFFICIAL_NOTIFICATION",
+      "source_integrity": {
+        "repository_anchor": "ops/continuity/PLATFORM_INTEGRITY_SOURCE_DELTA_20260925.json",
+        "sha256": "8ec1d741addac91d43bfaa2702f0ddc37d170214c179909e6a8fdc50a2838691",
+        "status": "SOURCE_REVIEWED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "PD-CPA-20260925-07:incibe-intake",
+      "source_timezone": "DATE_ONLY_PUBLIC_PROJECTION_EXACT_TIMESTAMP_PRIVATE",
+      "transport_link_state": "NATIVE_LOCATORS_PRIVATE_NO_SYNTHETIC_MAILBOX_ROW"
+    },
+    {
+      "attachment_count": 3,
+      "attachment_count_basis": "VERIFIED_SENT_ATTACHMENT_OCCURRENCES_NOT_INDEPENDENT_CORROBORATIONS",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-1165",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-1165",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Sent-state and attachment inclusion are verified. Recipient acknowledgment, internal incorporation, technical assessment, malware and a common actor are not established by this transmission."
+      ],
+      "does_not_prove_es": "Se verifican el estado enviado y la inclusión de adjuntos. Este envío no acredita acuse del destinatario, incorporación interna, valoración técnica, malware ni autor común.",
+      "event_date": "2026-09-25",
+      "event_id": "PD-SP-EVT-1165",
+      "evidence_state": {
+        "delivery": "RECIPIENT_ACKNOWLEDGMENT_NOT_VERIFIED",
+        "destination": "ONLY_AS_STATED_IN_SOURCE",
+        "filing": "NO_NEW_COURT_FILING",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_FINDING_ON_UNDERLYING_ECONOMIC_ALLEGATIONS",
+        "registration": "NOT_A_FORMAL_REGISTRY_FILING",
+        "substantive_examination": "ONLY_PROVIDER_REVIEW_EXPRESSLY_STATED_IN_SUMMARY",
+        "transmission": "SENT_VERIFIED"
+      },
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "PD-PLATFORM-INTEGRITY-20260923-01",
+        "PD-CPA-20260925-07",
+        "PD-CPA-20260925-07-ATT-01",
+        "PD-CPA-20260925-07-ATT-02",
+        "PD-CPA-20260925-07-ATT-03"
+      ],
+      "office": "INCIBE-CERT",
+      "official_reference": "REFERENCE_RETAINED_PRIVATELY",
+      "proof_level": "SENT_EMAIL_VERIFIED",
+      "proves": [
+        "A corrective technical supplement was sent in the existing incident thread with three attachments. It separates GitHub, GitLab, LinkedIn, Google and X events, preserves provider explanations, and expressly corrects the earlier photo-change premise."
+      ],
+      "proves_es": "Se remitió una ampliación técnica correctiva en el hilo del incidente existente con tres adjuntos. Separa los eventos de GitHub, GitLab, LinkedIn, Google y X, conserva las explicaciones de los proveedores y rectifica expresamente la premisa anterior sobre el cambio de foto.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "A corrective technical supplement was sent in the existing incident thread with three attachments. It separates GitHub, GitLab, LinkedIn, Google and X events, preserves provider explanations, and expressly corrects the earlier photo-change premise.",
+      "public_summary_es": "Se remitió una ampliación técnica correctiva en el hilo del incidente existente con tres adjuntos. Separa los eventos de GitHub, GitLab, LinkedIn, Google y X, conserva las explicaciones de los proveedores y rectifica expresamente la premisa anterior sobre el cambio de foto.",
+      "record_type": "OUTBOUND_COMMUNICATION",
+      "source_integrity": {
+        "repository_anchor": "ops/continuity/PLATFORM_INTEGRITY_SOURCE_DELTA_20260925.json",
+        "sha256": "8ec1d741addac91d43bfaa2702f0ddc37d170214c179909e6a8fdc50a2838691",
+        "status": "SOURCE_REVIEWED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "PD-CPA-20260925-07:incibe-technical",
+      "source_timezone": "DATE_ONLY_PUBLIC_PROJECTION_EXACT_TIMESTAMP_PRIVATE",
+      "transport_link_state": "NATIVE_LOCATORS_PRIVATE_NO_SYNTHETIC_MAILBOX_ROW"
+    },
+    {
+      "attachment_count": 3,
+      "attachment_count_basis": "VERIFIED_SENT_ATTACHMENT_OCCURRENCES_NOT_INDEPENDENT_CORROBORATIONS",
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-1166",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-1166",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "Transmission is not institutional endorsement of the underlying portfolio allegation. No consolidated illicit AUM, grant payment, digital attacker or common campaign is established. Restricted documents and the detailed allegation remain privately preserved."
+      ],
+      "does_not_prove_es": "El envío no es aval institucional de la alegación patrimonial subyacente. No se acredita patrimonio ilícito consolidado, pago de ayuda, atacante digital ni campaña común. Los documentos restringidos y la alegación detallada permanecen preservados privadamente.",
+      "event_date": "2026-09-25",
+      "event_id": "PD-SP-EVT-1166",
+      "evidence_state": {
+        "delivery": "RECIPIENT_ACKNOWLEDGMENT_NOT_VERIFIED",
+        "destination": "ONLY_AS_STATED_IN_SOURCE",
+        "filing": "NO_NEW_COURT_FILING",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_FINDING_ON_UNDERLYING_ECONOMIC_ALLEGATIONS",
+        "registration": "NOT_A_FORMAL_REGISTRY_FILING",
+        "substantive_examination": "ONLY_PROVIDER_REVIEW_EXPRESSLY_STATED_IN_SUMMARY",
+        "transmission": "SENT_VERIFIED"
+      },
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "PD-PLATFORM-INTEGRITY-20260923-01",
+        "PD-CPA-20260925-07",
+        "PD-CPA-20260925-07-ATT-04",
+        "PD-CPA-20260925-07-ATT-05",
+        "PD-CPA-20260925-07-ATT-06"
+      ],
+      "office": "INCIBE-CERT",
+      "official_reference": "REFERENCE_RETAINED_PRIVATELY",
+      "proof_level": "SENT_EMAIL_VERIFIED",
+      "proves": [
+        "A separate institutional-context supplement was sent in the same incident thread with three attachments. It explains the broader asset-tracing context beyond one fundraising vehicle or subsidy and identifies CNMV, RICPE, Intervención General de Canarias, Fondos Europeos, BOE and SNCA/IGAE sources with their limits."
+      ],
+      "proves_es": "Se remitió un complemento institucional separado en el mismo hilo con tres adjuntos. Explica el contexto de trazabilidad patrimonial más amplio que un vehículo de captación o subvención e identifica fuentes de CNMV, RICPE, Intervención General de Canarias, Fondos Europeos, BOE y SNCA/IGAE con sus límites.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "A separate institutional-context supplement was sent in the same incident thread with three attachments. It explains the broader asset-tracing context beyond one fundraising vehicle or subsidy and identifies CNMV, RICPE, Intervención General de Canarias, Fondos Europeos, BOE and SNCA/IGAE sources with their limits.",
+      "public_summary_es": "Se remitió un complemento institucional separado en el mismo hilo con tres adjuntos. Explica el contexto de trazabilidad patrimonial más amplio que un vehículo de captación o subvención e identifica fuentes de CNMV, RICPE, Intervención General de Canarias, Fondos Europeos, BOE y SNCA/IGAE con sus límites.",
+      "record_type": "OUTBOUND_COMMUNICATION",
+      "source_integrity": {
+        "repository_anchor": "ops/continuity/PLATFORM_INTEGRITY_SOURCE_DELTA_20260925.json",
+        "sha256": "8ec1d741addac91d43bfaa2702f0ddc37d170214c179909e6a8fdc50a2838691",
+        "status": "SOURCE_REVIEWED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "PD-CPA-20260925-07:incibe-context",
+      "source_timezone": "DATE_ONLY_PUBLIC_PROJECTION_EXACT_TIMESTAMP_PRIVATE",
+      "transport_link_state": "NATIVE_LOCATORS_PRIVATE_NO_SYNTHETIC_MAILBOX_ROW"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-1167",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-1167",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "The notice does not identify a third-party cause or establish later restoration. Associated listing notices are not automatically separate attacks."
+      ],
+      "does_not_prove_es": "El aviso no identifica una causa de tercero ni acredita un restablecimiento posterior. Los avisos sobre fichas asociadas no son automáticamente ataques separados.",
+      "event_date": "2022-08-08",
+      "event_id": "PD-SP-EVT-1167",
+      "evidence_state": {
+        "delivery": "INBOUND_FROM_INSTITUTION_VERIFIED",
+        "destination": "ONLY_AS_STATED_IN_SOURCE",
+        "filing": "NO_NEW_COURT_FILING",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_FINDING_ON_UNDERLYING_ECONOMIC_ALLEGATIONS",
+        "registration": "NOT_A_FORMAL_REGISTRY_FILING",
+        "substantive_examination": "ONLY_PROVIDER_REVIEW_EXPRESSLY_STATED_IN_SUMMARY",
+        "transmission": "INBOUND_REPLY_RETAINED"
+      },
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "PD-PLATFORM-INTEGRITY-20260923-01",
+        "PD-CPA-20260925-07"
+      ],
+      "office": "Google Business Profile",
+      "official_reference": "REFERENCE_RETAINED_PRIVATELY",
+      "proof_level": "RETAINED_OFFICIAL_NOTIFICATION",
+      "proves": [
+        "A provider notice records suspension of the SunRockers Cafe - Community Social Lounge profile following a suspicious-activity flag."
+      ],
+      "proves_es": "Un aviso del proveedor documenta la suspensión del perfil SunRockers Cafe - Community Social Lounge tras una señal de actividad sospechosa.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "A provider notice records suspension of the SunRockers Cafe - Community Social Lounge profile following a suspicious-activity flag.",
+      "public_summary_es": "Un aviso del proveedor documenta la suspensión del perfil SunRockers Cafe - Community Social Lounge tras una señal de actividad sospechosa.",
+      "record_type": "OFFICIAL_NOTIFICATION",
+      "source_integrity": {
+        "repository_anchor": "ops/continuity/PLATFORM_INTEGRITY_SOURCE_DELTA_20260925.json",
+        "sha256": "8ec1d741addac91d43bfaa2702f0ddc37d170214c179909e6a8fdc50a2838691",
+        "status": "SOURCE_REVIEWED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "PD-CPA-20260925-07:google-sunrockers",
+      "source_timezone": "DATE_ONLY_PUBLIC_PROJECTION_EXACT_TIMESTAMP_PRIVATE",
+      "transport_link_state": "NATIVE_LOCATORS_PRIVATE_NO_SYNTHETIC_MAILBOX_ROW"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-1168",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-1168",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "The notice does not establish who caused the flag or whether it shares a mechanism with other profiles. Sun Park's reinstatement cannot be applied to this profile without its own record."
+      ],
+      "does_not_prove_es": "El aviso no acredita quién causó la señal ni si comparte mecanismo con otras fichas. El restablecimiento de Sun Park no se extiende a esta ficha sin registro propio.",
+      "event_date": "2022-08-08",
+      "event_id": "PD-SP-EVT-1168",
+      "evidence_state": {
+        "delivery": "INBOUND_FROM_INSTITUTION_VERIFIED",
+        "destination": "ONLY_AS_STATED_IN_SOURCE",
+        "filing": "NO_NEW_COURT_FILING",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_FINDING_ON_UNDERLYING_ECONOMIC_ALLEGATIONS",
+        "registration": "NOT_A_FORMAL_REGISTRY_FILING",
+        "substantive_examination": "ONLY_PROVIDER_REVIEW_EXPRESSLY_STATED_IN_SUMMARY",
+        "transmission": "INBOUND_REPLY_RETAINED"
+      },
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "PD-PLATFORM-INTEGRITY-20260923-01",
+        "PD-CPA-20260925-07"
+      ],
+      "office": "Google Business Profile",
+      "official_reference": "REFERENCE_RETAINED_PRIVATELY",
+      "proof_level": "RETAINED_OFFICIAL_NOTIFICATION",
+      "proves": [
+        "A provider notice records suspension of the U3A Lanzarote profile following a suspicious-activity flag."
+      ],
+      "proves_es": "Un aviso del proveedor documenta la suspensión del perfil U3A Lanzarote tras una señal de actividad sospechosa.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "A provider notice records suspension of the U3A Lanzarote profile following a suspicious-activity flag.",
+      "public_summary_es": "Un aviso del proveedor documenta la suspensión del perfil U3A Lanzarote tras una señal de actividad sospechosa.",
+      "record_type": "OFFICIAL_NOTIFICATION",
+      "source_integrity": {
+        "repository_anchor": "ops/continuity/PLATFORM_INTEGRITY_SOURCE_DELTA_20260925.json",
+        "sha256": "8ec1d741addac91d43bfaa2702f0ddc37d170214c179909e6a8fdc50a2838691",
+        "status": "SOURCE_REVIEWED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "PD-CPA-20260925-07:google-u3a",
+      "source_timezone": "DATE_ONLY_PUBLIC_PROJECTION_EXACT_TIMESTAMP_PRIVATE",
+      "transport_link_state": "NATIVE_LOCATORS_PRIVATE_NO_SYNTHETIC_MAILBOX_ROW"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-1169",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-1169",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "This is a separately identified notification, not independent corroboration of a common attack. Its subsequent outcome remains unverified in this selected record."
+      ],
+      "does_not_prove_es": "Es una notificación individualizada, no corroboración independiente de un ataque común. Su resultado posterior no está verificado en este registro seleccionado.",
+      "event_date": "2022-08-08",
+      "event_id": "PD-SP-EVT-1169",
+      "evidence_state": {
+        "delivery": "INBOUND_FROM_INSTITUTION_VERIFIED",
+        "destination": "ONLY_AS_STATED_IN_SOURCE",
+        "filing": "NO_NEW_COURT_FILING",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_FINDING_ON_UNDERLYING_ECONOMIC_ALLEGATIONS",
+        "registration": "NOT_A_FORMAL_REGISTRY_FILING",
+        "substantive_examination": "ONLY_PROVIDER_REVIEW_EXPRESSLY_STATED_IN_SUMMARY",
+        "transmission": "INBOUND_REPLY_RETAINED"
+      },
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "PD-PLATFORM-INTEGRITY-20260923-01",
+        "PD-CPA-20260925-07"
+      ],
+      "office": "Google Business Profile",
+      "official_reference": "REFERENCE_RETAINED_PRIVATELY",
+      "proof_level": "RETAINED_OFFICIAL_NOTIFICATION",
+      "proves": [
+        "A provider notice records suspension of The Women’s Institute - Lanzarote profile following a suspicious-activity flag."
+      ],
+      "proves_es": "Un aviso del proveedor documenta la suspensión del perfil The Women’s Institute - Lanzarote tras una señal de actividad sospechosa.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "A provider notice records suspension of The Women’s Institute - Lanzarote profile following a suspicious-activity flag.",
+      "public_summary_es": "Un aviso del proveedor documenta la suspensión del perfil The Women’s Institute - Lanzarote tras una señal de actividad sospechosa.",
+      "record_type": "OFFICIAL_NOTIFICATION",
+      "source_integrity": {
+        "repository_anchor": "ops/continuity/PLATFORM_INTEGRITY_SOURCE_DELTA_20260925.json",
+        "sha256": "8ec1d741addac91d43bfaa2702f0ddc37d170214c179909e6a8fdc50a2838691",
+        "status": "SOURCE_REVIEWED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "PD-CPA-20260925-07:google-wi",
+      "source_timezone": "DATE_ONLY_PUBLIC_PROJECTION_EXACT_TIMESTAMP_PRIVATE",
+      "transport_link_state": "NATIVE_LOCATORS_PRIVATE_NO_SYNTHETIC_MAILBOX_ROW"
+    },
+    {
+      "attribution_state": "INSTITUTIONAL_NOTICE_NO_PERSONAL_SIGNATORY_ASSERTED",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-1170",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-1170",
+      "channel": "EMAIL",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "INBOUND_FROM_INSTITUTION",
+      "does_not_prove": [
+        "This is the provider's stated classification, not an independently established violation. Current account status, an outside actor and linkage to other platforms are not verified."
+      ],
+      "does_not_prove_es": "Es la clasificación declarada por el proveedor, no una infracción acreditada independientemente. No se verifican el estado actual de la cuenta, un actor externo ni vínculos con otras plataformas.",
+      "event_date": "2024-12-19",
+      "event_id": "PD-SP-EVT-1170",
+      "evidence_state": {
+        "delivery": "INBOUND_FROM_INSTITUTION_VERIFIED",
+        "destination": "ONLY_AS_STATED_IN_SOURCE",
+        "filing": "NO_NEW_COURT_FILING",
+        "internal_association": "NOT_ESTABLISHED_BY_THIS_SOURCE",
+        "merits": "NO_FINDING_ON_UNDERLYING_ECONOMIC_ALLEGATIONS",
+        "registration": "NOT_A_FORMAL_REGISTRY_FILING",
+        "substantive_examination": "ONLY_PROVIDER_REVIEW_EXPRESSLY_STATED_IN_SUMMARY",
+        "transmission": "INBOUND_REPLY_RETAINED"
+      },
+      "layer": "OFFICIAL_ACT_OR_CORRESPONDENCE",
+      "linked_transport_event_ids": [],
+      "matter_references": [
+        "PD-PLATFORM-INTEGRITY-20260923-01",
+        "PD-CPA-20260925-07"
+      ],
+      "office": "X",
+      "official_reference": "REFERENCE_RETAINED_PRIVATELY",
+      "proof_level": "RETAINED_OFFICIAL_NOTIFICATION",
+      "proves": [
+        "X notified an automatic account suspension, invoking its rules against inauthentic behaviours."
+      ],
+      "proves_es": "X notificó una suspensión automática de cuenta, invocando sus reglas contra comportamientos no auténticos.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "X notified an automatic account suspension, invoking its rules against inauthentic behaviours.",
+      "public_summary_es": "X notificó una suspensión automática de cuenta, invocando sus reglas contra comportamientos no auténticos.",
+      "record_type": "OFFICIAL_NOTIFICATION",
+      "source_integrity": {
+        "repository_anchor": "ops/continuity/PLATFORM_INTEGRITY_SOURCE_DELTA_20260925.json",
+        "sha256": "8ec1d741addac91d43bfaa2702f0ddc37d170214c179909e6a8fdc50a2838691",
+        "status": "SOURCE_REVIEWED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "PD-CPA-20260925-07:x-notice",
+      "source_timezone": "DATE_ONLY_PUBLIC_PROJECTION_EXACT_TIMESTAMP_PRIVATE",
+      "transport_link_state": "NATIVE_LOCATORS_PRIVATE_NO_SYNTHETIC_MAILBOX_ROW"
     }
   ],
   "id_allocation": {
