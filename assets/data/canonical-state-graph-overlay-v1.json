@@ -323,14 +323,15 @@
           "evidence_state": "PRIMARY_DOCUMENT"
         }
       ],
-      "organisation_edges": [
-        {
-          "organisation_id": "PD-SP-O-0018",
-          "relation": "PUBLICATION_DESTINATION"
-        }
-      ],
+      "organisation_edges": [],
       "open_gap_ids": [
         "GAP-C36-PUBLICITY-RETURNS"
+      ],
+      "institution_edges": [
+        {
+          "institution_id": "PD-SP-I-0018",
+          "relation": "PUBLICATION_DESTINATION"
+        }
       ]
     },
     {
