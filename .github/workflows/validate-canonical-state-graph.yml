@@ -5,6 +5,8 @@ on:
     paths:
       - 'governance/CANONICAL_STATE_GRAPH_TRUTH_MACHINE_26SEP2026.md'
       - 'assets/data/canonical-state-graph-overlay-v1.json'
+      - 'assets/data/sun-park-historical-state-graph-1987-2011-v1.json'
+      - 'archive/SUN_PARK_ORIGIN_MULTIMATRIX_AWESWELL_PHASE_FREEZE_26SEP2026.md'
       - 'assets/data/matter-identity-registry-v1.people.json'
       - 'assets/data/matter-identity-registry-v1.organisations.json'
       - 'assets/data/matter-identity-registry-v1.institutions.json'
