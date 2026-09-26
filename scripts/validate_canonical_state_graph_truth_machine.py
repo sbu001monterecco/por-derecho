@@ -10,6 +10,7 @@ import json, pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 CONTROL = ROOT / "assets/data/canonical-state-graph-overlay-v1.json"
+HISTORY = ROOT / "assets/data/sun-park-historical-state-graph-1987-2011-v1.json"
 
 PATHS = {
     "people": ROOT / "assets/data/matter-identity-registry-v1.people.json",
@@ -40,15 +41,33 @@ def fail(msg, failures):
 def main():
     failures=[]
     ctl=load(CONTROL)
+    hist=load(HISTORY)
     if ctl.get("control_id")!="PD-CANONICAL-STATE-GRAPH-20260926-01":
         fail("unexpected control_id",failures)
     if ctl.get("completeness_claim_permitted") is not False:
         fail("completeness must remain false until certified denominator/orphan closure",failures)
+    if hist.get("control_id")!="PD-SP-HISTORY-STATE-GRAPH-1987-2011-20260926":
+        fail("historical prequel control_id missing or changed",failures)
+    prequel=ctl.get("historical_prequel",{})
+    if prequel.get("path")!="assets/data/sun-park-historical-state-graph-1987-2011-v1.json":
+        fail("canonical state graph must retain historical prequel pointer",failures)
 
     people={r["id"] for r in records(load(PATHS["people"]))}
     orgs={r["id"] for r in records(load(PATHS["organisations"]))}
     inst={r["id"] for r in records(load(PATHS["institutions"]))}
     procs={r["id"] for r in records(load(PATHS["proceedings"]))}
+
+    people_payload=load(PATHS["people"])
+    org_payload=load(PATHS["organisations"])
+    people_by_id={r["id"]:r for r in records(people_payload)}
+    org_by_id={r["id"]:r for r in records(org_payload)}
+    if "PD-SP-O-0085" not in orgs or "PD-SP-O-0099" not in orgs:
+        fail("JSP and Multimatrix canonical organisation nodes must be promoted to core registry",failures)
+    if "PD-SP-P-0166" not in people:
+        fail("José Sánchez Rodríguez canonical person node missing from core registry",failures)
+    aw=org_by_id.get("PD-SP-O-0001",{})
+    if "MONTERECCO SUN PARK LIMITED" not in aw.get("former_names",[]):
+        fail("AWESWELL former registered name must remain explicit without a duplicate legal-person node",failures)
     complete={r.get("canonical_id") for r in records(load(PATHS["complete"]))}
     court={r.get("id") for r in records(load(PATHS["court_file"]))}
     continuity={r.get("id") for r in records(load(PATHS["decision_continuity"]))}
@@ -122,12 +141,78 @@ def main():
     if not required_gaps.issubset(gap_set):
         fail("critical recursive gaps were dropped",failures)
 
+
+    # Historical prequel / phase-freeze integrity.
+    structures={x.get("id") for x in hist.get("structures",[])}
+    objectives={x.get("id") for x in hist.get("objectives",[])}
+    sources={x.get("id") for x in hist.get("source_controls",[])}
+    if len(structures)!=len(hist.get("structures",[])) or None in structures:
+        fail("historical structure IDs must be unique and non-empty",failures)
+    if len(objectives)!=len(hist.get("objectives",[])) or None in objectives:
+        fail("historical objective IDs must be unique and non-empty",failures)
+    if len(sources)!=len(hist.get("source_controls",[])) or None in sources:
+        fail("historical source IDs must be unique and non-empty",failures)
+
+    hist_event_ids=[]
+    for phase in hist.get("phase_freezes",[]):
+        for oid in phase.get("organisation_ids",[]):
+            if oid not in orgs:
+                fail(f"{phase.get('phase_id')}: unresolved organisation {oid}",failures)
+        for sid in phase.get("structure_ids",[]):
+            if sid not in structures:
+                fail(f"{phase.get('phase_id')}: unresolved structure {sid}",failures)
+        obj=phase.get("objective_id")
+        if obj and obj not in objectives:
+            fail(f"{phase.get('phase_id')}: unresolved objective {obj}",failures)
+        for src in phase.get("source_ids",[]):
+            if src not in sources:
+                fail(f"{phase.get('phase_id')}: unresolved source {src}",failures)
+        for ev in phase.get("events",[]):
+            eid=ev.get("event_id")
+            hist_event_ids.append(eid)
+            for oid in ev.get("organisation_ids",[]):
+                if oid not in orgs:
+                    fail(f"{eid}: unresolved organisation {oid}",failures)
+            for pid in ev.get("person_ids",[]):
+                if pid not in people:
+                    fail(f"{eid}: unresolved person {pid}",failures)
+            for sid in ev.get("structure_ids",[]):
+                if sid not in structures:
+                    fail(f"{eid}: unresolved structure {sid}",failures)
+            for src in ev.get("source_ids",[]):
+                if src not in sources:
+                    fail(f"{eid}: unresolved source {src}",failures)
+    if len(hist_event_ids)!=len(set(hist_event_ids)) or any(not x for x in hist_event_ids):
+        fail("historical event IDs must be unique and non-empty",failures)
+
+    required_hist={
+        "PD-SP-EVT-SP-1988-1991-CONSTRUCTION-OPENING",
+        "PD-SP-EVT-SP-2008-06-AGREEMENT-MARKET-OBJECT",
+        "PD-SP-EVT-SP-2008-06-18-COMPLETION-PERIMETER",
+        "PD-SP-EVT-SP-2008-07-15-POST-COMPLETION-SNAPSHOT",
+        "PD-SP-EVT-SP-2011-12-01-UK-HOLDCO-SUCCESSION",
+        "PD-SP-EVT-SP-2012-01-03-SPANISH-PUBLICITY",
+    }
+    if not required_hist.issubset(set(hist_event_ids)):
+        fail("historical prequel lost a required phase-transition event",failures)
+
+    market=next((e for p in hist.get("phase_freezes",[]) for e in p.get("events",[]) if e.get("event_id")=="PD-SP-EVT-SP-2008-06-AGREEMENT-MARKET-OBJECT"),{})
+    completed=next((e for p in hist.get("phase_freezes",[]) for e in p.get("events",[]) if e.get("event_id")=="PD-SP-EVT-SP-2008-06-18-COMPLETION-PERIMETER"),{})
+    if "220" not in str(market.get("transaction_object_as_reported","")):
+        fail("2008 whole-hotel/220-unit market object must remain explicit",failures)
+    if "171" not in str(completed.get("completed_perimeter_reported","")) or "29" not in str(completed.get("completed_perimeter_reported","")):
+        fail("2008 171+29 buyer-side completed perimeter must remain explicit",failures)
+    if not any(g.get("id")=="GAP-SP-SAN-HOTELS-LABEL" for g in hist.get("open_gaps",[])):
+        fail("unverified San Hotels label must remain an explicit source gap",failures)
+    if prequel.get("handoff_event") not in set(hist_event_ids):
+        fail("historical prequel handoff event does not resolve",failures)
+
     if failures:
         print("CANONICAL STATE GRAPH VALIDATION FAILED")
         for item in failures:
             print(" -",item)
         return 1
-    print(f"CANONICAL STATE GRAPH OK: {len(event_ids)} critical events; {len(gap_ids)} explicit gaps; completeness not certified")
+    print(f"CANONICAL STATE GRAPH OK: {len(hist_event_ids)} historical events + {len(event_ids)} Concurso critical events; {len(hist.get('open_gaps',[])) + len(gap_ids)} explicit gaps; completeness not certified")
     return 0
 
 if __name__=="__main__":
