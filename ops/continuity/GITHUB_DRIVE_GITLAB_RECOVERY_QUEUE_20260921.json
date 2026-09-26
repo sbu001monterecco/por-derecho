@@ -14,6 +14,7 @@
     "observed_date": "2026-09-25",
     "policy": "NO_CAPACITY_PROBE_PIPELINES__NO_GRATUITOUS_CI_WHILE_BLOCKED"
   },
+  "infrastructure_snapshot_qualification": "The 25-Sep infrastructure/status fields are retained as dated history, not a fresh quota diagnosis. For the scoped judicial recovery use latest_evidentiary_repair_20260926 on the existing PD-GL-REC-HOMEPAGE-JUDICIAL-20260926-01 item. Other programmes were not rescanned or reactivated by this update.",
   "external_action_authority": false,
   "layers": {
     "github_public_safe_canonical": {
@@ -217,7 +218,48 @@
       "gitlab_source_recovery_mr": 640,
       "gitlab_source_recovery_state": "MR_OPEN_EXACT_HEAD_CI_RUNNING__NO_MERGE_CLAIM",
       "homepage_baseline_state": "CURRENT_GITHUB_GITLAB_HOME_BYTES_EXACT_FOR_EN_ES_BASELINE__PR1893_EXTRA_REFINEMENT_HELD_SEPARATELY",
-      "continuity_audit_date": "2026-09-26"
+      "continuity_audit_date": "2026-09-26",
+      "latest_evidentiary_repair_20260926": {
+        "control_id": "PD-RECURSIVE-GREEN-AUDIT-20260926-01",
+        "account_root_automation_id": "6ab6e24427988191a97a1660c41dc180",
+        "provider_conversation_id": null,
+        "thread_independent": true,
+        "automation_pointer_basis": "CURRENT_OWNER_DESIGNATION_NOT_A_NEW_SCHEDULER_STATUS_CERTIFICATION",
+        "supersession_rule": "This scoped checkpoint supersedes older judicial recovery states above, not unrelated replay items or historical evidence. Reconstruct from durable anchors, never from a required chat transcript.",
+        "github_main_observed": "1dd7da134dd796185d154a6dd3177e4d5de16606",
+        "gitlab_main_observed": "b21fd3b3d8729570bb693d0f7bf728c83236ed5d",
+        "github_receipt_predecessor_pr": 1929,
+        "github_source_successor_branch": "continuity/judicial-evidentiary-repair-20260926",
+        "github_register_commit": "d252b5838878766c5cf8f652cb9df279e70b8b53",
+        "github_register_blob": "5c537769afbf42d99b34163996fccf4919c87ea0",
+        "github_state": "SOURCE_AND_RECEIPT_SUCCESSOR_PREPARED_NOT_MERGED",
+        "gitlab_ci_lane": 637,
+        "gitlab_ci_head": "00dc56ecf8781320a42edfe64cb5801777b897a7",
+        "gitlab_ci_pipeline": 2885735235,
+        "gitlab_ci_state": "RUNNER_EXECUTED_REQUIRED_SCRIPT_FAILURES_NOT_GREEN",
+        "gitlab_ci_failed_job_references": [16756516572, 16756516569, 16756516571],
+        "gitlab_source_lane": 640,
+        "gitlab_source_predecessor": "47c5ac6a8409de66fd8b1dd9b7c076c53f07220b",
+        "gitlab_source_result": "968d01ea2ef690ba63462f320471c2b8e22e833b",
+        "gitlab_source_suggestion_id": 23051319,
+        "gitlab_source_push_pipeline": 2885765155,
+        "gitlab_source_state": "COMMITTED_AND_FILE_READ_BACK_NOT_MERGED_REQUIRE_CURRENT_MAIN_AND_EXACT_HEAD_CHECKS",
+        "gitlab_control_issue": 31,
+        "gitlab_control_note": 3910684241,
+        "github_control_tower_note": 5849530135,
+        "restored_row_dates": ["2018-06-26", "2019-10-24", "2021-02-24", "2021-05-12", "2021-07-08", "2023-07-25", "2023-09-28"],
+        "scoped_table_rows": 12,
+        "complete_docket_claim": false,
+        "changed_source_path": "archive/ALBERTO_LOPEZ_VILLARRUBIA_SIGNED_ACTS_AND_KNOWLEDGE_REGISTER_17AUG2026.md",
+        "excluded_paths_and_actions": ["homepage refinement", "runtime and images", "CI configuration changes", "private originals and locators", "email or filing", "account or runner changes", "pipeline capacity probes"],
+        "private_custody_state": "NO_NATIVE_BYTES_CHANGED_OR_REPUBLISHED_OR_FRESHLY_RECERTIFIED_NEW_RECEIPT_SYNC_PENDING",
+        "hash_genealogy_state": "2012_CURRENT_COPY_VS_HISTORICAL_DIGEST_RELATIONSHIP_UNRESOLVED_NOT_A_CRYPTOGRAPHIC_COLLISION",
+        "parallel_work": ["!637 historical-source composition", "!637 test-isolation diagnosis", "!637 exact remote-artifact provenance", "!640 source completeness and current-main reconciliation", "existing private custody and downstream-use correction queue"],
+        "integration_rule": "Parallel diagnosis/preparation; one integrator; preserve newer work and all source qualifications. No skipped/manual/old-head result counts as a pass. No weakening or bypass of required checks.",
+        "evidentiary_rule": "Preserve the connected criminal/prosecutorial allegation and actor-specific causal inquiry. Distinguish primary-source integrity, derivative completeness and CI assurance. Retain supporting, neutral and contrary acts. Copies from one origin are not independent corroboration. No incident-to-guilt or defect-to-falsity inference.",
+        "open_holds": ["!637 required exact-head checks", "!640 then-current-main integration and required exact-head checks", "2012 binary provenance genealogy", "affected downstream-use reconciliation", "independent private receipt readback"],
+        "overall_state": "ORANGE_NOT_COMPLETE"
+      }
     }
   ],
   "restoration_observed": {
