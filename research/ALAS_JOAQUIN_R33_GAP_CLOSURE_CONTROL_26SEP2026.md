@@ -163,3 +163,18 @@ Page 5 of the AC's 14-Sep-2026 RPL 3304/2025 opposition expressly generalises fr
 - Human control: `governance/FORMER_COUNSEL_INCIDENT_REGISTER_26SEP2026.md`.
 - Luis-specific incident: `PD-CIR-LUISBARBER-2019-01`.
 - Kepler-Karst is treated as verified present professional-platform continuity for relevant former ALAS-team professionals, not as proven juridical/corporate successor to ALAS Legal Advisors or owner/custodian of historic ALAS receivables, liabilities or files.
+
+
+## Source-controlled non-filing / handover matrix — 26 September 2026
+
+| Professional | Jan-2019 source position | Filing/authority question | May-2020 / handover evidence | Present status |
+|---|---|---|---|---|
+| Armando Betancor Álamo | Contemporaneous 1-Jun-2020 client email attributes preparation to Armando; ALAS invoice/work-product chain must be reconciled | Was he author/reviewer; what authority or ability did he have to cause filing, secure co-counsel signature, obtain a client decision, or hand over? | Client-side 24/25-May summary describes ALAS drafting/signature allocation and later distancing; verify against Armando's files | OPEN — role-specific reconciliation required |
+| Joaquín Ruiz de Infante Abella | Documented member/collaborator in the matter and copied/connected in Jan-2019 team circulation according to recovered corpus; later court-facing signatory on connected work | What did he receive/review/approve, and what filing authority/opportunity existed for this document or the removal objective? | 2020 withdrawal is authentic adverse evidence; R33 uses it in 2026 | OPEN — no collective attribution |
+| Davinia Sánchez de la Cruz | Connected in Jan-2019 professional-team circulation | Draft/review/strategy role and handover responsibility to be reconciled | ALAS team continuity | OPEN |
+| Luis A. Barber Marrero | Connected in Jan-2019 professional-team circulation | Personal work/knowledge and any filing/handover role to be reconciled | Later professional-platform continuity does not prove juridical succession | OPEN |
+| Juan Tomás Parrilla Suárez | Named as draft letrado/signatory; 1-Jun-2020 client email says intended presenter and says he declined this and his own version | Obtain his own explanation and source file; determine instructions, advice, authority, decision and reasons | May-2020 client handover summary says he declined separation/removal route; treat as attributed client account until reconciled | OPEN / contrary explanation required |
+| Pilar García Coello | Named procuradora/signature line in draft | Did she receive final filing instruction, signed version or attempted presentation? | Handover/procurator material must be checked | OPEN |
+| Daniel Jiménez / SLJ successor team | Not a Jan-2019 drafter on current source | Successor responsibility starts only with verified transfer/instruction | 25-May-2020 email positively treats removal petition as active and proposes professor opinion | WORKSTREAM VERIFIED; execution/handover outcome OPEN |
+
+**Causation control:** non-filing is a fact-state, not automatically negligence, misconduct or damage. The analysis must separately establish available procedural route, instruction, authority, reason for non-filing, professional standard, counterfactual outcome and loss.
