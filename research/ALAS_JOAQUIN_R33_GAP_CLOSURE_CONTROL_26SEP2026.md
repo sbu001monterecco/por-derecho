@@ -141,15 +141,13 @@ R33 linkage:
 Page 5 of the AC's 14-Sep-2026 RPL 3304/2025 opposition expressly generalises from successive lawyer changes, states it is reasonable to think professionals withdrew after finding lack of objective/legal consistency, quotes Joaquín's 21-Sep-2020 resignation/apology, and says repeated substitutions "presumiblemente" reflect unwillingness to continue sustaining Gil's account. This makes ALAS/Joaquín's independent explanation of their 2020 role, pressure, withdrawal, fees and any third-party economic contact directly material to a live 2026 adversarial filing.
 
 
-## Luis Barber contact / incident-register linkage — 26 September 2026
+## Luis Barber contact / canonical incident linkage — 26 September 2026
 
-- Canonical person: Luis A. Barber Marrero (PD-SP-P-0074).
-- Historic professional mailbox preserved from the matter record: `luis@barberasociados.com`.
-- Current professional mailbox independently verified from Kepler-Karst public professional pages: `lbarber@keplerkarst.com`.
-- Future-contact rule: when external contact is separately authorised, use both professional addresses; treat the Barber & Asociados address as historic and do not assume it remains active.
-- No email is authorised, drafted or sent by this control.
-- Canonical internal incident register: `assets/data/professional-interference-incident-register-v1.json`.
-- Human control: `research/PROFESSIONAL_INTERFERENCE_INCIDENT_REGISTER_26SEP2026.md`.
-- Luis-specific incident reference: `PD-PII-0010`.
-- Kepler-Karst is treated as present professional-platform continuity for Luis Barber / Davinia Sánchez / Armando Betancor, not automatically as ALAS Legal Advisors' juridical/corporate successor or owner of historic ALAS receivables/files.
-
+- Canonical person: Luis A. Barber Marrero (`PD-SP-P-0074`).
+- Historical Barber & Asociados professional route and current professional routes are verified and preserved in the private Google Drive contact control; exact mailbox strings are not duplicated in public-safe Git.
+- Future-contact rule: when external contact is separately authorised, use the current verified professional route and the historical professional route; re-verify current deliverability at transmission. No email is authorised or sent by this control.
+- Parent incident register: `PD-SP-COUNSEL-INCIDENT-REGISTRY-001`.
+- Machine register: `assets/data/former-counsel-incident-register-v1.json`.
+- Human control: `governance/FORMER_COUNSEL_INCIDENT_REGISTER_26SEP2026.md`.
+- Luis-specific incident: `PD-CIR-LUISBARBER-2019-01`.
+- Kepler-Karst is treated as verified present professional-platform continuity for relevant former ALAS-team professionals, not as proven juridical/corporate successor to ALAS Legal Advisors or owner/custodian of historic ALAS receivables, liabilities or files.
