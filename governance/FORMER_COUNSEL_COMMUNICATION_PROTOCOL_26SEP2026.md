@@ -93,3 +93,49 @@ The sender should identify, proportionately, both:
 - the continuing alertador/whistleblower capacity before relevant Spanish, EU, German and UK authorities.
 
 Use the applicable-law formulation in that control. Do not convert cross-border whistleblower status into a blanket legal conclusion, and do not use it to revive a former mandate or request legal advice.
+
+
+## Mandatory three-node contextual linking — ALAS/Joaquín ↔ JTP ↔ R33
+
+For Joaquín Ruiz de Infante and former-ALAS/current-professional-platform communications, do not provide the ALAS/Joaquín page as an isolated link. Once publication/readback is verified, provide together:
+
+1. **ALAS/Joaquín work-product page** — professional instruction, work product, billing, filing/non-filing, Article 215.2 exposure, withdrawal, right of reply.
+2. **JTP payment / counsel-independence page** — Juan Tomás Parrilla payment, “peace”/payment-assurance sequence, protective-instruction reconciliation and source-of-funds questions.
+3. **R33 flagship page** — the September-2026 AC opposition and page-5 use/generalisation of Joaquín's 2020 withdrawal.
+
+The three pages must reciprocally link to one another and be described as a **context triangle**, not as proof that the same conduct, motive or responsibility applies to every former lawyer.
+
+Source distinction:
+- The AC's 21-Jul-2021 report directly records the EUR 26,750 July-2020 payment to Juan Tomás Parrilla for “Honorarios abogado concursada”.
+- Daniel Jiménez's contemporaneous communication records his account of the AC call concerning “peace”, possible withdrawal and payment of Parrilla/procuradora invoices with insolvency funds.
+- Gil/AWESWELL characterise the combined sequence as especially strong evidence of economic/professional interference.
+- A bank-complete CAM EUR 400,000 → estate → JTP EUR 26,750 trace, exact payment authority/invoice and any illicit quid pro quo remain evidential questions and must not be stated as closed facts.
+- Protective instructions and alleged non-performance must be reconciled instruction-by-instruction and professional-by-professional; non-performance is not automatically negligence.
+
+Outbound rule: include all three public links only after each target is confirmed live on both required mirrors under PD-FCCOM-MIRROR-CYBER-20260926-01. If one target is not live/readback-verified, do not imply full public parity.
+
+
+## Mandatory R33 quotation block — recipient-specific
+
+Every separate reconciliation email to (A) Joaquín Ruiz de Infante and (B) Armando Betancor / former-ALAS/current professional platform must make the September-2026 R33 use unmistakable near the beginning of the message.
+
+### A. Joaquín Ruiz de Infante — direct quotation
+State expressly that R33 page 5 directly reproduces/uses Joaquín's 21-Sep-2020 resignation and preserves the quoted formulation:
+
+> «…reitera las disculpas… al Administrador Concursal…»
+
+Then explain that R33 uses that authentic resignation/apology as support for a wider proposition about repeated changes of counsel, using inferential language including **«presumiblemente»** and the proposition that successive professionals withdrew after finding a lack of objective/legal consistency in Gil's account.
+
+Mandatory clarification: the direct quotation is Joaquín's; the broader causal generalisation is the AC's 2026 adversarial inference. Do not merge the two.
+
+### B. Armando Betancor / former ALAS — indirect reach through generalisation
+Do **not** state that R33 directly quotes Armando's separate resignation unless a source later proves that exact proposition.
+
+Instead state expressly:
+- R33 directly quotes Joaquín's 21-Sep-2020 resignation, including «…reitera las disculpas… al Administrador Concursal…»;
+- the AC then uses that quoted Joaquín material to support a wider inference concerning the **successive professionals** who acted for Gil/AWESWELL, including inferential language such as «presumiblemente»;
+- Armando/ALAS are therefore materially affected by the generalisation because their separate withdrawal occurred the same day and their documented professional work is part of the chronology being generalised about, even though the quoted words are not attributed to Armando.
+
+Both emails must invite the recipient to state whether R33's use/generalisation accurately reflects their own individual reasons and, if not, to provide correction, context and source documents.
+
+Do not paraphrase the R33 quotation as though it were a judicial finding. It is the AC's litigation position in RPL 3304/2025.
