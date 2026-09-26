@@ -29,7 +29,7 @@ def load(path):
 def records(payload):
     if isinstance(payload, list):
         return payload
-    for key in ("records","items"):
+    for key in ("records","items","rows"):
         if isinstance(payload.get(key), list):
             return payload[key]
     return []
