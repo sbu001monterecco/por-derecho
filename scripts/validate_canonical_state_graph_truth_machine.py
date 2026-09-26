@@ -20,6 +20,7 @@ PATHS = {
     "court_file": ROOT / "assets/data/concurso36-court-file-v1.json",
     "decision_continuity": ROOT / "assets/data/concurso36-decision-continuity-2014-2026-v1.json",
     "binary_register": ROOT / "archive/CONCURSO_36_2012_CANONICAL_COURT_BINARY_REGISTER_17AUG2026.md",
+    "judicial_laj_register": ROOT / "archive/CONCURSO_36_2012_JUDICIAL_LAJ_ACTS_MASTER_REGISTER_17AUG2026.md",
 }
 
 def load(path):
@@ -51,7 +52,8 @@ def main():
     complete={r.get("canonical_id") for r in records(load(PATHS["complete"]))}
     court={r.get("id") for r in records(load(PATHS["court_file"]))}
     continuity={r.get("id") for r in records(load(PATHS["decision_continuity"]))}
-    binary_text=PATHS["binary_register"].read_text(encoding="utf-8")
+    binary_text=(PATHS["binary_register"].read_text(encoding="utf-8") + "\n" +
+                 PATHS["judicial_laj_register"].read_text(encoding="utf-8"))
 
     gap_ids=[g.get("id") for g in ctl.get("open_gaps",[])]
     if len(gap_ids)!=len(set(gap_ids)) or any(not x for x in gap_ids):
