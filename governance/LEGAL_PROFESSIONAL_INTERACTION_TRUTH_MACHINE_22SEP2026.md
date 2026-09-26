@@ -71,13 +71,12 @@ Where an interaction envelope concerns an act, omission, payment, access decisio
 The professional-isolation theory is specifically `AC-CLM-011`. Do not use that family as a catch-all for unrelated AC allegations.
 
 
+## Canonical counsel-incident binding — 26 September 2026
 
-## Canonical professional-incident binding — 26 September 2026
+The Truth Machine now binds every material counsel-continuity event to `PD-SP-COUNSEL-INCIDENT-REGISTRY-001` and a distinct immutable `PD-CIR-*` incident reference. A professional × client × matter envelope can contain multiple incidents; firm-level and person-level incidents may coexist. Do not merge incidents solely because the same professional, law firm, AC, adverse actor, court or proceeding recurs.
 
-The Truth Machine now binds each material counsel-continuity episode to the canonical Professional Independence / Counsel-Continuity Incident Register, control `PD-PII-20260926-01`, using distinct immutable `PD-PII-####` references. A professional × client × matter envelope can contain multiple incidents; firm-level and person-level incidents may coexist. Do not merge incidents solely because the same professional, law firm, AC, adverse actor, court or proceeding recurs.
+Create or update a `PD-CIR-*` record whenever the source set shows a material payment/proposed payment, fee recognition/assignment, mandate displacement, Bar/disciplinary route, personal professional exposure linked to a pleading, AC/adverse-party contact, filing condition/refusal, handover/file-access or confidentiality event, or a withdrawal for which interference is alleged. Every incident must preserve contrary evidence, lawful alternatives and negative searches.
 
-Create or update a `PD-PII-####` record whenever the source set shows a material payment/proposed payment, fee recognition/assignment, mandate displacement, Bar/disciplinary route, personal professional exposure linked to a pleading, AC/adverse-party contact, filing condition/refusal, handover/file-access or confidentiality event, or a withdrawal for which interference is alleged. Every incident must preserve verified fact, inference, client allegation, contrary evidence, lawful alternatives, open proof and negative searches.
+Current seed register: `assets/data/former-counsel-incident-register-v1.json`. Human control: `governance/FORMER_COUNSEL_INCIDENT_REGISTER_26SEP2026.md`.
 
-Canonical machine register: `assets/data/professional-interference-incident-register-v1.json`. Human control: `research/PROFESSIONAL_INTERFERENCE_INCIDENT_REGISTER_26SEP2026.md`.
-
-Luis A. Barber Marrero is bound to `PD-PII-0010`: substantive ALAS collaboration and ALAS client billing involving Barber are verified; internal collaborator economics and any later transfer of files/receivables remain open. Current professional-platform continuity is not juridical succession. No external contact is authorised by this binding.
+Luis A. Barber Marrero is now bound to `PD-CIR-LUISBARBER-2019-01`: the source set verifies substantive ALAS collaboration and ALAS client billing involving Barber, while internal collaborator economics and any later file/receivable transfer remain open. Current professional-platform continuity is not juridical succession. No external contact is authorised by this binding.
