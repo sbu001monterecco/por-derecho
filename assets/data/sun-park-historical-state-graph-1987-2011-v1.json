@@ -1,0 +1,426 @@
+{
+  "schema": "por-derecho.sun-park-historical-state-graph.1987-2011.v1",
+  "control_id": "PD-SP-HISTORY-STATE-GRAPH-1987-2011-20260926",
+  "control_date": "2026-09-26",
+  "status": "SOURCE_QUALIFIED_PHASE_FREEZE__NOT_COMPLETE_TITLE_DENOMINATOR",
+  "purpose": "Freeze and reconstruct the pre-Aweswell hotel phases so later conduct can be tested against the state of ownership, operation, governance and transaction rights that existed immediately before each transition.",
+  "structures": [
+    {
+      "id": "PD-SP-S-0012",
+      "type": "STRUCTURE",
+      "name": "Sun Group",
+      "identity_resolution": "CARET_PENDING",
+      "source_status": "SECONDARY_HISTORY_PLUS_PROJECT_CORPUS",
+      "boundary": "Historical commercial/group label associated by later sector reporting with the Sun Park/Sun Royal/Sun Beach/Sun Island/Sun Tropical cluster. It is not itself a legal person or proof of title/control of every hotel."
+    },
+    {
+      "id": "PD-SP-S-0013",
+      "type": "STRUCTURE",
+      "name": "Sun Park hotel / hotel economic unit",
+      "identity_resolution": "CONTROLLED_ECONOMIC_OBJECT",
+      "boundary": "Physical/operating hotel object distinct from any one legal owner, finca, operating vehicle or owners' community."
+    },
+    {
+      "id": "PD-SP-S-0018",
+      "type": "STRUCTURE",
+      "name": "San Hotels",
+      "identity_resolution": "USER_SUPPLIED_LABEL_PENDING_SOURCE",
+      "boundary": "User-supplied historical label. Current targeted web/repository/Drive review has not independently reconciled it to Sun Group, JSP or another legal/commercial structure; do not promote it as an alias until a source bridge is located."
+    }
+  ],
+  "objectives": [
+    {
+      "id": "PD-SP-OBJ-2008-WHOLE-HOTEL-ACQUISITION",
+      "name": "2008 acquisition of the hotel as a unified economic/operating object",
+      "boundary": "Transaction object/intention and market description must be separated from finca-by-finca legal completion."
+    },
+    {
+      "id": "PD-SP-OBJ-2011-PROJECT-SUCCESSION",
+      "name": "2011 acquisition of the Multimatrix/LPB position by the UK holdco",
+      "boundary": "Primary corporate/share chain controls; does not itself transfer every extraneous third-party right."
+    }
+  ],
+  "source_controls": [
+    {
+      "id": "SP-HIST-SRC-001",
+      "class": "CONTROLLED_TOURISM_RECORD",
+      "description": "Recovered tourism ficha records SUN PARK, Calle Janubio/parcela G, Costa Papagayo, authorization 15-May-1991 and 220 accommodation units.",
+      "boundary": "Administrative authorization is a hard operational/classification anchor; exact construction completion and first guest/opening date remain separate."
+    },
+    {
+      "id": "SP-HIST-SRC-002",
+      "class": "SECONDARY_TRADE_HISTORY",
+      "description": "Tourinews 6-May-2022 associates José Sánchez Rodríguez/JSP with design/construction of five Playa Blanca complexes grouped as Sun Group at the beginning of the 1990s.",
+      "url": "https://www.tourinews.es/empresas-turismo/canarias-lanzarote-jose-sanchez-jsp-turismo-apartahoteles_4468849_102.html",
+      "boundary": "Later secondary history; not a title deed or exact opening-date source."
+    },
+    {
+      "id": "SP-HIST-SRC-003",
+      "class": "CONTROLLED_2008_OPERATING_INSTRUMENT",
+      "description": "26-May-2008 operating-cession recital distinguishes 220 apartments owned by their respective owners from 40 commercial/service premises and two pools attributed to Monte Lanza, and describes Monte Lanza's historical hotel operation.",
+      "boundary": "Contract recital/source statement; title must be checked finca-by-finca."
+    },
+    {
+      "id": "SP-HIST-SRC-004",
+      "class": "CONTEMPORANEOUS_TRADE_PRESS",
+      "description": "Alimarket 16-Jul-2008 reported that Monte Lanza reached a June agreement with Multimatrix to transfer ownership and operation of Aparthotel Sun Park (3E-220 apartments), with property acquired through Luchy and operation through CEXP.",
+      "url": "https://www.alimarket.es/hoteles/noticia/m3292003/monte-lanza-vende-el-aparthotel--sun-park--a-la-inversora-israeli-multimatrix",
+      "boundary": "Market-level description of the hotel transaction; not proof that all 262 fincas or all seller rights completed."
+    },
+    {
+      "id": "SP-HIST-SRC-005",
+      "class": "BUYER_SIDE_COMMISSIONED_IMPAIRMENT_REPORT",
+      "description": "Multimatrix-commissioned impairment study dated 24-Mar-2010 states that on 18-Jun-2008 Multimatrix, through foreign subsidiaries, purchased Sun Park rights/activities comprising 171 units, 29 facility areas and hotel management rights for EUR11.8m.",
+      "url": "https://mayafiles.tase.co.il/RPdf/527001-528000/P527156-01.pdf",
+      "boundary": "Near-contemporaneous buyer-side commissioned report; strong perimeter evidence but not substitute for every underlying conveyance."
+    },
+    {
+      "id": "SP-HIST-SRC-006",
+      "class": "CONTROLLED_CEXP_MINUTES",
+      "description": "15-Jul-2008 CEXP/transaction-period minutes place LPB with 171 apartments and 29 commercial properties and Monte Lanza with 11 commercial properties.",
+      "boundary": "Located meeting record; governance/authority and complete native/minutes-book chain remain source-specific."
+    },
+    {
+      "id": "SP-HIST-SRC-007",
+      "class": "CONTROLLED_MONTE_LANZA_ACCOUNTS",
+      "description": "Monte Lanza 2008/2012 account family records 2008 asset sales/options, residual 11-premises option and later 2009/2010 dispositions; controlled review records JSP direct shareholding at 26.82% at end-2008.",
+      "boundary": "Company accounts evidence; direct 26.82% shareholding is not proof of absence or presence of indirect/de facto control."
+    },
+    {
+      "id": "SP-HIST-SRC-008",
+      "class": "PRIMARY_CORPORATE_SUCCESSION_CHAIN",
+      "description": "3-Jan-2012 Spanish deed records that Monterecco Sun Park Limited acquired all shares in LPB from Multimatrix Limited under a Tel Aviv notarial deed dated 1-Dec-2011 and apostilled.",
+      "boundary": "Controls the LPB share succession; complete wider economic-rights chain remains separately testable."
+    },
+    {
+      "id": "SP-HIST-SRC-009",
+      "class": "OFFICIAL_2017_CORPORATE_NOTICE",
+      "description": "BORME-C-2017-7368 records JSP shareholders requesting further explanations concerning the 'venta del Complejo Sun Park' and majority sale of Explobeach, expanding explanations given at prior general meetings.",
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2017-7368",
+      "boundary": "Confirms the sale remained a corporate-history subject; does not itself prove purchaser, price, exact asset perimeter or wrongdoing."
+    }
+  ],
+  "phase_freezes": [
+    {
+      "phase_id": "SP-PHASE-0-ORIGIN-1987-1991",
+      "label": "Legal structure, construction/development and opening anchor",
+      "period": "1987-1991",
+      "events": [
+        {
+          "event_id": "PD-SP-EVT-SP-1987-11-09-STATUTES",
+          "date": "1987-11-09",
+          "event_type": "PROPERTY_HORIZONTAL_OR_COMMUNITY_BASELINE",
+          "source_ids": [
+            "SP-HIST-SRC-003"
+          ],
+          "evidence_state": "REFERENCED_CONTROLLED_FAMILY",
+          "gap": "Recover/rebind the exact statutes/original and distinguish property-horizontal constitution from hotel opening."
+        },
+        {
+          "event_id": "PD-SP-EVT-SP-1988-1991-CONSTRUCTION-OPENING",
+          "date_range": "1988-05-15/1991-05-15",
+          "event_type": "CONSTRUCTION_DEVELOPMENT_AND_TOURISM_AUTHORIZATION",
+          "structure_ids": [
+            "PD-SP-S-0012",
+            "PD-SP-S-0013"
+          ],
+          "organisation_ids": [
+            "PD-SP-O-0085"
+          ],
+          "person_ids": [
+            "PD-SP-P-0166"
+          ],
+          "source_ids": [
+            "SP-HIST-SRC-001",
+            "SP-HIST-SRC-002"
+          ],
+          "evidence_boundary": "Current controlled hard date is tourism authorization 15-May-1991 for 220 accommodation units. Late-1980s/around-1990 construction/opening remains a bounded historical proposition pending primary works/completion/first-opening records."
+        }
+      ],
+      "freeze_questions": [
+        "What existed physically?",
+        "Who held each title?",
+        "Who financed/developed it?",
+        "What was the hotel licence/classification?",
+        "Which legal/operating bodies existed on the first trading day?"
+      ]
+    },
+    {
+      "phase_id": "SP-PHASE-1-JSP-SUN-GROUP-MONTELANZA-1991-2008",
+      "label": "Sun Group/JSP historical perimeter and Monte Lanza hotel operation",
+      "period": "1991-05-15/2008-05-25",
+      "structure_ids": [
+        "PD-SP-S-0012",
+        "PD-SP-S-0013",
+        "PD-SP-S-0018"
+      ],
+      "organisation_ids": [
+        "PD-SP-O-0014",
+        "PD-SP-O-0085"
+      ],
+      "source_ids": [
+        "SP-HIST-SRC-002",
+        "SP-HIST-SRC-003",
+        "SP-HIST-SRC-007"
+      ],
+      "evidence_boundary": "Sector history supports the Sun Group/JSP hotel cluster and controlled 2008 instruments describe Monte Lanza's historic operation. 'San Hotels' remains an unverified user-supplied label. Current controlled accounts do not support describing JSP as a direct majority shareholder of Monte Lanza at end-2008; they record 26.82% direct, while any indirect/de facto control requires separate proof.",
+      "freeze_questions": [
+        "Owner-by-finca denominator before sale",
+        "Monte Lanza shareholder/control genealogy",
+        "operator and licence holder by year",
+        "JSP/Sun Group legal versus commercial relationships",
+        "dissident/minority owner population before transaction"
+      ]
+    },
+    {
+      "phase_id": "SP-PHASE-2-2008-WHOLE-HOTEL-TRANSACTION",
+      "label": "Whole-hotel transaction object versus asset-by-asset completion",
+      "period": "2008-02-18/2008-07-15",
+      "objective_id": "PD-SP-OBJ-2008-WHOLE-HOTEL-ACQUISITION",
+      "events": [
+        {
+          "event_id": "PD-SP-EVT-SP-2008-02-18-SALE-MANDATE",
+          "date": "2008-02-18",
+          "event_type": "OWNER_SALE_MANDATE_OR_OPTION_PREPARATION",
+          "source_ids": [
+            "SP-HIST-SRC-007"
+          ],
+          "evidence_state": "CONTROLLED_DERIVED_LEDGER_PRIMARY_INSTRUMENT_REBIND_OPEN",
+          "gap": "Recover the original owner mandate/resolution and exact denominator/authority."
+        },
+        {
+          "event_id": "PD-SP-EVT-SP-2008-03-12-OPTION",
+          "date": "2008-03-12",
+          "event_type": "OPTION_OR_ACQUISITION_RIGHT",
+          "organisation_ids": [
+            "PD-SP-O-0014"
+          ],
+          "source_ids": [
+            "SP-HIST-SRC-007"
+          ],
+          "evidence_state": "ACCOUNTS_REFERENCED_PRIMARY_OPTION_REBIND_OPEN",
+          "gap": "Recover signed option and scope/assignment/exercise chain."
+        },
+        {
+          "event_id": "PD-SP-EVT-SP-2008-04-29-CEXP-REORGANISATION",
+          "date": "2008-04-29",
+          "event_type": "OPERATING_STRUCTURE_REORGANISATION",
+          "organisation_ids": [
+            "PD-SP-O-0006",
+            "PD-SP-O-0014"
+          ],
+          "structure_ids": [
+            "PD-SP-S-0013"
+          ],
+          "source_ids": [
+            "SP-HIST-SRC-003"
+          ],
+          "evidence_boundary": "CEXP/operating reorganisation is not itself a conveyance of each finca."
+        },
+        {
+          "event_id": "PD-SP-EVT-SP-2008-05-26-27-OPERATING-HANDOVER",
+          "date_range": "2008-05-26/2008-05-27",
+          "event_type": "OPERATING_CESSION_HANDOVER",
+          "organisation_ids": [
+            "PD-SP-O-0014",
+            "PD-SP-O-0006"
+          ],
+          "structure_ids": [
+            "PD-SP-S-0013"
+          ],
+          "source_ids": [
+            "SP-HIST-SRC-003"
+          ],
+          "evidence_boundary": "Operating handover and consideration do not prove completion of the whole real-estate sale."
+        },
+        {
+          "event_id": "PD-SP-EVT-SP-2008-06-AGREEMENT-MARKET-OBJECT",
+          "date_range": "2008-06-01/2008-06-30",
+          "event_type": "WHOLE_HOTEL_TRANSACTION_MARKET_DESCRIPTION",
+          "organisation_ids": [
+            "PD-SP-O-0014",
+            "PD-SP-O-0099",
+            "PD-SP-O-0002",
+            "PD-SP-O-0006"
+          ],
+          "structure_ids": [
+            "PD-SP-S-0013"
+          ],
+          "source_ids": [
+            "SP-HIST-SRC-004"
+          ],
+          "transaction_object_as_reported": "Aparthotel Sun Park, property and operation, 3E-220 apartments",
+          "evidence_boundary": "This freezes what the transaction was presented as in contemporaneous trade press: the hotel. It is not promoted to proof that every title/right completed."
+        },
+        {
+          "event_id": "PD-SP-EVT-SP-2008-06-18-COMPLETION-PERIMETER",
+          "date": "2008-06-18",
+          "event_type": "BUYER_SIDE_COMPLETED_ACQUISITION_SNAPSHOT",
+          "organisation_ids": [
+            "PD-SP-O-0099",
+            "PD-SP-O-0002"
+          ],
+          "structure_ids": [
+            "PD-SP-S-0013"
+          ],
+          "source_ids": [
+            "SP-HIST-SRC-005"
+          ],
+          "completed_perimeter_reported": "171 accommodation units + 29 facility areas + hotel management rights; EUR11.8m consideration",
+          "evidence_boundary": "Buyer-side report demonstrates a materially smaller acquired perimeter than the whole 220-unit hotel object described by Alimarket; underlying deeds govern legal completion."
+        },
+        {
+          "event_id": "PD-SP-EVT-SP-2008-07-15-POST-COMPLETION-SNAPSHOT",
+          "date": "2008-07-15",
+          "event_type": "POST_TRANSACTION_OWNERSHIP_OPERATION_SNAPSHOT",
+          "organisation_ids": [
+            "PD-SP-O-0002",
+            "PD-SP-O-0014",
+            "PD-SP-O-0006"
+          ],
+          "source_ids": [
+            "SP-HIST-SRC-006"
+          ],
+          "state": "LPB recorded with 171 apartments and 29 commercial properties; Monte Lanza recorded with 11 commercial properties.",
+          "evidence_boundary": "This discrepancy is a central state transition and must remain visible rather than being flattened into either 'whole hotel sold' or 'only part was ever intended'."
+        }
+      ],
+      "truth_machine_rule": "Preserve both layers: WHOLE HOTEL AS TRANSACTION OBJECT / INTENTION / MARKET REPRESENTATION versus LESS-THAN-WHOLE COMPLETED LEGAL/ECONOMIC PERIMETER. Investigate the bridge and why the intended/marketed state did not match the post-completion state."
+    },
+    {
+      "phase_id": "SP-PHASE-3-MULTIMATRIX-2008-2011",
+      "label": "Multimatrix / LPB period with residual Monte Lanza rights and later dispositions",
+      "period": "2008-07-15/2011-12-01",
+      "organisation_ids": [
+        "PD-SP-O-0099",
+        "PD-SP-O-0002",
+        "PD-SP-O-0006",
+        "PD-SP-O-0014"
+      ],
+      "source_ids": [
+        "SP-HIST-SRC-005",
+        "SP-HIST-SRC-006",
+        "SP-HIST-SRC-007",
+        "SP-HIST-SRC-009"
+      ],
+      "state_transitions": [
+        {
+          "transition_id": "SP-TRANS-2008-RESIDUAL-11",
+          "from_state": "whole-hotel acquisition object",
+          "to_state": "LPB 171 apartments + 29 commercial/facility properties; Monte Lanza residual 11 commercial properties",
+          "date": "2008-07-15"
+        },
+        {
+          "transition_id": "SP-TRANS-2009-2010-RESIDUAL-DISPOSITIONS",
+          "from_state": "residual Monte Lanza/title-option perimeter",
+          "to_state": "later sales, shareholder in-kind settlements and expiry/dispute of residual rights/options",
+          "period": "2009-2010",
+          "evidence_state": "CONTROLLED_ACCOUNTS_AND_LEDGER_PRIMARY_INSTRUMENTS_PARTLY_OPEN"
+        }
+      ],
+      "freeze_questions": [
+        "Who prevented/declined/completed each remaining sale?",
+        "What happened to each 11-premises option/right?",
+        "Which apartment sales occurred 2009–2011 and why?",
+        "How did CEXP/Community governance change after Multimatrix entry?",
+        "What rights/claims remained with Multimatrix/LPB at exit?"
+      ]
+    },
+    {
+      "phase_id": "SP-PHASE-4-UK-HOLDCO-SUCCESSION-2011",
+      "label": "UK holdco succeeds to the Multimatrix/LPB position",
+      "period": "2011-12-01/2012-01-03",
+      "objective_id": "PD-SP-OBJ-2011-PROJECT-SUCCESSION",
+      "events": [
+        {
+          "event_id": "PD-SP-EVT-SP-2011-12-01-UK-HOLDCO-SUCCESSION",
+          "date": "2011-12-01",
+          "event_type": "SHAREHOLDER_SUCCESSION",
+          "organisation_ids": [
+            "PD-SP-O-0099",
+            "PD-SP-O-0001",
+            "PD-SP-O-0002"
+          ],
+          "source_ids": [
+            "SP-HIST-SRC-008"
+          ],
+          "state": "Monterecco Sun Park Limited (same UK company later renamed AWESWELL LIMITED) acquired all LPB shares from Multimatrix Limited under the recited Tel Aviv deed.",
+          "evidence_boundary": "Controls shareholder succession. It does not erase pre-existing finca/title/community/option disputes or automatically transfer third-party property."
+        },
+        {
+          "event_id": "PD-SP-EVT-SP-2012-01-03-SPANISH-PUBLICITY",
+          "date": "2012-01-03",
+          "event_type": "SPANISH_CORPORATE_PUBLICITY_AND_ADMINISTRATION",
+          "organisation_ids": [
+            "PD-SP-O-0001",
+            "PD-SP-O-0002"
+          ],
+          "person_ids": [
+            "PD-SP-P-0001"
+          ],
+          "source_ids": [
+            "SP-HIST-SRC-008"
+          ],
+          "evidence_boundary": "Spanish deed/publicity records the prior 1-Dec-2011 share transfer and administration change; it is not the sale of every hotel finca."
+        }
+      ],
+      "successor_graph_event_id": "PD-SP-EVT-C36-2012-06-06-OPENING"
+    }
+  ],
+  "open_gaps": [
+    {
+      "id": "GAP-SP-OPENING-EXACT-1989-1991",
+      "priority": "P0",
+      "target": "Primary building completion/first opening/first guest/operating licence chronology; distinguish 1988 works reference, c.1989-90 recollection and 15-May-1991 tourism authorization."
+    },
+    {
+      "id": "GAP-SP-SAN-HOTELS-LABEL",
+      "priority": "P1",
+      "target": "Find source proving or disproving the user-supplied 'San Hotels' label and its relationship, if any, to Sun Group/JSP."
+    },
+    {
+      "id": "GAP-SP-JSP-MONTELANZA-CONTROL",
+      "priority": "P0",
+      "target": "Reconstruct direct/indirect/de facto control and shareholder genealogy without converting 26.82% direct year-end 2008 JSP holding into an unsupported majority claim."
+    },
+    {
+      "id": "GAP-SP-2008-OWNER-MANDATE",
+      "priority": "P0",
+      "target": "Original 2008 owner sale mandate/resolution, participant denominator, powers and exact obligation to sell."
+    },
+    {
+      "id": "GAP-SP-2008-OPTION-INSTRUMENTS",
+      "priority": "P0",
+      "target": "Signed 12-Mar option, exercise/assignment instruments, residual 11-premises option, notices, objections, expiry/release and consideration."
+    },
+    {
+      "id": "GAP-SP-2008-WHOLE-VS-COMPLETED",
+      "priority": "P0",
+      "target": "Finca-by-finca crosswalk from the whole-hotel transaction object to the 171+29 completed perimeter and every retained/failed/contested unit or right."
+    },
+    {
+      "id": "GAP-SP-2009-2011-DISPOSITIONS",
+      "priority": "P0",
+      "target": "All 2009-2011 LPB/Monte Lanza sales, in-kind transfers, releases and economic use, with buyer/seller/price/credit effects."
+    },
+    {
+      "id": "GAP-SP-MULTIMATRIX-IDENTITY-BRIDGE",
+      "priority": "P0",
+      "target": "Certify legal identity bridge among Multimatrix Ltd., Multimatrix Limited and Multimatrix Investments Ltd. source literals."
+    },
+    {
+      "id": "GAP-SP-2011-COMPLETE-SPA-RIGHTS",
+      "priority": "P0",
+      "target": "Complete 1-Dec-2011 share purchase/rights package and retained claims/option/Community/CEXP rights beyond the primary share-succession recital."
+    }
+  ],
+  "no_regression": [
+    "Do not reset Sun Park history to 2008, 2011, 2012 or 2018.",
+    "Do not convert Alimarket's whole-hotel market description into proof that all fincas transferred.",
+    "Do not convert the 171+29 completed perimeter into a claim that only part of the hotel was ever intended to be purchased.",
+    "Do not describe JSP as direct majority shareholder of Monte Lanza at end-2008 on current controlled accounts.",
+    "Do not promote 'San Hotels' to a canonical alias absent a source bridge.",
+    "Do not treat Multimatrix, LPB, CEXP, Monte Lanza, Sun Group or the hotel economic unit as the same legal object.",
+    "Do not create a separate legal person for MONTERECCO SUN PARK LIMITED; it is the former name of AWESWELL LIMITED, UK company no. 07716847."
+  ]
+}
