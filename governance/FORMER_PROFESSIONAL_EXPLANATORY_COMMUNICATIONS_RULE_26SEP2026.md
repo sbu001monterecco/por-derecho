@@ -1,3 +1,5 @@
+> **Public-mirror / cyber-resilience overlay — `PD-FCCOM-MIRROR-CYBER-20260926-01`:** every material former-professional email must include both GitHub Pages and GitLab Pages public links. Use the dedicated ALAS/Joaquín professional-work page once both mirrors are live-verified; otherwise use the counsel-continuity page pair. Explain the redundancy as continuity/preservation/resilience in light of cyber-security incidents and threats being documented in relation to the matter. Do not imply either host is compromised; public mirrors do not replace primary sources or formal communications. Read `governance/FORMER_COUNSEL_PUBLIC_MIRROR_CYBER_RESILIENCE_EMAIL_RULE_26SEP2026.md` before sending.
+
 # Former-professional explanatory communications rule — whole business / whole trajectory
 
 ## Canonical workspace lineage — 26 September 2026
