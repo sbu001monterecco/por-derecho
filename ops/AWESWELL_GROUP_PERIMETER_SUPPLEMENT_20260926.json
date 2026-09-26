@@ -60,6 +60,7 @@
     "no_double_count_rule": "Do not count the same booking receipt, acquisition payment, lost margin, goodwill, enterprise value or hotel-income loss twice across LPB, Pink, Hava Vida, AWESWELL LIMITED or personal claimant positions."
   },
   "cross_registers": [
-    "ops/SUN_ROCK_FOUNDATION_BENEFICIAL_PLATFORM_REGISTER_20260926.json"
+    "ops/SUN_ROCK_FOUNDATION_BENEFICIAL_PLATFORM_REGISTER_20260926.json",
+    "ops/SUN_ROCK_GUERNSEY_DISRUPTION_CAUSATION_LEDGER_20260926.json"
   ]
 }
