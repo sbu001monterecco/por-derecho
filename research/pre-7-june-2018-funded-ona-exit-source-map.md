@@ -39,6 +39,22 @@ The Stoneweg/Varia conditional offer of 12 June and the August bridge term sheet
 
 ---
 
+## Redundancy / lender-comfort architecture
+
+The pre-7-June record should not be reduced to a single prospective lender. Contemporaneous communications show an intentional risk-reduction package with several independent fallback layers:
+
+- **Bridge / private credit:** EG / CR Management term-sheet work was active in May; Stoneweg was already engaged before the cutoff and later issued the 12-June binding conditional Varia offer.
+- **Bank replacement / refinancing:** on 10 May Carlos Sanz reported a positive discussion with Santander's structured-finance hotel/real-estate team. Santander was checking risk policy and, if satisfied, was described as ready to work in parallel to support the lender exit.
+- **Additional fallback capital:** the same 10-May record identified two HNW clients willing in principle to support the transaction with a bank if bank capacity did not cover the full requirement. This was expressly verbal/preliminary, not committed capital.
+- **Independent sale backstop:** Aweswell signed a 25-May preferential-acquisition right in favour of Lagune Hospitalidad, S.L. / Batipart Group, linked to bridge financing through Ben Oldman Partners or Mediterranean Capital Management and time-limited to six months from satisfaction of its stated conditions (subject to extension). The 30-May Lagune proposal offered EUR 26 million from own funds and stated that it was not subject to a financing condition. The proposal remained subject to due diligence, board approval, definitive sale documentation and its stated acceptance/timing mechanics.
+- **ONA facilitation:** Carlos Sanz's 18-May email said the preferential-acquisition letter should be coordinated with Nacho (ONA); on 28 May the duly signed Lagune right was sent to Nacho Barrau; and on 6 June Nacho transmitted the Lagune/Elaia LOI while warning that the purchaser was genuinely interested and that uncontrolled contact could prejudice the negotiation.
+- **Independent lender-DD review:** on 28 May Cuatrecasas partner Iñigo de Luisa coordinated with Dentons in Madrid so Dentons could review Cuatrecasas's DD and provide independent feedback to EG. The record shows a deliberate second-review layer, while EG's own email makes clear that Dentons would not fully mobilise until the term-sheet/cost conditions were satisfied.
+- **Expert and valuation work:** Gesvalt's updated ECO valuation and Expert-Witness valuation/debt/economic notes were being prepared and circulated into the lender/adviser process. On 6 June the lender chain expected the signed operator contract, EUR 26m REIT/SOCIMI LOI, updated ECO valuation, full DD and term-sheet markup as one integrated information package.
+
+**Commercial interpretation:** the preferred owner outcome was not a sale. The sale route functioned as additional lender repayment comfort: bridge exit from the concurso first, then professional ONA operation and refinancing/replacement capital, with sale as a credible fallback if continuation or refinancing later failed.
+
+**Boundary:** this proves redundancy and risk mitigation, not that every route had final credit approval, definitive documentation or an immediately drawable facility.
+
 ## A. ONA / Clubotel operating package
 
 ### A1. Signed hotel-industry lease
