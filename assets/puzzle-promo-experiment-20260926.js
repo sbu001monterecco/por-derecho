@@ -1,3 +1,4 @@
+/* ISOLATED BRANCH EXPERIMENT · no main/publication claim · 2026-09-26 */
 (() => {
   'use strict';
 
