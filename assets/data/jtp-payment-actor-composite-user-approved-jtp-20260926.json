@@ -1,0 +1,36 @@
+{
+  "schema": "por-derecho.jtp-real-actor-composite-provenance.v2",
+  "control_id": "PD-JTP-ACTOR-COMPOSITE-20260926-02",
+  "date": "2026-09-26",
+  "status": "DETERMINISTIC_JTP_ONLY_REPLACEMENT_USER_APPROVED",
+  "path": "assets/jtp-payment-actor-composite-real-sources-20260926.png",
+  "supersedes": "PD-JTP-ACTOR-COMPOSITE-20260925-01",
+  "base_composite_sha256": "77895f4078ac3d3cad61077f5c33ac1865f95834e1d794014f024e00dd3587cc",
+  "sha256": "110ccd32d7320180e798efbb8e835acd3838f74a7d0da8dab30bdb2029d4b621",
+  "dimensions": [
+    1055,
+    1491
+  ],
+  "jtp_box": [
+    390,
+    195,
+    640,
+    470
+  ],
+  "verification": {
+    "changed_pixels": 68749,
+    "changed_pixels_outside_jtp_box": 0,
+    "borja_region_unchanged": true,
+    "jdam_region_unchanged": true,
+    "lpam_region_unchanged": true,
+    "alberto_region_unchanged": true
+  },
+  "jtp_source": {
+    "asset_id": "person.juan-tomas-parrilla.approved-20260926",
+    "path": "assets/actors/juan-tomas-parrilla-user-approved-20260926.jpg",
+    "sha256": "fdd0308df79312e1c666e48ba651eb5e34800057b62a0486c21bfa1cdf837489",
+    "basis": "User supplied a real conference photograph in-chat on 26-Sep-2026; a faithful portrait derivative was generated from that photograph and the user explicitly confirmed the derivative as the correct JTP image and authorised its use in the existing composite.",
+    "facial_recognition_used": false,
+    "other_actor_generation_used": false
+  }
+}
