@@ -1,0 +1,220 @@
+{
+  "schema": "por-derecho.professional-interference-incident-register.v1",
+  "control_id": "PD-PII-20260926-01",
+  "control_date": "2026-09-26",
+  "status": "INTERNAL_SOURCE_CONTROLLED_REGISTER",
+  "purpose": "Canonical internal register of distinct professional-continuity, independence, fee/payment, withdrawal and handover incidents involving project-side lawyers and firms. An incident record is not a finding of wrongdoing.",
+  "governing_rules": {
+    "no_collusion_from_proximity": true,
+    "absence_of_evidence_is_not_proof": true,
+    "payment_is_not_bribery": true,
+    "withdrawal_is_not_proof_of_external_causation": true,
+    "firm_context_does_not_transfer_conduct_to_individuals": true,
+    "verified_fact_inference_client_allegation_contrary_evidence_open_issue_must_remain_separate": true
+  },
+  "status_vocabulary": [
+    "VERIFIED_DIRECT_EVENT",
+    "VERIFIED_REPORTED_PAYMENT",
+    "SUPPORTED_INVESTIGATIVE_INFERENCE",
+    "CLIENT_ALLEGATION",
+    "VERIFIED_CONTRARY_EVIDENCE",
+    "OPEN",
+    "NEGATIVE_SEARCH",
+    "ROLE_VERIFIED_EFFECT_OPEN"
+  ],
+  "contact_controls": [
+    {
+      "person": "Luis A. Barber Marrero",
+      "identity_id": "PD-SP-P-0074",
+      "historic_professional_email": "luis@barberasociados.com",
+      "current_professional_email": "lbarber@keplerkarst.com",
+      "current_source": "Kepler-Karst public Luis Barber profile and service pages, checked 2026-09-26",
+      "contact_rule": "When external contact is later authorised, address both the historic professional mailbox and the current professional mailbox. Do not assume the historic mailbox remains active. No email is authorised or sent by this register."
+    }
+  ],
+  "identity_controls": [
+    {
+      "canonical_name": "Luis Miguel López Gómez",
+      "identity_id": "PD-SP-P-0047",
+      "note": "The user used the phrase 'Luis Miguel Suárez' on 2026-09-26. Do not add that as an alias without source verification; current repository identity remains Luis Miguel López Gómez."
+    }
+  ],
+  "incidents": [
+    {
+      "incident_id": "PD-PII-0001",
+      "subject": "Garrigues / early 2012 team",
+      "date_range": "2012",
+      "incident_type": "REPRESENTATION_TRANSITION_FEE_VALUE",
+      "state": "OPEN",
+      "verified": ["Contemporaneous fee/value dispute around the transition to new representation."],
+      "client_position": "Wider professional-attrition concerns are alleged but no current source establishes an AC-caused Garrigues departure.",
+      "contrary_evidence": ["Transition coincided with fee/value issues and the birth of Concurso 36/2012."],
+      "open_proof": ["Exact engagement-end/venia chain", "Earliest AC appointment/communication chain"],
+      "source_controls": ["assets/data/legal-representation-ac-causation-v1.json"]
+    },
+    {
+      "incident_id": "PD-PII-0002",
+      "subject": "Cuatrecasas",
+      "date_range": "2018-2019",
+      "incident_type": "FUNDED_EXIT_STANDING_SALE_REGISTRY_WORKSTREAM_IMPACT",
+      "state": "SUPPORTED_INVESTIGATIVE_INFERENCE",
+      "verified": ["Administrator positions materially intersected standing, sale/Registry, information and funded-exit work.", "Favourable professional work also exists."],
+      "client_position": "Gil alleges the wider workstream was materially impaired.",
+      "contrary_evidence": ["No single-cause exit finding.", "Later unpaid-fee reason must remain visible."],
+      "open_proof": ["Pleading-by-pleading causal mapping", "Complete fee/withdrawal and venia file"],
+      "source_controls": ["assets/data/legal-representation-ac-causation-v1.json", "archive/AC_COUNSEL_INTERFERENCE_UNITARY_REDIGEST_21SEP2026.md"]
+    },
+    {
+      "incident_id": "PD-PII-0003",
+      "subject": "Cuatrecasas",
+      "date_range": "later withdrawal period",
+      "incident_type": "UNPAID_FEE_WITHDRAWAL",
+      "state": "VERIFIED_CONTRARY_EVIDENCE",
+      "verified": ["Unpaid fees were a documented withdrawal factor."],
+      "client_position": "This is not treated as an exhaustive explanation of earlier workstream impact.",
+      "contrary_evidence": [],
+      "open_proof": ["Exact invoice/payment timeline and final venia"],
+      "source_controls": ["assets/data/legal-representation-ac-causation-v1.json"]
+    },
+    {
+      "incident_id": "PD-PII-0004",
+      "subject": "Cristo Ayose Suárez Pimentel",
+      "identity_id": "PD-SP-P-0055",
+      "date_range": "2018-01-25",
+      "incident_type": "DEFINED_MANDATE_TERMINATION_BAR_NOTICE_THREAT",
+      "state": "VERIFIED_DIRECT_EVENT",
+      "verified": ["AC communication terminated the defined LPB mandate, requested venia/abstention and included a Bar-notice/judicial-action warning."],
+      "client_position": "Cristo is treated as a potentially affected former professional, not an adverse actor.",
+      "contrary_evidence": ["Cristo continued wider Sun Park work afterwards."],
+      "open_proof": ["Whether an actual Bar complaint/file was opened", "Complete DP 1041 withdrawal/authority chain"],
+      "source_controls": ["assets/data/ac-counsel-interference-unitary-v1.json", "archive/AC_COUNSEL_INTERFERENCE_UNITARY_REDIGEST_21SEP2026.md"]
+    },
+    {
+      "incident_id": "PD-PII-0005",
+      "subject": "Juan Tomás Parrilla Suárez",
+      "identity_id": "PD-SP-P-0041",
+      "date_range": "2020-05-28",
+      "incident_type": "FEE_PROPOSAL_AC_PAYMENT_EXPECTATION",
+      "state": "VERIFIED_DIRECT_EVENT",
+      "verified": ["Parrilla fee proposal contemplated an immediate €25,000 AC payment and further estate recognition."],
+      "client_position": "Gil characterises the wider sequence as potentially improper economic/professional influence.",
+      "contrary_evidence": ["A lawful professional-fee route is possible in principle.", "The later final proposal was expressly rejected by the client side."],
+      "open_proof": ["Invoice", "Authority", "Tax/cost allocation", "Ledger and bank trail"],
+      "source_controls": ["assets/data/ac-counsel-interference-unitary-v1.json"]
+    },
+    {
+      "incident_id": "PD-PII-0006",
+      "subject": "Juan Tomás Parrilla Suárez / incoming-counsel transition",
+      "date_range": "2020-06-01",
+      "incident_type": "PEACE_PAYMENT_ASSURANCE_INTERMEDIATION",
+      "state": "SUPPORTED_INVESTIGATIVE_INFERENCE",
+      "verified": ["Incoming counsel reported an AC call combining peace/possible complaint withdrawal, assurance that Parrilla/procurator would be paid, praise of Parrilla and substantive AC/CAM positions."],
+      "client_position": "Gil alleges the sequence was intended to influence defence continuity.",
+      "contrary_evidence": ["No adjudicated improper-purpose finding.", "Incoming counsel disclosed and challenged positions."],
+      "open_proof": ["Original call notes/audio if any", "Counterparty corroboration", "Payment authority and communications"],
+      "source_controls": ["assets/data/ac-counsel-interference-unitary-v1.json"]
+    },
+    {
+      "incident_id": "PD-PII-0007",
+      "subject": "Juan Tomás Parrilla Suárez",
+      "date_range": "2020-07",
+      "incident_type": "ESTATE_SIDE_PAYMENT",
+      "state": "VERIFIED_REPORTED_PAYMENT",
+      "verified": ["Later AC report records €25,000 + 7% IGIC (€26,750) paid to Parrilla for counsel fees."],
+      "client_position": "Gil requests investigation of authority, funding source and effect on defence continuity.",
+      "contrary_evidence": ["Payment alone does not establish bribery, improper inducement, criminal source or recipient knowledge."],
+      "open_proof": ["Matching final invoice/minuta", "Authorisation", "LPB bank debit", "Recipient credit", "Complete estate ledger"],
+      "source_controls": ["assets/data/ac-counsel-interference-unitary-v1.json", "research/ALAS_JOAQUIN_R33_GAP_CLOSURE_CONTROL_26SEP2026.md"]
+    },
+    {
+      "incident_id": "PD-PII-0008",
+      "subject": "ALAS Legal Advisors working team",
+      "date_range": "2020-02 to 2020-03",
+      "incident_type": "ARTICLE_215_2_TEAM_PRESSURE_ACTA_RATIFICATION",
+      "state": "SUPPORTED_INVESTIGATIVE_INFERENCE",
+      "verified": ["Article 215.2 procedural initiative and resulting urgent team communications are documented.", "Acta de Manifestaciones/ratification work followed."],
+      "client_position": "Gil alleges the episode materially pressured the defence team.",
+      "contrary_evidence": ["The Article 215.2 route was a procedural gate, not a merits finding.", "Later fee/trust/client-lawyer conflict evidence must remain separate."],
+      "open_proof": ["Complete Article 215.2/complaint docket", "Final executed Acta", "Person-specific effect on each team member"],
+      "source_controls": ["assets/data/ac-counsel-interference-unitary-v1.json", "research/ALAS_JOAQUIN_R33_GAP_CLOSURE_CONTROL_26SEP2026.md"]
+    },
+    {
+      "incident_id": "PD-PII-0009",
+      "subject": "Joaquín Ruiz de Infante Abella",
+      "identity_id": "PD-SP-P-0045",
+      "date_range": "2020-09-21",
+      "incident_type": "WITHDRAWAL_APOLOGY",
+      "state": "VERIFIED_CONTRARY_EVIDENCE",
+      "verified": ["Irrevocable withdrawal, stated irreparable lawyer-client breakdown, apology to the AC and withdrawal of identified subjective dishonesty characterisations."],
+      "client_position": "This evidence is preserved even where the client alleges prior defence-team pressure.",
+      "contrary_evidence": [],
+      "open_proof": ["Immediate pre-withdrawal communications", "Venia/handover", "Whether other stated reasons existed"],
+      "source_controls": ["assets/data/ac-counsel-interference-unitary-v1.json", "research/ALAS_JOAQUIN_R33_GAP_CLOSURE_CONTROL_26SEP2026.md"]
+    },
+    {
+      "incident_id": "PD-PII-0010",
+      "subject": "Luis A. Barber Marrero",
+      "identity_id": "PD-SP-P-0074",
+      "date_range": "2019-01 to 2020-03",
+      "incident_type": "ALAS_COLLABORATOR_ROLE_AND_PERSON_SPECIFIC_EFFECT_OPEN",
+      "state": "ROLE_VERIFIED_EFFECT_OPEN",
+      "verified": ["Signed ALAS engagement identifies Luis Barber and Joaquín Ruiz de Infante as collaborators of ALAS Legal Advisors.", "4-Jan-2019 correspondence says Armando, Luis and Joaquín were designing strategy.", "21-Jan-2019 BBC communication was subject to Luis review/validation and Luis approved it.", "ALAS invoice 6/2019 includes three 40-minute partner-rate entries labelled Conference Call Betancor-Barber."],
+      "client_position": "Luis is within the professional-continuity perimeter; no person-specific compromise finding is made.",
+      "contrary_evidence": ["Only two direct Luis-authored messages were located in the connected SBU corpus; later evidence is largely copied/team traffic.", "No separate Luis/Barber & Asociados retainer, invoice, payment or fee-sharing record has yet been located."],
+      "open_proof": ["Internal ALAS-Barber collaborator/fee arrangement", "Luis-specific edits/advice", "2020 withdrawal/handover participation", "Any transfer of historic files/receivables"],
+      "source_controls": ["research/ALAS_JOAQUIN_R33_GAP_CLOSURE_CONTROL_26SEP2026.md"]
+    },
+    {
+      "incident_id": "PD-PII-0011",
+      "subject": "Daniel Jiménez García / SLJ",
+      "identity_id": "PD-SP-P-0046",
+      "date_range": "2020-05-28 to 2020-06-05",
+      "incident_type": "INCOMING_COUNSEL_ACCESS_PEACE_CAM_CONTACT_SEQUENCE",
+      "state": "SUPPORTED_INVESTIGATIVE_INFERENCE",
+      "verified": ["Incoming counsel recorded Parrilla conveying AC contact request, took the 1-Jun AC call, and later reported that CAM's lawyer asked the AC to arrange contact."],
+      "client_position": "The sequence is treated as an attempted-access/influence question for investigation.",
+      "contrary_evidence": ["No proof the CAM call occurred.", "No proof the AC contact caused resignation.", "Jiménez challenged positions and said he was not conditionable."],
+      "open_proof": ["Complete call/contact record", "Any CAM-side communication", "Independent witness/account"],
+      "source_controls": ["assets/data/ac-counsel-interference-unitary-v1.json"]
+    },
+    {
+      "incident_id": "PD-PII-0012",
+      "subject": "Daniel Jiménez García / SLJ",
+      "identity_id": "PD-SP-P-0046",
+      "date_range": "2020-06-23",
+      "incident_type": "RESIGNATION_STRATEGY_DIRECTION_NONPAYMENT",
+      "state": "VERIFIED_CONTRARY_EVIDENCE",
+      "verified": ["Resignation cited strategy, client direction and unpaid fees."],
+      "client_position": "These stated reasons remain material and prevent an exclusive external-causation conclusion.",
+      "contrary_evidence": [],
+      "open_proof": ["Complete engagement/fee ledger and handover record"],
+      "source_controls": ["assets/data/ac-counsel-interference-unitary-v1.json"]
+    },
+    {
+      "incident_id": "PD-PII-0013",
+      "subject": "Luis Miguel López Gómez",
+      "identity_id": "PD-SP-P-0047",
+      "date_range": "2020-2025",
+      "incident_type": "ADMINISTRATOR_CONTROLLED_PAYMENT_DEPENDENCY_EXIT_CAUSATION_OPEN",
+      "state": "OPEN",
+      "verified": ["Time/fees/non-payment appear as documented alternative explanations.", "Because LPB payments were Administrator-controlled in liquidation, each fee request/response is auditable."],
+      "client_position": "Gil alleges the payment-control environment may have affected counsel continuity.",
+      "contrary_evidence": ["No specific causative refusal is presently established."],
+      "open_proof": ["Invoice-by-invoice request/response/payment audit", "Withdrawal/venia chain"],
+      "source_controls": ["assets/data/ac-counsel-interference-unitary-v1.json", "assets/data/legal-representation-ac-causation-v1.json"]
+    },
+    {
+      "incident_id": "PD-PII-0014",
+      "subject": "ALAS Legal Advisors / Armando Betancor team",
+      "date_range": "2019-2020",
+      "incident_type": "UNPAID_FEES_CONTINUATION_LIMIT_AND_TERMINATION",
+      "state": "VERIFIED_CONTRARY_EVIDENCE",
+      "verified": ["ALAS invoices 6/2019, 14/2019 and 16/2019 were repeatedly treated as unpaid.", "Armando later stated unresolved invoices materially limited continuation and separately reserved fee recovery on termination."],
+      "client_position": "The fee record is a material independent cause and does not erase earlier workstream-pressure questions.",
+      "contrary_evidence": [],
+      "open_proof": ["Current creditor", "Any later payment/settlement/assignment/novation/write-off", "Internal collaborator allocations"],
+      "source_controls": ["research/ALAS_JOAQUIN_R33_GAP_CLOSURE_CONTROL_26SEP2026.md"]
+    }
+  ],
+  "next_expansion_rule": "Every newly alleged or discovered lawyer/firm interference, payment, payment assurance, Bar/disciplinary threat, withdrawal, venia, handover, file-custody, retainer, fee-control or third-party-contact episode receives its own PD-PII incident_id before being relied upon in cross-lawyer pattern analysis."
+}
