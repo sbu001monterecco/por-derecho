@@ -80,3 +80,14 @@ Do not attach unrelated privileged material or private third-party correspondenc
 
 ## 8. Tone
 Short, institutional, factual and firm. No apology for contacting the current platform. No demand that recipients adopt the client's allegations. No threat based on non-response. No request for legal advice. No revival of mandate.
+
+
+## 9. Dual-capacity / alertador overlay
+
+All material former-professional communications also load `PD-COMMS-DUALCAP-ALERTADOR-20260926-01` / `governance/DUAL_CAPACITY_ALERTADOR_COMMUNICATION_RULE_26SEP2026.md`.
+
+The sender should identify, proportionately, both:
+- the former-client/business/economic-interest capacity through AWESWELL LIMITED and its business/operating perimeter; and
+- the continuing alertador/whistleblower capacity before relevant Spanish, EU, German and UK authorities.
+
+Use the applicable-law formulation in that control. Do not convert cross-border whistleblower status into a blanket legal conclusion, and do not use it to revive a former mandate or request legal advice.
