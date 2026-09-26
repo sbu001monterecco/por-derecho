@@ -1,0 +1,89 @@
+{
+  "schema": "por-derecho.platform-lost-opportunity-register.v1",
+  "register_id": "PD-PLATFORM-LOSS-001",
+  "control_date": "2026-09-26",
+  "subject": "AWESWELL LIMITED / Sun Rock — historical platform investments, destroyed/written-off work and potential damages evidence",
+  "status": "PRIVATE_CANONICAL_EVIDENCE_AND_CLAIM_DEVELOPMENT_REGISTER",
+  "controlling_principle": "Historical work that no longer has operating value may still retain evidential and potential compensatory value. No cost or opportunity is recoverable merely because it was incurred; each item requires claimant, legal right, breach/wrong, causation, remoteness, mitigation, quantum and no-double-counting analysis.",
+  "perimeter": {
+    "direct_subsidiaries": [
+      "Luchy Playa Blanca, S.L.U.",
+      "Matkator, S.L.U."
+    ],
+    "economic_platform_entities": [
+      "Pink Canary Services, S.L.U.",
+      "Hava Vida Travel & Tourism, S.L.U."
+    ],
+    "uk_holdco": "AWESWELL LIMITED",
+    "platform": "Sun Rock"
+  },
+  "loss_families": [
+    {
+      "id": "LOSS-SOLOS-01",
+      "asset_or_opportunity": "Proposed acquisition of Solo's Holidays 2002 Limited / Solo's business",
+      "evidence": [
+        "SPA drafts",
+        "exclusivity agreements",
+        "signed distribution agreements",
+        "investment memorandum",
+        "funding models",
+        "Hamlins/Kerman/Spanish-counsel work",
+        "escrow/payment records",
+        "booking and Net Payment records"
+      ],
+      "present_position": "Acquisition not completed; Gil Marer attributes non-completion/breach to the Spanish disruption affecting Sun Rock.",
+      "later_history": "Business/assets later moved to a third party; old target later renamed Arnloft 2002 Limited and dissolved.",
+      "possible_heads": [
+        "sunk transaction/professional cost",
+        "amounts paid or credited toward purchase price",
+        "loss of exclusivity/contract rights",
+        "lost acquisition opportunity",
+        "lost distribution margin and customer channel",
+        "lost growth/enterprise value"
+      ],
+      "proof_gaps": [
+        "exact payer-by-payer amount",
+        "escrow/bank statements",
+        "contractual treatment on termination",
+        "seller notices/default notices",
+        "causation by Spanish events",
+        "mitigation/alternative acquisition routes",
+        "valuation date and method"
+      ]
+    },
+    {
+      "id": "LOSS-PLATFORM-02",
+      "asset_or_opportunity": "Sun Rock integrated hotel/travel/commercialisation platform",
+      "evidence": [
+        "2012–2018 operating records",
+        "Pink/Hava agreements",
+        "direct-sales records",
+        "Solos/Midcounties/FabX channels",
+        "financing work",
+        "Meliá/Ona/operator work"
+      ],
+      "present_position": "User states substantial historic development work was destroyed/written off following the Spanish events and subsequent loss of control/opportunity.",
+      "possible_heads": [
+        "sunk development cost",
+        "lost goodwill/customer data/channel value",
+        "lost operating margin",
+        "lost financing/exit opportunity",
+        "lost platform expansion"
+      ],
+      "proof_gaps": [
+        "legal owner by asset/right",
+        "counterfactual performance",
+        "causation",
+        "valuation",
+        "mitigation",
+        "overlap with hotel-income/recovery claims"
+      ]
+    }
+  ],
+  "evidential_value_rule": "Preserve abandoned, expired, superseded and failed transaction documents. Their lack of current commercial value does not negate contemporaneous evidential value concerning intention, readiness, professionalisation, financing, commercial relationships, counterfactual alternatives or loss.",
+  "source_boundaries": [
+    "User declarations are recorded as attributed positions unless independently corroborated.",
+    "Signed documents prove their terms and transaction maturity, not automatic completion or recoverability.",
+    "Later sale/liquidation can support irreversibility and mitigation analysis but does not by itself prove liability for the original loss."
+  ]
+}
