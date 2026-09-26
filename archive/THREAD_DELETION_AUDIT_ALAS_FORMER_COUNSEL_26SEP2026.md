@@ -161,3 +161,15 @@ Do not restart the analysis, create another incident namespace, or rebuild conta
 All substantive findings, rules, contacts, source limitations, contrary evidence, residual gaps and prepared attachment custody are externalised from chat memory into repository and/or Google Drive controls.
 
 No external email has been sent by this thread.
+
+
+## 14. Post-audit standing communications addition — 26 September 2026
+
+After the initial deletion-safe audit, a further standing rule was externalised and therefore does not create a new chat-only dependency:
+
+- `PD-COMMS-DUALCAP-ALERTADOR-20260926-01`
+- `governance/DUAL_CAPACITY_ALERTADOR_COMMUNICATION_RULE_26SEP2026.md`
+
+Future material communications should, where relevant, identify Gil Marer in dual capacity: former-client/business/economic-interest capacity through AWESWELL LIMITED and continuing alertador/whistleblower capacity before relevant Spanish, EU, German and UK authorities. Applicable protections must be framed jurisdiction-by-jurisdiction, not as blanket automatic coverage. The context includes attributed allegations concerning RIC/tax-incentive structures, FEDER/ERDF and other European funds, regional incentives and the wider adverse-party perimeter.
+
+This addition is preserved in repository controls and must be carried into the continuing thread. It does not change the thread's deletion-safe status.
