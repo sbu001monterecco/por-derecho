@@ -142,3 +142,17 @@ Read this incident alongside, but do not collapse it into:
 Future analysis must refer to this distinct incident as:
 
 **`^PD-SP-INC-2008-02 — Multimatrix / LPB 11-locales option non-completion incident`.**
+
+## 11. Community-capture causation allegation and restitutionary framing
+
+Gil Marer's current allegation is that the wider seller perimeter includes, for this incident, private actors from the Montelanza/Molina dissident perimeter whom he alleges later captured or criminally instrumentalised the Owners' Community organ. His position is that their later acts and omissions form part of an ongoing causal chain that contributed to, maintained or compounded the failure to complete the eleven-locales acquisition and the resulting deprivation.
+
+This is an attributed allegation, not a finding that every seller, dissident, representative, lawyer, administrator or Community office-holder shared a common criminal purpose. The evidence test remains actor-specific: capacity, duty or right, knowledge, act/omission, option or closing effect, causal contribution, harm, later use or benefit, and contrary evidence.
+
+Gil further characterises the present legal position as involving a **survivable restitutionary right**. Repository treatment must preserve that phrase as his legal position while testing it against the exact transaction instruments, title and succession, exercise/prevention, limitation/prescription and interruption, acknowledgment, continuing acts, insolvency/liquidation effects, subsequent dispositions, third-party rights and present standing. No current exercisable option, proprietary entitlement or restitutionary remedy is stated as established unless the primary instruments and current legal analysis support that precise conclusion.
+
+## 12. Thirty-day recursive DD and weekly synthesis control
+
+A dedicated recursive evidence programme is maintained for this incident. Daily cycles search the three authorised Gmail accounts and accessible Google Drive corpus, use newly discovered names/references recursively, and preserve provenance, contradictions and open proof gaps. Weekly synthesis must report what changed, which parts of Gil's attributed theory were strengthened, weakened or contradicted, the evolving survivability/restitution analysis, evidence preservation status, unresolved gaps and the highest-value next searches.
+
+The recurring research programme does not itself prove the allegations and must not convert repetition of an allegation into corroboration.
