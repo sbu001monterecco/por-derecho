@@ -9,15 +9,11 @@
     '/por-derecho/en/strategic-financial-relationship/',
     '/por-derecho/en/platform-scale/',
     '/por-derecho/en/montana-roja/',
-    '/por-derecho/en/open-letter-lanzarote/',
-    '/por-derecho/en/collaborate/',
     '/por-derecho/en/capital-relationships/'
   ] : [
     '/por-derecho/es/relacion-financiera-estrategica/',
     '/por-derecho/es/escala-plataforma/',
     '/por-derecho/es/montana-roja/',
-    '/por-derecho/es/carta-abierta-lanzarote/',
-    '/por-derecho/es/colaborar/',
     '/por-derecho/es/relaciones-de-capital/'
   ]);
   if (!supported.has(path) || document.querySelector('[data-capital-route="20260916"]')) return;
@@ -49,23 +45,6 @@
 
   if (path === capitalPath) return;
 
-  if (/\/(?:collaborate|colaborar)\/$/.test(path)) {
-    const calls = document.querySelector('.collab-calls');
-    const existing = document.querySelector('[data-capital-collab="20260916"]');
-    if (calls && !existing) {
-      const card = document.createElement('article');
-      card.className = 'collab-call';
-      card.id = isEN ? 'capital-calls' : 'convocatoria-capital';
-      card.dataset.collabTrack = 'future';
-      card.dataset.capitalCollab = '20260916';
-      card.innerHTML = isEN ? `
-        <span class="collab-call-index">04A</span><div><div class="collab-call-meta"><span>The Future</span><span class="open">Selective</span></div><h3>Private capital relationship</h3><p>For a principal, single-family office, hotel-owning family, institutional/professional capital provider or trusted introducer who wants to test fit without a public securities offer or public investment terms.</p></div><div class="collab-call-details"><div><strong>Useful position</strong><span>Actual principal/decision-maker or a trusted person able to make a specific introduction</span></div><div><strong>Working boundary</strong><span>Public architecture first; role, jurisdiction and communication basis checked before restricted material</span></div></div><a href="${capitalPath}">Open the capital-relationship gateway →</a>` : `
-        <span class="collab-call-index">04A</span><div><div class="collab-call-meta"><span>El Futuro</span><span class="open">Selectivo</span></div><h3>Relación privada de capital</h3><p>Para un principal, single-family office, familia propietaria de hoteles, proveedor institucional/profesional de capital o introductor de confianza que quiera comprobar el encaje sin oferta pública de valores ni condiciones públicas de inversión.</p></div><div class="collab-call-details"><div><strong>Posición útil</strong><span>Principal/decisor real o persona de confianza capaz de realizar una introducción concreta</span></div><div><strong>Límite de trabajo</strong><span>Primero arquitectura pública; función, jurisdicción y base de comunicación antes de material restringido</span></div></div><a href="${capitalPath}">Abrir la puerta de relaciones de capital →</a>`;
-      const future = document.querySelector('#future-calls');
-      if (future) future.after(card); else calls.appendChild(card);
-    }
-    return;
-  }
 
   const copy = isEN ? {
     strong: 'Private capital relationship — public doorway only.',

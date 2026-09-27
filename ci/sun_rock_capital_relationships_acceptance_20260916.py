@@ -70,35 +70,63 @@ if not errors:
     need(IC_ES, "Financiación comprometida / oferta definitiva")
 
 
-    # Homepage visibility lock: institutional capital must not be promoted directly
-    # from the homepage. The only permitted homepage route is from Future/Futuro.
+    # Investor landing-cluster visibility lock:
+    # investor/capital pages stay public and search-engine discoverable, but ordinary
+    # site navigation must not provide an inbound route. Entry is by exact URL,
+    # search-engine result, or another page already inside the landing cluster.
     home_en = HOME_EN.read_text(encoding="utf-8")
     home_es = HOME_ES.read_text(encoding="utf-8")
-    homepage_forbidden = [
-        ('en/index.html', home_en, '<a href="institutional-capital/">Capital</a>'),
-        ('en/index.html', home_en, '<a class="button" href="institutional-capital/">Institutional capital</a>'),
-        ('en/index.html', home_en, 'class="capital-entry"'),
-        ('es/index.html', home_es, '<a href="capital-institucional/">Capital</a>'),
-        ('es/index.html', home_es, '<a class="button" href="capital-institucional/">Capital institucional</a>'),
-        ('es/index.html', home_es, 'class="capital-entry"'),
-    ]
-    for page, body, forbidden in homepage_forbidden:
-        if forbidden in body:
-            errors.append(f"{page} violates homepage institutional-capital visibility lock: {forbidden!r}")
     if 'href="future/"' not in home_en:
         errors.append("en/index.html missing standalone Future route")
     if 'href="futuro/"' not in home_es:
         errors.append("es/index.html missing standalone Futuro route")
-    if 'institutional-capital/' in home_en:
-        errors.append("en/index.html must not link directly to institutional capital; route via Future")
-    if 'capital-institucional/' in home_es:
-        errors.append("es/index.html must not link directly to institutional capital; route via Futuro")
+
+    ordinary_pages = [
+        ROOT / "en/index.html",
+        ROOT / "en/future/index.html",
+        ROOT / "en/about/index.html",
+        ROOT / "en/open-letter-lanzarote/index.html",
+        ROOT / "en/collaborate/index.html",
+        ROOT / "es/index.html",
+        ROOT / "es/futuro/index.html",
+        ROOT / "es/sobre-nosotros/index.html",
+        ROOT / "es/carta-abierta-lanzarote/index.html",
+        ROOT / "es/colaborar/index.html",
+    ]
+    landing_href_fragments = [
+        "institutional-capital/",
+        "capital-relationships/",
+        "platform-scale/",
+        "montana-roja/",
+        "private-note-programme-administration/",
+        "capital-institucional/",
+        "relaciones-de-capital/",
+        "escala-plataforma/",
+        "administracion-programa-notas-privadas/",
+    ]
+    for page in ordinary_pages:
+        if not page.exists():
+            errors.append(f"missing ordinary-page isolation target: {page.relative_to(ROOT)}")
+            continue
+        body = page.read_text(encoding="utf-8")
+        for frag in landing_href_fragments:
+            if f'href="../{frag}' in body or f'href="{frag}' in body or f'href="../../{frag}' in body:
+                errors.append(f"{page.relative_to(ROOT)} links into investor landing cluster: {frag!r}")
+
     future_en = FUTURE_EN.read_text(encoding="utf-8")
     future_es = FUTURE_ES.read_text(encoding="utf-8")
-    if '../institutional-capital/' not in future_en:
-        errors.append("en/future/index.html missing institutional-capital onward route")
-    if '../capital-institucional/' not in future_es:
-        errors.append("es/futuro/index.html missing capital-institucional onward route")
+    need(FUTURE_EN, "separate public landing pages for direct sharing and search-engine discovery", "landing-page boundary")
+    need(FUTURE_ES, "landing pages públicas separadas para compartir por enlace directo y para descubrimiento mediante buscadores", "landing-page boundary")
+
+    route_text = ROUTE.read_text(encoding="utf-8")
+    for forbidden_runtime_route in (
+        "/por-derecho/en/open-letter-lanzarote/",
+        "/por-derecho/en/collaborate/",
+        "/por-derecho/es/carta-abierta-lanzarote/",
+        "/por-derecho/es/colaborar/",
+    ):
+        if forbidden_runtime_route in route_text.split("if (!supported.has(path)")[0]:
+            errors.append(f"capital runtime injector exposes ordinary route: {forbidden_runtime_route}")
 
     process = json.loads(PROCESS.read_text(encoding="utf-8"))
     if process.get("public_status") != "INSTITUTIONAL_CONVERSATIONS_ACTIVE_NO_COMMITTED_FINANCING":
