@@ -1,8 +1,8 @@
 {
   "schema": "por-derecho.dp1901-direct-action-state.v1",
-  "control_date": "2026-09-24",
+  "control_date": "2026-09-27",
   "control_timezone": "Atlantic/Canary",
-  "status": "13_REGISTERED_POST_FILING_FOLLOWUP_OPEN_WITH_108_2026_SUCCESSORS",
+  "status": "13_REGISTERED_POST_FILING_FOLLOWUP_OPEN_WITH_ROUTING_PROCESSING_AND_CGPJ_INCORPORATION_SUCCESSORS",
   "counts": {
     "candidates": 13,
     "registered_actions": 13,
@@ -58,15 +58,22 @@
   "actions": [
     {
       "id": "A01",
-      "state": "REGISTERED_RECEIPT_VERIFIED",
+      "state": "REGISTERED_DGRAJ_ONWARD_TRANSFER_REPORTED_JUDICIAL_INCORPORATION_OPEN",
       "destination": "Decanato / Registro y Reparto via DGRAJ",
       "dir3": "A05003250",
       "registration": "REGAGE26e00082034813",
       "presented_at": "2026-09-20 13:51:39",
       "registered_at": "2026-09-20 13:51:42",
       "purpose": "Onward routing to Decanato / Registro y Reparto for initiating-document, reparto and association traceability.",
-      "proof": "Receipt proves registration to the stated recipient; onward delivery, association and institutional action remain unproved.",
-      "canonical_event_id": "PD-SP-EVT-0181"
+      "proof": "Receipt proves registration. A 22-Sep DGRAJ reply expressly reports administrative onward transmission of the full documentation to the Common General Service / Registry and Allocation and transmission of reparto/governance aspects to the Presidency. That report does not itself prove procedural filing, judicial incorporation, examination, preservation actually performed, or any merits decision.",
+      "canonical_event_id": "PD-SP-EVT-0181",
+      "successor_20260922": {
+        "source_state": "OFFICIAL_ADMINISTRATIVE_REPLY_REPORTS_ONWARD_TRANSFER",
+        "destination_1": "Servicio Común General del Tribunal de Instancia de Las Palmas de Gran Canaria — Registro y Reparto y Asuntos Generales",
+        "destination_2": "Presidencia del Tribunal de Instancia de Las Palmas de Gran Canaria — reparto/governance aspects",
+        "boundary": "Administrative/institutional routing only; not equivalent to procedural filing and no procedural-deadline effect is inferred.",
+        "judicial_incorporation": "UNVERIFIED"
+      }
     },
     {
       "id": "A02",
@@ -83,7 +90,7 @@
     },
     {
       "id": "A03",
-      "state": "REGISTERED_RECEIPT_VERIFIED",
+      "state": "REGISTERED_WITH_24SEP_SUCCESSOR_INCORPORATION_CONFIRMED_ALZADA_IN_PROGRESS",
       "destination": "CGPJ — Alzada 286/2026",
       "dir3": "I00005220",
       "registration": "REGAGE26e00082030716",
@@ -99,7 +106,14 @@
         "document_pages": 17,
         "document_sha256": "0e27fcd481c29a0b69837fc5cdeb393ddf9fbbb7c03390f6c6b7409efe5228b4",
         "proof": "Later receipt proves registration of one self-contained 17-page PDF containing all four annexes as visible pages; it does not prove four separately registered native annex files, incorporation into Alzada 286/2026, admission, examination or decision.",
-        "do_not_repeat": true
+        "do_not_repeat": true,
+        "incorporation_confirmation_20260925": {
+          "source_state": "CGPJ_RECURSOS_EMAIL_CONFIRMS_INCORPORATION",
+          "alzada_state": "EN_TRAMITE",
+          "proof": "CGPJ Recursos stated on 25-Sep that Alzada 286/26 remained in progress and that the 24-Sep email with annexes and the document presented by electronic registry on 24-Sep were joined to the file.",
+          "printed_registration_reference": false,
+          "boundary": "This confirms incorporation of the described 24-Sep update into the Alzada file, not examination, agreement, a merits finding, or a decision. The email does not print which of the 24-Sep registration numbers is the joined registered document."
+        }
       }
     },
     {
@@ -207,6 +221,12 @@
         "public_state_record": "assets/data/oficio-108-2026-public-state.json",
         "viewer": "evidence/justice/2026/oficio-108-2026/viewer.html?doc=oficio108",
         "proof": "Ministry communication reports receipt and an information request to the TSJC Government Secretariat, with assessment and resolution pending. It does not establish acceptance of allegations or print the originating REGAGE."
+      },
+      "registry_processing_20260921": {
+        "source_state": "REGAGE_PROVIDER_STATUS_EMAIL",
+        "processing_office": "Oficina de Información y O.A.M.R. de la Secretaría de Estado de Justicia",
+        "proof": "Provider status reported the registration as being processed by the named office on 21-Sep.",
+        "boundary": "Informational provider status; not admission, substantive examination, preservation, or decision."
       }
     },
     {
@@ -223,7 +243,7 @@
     },
     {
       "id": "A08",
-      "state": "REGISTERED_RECEIPT_HASH_VERIFIED",
+      "state": "REGISTERED_RECEIPT_HASH_VERIFIED_REGISTRY_PROCESSING_REPORTED",
       "destination": "Fiscalía Provincial de Las Palmas",
       "dir3": "J00001657",
       "registration": "REGAGE26e00082044751",
@@ -242,7 +262,13 @@
         ]
       },
       "proof": "Receipt proves registration and the four attachment hashes. Authorship, allocation, corpus location and institutional action remain unproved.",
-      "canonical_event_id": "PD-SP-EVT-0189"
+      "canonical_event_id": "PD-SP-EVT-0189",
+      "registry_processing_20260921": {
+        "source_state": "REGAGE_PROVIDER_STATUS_EMAIL",
+        "processing_office": "Registro General de la Fiscalía Provincial de Las Palmas",
+        "proof": "Provider status reported the registration as being processed by the named registry office on 21-Sep.",
+        "boundary": "This supports routing/processing at registry level only. It does not identify the author of the 29-Jul report, prove allocation to a Fiscal, locate the corpus, or prove examination/action."
+      }
     },
     {
       "id": "A09",
@@ -258,7 +284,7 @@
     },
     {
       "id": "A10",
-      "state": "REGISTERED_RECEIPT_VERIFIED",
+      "state": "REGISTERED_RECEIPT_VERIFIED_FGE_REGISTRY_PROCESSING_REPORTED",
       "destination": "FGE / Inspección Fiscal",
       "dir3": "J00003992",
       "registration": "REGAGE26e00082033336",
@@ -266,7 +292,13 @@
       "registered_at": "2026-09-20 13:25:03",
       "purpose": "Limited incorporation and preservation of a supervening DP1901 fact in E.G.745.",
       "proof": "Not the separate substantive E.G.745 response. Receipt proves registration only.",
-      "canonical_event_id": "PD-SP-EVT-0199"
+      "canonical_event_id": "PD-SP-EVT-0199",
+      "registry_processing_20260921": {
+        "source_state": "REGAGE_PROVIDER_STATUS_EMAIL",
+        "processing_office": "Registro General de la Fiscalía General del Estado",
+        "proof": "Provider status reported the registration as being processed by the State Prosecutor General registry on 21-Sep.",
+        "boundary": "Registry processing is not proof of incorporation into E.G.745, assignment, examination, or action."
+      }
     },
     {
       "id": "A11",
