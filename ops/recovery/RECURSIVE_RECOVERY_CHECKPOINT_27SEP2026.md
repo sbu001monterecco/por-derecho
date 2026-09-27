@@ -1,0 +1,88 @@
+# Por Derecho recursive recovery controller — public-safe checkpoint
+
+**Control date:** 27 September 2026  
+**State:** 🟠 **AMBER — recursive corpus expansion confirmed; exhaustion not reached**
+
+This is the public-safe companion to the private Drive controller. It intentionally omits Gmail message IDs, pagination tokens, private Drive IDs, personal addresses, private filenames and unredacted source material.
+
+## First recursive pass
+
+Three authorised Gmail accounts were independently scanned across four matter buckets:
+
+- `SBU_PRIMARY` — formal/primary mailbox
+- `GIL_PERSONAL` — corroborating/private source
+- `PATRICIA_PERSONAL` — corroborating/private source
+
+Each of the **12 account × bucket searches returned 100 results and a continuation token**. Therefore no mailbox/bucket is exhausted.
+
+| Account | A · DP1901/Fiscalía | B · Concurso/judicial | C · hotel/control | D · regulatory/professional |
+|---|---:|---:|---:|---:|
+| SBU_PRIMARY | 100+ | 100+ | 100+ | 100+ |
+| GIL_PERSONAL | 100+ | 100+ | 100+ | 100+ |
+| PATRICIA_PERSONAL | 100+ | 100+ | 100+ | 100+ |
+
+The private controller preserves the opaque continuation cursors and exact source-native IDs.
+
+## Recent source families requiring reconciliation
+
+Before allocating any new canonical source/event identity, compare the following against existing repo/Drive controls:
+
+1. AC civil-liability + preservation package.
+2. Meeting Point 357/2024 + 93/2025 successor filing pair.
+3. ALAS / Joaquín / former-counsel reconciliation packages.
+4. Historic mortgage / interest / carencia source package.
+5. 2018 Arrecife declarations and AC correspondence.
+6. 2014–2016 Community governance/title/minute material.
+7. GitLab quota/CI failure notices affecting active recovery branches.
+
+These are **discovery categories**, not findings of liability, filing, authenticity or novelty.
+
+## Drive reconciliation
+
+Use existing private custody structures rather than creating competing vaults, including:
+- Por Derecho Private Workspaces;
+- Por Derecho — Encrypted GitLab Backups;
+- Por Derecho Backups;
+- DP1901–EG745 private recovery;
+- DP1901 / Ref21 / Ref22 / Ref24 dual-layer workspaces;
+- CGPJ preservation;
+- E.G.745 workspace;
+- legacy Sun Park / LPB / Concurso folders.
+
+Private source IDs/locators remain outside public Git.
+
+## State machine
+
+`DISCOVERED → PRESERVED → DIGITIZED → TEXT/CONTENT EXTRACTED → SUBSTANTIVELY ANALYZED → SOURCE-ID ASSIGNED → LINKED TO CLAIM/PROCEEDING/ACTOR → PUBLIC-SAFE DERIVATIVE (if appropriate) → GITHUB UTILIZED → GITLAB UTILIZED → DRIVE CUSTODY VERIFIED → LIVE PUBLIC READBACK (if public)`
+
+A source is not “fully utilised” merely because it was found, attached to an email, copied to Drive or mentioned on a web page.
+
+## GREEN criterion
+
+Overall GREEN requires source-proved completion of all nine conditions in the machine control, including exhaustion/bounded denominators, classification, preservation, digitisation, substantive linkage, GitHub/GitLab reconciliation, Drive custody, live readback and bounded authority-only gaps.
+
+## Automation
+
+The existing **Por Derecho Recursive Scan** automation has been upgraded to:
+- resume the private controller rather than restart searches;
+- scan all three Gmail accounts;
+- continue saved pagination;
+- recursively reconcile Drive;
+- integrate only source-proved deltas into canonical GitHub/GitLab architecture;
+- checkpoint every run;
+- stay enabled until the GREEN criterion is genuinely met.
+
+An immediate run has been **requested**. That proves only that execution was requested, not that the run completed.
+
+## Non-regression
+
+- no bulk host mirroring;
+- no receipt → merits inference;
+- no empty-search → non-existence inference;
+- no new external filing without a residual-gap finding;
+- no public exposure of private Drive/Gmail locators;
+- preserve contrary/lawful explanations and actor/capacity separation.
+
+## Next-pass priority
+
+Continue each of the twelve private continuation cursors, deduplicate against current canonical source registers, fully read high-value attachments, and classify each discovery through the state machine before opening a new public source/event record.
