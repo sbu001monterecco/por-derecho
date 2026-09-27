@@ -730,6 +730,8 @@ AMBER → overall AMBER; all in-scope components GREEN → overall GREEN. GREEN
 requires verification appropriate to the claim; unavailable verification defaults
 to AMBER unless a RED trigger is known.
 
+For every continuity / preservation / deletion-safety / readiness audit, the colour rule is stricter: near the start show an explicit **overall operational/readiness colour** plus a **component-colour table/block** for every material in-scope system/workstream, and repeat the same colour summary in any durable audit artifact. A failed in-scope CI/pipeline/control is RED; an unresolved non-blocking dependency is AMBER; verified completion is GREEN only with claim-appropriate verification. Prose-only continuity audits are non-compliant.
+
 This status is operational/readiness only and must never imply guilt, legal merit,
 evidential weight or the truth of an allegation. It is separate from the thread
 deletion-safety sentinel below; show both when both are applicable.
