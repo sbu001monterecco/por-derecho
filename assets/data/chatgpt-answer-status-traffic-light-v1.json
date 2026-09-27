@@ -36,5 +36,24 @@
     "thread_deletion_control": "PD-THREAD-SENTINEL-20260925-01",
     "independent": true
   },
-  "legal_boundary": "Operational/readiness status only; never implies guilt, legal merit, evidential weight, institutional wrongdoing, or truth of an allegation."
+  "legal_boundary": "Operational/readiness status only; never implies guilt, legal merit, evidential weight, institutional wrongdoing, or truth of an allegation.",
+  "continuity_preservation_audit": {
+    "required": true,
+    "overall_status_required": true,
+    "component_status_block_required": true,
+    "persisted_artifact_must_repeat_colour_summary": true,
+    "minimum_components_when_in_scope": [
+      "external_filings_or_receipts",
+      "durable_file_custody_or_google_drive",
+      "github",
+      "gitlab",
+      "deployment_or_live_readback_if_claimed",
+      "unresolved_evidential_or_routing_controls"
+    ],
+    "failed_control_is_red": true,
+    "unresolved_nonblocking_dependency_is_amber": true,
+    "verified_component_is_green_only_with_claim_appropriate_verification": true,
+    "separate_thread_deletion_cue_required": true,
+    "prose_only_audit_forbidden": true
+  }
 }
