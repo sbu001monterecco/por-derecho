@@ -3,7 +3,7 @@
   "as_of": "2026-09-09",
   "status": "EVIDENCE_LED_HYPOTHESIS_CONTROL",
   "scope": "Cuatrecasas billing, WIP, collection, promissory-note, Cambiario and ETJ claim architecture across Aweswell, LPB and Matkator",
-  "current_dp748_filing_status": "09-SEP-2026_PRESENTATION_VERIFIED_COURT_PROCESSING_OPEN",
+  "current_dp748_filing_status": "16-SEP-2026_ORIGIN_COURT_JOINDER_AND_FISCAL_TRANSFER_VERIFIED_APPELLATE_REMITTAL_OUTCOME_OPEN",
   "core_rule": "Claim perimeter is not the same as the present realization target. Finca 8584 is the exact presently identified ETJ realization target; it does not define the whole Cuatrecasas billing/claim universe.",
   "procedural_separation": "Cambiario 1048/2019, ETJ 163/2020, DP 748/2026 and Concurso 36/2012 remain distinct proceedings. Cross-links are evidentiary, accounting, chronological or investigative unless a formal procedural link is sourced.",
   "entity_roles": [
@@ -33,7 +33,8 @@
         "four Matkator promissory notes total EUR 182517.72",
         "Matkator is defendant/executed party in Cambiario 1048/2019 and ETJ 163/2020"
       ],
-      "open": "formal Matkator engagement for the relevant underlying work, instrument authority/cause and accounting allocation remain to be produced"
+      "open": "Evidential basis of any alleged assumption/guarantee, signing authority, cause, delivery restrictions and work allocation; a Matkator retainer is disputed, not presumed.",
+      "client_position": "NO_ENGAGEMENT_AND_NO_UNDERLYING_FEE_DEBT_CATEGORICALLY_ASSERTED_BY_GIL_MARER"
     }
   ],
   "billing_snapshot": {
@@ -177,7 +178,8 @@
     },
     {
       "id": "CUA-CLAIM-GAP-008",
-      "item": "DP 748 post-9-September court processing: Article 766.4 treatment, other-party transfer, remittal, appellate roll and outcome"
+      "item": "After verified 16-September origin-court processing: Fiscal response, further transfers, remittal, appellate roll, reopening and outcome; each needs its own source.",
+      "partly_closed_by": "docs/cuatrecasas/DP748/2026-09-16_diligencia_ordenacion_apelacion_subs_fulltext_source_safe.md"
     }
   ],
   "linked_proceedings": [
@@ -208,5 +210,74 @@
     "asset_scope": "Both 8584 and 8588 were requested for attachment in the original claim; 8584 alone is the presently identified realization target. Apartment 758 is not Matkator property.",
     "credit_scenario": "EUR 77840 credit and EUR 104677.72 residual principal are a scenario, not verified posted satisfaction.",
     "current_source_control": "archive/CUATRECASAS_PROFESSIONAL_PERIMETER_RECONCILIATION_27SEP2026.md"
+  },
+  "current_position_20260927": {
+    "date": "2026-09-27",
+    "status": "ATTRIBUTED_FIRST_HAND_CLIENT_STATEMENT_NOT_JUDICIAL_FINDING",
+    "source_reference": "GIL-MARER-DIRECT-CONFIRMATION-27SEP2026",
+    "engaging_client": "Gil Marer states categorically that AWESWELL LIMITED alone engaged Cuatrecasas and Matkator never engaged the firm in Spain or the United Kingdom.",
+    "underlying_fee_debt": "He states that Matkator owed no underlying professional-fee debt to Cuatrecasas.",
+    "delivery_purpose": "He states that Matkator pagarés were supplied for internal-accounting accommodation under a limited/residual-purpose arrangement, not to pay Matkator legal bills; expected payment sources were the financing/transaction and hotel income.",
+    "proof_boundary": "The exact agreed restrictions and legal effect of the instruments require the contemporaneous delivery/mandate record. No unrestricted guarantee, assumption of fees or Matkator retainer is conceded. The absence of a retainer alone does not decide instrument enforceability.",
+    "documentary_anchor": "The located July-2019 22-invoice schedule contains 20 AWESWELL recipients, two LPB recipients and no Matkator recipient.",
+    "correction": "Earlier editorial wording that Matkator formal client status varies by workstream does not accurately record this categorical account. Any person asserting a Matkator engagement or assumption must identify its evidential basis; non-location alone is not proof of non-existence."
+  },
+  "current_procedural_state": {
+    "reviewed_as_of": "2026-09-27",
+    "dp748": {
+      "last_verified_event": "2026-09-16",
+      "state": "SUBSIDIARY_APPEAL_PROCESSING_AT_ORIGIN_COURT_VERIFIED",
+      "source": "docs/cuatrecasas/DP748/2026-09-16_diligencia_ordenacion_apelacion_subs_fulltext_source_safe.md",
+      "effect": "Submissions and accompanying document joined; Ministerio Fiscal given five days to make submissions on the subsidiary appeal.",
+      "not_established": [
+        "Fiscal response",
+        "remittal to Audiencia Provincial",
+        "appellate roll",
+        "reopening",
+        "merits outcome"
+      ]
+    },
+    "etj163": {
+      "last_verified_event": "2026-09-17",
+      "state": "REPOSICION_AGAINST_REFUSAL_TO_SUSPEND_DISMISSED",
+      "source": "docs/cuatrecasas/ETJ163/2026-09-17_auto_reposicion_suspension_fulltext_source_safe.md",
+      "effect": "Matkator reposición against the 19-June refusal to suspend was dismissed.",
+      "not_established": [
+        "completed adjudication",
+        "completed remate cession",
+        "whole-credit assignment",
+        "identity or Acosta Matos connection of any ultimate recipient"
+      ],
+      "later_application_status": "Complement, certification and subsequent protective-step filing require their own signed document and filing receipt; no completion inferred."
+    },
+    "scope": "This is a bounded update to identified documents, not certification that no later document exists. Criminal, civil, insolvency and professional routes remain distinct."
+  },
+  "outcome_controls_20260927": {
+    "authority": "One evidence map with separate competent procedural/professional outputs. Publication is not service or a filing.",
+    "objectives": [
+      "asset and evidence protection",
+      "title/service examination",
+      "single-satisfaction reconciliation",
+      "assignment and beneficiary traceability",
+      "professional responsibility by act and capacity",
+      "recovery and verified implementation"
+    ],
+    "required_action_states": [
+      "INSTRUCTED",
+      "ACKNOWLEDGED",
+      "DECLINED",
+      "DEFERRED",
+      "DRAFT",
+      "APPROVED",
+      "SIGNED",
+      "FILED_WITH_RECEIPT",
+      "SERVED",
+      "DECIDED",
+      "IMPLEMENTED",
+      "NOT_VERIFIED"
+    ],
+    "confidentiality": "Private instructions, legal advice, working drafts and mailbox locators remain outside public repositories. Existing expressly authorised public disclosures keep their original scope; they do not authorise later disclosures.",
+    "financial_boundary": "Firm-stated figures are attributed claims, not client admissions. Preserve work/invoice/WIP/proforma/instrument/claim lineage and single satisfaction.",
+    "source_control": "archive/CUATRECASAS_POSITION_STATUS_OUTCOME_UPDATE_27SEP2026.md"
   }
 }

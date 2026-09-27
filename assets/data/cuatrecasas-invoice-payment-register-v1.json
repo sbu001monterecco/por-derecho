@@ -1,1 +1,454 @@
-{"schema":"por-derecho.cuatrecasas-invoice-payment-register.v1","as_of":"2026-09-13","rule":"BILLED!=SETTLED; SETTLED!=CASH. Original/reissue is one charge lineage.","related_registers":{"wip_unbilled":"/assets/data/cuatrecasas-wip-reconciliation-v1.json","whole_claim":"/assets/data/cuatrecasas-whole-claim-architecture-v1.json"},"totals":{"count":22,"face":327608.32,"settled_face":190777.6,"firm_settled_net":189777.6,"outstanding":136830.72,"firm_receipts_to_2015_06_16":86119.03,"evidence_events":175265.52,"settled_residual":15512.08,"wip_2019":152424.95,"unbilled_2020":161738.75,"recipients":{"AWESWELL":20,"LPB":2,"MATKATOR":0}},"payments":[["CUA-PAY-001","2014-03-28/2015-04-23",86119.03,"FIRM_CONFIRMED_RECEIPTS","Firm said €86,119.03 received and supplied wire copies; €8,500 Monterecco receipt shown by SAP when original unavailable.","Aggregate receipt pool; no double allocation across originals/reissues."],["CUA-PAY-002","2015-12-29",16785.16,"BANK+LATER_LEDGER","Bank instruction matches firm's 16-Dec-2015 outstanding total; later ledger settles relevant invoices; one settlement date conflicts.","€1,192.75 net 1510202633 + €5,592.41 1510207267 + €10,000 1510207312; plus €1,000 retainer on 1510202633 face."],["CUA-PAY-003","2016-04-12",22210.52,"BANK+SAME_DATE_LEDGER","Bank instruction exactly matches 1510218494; firm ledger settles same date.","1510218494"],["CUA-PAY-004","2017-01-11/2017-03-31",34878.48,"CHEQUE+LATER_LEDGER","Client reported recorded-delivery cheque for exact firm demand; later ledger settles all three; clearing proof open.","1510212237 + 1510218666 + 1510220172"],["CUA-PAY-005","2018-03-26/2018-04-21",15272.33,"LEDGER_ONLY","Firm schedule later shows three zero-pending invoices; no independent instrument matched.","1710212041 + 1710218706 + 1810203752"]],"predecessors":[["1410112954","2014-09-09","LPB",27015.41,0,"1510207306"],["1410219014","2014-12-31","LPB",30024.2,0,"1510207309"],["1510201269","2015-02-19","LPB",10512.08,10512.08,"1510207279"],["1510201359","2015-02-25","LPB",14079.42,0,"1510207311"],["1510202122","2015-02-27","LPB",5592.41,5592.41,"1510207267"],["1510204889","2015-04-30","LPB",15000,0,"1510207265"]],"invoices":[["1510102162","2015-01-31","AWESWELL",4000.0,4000.0,"S","2015-02-10","LEDGER_SETTLED_ALLOCATION_OPEN","THB Group Lanzarote resort negotiations","Zero-pending in firm ledger; invoice-specific bank receipt not matched.",null],["1510202633","2015-02-28","AWESWELL",2192.75,1192.75,"S","2015-12-29","BANK+RETAINER+LEDGER","February THB negotiations","Native €2,192.75; 2019 schedule nets €1,000 retainer to €1,192.75.",null],["1510207265","2015-06-25","AWESWELL",15000.0,10512.08,"S","2015-06-25","PROVISION/EARLIER_RECEIPT","April-2015 proposal / fee lineage","2019 schedule appears to swap amount with 1510207279; native face controls.",null],["1510207267","2015-06-25","AWESWELL",5592.41,5592.41,"S","2015-06-25","BANK+LEDGER_DATE_CONFLICT","Preliminary-hearing preparation and attendance","Firm called €5,592.41 outstanding on 16-Dec-2015; 2019 schedule assigns 25-Jun-2015 settlement. Conflict preserved.",null],["1510207279","2015-06-25","AWESWELL",10512.08,15000.0,"S","2015-06-25","PROVISION/EARLIER_RECEIPT","Defence to 17-Nov-2014 claim and monitoring","2019 schedule appears to swap amount with 1510207265; native face controls.",null],["1510207306","2015-06-26","AWESWELL",27015.41,27015.41,"S","2015-06-26","REISSUE_ZERO_DUE_RECEIPT_POOL","Debt-refinancing advice","Reissue of 1410112954; no new charge or second payment.",null],["1510207309","2015-06-26","AWESWELL",30024.2,30024.2,"S","2015-06-26","REISSUE_LEDGER_SETTLED","Debt-refinancing advice","Reissue of 1410219014; schedule/native date discrepancy preserved.",null],["1510207311","2015-06-26","AWESWELL",14079.42,14079.42,"S","2015-06-26","REISSUE_ZERO_DUE_RECEIPT_POOL","Debt-refinancing advice","Reissue of 1510201359; no new charge or second payment.",null],["1510207312","2015-06-26","AWESWELL",10000.0,10000.0,"S","2015-12-29","BANK+LEDGER","Debt-refinancing advice","Part of Dec-2015 €16,785.16 bank instruction matched to firm demand.",null],["1510212237","2015-08-31","AWESWELL",3971.15,3971.15,"S","2017-03-31","CHEQUE+LEDGER","Criminal-conflict advice / fee reconciliation","Native date 31-Aug; schedule says 31-May. Cheque reported sent; later ledger settled.",null],["1510218494","2015-12-31","AWESWELL",22210.52,22210.52,"S","2016-04-12","BANK+SAME_DATE_LEDGER","Group financing structure / investment initiatives","Bank instruction equals invoice; later ledger settled same date.",null],["1510218666","2015-12-31","AWESWELL",23643.58,23643.58,"S","2017-03-31","CHEQUE+LEDGER","Contentious matters affecting LPB","Part of €34,878.48 cheque; later ledger settled.",null],["1510220172","2015-12-31","AWESWELL",7263.75,7263.75,"S","2017-03-31","CHEQUE+LEDGER","Criminal-conflict advice","Part of €34,878.48 cheque; later ledger settled.",null],["1710212041","2017-08-31","AWESWELL",1050.28,1050.28,"S","2018-03-26","LEDGER_ONLY","Criminal-conflict advice through Aug-2017","Ledger-only settlement; independent payment proof not matched.",null],["1710215245","2017-10-31","LPB",12000.0,12000.0,"O",null,"OUTSTANDING","Defence to a claim","Schedule/native date discrepancy; outstanding.",null],["1710117218","2017-11-17","LPB",6696.71,6696.71,"O",null,"OUTSTANDING","Preliminary-hearing preparation/attendance","Outstanding in July-2019 schedule.",null],["1710218706","2017-12-29","AWESWELL",6790.76,6790.76,"S","2018-03-26","LEDGER_ONLY","General legal advice H2-2017","Ledger-only settlement; independent payment proof not matched.",null],["1810201631","2018-02-28","AWESWELL",13247.25,13247.25,"O",null,"OUTSTANDING","Insolvency advice / Aweswell court appearance","49.50 detailed hours located; outstanding.",null],["1810203752","2018-04-19","AWESWELL",7431.29,7431.29,"S","2018-04-21","LEDGER_ONLY","Refinancing / insolvency DD / security","32.00 detailed hours; ledger-only settlement.",null],["1810205154","2018-04-30","AWESWELL",1979.25,1979.25,"O",null,"OUTSTANDING","Criminal-conflict advice through Apr-2018","Outstanding.",null],["1810108702","2018-05-31","AWESWELL",72907.51,72907.51,"O",null,"OUTSTANDING","Multicreditor refinancing / DD / ONA / finance / security","262.25 detailed hours; outstanding.",null],["1810219093","2018-12-31","AWESWELL",30000.0,30000.0,"O",null,"OUTSTANDING","Partial Jun-Dec-2018 insolvency / Registry / finance work","Invoice says €97,492.50 accrued but bills €30,000; WIP bridge open.",null]],"discrepancies":[["CUA-BILL-DISC-001","1510202633 native €2,192.75 vs 2019 schedule €1,192.75","Preserve €1,000 retainer separately."],["CUA-BILL-DISC-002","1510207265 / 1510207279 amounts appear swapped in 2019 schedule","Native PDF face controls; schedule retained as discrepancy."],["CUA-BILL-DISC-003","1510207267 outstanding 16-Dec-2015 but 2019 schedule settlement date 25-Jun-2015","Do not silently harmonise."],["CUA-BILL-DISC-004","1510207309 / 1510212237 schedule dates differ from native dates","Native date controls identity; preserve both."],["CUA-BILL-DISC-005","1710215245 schedule date differs from native invoice","Preserve discrepancy."],["CUA-BILL-DISC-006","Six LPB originals later reissued to Aweswell","Count each lineage once."],["CUA-BILL-DISC-007","Settled faces €190,777.60 vs evidence-event total €175,265.52","Residual €15,512.08 remains retainer/provision/reissue/allocation or unmapped; not fresh cash without proof."],["CUA-BILL-DISC-008","WIP / unbilled work later enters separate collection architecture","Use cuatrecasas-wip-reconciliation-v1.json; never collapse WIP, estimate, proforma, pagaré and invoice into one class."]]}
+{
+  "schema": "por-derecho.cuatrecasas-invoice-payment-register.v1",
+  "as_of": "2026-09-13",
+  "rule": "BILLED!=SETTLED; SETTLED!=CASH. Original/reissue is one charge lineage.",
+  "related_registers": {
+    "wip_unbilled": "/assets/data/cuatrecasas-wip-reconciliation-v1.json",
+    "whole_claim": "/assets/data/cuatrecasas-whole-claim-architecture-v1.json"
+  },
+  "totals": {
+    "count": 22,
+    "face": 327608.32,
+    "settled_face": 190777.6,
+    "firm_settled_net": 189777.6,
+    "outstanding": 136830.72,
+    "firm_receipts_to_2015_06_16": 86119.03,
+    "evidence_events": 175265.52,
+    "settled_residual": 15512.08,
+    "wip_2019": 152424.95,
+    "unbilled_2020": 161738.75,
+    "recipients": {
+      "AWESWELL": 20,
+      "LPB": 2,
+      "MATKATOR": 0
+    }
+  },
+  "payments": [
+    [
+      "CUA-PAY-001",
+      "2014-03-28/2015-04-23",
+      86119.03,
+      "FIRM_CONFIRMED_RECEIPTS",
+      "Firm said €86,119.03 received and supplied wire copies; €8,500 Monterecco receipt shown by SAP when original unavailable.",
+      "Aggregate receipt pool; no double allocation across originals/reissues."
+    ],
+    [
+      "CUA-PAY-002",
+      "2015-12-29",
+      16785.16,
+      "BANK+LATER_LEDGER",
+      "Bank instruction matches firm's 16-Dec-2015 outstanding total; later ledger settles relevant invoices; one settlement date conflicts.",
+      "€1,192.75 net 1510202633 + €5,592.41 1510207267 + €10,000 1510207312; plus €1,000 retainer on 1510202633 face."
+    ],
+    [
+      "CUA-PAY-003",
+      "2016-04-12",
+      22210.52,
+      "BANK+SAME_DATE_LEDGER",
+      "Bank instruction exactly matches 1510218494; firm ledger settles same date.",
+      "1510218494"
+    ],
+    [
+      "CUA-PAY-004",
+      "2017-01-11/2017-03-31",
+      34878.48,
+      "CHEQUE+LATER_LEDGER",
+      "Client reported recorded-delivery cheque for exact firm demand; later ledger settles all three; clearing proof open.",
+      "1510212237 + 1510218666 + 1510220172"
+    ],
+    [
+      "CUA-PAY-005",
+      "2018-03-26/2018-04-21",
+      15272.33,
+      "LEDGER_ONLY",
+      "Firm schedule later shows three zero-pending invoices; no independent instrument matched.",
+      "1710212041 + 1710218706 + 1810203752"
+    ]
+  ],
+  "predecessors": [
+    [
+      "1410112954",
+      "2014-09-09",
+      "LPB",
+      27015.41,
+      0,
+      "1510207306"
+    ],
+    [
+      "1410219014",
+      "2014-12-31",
+      "LPB",
+      30024.2,
+      0,
+      "1510207309"
+    ],
+    [
+      "1510201269",
+      "2015-02-19",
+      "LPB",
+      10512.08,
+      10512.08,
+      "1510207279"
+    ],
+    [
+      "1510201359",
+      "2015-02-25",
+      "LPB",
+      14079.42,
+      0,
+      "1510207311"
+    ],
+    [
+      "1510202122",
+      "2015-02-27",
+      "LPB",
+      5592.41,
+      5592.41,
+      "1510207267"
+    ],
+    [
+      "1510204889",
+      "2015-04-30",
+      "LPB",
+      15000,
+      0,
+      "1510207265"
+    ]
+  ],
+  "invoices": [
+    [
+      "1510102162",
+      "2015-01-31",
+      "AWESWELL",
+      4000.0,
+      4000.0,
+      "S",
+      "2015-02-10",
+      "LEDGER_SETTLED_ALLOCATION_OPEN",
+      "THB Group Lanzarote resort negotiations",
+      "Zero-pending in firm ledger; invoice-specific bank receipt not matched.",
+      null
+    ],
+    [
+      "1510202633",
+      "2015-02-28",
+      "AWESWELL",
+      2192.75,
+      1192.75,
+      "S",
+      "2015-12-29",
+      "BANK+RETAINER+LEDGER",
+      "February THB negotiations",
+      "Native €2,192.75; 2019 schedule nets €1,000 retainer to €1,192.75.",
+      null
+    ],
+    [
+      "1510207265",
+      "2015-06-25",
+      "AWESWELL",
+      15000.0,
+      10512.08,
+      "S",
+      "2015-06-25",
+      "PROVISION/EARLIER_RECEIPT",
+      "April-2015 proposal / fee lineage",
+      "2019 schedule appears to swap amount with 1510207279; native face controls.",
+      null
+    ],
+    [
+      "1510207267",
+      "2015-06-25",
+      "AWESWELL",
+      5592.41,
+      5592.41,
+      "S",
+      "2015-06-25",
+      "BANK+LEDGER_DATE_CONFLICT",
+      "Preliminary-hearing preparation and attendance",
+      "Firm called €5,592.41 outstanding on 16-Dec-2015; 2019 schedule assigns 25-Jun-2015 settlement. Conflict preserved.",
+      null
+    ],
+    [
+      "1510207279",
+      "2015-06-25",
+      "AWESWELL",
+      10512.08,
+      15000.0,
+      "S",
+      "2015-06-25",
+      "PROVISION/EARLIER_RECEIPT",
+      "Defence to 17-Nov-2014 claim and monitoring",
+      "2019 schedule appears to swap amount with 1510207265; native face controls.",
+      null
+    ],
+    [
+      "1510207306",
+      "2015-06-26",
+      "AWESWELL",
+      27015.41,
+      27015.41,
+      "S",
+      "2015-06-26",
+      "REISSUE_ZERO_DUE_RECEIPT_POOL",
+      "Debt-refinancing advice",
+      "Reissue of 1410112954; no new charge or second payment.",
+      null
+    ],
+    [
+      "1510207309",
+      "2015-06-26",
+      "AWESWELL",
+      30024.2,
+      30024.2,
+      "S",
+      "2015-06-26",
+      "REISSUE_LEDGER_SETTLED",
+      "Debt-refinancing advice",
+      "Reissue of 1410219014; schedule/native date discrepancy preserved.",
+      null
+    ],
+    [
+      "1510207311",
+      "2015-06-26",
+      "AWESWELL",
+      14079.42,
+      14079.42,
+      "S",
+      "2015-06-26",
+      "REISSUE_ZERO_DUE_RECEIPT_POOL",
+      "Debt-refinancing advice",
+      "Reissue of 1510201359; no new charge or second payment.",
+      null
+    ],
+    [
+      "1510207312",
+      "2015-06-26",
+      "AWESWELL",
+      10000.0,
+      10000.0,
+      "S",
+      "2015-12-29",
+      "BANK+LEDGER",
+      "Debt-refinancing advice",
+      "Part of Dec-2015 €16,785.16 bank instruction matched to firm demand.",
+      null
+    ],
+    [
+      "1510212237",
+      "2015-08-31",
+      "AWESWELL",
+      3971.15,
+      3971.15,
+      "S",
+      "2017-03-31",
+      "CHEQUE+LEDGER",
+      "Criminal-conflict advice / fee reconciliation",
+      "Native date 31-Aug; schedule says 31-May. Cheque reported sent; later ledger settled.",
+      null
+    ],
+    [
+      "1510218494",
+      "2015-12-31",
+      "AWESWELL",
+      22210.52,
+      22210.52,
+      "S",
+      "2016-04-12",
+      "BANK+SAME_DATE_LEDGER",
+      "Group financing structure / investment initiatives",
+      "Bank instruction equals invoice; later ledger settled same date.",
+      null
+    ],
+    [
+      "1510218666",
+      "2015-12-31",
+      "AWESWELL",
+      23643.58,
+      23643.58,
+      "S",
+      "2017-03-31",
+      "CHEQUE+LEDGER",
+      "Contentious matters affecting LPB",
+      "Part of €34,878.48 cheque; later ledger settled.",
+      null
+    ],
+    [
+      "1510220172",
+      "2015-12-31",
+      "AWESWELL",
+      7263.75,
+      7263.75,
+      "S",
+      "2017-03-31",
+      "CHEQUE+LEDGER",
+      "Criminal-conflict advice",
+      "Part of €34,878.48 cheque; later ledger settled.",
+      null
+    ],
+    [
+      "1710212041",
+      "2017-08-31",
+      "AWESWELL",
+      1050.28,
+      1050.28,
+      "S",
+      "2018-03-26",
+      "LEDGER_ONLY",
+      "Criminal-conflict advice through Aug-2017",
+      "Ledger-only settlement; independent payment proof not matched.",
+      null
+    ],
+    [
+      "1710215245",
+      "2017-10-31",
+      "LPB",
+      12000.0,
+      12000.0,
+      "O",
+      null,
+      "OUTSTANDING",
+      "Defence to a claim",
+      "Schedule/native date discrepancy; outstanding.",
+      null
+    ],
+    [
+      "1710117218",
+      "2017-11-17",
+      "LPB",
+      6696.71,
+      6696.71,
+      "O",
+      null,
+      "OUTSTANDING",
+      "Preliminary-hearing preparation/attendance",
+      "Outstanding in July-2019 schedule.",
+      null
+    ],
+    [
+      "1710218706",
+      "2017-12-29",
+      "AWESWELL",
+      6790.76,
+      6790.76,
+      "S",
+      "2018-03-26",
+      "LEDGER_ONLY",
+      "General legal advice H2-2017",
+      "Ledger-only settlement; independent payment proof not matched.",
+      null
+    ],
+    [
+      "1810201631",
+      "2018-02-28",
+      "AWESWELL",
+      13247.25,
+      13247.25,
+      "O",
+      null,
+      "OUTSTANDING",
+      "Insolvency advice / Aweswell court appearance",
+      "49.50 detailed hours located; outstanding.",
+      null
+    ],
+    [
+      "1810203752",
+      "2018-04-19",
+      "AWESWELL",
+      7431.29,
+      7431.29,
+      "S",
+      "2018-04-21",
+      "LEDGER_ONLY",
+      "Refinancing / insolvency DD / security",
+      "32.00 detailed hours; ledger-only settlement.",
+      null
+    ],
+    [
+      "1810205154",
+      "2018-04-30",
+      "AWESWELL",
+      1979.25,
+      1979.25,
+      "O",
+      null,
+      "OUTSTANDING",
+      "Criminal-conflict advice through Apr-2018",
+      "Outstanding.",
+      null
+    ],
+    [
+      "1810108702",
+      "2018-05-31",
+      "AWESWELL",
+      72907.51,
+      72907.51,
+      "O",
+      null,
+      "OUTSTANDING",
+      "Multicreditor refinancing / DD / ONA / finance / security",
+      "262.25 detailed hours; outstanding.",
+      null
+    ],
+    [
+      "1810219093",
+      "2018-12-31",
+      "AWESWELL",
+      30000.0,
+      30000.0,
+      "O",
+      null,
+      "OUTSTANDING",
+      "Partial Jun-Dec-2018 insolvency / Registry / finance work",
+      "Invoice says €97,492.50 accrued but bills €30,000; WIP bridge open.",
+      null
+    ]
+  ],
+  "discrepancies": [
+    [
+      "CUA-BILL-DISC-001",
+      "1510202633 native €2,192.75 vs 2019 schedule €1,192.75",
+      "Preserve €1,000 retainer separately."
+    ],
+    [
+      "CUA-BILL-DISC-002",
+      "1510207265 / 1510207279 amounts appear swapped in 2019 schedule",
+      "Native PDF face controls; schedule retained as discrepancy."
+    ],
+    [
+      "CUA-BILL-DISC-003",
+      "1510207267 outstanding 16-Dec-2015 but 2019 schedule settlement date 25-Jun-2015",
+      "Do not silently harmonise."
+    ],
+    [
+      "CUA-BILL-DISC-004",
+      "1510207309 / 1510212237 schedule dates differ from native dates",
+      "Native date controls identity; preserve both."
+    ],
+    [
+      "CUA-BILL-DISC-005",
+      "1710215245 schedule date differs from native invoice",
+      "Preserve discrepancy."
+    ],
+    [
+      "CUA-BILL-DISC-006",
+      "Six LPB originals later reissued to Aweswell",
+      "Count each lineage once."
+    ],
+    [
+      "CUA-BILL-DISC-007",
+      "Settled faces €190,777.60 vs evidence-event total €175,265.52",
+      "Residual €15,512.08 remains retainer/provision/reissue/allocation or unmapped; not fresh cash without proof."
+    ],
+    [
+      "CUA-BILL-DISC-008",
+      "WIP / unbilled work later enters separate collection architecture",
+      "Use cuatrecasas-wip-reconciliation-v1.json; never collapse WIP, estimate, proforma, pagaré and invoice into one class."
+    ]
+  ],
+  "current_position_status_control": {
+    "as_of": "2026-09-27",
+    "path": "assets/data/cuatrecasas-whole-claim-architecture-v1.json",
+    "source_control": "archive/CUATRECASAS_POSITION_STATUS_OUTCOME_UPDATE_27SEP2026.md",
+    "rule": "Historical events and financial values preserved. Current status and attributed client position are resolved through the existing whole-claim control."
+  }
+}
