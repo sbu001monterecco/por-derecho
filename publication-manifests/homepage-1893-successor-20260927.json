@@ -1,0 +1,66 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-HOMEPAGE-1893-SUCCESSOR-20260927",
+  "control_date": "2026-09-27",
+  "current_state": "PR_OPEN",
+  "owner": "Gil Marer / Project Sun Rock",
+  "authority": "Current instruction: take all steps to take the homepage continuity/preservation lane to green.",
+  "baseline_main": "b0da61a6a9d02b05276d9816f5d9afeb0b01f295",
+  "branch": "homepage/1893-current-main-successor2-20260927",
+  "pull_request": 1994,
+  "predecessor_pull_request": 1893,
+  "package": "homepage-reading-connected-course-current-main-successor",
+  "publication_boundary": "Public homepage refinement only. It preserves attributed allegations, source limits, contrary evidence and seven-person presentation. It does not establish criminal liability, collective guilt, an automatically tainted portfolio, an illicit-AUM figure, a proved Orion transfer or attribution of digital incidents.",
+  "expected_routes": {
+    "en": [
+      "en/index.html"
+    ],
+    "es": [
+      "es/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "en/index.html",
+    "es/index.html",
+    "assets/homepage-reading-20260925.css",
+    "assets/audience-experience-order-20260823.js",
+    "assets/unitary-public-shell-20260818.js",
+    "assets/optimum-reader-journey-finish-20260818.js",
+    "assets/matkator-asset-rights-inbound-20260902.js"
+  ],
+  "preserved_controls": [
+    "Five private principals plus separate Insolvency Administrator and Magistrate-Judge remain prominently visible on both homepages.",
+    "Connected-course allegation remains attributed to Gil Marer and distinct from an adjudicated finding.",
+    "2008 alleged origin, AC-from-inception allegation, later Acosta Matos/CAM entry, convenio/liquidación judicial threshold, 7-Jun-2018 pivot and later-act distinction remain visible.",
+    "Whole-portfolio allegation is paired with asset-by-asset substantiation and lawful-funding/third-party proof boundaries.",
+    "Existing canonical search node is relocated, not hidden or duplicated; refined native navigation is preserved against legacy runtime replacement."
+  ],
+  "open_gaps": [
+    "Exact judicial threshold act/date and allocation/provenance remain source-dependent.",
+    "Current later-act/income/title-use/recovery-response evidence remains actor- and asset-specific.",
+    "Portfolio/source-of-funds tracing remains asset-by-asset without double counting."
+  ],
+  "validation": {
+    "evidence": [
+      "Successor reconstructed on then-current main after #1893 became stale.",
+      "Already-integrated judicial/source and recovery-queue deltas from #1893 were excluded rather than replayed.",
+      "Spanish connected-course paragraph added to restore semantic parity."
+    ],
+    "required": [
+      "repository preservation",
+      "publication integrity",
+      "audience experience",
+      "homepage rendered/browser checks",
+      "route/link integrity",
+      "ES/EN semantic parity",
+      "controller exact-head acceptance",
+      "normal merge",
+      "Pages exact-SHA deployment",
+      "live EN/ES readback"
+    ],
+    "merge_and_live_verification": "pending"
+  },
+  "gitlab_recovery": "Reconcile additively against actual GitLab main only after GitHub exact-head acceptance; no wholesale stale-branch mirror.",
+  "live_state": "NOT_VERIFIED"
+}
