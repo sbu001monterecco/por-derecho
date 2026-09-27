@@ -27,14 +27,16 @@
     "assets/audience-experience-order-20260823.js",
     "assets/unitary-public-shell-20260818.js",
     "assets/optimum-reader-journey-finish-20260818.js",
-    "assets/matkator-asset-rights-inbound-20260902.js"
+    "assets/matkator-asset-rights-inbound-20260902.js",
+    "assets/canonical-home-search-20260902.js"
   ],
   "preserved_controls": [
     "Five private principals plus separate Insolvency Administrator and Magistrate-Judge remain prominently visible on both homepages.",
     "Connected-course allegation remains attributed to Gil Marer and distinct from an adjudicated finding.",
     "2008 alleged origin, AC-from-inception allegation, later Acosta Matos/CAM entry, convenio/liquidación judicial threshold, 7-Jun-2018 pivot and later-act distinction remain visible.",
     "Whole-portfolio allegation is paired with asset-by-asset substantiation and lawful-funding/third-party proof boundaries.",
-    "Existing canonical search node is relocated, not hidden or duplicated; refined native navigation is preserved against legacy runtime replacement."
+    "Existing canonical search node is relocated, not hidden or duplicated; refined native navigation is preserved against legacy runtime replacement.",
+    "Canonical search mount now respects the refined homepage scope from first paint; query-param search still scrolls intentionally."
   ],
   "open_gaps": [
     "Exact judicial threshold act/date and allocation/provenance remain source-dependent.",
@@ -45,7 +47,8 @@
     "evidence": [
       "Successor reconstructed on then-current main after #1893 became stale.",
       "Already-integrated judicial/source and recovery-queue deltas from #1893 were excluded rather than replayed.",
-      "Spanish connected-course paragraph added to restore semantic parity."
+      "Spanish connected-course paragraph added to restore semantic parity.",
+      "Manual inspection of exact-head audience screenshots found the canonical search displacing the opening before delayed reconciliation; successor fixes the original canonical search mount rather than hiding, deleting or duplicating the node."
     ],
     "required": [
       "repository preservation",
