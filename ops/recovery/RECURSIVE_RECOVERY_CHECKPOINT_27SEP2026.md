@@ -151,3 +151,29 @@ Public-safe integrity/digitisation metadata is in:
 
 The recovery manifest is not a merits finding and does not allocate a new canonical event/source identity yet.
 
+## Fourth recursive pass
+
+Configured query-family traversal now totals **4,464 result IDs**.
+
+- SBU_PRIMARY A/B/C/D: **400 each**, all retain continuation.
+- GIL_PERSONAL A: **107**, exhausted current query family.
+- GIL_PERSONAL B: **391**, exhausted current query family.
+- GIL_PERSONAL C/D: **400 each**, continuation remains.
+- PATRICIA_PERSONAL A: **366**, exhausted current query family.
+- PATRICIA_PERSONAL B/C/D: **400 each**, continuation remains.
+
+**3 of 12 configured query families are exhausted; 9 retain continuation.**
+
+### Terminal historical bundle — 2015
+
+The exhausted Gil/Concurso lane contains a 1-Jun-2015 response/support email with **64 supported attachments / 12,262,290 bytes**. The attachment classes span rescue/convenio material, AC correspondence and authorisations, annual accounts, litigation, rent/operating-contract records, Community minutes, and planning/tourism/title documents.
+
+Drive searches confirm multiple existing copies of the enclosing email and component source families. Therefore this is classified as **existing private custody with indexing/deduplication/canonical-utilisation work remaining**, not a reason to upload another duplicate bundle.
+
+Public-safe manifest:
+`ops/recovery/CONCURSO_2015_AC_REQUEST_BUNDLE_PUBLIC_SAFE_27SEP2026.json`
+
+### Exhaustion rule
+
+`QUERY_FAMILY_EXHAUSTED` means Gmail returned no continuation token for that exact query family. It does **not** mean every message/attachment is fully analyzed or that successor alias/date/sender searches are unnecessary.
+
