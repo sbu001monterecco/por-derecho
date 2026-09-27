@@ -306,6 +306,29 @@
       },
       "open_gap_state": "GLOBAL_HISTORIC_DOCKET_BACKFILL_OPEN_EXPLICIT_SOURCE_GAPS_REQUIRED",
       "next_target_mode": "P0_GC_CIV_003_19FEB_5MAR_ARCHIVE_REQUEST_SERVICE_FINALITY_ONLY; NO_BROAD_REDISCOVERY"
+    },
+    {
+      "workspace_id": "AW-SR-MR-SRLN-2026",
+      "title": "AWESWELL LIMITED / Sun Rock / Montaña Roja Capital Programme + SRLN-2026",
+      "status": "ACTIVE",
+      "workspace_reference": "^AW-SR-MR-SRLN-2026",
+      "canonical_drive_reference": "^AW-SR-MR-SRLN-2026-DRIVE",
+      "storage_control_path": "ops/AW_SR_MR_SRLN_2026_DRIVE_REFERENCE.json",
+      "topic_keys": [
+        "AWESWELL_LIMITED",
+        "SUN_ROCK",
+        "MONTANA_ROJA",
+        "HOLDCO",
+        "ACQUISITION",
+        "DEVELOPMENT_FUNDING",
+        "SRLN_2026",
+        "FIRST_CAPITAL",
+        "SCALE_CAPITAL"
+      ],
+      "registration_basis": "Owner-designated programme namespace; storage alias is not a CAEPR identity marker.",
+      "public_private_boundary": "Public alias and routing only; exact Drive locators, diligence material and investor records remain private.",
+      "continuation_rule": "Resolve the private canonical Drive reference, read 00_START_HERE and update existing file IDs. Never create a thread-specific canonical folder.",
+      "coverage_limit": "Current working set. Historical-source completeness and automatic cross-thread synchronization are not asserted."
     }
   ],
   "registration_rule": "Create or recover a stable workspace ID for every substantive Por Derecho workspace when persistence-capable work begins. A workspace may span multiple ChatGPT threads; a ChatGPT thread may be superseded without changing the workspace ID.",

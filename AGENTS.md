@@ -1,3 +1,5 @@
+> **Canonical capital-workspace Drive reference — ^AW-SR-MR-SRLN-2026-DRIVE:** for ^AW-SR-MR-SRLN-2026, Montaña Roja acquisition/development/funding, HoldCo and SRLN-2026 work, read [`ops/AW_SR_MR_SRLN_2026_DRIVE_REFERENCE.json`](ops/AW_SR_MR_SRLN_2026_DRIVE_REFERENCE.json) first. Resolve the single existing private folder through its private GitLab resolver and read `00_START_HERE`. Verify current versions, update existing file IDs, and never create a competing canonical folder. This is a storage/workspace alias, not a CAEPR identity or evidence-status marker.
+
 # Por Derecho repository stewardship rules
 
 These rules apply to every human or automated change in this repository. They preserve the public record; they do not turn allegations into findings.
@@ -758,3 +760,4 @@ Apply `PD-CHATGPT-UCF-INTAKE-20260925-01` from `.github/governance/CHATGPT_UNITA
 - ChatGPT/account memory is retrieval assistance only; current primary sources and current repository controls govern.
 - Before using GitLab as a control source, read `ops/CHATGPT_CROSS_HOST_CONTROL_MANIFEST.json`; current GitHub/GitLab bootstrap blobs are not presumed identical.
 - For Community fees/debt/vote cases, apply both `PD-COMMUNITY-DEBT-ROLE-REVERSAL-20260925-01` and `PD-COMMUNITY-COURT-COMPLETENESS-20260925-01`.
+

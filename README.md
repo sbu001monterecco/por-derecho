@@ -1,5 +1,7 @@
 # Project Sun Rock
 
+> **Canonical capital-workspace Drive reference — ^AW-SR-MR-SRLN-2026-DRIVE:** for ^AW-SR-MR-SRLN-2026, Montaña Roja acquisition/development/funding, HoldCo and SRLN-2026 work, read [`ops/AW_SR_MR_SRLN_2026_DRIVE_REFERENCE.json`](ops/AW_SR_MR_SRLN_2026_DRIVE_REFERENCE.json) first. Resolve the single existing private folder through its private GitLab resolver and read `00_START_HERE`. Verify current versions, update existing file IDs, and never create a competing canonical folder. This is a storage/workspace alias, not a CAEPR identity or evidence-status marker.
+
 Bilingual public website for the Project Sun Rock umbrella platform.
 
 ## Public routes
@@ -102,3 +104,4 @@ The RICPE record keeps the signed PDF itself in private source custody and recor
 Gil Marer states that he has acted and continues to act as a reporting person, informant or whistleblower in communicating to authorities, regulators, professional bodies and other competent recipients information and allegations that he considers grounded and in the public interest. Where their temporal, material, personal, territorial and procedural requirements apply, he invokes the protections and procedures available under [Directive (EU) 2019/1937](https://eur-lex.europa.eu/eli/dir/2019/1937/oj), [Spain's Law 2/2023](https://www.boe.es/buscar/act.php?id=BOE-A-2023-4513), Germany's [HinSchG](https://www.gesetze-im-internet.de/hinschg/), and the British protected-disclosure regimes under the [Public Interest Disclosure Act 1998](https://www.legislation.gov.uk/ukpga/1998/23/contents), [Part IVA of the Employment Rights Act 1996](https://www.legislation.gov.uk/ukpga/1996/18/part/IVA) and [separate Northern Ireland legislation](https://www.legislation.gov.uk/nisi/1998/1763/contents).
 
 This is the author's stated position. It does not confer protected status automatically, apply later legislation retroactively to 2016 facts or communications, or replace a determination by a competent authority or court. The controlling bilingual wording and scope limits are preserved in [AUTHOR_REPORTING_PERSON_ALERTADOR_FOOTER_CONTROL_22AUG2026.md](AUTHOR_REPORTING_PERSON_ALERTADOR_FOOTER_CONTROL_22AUG2026.md).
+
