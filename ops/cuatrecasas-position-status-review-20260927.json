@@ -1,0 +1,34 @@
+{
+  "control": "CUA-CLAIM-POS-20260927",
+  "record_type": "PRE_MERGE_REVIEW_NOT_DEPLOYMENT_CERTIFICATE",
+  "date": "2026-09-27",
+  "reviewed_source_commit": "90778eb04caf502456ef5171855f35195c78ea5b",
+  "github_pr": 1990,
+  "source_review_run": 36339475822,
+  "source_review_job": 108676604776,
+  "source_review_result": "SUCCESS",
+  "checked": {
+    "bilingual_static_pages": 20,
+    "prior_html_anchors_preserved": true,
+    "invoice_and_wip_preexisting_fields_unchanged": true,
+    "whole_claim_financial_snapshot_unchanged": true,
+    "categorical_client_position_attributed_not_adjudicated": true,
+    "spanish_and_english_stale_client_sentence_corrected": true,
+    "existing_repository_preservation_validator": "PASSED",
+    "existing_publication_integrity_validator": "PASSED",
+    "existing_audience_experience_validator": "PASSED",
+    "temporary_preparation_workflow_removed": true
+  },
+  "gitlab": {
+    "project_id": 86151898,
+    "merge_request": 682,
+    "observed_pipeline": 2887284917,
+    "observed_failure": "ci_quota_exceeded",
+    "jobs_returned": 45,
+    "jobs_started": 0,
+    "boundary": "This new capacity failure is separate from earlier main-branch configuration/checksum failures. No test, security setting, subscription or billing control has been changed. GitLab source completion and publication require their own evidence."
+  },
+  "merge_and_live_state_at_record": "PENDING",
+  "no_email_or_legal_filing_performed": true,
+  "source_receipt": "ops/cuatrecasas-position-status-source-receipt-20260927.json"
+}
