@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 54,
   "owner": "1960:b5ea0bc932fdb00c6bb5132ce23bc2d0980d617b",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 1960,
   "base_sha": "1b4a2752a3d49867159bd7530bd23359400b8265",
   "candidate_sha": "b5ea0bc932fdb00c6bb5132ce23bc2d0980d617b",
@@ -2751,6 +2751,32 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 1960,
+      "candidate_sha": "b5ea0bc932fdb00c6bb5132ce23bc2d0980d617b",
+      "at": "2026-09-27T09:56:32.357840Z",
+      "merge_sha": "b37dabb4f5d4732b6925b498ca0bde08df82560c",
+      "pages_run_id": 36310850490,
+      "exact_matches": [
+        {
+          "path": "en/index.html",
+          "sha256": "dcfb094898aeba75717da6afad71be72150c031e03e436f27bcf6503ad54b5c3",
+          "bytes": 226845
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "dab16c882053efb40f8c07d1332b6af5fe5d95f8764a6aed867ef8a52573b8d7",
+          "bytes": 235663
+        },
+        {
+          "path": "ops/AW_SR_MR_SRLN_2026_DRIVE_REFERENCE.json",
+          "sha256": "e04d5a9666e62ccdb30eca2f9912c6e478d619bd98d0e76e4edd71863c0a1b8a",
+          "bytes": 2575
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -2793,7 +2819,34 @@
         "pages_run_id": 36310850490,
         "merge_sha": "b37dabb4f5d4732b6925b498ca0bde08df82560c"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-27T09:56:32.357804Z",
+      "evidence": {
+        "merge_sha": "b37dabb4f5d4732b6925b498ca0bde08df82560c",
+        "pages_run_id": 36310850490,
+        "exact_matches": [
+          {
+            "path": "en/index.html",
+            "sha256": "dcfb094898aeba75717da6afad71be72150c031e03e436f27bcf6503ad54b5c3",
+            "bytes": 226845
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "dab16c882053efb40f8c07d1332b6af5fe5d95f8764a6aed867ef8a52573b8d7",
+            "bytes": 235663
+          },
+          {
+            "path": "ops/AW_SR_MR_SRLN_2026_DRIVE_REFERENCE.json",
+            "sha256": "e04d5a9666e62ccdb30eca2f9912c6e478d619bd98d0e76e4edd71863c0a1b8a",
+            "bytes": 2575
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-27T09:56:28.656453Z"
+  "updated_at": "2026-09-27T09:56:32.357804Z"
 }
