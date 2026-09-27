@@ -1,13 +1,13 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 53,
-  "owner": "1946:07e92fc64fadc3b18162dd228c2332742aab7e15",
-  "phase": "ABORTED_BEFORE_MERGE",
-  "pr": 1946,
-  "base_sha": "7ebcbfebc6faa221dc8c46df3ef6501cb5816af7",
-  "candidate_sha": "07e92fc64fadc3b18162dd228c2332742aab7e15",
-  "run_id": 36272978035,
-  "claimed_at": "2026-09-26T21:27:30.690864Z",
+  "fence": 54,
+  "owner": "1960:b5ea0bc932fdb00c6bb5132ce23bc2d0980d617b",
+  "phase": "CLAIMED",
+  "pr": 1960,
+  "base_sha": "1b4a2752a3d49867159bd7530bd23359400b8265",
+  "candidate_sha": "b5ea0bc932fdb00c6bb5132ce23bc2d0980d617b",
+  "run_id": 36310803216,
+  "claimed_at": "2026-09-27T09:53:55.431486Z",
   "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
     {
@@ -2753,32 +2753,5 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-09-26T21:27:32.103053Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "PD release acceptance",
-            "id": 108489838608,
-            "conclusion": "success"
-          },
-          {
-            "name": "publication-integrity",
-            "id": 108489838329,
-            "conclusion": "success"
-          }
-        ]
-      }
-    },
-    {
-      "phase": "ABORTED_BEFORE_MERGE",
-      "at": "2026-09-27T05:34:48.660153Z",
-      "evidence": {
-        "pr_unmerged": true
-      }
-    }
-  ],
-  "updated_at": "2026-09-27T05:34:48.660153Z"
+  "checkpoints": []
 }
