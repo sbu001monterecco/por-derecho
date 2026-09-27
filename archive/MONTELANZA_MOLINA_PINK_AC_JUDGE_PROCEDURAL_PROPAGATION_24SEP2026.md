@@ -201,3 +201,12 @@ This bridge is mandatory context for future work involving:
 ## 12. Safety / falsification rule
 
 This is an investigative and forensic map. It does not declare criminal guilt, conspiracy, corruption, judicial wrongdoing or collective responsibility. An identified relationship proves only the relationship actually sourced. Later adoption does not prove prior coordination. Association does not transfer knowledge or intent. A judgment proves what it decided within its scope; it does not silently decide the upstream or downstream questions listed here.
+
+
+## 13. Mandatory criminal/procedural-law addendum — 27-Sep-2026
+
+For any criminal, prosecutorial, falsity, procedural-fraud, administration-of-assets, insolvency-offence, participation/omission, judicial-prevarication or organization/group analysis arising from this bridge, also read:
+
+- `archive/JV1260_PINK_CRIMINAL_PROCEDURAL_LAW_INTEGRATION_27SEP2026.md`
+
+That addendum controls the offence-element tests, temporal-law gate, public-law duty baseline, evidence labels and P0 proof sequence. It does not upgrade any allegation into a finding.
