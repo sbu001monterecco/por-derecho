@@ -177,3 +177,22 @@ Public-safe manifest:
 
 `QUERY_FAMILY_EXHAUSTED` means Gmail returned no continuation token for that exact query family. It does **not** mean every message/attachment is fully analyzed or that successor alias/date/sender searches are unnecessary.
 
+## Google Drive recursive census
+
+Initial direct-child census of the main private custody roots:
+
+| Private custody root | Direct children |
+|---|---:|
+| Old Sun Park Main Folder | 41 |
+| LPB Concurso refinance/legal 2012–2018 | 5 |
+| Por Derecho Private Workspaces | 17 |
+| Por Derecho Backups | 9 |
+| Encrypted GitLab Backups | 4 |
+| E.G.745 workspace | 2 |
+
+The Old Sun Park root contains **34 subfolders**, including high-value acquisition, finance, valuation, title/licence, image, marketing and hotel-development families. Direct files include 2018 Dahan packs, a KPMG project-finance information request, a large “moving forward” ZIP and Santander 2017 letters of intent.
+
+The private Drive controller stores the actual folder IDs. Public Git intentionally stores only public-safe names/counts/classes.
+
+Drive exhaustion is now governed by the same recursive rule as Gmail: enumerate → classify → deduplicate → extract material deltas → link to canonical actors/proceedings/claims → verify custody → publish only public-safe derivatives when appropriate.
+
