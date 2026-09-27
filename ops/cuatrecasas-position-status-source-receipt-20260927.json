@@ -63,7 +63,7 @@
     {
       "path": "en/cuatrecasas-sun-park/index.html",
       "before_sha256": "9f152932fdb6aa52b16735a0112f3fb2789727f6ef9b24174a1bbad74d2b8e5d",
-      "after_sha256": "a02befb6ba838e6e040322008780931f6c316ba8dcb6d3762a6b96e162f66742"
+      "after_sha256": "68f117d10645027c245fd22135988159d8d5b737eb78531e2fd8d7b288c56635"
     },
     {
       "path": "en/cuatrecasas-wip-unbilled/index.html",
@@ -118,7 +118,7 @@
     {
       "path": "es/cuatrecasas-sun-park/index.html",
       "before_sha256": "3c914199eff3883edfa0d26953eb759983269d9c3c7fd5f0655c0920fee222a5",
-      "after_sha256": "6765d942fb96d7febc66eb62ebe7f035831b93a2e4ffa4041fa5efe66f4d65d1"
+      "after_sha256": "f08b6ed15b5aa4f960d4f79a48732704bc6582d9e2c816d0efb61aaf8482ddf7"
     },
     {
       "path": "es/cuatrecasas-wip-no-facturado/index.html",
@@ -144,7 +144,7 @@
   "not_present_on_this_host": [],
   "exact_editorial_replacements": {
     "en/cuatrecasas-sun-park/index.html": 1,
-    "es/cuatrecasas-sun-park/index.html": 0,
+    "es/cuatrecasas-sun-park/index.html": 1,
     "en/cuatrecasas-matkator-whole-claim/index.html": 0,
     "es/cuatrecasas-matkator-reclamacion-integral/index.html": 0,
     "en/cuatrecasas-wip-unbilled/index.html": 0,
@@ -165,5 +165,14 @@
     "es/centro-mando-recuperacion/index.html": 0
   },
   "no_global_parity_claim": true,
-  "no_external_email_or_filing": true
+  "no_external_email_or_filing": true,
+  "editorial_review": {
+    "date": "2026-09-27",
+    "static_pages_checked": 20,
+    "all_prior_html_anchors_preserved": true,
+    "invoice_wip_existing_fields_identical": true,
+    "financial_snapshot_identical": true,
+    "en_es_client_position_corrected": true,
+    "deployment_not_established": true
+  }
 }

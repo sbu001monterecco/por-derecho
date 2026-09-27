@@ -190,7 +190,8 @@ def main():
         if MARKER in old: continue
         changed=old
         replacements={
-          'formal client status varies by workstream and remains to be proved':'Gil Marer categorically denies any Matkator engagement; any asserted instrument or assumption basis requires separate evidence',
+          'while its formal client status varies by workstream and remains to be proved':'Gil Marer categorically denies that Matkator ever engaged the firm; any asserted instrument-based obligation or assumption of fees requires separate evidence',
+          'mientras que su condición de cliente formal varía según workstream y debe probarse':'Gil Marer niega categóricamente que Matkator contratara al despacho; cualquier obligación cambiaria o asunción de honorarios que se alegue requiere prueba separada',
           'No later reposición ruling, adjudication decree, cession, registration or possession act has been located.':'Historical 9-September checkpoint, superseded as to reposición by the 17-September order: see the current status panel. Completed adjudication, cession, registration and possession still require their own source.',
           'no se ha localizado una resolución posterior de reposición, decreto de adjudicación, cesión, inscripción o acto de posesión':'corte histórico de 9 de septiembre, superado en cuanto a la reposición por el Auto de 17 de septiembre; véase el panel actual. Adjudicación, cesión, inscripción y posesión requieren su propia fuente'
         }
