@@ -119,3 +119,35 @@ These remain **reconciliation leads**, not automatically new canonical facts or 
 
 Exhausting one configured query family does not establish universal mailbox exhaustion. New aliases, sender identities, case references, attachment names or date partitions discovered during substantive review may justify successor searches.
 
+## Third recursive pass
+
+All eleven still-open configured mailbox lanes advanced one further 100-result page. Public-safe cumulative traversal is now:
+
+- SBU_PRIMARY A/B/C/D: **300 each**
+- GIL_PERSONAL A: **107 and exhausted for the current configured query family**
+- GIL_PERSONAL B/C/D: **300 each**
+- PATRICIA_PERSONAL A/B/C/D: **300 each**
+- aggregate list-level traversal: **3,407 result IDs**
+
+Eleven configured lanes still have continuation state.
+
+### High-value pass-3 source families
+
+1. 2018 Fiscalía complaint + annexes + presentation receipt.
+2. June 2018 Daniel Irigoyen / Luchy correspondence.
+3. May 2019 notarial site-inspection/destruction package with plans/cadastral/title material.
+4. March 2019 LPB local-title correspondence involving ALAS / MayCap / Juan Tomás.
+5. February 2021 AC/peritos estate-condition request.
+6. September 2026 Cabildo/Yaiza/CNMV RICPE–Orion communications.
+
+Repository reconciliation shows several are already represented at proposition/proceeding level. The 2018 Fiscalía packet and 2019 notarial packet remain priority source-level reconciliation candidates.
+
+### First recovered packet moved through preservation/digitisation
+
+The 2018 Fiscalía packet is now privately preserved as **7 original PDFs + 7 extraction artifacts** with Drive readback confirming 14 children.
+
+Public-safe integrity/digitisation metadata is in:
+`ops/recovery/FISCALIA_2018_RECOVERED_PACKET_PUBLIC_SAFE_27SEP2026.json`
+
+The recovery manifest is not a merits finding and does not allocate a new canonical event/source identity yet.
+
