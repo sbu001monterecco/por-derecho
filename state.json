@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 58,
   "owner": "2000:7e7e159718a7c05c12de8d4f2a03582f2ffb9a08",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 2000,
   "base_sha": "521fe59e3656f7c0c78b420633814c5721a12be2",
   "candidate_sha": "7e7e159718a7c05c12de8d4f2a03582f2ffb9a08",
@@ -2965,6 +2965,32 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 2000,
+      "candidate_sha": "7e7e159718a7c05c12de8d4f2a03582f2ffb9a08",
+      "at": "2026-09-27T20:59:39.104792Z",
+      "merge_sha": "67bd5093db6d794d58e5ac474a04a080d2a9f1aa",
+      "pages_run_id": 36349957434,
+      "exact_matches": [
+        {
+          "path": "assets/data/canary-professional-intercollegial-perimeter-v1.json",
+          "sha256": "2148c558cd25df621dcbd50eba2d980fffbd2f43c5e698315a0fdc906ef6871c",
+          "bytes": 14523
+        },
+        {
+          "path": "en/index.html",
+          "sha256": "8d9fa089ac9091b1514f619d03afcb7e58d504556e5734d01ca3aab53cf2a7e5",
+          "bytes": 233566
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "eb5b8ef20cd79de1364b6187a8f0dda996febbd5c66af6b8dc847f715f08bbbd",
+          "bytes": 243168
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -3007,7 +3033,34 @@
         "pages_run_id": 36349957434,
         "merge_sha": "67bd5093db6d794d58e5ac474a04a080d2a9f1aa"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-27T20:59:39.104740Z",
+      "evidence": {
+        "merge_sha": "67bd5093db6d794d58e5ac474a04a080d2a9f1aa",
+        "pages_run_id": 36349957434,
+        "exact_matches": [
+          {
+            "path": "assets/data/canary-professional-intercollegial-perimeter-v1.json",
+            "sha256": "2148c558cd25df621dcbd50eba2d980fffbd2f43c5e698315a0fdc906ef6871c",
+            "bytes": 14523
+          },
+          {
+            "path": "en/index.html",
+            "sha256": "8d9fa089ac9091b1514f619d03afcb7e58d504556e5734d01ca3aab53cf2a7e5",
+            "bytes": 233566
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "eb5b8ef20cd79de1364b6187a8f0dda996febbd5c66af6b8dc847f715f08bbbd",
+            "bytes": 243168
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-27T20:59:35.774997Z"
+  "updated_at": "2026-09-27T20:59:39.104740Z"
 }
