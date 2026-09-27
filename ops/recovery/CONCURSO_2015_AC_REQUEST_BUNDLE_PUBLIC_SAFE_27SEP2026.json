@@ -1,0 +1,36 @@
+{
+  "schema": "por-derecho.recovered-source-bundle-public-safe.v1",
+  "control_date": "2026-09-27",
+  "packet_id": "REC-CONCURSO-2015-BUNDLE-01",
+  "source_date": "2015-06-01",
+  "source_role": "Response/support-document bundle concerning insolvency administration requests and LPB records",
+  "attachment_count": 64,
+  "total_attachment_bytes": 12262290,
+  "custody_state": "EXISTING_DRIVE_COPIES_CONFIRMED_REUPLOAD_NOT_REQUIRED",
+  "canonical_allocation_state": "SOURCE_INDEX_RECONCILIATION_REQUIRED_NO_NEW_EVENT_ALLOCATED",
+  "attachment_classes": [
+    "rescue/convenio correspondence and drafts",
+    "insolvency-administration correspondence/authorisations/document requests",
+    "annual accounts / bank / accounting communications",
+    "civil proceeding 562/2014 materials",
+    "rent / operating-contract correspondence",
+    "Owners' Community minutes and governance records",
+    "tourism / urban-planning / title / statutes materials"
+  ],
+  "repository_reconciliation": {
+    "proposition_level_matches_exist": true,
+    "exact_container_match_publicly_indexed": false,
+    "drive_container_copies_exist": true,
+    "component_sources_partly_canonicalised": true
+  },
+  "priority": "HIGH_SOURCE_INDEXING_AND_DEDUPLICATION",
+  "proof_boundary": "Bundle recovery shows a contemporaneous source collection and custody pathway. It does not by itself prove the truth of the underlying statements or create independent corroboration where component sources are duplicates.",
+  "next_steps": [
+    "hash-index all 64 attachment bytes from one controlled source copy",
+    "map exact duplicates to existing canonical source IDs",
+    "digitize only members not already text/image controlled",
+    "link material deltas to existing actors/proceedings/claims without multiplying events",
+    "record excluded noise/duplicates so future scans do not repeat work"
+  ],
+  "private_source_ids_publicly_excluded": true
+}
