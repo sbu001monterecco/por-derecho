@@ -1,0 +1,40 @@
+{
+  "schema": "sun-rock.canonical-drive-reference.v1",
+  "reference": "^AW-SR-MR-SRLN-2026-DRIVE",
+  "workspace_reference": "^AW-SR-MR-SRLN-2026",
+  "control_date": "2026-09-27",
+  "status": "CANONICAL_REFERENCE",
+  "scope": "AWESWELL LIMITED / Sun Rock / Montaña Roja Capital Programme + SRLN-2026",
+  "reference_type": "workspace_storage_alias_not_CAEPR_identity_verification",
+  "canonical_storage_provider": "Google Drive",
+  "private_resolver": {
+    "gitlab_project_id": 86151898,
+    "path": "private/capital/srln-2026/CANONICAL_DRIVE_REFERENCE.json",
+    "ref": "current main"
+  },
+  "public_projection": "Alias and continuity rules only; private source locators and contents remain access-controlled.",
+  "rules": [
+    "All related human, ChatGPT, Codex and automation work uses this one existing canonical Drive folder.",
+    "Resolve the exact folder ID through the private resolver; verify it and read 00_START_HERE before substantive Drive work.",
+    "Folder identity is the Drive folder ID, not its display name or a ChatGPT thread title.",
+    "Read current file versions and source-status qualifications; update existing file IDs rather than creating parallel canonical copies.",
+    "Do not create a replacement canonical folder on access failure. Record ACCESS_UNAVAILABLE and preserve a clearly labelled local draft for later reconciliation.",
+    "Search, hash-check and reconcile legacy sources before migration. Archives, legal-source vaults, backups and investor-release staging retain their distinct roles.",
+    "A change to the canonical folder requires an explicit owner instruction and coordinated updates to both repositories, the Drive index and saved continuity instructions.",
+    "Refresh current main and the Drive index on every resumed thread. Chat memory accelerates retrieval but is not a file-version authority.",
+    "Do not expand sharing, publish private documents, or treat an alias/link as permission to access or disclose them.",
+    "This control does not retroactively synchronize already-running or disconnected threads; they must reload it."
+  ],
+  "related_workspace_aliases": [
+    "^AW-SR-MR",
+    "^SRLN-2026",
+    "^FIRST-CAPITAL",
+    "^SCALE-CAPITAL",
+    "^MR-PARCEL",
+    "^MR-PUBLIC-SUPPORT",
+    "^SRLN-VDR",
+    "^CAPITAL-PROVIDERS-50"
+  ],
+  "private_recipient_workspaces": "Use the same folder; personal recipient identifiers are withheld from this public projection.",
+  "website_effect": "Repository/bootstrap control only. No website navigation, sitemap, investor access or deck publication is changed."
+}
