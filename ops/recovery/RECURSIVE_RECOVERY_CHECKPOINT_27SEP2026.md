@@ -86,3 +86,36 @@ An immediate run has been **requested**. That proves only that execution was req
 ## Next-pass priority
 
 Continue each of the twelve private continuation cursors, deduplicate against current canonical source registers, fully read high-value attachments, and classify each discovery through the state machine before opening a new public source/event record.
+
+## Second recursive pass
+
+All twelve private continuation cursors were advanced one page.
+
+Public-safe cumulative state:
+- SBU_PRIMARY A/B/C/D: **200 result IDs seen per bucket; continuation remains**.
+- GIL_PERSONAL A: **107 total; no continuation token — current configured query family exhausted**.
+- GIL_PERSONAL B/C/D: **200 per bucket; continuation remains**.
+- PATRICIA_PERSONAL A/B/C/D: **200 per bucket; continuation remains**.
+
+Aggregate list-level result IDs traversed across configured buckets: **2,307**. This is a search-result traversal count, not a count of unique evidence items or fully reviewed attachments.
+
+One of twelve configured bucket/query families is exhausted; eleven still have continuation state.
+
+### Second-pass reconciliation leads
+
+- counsel DP1901 initiating-filing verification chain with receipt/photo attachments;
+- provider confirmation that the GitLab account had been reviewed/unblocked;
+- 2014 Juan Tomás / Borja / Community-bank correspondence;
+- 2022 legal-aid / calificación notification chain;
+- 2025 OLAF correspondence attachments;
+- 2024 Project Sun Rock intervention/legal-opinion package;
+- 2023 calificación witness-preparation correspondence;
+- 2022 party communication to Fiscalía concerning Acosta Matos / Canarias7 allegations;
+- newsletter/training noise class to exclude from evidence counts.
+
+These remain **reconciliation leads**, not automatically new canonical facts or events.
+
+### Proof ceiling
+
+Exhausting one configured query family does not establish universal mailbox exhaustion. New aliases, sender identities, case references, attachment names or date partitions discovered during substantive review may justify successor searches.
+
