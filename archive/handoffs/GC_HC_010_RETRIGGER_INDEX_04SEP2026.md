@@ -1,1 +1,0 @@
-Index for this finite retrigger checkpoint: `2026-09-04-gc-hc-010-master-projection-retrigger.md`, matching JSON, projection parity note, scope boundary and completion criteria. The actual executable change is the workflow retrigger marker in `.github/workflows/migrate-gc-hc-010-master-projection-04sep2026.yml`.
