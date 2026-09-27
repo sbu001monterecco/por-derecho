@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.recursive-recovery-controller-public.v1",
   "control_date": "2026-09-27",
-  "state": "AMBER_PASS4_PLUS_TARGETED_SUCCESSOR_RECONCILIATION_THREE_OF_TWELVE_QUERY_FAMILIES_EXHAUSTED",
+  "state": "AMBER_GREEN_CONVERGENCE_V2_REPRODUCIBLE_QUERY_EXHAUSTION_IN_PROGRESS",
   "accounts": [
     {
       "id": "SBU_PRIMARY",
@@ -329,7 +329,20 @@
       "Hotel Sun Park moving-forward ZIP",
       "Santander 2017 letters of intent"
     ],
-    "rule": "Folder roots are private-custody anchors. Public control records titles/counts/classes only; private IDs remain excluded."
+    "rule": "Folder roots are private-custody anchors. Public control records titles/counts/classes only; private IDs remain excluded.",
+    "current_live_root_direct_children": 39,
+    "current_live_root_count_supersedes_stale_41_for_accessible_provider_census": true,
+    "old_sun_park_accessible_tree_folder_enumeration": "GREEN_ALL_DISCOVERED_NESTED_FOLDERS_DESCENDED",
+    "old_sun_park_material_analysis": "AMBER_SOURCE_LEVEL_RECONCILIATION_CONTINUES",
+    "high_value_source_families": [
+      "2015 LPB refinance draft — source identifies Aweswell as sole LPB shareholder and contemplated Cerberus/SAREB refinance; draft/placeholders, not executed terms",
+      "2017 Hamlins Solos legal due diligence for proposed Sun Rock acquisition — limited scope and seller-supplied data room; proposed transaction, not completion proof",
+      "2012 TAXA pericial condition report — deterioration/leaks/fire-safety issues and estimated EUR291k technical solution",
+      "14-May-2014 SAREB valuation analysis — source-authored valuation/causation analysis, not adjudicated finding",
+      "2014 Community accounts / tourist licence / planning filing — present but connector image-only/visual-review-required",
+      "2017 FRB/Bond structuring/service/engagement/model family",
+      "title-note corpus and Additional Units planning/architectural corpus"
+    ]
   },
   "targeted_successor_pass_20260927": {
     "completed": true,
@@ -353,5 +366,31 @@
       "reason": "This was a targeted successor search, not a continuation-token advance of the 12 configured broad buckets."
     },
     "drive_reconciliation": "Substantial 20–24 Sep DP1901/EG745 filing, receipt, ATLANTE, TSJC/LAJ, EG745, follow-up and Oficio108 custody is directly discoverable in Drive. Full recursive Drive exhaustion remains open."
+  },
+  "query_reproducibility_v2": {
+    "reason": "Historical traversal preserved opaque continuation tokens without exact query strings. Historical coverage remains valid, but reproducible exhaustion is controlled by explicit v2 queries.",
+    "exact_queries": {
+      "A": "in:anywhere (\"DP1901\" OR \"1901/2026\" OR \"E.G.745\" OR \"EG 745\" OR \"745/2026\" OR Fiscalía OR ATLANTE OR \"Ref.21\" OR Ref21 OR \"Ref.24\" OR Ref24)",
+      "B": "in:anywhere (\"36/2012\" OR \"Concurso 36\" OR \"administrador concursal\" OR \"administración concursal\" OR calificación OR RPL OR apelación)",
+      "C": "in:anywhere (\"Sun Park\" OR MYND OR \"Acosta Matos\" OR \"Meeting Point\" OR Stoneweg OR ONA)",
+      "D": "in:anywhere (Cuatrecasas OR RICPE OR Orion OR CNMV OR CaixaBank OR Cajasiete OR PwC OR RSM OR \"Grant Thornton\" OR FEDER OR \"fondos europeos\" OR \"incentivos regionales\")"
+    },
+    "private_tokens_excluded": true,
+    "manual_progress": {
+      "GIL_PERSONAL_A": {
+        "state": "QUERY_V2_EXHAUSTED",
+        "results_total": 92
+      },
+      "GIL_PERSONAL_B": {
+        "state": "QUERY_V2_EXHAUSTED",
+        "results_total": 488
+      },
+      "GIL_PERSONAL_C": {
+        "state": "PAGINATION_OPEN_PROVIDER_INTERRUPTED",
+        "results_seen_at_checkpoint": 154,
+        "provider_error": "FORBIDDEN_AFTER_VERIFIED_PAGE_2"
+      }
+    },
+    "proof_boundary": "Provider errors do not establish exhaustion. Exact private tokens remain only in the private controller."
   }
 }
