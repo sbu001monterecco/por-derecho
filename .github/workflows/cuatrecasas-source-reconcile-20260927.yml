@@ -1,0 +1,40 @@
+name: Prepare scoped Cuatrecasas source correction
+on:
+  push:
+    branches:
+      - agent/cuatrecasas-position-status-20260927
+    paths:
+      - .github/workflows/cuatrecasas-source-reconcile-20260927.yml
+      - scripts/reconcile_cuatrecasas_position_status_20260927.py
+permissions:
+  contents: write
+concurrency:
+  group: cuatrecasas-source-reconcile-20260927
+  cancel-in-progress: false
+jobs:
+  prepare-review-branch:
+    if: github.repository == 'sbu001monterecco/por-derecho'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TASK_BRANCH: agent/cuatrecasas-position-status-20260927
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: agent/cuatrecasas-position-status-20260927
+          fetch-depth: 0
+      - name: Validate event and prepare only scoped static source changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python3 -m py_compile scripts/reconcile_cuatrecasas_position_status_20260927.py
+          python3 scripts/reconcile_cuatrecasas_position_status_20260927.py --apply --commit
+          git diff --check
+          # Remove this disposable preparation runner before PR review. It never
+          # modifies main, deployments, existing gates, tokens or repo settings.
+          git rm -- .github/workflows/cuatrecasas-source-reconcile-20260927.yml
+          git commit -m 'Remove completed one-off preparation runner before review'
+          git push origin "HEAD:refs/heads/$TASK_BRANCH"
