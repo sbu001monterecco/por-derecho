@@ -1,0 +1,63 @@
+name: Verify live operative Cuatrecasas programme
+on:
+  push:
+    branches: [agent/cuatrecasas-operative-live-20260927]
+    paths: [.github/workflows/cuatrecasas-operative-live-20260927.yml]
+permissions:
+  contents: read
+jobs:
+  verify-public-bodies:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Read actual deployed pages independently of merge status
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import concurrent.futures, datetime, hashlib, json, urllib.request
+          SHA='b0da61a6a9d02b05276d9816f5d9afeb0b01f295'
+          RAW='https://raw.githubusercontent.com/sbu001monterecco/por-derecho/'+SHA+'/'
+          BASE='https://sbu001monterecco.github.io/por-derecho/'
+          MARKER='cuatrecasas-operative-programme-20260927'
+          def fetch(url):
+              req=urllib.request.Request(url,headers={'User-Agent':'PorDerecho-OperativeLiveReview/1','Cache-Control':'no-cache'})
+              with urllib.request.urlopen(req,timeout=35) as r:
+                  return r.status,r.geturl(),r.read(2500000)
+          _,_,raw=fetch(RAW+'ops/cuatrecasas-operative-source-receipt-20260927.json')
+          receipt=json.loads(raw)
+          rows=[r for r in receipt['changed'] if r['path'].endswith('.html')]
+          assert len(rows)==20, 'Unexpected scope'
+          def check(row):
+              result={'path':row['path']}
+              try:
+                  url=BASE+row['path'].removesuffix('index.html')+'?operative_review='+SHA
+                  status,final,b=fetch(url);text=b.decode('utf-8');actual=hashlib.sha256(b).hexdigest()
+                  result.update(http_status=status,final_url=final,live_sha256=actual,source_sha256=row['after_sha256'],source_bytes_equal=actual==row['after_sha256'],active_marker_present=('id="'+MARKER+'"') in text,prior_position_panel_present='id="cuatrecasas-position-status-20260927"' in text)
+                  result['passed']=status==200 and result['source_bytes_equal'] and result['active_marker_present'] and result['prior_position_panel_present']
+              except Exception as exc:result.update(passed=False,error=str(exc))
+              return result
+          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+              results=list(pool.map(check,rows))
+          for row in results:print('LIVE_PAGE '+json.dumps(row,ensure_ascii=False,sort_keys=True))
+          control_path='assets/data/cuatrecasas-whole-claim-architecture-v1.json'
+          status,final,b=fetch(BASE+control_path+'?operative_review='+SHA);obj=json.loads(b)
+          control={'http_status':status,'active_state':obj.get('active_workprogramme_20260927',{}).get('status'),'client_position':obj.get('current_position_20260927',{}).get('status'),'dp748_date':obj.get('current_procedural_state',{}).get('dp748',{}).get('last_verified_event'),'sha256':hashlib.sha256(b).hexdigest()}
+          control['passed']=status==200 and control['active_state']=='ACTIVE_SOURCE_RECONCILIATION_PRESERVATION_AND_PUBLIC_RECORD_CORRECTION' and control['client_position']=='ATTRIBUTED_FIRST_HAND_CLIENT_STATEMENT_NOT_JUDICIAL_FINDING' and control['dp748_date']=='2026-09-16'
+          print('LIVE_CONTROL '+json.dumps(control,sort_keys=True))
+          p='governance/OPERATIVE_ACTION_LANGUAGE_AND_EVIDENCE_STATE_27SEP2026.md'
+          status,_,b=fetch(BASE+p+'?operative_review='+SHA);_,_,expected=fetch(RAW+p)
+          policy={'http_status':status,'source_bytes_equal':b==expected,'sha256':hashlib.sha256(b).hexdigest()}
+          print('LIVE_POLICY '+json.dumps(policy,sort_keys=True))
+          gl='https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/'
+          for lang in ('en','es'):
+              row={'language':lang,'url':gl+lang+'/cuatrecasas-sun-park/'}
+              try:
+                  status,final,b=fetch(row['url']+'?operative_review='+SHA)
+                  row.update(http_status=status,final_url=final,active_marker_present=MARKER in b.decode('utf-8','replace'),sha256=hashlib.sha256(b).hexdigest())
+              except Exception as exc:row['error']=str(exc)
+              print('GITLAB_OBSERVATION '+json.dumps(row,sort_keys=True))
+          passed=all(r['passed'] for r in results) and control['passed'] and policy['http_status']==200 and policy['source_bytes_equal']
+          print('CLOSEOUT '+json.dumps({'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'source_commit':SHA,'pages_passed':sum(r['passed'] for r in results),'pages_total':len(results),'github_passed':passed,'gitlab_publication_not_certified':True},sort_keys=True))
+          if not passed:raise SystemExit('Live verification failed; do not report complete publication.')
+          PY
