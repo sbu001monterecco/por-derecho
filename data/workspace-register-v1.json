@@ -308,7 +308,7 @@
       "next_target_mode": "P0_GC_CIV_003_19FEB_5MAR_ARCHIVE_REQUEST_SERVICE_FINALITY_ONLY; NO_BROAD_REDISCOVERY"
     },
     {
-      "workspace_id": "AW-SR-MR-SRLN-2026",
+      "workspace_id": "PD-WS-20260927-0001",
       "title": "AWESWELL LIMITED / Sun Rock / Montaña Roja Capital Programme + SRLN-2026",
       "status": "ACTIVE",
       "workspace_reference": "^AW-SR-MR-SRLN-2026",
@@ -325,7 +325,7 @@
         "FIRST_CAPITAL",
         "SCALE_CAPITAL"
       ],
-      "registration_basis": "Owner-designated programme namespace; storage alias is not a CAEPR identity marker.",
+      "registration_basis": "Allocated against both current-main workspace registers on 27 September 2026. Owner-designated programme references remain stable aliases; the caret storage alias is not a CAEPR identity marker.",
       "public_private_boundary": "Public alias and routing only; exact Drive locators, diligence material and investor records remain private.",
       "continuation_rule": "Resolve the private canonical Drive reference, read 00_START_HERE and update existing file IDs. Never create a thread-specific canonical folder.",
       "coverage_limit": "Current working set. Historical-source completeness and automatic cross-thread synchronization are not asserted."
