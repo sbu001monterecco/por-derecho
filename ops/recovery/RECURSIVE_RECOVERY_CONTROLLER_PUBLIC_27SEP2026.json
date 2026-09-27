@@ -1,0 +1,146 @@
+{
+  "schema": "por-derecho.recursive-recovery-controller-public.v1",
+  "control_date": "2026-09-27",
+  "state": "AMBER_RECURSIVE_CORPUS_EXPANSION_CONFIRMED",
+  "accounts": [
+    {
+      "id": "SBU_PRIMARY",
+      "role": "formal_primary",
+      "buckets": {
+        "A": {
+          "first_page_count": 100,
+          "has_next_page": true
+        },
+        "B": {
+          "first_page_count": 100,
+          "has_next_page": true
+        },
+        "C": {
+          "first_page_count": 100,
+          "has_next_page": true
+        },
+        "D": {
+          "first_page_count": 100,
+          "has_next_page": true
+        }
+      }
+    },
+    {
+      "id": "GIL_PERSONAL",
+      "role": "corroborating_private",
+      "buckets": {
+        "A": {
+          "first_page_count": 100,
+          "has_next_page": true
+        },
+        "B": {
+          "first_page_count": 100,
+          "has_next_page": true
+        },
+        "C": {
+          "first_page_count": 100,
+          "has_next_page": true
+        },
+        "D": {
+          "first_page_count": 100,
+          "has_next_page": true
+        }
+      }
+    },
+    {
+      "id": "PATRICIA_PERSONAL",
+      "role": "corroborating_private",
+      "buckets": {
+        "A": {
+          "first_page_count": 100,
+          "has_next_page": true
+        },
+        "B": {
+          "first_page_count": 100,
+          "has_next_page": true
+        },
+        "C": {
+          "first_page_count": 100,
+          "has_next_page": true
+        },
+        "D": {
+          "first_page_count": 100,
+          "has_next_page": true
+        }
+      }
+    }
+  ],
+  "buckets": {
+    "A": "DP1901 / EG745 / Fiscalía / ATLANTE / Ref21 / Ref24",
+    "B": "Concurso 36/2012 / AC / judges / calificación / appeals",
+    "C": "Sun Park / MYND / Acosta Matos / Meeting Point / Stoneweg / ONA",
+    "D": "Cuatrecasas / RICPE / Orion / CNMV / CaixaBank / Cajasiete / PwC / RSM / Grant Thornton / public funds"
+  },
+  "private_controller": {
+    "title": "Por Derecho — Recursive Recovery Controller — 27 Sep 2026",
+    "drive_location": "Por Derecho Private Workspaces",
+    "public_ids_excluded": true,
+    "contains_private_cursors": true
+  },
+  "drive_reconciliation_anchors": [
+    "Por Derecho Private Workspaces",
+    "Por Derecho — Encrypted GitLab Backups",
+    "Por Derecho Backups",
+    "DP1901-EG745-Private-Recovery-2026-09-20",
+    "DP1901 Ref21 Ref22 Ref24 Dual Layer 2026-09-21",
+    "DP1901-CGPJ-Thread-Preservation-2026-09-19",
+    "Por Derecho — Controls 21-22-24 Text Mirror — 2026-09-21",
+    "EG_745_2026",
+    "Old Sun Park Main Folder",
+    "LPB Concurso - Agreement to refinance and legal documents 2012-2018"
+  ],
+  "recent_discovery_categories": [
+    "AC civil-liability and preservation package",
+    "Meeting Point 357/2024 + 93/2025 successor filing pair",
+    "ALAS / former-counsel reconciliation packages",
+    "historic mortgage / credit-interest / carencia source package",
+    "2018 Arrecife declaration and AC correspondence source attachments",
+    "2014–2016 Community minute/title/governance material",
+    "GitLab CI/quota failure notifications affecting current recovery branches"
+  ],
+  "state_machine": [
+    "DISCOVERED",
+    "PRESERVED",
+    "DIGITIZED",
+    "TEXT_CONTENT_EXTRACTED",
+    "SUBSTANTIVELY_ANALYZED",
+    "SOURCE_ID_ASSIGNED",
+    "LINKED_TO_CLAIM_PROCEEDING_ACTOR",
+    "PUBLIC_SAFE_DERIVATIVE_IF_APPROPRIATE",
+    "GITHUB_UTILIZED",
+    "GITLAB_UTILIZED",
+    "DRIVE_CUSTODY_VERIFIED",
+    "LIVE_PUBLIC_READBACK_IF_PUBLIC"
+  ],
+  "green_criterion": [
+    "All configured Gmail buckets and successor search families have no continuation token or a documented bounded denominator",
+    "Every discovered material item is classified",
+    "Every material source is preserved or lawfully unavailable with custodian/access reason recorded",
+    "Relevant documents are digitized/readable or explicitly image-only/unsupported",
+    "Substantive analysis is linked to canonical actors/proceedings/claims",
+    "GitHub and GitLab public-safe/current-state outputs are reconciled",
+    "Google Drive custody is verified for private preservation outputs",
+    "Public live readback succeeds for changed public routes",
+    "Authority-only gaps are explicitly bounded rather than falsely closed"
+  ],
+  "rules": [
+    "Private originals stay private; public Git stores only public-safe derivatives, hashes/provenance and bounded conclusions",
+    "No empty search result proves non-existence",
+    "No bulk GitHub↔GitLab copying without canonical classification",
+    "Registration/receipt/publication does not prove admission/incorporation/examination/response",
+    "Preserve contrary and lawful explanations",
+    "No duplicate external filing absent a source-proved residual gap",
+    "Deduplicate by source-native IDs and hashes where available"
+  ],
+  "automation": {
+    "title": "Por Derecho Recursive Scan",
+    "status": "ENABLED_UPDATED_2026-09-27",
+    "cadence": "daily",
+    "immediate_run": "REQUESTED_NOT_PROOF_OF_COMPLETION"
+  }
+}
