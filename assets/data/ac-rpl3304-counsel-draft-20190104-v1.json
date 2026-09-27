@@ -1,0 +1,76 @@
+{
+  "schema": "por-derecho.ac-rpl3304-counsel-draft.v1",
+  "id": "C36-DRAFT-20190104-AC-REMOVAL-RESERVATION",
+  "date": "2019-01-04",
+  "public_status": "PRIVATE_DRAFT_PUBLIC_SAFE_CONTROL",
+  "source": {
+    "title": "Escrito denuncia JM concurso Luchy Hoteles",
+    "kind": "LPB_COUNSEL_DRAFT_AGAINST_INSOLVENCY_ADMINISTRATOR",
+    "pages": 5,
+    "word_sha256": "d0b42dbcac8d853256ba469b29b97194e909c4ae07c55c934e24989f0b370202",
+    "pdf_sha256": "c290ca017cbb4b9446b66452d9462733457b3cb81dff8baa7061034e1f1627a5",
+    "raw_bytes_public": false,
+    "byte_size": 243382,
+    "pdf_version": "1.7",
+    "byte_equivalence": {
+      "status": "DOCUMENTED",
+      "copies_compared": 3,
+      "result": "BYTE_FOR_BYTE_IDENTICAL",
+      "sha256": "c290ca017cbb4b9446b66452d9462733457b3cb81dff8baa7061034e1f1627a5"
+    },
+    "office_metadata": {
+      "author_field": "ALEJANDRO NANTON",
+      "last_saved_by_field": "LUIS BARBER MARRERO",
+      "limitation": "Office metadata records are provenance indicators, not proof of human authorship or revision responsibility."
+    },
+    "subject": "Alleged conduct of the Administrador Concursal / Insolvency Administrator",
+    "not_authored_by_subject": true
+  },
+  "custody_and_attribution": {
+    "transmitted_by": "Armando Betancor Álamo",
+    "intended_presenter": "Juan Tomás Parrilla Suárez",
+    "joaquin_ruiz_role": "Copied in the 4 January team transmission; separately documented as participating in the same workstream and signing a related 14 January 2019 Fiscalía expansion.",
+    "exact_drafter": "UNRESOLVED_AFTER_METADATA_AND_MAIL_PROVENANCE_REVIEW",
+    "exact_filing_status": "UNFILED_DRAFT_STRONGLY_SUPPORTED_CERTIFIED_DOCKET_CHECK_OPEN",
+    "filing_status_basis": [
+      "A preserved Drive copy is explicitly titled NO PRESENTADA.",
+      "Contemporaneous January 2019 correspondence distinguishes Fiscalía reference 248/2018 from the Mercantil filing route.",
+      "Contemporaneous January 2019 correspondence records that a softer Mercantil filing was selected and later transmitted with LexNET proof."
+    ],
+    "reference_248_2018": {
+      "status": "DOCUMENTED_FROM_CONTEMPORANEOUS_CORRESPONDENCE",
+      "meaning": "Fiscalía reference used for the related complaint track; it is not the Mercantil heading of the 4 January PDF.",
+      "mercantil_heading": "Concurso Ordinario 36/2012"
+    },
+    "counter_evidence_role": "CONTEMPORANEOUS_COUNTER_CONTEXT_TO_R33_LAWYER_SUCCESSION_NARRATIVE",
+    "exact_copy_name_control": "A byte-identical Drive copy is explicitly titled NO PRESENTADA."
+  },
+  "source_proposition": {
+    "proposition": "The draft expressly reserved liability and removal actions under former Articles 36 and 37 LC.",
+    "status": "DOCUMENT_TEXT",
+    "underlying_allegations_status": "PARTY_POSITION_NOT_FINDING",
+    "remedy_scope": "The 4 January draft reserves possible responsibility/separation actions under former Articles 36/37 LC; it does not itself seek immediate separation/removal in its prayer for relief.",
+    "allegation_boundary": "References to possible procedural fraud, disloyal administration or other offences are party allegations in an unfiled draft, not adjudicated findings."
+  },
+  "truth_machine_relation": {
+    "target": "R33-p05-counsel-generalisation",
+    "relation": "NARROWS",
+    "subtype": "CONTEMPORANEOUS_COUNTER_CONTEXT",
+    "rationale": "A documented liability/removal workstream existed in January 2019, before the 21 September 2020 withdrawal later used by the AC to support a general explanation for successive counsel changes.",
+    "prohibited_inference": [
+      "The draft proves the motive for the 2020 withdrawal.",
+      "Joaquín Ruiz de Infante personally drafted the 4 January version.",
+      "The 4 January version was filed.",
+      "The underlying criminal allegations were true.",
+      "All counsel shared one position."
+    ]
+  },
+  "public_routes": {
+    "es": "/es/concurso-36-2012-borrador-separacion-ac-4ene2019/",
+    "en": "/en/insolvency-36-2012-draft-administrator-removal-4jan2019/"
+  },
+  "public_support": [
+    "evidence/ten-source-2011-2019/TS-01.md",
+    "evidence/insolvency-36-2012/rpl-3304-2025/R33-oposicion-ac-apelacion-lpb-septiembre-2026-controlled-extracts.md"
+  ]
+}
