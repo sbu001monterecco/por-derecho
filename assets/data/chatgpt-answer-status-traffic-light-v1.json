@@ -1,0 +1,40 @@
+{
+  "control_id": "PD-CHATGPT-ANSWER-COLOR-20260927-01",
+  "effective_date": "2026-09-27",
+  "scope": [
+    "Por Derecho",
+    "Project Sun Rock",
+    "AWESWELL"
+  ],
+  "required": true,
+  "statuses": {
+    "GREEN": {
+      "cue": "🟢 GREEN",
+      "meaning": "complete_verified_or_no_material_blocker"
+    },
+    "AMBER": {
+      "cue": "🟠 AMBER",
+      "meaning": "partial_pending_unverified_or_dependency_open"
+    },
+    "RED": {
+      "cue": "🔴 RED",
+      "meaning": "material_blocker_failed_control_or_integrity_problem"
+    }
+  },
+  "aggregation": {
+    "red_overrides": true,
+    "amber_overrides_green": true,
+    "all_green_required_for_overall_green": true
+  },
+  "presentation": {
+    "overall_status_near_start": true,
+    "component_statuses_when_mixed": true,
+    "prose_only_status_forbidden": true,
+    "short_answers_not_exempt": true
+  },
+  "separation": {
+    "thread_deletion_control": "PD-THREAD-SENTINEL-20260925-01",
+    "independent": true
+  },
+  "legal_boundary": "Operational/readiness status only; never implies guilt, legal merit, evidential weight, institutional wrongdoing, or truth of an allegation."
+}
