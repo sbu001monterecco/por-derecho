@@ -2,24 +2,159 @@
   "control_id": "PD-RICPE-TRANSPARENCY-20260927-01",
   "as_of": "2026-09-27",
   "status_basis": "27 September source-qualified research and existing repository controls; not a new exhaustive receipt or mailbox audit",
-  "new_filings_made_by_this_update": 0,
+  "new_filings_made_by_this_update": 2,
   "new_emails_sent_by_this_update": 0,
   "rows": [
-    {"id":"AUG24-01","authority":"Comisionado Canarias","reference":"REGAGE26e00075132698","parent":"REGAGE26e00072326601","status":"Recorded supplement concerning Resolution 28/2026; incoming 2220/2026 is not admission","next":"Continue existing complaint; seek severable administrative records","gate":"Check subsequent notices and original receipts"},
-    {"id":"AUG24-02","authority":"Presidencia Canarias","reference":"REGAGE26e00075135054","status":"Recorded existing supplement","next":"Proposal/elevation/signatures and official transmissions; underlying aggregate briefing","gate":"Reconcile the 22 September document's filing receipt before any duplication"},
-    {"id":"AUG24-03","authority":"AEAT","reference":"REGAGE26e00075135386","parent":"REGAGE26e00062944142","status":"Recorded project-report supplement","next":"Original binding report and legally accessible application/clarification record","gate":"Do not merge with complaints about handling earlier tax communications"},
-    {"id":"AUG24-04","authority":"Canary Economia / Promocion y Diversificacion","reference":"REGAGE26e00075135813","status":"Recorded GC/836/P06 request","next":"Existing rights/availability, commencement, financing, employment and assessment records","gate":"Identify missing items and latest response"},
-    {"id":"AUG24-05","authority":"State SG Incentivos Regionales","reference":"REGAGE26e00075136198","status":"Recorded GC/836/P06 request","next":"Individual award, conditions, acceptance, amendments, verification, certification and payments","gate":"Award is not payment"},
-    {"id":"AUG24-06","authority":"Canary Hacienda / FEDER","reference":"REGAGE26e00075136446","status":"Recorded request; separate 21 September allocation notice located in research","next":"Operation/programme/period, selection, certified costs, EU share and controls","gate":"Verify association of allocation notice; do not assume cofinancing"},
-    {"id":"AUG24-07","authority":"State DG Fondos Europeos","reference":"REGAGE26e00075136691","status":"Recorded request","next":"Operation identifier, programme, costs, verification and payments","gate":"Separate Union contribution from national grant and private finance"},
-    {"id":"AUG24-08","authority":"CNMV","reference":"REGAGE26e00075136953","provider_entry":"2026114903","status":"Research records receipt 25 August and one-month extension notified 4 September","next":"Request available partial delivery within existing proceeding","gate":"Not treated as overdue on 27 September; verify full deadline and any lawful suspension"},
-    {"id":"CAB-APPEAL","authority":"Comisionado Canarias","reference":"2612/2026","status":"Research records incoming registration 18 September concerning Decreto 2026-7000 / 13817/2026","next":"Continue complaint; distinguish existing documents from demands for new investigations","gate":"Registration is not admission or merits decision"},
-    {"id":"CAB-GRANT","authority":"Cabildo Lanzarote","reference":"2026-6999 / 13811/2026","status":"Research records access granted to 498/2020, 547/2020 and 21219/2021","next":"Inventory disclosed material and identify actual omissions","gate":"Link expiry recorded as 31 October 23:00; timezone not established"},
-    {"id":"CAB-3671","authority":"Cabildo Lanzarote","reference":"3671/2022 / 614/2026","status":"Repository records earlier April disclosure and unresolved intact-copy verification in that acquisition pass","next":"Reconcile later custody; request usable redelivery only if still necessary","gate":"Not established non-disclosure"},
-    {"id":"AEAT-CTBG-1","authority":"CTBG","reference":"REGAGE26e00081191241","status":"Repository records filing 16 September against 001-0113069","next":"Continue existing complaint and check common supplement","gate":"Do not duplicate a previously filed supplement"},
-    {"id":"AEAT-CTBG-2","authority":"CTBG","reference":"REGAGE26e00081194039","status":"Repository records filing 16 September against joint 001-0112793 and 001-0113066","next":"Continue alongside first complaint","gate":"Three portal references, two unique decisions; requested accumulation is not proven granted"},
-    {"id":"PRES-SEP22","authority":"Presidencia Canarias","reference":null,"status":"Prepared document located; filing unverified in research","next":"Find receipt and compare exact submitted version","gate":"Hold duplicate submission until resolved"},
-    {"id":"NEW-CONTROL-CAN","authority":"Canary Hacienda","reference":null,"status":"DRAFT_NOT_FILED","next":"General RIC instructions, templates, verification and allocation of functions, versions 2019-2023 and later replacements","gate":"Check substantive overlap; review, sign and authorise submission separately"},
-    {"id":"NEW-CONTROL-AEAT","authority":"AEAT","reference":null,"status":"DRAFT_NOT_FILED","next":"General procedures and scope for binding RIC reports; exclude individual tax data","gate":"Check substantive overlap; review, sign and authorise submission separately"}
+    {
+      "id": "AUG24-01",
+      "authority": "Comisionado Canarias",
+      "reference": "REGAGE26e00075132698",
+      "parent": "REGAGE26e00072326601",
+      "status": "Recorded supplement concerning Resolution 28/2026; incoming 2220/2026 is not admission",
+      "next": "Continue existing complaint; seek severable administrative records",
+      "gate": "Check subsequent notices and original receipts"
+    },
+    {
+      "id": "AUG24-02",
+      "authority": "Presidencia Canarias",
+      "reference": "REGAGE26e00075135054",
+      "status": "Recorded existing supplement",
+      "next": "Proposal/elevation/signatures and official transmissions; underlying aggregate briefing",
+      "gate": "Reconcile the 22 September document's filing receipt before any duplication"
+    },
+    {
+      "id": "AUG24-03",
+      "authority": "AEAT",
+      "reference": "REGAGE26e00075135386",
+      "parent": "REGAGE26e00062944142",
+      "status": "Recorded project-report supplement",
+      "next": "Original binding report and legally accessible application/clarification record",
+      "gate": "Do not merge with complaints about handling earlier tax communications"
+    },
+    {
+      "id": "AUG24-04",
+      "authority": "Canary Economia / Promocion y Diversificacion",
+      "reference": "REGAGE26e00075135813",
+      "status": "Recorded GC/836/P06 request",
+      "next": "Existing rights/availability, commencement, financing, employment and assessment records",
+      "gate": "Identify missing items and latest response"
+    },
+    {
+      "id": "AUG24-05",
+      "authority": "State SG Incentivos Regionales",
+      "reference": "REGAGE26e00075136198",
+      "status": "Recorded GC/836/P06 request",
+      "next": "Individual award, conditions, acceptance, amendments, verification, certification and payments",
+      "gate": "Award is not payment"
+    },
+    {
+      "id": "AUG24-06",
+      "authority": "Canary Hacienda / FEDER",
+      "reference": "REGAGE26e00075136446",
+      "status": "Recorded request; separate 21 September allocation notice located in research",
+      "next": "Operation/programme/period, selection, certified costs, EU share and controls",
+      "gate": "Verify association of allocation notice; do not assume cofinancing"
+    },
+    {
+      "id": "AUG24-07",
+      "authority": "State DG Fondos Europeos",
+      "reference": "REGAGE26e00075136691",
+      "status": "Recorded request",
+      "next": "Operation identifier, programme, costs, verification and payments",
+      "gate": "Separate Union contribution from national grant and private finance"
+    },
+    {
+      "id": "AUG24-08",
+      "authority": "CNMV",
+      "reference": "REGAGE26e00075136953",
+      "provider_entry": "2026114903",
+      "status": "Research records receipt 25 August and one-month extension notified 4 September",
+      "next": "Request available partial delivery within existing proceeding",
+      "gate": "Not treated as overdue on 27 September; verify full deadline and any lawful suspension"
+    },
+    {
+      "id": "CAB-APPEAL",
+      "authority": "Comisionado Canarias",
+      "reference": "2612/2026",
+      "status": "Research records incoming registration 18 September concerning Decreto 2026-7000 / 13817/2026",
+      "next": "Continue complaint; distinguish existing documents from demands for new investigations",
+      "gate": "Registration is not admission or merits decision"
+    },
+    {
+      "id": "CAB-GRANT",
+      "authority": "Cabildo Lanzarote",
+      "reference": "2026-6999 / 13811/2026",
+      "status": "Research records access granted to 498/2020, 547/2020 and 21219/2021",
+      "next": "Inventory disclosed material and identify actual omissions",
+      "gate": "Link expiry recorded as 31 October 23:00; timezone not established"
+    },
+    {
+      "id": "CAB-3671",
+      "authority": "Cabildo Lanzarote",
+      "reference": "3671/2022 / 614/2026",
+      "status": "Repository records earlier April disclosure and unresolved intact-copy verification in that acquisition pass",
+      "next": "Reconcile later custody; request usable redelivery only if still necessary",
+      "gate": "Not established non-disclosure"
+    },
+    {
+      "id": "AEAT-CTBG-1",
+      "authority": "CTBG",
+      "reference": "REGAGE26e00081191241",
+      "status": "Repository records filing 16 September against 001-0113069",
+      "next": "Continue existing complaint and check common supplement",
+      "gate": "Do not duplicate a previously filed supplement"
+    },
+    {
+      "id": "AEAT-CTBG-2",
+      "authority": "CTBG",
+      "reference": "REGAGE26e00081194039",
+      "status": "Repository records filing 16 September against joint 001-0112793 and 001-0113066",
+      "next": "Continue alongside first complaint",
+      "gate": "Three portal references, two unique decisions; requested accumulation is not proven granted"
+    },
+    {
+      "id": "PRES-SEP22",
+      "authority": "Presidencia Canarias",
+      "reference": null,
+      "status": "Prepared document located; filing unverified in research",
+      "next": "Find receipt and compare exact submitted version",
+      "gate": "Hold duplicate submission until resolved"
+    },
+    {
+      "id": "NEW-CONTROL-CAN",
+      "authority": "Canary Hacienda",
+      "reference": "REGAGE26e00083877714",
+      "status": "FILED_REGISTERED_27SEP2026",
+      "next": "Await competent routing/receipt and substantive response; preserve exact submitted PDF and receipt.",
+      "gate": "Registration is filing, not admission or merits. Reconcile competent receipt/routing before deadline calculations."
+    },
+    {
+      "id": "NEW-CONTROL-AEAT",
+      "authority": "AEAT",
+      "reference": "REGAGE26e00083878313",
+      "status": "FILED_REGISTERED_27SEP2026",
+      "next": "Await competent routing/receipt and substantive response; preserve exact submitted PDF and receipt.",
+      "gate": "Registration is filing, not admission or merits. Reconcile competent receipt/routing before deadline calculations."
+    }
+  ],
+  "filing_updates": [
+    {
+      "authority": "Canary Hacienda",
+      "reference": "REGAGE26e00083877714",
+      "presented_at": "2026-09-27T18:52:36+01:00",
+      "registered_at": "2026-09-27T18:52:45+01:00",
+      "dir3": "A05032841",
+      "attachment": "01_SAIP_Hacienda_Canarias_27SEP2026.pdf",
+      "status": "FILED_REGISTERED"
+    },
+    {
+      "authority": "AEAT",
+      "reference": "REGAGE26e00083878313",
+      "presented_at": "2026-09-27T19:03:22+01:00",
+      "registered_at": "2026-09-27T19:03:24+01:00",
+      "dir3": "EA0028512",
+      "attachment": "02_SAIP_AEAT_27SEP2026.pdf",
+      "status": "FILED_REGISTERED"
+    }
   ]
 }
