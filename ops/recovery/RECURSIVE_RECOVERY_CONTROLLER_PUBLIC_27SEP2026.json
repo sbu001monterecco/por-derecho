@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.recursive-recovery-controller-public.v1",
   "control_date": "2026-09-27",
-  "state": "AMBER_RECURSIVE_CORPUS_EXPANSION_CONFIRMED",
+  "state": "AMBER_PASS2_ONE_OF_TWELVE_CONFIGURED_BUCKETS_EXHAUSTED",
   "accounts": [
     {
       "id": "SBU_PRIMARY",
@@ -142,5 +142,80 @@
     "status": "ENABLED_UPDATED_2026-09-27",
     "cadence": "daily",
     "immediate_run": "REQUESTED_NOT_PROOF_OF_COMPLETION"
+  },
+  "pass2": {
+    "completed": true,
+    "public_safe_cumulative_counts": {
+      "SBU_PRIMARY": {
+        "A": {
+          "results_seen": 200,
+          "has_next_page": true
+        },
+        "B": {
+          "results_seen": 200,
+          "has_next_page": true
+        },
+        "C": {
+          "results_seen": 200,
+          "has_next_page": true
+        },
+        "D": {
+          "results_seen": 200,
+          "has_next_page": true
+        }
+      },
+      "GIL_PERSONAL": {
+        "A": {
+          "results_seen": 107,
+          "has_next_page": false,
+          "current_query_family_exhausted": true
+        },
+        "B": {
+          "results_seen": 200,
+          "has_next_page": true
+        },
+        "C": {
+          "results_seen": 200,
+          "has_next_page": true
+        },
+        "D": {
+          "results_seen": 200,
+          "has_next_page": true
+        }
+      },
+      "PATRICIA_PERSONAL": {
+        "A": {
+          "results_seen": 200,
+          "has_next_page": true
+        },
+        "B": {
+          "results_seen": 200,
+          "has_next_page": true
+        },
+        "C": {
+          "results_seen": 200,
+          "has_next_page": true
+        },
+        "D": {
+          "results_seen": 200,
+          "has_next_page": true
+        }
+      }
+    },
+    "aggregate_result_ids_seen_at_list_level": 2307,
+    "configured_buckets_exhausted_current_query_family": 1,
+    "configured_buckets_with_continuation": 11,
+    "leads_to_reconcile": [
+      "22-Sep counsel DP1901 initiating-filing verification chain and receipt/photo attachments",
+      "22-Sep GitLab account-reviewed-and-unblocked provider response",
+      "2014 Juan Tomas / Borja / Community-bank correspondence chain",
+      "2022 legal-aid / calificacion notification chain",
+      "2025 European Ombudsman / OLAF correspondence attachments",
+      "2024 Project Sun Rock intervention/legal-opinion package",
+      "2023 calificacion witness-preparation correspondence",
+      "2022 party communication to Fiscal concerning Acosta Matos / Canarias7 allegations",
+      "newsletter/training noise class requiring exclusion from evidence counts"
+    ],
+    "proof_boundary": "Query-family exhaustion is not universal mailbox exhaustion; successor alias/date/sender searches may remain justified."
   }
 }
