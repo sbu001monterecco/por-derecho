@@ -1,6 +1,6 @@
 {
   "id": "PD-CAN-BAR-PERIMETER-20260921-01",
-  "version": "2026-09-25",
+  "version": "2026-09-27",
   "status": "PUBLIC_SAFE_SOURCE_CONTROLLED_UPDATE",
   "scope": "Professional-regulation and inter-Colegio coordination map for the Sun Park / MYND Yaiza matter.",
   "rule_en": "Separate responsibility does not mean separate reality. Individual professional responsibility remains actor-specific; common evidence and economic context may require coordinated preservation and institutional treatment without collective attribution.",
@@ -11,11 +11,7 @@
       "jurisdiction": "Madrid",
       "role": "territorial_first_instance",
       "state": "active_source_record",
-      "references": [
-        "434/26",
-        "1487/26",
-        "1566/26"
-      ],
+      "references": ["434/26", "1487/26", "1566/26"],
       "boundary": "Madrid competence is distinct from Canary competence."
     },
     {
@@ -23,9 +19,7 @@
       "jurisdiction": "Madrid",
       "role": "autonomous_appeal",
       "state": "active_source_record",
-      "references": [
-        "193/2026"
-      ],
+      "references": ["193/2026"],
       "boundary": "Madrid appellate body; not the Canary Council."
     },
     {
@@ -33,10 +27,7 @@
       "jurisdiction": "Las Palmas",
       "role": "territorial_first_instance",
       "state": "active_source_record",
-      "references": [
-        "DIP 79/2026",
-        "DIP 80/2026"
-      ],
+      "references": ["DIP 79/2026", "DIP 80/2026"],
       "boundary": "DIP 79 and DIP 80 remain separate preliminary matters."
     },
     {
@@ -44,10 +35,7 @@
       "jurisdiction": "Santa Cruz de Tenerife",
       "role": "territorial_first_instance",
       "state": "active_source_record",
-      "references": [
-        "2647-ICATF",
-        "ICAM 1487/26 territorial referral ordered 1-Jul-2026"
-      ],
+      "references": ["2647-ICATF", "ICAM 1487/26 territorial referral ordered 1-Jul-2026"],
       "boundary": "Receipt/file number for the 1487/26 referral remains to be certified."
     },
     {
@@ -57,9 +45,7 @@
       "role": "autonomous_coordination_and_appellate_layer",
       "state": "direct_registry_receipt_documented",
       "boundary": "RE-000329 proves registry entry only; no merits position, competence ruling or substantive response is inferred.",
-      "references": [
-        "RE-000329 · Consejo Canario Registro de Entrada · 22-Sep-2026"
-      ]
+      "references": ["RE-000329 · Consejo Canario Registro de Entrada · 22-Sep-2026"]
     },
     {
       "id": "CGAE",
@@ -67,10 +53,7 @@
       "jurisdiction": "Spain",
       "role": "national_professional_body",
       "state": "prior_contact_documented",
-      "references": [
-        "CGAE response RS-001022/2026",
-        "separate 2026 ethical-channel track"
-      ],
+      "references": ["CGAE response RS-001022/2026", "separate 2026 ethical-channel track"],
       "boundary": "CGAE stated it does not hear ordinary individual lawyer complaints at first instance; the inter-Colegio/systemic route remains a distinct question."
     }
   ],
@@ -79,10 +62,7 @@
       "name": "Francisco de Borja Rodríguez-Batllori Laffitte",
       "route": "ICALPA",
       "matter": "DIP 80/2026; historic Insolvency Administrator role",
-      "firm_context": [
-        "San Telmo Abogados y Economistas (historic professional environment)",
-        "Cuyás Abogados / Grant Thornton Canarias (later professional environment)"
-      ],
+      "firm_context": ["San Telmo Abogados y Economistas (historic professional environment)", "Cuyás Abogados / Grant Thornton Canarias (later professional environment)"],
       "classification": "direct_deontological_nexus",
       "boundary": "Opening or existence of a file is not a finding of misconduct."
     },
@@ -235,6 +215,51 @@
       "reference": "routing-confirmation re-forward",
       "state": "sent",
       "boundary": "Not a first transmission; current address had already been copied on 22-Sep. Receipt/registration remains to be confirmed."
+    },
+    {
+      "date": "2026-09-27",
+      "body": "Consejo Canario de Colegios de Abogados",
+      "reference": "RE-000329 amplification",
+      "state": "sent_once_verified",
+      "attachment_count": 4,
+      "boundary": "Spanish amplification sent with 36-page dossier and three original PNGs. Do not resend. Later receipt and substantive handling are distinct."
+    },
+    {
+      "date": "2026-09-27",
+      "body": "CCACM",
+      "reference": "REV2 institutional communication; C-77/2025, 193/2026 and separate ICAM 1487/26 questions",
+      "state": "sent_once_verified",
+      "attachment_count": 5,
+      "boundary": "Sent in the original Madrid conversation. Five Sent attachments hash-matched. No acknowledgement or formal registration of this communication is inferred; no repeat send."
     }
-  ]
+  ],
+  "dispatch_successor_20260927": {
+    "control": "archive/CANARY_COUNCIL_INTERCOLLEGIAL_PROFESSIONAL_PERIMETER_CONTROL_21SEP2026.md",
+    "material_continuity": "GREEN_IDENTIFIED_WORK_PRODUCT_AND_DISPATCH",
+    "institutional_acknowledgement": "PENDING_NOT_ESTABLISHED",
+    "whole_repository_parity": "NOT_CERTIFIED",
+    "full_prior_thread_deletion_safety": "NOT_CERTIFIED",
+    "email_action_by_this_audit": "NONE",
+    "do_not_resend": true,
+    "total_ccacm_attachment_bytes": 12046596,
+    "version_resolution": "Reported historical 71-page successor not recovered; newly integrated 85-page REV2 was expressly approved and sent. Not a recovered 71-page original.",
+    "pdf_composition": [
+      {"pages": "1-8", "content": "New integrated explanatory guide"},
+      {"pages": "9-71", "content": "All 63 predecessor pages retained"},
+      {"pages": "72-83", "content": "Complete 3 September 2026 opposition"},
+      {"pages": "84-85", "content": "Complete 17 September 2026 order"}
+    ],
+    "carriers": [
+      {"kind": "Madrid integrated annex", "pages": 85, "bytes": 3363314, "sha256": "bb051a29e3a61eabe2af1e3794f8ef9ca21807c6f08677cfed7ce0c4fed76012"},
+      {"kind": "Consejo dossier", "pages": 36, "bytes": 5200275, "sha256": "bcc0b77e3ef28ad2bcec6e6bb9ade9d929d4f8995118c76a2ef6689ff568258f"},
+      {"kind": "PwC 2016 explanatory PNG", "bytes": 489983, "sha256": "6b3dfac14865f8bd9cdaf6eda6b610ff67175a96761f9d5ab7a0819b935643bf"},
+      {"kind": "San Telmo RICPE explanatory PNG", "bytes": 827315, "sha256": "f50790d29a0dc55521e03693b9023d55241212bbb4fd78977187dbe8bf544add"},
+      {"kind": "PwC institutional-map PNG", "bytes": 2165709, "sha256": "edf412394dda20779f2cb6a4cbc72d20c3f13143e99b363dbebe9cf7453e41cf"}
+    ],
+    "privacy": "Native emails, private filenames and locators, counsel advice and unredacted attachments remain in access-controlled custody. Hashes identify private carriers, not public access or truth of allegations.",
+    "evidence_boundary": "Alleged perverse incentives require actor-specific proof. Retain legitimate fees, contrary explanations and institutional responses. No completed assignment or Acosta Matos beneficiary is established by a request alone.",
+    "non_targets": ["Armando Betancor Álamo", "ALAS team", "Joaquín Ruiz de Infante Abella"],
+    "source_signature_boundary": "Merged reading copy does not certify component cryptographic signatures.",
+    "next_actions": ["Obtain CCACM acknowledgement and institutional handling reference", "Trace separate ICAM-to-CCACM and ICAM-to-Tenerife transmissions", "Obtain identified mandate, payment-authority, fee-allocation, information-use and beneficiary records", "Record repository CI, merge and deployment separately without bypassing failed gates"]
+  }
 }
