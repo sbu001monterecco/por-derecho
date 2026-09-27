@@ -715,6 +715,25 @@ Mandatory special cases:
 
 This control never authorises an email, filing, appeal, payment, publication or third-party contact. External acts still require their controlling authority gate. Raw mailbox content and private source locators remain outside public Git.
 
+## PD-GOV-ANS-COLOR — ANSWER-STATUS TRAFFIC LIGHT
+
+Apply `PD-CHATGPT-ANSWER-COLOR-20260927-01` in
+`.github/governance/CHATGPT_ANSWER_STATUS_TRAFFIC_LIGHT_27SEP2026.md` and
+`assets/data/chatgpt-answer-status-traffic-light-v1.json`.
+
+Every substantive Por Derecho / Project Sun Rock / AWESWELL response that reports,
+assesses or changes task state must visibly show the relevant operational status
+near the start of the answer: **🟢 GREEN**, **🟠 AMBER**, or **🔴 RED**. Do not
+leave status implicit in prose. When components differ, color each component and
+use the conservative overall aggregation: any RED → overall RED; otherwise any
+AMBER → overall AMBER; all in-scope components GREEN → overall GREEN. GREEN
+requires verification appropriate to the claim; unavailable verification defaults
+to AMBER unless a RED trigger is known.
+
+This status is operational/readiness only and must never imply guilt, legal merit,
+evidential weight or the truth of an allegation. It is separate from the thread
+deletion-safety sentinel below; show both when both are applicable.
+
 ## PD-GOV-TDS — THREAD DELETION-SAFETY SENTINEL
 
 Apply `PD-THREAD-SENTINEL-20260925-01` in `.github/governance/THREAD_DELETION_SAFETY_SENTINEL_25SEP2026.md` and `assets/data/thread-deletion-safety-sentinel-v1.json` to every substantive Por Derecho / Project Sun Rock thread.
