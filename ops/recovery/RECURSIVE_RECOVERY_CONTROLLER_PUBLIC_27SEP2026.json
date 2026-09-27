@@ -297,5 +297,38 @@
       "public_manifest": "ops/recovery/CONCURSO_2015_AC_REQUEST_BUNDLE_PUBLIC_SAFE_27SEP2026.json"
     },
     "proof_boundary": "Provider query-family exhaustion is distinct from substantive analysis completion."
+  },
+  "drive_recursive_census": {
+    "state": "INITIAL_ROOT_CENSUS_COMPLETE_SUBFOLDER_RECURSION_OPEN",
+    "direct_children": {
+      "old_sun_park_main": 41,
+      "lpb_concurso_refinance_2012_2018": 5,
+      "private_workspaces": 17,
+      "backups": 9,
+      "encrypted_gitlab_backups": 4,
+      "eg745_workspace": 2
+    },
+    "high_priority_old_sun_park_subfolders": [
+      "Semaca 2018",
+      "LPB Concurso refinance/legal 2012-2018",
+      "Sun Park brochures 2016-2018",
+      "Solos Holidays planned acquisition 2015-2018",
+      "four-hotel financial forecasts 2015",
+      "SunRock FRB / bond",
+      "Tinsa",
+      "Licence",
+      "Notas Simples",
+      "Additional Units",
+      "MeetingLondonMay2015",
+      "SPL Cam",
+      "Sun Park Images"
+    ],
+    "direct_high_value_families": [
+      "Dahan 2018 information/presentation packs",
+      "KPMG project-finance preliminary information request",
+      "Hotel Sun Park moving-forward ZIP",
+      "Santander 2017 letters of intent"
+    ],
+    "rule": "Folder roots are private-custody anchors. Public control records titles/counts/classes only; private IDs remain excluded."
   }
 }
