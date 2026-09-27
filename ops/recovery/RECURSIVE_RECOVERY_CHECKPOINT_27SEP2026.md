@@ -196,3 +196,24 @@ The private Drive controller stores the actual folder IDs. Public Git intentiona
 
 Drive exhaustion is now governed by the same recursive rule as Gmail: enumerate → classify → deduplicate → extract material deltas → link to canonical actors/proceedings/claims → verify custody → publish only public-safe derivatives when appropriate.
 
+## Targeted successor reconciliation — 27 September 2026
+
+A bounded post-19-September successor scan was run across all three connected Gmail accounts for DP1901, E.G.745, ATLANTE, Oficio 108-2026 and the principal 20-September registration references. This targeted scan does **not** advance or reset the private continuation cursors for the twelve broad account×bucket searches.
+
+### Source-proved upgrades
+
+- **A01 / DGRAJ → Registry & Allocation:** an official DGRAJ reply acknowledges the material and expressly reports onward administrative transmission of the full documentation to the Common General Service / Registry and Allocation, with reparto/governance aspects also sent to the Tribunal Presidency. The same reply expressly states that this is **not** equivalent to procedural filing and has no procedural-deadline effect.
+- **A08 / Fiscalía Provincial:** REGAGE provider status reports that the 20-Sep registration moved into processing by the **Registro General de la Fiscalía Provincial de Las Palmas** on 21-Sep. This is registry-routing evidence, not identification of the 29-Jul Fiscal, allocation, examination or response.
+- **A10 / FGE:** REGAGE provider status reports processing by the **Registro General de la Fiscalía General del Estado** on 21-Sep. This does not by itself prove incorporation into E.G.745 or substantive examination.
+- **A06 / national Justice route:** REGAGE provider status reports processing by the Justice State Secretariat information/OAMR office. Oficio 108-2026 remains a later official source with a strongly supported but not printed REGAGE bridge.
+- **CGPJ / Alzada 286/2026:** a 25-Sep response from Recursos states that the appeal remained **en trámite** and that the 24-Sep email with attachments plus the document presented by electronic registry on 24-Sep were joined to the file. This is positive incorporation evidence for the described update, but not a merits decision or proof that the email identifies a particular registration number.
+- **Counsel no-repeat control:** private counsel correspondence independently supports reconstructing the initiating filing and treatment of later private-actor material before any duplicate written request. No privileged body text is published here.
+
+### Drive custody upgrade
+
+Drive reconciliation now source-proves substantial later custody beyond the earlier 19-Sep CGPJ package, including 20-Sep ATLANTE/TSJC/LAJ/Fiscalía filings, E.G.745 package material, a 23-Sep DP1901 follow-up, 24-Sep Oficio108 controls and multiple official receipt files. Therefore the earlier blanket statement “later Drive parity unproved” is superseded by: **key DP1901/E.G.745 20–24 Sep custody materially evidenced; full recursive Drive-folder exhaustion and item-level parity remain open.**
+
+### Current recursive state
+
+The broad controller remains **AMBER**: 3/12 configured query families are exhausted and 9 retain continuation. Attachment-level analysis and Drive subfolder recursion remain material. Targeted zero-result searches in one account do not change that broader exhaustion state.
+

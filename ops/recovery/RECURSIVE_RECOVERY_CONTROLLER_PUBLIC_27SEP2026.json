@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.recursive-recovery-controller-public.v1",
   "control_date": "2026-09-27",
-  "state": "AMBER_PASS4_THREE_OF_TWELVE_QUERY_FAMILIES_EXHAUSTED",
+  "state": "AMBER_PASS4_PLUS_TARGETED_SUCCESSOR_RECONCILIATION_THREE_OF_TWELVE_QUERY_FAMILIES_EXHAUSTED",
   "accounts": [
     {
       "id": "SBU_PRIMARY",
@@ -330,5 +330,28 @@
       "Santander 2017 letters of intent"
     ],
     "rule": "Folder roots are private-custody anchors. Public control records titles/counts/classes only; private IDs remain excluded."
+  },
+  "targeted_successor_pass_20260927": {
+    "completed": true,
+    "scope": "Post-19-Sep DP1901/EG745/ATLANTE/Oficio108/REGAGE successor search across all three connected Gmail accounts plus Drive reconciliation.",
+    "account_result": {
+      "SBU_PRIMARY": "Material authority/counsel/registry successor traffic recovered and analyzed.",
+      "GIL_PERSONAL": "No hits in the narrow post-19-Sep successor query set; this does not change broader bucket exhaustion state.",
+      "PATRICIA_PERSONAL": "Preserved analytical-package copies found; no new authority traffic in the narrow successor query set."
+    },
+    "source_upgrades": [
+      "DGRAJ official reply reports full administrative onward transfer of A01 material to Registry/Allocation and reparto/governance aspects to Tribunal Presidency; judicial incorporation remains open.",
+      "A08 REGAGE provider status reports processing by Registro General de la Fiscalía Provincial de Las Palmas.",
+      "A10 REGAGE provider status reports processing by Registro General de la Fiscalía General del Estado.",
+      "A06 REGAGE provider status reports processing by the Justice State Secretariat information/OAMR office; Oficio108 bridge remains source-qualified separately.",
+      "CGPJ Recursos 25-Sep email confirms Alzada 286/26 in progress and incorporation of the 24-Sep email/annexes plus the 24-Sep registered document.",
+      "Counsel correspondence independently supports a no-repeat, source-first approach: reconstruct initiating filing and later private-actor treatment before any duplicate written request."
+    ],
+    "gmail_query_family_state_unchanged": {
+      "exhausted": 3,
+      "open_with_continuation": 9,
+      "reason": "This was a targeted successor search, not a continuation-token advance of the 12 configured broad buckets."
+    },
+    "drive_reconciliation": "Substantial 20–24 Sep DP1901/EG745 filing, receipt, ATLANTE, TSJC/LAJ, EG745, follow-up and Oficio108 custody is directly discoverable in Drive. Full recursive Drive exhaustion remains open."
   }
 }
