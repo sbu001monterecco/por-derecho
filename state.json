@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 57,
   "owner": "1997:03b7a06c6a5bc5df357460d84708c1dd6677b9e8",
-  "phase": "CLAIMED",
+  "phase": "ACCEPTED",
   "pr": 1997,
   "base_sha": "ad19360b8a0efa0b1181509ec8bc07d75351c835",
   "candidate_sha": "03b7a06c6a5bc5df357460d84708c1dd6677b9e8",
@@ -2936,5 +2936,25 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": []
+  "checkpoints": [
+    {
+      "phase": "ACCEPTED",
+      "at": "2026-09-27T20:04:59.095590Z",
+      "evidence": {
+        "checks": [
+          {
+            "name": "publication-integrity",
+            "id": 108696102762,
+            "conclusion": "success"
+          },
+          {
+            "name": "PD release acceptance",
+            "id": 108696102273,
+            "conclusion": "success"
+          }
+        ]
+      }
+    }
+  ],
+  "updated_at": "2026-09-27T20:04:59.095590Z"
 }
