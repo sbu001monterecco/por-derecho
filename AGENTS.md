@@ -1,3 +1,5 @@
+> **Operative-language rule — PD-OPERATIVE-LANGUAGE-20260927:** current authorised work is described as an active programme at its evidenced stage. Read [governance/OPERATIVE_ACTION_LANGUAGE_AND_EVIDENCE_STATE_27SEP2026.md](governance/OPERATIVE_ACTION_LANGUAGE_AND_EVIDENCE_STATE_27SEP2026.md). Active does not mean sent, filed, ordered, deployed or implemented; preserve historical source words and disclose blocked gates.
+
 > **Canonical capital-workspace Drive reference — ^AW-SR-MR-SRLN-2026-DRIVE:** for ^AW-SR-MR-SRLN-2026, Montaña Roja acquisition/development/funding, HoldCo and SRLN-2026 work, read [`ops/AW_SR_MR_SRLN_2026_DRIVE_REFERENCE.json`](ops/AW_SR_MR_SRLN_2026_DRIVE_REFERENCE.json) first. Resolve the single existing private folder through its private GitLab resolver and read `00_START_HERE`. Verify current versions, update existing file IDs, and never create a competing canonical folder. This is a storage/workspace alias, not a CAEPR identity or evidence-status marker.
 
 # Por Derecho repository stewardship rules

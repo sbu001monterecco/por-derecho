@@ -279,5 +279,14 @@
     "confidentiality": "Private instructions, legal advice, working drafts and mailbox locators remain outside public repositories. Existing expressly authorised public disclosures keep their original scope; they do not authorise later disclosures.",
     "financial_boundary": "Firm-stated figures are attributed claims, not client admissions. Preserve work/invoice/WIP/proforma/instrument/claim lineage and single satisfaction.",
     "source_control": "archive/CUATRECASAS_POSITION_STATUS_OUTCOME_UPDATE_27SEP2026.md"
+  },
+  "active_workprogramme_20260927": {
+    "status": "ACTIVE_SOURCE_RECONCILIATION_PRESERVATION_AND_PUBLIC_RECORD_CORRECTION",
+    "authority": "Owner instruction of 27 September 2026 to execute the repository/website programme and use operative language.",
+    "language_control": "governance/OPERATIVE_ACTION_LANGUAGE_AND_EVIDENCE_STATE_27SEP2026.md",
+    "programme": "The documentary programme is in motion. The client pursues protection, accountability and recovery through distinct competent channels.",
+    "external_action_rule": "Every counsel instruction, transmission, filing, service, decision and implementation keeps its own evidenced state. This update certifies none of the still-unverified external steps.",
+    "host_rule": "GitHub and GitLab source, review, merge, deployment and live verification are separate gates. Failed compute or checks are not relabelled green.",
+    "preserved_financial_snapshot": true
   }
 }
