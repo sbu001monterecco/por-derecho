@@ -135,3 +135,20 @@ Future work on Consejo Canario, ICALPA/ICATF coordination, the ICAM→Tenerife r
 - `archive/POR_DERECHO_UNITARY_CASE_RECONSTRUCTION_MULTIDISCIPLINARY_CRIMINAL_FORENSIC_PROTOCOL_17AUG2026.md`.
 
 Update the existing control/register rather than creating a disconnected competing map.
+
+## Continuation verification — 27 September 2026
+
+Parent control remains PD-CAN-BAR-PERIMETER-20260921-01; institutional reference RE-000329. This is an additive worker verification record, not a new professional map, external transmission, merits finding or deployment certificate.
+
+- The controlled 27-Sep annex bundle was recovered and byte-verified: 36 pages; 5,200,275 bytes; SHA-256 `bcc0b77e3ef28ad2bcec6e6bb9ade9d929d4f8995118c76a2ef6689ff568258f`. Native evidence and private retrieval locators remain in authorised private custody.
+- The AC report of 21-Jul-2021 is physically incorporated at bundle pages 15–18. Its page 4 (bundle page 18) contains the July-2020 EUR 26,750 professional-fee entry. This does not close the invoice, claim title, authorisation, estate-ledger, matching debit, recipient-credit or later-client-authorisation gaps.
+- The ICAM agreement of 1-Jul-2026 is physically incorporated at bundle pages 19–22. Its page 3 (bundle page 21) contains the express order to transmit the agreement and a copy of preliminary file 1487/26 to Tenerife. Dispatch, receipt, local reference and subsequent handling remain unverified.
+- Both existing approved visual assets were fetched from GitHub and byte-verified, without alteration: PwC SHA-256 `6b3dfac14865f8bd9cdaf6eda6b610ff67175a96761f9d5ab7a0819b935643bf`; San Telmo SHA-256 `f50790d29a0dc55521e03693b9023d55241212bbb4fd78977187dbe8bf544add`.
+- The existing institutional email conversation was read. A bounded search from 26-Sep onward returned no matching later communication. No 27-Sep amplification was located as sent; no draft/send action was attempted in this continuation. The latest located thread event remains the 25-Sep routing-confirmation forwarding.
+- The existing Drive staging record was read and remains updated through 25-Sep. It must not be described as containing this 27-Sep verification until separately updated and verified.
+- Ordinary GitLab repository access succeeded. Searching this control returned no result; direct retrieval of this control's expected root archive path returned 404. That is a bounded absence result, not proof that no alternative-path copy or historical object exists. Full parity is not certified.
+- The user-reported Gmail write/send restriction remains operationally unresolved. Its earlier cause has not been independently diagnosed in this verification. Do not repackage the same outgoing communication to bypass the restriction; no fresh send attempt is authorised by this audit.
+
+Preserve the client's May–June 2020 warning, substitution, written-approval request and rejection sequence together with the professional's contemporaneous contrary/legal explanation. The present readback verifies the recovered annex and its primary AC/ICAM pages; it does not certify a fresh native-email reread of every May–June event.
+
+Pending integration: reconcile this addendum through the single integration lane; update the existing Drive staging record; locate/reconcile the GitLab counterpart; keep source custody, merge, CI, deployment and institutional transmission as separate states. No website change or independent publication is claimed.
