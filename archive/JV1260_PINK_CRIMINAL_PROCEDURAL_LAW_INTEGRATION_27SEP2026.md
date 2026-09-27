@@ -285,3 +285,122 @@ Future work concerning JV1260/AP89, Pink, CEXP/Community, the 2014–2015 contra
 6. current correction and missing-evidence registers.
 
 Criminal/prosecutorial-first is a routing discipline, not a guilt presumption.
+
+
+## 13. Sectoral/civil law controls that materially change the criminal analysis
+
+### 13.1 Historical insolvency-law baseline — Ley 22/2003, not only current TRLC
+
+Because Concurso 36/2012 began under Ley 22/2003, the historical statutory baseline must be fixed before using current TRLC terminology. Historical Article 35 subjected the insolvency administration to judicial supervision and required the statutory diligence standard then in force; Article 36 imposed liability for loss caused to the estate by acts or omissions contrary to law or lacking due diligence.
+
+**Rule:** current TRLC Articles 80 and 94–100 are useful current-law comparators and for later acts, but they must not be silently projected backward onto 2012–2020 conduct without temporal analysis.
+
+Official historical source: https://www.boe.es/buscar/act.php?id=BOE-A-2003-13813
+
+### 13.2 Canary tourism law — unity of exploitation is a separate legal layer from title and possession
+
+Ley 7/1995 de Ordenación del Turismo de Canarias imposes the principle of **unidad de explotación**. Article 38 treats tourist accommodation exploitation as activity submitted to one operating enterprise and includes management, administration and commercial direction. The historical text applicable around 2012 also required unitary exploitation and provided consequences where the principle was not followed. Current Article 39 expressly requires the operating company to hold a documented enabling title from owners, unless the owners directly exploit through an accepted organizational form.
+
+This creates a mandatory four-layer distinction:
+
+`REGISTERED OWNERSHIP → OWNER/COLLECTIVE MANDATE → TOURIST OPERATING TITLE → FACTUAL POSSESSION/OPERATION`.
+
+A private owner can hold real title while a tourist establishment remains subject to a legally relevant unitary-exploitation regime. Conversely, the tourism principle does not itself prove that any particular operator held a valid universal mandate over every unit.
+
+**Criminal significance:** any pleading, certificate or institutional decision that equated one layer with another must be tested for accuracy and knowledge, but the mere existence of the legal tension is not deception.
+
+Official source: https://www.boe.es/buscar/act.php?id=BOE-A-1995-12102
+
+### 13.3 Civil Code — ownership and possession are distinct
+
+Civil Code Article 348 protects ownership and the owner's reivindicatory action. Articles 441, 444 and 446 separately protect possession: possession cannot be acquired violently against a resisting possessor; clandestine/violent acts do not alter possession; and the possessor is entitled to be respected and restored through legal means.
+
+**Analytical consequence:** AP 89/2014's owner/possession result and the hotel-operation/CEXP/Pink questions are not logically identical. The correct reconstruction is unit-by-unit and date-by-date:
+- who owned;
+- who possessed;
+- under what title;
+- what collective/tourist mandate existed;
+- what keys/access represented;
+- what changed by judgment, voluntary handover or later physical control.
+
+Official source: https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763
+
+### 13.4 LEC Article 460 — post-first-instance evidence in appeal is not inherently irregular
+
+LEC Article 460 permits, in defined circumstances, evidence in second instance relating to relevant facts occurring after the period for first-instance judgment or earlier facts learned later.
+
+Therefore, the fact that AP 89/2014 considered a May-2012 event occurring after the 7-May-2012 first-instance judgment is **not by itself evidence of procedural wrongdoing**.
+
+The decisive questions are:
+1. under which Article 460 category was the material admitted;
+2. whether the procedural requirements were met;
+3. what exactly the notarial/key material said;
+4. whether the opposing party had notice and an effective opportunity to contradict it;
+5. whether “maintenance copies” or another limited character were accurately presented;
+6. what causal role the later evidence played in the appellate ratio.
+
+This is a major safeguard against overclaiming the criminal hypothesis.
+
+Official source: https://www.boe.es/buscar/act.php?id=BOE-A-2000-323
+
+### 13.5 LEC Article 222 — res judicata controls the permissible propagation of AP 89/2014
+
+Article 222 gives final judgments material res-judicata effect within the legally defined identity/scope of the earlier proceeding and parties/related subjects; later facts after preclusion are treated as new facts.
+
+**Rule for this workspace:** AP 89/2014 must be given its actual legal effect, but must not be silently expanded into a judgment on:
+- non-claimant units;
+- universal CEXP validity;
+- every owner's tourist mandate;
+- later 2017/2018 possession;
+- the entire LPB insolvency estate;
+- later Community voting/debt;
+- CAM's later rights;
+- later criminal responsibility.
+
+The investigation must distinguish **legitimate downstream res-judicata/evidential use** from **scope inflation**.
+
+Official source: same LEC.
+
+### 13.6 Horizontal Property Law — debt, voting exclusion and security decisions require their own legality audit
+
+LPH Article 15.2 deprives voting rights only where the owner is not current on matured Community debts **and** has neither judicially challenged them nor judicially/notarially consigned the amount. The minutes must identify those deprived of the vote. Article 16 requires the notice to identify owners in arrears and warn of the possible voting deprivation.
+
+This means the recurring Project chain:
+
+`DEBT → MOROSITY → NO VOTE → CONTROL OF ORGAN → NEW CERTIFICATES/DECISIONS`
+
+cannot be assessed merely by asking whether a debt figure appeared in an acta. The audit must establish:
+- the debt's legal source and maturity;
+- correct debtor and allocation;
+- challenge/consignation status;
+- notice;
+- voting denominator and coefficients;
+- accurate minutes;
+- effect of any later judicial decision concerning the debt.
+
+For security/vigilance decisions, historical LPH Article 17 generally required a three-fifths double majority for establishing or suppressing common services such as vigilancia. The exact version in force and the characterization of the 2018 measure must be fixed before drawing conclusions.
+
+Official source: https://www.boe.es/buscar/act.php?id=BOE-A-1960-10906
+
+## 14. Refined integrated legal model
+
+The deepest present legal model is therefore not a single “eviction conspiracy.” It is a possible **propagation system across six distinct legal layers**:
+
+1. **property title** — individual registered rights;
+2. **collective/tourist operating authority** — CEXP/owner mandate and unity-of-exploitation rules;
+3. **possession/access** — keys, actual control and possessory remedies;
+4. **Community governance** — debt, voting, office, common services and certificates;
+5. **insolvency administration** — LPB estate duties, litigation, preservation, liquidation and calificación;
+6. **criminal law** — only where a specific act satisfies deception/falsity/patrimonial/participation/judicial-offence elements.
+
+The central investigative risk is **category substitution**: a proposition valid in one layer being treated as if it conclusively resolved another. Examples to test, not assume, include:
+
+- title → universal tourist operating authority;
+- tourist unity → ownership of a private unit;
+- maintenance keys → full possession;
+- Community debt entry → valid voting exclusion;
+- a judgment about 18 units → whole-hotel authority;
+- AC statutory role → authority over non-estate property;
+- judicial adoption of one proposition → validation of every upstream narrative.
+
+Each substitution must be classified as lawful inference, legal error, unresolved dispute, negligent overreach or potentially knowing deception only after the knowledge and causation record is closed.
