@@ -67,5 +67,159 @@
       ".github/governance/CHATGPT_UNITARY_PROSECUTORIAL_INTAKE_GATE_25SEP2026.md": "bce1ef47eb70c33a9f06d7822d92dfa75d621648",
       "assets/data/chatgpt-unitary-prosecutorial-intake-v1.json": "52cb65ca2ab6323957764bbb371965b030ec2552"
     }
+  },
+  "bounded_reconciliation_20260927": {
+    "workspace": "^PD-CAN-BAR-PERIMETER-20260921-01",
+    "github_base": "71d0452ef1e652cfefeaa5dc085ada48881c434c",
+    "gitlab_observed_main": "3ac6e0111337f202415f2dd101b320ed81636007",
+    "scope": "Cuatrecasas whole-claim, WIP, billing and direct dependencies only; GitHub enriched with primary-source and professional-perimeter corrections",
+    "global_parity": false,
+    "files": [
+      {
+        "path": "archive/CUATRECASAS_GITHUB_BILLING_WIP_RECOVERY_13SEP2026.md",
+        "gitlab_blob": "53d6a784fa2288d5e6ba2c4fc4d873f9bcf1cdc5",
+        "gitlab_last_commit": "fc6a2c76bc596e46c3772fe8c186e2a1fd5bbe92",
+        "source_sha256": "ea003b6addc19ce99993b2f6dc274f1b063fd3a3cb656c21cd245f3ab30972dc",
+        "github_before": "ABSENT_AT_71d0452ef1e652cfefeaa5dc085ada48881c434c",
+        "mode": "RECONCILED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      {
+        "path": "archive/CUATRECASAS_WHOLE_CLAIM_SOURCE_CONTROL_09SEP2026.md",
+        "gitlab_blob": "a9b49b0cd87caaddacfee184bf37d39f09e506ed",
+        "gitlab_last_commit": "ba37503a9ee1b885f2358c7db8721d61de3202fd",
+        "source_sha256": "1247436584070fb7b729a5e6aff3c95ab043f74ea4a5df9ff3a2e7f3328d0454",
+        "github_before": "ABSENT_AT_71d0452ef1e652cfefeaa5dc085ada48881c434c",
+        "mode": "RECONCILED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      {
+        "path": "assets/cuatrecasas-invoice-viewer.js",
+        "gitlab_blob": "70a9cdeed5be4f2550c1677996c954b2735e5f26",
+        "gitlab_last_commit": "44c7b2ff8f5b5c1f106d19cf9831e13195a1e9ac",
+        "source_sha256": "8d9c9f5205269effb42faa4ad2d26472e5ce2e30b3a629bfddb9a9300a4f645e",
+        "github_before": "ABSENT_AT_71d0452ef1e652cfefeaa5dc085ada48881c434c",
+        "mode": "RECONCILED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      {
+        "path": "assets/data/cuatrecasas-invoice-payment-register-v1.json",
+        "gitlab_blob": "0dcaac7d36b8df1dd8d18fd0b36c54df9d802778",
+        "gitlab_last_commit": "defc7fd6c2ff521ee304cfb0f61cd78f524cf08e",
+        "source_sha256": "ef5f6b35758af22964d58918eea045b1bcb6ddb5c649f3df958a531b273b57b6",
+        "github_before": "ABSENT_AT_71d0452ef1e652cfefeaa5dc085ada48881c434c",
+        "mode": "RECONCILED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      {
+        "path": "assets/data/cuatrecasas-whole-claim-architecture-v1.json",
+        "gitlab_blob": "81d5ff3bd96e4d726a1fd8b1546e3d25779a214b",
+        "gitlab_last_commit": "ba37503a9ee1b885f2358c7db8721d61de3202fd",
+        "source_sha256": "f9af6bc979d3bb3281e18581083dd24c71b1ca500b8eff360ab049964333448d",
+        "github_before": "ABSENT_AT_71d0452ef1e652cfefeaa5dc085ada48881c434c",
+        "mode": "RECONCILED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      {
+        "path": "assets/data/cuatrecasas-wip-reconciliation-v1.json",
+        "gitlab_blob": "11dedc2c46b43464e4d8af80f38300edc5588719",
+        "gitlab_last_commit": "44c7b2ff8f5b5c1f106d19cf9831e13195a1e9ac",
+        "source_sha256": "e4ab94815a83289cd20b0d29cd7ea6f774c1198f0c155bc2f8dd002e0638117c",
+        "github_before": "ABSENT_AT_71d0452ef1e652cfefeaa5dc085ada48881c434c",
+        "mode": "RECONCILED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      {
+        "path": "data/case-graph/cambiario-1048-2019-v1.json",
+        "gitlab_blob": "063c07352cac8ed27df94a3544246cf779ccea52",
+        "gitlab_last_commit": "a75dce527ced3e108958198dab829affdbde5181",
+        "source_sha256": "123a5109d0636414ea949b78b6e71ba0d6d4eb7410a52062196147d1f2911011",
+        "github_before": "ABSENT_AT_71d0452ef1e652cfefeaa5dc085ada48881c434c",
+        "mode": "RECONCILED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      {
+        "path": "data/case-graph/cuatrecasas-whole-claim-v1.json",
+        "gitlab_blob": "603ac565de13f103f0891f072c4a9c97539b8412",
+        "gitlab_last_commit": "c4a9b24a890d44ee58328657d1ccf20f7483d99e",
+        "source_sha256": "0aa9f4fca857a0bfd0589e68862cd2b07f29db47d90b7dd4b0f6e417810d976b",
+        "github_before": "ABSENT_AT_71d0452ef1e652cfefeaa5dc085ada48881c434c",
+        "mode": "RECONCILED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      {
+        "path": "data/case-graph/dp748-impulso-apelacion-signed-20260909-v1.json",
+        "gitlab_blob": "6f3e3953f0a7ca6f3a7e2fb20b6366974db8bbae",
+        "gitlab_last_commit": "ba37503a9ee1b885f2358c7db8721d61de3202fd",
+        "source_sha256": "48d66e475d00284ba2b2a1ad9b4c5f245490783e1607211238d18058a270f94e",
+        "github_before": "ABSENT_AT_71d0452ef1e652cfefeaa5dc085ada48881c434c",
+        "mode": "RECONCILED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      {
+        "path": "en/cuatrecasas-invoices-payments/index.html",
+        "gitlab_blob": "a66f2330d72be45c27515895a2345316c89a025c",
+        "gitlab_last_commit": "6ae4f2a0059b869f08e25a241faca829eb4fca4b",
+        "source_sha256": "712da9f58d4ca710bcc732af9126a0ddf500836be8ca6aaa54c7a4624df7f9ef",
+        "github_before": "ABSENT_AT_71d0452ef1e652cfefeaa5dc085ada48881c434c",
+        "mode": "RECONCILED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      {
+        "path": "en/cuatrecasas-matkator-whole-claim/index.html",
+        "gitlab_blob": "4e7eceed686e08dbd29755ca1324357c84531654",
+        "gitlab_last_commit": "46d1dab9a78e0f7d95f859aa80747e485b420ee7",
+        "source_sha256": "aba67f58e2839675f55c4bbd669affff1adb910679ca0b4b614ecde0d4863057",
+        "github_before": "ABSENT_AT_71d0452ef1e652cfefeaa5dc085ada48881c434c",
+        "mode": "RECONCILED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      {
+        "path": "en/cuatrecasas-wip-unbilled/index.html",
+        "gitlab_blob": "ee841a12e137ceea036ab513c8c851fe8fe8b06d",
+        "gitlab_last_commit": "44c7b2ff8f5b5c1f106d19cf9831e13195a1e9ac",
+        "source_sha256": "64772183f038dd82031aebfdf2d6c93dbb0133ca244f9480bd2499f1916d90d4",
+        "github_before": "ABSENT_AT_71d0452ef1e652cfefeaa5dc085ada48881c434c",
+        "mode": "RECONCILED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      {
+        "path": "es/cuatrecasas-facturas-pagos/index.html",
+        "gitlab_blob": "13cbeda7fb464b38817df71f8317d0c83af5ef36",
+        "gitlab_last_commit": "6960e5908c8ae0c2cc9a4bd760e473fef489b505",
+        "source_sha256": "627b4a20974ad0cb8d07b8fdb47aaded26d713394369266ca2233f8b4cb53b1c",
+        "github_before": "ABSENT_AT_71d0452ef1e652cfefeaa5dc085ada48881c434c",
+        "mode": "RECONCILED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      {
+        "path": "es/cuatrecasas-matkator-reclamacion-integral/index.html",
+        "gitlab_blob": "cddce80aa4887fe05f8627b2921d7c60fec9bfea",
+        "gitlab_last_commit": "46d1dab9a78e0f7d95f859aa80747e485b420ee7",
+        "source_sha256": "6fb567a13f7aa03a70c7c353d1bf4a20e2a4b7a3364184c33ff4ba284e5a5ba3",
+        "github_before": "ABSENT_AT_71d0452ef1e652cfefeaa5dc085ada48881c434c",
+        "mode": "RECONCILED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      {
+        "path": "es/cuatrecasas-wip-no-facturado/index.html",
+        "gitlab_blob": "c8405e497ebf4bb8564e1dd39ef9377f45af45a8",
+        "gitlab_last_commit": "44c7b2ff8f5b5c1f106d19cf9831e13195a1e9ac",
+        "source_sha256": "056150c264a1e628da3971076bf59fcad53afb8945c157f397684b359bbc0772",
+        "github_before": "ABSENT_AT_71d0452ef1e652cfefeaa5dc085ada48881c434c",
+        "mode": "RECONCILED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      {
+        "path": "scripts/validate_cuatrecasas_invoice_payment_register.py",
+        "gitlab_blob": "264e81c6d8c9dc65a1902bb0759669f5adf7be6d",
+        "gitlab_last_commit": "937fef44a09f98bf2069b0c1b5599471b9255575",
+        "source_sha256": "218502aa25ddc85d386f5e79db351283fba205f0771be423664e1b86672befbc",
+        "github_before": "ABSENT_AT_71d0452ef1e652cfefeaa5dc085ada48881c434c",
+        "mode": "RECONCILED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      {
+        "path": "scripts/validate_cuatrecasas_wip_reconciliation.py",
+        "gitlab_blob": "dfc085a8704f72e9dfd44691dc0fcba8c6e15825",
+        "gitlab_last_commit": "44c7b2ff8f5b5c1f106d19cf9831e13195a1e9ac",
+        "source_sha256": "c16a0b6f4dac9cefb7cc273ee80cf59506eb64f9c0f7ed7dda4907c80bea2bbd",
+        "github_before": "ABSENT_AT_71d0452ef1e652cfefeaa5dc085ada48881c434c",
+        "mode": "RECONCILED_PUBLIC_SAFE_DERIVATIVE"
+      }
+    ],
+    "boundary": "Historical host-control observations above remain historical. No global mirror parity, complete evidence recovery or disaster-recovery claim.",
+    "san_telmo_source_completion": {
+      "corporate_sources": [
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2018-175-35",
+        "https://www.boe.es/borme/dias/2024/07/10/pdfs/BORME-A-2024-132-35.pdf"
+      ],
+      "private_source_summary": "2018 investigation report p.28 identifies Javier as the AC’s brother and same-firm professional; native original remains private.",
+      "gap": "ST-GAP-02 partially closed; third brother not established."
+    }
   }
 }

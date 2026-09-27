@@ -1,0 +1,193 @@
+{
+  "schema": "por-derecho.case-graph.v1",
+  "updated": "2026-09-27",
+  "source_evidence_id": "CAMB-1048-2019-ORIGINAL-COURT-FILE-RECOVERED-2025-04-09",
+  "source_sha256": "2c453b0482771c5a72a6fd3f8a983df70f46f2be404cd99abf93f616f8369664",
+  "procedural_separation_rule": "Links connect evidence across tracks; JC 1048/2019, ETJ 163/2020, the 2025 nullity track and DP 748/2026 remain distinct proceedings/incidents and must not be procedurally conflated.",
+  "nodes": {
+    "proceedings": [
+      {
+        "id": "PROC-JC-1048-2019",
+        "label": "Juicio Cambiario 1048/2019",
+        "forum": "JPI No. 3, San Cristobal de La Laguna",
+        "relationship": "source_proceeding"
+      },
+      {
+        "id": "PROC-ETJ-163-2020",
+        "label": "ETJ 163/2020",
+        "relationship": "enforcement_successor_track"
+      },
+      {
+        "id": "PROC-JC-1048-2019-NULLITY-2025",
+        "label": "Cambiario 1048/2019 nullity/clarification track, 2025",
+        "relationship": "later_related_incident_not_contained_in_original_2019_2020_bundle"
+      },
+      {
+        "id": "PROC-DP-748-2026",
+        "label": "DP 748/2026",
+        "relationship": "later_separate_criminal_evidentiary_track_not_same_docket"
+      }
+    ],
+    "actors": [
+      {
+        "id": "ACT-MATKATOR",
+        "label": "Matkator, S.L.U.",
+        "role_in_source": "cambiario_defendant_and_identified_owner_of_embargo-targeted_fincas",
+        "historical_source_literal": "MATKATOR, S.L."
+      },
+      {
+        "id": "ACT-CUATRECASAS",
+        "label": "CUATRECASAS GONCALVES PEREIRA, S.L.P.",
+        "role_in_source": "cambiario_claimant_and_holder/beneficiary_asserted_in_filing"
+      }
+    ],
+    "assets": [
+      {
+        "id": "FINCA-YAIZA-8584",
+        "label": "Finca 8584",
+        "relationship": "preventive_embargo_requested_in_2019_filing"
+      },
+      {
+        "id": "FINCA-YAIZA-8588",
+        "label": "Finca 8588",
+        "relationship": "preventive_embargo_requested_in_2019_filing; not established as current auction/adjudication target"
+      }
+    ],
+    "instruments": [
+      {
+        "id": "INS-JC1048-PAGARES-4",
+        "label": "Four promissory notes underlying JC 1048/2019",
+        "total_principal_eur": 182517.72,
+        "items": [
+          {
+            "date": "2018-11-21",
+            "principal_eur": 53415.36
+          },
+          {
+            "date": "2018-11-21",
+            "principal_eur": 53415.36
+          },
+          {
+            "date": "2018-11-21",
+            "principal_eur": 37843.5
+          },
+          {
+            "date": "2018-11-21",
+            "principal_eur": 37843.5
+          }
+        ],
+        "verification": "Amounts/date checked against court-file source; all four reproduced faces on PDF pages 11–12 read NO A LA ORDEN. Originals, backs, authority, cause and transfer chain remain open."
+      }
+    ],
+    "events": [
+      {
+        "date": "2019-07-30",
+        "type": "court_filing",
+        "label": "LexNET presentation of cambiario claim",
+        "source_relationship": "contained"
+      },
+      {
+        "date": "2019-09-04",
+        "type": "court_order",
+        "label": "Auto 1390/2019 admitting the claim and ordering payment / measures",
+        "source_relationship": "contained"
+      },
+      {
+        "date": "2020-07-31",
+        "type": "enforcement_transition",
+        "label": "ETJ 163/2020 material appears in recovered bundle",
+        "source_relationship": "contained"
+      },
+      {
+        "date": "2025-04-09",
+        "type": "evidence_recovery",
+        "label": "83-page court file recovered into current project corpus",
+        "source_relationship": "provenance"
+      },
+      {
+        "date": "2026-09-08",
+        "type": "digitization",
+        "label": "Full controlled digitization bundle completed and stored",
+        "source_relationship": "provenance"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "CAMB-1048-2019-ORIGINAL-COURT-FILE-RECOVERED-2025-04-09",
+      "to": "PROC-JC-1048-2019",
+      "type": "primary_source_for"
+    },
+    {
+      "from": "PROC-JC-1048-2019",
+      "to": "PROC-ETJ-163-2020",
+      "type": "origin_to_enforcement"
+    },
+    {
+      "from": "PROC-JC-1048-2019",
+      "to": "PROC-JC-1048-2019-NULLITY-2025",
+      "type": "later_procedural_incident"
+    },
+    {
+      "from": "PROC-JC-1048-2019",
+      "to": "PROC-DP-748-2026",
+      "type": "evidential_context_only_not_same_docket"
+    },
+    {
+      "from": "ACT-CUATRECASAS",
+      "to": "PROC-JC-1048-2019",
+      "type": "claimant_in"
+    },
+    {
+      "from": "ACT-MATKATOR",
+      "to": "PROC-JC-1048-2019",
+      "type": "defendant_in"
+    },
+    {
+      "from": "INS-JC1048-PAGARES-4",
+      "to": "PROC-JC-1048-2019",
+      "type": "claimed_instrument_basis"
+    },
+    {
+      "from": "FINCA-YAIZA-8584",
+      "to": "PROC-JC-1048-2019",
+      "type": "preventive_embargo_requested"
+    },
+    {
+      "from": "FINCA-YAIZA-8588",
+      "to": "PROC-JC-1048-2019",
+      "type": "preventive_embargo_requested"
+    },
+    {
+      "from": "FINCA-YAIZA-8588",
+      "to": "PROC-ETJ-163-2020",
+      "type": "historical_attachment_context_current_realization_not_established"
+    }
+  ],
+  "tracks": [
+    "civil_cambiario",
+    "enforcement",
+    "criminal_evidentiary",
+    "registral_property",
+    "professional_liability",
+    "due_process_service",
+    "financial_instruments",
+    "evidence_custody_recovery"
+  ],
+  "open_gaps": [
+    "Do not infer the outcome of the 2025 clarification or any later cambiario appeal without the corresponding primary court source.",
+    "Receiver identity and any proposition material to service/nullity must be source-image verified before publication or filing.",
+    "PDF/A-2 derivative is an archival target and has not been independently certified with veraPDF."
+  ],
+  "source_hash_status": "Legacy hash retained as a historical control; not reproduced in the two 83-page versions retrieved on 27 September 2026. Do not treat differently hashed copies as byte-identical.",
+  "verified_source_variants_20260927": [
+    {
+      "sha256": "95a4ae30923d18c62fb1e11fc2bfd905f225223f69c72b3fca859e0ea3130382",
+      "pages": 83
+    },
+    {
+      "sha256": "8bc2c5de58ebf5cfaa07461bb0295d577b7d1d512abd55f0f9b2749e432c7487",
+      "pages": 83
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema":"por-derecho.case-graph.v1",
+  "updated":"2026-09-09",
+  "graph_id":"CUATRECASAS-WHOLE-CLAIM-V1",
+  "extends":["data/case-graph/cambiario-1048-2019-v1.json","assets/data/cuatrecasas-whole-claim-architecture-v1.json"],
+  "purpose":"Represent the Cuatrecasas claim as a billing/instrument/recovery graph rather than reducing it to Cambiario 1048/2019 or finca 8584.",
+  "boundary":"Verified source facts, party positions, Project Sun Rock allegations, inferences and gaps remain distinct. Links do not establish crime, common plan, duplicate recovery or Acosta Matos participation/benefit.",
+  "nodes":{
+    "entities":[
+      {"id":"ENT-AWESWELL","label":"AWESWELL LIMITED","role":"documented former client; primary recipient in located July-2019 invoice schedule"},
+      {"id":"ENT-LPB","label":"Luchy Playa Blanca S.L.U.","role":"insolvency/work subject and recipient of two invoices in located schedule"},
+      {"id":"ENT-MATKATOR","label":"Matkator, S.L.U.","role":"later promissory-note obligor, Cambiario defendant and ETJ executed party"},
+      {"id":"ENT-CUATRECASAS","label":"Cuatrecasas Legal, S.L.P. / historic Cuatrecasas Gonçalves Pereira, S.L.P.","role":"former counsel / claimant / executing party"},
+      {"id":"CTX-ACOSTA-MATOS","label":"Acosta Matos / CAM / HNT perimeter","role":"source-gated contextual destination/benefit hypothesis only"}
+    ],
+    "billing_pools":[
+      {"id":"BILL-2019-ISSUED-22","label":"Located July-2019 issued-invoice schedule","count":22,"face_total_eur":327608.32,"recipients":{"Aweswell":20,"LPB":2,"Matkator":0}},
+      {"id":"BILL-UNPAID-6","label":"Six issued invoices described as unpaid","amount_eur":136830.72},
+      {"id":"WIP-2019","label":"2019 not-issued / WIP-estimate pool","amount_eur":152424.95},
+      {"id":"WIP-2020-COLLECTION","label":"June-2020 Collections work-carried-out pool","amount_eur":161738.75,"tax_boundary":"described plus VAT"},
+      {"id":"PROFORMA-CLAIM1","label":"Two pro-forma amounts used in Claim 1 reconstruction","amount_eur":53000}
+    ],
+    "claims":[
+      {"id":"CLAIM-CUA-1","label":"Judicial Claim 1","principal_eur":189830.72,"reconstruction":"136830.72 unpaid issued invoices + 53000 pro-forma amounts","proceeding_id":"OPEN_GAP"},
+      {"id":"CLAIM-CUA-2","label":"Judicial Claim 2","principal_eur":182517.72,"instrument":"four Matkator promissory notes","proceeding_id":"TF-CIV-001 -> TF-CIV-002"},
+      {"id":"CLAIM-CUA-GROUP-2022","label":"February-2022 grouped two-claim demand","amount_eur":441463,"includes":"two principals plus stated interest and costs","boundary":"not a third principal"}
+    ],
+    "proceedings":[
+      {"id":"TF-CIV-001","label":"Juicio Cambiario 1048/2019","role":"title formation for Claim 2"},
+      {"id":"TF-CIV-002","label":"ETJ 163/2020","role":"enforcement successor for Claim 2"},
+      {"id":"TF-CRI-003","label":"DP 748/2026","role":"separate criminal-investigation route"},
+      {"id":"CONCURSO-36-2012","label":"Concurso 36/2012 · LPB","role":"separate insolvency; counsel presence verified, Cuatrecasas own fee-credit proof not located in current search"}
+    ],
+    "assets":[
+      {"id":"FINCA-8584","label":"Finca 8584","role":"exact presently identified ETJ realization target"},
+      {"id":"FINCA-8588","label":"Finca 8588","role":"separate Matkator asset; contextual unless separate realization act proved"},
+      {"id":"SUN-PARK-MYND","label":"Sun Park / MYND Yaiza physical and operating perimeter","role":"property/exploitation/value/restitution context"}
+    ],
+    "tests":[
+      {"id":"TEST-MANDATE","label":"mandate and work allocation"},
+      {"id":"TEST-BILLING","label":"invoice/WIP/pro-forma accuracy"},
+      {"id":"TEST-DEBTOR","label":"Aweswell/LPB to Matkator debtor-attribution bridge"},
+      {"id":"TEST-INSTRUMENT","label":"pagaré cause, authority and allocation"},
+      {"id":"TEST-OVERLAP","label":"Claim 1 / Claim 2 / WIP overlap and single satisfaction"},
+      {"id":"TEST-COURT","label":"act-specific court representation, materiality and effect"},
+      {"id":"TEST-TRANSFER","label":"assignment/cession/adjudication/beneficiary and consideration"}
+    ]
+  },
+  "edges":[
+    {"from":"ENT-CUATRECASAS","to":"ENT-AWESWELL","type":"documented_former_counsel_client_relationship"},
+    {"from":"BILL-2019-ISSUED-22","to":"ENT-AWESWELL","type":"20_invoices_addressed_to"},
+    {"from":"BILL-2019-ISSUED-22","to":"ENT-LPB","type":"2_invoices_addressed_to"},
+    {"from":"BILL-2019-ISSUED-22","to":"ENT-MATKATOR","type":"0_invoices_in_located_schedule_boundary_not_proof_no_other_obligation"},
+    {"from":"BILL-UNPAID-6","to":"CLAIM-CUA-1","type":"reconstructed_component"},
+    {"from":"PROFORMA-CLAIM1","to":"CLAIM-CUA-1","type":"reconstructed_component"},
+    {"from":"WIP-2019","to":"WIP-2020-COLLECTION","type":"requires_conversion_reconciliation_not_assumed_same_pool"},
+    {"from":"ENT-MATKATOR","to":"CLAIM-CUA-2","type":"promissory_note_obligor_judicial_debtor"},
+    {"from":"CLAIM-CUA-2","to":"TF-CIV-001","type":"title_formed_in"},
+    {"from":"TF-CIV-001","to":"TF-CIV-002","type":"origin_to_enforcement"},
+    {"from":"TF-CIV-002","to":"FINCA-8584","type":"exact_current_realization_target"},
+    {"from":"TF-CIV-002","to":"FINCA-8588","type":"separate_asset_context_only_absent_realization_source"},
+    {"from":"CLAIM-CUA-1","to":"CLAIM-CUA-GROUP-2022","type":"grouped_component"},
+    {"from":"CLAIM-CUA-2","to":"CLAIM-CUA-GROUP-2022","type":"grouped_component"},
+    {"from":"TF-CIV-001","to":"TF-CRI-003","type":"title_debtor_service_instrument_evidentiary_bridge_not_merger"},
+    {"from":"TF-CIV-002","to":"TF-CRI-003","type":"enforcement_evidentiary_bridge_not_merger"},
+    {"from":"ENT-CUATRECASAS","to":"CONCURSO-36-2012","type":"counsel_activity_verified_own_fee_credit_proof_open"},
+    {"from":"FINCA-8584","to":"SUN-PARK-MYND","type":"physical_registry_exploitation_crosswalk_required"},
+    {"from":"FINCA-8588","to":"SUN-PARK-MYND","type":"physical_registry_exploitation_crosswalk_required"},
+    {"from":"TF-CIV-002","to":"CTX-ACOSTA-MATOS","type":"possible_onward_benefit_hypothesis_only_no_recipient_source"},
+    {"from":"TEST-DEBTOR","to":"CLAIM-CUA-2","type":"mandatory_verification"},
+    {"from":"TEST-OVERLAP","to":"CLAIM-CUA-1","type":"mandatory_verification"},
+    {"from":"TEST-OVERLAP","to":"CLAIM-CUA-2","type":"mandatory_verification"},
+    {"from":"TEST-TRANSFER","to":"CTX-ACOSTA-MATOS","type":"must_precede_any_beneficiary_inference"}
+  ],
+  "source_corrections":[
+    {"unsafe":"Cuatrecasas never demanded Aweswell","corrected":"Direct Aweswell collection/settlement dialogue is located; the entity/debtor migration to Matkator is the audit question."},
+    {"unsafe":"Cuatrecasas never went to Concurso 36/2012","corrected":"Cuatrecasas acted in the concurso for the Aweswell/LPB side and withdrew citing unpaid fees; its own creditor-proof filing remains unlocated in the current controlled search."},
+    {"unsafe":"A remate-cession request proves transfer of the whole claim or an Acosta Matos beneficiary","corrected":"The request proves only requested remate-cession faculty; assignment of the whole credit and recipient/beneficiary remain unverified."}
+  ],
+  "open_gates":["CUA-CLAIM-GAP-001","CUA-CLAIM-GAP-002","CUA-CLAIM-GAP-003","CUA-CLAIM-GAP-004","CUA-CLAIM-GAP-005","CUA-CLAIM-GAP-006","CUA-CLAIM-GAP-007","ME-065","ME-066","ME-067","ME-068"],
+  "public_routes":{"en":"/en/cuatrecasas-matkator-whole-claim/","es":"/es/cuatrecasas-matkator-reclamacion-integral/"}
+}

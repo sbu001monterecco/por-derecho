@@ -164,3 +164,8 @@ The finite docket, authority, identity, incident-corroboration, counsel/procurad
 ## Namespaced continuation — 21 September 2026 — Canary Council
 
 Consejo Canario / inter-Colegio / professional-perimeter gaps continue in `MISSING_EVIDENCE_REGISTER_CANARY_COUNCIL_ADDENDUM_21SEP2026.md` under IDs `ME-CCCA-001`–`005`: ICAM→Tenerife execution/receipt, CGAE ethical-channel substantive response, exact additional lawyer Colegio membership, later firm mandate/conflict/custody records and professional-payment source/timing/accounting proof.
+
+
+## 27 September 2026 — ME-083 / ME-085 reconciliation append
+
+The native 15-June-2020 Cuatrecasas Collections email is located and read; ME-083 remains partial because the itemised EUR 161,738.75 WIP ledger and instrument-allocation bridge are missing. Use `assets/data/cuatrecasas-wip-reconciliation-v1.json` and `assets/data/cuatrecasas-whole-claim-architecture-v1.json`. ME-085: all four reproduced note faces read NO A LA ORDEN; original backs, authority, cause and any actual transfer remain open. The EUR 77,840 credit / EUR 104,677.72 residual is a scenario unless an actual posting/adjudication is produced. Neither an assignment nor an Acosta Matos beneficiary is established. This append does not close either gap.
