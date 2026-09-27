@@ -1,3 +1,5 @@
+> **Current filing-status successor — 27 September 2026:** read `docs/meeting-point/MEETING_POINT_FILING_CONTINUITY_27SEP2026.md` and `ops/continuity/MEETING_POINT_FILING_STATE_20260927.json` before resuming. The v19/v8 package is listed across six receipts in 357/2024 and 93/2025. The historical pre-filing prompt below does not reset the current version or delivery status. Court handling and the prepared covering-note clarification remain unverified.
+
 # Execution prompt — Meeting Point pre-concurso finalisation
 
 Continue the existing Por Derecho / Project Sun Rock Meeting Point 357/2024 · 93/2025 filing workspace.

@@ -1,3 +1,5 @@
+> **Current filing-status successor — 27 September 2026:** [v19/v8 registration and continuity record](MEETING_POINT_FILING_CONTINUITY_27SEP2026.md). This document retains the historical v10/v4 baseline and its original controls/results; six later receipts establish registration in both proceedings. Judicial handling remains unverified and a covering-note clarification remains prepared without a verified receipt.
+
 # Baseline gate run — Meeting Point v10 / v4
 
 **Date:** 24 September 2026  

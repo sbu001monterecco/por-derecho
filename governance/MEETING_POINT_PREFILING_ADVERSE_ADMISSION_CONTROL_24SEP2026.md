@@ -1,3 +1,5 @@
+> **Current filing-status successor — 27 September 2026:** [v19/v8 registration and continuity record](../docs/meeting-point/MEETING_POINT_FILING_CONTINUITY_27SEP2026.md). This document retains the historical v10/v4 baseline and its original controls/results; six later receipts establish registration in both proceedings. Judicial handling remains unverified and a covering-note clarification remains prepared without a verified receipt.
+
 > **Controlling clarification — PD-MP-ADVERSE-360-20260924:** Apply G13–G16 below when reading every earlier gate. Protection against unintended admissions is not concealment, denial of adverse judicial outcomes, or withdrawal of maintained allegations. The adverse record must be prominent and integrated into the causal analysis. The earlier text is preserved below; inconsistent blanket interpretations are superseded, not silently erased.
 
 # Meeting Point 357/2024 · 93/2025 — pre-filing adverse-admission control
