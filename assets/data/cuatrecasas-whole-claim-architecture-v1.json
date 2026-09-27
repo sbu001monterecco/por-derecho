@@ -1,0 +1,212 @@
+{
+  "schema": "por-derecho.whole-claim-architecture.v1",
+  "as_of": "2026-09-09",
+  "status": "EVIDENCE_LED_HYPOTHESIS_CONTROL",
+  "scope": "Cuatrecasas billing, WIP, collection, promissory-note, Cambiario and ETJ claim architecture across Aweswell, LPB and Matkator",
+  "current_dp748_filing_status": "09-SEP-2026_PRESENTATION_VERIFIED_COURT_PROCESSING_OPEN",
+  "core_rule": "Claim perimeter is not the same as the present realization target. Finca 8584 is the exact presently identified ETJ realization target; it does not define the whole Cuatrecasas billing/claim universe.",
+  "procedural_separation": "Cambiario 1048/2019, ETJ 163/2020, DP 748/2026 and Concurso 36/2012 remain distinct proceedings. Cross-links are evidentiary, accounting, chronological or investigative unless a formal procedural link is sourced.",
+  "entity_roles": [
+    {
+      "entity": "AWESWELL LIMITED",
+      "status": "DOCUMENTED_FORMER_CLIENT_AND_PRIMARY_INVOICE_RECIPIENT_IN_LOCATED_2019_SCHEDULE",
+      "facts": [
+        "20 of 22 issued invoices in located July-2019 schedule addressed to Aweswell",
+        "direct June-2020 collection/settlement dialogue located",
+        "Cuatrecasas draft acknowledgement was proposed for signature on behalf of Aweswell but is not treated as signed Aweswell admission"
+      ]
+    },
+    {
+      "entity": "Luchy Playa Blanca, S.L.U. / LPB",
+      "status": "DOCUMENTED_SERVICE_AND_INSOLVENCY_SUBJECT_AND_INVOICE_RECIPIENT",
+      "facts": [
+        "2 of 22 issued invoices in located July-2019 schedule addressed to LPB",
+        "May-2018 invoice-chasing emails located",
+        "Cuatrecasas acted in Concurso 36/2012 for Aweswell/LPB side"
+      ]
+    },
+    {
+      "entity": "Matkator, S.L.U.",
+      "status": "LATER_INSTRUMENT_JUDICIAL_DEBTOR_AND_ETJ_EXECUTED_PARTY",
+      "facts": [
+        "no issued Matkator invoice appears in the located July-2019 22-invoice schedule",
+        "four Matkator promissory notes total EUR 182517.72",
+        "Matkator is defendant/executed party in Cambiario 1048/2019 and ETJ 163/2020"
+      ],
+      "open": "formal Matkator engagement for the relevant underlying work, instrument authority/cause and accounting allocation remain to be produced"
+    }
+  ],
+  "billing_snapshot": {
+    "issued_invoices_count": 22,
+    "issued_invoice_face_total_eur": 327608.32,
+    "issued_invoice_recipients": {
+      "Aweswell": 20,
+      "LPB": 2,
+      "Matkator": 0
+    },
+    "settled_invoice_face_total_eur": 190777.6,
+    "cuatrecasas_table_settled_after_retainer_eur": 189777.6,
+    "unpaid_issued_invoices_eur": 136830.72,
+    "wip_estimate_2019_eur": 152424.95,
+    "collections_work_carried_out_unbilled_2020_eur": 161738.75,
+    "claim_1_principal_eur": 189830.72,
+    "claim_1_reconstruction": "EUR 136830.72 unpaid issued invoices + EUR 53000 two pro-forma amounts",
+    "claim_2_principal_eur": 182517.72,
+    "claim_2_instruments": "four Matkator promissory notes; Cambiario 1048/2019 / ETJ 163/2020",
+    "grouped_two_claim_demand_2022_eur": 441463,
+    "boundary": "Figures establish a reconciliation problem and claim architecture; they do not by themselves establish false billing, duplicate recovery or criminality."
+  },
+  "claim_chain": [
+    "engagement_client_identity",
+    "work_performed",
+    "issued_invoice",
+    "wip_unbilled_or_proforma",
+    "collection_demand",
+    "payer_security_or_promissory_note_bridge",
+    "cambiario_title_formation",
+    "etj_enforcement",
+    "credit_single_satisfaction_remaining_balance",
+    "assignment_cession_ultimate_benefit"
+  ],
+  "project_allegations_under_test": [
+    {
+      "id": "CUA-CLAIM-HYP-001",
+      "allegation": "Whether any invoice, WIP, pro-forma, time narrative or debtor allocation was materially false, incomplete, duplicative or attributed to the wrong entity.",
+      "status": "ALLEGATION_NOT_FINDING"
+    },
+    {
+      "id": "CUA-CLAIM-HYP-002",
+      "allegation": "Whether the four Matkator promissory notes lawfully and accurately mapped to underlying work previously described in the Aweswell/LPB billing universe.",
+      "status": "OPEN_REQUIRES_ORIGINAL_INSTRUMENT_AND_CAUSE_RECORD"
+    },
+    {
+      "id": "CUA-CLAIM-HYP-003",
+      "allegation": "Whether Claim 1, Claim 2 and the WIP/unbilled pool can be reconciled without overlap or double satisfaction.",
+      "status": "OPEN_ACCOUNTING_TEST"
+    },
+    {
+      "id": "CUA-CLAIM-HYP-004",
+      "allegation": "Whether any materially inaccurate or incomplete representation in Cambiario/ETJ was knowingly capable of inducing a prejudicial judicial disposition.",
+      "status": "CRIMINAL_HYPOTHESIS_REQUIRES_ACT_SPECIFIC_PROOF"
+    },
+    {
+      "id": "CUA-CLAIM-HYP-005",
+      "allegation": "Whether the broader claim architecture could be transferred or used as economic leverage and whether any actual recipient/beneficiary connects to the Acosta Matos perimeter.",
+      "status": "INVESTIGATIVE_HYPOTHESIS_NO_CURRENT_RECIPIENT_PROOF"
+    }
+  ],
+  "corrections": [
+    {
+      "unsafe": "Cuatrecasas never demanded Aweswell",
+      "corrected": "Direct collection/settlement dialogue with Aweswell existed; the issue to test is the later shift from Aweswell/LPB client/billing context to Matkator instrument/judicial-debtor status."
+    },
+    {
+      "unsafe": "Cuatrecasas never went to Concurso 36/2012",
+      "corrected": "Cuatrecasas acted extensively in the concurso for the Aweswell/LPB side and withdrew in May 2020 citing unpaid fees. Current controlled search has not located proof that Cuatrecasas lodged/proved its own fee credit as creditor."
+    },
+    {
+      "unsafe": "The June-2025 MASC response admits Aweswell was the legal debtor and Matkator was not",
+      "corrected": "The MASC response engages Aweswell's fee-dispute framing but does not itself make that debtor-identity admission."
+    },
+    {
+      "unsafe": "Apartment 758 is a Matkator asset",
+      "corrected": "758 belongs to the Thompson-family perimeter; Matkator canonical fincas for the current La Laguna crosswalk are 8584 and 8588, with 8584 the exact current ETJ realization target."
+    }
+  ],
+  "collection_and_insolvency_controls": [
+    {
+      "proposition": "Direct Aweswell collection/settlement dialogue",
+      "status": "VERIFIED_IN_EMAIL_CORPUS"
+    },
+    {
+      "proposition": "LPB invoice chasing",
+      "status": "VERIFIED_IN_EMAIL_CORPUS"
+    },
+    {
+      "proposition": "Separate judicial fee action against Aweswell in UK/Spain for same fee universe",
+      "status": "NOT_LOCATED_IN_CURRENT_CONTROLLED_SEARCH"
+    },
+    {
+      "proposition": "Distinct formal demand served on hotel as operating unit",
+      "status": "NOT_VERIFIED"
+    },
+    {
+      "proposition": "Cuatrecasas own fee-credit communication/proof as creditor in Concurso 36/2012",
+      "status": "NOT_LOCATED_IN_CURRENT_CONTROLLED_SEARCH"
+    }
+  ],
+  "transfer_and_beneficiary_control": {
+    "verified": "03-Sep-2026 ETJ opposition requests adjudication of finca 8584 and faculty to cede remate to a third party",
+    "not_verified": [
+      "completed adjudication",
+      "completed cession",
+      "transfer of whole underlying credit",
+      "identity of assignee/recipient",
+      "Acosta Matos/CAM/HNT beneficiary status"
+    ],
+    "rule": "Do not infer an Acosta Matos destination from the existence of a cession request. Require assignment/cession instrument, consideration, communications, KYC/beneficial ownership, source of funds and accounting trail."
+  },
+  "gaps": [
+    {
+      "id": "CUA-CLAIM-GAP-001",
+      "item": "Complete native engagement/matter-opening file by entity and matter"
+    },
+    {
+      "id": "CUA-CLAIM-GAP-002",
+      "item": "One invoice/WIP/pro-forma/time-entry reconciliation ledger"
+    },
+    {
+      "id": "CUA-CLAIM-GAP-003",
+      "item": "Original four promissory notes front/back, authority, cause and exact work allocation"
+    },
+    {
+      "id": "CUA-CLAIM-GAP-004",
+      "item": "Complete files and itemised balances for both judicial claims grouped in February 2022"
+    },
+    {
+      "id": "CUA-CLAIM-GAP-005",
+      "item": "Bank, VAT, credit-note, set-off and single-satisfaction ledger"
+    },
+    {
+      "id": "CUA-CLAIM-GAP-006",
+      "item": "Certified search/result for any Cuatrecasas own-credit filing in Concurso 36/2012 and any separate Aweswell fee proceedings"
+    },
+    {
+      "id": "CUA-CLAIM-GAP-007",
+      "item": "Any assignment, adjudication, remate cession, recipient and ultimate-beneficial-owner evidence"
+    },
+    {
+      "id": "CUA-CLAIM-GAP-008",
+      "item": "DP 748 post-9-September court processing: Article 766.4 treatment, other-party transfer, remittal, appellate roll and outcome"
+    }
+  ],
+  "linked_proceedings": [
+    {
+      "master_id": "TF-CIV-001",
+      "role": "ONE_TITLE_FORMING_ROUTE_WITHIN_WIDER_CLAIM"
+    },
+    {
+      "master_id": "TF-CIV-002",
+      "role": "ENFORCEMENT_AND_REALIZATION"
+    },
+    {
+      "master_id": "TF-CRI-003",
+      "role": "SEPARATE_CRIMINAL_INVESTIGATION_ROUTE_09SEP_PRESENTATION_VERIFIED"
+    },
+    {
+      "reference": "Concurso 36/2012",
+      "role": "SEPARATE_INSOLVENCY_AND_POTENTIAL_CREDITOR_PROOF_AUDIT"
+    }
+  ],
+  "public_pages": {
+    "en": "/en/cuatrecasas-matkator-whole-claim/",
+    "es": "/es/cuatrecasas-matkator-reclamacion-integral/"
+  },
+  "reconciled_as_of": "2026-09-27",
+  "current_corrections_20260927": {
+    "note_faces": "All four reproduced faces read NO A LA ORDEN; originals/backs and actual transfer remain open. Notes dated 21-Nov-2018 predate the July-2019 WIP schedule.",
+    "asset_scope": "Both 8584 and 8588 were requested for attachment in the original claim; 8584 alone is the presently identified realization target. Apartment 758 is not Matkator property.",
+    "credit_scenario": "EUR 77840 credit and EUR 104677.72 residual principal are a scenario, not verified posted satisfaction.",
+    "current_source_control": "archive/CUATRECASAS_PROFESSIONAL_PERIMETER_RECONCILIATION_27SEP2026.md"
+  }
+}

@@ -326,3 +326,12 @@ Any future thread touching A&G / RICPE / San Telmo / RSM / Enrique Guerra / AC p
 8. connected Gmail/Drive primary sources where an exact source is needed.
 
 Do not reconstruct the missing direct edges from conversational memory.
+
+
+## 27 September 2026 — primary corporate-source completion / ST-GAP-02
+
+The [11-Sep-2018 BORME](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2018-175-35), entries 371214–371215 (GC 47681, I/A 5–6; registered 4-Sep-2018), records Francisco Javier Rodríguez-Batllori Laffitte’s appointment as professional partner, his receipt of 167 shares from Lorenzo Sánchez Iglesias, and the cessation of Francisco de Borja Rodríguez-Batllori Laffitte and Eduardo Sánchez Iglesias as joint administrators. The AC’s cessation from office must not be treated as departure from the professional/shareholding perimeter.
+
+The [10-Jul-2024 BORME](https://www.boe.es/borme/dias/2024/07/10/pdfs/BORME-A-2024-132-35.pdf), entry 308341 (p.32821; GC 47681, I/A 8; registered 3-Jul-2024), records Francisco de Borja’s transfer of 500 shares to Francisco Javier and the former’s revocation as professional partner. This is a specific primary corporate bridge, not merely a later client description. `ST-GAP-02` is **PARTIALLY CLOSED** for these entries; complete historical membership, powers, deeds and effective transaction dates remain requested. These publication/registration dates are not silently substituted for unverified transaction dates.
+
+Separately, a controlled investigation report received on 8-May-2018, p.28, identifies Javier as the AC’s brother and states that both worked at San Telmo. The original remains private; it is an investigation report, not a civil-registry certificate. No third brother has been established. RSM’s official integration announcement identifies Javier, Eduardo Sánchez Iglesias and Javier de Bethencourt Gallego, not three brothers. These connections justify specific custody/conflict/knowledge questions without themselves proving coordination or wrongdoing. See the bounded 27-Sep Cuatrecasas/professional-perimeter reconciliation for current RSM review and source hashes.

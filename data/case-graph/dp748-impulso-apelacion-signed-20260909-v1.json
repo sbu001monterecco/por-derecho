@@ -1,0 +1,137 @@
+{
+  "schema": "por-derecho.case-graph.v1",
+  "updated": "2026-09-09",
+  "source_evidence_id": "DP748-IMPULSO-APELACION-SIGNED-20260909",
+  "source_sha256": "68690863bd5909257dfced626b552ad82d0ee7cc2374486300c89757c2be2e8d",
+  "source_class": "SIGNED_COUNSEL_VERSION_WITH_LEXNET_PRESENTATION_CORROBORATED",
+  "source_boundary": "The corrected counsel package content/signature is controlled from counsel email; LexNET receipts and the procuradora's same-day confirmation establish presentation in DP 748/2026. Exact binary identity between the emailed counsel PDF and the LexNET-processed principal is not inferred from the differing LexNET document hashes. Court joinder/treatment, Article 766.4 processing, appellate transmission, reopening and the truth of the allegations remain separate questions.",
+  "nodes": {
+    "proceedings": [
+      {
+        "id": "PROC-DP-748-2026",
+        "master_id": "TF-CRI-003",
+        "label": "DP 748/2026",
+        "relationship": "filing_proceeding_presentation_verified_processing_open"
+      },
+      {
+        "id": "PROC-ETJ-163-2020",
+        "master_id": "TF-CIV-002",
+        "label": "ETJ 163/2020",
+        "relationship": "underlying_enforcement_evidentiary_bridge"
+      },
+      {
+        "id": "PROC-JC-1048-2019",
+        "master_id": "TF-CIV-001",
+        "label": "Juicio Cambiario 1048/2019",
+        "relationship": "upstream_title_service_debtor_context"
+      }
+    ],
+    "actors": [
+      {
+        "id": "ACT-CUATRECASAS",
+        "label": "Cuatrecasas Legal, S.L.P.",
+        "relationship": "actor_named_in_allegations_and_underlying_civil_tracks",
+        "boundary": "No criminal or professional-liability finding is inferred."
+      },
+      {
+        "id": "ACT-MATKATOR",
+        "label": "Matkator, S.L.U.",
+        "relationship": "affected_company_and_executed_party_in_underlying_track"
+      }
+    ],
+    "assets": [
+      {
+        "id": "FINCA-YAIZA-8584",
+        "label": "Finca 8.584",
+        "relationship": "exact_target_control_in_corrected_package"
+      },
+      {
+        "id": "FINCA-YAIZA-8588",
+        "label": "Finca 8.588",
+        "relationship": "separate_contextual_matkator_property_crosswalk"
+      }
+    ]
+  },
+  "propositions": [
+    {
+      "id": "DP748-0909-P01",
+      "status": "FILED_COUNSEL_REQUEST",
+      "text": "The 9 September filing asks the court to process the subsidiary appeal already interposed with the April reforma.",
+      "boundary": "Presentation is verified; processing after 9 September remains unverified."
+    },
+    {
+      "id": "DP748-0909-P02",
+      "status": "FILED_COUNSEL_REQUEST",
+      "text": "The filing supplies Article 766.4 allegations ad cautelam or requests the formal transfer.",
+      "boundary": "Does not prove that the procedural transfer occurred."
+    },
+    {
+      "id": "DP748-0909-P03",
+      "status": "FILED_COUNSEL_EVIDENCE_SELECTION",
+      "text": "The 3 September 2026 Cuatrecasas ETJ opposition is selected as supervening evidence.",
+      "boundary": "Presentation of the package is verified; later judicial treatment of the annex remains open."
+    },
+    {
+      "id": "DP748-0909-P04",
+      "status": "CORRECTION_CONTROL",
+      "text": "The superseded apartment-758 reference was expressly stopped before presentation; the corrected counsel version uses finca 8.584 as the exact target and 8.588 only in the wider Matkator property crosswalk.",
+      "boundary": "The withdrawn draft is provenance/correction evidence only and must not propagate as canonical fact."
+    }
+  ],
+  "filing_provenance": {
+    "public_summary": "Corrected 9 September filing presented in DP 748/2026; subsequent court processing remains open.",
+    "reader_rule": "Public pages state only the material procedural fact—presentation verified—and do not burden readers with duplicate-transmission mechanics.",
+    "custody_boundary": "Native transmission identifiers and counsel/procurator correspondence remain in private custody; public fact is presentation, not subsequent judicial processing."
+  },
+  "edges": [
+    {
+      "from": "DP748-IMPULSO-APELACION-SIGNED-20260909",
+      "to": "PROC-DP-748-2026",
+      "type": "presentation_verified_by_lexnet_and_procuradora_confirmation"
+    },
+    {
+      "from": "PROC-ETJ-163-2020",
+      "to": "DP748-IMPULSO-APELACION-SIGNED-20260909",
+      "type": "underlying_enforcement_evidence_context"
+    },
+    {
+      "from": "PROC-JC-1048-2019",
+      "to": "DP748-IMPULSO-APELACION-SIGNED-20260909",
+      "type": "title_service_debtor_cause_context"
+    },
+    {
+      "from": "FINCA-YAIZA-8584",
+      "to": "DP748-IMPULSO-APELACION-SIGNED-20260909",
+      "type": "exact_asset_control"
+    },
+    {
+      "from": "FINCA-YAIZA-8588",
+      "to": "DP748-IMPULSO-APELACION-SIGNED-20260909",
+      "type": "contextual_asset_crosswalk_only"
+    },
+    {
+      "from": "ACT-CUATRECASAS",
+      "to": "PROC-DP-748-2026",
+      "type": "named_actor_in_allegation_subject_to_investigation_no_finding"
+    }
+  ],
+  "tracks": [
+    "criminal_evidentiary",
+    "enforcement",
+    "civil_cambiario",
+    "registral_property",
+    "cadastral_technical",
+    "hotel_operation",
+    "professional_liability_and_ethics",
+    "due_process_service",
+    "financial_instruments",
+    "beneficial_ownership_and_cession",
+    "evidence_custody_recovery"
+  ],
+  "open_gaps": [
+    "Court act showing treatment/joinder of the 9 September filing and annex.",
+    "Article 766.4 transfer, other-party transfer, remittal to Audiencia Provincial and assigned appeal roll.",
+    "Outcome of the ETJ reposición and any adjudication/cession/registration/possession.",
+    "Certified Cambiario instruments, service and debtor/cause chain."
+  ]
+}

@@ -49,7 +49,12 @@
       "evidence_state": "MIXED_VERIFIED_WORK_OPEN_CAUSATION",
       "payment_state": "FEE_RECONCILIATION_REQUIRED",
       "causation_state": "OPEN_NO_SINGLE_CAUSE",
-      "communication_status": "NOT_SENT"
+      "communication_status": "NOT_SENT",
+      "whole_claim_reconciliation": {
+        "control": "archive/CUATRECASAS_PROFESSIONAL_PERIMETER_RECONCILIATION_27SEP2026.md",
+        "register": "assets/data/cuatrecasas-whole-claim-architecture-v1.json",
+        "boundary": "Actual protective work and unpaid-fee explanation retained. Instrument/debtor allocation, single satisfaction and beneficiary proof remain open."
+      }
     },
     {
       "incident_id": "PD-CIR-ALAS-2019-01",
@@ -63,7 +68,8 @@
       "evidence_state": "VERIFIED_ENGAGEMENT_COMPROMISE_ALLEGATION_OPEN",
       "payment_state": "HISTORIC_INVOICES_CURRENT_CREDITOR_RECONCILIATION_OPEN",
       "causation_state": "MULTI_CAUSE_OPEN",
-      "communication_status": "NOT_SENT"
+      "communication_status": "NOT_SENT",
+      "current_complaint_scope": "NOT_A_COMPLAINT_TARGET_IN_PD-CAN-BAR-PERIMETER-20260921-01; evidence/mandate/custody context only"
     },
     {
       "incident_id": "PD-CIR-LUISBARBER-2019-01",
@@ -85,7 +91,8 @@
       "evidence_state": "VERIFIED_PROCEDURAL_EXPOSURE_AND_WITHDRAWAL",
       "payment_state": "SEPARATE_ECONOMIC_ARRANGEMENT_NOT_LOCATED",
       "causation_state": "NO_EXCLUSIVE_CAUSE_ESTABLISHED",
-      "communication_status": "NOT_SENT"
+      "communication_status": "NOT_SENT",
+      "current_complaint_scope": "NOT_A_COMPLAINT_TARGET_IN_PD-CAN-BAR-PERIMETER-20260921-01; evidence/mandate/custody context only"
     },
     {
       "incident_id": "PD-CIR-JTP-2020-01",
@@ -96,7 +103,8 @@
       "evidence_state": "DOCUMENTED_PAYMENT_AND_REJECTED_FEE_ROUTE_INTENT_OPEN",
       "payment_state": "REPORTED_PAYMENT_VERIFIED_TRANSACTION_TRACE_OPEN",
       "causation_state": "OPEN_MULTI_CAUSE",
-      "communication_status": "NOT_SENT"
+      "communication_status": "NOT_SENT",
+      "payment_sequence_20260927": "21-May source/restitution concern with JTP changed-procedural-position explanation; 22-May client payment-route warning; substitution; 11-June written approval requested; 12-June rejection; AC 21-July-2021 report records EUR 26750 in July 2020. Invoice/title/authority/ledger/bank-debit-credit and any superseding client approval remain open."
     },
     {
       "incident_id": "PD-CIR-DANIELJIMENEZ-2020-01",
@@ -147,5 +155,6 @@
       "status": "CONTEXTUAL_EVIDENCE_LINK_ONLY",
       "boundary": "DIP 80/2026 concerns the Administrador Concursal. Former-counsel incidents may be relevant factual context but do not make the former lawyer a respondent/subject and do not imply ICALPA acceptance or merits findings."
     }
-  }
+  },
+  "reconciled_through": "2026-09-27"
 }
