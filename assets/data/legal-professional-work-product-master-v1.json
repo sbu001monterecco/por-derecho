@@ -697,5 +697,24 @@
         "historic professional review does not establish a current mandate or endorsement of later 2026 theories"
       ]
     }
-  ]
+  ],
+  "instruction_implementation_control_20260927": {
+    "purpose": "Reconcile professional work privately through instruction, supplied evidence, reply, draft, approval, signature, filing, service, decision and implementation.",
+    "states": [
+      "INSTRUCTED",
+      "ACKNOWLEDGED",
+      "DECLINED",
+      "DEFERRED",
+      "DRAFT",
+      "APPROVED",
+      "SIGNED",
+      "FILED_WITH_RECEIPT",
+      "SERVED",
+      "DECIDED",
+      "IMPLEMENTED",
+      "NOT_VERIFIED"
+    ],
+    "public_boundary": "Publish only approved source-safe descriptions. Current counsel advice, differences of emphasis and unfiled working documents remain private; no current adviser is adverse merely because of advice or procedural narrowing.",
+    "attribution": "Client, instructing entity, matter, capacity, date, authorship, filing and billing are separate fields. Acknowledgement is not adoption; a proposed step is not a completed filing."
+  }
 }

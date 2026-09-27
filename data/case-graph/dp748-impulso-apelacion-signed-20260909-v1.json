@@ -133,5 +133,11 @@
     "Article 766.4 transfer, other-party transfer, remittal to Audiencia Provincial and assigned appeal roll.",
     "Outcome of the ETJ reposición and any adjudication/cession/registration/possession.",
     "Certified Cambiario instruments, service and debtor/cause chain."
-  ]
+  ],
+  "current_position_status_control": {
+    "as_of": "2026-09-27",
+    "path": "assets/data/cuatrecasas-whole-claim-architecture-v1.json",
+    "source_control": "archive/CUATRECASAS_POSITION_STATUS_OUTCOME_UPDATE_27SEP2026.md",
+    "rule": "Historical events and financial values preserved. Current status and attributed client position are resolved through the existing whole-claim control."
+  }
 }

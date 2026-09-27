@@ -173,5 +173,11 @@
     "note_face": "Court-file reproductions all read NO A LA ORDEN; actual transmission, originals and backs remain open.",
     "vat": "The 21 percent scenario is mechanical only; native invoice examples include reverse-charge treatment.",
     "current_source_control": "archive/CUATRECASAS_PROFESSIONAL_PERIMETER_RECONCILIATION_27SEP2026.md"
+  },
+  "current_position_status_control": {
+    "as_of": "2026-09-27",
+    "path": "assets/data/cuatrecasas-whole-claim-architecture-v1.json",
+    "source_control": "archive/CUATRECASAS_POSITION_STATUS_OUTCOME_UPDATE_27SEP2026.md",
+    "rule": "Historical events and financial values preserved. Current status and attributed client position are resolved through the existing whole-claim control."
   }
 }
