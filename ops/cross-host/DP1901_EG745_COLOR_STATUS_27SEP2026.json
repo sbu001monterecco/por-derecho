@@ -13,14 +13,19 @@
     "19-Sep CGPJ hash lock preserved",
     "native GitLab access restored",
     "GitHub issue 1951 and GitLab issue 69 carry implementation queue",
-    "RedSARA state-machine and ATLANTE non-inference guardrails posted on both hosts"
+    "RedSARA state-machine and ATLANTE non-inference guardrails posted on both hosts",
+    "substantial DP1901/EG745 20-24 Sep Google Drive custody source-proved",
+    "A01 DGRAJ onward administrative transfer source-proved with judicial-incorporation boundary",
+    "A08 and A10 registry-processing successor states source-proved",
+    "CGPJ 25-Sep incorporation confirmation for the described 24-Sep Alzada update source-proved"
   ],
   "amber": [
     "authority-production gaps open",
-    "full later Google Drive parity not independently proved",
     "cross-host convergence incomplete",
     "search/index current-state precedence unverified",
-    "GitLab live deployment requires explicit readback after changes"
+    "GitLab live deployment requires explicit readback after changes",
+    "full recursive Google Drive folder exhaustion and item-level parity remain open",
+    "9 of 12 configured broad Gmail query families retain continuation; attachment-level analysis remains open"
   ],
   "red": [
     "stale current operational flags still describe GitLab as blocked",
@@ -32,5 +37,6 @@
     "gitlab_issue": 69,
     "continuation_prompt": "prompts/DP1901_EG745_CROSSHOST_IMPLEMENTATION_CONTINUATION_PROMPT_27SEP2026.md"
   },
-  "external_action_rule": "No new external filing absent a residual-gap finding in the no-repeat matrix."
+  "external_action_rule": "No new external filing absent a residual-gap finding in the no-repeat matrix.",
+  "gitlab_validation": "AMBER_CI_QUOTA_EXCEEDED_FOR_CURRENT_MIRROR_BRANCHES"
 }
