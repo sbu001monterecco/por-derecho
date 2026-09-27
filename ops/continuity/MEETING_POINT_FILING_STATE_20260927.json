@@ -140,14 +140,24 @@
   "continuity_record": "docs/meeting-point/MEETING_POINT_FILING_CONTINUITY_27SEP2026.md",
   "private_custody_rule": "PD-GOV-002: repository contents are treated as public or potentially Pages-readable despite repository visibility. Native receipts, signed/privileged sources, private correspondence and exact private locators remain in authorised private Drive/Library custody.",
   "supersession": "The 24-September v10/v4 baseline remains historically REVISE. It does not describe the later v19/v8 filing state.",
-  "thread_safety_status": "PRESERVATION_VERIFICATION_IN_PROGRESS",
+  "thread_safety_status": "PRESERVATION_COMPLETE_RECOVERABLE",
   "deployment_scope": "Repository continuity records only; no rendered website wording or deployment configuration changed.",
   "private_preservation_bundle": {
     "archive_sha256": "1ba719409726367285677bd78506ebdf1524b339daea065b3a364b66b3a40415",
     "archive_bytes": 107339724,
     "member_count": 43,
     "manifest_sha256": "d3b6b08dc669eb913b86bb08001bac4b8451c799e6cb7a41b3fbd6c14a08db40",
-    "destination_verification": "IN_PROGRESS"
+    "destination_verification": {
+      "library": "SAVED_VERIFIED",
+      "private_drive_core_documents": "SHA256_READBACK_VERIFIED",
+      "private_drive_full_bundle": "SHA256_RECONSTRUCTED_READBACK_VERIFIED",
+      "github": "MERGED_DEPLOYED_EXACT_READBACK_VERIFIED_PR_1992",
+      "gitlab": "MERGED_EXACT_READBACK_VERIFIED_MR_684"
+    },
+    "preservation_scope_color": "GREEN",
+    "proof_boundary": "Preservation verification does not establish identity of court-held attachment bytes, judicial association/incorporation, admission, examination, response, or any seventh clarification receipt."
   },
-  "overall_operational_color": "AMBER"
+  "overall_operational_color": "AMBER",
+  "cross_system_preservation_status": "GREEN",
+  "cross_system_preservation_as_of": "2026-09-27"
 }

@@ -1,6 +1,6 @@
 # Meeting Point — filing continuity, 27 September 2026
 
-**🟠 AMBER — overall follow-up remains open; preservation destination verification is in progress.**
+**🟠 AMBER — court-handling follow-up remains open; 🟢 preservation is complete and cross-system destination verification is GREEN.**
 
 **Control:** PD-MP-FILING-CONTINUITY-20260927  
 **🟢 GREEN — registration:** six receipts list the two-part Document 1 v19 and Document 2 v8 across both 357/2024 and 93/2025.  
@@ -43,7 +43,7 @@ The final approved document pair remains **v19/v8**. The earlier v10/v4 baseline
 
 Under PD-GOV-002 every tracked repository file is treated as public or potentially Pages-readable. Repository privacy and an archive/private filename do not authorise publication of raw legal materials. Git holds this minimised event/control projection and source fingerprints. Authorised private Drive/Library custody holds native receipts, exact registration/verification identifiers, the complete approved PDFs, available covering notes, the unfiled clarification and the detailed preservation manifest. Exact private correspondence and source locators are not copied into Git.
 
-This update changes repository continuity records only. It does not rewrite the rendered website, alter deployment configuration, suppress historical allegations or contrary evidence, or certify any new legal conclusion. Cross-host/private preservation completion must be checked against actual destination readback, not inferred from this record's existence.
+This update changes repository continuity records only. It does not rewrite the rendered website, alter deployment configuration, suppress historical allegations or contrary evidence, or certify any new legal conclusion. Cross-host/private preservation completion has now been checked against actual destination readback: GitHub merge/deployment readback, GitLab merged-file readback, private Library save, private Drive core-document hash readback, and full private Drive archive reconstruction all completed. This preservation result does not verify the court-held attachment bytes or subsequent judicial incorporation/handling.
 
 ## Continuación en español
 
@@ -53,4 +53,4 @@ Se preservan los originales, las huellas y el estado histórico v10/v4. Registro
 
 ## Preservation package fingerprint
 
-The private package has 43 members and 107,339,724 bytes. Archive SHA-256: `1ba719409726367285677bd78506ebdf1524b339daea065b3a364b66b3a40415`. Manifest SHA-256: `d3b6b08dc669eb913b86bb08001bac4b8451c799e6cb7a41b3fbd6c14a08db40`. These fingerprints establish the prepared preservation package, not identity of court-processed attachment bytes. Destination readback remains in progress at this record revision.
+The private package has 43 members and 107,339,724 bytes. Archive SHA-256: `1ba719409726367285677bd78506ebdf1524b339daea065b3a364b66b3a40415`. Manifest SHA-256: `d3b6b08dc669eb913b86bb08001bac4b8451c799e6cb7a41b3fbd6c14a08db40`. These fingerprints establish the prepared preservation package, not identity of court-processed attachment bytes. **Preservation scope: 🟢 GREEN.** Private Library save is verified; core private Drive documents have SHA-256 readback verification; the 107,339,724-byte archive was preserved in four Drive parts and remotely downloaded/reassembled to the same archive SHA-256. GitHub PR #1992 is merged/deployed with exact public readback of the two new continuity files; GitLab MR !684 is merged with exact merged-file readback. GitLab Pages/project-wide CI remains separately affected by disclosed inherited failures and is not represented as GREEN.
