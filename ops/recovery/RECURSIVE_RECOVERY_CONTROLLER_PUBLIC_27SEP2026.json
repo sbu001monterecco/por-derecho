@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.recursive-recovery-controller-public.v1",
   "control_date": "2026-09-27",
-  "state": "AMBER_PASS3_ATTACHMENT_DIGITISATION_IN_PROGRESS",
+  "state": "AMBER_PASS4_THREE_OF_TWELVE_QUERY_FAMILIES_EXHAUSTED",
   "accounts": [
     {
       "id": "SBU_PRIMARY",
@@ -258,5 +258,44 @@
       "2018 Fiscalía and 2019 notarial site-inspection native source families remain priority source-level reconciliation candidates"
     ],
     "recovered_packet_manifest": "ops/recovery/FISCALIA_2018_RECOVERED_PACKET_PUBLIC_SAFE_27SEP2026.json"
+  },
+  "pass4": {
+    "completed": true,
+    "cumulative_counts": {
+      "SBU_PRIMARY": {
+        "A": 400,
+        "B": 400,
+        "C": 400,
+        "D": 400
+      },
+      "GIL_PERSONAL": {
+        "A": 107,
+        "B": 391,
+        "C": 400,
+        "D": 400
+      },
+      "PATRICIA_PERSONAL": {
+        "A": 366,
+        "B": 400,
+        "C": 400,
+        "D": 400
+      }
+    },
+    "aggregate_result_ids_seen_at_list_level": 4464,
+    "configured_buckets_exhausted_current_query_family": 3,
+    "configured_buckets_with_continuation": 9,
+    "exhausted_current_query_families": [
+      "GIL_PERSONAL:A",
+      "GIL_PERSONAL:B",
+      "PATRICIA_PERSONAL:A"
+    ],
+    "terminal_bundle": {
+      "packet_id": "REC-CONCURSO-2015-BUNDLE-01",
+      "attachment_count": 64,
+      "total_attachment_bytes": 12262290,
+      "state": "EXISTING_DRIVE_CUSTODY_INDEXING_AND_CANONICAL_UTILIZATION_PRIORITY",
+      "public_manifest": "ops/recovery/CONCURSO_2015_AC_REQUEST_BUNDLE_PUBLIC_SAFE_27SEP2026.json"
+    },
+    "proof_boundary": "Provider query-family exhaustion is distinct from substantive analysis completion."
   }
 }
