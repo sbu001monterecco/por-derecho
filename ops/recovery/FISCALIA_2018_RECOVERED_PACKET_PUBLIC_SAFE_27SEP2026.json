@@ -3,7 +3,7 @@
   "control_date": "2026-09-27",
   "packet_id": "REC-FIS2018-PACKET-01",
   "source_class": "PRIVATE_GMAIL_RECOVERY_WITH_PRIVATE_DRIVE_CUSTODY",
-  "canonical_allocation_state": "SOURCE_REVIEW_PENDING_NO_NEW_EVENT_ALLOCATED",
+  "canonical_allocation_state": "RECONCILED_HISTORICAL_PACKET_NO_NEW_EVENT_ALLOCATED",
   "description": "Recovered 2018 Fiscalía complaint/annex/presentation-receipt packet; private originals preserved outside public Git.",
   "members": [
     {
@@ -78,10 +78,49 @@
     "public_git_contains_original_bytes": false
   },
   "next_steps": [
-    "visual review of image-only/partial pages",
-    "full source-to-proposition analysis",
-    "compare against existing 2018 Fiscalía/DI/complaint controls",
-    "allocate canonical source identity only after reconciliation",
-    "link only source-proved propositions with contrary/lawful alternatives"
-  ]
+    "complete visual review of image-only/partial annex pages",
+    "map remaining annex hashes/contents to existing canonical sources where possible",
+    "evaluate a public-safe source/custody link to LZ-FIS-051 under existing proceeding-source rules",
+    "keep DI 248/2018 separate unless native proof establishes a procedural relation"
+  ],
+  "reconciliation": {
+    "complaint": {
+      "state": "EXACT_DUPLICATE_EXISTING_TS06_NO_NEW_CORROBORATION",
+      "existing_control": "evidence/ten-source-2011-2019/TS-06.md",
+      "rule": "Reacquisition improves custody/digitisation only; repetition is not independent corroboration."
+    },
+    "presentation_receipt": {
+      "state": "EXACT_DUPLICATE_OLDER_PRIVATE_DRIVE_SOURCE",
+      "visible_entry_date": "2018-10-17",
+      "visible_reference": "302/18",
+      "candidate_lineage": "LZ-FIS-051",
+      "boundary": "Candidate source-lineage link only. Keep 302/2018 and DI 248/2018 separate unless a native source proves a procedural relation."
+    },
+    "annex_5": {
+      "state": "EXACT_HASH_ALREADY_CONTROLLED_JUDICIAL_SOURCE",
+      "source_date": "2018-06-26"
+    },
+    "annex_1": {
+      "state": "SOURCE_REVIEW",
+      "visual_state": "IMAGE_ONLY_VISUAL_REVIEW_REQUIRED"
+    },
+    "annex_2": {
+      "state": "SOURCE_REVIEW",
+      "text_state": "13_OF_13_TEXT_PAGE_MARKERS"
+    },
+    "annex_3": {
+      "state": "SOURCE_REVIEW",
+      "text_state": "27_TEXT_PAGE_MARKERS_ACROSS_28_SUPPLIED_PAGES"
+    },
+    "annex_4": {
+      "state": "SOURCE_REVIEW",
+      "source_date": "2012-06-26"
+    }
+  },
+  "date_control": {
+    "pleading_face_date": "2018-09-12",
+    "receipt_entry_date": "2018-10-17",
+    "rule": "Do not collapse document face date and entry/registration date."
+  },
+  "proof_boundary": "Recovered bytes improve custody and digitisation. They do not by themselves establish merits, independent corroboration, or a procedural link between separately controlled proceedings."
 }
