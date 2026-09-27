@@ -217,3 +217,22 @@ Drive reconciliation now source-proves substantial later custody beyond the earl
 
 The broad controller remains **AMBER**: 3/12 configured query families are exhausted and 9 retain continuation. Attachment-level analysis and Drive subfolder recursion remain material. Targeted zero-result searches in one account do not change that broader exhaustion state.
 
+## GREEN convergence / reproducibility repair — 27 September 2026
+
+The historical recursive controller preserved **4,464 list-level result IDs** and opaque Gmail continuation tokens, but it did not preserve the exact query strings. Because Gmail page tokens must not be paired with guessed queries, historical coverage remains preserved while **explicit reproducible query matrix v2** now controls final exhaustion. Exact queries are stored in the machine controller; private page tokens remain private.
+
+Current verified v2 progress:
+- GIL_PERSONAL A: **92 total — terminal**.
+- GIL_PERSONAL B: **488 total — terminal**.
+- GIL_PERSONAL C: **154 seen at checkpoint; pagination remains open** after a provider FORBIDDEN interruption following a verified second page.
+
+A provider interruption is not an exhaustion signal. The exact query/token pair is preserved privately for later continuation.
+
+### Old Sun Park Drive tree
+
+The current accessible provider census returns **39 direct children** at the Old Sun Park root, rather than the stale earlier 41 count. Every first-level folder returned by that root and every nested folder discovered during recursion has now been descended to a terminal folder or bounded provider page. Therefore **folder enumeration is GREEN for the currently accessible Old Sun Park tree**; substantive item-level analysis remains AMBER.
+
+Material source families recovered/reconciled include the 2015 LPB refinance draft, 2017 Solos legal DD, 2012 TAXA condition report, 2014 SAREB valuation analysis, licence/title/planning material, signed/working 2017 bond-structuring families, large title-note collections and Additional Units planning files. Source-authored allegations, valuations and contemplated transaction terms remain source statements rather than adjudicated facts.
+
+The recursive task has been increased to **hourly** while GREEN remains unproved. It must retain the exact query strings/tokens and may stop only after all nine GREEN criteria and cross-host closure receipts are actually established.
+
