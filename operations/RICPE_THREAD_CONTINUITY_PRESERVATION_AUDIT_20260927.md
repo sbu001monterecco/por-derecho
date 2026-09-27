@@ -4,6 +4,23 @@
 **Audit date:** 27 September 2026  
 **Thread state:** two new SAIPs filed today through RedSARA AGE; documentary, repository and Drive preservation checked.
 
+## Traffic-light status — mandatory continuity-audit summary
+
+**Overall operational/readiness: 🔴 RED** — continuity is durably preserved, but an in-scope GitLab validation/control is failed and therefore RED under the governing aggregation rule. This operational colour does **not** express legal merit, evidential weight or wrongdoing.
+
+### Component statuses
+
+| Component | Status | Verified basis |
+| --- | --- | --- |
+| RedSARA SAIP 01 — Canary Hacienda | 🟢 **GREEN** | Filed/registered; exact submitted PDF independently matches the SHA-512 printed by RedSARA. |
+| RedSARA SAIP 02 — AEAT | 🟢 **GREEN** | Filed/registered; exact submitted PDF independently matches the SHA-512 printed by RedSARA. |
+| Google Drive / durable custody | 🟢 **GREEN** | Exact filed PDFs, redacted receipts, filing-status records and continuity materials are preserved in the canonical RICPE workspace. |
+| GitHub continuity | 🟢 **GREEN** | Substantive update and filing continuity are merged through PR #1987; this audit is separately preserved in the repository lineage. |
+| GitLab protected-main integration | 🔴 **RED** | Source continuity is preserved on MR !678, but the latest in-scope pipeline failed and the MR remains unmerged. No gate is bypassed. |
+| Evidential / authority-routing follow-up | 🟠 **AMBER** | Decreto 224/2022, the original AEAT report and several routing/receipt/production questions remain open; these do not negate the already verified preservation claims. |
+
+**Aggregation:** one RED component makes the overall operational/readiness status **🔴 RED**. The separate thread-deletion-safety cue appears at the end of this audit.
+
 ## 1. Canonical subject and purpose
 
 This thread is the transparency / public-records continuation concerning Sun Park–MYND Yaiza, RIC Private Equity, RIC materialisation, Decreto 224/2022, the AEAT binding-report chain, GC/836/P06, regional incentives, possible FEDER / European-funds records, CNMV supervision/access records, Cabildo/Yaiza tourism and municipal records, and informant/alertador protections.
@@ -114,3 +131,5 @@ For every new authority response, routing notice or disclosure:
 ## 9. Audit conclusion
 
 **Continuity is preserved for this thread.** Both new SAIPs are filed and cryptographically matched to their RedSARA receipt hashes; exact submitted PDFs and redacted receipts are preserved in the canonical Drive workspace; GitHub public-safe continuity is merged through PR #1987; GitLab preserves the same filing continuity on MR !678 but is correctly left unmerged because its pipeline failed. The unresolved evidential and routing controls above remain explicitly open.
+
+🟢 THREAD — safe to delete
