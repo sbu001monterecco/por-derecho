@@ -152,3 +152,39 @@ Parent control remains PD-CAN-BAR-PERIMETER-20260921-01; institutional reference
 Preserve the client's May–June 2020 warning, substitution, written-approval request and rejection sequence together with the professional's contemporaneous contrary/legal explanation. The present readback verifies the recovered annex and its primary AC/ICAM pages; it does not certify a fresh native-email reread of every May–June event.
 
 Pending integration: reconcile this addendum through the single integration lane; update the existing Drive staging record; locate/reconcile the GitLab counterpart; keep source custody, merge, CI, deployment and institutional transmission as separate states. No website change or independent publication is claimed.
+
+## Operative successor — 27 September 2026: Consejo and CCACM sent; no resend
+
+**This later checkpoint supersedes the earlier preparation-only/no-send states for these two exact communications.** Earlier dated text above remains a historical record, not the current dispatch status. Parent and institutional files remain separate; no new universal professional map is created.
+
+- **Consejo Canario / RE-000329:** the Spanish amplification was sent once on 27 September with the 36-page dossier and three original PNGs. Its native dispatch record and verification are retained privately. Do not resend it.
+- **CCACM / REV2:** the approved Spanish institutional communication was sent once on 27 September in the existing Madrid conversation, with the integrated 85-page annex, the unchanged 36-page Consejo dossier and three separate original PNGs. The actual Sent record was read back; all five attachments were recovered at send verification and hash-matched. A fresh bounded audit search again found the single sent communication and no addressed draft, incoming acknowledgement or matching delivery failure. That is not proof of receipt, reading, formal registration, admissibility or substantive action.
+- The reported historical 71-page successor was not recovered. The authorised **85-page REV2 is a newly integrated successor**, not a purported copy of that missing original: guide pp.1–8; all 63 predecessor pages pp.9–71; complete opposition of 3 September pp.72–83; complete order of 17 September pp.84–85. Earlier source pages and contradictory/adverse material are retained. The combined PDF is a reading copy, not certification of its component electronic signatures.
+
+### Plain-language account preserved / explicación conservada
+
+The allegation is that retained productive assets, income and business opportunities may provide both resources and incentives to resist their recovery, while loss of income makes the displaced side's independent legal protection harder to finance. Specific payment conditions, conflicting mandates, former-client information or enforcement decisions must be tested; lawful representation, unpaid fees, business growth and compatible effects do not by themselves prove improper influence or a common criminal agreement.
+
+La alegación conecta control e ingresos, capacidad de financiación, relaciones profesionales y resistencia a la recuperación. El posible incentivo perverso no demuestra por sí solo una infracción. Deben individualizarse instrucciones, conocimiento, pagadores, decisiones y beneficiarios, conservando las explicaciones contrarias y los documentos de cada encargo.
+
+**Armando Betancor Álamo, su equipo de ALAS y Joaquín Ruiz de Infante Abella no son denunciados en esta comunicación.** Gil's AWESWELL-only engagement declaration and denial of an underlying Matkator professional-fee debt remain attributed first-hand positions, not judicial findings or admissions of claimed sums. The two-claim/WIP/2022 full-clearance reconciliation, JTP authority/payment sequence, current R33 use, and RSM's actual response remain preserved with their limits.
+
+### Exact private-carrier fingerprints
+
+| Carrier | Bytes | SHA-256 |
+|---|---:|---|
+| Madrid integrated annex, 85 pages | 3363314 | bb051a29e3a61eabe2af1e3794f8ef9ca21807c6f08677cfed7ce0c4fed76012 |
+| Consejo dossier, 36 pages | 5200275 | bcc0b77e3ef28ad2bcec6e6bb9ade9d929d4f8995118c76a2ef6689ff568258f |
+| PwC 2016 explanatory PNG | 489983 | 6b3dfac14865f8bd9cdaf6eda6b610ff67175a96761f9d5ab7a0819b935643bf |
+| San Telmo/RICPE explanatory PNG | 827315 | f50790d29a0dc55521e03693b9023d55241212bbb4fd78977187dbe8bf544add |
+| PwC institutional-map PNG | 2165709 | edf412394dda20779f2cb6a4cbc72d20c3f13143e99b363dbebe9cf7453e41cf |
+
+Total: **12,046,596 attachment bytes**. Hashes identify privately preserved carriers; they do not make their contents publicly accessible or establish their allegations. No raw email, native private attachment, private locator, privileged advice or additional personal identifier is published by this audit update.
+
+### Continuity and recovery boundary
+
+**GREEN: identified final work-product recovery and verified dispatch. AMBER: institutional acknowledgement, unresolved evidential questions and global history/parity.** The private audit preserves this thread's takeover, version distinction, REV2 preparation, PNG confirmation, authorised single send, verification and successor instructions. The earlier readiness documents and review packages are historical PRE-SEND copies; the sent record controls. Private originals and checksums belong in access-controlled Drive/Library; GitLab internal receipts hold private recovery locators. Repository source commits, review gates, main integration and deployment are recorded separately and are not implied by the dispatch state.
+
+This is a bounded audit of identified material and observed records, not a certification of every historic chat, mailbox, Drive object, repository branch or missing original. Complete prior-thread deletion safety is not asserted. Keep the original source archives, the unchanged sent carriers and the subsequent receipt/registry evidence. Preserve the sent context route `/es/consejo-canario-coordinacion-deontologica-2026/` and its English counterpart. This control-only amendment changes no route, image or deployment configuration.
+
+Successor actions: obtain the distinct CCACM acknowledgement/reference and handling decision; establish the ICAM-to-CCACM and ICAM-to-Tenerife transmission chains separately; pursue the defined mandate, fee, payment-authority, information-use and beneficiary records; and reconcile source/CI/main/deployment through existing lanes without bypassing failed gates. **No further email is authorised or sent by this preservation audit.**
