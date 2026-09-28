@@ -85,3 +85,26 @@ Public routes:
 - The submission boundary remains strict: this is a moderation/account-enforcement dispute, not a hacking/compromise allegation, and no external actor is attributed.
 - Provider-native notice/provenance evidence was supplied. User Rights receipt/case opening remains pending.
 
+## 28 September 2026 — historical account-name reconciliation
+
+<!-- PD-LINKEDIN-HISTORICAL-NAME-RECONCILIATION-20260928 -->
+- LinkedIn's current recovery correspondence says the submitted identity document cannot yet be approved because its name does not match the account's **“Original Registered Name.”**
+- Provider-native historical correspondence preserved in authorised private custody shows that LinkedIn addressed the same account as **“Gil Summers”** in 2020, identified it as **“Gil Summers (GSM - Marer)”** in recovery case **241020-015316**, confirmed successful identity verification and restored the account on **24 October 2024**, and on **6 December 2024** sent first a verification-removal notice for a name mismatch to **“Gil Marer - GSM”** and then a profile-name-change notice addressed to **“Gil Marer.”**
+- Account-holder position: the legal name on the holder's UK government identity documents is **Gil Marer**; **“Summers”** was a historic nickname / alternative profile name, not a legal surname or legal name change.
+- This gives LinkedIn a concrete historical account-data reconciliation issue to examine. It **does not establish the cause** of the September 2026 restriction and does not identify any external actor.
+- A same-case supplement asks LinkedIn to reconcile the historic name field manually, preserve the historical audit trail before any correction, consider its own 2024 original-owner verification, restore access or state any separate remaining restriction, and route any inaccurate/stale identity classification to the appropriate privacy/rectification function.
+- Parallel factual supplements were sent through the existing **User Rights Article 21** enquiry and to Spain's **Digital Services Coordinator (CNMC)**, and an internal-routing notice was sent to **LinkedIn Legal**. Transmission is preserved privately; no User Rights case opening, CNMC action, LinkedIn Legal acknowledgement, restoration or rectification is yet claimed.
+- Public continuity excludes passport images, document numbers, selfies, tokenised verification URLs, private mailbox identifiers and other authentication-bearing data.
+
+
+## 28 September 2026 — provider-confirmed restoration
+
+<!-- PD-LINKEDIN-RESTORATION-20260928 -->
+- LinkedIn Trust and Consumer Support later confirmed under case **260928-028143** that the account holder's information was verified and the restriction was removed.
+- LinkedIn stated that connections and followers may take up to 48 hours to be fully restored.
+- This later provider statement resolves the immediate account-access/restoration objective and supersedes only earlier statements that restoration was still pending. Those earlier dated states remain preserved as historical process evidence.
+- A same-thread thank-you and continuity request asked LinkedIn to confirm that closing the restoration case does not discontinue the separate outstanding privacy/data-access/preservation, historical-name reconciliation and source/trigger/review matters associated with the earlier references.
+- Restoration does **not** identify the restriction trigger, prove a third-party report, establish retaliation or coordination, or identify an outside actor.
+- The separate privacy / Article 15 / preservation lane, the historical **“Original Registered Name”** reconciliation issue and the request for a case-specific source/trigger/review explanation remain open pending substantive provider response.
+
+**Current operational status:** 🟢 access restored / provider-confirmed; 🟠 separate transparency, privacy, preservation and historical-name questions remain open.

@@ -104,3 +104,29 @@ The public position is now explicit: LinkedIn, GitHub, GitLab, independent sites
 Boundary: a complaint or takedown is not proof of retaliation, abuse, coordination or crime. If reliable evidence establishes disadvantage imposed because of qualifying reporting/public disclosure, place that evidence before the competent authority. In Spain, Law 2/2023 Article 36.2 defines retaliation; Article 63.1(b) addresses intentional retaliation as a very serious administrative infringement and Article 65 provides sanctions. Criminal consequences require separate criminal-law elements and proof. Apply EU/German/UK protections only where their own scope and conditions are satisfied.
 
 Restoration is not full closure: account recovery does not withdraw pending requests for reasons, appeal determination, source/data-access information or preservation and does not erase the provider-native history.
+
+## 28 September 2026 — historical account-name reconciliation
+
+<!-- PD-LINKEDIN-HISTORICAL-NAME-RECONCILIATION-20260928 -->
+- LinkedIn's current recovery correspondence says the submitted identity document cannot yet be approved because its name does not match the account's **“Original Registered Name.”**
+- Provider-native historical correspondence preserved in authorised private custody shows that LinkedIn addressed the same account as **“Gil Summers”** in 2020, identified it as **“Gil Summers (GSM - Marer)”** in recovery case **241020-015316**, confirmed successful identity verification and restored the account on **24 October 2024**, and on **6 December 2024** sent first a verification-removal notice for a name mismatch to **“Gil Marer - GSM”** and then a profile-name-change notice addressed to **“Gil Marer.”**
+- Account-holder position: the legal name on the holder's UK government identity documents is **Gil Marer**; **“Summers”** was a historic nickname / alternative profile name, not a legal surname or legal name change.
+- This gives LinkedIn a concrete historical account-data reconciliation issue to examine. It **does not establish the cause** of the September 2026 restriction and does not identify any external actor.
+- A same-case supplement asks LinkedIn to reconcile the historic name field manually, preserve the historical audit trail before any correction, consider its own 2024 original-owner verification, restore access or state any separate remaining restriction, and route any inaccurate/stale identity classification to the appropriate privacy/rectification function.
+- Parallel factual supplements were sent through the existing **User Rights Article 21** enquiry and to Spain's **Digital Services Coordinator (CNMC)**, and an internal-routing notice was sent to **LinkedIn Legal**. Transmission is preserved privately; no User Rights case opening, CNMC action, LinkedIn Legal acknowledgement, restoration or rectification is yet claimed.
+- Public continuity excludes passport images, document numbers, selfies, tokenised verification URLs, private mailbox identifiers and other authentication-bearing data.
+
+
+## 28 September 2026 — restoration confirmed; separate lanes remain open
+
+<!-- PD-LINKEDIN-RESTORATION-20260928 -->
+LinkedIn Trust and Consumer Support subsequently confirmed under case **260928-028143** that the account holder's information was verified and the restriction was removed. LinkedIn also stated that connections and followers may take up to 48 hours to repopulate fully.
+
+This is the controlling later provider state for account access. It supersedes only the earlier operational statement that restoration was pending; it does not erase the prior restriction, appeal, identity-verification sequence or preservation requests.
+
+A same-thread thank-you and continuity request asks LinkedIn to confirm that closure of the restoration case does not close or discontinue the separate matters already raised, including:
+- historical **“Original Registered Name”** / account-name reconciliation so the mismatch does not recur;
+- privacy/data-access and preservation requests; and
+- clarification, insofar as LinkedIn can provide it, of the source/trigger and review process behind the restriction.
+
+Those lanes remain open unless and until LinkedIn gives a substantive response or confirms their routing/closure. Restoration itself does not establish why the restriction occurred, whether an external report existed, or whether any person or group caused it.

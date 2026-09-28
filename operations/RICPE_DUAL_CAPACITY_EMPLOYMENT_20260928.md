@@ -3,7 +3,7 @@
 **Parent:** PD-RICPE-TRANSPARENCY-20260927-01  
 **Registered continuation:** PD-RICPE-TRANSPARENCY-20260927-01/DC-EMP-20260928  
 **Control date:** 28 September 2026  
-**Status:** PREPARED / UNSIGNED / NOT FILED. This is a child of the existing control, not a replacement master. No new authority filing or email is made by this update.
+**Status:** FILED / REGISTERED on 28 September 2026 for S01–S05. This remains a child of the existing control, not a replacement master. Registration proves presentation, not admission, access, merits, payment or compliance.
 
 [Parent record](RICPE_TRANSPARENCY_CURRENT_20260927.md) · [Existing action register](RICPE_SAIP_ACTION_REGISTER_20260927.json) · [Next steps](RICPE_SAIP_NEXT_STEPS_20260927.md)
 
@@ -29,9 +29,17 @@ Use the existing person/entity records, not new duplicate actor IDs. The dated m
 
 Preserve contrary evidence, including the AP 89/2014 position concerning the defined 18-unit perimeter, voluntary/open CEXP accession in the controlled record, other operating/financing/market causes, issuer responses, declared conflict, CAM abstention and the scope of the favourable control report. Do not infer fraud, common intention, universal title or exclusive causation from the chronology.
 
-## Five prepared submissions
+## Five registered submissions
 
-All IDs below are children of DC-EMP-20260928. All remain DRAFT_NOT_FILED. Prepared PDFs and editable originals, portal text, private source index and hashes belong in the existing private RICPE workspace, not in public Git.
+All IDs below are children of DC-EMP-20260928. The exact filed PDFs, native RedSARA receipts and hashes are preserved in the existing private RICPE workspace, not in public Git. Filing state on 28 September 2026:
+
+- S01 Hacienda Canarias — `REGAGE26e00084245120` — DIR3 `A05032840`.
+- S02 AEAT — `REGAGE26e00084245520` — DIR3 `EA0028512`.
+- S03 Incentivos Regionales — `REGAGE26e00084245869` — DIR3 `EA0022414`.
+- S04 Economía Canarias — `REGAGE26e00084246270` — DIR3 `A05033181`.
+- S05 SNCA 141-2026-IRR02 — `REGAGE26e00084246782` — DIR3 `EA0027961`.
+
+The same common-annex v4 bytes were filed with each recipient-specific body and reconciled to the SHA-512 recorded in every native receipt. Registration remains distinct from routing, admission and merits.
 
 | Child | Recipient / route | Existing reference | Specific purpose |
 |---|---|---|---|
@@ -56,7 +64,9 @@ Separate RIC tax treatment, RICPE subscriptions/downstream finance, regional gra
 
 ## Release gates and continuity status
 
-Preparation covers the five drafts, a Spanish operating guide, bounded portal fields, private canonical register, source preservation and integrity checks. It does not close: competent recipient/DIR3 verification at filing; latest notifications and duplicate-scope comparison; the relationship of assignment 21/2026-0921081108 to its original request; source confidentiality review; original ERE/headcount/causation evidence; employment/payment verification; signature and formal submission; individual damages/deadline analysis.
+Preparation and filing now cover the five recipient-specific bodies, common annex v4, portal fields, native receipts, private canonical register, source preservation and integrity checks. Recipient/DIR3 verification, signature and formal submission are closed for S01–S05. Still separate: later routing/admission/production notices; the relationship of assignment 21/2026-0921081108 to its original request; source confidentiality review; original ERE/headcount/causation evidence; employment/payment verification; and individual damages/deadline analysis.
+
+CTBG continuity is now evidenced by the signed one-page communication for **Exp. 3929/2026**, initiated 11 September 2026 under article 24 LTAIBG and assigned to the Subdirección General de Reclamaciones de ámbito estatal. The communication states a three-month maximum period to resolve and notify. It was received/preserved on 28 September 2026. This CTBG proceeding is distinct from the five 28 September RedSARA filings.
 
 The targeted scan reached all three connected email accounts, relevant Library/Drive material, GitHub and GitLab. It is not a claim to have read every item or attachment. The two unrelated judicial-routing registrations of 20 September are not FEDER access-route receipts.
 
@@ -72,8 +82,8 @@ Canonical child: **PD-RICPE-TRANSPARENCY-20260927-01/DC-EMP-20260928/ANX-HIST-20
 
 Identity correction: the earlier expansion with an extra given name was erroneous. The controlling project identity is **Asunción Aizpurúa Sánchez**; preserve the exclusion of the similarly named person in the normalised registry. This correction is carried through the five revised draft bodies, the private annex and the workspace control. Prior filed originals are unchanged.
 
-Revised S01–S05 PDFs each physically contain the four-page body plus the same 29-page annex. The annex covers pre-2008 source leads, the 2008 handover, dated mandates and subsequent participants without backdating them. The 2008 accounts are distinguished from their 19-June-2009 approval meeting. The original minutes' employment safeguards and the 2012 offer of documents are retained, not suppressed. Complete earlier deeds, accounts, mandates, identity bridges and original employment decisions remain explicit evidence gaps.
+The historical v2/v3 assembly is retained as preparation history. The **final filed v4 architecture** instead used five short recipient-specific bodies plus one separate 55-page common consolidated annex. That exact common-annex file was attached to each S01–S05 filing and its SHA-512 was identical across all five native receipts. The common annex incorporates the historical/nominal module, Club SEI / Meeting Point supplement, 28 September process/source update and selected primary-source pages. It covers pre-2008 source leads, the 2008 handover, dated mandates and subsequent participants without backdating them. The 2008 accounts are distinguished from their 19-June-2009 approval meeting. The original minutes' employment safeguards and the 2012 offer of documents are retained, not suppressed. Complete earlier deeds, accounts, mandates, identity bridges and original employment decisions remain explicit evidence gaps.
 
 Private packet SHA-256: `8a056ed5e66f24b3c3c053a0ba50720431919e67a0cf804b8052d83104124065` (10,713,549 bytes; 27 entries). Annex PDF SHA-256: `982f3380183287a777f459a4d00fb4293b6e2ad54f05bbc9590459903b8b4943`. Private crosslinked JSON SHA-256: `15fea9e8c8c775624c9898db5177aa5c9fb317e483f77127b8ea831b927bace9`.
 
-The full nominal annex, candidate identities, native locators and unredacted sources remain in the existing private RICPE Drive workspace; this public record intentionally contains only control metadata and existing approved identities. No public nominal publication, authority filing or email is made. All three Gmail accounts were queried. Drive coverage is the business connection and files accessible to it, not a certification that other personal My Drives or every corpus item were read. Main-branch integration and live publication remain separate from this source commit.
+The full nominal annex, candidate identities, native locators and unredacted sources remain in the existing private RICPE Drive workspace; this public record intentionally contains only control metadata and existing approved identities. The authority filings occurred through RedSARA as recorded above; no private nominal source set is published here. All three Gmail accounts were queried. Drive coverage is the business connection and files accessible to it, not a certification that other personal My Drives or every corpus item were read. Main-branch integration and live publication remain separate from this source commit.

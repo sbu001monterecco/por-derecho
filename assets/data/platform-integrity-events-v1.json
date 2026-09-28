@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-25",
+  "as_of": "2026-09-28",
   "connected_routes": {
     "en": [
       "/en/platform-integrity-evidence/",
@@ -153,6 +153,16 @@
       "summary": "User Rights GmbH's published email fallback was used to request the Article 21 dispute-resolution form or case-opening instructions for the single 23 Sep LinkedIn account restriction. The request was framed as moderation/account enforcement, not hacking, and included the provider-native restriction notice/provenance support. No User Rights case ID is yet verified."
     },
     {
+      "attribution": "Provider confirms restoration; the trigger/cause, any external reporting and any outside actor remain unresolved.",
+      "attribution_es": "El proveedor confirma el restablecimiento; siguen sin resolverse el disparador/causa, cualquier denuncia externa y cualquier actor externo.",
+      "date": "2026-09-28",
+      "id": "PD-PLAT-LI-20260928-RESTORED",
+      "platform": "LinkedIn",
+      "status": "PROVIDER_CONFIRMED_RESTORED",
+      "summary": "LinkedIn Trust and Consumer Support confirmed that the account holder's information was verified and the restriction removed. The immediate access-restoration objective is resolved. Separate privacy/data-access/preservation, historical-name reconciliation and source/trigger/review questions remain open.",
+      "summary_es": "LinkedIn Trust and Consumer Support confirmó que la información del titular fue verificada y que se retiró la restricción. El objetivo inmediato de restablecer el acceso queda resuelto. Permanecen abiertas por separado las cuestiones de privacidad/acceso a datos/preservación, reconciliación del nombre histórico y origen/disparador/proceso de revisión."
+    },
+    {
       "attribution": "The provider did not identify the triggering activity or confirm a third-party report. The Pages impact is the holder's contemporaneous report, not an independent provider uptime measurement.",
       "attribution_es": "El proveedor no identificó la actividad desencadenante ni confirmó una denuncia de tercero. El efecto en Pages es el relato contemporáneo del titular, no una medición independiente del proveedor.",
       "communication_event_id": "PD-SP-EVT-1160",
@@ -303,6 +313,18 @@
       "source_control": "PD-CPA-20260925-07",
       "status": "OPERATIONAL_CAPACITY_LIMIT_SEPARATE_FROM_ACCOUNT_BLOCK",
       "summary": "An inspected existing job failed before execution with ci_quota_exceeded and no runner assigned while repository/API access was operational."
+    },
+    {
+      "id": "PD-PLAT-LINKEDIN-20260928-HISTORICAL-NAME",
+      "date": "2026-09-28",
+      "platform": "LinkedIn",
+      "status": "PROVIDER_NATIVE_HISTORY_RECONCILIATION_REQUEST_SENT",
+      "sequence_role": "ACCOUNT_IDENTITY_HISTORY_RECONCILIATION",
+      "source_control": "PD-LINKEDIN-SECOND-EPISODE-20260924-01",
+      "summary": "LinkedIn's historical correspondence shows the same account under 'Gil Summers' and 'Gil Summers (GSM - Marer)', later successful identity verification/restoration in October 2024, and December 2024 name-mismatch/name-change notices. A same-case request now asks LinkedIn to reconcile that history with the current Gil Marer identity record.",
+      "summary_es": "La correspondencia histórica de LinkedIn muestra la misma cuenta bajo 'Gil Summers' y 'Gil Summers (GSM - Marer)', una posterior verificación/restauración satisfactoria de identidad en octubre de 2024 y avisos de discrepancia/cambio de nombre en diciembre de 2024. Una petición dentro del mismo recurso pide ahora conciliar ese historial con el registro actual de identidad Gil Marer.",
+      "attribution": "The account holder states that Gil Marer is the legal name on his UK government identity documents and Summers was a historic nickname/alternative profile name. This record supports a concrete provider-data reconciliation issue; it does not establish the cause of the September 2026 restriction or any external actor.",
+      "attribution_es": "El titular manifiesta que Gil Marer es el nombre legal de sus documentos oficiales británicos y que Summers fue un apodo/nombre alternativo histórico de perfil. Este registro respalda un problema concreto de conciliación de datos del proveedor; no establece la causa de la restricción de septiembre de 2026 ni un actor externo."
     }
   ],
   "governed_by": "ops/continuity/CONTINUITY_PRESERVATION_PROPAGATION_RULE.md",
@@ -312,7 +334,7 @@
     "provider_statement_is_not_independent_merits_finding",
     "initial_incident_reference_is_not_acknowledgment_of_later_attachments"
   ],
-  "latest_source_control": "ops/continuity/PLATFORM_INTEGRITY_SOURCE_DELTA_20260925.json",
+  "latest_source_control": "PD-LINKEDIN-HISTORICAL-NAME-RECONCILIATION-20260928",
   "proof_rule": "motive/incentive is not attribution; chronology is not causation; provider-native records required",
   "publication_boundary": "public-safe summaries only; no authentication URLs, provider message IDs, private IP/session data or reporter identities",
   "schema": "por-derecho.platform-integrity-events.v1"

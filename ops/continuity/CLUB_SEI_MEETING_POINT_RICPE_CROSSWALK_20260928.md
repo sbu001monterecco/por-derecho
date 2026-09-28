@@ -2,7 +2,7 @@
 
 Control: `PD-RICPE-TRANSPARENCY-20260927-01/DC-EMP-20260928/ANX-CLUBSEI-MP-20260928`
 Date: 28 September 2026.
-State: PRIVATE DRAFTS PREPARED; NOT FILED; SOURCE-BRANCH REGISTRATION ONLY.
+State: SOURCE MODULE PRESERVED; FINAL v4 ADMINISTRATIVE/SNCA FILINGS REGISTERED 28 SEPTEMBER 2026. This public-safe crosswalk remains source-control metadata only.
 
 ## Canonical scope
 
@@ -18,7 +18,9 @@ D1 PDF154–161 preserves the investment/image comparison; D2 PDF46–49 the cor
 
 ## Deliverables and custody
 
-Five private v3 draft PDFs each contain54 pages:33 existing v2 pages unchanged, one incorporation sheet and a20-page supplement (13 explanatory pages and seven selected source pages). S01–S04 remain access requests for existing records; S05 remains the substantive protected supplement. Every assembled page was rendered and compared against its source counterpart. The14 newly authored pages and selected source images were visually reviewed.
+The v3 54-page assemblies remain preserved as preparation history. The final filed v4 set uses five recipient-specific bodies plus one separate 55-page common consolidated annex. S01–S04 are access supplements; S05 is the substantive protected SNCA supplement. The same common-annex bytes were attached in all five RedSARA filings and reconciled to their native receipt hashes.
+
+Registered references: S01 REGAGE26e00084245120; S02 REGAGE26e00084245520; S03 REGAGE26e00084245869; S04 REGAGE26e00084246270; S05 REGAGE26e00084246782. Registration is not admission or merits.
 
 Private package SHA256: `27c7e8bb89eb73cd2ad7a84604f65697bad48f54fdc303986a6ddf7de7715b41`.
 Supplement PDF SHA256: `c7591714f2622a629123e0518722587c38a9ebebb579907d7f4169dff951dc1c`.
@@ -30,4 +32,4 @@ Private Drive locators and the in-place historical/continuity crosslinks are mai
 
 Both personal capacities are retained: directly interested/affected party and informant. Significant ongoing harm to the business/investment centred on the UK holding company is not recast as concluded harm. Separate entities and rights remain separate; no new corporate appearance or blanket cross-border protection is asserted. Rights reservations do not replace formal claims or deadline analysis.
 
-No new court filing or authority email was sent. Final signature, recipient/case-specific review and any intended presentation remain open. No CI, publication or merge gate is bypassed. This commit does not certify main-branch integration or deployment.
+Five administrative/SNCA RedSARA filings were made as recorded above; the existing Meeting Point court materials were not altered or resubmitted by this work. No CI, publication or merge gate is bypassed. Main-branch integration and deployment remain separate technical states.

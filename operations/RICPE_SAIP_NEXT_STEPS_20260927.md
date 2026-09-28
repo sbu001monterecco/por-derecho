@@ -62,3 +62,21 @@ The registered child **PD-RICPE-TRANSPARENCY-20260927-01/DC-EMP-20260928** now c
 S01 and S02 supplement those two filed requests. S03 and S04 supplement the existing state and Canary regional-incentive records. S05 is a separate protected substantive supplement in SNCA 141-2026-IRR02. All five are prepared, unsigned and not filed; no new authority registration number is invented. The earlier programme, existing appeals and their original references remain intact.
 
 Before release: reconcile latest notifications and duplication; verify recipient/DIR3 and protected route; review confidential source use; sign and file only on express instruction. Keep damages/limitation analysis separate and urgent where required. The new finite scan and preparation do not establish exhaustive corpus coverage, proven individual responsibility, actual grant payment, employment compliance, a protected-main merge or a live deployment.
+
+
+## Post-filing closeout — 28 September 2026
+
+The DC-EMP-20260928 execution phase is complete at the PRESENTED / REGISTERED stage. Do not treat the earlier pre-filing instructions in this record as current execution steps.
+
+Registered filings:
+- S01 Hacienda Canarias — REGAGE26e00084245120 — DIR3 A05032840.
+- S02 AEAT — REGAGE26e00084245520 — DIR3 EA0028512.
+- S03 Incentivos Regionales — REGAGE26e00084245869 — DIR3 EA0022414.
+- S04 Economía Canarias — REGAGE26e00084246270 — DIR3 A05033181.
+- S05 SNCA 141-2026-IRR02 — REGAGE26e00084246782 — DIR3 EA0027961.
+
+Each native receipt was reconciled against the exact recipient-specific v4 PDF and the same common-annex v4 bytes. Registration is not admission, production, access, merits, payment or compliance.
+
+CTBG: the native signed communication for **Exp. 3929/2026** has now been recovered and preserved. It records initiation on **11 September 2026** of an article 24 LTAIBG state-scope complaint, handled by the Subdirección General de Reclamaciones de ámbito estatal and resolved by the CTBG Presidency. The communication states a three-month maximum resolution/notification period. Preserve later CTBG notices against this exact expediente; do not create another complaint merely because the earlier notification was initially missing from the workspace.
+
+Next operational state is monitoring and evidence production: record later routing/acceptance/response notices against the five new REGAGE references; preserve every authority production with hashes; and continue the separate primary-evidence work on ERE/headcount, employment baseline, certification, payment and causation.
