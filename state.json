@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 59,
   "owner": "2003:3ce6f59dc14ec544db4f479f04b44fec8f0f3892",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 2003,
   "base_sha": "7e521e74063d6ca47ac2edc23c4736e725ac24c3",
   "candidate_sha": "3ce6f59dc14ec544db4f479f04b44fec8f0f3892",
@@ -2991,6 +2991,42 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 2003,
+      "candidate_sha": "3ce6f59dc14ec544db4f479f04b44fec8f0f3892",
+      "at": "2026-09-28T04:55:34.484954Z",
+      "merge_sha": "bc1f7031c983ebba791d78eb468d146ea94ddd6c",
+      "pages_run_id": 36379616404,
+      "exact_matches": [
+        {
+          "path": "en/index.html",
+          "sha256": "8d9fa089ac9091b1514f619d03afcb7e58d504556e5734d01ca3aab53cf2a7e5",
+          "bytes": 233566
+        },
+        {
+          "path": "en/linkedin-second-restriction-evidence-2026/index.html",
+          "sha256": "972991ae53a886bafa2596e33ed087e847b51580f85c20109a11f007ed6beb71",
+          "bytes": 19732
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "eb5b8ef20cd79de1364b6187a8f0dda996febbd5c66af6b8dc847f715f08bbbd",
+          "bytes": 243168
+        },
+        {
+          "path": "es/linkedin-segundo-episodio-restriccion-2026/index.html",
+          "sha256": "323d6e29392c87fe1100f6f0650d28ea6edd1ca172386f9f0306b4a84490af09",
+          "bytes": 20688
+        },
+        {
+          "path": "ops/continuity/LINKEDIN_IDV_FOLLOWUP_20260925.md",
+          "sha256": "1bf12e754af91ea853cba68ca910996ed75fdd09948048f21580bb39f351c88b",
+          "bytes": 5915
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -3033,7 +3069,44 @@
         "pages_run_id": 36379616404,
         "merge_sha": "bc1f7031c983ebba791d78eb468d146ea94ddd6c"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-28T04:55:34.484902Z",
+      "evidence": {
+        "merge_sha": "bc1f7031c983ebba791d78eb468d146ea94ddd6c",
+        "pages_run_id": 36379616404,
+        "exact_matches": [
+          {
+            "path": "en/index.html",
+            "sha256": "8d9fa089ac9091b1514f619d03afcb7e58d504556e5734d01ca3aab53cf2a7e5",
+            "bytes": 233566
+          },
+          {
+            "path": "en/linkedin-second-restriction-evidence-2026/index.html",
+            "sha256": "972991ae53a886bafa2596e33ed087e847b51580f85c20109a11f007ed6beb71",
+            "bytes": 19732
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "eb5b8ef20cd79de1364b6187a8f0dda996febbd5c66af6b8dc847f715f08bbbd",
+            "bytes": 243168
+          },
+          {
+            "path": "es/linkedin-segundo-episodio-restriccion-2026/index.html",
+            "sha256": "323d6e29392c87fe1100f6f0650d28ea6edd1ca172386f9f0306b4a84490af09",
+            "bytes": 20688
+          },
+          {
+            "path": "ops/continuity/LINKEDIN_IDV_FOLLOWUP_20260925.md",
+            "sha256": "1bf12e754af91ea853cba68ca910996ed75fdd09948048f21580bb39f351c88b",
+            "bytes": 5915
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-28T04:55:29.542239Z"
+  "updated_at": "2026-09-28T04:55:34.484902Z"
 }
