@@ -32,6 +32,7 @@ The public repository should answer:
 ### Foreign-investor preservation invariant
 
 The programme must also apply `ops/capital/AWESWELL_FOREIGN_INVESTOR_AND_CROSS_BORDER_PROTECTION_STANDARD_20260928.md`. AWESWELL LIMITED's documented UK HoldCo / foreign-investor position is a continuing governance and evidence-control objective. Montaña Roja and later Spanish investments should preserve all lawfully available foreign-investment registration, screening, corporate-separateness and cross-border protections while avoiding any representation that registration creates immunity, retroactive treaty protection, State backing or automatic Noteholder rights. Any restructuring, change of investor residence/control, transfer of the Spanish ProjectCo, material security grant or cross-collateralisation is an event-driven rights-review gate before implementation.
+The same control now governs the Programme's litigation, jurisdiction and rule-of-law disclosure: Spanish tutela judicial efectiva/right-of-defence safeguards, EU/ECHR scope boundaries, English/Spanish forum and enforcement analysis, and remedy/deadline preservation must be presented as legal protections and risks—not as credit support, immunity or a forecast of judicial outcome.
 
 
 ## 3. Two capital lanes
