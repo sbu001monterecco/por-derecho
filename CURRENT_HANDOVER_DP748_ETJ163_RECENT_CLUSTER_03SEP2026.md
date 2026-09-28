@@ -61,3 +61,8 @@ Do not publish or infer from the raw call transcript, private legal advice, unap
 ## Publication state rule
 
 The public repository and website may expose the corrected controlled-corpus distinction, the current procedural acts, finite evidence gates and adverse/limiting evidence. They must not expose privileged counsel communications. A successor must verify both repository bytes and live Pages before claiming `LIVE_VERIFIED`.
+
+
+## 28 September 2026 — superseding filing-receipt gate
+
+Read `archive/THREAD_CONTINUITY_PRESERVATION_ETJ163_COMPLEMENTO_28SEP2026.md` before relying on any earlier filing-state language. The current source-safe position is: signed Article 215.2 complemento prepared and transmitted to the procuradora for presentation; actual filing remains unverified pending LexNET receipt. The ordinary deadline control is 28 September 2026. Do not publish or infer FILED until receipt evidence is preserved.
