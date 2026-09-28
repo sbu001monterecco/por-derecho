@@ -95,3 +95,16 @@ Public routes:
 - A same-case supplement asks LinkedIn to reconcile the historic name field manually, preserve the historical audit trail before any correction, consider its own 2024 original-owner verification, restore access or state any separate remaining restriction, and route any inaccurate/stale identity classification to the appropriate privacy/rectification function.
 - Parallel factual supplements were sent through the existing **User Rights Article 21** enquiry and to Spain's **Digital Services Coordinator (CNMC)**, and an internal-routing notice was sent to **LinkedIn Legal**. Transmission is preserved privately; no User Rights case opening, CNMC action, LinkedIn Legal acknowledgement, restoration or rectification is yet claimed.
 - Public continuity excludes passport images, document numbers, selfies, tokenised verification URLs, private mailbox identifiers and other authentication-bearing data.
+
+
+## 28 September 2026 — provider-confirmed restoration
+
+<!-- PD-LINKEDIN-RESTORATION-20260928 -->
+- LinkedIn Trust and Consumer Support later confirmed under case **260928-028143** that the account holder's information was verified and the restriction was removed.
+- LinkedIn stated that connections and followers may take up to 48 hours to be fully restored.
+- This later provider statement resolves the immediate account-access/restoration objective and supersedes only earlier statements that restoration was still pending. Those earlier dated states remain preserved as historical process evidence.
+- A same-thread thank-you and continuity request asked LinkedIn to confirm that closing the restoration case does not discontinue the separate outstanding privacy/data-access/preservation, historical-name reconciliation and source/trigger/review matters associated with the earlier references.
+- Restoration does **not** identify the restriction trigger, prove a third-party report, establish retaliation or coordination, or identify an outside actor.
+- The separate privacy / Article 15 / preservation lane, the historical **“Original Registered Name”** reconciliation issue and the request for a case-specific source/trigger/review explanation remain open pending substantive provider response.
+
+**Current operational status:** 🟢 access restored / provider-confirmed; 🟠 separate transparency, privacy, preservation and historical-name questions remain open.
