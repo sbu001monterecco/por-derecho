@@ -52,3 +52,13 @@ Canary article 43.2(b)/(c) arguments concern mandatory reports and ordinary proc
 The signed personal filing pack is kept in the established private Drive custody. Public repository text omits IDs, home addresses, signatures, verification codes and private witness/investor details. Preparing this pack is not presenting it. Record the actual portal receipt, exact submitted attachment and subsequent notice before changing DRAFT_NOT_FILED.
 
 A repository commit, protected-main merge and a successful live Pages readback are separate closeout states. Do not weaken CI, force a public mirror of private GitLab material or reuse an older approval as approval of new allegations.
+
+## Dated continuation — 28 September 2026
+
+The two general-control requests described above have since been recorded as filed on 27 September: Canary Hacienda REGAGE26e00083877714 and AEAT REGAGE26e00083878313. Preserve their submitted originals and receipts. Do not repeat execution step 2 as another initial filing.
+
+The registered child **PD-RICPE-TRANSPARENCY-20260927-01/DC-EMP-20260928** now controls the concurrent directly affected/informant capacities, significant continuing UK-holding-company investment harm, applicable rights reservation and the connected employment-history inquiry. See [standing rule, sources and five-submission register](RICPE_DUAL_CAPACITY_EMPLOYMENT_20260928.md).
+
+S01 and S02 supplement those two filed requests. S03 and S04 supplement the existing state and Canary regional-incentive records. S05 is a separate protected substantive supplement in SNCA 141-2026-IRR02. All five are prepared, unsigned and not filed; no new authority registration number is invented. The earlier programme, existing appeals and their original references remain intact.
+
+Before release: reconcile latest notifications and duplication; verify recipient/DIR3 and protected route; review confidential source use; sign and file only on express instruction. Keep damages/limitation analysis separate and urgent where required. The new finite scan and preparation do not establish exhaustive corpus coverage, proven individual responsibility, actual grant payment, employment compliance, a protected-main merge or a live deployment.
