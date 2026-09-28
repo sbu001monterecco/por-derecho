@@ -12,29 +12,29 @@
     },
     {
       "id": "P-12-SALES",
-      "text": "12 apartments were later sold and 12 mortgage cancellations derived from those sales",
-      "state": "PARTIALLY_CORROBORATED",
-      "limit": "later attributed analysis; two individual sale deeds currently bound"
+      "text": "LPB sold 12 of the original 171 apartments: 6 in 2009, 4 in 2010 and 2 in 2011; contemporaneous ledgers record €1,029,000 gross sale value",
+      "state": "VERIFIED_ACCOUNTING_DENOMINATOR",
+      "limit": "two 2011 deeds individually reviewed; earlier ten remain to be deed-by-deed provenance-bound"
     },
     {
       "id": "P-12-OF-171",
-      "text": "all 12 sold apartments were within LPB's original 171",
-      "state": "OPEN_HIGH_PRIORITY"
+      "text": "the 12 sold units were within LPB's original 171-apartment perimeter; the second mortgage covered 161 fincas after the first ten sales and Bankia's execution covered 159 after the final two",
+      "state": "VERIFIED_CROSS_SOURCE"
     },
     {
       "id": "P-ARREARS-PURPOSE",
-      "text": "sale proceeds were intended to address arrears",
-      "state": "ATTRIBUTED_USER_OWNER_PROPOSITION"
+      "text": "sale proceeds were used in material part to reduce bank debt, but not every gross-sale euro was allocated to principal or arrears",
+      "state": "EVIDENCE_SUPPORTED_WITH_ALLOCATION_LIMIT"
     },
     {
       "id": "P-ARREARS-APPLICATION",
-      "text": "Bankia correctly credited all sale/release proceeds",
-      "state": "OPEN"
+      "text": "the two 2011 post-origination sales reduced the €850k mortgage by €5,279.50 each; €850,000 - €10,559 = €839,441, exactly Bankia's accelerated principal",
+      "state": "VERIFIED_FOR_H2_POST_ORIGINATION_PRINCIPAL"
     },
     {
       "id": "P-85737381",
-      "text": "€857,373.81 was arithmetically and contractually correct",
-      "state": "OPEN"
+      "text": "the €839,441 principal component is reconciled to the two post-origination releases; the interest/default-interest components and notice/liquidation mechanics remain open",
+      "state": "PRINCIPAL_RECONCILED_INTEREST_OPEN"
     },
     {
       "id": "P-CAPITAL-ARREARS",
@@ -60,6 +60,26 @@
       "id": "P-CAUSE-CONCURSO",
       "text": "enforcement/auction was causally material to voluntary concurso",
       "state": "EVIDENCE_SUPPORTED_BUT_NOT_SOLE_CAUSE_PROVED"
+    },
+    {
+      "id": "P-H2-CAPITAL-DEFAULT-JUL2011",
+      "text": "Bankia's pleading description of unpaid capital amortisation from July 2011 is inconsistent with the deed: first capital amortisation was due 1-Jan-2012; Bankia's own liquidation shows €0 matured unpaid capital",
+      "state": "CONTRADICTED_AS_TO_CAPITAL"
+    },
+    {
+      "id": "P-H2-INTEREST-DEFAULT-2011",
+      "text": "LPB's ledger and Bankia's liquidation support unpaid/catch-up interest maturities from summer 2011; exact interest arithmetic remains to be reconciled",
+      "state": "EVIDENCE_SUPPORTED"
+    },
+    {
+      "id": "P-SALES-ENFORCEMENT-EFFECT",
+      "text": "the 12 apartment sales do not on current evidence extinguish Bankia's basic entitlement to commence enforcement of the €850k mortgage; entitlement turns on unpaid interest, valid registered acceleration, notice/liquidation and separate creditor succession",
+      "state": "PROVISIONAL_EVIDENCE_WEIGHTED_LEGAL_CONCLUSION"
+    },
+    {
+      "id": "P-PKF-2024-H2-SCHEDULE",
+      "text": "CaixaBank's PKF Annex IX models €850k principal through 2011 and does not incorporate the two extraordinary €5,279.50 releases reflected in Bankia's actual 2011 liquidation; it should not be treated as the historical principal ledger without reconciliation",
+      "state": "VERIFIED_MODEL_LIMIT"
     }
   ],
   "hypotheses": [
@@ -71,26 +91,27 @@
     {
       "id": "H2",
       "label": "valid succession and enforcement",
-      "state": "LIVE_CONTRARY_MODEL"
+      "state": "STRENGTHENED_NARROWLY_ON_SALES_PRINCIPAL"
     },
     {
       "id": "H3",
       "label": "valid succession but defective amount/mechanics/timing",
-      "state": "STRONG_INVESTIGATION_HYPOTHESIS"
+      "state": "STRONG_BUT_NARROWED_TO_INTEREST_NOTICE_MECHANICS"
     },
     {
       "id": "H4",
       "label": "facially valid paperwork materially undermined by linked-account/refinancing/swap facts",
-      "state": "STRONG_INVESTIGATION_HYPOTHESIS"
+      "state": "LIVE_ON_LINKED_FUNDS_AND_BANK_KNOWLEDGE"
     }
   ],
   "contrary_evidence": [
-    "Contemporaneous February-2012 Garrigues analysis initially found no statutory opposition ground on then-available documents."
+    "Contemporaneous February-2012 Garrigues analysis initially found no statutory opposition ground on then-available documents.",
+    "The exact arithmetic €850,000 - (€5,279.50 × 2) = €839,441 shows the two 2011 apartment-release principal credits were included in Bankia's accelerated principal."
   ],
   "p0_gaps": [
-    "all 12 sale deeds / exact denominator",
-    "sale-price → release-payment → bank-credit ledger",
-    "2010 grace/acceleration/notice clauses and registry inscription",
+    "deed/registry provenance for the ten 2009–2010 sales and bank-statement-side tracing of their allocations",
+    "registered acceleration covenant and exact pre-enforcement notice/service",
+    "interest/default-interest reconciliation for the €857,373.81 liquidation",
     "€405k pledge cash trail",
     "swap settlement/liquidation trail",
     "Bankia debt certificates/statements/amortisation schedules",
