@@ -160,6 +160,12 @@ The programme therefore assumes **no UK–Spain BIT and no ISDS right** unless q
 Primary source:
 - EU–UK TCA Articles 129–130: https://eur-lex.europa.eu/eli/agree_internation/2021/689(1)/oj/eng
 
+## 5D. Investor Protection 2.0 preventive-defensibility layer
+
+Apply `ops/capital/AWESWELL_MONTANA_ROJA_INVESTOR_PROTECTION_2_0_20260928.md` as the preventive operating layer for Montaña Roja and later Spanish investments. It adds interested-party/notification controls, LGUM/SECUM/CNMC screening, rapid interim-relief readiness, EU-rights/comparator analysis, official-reliance evidence, administrative clocks/silence, objective recusal controls, permit-defence files, Registry litigation protection, forum/tax/evidence/risk-transfer/step-in/state-aid/institutional/SOLVIT and service/notice controls.
+
+This layer is additive. It does not convert administrative, EU, constitutional, tax, insurance or institutional mechanisms into guaranteed outcomes, and it does not change claimant/right-holder ownership or the existing no-cross-collateralisation / no-legacy-recovery-funding rules.
+
 ## 6. Preservation covenant for transaction and financing design
 
 Unless a later Board decision supported by Spanish/UK legal and tax review records a different lawful route, the following are standing design controls:
