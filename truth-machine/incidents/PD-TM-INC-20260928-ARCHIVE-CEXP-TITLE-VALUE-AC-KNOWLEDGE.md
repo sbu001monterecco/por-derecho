@@ -110,3 +110,19 @@ Native recovery and safe member inventory remain open for:
 5. native 17-Jul-2012 "1 de 4" and "3 de 4" emails/attachments
 6. signed David Espejo reports and input genealogy
 7. recipient-side acknowledgement/receipt/filing evidence.
+
+### Native 17-Jul-2012 four-part delivery series recovered
+Native Gil-mailbox messages now establish the complete 1-of-4 through 4-of-4 delivery batch responding to Borja Rodríguez-Batllori Laffitte's 16-Jul-2012 document request.
+
+- `1 de 4`: `ESCRITURAS Y CONTRATOS.zip` (8,828,999 bytes).
+- `2 de 4`: `FACTURAS.zip` (5,601,663 bytes).
+- `3 de 4`: `Plan viabilidad Luchy (Abril2012).pdf` (1,066,587 bytes) + `BANCO.zip` (1,414,115 bytes).
+- `4 de 4`: `FISCAL.zip` (19,923,957 bytes).
+
+The series says the materials came from Luchy's former tax adviser and covers tax, accounting, municipal, deeds/contracts, invoices and banking categories. `4 de 4` closes that email batch only: the body expressly says further scanned/registry/municipal-debt material remained to follow.
+
+`PROP-20120717-FOUR-PART-NATIVE-SERIES` — VERIFIED at communication level.
+`PROP-BORJA-20120716-DOCUMENT-REQUEST` — VERIFIED as quoted parent communication in the replies; standalone parent-message binding remains open.
+`PROP-2019-REUSE-BRIDGE` — STRENGTHENED because the 2019 references to 1-of-4 and 3-of-4 now bind to native 2012 emails.
+
+The ZIP member-content gap remains OPEN: the Gmail connector exposes attachment metadata but not safe direct ZIP extraction. Do not call archive members reviewed or hash-verified until preserved native copies are recovered and safely inventoried.
