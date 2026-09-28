@@ -85,3 +85,13 @@ Public routes:
 - The submission boundary remains strict: this is a moderation/account-enforcement dispute, not a hacking/compromise allegation, and no external actor is attributed.
 - Provider-native notice/provenance evidence was supplied. User Rights receipt/case opening remains pending.
 
+## 28 September 2026 — historical account-name reconciliation
+
+<!-- PD-LINKEDIN-HISTORICAL-NAME-RECONCILIATION-20260928 -->
+- LinkedIn's current recovery correspondence says the submitted identity document cannot yet be approved because its name does not match the account's **“Original Registered Name.”**
+- Provider-native historical correspondence preserved in authorised private custody shows that LinkedIn addressed the same account as **“Gil Summers”** in 2020, identified it as **“Gil Summers (GSM - Marer)”** in recovery case **241020-015316**, confirmed successful identity verification and restored the account on **24 October 2024**, and on **6 December 2024** sent first a verification-removal notice for a name mismatch to **“Gil Marer - GSM”** and then a profile-name-change notice addressed to **“Gil Marer.”**
+- Account-holder position: the legal name on the holder's UK government identity documents is **Gil Marer**; **“Summers”** was a historic nickname / alternative profile name, not a legal surname or legal name change.
+- This gives LinkedIn a concrete historical account-data reconciliation issue to examine. It **does not establish the cause** of the September 2026 restriction and does not identify any external actor.
+- A same-case supplement asks LinkedIn to reconcile the historic name field manually, preserve the historical audit trail before any correction, consider its own 2024 original-owner verification, restore access or state any separate remaining restriction, and route any inaccurate/stale identity classification to the appropriate privacy/rectification function.
+- Parallel factual supplements were sent through the existing **User Rights Article 21** enquiry and to Spain's **Digital Services Coordinator (CNMC)**, and an internal-routing notice was sent to **LinkedIn Legal**. Transmission is preserved privately; no User Rights case opening, CNMC action, LinkedIn Legal acknowledgement, restoration or rectification is yet claimed.
+- Public continuity excludes passport images, document numbers, selfies, tokenised verification URLs, private mailbox identifiers and other authentication-bearing data.
