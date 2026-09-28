@@ -1,5 +1,7 @@
 # Institutional communications reconciliation runbook — 31 August 2026
 
+> **Current filing-status override — 28 September 2026 / PD-REGAGE-LOOKUP-20260928-01.** Read `REGAGE_START_HERE.md` and `ops/REGAGE_CURRENT_LOOKUP.json` first. E.G.745/2026 substantive reposición was filed on 21 September under **REGAGE26e00082068814**, existing event **PD-SP-EVT-0203**, with ten linked deliveries. All ten show **Recibido** in the current user-provided export. **REGAGE26e00082033336** is a separate 20-September preservation communication. The August denominators and historical unlocated wording below are retained as provenance, not the current filing position. The newer export has 407 unique entries; it does not replace or expand the immutable 75-receipt source cohort, and does not certify 407 independently reviewed receipts. Private registry alias: **PD-REGAGE-EXPORT-20260928**. Registration/transport is not incorporation, examination or a merits decision.
+
 **Control:** Ministerio Fiscal / Fiscalía communications, with E.G. 745/2026 as the focused control case.
 **Purpose:** stop future threads from rescanning already-reconciled mail and receipt bundles, while preserving the difference between sending, registration, delivery, internal association, examination and merits.
 
@@ -16,7 +18,7 @@
 
 The ID namespace is the already-declared `EVENT` extension in `.github/evidence-intelligence/id-extension-policy.json`: `^PD-SP-EVT-[0-9]{4}$`. The validator checks the policy, every event ID and every source-proved signatory person ID.
 
-## 2. Controlled denominator
+## 2. Controlled denominator — historical 31-August cohort
 
 - The canonical RedSARA short index has exactly **75 detailed receipt rows**, **75 unique REGAGE references** and **126 annex listings**.
 - The wider controlled aggregate reports **97** RedSARA/AGE records: **90 received** and **7 rejected**.
@@ -32,13 +34,14 @@ The receipt boundary is fixed: an official registration receipt establishes form
 
 ## 3. Start-of-thread procedure
 
-1. Start from current `main` and read this runbook, the JSON register and the scan checkpoint before querying Gmail or asking for a prior bundle.
+1. Start from current `main` and read `REGAGE_START_HERE.md`, `ops/REGAGE_CURRENT_LOOKUP.json`, this runbook, the JSON register and the scan checkpoint before querying Gmail or asking for a prior bundle. For current filing status, retrieve the authorized private current registry and exact receipt/delivery family; a public cache miss is not non-filing.
 2. Verify the generated state:
 
    ```bash
    python scripts/reconcile_institutional_communications.py --check
    python scripts/validate_institutional_communications.py
    python -m unittest -v scripts/test_reconcile_institutional_communications.py
+   python scripts/lookup_regage_registry.py --self-test
    ```
 
 3. Read `next_incremental_scan` in the checkpoint. Scan the stated overlap window first, then messages strictly newer than the high-water date. Complete pagination for every query branch.
@@ -76,7 +79,7 @@ Prohibited public fields include Gmail message/thread IDs, Drive IDs/URLs, exact
 - Signed decision/notice: the act and stated disposition are controlled; underlying allegations and legality remain separate questions.
 - Repository or website publication: public disclosure only, never legal filing.
 
-As at the 31-August checkpoint, the pagination-complete last-month control located no post-notification E.G. 745/2026 reposición, no matching REG-AGE receipt and no equivalent merits-filing proof. That status changes only on new source proof.
+**Historical 31-August checkpoint, superseded for E.G.745 filing status by the 21-September source proof:** the pagination-complete last-month control then located no post-notification E.G. 745/2026 reposición, no matching REG-AGE receipt and no equivalent merits-filing proof. This historical search result must not be reported as the current position. The controlling principal is now **REGAGE26e00082068814**, with ten linked deliveries, as documented in `ops/2026-09-19_DP1901_EG745_FILING_STATUS_REGISTER.md` and the existing receipt controls.
 
 ## 7. Failure and drift handling
 
@@ -86,8 +89,11 @@ As at the 31-August checkpoint, the pagination-complete last-month control locat
 - Missing repository anchor: retain the event outside the public register until an authorised public-safe derivative exists.
 - Signature uncertainty: retain institution-only attribution.
 - Aggregate-only records: leave the single unresolved batch unchanged until individual official status sources are controlled.
+- Conflicting historical/current filing status: resolve against exact native receipts and the current export before issuing any missing-filing, deadline or duplicate-submission recommendation. Preserve the earlier record with explicit dated supersession; do not erase history.
 
-## 8. Explicit source-required / normalization gates
+## 8. Historical source-required / normalization gates
+
+The following items record the earlier source-control cohort. Each must be reconciled against its current specialist control before being presented as a live gap; this update independently closes only the E.G.745 filing-location gap.
 
 - The 22 later RedSARA/AGE records remain aggregate-only; no 22 synthetic event rows exist.
 - EG 58/2026 remains `SOURCE_REQUIRED`: no discrete act was read sufficiently to create a decision row.
@@ -95,6 +101,6 @@ As at the 31-August checkpoint, the pagination-complete last-month control locat
 - EG 6/2026 has a notice row and an attached-act-presence row, but the underlying act's substantive digest remains pending.
 - Six of the seven August receipts retain individual references but await one-to-one public destination-label normalization from their primary receipt fields; no destination is guessed.
 - Eighty-one mailbox transport rows retain `ROUTE_NOT_PUBLICLY_ATTESTED` until an independently linked primary receipt, signed act or official notice proves the route.
-- A post-notification E.G. 745/2026 reposición receipt remains unlocated; the filing status stays prepared/outstanding and not verified as filed.
+- **E.G.745 filing-location gap CLOSED by 21-Sep-2026 source proof:** substantive reposición principal **REGAGE26e00082068814** / existing event **PD-SP-EVT-0203**, with ten linked deliveries. It is no longer prepared/outstanding or unverified as filed. Subsequent internal association, examination and merits remain separately evidenced questions.
 
 Adverse outcomes, silence, routing gaps and repeated institutional contact remain evidence questions. They do not prove coordination, obstruction, capture, favouritism, prevarication or criminality without the additional evidence required for those propositions.
