@@ -38,3 +38,32 @@ The fresh verification event does not justify an inference that any earlier Pers
 This follow-up is part of the same Episode 2 / September 2026 LinkedIn incident and does not create a new support case. Existing preservation, Article 15/source-information, DSA and litigation-continuity requests remain separate but coordinated lanes.
 
 **Proof rule:** provider request ≠ provider acceptance; user completion statement ≠ provider confirmation; identity verification ≠ merits determination; chronology ≠ causation.
+
+## 28 September 2026 — two-completion correction and request
+
+This dated update controls current status; the preceding 25 September text remains historical provenance. Current follow-up is **LinkedIn only**. Historical third-party correspondence is not renewed contact authority.
+
+### Distinct source propositions
+
+1. **Provider reply received on 28 September:** LinkedIn acknowledges completion of the identification process but declines to approve the submitted document because it asserts a profile/ID name mismatch. It requests a secondary document. This is not identity acceptance or restoration.
+2. **Account-holder clarification sent on 28 September:** Gil Marer confirms that he has completed Persona identification twice since the incident began, using his brand-new, recently renewed UK passport, and that both the passport and profile bear the name Gil Marer. The sent clarification and underlying earlier completion notices are held in authorised private custody. This is the holder's account, not an independent inspection of the passport or provider comparison data.
+3. **Request contained in that clarification:** manually reconcile both submissions; confirm association with the correct member account; identify the exact name values and discrepancy; identify which submission is considered deficient and why another document or repetition is necessary; then restore access once identity is accepted or explain any separate remaining restriction through a case-specific human response. This request is sent in the existing appeal, not a new case or another identity submission.
+
+The third item describes the request in the second source, not a separate transmission. No additional global event identifier is allocated by this scoped page update. Native message identifiers and source-location mappings remain private; no claim of repository-wide communication-register completeness is made.
+
+### Current status
+
+- 🟢 The matching-name and two-completion clarification/request was sent and checked in the existing appeal.
+- 🟠 LinkedIn's acceptance of the identity and restoration of access remain unconfirmed.
+- 🟠 The provider's actual comparison values and reason for any remaining document requirement are not available.
+- 🟠 Provider-side preservation remains requested, not confirmed; the page update is not a DPO-form submission or privacy acknowledgement.
+- No third Persona submission, technical cause, account-linkage defect, hacking, third-party reporting or coordinated interference is established by these sources.
+
+The user remains willing to cooperate with genuinely necessary verification. Another identical upload is not represented as the automatic next step: the request is to examine what has already been supplied and explain any additional requirement.
+
+### Public reader routes
+
+- [English request update](../../en/linkedin-second-restriction-evidence-2026/#manual-review-request-20260928)
+- [Actualización de la petición en español](../../es/linkedin-segundo-episodio-restriccion-2026/#manual-review-request-20260928)
+
+The paired dated sections are additive and retain the existing chronology, routes, images, qualifications and source controls. Saved source, merged source, deployment and live readback remain separate publication states. No private email body, passport image, document number, selfie or authentication-bearing URL is added by this update.
