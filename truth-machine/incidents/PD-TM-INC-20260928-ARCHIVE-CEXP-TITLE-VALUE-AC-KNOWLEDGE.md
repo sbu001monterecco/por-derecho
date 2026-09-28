@@ -65,3 +65,48 @@ Recover/reconcile original deeds and registry history; ITP/tax receipts; bank se
 
 ## Guardrails
 Acquisition is not proof of filing, receipt, adoption, knowledge, falsehood, intent, criminal purpose or guilt. The separate AC complete-digitisation Truth Machine remains unchanged and OPEN — COMPLETENESS NOT CERTIFIED.
+
+## 28-Sep-2026 continuation delta
+
+### Cross-account custody correction
+The 10-Jul-2012 subject family is confirmed in all three connected Gmail accounts under distinct Gmail message IDs/custody events. The original communication remains the same underlying transmission family, but Gmail IDs are account-specific. The private Drive layer carries the exact provider IDs and confirmed addresses; this repository layer intentionally omits those addresses.
+
+- Gil mailbox: original sent communication.
+- Patricia mailbox: preserved original/copy in Patricia custody.
+- SBU mailbox: later forwarded copy in SBU custody (23-Dec-2025).
+
+`PROP-20120710-CROSS-ACCOUNT-CUSTODY` — VERIFIED.
+
+### Jan-2012 production chain
+A 12-Jan-2012 Patricia-mailbox message from Jesús Curbelo Gutiérrez to Jonathan Simó, cc Patricia Domínguez, responds to an 11-Jan request for a broad Luchy document set including accounting, tax, mortgage, swap, Multimatrix, leases, CEXP, AEAT/Canary-government and auditor material. Visible attachments include the swap, purchase/tax packet, €8.6m amortisation material and `LUCHY RE-FINANCE 260510.zip`.
+
+This strengthens pre-concurso acquisition/refinancing/document-custody genealogy. It does not prove every requested item was supplied or later received/used.
+
+### Apr-2019 JTP reuse bridge
+A 22-Apr-2019 SBU mailbox message to Juan Tomás Parrilla Suárez explicitly maps earlier production:
+- prior swap/ZIP inputs said to have been used by David Espejo;
+- shareholder/minutes-book materials said to have been delivered to Borja;
+- share-sale deeds mapped to a 17-Jul-2012 "1 de 4" email;
+- bank materials mapped to a 17-Jul-2012 "3 de 4" email;
+- accounting books and a "Fiscal y Contable" ZIP mapped to production to Borja;
+- `Emails Req Docs AC.zip` and `Emails Contabilidad .zip` described as containing additional delivery evidence.
+
+`PROP-JTP-2019-REUSE-BRIDGE` — VERIFIED AS COMMUNICATION, with its assertions still requiring independent binding to originals/receipts/filings.
+
+`PROP-ESPEJO-SOURCE-INPUTS` — PARTIAL; signed report originals and exact annex/input mapping remain open.
+
+### Added canonical actors
+- `ACT-JESUS-CURBELO-GUTIERREZ`
+- `ACT-JONATHAN-SIMO`
+- `ACT-DAVID-ESPEJO`
+- `ACT-JSIMO` — identity linkage to Jonathan Simó must be source-confirmed before merge.
+
+### Priority archive gaps
+Native recovery and safe member inventory remain open for:
+1. `LUCHY RE-FINANCE 260510.zip`
+2. `Emails Req Docs AC.zip`
+3. `Emails Contabilidad .zip`
+4. "Fiscal y Contable" ZIP
+5. native 17-Jul-2012 "1 de 4" and "3 de 4" emails/attachments
+6. signed David Espejo reports and input genealogy
+7. recipient-side acknowledgement/receipt/filing evidence.
