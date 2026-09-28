@@ -1,5 +1,21 @@
 # Meeting Point — filing continuity, 27 September 2026
 
+## Current portal-status update — 28 September 2026
+
+**Control: PD-MP-DECANATO-20260928. 🟢 GREEN — all six Meeting Point entries show “Aceptado en Decanato” in the private-area text supplied by the presenter on 28 September 2026. 🟠 AMBER — judicial association/incorporation, procedural response, the prepared clarification and exact court-held attachment bytes remain unverified.**
+
+The supplied rows reconcile one-to-one with the six receipt sources below by proceeding, filing date, displayed time and destination. For 357/2024 the times are 19:33, 19:56 and 20:03; for 93/2025 they are 20:07, 20:10 and 20:14, all on 27 September 2026. Each names Plaza Nº 3 del Tribunal de Instancia (Sección Mercantil), Las Palmas de Gran Canaria. The portal category is “Comunicación art. 5 bis Ley Concursal” for 357/2024 and “Homologación de los acuerdos de refinanciación” for 93/2025; these are preserved portal labels, not a new legal classification.
+
+**Source boundary:** this update is based on presenter-supplied portal text, not an independently authenticated live-portal inspection. The listed times are filing times; the exact acceptance-event times are not supplied. The three DP 1901/2026 rows in the supplied table are outside this Meeting Point update. Raw private-area text, personal identifiers and native receipts remain outside Git.
+
+The new observation advances the recorded administrative status beyond receipt-only evidence. It does not establish judicial admission, standing, merits consideration, service, referral, personal knowledge or a decision. It does not resolve the final 93/2025 covering-note filename discrepancy or establish a seventh clarification filing. No new court filing, email or change to approved v19/v8 PDFs is made. The fixed preservation archive and its historical fingerprints remain unchanged; this status update does not certify current project-wide CI or deployment health.
+
+Machine-readable additive event: [MEETING_POINT_DECANATO_ACCEPTANCE_20260928.json](../../ops/continuity/MEETING_POINT_DECANATO_ACCEPTANCE_20260928.json). Read it with the original receipt/preservation state below; it does not replace the historical receipt manifest.
+
+**ES — Actualización:** las seis entradas de 357/2024 y 93/2025 figuran como «Aceptado en Decanato» según el texto del área privada aportado por el presentante. Las fechas y horas coinciden con los seis acuses conservados. No se afirma una consulta autenticada independiente ni la hora exacta de aceptación. Continúan pendientes la comprobación de asociación/incorporación, la respuesta judicial, el justificante de la aclaración de 93/2025 y las copias procesadas que obran en el órgano. No se modifica ni se vuelve a presentar la documentación; las entradas de DP 1901/2026 quedan fuera de este control.
+
+## Preserved receipt and preservation baseline — 27 September 2026
+
 **🟠 AMBER — court-handling follow-up remains open; 🟢 preservation is complete and cross-system destination verification is GREEN.**
 
 **Control:** PD-MP-FILING-CONTINUITY-20260927  
