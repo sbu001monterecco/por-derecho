@@ -1,13 +1,13 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 58,
-  "owner": "2000:7e7e159718a7c05c12de8d4f2a03582f2ffb9a08",
-  "phase": "VERIFIED_FOR_SCOPE",
-  "pr": 2000,
-  "base_sha": "521fe59e3656f7c0c78b420633814c5721a12be2",
-  "candidate_sha": "7e7e159718a7c05c12de8d4f2a03582f2ffb9a08",
-  "run_id": 36349967289,
-  "claimed_at": "2026-09-27T20:56:59.312010Z",
+  "fence": 59,
+  "owner": "2003:3ce6f59dc14ec544db4f479f04b44fec8f0f3892",
+  "phase": "CLAIMED",
+  "pr": 2003,
+  "base_sha": "7e521e74063d6ca47ac2edc23c4736e725ac24c3",
+  "candidate_sha": "3ce6f59dc14ec544db4f479f04b44fec8f0f3892",
+  "run_id": 36379539618,
+  "claimed_at": "2026-09-28T04:53:18.399244Z",
   "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
     {
@@ -2993,74 +2993,5 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-09-27T20:57:00.269740Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "PD release acceptance",
-            "id": 108705636589,
-            "conclusion": "success"
-          },
-          {
-            "name": "publication-integrity",
-            "id": 108705636476,
-            "conclusion": "success"
-          }
-        ]
-      }
-    },
-    {
-      "phase": "MERGE_PENDING",
-      "at": "2026-09-27T20:58:39.236644Z",
-      "evidence": {
-        "pr": 2000
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-09-27T20:58:40.321738Z",
-      "evidence": {
-        "merge_sha": "67bd5093db6d794d58e5ac474a04a080d2a9f1aa"
-      }
-    },
-    {
-      "phase": "DEPLOYED",
-      "at": "2026-09-27T20:59:35.774997Z",
-      "evidence": {
-        "pages_run_id": 36349957434,
-        "merge_sha": "67bd5093db6d794d58e5ac474a04a080d2a9f1aa"
-      }
-    },
-    {
-      "phase": "VERIFIED_FOR_SCOPE",
-      "at": "2026-09-27T20:59:39.104740Z",
-      "evidence": {
-        "merge_sha": "67bd5093db6d794d58e5ac474a04a080d2a9f1aa",
-        "pages_run_id": 36349957434,
-        "exact_matches": [
-          {
-            "path": "assets/data/canary-professional-intercollegial-perimeter-v1.json",
-            "sha256": "2148c558cd25df621dcbd50eba2d980fffbd2f43c5e698315a0fdc906ef6871c",
-            "bytes": 14523
-          },
-          {
-            "path": "en/index.html",
-            "sha256": "8d9fa089ac9091b1514f619d03afcb7e58d504556e5734d01ca3aab53cf2a7e5",
-            "bytes": 233566
-          },
-          {
-            "path": "es/index.html",
-            "sha256": "eb5b8ef20cd79de1364b6187a8f0dda996febbd5c66af6b8dc847f715f08bbbd",
-            "bytes": 243168
-          }
-        ],
-        "pending": [],
-        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
-      }
-    }
-  ],
-  "updated_at": "2026-09-27T20:59:39.104740Z"
+  "checkpoints": []
 }
