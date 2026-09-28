@@ -1,0 +1,110 @@
+{
+  "incident_id": "PD-INC-BANKIA-LPB-ENFORCEMENT-STANDING-2011-2012-20260928",
+  "master_objective": "PD-OBJ-CAIXABANK-URIA-RESOLUTION-20260928-01",
+  "state": "OPEN",
+  "as_of": "2026-09-28",
+  "privacy": "PUBLIC_SAFE_REPOSITORY_PROJECTION_PRIVATE_LOCATORS_EXCLUDED",
+  "propositions": [
+    {
+      "id": "P-171",
+      "text": "LPB acquired 171 apartments in the controlled 2008 perimeter",
+      "state": "VERIFIED"
+    },
+    {
+      "id": "P-12-SALES",
+      "text": "12 apartments were later sold and 12 mortgage cancellations derived from those sales",
+      "state": "PARTIALLY_CORROBORATED",
+      "limit": "later attributed analysis; two individual sale deeds currently bound"
+    },
+    {
+      "id": "P-12-OF-171",
+      "text": "all 12 sold apartments were within LPB's original 171",
+      "state": "OPEN_HIGH_PRIORITY"
+    },
+    {
+      "id": "P-ARREARS-PURPOSE",
+      "text": "sale proceeds were intended to address arrears",
+      "state": "ATTRIBUTED_USER_OWNER_PROPOSITION"
+    },
+    {
+      "id": "P-ARREARS-APPLICATION",
+      "text": "Bankia correctly credited all sale/release proceeds",
+      "state": "OPEN"
+    },
+    {
+      "id": "P-85737381",
+      "text": "€857,373.81 was arithmetically and contractually correct",
+      "state": "OPEN"
+    },
+    {
+      "id": "P-CAPITAL-ARREARS",
+      "text": "Bankia liquidation showed €0 capital arrears before acceleration",
+      "state": "VERIFIED_SOURCE_FACT"
+    },
+    {
+      "id": "P-405K-CURE",
+      "text": "€405,000 pledged funds cured or could have prevented default",
+      "state": "OPEN"
+    },
+    {
+      "id": "P-SWAP-MORTGAGE",
+      "text": "swap and financing were economically integrated",
+      "state": "EVIDENCE_SUPPORTED"
+    },
+    {
+      "id": "P-LEGAL-INSEPARABILITY",
+      "text": "swap and mortgage were legally inseparable",
+      "state": "OPEN"
+    },
+    {
+      "id": "P-CAUSE-CONCURSO",
+      "text": "enforcement/auction was causally material to voluntary concurso",
+      "state": "EVIDENCE_SUPPORTED_BUT_NOT_SOLE_CAUSE_PROVED"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "H1",
+      "label": "premature/defective enforcement",
+      "state": "LIVE_NOT_ESTABLISHED"
+    },
+    {
+      "id": "H2",
+      "label": "valid succession and enforcement",
+      "state": "LIVE_CONTRARY_MODEL"
+    },
+    {
+      "id": "H3",
+      "label": "valid succession but defective amount/mechanics/timing",
+      "state": "STRONG_INVESTIGATION_HYPOTHESIS"
+    },
+    {
+      "id": "H4",
+      "label": "facially valid paperwork materially undermined by linked-account/refinancing/swap facts",
+      "state": "STRONG_INVESTIGATION_HYPOTHESIS"
+    }
+  ],
+  "contrary_evidence": [
+    "Contemporaneous February-2012 Garrigues analysis initially found no statutory opposition ground on then-available documents."
+  ],
+  "p0_gaps": [
+    "all 12 sale deeds / exact denominator",
+    "sale-price → release-payment → bank-credit ledger",
+    "2010 grace/acceleration/notice clauses and registry inscription",
+    "€405k pledge cash trail",
+    "swap settlement/liquidation trail",
+    "Bankia debt certificates/statements/amortisation schedules",
+    "creditor succession/standing instruments",
+    "default/acceleration notice and service",
+    "€857,373.81 reconciliation",
+    "auction-excluded fincas to payment ledger",
+    "5 bis filing/receipt and concurso causation chronology",
+    "current Valencia operative quantum"
+  ],
+  "safeguards": [
+    "no raw private email bodies or provider IDs in Git",
+    "owner analyses remain attributed unless independently corroborated",
+    "no inference of illegality, recklessness, intent or personal responsibility from unresolved accounting/procedural defects",
+    "litigation evidence and settlement engagement remain separate layers"
+  ]
+}
