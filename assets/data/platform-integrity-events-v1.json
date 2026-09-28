@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-25",
+  "as_of": "2026-09-28",
   "connected_routes": {
     "en": [
       "/en/platform-integrity-evidence/",
@@ -151,6 +151,16 @@
       "platform": "LinkedIn",
       "status": "ARTICLE21_FORM_REQUEST_SENT_CASE_ID_PENDING",
       "summary": "User Rights GmbH's published email fallback was used to request the Article 21 dispute-resolution form or case-opening instructions for the single 23 Sep LinkedIn account restriction. The request was framed as moderation/account enforcement, not hacking, and included the provider-native restriction notice/provenance support. No User Rights case ID is yet verified."
+    },
+    {
+      "attribution": "Provider confirms restoration; the trigger/cause, any external reporting and any outside actor remain unresolved.",
+      "attribution_es": "El proveedor confirma el restablecimiento; siguen sin resolverse el disparador/causa, cualquier denuncia externa y cualquier actor externo.",
+      "date": "2026-09-28",
+      "id": "PD-PLAT-LI-20260928-RESTORED",
+      "platform": "LinkedIn",
+      "status": "PROVIDER_CONFIRMED_RESTORED",
+      "summary": "LinkedIn Trust and Consumer Support confirmed that the account holder's information was verified and the restriction removed. The immediate access-restoration objective is resolved. Separate privacy/data-access/preservation, historical-name reconciliation and source/trigger/review questions remain open.",
+      "summary_es": "LinkedIn Trust and Consumer Support confirmó que la información del titular fue verificada y que se retiró la restricción. El objetivo inmediato de restablecer el acceso queda resuelto. Permanecen abiertas por separado las cuestiones de privacidad/acceso a datos/preservación, reconciliación del nombre histórico y origen/disparador/proceso de revisión."
     },
     {
       "attribution": "The provider did not identify the triggering activity or confirm a third-party report. The Pages impact is the holder's contemporaneous report, not an independent provider uptime measurement.",
