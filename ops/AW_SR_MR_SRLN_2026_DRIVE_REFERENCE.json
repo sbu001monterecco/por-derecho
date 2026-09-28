@@ -2,7 +2,7 @@
   "schema": "sun-rock.canonical-drive-reference.v1",
   "reference": "^AW-SR-MR-SRLN-2026-DRIVE",
   "workspace_reference": "^AW-SR-MR-SRLN-2026",
-  "control_date": "2026-09-27",
+  "control_date": "2026-09-28",
   "status": "CANONICAL_REFERENCE",
   "scope": "AWESWELL LIMITED / Sun Rock / Montaña Roja Capital Programme + SRLN-2026",
   "reference_type": "workspace_storage_alias_not_CAEPR_identity_verification",
@@ -36,5 +36,9 @@
     "^CAPITAL-PROVIDERS-50"
   ],
   "private_recipient_workspaces": "Use the same folder; personal recipient identifiers are withheld from this public projection.",
-  "website_effect": "Repository/bootstrap control only. No website navigation, sitemap, investor access or deck publication is changed."
+  "website_effect": "Repository/bootstrap control only. No website navigation, sitemap, investor access or deck publication is changed.",
+  "private_blind_spot_control": {
+    "status": "CURRENT_PRIVATE_REGISTER_BS01_BS54",
+    "note": "The existing private canonical Programme Register remains the control surface. The blind-spot sweep is additive, does not create a second tracker or new CP universe, and its detailed transaction/legal contents remain private."
+  }
 }
