@@ -98,6 +98,23 @@ These provisions are legal safeguards and possible remedy frameworks. They are *
 
 Historic Sun Park / MYND Yaiza materials that allege delay, indefensión, procedural traceability failures, improper treatment, lack of effective remedy or other rule-of-law concerns must remain classified as **party allegations / procedural positions / official outcomes** according to the actual source. They do not establish systemic judicial failure and do not predict the treatment of Montaña Roja.
 
+### Administrative action, hearing, judicial review and patrimonial liability
+
+For Montaña Roja, the rule-of-law architecture also applies **before** a dispute reaches an ordinary civil/commercial court:
+
+- **Article 105 CE** provides the constitutional basis for hearing interested persons in applicable administrative procedures and access to administrative files/records subject to its limits;
+- **Article 106.1 CE** places regulatory power and the legality of administrative action, including its submission to the purposes that justify it, under judicial control;
+- **Article 106.2 CE** recognises, on the terms established by law, compensation for injury to goods and rights resulting from the functioning of public services; and
+- **Ley 40/2015, articles 32–34** governs patrimonial liability of public administrations. It expressly provides that annulment of an administrative act or regulation does **not**, by itself, create a right to compensation, and requires the alleged damage to satisfy the applicable statutory conditions, including being effective, economically assessable and individualised.
+
+This matters directly to planning, tourism, licensing, environmental, incentive, tax, infrastructure and other public-law decisions affecting the Project. The protection strategy is therefore **file-first**: preserve the complete administrative record, submissions, technical evidence, representation, hearing/notice history, reasons, deadlines, interim-relief position, challenged act/omission, causal chain and proof of loss from the outset.
+
+Administrative judicial review, annulment, interim protection, patrimonial liability and enforcement are separate remedies. A favourable annulment is not automatically a damages award, and a possible liability route is not a current Project asset or collateral.
+
+Primary sources:
+- Spanish Constitution articles 105–106: https://www.boe.es/eli/es/c/1978/12/27/(1)/con
+- Ley 40/2015, articles 32–34: https://www.boe.es/eli/es/l/2015/10/01/40/con
+
 ### Remedy preservation
 
 Counsel must maintain a proceeding-specific remedy map and deadline diary. Depending on the matter and its procedural posture, that may include ordinary remedies; the exceptional nullity incident under **LOPJ article 241** where its conditions are met; constitutional amparo under **LOTC article 44** after exhaustion and formal invocation requirements; and any separately available State-liability route. These are not interchangeable. No exceptional remedy is to be invoked as a device to manufacture jurisdiction, extend a deadline or re-open the merits contrary to its legal conditions.
