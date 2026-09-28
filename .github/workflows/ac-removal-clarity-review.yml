@@ -1,0 +1,50 @@
+name: AC removal clarity review
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - 'es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/index.html'
+      - 'en/insolvency-36-2012-administrator-removal-rpl-3304-2025/index.html'
+      - 'es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/index.html'
+      - 'en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/index.html'
+      - 'es/cgpj-supervision-masa-activa/index.html'
+      - 'en/cgpj-insolvency-estate-supervision/index.html'
+      - 'assets/data/r33-procedural-utility-map-v1.json'
+      - '.github/governance/verify_ac_removal_clarity_20260928.py'
+      - '.github/workflows/ac-removal-clarity-review.yml'
+  workflow_dispatch:
+    inputs:
+      base:
+        description: 'Exact source-preservation comparison commit'
+        required: true
+        default: '987f2d3f5b3027cbbbd9632fd3993c6bc7c23d75'
+permissions:
+  contents: read
+concurrency:
+  group: ac-removal-clarity-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  scoped-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Read-only preservation, parity and link checks
+        env:
+          REVIEW_BASE: ${{ github.event.pull_request.base.sha || inputs.base }}
+        run: python3 .github/governance/verify_ac_removal_clarity_20260928.py --base "$REVIEW_BASE" --report ac-removal-clarity-report.json
+      - name: Preserve scoped report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ac-removal-clarity-${{ github.event.pull_request.head.sha || github.sha }}
+          path: ac-removal-clarity-report.json
+          if-no-files-found: warn
+          retention-days: 30
