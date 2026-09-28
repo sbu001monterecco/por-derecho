@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 60,
   "owner": "2015:70ea4a6e178b29276429c1135c6b429342d38dd1",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 2015,
   "base_sha": "cb1b3d6d787fed3e3125ead57e8c9a56ae3a1514",
   "candidate_sha": "70ea4a6e178b29276429c1135c6b429342d38dd1",
@@ -3027,6 +3027,32 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 2015,
+      "candidate_sha": "70ea4a6e178b29276429c1135c6b429342d38dd1",
+      "at": "2026-09-28T13:12:29.960141Z",
+      "merge_sha": "7e95dc4807c52b89cca989986ee2f52c8f024deb",
+      "pages_run_id": 36426774345,
+      "exact_matches": [
+        {
+          "path": "en/index.html",
+          "sha256": "8d9fa089ac9091b1514f619d03afcb7e58d504556e5734d01ca3aab53cf2a7e5",
+          "bytes": 233566
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "eb5b8ef20cd79de1364b6187a8f0dda996febbd5c66af6b8dc847f715f08bbbd",
+          "bytes": 243168
+        },
+        {
+          "path": "ops/REGAGE_CURRENT_LOOKUP.json",
+          "sha256": "ac58af27cdfd7c08aca793015d62900d16601e6006dffb75a547bca1fc3dd660",
+          "bytes": 2563
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -3069,7 +3095,34 @@
         "pages_run_id": 36426774345,
         "merge_sha": "7e95dc4807c52b89cca989986ee2f52c8f024deb"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-09-28T13:12:29.960053Z",
+      "evidence": {
+        "merge_sha": "7e95dc4807c52b89cca989986ee2f52c8f024deb",
+        "pages_run_id": 36426774345,
+        "exact_matches": [
+          {
+            "path": "en/index.html",
+            "sha256": "8d9fa089ac9091b1514f619d03afcb7e58d504556e5734d01ca3aab53cf2a7e5",
+            "bytes": 233566
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "eb5b8ef20cd79de1364b6187a8f0dda996febbd5c66af6b8dc847f715f08bbbd",
+            "bytes": 243168
+          },
+          {
+            "path": "ops/REGAGE_CURRENT_LOOKUP.json",
+            "sha256": "ac58af27cdfd7c08aca793015d62900d16601e6006dffb75a547bca1fc3dd660",
+            "bytes": 2563
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-09-28T13:12:25.578085Z"
+  "updated_at": "2026-09-28T13:12:29.960053Z"
 }
