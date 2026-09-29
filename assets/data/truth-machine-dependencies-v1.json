@@ -1,0 +1,73 @@
+{
+  "schema": "por-derecho.truth-machine-dependencies.v1",
+  "control": "PD-TRUTH-DEPS-20260925-01",
+  "generated_at": "2026-09-25",
+  "nodes": [
+    {
+      "id": "METHOD:CONTEXT_INTEGRITY",
+      "kind": "method"
+    },
+    {
+      "id": "DOC:C36-SPECIALIST-R33",
+      "kind": "document",
+      "candidate_id": "C36-SPECIALIST-R33"
+    },
+    {
+      "id": "DOC:AN2023-QUERELLA-21SEP",
+      "kind": "document",
+      "candidate_id": "AN2023-QUERELLA-21SEP"
+    },
+    {
+      "id": "DOC:DP1901-AUTO-14SEP2026",
+      "kind": "document",
+      "candidate_id": "DP1901-AUTO-14SEP2026"
+    },
+    {
+      "id": "PACKET:JTP-4JAN2019",
+      "kind": "packet",
+      "candidate_id": "JTP-4JAN2019-PROTECTIVE-DRAFT"
+    },
+    {
+      "id": "PACKET:SUN-PARK-7JUNE2018",
+      "kind": "packet",
+      "candidate_id": "SUN-PARK-7JUNE2018-PACKET"
+    },
+    {
+      "id": "SURFACE:R33_VISUAL",
+      "kind": "surface"
+    }
+  ],
+  "edges": [
+    {
+      "from": "METHOD:CONTEXT_INTEGRITY",
+      "to": "DOC:C36-SPECIALIST-R33",
+      "reason": "method applies to proposition review"
+    },
+    {
+      "from": "METHOD:CONTEXT_INTEGRITY",
+      "to": "DOC:AN2023-QUERELLA-21SEP",
+      "reason": "method applies to proposition review"
+    },
+    {
+      "from": "METHOD:CONTEXT_INTEGRITY",
+      "to": "DOC:DP1901-AUTO-14SEP2026",
+      "reason": "method applies to proposition review"
+    },
+    {
+      "from": "METHOD:CONTEXT_INTEGRITY",
+      "to": "PACKET:JTP-4JAN2019",
+      "reason": "method applies to packet review"
+    },
+    {
+      "from": "METHOD:CONTEXT_INTEGRITY",
+      "to": "PACKET:SUN-PARK-7JUNE2018",
+      "reason": "method applies to packet review"
+    },
+    {
+      "from": "DOC:C36-SPECIALIST-R33",
+      "to": "SURFACE:R33_VISUAL",
+      "reason": "aggregate metrics drive public visual"
+    }
+  ],
+  "boundary": "Edges express review dependencies only. They do not transfer knowledge, intent, control, liability or corroborative weight."
+}

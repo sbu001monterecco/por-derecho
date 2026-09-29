@@ -1,0 +1,38 @@
+{
+  "schema": "por-derecho.truth-machine-runtime-state.v1",
+  "control": "PD-TRUTH-RUNTIME-20260925-01",
+  "updated_at": "2026-09-25T12:18:00+01:00",
+  "states": [
+    {
+      "candidate_id": "C36-SPECIALIST-R33",
+      "machine_state": "276/276 statements scanned; 482/482 anchors preserved; event dependency active",
+      "analyst_state": "provisional v3 states preserved; contextual signoff remains source-review controlled",
+      "release_state": "GitHub dynamic surface present; GitLab repository parity present; live-readback status tracked independently"
+    },
+    {
+      "candidate_id": "AN2023-QUERELLA-21SEP",
+      "machine_state": "exact public transcription source pinned on both hosts",
+      "analyst_state": "READY_FOR_FULL_PASS",
+      "release_state": "no Truth Machine visual promoted yet"
+    },
+    {
+      "candidate_id": "DP1901-AUTO-14SEP2026",
+      "machine_state": "GitHub transcription pin present; GitLab canonical-path gap disclosed",
+      "analyst_state": "READY_WITH_NATIVE_GAP",
+      "release_state": "no Truth Machine visual promoted yet"
+    },
+    {
+      "candidate_id": "JTP-4JAN2019-PROTECTIVE-DRAFT",
+      "machine_state": "host-specific source controls retained without false parity",
+      "analyst_state": "SOURCE_CONTROL_READY",
+      "release_state": "packet visual/review remains separate"
+    },
+    {
+      "candidate_id": "SUN-PARK-7JUNE2018-PACKET",
+      "machine_state": "multi-source packet mode; host gaps explicit",
+      "analyst_state": "PACKET_MODE_READY",
+      "release_state": "existing event dossier remains separate from future Truth Machine aggregate"
+    }
+  ],
+  "boundary": "Machine, analyst and release states are independent dimensions. A change in one does not silently promote either of the others."
+}
