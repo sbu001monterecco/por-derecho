@@ -1,7 +1,7 @@
 {
   "control_id": "PD-RICPE-TRANSPARENCY-20260927-01",
   "as_of": "2026-09-29",
-  "status_basis": "29 September source-qualified update: CTBG-issued case emails verified for 3929/2026, 3953/2026 and 3954/2026; signed native communication preserved for 3929/2026; native communications for 3953/2026 and 3954/2026 remain SOURCE_PENDING",
+  "status_basis": "29 September native-source update: signed CTBG initiation communications acquired for 3929/2026, 3953/2026 and 3954/2026; 3953/3954 both state initiation on 17 September 2026; exact parent-filing bridge remains inferential.",
   "new_filings_made_by_this_update": 2,
   "new_emails_sent_by_this_update": 0,
   "rows": [
@@ -150,19 +150,27 @@
       "id": "CTBG-3953",
       "authority": "CTBG",
       "reference": "3953/2026",
-      "status": "OFFICIAL_CTBG_ISSUANCE_EMAIL_VERIFIED_NATIVE_COMMUNICATION_PENDING",
-      "source_state": "SOURCE_PENDING",
-      "next": "Acquire the signed/native CTBG communication and receipt from DEHu/CTBG, preserve it privately, then extract initiation date, subject, underlying filing and any deadline-bearing content.",
-      "gate": "Do not map this expediente to an earlier SAIP/REGAGE or calculate a merits deadline until the native communication is acquired."
+      "status": "NATIVE_SIGNED_COMMUNICATION_PRESERVED_PARENTAGE_BRIDGE_OPEN",
+      "source_state": "DIGESTED_PRIVATE",
+      "next": "Reconcile exact parent filing/AEAT decision using a primary bridge; preserve all later CTBG acts against this expediente.",
+      "gate": "Do not convert chronological parentage inference into verified linkage until a primary source states the REGAGE/AEAT mapping.",
+      "initiation_date": "2026-09-17",
+      "source_sha256": "cb94fcdf549af06c0d3d422053df8301a5eaf93474430af6e80eca352aa9640b",
+      "working_parentage": "REGAGE26e00081191241 → AEAT 001-0113069 / RGE449073832025",
+      "parentage_confidence": "98% ordering hypothesis; pair identity 99.9%"
     },
     {
       "id": "CTBG-3954",
       "authority": "CTBG",
       "reference": "3954/2026",
-      "status": "OFFICIAL_CTBG_ISSUANCE_EMAIL_VERIFIED_NATIVE_COMMUNICATION_PENDING",
-      "source_state": "SOURCE_PENDING",
-      "next": "Acquire the signed/native CTBG communication and receipt from DEHu/CTBG, preserve it privately, then extract initiation date, subject, underlying filing and any deadline-bearing content.",
-      "gate": "Do not map this expediente to an earlier SAIP/REGAGE or calculate a merits deadline until the native communication is acquired."
+      "status": "NATIVE_SIGNED_COMMUNICATION_PRESERVED_PARENTAGE_BRIDGE_OPEN",
+      "source_state": "DIGESTED_PRIVATE",
+      "next": "Reconcile exact parent filing/AEAT decision using a primary bridge; preserve all later CTBG acts against this expediente.",
+      "gate": "Do not convert chronological parentage inference into verified linkage until a primary source states the REGAGE/AEAT mapping.",
+      "initiation_date": "2026-09-17",
+      "source_sha256": "c0bd79858a697def2159a9fee95a8ffef50f2ada2f9af918ddad857bc53f5b94",
+      "working_parentage": "REGAGE26e00081194039 → joint AEAT 001-0112793 + 001-0113066 / RGE994072472024",
+      "parentage_confidence": "98% ordering hypothesis; pair identity 99.9%"
     }
   ],
   "filing_updates": [
