@@ -76,3 +76,8 @@ Do not attempt to erase the opposing/current corporate account. Build a record i
 
 ## External-transmission status
 NOT SENT as of this control update.
+
+## Media Response Ledger
+The canonical Evidence Manifest now contains a dedicated tab, **Media Response Ledger**, with article/source-family level fields for proposition, classification, evidence, requested action, legal/editorial route, deadline, contact, draft, sending/receipt status and published outcome. Initial rows cover the 28-Sep-2026 Canarias Empresarial article/LinkedIn post, Cinco Días, Europa Press, the October-2021 Mandarina launch family and the 2022–2024 Hosteltur press-note family.
+
+Spreadsheet: https://docs.google.com/spreadsheets/d/1hhLw3S6lkl7ALyNHgj1NvG82ZanqwFFyLpDCgR26LSs/edit
