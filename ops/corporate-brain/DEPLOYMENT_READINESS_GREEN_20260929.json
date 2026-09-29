@@ -1,0 +1,35 @@
+{
+  "schema": "pd.corporate-brain.deployment-readiness.v1",
+  "control_date": "2026-09-29",
+  "deployment_status": "GREEN_EXCEPT_PLATFORM_SECRET_ACTIVATION",
+  "meaning": "The architecture, vault controls, repository controls, scheduled source intake, red-team governance, key-safe runtime preparation and evaluation controls are deployed. Historical corpus backfill remains a continuing data operation and is not represented as exhausted.",
+  "green": [
+    "canonical_sbu_vault_structure",
+    "three_authorised_gmail_sources_connected",
+    "separate_gmail_source_lanes",
+    "incremental_intake_automation_enabled",
+    "historical_backfill_automation_enabled",
+    "gitlab_corporate_brain_controls_merged",
+    "github_continuity_controls_merged",
+    "dedicated_github_validation_passed",
+    "independent_red_team_governance",
+    "codex_modular_skills",
+    "public_private_boundary_tests",
+    "key_safe_runtime_preflight_code",
+    "evaluation_contract"
+  ],
+  "continuing_non_blocking_operations": [
+    "historical_mail_backfill",
+    "native_cloud_document_immutable_export_and_hash_backfill",
+    "cross_source_deduplication",
+    "case_graph_enrichment",
+    "truth_machine_recomputation",
+    "private_source completeness expansion when additional authorised source access becomes available"
+  ],
+  "only_runtime_activation_blocker": {
+    "status": "ORANGE_OWNER_ACTION",
+    "action": "Create/select the dedicated Aweswell Corporate Brain OpenAI Platform project, configure budget/permissions, create the API key through the secure setup flow, and install it in the runtime secret mechanism.",
+    "secret_rule": "Never paste the raw key into chat, Drive, Gmail or source control."
+  },
+  "authority_boundary": "No deployment status grants authority for external communications, filings, publication, transactions or third-party contact."
+}
