@@ -1,0 +1,49 @@
+{
+  "schema": "por-derecho.thread-continuity-preservation.v1",
+  "control_id": "PD-FSA-JDAM-LPAM-LINKEDIN-20260922",
+  "control_date": "2026-09-22",
+  "repository": "sbu001monterecco/por-derecho",
+  "base_main_sha": "1fd5cfd4bb939798e761a8e39c5bbc5d391a3610",
+  "worker_branch": "worker/fmmm-cogolludo-jdam-lpam-linkedin-continuity-20260922",
+  "state": "READY_TO_INTEGRATE",
+  "social_publication_state": "NOT_SENT",
+  "landing_page_image_state": "OPEN_REQUIRES_SATIRE_GATE_AND_BILINGUAL_PARITY",
+  "canonical_people": [
+    {"id":"PD-SP-P-0011","name":"José Daniel Acosta Matos","caret":"CARET_CONFIRMED"},
+    {"id":"PD-SP-P-0012","name":"Laura Patricia Acosta Matos","caret":"CARET_CONFIRMED"},
+    {"id":"PD-SP-P-0009","name":"Francisco Mario Matos Matas","caret":"CARET_CONFIRMED"},
+    {"id":"PD-SP-P-0008","name":"Shaila María Cogolludo Ramos","caret":"CARET_CONFIRMED"},
+    {"id":"PD-SP-P-0007","name":"Antonio Cogolludo Rojas","caret":"CARET_CONFIRMED"}
+  ],
+  "canonical_lineage": {
+    "trio_release_pr": 1740,
+    "trio_merge_sha": "477e4039f62b9331240e54bcd55752e07ea1eada",
+    "storyline": "assets/data/fmmm-shaila-antonio-storyline-v1.json",
+    "action_map": "assets/data/fmmm-shaila-antonio-action-map-v1.json",
+    "landing_en": "/en/fmmm-shaila-antonio-family-community-corporate-continuity/",
+    "landing_es": "/es/fmmm-shaila-antonio-continuidad-familiar-comunitaria-societaria/"
+  },
+  "visual_sources": [
+    {"role":"JDAM user-supplied portrait","bytes":237020,"width":485,"height":487,"sha256":"7248292be5a4f51e2a5490b098526e9033c60f2c1fc433efc26d072caa40acae","public_git_binary":false},
+    {"role":"LPAM user-supplied portrait","bytes":238118,"width":427,"height":640,"sha256":"afc861e63145e46c66125e841f8a5e10ce6e311525599b0b86bd06aefaa572bb","public_git_binary":false},
+    {"role":"user-confirmed FMMM/Shaila/Antonio reference","bytes":3037673,"width":2022,"height":778,"sha256":"259797aaa2b30457b9cc81ef4a01422b5915013345d94af14df3bd1aa222ff46","public_git_binary":false},
+    {"role":"Gmail provenance master trio image","bytes":8188517,"width":4032,"height":3024,"sha256":"418ee49b0427faa958e4620066bfd837bbc3d42b444fad955f239449612f2836","public_git_binary":false},
+    {"role":"latest Spanish social-image candidate","bytes":2428683,"width":1672,"height":941,"sha256":"4308e161d7ae90f22a97ccfd481b34cbde538efffa8c981cb7d843859b5b7d0d","public_git_binary":false,"state":"PRESERVED_DRAFT_NEEDS_PUBLICATION_GATE"}
+  ],
+  "satire": {
+    "not_genuine_quote": true,
+    "not_adjudicated_finding": true,
+    "required_standard": ".github/governance/SATIRE_CARICATURE_SPOOF_PUBLICATION_STANDARD_ES_EN.md",
+    "required_visible_disclosure_es": "CARICATURA / REPRESENTACIÓN SATÍRICA — NO ES UN ANUNCIO REAL",
+    "open_visual_copy_review": "Replace or independently justify language implying impunity; safer candidate: La familia puede ser un hecho. La responsabilidad requiere prueba."
+  },
+  "gitlab": {
+    "state": "PENDING_ACCESS_RESTORATION",
+    "reconciliation_runbook": "ops/continuity/fmmm-cogolludo-acosta-linkedin-20260922/GITLAB_RECONCILIATION_RUNBOOK.md",
+    "rule": "Compare histories first; never force-overwrite an unreviewed GitLab head."
+  },
+  "drive": {
+    "state": "PRIVATE_RECOVERY_COPY_CREATED",
+    "public_locator_policy": "WITHHELD_FROM_PUBLIC_GIT"
+  }
+}
