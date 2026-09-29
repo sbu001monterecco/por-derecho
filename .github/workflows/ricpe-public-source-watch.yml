@@ -1,0 +1,29 @@
+name: RICPE public source watch
+
+on:
+  schedule:
+    - cron: '41 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-source-snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run bounded official-source snapshot
+        run: |
+          mkdir -p recovery-audit
+          python scripts/ricpe_public_source_watch.py --output recovery-audit/RICPE_PUBLIC_SOURCE_WATCH.json
+      - name: Preserve raw intake artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ricpe-public-source-watch-${{ github.run_id }}
+          path: recovery-audit/RICPE_PUBLIC_SOURCE_WATCH.json
+          retention-days: 90
