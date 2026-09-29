@@ -1,0 +1,333 @@
+{
+  "schema": "por-derecho.public-media-publication-register.v1",
+  "control_date": "2026-09-29",
+  "status": "ACTIVE_DISCOVERY_AND_ACQUISITION_REGISTER",
+  "canonical_controls": [
+    "data/digital-media-asset-register-v1.json",
+    "assets/data/sun-park-historic-media-register-v1.json",
+    "archive/MEDIA_PUBLIC_NARRATIVE_ACCOUNTABILITY_AUDIT_15AUG2026.md",
+    "archive/media-monitoring/ADVERSE_PARTY_MEDIA_ARCHIVE_CONTROL_29SEP2026.md"
+  ],
+  "evidence_boundary": "Publication/capture establishes publication and attribution only; underlying propositions require independent primary evidence.",
+  "monitored_outlets": [
+    "Canarias Empresarial",
+    "Canarias7",
+    "La Provincia",
+    "Diario de Avisos",
+    "Atlántico Hoy",
+    "La Voz de Lanzarote / EKN",
+    "Diario de Lanzarote",
+    "HOSTELTUR",
+    "Cinco Días",
+    "elEconomista",
+    "Europa Press",
+    "Forbes España / Forbes Travel",
+    "Noticias Canarias",
+    "SER Canarias / Lanzarote",
+    "RTVC / Televisión Canaria",
+    "Preferente",
+    "Tourinews",
+    "LinkedIn first-party/executive channels",
+    "Canarian Hospitality",
+    "Grupo Acosta Matos",
+    "RIC Private Equity / RIC Capital",
+    "MYND Hotels",
+    "Sholeo Lodges"
+  ],
+  "monitored_entities": [
+    "Grupo Acosta Matos",
+    "Canarian Hospitality",
+    "MYND Hotels",
+    "MYND Yaiza",
+    "Sholeo Lodges",
+    "RIC Private Equity",
+    "RIC Capital",
+    "Hotel New Trend",
+    "Sun Park",
+    "Radisson projects linked to monitored perimeter"
+  ],
+  "source_records": [
+    {
+      "id": "PD-MEDIA-20260928-CE-ARTICLE",
+      "published_date": "2026-09-28",
+      "publisher": "Canarias Empresarial",
+      "channel": "web",
+      "title": "El Plan Estratégico 2026–2028 de Canarian Hospitality aspira a triplicar su EBITDA y duplicar la cartera hotelera",
+      "url": "https://canariasempresarial.info/economytur/el-plan-estrategico-2026-2028-de-canarian-hospitality-aspira-a-triplicar-su-ebitda-y-duplicar-la-cartera-hotelera/",
+      "entity_tags": [
+        "Canarian Hospitality",
+        "Grupo Acosta Matos"
+      ],
+      "source_basis": "PRESS_RELEASE_OR_COMPANY_STATEMENT_OR_NEWSROOM_REPORT_UNRESOLVED",
+      "capture_status": "PUBLIC_RENDER_EXTRACTED",
+      "evidence_manifest_id": "MEDIA-CE-20260928-001",
+      "directly_establishes": "The outlet published the identified strategic-plan representations and described Grupo Acosta Matos as principal shareholder providing financial/corporate backing.",
+      "does_not_establish": "Truth/audit status of commercial metrics, ownership/title, financing provenance, legality or regulatory compliance.",
+      "next_action": "Native HTML/PDF/WARC + full-page screenshot + source-byte SHA-256; identify originating information package."
+    },
+    {
+      "id": "PD-MEDIA-20260928-CE-LINKEDIN",
+      "published_date": "2026-09-28",
+      "publisher": "Canarias Empresarial",
+      "channel": "LinkedIn",
+      "title": "LinkedIn promotion of Canarian Hospitality Plan Estratégico 2026–2028",
+      "url": "https://es.linkedin.com/posts/canarias-empresarial_el-plan-estrat%C3%A9gico-20262028-de-canarian-activity-7510388594428260352-anQj",
+      "discovery_url": "https://lnkd.in/p/ep4FYKxm",
+      "entity_tags": [
+        "Canarian Hospitality"
+      ],
+      "source_basis": "THIRD_PARTY_SOCIAL",
+      "capture_status": "PUBLIC_RENDER_EXTRACTED",
+      "evidence_manifest_id": "MEDIA-CE-20260928-002",
+      "parent_id": "PD-MEDIA-20260928-CE-ARTICLE",
+      "next_action": "Rendered native screenshot + exact platform timestamp/metadata + redirect chain preservation."
+    },
+    {
+      "id": "PD-MEDIA-20260928-EP",
+      "published_date": "2026-09-28",
+      "publisher": "Europa Press",
+      "channel": "web",
+      "title": "Canarian Hospitality prevé superar los 100 millones de facturación en 2028 tras ampliar su portfolio",
+      "url": "https://www.europapress.es/economia/noticia-canarian-hospitality-preve-superar-100-millones-facturacion-2028-ampliar-portfolio-20260928102107.html",
+      "entity_tags": [
+        "Canarian Hospitality"
+      ],
+      "source_basis": "NEWSWIRE",
+      "capture_status": "DISCOVERED_NOT_CAPTURED",
+      "source_family": "CH_STRATEGIC_PLAN_20260928"
+    },
+    {
+      "id": "PD-MEDIA-20260928-FORBES",
+      "published_date": "2026-09-28",
+      "publisher": "Forbes España / Forbes Travel",
+      "channel": "web",
+      "title": "Canarian Hospitality sale de Canarias para alcanzar los 100 millones y 2.400 habitaciones en 2028",
+      "url": "https://forbes.es/forbestravel/1030420/canarian-hospitality-sale-de-canarias-para-alcanzar-los-100-millones-y-2-400-habitaciones-en-2028/",
+      "entity_tags": [
+        "Canarian Hospitality"
+      ],
+      "source_basis": "NEWSROOM_REPORT_OR_REWRITE_UNRESOLVED",
+      "capture_status": "DISCOVERED_NOT_CAPTURED",
+      "source_family": "CH_STRATEGIC_PLAN_20260928"
+    },
+    {
+      "id": "PD-MEDIA-20260928-AH",
+      "published_date": "2026-09-28",
+      "publisher": "Atlántico Hoy",
+      "channel": "web",
+      "title": "Canarian Hospitality acelera su expansión: abrirá un Radisson RED de 97 habitaciones en Las Palmas de Gran Canaria y superará los 100 millones de facturación",
+      "url": "https://www.atlanticohoy.com/empresas/canarian-hospitality-radisson-red-las-palmas-expansion-hoteles_1567640_102.html",
+      "entity_tags": [
+        "Canarian Hospitality",
+        "Radisson"
+      ],
+      "source_basis": "NEWSROOM_REPORT_OR_REWRITE_UNRESOLVED",
+      "capture_status": "DISCOVERED_NOT_CAPTURED",
+      "source_family": "CH_STRATEGIC_PLAN_20260928"
+    },
+    {
+      "id": "PD-MEDIA-20260928-NC",
+      "published_date": "2026-09-28",
+      "publisher": "Noticias Canarias",
+      "channel": "web",
+      "title": "Canarian Hospitality planea duplicar su cartera hotelera antes de 2028",
+      "url": "https://noticiascanarias.es/turismo/canarian-hospitality-planea-duplicar-su-cartera-hotelera-antes-de-2028",
+      "entity_tags": [
+        "Canarian Hospitality"
+      ],
+      "source_basis": "NEWSROOM_REPORT_OR_REWRITE_UNRESOLVED",
+      "capture_status": "DISCOVERED_NOT_CAPTURED",
+      "source_family": "CH_STRATEGIC_PLAN_20260928"
+    },
+    {
+      "id": "PD-MEDIA-20260928-DD",
+      "published_date": "2026-09-28",
+      "publisher": "Diario Día",
+      "channel": "web",
+      "title": "Canarian Hospitality prevé superar los 100 millones de facturación en 2028 tras ampliar su portfolio",
+      "url": "https://diariodia.es/2026/09/28/canarian-hospitality-preve-superar-los-100-millones-de-facturacion-en-2028-tras-ampliar-su-portfolio/",
+      "entity_tags": [
+        "Canarian Hospitality"
+      ],
+      "source_basis": "SYNDICATED_OR_REPUBLISHED",
+      "capture_status": "DISCOVERED_NOT_CAPTURED",
+      "source_family": "CH_STRATEGIC_PLAN_20260928"
+    },
+    {
+      "id": "PD-MEDIA-20260204-CE-PLAYA-BLANCA",
+      "published_date": "2026-02-04",
+      "publisher": "Canarias Empresarial",
+      "channel": "web",
+      "title": "Canarian Hospitality impulsa un nuevo resort de lujo en la localidad lanzaroteña de Playa Blanca",
+      "url": "https://canariasempresarial.info/economytur/canarian-hospitality-impulsa-un-nuevo-resort-de-lujo-en-playa-blanca/",
+      "entity_tags": [
+        "Canarian Hospitality",
+        "Grupo Acosta Matos",
+        "Playa Blanca",
+        "Lanzarote"
+      ],
+      "source_basis": "PRESS_RELEASE_OR_COMPANY_STATEMENT_OR_NEWSROOM_REPORT_UNRESOLVED",
+      "capture_status": "DISCOVERED_NOT_CAPTURED"
+    },
+    {
+      "id": "PD-MEDIA-20260123-CE-RADISSON",
+      "published_date": "2026-01-23",
+      "publisher": "Canarias Empresarial",
+      "channel": "web",
+      "title": "Radisson Hotel Group y Canarian Hospitality firman una alianza estratégica para el desarrollo de nuevos hoteles",
+      "url": "https://canariasempresarial.info/economytur/radisson-hotel-group-y-canarian-hospitality-firman-una-alianza/",
+      "entity_tags": [
+        "Canarian Hospitality",
+        "Radisson"
+      ],
+      "source_basis": "PRESS_RELEASE_OR_COMPANY_STATEMENT_OR_NEWSROOM_REPORT_UNRESOLVED",
+      "capture_status": "DISCOVERED_NOT_CAPTURED"
+    },
+    {
+      "id": "PD-MEDIA-FIRSTPARTY-CH-HOME",
+      "published_date": null,
+      "publisher": "Canarian Hospitality",
+      "channel": "corporate website",
+      "title": "Canarian Hospitality corporate site / roadmap and group-backing representations",
+      "url": "https://canarianhospitality.com/",
+      "entity_tags": [
+        "Canarian Hospitality",
+        "Grupo Acosta Matos",
+        "MYND Yaiza"
+      ],
+      "source_basis": "FIRST_PARTY_CORPORATE",
+      "capture_status": "DISCOVERED_NOT_CAPTURED"
+    },
+    {
+      "id": "PD-MEDIA-FIRSTPARTY-AM-MYND-YAIZA",
+      "published_date": null,
+      "publisher": "Grupo Acosta Matos",
+      "channel": "corporate website",
+      "title": "Hotel MYND Yaiza project page",
+      "url": "https://www.acostamatos.com/hoteles/hotel-mynd-yaiza/",
+      "entity_tags": [
+        "Grupo Acosta Matos",
+        "Hotel New Trend",
+        "MYND Yaiza",
+        "José D. Acosta Matos"
+      ],
+      "source_basis": "FIRST_PARTY_CORPORATE",
+      "capture_status": "DISCOVERED_NOT_CAPTURED"
+    },
+    {
+      "id": "PD-MEDIA-FIRSTPARTY-RICPE-MYND-YAIZA",
+      "published_date": null,
+      "publisher": "RIC Private Equity / RIC Capital",
+      "channel": "corporate website",
+      "title": "Hotel MYND Yaiza project page",
+      "url": "https://ric.capital/hotel-mynd-yaiza/",
+      "entity_tags": [
+        "RIC Private Equity",
+        "MYND Yaiza",
+        "Hotel New Trend",
+        "Canarian Hospitality"
+      ],
+      "source_basis": "FIRST_PARTY_CORPORATE",
+      "capture_status": "DISCOVERED_NOT_CAPTURED"
+    },
+    {
+      "id": "PD-MEDIA-LINKEDIN-AM-COMPANY",
+      "published_date": null,
+      "publisher": "Grupo Acosta Matos",
+      "channel": "LinkedIn",
+      "title": "Grupo Acosta Matos company page and updates",
+      "url": "https://es.linkedin.com/company/grupo-acosta-matos",
+      "entity_tags": [
+        "Grupo Acosta Matos",
+        "Canarian Hospitality",
+        "Lanzarote"
+      ],
+      "source_basis": "FIRST_PARTY_SOCIAL",
+      "capture_status": "DISCOVERED_NOT_CAPTURED"
+    },
+    {
+      "id": "PD-MEDIA-LINKEDIN-RICPE-COMPANY",
+      "published_date": null,
+      "publisher": "RIC Private Equity",
+      "channel": "LinkedIn",
+      "title": "RIC Private Equity company page",
+      "url": "https://www.linkedin.com/company/ric-private-equity/",
+      "entity_tags": [
+        "RIC Private Equity",
+        "José Acosta"
+      ],
+      "source_basis": "FIRST_PARTY_SOCIAL",
+      "capture_status": "DISCOVERED_NOT_CAPTURED"
+    },
+    {
+      "id": "PD-MEDIA-LINKEDIN-JAM-REF-20230412",
+      "published_date": "2023-04-12",
+      "publisher": "Jose Acosta Matos",
+      "channel": "LinkedIn",
+      "title": "Territorio REF | ep.11 - 12/04/23",
+      "url": "https://es.linkedin.com/posts/jose-acosta-matos-aa4598183_territorio-ref-ep11-120423-activity-7052412046449029120-pY3i",
+      "entity_tags": [
+        "Jose Acosta Matos",
+        "RIC Private Equity",
+        "RIC",
+        "Televisión Canaria"
+      ],
+      "source_basis": "EXECUTIVE_SOCIAL",
+      "capture_status": "DISCOVERED_NOT_CAPTURED"
+    },
+    {
+      "id": "PD-MEDIA-LINKEDIN-JAM-SOCIMI",
+      "published_date": "2022",
+      "publisher": "Jose Acosta Matos",
+      "channel": "LinkedIn",
+      "title": "RIC Private Equity / SOCIMI tourism-investment post",
+      "url": "https://www.linkedin.com/posts/jose-acosta-matos-aa4598183_socimi-sectortur%C3%ADstico-dotaric-activity-6909265373322244097-PzZ3",
+      "entity_tags": [
+        "Jose Acosta Matos",
+        "RIC Private Equity",
+        "SOCIMI",
+        "Canary tourism"
+      ],
+      "source_basis": "EXECUTIVE_SOCIAL",
+      "capture_status": "DISCOVERED_NOT_CAPTURED"
+    },
+    {
+      "id": "PD-MEDIA-LINKEDIN-FF-LANZAROTE",
+      "published_date": "2023",
+      "publisher": "Francisco Fernández",
+      "channel": "LinkedIn",
+      "title": "Canarian Hospitality sigue creciendo en su destino estrella, Lanzarote",
+      "url": "https://es.linkedin.com/posts/franciscofernandezgarcia_canarian-hospitality-sigue-creciendo-en-su-activity-7046035972228063233-RYby",
+      "entity_tags": [
+        "Canarian Hospitality",
+        "MYND Yaiza",
+        "Radisson Blu Lanzarote"
+      ],
+      "source_basis": "EXECUTIVE_SOCIAL",
+      "capture_status": "DISCOVERED_NOT_CAPTURED"
+    },
+    {
+      "id": "PD-MEDIA-LINKEDIN-APS-LANZAROTE",
+      "published_date": "2023",
+      "publisher": "Alejandro Páez Sedano",
+      "channel": "LinkedIn",
+      "title": "Canarian Hospitality sigue creciendo en su destino estrella, Lanzarote",
+      "url": "https://es.linkedin.com/posts/alejandropaez_canarian-hospitality-sigue-creciendo-en-su-activity-7045061905077444609-f_LN",
+      "entity_tags": [
+        "Canarian Hospitality",
+        "MYND Yaiza",
+        "Radisson Blu Lanzarote"
+      ],
+      "source_basis": "EXECUTIVE_SOCIAL",
+      "capture_status": "DISCOVERED_NOT_CAPTURED"
+    }
+  ],
+  "research_queue": [
+    "Complete Canarias7/La Provincia discovery via search/index/archive routes where direct crawling is blocked.",
+    "Capture HOSTELTUR, La Voz de Lanzarote/EKN, Diario de Avisos, Atlántico Hoy, Diario de Lanzarote, Cinco Días and elEconomista historical corpus.",
+    "Expand exact-name searches for the canonical five-private-actor perimeter without inferring identity from name collisions.",
+    "Classify each publication into originating source family vs rewrite/syndication.",
+    "Preserve first-party press dossiers and release feeds because they may explain cross-outlet wording.",
+    "Acquire native screenshots/HTML/PDF/WARC and hashes for priority sources."
+  ]
+}
