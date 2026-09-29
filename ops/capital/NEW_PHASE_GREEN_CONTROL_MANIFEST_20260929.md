@@ -8,7 +8,7 @@
 - **GREEN — prepared:** Media & PR architecture exists on review branches; GitHub PR #2031 and GitLab MR !704 remain open.
 - **GREEN — prepared:** public `How we work` page exists on the GitHub review branch and is linked from the Media & PR hub.
 - **AMBER — verification:** GitLab pipeline could not execute because of `ci_quota_exceeded`; no content failure has been established.
-- **AMBER — parity:** `How we work` still needs GitLab branch parity.
+- **GREEN — parity:** `How we work` is present on both GitHub and GitLab review branches; Spanish Media/PR parity is being added in this release candidate.
 - **AMBER — Work mirror:** the standalone capital review site remains owner-authorised, but direct ChatGPT Work editing is temporarily unavailable.
 - **HOLD — explicit approval:** do not merge, publish investment-specific terms, announce financing, acquisition, planning approval, operator appointment or public-authority support without separately verified evidence and release approval.
 
@@ -29,6 +29,6 @@ Long-term capital · High-value hospitality · Lasting local value.
 ## Next safe actions
 1. Re-run GitLab MR !704 as soon as CI quota is available.
 2. Re-check GitHub PR #2031 checks and mergeability.
-3. Add GitLab parity for `How we work`.
+3. Validate English/Spanish Media & PR parity and live links after production release.
 4. Merge only after required gates pass and explicit owner/release authority exists.
 5. Mirror Media & PR / How We Work into the standalone capital site when ChatGPT Work becomes available.
