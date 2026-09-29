@@ -1,0 +1,114 @@
+{
+  "control": "PD-PINK-NARRATIVE-GRAPH-20260921-01",
+  "status": "INVESTIGATIVE_NO_CRIMINAL_FINDING",
+  "primary_question": "Whether changing descriptions of Pink/Monterecco were chronologically/legal reconcilable or selectively propagated for later procedural/economic uses.",
+  "nodes": [
+    {
+      "id": "N1",
+      "label": "Monterecco/Pink identity",
+      "issue": "same Spanish legal person; prohibit false succession narrative",
+      "state": "ESTABLISHED"
+    },
+    {
+      "id": "N2",
+      "label": "new operator vs authority",
+      "issue": "real operation established; universal authority unresolved",
+      "state": "MIXED"
+    },
+    {
+      "id": "N3",
+      "label": "159 units/477 beds",
+      "issue": "operating perimeter must not become whole-hotel title",
+      "state": "ESTABLISHED_WITH_SCOPE_LIMIT"
+    },
+    {
+      "id": "N4",
+      "label": "AP89",
+      "issue": "18-unit possession/operation adverse evidence must not be expanded",
+      "state": "ADVERSE_WITH_SCOPE_LIMIT"
+    },
+    {
+      "id": "N5",
+      "label": "abandonment",
+      "issue": "compressed adverse narrative conflicts with residual-operation/wind-down details",
+      "state": "CONTESTED"
+    },
+    {
+      "id": "N6",
+      "label": "rent shorthand",
+      "issue": "EUR24575 rent + EUR33915.29 Community charge + other costs",
+      "state": "ESTABLISHED_CONTRACT_ECONOMICS"
+    },
+    {
+      "id": "N7",
+      "label": "nonpayment",
+      "issue": "judicial adverse finding vs appeal/payment/setoff evidence",
+      "state": "CONTESTED_PRIMARY_ACCOUNTING_MISSING"
+    },
+    {
+      "id": "N8",
+      "label": "profitability",
+      "issue": "market/model evidence is not actual cash audit",
+      "state": "METHODOLOGICAL_GAP"
+    },
+    {
+      "id": "N9",
+      "label": "Community debt",
+      "issue": "morosity/vote/charges disputed; retroactive reductions and operator-paid common costs",
+      "state": "CONTESTED_AC_NOTICE_ESTABLISHED"
+    },
+    {
+      "id": "N10",
+      "label": "AC upstream knowledge/downstream focus",
+      "issue": "Community conflict known; calificacion emphasis on Pink requires consistency/causation audit",
+      "state": "INVESTIGATIVE"
+    },
+    {
+      "id": "N11",
+      "label": "2019 broad accusation vs 2023 narrowing",
+      "issue": "several AC branches rejected/narrowed; Pink rent branch survives/adverse",
+      "state": "ESTABLISHED_JUDICIAL_SPLIT"
+    },
+    {
+      "id": "N12",
+      "label": "external media reuse",
+      "issue": "Sentencia163 functioned in Jan2025 wider newsroom exchange; exact sender open",
+      "state": "DOCUMENTED_EFFECT_INTENT_OPEN"
+    },
+    {
+      "id": "N13",
+      "label": "AEAT/operator attribution",
+      "issue": "reconcile period-specific operator/tax narratives with abandonment/control narratives",
+      "state": "PROVENANCE_OPEN"
+    },
+    {
+      "id": "N14",
+      "label": "Sept2026 AC opposition",
+      "issue": "express result reliance on Sentencia163/EUR3.032m; no express Pink/rent citation in opening argument",
+      "state": "RESULT_RELIANCE_FUNCTIONAL_DEPENDENCY"
+    }
+  ],
+  "mandatory_fields": [
+    "source",
+    "exact_proposition",
+    "speaker_capacity",
+    "period",
+    "contrary_evidence",
+    "knowledge_route",
+    "later_use",
+    "forum",
+    "effect",
+    "beneficiary",
+    "verification",
+    "lawful_alternative",
+    "possible_offence_element"
+  ],
+  "non_regression": [
+    "No global guilt finding",
+    "Do not collapse entities or rights",
+    "Do not call EUR3.032m rent",
+    "Do not call Sept2026 AC brief an express Pink citation",
+    "Do not infer judge knowledge from AC knowledge",
+    "Do not infer criminal coordination from later benefit or adverse alignment"
+  ]
+}
