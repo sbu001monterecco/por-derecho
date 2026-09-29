@@ -178,3 +178,11 @@ No file may be described as safely stored merely because an upload/move was atte
 
 One developing evidence graph, many legally distinct proceedings. Information may be interconnected without collapsing separate legal objects, capacities, parties, dates, authorities or burdens of proof. The system must make both the connections and the separations visible.
 
+
+### 10.9 First-time ChatGPT introduction trigger
+
+When a materially relevant PDF or other file appears in ChatGPT for the first time, that first chat introduction is itself a preservation event and automatically activates this rule unless the user expressly says not to preserve it or the file is clearly unrelated to an active matter.
+
+Required handling: preserve the exact introduced binary unchanged; record the ChatGPT/conversation source locator and original filename; calculate and record size/hash where obtainable; classify and route it to the correct SBU/business Drive matter folder; create or update the evidence/provenance receipt, live Evidence Manifest and Custody Events ledger; link it to the relevant filing/request/proceeding, authority/entity/actor, proposition and later outcome; propagate only appropriate metadata/derivatives to private GitLab and public-safe GitHub; and verify Drive/readback before describing it as preserved.
+
+If the same binary already exists in canonical custody, compare hashes and register the new ChatGPT introduction as an additional provenance/custody event rather than treating it as independent corroboration or creating an unnecessary uncontrolled duplicate. If the binary cannot yet be copied, preserve the locator/notice and mark `SOURCE_PENDING`. Restricted, privileged, confidential or source-protected material stays in the appropriate private/restricted custody and is not mirrored publicly.
