@@ -137,6 +137,16 @@
       "status": "SOURCE_LOCATED",
       "establishes": "Cinco Días credits a Francisco Fernández image to Ángel Medina G. (MANDARINA COMUNICACIÓN).",
       "does_not_establish": "That Mandarina drafted/distributed the strategic-plan release or supplied every fact in the article."
+    },
+    {
+      "id": "MAND-BDO-20241118-GOBIERNO",
+      "date": "2024-11-18",
+      "kind": "OFFICIAL_GOVERNMENT_PERSONNEL_PROFILE",
+      "subject": "Beatriz Díaz Ojeda",
+      "url": "https://www.gobiernodecanarias.org/organigrama/ficha-altos-cargos/?ou=6547",
+      "status": "SOURCE_LOCATED",
+      "establishes": "Official profile records appointment as adviser in Consejería de Sanidad from 18-Nov-2024 and autonomous communications-consultant activity from May-2014 to Nov-2024; no compatible public/private activities listed.",
+      "does_not_establish": "Founder/legal-owner status of Mandarina Comunicación, exact Mandarina legal vehicle, or personal handling of Mandarina/Canarian Hospitality communications after Nov-2024."
     }
   ],
   "relevant_entity_matrix": {
@@ -160,5 +170,14 @@
     "Build source-family clusters for 14–15 Oct 2021 launch, 2022 Yaiza opening cycle, 2023 inaugurations/awards, 2024 portfolio, 2026 strategic plan.",
     "Capture immutable source copies and SHA-256 for priority public materials; preserve versions, do not overwrite.",
     "Determine source/instruction/approval chain only from direct evidence or witness evidence; do not infer from wording similarity alone."
-  ]
+  ],
+  "person_temporal_control": {
+    "canonical_person_id": "PD-SP-P-0300",
+    "historical_private_capacity": "AUTONOMA_COMMUNICATION_CONSULTANT_MAY_2014_TO_NOV_2024",
+    "current_public_capacity": "ASESORA_CONSEJERIA_DE_SANIDAD_FROM_18_NOV_2024",
+    "current_private_compatibility": "NONE_LISTED_BY_OFFICIAL_GOBIERNO_PROFILE",
+    "official_source": "https://www.gobiernodecanarias.org/organigrama/ficha-altos-cargos/?ou=6547",
+    "inference_rule": "Do not attribute 2026 Mandarina/Canarian Hospitality communications personally to Beatriz Díaz Ojeda without a direct 2026 source naming her.",
+    "founder_effect": "Official consultancy history does not prove founder/legal-owner status; founder_status remains OPEN_PRIMARY_PROOF_REQUIRED."
+  }
 }
