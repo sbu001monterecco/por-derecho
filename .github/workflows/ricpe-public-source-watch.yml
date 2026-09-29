@@ -1,4 +1,4 @@
-name: RICPE public source watch
+name: RICPE public source and web discovery
 
 on:
   schedule:
@@ -9,9 +9,9 @@ permissions:
   contents: read
 
 jobs:
-  public-source-snapshot:
+  public-source-and-web-intake:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -21,9 +21,14 @@ jobs:
         run: |
           mkdir -p recovery-audit
           python scripts/ricpe_public_source_watch.py --output recovery-audit/RICPE_PUBLIC_SOURCE_WATCH.json
-      - name: Preserve raw intake artifact
+      - name: Run bounded public-web discovery
+        run: |
+          python scripts/ricpe_public_web_discovery.py --output recovery-audit/RICPE_PUBLIC_WEB_DISCOVERY.json
+      - name: Preserve raw intake artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: ricpe-public-source-watch-${{ github.run_id }}
-          path: recovery-audit/RICPE_PUBLIC_SOURCE_WATCH.json
+          name: ricpe-public-intake-${{ github.run_id }}
+          path: |
+            recovery-audit/RICPE_PUBLIC_SOURCE_WATCH.json
+            recovery-audit/RICPE_PUBLIC_WEB_DISCOVERY.json
           retention-days: 90
