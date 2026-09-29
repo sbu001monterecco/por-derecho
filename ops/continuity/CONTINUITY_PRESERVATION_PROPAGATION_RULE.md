@@ -142,3 +142,39 @@ Every substantive Por Derecho / Sun Rock thread carries one compact state:
 New threads default ORANGE. Material propagation, source-custody, repo/Drive writes, automation changes, external actions and readback results must recalculate the state. The visible ChatGPT cue is a projection of the durable preservation state, not a replacement for it.
 
 Private thread-specific source locators and active dependencies belong in the private Drive sentinel/dashboard. Public Git stores only the policy, machine semantics, validators and public-safe closeouts.
+## 10. Universal file/data intake and Google Drive routing
+
+This rule applies to every materially relevant file or evidence object introduced through ChatGPT, Gmail, Google Drive, browser/portal download, upload, generated artifact, connected source, repository, court/authority platform or manual capture. It covers PDFs and also DOC/DOCX, XLS/XLSX/CSV, PPT/PPTX, images/screenshots, EML/MIME, ZIP/archive files, JSON/XML, HTML/web captures, audio/video, scans, receipts, exported portal records and corrected/superseding versions.
+
+### 10.1 Default canonical destination
+
+Google Drive is the canonical durable private document/evidence store. For Por Derecho / Sun Rock matters, the default destination is the main SBU/business Drive and the correct matter-specific private folder. A personal/private Drive may remain the native source where appropriate, but material evidence must be copied or linked into the SBU canonical structure unless privilege, source-protection, contractual restriction or security requires a more restricted authorised location. Public Git repositories never substitute for private binary custody.
+
+### 10.2 Mandatory routing record
+
+Each material object must have, where obtainable: canonical Evidence/Source ID; matter and sub-matter; source system/native source ID; original filename; source/issue/receipt timestamp; acquisition timestamp; MIME/type; byte size; SHA-256 or approved integrity hash; confidentiality/privilege state; evidence classification; custody state; Drive file ID/folder; linked filing/request/proceeding; linked authority/person/entity; linked proposition/claim; parent/child relation; version/supersession relation; next action; and any open acquisition/authenticity gap.
+
+### 10.3 Folder routing and quarantine
+
+Route directly to the established matter folder. If classification is genuinely uncertain, place the item in a controlled private `INTAKE_PENDING_CLASSIFICATION` lane, mark `OPEN_ROUTING_GAP`, and move it after classification without destroying the original provenance record. Do not leave material evidence permanently in Downloads, chat-only storage, email-only custody, Drive root or an ad-hoc personal folder.
+
+### 10.4 Relationship graph
+
+Maintain bidirectional links wherever supported by evidence: source ↔ attachment; filing ↔ receipt; request ↔ response; notice ↔ underlying document; proceeding ↔ parent filing; decision ↔ appeal/review; original ↔ correction/supplement; document ↔ actor/entity/authority; evidence ↔ proposition/claim; event ↔ deadline/action; source ↔ later outcome. A link proves only the relationship supported by its source.
+
+### 10.5 Originals, derivatives and duplicates
+
+Never overwrite an evidential original. Preserve original, redacted copy, OCR/text derivative, translation, working copy, corrected version, supplement and later outcome as separate objects with explicit relations. Exact duplicates should be identified by hash and linked/deduplicated operationally without silently deleting them or treating them as independent corroboration.
+
+### 10.6 Automatic PDF and file trigger
+
+Any new relevant PDF or other material file uploaded, downloaded, generated, recovered or otherwise introduced into ChatGPT triggers this intake rule automatically. The same rule applies to attachments discovered inside email threads or archives. If the binary cannot yet be acquired, preserve the notice/locator and mark `SOURCE_PENDING` rather than claiming preservation of the underlying file.
+
+### 10.7 Verification gate
+
+No file may be described as safely stored merely because an upload/move was attempted. Verify Drive readback: correct file identity, destination folder, filename/type, size and hash where available. Re-read/update the related register/control. If GitHub/GitLab or another designated plane is required, propagate and verify there separately. Use `FULLY_DIGESTED` / `PARITY_COMPLETE` only after all applicable gates pass.
+
+### 10.8 No-fragmentation standard
+
+One developing evidence graph, many legally distinct proceedings. Information may be interconnected without collapsing separate legal objects, capacities, parties, dates, authorities or burdens of proof. The system must make both the connections and the separations visible.
+
