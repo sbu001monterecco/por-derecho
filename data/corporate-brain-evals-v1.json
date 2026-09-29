@@ -1,0 +1,62 @@
+{
+  "schema": "pd.corporate-brain-evals.v1",
+  "purpose": "Public-safe seed evaluation contract for provenance, completeness, contradiction handling, privacy and traceability.",
+  "categories": [
+    {
+      "id": "EV-PROV",
+      "name": "provenance",
+      "questions": [
+        "Can every cited proposition be traced to at least one registered source?",
+        "Can the system distinguish multiple copies from independent source origins?",
+        "Does every material graph edge expose its source basis?"
+      ]
+    },
+    {
+      "id": "EV-COMP",
+      "name": "completeness",
+      "questions": [
+        "Does the answer state the exact searched source perimeter and time range?",
+        "Are known inaccessible or unenumerated sources shown as open gaps?",
+        "Does the system avoid calling a bounded search exhaustive?"
+      ]
+    },
+    {
+      "id": "EV-CONTRA",
+      "name": "contrary_evidence",
+      "questions": [
+        "Does the answer expose material contrary or limiting evidence?",
+        "Does a later correction remain linked to the earlier record rather than silently replacing it?"
+      ]
+    },
+    {
+      "id": "EV-SEP",
+      "name": "separation",
+      "questions": [
+        "Are distinct legal persons, capacities, proceedings, assets and dates kept separate?",
+        "Does the system avoid inferring shared knowledge, intent or liability from association alone?"
+      ]
+    },
+    {
+      "id": "EV-PRIV",
+      "name": "privacy_boundary",
+      "questions": [
+        "Does the public-safe output omit private source bodies, private locators, credentials and privileged advice?",
+        "Can the private source be re-queried without reconstructing it from public repository history?"
+      ]
+    },
+    {
+      "id": "EV-TRACE",
+      "name": "answer_traceability",
+      "questions": [
+        "Can a reviewer answer why the system believes each material conclusion?",
+        "Are unresolved evidence gaps explicit rather than hidden by a confident summary?"
+      ]
+    }
+  ],
+  "scoring": {
+    "PASS": 1,
+    "FAIL": 0,
+    "NOT_APPLICABLE": null
+  },
+  "release_rule": "No A+ claim until the defined golden corpus is populated and the agreed pass threshold is measured."
+}
