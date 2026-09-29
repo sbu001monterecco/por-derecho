@@ -1,7 +1,7 @@
 {
   "control_id": "PD-RICPE-TRANSPARENCY-20260927-01",
-  "as_of": "2026-09-27",
-  "status_basis": "27 September source-qualified research and existing repository controls; not a new exhaustive receipt or mailbox audit",
+  "as_of": "2026-09-29",
+  "status_basis": "29 September source-qualified update: CTBG-issued case emails verified for 3929/2026, 3953/2026 and 3954/2026; signed native communication preserved for 3929/2026; native communications for 3953/2026 and 3954/2026 remain SOURCE_PENDING",
   "new_filings_made_by_this_update": 2,
   "new_emails_sent_by_this_update": 0,
   "rows": [
@@ -135,6 +135,34 @@
       "status": "FILED_REGISTERED_27SEP2026",
       "next": "Await competent routing/receipt and substantive response; preserve exact submitted PDF and receipt.",
       "gate": "Registration is filing, not admission or merits. Reconcile competent receipt/routing before deadline calculations."
+    },
+    {
+      "id": "CTBG-3929",
+      "authority": "CTBG",
+      "reference": "3929/2026",
+      "status": "NATIVE_SIGNED_COMMUNICATION_PRESERVED",
+      "source_state": "DIGESTED_PRIVATE",
+      "initiation_date": "2026-09-11",
+      "next": "Preserve every later CTBG communication against this exact expediente and reconcile the underlying filing/administrative-file linkage using primary evidence.",
+      "gate": "Do not infer the underlying REGAGE/decision mapping from thematic overlap alone."
+    },
+    {
+      "id": "CTBG-3953",
+      "authority": "CTBG",
+      "reference": "3953/2026",
+      "status": "OFFICIAL_CTBG_ISSUANCE_EMAIL_VERIFIED_NATIVE_COMMUNICATION_PENDING",
+      "source_state": "SOURCE_PENDING",
+      "next": "Acquire the signed/native CTBG communication and receipt from DEHu/CTBG, preserve it privately, then extract initiation date, subject, underlying filing and any deadline-bearing content.",
+      "gate": "Do not map this expediente to an earlier SAIP/REGAGE or calculate a merits deadline until the native communication is acquired."
+    },
+    {
+      "id": "CTBG-3954",
+      "authority": "CTBG",
+      "reference": "3954/2026",
+      "status": "OFFICIAL_CTBG_ISSUANCE_EMAIL_VERIFIED_NATIVE_COMMUNICATION_PENDING",
+      "source_state": "SOURCE_PENDING",
+      "next": "Acquire the signed/native CTBG communication and receipt from DEHu/CTBG, preserve it privately, then extract initiation date, subject, underlying filing and any deadline-bearing content.",
+      "gate": "Do not map this expediente to an earlier SAIP/REGAGE or calculate a merits deadline until the native communication is acquired."
     }
   ],
   "filing_updates": [
@@ -156,5 +184,6 @@
       "attachment": "02_SAIP_AEAT_27SEP2026.pdf",
       "status": "FILED_REGISTERED"
     }
-  ]
+  ],
+  "new_ctbg_initiation_notices_ingested_by_this_update": 2
 }
