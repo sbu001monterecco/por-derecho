@@ -93,3 +93,10 @@ Do not infer that 3953/2026 or 3954/2026 corresponds to either earlier AEAT comp
 
 For each acquired CTBG document: preserve the exact native file and receipt in the private Drive transparency workspace; record size/hash and provenance; extract the authority-stated initiation date, legal route, subject, parties/capacity and any deadline effect; update the action register and master proceedings register; link it bidirectionally to its actual parent filing only when primary evidence establishes that bridge; then propagate the minimum public-safe continuity state to GitHub/GitLab controls and re-read the result.
 
+
+
+## Native CTBG acquisition — 29 September 2026
+
+The signed native initiation communications for **3953/2026** and **3954/2026** have now been acquired and preserved. Both state an initiation date of **17 September 2026** under article 24 LTAIBG. This closes the source-acquisition gap but not the parentage bridge: neither initiation page states the originating REGAGE/AEAT reference.
+
+The chronology now overwhelmingly supports that 3953/3954 are the two AEAT complaints filed 16 September and routed into CTBG on 17 September. Preserve the exact ordering as a working hypothesis until a primary bridge states it expressly.
