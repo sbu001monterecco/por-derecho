@@ -63,3 +63,9 @@ A crawler/search result, task message, workflow artifact or search-engine hit is
 The substantive continuity package is externalised in repositories and the active research prompts are repository-first. However, because the current ChatGPT task metadata still records a conversation association, this audit deliberately does **not** claim complete scheduler-level detachment from the originating chat. Repository-native scheduled watching is staged as the independent off-thread layer.
 
 Deletion of this conversation must therefore never be treated as deletion of the canonical research record. The repository records, immutable IDs and source-ledger rules are the durable continuation point.
+
+## Live repository-gate readback — 29 September 2026
+
+- GitHub PR #2039: open and mergeable. The first workflow revision was correctly rejected because three external actions were not pinned to full SHAs. The workflow was corrected to full-SHA pins; replacement required checks are running. Until they pass and the PR merges, repository-native scheduled scanning is **STAGED, NOT ACTIVE ON DEFAULT BRANCH**.
+- GitLab MR !722: rebased to current protected main with zero divergence. Its current pipeline failure is classified by GitLab as **CI quota exceeded** across required jobs, not as a substantive test failure. Therefore it remains **UNMERGED / NOT GREEN** and no canonical-main or live claim is made.
+- ChatGPT scheduled RICPE tasks: enabled, repository-first, but task metadata still exposes a conversation association. They are not treated as the sole continuity mechanism.
