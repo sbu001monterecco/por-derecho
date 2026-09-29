@@ -1,0 +1,98 @@
+{
+  "schema": "pd.corporate-brain.a-plus-deployment.v1",
+  "control_date": "2026-09-29",
+  "status_legend": {
+    "GREEN": "deployed_and_verified_for_stated_scope",
+    "YELLOW": "deployed_or_designed_but_backfill_coverage_or_verification_remains",
+    "ORANGE": "external_connection_credential_platform_or_dependency_required",
+    "RED": "not_deployed_or_not_safe_to_claim_complete"
+  },
+  "gates": [
+    {
+      "id": "CB-01",
+      "name": "defined_source_perimeter",
+      "status": "ORANGE",
+      "note": "Three authorised mail sources and the canonical business Drive are connected; direct exhaustive enumeration of both private Drives remains a dependency."
+    },
+    {
+      "id": "CB-02",
+      "name": "canonical_private_vault_structure",
+      "status": "GREEN",
+      "note": "Existing consolidation root retained and extended; no competing vault created."
+    },
+    {
+      "id": "CB-03",
+      "name": "provenance_registry",
+      "status": "YELLOW",
+      "note": "Private-file provenance register exists; full historical mail provenance backfill remains open."
+    },
+    {
+      "id": "CB-04",
+      "name": "immutable_capture_and_hash",
+      "status": "YELLOW",
+      "note": "Binary hashing exists; native-document immutable export/hash backlog remains open."
+    },
+    {
+      "id": "CB-05",
+      "name": "cross_source_deduplication",
+      "status": "YELLOW",
+      "note": "Working area and rules exist; exhaustive cross-mailbox/file deduplication remains open."
+    },
+    {
+      "id": "CB-06",
+      "name": "corporate_case_graph",
+      "status": "YELLOW",
+      "note": "Case-graph and entity foundations exist; corporate-wide source/event/entity graph remains incomplete."
+    },
+    {
+      "id": "CB-07",
+      "name": "truth_machine_continuous_re_evaluation",
+      "status": "YELLOW",
+      "note": "Truth Machine and unitary-review foundations exist; continuous re-evaluation on every new source remains incomplete."
+    },
+    {
+      "id": "CB-08",
+      "name": "independent_red_team_governance",
+      "status": "GREEN",
+      "note": "Independent review/red-team control is deployed as a mandatory workflow boundary."
+    },
+    {
+      "id": "CB-09",
+      "name": "codex_engineering_layer",
+      "status": "YELLOW",
+      "note": "Repository is Codex-ready with AGENTS governance, tests, validators and CI; routine execution adoption remains in progress."
+    },
+    {
+      "id": "CB-10",
+      "name": "event_driven_mail_ingestion",
+      "status": "RED",
+      "note": "No universal production event-driven mailbox-to-vault-to-graph path is verified yet."
+    },
+    {
+      "id": "CB-11",
+      "name": "openai_platform_agents_runtime",
+      "status": "ORANGE",
+      "note": "Persistent API/Agents runtime requires Platform project/key/budget configuration."
+    },
+    {
+      "id": "CB-12",
+      "name": "independent_backup_restore",
+      "status": "YELLOW",
+      "note": "Recovery controls exist; independent encrypted immutable backup plus recurring restore test is not yet fully verified."
+    },
+    {
+      "id": "CB-13",
+      "name": "golden_question_eval_suite",
+      "status": "YELLOW",
+      "note": "Initial evaluation contract is deployed in this change; scored corpus coverage remains to be built."
+    },
+    {
+      "id": "CB-14",
+      "name": "private_command_centre",
+      "status": "RED",
+      "note": "Private search/graph/timeline dashboard is not yet production-deployed."
+    }
+  ],
+  "privacy_boundary": "No private source bodies, private locators, credentials or privileged advice in this public-safe status record.",
+  "authority_boundary": "This status record does not authorise external communications, filings, publication, transactions or commitments."
+}
