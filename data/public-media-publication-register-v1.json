@@ -44,7 +44,9 @@
     "RIC Capital",
     "Hotel New Trend",
     "Sun Park",
-    "Radisson projects linked to monitored perimeter"
+    "Radisson projects linked to monitored perimeter",
+    "Mandarina Comunicación",
+    "Beatriz Díaz Ojeda"
   ],
   "source_records": [
     {
@@ -320,6 +322,100 @@
       ],
       "source_basis": "EXECUTIVE_SOCIAL",
       "capture_status": "DISCOVERED_NOT_CAPTURED"
+    },
+    {
+      "id": "PD-MEDIA-MAND-20211014-LINKEDIN",
+      "published_date": "2021-10-14",
+      "publisher": "Mandarina Comunicación",
+      "channel": "LinkedIn",
+      "title": "Canarian Hospitality presenta MYND Hotels / Grupo Acosta Matos backing",
+      "entity_tags": [
+        "Mandarina Comunicación",
+        "Canarian Hospitality",
+        "MYND Hotels",
+        "Grupo Acosta Matos"
+      ],
+      "source_basis": "FIRST_PARTY_PR_SOCIAL",
+      "capture_status": "PRESERVED_NOT_HASHED",
+      "evidence_manifest_id": "MEDIA-MAND-20211028-002",
+      "source_family": "CH_MYND_LAUNCH_20211014"
+    },
+    {
+      "id": "PD-MEDIA-MAND-20220405-HOSTELTUR",
+      "published_date": "2022-04-05",
+      "publisher": "Hosteltur Community",
+      "channel": "press-note platform",
+      "title": "MYND Adeje apuesta por el cicloturismo...",
+      "entity_tags": [
+        "Beatriz Díaz Ojeda",
+        "Canarian Hospitality",
+        "MYND Adeje"
+      ],
+      "source_basis": "PRESS_NOTE_BYLINE",
+      "capture_status": "SOURCE_LOCATED",
+      "source_family": "MANDARINA_CH_PRESS_NOTES"
+    },
+    {
+      "id": "PD-MEDIA-MAND-20221031-HOSTELTUR",
+      "published_date": "2022-10-31",
+      "publisher": "Hosteltur Community",
+      "channel": "press-note platform",
+      "title": "Canarian Photo Awards 2023...",
+      "entity_tags": [
+        "Beatriz Díaz Ojeda",
+        "MYND Hotels",
+        "MYND Yaiza",
+        "Cabildo de Lanzarote"
+      ],
+      "source_basis": "PRESS_NOTE_BYLINE",
+      "capture_status": "SOURCE_LOCATED",
+      "source_family": "MANDARINA_CH_PRESS_NOTES"
+    },
+    {
+      "id": "PD-MEDIA-MAND-20240513-HOSTELTUR",
+      "published_date": "2024-05-13",
+      "publisher": "Hosteltur Community",
+      "channel": "press-note platform",
+      "title": "Raquel Suárez, nueva directora...",
+      "entity_tags": [
+        "Beatriz Díaz Ojeda",
+        "Canarian Hospitality",
+        "MYND Hotels",
+        "Sholeo Lodges"
+      ],
+      "source_basis": "PRESS_NOTE_BYLINE",
+      "capture_status": "SOURCE_LOCATED",
+      "source_family": "MANDARINA_CH_PRESS_NOTES"
+    },
+    {
+      "id": "PD-MEDIA-MAND-20240803-HOSTELTUR",
+      "published_date": "2024-08-03",
+      "publisher": "Hosteltur Community",
+      "channel": "press-note platform",
+      "title": "Radisson Blu Resort se posiciona...",
+      "entity_tags": [
+        "Beatriz Díaz Ojeda",
+        "Canarian Hospitality",
+        "Radisson Blu Resort Lanzarote"
+      ],
+      "source_basis": "PRESS_NOTE_BYLINE",
+      "capture_status": "SOURCE_LOCATED",
+      "source_family": "MANDARINA_CH_PRESS_NOTES"
+    },
+    {
+      "id": "PD-MEDIA-MAND-20260928-CINCODIAS-CREDIT",
+      "published_date": "2026-09-28",
+      "publisher": "Cinco Días",
+      "channel": "web",
+      "title": "Canarian Hospitality amplía su alianza con Radisson...",
+      "entity_tags": [
+        "Mandarina Comunicación",
+        "Canarian Hospitality"
+      ],
+      "source_basis": "NEWSROOM_INTERVIEW_WITH_MANDARINA_PHOTO_CREDIT",
+      "capture_status": "SOURCE_LOCATED",
+      "source_family": "CH_STRATEGIC_PLAN_20260928",
+      "note": "Mandarina photo credit supports involvement in media assets; does not by itself prove release authorship/distribution."
     }
   ],
   "research_queue": [
@@ -328,6 +424,7 @@
     "Expand exact-name searches for the canonical five-private-actor perimeter without inferring identity from name collisions.",
     "Classify each publication into originating source family vs rewrite/syndication.",
     "Preserve first-party press dossiers and release feeds because they may explain cross-outlet wording.",
-    "Acquire native screenshots/HTML/PDF/WARC and hashes for priority sources."
+    "Acquire native screenshots/HTML/PDF/WARC and hashes for priority sources.",
+    "Resolve Mandarina Comunicación exact legal vehicle and Beatriz Díaz Ojeda founder/owner status from primary evidence."
   ]
 }
