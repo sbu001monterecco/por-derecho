@@ -80,6 +80,55 @@ This rule applies prospectively to every material Por Derecho / Sun Rock update.
 
 The operational objective is anti-fragmentation with evidential discipline: one developing factual system, many legally distinct proceedings and publication surfaces, with no silent drift between them.
 
+## 9. Ingestion completeness, source acquisition and anti-fragmentation gate
+
+A source is **not FULLY_DIGESTED merely because an alert, email, screenshot, filename, portal card or repository reference has been seen**. The system distinguishes the notification object from the underlying evidential object.
+
+### 9.1 Mandatory source-state vocabulary
+
+Use the narrowest evidenced state:
+
+- `NOTICE_VERIFIED` — an authoritative notice/alert is verified, but the underlying document or production has not yet been acquired.
+- `SOURCE_PENDING` — acquisition of a materially relevant native source remains outstanding.
+- `SOURCE_ACQUIRED` — the native/authenticated source has been captured in authorised private custody.
+- `DIGESTED_PRIVATE` — the acquired source has been read/reviewed, classified, registered and cross-linked in the private evidence system.
+- `PROPAGATED` — all materially affected canonical registers/controls have been updated, subject to public/private minimisation.
+- `PARITY_COMPLETE` — required parity-designated surfaces have been re-read and verified after propagation.
+
+A state may advance only on evidence. An authoritative alert never substitutes for the document it announces.
+
+### 9.2 FULLY_DIGESTED completion standard
+
+For a materially relevant document or information object, FULLY_DIGESTED requires, where applicable:
+
+1. exact native/authenticated source captured without overwriting the original;
+2. provenance recorded: authority/source, original identifier, received/issued timestamps, original filename and source locator;
+3. integrity recorded for file-based evidence: byte size and cryptographic hash where obtainable;
+4. content actually reviewed; PDFs or image-bearing documents receive page/visual review when parsed text alone is insufficient;
+5. evidential classification applied: documented fact, provider statement, party statement, allegation, inference, official finding, contrary evidence, supersession or unresolved gap;
+6. canonical private custody verified by readback, with Google Drive used for durable binary/document custody unless a more authoritative native source must remain primary;
+7. canonical source/evidence ID and chronology/event registration completed;
+8. bidirectional cross-links created between source ↔ filing/request ↔ proceeding ↔ authority/actor/entity ↔ proposition/claim ↔ deadline/action ↔ later outcome/derivative, but only where the linkage is evidenced;
+9. GitLab/private analytical continuity updated when material; GitHub receives only a publication-safe continuity derivative when appropriate;
+10. relevant downstream controls, website/public derivatives or machine-readable registers updated only to the extent justified;
+11. readback verifies the updates and any blocked target remains explicitly `OPEN_GAP`.
+
+### 9.3 Canonical role separation
+
+- **Gmail/provider/portal:** native transmission and notice provenance.
+- **Google Drive:** canonical durable private evidence/document custody and private operational registers.
+- **GitLab:** private source-controlled analysis, traceability, crosswalks and continuity controls.
+- **GitHub:** public-safe continuity, publication controls and approved derivatives; never a reason to expose restricted provenance.
+- **ChatGPT:** working analysis/orchestration surface; never the sole durable custody location for a material source.
+
+### 9.4 Duplicate and version control
+
+Never overwrite a material original with a later version. Preserve originals, corrections, supplements, receipts and later outcomes as separate versioned evidence objects connected by explicit `supersedes`, `supplements`, `responds_to`, `appeals`, `implements` or other source-supported relations.
+
+### 9.5 No-false-green rule
+
+If a notice proves that a material underlying source exists and that source remains reasonably obtainable but unacquired, the source-acquisition lane remains `SOURCE_PENDING / OPEN_GAP`. The matter may be preserved against loss at the notice level, but it must not be described as fully digested, parity-complete or globally green on that basis.
+
 ## Thread deletion-safety sentinel
 
 Continuity propagation is incomplete until its thread-level deletion state is also evaluated under **PD-THREAD-SENTINEL-20260925-01**.
