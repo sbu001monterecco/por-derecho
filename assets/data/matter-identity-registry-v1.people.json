@@ -2714,7 +2714,8 @@
         "Google Drive preserved LinkedIn profile capture dated 28-Oct-2021: file 169ZWzf5_OxOxuioechg0IVo60-O0F4i8, identifying 'Responsable de Mandarina Comunicación' and 'Responsable de Comunicación · Mandarina Comunicacion · Freelance · May 2014–Present' as then displayed",
         "Canarian Hospitality press-kit/public press-office material identifying Beatriz Díaz at beatriz@mandarinacomunicacion.es",
         "PROEXCA / Gobierno de Canarias 2024 reporting identifying 'Beatriz Díaz de Mandarina Comunicación' among Canary women entrepreneurs",
-        "Public Hosteltur press-note corpus by Beatriz Díaz Ojeda concerning Canarian Hospitality / MYND / Radisson, 2022–2024"
+        "Public Hosteltur press-note corpus by Beatriz Díaz Ojeda concerning Canarian Hospitality / MYND / Radisson, 2022–2024",
+        "Gobierno de Canarias official personnel profile: adviser appointment 18-Nov-2024; professional history states autonomous communications consultant May 2014–Nov 2024 and lists no compatible private activities."
       ],
       "source_urls": [
         "https://drive.google.com/file/d/169ZWzf5_OxOxuioechg0IVo60-O0F4i8/view",
@@ -2722,7 +2723,8 @@
         "https://www.hosteltur.com/comunidad/nota/028774_mynd-adeje-apuesta-por-el-cicloturismo-como-experiencia-diferenciadora-y-sostenible.html",
         "https://www.hosteltur.com/comunidad/nota/030501_canarian-photo-awards-2023-repartira-mas-de-15000-euros-en-premios.html",
         "https://www.hosteltur.com/comunidad/nota/033487_raquel-suarez-nueva-directora-de-operaciones-de-las-marcas-de-canarian-hospitality.html",
-        "https://www.hosteltur.com/comunidad/nota/033800_radisson-blu-resort-se-posiciona-como-el-mejor-refugio-para-adultos-en-lanzarote.html"
+        "https://www.hosteltur.com/comunidad/nota/033800_radisson-blu-resort-se-posiciona-como-el-mejor-refugio-para-adultos-en-lanzarote.html",
+        "https://www.gobiernodecanarias.org/organigrama/ficha-altos-cargos/?ou=6547"
       ],
       "related_organisation_ids": [
         "PD-SP-O-0200"
@@ -2735,9 +2737,13 @@
         "Canarian Hospitality / MYND / Radisson communications appearing under her byline or Mandarina attribution"
       ],
       "founder_status": "OPEN_PRIMARY_PROOF_REQUIRED",
-      "founder_note": "No controlled primary source located as of 29-Sep-2026 literally establishes the title 'founder/fundadora' of Mandarina Comunicación. The preserved 2021 LinkedIn capture establishes 'Responsable' and freelance communications responsibility from May 2014; 2024 PROEXCA/Gobierno reporting places her among women entrepreneurs. Do not upgrade founder status without primary proof.",
+      "founder_note": "No controlled primary source located as of 29-Sep-2026 literally establishes the title 'founder/fundadora' of Mandarina Comunicación. Official Gobierno de Canarias material confirms she worked as an autonomous communications consultant from May 2014 to November 2024, consistent with the preserved 2021 Mandarina role, but this still does not by itself prove legal ownership/founder status of the Mandarina trade name.",
       "capacity_boundary": "Exact identity and source-specific communications roles only. Registration as a potential fact witness/source custodian does not make the person adverse, imply wrongdoing, establish receipt of any particular instruction, or transfer knowledge across clients or dates. Mandarina founder/legal-owner status remains expressly open.",
-      "record_anchor": "archive/media-monitoring/MANDARINA_COMMUNICATION_EVIDENCE_WITNESS_CONTROL_29SEP2026.md"
+      "record_anchor": "archive/media-monitoring/MANDARINA_COMMUNICATION_EVIDENCE_WITNESS_CONTROL_29SEP2026.md",
+      "historical_private_capacity": "AUTONOMA_COMMUNICATION_CONSULTANT_MAY_2014_TO_NOV_2024",
+      "current_public_capacity": "ASESORA_CONSEJERIA_DE_SANIDAD_FROM_18_NOV_2024",
+      "current_private_compatibility": "NONE_LISTED_BY_GOBIERNO_DE_CANARIAS_PROFILE",
+      "temporal_boundary": "Do not infer that Beatriz personally handled Mandarina/Canarian Hospitality communications after November 2024. Later Mandarina credits must be attributed to the communications brand/other identified personnel unless a source directly names her."
     }
   ]
 }
