@@ -80,3 +80,16 @@ Each native receipt was reconciled against the exact recipient-specific v4 PDF a
 CTBG: the native signed communication for **Exp. 3929/2026** has now been recovered and preserved. It records initiation on **11 September 2026** of an article 24 LTAIBG state-scope complaint, handled by the Subdirección General de Reclamaciones de ámbito estatal and resolved by the CTBG Presidency. The communication states a three-month maximum resolution/notification period. Preserve later CTBG notices against this exact expediente; do not create another complaint merely because the earlier notification was initially missing from the workspace.
 
 Next operational state is monitoring and evidence production: record later routing/acceptance/response notices against the five new REGAGE references; preserve every authority production with hashes; and continue the separate primary-evidence work on ERE/headcount, employment baseline, certification, payment and causation.
+
+## Dated continuation — 29 September 2026 — CTBG intake
+
+Three distinct CTBG expediente numbers are now source-controlled: **3929/2026**, **3953/2026** and **3954/2026**.
+
+- **3929/2026:** the signed native initiation communication is already preserved in private custody and records initiation on 11 September 2026 under article 24 LTAIBG. Its exact linkage to the originating filing/administrative file remains a separate evidential bridge.
+- **3953/2026:** CTBG itself issued a `Comunicación enviada` email identifying this expediente on 29 September. The underlying signed/native communication has not yet been acquired in the controlled corpus. State: `NOTICE_VERIFIED → SOURCE_PENDING`.
+- **3954/2026:** CTBG itself issued a separate `Comunicación enviada` email identifying this expediente on 29 September. The underlying signed/native communication has not yet been acquired in the controlled corpus. State: `NOTICE_VERIFIED → SOURCE_PENDING`.
+
+Do not infer that 3953/2026 or 3954/2026 corresponds to either earlier AEAT complaint, any 28 September filing, or any other SAIP until the native communication identifies the subject and originating record. The next action is acquisition and preservation, not another complaint.
+
+For each acquired CTBG document: preserve the exact native file and receipt in the private Drive transparency workspace; record size/hash and provenance; extract the authority-stated initiation date, legal route, subject, parties/capacity and any deadline effect; update the action register and master proceedings register; link it bidirectionally to its actual parent filing only when primary evidence establishes that bridge; then propagate the minimum public-safe continuity state to GitHub/GitLab controls and re-read the result.
+
