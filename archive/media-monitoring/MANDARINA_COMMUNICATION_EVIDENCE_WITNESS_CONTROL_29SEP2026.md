@@ -19,6 +19,16 @@ A preserved LinkedIn profile capture dated 28-Oct-2021 identifies Beatriz Díaz 
 
 **Founder control:** no controlled primary source located in this run literally establishes “fundadora/founder.” Do not use that title as fact until primary proof is obtained. Founder status remains `OPEN_PRIMARY_PROOF_REQUIRED`.
 
+## 2A. Temporal capacity correction — official Gobierno de Canarias source
+An official Gobierno de Canarias personnel profile identifies Beatriz Díaz Ojeda as an **Asesora** in the Consejería de Sanidad, with appointment date **18 November 2024**. The same official profile records her private professional activity as **“Autónoma - Consultora de comunicación” from May 2014 to November 2024** and lists **no compatible public/private activities**.
+
+Accordingly, the canonical evidence model is date-bounded:
+- **May 2014–November 2024:** controlled sources support Beatriz's private communications-consultancy / Mandarina role.
+- **From 18 November 2024:** controlled official material supports her public adviser role.
+- **2026 Mandarina/Canarian Hospitality communications:** do **not** attribute personal authorship, handling or knowledge to Beatriz merely from historic Mandarina material or stale press-kit contact details. A direct 2026 source is required.
+
+This strengthens, rather than closes, the founder question: the official source confirms autonomous communications consultancy but does not expressly establish that Beatriz founded or legally owned the Mandarina trade name/business.
+
 ## 3. Why this person/entity may matter as evidence or witnesses
 Where personally involved, Mandarina / Beatriz may have first-hand or documentary knowledge of:
 - who supplied source facts, figures, photographs and quotations;
