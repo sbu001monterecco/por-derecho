@@ -1,0 +1,64 @@
+{
+  "schema": "por-derecho.media-monitoring-public-safe.v1",
+  "control_date": "2026-09-30",
+  "canonical_identities": {
+    "mandarina": "PD-SP-O-0200",
+    "beatriz": "PD-SP-P-0300"
+  },
+  "boundaries": [
+    "Publication establishes publication/attribution only, not the truth of underlying client claims.",
+    "Communications work does not imply adverse status, wrongdoing, knowledge or coordination.",
+    "Source-family republications are not independent corroboration merely because multiple outlets carried them.",
+    "Earlier captures are versioned and never silently overwritten."
+  ],
+  "proof_gaps": {
+    "beatriz_founder_status": "OPEN_PRIMARY_PROOF_REQUIRED",
+    "mandarina_exact_legal_vehicle_cif_form": "OPEN_PRIMARY_PROOF_REQUIRED",
+    "ricpe_mandarina_direct_communications_edge": "OPEN_NOT_PROVED"
+  },
+  "source_families": [
+    {
+      "id": "CH_STRATEGIC_PLAN_20260928",
+      "status": "ACTIVE",
+      "members_added_20260930": [
+        "NEXOHOTEL/Nexotur 2026-09-29",
+        "Alimarket Hotels 2026-09-29/30 placement"
+      ],
+      "independence_rule": "downstream family members are not independent corroboration"
+    },
+    {
+      "id": "CH_FORESTA_20211230",
+      "status": "BACKFILLED",
+      "members": [
+        "Canarian Hospitality first-party family anchor",
+        "Beatriz/Mandarina historical public-social capture",
+        "Revista Viajes downstream publication"
+      ],
+      "independence_rule": "publication/attribution only"
+    },
+    {
+      "id": "MANDARINA_CH_PRESS_NOTES",
+      "status": "ACTIVE",
+      "members": [
+        "Hosteltur Community 2022-04-05",
+        "2022-10-31",
+        "2024-05-13",
+        "2024-08-03"
+      ],
+      "source_basis": "press-note/source material unless separate newsroom reporting is established"
+    },
+    {
+      "id": "RICPE_RADISSON_LANZAROTE",
+      "status": "CURRENT_BASELINE",
+      "public_source": "https://ric.capital/hotel-radisson-blu-lanzarote/",
+      "role_boundary": "owner, financier, manager and brand remain distinct roles"
+    },
+    {
+      "id": "CH_CURRENT_PORTFOLIO_BASELINE_20260930",
+      "status": "CURRENT_BASELINE",
+      "public_source": "https://canarianhospitality.com/en/hotels/",
+      "role_boundary": "portfolio/management statements do not establish asset ownership or financing"
+    }
+  ],
+  "mirror_policy": "Public GitHub receives only public-safe metadata and evidentiary boundaries through protected PR workflow. Private source bodies, Gmail IDs, Drive locators and privileged/private material remain outside this projection."
+}
