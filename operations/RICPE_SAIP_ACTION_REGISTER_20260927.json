@@ -1,7 +1,7 @@
 {
   "control_id": "PD-RICPE-TRANSPARENCY-20260927-01",
   "as_of": "2026-09-30",
-  "status_basis": "30 September 2026: Canary Hacienda public-information expediente 23/2026-0930082203 formally routed to the Viceconsejería de Hacienda y Relaciones con la Unión Europea and Presidencia del Gobierno; native notice preserved privately; merits remain pending.",
+  "status_basis": "30 September 2026: Canary Hacienda expediente 23/2026-0930082203 routed to Viceconsejería and Presidencia; a narrow traceability follow-up was then filed and registered as REGAGE26e00084939677; merits remain pending.",
   "new_filings_made_by_this_update": 2,
   "new_emails_sent_by_this_update": 0,
   "rows": [
@@ -126,14 +126,23 @@
       "id": "NEW-CONTROL-CAN",
       "authority": "Canary Hacienda",
       "reference": "REGAGE26e00083877714",
-      "status": "ROUTING_CONFIRMED_VICECONSEJERIA_AND_PRESIDENCIA_30SEP2026",
-      "next": "Confirm competent-body receipt dates/references; then monitor third-party hearing, extension or substantive access decision. Preserve any later merits decision separately and compare it against the frozen pre-outcome simulation.",
-      "gate": "Routing is not grant, document-existence finding or merits adoption. The 30 September communication does not print the parent REGAGE number; keep the exact parentage bridge source-qualified until expressly stated.",
+      "status": "ROUTING_CONFIRMED_TRACEABILITY_FOLLOWUP_FILED_MERITS_PENDING",
+      "next": "Await processing and competent-body receipt/reference; monitor for association/separation of the Presidency route, third-party hearing, extension or substantive access decision.",
+      "gate": "REGAGE26e00084939677 proves filing/registration of the traceability clarification, not admission, competent-body receipt, association/accumulation, or merits.",
       "administrative_expediente": "23/2026-0930082203",
       "source_state": "DIGESTED_PRIVATE",
       "deadline_basis": "PENDING_COMPETENT_BODY_RECEIPT_DATE",
       "related_presidency_saip": "REGAGE26e00082737162 — related/overlapping but distinct unless expressly associated",
-      "relationship_state": "CROSS_LINKED_NOT_MERGED"
+      "relationship_state": "CROSS_LINKED_NOT_MERGED",
+      "traceability_followup": {
+        "reference": "REGAGE26e00084939677",
+        "presented_at": "2026-09-30 15:21:21",
+        "registered_at": "2026-09-30 15:21:26",
+        "destination_dir3": "A05032840",
+        "subject": "Exp. 23/2026: trazabilidad de remisiones a Viceconsejería y Presidencia",
+        "attachment": "2026-09-30_EXP_23-2026-0930082203_PAQUETE_UNICO_REDSARA_FDO_GIL_MARER.pdf",
+        "status": "FILED_REGISTERED"
+      }
     },
     {
       "id": "NEW-CONTROL-AEAT",
