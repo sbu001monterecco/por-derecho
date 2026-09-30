@@ -115,10 +115,10 @@
     {
       "id": "PRES-SEP22",
       "authority": "Presidencia Canarias",
-      "reference": null,
-      "status": "Prepared document located; filing unverified in research",
-      "next": "Find receipt and compare exact submitted version",
-      "gate": "Hold duplicate submission until resolved"
+      "reference": "REGAGE26e00082737162",
+      "status": "FILED_REGISTERED_22SEP2026_RECEIPT_RECOVERED_30SEP2026",
+      "next": "Reconcile any competent-office receipt/internal expediente for this separate Presidency SAIP with the 30 September Hacienda routing to Presidencia; avoid duplicate filing and keep the two access routes cross-linked but distinct.",
+      "gate": "The 22 September filing is now verified by its RedSARA receipt. It is autonomous from Hacienda expediente 23/2026-0930082203 unless a primary source expressly links or accumulates them."
     },
     {
       "id": "NEW-CONTROL-CAN",
