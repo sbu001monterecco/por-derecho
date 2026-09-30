@@ -659,5 +659,54 @@
       "legal consequence"
     ],
     "numerical_evidential_weights": "PROHIBITED_UNLESS_METHOD_AND_REFERENCE_DATA_VALIDATED_FOR_CASE_RELEVANT_USE"
+  },
+  "mandatory_intake_trigger": {
+    "scope": "Every filing, pleading, opposition, submission, annex, evidential package or material representation originating outside the Por Derecho / Gil Marer / AWESWELL LIMITED side from a party or actor adverse or materially adverse in the relevant matter.",
+    "default_action": "AUTO_TRUTH_MACHINE_REVIEW",
+    "review_hypothesis": "SELECTION_AND_CONTEXT_RISK_NOT_FALSITY_PRESUMPTION",
+    "separate_track_per_filing": true,
+    "link_to_unitary_evidence_graph": true,
+    "required_checks": [
+      "native_source_version_hash_custody",
+      "source_block_proposition_requested_inference",
+      "quotation_qualifier_negation_modality_quantifier_denominator",
+      "actor_entity_capacity_event_time_knowledge_time",
+      "underlying_source_and_complete_contemporaneous_record",
+      "material_omission_selective_extraction_support_contrary_adverse",
+      "chronology_attribution_financial_scope_procedural_status_authority_perimeter",
+      "independent_corroboration_vs_derivative_repetition_reuse",
+      "recipient_adoption_use_decision_effect_beneficiary_harm_causation",
+      "strongest_lawful_alternative_and_decisive_open_evidence",
+      "recursive_dependency_rerun_on_material_new_evidence"
+    ],
+    "review_states": [
+      "SUPPORTED_WITHIN_SCOPE",
+      "ACCURATE_BUT_INCOMPLETE",
+      "NO_MATERIAL_DISTORTION",
+      "NARROWS",
+      "SELECTIVE_PRESENTATION",
+      "MATERIAL_CONTEXT_OMISSION",
+      "MISLEADING_INFERENCE",
+      "ATTRIBUTION_OR_CAPACITY_MISMATCH",
+      "CHRONOLOGY_OR_KNOWLEDGE_MISMATCH",
+      "DENOMINATOR_OR_SCOPE_SHIFT",
+      "PROCEDURAL_STATUS_MISSTATEMENT",
+      "DIRECT_CONTRADICTION",
+      "DERIVATIVE_REUSE_NOT_INDEPENDENT_CORROBORATION",
+      "INCONCLUSIVE"
+    ],
+    "high_threshold_labels": {
+      "labels": [
+        "FALSE",
+        "LIE",
+        "DISHONEST",
+        "KNOWINGLY_FALSE",
+        "BAD_FAITH",
+        "INTENTIONAL_DECEPTION",
+        "CRIMINAL_PURPOSE"
+      ],
+      "rule": "Never promote from adverse origin, omission, selectivity, rhetoric or contradiction candidate alone. Require source-complete actor-specific support; where knowledge or intent is asserted, source it separately for the relevant time."
+    },
+    "institutional_output_boundary": "An unfavourable court, prosecutor or institutional output is not automatically an adverse-party filing. It may receive the same fidelity/context/provenance review in a separate institutional-output lane without inferring adverse alignment from outcome."
   }
 }
