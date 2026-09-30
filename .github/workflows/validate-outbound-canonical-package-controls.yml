@@ -1,0 +1,38 @@
+name: Validate outbound canonical package controls
+
+on:
+  pull_request:
+    paths:
+      - 'archive/OUTBOUND_CANONICAL_REFERENCE_AND_PACKAGE_OBJECT_HARD_GATE_30SEP2026.md'
+      - 'archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md'
+      - 'archive/MAXIMUM_REACH_OUTBOUND_CAMPAIGN_LAYER_23AUG2026.md'
+      - 'archive/prompts/RECIPIENT_SPECIFIC_OUTBOUND_EMAIL_PREPARATION_PROMPT_23AUG2026.md'
+      - 'EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md'
+      - 'CHATGPT_START_HERE.md'
+      - 'AGENTS.md'
+      - 'ops/outbound/**'
+      - 'scripts/validate_outbound_canonical_reference_controls.py'
+      - '.github/workflows/validate-outbound-canonical-package-controls.yml'
+  push:
+    branches: [ main ]
+    paths:
+      - 'archive/OUTBOUND_CANONICAL_REFERENCE_AND_PACKAGE_OBJECT_HARD_GATE_30SEP2026.md'
+      - 'archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md'
+      - 'archive/MAXIMUM_REACH_OUTBOUND_CAMPAIGN_LAYER_23AUG2026.md'
+      - 'archive/prompts/RECIPIENT_SPECIFIC_OUTBOUND_EMAIL_PREPARATION_PROMPT_23AUG2026.md'
+      - 'EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md'
+      - 'CHATGPT_START_HERE.md'
+      - 'AGENTS.md'
+      - 'ops/outbound/**'
+      - 'scripts/validate_outbound_canonical_reference_controls.py'
+      - '.github/workflows/validate-outbound-canonical-package-controls.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/validate_outbound_canonical_reference_controls.py
