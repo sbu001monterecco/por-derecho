@@ -30,3 +30,10 @@ Earlier expediente 21/2026-0921081108 remains distinct.
 Exact native binaries, personal identifiers, provider locators and notification-system hashes remain in private canonical custody. Public Git stores only this minimised continuity derivative.
 
 A frozen pre-outcome simulation exists privately and is not altered by this procedural routing event. Any later merits resolution must be preserved as a new evidence object and compared against the frozen baseline separately.
+
+
+## Traceability follow-up filed
+
+On 30 September 2026 a narrow procedural clarification was filed through RedSARA as **REGAGE26e00084939677**, addressed to DIR3 **A05032840**. Its purpose is limited to confirming the administrative bridge between the parent request/complement, the internal expediente, the receiving units/references at the Viceconsejería and Presidencia, and whether the separate Presidency access route is associated or remains distinct.
+
+The filing does not establish admission, competent-body receipt, accumulation, disclosure or merits. Those remain pending.
