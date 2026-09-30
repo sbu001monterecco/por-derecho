@@ -120,7 +120,13 @@
       "next": "Reconcile any competent-office receipt/internal expediente for this separate Presidency SAIP with the 30 September Hacienda routing to Presidencia; avoid duplicate filing and keep the two access routes cross-linked but distinct.",
       "gate": "The 22 September filing is now verified by its RedSARA receipt. It is autonomous from Hacienda expediente 23/2026-0930082203 unless a primary source expressly links or accumulates them.",
       "related_hacienda_expediente": "23/2026-0930082203 — routing to Presidencia creates scope overlap but no proven accumulation",
-      "relationship_state": "CROSS_LINKED_NOT_MERGED"
+      "relationship_state": "CROSS_LINKED_NOT_MERGED",
+      "registry_processing_notice": {
+        "processed_by": "S.G.T. de Presidencia, Administraciones Públicas, Justicia y Seguridad",
+        "processed_at": "2026-09-23 08:35:37",
+        "source_type": "RedSARA informational email",
+        "legal_weight": "Informational status notice; not proof of admission, competent-body receipt or merits."
+      }
     },
     {
       "id": "NEW-CONTROL-CAN",
@@ -142,6 +148,19 @@
         "subject": "Exp. 23/2026: trazabilidad de remisiones a Viceconsejería y Presidencia",
         "attachment": "2026-09-30_EXP_23-2026-0930082203_PAQUETE_UNICO_REDSARA_FDO_GIL_MARER.pdf",
         "status": "FILED_REGISTERED"
+      },
+      "registry_processing_chain": {
+        "parent": {
+          "reference": "REGAGE26e00083877714",
+          "processed_by": "S.G.T. de Hacienda y Relaciones con la Unión Europea",
+          "processed_at": "2026-09-28 08:54:37"
+        },
+        "complement": {
+          "reference": "REGAGE26e00084245120",
+          "processed_by": "S.G.T. de Hacienda y Relaciones con la Unión Europea",
+          "processed_at": "2026-09-29 09:11:43"
+        },
+        "evidential_note": "Informational RedSARA routing notices. They strengthen chronology but do not by themselves prove the exact REGAGE→23/2026 bridge or receipt by the competent decision-makers."
       }
     },
     {
