@@ -5,6 +5,20 @@
 **Scope:** continuing recipient-specific email outreach, supplements, corrections, follow-ups, preservation requests, media approaches and institutional/compliance communications  
 **Controlling send gate:** `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`
 
+## 30-Sep-2026 canonical-reference hard-gate override
+
+Before any material outbound package may be described as ready, also read and apply:
+
+`archive/OUTBOUND_CANONICAL_REFERENCE_AND_PACKAGE_OBJECT_HARD_GATE_30SEP2026.md`
+
+That supplement is fail-closed and makes the following mandatory rather than discretionary: pre-assigned `COMMUNICATION_ID`, controlling version, source cutoff, canonical entity/proceeding check, material-proposition source map, Attachment Manifest with SHA-256/bytes/canonical-store state, Link Manifest verified after the last material page change, pagination-complete person + organisation Gmail gate, repository-parity/exception field, attachment internal-version consistency and an immutable sent-package preservation plan.
+
+No ad hoc exhibit/source identifier may be presented as canonical unless it resolves to a controlling register; otherwise label it `PACK_LOCAL_EXHIBIT_ID` and map it to the actual source.
+
+For Level 2 / Level 3 authority, professional-body, law-firm, auditor, compliance or institutional-custodian packages, the email or first pages of the attachment must include a compact recipient-visible Reference Control block as defined in the hard gate.
+
+The phrase “ready”, “green”, “canonical” or “send correctly now” is prohibited unless all PASS fields in the hard gate are present in the readiness record.
+
 ## 1. Purpose
 
 This protocol governs how Project Sun Rock / Por Derecho outbound emails are researched, personalised, drafted, evidence-checked, translated, supplied with attachments and links, approved, sent, verified and followed up.
