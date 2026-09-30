@@ -4,6 +4,13 @@
 
 Bilingual public website for the Project Sun Rock umbrella platform.
 
+
+## Legal AI design-partner / evaluation invitation
+
+Por Derecho / **The Second Pair of Eyes** is also available as a public-safe real-world evaluation environment for legal-AI, law-firm innovation, legal-engineering, model-evaluation and professional-services teams. The aim is to test provenance, adverse evidence, long-horizon corrections, bilingual and cross-jurisdictional retrieval, agent handoffs, confidentiality boundaries, auditability and human review — **not** to obtain endorsement of any case position.
+
+Start with **[LEGAL_AI_DESIGN_PARTNER.md](LEGAL_AI_DESIGN_PARTNER.md)**. Canonical collaboration reference: `^PD-OPENAI-LEGAL-AI-DESIGN-PARTNER-20260930-01`.
+
 ## Public routes
 
 - `/es/` — Spanish
