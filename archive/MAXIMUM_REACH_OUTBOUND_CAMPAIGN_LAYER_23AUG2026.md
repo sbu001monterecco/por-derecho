@@ -4,6 +4,12 @@
 **Status:** mandatory campaign/exposure supplement to `archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md`  
 **Send-control rule:** `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`
 
+## 30-Sep-2026 package-object override
+
+Every important outbound package is additionally governed by `archive/OUTBOUND_CANONICAL_REFERENCE_AND_PACKAGE_OBJECT_HARD_GATE_30SEP2026.md`. Section 11's `COMMUNICATION_ID`, controlling version, source cutoff, recipient set, Attachment Manifest and Link Manifest are hard prerequisites, not best-effort metadata. The package must also record canonical-name/source-map checks, final dual Gmail-history gate status, repository parity/exception, attachment SHA-256/bytes, live-link verification after the last change and exact sent-artifact preservation.
+
+If any field is missing: **SEND STATUS: BLOCKED — CANONICAL PACKAGE OBJECT INCOMPLETE.**
+
 ## 1. Purpose
 
 This layer governs how Project Sun Rock / Por Derecho converts safe recipient-specific email preparation into a controlled exposure and engagement programme.
