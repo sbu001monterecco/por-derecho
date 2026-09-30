@@ -10,7 +10,7 @@
 - 🟢 **Preservation baseline:** the approved v19/v8 filing package and receipt custody remain controlled by the existing Meeting Point filing continuity records.
 - 🟠 **Portobello:** use its published internal reporting channel for a narrow preservation, routing and transaction-file custodian request.
 - 🟠 **Gestora Blue Sea Partner / BLUESEA:** use a separate Legal / Compliance / Risk preservation route tied to the documented acquisition perimeter.
-- 🟠 **Meeting Point Hotelmanagement (Canaries):** identify the current custodian of legacy Meeting Point Spain / Meeting Point Investment records after the 2026 merger.
+- 🟠 **Meeting Point Hotelmanagement (Canaries):** identify the current custodian of legacy Meeting Point Spain / Meeting Point Investment records after the 2026 corporate succession / absorption recorded in BORME.
 - 🟠 **Germany:** update the existing competent authority / insolvency route that the controlled filing package has now been registered in Spain.
 - 🔵 **Direct-contact control:** where an organisation has requested cessation of repeated direct contact, any further transmission is through a competent institutional, judicial or regulatory route.
 - 🟠 **GitHub:** no propagation until this GitLab change is accepted and publication-related checks pass.
