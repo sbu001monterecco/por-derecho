@@ -49,6 +49,12 @@
   const simplifyHeaderNavigation = () => {
     const nav = document.querySelector('.site-header .main-nav');
     if (!nav || nav.dataset.psrOptimised === '1') return;
+    // The refined homepage already supplies complete native navigation.
+    // Other routes and the remaining reader-journey functions still run.
+    if (document.body.classList.contains('pd-home-refined') && nav.querySelector('.pd-home-more')) {
+      nav.dataset.psrOptimised = '1';
+      return;
+    }
     let html = null;
     if (new RegExp(`/por-derecho/${lang}/?$`).test(path)) {
       html = [
@@ -109,6 +115,7 @@
 
   const simplifyHomeHero = () => {
     if (!new RegExp(`/por-derecho/${lang}/?$`).test(path)) return;
+    if (document.body.classList.contains('pd-home-refined')) return;
     const actions = document.querySelector('main > .hero .actions');
     if (!actions || actions.dataset.psrOptimised === '1') return;
     actions.dataset.psrOptimised = '1';

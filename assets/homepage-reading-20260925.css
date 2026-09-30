@@ -1,0 +1,80 @@
+/* Homepage only. Existing text, anchors, images and other routes remain. */
+body.pd-home-refined{font-size:17px;line-height:1.65;--pd-home-reading:72ch}
+.pd-home-refined .hero{min-height:0}
+.pd-home-refined .hero-grid{gap:clamp(1.5rem,4vw,3.5rem);padding-block:clamp(2.3rem,5vw,4rem);grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}
+.pd-home-refined .hero h1{max-width:18ch;font-size:clamp(2.6rem,4.9vw,4.6rem);line-height:1.06}
+.pd-home-refined .hero .lead{font-size:1.075rem;line-height:1.6;margin-top:1.25rem;max-width:60ch}
+.pd-home-refined .hero .actions{margin-top:1.25rem}
+.pd-home-refined .hero .actions .button:first-child{background:#f0dfc4;color:#13252d;border-color:#f0dfc4}
+.pd-home-refined .hero-photo{align-self:center}
+.pd-home-refined .hero-photo figcaption{font-size:.9rem;line-height:1.5}
+.pd-home-refined .header-inner{gap:1rem;max-width:80rem;min-height:4.5rem}
+.pd-home-refined .brand{flex-shrink:0}
+.pd-home-refined .main-nav{gap:.15rem;align-items:center;flex-wrap:wrap}
+.pd-home-refined .main-nav>a{font-size:.91rem;padding:.6rem .55rem;min-height:44px;display:inline-flex;align-items:center}
+.pd-home-refined .pd-home-more{position:relative;align-self:center;font-size:.91rem}
+.pd-home-refined .pd-home-more>summary{cursor:pointer;padding:.6rem .65rem;min-height:44px;border-radius:.4rem;color:#dce4e5}
+.pd-home-refined .pd-home-more[open]>summary{background:#24434a;color:#fff}
+.pd-home-refined .pd-home-more-links{position:absolute;right:0;top:100%;width:min(25rem,90vw);padding:.7rem;display:grid;grid-template-columns:1fr 1fr;gap:.25rem;background:#13252d;border:1px solid #7d9295;border-radius:.6rem;box-shadow:0 14px 32px #10202833;z-index:60}
+.pd-home-refined .pd-home-more-links a{font-size:.95rem;white-space:normal;min-height:44px}
+.pd-home-refined .pd-home-orientation{margin-top:1.2rem;border-left:3px solid #c58a39;padding:.3rem 0 .3rem 1rem;max-width:62ch}
+.pd-home-refined .pd-home-orientation p{margin:.2rem 0;color:#f3eee4;font-size:1rem;line-height:1.6}
+.pd-home-refined .pd-home-orientation strong{color:#fff}
+.pd-home-refined .pd-home-orientation a{color:#f0dfc4;text-decoration:underline;text-underline-offset:.2em}
+.pd-home-refined .pd-home-scope{width:min(calc(100% - 2rem),76rem);margin:3rem auto;padding:clamp(1.25rem,3vw,2.5rem);background:#fffdf8;border:1px solid #d9d3c8;border-top:4px solid #146a70;border-radius:1rem;scroll-margin-top:6rem}
+.pd-home-refined .pd-home-scope h2{font-size:clamp(2rem,3.3vw,3.2rem);max-width:30ch;margin:.4rem 0 1rem}
+.pd-home-refined .pd-home-scope>p{max-width:var(--pd-home-reading)}
+.pd-home-refined .pd-home-scope .pd-home-scope-status{color:#43585b;font-size:.9rem;font-weight:700;letter-spacing:.02em}
+.pd-home-refined .pd-home-scope-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem;margin:1.5rem 0}
+.pd-home-refined .pd-home-scope-grid article{padding:1.3rem;background:#f3f6f5;border:1px solid #cbdad7;border-radius:.7rem}
+.pd-home-refined .pd-home-scope-grid h3{font-size:1.35rem;line-height:1.2;margin:.15rem 0 .8rem}
+.pd-home-refined .pd-home-scope-grid p{font-size:1rem;line-height:1.65;margin:0}
+.pd-home-refined .pd-home-proof-boundary{padding:1rem 1.25rem;background:#f4eee3;border-left:4px solid #9a6a20;font-size:1rem;line-height:1.65}
+.pd-home-refined .pd-home-source-link{font-size:.95rem}
+.pd-home-refined .pd-five-ac{border-width:2px;box-shadow:0 .8rem 2rem #10202812;margin-block:2rem 3rem}
+.pd-home-refined .pd-five-ac__head{padding:clamp(1.25rem,3vw,2.1rem)}
+.pd-home-refined .pd-five-ac__head h2{font-size:clamp(2rem,3.5vw,3.15rem);line-height:1.12;max-width:32ch}
+.pd-home-refined .pd-five-ac__head p{font-size:1.05rem;line-height:1.7;max-width:72ch}
+.pd-home-refined .pd-five-ac__criminal{padding:1.25rem 1.5rem;border-bottom-width:3px}
+.pd-home-refined .pd-five-ac__criminal p{font-size:1rem;line-height:1.65}
+.pd-home-refined .pd-five-ac__criminal strong{font-size:clamp(1.15rem,2.2vw,1.6rem);line-height:1.3}
+.pd-home-refined .pd-five-ac__private,.pd-home-refined .pd-five-ac__institutional,.pd-home-refined .pd-five-ac__linkage{padding:clamp(1rem,2vw,1.6rem)}
+.pd-home-refined .pd-five-ac__eyebrow,.pd-home-refined .pd-five-ac__criminal small,.pd-home-refined .pd-five-ac__institution-role{font-size:.875rem;line-height:1.5;font-weight:800;letter-spacing:.04em}
+.pd-home-refined .pd-five-ac__context,.pd-home-refined .pd-five-ac__legend span{font-size:.875rem;line-height:1.5}
+.pd-home-refined .pd-five-ac__private-head p,.pd-home-refined .pd-five-ac__institutional-head p,.pd-home-refined .pd-five-ac__linkage-head p{font-size:1rem;line-height:1.65;max-width:72ch}
+.pd-home-refined .pd-five-ac__card{padding:1.1rem;min-height:0;border-top-width:3px;background:#fffdf8;overflow:visible}
+.pd-home-refined .pd-five-ac__card::after{content:none}
+.pd-home-refined .pd-five-ac__name{font-size:1.25rem;line-height:1.25;overflow-wrap:anywhere}
+.pd-home-refined .pd-five-ac__copy,.pd-home-refined .pd-five-ac__institution-copy{font-size:1rem;line-height:1.65}
+.pd-home-refined .pd-five-ac__stage{font-size:.875rem;line-height:1.5;min-height:0;font-weight:800}
+.pd-home-refined .pd-five-ac__rel{font-size:.9rem;line-height:1.5;font-weight:700}
+.pd-home-refined .pd-five-ac__cluster-figure figcaption,.pd-home-refined .pd-five-ac__portrait-note,.pd-home-refined .pd-five-ac__evidence-visuals figcaption{font-size:.9rem;line-height:1.6}
+.pd-home-refined .pd-five-ac__image-boundary{font-weight:600}
+.pd-home-refined .pd-five-ac__institution-name{font-size:1.4rem;line-height:1.25}
+.pd-home-refined .pd-five-ac__accountability-columns{grid-template-columns:1fr;gap:.8rem}
+.pd-home-refined .pd-five-ac__accountability-column strong{font-size:.9rem;line-height:1.5}
+.pd-home-refined .pd-five-ac__accountability-column ul{font-size:1rem;line-height:1.65}
+.pd-home-refined .pd-five-ac__institution-allegation,.pd-home-refined .pd-five-ac__institution-boundary,.pd-home-refined .pd-five-ac__lock,.pd-home-refined .pd-five-ac__linkage-boundary{font-size:1rem;line-height:1.65;font-weight:600}
+.pd-home-refined .pd-five-ac__linkage-cell{font-size:.95rem;line-height:1.6;overflow-wrap:anywhere}
+.pd-home-refined .pd-five-ac__linkage-actor{font-size:1rem;line-height:1.5}
+.pd-home-refined .pd-five-ac__steps strong,.pd-home-refined .pd-five-ac__steps span{font-size:.95rem;line-height:1.55}
+.pd-home-refined .pd-five-ac__steps{grid-template-columns:repeat(4,minmax(0,1fr))}
+.pd-home-refined .pd-five-ac__notice p,.pd-home-refined .pd-five-ac__hinge p{font-size:1rem;line-height:1.65}
+.pd-home-refined .pd-five-ac__links a{font-size:.95rem;min-height:44px;align-items:center}
+.pd-home-refined .pd-five-ac__correction{font-size:.95rem;line-height:1.65}
+.pd-home-refined .section-head p{line-height:1.7}
+.pd-home-refined p,.pd-home-refined li{overflow-wrap:break-word}
+.pd-home-refined :is(a,button,summary):focus-visible{outline:3px solid #c58a39;outline-offset:4px}
+@media(max-width:1200px){.pd-home-refined .header-inner{flex-wrap:wrap;padding-block:.7rem}.pd-home-refined .main-nav{width:100%;justify-content:flex-start}.pd-home-refined .pd-five-ac__cards{grid-template-columns:1fr}.pd-home-refined .pd-five-ac__institution-person{grid-template-columns:7rem minmax(0,1fr)}.pd-home-refined .pd-five-ac__institution-portrait{width:7rem;height:8.3rem}}
+@media(max-width:800px){.pd-home-refined .site-header{position:relative}.pd-home-refined .hero-grid{grid-template-columns:1fr}.pd-home-refined .hero-photo{max-width:40rem}.pd-home-refined .pd-home-scope-grid{grid-template-columns:1fr}.pd-home-refined .pd-five-ac__cards,.pd-home-refined .pd-five-ac__cluster-cards--trio,.pd-home-refined .pd-five-ac__cluster-cards--pair,.pd-home-refined .pd-five-ac__institutional-grid{grid-template-columns:1fr}.pd-home-refined .pd-five-ac__steps{grid-template-columns:1fr}.pd-home-refined .pd-five-ac__steps li{min-height:0}.pd-home-refined .pd-five-ac__institution-person{grid-template-columns:6.5rem minmax(0,1fr)}.pd-home-refined .pd-five-ac__institution-portrait{width:6.5rem;height:7.8rem}.pd-home-refined .pd-home-more-links{position:static;width:100%;box-shadow:none}.pd-home-refined .pd-home-more[open]{flex-basis:100%}.pd-home-refined .pd-home-more-links{grid-template-columns:1fr 1fr}.pd-home-refined .pd-five-ac__linkage-cell{grid-template-columns:1fr}.pd-home-refined .pd-five-ac__linkage-cell::before{font-size:.875rem}}
+@media(max-width:480px){.pd-home-refined .main-nav>a{font-size:.9rem;padding:.5rem}.pd-home-refined .pd-five-ac__institution-person{grid-template-columns:1fr}.pd-home-refined .pd-five-ac__institution-portrait{width:8rem;height:auto;max-height:none}.pd-home-refined .pd-home-more-links{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.pd-home-refined{scroll-behavior:auto}.pd-home-refined *{scroll-behavior:auto;animation:none!important;transition:none!important}}
+@media print{.pd-home-refined .pd-home-more-links{position:static}.pd-home-refined .pd-home-scope,.pd-home-refined .pd-five-ac{box-shadow:none}}
+
+/* Preserve readable names and cards even at 320px in Spanish. */
+.pd-home-refined .pd-five-ac__institution-card{min-width:0;overflow-wrap:anywhere}
+.pd-home-refined .pd-five-ac__institution-person>*{min-width:0}
+.pd-home-refined .pd-five-ac__institution-name{overflow-wrap:anywhere}
+.pd-home-refined .pd-five-ac__cluster-cards>*{min-width:0}
+body.pd-home-refined.pd-home-mission main>.hero{padding:0}
+body.pd-home-refined.pd-home-mission main>.hero h1{font-size:clamp(2.6rem,4.9vw,4.6rem);line-height:1.06;max-width:18ch}
