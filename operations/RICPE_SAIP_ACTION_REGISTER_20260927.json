@@ -146,8 +146,9 @@
         "registered_at": "2026-09-30 15:21:26",
         "destination_dir3": "A05032840",
         "subject": "Exp. 23/2026: trazabilidad de remisiones a Viceconsejería y Presidencia",
-        "attachment": "2026-09-30_EXP_23-2026-0930082203_PAQUETE_UNICO_REDSARA_FDO_GIL_MARER.pdf",
-        "status": "FILED_REGISTERED"
+        "status": "FILED_REGISTERED",
+        "attachment_evidence_id": "AUTH-014",
+        "receipt_evidence_id": "AUTH-015"
       },
       "registry_processing_chain": {
         "parent": {
