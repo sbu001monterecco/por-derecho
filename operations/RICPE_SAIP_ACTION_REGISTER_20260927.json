@@ -1,7 +1,7 @@
 {
   "control_id": "PD-RICPE-TRANSPARENCY-20260927-01",
-  "as_of": "2026-09-27",
-  "status_basis": "27 September source-qualified research and existing repository controls; not a new exhaustive receipt or mailbox audit",
+  "as_of": "2026-09-30",
+  "status_basis": "30 September 2026: Canary Hacienda expediente 23/2026-0930082203 routed to Viceconsejería and Presidencia; a narrow traceability follow-up was then filed and registered as REGAGE26e00084939677; merits remain pending.",
   "new_filings_made_by_this_update": 2,
   "new_emails_sent_by_this_update": 0,
   "rows": [
@@ -115,18 +115,63 @@
     {
       "id": "PRES-SEP22",
       "authority": "Presidencia Canarias",
-      "reference": null,
-      "status": "Prepared document located; filing unverified in research",
-      "next": "Find receipt and compare exact submitted version",
-      "gate": "Hold duplicate submission until resolved"
+      "reference": "REGAGE26e00082737162",
+      "status": "FILED_REGISTERED_22SEP2026_RECEIPT_RECOVERED_30SEP2026",
+      "next": "Reconcile any competent-office receipt/internal expediente for this separate Presidency SAIP with the 30 September Hacienda routing to Presidencia; avoid duplicate filing and keep the two access routes cross-linked but distinct.",
+      "gate": "The 22 September filing is now verified by its RedSARA receipt. It is autonomous from Hacienda expediente 23/2026-0930082203 unless a primary source expressly links or accumulates them.",
+      "related_hacienda_expediente": "23/2026-0930082203 — routing to Presidencia creates scope overlap but no proven accumulation",
+      "relationship_state": "CROSS_LINKED_NOT_MERGED",
+      "registry_processing_notice": {
+        "processed_by": "S.G.T. de Presidencia, Administraciones Públicas, Justicia y Seguridad",
+        "processed_at": "2026-09-23 08:35:37",
+        "source_type": "RedSARA informational email",
+        "legal_weight": "Informational status notice; not proof of admission, competent-body receipt or merits."
+      }
     },
     {
       "id": "NEW-CONTROL-CAN",
       "authority": "Canary Hacienda",
       "reference": "REGAGE26e00083877714",
-      "status": "FILED_REGISTERED_27SEP2026",
-      "next": "Await competent routing/receipt and substantive response; preserve exact submitted PDF and receipt.",
-      "gate": "Registration is filing, not admission or merits. Reconcile competent receipt/routing before deadline calculations."
+      "status": "ROUTING_CONFIRMED_TRACEABILITY_FOLLOWUP_FILED_MERITS_PENDING",
+      "next": "Await processing and competent-body receipt/reference; monitor for association/separation of the Presidency route, third-party hearing, extension or substantive access decision.",
+      "gate": "REGAGE26e00084939677 proves filing/registration of the traceability clarification, not admission, competent-body receipt, association/accumulation, or merits.",
+      "administrative_expediente": "23/2026-0930082203",
+      "source_state": "DIGESTED_PRIVATE",
+      "deadline_basis": "PENDING_COMPETENT_BODY_RECEIPT_DATE",
+      "related_presidency_saip": "REGAGE26e00082737162 — related/overlapping but distinct unless expressly associated",
+      "relationship_state": "CROSS_LINKED_NOT_MERGED",
+      "traceability_followup": {
+        "reference": "REGAGE26e00084939677",
+        "presented_at": "2026-09-30 15:21:21",
+        "registered_at": "2026-09-30 15:21:26",
+        "destination_dir3": "A05032840",
+        "subject": "Exp. 23/2026: trazabilidad de remisiones a Viceconsejería y Presidencia",
+        "status": "FILED_REGISTERED",
+        "attachment_evidence_id": "AUTH-014",
+        "receipt_evidence_id": "AUTH-015"
+      },
+      "registry_processing_chain": {
+        "parent": {
+          "reference": "REGAGE26e00083877714",
+          "processed_by": "S.G.T. de Hacienda y Relaciones con la Unión Europea",
+          "processed_at": "2026-09-28 08:54:37"
+        },
+        "complement": {
+          "reference": "REGAGE26e00084245120",
+          "processed_by": "S.G.T. de Hacienda y Relaciones con la Unión Europea",
+          "processed_at": "2026-09-29 09:11:43"
+        },
+        "evidential_note": "Informational RedSARA routing notices. They strengthen chronology but do not by themselves prove the exact REGAGE→23/2026 bridge or receipt by the competent decision-makers."
+      },
+      "post_filing_audit": {
+        "control_id": "PD-RICPE-HAC-23-POSTFILE-20260930-01",
+        "evidence_id": "AUTH-016",
+        "public_path": "ops/continuity/GOBCAN_HACIENDA_23_2026_POST_FILING_AUDIT_20260930.md",
+        "status": "PRESERVED_VERIFIED"
+      },
+      "critical_watch_item": "HAC-23-COMPETENT-RECEIPT",
+      "outbound_decision": "NO_FURTHER_SUBSTANTIVE_FILING_NOW_TRIGGER_BASED_ONLY",
+      "thread_deletion_safety": "GREEN"
     },
     {
       "id": "NEW-CONTROL-AEAT",
@@ -135,6 +180,42 @@
       "status": "FILED_REGISTERED_27SEP2026",
       "next": "Await competent routing/receipt and substantive response; preserve exact submitted PDF and receipt.",
       "gate": "Registration is filing, not admission or merits. Reconcile competent receipt/routing before deadline calculations."
+    },
+    {
+      "id": "CTBG-3929",
+      "authority": "CTBG",
+      "reference": "3929/2026",
+      "status": "NATIVE_SIGNED_COMMUNICATION_PRESERVED",
+      "source_state": "DIGESTED_PRIVATE",
+      "initiation_date": "2026-09-11",
+      "next": "Preserve every later CTBG communication against this exact expediente and reconcile the underlying filing/administrative-file linkage using primary evidence.",
+      "gate": "Do not infer the underlying REGAGE/decision mapping from thematic overlap alone."
+    },
+    {
+      "id": "CTBG-3953",
+      "authority": "CTBG",
+      "reference": "3953/2026",
+      "status": "NATIVE_SIGNED_COMMUNICATION_PRESERVED_PARENTAGE_BRIDGE_OPEN",
+      "source_state": "DIGESTED_PRIVATE",
+      "next": "Reconcile exact parent filing/AEAT decision using a primary bridge; preserve all later CTBG acts against this expediente.",
+      "gate": "Do not convert chronological parentage inference into verified linkage until a primary source states the REGAGE/AEAT mapping.",
+      "initiation_date": "2026-09-17",
+      "source_sha256": "cb94fcdf549af06c0d3d422053df8301a5eaf93474430af6e80eca352aa9640b",
+      "working_parentage": "REGAGE26e00081191241 → AEAT 001-0113069 / RGE449073832025",
+      "parentage_confidence": "98% ordering hypothesis; pair identity 99.9%"
+    },
+    {
+      "id": "CTBG-3954",
+      "authority": "CTBG",
+      "reference": "3954/2026",
+      "status": "NATIVE_SIGNED_COMMUNICATION_PRESERVED_PARENTAGE_BRIDGE_OPEN",
+      "source_state": "DIGESTED_PRIVATE",
+      "next": "Reconcile exact parent filing/AEAT decision using a primary bridge; preserve all later CTBG acts against this expediente.",
+      "gate": "Do not convert chronological parentage inference into verified linkage until a primary source states the REGAGE/AEAT mapping.",
+      "initiation_date": "2026-09-17",
+      "source_sha256": "c0bd79858a697def2159a9fee95a8ffef50f2ada2f9af918ddad857bc53f5b94",
+      "working_parentage": "REGAGE26e00081194039 → joint AEAT 001-0112793 + 001-0113066 / RGE994072472024",
+      "parentage_confidence": "98% ordering hypothesis; pair identity 99.9%"
     }
   ],
   "filing_updates": [
@@ -156,5 +237,6 @@
       "attachment": "02_SAIP_AEAT_27SEP2026.pdf",
       "status": "FILED_REGISTERED"
     }
-  ]
+  ],
+  "new_ctbg_initiation_notices_ingested_by_this_update": 2
 }
