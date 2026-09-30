@@ -162,7 +162,16 @@
           "processed_at": "2026-09-29 09:11:43"
         },
         "evidential_note": "Informational RedSARA routing notices. They strengthen chronology but do not by themselves prove the exact REGAGE→23/2026 bridge or receipt by the competent decision-makers."
-      }
+      },
+      "post_filing_audit": {
+        "control_id": "PD-RICPE-HAC-23-POSTFILE-20260930-01",
+        "evidence_id": "AUTH-016",
+        "public_path": "ops/continuity/GOBCAN_HACIENDA_23_2026_POST_FILING_AUDIT_20260930.md",
+        "status": "PRESERVED_VERIFIED"
+      },
+      "critical_watch_item": "HAC-23-COMPETENT-RECEIPT",
+      "outbound_decision": "NO_FURTHER_SUBSTANTIVE_FILING_NOW_TRIGGER_BASED_ONLY",
+      "thread_deletion_safety": "GREEN"
     },
     {
       "id": "NEW-CONTROL-AEAT",
