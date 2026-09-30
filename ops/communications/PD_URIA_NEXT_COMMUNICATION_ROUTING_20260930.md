@@ -1,9 +1,68 @@
 # PD-URIA-COM-20260930-01 — Uría Menéndez next-communication routing and preservation control
 
 **Control date:** 30 September 2026  
-**Status:** CANONICAL ROUTING CONTROL — DRAFT READY / NOT SENT  
+**Status:** SENT / PRIMARY GMAIL COPY VERIFIED / DUPLICATE CHECK PASSED  
 **Matter:** AWESWELL LIMITED / CaixaBank ORD 1859/2023-9 · LPB / Sun Park · Uría Menéndez  
 **Public/private rule:** this file contains only public professional contact data, delivery architecture and evidential boundaries. It does not publish settlement economics, privileged advice, private mailbox/provider IDs or confidential communication bodies.
+
+## Sent execution record — 30 September 2026
+
+**Control ID:** `PD-URIA-COM-20260930-01`  
+**Sender account:** `sbu001@monterecco.com`  
+**Channel:** authenticated Gmail / single controlled send  
+**Gmail-recorded timestamp:** `2026-09-30T19:44:58`  
+**Subject:** **CONFIDENCIAL | Uría / CaixaBank / LPB–Sun Park — comunicación directa, preservación y propuesta de interlocución | PD-URIA-COM-20260930-01**  
+**Native provider message/thread identifiers:** retained privately in the authenticated mailbox; deliberately not published here.
+
+### Verified distribution
+
+**To**
+- Raimon Tagliavini Sansa — `raimon.tagliavini@uria.com`
+- Núria Reyes Puente — `nuria.reyes@uria.com`
+- Uría Menéndez Canal Ético — `canaletico@uria.com`
+
+**Cc**
+- Antonio Herrera — `antonio.herrera@uria.com`
+- Salvador Sánchez-Terán — `salvador.sanchez-teran@uria.com`
+- Madrid office — `madrid@uria.com`
+- Barcelona office — `barcelona@uria.com`
+- Juan Carlos Machuca — `juancarlos.machuca@uria.com`
+- Blanca Arlabán — `blanca.arlaban@uria.com`
+- London office — `london@uria.com`
+
+**Bcc:** none.
+
+### Verified body controls
+
+The exact Sent copy was read back from Gmail and confirms:
+- Spanish canonical landing-page link present;
+- English canonical landing-page link present;
+- separate affected-party / UK-holdco / foreign-investor context present;
+- reporting-person / alertador activity stated as continuing since at least 2021 across Spain, EU-level, Germany and UK contexts;
+- SRA context stated as a **pre-identification** enquiry and expressly not as an Uría investigation or finding;
+- correction / contrary-evidence invitation present;
+- silence expressly **not** treated as admission;
+- Javier / counsel communication kept separate.
+
+### Attachment verification
+
+- Filename: `PD_URIA_SEND_READY_EVIDENCE_PACK_30SEP2026.pdf`
+- MIME: `application/pdf`
+- Gmail-reported size: **2,306,521 bytes**
+- Local send-source size: **2,306,521 bytes**
+- SHA-256: `533390f85c546c54255cfbd94654a6327c994dbec79e29c78fccb3b48e247c3c`
+- Gmail raw MIME readback contains the exact attachment filename.
+
+### Duplicate-control verification
+
+A post-send Gmail search for the exact subject/control ID located **one and only one** Sent message. No duplicate send was found.
+
+### Landing-page release evidence at send
+
+- Spanish strengthened landing page: PR **#2050**, merge SHA `43483e3a4f299645d4dfd548c24f3ada55cdc03a`; GitHub Pages run **#1866** completed successfully for that exact SHA.
+- English strengthened landing page: PR **#2051**, merge SHA `033740be57ca5c3c08a2a7a42c17d1b6145c74e9`; GitHub Pages run **#1867** completed successfully for that exact SHA.
+
+**Post-send inference rule:** delivery into Sent, receipt, routing, silence or any later acknowledgement is not a merits finding and is not treated as admission. Any bounce, acknowledgement, Ethics Channel reference, substantive reply or correction must be appended as a separate dated event.
 
 ## Objective
 
