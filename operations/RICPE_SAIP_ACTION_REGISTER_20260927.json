@@ -1,7 +1,7 @@
 {
   "control_id": "PD-RICPE-TRANSPARENCY-20260927-01",
-  "as_of": "2026-09-29",
-  "status_basis": "29 September native-source update: signed CTBG initiation communications acquired for 3929/2026, 3953/2026 and 3954/2026; 3953/3954 both state initiation on 17 September 2026; exact parent-filing bridge remains inferential.",
+  "as_of": "2026-09-30",
+  "status_basis": "30 September 2026: Canary Hacienda public-information expediente 23/2026-0930082203 formally routed to the Viceconsejería de Hacienda y Relaciones con la Unión Europea and Presidencia del Gobierno; native notice preserved privately; merits remain pending.",
   "new_filings_made_by_this_update": 2,
   "new_emails_sent_by_this_update": 0,
   "rows": [
@@ -124,9 +124,11 @@
       "id": "NEW-CONTROL-CAN",
       "authority": "Canary Hacienda",
       "reference": "REGAGE26e00083877714",
-      "status": "FILED_REGISTERED_27SEP2026",
-      "next": "Await competent routing/receipt and substantive response; preserve exact submitted PDF and receipt.",
-      "gate": "Registration is filing, not admission or merits. Reconcile competent receipt/routing before deadline calculations."
+      "status": "ROUTING_CONFIRMED_VICECONSEJERIA_AND_PRESIDENCIA_30SEP2026",
+      "next": "Confirm competent-body receipt dates/references; then monitor third-party hearing, extension or substantive access decision. Preserve any later merits decision separately and compare it against the frozen pre-outcome simulation.",
+      "gate": "Routing is not grant, document-existence finding or merits adoption. The 30 September communication does not print the parent REGAGE number; keep the exact parentage bridge source-qualified until expressly stated.",
+      "administrative_expediente": "23/2026-0930082203",
+      "source_state": "DIGESTED_PRIVATE"
     },
     {
       "id": "NEW-CONTROL-AEAT",
