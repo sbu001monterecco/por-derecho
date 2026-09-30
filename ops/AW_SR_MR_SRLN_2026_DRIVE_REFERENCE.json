@@ -2,7 +2,7 @@
   "schema": "sun-rock.canonical-drive-reference.v1",
   "reference": "^AW-SR-MR-SRLN-2026-DRIVE",
   "workspace_reference": "^AW-SR-MR-SRLN-2026",
-  "control_date": "2026-09-27",
+  "control_date": "2026-09-28",
   "status": "CANONICAL_REFERENCE",
   "scope": "AWESWELL LIMITED / Sun Rock / Montaña Roja Capital Programme + SRLN-2026",
   "reference_type": "workspace_storage_alias_not_CAEPR_identity_verification",
@@ -23,7 +23,9 @@
     "A change to the canonical folder requires an explicit owner instruction and coordinated updates to both repositories, the Drive index and saved continuity instructions.",
     "Refresh current main and the Drive index on every resumed thread. Chat memory accelerates retrieval but is not a file-version authority.",
     "Do not expand sharing, publish private documents, or treat an alias/link as permission to access or disclose them.",
-    "This control does not retroactively synchronize already-running or disconnected threads; they must reload it."
+    "This control does not retroactively synchronize already-running or disconnected threads; they must reload it.",
+    "The canonical Programme Register is the controlling blind-spot and readiness surface. Do not create a competing public tracker; public GitHub retains only continuity-safe pointers and status language.",
+    "NewCo financial history, issuer incorporation/borrowing authority, LSEG admission, provider appointments, identifiers, guarantees, security, tax incentives and Spanish transaction approvals remain evidence-gated and must not be inferred from preparatory drafts."
   ],
   "related_workspace_aliases": [
     "^AW-SR-MR",
@@ -36,5 +38,6 @@
     "^CAPITAL-PROVIDERS-50"
   ],
   "private_recipient_workspaces": "Use the same folder; personal recipient identifiers are withheld from this public projection.",
-  "website_effect": "Repository/bootstrap control only. No website navigation, sitemap, investor access or deck publication is changed."
+  "website_effect": "Repository/bootstrap control only. No website navigation, sitemap, investor access or deck publication is changed.",
+  "programme_state": "PRE-ADMISSION / PRE-ISSUANCE"
 }
