@@ -3,6 +3,25 @@
 **Control date:** 25 August 2026  
 **Status:** CONTROLLING USER-SPECIFIC OUTBOUND-EMAIL HARD STOP
 
+## 30-Sep-2026 canonical-package hard stop
+
+In addition to exact user approval, every substantive package must pass `archive/OUTBOUND_CANONICAL_REFERENCE_AND_PACKAGE_OBJECT_HARD_GATE_30SEP2026.md` before the package may be presented as send-ready or transmitted.
+
+A user instruction to “send” does **not** waive a missing `COMMUNICATION_ID`, canonical entity/proceeding check, material-proposition source map, Attachment Manifest, Link Manifest, final dual Gmail-history gate, attachment internal-version consistency, repository-parity/exception field or canonical preservation plan.
+
+The send path must refuse if the readiness record does not contain:
+
+`CANONICAL PACKAGE OBJECT = PASS`  
+`CANONICAL ENTITY CHECK = PASS`  
+`PROPOSITION SOURCE MAP = PASS`  
+`ATTACHMENT MANIFEST = PASS`  
+`LINK MANIFEST = PASS`  
+`GMAIL HISTORY GATE = PASS`  
+`ATTACHMENT INTERNAL VERSION = PASS`  
+`CANONICAL PRESERVATION PLAN = PASS`
+
+For sent PDFs/evidence bundles, exact sent bytes must be preserved in the canonical Drive matter folder before “fully verified/canonical” is claimed, or the state must remain `SENT + VERIFIED / CANONICAL PRESERVATION PENDING` until preservation is verified.
+
 ## 1. Core rule
 
 No email may be sent, resent, forwarded, corrected, followed up, scheduled or self-emailed without the user's **fresh explicit final approval of one exact outbound package**.
