@@ -1,0 +1,48 @@
+{
+  "schema": "project-sun-rock-outbound-package-manifest-v2",
+  "communication_id": "REQUIRED",
+  "controlling_version": "v1",
+  "source_cutoff": "REQUIRED_ISO_OR_DATE",
+  "message_class": "REQUIRED",
+  "audience_lane": "REQUIRED",
+  "channel_status": "REQUIRED",
+  "recipient_private_record": "PRIVATE_CUSTODY_REQUIRED",
+  "recipient_roles": [],
+  "subject": "REQUIRED",
+  "canonical_entity_check": {
+    "status": "BLOCKED_UNTIL_PASS",
+    "first_reference_forms_checked": []
+  },
+  "material_proposition_source_map": {
+    "status": "BLOCKED_UNTIL_PASS",
+    "private_or_controlled_locator": "REQUIRED"
+  },
+  "gmail_history_gate": {
+    "person_scan": "INCOMPLETE",
+    "organisation_scan": "INCOMPLETE",
+    "pagination": "TOKEN_STATUS_REQUIRED",
+    "collision_decision": "REQUIRED",
+    "result": "BLOCKED"
+  },
+  "repository_state": {
+    "github": "REQUIRED",
+    "gitlab": "REQUIRED",
+    "live_deployment": "REQUIRED",
+    "parity_or_exception": "REQUIRED"
+  },
+  "attachments": [],
+  "links": [],
+  "pass_flags": {
+    "canonical_package_object": false,
+    "canonical_entity_check": false,
+    "proposition_source_map": false,
+    "attachment_manifest": false,
+    "link_manifest": false,
+    "gmail_history_gate": false,
+    "attachment_internal_version": false,
+    "canonical_preservation_plan": false
+  },
+  "approval_status": "NOT_AUTHORISED",
+  "sent_verification": null,
+  "canonical_preservation": null
+}
