@@ -4,8 +4,8 @@
   "created": "2026-10-01T22:52:00+01:00",
   "scope": "continuity bootstrap and recovery routing; not a full evidence-vault export",
   "bootstrap_package": {
-    "alias": "PD-CONTINUITY-BOOTSTRAP-20261001",
-    "sha256": "6d355d74ec079b9f17f8c6ca279057a02ef0955c61d53fc581b66e133c1f9ad0",
+    "alias": "PD-CONTINUITY-BOOTSTRAP-20261001-r2",
+    "sha256": "60004f0ba3ea644b60091de32d0dae6a59db08ae4efbc8e54a86aa4cb5c64f8c",
     "private_location": "RESOLVE_VIA_PRIVATE_CONTINUITY_RECEIPT"
   },
   "canonical_repositories": {
