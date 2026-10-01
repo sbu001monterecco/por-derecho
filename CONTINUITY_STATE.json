@@ -83,5 +83,12 @@
     "Create fresh GitLab parity branch from current main rather than merging stale MR688 wholesale.",
     "Verify current public GitHub rendered routes after current-main deployment; repository source presence is not browser readback.",
     "Keep deletion safety HOLD until position corrections and GitLab continuity are recoverable from canonical controls."
-  ]
+  ],
+  "active_operations": {
+    "github_continuity_pr": 2080,
+    "gitlab_parity_issue": 82,
+    "continuity_watch": "ENABLED_DAILY_CONDITION_WATCH",
+    "clean_room_test": "PARTIAL_PASS_DELETION_HOLD",
+    "disaster_recovery_manifest": "governance/DISASTER_RECOVERY_MANIFEST_20261001.json"
+  }
 }
