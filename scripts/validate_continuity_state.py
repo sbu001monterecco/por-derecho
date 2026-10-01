@@ -18,6 +18,8 @@ require("archive/CONTINUITY_HANDOFF_20261001.md")
 require("governance/AUDIT_LOG_20261001.ndjson")
 require("archive/PINK_RENT_PREMISE_REJECTION_28SEP2026.md")
 require("archive/JTP_POSITION_CORRECTION_28SEP2026.md")
+require("governance/DISASTER_RECOVERY_MANIFEST_20261001.json")
+require("governance/CLEAN_ROOM_RECOVERY_TEST_20261001.md")
 
 if state.get("schema") != "PD-CONTINUITY-STATE-v1":
     raise SystemExit("unexpected continuity schema")
