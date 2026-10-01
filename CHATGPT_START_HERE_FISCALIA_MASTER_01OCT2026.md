@@ -116,3 +116,13 @@ Some binaries uploaded only into older ChatGPT turns have expired. Core principa
 ## Final instruction
 Future work must improve source completion and counsel readiness, not inflate the allegation. The dossier's value depends on distinguishing:
 `fact → source → limit → inference → legal question → requested action`.
+
+## CURRENT POSTURE — ADVERSE INSTITUTIONAL ACTOR / POSSIBLE SHIELDING EFFECT
+
+The 29 September dismissal does not establish that Ministerio Fiscal belongs to the Acosta Matos perimeter or shares any criminal purpose. The controlled posture is instead that Ministerio Fiscal is now treated as an **adverse institutional actor** whose documented handling must be tested for a possible **shielding effect** around the Acosta Matos position.
+
+That hypothesis is functional, not collective: every prosecutor and office remains subject to actor-specific proof of act/omission, capacity, available corpus, knowledge, duty, lawful explanation, causal effect and intent where legally relevant. Archive, referral, silence, adverse reasoning or institutional hierarchy do not by themselves prove coordination, corruption or criminality.
+
+Controlling public-safe control: `archive/EG745_MINISTERIO_FISCAL_ADVERSE_ACTOR_SHIELDING_EFFECT_CONTROL_01OCT2026.md`.
+
+No parallel route is assumed to suspend the Supreme Court judicial-review clock. The separate 20 September preservation/identification filing remains a distinct object and no separate substantive disposition has been located in the current controlled scan.
