@@ -31,8 +31,8 @@
   ],
   "private_preservation": {
     "vault_alias": "PD-DRIVE-CONTINUITY-20261001",
-    "bootstrap_alias": "PD-CONTINUITY-BOOTSTRAP-20261001",
-    "bootstrap_sha256": "6d355d74ec079b9f17f8c6ca279057a02ef0955c61d53fc581b66e133c1f9ad0",
+    "bootstrap_alias": "PD-CONTINUITY-BOOTSTRAP-20261001-r2",
+    "bootstrap_sha256": "60004f0ba3ea644b60091de32d0dae6a59db08ae4efbc8e54a86aa4cb5c64f8c",
     "private_provider_locators": "WITHHELD_FROM_PUBLIC_GIT"
   },
   "source_boundaries": [
