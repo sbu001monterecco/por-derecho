@@ -25,9 +25,10 @@ Start with `CONTINUITY_STATE.md` and the three governance registries.
 - Keep deletion status HOLD until a new thread can recover these positions without this chat.
 
 ## Private Drive anchors
-- Continuity vault: `1LcmSvpeIvJM_jf_5-jvK1AcXt1ZGZfKX`
-- 28-Sep position audit: `1ixpnuvacFrm7ZbYTu_QNflyJQSMw7_QR`
-- Multipath thesis: `1bQT8t2e2q44vzpxtVPuBUO4jLSiVQ59M`
-- CEXP cost attribution: `13TqQWXhTNPy5cT0wWaZpfxivNcv_22pZ`
+Exact provider locators are intentionally withheld from public Git. Use these stable aliases and resolve them through the private continuity receipt:
+- `PD-DRIVE-CONTINUITY-20261001`
+- `PD-DRIVE-POSITION-AUDIT-20260928`
+- `PD-DRIVE-MULTIPATH-THESIS`
+- `PD-DRIVE-CEXP-COST-20260928`
 
 This handoff is continuity governance, not proof of any criminal allegation or legal outcome.
