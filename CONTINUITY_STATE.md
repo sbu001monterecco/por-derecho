@@ -19,11 +19,10 @@
 - GitLab current `main` does not contain the dedicated Track A/B bridge routes. Do not infer parity.
 
 ## Drive preservation state
-A new private continuity vault was created under the existing private Source Intake:
-- Vault: `1LcmSvpeIvJM_jf_5-jvK1AcXt1ZGZfKX`
-- Governance: `1V40JfVsWbb-eiQicY3FJxlnd7yktfJZw`
-- Native originals: `1QWYrPSpEO7SBn01pAZrz2oCFEXCY_waf`
-- Email exports: `1GICUyLWeKi4FAPp_CDDwEis2l-GYrUeu`
+A new private continuity vault was created under the existing private Source Intake. Public Git records only stable aliases; exact Drive locators remain private:
+- Private vault alias: `PD-DRIVE-CONTINUITY-20261001`
+- Private governance package, native-originals lane and email-export lane were created and verified in Drive.
+- Exact private provider locators are held only in the restricted Drive receipt/package and are not published in Git.
 
 Further category-folder creation was stopped after a platform safety block. **Do not describe the full proposed hierarchy as created.**
 
