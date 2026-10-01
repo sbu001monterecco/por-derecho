@@ -1,0 +1,39 @@
+name: Validate continuity state
+on:
+  pull_request:
+    paths:
+      - 'CONTINUITY_STATE.md'
+      - 'CONTINUITY_STATE.json'
+      - 'governance/**'
+      - 'archive/CONTINUITY_HANDOFF_20261001.md'
+      - 'archive/PINK_RENT_PREMISE_REJECTION_28SEP2026.md'
+      - 'archive/JTP_POSITION_CORRECTION_28SEP2026.md'
+      - 'archive/JUAN_TOMAS_PARRILLA_CORPUS_MASTERY_AUDIT_24AUG2026.md'
+      - 'en/montelanza-molina-pink-ac-judicial-propagation/index.html'
+      - 'es/montelanza-molina-pink-propagacion-ac-judicial/index.html'
+      - 'scripts/validate_continuity_state.py'
+  push:
+    branches: [main]
+    paths:
+      - 'CONTINUITY_STATE.md'
+      - 'CONTINUITY_STATE.json'
+      - 'governance/**'
+      - 'archive/CONTINUITY_HANDOFF_20261001.md'
+      - 'archive/PINK_RENT_PREMISE_REJECTION_28SEP2026.md'
+      - 'archive/JTP_POSITION_CORRECTION_28SEP2026.md'
+      - 'archive/JUAN_TOMAS_PARRILLA_CORPUS_MASTERY_AUDIT_24AUG2026.md'
+      - 'en/montelanza-molina-pink-ac-judicial-propagation/index.html'
+      - 'es/montelanza-molina-pink-propagacion-ac-judicial/index.html'
+      - 'scripts/validate_continuity_state.py'
+permissions:
+  contents: read
+jobs:
+  continuity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate continuity controls
+        run: python scripts/validate_continuity_state.py
