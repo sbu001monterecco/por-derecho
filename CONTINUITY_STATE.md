@@ -52,3 +52,10 @@ A clean-room continuation starts with:
 6. `archive/CONTINUITY_HANDOFF_20261001.md`
 
 Strong preservation is not evidentiary completeness, adjudication, public deployment verification or legal outcome.
+
+## Active continuity operations
+- GitHub PR **#2080** is the current advanced-continuity publication/governance change and remains subject to normal CI/merge/deploy gates.
+- GitLab confidential issue **#82** records the fresh parity rebuild from current main and the blocked source-application boundary; no bypass is authorised.
+- Daily **Por Derecho Continuity Watch** is enabled as a condition watch and should notify only on material drift/failure.
+- `governance/CLEAN_ROOM_RECOVERY_TEST_20261001.md` remains **PARTIAL PASS / DELETION HOLD** until GitLab parity and live rendered readback close.
+- `governance/DISASTER_RECOVERY_MANIFEST_20261001.json` records the bootstrap recovery package; no encryption key is stored in Git.
