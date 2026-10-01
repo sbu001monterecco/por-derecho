@@ -67,10 +67,7 @@
     }
   ],
   "drive": {
-    "vault_id": "1LcmSvpeIvJM_jf_5-jvK1AcXt1ZGZfKX",
-    "governance_folder_id": "1V40JfVsWbb-eiQicY3FJxlnd7yktfJZw",
-    "bootstrap_zip_id": "1x4kn--ka0MzmVYeal5eM2aq5dX5o2QBN",
-    "bootstrap_zip_sha256": "6d355d74ec079b9f17f8c6ca279057a02ef0955c61d53fc581b66e133c1f9ad0"
+    "vault_alias": "PD-DRIVE-CONTINUITY-20261001", "governance_alias": "PD-DRIVE-CONTINUITY-GOVERNANCE-20261001", "bootstrap_zip_alias": "PD-CONTINUITY-BOOTSTRAP-20261001", "bootstrap_zip_sha256": "6d355d74ec079b9f17f8c6ca279057a02ef0955c61d53fc581b66e133c1f9ad0"
   },
   "signing": {
     "cryptographic_release_tag_created": false,
