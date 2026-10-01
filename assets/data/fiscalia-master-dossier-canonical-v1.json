@@ -1,0 +1,1146 @@
+{
+  "schema": "por-derecho.fiscalia-master-dossier.v1",
+  "dossier_id": "PD-MF-MASTER-DOSSIER-20261001-01",
+  "control_date": "2026-10-01",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "status": "SOURCE_CONTROLLED_COUNSEL_READINESS_BUILD",
+  "purpose": {
+    "es": "Reconstrucción bilingüe, actor-específica y fuente-específica de la relación entre el perímetro histórico Montelanza/Molina/Comunidad, la Administración Concursal, el Ministerio Fiscal y la posterior convergencia con CAM/Acosta Matos; incluye E.G. 745/2026 y matriz de remedios.",
+    "en": "Bilingual, actor-specific and source-specific reconstruction of the historical Montelanza/Molina/Community perimeter, the insolvency administration, the Public Prosecution Service and later convergence with CAM/Acosta Matos; includes E.G. 745/2026 and remedies matrix."
+  },
+  "governing_rules": [
+    "Identity is not conduct; relationship is not agreement; chronology is not causation; benefit is not participation.",
+    "A complaint, prosecution act or party pleading proves that an allegation was made, not that the allegation was true.",
+    "A later adoption or reuse of a proposition is a new evidential event and must be sourced separately.",
+    "Do not describe Fiscalía, the insolvency administrator or any private perimeter as a criminal organisation absent actor-specific proof of offence elements, structure, purpose and knowledge.",
+    "Distinguish whole-hotel economic integration from legal identity of LPB, CEXP, Owners' Community, Pink/Monterecco, Matkator, CAM and individual owners."
+  ],
+  "proof_scale": {
+    "DIRECT_PRIMARY": "Signed/official or native primary source directly proves the stated act/content within its scope.",
+    "CORROBORATED": "Multiple independent or source-controlled records support the proposition, subject to stated limits.",
+    "ATTRIBUTED": "Party/witness/professional allegation or position; proves attribution, not truth.",
+    "ANALYTICAL_INFERENCE": "Reasoned hypothesis drawn from sourced facts; requires independent proof before use as fact.",
+    "OPEN_GAP": "Specified source or bridge not yet located/controlled.",
+    "CONTRARY_OR_LIMITING": "Evidence that narrows, contradicts or supplies an innocent/lawful alternative."
+  },
+  "global_crosswalk": {
+    "people": [
+      {
+        "id": "PD-SP-P-0001",
+        "name": "Gil Marer"
+      },
+      {
+        "id": "PD-SP-P-0002",
+        "name": "Patricia Domínguez"
+      },
+      {
+        "id": "PD-SP-P-0003",
+        "name": "Álvaro Campanario Hernández"
+      },
+      {
+        "id": "PD-SP-P-0004",
+        "name": "Asunción Aizpurúa Sánchez"
+      },
+      {
+        "id": "PD-SP-P-0005",
+        "name": "Juan Carlos Prieto Puente"
+      },
+      {
+        "id": "PD-SP-P-0006",
+        "name": "Esteban López Noriega"
+      },
+      {
+        "id": "PD-SP-P-0007",
+        "name": "Antonio Cogolludo Rojas"
+      },
+      {
+        "id": "PD-SP-P-0008",
+        "name": "Shaila María Cogolludo Ramos"
+      },
+      {
+        "id": "PD-SP-P-0009",
+        "name": "Francisco Mario Matos Matas"
+      },
+      {
+        "id": "PD-SP-P-0010",
+        "name": "Francisco de Borja Rodríguez-Batllori Laffitte"
+      },
+      {
+        "id": "PD-SP-P-0011",
+        "name": "José Daniel Acosta Matos"
+      },
+      {
+        "id": "PD-SP-P-0012",
+        "name": "Laura Patricia Acosta Matos"
+      },
+      {
+        "id": "PD-SP-P-0058",
+        "name": "Ricardo de Mosteyrín Sampalo"
+      },
+      {
+        "id": "PD-SP-P-0103",
+        "name": "Beatriz Sánchez Carreras"
+      },
+      {
+        "id": "PD-SP-P-0104",
+        "name": "Elena Herrera Rodríguez"
+      },
+      {
+        "id": "PD-SP-P-0106",
+        "name": "Jaime Serrano-Jover González"
+      },
+      {
+        "id": "PD-SP-P-0108",
+        "name": "María José Osuna Cerezo"
+      },
+      {
+        "id": "PD-SP-P-0114",
+        "name": "Tomás Fernández de Páiz"
+      },
+      {
+        "id": "PD-SP-P-0116",
+        "name": "Teresa Peramato Martín"
+      }
+    ],
+    "dossier_local_people": [
+      {
+        "id": "PD-MF-ACTOR-URI-OMID",
+        "name": "Uri Omid",
+        "global_state": "GLOBAL_CAEPR_ID_NOT_LOCATED",
+        "rule": "Do not fabricate a PD-SP-P identifier."
+      },
+      {
+        "id": "PD-MF-ACTOR-MARTIN-COMAS",
+        "name": "María Inmaculada Martín-Comas Fernández",
+        "global_state": "GLOBAL_CAEPR_ID_NOT_LOCATED",
+        "rule": "Use only for the sourced 2014 archive act unless independently expanded."
+      },
+      {
+        "id": "PD-MF-ACTOR-RAFAEL-LIS",
+        "name": "Rafael Lis Estévez",
+        "global_state": "GLOBAL_CAEPR_ID_NOT_LOCATED",
+        "rule": "Use only for sourced DP 332/2014 judicial acts unless independently expanded."
+      },
+      {
+        "id": "PD-MF-ACTOR-CARMEN-PADILLA",
+        "name": "Carmen Dolores Padilla Nieto",
+        "global_state": "GLOBAL_CAEPR_ID_NOT_LOCATED",
+        "rule": "Procedural representative in sourced DI 248 filings; no conduct inference."
+      }
+    ],
+    "organisations": [
+      {
+        "id": "PD-SP-O-0001",
+        "name": "AWESWELL LIMITED"
+      },
+      {
+        "id": "PD-SP-O-0002",
+        "name": "Luchy Playa Blanca, S.L.U. (LPB)"
+      },
+      {
+        "id": "PD-SP-O-0004",
+        "name": "Pink Canary Services, S.L.U. / Spanish Monterecco Sun Park"
+      },
+      {
+        "id": "PD-SP-O-0005",
+        "name": "Comunidad de Propietarios Sun Park"
+      },
+      {
+        "id": "PD-SP-O-0007",
+        "name": "Construcciones Acosta Matos, S.A. (CAM)"
+      },
+      {
+        "id": "PD-SP-O-0009",
+        "name": "Amenem, S.L."
+      },
+      {
+        "id": "PD-SP-O-0010",
+        "name": "Tengolf, S.L."
+      },
+      {
+        "id": "PD-SP-O-0012",
+        "name": "Roque Prieto, S.L."
+      },
+      {
+        "id": "PD-SP-O-0014",
+        "name": "Montelanza, S.L."
+      },
+      {
+        "id": "PD-SP-O-0016",
+        "name": "Inversiones Salinetas, S.L."
+      }
+    ],
+    "institutions": [
+      {
+        "id": "PD-SP-I-0002",
+        "name": "Ministerio Fiscal / Fiscalía"
+      },
+      {
+        "id": "PD-SP-I-0030",
+        "name": "Inspección Fiscal de la Fiscalía General del Estado"
+      }
+    ],
+    "proceedings": [
+      {
+        "id": "PD-SP-R-0001",
+        "master_id": "GC-JUD-001",
+        "name": "Concurso 36/2012 — LPB"
+      },
+      {
+        "id": "PD-SP-R-0002",
+        "master_id": "GC-APP-004",
+        "name": "RPL 2523/2025 — calificación appeal"
+      },
+      {
+        "id": "PD-SP-R-0005",
+        "master_id": "GC-CRI-008",
+        "name": "DP 1901/2026"
+      },
+      {
+        "id": "PD-SP-R-0006",
+        "master_id": "GC-FIS-017",
+        "name": "DIP 2/2026"
+      },
+      {
+        "id": "PD-SP-R-0023",
+        "master_ids": [
+          "LZ-JUD-003",
+          "LZ-APP-004"
+        ],
+        "name": "DP 1132/2018 → Rollo 1010/2018 / Auto 804/2018"
+      },
+      {
+        "id": "PD-SP-R-0024",
+        "master_id": "GC-FIS-013",
+        "name": "DI 248/2018"
+      },
+      {
+        "id": "PD-SP-R-0025",
+        "master_id": "GC-FIS-014",
+        "name": "DI 113/2022"
+      },
+      {
+        "id": "PD-SP-R-0026",
+        "master_id": "GC-FIS-016",
+        "name": "DI 22/2026"
+      },
+      {
+        "id": "PD-SP-R-0034",
+        "master_id": "NAT-FIS-004",
+        "name": "E.G. 745/2026"
+      },
+      {
+        "id": null,
+        "master_id": "GC-FIS-011",
+        "name": "DI 273/2013",
+        "rule": "Master ID controlled; no PD-SP-R ID located in the reviewed global registry."
+      },
+      {
+        "id": null,
+        "master_id": "GC-FIS-012",
+        "name": "Fiscalía 39/2014",
+        "rule": "Master ID controlled; no PD-SP-R ID located in the reviewed global registry."
+      },
+      {
+        "id": null,
+        "master_id": "LZ-JUD-002",
+        "name": "DP 332/2014",
+        "rule": "Master ID controlled; no PD-SP-R ID located in the reviewed global registry."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "PD-MF-SRC-001",
+      "title": "2008 originating-perimeter / Community / AC–CAM working thesis",
+      "locator": "Drive + archive controls",
+      "status": "ANALYTICAL_CONTROL_WITH_PRIMARY_BACKING",
+      "limits": "Working thesis; actor-by-actor deed/mandate proof remains mandatory."
+    },
+    {
+      "id": "PD-MF-SRC-002",
+      "title": "2013 AC→Fiscalía source chain reproduced in AC calificación report",
+      "date": "2013-09-18",
+      "locator": "AC report 11-Feb-2019; native 2013 certified filing still requested",
+      "status": "CORROBORATED_REPRODUCTION",
+      "limits": "Reproduction proves what AC later asserted/quoted; obtain certified 2013 intake and annex set."
+    },
+    {
+      "id": "PD-MF-SRC-003",
+      "title": "DI 273/2013 Fiscalía querella",
+      "date": "2013-12-27",
+      "signatory": "PD-SP-P-0114",
+      "locator": "Querella Fiscalia 273-2013.pdf",
+      "sha256": "6531e1cd3677ddcfa600345c38fe69e463b0418b1025f27f0ee231a0817e697e",
+      "status": "DIRECT_PRIMARY"
+    },
+    {
+      "id": "PD-MF-SRC-004",
+      "title": "Gil/Patricia historical counter-complaint package",
+      "date": "2013-10-13 source email / 2014 filing family",
+      "locator": "Gmail recovered DemPen 08-13.doc + 2014 Fiscalía filings",
+      "status": "PARTY_SOURCE_RECOVERED",
+      "limits": "Allegations, not findings."
+    },
+    {
+      "id": "PD-MF-SRC-005",
+      "title": "Independent legal opinion re Pink/Sun Park allegations",
+      "date": "2014-02-05",
+      "locator": "INFORME JURIDICO PINK CANARY SERVICE SL.pdf",
+      "status": "PROFESSIONAL_OPINION",
+      "limits": "Legal opinion based on supplied facts; not institutional finding."
+    },
+    {
+      "id": "PD-MF-SRC-006",
+      "title": "Fiscalía 39/2014 archive",
+      "date": "2014-05-08",
+      "locator": "Fiscalia 39-2014.pdf",
+      "sha256": "5f1c5ef061a84a86e1706a6760d7795da6323779d1c267ef81a65a8f2308865e",
+      "status": "DIRECT_PRIMARY"
+    },
+    {
+      "id": "PD-MF-SRC-007",
+      "title": "DP 332/2014 providencia admitting private accusation",
+      "date": "2015-02-24",
+      "locator": "Recovered court-copy inventory item 25",
+      "sha256": "c916d1768dfcd60670010ad7d98ed62741c14d9e99351bb120057854eac4e743",
+      "status": "DIRECT_PRIMARY"
+    },
+    {
+      "id": "PD-MF-SRC-008",
+      "title": "DP 332/2014 providencia routing to Ministerio Fiscal",
+      "date": "2015-04-14",
+      "locator": "Recovered court-copy inventory item 30",
+      "sha256": "118588aa6cb46c193a1acc190425cb87022c7eceeea8006df1c22374a3458160",
+      "status": "DIRECT_PRIMARY"
+    },
+    {
+      "id": "PD-MF-SRC-009",
+      "title": "AC security request to Owners' Community",
+      "date": "2018-02-27",
+      "locator": "evidence/sun-park/2018-02-27-ac-security-request/",
+      "sha256": "497ecb49495badbcee155397fe70d37d090c36c4e7998308172e7a612046dbed",
+      "status": "DIRECT_PRIMARY"
+    },
+    {
+      "id": "PD-MF-SRC-010",
+      "title": "18-May-2018 Owners' Community act / voting-security context",
+      "date": "2018-05-18",
+      "locator": "Controlled ACTA / repository source index",
+      "status": "DIRECT_DOCUMENTARY_WITH_AUTHORITY_LIMITS"
+    },
+    {
+      "id": "PD-MF-SRC-011",
+      "title": "Finca 8718 Tengolf/Amenem→CAM title chain",
+      "date": "2018-05-23/2018-05-31",
+      "locator": "Registry/deed controls",
+      "status": "DIRECT_DOCUMENTARY_WITH_MAPPING_CONFLICT",
+      "limits": "Older project statement treated 8718 as separate from the 18 AP89 units; later mapping links it to unit 453. Reconcile before publication as a closed 18/18 transfer."
+    },
+    {
+      "id": "PD-MF-SRC-012",
+      "title": "DI 248/2018 complaint against AC/CAM",
+      "date": "2018-09-12",
+      "locator": "EG745_HISTORICO_D10_D19_D21_D23_D24.pdf / D12",
+      "status": "DIRECT_PARTY_FILING"
+    },
+    {
+      "id": "PD-MF-SRC-013",
+      "title": "AC calificación report",
+      "date": "2019-02-11",
+      "locator": "27. INFORME Calificación AC 11FEB2019.pdf",
+      "sha256": "e7922f4cc74fa64f991089a63021953199626d4c6fe7a5d1521e73a7b8e48353",
+      "status": "DIRECT_PRIMARY_PARTY_REPORT"
+    },
+    {
+      "id": "PD-MF-SRC-014",
+      "title": "Ministerio Fiscal calificación opinion",
+      "date": "2019-03-12",
+      "signatory": "PD-SP-P-0058",
+      "locator": "27. Fiscalía-Mercantil Sección Calificación - 12MAR2019.pdf",
+      "status": "DIRECT_PRIMARY"
+    },
+    {
+      "id": "PD-MF-SRC-015",
+      "title": "Fiscalía-requested rent expert report",
+      "date": "2019-04",
+      "locator": "Private controlled expert source; complete visual review previously performed in repository controls",
+      "status": "PRIMARY_CONTROLLED_WITH_METHOD_LIMITS"
+    },
+    {
+      "id": "PD-MF-SRC-016",
+      "title": "DI 248/2018 archive decree",
+      "date": "2019-05-07",
+      "signatory": "PD-SP-P-0104",
+      "locator": "D10 / native archive control",
+      "status": "DIRECT_PRIMARY"
+    },
+    {
+      "id": "PD-MF-SRC-017",
+      "title": "Sentencia 163/2023 calificación",
+      "date": "2023",
+      "locator": "Concurso 36/2012 calificación corpus",
+      "status": "DIRECT_JUDICIAL_PRIMARY",
+      "limits": "Mixed outcome; some AC/Fiscal propositions rejected, other adverse non-payment/non-enforcement findings retained; appeal pending/identified."
+    },
+    {
+      "id": "PD-MF-SRC-018",
+      "title": "DIP 2/2026 archive and 11-Mar correction sequence",
+      "date": "2026-03-06/2026-03-11",
+      "locator": "archive/FISCALIA_DIP2_2026_OFFICIAL_RECORD_PUBLICATION_CONTROL_25AUG2026.md",
+      "status": "VERIFIED_PRIMARY_PLUS_REGISTERED_CORRECTION"
+    },
+    {
+      "id": "PD-MF-SRC-019",
+      "title": "DP 1901/2026 14-Sep order revealing 29-Jul Fiscal archive request",
+      "date": "2026-09-14",
+      "locator": "08_EG745_DP1901.pdf + court source controls",
+      "status": "DIRECT_PRIMARY_FOR_EXISTENCE_OF_29JUL_REPORT",
+      "limits": "Signed 29-Jul Fiscal report, author, allocation, exact corpus, reasoning and visado remain OPEN_GAP."
+    },
+    {
+      "id": "PD-MF-SRC-020",
+      "title": "E.G. 745/2026 archive decree",
+      "date": "2026-08-26",
+      "signatory": "PD-SP-P-0108",
+      "locator": "OFICIO Y DECRETO EXP. 745-26.pdf (26-Aug decision copy)",
+      "status": "DIRECT_PRIMARY"
+    },
+    {
+      "id": "PD-MF-SRC-021",
+      "title": "Separate DP1901 preservation/identification communication",
+      "date": "2026-09-20",
+      "official_reference": "REGAGE26e00082033336",
+      "locator": "01_FGE_Inspeccion_DP1901_EG745_20SEP2026_FDO.pdf",
+      "status": "REGISTERED_PRIMARY_PARTY_SUBMISSION",
+      "limits": "No separate substantive disposition located in current scan."
+    },
+    {
+      "id": "PD-MF-SRC-022",
+      "title": "E.G.745 reposición principal",
+      "date": "2026-09-21",
+      "official_reference": "REGAGE26e00082068814",
+      "global_event_id": "PD-SP-EVT-0203",
+      "locator": "01_EG745_RECURSO_REPOSICION.pdf / Drive 1kk5koulInChV82VpOhzSiqFOfakuMeR6",
+      "status": "REGISTERED_PRIMARY_PARTY_SUBMISSION"
+    },
+    {
+      "id": "PD-MF-SRC-023",
+      "title": "E.G.745 analytical annex",
+      "date": "2026-09-21",
+      "locator": "02_EG745_ANEXO_ANALITICO.pdf / Drive 1KTp2CqYqIgOyDYftPmks6FLSeHQ94tbA",
+      "status": "REGISTERED_ANALYTICAL_ATTACHMENT"
+    },
+    {
+      "id": "PD-MF-SRC-024",
+      "title": "E.G.745 filing receipts 1/10–10/10",
+      "date": "2026-09-21",
+      "locator": "Drive EG745 filing package",
+      "status": "REGISTRATION_PROOF",
+      "limits": "Proves presentation/routing metadata, not substantive review of every page."
+    },
+    {
+      "id": "PD-MF-SRC-025",
+      "title": "E.G.745 reposición dismissal decree",
+      "date": "2026-09-29",
+      "notice_date": "2026-10-01",
+      "signatory": "PD-SP-P-0108",
+      "gmail_message_id": "1a0f6e3735940c64",
+      "locator": "OFICIO Y DECRETO EXP. GUB. 745-26.pdf",
+      "status": "DIRECT_PRIMARY"
+    },
+    {
+      "id": "PD-MF-SRC-026",
+      "title": "Spanish statutory framework",
+      "locator": "LJCA; RD 305/2022 Reglamento Ministerio Fiscal; Ley 39/2015; LOTC; Ley 2/2023",
+      "status": "OFFICIAL_LAW"
+    },
+    {
+      "id": "PD-MF-SRC-027",
+      "title": "European framework",
+      "locator": "EU Charter; TFEU 267; Directive (EU) 2019/1937; EC complaint guidance; PETI; OLAF; EPPO; ECHR admissibility guidance",
+      "status": "OFFICIAL_EU_COE"
+    },
+    {
+      "id": "PD-MF-SRC-028",
+      "title": "External institutional comparators",
+      "locator": "GRECO 16-Apr-2025; Asociación de Fiscales 10-Jun-2026; Lezo/Moix reporting; Stampa compensation reporting",
+      "status": "CONTEXTUAL_COMPARATOR",
+      "limits": "Not evidence of the cause or truth of events in the Sun Park/LPB matter."
+    }
+  ],
+  "events": [
+    {
+      "id": "PD-MF-HIST-EVT-2008-01",
+      "date": "2008",
+      "label": "Whole-hotel transaction / residual-owner conflict formation",
+      "proof": "CORROBORATED",
+      "sources": [
+        "PD-MF-SRC-001"
+      ],
+      "limit": "Intended 100% transaction and completed conveyance perimeter must remain separate; actor-specific obligations remain open."
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2011-01",
+      "date": "2011-02/2011-06",
+      "label": "Community governance, debt/vote and representation machinery becomes central dispute",
+      "proof": "CORROBORATED",
+      "sources": [
+        "PD-MF-SRC-001"
+      ],
+      "actors": [
+        "PD-SP-P-0003",
+        "PD-SP-P-0004",
+        "PD-SP-P-0009"
+      ],
+      "limit": "Does not establish invalidity or criminal manufacture of every Community act."
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2012-06-06",
+      "date": "2012-06-06",
+      "label": "Concurso 36/2012 declared; AC appointed",
+      "proof": "DIRECT_PRIMARY",
+      "proceedings": [
+        "PD-SP-R-0001"
+      ],
+      "actors": [
+        "PD-SP-P-0010"
+      ],
+      "limit": "This is not a Fiscalía act."
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2013-09-18",
+      "date": "2013-09-18",
+      "label": "AC complaint/communication to Fiscalía Economic Crime",
+      "proof": "CORROBORATED_REPRODUCTION",
+      "sources": [
+        "PD-MF-SRC-002",
+        "PD-MF-SRC-013"
+      ],
+      "actors": [
+        "PD-SP-P-0010"
+      ],
+      "limit": "Certified 2013 intake/annex set remains requested."
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2013-12-27",
+      "date": "2013-12-27",
+      "label": "Fiscalía files DI 273/2013 querella against Gil and Patricia",
+      "proof": "DIRECT_PRIMARY",
+      "sources": [
+        "PD-MF-SRC-003"
+      ],
+      "actors": [
+        "PD-SP-P-0114",
+        "PD-SP-P-0001",
+        "PD-SP-P-0002"
+      ],
+      "proceedings": [
+        "GC-FIS-011"
+      ]
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2014-02-05",
+      "date": "2014-02-05",
+      "label": "Independent legal opinion supports prompt criminal complaint route for counter-theory",
+      "proof": "PROFESSIONAL_OPINION",
+      "sources": [
+        "PD-MF-SRC-005"
+      ],
+      "limit": "Opinion, not institutional validation."
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2014-05-08",
+      "date": "2014-05-08",
+      "label": "Fiscalía 39/2014 archives Gil/Patricia counter-narrative",
+      "proof": "DIRECT_PRIMARY",
+      "sources": [
+        "PD-MF-SRC-006"
+      ],
+      "proceedings": [
+        "GC-FIS-012"
+      ],
+      "limit": "Different outcomes do not by themselves prove discriminatory motive."
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2015-02-24",
+      "date": "2015-02-24",
+      "label": "Roque Prieto, Amenem and Inversiones Salinetas admitted as private accusers in DP 332/2014",
+      "proof": "DIRECT_PRIMARY",
+      "sources": [
+        "PD-MF-SRC-007"
+      ],
+      "organisations": [
+        "PD-SP-O-0012",
+        "PD-SP-O-0009",
+        "PD-SP-O-0016"
+      ],
+      "proceedings": [
+        "LZ-JUD-002"
+      ],
+      "limit": "Proves entry into prosecution, not that they originated or controlled the 2013 Fiscalía decision."
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2018-02-27",
+      "date": "2018-02-27",
+      "label": "AC asks Owners' Community to convene security/access meeting",
+      "proof": "DIRECT_PRIMARY",
+      "sources": [
+        "PD-MF-SRC-009"
+      ],
+      "actors": [
+        "PD-SP-P-0010"
+      ],
+      "organisations": [
+        "PD-SP-O-0005"
+      ],
+      "limit": "Not a possession order and not CAM authority."
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2018-05-18",
+      "date": "2018-05-18",
+      "label": "Community meeting places CAM/Laura, LPB/AC and predecessor-linked AMENEM/Shaila in same governance environment",
+      "proof": "DIRECT_DOCUMENTARY_WITH_LIMITS",
+      "sources": [
+        "PD-MF-SRC-010"
+      ],
+      "actors": [
+        "PD-SP-P-0010",
+        "PD-SP-P-0012",
+        "PD-SP-P-0008"
+      ],
+      "organisations": [
+        "PD-SP-O-0007",
+        "PD-SP-O-0005",
+        "PD-SP-O-0009"
+      ]
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2018-05-23-31",
+      "date": "2018-05-23/2018-05-31",
+      "label": "Finca 8718 transfers from Tengolf/Amenem perimeter to CAM",
+      "proof": "DIRECT_DOCUMENTARY_WITH_MAPPING_CONFLICT",
+      "sources": [
+        "PD-MF-SRC-011"
+      ],
+      "organisations": [
+        "PD-SP-O-0010",
+        "PD-SP-O-0009",
+        "PD-SP-O-0007"
+      ]
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2018-06-07",
+      "date": "2018-06-07",
+      "label": "Material access/control pivot at Sun Park",
+      "proof": "MULTI_SOURCE_EVENT_WITH_CONTESTED_AUTHORITY",
+      "sources": [
+        "PD-MF-SRC-010",
+        "PD-MF-SRC-012"
+      ],
+      "limit": "Event/control shift is documented; criminal character, authority and individual participation remain proposition-specific."
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2018-09-12",
+      "date": "2018-09-12",
+      "label": "Gil/Aweswell file complaint against AC/CAM — DI 248/2018",
+      "proof": "DIRECT_PARTY_FILING",
+      "sources": [
+        "PD-MF-SRC-012"
+      ],
+      "actors": [
+        "PD-SP-P-0001",
+        "PD-SP-P-0010"
+      ],
+      "organisations": [
+        "PD-SP-O-0001",
+        "PD-SP-O-0007"
+      ],
+      "proceedings": [
+        "PD-SP-R-0024"
+      ]
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2019-02-11",
+      "date": "2019-02-11",
+      "label": "AC files calificación report and reuses/reproduces earlier criminal frame",
+      "proof": "DIRECT_PRIMARY_PARTY_REPORT",
+      "sources": [
+        "PD-MF-SRC-013"
+      ],
+      "actors": [
+        "PD-SP-P-0010"
+      ],
+      "proceedings": [
+        "PD-SP-R-0001"
+      ]
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2019-03-12",
+      "date": "2019-03-12",
+      "label": "Fiscal calificación opinion seeks culpability, severe disqualification and patrimonial consequences",
+      "proof": "DIRECT_PRIMARY",
+      "sources": [
+        "PD-MF-SRC-014"
+      ],
+      "actors": [
+        "PD-SP-P-0058"
+      ],
+      "limit": "Contains a wording anomaly referring to 'culpa del administrador concursal'; treat as drafting anomaly unless clarified, not as finding against AC."
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2019-05-07",
+      "date": "2019-05-07",
+      "label": "DI 248 archive expressly invokes Ministerio Fiscal's already-adverse calificación position against complainant",
+      "proof": "DIRECT_PRIMARY_INSTITUTIONAL_REUSE",
+      "sources": [
+        "PD-MF-SRC-016"
+      ],
+      "actors": [
+        "PD-SP-P-0104"
+      ],
+      "proceedings": [
+        "PD-SP-R-0024"
+      ],
+      "limit": "Establishes return path/reuse; does not prove corrupt motive or that calificación was sole archive reason."
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2023-CAL",
+      "date": "2023",
+      "label": "Sentencia 163/2023 adopts some adverse propositions and rejects/narrows others",
+      "proof": "DIRECT_JUDICIAL_PRIMARY",
+      "sources": [
+        "PD-MF-SRC-017"
+      ],
+      "proceedings": [
+        "PD-SP-R-0001",
+        "PD-SP-R-0002"
+      ],
+      "limit": "Appeal remains material; do not present judgment as total truth or total rejection."
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2026-03-06",
+      "date": "2026-03-06",
+      "label": "DIP 2/2026 archive uses appeal-status premise later contradicted by primary appeal record",
+      "proof": "DIRECT_PRIMARY_PLUS_CONTRARY_RECORD",
+      "sources": [
+        "PD-MF-SRC-018"
+      ],
+      "proceedings": [
+        "PD-SP-R-0006"
+      ]
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2026-03-11",
+      "date": "2026-03-11",
+      "label": "Registered correction supplies appeal-status contradiction",
+      "proof": "REGISTERED_PRIMARY_PARTY_SUBMISSION",
+      "sources": [
+        "PD-MF-SRC-018"
+      ],
+      "official_reference": "REGAGE26e00026303869",
+      "limit": "Post-correction institutional treatment remains OPEN_GAP."
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2026-07-29",
+      "date": "2026-07-29",
+      "label": "Fiscal report in DP 1901 requests archive",
+      "proof": "EXISTENCE_PROVED_BY_LATER_COURT_ACT",
+      "sources": [
+        "PD-MF-SRC-019"
+      ],
+      "proceedings": [
+        "PD-SP-R-0005"
+      ],
+      "limit": "Signed report, author, allocation, corpus, reasoning and visado are OPEN_GAP."
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2026-08-26",
+      "date": "2026-08-26",
+      "label": "Inspección Fiscal archives E.G.745 and describes original filing as confused/incoherent",
+      "proof": "DIRECT_PRIMARY",
+      "sources": [
+        "PD-MF-SRC-020"
+      ],
+      "actors": [
+        "PD-SP-P-0108"
+      ],
+      "proceedings": [
+        "PD-SP-R-0034"
+      ]
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2026-09-14",
+      "date": "2026-09-14",
+      "label": "DP1901 order frames file as judicial-prevarication matter and records 29-Jul Fiscal archive request",
+      "proof": "DIRECT_PRIMARY",
+      "sources": [
+        "PD-MF-SRC-019"
+      ],
+      "proceedings": [
+        "PD-SP-R-0005"
+      ]
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2026-09-20",
+      "date": "2026-09-20",
+      "label": "Separate DP1901 identification/preservation filing to Inspección",
+      "proof": "REGISTERED_PRIMARY_PARTY_SUBMISSION",
+      "sources": [
+        "PD-MF-SRC-021"
+      ],
+      "official_reference": "REGAGE26e00082033336",
+      "limit": "No separate substantive resolution located."
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2026-09-21",
+      "date": "2026-09-21",
+      "label": "E.G.745 reposición filed in ten linked registrations — 27 PDFs / 1,272 pages",
+      "proof": "REGISTRATION_PROVED",
+      "sources": [
+        "PD-MF-SRC-022",
+        "PD-MF-SRC-023",
+        "PD-MF-SRC-024"
+      ],
+      "official_reference": "REGAGE26e00082068814",
+      "global_event_id": "PD-SP-EVT-0203"
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2026-09-29",
+      "date": "2026-09-29",
+      "label": "Inspección dismisses reposición in full, confirms archive, exhausts administrative route and identifies Supreme Court route",
+      "proof": "DIRECT_PRIMARY",
+      "sources": [
+        "PD-MF-SRC-025"
+      ],
+      "actors": [
+        "PD-SP-P-0108"
+      ],
+      "proceedings": [
+        "PD-SP-R-0034"
+      ]
+    },
+    {
+      "id": "PD-MF-HIST-EVT-2026-10-01",
+      "date": "2026-10-01",
+      "label": "29-Sep decree received by email",
+      "proof": "DIRECT_TRANSMISSION",
+      "sources": [
+        "PD-MF-SRC-025"
+      ],
+      "gmail_message_id": "1a0f6e3735940c64"
+    }
+  ],
+  "controlling_findings": [
+    {
+      "id": "PD-MF-FIND-001",
+      "label": "Earliest verified Fiscalía involvement",
+      "finding": "The controlled record begins Fiscalía involvement in 2013, not 2012. The 2012 layer is pre-prosecution factual/insolvency history unless a 2012 Fiscal act is later produced.",
+      "grade": "DIRECT/CORROBORATED"
+    },
+    {
+      "id": "PD-MF-FIND-002",
+      "label": "AC→Fiscalía first-frame transmission",
+      "finding": "The source record directly supports an AC-originated transmission into Fiscalía and an official 27-Dec-2013 querella against Gil/Patricia. The prosecution act does not establish the truth of the AC hypotheses.",
+      "grade": "DIRECT_PRIMARY"
+    },
+    {
+      "id": "PD-MF-FIND-003",
+      "label": "Predecessor private-perimeter intersection",
+      "finding": "By 24-Feb-2015 Roque Prieto, Amenem and Inversiones Salinetas were formally admitted as private accusers in DP 332/2014, creating a documented procedural intersection with the earlier Molina/Montelanza-side perimeter.",
+      "grade": "DIRECT_PRIMARY"
+    },
+    {
+      "id": "PD-MF-FIND-004",
+      "label": "Adverse-frame feedback / institutional reuse",
+      "finding": "The 7-May-2019 DI 248 archive expressly reused the Ministerio Fiscal's adverse calificación position against the complainant when deciding a complaint against AC/CAM. This is a proved inter-file return path; improper motive remains unproved.",
+      "grade": "DIRECT_PRIMARY_INSTITUTIONAL_REUSE"
+    },
+    {
+      "id": "PD-MF-FIND-005",
+      "label": "Successor convergence, not identity merger",
+      "finding": "Documented title, Community and representation bridges support later functional convergence from parts of the predecessor perimeter into the CAM/Acosta Matos environment; they do not prove one legal merger, one uninterrupted agreement or transferred intent.",
+      "grade": "CORROBORATED_WITH_OPEN_GAPS"
+    },
+    {
+      "id": "PD-MF-FIND-006",
+      "label": "E.G.745 reframing issue",
+      "finding": "The 29-Sep decree can describe the specific files/issues raised, yet largely answers them as an impermissible merits-review request. The key judicial-review question is whether discrete Article 13 processing/practice/provenance requests were lawfully and sufficiently addressed without converting Inspection into an appellate prosecutor.",
+      "grade": "DIRECT_SOURCE_PLUS_LEGAL_ANALYSIS"
+    }
+  ],
+  "attacks_or_adverse_language": [
+    {
+      "id": "PD-MF-LANG-001",
+      "source": "PD-MF-SRC-020",
+      "wording": "redactado de forma confusa e incoherente",
+      "assessment": "Direct adverse characterization of the presentation's quality; not an accusation of dishonesty."
+    },
+    {
+      "id": "PD-MF-LANG-002",
+      "source": "PD-MF-SRC-025",
+      "wording": "numerosas/reiteradas denuncias",
+      "assessment": "Frequency framing; not itself a finding of vexatiousness."
+    },
+    {
+      "id": "PD-MF-LANG-003",
+      "source": "PD-MF-SRC-025",
+      "wording": "convertir a la Inspección Fiscal en una instancia revisora",
+      "assessment": "Substantive recharacterization of the requested exercise; compare against the express non-merits and provenance/processing requests."
+    },
+    {
+      "id": "PD-MF-LANG-004",
+      "source": "PD-MF-SRC-025",
+      "wording": "no ha puesto en ningún momento de manifiesto una concreta actuación ... irregular",
+      "assessment": "Categorical specificity rejection; must be tested against the acts/dates/files the decree itself summarizes."
+    },
+    {
+      "id": "PD-MF-LANG-005",
+      "source": "PD-MF-SRC-025",
+      "wording": "desacuerdo",
+      "assessment": "Reframes allegations as disagreement with outcomes; compare with document-handling/routing/corpus questions."
+    }
+  ],
+  "adverse_evidence_and_falsification": [
+    {
+      "id": "PD-MF-ADV-001",
+      "point": "Central 6-Feb-2012 agreement and alleged later non-payment/non-collection occurred after Gil's arrival and required independent scrutiny."
+    },
+    {
+      "id": "PD-MF-ADV-002",
+      "point": "A 2016 email thanking the AC for collaboration can support a non-collusive reading for at least part of the chronology; any stronger allegation must identify a later turning point."
+    },
+    {
+      "id": "PD-MF-ADV-003",
+      "point": "Sentencia 163/2023 rejected some AC theories but retained materially adverse findings; the appeal must be treated as live, not as if all adverse findings disappeared."
+    },
+    {
+      "id": "PD-MF-ADV-004",
+      "point": "No controlled source proves a bribe, quid pro quo, direct instruction by Montelanza/Molina to a prosecutor, or one continuous criminal agreement from 2008 to CAM."
+    },
+    {
+      "id": "PD-MF-ADV-005",
+      "point": "The 2014 counter-complaints and 2018 DI248 filings are party positions; their detail does not prove their allegations."
+    },
+    {
+      "id": "PD-MF-ADV-006",
+      "point": "Finca 8718/AP89 unit-453 mapping is internally conflicted and must be reconciled before claiming full 18/18 successor transfer."
+    },
+    {
+      "id": "PD-MF-ADV-007",
+      "point": "Different complaints may lawfully receive different treatment due to different offences, proof and jurisdiction; asymmetry is a research question until investigative intensity is reconstructed."
+    }
+  ],
+  "actions": [
+    {
+      "id": "PD-MF-ACT-001",
+      "priority": "P0",
+      "route": "TRIBUNAL_SUPREMO_CONTENCIOSO",
+      "action": "Protect and verify the interposition deadline; counsel to confirm legally effective notification date. Working protective date: 1-Dec-2026 if 1-Oct-2026 controls.",
+      "status": "OPEN",
+      "legal_basis": [
+        "LJCA arts. 12.1(b),45,46"
+      ],
+      "limit": "Working date only, not certified deadline."
+    },
+    {
+      "id": "PD-MF-ACT-002",
+      "priority": "P0",
+      "route": "TRIBUNAL_SUPREMO_CONTENCIOSO",
+      "action": "Prepare short-form interposition identifying the 29-Sep decree and attaching representation/act as required.",
+      "status": "OPEN",
+      "legal_basis": [
+        "LJCA art.45"
+      ]
+    },
+    {
+      "id": "PD-MF-ACT-003",
+      "priority": "P0",
+      "route": "TRIBUNAL_SUPREMO_CONTENCIOSO",
+      "action": "Use the court's administrative-file requisition to obtain the complete authenticated E.G.745 expediente and index.",
+      "status": "OPEN",
+      "legal_basis": [
+        "LJCA art.48"
+      ]
+    },
+    {
+      "id": "PD-MF-ACT-004",
+      "priority": "P0",
+      "route": "TRIBUNAL_SUPREMO_CONTENCIOSO",
+      "action": "Audit the court-delivered expediente against the 10 REGAGE receipts, 27 PDFs, separate 20-Sep filing, email intake and internal routing; request completion promptly if incomplete.",
+      "status": "OPEN",
+      "legal_basis": [
+        "LJCA art.55"
+      ]
+    },
+    {
+      "id": "PD-MF-ACT-005",
+      "priority": "P0",
+      "route": "TRIBUNAL_SUPREMO_CONTENCIOSO",
+      "action": "Build demand around source-to-decision matrix: Article 13 practice/processing powers vs merits-review characterization; motivation/congruence; individual response to I01-I07 and otrosíes; treatment of 20-Sep separate filing; corpus/routing/identity; factual premise errors and post-correction treatment.",
+      "status": "OPEN",
+      "legal_basis": [
+        "RD305/2022 art.13; LJCA art.56; LPAC motivation/congruence as counsel confirms"
+      ]
+    },
+    {
+      "id": "PD-MF-ACT-006",
+      "priority": "P1",
+      "route": "TRIBUNAL_SUPREMO_CONTENCIOSO",
+      "action": "Assess narrowly tailored interim evidence-preservation or other effective-relief measure only if counsel can show concrete risk that execution/non-preservation would defeat the appeal.",
+      "status": "CONDITIONAL",
+      "legal_basis": [
+        "LJCA arts.129-130"
+      ],
+      "limit": "Do not seek generic suspension merely because the challenged act is an archive decision."
+    },
+    {
+      "id": "PD-MF-ACT-007",
+      "priority": "P0",
+      "route": "FISCALIA_INSPECCION_SEPARATE",
+      "action": "Prepare a materially separate Article-13/165 communication limited to new post-archive handling facts, unresolved 20-Sep preservation filing, exact actor/act/duty records and processing-practice issues; expressly state it is not a second reposición or merits appeal.",
+      "status": "DRAFT_REQUIRED",
+      "legal_basis": [
+        "RD305/2022 arts.13,165,167"
+      ],
+      "limit": "No guarantee of reopening; avoid duplicating decided object."
+    },
+    {
+      "id": "PD-MF-ACT-008",
+      "priority": "P0",
+      "route": "FISCALIA_PRODUCTION",
+      "action": "Demand/seek through lawful channels the signed 29-Jul-2026 DP1901 Fiscal report, author, reparto/asignación, corpus, visado/instructions and remittal chain.",
+      "status": "OPEN_GAP"
+    },
+    {
+      "id": "PD-MF-ACT-009",
+      "priority": "P0",
+      "route": "SOURCE_PRODUCTION",
+      "action": "Obtain certified complete DI273/2013 and DP332/2014 files, especially certified AC 18-Sep-2013 intake, investigative acts, Fiscal history and signed final 2021 disposition/finality.",
+      "status": "OPEN_GAP"
+    },
+    {
+      "id": "PD-MF-ACT-010",
+      "priority": "P0",
+      "route": "SOURCE_PRODUCTION",
+      "action": "Obtain complete certified DI248/2018 file and build requested-vs-performed diligence matrix before alleging non-investigation.",
+      "status": "OPEN_GAP"
+    },
+    {
+      "id": "PD-MF-ACT-011",
+      "priority": "P1",
+      "route": "AIPI",
+      "action": "If facts and professional-context standing fall within Ley 2/2023, lodge a focused external-channel communication and, where justified, request available protection measures concerning post-law retaliation/current risk.",
+      "status": "CONDITIONAL",
+      "legal_basis": [
+        "Ley 2/2023 arts.16-24,43"
+      ],
+      "limit": "Does not retroactively convert 2013 acts into retaliation and does not substitute for the Supreme Court appeal."
+    },
+    {
+      "id": "PD-MF-ACT-012",
+      "priority": "P1",
+      "route": "DEFENSOR_DEL_PUEBLO",
+      "action": "Frame a systemic/process complaint around institutional handling, access, traceability and effective-administration concerns, not as a request to overturn a judicial or prosecutorial merits decision.",
+      "status": "CONDITIONAL",
+      "limit": "Complaint does not suspend legal deadlines; justice-function complaints may be routed to MF/CGPJ."
+    },
+    {
+      "id": "PD-MF-ACT-013",
+      "priority": "P0",
+      "route": "CONSTITUTIONAL_PRESERVATION",
+      "action": "In Supreme Court pleadings expressly preserve any genuinely engaged fundamental-right complaints at the earliest procedural opportunity so a later amparo route is not prejudiced.",
+      "status": "OPEN",
+      "legal_basis": [
+        "LOTC arts.43-44"
+      ],
+      "limit": "Amparo is subsidiary and not a merits appeal."
+    },
+    {
+      "id": "PD-MF-ACT-014",
+      "priority": "P1",
+      "route": "CJEU_PRELIMINARY_REFERENCE",
+      "action": "Ask counsel to identify any genuine, outcome-material EU-law question—especially whistleblower/effective-remedy scope—and, if present, invite the Supreme Court to consider Article 267 TFEU reference.",
+      "status": "CONDITIONAL",
+      "limit": "No artificial EU-law issue; Charter applies to Member States only when implementing EU law."
+    },
+    {
+      "id": "PD-MF-ACT-015",
+      "priority": "P2",
+      "route": "EU_COMMISSION",
+      "action": "If a systemic national practice can be tied to EU law, consider a Commission infringement complaint after national route planning.",
+      "status": "CONDITIONAL",
+      "limit": "Commission cannot annul the Spanish decree or award individual compensation; complaint does not suspend national deadlines."
+    },
+    {
+      "id": "PD-MF-ACT-016",
+      "priority": "P2",
+      "route": "EU_PARLIAMENT_PETI",
+      "action": "If the matter falls within EU fields and directly affects petitioner, consider a carefully redacted PETI petition focused on systemic EU-law implementation/protection issues.",
+      "status": "CONDITIONAL",
+      "limit": "Petitions are potentially public; coordinate privacy and litigation strategy."
+    },
+    {
+      "id": "PD-MF-ACT-017",
+      "priority": "P2",
+      "route": "OLAF",
+      "action": "If evidence identifies fraud/serious irregularity with potential negative impact on EU public funds, prepare a separate funds-specific referral.",
+      "status": "TRIGGER_BASED",
+      "limit": "OLAF cannot investigate a purely national fraud with no EU financial impact."
+    },
+    {
+      "id": "PD-MF-ACT-018",
+      "priority": "P2",
+      "route": "EPPO",
+      "action": "If reasonable grounds arise for an intentional PIF offence affecting EU financial interests, prepare an EPPO report using only the EU-financial-interest module.",
+      "status": "TRIGGER_BASED",
+      "limit": "EPPO is not a general forum for national institutional misconduct."
+    },
+    {
+      "id": "PD-MF-ACT-019",
+      "priority": "P2",
+      "route": "ECHR",
+      "action": "After exhaustion of effective domestic remedies, assess a distinct Convention application and four-month clock from final domestic decision.",
+      "status": "FUTURE_CONDITIONAL",
+      "limit": "Strasbourg is not a fourth-instance merits appeal."
+    },
+    {
+      "id": "PD-MF-ACT-020",
+      "priority": "P0",
+      "route": "EVIDENCE_CUSTODY",
+      "action": "Create immutable evidence escrow: native binaries, SHA-256/SHA-512, source metadata, chain of custody, notarised/certified copies where proportionate, and a source-to-proposition ledger.",
+      "status": "ONGOING"
+    },
+    {
+      "id": "PD-MF-ACT-021",
+      "priority": "P0",
+      "route": "FORENSIC_AUDIT",
+      "action": "Commission independent proposition-provenance audit of AC→Fiscalía→court/Fiscalía reuse, plus forensic accounting/payment/set-off review of Pink/rent and Community obligations.",
+      "status": "RECOMMENDED"
+    },
+    {
+      "id": "PD-MF-ACT-022",
+      "priority": "P0",
+      "route": "TITLE_RECONCILIATION",
+      "action": "Close seller→finca→deed→Registry→CAM chain for all AP89-linked units; resolve Finca 8718/unit453 and 503/908 ownership discrepancies.",
+      "status": "OPEN_GAP"
+    },
+    {
+      "id": "PD-MF-ACT-023",
+      "priority": "P1",
+      "route": "RIGHT_OF_REPLY_CORRECTION",
+      "action": "Maintain a formal right-of-reply/correction channel and invite source-backed corrections from named actors/institutions; preserve versions and dates.",
+      "status": "ONGOING"
+    },
+    {
+      "id": "PD-MF-ACT-024",
+      "priority": "P0",
+      "route": "COUNSEL_WAR_ROOM",
+      "action": "Create one counsel pack with issue matrix, chronology, proof grades, source hashes, administrative-file checklist, constitutional/EU preservation prompts and draft relief requests.",
+      "status": "RECOMMENDED"
+    }
+  ]
+}
