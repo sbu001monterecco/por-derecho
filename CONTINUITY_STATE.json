@@ -44,21 +44,21 @@
     }
   },
   "drive": {
-    "source_intake_root_id": "1AiKyLuXxDP0srafdDlghbGiyRfQXGYC5",
-    "continuity_vault_id": "1LcmSvpeIvJM_jf_5-jvK1AcXt1ZGZfKX",
+    "source_intake_alias": "PD-SOURCE-INTAKE-20260908",
+    "continuity_vault_alias": "PD-DRIVE-CONTINUITY-20261001",
     "subfolders_created": {
-      "00_GOVERNANCE": "1V40JfVsWbb-eiQicY3FJxlnd7yktfJZw",
-      "01_NATIVE_ORIGINALS": "1QWYrPSpEO7SBn01pAZrz2oCFEXCY_waf",
-      "02_EMAIL_EXPORTS": "1GICUyLWeKi4FAPp_CDDwEis2l-GYrUeu"
+      "00_GOVERNANCE": "CREATED_PRIVATE",
+      "01_NATIVE_ORIGINALS": "CREATED_PRIVATE",
+      "02_EMAIL_EXPORTS": "CREATED_PRIVATE"
     },
     "subfolder_creation_note": "Further category creation was stopped after a platform safety block; do not represent the full hierarchy as created.",
     "key_existing_objects": {
-      "multipath_thesis": "1bQT8t2e2q44vzpxtVPuBUO4jLSiVQ59M",
-      "connection_explorer": "1ylLh04OJM_05d-ma_u5vkuGsZGYBRR5J",
-      "position_continuity_audit": "1ixpnuvacFrm7ZbYTu_QNflyJQSMw7_QR",
-      "cexp_cost_attribution": "13TqQWXhTNPy5cT0wWaZpfxivNcv_22pZ",
-      "preserved_2019_nonconvalidation": "1lIO8-msyPA0fRKgMdwIScDwh1xx3jx7n",
-      "private_evidence_workbook": "1eLd4OIZsquOmT2dBVWX36oksPQI2dwGf"
+      "multipath_thesis": "PD-DRIVE-MULTIPATH-THESIS",
+      "connection_explorer": "PD-DRIVE-TRACK-EXPLORER",
+      "position_continuity_audit": "PD-DRIVE-POSITION-AUDIT-20260928",
+      "cexp_cost_attribution": "PD-DRIVE-CEXP-COST-20260928",
+      "preserved_2019_nonconvalidation": "PD-DRIVE-NONCONVALIDATION-20191024",
+      "private_evidence_workbook": "PD-DRIVE-EVIDENCE-WORKBOOK-20260826"
     }
   },
   "controlling_positions": [
