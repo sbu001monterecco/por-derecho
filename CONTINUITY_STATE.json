@@ -1,0 +1,87 @@
+{
+  "schema": "PD-CONTINUITY-STATE-v1",
+  "control_id": "PD-CONTINUITY-20261001-01",
+  "as_of": "2026-10-01T22:20:00+01:00",
+  "overall_status": "AMBER_HOLD",
+  "deletion_safety": "HOLD",
+  "canonical_roles": {
+    "github": "canonical analytical/publication source",
+    "gitlab": "independent continuity/recovery verification mirror",
+    "google_drive": "private evidential vault and preservation layer"
+  },
+  "repositories": {
+    "github": {
+      "repository": "sbu001monterecco/por-derecho",
+      "main_sha": "e756fcb862376759ed07b989233fa24b892bc40b",
+      "required_marker": "data-pd-criminal-mechanism=\"20260927\"",
+      "marker_present_en": true,
+      "marker_present_es": true,
+      "pink_position_correction_pr": {
+        "number": 2004,
+        "state": "open",
+        "draft": true,
+        "merged": false,
+        "head_sha": "91473a6f229b334a27921b525bbeea5aade53db7",
+        "control_id": "PD-PINK-POSITION-20260928-01"
+      }
+    },
+    "gitlab": {
+      "project_id": 86151898,
+      "main_sha": "f5f9a97aaa2af69b549e82529d82a4a62f05dc5a",
+      "mr_688": {
+        "state": "opened",
+        "source_sha": "42ea6fb5aeca262f0be3a504da3c2a98dfce96d2",
+        "pipeline_id": 2887504932,
+        "pipeline_status": "failed",
+        "five_point_suggestions_applied": false
+      },
+      "mr_697": {
+        "state": "opened",
+        "source_sha": "85fea09af6aac3272db39052dd46d9192886f150",
+        "title": "Draft: AC security source sequence, bilingual proof panels and DP1901 status"
+      },
+      "current_main_has_track_bridge_pages": false
+    }
+  },
+  "drive": {
+    "source_intake_root_id": "1AiKyLuXxDP0srafdDlghbGiyRfQXGYC5",
+    "continuity_vault_id": "1LcmSvpeIvJM_jf_5-jvK1AcXt1ZGZfKX",
+    "subfolders_created": {
+      "00_GOVERNANCE": "1V40JfVsWbb-eiQicY3FJxlnd7yktfJZw",
+      "01_NATIVE_ORIGINALS": "1QWYrPSpEO7SBn01pAZrz2oCFEXCY_waf",
+      "02_EMAIL_EXPORTS": "1GICUyLWeKi4FAPp_CDDwEis2l-GYrUeu"
+    },
+    "subfolder_creation_note": "Further category creation was stopped after a platform safety block; do not represent the full hierarchy as created.",
+    "key_existing_objects": {
+      "multipath_thesis": "1bQT8t2e2q44vzpxtVPuBUO4jLSiVQ59M",
+      "connection_explorer": "1ylLh04OJM_05d-ma_u5vkuGsZGYBRR5J",
+      "position_continuity_audit": "1ixpnuvacFrm7ZbYTu_QNflyJQSMw7_QR",
+      "cexp_cost_attribution": "13TqQWXhTNPy5cT0wWaZpfxivNcv_22pZ",
+      "preserved_2019_nonconvalidation": "1lIO8-msyPA0fRKgMdwIScDwh1xx3jx7n",
+      "private_evidence_workbook": "1eLd4OIZsquOmT2dBVWX36oksPQI2dwGf"
+    }
+  },
+  "controlling_positions": [
+    {
+      "id": "PD-PINK-POSITION-20260928-01",
+      "class": "PARTY_POSITION",
+      "status": "CONTROLLING_NOT_FULLY_PROPAGATED",
+      "summary": "Gil rejects 'Pink owed rent but could not afford to pay it' as the project's neutral premise; his primary position challenges authority/validity of the LPB-Pink arrangement from inception. Financial reconstruction is without admission and must preserve adverse judgments and contrary evidence.",
+      "current_gap": "Draft PR #2004 and private Drive controls preserve the correction, but GitHub main and GitLab do not contain the control ID; current merged bridge still contains affordability-shaped wording."
+    },
+    {
+      "id": "PD-JTP-POSITION-20260928-01",
+      "class": "PARTY_ALLEGATION",
+      "status": "PRIVATE_CONTROL_PRESERVED_NOT_FULLY_PROPAGATED",
+      "summary": "Gil alleges JTP had responsibility to defend LPB/Monterecco interests, failed unjustifiably to do so, and retrospectively alleges undue/coercive influence by the judge and/or insolvency administrator. Mechanism and causation are unproved and require source-specific testing.",
+      "current_gap": "Private continuity audit preserves the clarification; current GitHub JTP mastery audit does not yet contain it."
+    }
+  ],
+  "p0": [
+    "Integrate PD-PINK-POSITION-20260928-01 canonically without rewriting adverse judgments.",
+    "Propagate the JTP 28-Sep clarification into current controls with allegation/finding boundary.",
+    "Create fresh GitLab parity branch from current main rather than merging stale MR688 wholesale.",
+    "Verify current public GitHub rendered routes after current-main deployment; repository source presence is not browser readback.",
+    "Keep deletion safety HOLD until position corrections and GitLab continuity are recoverable from canonical controls."
+  ]
+}
