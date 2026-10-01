@@ -1,0 +1,3 @@
+{"timestamp":"2026-10-01T23:31:00+01:00","event":"continuity_governance_created","control":"PD-CONTINUITY-STATE-20261001-01","github_base":"e756fcb862376759ed07b989233fa24b892bc40b","gitlab_main":"67d3a24cab8c43e386b774e313dc58cb580cf2e3","result":"candidate controls created on protected-workflow branch"}
+{"timestamp":"2026-10-01T23:31:00+01:00","event":"position_drift_gate","control":"PD-PINK-POSITION-20260928-01","result":"P0 propagation remains open; do not mark full green or deletion-safe"}
+{"timestamp":"2026-10-01T23:31:00+01:00","event":"cross_host_parity_gate","gitlab_mr":688,"result":"open; stale/failed state must be reconciled rather than wholesale merged"}

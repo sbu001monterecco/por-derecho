@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "registry_id": "PD-SOURCE-OBJECT-REGISTRY-20261001-01",
+  "objects": [
+    {
+      "source_id": "PD-DRIVE-JV1260-PINK-MULTIPATH-20260927",
+      "title": "JV1260_PINK_MULTIPATH_RECIPROCAL_THESIS_27SEP2026.md",
+      "class": "PRIVATE_DERIVATIVE_ANALYSIS",
+      "drive_file_id": "1bQT8t2e2q44vzpxtVPuBUO4jLSiVQ59M",
+      "custody": "Google Drive / Pink Canary workspace",
+      "sha256_status": "not_recorded_in_this_control",
+      "independent_corroboration": false
+    },
+    {
+      "source_id": "PD-DRIVE-TRACKAB-EXPLORER-20260927",
+      "title": "Track_A_Track_B_Connection_Explorer_27SEP2026.html",
+      "class": "PRIVATE_DERIVATIVE_VISUAL",
+      "drive_file_id": "1ylLh04OJM_05d-ma_u5vkuGsZGYBRR5J",
+      "custody": "Google Drive / Pink Canary workspace",
+      "sha256_status": "not_recorded_in_this_control",
+      "independent_corroboration": false
+    },
+    {
+      "source_id": "PD-GH-PINK-POSITION-20260928",
+      "title": "PINK_RENT_PREMISE_REJECTION_28SEP2026.md",
+      "class": "PARTY_POSITION_CONTROL",
+      "repository": "sbu001monterecco/por-derecho",
+      "location": "GitHub PR #2004",
+      "status": "open_draft_at_control_creation",
+      "independent_corroboration": false
+    },
+    {
+      "source_id": "PD-GH-JV1260-PINK-MECHANISM-20260927",
+      "title": "Bilingual five-point criminal-first mechanism",
+      "class": "PUBLIC_SAFE_ANALYTICAL_DERIVATIVE",
+      "repository": "sbu001monterecco/por-derecho",
+      "merge_sha": "7e521e74063d6ca47ac2edc23c4736e725ac24c3",
+      "status": "merged",
+      "independent_corroboration": false
+    }
+  ],
+  "duplicate_rule": "Objects with the same underlying native source must be linked as aliases/derivatives and must not be counted as independent confirmations."
+}

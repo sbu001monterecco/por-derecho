@@ -1,0 +1,39 @@
+{
+  "release_control": "PD-RELEASE-MANIFEST-20261001-01",
+  "created": "2026-10-01",
+  "release_state": "continuity_governance_candidate_not_publication_claim",
+  "github": {
+    "creation_base": "e756fcb862376759ed07b989233fa24b892bc40b",
+    "canonical_repo": "sbu001monterecco/por-derecho"
+  },
+  "gitlab": {
+    "creation_main": "67d3a24cab8c43e386b774e313dc58cb580cf2e3",
+    "project_id": 86151898,
+    "parity_state": "open",
+    "legacy_mr": 688
+  },
+  "required_controls": [
+    "CONTINUITY_STATE.md",
+    "CONTINUITY_STATE.json",
+    "governance/POSITION_REGISTRY.json",
+    "governance/SOURCE_OBJECT_REGISTRY.json",
+    "governance/AUDIT_LOG.ndjson",
+    "governance/DELETION_SAFETY.md"
+  ],
+  "release_gates": {
+    "source_readback": true,
+    "github_checks": "required_before_merge",
+    "gitlab_independent_verification": "required_before_full_green",
+    "deployment": "separate",
+    "live_readback": "separate",
+    "evidence_completeness": "separate"
+  },
+  "full_green_requires": [
+    "controlling corrections propagated",
+    "GitHub/GitLab substantive parity verified",
+    "approved artifact built without weakening controls",
+    "deployment provider success",
+    "independent live readback",
+    "deletion-safety checklist passes"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "control_id": "PD-CONTINUITY-STATE-20261001-01",
+  "effective_date": "2026-10-01",
+  "schema_version": 1,
+  "roles": {
+    "github": "canonical analytical/publication source",
+    "gitlab": "independent continuity/recovery and deployment-verification mirror",
+    "google_drive": "private evidence vault",
+    "public_sites": "derivatives requiring separate deployment and readback verification"
+  },
+  "creation_state": {
+    "github_main": "e756fcb862376759ed07b989233fa24b892bc40b",
+    "gitlab_main": "67d3a24cab8c43e386b774e313dc58cb580cf2e3",
+    "github_pr_2002": {
+      "state": "merged",
+      "merge_sha": "7e521e74063d6ca47ac2edc23c4736e725ac24c3"
+    },
+    "github_pr_2004": {
+      "state": "open_draft",
+      "head_sha": "91473a6f229b334a27921b525bbeea5aade53db7"
+    },
+    "gitlab_mr_688": {
+      "state": "open",
+      "head_sha": "42ea6fb5aeca262f0be3a504da3c2a98dfce96d2",
+      "pipeline_id": 2887504932,
+      "pipeline_status": "failed"
+    }
+  },
+  "controlling_positions": [
+    {
+      "id": "PD-PINK-POSITION-20260928-01",
+      "status": "authorised_correction_preserved_not_fully_propagated",
+      "risk": "P0"
+    }
+  ],
+  "drive": {
+    "pink_workspace_folder_id": "10u79S3tMZ8bNzVr1Iln5ycsuJPcWlgfi",
+    "multipath_thesis_file_id": "1bQT8t2e2q44vzpxtVPuBUO4jLSiVQ59M",
+    "connection_explorer_file_id": "1ylLh04OJM_05d-ma_u5vkuGsZGYBRR5J"
+  },
+  "gates": {
+    "github_preservation": "green",
+    "drive_preservation": "green",
+    "position_propagation": "amber_red",
+    "gitlab_parity": "red",
+    "live_readback": "amber",
+    "deletion_safety": "hold"
+  },
+  "rules": [
+    "separate source fact, party position, analytical inference and adjudicated/official status",
+    "do not count mirrors as independent corroboration",
+    "do not rewrite originals",
+    "preserve contrary evidence",
+    "merge, deployment and live readback are separate states",
+    "do not weaken CI or provenance controls to obtain green",
+    "do not mark deletion-safe while controlling corrections or parity remain unresolved"
+  ]
+}
