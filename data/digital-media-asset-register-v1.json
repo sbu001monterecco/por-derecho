@@ -95,7 +95,7 @@
       "current_locked_campaign_master": "PD-DMA-0014",
       "current_locked_campaign_master_custody": "Google Drive / Por Derecho — Visual Assets / PD-DMA-CH-MRSD-ALERTADOR-FINAL-20261001.png",
       "current_locked_campaign_master_sha256": "668231a990e136034b31ab031e80a5b895a1287a93fcf4b68f667df88f76535c",
-      "current_locked_campaign_master_rights_state": "LOCKED_IN_CUSTODY__FILM_STILL_PUBLICATION_RIGHTS_GATE_OPEN"
+      "current_locked_campaign_master_rights_state": "WRITTEN_CLEARANCE_REQUEST_SENT__RESPONSE_PENDING"
     },
     {
       "family_id": "PD-DMA-FAM-MASTER-MYND-001",
@@ -327,7 +327,21 @@
       "sources": [
         "PD-DMA-0014-LOCK^"
       ],
-      "correction_control": "Exact creative master is locked by SHA-256. Public article uses the company press photograph plus a textual Mrs. Doubtfire metaphor; the copyrighted film still is not embedded publicly while the rights gate remains open."
+      "correction_control": "Exact creative master is locked by SHA-256. Public article uses the company press photograph plus a textual Mrs. Doubtfire metaphor; the copyrighted film still is not embedded publicly while the rights gate remains open.",
+      "rights_clearance": {
+        "state": "WRITTEN_CLEARANCE_REQUEST_SENT__RESPONSE_PENDING",
+        "requested_on": "2026-10-01",
+        "licensor": "Album Archivo Fotográfico, S.L.",
+        "image_reference": "alb298220",
+        "requested_scope": [
+          "editorial website",
+          "LinkedIn editorial post",
+          "critical/satirical sensitive-topic context",
+          "crop/resize/composite treatment"
+        ],
+        "receipt": "PD-DMA-0014-RIGHTS-REQUEST^",
+        "publication_hold": true
+      }
     }
   ],
   "files": [
@@ -804,7 +818,19 @@
       "source_width_px": 1122,
       "source_height_px": 1402,
       "custody_path": "Google Drive / Por Derecho — Visual Assets / PD-DMA-CH-MRSD-ALERTADOR-FINAL-20261001.png",
-      "rights_state": "FILM_STILL_PUBLICATION_RIGHTS_GATE_OPEN"
+      "rights_state": "WRITTEN_CLEARANCE_REQUEST_SENT__RESPONSE_PENDING"
+    },
+    {
+      "reference": "PD-DMA-0014-RIGHTS-REQUEST^",
+      "logical_asset": "PD-DMA-0014",
+      "role": "RIGHTS_CLEARANCE_REQUEST_RECEIPT",
+      "repository_path": "archive/PD_DMA_0014_RIGHTS_CLEARANCE_REQUEST_01OCT2026.md",
+      "mime": "text/markdown",
+      "repository_mirror": true,
+      "publication_status": "CONTROL_RECORD",
+      "drive_custody_path": "Google Drive / Por Derecho — Visual Assets / PD-DMA-0014_RIGHTS_CLEARANCE_REQUEST_20261001.md",
+      "drive_receipt_sha256": "2296f074f1067cea73053ad65054975782766a4356facb30b5129ac2f9441db2",
+      "rights_state": "WRITTEN_CLEARANCE_REQUEST_SENT__RESPONSE_PENDING"
     }
   ],
   "public_routes": {
