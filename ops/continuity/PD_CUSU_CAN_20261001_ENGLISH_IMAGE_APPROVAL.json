@@ -1,0 +1,36 @@
+{
+  "control_id": "PD-CUSU-CAN-20261001-EN-HERO-APPROVED-01",
+  "parent_control_id": "PD-CUSU-CAN-20261001-01",
+  "date": "2026-10-01",
+  "status": "APPROVED_ENGLISH_MASTER_LOCKED",
+  "canonical_master": {
+    "filename": "PD_CUSU_CAN_20261001_HERO_ENGLISH_APPROVED_MASTER.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 2027629,
+    "sha256": "257eab63fca4ce5fa5a92b78e229fdaff7fdbe26baaf4cf05d619f593c9fe641",
+    "drive_file_id": "11X4tfP0JwuEcnM5e5JRerKGBQWR7ewkr"
+  },
+  "public_derivative": {
+    "filename": "PD_CUSU_CAN_20261001_HERO_ENGLISH_APPROVED_PUBLIC_1254.jpg",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 463382,
+    "sha256": "ceb414163788f10788046dd010c12de1019419ece77f4dd25fe6954c46666edc",
+    "derived_from_master": true,
+    "visual_changes": false
+  },
+  "bindings": {
+    "english_page": true,
+    "english_social_preview": true,
+    "spanish_page_unchanged": true
+  },
+  "supersedes": [
+    "PD_CUSU_CAN_20261001_HERO_ENGLISH_960.jpg"
+  ],
+  "replacement_requires_explicit_approval": true
+}
