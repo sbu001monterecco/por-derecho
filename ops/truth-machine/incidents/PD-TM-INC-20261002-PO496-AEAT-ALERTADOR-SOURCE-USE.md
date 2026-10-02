@@ -110,7 +110,7 @@ Six Meeting Point registrations are preserved and later presenter-supplied porta
 - **P0-02 — Current full Javier Sixto demanda draft:** not yet located.
 - **P0-03 — Primary order actually granting article-36 expansion:** counsel reports the grant; only the earlier hearing-stage order is currently recovered.
 - **P0-04 — Expedited completeness crosswalk:** compare the administrative file against all known material source families.
-- **P0-05 — Native 15-Jan-2024 inspector report:** direct file/page lock required before relying on quoted “inexactitudes” / “denominador común” language.
+- **P0-05 — 15-Jan-2024 inspector report: CLOSED for content/quote control.** A reproduced official copy is preserved in Fiscalía AN Annex V6, Doc. 2, annex pp. 9–20, including the exact “ciertas inexactitudes en cuanto a fechas” / “denominador común” passage and the electronic-signature block. The standalone AEAT-native binary remains desirable for comparison with the AN expediente, but is no longer a P0 content blocker.
 
 ### P1 — high-value
 
@@ -169,7 +169,7 @@ Do not reconstruct this matter from chat memory.
 - 🟠 **Final counsel package:** administrative expediente still missing.
 - 🟠 **Final counsel package:** current demanda draft not yet located.
 - 🟠 **Art. 36 procedural state:** primary grant order not yet locked.
-- 🟠 **15-Jan-2024 quotation use:** native page lock pending.
+- 🟢 **15-Jan-2024 quotation/source-copy use:** page/quote/signature block locked from the preserved Annex V6 copy; 🟠 standalone AEAT-native binary remains desirable for expediente comparison.
 - 🔴 **External send / filing:** not authorised.
 
 ## 12. Private custody boundary
