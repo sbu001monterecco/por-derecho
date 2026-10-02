@@ -22,7 +22,11 @@
     ],
     "event_store": "PRIVATE_APPEND_ONLY_JSONL",
     "integrity": "SHA256_CONTENT_HASH_PLUS_PREVIOUS_EVENT_HASH_CHAIN",
-    "atomic_state_outputs": ["workspace.json", "state.json", "handoff.md"],
+    "atomic_state_outputs": [
+      "workspace.json",
+      "state.json",
+      "handoff.md"
+    ],
     "public_summary_gate": "EXPLICIT_PUBLIC_SUMMARY_OBJECT_REQUIRED",
     "public_repo_vault_refusal": true,
     "tests": "tests/test_workspace_persistence.py",
@@ -118,7 +122,10 @@
     "CONNECTED_SOURCE_RESTRICTED",
     "PUBLICATION_REVIEW_REQUIRED"
   ],
-  "public_auto_sync_allowed": ["PUBLIC_SOURCE_SAFE", "PUBLIC_DERIVED_SAFE"],
+  "public_auto_sync_allowed": [
+    "PUBLIC_SOURCE_SAFE",
+    "PUBLIC_DERIVED_SAFE"
+  ],
   "recommended_workspace_files": [
     "workspace.json",
     "events.jsonl",
@@ -150,7 +157,10 @@
     "method": "USER_AUTHORISED_CHAT_EXPORT_IMPORT",
     "runtime_command": "import-chatgpt",
     "raw_destination": "PRIVATE_ONLY",
-    "default_roles": ["user", "assistant"],
+    "default_roles": [
+      "user",
+      "assistant"
+    ],
     "system_tool_default": "EXCLUDED_UNLESS_EXPLICITLY_REQUESTED",
     "workspace_assignment": "UNASSIGNED_REVIEW_REQUIRED",
     "required_reconciliation": "CURRENT_REPOSITORY_TRUTH_SUPERSEDES_STALE_CHAT_STATE",
@@ -170,5 +180,31 @@
     "GOOGLE_DRIVE_ALREADY_MOUNTED_AS_RUNTIME_FILESYSTEM",
     "HISTORICAL_EXPORT_ALREADY_IMPORTED",
     "OPENAI_API_CLIENT_ALREADY_CONFIGURED"
-  ]
+  ],
+  "checkpoint_enforcement": {
+    "contract": "PD-CONT-DIGEST-001/20261002",
+    "effective_when": "PRESENT_ON_HOST_MAIN_AND_VALIDATED",
+    "scope": "All in-scope substantive workspaces, current and future; no unrelated-task context import",
+    "new_checkpoint_requires": [
+      "action_ledger",
+      "coverage",
+      "host_availability"
+    ],
+    "historical_events": "Preserved unchanged; no retroactive assertion that old checkpoints satisfied the new contract",
+    "public_export": "Explicit recorded authority bound to exact summary hash; known private locator rejection; substantive review remains necessary",
+    "host_status": "Per-checkpoint observations; unavailable or unchecked hosts remain explicit; no inferred parity or universal hook"
+  },
+  "proposal_reconciliation": {
+    "observed_source_prs": [
+      2080,
+      2082
+    ],
+    "selected": "Reuse existing PD-AWP/PD-WCH/CWR/digest/ECP and workspace register; enforce action ledger, custody/privacy and bounded state in existing runtime",
+    "not_imported": [
+      "competing writable root CONTINUITY_STATE schemas",
+      "raw private locators",
+      "unrelated case-specific position/reader deltas"
+    ],
+    "unique_work": "Source proposals remain preserved for separate disposition; neither PR is treated as fully integrated or closed"
+  }
 }

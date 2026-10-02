@@ -1,14 +1,24 @@
 # Active workspace continuity index
 
-**Current workspace:** `PD-WS-20260902-0001`  
-**Current continuation pointer:** `PD-WCH-20260903-GCCIV003-SRC-003`  
-**Status:** `DELETION_SAFE_WITH_OPEN_WORK`
+**Current workspace:** `PD-WS-20261002-0001`  
+**Current continuation pointer:** `UK_PRIVATE_PROSECUTION_2026_CURRENT`  
+**Status:** `IN_PROGRESS` — private workspace HOLD / NOT FILE-READY.
 
-**Current checkpoint:** the historic-proceedings / justice-authority / Fiscalía / canonical-search / interconnectivity reintegration remains immutably released through PR **#1373** at production merge `efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c`, tree `1e2295ccc94d3e020b2ef0db59924d439de2aa93`, deployed by GitHub Pages run **33697357002 / #1420** and live-browser verified in Chromium run **33700567926**. The targeted GC-CIV-003 primary-source recovery is separately released through PR **#1377**, merge `ddebffb07f4750ab4ab19017a3aef5a195c45f70`, tree `a724378b7e0935aef691d9c941d0261ecd9c1b10`, exact-SHA Pages run **33708727660 / #1424**, and hosted Chromium run **33709044855**, all successful. The primary 19-Dec-2017 Auto, that Auto's own finality, the positive 18-Jan-2018 CAM citation/requerimiento recorded by the 23-Jan LAJ order, and CAM's primary opposition/appearance filing are now closed by primary source. The actual 19-Feb result and standalone 5-Mar archive decree remain source gaps. Deprecated duplicate `LZ-CIV-050` remains removed and live-negative-verified. Global historic-docket backfill remains explicitly `OPEN_NOT_CERTIFIED_COMPLETE`.
+**Previous dated continuation:** `PD-WCH-20260903-GCCIV003-SRC-003`; its historical `DELETION_SAFE_WITH_OPEN_WORK` receipt applies only to that recorded release.
+
+**Historical 3 September checkpoint:** the historic-proceedings / justice-authority / Fiscalía / canonical-search / interconnectivity reintegration remains immutably released through PR **#1373** at production merge `efbb1032b0c5e21ca892b3a9db17b3f7b4073e6c`, tree `1e2295ccc94d3e020b2ef0db59924d439de2aa93`, deployed by GitHub Pages run **33697357002 / #1420** and live-browser verified in Chromium run **33700567926**. The targeted GC-CIV-003 primary-source recovery is separately released through PR **#1377**, merge `ddebffb07f4750ab4ab19017a3aef5a195c45f70`, tree `a724378b7e0935aef691d9c941d0261ecd9c1b10`, exact-SHA Pages run **33708727660 / #1424**, and hosted Chromium run **33709044855**, all successful. The primary 19-Dec-2017 Auto, that Auto's own finality, the positive 18-Jan-2018 CAM citation/requerimiento recorded by the 23-Jan LAJ order, and CAM's primary opposition/appearance filing are now closed by primary source. The actual 19-Feb result and standalone 5-Mar archive decree remain source gaps. Deprecated duplicate `LZ-CIV-050` remains removed and live-negative-verified. Global historic-docket backfill remains explicitly `OPEN_NOT_CERTIFIED_COMPLETE`.
 
 **Pointer semantics:** most recently checkpointed/default workspace; **not exclusive** and not a lock over concurrent workspaces.
 
 A ChatGPT thread is a temporary working surface. A `PD-WS-*` workspace is the durable continuity object. More than one substantive workspace may be active or preserved at the same time.
+
+## Current selection update — 2 October 2026
+
+Select the user’s existing workspace by topic/ID; the default is not exclusive. `PD-WS-20261002-0001` resolves the separate private UK workspace through opaque alias `UK_PRIVATE_PROSECUTION_2026_CURRENT` and [its neutral continuity pointer](archive/UK_PRIVATE_PROSECUTION_2026_CONTINUITY_CONTROL_01OCT2026.md). It remains HOLD / NOT FILE-READY. No private evidence locator or strategy is published here.
+
+E.G.745 remains a continuation of `PD-WS-20260902-0001`; start with `CHATGPT_START_HERE_FISCALIA_MASTER_01OCT2026.md` and the authorised private current-source manifest. Earlier checkpoints below remain dated history and must not override newer source-proved state. Capital workspace `PD-WS-20260927-0001` and every other registered row remain independently selectable.
+
+Every new material checkpoint uses the existing runtime with `action_ledger`, bounded `coverage` and explicit `host_availability`; see `examples/workspace-checkpoint.example.json`. A public export additionally requires recorded approval of its exact summary hash. Private custody/readback and remote deployment remain separately verified states. There is no native all-thread capture hook.
 
 ## Active and recently preserved workspaces
 

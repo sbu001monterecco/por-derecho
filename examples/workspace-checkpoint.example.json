@@ -1,7 +1,7 @@
 {
   "summary": "Material workspace checkpoint",
   "visibility_class": "PRIVATE_WORKSPACE",
-  "status": "DELETION_SAFE_WITH_OPEN_WORK",
+  "status": "IN_PROGRESS",
   "objective": "Continue the substantive workspace from durable state rather than chat memory.",
   "completed": [
     "Record completed repository, evidence, artifact and publication-state events with exact references."
@@ -36,5 +36,35 @@
   },
   "tool_failures": [],
   "public_summary": null,
-  "notes": "Replace this example content. Do not place credentials, raw Gmail/Drive data, privileged material or unredacted personal data in a public checkpoint."
+  "notes": "Replace this example content. Do not place credentials, raw Gmail/Drive data, privileged material or unredacted personal data in a public checkpoint.",
+  "action_ledger": {
+    "chronology_and_proceedings_actions": [],
+    "completed_actions": [],
+    "connected_source_actions": [],
+    "do_not_infer": [],
+    "open_actions": [],
+    "publication_and_live_actions": [],
+    "registration_and_identity_actions": [],
+    "relationship_interlink_actions": [],
+    "repository_digest_actions": [],
+    "next_thread_bootstrap": "Replace with the existing workspace ID, canonical handoff and first bounded source checks."
+  },
+  "coverage": {
+    "scope": "EXAMPLE ONLY — replace with actual bounded inspection scope",
+    "status": "NOT_REVIEWED",
+    "inspected": [],
+    "remaining": [
+      "Record actual inspected and uninspected scope before claiming completion."
+    ],
+    "observed_at_utc": "2026-10-02T00:00:00Z"
+  },
+  "host_availability": [
+    {
+      "host_id": "CANONICAL_PRIVATE_CUSTODIAN",
+      "status": "NOT_CHECKED",
+      "checked_at_utc": "2026-10-02T00:00:00Z",
+      "boundary": "Example only; no access or preservation has been verified."
+    }
+  ],
+  "public_summary_approval": null
 }

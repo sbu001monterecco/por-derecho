@@ -784,3 +784,11 @@ Apply `PD-CHATGPT-UCF-INTAKE-20260925-01` from `.github/governance/CHATGPT_UNITA
 - Before using GitLab as a control source, read `ops/CHATGPT_CROSS_HOST_CONTROL_MANIFEST.json`; current GitHub/GitLab bootstrap blobs are not presumed identical.
 - For Community fees/debt/vote cases, apply both `PD-COMMUNITY-DEBT-ROLE-REVERSAL-20260925-01` and `PD-COMMUNITY-COURT-COMPLETENESS-20260925-01`.
 
+
+
+
+## Universal material-workspace checkpoint enforcement — 2 October 2026
+
+For every in-scope substantive matter, recover its existing ID in `data/workspace-register-v1.json` and current subject/private-custody controls; checkpoint material source, decision, correction, artifact and failure changes during work. Apply the existing PD-AWP/PD-WCH/CWR/digest/ECP stack, not competing continuity registers. New runtime checkpoints require `action_ledger`, bounded `coverage` and dated `host_availability`; public-summary export additionally requires recorded approval bound to the exact summary hash. See `docs/WORKSPACE_PERSISTENCE_RUNBOOK.md` and `examples/workspace-checkpoint.example.json`. Preserve historical event bytes, contrary evidence, supersession and dependency-review links.
+
+Public registers carry neutral workspace aliases and approved derivatives; private evidence, provider locators, privileged advice, UK strategy and unsent drafts remain private. Governance success is not filing, legal readiness, corpus completeness, host parity or deployment. The rule covers registered and newly recognised in-scope workspaces while preserving the unrelated-task boundary; no unavailable universal ChatGPT hook is claimed.

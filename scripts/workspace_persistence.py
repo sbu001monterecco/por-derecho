@@ -25,6 +25,18 @@ ROOT = Path(__file__).resolve().parents[1]
 WORKSPACE_RE = re.compile(r"^PD-WS-(\d{8})-(\d{4})$")
 EVENT_TYPE_RE = re.compile(r"^[A-Z][A-Z0-9_]{1,63}$")
 ZERO_HASH = "0" * 64
+CHECKPOINT_CONTRACT = "PD-CONT-DIGEST-001/20261002"
+LEDGER_LIST_FIELDS = {
+    "repository_digest_actions", "connected_source_actions",
+    "registration_and_identity_actions", "relationship_interlink_actions",
+    "chronology_and_proceedings_actions", "publication_and_live_actions",
+    "completed_actions", "open_actions", "do_not_infer",
+}
+HOST_STATES = {"AVAILABLE", "READ_ONLY", "UNAVAILABLE", "NOT_CHECKED"}
+PUBLIC_SUMMARY_FIELDS = {
+    "title", "state", "completed", "open_tasks", "next_actions",
+    "do_not_infer", "source_refs", "artifact_refs", "public_routes",
+}
 
 VISIBILITY_CLASSES = {
     "PUBLIC_SOURCE_SAFE",
@@ -70,6 +82,89 @@ REQUIRED_GITIGNORE_MARKERS = [
 
 class PersistenceError(RuntimeError):
     """Safe user-facing persistence error."""
+
+
+def require_text(value: Any, field: str) -> None:
+    if not isinstance(value, str) or not value.strip():
+        raise PersistenceError(f"{field} must be a non-empty string.")
+
+
+def require_string_list(value: Any, field: str) -> None:
+    if not isinstance(value, list) or any(not isinstance(x, str) or not x.strip() for x in value):
+        raise PersistenceError(f"{field} must be a list of non-empty strings.")
+
+
+def require_timestamp(value: Any, field: str) -> None:
+    require_text(value, field)
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        if parsed.tzinfo is None:
+            raise ValueError("timezone missing")
+    except ValueError as exc:
+        raise PersistenceError(f"{field} must be an ISO timestamp with timezone.") from exc
+
+
+def validate_checkpoint_contract(payload: dict[str, Any]) -> None:
+    """Validate new checkpoints without retroactively rewriting historical events."""
+    ledger = payload.get("action_ledger")
+    if not isinstance(ledger, dict):
+        raise PersistenceError("New checkpoints require an explicit action_ledger.")
+    required = LEDGER_LIST_FIELDS | {"next_thread_bootstrap"}
+    if set(ledger) != required:
+        raise PersistenceError("action_ledger must contain exactly the ten PD-CONT-DIGEST-001 fields.")
+    for key in LEDGER_LIST_FIELDS:
+        require_string_list(ledger[key], f"action_ledger.{key}")
+    require_text(ledger["next_thread_bootstrap"], "action_ledger.next_thread_bootstrap")
+    coverage = payload.get("coverage")
+    if not isinstance(coverage, dict):
+        raise PersistenceError("New checkpoints require bounded coverage.")
+    if set(coverage) != {"scope", "status", "inspected", "remaining", "observed_at_utc"}:
+        raise PersistenceError("coverage fields must be scope/status/inspected/remaining/observed_at_utc.")
+    require_text(coverage["scope"], "coverage.scope")
+    require_timestamp(coverage["observed_at_utc"], "coverage.observed_at_utc")
+    for key in ("inspected", "remaining"):
+        require_string_list(coverage[key], f"coverage.{key}")
+    if coverage["status"] not in {"BOUNDED_COMPLETE", "PARTIAL", "UNAVAILABLE", "NOT_REVIEWED"}:
+        raise PersistenceError("Invalid bounded coverage status.")
+    if coverage["status"] == "BOUNDED_COMPLETE" and (coverage["remaining"] or not coverage["inspected"]):
+        raise PersistenceError("BOUNDED_COMPLETE needs inspected scope and no remaining items within that scope.")
+    hosts = payload.get("host_availability")
+    if not isinstance(hosts, list) or not hosts:
+        raise PersistenceError("New checkpoints require explicit host_availability observations.")
+    seen = set()
+    for host in hosts:
+        if not isinstance(host, dict) or set(host) != {"host_id", "status", "checked_at_utc", "boundary"}:
+            raise PersistenceError("Each host observation needs host_id/status/checked_at_utc/boundary.")
+        require_text(host["host_id"], "host_id")
+        require_text(host["boundary"], "host boundary")
+        require_timestamp(host["checked_at_utc"], "host checked_at_utc")
+        if host["host_id"] in seen or host["status"] not in HOST_STATES:
+            raise PersistenceError("Host observations must have unique identities and valid states.")
+        seen.add(host["host_id"])
+
+
+def validate_public_summary(summary: Any, approval: Any) -> None:
+    if not isinstance(summary, dict):
+        raise PersistenceError("No public_summary object is approved in state.json; refusing export.")
+    if not summary or set(summary) - PUBLIC_SUMMARY_FIELDS:
+        raise PersistenceError("Public summary contains unsupported fields.")
+    for key, value in summary.items():
+        if key in {"title", "state"}:
+            require_text(value, f"public_summary.{key}")
+        else:
+            require_string_list(value, f"public_summary.{key}")
+    text = json.dumps(summary, ensure_ascii=False)
+    # This detects common disclosure patterns, not every possible private fact.
+    if re.search(r"(?:drive|docs|mail)\.google\.com|gmail[_ -]?message[_ -]?id|drive[_ -]?file[_ -]?id|authorization\s*:\s*bearer|[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}", text, re.I):
+        raise PersistenceError("Public summary contains a private locator, address or credential pattern.")
+    if not isinstance(approval, dict) or set(approval) != {"status", "scope", "authority_ref", "approved_at_utc", "summary_sha256"}:
+        raise PersistenceError("Public export requires an explicit exact-summary approval record.")
+    if approval["status"] != "APPROVED" or approval["scope"] != "EXACT_PUBLIC_SUMMARY":
+        raise PersistenceError("Public-summary approval is absent, revoked or out of scope.")
+    require_text(approval["authority_ref"], "public approval authority_ref")
+    require_timestamp(approval["approved_at_utc"], "public approval approved_at_utc")
+    if approval["summary_sha256"] != sha256_bytes(canonical_bytes(summary)):
+        raise PersistenceError("Public-summary approval hash does not match current summary bytes.")
 
 
 def utc_now() -> str:
@@ -406,6 +501,11 @@ def merge_state(base: dict[str, Any], payload: dict[str, Any]) -> dict[str, Any]
         "artifact_refs",
         "source_refs",
         "public_summary",
+        "public_summary_approval",
+        "action_ledger",
+        "coverage",
+        "host_availability",
+        "checkpoint_contract",
         "repository_state",
         "thread_aliases",
         "publication_state",
@@ -416,6 +516,8 @@ def merge_state(base: dict[str, Any], payload: dict[str, Any]) -> dict[str, Any]
     if unknown:
         raise PersistenceError(f"Unknown checkpoint payload fields: {', '.join(unknown)}")
     result = dict(base)
+    if "public_summary" in payload and payload["public_summary"] != base.get("public_summary") and "public_summary_approval" not in payload:
+        result["public_summary_approval"] = None
     for key in allowed:
         if key in payload:
             result[key] = payload[key]
@@ -482,6 +584,9 @@ def render_handoff(state: dict[str, Any]) -> str:
     lines += section("Source references", state.get("source_refs", []))
     lines += section("Thread/session aliases", state.get("thread_aliases", []))
     lines += section("Tool failures affecting continuity", state.get("tool_failures", []))
+    for key in ("action_ledger", "coverage", "host_availability"):
+        if key in state:
+            lines += [f"## {key}", "", "```json", json.dumps(state[key], ensure_ascii=False, indent=2), "```", ""]
     lines += [
         "## Resume instruction",
         "",
@@ -645,6 +750,8 @@ def cmd_checkpoint(args: argparse.Namespace) -> dict[str, Any]:
     vault = resolve_vault(args.vault, create=False)
     wdir, metadata = require_workspace(vault, args.workspace_id)
     payload = parse_json_argument(args.payload_json, args.payload)
+    validate_checkpoint_contract(payload)
+    payload["checkpoint_contract"] = CHECKPOINT_CONTRACT
     if args.status:
         payload["status"] = args.status
     if args.objective:
@@ -747,6 +854,16 @@ def validate_workspace(wdir: Path) -> list[str]:
         errors.append(f"{workspace_id}: state last_event_hash mismatch")
     if not events:
         errors.append(f"{workspace_id}: event chain is empty")
+    if state.get("checkpoint_contract") == CHECKPOINT_CONTRACT:
+        try:
+            validate_checkpoint_contract(state)
+        except PersistenceError as exc:
+            errors.append(f"{workspace_id}: {exc}")
+        checkpoints = [event for event in events if event.get("event_type") == "WORKSPACE_CHECKPOINT"]
+        latest = checkpoints[-1].get("details", {}) if checkpoints else {}
+        for key in ("checkpoint_contract", "action_ledger", "coverage", "host_availability"):
+            if state.get(key) != latest.get(key):
+                errors.append(f"{workspace_id}: {key} differs from the last checkpoint event")
     return errors
 
 
@@ -998,11 +1115,27 @@ def cmd_public_summary(args: argparse.Namespace) -> dict[str, Any]:
     vault = resolve_vault(args.vault, create=False)
     wdir, _ = require_workspace(vault, args.workspace_id)
     state = load_json(wdir / "state.json")
+    errors = validate_workspace(wdir)
+    if errors:
+        raise PersistenceError("Workspace validation failed before public export: " + "; ".join(errors))
+    # Approvals must be part of the append-only checkpoint record, not injected
+    # directly into its derived state.json view.
+    replay = {"public_summary": None, "public_summary_approval": None}
+    for event in read_events(wdir / "events.jsonl"):
+        if event.get("event_type") != "WORKSPACE_CHECKPOINT":
+            continue
+        detail = event.get("details", {})
+        if "public_summary" in detail:
+            if detail["public_summary"] != replay["public_summary"] and "public_summary_approval" not in detail:
+                replay["public_summary_approval"] = None
+            replay["public_summary"] = detail["public_summary"]
+        if "public_summary_approval" in detail:
+            replay["public_summary_approval"] = detail["public_summary_approval"]
+    for key, value in replay.items():
+        if state.get(key) != value:
+            raise PersistenceError(f"Public export {key} is not backed by the checkpoint event chain.")
     summary = state.get("public_summary")
-    if not isinstance(summary, dict):
-        raise PersistenceError(
-            "No public_summary object is approved in state.json; refusing export."
-        )
+    validate_public_summary(summary, state.get("public_summary_approval"))
     output = Path(args.output).expanduser().resolve()
     if is_within(output, vault):
         raise PersistenceError("Public summary output should not be written inside the private vault.")
@@ -1012,6 +1145,7 @@ def cmd_public_summary(args: argparse.Namespace) -> dict[str, Any]:
         "generated_at_utc": utc_now(),
         "source_event_hash": state.get("last_event_hash"),
         "summary": summary,
+        "approval_summary_sha256": state["public_summary_approval"]["summary_sha256"],
         "boundary": "This is an expressly approved public-safe derivative, not the raw workspace event stream.",
     }
     atomic_write_json(output, export, mode=0o644)
