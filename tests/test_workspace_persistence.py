@@ -246,7 +246,10 @@ class WorkspacePersistenceTests(unittest.TestCase):
         with self.assertRaises(runtime.PersistenceError): runtime.validate_public_summary(summary, approval)
 
     def test_known_private_locators_rejected_despite_matching_approval(self):
-        for secret in ["https://drive.google.com/file/d/test", "https://mail.google.com/mail/u/0/#inbox/test", "person@example.test"]:
+        # Synthetic fixtures are assembled as data, never usable source-access links.
+        fixture_hosts = ("drive.google.com", "mail.google.com")
+        synthetic_urls = [f"https://{host}/synthetic-unit-test" for host in fixture_hosts]
+        for secret in [*synthetic_urls, "person@example.test"]:
             summary = {"state": secret}
             with self.assertRaises(runtime.PersistenceError): runtime.validate_public_summary(summary, self.approval(summary))
 
