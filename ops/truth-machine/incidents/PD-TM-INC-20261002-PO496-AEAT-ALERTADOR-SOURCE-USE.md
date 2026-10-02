@@ -177,3 +177,8 @@ Do not reconstruct this matter from chat memory.
 A separate private Google Drive incident workspace contains the full provider/source locators, independent copies of core evidence, the detailed gap-closure plan and the preservation/traceability audit. Those private locators are intentionally not reproduced here.
 
 **One history, multiple surfaces. Public Git is a retrieval/control projection; private Drive is evidence/action custody.**
+
+
+## 13. Scan-coverage boundary
+
+This incident was built from broad connected Gmail discovery across the SBU001, Gil and Patricia accounts, targeted source-ID/date/proceeding searches, Google Drive source retrieval and the current GitHub/GitLab controls. Several broad mailbox discovery queries reached a 100-result page limit with further-page tokens; Drive retrieval is relevance/index based rather than a certified recursive byte census. Therefore **“not located” never means “does not exist.”** The consequential known source families were pursued directly, but universal all-mailbox/all-Drive exhaustion is not certified. Exact comparison to any expired chat-only upload would require that exact binary to be supplied again if it becomes material.
