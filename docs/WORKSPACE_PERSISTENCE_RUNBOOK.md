@@ -320,3 +320,19 @@ Still open:
 - scheduled private backups;
 - authorised historical export import and workspace clustering; and
 - the OpenAI API request-path workbench required for genuine automatic capture of every interaction made through that client.
+
+
+
+## Runtime enforcement update — 2 October 2026
+
+The existing PD-AWP/PD-WCH/PD-CWR/PD-CONT-DIGEST/ECP stack applies to every in-scope substantive workspace, including existing and future matters. Reuse `data/workspace-register-v1.json`; recover an existing identity before allocating another. The current index is a selector, not a mutex. Keep unrelated tasks separated under the existing scope gate.
+
+New `checkpoint` calls require the ten-field `action_ledger`, a bounded `coverage` object and dated `host_availability` observations supplied for that checkpoint. Use `examples/workspace-checkpoint.example.json`; empty action lists mean none recorded, not that a complete scan occurred. Record unavailable/unchecked sources and remaining scope explicitly. The runtime validates structure and integrity, not the truth or sufficiency of the recorded actions. Historical event chains remain unchanged and are not retroactively certified under the new contract.
+
+Private native sources, provider locators, privileged material and unsent strategy stay private. `public-summary` now requires a recorded authority reference with `APPROVED` status, exact-summary scope, approval time and the SHA-256 of the canonical summary JSON. Changing the summary invalidates an inherited approval. Known private URL/address/credential patterns and unsupported fields are rejected; content review remains necessary because no pattern detector proves complete privacy. Approval evidence is recorded, not independently authenticated by the runtime. A public-summary export does not publish, send or file it.
+
+Use existing source IDs, typed supersession and dependency-review queues. Source capture, substantive digestion, graph registration, contrary-evidence review, repository integration, private custody and live publication are separate states. Exact copies are not independent corroboration. Neither host absence nor a bounded failed search proves non-existence.
+
+The overlap in unmerged #2080/#2082 is resolved for this implementation by retaining the deployed stack and existing workspace identity authority. Their useful custody, supersession and state-separation principles are applied here; competing root state schemas, raw private locators and unrelated case-position changes are not imported. The proposals remain preserved for separate disposition, not falsely marked wholly integrated. The MF reader/validator repair remains its own scoped dependency; this change does not bypass that substantive test. UK public continuity is a neutral pointer; private assessment and all filings remain separately controlled.
+
+This is active-turn agentic checkpointing. It does not create a universal ChatGPT thread/turn/deletion hook, automatic historical-chat enumeration, a live Drive filesystem adapter, cross-host parity or permission for external contact. Apply changes through the existing single integration lane and protected checks; record actual host availability and deployed/readback state.
