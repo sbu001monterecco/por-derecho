@@ -205,6 +205,16 @@ Every investor-facing risk section, Programme Admission Particulars, private inv
 
 The disclosure should explain both **protection and risk**. It should not market rule-of-law rights as credit support, and it should not describe the existence of historic litigation as proof that Spanish courts or authorities will act improperly in the future.
 
+
+## 7B. Historic-dispute spillover and anti-retaliation risk-control rule
+
+Historic disputes, whistleblower/regulatory activity and formal allegations concerning prior Canary Islands matters may create a **spillover risk scenario** for a later Spanish investment through shared counterparties, advisers, records, institutions, public-information channels or procedural history. The control response is preventive and evidential: ring-fence the new ProjectCo and cash; preserve independent governance and counsel; maintain complete administrative and permit records; preserve deadlines and service; use objective comparator and conflict/recusal evidence where legally relevant; maintain contract-specific forum/enforcement planning; and preserve institutional aftercare and evidence channels.
+
+This is a risk-control scenario, not a prediction that any Spanish or Canary authority, court, prosecutor, professional or counterparty will retaliate or act unlawfully. Historic allegations remain allegations unless and until established by a competent process. Country-level rule-of-law or justice-system observations must likewise not be used as proof of any case-specific allegation.
+
+Foreign-investor evidence is part of that defensive architecture because it preserves provenance, ownership, capital-flow and cross-border nexus. It does **not** export mandatory Spanish disputes out of Spain. For future arbitrable private-law contracts, the Group may choose an English-court or arbitration forum where legally valid and may plan service, interim measures, recognition and enforcement accordingly; mandatory Spanish public-law, insolvency, corporate and in-rem matters remain governed by the applicable Spanish rules.
+
+
 ## 8. Historic legal matters — continuity without retroactivity
 
 Existing Sun Park / MYND Yaiza and other historic matters remain governed by their own contemporaneous facts, legal persons, claim ownership, funding history, procedural posture, jurisdiction and applicable law.
