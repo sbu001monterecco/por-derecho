@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 61,
   "owner": "2085:bb35fcba447e5c782bd020e928982b4b476a22b1",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 2085,
   "base_sha": "16a569dd062b9318a51c29caf76c86723fb0ad56",
   "candidate_sha": "bb35fcba447e5c782bd020e928982b4b476a22b1",
@@ -3053,6 +3053,32 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 2085,
+      "candidate_sha": "bb35fcba447e5c782bd020e928982b4b476a22b1",
+      "at": "2026-10-02T07:54:55.715402Z",
+      "merge_sha": "7a6fdc3e4a1f38bf48de3949e95fb7ad4c5a4258",
+      "pages_run_id": 36980974971,
+      "exact_matches": [
+        {
+          "path": "en/index.html",
+          "sha256": "8d9fa089ac9091b1514f619d03afcb7e58d504556e5734d01ca3aab53cf2a7e5",
+          "bytes": 233566
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "eb5b8ef20cd79de1364b6187a8f0dda996febbd5c66af6b8dc847f715f08bbbd",
+          "bytes": 243168
+        },
+        {
+          "path": "ops/AUTOMATIC_WORKSPACE_PERSISTENCE_V1.json",
+          "sha256": "f9ebcd200bb4730054315dcc5493451f9479952393f4cad218794b60002939e8",
+          "bytes": 9103
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -3095,7 +3121,34 @@
         "pages_run_id": 36980974971,
         "merge_sha": "7a6fdc3e4a1f38bf48de3949e95fb7ad4c5a4258"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-10-02T07:54:55.715350Z",
+      "evidence": {
+        "merge_sha": "7a6fdc3e4a1f38bf48de3949e95fb7ad4c5a4258",
+        "pages_run_id": 36980974971,
+        "exact_matches": [
+          {
+            "path": "en/index.html",
+            "sha256": "8d9fa089ac9091b1514f619d03afcb7e58d504556e5734d01ca3aab53cf2a7e5",
+            "bytes": 233566
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "eb5b8ef20cd79de1364b6187a8f0dda996febbd5c66af6b8dc847f715f08bbbd",
+            "bytes": 243168
+          },
+          {
+            "path": "ops/AUTOMATIC_WORKSPACE_PERSISTENCE_V1.json",
+            "sha256": "f9ebcd200bb4730054315dcc5493451f9479952393f4cad218794b60002939e8",
+            "bytes": 9103
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-10-02T07:54:53.391716Z"
+  "updated_at": "2026-10-02T07:54:55.715350Z"
 }
