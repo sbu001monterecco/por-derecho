@@ -308,7 +308,7 @@ Where the repository supports a serious allegation, it may be stated firmly **as
 
 Treat every outbound communication as a versioned evidential object.
 
-Maintain internally where practical:
+Maintain internally as a mandatory fail-closed control under `governance/CANONICAL_OUTBOUND_COMMUNICATION_OBJECT_GATE_01OCT2026.md`:
 
 - `COMMUNICATION_ID`;
 - recipient / role;
@@ -358,6 +358,10 @@ Preparation uses draft operations only.
 Where a Gmail draft has been reviewed and approved, prefer sending that **exact reviewed draft by its draft ID** rather than reconstructing the email through a new send action.
 
 If anything material changes after approval—To, Cc, Bcc, subject, body, attachment, attachment version or link—return to the approval stage.
+
+## 12A. Canonical Outbound Communication Object hard gate
+
+Before a material email may be described as ready, create and validate the single COCO object required by `governance/CANONICAL_OUTBOUND_COMMUNICATION_OBJECT_GATE_01OCT2026.md`. The COCO joins canonical-name resolution, dual Gmail-history completeness, Attachment Manifest, Link Manifest, applicable dual-public-mirror controls, draft readback, authorization, sent readback and register backfill. Any missing applicable field is BLOCKED. A well-sourced draft is not a canonical outbound package merely because its evidence is strong.
 
 ## 13. Required pre-send readiness record
 
