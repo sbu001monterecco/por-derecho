@@ -110,7 +110,7 @@ Six Meeting Point registrations are preserved and later presenter-supplied porta
 - **P0-02 — Current full Javier Sixto demanda draft:** not yet located.
 - **P0-03 — Primary order actually granting article-36 expansion:** counsel reports the grant; only the earlier hearing-stage order is currently recovered.
 - **P0-04 — Expedited completeness crosswalk:** compare the administrative file against all known material source families.
-- **P0-05 — Native 15-Jan-2024 inspector report:** direct file/page lock required before relying on quoted “inexactitudes” / “denominador común” language.
+- **P0-05 — 15-Jan-2024 inspector report: CLOSED for content/quote control.** A reproduced official copy is preserved in Fiscalía AN Annex V6, Doc. 2, annex pp. 9–20, including the exact “ciertas inexactitudes en cuanto a fechas” / “denominador común” passage and the electronic-signature block. The standalone AEAT-native binary remains desirable for comparison with the AN expediente, but is no longer a P0 content blocker.
 
 ### P1 — high-value
 
@@ -169,7 +169,7 @@ Do not reconstruct this matter from chat memory.
 - 🟠 **Final counsel package:** administrative expediente still missing.
 - 🟠 **Final counsel package:** current demanda draft not yet located.
 - 🟠 **Art. 36 procedural state:** primary grant order not yet locked.
-- 🟠 **15-Jan-2024 quotation use:** native page lock pending.
+- 🟢 **15-Jan-2024 quotation/source-copy use:** page/quote/signature block locked from the preserved Annex V6 copy; 🟠 standalone AEAT-native binary remains desirable for expediente comparison.
 - 🔴 **External send / filing:** not authorised.
 
 ## 12. Private custody boundary
@@ -177,3 +177,8 @@ Do not reconstruct this matter from chat memory.
 A separate private Google Drive incident workspace contains the full provider/source locators, independent copies of core evidence, the detailed gap-closure plan and the preservation/traceability audit. Those private locators are intentionally not reproduced here.
 
 **One history, multiple surfaces. Public Git is a retrieval/control projection; private Drive is evidence/action custody.**
+
+
+## 13. Scan-coverage boundary
+
+This incident was built from broad connected Gmail discovery across the SBU001, Gil and Patricia accounts, targeted source-ID/date/proceeding searches, Google Drive source retrieval and the current GitHub/GitLab controls. Several broad mailbox discovery queries reached a 100-result page limit with further-page tokens; Drive retrieval is relevance/index based rather than a certified recursive byte census. Therefore **“not located” never means “does not exist.”** The consequential known source families were pursued directly, but universal all-mailbox/all-Drive exhaustion is not certified. Exact comparison to any expired chat-only upload would require that exact binary to be supplied again if it becomes material.
