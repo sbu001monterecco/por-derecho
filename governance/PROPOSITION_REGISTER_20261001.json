@@ -1,0 +1,69 @@
+{
+  "schema": "PD-PROPOSITION-REGISTRY-v1",
+  "as_of": "2026-10-01T22:20:00+01:00",
+  "non_exhaustive": true,
+  "propositions": [
+    {
+      "id": "PD-PROP-AP89-18",
+      "class": "ADJUDICATED_SOURCE_STATUS",
+      "summary": "AP 89/2014 produced an adverse result concerning the bounded 18-unit claimant perimeter; it is not a whole-hotel title/authority adjudication.",
+      "status": "SOURCE_CONTROLLED",
+      "contrary_or_limit": "Exact scope, later use, finality/enforcement and complete certified file remain separately controlled."
+    },
+    {
+      "id": "PD-PROP-MULTIPATH",
+      "class": "ANALYTICAL_INFERENCE",
+      "summary": "Track A and Track B are connected through multiple governance, possession, cost, access, institutional-reuse and later-benefit paths; connection does not itself prove common criminal intent.",
+      "status": "CONTROLLED_ANALYSIS"
+    },
+    {
+      "id": "PD-PROP-DI248-RETURN",
+      "class": "SOURCE_FACT",
+      "summary": "The 7-May-2019 DI248 archive decree invokes the Ministerio Fiscal's already-adopted adverse calificacion position concerning the complainant.",
+      "status": "DOCUMENTED_COPY_REVIEW",
+      "limit": "The decree gives other reasons; reuse is not itself proof of corruption or personal coordination."
+    },
+    {
+      "id": "PD-PROP-AC-NOTICE-20180608",
+      "class": "SOURCE_FACT",
+      "summary": "A controlled contemporaneous counsel account supports AC notice of the 7-Jun takeover allegations by 8-Jun-2018.",
+      "status": "SOURCE_CONTROLLED_COUNSEL_REPORT",
+      "limit": "Notice of allegations is not proof that every allegation was true or that the judge received the same material."
+    },
+    {
+      "id": "PD-PROP-MERCANTIL-RESPONSE",
+      "class": "SOURCE_FACT",
+      "summary": "Mercantil No.1 responded to the Arrecife exhorto; Arrecife recorded receipt on 11-Jun-2018 and incorporated it on 13-Jun-2018.",
+      "status": "DOCUMENTED_EXISTENCE_CONTENT_MISSING",
+      "limit": "Its missing text/annexes cannot be invented or presumed to address the later takeover."
+    },
+    {
+      "id": "PD-PROP-PINK-CURRENT",
+      "class": "PARTY_POSITION",
+      "summary": "Gil rejects an affordability-first rent premise and challenges authority/validity of the LPB-Pink arrangement from inception.",
+      "status": "CONTROLLING_POSITION_NOT_FULLY_PROPAGATED",
+      "limit": "This does not itself overturn the signed instrument or adverse judgments."
+    },
+    {
+      "id": "PD-PROP-JTP-CURRENT",
+      "class": "PARTY_ALLEGATION",
+      "summary": "Gil alleges unjustified JTP non-defence and retrospectively alleges undue/coercive influence by judge and/or AC.",
+      "status": "PRIVATE_CONTROL_PRESERVED",
+      "limit": "Mechanism, communication, coercion, intent and causation are not established."
+    },
+    {
+      "id": "PD-PROP-FUNDED-EXIT",
+      "class": "PARTY_POSITION_WITH_DOCUMENTARY_SUPPORT",
+      "summary": "The project position is that the aggregate ONA/Article176 exit was materially developed/closure-capable and was frustrated by the 7-Jun control event and lack/denial of effective protection.",
+      "status": "ATTRIBUTED_CAUSATION",
+      "limit": "Not every financing route was equally mature; non-completion and conditions remain material."
+    },
+    {
+      "id": "PD-PROP-2019-NONCONVALIDATION",
+      "class": "JUDICIAL_SOURCE_STATUS",
+      "summary": "The 24-Oct-2019 order is treated as a corrective/non-convalidation decision whose downstream implementation must be traced.",
+      "status": "DOCUMENTED",
+      "limit": "A corrective decision is counterevidence and does not itself resolve later possession/title/accounting/implementation."
+    }
+  ]
+}
