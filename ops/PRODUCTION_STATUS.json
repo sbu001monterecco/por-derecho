@@ -1,24 +1,24 @@
 {
   "schema": "por-derecho.operational-truth.production-status.v2",
   "record_type": "OBSERVED_GITHUB_PAGES_DEPLOYMENT",
-  "observed_at": "2026-09-19T22:01:42Z",
+  "observed_at": "2026-10-03T21:14:21.590572Z",
   "production_repository": "sbu001monterecco/por-derecho",
   "production_branch": "main",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
-  "served_sha": "1e96f0d97323ba4c10ad0b7341d28017d6fa26dd",
-  "source_tree_sha": "78384988b8840479dd194ed559e1cc7990a25a3e",
+  "served_sha": "f0d472567ad71a4140ae8ab3eb7a408aa8aa9e5f",
+  "source_tree_sha": "04b1dc5672249e68373c95b7021805e6bc8135a2",
   "deployment": {
     "platform": "GitHub Pages",
     "workflow_name": "pages build and deployment",
     "workflow_path": "dynamic/pages/pages-build-deployment",
-    "workflow_run_id": 35469702999,
-    "run_number": 1630,
+    "workflow_run_id": 36988139876,
+    "run_number": 1890,
     "event": "dynamic",
     "status": "completed",
     "conclusion": "success",
-    "created_at": "2026-09-19T21:12:20Z",
-    "completed_at": "2026-09-19T21:13:29Z",
-    "head_sha": "1e96f0d97323ba4c10ad0b7341d28017d6fa26dd"
+    "created_at": "2026-10-02T09:09:17Z",
+    "completed_at": "2026-10-02T09:10:43Z",
+    "head_sha": "f0d472567ad71a4140ae8ab3eb7a408aa8aa9e5f"
   },
   "verification": {
     "state": "DEPLOYED_BUILD_SUCCESS",

@@ -19,6 +19,7 @@ on:
       - 'assets/data/fti-meeting-point-canary-spain-asset-transaction-register-v1.json'
       - 'assets/data/fti-meeting-point-canary-spain-asset-transaction-monitor-schema-v1.json'
       - 'scripts/monitor_fti_meeting_point_asset_transactions.py'
+      - 'scripts/test_fti_monitor_normalization.py'
       - 'scripts/validate_fti_meeting_point_asset_transaction_monitor.py'
       - '.github/workflows/monitor-fti-meeting-point-asset-transactions.yml'
   push:
@@ -28,6 +29,7 @@ on:
       - 'assets/data/fti-meeting-point-canary-spain-asset-transaction-register-v1.json'
       - 'assets/data/fti-meeting-point-canary-spain-asset-transaction-monitor-schema-v1.json'
       - 'scripts/monitor_fti_meeting_point_asset_transactions.py'
+      - 'scripts/test_fti_monitor_normalization.py'
       - 'scripts/validate_fti_meeting_point_asset_transaction_monitor.py'
       - '.github/workflows/monitor-fti-meeting-point-asset-transactions.yml'
 
@@ -55,6 +57,9 @@ jobs:
 
       - name: Validate monitor configuration and safeguards
         run: python scripts/validate_fti_meeting_point_asset_transaction_monitor.py
+
+      - name: Test empty-source rejection and sticky-review preservation
+        run: python scripts/test_fti_monitor_normalization.py
 
       - name: Restore preceding public-source fingerprint state
         if: github.event_name != 'pull_request'
@@ -129,6 +134,8 @@ jobs:
               print("::error::Monitor produced no public-safe report")
               raise SystemExit(1)
           report = json.loads(report_path.read_text(encoding="utf-8"))
+          dimensions = report.get("status_dimensions", {})
+          print(f"Retrieval execution: {dimensions.get('execution', 'UNKNOWN')}; source review: {dimensions.get('source_review', 'UNKNOWN')}; overall readiness: {dimensions.get('overall_rag', 'UNKNOWN')}")
           required = report.get("required_source_failures", [])
           pending = int(report.get("counts", {}).get("pending_changes", 0))
           if required:

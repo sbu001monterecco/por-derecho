@@ -5,7 +5,7 @@
   "append_only": true,
   "coverage": "Seeded with the controlling rollback anchor and principal observed releases from 24–26 August 2026; appended with the 19 September 2026 current-main observation. Earlier release backfill remains open.",
   "ordering": "Records are chronological by effective_at. Existing records must not be silently removed or rewritten; corrections are appended below and identify the affected release_id. current_at_observation records that a release was current at its own observation time, so multiple historical entries may retain true; latest_observation_release_id identifies the latest observation.",
-  "latest_observation_release_id": "operational-truth-observation-20260919-main-1e96f0d",
+  "latest_observation_release_id": "operational-truth-observation-20261003-main-f0d4725",
   "releases": [
     {
       "release_id": "five-actor-preservation-guard-20260824-pr922",
@@ -175,6 +175,25 @@
       "live_verification_job_id": null,
       "scope": "Observed the 19 September current-main deployment after PR #1668. The release itself includes a public continuity module; this ledger entry is an operational observation, not a new specialist verification.",
       "limits": "GitHub recorded a successful Pages deployment for the stated SHA. No exact route-content readback is recorded in this operational refresh; it is not proof of a public route's byte content, any case allegation, legal status, guilt, or GitLab recovery/parity."
+    },
+    {
+      "release_id": "operational-truth-observation-20261003-main-f0d4725",
+      "source_sha": "f0d472567ad71a4140ae8ab3eb7a408aa8aa9e5f",
+      "source_tree_sha": "04b1dc5672249e68373c95b7021805e6bc8135a2",
+      "pull_request": 2088,
+      "state": "DEPLOYED_BUILD_SUCCESS",
+      "website_content_changed": true,
+      "current_at_observation": true,
+      "rollback_eligible": false,
+      "effective_at": "2026-10-02T09:10:43Z",
+      "observed_at": "2026-10-03T21:14:21.590572Z",
+      "pages_run_id": 36988139876,
+      "pages_run_number": 1890,
+      "live_verification_run_id": null,
+      "live_verification_run_number": null,
+      "live_verification_job_id": null,
+      "scope": "Dated observation of the current main after PR #2088 and its successful Pages deployment; no new specialist or exact-route verification is asserted.",
+      "limits": "GitHub recorded a successful Pages deployment for the stated SHA. This is not proof of a public route's byte content, corpus completeness, any case allegation, legal status, guilt, or cross-host parity. Later main and Pages state must be resolved dynamically."
     }
   ],
   "corrections": [
