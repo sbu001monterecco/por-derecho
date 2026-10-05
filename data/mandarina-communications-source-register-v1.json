@@ -1,0 +1,184 @@
+{
+  "schema": "por-derecho.mandarinacommunication-source-register.v1",
+  "control_date": "2026-09-29",
+  "status": "ACTIVE_CANONICAL_SOURCE_WITNESS_REGISTER",
+  "canonical_ids": {
+    "organisation": "PD-SP-O-0200",
+    "person": "PD-SP-P-0300"
+  },
+  "evidence_boundary": "Communications/source attribution does not establish truth of client statements, knowledge of disputed facts, adverse status or wrongdoing.",
+  "founder_status": "OPEN_PRIMARY_PROOF_REQUIRED",
+  "source_records": [
+    {
+      "id": "MAND-ID-20211028-BDO",
+      "date": "2021-10-28",
+      "kind": "PRESERVED_LINKEDIN_PROFILE",
+      "subject": "Beatriz Díaz Ojeda",
+      "drive_file_id": "169ZWzf5_OxOxuioechg0IVo60-O0F4i8",
+      "status": "PRESERVED_NOT_HASHED",
+      "establishes": "Profile displayed 'Responsable de Mandarina Comunicación' and freelance communications responsibility from May 2014 as at capture date.",
+      "does_not_establish": "Founder/legal-owner status, exact legal vehicle or every client/mandate."
+    },
+    {
+      "id": "MAND-CH-20211014-LI",
+      "date": "2021-10-14",
+      "kind": "PRESERVED_LINKEDIN_POST",
+      "subject": "Canarian Hospitality / MYND Hotels launch",
+      "drive_file_id": "1QCEvPzxWu5rwrznP2qXAwrypidPCMkie",
+      "status": "PRESERVED_NOT_HASHED",
+      "establishes": "Mandarina publicly promoted the launch, Grupo Acosta Matos strategic/financial support, press-conference context, photograph credit and named executives.",
+      "does_not_establish": "Who authored/approved every underlying statement or its truth."
+    },
+    {
+      "id": "MAND-CH-202110-MEDIAWAVE",
+      "date": "2021-10",
+      "kind": "PRESERVED_MEDIA_WAVE_BUNDLE",
+      "subject": "Canarian Hospitality launch / 12-hotel plan / Playa Blanca",
+      "drive_file_id": "1K3nwXvdL2S46pgkzva6_9nuPKscuGFpi",
+      "status": "PRESERVED_NOT_HASHED",
+      "establishes": "Multiple publications carried closely related launch/expansion wording and figures.",
+      "does_not_establish": "Independent verification by each outlet or originating author absent source-family comparison."
+    },
+    {
+      "id": "MAND-CH-IVOX-FEED",
+      "date_range": "2021-2023",
+      "kind": "PUBLIC_AUDIO_FEED",
+      "subject": "Canarian Hospitality",
+      "url": "https://www.ivoox.com/podcast-canarian-hospitality_sq_f11387433_1.html",
+      "status": "SOURCE_LOCATED",
+      "establishes": "Public feed is attributed 'Por Mandarina Comunicación' and archives broadcast/media episodes on Canarian Hospitality.",
+      "does_not_establish": "Mandarina authorship of broadcaster statements beyond feed curation/distribution."
+    },
+    {
+      "id": "MAND-CH-20220405-HOSTELTUR",
+      "date": "2022-04-05",
+      "kind": "HOSTELTUR_PRESS_NOTE",
+      "subject": "MYND Adeje cycling / Canarian Hospitality",
+      "url": "https://www.hosteltur.com/comunidad/nota/028774_mynd-adeje-apuesta-por-el-cicloturismo-como-experiencia-diferenciadora-y-sostenible.html",
+      "byline": "Beatriz Díaz Ojeda",
+      "status": "SOURCE_LOCATED"
+    },
+    {
+      "id": "MAND-CH-20220721-HOSTELTUR",
+      "date": "2022-07-21",
+      "kind": "HOSTELTUR_PRESS_NOTE",
+      "subject": "MYND Adeje pet-friendly",
+      "url": "https://www.hosteltur.com/comunidad/nota/029771_mynd-adeje-honra-su-filosofia-sostenible-con-su-oferta-pet-friendly.html",
+      "byline": "Beatriz Díaz Ojeda",
+      "status": "SOURCE_LOCATED"
+    },
+    {
+      "id": "MAND-CH-20221031-HOSTELTUR",
+      "date": "2022-10-31",
+      "kind": "HOSTELTUR_PRESS_NOTE",
+      "subject": "Canarian Photo Awards / MYND Yaiza / Cabildo Lanzarote",
+      "url": "https://www.hosteltur.com/comunidad/nota/030501_canarian-photo-awards-2023-repartira-mas-de-15000-euros-en-premios.html",
+      "byline": "Beatriz Díaz Ojeda",
+      "status": "SOURCE_LOCATED"
+    },
+    {
+      "id": "MAND-CH-20230120-CAIXABANK",
+      "date": "2023-01-20",
+      "kind": "MANDARINA_BLOG_AND_PRESERVED_PROJECT_COPY",
+      "subject": "MYND Adeje CaixaBank FITUR award",
+      "original_url": "https://www.mandarinacomunicacion.es/es/blog/mynd-adeje-se-alza-en-fitur-con-el-premio-de-caixabank-a-la-mejor-responsabilidad-social-corporativa-a3621.html",
+      "gmail_wacz_notice_message_id": "194572ead610a189",
+      "related_gmail_message_id": "194477fca4f0de79",
+      "status": "WAYBACK_CAPTURE_CONFIRMED_WACZ_TEMP_LINK_EXPIRED_OR_UNVERIFIED_CURRENTLY"
+    },
+    {
+      "id": "MAND-CH-20230322-IVOX",
+      "date": "2023-03-22",
+      "kind": "AUDIO_BROADCAST_ARCHIVE",
+      "subject": "TVC Canarias a la una — Radisson Blu Resort Lanzarote and MYND Yaiza inaugurations",
+      "parent": "MAND-CH-IVOX-FEED",
+      "status": "SOURCE_LOCATED"
+    },
+    {
+      "id": "MAND-CH-20230612-IVOX",
+      "date": "2023-06-12",
+      "kind": "AUDIO_BROADCAST_ARCHIVE",
+      "subject": "Canarias Radio — MYND Yaiza/MYND Adeje ocean activities",
+      "parent": "MAND-CH-IVOX-FEED",
+      "status": "SOURCE_LOCATED"
+    },
+    {
+      "id": "MAND-CH-20240513-HOSTELTUR",
+      "date": "2024-05-13",
+      "kind": "HOSTELTUR_PRESS_NOTE",
+      "subject": "Raquel Suárez / Canarian Hospitality / MYND / Sholeo",
+      "url": "https://www.hosteltur.com/comunidad/nota/033487_raquel-suarez-nueva-directora-de-operaciones-de-las-marcas-de-canarian-hospitality.html",
+      "byline": "Beatriz Díaz Ojeda",
+      "status": "SOURCE_LOCATED"
+    },
+    {
+      "id": "MAND-CH-20240803-HOSTELTUR",
+      "date": "2024-08-03",
+      "kind": "HOSTELTUR_PRESS_NOTE",
+      "subject": "Radisson Blu Resort Lanzarote / Canarian Hospitality",
+      "url": "https://www.hosteltur.com/comunidad/nota/033800_radisson-blu-resort-se-posiciona-como-el-mejor-refugio-para-adultos-en-lanzarote.html",
+      "byline": "Beatriz Díaz Ojeda",
+      "status": "SOURCE_LOCATED"
+    },
+    {
+      "id": "MAND-CH-2025-LINKEDIN",
+      "date_range": "2024-2025",
+      "kind": "MANDARINA_LINKEDIN_AMPLIFICATION",
+      "subject": "Canarian Hospitality 10 hotels / Hosteltur interview with Alejandro Páez",
+      "url": "https://es.linkedin.com/posts/mandarina-comunicacion_canarian-hospitality-activity-7254910969900875776-a9rA",
+      "status": "SOURCE_LOCATED"
+    },
+    {
+      "id": "MAND-CH-20260928-CINCODIAS",
+      "date": "2026-09-28",
+      "kind": "MEDIA_ASSET_CREDIT",
+      "subject": "Canarian Hospitality 2026–2028 strategic plan",
+      "url": "https://cincodias.elpais.com/companias/2026-09-28/canarian-hospitality-amplia-su-alianza-con-radisson-y-preve-duplicar-su-cartera-hotelera-en-tres-anos.html",
+      "status": "SOURCE_LOCATED",
+      "establishes": "Cinco Días credits a Francisco Fernández image to Ángel Medina G. (MANDARINA COMUNICACIÓN).",
+      "does_not_establish": "That Mandarina drafted/distributed the strategic-plan release or supplied every fact in the article."
+    },
+    {
+      "id": "MAND-BDO-20241118-GOBIERNO",
+      "date": "2024-11-18",
+      "kind": "OFFICIAL_GOVERNMENT_PERSONNEL_PROFILE",
+      "subject": "Beatriz Díaz Ojeda",
+      "url": "https://www.gobiernodecanarias.org/organigrama/ficha-altos-cargos/?ou=6547",
+      "status": "SOURCE_LOCATED",
+      "establishes": "Official profile records appointment as adviser in Consejería de Sanidad from 18-Nov-2024 and autonomous communications-consultant activity from May-2014 to Nov-2024; no compatible public/private activities listed.",
+      "does_not_establish": "Founder/legal-owner status of Mandarina Comunicación, exact Mandarina legal vehicle, or personal handling of Mandarina/Canarian Hospitality communications after Nov-2024."
+    }
+  ],
+  "relevant_entity_matrix": {
+    "Canarian Hospitality": "DIRECT_REPEATED_PUBLIC_COMMUNICATIONS_EDGE",
+    "MYND Hotels": "DIRECT_REPEATED_PUBLIC_COMMUNICATIONS_EDGE",
+    "MYND Adeje": "DIRECT_REPEATED_PUBLIC_COMMUNICATIONS_EDGE",
+    "MYND Yaiza": "DIRECT_PUBLIC_COMMUNICATIONS_EDGE",
+    "Grupo Acosta Matos": "DIRECT_2021_LAUNCH_REFERENCE_AND_CLIENT_PERIMETER_EDGE",
+    "Radisson Blu Resort Lanzarote": "DIRECT_PUBLIC_COMMUNICATIONS_EDGE",
+    "Sholeo Lodges": "DIRECT_PUBLIC_COMMUNICATIONS_EDGE",
+    "CaixaBank Hotels & Tourism": "DIRECT_2023_AWARD_STORY_EDGE",
+    "RIC Private Equity / RICPE": "OPEN_SEARCH_NO_DIRECT_MANDARINA_EDGE_PROVED_THIS_PASS",
+    "Sun Park": "OPEN_SEARCH; historical MYND Yaiza continuity must not be inferred into Mandarina knowledge without source"
+  },
+  "discovery_queue": [
+    "Resolve exact Mandarina legal vehicle/CIF/form and trading-name history.",
+    "Resolve Beatriz Díaz Ojeda founder/owner status from primary business/trade-name/archived first-party evidence.",
+    "Enumerate complete Hosteltur author archive and filter project-relevant items.",
+    "Enumerate Mandarina website/blog via live and Wayback indexes for Canarian Hospitality, MYND, Yaiza, Acosta Matos, Radisson, Sholeo, CaixaBank, RICPE, Sun Park.",
+    "Search all three Gmail accounts and Drive for mandarinacomunicacion.es, Mandarina, Beatriz Díaz, exact press-release titles and WACZ notices.",
+    "Build source-family clusters for 14–15 Oct 2021 launch, 2022 Yaiza opening cycle, 2023 inaugurations/awards, 2024 portfolio, 2026 strategic plan.",
+    "Capture immutable source copies and SHA-256 for priority public materials; preserve versions, do not overwrite.",
+    "Determine source/instruction/approval chain only from direct evidence or witness evidence; do not infer from wording similarity alone."
+  ],
+  "person_temporal_control": {
+    "canonical_person_id": "PD-SP-P-0300",
+    "historical_private_capacity": "AUTONOMA_COMMUNICATION_CONSULTANT_MAY_2014_TO_NOV_2024",
+    "current_public_capacity": "ASESORA_CONSEJERIA_DE_SANIDAD_FROM_18_NOV_2024",
+    "current_private_compatibility": "NONE_LISTED_BY_OFFICIAL_GOBIERNO_PROFILE",
+    "official_source": "https://www.gobiernodecanarias.org/organigrama/ficha-altos-cargos/?ou=6547",
+    "inference_rule": "Do not attribute 2026 Mandarina/Canarian Hospitality communications personally to Beatriz Díaz Ojeda without a direct 2026 source naming her.",
+    "founder_effect": "Official consultancy history does not prove founder/legal-owner status; founder_status remains OPEN_PRIMARY_PROOF_REQUIRED."
+  },
+  "hosteltur_platform_boundary": "Hosteltur Community describes its 'notas de prensa' area as a place where press offices and tourism companies publish press releases. Items under Beatriz Díaz Ojeda's byline in that area are therefore classified as press-note/source material unless separate newsroom reporting is established; they are not automatically treated as independent Hosteltur editorial verification."
+}
