@@ -139,5 +139,16 @@
     "PD-HV-EVT-20260923-01"
   ],
   "identity_result": "ALL_IDENTITY_OBJECTS_IN_STATED_SCOPE_CARET_CONFIRMED",
-  "remaining_exception": "The beneficial/trust proposition and current 2026 Hava Vida shareholder/administrator/UBO status remain open legal/source questions; registration is complete but merits/status proof is not."
+  "remaining_exception": "The beneficial/trust proposition and current 2026 Hava Vida shareholder/administrator/UBO status remain open legal/source questions; registration is complete but merits/status proof is not.",
+  "reconciliation_addendum_20261006": {
+    "historical_audit_unchanged": true,
+    "current_result": "PARTIAL_NOT_ALL_IS_CARET",
+    "open_items": [
+      "PD-HV-COLL-0001 source-specific identifier collision",
+      "PD-SP-S-0012 / PD-SP-STRUCT-GROUP-SUN-ROCK admission crosswalk",
+      "Original-byte equivalence of source ID families",
+      "Private Drive current custody readback and historic Git exposure"
+    ],
+    "rule": "The dated 17/17 identity count does not certify closure of these source, relationship, privacy or current-status gaps."
+  }
 }

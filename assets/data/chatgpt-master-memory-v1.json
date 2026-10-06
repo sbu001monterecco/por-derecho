@@ -25,7 +25,9 @@
     "DRAFT_V_FILED_V_RECEIVED_V_DECIDED_V_IMPLEMENTED",
     "PRIVATE_PUBLIC_BOUNDARY",
     "EXTERNAL_ACTION_REQUIRES_AUTHORITY",
-    "SUBSTANTIVE_ANSWER_FIRST"
+    "SUBSTANTIVE_ANSWER_FIRST",
+    "NO_EVIDENTIAL_UPGRADE_WITHOUT_SOURCE_BRIDGE",
+    "HAVA_VIDA_IDENTITY_AND_ATTRIBUTED_AWESWELL_BENEFICIAL_POSITION"
   ],
   "canonical_objects": {
     "aweswell": {
@@ -89,5 +91,20 @@
     "governance/chatgpt-memory/MASTER_MEMORY_COMPACT.txt",
     "archive/HAVA_VIDA_AWESWELL_BENEFICIAL_PERIMETER_CONTROL_23SEP2026.md"
   ],
-  "privacy": "public_safe_projection_only"
+  "privacy": "public_safe_projection_only",
+  "memory_id": "PD-MEM-001",
+  "required_controls": "assets/data/chatgpt-master-memory-required-controls-v1.json",
+  "current_relationship_controls": [
+    "PD-HV-AW-20260923-01"
+  ],
+  "volatile_rule": "Do not hard-code current repo SHAs, procedural status, deadlines or office-holders into durable memory; revalidate live.",
+  "control_aliases": {
+    "NO_EVIDENTIAL_UPGRADE_WITHOUT_SOURCE_BRIDGE": "NO_EVIDENTIAL_UPGRADE_WITHOUT_BRIDGE"
+  },
+  "predecessor_preservation": {
+    "pr": 1791,
+    "head": "dcd0ab896ad798f9644a42cbe9f482d5675fbf56",
+    "index": "governance/chatgpt-memory/history/pr-1791/README.md",
+    "status": "FINITE_CONTROLS_RESTORED_FULL_RESIDUAL_REVIEW_OPEN"
+  }
 }

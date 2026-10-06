@@ -32,6 +32,10 @@ substantive analysis or implementation.
 This scope gate is a workflow boundary only. It does not create publication,
 email, filing, contact or other external authority.
 
+## 0A. PD-MEM-001 master-memory bootstrap
+
+For Por Derecho / Project Sun Rock work, load `governance/chatgpt-memory/README.md` and the current `PD-MEM-001` controls as the durable orientation/operating layer. They do not outrank primary evidence, corrections, canonical registers or current remote state. The compact ChatGPT Settings Memory is a projection, not the master.
+
 ## 1. Start from the actual source of truth
 
 - Fetch and read the current remote `main` before analysing or editing. Never publish an older worktree, chat reconstruction or stale branch over later work.

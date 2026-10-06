@@ -16,14 +16,20 @@
   },
   "drive_private": {
     "state": "VERIFIED_CREATED",
-    "full_master_id": "1Y74lL47TozjS-YelRtGSQBCg2dubayleanr2fKMhaQI",
-    "compact_id": "1hSt0npboOJG34O5EQLdV8XPfAF49p6JaZM0-qNLhYOc",
-    "custody_folder_id": "18BxxAIzQMmKs3CsRz2jA2p4kQHOYg5s4"
+    "locator_policy": "Private Drive locators are withheld from public Git. Re-query authorised private custody; do not infer current verification from the historical VERIFIED_CREATED state."
   },
   "chatgpt_memory": {
     "state": "USER_OBSERVED_DIGEST_CAPTURED",
     "note": "Settings digest is lossy projection, not source authority"
   },
   "public_private_boundary": "Repository files are public-safe; full private custody is Google Drive.",
-  "authority_rule": "Re-resolve live host authority before use; never infer canonical host from this historical receipt."
+  "authority_rule": "Re-resolve live host authority before use; never infer canonical host from this historical receipt.",
+  "privacy_remediation": {
+    "date": "2026-10-06",
+    "scope": "Current candidate file only",
+    "removed_private_locator_count": 3,
+    "historical_git_exposure": "OPEN_PRIOR_COMMITS_REMAIN_REACHABLE_NO_HISTORY_REWRITE",
+    "current_private_custody_readback": "NOT_REPERFORMED",
+    "boundary": "No provider IDs are repeated in this remediation record. This repair does not certify erasure from historical Git or revoke Drive permissions."
+  }
 }

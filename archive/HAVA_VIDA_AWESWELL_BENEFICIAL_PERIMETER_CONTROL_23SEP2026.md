@@ -36,3 +36,10 @@ Historical shareholder/director proposition: SOURCE-ESTABLISHED for incorporatio
 Project-perimeter proposition: REGISTERED/ATTRIBUTED with source-context support.
 Trust/beneficial proposition: REGISTERED/ATTRIBUTED; OPEN — source/legal bridge required.
 No edge transfers conduct, knowledge, intent, liability or current legal status.
+
+
+## Preservation addendum — 6 October 2026
+
+The predecessor PD-HV-COLL-0001 source-specific identifier collision (B76694769 versus repository-recorded B76564434) remains **OPEN_DO_NOT_MERGE**; it must not be lost when adopting this successor. The exact predecessor record and narrative are retained under `governance/chatgpt-memory/history/pr-1791/` and indexed there.
+
+The active relationship JSON now retains the predecessor source/event crosswalk. Operations beginning on 26 January 2012 and the registry act on 27 January are distinct event types. The predecessor Group Sun Rock ID PD-SP-S-0012 and successor context ID PD-SP-STRUCT-GROUP-SUN-ROCK require explicit canonical admission reconciliation; neither is silently renumbered or promoted by this technical repair. All current ownership, trust, UBO and legal-effect proof ceilings remain open.

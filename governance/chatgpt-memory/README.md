@@ -11,3 +11,7 @@ Read order:
 6. ../../ops/continuity/CHATGPT_MASTER_MEMORY_SYNC_STATE_20260923.json — cross-host state.
 
 Authority: primary evidence/current canonical registers/current verified repository state prevail. This is a control/index layer, not a competing evidence register. Re-resolve live GitHub/GitLab authority before use. Public-safe repository copy excludes privileged/private source material and unnecessary PII.
+
+## Predecessor reconciliation — 6 October 2026
+
+Read `../../assets/data/chatgpt-master-memory-required-controls-v1.json` and the `predecessor_reconciliation` in `../../assets/data/hava-vida-aweswell-relationship-v1.json`. The preserved predecessor sources and full/compact memory are indexed at `history/pr-1791/README.md`. These are historical provenance, not a second active master. #1795 remains the controlling Draft candidate; #1791 remains open for nonzero identity/projection/CI residuals. Current primary sources and main retain authority. Source/event crosswalks do not prove binary equivalence. The explicit Hava Vida identifier collision remains OPEN_DO_NOT_MERGE.

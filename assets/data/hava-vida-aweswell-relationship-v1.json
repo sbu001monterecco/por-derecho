@@ -146,6 +146,21 @@
         "PD-SP-O-0103"
       ],
       "status": "ATTRIBUTED_OPEN"
+    },
+    {
+      "id": "PD-HV-EVT-0001",
+      "date": "2012-01-26",
+      "type": "INCORPORATION_OPERATIONS_BEGIN",
+      "source_ids": [
+        "PD-HV-SRC-20120208-BORME-64020"
+      ],
+      "object_ids": [
+        "PD-SP-O-0103",
+        "PD-SP-P-0002"
+      ],
+      "status": "PRESERVED_PREDECESSOR_SOURCE_ASSERTION_NOT_REVERIFIED",
+      "distinct_from": "PD-HV-EVT-20120127-01",
+      "boundary": "26-Jan operations beginning and 27-Jan registry act are distinct events; neither date overwrites the other."
     }
   ],
   "relationships": [
@@ -190,11 +205,141 @@
     "trust/nominee declaration or shareholder agreement",
     "funding and bank-flow bridge",
     "board/accounting/tax treatment",
-    "governing-law/conflict-of-laws/Spanish recognition analysis"
+    "governing-law/conflict-of-laws/Spanish recognition analysis",
+    "PD-HV-COLL-0001: source-specific identifier B76694769 versus repository-recorded B76564434; underlying document and primary identifier certificate remain open"
   ],
   "collision_control": {
     "issue": "Archived recovery material contains an unrelated candidate Ernst & Young, S.L. using PD-SP-O-0103.",
     "resolution": "That archived candidate is not active CAEPR authority. Active PD-SP-O-0103 is Hava Vida, promoted from the 7-Sep scan and E051 on 23-Sep-2026 using primary BORME. Preserve the archived snapshot as historical provenance; do not merge identities."
   },
-  "caret_result": "PARTIAL_NOT_ALL_IS_CARET_BECAUSE_BENEFICIAL_TRUST_AND_CURRENT_2026_STATUS_REMAIN_OPEN"
+  "caret_result": "PARTIAL_NOT_ALL_IS_CARET_BECAUSE_BENEFICIAL_TRUST_AND_CURRENT_2026_STATUS_REMAIN_OPEN",
+  "open_collisions": [
+    {
+      "collision_id": "PD-HV-COLL-0001",
+      "source_literal": "Hava Vida Travel & Tourism S.L.",
+      "conflicting_identifier": "B76694769",
+      "canonical_identifier": "B76564434",
+      "status": "OPEN_DO_NOT_MERGE",
+      "rule": "Preserve the source occurrence and investigate the underlying document; do not use it to alter canonical Hava Vida identity or infer a second company without primary proof."
+    }
+  ],
+  "predecessor_reconciliation": {
+    "date": "2026-10-06",
+    "predecessor_pr": 1791,
+    "successor_pr": 1795,
+    "source_id_crosswalk": [
+      {
+        "predecessor_id": "PD-HV-SRC-0001",
+        "successor_id": "PD-HV-SRC-20120208-BORME-64020",
+        "classification": "SAME_DESCRIBED_SOURCE_FAMILY_NOT_BINARY_EQUIVALENCE",
+        "rule": "Retain both historical IDs; no new source and no independent corroboration is created. Original-byte equivalence remains unverified in this pass."
+      },
+      {
+        "predecessor_id": "PD-HV-SRC-0002",
+        "successor_id": "PD-HV-SRC-20120612-BORME-248217",
+        "classification": "SAME_DESCRIBED_SOURCE_FAMILY_NOT_BINARY_EQUIVALENCE",
+        "rule": "Retain both historical IDs; no new source and no independent corroboration is created. Original-byte equivalence remains unverified in this pass."
+      },
+      {
+        "predecessor_id": "PD-HV-SRC-0003",
+        "successor_id": "PD-HV-SRC-20230921-ANQ-P53",
+        "classification": "SAME_DESCRIBED_SOURCE_FAMILY_NOT_BINARY_EQUIVALENCE",
+        "rule": "Retain both historical IDs; no new source and no independent corroboration is created. Original-byte equivalence remains unverified in this pass."
+      },
+      {
+        "predecessor_id": "PD-HV-SRC-0004",
+        "successor_id": "PD-HV-SRC-20260923-GM-ATTRIBUTION",
+        "classification": "SAME_DESCRIBED_SOURCE_FAMILY_NOT_BINARY_EQUIVALENCE",
+        "rule": "Retain both historical IDs; no new source and no independent corroboration is created. Original-byte equivalence remains unverified in this pass."
+      }
+    ],
+    "event_id_crosswalk": [
+      {
+        "predecessor_id": "PD-HV-EVT-0002",
+        "successor_id": "PD-HV-EVT-20120531-01",
+        "classification": "SAME_DESCRIBED_DATED_EVENT_PENDING_CANONICAL_ALIAS_ADMISSION",
+        "date": "2012-05-31",
+        "rule": "Do not renumber, merge proceedings or upgrade evidence from this technical crosswalk."
+      },
+      {
+        "predecessor_id": "PD-HV-EVT-0003",
+        "successor_id": "PD-HV-EVT-20230921-01",
+        "classification": "SAME_DESCRIBED_DATED_EVENT_PENDING_CANONICAL_ALIAS_ADMISSION",
+        "date": "2023-09-21",
+        "rule": "Do not renumber, merge proceedings or upgrade evidence from this technical crosswalk."
+      },
+      {
+        "predecessor_id": "PD-HV-EVT-0004",
+        "successor_id": "PD-HV-EVT-20260923-01",
+        "classification": "SAME_DESCRIBED_DATED_EVENT_PENDING_CANONICAL_ALIAS_ADMISSION",
+        "date": "2026-09-23",
+        "rule": "Do not renumber, merge proceedings or upgrade evidence from this technical crosswalk."
+      }
+    ],
+    "distinct_events": [
+      {
+        "predecessor_id": "PD-HV-EVT-0001",
+        "date": "2012-01-26",
+        "type": "INCORPORATION_OPERATIONS_BEGIN"
+      },
+      {
+        "successor_id": "PD-HV-EVT-20120127-01",
+        "date": "2012-01-27",
+        "type": "REGISTRY_INCORPORATION_ACT"
+      }
+    ],
+    "group_structure": {
+      "predecessor_id": "PD-SP-S-0012",
+      "successor_context_id": "PD-SP-STRUCT-GROUP-SUN-ROCK",
+      "status": "UNRESOLVED_ADMISSION_NOT_RENUMBERED",
+      "current_main_observed": "f0d472567ad71a4140ae8ab3eb7a408aa8aa9e5f",
+      "main_structure_count": 11,
+      "rule": "Current main has no PD-SP-S-0012 admission. Preserve predecessor identity and its project-only boundary in history; do not silently promote, erase or replace either identifier. This is not a legal person, statutory group or established ownership/control."
+    },
+    "originals": [
+      {
+        "original_path": "archive/HAVA_VIDA_AWESWELL_GROUP_PERIMETER_BENEFICIAL_POSITION_23SEP2026.md",
+        "preserved_path": "governance/chatgpt-memory/history/pr-1791/archive/HAVA_VIDA_AWESWELL_GROUP_PERIMETER_BENEFICIAL_POSITION_23SEP2026.md",
+        "git_blob_sha": "3af6adf3da1d254394ccf21365164e8caeeabdb2",
+        "sha256": "69f99d48a03964cb89c4e810e945007149849f756c3ace1a1e2480059f7fb228",
+        "bytes": 3350,
+        "state": "HISTORICAL_PREDECESSOR_NOT_ACTIVE_AUTHORITY"
+      },
+      {
+        "original_path": "assets/data/hava-vida-aweswell-beneficial-position-20260923.json",
+        "preserved_path": "governance/chatgpt-memory/history/pr-1791/assets/data/hava-vida-aweswell-beneficial-position-20260923.json",
+        "git_blob_sha": "f2f033b5bc83aa2bf80a18486de268fad418a703",
+        "sha256": "8d389718e571f9195978a0af73122fc708957689d053be454957689384dacbf4",
+        "bytes": 6084,
+        "state": "HISTORICAL_PREDECESSOR_NOT_ACTIVE_AUTHORITY"
+      },
+      {
+        "original_path": "ops/continuity/CHATGPT_MASTER_MEMORY_SYNC_STATE.json",
+        "preserved_path": "governance/chatgpt-memory/history/pr-1791/ops/continuity/CHATGPT_MASTER_MEMORY_SYNC_STATE.json",
+        "git_blob_sha": "bcc6fb180ecffcfbeb06d49f9aa6601f03371b36",
+        "sha256": "2c1d5e82a6cfc90a6e56a59ea6039554b2f61fb4ed9bf9e53145d81cd1afb2d7",
+        "bytes": 1482,
+        "state": "HISTORICAL_PREDECESSOR_NOT_ACTIVE_AUTHORITY"
+      },
+      {
+        "original_path": "governance/chatgpt-memory/MASTER_MEMORY_PUBLIC.md",
+        "preserved_path": "governance/chatgpt-memory/history/pr-1791/governance/chatgpt-memory/MASTER_MEMORY_PUBLIC.md",
+        "git_blob_sha": "ec25f880b7c1e44d07e0181d1bcdb66f2b680193",
+        "sha256": "f3b8958f98d48888aba272e8755ad9adc711e41516b9c113ed76ac5b8d7f9b93",
+        "bytes": 5364,
+        "state": "HISTORICAL_PREDECESSOR_NOT_ACTIVE_AUTHORITY"
+      },
+      {
+        "original_path": "governance/chatgpt-memory/MASTER_MEMORY_COMPACT.txt",
+        "preserved_path": "governance/chatgpt-memory/history/pr-1791/governance/chatgpt-memory/MASTER_MEMORY_COMPACT.txt",
+        "git_blob_sha": "a8c5b5c625ff6df4fe5ae7fe36713c30b291ea84",
+        "sha256": "bdde03a58fc1e704d124a519de8505e2869f4f6c3a6c759127dbc67acad51d08",
+        "bytes": 2368,
+        "state": "HISTORICAL_PREDECESSOR_NOT_ACTIVE_AUTHORITY"
+      }
+    ],
+    "residual_status": "NONZERO_KEEP_PREDECESSOR_OPEN",
+    "primary_binary_preservation": "AMBER_NOT_REAUDITED_NO_SOURCE_STATUS_UPGRADE",
+    "authority": "Technical reconciliation only; no trust, ownership, UBO, legal-group or source-binary finding."
+  }
 }
