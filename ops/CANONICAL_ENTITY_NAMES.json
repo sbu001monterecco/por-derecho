@@ -305,12 +305,23 @@
         "Havidia Travel & Tourism"
       ],
       "separation_rule": "Do not conflate Hava Vida Travel & Tourism, S.L.U. with the separate US entity Havidia LLC or with LPB.",
+      "historical_registered_owner_officer": {
+        "source_date": "2012-01-27 registration / 2012-02-08 BORME publication",
+        "sole_shareholder": "Patricia Isabel Domínguez Montelongo",
+        "sole_administrator": "Patricia Isabel Domínguez Montelongo",
+        "evidence_status": "SOURCE_ESTABLISHED_HISTORICAL",
+        "source": "BORME-A-2012-27-38, entry 64020"
+      },
+      "relationship_control": "archive/HAVA_VIDA_AWESWELL_BENEFICIAL_PERIMETER_CONTROL_23SEP2026.md",
+      "project_perimeter_rule": "Hava Vida is treated as a project-side / Aweswell-Group Sun Rock perimeter company where source-supported. This does not prove Aweswell corporate ownership.",
+      "beneficial_position_rule": "Gil Marer's 23-Sep-2026 position that Patricia held Hava Vida shares for AWESWELL LIMITED's benefit using an 'on trust' concept is ATTRIBUTED / OPEN LEGAL-SOURCE BRIDGE, not a proved trust, current legal ownership, Spanish UBO filing or tax fact.",
+      "current_status_rule": "Do not state unchanged current 2026 shareholder, administrator, UBO or trust status without current primary registry/UBO and legal proof.",
       "official_sources": [
         {
           "authority": "Boletín Oficial del Registro Mercantil",
           "reference": "BORME-A-2012-27-38, entry 64020",
           "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-27-38",
-          "proposition": "The registry publication records incorporation of HAVA VIDA TRAVEL & TOURISM SL, declaration of unipersonality and sheet TF 49735. The publication does not print the NIF."
+          "proposition": "The registry publication records incorporation of HAVA VIDA TRAVEL & TOURISM SL, declaration of unipersonality, Patricia Isabel Domínguez Montelongo as sole shareholder and sole administrator, and sheet TF 49735. It is historical incorporation evidence, not proof of unchanged current 2026 status."
         },
         {
           "authority": "UK Companies House",

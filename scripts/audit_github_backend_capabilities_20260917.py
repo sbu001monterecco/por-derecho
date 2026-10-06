@@ -96,7 +96,7 @@ def audit() -> dict:
     registry = json.loads(read_text("assets/data/matter-identity-registry-v1.json"))
     if registry.get("registry_id") != "PD-SP-IDENTITY-REGISTRY-001":
         failures.append("registry_id_mismatch")
-    if registry.get("counts", {}).get("total") != 379:
+    if registry.get("counts", {}).get("total") != 380:
         failures.append("registry_denominator_drift")
 
     parity = json.loads(read_text("ops/continuity/GITHUB_OPERATIONAL_BACKEND_PARITY_20260917.json"))

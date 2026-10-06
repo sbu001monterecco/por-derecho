@@ -1,0 +1,1095 @@
+{
+  "schema": "por-derecho.hava-vida-aweswell-relationship.v1",
+  "control_id": "PD-HV-AW-20260923-01",
+  "control_date": "2026-09-23",
+  "status": "ACTIVE_MIXED_SOURCE_ESTABLISHED_AND_ATTRIBUTED_OPEN",
+  "objects": [
+    {
+      "id": "PD-SP-P-0002",
+      "type": "PERSON",
+      "name": "Patricia Domínguez",
+      "caret_state": "EXISTING_PERSON_RECORD"
+    },
+    {
+      "id": "PD-SP-O-0103",
+      "type": "ORGANISATION",
+      "name": "Hava Vida Travel & Tourism, S.L.U.",
+      "caret_state": "CARET_CONFIRMED_20260923",
+      "legacy_id": "E051"
+    },
+    {
+      "id": "PD-SP-O-0001",
+      "type": "ORGANISATION",
+      "name": "AWESWELL LIMITED",
+      "caret_state": "EXISTING_ORGANISATION_RECORD",
+      "company_number": "07716847"
+    },
+    {
+      "id": "PD-SP-STRUCT-GROUP-SUN-ROCK",
+      "type": "PROJECT_PERIMETER",
+      "name": "Group Sun Rock / Sun Rock",
+      "caret_state": "CARET_NOT_APPLICABLE_UNLESS_SEPARATELY_ADMITTED"
+    }
+  ],
+  "sources": [
+    {
+      "id": "PD-HV-SRC-20120208-BORME-64020",
+      "type": "OFFICIAL_REGISTRY_PUBLICATION",
+      "date": "2012-02-08",
+      "reference": "BORME-A-2012-27-38 entry 64020",
+      "status": "PRIMARY_PUBLIC_SOURCE",
+      "proves": [
+        "Hava Vida incorporation",
+        "unipersonality",
+        "Patricia Isabel Domínguez Montelongo sole shareholder at incorporation",
+        "Patricia Isabel Domínguez Montelongo sole administrator at incorporation",
+        "sheet TF 49735"
+      ],
+      "does_not_prove": [
+        "unchanged 2026 status",
+        "Aweswell ownership",
+        "trust validity",
+        "UBO/tax treatment"
+      ],
+      "verification_20261006": {
+        "status": "OFFICIAL_ENTRY_READBACK_VERIFIED",
+        "url": "https://www.boe.es/borme/dias/2012/02/08/pdfs/BORME-A-2012-27-38.pdf",
+        "pdf_page": 14,
+        "printed_page": 7004,
+        "entry": 64020,
+        "operations_commencement": "2012-01-26",
+        "registry_entry_date": "2012-01-27",
+        "publication_date": "2012-02-08",
+        "role_date_boundary": "The incorporation entry records the sole-shareholder and sole-administrator roles; the operations-commencement field does not separately establish their effective date.",
+        "binary_comparison": "Official entry readback only; no byte-equivalence claim about an earlier stored BORME copy."
+      }
+    },
+    {
+      "id": "PD-HV-SRC-20120612-BORME-248217",
+      "type": "OFFICIAL_REGISTRY_PUBLICATION",
+      "date": "2012-06-12",
+      "reference": "BORME-A-2012-110-38 entry 248217",
+      "status": "PRIMARY_PUBLIC_SOURCE",
+      "proves": [
+        "registered office change",
+        "same sheet TF 49735"
+      ],
+      "verification_20261006": {
+        "status": "OFFICIAL_ENTRY_READBACK_VERIFIED",
+        "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-110-38",
+        "entry": 248217,
+        "registry_entry_date": "2012-05-31",
+        "sheet": "TF 49735",
+        "boundary": "Distinct registered-office-change entry; no current ownership or office finding."
+      }
+    },
+    {
+      "id": "PD-HV-SRC-20230921-ANQ-P53",
+      "type": "PARTY_PLEADING",
+      "date": "2023-09-21",
+      "reference": "Audiencia Nacional querella pages 52–53 / controlled public transcription",
+      "status": "PARTY_ALLEGATION_SOURCE",
+      "proves": [
+        "the pleading contains a project narrative linking LPB/Aweswell via Grupo Sun Rock with Hava Vida and named counterparties"
+      ],
+      "does_not_prove": [
+        "Aweswell legal ownership of Hava Vida",
+        "truth of damages allegation",
+        "trust relationship"
+      ],
+      "verification_20261006": {
+        "status": "NATIVE_PDF_HASH_MATCH_AND_SOURCE_PASSAGE_VERIFIED",
+        "source_manifest": "evidence/criminal/an-dp91-2023/source-manifest.json",
+        "public_transcription": "evidence/criminal/an-dp91-2023/full-text/querella-21sep2023-full-public-transcription.md",
+        "source_pdf_sha512": "2c35052af7f869dfb13ca8593552a6997ee9f1f83a09299bcee883345482ae63b7502f76d6e85873b4b80c1b745d7a3c5797762400410e33c897140b9c36c2ab",
+        "source_bytes": 5514981,
+        "carrier_pdf_pages": 134,
+        "pleading_pages": 88,
+        "passage_pages": [
+          52,
+          53
+        ],
+        "locator_correction": "The Group Sun Rock/Hava Vida passage starts on page 52 and continues on page 53. Retain the immutable ANQ-P53 source ID; this corrects its locator, not its identity.",
+        "custody": "Authorised private native file readback; binary and private locator remain outside public Git.",
+        "proof_boundary": "Exact source-version agreement and passage presence only; party pleading remains an allegation source, not an independent finding."
+      }
+    },
+    {
+      "id": "PD-HV-SRC-20260923-GM-ATTRIBUTION",
+      "type": "USER_ATTRIBUTED_STATEMENT",
+      "date": "2026-09-23",
+      "speaker": "Gil Marer",
+      "status": "ATTRIBUTED_POSITION",
+      "statement": "Gil Marer takes responsibility for the position that Hava Vida was always understood as part of the Aweswell / Group Sun Rock perimeter and that Patricia held the Hava Vida shares for AWESWELL LIMITED's benefit, described through a UK-law 'on trust' concept.",
+      "does_not_prove": [
+        "valid trust",
+        "governing law",
+        "Spanish recognition",
+        "current UBO filing",
+        "tax treatment",
+        "Aweswell legal title"
+      ],
+      "scope_status": "HISTORICAL_COMPOSITE_WORDING_SUPERSEDED_IN_SCOPE_BY_20261006_CLARIFICATION",
+      "clarification": "Do not read the 23-Sep composite wording as one trust proposition. The 6-Oct clarification separates the AWESWELL-share trust layer from the Spanish-company-share trust layer."
+    },
+    {
+      "id": "PD-GROUP-SRC-20261006-GM-TRUST-CLARIFICATION",
+      "type": "USER_ATTRIBUTED_STATEMENT",
+      "date": "2026-10-06",
+      "speaker": "Gil Marer",
+      "status": "ATTRIBUTED_POSITION_CLARIFICATION",
+      "propositions": [
+        {
+          "id": "PD-AW-TRUST-001",
+          "statement": "Gil Marer states that Patricia Domínguez has been holding the shares in AWESWELL LIMITED on trust for the joint benefit of Patricia Domínguez and Gil Marer.",
+          "legal_layer": "UK_HOLDCO_SHARES",
+          "trustee_or_registered_holder": "PD-SP-P-0002",
+          "company": "PD-SP-O-0001",
+          "beneficiaries": [
+            "PD-SP-P-0002",
+            "PD-SP-P-0001"
+          ]
+        },
+        {
+          "id": "PD-HV-AW-TRUST-001",
+          "statement": "Gil Marer states that Patricia Domínguez has been holding the shares of Hava Vida Travel & Tourism, S.L.U. effectively on trust for AWESWELL LIMITED.",
+          "legal_layer": "SPANISH_COMPANY_SHARES",
+          "trustee_or_registered_holder": "PD-SP-P-0002",
+          "company": "PD-SP-O-0103",
+          "beneficiary": "PD-SP-O-0001"
+        },
+        {
+          "id": "PD-PINK-AW-TRUST-001",
+          "statement": "Gil Marer states that Patricia Domínguez has been holding the shares of Pink Canary Services, S.L.U. effectively on trust for AWESWELL LIMITED.",
+          "legal_layer": "SPANISH_COMPANY_SHARES",
+          "trustee_or_registered_holder": "PD-SP-P-0002",
+          "company": "PD-SP-O-0004",
+          "beneficiary": "PD-SP-O-0001"
+        }
+      ],
+      "boundary": "These are Gil Marer's attributed beneficial/economic positions. They do not by themselves prove a legally effective trust, nominee arrangement, current registered shareholding, governing law, Spanish recognition, PSC/UBO status, tax treatment or accounting treatment. Each layer requires its own documentary and legal source bridge."
+    }
+  ],
+  "events": [
+    {
+      "id": "PD-HV-EVT-20120127-01",
+      "date": "2012-01-27",
+      "type": "REGISTRY_INCORPORATION_ACT",
+      "source_ids": [
+        "PD-HV-SRC-20120208-BORME-64020"
+      ],
+      "object_ids": [
+        "PD-SP-P-0002",
+        "PD-SP-O-0103"
+      ]
+    },
+    {
+      "id": "PD-HV-EVT-20120531-01",
+      "date": "2012-05-31",
+      "type": "REGISTERED_OFFICE_CHANGE",
+      "source_ids": [
+        "PD-HV-SRC-20120612-BORME-248217"
+      ],
+      "object_ids": [
+        "PD-SP-O-0103"
+      ]
+    },
+    {
+      "id": "PD-HV-EVT-20230921-01",
+      "date": "2023-09-21",
+      "type": "PLEADING_PROJECT_PERIMETER_NARRATIVE",
+      "source_ids": [
+        "PD-HV-SRC-20230921-ANQ-P53"
+      ],
+      "object_ids": [
+        "PD-SP-O-0001",
+        "PD-SP-O-0103"
+      ],
+      "status": "SOURCE_CONTENT_NOT_FINDING"
+    },
+    {
+      "id": "PD-HV-EVT-20260923-01",
+      "date": "2026-09-23",
+      "type": "ATTRIBUTED_BENEFICIAL_TRUST_POSITION_RECORDED",
+      "source_ids": [
+        "PD-HV-SRC-20260923-GM-ATTRIBUTION"
+      ],
+      "object_ids": [
+        "PD-SP-P-0001",
+        "PD-SP-P-0002",
+        "PD-SP-O-0001",
+        "PD-SP-O-0103"
+      ],
+      "status": "ATTRIBUTED_OPEN"
+    },
+    {
+      "id": "PD-HV-EVT-0001",
+      "date": "2012-01-26",
+      "type": "INCORPORATION_OPERATIONS_BEGIN",
+      "source_ids": [
+        "PD-HV-SRC-20120208-BORME-64020"
+      ],
+      "object_ids": [
+        "PD-SP-O-0103",
+        "PD-SP-P-0002"
+      ],
+      "status": "SOURCE_ESTABLISHED_OPERATIONS_COMMENCEMENT",
+      "distinct_from": "PD-HV-EVT-20120127-01",
+      "boundary": "26-Jan operations commencement and 27-Jan registry entry are distinct. Do not use operations commencement as a separately proved role-effective date.",
+      "prior_verification_status": "PRESERVED_PREDECESSOR_SOURCE_ASSERTION_NOT_REVERIFIED",
+      "verification_date": "2026-10-06"
+    },
+    {
+      "id": "PD-GROUP-EVT-20261006-01",
+      "date": "2026-10-06",
+      "type": "ATTRIBUTED_TRUST_LAYER_CLARIFICATION",
+      "source_ids": [
+        "PD-GROUP-SRC-20261006-GM-TRUST-CLARIFICATION"
+      ],
+      "object_ids": [
+        "PD-SP-P-0001",
+        "PD-SP-P-0002",
+        "PD-SP-O-0001",
+        "PD-SP-O-0004",
+        "PD-SP-O-0103"
+      ],
+      "status": "ATTRIBUTED_OPEN",
+      "rule": "Keep UK HoldCo-share beneficial ownership and Spanish-company-share beneficial ownership as separate propositions."
+    }
+  ],
+  "relationships": [
+    {
+      "from": "PD-SP-P-0002",
+      "to": "PD-SP-O-0103",
+      "relation": "SOLE_SHAREHOLDER_AT_INCORPORATION",
+      "status": "SOURCE_ESTABLISHED_HISTORICAL",
+      "source_id": "PD-HV-SRC-20120208-BORME-64020",
+      "date_qualification": {
+        "registry_entry_date": "2012-01-27",
+        "publication_date": "2012-02-08",
+        "separate_role_effective_date": "NOT_ESTABLISHED_BY_OPERATIONS_COMMENCEMENT_FIELD"
+      }
+    },
+    {
+      "from": "PD-SP-P-0002",
+      "to": "PD-SP-O-0103",
+      "relation": "SOLE_ADMINISTRATOR_AT_INCORPORATION",
+      "status": "SOURCE_ESTABLISHED_HISTORICAL",
+      "source_id": "PD-HV-SRC-20120208-BORME-64020",
+      "date_qualification": {
+        "registry_entry_date": "2012-01-27",
+        "publication_date": "2012-02-08",
+        "separate_role_effective_date": "NOT_ESTABLISHED_BY_OPERATIONS_COMMENCEMENT_FIELD"
+      }
+    },
+    {
+      "from": "PD-SP-O-0103",
+      "to": "PD-SP-O-0001",
+      "relation": "PROJECT_PERIMETER_AWESWELL_GROUP_SUN_ROCK",
+      "status": "ATTRIBUTED_WITH_SOURCE_CONTEXT_SUPPORT",
+      "source_ids": [
+        "PD-HV-SRC-20230921-ANQ-P53",
+        "PD-HV-SRC-20260923-GM-ATTRIBUTION"
+      ]
+    },
+    {
+      "from": "PD-SP-P-0002",
+      "via": "PD-SP-O-0103 shares",
+      "to": "PD-SP-O-0001",
+      "relation": "ASSERTED_SPANISH_COMPANY_SHARES_HELD_FOR_AWESWELL",
+      "subject_company": "PD-SP-O-0103",
+      "status": "ATTRIBUTED_OPEN_LEGAL_SOURCE_BRIDGE",
+      "source_id": "PD-GROUP-SRC-20261006-GM-TRUST-CLARIFICATION",
+      "proposition_id": "PD-HV-AW-TRUST-001"
+    },
+    {
+      "from": "PD-SP-P-0002",
+      "via": "PD-SP-O-0004 shares",
+      "to": "PD-SP-O-0001",
+      "relation": "ASSERTED_SPANISH_COMPANY_SHARES_HELD_FOR_AWESWELL",
+      "subject_company": "PD-SP-O-0004",
+      "status": "ATTRIBUTED_OPEN_LEGAL_SOURCE_BRIDGE",
+      "source_id": "PD-GROUP-SRC-20261006-GM-TRUST-CLARIFICATION",
+      "proposition_id": "PD-PINK-AW-TRUST-001"
+    },
+    {
+      "from": "PD-SP-P-0002",
+      "via": "PD-SP-O-0001 shares",
+      "to": "PD-SP-P-0001",
+      "co_beneficiary": "PD-SP-P-0002",
+      "relation": "ASSERTED_AWESWELL_SHARES_HELD_ON_TRUST_FOR_JOINT_BENEFIT",
+      "beneficiaries": [
+        "PD-SP-P-0002",
+        "PD-SP-P-0001"
+      ],
+      "status": "ATTRIBUTED_OPEN_LEGAL_SOURCE_BRIDGE",
+      "source_id": "PD-GROUP-SRC-20261006-GM-TRUST-CLARIFICATION",
+      "proposition_id": "PD-AW-TRUST-001"
+    }
+  ],
+  "open_proof": [
+    "current 2026 Spanish Registro Mercantil certification",
+    "current shareholder book / sole-member status",
+    "current administrator status",
+    "beneficial-owner/UBO filing",
+    "trust/nominee declaration or shareholder agreement",
+    "funding and bank-flow bridge",
+    "board/accounting/tax treatment",
+    "governing-law/conflict-of-laws/Spanish recognition analysis",
+    "PD-HV-COLL-0001: source-specific identifier B76694769 versus repository-recorded B76564434; underlying document and primary identifier certificate remain open",
+    "current AWESWELL share register / confirmation statement / PSC position",
+    "instrument or conduct evidence supporting the asserted AWESWELL-share trust for Patricia and Gil jointly",
+    "current Pink Canary shareholder register / certified registry position",
+    "instrument or conduct evidence supporting the asserted Pink Canary shares-for-AWESWELL trust position"
+  ],
+  "collision_control": {
+    "issue": "Archived recovery material contains an unrelated candidate Ernst & Young, S.L. using PD-SP-O-0103.",
+    "resolution": "That archived candidate is not active CAEPR authority. Active PD-SP-O-0103 is Hava Vida, promoted from the 7-Sep scan and E051 on 23-Sep-2026 using primary BORME. Preserve the archived snapshot as historical provenance; do not merge identities."
+  },
+  "caret_result": "PARTIAL_NOT_ALL_IS_CARET_BECAUSE_BENEFICIAL_TRUST_AND_CURRENT_2026_STATUS_REMAIN_OPEN",
+  "open_collisions": [
+    {
+      "collision_id": "PD-HV-COLL-0001",
+      "source_literal": "Hava Vida Travel & Tourism S.L.",
+      "conflicting_identifier": "B76694769",
+      "canonical_identifier": "B76564434",
+      "status": "OPEN_DO_NOT_MERGE",
+      "rule": "Preserve the source occurrence and investigate the underlying document; do not use it to alter canonical Hava Vida identity or infer a second company without primary proof."
+    }
+  ],
+  "predecessor_reconciliation": {
+    "date": "2026-10-06",
+    "predecessor_pr": 1791,
+    "successor_pr": 1795,
+    "source_id_crosswalk": [
+      {
+        "predecessor_id": "PD-HV-SRC-0001",
+        "successor_id": "PD-HV-SRC-20120208-BORME-64020",
+        "classification": "SAME_DESCRIBED_SOURCE_FAMILY_NOT_BINARY_EQUIVALENCE",
+        "rule": "Retain both historical IDs; no new source and no independent corroboration is created. Original-byte equivalence remains unverified in this pass."
+      },
+      {
+        "predecessor_id": "PD-HV-SRC-0002",
+        "successor_id": "PD-HV-SRC-20120612-BORME-248217",
+        "classification": "SAME_DESCRIBED_SOURCE_FAMILY_NOT_BINARY_EQUIVALENCE",
+        "rule": "Retain both historical IDs; no new source and no independent corroboration is created. Original-byte equivalence remains unverified in this pass."
+      },
+      {
+        "predecessor_id": "PD-HV-SRC-0003",
+        "successor_id": "PD-HV-SRC-20230921-ANQ-P53",
+        "classification": "SAME_DESCRIBED_SOURCE_FAMILY_NOT_BINARY_EQUIVALENCE",
+        "rule": "Retain both historical IDs; no new source and no independent corroboration is created. Original-byte equivalence remains unverified in this pass."
+      },
+      {
+        "predecessor_id": "PD-HV-SRC-0004",
+        "successor_id": "PD-HV-SRC-20260923-GM-ATTRIBUTION",
+        "classification": "SAME_DESCRIBED_SOURCE_FAMILY_NOT_BINARY_EQUIVALENCE",
+        "rule": "Retain both historical IDs; no new source and no independent corroboration is created. Original-byte equivalence remains unverified in this pass."
+      }
+    ],
+    "event_id_crosswalk": [
+      {
+        "predecessor_id": "PD-HV-EVT-0002",
+        "successor_id": "PD-HV-EVT-20120531-01",
+        "classification": "SAME_DESCRIBED_DATED_EVENT_PENDING_CANONICAL_ALIAS_ADMISSION",
+        "date": "2012-05-31",
+        "rule": "Do not renumber, merge proceedings or upgrade evidence from this technical crosswalk."
+      },
+      {
+        "predecessor_id": "PD-HV-EVT-0003",
+        "successor_id": "PD-HV-EVT-20230921-01",
+        "classification": "SAME_DESCRIBED_DATED_EVENT_PENDING_CANONICAL_ALIAS_ADMISSION",
+        "date": "2023-09-21",
+        "rule": "Do not renumber, merge proceedings or upgrade evidence from this technical crosswalk."
+      },
+      {
+        "predecessor_id": "PD-HV-EVT-0004",
+        "successor_id": "PD-HV-EVT-20260923-01",
+        "classification": "SAME_DESCRIBED_DATED_EVENT_PENDING_CANONICAL_ALIAS_ADMISSION",
+        "date": "2026-09-23",
+        "rule": "Do not renumber, merge proceedings or upgrade evidence from this technical crosswalk."
+      }
+    ],
+    "distinct_events": [
+      {
+        "predecessor_id": "PD-HV-EVT-0001",
+        "date": "2012-01-26",
+        "type": "INCORPORATION_OPERATIONS_BEGIN"
+      },
+      {
+        "successor_id": "PD-HV-EVT-20120127-01",
+        "date": "2012-01-27",
+        "type": "REGISTRY_INCORPORATION_ACT"
+      }
+    ],
+    "group_structure": {
+      "predecessor_id": "PD-SP-S-0012",
+      "successor_context_id": "PD-SP-STRUCT-GROUP-SUN-ROCK",
+      "status": "UNRESOLVED_ADMISSION_NOT_RENUMBERED",
+      "current_main_observed": "f0d472567ad71a4140ae8ab3eb7a408aa8aa9e5f",
+      "main_structure_count": 11,
+      "rule": "Current main has no PD-SP-S-0012 admission. Preserve predecessor identity and its project-only boundary in history; do not silently promote, erase or replace either identifier. This is not a legal person, statutory group or established ownership/control."
+    },
+    "originals": [
+      {
+        "original_path": "archive/HAVA_VIDA_AWESWELL_GROUP_PERIMETER_BENEFICIAL_POSITION_23SEP2026.md",
+        "preserved_path": "governance/chatgpt-memory/history/pr-1791/archive/HAVA_VIDA_AWESWELL_GROUP_PERIMETER_BENEFICIAL_POSITION_23SEP2026.md",
+        "git_blob_sha": "3af6adf3da1d254394ccf21365164e8caeeabdb2",
+        "sha256": "69f99d48a03964cb89c4e810e945007149849f756c3ace1a1e2480059f7fb228",
+        "bytes": 3350,
+        "state": "HISTORICAL_PREDECESSOR_NOT_ACTIVE_AUTHORITY"
+      },
+      {
+        "original_path": "assets/data/hava-vida-aweswell-beneficial-position-20260923.json",
+        "preserved_path": "governance/chatgpt-memory/history/pr-1791/assets/data/hava-vida-aweswell-beneficial-position-20260923.json",
+        "git_blob_sha": "f2f033b5bc83aa2bf80a18486de268fad418a703",
+        "sha256": "8d389718e571f9195978a0af73122fc708957689d053be454957689384dacbf4",
+        "bytes": 6084,
+        "state": "HISTORICAL_PREDECESSOR_NOT_ACTIVE_AUTHORITY"
+      },
+      {
+        "original_path": "ops/continuity/CHATGPT_MASTER_MEMORY_SYNC_STATE.json",
+        "preserved_path": "governance/chatgpt-memory/history/pr-1791/ops/continuity/CHATGPT_MASTER_MEMORY_SYNC_STATE.json",
+        "git_blob_sha": "bcc6fb180ecffcfbeb06d49f9aa6601f03371b36",
+        "sha256": "2c1d5e82a6cfc90a6e56a59ea6039554b2f61fb4ed9bf9e53145d81cd1afb2d7",
+        "bytes": 1482,
+        "state": "HISTORICAL_PREDECESSOR_NOT_ACTIVE_AUTHORITY"
+      },
+      {
+        "original_path": "governance/chatgpt-memory/MASTER_MEMORY_PUBLIC.md",
+        "preserved_path": "governance/chatgpt-memory/history/pr-1791/governance/chatgpt-memory/MASTER_MEMORY_PUBLIC.md",
+        "git_blob_sha": "ec25f880b7c1e44d07e0181d1bcdb66f2b680193",
+        "sha256": "f3b8958f98d48888aba272e8755ad9adc711e41516b9c113ed76ac5b8d7f9b93",
+        "bytes": 5364,
+        "state": "HISTORICAL_PREDECESSOR_NOT_ACTIVE_AUTHORITY"
+      },
+      {
+        "original_path": "governance/chatgpt-memory/MASTER_MEMORY_COMPACT.txt",
+        "preserved_path": "governance/chatgpt-memory/history/pr-1791/governance/chatgpt-memory/MASTER_MEMORY_COMPACT.txt",
+        "git_blob_sha": "a8c5b5c625ff6df4fe5ae7fe36713c30b291ea84",
+        "sha256": "bdde03a58fc1e704d124a519de8505e2869f4f6c3a6c759127dbc67acad51d08",
+        "bytes": 2368,
+        "state": "HISTORICAL_PREDECESSOR_NOT_ACTIVE_AUTHORITY"
+      }
+    ],
+    "residual_status": "NONZERO_KEEP_PREDECESSOR_OPEN",
+    "primary_binary_preservation": "AMBER_NOT_REAUDITED_NO_SOURCE_STATUS_UPGRADE",
+    "authority": "Technical reconciliation only; no trust, ownership, UBO, legal-group or source-binary finding.",
+    "path_disposition_20261006": {
+      "reviewed_predecessor_head": "dcd0ab896ad798f9644a42cbe9f482d5675fbf56",
+      "reviewed_successor_head": "b9f232f4b26167b08cc85c25a020e6a9da2430d2",
+      "reviewed_main": "f0d472567ad71a4140ae8ab3eb7a408aa8aa9e5f",
+      "coverage": {
+        "predecessor_paths": 26,
+        "exact_active": 1,
+        "exact_historical": 5,
+        "differing_paths_reviewed": 20,
+        "historical_field_captures": 5,
+        "binary_custody_reaudited": false
+      },
+      "classification_boundary": "Every differing path has a technical disposition. Reviewed does not mean all substantive residuals are closed. This record preserves proposals without activating them.",
+      "path_inventory": [
+        {
+          "predecessor_path": ".github/workflows/alberto-meeting-point-cross-proceeding.yml",
+          "predecessor_blob": "f10edab5091f17c737176e96d825272d36c5d5b1",
+          "successor_path": ".github/workflows/alberto-meeting-point-cross-proceeding.yml",
+          "successor_blob_at_review": "6aa74508fdff197bd6da5882cf9fc63bcaf4062c",
+          "disposition": "SUPERSEDED_TECHNICAL_CHANGE",
+          "reason": "Retain current-main workflow byte for byte. Do not carry the unrelated 2022-11-28 to 2022-12-28 API-header change or overwrite the dated live 379-ID attestation with candidate 381. Candidate source projections are tested separately; no deployment attestation is claimed."
+        },
+        {
+          "predecessor_path": "AGENTS.md",
+          "predecessor_blob": "5f758b9a3edeedb3e43db682667735d45242d398",
+          "successor_path": "AGENTS.md",
+          "successor_blob_at_review": "0d853e915f8cc2c8b8de533bafe050ad4164be80",
+          "disposition": "INTEGRATED_ADDITIVELY",
+          "reason": "PD-MEM-001 bootstrap is present. Current-main stewardship and later controls remain intact; predecessor whole-file replacement is not appropriate."
+        },
+        {
+          "predecessor_path": "CHATGPT_START_HERE.md",
+          "predecessor_blob": "7b700b923dc63f914c256b040bea8fb255b86ed9",
+          "successor_path": "CHATGPT_START_HERE.md",
+          "successor_blob_at_review": "59f7e18d69398ef89c508f54fd9215ce0ba08d2e",
+          "disposition": "INTEGRATED_ADDITIVELY",
+          "reason": "Successor PD-MEM paragraph points to its active relationship record and preserves historical/attributed/current-status boundaries. All current-main bootstrap material remains."
+        },
+        {
+          "predecessor_path": "archive/HAVA_VIDA_AWESWELL_GROUP_PERIMETER_BENEFICIAL_POSITION_23SEP2026.md",
+          "predecessor_blob": "3af6adf3da1d254394ccf21365164e8caeeabdb2",
+          "successor_path": "governance/chatgpt-memory/history/pr-1791/archive/HAVA_VIDA_AWESWELL_GROUP_PERIMETER_BENEFICIAL_POSITION_23SEP2026.md",
+          "successor_blob_at_review": "3af6adf3da1d254394ccf21365164e8caeeabdb2",
+          "disposition": "EXACT_HISTORICAL_COPY",
+          "reason": "Exact original Git blob in successor history; not active authority."
+        },
+        {
+          "predecessor_path": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+          "predecessor_blob": "35d5682b55fe8027de4d29aebf1d0f1623ff24be",
+          "successor_path": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+          "successor_blob_at_review": "4252198ab4caa19db35ae6f5fb461fc1ce2abbd8",
+          "disposition": "REVIEWED_WITH_OPEN_IDENTITY_ADMISSION",
+          "reason": "E051 historical roles, project context and attributed trust position are retained. The predecessor S-0012 admission is preserved as a proposal, not silently asserted in the successor canonical table."
+        },
+        {
+          "predecessor_path": "assets/data/chatgpt-master-memory-required-controls-v1.json",
+          "predecessor_blob": "328821a859cadd3555b0dc29ec2b045554127900",
+          "successor_path": "assets/data/chatgpt-master-memory-required-controls-v1.json",
+          "successor_blob_at_review": "328821a859cadd3555b0dc29ec2b045554127900",
+          "disposition": "EXACT_ACTIVE_COPY",
+          "reason": "Exact original Git blob remains active."
+        },
+        {
+          "predecessor_path": "assets/data/chatgpt-master-memory-v1.json",
+          "predecessor_blob": "0e043ec8e0c845317fbb7c43e23a86dff05eb921",
+          "successor_path": "assets/data/chatgpt-master-memory-v1.json",
+          "successor_blob_at_review": "276c96c6a2c4f47f4a6c5adb6dc9e73b4553ae82",
+          "disposition": "INTEGRATED_WITH_SOURCE_PATH_CROSSWALK",
+          "reason": "Memory ID, required controls, volatile rule and relationship control survive. Public/compact files retain active paths; the predecessor Hava Vida narrative has an exact historical copy and an explicit active successor narrative."
+        },
+        {
+          "predecessor_path": "assets/data/hava-vida-aweswell-beneficial-position-20260923.json",
+          "predecessor_blob": "f2f033b5bc83aa2bf80a18486de268fad418a703",
+          "successor_path": "governance/chatgpt-memory/history/pr-1791/assets/data/hava-vida-aweswell-beneficial-position-20260923.json",
+          "successor_blob_at_review": "f2f033b5bc83aa2bf80a18486de268fad418a703",
+          "disposition": "EXACT_HISTORICAL_COPY",
+          "reason": "Exact original Git blob in successor history; not active authority."
+        },
+        {
+          "predecessor_path": "assets/data/matter-identity-operational-control-v1.json",
+          "predecessor_blob": "607327623d80d7daa85d2eb36bdc18f95877ace5",
+          "successor_path": "assets/data/matter-identity-operational-control-v1.json",
+          "successor_blob_at_review": "7d8363ed166c523e64824f265d3e106e0e087e98",
+          "disposition": "HISTORICAL_OBSERVATION_RETAINED",
+          "reason": "This is the La Laguna recovery comparison with ids_allocated=0. Retain current-main 379 observation; candidate 380 and predecessor 381 do not rewrite that historical observation."
+        },
+        {
+          "predecessor_path": "assets/data/matter-identity-registry-v1.json",
+          "predecessor_blob": "64a0aafda1abd7c1423f2943548a12e52003b3f9",
+          "successor_path": "assets/data/matter-identity-registry-v1.json",
+          "successor_blob_at_review": "ee3fbf51e18ad88e0f7204b612563b50e1584102",
+          "disposition": "CURRENT_PROJECTION_RECONCILED",
+          "reason": "The current 380 total includes Hava Vida and 11 structures. The predecessor 381 denominator and Group Sun Rock coverage entry depend on unadmitted S-0012. Other semantic registry differences and formatting cannot justify importing that admission."
+        },
+        {
+          "predecessor_path": "assets/data/matter-identity-registry-v1.organisations.json",
+          "predecessor_blob": "63d34d8fd180908b4e14257165eb2a643d87e053",
+          "successor_path": "assets/data/matter-identity-registry-v1.organisations.json",
+          "successor_blob_at_review": "c02aa2750bb6fcc0f859ae333984a901dd91bd57",
+          "disposition": "REVIEWED_WITH_OPEN_IDENTITY_ADMISSION",
+          "reason": "O-0103 and O-0001 differing fields are preserved below with exact predecessor values. Aliases and Companies House reference survive in E051; active relationships survive in the relationship control. Related S-0012 references remain unadmitted. Later main/successor fields for O-0002 and O-0004 remain intact."
+        },
+        {
+          "predecessor_path": "assets/data/matter-identity-registry-v1.people.json",
+          "predecessor_blob": "4d2c91c9541502d9e12d5fc3ca8a0d2eea9e651d",
+          "successor_path": "assets/data/matter-identity-registry-v1.people.json",
+          "successor_blob_at_review": "8546d731c28d49b995f0abe3a12e9812613bcab2",
+          "disposition": "REVIEWED_WITH_OPEN_IDENTITY_ADMISSION",
+          "reason": "P-0002 source mention and related-organisation fields are preserved below; exact role-date/admission remains open. Unchanged older person records differ only in formatting; later main/successor additions remain intact."
+        },
+        {
+          "predecessor_path": "assets/data/matter-identity-registry-v1.structures.json",
+          "predecessor_blob": "9df36e9a14c0ede3cc2eeb9d69808b959a364312",
+          "successor_path": "assets/data/matter-identity-registry-v1.structures.json",
+          "successor_blob_at_review": "9cec698e748a0b2c38bdc0c98351c9d12c9e4405",
+          "disposition": "REVIEWED_WITH_OPEN_IDENTITY_ADMISSION",
+          "reason": "Preserve the complete S-0012 proposal below as historical/unadmitted. The other 11 predecessor structures are semantically identical to the successor. Do not allocate, renumber, equate or count either Group Sun Rock identifier as a new active CAEPR admission."
+        },
+        {
+          "predecessor_path": "en/matter-identity-registry/index.html",
+          "predecessor_blob": "0cff23a9a539d7729a937fcfa760d95450fc6947",
+          "successor_path": "en/matter-identity-registry/index.html",
+          "successor_blob_at_review": "9e7415045437d82cf6db52fb5c96bab27a7351a7",
+          "disposition": "CURRENT_PROJECTION_RECONCILED",
+          "reason": "English projection uses the actual 380 IDs and 135 difference from the dated 515 comparator. No 381/134 claim is retained without S-0012 admission."
+        },
+        {
+          "predecessor_path": "es/registro-identidad-materia/index.html",
+          "predecessor_blob": "beeda565a14c76861a7df805ff42ad1b52c738d7",
+          "successor_path": "es/registro-identidad-materia/index.html",
+          "successor_blob_at_review": "fbda1b59b1f15461974552214ee1a019a31020a3",
+          "disposition": "CURRENT_PROJECTION_RECONCILED",
+          "reason": "Spanish projection uses the same actual 380 IDs and 135 dated-comparator difference, preserving bilingual parity and source limitations."
+        },
+        {
+          "predecessor_path": "governance/chatgpt-memory/MASTER_MEMORY_COMPACT.txt",
+          "predecessor_blob": "a8c5b5c625ff6df4fe5ae7fe36713c30b291ea84",
+          "successor_path": "governance/chatgpt-memory/history/pr-1791/governance/chatgpt-memory/MASTER_MEMORY_COMPACT.txt",
+          "successor_blob_at_review": "a8c5b5c625ff6df4fe5ae7fe36713c30b291ea84",
+          "disposition": "EXACT_HISTORICAL_COPY",
+          "reason": "Exact original Git blob in successor history; not active authority."
+        },
+        {
+          "predecessor_path": "governance/chatgpt-memory/MASTER_MEMORY_PUBLIC.md",
+          "predecessor_blob": "ec25f880b7c1e44d07e0181d1bcdb66f2b680193",
+          "successor_path": "governance/chatgpt-memory/history/pr-1791/governance/chatgpt-memory/MASTER_MEMORY_PUBLIC.md",
+          "successor_blob_at_review": "ec25f880b7c1e44d07e0181d1bcdb66f2b680193",
+          "disposition": "EXACT_HISTORICAL_COPY",
+          "reason": "Exact original Git blob in successor history; not active authority."
+        },
+        {
+          "predecessor_path": "governance/chatgpt-memory/README.md",
+          "predecessor_blob": "47344dd8348f178c3e4fa9c7d8de5afb2525f7fd",
+          "successor_path": "governance/chatgpt-memory/README.md",
+          "successor_blob_at_review": "3bdb0b9db393868c1b46e262fc023e7adf505ef1",
+          "disposition": "INTEGRATED_ADDITIVELY",
+          "reason": "Successor read order retains primary/current-source precedence, public/private boundary and Settings-memory projection status. Historical predecessor read order remains reconstructable at the predecessor SHA."
+        },
+        {
+          "predecessor_path": "ops/CANONICAL_ENTITY_NAMES.json",
+          "predecessor_blob": "3d42bdebabae48cd3634c2af57c46b75a1c194eb",
+          "successor_path": "ops/CANONICAL_ENTITY_NAMES.json",
+          "successor_blob_at_review": "149a31a5b8f214fd9dba0c35d8500010b9e43bcf",
+          "disposition": "REVIEWED_WITH_OPEN_IDENTITY_ADMISSION",
+          "reason": "E051 preserves source/search aliases, Companies House reference, historical roles and open trust/current-status boundaries. Differing predecessor fields are captured below. The operations-start/role-effective date and S-0012 admission are not silently adopted."
+        },
+        {
+          "predecessor_path": "ops/continuity/CHATGPT_MASTER_MEMORY_SYNC_STATE.json",
+          "predecessor_blob": "bcc6fb180ecffcfbeb06d49f9aa6601f03371b36",
+          "successor_path": "governance/chatgpt-memory/history/pr-1791/ops/continuity/CHATGPT_MASTER_MEMORY_SYNC_STATE.json",
+          "successor_blob_at_review": "bcc6fb180ecffcfbeb06d49f9aa6601f03371b36",
+          "disposition": "EXACT_HISTORICAL_COPY",
+          "reason": "Exact original Git blob in successor history; not active authority."
+        },
+        {
+          "predecessor_path": "ops/continuity/GITHUB_GITLAB_PUBLIC_GAP_CLOSURE_20260919.json",
+          "predecessor_blob": "93c759262089752e66d76415c9dfff89d3ccc9c2",
+          "successor_path": "ops/continuity/GITHUB_GITLAB_PUBLIC_GAP_CLOSURE_20260919.json",
+          "successor_blob_at_review": "2c1c140fdd76fa45e2536b3776d69d622ad02dd9",
+          "disposition": "CURRENT_PROJECTION_RECONCILED",
+          "reason": "Successor comparison is 515 versus 380, difference 135, tied to current candidate counts. The dated external 515 observation is not new host-parity proof."
+        },
+        {
+          "predecessor_path": "ops/continuity/GITHUB_OPERATIONAL_BACKEND_PARITY_20260917.json",
+          "predecessor_blob": "77f30b727a6e7f9519c6dee2fe0ceada3277394e",
+          "successor_path": "ops/continuity/GITHUB_OPERATIONAL_BACKEND_PARITY_20260917.json",
+          "successor_blob_at_review": "4301c50b46ac4f66f8bec95e56af471993cf216f",
+          "disposition": "CURRENT_PROJECTION_RECONCILED",
+          "reason": "Candidate identity denominator is 380; source-recovery and exact-host-parity limitations remain. Predecessor formatting changes are non-substantive."
+        },
+        {
+          "predecessor_path": "scripts/reconcile_identity_registry_projections.py",
+          "predecessor_blob": "69f0a263da900ab9eee5fd23c15b54b8bdaa2df4",
+          "successor_path": "scripts/reconcile_identity_registry_projections.py",
+          "successor_blob_at_review": "f2ae39d8a7ea7eaeb532f7df00f9372804d745d7",
+          "disposition": "SUPERSEDED_BY_DYNAMIC_PROJECTION",
+          "reason": "Successor derives current count and 515-minus-current difference from loaded registry counts in both languages. Predecessor hard-coded 381/134 replacement is unnecessary."
+        },
+        {
+          "predecessor_path": "scripts/validate_alberto_meeting_point_cross_proceeding.py",
+          "predecessor_blob": "e513aceaa7db7c5f20412f0ac51fbba3d27634f7",
+          "successor_path": "scripts/validate_alberto_meeting_point_cross_proceeding.py",
+          "successor_blob_at_review": "19a105e06421979d39e62fbc960f83eabec7b18c",
+          "disposition": "HISTORICAL_PIN_RETAINED_CURRENT_COUNT_SEPARATE",
+          "reason": "Historical 336 snapshot retains 11 structures; changing it to 12 while retaining total 336 is not source admission. Current candidate count is separately 380 with 11 structures. The historical live 204 snapshot remains distinct."
+        },
+        {
+          "predecessor_path": "scripts/validate_current_reverse_engineered_digest.py",
+          "predecessor_blob": "d378e318a9c4d93390dd036ac67c6a1e6afb6d84",
+          "successor_path": "scripts/validate_current_reverse_engineered_digest.py",
+          "successor_blob_at_review": "fe2f996cc978afbfabeadf6f1c2f05924f9e4ec1",
+          "disposition": "HISTORICAL_PIN_RETAINED_CURRENT_COUNT_SEPARATE",
+          "reason": "The dated 336 snapshot retains 11 structures and current candidate counts are separately 380. Reject the predecessor historical structure-count rewrite; preserve dated 204 live state."
+        },
+        {
+          "predecessor_path": "tests/test_github_outage_backend_20260917.py",
+          "predecessor_blob": "538bc81c414eca6d25ddc15f000dd1a15c09fdf7",
+          "successor_path": "tests/test_github_outage_backend_20260917.py",
+          "successor_blob_at_review": "7e7c9fd15f7f1d30b935867dd584f41638f8bef7",
+          "disposition": "CURRENT_PROJECTION_RECONCILED",
+          "reason": "The equality assertion between registry and parity remains and the candidate expected count is 380. Importing 381 would falsely count an unadmitted structure; no test is disabled."
+        }
+      ],
+      "historical_field_captures": [
+        {
+          "source_path": "assets/data/matter-identity-registry-v1.organisations.json",
+          "source_blob": "63d34d8fd180908b4e14257165eb2a643d87e053",
+          "record_id": "PD-SP-O-0001",
+          "scope": "ALL_DIFFERING_PREDECESSOR_FIELDS",
+          "status": "HISTORICAL_PROPOSAL_NOT_ACTIVE_ADMISSION",
+          "predecessor_values": {
+            "related_structure_ids": [
+              "PD-SP-S-0012"
+            ]
+          },
+          "verification": "Values compared with the exact predecessor Git blob; these are historical source assertions, not new independent proof."
+        },
+        {
+          "source_path": "assets/data/matter-identity-registry-v1.organisations.json",
+          "source_blob": "63d34d8fd180908b4e14257165eb2a643d87e053",
+          "record_id": "PD-SP-O-0103",
+          "scope": "ALL_DIFFERING_PREDECESSOR_FIELDS",
+          "status": "HISTORICAL_PROPOSAL_NOT_ACTIVE_ADMISSION",
+          "predecessor_values": {
+            "aliases": [
+              "Hava Vida Travel & Tourism, S.L.",
+              "HAVA VIDA TRAVEL & TOURISM SL",
+              "HAVAVIDA T&T, S.L.",
+              "HAVAVIDA"
+            ],
+            "identity_sources": [
+              "BORME-A-2012-27-38, entry 64020 — incorporation, unipersonality, Patricia Isabel Domínguez Montelongo as sole shareholder and sole administrator, sheet TF 49735",
+              "BORME-A-2012-110-38, entry 248217 — registered-address change, same sheet TF 49735",
+              "UK Companies House officer record for company 10762489 identifies HAVA VIDA TRAVEL AND TOURISM SL, Spain registration B76564434"
+            ],
+            "identity_boundary": "Identity and dated corporate facts only. The 2012 BORME proves Patricia's sole-shareholder/sole-administrator status at incorporation, not necessarily current 2026 status. Historical project-perimeter treatment does not itself prove legal group ownership. Gil Marer's 23-Sep-2026 trust/beneficial-ownership position is attributed and remains open to documentary and legal proof.",
+            "related_people": [
+              "PD-SP-P-0002"
+            ],
+            "related_organisations": [
+              "PD-SP-O-0001"
+            ],
+            "relationship_edges": [
+              {
+                "to": "PD-SP-P-0002",
+                "type": "SOLE_SHAREHOLDER_AT_INCORPORATION",
+                "date": "2012-01-26",
+                "status": "OFFICIAL_BORME_FACT"
+              },
+              {
+                "to": "PD-SP-P-0002",
+                "type": "SOLE_ADMINISTRATOR_AT_INCORPORATION",
+                "date": "2012-01-26",
+                "status": "OFFICIAL_BORME_FACT"
+              },
+              {
+                "to": "PD-SP-O-0001",
+                "type": "ATTRIBUTED_BENEFICIAL_INTEREST_TRUST_POSITION",
+                "date": "2026-09-23",
+                "status": "GIL_MARER_ATTRIBUTED_OPEN_PROOF"
+              }
+            ],
+            "source_mentions": [
+              {
+                "source_key": "BORME-A-2012-27-38-64020",
+                "source_literal": "HAVA VIDA TRAVEL & TOURISM SL",
+                "role": "Company incorporated; Patricia Isabel Domínguez Montelongo sole shareholder and sole administrator",
+                "assertion_status": "OFFICIAL_REGISTRY_FACT_AT_INCORPORATION"
+              },
+              {
+                "source_key": "AN-QUERELLA-2023-09-21",
+                "source_literal": "Hava Vida Travel & Tourism SL",
+                "role": "Named in party pleading as part of a project negotiated by LPB and Aweswell through Grupo Sun Rock",
+                "assertion_status": "PARTY_PLEADING_NOT_JUDICIAL_FINDING"
+              },
+              {
+                "source_key": "GM-ATTR-2026-09-23-HV-AW",
+                "source_literal": "Hava Vida Travel & Tourism, S.L.U.",
+                "role": "Gil Marer's attributed beneficial-ownership/trust position in favour of AWESWELL LIMITED",
+                "assertion_status": "OWNER_ATTRIBUTED_POSITION_OPEN_PROOF"
+              }
+            ],
+            "related_structure_ids": [
+              "PD-SP-S-0012"
+            ]
+          },
+          "verification": "Values compared with the exact predecessor Git blob; these are historical source assertions, not new independent proof."
+        },
+        {
+          "source_path": "assets/data/matter-identity-registry-v1.people.json",
+          "source_blob": "4d2c91c9541502d9e12d5fc3ca8a0d2eea9e651d",
+          "record_id": "PD-SP-P-0002",
+          "scope": "ALL_DIFFERING_PREDECESSOR_FIELDS",
+          "status": "HISTORICAL_PROPOSAL_NOT_ACTIVE_ADMISSION",
+          "predecessor_values": {
+            "source_mentions": [
+              {
+                "source_key": "BORME-A-2012-27-38-64020",
+                "source_literal": "DOMINGUEZ MONTELONGO PATRICIA ISABEL",
+                "role": "Sole shareholder and sole administrator of Hava Vida Travel & Tourism SL at incorporation on 26-Jan-2012",
+                "assertion_status": "OFFICIAL_REGISTRY_FACT_AT_INCORPORATION"
+              }
+            ],
+            "related_organisation_ids": [
+              "PD-SP-O-0103",
+              "PD-SP-O-0001"
+            ]
+          },
+          "verification": "Values compared with the exact predecessor Git blob; these are historical source assertions, not new independent proof."
+        },
+        {
+          "source_path": "assets/data/matter-identity-registry-v1.structures.json",
+          "source_blob": "9df36e9a14c0ede3cc2eeb9d69808b959a364312",
+          "record_id": "PD-SP-S-0012",
+          "scope": "COMPLETE_PROPOSED_RECORD",
+          "status": "HISTORICAL_PROPOSAL_NOT_ACTIVE_ADMISSION",
+          "predecessor_values": {
+            "id": "PD-SP-S-0012",
+            "type": "STRUCTURE",
+            "name": "Group Sun Rock / Sun Rock project perimeter",
+            "aliases": [
+              "Group Sun Rock",
+              "Grupo Sun Rock",
+              "Sun Rock"
+            ],
+            "identity_resolution": "CARET_CONFIRMED_PROJECT_STRUCTURE",
+            "identity_sources": [
+              "21-Sep-2023 Audiencia Nacional querella — party pleading describes LPB and Aweswell negotiating through Grupo Sun Rock with Hava Vida Travel & Tourism and other counterparties",
+              "Gil Marer attribution dated 23-Sep-2026 — Hava Vida has always been regarded within the Aweswell / Group Sun Rock perimeter"
+            ],
+            "identity_boundary": "Project/branding/relationship perimeter only; not a separate legal person, statutory corporate group, partnership, trust, consolidated accounting group or finding of common ownership/control. Each legal person and relationship requires its own source bridge.",
+            "related_organisations": [
+              "PD-SP-O-0001",
+              "PD-SP-O-0103"
+            ],
+            "related_people": [
+              "PD-SP-P-0001",
+              "PD-SP-P-0002"
+            ],
+            "related_event_ids": [
+              "PD-HV-EVT-0003",
+              "PD-HV-EVT-0004"
+            ]
+          },
+          "verification": "Values compared with the exact predecessor Git blob; these are historical source assertions, not new independent proof."
+        },
+        {
+          "source_path": "ops/CANONICAL_ENTITY_NAMES.json",
+          "source_blob": "3d42bdebabae48cd3634c2af57c46b75a1c194eb",
+          "record_id": "E051",
+          "scope": "ALL_DIFFERING_PREDECESSOR_FIELDS",
+          "status": "HISTORICAL_PROPOSAL_NOT_ACTIVE_ADMISSION",
+          "predecessor_values": {
+            "controlled_context": "Project-side Spanish company; historical Group Sun Rock/Aweswell project-perimeter context; separately identified payer in the Garrigues payment record",
+            "official_sources": [
+              {
+                "authority": "Boletín Oficial del Registro Mercantil",
+                "reference": "BORME-A-2012-27-38, entry 64020",
+                "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-27-38",
+                "proposition": "The registry publication records incorporation of HAVA VIDA TRAVEL & TOURISM SL, declaration of unipersonality, Patricia Isabel Domínguez Montelongo as sole shareholder and sole administrator, and sheet TF 49735. The publication does not print the NIF."
+              },
+              {
+                "authority": "UK Companies House",
+                "reference": "Spanish company officer record for company 10762489",
+                "url": "https://find-and-update.company-information.service.gov.uk/company/10762489/officers",
+                "proposition": "The public officer record identifies HAVA VIDA TRAVEL AND TOURISM SL and company number B76564434; a current Spanish certificate remains the controlling target."
+              },
+              {
+                "authority": "Boletín Oficial del Registro Mercantil",
+                "reference": "BORME-A-2012-110-38, entry 248217",
+                "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-110-38",
+                "proposition": "The registry publication records the 31-May-2012 change of Hava Vida's registered address to Calle Heraclio Sánchez 54, San Cristóbal de La Laguna, on sheet TF 49735."
+              }
+            ],
+            "incorporation_roles": {
+              "effective_date": "2012-01-26",
+              "registry_act_date": "2012-01-27",
+              "sole_shareholder": "Patricia Isabel Domínguez Montelongo",
+              "sole_shareholder_caepr_id": "PD-SP-P-0002",
+              "sole_administrator": "Patricia Isabel Domínguez Montelongo",
+              "sole_administrator_caepr_id": "PD-SP-P-0002",
+              "status": "OFFICIAL_BORME_FACT_AT_INCORPORATION"
+            },
+            "group_perimeter_context": {
+              "status": "SOURCE_AND_OWNER_ATTRIBUTED_CONTEXT_NOT_LEGAL_GROUP_FINDING",
+              "source_bridge": "The 21-Sep-2023 Audiencia Nacional querella states that LPB and Aweswell negotiated a project through Grupo Sun Rock with Hava Vida Travel & Tourism and other counterparties. This is party pleading content, not an independent judicial finding of group ownership.",
+              "owner_attribution": "On 23-Sep-2026 Gil Marer states that Hava Vida Travel & Tourism, S.L.U. has always been thought of as part of the Aweswell / Group Sun Rock perimeter.",
+              "caepr_structure_id": "PD-SP-S-0012"
+            },
+            "beneficial_ownership_position": {
+              "status": "GIL_MARER_ATTRIBUTED_POSITION_OPEN_PROOF",
+              "attributed_to": "Gil Marer",
+              "attribution_date": "2026-09-23",
+              "proposition": "Gil Marer states that, although Patricia Isabel Domínguez Montelongo is/was the registered sole shareholder, he understands the Hava Vida shares to be held on trust for the benefit of AWESWELL LIMITED under UK-law thinking.",
+              "legal_boundary": "Do not state that a trust, nominee arrangement, beneficial ownership, resulting trust, constructive trust or other UK-law equitable interest is legally established without the relevant instrument, conduct/accounting evidence and jurisdiction-specific legal analysis. Spanish corporate registration and any UK beneficial/equitable characterization are separate layers.",
+              "proof_targets": [
+                "Any trust deed/declaration/nominee agreement or board/shareholder record",
+                "Hava Vida share register, incorporation/ownership records and current Spanish Registro Mercantil certificate",
+                "AWESWELL LIMITED board minutes, accounts, ledgers, tax/accounting treatment or investment records",
+                "Contemporaneous correspondence evidencing beneficial-ownership intention",
+                "Spanish and UK legal analysis on recognition/effect of any asserted trust over Spanish-company shares"
+              ]
+            },
+            "current_status_rule": "BORME confirms Patricia as sole shareholder and sole administrator at incorporation in January 2012. Do not state that this remains the current 2026 Spanish registry status without a current Spanish certificate or equivalent primary record."
+          },
+          "verification": "Values compared with the exact predecessor Git blob; these are historical source assertions, not new independent proof."
+        }
+      ],
+      "field_disposition": [
+        {
+          "scope": "O-0103 aliases and Companies House source description",
+          "result": "RETAINED_THROUGH_E051",
+          "rule": "E051 source_literal_variants and official_sources retain these; do not promote search/source forms into current legal-name aliases."
+        },
+        {
+          "scope": "O-0103 identity boundary, relationships and source mentions",
+          "result": "ACTIVE_PROPOSITIONS_RETAINED_EXACT_METADATA_CAPTURED",
+          "rule": "The active relationship control holds historical roles, source families and attributed trust edge. The predecessor values remain available above. No source-family match is binary equivalence."
+        },
+        {
+          "scope": "O-0001/O-0103 related_structure_ids and S-0012 complete proposal",
+          "result": "OPEN_CANONICAL_ADMISSION",
+          "rule": "Resolve exact project-perimeter identity, allocator/reservation and source support in current CAEPR before admission. PD-SP-STRUCT-GROUP-SUN-ROCK remains context-only; no same_as or renumbering is made."
+        },
+        {
+          "scope": "P-0002 source_mentions and related_organisation_ids",
+          "result": "OPEN_ROLE_DATE_AND_TYPED_RELATIONSHIP_ADMISSION",
+          "rule": "Preserve the original 26-Jan role wording above. Operations commencement and 27-Jan registry act are distinct. Do not infer a direct Patricia-to-Aweswell corporate role from the proposed relationship list."
+        },
+        {
+          "scope": "E051 incorporation_roles, official_sources and group/beneficial position fields",
+          "result": "ACTIVE_PROPOSITIONS_RETAINED_EXACT_METADATA_CAPTURED",
+          "rule": "Historical roles, address-change source family, Companies House, attributed beneficial position and open proof survive in active controls. The predecessor effective-date claim and structure admission remain open; historical field labels do not establish current facts."
+        }
+      ],
+      "open_work": [
+        {
+          "owner": "PR #1795 / PD-HV-AW-20260923-01",
+          "item": "Canonical admission and exact role-date disposition of captured metadata",
+          "closure_test": "Source-qualified CAEPR decision with immutable IDs, typed relationships and distinct operations/registry dates; regenerate projections only if admission changes counts."
+        },
+        {
+          "owner": "PR #1795 / existing private custody control",
+          "item": "Original binary equivalence and current private Drive custody",
+          "closure_test": "Authorised native-byte readback, version/hash comparison and custody receipt outside public Git. Do not infer from text copies, file titles, source-family crosswalks or prior VERIFIED_CREATED."
+        },
+        {
+          "owner": "PR #1795 / existing privacy_remediation control",
+          "item": "Historical private-locator exposure",
+          "closure_test": "Review private custody and access/remediation separately; current locator removal does not erase historical commits."
+        },
+        {
+          "owner": "PR #1795 / PD-HV-COLL-0001",
+          "item": "Source-specific identifier collision",
+          "closure_test": "Underlying document and primary identifier certificate; OPEN_DO_NOT_MERGE remains."
+        }
+      ],
+      "native_ci_observation": {
+        "head": "b9f232f4b26167b08cc85c25a020e6a9da2430d2",
+        "check_runs": 49,
+        "success": 44,
+        "failure": "Advisory evidence and continuity validation: community-acta-authority-interconnectivity-v1.json stale",
+        "skipped": 4,
+        "failed_job": 112145034864,
+        "failed_run": 37425797310,
+        "scope": "Builder, ten input files and output are exact main blobs. This is inherited source staleness, not introduced by the PD-MEM candidate. No rerun or gate bypass; required JSP scoped QA passed. Later steps in the failed advisory job were not executed."
+      },
+      "publication_boundary": "Repository review/control metadata only, potentially Pages-readable as repository content; not linked into rendered site navigation. No merge, deployment, branch deletion, source-binary or legal-admission claim.",
+      "closure_decision": "NONZERO_KEEP_PREDECESSOR_OPEN"
+    },
+    "source_and_custody_verification_20261006": {
+      "reviewed_successor_head": "acad751cad05b415da346fb102e31e6769f16234",
+      "github_main": "f0d472567ad71a4140ae8ab3eb7a408aa8aa9e5f",
+      "gitlab_main": "16e7319673d2e3ca1e7d1d7f99b0da66a5f4bcfe",
+      "scope": "Two official BORME entries; one native pleading PDF and its existing hash; two successor-linked native memory documents; current owner-only permission metadata for those documents and their folder. Not the entire private source corpus.",
+      "source_family_disposition": [
+        {
+          "predecessor_id": "PD-HV-SRC-0001",
+          "successor_id": "PD-HV-SRC-20120208-BORME-64020",
+          "result": "SAME_OFFICIAL_REFERENCE_AND_ENTRY_VERIFIED",
+          "binary_equivalence": "NOT_CLAIMED"
+        },
+        {
+          "predecessor_id": "PD-HV-SRC-0002",
+          "successor_id": "PD-HV-SRC-20120612-BORME-248217",
+          "result": "SAME_OFFICIAL_REFERENCE_AND_ENTRY_VERIFIED",
+          "binary_equivalence": "NOT_CLAIMED"
+        },
+        {
+          "predecessor_id": "PD-HV-SRC-0003",
+          "successor_id": "PD-HV-SRC-20230921-ANQ-P53",
+          "result": "EXISTING_MANIFEST_NATIVE_PDF_HASH_MATCHED_AND_PASSAGE_VERIFIED",
+          "binary_equivalence": "VERIFIED_TO_EXISTING_SOURCE_MANIFEST_NOT_EVERY_UNLOCATED_HISTORICAL_COPY"
+        },
+        {
+          "predecessor_id": "PD-HV-SRC-0004",
+          "successor_id": "PD-HV-SRC-20260923-GM-ATTRIBUTION",
+          "result": "ATTRIBUTION_RETAINED_IN_PRIVATE_AND_PUBLIC_CONTROLS",
+          "original_statement_native_capture": "NOT_INDEPENDENTLY_RECOVERED_IN_THIS_PASS"
+        }
+      ],
+      "date_disposition": {
+        "result": "OPERATIONS_AND_REGISTRY_DATES_RECONCILED",
+        "historical_metadata_captures": "Preserved unchanged; any predecessor field describing 26-Jan as a separately proved role-effective date is not admitted on that basis."
+      },
+      "project_context": {
+        "result": "SOURCE_PASSAGE_VERIFIED_CANONICAL_ADMISSION_PENDING",
+        "current_github_structures": 11,
+        "current_gitlab_structures": 11,
+        "proposed_id": "PD-SP-S-0012",
+        "successor_context_id": "PD-SP-STRUCT-GROUP-SUN-ROCK",
+        "allocation": "No new identity allocated. Both current main structure shards omit S-0012; source-supported project context does not itself decide the pending canonical/typed-relationship admission."
+      },
+      "private_custody": {
+        "result": "VERIFIED_BOUNDED_CURRENT_READBACK",
+        "native_memory_documents": 2,
+        "current_revision_readbacks": 2,
+        "owner_only_documents": 2,
+        "owner_only_parent_folders": 1,
+        "compact_normalised_text_matches_public_projection": true,
+        "full_public_section_differing_sentences": 1,
+        "difference": "AWESWELL spelling-control wording; private addendum intentionally excluded from public projection.",
+        "normalisation": "Strip leading BOM; normalize CRLF to LF; strip line-edge whitespace; omit blank lines. This is text comparison, not native binary equivalence.",
+        "additional_full_memory_variants_seen": true,
+        "complete_cross_version_reconciliation": "OPEN",
+        "historical_git_locator_exposure": "OPEN_NO_HISTORY_REWRITE",
+        "private_receipt": "Existing PD-MEM-001 cross-host sync receipt appended and read back; exact private locators remain there."
+      },
+      "remaining_admission_and_custody_work": [
+        "S-0012/context-ID and typed person/company admission",
+        "Complete reconciliation of additional private-memory variants",
+        "Historical Git locator exposure and current-source identifier collision",
+        "Documentary/legal proof for both distinct trust layers: AWESWELL shares→Patricia+Gil; Hava Vida/Pink shares→AWESWELL"
+      ],
+      "closure_decision": "NONZERO_KEEP_PREDECESSOR_OPEN",
+      "boundary": "Technical source/custody verification does not establish current corporate status, trust validity, UBO/tax treatment, legal-group ownership, source-corpus completeness or public deployment.",
+      "original_statement_native_capture": "CLARIFIED_BY_DIRECT_USER_STATEMENT_20261006_TWO_SEPARATE_TRUST_LAYERS"
+    },
+    "qualified_person_metadata_disposition_20261006": {
+      "reviewed_successor_head": "d7278b0da7c861505060c8b168821142707593d1",
+      "record": "PD-SP-P-0002",
+      "result": "SOURCE_MENTION_AND_TYPED_ROLE_DISCOVERY_REPAIRED",
+      "source": "PD-HV-SRC-20120208-BORME-64020",
+      "source_mention": "Admitted to the existing person record with source literal, official reference and separate operations, registry and publication dates. No current role is asserted.",
+      "historical_hava_roles": "The existing SOLE_SHAREHOLDER_AT_INCORPORATION and SOLE_ADMINISTRATOR_AT_INCORPORATION edges remain unchanged; the person record now points to that single relationship control and O-0103.",
+      "predecessor_untyped_aweswell_link": "NOT_ADMITTED_AS_DIRECT_CORPORATE_ROLE. Its source proposition remains available through the existing ASSERTED_BENEFICIAL_TRUST_POSITION edge and exact historical field capture.",
+      "supersedes_only": "The P-0002 role-date/source-mention/typed-discovery portion of the earlier open metadata-admission item. It does not settle S-0012, source authenticity, identifier collision, current corporate status or trust proof.",
+      "preservation": "All pre-existing fields in every person record are unchanged; only fields on P-0002 were added. All previous path dispositions and historical captures remain unchanged.",
+      "new_identity_ids": 0,
+      "identity_counts_changed": false,
+      "closure_decision": "NONZERO_KEEP_PREDECESSOR_OPEN"
+    },
+    "private_memory_version_dispositions_20261006": {
+      "scope": "Nine native memory documents returned by the bounded PD-MEM-001 Drive document search; five full and four compact. Not a universal source-corpus claim.",
+      "current_revision_text_matches": 9,
+      "distinct_normalised_texts": 9,
+      "previous_substantive_revisions_compared": 3,
+      "current_owner_only_documents": 9,
+      "current_owner_only_parent_folders": 5,
+      "result": "BOUNDED_VERSION_INVENTORY_AND_DISPOSITIONS_COMPLETE",
+      "receipt": "Existing private cross-host sync receipt contains nine native file links, revision IDs/dates, normalized-text SHA-256 fingerprints and individual dispositions; original receipt content preserved and read back.",
+      "normalisation": "Strip leading BOM, normalize CRLF to LF, strip line-edge whitespace and omit blank lines. Text fingerprints are not native-binary hashes.",
+      "no_duplicate_claim": "All nine normalized current texts differ. Titles and shared control IDs do not establish equivalence.",
+      "candidate_mirrors": "Existing successor-linked full/compact pair remains the reviewed candidate counterpart. Compact normalized text matches. Other private versions are preserved, not overwritten or declared superseded.",
+      "historical_registration_claims": "Dated memory statements about S-0012 do not prove admission on either current main. Existing unadmitted proposal and context ID remain distinct.",
+      "remaining_alignment": "OPEN_SUBSTANTIVE_CROSS_VERSION_ALIGNMENT; later private additions remain in their original lineages and do not become new public-source derivatives.",
+      "privacy": "No private content, document title, provider locator or private-text fingerprint is copied into public Git. Owner-only metadata does not erase historical exposure or prove historical access.",
+      "closure_decision": "NONZERO_KEEP_PREDECESSOR_OPEN"
+    }
+  },
+  "ownership_layer_clarification_20261006": {
+    "control_id": "PD-AW-GROUP-BENEFICIAL-LAYERS-20261006-01",
+    "rule": "TWO_SEPARATE_TRUST_PROPOSITIONS_DO_NOT_COLLAPSE",
+    "layer_1": {
+      "shares": "AWESWELL LIMITED shares",
+      "attributed_holder_or_trustee": "Patricia Domínguez",
+      "attributed_beneficiaries": [
+        "Patricia Domínguez",
+        "Gil Marer"
+      ],
+      "proposition_id": "PD-AW-TRUST-001"
+    },
+    "layer_2": {
+      "shares": [
+        "Hava Vida Travel & Tourism, S.L.U. shares",
+        "Pink Canary Services, S.L.U. shares"
+      ],
+      "attributed_holder_or_trustee": "Patricia Domínguez",
+      "attributed_beneficiary": "AWESWELL LIMITED",
+      "proposition_ids": [
+        "PD-HV-AW-TRUST-001",
+        "PD-PINK-AW-TRUST-001"
+      ]
+    },
+    "non_collapse_rule": "Layer 1 concerns beneficial interests in the UK HoldCo. Layer 2 concerns beneficial interests in two Spanish companies in favour of the UK HoldCo. Neither proves the other and neither changes registered legal title without its own source/legal bridge.",
+    "org_chart": "ops/capital/AWESWELL_GROUP_OWNERSHIP_ORG_CHART_20261006.md"
+  }
+}

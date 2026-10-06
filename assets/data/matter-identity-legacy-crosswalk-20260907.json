@@ -1,0 +1,1971 @@
+{
+  "schema": "por-derecho.matter-identity-legacy-crosswalk.v1",
+  "as_of": "2026-09-07",
+  "denominator": 158,
+  "counts": {
+    "EXACT_NORMALISED_NAME_OR_ALIAS": 82,
+    "PENDING_NONMERGED_LEGACY_RECORD": 64,
+    "RECONCILED_EXISTING_TARGET_WITH_SCOPE_BOUNDARY": 12
+  },
+  "boundary": "All legacy rows represented; pending records are source mentions and are not admitted same-person/same-entity assertions. Registration is not proof of conduct.",
+  "rows": [
+    {
+      "legacy_type": "people",
+      "legacy_id": "P001",
+      "source_literal": "Gil Marer",
+      "caepr_id": "PD-SP-P-0001",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0001"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P002",
+      "source_literal": "Patricia Isabel Domínguez Montelongo",
+      "caepr_id": "PD-SP-P-0002",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0002"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P003",
+      "source_literal": "Asunción Aizpurúa Sánchez",
+      "caepr_id": "PD-SP-P-0004",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0004"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P004",
+      "source_literal": "Francisco Mario Matos Matas",
+      "caepr_id": "PD-SP-P-0009",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0009"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P005",
+      "source_literal": "Antonio Cogolludo Rojas",
+      "caepr_id": "PD-SP-P-0007",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0007"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P006",
+      "source_literal": "Shaila María Cogolludo Ramos",
+      "caepr_id": "PD-SP-P-0008",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0008"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P007",
+      "source_literal": "Francisco Molina",
+      "caepr_id": "PD-SP-P-0168",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "FranciscoMolina cannot be merged withFranciscoLuisMolinaMolina absent primary identitybridge.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0020"
+      ],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P008",
+      "source_literal": "Francisco Luis Molina Molina",
+      "caepr_id": "PD-SP-P-0020",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0020"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P009",
+      "source_literal": "Miguel Molina",
+      "caepr_id": "PD-SP-P-0169",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "MiguelMolina cannot be merged withMiguelMolinaBetancor absent primary identitybridge.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0025"
+      ],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P010",
+      "source_literal": "Miguel Molina Betancor",
+      "caepr_id": "PD-SP-P-0025",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0025"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P011",
+      "source_literal": "Cristina Molina Petit",
+      "caepr_id": "PD-SP-P-0014",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0014"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P012",
+      "source_literal": "Sebastián Molina Petit",
+      "caepr_id": "PD-SP-P-0015",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0015"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P013",
+      "source_literal": "Rafael Molina Petit",
+      "caepr_id": "PD-SP-P-0016",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0016"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P014",
+      "source_literal": "José Luis Molina Marrero",
+      "caepr_id": "PD-SP-P-0017",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0017"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P015",
+      "source_literal": "Concepción Molina Marrero",
+      "caepr_id": "PD-SP-P-0170",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "ConcepciónMolinaMarrero cannot be merged withMaríaConcepciónMolina absent primary identitybridge.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0021"
+      ],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P016",
+      "source_literal": "María Concepción Molina",
+      "caepr_id": "PD-SP-P-0021",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0021"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P017",
+      "source_literal": "Carmelo Marrero Molina",
+      "caepr_id": "PD-SP-P-0018",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0018"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P018",
+      "source_literal": "Rosa Daria Molina Molina",
+      "caepr_id": "PD-SP-P-0019",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0019"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P019",
+      "source_literal": "Agustín Calzada Molina",
+      "caepr_id": "PD-SP-P-0022",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0022"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P020",
+      "source_literal": "Miguel Ángel Calzada Molina",
+      "caepr_id": "PD-SP-P-0023",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0023"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P021",
+      "source_literal": "Ricardo Molina Betancor",
+      "caepr_id": "PD-SP-P-0024",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0024"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P022",
+      "source_literal": "Manuel Molina Climent",
+      "caepr_id": "PD-SP-P-0031",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0031"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P023",
+      "source_literal": "Octavio Marrero Molina",
+      "caepr_id": "PD-SP-P-0171",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P024",
+      "source_literal": "Emilio Molina",
+      "caepr_id": "PD-SP-P-0172",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P025",
+      "source_literal": "Anastasio Molina",
+      "caepr_id": "PD-SP-P-0173",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P026",
+      "source_literal": "Gerardo Nicanor Acosta Armas",
+      "caepr_id": "PD-SP-P-0013",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0013"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P027",
+      "source_literal": "José Daniel Acosta Matos",
+      "caepr_id": "PD-SP-P-0011",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0011"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P028",
+      "source_literal": "Laura Patricia Acosta Matos",
+      "caepr_id": "PD-SP-P-0012",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0012"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P029",
+      "source_literal": "Trebor Hillary Cristine",
+      "caepr_id": "PD-SP-P-0174",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P030",
+      "source_literal": "Mariano Palacios Fernández",
+      "caepr_id": "PD-SP-P-0175",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P031",
+      "source_literal": "Pablo Scarabotti",
+      "caepr_id": "PD-SP-P-0176",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P032",
+      "source_literal": "Fulvia Nardi",
+      "caepr_id": "PD-SP-P-0032",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0032"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P033",
+      "source_literal": "Bibiana González",
+      "caepr_id": "PD-SP-P-0177",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P034",
+      "source_literal": "Jonathan G. Thomas",
+      "caepr_id": "PD-SP-P-0178",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P035",
+      "source_literal": "Patricia González",
+      "caepr_id": "PD-SP-P-0179",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P036",
+      "source_literal": "Gervasio Manuel González García",
+      "caepr_id": "PD-SP-P-0028",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0028"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P037",
+      "source_literal": "Isabel Lidia Santana",
+      "caepr_id": "PD-SP-P-0180",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P038",
+      "source_literal": "Fernanda Rondo",
+      "caepr_id": "PD-SP-P-0181",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P039",
+      "source_literal": "Juan Carlos Fernández Cox",
+      "caepr_id": "PD-SP-P-0182",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P040",
+      "source_literal": "Víctor Fernández Cox",
+      "caepr_id": "PD-SP-P-0183",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P041",
+      "source_literal": "Tamera Jane [surname unresolved]",
+      "caepr_id": "PD-SP-P-0184",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P042",
+      "source_literal": "Daniel Van der Horst",
+      "caepr_id": "PD-SP-P-0034",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0034"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P043",
+      "source_literal": "Carlos Caimi Vicente",
+      "caepr_id": "PD-SP-P-0026",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0026"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P044",
+      "source_literal": "Ray Simon Thompson",
+      "caepr_id": "PD-SP-P-0185",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "RaySimonThompson expressly distinct/unreconciled fromSimonPeterThompson; preserve source form; do not use user memory to identifyRaymond.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0146"
+      ],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P045",
+      "source_literal": "Simon Peter Thompson",
+      "caepr_id": "PD-SP-P-0146",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0146"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P046",
+      "source_literal": "Richard Dougherty",
+      "caepr_id": "PD-SP-P-0186",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P047",
+      "source_literal": "Ana Jiménez Lort",
+      "caepr_id": "PD-SP-P-0029",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0029"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P048",
+      "source_literal": "Reza Hamid",
+      "caepr_id": "PD-SP-P-0033",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0033"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P049",
+      "source_literal": "Montserrat Llorens Canal",
+      "caepr_id": "PD-SP-P-0030",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0030"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P050",
+      "source_literal": "Celia Guillén Pérez",
+      "caepr_id": "PD-SP-P-0027",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0027"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P051",
+      "source_literal": "Jonathan Leslie Bailey",
+      "caepr_id": "PD-SP-P-0187",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P052",
+      "source_literal": "Ricardo Spínola Cabrera",
+      "caepr_id": "PD-SP-P-0188",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P053",
+      "source_literal": "Pedro Coll",
+      "caepr_id": "PD-SP-P-0189",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P054",
+      "source_literal": "Juan Rivera / Juan Rivero [exact surname form to reconcile]",
+      "caepr_id": "PD-SP-P-0190",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P055",
+      "source_literal": "Ángeles San Gregorio",
+      "caepr_id": "PD-SP-P-0191",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P056",
+      "source_literal": "Pablo Rivero Correa",
+      "caepr_id": "PD-SP-P-0192",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P057",
+      "source_literal": "Antonio Peñate",
+      "caepr_id": "PD-SP-P-0193",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P058",
+      "source_literal": "Álvaro Campanario Hernández",
+      "caepr_id": "PD-SP-P-0003",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0003"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P059",
+      "source_literal": "Juan Carlos Prieto Puente",
+      "caepr_id": "PD-SP-P-0005",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0005"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P060",
+      "source_literal": "Esteban López Noriega",
+      "caepr_id": "PD-SP-P-0006",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0006"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P061",
+      "source_literal": "Sandra Renee Holder",
+      "caepr_id": "PD-SP-P-0194",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P062",
+      "source_literal": "Javier Jiménez Cerrajería",
+      "caepr_id": "PD-SP-P-0137",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0137"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P063",
+      "source_literal": "Carmen Martínez Socias",
+      "caepr_id": "PD-SP-P-0138",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0138"
+      ],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P064",
+      "source_literal": "Nicolás Quintana Plasencia",
+      "caepr_id": "PD-SP-P-0139",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0139"
+      ],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P065",
+      "source_literal": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "caepr_id": "PD-SP-P-0010",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0010"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P066",
+      "source_literal": "Alberto López Villarrubia",
+      "caepr_id": "PD-SP-P-0057",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0057"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P067",
+      "source_literal": "Ricardo de Mosteyrín Sampalo",
+      "caepr_id": "PD-SP-P-0058",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0058"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P068",
+      "source_literal": "Pedro Campaña Ávila",
+      "caepr_id": "PD-SP-P-0051",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0051"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P069",
+      "source_literal": "Mónica Lasquibar Rodríguez",
+      "caepr_id": "PD-SP-P-0069",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0069"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P070",
+      "source_literal": "Rosa Gual Tomás",
+      "caepr_id": "PD-SP-P-0048",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0048"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P071",
+      "source_literal": "Luis Álvarez de la Vega Gaztelu",
+      "caepr_id": "PD-SP-P-0071",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0071"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P072",
+      "source_literal": "Cristóbal Cotta",
+      "caepr_id": "PD-SP-P-0072",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0072"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P073",
+      "source_literal": "Pablo Villaseca Rico",
+      "caepr_id": "PD-SP-P-0070",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0070"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P074",
+      "source_literal": "Álvaro Aulló Pérez",
+      "caepr_id": "PD-SP-P-0195",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P075",
+      "source_literal": "Pedro San José",
+      "caepr_id": "PD-SP-P-0196",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P076",
+      "source_literal": "Cristo Ayose Suárez Pimentel",
+      "caepr_id": "PD-SP-P-0055",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0055"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P077",
+      "source_literal": "Juan Tomás Parrilla Suárez",
+      "caepr_id": "PD-SP-P-0041",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0041"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P078",
+      "source_literal": "Carlos Saavedra Rodríguez del Palacio",
+      "caepr_id": "PD-SP-P-0036",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0036"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P079",
+      "source_literal": "Miguel Hernández Lorenzo",
+      "caepr_id": "PD-SP-P-0037",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0037"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P080",
+      "source_literal": "Jonathan Simó Morales",
+      "caepr_id": "PD-SP-P-0040",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0040"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P081",
+      "source_literal": "Elena Santos Ramos",
+      "caepr_id": "PD-SP-P-0038",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0038"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P082",
+      "source_literal": "Alejandro Perera González",
+      "caepr_id": "PD-SP-P-0039",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0039"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P083",
+      "source_literal": "Jonay Manuel Cabrera Padrón",
+      "caepr_id": "PD-SP-P-0197",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P084",
+      "source_literal": "Antonio Tortajada Pérez",
+      "caepr_id": "PD-SP-P-0198",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P085",
+      "source_literal": "Noemí Arbelo",
+      "caepr_id": "PD-SP-P-0199",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P086",
+      "source_literal": "Ana María Palazón González",
+      "caepr_id": "PD-SP-P-0200",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P087",
+      "source_literal": "Carlos Llamas Sanz",
+      "caepr_id": "PD-SP-P-0062",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0062"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P088",
+      "source_literal": "Javier Sixto",
+      "caepr_id": "PD-SP-P-0060",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0060"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P089",
+      "source_literal": "Luis Miguel López",
+      "caepr_id": "PD-SP-P-0047",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0047"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P090",
+      "source_literal": "Daniel Jiménez",
+      "caepr_id": "PD-SP-P-0201",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "DanielJiménez formercounsel is compatible withDanielJiménezGarcía formerSLJcounsel inlegal-professionals-register-v1.json; missing exactnamebridge so no same_as assertion yet.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0046"
+      ],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P091",
+      "source_literal": "Eduardo Sánchez",
+      "caepr_id": "PD-SP-P-0161",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0161"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "people",
+      "legacy_id": "P092",
+      "source_literal": "Enrique Guerra",
+      "caepr_id": "PD-SP-P-0162",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0162"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E001",
+      "source_literal": "Comunidad de Propietarios del Complejo Sun Park",
+      "caepr_id": "PD-SP-O-0005",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0005"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E002",
+      "source_literal": "Comunidad de Explotación Sun Park",
+      "caepr_id": "PD-SP-O-0006",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0006"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E003",
+      "source_literal": "Luchy Playa Blanca, S.L.U.",
+      "caepr_id": "PD-SP-O-0002",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0002"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E004",
+      "source_literal": "Matkator, S.L.",
+      "caepr_id": "PD-SP-O-0003",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0003"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E005",
+      "source_literal": "Aweswell Limited",
+      "caepr_id": "PD-SP-O-0001",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0001"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E006",
+      "source_literal": "Pink Canary Services, S.L.",
+      "caepr_id": "PD-SP-O-0004",
+      "mapping_status": "RECONCILED_EXISTING_TARGET_WITH_SCOPE_BOUNDARY",
+      "basis": "Controlled names ops E006 reconciles Pink/Spanish Monterecco forms toPinkCanarySLU; sourceSL preserved as historical literal.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0004"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E007",
+      "source_literal": "Pamanil, S.L.",
+      "caepr_id": "PD-SP-O-0022",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0022"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E008",
+      "source_literal": "Roque Prieto, S.L.",
+      "caepr_id": "PD-SP-O-0012",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0012"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E009",
+      "source_literal": "Muruga, S.L.",
+      "caepr_id": "PD-SP-O-0011",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0011"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E010",
+      "source_literal": "Inversiones Salinetas, S.L.",
+      "caepr_id": "PD-SP-O-0016",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0016"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E011",
+      "source_literal": "Acciones Canarias, S.A. [entity-form verification required]",
+      "caepr_id": "PD-SP-O-0086",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "2011SA vs laterSL unresolved exact legalform; retain separate source-literal identity pending corporatehistory.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0015"
+      ],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E012",
+      "source_literal": "Amenem, S.L.",
+      "caepr_id": "PD-SP-O-0009",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0009"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E013",
+      "source_literal": "Tengolf, S.L. [spelling/entity-form verification required]",
+      "caepr_id": "PD-SP-O-0010",
+      "mapping_status": "RECONCILED_EXISTING_TARGET_WITH_SCOPE_BOUNDARY",
+      "basis": "Same TengolfSL name after removing bracketed legacy verification note; preserve legal-form/spelling source-verification limit.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0010"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E014",
+      "source_literal": "José Sánchez Peñate, S.A.",
+      "caepr_id": "PD-SP-O-0087",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E015",
+      "source_literal": "J.S.P., S.L. [relationship to José Sánchez Peñate, S.A. to verify]",
+      "caepr_id": "PD-SP-O-0088",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E016",
+      "source_literal": "Montelanza, S.L.",
+      "caepr_id": "PD-SP-O-0014",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0014"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E017",
+      "source_literal": "Explotaciones Oasis, S.L.",
+      "caepr_id": "PD-SP-O-0013",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0013"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E018",
+      "source_literal": "Inmobiliaria Betancurt, S.L.",
+      "caepr_id": "PD-SP-O-0017",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0017"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E019",
+      "source_literal": "Sol Lanzarote [exact legal entity to verify]",
+      "caepr_id": "PD-SP-O-0089",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E020",
+      "source_literal": "Comunidad de Propietarios Costa Papagayo [exact denomination to verify]",
+      "caepr_id": "PD-SP-O-0090",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E021",
+      "source_literal": "Construcciones Acosta Matos, S.A.",
+      "caepr_id": "PD-SP-O-0007",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0007"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E022",
+      "source_literal": "Hotel New Trend, S.L.",
+      "caepr_id": "PD-SP-O-0018",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0018"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E023",
+      "source_literal": "Canarian Hospitality, S.L.",
+      "caepr_id": "PD-SP-O-0019",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0019"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E024",
+      "source_literal": "RIC Private Equity Investment Partners, SCR, S.A.",
+      "caepr_id": "PD-SP-O-0020",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0020"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E025",
+      "source_literal": "MYND Yaiza / MYND Hotels [operating legal entity to verify]",
+      "caepr_id": "PD-SP-O-0042",
+      "mapping_status": "RECONCILED_EXISTING_TARGET_WITH_SCOPE_BOUNDARY",
+      "basis": "Match MYND Yaiza brand only; does not identify the operating legal entity or transferSunPark historical conduct toMYND.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0042"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E026",
+      "source_literal": "Meeting Point group [specific legal entities to map]",
+      "caepr_id": "PD-SP-O-0091",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "GenericMeetingPointgroup must be linked as unresolvedperimeter, not assigned to one of three exactdebtors by assumption.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-S-0008",
+        "PD-SP-O-0038"
+      ],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E027",
+      "source_literal": "JR2 Homes Atlántico Lanzarote, S.L.",
+      "caepr_id": "PD-SP-O-0092",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E028",
+      "source_literal": "SAREB",
+      "caepr_id": "PD-SP-O-0030",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0030"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E029",
+      "source_literal": "NCG Banco",
+      "caepr_id": "PD-SP-O-0093",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E030",
+      "source_literal": "Bankia",
+      "caepr_id": "PD-SP-O-0029",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0029"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E031",
+      "source_literal": "Haya [exact legal entity to verify]",
+      "caepr_id": "PD-SP-O-0094",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E032",
+      "source_literal": "Promontoria Holding 122 B.V.",
+      "caepr_id": "PD-SP-O-0021",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0021"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E033",
+      "source_literal": "Cecabank",
+      "caepr_id": "PD-SP-O-0095",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E034",
+      "source_literal": "Renta 4 [exact legal entity to map]",
+      "caepr_id": "PD-SP-O-0096",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E035",
+      "source_literal": "Andbank [exact legal entity to map]",
+      "caepr_id": "PD-SP-O-0097",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "GenericAndbank source cannot be assigned toAndbankLuxembourg merely by sharedname.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0059"
+      ],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E036",
+      "source_literal": "Cuatrecasas [historical Cuatrecasas, Gonçalves Pereira]",
+      "caepr_id": "PD-SP-O-0049",
+      "mapping_status": "RECONCILED_EXISTING_TARGET_WITH_SCOPE_BOUNDARY",
+      "basis": "Cuatrecasas alias already maps to existing firm; exact engagement/debtor/title name remains dated source question.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0049"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E037",
+      "source_literal": "PwC / Landwell professional perimeter [legal entities must remain separated]",
+      "caepr_id": "PD-SP-O-0043",
+      "mapping_status": "RECONCILED_EXISTING_TARGET_WITH_SCOPE_BOUNDARY",
+      "basis": "Match controlled PwC/Landwell professional perimeter only; keep O0080/O0081 exactlegalpersons distinct.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0043"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E038",
+      "source_literal": "San Telmo Abogados y Economistas, S.L.P.",
+      "caepr_id": "PD-SP-O-0098",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E039",
+      "source_literal": "Grant Thornton Advisory, S.L.P.",
+      "caepr_id": "PD-SP-O-0099",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "GrantThorntonAdvisorySLP exactfirm remains distinct from broaderGrantThornton professionalperimeter.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0045"
+      ],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E040",
+      "source_literal": "Cuyás Abogados, S.L.P.",
+      "caepr_id": "PD-SP-O-0100",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E041",
+      "source_literal": "Grant Thornton Canarias [brand/alliance/legal-entity perimeter to reconcile]",
+      "caepr_id": "PD-SP-O-0101",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "GrantThorntonCanarias network scope is narrower than genericprofessionalperimeter; exactlegalentity/affiliate remains open.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0045"
+      ],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E042",
+      "source_literal": "RSM Spain [exact reviewing legal entity to retain from case file]",
+      "caepr_id": "PD-SP-O-0044",
+      "mapping_status": "RECONCILED_EXISTING_TARGET_WITH_SCOPE_BOUNDARY",
+      "basis": "Match existingRSMSpain professionalperimeter, not exact contracting/review legalperson.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0044"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E043",
+      "source_literal": "Garrigues [exact historical engagement entity to verify]",
+      "caepr_id": "PD-SP-O-0050",
+      "mapping_status": "RECONCILED_EXISTING_TARGET_WITH_SCOPE_BOUNDARY",
+      "basis": "Garrigues existing alias target; exact historical engagement source remains open.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0050"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E044",
+      "source_literal": "Millán & Miners, S.L.P. [role/entity verification required]",
+      "caepr_id": "PD-SP-O-0026",
+      "mapping_status": "RECONCILED_EXISTING_TARGET_WITH_SCOPE_BOUNDARY",
+      "basis": "Recovered25Auglegacy andCANONICAL_ENTITY_NAMES reconcile exactBORME legalpersonMill anandMiners with legacyMillán&Miners spelling; officialrecord IDs preserved.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-O-0026"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E045",
+      "source_literal": "Juan Tomás Parrilla office [exact legal entity to verify]",
+      "caepr_id": "PD-SP-O-0102",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "JuanTomásParrillaoffice is not the individualprofessional orGarrigues; exact firmidentity open.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-P-0041"
+      ],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E046",
+      "source_literal": "Cabildo de Lanzarote",
+      "caepr_id": "PD-SP-I-0010",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-I-0010"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E047",
+      "source_literal": "Ayuntamiento de Yaiza",
+      "caepr_id": "PD-SP-I-0009",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-I-0009"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E048",
+      "source_literal": "Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria",
+      "caepr_id": "PD-SP-I-0001",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-I-0001"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E049",
+      "source_literal": "Juzgado de Primera Instancia nº 2 de Arrecife",
+      "caepr_id": "PD-SP-I-0040",
+      "mapping_status": "EXACT_NORMALISED_NAME_OR_ALIAS",
+      "basis": "Exact normalized canonical name or already admitted alias; preserve all identity qualifications.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [
+        "PD-SP-I-0040"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E050",
+      "source_literal": "Juzgado de Primera Instancia nº 5 de Arrecife",
+      "caepr_id": "PD-SP-I-0051",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "proceedings",
+      "legacy_id": "PR001",
+      "source_literal": "Concurso voluntario 36/2012 — Luchy Playa Blanca, S.L.U.",
+      "caepr_id": "PD-SP-R-0001",
+      "mapping_status": "RECONCILED_EXISTING_TARGET_WITH_SCOPE_BOUNDARY",
+      "basis": "SameConcurso36/2012+LPB+Mercantil1LasPalmas acrosslegacy andmasterGC-JUD-001; no mergerwithappeals.",
+      "source_register": "archive/knowledge-project/SUN_PARK_PROCEEDINGS_ACTOR_CROSSWALK.md",
+      "candidate_ids": [
+        "PD-SP-R-0001"
+      ],
+      "identity_resolution": "CARET_CONFIRMED"
+    },
+    {
+      "legacy_type": "proceedings",
+      "legacy_id": "PR002",
+      "source_literal": "Procedimiento Ordinario 562/2014",
+      "caepr_id": "PD-SP-R-0047",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_PROCEEDINGS_ACTOR_CROSSWALK.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "proceedings",
+      "legacy_id": "PR003",
+      "source_literal": "Procedimiento Ordinario 213/2015",
+      "caepr_id": "PD-SP-R-0048",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_PROCEEDINGS_ACTOR_CROSSWALK.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "proceedings",
+      "legacy_id": "PR004",
+      "source_literal": "Challenge to resolutions of Community meeting of 26 Apr 2016",
+      "caepr_id": "PD-SP-R-0049",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_PROCEEDINGS_ACTOR_CROSSWALK.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "proceedings",
+      "legacy_id": "PR005",
+      "source_literal": "Exploitation-contract termination case — hearing referenced for 19 Nov 2015",
+      "caepr_id": "PD-SP-R-0050",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_PROCEEDINGS_ACTOR_CROSSWALK.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "proceedings",
+      "legacy_id": "PR006",
+      "source_literal": "Creditor-list challenge / Garrigues credits incident",
+      "caepr_id": "PD-SP-R-0051",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_PROCEEDINGS_ACTOR_CROSSWALK.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "proceedings",
+      "legacy_id": "PR007",
+      "source_literal": "2011 desahucio / possession proceedings against exploitation operator",
+      "caepr_id": "PD-SP-R-0052",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "Generic2011desahucio/possession family may overlapJV1260/AP89; need exactcaption andcourt beforeequivalence.",
+      "source_register": "archive/knowledge-project/SUN_PARK_PROCEEDINGS_ACTOR_CROSSWALK.md",
+      "candidate_ids": [
+        "PD-SP-R-0007"
+      ],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "proceedings",
+      "legacy_id": "PR008",
+      "source_literal": "Richard Dougherty penal case",
+      "caepr_id": "PD-SP-R-0053",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_PROCEEDINGS_ACTOR_CROSSWALK.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "proceedings",
+      "legacy_id": "PR009",
+      "source_literal": "NCG Banco v Louise White — execution 852/2012 [full caption to verify]",
+      "caepr_id": "PD-SP-R-0054",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_PROCEEDINGS_ACTOR_CROSSWALK.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "proceedings",
+      "legacy_id": "PR010",
+      "source_literal": "Calificación — Concurso 36/2012 and appeal",
+      "caepr_id": "PD-SP-R-0055",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "Legacycalificación+appeal is a family; parentConcurso andRPL2523 remain separate records.",
+      "source_register": "archive/knowledge-project/SUN_PARK_PROCEEDINGS_ACTOR_CROSSWALK.md",
+      "candidate_ids": [
+        "PD-SP-R-0001",
+        "PD-SP-R-0002"
+      ],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "proceedings",
+      "legacy_id": "PR011",
+      "source_literal": "Administrador Concursal separation incidents and appeal",
+      "caepr_id": "PD-SP-R-0056",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "LegacyACseparation+appeals is a family; preserve exact constituentappeals and combinedfamily.",
+      "source_register": "archive/knowledge-project/SUN_PARK_PROCEEDINGS_ACTOR_CROSSWALK.md",
+      "candidate_ids": [
+        "PD-SP-R-0011",
+        "PD-SP-R-0012",
+        "PD-SP-R-0013"
+      ],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "proceedings",
+      "legacy_id": "PR012",
+      "source_literal": "Arrecife execution / dación and termination",
+      "caepr_id": "PD-SP-R-0057",
+      "mapping_status": "PENDING_NONMERGED_LEGACY_RECORD",
+      "basis": "No exact admitted CAEPR name/alias found in recovered348-recordset. PreservelegacyID andsourcequalification; rootmay allocatependingrecord.",
+      "source_register": "archive/knowledge-project/SUN_PARK_PROCEEDINGS_ACTOR_CROSSWALK.md",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E051",
+      "source_literal": "Hava Vida Travel & Tourism, S.L.U.",
+      "caepr_id": "PD-SP-O-0103",
+      "mapping_status": "CARET_CONFIRMED_ACTIVE_CAEPR_20260923",
+      "basis": "Promoted to active CAEPR organisation registry from canonical E051 and primary BORME-A-2012-27-38 / BORME-A-2012-110-38. Historical scan/candidate provenance preserved separately.",
+      "source_register": "ops/CANONICAL_ENTITY_NAMES.json",
+      "candidate_ids": [],
+      "identity_resolution": "CARET_PENDING"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E052",
+      "source_literal": "PAMALEXSHA SERVICIOS INTEGRALES, SOCIEDAD LIMITADA",
+      "caepr_id": "PD-SP-O-0023",
+      "mapping_status": "RECONCILED_EXISTING_TARGET_WITH_SCOPE_BOUNDARY",
+      "basis": "Recovered legacyE052 andops exactlegalname/registry coordinates identifyPamalexsha; not succession fromPamanil.",
+      "source_register": "ops/CANONICAL_ENTITY_NAMES.json",
+      "candidate_ids": [
+        "PD-SP-O-0023"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E053",
+      "source_literal": "EXPLOTACIONES NOALPA, SOCIEDAD LIMITADA",
+      "caepr_id": "PD-SP-O-0024",
+      "mapping_status": "RECONCILED_EXISTING_TARGET_WITH_SCOPE_BOUNDARY",
+      "basis": "Recovered legacyE053 andops exactlegalname/registry coordinates identifyNoalpa.",
+      "source_register": "ops/CANONICAL_ENTITY_NAMES.json",
+      "candidate_ids": [
+        "PD-SP-O-0024"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    },
+    {
+      "legacy_type": "entities",
+      "legacy_id": "E054",
+      "source_literal": "SANTA LUCIA REAL ESTATE, SOCIEDAD LIMITADA",
+      "caepr_id": "PD-SP-O-0025",
+      "mapping_status": "RECONCILED_EXISTING_TARGET_WITH_SCOPE_BOUNDARY",
+      "basis": "Recovered legacyE054 andops exactlegalname/registry coordinates identifySantaLuciaRealEstate.",
+      "source_register": "ops/CANONICAL_ENTITY_NAMES.json",
+      "candidate_ids": [
+        "PD-SP-O-0025"
+      ],
+      "identity_resolution": "UNSPECIFIED"
+    }
+  ]
+}

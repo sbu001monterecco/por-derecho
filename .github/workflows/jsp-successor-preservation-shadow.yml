@@ -1,0 +1,34 @@
+name: JSP successor preservation (advisory)
+on:
+  pull_request:
+    paths:
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'assets/data/jsp-*.json'
+      - 'assets/evidence/jsp-2017/**'
+      - 'assets/jsp-dossier-2017.*'
+      - 'es/jsp-montelanza-concurso-liquidacion/**'
+      - 'en/jsp-montelanza-insolvency-liquidation/**'
+      - 'scripts/validate_jsp_successor_preservation.py'
+      - 'tests/test_jsp_successor_preservation.py'
+      - '.github/workflows/jsp-successor-preservation-shadow.yml'
+permissions:
+  contents: read
+jobs:
+  advisory-preservation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Check frozen release and additive successor in advisory mode
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: python3 scripts/validate_jsp_successor_preservation.py --base "$BASE_SHA"
+      - name: Prove corrupted candidates fail
+        run: python3 tests/test_jsp_successor_preservation.py --base origin/main
+      - name: Confirm no tracked-file mutation
+        if: always()
+        run: git diff --exit-code && git diff --cached --exit-code

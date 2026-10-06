@@ -19,12 +19,18 @@
         "Aweswelll",
         "AWESWELLL"
       ],
-      "identity_control": "This record has one current legal name and no current-name aliases. Forbidden variants are transcription/template errors. OSWELL 426 S.L. is a distinct Spanish entity."
+      "identity_control": "This record has one current legal name and no current-name aliases. Forbidden variants are transcription/template errors. OSWELL 426 S.L. is a distinct Spanish entity.",
+      "beneficial_position_boundary": "Gil Marer's attributed/open position is that Patricia Domínguez holds the AWESWELL shares on trust for the joint benefit of Patricia Domínguez and Gil Marer. This is distinct from the separate asserted Hava Vida/Pink shares-for-AWESWELL layer and does not itself establish legal/equitable title, proportions, PSC, tax or accounting treatment.",
+      "relationship_control_refs": [
+        "assets/data/hava-vida-aweswell-relationship-v1.json",
+        "ops/capital/AWESWELL_GROUP_OWNERSHIP_ORG_CHART_20261006.md"
+      ]
     },
     {
       "id": "PD-SP-O-0002",
       "type": "ORGANISATION",
       "name": "Luchy Playa Blanca, S.L.U.",
+      "identity_resolution": "CARET_CONFIRMED",
       "aliases": [
         "Luchy Playa Blanca, S.L.",
         "LPB"
@@ -59,9 +65,15 @@
       "id": "PD-SP-O-0004",
       "type": "ORGANISATION",
       "name": "Pink Canary Services, S.L.U.",
+      "identity_resolution": "CARET_CONFIRMED",
       "aliases": [
         "Monterecco Sun Park, S.L.U.",
         "Pink Canary Services"
+      ],
+      "capacity_boundary": "Identity is confirmed, but current registered shareholding is not established by this identity record. Gil Marer's attributed/open position is that Patricia Domínguez has been holding the Pink Canary shares effectively on trust for AWESWELL LIMITED. This does not establish a legally effective trust, AWESWELL legal title, UBO/PSC/tax treatment or current registry status.",
+      "relationship_control_refs": [
+        "assets/data/hava-vida-aweswell-relationship-v1.json",
+        "ops/capital/AWESWELL_GROUP_OWNERSHIP_ORG_CHART_20261006.md"
       ]
     },
     {
@@ -1015,6 +1027,41 @@
         "en": "/en/cuatrecasas-sun-park/#cuatrecasas-rauda-revision-20260905"
       },
       "capacity_boundary": "Source-literal professional recovery label from 2022 correspondence. Exact legal entity and legal-form history remain unverified. No original advisory mandate, ownership of the debt, purchaser identity, confidentiality misuse, group-wide knowledge or liability is inferred."
+    },
+    {
+      "id": "PD-SP-O-0103",
+      "type": "ORGANISATION",
+      "name": "Hava Vida Travel & Tourism, S.L.U.",
+      "aliases": [
+        "Hava Vida Travel & Tourism, S.L.",
+        "HAVA VIDA TRAVEL & TOURISM SL"
+      ],
+      "retrieval_aliases": [
+        "HAVAVIDA",
+        "Habavida"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "tax_identifier": "B76564434",
+      "tax_identifier_status": "REPOSITORY_RECORDED; CURRENT_PRIMARY_SPANISH_CERTIFICATE_OPEN",
+      "registry_sheet": "TF 49735",
+      "identity_sources": [
+        "BORME-A-2012-27-38, entry 64020: incorporation, declaration of unipersonality, Patricia Isabel Domínguez Montelongo as sole shareholder and sole administrator, sheet TF 49735",
+        "BORME-A-2012-110-38, entry 248217: change of registered office, same sheet TF 49735",
+        "ops/CANONICAL_ENTITY_NAMES.json E051"
+      ],
+      "source_urls": [
+        "https://www.boe.es/borme/dias/2012/02/08/pdfs/BORME-A-2012-27-38.pdf",
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-110-38"
+      ],
+      "capacity_boundary": "Exact historical legal-person identity and incorporation roles only. The 2012 BORME proves Patricia's sole-shareholder/sole-administrator status at incorporation, not unchanged 2026 status. Gil Marer's attributed/open position is separately that Patricia has been holding Hava Vida shares effectively on trust for AWESWELL LIMITED. This is distinct from the AWESWELL-share trust layer (Patricia holding for Patricia+Gil jointly) and does not prove AWESWELL legal ownership, a valid trust, UBO/tax treatment, knowledge, intent or liability.",
+      "legacy": [
+        "E051"
+      ],
+      "relationship_control_refs": [
+        "archive/HAVA_VIDA_AWESWELL_BENEFICIAL_PERIMETER_CONTROL_23SEP2026.md",
+        "assets/data/hava-vida-aweswell-relationship-v1.json",
+        "ops/capital/AWESWELL_GROUP_OWNERSHIP_ORG_CHART_20261006.md"
+      ]
     }
   ]
 }

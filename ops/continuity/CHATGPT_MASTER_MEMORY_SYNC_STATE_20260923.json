@@ -1,0 +1,65 @@
+{
+  "schema": "por-derecho.chatgpt-memory-sync-state.v1",
+  "memory_id": "PD-MEM-001",
+  "version": "2026.09.23.1",
+  "generated_at": "2026-09-23T23:00:00+01:00",
+  "gitlab": {
+    "branch": "pd-mem-001-20260923",
+    "base_main": "db977edf059e6b6fb66c4f286c978a3c2f8c07d5",
+    "candidate_head": "b23fd4e4d9e02d4ae330dd5e856f904247a0f394",
+    "state": "CANDIDATE_WRITTEN_PENDING_MERGE"
+  },
+  "github": {
+    "branch": "pd-mem-001-20260923",
+    "base_main": "2798cbf236571e9fa8d413de08221bcfa2ab98a8",
+    "state": "CANDIDATE_WRITTEN_PENDING_MERGE"
+  },
+  "drive_private": {
+    "state": "VERIFIED_CREATED",
+    "locator_policy": "Private Drive locators are withheld from public Git. Re-query authorised private custody; do not infer current verification from the historical VERIFIED_CREATED state."
+  },
+  "chatgpt_memory": {
+    "state": "USER_OBSERVED_DIGEST_CAPTURED",
+    "note": "Settings digest is lossy projection, not source authority"
+  },
+  "public_private_boundary": "Repository files are public-safe; full private custody is Google Drive.",
+  "authority_rule": "Re-resolve live host authority before use; never infer canonical host from this historical receipt.",
+  "privacy_remediation": {
+    "date": "2026-10-06",
+    "scope": "Current candidate file only",
+    "removed_private_locator_count": 3,
+    "historical_git_exposure": "OPEN_PRIOR_COMMITS_REMAIN_REACHABLE_NO_HISTORY_REWRITE",
+    "current_private_custody_readback": "NOT_REPERFORMED",
+    "boundary": "No provider IDs are repeated in this remediation record. This repair does not certify erasure from historical Git or revoke Drive permissions."
+  },
+  "custody_readback_20261006": {
+    "status": "VERIFIED_BOUNDED_CURRENT_READBACK_COMPLETE_SYNC_OPEN",
+    "supersedes_observation": "privacy_remediation.current_private_custody_readback=NOT_REPERFORMED was true at the earlier checkpoint and is retained as history.",
+    "native_documents_checked": 2,
+    "current_revisions_checked": 2,
+    "permission_readback": "Both documents and their containing folder report shared=false and owner-only permissions; no permission change.",
+    "compact_projection": "NORMALISED_TEXT_MATCH",
+    "full_projection": "ONE_PUBLIC_SECTION_WORDING_DIFFERENCE_PRIVATE_ADDENDUM_INTENTIONALLY_WITHHELD",
+    "other_versions": "Additional private-memory versions include later substantive content; no global sync or deduplication claim.",
+    "native_source_pdf": "Existing AN2023 source-manifest SHA-512 matched the 5,514,981-byte native carrier; public locator corrected to pages 52–53.",
+    "receipt": "Existing private PD-MEM-001 cross-host sync receipt contains the dated addendum and private document links; all original paragraphs retained.",
+    "historical_git_exposure": "OPEN_PRIOR_COMMITS_REMAIN_REACHABLE_NO_HISTORY_REWRITE",
+    "details": "assets/data/hava-vida-aweswell-relationship-v1.json / predecessor_reconciliation.source_and_custody_verification_20261006"
+  },
+  "bounded_version_inventory_20261006": {
+    "status": "BOUNDED_INVENTORY_COMPLETE_FULL_ALIGNMENT_OPEN",
+    "native_memory_documents": 9,
+    "full": 5,
+    "compact": 4,
+    "current_revision_text_matches": 9,
+    "distinct_normalised_texts": 9,
+    "previous_substantive_revisions_compared": 3,
+    "owner_only_documents": 9,
+    "owner_only_parent_folders": 5,
+    "receipt": "Existing private cross-host sync receipt appended; all earlier paragraphs and native elements retained. Nine native file/date links and per-version fingerprints/dispositions independently read back.",
+    "preservation": "All nine source documents and their native revision histories retained without modification. No replacement master or Settings-memory installation claim.",
+    "supersedes_observation": "The prior additional-version review was open. Its bounded discovery/readback/disposition step is complete for this nine-document set; substantive alignment remains open.",
+    "details": "assets/data/hava-vida-aweswell-relationship-v1.json / predecessor_reconciliation.private_memory_version_dispositions_20261006",
+    "historical_git_exposure": "OPEN_NO_HISTORY_REWRITE"
+  }
+}

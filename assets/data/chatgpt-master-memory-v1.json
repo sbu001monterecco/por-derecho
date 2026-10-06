@@ -1,0 +1,148 @@
+{
+  "schema": "por-derecho.chatgpt-master-memory.v1",
+  "control_id": "PD-MEM-001",
+  "control_date": "2026-09-23",
+  "status": "ACTIVE",
+  "authority": "orientation_control_not_primary_evidence",
+  "p0": [
+    "ANTI_FRAGMENTATION",
+    "NO_TOO_NARROW_ANALYSIS",
+    "SUBSTANCE_NOT_ERASED_BY_PROCEDURE",
+    "NEW_TO_OLD_PROPAGATION",
+    "OLD_TO_NEW_RETRIEVAL",
+    "SUPERSESSION_PRESERVATION",
+    "EVIDENCE_STATE_SEPARATION",
+    "NO_EVIDENTIAL_UPGRADE_WITHOUT_BRIDGE",
+    "LIVE_REPOSITORY_REVALIDATION",
+    "NO_COMPETING_MASTER_ARCHITECTURE",
+    "CRIMINAL_FIRST_WHERE_APPLICABLE",
+    "ACTOR_SPECIFIC_ATTRIBUTION",
+    "CONTRARY_EVIDENCE_PRESERVED",
+    "SEVEN_JUNE_2018_PIVOT",
+    "FORMAL_V_REAL_CONTROL",
+    "AWESWELL_IDENTITY_LOCK",
+    "PROCEEDINGS_DISTINCT_BUT_INTERCONNECTED",
+    "DRAFT_V_FILED_V_RECEIVED_V_DECIDED_V_IMPLEMENTED",
+    "PRIVATE_PUBLIC_BOUNDARY",
+    "EXTERNAL_ACTION_REQUIRES_AUTHORITY",
+    "SUBSTANTIVE_ANSWER_FIRST",
+    "NO_EVIDENTIAL_UPGRADE_WITHOUT_SOURCE_BRIDGE",
+    "HAVA_VIDA_IDENTITY_AND_ATTRIBUTED_AWESWELL_BENEFICIAL_POSITION",
+    "DISTINCT_HOLDCO_AND_SPANISH_COMPANY_TRUST_LAYERS"
+  ],
+  "canonical_objects": {
+    "aweswell": {
+      "canonical_name": "AWESWELL LIMITED",
+      "company_number": "07716847",
+      "canonical_name_record": "E005",
+      "federated_id": "PD-SP-O-0001"
+    },
+    "hava_vida": {
+      "canonical_name": "Hava Vida Travel & Tourism, S.L.U.",
+      "canonical_name_record": "E051",
+      "federated_id": "PD-SP-O-0103"
+    },
+    "patricia": {
+      "canonical_name": "Patricia Domínguez",
+      "federated_id": "PD-SP-P-0002"
+    },
+    "gil": {
+      "canonical_name": "Gil Marer",
+      "federated_id": "PD-SP-P-0001"
+    },
+    "pink_canary": {
+      "canonical_name": "Pink Canary Services, S.L.U.",
+      "federated_id": "PD-SP-O-0004"
+    }
+  },
+  "relationships": [
+    {
+      "from": "PD-SP-P-0002",
+      "to": "PD-SP-O-0103",
+      "type": "SOLE_SHAREHOLDER_AT_INCORPORATION",
+      "status": "SOURCE_ESTABLISHED_HISTORICAL",
+      "source": "BORME-A-2012-27-38 entry 64020"
+    },
+    {
+      "from": "PD-SP-P-0002",
+      "to": "PD-SP-O-0103",
+      "type": "SOLE_ADMINISTRATOR_AT_INCORPORATION",
+      "status": "SOURCE_ESTABLISHED_HISTORICAL",
+      "source": "BORME-A-2012-27-38 entry 64020"
+    },
+    {
+      "from": "PD-SP-O-0103",
+      "to": "PD-SP-O-0001",
+      "type": "PROJECT_PERIMETER_GROUP_SUN_ROCK",
+      "status": "ATTRIBUTED_WITH_SOURCE_CONTEXT_SUPPORT",
+      "source": "Gil Marer statement 2026-09-23 + 2023 AN querella project narrative"
+    },
+    {
+      "from": "PD-SP-P-0002",
+      "via": "PD-SP-O-0001 shares",
+      "beneficiaries": [
+        "PD-SP-P-0002",
+        "PD-SP-P-0001"
+      ],
+      "type": "ASSERTED_AWESWELL_SHARES_HELD_ON_TRUST_FOR_PATRICIA_AND_GIL",
+      "status": "ATTRIBUTED_OPEN_LEGAL_SOURCE_BRIDGE",
+      "attributed_to": "Gil Marer",
+      "date": "2026-10-06",
+      "proposition_id": "PD-AW-TRUST-001"
+    },
+    {
+      "from": "PD-SP-P-0002",
+      "via": "PD-SP-O-0103 shares",
+      "to": "PD-SP-O-0001",
+      "type": "ASSERTED_HAVA_VIDA_SHARES_HELD_FOR_AWESWELL",
+      "status": "ATTRIBUTED_OPEN_LEGAL_SOURCE_BRIDGE",
+      "attributed_to": "Gil Marer",
+      "date": "2026-10-06",
+      "proposition_id": "PD-HV-AW-TRUST-001"
+    },
+    {
+      "from": "PD-SP-P-0002",
+      "via": "PD-SP-O-0004 shares",
+      "to": "PD-SP-O-0001",
+      "type": "ASSERTED_PINK_CANARY_SHARES_HELD_FOR_AWESWELL",
+      "status": "ATTRIBUTED_OPEN_LEGAL_SOURCE_BRIDGE",
+      "attributed_to": "Gil Marer",
+      "date": "2026-10-06",
+      "proposition_id": "PD-PINK-AW-TRUST-001"
+    }
+  ],
+  "source_bridges_required": [
+    "trust_or_nominee_instrument",
+    "shareholder_agreement",
+    "funding_flows",
+    "board_accounting_tax_treatment",
+    "current_spanish_registry_and_ubo",
+    "governing_law_and_recognition_analysis",
+    "current_aweswell_share_register_psc_and_trust_bridge",
+    "current_pink_shareholder_registry_and_trust_bridge"
+  ],
+  "source_paths": [
+    "governance/chatgpt-memory/MASTER_MEMORY_PUBLIC.md",
+    "governance/chatgpt-memory/MASTER_MEMORY_COMPACT.txt",
+    "archive/HAVA_VIDA_AWESWELL_BENEFICIAL_PERIMETER_CONTROL_23SEP2026.md",
+    "ops/capital/AWESWELL_GROUP_OWNERSHIP_ORG_CHART_20261006.md"
+  ],
+  "privacy": "public_safe_projection_only",
+  "memory_id": "PD-MEM-001",
+  "required_controls": "assets/data/chatgpt-master-memory-required-controls-v1.json",
+  "current_relationship_controls": [
+    "PD-HV-AW-20260923-01",
+    "PD-AW-GROUP-BENEFICIAL-LAYERS-20261006-01"
+  ],
+  "volatile_rule": "Do not hard-code current repo SHAs, procedural status, deadlines or office-holders into durable memory; revalidate live.",
+  "control_aliases": {
+    "NO_EVIDENTIAL_UPGRADE_WITHOUT_SOURCE_BRIDGE": "NO_EVIDENTIAL_UPGRADE_WITHOUT_BRIDGE"
+  },
+  "predecessor_preservation": {
+    "pr": 1791,
+    "head": "dcd0ab896ad798f9644a42cbe9f482d5675fbf56",
+    "index": "governance/chatgpt-memory/history/pr-1791/README.md",
+    "status": "FINITE_CONTROLS_RESTORED_FULL_RESIDUAL_REVIEW_OPEN"
+  },
+  "relationship_layer_rule": "Do not collapse the UK HoldCo-share trust proposition with the Spanish-company-share trust propositions. AWESWELL shares are attributed as held by Patricia for Patricia+Gil jointly; Hava Vida and Pink Canary shares are separately attributed as held by Patricia for AWESWELL."
+}
