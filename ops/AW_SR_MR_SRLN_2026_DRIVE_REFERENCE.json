@@ -23,7 +23,9 @@
     "A change to the canonical folder requires an explicit owner instruction and coordinated updates to both repositories, the Drive index and saved continuity instructions.",
     "Refresh current main and the Drive index on every resumed thread. Chat memory accelerates retrieval but is not a file-version authority.",
     "Do not expand sharing, publish private documents, or treat an alias/link as permission to access or disclose them.",
-    "This control does not retroactively synchronize already-running or disconnected threads; they must reload it."
+    "This control does not retroactively synchronize already-running or disconnected threads; they must reload it.",
+    "The canonical Programme Register is the controlling blind-spot and readiness surface. Do not create a competing public tracker; public GitHub retains only continuity-safe pointers and status language.",
+    "NewCo financial history, issuer incorporation/borrowing authority, LSEG admission, provider appointments, identifiers, guarantees, security, tax incentives and Spanish transaction approvals remain evidence-gated and must not be inferred from preparatory drafts."
   ],
   "related_workspace_aliases": [
     "^AW-SR-MR",
@@ -40,5 +42,6 @@
   "private_blind_spot_control": {
     "status": "CURRENT_PRIVATE_REGISTER_BS01_BS72",
     "note": "The existing private canonical Programme Register remains the control surface. The blind-spot sweep is additive, does not create a second tracker or new CP universe, and its detailed transaction/legal contents remain private."
-  }
+  },
+  "programme_state": "PRE-ADMISSION / PRE-ISSUANCE"
 }
