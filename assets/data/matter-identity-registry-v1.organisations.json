@@ -19,7 +19,12 @@
         "Aweswelll",
         "AWESWELLL"
       ],
-      "identity_control": "This record has one current legal name and no current-name aliases. Forbidden variants are transcription/template errors. OSWELL 426 S.L. is a distinct Spanish entity."
+      "identity_control": "This record has one current legal name and no current-name aliases. Forbidden variants are transcription/template errors. OSWELL 426 S.L. is a distinct Spanish entity.",
+      "beneficial_position_boundary": "Gil Marer's attributed/open position is that Patricia Domínguez holds the AWESWELL shares on trust for the joint benefit of Patricia Domínguez and Gil Marer. This is distinct from the separate asserted Hava Vida/Pink shares-for-AWESWELL layer and does not itself establish legal/equitable title, proportions, PSC, tax or accounting treatment.",
+      "relationship_control_refs": [
+        "assets/data/hava-vida-aweswell-relationship-v1.json",
+        "ops/capital/AWESWELL_GROUP_OWNERSHIP_ORG_CHART_20261006.md"
+      ]
     },
     {
       "id": "PD-SP-O-0002",
@@ -64,6 +69,11 @@
       "aliases": [
         "Monterecco Sun Park, S.L.U.",
         "Pink Canary Services"
+      ],
+      "capacity_boundary": "Identity is confirmed, but current registered shareholding is not established by this identity record. Gil Marer's attributed/open position is that Patricia Domínguez has been holding the Pink Canary shares effectively on trust for AWESWELL LIMITED. This does not establish a legally effective trust, AWESWELL legal title, UBO/PSC/tax treatment or current registry status.",
+      "relationship_control_refs": [
+        "assets/data/hava-vida-aweswell-relationship-v1.json",
+        "ops/capital/AWESWELL_GROUP_OWNERSHIP_ORG_CHART_20261006.md"
       ]
     },
     {
@@ -1022,8 +1032,14 @@
       "id": "PD-SP-O-0103",
       "type": "ORGANISATION",
       "name": "Hava Vida Travel & Tourism, S.L.U.",
-      "aliases": ["Hava Vida Travel & Tourism, S.L.", "HAVA VIDA TRAVEL & TOURISM SL"],
-      "retrieval_aliases": ["HAVAVIDA", "Habavida"],
+      "aliases": [
+        "Hava Vida Travel & Tourism, S.L.",
+        "HAVA VIDA TRAVEL & TOURISM SL"
+      ],
+      "retrieval_aliases": [
+        "HAVAVIDA",
+        "Habavida"
+      ],
       "identity_resolution": "CARET_CONFIRMED",
       "tax_identifier": "B76564434",
       "tax_identifier_status": "REPOSITORY_RECORDED; CURRENT_PRIMARY_SPANISH_CERTIFICATE_OPEN",
@@ -1037,9 +1053,15 @@
         "https://www.boe.es/borme/dias/2012/02/08/pdfs/BORME-A-2012-27-38.pdf",
         "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-110-38"
       ],
-      "capacity_boundary": "Exact historical legal-person identity and incorporation roles only. The 2012 BORME proves Patricia's sole-shareholder/sole-administrator status at incorporation, not unchanged 2026 status. Project-perimeter and asserted beneficial/trust positions are separately classified in PD-HV-AW-20260923-01 and do not prove Aweswell legal ownership, a valid trust, UBO/tax treatment, knowledge, intent or liability.",
-      "legacy": ["E051"],
-      "relationship_control_refs": ["archive/HAVA_VIDA_AWESWELL_BENEFICIAL_PERIMETER_CONTROL_23SEP2026.md", "assets/data/hava-vida-aweswell-relationship-v1.json"]
+      "capacity_boundary": "Exact historical legal-person identity and incorporation roles only. The 2012 BORME proves Patricia's sole-shareholder/sole-administrator status at incorporation, not unchanged 2026 status. Gil Marer's attributed/open position is separately that Patricia has been holding Hava Vida shares effectively on trust for AWESWELL LIMITED. This is distinct from the AWESWELL-share trust layer (Patricia holding for Patricia+Gil jointly) and does not prove AWESWELL legal ownership, a valid trust, UBO/tax treatment, knowledge, intent or liability.",
+      "legacy": [
+        "E051"
+      ],
+      "relationship_control_refs": [
+        "archive/HAVA_VIDA_AWESWELL_BENEFICIAL_PERIMETER_CONTROL_23SEP2026.md",
+        "assets/data/hava-vida-aweswell-relationship-v1.json",
+        "ops/capital/AWESWELL_GROUP_OWNERSHIP_ORG_CHART_20261006.md"
+      ]
     }
   ]
 }
