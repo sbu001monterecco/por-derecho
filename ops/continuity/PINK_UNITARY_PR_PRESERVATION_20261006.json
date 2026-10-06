@@ -1,0 +1,52 @@
+{
+  "control": "PD-PINK-UNITARY-PR-PRESERVATION-20261006-01",
+  "date": "2026-10-06",
+  "status": "EXACT_SOURCE_PAYLOAD_CARRY_FORWARD_REQUIRES_REMOTE_READBACK",
+  "github_main_reviewed": "f0d472567ad71a4140ae8ab3eb7a408aa8aa9e5f",
+  "predecessor": {
+    "pr": 1766,
+    "head": "6f39f9e13ebe357600d2893cf205e3e5440e2e31",
+    "branch": "analysis/pink-unitary-bridge-20260922",
+    "changed_paths": 1,
+    "commits": 1,
+    "conversation_comments": 0,
+    "reviews": 0
+  },
+  "successor": {
+    "pr": 1767,
+    "prior_head": "793b380e679512cfb8fab2ca890e2db02273f76b",
+    "branch": "analysis/pink-cexp-unitary-anti-fragmentation-20260923",
+    "role": "Draft controller for this two-document historical preservation family only"
+  },
+  "preserved_payload": [
+    {
+      "path": "archive/PINK_CANARY_UNITARY_PROCEEDINGS_BRIDGE_22SEP2026.md",
+      "git_blob_sha": "4f6a0f75020c3453b9d15b57a4690ca9bec4a2a8",
+      "disposition": "COPY_EXACT_BYTES_AT_ORIGINAL_PATH",
+      "source_commit": "6f39f9e13ebe357600d2893cf205e3e5440e2e31"
+    },
+    {
+      "path": "archive/PINK_CEXP_UNITARY_PROCEEDINGS_ANTI_FRAGMENTATION_CONTROL_23SEP2026.md",
+      "git_blob_sha": "fec5378b89442ed89caa61ee4f3d405edc5f8653",
+      "disposition": "EXISTING_SUCCESSOR_DOCUMENT_UNCHANGED",
+      "source_commit": "793b380e679512cfb8fab2ca890e2db02273f76b"
+    }
+  ],
+  "source_and_review_history": [
+    "https://github.com/sbu001monterecco/por-derecho/pull/1766",
+    "https://github.com/sbu001monterecco/por-derecho/pull/1767"
+  ],
+  "historical_check_results": {
+    "successor_head": "793b380e679512cfb8fab2ca890e2db02273f76b",
+    "success": 12,
+    "failure": 1,
+    "scope": "Existing head before preservation commit; not a result for the new head. Original check history remains attached to source commits."
+  },
+  "dated_state_rule": "Retain both dated controls verbatim. The earlier recollection/verification request and later bounded source-review observation are historical states, not a new adjudication. Preserve allegation/fact/inference distinctions.",
+  "later_controls": {
+    "pr_1977": "Separate later continuity/provenance lane remains open; not absorbed or superseded.",
+    "pr_2004": "Later owner-position correction and its implementation block remain separately controlled. This preservation change neither executes nor routes around that blocked page operation."
+  },
+  "closure_rule": "Close #1766 only after exact remote source-blob/readback verification and publication of receipts in both PRs. Preserve predecessor branch, commit, comments, reviews and check history. Repository supersession does not close the documents' substantive evidential closure conditions.",
+  "authority": "Technical preservation only; no source/admission upgrade, page change, main merge, deployment, private exposure, branch deletion or CI weakening."
+}
