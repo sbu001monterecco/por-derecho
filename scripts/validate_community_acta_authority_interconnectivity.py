@@ -154,10 +154,18 @@ def main() -> int:
     master_js = (ROOT / "assets/master-proceedings-publication-20260830.js").read_text(encoding="utf-8")
     map_js = (ROOT / "assets/proceedings-interconnectivity-map-20260830.js").read_text(encoding="utf-8")
     site_js = (ROOT / "assets/site.js").read_text(encoding="utf-8")
+    legacy_site = ROOT / "assets/site-pre-matkator-8584-20260903.js"
+    legacy_site_js = legacy_site.read_text(encoding="utf-8") if legacy_site.is_file() else ""
     for text, label in ((master_js, "Master Register"), (map_js, "Proceedings Map")):
         require("data-community-authority-master-id" in text, f"{label} reciprocal marker missing", errors)
         require("community-acta-authority-interconnectivity-v1.json" in text, f"{label} dataset missing", errors)
-    require("acta-authority-interlink-20260831.js" in site_js, "ACTA/adjudication reciprocal loader missing", errors)
+    direct_loader = "acta-authority-interlink-20260831.js" in site_js
+    preserved_loader = (
+        "site-pre-matkator-8584-20260903.js" in site_js
+        and "acta-authority-interlink-20260831.js" in legacy_site_js
+        and "loadActaAuthorityInterlink();" in legacy_site_js
+    )
+    require(direct_loader or preserved_loader, "ACTA/adjudication reciprocal loader missing", errors)
 
     for page in required[-2:]:
         text = page.read_text(encoding="utf-8")
