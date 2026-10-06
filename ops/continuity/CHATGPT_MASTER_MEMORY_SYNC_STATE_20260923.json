@@ -31,5 +31,19 @@
     "historical_git_exposure": "OPEN_PRIOR_COMMITS_REMAIN_REACHABLE_NO_HISTORY_REWRITE",
     "current_private_custody_readback": "NOT_REPERFORMED",
     "boundary": "No provider IDs are repeated in this remediation record. This repair does not certify erasure from historical Git or revoke Drive permissions."
+  },
+  "custody_readback_20261006": {
+    "status": "VERIFIED_BOUNDED_CURRENT_READBACK_COMPLETE_SYNC_OPEN",
+    "supersedes_observation": "privacy_remediation.current_private_custody_readback=NOT_REPERFORMED was true at the earlier checkpoint and is retained as history.",
+    "native_documents_checked": 2,
+    "current_revisions_checked": 2,
+    "permission_readback": "Both documents and their containing folder report shared=false and owner-only permissions; no permission change.",
+    "compact_projection": "NORMALISED_TEXT_MATCH",
+    "full_projection": "ONE_PUBLIC_SECTION_WORDING_DIFFERENCE_PRIVATE_ADDENDUM_INTENTIONALLY_WITHHELD",
+    "other_versions": "Additional private-memory versions include later substantive content; no global sync or deduplication claim.",
+    "native_source_pdf": "Existing AN2023 source-manifest SHA-512 matched the 5,514,981-byte native carrier; public locator corrected to pages 52–53.",
+    "receipt": "Existing private PD-MEM-001 cross-host sync receipt contains the dated addendum and private document links; all original paragraphs retained.",
+    "historical_git_exposure": "OPEN_PRIOR_COMMITS_REMAIN_REACHABLE_NO_HISTORY_REWRITE",
+    "details": "assets/data/hava-vida-aweswell-relationship-v1.json / predecessor_reconciliation.source_and_custody_verification_20261006"
   }
 }

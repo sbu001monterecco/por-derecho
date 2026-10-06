@@ -43,3 +43,14 @@ No edge transfers conduct, knowledge, intent, liability or current legal status.
 The predecessor PD-HV-COLL-0001 source-specific identifier collision (B76694769 versus repository-recorded B76564434) remains **OPEN_DO_NOT_MERGE**; it must not be lost when adopting this successor. The exact predecessor record and narrative are retained under `governance/chatgpt-memory/history/pr-1791/` and indexed there.
 
 The active relationship JSON now retains the predecessor source/event crosswalk. Operations beginning on 26 January 2012 and the registry act on 27 January are distinct event types. The predecessor Group Sun Rock ID PD-SP-S-0012 and successor context ID PD-SP-STRUCT-GROUP-SUN-ROCK require explicit canonical admission reconciliation; neither is silently renumbered or promoted by this technical repair. All current ownership, trust, UBO and legal-effect proof ceilings remain open.
+
+
+## Primary-source and custody verification — 6 October 2026
+
+Official [BORME entry 64020](https://www.boe.es/borme/dias/2012/02/08/pdfs/BORME-A-2012-27-38.pdf), printed page 7004, distinguishes operations commencement on 26 January from registration on 27 January. Its incorporation roles do not separately establish 26 January as their effective date. The separate [entry 248217](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-110-38) records the address-change entry on the same sheet.
+
+The private native 2023 pleading carrier matches the existing source-manifest SHA-512 exactly. The Group Sun Rock/Hava Vida passage starts on page 52 and continues on page 53; the immutable source ID ending ANQ-P53 remains unchanged. This verifies the source version and passage, not the truth of the pleading.
+
+The two successor-linked private memory documents and their current revisions were read back. Their permission metadata and parent folder show owner-only access. Compact text matches the repository after stated normalisation; the full public section differs in one spelling-control sentence and its private addendum remains excluded. Additional private memory versions contain later content, so full version reconciliation remains open. The existing private sync receipt records the comparison without new public provider locators.
+
+See `predecessor_reconciliation.source_and_custody_verification_20261006` in the active relationship JSON. Original metadata captures and prior receipts are retained. Canonical structure/typed-relationship admission, identifier collision, historical locator exposure and current corporate/trust proof remain open; #1791 stays open under controlling Draft #1795.

@@ -50,7 +50,19 @@
         "Aweswell ownership",
         "trust validity",
         "UBO/tax treatment"
-      ]
+      ],
+      "verification_20261006": {
+        "status": "OFFICIAL_ENTRY_READBACK_VERIFIED",
+        "url": "https://www.boe.es/borme/dias/2012/02/08/pdfs/BORME-A-2012-27-38.pdf",
+        "pdf_page": 14,
+        "printed_page": 7004,
+        "entry": 64020,
+        "operations_commencement": "2012-01-26",
+        "registry_entry_date": "2012-01-27",
+        "publication_date": "2012-02-08",
+        "role_date_boundary": "The incorporation entry records the sole-shareholder and sole-administrator roles; the operations-commencement field does not separately establish their effective date.",
+        "binary_comparison": "Official entry readback only; no byte-equivalence claim about an earlier stored BORME copy."
+      }
     },
     {
       "id": "PD-HV-SRC-20120612-BORME-248217",
@@ -61,13 +73,21 @@
       "proves": [
         "registered office change",
         "same sheet TF 49735"
-      ]
+      ],
+      "verification_20261006": {
+        "status": "OFFICIAL_ENTRY_READBACK_VERIFIED",
+        "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-110-38",
+        "entry": 248217,
+        "registry_entry_date": "2012-05-31",
+        "sheet": "TF 49735",
+        "boundary": "Distinct registered-office-change entry; no current ownership or office finding."
+      }
     },
     {
       "id": "PD-HV-SRC-20230921-ANQ-P53",
       "type": "PARTY_PLEADING",
       "date": "2023-09-21",
-      "reference": "Audiencia Nacional querella page 53 / controlled transcription",
+      "reference": "Audiencia Nacional querella pages 52–53 / controlled public transcription",
       "status": "PARTY_ALLEGATION_SOURCE",
       "proves": [
         "the pleading contains a project narrative linking LPB/Aweswell via Grupo Sun Rock with Hava Vida and named counterparties"
@@ -76,7 +96,23 @@
         "Aweswell legal ownership of Hava Vida",
         "truth of damages allegation",
         "trust relationship"
-      ]
+      ],
+      "verification_20261006": {
+        "status": "NATIVE_PDF_HASH_MATCH_AND_SOURCE_PASSAGE_VERIFIED",
+        "source_manifest": "evidence/criminal/an-dp91-2023/source-manifest.json",
+        "public_transcription": "evidence/criminal/an-dp91-2023/full-text/querella-21sep2023-full-public-transcription.md",
+        "source_pdf_sha512": "2c35052af7f869dfb13ca8593552a6997ee9f1f83a09299bcee883345482ae63b7502f76d6e85873b4b80c1b745d7a3c5797762400410e33c897140b9c36c2ab",
+        "source_bytes": 5514981,
+        "carrier_pdf_pages": 134,
+        "pleading_pages": 88,
+        "passage_pages": [
+          52,
+          53
+        ],
+        "locator_correction": "The Group Sun Rock/Hava Vida passage starts on page 52 and continues on page 53. Retain the immutable ANQ-P53 source ID; this corrects its locator, not its identity.",
+        "custody": "Authorised private native file readback; binary and private locator remain outside public Git.",
+        "proof_boundary": "Exact source-version agreement and passage presence only; party pleading remains an allegation source, not an independent finding."
+      }
     },
     {
       "id": "PD-HV-SRC-20260923-GM-ATTRIBUTION",
@@ -158,9 +194,11 @@
         "PD-SP-O-0103",
         "PD-SP-P-0002"
       ],
-      "status": "PRESERVED_PREDECESSOR_SOURCE_ASSERTION_NOT_REVERIFIED",
+      "status": "SOURCE_ESTABLISHED_OPERATIONS_COMMENCEMENT",
       "distinct_from": "PD-HV-EVT-20120127-01",
-      "boundary": "26-Jan operations beginning and 27-Jan registry act are distinct events; neither date overwrites the other."
+      "boundary": "26-Jan operations commencement and 27-Jan registry entry are distinct. Do not use operations commencement as a separately proved role-effective date.",
+      "prior_verification_status": "PRESERVED_PREDECESSOR_SOURCE_ASSERTION_NOT_REVERIFIED",
+      "verification_date": "2026-10-06"
     }
   ],
   "relationships": [
@@ -169,14 +207,24 @@
       "to": "PD-SP-O-0103",
       "relation": "SOLE_SHAREHOLDER_AT_INCORPORATION",
       "status": "SOURCE_ESTABLISHED_HISTORICAL",
-      "source_id": "PD-HV-SRC-20120208-BORME-64020"
+      "source_id": "PD-HV-SRC-20120208-BORME-64020",
+      "date_qualification": {
+        "registry_entry_date": "2012-01-27",
+        "publication_date": "2012-02-08",
+        "separate_role_effective_date": "NOT_ESTABLISHED_BY_OPERATIONS_COMMENCEMENT_FIELD"
+      }
     },
     {
       "from": "PD-SP-P-0002",
       "to": "PD-SP-O-0103",
       "relation": "SOLE_ADMINISTRATOR_AT_INCORPORATION",
       "status": "SOURCE_ESTABLISHED_HISTORICAL",
-      "source_id": "PD-HV-SRC-20120208-BORME-64020"
+      "source_id": "PD-HV-SRC-20120208-BORME-64020",
+      "date_qualification": {
+        "registry_entry_date": "2012-01-27",
+        "publication_date": "2012-02-08",
+        "separate_role_effective_date": "NOT_ESTABLISHED_BY_OPERATIONS_COMMENCEMENT_FIELD"
+      }
     },
     {
       "from": "PD-SP-O-0103",
@@ -830,6 +878,73 @@
       },
       "publication_boundary": "Repository review/control metadata only, potentially Pages-readable as repository content; not linked into rendered site navigation. No merge, deployment, branch deletion, source-binary or legal-admission claim.",
       "closure_decision": "NONZERO_KEEP_PREDECESSOR_OPEN"
+    },
+    "source_and_custody_verification_20261006": {
+      "reviewed_successor_head": "acad751cad05b415da346fb102e31e6769f16234",
+      "github_main": "f0d472567ad71a4140ae8ab3eb7a408aa8aa9e5f",
+      "gitlab_main": "16e7319673d2e3ca1e7d1d7f99b0da66a5f4bcfe",
+      "scope": "Two official BORME entries; one native pleading PDF and its existing hash; two successor-linked native memory documents; current owner-only permission metadata for those documents and their folder. Not the entire private source corpus.",
+      "source_family_disposition": [
+        {
+          "predecessor_id": "PD-HV-SRC-0001",
+          "successor_id": "PD-HV-SRC-20120208-BORME-64020",
+          "result": "SAME_OFFICIAL_REFERENCE_AND_ENTRY_VERIFIED",
+          "binary_equivalence": "NOT_CLAIMED"
+        },
+        {
+          "predecessor_id": "PD-HV-SRC-0002",
+          "successor_id": "PD-HV-SRC-20120612-BORME-248217",
+          "result": "SAME_OFFICIAL_REFERENCE_AND_ENTRY_VERIFIED",
+          "binary_equivalence": "NOT_CLAIMED"
+        },
+        {
+          "predecessor_id": "PD-HV-SRC-0003",
+          "successor_id": "PD-HV-SRC-20230921-ANQ-P53",
+          "result": "EXISTING_MANIFEST_NATIVE_PDF_HASH_MATCHED_AND_PASSAGE_VERIFIED",
+          "binary_equivalence": "VERIFIED_TO_EXISTING_SOURCE_MANIFEST_NOT_EVERY_UNLOCATED_HISTORICAL_COPY"
+        },
+        {
+          "predecessor_id": "PD-HV-SRC-0004",
+          "successor_id": "PD-HV-SRC-20260923-GM-ATTRIBUTION",
+          "result": "ATTRIBUTION_RETAINED_IN_PRIVATE_AND_PUBLIC_CONTROLS",
+          "original_statement_native_capture": "NOT_INDEPENDENTLY_RECOVERED_IN_THIS_PASS"
+        }
+      ],
+      "date_disposition": {
+        "result": "OPERATIONS_AND_REGISTRY_DATES_RECONCILED",
+        "historical_metadata_captures": "Preserved unchanged; any predecessor field describing 26-Jan as a separately proved role-effective date is not admitted on that basis."
+      },
+      "project_context": {
+        "result": "SOURCE_PASSAGE_VERIFIED_CANONICAL_ADMISSION_PENDING",
+        "current_github_structures": 11,
+        "current_gitlab_structures": 11,
+        "proposed_id": "PD-SP-S-0012",
+        "successor_context_id": "PD-SP-STRUCT-GROUP-SUN-ROCK",
+        "allocation": "No new identity allocated. Both current main structure shards omit S-0012; source-supported project context does not itself decide the pending canonical/typed-relationship admission."
+      },
+      "private_custody": {
+        "result": "VERIFIED_BOUNDED_CURRENT_READBACK",
+        "native_memory_documents": 2,
+        "current_revision_readbacks": 2,
+        "owner_only_documents": 2,
+        "owner_only_parent_folders": 1,
+        "compact_normalised_text_matches_public_projection": true,
+        "full_public_section_differing_sentences": 1,
+        "difference": "AWESWELL spelling-control wording; private addendum intentionally excluded from public projection.",
+        "normalisation": "Strip leading BOM; normalize CRLF to LF; strip line-edge whitespace; omit blank lines. This is text comparison, not native binary equivalence.",
+        "additional_full_memory_variants_seen": true,
+        "complete_cross_version_reconciliation": "OPEN",
+        "historical_git_locator_exposure": "OPEN_NO_HISTORY_REWRITE",
+        "private_receipt": "Existing PD-MEM-001 cross-host sync receipt appended and read back; exact private locators remain there."
+      },
+      "remaining_admission_and_custody_work": [
+        "S-0012/context-ID and typed person/company admission",
+        "Original attributed-statement capture if required for source authenticity",
+        "Complete reconciliation of additional private-memory variants",
+        "Historical Git locator exposure and current-source identifier collision"
+      ],
+      "closure_decision": "NONZERO_KEEP_PREDECESSOR_OPEN",
+      "boundary": "Technical source/custody verification does not establish current corporate status, trust validity, UBO/tax treatment, legal-group ownership, source-corpus completeness or public deployment."
     }
   }
 }

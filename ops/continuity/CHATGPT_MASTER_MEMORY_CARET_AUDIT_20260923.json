@@ -150,5 +150,23 @@
       "Private Drive current custody readback and historic Git exposure"
     ],
     "rule": "The dated 17/17 identity count does not certify closure of these source, relationship, privacy or current-status gaps."
+  },
+  "source_custody_addendum_20261006": {
+    "historical_audit_unchanged": true,
+    "result": "PARTIAL_NOT_ALL_IS_CARET",
+    "verified": [
+      "Two official entry readbacks and distinct operations/registration dates",
+      "One existing native pleading source version by SHA-512 and pages 52–53",
+      "Two successor-linked private memory document revisions and current owner-only custody metadata"
+    ],
+    "still_open": [
+      "Canonical Group Sun Rock / typed-relationship admission",
+      "PD-HV-COLL-0001 identifier collision",
+      "Current corporate and beneficial/trust proof",
+      "Complete private-memory version reconciliation",
+      "Historical Git locator exposure"
+    ],
+    "control": "assets/data/hava-vida-aweswell-relationship-v1.json",
+    "rule": "Finite technical verification does not turn the historical 17/17 label into a new all-is-caret assertion."
   }
 }
