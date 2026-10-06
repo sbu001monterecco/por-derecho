@@ -15,7 +15,7 @@
     },
     {
       "path": "assets/data/proceedings-master-public-v1.json",
-      "sha256": "c9f2a9bd6ad7a39252817c01e39d70281763e4371ec388a3e193b2033356cec5"
+      "sha256": "76be9279b7e5e73e1774a1fa58735a7c971bb0e9f9ee9adee7dd4a861a1ec09b"
     },
     {
       "path": "assets/data/proceedings-case-prism-v1.json",
@@ -35,7 +35,7 @@
     },
     {
       "path": "assets/data/institutional-communications-register-v1.json",
-      "sha256": "04eda9a473d07419c1d1d0941b9123d1497f7329366998a9f4cf76221910bbed"
+      "sha256": "c29f35bf9ead9bfe51e5ce4475e846d2e6d26512bb55a4aa73ea5482ce2a4095"
     },
     {
       "path": "ops/PUBLIC_AUTHORITY_COMMUNICATIONS_SCAN_CHECKPOINT_20260901.json",
@@ -47,7 +47,7 @@
     },
     {
       "path": "assets/data/matter-identity-registry-v1.institutions.json",
-      "sha256": "6f3de546947ae4c14e0664f3fb26528168499c325a37f1c088cda6a3abd5da9e"
+      "sha256": "67e38cc87e9493182d825cac9381291cb28268e35e7a54c63bb6cadf67e9d920"
     }
   ],
   "coverage": {
@@ -57,8 +57,8 @@
     "evidentiary_axes": 7,
     "community_2022_milestones": 3,
     "adjudication_and_deed_milestones": 6,
-    "verified_primary_authority_files": 33,
-    "verified_procedural_authority_files": 8,
+    "verified_primary_authority_files": 34,
+    "verified_procedural_authority_files": 7,
     "open_or_primary_pending_authority_files": 8,
     "public_authority_communication_events": 19,
     "authority_tiers_represented": 5,
@@ -2574,13 +2574,13 @@
       "stream": "LAJ / court-office supervision",
       "organ": "TSJ Secretaría de Gobierno / Coordinación Provincial / national justice-service office",
       "current_custodian": "Same offices",
-      "reference": "REGAGE26e00073341191; REGAGE26e00073341382; REGAGE26e00073341477",
-      "period": "15/08/2026",
+      "reference": "REGAGE26e00073341191; REGAGE26e00073341382; REGAGE26e00073341477; EG 17/N.º 20-26; REGAGE26e00082040006; REGAGE26e00083460291",
+      "period": "15/08/2026–24/09/2026",
       "connection": "LAJ supervisory corpus",
-      "object": "Three registrations of same corpus",
-      "status": "Registered; no three separate investigations established",
-      "source_status": "VERIFIED_PROCEDURAL",
-      "open_reference_gap": "Acknowledgements, referrals, preservation/report requests and any assigned file",
+      "object": "15-Aug LAJ supervisory corpus; 20-Sep supervening Provincial contribution adds Ref21/Ref24/DP1901; EG17/20-26 response; limited alzada",
+      "status": "Registered; EG17/20-26 decision located; limited alzada filed 24 Sep 2026 as REGAGE26e00083460291; forwarding and current outcome pending",
+      "source_status": "VERIFIED_PRIMARY",
+      "open_reference_gap": "Confirm 73341382→registro general 20-2026; prove 20-26→TSJC transfer; prove alzada forwarding and complete ordered file; obtain judicial custodian outputs",
       "group_id": "JUDICIAL_POLICE_SUPERVISION",
       "axis_ids": [
         "AX-AUTHORITY",
