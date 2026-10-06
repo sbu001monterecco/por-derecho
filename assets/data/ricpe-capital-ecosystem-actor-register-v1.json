@@ -1,0 +1,654 @@
+{
+  "schema": "por-derecho.ricpe-capital-ecosystem-actor-register.v1",
+  "register_id": "PD-SP-RICPE-CAPITAL-ACTOR-REGISTRY-001",
+  "control_date": "2026-09-29",
+  "status": "ACTIVE_PUBLIC_SOURCE_CENSUS_SEED",
+  "rules": [
+    "RICACT/RICORG references are immutable domain census references and do not replace the global PD-SP-P/PD-SP-O registry.",
+    "Search global identity before allocating or crosswalking.",
+    "Candidate crosswalks do not become resolved identities without primary evidence.",
+    "Investor status, employment, Board membership or professional association alone creates no adverse inference.",
+    "Source-literal partial names remain unresolved; do not guess missing names.",
+    "The short-tenure 2022 Investor Relations source-literal is retained for controlled identity research but need not be surfaced on the public RICPE narrative."
+  ],
+  "source_baseline": [
+    {
+      "id": "RICPE-SRC-CNMV-295",
+      "url": "https://www.cnmv.es/portal/Consultas/ecr/sociedad?nif=A76335900",
+      "kind": "OFFICIAL_REGULATORY_ENTITY_RECORD"
+    },
+    {
+      "id": "RICPE-SRC-TEAM-CURRENT",
+      "url": "https://ric.capital/compania/equipo-gestor/",
+      "kind": "ISSUER_CURRENT_TEAM"
+    },
+    {
+      "id": "RICPE-SRC-BOARD-CURRENT",
+      "url": "https://ric.capital/compania/consejo-de-administracion/",
+      "kind": "ISSUER_CURRENT_BOARD"
+    },
+    {
+      "id": "RICPE-SRC-HISTORY-CURRENT",
+      "url": "https://ric.capital/compania/nuestra-historia/",
+      "kind": "ISSUER_HISTORY"
+    },
+    {
+      "id": "RICPE-SRC-PROJECTS-2022",
+      "url": "https://ric.capital/cms/uploads/1663591080-RICPrivateEquityProyectos2022.pdf",
+      "kind": "ISSUER_PROJECT_DOSSIER"
+    },
+    {
+      "id": "RICPE-SRC-PROJECTS-2023",
+      "url": "https://ric.capital/cms/uploads/1687169604-RICPrivateEquityProyectos2023.pdf",
+      "kind": "ISSUER_PROJECT_DOSSIER"
+    },
+    {
+      "id": "RICPE-SRC-ANNUAL-2020",
+      "url": "https://ric.capital/cms/uploads/2020_Informe_Corporativo_Anual.pdf",
+      "kind": "ISSUER_ANNUAL_REPORT"
+    }
+  ],
+  "people": [
+    {
+      "actor_ref": "PD-SP-RICACT-0001",
+      "name": "Enrique Luis Guerra Suárez",
+      "aliases": [
+        "Enrique Guerra",
+        "Enrique Guerra Suárez"
+      ],
+      "roles": [
+        "Director General",
+        "Legal-Fiscal",
+        "Investor Relations",
+        "Secretary / legal adviser"
+      ],
+      "source_ids": [
+        "RICPE-SRC-CNMV-295",
+        "RICPE-SRC-TEAM-CURRENT",
+        "RICPE-SRC-BOARD-CURRENT"
+      ],
+      "global_person_id": "PD-SP-P-0162",
+      "identity_state": "GLOBAL_CROSSWALK_CONFIRMED"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0002",
+      "name": "Enrique Quevedo Gil",
+      "aliases": [
+        "Enrique Quevedo"
+      ],
+      "roles": [
+        "Operations",
+        "HR",
+        "Compliance"
+      ],
+      "source_ids": [
+        "RICPE-SRC-TEAM-CURRENT"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0003",
+      "name": "Juan Millet",
+      "roles": [
+        "Investments"
+      ],
+      "source_ids": [
+        "RICPE-SRC-TEAM-CURRENT",
+        "RICPE-SRC-PROJECTS-2022",
+        "RICPE-SRC-PROJECTS-2023"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0004",
+      "name": "Ariel Martín",
+      "roles": [
+        "Administration and Finance"
+      ],
+      "source_ids": [
+        "RICPE-SRC-TEAM-CURRENT"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0005",
+      "name": "Idania Monzón",
+      "roles": [
+        "Accounting and Administration"
+      ],
+      "source_ids": [
+        "RICPE-SRC-TEAM-CURRENT",
+        "RICPE-SRC-PROJECTS-2022",
+        "RICPE-SRC-PROJECTS-2023",
+        "RICPE-SRC-ANNUAL-2020"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0006",
+      "name": "Elvira González",
+      "roles": [
+        "Investor Relations"
+      ],
+      "source_ids": [
+        "RICPE-SRC-TEAM-CURRENT"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0007",
+      "name": "Francisco Aurelio Valentín López González",
+      "aliases": [
+        "Francisco López"
+      ],
+      "roles": [
+        "Board / historic president or director"
+      ],
+      "source_ids": [
+        "RICPE-SRC-CNMV-295",
+        "RICPE-SRC-BOARD-CURRENT",
+        "RICPE-SRC-HISTORY-CURRENT"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0008",
+      "name": "Ángel Medina Padrón",
+      "aliases": [
+        "Ángel Medina"
+      ],
+      "roles": [
+        "Board President"
+      ],
+      "source_ids": [
+        "RICPE-SRC-CNMV-295",
+        "RICPE-SRC-BOARD-CURRENT"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0009",
+      "name": "Jesús Díaz Quintana",
+      "aliases": [
+        "Jesús Díaz"
+      ],
+      "roles": [
+        "Board Vice President 1"
+      ],
+      "source_ids": [
+        "RICPE-SRC-CNMV-295",
+        "RICPE-SRC-BOARD-CURRENT"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0010",
+      "name": "Modesto Campos Castro",
+      "aliases": [
+        "Modesto Campos"
+      ],
+      "roles": [
+        "Board Vice President 2"
+      ],
+      "source_ids": [
+        "RICPE-SRC-CNMV-295",
+        "RICPE-SRC-BOARD-CURRENT"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0011",
+      "name": "José Acosta Matos",
+      "aliases": [
+        "José Acosta"
+      ],
+      "roles": [
+        "Board director"
+      ],
+      "source_ids": [
+        "RICPE-SRC-CNMV-295",
+        "RICPE-SRC-BOARD-CURRENT"
+      ],
+      "global_person_id": null,
+      "candidate_global_person_id": "PD-SP-P-0011",
+      "identity_state": "CANDIDATE_CROSSWALK_REQUIRES_PRIMARY_RECONCILIATION"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0012",
+      "name": "José López Peñate",
+      "aliases": [
+        "José López"
+      ],
+      "roles": [
+        "Board director"
+      ],
+      "source_ids": [
+        "RICPE-SRC-CNMV-295",
+        "RICPE-SRC-BOARD-CURRENT"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0013",
+      "name": "Heriberto Etala Socas",
+      "aliases": [
+        "Heriberto Etala"
+      ],
+      "roles": [
+        "Board director"
+      ],
+      "source_ids": [
+        "RICPE-SRC-CNMV-295",
+        "RICPE-SRC-BOARD-CURRENT"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0014",
+      "name": "Santiago Mederos Alonso",
+      "aliases": [
+        "Santiago Mederos"
+      ],
+      "roles": [
+        "Board director"
+      ],
+      "source_ids": [
+        "RICPE-SRC-CNMV-295",
+        "RICPE-SRC-BOARD-CURRENT"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0015",
+      "name": "José Matos Pérez",
+      "aliases": [
+        "José Matos"
+      ],
+      "roles": [
+        "Board director"
+      ],
+      "source_ids": [
+        "RICPE-SRC-CNMV-295",
+        "RICPE-SRC-BOARD-CURRENT"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0016",
+      "name": "Dunia Pérez García",
+      "aliases": [
+        "Dunia Pérez"
+      ],
+      "roles": [
+        "Board director"
+      ],
+      "source_ids": [
+        "RICPE-SRC-CNMV-295",
+        "RICPE-SRC-BOARD-CURRENT"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0017",
+      "name": "Juan Pérez Bolaños",
+      "aliases": [
+        "Juan Pérez"
+      ],
+      "roles": [
+        "Board director"
+      ],
+      "source_ids": [
+        "RICPE-SRC-CNMV-295",
+        "RICPE-SRC-BOARD-CURRENT"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0018",
+      "name": "Carmelo Ramos Falcón",
+      "aliases": [
+        "Carmelo Ramos"
+      ],
+      "roles": [
+        "Board director"
+      ],
+      "source_ids": [
+        "RICPE-SRC-CNMV-295",
+        "RICPE-SRC-BOARD-CURRENT"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0019",
+      "name": "Juan Francisco Falcón",
+      "roles": [
+        "Board vice-secretary / adviser"
+      ],
+      "source_ids": [
+        "RICPE-SRC-BOARD-CURRENT",
+        "RICPE-SRC-HISTORY-CURRENT"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0020",
+      "name": "Orlando Luján",
+      "roles": [
+        "Board vice-secretary"
+      ],
+      "source_ids": [
+        "RICPE-SRC-BOARD-CURRENT",
+        "RICPE-SRC-HISTORY-CURRENT"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0021",
+      "name": "Murli Kessomal Kaknani",
+      "roles": [
+        "Board vice-secretary 3"
+      ],
+      "source_ids": [
+        "RICPE-SRC-BOARD-CURRENT"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0022",
+      "name": "Eugenio Vidal Rivera",
+      "roles": [
+        "Historical Board vice-president"
+      ],
+      "source_ids": [
+        "RICPE-SRC-CNMV-295"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_HISTORICAL_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0023",
+      "name": "Sergio Rodríguez",
+      "roles": [
+        "Historical investments / administration"
+      ],
+      "source_ids": [
+        "RICPE-SRC-PROJECTS-2022",
+        "RICPE-SRC-PROJECTS-2023",
+        "RICPE-SRC-ANNUAL-2020"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_HISTORICAL_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0024",
+      "name": "Juan José Vera",
+      "roles": [
+        "Historical external investments adviser"
+      ],
+      "source_ids": [
+        "RICPE-SRC-PROJECTS-2023"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_HISTORICAL_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0025",
+      "name": "Priscila Briganti",
+      "roles": [
+        "Historical IT / Investor Relations"
+      ],
+      "source_ids": [
+        "RICPE-SRC-PROJECTS-2022",
+        "RICPE-SRC-PROJECTS-2023",
+        "RICPE-SRC-ANNUAL-2020"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_HISTORICAL_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0026",
+      "name": "Alejandro León",
+      "roles": [
+        "Historical Investor Relations"
+      ],
+      "source_ids": [
+        "RICPE-SRC-PROJECTS-2022"
+      ],
+      "global_person_id": null,
+      "candidate_full_name": "Alejandro León Pérez",
+      "identity_state": "SOURCE_LITERAL_CONFIRMED_FULL_IDENTITY_RECONCILIATION_PENDING",
+      "publication_surface": "CONTROLLED_RESEARCH_ONLY"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0027",
+      "name": "Carmen López",
+      "roles": [
+        "Historical compliance / team function"
+      ],
+      "source_ids": [
+        "RICPE-SRC-ANNUAL-2020"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_HISTORICAL_SOURCE_LITERAL_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0028",
+      "name": "Luca Mossini",
+      "roles": [
+        "Historical legal / fiscal"
+      ],
+      "source_ids": [
+        "RICPE-SRC-ANNUAL-2020"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_HISTORICAL_SOURCE_LITERAL_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0029",
+      "name": "Laura López",
+      "roles": [
+        "Historical team"
+      ],
+      "source_ids": [
+        "RICPE-SRC-ANNUAL-2020"
+      ],
+      "global_person_id": null,
+      "identity_state": "PUBLIC_HISTORICAL_SOURCE_LITERAL_GLOBAL_ID_PENDING"
+    },
+    {
+      "actor_ref": "PD-SP-RICACT-0030",
+      "name": "Laura Dguez.",
+      "roles": [
+        "Historical team"
+      ],
+      "source_ids": [
+        "RICPE-SRC-ANNUAL-2020"
+      ],
+      "global_person_id": null,
+      "identity_state": "PARTIAL_SOURCE_LITERAL_DO_NOT_EXPAND_WITHOUT_CORROBORATION"
+    }
+  ],
+  "organisations": [
+    {
+      "org_ref": "PD-SP-RICORG-0001",
+      "name": "RIC Private Equity Investment Partners, S.C.R., S.A.",
+      "global_org_id": "PD-SP-O-0020",
+      "state": "GLOBAL_CROSSWALK_CONFIRMED"
+    },
+    {
+      "org_ref": "PD-SP-RICORG-0002",
+      "name": "Cecabank, S.A.",
+      "roles": [
+        "Depositary"
+      ],
+      "global_org_id": null,
+      "state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "org_ref": "PD-SP-RICORG-0003",
+      "name": "Intermoney Valora Consulting, S.A.",
+      "roles": [
+        "Risk",
+        "Valuation",
+        "Compliance"
+      ],
+      "global_org_id": null,
+      "state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "org_ref": "PD-SP-RICORG-0004",
+      "name": "Corretaje e Información Monetaria y de Divisas, S.A.",
+      "roles": [
+        "Internal audit"
+      ],
+      "global_org_id": null,
+      "state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "org_ref": "PD-SP-RICORG-0005",
+      "name": "Eudita AH Auditores 1986, S.A.P.",
+      "roles": [
+        "External audit"
+      ],
+      "global_org_id": null,
+      "state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "org_ref": "PD-SP-RICORG-0006",
+      "name": "Uría Menéndez Abogados, S.L.P.",
+      "roles": [
+        "Legal adviser"
+      ],
+      "global_org_id": "PD-SP-O-0107",
+      "state": "GLOBAL_CROSSWALK_EXISTING_CARET_PENDING"
+    },
+    {
+      "org_ref": "PD-SP-RICORG-0007",
+      "name": "Luján Asesores, S.L.P.",
+      "roles": [
+        "Historical tax adviser"
+      ],
+      "global_org_id": null,
+      "state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "org_ref": "PD-SP-RICORG-0008",
+      "name": "Deloitte, S.L.",
+      "roles": [
+        "Tax adviser in 2023 dossier"
+      ],
+      "global_org_id": null,
+      "state": "PUBLIC_ROLE_CONFIRMED_GLOBAL_ID_PENDING"
+    },
+    {
+      "org_ref": "PD-SP-RICORG-0009",
+      "name": "SPAR Gran Canaria",
+      "roles": [
+        "Founding/support group named by RICPE"
+      ],
+      "global_org_id": null,
+      "state": "EXACT_LEGAL_ENTITY_RECONCILIATION_PENDING"
+    },
+    {
+      "org_ref": "PD-SP-RICORG-0010",
+      "name": "Acosta Matos",
+      "roles": [
+        "Founding/support group named by RICPE"
+      ],
+      "global_org_id": null,
+      "state": "EXACT_LEGAL_ENTITY_RECONCILIATION_PENDING"
+    },
+    {
+      "org_ref": "PD-SP-RICORG-0011",
+      "name": "Grupo Capisa",
+      "roles": [
+        "Founding/support group named by RICPE"
+      ],
+      "global_org_id": null,
+      "state": "EXACT_LEGAL_ENTITY_RECONCILIATION_PENDING"
+    },
+    {
+      "org_ref": "PD-SP-RICORG-0012",
+      "name": "Grupo Mederos",
+      "roles": [
+        "Founding/support group named by RICPE"
+      ],
+      "global_org_id": null,
+      "state": "EXACT_LEGAL_ENTITY_RECONCILIATION_PENDING"
+    },
+    {
+      "org_ref": "PD-SP-RICORG-0013",
+      "name": "Grupo Cement Investment",
+      "roles": [
+        "Founding/support group named by RICPE"
+      ],
+      "global_org_id": null,
+      "state": "EXACT_LEGAL_ENTITY_RECONCILIATION_PENDING"
+    },
+    {
+      "org_ref": "PD-SP-RICORG-0014",
+      "name": "CEOE Tenerife",
+      "roles": [
+        "Investor-event / business-network node"
+      ],
+      "global_org_id": null,
+      "state": "PUBLIC_NETWORK_NODE_GLOBAL_ID_PENDING"
+    },
+    {
+      "org_ref": "PD-SP-RICORG-0015",
+      "name": "FEPECO",
+      "roles": [
+        "Investor-event / business-network node"
+      ],
+      "global_org_id": null,
+      "state": "PUBLIC_NETWORK_NODE_GLOBAL_ID_PENDING"
+    },
+    {
+      "org_ref": "PD-SP-RICORG-0016",
+      "name": "ASHOTEL",
+      "roles": [
+        "Canary hotel/business network node"
+      ],
+      "global_org_id": null,
+      "state": "PUBLIC_NETWORK_NODE_GLOBAL_ID_PENDING"
+    },
+    {
+      "org_ref": "PD-SP-RICORG-0017",
+      "name": "RECABA / Red Canaria de Business Angels",
+      "roles": [
+        "Canary investor-network node"
+      ],
+      "global_org_id": null,
+      "state": "PUBLIC_NETWORK_NODE_GLOBAL_ID_PENDING"
+    }
+  ],
+  "next_actor_ref": "PD-SP-RICACT-0031",
+  "next_org_ref": "PD-SP-RICORG-0018",
+  "required_next_actions": [
+    "Run global PD-SP-P/O alias collision check for every pending row.",
+    "Resolve shortened Board names against CNMV/BORME full legal names.",
+    "Resolve exact legal entities behind founding/support group labels.",
+    "Expand historical people from annual reports, archived PDFs, event pages and professional sources.",
+    "Crosswalk every confirmed investor identity separately from RICINV position IDs.",
+    "Preserve dated role history; do not overwrite historical roles with current roles."
+  ]
+}

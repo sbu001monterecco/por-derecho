@@ -1,0 +1,66 @@
+{
+  "record_type": "individual_asset_approval_supplement",
+  "canonical_person_id": "PD-SP-P-0041",
+  "canonical_person_name": "Juan Tomás Parrilla Suárez",
+  "canonical_identity_registry": "assets/data/matter-identity-registry-v1.people.json",
+  "canonical_identity_registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "workspace_id": "PD-SP-COUNSEL-INCIDENT-REGISTRY-001",
+  "incident_id": "PD-CIR-JTP-2020-01",
+  "approval_date": "2026-09-26",
+  "approval_by": "Gil Marer",
+  "approval_status": "EXPLICIT_USER_APPROVED_NO_FURTHER_LIKENESS_APPROVAL_REQUIRED",
+  "approval_scope": "Canonical JTP portrait for future JTP imagery; replace only the incorrect JTP portrait in the existing five-person presentation. Preserve the other four individuals and their images unchanged.",
+  "approved_master": {
+    "filename": "PD-SP-P-0041_JTP_APPROVED_CANONICAL_20260926.png",
+    "mime_type": "image/png",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 1886012,
+    "sha256": "331c679a4d5fb44b4467712c90c2d29792a8d7fb49dc96e55bae186f5d9fb27f",
+    "md5": "a0a75ae8ba8e204dd750dd7369d9cf4f",
+    "proposed_repository_path": "assets/actors/PD-SP-P-0041_JTP_APPROVED_CANONICAL_20260926.png",
+    "repository_path_status": "RESERVED_TARGET_NOT_PROOF_OF_BINARY_EXISTENCE"
+  },
+  "provenance": {
+    "classification": "USER_APPROVED_AI_ASSISTED_DERIVATIVE_FROM_USER_SUPPLIED_SOURCE",
+    "identity_attribution": "User attribution; no independent facial identification",
+    "source_description": "User-supplied conference/classroom photograph followed by the expressly approved portrait derivative shown in the continuity conversation",
+    "not_an_independent_documentary_photograph": true,
+    "selection_boundary": "The checksum identifies the latest expressly approved displayed PNG, not an earlier preview or the earlier re-uploaded source image."
+  },
+  "lock": {
+    "state": "APPROVED_MASTER_NO_ALTERATION",
+    "no_regeneration": true,
+    "no_face_change": true,
+    "no_retouching": true,
+    "no_recropping": true,
+    "no_substitution": true,
+    "further_image_changes_require_new_explicit_user_approval": true,
+    "four_other_individuals_images_and_placement_locked": true,
+    "lock_type": "Editorial/workflow instruction with checksum; not provider-enforced WORM or physical immutability",
+    "identity_does_not_establish_conduct_knowledge_or_liability": true
+  },
+  "supersession": {
+    "scope": "JTP portrait only",
+    "historical_github_control": "ops/jtp/JTP_ACTOR_IMAGE_SOURCE_LOCK_20260925.json",
+    "superseded_jtp_path": "assets/actors/juan-tomas-parrilla-canonical-20260923.jpg",
+    "superseded_jtp_sha256": "17f38a855da0e13f98c3eb9395455b96e9b3b844a6c16a5714346fe2ab4d1a62",
+    "rule": "The prior JTP approval/reference is no longer authority to use the incorrect likeness. Preserve the historical record without treating it as the current approval. No other individual's image is superseded or authorised for modification."
+  },
+  "custody_at_record_creation": {
+    "google_drive_raw_png": "UPLOADED_AND_METADATA_READ_BACK",
+    "google_drive_location": "Existing Por Derecho visual-assets folder; private provider locator retained in the Drive approval record, not this public-safe file",
+    "github_raw_png": "PENDING_BINARY_TRANSFER_AND_HASH_READBACK",
+    "gitlab_raw_png": "PENDING_BINARY_TRANSFER_AND_HASH_READBACK",
+    "public_page_replacement": "NOT_PERFORMED_BY_THIS_METADATA_RECORD",
+    "important": "A committed approval record or open review request is not proof that the binary image exists in either Git repository or that a public page has changed."
+  },
+  "completion_requirements": [
+    "Transfer the exact PNG bytes to the reserved target on review branches in both existing repositories",
+    "Verify SHA-256 and size independently on each destination",
+    "Bind the approved asset to existing PD-SP-P-0041 without creating a duplicate person or competing registry",
+    "Replace only the JTP slot; verify unchanged other-four image bytes and presentation",
+    "Preserve all existing review and CI controls; do not bypass failed checks",
+    "Record actual commit, merge and deployment receipts separately"
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "schema": "por-derecho.cuatrecasas-wip-reconciliation.v1",
+  "as_of": "2026-09-13",
+  "status": "PROVISIONAL_PUBLIC_RECONCILIATION",
+  "controlling_rule": "WIP_OR_ESTIMATE != ISSUED_INVOICE != PROFORMA != PAGARE != CASH_PAYMENT. No amount moves between categories without a source-backed bridge.",
+  "definitions": {
+    "wip": "Work recorded, accrued or valued internally but not yet issued as a final invoice.",
+    "estimate": "Forward-looking estimate; not necessarily work already performed.",
+    "proforma": "Pre-invoice or collection instrument; not treated as an issued tax invoice unless the final invoice is identified.",
+    "pagare": "Separate negotiable instrument whose legal cause and allocation to underlying work must be evidenced independently.",
+    "issued_invoice": "Final invoice identified by invoice number and native face amount."
+  },
+  "source_controls": [
+    {
+      "id": "CUA-WIP-SRC-001",
+      "date": "2019-07-03",
+      "source": "Cuatrecasas billing / receivables table supplied with all invoices issued since 2014",
+      "status": "NATIVE_FIRM_EMAIL_TABLE_LOCATED",
+      "establishes": "Three non-invoice rows were included alongside the 22 issued invoices.",
+      "does_not_establish": "It does not supply the underlying time-entry ledger or prove that every estimate had already been earned."
+    },
+    {
+      "id": "CUA-WIP-SRC-002",
+      "date": "2020-06-15",
+      "source": "Cuatrecasas Collections email",
+      "status": "NATIVE_EMAIL_LOCATED_2026-09-13",
+      "establishes": "Cuatrecasas stated unpaid bills of EUR 136,830.72 plus VAT and work carried out valued at EUR 161,738.75 plus VAT, describing around EUR 400,000 pending.",
+      "does_not_establish": "It does not itemise the EUR 161,738.75, explain the approximate EUR 400,000 figure, or map the work into later proformas, notes or claims."
+    },
+    {
+      "id": "CUA-WIP-SRC-003",
+      "date": "2026-08-24",
+      "source": "GitHub legacy audit and reconstruction controls",
+      "status": "READ_ONLY_RECOVERED_AND_SUBSUMED",
+      "github_commit": "2adda2e901ca7c39e91ed2510146d964acb17355",
+      "files": [
+        "archive/CUATRECASAS_INVOICE_FINANCE_OUTCOME_AUDIT_24AUG2026.md",
+        "assets/data/cuatrecasas-invoice-audit-v1.json",
+        "archive/CUATRECASAS_2014_ONWARD_BILLING_PACKAGE_RECONSTRUCTION_PROMPT_24AUG2026.md",
+        "archive/CUATRECASAS_BILLING_CLARIFICATION_EMAIL_DRAFT_24AUG2026.md",
+        "scripts/validate_cuatrecasas_invoice_audit.py",
+        "MISSING_EVIDENCE_REGISTER_30JUL2026.md#ME-083"
+      ],
+      "treatment": "Useful accounting controls were migrated into the current GitLab register and validation model; obsolete missing-source wording is corrected rather than copied blindly."
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "CUA-WIP-001",
+      "date": "2019-07-03",
+      "label": "2018 works to be invoiced",
+      "amount_eur": 61404.95,
+      "class": "UNBILLED_WORK",
+      "issued_invoice": false,
+      "cash_paid": false,
+      "source": "CUA-WIP-SRC-001"
+    },
+    {
+      "id": "CUA-WIP-002",
+      "date": "2019-07-03",
+      "label": "2019 works to be invoiced",
+      "amount_eur": 31020.0,
+      "class": "UNBILLED_WORK",
+      "issued_invoice": false,
+      "cash_paid": false,
+      "source": "CUA-WIP-SRC-001"
+    },
+    {
+      "id": "CUA-WIP-003",
+      "date": "2019-07-03",
+      "label": "Estimate of work until end of 2019",
+      "amount_eur": 60000.0,
+      "class": "ESTIMATE",
+      "issued_invoice": false,
+      "cash_paid": false,
+      "source": "CUA-WIP-SRC-001"
+    },
+    {
+      "id": "CUA-WIP-004",
+      "date": "2020-06-15",
+      "label": "Work carried out",
+      "amount_eur": 161738.75,
+      "class": "WORK_CARRIED_OUT_UNBILLED",
+      "vat_statement": "plus VAT",
+      "issued_invoice": false,
+      "cash_paid": false,
+      "source": "CUA-WIP-SRC-002"
+    }
+  ],
+  "headline_reconciliations": {
+    "2019_unbilled_plus_estimate_eur": 152424.95,
+    "2020_work_carried_out_unbilled_eur": 161738.75,
+    "headline_delta_eur": 9313.8,
+    "delta_boundary": "The EUR 9,313.80 is a headline comparison, not a like-for-like accounting reconciliation because the 2019 total includes a EUR 60,000 forward estimate while the 2020 source describes work carried out.",
+    "2020_unpaid_issued_invoices_eur": 136830.72,
+    "2020_two_stated_components_before_vat_eur": 298569.47,
+    "mechanical_21pct_if_applied_eur": 361269.06,
+    "approx_400k_boundary": "Cuatrecasas described around EUR 400,000 pending. The exact bridge from the two stated components and VAT to that approximation is not supplied in the located email and must not be invented."
+  },
+  "partial_invoice_bridge": {
+    "invoice": "1810219093",
+    "date": "2018-12-31",
+    "accrued_work_stated_eur": 97492.5,
+    "issued_invoice_face_eur": 30000.0,
+    "mechanical_unbilled_remainder_eur": 67492.5,
+    "2019_row_2018_works_to_be_invoiced_eur": 61404.95,
+    "difference_eur": 6087.55,
+    "status": "OPEN_RECONCILIATION",
+    "question": "Was EUR 6,087.55 written off, discounted, reclassified, billed elsewhere, excluded, or otherwise adjusted? No conclusion is asserted without the work-level ledger."
+  },
+  "instrument_bridge": {
+    "issued_invoices_unpaid_2019_eur": 136830.72,
+    "proformas_total_eur": 53000.0,
+    "proformas_components_eur": [
+      23000.0,
+      30000.0
+    ],
+    "claim_1_principal_eur": 189830.72,
+    "claim_1_arithmetic": "136830.72 + 53000.00 = 189830.72",
+    "claim_2_four_matkator_notes_eur": 182517.72,
+    "wip_to_proforma_mapping": "OPEN",
+    "wip_to_pagare_mapping": "OPEN",
+    "proforma_to_pagare_mapping": "OPEN",
+    "single_satisfaction_status": "NOT_PROVED_COMPLETE",
+    "boundary": "Arithmetic proximity and the firm's description of notes as a means of payment for some Aweswell/LPB work justify reconciliation; they do not prove duplicate recovery or invalid instruments."
+  },
+  "records_requested": [
+    "Complete WIP / time-entry ledger from 1 January 2014, plus material 2013 entries later picked up by 2014/2015 billing",
+    "WIP ageing and internal reporting from 1 January 2018 through 31 May 2020",
+    "For each work entry: work date, timekeeper, grade, hours, standard rate, discounted rate, write-off, discount, client/entity, matter code and narrative",
+    "Mapping of every WIP entry to final invoice, proforma, pagaré, claim, credit note, write-off or unrecovered balance",
+    "Breakdown supporting the EUR 161,738.75 work-carried-out figure at 15 June 2020",
+    "Bridge between the July-2019 EUR 152,424.95 WIP/estimate presentation and the June-2020 EUR 161,738.75 work-carried-out figure",
+    "Basis for the firm's approximate EUR 400,000 pending statement, including VAT treatment and any interest/cost component",
+    "Single-satisfaction ledger linking historic invoices, proformas, four Matkator notes, judicial claims, payments, adjudication credits and any recoveries"
+  ],
+  "gaps": [
+    {
+      "id": "ME-083",
+      "legacy_status": "MISSING_NATIVE_2020_COLLECTIONS_SOURCE",
+      "current_status": "PARTIALLY_CLOSED_2026-09-13",
+      "resolved": "Native 15 June 2020 Cuatrecasas Collections email located and read directly.",
+      "still_missing": "The itemised work-level ledger and bridge underlying EUR 161,738.75, the approximate EUR 400,000 statement, and later allocation into proformas / pagarés / claims."
+    },
+    {
+      "id": "CUA-WIP-GAP-002",
+      "current_status": "OPEN",
+      "item": "Work-entry to invoice/proforma/pagaré/claim allocation ledger"
+    },
+    {
+      "id": "CUA-WIP-GAP-003",
+      "current_status": "OPEN",
+      "item": "Credit-note, write-off, discount, VAT and single-satisfaction ledger"
+    }
+  ],
+  "quarterly_control": {
+    "literal_github_scan": "No distinct AnythingQuarterly corpus or entity was identified by literal search.",
+    "relevant_source_id": "CUA-SRC-002",
+    "title": "4º Informe trimestral LUCHY PLAYA BLANCA",
+    "date": "2018-12-20",
+    "author_class": "ADMINISTRACION_CONCURSAL_THIRD_PARTY",
+    "publication_label": "THIRD-PARTY SOURCE — NOT CUATRECASAS-AUTHORED",
+    "wip_treatment": "Contextual insolvency source only; it is not a Cuatrecasas fee/WIP ledger and is excluded from WIP totals."
+  },
+  "related": {
+    "invoice_payment_register": "/assets/data/cuatrecasas-invoice-payment-register-v1.json",
+    "whole_claim_register": "/assets/data/cuatrecasas-whole-claim-architecture-v1.json",
+    "en_page": "/en/cuatrecasas-wip-unbilled/",
+    "es_page": "/es/cuatrecasas-wip-no-facturado/"
+  },
+  "current_corrections_20260927": {
+    "instrument_order": "Four 21-Nov-2018 notes predate July-2019 WIP. No automatic forward conversion of all later WIP is established.",
+    "note_face": "Court-file reproductions all read NO A LA ORDEN; actual transmission, originals and backs remain open.",
+    "vat": "The 21 percent scenario is mechanical only; native invoice examples include reverse-charge treatment.",
+    "current_source_control": "archive/CUATRECASAS_PROFESSIONAL_PERIMETER_RECONCILIATION_27SEP2026.md"
+  },
+  "current_position_status_control": {
+    "as_of": "2026-09-27",
+    "path": "assets/data/cuatrecasas-whole-claim-architecture-v1.json",
+    "source_control": "archive/CUATRECASAS_POSITION_STATUS_OUTCOME_UPDATE_27SEP2026.md",
+    "rule": "Historical events and financial values preserved. Current status and attributed client position are resolved through the existing whole-claim control."
+  }
+}

@@ -1,0 +1,36 @@
+name: Validate consequence-risk communications control
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "29 6 * * *"
+  push:
+    paths:
+      - ".github/governance/CONSEQUENCE_RISK_COMMUNICATION_CONTROL_25SEP2026.md"
+      - "assets/data/consequence-risk-control-v1.json"
+      - "scripts/validate_consequence_risk_control.py"
+      - ".github/workflows/validate-consequence-risk-control.yml"
+      - "AGENTS.md"
+      - "archive/CONTINUOUS_MAINTENANCE_MATRIX.md"
+  pull_request:
+    paths:
+      - ".github/governance/CONSEQUENCE_RISK_COMMUNICATION_CONTROL_25SEP2026.md"
+      - "assets/data/consequence-risk-control-v1.json"
+      - "scripts/validate_consequence_risk_control.py"
+      - ".github/workflows/validate-consequence-risk-control.yml"
+      - "AGENTS.md"
+      - "archive/CONTINUOUS_MAINTENANCE_MATRIX.md"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12"
+      - run: python scripts/validate_consequence_risk_control.py

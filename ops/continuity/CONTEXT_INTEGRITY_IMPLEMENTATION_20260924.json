@@ -1,0 +1,21 @@
+{
+  "control": "PD-CONTEXT-INTEGRITY-20260924-01",
+  "source_case_sha256": "ad3b9531986446f73b1bc39e7b5baca2bedb1efdeb8ece06b7175008655fc2c6",
+  "source_blocks": 206,
+  "open_context_review_records": 482,
+  "completed_substantive_context_reviews": 0,
+  "new_guilt_or_intent_findings": 0,
+  "input_unchanged": true,
+  "private_outputs_only": true,
+  "local_regression_tests": 32,
+  "remote_ci": "NOT_YET_RUN",
+  "main_merged": false,
+  "deployed": false,
+  "boundary": "Structural adapter execution on recovered v3; not a fresh source-complete merits review.",
+  "source_change": "Method extension only; a new context review is not an adjudication.",
+  "existing_controls": [
+    "PD-AC-CLAIMS-R33-20260922-01",
+    "PD-LAW-TRUTH-20260922-01",
+    "PD-R33-CONTINUITY-20260924-01"
+  ]
+}

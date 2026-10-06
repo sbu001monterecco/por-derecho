@@ -1,0 +1,41 @@
+name: Corporate Brain A+ validation
+
+on:
+  pull_request:
+    paths:
+      - "ops/corporate-brain/**"
+      - "skills/corporate-brain-*/**"
+      - "corporate_brain/**"
+      - "data/corporate-brain-evals-v1.json"
+      - "scripts/validate_corporate_brain_a_plus.py"
+      - "tests/test_corporate_brain_a_plus.py"
+      - "tests/test_corporate_brain_key_readiness.py"
+      - ".github/workflows/corporate-brain-a-plus.yml"
+  push:
+    branches: [main]
+    paths:
+      - "ops/corporate-brain/**"
+      - "skills/corporate-brain-*/**"
+      - "corporate_brain/**"
+      - "data/corporate-brain-evals-v1.json"
+      - "scripts/validate_corporate_brain_a_plus.py"
+      - "tests/test_corporate_brain_a_plus.py"
+      - "tests/test_corporate_brain_key_readiness.py"
+      - ".github/workflows/corporate-brain-a-plus.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12"
+      - name: Validate A+ control
+        run: python scripts/validate_corporate_brain_a_plus.py
+      - name: Run A+ tests
+        run: python -m unittest tests.test_corporate_brain_a_plus tests.test_corporate_brain_key_readiness -v

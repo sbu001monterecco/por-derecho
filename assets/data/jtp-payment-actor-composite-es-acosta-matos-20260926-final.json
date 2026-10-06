@@ -1,0 +1,18 @@
+{
+  "schema": "por-derecho.jtp-spanish-actor-composite.v1",
+  "control_id": "PD-JTP-ACTOR-COMPOSITE-ES-20260926-01",
+  "canonical_person_id": "PD-SP-P-0041",
+  "publication_language": "es",
+  "terminology_rule": "Use Acosta Matos rather than CAM in reader-facing Spanish labels; preserve AC for Administrador Concursal.",
+  "asset_path": "assets/jtp-payment-actor-composite-es-acosta-matos-20260926.png",
+  "dimensions": [
+    1055,
+    1491
+  ],
+  "sha256": "c2100391b51b303342bcd91ebf953747133aff4a513dfcefc45cb30a3b3794d3",
+  "source_drive_id": "1prkcpzd1_UMCJbArVFfe4UaN9Wa4RLIU",
+  "jtp_portrait": "user-approved canonical JTP portrait under PD-SP-P-0041",
+  "four_other_portraits": "preserved from the existing controlled five-person presentation",
+  "approval_state": "USER_APPROVED_FOR_PUBLICATION",
+  "date": "2026-09-26"
+}

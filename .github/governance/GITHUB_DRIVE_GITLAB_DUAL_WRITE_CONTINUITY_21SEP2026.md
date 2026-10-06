@@ -1,8 +1,14 @@
 # GitHub + Private Drive → GitLab dual-write continuity — 21 Sep 2026
 
 **Control ID:** `PD-DUALWRITE-20260921-01`  
-**Status:** ACTIVE OUTAGE CONTINUITY CONTROL  
-**Applies while authenticated GitLab access is unavailable.**
+**Status:** ACTIVE THREE-LAYER CONTINUITY — GITLAB ACCESS RESTORED 24 SEP 2026 / ADDITIVE RECONCILIATION MODE  
+**Applies continuously.** The outage-only wording below records the historical phase. When GitLab is available, the same three-layer rule operates in additive reconciliation mode; when unavailable, the explicit replay queue controls.
+
+## 24 September 2026 — restored GitLab mode
+
+Authenticated access to the private canonical GitLab project is restored and current `main` is writable. The continuity model therefore moves from outage-only replay planning to **active additive reconciliation**: private Drive remains native/private custody, GitHub remains public-safe continuity/publication control, and GitLab again receives the private/editable control state. Existing outage queue items are not silently marked complete; each retains its own recovery status until source-proved reconciliation is verified.
+
+For the EG17/20-26 alzada continuity transaction, private native bytes remain in approved Drive custody and are not published to GitHub or model-roundtripped into GitLab. Repository layers carry fingerprints, provenance, evidence state, open gaps and recovery status.
 
 ## Purpose
 

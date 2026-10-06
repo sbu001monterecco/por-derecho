@@ -2,6 +2,8 @@
 
 Date: 24 August 2026
 
+> **Dated correction and continuation — 27 September 2026:** the historical text below is preserved. The ministerial elevation stage must be added to the two-office shorthand; 02/2022 remains a reported identifier pending its original source. See the [current transparency and decision record](RICPE_TRANSPARENCY_CURRENT_20260927.md), [action register](RICPE_SAIP_ACTION_REGISTER_20260927.json) and [next steps](RICPE_SAIP_NEXT_STEPS_20260927.md). The original decree/report, actual signatures and delegations are still required; this note neither certifies personal responsibility nor submits a new request.
+
 Purpose: distinguish the public call to the competent public offices from the internal reminder/action list. The website must say who is responsible for holding, processing, deciding, supervising or producing each public record.
 
 ## RIC idoneidad / Decree 224/2022

@@ -1,0 +1,195 @@
+{
+  "schema": "por-derecho.intelligence-led-review-standard.v1",
+  "version": "1.0",
+  "effective_date": "2026-09-25",
+  "status": "ADVISORY_GOVERNANCE_EXTENSION",
+  "purpose": "Import public, reusable intelligence-led review practices from Companies House and the Insolvency Service without implying endorsement, replacing existing evidence-state controls, or activating a new CI hard gate.",
+  "source_cutoff": "2026-09-25",
+  "institutional_sources": [
+    {
+      "institution": "Companies House",
+      "title": "Companies House strategic intelligence assessment",
+      "published": "2024-10-24",
+      "url": "https://www.gov.uk/government/publications/companies-house-strategic-intelligence-assessment/companies-house-strategic-intelligence-assessment"
+    },
+    {
+      "institution": "Companies House",
+      "title": "Companies House enforcement policy",
+      "url": "https://www.gov.uk/government/publications/companies-house-enforcement-policy/companies-house-enforcement-policy"
+    },
+    {
+      "institution": "Insolvency Service",
+      "title": "Live company investigations - what we do",
+      "url": "https://www.gov.uk/government/publications/the-insolvency-service-company-investigations-what-we-do/company-investigations-what-we-do"
+    },
+    {
+      "institution": "Insolvency Service",
+      "title": "Insolvent Company Investigations: what we do",
+      "url": "https://www.gov.uk/government/publications/insolvent-company-investigations/insolvent-company-investigations-what-we-do"
+    },
+    {
+      "institution": "Insolvency Service",
+      "title": "Investigations and enforcement strategy 2026 to 2031",
+      "url": "https://www.gov.uk/government/publications/insolvency-service-launches-5-year-investigation-and-enforcement-strategy/investigations-and-enforcement-strategy-2026-to-2031"
+    },
+    {
+      "institution": "Companies House and Insolvency Service",
+      "title": "Seven linked companies shut down after Insolvency Service investigation with Companies House",
+      "published": "2026-09-24",
+      "url": "https://www.gov.uk/government/news/seven-linked-companies-shut-down-after-insolvency-service-investigation-with-companies-house"
+    }
+  ],
+  "workflow": [
+    "SIGNAL_CAPTURE",
+    "LINK_HYPOTHESIS",
+    "INDEPENDENT_REALITY_CHECK",
+    "EVIDENCE_STATE_CLASSIFICATION",
+    "CONFIDENCE_CALIBRATION",
+    "CONTRARY_EVIDENCE_AND_ALTERNATIVES",
+    "DECISIVE_TEST",
+    "HARM_AND_PRIORITY",
+    "COMPETENCE_ROUTING",
+    "SECOND_PAIR_REVIEW",
+    "HUMAN_DECISION",
+    "ACTION_OR_NO_ACTION",
+    "PERIODIC_REVIEW_AND_CORRECTION"
+  ],
+  "required_analysis_fields": [
+    "signal_id",
+    "source_record_ids",
+    "subject_refs",
+    "signal_description",
+    "link_hypothesis",
+    "link_basis",
+    "independent_verification",
+    "registry_or_record_vs_reality",
+    "evidence_state",
+    "confidence_term",
+    "confidence_basis",
+    "contrary_evidence",
+    "innocent_or_alternative_explanations",
+    "decisive_test",
+    "what_would_change_status",
+    "harm_and_risk",
+    "seriality_or_pattern",
+    "cooperation_state",
+    "competence_route",
+    "four_p_lane",
+    "review_state",
+    "human_decision",
+    "decision_reasons",
+    "review_date_or_trigger",
+    "status_change_log"
+  ],
+  "confidence_vocabulary": {
+    "source": "PHIA Probability Yardstick as used by Companies House",
+    "communication_only_not_computed_probability": true,
+    "terms": [
+      {
+        "term": "REMOTE_CHANCE",
+        "approximate_range": ">0% to <5%"
+      },
+      {
+        "term": "HIGHLY_UNLIKELY",
+        "approximate_range": "10% to 20%"
+      },
+      {
+        "term": "UNLIKELY",
+        "approximate_range": "25% to 35%"
+      },
+      {
+        "term": "REALISTIC_POSSIBILITY",
+        "approximate_range": "40% to <50%"
+      },
+      {
+        "term": "LIKELY_OR_PROBABLY",
+        "approximate_range": "55% to 75%"
+      },
+      {
+        "term": "HIGHLY_LIKELY",
+        "approximate_range": "80% to 90%"
+      },
+      {
+        "term": "ALMOST_CERTAIN",
+        "approximate_range": "95% to <100%"
+      },
+      {
+        "term": "NOT_ASSESSED",
+        "approximate_range": null
+      }
+    ],
+    "rule": "Confidence is separate from evidence state. A high-confidence inference is still an inference unless the underlying proposition is independently established."
+  },
+  "cooperation_states": [
+    "NOT_REQUESTED",
+    "REQUESTED_AWAITING_RESPONSE",
+    "COOPERATING",
+    "PARTIAL_RESPONSE",
+    "NON_COOPERATION_DOCUMENTED",
+    "NOT_APPLICABLE",
+    "UNKNOWN"
+  ],
+  "four_p_mapping": {
+    "PREPARE": "Preserve sources, define the threat/problem, maintain schemas, identify gaps and build the entity-event graph.",
+    "PREVENT": "Correct or flag unreliable records, stop avoidable propagation, surface contradictions early and improve data quality.",
+    "PURSUE": "Use targeted evidence requests, competent referral or another authorised investigation/enforcement route when thresholds are met.",
+    "PROTECT": "Protect innocent stakeholders, the integrity of the record, procedural fairness, privacy, rights of reply and recoverability of evidence."
+  },
+  "guardrails": {
+    "signal_is_not_finding": true,
+    "link_is_not_participation": true,
+    "association_does_not_transfer_knowledge_intent_control_or_liability": true,
+    "registry_entry_is_not_real_world_verification": true,
+    "repetition_is_not_corroboration_without_source_independence": true,
+    "chronology_is_not_causation": true,
+    "non_cooperation_is_not_guilt": true,
+    "missing_record_is_not_proof_of_nonexistence": true,
+    "contrary_evidence_must_remain_visible": true,
+    "competence_and_legal_power_must_be_checked_before_referral": true,
+    "duplicate_evidence_requests_should_be_minimised": true,
+    "human_decision_required_for_external_action": true,
+    "independent_or_second_pair_review_should_be_recorded_where_practicable": true,
+    "self_review_only_must_be_disclosed_when_no_independent_reviewer_is_available": true,
+    "no_institutional_endorsement_claimed": true,
+    "does_not_activate_new_ci_hard_gate": true,
+    "insolvency_entry_is_not_causation_or_culpability": true,
+    "positive_agency_must_be_retrieved_when_causation_is_assessed": true,
+    "money_in_money_out_requires_complete_ledger": true,
+    "formal_calificacion_not_generic_guilt_label": true
+  },
+  "priority_factors": [
+    "actual_or_potential_harm",
+    "seriousness",
+    "repetition_or_seriality",
+    "apparent_intent_or_wilfulness_when_source_supported",
+    "number_and_vulnerability_of_affected_people_or_entities",
+    "ongoing_or_irreversible_effect",
+    "availability_of_a_decisive_test",
+    "competence_and_practicality_of_action",
+    "wider_public_interest",
+    "resource_proportionality"
+  ],
+  "review_outcomes": [
+    "CLEAR_NO_FURTHER_ACTION",
+    "KEEP_OPEN_SOURCE_GAP",
+    "VERIFY_FURTHER",
+    "NARROW_SCOPE",
+    "CORRECT_OR_RECTIFY_RECORD",
+    "ESCALATE_WITHIN_COMPETENCE",
+    "REFER_TO_COMPETENT_BODY",
+    "PRESERVE_AND_MONITOR",
+    "SUPERSEDED_BY_NEW_EVIDENCE"
+  ],
+  "metrics": [
+    "time_to_decisive_test",
+    "signals_cleared_without_escalation",
+    "hypotheses_changed_by_contrary_evidence",
+    "duplicate_requests_avoided",
+    "records_corrected_or_status_updated",
+    "referrals_with_complete_source_pack",
+    "reviews_completed_or_self_review_limitation_recorded"
+  ],
+  "cross_controls": [
+    "PD-PROTECTIVE-ORIGIN-ROLE-REVERSAL-20260925-01"
+  ]
+}

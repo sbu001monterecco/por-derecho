@@ -75,3 +75,8 @@ Sun Park recovery/accountability remains legally and financially separate from M
 ## Retirement verdict
 
 **NOT YET deletion-safe.** Do not retire the originating ChatGPT thread until a successor thread has ingested this receipt and current GitLab/GitHub state has been reverified.
+
+
+## Foreign-investor and cross-border protection invariant — 28 September 2026
+
+Apply `ops/capital/AWESWELL_FOREIGN_INVESTOR_AND_CROSS_BORDER_PROTECTION_STANDARD_20260928.md` to every acquisition, ProjectCo, funding, security, refinancing and restructuring decision. The intended transaction architecture should preserve AWESWELL LIMITED's evidenced UK Sponsor/HoldCo and qualifying foreign-investor position in Spain where legally, tax and commercially supportable, together with the Spanish foreign-investment declaration/screening record and the separate ownership of each asset and claim. This is a forward-looking protection/evidence control, not immunity, State backing, a transfer of historic claims, or a representation that foreign-investment registration by itself creates a remedy. Any change in investor residence, control chain, Spanish ProjectCo ownership, forum/jurisdiction position or material security/cross-collateralisation requires a before/after rights analysis before implementation.

@@ -1,0 +1,109 @@
+{
+  "schema": "por-derecho.r33-counter-evidence-exhibits.v1",
+  "control_date": "2026-09-22",
+  "purpose": "Public-safe counter-evidence register for the AC opposition reader. Exhibit does not convert allegations into findings.",
+  "digitization_rule": "Originals remain immutable. Searchable text derivatives are labelled by extraction method. Full private derivatives remain outside public release unless separately approved.",
+  "exhibits": [
+    {
+      "id": "R33-CE-20190104",
+      "date": "2019-01-04",
+      "title": "LPB/counsel draft against the Administrador Concursal",
+      "status": "CONTEMPORANEOUS_ALLEGATION_UNFILED_DRAFT_STRONGLY_SUPPORTED",
+      "relation": "NARROWS_R33_COUNSEL_GENERALISATION",
+      "sha256": "c290ca017cbb4b9446b66452d9462733457b3cb81dff8baa7061034e1f1627a5",
+      "pages": 5,
+      "digitization": "NATIVE_TEXT_EXTRACTED_COMPLETE",
+      "public_route_es": "/es/concurso-36-2012-borrador-separacion-ac-4ene2019/",
+      "public_route_en": "/en/insolvency-36-2012-draft-administrator-removal-4jan2019/",
+      "boundary": "This is an LPB/counsel allegation directed at alleged AC conduct, not an AC-authored document and not a judicial finding."
+    },
+    {
+      "id": "R33-CE-JV1260-20120507",
+      "date": "2012-05-07",
+      "title": "JV 1260/2011 first-instance judgment",
+      "status": "JUDICIAL_HOLDING",
+      "relation": "COUNTER_CONTEXT_TO_AP89_SCOPE",
+      "sha256": "8c9212342380424099854e2a10861c3e09ddc6fb2c8d013539568ff2dbc731f0",
+      "pages": 4,
+      "digitization": "OCR_SPANISH_ENGLISH_COMPLETE_WORKING_DERIVATIVE",
+      "boundary": "First instance evicted CEXP on the qualified submission but absolved Monterecco; the later AP reversal is a separate evidential step."
+    },
+    {
+      "id": "R33-CE-AP89-20140113",
+      "date": "2014-01-13",
+      "title": "Audiencia Provincial Sentencia 89/2014",
+      "status": "JUDICIAL_HOLDING",
+      "relation": "SCOPE_CONTROL",
+      "sha256": "1bce9ad6111645393ee2f23915b7df05a9a879181f2c19fad83f6b3e8989c1ec",
+      "pages": 7,
+      "digitization": "NATIVE_TEXT_EXTRACTED_COMPLETE",
+      "boundary": "Possession/eviction holding for the 18 claimant units; not a universal Sun Park title or authority judgment."
+    },
+    {
+      "id": "R33-CE-PINK-20151124",
+      "date": "2015-11-24",
+      "title": "Sentencia 268/2015 · Concurso 36/2012-08",
+      "status": "JUDICIAL_HOLDING",
+      "relation": "LATER_REUSE_SOURCE",
+      "sha256": "8bb593e83878daf99df760792b1e37194514d79458269c5645ca329b15f41990",
+      "pages": 4,
+      "digitization": "NATIVE_TEXT_EXTRACTED_COMPLETE",
+      "boundary": "Lease-resolution/rent judgment within its pleaded parties and procedural posture; later culpability propositions require separate later-source proof."
+    },
+    {
+      "id": "R33-CE-PINK-EXEC-20160921",
+      "date": "2016-09-21",
+      "title": "Pink execution / handover filing · ETJ 59/2016",
+      "status": "PRIMARY_PROCEDURAL_FILING",
+      "relation": "ENFORCEMENT_CHAIN",
+      "sha256": "a1f60201a4c0a46a255a2969c937a40c73e642fee06ea3480b4437de63d1b3c0",
+      "pages": 1,
+      "digitization": "OCR_SPANISH_ENGLISH_COMPLETE_WORKING_DERIVATIVE",
+      "boundary": "Documents the execution/handover response; it is not itself the execution order."
+    },
+    {
+      "id": "R33-CE-CEXP-2008",
+      "date": "2008-05",
+      "title": "CEXP statutes and Montelanza→CEXP exploitation cession",
+      "status": "ORIGIN_AUTHORITY_SOURCE",
+      "relation": "ORIGIN_AUTHORITY_COUNTER_CONTEXT",
+      "sha256": "fac3b767e39bc2bbae526e307edbd4b85fbc6ebd59c6eac1c3b11e859612c6fd",
+      "pages": 15,
+      "digitization": "OCR_SPANISH_ENGLISH_COMPLETE_WORKING_DERIVATIVE",
+      "boundary": "Origin evidence for CEXP authority; does not by itself resolve later owner-by-owner consent."
+    },
+    {
+      "id": "R33-CE-COMMUNITY-20110622",
+      "date": "2011-06-22",
+      "title": "Community minutes 22 June 2011",
+      "status": "PRIMARY_GOVERNANCE_SOURCE",
+      "relation": "GOVERNANCE_COUNTER_CONTEXT",
+      "sha256": "037ad9b32d0f04941187c385fd662766b7a80b2c22983283d880f08c18913f2c",
+      "pages": 16,
+      "digitization": "OCR_SPANISH_ENGLISH_COMPLETE_WORKING_DERIVATIVE",
+      "boundary": "Community governance/services material must not be collapsed into CEXP dissolution or universal exploitation authority."
+    },
+    {
+      "id": "R33-CE-CEXP-20120201",
+      "date": "2012-02-01",
+      "title": "CEXP→Monterecco activity cession",
+      "status": "PRIMARY_EXPLOITATION_SOURCE",
+      "relation": "EXPLOITATION_AUTHORITY_COUNTER_CONTEXT",
+      "sha256": "59c21a71295ae696253ba3132aca47891d7a7331cfbff9c9c21645741f507926",
+      "pages": 1,
+      "digitization": "OCR_SPANISH_ENGLISH_COMPLETE_WORKING_DERIVATIVE",
+      "boundary": "Cession of activity is not automatically universal owner consent or title."
+    },
+    {
+      "id": "R33-CE-COMMUNITY-STATUTES-20140508",
+      "date": "2014-05-08",
+      "title": "Sun Park Community statutes · certified copy",
+      "status": "ORIGIN_GOVERNANCE_SOURCE",
+      "relation": "INSTITUTIONAL_VOICE_COUNTER_CONTEXT",
+      "sha256": "3fec2c2181a3c492e134a05708c53a7cb983dbe3e28d11b59283280f5a6c0e68",
+      "pages": 9,
+      "digitization": "OCR_SPANISH_ENGLISH_COMPLETE_WORKING_DERIVATIVE",
+      "boundary": "Community and CEXP are distinct analytical actors and must not be silently interchanged."
+    }
+  ]
+}

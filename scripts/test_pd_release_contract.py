@@ -147,6 +147,24 @@ class ControllerTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             c.advance(s,'SUPERSEDED_WITH_OPEN_READBACK',s['owner'],3,
                       {'prior_merge_sha':'1'*40,'current_main_sha':'2'*40,'pages_run_id':123})
+    def test_superseded_open_publication_state_is_terminal_without_inferred_deployment(self):
+        s=c.advance(self.state(),'MERGE_PENDING',self.state()['owner'],3)
+        s=c.advance(s,'RECOVERY_REQUIRED',s['owner'],3)
+        evidence={'prior_merge_sha':'1'*40,'current_main_sha':'2'*40,
+                  'deployment_recorded':False,'readback_verified':False,
+                  'verification_gap_preserved':True}
+        s=c.advance(s,'SUPERSEDED_WITH_OPEN_PUBLICATION_STATE',s['owner'],3,evidence)
+        self.assertIn(s['phase'],c.TERMINAL)
+        self.assertFalse(s['checkpoints'][-1]['evidence']['deployment_recorded'])
+        self.assertFalse(s['checkpoints'][-1]['evidence']['readback_verified'])
+    def test_superseded_open_publication_state_rejects_inferred_deployment(self):
+        s=c.advance(self.state(),'MERGE_PENDING',self.state()['owner'],3)
+        s=c.advance(s,'RECOVERY_REQUIRED',s['owner'],3)
+        with self.assertRaises(ValueError):
+            c.advance(s,'SUPERSEDED_WITH_OPEN_PUBLICATION_STATE',s['owner'],3,
+                      {'prior_merge_sha':'1'*40,'current_main_sha':'2'*40,
+                       'deployment_recorded':True,'readback_verified':False,
+                       'verification_gap_preserved':True})
     def test_merge_requires_evidence(self):
         s=c.advance(self.state(),'MERGE_PENDING',self.state()['owner'],3)
         with self.assertRaises(ValueError):c.advance(s,'MERGED',s['owner'],3)

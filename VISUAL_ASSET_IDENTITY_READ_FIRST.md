@@ -30,3 +30,14 @@ Run before merge:
 ```bash
 python scripts/validate_visual_asset_registry.py
 ```
+
+
+## Hard named-person rendering rule — 25 September 2026
+
+> **25-Sep-2026 named-person visual integrity override — PD-VISUAL-FACE-NOGEN-20260925-01:** before creating or editing any visual containing a named real person, read `governance/FACE_IDENTITY_CONTROL_RULE.md` and `assets/data/named-person-visual-control-v1.json`. Named faces are **DETERMINISTIC_COMPOSITING_ONLY**: exact approved source pixels or exact repository `<img>` assets; no generative face reconstruction, replacement, inpainting, approximation or synthetic likeness. Substantive poster text must come from a reviewed manifest/page source. Missing source or fact = halt/report, never invent. The rejected JTP generations are quarantined in `archive/AI_IMAGE_HALLUCINATION_INCIDENT_JTP_25SEP2026.md`.
+
+Run before merge:
+
+```bash
+python scripts/validate_named_person_visual_control.py
+```

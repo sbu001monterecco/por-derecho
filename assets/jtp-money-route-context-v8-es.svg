@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2000" viewBox="0 0 1600 2000" role="img" aria-labelledby="title desc">
+  <title id="title">¿Quién pagó al letrado de LPB? — ruta económica y contexto</title>
+  <desc id="desc">Gráfico público de prueba. Distingue el cheque del comprador CAM por 400.000 euros, el canal de pago de la masa controlado por el AC y un pago de 26.750 euros de julio de 2020 anotado para el anterior letrado de LPB de su contexto organizativo más amplio. La alegación de Gil Marer se identifica como alegación, no como conclusión judicial.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#15364a"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000000" flood-opacity=".26"/></filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto"><path d="M0,0 L14,7 L0,14 Z" fill="#77e4bb"/></marker>
+    <style>
+      .sans{font-family:Arial,Helvetica,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}.white{fill:#f7fbff}.muted{fill:#aabeca}.mint{fill:#77e4bb}.red{fill:#ff7474}.ink{fill:#07111f}.caps{font-size:21px;font-weight:800;letter-spacing:2.2px}.tag{font-size:19px;font-weight:800;letter-spacing:1.8px}.body{font-size:28px}.small{font-size:24px}.mid{font-size:39px;font-weight:700}.large{font-size:65px;font-weight:800;letter-spacing:-1.5px}.amount{font-size:52px;font-weight:800}.card{fill:#11283a;stroke:#345a70;stroke-width:2}.record{fill:#0d3140;stroke:#77e4bb;stroke-width:3}.alleg{fill:#321f2b;stroke:#ff7474;stroke-width:3}.context{fill:#101f31;stroke:#486a80;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="1600" height="2000" fill="url(#bg)"/>
+  <rect x="72" y="54" width="515" height="46" rx="23" fill="#77e4bb"/>
+  <text x="99" y="85" class="sans tag ink">MAPA PÚBLICO DE PRUEBA · ESPAÑOL</text>
+  <text x="72" y="181" class="sans large white">¿QUIÉN PAGÓ AL LETRADO DE LPB?</text>
+  <text x="76" y="242" class="serif mid mint">La cifra no es la historia. La ruta sí.</text>
+  <text x="76" y="291" class="sans body muted">La relación de pago se contrasta con autorización, lealtad, fuente y efecto.</text>
+  <line x1="74" y1="329" x2="1526" y2="329" stroke="#42677d" stroke-width="2"/>
+
+  <text x="76" y="380" class="sans caps muted">EL CONTEXTO CONTEMPORÁNEO</text>
+  <g filter="url(#shadow)">
+    <rect x="74" y="412" width="452" height="153" rx="18" class="card"/><text x="104" y="452" class="sans tag mint">ANTES DEL 7 JUNIO 2018</text><text x="104" y="501" class="sans mid white">Salida financiada</text><text x="104" y="540" class="sans small muted">Desarrollada; cierre pendiente.</text>
+    <rect x="574" y="412" width="452" height="153" rx="18" class="alleg"/><text x="604" y="452" class="sans tag red">ALEGACIÓN DE GIL</text><text x="604" y="501" class="sans mid white">Control el 7 de junio</text><text x="604" y="540" class="sans small muted">Perjuicio a salida y defensa.</text>
+    <rect x="1074" y="412" width="452" height="153" rx="18" class="record"/><text x="1104" y="452" class="sans tag mint">HECHO DOCUMENTADO</text><text x="1104" y="501" class="sans mid white">Venta de instalaciones</text><text x="1104" y="540" class="sans small muted">Después no convalidada.</text>
+  </g>
+
+  <text x="76" y="644" class="sans caps muted">LA RUTA ECONÓMICA BAJO EXAMEN</text>
+  <text x="76" y="684" class="sans small muted">Reconstrucción de cuentas de Gil Marer — comprobar con bancos, mandatos y registros primarios.</text>
+  <g filter="url(#shadow)">
+    <rect x="94" y="718" width="1412" height="151" rx="22" class="record"/><text x="132" y="758" class="sans tag mint">01 / PAGO DEL COMPRADOR DOCUMENTADO</text><text x="132" y="816" class="sans amount white">Cheque CAM de 400.000 €</text><text x="132" y="850" class="sans small muted">Documento de venta/masa utilizado por el AC. Para Gil: única fuente económica.</text><rect x="1281" y="751" width="172" height="52" rx="26" fill="#77e4bb"/><text x="1313" y="785" class="sans tag ink">REGISTRO</text>
+  </g>
+  <line x1="800" y1="871" x2="800" y2="910" stroke="#77e4bb" stroke-width="9" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="94" y="926" width="1412" height="151" rx="22" class="record"/><text x="132" y="966" class="sans tag mint">02 / CANAL FORMAL DE PAGO</text><text x="132" y="1024" class="sans amount white">Cuenta de masa LPB / control del AC</text><text x="132" y="1058" class="sans small muted">El administrador concursal controlaba información, activos y autoridad de pago de la masa.</text><rect x="1281" y="959" width="172" height="52" rx="26" fill="#77e4bb"/><text x="1313" y="993" class="sans tag ink">REGISTRO</text>
+  </g>
+  <line x1="800" y1="1079" x2="800" y2="1118" stroke="#77e4bb" stroke-width="9" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="94" y="1134" width="1412" height="151" rx="22" class="record"/><text x="132" y="1174" class="sans tag mint">03 / PAGO SALIENTE CONSIGNADO</text><text x="132" y="1232" class="sans amount white">26.750 € — JTP — julio 2020</text><text x="132" y="1266" class="sans small muted">El informe de pagos del AC de 2021 lo relaciona con honorarios del anterior letrado de LPB.</text><rect x="1281" y="1167" width="172" height="52" rx="26" fill="#77e4bb"/><text x="1313" y="1201" class="sans tag ink">REGISTRO</text>
+  </g>
+  <rect x="94" y="1324" width="1412" height="128" rx="18" class="alleg"/>
+  <text x="128" y="1363" class="sans caps red">ALEGACIÓN UNITARIA DE GIL — MECANISMO FUNCIONAL, NO IDENTIDAD JURÍDICA</text>
+  <text x="128" y="1404" class="sans small white">¿El beneficio del comprador privado, el control del AC y la vía judicial de protección/omisión operaron conjuntamente</text><text x="128" y="1435" class="sans small white">para neutralizar la salida financiada y la defensa independiente inmediata de LPB?</text>
+
+  <text x="76" y="1512" class="sans caps muted">IDENTIFICADORES ORGANIZATIVOS CONTEXTUALES — NO PARTICIPANTES DEL FLUJO DE PAGO</text>
+  <g filter="url(#shadow)">
+    <rect x="74" y="1546" width="452" height="132" rx="16" class="context"/><circle cx="111" cy="1584" r="17" fill="#7457d6"/><text x="142" y="1595" class="sans mid white">Grant Thornton</text><text x="105" y="1635" class="sans small muted">Canal profesional / custodia</text><text x="105" y="1662" class="sans tag mint">NO SE ALEGA VÍNCULO DE PAGO</text>
+    <rect x="574" y="1546" width="452" height="132" rx="16" class="context"/><path d="M610 1568h14l13 22-13 22h-14l13-22z" fill="#00a5a8"/><text x="655" y="1595" class="sans large white">RSM</text><text x="605" y="1635" class="sans small muted">Canal ético / documentos históricos</text><text x="605" y="1662" class="sans tag mint">NO SE ALEGA VÍNCULO DE PAGO</text>
+    <rect x="1074" y="1546" width="452" height="132" rx="16" class="context"/><rect x="1110" y="1566" width="15" height="35" fill="#e5752e"/><rect x="1129" y="1558" width="15" height="43" fill="#f1a147"/><rect x="1148" y="1549" width="15" height="52" fill="#dc5e35"/><text x="1180" y="1595" class="sans large white">pwc</text><text x="1105" y="1635" class="sans small muted">Canal histórico/documental de 2016</text><text x="1105" y="1662" class="sans tag mint">NO SE ALEGA VÍNCULO DE PAGO</text>
+    <rect x="74" y="1700" width="452" height="132" rx="16" class="context"/><circle cx="111" cy="1738" r="17" fill="#db486d"/><text x="142" y="1749" class="sans mid white">RIC PRIVATE EQUITY</text><text x="105" y="1789" class="sans small muted">Canal posterior de capital/gobierno</text><text x="105" y="1816" class="sans tag mint">PISTA PROBATORIA SEPARADA</text>
+    <rect x="574" y="1700" width="452" height="132" rx="16" class="context"/><circle cx="611" cy="1738" r="17" fill="#44a8ac"/><path d="M601 1738h20M611 1728v20" stroke="#fff" stroke-width="3"/><text x="642" y="1749" class="sans mid white">meeting point</text><text x="916" y="1749" class="sans tag mint">HOTELS</text><text x="605" y="1785" class="sans small muted">Contexto histórico del Grupo FTI</text><text x="605" y="1813" class="sans tag mint">CAMBIO POSTERIOR · FUENTE INDEXADA</text>
+    <rect x="1074" y="1700" width="452" height="132" rx="16" class="context"/><rect x="1107" y="1723" width="40" height="30" rx="5" fill="#dbe6eb"/><path d="M1107 1723l20-13 20 13" fill="#77e4bb"/><text x="1173" y="1749" class="sans mid white">Vía judicial</text><text x="1105" y="1789" class="sans small muted">Aviso · poder · acto firmado · efecto</text><text x="1105" y="1816" class="sans tag mint">NO SE ALEGA PAPEL DE PAGO</text>
+  </g>
+  <rect x="74" y="1870" width="1452" height="84" rx="15" fill="#0a1726" stroke="#4e7286" stroke-width="2"/>
+  <text x="106" y="1905" class="sans small white">LA PRUEBA: autorización · lealtad independiente · trazabilidad · servicio/factura · aviso · conocimiento · efecto causal.</text>
+  <text x="106" y="1936" class="sans tag muted">LOS ROLES CON FUENTE ESTÁN EN LA PÁGINA; NINGÚN LOGO O PROXIMIDAD PRUEBA CONDUCTA, CONOCIMIENTO O RESPONSABILIDAD.</text>
+  <rect x="0" y="1965" width="1600" height="35" fill="#050c15"/>
+  <text x="74" y="1988" class="sans tag muted">POR DERECHO · GIL MARER, ÚNICO ALERTADOR QUE CONSTA · EDICIÓN PÚBLICA</text>
+</svg>

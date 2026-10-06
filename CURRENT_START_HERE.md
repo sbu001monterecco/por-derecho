@@ -44,3 +44,11 @@ Economic unity does not collapse legal identity. Allegation does not become find
 ## External-action rule
 
 Repository or website maintenance never authorises an email, filing, portal submission, RedSARA/AGE notice, authority contact, LinkedIn post or other external act unless separately and explicitly authorised for that exact act. A prepared social-media draft is not a published post.
+
+
+
+## Material-workspace checkpoint update — 2 October 2026
+
+After the existing current-main/scope/collaboration gate, select the subject from `data/workspace-register-v1.json` and `CURRENT_WORKSPACE_HANDOFF.md`. Apply the existing runtime contract in `ops/AUTOMATIC_WORKSPACE_PERSISTENCE_V1.json`: every new material checkpoint records the ten-field action ledger, bounded coverage and dated host availability. Use `examples/workspace-checkpoint.example.json`. Private summaries require separate exact-summary approval before export.
+
+UK workspace `PD-WS-20261002-0001` uses opaque alias `UK_PRIVATE_PROSECUTION_2026_CURRENT` and a neutral public pointer; its source manifest, strategy and drafts stay private, with HOLD/NOT FILE-READY. MF remains a continuation under `PD-WS-20260902-0001`, using the current subject control rather than old reader labels. All earlier workspaces, including capital `PD-WS-20260927-0001`, remain independently selectable. Do not infer universal capture, complete backfill, cross-host parity or external action from this routing update.

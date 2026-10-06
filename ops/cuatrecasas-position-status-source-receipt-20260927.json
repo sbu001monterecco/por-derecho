@@ -1,0 +1,178 @@
+{
+  "control": "CUA-CLAIM-POS-20260927",
+  "date": "2026-09-27",
+  "status": "SOURCE_CHANGE_NOT_DEPLOYMENT",
+  "scope": "Existing Cuatrecasas claim, public readers, proceeding pages and professional-work method only",
+  "source_base": "6260f09d037a91a0c2adbd9b32e45429f95c5b0b",
+  "changed": [
+    {
+      "path": "archive/CUATRECASAS_POSITION_STATUS_OUTCOME_UPDATE_27SEP2026.md",
+      "before_sha256": null,
+      "after_sha256": "00d6e84c96a10d39656f53a7478f96216ffb8c8656e951cf9346c154424a2feb"
+    },
+    {
+      "path": "assets/data/cuatrecasas-invoice-payment-register-v1.json",
+      "before_sha256": "ef5f6b35758af22964d58918eea045b1bcb6ddb5c649f3df958a531b273b57b6",
+      "after_sha256": "d89c7c63504445e30eb223f2e8706b42064056f574b0d3199dd56048572e096a"
+    },
+    {
+      "path": "assets/data/cuatrecasas-whole-claim-architecture-v1.json",
+      "before_sha256": "103c826a24057d87f8b3c42819fd6810aeeb97527662bd4c0c9cba129505787e",
+      "after_sha256": "2f61a7914f6d2141fa318cf65eebf955713b848a8da3b7e9d62fa679084b1d15"
+    },
+    {
+      "path": "assets/data/cuatrecasas-wip-reconciliation-v1.json",
+      "before_sha256": "f09f4d72e76bb32188c061839a626d738bd5ea2b6474fe6cbf5db131b3ead895",
+      "after_sha256": "99e294e952c7ca13f3eb1c10294df629683b0f42852750d461887ea8009e06bc"
+    },
+    {
+      "path": "assets/data/legal-professional-work-product-master-v1.json",
+      "before_sha256": "f4fd82f578faeed78d8a06a3e25c79c1314825bebb9e6af3fe476b510a679635",
+      "after_sha256": "ff8b1f322d4ed668f295e8a4d21b7f7af6e7ca57b44d954f1cf1139c110057e9"
+    },
+    {
+      "path": "data/case-graph/cuatrecasas-whole-claim-v1.json",
+      "before_sha256": "7c5a00110599e279859f1c718c60003ed8be2fea1232866dc4a5e1c12024fbfb",
+      "after_sha256": "937cf25c140f741c700615b598adac17c9d028ac1c3d92cf014c6a258cec969e"
+    },
+    {
+      "path": "data/case-graph/dp748-impulso-apelacion-signed-20260909-v1.json",
+      "before_sha256": "55db88e3bf2ef0fdd24262d8f00b464b90882fdb3e600da32cce663afd1859ba",
+      "after_sha256": "19c455efc4de2ebce38b7a8dcf168229aaadffd10dc4913a0e5de05f5c04cad0"
+    },
+    {
+      "path": "en/cuatrecasas-dp748-civil-action/index.html",
+      "before_sha256": "8013fb46a01fa8fefc40f0a761d56dce635060d9ff74fe6a601825a03bcff068",
+      "after_sha256": "cd3a03e59c2628e410adf5db65bb0b0380656a19f0c656a3c91641032e755702"
+    },
+    {
+      "path": "en/cuatrecasas-etj163-dp748-18-september-2026/index.html",
+      "before_sha256": "9e360a07f3c4bd63ee99054adb4ada38ce61f63cd963ed047192510e458a3d92",
+      "after_sha256": "4247e63bfa6bedf45bbd6810967804ca93c04c3401f6c35ec4213b5be87e3d11"
+    },
+    {
+      "path": "en/cuatrecasas-invoices-payments/index.html",
+      "before_sha256": "712da9f58d4ca710bcc732af9126a0ddf500836be8ca6aaa54c7a4624df7f9ef",
+      "after_sha256": "7c5713d4b775f9c5f28778106e8a65c0edba1e59d24094aee377dd71c3167e6e"
+    },
+    {
+      "path": "en/cuatrecasas-matkator-whole-claim/index.html",
+      "before_sha256": "e2edd2f6f194939f9fc8e5678b848fad61a9a2d1321d359456ed9f30eea8a90d",
+      "after_sha256": "8c5277c13eb4e51682a96fcb26731306d01264709da30e4dce24684fece46c2e"
+    },
+    {
+      "path": "en/cuatrecasas-sun-park/index.html",
+      "before_sha256": "9f152932fdb6aa52b16735a0112f3fb2789727f6ef9b24174a1bbad74d2b8e5d",
+      "after_sha256": "68f117d10645027c245fd22135988159d8d5b737eb78531e2fd8d7b288c56635"
+    },
+    {
+      "path": "en/cuatrecasas-wip-unbilled/index.html",
+      "before_sha256": "b1b98939467707fd48b68eec2acd664a10dbda54353afebb41326860f30d161b",
+      "after_sha256": "fc55b413e0061764edb61acade8ee45ea3a1eed2beef00c6812c6e6c4768637b"
+    },
+    {
+      "path": "en/proceedings/tf-civ-001/index.html",
+      "before_sha256": "d6c570cc572dbeae53e363ac0d3ac3c04a5909886aa0ac1b48b629183f167718",
+      "after_sha256": "1f79db789e36b8b2c89a187ac3d4d6fcc8f49e696330dae570203bb59557f8cb"
+    },
+    {
+      "path": "en/proceedings/tf-civ-002/index.html",
+      "before_sha256": "075b21bab81f85e98938e763f17a0ca84c93b24e9a86990d30519e46f708cbbd",
+      "after_sha256": "9a40a5167ef50a78c86ffee9a749b3b79dfd69a0b5fd69595a2734013950a719"
+    },
+    {
+      "path": "en/proceedings/tf-cri-003/index.html",
+      "before_sha256": "e595237ee0aecb99a7e36396c2db18cac9c123f91ba561c3d5eb2571cec7eb2d",
+      "after_sha256": "921133348868545d6842d24566c606c1bd03223e5e88d0339e6dc41a3da6bc47"
+    },
+    {
+      "path": "en/recovery-command-center/index.html",
+      "before_sha256": "3b3d6b956afb2caf23b822df0662025bbb9ef8430ca672852cc6f54039ddb7dc",
+      "after_sha256": "19f4be5a0580a8cb5e5c1c8b6becb358a6487f8dba74047e64214a302e73c0f9"
+    },
+    {
+      "path": "es/centro-mando-recuperacion/index.html",
+      "before_sha256": "36fd7c5f31e5b038c8dbcaa8d6e5d7edb4d10ae4caee6026f41f525d0b1adcfe",
+      "after_sha256": "750abbc4a9a3fbba078ce5578d3deb0655007740fb34cc4471949318de80551a"
+    },
+    {
+      "path": "es/cuatrecasas-dp748-accion-civil/index.html",
+      "before_sha256": "d8afc8c8b10a48f4e0fbd78023f977426e4265996d43715f7e0472a7963eb3f6",
+      "after_sha256": "05f5ce5b77f2a75da204d6d783817cbcb62bc56782edf06c411ce13205956de9"
+    },
+    {
+      "path": "es/cuatrecasas-etj163-dp748-18-septiembre-2026/index.html",
+      "before_sha256": "66744e30487dae0c0622bddc4318e1be14f9d6860799ea71918e331b263e452c",
+      "after_sha256": "6ea6361d4175c58133a0ecd6781ca9b636749887f5f56e7135fe272f96ae2c14"
+    },
+    {
+      "path": "es/cuatrecasas-facturas-pagos/index.html",
+      "before_sha256": "627b4a20974ad0cb8d07b8fdb47aaded26d713394369266ca2233f8b4cb53b1c",
+      "after_sha256": "95c8aeb83aac999c4eda4b37b888f71c09e02266ee23eed47043dd1dafb8cfa6"
+    },
+    {
+      "path": "es/cuatrecasas-matkator-reclamacion-integral/index.html",
+      "before_sha256": "c4d1359845df95b75d7aee182f894d150718bd2c00ce3f25809cd6a9f2d8d93b",
+      "after_sha256": "51c58fb74b6808ece8b2147fcd9ced573eac3a5d50eff37b558f4adc96132cf1"
+    },
+    {
+      "path": "es/cuatrecasas-sun-park/index.html",
+      "before_sha256": "3c914199eff3883edfa0d26953eb759983269d9c3c7fd5f0655c0920fee222a5",
+      "after_sha256": "f08b6ed15b5aa4f960d4f79a48732704bc6582d9e2c816d0efb61aaf8482ddf7"
+    },
+    {
+      "path": "es/cuatrecasas-wip-no-facturado/index.html",
+      "before_sha256": "82d54c8311eca3f203785472b43f5d442f654c045ff3b3446235d1dddc9f7135",
+      "after_sha256": "f2148883e646f97b8193c868918258914cb74d724ea808036467c503d18f6321"
+    },
+    {
+      "path": "es/procedimientos/tf-civ-001/index.html",
+      "before_sha256": "1305afb41f8a20b8267ca7918cbfafb9847de2e7a268b525e46f5d173ca3177c",
+      "after_sha256": "c0350a4c39c1dd1cc7cfd9b866a2de30bf87ec154723602fc88ba393e6e8d29b"
+    },
+    {
+      "path": "es/procedimientos/tf-civ-002/index.html",
+      "before_sha256": "1e32936fb61b3f0dd5726ded7a5740d8f42c9654d5cb64a842611d0ce7c54441",
+      "after_sha256": "4a474a9e203efb4e241419ed85705e3d5b298bb0fc983d45e4c1807df0419f9a"
+    },
+    {
+      "path": "es/procedimientos/tf-cri-003/index.html",
+      "before_sha256": "b2f85f6a02a42c2de3846d4a23f5a784ef1feb06cf980d2f3f5a2ecfe3025a08",
+      "after_sha256": "d7108d9ce26cb71e0e31c906da3af88a4887ed8b0a5da82757c6d71f4446df18"
+    }
+  ],
+  "not_present_on_this_host": [],
+  "exact_editorial_replacements": {
+    "en/cuatrecasas-sun-park/index.html": 1,
+    "es/cuatrecasas-sun-park/index.html": 1,
+    "en/cuatrecasas-matkator-whole-claim/index.html": 0,
+    "es/cuatrecasas-matkator-reclamacion-integral/index.html": 0,
+    "en/cuatrecasas-wip-unbilled/index.html": 0,
+    "es/cuatrecasas-wip-no-facturado/index.html": 0,
+    "en/cuatrecasas-invoices-payments/index.html": 0,
+    "es/cuatrecasas-facturas-pagos/index.html": 0,
+    "en/cuatrecasas-dp748-civil-action/index.html": 0,
+    "es/cuatrecasas-dp748-accion-civil/index.html": 0,
+    "en/proceedings/tf-civ-001/index.html": 0,
+    "es/procedimientos/tf-civ-001/index.html": 0,
+    "en/proceedings/tf-civ-002/index.html": 0,
+    "es/procedimientos/tf-civ-002/index.html": 0,
+    "en/proceedings/tf-cri-003/index.html": 0,
+    "es/procedimientos/tf-cri-003/index.html": 0,
+    "en/cuatrecasas-etj163-dp748-18-september-2026/index.html": 0,
+    "es/cuatrecasas-etj163-dp748-18-septiembre-2026/index.html": 0,
+    "en/recovery-command-center/index.html": 0,
+    "es/centro-mando-recuperacion/index.html": 0
+  },
+  "no_global_parity_claim": true,
+  "no_external_email_or_filing": true,
+  "editorial_review": {
+    "date": "2026-09-27",
+    "static_pages_checked": 20,
+    "all_prior_html_anchors_preserved": true,
+    "invoice_wip_existing_fields_identical": true,
+    "financial_snapshot_identical": true,
+    "en_es_client_position_corrected": true,
+    "deployment_not_established": true
+  }
+}

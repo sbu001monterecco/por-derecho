@@ -1,0 +1,73 @@
+{
+  "schema": "por-derecho.jtp-fee-authority-source-close.v1",
+  "control_id": "PD-JTP-SOURCE-CLOSE-20260924-01",
+  "date": "2026-09-24",
+  "status": "PUBLIC_SAFE_DERIVATIVE_OF_PRIVATE_SOURCE_REVIEW",
+  "propositions": [
+    {
+      "id": "JTP-SC-001",
+      "date": "2012-05-29",
+      "status": "DIRECT_DOCUMENT",
+      "proposition": "Parrilla pro-forma set a €40,000 + IGIC insolvency fee budget, €20,000 + IGIC before filing plus five €4,000 + IGIC instalments.",
+      "limit": "Budget/pro-forma is not proof of later invoice/payment execution."
+    },
+    {
+      "id": "JTP-SC-002",
+      "date": "2020-06-11",
+      "status": "DIRECT_EMAIL",
+      "proposition": "Parrilla proposed a definitive €50,000 + IGIC fee, acknowledged €32,250 already received, stated €17,750 + IGIC remained, proposed two AC-mediated routes and required Gil/Patricia written approval before proceeding.",
+      "limit": "His account is a party/professional statement requiring invoice and payment reconciliation."
+    },
+    {
+      "id": "JTP-SC-003",
+      "date": "2020-06-12",
+      "status": "DIRECT_EMAILS",
+      "proposition": "Jiménez said the proposal could not be accepted; Patricia agreed it was unacceptable, ended negotiations and moved toward an insolvency incident.",
+      "limit": "Proves rejection of that proposal, not absence of every possible later authority."
+    },
+    {
+      "id": "JTP-SC-004",
+      "date": "2020-06-18",
+      "status": "DIRECT_EMAIL_PROFESSIONAL_ASSESSMENT",
+      "proposition": "Jiménez stated the team had broken negotiations with Parrilla and the AC because he perceived an attempt to condition their work on fee payment, and said he did not want his fees to depend on the AC.",
+      "limit": "Contemporaneous professional assessment, not adjudicated improper influence."
+    },
+    {
+      "id": "JTP-SC-005",
+      "date": "2020-06-01",
+      "status": "CONTEMPORANEOUS_SECOND_HAND_REPORT",
+      "proposition": "Jiménez's report of the AC call places peace/cross-litigation, payment assurance for Parrilla/procuradora, praise of Parrilla and potential complaint withdrawal in the same reported call sequence.",
+      "limit": "Report of call, not recording/direct admission and not proof of quid pro quo."
+    },
+    {
+      "id": "JTP-SC-006",
+      "date": "2021-07-21",
+      "status": "AC_FILED_PARTY_REPORT",
+      "proposition": "AC report lists €26,750 paid in July 2020 to Parrilla for debtor-lawyer fees; €26,750 numerically equals €25,000 + 7% IGIC.",
+      "limit": "Does not establish invoice, authority, bank source, condition, impropriety or criminal intent."
+    },
+    {
+      "id": "JTP-SC-007",
+      "date_window": "2020-06-12/2020-07-31",
+      "status": "BOUNDED_NEGATIVE_MAILBOX_SEARCH",
+      "proposition": "No later written Gil/Patricia approval, acceptance or superseding agreement was located in the three connected mailboxes in the bounded search.",
+      "limit": "Not proof that no approval exists elsewhere."
+    },
+    {
+      "id": "JTP-SC-008",
+      "date": "2026-09-24",
+      "status": "BOUNDED_DRIVE_SEARCH_OPEN_GAP",
+      "proposition": "No direct July-2020 LPB bank debit or Parrilla recipient credit matching €26,750 was located in targeted Drive searches.",
+      "limit": "Bank trace remains open; search absence is not proof of nonexistence."
+    }
+  ],
+  "mandatory_open_proof": [
+    "2020 final invoice/minuta corresponding to reported €26,750",
+    "specific payment authority or later written client approval, if any",
+    "purchaser debit and LPB credit for the €400,000 transaction",
+    "complete estate account statements and ledger",
+    "matching €26,750 debit and recipient credit",
+    "full AC–Parrilla communications concerning fee recognition/payment"
+  ],
+  "arithmetic_boundary": "Do not compare a gross €26,750 payment directly with a pre-IGIC €17,750 base balance as if both were like-for-like. The secure observation is that €26,750 equals €25,000 + 7% IGIC and does not numerically reproduce the €17,750 + IGIC balance stated by Parrilla on 11-Jun-2020."
+}

@@ -1,0 +1,668 @@
+{
+  "schema": "por-derecho.r33-truth-machine-visual.v1",
+  "control": "PD-R33-TRUTH-MACHINE-20260925-01",
+  "generated_from": {
+    "document_id": "C36-SPECIALIST-R33",
+    "native_pdf_sha256": "5e0728185cf9b686abd723497d2a53a2656a5e0de4d323a734ed02880eb1d711",
+    "private_v3_case_sha256": "ad3b9531986446f73b1bc39e7b5baca2bedb1efdeb8ece06b7175008655fc2c6"
+  },
+  "structure": {
+    "pages": 22,
+    "blocks": 206,
+    "statement_propositions": 276,
+    "paragraph_composites": 206,
+    "review_records": 482
+  },
+  "source_integrity": {
+    "native_hash_bound": true,
+    "pages_represented": "22/22",
+    "preserved_review_anchors": "482/482",
+    "statement_scan": "276/276"
+  },
+  "provisional_v3_statement_states": {
+    "UNRESOLVED": 200,
+    "RHETORICAL_OR_LEGAL": 64,
+    "PARTIAL": 10,
+    "SUPPORTED": 2
+  },
+  "candidate_scan": {
+    "statements_with_one_or_more_markers": 179,
+    "statement_denominator": 276,
+    "candidate_load_percent": 64.9,
+    "marker_instances": 271,
+    "rules": {
+      "CI-001": {
+        "label": "Exact quote/context comparison",
+        "count": 57
+      },
+      "CI-025": {
+        "label": "Actor/capacity separation",
+        "count": 56
+      },
+      "CI-012": {
+        "label": "Quantifier/generalisation",
+        "count": 56
+      },
+      "CI-016": {
+        "label": "Causation bridge",
+        "count": 41
+      },
+      "CI-007": {
+        "label": "Recontextualisation/context restoration",
+        "count": 27
+      },
+      "CI-014": {
+        "label": "Knowledge timing",
+        "count": 15
+      },
+      "CI-034": {
+        "label": "Numeric precision",
+        "count": 13
+      },
+      "CI-019": {
+        "label": "Character attack vs proposition",
+        "count": 4
+      },
+      "CI-021": {
+        "label": "Procedural/finality state",
+        "count": 2
+      }
+    },
+    "pages": {
+      "1": {
+        "candidates": 5,
+        "propositions": 10
+      },
+      "2": {
+        "candidates": 5,
+        "propositions": 5
+      },
+      "3": {
+        "candidates": 15,
+        "propositions": 16
+      },
+      "4": {
+        "candidates": 33,
+        "propositions": 36
+      },
+      "5": {
+        "candidates": 9,
+        "propositions": 13
+      },
+      "6": {
+        "candidates": 3,
+        "propositions": 10
+      },
+      "7": {
+        "candidates": 6,
+        "propositions": 10
+      },
+      "8": {
+        "candidates": 5,
+        "propositions": 14
+      },
+      "9": {
+        "candidates": 4,
+        "propositions": 14
+      },
+      "10": {
+        "candidates": 6,
+        "propositions": 10
+      },
+      "11": {
+        "candidates": 6,
+        "propositions": 10
+      },
+      "12": {
+        "candidates": 9,
+        "propositions": 12
+      },
+      "13": {
+        "candidates": 10,
+        "propositions": 16
+      },
+      "14": {
+        "candidates": 8,
+        "propositions": 14
+      },
+      "15": {
+        "candidates": 10,
+        "propositions": 10
+      },
+      "16": {
+        "candidates": 7,
+        "propositions": 8
+      },
+      "17": {
+        "candidates": 4,
+        "propositions": 11
+      },
+      "18": {
+        "candidates": 7,
+        "propositions": 12
+      },
+      "19": {
+        "candidates": 7,
+        "propositions": 8
+      },
+      "20": {
+        "candidates": 9,
+        "propositions": 15
+      },
+      "21": {
+        "candidates": 5,
+        "propositions": 13
+      },
+      "22": {
+        "candidates": 6,
+        "propositions": 9
+      }
+    }
+  },
+  "source_complete_context_signoffs": 0,
+  "signoff_denominator": 482,
+  "worked_examples": [
+    {
+      "page": 2,
+      "type": "false-positive control",
+      "summary": "The filing itself says the 2023 classification judgment is under appeal; citing the first-instance judgment is not by itself a finality inversion."
+    },
+    {
+      "page": 3,
+      "type": "context-restoration target",
+      "summary": "Hostile characterisations appear beside a reproduced project screenshot that visibly says matters remain 'No probado todavía'; later summaries should preserve that proof boundary."
+    },
+    {
+      "page": 5,
+      "type": "generalisation target",
+      "summary": "The 2020 withdrawal/apology is real adverse evidence. It does not by itself establish a common reason for every lawyer transition; the v3 review records that broader causal inference as unsupported/incomplete."
+    }
+  ],
+  "boundary": "Candidate markers are triage prompts and review-load measures, not findings of falsity, deception, intent, credibility, criminality, guilt or liability. Existing adverse evidence and lawful alternatives remain visible.",
+  "updated_at": "2026-09-25",
+  "visualization": {
+    "fallback": "assets/r33-truth-machine-visual-20260925.svg",
+    "width": 1920,
+    "height": 1080,
+    "vector": true,
+    "dynamic_renderer": "assets/truth-machine-live.js",
+    "refresh_seconds": 60
+  },
+  "scientific_method_pass": {
+    "schema": "por-derecho.r33-forensic-method-pass.v1",
+    "control": "PD-R33-METHOD-STACK-20260925-01",
+    "document": {
+      "id": "RPL3304-AC-OP-20260914-LLFULLV3",
+      "title": "FULL Liar Liar v3 — Oposición del Administrador Concursal al recurso de apelación de Luchy Playa Blanca, S.L. · RPL 3304/2025",
+      "native_sha256": "5e0728185cf9b686abd723497d2a53a2656a5e0de4d323a734ed02880eb1d711",
+      "pages": 22
+    },
+    "scope_boundary": "Deterministic/documentary method pass over preserved v3 statement records. It creates review candidates and matrices, not a linguistic lie detector or automatic finding of falsity, knowledge, intent, guilt or liability.",
+    "structure": {
+      "blocks": 206,
+      "statement_propositions": 276,
+      "paragraph_composites": 206,
+      "review_records": 482
+    },
+    "method_coverage": {
+      "ACH_competing_hypotheses": {
+        "processed": 276,
+        "probabilities_assigned": 0,
+        "states": {
+          "NON_BINARY_EXCLUDED_FROM_FACTUAL_ACH": 64,
+          "H1_TO_H5_OPEN_INSUFFICIENT_CURRENT_REVIEW": 200,
+          "H2_NARROWER_THAN_USED_ACTIVE": 6,
+          "H1_ACCURATE_CURRENTLY_HAS_SUPPORT": 2,
+          "H2_OR_H4_NARROWING_OR_CONTRADICTION_ACTIVE": 4
+        }
+      },
+      "SUE_statement_evidence_consistency": {
+        "processed": 276,
+        "states": {
+          "NON_BINARY_RHETORIC_OR_LEGAL": 64,
+          "OPEN_NOT_SOURCE_RESOLVED": 200,
+          "PARTIAL_OR_NARROWING": 6,
+          "CURRENTLY_SUPPORTED_IN_V3": 2,
+          "MIXED_WITH_CONTRARY_RELATION": 4
+        },
+        "interview_strategy_simulated": false
+      },
+      "verifiability_approach": {
+        "processed": 276,
+        "with_one_or_more_objective_checkability_cues": 154,
+        "cue_types": {
+          "PROCEDURAL_OR_FILING_REF": 68,
+          "DATE_OR_YEAR": 54,
+          "NAMED_ACTOR_OR_ENTITY": 87,
+          "DOCUMENT_OR_TRANSACTION_REF": 98,
+          "AMOUNT_OR_PERCENT": 10,
+          "LEGAL_PROVISION": 8
+        },
+        "truth_inference_from_ratio": false
+      },
+      "wigmore_evidence_graph": {
+        "proposition_nodes": 276,
+        "evidence_source_families": 14,
+        "statement_evidence_edges": 491,
+        "contrary_edges": 4,
+        "source_families": [
+          "PD-7JUNE-CONTROL",
+          "PD-AC-FEES",
+          "PD-CALIF-A01",
+          "PD-CALIF-A04",
+          "PD-CALIF-TRUTH-INVERSION",
+          "PD-DEFENSE-CONTINUITY-20260921",
+          "PD-GT-2020",
+          "PD-GT-CUYAS",
+          "PD-OBREM-2018",
+          "PD-RICPE-SUNPARK",
+          "PD-RPL3304-DOSSIER",
+          "PD-VALENCIA-DOCUMENT-ROOM",
+          "R17-LPB-APPEAL",
+          "SRC-P03-IMG-LIMITS"
+        ]
+      },
+      "FATF_parallel_financial_rail": {
+        "processed": 276,
+        "candidate_statements": 79,
+        "cue_types": {
+          "PAYMENT": 15,
+          "DEBT_CREDIT": 35,
+          "AMOUNT": 10,
+          "ACCOUNT": 26,
+          "INVOICE": 8
+        },
+        "completed_money_traces": 0
+      },
+      "FCA_expected_control_evidence": {
+        "processed": 276,
+        "candidate_statements": 91,
+        "cue_types": {
+          "FILING_NOTICE": 47,
+          "AUTHORITY_APPROVAL": 22,
+          "VALUATION_TRANSACTION": 11,
+          "ACCOUNTING_RECORD": 20
+        },
+        "completed_control_artifact_reconciliations": 0
+      },
+      "FBI_linguistic_probe": {
+        "processed": 276,
+        "candidate_statements": 119,
+        "cue_types": {
+          "PROCEDURAL_STATE": 35,
+          "HEDGE_MODAL": 13,
+          "RHETORIC_ATTACK": 5,
+          "ABSOLUTE_QUANTIFIER": 44,
+          "NEGATION_DENIAL": 64,
+          "CAUSAL_LANGUAGE": 24
+        },
+        "deception_findings": 0
+      },
+      "knowledge_intent_separation": {
+        "knowledge_states": {
+          "NOT_ASSESSED": 261,
+          "INFERRED_ONLY": 15
+        },
+        "causation_states": {
+          "NOT_ASSESSED": 235,
+          "UNSUPPORTED_INFERENCE": 41
+        },
+        "knowingly_false_findings": 0
+      },
+      "falsehood_truth_inversion_register": {
+        "states": {
+          "NON_BINARY_RHETORIC_OR_LEGAL": 64,
+          "OPEN_UNRESOLVED": 200,
+          "NARROWING_OR_MISLEADING_USE_CANDIDATE": 6,
+          "CURRENTLY_SUPPORTED": 2,
+          "CONTRADICTION_REVIEW_CANDIDATE": 4
+        },
+        "contradiction_review_candidates": 4,
+        "source_complete_falsehood_signoffs": 0,
+        "knowingly_false_signoffs": 0
+      }
+    },
+    "page_metrics": {
+      "1": {
+        "statements": 10,
+        "verifiable": 6,
+        "rhetorical_legal": 6,
+        "linguistic": 5,
+        "unresolved": 4,
+        "control": 2,
+        "financial": 1
+      },
+      "2": {
+        "statements": 5,
+        "financial": 4,
+        "control": 3,
+        "linguistic": 4,
+        "unresolved": 3,
+        "verifiable": 4,
+        "rhetorical_legal": 2
+      },
+      "3": {
+        "statements": 16,
+        "verifiable": 7,
+        "linguistic": 5,
+        "rhetorical_legal": 3,
+        "partial": 1,
+        "financial": 2,
+        "unresolved": 10,
+        "control": 2,
+        "supported": 2
+      },
+      "4": {
+        "statements": 36,
+        "verifiable": 12,
+        "unresolved": 33,
+        "rhetorical_legal": 3,
+        "financial": 8,
+        "linguistic": 8,
+        "control": 4
+      },
+      "5": {
+        "statements": 13,
+        "verifiable": 7,
+        "unresolved": 6,
+        "linguistic": 6,
+        "rhetorical_legal": 6,
+        "control": 2,
+        "contradiction_candidate": 1,
+        "partial": 1
+      },
+      "6": {
+        "statements": 10,
+        "verifiable": 8,
+        "control": 4,
+        "linguistic": 8,
+        "unresolved": 6,
+        "financial": 2,
+        "rhetorical_legal": 4
+      },
+      "7": {
+        "statements": 10,
+        "verifiable": 5,
+        "control": 6,
+        "linguistic": 5,
+        "rhetorical_legal": 2,
+        "unresolved": 8,
+        "financial": 2
+      },
+      "8": {
+        "statements": 14,
+        "verifiable": 8,
+        "financial": 6,
+        "control": 8,
+        "rhetorical_legal": 4,
+        "unresolved": 10,
+        "linguistic": 2
+      },
+      "9": {
+        "statements": 14,
+        "verifiable": 6,
+        "control": 10,
+        "linguistic": 6,
+        "unresolved": 8,
+        "financial": 9,
+        "rhetorical_legal": 4,
+        "contradiction_candidate": 2,
+        "partial": 2
+      },
+      "10": {
+        "statements": 10,
+        "verifiable": 9,
+        "control": 9,
+        "unresolved": 8,
+        "financial": 5,
+        "linguistic": 4,
+        "contradiction_candidate": 1,
+        "partial": 1,
+        "rhetorical_legal": 1
+      },
+      "11": {
+        "statements": 10,
+        "verifiable": 7,
+        "financial": 2,
+        "rhetorical_legal": 2,
+        "control": 5,
+        "linguistic": 5,
+        "unresolved": 8
+      },
+      "12": {
+        "statements": 12,
+        "verifiable": 8,
+        "partial": 1,
+        "control": 3,
+        "unresolved": 10,
+        "linguistic": 3,
+        "rhetorical_legal": 1,
+        "financial": 2
+      },
+      "13": {
+        "statements": 16,
+        "unresolved": 15,
+        "control": 2,
+        "linguistic": 5,
+        "verifiable": 6,
+        "rhetorical_legal": 1
+      },
+      "14": {
+        "statements": 14,
+        "unresolved": 14,
+        "verifiable": 7,
+        "control": 4,
+        "linguistic": 4,
+        "financial": 2
+      },
+      "15": {
+        "statements": 10,
+        "unresolved": 5,
+        "verifiable": 8,
+        "control": 6,
+        "rhetorical_legal": 5,
+        "linguistic": 6,
+        "financial": 2
+      },
+      "16": {
+        "statements": 8,
+        "verifiable": 8,
+        "financial": 5,
+        "rhetorical_legal": 4,
+        "linguistic": 6,
+        "unresolved": 4,
+        "control": 2
+      },
+      "17": {
+        "statements": 11,
+        "financial": 10,
+        "control": 4,
+        "rhetorical_legal": 5,
+        "verifiable": 8,
+        "linguistic": 3,
+        "unresolved": 6
+      },
+      "18": {
+        "statements": 12,
+        "linguistic": 7,
+        "rhetorical_legal": 4,
+        "verifiable": 8,
+        "financial": 7,
+        "control": 6,
+        "unresolved": 8
+      },
+      "19": {
+        "statements": 8,
+        "verifiable": 7,
+        "control": 3,
+        "linguistic": 5,
+        "unresolved": 6,
+        "financial": 3,
+        "rhetorical_legal": 1,
+        "partial": 1
+      },
+      "20": {
+        "statements": 15,
+        "verifiable": 6,
+        "control": 3,
+        "linguistic": 10,
+        "unresolved": 14,
+        "partial": 1,
+        "financial": 5
+      },
+      "21": {
+        "statements": 13,
+        "verifiable": 6,
+        "linguistic": 7,
+        "unresolved": 10,
+        "control": 2,
+        "rhetorical_legal": 1,
+        "partial": 2
+      },
+      "22": {
+        "statements": 9,
+        "verifiable": 3,
+        "linguistic": 5,
+        "unresolved": 4,
+        "rhetorical_legal": 5,
+        "financial": 2,
+        "control": 1
+      }
+    },
+    "falsehood_register_candidates": [
+      {
+        "id": "RPL3304-AC-OP-20260914-LLFULLV3-P05-B053-S001",
+        "page": 5,
+        "v3_status": "PARTIAL",
+        "contrary_sources": [
+          {
+            "source": "PD-DEFENSE-CONTINUITY-20260921",
+            "locator": "Tabla 21-Sep-2026: motivos distintos documentados; no existe una causa única acreditada para todas las sustituciones"
+          }
+        ],
+        "knowledge_state": "INFERRED_ONLY",
+        "causation_state": "UNSUPPORTED_INFERENCE",
+        "state": "CONTRADICTION_REVIEW_CANDIDATE_NOT_SIGNED_OFF"
+      },
+      {
+        "id": "RPL3304-AC-OP-20260914-LLFULLV3-P09-B089-S001",
+        "page": 9,
+        "v3_status": "PARTIAL",
+        "contrary_sources": [
+          {
+            "source": "PD-CALIF-A01",
+            "locator": "Audit result: global non-collaboration portrayal materially narrowed/contradicted by AC sources; specific missing materials remain separate"
+          }
+        ],
+        "knowledge_state": "NOT_ASSESSED",
+        "causation_state": "UNSUPPORTED_INFERENCE",
+        "state": "CONTRADICTION_REVIEW_CANDIDATE_NOT_SIGNED_OFF"
+      },
+      {
+        "id": "RPL3304-AC-OP-20260914-LLFULLV3-P09-B091-S001",
+        "page": 9,
+        "v3_status": "PARTIAL",
+        "contrary_sources": [
+          {
+            "source": "PD-CALIF-A01",
+            "locator": "Audit result: global non-collaboration portrayal materially narrowed/contradicted by AC sources; specific missing materials remain separate"
+          }
+        ],
+        "knowledge_state": "NOT_ASSESSED",
+        "causation_state": "UNSUPPORTED_INFERENCE",
+        "state": "CONTRADICTION_REVIEW_CANDIDATE_NOT_SIGNED_OFF"
+      },
+      {
+        "id": "RPL3304-AC-OP-20260914-LLFULLV3-P10-B094-S001",
+        "page": 10,
+        "v3_status": "PARTIAL",
+        "contrary_sources": [
+          {
+            "source": "PD-CALIF-A01",
+            "locator": "Audit result: global non-collaboration portrayal materially narrowed/contradicted by AC sources; specific missing materials remain separate"
+          }
+        ],
+        "knowledge_state": "NOT_ASSESSED",
+        "causation_state": "UNSUPPORTED_INFERENCE",
+        "state": "CONTRADICTION_REVIEW_CANDIDATE_NOT_SIGNED_OFF"
+      }
+    ],
+    "validation": {
+      "private_records_processed": 276,
+      "statement_anchor_count": 276,
+      "source_inputs_modified": false,
+      "automatic_merits_promotions": 0
+    }
+  },
+  "source_review_20260925": {
+    "control": "PD-R33-METHOD-STACK-SOURCE-REVIEW-20260925-01",
+    "principle": "Preserve historical v3 contradiction edges, then source-review proposition scope before promotion.",
+    "reviewed": [
+      {
+        "id": "RPL3304-AC-OP-20260914-LLFULLV3-P05-B053-S001",
+        "page": 5,
+        "result": "MISLEADING_INFERENCE_OR_UNSUPPORTED_CAUSAL_GENERALISATION",
+        "literal_falsehood_signed_off": false,
+        "basis": [
+          "evidence/insolvency-36-2012/rpl-3304-2025/R33-oposicion-ac-apelacion-lpb-septiembre-2026-controlled-extracts.md",
+          "es/continuidad-defensa-letrados/index.html"
+        ],
+        "reason": "The 2020 withdrawal/apology is genuine adverse evidence but does not establish one common reason for all counsel transitions."
+      },
+      {
+        "id": "RPL3304-AC-OP-20260914-LLFULLV3-P09-B089-S001",
+        "page": 9,
+        "result": "NARROWER_DOCUMENT_REQUEST_DISPUTE_LITERAL_FALSEHOOD_NOT_ESTABLISHED",
+        "literal_falsehood_signed_off": false,
+        "basis": [
+          "archive/CALIFICACION_ALLEGATION_01_COLLABORATION_FALSEHOOD_LEDGER_16AUG2026.md"
+        ],
+        "reason": "The broader non-collaboration portrayal is materially narrowed, while specific delayed/missing documents remain documented."
+      },
+      {
+        "id": "RPL3304-AC-OP-20260914-LLFULLV3-P09-B091-S001",
+        "page": 9,
+        "result": "NARROWER_ACCOUNTING_SUFFICIENCY_DISPUTE_LITERAL_FALSEHOOD_NOT_ESTABLISHED",
+        "literal_falsehood_signed_off": false,
+        "basis": [
+          "archive/CALIFICACION_ALLEGATION_01_COLLABORATION_FALSEHOOD_LEDGER_16AUG2026.md",
+          "archive/CALIFICACION_AC_REPORT_RADICAL_TRANSPARENCY_LEDGER_16AUG2026.md"
+        ],
+        "reason": "Accounting material was received, while statutory sufficiency/supporting-material disputes remained; request→delivery reconciliation is still required."
+      },
+      {
+        "id": "RPL3304-AC-OP-20260914-LLFULLV3-P10-B094-S001",
+        "page": 10,
+        "result": "CAUSATION_SCOPE_MATERIALLY_NARROWED_LITERAL_FALSEHOOD_NOT_ESTABLISHED",
+        "literal_falsehood_signed_off": false,
+        "basis": [
+          "archive/CALIFICACION_ALLEGATION_01_COLLABORATION_FALSEHOOD_LEDGER_16AUG2026.md",
+          "archive/CALIFICACION_AC_REPORT_RADICAL_TRANSPARENCY_LEDGER_16AUG2026.md"
+        ],
+        "reason": "The global causal frame is materially narrowed by the AC's own cooperation/accounting record and the judgment; exact annual-account causation remains open."
+      },
+      {
+        "id": "RPL3304-AC-OP-20260914-LLFULLV3-P19-20-B186-S001",
+        "page": 19,
+        "result": "ACCURATE_LIMITED_USE_WITH_SCOPE_MISMATCH_RISK",
+        "literal_falsehood_signed_off": false,
+        "basis": [
+          "evidence/insolvency-36-2012/rpl-3304-2025/R33-oposicion-ac-apelacion-lpb-septiembre-2026-controlled-extracts.md"
+        ],
+        "reason": "Pre-appointment timing limits responsibility for origin but does not answer later notice, decisions or continuing effects, including the 2016 notice reproduced by R33."
+      }
+    ],
+    "counts": {
+      "reviewed_relations": 5,
+      "direct_literal_falsehood_signoffs": 0,
+      "misleading_or_scope_limited_source_reviews": 2,
+      "narrowed_or_open_falsehood_reviews": 3,
+      "knowingly_false_signoffs": 0
+    },
+    "next_finite_proof": [
+      "request→response→delivery→missing-item matrix",
+      "native-source review for six remaining PARTIAL/narrowing records",
+      "actor-specific knowledge proof before any knowingly-false promotion"
+    ]
+  }
+}

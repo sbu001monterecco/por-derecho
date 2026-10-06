@@ -207,7 +207,8 @@ def validate_register(
     if [event.get("event_id") for event in authority_events] != expected_authority_ids:
         errors.append("19-event public-authority communication set changed")
     expected_status_events, expected_status_control = load_regage_status_export_events()
-    expected_event_total = BASELINE_EXPECTED + MAILBOX_EXPECTED + len(KEY_EVENTS) + len(expected_status_events)
+    supplemental_count = sum(str(event.get("source_key", "")).startswith("SUPPLEMENTAL_20260924:") for event in events)
+    expected_event_total = BASELINE_EXPECTED + MAILBOX_EXPECTED + len(KEY_EVENTS) + len(expected_status_events) + supplemental_count
     if denominator.get("event_rows_total") != len(events) or len(events) != expected_event_total:
         errors.append(f"event-row denominator drift: expected {expected_event_total}, found {len(events)}")
     try:
@@ -411,7 +412,8 @@ def validate_register(
         elif not (repo_root / anchor).is_file():
             errors.append(f"{event.get('event_id')} source anchor does not exist: {anchor}")
 
-    curated_expected = {event["event_id"] for event in [*KEY_EVENTS, *expected_status_events]}
+    supplemental_ids = {event.get("event_id") for event in events if str(event.get("source_key", "")).startswith("SUPPLEMENTAL_20260924:")}
+    curated_expected = {event["event_id"] for event in [*KEY_EVENTS, *expected_status_events]} | supplemental_ids
     curated_found = {event.get("event_id") for event in events if event.get("cohort") == "CURATED_SOURCE_PROVED_EVENT"}
     if curated_found != curated_expected:
         errors.append(f"curated-event set drift: expected {sorted(curated_expected)}, found {sorted(curated_found)}")

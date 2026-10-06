@@ -1,0 +1,27 @@
+{
+  "schema": "por-derecho.unitary-360-execution-projection.v1",
+  "control_date": "2026-09-24",
+  "supplements": "PD-UNITARY-360-ACTIONS-20260827-01",
+  "canonical_register": "ops/UNITARY_360_ACTION_REGISTER_27AUG2026.json",
+  "canonical_router": "CURRENT_ACTIONS_360_START_HERE_27AUG2026.md",
+  "programme": "UNITARY_ACTION_PROGRAMME_24SEP2026.md",
+  "action_ids_are_not_reallocated": true,
+  "source_state_is_not_overwritten": true,
+  "external_action_authorized": false,
+  "coverage": {"canonical_actions": 60, "ac_claim_families": 14, "fresh_all_source_page_review_claimed": false},
+  "groups": [
+    {"name": "official-record-and-routing", "action_ids": ["A008", "A011", "A012", "A013", "A014", "A019", "A020", "A021", "A022", "A023", "A024", "A025", "A041", "A042", "A050"]},
+    {"name": "credit-title-and-recovery", "action_ids": ["A001", "A002", "A003", "A004", "A005", "A006", "A009", "A010", "A015", "A016", "A040", "A049"]},
+    {"name": "funded-exit-and-professional-production", "action_ids": ["A007", "A033", "A034", "A035", "A036", "A037", "A047"]},
+    {"name": "operating-tax-public-finance-and-successors", "action_ids": ["A017", "A018", "A026", "A027", "A028", "A029", "A030", "A031", "A032", "A038", "A039", "A043", "A044", "A045", "A046", "A048"]},
+    {"name": "evidence-publication-and-continuity", "action_ids": ["A051", "A052", "A053", "A054", "A055", "A056", "A057", "A058", "A059", "A060"]}
+  ],
+  "claim_ids": ["AC-CLM-001", "AC-CLM-002", "AC-CLM-003", "AC-CLM-004", "AC-CLM-005", "AC-CLM-006", "AC-CLM-007", "AC-CLM-008", "AC-CLM-009", "AC-CLM-010", "AC-CLM-011", "AC-CLM-012", "AC-CLM-013", "AC-CLM-014"],
+  "cross_read": ["CONTROL-21", "CONTROL-22", "CONTROL-24", "AN2023", "RPL3304/2025", "RPL421/2026", "PO641/2024", "DP1901/2026", "DP1956/2026", "DIP2/2026", "CGPJ-DI169/2026", "CGPJ-Alzada286/2026", "TSJC-EG38/2026", "EG17/20-26", "108-2026"],
+  "stop_conditions": ["unknown_service_or_finality", "unresolved_claimant_or_capacity", "missing_source_bridge", "privilege_or_privacy_not_cleared", "unverified_new_defendant_or_policy", "double_recovery", "failed_or_missing_release_acceptance"],
+  "source_corrections": [
+    {"topic": "CGPJ-successor", "current_registration": "REGAGE26e00083453059", "complements": "REGAGE26e00083448218", "pages": 17, "state": "SOURCE_CONTROL_RECORDS_COMPLETE_REGISTERED_PACKET", "still_open": ["incorporation", "examination", "response", "current_status"]},
+    {"topic": "F06-Document7-invoice6", "date": "2019-01-25", "issuer_capacity": "INDIVIDUAL", "amount_eur": 29208.88, "company_issuer_shown": false, "native_source_public": false, "still_open": ["bank_beneficiary", "accounting", "professional_activity", "tax_reconciliation"]}
+  ],
+  "publication": {"repository_content": "PUBLIC_SAFE_ONLY", "private_advice_included": false, "new_production_writer": false, "controller": "ops/PUBLICATION_CONTROLLER.md", "control_tower_issue": 1428}
+}

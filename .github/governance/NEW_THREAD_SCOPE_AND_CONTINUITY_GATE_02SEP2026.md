@@ -1,3 +1,5 @@
+> **28-Sep-2026 filing-status preflight — `PD-REGAGE-LOOKUP-20260928-01`:** before any assertion that a filing is missing, still prepared, overdue or requires resubmission, read `REGAGE_START_HERE.md` and `ops/REGAGE_CURRENT_LOOKUP.json`, then retrieve the current authorized private registry and native receipt evidence. This is mandatory in related ChatGPT/Codex/agent threads, including threads already in progress. Exact registration reference → proceeding aliases and complete delivery family → existing event register and receipt → only then email/history delta. The 21-Sep E.G.745 substantive appeal is already filed under `REGAGE26e00082068814` (existing `PD-SP-EVT-0203`), with ten linked deliveries; `REGAGE26e00082033336` is a separate preservation communication. Earlier unverified wording is historical, not current. A cache/search miss is not non-filing. Keep transport, registration, incorporation, examination and decision separate. This override changes retrieval order only, not repository authority, privacy, publication checks, account-level ChatGPT settings or authority to send/file.
+
 # Mandatory new-thread scope and continuity gate
 
 **Date:** 2 September 2026  
@@ -42,7 +44,7 @@ The thread should give the user a short confirmation that this bootstrap has bee
 
 ## Gate B — apparently unrelated
 
-If the opening request appears completely unrelated to Por Derecho / Project Sun Rock, the thread must not simply assume that conclusion.
+If the opening request appears completely unrelated to Por Derecho / Project Sun Rock, it must not simply assume that conclusion.
 
 Before importing any Por Derecho substantive context, it must tell Gil Marer in substance:
 

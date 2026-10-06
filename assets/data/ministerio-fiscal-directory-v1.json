@@ -1,15 +1,15 @@
 {
-  "schema_version": "1.0.0",
-  "control_date": "2026-09-18",
+  "schema_version": "1.1.0",
+  "control_date": "2026-10-01",
   "record_type": "ministerio_fiscal_canonical_directory",
-  "status": "SOURCE_CONTROLLED_DIRECTORY_WITH_EXPLICIT_COMPLETENESS_GAPS",
+  "status": "SOURCE_CONTROLLED_CANONICAL_ARCHITECTURE_WITH_EXPLICIT_COMPLETENESS_GAPS",
   "identity_policy": {
     "office_directory_namespace": "PD-MF-OFF-####",
     "office_directory_rule": "A PD-MF-OFF identifier is a Por Derecho canonical directory identity for an office/route. It is not an official Ministerio Fiscal reference and does not replace any existing global institution record.",
     "expediente_namespace": "Existing Master_ID values such as GC-FIS-016, TF-FIS-008, LZ-FIS-045 and NAT-FIS-004 remain controlling; no renumbering is permitted.",
     "event_namespace": "PD-SP-EVT-####",
     "event_rule": "Every source-proved filing, receipt, response, decree, notice, acknowledgement, routing act or transport event receives one stable PD-SP-EVT identifier. The event identifier is separate from REGAGE/RedSARA, NIG, DI, DIP, EG, ST, CC/CA and court references.",
-    "caret_rule": "The ^ marker identifies a locked canonical identity. It does not convert an event, receipt, allegation or procedural assertion into an adjudicated fact.",
+    "caret_rule": "The ^ marker identifies a locked canonical identity only. It does not convert an allegation, inference, receipt, routing event, office relationship or procedural position into an adjudicated fact.",
     "no_collapse_rule": "Transport, formal registration, official act/decision, notification and proceeding identity remain separate records and are linked rather than collapsed."
   },
   "proof_boundaries": [
@@ -93,7 +93,11 @@
       "name_en": "Fiscalía General del Estado",
       "tier": "STATE_CENTRAL",
       "dir3": "J00003992",
-      "official_id_status": "DIR3_LOCATED_IN_REGAGE_RECEIPT"
+      "official_id_status": "DIR3_LOCATED_IN_REGAGE_RECEIPT",
+      "current_head": "Teresa Peramato Martín",
+      "current_head_role_es": "Fiscal General del Estado",
+      "official_source": "https://www.fiscal.es/fiscal-general",
+      "canonical_ref": "PD-MF-OFF-0001^"
     },
     {
       "canonical_id": "PD-MF-OFF-0002",
@@ -103,7 +107,11 @@
       "name_en": "Fiscal Inspection of the Fiscalía General del Estado",
       "tier": "STATE_CENTRAL_SUPERVISION",
       "dir3": null,
-      "official_id_status": "INTERNAL_DESTINATION_NOT_INDEPENDENTLY_LOCKED_BY_BASELINE_RECEIPT"
+      "official_id_status": "INTERNAL_DESTINATION_NOT_INDEPENDENTLY_LOCKED_BY_BASELINE_RECEIPT",
+      "current_head": "María José Osuna Cerezo",
+      "current_head_role_es": "Fiscal de Sala Jefa de la Inspección Fiscal",
+      "official_source": "https://www.fiscal.es/-/peramato-preside-la-toma-de-posesi%C3%B3n-de-la-nueva-fiscal-de-sala-jefa-de-la-inspecci%C3%B3n-fiscal-de-la-fge?redirect=%2Fdetalle-noticia",
+      "canonical_ref": "PD-MF-OFF-0002^"
     },
     {
       "canonical_id": "PD-MF-OFF-0003",
@@ -123,7 +131,11 @@
       "name_en": "Public Administration Offences Unit — Fiscalía General del Estado",
       "tier": "STATE_CENTRAL_SPECIALIST",
       "dir3": null,
-      "official_id_status": "OFFICIAL_FILE_SOURCE_LOCATED"
+      "official_id_status": "OFFICIAL_FILE_SOURCE_LOCATED",
+      "current_head": "Emilio Jesús Sánchez Ulled",
+      "current_head_role_es": "Fiscal de Sala de Delitos contra la Administración Pública",
+      "official_source": "https://www.fiscal.es/delitos-contra-la-administracion-publica",
+      "canonical_ref": "PD-MF-OFF-0004^"
     },
     {
       "canonical_id": "PD-MF-OFF-0005",
@@ -133,7 +145,11 @@
       "name_en": "Special Prosecution Office against Corruption and Organised Crime",
       "tier": "STATE_SPECIALIST",
       "dir3": "J00004991",
-      "official_id_status": "DIR3_LOCATED_IN_REGAGE_RECEIPT"
+      "official_id_status": "DIR3_LOCATED_IN_REGAGE_RECEIPT",
+      "current_head": "Alejandro Luzón Cánovas",
+      "current_head_role_es": "Fiscal de Sala Jefe",
+      "official_source": "https://www.fiscal.es/fiscalia-especial-contra-la-corrupcion",
+      "canonical_ref": "PD-MF-OFF-0005^"
     },
     {
       "canonical_id": "PD-MF-OFF-0006",
@@ -143,7 +159,11 @@
       "name_en": "Prosecution Office of the Audiencia Nacional",
       "tier": "STATE_SPECIALIST",
       "dir3": "J00003864",
-      "official_id_status": "DIR3_LOCATED_IN_REGAGE_RECEIPT"
+      "official_id_status": "DIR3_LOCATED_IN_REGAGE_RECEIPT",
+      "current_head": "Jesús Alonso Cristóbal",
+      "current_head_role_es": "Fiscal de Sala Jefe de la Fiscalía de la Audiencia Nacional",
+      "official_source": "https://www.fiscal.es/altos-cargos",
+      "canonical_ref": "PD-MF-OFF-0006^"
     },
     {
       "canonical_id": "PD-MF-OFF-0007",
@@ -163,7 +183,12 @@
       "name_en": "Prosecution Office of the Autonomous Community of the Canary Islands",
       "tier": "AUTONOMOUS_COMMUNITY",
       "dir3": "J00015401",
-      "official_id_status": "DIR3_LOCATED_IN_REGAGE_RECEIPT"
+      "official_id_status": "DIR3_LOCATED_IN_REGAGE_RECEIPT",
+      "current_head": "Jaime Serrano-Jover González",
+      "current_head_role_es": "Fiscal Superior de la Comunidad Autónoma de Canarias",
+      "relationship_note_es": "El Fiscal Superior dirige esta Fiscalía y ostenta la representación y jefatura del Ministerio Fiscal en Canarias; no es una oficina paralela a la Fiscalía de la Comunidad Autónoma.",
+      "official_source": "https://www.fiscal.es/canarias",
+      "canonical_ref": "PD-MF-OFF-0008^"
     },
     {
       "canonical_id": "PD-MF-OFF-0009",
@@ -173,7 +198,11 @@
       "name_en": "Las Palmas Provincial Prosecution Office",
       "tier": "PROVINCIAL",
       "dir3": "J00001657",
-      "official_id_status": "DIR3_LOCATED_IN_REGAGE_RECEIPT"
+      "official_id_status": "DIR3_LOCATED_IN_REGAGE_RECEIPT",
+      "current_head": "Beatriz Sánchez Carreras",
+      "current_head_role_es": "Fiscal Jefa Provincial de Las Palmas",
+      "official_source": "https://www.fiscal.es/-/fiscalia-provincial-de-las-palmas",
+      "canonical_ref": "PD-MF-OFF-0009^"
     },
     {
       "canonical_id": "PD-MF-OFF-0010",
@@ -183,7 +212,11 @@
       "name_en": "Santa Cruz de Tenerife Provincial Prosecution Office",
       "tier": "PROVINCIAL",
       "dir3": null,
-      "official_id_status": "OFFICIAL_PROCEDURAL_SOURCE_LOCATED_DIR3_NOT_LOCKED_HERE"
+      "official_id_status": "OFFICIAL_PROCEDURAL_SOURCE_LOCATED_DIR3_NOT_LOCKED_HERE",
+      "current_head": "José Luis Sánchez-Jáuregui Alcaide",
+      "current_head_role_es": "Fiscal Jefe Provincial de Santa Cruz de Tenerife",
+      "official_source": "https://www.fiscal.es/-/fiscalia-provincial-de-tenerife",
+      "canonical_ref": "PD-MF-OFF-0010^"
     },
     {
       "canonical_id": "PD-MF-OFF-0011",
@@ -193,7 +226,12 @@
       "name_en": "Arrecife de Lanzarote–Puerto del Rosario Area Prosecution Office",
       "tier": "AREA",
       "dir3": "J00017154",
-      "official_id_status": "DIR3_LOCATED_IN_REGAGE_RECEIPT"
+      "official_id_status": "DIR3_LOCATED_IN_REGAGE_RECEIPT",
+      "current_head": "M.ª Yolanda López Gómez",
+      "current_head_role_es": "Fiscal Jefa de Área de Arrecife de Lanzarote–Puerto del Rosario",
+      "relationship_note_es": "Unidad territorial bajo dependencia de la Fiscalía Provincial de Las Palmas.",
+      "official_source": "https://www.fiscal.es/-/fiscalia-provincial-de-las-palmas",
+      "canonical_ref": "PD-MF-OFF-0011^"
     },
     {
       "canonical_id": "PD-MF-OFF-0012",
@@ -224,6 +262,21 @@
       "tier": "PROVINCIAL_OTHER_TERRITORY",
       "dir3": "J00004143",
       "official_id_status": "DIR3_LOCATED_IN_REGAGE_RECEIPT"
+    },
+    {
+      "canonical_id": "PD-MF-OFF-0015",
+      "canonical_ref": "PD-MF-OFF-0015^",
+      "caret": "^",
+      "group_key": "state",
+      "name_es": "Unidad de Delitos Económicos — Fiscalía General del Estado",
+      "name_en": "Economic Crime Unit — Fiscalía General del Estado",
+      "tier": "STATE_CENTRAL_SPECIALIST",
+      "dir3": "J00015804",
+      "official_id_status": "DIR3_LOCATED_IN_REGAGE_RECEIPT",
+      "current_head": "Fernando Rodríguez Rey",
+      "current_head_role_es": "Fiscal de Sala Coordinador de Delitos Económicos",
+      "official_source": "https://www.fiscal.es/delitos-economicos",
+      "matter_lane_es": "E.G. 58/2026 y ruta REGAGE de 2–3 agosto 2026."
     }
   ],
   "expedientes": [
@@ -537,5 +590,212 @@
     "master_proceedings": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
     "interconnectivity": "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
     "receipt_index": "archive/evidence/mf-redsara-anexo4/MF_REDSARA_REGISTRATION_INDEX_SHORT.csv"
+  },
+  "canonical_architecture_control_id": "PD-MF-ARCH-20261001-01^",
+  "canonical_people": [
+    {
+      "canonical_id": "PD-MF-PER-0001",
+      "canonical_ref": "PD-MF-PER-0001^",
+      "caret": "^",
+      "name": "Teresa Peramato Martín",
+      "role_es": "Fiscal General del Estado",
+      "office_id": "PD-MF-OFF-0001",
+      "source": "https://www.fiscal.es/w/teresa-peramato-m"
+    },
+    {
+      "canonical_id": "PD-MF-PER-0002",
+      "canonical_ref": "PD-MF-PER-0002^",
+      "caret": "^",
+      "name": "María José Osuna Cerezo",
+      "role_es": "Fiscal de Sala Jefa de la Inspección Fiscal",
+      "office_id": "PD-MF-OFF-0002",
+      "source": "https://www.fiscal.es/-/peramato-preside-la-toma-de-posesi%C3%B3n-de-la-nueva-fiscal-de-sala-jefa-de-la-inspecci%C3%B3n-fiscal-de-la-fge?redirect=%2Fdetalle-noticia"
+    },
+    {
+      "canonical_id": "PD-MF-PER-0003",
+      "canonical_ref": "PD-MF-PER-0003^",
+      "caret": "^",
+      "name": "Fernando Rodríguez Rey",
+      "role_es": "Fiscal de Sala Coordinador de Delitos Económicos",
+      "office_id": "PD-MF-OFF-0015",
+      "source": "https://www.fiscal.es/delitos-economicos"
+    },
+    {
+      "canonical_id": "PD-MF-PER-0004",
+      "canonical_ref": "PD-MF-PER-0004^",
+      "caret": "^",
+      "name": "Emilio Jesús Sánchez Ulled",
+      "role_es": "Fiscal de Sala de Delitos contra la Administración Pública",
+      "office_id": "PD-MF-OFF-0004",
+      "source": "https://www.fiscal.es/delitos-contra-la-administracion-publica"
+    },
+    {
+      "canonical_id": "PD-MF-PER-0005",
+      "canonical_ref": "PD-MF-PER-0005^",
+      "caret": "^",
+      "name": "Alejandro Luzón Cánovas",
+      "role_es": "Fiscal de Sala Jefe de Anticorrupción",
+      "office_id": "PD-MF-OFF-0005",
+      "source": "https://www.fiscal.es/fiscalia-especial-contra-la-corrupcion"
+    },
+    {
+      "canonical_id": "PD-MF-PER-0006",
+      "canonical_ref": "PD-MF-PER-0006^",
+      "caret": "^",
+      "name": "Jaime Serrano-Jover González",
+      "role_es": "Fiscal Superior de Canarias",
+      "office_id": "PD-MF-OFF-0008",
+      "source": "https://www.fiscal.es/canarias"
+    },
+    {
+      "canonical_id": "PD-MF-PER-0007",
+      "canonical_ref": "PD-MF-PER-0007^",
+      "caret": "^",
+      "name": "Beatriz Sánchez Carreras",
+      "role_es": "Fiscal Jefa Provincial de Las Palmas",
+      "office_id": "PD-MF-OFF-0009",
+      "source": "https://www.fiscal.es/-/fiscalia-provincial-de-las-palmas"
+    },
+    {
+      "canonical_id": "PD-MF-PER-0008",
+      "canonical_ref": "PD-MF-PER-0008^",
+      "caret": "^",
+      "name": "M.ª Yolanda López Gómez",
+      "role_es": "Fiscal Jefa de Área Arrecife de Lanzarote–Puerto del Rosario",
+      "office_id": "PD-MF-OFF-0011",
+      "source": "https://www.fiscal.es/-/fiscalia-provincial-de-las-palmas"
+    },
+    {
+      "canonical_id": "PD-MF-PER-0009",
+      "canonical_ref": "PD-MF-PER-0009^",
+      "caret": "^",
+      "name": "José Luis Sánchez-Jáuregui Alcaide",
+      "role_es": "Fiscal Jefe Provincial de Santa Cruz de Tenerife",
+      "office_id": "PD-MF-OFF-0010",
+      "source": "https://www.fiscal.es/-/fiscalia-provincial-de-tenerife"
+    },
+    {
+      "canonical_id": "PD-MF-PER-0010",
+      "canonical_ref": "PD-MF-PER-0010^",
+      "caret": "^",
+      "name": "Jesús Alonso Cristóbal",
+      "role_es": "Fiscal de Sala Jefe de la Fiscalía de la Audiencia Nacional",
+      "office_id": "PD-MF-OFF-0006",
+      "source": "https://www.fiscal.es/altos-cargos"
+    }
+  ],
+  "canonical_relationships": [
+    {
+      "canonical_id": "PD-MF-REL-0001",
+      "canonical_ref": "PD-MF-REL-0001^",
+      "caret": "^",
+      "from": "PD-MF-OFF-0001",
+      "to": "PD-MF-OFF-0008",
+      "type": "STATE_TO_AUTONOMOUS_TERRITORIAL_CHAIN",
+      "label_es": "jefatura superior estatal → jefatura territorial autonómica"
+    },
+    {
+      "canonical_id": "PD-MF-REL-0002",
+      "canonical_ref": "PD-MF-REL-0002^",
+      "caret": "^",
+      "from": "PD-MF-OFF-0008",
+      "to": "PD-MF-OFF-0009",
+      "type": "AUTONOMOUS_TO_PROVINCIAL",
+      "label_es": "Fiscal Superior / Fiscalía de la Comunidad Autónoma → Fiscalía Provincial de Las Palmas"
+    },
+    {
+      "canonical_id": "PD-MF-REL-0003",
+      "canonical_ref": "PD-MF-REL-0003^",
+      "caret": "^",
+      "from": "PD-MF-OFF-0008",
+      "to": "PD-MF-OFF-0010",
+      "type": "AUTONOMOUS_TO_PROVINCIAL",
+      "label_es": "Fiscal Superior / Fiscalía de la Comunidad Autónoma → Fiscalía Provincial de Santa Cruz de Tenerife"
+    },
+    {
+      "canonical_id": "PD-MF-REL-0004",
+      "canonical_ref": "PD-MF-REL-0004^",
+      "caret": "^",
+      "from": "PD-MF-OFF-0009",
+      "to": "PD-MF-OFF-0011",
+      "type": "PROVINCIAL_TO_AREA",
+      "label_es": "Fiscalía Provincial de Las Palmas → Fiscalía de Área de Arrecife"
+    },
+    {
+      "canonical_id": "PD-MF-REL-0005",
+      "canonical_ref": "PD-MF-REL-0005^",
+      "caret": "^",
+      "from": "PD-MF-OFF-0001",
+      "to": "PD-MF-OFF-0002",
+      "type": "FGE_CENTRAL_UNIT",
+      "label_es": "FGE → Inspección Fiscal"
+    },
+    {
+      "canonical_id": "PD-MF-REL-0006",
+      "canonical_ref": "PD-MF-REL-0006^",
+      "caret": "^",
+      "from": "PD-MF-OFF-0001",
+      "to": "PD-MF-OFF-0015",
+      "type": "FGE_SPECIALIST_COORDINATION_UNIT",
+      "label_es": "FGE → Unidad de Delitos Económicos"
+    },
+    {
+      "canonical_id": "PD-MF-REL-0007",
+      "canonical_ref": "PD-MF-REL-0007^",
+      "caret": "^",
+      "from": "PD-MF-OFF-0001",
+      "to": "PD-MF-OFF-0004",
+      "type": "FGE_SPECIALIST_COORDINATION_UNIT",
+      "label_es": "FGE → Unidad de Delitos contra la Administración Pública"
+    },
+    {
+      "canonical_id": "PD-MF-REL-0008",
+      "canonical_ref": "PD-MF-REL-0008^",
+      "caret": "^",
+      "from": "PD-MF-OFF-0012",
+      "to": "PD-MF-OFF-0001",
+      "type": "SEPARATE_SUPRANATIONAL_BRANCH",
+      "label_es": "Fiscalía Europea: rama supranacional separada; no subordinación al Ministerio Fiscal español"
+    }
+  ],
+  "matter_overlay": {
+    "rule": "Matter links show source-controlled contact, routing, proceeding or act. They do not imply office-wide or personal knowledge beyond the cited source.",
+    "offices": {
+      "PD-MF-OFF-0002": [
+        "E.G. 745/2026"
+      ],
+      "PD-MF-OFF-0015": [
+        "E.G. 58/2026",
+        "REGAGE 2–3 Aug 2026 route"
+      ],
+      "PD-MF-OFF-0004": [
+        "E.G. 49/2026 / documented unit intervention"
+      ],
+      "PD-MF-OFF-0005": [
+        "E.G. 352/2025",
+        "REGAGE 2 Aug 2026 route"
+      ],
+      "PD-MF-OFF-0008": [
+        "DIP 2/2026",
+        "E.G. 112/2026"
+      ],
+      "PD-MF-OFF-0009": [
+        "DI 273/2013",
+        "DI 248/2018",
+        "DI 113/2022",
+        "DI 22/2026",
+        "Concurso 36/2012 calificación",
+        "DP 1901/2026 institutional participation"
+      ],
+      "PD-MF-OFF-0011": [
+        "GUB 86/2026 territorial referral",
+        "REGAGE 2–3 Aug 2026 route"
+      ],
+      "PD-MF-OFF-0010": [
+        "DIP 20/2026",
+        "E.G. 95/2026",
+        "Tenerife → Las Palmas remittal lane"
+      ]
+    }
   }
 }

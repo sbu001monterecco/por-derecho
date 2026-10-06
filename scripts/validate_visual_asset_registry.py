@@ -17,6 +17,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "assets" / "visual-asset-registry.json"
+SUPPLEMENTAL_POLICY_PATH = ROOT / "assets" / "data" / "named-person-visual-control-v1.json"
 ACTORS_DIR = ROOT / "assets" / "actors"
 COMPOSITES_DIR = ROOT / "assets" / "composites"
 
@@ -78,6 +79,13 @@ def main() -> int:
 
     registered_paths: dict[str, str] = {}
     canonical_names: dict[str, str] = {}
+    supplemental_paths: dict[str, dict[str, Any]] = {}
+    if SUPPLEMENTAL_POLICY_PATH.is_file():
+        supplemental = load_json(SUPPLEMENTAL_POLICY_PATH)
+        for actor_key, row in supplemental.get("canonical_jtp_actor_sources", {}).items():
+            path_value = row.get("path")
+            if isinstance(path_value, str) and path_value:
+                supplemental_paths[path_value] = {"actor": actor_key, **row}
 
     for asset_id, entry in assets.items():
         if not isinstance(entry, dict):
@@ -167,7 +175,20 @@ def main() -> int:
                 continue
             rel = path.relative_to(ROOT).as_posix()
             if rel not in registered_paths:
-                errors.append(f"Unregistered named-person image: {rel}.")
+                row = supplemental_paths.get(rel)
+                if not row:
+                    errors.append(f"Unregistered named-person image: {rel}.")
+                    continue
+                raw = path.read_bytes()
+                expected_blob = row.get("git_blob_sha1")
+                expected_sha256 = row.get("sha256")
+                if expected_blob and git_blob_sha(path) != expected_blob:
+                    errors.append(f"Supplemental named-person blob lock mismatch: {rel}.")
+                    continue
+                if expected_sha256 and hashlib.sha256(raw).hexdigest() != expected_sha256:
+                    errors.append(f"Supplemental named-person SHA-256 mismatch: {rel}.")
+                    continue
+                registered_paths[rel] = "supplemental:" + str(row.get("actor"))
 
     # Composite slot maps are identity contracts.
     if COMPOSITES_DIR.is_dir():
@@ -209,7 +230,7 @@ def main() -> int:
             continue
         for match in ACTOR_REFERENCE_RE.finditer(text):
             rel = f"assets/actors/{match.group(1)}"
-            if rel not in registered_paths:
+            if rel not in registered_paths and rel not in supplemental_paths:
                 errors.append(
                     f"{path.relative_to(ROOT)} references unregistered actor asset {rel}."
                 )

@@ -1,0 +1,86 @@
+{
+  "schema": "por-derecho.protective-insolvency-origin-role-reversal.v1",
+  "control_id": "PD-PROTECTIVE-ORIGIN-ROLE-REVERSAL-20260925-01",
+  "effective_date": "2026-09-25",
+  "status": "CANONICAL_ATTRIBUTED_POSITION_ANALYTICAL_CONTROL",
+  "legal_boundary": {
+    "formal_calificacion_is_debtor_centred_statutory_mechanism": true,
+    "formal_calificacion_not_automatically_transferable_to_judge_or_third_party": true,
+    "criminal_professional_civil_judicial_routes_remain_separate": true
+  },
+  "protective_origin": {
+    "acquisition_window": "2011-12_to_2012-01",
+    "viability_plan": "2012-02-28",
+    "mortgage_execution": "EH_90_2012",
+    "auction_schedule_date": "2012-05-15",
+    "auction_count": 158,
+    "scheduled_auction": "2012-06-22",
+    "insolvency_filing_sequence": [
+      "2012-06-01 filing cover",
+      "2012-06-04 court entry",
+      "2012-06-06 declaration"
+    ],
+    "declaration_assets_eur": 21603513.82,
+    "declaration_liabilities_eur": 10186394.72,
+    "asset_surplus_does_not_prove_legal_solvency": true,
+    "timing_classification": "TIME_CRITICAL_DEFENSIVE_MEASURE"
+  },
+  "gil_attributed_position": [
+    "protective filing to contain lender execution and preserve value",
+    "broader economic view was positive net patrimony and positive hotel trading",
+    "project perimeter put capital/funding/work in rather than extracted value",
+    "continuous objective was to end/narrow/overcome insolvency through restructuring, recapitalisation, refinancing, operator, sale or funded exit",
+    "later causal attribution against Gil/LPB/Pink should be tested against acts of adverse private actors, representatives, the Insolvency Administrator and judicial acts where separately sourced"
+  ],
+  "proof_controls": {
+    "money_in_never_money_out": "ATTRIBUTED_REQUIRES_COMPLETE_LEDGER",
+    "positive_hotel_trading": "ATTRIBUTED_REQUIRES_PERIOD_DATASET",
+    "economic_solvency_broader_sense": "ATTRIBUTED_WITH_BALANCE_SHEET_SUPPORT_LEGAL_LIQUIDITY_TEST_SEPARATE",
+    "rescue_attempts": "SOURCE_CONTROLLED_MULTIPLE_ROUTES_COMPLETION_CONDITIONAL",
+    "other_actor_causation": "ACTOR_SPECIFIC_SOURCE_BRIDGE_REQUIRED"
+  },
+  "causal_lanes": [
+    "MONTELANZA_MOLINA_DISSIDENT_ORIGIN_AND_REPRESENTATIVES",
+    "CAM_ACOSTA_MATOS_PRIVATE_ACTOR_CONVERGENCE",
+    "INSOLVENCY_ADMINISTRATOR",
+    "JUDICIAL_ACTS"
+  ],
+  "non_transfer_rules": [
+    "functional_convergence_is_not_legal_identity",
+    "relationship_is_not_participation",
+    "benefit_is_not_procurement_or_intent",
+    "adverse_decision_is_not_crime",
+    "chronology_is_not_causation",
+    "institutional_notice_is_not_personal_knowledge"
+  ],
+  "mandatory_reviews": [
+    "MONEY_IN_MONEY_OUT_LEDGER",
+    "2012_LENDER_EXECUTION_AND_CURE_LEDGER",
+    "2012_2018_POSITIVE_AGENCY_RESCUE_EXIT_CHRONOLOGY",
+    "ACTOR_RESPONSE_TO_EACH_RESCUE_ROUTE",
+    "LOSS_CAUSATION_DECOMPOSITION",
+    "CALIFICACION_ROLE_REVERSAL_MATRIX"
+  ],
+  "outcome_states": [
+    "PROJECT_POSITION_SUPPORTED",
+    "PROJECT_POSITION_SUPPORTED_WITH_LIMITS",
+    "PROJECT_POSITION_NARROWED",
+    "PROJECT_POSITION_CONTRADICTED",
+    "OTHER_ACTOR_CAUSATION_SUPPORTED",
+    "MULTI_CAUSAL",
+    "CAUSATION_OPEN",
+    "FORMAL_CALIFICACION_SCOPE_ONLY",
+    "SEPARATE_CRIMINAL_OR_PROFESSIONAL_ROUTE_REQUIRED"
+  ],
+  "unfinished_user_qualification": {
+    "exists": true,
+    "literal_start": "but — and here's a qualification — we still...",
+    "completion_known": false,
+    "rule": "DO_NOT_INFER_COMPLETION"
+  },
+  "official_comparators": [
+    "BOE TRLC arts. 445 and 455",
+    "UK Insolvency Service director-investigation guidance",
+    "UK Insolvency Service insolvency-practitioner complaints and sanctions"
+  ]
+}

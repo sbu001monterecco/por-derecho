@@ -648,7 +648,7 @@
         "NAT-FIS-004"
       ],
       "competent_organ": "PD-SP-I-0030",
-      "procedural_state": "ARCHIVED_26_AUGUST_2026_REPOSICION_PREPARED_NOT_VERIFIED_FILED",
+      "procedural_state": "ARCHIVED_26_AUGUST_2026; REPOSICION_FILED_21_SEPTEMBER_2026; REPOSICION_DISMISSED_29_SEPTEMBER_2026; ADMINISTRATIVE_ROUTE_EXHAUSTED; SUPREME_COURT_CONTENTIOUS_ROUTE_IDENTIFIED",
       "related_master_register_ids": [
         "GC-FIS-013",
         "GC-FIS-014",
@@ -660,9 +660,17 @@
       "identity_sources": [
         "REGAGE26e00070235775",
         "evidence/fiscalia/2026/2026-08-26_FGE_INSPECCION_EG_745_2026_METADATA.json",
-        "evidence/fiscalia/2026/MINISTERIO_FISCAL_WIDER_MATTER_EG745_UNITARY_EVIDENCE_ACTION_DIGEST_31AUG2026.md"
+        "evidence/fiscalia/2026/MINISTERIO_FISCAL_WIDER_MATTER_EG745_UNITARY_EVIDENCE_ACTION_DIGEST_31AUG2026.md",
+        "REGAGE26e00082068814 — reposición filed 21 September 2026 with nine linked annex deliveries",
+        "29 September 2026 E.G.745 reposición dismissal decree, notified by email 1 October 2026",
+        "PD-MF-MASTER-DOSSIER-20261001-01"
       ],
-      "identity_boundary": "Exact Inspection file, registered source and archive act only. A prepared reposición is not a filed appeal. The decision and production gaps do not by themselves establish bad faith, obstruction, coordination, prevarication or criminality."
+      "identity_boundary": "Exact Inspection file and controlled archive/reposición sequence only. The 29 September decree ends the administrative route and identifies Supreme Court contentious-administrative review. This identity/status does not establish bad faith, obstruction, coordination, prevarication or criminality, and does not establish a separate disposition of the 20 September DP1901 preservation communication.",
+      "open_evidence": [
+        "complete authenticated E.G.745 administrative file and index as transmitted in judicial review",
+        "separate substantive treatment, if any, of REGAGE26e00082033336 dated 20 September 2026",
+        "signed 29 July 2026 DP1901 Fiscal report, author, assignment, corpus, reasoning and visado"
+      ]
     },
     {
       "id": "PD-SP-R-0035",

@@ -1,3 +1,7 @@
+> **Operative-language rule — PD-OPERATIVE-LANGUAGE-20260927:** current authorised work is described as an active programme at its evidenced stage. Read [governance/OPERATIVE_ACTION_LANGUAGE_AND_EVIDENCE_STATE_27SEP2026.md](governance/OPERATIVE_ACTION_LANGUAGE_AND_EVIDENCE_STATE_27SEP2026.md). Active does not mean sent, filed, ordered, deployed or implemented; preserve historical source words and disclose blocked gates.
+
+> **Canonical capital-workspace Drive reference — ^AW-SR-MR-SRLN-2026-DRIVE:** for ^AW-SR-MR-SRLN-2026, Montaña Roja acquisition/development/funding, HoldCo and SRLN-2026 work, read [`ops/AW_SR_MR_SRLN_2026_DRIVE_REFERENCE.json`](ops/AW_SR_MR_SRLN_2026_DRIVE_REFERENCE.json) first. Resolve the single existing private folder through its private GitLab resolver and read `00_START_HERE`. Verify current versions, update existing file IDs, and never create a competing canonical folder. This is a storage/workspace alias, not a CAEPR identity or evidence-status marker.
+
 # Por Derecho repository stewardship rules
 
 These rules apply to every human or automated change in this repository. They preserve the public record; they do not turn allegations into findings.
@@ -662,3 +666,133 @@ Whenever Francisco de Borja Rodríguez-Batllori Laffitte, the Administrador Conc
 - Shared evidence may connect removal, remuneration, criminal, professional-interference and appellate lanes without procedurally merging them. DP 1956 remains the actor-specific AC criminal route; DP 1901 is cross-evidence only.
 - For counsel/professional claims, apply both `PD-LAW-TRUTH-20260922-01` and the relevant AC claim family, especially `AC-CLM-011`.
 - Public pages must retain bidirectional links between the AC hub, R33, separation/remuneration, DP 1956 and the controlled claim register.
+
+
+## 15. Human story / AI legal recovery narrative — mandatory public-interest rule
+
+Whenever a task explains Gil Marer's lived experience, Por Derecho's AI contribution,
+public-interest support, OpenAI/research significance, LinkedIn/social storytelling,
+book/documentary narrative or the relationship between AI and the Sun Park recovery,
+read and apply **PD-GOV-HUMAN-AI-20260924-01** in
+`governance/HUMAN_STORY_AI_LEGAL_RECOVERY_NARRATIVE_PROTOCOL_24SEP2026.md`.
+
+- Do not reduce the matter to technology, case numbers or a generic corruption narrative.
+  The evidence layer answers **what happened and how we know**; the human layer must also
+  explain **what it was like to live through it, what was at stake and why AI became necessary**.
+- Use concrete dated scenes. The canonical June-2018 anchor is
+  **6-Jun lease/annex → 7-Jun alleged material-control event → 12-Jun conditional binding offer
+  → 13-Jun reported presentation of the funded exit to judge and Insolvency Administrator**.
+  This sequence does not by itself prove sabotage, criminal participation, causation or closing.
+- Gil may describe the lived experience as feeling like **"one person against the local world"**.
+  Treat that as resource/information/institutional asymmetry, never as proof of a collective
+  conspiracy or inherited guilt.
+- The preferred analytical concept is **institutional convergence failure**: several normally
+  corrective layers become simultaneously disputed, fragmented or incomplete. Identify each
+  actor, office, act, date, source, lawful alternative and adverse outcome separately.
+- Strong public prose must preserve adverse evidence, including the 2018 provisional criminal
+  dismissal/appellate confirmation and other material adverse outcomes where relevant.
+- Prefer first-person language for Gil's lived experience; never invent emotions, dialogue,
+  motives or sensory detail.
+- Use names only when necessary to understand a sourced act/capacity. Prefer roles/anonymisation
+  where naming adds heat without evidential value. Anonymisation must never merge distinct actors.
+- AI is **a second pair of eyes, not a judge**. Its role is long-horizon memory, contradiction
+  detection, provenance, identity/capacity separation, correction propagation, adverse-evidence
+  preservation, bilingual/cross-jurisdictional comparison and anti-fragmentation.
+- The controlling AI self-correction test is:
+  **make it progressively harder for anyone — including Gil Marer — to maintain a proposition
+  that the evidence does not support.**
+- Any grant, credits, sponsorship, professional contribution or recoverable support must support
+  capacity to test the record, not purchase a conclusion. Preserve:
+  **Help the capacity. Do not buy the answer.**
+
+## PD-GOV-CRC — CONSEQUENCE-RISK COMMUNICATIONS
+
+For every task that reads, scans, summarizes, routes, preserves or acts on incoming/outgoing communications, apply `.github/governance/CONSEQUENCE_RISK_COMMUNICATION_CONTROL_25SEP2026.md` and `assets/data/consequence-risk-control-v1.json`.
+
+A material communication is not complete because it was opened, marked read, summarised, indexed, committed or discussed. Test whether failure to notice, acquire, understand, preserve, route or act could cause material prejudice. Where yes, keep a persistent consequence-risk alert through explicit acknowledgement, disposition and verified action or verified no-action closure.
+
+Mandatory special cases:
+- official notice with underlying content not yet acquired → `CONTENT_ACQUISITION_REQUIRED`;
+- operative attachment not reviewed → alert remains open;
+- timing/service ambiguity → `DEADLINE_OR_SERVICE_DATE_UNRESOLVED`;
+- material outbound request/promised response → dependency object;
+- bounce/routing failure → reopen underlying matter;
+- connector/CI/quota/host-parity failure → `CONTROL_SYSTEM_DEGRADED`.
+
+This control never authorises an email, filing, appeal, payment, publication or third-party contact. External acts still require their controlling authority gate. Raw mailbox content and private source locators remain outside public Git.
+
+## PD-GOV-ANS-COLOR — ANSWER-STATUS TRAFFIC LIGHT
+
+Apply `PD-CHATGPT-ANSWER-COLOR-20260927-01` in
+`.github/governance/CHATGPT_ANSWER_STATUS_TRAFFIC_LIGHT_27SEP2026.md` and
+`assets/data/chatgpt-answer-status-traffic-light-v1.json`.
+
+Every substantive Por Derecho / Project Sun Rock / AWESWELL response that reports,
+assesses or changes task state must visibly show the relevant operational status
+near the start of the answer: **🟢 GREEN**, **🟠 AMBER**, or **🔴 RED**. Do not
+leave status implicit in prose. When components differ, color each component and
+use the conservative overall aggregation: any RED → overall RED; otherwise any
+AMBER → overall AMBER; all in-scope components GREEN → overall GREEN. GREEN
+requires verification appropriate to the claim; unavailable verification defaults
+to AMBER unless a RED trigger is known.
+
+For every continuity / preservation / deletion-safety / readiness audit, the colour rule is stricter: near the start show an explicit **overall operational/readiness colour** plus a **component-colour table/block** for every material in-scope system/workstream, and repeat the same colour summary in any durable audit artifact. A failed in-scope CI/pipeline/control is RED; an unresolved non-blocking dependency is AMBER; verified completion is GREEN only with claim-appropriate verification. Prose-only continuity audits are non-compliant.
+
+This status is operational/readiness only and must never imply guilt, legal merit,
+evidential weight or the truth of an allegation. It is separate from the thread
+deletion-safety sentinel below; show both when both are applicable.
+
+## PD-GOV-TDS — THREAD DELETION-SAFETY SENTINEL
+
+Apply `PD-THREAD-SENTINEL-20260925-01` in `.github/governance/THREAD_DELETION_SAFETY_SENTINEL_25SEP2026.md` and `assets/data/thread-deletion-safety-sentinel-v1.json` to every substantive Por Derecho / Project Sun Rock thread.
+
+Every substantive assistant response must end with exactly one compact thread-safety cue:
+
+- `🟢 THREAD — safe to delete`
+- `🟠 THREAD — preservation pending · <short reason>`
+- `🔴 THREAD — do not delete · <short blocker>`
+
+A new substantive thread defaults to ORANGE until current evidence supports another state. RED overrides ORANGE whenever deletion would cause material loss, pause/orphan an active automation/task, lose the only usable source/artifact/recovery instruction, or interrupt an external action whose receipt/state is not preserved elsewhere. GREEN requires independent reconstructability, durable propagation/readback, no chat-only material and no chat-bound active operation.
+
+The cue is not proof and does not replace the universal deletion-safety protocol. Recompute it after material source, repository, Drive, automation, filing/send/publication or preservation-state changes. If verification is unavailable, remain ORANGE unless a RED trigger is known. Do not omit the cue merely because the user did not ask about deletion safety.
+
+## Protective insolvency origin and causal role-reversal lens
+
+For every material analysis of Concurso 36/2012 origin, Calificación causation, alleged debtor misconduct, estate deterioration, liquidation, asset/income displacement or recovery, apply `governance/PROTECTIVE_INSOLVENCY_ORIGIN_ROLE_REVERSAL_25SEP2026.md` and `assets/data/protective-insolvency-origin-role-reversal-v1.json`.
+
+- Do not treat entry into insolvency as a presumption that the incoming shareholder/management perimeter caused the economic harm.
+- Start from the verified 2012 lender-enforcement / auction / defensive-filing sequence and keep balance-sheet net asset value separate from the historical liquidity-based insolvency test.
+- Retrieve positive-agency evidence with the same diligence as adverse evidence: viability, creditor arrangement, recapitalisation, refinancing, operator, sale and funded-exit work.
+- Treat `money in, never money out` as an auditable attributed proposition until the complete payer→recipient→instrument→bank debit/credit→accounting→ultimate-use ledger is reconstructed.
+- For every adverse Calificación proposition, run the mirror question: which actor or event actually caused, aggravated, prevented cure of, benefited from or failed to mitigate the alleged loss?
+- Keep Montelanza/Molina-linked dissidents/representatives, the later Acosta Matos/CAM perimeter, the Insolvency Administrator and judicial actors legally and evidentially distinct. Functional convergence never transfers knowledge, intent or liability.
+- Formal `calificación culpable` is not a free-standing guilt label for judges or unrelated third parties. Keep formal insolvency classification, criminal liability, professional discipline, civil liability and judicial accountability on their correct routes.
+- Preserve the strongest contrary evidence, including genuine debtor-side failures if proved. Role reversal is a test, not a predetermined result.
+
+
+## PD-GOV-UCF-INTAKE — ALWAYS-ON UNITARY PROSECUTORIAL INTAKE
+
+Apply `PD-CHATGPT-UCF-INTAKE-20260925-01` from `.github/governance/CHATGPT_UNITARY_PROSECUTORIAL_INTAKE_GATE_25SEP2026.md` to every substantive Por Derecho source review.
+
+- One evidence graph; multiple legally distinct outputs.
+- Do not answer a material source as an isolated civil, insolvency, accounting or regulatory item when it changes another track.
+- Run backward genealogy and forward propagation before finalising significance.
+- Run actor × capacity × date and legal-person/body → officeholder resolution.
+- Run source-independence and same-origin deduplication before describing corroboration.
+- Run numeric genealogy on material debt, credit, valuation, payment, bid, funding and income figures.
+- Run state-transition alarms, including disputed→recognised, quantified→contingent→requantified, private actor→institutional label, creditor→owner/controller, notice→adoption, meeting validity→debt validity and later title→earlier authority.
+- Criminal/prosecutorial first means element-first: actor, capacity, act/omission, authority, alleged false/invalid premise, knowledge, intent, use, recipient, effect, causation, benefit/harm, contrary explanation and decisive proof.
+- Preserve the principal's direct attributed criminal position strongly, but never convert it into adjudicated guilt or use an offence label to upgrade evidence.
+- Every material correction, favourable source and adverse source must propagate both NEW→OLD and OLD→NEW.
+- ChatGPT/account memory is retrieval assistance only; current primary sources and current repository controls govern.
+- Before using GitLab as a control source, read `ops/CHATGPT_CROSS_HOST_CONTROL_MANIFEST.json`; current GitHub/GitLab bootstrap blobs are not presumed identical.
+- For Community fees/debt/vote cases, apply both `PD-COMMUNITY-DEBT-ROLE-REVERSAL-20260925-01` and `PD-COMMUNITY-COURT-COMPLETENESS-20260925-01`.
+
+
+
+
+## Universal material-workspace checkpoint enforcement — 2 October 2026
+
+For every in-scope substantive matter, recover its existing ID in `data/workspace-register-v1.json` and current subject/private-custody controls; checkpoint material source, decision, correction, artifact and failure changes during work. Apply the existing PD-AWP/PD-WCH/CWR/digest/ECP stack, not competing continuity registers. New runtime checkpoints require `action_ledger`, bounded `coverage` and dated `host_availability`; public-summary export additionally requires recorded approval bound to the exact summary hash. See `docs/WORKSPACE_PERSISTENCE_RUNBOOK.md` and `examples/workspace-checkpoint.example.json`. Preserve historical event bytes, contrary evidence, supersession and dependency-review links.
+
+Public registers carry neutral workspace aliases and approved derivatives; private evidence, provider locators, privileged advice, UK strategy and unsent drafts remain private. Governance success is not filing, legal readiness, corpus completeness, host parity or deployment. The rule covers registered and newly recognised in-scope workspaces while preserving the unrelated-task boundary; no unavailable universal ChatGPT hook is claimed.

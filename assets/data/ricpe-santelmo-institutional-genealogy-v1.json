@@ -60,6 +60,13 @@
       "type": "person",
       "status": "DOCUMENTED-WITH-IDENTITY-CAUTION",
       "note": "RICPE governance / CAM-Sun Park project relationship must remain actor- and source-specific."
+    },
+    {
+      "id": "PERSON-JAVIER-RODRIGUEZ-BATLLORI",
+      "name": "Francisco Javier Rodríguez-Batllori Laffitte",
+      "type": "person",
+      "status": "DOCUMENTED",
+      "note": "BORME professional-partner identity; RSM announcement uses Javier Rodríguez-Batllori Laffitte. Controlled 2018 investigation report p.28 identifies him as the AC’s brother; no third brother established."
     }
   ],
   "events": [
@@ -91,6 +98,34 @@
         "the unnamed ‘abandoned complex in Lanzarote’ was Sun Park",
         "professional proximity establishes conflict, coordination or wrongdoing"
       ]
+    },
+    {
+      "id": "EVENT-SANTELMO-2018-09-04",
+      "date": "2018-09-04",
+      "date_kind": "registry_entry",
+      "publication_date": "2018-09-11",
+      "label_es": "Nombramiento y cambio de administradores",
+      "label_en": "Partner appointment and administrator changes",
+      "status": "DOCUMENTED-PRIMARY",
+      "source_url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2018-175-35",
+      "entries": [
+        "371214",
+        "371215"
+      ],
+      "core": "Francisco Javier appointed professional partner; receives 167 shares from Lorenzo Sánchez Iglesias. Francisco de Borja and Eduardo Sánchez cease as joint administrators; this does not mean the AC ceased to be a partner."
+    },
+    {
+      "id": "EVENT-SANTELMO-2024-07-03",
+      "date": "2024-07-03",
+      "date_kind": "registry_entry",
+      "publication_date": "2024-07-10",
+      "label_es": "Transmisión de 500 participaciones",
+      "label_en": "Transfer of 500 shares",
+      "status": "DOCUMENTED-PRIMARY",
+      "source_url": "https://www.boe.es/borme/dias/2024/07/10/pdfs/BORME-A-2024-132-35.pdf",
+      "entry": "308341",
+      "printed_page": 32821,
+      "core": "Francisco de Borja transfers 500 shares to Francisco Javier; revocation of the former as professional partner. Underlying transaction effective date is not inferred from registration."
     }
   ],
   "relationships": [
@@ -124,7 +159,15 @@
       "to": "ENT-SAN-TELMO",
       "relationship": "formal professional/shareholding/economic relationship described in the controlled 2021/2024 source chronology",
       "visual": "double",
-      "status": "DOCUMENTED-IN-CONTROLLED-FILING-PRIMARY-CORPORATE-SOURCE-QUEUED"
+      "status": "DOCUMENTED-IN-CONTROLLED-FILING-PRIMARY-CORPORATE-SOURCE-QUEUED",
+      "source_completion_20260927": {
+        "status": "PRIMARY-CORPORATE-ENTRIES-RECOVERED",
+        "events": [
+          "EVENT-SANTELMO-2018-09-04",
+          "EVENT-SANTELMO-2024-07-03"
+        ],
+        "remaining": "Complete historical member/power/deed chain; records do not alone prove knowledge or coordination."
+      }
     },
     {
       "id": "REL-SANTELMO-EVENT-2021",
@@ -157,6 +200,24 @@
       "relationship": "professional-team integration/incorporation, 2024",
       "visual": "solid-limited",
       "status": "DOCUMENTED-INTEGRATION-LEGAL-MECHANISM-NOT-INFERRED"
+    },
+    {
+      "id": "REL-AC-JAVIER-SHARES-2024",
+      "from": "PERSON-AC-BORJA",
+      "to": "PERSON-JAVIER-RODRIGUEZ-BATLLORI",
+      "relationship": "500 San Telmo shares transferred",
+      "visual": "solid",
+      "status": "DOCUMENTED-PRIMARY",
+      "source_event": "EVENT-SANTELMO-2024-07-03"
+    },
+    {
+      "id": "REL-AC-JAVIER-BROTHERS",
+      "from": "PERSON-AC-BORJA",
+      "to": "PERSON-JAVIER-RODRIGUEZ-BATLLORI",
+      "relationship": "brothers as expressly identified in controlled 2018 investigation report p.28",
+      "visual": "solid-limited",
+      "status": "REPORTED-IN-CONTROLLED-INVESTIGATION",
+      "boundary": "Not a civil-registry certificate. No third brother at San Telmo established. No transfer of knowledge or liability by kinship."
     }
   ],
   "open_evidence": [
@@ -168,7 +229,12 @@
     {
       "id": "ST-GAP-02",
       "target": "Primary San Telmo partner/shareholding/corporate records through July 2024, including the stated 500 participaciones and transfer",
-      "reason": "Closes the exact legal/economic relationship instead of relying on a later controlled filing."
+      "reason": "Closes the exact legal/economic relationship instead of relying on a later controlled filing.",
+      "update_20260927": {
+        "status": "PARTIALLY-CLOSED",
+        "closed": "BORME 2018 appointments/administrator changes and July-2024 500-share transfer/professional-partner revocation",
+        "remaining": "Full historic member, power and deed chain; effective transaction dates where not specified."
+      }
     },
     {
       "id": "ST-GAP-03",
@@ -188,5 +254,6 @@
     "No direct Borja–Guerra professional relationship is currently established.",
     "The unnamed Lanzarote complex in the 2021 event is not to be labelled Sun Park without source closure.",
     "RSM's later 2024 integration of San Telmo does not create retrospective responsibility for earlier conduct."
-  ]
+  ],
+  "reconciled_at": "2026-09-27"
 }

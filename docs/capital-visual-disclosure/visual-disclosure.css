@@ -1,0 +1,24 @@
+/* Opt-in component only; no global website override. */
+.capital-disclosure {
+  --ink: #000000; --navy: #173b4d; --teal: #0d595b;
+  --gold: #9d7b42; --paper: #ffffff;
+  color: var(--ink); background: var(--paper);
+  font: 1rem/1.5 Arial, sans-serif; max-width: 70rem;
+  margin: auto; padding: clamp(1rem, 3vw, 2.5rem);
+}
+.capital-disclosure h1, .capital-disclosure h2 { color: var(--navy); }
+.capital-disclosure h3, .capital-disclosure a { color: var(--teal); }
+.capital-disclosure a { text-decoration: underline; }
+.capital-disclosure figure { margin: 1.5rem 0; break-inside: avoid; }
+.capital-disclosure img, .capital-disclosure svg { max-width: 100%; height: auto; }
+.capital-disclosure figcaption { font-size: 1rem; line-height: 1.45; margin-top: .7rem; }
+.capital-disclosure .proposed { border: 2px dashed var(--teal); }
+.capital-disclosure .proposed::before { content: 'PROPOSED — '; font-weight: bold; }
+.capital-disclosure .source-note { border-top: 2px solid var(--gold); padding-top: .65rem; }
+.capital-disclosure :focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
+@media print {
+  .capital-disclosure { max-width: none; padding: 0; font-size: 11pt; line-height: 1.4; }
+  .capital-disclosure h1, .capital-disclosure h2, .capital-disclosure h3 { break-after: avoid; }
+  .capital-disclosure figcaption { font-size: 10pt; }
+  .capital-disclosure p { widows: 3; orphans: 3; }
+}

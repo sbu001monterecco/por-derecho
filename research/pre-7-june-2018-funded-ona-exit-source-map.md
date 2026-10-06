@@ -1,5 +1,16 @@
 # Pre-7 June 2018 funded ONA exit — controlled source map
 
+<!-- PD-ONA-READINESS-7JUN-CANONICAL-20260926 -->
+## Controlling transaction-level readiness / 7 June 2018 interlock — 26 Sep 2026
+
+**Mandatory transaction-level rule.** By the June 2018 Las Palmas court/judge presentation involving Daniel Irigoyen, the Aweswell/LPB/Matkator/Sun Park case position is that the Article 176 exit was **closure-capable and execution-ready on an aggregate, multi-layered basis**. The package must be assessed cumulatively: the signed ONA operating package; bridge/private-credit alternatives; Stoneweg/Varia; EG/CR and other lender routes; Santander/bank replacement work; the Lagune/Elaia/Batipart €26m own-funds sale/backstop; Gesvalt and Expert-Witness work; Cuatrecasas DD, Article 176, consignation and security work; readiness to fund or consign the amount required against the *texto definitivo*; solvency/support material; and specialist insolvency/court-exit implementation.
+
+**Anti-downgrade rule.** A document-specific proof gap — including the absence in the controlled corpus of a countersigned copy of Irigoyen's engagement proposal, non-drawdown on one route, expiry of one offer or an unmet condition on one instrument — **must not be used as evidence that the aggregate funded-exit package was merely preliminary, speculative or unready**. Each constituent item keeps its exact maturity label: **signed direct instrument; issuer-labelled binding/conditional offer; term sheet/active negotiation; diligence/security preparation; institutional interest/outreach; preliminary verbal fallback; post-cutoff continuity; or not established/missing proof**.
+
+**7 June interlock.** The separate 7 June takeover dossier records forced/material access acts and the absence, in the controlled record, of an identified judicial possession order authorising a whole-hotel takeover. Gil Marer and the Aweswell/LPB-side case theory attribute the failure to consummate the funded exit **in full / 100%** to the **7 June 2018 takeover by force** and the lack or denial of effective judicial protection that followed, and allege that the ONA-led funded exit was deliberately sabotaged. That causation/intent proposition is an attributed litigation/investigative position unless and until established by competent adjudication. Contrary explanations and route-specific failures must still be searched and tested, but they must be tested against the **aggregate redundant package**, not used silently to relabel the package as undeveloped.
+
+**Mandatory cross-links:** `CONCURSO36_UNITARY_CRIMINAL_FIRST_GOVERNANCE.md` · `archive/evidence/CUATRECASAS_ONA_FUNDED_EXIT_CLOSEOUT_CONTROL_26SEP2026.md` · `research/pre-7-june-2018-funded-ona-exit-source-map.md` · `archive/evidence/ONA_FUNDED_EXIT_SABOTAGE_CHAIN_20260903.md` · `en/sun-park-takeover-7-june-2018/` / `es/toma-control-sun-park-7-junio-2018/`.
+
 **Repository:** `sbu001monterecco/por-derecho`  
 **Public pages:**  
 - English: `/en/pre-7-june-2018-funded-ona-exit/`  
@@ -38,6 +49,24 @@ By the close of 6 June 2018, the record does not prove an unconditional funding 
 The Stoneweg/Varia conditional offer of 12 June and the August bridge term sheet are **post-cutoff continuity**, not routes invented after 7 June and not proof of a 6 June closing.
 
 ---
+
+## Redundancy / lender-comfort architecture
+
+The pre-7-June record should not be reduced to a single prospective lender. Contemporaneous communications show an intentional risk-reduction package with several independent fallback layers:
+
+- **Bridge / private credit:** on 20 April Carlos Sanz told Cuatrecasas that the team would focus on three funds to whom the transaction had already been presented and which had shown interest: Ben Oldman, Avenue Capital and Mediterranean Capital. ONA's principals were being brought into the fund meetings to give operator/exit comfort. On 15 May Sanz told Cuatrecasas that Ben Oldman and Mediterranean had asked for greater visibility on their exit and that the Elaia/SOCIMI LOI was needed to move those routes forward. Separately, EG / CR Management term-sheet work was active in May; Stoneweg was engaged before the cutoff and later issued the 12-June binding conditional Varia offer.
+- **Avenue direct lender evidence:** the 18-Apr Cuatrecasas engagement proposal expressly identifies Avenue Capital as the lender in the potential Aweswell financing and scopes lender-side DD, financing/security documentation and conditions-precedent work. Direct Avenue emails on 20/23 Apr engage on the court-exit mechanics, including paying the recognised insolvency debt rather than merely bidding for the asset. On 8 May Avenue asked for legal-DD/court updates so it could move quickly and tested ONA downside economics, unit perimeter, facility sufficiency and refinancing value. This upgrades Avenue from reported interest to a direct active lender route, but does not prove final credit approval or drawdown.
+- **Bank replacement / refinancing:** on 10 May Carlos Sanz reported a positive discussion with Santander's structured-finance hotel/real-estate team. Santander was checking risk policy and, if satisfied, was described as ready to work in parallel to support the lender exit.
+- **Additional fallback capital:** the same 10-May record identified two HNW clients willing in principle to support the transaction with a bank if bank capacity did not cover the full requirement. This was expressly verbal/preliminary, not committed capital.
+- **Independent sale backstop:** Aweswell signed a 25-May preferential-acquisition right in favour of Lagune Hospitalidad, S.L. / Batipart Group, linked to bridge financing through Ben Oldman Partners or Mediterranean Capital Management and time-limited to six months from satisfaction of its stated conditions (subject to extension). The 30-May Lagune proposal offered EUR 26 million from own funds and stated that it was not subject to a financing condition. The proposal remained subject to due diligence, board approval, definitive sale documentation and its stated acceptance/timing mechanics.
+- **ONA facilitation:** Carlos Sanz's 18-May email said the preferential-acquisition letter should be coordinated with Nacho (ONA); on 28 May the duly signed Lagune right was sent to Nacho Barrau; and on 6 June Nacho transmitted the Lagune/Elaia LOI while warning that the purchaser was genuinely interested and that uncontrolled contact could prejudice the negotiation.
+- **Insolvency-counsel implementation:** 30–31 May correspondence records Cuatrecasas treating closure of the document Juan Tomás Parrilla was expected to present in the concurso as fundamental before the Stoneweg meeting; Carlos Sanz reported that the content had been agreed and presentation was expected ASAP. On 1 June Parrilla was also asked how to provide the fund interim security over the assets while the court processed conclusion of the concurso, alongside registry/DD and BOE issues. The exact contemplated filing, receipt and perfected interim-security instrument remain unproved.
+- **Independent lender-DD review:** on 28 May Cuatrecasas partner Iñigo de Luisa coordinated with Dentons in Madrid so Dentons could review Cuatrecasas's DD and provide independent feedback to EG. The record shows a deliberate second-review layer, while EG's own email makes clear that Dentons would not fully mobilise until the term-sheet/cost conditions were satisfied.
+- **Expert and valuation work:** Gesvalt's updated ECO valuation and Expert-Witness valuation/debt/economic notes were being prepared and circulated into the lender/adviser process. On 6 June the lender chain expected the signed operator contract, EUR 26m REIT/SOCIMI LOI, updated ECO valuation, full DD and term-sheet markup as one integrated information package.
+
+**Commercial interpretation:** the preferred owner outcome was not a sale. The sale route functioned as additional lender repayment comfort: bridge exit from the concurso first, then professional ONA operation and refinancing/replacement capital, with sale as a credible fallback if continuation or refinancing later failed.
+
+**Boundary:** this proves redundancy and risk mitigation, not that every route had final credit approval, definitive documentation or an immediately drawable facility.
 
 ## A. ONA / Clubotel operating package
 

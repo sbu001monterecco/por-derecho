@@ -1,0 +1,52 @@
+{
+  "schema": "por-derecho.old-sun-park-drive-census-public.v1",
+  "control_date": "2026-09-27",
+  "root_current_accessible_direct_children": 39,
+  "root_count_note": "Current provider census supersedes stale earlier count 41 for current accessible listing; no deletion inference without exact prior child-ID comparison.",
+  "folder_enumeration_state": "GREEN_ALL_DISCOVERED_NESTED_FOLDERS_DESCENDED",
+  "material_analysis_state": "AMBER",
+  "high_value_families": [
+    {
+      "family": "LPB refinance 2015",
+      "state": "TEXT_REVIEWED",
+      "boundary": "Draft subject to review/placeholders; contemplated terms are not execution proof."
+    },
+    {
+      "family": "Solos legal DD 2017",
+      "state": "TEXT_REVIEWED",
+      "boundary": "Limited due diligence for proposed acquisition; no completion inference."
+    },
+    {
+      "family": "TAXA pericial 2012",
+      "state": "TEXT_REVIEWED",
+      "boundary": "Technical source report; EUR291k is stated estimate requiring more precise measurement."
+    },
+    {
+      "family": "SAREB valuation analysis 2014",
+      "state": "TEXT_REVIEWED",
+      "boundary": "Source-authored valuation and causation analysis; not adjudicated."
+    },
+    {
+      "family": "Community accounts / tourist licence / planning filing / signed structuring",
+      "state": "PRESENT_CONNECTOR_IMAGE_ONLY_OR_EMPTY_TEXT",
+      "boundary": "Visual review required; empty extracted text is not absence."
+    },
+    {
+      "family": "FRB Bond / service agreements / financing models",
+      "state": "ENUMERATED_RECONCILIATION_OPEN"
+    },
+    {
+      "family": "Notas Simples / Luchy title notes",
+      "state": "ENUMERATED_RECONCILIATION_OPEN"
+    },
+    {
+      "family": "Additional Units plans",
+      "state": "ENUMERATED_RECONCILIATION_OPEN"
+    },
+    {
+      "family": "marketing/operating archives",
+      "state": "ENUMERATED_LOW_PRIORITY_UNLESS_CLAIM_DEPENDS"
+    }
+  ],
+  "private_drive_ids_excluded": true
+}

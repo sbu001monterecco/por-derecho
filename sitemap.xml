@@ -1327,4 +1327,16 @@
     <html:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/platform-integrity-evidence/" />
     <html:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/platform-integrity-evidence/" />
   </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/private-note-programme-administration/</loc><lastmod>2026-09-24</lastmod>
+    <html:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/private-note-programme-administration/" />
+    <html:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/administracion-programa-notas-privadas/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/private-note-programme-administration/" />
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/administracion-programa-notas-privadas/</loc><lastmod>2026-09-24</lastmod>
+    <html:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/administracion-programa-notas-privadas/" />
+    <html:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/private-note-programme-administration/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/private-note-programme-administration/" />
+  </url>
 </urlset>

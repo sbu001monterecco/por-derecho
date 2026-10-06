@@ -16,7 +16,14 @@
       "end_line": 12,
       "category": "CONTROL_DEFINITION",
       "label": "forbidden-form definition",
-      "allowed_literals": ["Oswell", "Oswell Limited", "Awesell", "Awswell", "Aweswel", "Aweswelll"],
+      "allowed_literals": [
+        "Oswell",
+        "Oswell Limited",
+        "Awesell",
+        "Awswell",
+        "Aweswel",
+        "Aweswelll"
+      ],
       "expected_matches": 6,
       "justification": "The line defines forms that the control rejects; it is not an alias or current assertion."
     },
@@ -26,7 +33,9 @@
       "end_line": 23,
       "category": "NEGATIVE_TEST",
       "label": "outbound rejection fixture",
-      "allowed_literals": ["Oswell Limited"],
+      "allowed_literals": [
+        "Oswell Limited"
+      ],
       "expected_matches": 1,
       "justification": "The workflow deliberately submits one forbidden value and requires the validator to reject it."
     },
@@ -36,7 +45,13 @@
       "end_line": 7,
       "category": "CONTROL_DEFINITION",
       "label": "recurrence catalogue",
-      "allowed_literals": ["Oswell", "Oswell Limited", "Awesell", "Awswell", "Aweswel"],
+      "allowed_literals": [
+        "Oswell",
+        "Oswell Limited",
+        "Awesell",
+        "Awswell",
+        "Aweswel"
+      ],
       "expected_matches": 5,
       "justification": "The line catalogues rejected generated forms; the separate OSWELL 426 S.L. token is handled only as the unrelated entity."
     },
@@ -46,7 +61,12 @@
       "end_line": 11,
       "category": "CONTROL_DEFINITION",
       "label": "memory-error catalogue",
-      "allowed_literals": ["Oswell", "Oswell Limited", "Awesell", "Awswell"],
+      "allowed_literals": [
+        "Oswell",
+        "Oswell Limited",
+        "Awesell",
+        "Awswell"
+      ],
       "expected_matches": 4,
       "justification": "The line explicitly defines transcription and template errors, not aliases."
     },
@@ -56,7 +76,10 @@
       "end_line": 49,
       "category": "LABELLED_CORRECTION_RECORD",
       "label": "immutable-mail correction event",
-      "allowed_literals": ["Oswell", "Oswell Limited"],
+      "allowed_literals": [
+        "Oswell",
+        "Oswell Limited"
+      ],
       "expected_matches": 2,
       "justification": "The line records which erroneous historical wording was corrected while preserving the sent originals."
     },
@@ -66,7 +89,9 @@
       "end_line": 53,
       "category": "LABELLED_CORRECTION_RECORD",
       "label": "stale-memory correction boundary",
-      "allowed_literals": ["Oswell"],
+      "allowed_literals": [
+        "Oswell"
+      ],
       "expected_matches": 1,
       "justification": "The line identifies a stale memory error that must be corrected or suppressed."
     },
@@ -76,7 +101,9 @@
       "end_line": 61,
       "category": "LABELLED_SOURCE_LITERAL",
       "label": "2016 transcript spelling",
-      "allowed_literals": ["Oswell"],
+      "allowed_literals": [
+        "Oswell"
+      ],
       "expected_matches": 4,
       "justification": "The text expressly labels these tokens as transcript spellings/candidates and prohibits silent correction of the quoted source."
     },
@@ -86,7 +113,9 @@
       "end_line": 47,
       "category": "LABELLED_SOURCE_LITERAL",
       "label": "appendix transcription literal",
-      "allowed_literals": ["Oswell"],
+      "allowed_literals": [
+        "Oswell"
+      ],
       "expected_matches": 1,
       "justification": "The line explicitly says the appendix transcribed the source using this erroneous form."
     },
@@ -96,7 +125,9 @@
       "end_line": 65,
       "category": "LABELLED_SOURCE_LITERAL",
       "label": "transcript derivative literal",
-      "allowed_literals": ["Oswell"],
+      "allowed_literals": [
+        "Oswell"
+      ],
       "expected_matches": 2,
       "justification": "The line quotes and classifies the transcription candidate without normalising the source."
     },
@@ -106,7 +137,9 @@
       "end_line": 132,
       "category": "LABELLED_SOURCE_LITERAL",
       "label": "evidence conclusion preserving transcription",
-      "allowed_literals": ["Oswell"],
+      "allowed_literals": [
+        "Oswell"
+      ],
       "expected_matches": 1,
       "justification": "The evidential conclusion expressly attributes the word to the transcription."
     },
@@ -116,29 +149,17 @@
       "end_line": 20,
       "category": "CONTROL_DEFINITION",
       "label": "forbidden-generated-alias catalogue",
-      "allowed_literals": ["Oswell", "Oswell Limited", "Awesell", "Awswell", "Aweswel", "Aweswelll", "AWESWELLL"],
+      "allowed_literals": [
+        "Oswell",
+        "Oswell Limited",
+        "Awesell",
+        "Awswell",
+        "Aweswel",
+        "Aweswelll",
+        "AWESWELLL"
+      ],
       "expected_matches": 7,
       "justification": "These values sit only in forbidden_generated_aliases; the actual aliases array is empty."
-    },
-    {
-      "path": "en/cuatrecasas-mandate-ric-continuity/index.html",
-      "start_line": 22,
-      "end_line": 22,
-      "category": "LABELLED_CORRECTION_RECORD",
-      "label": "public historical-error notice",
-      "allowed_literals": ["Oswell"],
-      "expected_matches": 1,
-      "justification": "The sentence explicitly labels the historical token as an error and denies alias status."
-    },
-    {
-      "path": "es/cuatrecasas-mandato-continuidad-ric/index.html",
-      "start_line": 22,
-      "end_line": 22,
-      "category": "LABELLED_CORRECTION_RECORD",
-      "label": "aviso público de error histórico",
-      "allowed_literals": ["Oswell"],
-      "expected_matches": 1,
-      "justification": "La frase identifica expresamente el término histórico como error y niega que sea alias."
     },
     {
       "path": "evidence/insolvency-36-2012/concurso-autos/full-text/R03-oposicion-del-administrador-concursal-a-la-separacion-redacted.md",
@@ -146,7 +167,9 @@
       "end_line": 99,
       "category": "LABELLED_SOURCE_LITERAL",
       "label": "redacted primary-source transcription",
-      "allowed_literals": ["Awswell"],
+      "allowed_literals": [
+        "Awswell"
+      ],
       "expected_matches": 1,
       "justification": "This is searchable text preserving the redacted source wording; altering it would corrupt source fidelity."
     },
@@ -156,7 +179,9 @@
       "end_line": 248,
       "category": "LABELLED_SOURCE_LITERAL",
       "label": "redacted primary-source transcription",
-      "allowed_literals": ["Awswell"],
+      "allowed_literals": [
+        "Awswell"
+      ],
       "expected_matches": 1,
       "justification": "This is searchable text preserving the redacted source wording; altering it would corrupt source fidelity."
     },
@@ -166,7 +191,20 @@
       "end_line": 28,
       "category": "CONTROL_DEFINITION",
       "label": "machine-readable forbidden-form catalogue",
-      "allowed_literals": ["Oswell", "Oswell Limited", "OSWELL", "OSWELL LIMITED", "Awesell", "Awesell Limited", "Awswell", "Awswell Limited", "Aweswel", "Aweswel Limited", "Aweswelll", "Aweswelll Limited"],
+      "allowed_literals": [
+        "Oswell",
+        "Oswell Limited",
+        "OSWELL",
+        "OSWELL LIMITED",
+        "Awesell",
+        "Awesell Limited",
+        "Awswell",
+        "Awswell Limited",
+        "Aweswel",
+        "Aweswel Limited",
+        "Aweswelll",
+        "Aweswelll Limited"
+      ],
       "expected_matches": 12,
       "justification": "The values are the fail-closed forbidden_generated_aliases set."
     },
@@ -176,7 +214,19 @@
       "end_line": 139,
       "category": "CONTROL_DEFINITION",
       "label": "E005 forbidden-generated-alias catalogue",
-      "allowed_literals": ["Oswell", "Oswell Limited", "Awesell", "Awesell Limited", "Awswell", "Awswell Limited", "Aweswel", "Aweswel Limited", "Aweswelll", "Aweswelll Limited", "AWESWELLL"],
+      "allowed_literals": [
+        "Oswell",
+        "Oswell Limited",
+        "Awesell",
+        "Awesell Limited",
+        "Awswell",
+        "Awswell Limited",
+        "Aweswel",
+        "Aweswel Limited",
+        "Aweswelll",
+        "Aweswelll Limited",
+        "AWESWELLL"
+      ],
       "expected_matches": 11,
       "justification": "The E005 record rejects these values and binds the legal person to company number 07716847."
     },
@@ -186,7 +236,20 @@
       "end_line": 29,
       "category": "CONTROL_DEFINITION",
       "label": "memory-governance forbidden-form catalogue",
-      "allowed_literals": ["Oswell", "Oswell Limited", "OSWELL", "OSWELL LIMITED", "Awesell", "Awesell Limited", "Awswell", "Awswell Limited", "Aweswel", "Aweswel Limited", "Aweswelll", "Aweswelll Limited"],
+      "allowed_literals": [
+        "Oswell",
+        "Oswell Limited",
+        "OSWELL",
+        "OSWELL LIMITED",
+        "Awesell",
+        "Awesell Limited",
+        "Awswell",
+        "Awswell Limited",
+        "Aweswel",
+        "Aweswel Limited",
+        "Aweswelll",
+        "Aweswelll Limited"
+      ],
       "expected_matches": 12,
       "justification": "The values are expressly forbidden as current names or aliases."
     },
@@ -196,7 +259,10 @@
       "end_line": 86,
       "category": "LABELLED_CORRECTION_RECORD",
       "label": "outbound correction event",
-      "allowed_literals": ["Oswell", "Oswell Limited"],
+      "allowed_literals": [
+        "Oswell",
+        "Oswell Limited"
+      ],
       "expected_matches": 2,
       "justification": "The event records the erroneous wording inherited by historical sent messages and the corrective response."
     },
@@ -206,7 +272,9 @@
       "end_line": 90,
       "category": "LABELLED_CORRECTION_RECORD",
       "label": "account-memory manual boundary",
-      "allowed_literals": ["Oswell"],
+      "allowed_literals": [
+        "Oswell"
+      ],
       "expected_matches": 1,
       "justification": "The field identifies the stale account-memory statement that must be removed or corrected."
     },
@@ -216,7 +284,9 @@
       "end_line": 6,
       "category": "CONTROL_DEFINITION",
       "label": "retrieval-only error tokens",
-      "allowed_literals": ["Oswell"],
+      "allowed_literals": [
+        "Oswell"
+      ],
       "expected_matches": 2,
       "justification": "The line expressly classifies both occurrences as retrieval-only errors, never aliases or current names."
     },
@@ -226,7 +296,9 @@
       "end_line": 22,
       "category": "LABELLED_SOURCE_LITERAL",
       "label": "preserved source filename",
-      "allowed_literals": ["AWESELL"],
+      "allowed_literals": [
+        "AWESELL"
+      ],
       "expected_matches": 1,
       "justification": "The token occurs inside the exact historical source filename in the evidence index; changing it would break provenance."
     },
@@ -236,7 +308,9 @@
       "end_line": 62,
       "category": "LABELLED_SOURCE_LITERAL",
       "label": "PWC appendix source spelling",
-      "allowed_literals": ["Oswell"],
+      "allowed_literals": [
+        "Oswell"
+      ],
       "expected_matches": 2,
       "justification": "The first occurrence is attributed to the appendix and the second expressly controls preservation of that source spelling."
     },
@@ -246,7 +320,9 @@
       "end_line": 25,
       "category": "CONTROL_DEFINITION",
       "label": "retrieval-error token list",
-      "allowed_literals": ["Oswell"],
+      "allowed_literals": [
+        "Oswell"
+      ],
       "expected_matches": 2,
       "justification": "The enclosing field classifies these values as retrieval errors that are not aliases."
     },
@@ -256,7 +332,9 @@
       "end_line": 742,
       "category": "LABELLED_SOURCE_LITERAL",
       "label": "preserved source filename",
-      "allowed_literals": ["AWESELL"],
+      "allowed_literals": [
+        "AWESELL"
+      ],
       "expected_matches": 1,
       "justification": "The token occurs inside the exact historical source filename and is retained solely to preserve provenance."
     }

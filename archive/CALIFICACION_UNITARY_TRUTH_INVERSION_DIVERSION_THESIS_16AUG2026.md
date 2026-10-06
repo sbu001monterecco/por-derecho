@@ -279,3 +279,22 @@ The two are reciprocal:
 
 - the thesis prevents fragmentation;
 - the serial audits prevent the thesis from becoming an unsupported slogan.
+
+
+## 25-Sep-2026 counter-Calificación / causal role-reversal control
+
+Gil Marer's attributed position is now stated explicitly: the Calificación narrative should be tested in reverse against the complete causation record. His contention is not merely that the adverse case was wrong; it is that the project-side perimeter entered under a lender-enforcement threat, used concurso as a protective mechanism, invested and restructured, repeatedly sought viability and funded exit, and that material deterioration or displacement should instead be traced actor-by-actor through adverse private actors, their representatives, the later CAM/Acosta Matos perimeter, the Insolvency Administrator and, where independently source-supported, judicial acts.
+
+This is **not** adopted as a finding that those actors legally receive the formal label `calificación culpable`. Formal Calificación has a statutory debtor-side perimeter. The project therefore uses **counter-Calificación** only as shorthand for a causal accountability test:
+
+`who inherited the problem → who injected/extracted value → who sought cure → who controlled cure conditions → who acted/omitted → who caused/aggravated loss → who benefited → who had a lawful alternative → what remains unproved`.
+
+Mandatory proof work:
+1. complete project-side money-in/money-out ledger;
+2. complete 2012–2018 viability/recapitalisation/refinancing/operator/sale/funded-exit chronology;
+3. loss decomposition by period and actor;
+4. proposition-by-proposition comparison of Calificación premise against positive-agency and contrary evidence;
+5. separate AC and judicial knowledge/action matrices;
+6. no transfer of knowledge/intent through the alleged Montelanza/Molina → Acosta Matos functional-convergence chain.
+
+The permitted result may be project position supported, narrowed, contradicted, multi-causal, another actor's contribution supported, or causation open. The method must be capable of clearing an adverse actor just as it can support a project allegation.

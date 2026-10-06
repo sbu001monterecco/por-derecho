@@ -1,0 +1,47 @@
+{
+  "schema": "por-derecho.meeting-point-portal-observation.v1",
+  "control_id": "PD-MP-DECANATO-20260928",
+  "parent_control_id": "PD-MP-FILING-CONTINUITY-20260927",
+  "recorded_on": "2026-09-28",
+  "filing_date": "2026-09-27",
+  "public_projection": true,
+  "source_id": "PD-MP-PORTAL-20260928-01",
+  "source_type": "PRESENTER_SUPPLIED_PRIVATE_AREA_TEXT",
+  "independent_authenticated_live_inspection": false,
+  "reconciliation_key": ["proceeding", "filing_date", "time_as_displayed", "court"],
+  "court": "Plaza Nº 3 del Tribunal de Instancia (Sección Mercantil), Las Palmas de Gran Canaria",
+  "displayed_status": "Aceptado en Decanato",
+  "status_color": "GREEN",
+  "status_color_scope": "Six displayed administrative acceptances, attributed to the supplied source; not judicial admission or independent portal authentication.",
+  "exact_acceptance_event_time": null,
+  "portal_categories": {
+    "357/2024": "Escrito de trámite Comunicación art. 5 bis Ley Concursal",
+    "93/2025": "Escrito de trámite Homologación de los acuerdos de refinanciación"
+  },
+  "entries": [
+    {"receipt_source_id": "PD-MP-REG-20260927-01", "proceeding": "357/2024", "time_as_displayed": "19:33", "displayed_status": "Aceptado en Decanato"},
+    {"receipt_source_id": "PD-MP-REG-20260927-02", "proceeding": "357/2024", "time_as_displayed": "19:56", "displayed_status": "Aceptado en Decanato"},
+    {"receipt_source_id": "PD-MP-REG-20260927-03", "proceeding": "357/2024", "time_as_displayed": "20:03", "displayed_status": "Aceptado en Decanato"},
+    {"receipt_source_id": "PD-MP-REG-20260927-04", "proceeding": "93/2025", "time_as_displayed": "20:07", "displayed_status": "Aceptado en Decanato"},
+    {"receipt_source_id": "PD-MP-REG-20260927-05", "proceeding": "93/2025", "time_as_displayed": "20:10", "displayed_status": "Aceptado en Decanato"},
+    {"receipt_source_id": "PD-MP-REG-20260927-06", "proceeding": "93/2025", "time_as_displayed": "20:14", "displayed_status": "Aceptado en Decanato"}
+  ],
+  "receipt_count": 6,
+  "matched_entry_count": 6,
+  "unmatched_meeting_point_entries": 0,
+  "excluded_other_proceeding_rows": {"proceeding": "1901/2026", "count": 3},
+  "remaining_status": {
+    "judicial_association_incorporation": "AMBER_UNVERIFIED",
+    "judicial_response": "AMBER_UNVERIFIED",
+    "clarification_93_2025": "PREPARED_NO_RECEIPT_IN_INSPECTED_RECORD",
+    "exact_court_held_attachment_bytes": "AMBER_UNVERIFIED"
+  },
+  "proof_boundary": "The supplied table does not establish standing, judicial admission, merits examination, service, referral, personal knowledge, a decision, a seventh clarification filing, or the actual contents of the final covering note. Displayed filing times are not acceptance timestamps.",
+  "continuity_record": "docs/meeting-point/MEETING_POINT_FILING_CONTINUITY_27SEP2026.md",
+  "preserved_baseline": "ops/continuity/MEETING_POINT_FILING_STATE_20260927.json",
+  "original_receipts_pdfs_and_fixed_archive_unchanged": true,
+  "new_court_filing_performed": false,
+  "email_sent": false,
+  "project_wide_ci_or_deployment_certified": false,
+  "private_custody_boundary": "Native receipts, private registration/verification identifiers, personal identifiers, raw private-area text and private source locators are excluded from this public projection."
+}

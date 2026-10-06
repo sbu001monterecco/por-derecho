@@ -1,0 +1,163 @@
+{
+  "schema": "por-derecho.meeting-point-filing-continuity.v1",
+  "control_id": "PD-MP-FILING-CONTINUITY-20260927",
+  "as_of_date": "2026-09-27",
+  "scope": "Receipt and preservation audit of the owner-led Meeting Point filing; not a new legal merits or PDF-content approval.",
+  "public_projection": true,
+  "current_document_pair": {
+    "document_1": {
+      "version": "v19",
+      "pages": 232,
+      "sha256": "d883a8f6062a9f66ce92798e381c91de2a45ab140c1b637e4243f8369f335671",
+      "delivery_parts": [
+        {
+          "part": 1,
+          "pages": 153,
+          "original_pdf_pages": "1-153",
+          "sha256": "d6c08904553caedada437e0c682c5b279f76b32db3814eb12369a866449c522c"
+        },
+        {
+          "part": 2,
+          "pages": 79,
+          "original_pdf_pages": "154-232",
+          "sha256": "229576531fdfd17f100d1860022325a4cfc73f55463bf5c3cfb4b3da2a7b6f51"
+        }
+      ]
+    },
+    "document_2": {
+      "version": "v8",
+      "pages": 226,
+      "sha256": "ba12a87d2bedc3d4efffb37b9ecbc3f6674363ccf417d271dba369a9908fa6aa"
+    }
+  },
+  "filing_status": "REGISTERED_BOTH_PROCEEDINGS_SIX_RECEIPTS",
+  "filing_status_color": "GREEN",
+  "proceedings": [
+    "357/2024",
+    "93/2025"
+  ],
+  "court": "Plaza Nº 3 del Tribunal de Instancia (Sección Mercantil), Las Palmas de Gran Canaria",
+  "receipt_sources": [
+    {
+      "source_id": "PD-MP-REG-20260927-01",
+      "proceeding": "357/2024",
+      "receipt_date": "2026-09-27",
+      "time_as_printed": "19:33",
+      "listed_material": "Document 1 v19, part 1/2",
+      "receipt_sha256": "227d12e5955ff2eca2fbcf1dfb2a17f8ceb6a3030e20a01fdcea849dc2b37772",
+      "state": "REGISTERED",
+      "native_source_custody": "Authorised private custody; exact receipt, registration and verification identifiers omitted from this public projection."
+    },
+    {
+      "source_id": "PD-MP-REG-20260927-02",
+      "proceeding": "357/2024",
+      "receipt_date": "2026-09-27",
+      "time_as_printed": "19:56",
+      "listed_material": "Document 1 v19, part 2/2",
+      "receipt_sha256": "55cf29fddbe1321ca8afbc1c4854e4cea6ba6a3ec5bfc1eb8704ae18167cad39",
+      "state": "REGISTERED",
+      "native_source_custody": "Authorised private custody; exact receipt, registration and verification identifiers omitted from this public projection."
+    },
+    {
+      "source_id": "PD-MP-REG-20260927-03",
+      "proceeding": "357/2024",
+      "receipt_date": "2026-09-27",
+      "time_as_printed": "20:03",
+      "listed_material": "Document 2 v8 and covering note",
+      "receipt_sha256": "bd643820015a2f2c62b3b1faa9fb2bd5385e940f39c9597537123079ab62d074",
+      "state": "REGISTERED",
+      "native_source_custody": "Authorised private custody; exact receipt, registration and verification identifiers omitted from this public projection."
+    },
+    {
+      "source_id": "PD-MP-REG-20260927-04",
+      "proceeding": "93/2025",
+      "receipt_date": "2026-09-27",
+      "time_as_printed": "20:07",
+      "listed_material": "Document 1 v19, part 1/2",
+      "receipt_sha256": "5fe5f842cf69501e15c561c5f1caa467c89a048b72315e782c9f482422107357",
+      "state": "REGISTERED",
+      "native_source_custody": "Authorised private custody; exact receipt, registration and verification identifiers omitted from this public projection."
+    },
+    {
+      "source_id": "PD-MP-REG-20260927-05",
+      "proceeding": "93/2025",
+      "receipt_date": "2026-09-27",
+      "time_as_printed": "20:10",
+      "listed_material": "Document 1 v19, part 2/2",
+      "receipt_sha256": "2825846f7d7c4b60935f4ef829169cd0718f33b13df87a9dec84d31efe50680a",
+      "state": "REGISTERED",
+      "native_source_custody": "Authorised private custody; exact receipt, registration and verification identifiers omitted from this public projection."
+    },
+    {
+      "source_id": "PD-MP-REG-20260927-06",
+      "proceeding": "93/2025",
+      "receipt_date": "2026-09-27",
+      "time_as_printed": "20:14",
+      "listed_material": "Document 2 v8 and covering note bearing the other proceeding reference",
+      "receipt_sha256": "ebff7ad898ce6ebc18abd2af412b28d7d3c4c830963604556b6e1ab1d1f6567d",
+      "state": "REGISTERED",
+      "native_source_custody": "Authorised private custody; exact receipt, registration and verification identifiers omitted from this public projection."
+    }
+  ],
+  "receipt_limits": [
+    "Receipt filenames and destinations establish listed registration; the portal-stored attachment bytes have not been independently downloaded and hash-matched.",
+    "Separate entries do not by themselves prove judicial association, incorporation, admission, examination or any decision on the merits.",
+    "No receipt for the prepared clarification has been supplied."
+  ],
+  "post_filing_dependencies": [
+    {
+      "id": "PD-MP-POSTFILE-20260927-01",
+      "state": "OPEN",
+      "color": "AMBER",
+      "owner": "presenter",
+      "action": "Obtain court confirmation of association/incorporation of all three entries in each proceeding.",
+      "verified_deadline": null
+    },
+    {
+      "id": "PD-MP-POSTFILE-20260927-02",
+      "state": "PREPARED_NOT_FILED_VERIFIED",
+      "color": "AMBER",
+      "owner": "presenter",
+      "action": "Resolve final 93/2025 covering-note filename discrepancy through the prepared clarification, preserving originals; retain any subsequent receipt.",
+      "verified_deadline": null
+    },
+    {
+      "id": "PD-MP-POSTFILE-20260927-03",
+      "state": "OPEN",
+      "color": "AMBER",
+      "owner": "presenter",
+      "action": "Preserve and review any court instruction, procedural response, access decision or required correction when actually received.",
+      "verified_deadline": null
+    }
+  ],
+  "historical_baseline_control": {
+    "path": "assets/data/meeting-point-prefiling-admission-control-v1.json",
+    "baseline": "Document 1 v10 / Document 2 v4",
+    "historical_state": "REVISE",
+    "retained_unchanged_in_scope": true,
+    "legacy_literal_checker_rerun": "BLOCKED on three exact-marker groups when applied to v19/v8; preserved as a limited historical checker result, not represented as a current merits or admission decision. No validator was weakened and no filed PDF was changed."
+  },
+  "continuity_record": "docs/meeting-point/MEETING_POINT_FILING_CONTINUITY_27SEP2026.md",
+  "private_custody_rule": "PD-GOV-002: repository contents are treated as public or potentially Pages-readable despite repository visibility. Native receipts, signed/privileged sources, private correspondence and exact private locators remain in authorised private Drive/Library custody.",
+  "supersession": "The 24-September v10/v4 baseline remains historically REVISE. It does not describe the later v19/v8 filing state.",
+  "thread_safety_status": "PRESERVATION_COMPLETE_RECOVERABLE",
+  "deployment_scope": "Repository continuity records only; no rendered website wording or deployment configuration changed.",
+  "private_preservation_bundle": {
+    "archive_sha256": "1ba719409726367285677bd78506ebdf1524b339daea065b3a364b66b3a40415",
+    "archive_bytes": 107339724,
+    "member_count": 43,
+    "manifest_sha256": "d3b6b08dc669eb913b86bb08001bac4b8451c799e6cb7a41b3fbd6c14a08db40",
+    "destination_verification": {
+      "library": "SAVED_VERIFIED",
+      "private_drive_core_documents": "SHA256_READBACK_VERIFIED",
+      "private_drive_full_bundle": "SHA256_RECONSTRUCTED_READBACK_VERIFIED",
+      "github": "MERGED_DEPLOYED_EXACT_READBACK_VERIFIED_PR_1992",
+      "gitlab": "MERGED_EXACT_READBACK_VERIFIED_MR_684"
+    },
+    "preservation_scope_color": "GREEN",
+    "proof_boundary": "Preservation verification does not establish identity of court-held attachment bytes, judicial association/incorporation, admission, examination, response, or any seventh clarification receipt."
+  },
+  "overall_operational_color": "AMBER",
+  "cross_system_preservation_status": "GREEN",
+  "cross_system_preservation_as_of": "2026-09-27"
+}

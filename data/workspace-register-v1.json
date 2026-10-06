@@ -1,10 +1,10 @@
 {
   "schema": "por-derecho.workspace-register.v1",
   "register_id": "PD-WS-REG-001",
-  "control_date": "2026-09-03",
+  "control_date": "2026-10-02",
   "status": "ACTIVE_RUNTIME_ENABLED_CONCURRENT_SAFE",
   "workspace_id_pattern": "PD-WS-YYYYMMDD-NNNN",
-  "default_workspace_id": "PD-WS-20260902-0001",
+  "default_workspace_id": "PD-WS-20261002-0001",
   "default_pointer_semantics": "MOST_RECENTLY_CHECKPOINTED_NOT_EXCLUSIVE",
   "governance": {
     "continuous_persistence": ".github/governance/AUTOMATIC_WORKSPACE_PERSISTENCE_ARCHITECTURE_01SEP2026.md",
@@ -305,7 +305,51 @@
         "master_row_reconciliation": "02-SEP_STALE_GAP_TEXT_SUPERSEDED_FOR_SOURCE_INTERPRETATION_FUTURE_DETERMINISTIC_REBUILD_REQUIRED"
       },
       "open_gap_state": "GLOBAL_HISTORIC_DOCKET_BACKFILL_OPEN_EXPLICIT_SOURCE_GAPS_REQUIRED",
-      "next_target_mode": "P0_GC_CIV_003_19FEB_5MAR_ARCHIVE_REQUEST_SERVICE_FINALITY_ONLY; NO_BROAD_REDISCOVERY"
+      "next_target_mode": "P0_GC_CIV_003_19FEB_5MAR_ARCHIVE_REQUEST_SERVICE_FINALITY_ONLY; NO_BROAD_REDISCOVERY",
+      "continuations": [
+        {
+          "control_date": "2026-10-02",
+          "scope": "E.G.745 / Ministerio Fiscal",
+          "canonical_control": "CHATGPT_START_HERE_FISCALIA_MASTER_01OCT2026.md",
+          "rule": "Read current subject control and private recovery manifest; preserve exact procedural state and separately controlled UK workspace. Unmerged reader repair remains explicit."
+        }
+      ]
+    },
+    {
+      "workspace_id": "PD-WS-20260927-0001",
+      "title": "AWESWELL LIMITED / Sun Rock / Montaña Roja Capital Programme + SRLN-2026",
+      "status": "ACTIVE",
+      "workspace_reference": "^AW-SR-MR-SRLN-2026",
+      "canonical_drive_reference": "^AW-SR-MR-SRLN-2026-DRIVE",
+      "storage_control_path": "ops/AW_SR_MR_SRLN_2026_DRIVE_REFERENCE.json",
+      "topic_keys": [
+        "AWESWELL_LIMITED",
+        "SUN_ROCK",
+        "MONTANA_ROJA",
+        "HOLDCO",
+        "ACQUISITION",
+        "DEVELOPMENT_FUNDING",
+        "SRLN_2026",
+        "FIRST_CAPITAL",
+        "SCALE_CAPITAL"
+      ],
+      "registration_basis": "Allocated against both current-main workspace registers on 27 September 2026. Owner-designated programme references remain stable aliases; the caret storage alias is not a CAEPR identity marker.",
+      "public_private_boundary": "Public alias and routing only; exact Drive locators, diligence material and investor records remain private.",
+      "continuation_rule": "Resolve the private canonical Drive reference, read 00_START_HERE and update existing file IDs. Never create a thread-specific canonical folder.",
+      "coverage_limit": "Current working set. Historical-source completeness and automatic cross-thread synchronization are not asserted."
+    },
+    {
+      "workspace_id": "PD-WS-20261002-0001",
+      "title": "UK private-prosecution continuity workspace",
+      "status": "IN_PROGRESS",
+      "handoff_path": "archive/UK_PRIVATE_PROSECUTION_2026_CONTINUITY_CONTROL_01OCT2026.md",
+      "topic_keys": [
+        "UK_PRIVATE_PROSECUTION_2026_CURRENT"
+      ],
+      "public_private_boundary": "Neutral public continuity pointer only. Source custody, privileged advice, count/defendant selection, legal strategy and unsent drafts remain private.",
+      "continuous_capture_mode": "CONNECTED_AGENTIC_CHECKPOINTING",
+      "continuation_rule": "Resolve UK_PRIVATE_PROSECUTION_2026_CURRENT through the authorised private custodian; retain HOLD/NOT FILE-READY and separate Spanish procedural routes.",
+      "coverage_limit": "Workspace existence/selection only; no complete-corpus, jurisdiction, legal-readiness or filing claim."
     }
   ],
   "registration_rule": "Create or recover a stable workspace ID for every substantive Por Derecho workspace when persistence-capable work begins. A workspace may span multiple ChatGPT threads; a ChatGPT thread may be superseded without changing the workspace ID.",

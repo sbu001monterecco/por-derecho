@@ -29,6 +29,13 @@ The public repository should answer:
 - **ProjectCos:** independently underwritten legal/project vehicles.
 - **Hotels:** asset and operating economics remain project-specific.
 
+### Foreign-investor preservation invariant
+
+The programme must also apply `ops/capital/AWESWELL_FOREIGN_INVESTOR_AND_CROSS_BORDER_PROTECTION_STANDARD_20260928.md`. AWESWELL LIMITED's documented UK HoldCo / foreign-investor position is a continuing governance and evidence-control objective. Montaña Roja and later Spanish investments should preserve all lawfully available foreign-investment registration, screening, corporate-separateness and cross-border protections while avoiding any representation that registration creates immunity, retroactive treaty protection, State backing or automatic Noteholder rights. Any restructuring, change of investor residence/control, transfer of the Spanish ProjectCo, material security grant or cross-collateralisation is an event-driven rights-review gate before implementation.
+The same control now governs the Programme's litigation, jurisdiction and rule-of-law disclosure: Spanish tutela judicial efectiva/right-of-defence safeguards, EU/ECHR scope boundaries, English/Spanish forum and enforcement analysis, and remedy/deadline preservation must be presented as legal protections and risks—not as credit support, immunity or a forecast of judicial outcome.
+For Spanish administrative/public-law matters, this now expressly includes Article 105–106 CE file/hearing/judicial-review protections and Ley 40/2015 patrimonial-liability controls, with annulment and compensation treated as separate remedies and no unestablished public-authority damages claim treated as value or collateral.
+
+
 ## 3. Two capital lanes
 
 ### Sponsor / platform capital
@@ -113,3 +120,15 @@ No public repository statement may imply:
 ## 12. Current operational instruction
 
 Future capital threads should first read this file, the capital response playbook, the private Master Principal Capital Providers Sheet and current Gmail where recipient-level truth is required. The 17-Sep handover remains historical evidence, not the current queue.
+
+## 13. Homepage visibility lock — 25 September 2026
+
+This is a controlling invariant for all future capital work:
+
+- **Do not place Institutional Capital / Capital Institucional in the homepage top navigation.**
+- **Do not place an institutional-capital CTA in the homepage hero.**
+- **Do not place a standalone institutional-capital promotional/status block on the homepage.**
+- The homepage must route **Future / Futuro to standalone pages** at `/en/future/` and `/es/futuro/`. Institutional capital must not be linked directly from the homepage; it is reached one level deeper from those Future pages.
+- The underlying `/en/institutional-capital/` and `/es/capital-institucional/` pages remain available and may continue to evolve within the existing disclosure and regulatory boundaries.
+- Any future capital thread or automation must preserve this invariant unless Gil Marer expressly changes it.
+- CI must fail closed if the homepage directly links institutional capital, if Future/Futuro reverts to an on-page scroll target, or if the standalone Future pages lose their controlled onward capital route.

@@ -1,0 +1,220 @@
+{
+  "schema": "por-derecho.community-debt-role-reversal-box.v1",
+  "control_id": "PD-COMMUNITY-DEBT-ROLE-REVERSAL-20260925-01",
+  "status": "PUBLIC_SAFE_CATEGORICAL_ATTRIBUTED_POSITION_CONTROL",
+  "source_cutoff": "2026-09-25",
+  "documented_mechanism": {
+    "acta_date": "2016-04-26",
+    "lpb_participation_pct": 72.976,
+    "total_present_or_represented_pct": 89.727,
+    "vote_eligible_pct": 11.039,
+    "accounts_2010_2015": "INCOMPLETE_AND_NOT_APPROVED_AS_RECORDED_IN_ACTA",
+    "quota_before_eur_approx": 171.89,
+    "quota_after_eur_approx": 22.26,
+    "retroactive_period": "2010-01_to_2015-12",
+    "arrears_after_recalculation": "ACTA_STATES_FELL_CONSIDERABLY",
+    "later_steps": [
+      "DEBT_BALANCES",
+      "CERTIFICATION",
+      "JUDICIAL_RECOVERY",
+      "GOVERNANCE_DECISIONS"
+    ],
+    "proof_ceiling": "The ACTA records the mechanism; it does not itself prove invalidity, fabrication, fraud or intent."
+  },
+  "ac_notice": {
+    "date": "2016-04-29",
+    "state": "DIRECT_NOTICE_OF_DISPUTE",
+    "propositions_notified": [
+      "LPB disputed Community debts as unreal",
+      "Community accounting documentation was said to be absent/incomplete",
+      "operator-paid common expenditure required audit/reconciliation against quotas/debt",
+      "debt/morosity issue affected the intended convenio"
+    ],
+    "proof_ceiling": "Notice of the dispute is established by the public reproduced-source chain; truth of the allegations remains separate."
+  },
+  "attributed_thesis": {
+    "speaker": "Gil Marer / AWESWELL perimeter",
+    "capture": "Gil Marer states as a factual conclusion that the private-actor perimeter captured/instrumentalised the Owners' Community through the debt/morosity and voting mechanism.",
+    "convergence": "Later CAM/Acosta Matos participation functionally converged with the earlier dissident/private-actor lane.",
+    "debt": "Gil Marer states as a factual conclusion that the debt/morosity mechanism used against LPB was fabricated or lacked a valid foundation.",
+    "later_control": "Gil characterises later material-control/access acts as clandestine, forcible and unauthorised where source families support that attribution.",
+    "counter_calificacion": "Gil Marer states that the culpability/accountability lens should run to those who created, certified, used, enabled or knowingly adopted the invalid debt mechanism.",
+    "status": "CATEGORICAL_USER_POSITION_NOT_ADJUDICATED_FINDING"
+  },
+  "guardrails": [
+    "capture_hijack_fabricated_debt_are_not_repository_findings",
+    "formal_calificacion_culpable_is_not_transferred_to_judge_or_unrelated_third_party",
+    "relationship_does_not_transfer_conduct_knowledge_intent_or_liability",
+    "ac_notice_is_not_ac_guilt",
+    "judicial_adverse_act_is_not_criminality",
+    "later_benefit_is_not_procurement",
+    "2016_debt_dispute_does_not_by_itself_prove_2018_command_chain",
+    "2018_control_event_does_not_retroactively_prove_2016_debt_falsity",
+    "categorical_user_position_must_not_be_silently_weakened",
+    "repository_attribution_does_not_convert_user_position_into_adjudicated_finding"
+  ],
+  "finite_test": [
+    "cost actually incurred",
+    "proper payer",
+    "actual payer",
+    "Community charge",
+    "LPB allocation",
+    "debt calculation",
+    "due date",
+    "challenge_or_consignation_status",
+    "morosity classification",
+    "vote exclusion",
+    "resolution_or_certificate",
+    "later use",
+    "actor knowledge",
+    "effect",
+    "beneficiary_or_harm",
+    "contrary explanation"
+  ],
+  "public_sources": [
+    "evidence/community/ACTA_26APR2016_PUBLIC_REDACTED_EDITION.md",
+    "archive/knowledge-project/SUN_PARK_26APR_TO_11JUN2016_UNITARY_SCAN_19AUG2026.md",
+    "assets/evidence/ac-email-21-april-2016/AC2016-EMAIL-001-PUBLIC.md",
+    "en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/index.html",
+    "es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/index.html",
+    "TWO_COMPETING_GOVERNANCE_RECORDS_2008_2022.md"
+  ],
+  "target_routes": [
+    "/en/community-instrumentalisation/",
+    "/es/comunidad-instrumentalizacion/",
+    "/en/community-instrumentalisation/minutes-2011-2022/",
+    "/es/comunidad-instrumentalizacion/actas-2011-2022/",
+    "/en/insolvency-classification-parallel-lives/",
+    "/es/calificacion-concurso-36-2012-vidas-paralelas/"
+  ],
+  "longitudinal_nodes": [
+    {
+      "date": "2011-06-22",
+      "state": "DOCUMENTED_GOVERNANCE_NODE",
+      "summary": "FMMM acts as administrator; LPB approximately 72% but denied vote due attributed debt; debt/claims approved; Pamanil ratified for administration/maintenance/custody/litigation.",
+      "boundary": "Debt basis, complete voting/proxy chain and legal validity remain source-specific."
+    },
+    {
+      "date": "2015-11-19",
+      "state": "DOCUMENTED_MINUTES_NODE",
+      "summary": "Approximately 89.02% present/represented; approximately 0.770% treated as vote-qualified; reported debt EUR3,641,456.50; high charges acknowledged and retroactive reduction proposed.",
+      "boundary": "Exact denominator and accounting basis remain controlled/open."
+    },
+    {
+      "date": "2016-04-26",
+      "state": "DOCUMENTED_PRIMARY_ACTA",
+      "summary": "89.727% present/represented; LPB 72.976%; 11.039% vote-eligible; incomplete/unapproved accounts; EUR171.89 to EUR22.26 retroactive quota reset; arrears recorded as falling considerably."
+    },
+    {
+      "date": "2017-04-18",
+      "state": "JUDICIAL_ACT_BOUNDED",
+      "summary": "Judgment 91/2017 set aside the EUR171.81 monthly charge fixed in May 2009 after Community submission and notes the 2016 EUR22.26 figure.",
+      "boundary": "Does not universally invalidate every later charge or vote."
+    },
+    {
+      "date": "2017-06-12",
+      "state": "DOCUMENTED_PRIMARY_MINUTES",
+      "summary": "Approximately 87.098% present/represented; approximately 6.545% vote-qualified; Antonio Cogolludo president, Shaila Cogolludo treasurer, FMMM secretary-administrator; fees/certificates/claims/banking processed."
+    },
+    {
+      "date": "2018-05-18",
+      "state": "DOCUMENTED_PRIMARY_MINUTES_WITH_AC_BRIDGE",
+      "summary": "Approximately 86.715% present/represented; approximately 0.385% vote-qualified; security up to EUR8,500/month authorised; source family records AC request to convene measure on LPB's behalf as majority holder.",
+      "boundary": "Does not by itself prove 7-June command chain or criminal intent."
+    }
+  ],
+  "contingent_credit_consequence": {
+    "definitive_texts_filed": "2016-04-28",
+    "pre_insolvency_community_claim_eur": 718663.24,
+    "formal_contingent_modification": "2017-01-20",
+    "modification_effect": "ORDINARY_CONTINGENT_CLAIM_WITHOUT_OWN_AMOUNT",
+    "post_insolvency_claim_unchanged": true,
+    "ac_2020_pre_insolvency_amount_reused_eur": 718663.24,
+    "ac_2020_post_insolvency_amount_eur": 427135.05,
+    "combined_2021_bid_condition_eur": 1145798.29,
+    "principal_position": "Gil/AWESWELL state that preserving and later reusing the disputed claim was a substantive part of the harmful mechanism, not an innocent administrative detail.",
+    "repository_boundary": "Procedural consequences are source-controlled; criminal or professional responsibility remains actor-specific."
+  },
+  "community_identity_control": {
+    "rule": "LEGAL_COMMUNITY_IS_NOT_AUTOMATICALLY_IDENTICAL_TO_PRIVATE_OFFICEHOLDERS_OR_DISSIDENT_FACTION",
+    "required_resolution": [
+      "legal_body",
+      "meeting_or_resolution",
+      "president",
+      "secretary_or_administrator",
+      "treasurer",
+      "signatory",
+      "represented_owner_or_entity",
+      "voting_eligibility",
+      "mandate_or_power",
+      "source",
+      "act",
+      "beneficiary_or_effect"
+    ],
+    "risk_label": "AUTHORITY_REIFICATION_ORGAN_PERSON_CONFLATION",
+    "principal_position": "Gil/AWESWELL state that repeated institutional use of 'the Community' for the dissident/private officeholder perimeter gave private actors an appearance of authority they did not validly possess."
+  },
+  "expert_debt_analysis": {
+    "date": "2018-07-10",
+    "author": "David Espejo Navarro / eXW",
+    "pages": 59,
+    "commissioned_by": "Aweswell Limited for benefit of LPB",
+    "status": "PROJECT_COMMISSIONED_INDEPENDENT_EXPERT_OPINION_NOT_JUDICIAL_FINDING",
+    "expert_duty_to_court_declared": true,
+    "conclusions_supported": [
+      "CEXP considered current in obligations in June 2011 apart from ordinary trading balances",
+      "initial Community debt considered without logical/accounting/documentary foundation",
+      "debt considered material because it removed LPB majority voting rights",
+      "hypothetical valid-debt analysis could imply zero debt for CEXP participants",
+      "unsupported morosity and large debt movements identified"
+    ],
+    "limitations": [
+      "commissioned by project side",
+      "relies partly on client-supplied information",
+      "does not by itself prove criminal intent or later knowing use"
+    ]
+  },
+  "better_bid_criminal_lead": {
+    "community_pre_insolvency_eur": 718663.24,
+    "community_post_insolvency_eur": 427135.05,
+    "combined_bid_condition_eur": 1145798.29,
+    "legal_theories_attributed": [
+      "ESTAFA_PROCESAL_ART_250_1_7_CP",
+      "INSOLVENCIAS_PUNIBLES_ART_259_CP",
+      "ADMINISTRACION_DESLEAL_ART_252_CP"
+    ],
+    "status": "ATTRIBUTED_CRIMINAL_LEAD_ELEMENT_BY_ELEMENT_PROOF_REQUIRED",
+    "procedural_fraud_elements": [
+      "false_or_manipulated_premise_or_analogous_fraud",
+      "author_or_transmitter",
+      "knowledge",
+      "judicial_submission_or_use",
+      "judicial_error",
+      "adoption_into_resolution_or_bid_condition",
+      "economic_prejudice",
+      "benefit",
+      "causation"
+    ],
+    "causation_chain": [
+      "community_debt_vote_mechanism",
+      "concurso_recognition_or_contingency",
+      "later_certificate_or_spreadsheet",
+      "bid_condition_1145798_29",
+      "effect_on_competing_offer",
+      "adjudication_or_implementation",
+      "title_control_operation_income",
+      "present_Mynd_outcome"
+    ],
+    "guardrail": "Each arrow must be independently proved; endpoints do not prove the chain."
+  },
+  "cross_controls": [
+    "PD-CHATGPT-UCF-INTAKE-20260925-01",
+    "PD-COMMUNITY-COURT-COMPLETENESS-20260925-01"
+  ],
+  "court_completeness": {
+    "control_id": "PD-COMMUNITY-COURT-COMPLETENESS-20260925-01",
+    "principal_position": "With one exact exception still to be source-identified, Gil/AWESWELL state that Community-fee/governance proceedings generally did not adjudicate the complete underlying accounting/debt record.",
+    "exact_exception": "OPEN_DO_NOT_GUESS",
+    "mandatory_distinction": "PROCEEDING_OBJECT_VS_FULL_DEBT_VALIDITY"
+  }
+}
