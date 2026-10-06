@@ -54,3 +54,19 @@ The private native 2023 pleading carrier matches the existing source-manifest SH
 The two successor-linked private memory documents and their current revisions were read back. Their permission metadata and parent folder show owner-only access. Compact text matches the repository after stated normalisation; the full public section differs in one spelling-control sentence and its private addendum remains excluded. Additional private memory versions contain later content, so full version reconciliation remains open. The existing private sync receipt records the comparison without new public provider locators.
 
 See `predecessor_reconciliation.source_and_custody_verification_20261006` in the active relationship JSON. Original metadata captures and prior receipts are retained. Canonical structure/typed-relationship admission, identifier collision, historical locator exposure and current corporate/trust proof remain open; #1791 stays open under controlling Draft #1795.
+
+## 6 October 2026 controlling clarification — two separate trust layers
+
+The earlier Hava Vida wording must not be read as the complete ownership/trust architecture. Gil Marer has clarified two distinct propositions:
+
+1. **AWESWELL LIMITED shares:** Patricia Domínguez is said to have been holding the AWESWELL shares on trust for the **joint benefit of Patricia Domínguez and Gil Marer**.
+2. **Spanish-company shares:** separately, Patricia Domínguez is said to have been holding the shares of **Hava Vida Travel & Tourism, S.L.U.** and **Pink Canary Services, S.L.U.** effectively on trust for the benefit of **AWESWELL LIMITED**.
+
+These propositions concern different shares and different beneficiary layers. They must never be collapsed.
+
+The 23-Sep Hava-only trust wording remains preserved as historical control text, but its scope is superseded by this clarification and by `PD-AW-GROUP-BENEFICIAL-LAYERS-20261006-01`.
+
+Controlling org-chart overlay: `ops/capital/AWESWELL_GROUP_OWNERSHIP_ORG_CHART_20261006.md`.
+
+Legal/source boundary remains unchanged: this clarification records Gil Marer's attributed factual/economic position. It does not itself establish a legally effective trust, registered ownership, exact beneficial proportions, PSC/UBO status, tax/accounting treatment, governing law or Spanish recognition.
+
