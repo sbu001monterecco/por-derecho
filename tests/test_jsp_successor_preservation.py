@@ -7,7 +7,7 @@ from pathlib import Path
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from validate_jsp_successor_preservation import GitReader, MANIFEST, audit, delta
+from validate_jsp_successor_preservation import GitReader, MANIFEST, ROUTING_PATH, ROUTING_OBJECT, audit, delta
 
 
 class Overlay:
@@ -43,6 +43,10 @@ def run(reader, base, candidate):
         ('deleted source PDF', lambda x: x.entries.pop(frozen), 'Frozen object'),
         ('altered source PDF object', lambda x: x.entries.__setitem__(frozen, ('100644', 'blob', '0' * 40)), 'Frozen object'),
         ('source PDF changed to symlink', lambda x: x.entries.__setitem__(frozen, ('120000', 'blob', x.entries[frozen][2])), 'Frozen object'),
+        ('JSP bilingual route changed', lambda x: x.entries.__setitem__('en/jsp-montelanza-insolvency-liquidation/index.html', ('100644', 'blob', '0' * 40)), 'Frozen object'),
+        ('JSP relationship qualifications changed', lambda x: x.entries.__setitem__('assets/data/jsp-2017-source-relationship-register.json', ('100644', 'blob', '0' * 40)), 'Frozen object'),
+        ('unreviewed required workflow edit', lambda x: x.entries.__setitem__(ROUTING_PATH, ('100644', 'blob', '0' * 40)), 'Unreviewed JSP workflow'),
+        ('original validator altered', lambda x: x.entries.__setitem__('scripts/validate_jsp_2017_dossier.py', ('100644', 'blob', '0' * 40)), 'Frozen object'),
         ('rewritten existing identity', lambda x: x.edit(shard, replace_identity), 'Changed or removed existing field'),
         ('duplicate identity ID', lambda x: x.edit(shard, duplicate_identity), 'Duplicate identity'),
         ('stale aggregate count', lambda x: x.edit(MANIFEST, lambda d: d['counts'].__setitem__('total', 1)), 'Manifest counts'),
@@ -80,7 +84,17 @@ def run(reader, base, candidate):
             outcomes.append(label)
         else:
             raise AssertionError('Corruption accepted: ' + label)
-    return {'result': 'PASS_NEGATIVE_CONTROLS', 'baseline_passed': True, 'rejected_mutations': outcomes}
+    # This specialist gate must not replace the independent preservation/content
+    # gates for unrelated paths. These are path-scope simulations, not content QA.
+    scope_cases = ['en/unrelated-route/index.html', 'assets/unrelated-asset.css', 'docs/unrelated-urgent-repair.md']
+    for path in scope_cases:
+        overlay = Overlay(reader, candidate)
+        overlay.entries[path] = ('100644', 'blob', '0' * 40)
+        audit(overlay, base, candidate)
+    reviewed = Overlay(reader, candidate)
+    reviewed.entries[ROUTING_PATH] = ROUTING_OBJECT
+    audit(reviewed, base, candidate)
+    return {'result': 'PASS_NEGATIVE_CONTROLS', 'baseline_passed': True, 'rejected_mutations': outcomes, 'unrelated_path_scope_cases_passed': scope_cases, 'exact_reviewed_routing_accepted': True}
 
 
 if __name__ == '__main__':

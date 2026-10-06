@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Advisory JSP successor preservation audit; does not replace required release QA.
+"""Bounded JSP successor conservation audit, separate from historical release QA.
 
 Run from a full Git checkout after incorporating current origin/main:
 python3 scripts/validate_jsp_successor_preservation.py --base <PR-base-SHA>
@@ -23,6 +23,10 @@ MANIFEST = 'assets/data/matter-identity-registry-v1.json'
 EVIDENCE = 'assets/data/jsp-2017-source-relationship-register.json'
 TYPES = {'PERSON': 'P', 'ORGANISATION': 'O', 'STRUCTURE': 'S', 'INSTITUTION': 'I', 'PROCEEDING': 'R'}
 RELEASE_COUNTS = {'total': 379, 'PERSON': 176, 'ORGANISATION': 99, 'STRUCTURE': 11, 'INSTITUTION': 49, 'PROCEEDING': 44}
+ROUTING_PATH = '.github/workflows/jsp-2017-dossier-scoped-qa.yml'
+# Exact reviewed transition only: original job name/permissions/checkout/artifact
+# retention remain; invoke the two-stage runner and watch its supporting files.
+ROUTING_OBJECT = ('100644', 'blob', '982a0910accfb698834a8db5896fb398e664473e')
 FROZEN = [
   ".github/workflows/jsp-2017-dossier-scoped-qa.yml",
   ".github/workflows/jsp-evidence-object-ingress.yml",
@@ -125,7 +129,10 @@ def audit(reader, base, candidate):
     for ref in (base, candidate):
         tree = reader.tree(ref)
         for path in FROZEN:
-            unchanged_object(release_tree, tree, path)
+            if path == ROUTING_PATH:
+                require(tree.get(path) in (release_tree[path], ROUTING_OBJECT), 'Unreviewed JSP workflow change')
+            else:
+                unchanged_object(release_tree, tree, path)
     # Current main contains later corrections outside the frozen JSP shards.
     # Report them, never overwrite or silently certify them as unchanged.
     require(set(rr) <= set(br), 'Main lost a release-era identity')
@@ -146,13 +153,14 @@ def audit(reader, base, candidate):
         require(edge['from'] in cr and edge['to'] in cr and edge['source'] in source_ids, 'Unresolved relationship endpoint/source')
     require(not {'PD-SP-P-0174', 'PD-SP-P-0178'} & set(cr), 'Rejected duplicate admitted')
     return {
-        'result': 'PASS_ADVISORY_PRESERVATION_ONLY', 'release': RELEASE, 'release_parent': PARENT,
-        'base': base, 'candidate': candidate, 'frozen_objects': len(FROZEN),
+        'result': 'PASS_SUCCESSOR_CONSERVATION_ONLY', 'release': RELEASE, 'release_parent': PARENT,
+        'base': base, 'candidate': candidate, 'frozen_objects': len(FROZEN) - 1,
+        'routing_workflow': 'ORIGINAL' if reader.tree(candidate)[ROUTING_PATH] == release_tree[ROUTING_PATH] else 'EXACT_REVIEWED_TWO_STAGE_TRANSITION',
         'historical_release_counts': rm['counts'], 'historical_new_identities': len(released),
         'candidate_counts': cm['counts'], 'added_ids': added,
         'inherited_main_changed_ids_not_reaudited': inherited,
         'additive_field_ids': sorted(r for r in br if br[r] != cr[r]),
-        'limitations': ['Required JSP release gate remains controlling and unchanged',
+        'limitations': ['This conservation result alone does not replace historical release QA',
                        'No approval of new identity admission or source truth',
                        'No browser, deployment, original-binary custody or whole-repository certification',
                        'Frozen Git object identity preserves bytes; it is not an independent custody copy'],
