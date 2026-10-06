@@ -74,6 +74,16 @@
     "No validator, required workflow, evidence pin or proof ceiling was weakened.",
     "The GC-LAJ-021 projection remains bounded by its existing registration/supervisory-possession disclaimer and open-reference gap.",
     "PR #1791 remains open; this technical repair does not settle Group Sun Rock admission, typed relationships, attributed-source capture, identifier collision, current corporate/trust proof, full private-memory alignment or historical locator exposure.",
+    "The downstream unitary validator retains exact denominator assertions; only the source-proved 33/8 to 34/7 split is updated.",
     "No main merge, deployment, branch deletion, publication, filing, email or external communication is authorised or performed by this receipt."
-  ]
+  ],
+  "downstream_unitary_validator": {
+    "path": "scripts/validate_unitary_multitrack_gap_closure.py",
+    "prior_blob_sha1": "c7343ce7be6eda4bcf78499ccfdd31f9bd952283",
+    "change": "Exact source-state denominator transition only: verified_primary_authority_files 33→34 and verified_procedural_authority_files 8→7; public_authority_files remains 49.",
+    "rationale": "GC-LAJ-021 is projected as VERIFIED_PRIMARY by the deterministic canonical authority source after the September 2026 source update.",
+    "relaxation": false,
+    "skipped_checks": false,
+    "wildcard_or_range_added": false
+  }
 }
