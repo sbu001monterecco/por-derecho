@@ -76,6 +76,7 @@
     "PR #1791 remains open; this technical repair does not settle Group Sun Rock admission, typed relationships, attributed-source capture, identifier collision, current corporate/trust proof, full private-memory alignment or historical locator exposure.",
     "The downstream unitary validator retains exact denominator assertions; only the source-proved 33/8 to 34/7 split is updated.",
     "The browser smoke still fails on any browser console/page error; the harness correction changes only the local mount to match the real project-site path.",
+    "The DP1901 browser correction makes the test enforce the runtime's pre-existing recipient-focus exclusion rather than waiting for an overlay the runtime is designed not to render.",
     "No main merge, deployment, branch deletion, publication, filing, email or external communication is authorised or performed by this receipt."
   ],
   "downstream_unitary_validator": {
@@ -97,5 +98,27 @@
     "browser_error_suppression": false,
     "route_or_asset_removed": false,
     "assertion_relaxed": false
+  },
+  "dp1901_browser_control": {
+    "workflow": ".github/workflows/validate-dp1901-platform-nexus.yml",
+    "render_script": "scripts/render_dp1901_platform_nexus.mjs",
+    "prior_blob_sha1": "4bc5bd0db47d686c78b06f677476a5992fca993d",
+    "initial_result": {
+      "cases": 88,
+      "passed": 84,
+      "failed": 4
+    },
+    "failed_routes": [
+      "es/identidad-digital-sun-park-google-mynd/ @ 1280",
+      "en/sun-park-digital-identity-google-mynd/ @ 1280",
+      "es/identidad-digital-sun-park-google-mynd/ @ 390",
+      "en/sun-park-digital-identity-google-mynd/ @ 390"
+    ],
+    "cause": "Both source pages carry data-recipient-focus=true, while the DP1901 runtime explicitly exits on recipient-focused pages to preserve the recipient-specific surface. The browser control previously waited for the intentionally suppressed overlay.",
+    "correction": "For a page that itself declares recipient focus, the browser control now requires: non-central route, zero DP1901 overlay blocks, no ready marker, no missing DP1901 resource, and records a controlled_exclusion=recipient-focus PASS. All non-recipient routes retain the prior ready/DOM/layout assertions.",
+    "runtime_changed": false,
+    "route_removed": false,
+    "failure_suppression": false,
+    "preservation_rule_weakened": false
   }
 }
