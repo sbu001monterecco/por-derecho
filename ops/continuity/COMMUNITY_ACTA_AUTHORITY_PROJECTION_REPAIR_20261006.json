@@ -75,6 +75,7 @@
     "The GC-LAJ-021 projection remains bounded by its existing registration/supervisory-possession disclaimer and open-reference gap.",
     "PR #1791 remains open; this technical repair does not settle Group Sun Rock admission, typed relationships, attributed-source capture, identifier collision, current corporate/trust proof, full private-memory alignment or historical locator exposure.",
     "The downstream unitary validator retains exact denominator assertions; only the source-proved 33/8 to 34/7 split is updated.",
+    "The browser smoke still fails on any browser console/page error; the harness correction changes only the local mount to match the real project-site path.",
     "No main merge, deployment, branch deletion, publication, filing, email or external communication is authorised or performed by this receipt."
   ],
   "downstream_unitary_validator": {
@@ -85,5 +86,16 @@
     "relaxation": false,
     "skipped_checks": false,
     "wildcard_or_range_added": false
+  },
+  "browser_smoke_harness": {
+    "workflow": ".github/workflows/advisory-unitary-multitrack-gap-closure.yml",
+    "prior_blob_sha1": "a284930c482c123224f46ebe28f9a2e65b4822c7",
+    "failure_observed": "Spanish 1440px render emitted a 404 for a valid project-site absolute asset path while the local test server was mounted at repository root.",
+    "verified_asset": "assets/cuatrecasas-rauda-20260905.css",
+    "invalid_local_lookup": "/por-derecho/assets/cuatrecasas-rauda-20260905.css against a repository-root HTTP mount",
+    "correction": "Serve the checkout from its parent directory and set PSR_BASE_URL to /<repo-name>, mirroring the GitHub Pages project-site base path.",
+    "browser_error_suppression": false,
+    "route_or_asset_removed": false,
+    "assertion_relaxed": false
   }
 }
