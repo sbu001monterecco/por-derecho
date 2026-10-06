@@ -44,16 +44,18 @@ AWESWELL LIMITED, company 07716847, formerly MONTERECCO SUN PARK LIMITED, is the
 
 Project-side Spanish-company set: Luchy Playa Blanca, S.L.U.; Matkator, S.L.U.; Pink Canary Services, S.L.U. (formerly Monterecco Sun Park, S.L.U.); Hava Vida Travel & Tourism, S.L.U.
 
-## Hava Vida / Patricia / Aweswell relationship — 23 Sep 2026
-Objects: Hava Vida Travel & Tourism, S.L.U. = canonical-name E051 / federated PD-SP-O-0103; Patricia Domínguez = PD-SP-P-0002; AWESWELL LIMITED = E005 / PD-SP-O-0001.
+## AWESWELL / Hava Vida / Pink Canary beneficial layers — clarified 6 Oct 2026
+Objects: Gil Marer = PD-SP-P-0001; Patricia Domínguez = PD-SP-P-0002; AWESWELL LIMITED = E005 / PD-SP-O-0001; Pink Canary Services, S.L.U. = PD-SP-O-0004; Hava Vida Travel & Tourism, S.L.U. = canonical-name E051 / PD-SP-O-0103.
 
-SOURCE-ESTABLISHED HISTORICAL LAYER: BORME-A-2012-27-38 entry 64020 records incorporation of HAVA VIDA TRAVEL & TOURISM SL, unipersonality, Patricia Isabel Domínguez Montelongo as socio único and administrador único, sheet TF 49735. This is a dated historical registry proposition; do not promote it into unchanged current-2026 ownership/office without current Spanish registry proof.
+SOURCE-ESTABLISHED HISTORICAL HAVA VIDA LAYER: BORME-A-2012-27-38 entry 64020 records incorporation of HAVA VIDA TRAVEL & TOURISM SL, unipersonality, Patricia Isabel Domínguez Montelongo as socio único and administrador único, sheet TF 49735. This is a dated historical registry proposition; do not promote it into unchanged current-2026 ownership/office without current Spanish registry proof.
 
 PROJECT/GROUP-CONTEXT LAYER: Gil Marer states Hava Vida has always been understood within the Aweswell / Group Sun Rock project perimeter. The 21-Sep-2023 Audiencia Nacional querella contains a project narrative linking LPB/Aweswell through Grupo Sun Rock with Hava Vida and other counterparties. This supports project-perimeter/context treatment, not corporate ownership by Aweswell.
 
-BENEFICIAL/TRUST LAYER — ATTRIBUTED, NOT ESTABLISHED: Gil Marer expressly takes responsibility for the position that the intended/understood arrangement was that Patricia held Hava Vida shares for AWESWELL LIMITED's benefit, described through a UK-law “on trust” concept. Register as GIL_MARER_ATTRIBUTED_BENEFICIAL_OWNERSHIP_TRUST_POSITION / OPEN LEGAL-SOURCE BRIDGE. It is not presently a proved trust, nominee arrangement, Aweswell legal ownership, Spanish beneficial-ownership filing, tax treatment or adjudicated fact. Required bridge: any trust/nominee declaration, shareholder agreement, board/accounting/tax treatment, funds-flow/acquisition records, Spanish corporate/UBO records, and legal analysis of governing law/recognition/effect for shares in a Spanish S.L.U.
+TRUST/BENEFICIAL LAYER 1 — UK HOLDCO SHARES — ATTRIBUTED, NOT ESTABLISHED: Gil Marer states that Patricia has been holding the shares in AWESWELL LIMITED on trust for the joint benefit of Patricia and Gil. This concerns the AWESWELL-share layer only. It does not establish a legally effective trust, exact beneficial proportions, current PSC status, tax/accounting treatment or legal/equitable effect without its own source and legal bridge.
 
-Never collapse registered legal shareholder/director status ≠ project perimeter ≠ asserted beneficial ownership ≠ proved trust/legal effect.
+TRUST/BENEFICIAL LAYER 2 — SPANISH-COMPANY SHARES — ATTRIBUTED, NOT ESTABLISHED: Separately, Gil Marer states that Patricia has been holding the shares of Hava Vida Travel & Tourism, S.L.U. and Pink Canary Services, S.L.U. effectively on trust for the benefit of AWESWELL LIMITED. The asserted beneficiary at this layer is AWESWELL LIMITED, not Gil and Patricia directly. Each Spanish company requires its own current registry/shareholder/UBO and legal-recognition bridge.
+
+HARD NON-COLLAPSE RULE: AWESWELL shares → Patricia + Gil jointly is one proposition. Hava Vida/Pink shares → AWESWELL is a different proposition. Registered legal shareholder/director status ≠ project perimeter ≠ asserted beneficial ownership ≠ proved trust/legal effect. Controlling org-chart overlay: ops/capital/AWESWELL_GROUP_OWNERSHIP_ORG_CHART_20261006.md.
 
 ## Objective
 Substantive answer first; integrate chronology+evidence status+dependencies+procedure+practical effect+next actions. Objective=fullest source-controlled reconstruction capable of surviving hostile/independent review; neither maximal accusation nor maximal scepticism.
