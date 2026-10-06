@@ -37,12 +37,15 @@
         }
       ],
       "related_organisation_ids": [
-        "PD-SP-O-0103"
+        "PD-SP-O-0103",
+        "PD-SP-O-0001",
+        "PD-SP-O-0004"
       ],
       "relationship_control_refs": [
-        "assets/data/hava-vida-aweswell-relationship-v1.json"
+        "assets/data/hava-vida-aweswell-relationship-v1.json",
+        "ops/capital/AWESWELL_GROUP_OWNERSHIP_ORG_CHART_20261006.md"
       ],
-      "relationship_boundary": "The two historical Hava Vida roles are typed and sourced in PD-HV-AW-20260923-01. The separate asserted beneficial/trust position concerning AWESWELL LIMITED remains attributed/open proof; this person record does not establish a direct Aweswell corporate role."
+      "relationship_boundary": "Keep three capacities distinct: (1) source-established historical Hava Vida roles at incorporation; (2) Gil Marer's attributed/open position that Patricia holds AWESWELL shares on trust for Patricia and Gil jointly; and (3) Gil Marer's separate attributed/open position that Patricia holds Hava Vida and Pink Canary shares effectively on trust for AWESWELL LIMITED. None of the attributed positions establishes a direct corporate role, legal trust effect, current registered title, UBO/PSC or tax treatment without its own bridge."
     },
     {
       "id": "PD-SP-P-0003",
