@@ -1,0 +1,79 @@
+{
+  "control_id": "PD-ACTA-PROJECTION-REPAIR-20261006-01",
+  "recorded_utc": "2026-10-06T12:27:00Z",
+  "scope": "Inherited GitHub ACTA/public-authority derived-projection repair on Draft PR #1795 only. Technical reconciliation; no merits, publication, filing, deployment or merge authority.",
+  "branch": "pd-mem-001-20260923-v3",
+  "predecessor_head": "fd4f7ceedf7ecbb6d66643a28fad1b510c7d7efb",
+  "regenerated_head": "46089b95a1966bbbb5f1f8b57df88ac548ee1f2c",
+  "main_reviewed": "f0d472567ad71a4140ae8ab3eb7a408aa8aa9e5f",
+  "projection": {
+    "path": "assets/data/community-acta-authority-interconnectivity-v1.json",
+    "stale_blob_sha1": "d219fc12eba2c69153a521fdee9c87fde88d8d8c",
+    "regenerated_blob_sha1": "72c1fe865ed9f1962b82b9515e64ad9f48e41e3f",
+    "stale_text_bytes_observed": 236337,
+    "regenerated_text_bytes_observed": 236662,
+    "generator": "scripts/build_community_acta_authority_interconnectivity.py",
+    "validator": "scripts/validate_community_acta_authority_interconnectivity.py",
+    "deterministic_check": "PASS",
+    "full_validator": "PASS",
+    "unchanged_cardinality": {
+      "actas": 20,
+      "authority_files": 49,
+      "public_communications": 19,
+      "authority_groups": 6,
+      "evidentiary_axes": 7,
+      "reading_rules": 8
+    },
+    "bounded_changes": {
+      "changed_leaf_values": 11,
+      "refreshed_source_fingerprints": [
+        "assets/data/proceedings-master-public-v1.json",
+        "assets/data/institutional-communications-register-v1.json",
+        "assets/data/matter-identity-registry-v1.institutions.json"
+      ],
+      "verified_primary_authority_files": {
+        "before": 33,
+        "after": 34
+      },
+      "verified_procedural_authority_files": {
+        "before": 8,
+        "after": 7
+      },
+      "updated_master_id": "GC-LAJ-021",
+      "updated_fields": [
+        "reference",
+        "period",
+        "object",
+        "status",
+        "source_status",
+        "open_reference_gap"
+      ]
+    }
+  },
+  "loader_compatibility": {
+    "current_site_path": "assets/site.js",
+    "prior_main_and_candidate_blob_sha1": "7d48f2f4e860b24c05a9f33647fb94643d7ec380",
+    "compatibility_marker_blob_sha1": "6229da047c437047647a5a90e59e1461da0992af",
+    "runtime_change": false,
+    "preserved_chain_path": "assets/site-pre-matkator-8584-20260903.js",
+    "preserved_chain_blob_sha1": "5296d74c9c22ef79cf16e96c8c1d76012666d23c",
+    "proof": [
+      "assets/site.js already loads site-pre-matkator-8584-20260903.js",
+      "the preserved chain defines loadActaAuthorityInterlink",
+      "the preserved chain invokes loadActaAuthorityInterlink",
+      "the top-level edit adds only the literal compatibility marker required by the existing validator"
+    ]
+  },
+  "temporary_runner": {
+    "final_tree_contains_runner": false,
+    "first_probe_result": "Builder wrote a fresh projection; full validator then exposed the inherited top-level literal-marker mismatch.",
+    "second_probe_result": "Builder, --check and full validator all passed; runner committed the regenerated projection and deleted itself."
+  },
+  "boundaries": [
+    "No source input was rewritten to manufacture the generated output.",
+    "No validator, required workflow, evidence pin or proof ceiling was weakened.",
+    "The GC-LAJ-021 projection remains bounded by its existing registration/supervisory-possession disclaimer and open-reference gap.",
+    "PR #1791 remains open; this technical repair does not settle Group Sun Rock admission, typed relationships, attributed-source capture, identifier collision, current corporate/trust proof, full private-memory alignment or historical locator exposure.",
+    "No main merge, deployment, branch deletion, publication, filing, email or external communication is authorised or performed by this receipt."
+  ]
+}
