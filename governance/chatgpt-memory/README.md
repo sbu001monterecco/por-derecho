@@ -15,3 +15,7 @@ Authority: primary evidence/current canonical registers/current verified reposit
 ## Predecessor reconciliation — 6 October 2026
 
 Read `../../assets/data/chatgpt-master-memory-required-controls-v1.json` and the `predecessor_reconciliation` in `../../assets/data/hava-vida-aweswell-relationship-v1.json`. The preserved predecessor sources and full/compact memory are indexed at `history/pr-1791/README.md`. These are historical provenance, not a second active master. #1795 remains the controlling Draft candidate; #1791 remains open for nonzero identity/projection/CI residuals. Current primary sources and main retain authority. Source/event crosswalks do not prove binary equivalence. The explicit Hava Vida identifier collision remains OPEN_DO_NOT_MERGE.
+
+## Finite path/field review checkpoint — 6 October 2026
+
+The active relationship control now contains `predecessor_reconciliation.path_disposition_20261006`: the complete 26-path inventory, twenty technical dispositions and five exact historical metadata captures. Review status is separate from admission: S-0012 and affected typed relationships/role dates remain open, as do source-binary custody, PD-HV-COLL-0001 and historical privacy exposure. #1791 remains open and #1795 remains the controlling Draft. Native CI at the reviewed head reports 44 successes, one inherited stale-projection advisory failure and four skipped live checks; required JSP scoped QA passed. Read the indexed review before further consolidation.
