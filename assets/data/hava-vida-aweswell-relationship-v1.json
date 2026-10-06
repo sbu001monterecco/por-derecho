@@ -128,7 +128,46 @@
         "current UBO filing",
         "tax treatment",
         "Aweswell legal title"
-      ]
+      ],
+      "scope_status": "HISTORICAL_COMPOSITE_WORDING_SUPERSEDED_IN_SCOPE_BY_20261006_CLARIFICATION",
+      "clarification": "Do not read the 23-Sep composite wording as one trust proposition. The 6-Oct clarification separates the AWESWELL-share trust layer from the Spanish-company-share trust layer."
+    },
+    {
+      "id": "PD-GROUP-SRC-20261006-GM-TRUST-CLARIFICATION",
+      "type": "USER_ATTRIBUTED_STATEMENT",
+      "date": "2026-10-06",
+      "speaker": "Gil Marer",
+      "status": "ATTRIBUTED_POSITION_CLARIFICATION",
+      "propositions": [
+        {
+          "id": "PD-AW-TRUST-001",
+          "statement": "Gil Marer states that Patricia Domínguez has been holding the shares in AWESWELL LIMITED on trust for the joint benefit of Patricia Domínguez and Gil Marer.",
+          "legal_layer": "UK_HOLDCO_SHARES",
+          "trustee_or_registered_holder": "PD-SP-P-0002",
+          "company": "PD-SP-O-0001",
+          "beneficiaries": [
+            "PD-SP-P-0002",
+            "PD-SP-P-0001"
+          ]
+        },
+        {
+          "id": "PD-HV-AW-TRUST-001",
+          "statement": "Gil Marer states that Patricia Domínguez has been holding the shares of Hava Vida Travel & Tourism, S.L.U. effectively on trust for AWESWELL LIMITED.",
+          "legal_layer": "SPANISH_COMPANY_SHARES",
+          "trustee_or_registered_holder": "PD-SP-P-0002",
+          "company": "PD-SP-O-0103",
+          "beneficiary": "PD-SP-O-0001"
+        },
+        {
+          "id": "PD-PINK-AW-TRUST-001",
+          "statement": "Gil Marer states that Patricia Domínguez has been holding the shares of Pink Canary Services, S.L.U. effectively on trust for AWESWELL LIMITED.",
+          "legal_layer": "SPANISH_COMPANY_SHARES",
+          "trustee_or_registered_holder": "PD-SP-P-0002",
+          "company": "PD-SP-O-0004",
+          "beneficiary": "PD-SP-O-0001"
+        }
+      ],
+      "boundary": "These are Gil Marer's attributed beneficial/economic positions. They do not by themselves prove a legally effective trust, nominee arrangement, current registered shareholding, governing law, Spanish recognition, PSC/UBO status, tax treatment or accounting treatment. Each layer requires its own documentary and legal source bridge."
     }
   ],
   "events": [
@@ -199,6 +238,23 @@
       "boundary": "26-Jan operations commencement and 27-Jan registry entry are distinct. Do not use operations commencement as a separately proved role-effective date.",
       "prior_verification_status": "PRESERVED_PREDECESSOR_SOURCE_ASSERTION_NOT_REVERIFIED",
       "verification_date": "2026-10-06"
+    },
+    {
+      "id": "PD-GROUP-EVT-20261006-01",
+      "date": "2026-10-06",
+      "type": "ATTRIBUTED_TRUST_LAYER_CLARIFICATION",
+      "source_ids": [
+        "PD-GROUP-SRC-20261006-GM-TRUST-CLARIFICATION"
+      ],
+      "object_ids": [
+        "PD-SP-P-0001",
+        "PD-SP-P-0002",
+        "PD-SP-O-0001",
+        "PD-SP-O-0004",
+        "PD-SP-O-0103"
+      ],
+      "status": "ATTRIBUTED_OPEN",
+      "rule": "Keep UK HoldCo-share beneficial ownership and Spanish-company-share beneficial ownership as separate propositions."
     }
   ],
   "relationships": [
@@ -240,9 +296,35 @@
       "from": "PD-SP-P-0002",
       "via": "PD-SP-O-0103 shares",
       "to": "PD-SP-O-0001",
-      "relation": "ASSERTED_BENEFICIAL_TRUST_POSITION",
+      "relation": "ASSERTED_SPANISH_COMPANY_SHARES_HELD_FOR_AWESWELL",
+      "subject_company": "PD-SP-O-0103",
       "status": "ATTRIBUTED_OPEN_LEGAL_SOURCE_BRIDGE",
-      "source_id": "PD-HV-SRC-20260923-GM-ATTRIBUTION"
+      "source_id": "PD-GROUP-SRC-20261006-GM-TRUST-CLARIFICATION",
+      "proposition_id": "PD-HV-AW-TRUST-001"
+    },
+    {
+      "from": "PD-SP-P-0002",
+      "via": "PD-SP-O-0004 shares",
+      "to": "PD-SP-O-0001",
+      "relation": "ASSERTED_SPANISH_COMPANY_SHARES_HELD_FOR_AWESWELL",
+      "subject_company": "PD-SP-O-0004",
+      "status": "ATTRIBUTED_OPEN_LEGAL_SOURCE_BRIDGE",
+      "source_id": "PD-GROUP-SRC-20261006-GM-TRUST-CLARIFICATION",
+      "proposition_id": "PD-PINK-AW-TRUST-001"
+    },
+    {
+      "from": "PD-SP-P-0002",
+      "via": "PD-SP-O-0001 shares",
+      "to": "PD-SP-P-0001",
+      "co_beneficiary": "PD-SP-P-0002",
+      "relation": "ASSERTED_AWESWELL_SHARES_HELD_ON_TRUST_FOR_JOINT_BENEFIT",
+      "beneficiaries": [
+        "PD-SP-P-0002",
+        "PD-SP-P-0001"
+      ],
+      "status": "ATTRIBUTED_OPEN_LEGAL_SOURCE_BRIDGE",
+      "source_id": "PD-GROUP-SRC-20261006-GM-TRUST-CLARIFICATION",
+      "proposition_id": "PD-AW-TRUST-001"
     }
   ],
   "open_proof": [
@@ -254,7 +336,11 @@
     "funding and bank-flow bridge",
     "board/accounting/tax treatment",
     "governing-law/conflict-of-laws/Spanish recognition analysis",
-    "PD-HV-COLL-0001: source-specific identifier B76694769 versus repository-recorded B76564434; underlying document and primary identifier certificate remain open"
+    "PD-HV-COLL-0001: source-specific identifier B76694769 versus repository-recorded B76564434; underlying document and primary identifier certificate remain open",
+    "current AWESWELL share register / confirmation statement / PSC position",
+    "instrument or conduct evidence supporting the asserted AWESWELL-share trust for Patricia and Gil jointly",
+    "current Pink Canary shareholder register / certified registry position",
+    "instrument or conduct evidence supporting the asserted Pink Canary shares-for-AWESWELL trust position"
   ],
   "collision_control": {
     "issue": "Archived recovery material contains an unrelated candidate Ernst & Young, S.L. using PD-SP-O-0103.",
@@ -939,12 +1025,13 @@
       },
       "remaining_admission_and_custody_work": [
         "S-0012/context-ID and typed person/company admission",
-        "Original attributed-statement capture if required for source authenticity",
         "Complete reconciliation of additional private-memory variants",
-        "Historical Git locator exposure and current-source identifier collision"
+        "Historical Git locator exposure and current-source identifier collision",
+        "Documentary/legal proof for both distinct trust layers: AWESWELL shares→Patricia+Gil; Hava Vida/Pink shares→AWESWELL"
       ],
       "closure_decision": "NONZERO_KEEP_PREDECESSOR_OPEN",
-      "boundary": "Technical source/custody verification does not establish current corporate status, trust validity, UBO/tax treatment, legal-group ownership, source-corpus completeness or public deployment."
+      "boundary": "Technical source/custody verification does not establish current corporate status, trust validity, UBO/tax treatment, legal-group ownership, source-corpus completeness or public deployment.",
+      "original_statement_native_capture": "CLARIFIED_BY_DIRECT_USER_STATEMENT_20261006_TWO_SEPARATE_TRUST_LAYERS"
     },
     "qualified_person_metadata_disposition_20261006": {
       "reviewed_successor_head": "d7278b0da7c861505060c8b168821142707593d1",
@@ -977,5 +1064,32 @@
       "privacy": "No private content, document title, provider locator or private-text fingerprint is copied into public Git. Owner-only metadata does not erase historical exposure or prove historical access.",
       "closure_decision": "NONZERO_KEEP_PREDECESSOR_OPEN"
     }
+  },
+  "ownership_layer_clarification_20261006": {
+    "control_id": "PD-AW-GROUP-BENEFICIAL-LAYERS-20261006-01",
+    "rule": "TWO_SEPARATE_TRUST_PROPOSITIONS_DO_NOT_COLLAPSE",
+    "layer_1": {
+      "shares": "AWESWELL LIMITED shares",
+      "attributed_holder_or_trustee": "Patricia Domínguez",
+      "attributed_beneficiaries": [
+        "Patricia Domínguez",
+        "Gil Marer"
+      ],
+      "proposition_id": "PD-AW-TRUST-001"
+    },
+    "layer_2": {
+      "shares": [
+        "Hava Vida Travel & Tourism, S.L.U. shares",
+        "Pink Canary Services, S.L.U. shares"
+      ],
+      "attributed_holder_or_trustee": "Patricia Domínguez",
+      "attributed_beneficiary": "AWESWELL LIMITED",
+      "proposition_ids": [
+        "PD-HV-AW-TRUST-001",
+        "PD-PINK-AW-TRUST-001"
+      ]
+    },
+    "non_collapse_rule": "Layer 1 concerns beneficial interests in the UK HoldCo. Layer 2 concerns beneficial interests in two Spanish companies in favour of the UK HoldCo. Neither proves the other and neither changes registered legal title without its own source/legal bridge.",
+    "org_chart": "ops/capital/AWESWELL_GROUP_OWNERSHIP_ORG_CHART_20261006.md"
   }
 }
