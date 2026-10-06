@@ -23,3 +23,11 @@ The active relationship control now contains `predecessor_reconciliation.path_di
 ## Source/custody verification checkpoint — 6 October 2026
 
 The active relationship control now records `predecessor_reconciliation.source_and_custody_verification_20261006`: official entry readbacks, operations/registration date separation, exact native pleading SHA-512 agreement and the corrected pages 52–53 locator, plus two current private-memory revision readbacks. The existing private sync receipt holds its own dated addendum. These results supersede the earlier “not reaudited” observation only within this stated scope; all earlier receipt bytes and historical metadata captures remain. Additional private-memory variants, canonical identity/typed relationships, identifier collision and historical locator exposure still require work. No all-is-caret, complete sync or zero-residual claim is made.
+
+## Qualified role links and bounded private-version dispositions — 6 October 2026
+
+The existing P-0002 person record now carries the official incorporation source mention, distinct operations/registry/publication dates, and a link to the single typed Hava Vida relationship control. It does not admit a direct Aweswell corporate role from an untyped predecessor list. Historical values and all earlier receipts remain preserved. No identity is allocated or count changed.
+
+The existing private sync receipt now records individual dispositions for nine native memory documents (five full, four compact), nine current-revision text matches and three prior substantive revision comparisons. All nine normalized texts differ. Current metadata reports owner-only access for the nine documents and five parent folders. Native files remain unchanged; private links, content and fingerprints stay in private custody. This completes the bounded version inventory, not full substantive alignment, Settings installation, universal source discovery or historical-access verification.
+
+Group Sun Rock/S-0012 admission, original attributed-statement capture, substantive memory alignment, source-specific collision and historical Git locator exposure remain open. #1791 remains open under controlling Draft #1795. See the two new dated disposition objects in the active relationship control.

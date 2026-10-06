@@ -945,6 +945,37 @@
       ],
       "closure_decision": "NONZERO_KEEP_PREDECESSOR_OPEN",
       "boundary": "Technical source/custody verification does not establish current corporate status, trust validity, UBO/tax treatment, legal-group ownership, source-corpus completeness or public deployment."
+    },
+    "qualified_person_metadata_disposition_20261006": {
+      "reviewed_successor_head": "d7278b0da7c861505060c8b168821142707593d1",
+      "record": "PD-SP-P-0002",
+      "result": "SOURCE_MENTION_AND_TYPED_ROLE_DISCOVERY_REPAIRED",
+      "source": "PD-HV-SRC-20120208-BORME-64020",
+      "source_mention": "Admitted to the existing person record with source literal, official reference and separate operations, registry and publication dates. No current role is asserted.",
+      "historical_hava_roles": "The existing SOLE_SHAREHOLDER_AT_INCORPORATION and SOLE_ADMINISTRATOR_AT_INCORPORATION edges remain unchanged; the person record now points to that single relationship control and O-0103.",
+      "predecessor_untyped_aweswell_link": "NOT_ADMITTED_AS_DIRECT_CORPORATE_ROLE. Its source proposition remains available through the existing ASSERTED_BENEFICIAL_TRUST_POSITION edge and exact historical field capture.",
+      "supersedes_only": "The P-0002 role-date/source-mention/typed-discovery portion of the earlier open metadata-admission item. It does not settle S-0012, source authenticity, identifier collision, current corporate status or trust proof.",
+      "preservation": "All pre-existing fields in every person record are unchanged; only fields on P-0002 were added. All previous path dispositions and historical captures remain unchanged.",
+      "new_identity_ids": 0,
+      "identity_counts_changed": false,
+      "closure_decision": "NONZERO_KEEP_PREDECESSOR_OPEN"
+    },
+    "private_memory_version_dispositions_20261006": {
+      "scope": "Nine native memory documents returned by the bounded PD-MEM-001 Drive document search; five full and four compact. Not a universal source-corpus claim.",
+      "current_revision_text_matches": 9,
+      "distinct_normalised_texts": 9,
+      "previous_substantive_revisions_compared": 3,
+      "current_owner_only_documents": 9,
+      "current_owner_only_parent_folders": 5,
+      "result": "BOUNDED_VERSION_INVENTORY_AND_DISPOSITIONS_COMPLETE",
+      "receipt": "Existing private cross-host sync receipt contains nine native file links, revision IDs/dates, normalized-text SHA-256 fingerprints and individual dispositions; original receipt content preserved and read back.",
+      "normalisation": "Strip leading BOM, normalize CRLF to LF, strip line-edge whitespace and omit blank lines. Text fingerprints are not native-binary hashes.",
+      "no_duplicate_claim": "All nine normalized current texts differ. Titles and shared control IDs do not establish equivalence.",
+      "candidate_mirrors": "Existing successor-linked full/compact pair remains the reviewed candidate counterpart. Compact normalized text matches. Other private versions are preserved, not overwritten or declared superseded.",
+      "historical_registration_claims": "Dated memory statements about S-0012 do not prove admission on either current main. Existing unadmitted proposal and context ID remain distinct.",
+      "remaining_alignment": "OPEN_SUBSTANTIVE_CROSS_VERSION_ALIGNMENT; later private additions remain in their original lineages and do not become new public-source derivatives.",
+      "privacy": "No private content, document title, provider locator or private-text fingerprint is copied into public Git. Owner-only metadata does not erase historical exposure or prove historical access.",
+      "closure_decision": "NONZERO_KEEP_PREDECESSOR_OPEN"
     }
   }
 }

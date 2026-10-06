@@ -45,5 +45,21 @@
     "receipt": "Existing private PD-MEM-001 cross-host sync receipt contains the dated addendum and private document links; all original paragraphs retained.",
     "historical_git_exposure": "OPEN_PRIOR_COMMITS_REMAIN_REACHABLE_NO_HISTORY_REWRITE",
     "details": "assets/data/hava-vida-aweswell-relationship-v1.json / predecessor_reconciliation.source_and_custody_verification_20261006"
+  },
+  "bounded_version_inventory_20261006": {
+    "status": "BOUNDED_INVENTORY_COMPLETE_FULL_ALIGNMENT_OPEN",
+    "native_memory_documents": 9,
+    "full": 5,
+    "compact": 4,
+    "current_revision_text_matches": 9,
+    "distinct_normalised_texts": 9,
+    "previous_substantive_revisions_compared": 3,
+    "owner_only_documents": 9,
+    "owner_only_parent_folders": 5,
+    "receipt": "Existing private cross-host sync receipt appended; all earlier paragraphs and native elements retained. Nine native file/date links and per-version fingerprints/dispositions independently read back.",
+    "preservation": "All nine source documents and their native revision histories retained without modification. No replacement master or Settings-memory installation claim.",
+    "supersedes_observation": "The prior additional-version review was open. Its bounded discovery/readback/disposition step is complete for this nine-document set; substantive alignment remains open.",
+    "details": "assets/data/hava-vida-aweswell-relationship-v1.json / predecessor_reconciliation.private_memory_version_dispositions_20261006",
+    "historical_git_exposure": "OPEN_NO_HISTORY_REWRITE"
   }
 }
