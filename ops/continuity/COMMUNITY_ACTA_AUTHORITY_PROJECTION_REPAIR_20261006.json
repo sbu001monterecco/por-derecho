@@ -62,7 +62,15 @@
       "the preserved chain defines loadActaAuthorityInterlink",
       "the preserved chain invokes loadActaAuthorityInterlink",
       "the top-level edit adds only the literal compatibility marker required by the existing validator"
-    ]
+    ],
+    "final_control": {
+      "top_level_site_restored_to_main_blob_sha1": "7d48f2f4e860b24c05a9f33647fb94643d7ec380",
+      "validator_path": "scripts/validate_community_acta_authority_interconnectivity.py",
+      "validator_rule": "PASS only if the ACTA loader is directly named in assets/site.js OR assets/site.js names the preserved site-pre-matkator chain and that exact preserved file both names and invokes loadActaAuthorityInterlink().",
+      "runtime_change": false,
+      "validator_relaxation": false,
+      "transitive_chain_proof": true
+    }
   },
   "temporary_runner": {
     "final_tree_contains_runner": false,
@@ -119,6 +127,23 @@
     "runtime_changed": false,
     "route_removed": false,
     "failure_suppression": false,
-    "preservation_rule_weakened": false
+    "preservation_rule_weakened": false,
+    "final_disposition": {
+      "render_script_restored_to_main_blob_sha1": "4bc5bd0db47d686c78b06f677476a5992fca993d",
+      "reason": "The DP1901 test correction was not needed for the ACTA repair once the top-level site.js compatibility marker was removed. Keep #1795 narrow and avoid triggering unrelated DP1901/CaixaBank browser matrices through site.js.",
+      "retained_change": false
+    }
+  },
+  "caixabank_late_matrix_observation": {
+    "observed_on_broader_intermediate_head": "fd71bbe79ca73b266e9ba9c93dbe8476c080bfee",
+    "source_checks": 266,
+    "browser_routes_all_200": true,
+    "http_audit_urls": 294,
+    "http_errors": 0,
+    "browser_acceptance_checks": 60,
+    "final_reader_review_checks": 12,
+    "final_reader_review_errors": 0,
+    "isolated_failure": "Post-review cached-revisit assertion on a visible lazy image; unrelated to ACTA source/generator repair.",
+    "final_action": "Do not modify CaixaBank controls in #1795. Restore site.js to current-main bytes so the ACTA repair no longer triggers that unrelated path-scoped workflow."
   }
 }
