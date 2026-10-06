@@ -23,6 +23,16 @@ try {
       try {
         const response=await page.goto(base+item.route,{waitUntil:'domcontentloaded',timeout:30000});
         assert.equal(response.status(),200);
+        const recipientFocus=await page.locator('body').getAttribute('data-recipient-focus')==='true';
+        if(recipientFocus){
+          assert.equal(item.central,false);
+          assert.equal(await page.locator('#pd1901-platform-nexus').count(),0);
+          assert.notEqual(await page.locator('html').getAttribute('data-pd1901-nexus'),'ready');
+          assert.equal(missing.length,0);
+          record.controlled_exclusion='recipient-focus';
+          record.status='PASS';
+          results.push(record);await page.close();continue;
+        }
         await page.waitForFunction(()=>document.documentElement.dataset.pd1901Nexus==='ready',null,{timeout:20000});
         assert.equal(missing.length,0);
         if(item.central){
