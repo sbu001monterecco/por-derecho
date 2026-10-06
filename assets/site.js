@@ -6,6 +6,7 @@
   /*
    * Compatibility marker for the inherited loader chain.
    * site-pre-matkator-8584-20260903.js transitively executes the preserved
+   * acta-authority-interlink-20260831.js is invoked by that preserved chain;
    * site-pre-treasury-154-hq-20260828.js?v=20260828a release; do not load it
    * a second time here because that would duplicate inherited runtime modules.
    * The inherited visual chain also continues to load
