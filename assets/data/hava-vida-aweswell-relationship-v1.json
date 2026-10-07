@@ -1091,5 +1091,36 @@
     },
     "non_collapse_rule": "Layer 1 concerns beneficial interests in the UK HoldCo. Layer 2 concerns beneficial interests in two Spanish companies in favour of the UK HoldCo. Neither proves the other and neither changes registered legal title without its own source/legal bridge.",
     "org_chart": "ops/capital/AWESWELL_GROUP_OWNERSHIP_ORG_CHART_20261006.md"
+  },
+  "downstream_propagation_20261007": {
+    "control_id": "PD-HV-PINK-DOWNSTREAM-20261007-01",
+    "status": "ACTIVE_ADDITIVE",
+    "registered_legal_title_side": {
+      "person": "Patricia Domínguez",
+      "status": "HISTORICAL_SOURCE_SUPPORTED_CURRENT_TITLE_TO_VERIFY",
+      "boundary": "Hava Vida official incorporation record establishes Patricia as sole shareholder at incorporation; controlled Pink shareholder-book evidence records Patricia's holding. Current Spanish registry/shareholder evidence must confirm present legal title before asserting a stronger current registered-title conclusion."
+    },
+    "beneficial_equitable_side": {
+      "beneficiary": "AWESWELL LIMITED",
+      "status": "ATTRIBUTED_OPEN_LEGAL_SOURCE_BRIDGE",
+      "proposition_ids": [
+        "PD-HV-AW-TRUST-001",
+        "PD-PINK-AW-TRUST-001"
+      ],
+      "boundary": "Gil Marer's controlling attributed position is that Patricia held the Hava Vida and Pink Canary shares effectively on trust for AWESWELL LIMITED. This does not by itself establish legally effective trust/equitable ownership, Spanish recognition, UBO/PSC, tax or accounting treatment."
+    },
+    "reconstruction_rule": {
+      "method": "BLIND_UNITARY_BEFORE_DURING_AFTER",
+      "rule": "Determine historic ownership/control from the unitary UK-Spain documentary record, separating registered title, beneficial/equitable entitlement, actual control, funding, risk, economic benefit and accounting treatment. Gil's and Patricia's present recollections are explanatory/confirmatory, not the primary evidential foundation. Preserve contrary evidence."
+    },
+    "required_downstream_surfaces": [
+      "SRLN-2026 Annex Y — Group Legal Assets & Recovery Reference Register",
+      "SRLN-2026 Programme Admission Particulars and relevant ownership/group-structure annex or professional-review pack",
+      "AWESWELL balance-sheet reconstruction/restatement and consolidation-perimeter workpapers",
+      "AWESWELL audit / Rule 8.2 accountant and auditor scope for the proposed listed loan-note programme",
+      "BDO and other professional scoping communications, using qualified wording and without representing the trust/equitable position as independently established"
+    ],
+    "accounting_boundary": "No AWESWELL investment, subsidiary net assets, consolidation date or recognised value is assumed until reporting-date control/perimeter analysis and applicable accounting standards support it.",
+    "external_disclosure_boundary": "External professional communications should state the historic legal-title/registered-holder evidence and the separate management beneficial/equitable position, identify the verification task, and request professional determination rather than assert a concluded trust/legal-effect result."
   }
 }
