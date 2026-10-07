@@ -1,0 +1,33 @@
+name: Validate artifact lifecycle control
+
+on:
+  pull_request:
+    paths:
+      - '.github/governance/ARTIFACT_LIFECYCLE_CROSS_SURFACE_RECONCILIATION_07OCT2026.md'
+      - 'assets/data/artifact-lifecycle-cross-surface-v1.json'
+      - 'scripts/validate_artifact_lifecycle_cross_surface.py'
+      - 'AGENTS.md'
+      - 'CHATGPT_START_HERE.md'
+      - '.github/workflows/validate-artifact-lifecycle-control.yml'
+  push:
+    branches: [main]
+    paths:
+      - '.github/governance/ARTIFACT_LIFECYCLE_CROSS_SURFACE_RECONCILIATION_07OCT2026.md'
+      - 'assets/data/artifact-lifecycle-cross-surface-v1.json'
+      - 'scripts/validate_artifact_lifecycle_cross_surface.py'
+      - 'AGENTS.md'
+      - 'CHATGPT_START_HERE.md'
+      - '.github/workflows/validate-artifact-lifecycle-control.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: python scripts/validate_artifact_lifecycle_cross_surface.py
