@@ -1,0 +1,66 @@
+{
+  "schema": "por-derecho.catastro-workforce-evidence-caret.v1",
+  "control_date": "2026-09-19",
+  "repository_mode": "GITHUB_FIRST_GITLAB_BLOCKED",
+  "status": "ADDITIVE_EVIDENCE_SPINE",
+  "caret": [
+    {
+      "id": "^CAT-5137001FS1953N",
+      "kind": "catastro_perimeter",
+      "object": "5137001FS1953N / Sun Park / MYND Yaiza",
+      "question": "title, unit mapping, cadastral alteration, complaints, rectification requests, integrity alerts and referrals",
+      "boundary": "No whistleblower identities; request de-identified institutional metadata only."
+    },
+    {
+      "id": "^LAB-ERTE-ERE",
+      "kind": "labour_family",
+      "object": "Sun Park ERTE/ERE and workforce-loss chronology",
+      "question": "employer/operator identity, causes, consultation/resolution chain, workforce baseline",
+      "boundary": "Historical job loss is not by itself proof of later funding fraud or criminal causation."
+    },
+    {
+      "id": "^LAB-ARRECIFE-SOCIAL",
+      "kind": "proceedings_family",
+      "object": "Arrecife Social Court dismissal proceedings",
+      "question": "individual/collective labour consequences and responsible employer/operator at each date",
+      "boundary": "Cross-link without publishing unnecessary employee personal data."
+    },
+    {
+      "id": "^COMM-FMMM-PAMANIL",
+      "kind": "actor_structure",
+      "object": "Francisco Mario Matos Matas / PAMANIL / PAMALEXSHA / Community-administration perimeter",
+      "question": "appointment, instructions, contracts, invoices, custody, certifications and labour/social-security role",
+      "boundary": "Actor continuity is a lead, not collective liability."
+    },
+    {
+      "id": "^PUB-GC836-60JOBS",
+      "kind": "public_support",
+      "object": "GC/836/P06 — 60 jobs",
+      "question": "creation, verification, maintenance, methodology, timing and comparison with historical employment baseline",
+      "boundary": "Grant award is not proof of payment or compliance."
+    },
+    {
+      "id": "^TR-AC1007594",
+      "kind": "transparency_proceeding",
+      "object": "AC2000001007594 / CTBG appeal",
+      "question": "object-by-object repetition, effective delivery, later/dynamic documents and partial access",
+      "boundary": "CTBG is not asked to determine criminal liability."
+    },
+    {
+      "id": "^MEDIA-C7-20220530",
+      "kind": "historic_media",
+      "object": "Canarias7 30-May-2022 Acosta Matos headline / later unavailable URL",
+      "question": "contextual public/prosecutorial checkpoint only",
+      "boundary": "Does not prove article accuracy, disappearance cause, pressure, censorship, modus operandi or outcome."
+    }
+  ],
+  "interlinks": [
+    "^CAT-5137001FS1953N",
+    "^LAB-ERTE-ERE",
+    "^LAB-ARRECIFE-SOCIAL",
+    "^COMM-FMMM-PAMANIL",
+    "^PUB-GC836-60JOBS",
+    "^TR-AC1007594",
+    "^MEDIA-C7-20220530"
+  ]
+}
