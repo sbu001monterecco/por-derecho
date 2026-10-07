@@ -103,3 +103,15 @@ One explicit user authorisation permits one successful external send. Read-only 
 ## GitLab outage continuity
 
 Any public-safe capital-programme repository delta produced during the GitLab block is registered under `PD-DUALWRITE-20260921-01` for additive reconciliation when authenticated GitLab access returns. Private correspondence and restricted materials remain in private custody and are not replayed into public Git.
+
+## Dual personal/business relationship routing
+
+When the same financial institution services both a principal personally and a group company:
+
+1. Keep the personal and corporate account relationships distinct in every communication.
+2. Business-banking, capital, credit, treasury, payments, counsel and investor matters default to the relevant business mailbox.
+3. A personal mailbox may be used for personal-account authentication or where expressly authorised, but that must not silently re-characterise an underlying corporate inquiry.
+4. If a business-mailbox send fails, surface the failure; do not silently substitute a private mailbox.
+5. Use private case/reference linkage to connect personal verification with the corporate inquiry without duplicating sensitive identity or banking data.
+6. Ask the institution to route the substantive matter to the correct business/enterprise/credit team and record the routing state privately.
+7. Keep recipient-level case numbers, account identifiers, verification data and named-counterparty correspondence out of public Git.
