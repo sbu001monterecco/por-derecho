@@ -1,0 +1,73 @@
+{
+  "schema": "por-derecho.artifact-lifecycle-cross-surface.v1",
+  "control_id": "PD-GOV-ARTIFACT-LIFECYCLE-20261007-01",
+  "status": "ACTIVE_ADDITIVE_GOVERNANCE",
+  "roles": {
+    "chatgpt_library": "creation_recovery_bounded_custody",
+    "business_drive": "canonical_private_operational_home",
+    "gmail": "draft_and_provider_event_surface_not_master_register",
+    "git": "public_safe_governance_code_projection",
+    "matter_register": "identity_routing_state_pointer"
+  },
+  "registration_triggers": [
+    "external_use_or_signature_or_filing_or_review",
+    "substantive_legal_commercial_financial_evidential_governance_deliverable",
+    "fixed_export_or_package_version_confusion_risk",
+    "material_workstream_state_or_thread_only_conclusion",
+    "user_requests_preserve_canonicalise_reuse_file_send_sign_review_continue"
+  ],
+  "lifecycle_states": [
+    "CREATED",
+    "WORKING",
+    "REVIEW",
+    "APPROVED",
+    "SIGNED",
+    "SUBMITTED",
+    "SENT",
+    "REGISTERED",
+    "DELIVERY_EVIDENCED",
+    "ASSIGNED",
+    "ACCEPTED",
+    "SERVED",
+    "ACKNOWLEDGED",
+    "DECIDED",
+    "CLOSED",
+    "SUPERSEDED",
+    "WITHDRAWN",
+    "HOLD",
+    "UNKNOWN"
+  ],
+  "required_reconciliation_order": [
+    "conversation_files",
+    "chatgpt_library",
+    "canonical_private_drive",
+    "gmail_provider_events",
+    "github_gitlab_if_role_appropriate",
+    "matter_workspace_handoffs_and_manifests"
+  ],
+  "absence_language": {
+    "incomplete_search": "not located in the checked surfaces",
+    "complete_required_search": "not located after required scoped reconciliation"
+  },
+  "library_only_active_artifact": "AMBER_WRITEBACK_PENDING",
+  "thread_green_requires": [
+    "required_writeback_closed",
+    "current_version_pointer_resolved",
+    "release_state_source_backed",
+    "fresh_context_recoverable"
+  ],
+  "enforcement_levels": [
+    "policy_adopted",
+    "manual_connector_application",
+    "validator_coverage",
+    "cross_surface_runtime_automation",
+    "independent_assurance"
+  ],
+  "legacy_draft_classes": [
+    "CURRENT",
+    "SUPERSEDED",
+    "HOLD",
+    "ARCHIVE",
+    "UNKNOWN"
+  ]
+}
