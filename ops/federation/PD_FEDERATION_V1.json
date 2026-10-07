@@ -1,0 +1,135 @@
+{
+  "schema": "por-derecho.federation-control.v1",
+  "control_id": "PD-FEDERATION-V1-20260922",
+  "phase": "PHASE_III_A_FEDERATED_STATE_EXCHANGE_AND_TRUTH_GRAPH",
+  "authority_boundary": {
+    "canonical_host_migration": false,
+    "blind_bidirectional_mirroring": false,
+    "gitlab_role": "PRIVATE_CANONICAL_WORKING_AND_RECOVERY_AUTHORITY_SUBJECT_TO_CURRENT_REPOSITORY_CONTROLS",
+    "github_role": "PUBLIC_CONTINUITY_PUBLICATION_AND_INTEGRATION_SURFACE_SUBJECT_TO_CURRENT_REPOSITORY_CONTROLS",
+    "chatgpt_role": "SUPERVISED_ORCHESTRATOR_CONTINUITY_AND_RECONCILIATION",
+    "live_public_host_role": "DEPLOYMENT_READBACK_AUTHORITY_ONLY",
+    "external_action_authority": false
+  },
+  "extends": [
+    "por-derecho.evidence-control-plane.bootstrap.v1",
+    "por-derecho.control-plane-topology-shadow.v1"
+  ],
+  "portable_exchange_units": [
+    "FULL_TREE_MANIFEST",
+    "STATE_ENVELOPE",
+    "RECONCILIATION_DECISION",
+    "DEPENDENCY_REVIEW_QUEUE",
+    "CONTROL_RECEIPT",
+    "PUBLIC_PROJECTION_MANIFEST",
+    "RELEASE_ENVELOPE",
+    "LIVE_READBACK_RECEIPT"
+  ],
+  "recursive_engine": {
+    "mode": "BOUNDED_TRANSITIVE_REVIEW",
+    "max_hops": 32,
+    "cycle_policy": "FAIL_CLOSED_WITH_VISITED_SET",
+    "predecessor_required_after_genesis": true,
+    "revalidate_all_predecessor_assumptions": true,
+    "trigger_events": [
+      "GITHUB_MAIN_SHA_CHANGED",
+      "GITLAB_MAIN_SHA_CHANGED",
+      "RULESET_DIGEST_CHANGED",
+      "SOURCE_STATUS_CHANGED",
+      "ASSERTION_STATUS_CHANGED",
+      "IDENTITY_STATUS_CHANGED",
+      "PRIVACY_CLASSIFICATION_CHANGED",
+      "PATH_OR_BLOB_DIGEST_CHANGED",
+      "WRITER_OWNERSHIP_CHANGED",
+      "REQUIRED_GATE_STATUS_CHANGED",
+      "DEPLOYMENT_RECEIPT_CHANGED",
+      "LIVE_READBACK_CHANGED"
+    ],
+    "traversed_edges": [
+      "DEPENDS_ON",
+      "PROJECTS_TO",
+      "TRIGGERS_REVIEW_OF",
+      "SUPERSEDES",
+      "SUPERSEDED_BY"
+    ],
+    "terminal_conditions": [
+      "NO_UNEXPLAINED_MATERIAL_GAPS",
+      "NO_ACTIVE_PATH_COLLISION_FOR_TRANSACTION",
+      "ALL_REQUIRED_GATES_GREEN",
+      "PUBLICATION_IF_ANY_HAS_EXACT_LIVE_READBACK",
+      "CURRENT_HEADS_RECONFIRMED"
+    ]
+  },
+  "supervised_intelligence_roles": [
+    {
+      "role": "RETRIEVER",
+      "may": "locate_candidate_sources",
+      "must_not": "change_truth_or_legal_status"
+    },
+    {
+      "role": "EVIDENCE_ANALYST",
+      "may": "propose_assertions_relationships_contradictions",
+      "must_not": "silently_promote_allegation_to_finding"
+    },
+    {
+      "role": "ADVERSARIAL_REVIEWER",
+      "may": "seek_contrary_exculpatory_and_innocent_explanations",
+      "must_not": "discard_supporting_evidence"
+    },
+    {
+      "role": "INTEGRATOR",
+      "may": "reconcile_approved_objects_in_one_writer_lane",
+      "must_not": "overwrite_concurrent_writer_paths"
+    },
+    {
+      "role": "PROJECTION_REVIEWER",
+      "may": "classify_public_safe_private_and_bilingual_projection",
+      "must_not": "move_private_evidence_to_public_git"
+    },
+    {
+      "role": "RELEASE_VERIFIER",
+      "may": "verify_exact_head_build_deployment_and_live_bytes",
+      "must_not": "change_substantive_evidence_status"
+    }
+  ],
+  "truth_seeking_invariants": [
+    "SOURCE_IS_NOT_ASSERTION",
+    "ASSERTION_IS_NOT_LEGAL_FINDING",
+    "AUTHENTICATION_IS_NOT_TRUTH",
+    "CORRELATION_IS_NOT_CAUSATION",
+    "RELATIONSHIP_IS_NOT_TRANSFER_OF_KNOWLEDGE_INTENT_OR_RESPONSIBILITY",
+    "PRESERVE_CONTRARY_EXCULPATORY_AND_LAWFUL_ALTERNATIVES",
+    "NO_NUMERIC_TRUTH_SCORE",
+    "NO_SEMANTIC_ESCALATION_WITHOUT_SOURCE_AND_REVIEW",
+    "EVENT_TIME_AND_KNOWLEDGE_TIME_REMAIN_DISTINCT",
+    "CORRECTIONS_ARE_TYPED_APPEND_ONLY_SUPERSESSION"
+  ],
+  "host_bridge_rules": [
+    "COMPARE_COMPLETE_MANIFESTS_NOT_API_LIMITED_DIFFS",
+    "CLASSIFY_EVERY_DIFFERENCE_BEFORE_INTEGRATION",
+    "EXPLAINED_DIVERGENCE_IS_VALID_STATE",
+    "NO_WHOLESALE_MIRROR",
+    "ONE_BRANCH_AND_SCOPE_BOUNDED_LANE_PER_CHANGE_FAMILY",
+    "HOST_SPECIFIC_CI_MAY_DIFFER_WHILE_CANONICAL_CONTROL_ID_REMAINS_COMMON",
+    "GREEN_BUILD_IS_NOT_DEPLOYMENT_PROOF",
+    "LIVE_READBACK_IS_SEPARATE_FROM_MERGE_AND_BUILD"
+  ],
+  "chatgpt_continuity_rules": [
+    "MEMORY_IS_RETRIEVAL_AID_NOT_EVIDENCE",
+    "DYNAMICALLY_RESOLVE_CURRENT_HEADS_BEFORE_MUTATION",
+    "PRESERVE_CONTROLLING_HANDOVER_IN_LIBRARY",
+    "NEVER_CLAIM_ACTION_WITHOUT_SYSTEM_RECEIPT",
+    "DO_NOT_EXPOSE_PRIVATE_LOCATORS_OR_EVIDENCE_BODIES_IN_PUBLIC_CONTROL_RECORDS"
+  ],
+  "classification_states": [
+    "IMPORT_CANDIDATE",
+    "MANUAL_RECONCILIATION",
+    "EVIDENCE_ONLY",
+    "PRIVATE_ONLY",
+    "SUPERSEDED",
+    "UNSAFE",
+    "EXPLAINED_DIVERGENCE",
+    "BYTE_IDENTICAL"
+  ],
+  "claim_boundary": "Backend federation architecture only. It does not approve a case allegation, public content, merge, deployment, filing, email, social post or canonical-host migration."
+}

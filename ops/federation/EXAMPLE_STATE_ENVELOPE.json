@@ -1,0 +1,36 @@
+{
+  "schema": "por-derecho.federation-state-envelope.v1",
+  "envelope_id": "PD-FED-ENV-20260922-GENESIS",
+  "iteration": 0,
+  "predecessor": null,
+  "observed_heads": {
+    "github": "b7274d4be451e4443bb21defcfd39f999febf43c",
+    "gitlab": "121c46772d8ae90428ab54006466024798d9944c"
+  },
+  "ruleset_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+  "manifest_digests": {
+    "github": "1111111111111111111111111111111111111111111111111111111111111111",
+    "gitlab": "2222222222222222222222222222222222222222222222222222222222222222"
+  },
+  "decisions": [],
+  "review_queue": [
+    {
+      "object_id": "PD-FEDERATION-V1-20260922",
+      "trigger": "GENESIS_BOOTSTRAP",
+      "depth": 0,
+      "state": "OPEN"
+    }
+  ],
+  "receipts": {
+    "github": [],
+    "gitlab": [],
+    "live": []
+  },
+  "recursion": {
+    "triggered": true,
+    "visited_ids": [
+      "PD-FEDERATION-V1-20260922"
+    ],
+    "next_action": "REVIEW"
+  }
+}
