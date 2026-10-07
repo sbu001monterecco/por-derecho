@@ -209,12 +209,25 @@
   },
   "cross_controls": [
     "PD-CHATGPT-UCF-INTAKE-20260925-01",
-    "PD-COMMUNITY-COURT-COMPLETENESS-20260925-01"
+    "PD-COMMUNITY-COURT-COMPLETENESS-20260925-01",
+    "PD-COMMUNITY-PINK-CAM-BRIDGE-20260926-01"
   ],
   "court_completeness": {
     "control_id": "PD-COMMUNITY-COURT-COMPLETENESS-20260925-01",
     "principal_position": "With one exact exception still to be source-identified, Gil/AWESWELL state that Community-fee/governance proceedings generally did not adjudicate the complete underlying accounting/debt record.",
     "exact_exception": "OPEN_DO_NOT_GUESS",
     "mandatory_distinction": "PROCEEDING_OBJECT_VS_FULL_DEBT_VALIDITY"
+  },
+  "pink_cam_bridge": {
+    "control_id": "PD-COMMUNITY-PINK-CAM-BRIDGE-20260926-01",
+    "state": "SOURCE_LOCK_REQUIRED_FOR_2015_JUDGMENT_AND_2018_CAM_CLAUSE",
+    "required_chain": [
+      "2015_Pink_judgment",
+      "2016_quota_accounting_reset",
+      "2016_PwC_FMMM_reconstruction",
+      "2018_CAM_offer_assumption",
+      "performance_or_nonperformance",
+      "Pink_enforcement_or_non_enforcement"
+    ]
   }
 }

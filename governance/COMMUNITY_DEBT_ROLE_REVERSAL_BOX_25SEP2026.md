@@ -377,3 +377,10 @@ The investigation must trace:
 `Community debt/vote mechanism → recognition/contingency in concurso → later certification/spreadsheet → EUR1.14579829 better-bid burden → effect on competing offer(s) → adjudication/implementation → title/control/operation/income → present MYND outcome`.
 
 Each arrow is a separate proposition. The chain may support cumulative causation; it must not be declared proved merely because the endpoints exist.
+
+
+## 26 Sep 2026 supplement — Pink judgment / CAM acquisition performance bridge
+
+New cross-control: `PD-COMMUNITY-PINK-CAM-BRIDGE-20260926-01` in `governance/COMMUNITY_DEBT_PINK_CAM_CHAIN_26SEP2026.md` with machine-readable companion `assets/data/community-debt-pink-cam-chain-20260926.json`.
+
+It requires the 2015 Pink judgment, 2016 quota/accounting reset, PwC/FMMM payment reconstruction, 2018 CAM acquisition-debt undertaking, payment performance and Pink non-enforcement to be tested as one evidentiary chain. The 2015 judgment amount and the exact CAM clause remain source-lock items until native documents are produced.
