@@ -28,6 +28,10 @@ def validate(root: Path) -> dict:
             im.load();assert (im.width,im.height)==(record['width'],record['height'])
         result['images'].append({'path':record['path'],'sha256':record['sha256'],'decoded':True})
     disclosures={'es':'CARICATURA / REPRESENTACIÓN SATÍRICA — NO ES UN ANUNCIO REAL','en':'SATIRICAL / CARICATURE REPRESENTATION — NOT A REAL ADVERTISEMENT'}
+    frameworks={
+        'es':('arquitectura-engaños','La presunta arquitectura de engaños sucesivos y convergentes'),
+        'en':('architecture-of-successive-convergent-deception','The alleged architecture of successive and convergent deception'),
+    }
     for lang in ['es','en']:
         routes=[profile['routes'][lang],profile['family_routes'][lang]]
         for route in routes:
@@ -46,6 +50,9 @@ def validate(root: Path) -> dict:
                 assert local.is_file(),(route,u,'missing local route')
             if route==profile['family_routes'][lang]:
                 assert disclosures[lang] in s.get_text()
+                framework_id,framework_text=frameworks[lang]
+                assert s.find(id=framework_id)
+                assert framework_text in s.get_text(' ',strip=True)
                 sources=[i.get('src','') for i in s.find_all('img')]
                 for im in profile['images']:assert any(im['path'] in src for src in sources)
                 if lang=='en':assert s.find(id='aguiar-acosta-proposed-witness-pair')

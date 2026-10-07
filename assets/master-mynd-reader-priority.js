@@ -4,7 +4,7 @@
   const path = location.pathname.replace(/\/+$/, '/') ;
   const lists = {
     '/por-derecho/en/acosta-matos-family/': ['master-mynd-record', 'family-source-continuity'],
-    '/por-derecho/es/acosta-matos-familia/': ['master-mynd', 'alegacion', 'dos-atribuciones', 'arquitecto', 'fotografia-planos', 'llamada-2018', 'cronologia', 'respuesta-2025', 'familia-responsabilidad', 'gobierno-societario', 'origen-intervencion', 'metodologia', 'pregunta-unitaria', 'fuentes']
+    '/por-derecho/es/acosta-matos-familia/': ['master-mynd', 'arquitectura-engaños', 'alegacion', 'dos-atribuciones', 'arquitecto', 'fotografia-planos', 'llamada-2018', 'cronologia', 'respuesta-2025', 'familia-responsabilidad', 'gobierno-societario', 'origen-intervencion', 'metodologia', 'pregunta-unitaria', 'fuentes']
   };
   const ids = lists[path];
   if (!ids) return;
