@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "registry_id": "PD-POSITION-REGISTRY-20261001-01",
+  "entries": [
+    {
+      "id": "PD-PINK-POSITION-20260928-01",
+      "effective_date": "2026-09-28",
+      "class": "PARTY_POSITION",
+      "actor": "Gil Marer",
+      "status": "controlling_current_position",
+      "statement": "Rejects the characterisation 'Pink owed rent but could not afford to pay it' as his position. Primary attributed position challenges authority and validity from inception; operating costs/allocation are analysed without conceding the disputed legal obligation.",
+      "source_control": "GitHub PR #2004 / archive/PINK_RENT_PREMISE_REJECTION_28SEP2026.md",
+      "propagation": {
+        "github_control": "preserved_in_open_draft",
+        "github_public_pages": "open",
+        "gitlab_control": "open",
+        "gitlab_public_pages": "open",
+        "google_drive_master": "requires_current-version verification"
+      },
+      "contrary_record_required": [
+        "signed instrument and authority evidence",
+        "24 November 2015 judgment",
+        "Sentencia 163/2023 adverse and rejecting branches",
+        "professional responses and account records"
+      ],
+      "supersedes_editorial_shorthand": [
+        "affordability-first framing",
+        "cash-available-to-pay-rent wording when presented as Gil's primary position"
+      ],
+      "does_not_establish": [
+        "judicial nullity",
+        "deliberate falsity",
+        "automatic offset",
+        "collective criminal guilt"
+      ]
+    },
+    {
+      "id": "PD-JV1260-PINK-TRACK-LABELS-20260927",
+      "effective_date": "2026-09-27",
+      "class": "ANALYTICAL_CONTROL",
+      "status": "current",
+      "statement": "Track A means the private-owner proceedings concerning the 18-unit perimeter. Track B means the LPB/Pink contract, rent and calificación proceedings. Civil/possessory and criminal/forensic analysis apply across both.",
+      "propagation": {
+        "github": "merged",
+        "gitlab": "partial/open",
+        "drive": "preserved"
+      }
+    }
+  ]
+}
