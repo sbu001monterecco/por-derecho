@@ -1,0 +1,120 @@
+{
+  "control_id": "PD-FOUNDATIONS-1987-2008-20260928",
+  "edition_date": "2026-09-28",
+  "edition_state": "FIRST_VISUAL_READING_TRANSCRIPTION_REVIEW_PENDING",
+  "scope": {
+    "freshly_image_reviewed_pages": 48,
+    "held_pages_transcribed": 39,
+    "cexp_statute_articles": 22,
+    "transfer_clauses": 16,
+    "owners_statute_articles": 26,
+    "pool_rules_included": true
+  },
+  "sources": [
+    {
+      "id": "SP-CEXP-2008",
+      "existing_alias": "SP-CEXP-2008-05",
+      "pages": 15,
+      "components": [
+        {
+          "type": "statutes",
+          "first": 1,
+          "last": 7
+        },
+        {
+          "type": "26-May-2008 transfer",
+          "first": 8,
+          "last": 15
+        }
+      ],
+      "current_copy_sha256": "fac3b767e39bc2bbae526e307edbd4b85fbc6ebd59c6eac1c3b11e859612c6fd",
+      "current_copy_bytes": 19238476,
+      "second_copy_sha256": "4330d913fb3f2a39acdc60c06c0ac7c42062ad40b37c2764d67d10fc94679ba8",
+      "older_published_master_sha256": "f5fe1c25116c9845fe9ba26b76c3e8780f4fff5953b233d280369f5892c6b4d7",
+      "variant_result": "Two current copies differ in bytes; all 15 rendered page pixel hashes matched at the tested 1x RGB rendering. Neither current copy matches the older published master hash. No historical file alteration is inferred."
+    },
+    {
+      "id": "SP-CP-1987",
+      "pages": 24,
+      "current_copy_sha256": "8e23ec5dc71efa42aedbed578120672010eebd203744ddd8b4bb78f4e28a6037",
+      "current_copy_bytes": 4118100,
+      "variant_result": "Matches the previously recorded received-copy hash. Filename refers to 11-Nov-1987 deed; closing text says 9-Nov-1987. One page is rotated for reading only. Faint readings and a pool-rule continuity question remain marked."
+    },
+    {
+      "id": "1987-REGISTRY-COMPARISON-20140508",
+      "pages": 9,
+      "status": "IMAGE_READ_COMPARISON_ONLY",
+      "publication": "Not published in this edition. A separate 2014 certification of earlier registered material, not a replacement for the held 24-page source."
+    }
+  ],
+  "transcription": {
+    "language": "es",
+    "all_held_pages_addressed": true,
+    "independent_line_by_line_certification": false,
+    "normalisation": "Paragraph line wrapping only; source wording, inconsistent dates and uncertain passages preserved.",
+    "public_omissions": [
+      "personal identifiers",
+      "private home addresses",
+      "autograph images; associated printed text may be occluded in the source-image derivative but remains in transcription where appropriate"
+    ],
+    "originals_changed": false,
+    "english": "Article/clause explanation, not a complete certified translation."
+  },
+  "missing_contract_annexes": [
+    {
+      "annex": "I",
+      "referenced_page": 9,
+      "description": "21-May-2008 management-board authority"
+    },
+    {
+      "annex": "II",
+      "referenced_page": 11,
+      "description": "Personnel schedule at handover"
+    },
+    {
+      "annex": "III",
+      "referenced_page": 11,
+      "description": "Travel-agency/tour-operator contracts"
+    }
+  ],
+  "facsimile": {
+    "local_derivatives_prepared": true,
+    "repository_asset_delivery_verified": false,
+    "pages": 39,
+    "format": "Raster-only fresh PDF/JPEG derivatives; private originals retained unchanged.",
+    "reader_default": "Text reader does not request image assets before their delivery is verified.",
+    "public_image_release_requires": "Exact asset hashes, redaction verification, ordinary review/CI, merge/deployment and live readback."
+  },
+  "publication": {
+    "merged": false,
+    "deployed": false,
+    "live_verified": false,
+    "note": "Snapshot at preparation; later verified receipts control later states. Source recovery is not authentication, legal validity or current authority."
+  },
+  "related_controls": [
+    "../OWNER_STATUTES_1987_CEXP_2008_PUBLIC_DIGITAL_EDITION.md",
+    "../COMMUNITY_AUTHORITY_EVENTS_EMAILS_MEETINGS_ACTAS_PUBLIC_REGISTER.md"
+  ],
+  "files": [
+    {
+      "path": "CEXP_2008_TRANSCRIPCION_ES.md",
+      "bytes": 29265,
+      "sha256": "a128979496f133a34bb169333b9993a2f1c0ede96f0c7a45da9fd463c9b38e1c"
+    },
+    {
+      "path": "ESTATUTOS_1987_TRANSCRIPCION_ES.md",
+      "bytes": 23675,
+      "sha256": "2078bfe62899ae253ca4b28fd442fafbf35031628fc66ec42334475a416f50b1"
+    },
+    {
+      "path": "DIGEST_AND_RECOVERY.md",
+      "bytes": 16168,
+      "sha256": "c3a539eb0b462bf4dd1f8c40c69106f0748b3dff8e257df053c862103ecef0f6"
+    },
+    {
+      "path": "index.html",
+      "bytes": 16978,
+      "sha256": "e0fc3c7f7f9ad6b78327d41791beb61c8065d41777497bd1b7975e1d6f89c250"
+    }
+  ]
+}
