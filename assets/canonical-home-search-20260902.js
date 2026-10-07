@@ -221,6 +221,15 @@ if (!main || !siteHeader) return;
 // The homepage contains nested evidence <details> blocks and generic
 // insertion points must never place this primary navigation control inside one.
 const mountTopLevel = () => {
+  const refinedScope = document.body.classList.contains('pd-home-refined')
+    ? document.querySelector('#economic-scope-20260925')
+    : null;
+  if (refinedScope) {
+    if (section.previousElementSibling !== refinedScope || section.closest('details')) {
+      refinedScope.insertAdjacentElement('afterend', section);
+    }
+    return;
+  }
   if (section.parentElement !== document.body || section.previousElementSibling !== siteHeader || section.closest('details')) {
     siteHeader.insertAdjacentElement('afterend', section);
   }
