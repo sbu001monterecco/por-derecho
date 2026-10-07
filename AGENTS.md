@@ -797,3 +797,17 @@ Apply `PD-CHATGPT-UCF-INTAKE-20260925-01` from `.github/governance/CHATGPT_UNITA
 For every in-scope substantive matter, recover its existing ID in `data/workspace-register-v1.json` and current subject/private-custody controls; checkpoint material source, decision, correction, artifact and failure changes during work. Apply the existing PD-AWP/PD-WCH/CWR/digest/ECP stack, not competing continuity registers. New runtime checkpoints require `action_ledger`, bounded `coverage` and dated `host_availability`; public-summary export additionally requires recorded approval bound to the exact summary hash. See `docs/WORKSPACE_PERSISTENCE_RUNBOOK.md` and `examples/workspace-checkpoint.example.json`. Preserve historical event bytes, contrary evidence, supersession and dependency-review links.
 
 Public registers carry neutral workspace aliases and approved derivatives; private evidence, provider locators, privileged advice, UK strategy and unsent drafts remain private. Governance success is not filing, legal readiness, corpus completeness, host parity or deployment. The rule covers registered and newly recognised in-scope workspaces while preserving the unrelated-task boundary; no unavailable universal ChatGPT hook is claimed.
+
+
+## PD-GOV-ARTIFACT — ARTIFACT LIFECYCLE / CROSS-SURFACE RECONCILIATION
+
+Apply `PD-GOV-ARTIFACT-LIFECYCLE-20261007-01` from `.github/governance/ARTIFACT_LIFECYCLE_CROSS_SURFACE_RECONCILIATION_07OCT2026.md` and `assets/data/artifact-lifecycle-cross-surface-v1.json` to every substantive reusable artifact or draft.
+
+- A substantive artifact created or recovered in ChatGPT Library is not platform-GREEN for an active matter merely because the bytes exist there. When the matter has a canonical private Drive home, write back/link the exact version there or record `WRITEBACK_PENDING` / AMBER.
+- Before saying a prior artifact “does not exist” or “was not created”, reconcile the required surfaces: current conversation/files → ChatGPT Library → canonical private Drive → Gmail provider events when relevant → GitHub/GitLab when role-appropriate → matter/workspace handoffs/manifests. If the required surfaces were not all checked, say “not located in the checked surfaces”.
+- Keep matter ID, artifact family ID, artifact version, source occurrence, release/filing event and provider IDs separate. “FINAL”, newest-modified time, Gmail Draft status or a filename is not a current-version authority.
+- Exactly one current version should be designated per artifact family/purpose, or the family must be explicitly HOLD/conflicted. Preserve superseded versions and never treat a lingering Gmail draft as current merely because it remains in Drafts.
+- Keep CREATED/WORKING/REVIEW/APPROVED/SIGNED/SUBMITTED-or-SENT/REGISTERED-or-DELIVERY-EVIDENCED/ASSIGNED/ACCEPTED-or-SERVED-or-ACKNOWLEDGED/DECIDED-or-CLOSED distinct and source-backed. Keep lifecycle state separate from custody, merits and deletion readiness.
+- Gmail Draft count is not an outstanding-task count. Classify active/high-value drafts as CURRENT, SUPERSEDED, HOLD, ARCHIVE or UNKNOWN before acting; do not bulk-delete unknown historical drafts.
+- Index-first retrieval is the normal path; cross-system full scans are fallback/repair when the current pointer is absent, stale, conflicting or fails readback.
+- A thread cannot be deletion-GREEN while a material reusable artifact exists only in chat/Library and required canonical write-back/current-version routing remains open.
