@@ -58,34 +58,48 @@
   </url>
   <url>
     <loc>https://sbu001monterecco.github.io/por-derecho/es/relaciones-de-capital/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/relaciones-de-capital/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/capital-relationships/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/capital-relationships/" />
   </url>
   <url>
     <loc>https://sbu001monterecco.github.io/por-derecho/en/capital-relationships/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/capital-relationships/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/relaciones-de-capital/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/capital-relationships/" />
   </url>
   <url>
     <loc>https://sbu001monterecco.github.io/por-derecho/es/capital-institucional/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/capital-institucional/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/institutional-capital/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/institutional-capital/" />
   </url>
   <url>
     <loc>https://sbu001monterecco.github.io/por-derecho/en/institutional-capital/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/institutional-capital/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/capital-institucional/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/institutional-capital/" />
   </url>
   <url>
     <loc>https://sbu001monterecco.github.io/por-derecho/en/capital/</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/capital/readiness/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/capital/readiness/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/preparacion-capital/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/capital/readiness/" />
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/preparacion-capital/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/preparacion-capital/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/capital/readiness/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/capital/readiness/" />
   </url>
 </urlset>
