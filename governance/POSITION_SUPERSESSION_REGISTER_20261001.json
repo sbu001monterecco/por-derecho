@@ -1,0 +1,36 @@
+{
+  "schema": "PD-POSITION-SUPERSESSION-v1",
+  "as_of": "2026-10-01T22:20:00+01:00",
+  "positions": [
+    {
+      "position_id": "PD-PINK-POSITION-20260928-01",
+      "effective_date": "2026-09-28",
+      "authority": "Gil Marer current attributed position",
+      "supersedes_editorial_shorthand": [
+        "Pink owed rent but could not afford to pay it",
+        "any neutral project wording that assumes an enforceable rent debt and frames the issue first as affordability"
+      ],
+      "controlling_wording": "Primary position: authority/validity of the 6-Feb-2012 LPB-Monterecco/Pink arrangement is challenged from inception. Financial reconstruction is conditional/without admission and must preserve adverse judgments and contrary evidence.",
+      "historical_sources_unchanged": true,
+      "propagation": {
+        "github_draft_pr_2004": "preserved",
+        "github_main": "not_control_id_integrated_as_of_audit",
+        "gitlab": "not_integrated_as_of_audit",
+        "google_drive_private_controls": "preserved"
+      },
+      "color": "RED_UNTIL_FULLY_PROPAGATED"
+    },
+    {
+      "position_id": "PD-JTP-POSITION-20260928-01",
+      "effective_date": "2026-09-28",
+      "authority": "Gil Marer current attributed allegation",
+      "controlling_wording": "Gil alleges JTP had responsibility to defend the LPB/Monterecco-side interests, failed unjustifiably, and retrospectively alleges undue/coercive influence by the judge and/or insolvency administrator. No coercion, communication, mens rea or causal mechanism is treated as established.",
+      "propagation": {
+        "private_drive_audit": "preserved",
+        "github_jtp_master": "pending",
+        "gitlab": "pending"
+      },
+      "color": "AMBER_RED_UNTIL_PROPAGATED"
+    }
+  ]
+}
