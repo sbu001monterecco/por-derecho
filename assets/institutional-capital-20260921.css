@@ -33,7 +33,7 @@
 
 .ic-page .ic-journey{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
 .ic-page .ic-journey article{overflow:hidden;border:1px solid rgba(13,47,56,.18);border-radius:10px;background:#fff;min-height:100%;display:flex;flex-direction:column}
-.ic-page .ic-journey img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#e9eff0}
+.ic-page .ic-journey img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;background:#f4f7f7}
 .ic-page .ic-journey article>span,.ic-page .ic-journey-text>span{display:block;padding:12px 14px 0;color:#0d6572;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
 .ic-page .ic-journey article>strong,.ic-page .ic-journey-text>strong{display:block;padding:7px 14px 0;font-family:Georgia,serif;font-size:1.05rem;line-height:1.2}
 .ic-page .ic-journey article>p,.ic-page .ic-journey-text>p{padding:8px 14px 16px;margin:0;color:#526467;font-size:.84rem}
