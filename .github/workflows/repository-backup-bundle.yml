@@ -94,10 +94,11 @@ jobs:
           path: artifacts/repository-backup
           if-no-files-found: error
           retention-days: 90
-      - name: Mirror all refs to independent remote when configured
+      - name: Fail closed if optional destructive mirror is configured
         if: env.BACKUP_MIRROR_URL != ''
         run: |
-          git push --mirror "$BACKUP_MIRROR_URL"
+          echo '::error::Independent mirror held: git push --mirror can delete or rewrite destination-only historical refs. Recovery bundle remains uploaded. Require owner-reviewed non-destructive retention/mapping before activation.'
+          exit 1
       - name: Record independent-backup gap when mirror is not configured
         if: env.BACKUP_MIRROR_URL == ''
         run: |
