@@ -1,0 +1,92 @@
+name: Existing recovery archive transport
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/repository-backup-transport.yml'
+      - 'scripts/repository_backup_transport.py'
+      - 'tests/test_repository_backup_transport.py'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/repository-backup-transport.yml'
+      - 'scripts/repository_backup_transport.py'
+      - 'tests/test_repository_backup_transport.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: existing-backup-transport-11746464203
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - run: python3 -m unittest discover -s tests -p 'test_repository_backup_transport.py' -v
+  export:
+    if: >-
+      github.repository == 'sbu001monterecco/por-derecho' &&
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Verify and split the existing immutable archive without rebuilding
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/repository_backup_transport.py export "$RUNNER_TEMP/backup-transport"
+      - name: Upload lossless part 1
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: pd-backup-11746464203-part-01
+          path: ${{ runner.temp }}/backup-transport/archive.part0001
+          compression-level: 0
+          retention-days: 30
+          if-no-files-found: error
+      - name: Upload lossless part 2
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: pd-backup-11746464203-part-02
+          path: ${{ runner.temp }}/backup-transport/archive.part0002
+          compression-level: 0
+          retention-days: 30
+          if-no-files-found: error
+      - name: Upload lossless part 3
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: pd-backup-11746464203-part-03
+          path: ${{ runner.temp }}/backup-transport/archive.part0003
+          compression-level: 0
+          retention-days: 30
+          if-no-files-found: error
+      - name: Upload lossless part 4
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: pd-backup-11746464203-part-04
+          path: ${{ runner.temp }}/backup-transport/archive.part0004
+          compression-level: 0
+          retention-days: 30
+          if-no-files-found: error
+      - name: Upload manifest and qualified source receipt
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: pd-backup-11746464203-manifest
+          path: |
+            ${{ runner.temp }}/backup-transport/manifest.json
+            ${{ runner.temp }}/backup-transport/source_receipt.json
+          if-no-files-found: error
+          retention-days: 30
