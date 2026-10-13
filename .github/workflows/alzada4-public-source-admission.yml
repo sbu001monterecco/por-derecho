@@ -1,0 +1,28 @@
+name: Alzada 4 public source admission
+on:
+  push:
+    branches: [publication/alzada4-source-perimeter-20261013]
+    paths:
+      - .github/workflows/alzada4-public-source-admission.yml
+      - scripts/materialize_alzada4_public_source.py
+permissions:
+  contents: read
+concurrency:
+  group: alzada4-public-source-admission
+  cancel-in-progress: false
+jobs:
+  admit:
+    if: github.repository == 'sbu001monterecco/por-derecho' && github.ref == 'refs/heads/publication/alzada4-source-perimeter-20261013'
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Admit only the exact privacy-reviewed five-page source onto this non-main branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/materialize_alzada4_public_source.py
