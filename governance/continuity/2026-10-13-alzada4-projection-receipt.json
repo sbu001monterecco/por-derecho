@@ -8,7 +8,7 @@
   "projection_matches": {
     "assets/data/proceedings-master-public-v1.json": 1,
     "assets/data/community-acta-authority-interconnectivity-v1.json": 1,
-    "assets/data/concurso36-denominator-gap-v1.json": 1
+    "assets/data/concurso36-denominator-gap-v1.json": 0
   },
   "backlinks": [
     "es/ric-private-equity-sun-park/index.html",
@@ -20,11 +20,12 @@
     "en/antonio-cogolludo-rojas/index.html",
     "en/shaila-maria-cogolludo-ramos/index.html",
     "es/patron-efectos-favorables-acosta-matos/index.html",
+    "en/acosta-matos-favourable-effect-pattern/index.html",
     "es/index.html",
     "en/index.html"
   ],
   "exceptions": [
-    "en/pattern-favourable-effects-acosta-matos/index.html: optional backlink target not present"
+    "assets/data/concurso36-denominator-gap-v1.json: no unambiguous parent record matched; not rewritten"
   ],
   "files": [
     {
@@ -58,11 +59,6 @@
       "sha256": "32eac934daa9ff322badbd93cd53836dbabac85042188b4a444f368247d6deb6"
     },
     {
-      "path": "assets/data/concurso36-denominator-gap-v1.json",
-      "bytes": 9515,
-      "sha256": "b0b69dfc7718d532854ca1b6a786da63f8900c4c09d51d9ed5c7ea778f8b16d5"
-    },
-    {
       "path": "assets/data/eg17-20-26-alzada-continuity-20260924.json",
       "bytes": 18074,
       "sha256": "ff6115c889d6dcf4953202c86cda13913c68d5c1059618653aeb34298c87783e"
@@ -76,6 +72,11 @@
       "path": "docs/continuity/2026-09-24-eg17-20-26-alzada.md",
       "bytes": 6053,
       "sha256": "0e9eb73f90bb0f6e0f13de30256f33fedb595fa5787c5ce538f24610f331e86b"
+    },
+    {
+      "path": "en/acosta-matos-favourable-effect-pattern/index.html",
+      "bytes": 11863,
+      "sha256": "c071f6dba98757e3d85b889578f56b3df198adef5cfb6ebba9de33ff028e4614"
     },
     {
       "path": "en/alzada-4-2026/index.html",
