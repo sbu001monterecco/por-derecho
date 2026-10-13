@@ -5,6 +5,8 @@ on:
     paths:
       - .github/workflows/alzada4-public-source-admission.yml
       - scripts/materialize_alzada4_public_source.py
+      - scripts/prepare_alzada4_projection.py
+      - governance/continuity/2026-10-13-alzada4-publication-plan.json
 permissions:
   contents: read
 concurrency:
@@ -14,7 +16,7 @@ jobs:
   admit:
     if: github.repository == 'sbu001monterecco/por-derecho' && github.ref == 'refs/heads/publication/alzada4-source-perimeter-20261013'
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    timeout-minutes: 8
     permissions:
       contents: write
     steps:
@@ -22,7 +24,11 @@ jobs:
         with:
           fetch-depth: 1
           persist-credentials: false
-      - name: Admit only the exact privacy-reviewed five-page source onto this non-main branch
+      - name: Check exact source already admitted; never replace a different source
         env:
           GH_TOKEN: ${{ github.token }}
         run: python3 scripts/materialize_alzada4_public_source.py
+      - name: Prepare bounded canonical and full-reader projections on this non-main branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/prepare_alzada4_projection.py --commit
