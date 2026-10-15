@@ -1,15 +1,82 @@
 {
-  "schema":"por-derecho.outbound-brand-dual-public-link.v1",
-  "control":"PD-GOV-PD-IDENTIDAD-VISUAL-DUALHOST-20261015-01",
-  "canonical_master":"Google Drive Corporate Brain / Canonical Rules / row 38",
-  "adopted":"2026-10-15",
-  "scope":"Por Derecho/El Segundo Par de Ojos; new, substantive, freely formatted outbound materials and official covers",
-  "name_es":"Por Derecho — El Segundo Par de Ojos",
-  "logo":{"path":"assets/por-derecho/second-pair-eyes.svg","git_blob_sha":"7188581d7b88673f39db9582d184e0a47c55263f","usage":"exact approved source, rasterization allowed without restyling"},
-  "colors":{"navy":"#0B2B45","navy_2":"#123E5D","gold":"#C58A2B","ivory":"#FFFDF8","ink":"#102638","sky":"#EAF2F6"},
-  "public_pair":{"github":"https://sbu001monterecco.github.io/por-derecho/es/por-derecho/","gitlab":"https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/por-derecho/","live_verified_date":"2026-10-15","literal_byte_parity_claimed":false,"rule":"pair matter-specific public links where accessible; fallback to method, never silently link a private GitLab repository"},
-  "approved_png_candidates":[{"path":"assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png","git_blob_sha":"a73795442ac78df702685561d94acef687035e2b","material_context":"PwC April 2016 evidence; use only on relevance and privacy/identity check"},{"path":"assets/evidence/email-used-20260822/san-telmo-ricpe-sun-park-stamp-v1-ES.png","git_blob_sha":"4c334ed4deebcd5e852ede46307c1312233ab0a1","material_context":"San Telmo/RICPE asset context; use only on relevance and privacy/identity check"}],
-  "image_selection":{"default":"approved directly relevant source PNG with source-date/caption/evidence state; preserve source original separately","minimum_in_flexible_documents":1,"no_synthetic_faces":true,"privacy_review_required":true,"allowed_exceptions":["FORM_LIMIT","IMAGE_NOT_MATERIALLY_RELEVANT","PRIVACY_OR_PRIVILEGE","ATTACHMENT_CAPACITY","URGENT_FILING"]},
-  "official_form_rules":{"filer":"Gil Marer, natural person when the underlying request is personal","branded_cover_separate_from_original":true,"no_automatic_registration":true,"no_official_endorsement_implication":true},
-  "runtime":{"policy_active":true,"sheet_readback":true,"github_main_merged":false,"gitlab_main_merged":false,"global_send_gate_tested":false,"manual_sample_prepared":true}
+  "schema": "por-derecho.outbound-brand-dual-public-link.v1",
+  "control": "PD-GOV-PD-IDENTIDAD-VISUAL-DUALHOST-20261015-01",
+  "canonical_master": "Google Drive Corporate Brain / Canonical Rules / row 38",
+  "adopted": "2026-10-15",
+  "scope": "Por Derecho/El Segundo Par de Ojos; new, substantive, freely formatted outbound materials and official covers",
+  "name_es": "Por Derecho — El Segundo Par de Ojos",
+  "logo": {
+    "path": "assets/por-derecho/second-pair-eyes.svg",
+    "git_blob_sha": "7188581d7b88673f39db9582d184e0a47c55263f",
+    "usage": "exact approved source, rasterization allowed without restyling"
+  },
+  "colors": {
+    "navy": "#0B2B45",
+    "navy_2": "#123E5D",
+    "gold": "#C58A2B",
+    "ivory": "#FFFDF8",
+    "ink": "#102638",
+    "sky": "#EAF2F6"
+  },
+  "public_pair": {
+    "github": "https://sbu001monterecco.github.io/por-derecho/es/por-derecho/",
+    "gitlab": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/por-derecho-setup-or-gitlab-setup/es/por-derecho/",
+    "live_verified_date": "2026-10-15",
+    "literal_byte_parity_claimed": false,
+    "rule": "pair matter-specific public links where accessible; fallback to method, never silently link a private GitLab repository"
+  },
+  "approved_png_candidates": [
+    {
+      "path": "assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png",
+      "git_blob_sha": "a73795442ac78df702685561d94acef687035e2b",
+      "material_context": "PwC April 2016 evidence; use only on relevance and privacy/identity check"
+    },
+    {
+      "path": "assets/evidence/email-used-20260822/san-telmo-ricpe-sun-park-stamp-v1-ES.png",
+      "git_blob_sha": "4c334ed4deebcd5e852ede46307c1312233ab0a1",
+      "material_context": "San Telmo/RICPE asset context; use only on relevance and privacy/identity check"
+    }
+  ],
+  "image_selection": {
+    "default": "approved directly relevant source PNG with source-date/caption/evidence state; preserve source original separately",
+    "minimum_in_flexible_documents": 1,
+    "no_synthetic_faces": true,
+    "privacy_review_required": true,
+    "allowed_exceptions": [
+      "FORM_LIMIT",
+      "IMAGE_NOT_MATERIALLY_RELEVANT",
+      "PRIVACY_OR_PRIVILEGE",
+      "ATTACHMENT_CAPACITY",
+      "URGENT_FILING"
+    ]
+  },
+  "official_form_rules": {
+    "filer": "Gil Marer, natural person when the underlying request is personal",
+    "branded_cover_separate_from_original": true,
+    "no_automatic_registration": true,
+    "no_official_endorsement_implication": true
+  },
+  "runtime": {
+    "policy_active": true,
+    "sheet_readback": true,
+    "github_main_merged": false,
+    "gitlab_main_merged": false,
+    "global_send_gate_tested": false,
+    "manual_sample_prepared": true
+  },
+  "signature_policy": {
+    "owner_instruction_date": "2026-10-15",
+    "scope": "NEW Gil Marer-authored Por Derecho personal filing/cover or message; never third-party issued originals; no autonomous external send",
+    "date_place_sample_15oct2026": "En San Cristóbal de La Laguna, Tenerife, a 15 de octubre de 2026.",
+    "place": "San Cristóbal de La Laguna, Tenerife",
+    "printed_signature": "Fdo.: Gil Marer",
+    "private_signature_control": "GM-SIGN-20261005-01",
+    "approved_private_graphic": "GM blue personal mark, authorised 8 Oct derivative; private original must be retrieved and checked, never uploaded alone to public Git repositories",
+    "qualified_electronic_signature": false,
+    "register_electronic_signature_required_separately": true,
+    "actual_date_per_new_document": true,
+    "existing_sent_13oct_originals_unchanged": true,
+    "new_15oct_packet_state": "PREPARED_UNFILED",
+    "authority_scope": "explicit owner direction governs visual drafting; actual legal validity/external filing subject to normal permissions and portal eID"
+  }
 }
