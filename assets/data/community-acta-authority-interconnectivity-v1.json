@@ -2570,7 +2570,7 @@
     },
     {
       "master_id": "GC-LAJ-021",
-      "record_type": "REGISTRATION_ONLY",
+      "record_type": "GOVERNANCE_SUPERVISION",
       "stream": "LAJ / court-office supervision",
       "organ": "TSJ Secretaría de Gobierno / Coordinación Provincial / national justice-service office",
       "current_custodian": "Same offices",
@@ -2578,9 +2578,9 @@
       "period": "15/08/2026–24/09/2026",
       "connection": "LAJ supervisory corpus",
       "object": "15-Aug LAJ supervisory corpus; 20-Sep supervening Provincial contribution adds Ref21/Ref24/DP1901; EG17/20-26 response; limited alzada",
-      "status": "Registered; EG17/20-26 decision located; limited alzada filed 24 Sep 2026 as REGAGE26e00083460291; forwarding and current outcome pending",
+      "status": "Alzada 4/2026 dismissed 13 Oct 2026; receipt with prescribed report on29Sep stated in decision; complete transmitted file remains unverified",
       "source_status": "VERIFIED_PRIMARY",
-      "open_reference_gap": "Confirm 73341382→registro general 20-2026; prove 20-26→TSJC transfer; prove alzada forwarding and complete ordered file; obtain judicial custodian outputs",
+      "open_reference_gap": "Complete indexed administrative file/native prescribed provincial report; distinct transfer records; notification/preservation evidence; separate EG38 status; asset-income and individual-attribution proof",
       "group_id": "JUDICIAL_POLICE_SUPERVISION",
       "axis_ids": [
         "AX-AUTHORITY",
@@ -2598,7 +2598,15 @@
       ],
       "relationship_strength": "DEPENDENCY_TEST_ONLY",
       "boundary_en": "Registration or supervisory possession is not file incorporation, examination, personal knowledge, agreement, wrongdoing or liability.",
-      "boundary_es": "La posesión registral o supervisora no equivale a incorporación, examen, conocimiento personal, acuerdo, ilicitud ni responsabilidad."
+      "boundary_es": "La posesión registral o supervisora no equivale a incorporación, examen, conocimiento personal, acuerdo, ilicitud ni responsabilidad.",
+      "latest_alzada4_control": {
+        "date": "2026-10-13",
+        "reference": "Alzada 4/2026",
+        "outcome": "DISMISSED",
+        "control": "assets/data/eg17-20-26-alzada-continuity-20260924.json",
+        "full_source": "evidence/public/2026-10-13-alzada4/decision-full-public-facsimile.pdf",
+        "complete_authority_file": "OPEN"
+      }
     },
     {
       "master_id": "GC-POL-024",

@@ -1,0 +1,39 @@
+name: Alzada 4 source and reader validation
+on:
+  pull_request:
+    paths:
+      - '**alzada4**'
+      - '**alzada-4-2026/**'
+      - 'evidence/public/2026-10-13-alzada4/**'
+      - 'assets/data/eg17-20-26-alzada-continuity-20260924.json'
+  push:
+    branches: [publication/alzada4-source-perimeter-20261013]
+    paths:
+      - .github/workflows/alzada4-source-reader-validation.yml
+      - scripts/test_alzada4_reader.py
+permissions:
+  contents: read
+jobs:
+  scoped-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Install pinned isolated PDF/browser validation tools
+        run: |
+          python3 -m venv /tmp/alzada4-test-venv
+          /tmp/alzada4-test-venv/bin/pip install --disable-pip-version-check playwright==1.55.0 PyMuPDF==1.26.4
+          /tmp/alzada4-test-venv/bin/python -m playwright install --with-deps chromium
+      - name: Validate five-page source, exact existing-record scope and desktop/mobile readers
+        run: /tmp/alzada4-test-venv/bin/python scripts/test_alzada4_reader.py
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: alzada4-reviewed-source-${{ github.run_id }}
+          path: /tmp/alzada4-reviewed-export/
+          if-no-files-found: error
+          retention-days: 30

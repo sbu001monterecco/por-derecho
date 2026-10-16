@@ -1,0 +1,63 @@
+name: Alzada 4 bounded integration diagnostics
+on:
+  push:
+    branches: [publication/alzada4-source-perimeter-20261013]
+    paths: [.github/workflows/alzada4-bounded-diagnostics.yml]
+permissions:
+  contents: read
+  actions: read
+  checks: read
+jobs:
+  diagnostics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Export public tracked text and finite failed-check log tails without mutation
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: python
+        run: |
+          import json, pathlib, subprocess, zipfile
+          root=pathlib.Path.cwd(); out=pathlib.Path('/tmp/alzada4-diagnostics'); out.mkdir()
+          target='6f5e87f8750eec53088f39f29fe58684a4a047af'
+          repo='sbu001monterecco/por-derecho'
+          def api(path):
+            r=subprocess.run(['gh','api','repos/'+repo+'/'+path],capture_output=True,timeout=45)
+            if r.returncode:return {'error':r.stderr.decode('utf-8','replace')[:500]}
+            return json.loads(r.stdout)
+          checks=api('commits/'+target+'/check-runs?per_page=100')
+          summary=[]
+          for x in checks.get('check_runs',[]):
+            row={k:x.get(k) for k in ['id','name','status','conclusion','html_url']}
+            if x.get('conclusion')=='failure':
+              r=subprocess.run(['gh','api','repos/'+repo+'/actions/jobs/'+str(x['id'])+'/logs'],capture_output=True,timeout=60)
+              text=r.stdout.decode('utf-8','replace') if r.returncode==0 else r.stderr.decode('utf-8','replace')
+              (out/(str(x['id'])+'.log')).write_text(text[-40000:])
+              row['tail_file']=str(x['id'])+'.log'
+              annotations=api('check-runs/'+str(x['id'])+'/annotations?per_page=100')
+              row['annotations']=annotations
+            summary.append(row)
+          (out/'checks.json').write_text(json.dumps({'target':target,'checks':summary},ensure_ascii=False,indent=2))
+          files=subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
+          manifest=[]
+          with zipfile.ZipFile(out/'tracked-text.zip','w',zipfile.ZIP_DEFLATED) as z:
+            for name in files:
+              if not name:continue
+              p=root/name
+              if not p.is_file() or p.stat().st_size>8_000_000:continue
+              try:raw=p.read_bytes();raw.decode('utf-8')
+              except (UnicodeError,OSError):continue
+              z.writestr(name,raw);manifest.append({'path':name,'bytes':len(raw)})
+          (out/'manifest.json').write_text(json.dumps(manifest,indent=2))
+          print(json.dumps({'target':target,'checks':len(summary),'failed':sum(x.get('conclusion')=='failure' for x in summary),'text_files':len(manifest),'mutation':'NONE'}))
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: alzada4-bounded-diagnostics-${{ github.run_id }}
+          path: /tmp/alzada4-diagnostics/
+          retention-days: 7
+          if-no-files-found: error

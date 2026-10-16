@@ -1,0 +1,147 @@
+{
+  "control_id": "PD-LAJ-20-26-20260924-01",
+  "date": "2026-10-13",
+  "status": "PREMERGE_PROJECTION_PREPARED_NOT_DEPLOYMENT",
+  "master_parent_count": 1,
+  "source_pages": 5,
+  "private_actor_count": 5,
+  "projection_matches": {
+    "assets/data/proceedings-master-public-v1.json": 1,
+    "assets/data/community-acta-authority-interconnectivity-v1.json": 1,
+    "assets/data/concurso36-denominator-gap-v1.json": 0
+  },
+  "backlinks": [
+    "es/ric-private-equity-sun-park/index.html",
+    "es/francisco-mario-matos-matas/index.html",
+    "es/antonio-cogolludo-rojas/index.html",
+    "es/shaila-maria-cogolludo-ramos/index.html",
+    "en/ric-private-equity-sun-park/index.html",
+    "en/francisco-mario-matos-matas/index.html",
+    "en/antonio-cogolludo-rojas/index.html",
+    "en/shaila-maria-cogolludo-ramos/index.html",
+    "es/patron-efectos-favorables-acosta-matos/index.html",
+    "en/acosta-matos-favourable-effect-pattern/index.html",
+    "es/index.html",
+    "en/index.html"
+  ],
+  "exceptions": [
+    "assets/data/concurso36-denominator-gap-v1.json: no unambiguous parent record matched; not rewritten"
+  ],
+  "files": [
+    {
+      "path": "CHATGPT_START_HERE.md",
+      "bytes": 138346,
+      "sha256": "af5c525053aa218710784086e49f4a9d3e9b4e47f7b16cf091aa3cfc87f2be0b"
+    },
+    {
+      "path": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+      "bytes": 104327,
+      "sha256": "92e379c9debab109d6c81981bd47c27dd482ce8a14705d963f55488f1ef2fc0c"
+    },
+    {
+      "path": "archive/SUN_PARK_COMUNIDAD_PROCEEDINGS_REGISTER_CANARY_ISLANDS_15AUG2026.md",
+      "bytes": 37941,
+      "sha256": "074ed9523e89fdcbaa16b083e5ffa6fb9f24b9ee52dd722787dbb704e622646e"
+    },
+    {
+      "path": "archive/THREAD_DELETION_CONTINUITY_AUDIT_EG17_20_26_ALZADA_24SEP2026.md",
+      "bytes": 9976,
+      "sha256": "8c33cc06fc6a934e237746d55dca7888a0ebb938cdbc823db7b4edb4d45edafc"
+    },
+    {
+      "path": "assets/alzada4-viewer.css",
+      "bytes": 2661,
+      "sha256": "e362fdb726dc5acca64a66682c883b2e64abe50676af96749774ff6242df28f8"
+    },
+    {
+      "path": "assets/data/community-acta-authority-interconnectivity-v1.json",
+      "bytes": 237897,
+      "sha256": "32eac934daa9ff322badbd93cd53836dbabac85042188b4a444f368247d6deb6"
+    },
+    {
+      "path": "assets/data/eg17-20-26-alzada-continuity-20260924.json",
+      "bytes": 18074,
+      "sha256": "ff6115c889d6dcf4953202c86cda13913c68d5c1059618653aeb34298c87783e"
+    },
+    {
+      "path": "assets/data/proceedings-master-public-v1.json",
+      "bytes": 147636,
+      "sha256": "b00c71f82cacd1a70b8eeb68930b01a425d7bda5a77e507239e2345cd5a52de8"
+    },
+    {
+      "path": "docs/continuity/2026-09-24-eg17-20-26-alzada.md",
+      "bytes": 6053,
+      "sha256": "0e9eb73f90bb0f6e0f13de30256f33fedb595fa5787c5ce538f24610f331e86b"
+    },
+    {
+      "path": "en/acosta-matos-favourable-effect-pattern/index.html",
+      "bytes": 11863,
+      "sha256": "c071f6dba98757e3d85b889578f56b3df198adef5cfb6ebba9de33ff028e4614"
+    },
+    {
+      "path": "en/alzada-4-2026/index.html",
+      "bytes": 14341,
+      "sha256": "fcfc1052b37f8640cf5dc7ae590d03e264fd731a1d03960cd28f97be6b37dbfc"
+    },
+    {
+      "path": "en/antonio-cogolludo-rojas/index.html",
+      "bytes": 26122,
+      "sha256": "f226ed5b38cfba2a345f1b70b60dd63b0879f02f03eca8bfdfc44e32f7deec6f"
+    },
+    {
+      "path": "en/francisco-mario-matos-matas/index.html",
+      "bytes": 27610,
+      "sha256": "2b9fbae38931c012552848ecbb166d476fa71e00c7f7ae51d9edfd7dbbdeb394"
+    },
+    {
+      "path": "en/index.html",
+      "bytes": 234487,
+      "sha256": "b7c3d96c39ba3b5bf1c1725a8de0f14619ffc0a3870c63b797d232bb63d5412f"
+    },
+    {
+      "path": "en/ric-private-equity-sun-park/index.html",
+      "bytes": 173904,
+      "sha256": "8c45f6ff80c3a7251c50862a289f055f5f8277f990101019d5eac3ee47d0fd14"
+    },
+    {
+      "path": "en/shaila-maria-cogolludo-ramos/index.html",
+      "bytes": 24454,
+      "sha256": "23ba2a5d9b35f4afc27cb5e8dc4f4cfb64a36358d3cf0b536cf31299587e8f44"
+    },
+    {
+      "path": "es/alzada-4-2026/index.html",
+      "bytes": 15080,
+      "sha256": "3c8c35e8a73f8d06eeaec7fc39c5635f7528613660cef83358f86c8c9768152f"
+    },
+    {
+      "path": "es/antonio-cogolludo-rojas/index.html",
+      "bytes": 26560,
+      "sha256": "e02855d7b5169eec33eebf260dc6a7deb6276b82e63db45be469ed8cd20e591f"
+    },
+    {
+      "path": "es/francisco-mario-matos-matas/index.html",
+      "bytes": 28130,
+      "sha256": "fb0eb6aec5297cb7ec78f056f5bbd6d58ff191a57f10e12c40792c49612a9a0d"
+    },
+    {
+      "path": "es/index.html",
+      "bytes": 244142,
+      "sha256": "d76ada1762892ac4da286b1e49d864fc3c92c5beea0fc573b887d926d3a81b78"
+    },
+    {
+      "path": "es/patron-efectos-favorables-acosta-matos/index.html",
+      "bytes": 20741,
+      "sha256": "cf2595e9b0489e2c4cf0a8e2ac559cf24447365b78b1db380832dccdb4bb477f"
+    },
+    {
+      "path": "es/ric-private-equity-sun-park/index.html",
+      "bytes": 180838,
+      "sha256": "d07e85b970e190dee62cd8daea604176acbb6abd41bab5ddb7944a4e9ed83b65"
+    },
+    {
+      "path": "es/shaila-maria-cogolludo-ramos/index.html",
+      "bytes": 24876,
+      "sha256": "f5c5754c195fd6d8b225416311d1aa96805495d46c340e21e82b4cb8f36a6bf0"
+    }
+  ]
+}

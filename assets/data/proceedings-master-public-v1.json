@@ -1374,7 +1374,7 @@
     {
       "Master_ID": "GC-LAJ-021",
       "Legacy_ID": "GC-LAJ-021",
-      "Record_Type": "REGISTRATION_ONLY",
+      "Record_Type": "GOVERNANCE_SUPERVISION",
       "Is_Proceeding": "FALSE",
       "Proceeding_Class": "SUPERVISION",
       "Stream": "LAJ / court-office supervision",
@@ -1382,18 +1382,26 @@
       "Origin_Organ": "TSJ Secretaría de Gobierno / Coordinación Provincial / national justice-service office",
       "Current_Custodian": "Same offices",
       "Reference": "REGAGE26e00073341191; REGAGE26e00073341382; REGAGE26e00073341477; EG 17/N.º 20-26; REGAGE26e00082040006; REGAGE26e00083460291",
-      "Secondary_Reference": "",
+      "Secondary_Reference": "Alzada 4/2026 — separately identified provincial-appeal child",
       "NIG": "",
-      "Date_or_Period": "15/08/2026–24/09/2026",
+      "Date_or_Period": "15/08/2026–13/10/2026",
       "Connection": "LAJ supervisory corpus",
       "Object_or_Purpose": "15-Aug LAJ supervisory corpus; 20-Sep supervening Provincial contribution adds Ref21/Ref24/DP1901; EG17/20-26 response; limited alzada",
-      "Status": "Registered; EG17/20-26 decision located; limited alzada filed 24 Sep 2026 as REGAGE26e00083460291; forwarding and current outcome pending",
-      "Latest_Known_Event": "24/09/2026 limited alzada filed as REGAGE26e00083460291; post-filing traceability request sent",
-      "Appeal_or_Review": "Limited alzada against EG17/20-26; filed 24/09/2026",
+      "Status": "Alzada 4/2026 dismissed 13 Oct 2026; receipt with prescribed report on29Sep stated in decision; complete transmitted file remains unverified",
+      "Latest_Known_Event": "13/10/2026 signed dismissal and notification; complete five-page public facsimile",
+      "Appeal_or_Review": "Administrative appeal decided; judicial review notice two months; counsel/valid notification require separate verification",
       "Parent_Master_ID": "",
       "Linked_Proceedings": "",
       "Source_Status": "VERIFIED_PRIMARY",
-      "Open_Reference_Gap": "Confirm 73341382→registro general 20-2026; prove 20-26→TSJC transfer; prove alzada forwarding and complete ordered file; obtain judicial custodian outputs"
+      "Open_Reference_Gap": "Complete indexed administrative file/native prescribed provincial report; distinct transfer records; notification/preservation evidence; separate EG38 status; asset-income and individual-attribution proof",
+      "latest_alzada4_control": {
+        "date": "2026-10-13",
+        "reference": "Alzada 4/2026",
+        "outcome": "DISMISSED",
+        "control": "assets/data/eg17-20-26-alzada-continuity-20260924.json",
+        "full_source": "evidence/public/2026-10-13-alzada4/decision-full-public-facsimile.pdf",
+        "complete_authority_file": "OPEN"
+      }
     },
     {
       "Master_ID": "GC-PRO-022",
