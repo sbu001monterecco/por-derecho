@@ -243,7 +243,8 @@ def normalize_rss(raw: bytes) -> str:
                 else:
                     value = child.text or ""
                 values[name] = " ".join(value.split())
-        records.append(" | ".join(f"{key}={values[key]}" for key in sorted(values)))
+        if any(values.values()):
+            records.append(" | ".join(f"{key}={values[key]}" for key in sorted(values)))
     return "\n".join(sorted(set(records)))
 
 
@@ -277,13 +278,19 @@ def fetch(source: dict[str, Any], timeout: float, max_bytes: int) -> tuple[bytes
 
 
 def normalize_source(source: dict[str, Any], raw: bytes, content_type: str) -> tuple[bytes, str]:
+    if not raw:
+        raise ValueError("EMPTY_SOURCE_RESPONSE")
     source_type = source["source_type"]
     if source_type == "PDF":
         return raw, "BINARY_SHA256"
     if source_type == "RSS":
         normalized = normalize_rss(raw)
+        if not normalized.strip():
+            raise ValueError("EMPTY_NORMALIZED_RSS_SOURCE")
         return normalized.encode("utf-8"), "RSS_ENTRY_SET_SHA256"
     normalized = normalize_html(raw, content_charset(content_type))
+    if not normalized.strip():
+        raise ValueError("EMPTY_NORMALIZED_HTML_SOURCE")
     return normalized.encode("utf-8"), "HTML_VISIBLE_TEXT_SHA256"
 
 
@@ -352,13 +359,26 @@ def safe_error(exc: Exception) -> str:
     return f"{type(exc).__name__}: {str(exc)[:180]}"
 
 
+def status_dimensions(counts: dict[str, int], required_errors: list[str], prior_state: bool) -> dict[str, str]:
+    """Separate retrieval health from review completion without weakening either gate."""
+    execution = "FAIL" if required_errors else ("DEGRADED" if counts["fetch_errors"] else "PASS")
+    review = "REVIEW_REQUIRED" if counts["pending_changes"] else "NO_PENDING_REVIEW"
+    continuity = "PRIOR_STATE_AVAILABLE" if prior_state else "FRESH_BASELINE_ONLY"
+    rag = "RED" if required_errors or counts["pending_changes"] else (
+        "AMBER" if counts["fetch_errors"] or not prior_state else "GREEN"
+    )
+    return {"execution": execution, "source_review": review, "continuity": continuity, "overall_rag": rag}
+
+
 def build_summary(report: dict[str, Any]) -> str:
     counts = report["counts"]
+    dimensions = status_dimensions(counts, report["required_source_failures"], report["state_continuity"]["prior_state_available"])
     lines = [
         "# FTI / Meeting Point public asset-transaction monitor",
         "",
         f"- Checked: `{report['checked_at']}`",
         f"- Status: **{report['status']}**",
+        f"- Overall readiness: **{dimensions['overall_rag']}**; retrieval execution: **{dimensions['execution']}**; source review: **{dimensions['source_review']}**",
         f"- Sources: {counts['total']} configured; {counts['fetched']} fetched; {counts['fetch_errors']} errors",
         f"- Review signals: {counts['review_required']}",
         f"- Sticky pending source-review windows: {counts['pending_changes']}",
@@ -688,6 +708,7 @@ def main() -> int:
         "checked_at": checked_at,
         "github_sha": os.environ.get("GITHUB_SHA"),
         "status": status,
+        "status_dimensions": status_dimensions(counts, required_errors, bool(previous_raw)),
         "counts": counts,
         "required_source_failures": required_errors,
         "pending_change_ids": [
