@@ -1,0 +1,52 @@
+{
+  "schema": "PD-SOURCE-OBJECT-REGISTRY-v1",
+  "as_of": "2026-10-01T22:20:00+01:00",
+  "non_exhaustive": true,
+  "rule": "Copies/aliases do not count as independent corroboration. Originals, exports, working derivatives and public derivatives retain separate IDs and hashes where available.",
+  "objects": [
+    {
+      "source_id": "PD-DRIVE-MULTIPATH-THESIS",
+      "title": "JV1260_PINK_MULTIPATH_RECIPROCAL_THESIS_27SEP2026.md",
+      
+      "class": "PRIVATE_ANALYTICAL_CONTROL",
+      "public_derivative": "GitHub archive/JV1260_PINK_MULTIPATH_RECIPROCAL_THESIS_27SEP2026.md"
+    },
+    {
+      "source_id": "PD-DRIVE-TRACK-EXPLORER",
+      "title": "Track_A_Track_B_Connection_Explorer_27SEP2026.html",
+      
+      "class": "PRIVATE_VISUAL_DERIVATIVE"
+    },
+    {
+      "source_id": "PD-DRIVE-POSITION-AUDIT-20260928",
+      "title": "PD_JV1260_ACPINK_20260928_CONTINUITY_POSITION_AUDIT_20260928T171205Z.md",
+      
+      "class": "PRIVATE_CONTINUITY_AUDIT"
+    },
+    {
+      "source_id": "PD-DRIVE-CEXP-COST-20260928",
+      "title": "PD_JV1260_ACPINK_20260928_CEXP_COLLECTIVE_COST_ATTRIBUTION.md",
+      
+      "class": "PRIVATE_ANALYTICAL_CONTROL"
+    },
+    {
+      "source_id": "PD-DRIVE-NONCONVALIDATION-20191024",
+      "title": "Preserved source - Auto No Convalidacion Desvinculacion y Compraventa de Locales (reforma integral) 24OCT2019.pdf",
+      
+      "class": "PRIVATE_SOURCE_COPY"
+    },
+    {
+      "source_id": "PD-DRIVE-EVIDENCE-WORKBOOK-20260826",
+      "title": "Sun_Park_LPB_Private_Evidence_Register_2026-08-26.xlsx",
+      
+      "class": "PRIVATE_EVIDENCE_REGISTER"
+    },
+    {
+      "source_id": "MF-DI248-SRC-ARCH-01",
+      "title": "DI248/2018 archive decree copy dated 7-May-2019",
+      "class": "PRIVATE_SOURCE_COPY",
+      "locator": "PRIVATE_LOCATOR_WITHHELD",
+      "note": "Do not infer certified-complete expediente."
+    }
+  ]
+}

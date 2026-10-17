@@ -1,0 +1,37 @@
+{
+  "schema": "PD-DISASTER-RECOVERY-MANIFEST-v1",
+  "control_id": "PD-DR-20261001-01",
+  "created": "2026-10-01T22:52:00+01:00",
+  "scope": "continuity bootstrap and recovery routing; not a full evidence-vault export",
+  "bootstrap_package": {
+    "alias": "PD-CONTINUITY-BOOTSTRAP-20261001-r2",
+    "sha256": "60004f0ba3ea644b60091de32d0dae6a59db08ae4efbc8e54a86aa4cb5c64f8c",
+    "private_location": "RESOLVE_VIA_PRIVATE_CONTINUITY_RECEIPT"
+  },
+  "canonical_repositories": {
+    "github": "sbu001monterecco/por-derecho",
+    "gitlab_project_id": 86151898
+  },
+  "private_vault_alias": "PD-DRIVE-CONTINUITY-20261001",
+  "contains": [
+    "continuity state",
+    "position supersession registry",
+    "proposition registry",
+    "source-object registry",
+    "audit log",
+    "clean-room handoff",
+    "package hashes"
+  ],
+  "excludes": [
+    "raw private evidence originals",
+    "private credentials",
+    "decryption keys",
+    "unredacted privileged communications",
+    "complete repository clones"
+  ],
+  "encryption": {
+    "encrypted_offline_archive_created": false,
+    "reason": "No user-owned encryption key was supplied and keys must not be generated/stored in public repositories or shared through this control."
+  },
+  "next_offline_step": "Create an encrypted offline archive outside GitHub/GitLab/Drive using a user-controlled key and record only the ciphertext hash and custody receipt."
+}

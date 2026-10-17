@@ -42,3 +42,17 @@ Accordingly, **100% mastery is not claimed**. `ME-086` and `ME-087` remain the c
 ## Repeatability rule
 
 Future audits must record the exact query, exclusion filters, control date, pagination completion, returned counts and extraction failures. A changed Gmail count may reflect import/re-indexing; it must not silently overwrite this dated baseline. No raw private content is to be committed to the public repository without privilege, privacy and redaction review.
+
+
+## 28 September 2026 — current attributed position correction
+
+**Control:** `PD-JTP-POSITION-20260928-01`  
+**Source class:** Gil Marer's current allegation as preserved in the private continuity audit; not a professional-liability or criminal finding.
+
+Gil now expressly alleges that Juan Tomás Parrilla Suárez had responsibility to defend LPB's interests in the relevant Monterecco/Pink litigation context and that the failure to provide the defence Gil expected was unjustified and materially harmful. Gil also states, retrospectively, that he believes that failure may be explained by undue or coercive influence by the judge and/or the insolvency administrator.
+
+This later allegation **does not establish** coercion, improper contact, shared intent, criminal participation, a corrupt agreement or the alleged causal mechanism. It must be tested against the retainer/instructions, division of responsibility between LPB and Monterecco/Pink, any handoff to another lawyer and proof of acceptance/performance, the filed LPB defence, the Monterecco service/default record, contemporaneous drafts/evidence requests, contrary professional explanations and any actual external communication capable of supporting the alleged influence.
+
+Useful work, technical cautions, evidence requests and ordinary negotiation remain counterevidence and must not be suppressed. JTP may appear simultaneously as a criticised former professional, a potential factual witness and a possible recipient of alleged pressure; those capacities are not interchangeable.
+
+See `archive/JTP_POSITION_CORRECTION_28SEP2026.md`. Historical private correspondence remains subject to privacy/privilege review and is not exposed by this addendum.
