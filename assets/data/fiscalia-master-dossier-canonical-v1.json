@@ -1142,5 +1142,30 @@
       "action": "Create one counsel pack with issue matrix, chronology, proof grades, source hashes, administrative-file checklist, constitutional/EU preservation prompts and draft relief requests.",
       "status": "RECOMMENDED"
     }
-  ]
+  ],
+  "institutional_posture": {
+    "state": "ADVERSE_INSTITUTIONAL_ACTOR_POSSIBLE_SHIELDING_EFFECT_TO_TEST",
+    "subject": "Ministerio Fiscal / Fiscalía",
+    "formulation": "Treat documented prosecutorial handling as potentially producing a shielding effect around the Acosta Matos position; do not state institutional membership in the Acosta Matos perimeter as fact.",
+    "proof_boundary": [
+      "No collective criminal membership finding.",
+      "No coordination, common purpose, bribery, influence payment or knowing protection inferred without actor-specific proof.",
+      "Office-level posture does not establish personal knowledge or responsibility.",
+      "Archive, referral, silence, adverse reasoning or hierarchy do not by themselves prove criminality."
+    ],
+    "evidence_focus": [
+      "reuse/adoption of historical propositions",
+      "handling and routing",
+      "corpus and remittal",
+      "identity and assignment",
+      "29-Jul-2026 DP1901 Fiscal report",
+      "E.G.745 decision chain"
+    ],
+    "separate_objects": [
+      "20-Sep-2026 preservation/identification filing",
+      "21-Sep-2026 E.G.745 reposicion"
+    ],
+    "deadline_rule": "No parallel route is assumed to suspend the Supreme Court judicial-review clock.",
+    "control_file": "archive/EG745_MINISTERIO_FISCAL_ADVERSE_ACTOR_SHIELDING_EFFECT_CONTROL_01OCT2026.md"
+  }
 }

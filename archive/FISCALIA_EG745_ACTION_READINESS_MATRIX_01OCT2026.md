@@ -251,3 +251,13 @@ REGAGE/email/Drive hashes vs file sent to TS.
 - `archive/FISCALIA_MF_MASTER_REPORT_EN_01OCT2026.md`
 - `assets/data/fiscalia-master-dossier-canonical-v1.json`
 - `CHATGPT_START_HERE_FISCALIA_MASTER_01OCT2026.md` (continuity entrypoint)
+
+## CURRENT POSTURE — ADVERSE INSTITUTIONAL ACTOR / POSSIBLE SHIELDING EFFECT
+
+The 29 September dismissal does not establish that Ministerio Fiscal belongs to the Acosta Matos perimeter or shares any criminal purpose. The controlled posture is instead that Ministerio Fiscal is now treated as an **adverse institutional actor** whose documented handling must be tested for a possible **shielding effect** around the Acosta Matos position.
+
+That hypothesis is functional, not collective: every prosecutor and office remains subject to actor-specific proof of act/omission, capacity, available corpus, knowledge, duty, lawful explanation, causal effect and intent where legally relevant. Archive, referral, silence, adverse reasoning or institutional hierarchy do not by themselves prove coordination, corruption or criminality.
+
+Controlling public-safe control: `archive/EG745_MINISTERIO_FISCAL_ADVERSE_ACTOR_SHIELDING_EFFECT_CONTROL_01OCT2026.md`.
+
+No parallel route is assumed to suspend the Supreme Court judicial-review clock. The separate 20 September preservation/identification filing remains a distinct object and no separate substantive disposition has been located in the current controlled scan.
