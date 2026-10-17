@@ -1,0 +1,68 @@
+{
+  "schema": "project-sun-rock-public-safe-outbound-communication-manifest-v1",
+  "communication_id": "CUA-COM-001",
+  "control_date": "2026-09-30",
+  "status": "SENT_GMAIL_VERIFIED_POST_SEND_CANONICAL_CONTROL_REMEDIATION",
+  "message_class": "INSTITUTIONAL_ESCALATION_PROTECTED_REPORTING",
+  "audience_lane": "D_PROFESSIONAL_FIRM_COMPLIANCE_CUSTODIAN",
+  "subject": "INSTITUTIONAL ESCALATION / PROTECTED REPORTING — Aweswell / Sun Park / Cuatrecasas — preservation, former-client duties and anti-retaliation review",
+  "recipient_count": 8,
+  "recipient_roles": [
+    "Global Compliance / Internal Information System",
+    "President",
+    "CEO",
+    "Compliance / internal investigations",
+    "Board / governance",
+    "Madrid institutional route",
+    "Data Protection Officer"
+  ],
+  "source_cutoff": "2026-09-30",
+  "native_sent_timestamp_literal": "2026-09-30T21:05:56",
+  "private_recipient_and_message_identifiers": "MAILBOX_PRIVATE_CUSTODY_ONLY",
+  "attachment": {
+    "canonical_asset_id": "CUA-COM-001-A01",
+    "sent_filename": "Cuatrecasas_Evidence_Pack_30Sep2026.pdf",
+    "mime_type": "application/pdf",
+    "pages": 17,
+    "bytes": 1830205,
+    "sha256": "1da57211c67ef4f2316494edfeabd5c81150bae50f673806944001d259c4482c",
+    "drive_canonical_filename": "CUA-COM-001__SENT__Institutional_Escalation_Protected_Reporting__30SEP2026.pdf",
+    "drive_preservation": "VERIFIED_POST_SEND",
+    "immutable_sent_artifact": true
+  },
+  "canonical_public_links": [
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-mandato-continuidad-ric/",
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-icam-ccacm-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/es/incentivos-regionales-gc836-p06/"
+  ],
+  "repository_state": {
+    "github_control": "PR #2054 merge 3169a8f1d4b517cef54e3ab6f057a624cabc620a controls June-2020 recipient-facing page update",
+    "gitlab_control": "MR !743 staged/unmerged at send; separate fail-closed governance debt remained",
+    "sent_pdf_internal_commit_drift": [
+      "6c967884e7256f448426311a3fcbcff71c995d22",
+      "3169a8f1d4b517cef54e3ab6f057a624cabc620a"
+    ]
+  },
+  "pre_send_gate_audit": {
+    "communication_id_preassigned": false,
+    "canonical_package_manifest_present": false,
+    "attachment_manifest_present": false,
+    "link_manifest_present": false,
+    "final_link_verification_after_last_change_recorded": false,
+    "canonical_entity_first_reference_check_passed": false,
+    "final_dual_gmail_history_gate_formally_recorded": false,
+    "attachment_internal_version_consistent": false,
+    "canonical_drive_preservation_complete_before_success_claim": false
+  },
+  "post_send_verification": {
+    "exact_send_count_observed": 1,
+    "sent_copy_readback": true,
+    "required_attachment_present": true,
+    "protected_reporting_markers_present": true,
+    "immediate_bounce_located": false
+  },
+  "discrepancy_classification": "INTERNAL_CANONICAL_CONTROL_DEFECT",
+  "resend_decision": "NO_RESEND_AUTHORISED_OR_RECOMMENDED_FROM_THIS_CONTROL_AUDIT",
+  "corrective_rule": "archive/OUTBOUND_CANONICAL_REFERENCE_AND_PACKAGE_OBJECT_HARD_GATE_30SEP2026.md"
+}

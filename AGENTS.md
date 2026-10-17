@@ -384,6 +384,10 @@ truth/fact, private-mail evidence task and named-person/entity scan:
   --base <revision>` for the complete proposed diff. Its GitHub workflow remains
   advisory/shadow-mode until expressly promoted under the enforcement rules.
 
+## 8A. Outbound canonical package-object hard gate
+
+For every substantive outbound email, the agent must apply `archive/OUTBOUND_CANONICAL_REFERENCE_AND_PACKAGE_OBJECT_HARD_GATE_30SEP2026.md` in addition to the existing email protocol and final-authorisation rule. No “ready/green/canonical” state and no send action are permitted without the complete canonical package object and all PASS flags. Exact sent PDFs/bundles are immutable evidence and must be preserved in the canonical Drive matter folder; do not regenerate and overwrite the sent artifact. Post-send internal canonical defects default to rule remediation, not automatic resend.
+
 ## 9. Canonical Actors, Entities and Proceedings Registry (`CAEPR`)
 
 Read and apply
