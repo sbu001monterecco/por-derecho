@@ -1,0 +1,19 @@
+{
+  "control_id": "PD-CAJASIETE-GOVERNANCE-STATE-20260930",
+  "updated_at": "2026-09-30T21:14:00+01:00",
+  "track": "communication_6_governance_and_traceability",
+  "april_2026_status": "inadmission_communicated_2026-04-28",
+  "september_2026_status": "additional_official_material_incorporated_and_decision_reaffirmed_2026-09-18",
+  "institutional_escalation_date": "2026-09-18",
+  "final_governance_followup_date": "2026-09-30",
+  "final_governance_followup_transport": "gmail_reply_in_existing_18_september_thread",
+  "attachments": 0,
+  "duplicate_send_check": "passed_single_sent_copy_located",
+  "delivery_failure_check": "no_bounce_or_delivery_failure_located_as_of_audit",
+  "response_deadline": "2026-10-02",
+  "response_state": "pending_deadline_open",
+  "burofax_state": "intentionally_deferred_by_user",
+  "public_boundary_es": "El envío, la ausencia de rebote y la conservación del hilo no prueban lectura personal por cada destinatario. El silencio no se interpreta por sí solo como infracción.",
+  "public_boundary_en": "Sending, absence of a bounce and preservation of the thread do not prove personal reading by each recipient. Silence is not treated by itself as evidence of an infringement.",
+  "private_source_rule": "Native Gmail message/thread identifiers and full private transport metadata remain outside public Git."
+}
