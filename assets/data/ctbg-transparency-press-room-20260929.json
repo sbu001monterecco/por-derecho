@@ -1,0 +1,41 @@
+{
+  "control_id": "PD-CTBG-PRESS-20260929-01",
+  "as_of": "2026-09-29",
+  "classification": "public_safe_press_room",
+  "proceedings": [
+    {
+      "expediente": "3929/2026",
+      "initiation_date": "2026-09-11",
+      "status": "initiation_communication_preserved",
+      "merits_outcome": false
+    },
+    {
+      "expediente": "3953/2026",
+      "initiation_date": "2026-09-17",
+      "status": "initiation_communication_preserved",
+      "merits_outcome": false,
+      "parentage": "open_primary_bridge"
+    },
+    {
+      "expediente": "3954/2026",
+      "initiation_date": "2026-09-17",
+      "status": "initiation_communication_preserved",
+      "merits_outcome": false,
+      "parentage": "open_primary_bridge"
+    }
+  ],
+  "verified": [
+    "three distinct CTBG proceeding identities",
+    "signed initiation communications preserved",
+    "article 24 LTAIBG state-scope complaint route",
+    "3953 and 3954 initiated 17 September 2026"
+  ],
+  "not_established": [
+    "merits outcome",
+    "wrongdoing or liability",
+    "automatic disclosure entitlement",
+    "exact parent REGAGE/AEAT mapping for 3953/3954",
+    "joinder or accumulation"
+  ],
+  "publication_boundary": "no private validation codes, personal identifiers, authentication material or private Drive locators"
+}
