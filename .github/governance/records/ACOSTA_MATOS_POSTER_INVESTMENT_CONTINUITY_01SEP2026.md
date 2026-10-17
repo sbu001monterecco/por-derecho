@@ -182,3 +182,16 @@ Existing CAEPR `Name^` entries retain their identity-only meaning. Newly source-
 ## Continuity verdict
 
 Once the linked governance record, hotel human/machine pair, identity reconciliation, non-hotel human/machine pair and `CURRENT_START_HERE.md` specialist pointer are on `main`, the poster direction, correction blacklist, investment/development census, legal-name reconciliation, tracing hypothesis and open proof questions no longer depend on the originating chat. The PNG binary itself remains an external artifact until added and hash-verified.
+
+
+## Dynamic Canarian Hospitality perimeter control — PD-CH-DYNAMIC-PERIMETER-20261008-01
+
+**Status:** active public-safe continuity rule. This extends the existing source-graded hotel/investment perimeter without changing the rule that owner, equity, governance, manager/operator/lessee, brand/franchise, financier, developer/builder, public-support and distribution/payment relationships are separate edges.
+
+Every source-verified current, historic, predecessor, successor, rebranded, pipeline, development, leased, managed or operated property/project for which **Canarian Hospitality, S.L.** has an evidence-backed management, operation, lease, development/repositioning, MYND/Sholeo brand-platform, international-franchise-management or signed future-management role automatically enters the evidential graph. A Canarian Hospitality relationship is relevant to the wider economic/perimeter inquiry but is **not** by itself proof of Acosta ownership, beneficial ownership, RICPE financing, common control, source of funds, wrongdoing, booking/payment or jurisdiction.
+
+The graph must preserve predecessor/successor identity separately from current trading names. Source-supported examples include Sun Park → MYND Yaiza; Apartamentos Merlín → MYND Adeje; Bahía Flamingo → Sholeo Lodges Los Gigantes; Jardín del Sol → Sholeo Lodges Maspalomas; Parque San Antonio → Radisson Resort & Residences Tenerife; and Coronas Playa → Radisson Blu Resort Lanzarote. LACASA Apartments Cotillo → proposed MYND Cotillo and Labranda Marieta → proposed MYND Marieta remain **OPEN continuity lanes** until exact operative/address evidence closes them.
+
+For cross-asset tracing, test acquisition consideration, refinancing, operating cashflow, distributions, collateral/security value, debt capacity, RIC/tax benefits, public incentives, management income, intercompany balances, guarantees and later recycling into other assets. Chronology, common management, shared branding or group membership alone is not tracing.
+
+This rule is mirrored in the machine-readable investment register. Private Drive evidence/custody locators remain private and are intentionally not reproduced here. GitHub/GitLab/Drive parity must be verified explicitly rather than presumed.
