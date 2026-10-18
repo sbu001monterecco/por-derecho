@@ -40,3 +40,9 @@ Do not silently alter the figures, language or boundary. A materially revised vi
 - ES SVG SHA-256: `0261759568030b519926b30e9ce8f8d569fd152ace87ba72091a01cec2841994`
 - GitHub PR branch `pwc-band2-economic-visual-20261018` and GitLab MR !843 branch `pwc-economic-fruits-eccta-20261018` read back identical EN/ES Git blob IDs.
 - This establishes source-branch equivalence only. It is not proof of merge, deployment or live Pages publication. Post-merge/live verification must be recorded separately.
+
+## Live verification child
+- `PD-PWC-BAND2-LIVE-VERIFY-20261018-03`
+- Record: `ops/PWC_BAND2_LIVE_VERIFICATION_18OCT2026.md`
+- GitHub: LIVE_VERIFIED after PR #2103 + PR #2104.
+- GitLab: source reviewed in MR !843; Pages not live because inherited required CI remains failed.
