@@ -27,7 +27,7 @@ The >€100m marker is deliberately prominent but is labelled **company-reported
 
 ## Interlinks
 - EN PwC page: `/en/pwc-canarias-carlos-saavedra-sun-park/#pwc-eccta-economic-fruits-20261018`
-- ES PwC page: `/es/pwc-canarias-carlos-saavedra-sun-park/#pwc-band2-economic-perimeter-20261018`
+- ES PwC page: `/es/pwc-canarias-carlos-saavedra-sun-park/#pwc-eccta-economic-fruits-20261018` (Band 2 alias retained at `#pwc-band2-economic-perimeter-20261018`)
 - Parent control: `archive/PWC_ECONOMIC_FRUITS_ECCTA_CONTROL_18OCT2026.md`
 
 ## Supersession
