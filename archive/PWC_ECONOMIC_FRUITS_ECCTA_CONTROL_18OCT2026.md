@@ -99,3 +99,10 @@ Attachments supplement the live links; they do not replace them.
 ## Supersession rule
 
 Do not silently rewrite this control. Material changes require a dated successor control preserving this version and explaining the delta.
+
+
+## Canonical visual child
+- `PD-PWC-BAND2-ECONOMIC-PERIMETER-20261018-02`
+- EN asset: `assets/graphics/pwc-band2-connected-economic-perimeter-20261018-en.svg`
+- ES asset: `assets/graphics/pwc-band2-connected-economic-perimeter-20261018-es.svg`
+- Visual control: `archive/PWC_BAND2_ECONOMIC_PERIMETER_VISUAL_CONTROL_18OCT2026.md`
