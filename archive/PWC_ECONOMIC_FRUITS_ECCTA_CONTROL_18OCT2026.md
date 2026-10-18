@@ -3,7 +3,9 @@
 **Control ID:** PD-PWC-ECCTA-FRUITS-20261018-01  
 **Control date:** 18 October 2026  
 **Status:** LOCKED CANONICAL ANALYTICAL CONTROL — NOT A FINDING OF FRAUD, CAUSATION OR PROCEEDS  
-**Public route:** /en/pwc-canarias-carlos-saavedra-sun-park/#pwc-eccta-economic-fruits-20261018
+**Public routes:**
+- EN: /en/pwc-canarias-carlos-saavedra-sun-park/#pwc-eccta-economic-fruits-20261018
+- ES: /es/pwc-canarias-carlos-saavedra-sun-park/#pwc-eccta-economic-fruits-20261018
 
 ## Purpose
 
@@ -78,7 +80,7 @@ For every increment classify:
 - FY2019 PricewaterhouseCoopers Auditores / RICPE audit relationship (separate entity).
 - 2020 RICPE investor ecosystem containing Sun Park.
 - 2021 RICPE report stating PwC fiscal due diligence for Construcciones Acosta Matos on another project.
-- March 2021 PwC UK Risk → PwC Spain Deputy General Counsel / Chief Compliance Officer notice route.
+- March 2021 transmission into PwC UK Legal/Risk and PwC Spain Legal/Compliance channels; exact entity/capacity, routing and personal receipt/examination remain to be reconciled.
 - 2026 institutional preservation / reconciliation requests and 18 September electronic-burofax event.
 
 ## UK law control
@@ -99,3 +101,10 @@ Attachments supplement the live links; they do not replace them.
 ## Supersession rule
 
 Do not silently rewrite this control. Material changes require a dated successor control preserving this version and explaining the delta.
+
+
+## Canonical visual child
+- `PD-PWC-BAND2-ECONOMIC-PERIMETER-20261018-02`
+- EN asset: `assets/graphics/pwc-band2-connected-economic-perimeter-20261018-en.svg`
+- ES asset: `assets/graphics/pwc-band2-connected-economic-perimeter-20261018-es.svg`
+- Visual control: `archive/PWC_BAND2_ECONOMIC_PERIMETER_VISUAL_CONTROL_18OCT2026.md`
