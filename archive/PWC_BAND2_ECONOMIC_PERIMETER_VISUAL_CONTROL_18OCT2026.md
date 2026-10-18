@@ -33,9 +33,10 @@ The >€100m marker is deliberately prominent but is labelled **company-reported
 ## Supersession
 Do not silently alter the figures, language or boundary. A materially revised visual requires a dated successor control preserving this version.
 
-## Cross-host read-back
-- EN SVG Git blob: `6b45080e6be791de98ac53093cfb7d481c519a5c`
-- EN SVG SHA-256: `6ac738e71f83bedd0d2e409a1ac934c6ad4649d69baa3e5b9e74e5c8bb05103a`
-- ES SVG Git blob: `d7e3481f409748edb960de5651e420309c046db8`
-- ES SVG SHA-256: `e0bd74dec7683656f4d71b6a1efd008d2115515d98f59bf2d104afbf3f6caac4`
-- GitHub and GitLab read back the same Git blob IDs for both language assets.
+## Cross-host source-branch read-back — 18 October 2026
+- EN SVG Git blob: `e997b9ea4edddf31ba20a334b35ff38b150c3a0c`
+- EN SVG SHA-256: `9525a21a6e26578368d03bebe10e2d2e246a14a5823bbf16d73909dfad417355`
+- ES SVG Git blob: `552dbb728f915c38c0815247ff357c7e385ad464`
+- ES SVG SHA-256: `0261759568030b519926b30e9ce8f8d569fd152ace87ba72091a01cec2841994`
+- GitHub PR branch `pwc-band2-economic-visual-20261018` and GitLab MR !843 branch `pwc-economic-fruits-eccta-20261018` read back identical EN/ES Git blob IDs.
+- This establishes source-branch equivalence only. It is not proof of merge, deployment or live Pages publication. Post-merge/live verification must be recorded separately.
