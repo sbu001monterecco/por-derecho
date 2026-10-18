@@ -32,3 +32,10 @@ The >€100m marker is deliberately prominent but is labelled **company-reported
 
 ## Supersession
 Do not silently alter the figures, language or boundary. A materially revised visual requires a dated successor control preserving this version.
+
+## Cross-host read-back
+- EN SVG Git blob: `6b45080e6be791de98ac53093cfb7d481c519a5c`
+- EN SVG SHA-256: `6ac738e71f83bedd0d2e409a1ac934c6ad4649d69baa3e5b9e74e5c8bb05103a`
+- ES SVG Git blob: `d7e3481f409748edb960de5651e420309c046db8`
+- ES SVG SHA-256: `e0bd74dec7683656f4d71b6a1efd008d2115515d98f59bf2d104afbf3f6caac4`
+- GitHub and GitLab read back the same Git blob IDs for both language assets.
