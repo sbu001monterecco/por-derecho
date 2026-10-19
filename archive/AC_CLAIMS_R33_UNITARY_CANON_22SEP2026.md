@@ -63,3 +63,11 @@ A new lawyer interaction does not create a new AC theory by default. A new AC ac
 - Removal/fees digest, DP 1956, counsel-continuity pages and ONA/Clubotel routes remain linked evidence lanes.
 
 Native private Gmail/Drive locators and privileged communications remain outside public Git.
+
+## Continuity clarification — 27 September 2026
+
+For professional-history / R33-characterisation questions, **AC-CLM-011 and AC-CLM-014 are the direct analytical families**. AC-CLM-011 reconstructs the underlying professional interaction, mandate, chronology, contrary evidence and causation limits; AC-CLM-014 tests how R33 later characterises that history proposition by proposition.
+
+**AC-CLM-012 / DP 1956 remains a distinct actor-specific criminal-procedural family and is bounded cross-evidence for that analysis.** Independently probative material may cross only proposition by proposition with its original source and evidential status intact. Allegations, findings, causation, intent and procedural outcomes do not migrate between families without an independently proved bridge. DP 1901 and all other proceedings remain distinct under the same non-merger rule.
+
+For the Joaquín Ruiz de Infante / apology example specifically: preserve the withdrawal/apology as genuine adverse evidence; reconstruct the complete professional chronology under AC-CLM-011; test R33's use and context of that history under AC-CLM-014; and use DP 1956 material only where the underlying item independently bears on the proposition being tested. Neither inclusion in nor disposition of DP 1956 proves or disproves the separate professional-interference or R33-characterisation proposition by itself.
