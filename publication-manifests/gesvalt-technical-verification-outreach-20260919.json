@@ -1,0 +1,72 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "GESVALT-TECHNICAL-VERIFICATION-OUTREACH-20260919",
+  "owner": "Gil Marer / Project Sun Rock",
+  "control_date": "2026-09-19",
+  "current_state": "REMOTE_SOURCE",
+  "worker_readiness": "READY_TO_INTEGRATE",
+  "publication_state": "NOT_LIVE_WORKER_DELTA",
+  "communication_state": "DRAFT_SAVED_NOT_SENT",
+  "source_publication": "ACTUA-GESVALT-GOLDEN-TRIGGER-20260824",
+  "primary_backend": "github",
+  "gitlab_state": "BLOCKED_PENDING_RECONCILIATION",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "expected_routes": {
+    "en": [
+      "en/actua-gesvalt-2018-valuation-comparison/index.html"
+    ],
+    "es": [
+      "es/comparativa-tasaciones-actua-gesvalt-2018/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/GESVALT_TECHNICAL_VERIFICATION_OUTREACH_PREPARATION_19SEP2026.md",
+    "archive/ACTUA_GESVALT_GOLDEN_TRIGGER_SOURCE_MAP_24AUG2026.md",
+    "assets/media/sun-park-400000-golden-trigger-en.png",
+    "assets/media/sun-park-400000-detonante-de-oro-es.png"
+  ],
+  "communication_assets": [
+    {
+      "path": "assets/media/sun-park-400000-golden-trigger-en.png",
+      "language": "en",
+      "width": 1200,
+      "height": 630,
+      "sha256": "96e0962892a52b8c3983f2cb7df748b01fcb268409e3b8d53bb25a68352ed5dd",
+      "evidential_status": "communication summary; not valuation evidence"
+    },
+    {
+      "path": "assets/media/sun-park-400000-detonante-de-oro-es.png",
+      "language": "es",
+      "width": 1200,
+      "height": 630,
+      "sha256": "4814891cb6db98c706e0dc889b8521f14f764927b4c2ce56ae65cc00c8f73e21",
+      "evidential_status": "communication summary; not valuation evidence"
+    }
+  ],
+  "controls": {
+    "valuation_comparison": "Different commissioners, purposes, assumptions and dates; comparable on perimeter, inspection, methodology and functional dependence, not interchangeable arithmetic.",
+    "gesvalt_role": "GESVALT made the divergence technically visible; this does not establish that GESVALT caused, authorised or enabled the later transfer.",
+    "later_use": "Selection or exploitation of the ACTUA branch by later actors is Gil Marer's attributed allegation and an open matter for investigation, not a GESVALT conclusion or judicial finding.",
+    "webinar": "Later ecosystem context only; not proof of valuation authorship, circulation, use, client participation, coordination, unlawful information transfer, illegality, knowledge or responsibility by GESVALT.",
+    "confidentiality": "Public availability does not establish GESVALT publication authority; concrete objections or public/redacted replacements remain invited.",
+    "email_privacy": "No draft body, recipient address, mailbox identifier, private message body, signature or unpublished routing note is committed.",
+    "proof_ceiling": "Preparation only; no external notice, delivery, receipt, reading, agreement, endorsement, correction, waiver or silence-as-assent."
+  },
+  "external_actions": {
+    "email_sent": false,
+    "filing_made": false,
+    "authority_contacted": false,
+    "social_post_published": false
+  },
+  "integration_requirements": [
+    "Refresh current main and reconcile through the active single integration lane.",
+    "Run repository preservation, publication integrity, audience and relevant specialist checks.",
+    "Record final PR, merge SHA, Pages run, live HTML hashes and public PNG readback before advancing to LIVE_VERIFIED.",
+    "Reverify that the five evidence-PDF hashes in ACTUA-GESVALT-GOLDEN-TRIGGER-20260824 remain unchanged.",
+    "Refresh the canonical digital-media register and allocate the next available PD-DMA identities at integration time; this worker delta reserves no IDs."
+  ]
+}

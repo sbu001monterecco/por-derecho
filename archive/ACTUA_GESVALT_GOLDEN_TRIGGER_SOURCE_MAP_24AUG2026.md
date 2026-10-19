@@ -87,3 +87,35 @@ The payment complaint is not principally arithmetic. Even if some fee were ultim
 - The public pages may state the documentary basis for those allegations; they must not convert them into a conviction or claim that professional status automatically proves mens rea.
 - Private email bodies remain unpublished. Public propositions identify source IDs and minimum propositions only.
 - Right of reply and correction remains open to every named professional and institution.
+
+## GESVALT technical-verification outreach — 19 September 2026
+
+**State:** `DRAFT_PREPARED_NOT_SENT`. A technical-verification request has been prepared for GESVALT; repository preservation does not prove or authorise transmission. Delivery, receipt and any response require separate evidence. Silence is not assent.
+
+The prepared request asks GESVALT to confirm or correct:
+
+1. authenticity, final version, date, canonical reference and authorship;
+2. client, addressee, purpose and basis of value;
+3. perimeter, inspections and professional team;
+4. technical treatment of the 31 operational titles and the effect of separating operational assets;
+5. delivery/circulation to the insolvency administrator, court or other parties; and
+6. corrections, use limitations, confidentiality concerns or a suitable public/redacted replacement.
+
+**Enablement boundary:** GESVALT’s products made the methodological and perimeter divergence from ACTÚA technically visible before the 28 November 2018 transfer. That does not establish that GESVALT caused, authorised or enabled the transfer. The open question is how later decision-makers received, selected, circulated or relied upon the different products. Any alleged later “enablement” through use of the ACTÚA branch is Gil Marer’s attributed forensic allegation concerning those later actors, not a GESVALT conclusion or judicial finding.
+
+**San Telmo boundary:** the 30 November 2021 public programme at 08:08 is later ecosystem context only. It does not prove valuation authorship, receipt, circulation or use; participation by identified clients; coordination; unlawful information transfer; illegality; or knowledge or responsibility by GESVALT. It is distinct from the separate 11 November 2020 RICPE webinar.
+
+**Communication assets:** exact, unaltered 1200 × 630 PNGs are registered in the successor manifest:
+
+- `assets/media/sun-park-400000-golden-trigger-en.png` — SHA-256 `96e0962892a52b8c3983f2cb7df748b01fcb268409e3b8d53bb25a68352ed5dd`;
+- `assets/media/sun-park-400000-detonante-de-oro-es.png` — SHA-256 `4814891cb6db98c706e0dc889b8521f14f764927b4c2ce56ae65cc00c8f73e21`.
+
+They are communication summaries of Gil Marer’s “golden trigger” thesis, not valuations, expert opinions or independent evidence. They do not make the €25.647–26.4 million whole-hotel figures the standalone legal value of the 31 titles.
+
+**Public/private boundary:** no private email body, recipient address, mailbox/draft identifier, signature, telephone number or unpublished routing note is published. Public availability of a report does not establish that GESVALT authorised web publication. Verified correction or a suitable public/redacted replacement remains invited with equivalent visibility.
+
+Successor controls:
+
+- `archive/GESVALT_TECHNICAL_VERIFICATION_OUTREACH_PREPARATION_19SEP2026.md`;
+- `publication-manifests/gesvalt-technical-verification-outreach-20260919.json`.
+
