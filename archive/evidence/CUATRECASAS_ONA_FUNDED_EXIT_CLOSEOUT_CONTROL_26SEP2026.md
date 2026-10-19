@@ -5,7 +5,7 @@
 
 **Mandatory transaction-level rule.** By the June 2018 Las Palmas court/judge presentation involving Daniel Irigoyen, the Aweswell/LPB/Matkator/Sun Park case position is that the Article 176 exit was **closure-capable and execution-ready on an aggregate, multi-layered basis**. The package must be assessed cumulatively: the signed ONA operating package; bridge/private-credit alternatives; Stoneweg/Varia; EG/CR and other lender routes; Santander/bank replacement work; the Lagune/Elaia/Batipart €26m own-funds sale/backstop; Gesvalt and Expert-Witness work; Cuatrecasas DD, Article 176, consignation and security work; readiness to fund or consign the amount required against the *texto definitivo*; solvency/support material; and specialist insolvency/court-exit implementation.
 
-**Anti-downgrade rule.** A document-specific proof gap — including the absence in the controlled corpus of a countersigned copy of Irigoyen's engagement proposal, non-drawdown on one route, expiry of one offer or an unmet condition on one instrument — **must not be used as evidence that the aggregate funded-exit package was merely preliminary, speculative or unready**. Each constituent item keeps its exact maturity label: **signed direct instrument; issuer-labelled binding/conditional offer; term sheet/active negotiation; diligence/security preparation; institutional interest/outreach; preliminary verbal fallback; post-cutoff continuity; or not established/missing proof**.
+**Anti-downgrade rule.** A document-specific proof gap — including non-drawdown on one route, expiry of one offer or an unmet condition on one instrument — **must not be used as evidence that the aggregate funded-exit package was merely preliminary, speculative or unready**. Each constituent item keeps its exact maturity label: **signed direct instrument; issuer-labelled binding/conditional offer; term sheet/active negotiation; diligence/security preparation; institutional interest/outreach; preliminary verbal fallback; post-cutoff continuity; or not established/missing proof**.
 
 **7 June interlock.** The separate 7 June takeover dossier records forced/material access acts and the absence, in the controlled record, of an identified judicial possession order authorising a whole-hotel takeover. Gil Marer and the Aweswell/LPB-side case theory attribute the failure to consummate the funded exit **in full / 100%** to the **7 June 2018 takeover by force** and the lack or denial of effective judicial protection that followed, and allege that the ONA-led funded exit was deliberately sabotaged. That causation/intent proposition is an attributed litigation/investigative position unless and until established by competent adjudication. Contrary explanations and route-specific failures must still be searched and tested, but they must be tested against the **aggregate redundant package**, not used silently to relabel the package as undeveloped.
 
@@ -318,3 +318,19 @@ The workstream cannot be certified email/file exhausted until every material loc
 - a documented exclusion reason (duplicate, administrative/non-material, privileged/publication-restricted but privately preserved, or outside scope).
 
 The negative-search ledger must also record material expected communications that were not located.
+
+
+## 16. Meeting-preservation delta — 26 Sep 2026
+
+### Irigoyen / DPM signed-engagement correction
+The earlier missing-proof proposition concerning a countersigned Irigoyen engagement is superseded. Native SBU Gmail message `163df41256931433` dated **8 Jun 2018** contains the DPM engagement for **AWESWELL LIMITED**, returned with Aweswell-side acceptance/signature, together with €7,500 provision-of-funds evidence. DPM emails `1645f5242329aab8` (3 Jul) and `164f0394c1ded66e` (31 Jul) record application of the provision and a residual €296.01 balance. Classification: **signed direct instrument** for professional/court-exit implementation readiness only; not lender funding, bank approval, drawdown, filing, judicial acceptance or completed Article 176 exit.
+
+### Santander / Proyecto Mona Lisa principal-evidence control
+Gil Marer states from direct participation that Santander involved **multiple contemporaneous conversations and readiness on multiple occasions**, alongside other financing/refinancing/bridge/sale options, with supporting contemporaneous notes preserved in the private repository. Preserve this as attributed principal evidence pending item-by-item documentary corroboration.
+
+**Negative-proof rule:** “formal Santander credit/risk approval not yet located” is not equivalent to “Santander readiness not established.” Conversely, attributed readiness evidence is not itself a signed bank commitment. The 10-May Proyecto Mona Lisa package remains documentary evidence of a concrete Santander workstream; Santander-native final credit approval, committed facility and drawdown remain open proof unless separately located.
+
+### Contrary evidence / route-specific failure control
+The 15-May-2018 Incus preliminary committee decline remains affirmative contrary evidence, with stated concerns including asset complexity, unclear exit, inability to obtain a day-one mortgage and ONA business-plan execution risk; Carlos Sanz disputed those reasons and recorded that Incus had not reviewed the full package. EG/CR remains **term sheet / active negotiation**, subject to credit-committee, DD, documentation and cost/exclusivity conditions. Preserve both supporting and contrary evidence.
+
+**Exhaustion remains OPEN.**
