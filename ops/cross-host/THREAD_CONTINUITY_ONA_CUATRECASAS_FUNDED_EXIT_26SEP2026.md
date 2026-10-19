@@ -131,3 +131,34 @@ The controlling state is:
 - GitLab branch rebased but merge blocked by repository publication/CI controls;
 - hourly recursive evidence task re-enabled;
 - corpus remains **NOT EXHAUSTED** and no final exhaustion certificate has been issued.
+
+
+## 11. 27-Sep-2026 continuity / preservation re-audit
+
+Provider-native readback on 27 Sep 2026 supersedes stale publication-state wording above where inconsistent.
+
+- **GitHub PR #1911 is MERGED**, merged at 26-Sep-2026 16:01:26Z, merge commit `874fb7a92eed58dc6d15bc9dfa25d26133451f2d`. The old review branch is now behind current GitHub `main`; this is normal post-merge branch staleness and is not a preservation defect.
+- **GitLab MR !618 remains OPEN** on `evidence/cuatrecasas-ona-closeout-20260926`, current head `38d93d25e33d45da159af3891b0a910aec728b35`.
+- GitLab MR !618 contains an **11-file delta** against GitLab main, including later private/control additions not present on GitHub main. In particular:
+  - `archive/evidence/private/ONA_OPTIONALITY_CONTINUOUS_WORK_EVIDENCE_CONTROL_26SEP2026.md` is present on the private GitLab review lane and intentionally absent from public GitHub main;
+  - `governance/ONA_FINBANK_TRANSACTION_COMPLETION_PREVENTION_RULE_26SEP2026.md` is present on the GitLab review lane and not yet present on GitHub main;
+  - the close-out control and canonical communications graph are longer on the GitLab review lane than the currently merged GitHub versions.
+- Therefore **cross-host byte parity is NOT currently certified for the post-merge successor state**. This is an explicit bounded parity gap, not data loss. Private material must not be copied to public GitHub merely to force parity.
+- The latest visible GitLab MR pipeline is `2885560597` at head `38d93d25...` and is failed because jobs were not started due to **`ci_quota_exceeded`**. At least `verify-tested-build-handoff` reports that provider failure reason. This run therefore does **not** establish a substantive evidence/control test failure and must not be used to weaken or bypass CI.
+- The controlling proposition remains preserved: multiple bridge/private-credit routes, Santander/bank-replacement work, sale/backstop optionality, ONA/operator work, insolvency-exit work, valuation/DD/security work, and continuing project-side effort are separate evidence lanes with exact maturity labels and contrary-evidence controls.
+- The communications graph remains mandatory. Material communications must be registered with provider IDs, lineage, attachments, proposition/event links, limitations, maturity, custody and reciprocal corroborating/contradicting links.
+- **Exhaustion remains NOT CERTIFIED.**
+
+### 11.1 Preservation colour state
+- **GREEN — GitHub preservation:** PR #1911 merged into main; canonical ONA/Cuatrecasas controls are preserved in GitHub history/main.
+- **GREEN — GitLab preservation:** successor/private delta is preserved on protected MR !618; no force merge or protection bypass performed.
+- **AMBER — cross-host successor parity:** later GitLab controls/expansions are not all on GitHub main; private/public boundary requires selective reconciliation rather than mechanical mirroring.
+- **AMBER — GitLab merge readiness:** current pipeline cannot certify readiness because CI quota prevented jobs from starting.
+- **AMBER — evidence exhaustion:** Gmail/Drive attachment/version/negative-search lanes remain open as already enumerated.
+- **GREEN — allegation/finding discipline:** current controls continue to distinguish documentary fact, professional/party account, inference, attributed allegation and adjudicated finding.
+
+### 11.2 Next controlled actions
+1. When GitLab CI quota is available, rerun the protected MR pipeline at the exact current head or its reviewed successor; do not merge on the basis of the quota-failed run.
+2. Reconcile the **public-safe** successor controls from MR !618 into GitHub only through a reviewed successor PR; keep private locator/evidence material private.
+3. Preserve the private optionality/continuous-work control in the private repository/Drive control lane and continue registering newly recovered communications against it.
+4. Continue the recursive supporting-and-contrary evidence search; do not issue an exhaustion certificate until every material query/pagination/attachment/version/communication-link lane is closed or bounded unavailable.
