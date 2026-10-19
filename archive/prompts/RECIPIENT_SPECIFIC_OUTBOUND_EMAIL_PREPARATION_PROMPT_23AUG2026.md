@@ -8,6 +8,14 @@
 
 Prepare the next recipient-specific Project Sun Rock / Por Derecho email using the current repository, website and Gmail record. Apply the maximum-reach campaign layer as a mandatory supplement during active outreach. This prompt authorises research and drafting only. It does **not** authorise sending, resending, forwarding or self-emailing.
 
+### 0. Canonical package-object hard gate
+
+Before starting recipient-specific preparation, read `archive/OUTBOUND_CANONICAL_REFERENCE_AND_PACKAGE_OBJECT_HARD_GATE_30SEP2026.md`.
+
+Create the `COMMUNICATION_ID` and controlling version **before** the package is marked ready. Build and retain the material-proposition source map, canonical-name check, Attachment Manifest, Link Manifest, Gmail-history-gate record, repository parity/exception state and preservation plan. For high-stakes institutional/professional/compliance Level 2/3 packages, add the compact recipient-visible Reference Control block required by the hard gate.
+
+Never invent pack exhibit IDs and call them canonical. Use `PACK_LOCAL_EXHIBIT_ID` until mapped/registered.
+
 ### 1. Mandatory startup
 
 Read:
