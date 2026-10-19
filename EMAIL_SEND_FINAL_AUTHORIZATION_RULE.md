@@ -42,6 +42,10 @@ Testing must remain local, in draft state or in an explicitly non-transmitting v
 
 An empty message, a one-character message or a message labelled **“DO NOT SEND”**, **“TEST”**, **“DRAFT”**, **“PLACEHOLDER”**, **“NO ENVIAR”**, **“PRUEBA”** or **“BORRADOR”** must fail closed. A prohibition or placeholder label is never permission to transmit.
 
+## 2A. Canonical outbound object admission gate
+
+Before this authorization rule can be invoked for a material external email, the package must pass `governance/CANONICAL_OUTBOUND_COMMUNICATION_OBJECT_GATE_01OCT2026.md`. Fresh user authorization cannot cure a missing COMMUNICATION_ID, canonical-name failure, incomplete Gmail-history gate, missing Attachment/Link Manifest, failed applicable public-mirror gate or stale draft readback unless the relevant control expressly permits and records an exact one-use user exception.
+
 ## 3. Mandatory refusal conditions
 
 The send path must stop where any of the following is true:
