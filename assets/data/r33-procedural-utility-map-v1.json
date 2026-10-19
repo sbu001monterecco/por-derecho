@@ -14,334 +14,71 @@
     "es": "Un mismo hecho puede ser relevante para varios procedimientos, pero responsabilidad, conocimiento, intención, capacidad y efecto jurídico deben probarse por separado para cada actor y vía. Conectar prueba no fusiona procedimientos ni transfiere responsabilidad."
   },
   "lanes": [
-    {
-      "id": "removal",
-      "tone": "primary",
-      "label": {
-        "en": "RPL 3304/2025 · removal appeal",
-        "es": "RPL 3304/2025 · apelación de separación"
-      },
-      "role": {
-        "en": "Primary merits lane",
-        "es": "Vía principal de fondo"
-      },
-      "test": {
-        "en": "Does the record establish just cause, need for replacement/rendition of accounts, or at least require express merits review and supervision?",
-        "es": "¿Acredita el expediente justa causa, necesidad de sustitución/rendición de cuentas o, al menos, exige examen expreso del fondo y supervisión?"
-      },
-      "routes": {
-        "en": "/en/insolvency-36-2012-administrator-removal-rpl-3304-2025/",
-        "es": "/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/"
-      }
-    },
-    {
-      "id": "ac",
-      "tone": "ac",
-      "label": {
-        "en": "AC-specific accountability",
-        "es": "Responsabilidad específica del AC"
-      },
-      "role": {
-        "en": "DP 1956 / AC documentary lane",
-        "es": "DP 1956 / vía documental del AC"
-      },
-      "test": {
-        "en": "What did the Insolvency Administrator know, verify, recommend, implement, account for, omit or later correct in his own capacity?",
-        "es": "¿Qué conoció, verificó, recomendó, ejecutó, contabilizó, omitió o corrigió después el Administrador Concursal en su propia capacidad?"
-      },
-      "routes": {
-        "en": "/en/dp-1956-2026/",
-        "es": "/es/dp-1956-2026/"
-      }
-    },
-    {
-      "id": "judge",
-      "tone": "judge",
-      "label": {
-        "en": "Judge / supervision",
-        "es": "Juez / supervisión"
-      },
-      "role": {
-        "en": "Own acts, notice and response only",
-        "es": "Sólo actos propios, aviso y respuesta"
-      },
-      "test": {
-        "en": "What entered the judicial record, what supervision power existed, what identifiable response followed, and what later consequence is source-linked?",
-        "es": "¿Qué entró en autos, qué poder de supervisión existía, qué respuesta identificable siguió y qué consecuencia posterior está enlazada por fuente?"
-      },
-      "routes": {
-        "en": "/en/insolvency-36-2012-mercantile-court-1/",
-        "es": "/es/concurso-36-2012-magistrado-juez/"
-      }
-    },
-    {
-      "id": "private",
-      "tone": "private",
-      "label": {
-        "en": "Private actors / Acosta Matos perimeter",
-        "es": "Actores privados / perímetro Acosta Matos"
-      },
-      "role": {
-        "en": "Actor-specific private lane",
-        "es": "Vía privada actor por actor"
-      },
-      "test": {
-        "en": "Which identified person/entity performed which act, in what capacity, with what authority, knowledge, use, benefit and lawful alternative?",
-        "es": "¿Qué persona/entidad identificada realizó qué acto, en qué capacidad, con qué autoridad, conocimiento, uso, beneficio y alternativa lícita?"
-      },
-      "routes": {
-        "en": "/en/acosta-matos-perimeter/",
-        "es": "/es/acosta-matos-perimetro/"
-      }
-    }
+    {"id":"removal","tone":"primary","label":{"en":"RPL 3304/2025 · removal appeal","es":"RPL 3304/2025 · apelación de separación"},"role":{"en":"Primary merits lane","es":"Vía principal de fondo"},"test":{"en":"Does the record establish just cause, need for replacement/rendition of accounts, or at least require express merits review and supervision?","es":"¿Acredita el expediente justa causa, necesidad de sustitución/rendición de cuentas o, al menos, exige examen expreso del fondo y supervisión?"},"routes":{"en":"/en/insolvency-36-2012-administrator-removal-rpl-3304-2025/","es":"/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/"}},
+    {"id":"ac","tone":"ac","label":{"en":"AC-specific accountability","es":"Responsabilidad específica del AC"},"role":{"en":"DP 1956 / AC documentary lane","es":"DP 1956 / vía documental del AC"},"test":{"en":"What did the Insolvency Administrator know, verify, recommend, implement, account for, omit or later correct in his own capacity?","es":"¿Qué conoció, verificó, recomendó, ejecutó, contabilizó, omitió o corrigió después el Administrador Concursal en su propia capacidad?"},"routes":{"en":"/en/dp-1956-2026/","es":"/es/dp-1956-2026/"}},
+    {"id":"judge","tone":"judge","label":{"en":"Judge / supervision","es":"Juez / supervisión"},"role":{"en":"Own acts, notice and response only","es":"Sólo actos propios, aviso y respuesta"},"test":{"en":"What entered the judicial record, what supervision power existed, what identifiable response followed, and what later consequence is source-linked?","es":"¿Qué entró en autos, qué poder de supervisión existía, qué respuesta identificable siguió y qué consecuencia posterior está enlazada por fuente?"},"routes":{"en":"/en/insolvency-36-2012-mercantile-court-1/","es":"/es/concurso-36-2012-magistrado-juez/"}},
+    {"id":"private","tone":"private","label":{"en":"Private actors / Acosta Matos perimeter","es":"Actores privados / perímetro Acosta Matos"},"role":{"en":"Actor-specific private lane","es":"Vía privada actor por actor"},"test":{"en":"Which identified person/entity performed which act, in what capacity, with what authority, knowledge, use, benefit and lawful alternative?","es":"¿Qué persona/entidad identificada realizó qué acto, en qué capacidad, con qué autoridad, conocimiento, uso, beneficio y alternativa lícita?"},"routes":{"en":"/en/acosta-matos-perimeter/","es":"/es/acosta-matos-perimetro/"}}
   ],
   "issues": [
-    {
-      "id": "accounts",
-      "pages": "8–10, 20",
-      "count": 20,
-      "label": {
-        "en": "Annual accounts / collaboration",
-        "es": "Cuentas anuales / colaboración"
-      },
-      "why": {
-        "en": "R33 advances a broad causal explanation for the absence of annual accounts. The existing review preserves narrower missing-material questions and contrary material requiring request-by-request reconciliation.",
-        "es": "R33 formula una explicación causal amplia de la ausencia de cuentas anuales. La revisión preserva déficits documentales más estrechos y material contrario que exige conciliación solicitud por solicitud."
-      },
-      "lanes": [
-        "removal",
-        "ac",
-        "judge"
-      ],
-      "next": {
-        "en": "Request → delivery → missing item → actual ability/duty to prepare → court notice/response.",
-        "es": "Solicitud → entrega → elemento faltante → capacidad/deber real de formular → aviso/respuesta judicial."
-      }
-    },
-    {
-      "id": "dation",
-      "pages": "1–2, 4, 10, 18–19",
-      "count": 17,
-      "label": {
-        "en": "Dation / valuation / CAM transaction",
-        "es": "Dación / valoración / operación CAM"
-      },
-      "why": {
-        "en": "R33 itself records that an ACTÚA valuation was transmitted by Construcciones Acosta Matos to the Insolvency Administration and relies on later judicial approvals. This creates a shared evidential event but not shared liability.",
-        "es": "R33 registra que una tasación de ACTÚA fue remitida por Construcciones Acosta Matos a la Administración Concursal y se apoya en aprobaciones judiciales posteriores. Esto crea un hecho probatorio compartido, no responsabilidad compartida."
-      },
-      "lanes": [
-        "removal",
-        "ac",
-        "judge",
-        "private"
-      ],
-      "next": {
-        "en": "Valuation provenance → authority → credit/payoff arithmetic → €400k debit/credit/application → deed/Registry → estate accounting.",
-        "es": "Procedencia de tasación → autoridad → aritmética crédito/cancelación → débito/crédito/aplicación €400k → escritura/Registro → contabilidad de la masa."
-      }
-    },
-    {
-      "id": "hotel",
-      "pages": "4, 19–20",
-      "count": 8,
-      "label": {
-        "en": "Hotel unity / access / practical control",
-        "es": "Unidad hotelera / acceso / control material"
-      },
-      "why": {
-        "en": "The removal case pleads failure to preserve the functional hotel unit. The 7 June 2018 record supplies the factual-control chronology; each actor's authority, notice, response and effect must remain separate.",
-        "es": "La separación alega falta de preservación de la unidad funcional hotelera. El expediente de 7 junio 2018 aporta la cronología de control material; autoridad, aviso, respuesta y efecto deben mantenerse separados por actor."
-      },
-      "lanes": [
-        "removal",
-        "ac",
-        "judge",
-        "private"
-      ],
-      "next": {
-        "en": "Exact property/access perimeter → who controlled keys/security/operation → AC notice/action → judicial notice/action → actor-specific benefit/effect.",
-        "es": "Perímetro exacto de fincas/acceso → quién controló llaves/seguridad/operación → aviso/acción AC → aviso/acción judicial → beneficio/efecto actor por actor."
-      },
-      "extra_routes": {
-        "en": [
-          "/en/sun-park-takeover-7-june-2018/"
-        ],
-        "es": [
-          "/es/toma-control-sun-park-7-junio-2018/"
-        ]
-      }
-    },
-    {
-      "id": "counsel",
-      "pages": "5, 8, 10–16, 21",
-      "count": 34,
-      "label": {
-        "en": "Counsel continuity / causal generalisation",
-        "es": "Continuidad letrada / generalización causal"
-      },
-      "why": {
-        "en": "R33 uses one genuine 2020 withdrawal/apology as support for a wider explanation of repeated lawyer changes. The wider causal proposition requires mandate-by-mandate proof.",
-        "es": "R33 utiliza una renuncia/disculpa real de 2020 para apoyar una explicación más amplia de sucesivos cambios de letrado. La proposición causal general exige prueba mandato por mandato."
-      },
-      "lanes": [
-        "removal",
-        "ac"
-      ],
-      "next": {
-        "en": "For each mandate: entry/exit date, formal reason, client instructions, AC contact, fees/payment, protective acts and contemporaneous communications.",
-        "es": "Para cada mandato: alta/baja, razón formal, instrucciones del cliente, contacto del AC, honorarios/pago, actos protectores y comunicaciones contemporáneas."
-      },
-      "extra_routes": {
-        "en": [
-          "/en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/"
-        ],
-        "es": [
-          "/es/continuidad-defensa-letrados/"
-        ]
-      }
-    },
-    {
-      "id": "fees",
-      "pages": "12, 20",
-      "count": 2,
-      "label": {
-        "en": "AC remuneration / estate outflow",
-        "es": "Remuneración AC / salida de masa"
-      },
-      "why": {
-        "en": "A removal ground and a distinct fees/remuneration route overlap factually. The question is not label-first; it is authority, period, amount, ledger and bank application.",
-        "es": "Una causa de separación y la vía separada de honorarios se solapan fácticamente. La cuestión no empieza por la etiqueta, sino por autoridad, periodo, importe, mayor y aplicación bancaria."
-      },
-      "lanes": [
-        "removal",
-        "ac"
-      ],
-      "next": {
-        "en": "Authorising orders → accrual periods → invoices/claims → estate ledger → bank debit → recipient credit → interest basis.",
-        "es": "Autos habilitantes → periodos de devengo → facturas/reclamaciones → mayor de masa → débito bancario → abono receptor → base de intereses."
-      },
-      "extra_routes": {
-        "en": [
-          "/en/insolvency-36-2012-administrator-removal-fees/"
-        ],
-        "es": [
-          "/es/concurso-36-2012-separacion-ac-honorarios/"
-        ]
-      }
-    },
-    {
-      "id": "independence",
-      "pages": "3, 21",
-      "count": 6,
-      "label": {
-        "en": "Independence / Grant Thornton transparency",
-        "es": "Independencia / transparencia Grant Thornton"
-      },
-      "why": {
-        "en": "Professional relationship, conflict and disclosure propositions must be separated from mere association. The removal relevance is confidence, independence and disclosure; any other liability needs its own elements.",
-        "es": "Relación profesional, conflicto y deber de información deben separarse de la mera asociación. Para la separación importan confianza, independencia y transparencia; cualquier otra responsabilidad exige sus propios elementos."
-      },
-      "lanes": [
-        "removal",
-        "ac"
-      ],
-      "next": {
-        "en": "Exact engagement/capacity/date → disclosure duty → disclosure actually made → conflict-control measure → decision/effect.",
-        "es": "Encargo/capacidad/fecha exactos → deber de revelar → revelación efectuada → medida de control del conflicto → decisión/efecto."
-      }
-    },
-    {
-      "id": "banking",
-      "pages": "11–17",
-      "count": 14,
-      "label": {
-        "en": "SWAP / credit assignment / estate recovery",
-        "es": "SWAP / cesión de crédito / recuperación de masa"
-      },
-      "why": {
-        "en": "These passages test whether potentially valuable estate claims were pursued, delayed or obstructed and whether the economic alternatives were assessed on complete information.",
-        "es": "Estos pasajes permiten comprobar si acciones potencialmente valiosas para la masa fueron ejercitadas, demoradas u obstaculizadas y si las alternativas económicas se evaluaron con información completa."
-      },
-      "lanes": [
-        "removal",
-        "ac",
-        "judge"
-      ],
-      "next": {
-        "en": "Claim viability/authority → action actually taken → delay/decision record → economic counterfactual → causation and recoverable estate effect.",
-        "es": "Viabilidad/autoridad → acción realmente ejercida → registro de demora/decisión → contrafactual económico → causalidad y efecto recuperable para la masa."
-      }
-    }
+    {"id":"accounts","pages":"8–10, 20","count":20,"label":{"en":"Annual accounts / collaboration","es":"Cuentas anuales / colaboración"},"why":{"en":"R33 advances a broad causal explanation for the absence of annual accounts. The existing review preserves narrower missing-material questions and contrary material requiring request-by-request reconciliation.","es":"R33 formula una explicación causal amplia de la ausencia de cuentas anuales. La revisión preserva déficits documentales más estrechos y material contrario que exige conciliación solicitud por solicitud."},"lanes":["removal","ac","judge"],"next":{"en":"Request → delivery → missing item → actual ability/duty to prepare → court notice/response.","es":"Solicitud → entrega → elemento faltante → capacidad/deber real de formular → aviso/respuesta judicial."}},
+    {"id":"dation","pages":"1–2, 4, 10, 18–19","count":17,"label":{"en":"Dation / valuation / CAM transaction","es":"Dación / valoración / operación CAM"},"why":{"en":"R33 itself records that an ACTÚA valuation was transmitted by Construcciones Acosta Matos to the Insolvency Administration and relies on later judicial approvals. This creates a shared evidential event but not shared liability.","es":"R33 registra que una tasación de ACTÚA fue remitida por Construcciones Acosta Matos a la Administración Concursal y se apoya en aprobaciones judiciales posteriores. Esto crea un hecho probatorio compartido, no responsabilidad compartida."},"lanes":["removal","ac","judge","private"],"next":{"en":"Valuation provenance → authority → credit/payoff arithmetic → €400k debit/credit/application → deed/Registry → estate accounting.","es":"Procedencia de tasación → autoridad → aritmética crédito/cancelación → débito/crédito/aplicación €400k → escritura/Registro → contabilidad de la masa."}},
+    {"id":"hotel","pages":"4, 19–20","count":8,"label":{"en":"Hotel unity / access / practical control","es":"Unidad hotelera / acceso / control material"},"why":{"en":"The removal case pleads failure to preserve the functional hotel unit. The 7 June 2018 record supplies the factual-control chronology; each actor's authority, notice, response and effect must remain separate.","es":"La separación alega falta de preservación de la unidad funcional hotelera. El expediente de 7 junio 2018 aporta la cronología de control material; autoridad, aviso, respuesta y efecto deben mantenerse separados por actor."},"lanes":["removal","ac","judge","private"],"next":{"en":"Exact property/access perimeter → who controlled keys/security/operation → AC notice/action → judicial notice/action → actor-specific benefit/effect.","es":"Perímetro exacto de fincas/acceso → quién controló llaves/seguridad/operación → aviso/acción AC → aviso/acción judicial → beneficio/efecto actor por actor."},"extra_routes":{"en":["/en/sun-park-takeover-7-june-2018/"],"es":["/es/toma-control-sun-park-7-junio-2018/"]}},
+    {"id":"counsel","pages":"5, 8, 10–16, 21","count":34,"label":{"en":"Counsel continuity / causal generalisation","es":"Continuidad letrada / generalización causal"},"why":{"en":"R33 uses one genuine 2020 withdrawal/apology as support for a wider explanation of repeated lawyer changes. The wider causal proposition requires mandate-by-mandate proof.","es":"R33 utiliza una renuncia/disculpa real de 2020 para apoyar una explicación más amplia de sucesivos cambios de letrado. La proposición causal general exige prueba mandato por mandato."},"lanes":["removal","ac"],"next":{"en":"For each mandate: entry/exit date, formal reason, client instructions, AC contact, fees/payment, protective acts and contemporaneous communications.","es":"Para cada mandato: alta/baja, razón formal, instrucciones del cliente, contacto del AC, honorarios/pago, actos protectores y comunicaciones contemporáneas."},"extra_routes":{"en":["/en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/"],"es":["/es/continuidad-defensa-letrados/"]}},
+    {"id":"fees","pages":"12, 20","count":2,"label":{"en":"AC remuneration / estate outflow","es":"Remuneración AC / salida de masa"},"why":{"en":"A removal ground and a distinct fees/remuneration route overlap factually. The question is not label-first; it is authority, period, amount, ledger and bank application.","es":"Una causa de separación y la vía separada de honorarios se solapan fácticamente. La cuestión no empieza por la etiqueta, sino por autoridad, periodo, importe, mayor y aplicación bancaria."},"lanes":["removal","ac"],"next":{"en":"Authorising orders → accrual periods → invoices/claims → estate ledger → bank debit → recipient credit → interest basis.","es":"Autos habilitantes → periodos de devengo → facturas/reclamaciones → mayor de masa → débito bancario → abono receptor → base de intereses."},"extra_routes":{"en":["/en/insolvency-36-2012-administrator-removal-fees/"],"es":["/es/concurso-36-2012-separacion-ac-honorarios/"]}},
+    {"id":"independence","pages":"3, 21","count":6,"label":{"en":"Independence / Grant Thornton transparency","es":"Independencia / transparencia Grant Thornton"},"why":{"en":"Professional relationship, conflict and disclosure propositions must be separated from mere association. The removal relevance is confidence, independence and disclosure; any other liability needs its own elements.","es":"Relación profesional, conflicto y deber de información deben separarse de la mera asociación. Para la separación importan confianza, independencia y transparencia; cualquier otra responsabilidad exige sus propios elementos."},"lanes":["removal","ac"],"next":{"en":"Exact engagement/capacity/date → disclosure duty → disclosure actually made → conflict-control measure → decision/effect.","es":"Encargo/capacidad/fecha exactos → deber de revelar → revelación efectuada → medida de control del conflicto → decisión/efecto."}},
+    {"id":"banking","pages":"11–17","count":14,"label":{"en":"SWAP / credit assignment / estate recovery","es":"SWAP / cesión de crédito / recuperación de masa"},"why":{"en":"These passages test whether potentially valuable estate claims were pursued, delayed or obstructed and whether the economic alternatives were assessed on complete information.","es":"Estos pasajes permiten comprobar si acciones potencialmente valiosas para la masa fueron ejercitadas, demoradas u obstaculizadas y si las alternativas económicas se evaluaron con información completa."},"lanes":["removal","ac","judge"],"next":{"en":"Claim viability/authority → action actually taken → delay/decision record → economic counterfactual → causation and recoverable estate effect.","es":"Viabilidad/autoridad → acción realmente ejercida → registro de demora/decisión → contrafactual económico → causalidad y efecto recuperable para la masa."}}
   ],
   "gateways": {
     "en": [
-      {
-        "label": "R33 source reader",
-        "route": "/en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/"
-      },
-      {
-        "label": "Removal master",
-        "route": "/en/insolvency-36-2012-administrator-removal-rpl-3304-2025/"
-      },
-      {
-        "label": "DP 1956 · AC",
-        "route": "/en/dp-1956-2026/"
-      },
-      {
-        "label": "Judge / supervision",
-        "route": "/en/insolvency-36-2012-mercantile-court-1/"
-      },
-      {
-        "label": "DP 1901",
-        "route": "/en/dp-1901-2026/"
-      },
-      {
-        "label": "Acosta Matos perimeter",
-        "route": "/en/acosta-matos-perimeter/"
-      },
-      {
-        "label": "7 June 2018",
-        "route": "/en/sun-park-takeover-7-june-2018/"
-      },
-      {
-        "label": "AC dossier",
-        "route": "/en/insolvency-36-2012-insolvency-administrator/"
-      }
+      {"label":"R33 source reader","route":"/en/insolvency-36-2012-ac-opposition-lpb-appeal-september-2026/"},
+      {"label":"Removal master","route":"/en/insolvency-36-2012-administrator-removal-rpl-3304-2025/"},
+      {"label":"DP 1956 · AC","route":"/en/dp-1956-2026/"},
+      {"label":"Judge / supervision","route":"/en/insolvency-36-2012-mercantile-court-1/"},
+      {"label":"DP 1901","route":"/en/dp-1901-2026/"},
+      {"label":"Acosta Matos perimeter","route":"/en/acosta-matos-perimeter/"},
+      {"label":"7 June 2018","route":"/en/sun-park-takeover-7-june-2018/"},
+      {"label":"AC dossier","route":"/en/insolvency-36-2012-insolvency-administrator/"}
     ],
     "es": [
-      {
-        "label": "Visor fuente R33",
-        "route": "/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/"
-      },
-      {
-        "label": "Separación · expediente maestro",
-        "route": "/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/"
-      },
-      {
-        "label": "DP 1956 · AC",
-        "route": "/es/dp-1956-2026/"
-      },
-      {
-        "label": "Magistrado-Juez / supervisión",
-        "route": "/es/concurso-36-2012-magistrado-juez/"
-      },
-      {
-        "label": "DP 1901",
-        "route": "/es/dp-1901-2026/"
-      },
-      {
-        "label": "Perímetro Acosta Matos",
-        "route": "/es/acosta-matos-perimetro/"
-      },
-      {
-        "label": "7 junio 2018",
-        "route": "/es/toma-control-sun-park-7-junio-2018/"
-      },
-      {
-        "label": "Dossier Administrador Concursal",
-        "route": "/es/concurso-36-2012-administrador-concursal/"
-      }
+      {"label":"Visor fuente R33","route":"/es/concurso-36-2012-oposicion-ac-apelacion-lpb-septiembre-2026/"},
+      {"label":"Separación · expediente maestro","route":"/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/"},
+      {"label":"DP 1956 · AC","route":"/es/dp-1956-2026/"},
+      {"label":"Magistrado-Juez / supervisión","route":"/es/concurso-36-2012-magistrado-juez/"},
+      {"label":"DP 1901","route":"/es/dp-1901-2026/"},
+      {"label":"Perímetro Acosta Matos","route":"/es/acosta-matos-perimetro/"},
+      {"label":"7 junio 2018","route":"/es/toma-control-sun-park-7-junio-2018/"},
+      {"label":"Dossier Administrador Concursal","route":"/es/concurso-36-2012-administrador-concursal/"}
     ]
+  },
+  "editorial_revision": {
+    "control": "PD-AC-REMOVAL-CLARITY-20260928",
+    "date": "2026-09-28",
+    "mode": "additive_extension_of_existing_map",
+    "source_baseline_github": "987f2d3f5b3027cbbbd9632fd3993c6bc7c23d75",
+    "source_extracts": "/evidence/insolvency-36-2012/rpl-3304-2025/R33-oposicion-ac-apelacion-lpb-septiembre-2026-controlled-extracts.md",
+    "r01_source_sha256": "5665ec05ae42f18fc64b1209ed7984c39ece015933bdfc9dd8bcf1a8ece6bf26",
+    "evidence_states": {
+      "court_record_verified": {"es":"Obrante en autos con referencia verificada","en":"In the court record with a verified reference"},
+      "submitted_admission_pending": {"es":"Aportado o propuesto; admisión pendiente","en":"Submitted or proposed; admission pending"},
+      "externally_preserved": {"es":"Conservado fuera de esta apelación","en":"Preserved outside this appeal"},
+      "unverified": {"es":"Acuse, folio o decisión por conciliar","en":"Receipt, folio or decision still to be reconciled"}
+    },
+    "evidence_rule": {"es":"La existencia en el repositorio, la reproducción en R33, la presentación y la admisión son estados distintos. No se asigna estado judicial a cada soporte por inferencia. Un campo nulo no significa que no exista el documento o motivo.","en":"Repository presence, reproduction in R33, submission and admission are distinct states. No court status is assigned to each support by inference. A null field does not mean the document or ground does not exist."},
+    "adverse_decision_control": {"es":"Conservar rechazo por legitimación de 12 septiembre 2025 y apreciación de 11 noviembre de no existir indicios para actuar de oficio. Contrastar su alcance, material considerado y motivación; no convertirla en una adjudicación documental exhaustiva ni omitirla.","en":"Preserve the 12 September 2025 standing rejection and the 11 November no-indications assessment concerning action of the court's own motion. Examine scope, material considered and reasons; neither omit it nor convert it into exhaustive documentary adjudication."},
+    "remedy_control": {"es":"Identificar funciones pendientes y comparar sustitución con continuidad, coste y controles. Aplicar la versión y régimen transitorio correctos de los arts. 100–103 TRLC. No presumir activos o viabilidad de acciones.","en":"Identify remaining functions and compare replacement with retention, cost and controls. Apply the correct version and transitional rules of TRLC Articles 100–103. Do not presume assets or claim viability."},
+    "official_record_fields": ["document_id","official_entry_or_receipt","receipt_date","recipient_capacity","response_act","response_date","service_record","competent_route"],
+    "accounting_record_fields": ["accounting_year","document_category","request_date","request_recipient","actual_ac_delivery_date","delivery_receipt","delivered_items","specific_missing_items","why_task_prevented","reconstruction_or_followup","later_material_used","court_notice_response","existing_ground_paragraph","evidence_state"],
+    "notice_chain": {"date":"2016-04-29","r33_pages":[19,20],"sequence":["notice_content_and_receipt","identified_later_act_or_omission","applicable_own_duty","support_and_contrary_account","specific_effect","existing_pleaded_ground"],"limitation":{"es":"No atribuir al AC el origen anterior a su designación; aviso de una alegación no demuestra su verdad ni conocimiento de falsedad.","en":"Do not attribute the pre-appointment origin to the AC; notice of an allegation proves neither its truth nor knowledge of falsehood."}},
+    "transaction_sequence": ["application_and_information","operative_terms_and_conditions","deed_payment_possession_registry","estate_accounting","affected_owner_and_effect","contrary_explanation","competent_remedy"],
+    "issue_controls": {
+      "accounts": {"r33_pages":[8,9,10,20],"pleaded_paragraph":null,"paragraph_status":"exact_source_paragraph_not_reconciled_in_this_edit","evidence_state":"unverified","ground_routes":{"es":["/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/#fundamento-cuentas"],"en":["/en/insolvency-36-2012-administrator-removal-rpl-3304-2025/#ground-accounts"]},"contrary_record":{"es":"AC reconoce deber pero alega documentación insuficiente; distinguir entrega a profesionales de entrega al AC.","en":"AC acknowledges duty but alleges insufficient records; distinguish delivery to professionals from delivery to the AC."},"requested_outcome":{"es":"Conciliar por ejercicio y documento las tareas pendientes y su efecto en rendición y continuidad del cargo.","en":"Reconcile by year and document the outstanding tasks and their effect on rendition and continuation in office."}},
+      "dation": {"r33_pages":[1,2,4,10,18,19],"pleaded_paragraph":null,"paragraph_status":"exact_source_paragraph_not_reconciled_in_this_edit","evidence_state":"unverified","ground_routes":{"es":["/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/#fundamento-dacion"],"en":["/en/insolvency-36-2012-administrator-removal-rpl-3304-2025/#ground-dacion"]},"contrary_record":{"es":"Preservar autorizaciones y pronunciamientos posteriores con su alcance exacto; no presumir validación universal ni nulidad automática.","en":"Preserve later authorisations and rulings with their exact scope; assume neither universal validation nor automatic invalidity."},"requested_outcome":{"es":"Identificar concordancia o desviación documentada entre autoridad y ejecución, acto propio del AC y tarea pendiente.","en":"Identify documented correspondence or departure between authority and implementation, the AC's own act and remaining task."}},
+      "hotel": {"r33_pages":[4,19,20],"pleaded_paragraph":null,"paragraph_status":"exact_source_paragraph_not_reconciled_in_this_edit","evidence_state":"unverified","ground_routes":{"es":["/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/#fundamento-unidad"],"en":["/en/insolvency-36-2012-administrator-removal-rpl-3304-2025/#ground-hotel-unit"]},"contrary_record":{"es":"No atribuir al AC conflictos predesignación; comprobar autoridad, título, acceso y explicación de cada interviniente.","en":"Do not attribute pre-appointment conflicts to the AC; verify authority, title, access and each participant's explanation."},"requested_outcome":{"es":"Distinguir masa LPB y terceros, efecto económico conjunto, causalidad y protección concreta sin fusionar titulares ni duplicar daños.","en":"Distinguish LPB's estate and third parties, combined economic effect, causation and specific protection without merging owners or double counting loss."}},
+      "counsel": {"r33_pages":[5,8,10,11,12,13,14,15,16,21],"pleaded_paragraph":null,"paragraph_status":"context_not_promoted_to_new_appeal_ground","evidence_state":"unverified","ground_routes":{"es":["/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/#historia-separacion"],"en":["/en/insolvency-36-2012-administrator-removal-rpl-3304-2025/#removal-history"]},"contrary_record":{"es":"Renuncia y disculpa genuinas de Joaquín preservadas; no prueban la razón de todos los relevos ni coordinación de Armando.","en":"Joaquín's genuine withdrawal and apology preserved; they establish neither every other departure's cause nor coordination by Armando."},"requested_outcome":{"es":"Contrastar la generalización con cada mandato y su registro, sin inventar un nuevo motivo apelativo.","en":"Test the generalisation against each mandate and its record without inventing a new appellate ground."}},
+      "fees": {"r33_pages":[12,20],"pleaded_paragraph":null,"paragraph_status":"exact_source_paragraph_not_reconciled_in_this_edit","evidence_state":"unverified","ground_routes":{"es":["/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/#fundamento-remuneracion"],"en":["/en/insolvency-36-2012-administrator-removal-rpl-3304-2025/#ground-remuneration"]},"contrary_record":{"es":"Conservar resoluciones, periodos, autoridad e intereses; distinguir primera instancia y apelación en RPL 421/2026.","en":"Preserve decisions, periods, authority and interest; distinguish first instance from appeal in RPL 421/2026."},"requested_outcome":{"es":"Vincular coste y regularidad del cargo al motivo formulado manteniendo separado el objeto de honorarios.","en":"Connect cost and regularity of office to the pleaded ground while preserving the distinct fees proceeding."}},
+      "independence": {"r33_pages":[3,21],"pleaded_paragraph":null,"paragraph_status":"exact_source_paragraph_not_reconciled_in_this_edit","evidence_state":"unverified","ground_routes":{"es":["/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/#fundamento-conflictos"],"en":["/en/insolvency-36-2012-administrator-removal-rpl-3304-2025/#ground-conflicts"]},"contrary_record":{"es":"La negación sobre Grant Thornton Advisory, S.L.P. es entidad-específica; asociación profesional no demuestra conflicto ni responsabilidad.","en":"The denial concerning Grant Thornton Advisory, S.L.P. is entity-specific; professional association proves neither conflict nor liability."},"requested_outcome":{"es":"Fijar relación, deber de revelar, revelación, control y tarea afectada; evaluar independencia para funciones pendientes.","en":"Identify relationship, disclosure duty, actual disclosure, control and affected task; assess independence for remaining functions."}},
+      "banking": {"r33_pages":[11,12,13,14,15,16,17],"pleaded_paragraph":null,"paragraph_status":"exact_source_paragraph_not_reconciled_in_this_edit","evidence_state":"unverified","ground_routes":{"es":["/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/#fundamento-swap","/es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/#fundamento-cesion"],"en":["/en/insolvency-36-2012-administrator-removal-rpl-3304-2025/#ground-swap","/en/insolvency-36-2012-administrator-removal-rpl-3304-2025/#ground-assignment"]},"contrary_record":{"es":"Preservar control legítimo de representación/costes y decisiones sobre retracto; precio económico y disponibilidad del remedio son distintos.","en":"Preserve legitimate representation/cost control and redemption decisions; economic price and availability of a remedy are distinct."},"requested_outcome":{"es":"Evaluar viabilidad, información, actuación y efecto recuperable con contrafactual condicionado, no éxito asegurado.","en":"Assess viability, information, action and recoverable effect with a conditional counterfactual, not guaranteed success."}}
+    },
+    "publication_boundary": {"es":"Clarificación pública de fuentes existentes. No es escrito presentado, consejo reservado publicado ni actualización de una notificación judicial en tiempo real.","en":"Public clarification of existing sources. Not a filed pleading, publication of privileged advice or real-time judicial-notification update."}
   }
 }

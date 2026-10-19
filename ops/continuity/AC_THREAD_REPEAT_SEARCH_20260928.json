@@ -1,0 +1,28 @@
+{
+  "schema": "por-derecho.continuity-search-interface.v1",
+  "audit_id": "PD-THREAD-AC-CONTINUITY-20260928",
+  "objective_id": "PD-OBJ-AC-INDEPENDENCE-2012-20260928",
+  "date": "2026-09-28",
+  "classification": "PUBLIC_SAFE_CONTROL_NO_PRIVATE_LOCATORS",
+  "status": "RECURRING_SEARCH_ENABLED_REVIEW_AND_RELEASE_GATED",
+  "existing_identity_registry": "PD-SP-IDENTITY-REGISTRY-001",
+  "existing_source_intake": "PD-SOURCE-INTAKE-20260908",
+  "private_control_names": ["CURRENT_START_HERE.md", "CONTINUITY_SCAN_QUEUE.json", "REGISTRY_SOURCE_STATE_OVERLAY.json", "SOURCE_COVERAGE.json", "THREAD_DECISIONS_LEDGER.md", "PLATFORM_CONTINUITY_RECEIPT.md"],
+  "workitem_counts": {"original_gap_ids_preserved": 18, "technical_and_custody": 12, "related_thread_status": 12, "total": 42},
+  "controlling_corrections": [
+    "Documented June2012 notice precedes the later2016 notice. Pre-appointment conflict and complete acceptance/disclosure contents remain separately tested.",
+    "E.G.745/2026 substantive appeal was filed21Sep2026: principal REGAGE26e00082068814 and ten deliveries. REGAGE26e00082033336 is a separate20Sep preservation communication.",
+    "An existing private recovery handoff locates the original AC complaint in DOC.3. Source location is not full review, official completeness or proof of allegations."
+  ],
+  "repeat_search_protocol": [
+    "Read current registers, private checkpoint and existing recovery handoffs before declaring an original missing.",
+    "Search all three authorized mailboxes, accessible Drive and Library, both repositories and source-derived linked resources with exact account and coverage records.",
+    "Resume provider-issued cursors only with unchanged queries; maintain native-ID/content deduplication and a source-derived frontier.",
+    "Read material originals and preserve contrary evidence, date-effective roles, canonical identities and reciprocal source/event/proceeding/gap links.",
+    "Save and read back private versioned deltas before advancing progress; no-result queries do not prove absence or non-filing.",
+    "Rotate independent unfinished work when access or CI is blocked; do not buy compute, probe capacity with gratuitous pipelines, force-push or bypass controls."
+  ],
+  "separate_statuses": ["source_location", "preservation", "review", "canonical_links", "legal_significance", "required_checks", "merge", "deployment", "live_readback"],
+  "release_gate": "Reconcile remaining2016-first ES/EN wording, exact failing check and host-specific content through the existing review lanes. A scheduled task or branch commit is not a release.",
+  "boundary": "No private evidence, contact datasets, provider IDs or privileged locators in public Git. No emails, filings, payments or findings of guilt. Existing sources and concurrent work remain preserved."
+}

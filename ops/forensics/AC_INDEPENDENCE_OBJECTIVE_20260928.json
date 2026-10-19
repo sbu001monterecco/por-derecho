@@ -1,0 +1,60 @@
+{
+  "schema": "por-derecho.private-analysis-interface.v1",
+  "objective_id": "PD-OBJ-AC-INDEPENDENCE-2012-20260928",
+  "created_on": "2026-09-28",
+  "title": "Appointment, independence and connected conduct: forensic inquiry control",
+  "status": "INITIAL_PRIVATE_REGISTRY_REGISTERED_REVIEW_OPEN",
+  "purpose": "Test appointment eligibility, required disclosures, dated relationships and particular subsequent acts through source-graded, actor-specific analysis beginning before nomination and acceptance. No incompatibility, unlawful coordination or responsibility is established by this interface.",
+  "parent_controls": {
+    "identity_registry": "PD-SP-IDENTITY-REGISTRY-001",
+    "source_intake": "PD-SOURCE-INTAKE-20260908",
+    "github_source_issue": 1617,
+    "github_prosecutor_issue": 1621,
+    "gitlab_procedural_family_issue": 21,
+    "github_existing_editorial_pr": 2020
+  },
+  "canonical_references": [
+    "PD-SP-P-0010", "PD-SP-P-0004", "PD-SP-P-0005", "PD-SP-P-0101",
+    "PD-SP-P-0057", "PD-SP-O-0014", "PD-SP-O-0012", "PD-SP-O-0016",
+    "PD-SP-O-0005", "PD-SP-O-0006", "PD-SP-O-0002", "PD-SP-O-0001",
+    "PD-SP-R-0001", "PD-SP-R-0011", "PD-SP-R-0012", "PD-SP-R-0019"
+  ],
+  "canonical_boundary": "Selection and identity do not establish relationship, knowledge, authority, participation or liability. Reconcile unresolved source mentions with existing registers; do not create duplicate actors or proceedings.",
+  "temporal_rule": "Do not treat a later notice date as the beginning of knowledge without reconciling earlier sources. Distinguish source creation, transmission, reply and actual notice. Pre-appointment conflict is a separately tested hypothesis.",
+  "mandatory_chain": [
+    "dated relationship", "applicable duty", "actual disclosure record", "information received",
+    "particular act or omission", "contrary evidence and lawful explanation",
+    "claimed benefit", "claimant-specific harm", "causation", "competent remedy"
+  ],
+  "edge_fields": [
+    "from_id", "to_id", "relationship", "event_id", "source_ids", "evidence_status",
+    "capacity", "valid_from", "valid_to", "limit", "review_status", "publication_status"
+  ],
+  "edge_statuses": [
+    "DOCUMENTED", "DOCUMENTED_EXTRACT", "ATTRIBUTED_SOURCE_ACCOUNT", "PRIMARY_EXCERPT",
+    "PRIOR_REVIEW_PENDING", "HYPOTHESIS", "SOURCE_GAP"
+  ],
+  "controls": {
+    "negative_search_is_not_nonexistence": true,
+    "operating_instructions_are_not_acceptance_act": true,
+    "common_case_is_not_joint_signature": true,
+    "common_representation_is_not_unlawful_agreement": true,
+    "credit_communication_is_not_recognition": true,
+    "counterevidence_required": true,
+    "judicial_actor_track_separate": true,
+    "source_family_deduplication_required": true,
+    "hypothesis_graph_edges_hidden_by_default": true,
+    "no_guilt_or_credibility_scores": true
+  },
+  "public_legal_baseline": [
+    "https://www.boe.es/eli/es/l/2003/07/09/22/con/20111011",
+    "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2012-22189"
+  ],
+  "private_deliverable_names": [
+    "OBJECTIVE_AND_PROTOCOL.md", "AC_INDEPENDENCE_REGISTRY.json",
+    "AC_INDEPENDENCE_REGISTRY.xlsx", "AC_INDEPENDENCE_GRAPH.html",
+    "VALIDATION_REPORT.json", "PLATFORM_RECEIPT.md"
+  ],
+  "privacy": "The full working registry, source locators, private correspondence and legal strategy remain in restricted custody. This interface deliberately contains no private provider IDs, contacts, source bodies or confidential storage URLs.",
+  "release_boundary": "This working-branch file is not a merge, deployment, court filing, evidential admission, external communication or finding. Existing legal, source, privacy and release gates remain unchanged."
+}
