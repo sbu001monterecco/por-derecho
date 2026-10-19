@@ -1,0 +1,35 @@
+name: Alzada 4 public source admission
+on:
+  push:
+    branches: [publication/alzada4-source-perimeter-20261013]
+    paths:
+      - .github/workflows/alzada4-public-source-admission.yml
+      - scripts/materialize_alzada4_public_source.py
+      - scripts/prepare_alzada4_projection.py
+      - scripts/finalize_alzada4_projection.py
+      - governance/continuity/2026-10-13-alzada4-publication-plan.json
+permissions:
+  contents: read
+concurrency:
+  group: alzada4-public-source-admission
+  cancel-in-progress: false
+jobs:
+  admit:
+    if: github.repository == 'sbu001monterecco/por-derecho' && github.ref == 'refs/heads/publication/alzada4-source-perimeter-20261013'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Check exact source already admitted; never replace a different source
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/materialize_alzada4_public_source.py
+      - name: Prepare bounded canonical and full-reader projections on this non-main branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/finalize_alzada4_projection.py --commit

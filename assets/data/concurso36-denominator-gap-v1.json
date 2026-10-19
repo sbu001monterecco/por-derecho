@@ -118,10 +118,18 @@
         "recipient_lane": "Secretaría de Coordinación Provincial de Las Palmas",
         "registration": "REGAGE26e00073341382",
         "date": "2026-08-15",
-        "status": "answered_by_eg17_20_26_decision; limited_alzada_REGAGE26e00083460291_filed_2026_09_24; requested_index_not_produced; forwarding_and_production_open",
+        "status": "Alzada 4/2026 dismissed 13 Oct 2026; receipt with prescribed report on29Sep stated in decision; complete transmitted file remains unverified",
         "supervening_registration": "REGAGE26e00082040006",
         "corrected_genealogy": "15-Aug Provincial LAJ lane remains origin; 20-Sep DP1901/Ref21/Ref24 filing is a supervening linked contribution",
-        "open_next": "confirm mapping to registro general 20-2026; prove ordered transfer to TSJC; prove alzada forwarding and ordered file"
+        "open_next": "confirm mapping to registro general 20-2026; prove ordered transfer to TSJC; prove alzada forwarding and ordered file",
+        "latest_alzada4_control": {
+          "date": "2026-10-13",
+          "reference": "Alzada 4/2026",
+          "outcome": "DISMISSED",
+          "control": "assets/data/eg17-20-26-alzada-continuity-20260924.json",
+          "full_source": "evidence/public/2026-10-13-alzada4/decision-full-public-facsimile.pdf",
+          "complete_authority_file": "OPEN"
+        }
       },
       {
         "recipient_lane": "Secretaría General de la Administración de Justicia",

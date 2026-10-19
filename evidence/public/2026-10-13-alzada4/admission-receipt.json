@@ -1,0 +1,27 @@
+{
+  "control_id": "PD-LAJ-20-26-20260924-01",
+  "master_parent": "GC-LAJ-021",
+  "status": "EXACT_PUBLIC_FACSIMILE_ADMITTED_TO_NON_MAIN_BRANCH",
+  "source_event_sha": "719df47835d8535259a0563bad6e6c4313291943",
+  "branch": "publication/alzada4-source-perimeter-20261013",
+  "pages": 5,
+  "raster": {
+    "path": "evidence/public/2026-10-13-alzada4/source-strip.png",
+    "bytes": 1581748,
+    "sha256": "96a3863a425dfac2cb4e0d792b34e284df08a41a6b99889226d530afa6cc8dc8",
+    "width": 1191,
+    "height": 8420
+  },
+  "pdf": {
+    "path": "evidence/public/2026-10-13-alzada4/decision-full-public-facsimile.pdf",
+    "bytes": 1583908,
+    "sha256": "67d1343d0992890d7564d08ca640d206b42292d0bdcbccf8a196944708195eea"
+  },
+  "source_original_sha256": "9dcb9921ca6f8c7d3487c4516e55a81285144c94f22bb21d83e2ef581c02e857",
+  "privacy": "Retrieval identifier/QR removed; all five substantive pages and adverse reasoning retained. Image facsimile, not the electronically signed original.",
+  "limits": [
+    "Not a main merge",
+    "Not a deployment or browser-readback certificate",
+    "Not signature authentication or proof of underlying allegations"
+  ]
+}

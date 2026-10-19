@@ -3,7 +3,7 @@
   "control_id": "PD-LAJ-20-26-20260924-01",
   "control_date": "2026-09-24",
   "timezone": "Atlantic/Canary",
-  "status": "FILED_RECEIPT_VERIFIED_OPEN_FORWARDING_AND_PRODUCTION_GAPS",
+  "status": "ALZADA4_DISMISSED_2026_10_13_RECEIPT_29SEP_RECORDED_COMPLETE_FILE_OPEN",
   "corrected_genealogy": [
     {
       "date": "2026-08-15",
@@ -34,14 +34,16 @@
   "supersession_rule": "DP1901_IS_LATER_LINKED_DEVELOPMENT_NOT_ORIGIN_OF_EG17_20_26",
   "filed_appeal": {
     "registration": "REGAGE26e00083460291",
-    "presented_at_local": "2026-09-24T20:46:23+01:00",
+    "presented_at_local": "2026-09-24T20:46:23",
     "destination_dir3": "J00022837",
     "file": "EG17_20-26_RECURSO_ALZADA_ALL_IN_REBUILT_24SEP2026.pdf",
     "pages": 91,
     "size_bytes": 5484572,
     "sha256": "5d715891ae9a0897adedb26c8f7e809efb0f2126988fd35fd9f4d103d1552fca",
     "sha512": "dfe12b91bd601d8fc308e8353c803999f4c2bc8c4228483b6e6a542ec1736264af0cdd1a5f69f5adb7e8493d4733c390269e750bdcb6428211d6a33e1053104d",
-    "proof_ceiling": "FILING_AND_EXACT_CARRIER_VERIFIED_NOT_FORWARDING_ADMISSION_OR_MERITS"
+    "proof_ceiling": "FILING_AND_EXACT_CARRIER_VERIFIED_NOT_FORWARDING_ADMISSION_OR_MERITS",
+    "superseded_time_literal": "2026-09-24T20:46:23+01:00",
+    "time_zone_status": "OFFSET_NOT_PRINTED_IN_RECEIPT_NOT_VERIFIED"
   },
   "receipt": {
     "size_bytes": 84040,
@@ -69,7 +71,7 @@
   "open_gaps": [
     "PROVINCIAL_73341382_TO_REGISTRO_GENERAL_20_2026_AUTHORITY_CONFIRMATION",
     "EG17_20_26_TO_TSJC_TRANSFER_EXECUTION_PROOF",
-    "ALZADA_83460291_FORWARDING_TO_SECRETARIO_GOBIERNO_AND_ORDERED_FILE",
+    "ALZADA4_COMPLETE_INDEXED_FILE_AND_NATIVE_PROVINCIAL_REPORT",
     "EG38_ALZADA_CURRENT_TRANSMITTED_CORPUS_STATUS",
     "DP1901_INITIATING_DOCUMENT_AND_REF21_REF24_09JUL_TREATMENT",
     "SIGNED_29JUL_FISCAL_REPORT_AND_CORPUS",
@@ -82,5 +84,140 @@
     "CHRONOLOGY_NE_CAUSATION",
     "RELATIONSHIP_NE_ATTRIBUTION",
     "OVERLAP_NE_CORROBORATION"
+  ],
+  "latest_control_date": "2026-10-13",
+  "latest_decision": {
+    "event_key": "PD-LAJ-20-26-20260924-01#decision-2026-10-13",
+    "notification_key": "PD-LAJ-20-26-20260924-01#notification-2026-10-13",
+    "decision_reference": "Alzada 4/2026",
+    "decision_date": "2026-10-13",
+    "authority": "Secretaría de Gobierno del Tribunal Superior de Justicia de Canarias",
+    "signer_in_public_capacity": "Carlos Víctor Rubio Faure",
+    "pages": 5,
+    "original_sha256": "9dcb9921ca6f8c7d3487c4516e55a81285144c94f22bb21d83e2ef581c02e857",
+    "public_pdf_path": "evidence/public/2026-10-13-alzada4/decision-full-public-facsimile.pdf",
+    "public_pdf_bytes": 1583908,
+    "public_pdf_sha256": "67d1343d0992890d7564d08ca640d206b42292d0bdcbccf8a196944708195eea",
+    "public_raster_path": "evidence/public/2026-10-13-alzada4/source-strip.png",
+    "public_raster_bytes": 1581748,
+    "public_raster_sha256": "96a3863a425dfac2cb4e0d792b34e284df08a41a6b99889226d530afa6cc8dc8",
+    "privacy_only_vector_pdf_sha256": "abaaf5e1ccb8e9d6dfd04039db831ebba8c5919b8d85e08a4288f3af5a090140",
+    "public_derivative_description": "Complete five-page image facsimile from the privacy-only source. No substantive reasoning, outcome, appeal instruction or relevant public-capacity name removed. Marginal recovery identifier/QR and embedded signature metadata excluded. Not the electronically signed original.",
+    "scope_proof": "The decision proves its own reasoning and dismissal of the limited administrative appeal. It does not adjudicate the underlying asset/income or institutional-capture allegations.",
+    "source_custody": "Unchanged original and exact registered appeal retained in the existing controlled private workspace; private locators are not exposed here.",
+    "outcome": "DISMISSED",
+    "appeal_receipt_stated_in_decision": "2026-09-29",
+    "mandatory_report_text": "REPRODUCED_IN_DECISION",
+    "complete_administrative_file": "NOT_VERIFIED",
+    "native_separate_mandatory_report": "NOT_OBTAINED",
+    "eg38_appeal": "SEPARATE_NOT_DECIDED_BY_THIS_DISMISSAL"
+  },
+  "current_attributed_position": {
+    "speaker": "Gil Marer / AWESWELL LIMITED",
+    "position_status": "EXPRESS_PARTY_ALLEGATION_NOT_ADJUDICATED_FINDING",
+    "private_actors": [
+      "Francisco Mario Matos Matas",
+      "Antonio Cogolludo Rojas",
+      "Shaila María Cogolludo Ramos",
+      "José Daniel Acosta Matos",
+      "Laura Patricia Acosta Matos"
+    ],
+    "position_es": "Gil Marer y AWESWELL LIMITED sostienen que la Administración está siendo objeto de captura funcional e instrumentalización en beneficio de intereses privados dentro del perímetro Sun Park. Su posición es que no se trata de una mera sucesión de incidencias inconexas, sino de un mecanismo alegadamente ilícito y continuado de apropiación, retención y explotación de activos, derechos e ingresos, acompañado de neutralización o desplazamiento de controles y de utilización de actos, documentos y respuestas institucionales para consolidar ventajas privadas. Esta es una alegación expresa que debe contrastarse de forma independiente; no es una conclusión de la resolución publicada.",
+    "position_en": "Gil Marer and AWESWELL LIMITED maintain that the Administration is being subjected to functional capture and instrumentalisation for private benefit within the Sun Park perimeter. Their position is not merely that unrelated administrative difficulties occurred: they allege a continuing illicit mechanism of appropriation, retention and exploitation of assets, rights and income, accompanied by neutralisation or displacement of safeguards and use of institutional acts, documents and responses to consolidate private advantage. This is their express allegation requiring independent examination, not a finding made in the published decision.",
+    "perimeter_es": "El núcleo privado identificado es Francisco Mario Matos Matas, Antonio Cogolludo Rojas, Shaila María Cogolludo Ramos, José Daniel Acosta Matos y Laura Patricia Acosta Matos. La reconstrucción comprende los enlaces documentados y las conexiones aún por acreditar con Acosta Matos/CAM, RIC/RICPE, Hotel New Trend, MYND y Canarian Hospitality; la titularidad, posesión y explotación; los ingresos, financiación e inversión; los servicios profesionales y las ayudas o incentivos públicos. La administración concursal, los órganos judiciales, el Ministerio Fiscal, cada oficina administrativa, cada sociedad y cada participante posterior conservan identidad, función y responsabilidad separadas. Una marca, grupo, parentesco, cargo o relación profesional no acredita participación consciente ni responsabilidad individual.",
+    "perimeter_en": "The identified private core comprises Francisco Mario Matos Matas, Antonio Cogolludo Rojas, Shaila María Cogolludo Ramos, José Daniel Acosta Matos and Laura Patricia Acosta Matos. The reconstruction follows documented and expressly unresolved links to Acosta Matos/CAM, RIC/RICPE, Hotel New Trend, MYND and Canarian Hospitality; title, possession and operations; income, financing and investment; professional services; and public support or incentives. The Insolvency Administrator, courts, prosecutors, each administrative office, legal entity and later participant retain separate identities, functions and responsibility tests. A brand, group, family connection, office or professional relationship does not establish knowing participation or individual liability.",
+    "predatory_inclusion_es": "La inclusión predatoria alegada consiste en incorporar o utilizar el capital, la reputación, la credibilidad institucional, el prestigio profesional, las redes, los servicios y los recursos de participantes posteriores como protección o instrumento de expansión del mecanismo, incluso sin que esos participantes conozcan todos los antecedentes. La protección y el esclarecimiento deben incluir a todos los titulares de derechos con afectación acreditada: Gil Marer, AWESWELL, LPB, Matkator y otros propietarios, así como a acreedores, operadores, trabajadores, inversores, financiadores, profesionales y entidades públicas potencialmente expuestos. Ni la afectación efectiva de cada integrante de esas categorías ni su complicidad se presumen. El análisis debe identificar quién controló cada activo o ingreso, quién aportó legitimidad o recursos, qué información recibió, qué deber tenía, qué beneficio o perjuicio se produjo y qué explicación lícita o prueba contraria existe.",
+    "predatory_inclusion_en": "Alleged predatory inclusion means drawing later participants' capital, reputation, institutional credibility, professional standing, networks, services and resources into protection or expansion of the mechanism, potentially without their knowing the full history. Protection and fact-finding must include every holder of evidenced affected rights: Gil Marer, AWESWELL, LPB, Matkator and other owners, alongside potentially exposed creditors, operators, workers, investors, lenders, professionals and public bodies. Neither actual harm to every member of those categories nor complicity is presumed. The inquiry must identify who controlled each asset or income stream, who supplied legitimacy or resources, what information they received, what duty applied, what benefit or harm resulted and what lawful explanation or contrary evidence exists.",
+    "output_context_rule": "Future materially connected outputs must retain this attributed position, the named private core, the wider asset/income and affected-party perimeter, and the allegation/finding and individual-attribution boundaries. Do not reduce the matter to an isolated administrative inconvenience or silently treat all later participants as knowing wrongdoers. Do not rewrite historical sources as though they adopted this later statement."
+  },
+  "public_readers": {
+    "es": "/es/alzada-4-2026/",
+    "en": "/en/alzada-4-2026/",
+    "publication_state": "SOURCE_PROJECTION_NOT_DEPLOYMENT_ATTESTATION"
+  },
+  "immediate_actions": [
+    {
+      "key": "deadline-owner",
+      "priority": "P0",
+      "owner": "Gil Marer and expressly instructed counsel",
+      "state": "PROPOSED_NOT_INSTRUCTED_BY_PUBLICATION",
+      "es": "Confirmar responsable letrado, notificación jurídicamente eficaz, órgano competente y plazo; documentar la decisión de impugnar o no. Una solicitud de expediente no protege por sí misma el plazo judicial.",
+      "en": "Confirm expressly instructed counsel, effective notification, competent court and time limit; document the decision whether to challenge. A file-access request must not be relied on to protect the judicial deadline.",
+      "closure": "Written counsel acceptance and verified procedural calendar; no mandate presumed."
+    },
+    {
+      "key": "administrative-file",
+      "priority": "P0",
+      "owner": "Claimant/counsel through the competent administrative channel",
+      "state": "REQUEST_NOT_SENT_BY_THIS_PUBLICATION",
+      "es": "Obtener índice y copia completa de EG17/Alzada4, informe provincial nativo, remisión recibida el 29 septiembre, ejecución del traslado original y constancias de notificación y preservación.",
+      "en": "Obtain the complete indexed EG17/Alzada4 administrative file, native provincial report, transmission received on 29 September, original ordered transfer and notification/preservation records.",
+      "closure": "Native response, indexed denominator and document-by-document reconciliation."
+    },
+    {
+      "key": "preservation",
+      "priority": "P0",
+      "owner": "Each competent records custodian; counsel to select lawful channel",
+      "state": "MEASURE_NOT_ASSUMED_EXECUTED",
+      "es": "Separar conservación de entrega y certificación: delimitar registros existentes, custodio, periodo, retención y riesgo concreto; pedir constancia de medida solicitada, acordada y ejecutada.",
+      "en": "Separate preservation from disclosure and certification: identify existing records, custodian, period, retention and concrete risk; distinguish requested, ordered and executed measures.",
+      "closure": "Custodian-specific preservation evidence, not a generic assurance."
+    },
+    {
+      "key": "eg38",
+      "priority": "P1",
+      "owner": "Claimant/counsel in the separate EG38 appeal",
+      "state": "CURRENT_STATUS_NOT_RESOLVED_BY_ALZADA4",
+      "es": "Verificar estado, órgano revisor y corpus de la alzada REGAGE26e00074355631; no confundir un borrador de seguimiento con comunicación enviada.",
+      "en": "Verify reviewing body, current status and transmitted corpus of REGAGE26e00074355631; do not treat an unsent follow-up draft as a sent communication.",
+      "closure": "Fresh official status/source record for the separate appeal."
+    },
+    {
+      "key": "differentiated-review",
+      "priority": "P1",
+      "owner": "Expressly instructed counsel",
+      "state": "ANALYSIS_NOT_FILED",
+      "es": "Contrastar las peticiones 5 y 7 y el otrosí con los fundamentos de la desestimación; mantener límites judiciales y la objeción contraria de investigación individualizada. Valorar remedio parcial útil, no solo victoria formal.",
+      "en": "Compare prayers 5 and 7 and the preservation request against the dismissal; retain judicial limits and the contrary case-specific-investigation argument. Assess useful partial relief, not merely formal success.",
+      "closure": "Reasoned counsel assessment and, only if separately authorised, exact filed instrument and receipt."
+    },
+    {
+      "key": "asset-income-ledger",
+      "priority": "P1",
+      "owner": "Existing evidence and recovery workstream",
+      "state": "CONTINUING_SOURCE_RECONCILIATION",
+      "es": "Integrar activo por activo e ingreso por ingreso: titular, control efectivo, instrumento, uso, beneficiario, afectado, pérdida y remedio. Mantener LPB, Matkator, AWESWELL, otras propiedades, ingresos y ayudas jurídicamente separados.",
+      "en": "Reconcile each asset and income stream: rights holder, effective control, instrument, use, beneficiary, affected party, loss and remedy. Keep LPB, Matkator, AWESWELL, other ownership, income and public support legally distinct.",
+      "closure": "Source-linked rights/flows ledger; no aggregate or double-recovery assumptions."
+    },
+    {
+      "key": "predatory-inclusion-test",
+      "priority": "P1",
+      "owner": "Existing institutional/professional evidence workstream",
+      "state": "ATTRIBUTED_HYPOTHESIS_TO_TEST",
+      "es": "Para cada actor posterior: mandato, fechas, información recibida, deber de información o comprobación, confianza, capital/reputación aportados, efecto y explicación alternativa. Incluir participantes potencialmente perjudicados o desinformados, no solo posibles responsables.",
+      "en": "For each later actor: mandate, dates, information received, disclosure/verification duty, reliance, capital or reputation supplied, effect and lawful alternative. Include potentially harmed or uninformed participants, not only possible wrongdoers.",
+      "closure": "Actor-specific notice/disclosure/reliance/benefit evidence and contrary record."
+    },
+    {
+      "key": "source-and-retrieval",
+      "priority": "P1",
+      "owner": "Existing GitHub publication, GitLab governance and Drive custody owners",
+      "state": "IMPLEMENTATION_REQUIRES_EXACT_READBACK",
+      "es": "Conservar original privado y derivado público completo; reconciliar registros existentes y comprobar visor, cinco páginas, enlaces, bytes y recuperación. No activar modelos, ampliar permisos ni afirmar RAG operativo sin prueba.",
+      "en": "Preserve the private original and complete public derivative; reconcile existing registers and test viewer, five pages, links, bytes and retrieval. Do not enable models, expand permissions or claim working RAG without proof.",
+      "closure": "Exact source/commit/deployment/readback evidence with remaining exceptions."
+    }
+  ],
+  "latest_corrections": [
+    "Provincial visible signature 21Sep; input20Sep; notification22Sep; appellate description20Sep retained as discrepancy, not falsification finding.",
+    "Receipt of appeal with report on29Sep is stated in13Oct decision; old universal forwarding/outcome-pending wording is superseded within this child appeal.",
+    "Separate EG38 follow-up draft is not sent; distinct provincial post-filing follow-up was sent.",
+    "Report text is reproduced; separately native signed report/full transmitted corpus remain open.",
+    "No new judicial appeal, service, counsel mandate or reminder is proved by publication."
+  ],
+  "source_event_keys": [
+    "PD-LAJ-20-26-20260924-01#decision-2026-10-13",
+    "PD-LAJ-20-26-20260924-01#notification-2026-10-13"
   ]
 }
