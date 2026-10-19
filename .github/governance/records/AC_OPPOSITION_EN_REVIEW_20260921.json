@@ -1,0 +1,116 @@
+{
+  "schema": "por-derecho.private-derivative-receipt.v1",
+  "record_type": "DERIVATIVE_VERIFICATION_RECEIPT_NOT_NEW_EVIDENCE_ID",
+  "record_date": "2026-09-21",
+  "subject": "AC opposition English working translation and annotated reader",
+  "scope": "Public-safe metadata only; underlying populated documents remain private.",
+  "baseline_main_sha": "e6447fbe3639ed78263889221affb316c31960f3",
+  "related_existing_controls": [
+    "ops/forensic-reader/RECOVERY_20260921.md",
+    "tools/forensic-reader/README.md",
+    "tools/forensic-reader/SCHEMA.md"
+  ],
+  "source": {
+    "sha256": "5e0728185cf9b686abd723497d2a53a2656a5e0de4d323a734ed02880eb1d711",
+    "pages": 22,
+    "verification": "Embedded PDF bytes match the digest declared in the supplied reader. This is not independent authentication of the court source.",
+    "source_bytes_committed": false,
+    "source_identity_policy": "Reuse the existing source identity by digest; this receipt allocates no new evidence, event, actor or proceeding identity."
+  },
+  "derivatives": [
+    {
+      "role": "annotated_word_translation",
+      "bytes": 101631,
+      "sha256": "dec312193fadc84b0dd93f0bd144f800d2143687395407346f98c8471d838121",
+      "bytes_committed": false,
+      "repository_download_available": false
+    },
+    {
+      "role": "standalone_forensic_reader",
+      "bytes": 4008522,
+      "sha256": "245840e8e0df3f9ed54e818dde6fb8d31863048751635dcf8c254c2be9d5c92e",
+      "bytes_committed": false,
+      "repository_download_available": false
+    }
+  ],
+  "annotations": {
+    "count": 84,
+    "id_range": [
+      "A001",
+      "A084"
+    ],
+    "category_counts": {
+      "ADOPTION": 11,
+      "CONTEXT": 28,
+      "CONTRADICTED": 2,
+      "KNOWLEDGE": 8,
+      "RHETORIC": 6,
+      "SUPPORTED": 9,
+      "VERIFY": 20
+    },
+    "legend": {
+      "VERIFY": {
+        "colour": "yellow",
+        "meaning": "Not accepted without verification"
+      },
+      "CONTEXT": {
+        "colour": "orange",
+        "meaning": "Challenged inference or missing context"
+      },
+      "RHETORIC": {
+        "colour": "orange",
+        "meaning": "Contested characterisation or legal position"
+      },
+      "CONTRADICTED": {
+        "colour": "red",
+        "meaning": "Identified textual inconsistency; not a finding of knowing falsity"
+      },
+      "ADOPTION": {
+        "colour": "purple",
+        "display_label": "LINK",
+        "meaning": "Private-actor or cross-proceeding evidential connection; not proof of adoption or liability"
+      },
+      "KNOWLEDGE": {
+        "colour": "blue",
+        "meaning": "Express position, acknowledgment or notice; wider knowledge requires separate proof"
+      },
+      "SUPPORTED": {
+        "colour": "green",
+        "meaning": "Corroboration or material qualification; contrary evidence preserved"
+      }
+    },
+    "detailed_annotation_text_committed": false,
+    "legal_conclusions_reverified_in_this_update": false
+  },
+  "structural_checks": {
+    "embedded_source_hash_match": true,
+    "annotation_ids_complete_sequential": true,
+    "docx_comment_count": 84,
+    "docx_comment_anchors_complete": true,
+    "missing_html_internal_link_targets": [],
+    "duplicate_html_dom_ids": []
+  },
+  "status": {
+    "translation": "WORKING_NOT_CERTIFIED",
+    "private_artifact_integrity": "LOCALLY_BYTE_VERIFIED",
+    "public_case_release": "NOT_AUTHORISED_BY_THIS_RECEIPT",
+    "private_vault_copy_of_these_exact_derivatives": "NOT_VERIFIED_IN_THIS_UPDATE",
+    "deployed_reader_import_compatibility": "NOT_TESTED",
+    "gitlab_reconciliation": "PENDING_RESTORATION_NOT_ATTEMPTED",
+    "deletion_safe": false
+  },
+  "preservation": {
+    "original_and_supplied_derivatives_modified": false,
+    "prior_private_editions_superseded": false,
+    "no_public_source_or_private_locator": true,
+    "no_actor_liability_inference_from_association": true,
+    "counter_evidence_and_open_questions_preserved_in_private_review": true
+  },
+  "scope_limits": [
+    "Structural integrity checks do not certify translation fidelity, source authenticity, legal correctness, intentional falsity or criminal liability.",
+    "No full-corpus merits re-review was performed by this GitHub update.",
+    "No public HTML, route, navigation, runtime, asset, deployment setting, evidence wording, Presidencia material or existing governance gate is changed.",
+    "No mail, filing, social publication, authority contact or GitLab write is performed.",
+    "This is a public Git record even under .github; it contains no embedded source, email body, provider ID, private URL, private filename, signature or detailed legal strategy."
+  ]
+}
