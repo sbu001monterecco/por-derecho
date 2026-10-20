@@ -174,3 +174,34 @@ Mandatory retrieval hooks:
 `CAM` · `Acosta Matos` · `7 June 2018` · `toma de posesión` · `lender in possession` · `creditor in possession` · `security` · `seguridad` · `keys` · `llaves` · `cerraduras` · `Borja` · `Administrador Concursal` · `hotel not in concurso` · `LPB-only estate` · `extraconcursal` · `Matkator` · `Calificación` · `Mosteyrín` · `Alberto López Villarrubia` · `Sentencia 163/2023`.
 
 This source upgrade **does not replace** the principal first-person allegation ledger. It strengthens its documentary substrate and adds a permanent correction against (a) collapsing LPB's concurso into the whole hotel and (b) overstating a literal AC→CAM key handover before the primary chain is located.
+
+## 12. Source-state update — 28 September 2026
+
+This additive update preserves sections 1–11 and their dated observations. It implements the approved source-led text integration, not the separately held Pink-page or Fiscal-scope write. The source node `MF-CAL-EXT-SRC-01` remains the contemporaneous counsel report; it is not renamed as a judicial finding.
+
+### Request, recorded authorisation, reported later use
+
+| Date / source layer | Content supported by the recovered record | Proof limit and next test |
+|---|---|---|
+| **27 February 2018 — recovered scanned email** | The email records the AC acting for LPB, invoking its majority participation quotas and requesting a Community meeting to arrange security against unauthorised access and deterioration. | A scanned copy in the later bundle is not original-mailbox byte authentication. Identify the original message, recipients and subsequent instructions. |
+| **18 May 2018 — recorded Community decision, agenda item 11** | The minutes expressly attribute the security item to the request of LPB's liquidator and record authority for the President to contract security, with a stated **€8,500 monthly ceiling**. | Recorded unanimity is not consent of every owner or quota. Notice, quorum, eligible voting, validity and actual expenditure remain separate. |
+| **25 June 2018 — `MF-CAL-EXT-SRC-01`** | Contemporaneous counsel reports that the opposing side supplied the AC email for inclusion in the Arrecife proceedings and used it to support its position. | Reported evidential use is not a certified filing index, an express judicial adoption or proof of judicial motive. |
+| **Implementation — open** | The request and recorded authorisation identify a concrete production path. | Recover the security-company contract, payer, instructions, access lists, guard logs, lock/key records and actual effects. Do not presume that every June action was authorised or caused by the request. |
+
+The recovered copy and minute bundle were text/image-reviewed in the private source checkpoint for `PD-JV1260-ACPINK-SCAN-20260928`. This public derivative reports that source examination; it does not constitute independent corroboration or publish private correspondence, provider locators or bank identifiers. The public proof ceiling is a documented communication/decision sequence and **reported** later use, not a finding of criminal agreement. The limiting 8 June account and lawful-preservation explanation in section 2 remain operative.
+
+### Two distinct instruments on the same date
+
+The **27 February 2018 security email to the Community** is not the **27 February 2018 criminal-complaint amplification** reproduced in the AC report's section E.1 and attached as outer DOC.8. The report's express use of the amplification does not prove incorporation of the security email. Keep document identities, pages, recipients and later uses separate. A shared date does not create an evidential edge.
+
+### Connected account and corrective objective
+
+The new sequence makes the source question more concrete than proximity or passive awareness: request, recorded decision, implementation and later use can each be examined. Gil's existing allegation is that private, concursal and judicial contributions operated together to make the adverse result effective and durable. Separate capacities do not erase that allegation; the documents do not by themselves establish unlawful agreement, knowledge of falsity or criminal purpose.
+
+For each stage identify the affected right-holder, practical change, protection requested, response, later reliance and supporting or contrary evidence. The output should inform the existing Ref21/Ref22/Ref24 and claimant-specific accounting, correction and recovery work without implying joinder, a new filing, an adjudicated entitlement or achieved recovery.
+
+### Language-paired reader summary
+
+**EN:** The recovered AC request, the recorded Community authorisation and counsel's report of later evidential use are three different proof layers. Actual security implementation remains a separate question.
+
+**ES:** La solicitud recuperada del AC, la autorización que consta en el acta comunitaria y el relato letrado sobre su posterior uso probatorio son tres planos de prueba distintos. La ejecución material de la seguridad sigue siendo una cuestión separada.
