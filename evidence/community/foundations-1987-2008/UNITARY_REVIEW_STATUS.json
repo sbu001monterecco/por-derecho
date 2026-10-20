@@ -1,0 +1,42 @@
+{
+  "control": "PD-FOUNDATIONS-1987-2008-20260928-UNITARY-01",
+  "parent": "PD-FOUNDATIONS-1987-2008-20260928",
+  "review_kind": "SOURCE_BOUND_AI_REVIEW",
+  "scope": {
+    "numbered_provisions": 64,
+    "pool_group": 1,
+    "priority_comparisons": 24,
+    "literal_context_anchors": 72,
+    "rule_catalogue": 40,
+    "actor_capacity_rows": 39,
+    "joined_episodes": 6
+  },
+  "canonical_engine": {
+    "source_blob": "6b26bb868924d239eb782d82cc18a567aec2be8e",
+    "pinned_commit": "987f2d3f5b3027cbbbd9632fd3993c6bc7c23d75",
+    "executed": true,
+    "records": 24,
+    "complete_supplied_merits_records": 0,
+    "result": "OPEN_OR_STALE_REVIEW_RECORD / UNASSESSED",
+    "human_attestation": false
+  },
+  "publication_state": "DRAFT_CANDIDATE_NOT_MERGED_OR_DEPLOYED",
+  "private_review": "Private source/actor/financial/contrary and method records remain in established custody; no private source locator here.",
+  "source_text_hashes": {
+    "CEXP_2008_TRANSCRIPCION_ES.md": "a128979496f133a34bb169333b9993a2f1c0ede96f0c7a45da9fd463c9b38e1c",
+    "ESTATUTOS_1987_TRANSCRIPCION_ES.md": "2078bfe62899ae253ca4b28fd442fafbf35031628fc66ec42334475a416f50b1"
+  },
+  "links": {
+    "reader": "index.html",
+    "review": "unitary-review.html",
+    "full_text": "UNITARY_REVIEW_EN_ES.md"
+  },
+  "limits": [
+    "Three contract annexes not recovered in this carrier",
+    "No current-law opinion",
+    "No complete wider-corpus or actor census",
+    "No authenticated human merits signoff",
+    "No automatic knowledge/intent or guilt",
+    "Source-image remote delivery, normal CI and live visual review remain open"
+  ]
+}
