@@ -1,0 +1,517 @@
+{
+  "schema": "por-derecho.methodology-transparency.v1",
+  "control_id": "PD-METHOD-TRANSPARENCY-20260922-01",
+  "version": 1,
+  "publication_status": "PUBLIC_SAFE_CANDIDATE",
+  "public_release_approved": false,
+  "live_verified": false,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "routes": {
+    "en": "en/methodology/index.html",
+    "es": "es/metodologia/index.html"
+  },
+  "constitutional": {
+    "objective": "Maximise lawful recovery, correction, preservation and accountability subject to truth.",
+    "safeguards_self_modify": false,
+    "no_numeric_truth_score": true,
+    "source_not_assertion": true,
+    "assertion_not_finding": true,
+    "authentication_not_truth": true,
+    "relationship_not_liability_transfer": true,
+    "chronology_not_causation": true,
+    "private_evidence_not_public_by_default": true
+  },
+  "recursive_sequence": [
+    {
+      "order": 1,
+      "id": "observe",
+      "en": {
+        "title": "Observe",
+        "tagline": "Retrieve before reasoning.",
+        "body": "Resolve current sources, repository state, identities, proceedings and governing rules. Memory is a retrieval aid, never evidential authority.",
+        "stop": "Stop if the source universe, authority, identity or current host state is unresolved."
+      },
+      "es": {
+        "title": "Observar",
+        "tagline": "Recuperar antes de razonar.",
+        "body": "Resolver fuentes actuales, estado de repositorios, identidades, procedimientos y reglas aplicables. La memoria ayuda a recuperar; nunca sustituye la autoridad probatoria.",
+        "stop": "Detener si el universo de fuentes, la autoridad, la identidad o el estado actual del host no están resueltos."
+      }
+    },
+    {
+      "order": 2,
+      "id": "manifest",
+      "en": {
+        "title": "Manifest",
+        "tagline": "Make the universe explicit.",
+        "body": "Record what was examined, hashes, provenance, source classes, exclusions, current heads and known missing material.",
+        "stop": "Stop if the denominator or provenance cannot be stated honestly."
+      },
+      "es": {
+        "title": "Manifestar",
+        "tagline": "Hacer explícito el universo.",
+        "body": "Registrar qué se examinó, hashes, procedencia, clases de fuente, exclusiones, heads actuales y material conocido como ausente.",
+        "stop": "Detener si el denominador o la procedencia no pueden declararse honestamente."
+      }
+    },
+    {
+      "order": 3,
+      "id": "compare",
+      "en": {
+        "title": "Compare",
+        "tagline": "Compare versions, evidence and projections.",
+        "body": "Source against source; current against predecessor; GitHub against GitLab; English against Spanish; assertion against contrary record.",
+        "stop": "Stop on unexplained divergence, stale baselines or incomplete comparison coverage."
+      },
+      "es": {
+        "title": "Comparar",
+        "tagline": "Comparar versiones, pruebas y proyecciones.",
+        "body": "Fuente contra fuente; actual contra predecesor; GitHub contra GitLab; inglés contra español; afirmación contra registro contrario.",
+        "stop": "Detener ante divergencia no explicada, bases obsoletas o cobertura comparativa incompleta."
+      }
+    },
+    {
+      "order": 4,
+      "id": "classify",
+      "en": {
+        "title": "Classify",
+        "tagline": "Do not collapse unlike things.",
+        "body": "Keep documented fact, attributed allegation, inference, hypothesis, legal characterisation, open question, private-only and corrected/superseded states separate.",
+        "stop": "Stop if language exceeds the evidence class or privacy/publication state."
+      },
+      "es": {
+        "title": "Clasificar",
+        "tagline": "No fusionar categorías distintas.",
+        "body": "Mantener separados hecho documentado, alegación atribuida, inferencia, hipótesis, caracterización jurídica, pregunta abierta, privado y corregido/sustituido.",
+        "stop": "Detener si el lenguaje supera la clase probatoria o el estado de privacidad/publicación."
+      }
+    },
+    {
+      "order": 5,
+      "id": "traverse",
+      "en": {
+        "title": "Traverse dependencies",
+        "tagline": "Ask what else changes if this changes.",
+        "body": "Recursively reopen dependent actors, chronologies, proceedings, hypotheses, institutional communications, translations, pages and releases.",
+        "stop": "Stop cycles with a visited set; keep recursion bounded and every branch attributable."
+      },
+      "es": {
+        "title": "Recorrer dependencias",
+        "tagline": "Preguntar qué más cambia si esto cambia.",
+        "body": "Reabrir recursivamente actores, cronologías, procedimientos, hipótesis, comunicaciones institucionales, traducciones, páginas y releases dependientes.",
+        "stop": "Detener ciclos con un conjunto de visitados; mantener la recursión acotada y cada rama atribuible."
+      }
+    },
+    {
+      "order": 6,
+      "id": "adversarial",
+      "en": {
+        "title": "Adversarial review",
+        "tagline": "Try to prove ourselves wrong.",
+        "body": "Seek the strongest contrary and exculpatory evidence, the best lawful alternative explanation and the finite discriminator between competing accounts.",
+        "stop": "Stop if material contrary evidence or a coherent innocent explanation has not been tested."
+      },
+      "es": {
+        "title": "Revisión adversarial",
+        "tagline": "Intentar demostrarnos equivocados.",
+        "body": "Buscar la mejor prueba contraria y exculpatoria, la explicación lícita alternativa más fuerte y el discriminador finito entre relatos competidores.",
+        "stop": "Detener si no se ha probado la evidencia contraria material o una explicación inocente coherente."
+      }
+    },
+    {
+      "order": 7,
+      "id": "reconcile",
+      "en": {
+        "title": "Reconcile",
+        "tagline": "Create one controlled current state.",
+        "body": "Resolve conflicts, preserve provenance, record typed supersession and integrate only through one scoped writer lane.",
+        "stop": "Stop on path collision, ambiguous ownership, privacy conflict or silent overwrite risk."
+      },
+      "es": {
+        "title": "Reconciliar",
+        "tagline": "Crear un único estado actual controlado.",
+        "body": "Resolver conflictos, preservar procedencia, registrar sustitución tipada e integrar sólo mediante un carril de escritura acotado.",
+        "stop": "Detener ante colisión de rutas, propiedad ambigua, conflicto de privacidad o riesgo de sobrescritura silenciosa."
+      }
+    },
+    {
+      "order": 8,
+      "id": "verify",
+      "en": {
+        "title": "Exact-head verify",
+        "tagline": "Test the thing that would actually be merged.",
+        "body": "Verify exact SHA, source bytes and the applicable identity, privacy, provenance, bilingual, build and publication gates.",
+        "stop": "Stop if the tested head differs from the merge candidate or any required gate is red."
+      },
+      "es": {
+        "title": "Verificar el head exacto",
+        "tagline": "Probar exactamente lo que se fusionaría.",
+        "body": "Verificar SHA exacto, bytes de fuente y controles aplicables de identidad, privacidad, procedencia, bilingüismo, build y publicación.",
+        "stop": "Detener si el head probado difiere del candidato de merge o cualquier control obligatorio está rojo."
+      }
+    },
+    {
+      "order": 9,
+      "id": "deploy",
+      "en": {
+        "title": "Deploy if applicable",
+        "tagline": "Merge is not publication.",
+        "body": "Only an authorised release path may deploy an approved projection. A green build or merge never proves the public site changed.",
+        "stop": "Stop without publication authority, an approved projection or an exact tested release artifact."
+      },
+      "es": {
+        "title": "Desplegar si procede",
+        "tagline": "Merge no equivale a publicación.",
+        "body": "Sólo una vía de release autorizada puede desplegar una proyección aprobada. Un build verde o un merge nunca prueban que el sitio público haya cambiado.",
+        "stop": "Detener sin autoridad de publicación, proyección aprobada o artefacto de release probado exactamente."
+      }
+    },
+    {
+      "order": 10,
+      "id": "readback",
+      "en": {
+        "title": "Live readback",
+        "tagline": "Verify what the public actually receives.",
+        "body": "Read affected routes from the public edge and compare expected and observed bytes, markers and state.",
+        "stop": "Stop if live bytes or state cannot be proved; never infer deployment from CI."
+      },
+      "es": {
+        "title": "Lectura en vivo",
+        "tagline": "Verificar lo que realmente recibe el público.",
+        "body": "Leer las rutas afectadas desde el borde público y comparar bytes, marcadores y estado esperados con los observados.",
+        "stop": "Detener si no pueden probarse bytes o estado en vivo; nunca inferir despliegue a partir de CI."
+      }
+    },
+    {
+      "order": 11,
+      "id": "envelope",
+      "en": {
+        "title": "New envelope",
+        "tagline": "Record the result—and recurse.",
+        "body": "Emit the next state envelope with predecessor, heads, decisions, unresolved gaps and verification receipts; recurse only when a defined trigger remains.",
+        "stop": "Close only on defined terminal conditions; otherwise create a finite next task or explicit blocker."
+      },
+      "es": {
+        "title": "Nuevo sobre de estado",
+        "tagline": "Registrar el resultado y volver a recorrer.",
+        "body": "Emitir el siguiente sobre de estado con predecesor, heads, decisiones, brechas abiertas y recibos de verificación; recursar sólo si queda un disparador definido.",
+        "stop": "Cerrar sólo con condiciones terminales definidas; en otro caso crear una tarea finita o bloqueo explícito."
+      }
+    }
+  ],
+  "two_key": {
+    "en": {
+      "a": {
+        "title": "Key A — Outcome",
+        "body": "What lawful next step best advances recovery, correction, preservation or accountability from the evidence actually held?"
+      },
+      "b": {
+        "title": "Key B — Truth / falsification",
+        "body": "What would disprove or materially qualify the proposition? What contrary material and strongest lawful alternative exist?"
+      },
+      "rule": "A material step advances only if it survives both keys. Strategic importance can raise verification priority; it cannot raise evidential maturity."
+    },
+    "es": {
+      "a": {
+        "title": "Clave A — Resultado",
+        "body": "¿Qué siguiente paso lícito favorece mejor recuperación, corrección, preservación o rendición de cuentas a partir de la evidencia realmente disponible?"
+      },
+      "b": {
+        "title": "Clave B — Verdad / falsación",
+        "body": "¿Qué refutaría o matizaría materialmente la proposición? ¿Qué material contrario y qué alternativa lícita más fuerte existen?"
+      },
+      "rule": "Un paso material avanza sólo si supera ambas claves. La importancia estratégica puede elevar la prioridad de verificación; nunca la madurez probatoria."
+    }
+  },
+  "non_equivalences": [
+    [
+      "An email mentions a filing",
+      "El correo menciona una presentación",
+      "The filing occurred",
+      "La presentación ocurrió"
+    ],
+    [
+      "A filing was registered",
+      "Una presentación fue registrada",
+      "Its contents are true",
+      "Su contenido es verdadero"
+    ],
+    [
+      "An authority received material",
+      "Una autoridad recibió material",
+      "It examined or accepted it",
+      "Lo examinó o aceptó"
+    ],
+    [
+      "Events occurred in sequence",
+      "Los hechos ocurrieron en secuencia",
+      "One caused the other",
+      "Uno causó el otro"
+    ],
+    [
+      "A person could have known",
+      "Una persona pudo conocer",
+      "They actually knew",
+      "Realmente conocía"
+    ],
+    [
+      "A person benefited",
+      "Una persona obtuvo un beneficio",
+      "They intended or joined wrongdoing",
+      "Tuvo intención o participó en una conducta ilícita"
+    ],
+    [
+      "People are related",
+      "Las personas están relacionadas",
+      "Conduct or responsibility transfers",
+      "La conducta o responsabilidad se transfiere"
+    ],
+    [
+      "Two pages cite one source",
+      "Dos páginas citan una fuente",
+      "Independent corroboration exists",
+      "Existe corroboración independiente"
+    ],
+    [
+      "CI is green",
+      "CI está verde",
+      "The website is deployed",
+      "El sitio está desplegado"
+    ],
+    [
+      "A commit was merged",
+      "Un commit fue fusionado",
+      "The public receives those bytes",
+      "El público recibe esos bytes"
+    ],
+    [
+      "Material is retrievable",
+      "El material es recuperable",
+      "It is publishable",
+      "Es publicable"
+    ],
+    [
+      "A source is authenticated",
+      "Una fuente está autenticada",
+      "The proposition inside it is true",
+      "La proposición contenida es verdadera"
+    ]
+  ],
+  "supervised_roles": [
+    {
+      "id": "RETRIEVER",
+      "en": {
+        "title": "Retriever",
+        "body": "Locate candidate sources; cannot change truth or legal status."
+      },
+      "es": {
+        "title": "Recuperador",
+        "body": "Localiza fuentes candidatas; no puede cambiar estado de verdad o jurídico."
+      }
+    },
+    {
+      "id": "EVIDENCE_ANALYST",
+      "en": {
+        "title": "Evidence Analyst",
+        "body": "Propose assertions, relationships and contradictions; cannot silently promote allegation to finding."
+      },
+      "es": {
+        "title": "Analista de evidencia",
+        "body": "Propone afirmaciones, relaciones y contradicciones; no puede promover silenciosamente una alegación a hallazgo."
+      }
+    },
+    {
+      "id": "ADVERSARIAL_REVIEWER",
+      "en": {
+        "title": "Adversarial Reviewer",
+        "body": "Seek contrary, exculpatory and innocent explanations; cannot discard supporting evidence."
+      },
+      "es": {
+        "title": "Revisor adversarial",
+        "body": "Busca explicaciones contrarias, exculpatorias e inocentes; no puede descartar evidencia de apoyo."
+      }
+    },
+    {
+      "id": "INTEGRATOR",
+      "en": {
+        "title": "Integrator",
+        "body": "Reconcile approved objects in one controlled writer lane; cannot overwrite concurrent work."
+      },
+      "es": {
+        "title": "Integrador",
+        "body": "Reconcilia objetos aprobados en un único carril de escritura; no puede sobrescribir trabajo concurrente."
+      }
+    },
+    {
+      "id": "PROJECTION_REVIEWER",
+      "en": {
+        "title": "Projection Reviewer",
+        "body": "Classify public-safe/private treatment and bilingual projection; cannot move private evidence into public Git."
+      },
+      "es": {
+        "title": "Revisor de proyección",
+        "body": "Clasifica tratamiento público/privado y proyección bilingüe; no puede mover evidencia privada a Git público."
+      }
+    },
+    {
+      "id": "RELEASE_VERIFIER",
+      "en": {
+        "title": "Release Verifier",
+        "body": "Verify exact head, build, deployment and live bytes; cannot alter substantive evidence status."
+      },
+      "es": {
+        "title": "Verificador de release",
+        "body": "Verifica head exacto, build, despliegue y bytes en vivo; no puede alterar el estado probatorio sustantivo."
+      }
+    }
+  ],
+  "architecture_history": [
+    {
+      "date": "2026-08-25",
+      "status": "HISTORICAL_DESIGN",
+      "control": ".github/evidence-intelligence/architecture/TARGET_ARCHITECTURE.md",
+      "en": "Early evidence-intelligence design described GitHub as the authoritative control plane for schemas, public-safe knowledge, review and publication while keeping private native evidence outside the public repository.",
+      "es": "El diseño inicial de inteligencia probatoria describía GitHub como plano de control autoritativo para esquemas, conocimiento público seguro, revisión y publicación, manteniendo la evidencia nativa privada fuera del repositorio público."
+    },
+    {
+      "date": "2026-09-12",
+      "status": "CONTROLLING_ACCEPTED",
+      "control": "PD-RECURSIVE-SELF-IMPROVEMENT-TRUTH-SEEKING-20260912-01",
+      "en": "The recursive truth-seeking rule placed editable authority in protected GitLab main and treated GitHub as a reviewed mirror/successor projection, while making safeguards non-self-modifying.",
+      "es": "La regla recursiva de búsqueda de verdad situó la autoridad editable en el main protegido de GitLab y trató GitHub como espejo/proyección sucesora revisada, manteniendo las salvaguardas fuera de la automodificación."
+    },
+    {
+      "date": "2026-09-22",
+      "status": "DRAFT_REVIEW",
+      "control": "PD-FEDERATION-V1-20260922",
+      "en": "The federation candidate formalises GitLab working/recovery authority, GitHub public continuity/publication, ChatGPT supervised orchestration and the live public host as deployment-readback authority. It remains under review and is not silently promoted here.",
+      "es": "El candidato de federación formaliza GitLab como autoridad de trabajo/recuperación, GitHub como continuidad/publicación pública, ChatGPT como orquestación supervisada y el host público en vivo como autoridad de lectura de despliegue. Sigue en revisión y no se promociona silenciosamente aquí."
+    }
+  ],
+  "correction_flow": [
+    "ORIGINAL_PROPOSITION",
+    "NEW_EVIDENCE_OR_ERROR",
+    "CORRECTION_OBJECT",
+    "TYPED_SUPERSESSION",
+    "DEPENDENCY_REVIEW",
+    "AFFECTED_PROJECTIONS_REOPENED",
+    "NEW_RELEASE_IF_APPROVED",
+    "LIVE_READBACK"
+  ],
+  "closure_states": [
+    "PROVED",
+    "DISPROVED",
+    "NOT_APPLICABLE",
+    "CLOSED_NO_ACTION",
+    "OPEN_FINITE_GAP",
+    "SOURCE_BLOCKED",
+    "ROUTE_PENDING",
+    "HUMAN_REVIEW_REQUIRED"
+  ],
+  "improvement_pipeline": [
+    "DETECT_FAILURE_OR_OPPORTUNITY",
+    "PROPOSE_CHANGE",
+    "GOLDEN_CORPUS_TEST",
+    "SHADOW_RUN",
+    "SAFEGUARD_REGRESSION_CHECK",
+    "HUMAN_REVIEW",
+    "MERGE",
+    "MONITOR",
+    "POST_MORTEM"
+  ],
+  "host_states": [
+    {
+      "id": "PRIVATE_CUSTODY",
+      "en": "Private evidence / custody",
+      "es": "Evidencia privada / custodia",
+      "body_en": "Native evidence, privileged communications, protected identifiers and private source locators. Not public by default.",
+      "body_es": "Evidencia nativa, comunicaciones privilegiadas, identificadores protegidos y localizadores privados. No públicos por defecto."
+    },
+    {
+      "id": "GITLAB",
+      "en": "GitLab",
+      "es": "GitLab",
+      "body_en": "Working and recovery control plane where current repository rules assign that authority.",
+      "body_es": "Plano de control de trabajo y recuperación donde las reglas actuales del repositorio asignan esa autoridad."
+    },
+    {
+      "id": "GITHUB",
+      "en": "GitHub",
+      "es": "GitHub",
+      "body_en": "Public continuity, reproducibility, reviewed public projection and publication surface.",
+      "body_es": "Superficie de continuidad pública, reproducibilidad, proyección pública revisada y publicación."
+    },
+    {
+      "id": "CHATGPT",
+      "en": "ChatGPT",
+      "es": "ChatGPT",
+      "body_en": "Supervised orchestration: retrieve current state, compare, classify, coordinate one-writer lanes, test contradictions and preserve continuity.",
+      "body_es": "Orquestación supervisada: recuperar estado actual, comparar, clasificar, coordinar carriles de escritor único, probar contradicciones y preservar continuidad."
+    },
+    {
+      "id": "LIVE_HOST",
+      "en": "Live public host",
+      "es": "Host público en vivo",
+      "body_en": "Deployment/readback authority only. CI or merge cannot self-certify live publication.",
+      "body_es": "Autoridad únicamente de despliegue/lectura. CI o merge no pueden autocertificar publicación en vivo."
+    }
+  ],
+  "parity_states": [
+    {
+      "id": "EXACT",
+      "en": "Exact",
+      "es": "Exacto",
+      "body_en": "Same portable object or exact bytes.",
+      "body_es": "Mismo objeto portable o mismos bytes."
+    },
+    {
+      "id": "FUNCTIONAL_EQUIVALENT",
+      "en": "Functionally equivalent",
+      "es": "Funcionalmente equivalente",
+      "body_en": "Different host implementation, same reviewed control.",
+      "body_es": "Implementación distinta por host, mismo control revisado."
+    },
+    {
+      "id": "EXPLAINED_DIVERGENCE",
+      "en": "Explained divergence",
+      "es": "Divergencia explicada",
+      "body_en": "Intentional difference with a bounded, recorded reason.",
+      "body_es": "Diferencia intencional con razón registrada y acotada."
+    }
+  ],
+  "public_private": {
+    "en": "The methodology is public. Private evidence is not. We publish rules, classifications, correction logic, checks and public-safe provenance; we do not expose privileged communications, private identifiers, credentials or protected source locators merely in the name of transparency.",
+    "es": "La metodología es pública. La evidencia privada no. Publicamos reglas, clasificaciones, lógica de corrección, controles y procedencia pública segura; no exponemos comunicaciones privilegiadas, identificadores privados, credenciales o localizadores protegidos sólo en nombre de la transparencia."
+  },
+  "source_controls": [
+    {
+      "id": "PD-RECURSIVE-SELF-IMPROVEMENT-TRUTH-SEEKING-20260912-01",
+      "status": "CONTROLLING_ACCEPTED"
+    },
+    {
+      "id": "PD-ECP-BOOTSTRAP-20260922",
+      "status": "PUBLIC_PORTABLE_CONTROL"
+    },
+    {
+      "id": "PD-FEDERATION-V1-20260922",
+      "status": "DRAFT_REVIEW"
+    },
+    {
+      "id": "PD-METHOD-TRANSPARENCY-20260922-01",
+      "status": "PUBLIC_SAFE_CANDIDATE"
+    }
+  ],
+  "challenge": {
+    "en": {
+      "title": "Find an error. Provide contrary evidence. Improve the method.",
+      "body": "A correction, contrary source or methodological proposal is material to review—not something automatically incorporated, endorsed or published."
+    },
+    "es": {
+      "title": "Encuentre un error. Aporte evidencia contraria. Mejore el método.",
+      "body": "Una corrección, fuente contraria o propuesta metodológica es material para revisión; no se incorpora, respalda o publica automáticamente."
+    }
+  }
+}
