@@ -1,0 +1,38 @@
+name: Meeting Point bounded prefiling regression
+on:
+  pull_request:
+    paths:
+      - 'scripts/validate_meeting_point_prefiling_controls.py'
+      - 'tests/test_meeting_point_prefiling_controls.py'
+      - 'governance/MEETING_POINT_BOUNDED_PREFILING_PROFILE_26SEP2026.md'
+      - '.github/workflows/meeting-point-bounded-prefiling-regression.yml'
+  push:
+    branches: ['meeting-point-v11-v5-public-control-20260925']
+    paths:
+      - 'scripts/validate_meeting_point_prefiling_controls.py'
+      - 'tests/test_meeting_point_prefiling_controls.py'
+      - '.github/workflows/meeting-point-bounded-prefiling-regression.yml'
+permissions:
+  contents: read
+concurrency:
+  group: meeting-point-bounded-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  synthetic-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Fetch exact public commit without credentials
+        shell: bash
+        run: |
+          set -euo pipefail
+          git init .
+          git remote add origin "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git"
+          git fetch --depth=1 origin "${GITHUB_SHA}"
+          git checkout --detach FETCH_HEAD
+      - name: Run synthetic tests only
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 --version
+          python3 -m unittest discover -s tests -p test_meeting_point_prefiling_controls.py -v
