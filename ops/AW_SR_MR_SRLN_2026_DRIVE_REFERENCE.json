@@ -23,7 +23,8 @@
     "A change to the canonical folder requires an explicit owner instruction and coordinated updates to both repositories, the Drive index and saved continuity instructions.",
     "Refresh current main and the Drive index on every resumed thread. Chat memory accelerates retrieval but is not a file-version authority.",
     "Do not expand sharing, publish private documents, or treat an alias/link as permission to access or disclose them.",
-    "This control does not retroactively synchronize already-running or disconnected threads; they must reload it."
+    "This control does not retroactively synchronize already-running or disconnected threads; they must reload it.",
+    "Keep private counterparty identities, LinkedIn/email message text, source-message locators and unverified contact details out of public GitHub; preserve them in the access-controlled Drive/private-GitLab canonical register and expose only the continuity/data-minimisation rule here."
   ],
   "related_workspace_aliases": [
     "^AW-SR-MR",
@@ -36,5 +37,7 @@
     "^CAPITAL-PROVIDERS-50"
   ],
   "private_recipient_workspaces": "Use the same folder; personal recipient identifiers are withheld from this public projection.",
-  "website_effect": "Repository/bootstrap control only. No website navigation, sitemap, investor access or deck publication is changed."
+  "website_effect": "Repository/bootstrap control only. No website navigation, sitemap, investor access or deck publication is changed.",
+  "last_continuity_audit": "2026-09-29",
+  "private_counterparty_traceability": "Private counterparty identities, source-message locators, contact-verification state and outreach drafts are maintained only in the canonical access-controlled Drive workspace and private GitLab resolver/register. Public GitHub preserves the continuity rule, not the correspondence."
 }
