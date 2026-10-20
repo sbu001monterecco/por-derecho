@@ -1,3 +1,5 @@
+> **30-Sep-2026 global outbound landing-page gate — `PD-OUTBOUND-LANDING-20260930-01`:** every human-authored Por Derecho / Project Sun Rock / AWESWELL substantive outbound email must contain at least one live, public-safe Por Derecho landing-page URL on GitHub Pages and/or GitLab Pages. For professional recipients use the recipient/firm-specific page by default; for institutions use the body/matter page. Joint emails need a common page covering all principal recipients or one page per materially distinct recipient. Pre-send live-read and Link Manifest are mandatory; native Sent verification must confirm the URL. Missing link blocks send absent an exact one-use user waiver. Read `governance/OUTBOUND_EMAIL_PUBLIC_LANDING_PAGE_RULE_30SEP2026.md`. Legacy sends before adoption are not automatically resent; the next authorised message must comply.
+
 # Current handover — outreach email continuity — 26 August 2026
 
 **Purpose:** public-safe continuation record for a future ChatGPT/agent thread.  
