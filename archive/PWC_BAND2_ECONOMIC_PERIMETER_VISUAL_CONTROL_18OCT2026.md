@@ -44,5 +44,5 @@ Do not silently alter the figures, language or boundary. A materially revised vi
 ## Live verification child
 - `PD-PWC-BAND2-LIVE-VERIFY-20261018-03`
 - Record: `ops/PWC_BAND2_LIVE_VERIFICATION_18OCT2026.md`
-- GitHub: LIVE_VERIFIED after PR #2103 + PR #2104.
-- GitLab: source reviewed in MR !843; Pages not live because inherited required CI remains failed.
+- GitHub: DEPLOYED; fresh external content-marker read-back completed at 2026-10-18T17:46:43Z; strict LIVE_VERIFIED byte-equivalence capture remains pending.
+- GitLab: SOURCE_ONLY in MR !843; Pages not live because inherited required CI remains failed.
