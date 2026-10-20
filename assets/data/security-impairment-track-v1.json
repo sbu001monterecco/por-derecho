@@ -1,0 +1,462 @@
+{
+  "schema": "por-derecho.security-impairment-causation.v1",
+  "track_id": "PD-SP-TRACK-SECURITY-IMPAIRMENT-01",
+  "control_date": "2026-09-24",
+  "status": "PUBLIC_SAFE_LEGAL_CAUSATION_FRAMEWORK_NOT_FINDING",
+  "title": {
+    "es": "Garantía · deterioro · causación",
+    "en": "Security · impairment · causation"
+  },
+  "subtitle": {
+    "es": "De la garantía formal a la posición neta exigible",
+    "en": "From formal security to the net enforceable position"
+  },
+  "core_rule": {
+    "es": "La subsistencia formal de una garantía no equivale a una posición ejecutable inalterada cuando se alega que el propio acreedor, o personas cuya conducta pueda atribuírsele jurídicamente, causaron o contribuyeron al deterioro del activo, del negocio o de las condiciones de refinanciación.",
+    "en": "Formal survival of a security right is not the same as an unchanged enforceable position where the creditor, or persons whose conduct can legally be attributed to it, are alleged to have caused or contributed to impairment of the asset, the operating business or the conditions for refinancing."
+  },
+  "anti_overstatement": {
+    "es": "Este marco no afirma que CAM, un acreedor concreto o cualquier persona causara un daño, ni que toda conducta de un actor sea atribuible a otro. Acto, atribución, daño, causalidad, cuantificación y consecuencia jurídica deben probarse por separado.",
+    "en": "This framework does not find that CAM, any particular creditor or any person caused damage, nor that one actor's conduct is automatically attributable to another. Act, attribution, damage, causation, quantum and legal consequence must each be proved separately."
+  },
+  "stages": [
+    {
+      "id": "formal-right",
+      "tone": "teal",
+      "label": {
+        "es": "1 · Derecho formal",
+        "en": "1 · Formal right"
+      },
+      "body": {
+        "es": "Una hipoteca o garantía puede seguir formalmente inscrita o existente.",
+        "en": "A mortgage or security right may remain formally registered or subsisting."
+      }
+    },
+    {
+      "id": "conduct",
+      "tone": "gold",
+      "label": {
+        "es": "2 · Conducta atribuible",
+        "en": "2 · Attributable conduct"
+      },
+      "body": {
+        "es": "Identificar quién hizo qué, en qué capacidad y con qué puente jurídico de atribución.",
+        "en": "Identify who did what, in what capacity, and through what legal attribution bridge."
+      }
+    },
+    {
+      "id": "impairment",
+      "tone": "amber",
+      "label": {
+        "es": "3 · Deterioro",
+        "en": "3 · Impairment"
+      },
+      "body": {
+        "es": "Separar daño al inmueble de deterioro de explotación, ingresos, DD, valoración y capacidad de refinanciar.",
+        "en": "Separate damage to property from impairment of operations, revenue, DD, valuation and refinancing capacity."
+      }
+    },
+    {
+      "id": "legal-consequences",
+      "tone": "red",
+      "label": {
+        "es": "4 · Consecuencia jurídica",
+        "en": "4 · Legal consequence"
+      },
+      "body": {
+        "es": "Daños, buena fe/abuso, reparación, compensación cuando proceda y posición neta del crédito requieren su propio análisis.",
+        "en": "Damages, good faith/abuse, repair, set-off where legally available and the net claim position require separate analysis."
+      }
+    },
+    {
+      "id": "criminal-gate",
+      "tone": "darkred",
+      "label": {
+        "es": "5 · Umbral penal",
+        "en": "5 · Criminal gate"
+      },
+      "body": {
+        "es": "La relevancia penal exige tipo, autoría/participación, elemento subjetivo cuando proceda, daño y causalidad; no se presume.",
+        "en": "Criminal relevance requires the applicable offence, authorship/participation, the required mental element, damage and causation; none is presumed."
+      }
+    }
+  ],
+  "lanes": [
+    {
+      "id": "property-security",
+      "label": {
+        "es": "Garantía real / propiedad",
+        "en": "Real security / property"
+      },
+      "items": {
+        "es": [
+          "fincas y suelo",
+          "valor inmobiliario",
+          "hipoteca inscrita",
+          "mejoras e indemnizaciones cuando legalmente procedan"
+        ],
+        "en": [
+          "units and land",
+          "real-estate value",
+          "registered mortgage",
+          "improvements and indemnities where legally applicable"
+        ]
+      }
+    },
+    {
+      "id": "operating-financing",
+      "label": {
+        "es": "Valor operativo / financiación",
+        "en": "Operating / financing value"
+      },
+      "items": {
+        "es": [
+          "acceso y posesión material",
+          "estructura de explotación/CEXP",
+          "clientes, reservas e ingresos",
+          "contratos y reputación",
+          "DD y valoración",
+          "garantía sustitutiva y cierre"
+        ],
+        "en": [
+          "access and material control",
+          "operating/CEXP structure",
+          "customers, bookings and revenue",
+          "contracts and reputation",
+          "DD and valuation",
+          "replacement security and closing"
+        ]
+      }
+    }
+  ],
+  "evidence_states": {
+    "es": [
+      "DOCUMENTADO",
+      "ALEGADO / ATRIBUCIÓN PENDIENTE",
+      "EFECTO JURÍDICO ABIERTO"
+    ],
+    "en": [
+      "DOCUMENTED",
+      "ALLEGED / ATTRIBUTION REQUIRED",
+      "LEGAL EFFECT OPEN"
+    ]
+  },
+  "legal_basis": [
+    {
+      "id": "LH109-110",
+      "label": "Ley Hipotecaria arts. 109–110",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1946-2453#a109",
+      "note": {
+        "es": "La hipoteca se extiende a accesiones, mejoras y determinadas indemnizaciones; sirve para distinguir continuidad de la garantía y variaciones del activo.",
+        "en": "The mortgage extends to accessions, improvements and specified indemnities; this helps distinguish continuity of the security from changes in the asset."
+      }
+    },
+    {
+      "id": "LH117",
+      "label": "Ley Hipotecaria art. 117",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1946-2453#a117",
+      "note": {
+        "es": "Trata el deterioro que reduce el valor por dolo, culpa o voluntad del dueño. Es contexto sobre preservación de la garantía, no la regla específica para deterioro causado por el acreedor.",
+        "en": "Addresses deterioration reducing value through the owner's fraud, fault or will. It is context on preservation of security, not the specific rule for creditor-caused impairment."
+      }
+    },
+    {
+      "id": "CC7",
+      "label": "Código Civil art. 7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763#art7",
+      "note": {
+        "es": "Exige buena fe y no ampara abuso del derecho; prevé indemnización y medidas frente a la persistencia del abuso cuando concurren sus presupuestos.",
+        "en": "Requires good faith and denies protection to abuse of rights; where its conditions are met it contemplates compensation and measures to prevent persistence of the abuse."
+      }
+    },
+    {
+      "id": "CC1101",
+      "label": "Código Civil art. 1101",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763#art1101",
+      "note": {
+        "es": "Responsabilidad por daños en el cumplimiento de obligaciones en los supuestos previstos; exige identificar la obligación y el incumplimiento aplicables.",
+        "en": "Damages liability in performance of obligations in the circumstances stated; the relevant obligation and breach must be identified."
+      }
+    },
+    {
+      "id": "CC1902",
+      "label": "Código Civil art. 1902",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763#art1902",
+      "note": {
+        "es": "Regla general de reparación por acción u omisión con culpa o negligencia que cause daño; su aplicación depende de los hechos y requisitos probados.",
+        "en": "General repair rule for damage caused by action or omission involving fault or negligence; application depends on proven facts and elements."
+      }
+    },
+    {
+      "id": "CC1195-1196",
+      "label": "Código Civil arts. 1195–1196",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763#art1195",
+      "note": {
+        "es": "La compensación civil exige reciprocidad y otros requisitos; no convierte cualquier reclamación de daños en descuento automático.",
+        "en": "Civil set-off requires reciprocity and further conditions; it does not turn every damages claim into an automatic deduction."
+      }
+    },
+    {
+      "id": "TRLC153",
+      "label": "TRLC art. 153",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-4859#a1-65",
+      "note": {
+        "es": "En concurso, la compensación tiene un régimen específico y restrictivo; las controversias sobre requisitos e importe corresponden al juez del concurso.",
+        "en": "In insolvency, set-off has a specific and restrictive regime; disputes over conditions and amount are for the insolvency judge."
+      }
+    },
+    {
+      "id": "CP263",
+      "label": "Código Penal art. 263",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444#a263",
+      "note": {
+        "es": "Tipifica daños en propiedad ajena en sus términos. No prueba por sí mismo daño, autoría, dolo ni atribución en Sun Park.",
+        "en": "Criminalises damage to another's property on its terms. It does not itself prove damage, authorship, intent or attribution in Sun Park."
+      }
+    }
+  ],
+  "routes": [
+    {
+      "path": "/es/toma-control-sun-park-7-junio-2018/",
+      "lang": "es",
+      "focus": "conduct",
+      "selector": "#salida-financiada-ona .rescue-proof",
+      "position": "after",
+      "contribution": "Esta página aporta el punto de ruptura material, el estado/valor inmediatamente anterior y la evidencia de acceso posterior incompleto. La atribución de ese deterioro a un acreedor concreto y su efecto causal sobre el cierre siguen sujetos a prueba.",
+      "documented": "Valoración Gesvalt y estado operativo descrito; contrato ONA y secuencia de acceso/inspección recogidos en el dossier.",
+      "alleged": "Que conductas atribuibles al perímetro acreedor degradaron deliberadamente el paquete operativo y de financiación.",
+      "open": "Atribución actor por actor, cuantificación del daño, efecto sobre cada condición de cierre y posición neta del crédito."
+    },
+    {
+      "path": "/en/sun-park-takeover-7-june-2018/",
+      "lang": "en",
+      "focus": "conduct",
+      "selector": "#funded-ona-exit .rescue-proof, #salida-financiada-ona .rescue-proof",
+      "position": "after",
+      "contribution": "This page contributes the material-control pivot, the immediately preceding condition/value record and evidence of later incomplete access. Attribution to any particular creditor and causal effect on closing remain to be proved.",
+      "documented": "Gesvalt valuation/condition record; ONA contract and access/inspection sequence recorded in the dossier.",
+      "alleged": "That conduct attributable to the creditor perimeter deliberately degraded the operating and financing package.",
+      "open": "Actor-specific attribution, quantum, effect on each closing condition and the net secured-claim position."
+    },
+    {
+      "path": "/es/salida-financiada-ona-antes-7-junio-2018/",
+      "lang": "es",
+      "focus": "impairment",
+      "contribution": "Esta página prueba el estado de preparación y las dependencias de DD, operación, valoración, garantía y cierre que podían resultar afectadas por una ruptura posterior.",
+      "documented": "Operador, rutas de financiación, DD y mecánica de cierre documentadas con sus condiciones.",
+      "alleged": "Que el cambio de control deterioró precisamente esas dependencias.",
+      "open": "Qué condición concreta se volvió imposible o más difícil y qué causa alternativa existía."
+    },
+    {
+      "path": "/en/pre-7-june-2018-funded-ona-exit/",
+      "lang": "en",
+      "focus": "impairment",
+      "contribution": "This page supplies the readiness record and the DD, operating, valuation, security and closing dependencies that could be affected by a later disruption.",
+      "documented": "Operator, financing routes, DD and closing mechanics with stated conditions.",
+      "alleged": "That the change in control impaired those same dependencies.",
+      "open": "Which precise condition became impossible or harder and what independent alternative cause existed."
+    },
+    {
+      "path": "/es/ona-hotels-salida-concurso-36-2012/",
+      "lang": "es",
+      "focus": "impairment",
+      "contribution": "La ruta ONA permite probar si el negocio operativo era también fuente de repago y soporte de una financiación sustitutiva, sin confundirlo con el objeto jurídico de cada hipoteca.",
+      "documented": "Documentos ONA/Clubotel y secuencia de salida preservada en el expediente.",
+      "alleged": "Deterioro de valor operativo y de capacidad de refinanciación tras la ruptura de control.",
+      "open": "Relación exacta entre explotación, garantías ofrecibles y decisión de cada financiador."
+    },
+    {
+      "path": "/en/ona-hotels-insolvency-exit-36-2012/",
+      "lang": "en",
+      "focus": "impairment",
+      "contribution": "The ONA route tests whether the operating business was also a repayment source and support for replacement financing without treating every business element as mortgaged property.",
+      "documented": "ONA/Clubotel documents and preserved exit sequence.",
+      "alleged": "Impairment of operating value and refinancing capacity after the control disruption.",
+      "open": "Exact relationship between operation, available security and each financier's decision."
+    },
+    {
+      "path": "/es/acreedor-de-registro/",
+      "lang": "es",
+      "focus": "formal-right",
+      "contribution": "La genealogía del acreedor debe separar titularidad formal del crédito/garantía de conducta material posterior y de cualquier responsabilidad derivada.",
+      "documented": "Cadena de crédito y garantías según las fuentes de la página.",
+      "alleged": "Que determinados actores vinculados a esa cadena participaron en deterioro o control material.",
+      "open": "Atribución jurídica entre entidades/personas y efecto neto sobre el crédito."
+    },
+    {
+      "path": "/en/lender-of-record/",
+      "lang": "en",
+      "focus": "formal-right",
+      "contribution": "The lender genealogy separates formal credit/security ownership from later material conduct and any resulting liability.",
+      "documented": "Credit and security chain as sourced on the page.",
+      "alleged": "That actors connected to that chain participated in impairment or material control.",
+      "open": "Legal attribution between entities/persons and net effect on the claim."
+    },
+    {
+      "path": "/es/acreedor-de-registro/responsabilidad/",
+      "lang": "es",
+      "focus": "legal-consequences",
+      "contribution": "Esta página es el lugar natural para probar las consecuencias de una conducta atribuible al acreedor sin convertir la mera condición de acreedor en responsabilidad.",
+      "documented": "Derecho formal y hechos específicos que la página pueda individualizar.",
+      "alleged": "Conducta acreedor-atribuible y daño causalmente conectado.",
+      "open": "Daños, defensas, compensación concursal cuando proceda y posición neta exigible."
+    },
+    {
+      "path": "/en/lender-of-record/liability/",
+      "lang": "en",
+      "focus": "legal-consequences",
+      "contribution": "This page is the natural location for testing consequences of creditor-attributable conduct without turning creditor status itself into liability.",
+      "documented": "Formal right and any specific acts individually sourced on the page.",
+      "alleged": "Creditor-attributable conduct and causally connected damage.",
+      "open": "Damages, defences, insolvency set-off where available and the net enforceable position."
+    },
+    {
+      "path": "/es/administrador-concursal-puerta-credito-titulo/",
+      "lang": "es",
+      "focus": "legal-consequences",
+      "contribution": "La función de gatekeeper concursal debe analizarse separando actos del AC, actos del acreedor, conservación de valor y posteriores efectos sobre crédito/título.",
+      "documented": "Actos y decisiones del AC sólo en la medida documentada en la página.",
+      "alleged": "Facilitación, omisión o utilización de deterioro alegada por Gil Marer.",
+      "open": "Deber concreto, causalidad, daño y consecuencia jurídica de cada acto u omisión."
+    },
+    {
+      "path": "/en/insolvency-administrator-credit-to-title-gatekeeper/",
+      "lang": "en",
+      "focus": "legal-consequences",
+      "contribution": "The insolvency gatekeeper analysis separates acts of the administrator, acts of the creditor, preservation of value and later credit/title consequences.",
+      "documented": "Administrator acts and decisions only to the extent sourced on the page.",
+      "alleged": "Facilitation, omission or use of impairment as alleged by Gil Marer.",
+      "open": "Specific duty, causation, damage and legal consequence of each act or omission."
+    },
+    {
+      "path": "/es/oferta-acosta-matos-2018-plan-liquidacion/",
+      "lang": "es",
+      "focus": "legal-consequences",
+      "contribution": "La comparación oferta/plan debe incorporar el valor que pudo destruirse o devaluarse antes de medir déficit, ventaja o resultado de liquidación.",
+      "documented": "Importes, oferta, plan y cronología según fuentes controladas.",
+      "alleged": "Que el valor de referencia ya estaba afectado por una degradación atribuible.",
+      "open": "Valor contrafactual, causación, compensaciones y beneficio neto por entidad."
+    },
+    {
+      "path": "/en/acosta-matos-2018-offer-liquidation-plan/",
+      "lang": "en",
+      "focus": "legal-consequences",
+      "contribution": "Offer/plan comparison should account for value allegedly destroyed or de-rated before measuring deficiency, advantage or liquidation outcome.",
+      "documented": "Amounts, offer, plan and chronology as controlled on the page.",
+      "alleged": "That the reference value had already been affected by attributable impairment.",
+      "open": "Counterfactual value, causation, offsets and entity-by-entity net benefit."
+    },
+    {
+      "path": "/es/adjudicacion-2022-reconstruccion-documental/",
+      "lang": "es",
+      "focus": "legal-consequences",
+      "contribution": "La adjudicación posterior no responde por sí sola a qué valor, crédito neto o responsabilidades existían tras los hechos anteriores.",
+      "documented": "Instrumentos y secuencia de adjudicación según la reconstrucción primaria.",
+      "alleged": "Que parte del déficit o valor posterior refleja deterioro auto-creado o atribuible.",
+      "open": "Efecto jurídico del deterioro previo sobre crédito, adjudicación, daños y restitución."
+    },
+    {
+      "path": "/en/2022-adjudication-documentary-reconstruction/",
+      "lang": "en",
+      "focus": "legal-consequences",
+      "contribution": "Later adjudication does not by itself determine the value, net claim or liabilities that existed after the earlier events.",
+      "documented": "Adjudication instruments and sequence from the primary reconstruction.",
+      "alleged": "That part of the later deficiency/value reflects self-created or attributable impairment.",
+      "open": "Legal effect of earlier impairment on claim, adjudication, damages and restitution."
+    },
+    {
+      "path": "/es/comunidad-instrumentalizacion/cexp-cadena-explotacion-2008-2018/",
+      "lang": "es",
+      "focus": "impairment",
+      "contribution": "CEXP obliga a separar garantía inmobiliaria de valor operativo. La explotación, clientes, reservas, ingresos y autoridad de comercialización pueden ser económicamente decisivos sin ser idénticos al objeto hipotecado.",
+      "documented": "Arquitectura CEXP y cambios de operador sólo en la medida soportada por sus fuentes.",
+      "alleged": "Que la neutralización o desplazamiento de esa estructura degradó valor y refinanciabilidad.",
+      "open": "Continuidad jurídica CEXP, operador por periodo y traducción exacta del daño operativo a valor/financiación."
+    },
+    {
+      "path": "/en/community-instrumentalisation/cexp-operation-chain-2008-2018/",
+      "lang": "en",
+      "focus": "impairment",
+      "contribution": "CEXP requires separation of real-estate security from operating value. Operation, customers, bookings, revenue and commercial authority may be economically decisive without being identical to mortgaged property.",
+      "documented": "CEXP architecture and operator changes only to the extent supported by sources.",
+      "alleged": "That neutralisation or displacement of that structure impaired value and refinanceability.",
+      "open": "CEXP legal continuity, operator by period and the precise translation of operating impairment into value/financing."
+    },
+    {
+      "path": "/es/cronologia-control-material-sun-park/",
+      "lang": "es",
+      "focus": "conduct",
+      "contribution": "La cronología de control sirve para fijar cuándo cambia el acceso/materialidad; no convierte por sí sola ese cambio en causalidad, daño o atribución jurídica.",
+      "documented": "Fechas y actos materiales individualizados por fuentes.",
+      "alleged": "Que ese control produjo deterioro relevante para garantía y financiación.",
+      "open": "Puente causal entre cada acto, pérdida concreta y actor responsable."
+    },
+    {
+      "path": "/en/sun-park-material-control-chronology/",
+      "lang": "en",
+      "focus": "conduct",
+      "contribution": "The material-control chronology fixes when access/control changed; it does not by itself convert chronology into causation, damage or legal attribution.",
+      "documented": "Dates and material acts individually sourced.",
+      "alleged": "That the control change caused impairment relevant to security and financing.",
+      "open": "Causal bridge between each act, concrete loss and responsible actor."
+    },
+    {
+      "path": "/es/garantia-deterioro-causacion-acreedor/",
+      "lang": "es",
+      "focus": "legal-consequences",
+      "selector": "#track-anchor",
+      "position": "after",
+      "contribution": "Página canónica del marco. Integra derecho hipotecario, responsabilidad civil, compensación concursal, causalidad y umbral penal sin convertir ninguna hipótesis Sun Park en hallazgo.",
+      "documented": "Textos legales BOE y hechos sólo por remisión a sus páginas fuente.",
+      "alleged": "Aplicación a Sun Park como hipótesis atribuida y falsificable.",
+      "open": "Atribución, causalidad, cuantificación, defensas y remedio concreto."
+    },
+    {
+      "path": "/en/security-impairment-creditor-causation/",
+      "lang": "en",
+      "focus": "legal-consequences",
+      "selector": "#track-anchor",
+      "position": "after",
+      "contribution": "Canonical framework page. It integrates mortgage law, civil liability, insolvency set-off, causation and the criminal gate without turning any Sun Park hypothesis into a finding.",
+      "documented": "BOE legal texts and facts only by reference to their source pages.",
+      "alleged": "Application to Sun Park as an attributed, falsifiable hypothesis.",
+      "open": "Attribution, causation, quantum, defences and the precise remedy."
+    },
+    {
+      "path": "/es/comunidad-instrumentalizacion/",
+      "lang": "es",
+      "focus": "impairment",
+      "contribution": "La página general de Comunidad/CEXP aporta la arquitectura de autoridad y explotación necesaria para distinguir derechos operativos de propiedad e hipoteca.",
+      "documented": "Actas, instrumentos y registros sólo en la medida individualmente documentada.",
+      "alleged": "Que la instrumentalización o desplazamiento de la estructura operativa degradó valor, control o refinanciabilidad.",
+      "open": "Continuidad CEXP, autoridad por periodo, atribución y traducción del efecto operativo a daño económico."
+    },
+    {
+      "path": "/en/community-instrumentalisation/",
+      "lang": "en",
+      "focus": "impairment",
+      "contribution": "The general Community/CEXP page supplies the authority and operating architecture needed to distinguish operating rights from property and mortgage security.",
+      "documented": "Minutes, instruments and records only to the extent individually sourced.",
+      "alleged": "That instrumentalisation or displacement of the operating structure impaired value, control or refinanceability.",
+      "open": "CEXP continuity, authority by period, attribution and translation of operating effect into economic damage."
+    },
+    {
+      "path": "/es/concurso-36-2012-masa-activa-2018-2021/",
+      "lang": "es",
+      "focus": "legal-consequences",
+      "contribution": "La reconstrucción de masa activa permite comprobar qué valor pertenecía realmente a LPB, qué quedaba fuera y cómo cualquier deterioro alegado afecta al déficit, remanente y posición neta del crédito.",
+      "documented": "Inventario, masa activa y actos concursales según fuentes controladas.",
+      "alleged": "Que parte del valor perdido o déficit posterior procede de deterioro atribuible y no de una caída externa neutral.",
+      "open": "Perímetro patrimonial exacto, valor contrafactual, causalidad, daños y efecto sobre el crédito."
+    },
+    {
+      "path": "/en/insolvency-36-2012-active-estate-2018-2021/",
+      "lang": "en",
+      "focus": "legal-consequences",
+      "contribution": "The active-estate reconstruction tests what value actually belonged to LPB, what remained outside the estate and how alleged impairment bears on deficiency, residual value and the net claim position.",
+      "documented": "Inventory, active-estate and insolvency acts as source-controlled.",
+      "alleged": "That part of later lost value or deficiency reflects attributable impairment rather than neutral external decline.",
+      "open": "Exact patrimonial perimeter, counterfactual value, causation, damages and effect on the claim."
+    }
+  ]
+}

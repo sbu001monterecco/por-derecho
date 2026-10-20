@@ -112,3 +112,20 @@
   s.defer = true;
   document.head.appendChild(s);
 })();
+
+ // PD-SECURITY-IMPAIRMENT-CAUSATION-20260924:START
+(() => {
+  'use strict';
+  const current = document.currentScript;
+  if (!current) return;
+  const path = window.location.pathname;
+  if (!/(7-junio|7-june|salida-financiada|funded-ona|ona-hotels|acreedor|lender-of-record|administrador-concursal-puerta-credito|insolvency-administrator-credit-to-title|adjudicacion-2022|2022-adjudication|cexp-(?:cadena|operation)|comunidad-instrumentalizacion|community-instrumentalisation|control-material|material-control|masa-activa|active-estate|oferta-acosta-matos|offer-liquidation-plan|garantia-deterioro|security-impairment)/i.test(path)) return;
+  const url = new URL('security-impairment-track-20260924.js?v=20260924b', current.src);
+  if (document.querySelector('script[data-security-impairment-track-loader]')) return;
+  const s = document.createElement('script');
+  s.src = url.href;
+  s.async = false;
+  s.setAttribute('data-security-impairment-track-loader', '20260924b');
+  document.head.appendChild(s);
+})();
+// PD-SECURITY-IMPAIRMENT-CAUSATION-20260924:END
