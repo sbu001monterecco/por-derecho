@@ -1,0 +1,36 @@
+{
+  "schema": "por-derecho.truth-machine-event.v1",
+  "event_id": "TM-EVT-20260925-0001",
+  "created_at": "2026-09-25T12:18:00+01:00",
+  "event_type": "METHOD_CHANGE",
+  "release_lane": "FAST",
+  "affected_nodes": [
+    "METHOD:CONTEXT_INTEGRITY"
+  ],
+  "source_refs": [
+    {
+      "path": "assets/data/truth-machine-methodology-v2.json",
+      "github_blob_sha": "4143e6213d52df407d90bb8d77947b314e4de45d",
+      "gitlab_blob_sha": "4143e6213d52df407d90bb8d77947b314e4de45d",
+      "role": "methodology_registry"
+    },
+    {
+      "path": "assets/data/r33-truth-machine-visual-20260925.json",
+      "github_blob_sha": "b657ef8deac0abffd02f68a72a6bf6b5814e4627",
+      "gitlab_blob_sha": "b657ef8deac0abffd02f68a72a6bf6b5814e4627",
+      "role": "flagship_reference_state"
+    }
+  ],
+  "three_state": {
+    "machine": "SOURCE_PINS_MATCH_BOTH_HOSTS; DEPENDENCY_REOPEN_SIGNAL_REQUIRED",
+    "analyst": "METHOD_EXPANDED; EXISTING MERITS STATES PRESERVED UNTIL SOURCE_REVIEW",
+    "release": "DYNAMIC_PUBLIC_SURFACE_SUPPORTED; HOST-SPECIFIC LIVE VERIFICATION REMAINS SEPARATE"
+  },
+  "requires": [
+    "TRAVERSE_DEPENDENCIES",
+    "QUEUE_AFFECTED_CANDIDATES",
+    "PRESERVE_PRIOR_ASSESSMENTS",
+    "RECORD_CHANGED_OR_NO_CHANGE"
+  ],
+  "boundary": "A method change reopens review questions; it does not itself change a factual, intent, credibility, guilt or liability assessment."
+}

@@ -15,6 +15,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0,str(ROOT))
 
 from legaltech.unitary_review.context_integrity import candidate_cues
+from legaltech.unitary_review.event_bus import run as run_event_bus
 
 def detect_host():
     if os.environ.get("GITLAB_CI"): return "gitlab"
@@ -70,9 +71,10 @@ def run(manifest:Path,host:str):
                      "queue_state":state,"next_action":c["next_action"],"sources":srcs,
                      "automatic_merits_promotion":False})
     if sorted(ranks)!=ranks or len(ranks)!=len(set(ranks)): raise ValueError("ranks must be unique and ordered")
+    events=run_event_bus(ROOT/"assets/data/truth-machine-events",ROOT/"assets/data/truth-machine-dependencies-v1.json",host)
     return {"schema":"por-derecho.truth-machine-priority-queue.report.v1","control":data["control"],"host":host,
-            "candidates":rows,"hard_integrity_problem":hard,
-            "boundary":"Candidate cues, mirror gaps and source-change signals are triage only; no truth, lie, credibility, intent, guilt or liability score."}
+            "candidates":rows,"event_bus":events,"hard_integrity_problem":hard or events["hard_integrity_problem"],
+            "boundary":"Candidate cues, mirror gaps, source-change signals and event dependencies are triage/routing only; no truth, lie, credibility, intent, guilt or liability score."}
 
 def main():
     p=argparse.ArgumentParser();p.add_argument("--manifest",default="assets/data/truth-machine-priority-queue-v1.json")
