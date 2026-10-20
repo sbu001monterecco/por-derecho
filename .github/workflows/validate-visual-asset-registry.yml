@@ -8,8 +8,13 @@ on:
       - "assets/visual-asset-registry.json"
       - "tests/test_named_person_visual_control_20260925.py"
       - "scripts/validate_named_person_visual_control.py"
+      - "tests/test_generated_named_person_visuals_20260925.py"
+      - "scripts/audit_generated_named_person_visuals.py"
       - "governance/FACE_IDENTITY_CONTROL_RULE.md"
       - "assets/data/named-person-visual-control-v1.json"
+      - "assets/exact-source-actor-grid-20260925.css"
+      - "assets/data/five-actor-exact-source-grid-20260925.json"
+      - "assets/data/active-named-person-visual-use-20260925.json"
       - "assets/five-actor-accountability-20260824.css"
       - "assets/community-professional-corporate-network-20260825.css"
       - "ops/REPOSITORY_PRESERVATION_CONTRACT.json"
@@ -60,3 +65,6 @@ jobs:
 
       - name: Validate deterministic named-person rendering and factual-manifest controls
         run: python scripts/validate_named_person_visual_control.py
+
+      - name: Audit generated/stylised named-person composite sidecars
+        run: python scripts/audit_generated_named_person_visuals.py

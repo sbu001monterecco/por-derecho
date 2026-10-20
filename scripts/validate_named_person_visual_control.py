@@ -8,6 +8,7 @@ POLICY=ROOT/"assets/data/named-person-visual-control-v1.json"
 INCIDENT=ROOT/"archive/AI_IMAGE_HALLUCINATION_INCIDENT_JTP_25SEP2026.md"
 JTP_EN=ROOT/"en/estate-payment-counsel-independence/index.html"
 JTP_ES=ROOT/"es/pago-masa-independencia-defensa/index.html"
+ACTIVE_POLICY=ROOT/"assets/data/active-named-person-visual-use-20260925.json"
 
 def blob_sha(data:bytes)->str:
     return hashlib.sha1(f"blob {len(data)}\0".encode()+data).hexdigest()
@@ -31,6 +32,46 @@ def main()->int:
         raw=f.read_bytes()
         if hashlib.sha256(raw).hexdigest()!=row["sha256"]: errors.append(f"{actor}: sha256 mismatch")
         if blob_sha(raw)!=row["git_blob_sha1"]: errors.append(f"{actor}: git blob mismatch")
+
+
+    active=json.loads(ACTIVE_POLICY.read_text(encoding="utf-8"))
+    if active.get("status")!="ACTIVE_FAIL_CLOSED":
+        errors.append("active named-person use policy not active")
+    if active.get("exact_source_required") is not True:
+        errors.append("active exact-source requirement lost")
+    if active.get("active_use_of_legacy_stylised_named_person_assets") is not False:
+        errors.append("legacy stylised active-use prohibition lost")
+
+    exact_five=active.get("exact_five_actor_sources",{})
+    if set(exact_five)!={"fmmm","jdam","lpam","borja","alberto"}:
+        errors.append("exact five-actor source set changed")
+    for actor,row in exact_five.items():
+        f=ROOT/row["path"]
+        if not f.is_file() or f.is_symlink():
+            errors.append(f"{actor}: missing/unsafe exact five-actor source")
+            continue
+        raw=f.read_bytes()
+        if hashlib.sha256(raw).hexdigest()!=row["sha256"]:
+            errors.append(f"{actor}: five-actor sha256 mismatch")
+        if blob_sha(raw)!=row["git_blob_sha1"]:
+            errors.append(f"{actor}: five-actor git blob mismatch")
+
+    legacy_names={Path(x).name for x in active.get("legacy_assets_preserved_only",[])}
+    active_files=[]
+    active_files.extend(ROOT.glob("*.html"))
+    for sub in ("en","es"):
+        d=ROOT/sub
+        if d.is_dir(): active_files.extend(d.rglob("*.html"))
+    assets=ROOT/"assets"
+    if assets.is_dir():
+        active_files.extend(assets.glob("*.js"))
+        active_files.extend(assets.glob("*.mjs"))
+    for f in active_files:
+        try: txt=f.read_text(encoding="utf-8")
+        except UnicodeDecodeError: continue
+        for name in legacy_names:
+            if name in txt:
+                errors.append(f"{f.relative_to(ROOT)} actively references quarantined stylised named-person asset {name}")
 
     incident=INCIDENT.read_text(encoding="utf-8")
     for gen in p.get("rejected_generation_ids",[]):
