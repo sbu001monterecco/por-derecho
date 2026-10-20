@@ -1,0 +1,78 @@
+{
+  "schema": "PD-CONTINUITY-RELEASE-MANIFEST-v1",
+  "release_id": "PD-CONTINUITY-20261001-01",
+  "created": "2026-10-01T22:20:00+01:00",
+  "base_snapshots": {
+    "github_main": "e756fcb862376759ed07b989233fa24b892bc40b",
+    "gitlab_main": "f5f9a97aaa2af69b549e82529d82a4a62f05dc5a"
+  },
+  "git_branch": "governance/advanced-continuity-20261001",
+  "purpose": "Advanced continuity, preservation and traceability bootstrap plus current-position propagation; not a substantive legal finding.",
+  "objects": [
+    {
+      "path": "CONTINUITY_STATE.md",
+      "git_blob_sha": "cc1a8b58eddc67e01fad18c900b3848528865a7d"
+    },
+    {
+      "path": "CONTINUITY_STATE.json",
+      "git_blob_sha": "82ac96f9bbd202234dbd5fcb3ca1ae723a29826e"
+    },
+    {
+      "path": "governance/POSITION_SUPERSESSION_REGISTER_20261001.json",
+      "git_blob_sha": "1aafd3c8c7eb809c7e1a7a6efb33812778ddfe86"
+    },
+    {
+      "path": "governance/PROPOSITION_REGISTER_20261001.json",
+      "git_blob_sha": "e3221ff3a3c5f12d91e996b4262588b84514b536"
+    },
+    {
+      "path": "governance/SOURCE_OBJECT_REGISTRY_20261001.json",
+      "git_blob_sha": "bbd3f3560301f6aa6416be9a171f02ba8a691268"
+    },
+    {
+      "path": "governance/AUDIT_LOG_20261001.ndjson",
+      "git_blob_sha": "50fc5a60736f18b1b2576bea41851fa8abe97f79"
+    },
+    {
+      "path": "archive/CONTINUITY_HANDOFF_20261001.md",
+      "git_blob_sha": "de256a8ebcec140ea0d1ef264ea7d1404492487e"
+    },
+    {
+      "path": "archive/PINK_RENT_PREMISE_REJECTION_28SEP2026.md",
+      "git_blob_sha": "3712fb54d00724ea60cb84ba895793009b939b92"
+    },
+    {
+      "path": "archive/JTP_POSITION_CORRECTION_28SEP2026.md",
+      "git_blob_sha": "0931bac8a2aba959caade56dec64645b0d869ad6"
+    },
+    {
+      "path": "archive/JUAN_TOMAS_PARRILLA_CORPUS_MASTERY_AUDIT_24AUG2026.md",
+      "git_blob_sha": "bde88dffeb08eae582af0430665e9776cd56d257"
+    },
+    {
+      "path": "en/montelanza-molina-pink-ac-judicial-propagation/index.html",
+      "git_blob_sha": "4afe74ad1d4f349383d89ddab22e47a126df23b6"
+    },
+    {
+      "path": "es/montelanza-molina-pink-propagacion-ac-judicial/index.html",
+      "git_blob_sha": "0787bb430c6eb7f0fac0ce3fc38989a213584cd2"
+    },
+    {
+      "path": "scripts/validate_continuity_state.py",
+      "git_blob_sha": "a45ced49d413abefa41a96230577d4acc4da58ec"
+    },
+    {
+      "path": ".github/workflows/validate-continuity-state.yml",
+      "git_blob_sha": "a5f30078a61a1ec70ebb10951c987811e1ebfe9f"
+    }
+  ],
+  "drive": {
+    "vault_alias": "PD-DRIVE-CONTINUITY-20261001", "governance_alias": "PD-DRIVE-CONTINUITY-GOVERNANCE-20261001", "bootstrap_zip_alias": "PD-CONTINUITY-BOOTSTRAP-20261001-r2", "bootstrap_zip_sha256": "60004f0ba3ea644b60091de32d0dae6a59db08ae4efbc8e54a86aa4cb5c64f8c"
+  },
+  "signing": {
+    "cryptographic_release_tag_created": false,
+    "reason": "No tag/signing mutation capability available in the connected GitHub toolset; immutable PR/merge SHAs and Drive package hash are used instead."
+  },
+  "deletion_safety": "HOLD",
+  "full_green": false
+}

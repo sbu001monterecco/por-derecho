@@ -1,0 +1,52 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-CONTINUITY-20261001-01",
+  "control_date": "2026-10-01",
+  "current_state": "PR_OPEN",
+  "owner": "Por Derecho / Project Sun Rock",
+  "purpose": "Publish the current Pink position correction and continuity markers on the bilingual Track A/B bridge while preserving adverse/corrective records; establish public-safe continuity controls without exposing private Drive locators.",
+  "expected_routes": {
+    "es": [
+      "es/montelanza-molina-pink-propagacion-ac-judicial/index.html"
+    ],
+    "en": [
+      "en/montelanza-molina-pink-ac-judicial-propagation/index.html"
+    ]
+  },
+  "source_base": "e756fcb862376759ed07b989233fa24b892bc40b",
+  "required_markers": {
+    "criminal_first": "data-pd-criminal-mechanism=\"20260927\"",
+    "pink_position": "data-pd-position=\"PD-PINK-POSITION-20260928-01\""
+  },
+  "controls": [
+    "CONTINUITY_STATE.md",
+    "CONTINUITY_STATE.json",
+    "governance/POSITION_SUPERSESSION_REGISTER_20261001.json",
+    "governance/PROPOSITION_REGISTER_20261001.json",
+    "governance/SOURCE_OBJECT_REGISTRY_20261001.json",
+    "archive/CONTINUITY_HANDOFF_20261001.md",
+    "archive/PINK_RENT_PREMISE_REJECTION_28SEP2026.md",
+    "archive/JTP_POSITION_CORRECTION_28SEP2026.md"
+  ],
+  "private_preservation": {
+    "vault_alias": "PD-DRIVE-CONTINUITY-20261001",
+    "bootstrap_alias": "PD-CONTINUITY-BOOTSTRAP-20261001-r2",
+    "bootstrap_sha256": "60004f0ba3ea644b60091de32d0dae6a59db08ae4efbc8e54a86aa4cb5c64f8c",
+    "private_provider_locators": "WITHHELD_FROM_PUBLIC_GIT"
+  },
+  "source_boundaries": [
+    "Historical instruments, pleadings, judgments and quotations are not rewritten.",
+    "Gil's Pink and JTP positions remain attributed positions/allegations.",
+    "No coercion, conspiracy, corruption, criminal participation or legal invalidity is converted into a finding.",
+    "Deletion safety remains HOLD until cross-platform clean-room recovery is verified."
+  ],
+  "blocking_reason": "GitHub PR #2080 remains under review; GitLab parity application is blocked and must be rebuilt from current GitLab main without bypassing safety controls.",
+  "recovery_requirements": [
+    "Pass repository CI and merge PR #2080.",
+    "Verify GitHub Pages deployment and rendered bilingual markers.",
+    "Resolve the GitLab safety-block boundary and rebuild parity from current main.",
+    "Verify private Drive continuity package and native master addenda remain readable.",
+    "Reassess deletion safety only after clean-room recovery succeeds."
+  ]
+}
