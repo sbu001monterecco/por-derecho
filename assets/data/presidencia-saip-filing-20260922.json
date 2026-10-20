@@ -1,0 +1,36 @@
+{
+  "schema": "por-derecho.presidencia-saip-filing.v1",
+  "control_date": "2026-09-22",
+  "status": "REGISTERED_RECEIPT_VERIFIED_RESPONSE_PENDING",
+  "filing": {
+    "registration": "REGAGE26e00082737162",
+    "presented_at": "2026-09-22 17:02:00",
+    "registered_at": "2026-09-22 17:02:04",
+    "recipient_dir3": "A05033187",
+    "recipient": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
+    "registry": "Registro Electrónico General de la Administración General del Estado",
+    "procedure": "9432 / SIA 3145066",
+    "subject": "SAIP - Trazabilidad de los registros de 21/09/2026, antecedentes y documentación",
+    "attachment": {
+      "count": 1,
+      "sha512": "a9dce190c34201443c7f7ffe95ad95f93b78095c6beb234b6961b967fb3861100a7c03182cbbd211ef0638f531f5b8d7f952c29bb3da318b4235ffdcacdc5de6"
+    }
+  },
+  "scope": {
+    "principal_and_linked_registrations": [
+      "REGAGE26e00082082985",
+      "REGAGE26e00082084044",
+      "REGAGE26e00082084297"
+    ],
+    "earlier_chains": [
+      "960091/2025",
+      "184368/2026",
+      "681432/2026"
+    ],
+    "purpose": "Access to existing administrative records concerning receipt, routing, incorporation, preservation, decisions, referrals and related funding/competence records."
+  },
+  "proof_limit": "The receipt proves presentation and registration to the named recipient and the listed attachment fingerprint. It does not prove receipt by the competent deciding unit, admission, incorporation, examination, preservation, disclosure or any substantive decision.",
+  "separation": "The SAIP is separate from the substantive communication, prior access requests, DP 1901/2026, EG 745/2026 and judicial/fiscal remedies. It neither withdraws nor restarts those matters.",
+  "privacy": "This public record excludes the native receipt, personal identifiers, contact information, signature/authentication material and unredacted filing body.",
+  "next_state": "AWAITING_COMPETENT_UNIT_RECEIPT_AND_SAIP_FILE_REFERENCE"
+}
