@@ -138,3 +138,42 @@ Never use:
 7. What is the exact corporate history of Montelanza, J.S.P./José Sánchez Peñate, Acciones Canarias and Ten Golf/Tengolf?
 8. Which seller/entity committed to convey each finca or exploitation right in 2008, what completed, what did not, and what contractual remedy followed?
 9. What did Garrigues receive, review and advise about that actor-specific chain before and after the 1/6-February-2012 instruments?
+
+
+## 2008 originating-group / Community-organ continuity control — 26 September 2026
+
+Gil Marer's attributed allegation defines the **originating group** as: (a) the actor-specific seller/residual-owner perimeter alleged to have failed to complete or frustrated the contemplated 2008 whole-hotel transaction with the Multimatrix buyer perimeter; (b) **Asunción Aizpurúa Sánchez** (a separate controlled filing uses **María Asunción Aizpurúa Sánchez**; recalled/spoken “Asperua” must not overwrite source spelling); and (c) every source-identified lawyer, representative, administrator, proxy or officeholder used to constitute, operate, certify, bank, litigate for, or exercise authority through the Owners' Community before and after 2008, only for the capacity, act, period and source actually proved.
+
+### Transaction premise and proof boundary
+
+Gil's case theory is that the intended commercial object was 100% of integrated Sun Park — all **262 registered elements** (220 accommodation units + 40 commercial/service fincas + 2 pool/solarium fincas), property plus exploitation — for the Israeli Multimatrix buyer perimeter. The repository independently supports a 2008 public presentation of property + operation transfer, but intended object and completed conveyance remain separate. A recovered working schedule records **171 sold to LPB** and a **60-unit “non-completion” working category**; 60/262 ≈ **22.9%**, materially consistent with the attributed c.23% residual-bloc description, but not proof of identical binding obligations, breach, common purpose or criminal liability owner-by-owner.
+
+**JSP correction:** do not describe JSP as proved direct majority shareholder of Montelanza. The present controlled corporate layer supports a **26.82% direct holding** at the relevant period. Any wider indirect, contractual, voting or de facto control is an open evidence question.
+
+### Baseline representation / professional perimeter
+
+The source matrices require actor-specific tracking of Aizpurúa; Álvaro Campanario Hernández; Esteban López Noriega; Juan Carlos Prieto Puente; Francisco Mario Matos Matas; Antonio Cogolludo Rojas; Shaila María Cogolludo Ramos; Pablo Rivero Correa; Antonio Peñate; Concepción Molina Marrero; Octavio Marrero Molina; Emilio Molina; Pedro Coll; Ángeles San Gregorio; Juan Rivera/Rivero; Gervasio González; Fernanda Rondo; and every additional owner/proxy/representative appearing in the 2011, 2014 and 2015 acts. Inclusion is not a finding that each was self-appointed, invalidly appointed, party to a 2008 breach, or participant in a criminal agreement.
+
+Mandatory attribution unit:
+
+`person → client/entity/units → representative/proxy → lawyer → office/capacity → act → date → document → practical effect → contrary evidence`.
+
+### Alleged Community-organ capture / instrumentalisation
+
+Gil alleges that personnel and machinery emerging from the residual seller/owner conflict later captured and criminally instrumentalised the Community organ against LPB and the integrated hotel operation. Test:
+
+`contested officeholding/representation → books/accounts/certificates → debt attribution → voting qualification/exclusion → resolutions/litigation → operator/possession pressure → downstream use in concurso/other proceedings → security/access authority → practical control → later benefit`.
+
+“Criminally instrumentalised” is an attributed allegation requiring proof of knowledge, purpose, assistance and effect for particular acts; it is not inferred merely from Community membership or professional representation.
+
+### AC boundary and later convergence
+
+Francisco de Borja Rodríguez-Batllori Laffitte is not automatically part of the 2008 originating group. His separate lane tests early knowledge, later adoption/reliance, failure independently to reconstruct contested Community propositions, enabling conduct and any knowing coordination. Distinguish **early knowledge** from **agreement/collusion**.
+
+The earlier Community/Molina/Montelanza apparatus and later Acosta Matos perimeter must be connected only through proved personal, title, corporate, Community and control bridges, including source-specific AMENEM/TENGOLF and Inversiones Salinetas/Cogolludo chains, continued administration, the 2018 AC/Community security-access interface, and later Acosta Matos Community/project configuration. Do not state that all earlier actors legally “became” CAM.
+
+### Anti-regression causal sequence
+
+`2008 intended whole-hotel transaction → incomplete/residual ownership + exploitation split → originating owner/representative/legal perimeter → 2011 Community debt/vote/authority machinery → operator/possession litigation → Concurso 36/2012 + alleged AC adoption/enabling → 2017–2018 CAM credit/title/Community convergence → security/access + 7-Jun-2018 practical-control pivot → later title/project/operating/finance benefit`.
+
+Every arrow remains a proposition to prove; individual attribution and adverse evidence are mandatory.
