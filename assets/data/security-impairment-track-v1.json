@@ -1,0 +1,175 @@
+{
+  "schema": "por-derecho.security-impairment-causation.v1",
+  "control_date": "2026-09-24",
+  "control_id": "PD-SP-TRACK-SECURITY-IMPAIRMENT-01",
+  "title": {
+    "es": "Garantía · deterioro · causación",
+    "en": "Security · impairment · causation"
+  },
+  "subtitle": {
+    "es": "De la garantía formal a la posición neta exigible",
+    "en": "From formal security to net enforceable position"
+  },
+  "core_rule": {
+    "es": "La subsistencia formal de una garantía y una posición exigible inalterada no son la misma proposición.",
+    "en": "A surviving security right and an unimpaired enforceable position are not the same proposition."
+  },
+  "lanes": {
+    "property": {
+      "es": [
+        "hipoteca inscrita",
+        "fincas/unidades",
+        "valor inmobiliario",
+        "indemnizaciones legalmente vinculadas"
+      ],
+      "en": [
+        "registered mortgage",
+        "properties/units",
+        "real-estate value",
+        "legally linked indemnities"
+      ]
+    },
+    "operating": {
+      "es": [
+        "acceso",
+        "explotación",
+        "clientes y reservas",
+        "ingresos",
+        "contratos de operador",
+        "reputación/goodwill",
+        "DD",
+        "valoración",
+        "garantía sustitutiva",
+        "capacidad de cierre"
+      ],
+      "en": [
+        "access",
+        "operation",
+        "customers and bookings",
+        "revenue",
+        "operator contracts",
+        "reputation/goodwill",
+        "DD",
+        "valuation",
+        "replacement security",
+        "closing capacity"
+      ]
+    }
+  },
+  "stages": [
+    {
+      "id": "formal-right",
+      "label": {
+        "es": "1 · Derecho formal",
+        "en": "1 · Formal right"
+      },
+      "state": "documented",
+      "body": {
+        "es": "Una hipoteca o garantía puede seguir formalmente inscrita pese a cambios o deterioros del activo.",
+        "en": "A mortgage or security right may remain formally registered despite changes or deterioration affecting the asset."
+      }
+    },
+    {
+      "id": "conduct",
+      "label": {
+        "es": "2 · Conducta atribuible",
+        "en": "2 · Attributable conduct"
+      },
+      "state": "attribution-required",
+      "body": {
+        "es": "Debe probarse qué actor hizo qué, en qué capacidad y si su conducta es jurídicamente atribuible al acreedor cuya posición se analiza.",
+        "en": "The analysis must prove which actor did what, in what capacity, and whether that conduct is legally attributable to the creditor whose position is being assessed."
+      }
+    },
+    {
+      "id": "impairment",
+      "label": {
+        "es": "3 · Deterioro",
+        "en": "3 · Impairment"
+      },
+      "state": "mixed",
+      "body": {
+        "es": "El daño puede afectar al valor inmobiliario y, separadamente, al valor operativo y al paquete necesario para diligencia, refinanciación y cierre.",
+        "en": "Damage may affect real-estate value and, separately, operating value and the package needed for diligence, refinancing and closing."
+      }
+    },
+    {
+      "id": "legal-effects",
+      "label": {
+        "es": "4 · Consecuencias jurídicas",
+        "en": "4 · Legal consequences"
+      },
+      "state": "legal-open",
+      "body": {
+        "es": "La subsistencia registral no decide por sí sola daños, buena fe/abuso, restitución o compensación, posición neta del crédito ni consecuencias sobre ejecución.",
+        "en": "Registration alone does not decide damages, good faith/abuse, restitution or compensation, the net claim position, or enforcement consequences."
+      }
+    },
+    {
+      "id": "criminal-gate",
+      "label": {
+        "es": "5 · Umbral penal",
+        "en": "5 · Criminal gate"
+      },
+      "state": "criminal-gate",
+      "body": {
+        "es": "La consecuencia penal sólo entra si se prueban el tipo aplicable, conducta, autoría/participación, elemento subjetivo exigible, daño y causalidad.",
+        "en": "Criminal consequences arise only if the applicable offence, conduct, authorship/participation, required mental element, damage and causation are proved."
+      }
+    }
+  ],
+  "legal_basis": [
+    {
+      "instrument": "Ley Hipotecaria",
+      "articles": "109–110",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1946-2453",
+      "use": {
+        "es": "Contexto sobre extensión de la hipoteca a mejoras e indemnizaciones; no decide por sí mismo el deterioro causado por el acreedor.",
+        "en": "Context on extension of a mortgage to improvements and indemnities; it does not itself decide creditor-caused impairment."
+      }
+    },
+    {
+      "instrument": "Ley Hipotecaria",
+      "articles": "117",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1946-2453",
+      "use": {
+        "es": "Muestra la relevancia jurídica del deterioro que hace insuficiente la garantía; el supuesto se refiere al deterioro causado por el dueño y no debe extrapolarse sin más.",
+        "en": "Shows the legal significance of deterioration making security insufficient; the statutory case concerns owner-caused deterioration and must not be mechanically transposed."
+      }
+    },
+    {
+      "instrument": "Código Civil",
+      "articles": "7",
+      "url": "https://www.boe.es/eli/es/rd/1889/07/24/(1)/con",
+      "use": {
+        "es": "Buena fe y prohibición del abuso de derecho; puede dar lugar a indemnización y medidas para impedir la persistencia del abuso.",
+        "en": "Good faith and prohibition of abuse of rights; may give rise to damages and measures preventing continuation of the abuse."
+      }
+    },
+    {
+      "instrument": "Código Penal",
+      "articles": "263",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444",
+      "use": {
+        "es": "Puerta de investigación para daños en propiedad ajena cuando concurran todos los elementos; no convierte el deterioro alegado en delito probado.",
+        "en": "Investigative gate for damage to another's property when all elements are met; it does not convert alleged impairment into a proven offence."
+      }
+    }
+  ],
+  "falsification": {
+    "es": [
+      "decisión independiente del financiador anterior al deterioro alegado",
+      "prueba de que acceso/operación no era material para DD o cierre",
+      "insuficiencia independiente de la garantía sustitutiva",
+      "causa de no cierre ajena a la conducta impugnada",
+      "ausencia de atribución jurídica al acreedor relevante"
+    ],
+    "en": [
+      "independent lender decision predating the alleged impairment",
+      "evidence that access/operation was not material to DD or closing",
+      "independent insufficiency of replacement security",
+      "non-closing cause independent of the challenged conduct",
+      "absence of legal attribution to the relevant creditor"
+    ]
+  }
+}
