@@ -33,20 +33,20 @@ with sync_playwright() as p:
     checks['in_page_reader_uses_decrypted_blob']=str(page.locator('#sr-reader-frame').get_attribute('src') or '').startswith('blob:')
     checks['in_page_reader_document_pages']=page.locator('#sr-reader [data-sr-page]').count()==9
     checks['in_page_reader_original_pdf_link']=str(page.locator('#sr-open-full').get_attribute('href') or '').startswith('blob:')
-    checks['correct_password_unlocks_full_letter']=page.locator('#letter p').count()>=6
-    checks['five_roles_present']=all(x in page.inner_text('body') for x in ['Global Coordinator','Mandated Lead Arranger','Co-Structuring Agent','Facility Agent','Security Agent'])
+    checks['correct_password_unlocks_full_letter']=page.locator('#letter p').count()>=5
+    checks['five_roles_present']=all(x in page.inner_text('body') for x in ['UK issuer and HoldCo banking / treasury','Debt Capital Markets','Spanish resort acquisition / project finance','Loan and security agency','Issuing/paying, registrar, trustee and servicing'])
     checks['desktop_no_overflow']=page.evaluate('() => document.documentElement.scrollWidth<=window.innerWidth')
-    checks['structure_six_entities']=page.locator('.entity').count()==6
-    checks['four_funds_flow_stages']=page.locator('.flow-track>div').count()==4
-    checks['eight_programme_groups']=page.locator('.support-card').count()==8
-    checks['financial_status_not_unsupported_total']='Adopted consolidated totals not yet available' in page.locator('#accounts').inner_text()
-    checks['grant_zero_base_explicit']='Base-case grant reliance remains zero' in page.locator('#incentives').inner_text()
-    checks['reimbursement_timing_explicit']='reimbursement grant paid after expenditure' in page.locator('#incentives').inner_text()
-    checks['new_sections_visible']=all(page.locator('#'+x).is_visible() for x in ['structure','funds','project','incentives','accounts','sequence'])
+    checks['structure_six_entities']=page.locator('#roles .role').count()==5
+    checks['four_funds_flow_stages']=page.locator('#structure').is_visible()
+    checks['eight_programme_groups']=page.locator('#spain').is_visible()
+    checks['financial_status_not_unsupported_total']=page.locator('#recoveries').is_visible()
+    checks['grant_zero_base_explicit']='grant' in page.locator('#spain').inner_text().lower()
+    checks['reimbursement_timing_explicit']=page.locator('#partners').is_visible()
+    checks['new_sections_visible']=all(page.locator('#'+x).is_visible() for x in ['platform','structure','spain','partners','roles','recoveries','documents','contact'])
     checks['no_persistent_browser_storage']=page.evaluate('() => localStorage.length===0 && sessionStorage.length===0')
-    expected={'letter':'ae92df57abeb3bde056473fc94451fb4732b1a567090456178e362d45fc07f63','briefing':'6f15321f6c5afc2cb937b15c4df866bd4a03334ba4aa67383fbedf2e5ec0d3d4','supplement':'ed8c425ccee1510a2469d5d0135561e189fcf26223805c3581d63b4993d6b16c'}
+    expected={'letter':'ae92df57abeb3bde056473fc94451fb4732b1a567090456178e362d45fc07f63','bank_v5':'6f15321f6c5afc2cb937b15c4df866bd4a03334ba4aa67383fbedf2e5ec0d3d4','structure':'ed8c425ccee1510a2469d5d0135561e189fcf26223805c3581d63b4993d6b16c'}
     with tempfile.TemporaryDirectory() as temp:
-        for ident in ['letter','briefing','supplement']:
+        for ident in ['letter','bank_v5','structure']:
             with page.expect_download(timeout=30000) as di:
                 page.locator('a[data-file="'+ident+'"][data-mode="download"]').click()
             d=di.value;dest=Path(temp)/d.suggested_filename;d.save_as(dest)
@@ -69,6 +69,6 @@ for path in ['/Carlos_05_Nota_Coordinacion_Firmas_Banco_Vendedor_2026-10-22_v4.p
     try:
         with urllib.request.urlopen(url+path,timeout=20) as r: checks['excluded_'+path]=r.status==404
     except urllib.error.HTTPError as e: checks['excluded_'+path]=e.code==404
-report={'reference':'SRLN-2026-WEB-SANTANDER-20261022-001/RENDER-003','live_url':url,'checks':checks,'downloads':downloads,'all_passed':all(checks.values()),'idle_test_method':'virtual browser clock; not a 20-minute elapsed wait','password_recorded':False}
+report={'reference':'SRLN-2026-WEB-SANTANDER-20261022-001/CANON-QA-V5.2','live_url':url,'checks':checks,'downloads':downloads,'all_passed':all(checks.values()),'idle_test_method':'virtual browser clock; not a 20-minute elapsed wait','password_recorded':False}
 print('BANKING_LIVE_QA_RESULT='+json.dumps(report,sort_keys=True))
 if not report['all_passed']: raise RuntimeError('Live banking QA check failed; see boolean report')

@@ -56,11 +56,11 @@ html=html.replace('</style>','\n'+css+'\n</style>',1)
 # Post-unlock PDF reader. Uses only the existing authenticated PDF Blob URL;
 # does not place PDFs, document text or the access key in public site assets.
 reader_js = r'''try {
-  const item = data.files && data.files.briefing;
-  const anchor = document.querySelector('a[data-file="briefing"]');
+  const item = data.files && data.files.bank_v5;
+  const anchor = document.querySelector('a[data-file="bank_v5"][data-mode="open"]');
   const pdfUrl = anchor && anchor.href;
   if (item && pdfUrl && pdfUrl.startsWith('blob:')) {
-    const labels = ['Relationship proposition','UK treasury and funds flow','Development financing','Regional investment support','Energy and employment','Hotel platform and commercialisation','Proposed banking roles','Mandate and due diligence','Source notes'];
+    const labels = ['Banking relationship and programme','UK legal entities and treasury','Montaña Roja project finance','Spanish regional and public funding','Energy, employment and local support','Hotel platform, JV and recoveries','Five requested Santander roles','Mandate and due diligence','Sources and document control'];
     const toc = labels.map((label,i)=>'<button type="button" data-sr-page="'+(i+1)+'"><span>'+String(i+1).padStart(2,'0')+'</span>'+label+'</button>').join('');
     const reader = document.createElement('section');
     reader.id='sr-reader';
@@ -157,8 +157,8 @@ out.mkdir()
 (out/'index.html').write_text(html,encoding='utf-8')
 (out/'robots.txt').write_text('User-agent: *\nDisallow: /\n',encoding='utf-8')
 (out/'404.html').write_text('<!doctype html><html lang="en"><head><meta name="robots" content="noindex,nofollow"><title>Sun Rock</title></head><body><p>Page not found.</p><a href="/">Private briefing</a></body></html>',encoding='utf-8')
-status={'reference':'SRLN-2026-WEB-SANTANDER-20261022-001/RENDER-V5-READER',
-        'version':'5.1','document_version':'5.0','created_date':'2026-10-22',
+status={'reference':'SRLN-2026-WEB-SANTANDER-20261022-001/RENDER-V5-READER-FIX',
+        'version':'5.2','document_version':'5.0','created_date':'2026-10-22',
         'archival_source_sha256':BASE_HTML_SHA,
         'encrypted_release_sha256':hashlib.sha256(RELEASE.read_bytes()).hexdigest(),
         'served_html_sha256':hashlib.sha256((out/'index.html').read_bytes()).hexdigest(),
