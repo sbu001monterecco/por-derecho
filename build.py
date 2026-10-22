@@ -1,8 +1,8 @@
 """Build the encrypted static site from versioned bytes. No hosting/runtime decryption."""
 from pathlib import Path
 import os, json, io, zipfile, hashlib, base64, re, shutil, subprocess, sys
-ARCHIVE_SHA = '57324b710a4baa4eb5d3374bcbea80e6197e358e672fd92969b4b90f2f2ecaa8'
-HTML_SHA = '212db0a397afe5126d15fbc43952d2ba617c7f59631112edf1087748c0ff629d'
+ARCHIVE_SHA = '45d6bffcfb0176756d2763cacdd8c2ad798e09c08dd3cdfb6632986fd362f4f0'
+HTML_SHA = 'fe7797fc25cb3fd80910a7a5534f67ef534c4bc13ca8825bf9b68658d56239b5'
 archive=Path('encrypted-source.zip').read_bytes()
 if hashlib.sha256(archive).hexdigest()!=ARCHIVE_SHA: raise RuntimeError('Encrypted archive integrity mismatch')
 with zipfile.ZipFile(io.BytesIO(archive)) as z: raw=z.read('index.html')
@@ -22,7 +22,7 @@ if out.exists(): shutil.rmtree(out)
 (out/'robots.txt').write_text('User-agent: *\nDisallow: /\n',encoding='utf-8')
 (out/'assets'/'banking-encrypted-source.zip').write_bytes(archive)
 (out/'404.html').write_text('<!doctype html><html lang="en"><head><meta name="robots" content="noindex,nofollow"><title>Sun Rock</title></head><body><h1>Page not found</h1><a href="/">Return to the private briefing</a></body></html>',encoding='utf-8')
-release={'reference':'SRLN-2026-WEB-SANTANDER-20261022-001/RENDER-002','version':'2.0','encrypted_source_sha256':HTML_SHA,'archive_sha256':ARCHIVE_SHA,'deployed_html_sha256':hashlib.sha256((out/'index.html').read_bytes()).hexdigest(),'source':'versioned-repository','script_sha256_base64':script_hash,'password_in_source':False}
+release={'reference':'SRLN-2026-WEB-SANTANDER-20261022-001/RENDER-003','version':'3.0','encrypted_source_sha256':HTML_SHA,'archive_sha256':ARCHIVE_SHA,'deployed_html_sha256':hashlib.sha256((out/'index.html').read_bytes()).hexdigest(),'source':'versioned-repository','script_sha256_base64':script_hash,'password_in_source':False}
 (out/'version.json').write_text(json.dumps(release,indent=2),encoding='utf-8')
 print(json.dumps(release))
 # Optional owner-authorised live QA. Secret supplied only via private build environment,
