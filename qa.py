@@ -27,6 +27,12 @@ with sync_playwright() as p:
         expect(page.locator('#gate')).to_be_hidden(timeout=30000)
         expect(page.locator('#letter')).to_be_visible(timeout=30000)
     unlock()
+    checks['in_page_reader_available']=page.locator('#sr-reader').is_visible()
+    checks['reader_document_not_opened_until_clicked']=page.locator('#sr-reader-frame-wrap').is_hidden()
+    page.locator('#sr-read-inline').click()
+    checks['in_page_reader_uses_decrypted_blob']=str(page.locator('#sr-reader-frame').get_attribute('src') or '').startswith('blob:')
+    checks['in_page_reader_document_pages']=page.locator('#sr-reader [data-sr-page]').count()==9
+    checks['in_page_reader_original_pdf_link']=str(page.locator('#sr-open-full').get_attribute('href') or '').startswith('blob:')
     checks['correct_password_unlocks_full_letter']=page.locator('#letter p').count()>=6
     checks['five_roles_present']=all(x in page.inner_text('body') for x in ['Global Coordinator','Mandated Lead Arranger','Co-Structuring Agent','Facility Agent','Security Agent'])
     checks['desktop_no_overflow']=page.evaluate('() => document.documentElement.scrollWidth<=window.innerWidth')
@@ -38,7 +44,7 @@ with sync_playwright() as p:
     checks['reimbursement_timing_explicit']='reimbursement grant paid after expenditure' in page.locator('#incentives').inner_text()
     checks['new_sections_visible']=all(page.locator('#'+x).is_visible() for x in ['structure','funds','project','incentives','accounts','sequence'])
     checks['no_persistent_browser_storage']=page.evaluate('() => localStorage.length===0 && sessionStorage.length===0')
-    expected={'letter':'f5c4ba02d9e7bcf896e80d6bbf78cdfec57807da44545ebabed0f384b943191b','briefing':'85dbfc0a292877a7cef0db311fe168e979a51e8e1de389a0b74eda471a5f623e','supplement':'48bc8c7680bb73764dc67bd7eb611dbcb31bf194fa4934cd5ee9c76a5225c70b'}
+    expected={'letter':'ae92df57abeb3bde056473fc94451fb4732b1a567090456178e362d45fc07f63','briefing':'6f15321f6c5afc2cb937b15c4df866bd4a03334ba4aa67383fbedf2e5ec0d3d4','supplement':'ed8c425ccee1510a2469d5d0135561e189fcf26223805c3581d63b4993d6b16c'}
     with tempfile.TemporaryDirectory() as temp:
         for ident in ['letter','briefing','supplement']:
             with page.expect_download(timeout=30000) as di:

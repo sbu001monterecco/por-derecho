@@ -53,6 +53,82 @@ if html.count('</style>')!=1:
     raise RuntimeError('CSS insertion point changed')
 html=html.replace('</style>','\n'+css+'\n</style>',1)
 
+# Post-unlock PDF reader. Uses only the existing authenticated PDF Blob URL;
+# does not place PDFs, document text or the access key in public site assets.
+reader_js = r'''try {
+  const item = data.files && data.files.briefing;
+  const anchor = document.querySelector('a[data-file="briefing"]');
+  const pdfUrl = anchor && anchor.href;
+  if (item && pdfUrl && pdfUrl.startsWith('blob:')) {
+    const labels = ['Relationship proposition','UK treasury and funds flow','Development financing','Regional investment support','Energy and employment','Hotel platform and commercialisation','Proposed banking roles','Mandate and due diligence','Source notes'];
+    const toc = labels.map((label,i)=>'<button type="button" data-sr-page="'+(i+1)+'"><span>'+String(i+1).padStart(2,'0')+'</span>'+label+'</button>').join('');
+    const reader = document.createElement('section');
+    reader.id='sr-reader';
+    reader.className='section sr-review-reader';
+    reader.innerHTML = '<div class="sr-reader-wrap"><div class="eyebrow">Private banking review &middot; original illustrated document</div>'
+      +'<div class="sr-reader-heading"><div><h2>Read the full banking presentation</h2>'
+      +'<p class="sr-reader-lead">The full nine-page financing brief is available to read here without an email attachment. The original illustrations, tables, disclosures and source notes are preserved.</p></div>'
+      +'<span class="sr-reader-version">Document V5.0</span></div>'
+      +'<div class="sr-reader-actions"><button type="button" class="button" id="sr-read-inline">Read all pages here</button>'
+      +'<a class="button secondary" target="_blank" rel="noopener noreferrer" id="sr-open-full">Open in separate tab</a>'
+      +'<a class="button secondary" id="sr-download-full">Download for internal review</a></div>'
+      +'<div class="sr-reader-toc-title">Navigate directly to a page</div><div class="sr-reader-toc" role="group" aria-label="Document sections">'+toc+'</div>'
+      +'<div class="sr-reader-frame-wrap" id="sr-reader-frame-wrap" hidden><iframe title="Full confidential banking document" id="sr-reader-frame" loading="lazy"></iframe>'
+      +'<p class="sr-reader-fallback">If your device cannot display an embedded PDF, select Open in separate tab. The source PDF remains inside this password-protected package.</p></div>'
+      +'<p class="sr-reader-disclaimer">For preliminary professional discussion, subject to independent due diligence. This is not a committed financing, a bank approval, an issued security or an investment offer.</p></div>';
+    const root = document.getElementById('content');
+    const main = root.querySelector('main');
+    const hero = main && main.querySelector('.hero');
+    if (hero) hero.insertAdjacentElement('afterend',reader);
+    else if (main) main.appendChild(reader);
+    else root.appendChild(reader);
+    const wrap=reader.querySelector('#sr-reader-frame-wrap');
+    const frame=reader.querySelector('#sr-reader-frame');
+    reader.querySelector('#sr-open-full').href=pdfUrl;
+    const download=reader.querySelector('#sr-download-full');
+    download.href=pdfUrl;
+    download.download=item.name;
+    const show=(page)=>{
+      wrap.hidden=false;
+      frame.src=pdfUrl+(page?'#page='+page+'&zoom=page-width':'');
+      wrap.scrollIntoView({behavior:'smooth',block:'start'});
+    };
+    reader.querySelector('#sr-read-inline').addEventListener('click',()=>show(null));
+    reader.querySelectorAll('[data-sr-page]').forEach(button=>button.addEventListener('click',()=>show(button.dataset.srPage)));
+    const nav=root.querySelector('.section-nav');
+    if(nav){const jump=document.createElement('a');jump.href='#sr-reader';jump.textContent='Complete presentation';nav.appendChild(jump);}
+  }
+} catch (readerError) {
+  /* Preserves original decrypted document and PDFs if inline reading is unsupported. */
+}'''
+needle = '});$("password").value=""'
+if html.count(needle) != 1:
+    raise RuntimeError('Original PDF Blob initialization anchor not found exactly once')
+html = html.replace(needle, '});' + reader_js + '$("password").value=""', 1)
+reader_css = r'''.sr-review-reader{padding:30px 0 45px;border-bottom:1px solid #d7dfd7;scroll-margin-top:102px}
+.sr-reader-wrap{padding:28px;border:1px solid #cbd9d2;background:linear-gradient(145deg,#f4f7f1,#fbfaf4);border-radius:10px}
+.sr-reader-heading{display:flex;align-items:start;justify-content:space-between;gap:16px}
+.sr-reader-heading h2{font-size:clamp(28px,3.2vw,40px);max-width:670px;margin-bottom:12px}
+.sr-reader-lead{font-size:14px;color:#546c6c;max-width:730px}
+.sr-reader-version{white-space:nowrap;font:600 11px Inter,Arial,sans-serif;color:#507477;padding:8px 11px;border:1px solid #c7d8cf;border-radius:30px}
+.sr-reader-actions{display:flex;flex-wrap:wrap;gap:10px;margin:19px 0 25px}
+.sr-reader-actions .button{padding:10px 14px;font-size:12px;white-space:normal}
+.sr-reader-toc-title{font-size:12px;font-weight:700;color:#32545c;margin:0 0 10px}
+.sr-reader-toc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.sr-reader-toc button{display:flex;gap:8px;align-items:center;text-align:left;color:#264751;background:#fff;border:1px solid #d5dfd7;border-radius:6px;padding:10px;font-size:12px;line-height:1.35;cursor:pointer}
+.sr-reader-toc button:hover,.sr-reader-toc button:focus-visible{border-color:#477f85;background:#eff6f2}
+.sr-reader-toc button span{color:#8b7846;font:17px Georgia,serif}
+.sr-reader-frame-wrap{margin-top:20px;padding:8px;background:#edf1ec;border-radius:9px;border:1px solid #c8d6d0;scroll-margin-top:110px}
+.sr-reader-frame-wrap iframe{width:100%;height:min(78vh,950px);min-height:490px;border:0;border-radius:5px;background:#fff;display:block}
+.sr-reader-fallback,.sr-reader-disclaimer{font-size:11.5px;line-height:1.6;color:#637771;margin:13px 3px 0}
+.sr-reader-disclaimer{margin-top:23px;padding-top:13px;border-top:1px solid #d5e0d6}
+@media(max-width:800px){.sr-reader-toc{grid-template-columns:repeat(2,minmax(0,1fr))}.sr-reader-version{white-space:normal}}
+@media(max-width:550px){.sr-reader-wrap{padding:18px}.sr-reader-heading{display:block}.sr-reader-version{display:inline-block;margin-bottom:6px}.sr-reader-toc{grid-template-columns:1fr}.sr-reader-actions .button{flex:1 1 100%;text-align:center}.sr-reader-frame-wrap iframe{height:64vh;min-height:390px}}
+@media print{.sr-review-reader .sr-reader-actions,.sr-review-reader .sr-reader-toc,.sr-review-reader .sr-reader-frame-wrap{display:none!important}}'''
+if html.count('</style>') != 1:
+    raise RuntimeError('Styling insertion point not unique')
+html = html.replace('</style>', '\n' + reader_css + '\n</style>', 1)
+
 # One executable inline script. Password data are never stored in the repo.
 scripts=[b for a,b in re.findall(r'<script([^>]*)>(.*?)</script>',html,re.S) if 'application/json' not in a]
 if len(scripts)!=1:
@@ -60,7 +136,7 @@ if len(scripts)!=1:
 hash_b64=base64.b64encode(hashlib.sha256(scripts[0].encode('utf-8')).digest()).decode('ascii')
 policy=("default-src 'none'; script-src 'sha256-"+hash_b64+"'; "
         "style-src 'unsafe-inline'; img-src data: blob:; connect-src blob:; "
-        "font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; "
+        "font-src 'none'; frame-src blob:; object-src 'none'; base-uri 'none'; form-action 'none'; "
         "upgrade-insecure-requests")
 html=html.replace('<head>','<head><meta http-equiv="Content-Security-Policy" content="'+policy+'">',1)
 
@@ -81,13 +157,14 @@ out.mkdir()
 (out/'index.html').write_text(html,encoding='utf-8')
 (out/'robots.txt').write_text('User-agent: *\nDisallow: /\n',encoding='utf-8')
 (out/'404.html').write_text('<!doctype html><html lang="en"><head><meta name="robots" content="noindex,nofollow"><title>Sun Rock</title></head><body><p>Page not found.</p><a href="/">Private briefing</a></body></html>',encoding='utf-8')
-status={'reference':'SRLN-2026-WEB-SANTANDER-20261022-001/RENDER-V5',
-        'version':'5.0','created_date':'2026-10-22',
+status={'reference':'SRLN-2026-WEB-SANTANDER-20261022-001/RENDER-V5-READER',
+        'version':'5.1','document_version':'5.0','created_date':'2026-10-22',
         'archival_source_sha256':BASE_HTML_SHA,
         'encrypted_release_sha256':hashlib.sha256(RELEASE.read_bytes()).hexdigest(),
         'served_html_sha256':hashlib.sha256((out/'index.html').read_bytes()).hexdigest(),
         'script_sha256_base64':hash_b64,
         'credential_embedded':False,
+        'post_unlock_pdf_reader':True,
         'download_files':'only in AES-256-GCM encrypted payload',
         'offer_status':'pre-admission / pre-issuance / not a securities offer'}
 (out/'version.json').write_text(json.dumps(status,indent=2),encoding='utf-8')
