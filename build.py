@@ -60,7 +60,7 @@ reader_js = r'''try {
   const anchor = document.querySelector('a[data-file="bank_v5"][data-mode="open"]');
   const pdfUrl = anchor && anchor.href;
   if (item && pdfUrl && pdfUrl.startsWith('blob:')) {
-    const labels = ['Banking relationship and programme','UK legal entities and treasury','Montaña Roja project finance','Spanish regional and public funding','Energy, employment and local support','Hotel platform, JV and recoveries','Five requested Santander roles','Mandate and due diligence','Sources and document control'];
+    const labels = ['Banking relationship and programme','UK legal entities and treasury','Spanish resort project finance','Spanish regional and public funding','Energy, employment and local support','Hotel platform, JV and recoveries','Five requested Santander roles','Mandate and due diligence','Sources and document control'];
     const toc = labels.map((label,i)=>'<button type="button" data-sr-page="'+(i+1)+'"><span>'+String(i+1).padStart(2,'0')+'</span>'+label+'</button>').join('');
     const reader = document.createElement('section');
     reader.id='sr-reader';
