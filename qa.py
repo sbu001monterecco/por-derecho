@@ -1,7 +1,7 @@
-"""One-time owner-authorised live tests. Password supplied only in private build environment; never logged or published."""
+"""Owner-authorised live checks. Password stays in private build environment, never logged/published."""
 import os, json, hashlib, urllib.request, urllib.error, tempfile
 from pathlib import Path
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import sync_playwright, expect
 url=os.environ.get('QA_URL','https://sun-rock-banking.onrender.com').rstrip('/')
 password=os.environ.get('QA_PASSWORD','')
 if not password: raise RuntimeError('QA password absent')
@@ -16,18 +16,21 @@ with sync_playwright() as p:
     browser=p.chromium.launch(headless=True,args=['--no-sandbox','--disable-dev-shm-usage'])
     page=browser.new_page(viewport={'width':1280,'height':900},accept_downloads=True)
     errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
-    response=page.goto(url,wait_until='networkidle',timeout=60000)
+    page.goto(url,wait_until='networkidle',timeout=60000)
     checks['initial_password_gate']=page.locator('#gate').is_visible()
     checks['locked_dom_excludes_letter']=page.locator('#letter').count()==0
     page.fill('#password','incorrect-on-purpose');page.click('#unlockButton')
-    page.wait_for_function("document.getElementById('error').textContent.length>0",timeout=30000)
+    expect(page.locator('#error')).not_to_have_text('',timeout=30000)
     checks['wrong_password_rejected']=page.locator('#gate').is_visible()
-    page.fill('#password',password);page.click('#unlockButton')
-    page.wait_for_function("document.getElementById('gate').hidden",timeout=30000)
-    checks['correct_password_unlocks_full_letter']=page.locator('#letter').is_visible() and page.locator('#letter p').count()>=6
+    def unlock():
+        page.fill('#password',password);page.click('#unlockButton')
+        expect(page.locator('#gate')).to_be_hidden(timeout=30000)
+        expect(page.locator('#letter')).to_be_visible(timeout=30000)
+    unlock()
+    checks['correct_password_unlocks_full_letter']=page.locator('#letter p').count()>=6
     checks['five_roles_present']=all(x in page.inner_text('body') for x in ['Global Coordinator','Mandated Lead Arranger','Co-Structuring Agent','Facility Agent','Security Agent'])
-    checks['desktop_no_overflow']=page.evaluate('document.documentElement.scrollWidth<=window.innerWidth')
-    checks['no_persistent_browser_storage']=page.evaluate('localStorage.length===0 && sessionStorage.length===0')
+    checks['desktop_no_overflow']=page.evaluate('() => document.documentElement.scrollWidth<=window.innerWidth')
+    checks['no_persistent_browser_storage']=page.evaluate('() => localStorage.length===0 && sessionStorage.length===0')
     expected={'letter':'f5c4ba02d9e7bcf896e80d6bbf78cdfec57807da44545ebabed0f384b943191b','briefing':'85dbfc0a292877a7cef0db311fe168e979a51e8e1de389a0b74eda471a5f623e'}
     with tempfile.TemporaryDirectory() as temp:
         for ident in ['letter','briefing']:
@@ -37,15 +40,13 @@ with sync_playwright() as p:
             content=dest.read_bytes();digest=hashlib.sha256(content).hexdigest()
             checks['pdf_'+ident+'_integrity']=digest==expected[ident]
             downloads.append({'id':ident,'filename':d.suggested_filename,'bytes':len(content),'sha256':digest})
-    page.evaluate("window.cspProbe=0;const s=document.createElement('script');s.textContent='window.cspProbe=1';document.body.appendChild(s)")
-    checks['csp_blocks_unapproved_script']=page.evaluate('window.cspProbe===0')
+    page.evaluate("() => {window.cspProbe=0;const s=document.createElement('script');s.textContent='window.cspProbe=1';document.body.appendChild(s)}")
+    checks['csp_blocks_unapproved_script']=page.evaluate('() => window.cspProbe===0')
     page.click('#lockButton')
-    checks['manual_lock_clears_content']=page.evaluate("document.getElementById('content').children.length===0&&!document.getElementById('gate').hidden")
-    page.fill('#password',password);page.click('#unlockButton');page.wait_for_function("document.getElementById('gate').hidden")
-    page.reload();checks['reload_relocks']=page.locator('#gate').is_visible()
-    page.set_viewport_size({'width':390,'height':844})
-    page.fill('#password',password);page.click('#unlockButton');page.wait_for_function("document.getElementById('gate').hidden")
-    checks['mobile_no_overflow']=page.evaluate('document.documentElement.scrollWidth<=window.innerWidth')
+    checks['manual_lock_clears_content']=page.evaluate("() => document.getElementById('content').children.length===0&&!document.getElementById('gate').hidden")
+    unlock();page.reload();checks['reload_relocks']=page.locator('#gate').is_visible()
+    page.set_viewport_size({'width':390,'height':844});unlock()
+    checks['mobile_no_overflow']=page.evaluate('() => document.documentElement.scrollWidth<=window.innerWidth')
     checks['mobile_letter_visible']=page.locator('#letter').is_visible()
     page.clock.install();page.dispatch_event('body','pointerdown');page.clock.fast_forward(1200500)
     checks['idle_lock_20min_clock_simulated']=page.locator('#gate').is_visible()
@@ -57,4 +58,4 @@ for path in ['/Carlos_05_Nota_Coordinacion_Firmas_Banco_Vendedor_2026-10-22_v4.p
     except urllib.error.HTTPError as e: checks['excluded_'+path]=e.code==404
 report={'reference':'SRLN-2026-WEB-SANTANDER-20261022-001/RENDER-002','live_url':url,'checks':checks,'downloads':downloads,'all_passed':all(checks.values()),'idle_test_method':'virtual browser clock; not a 20-minute elapsed wait','password_recorded':False}
 print('BANKING_LIVE_QA_RESULT='+json.dumps(report,sort_keys=True))
-if not report['all_passed']: raise RuntimeError('Live banking QA check failed; see booleans, no password logged')
+if not report['all_passed']: raise RuntimeError('Live banking QA check failed; see boolean report')
