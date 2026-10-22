@@ -13,30 +13,48 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: web/santander-render-20261022
-      - name: Import and verify ciphertext only
+      - name: Import verified ciphertext and update release hashes atomically
         shell: bash
         run: |
           set -euo pipefail
           python3 - <<'PY'
-          import urllib.request, pathlib, hashlib, zipfile, io
+          import urllib.request, pathlib, hashlib, zipfile, io, re
           p=pathlib.Path('encrypted-source.zip')
-          expected='57324b710a4baa4eb5d3374bcbea80e6197e358e672fd92969b4b90f2f2ecaa8'
-          if p.exists():
-              data=p.read_bytes()
-          else:
-              with urllib.request.urlopen('https://sun-rock-banking.onrender.com/assets/banking-encrypted-source.zip',timeout=60) as r:
-                  data=r.read(2000000)
+          expected='45d6bffcfb0176756d2763cacdd8c2ad798e09c08dd3cdfb6632986fd362f4f0'
+          expected_html='fe7797fc25cb3fd80910a7a5534f67ef534c4bc13ca8825bf9b68658d56239b5'
+          data=p.read_bytes() if p.exists() else b''
+          if hashlib.sha256(data).hexdigest()!=expected:
+              url='https://sdmntprnortheu.oaiusercontent.com/files/00000000-0bdc-81f4-a07b-5af6b5eda108/raw?se=2026-10-22T11%3A29%3A14Z&sp=r&sv=2026-02-06&sr=b&scid=2f44b63a-52f2-5315-a4c6-1524ccb87f7d&skoid=6658dbdd-f305-4d30-8f6b-d62218202cb9&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-22T07%3A40%3A47Z&ske=2026-10-23T07%3A40%3A47Z&sks=b&skv=2026-02-06&sig=NXRyFcSMDKGMCz5awfZC/7AwgL01675BwnpXAEce8Y4%3D'
+              with urllib.request.urlopen(url,timeout=60) as response:
+                  data=response.read(2000000)
           assert hashlib.sha256(data).hexdigest()==expected, 'Archive hash mismatch'
           with zipfile.ZipFile(io.BytesIO(data)) as z:
               h=z.read('index.html')
-          assert hashlib.sha256(h).hexdigest()=='212db0a397afe5126d15fbc43952d2ba617c7f59631112edf1087748c0ff629d','HTML hash mismatch'
+          assert hashlib.sha256(h).hexdigest()==expected_html, 'HTML hash mismatch'
+          assert b'encryptedPayload' in h
           p.write_bytes(data)
-          print('PASS: original encrypted ZIP and HTML hashes; no decryption or password')
+          build=pathlib.Path('build.py'); s=build.read_text()
+          s=re.sub(r"ARCHIVE_SHA = '[a-f0-9]+'", "ARCHIVE_SHA = '"+expected+"'",s)
+          s=re.sub(r"HTML_SHA = '[a-f0-9]+'", "HTML_SHA = '"+expected_html+"'",s)
+          s=s.replace('/RENDER-002','/RENDER-003').replace("'version':'2.0'","'version':'3.0'")
+          build.write_text(s)
+          qa=pathlib.Path('qa.py'); q=qa.read_text()
+          q=q.replace('/RENDER-002','/RENDER-003')
+          if "'supplement':" not in q:
+              q=q.replace("'briefing':'85dbfc0a292877a7cef0db311fe168e979a51e8e1de389a0b74eda471a5f623e'", "'briefing':'85dbfc0a292877a7cef0db311fe168e979a51e8e1de389a0b74eda471a5f623e','supplement':'48bc8c7680bb73764dc67bd7eb611dbcb31bf194fa4934cd5ee9c76a5225c70b'")
+              q=q.replace("for ident in ['letter','briefing']:","for ident in ['letter','briefing','supplement']:")
+              anchor="    checks['no_persistent_browser_storage']="
+              additions="    checks['structure_six_entities']=page.locator('.entity').count()==6\n    checks['four_funds_flow_stages']=page.locator('.flow-track>div').count()==4\n    checks['eight_programme_groups']=page.locator('.support-card').count()==8\n    checks['financial_status_not_unsupported_total']='Adopted consolidated totals not yet available' in page.locator('#accounts').inner_text()\n    checks['grant_zero_base_explicit']='Base-case grant reliance remains zero' in page.locator('#incentives').inner_text()\n    checks['reimbursement_timing_explicit']='reimbursement grant paid after expenditure' in page.locator('#incentives').inner_text()\n    checks['new_sections_visible']=all(page.locator('#'+x).is_visible() for x in ['structure','funds','project','incentives','accounts','sequence'])\n"
+              assert anchor in q
+              q=q.replace(anchor,additions+anchor,1)
+          qa.write_text(q)
+          compile(s,'build.py','exec'); compile(q,'qa.py','exec')
+          print('PASS: enhancement ciphertext archive and HTML verified; original PDFs remain in protected payload; no decryption or password in workflow')
           PY
           git config user.name 'Sun Rock deployment'
           git config user.email 'sbu001@monterecco.com'
-          git add -- encrypted-source.zip
+          git add -- encrypted-source.zip build.py qa.py
           if ! git diff --cached --quiet; then
-            git commit -m 'Version verified encrypted banking source for repeatable Render builds'
+            git commit -m 'Release banking v3: protected structure, funding, incentives and FY2026 status supplement'
             git push origin HEAD:web/santander-render-20261022
           fi
