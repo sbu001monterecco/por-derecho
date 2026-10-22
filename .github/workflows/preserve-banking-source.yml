@@ -1,0 +1,42 @@
+name: Preserve encrypted banking deployment
+on:
+  push:
+    branches: ['web/santander-render-20261022']
+    paths: ['.github/workflows/preserve-banking-source.yml']
+permissions:
+  contents: write
+jobs:
+  preserve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: web/santander-render-20261022
+      - name: Import and verify ciphertext only
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import urllib.request, pathlib, hashlib, zipfile, io
+          p=pathlib.Path('encrypted-source.zip')
+          expected='57324b710a4baa4eb5d3374bcbea80e6197e358e672fd92969b4b90f2f2ecaa8'
+          if p.exists():
+              data=p.read_bytes()
+          else:
+              with urllib.request.urlopen('https://sun-rock-banking.onrender.com/assets/banking-encrypted-source.zip',timeout=60) as r:
+                  data=r.read(2000000)
+          assert hashlib.sha256(data).hexdigest()==expected, 'Archive hash mismatch'
+          with zipfile.ZipFile(io.BytesIO(data)) as z:
+              h=z.read('index.html')
+          assert hashlib.sha256(h).hexdigest()=='212db0a397afe5126d15fbc43952d2ba617c7f59631112edf1087748c0ff629d','HTML hash mismatch'
+          p.write_bytes(data)
+          print('PASS: original encrypted ZIP and HTML hashes; no decryption or password')
+          PY
+          git config user.name 'Sun Rock deployment'
+          git config user.email 'sbu001@monterecco.com'
+          git add -- encrypted-source.zip
+          if ! git diff --cached --quiet; then
+            git commit -m 'Version verified encrypted banking source for repeatable Render builds'
+            git push origin HEAD:web/santander-render-20261022
+          fi
