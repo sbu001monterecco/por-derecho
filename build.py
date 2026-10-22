@@ -1,7 +1,7 @@
 """Reproducible Render build of Sun Rock Santander private banking v5 gateway.
 
 Inputs are immutable prior encrypted archive + independent, newly encrypted v5 payload.
-No password, plaintext briefing, PDF source, or sensitive commercial content is in
+The illustrated financing PDF is presented inside the unlocked website, with no additional email attachments.\nNo password, plaintext briefing, PDF source, or sensitive commercial content is in
 this build script or source repository. A password is supplied by each visitor only.
 """
 from pathlib import Path
