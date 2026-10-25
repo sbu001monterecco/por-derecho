@@ -67,7 +67,7 @@ def build() -> dict[str, Any]:
             "separate_source_proved_regage_events": len([event for event in filings if event.get("cohort") != "BASELINE_REDSARA_ANEXO4_75"]),
             "historic_regage_total_reported": denominator.get("wider_regage_records_reported"),
             "aggregate_only_batch": source.get("unresolved_batches", []),
-            "reconciliation_boundary": "The historic 97-record denominator is retained as provenance (75 detailed receipts plus one 22-record aggregate-only batch). The current 21-Sep-2026 census contains 398 individually represented REGAGE references: existing and newly receipt-controlled formal events are reused where available, and the remaining rows preserve only the literal status export. Receipt proof is not inferred from a status-export-only row.",
+            "reconciliation_boundary": "The historic 97-record denominator is retained as provenance (75 detailed receipts plus one 22-record aggregate-only batch). The current 21-Sep-2026 census contains 398 individually represented REGAGE references: existing and newly receipt-controlled formal events are reused where available, and the remaining rows preserve only the literal status export. Receipt proof is not inferred from a status-export-only row. The later 24-Sep successors and finite six-event Madrid/CTBG October cohort are additive source-controlled extensions; the 398-row census and 284 status-only rows are not redefined. Native receipts, compiled receipt read copies and freshly fingerprint-checked attachments retain their distinct proof levels.",
             "receipt_boundary": "A registry receipt proves only the stated presentation, time, registry destination and listed annex metadata. It does not alone prove downstream delivery, incorporation, examination, decision, reliance, payment, effect, causation, intent, offence or guilt.",
             "attachment_boundary": "The public attachment index records 100 unique filename/SHA-512 pairs and their receipt-occurrence counts for the detailed 75-receipt baseline. The public source does not establish a complete individual receipt-to-attachment mapping, so none is inferred here.",
             "privacy_boundary": "No native receipt bundle, private email, direct contact detail, provider locator or unredacted private file is published by this projection.",
@@ -83,7 +83,7 @@ def build() -> dict[str, Any]:
             {
                 key: event.get(key)
                 for key in (
-                    "event_id", "source_key", "cohort", "event_date", "presented_local", "record_type", "direction", "channel",
+                    "event_id", "source_key", "cohort", "event_date", "presented_local", "event_timestamp", "source_timezone", "record_type", "direction", "channel",
                     "official_reference", "office", "institution_key", "recipient_dir3", "source_pages", "annex_count",
                     "subject_category", "subject_label_status", "public_summary", "public_summary_es", "proves", "proves_es",
                     "does_not_prove", "does_not_prove_es", "evidence_classes", "evidence_state", "handling_state",

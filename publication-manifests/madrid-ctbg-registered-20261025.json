@@ -1,0 +1,169 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-MADRID-CTBG-REGISTERED-20261025",
+  "control_date": "2026-10-25",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "owner": "Project Sun Rock / Por Derecho",
+  "audit_base_main_sha": "2d5d42b9e5bb408ae3d27cb8ad9d6b98b00b88d0",
+  "scope": "Add six source-qualified registry events and dated corrections to existing bilingual GC836/HNT/RIC readers, home/update navigation and the current unitary control plane. No new event master, removal, rename or rewrite of prior history.",
+  "expected_routes": {
+    "es": [
+      "es/index.html",
+      "es/actualizaciones/index.html",
+      "es/incentivos-regionales-gc836-p06/index.html",
+      "es/ricpe-hnt-gc836-trazabilidad/index.html",
+      "es/cadena-instrumentalizacion-ric-fondos-incentivos/index.html",
+      "es/actualizaciones/feed.xml"
+    ],
+    "en": [
+      "en/index.html",
+      "en/updates/index.html",
+      "en/regional-incentives-gc836-p06/index.html",
+      "en/ricpe-hnt-gc836-traceability/index.html",
+      "en/institutionalisation-chain-ric-eu-incentives/index.html",
+      "en/updates/feed.xml"
+    ]
+  },
+  "expected_source_files": [
+    "GC836_P06_EVIDENCE_AND_AUTHORITY_MATRIX_21AUG2026.json",
+    "SUN_PARK_RICPE_HNT_GC836_FINANCING_CHRONOLOGY_21AUG2026.md",
+    "assets/data/institutional-communications-20261025.json",
+    "assets/data/institutional-communications-register-v1.json",
+    "assets/data/material-updates-v1.json",
+    "assets/data/redsara-age-filings-register-v1.json",
+    "en/index.html",
+    "en/institutionalisation-chain-ric-eu-incentives/index.html",
+    "en/regional-incentives-gc836-p06/index.html",
+    "en/ricpe-hnt-gc836-traceability/index.html",
+    "en/updates/feed.xml",
+    "en/updates/index.html",
+    "es/actualizaciones/feed.xml",
+    "es/actualizaciones/index.html",
+    "es/cadena-instrumentalizacion-ric-fondos-incentivos/index.html",
+    "es/incentivos-regionales-gc836-p06/index.html",
+    "es/index.html",
+    "es/ricpe-hnt-gc836-trazabilidad/index.html",
+    "ops/CURRENT_UNITARY_STATE.json",
+    "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json",
+    "scripts/build_redsara_age_filings_register.py",
+    "scripts/load_madrid_ctbg_filings_20261025.py",
+    "scripts/reconcile_institutional_communications.py",
+    "scripts/test_madrid_ctbg_filings_20261025.py",
+    "scripts/validate_institutional_communications.py",
+    "scripts/validate_redsara_authority_discovery.py",
+    "scripts/validate_unitary_control_plane.py",
+    "sitemap-multiple-financial-lives.xml",
+    "sitemap-supervisory-practice.xml",
+    "sitemap.xml",
+    "publication-manifests/madrid-ctbg-registered-20261025.json"
+  ],
+  "candidate_file_sha256": {
+    "GC836_P06_EVIDENCE_AND_AUTHORITY_MATRIX_21AUG2026.json": "7eb86be9216cb054ed786f6da57d0df667ee88dcc1600cea95b94c219a92e222",
+    "SUN_PARK_RICPE_HNT_GC836_FINANCING_CHRONOLOGY_21AUG2026.md": "217203c8921b1beafcda84e9d257051d4e30be3d3ceed4756ac96d633c8d20b0",
+    "assets/data/institutional-communications-20261025.json": "191d22fd50d5409f963e0ffac995c4a05e4b18e61abd923c4de522ae940364a0",
+    "assets/data/institutional-communications-register-v1.json": "59dfe3f0a5652d151dc1355b6c00d23801d87442c02360a98610d4f35bf2f374",
+    "assets/data/material-updates-v1.json": "87eefca7fe2eed5d8f6caf02b3c8a3b405e3f9ad1dcf4d06acc467d34f707588",
+    "assets/data/redsara-age-filings-register-v1.json": "365bd1bd428a62ab724b771a188bfd5f8f6baacfeba7310aa92a03d44d15accd",
+    "en/index.html": "655340de9d02d8e59d23b1e719dad293e7bb926bde028d710189d3e691327633",
+    "en/institutionalisation-chain-ric-eu-incentives/index.html": "c96c661d289129decfeb3ad4fcd0a6b8acea977d87ea2054f660c3a8a77cc76b",
+    "en/regional-incentives-gc836-p06/index.html": "1458709ed4a587fed1fc147864f586a30d834a4980d93e14191fad2b6da535e6",
+    "en/ricpe-hnt-gc836-traceability/index.html": "0cce4880039bbf294936e3740555e4d19d980261fae2d76a0c0014dfb29a16ab",
+    "en/updates/feed.xml": "facacbb44f8351e1f08eaa955460c3029ce9f4b74c3a1ea4c16dc04f3cceb71b",
+    "en/updates/index.html": "44c95485097ebf35d88b93be684da8402bff4f897c2213742dce64b09bfc2326",
+    "es/actualizaciones/feed.xml": "6ff563b4e25fc19b68b49efc5120fa6486ef55fdae6837ad21bae842696e9a38",
+    "es/actualizaciones/index.html": "aee4263ccd75c2519be731e784a6aa416e32fe133b8f3c24dc1c9fe5c3770e0b",
+    "es/cadena-instrumentalizacion-ric-fondos-incentivos/index.html": "22b13f384b40e34a058505ee458b09caf98df7d682809d916b7bd8f5542985f8",
+    "es/incentivos-regionales-gc836-p06/index.html": "563008e201f78c4b059301b74495786db128c3f352d4cc017979f6caef90e821",
+    "es/index.html": "3a802ffa93c179188db8c1bf39f976af5991937d4e144fa56cd4f56e75218d1e",
+    "es/ricpe-hnt-gc836-trazabilidad/index.html": "ad5b095b7551e4eeaadfca88278dfe666ec4e721c06d5c4ed1586b0de090bdcf",
+    "ops/CURRENT_UNITARY_STATE.json": "27f1a47aea79bd2aeb792bbd6124597906613b1c2c17561051a4ed3b2ec5bb36",
+    "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json": "4ab5c57b4cec6bc44f03064e8d3681bd24de49fcf5f7f7b699434e689a13072c",
+    "scripts/build_redsara_age_filings_register.py": "623a94b99dd73c6b59582d3df8f3395df2df261ac1427ef25d70f73c6fa51ab6",
+    "scripts/load_madrid_ctbg_filings_20261025.py": "865c6534be867fa7091eed5dda9a71b22ae724200a19884ccc38d6b0a2f55fa1",
+    "scripts/reconcile_institutional_communications.py": "81258988da1e4c99b3059b29d681d2eff0218f22cefc092a3e693dd8996f0245",
+    "scripts/test_madrid_ctbg_filings_20261025.py": "d88e1eb232692c1c2c004d17e9a5e1014ab8035c4e575a242ed74622e92b0d8a",
+    "scripts/validate_institutional_communications.py": "757a2e2914ccbe5daab3d0d8540d6946d6f3008ec0fc955b49156eb805c4ca6a",
+    "scripts/validate_redsara_authority_discovery.py": "fab1f63366dbb972161e4e3e9a2b11357b6673cf6984b850da6ee9e0420c111e",
+    "scripts/validate_unitary_control_plane.py": "83db14fbdcbbfd7ad86a846819480514b1d5b8b56ddae554ca7cf63f878a3a3b",
+    "sitemap-multiple-financial-lives.xml": "7971db66e1a80edf58063d631e48d4a7219b28b897e6dea510fbd2b75fcff55e",
+    "sitemap-supervisory-practice.xml": "400ee90dbee55b2d3338302ee5a559f3e2bb26034b22ffa4ae63958d98b388e0",
+    "sitemap.xml": "e15e42f0cdf64c64db875aad6135480b81d8433910eab076b4ab83605a604085"
+  },
+  "canonical_event_ids": [
+    "PD-SP-EVT-0600",
+    "PD-SP-EVT-0601",
+    "PD-SP-EVT-0602",
+    "PD-SP-EVT-0603",
+    "PD-SP-EVT-0604",
+    "PD-SP-EVT-0605"
+  ],
+  "registration_references": [
+    "REGAGE26e00091776746",
+    "REGAGE26e00091777235",
+    "REGAGE26e00091777533",
+    "REGAGE26e00091778502",
+    "REGAGE26e00091804140",
+    "REGAGE26e00091804303"
+  ],
+  "allocation_boundary": "0600–0605 checked against current GitHub/GitLab main and preserved open-PR reservations; no historical ID is renumbered or reused.",
+  "denominators": {
+    "prior_canonical_events_preserved": 660,
+    "new_canonical_events": 6,
+    "current_canonical_events": 666,
+    "baseline_reference_occurrences_unchanged": 75,
+    "status_only_occurrences_unchanged": 284,
+    "redsara_age_projection_events": 406
+  },
+  "public_markers": [
+    "october-2026-source-reconciliation",
+    "PD-MADRID-CTBG-REGISTERED-20261025",
+    "MU-20261025-MADRID-CTBG-RECOVERY-CORRECTIONS"
+  ],
+  "source_boundaries": [
+    "Three 24 October Madrid receipts are controlled compiled read copies at common-annex pages 2–5; their source-control digest is not a native receipt digest.",
+    "The 24 October CTBG and both 25 October events are controlled by native registry receipts. Fresh attachment fingerprint comparisons cover the two 25 October receipts only.",
+    "The two 25 October filed pleadings are each four pages and share a 131-page documentary annex. Byte-distinct authored/filed versions are preserved separately; page-content identity does not establish binary identity.",
+    "Literal presentation and registration timestamps retain the printed electronic-headquarters values; no timezone offset is inferred.",
+    "Registration and attachment fingerprints establish recorded delivery/identity only, not admission, downstream incorporation, examination, investigation or merits."
+  ],
+  "dated_corrections": [
+    "Five document categories were recovered on 24 October after the morning filings; current non-receipt statements are corrected without asserting historical complete delivery.",
+    "Portal report 9118714 includes a CSV wrapper. Copy differences do not alone establish forgery or authorship.",
+    "Ownership at the end of the grant validity period concerns the actilla condition; it is not a civil-title transfer and does not establish the individual deadline or compliance.",
+    "The Ministry receipt of 7 June 2022 is not the first valid regional application. The original September 2022 criteria and later consolidated text remain separate.",
+    "Demolition-cost exclusion does not establish public funding/payment or identity of every earlier work with the aided project.",
+    "The 25 February 2026 HNT hearing communication evidences a corporate Dyrecto channel, not a personal David Hoys Bodelón mandate/readership. Laura Patricia Acosta Matos remains the canonical name.",
+    "The April notification/opening record, June response and contrary judicial/Fiscalía decisions remain visible; allegations remain attributed rather than converted into official criminal findings."
+  ],
+  "preservation": {
+    "prior_event_objects_unchanged": true,
+    "pre_existing_reader_content_preserved": true,
+    "prior_atom_entries_preserved": true,
+    "sitemap_route_locations_preserved": true,
+    "actor_cards_removed": false,
+    "source_files_removed_or_renamed": false
+  },
+  "privacy": {
+    "raw_private_sources_committed": false,
+    "private_source_locators_committed": false,
+    "unredacted_receipts_signatures_or_unnecessary_identifiers_committed": false,
+    "public_hashes_are_source_controls_not_private_access_tokens": true
+  },
+  "validation": {
+    "evidence": [
+      "Local institutional reconciliation and AGE projection deterministic checks",
+      "Nine October-cohort tests plus thirteen existing reconciliation tests",
+      "Repository preservation, publication integrity, audience, unitary, enterprise attribution and supervisory validators",
+      "Static bilingual history/XML/privacy/internal-link audit: 106 added internal links resolve"
+    ],
+    "rendered_qa": "OPEN — no Chromium/Chrome binary is available in the preparation runtime; no rendered verification is claimed. The integrator must inspect the affected routes in a browser-capable environment."
+  },
+  "publication_closeout": {
+    "pull_request": null,
+    "merge_sha": null,
+    "deployment_evidence": null,
+    "live_verification_evidence": null
+  },
+  "release_boundary": "Local preparation only. Publication, merge, deployment and exact live-byte verification remain separate integrator actions. This manifest is not a live, filing-service, legal-merits or deletion-safe declaration."
+}

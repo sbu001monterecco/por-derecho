@@ -80,3 +80,16 @@ Not permitted without new primary evidence:
 - `INSTITUTIONAL_ACTIONS_INTERVENCION_699645_20AUG2026.md`
 - `INSTITUTIONAL_ACTIONS_HACIENDA_COMISIONADO_2220_20AUG2026.md`
 - `ASSET_RECOVERY_AUTHORITY_MATRIX_21AUG2026.json`
+
+
+## 25 October 2026 source reconciliation and registered supplements
+
+This dated addendum preserves the earlier chronology. The Madrid documentary supplement was registered as **REGAGE26e00091804140** and the complementary CTBG 3929/2026 submission as **REGAGE26e00091804303**. The six 24–25 October registration events have separate immutable references **PD-SP-EVT-0600–0605** in the existing institutional communications register. Registration proves the stated presentation, not admission, incorporation, investigation opening or merits.
+
+The filed clarifications record recovery of five document categories after the morning submissions on 24 October. The current non-receipt account is corrected; historic availability, permissions and complete delivery remain open. They also identify a CSV-bearing occurrence of the October report, distinguish the 2025 consolidated criteria from the original 2022 criteria, and preserve the April decision, notification-opening certificate and June response as contrary or limiting evidence.
+
+The individual actilla proposes ownership at the end of the benefits-validity period. It does not transfer civil title, authorise occupation or damage, or establish the individual deadline and compliance. The Ministry entry of 7 June 2022 does not alone establish the first valid regional application. The original criteria exclude demolition costs; that does not prove those costs were subsidised, that assistance was paid, or that every earlier work was the assisted investment. The hearing invitation identifies a corporate Dyrecto channel, not an individual mandate or the later opposition. Laura Patricia Acosta Matos remains the canonical identity.
+
+The original filed complaint, its CTBG re-export, authored renderings and actual filed supplements retain separate binary identities. A different file fingerprint is not by itself proof of altered page content or fabrication. Earlier judicial/fiscal adverse decisions and the attribution limits of the 2018 and AEAT material remain part of the comparison.
+
+Controlled public input: `assets/data/institutional-communications-20261025.json`. Updated field map: `GC836_P06_EVIDENCE_AND_AUTHORITY_MATRIX_21AUG2026.json`. Reader reconciliation: [English](en/regional-incentives-gc836-p06/#october-2026-source-reconciliation) / [Español](es/incentivos-regionales-gc836-p06/#october-2026-source-reconciliation). Native receipts, annexes, private locators and protected material remain in controlled private custody.

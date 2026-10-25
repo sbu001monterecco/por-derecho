@@ -294,8 +294,8 @@
   },
   "material_updates": {
     "canonical_source": "assets/data/material-updates-v1.json",
-    "latest_material_date": "2026-09-18",
-    "repository_latest_material_date": "2026-09-18",
+    "latest_material_date": "2026-10-25",
+    "repository_latest_material_date": "2026-10-25",
     "last_live_verified_material_date": "2026-08-28",
     "languages": [
       "es",
@@ -305,7 +305,7 @@
       "/es/actualizaciones/",
       "/en/updates/"
     ],
-    "public_parity": "REPOSITORY_2026-09-18_PENDING_PUBLICATION_LAST_LIVE_VERIFIED_2026-08-28",
+    "public_parity": "REPOSITORY_2026-10-25_PENDING_PUBLICATION_LAST_LIVE_VERIFIED_2026-08-28",
     "latest_live_verified_publication": {
       "control_id": "PD-SP-AEAT-PINK-DILIGENCE-20260828-01",
       "state": "LIVE_VERIFIED",
@@ -321,27 +321,73 @@
       "manifest": "publication-manifests/aeat-pink-vigilancia-aduanera-20220406-publication-20260828.json"
     },
     "pending_publication": {
-      "control_id": "PD-CUATRECASAS-ETJ-DP748-20260918-01",
-      "state": "MERGED_AWAITING_PAGES_READBACK",
-      "material_date": "2026-09-18",
+      "control_id": "PD-MADRID-CTBG-REGISTERED-20261025",
+      "state": "PREPARED_SOURCE_VERIFIED_NOT_DEPLOYED",
+      "material_date": "2026-10-25",
       "routes": [
-        "/en/cuatrecasas-etj163-dp748-18-september-2026/",
-        "/es/cuatrecasas-etj163-dp748-18-septiembre-2026/",
-        "/en/updates/",
-        "/es/actualizaciones/"
+        "/es/incentivos-regionales-gc836-p06/",
+        "/en/regional-incentives-gc836-p06/",
+        "/es/ricpe-hnt-gc836-trazabilidad/",
+        "/en/ricpe-hnt-gc836-traceability/",
+        "/es/cadena-instrumentalizacion-ric-fondos-incentivos/",
+        "/en/institutionalisation-chain-ric-eu-incentives/",
+        "/es/registros-institucionales/",
+        "/en/institutional-records/",
+        "/es/registros-redsara-age-y-respuestas-autoridades/",
+        "/en/red-sara-age-filings-authority-responses/",
+        "/es/actualizaciones/",
+        "/en/updates/"
       ],
-      "rule": "Do not call the 18-Sep material live verified until a public GitHub Pages readback is observed.",
-      "controlling_pr": 1548,
-      "merge_sha": "cf73bd7cffd65ad08f48d3cc850b692fc17aec23",
-      "merged_to": "main"
-    }
+      "source_input": "assets/data/institutional-communications-20261025.json",
+      "source_main_at_preparation": "2d5d42b9e5bb408ae3d27cb8ad9d6b98b00b88d0",
+      "rule": "The receipts establish filing events only. Current repository preparation, merge, deployment and exact-route readback remain separate stages. Historical verified release records are retained and do not certify this update."
+    },
+    "pending_publication_history": [
+      {
+        "control_id": "PD-CUATRECASAS-ETJ-DP748-20260918-01",
+        "state": "MERGED_AWAITING_PAGES_READBACK",
+        "material_date": "2026-09-18",
+        "routes": [
+          "/en/cuatrecasas-etj163-dp748-18-september-2026/",
+          "/es/cuatrecasas-etj163-dp748-18-septiembre-2026/",
+          "/en/updates/",
+          "/es/actualizaciones/"
+        ],
+        "rule": "Do not call the 18-Sep material live verified until a public GitHub Pages readback is observed.",
+        "controlling_pr": 1548,
+        "merge_sha": "cf73bd7cffd65ad08f48d3cc850b692fc17aec23",
+        "merged_to": "main"
+      }
+    ]
   },
   "procedural_checkpoints": {
     "concurso": "Concurso 36/2012; LPB is the sole debtor and the proceeding does not absorb Matkator, CEXP, Aweswell, other owners or the whole hotel by association.",
     "calificacion_appeal": "RPL 2523/2025; the last located signed record scheduled deliberation, vote and decision for 4 June 2026. A later merits decision, service record and finality/remedy certificate remain not located in the controlled corpus.",
     "valencia": "ORD 1859/2023-9 is recorded for hearing on 28 January 2027 at 10:00, subject to any later signed superseding act.",
     "owner_network": "The AP 89/2014 seven-claimant-owner core and the wider Montelanza/Molina perimeter remain separate; PR #1016 contains a unique source-graded delta that must be rebuilt on current main rather than merged stale.",
-    "prescription_recovery": "The current recovery control requires claim-by-claim clocks and prohibits generic assertions that criminal proceedings suspend every civil or caducity period."
+    "prescription_recovery": "The current recovery control requires claim-by-claim clocks and prohibits generic assertions that criminal proceedings suspend every civil or caducity period.",
+    "madrid_ctbg_20261025": {
+      "control_id": "PD-MADRID-CTBG-REGISTERED-20261025",
+      "source": "assets/data/institutional-communications-20261025.json",
+      "madrid_initial_family": [
+        "REGAGE26e00091776746",
+        "REGAGE26e00091777235",
+        "REGAGE26e00091777533"
+      ],
+      "ctbg_initial": "REGAGE26e00091778502",
+      "madrid_supplement": "REGAGE26e00091804140",
+      "ctbg_supplement": "REGAGE26e00091804303",
+      "state": "REGISTERED_RECEIPT_CONTROLLED_NOT_ADMISSION_OR_MERITS",
+      "canonical_event_ids": [
+        "PD-SP-EVT-0600",
+        "PD-SP-EVT-0601",
+        "PD-SP-EVT-0602",
+        "PD-SP-EVT-0603",
+        "PD-SP-EVT-0604",
+        "PD-SP-EVT-0605"
+      ],
+      "contrary_and_correction_rule": "Read the 25 October clarifications together with the April-June access record, recovered documents, adverse judicial/fiscal decisions and retained binary variants."
+    }
   },
   "top_evidence_gaps": [
     "Signed later RPL 2523/2025 merits judgment or order, service record and finality/remedy certification",
