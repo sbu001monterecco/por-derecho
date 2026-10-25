@@ -15,7 +15,7 @@
     files:'Expedientes y referencias de Fiscalía', timeline:'Cronología vinculada', events:'eventos', noEvents:'No hay eventos que coincidan con los filtros.',
     outbound:'Salientes', inbound:'Entrantes', acts:'Actos/decisiones', judicial:'Procedimientos judiciales enlazados', gap:'Fuente siguiente necesaria',
     exact:'Identidad canónica exacta', unresolved:'Referencia no resuelta', chains:'Nueve cadenas prioritarias',
-    inside:'Dentro de procedimiento judicial', outside:'Expediente fiscal fuera del procedimiento judicial', bridge:'Puente entre expediente fiscal y procedimiento', support:'Referencia de apoyo', none:'Sin enlace a procedimiento',
+    inside:'Dentro de procedimiento judicial', publicAid:'Expediente administrativo de ayudas', publicAidContext:'Contexto administrativo de ayudas fuera de procedimiento judicial', outside:'Expediente fiscal fuera del procedimiento judicial', outsideFilter:'Fuera de procedimiento judicial', bridge:'Puente entre expediente fiscal y procedimiento', support:'Referencia de apoyo', none:'Sin enlace a procedimiento',
     details:'Qué prueba / qué no prueba', master:'Abrir fila maestra', map:'Abrir trazabilidad', chainEvents:'eventos relacionados'
   } : {
     load:'Loading the controlled interconnectivity projection…', error:'The interconnectivity projection could not be loaded.',
@@ -24,11 +24,16 @@
     files:'Fiscalía files and references', timeline:'Linked chronology', events:'events', noEvents:'No events match the current filters.',
     outbound:'Outbound', inbound:'Inbound', acts:'Acts/decisions', judicial:'Linked judicial proceedings', gap:'Next source needed',
     exact:'Exact canonical identity', unresolved:'Unresolved reference', chains:'Nine priority chains',
-    inside:'Inside judicial proceeding', outside:'Fiscalía file outside judicial proceeding', bridge:'Fiscalía-to-proceeding bridge', support:'Supporting reference', none:'No proceeding link',
+    inside:'Inside judicial proceeding', publicAid:'Administrative public-aid file', publicAidContext:'Administrative public-aid context outside judicial proceeding', outside:'Fiscalía file outside judicial proceeding', outsideFilter:'Outside judicial proceedings', bridge:'Fiscalía-to-proceeding bridge', support:'Supporting reference', none:'No proceeding link',
     details:'What it proves / does not prove', master:'Open master row', map:'Open trace', chainEvents:'related events'
   };
   const esc = (v) => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const scopeLabel = (s) => ({INSIDE_JUDICIAL_PROCEEDING:t.inside,OUTSIDE_JUDICIAL_PROCEEDING:t.outside,CROSS_FILE_BRIDGE:t.bridge,SUPPORT_REFERENCE_ONLY:t.support,NO_PROCEEDING_LINK:t.none}[s] || s);
+  const linkedContextLabel = (file) => file.record_type === 'PUBLIC_AID_FILE' ? t.publicAid : t.inside;
+  const eventScopeLabel = (event) => event.interconnectivity_scope === 'OUTSIDE_JUDICIAL_PROCEEDING'
+    && event.master_ids.length > 0
+    && event.master_ids.every(id => payload.by_master_id[id]?.record_type === 'PUBLIC_AID_FILE')
+      ? t.publicAidContext : scopeLabel(event.interconnectivity_scope);
   const routeToMaster = (id) => `${registerRoute.href}#record-${encodeURIComponent(id)}`;
   const routeToMap = (id) => `${mapRoute.href}#trace-proceeding=${encodeURIComponent(id)}`;
   let payload, masterById, selected = 'ALL';
@@ -48,7 +53,7 @@
       <section class="pd-mf-panel"><div class="pd-mf-controls">
         <label>${esc(t.search)}<input type="search" data-mf-search></label>
         <label>${esc(t.direction)}<select data-mf-direction><option value="">${esc(t.all)}</option><option>OUTBOUND_TO_INSTITUTION</option><option>INBOUND_FROM_INSTITUTION</option><option>INSTITUTION_TO_INSTITUTION</option><option>SELF_ARCHIVE_CONTROL</option><option>NON_SENT_DRAFT</option></select></label>
-        <label>${esc(t.scope)}<select data-mf-scope><option value="">${esc(t.all)}</option><option value="OUTSIDE_JUDICIAL_PROCEEDING">${esc(t.outside)}</option><option value="INSIDE_JUDICIAL_PROCEEDING">${esc(t.inside)}</option><option value="CROSS_FILE_BRIDGE">${esc(t.bridge)}</option><option value="SUPPORT_REFERENCE_ONLY">${esc(t.support)}</option><option value="NO_PROCEEDING_LINK">${esc(t.none)}</option></select></label>
+        <label>${esc(t.scope)}<select data-mf-scope><option value="">${esc(t.all)}</option><option value="OUTSIDE_JUDICIAL_PROCEEDING">${esc(t.outsideFilter)}</option><option value="INSIDE_JUDICIAL_PROCEEDING">${esc(t.inside)}</option><option value="CROSS_FILE_BRIDGE">${esc(t.bridge)}</option><option value="SUPPORT_REFERENCE_ONLY">${esc(t.support)}</option><option value="NO_PROCEEDING_LINK">${esc(t.none)}</option></select></label>
       </div></section>
       <div class="pd-mf-layout"><aside class="pd-mf-panel"><h2>${esc(t.files)}</h2><div class="pd-mf-files" data-mf-files></div></aside><section class="pd-mf-panel" data-mf-detail aria-live="polite"></section></div>
       <section class="pd-mf-panel" id="priority-chains"><p class="eyebrow">01–09</p><h2>${esc(t.chains)}</h2><div class="pd-mf-chains" data-mf-chains></div></section>`;
@@ -71,13 +76,13 @@
     const record=masterById[selected];
     if(!connection||!record) return null;
     const events=payload.events.filter(e=>connection.event_ids.includes(e.event_id));
-    return {master_id:selected,identity_state:'PROCEEDING_LINKED_VIEW',reference:record.Reference,office:record.Current_Custodian||record.Origin_Organ,status:record.Status,open_reference_gap:record.Open_Reference_Gap,event_ids:connection.event_ids,is_fiscalia_identity:false,linked_judicial_master_ids:[],counts:{outbound:events.filter(e=>e.direction==='OUTBOUND_TO_INSTITUTION').length,inbound:events.filter(e=>e.direction==='INBOUND_FROM_INSTITUTION').length,official_acts_or_decisions:events.filter(e=>e.record_type.startsWith('OFFICIAL_')).length,linked_judicial_proceedings:1}};
+    return {master_id:selected,identity_state:'PROCEEDING_LINKED_VIEW',record_type:connection.record_type,reference:record.Reference,office:record.Current_Custodian||record.Origin_Organ,status:record.Status,open_reference_gap:record.Open_Reference_Gap,event_ids:connection.event_ids,is_fiscalia_identity:false,linked_judicial_master_ids:[],counts:{outbound:events.filter(e=>e.direction==='OUTBOUND_TO_INSTITUTION').length,inbound:events.filter(e=>e.direction==='INBOUND_FROM_INSTITUTION').length,official_acts_or_decisions:events.filter(e=>e.record_type.startsWith('OFFICIAL_')).length,linked_judicial_proceedings:connection.record_type==='PUBLIC_AID_FILE'?0:1}};
   }
   function renderFiles(){
     const files=matchingFiles();
     const allCount=payload.events.length;
     const external=currentSelection();
-    const externalButton=external&&!external.is_fiscalia_identity?`<button class="pd-mf-file" data-file="${esc(external.master_id)}" aria-current="true"><span class="pd-mf-count">${external.event_ids.length}</span><strong>${esc(external.master_id)} · ${esc(external.reference)}</strong><small>${esc(t.inside)}</small></button>`:'';
+    const externalButton=external&&!external.is_fiscalia_identity?`<button class="pd-mf-file" data-file="${esc(external.master_id)}" aria-current="true"><span class="pd-mf-count">${external.event_ids.length}</span><strong>${esc(external.master_id)} · ${esc(external.reference)}</strong><small>${esc(linkedContextLabel(external))}</small></button>`:'';
     root.querySelector('[data-mf-files]').innerHTML=`<button class="pd-mf-file" data-file="ALL" aria-current="${selected==='ALL'}"><span class="pd-mf-count">${allCount}</span><strong>${esc(t.all)}</strong><small>${esc(t.timeline)}</small></button>${externalButton}`+files.map(f=>`<button class="pd-mf-file" data-file="${esc(f.master_id)}" data-state="${esc(f.identity_state)}" aria-current="${selected===f.master_id}"><span class="pd-mf-count">${f.counts.events}</span><strong>${esc(f.master_id)} · ${esc(f.reference)}</strong><small>${esc(f.office)}</small></button>`).join('');
     root.querySelectorAll('[data-file]').forEach(btn=>btn.addEventListener('click',()=>{selected=btn.dataset.file;history.replaceState(null,'',selected==='ALL'?'#file=ALL':`#file=${encodeURIComponent(selected)}`);render();}));
   }
@@ -91,14 +96,14 @@
   function eventCard(e){
     const refs=e.master_ids.map(id=>`<a href="${esc(routeToMaster(id))}">${esc(id)}</a>`).join('');
     const proof=[...(e.proves||[]),...(e.does_not_prove||[]).map(x=>`${lang==='es'?'No prueba':'Does not prove'}: ${x}`)];
-    return `<article class="pd-mf-event" data-event-id="${esc(e.event_id)}" data-direction="${esc(e.direction)}"><header><strong>${esc(e.event_date||'—')} · ${esc(e.record_type)}</strong><span class="pd-mf-code">${esc(e.event_id)}</span></header><div class="pd-mf-badges"><span class="pd-mf-badge">${esc(e.direction)}</span><span class="pd-mf-badge">${esc(scopeLabel(e.interconnectivity_scope))}</span><span class="pd-mf-badge">${esc(e.allocation_state)}</span></div><p><strong>${esc(e.official_reference||e.office||'—')}</strong>${e.public_summary?` — ${esc(e.public_summary)}`:''}</p>${refs?`<p class="pd-mf-links">${refs}</p>`:''}<details><summary>${esc(t.details)}</summary>${proof.map(x=>`<p>${esc(x)}</p>`).join('')}<p class="pd-mf-muted">${esc(e.source.status||'')}</p></details></article>`;
+    return `<article class="pd-mf-event" data-event-id="${esc(e.event_id)}" data-direction="${esc(e.direction)}"><header><strong>${esc(e.event_date||'—')} · ${esc(e.record_type)}</strong><span class="pd-mf-code">${esc(e.event_id)}</span></header><div class="pd-mf-badges"><span class="pd-mf-badge">${esc(e.direction)}</span><span class="pd-mf-badge">${esc(eventScopeLabel(e))}</span><span class="pd-mf-badge">${esc(e.allocation_state)}</span></div><p><strong>${esc(e.official_reference||e.office||'—')}</strong>${e.public_summary?` — ${esc(e.public_summary)}`:''}</p>${refs?`<p class="pd-mf-links">${refs}</p>`:''}<details><summary>${esc(t.details)}</summary>${proof.map(x=>`<p>${esc(x)}</p>`).join('')}<p class="pd-mf-muted">${esc(e.source.status||'')}</p></details></article>`;
   }
   function renderDetail(){
     let file=currentSelection();
     if(selected!=='ALL'&&!file){selected='ALL';file=null;}
     const events=filteredEvents(file);
     const detail=root.querySelector('[data-mf-detail]');
-    const head=file?`<div class="pd-mf-detail-head"><div><p class="eyebrow">${esc(file.is_fiscalia_identity?(file.identity_state==='EXACT_CANONICAL'?t.exact:t.unresolved):t.inside)}</p><h2><span class="pd-mf-code">${esc(file.master_id)}</span> · ${esc(file.reference)}</h2><p>${esc(file.office)}</p></div><div><a class="pd-mf-button" href="${esc(routeToMaster(file.master_id))}">${esc(t.master)}</a></div></div><div class="pd-mf-badges"><span class="pd-mf-badge">${file.counts.outbound} ${esc(t.outbound)}</span><span class="pd-mf-badge">${file.counts.inbound} ${esc(t.inbound)}</span><span class="pd-mf-badge">${file.counts.official_acts_or_decisions} ${esc(t.acts)}</span><span class="pd-mf-badge">${file.counts.linked_judicial_proceedings} ${esc(t.judicial)}</span></div><p>${esc(file.status)}</p>${file.open_reference_gap?`<div class="pd-mf-gap"><strong>${esc(t.gap)}:</strong> ${esc(file.open_reference_gap)}</div>`:''}${file.linked_judicial_master_ids.length?`<p class="pd-mf-links">${file.linked_judicial_master_ids.map(id=>`<a href="${esc(routeToMap(id))}">${esc(id)} · ${esc(masterById[id]?.Reference||'')}</a>`).join(' ')}</p>`:''}`:`<p class="eyebrow">${esc(t.all)}</p><h2>${esc(t.timeline)}</h2><p class="pd-mf-muted">${esc(payload.boundaries[lang])}</p>`;
+    const head=file?`<div class="pd-mf-detail-head"><div><p class="eyebrow">${esc(file.is_fiscalia_identity?(file.identity_state==='EXACT_CANONICAL'?t.exact:t.unresolved):linkedContextLabel(file))}</p><h2><span class="pd-mf-code">${esc(file.master_id)}</span> · ${esc(file.reference)}</h2><p>${esc(file.office)}</p></div><div><a class="pd-mf-button" href="${esc(routeToMaster(file.master_id))}">${esc(t.master)}</a></div></div><div class="pd-mf-badges"><span class="pd-mf-badge">${file.counts.outbound} ${esc(t.outbound)}</span><span class="pd-mf-badge">${file.counts.inbound} ${esc(t.inbound)}</span><span class="pd-mf-badge">${file.counts.official_acts_or_decisions} ${esc(t.acts)}</span><span class="pd-mf-badge">${file.counts.linked_judicial_proceedings} ${esc(t.judicial)}</span></div><p>${esc(file.status)}</p>${file.open_reference_gap?`<div class="pd-mf-gap"><strong>${esc(t.gap)}:</strong> ${esc(file.open_reference_gap)}</div>`:''}${file.linked_judicial_master_ids.length?`<p class="pd-mf-links">${file.linked_judicial_master_ids.map(id=>`<a href="${esc(routeToMap(id))}">${esc(id)} · ${esc(masterById[id]?.Reference||'')}</a>`).join(' ')}</p>`:''}`:`<p class="eyebrow">${esc(t.all)}</p><h2>${esc(t.timeline)}</h2><p class="pd-mf-muted">${esc(payload.boundaries[lang])}</p>`;
     detail.innerHTML=`${head}<h3>${events.length} ${esc(t.events)}</h3><div class="pd-mf-events">${events.length?events.map(eventCard).join(''):`<p class="pd-mf-empty">${esc(t.noEvents)}</p>`}</div>`;
   }
   function renderChains(){

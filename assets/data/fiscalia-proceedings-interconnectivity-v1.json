@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
   "dataset": "fiscalia-proceedings-interconnectivity-v1",
-  "control_date": "2026-09-03",
+  "control_date": "2026-10-25",
   "status": "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION",
   "canonical_sources": {
     "communications_register": "assets/data/institutional-communications-register-v1.json",
-    "communications_sha256": "c29f35bf9ead9bfe51e5ce4475e846d2e6d26512bb55a4aa73ea5482ce2a4095",
+    "communications_sha256": "59dfe3f0a5652d151dc1355b6c00d23801d87442c02360a98610d4f35bf2f374",
     "proceedings_master": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
     "proceedings_master_sha256": "bd2f641d0ee9599dd36c2fdbc57d6093c900f2dd84c9b289b67a036e3b863398",
     "public_proceedings_projection": "assets/data/proceedings-master-public-v1.json",
@@ -16,12 +16,54 @@
     "en": "A link records only the proposition stated by its relationship type and cited sources. Registration is not delivery beyond the receipt, receipt is not examination, chronology is not causation, and institutional possession is not personal knowledge, agreement, intent, wrongdoing or liability.",
     "es": "Un enlace registra únicamente la proposición indicada por su tipo de relación y fuentes citadas. Registro no equivale a entrega más allá del justificante, recepción no equivale a examen, cronología no equivale a causalidad y posesión institucional no equivale a conocimiento personal, acuerdo, intención, ilicitud o responsabilidad."
   },
+  "october_cohort_control": {
+    "control_id": "PD-MADRID-CTBG-REGISTERED-20261025",
+    "source_descriptor": "assets/data/institutional-communications-20261025.json",
+    "source_descriptor_sha256": "191d22fd50d5409f963e0ffac995c4a05e4b18e61abd923c4de522ae940364a0",
+    "event_ids": [
+      "PD-SP-EVT-0600",
+      "PD-SP-EVT-0601",
+      "PD-SP-EVT-0602",
+      "PD-SP-EVT-0603",
+      "PD-SP-EVT-0604",
+      "PD-SP-EVT-0605"
+    ],
+    "official_references": [
+      "REGAGE26e00091776746",
+      "REGAGE26e00091777235",
+      "REGAGE26e00091777533",
+      "REGAGE26e00091778502",
+      "REGAGE26e00091804140",
+      "REGAGE26e00091804303"
+    ],
+    "proceeding_mapping_state": "FISCALIA_AND_TRANSPARENCY_PROCEEDING_ALLOCATION_UNRESOLVED",
+    "context_master_ids": [
+      "NAT-AID-001"
+    ],
+    "unresolved_matter_reference_literals": [
+      "AC2000001007594",
+      "CTBG 3929/2026",
+      "PD-CTBG-3929-20261022-002",
+      "PD-CTBG-3929-20261022-002/COMPLEMENTO-20261025-001",
+      "PD-MAD-FP-20261022-001",
+      "PD-MAD-FP-20261022-001/SUPPLEMENT-20261025-001"
+    ],
+    "boundary_en": "The receipt and project document references do not allocate a canonical Fiscalía or transparency proceeding identity. Any exact public-aid file link is context only; it does not establish incorporation, joinder, examination or a prosecution file number.",
+    "boundary_es": "El justificante y las referencias documentales del proyecto no asignan una identidad canónica de procedimiento de Fiscalía ni de transparencia. Todo enlace exacto al expediente de ayudas es solo contextual; no acredita incorporación, acumulación, examen ni número de expediente fiscal."
+  },
   "coverage": {
-    "communication_events": 326,
-    "matter_linked_events": 141,
-    "proceeding_linked_events": 136,
+    "communication_events": 332,
+    "matter_linked_events": 147,
+    "legacy_communication_events": 326,
+    "legacy_matter_linked_events": 141,
+    "legacy_proceeding_linked_events": 136,
+    "october_registered_events": 6,
+    "october_matter_linked_events": 6,
+    "october_context_linked_events": 2,
+    "unresolved_proceeding_allocation_events": 6,
+    "proceeding_linked_events": 138,
     "support_reference_only_events": 2,
-    "event_proceeding_edges": 164,
+    "event_proceeding_edges": 166,
     "event_event_edges": 84,
     "fiscalia_exact_files": 23,
     "fiscalia_unresolved_references": 3,
@@ -33,16 +75,24 @@
       "SUPPORT_REFERENCE_ONLY": 2,
       "UNALLOCATED_FORMAL_REGISTRATION": 77,
       "UNALLOCATED_OFFICIAL_EVENT": 4,
-      "UNALLOCATED_TRANSPORT": 99
+      "UNALLOCATED_TRANSPORT": 99,
+      "UNRESOLVED_PROCEEDING_ALLOCATION": 6
     },
     "scope_counts": {
       "CROSS_FILE_BRIDGE": 5,
       "INSIDE_JUDICIAL_PROCEEDING": 23,
       "NO_PROCEEDING_LINK": 185,
-      "OUTSIDE_JUDICIAL_PROCEEDING": 108,
-      "SUPPORT_REFERENCE_ONLY": 5
+      "OUTSIDE_JUDICIAL_PROCEEDING": 110,
+      "SUPPORT_REFERENCE_ONLY": 9
     },
-    "unresolved_matter_reference_literals": []
+    "unresolved_matter_reference_literals": [
+      "AC2000001007594",
+      "CTBG 3929/2026",
+      "PD-CTBG-3929-20261022-002",
+      "PD-CTBG-3929-20261022-002/COMPLEMENTO-20261025-001",
+      "PD-MAD-FP-20261022-001",
+      "PD-MAD-FP-20261022-001/SUPPLEMENT-20261025-001"
+    ]
   },
   "events": [
     {
@@ -5377,6 +5427,305 @@
       "master_ids": [],
       "supporting_references": [],
       "unresolved_matter_references": []
+    },
+    {
+      "event_id": "PD-SP-EVT-0600",
+      "event_date": "2026-10-24",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Fiscalía Provincial de Madrid",
+      "official_reference": "REGAGE26e00091776746",
+      "matter_references": [
+        "PD-MAD-FP-20261022-001",
+        "CTBG 3929/2026",
+        "GC/836/P06"
+      ],
+      "public_summary": "Registered REGAGE26e00091776746: Initial Madrid criminal complaint registration, first part of one three-entry documentary delivery family.",
+      "proof_level": "REGISTRATION_RECEIPT_READ_COPY_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00091776746: Initial Madrid criminal complaint registration, first part of one three-entry documentary delivery family.",
+        "The retained receipt records the stated presentation and registration timestamps and destination.",
+        "This event is checked against a compiled receipt read copy; its control hash is not asserted to be the native receipt hash."
+      ],
+      "does_not_prove": [
+        "Registration establishes the recorded presentation and attachment inventory only. The merits and subsequent institutional treatment require separate sources.",
+        "Registration does not establish downstream delivery, admission, incorporation, examination, opening of an investigation, criminal responsibility or merits.",
+        "No fresh byte-level verification of this receipt's submitted attachments is claimed by this descriptor.",
+        "The receipt and project document references do not allocate a canonical Fiscalía or transparency proceeding identity. Any exact public-aid file link is context only; it does not establish incorporation, joinder, examination or a prosecution file number.",
+        "El justificante y las referencias documentales del proyecto no asignan una identidad canónica de procedimiento de Fiscalía ni de transparencia. Todo enlace exacto al expediente de ayudas es solo contextual; no acredita incorporación, acumulación, examen ni número de expediente fiscal."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/institutional-communications-20261025.json",
+        "status": "RECEIPT_READ_COPY_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "UNRESOLVED_PROCEEDING_ALLOCATION",
+      "interconnectivity_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "NAT-AID-001"
+      ],
+      "supporting_references": [],
+      "unresolved_matter_references": [
+        "PD-MAD-FP-20261022-001",
+        "CTBG 3929/2026"
+      ],
+      "proceeding_mapping_state": "FISCALIA_AND_TRANSPARENCY_PROCEEDING_ALLOCATION_UNRESOLVED",
+      "mapping_boundary_en": "The receipt and project document references do not allocate a canonical Fiscalía or transparency proceeding identity. Any exact public-aid file link is context only; it does not establish incorporation, joinder, examination or a prosecution file number.",
+      "mapping_boundary_es": "El justificante y las referencias documentales del proyecto no asignan una identidad canónica de procedimiento de Fiscalía ni de transparencia. Todo enlace exacto al expediente de ayudas es solo contextual; no acredita incorporación, acumulación, examen ni número de expediente fiscal."
+    },
+    {
+      "event_id": "PD-SP-EVT-0601",
+      "event_date": "2026-10-24",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Fiscalía Provincial de Madrid",
+      "official_reference": "REGAGE26e00091777235",
+      "matter_references": [
+        "PD-MAD-FP-20261022-001",
+        "REGAGE26e00091776746"
+      ],
+      "public_summary": "Registered REGAGE26e00091777235: Second documentary delivery continuing the original Madrid complaint; not a distinct complaint or object.",
+      "proof_level": "REGISTRATION_RECEIPT_READ_COPY_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00091777235: Second documentary delivery continuing the original Madrid complaint; not a distinct complaint or object.",
+        "The retained receipt records the stated presentation and registration timestamps and destination.",
+        "This event is checked against a compiled receipt read copy; its control hash is not asserted to be the native receipt hash."
+      ],
+      "does_not_prove": [
+        "Registration establishes the recorded presentation and attachment inventory only. The merits and subsequent institutional treatment require separate sources.",
+        "Registration does not establish downstream delivery, admission, incorporation, examination, opening of an investigation, criminal responsibility or merits.",
+        "No fresh byte-level verification of this receipt's submitted attachments is claimed by this descriptor.",
+        "The receipt and project document references do not allocate a canonical Fiscalía or transparency proceeding identity. Any exact public-aid file link is context only; it does not establish incorporation, joinder, examination or a prosecution file number.",
+        "El justificante y las referencias documentales del proyecto no asignan una identidad canónica de procedimiento de Fiscalía ni de transparencia. Todo enlace exacto al expediente de ayudas es solo contextual; no acredita incorporación, acumulación, examen ni número de expediente fiscal."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/institutional-communications-20261025.json",
+        "status": "RECEIPT_READ_COPY_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "UNRESOLVED_PROCEEDING_ALLOCATION",
+      "interconnectivity_scope": "SUPPORT_REFERENCE_ONLY",
+      "master_ids": [],
+      "supporting_references": [
+        "REGAGE26e00091776746"
+      ],
+      "unresolved_matter_references": [
+        "PD-MAD-FP-20261022-001"
+      ],
+      "proceeding_mapping_state": "FISCALIA_AND_TRANSPARENCY_PROCEEDING_ALLOCATION_UNRESOLVED",
+      "mapping_boundary_en": "The receipt and project document references do not allocate a canonical Fiscalía or transparency proceeding identity. Any exact public-aid file link is context only; it does not establish incorporation, joinder, examination or a prosecution file number.",
+      "mapping_boundary_es": "El justificante y las referencias documentales del proyecto no asignan una identidad canónica de procedimiento de Fiscalía ni de transparencia. Todo enlace exacto al expediente de ayudas es solo contextual; no acredita incorporación, acumulación, examen ni número de expediente fiscal."
+    },
+    {
+      "event_id": "PD-SP-EVT-0602",
+      "event_date": "2026-10-24",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Fiscalía Provincial de Madrid",
+      "official_reference": "REGAGE26e00091777533",
+      "matter_references": [
+        "PD-MAD-FP-20261022-001",
+        "REGAGE26e00091776746",
+        "REGAGE26e00091777235"
+      ],
+      "public_summary": "Registered REGAGE26e00091777533: Third documentary delivery completing the announced base annex of the original Madrid complaint.",
+      "proof_level": "REGISTRATION_RECEIPT_READ_COPY_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00091777533: Third documentary delivery completing the announced base annex of the original Madrid complaint.",
+        "The retained receipt records the stated presentation and registration timestamps and destination.",
+        "This event is checked against a compiled receipt read copy; its control hash is not asserted to be the native receipt hash."
+      ],
+      "does_not_prove": [
+        "Registration establishes the recorded presentation and attachment inventory only. The merits and subsequent institutional treatment require separate sources.",
+        "Registration does not establish downstream delivery, admission, incorporation, examination, opening of an investigation, criminal responsibility or merits.",
+        "No fresh byte-level verification of this receipt's submitted attachments is claimed by this descriptor.",
+        "The receipt and project document references do not allocate a canonical Fiscalía or transparency proceeding identity. Any exact public-aid file link is context only; it does not establish incorporation, joinder, examination or a prosecution file number.",
+        "El justificante y las referencias documentales del proyecto no asignan una identidad canónica de procedimiento de Fiscalía ni de transparencia. Todo enlace exacto al expediente de ayudas es solo contextual; no acredita incorporación, acumulación, examen ni número de expediente fiscal."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/institutional-communications-20261025.json",
+        "status": "RECEIPT_READ_COPY_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "UNRESOLVED_PROCEEDING_ALLOCATION",
+      "interconnectivity_scope": "SUPPORT_REFERENCE_ONLY",
+      "master_ids": [],
+      "supporting_references": [
+        "REGAGE26e00091776746",
+        "REGAGE26e00091777235"
+      ],
+      "unresolved_matter_references": [
+        "PD-MAD-FP-20261022-001"
+      ],
+      "proceeding_mapping_state": "FISCALIA_AND_TRANSPARENCY_PROCEEDING_ALLOCATION_UNRESOLVED",
+      "mapping_boundary_en": "The receipt and project document references do not allocate a canonical Fiscalía or transparency proceeding identity. Any exact public-aid file link is context only; it does not establish incorporation, joinder, examination or a prosecution file number.",
+      "mapping_boundary_es": "El justificante y las referencias documentales del proyecto no asignan una identidad canónica de procedimiento de Fiscalía ni de transparencia. Todo enlace exacto al expediente de ayudas es solo contextual; no acredita incorporación, acumulación, examen ni número de expediente fiscal."
+    },
+    {
+      "event_id": "PD-SP-EVT-0603",
+      "event_date": "2026-10-24",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Autoridad Administrativa Independiente Consejo de Transparencia y Buen Gobierno",
+      "official_reference": "REGAGE26e00091778502",
+      "matter_references": [
+        "PD-CTBG-3929-20261022-002",
+        "CTBG 3929/2026",
+        "AC2000001007594",
+        "PD-MAD-FP-20261022-001",
+        "REGAGE26e00091776746",
+        "REGAGE26e00091777235",
+        "REGAGE26e00091777533"
+      ],
+      "public_summary": "Registered REGAGE26e00091778502: CTBG hearing response maintaining reclamation 3929/2026 and NO DESISTO, accompanied by the Madrid complaint copy and registry receipts. The copy-identity description is qualified by the later 25 October supplement.",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00091778502: CTBG hearing response maintaining reclamation 3929/2026 and NO DESISTO, accompanied by the Madrid complaint copy and registry receipts. The copy-identity description is qualified by the later 25 October supplement.",
+        "The retained receipt records the stated presentation and registration timestamps and destination.",
+        "The controlling source is a native registry receipt."
+      ],
+      "does_not_prove": [
+        "Registration establishes the recorded presentation and attachment inventory only. The merits and subsequent institutional treatment require separate sources.",
+        "Registration does not establish downstream delivery, admission, incorporation, examination, opening of an investigation, criminal responsibility or merits.",
+        "No fresh byte-level verification of this receipt's submitted attachments is claimed by this descriptor.",
+        "The receipt and project document references do not allocate a canonical Fiscalía or transparency proceeding identity. Any exact public-aid file link is context only; it does not establish incorporation, joinder, examination or a prosecution file number.",
+        "El justificante y las referencias documentales del proyecto no asignan una identidad canónica de procedimiento de Fiscalía ni de transparencia. Todo enlace exacto al expediente de ayudas es solo contextual; no acredita incorporación, acumulación, examen ni número de expediente fiscal."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/institutional-communications-20261025.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "UNRESOLVED_PROCEEDING_ALLOCATION",
+      "interconnectivity_scope": "SUPPORT_REFERENCE_ONLY",
+      "master_ids": [],
+      "supporting_references": [
+        "REGAGE26e00091776746",
+        "REGAGE26e00091777235",
+        "REGAGE26e00091777533"
+      ],
+      "unresolved_matter_references": [
+        "PD-CTBG-3929-20261022-002",
+        "CTBG 3929/2026",
+        "AC2000001007594",
+        "PD-MAD-FP-20261022-001"
+      ],
+      "proceeding_mapping_state": "FISCALIA_AND_TRANSPARENCY_PROCEEDING_ALLOCATION_UNRESOLVED",
+      "mapping_boundary_en": "The receipt and project document references do not allocate a canonical Fiscalía or transparency proceeding identity. Any exact public-aid file link is context only; it does not establish incorporation, joinder, examination or a prosecution file number.",
+      "mapping_boundary_es": "El justificante y las referencias documentales del proyecto no asignan una identidad canónica de procedimiento de Fiscalía ni de transparencia. Todo enlace exacto al expediente de ayudas es solo contextual; no acredita incorporación, acumulación, examen ni número de expediente fiscal."
+    },
+    {
+      "event_id": "PD-SP-EVT-0604",
+      "event_date": "2026-10-25",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Fiscalía Provincial de Madrid",
+      "official_reference": "REGAGE26e00091804140",
+      "matter_references": [
+        "PD-MAD-FP-20261022-001",
+        "PD-MAD-FP-20261022-001/SUPPLEMENT-20261025-001",
+        "REGAGE26e00091776746",
+        "REGAGE26e00091777235",
+        "REGAGE26e00091777533",
+        "CTBG 3929/2026",
+        "GC/836/P06"
+      ],
+      "public_summary": "Registered REGAGE26e00091804140: Documentary supplement and precisions to the existing Madrid complaint, with a four-page pleading and a 131-page annex containing 15 complete documents; both attachment fingerprints match retained submitted files. The party maintains source-supported allegations while disclosing corrections and contrary evidence.",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00091804140: Documentary supplement and precisions to the existing Madrid complaint, with a four-page pleading and a 131-page annex containing 15 complete documents; both attachment fingerprints match retained submitted files. The party maintains source-supported allegations while disclosing corrections and contrary evidence.",
+        "The retained receipt records the stated presentation and registration timestamps and destination.",
+        "The controlling source is a native registry receipt.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "does_not_prove": [
+        "Registration establishes the recorded presentation and attachment inventory only. The merits and subsequent institutional treatment require separate sources.",
+        "Registration does not establish downstream delivery, admission, incorporation, examination, opening of an investigation, criminal responsibility or merits.",
+        "The receipt and project document references do not allocate a canonical Fiscalía or transparency proceeding identity. Any exact public-aid file link is context only; it does not establish incorporation, joinder, examination or a prosecution file number.",
+        "El justificante y las referencias documentales del proyecto no asignan una identidad canónica de procedimiento de Fiscalía ni de transparencia. Todo enlace exacto al expediente de ayudas es solo contextual; no acredita incorporación, acumulación, examen ni número de expediente fiscal."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/institutional-communications-20261025.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "UNRESOLVED_PROCEEDING_ALLOCATION",
+      "interconnectivity_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "master_ids": [
+        "NAT-AID-001"
+      ],
+      "supporting_references": [
+        "REGAGE26e00091776746",
+        "REGAGE26e00091777235",
+        "REGAGE26e00091777533"
+      ],
+      "unresolved_matter_references": [
+        "PD-MAD-FP-20261022-001",
+        "PD-MAD-FP-20261022-001/SUPPLEMENT-20261025-001",
+        "CTBG 3929/2026"
+      ],
+      "proceeding_mapping_state": "FISCALIA_AND_TRANSPARENCY_PROCEEDING_ALLOCATION_UNRESOLVED",
+      "mapping_boundary_en": "The receipt and project document references do not allocate a canonical Fiscalía or transparency proceeding identity. Any exact public-aid file link is context only; it does not establish incorporation, joinder, examination or a prosecution file number.",
+      "mapping_boundary_es": "El justificante y las referencias documentales del proyecto no asignan una identidad canónica de procedimiento de Fiscalía ni de transparencia. Todo enlace exacto al expediente de ayudas es solo contextual; no acredita incorporación, acumulación, examen ni número de expediente fiscal."
+    },
+    {
+      "event_id": "PD-SP-EVT-0605",
+      "event_date": "2026-10-25",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "record_type": "REGISTRATION_RECEIPT",
+      "channel": "REGAGE",
+      "layer": "FORMAL_REGISTRATION",
+      "office": "Autoridad Administrativa Independiente Consejo de Transparencia y Buen Gobierno",
+      "official_reference": "REGAGE26e00091804303",
+      "matter_references": [
+        "PD-CTBG-3929-20261022-002",
+        "PD-CTBG-3929-20261022-002/COMPLEMENTO-20261025-001",
+        "CTBG 3929/2026",
+        "AC2000001007594",
+        "REGAGE26e00091778502",
+        "REGAGE26e00091804140",
+        "PD-MAD-FP-20261022-001"
+      ],
+      "public_summary": "Registered REGAGE26e00091804303: Supplementary CTBG hearing response and later-obtained documentary material. All four listed attachment fingerprints match the retained submitted files, including the common 131-page annex and Madrid supplement receipt. The submission maintains NO DESISTO and the independent access procedure.",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "Registered REGAGE26e00091804303: Supplementary CTBG hearing response and later-obtained documentary material. All four listed attachment fingerprints match the retained submitted files, including the common 131-page annex and Madrid supplement receipt. The submission maintains NO DESISTO and the independent access procedure.",
+        "The retained receipt records the stated presentation and registration timestamps and destination.",
+        "The controlling source is a native registry receipt.",
+        "The listed attachment fingerprints match the retained submitted files."
+      ],
+      "does_not_prove": [
+        "Registration establishes the recorded presentation and attachment inventory only. The merits and subsequent institutional treatment require separate sources.",
+        "Registration does not establish downstream delivery, admission, incorporation, examination, opening of an investigation, criminal responsibility or merits.",
+        "The receipt and project document references do not allocate a canonical Fiscalía or transparency proceeding identity. Any exact public-aid file link is context only; it does not establish incorporation, joinder, examination or a prosecution file number.",
+        "El justificante y las referencias documentales del proyecto no asignan una identidad canónica de procedimiento de Fiscalía ni de transparencia. Todo enlace exacto al expediente de ayudas es solo contextual; no acredita incorporación, acumulación, examen ni número de expediente fiscal."
+      ],
+      "source": {
+        "repository_anchor": "assets/data/institutional-communications-20261025.json",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "allocation_state": "UNRESOLVED_PROCEEDING_ALLOCATION",
+      "interconnectivity_scope": "SUPPORT_REFERENCE_ONLY",
+      "master_ids": [],
+      "supporting_references": [
+        "REGAGE26e00091778502",
+        "REGAGE26e00091804140"
+      ],
+      "unresolved_matter_references": [
+        "PD-CTBG-3929-20261022-002",
+        "PD-CTBG-3929-20261022-002/COMPLEMENTO-20261025-001",
+        "CTBG 3929/2026",
+        "AC2000001007594",
+        "PD-MAD-FP-20261022-001"
+      ],
+      "proceeding_mapping_state": "FISCALIA_AND_TRANSPARENCY_PROCEEDING_ALLOCATION_UNRESOLVED",
+      "mapping_boundary_en": "The receipt and project document references do not allocate a canonical Fiscalía or transparency proceeding identity. Any exact public-aid file link is context only; it does not establish incorporation, joinder, examination or a prosecution file number.",
+      "mapping_boundary_es": "El justificante y las referencias documentales del proyecto no asignan una identidad canónica de procedimiento de Fiscalía ni de transparencia. Todo enlace exacto al expediente de ayudas es solo contextual; no acredita incorporación, acumulación, examen ni número de expediente fiscal."
     },
     {
       "event_id": "PD-SP-EVT-1001",
@@ -11540,6 +11889,34 @@
       "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
     },
     {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0600-NAT-AID-001",
+      "event_id": "PD-SP-EVT-0600",
+      "master_id": "NAT-AID-001",
+      "reference_literals": [
+        "GC/836/P06"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
+      "edge_id": "MF-EDGE-PD-SP-EVT-0604-NAT-AID-001",
+      "event_id": "PD-SP-EVT-0604",
+      "master_id": "NAT-AID-001",
+      "reference_literals": [
+        "GC/836/P06"
+      ],
+      "match_method": "EXACT_NORMALISED_REFERENCE_OR_CONTROLLED_OVERRIDE",
+      "relationship_type": "SUBMISSION_REFERENCES_PROCEEDING",
+      "relationship_strength": "CONTEXT_OR_CITATION",
+      "operational_scope": "OUTSIDE_JUDICIAL_PROCEEDING",
+      "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
+      "boundary_es": "El enlace prueba únicamente que este evento identifica la referencia canónica en la función indicada."
+    },
+    {
       "edge_id": "MF-EDGE-PD-SP-EVT-1012-GC-FIS-016",
       "event_id": "PD-SP-EVT-1012",
       "master_id": "GC-FIS-016",
@@ -14219,6 +14596,19 @@
       "context_edge_count": 0,
       "fiscalia_route_en": "/en/public-prosecution-communications-proceedings/#file=MAD-AN-CRI-003",
       "fiscalia_route_es": "/es/fiscalia-comunicaciones-procedimientos/#file=MAD-AN-CRI-003"
+    },
+    "NAT-AID-001": {
+      "reference": "GC/836/P06",
+      "record_type": "PUBLIC_AID_FILE",
+      "event_ids": [
+        "PD-SP-EVT-0600",
+        "PD-SP-EVT-0604"
+      ],
+      "event_count": 2,
+      "direct_edge_count": 0,
+      "context_edge_count": 2,
+      "fiscalia_route_en": "/en/public-prosecution-communications-proceedings/#file=NAT-AID-001",
+      "fiscalia_route_es": "/es/fiscalia-comunicaciones-procedimientos/#file=NAT-AID-001"
     },
     "NAT-FIS-004": {
       "reference": "E.G. 745/2026",

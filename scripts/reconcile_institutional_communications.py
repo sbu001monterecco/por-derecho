@@ -1471,6 +1471,11 @@ KEY_EVENTS.extend(load_completed_filing_events(REPO_ROOT, RECEIPT_BOUNDARY))
 from prepare_platform_incibe_20260925 import load_events as load_platform_incibe_events
 KEY_EVENTS.extend(load_platform_incibe_events(REPO_ROOT))
 
+# The finite October receipt descriptors preserve the source/read-copy and
+# presentation/registration distinctions without modifying older cohorts.
+from load_madrid_ctbg_filings_20261025 import load_filing_events as load_october_filing_events
+KEY_EVENTS.extend(load_october_filing_events(REPO_ROOT, RECEIPT_BOUNDARY))
+
 
 def _existing_receipt_ids(register: dict[str, Any] | None) -> dict[str, str]:
     if not register:
@@ -1764,7 +1769,7 @@ def reconcile_register(
     register["denominator_control"]["mailbox_transport_events"] = len(mailbox_events)
     register["denominator_control"]["event_rows_total"] = len(register["events"])
     register["source_controls"]["mailbox_index_sha256"] = mailbox_index_sha256
-    register["control_date"] = "2026-09-25" if any(e.get("source_key", "").split(":")[0] == "PD-CPA-20260925-07" for e in key_events) else ("2026-09-24" if supplemental_events else "2026-09-21")
+    register["control_date"] = "2026-10-25" if any(str(e.get("source_key", "")).startswith("REGISTERED-20261025:") for e in key_events) else ("2026-09-25" if any(e.get("source_key", "").split(":")[0] == "PD-CPA-20260925-07" for e in key_events) else ("2026-09-24" if supplemental_events else "2026-09-21"))
     if status_control["added_status_events"] != REGAGE_STATUS_EXPORT_EXPECTED:
         raise ValueError("REGAGE status-export canonical denominator drift")
     return register

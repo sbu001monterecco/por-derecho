@@ -9,6 +9,12 @@ import subprocess
 import sys
 from pathlib import Path
 
+from build_fiscalia_proceedings_interconnectivity import (
+    OCTOBER_MAPPING_BOUNDARY,
+    OCTOBER_MAPPING_STATE,
+    validated_october_filing_event_ids,
+)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "assets/data/fiscalia-proceedings-interconnectivity-v1.json"
@@ -93,6 +99,7 @@ def main() -> int:
     }
     from prepare_platform_incibe_20260925 import validated_platform_event_ids
     platform_ids = validated_platform_event_ids(communications['events'], ROOT)
+    october_ids = validated_october_filing_event_ids(communications["events"], ROOT)
     # Preserve the six already-canonical 24-Sep successor identities.
     # The legacy 643/320 controls remain exact for their original scope.
     expected_supplemental_ids = {'PD-SP-EVT-0497', 'PD-SP-EVT-0498', 'PD-SP-EVT-0499',
@@ -106,25 +113,45 @@ def main() -> int:
     require(payload.get("schema_version") == "1.0.0", "schema version changed", errors)
     require(payload.get("status") == "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION", "projection status changed", errors)
     require(
-        len(canonical_event_ids - platform_ids - supplemental_ids) == 643
+        len(canonical_event_ids - platform_ids - supplemental_ids - october_ids) == 643
         and len(status_export_ids) == 284
         and len(completed_filing_ids) == 24
         and completed_filing_ids <= event_ids
-        and len(event_ids - supplemental_ids) == 320
-        and len(event_ids) == len(projected_ids) == 320 + len(expected_supplemental_ids)
+        and len(event_ids - supplemental_ids - october_ids) == 320
+        and len(event_ids - october_ids) == 326
+        and len(event_ids) == len(projected_ids) == 326 + len(october_ids)
         and supplemental_ids <= projected_ids
+        and october_ids <= projected_ids
         and event_ids == projected_ids,
         "event denominator or identity mismatch",
         errors,
     )
-    require(payload["coverage"].get("matter_linked_events") == 141, "matter-linked event denominator mismatch", errors)
+    october_events = [event for event in payload["events"] if event["event_id"] in october_ids]
+    legacy_events = [event for event in payload["events"] if event["event_id"] not in october_ids]
+    october_matter_count = sum(bool(event.get("matter_references")) for event in october_events)
+    require(payload["coverage"].get("matter_linked_events") == 141 + october_matter_count, "matter-linked event denominator mismatch", errors)
+    require(payload["coverage"].get("legacy_communication_events") == len(legacy_events) == 326, "legacy communication denominator mismatch", errors)
+    require(payload["coverage"].get("legacy_matter_linked_events") == sum(bool(event.get("matter_references")) for event in legacy_events) == 141, "legacy matter-linked denominator mismatch", errors)
+    require(payload["coverage"].get("legacy_proceeding_linked_events") == sum(bool(event.get("master_ids")) for event in legacy_events) == 136, "legacy proceeding-linked denominator mismatch", errors)
+    require(payload["coverage"].get("october_registered_events") == len(october_events) == 6, "October receipt denominator mismatch", errors)
+    require(payload["coverage"].get("october_matter_linked_events") == october_matter_count == 6, "October matter denominator mismatch", errors)
+    require(payload["coverage"].get("october_context_linked_events") == sum(bool(event.get("master_ids")) for event in october_events) == 2, "October administrative-context denominator mismatch", errors)
+    require(payload["coverage"].get("unresolved_proceeding_allocation_events") == len(october_events), "October unresolved allocation denominator mismatch", errors)
     require(payload["coverage"].get("fiscalia_exact_files") == 23, "exact Fiscalía denominator mismatch", errors)
     require(payload["coverage"].get("fiscalia_unresolved_references") == 3, "unresolved Fiscalía denominator mismatch", errors)
     require(payload["coverage"].get("fiscalia_identity_total") == 26, "Fiscalía total denominator mismatch", errors)
     require(len(payload.get("priority_chains", [])) == 9, "priority chain denominator mismatch", errors)
-    require(not payload["coverage"].get("unresolved_matter_reference_literals"), "matter references remain orphaned", errors)
+    october_unresolved = sorted({literal for event in october_events for literal in event["unresolved_matter_references"]})
+    require(not any(event["unresolved_matter_references"] for event in legacy_events), "legacy matter references remain orphaned", errors)
+    require(payload["coverage"].get("unresolved_matter_reference_literals") == october_unresolved, "unresolved references exceed the controlled October mapping gaps", errors)
+    control = payload.get("october_cohort_control", {})
+    require(control.get("event_ids") == sorted(october_ids), "October cohort control identities differ", errors)
+    require(control.get("unresolved_matter_reference_literals") == october_unresolved and bool(october_unresolved), "October cohort mapping gap list differs", errors)
+    require(control.get("proceeding_mapping_state") == OCTOBER_MAPPING_STATE, "October cohort allocation state overstated", errors)
+    require(control.get("context_master_ids") == ["NAT-AID-001"], "October cohort administrative context differs", errors)
+    require(all(event.get("allocation_state") == "UNRESOLVED_PROCEEDING_ALLOCATION" and event.get("proceeding_mapping_state") == OCTOBER_MAPPING_STATE and event.get("mapping_boundary_en") == OCTOBER_MAPPING_BOUNDARY["en"] and event.get("mapping_boundary_es") == OCTOBER_MAPPING_BOUNDARY["es"] for event in october_events), "October proceeding allocation or limitation overstated", errors)
     require(all(event.get("allocation_state") and event.get("interconnectivity_scope") for event in payload["events"]), "an event lacks allocation/scope", errors)
-    require(sum(bool(event.get("matter_references")) for event in payload["events"]) == 141, "projected matter-linked denominator mismatch", errors)
+    require(sum(bool(event.get("matter_references")) for event in payload["events"]) == 141 + october_matter_count, "projected matter-linked denominator mismatch", errors)
 
     projected_fiscal_ids = {file["master_id"] for file in payload["fiscalia_files"]}
     require(projected_fiscal_ids == EXPECTED_FISCALIA_IDS, f"Fiscalía identity set mismatch: {sorted(projected_fiscal_ids ^ EXPECTED_FISCALIA_IDS)}", errors)
@@ -139,6 +166,11 @@ def main() -> int:
     require(all(edge["event_id"] in event_ids for edge in proceeding_edges), "proceeding edge has unknown event", errors)
     require(all(edge["master_id"] in master_ids for edge in proceeding_edges), "proceeding edge has unknown Master ID", errors)
     require(all(edge["relationship_strength"] in {"DIRECT_FILE_REFERENCE", "CONTEXT_OR_CITATION"} for edge in proceeding_edges), "invalid edge strength", errors)
+    october_edges = [edge for edge in proceeding_edges if edge["event_id"] in october_ids]
+    expected_context_event_ids = {event["event_id"] for event in october_events if "GC/836/P06" in event["matter_references"]}
+    require(len(proceeding_edges) - len(october_edges) == 164, "legacy proceeding-edge denominator mismatch", errors)
+    require(len(october_edges) == len(expected_context_event_ids) == 2 and {edge["event_id"] for edge in october_edges} == expected_context_event_ids, "October context-edge identity mismatch", errors)
+    require(all(edge["master_id"] == "NAT-AID-001" and edge["reference_literals"] == ["GC/836/P06"] and edge["relationship_strength"] == "CONTEXT_OR_CITATION" and edge["relationship_type"] == "SUBMISSION_REFERENCES_PROCEEDING" and edge["operational_scope"] == "OUTSIDE_JUDICIAL_PROCEEDING" for edge in october_edges), "October administrative context promoted to a proceeding allocation", errors)
     event_edges = payload.get("event_event_edges", [])
     require(all(edge["from_event_id"] in event_ids and edge["to_event_id"] in event_ids for edge in event_edges), "event edge has unknown endpoint", errors)
 

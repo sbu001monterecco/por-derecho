@@ -41,7 +41,7 @@ UNITARY_VERIFY_RUN = 32942975508
 UNITARY_VERIFY_RUN_NUMBER = 4
 UNITARY_VERIFY_JOB = 98097657687
 UNITARY_VERIFY_COMPLETED_AT = "2026-08-26T07:29:55Z"
-REPOSITORY_LATEST_MATERIAL_DATE = "2026-09-18"
+REPOSITORY_LATEST_MATERIAL_DATE = "2026-10-25"
 
 
 def load_json(path: Path):
@@ -137,11 +137,11 @@ def main() -> int:
         )
         require_markers(
             ROOT / "es/actualizaciones/index.html",
-            ["Última actualización material", "<strong>18 septiembre 2026</strong>", "ALG-ENT-018", "cuatrecasas-etj-dp748-18sep"],
+            ["Última actualización material", "<strong>25 octubre 2026</strong>", "ALG-ENT-018", "cuatrecasas-etj-dp748-18sep"],
         )
         require_markers(
             ROOT / "en/updates/index.html",
-            ["Latest material update", "<strong>18 September 2026</strong>", "ALG-ENT-018", "cuatrecasas-etj-dp748-18sep"],
+            ["Latest material update", "<strong>25 October 2026</strong>", "ALG-ENT-018", "cuatrecasas-etj-dp748-18sep"],
         )
 
         state = load_json(ROOT / "ops/CURRENT_UNITARY_STATE.json")
@@ -182,12 +182,55 @@ def main() -> int:
         if last_live != repository_latest:
             pending = material.get("pending_publication") or {}
             require(
-                pending.get("control_id") == "PD-CUATRECASAS-ETJ-DP748-20260918-01",
-                "pending 18-Sep Cuatrecasas/La Laguna material control missing",
+                pending.get("control_id") == "PD-MADRID-CTBG-REGISTERED-20261025",
+                "pending 25-Oct Madrid/CTBG material control missing",
             )
             require(
-                pending.get("state") in {"PREPARED_PENDING_MERGE", "MERGED_AWAITING_PAGES_READBACK"},
+                pending.get("state") in {
+                    "PREPARED_SOURCE_VERIFIED_NOT_DEPLOYED",
+                    "PREPARED_PENDING_MERGE",
+                    "MERGED_AWAITING_PAGES_READBACK",
+                },
                 "pending material state drift",
+            )
+            require(pending.get("material_date") == repository_latest, "pending material date drift")
+            require(
+                pending.get("source_input") == "assets/data/institutional-communications-20261025.json",
+                "pending Madrid/CTBG source cohort missing",
+            )
+            source = load_json(ROOT / pending["source_input"])
+            require(source.get("control_id") == pending["control_id"], "pending source control drift")
+            expected_events = {
+                "PD-SP-EVT-0600": "REGAGE26e00091776746",
+                "PD-SP-EVT-0601": "REGAGE26e00091777235",
+                "PD-SP-EVT-0602": "REGAGE26e00091777533",
+                "PD-SP-EVT-0603": "REGAGE26e00091778502",
+                "PD-SP-EVT-0604": "REGAGE26e00091804140",
+                "PD-SP-EVT-0605": "REGAGE26e00091804303",
+            }
+            require(
+                {item.get("event_id"): item.get("reference") for item in source.get("items", [])}
+                == expected_events,
+                "pending six-event Madrid/CTBG source mapping drift",
+            )
+            events = load_json(DATA / "institutional-communications-register-v1.json")
+            canonical_events = {item.get("event_id"): item for item in events.get("events", [])}
+            for event_id, reference in expected_events.items():
+                require(
+                    canonical_events.get(event_id, {}).get("official_reference") == reference,
+                    f"pending canonical registration event missing: {event_id}",
+                )
+            previous = [
+                item for item in material.get("pending_publication_history", [])
+                if item.get("control_id") == "PD-CUATRECASAS-ETJ-DP748-20260918-01"
+            ]
+            require(len(previous) == 1, "18-Sep pending-publication history missing or duplicated")
+            require(
+                previous[0].get("state") == "MERGED_AWAITING_PAGES_READBACK"
+                and previous[0].get("material_date") == "2026-09-18"
+                and previous[0].get("merge_sha") == "cf73bd7cffd65ad08f48d3cc850b692fc17aec23"
+                and previous[0].get("merged_to") == "main",
+                "18-Sep pending-publication evidence boundary drift",
             )
             if pending.get("state") == "MERGED_AWAITING_PAGES_READBACK":
                 require(

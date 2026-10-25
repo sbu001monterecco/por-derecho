@@ -42,6 +42,10 @@ from build_public_mailbox_event_index import (
     PUBLIC_MATCH_KEY_RE,
     TRANSPORT_STATE as MAILBOX_TRANSPORT_STATE,
 )
+from load_madrid_ctbg_filings_20261025 import (
+    SOURCE_PREFIX as OCTOBER_FILING_PREFIX,
+    load_filing_events as load_october_filing_events,
+)
 
 
 DEFAULT_SCHEMA = REPO_ROOT / ".github/evidence-intelligence/schemas/institutional-communications.schema.json"
@@ -201,6 +205,15 @@ def validate_register(
     source_keys = [event.get("source_key") for event in events if isinstance(event, dict)]
     if len(source_keys) != len(set(source_keys)):
         errors.append("duplicate source_key")
+    expected_october = {
+        event["event_id"]: event for event in load_october_filing_events(repo_root, RECEIPT_BOUNDARY)
+    }
+    found_october = {
+        event.get("event_id"): event for event in events
+        if str(event.get("source_key", "")).startswith(OCTOBER_FILING_PREFIX)
+    }
+    if found_october != expected_october:
+        errors.append("October Madrid/CTBG receipt cohort differs from its source-controlled descriptors")
 
     authority_events = [event for event in events if event.get("authority_tier_id")]
     expected_authority_ids = ["PD-SP-EVT-0004", "PD-SP-EVT-0014", *[f"PD-SP-EVT-{number:04d}" for number in range(141, 158)]]

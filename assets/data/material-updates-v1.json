@@ -1,8 +1,8 @@
 {
   "schema": "por-derecho.material-updates.v1",
   "control_id": "PD-MATERIAL-UPDATES-001",
-  "control_date": "2026-09-18",
-  "latest_material_date": "2026-09-18",
+  "control_date": "2026-10-25",
+  "latest_material_date": "2026-10-25",
   "languages": [
     "es",
     "en"
@@ -18,6 +18,39 @@
     "The homepage, ES/EN updates pages, feed, state controls and sitemap metadata must use the same latest material date."
   ],
   "entries": [
+    {
+      "update_id": "MU-20261025-MADRID-CTBG-RECOVERY-CORRECTIONS",
+      "date": "2026-10-25",
+      "type": "REGISTERED_DOCUMENTARY_SUPPLEMENTS_AND_SOURCE_QUALIFIED_CORRECTIONS",
+      "title_es": "Madrid y CTBG 3929: ampliaciones registradas y precisiones tras la recuperación documental",
+      "title_en": "Madrid and CTBG 3929: registered supplements and corrections after documentary recovery",
+      "affected_routes": [
+        "/es/incentivos-regionales-gc836-p06/",
+        "/en/regional-incentives-gc836-p06/",
+        "/es/ricpe-hnt-gc836-trazabilidad/",
+        "/en/ricpe-hnt-gc836-traceability/",
+        "/es/cadena-instrumentalizacion-ric-fondos-incentivos/",
+        "/en/institutionalisation-chain-ric-eu-incentives/",
+        "/es/registros-institucionales/",
+        "/en/institutional-records/",
+        "/es/registros-redsara-age-y-respuestas-autoridades/",
+        "/en/red-sara-age-filings-authority-responses/",
+        "/es/actualizaciones/",
+        "/en/updates/"
+      ],
+      "source_status": "SIX_RECEIPT_CONTROLLED_REGISTRATION_EVENTS_NATIVE_AND_COMPILED_READ_COPY_SCOPES_DISTINGUISHED",
+      "what_changed": "The three-part Madrid complaint and the CTBG hearing response were registered on 24 October. Documentary supplements were registered on 25 October as REGAGE26e00091804140 and REGAGE26e00091804303. The latter maintains NO DESISTO. The registered supplements clarify that five document categories were recovered after the 24 October morning submissions; a later occurrence of the Ministry report has a CSV-bearing wrapper; and earlier descriptions of a CTBG complaint copy as byte-identical are corrected while its reported text/visual identity is retained. The April and June access decisions/responses and historical adverse decisions remain part of the record. The actilla ownership-at-validity-end condition, first-valid-application question, criteria-version difference and corporate adviser channel are kept distinct. The two 25 October receipts have exact attachment-fingerprint matches: two Madrid attachments and four CTBG attachments.",
+      "what_did_not_change": "Registration does not establish internal incorporation, admission, examination, an opened investigation or liability. Current recovery does not establish historical availability or complete delivery. The actilla does not transfer civil title or establish its individual compliance deadline; the Ministry entry does not establish the first valid regional application. A demolition-cost exclusion does not prove demolition was subsidised or aid paid. A corporate adviser channel does not prove an individual mandate or knowledge. Different file bytes do not by themselves establish altered page content or forgery. The criminal and transparency proceedings remain distinct, with the source-supported allegations maintained and contrary evidence visible.",
+      "source_control": "PD-MADRID-CTBG-REGISTERED-20261025",
+      "canonical_event_ids": [
+        "PD-SP-EVT-0600",
+        "PD-SP-EVT-0601",
+        "PD-SP-EVT-0602",
+        "PD-SP-EVT-0603",
+        "PD-SP-EVT-0604",
+        "PD-SP-EVT-0605"
+      ]
+    },
     {
       "update_id": "MU-20260918-CUATRECASAS-ETJ-DP748",
       "date": "2026-09-18",

@@ -1,6 +1,6 @@
 {
   "record": "GC/836/P06",
-  "updated": "2026-08-21",
+  "updated": "2026-10-25",
   "status": "open documentary reconciliation",
   "scope_lock": "This matrix does not state that prohibited double funding, fraud, EU funding or criminality is established.",
   "project_chain": [
@@ -13,36 +13,232 @@
     "EU/ERDF traceability if independently established"
   ],
   "fields_to_lock": [
-    {"field": "applicant_beneficiary", "status": "requires primary file"},
-    {"field": "project_holder", "status": "requires primary file"},
-    {"field": "title_or_availability_basis", "status": "requires primary file"},
-    {"field": "application_date", "status": "requires primary file"},
-    {"field": "grant_decision_date", "status": "requires primary file"},
-    {"field": "eligible_investment", "status": "requires primary file"},
-    {"field": "eligible_cost_schedule", "status": "requires primary file"},
-    {"field": "project_start_and_works_start", "status": "requires primary file"},
-    {"field": "financing_plan", "status": "requires primary file"},
-    {"field": "other_aid_cumulation_declarations", "status": "requires primary file"},
-    {"field": "invoices_and_proof_of_payment", "status": "requires primary file"},
-    {"field": "certifications_and_verifications", "status": "requires primary file"},
-    {"field": "employment_commitments_and_checks", "status": "requires primary file"},
-    {"field": "payment_history", "status": "requires primary file"},
-    {"field": "closure_correction_or_recovery", "status": "requires primary file"},
-    {"field": "eu_erdf_operation_identifier", "status": "not established in this control"}
+    {
+      "field": "applicant_beneficiary",
+      "status": "Published award identifies HNT; individual application and the complete beneficiary/rights chain remain to be reconciled.",
+      "historical_status_20260821": "requires primary file",
+      "source_control": "PD-MADRID-CTBG-REGISTERED-20261025",
+      "source_references": [
+        "D07"
+      ],
+      "source_class": "25_OCT_REGISTERED_PARTY_SUPPLEMENT_WITH_IDENTIFIED_UNDERLYING_DOCUMENTS"
+    },
+    {
+      "field": "project_holder",
+      "status": "requires primary file"
+    },
+    {
+      "field": "title_or_availability_basis",
+      "status": "Partly documented: D08 proposes ownership at the validity deadline; individual deadline, modifications, property-specific title/availability and compliance remain open.",
+      "historical_status_20260821": "requires primary file",
+      "source_control": "PD-MADRID-CTBG-REGISTERED-20261025",
+      "source_references": [
+        "D08"
+      ],
+      "source_class": "25_OCT_REGISTERED_PARTY_SUPPLEMENT_WITH_IDENTIFIED_UNDERLYING_DOCUMENTS"
+    },
+    {
+      "field": "application_date",
+      "status": "Ministry entry of 7 June 2022 is recorded; the first valid regional application and project identity are not established by that entry alone.",
+      "historical_status_20260821": "requires primary file",
+      "source_control": "PD-MADRID-CTBG-REGISTERED-20261025",
+      "source_references": [
+        "D06"
+      ],
+      "source_class": "25_OCT_REGISTERED_PARTY_SUPPLEMENT_WITH_IDENTIFIED_UNDERLYING_DOCUMENTS"
+    },
+    {
+      "field": "grant_decision_date",
+      "status": "Published grant order located; individual decision, acceptance, conditions and amendments remain required.",
+      "historical_status_20260821": "requires primary file",
+      "source_control": "PD-MADRID-CTBG-REGISTERED-20261025",
+      "source_references": [
+        "D07",
+        "D08"
+      ],
+      "source_class": "25_OCT_REGISTERED_PARTY_SUPPLEMENT_WITH_IDENTIFIED_UNDERLYING_DOCUMENTS"
+    },
+    {
+      "field": "eligible_investment",
+      "status": "Published award and actilla provide figures; eligible-cost reconciliation and payment evidence remain separate.",
+      "historical_status_20260821": "requires primary file",
+      "source_control": "PD-MADRID-CTBG-REGISTERED-20261025",
+      "source_references": [
+        "D07",
+        "D08"
+      ],
+      "source_class": "25_OCT_REGISTERED_PARTY_SUPPLEMENT_WITH_IDENTIFIED_UNDERLYING_DOCUMENTS"
+    },
+    {
+      "field": "eligible_cost_schedule",
+      "status": "Original 2022 criteria exclude demolition costs; this does not establish that demolition costs entered the approved or paid grant base.",
+      "historical_status_20260821": "requires primary file",
+      "source_control": "PD-MADRID-CTBG-REGISTERED-20261025",
+      "source_references": [
+        "D08",
+        "D09",
+        "D10"
+      ],
+      "source_class": "25_OCT_REGISTERED_PARTY_SUPPLEMENT_WITH_IDENTIFIED_UNDERLYING_DOCUMENTS"
+    },
+    {
+      "field": "project_start_and_works_start",
+      "status": "Earlier works and the Ministry receipt require comparison with the first valid application and the same assisted investment; no automatic identity or incentive-effect conclusion.",
+      "historical_status_20260821": "requires primary file",
+      "source_control": "PD-MADRID-CTBG-REGISTERED-20261025",
+      "source_references": [
+        "D06",
+        "D10",
+        "D12",
+        "D13"
+      ],
+      "source_class": "25_OCT_REGISTERED_PARTY_SUPPLEMENT_WITH_IDENTIFIED_UNDERLYING_DOCUMENTS"
+    },
+    {
+      "field": "financing_plan",
+      "status": "requires primary file"
+    },
+    {
+      "field": "other_aid_cumulation_declarations",
+      "status": "requires primary file"
+    },
+    {
+      "field": "invoices_and_proof_of_payment",
+      "status": "requires primary file"
+    },
+    {
+      "field": "certifications_and_verifications",
+      "status": "requires primary file"
+    },
+    {
+      "field": "employment_commitments_and_checks",
+      "status": "requires primary file"
+    },
+    {
+      "field": "payment_history",
+      "status": "requires primary file"
+    },
+    {
+      "field": "closure_correction_or_recovery",
+      "status": "requires primary file"
+    },
+    {
+      "field": "eu_erdf_operation_identifier",
+      "status": "not established in this control"
+    }
   ],
   "authority_routes": [
-    {"body": "Regional Incentives competent authority", "purpose": "complete GC/836/P06 merits and payment file"},
-    {"body": "Gobierno de Canarias - RIC/idoneidad competent authority", "purpose": "Decree 224/2022, application, reports, amendments and Series F/G coverage"},
-    {"body": "Intervencion General de Canarias", "purpose": "referral traceability and control remit; not a general merits certificate"},
-    {"body": "Direccion General del Tesoro y Politica Financiera", "purpose": "Treasury/payment/liquidity custody where competent and custodian identification where not"},
-    {"body": "European-funds managing/intermediate body", "purpose": "only if an EU/ERDF operation is independently identified"},
-    {"body": "Transparency authorities", "purpose": "lawful access, partial access, metadata and custodian routing"},
-    {"body": "SNCA/IGAE and competent prosecutorial bodies", "purpose": "separate integrity/criminal routes where objective evidence meets their remit"}
+    {
+      "body": "Regional Incentives competent authority",
+      "purpose": "complete GC/836/P06 merits and payment file"
+    },
+    {
+      "body": "Gobierno de Canarias - RIC/idoneidad competent authority",
+      "purpose": "Decree 224/2022, application, reports, amendments and Series F/G coverage"
+    },
+    {
+      "body": "Intervencion General de Canarias",
+      "purpose": "referral traceability and control remit; not a general merits certificate"
+    },
+    {
+      "body": "Direccion General del Tesoro y Politica Financiera",
+      "purpose": "Treasury/payment/liquidity custody where competent and custodian identification where not"
+    },
+    {
+      "body": "European-funds managing/intermediate body",
+      "purpose": "only if an EU/ERDF operation is independently identified"
+    },
+    {
+      "body": "Transparency authorities",
+      "purpose": "lawful access, partial access, metadata and custodian routing"
+    },
+    {
+      "body": "SNCA/IGAE and competent prosecutorial bodies",
+      "purpose": "separate integrity/criminal routes where objective evidence meets their remit"
+    }
   ],
   "terminology": {
     "RIC": "Reserva para Inversiones en Canarias - statutory tax mechanism",
     "RIC_Private_Equity": "separately named regulated investment vehicle; not the statutory RIC mechanism",
     "HNT": "Hotel New Trend, S.L./S.L.U. as later project-company layer",
     "MYND_Yaiza": "later hotel/operational identity associated in the source architecture with Hotel New Trend"
+  },
+  "source_reconciliation_20261025": {
+    "control_id": "PD-MADRID-CTBG-REGISTERED-20261025",
+    "source_input": "assets/data/institutional-communications-20261025.json",
+    "status": "REGISTERED_PARTY_CLARIFICATIONS_WITH_RECEIPT_VERIFIED_FILINGS",
+    "source_scope": "The filed pleadings identify D01-D15 as the common annex. This public matrix summarises their source-qualified clarifications; the registration receipts do not independently prove every substantive proposition. Native evidence and private provenance remain outside public Git.",
+    "corrections": [
+      {
+        "key": "document_recovery",
+        "source_references": [
+          "D03",
+          "D04",
+          "D05",
+          "D06",
+          "D07",
+          "D08",
+          "D09",
+          "D11"
+        ],
+        "clarification": "Five categories were recovered after the 24 October morning submissions; present non-receipt is corrected. The April decision, notification opening and June response are relevant contrary evidence. Historical availability and completeness remain distinct questions."
+      },
+      {
+        "key": "authentication_occurrences",
+        "source_references": [
+          "D02"
+        ],
+        "clarification": "Portal occurrence 9118714 includes a CSV-bearing wrapper. Both occurrences are retained; a copy difference does not establish forgery or individual authorship."
+      },
+      {
+        "key": "criteria_versions",
+        "source_references": [
+          "D09",
+          "D10"
+        ],
+        "clarification": "The supplied criteria copy is a 2025 consolidation. The original 21 September 2022 text is separately identified for comparison."
+      },
+      {
+        "key": "adviser_and_identity",
+        "source_references": [
+          "D11"
+        ],
+        "clarification": "The HNT hearing invitation identifies a corporate Dyrecto channel, not its later opposition or an individual mandate. Laura Patricia Acosta Matos is the canonical identity; correction of a source error does not resolve unattributed statements."
+      },
+      {
+        "key": "historical_decisions",
+        "source_references": [
+          "D12",
+          "D13",
+          "D14",
+          "D15"
+        ],
+        "clarification": "Earlier works, tax observations and adverse judicial/fiscal decisions remain visible with their distinct attribution and scope. Allegations recited in a decision are not automatically findings of criminality."
+      },
+      {
+        "key": "binary_provenance",
+        "source_references": [
+          "CTBG supplement section 5"
+        ],
+        "clarification": "The 25 October CTBG filing corrects earlier byte-identical-copy descriptions. Authored and filed binary versions remain separate; reported equality of page content does not establish raw-byte identity."
+      }
+    ],
+    "open_tests": [
+      "first valid application and exact assisted project",
+      "individual grant decision, acceptance, deadline and modifications",
+      "property-specific title/availability and compliance",
+      "approved, excluded and actually paid costs",
+      "historical portal versions, permissions and access events",
+      "HNT opposition, annexes and actual representative mandate",
+      "institutional incorporation, examination and decisions after registration"
+    ],
+    "reader_routes": [
+      "/es/incentivos-regionales-gc836-p06/",
+      "/en/regional-incentives-gc836-p06/",
+      "/es/ricpe-hnt-gc836-trazabilidad/",
+      "/en/ricpe-hnt-gc836-traceability/",
+      "/es/cadena-instrumentalizacion-ric-fondos-incentivos/",
+      "/en/institutionalisation-chain-ric-eu-incentives/"
+    ]
   }
 }
