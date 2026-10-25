@@ -99,7 +99,7 @@
     "scripts/build_redsara_age_filings_register.py": "623a94b99dd73c6b59582d3df8f3395df2df261ac1427ef25d70f73c6fa51ab6",
     "scripts/load_madrid_ctbg_filings_20261025.py": "865c6534be867fa7091eed5dda9a71b22ae724200a19884ccc38d6b0a2f55fa1",
     "scripts/reconcile_institutional_communications.py": "81258988da1e4c99b3059b29d681d2eff0218f22cefc092a3e693dd8996f0245",
-    "scripts/smoke_fiscalia_proceedings_interconnectivity.mjs": "7bf9b993ca434c22eff125ff47938e03c6c58b65809c12aa30be862aa9617d2a",
+    "scripts/smoke_fiscalia_proceedings_interconnectivity.mjs": "b416342d42340a528aa8701eefec2cee6613a399755ba743d1d6f06e6969aec1",
     "scripts/test_build_fiscalia_proceedings_interconnectivity.py": "fa9bbdd3481e56472e7b61fccb57ddf4c97c3ade28458e108910927404b38e1c",
     "scripts/test_madrid_ctbg_filings_20261025.py": "d88e1eb232692c1c2c004d17e9a5e1014ab8035c4e575a242ed74622e92b0d8a",
     "scripts/validate_fiscalia_proceedings_interconnectivity.py": "0d55d96e9245f942f059499fff78e2c40115846031e5c74ccc64052dfee26965",
@@ -193,7 +193,15 @@
         "scope": "The unchanged post7june builder moves the same ten unrelated route blocks on the preparation base and candidate; identical input, output and diff hashes were verified in isolated copies. Those ten routes are not changed by this release."
       }
     },
-    "browser_smoke_extension": "The existing CI smoke now checks twelve actual institutional card anchors, 0604/0605 fragment viewport navigation in both languages, unresolved proceeding allocation and administrative public-aid labels with zero inferred judicial proceedings. Local Chromium remains unavailable; browser execution is not claimed by this candidate."
+    "browser_smoke_extension": "The existing CI smoke now checks twelve actual institutional card anchors, 0604/0605 fragment viewport navigation in both languages, unresolved proceeding allocation and administrative public-aid labels with zero inferred judicial proceedings. Local Chromium remains unavailable; browser execution is not claimed by this candidate.",
+    "browser_smoke_test_precision": {
+      "observed_head": "d3ca4089f94281fc58f9ea2bf439077e2d53ea7b",
+      "run": "https://github.com/sbu001monterecco/por-derecho/actions/runs/40176192896",
+      "conclusion": "failure",
+      "cause": "The new exact-label assertion read CSS-uppercase innerText instead of case-preserving DOM text. Same-document hash navigation also retains the previous search filter.",
+      "bounded_correction": "Assert heading visibility separately and compare textContent exactly; clear the search filter before the administrative context navigation. Preserve all source-fingerprint, two-context-card, zero-judicial, unresolved-allocation and institutional-fragment assertions.",
+      "browser_execution_after_correction": "PENDING_CI_NO_PASS_CLAIM"
+    }
   },
   "publication_closeout": {
     "pull_request": null,

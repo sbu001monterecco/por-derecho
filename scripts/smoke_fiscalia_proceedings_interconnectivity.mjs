@@ -96,9 +96,13 @@ try {
     await octoberCard.locator('summary').click();
     if (!(await octoberCard.innerText()).includes('UNRESOLVED_PROCEEDING_ALLOCATION') || !(await octoberCard.innerText()).includes(route.lang === 'es' ? 'no asignan una identidad canónica' : 'do not allocate a canonical')) fail(`${route.lang}: October unresolved proceeding mapping is hidden`);
 
+    // This hash navigation retains the current document and its input state.
+    await page.locator('[data-mf-search]').fill('');
     await page.goto(`${base}${route.path}#file=NAT-AID-001`, { waitUntil: 'networkidle' });
     await page.waitForSelector('[data-mf-files] [data-file="NAT-AID-001"][aria-current="true"]');
-    if ((await detail.locator('.pd-mf-detail-head .eyebrow').innerText()).trim() !== route.administrative || (await page.locator('[data-mf-files] [data-file="NAT-AID-001"] small').innerText()).trim() !== route.administrative) fail(`${route.lang}: public-aid context is mislabeled as a judicial or Fiscalía file`);
+    const administrativeHeading = detail.locator('.pd-mf-detail-head .eyebrow');
+    // The visible eyebrow is styled uppercase; source label identity is case-preserving.
+    if (!(await administrativeHeading.isVisible()) || (await administrativeHeading.textContent()).trim() !== route.administrative || (await page.locator('[data-mf-files] [data-file="NAT-AID-001"] small').innerText()).trim() !== route.administrative) fail(`${route.lang}: public-aid context is mislabeled as a judicial or Fiscalía file`);
     const judicialCount = detail.locator(':scope > .pd-mf-badges > .pd-mf-badge').last();
     if ((await judicialCount.innerText()).trim() !== `0 ${route.judicial}`) fail(`${route.lang}: administrative context inflated the judicial-proceeding count`);
     if (await detail.locator('[data-event-id]').count() !== contextIds.size) fail(`${route.lang}: public-aid context chronology differs from the two exact citation edges`);
