@@ -126,7 +126,8 @@ try {
       const item = october.items.find(entry => entry.reference === reference);
       const target = `communication-${item.event_id}`;
       const response = await page.goto(`${base}${readerRoute}#${target}`, { waitUntil: 'networkidle' });
-      if (!response?.ok()) fail(`${readerRoute}: institutional reader returned ${response?.status()}`);
+      // Hash-only navigation has no new HTTP response; the initial reader request was checked above.
+      if (response && !response.ok()) fail(`${readerRoute}: institutional reader returned ${response.status()}`);
       const card = page.locator(`article#${target}`);
       await card.waitFor({ state: 'visible' });
       if (await card.count() !== 1 || (await card.locator('h3').innerText()).trim() !== reference || !(await card.innerText()).includes(item.event_id)) fail(`${readerRoute}: fragment did not resolve to the identified registration card`);
