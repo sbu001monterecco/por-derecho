@@ -1,0 +1,83 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-RECOVERY-ACCOUNT-ATTRIBUTION-20261025",
+  "control_date": "2026-10-25",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "owner": "Project Sun Rock / Por Derecho",
+  "audit_base_main_sha": "94a6d29748fc0dccf089b5590ea714e550d61630",
+  "scope": "Qualify only the new 25 October narrative as Gil Marer’s filed account where it concerns historical document recovery, the later report occurrence and earlier-copy content equivalence. Registration and verified attachment fingerprints remain factual; maintained allegations, contrary evidence and unresolved proof are preserved.",
+  "expected_routes": {
+    "es": [
+      "es/index.html",
+      "es/actualizaciones/index.html",
+      "es/actualizaciones/feed.xml",
+      "es/incentivos-regionales-gc836-p06/index.html",
+      "es/ricpe-hnt-gc836-trazabilidad/index.html",
+      "es/cadena-instrumentalizacion-ric-fondos-incentivos/index.html"
+    ],
+    "en": [
+      "en/index.html",
+      "en/updates/index.html",
+      "en/updates/feed.xml",
+      "en/regional-incentives-gc836-p06/index.html",
+      "en/ricpe-hnt-gc836-traceability/index.html",
+      "en/institutionalisation-chain-ric-eu-incentives/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/data/material-updates-v1.json",
+    "en/index.html",
+    "en/institutionalisation-chain-ric-eu-incentives/index.html",
+    "en/regional-incentives-gc836-p06/index.html",
+    "en/ricpe-hnt-gc836-traceability/index.html",
+    "en/updates/feed.xml",
+    "en/updates/index.html",
+    "es/actualizaciones/feed.xml",
+    "es/actualizaciones/index.html",
+    "es/cadena-instrumentalizacion-ric-fondos-incentivos/index.html",
+    "es/incentivos-regionales-gc836-p06/index.html",
+    "es/index.html",
+    "es/ricpe-hnt-gc836-trazabilidad/index.html",
+    "publication-manifests/recovery-account-attribution-20261025.json"
+  ],
+  "candidate_file_sha256": {
+    "assets/data/material-updates-v1.json": "b5a9cc920cbc72e3386db8f996f608b7097353a22fb067040356dbeab6d0d287",
+    "en/index.html": "21c7cb9ad90ca93773abf710271661ced5eaae7d714bdb85e2857ddb89cce806",
+    "en/institutionalisation-chain-ric-eu-incentives/index.html": "d40e62425dcda05272d679a9a93a3fb33fcc1c6ebd7cfce9a3604ca4f3eafcf1",
+    "en/regional-incentives-gc836-p06/index.html": "4d7deb1245b5e10c8cfaedd721b077b465d84f8be32f19f931179dcc5eab10a5",
+    "en/ricpe-hnt-gc836-traceability/index.html": "eda2a94eb9c5b031b9a2386a199edcbf47a2972cc0f235e3bd07cb0641bcc395",
+    "en/updates/feed.xml": "678d118abe673b9cad45dbe374e20bd29c33f3fe395a9787bca5ae17de67e0d4",
+    "en/updates/index.html": "d7640f2dee199cee132885b34787f817c9e1253630b5bc3d0e388c576fb5fa08",
+    "es/actualizaciones/feed.xml": "969920471a507ed581bb9c862584a2ca870754a0622118ecf937215c9fc5cd41",
+    "es/actualizaciones/index.html": "1faac3b681ca25dc7eedca4a21b202926b4c9e58be9a68c752e9dd4e4021993b",
+    "es/cadena-instrumentalizacion-ric-fondos-incentivos/index.html": "a0e3c703d95154d739b60e97ec90d56bac74dbbaa406eaba9c964208c1814abe",
+    "es/incentivos-regionales-gc836-p06/index.html": "7a3c55c82f45dd8e1923f8d2129bb79f9babe6a417194959d046d5dc293412a9",
+    "es/index.html": "9e2125232c9e147e2f6fa6a6ad3152afa5d334876d6bf2408349555e2c986fda",
+    "es/ricpe-hnt-gc836-trazabilidad/index.html": "cb0ffae412782294fb5a4bf1abbbc02f7a55c8fc874874c52187249672ab7d2d"
+  },
+  "source_control": "PD-MADRID-CTBG-REGISTERED-20261025",
+  "source_release_history": [
+    "publication-manifests/madrid-ctbg-registered-20261025.json",
+    "publication-manifests/atom-editorial-date-precision-20261025.json"
+  ],
+  "prior_manifests_unchanged": true,
+  "attribution_boundary": "The receipts establish the recorded presentation and attachment inventory. The private filed bytes support the recorded fresh SHA-512 comparisons. The timing of earlier recovery and the text/visual equivalence account are attributed to the filed supplements, not independently established by those receipts. This correction does not adjudicate or withdraw the source-supported allegations.",
+  "preservation": {
+    "prior_html_outside_new_october_blocks_unchanged": true,
+    "older_atom_entry_blocks_unchanged_per_language": 20,
+    "entry_ids_links_and_timestamp_values_unchanged": true,
+    "canonical_events_and_receipt_literals_changed": false,
+    "older_material_update_objects_changed": false,
+    "native_private_files_published": false
+  },
+  "validation": {
+    "required": [
+      "Scoped before/after preservation and XML/JSON/link checks",
+      "Repository preservation, publication integrity and audience checks",
+      "Exact-head release acceptance and publication-integrity CI",
+      "Exact merge Pages deployment and affected-route readback"
+    ]
+  },
+  "release_boundary": "Prepared source only. Merge, deployment and exact live verification require separate publication-controller evidence. This does not certify corpus completeness, issuer authentication or legal merits."
+}
