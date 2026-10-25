@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>Material updates — Project Sun Rock</title>
+  <subtitle>The feed update and 25 October 2026 entry use an editorial calendar date: 00:00:00Z is not an observed publication, presentation or registration time. Earlier entries retain their original metadata and dated verification scope.</subtitle>
   <id>https://sbu001monterecco.github.io/por-derecho/en/updates/</id>
   <link rel="self" type="application/atom+xml" href="https://sbu001monterecco.github.io/por-derecho/en/updates/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://sbu001monterecco.github.io/por-derecho/en/updates/"/>
   <updated>2026-10-25T00:00:00Z</updated>
   <author><name>Project Sun Rock</name></author>
 <!-- PD-MAD-CTBG-20261025 BEGIN -->
-  <entry><title>Madrid / CTBG: recovered documents and registered supplements</title><id>https://sbu001monterecco.github.io/por-derecho/en/updates/#madrid-ctbg-25oct</id><link href="https://sbu001monterecco.github.io/por-derecho/en/regional-incentives-gc836-p06/#october-2026-source-reconciliation"/><published>2026-10-25T00:00:00Z</published><updated>2026-10-25T00:00:00Z</updated><summary>The 25 October registered Madrid and CTBG supplements correct current non-obtainment of five document categories, identify the later CSV-bearing report, preserve April–June contrary evidence and qualify grant ownership/timing and personal attribution. NO DESISTO remains. Receipt and attachment identity are verified; admission, investigation, complete access and criminal responsibility are not established.</summary></entry>
+  <entry><title>Madrid / CTBG: recovered documents and registered supplements</title><id>https://sbu001monterecco.github.io/por-derecho/en/updates/#madrid-ctbg-25oct</id><link href="https://sbu001monterecco.github.io/por-derecho/en/regional-incentives-gc836-p06/#october-2026-source-reconciliation"/><published>2026-10-25T00:00:00Z</published><updated>2026-10-25T00:00:00Z</updated><summary>The 25 October registered Madrid and CTBG supplements correct current non-obtainment of five document categories, identify the later CSV-bearing report, preserve April–June contrary evidence and qualify grant ownership/timing and personal attribution. NO DESISTO remains. Receipt and attachment identity are verified; admission, investigation, complete access and criminal responsibility are not established. Date precision: the Atom published/updated value 2026-10-25T00:00:00Z is an editorial calendar-date marker, not an observed publication, presentation or registration time. It does not convert the receipts’ literal times to UTC.</summary></entry>
 <!-- PD-MAD-CTBG-20261025 END -->
   <entry>
     <title>Cuatrecasas / ETJ 163 / DP 748: civil suspension refused, criminal appeal processing verified</title>

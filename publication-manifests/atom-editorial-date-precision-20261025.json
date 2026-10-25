@@ -1,0 +1,64 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-ATOM-EDITORIAL-DATE-PRECISION-20261025",
+  "control_date": "2026-10-25",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "owner": "Project Sun Rock / Por Derecho",
+  "audit_base_main_sha": "ad0d2ff2587da2756fb60511f8e16cfcf032455c",
+  "scope": "Qualify the current feed update and 25 October Madrid/CTBG entry midnight values as editorial calendar-date markers, with a bilingual feed-level dated-history qualification. This changes no registry event, source, filing or later procedural state.",
+  "expected_routes": {
+    "es": [
+      "es/actualizaciones/feed.xml"
+    ],
+    "en": [
+      "en/updates/feed.xml"
+    ]
+  },
+  "expected_source_files": [
+    "en/updates/feed.xml",
+    "es/actualizaciones/feed.xml",
+    "publication-manifests/atom-editorial-date-precision-20261025.json"
+  ],
+  "public_markers": [
+    "2026-10-25T00:00:00Z",
+    "00:00:00Z",
+    "madrid-ctbg-25oct"
+  ],
+  "source_release": {
+    "pr": 2110,
+    "merge_sha": "ad0d2ff2587da2756fb60511f8e16cfcf032455c",
+    "manifest": "publication-manifests/madrid-ctbg-registered-20261025.json",
+    "historical_manifest_unchanged": true
+  },
+  "source_hashes": {
+    "en": {
+      "path": "en/updates/feed.xml",
+      "before_sha256": "facacbb44f8351e1f08eaa955460c3029ce9f4b74c3a1ea4c16dc04f3cceb71b",
+      "after_sha256": "be3893426271ebdae3edefb4892c2186fcecf66f63e762ff05fe5238b2fc66af",
+      "entries": 21,
+      "prior_entries_preserved_byte_for_byte": 20,
+      "prior_entry_blocks_sha256": "1ec0a116782cdb752d419b3c571db32cc5f7308a68501a14fe479dc2e6657aba",
+      "all_entry_ids_links_and_atom_timestamp_values_preserved": true
+    },
+    "es": {
+      "path": "es/actualizaciones/feed.xml",
+      "before_sha256": "6ff563b4e25fc19b68b49efc5120fa6486ef55fdae6837ad21bae842696e9a38",
+      "after_sha256": "5079e437ed6f86dd606ef93283140d12f6eb56a757c7a870ecaa2351549e1ddd",
+      "entries": 21,
+      "prior_entries_preserved_byte_for_byte": 20,
+      "prior_entry_blocks_sha256": "1af36199bb6803ef1f6eed475ab2899891bf060d19b3898bec7158634a5b5a0e",
+      "all_entry_ids_links_and_atom_timestamp_values_preserved": true
+    }
+  },
+  "timestamp_boundary": "The current feed updated value and 25 October entry published/updated values retain valid Atom syntax but are explicitly editorial date markers, not observed publication, presentation or registration times. The qualification does not infer or convert a timezone for receipt literals. It does not reinterpret earlier entries or certify later states.",
+  "validation": {
+    "evidence": [
+      "Both feeds parse as Atom XML; all 21 entry IDs, links and Atom timestamp values remain unchanged.",
+      "The 20 prior raw entry blocks in each language are byte-for-byte unchanged.",
+      "Repository preservation, publication integrity, audience and exact changed-file checks are required before protected merge."
+    ]
+  },
+  "release_boundary": "Prepared source. Merge, Pages deployment and exact public-origin readback require separate controller evidence; this note does not declare them complete.",
+  "history_block_hash_method": "SHA-256 of UTF-8 raw entry blocks 2–21 joined by one LF; each prior block was also compared byte for byte."
+}
