@@ -14,7 +14,9 @@
       "es/incentivos-regionales-gc836-p06/index.html",
       "es/ricpe-hnt-gc836-trazabilidad/index.html",
       "es/cadena-instrumentalizacion-ric-fondos-incentivos/index.html",
-      "es/actualizaciones/feed.xml"
+      "es/actualizaciones/feed.xml",
+      "es/registros-institucionales/index.html",
+      "es/fiscalia-comunicaciones-procedimientos/index.html"
     ],
     "en": [
       "en/index.html",
@@ -22,17 +24,22 @@
       "en/regional-incentives-gc836-p06/index.html",
       "en/ricpe-hnt-gc836-traceability/index.html",
       "en/institutionalisation-chain-ric-eu-incentives/index.html",
-      "en/updates/feed.xml"
+      "en/updates/feed.xml",
+      "en/institutional-records/index.html",
+      "en/public-prosecution-communications-proceedings/index.html"
     ]
   },
   "expected_source_files": [
     "GC836_P06_EVIDENCE_AND_AUTHORITY_MATRIX_21AUG2026.json",
     "SUN_PARK_RICPE_HNT_GC836_FINANCING_CHRONOLOGY_21AUG2026.md",
+    "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
     "assets/data/institutional-communications-20261025.json",
     "assets/data/institutional-communications-register-v1.json",
     "assets/data/material-updates-v1.json",
     "assets/data/redsara-age-filings-register-v1.json",
+    "assets/fiscalia-proceedings-interconnectivity-20260831.js",
     "en/index.html",
+    "en/institutional-records/index.html",
     "en/institutionalisation-chain-ric-eu-incentives/index.html",
     "en/regional-incentives-gc836-p06/index.html",
     "en/ricpe-hnt-gc836-traceability/index.html",
@@ -43,29 +50,37 @@
     "es/cadena-instrumentalizacion-ric-fondos-incentivos/index.html",
     "es/incentivos-regionales-gc836-p06/index.html",
     "es/index.html",
+    "es/registros-institucionales/index.html",
     "es/ricpe-hnt-gc836-trazabilidad/index.html",
     "ops/CURRENT_UNITARY_STATE.json",
     "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json",
+    "publication-manifests/madrid-ctbg-registered-20261025.json",
+    "scripts/build_fiscalia_proceedings_interconnectivity.py",
     "scripts/build_redsara_age_filings_register.py",
     "scripts/load_madrid_ctbg_filings_20261025.py",
     "scripts/reconcile_institutional_communications.py",
+    "scripts/smoke_fiscalia_proceedings_interconnectivity.mjs",
+    "scripts/test_build_fiscalia_proceedings_interconnectivity.py",
     "scripts/test_madrid_ctbg_filings_20261025.py",
+    "scripts/validate_fiscalia_proceedings_interconnectivity.py",
     "scripts/validate_institutional_communications.py",
     "scripts/validate_redsara_authority_discovery.py",
     "scripts/validate_unitary_control_plane.py",
     "sitemap-multiple-financial-lives.xml",
     "sitemap-supervisory-practice.xml",
-    "sitemap.xml",
-    "publication-manifests/madrid-ctbg-registered-20261025.json"
+    "sitemap.xml"
   ],
   "candidate_file_sha256": {
     "GC836_P06_EVIDENCE_AND_AUTHORITY_MATRIX_21AUG2026.json": "7eb86be9216cb054ed786f6da57d0df667ee88dcc1600cea95b94c219a92e222",
     "SUN_PARK_RICPE_HNT_GC836_FINANCING_CHRONOLOGY_21AUG2026.md": "217203c8921b1beafcda84e9d257051d4e30be3d3ceed4756ac96d633c8d20b0",
+    "assets/data/fiscalia-proceedings-interconnectivity-v1.json": "40bf569ac5df7b632f5391e960d570ab742d8d1582a404639788554eabab08f7",
     "assets/data/institutional-communications-20261025.json": "191d22fd50d5409f963e0ffac995c4a05e4b18e61abd923c4de522ae940364a0",
     "assets/data/institutional-communications-register-v1.json": "59dfe3f0a5652d151dc1355b6c00d23801d87442c02360a98610d4f35bf2f374",
     "assets/data/material-updates-v1.json": "87eefca7fe2eed5d8f6caf02b3c8a3b405e3f9ad1dcf4d06acc467d34f707588",
     "assets/data/redsara-age-filings-register-v1.json": "365bd1bd428a62ab724b771a188bfd5f8f6baacfeba7310aa92a03d44d15accd",
+    "assets/fiscalia-proceedings-interconnectivity-20260831.js": "16360d5053868576be46980a7086ccd13fee0dc5cdaeae946585c4d4efb23fb3",
     "en/index.html": "655340de9d02d8e59d23b1e719dad293e7bb926bde028d710189d3e691327633",
+    "en/institutional-records/index.html": "c22d77001e573aca02be9b8991b29a67fef84f857719efd5b3c866b33ca1d571",
     "en/institutionalisation-chain-ric-eu-incentives/index.html": "c96c661d289129decfeb3ad4fcd0a6b8acea977d87ea2054f660c3a8a77cc76b",
     "en/regional-incentives-gc836-p06/index.html": "1458709ed4a587fed1fc147864f586a30d834a4980d93e14191fad2b6da535e6",
     "en/ricpe-hnt-gc836-traceability/index.html": "0cce4880039bbf294936e3740555e4d19d980261fae2d76a0c0014dfb29a16ab",
@@ -76,19 +91,24 @@
     "es/cadena-instrumentalizacion-ric-fondos-incentivos/index.html": "22b13f384b40e34a058505ee458b09caf98df7d682809d916b7bd8f5542985f8",
     "es/incentivos-regionales-gc836-p06/index.html": "563008e201f78c4b059301b74495786db128c3f352d4cc017979f6caef90e821",
     "es/index.html": "3a802ffa93c179188db8c1bf39f976af5991937d4e144fa56cd4f56e75218d1e",
+    "es/registros-institucionales/index.html": "4d672115175bff3db0feb7f5ddeb43666cc0fbb286bd2428337e375934a9ff9f",
     "es/ricpe-hnt-gc836-trazabilidad/index.html": "ad5b095b7551e4eeaadfca88278dfe666ec4e721c06d5c4ed1586b0de090bdcf",
     "ops/CURRENT_UNITARY_STATE.json": "27f1a47aea79bd2aeb792bbd6124597906613b1c2c17561051a4ed3b2ec5bb36",
     "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json": "4ab5c57b4cec6bc44f03064e8d3681bd24de49fcf5f7f7b699434e689a13072c",
+    "scripts/build_fiscalia_proceedings_interconnectivity.py": "f5f0611f9f2bb01bc222972762e5ff291dc50d7861a26fb630063f5203753e9f",
     "scripts/build_redsara_age_filings_register.py": "623a94b99dd73c6b59582d3df8f3395df2df261ac1427ef25d70f73c6fa51ab6",
     "scripts/load_madrid_ctbg_filings_20261025.py": "865c6534be867fa7091eed5dda9a71b22ae724200a19884ccc38d6b0a2f55fa1",
     "scripts/reconcile_institutional_communications.py": "81258988da1e4c99b3059b29d681d2eff0218f22cefc092a3e693dd8996f0245",
+    "scripts/smoke_fiscalia_proceedings_interconnectivity.mjs": "7bf9b993ca434c22eff125ff47938e03c6c58b65809c12aa30be862aa9617d2a",
+    "scripts/test_build_fiscalia_proceedings_interconnectivity.py": "fa9bbdd3481e56472e7b61fccb57ddf4c97c3ade28458e108910927404b38e1c",
     "scripts/test_madrid_ctbg_filings_20261025.py": "d88e1eb232692c1c2c004d17e9a5e1014ab8035c4e575a242ed74622e92b0d8a",
+    "scripts/validate_fiscalia_proceedings_interconnectivity.py": "0d55d96e9245f942f059499fff78e2c40115846031e5c74ccc64052dfee26965",
     "scripts/validate_institutional_communications.py": "757a2e2914ccbe5daab3d0d8540d6946d6f3008ec0fc955b49156eb805c4ca6a",
     "scripts/validate_redsara_authority_discovery.py": "fab1f63366dbb972161e4e3e9a2b11357b6673cf6984b850da6ee9e0420c111e",
     "scripts/validate_unitary_control_plane.py": "83db14fbdcbbfd7ad86a846819480514b1d5b8b56ddae554ca7cf63f878a3a3b",
     "sitemap-multiple-financial-lives.xml": "7971db66e1a80edf58063d631e48d4a7219b28b897e6dea510fbd2b75fcff55e",
     "sitemap-supervisory-practice.xml": "400ee90dbee55b2d3338302ee5a559f3e2bb26034b22ffa4ae63958d98b388e0",
-    "sitemap.xml": "e15e42f0cdf64c64db875aad6135480b81d8433910eab076b4ab83605a604085"
+    "sitemap.xml": "4181bcee209ceb6227734d764cbbd92738e7893fe302939aec5cac5406a7dc00"
   },
   "canonical_event_ids": [
     "PD-SP-EVT-0600",
@@ -155,9 +175,25 @@
       "Local institutional reconciliation and AGE projection deterministic checks",
       "Nine October-cohort tests plus thirteen existing reconciliation tests",
       "Repository preservation, publication integrity, audience, unitary, enterprise attribution and supervisory validators",
-      "Static bilingual history/XML/privacy/internal-link audit: 106 added internal links resolve"
+      "Static bilingual history/XML/privacy/internal-link audit: 176 added internal links resolve",
+      "Bounded Fiscalia projection regression and deterministic checks; strict static DOM-anchor verification for all six events in both institutional readers",
+      "Ten Fiscalia graph tests preserve 326 legacy event objects, 164 prior proceeding edges, 84 sequence edges, 26 Fiscalia files and nine chains; the finite six-event extension is validated separately"
     ],
-    "rendered_qa": "OPEN — no Chromium/Chrome binary is available in the preparation runtime; no rendered verification is claimed. The integrator must inspect the affected routes in a browser-capable environment."
+    "rendered_qa": "OPEN — no Chromium/Chrome binary is available in the preparation runtime; no rendered verification is claimed. The integrator must inspect the affected routes in a browser-capable environment.",
+    "prior_remote_candidate": {
+      "head_sha": "22b2cb899f29494917adddd8eff9c128ff3c93ba",
+      "release_acceptance": "https://github.com/sbu001monterecco/por-derecho/actions/runs/40175250399",
+      "release_acceptance_conclusion": "success",
+      "publication_integrity": "https://github.com/sbu001monterecco/por-derecho/actions/runs/40175250386",
+      "publication_integrity_conclusion": "success",
+      "new_dependent_failure_repaired": "The finite October cohort is now included in the derived Fiscalia proceedings graph with its own validated denominator and unresolved-allocation boundaries.",
+      "inherited_acta_failure": {
+        "run": "https://github.com/sbu001monterecco/por-derecho/actions/runs/40175250351",
+        "classification": "INHERITED_IDENTICAL_BASELINE_DRIFT",
+        "scope": "The unchanged post7june builder moves the same ten unrelated route blocks on the preparation base and candidate; identical input, output and diff hashes were verified in isolated copies. Those ten routes are not changed by this release."
+      }
+    },
+    "browser_smoke_extension": "The existing CI smoke now checks twelve actual institutional card anchors, 0604/0605 fragment viewport navigation in both languages, unresolved proceeding allocation and administrative public-aid labels with zero inferred judicial proceedings. Local Chromium remains unavailable; browser execution is not claimed by this candidate."
   },
   "publication_closeout": {
     "pull_request": null,
@@ -165,5 +201,28 @@
     "deployment_evidence": null,
     "live_verification_evidence": null
   },
-  "release_boundary": "Local preparation only. Publication, merge, deployment and exact live-byte verification remain separate integrator actions. This manifest is not a live, filing-service, legal-merits or deletion-safe declaration."
+  "release_boundary": "Local preparation only. Publication, merge, deployment and exact live-byte verification remain separate integrator actions. This manifest is not a live, filing-service, legal-merits or deletion-safe declaration.",
+  "dependency_reconciliation": {
+    "fiscalia_graph": {
+      "legacy_communication_events_preserved": 326,
+      "legacy_matter_linked_events_preserved": 141,
+      "legacy_event_objects_preserved": 326,
+      "legacy_proceeding_edges_preserved": 164,
+      "october_communication_events": 6,
+      "current_communication_events": 332,
+      "current_matter_linked_events": 147,
+      "new_existing_grant_context_edges": 2,
+      "new_prosecution_or_transparency_proceeding_identities_inferred": false,
+      "boundary": "The six registry events remain visible with unresolved criminal/transparency proceeding allocation. Exact existing GC/836/P06 references support context-only links to the existing administrative public-aid file, without proving joinder, internal incorporation or merits.",
+      "reader_boundary": "Existing PUBLIC_AID_FILE selected views and the two new grant-context event badges are explicitly administrative, with zero inferred judicial proceedings. The outside-proceedings filter uses a neutral label; Fiscalía and judicial views retain their behavior."
+    },
+    "institutional_readers": {
+      "actual_static_canonical_anchors_added_per_language": 6,
+      "target_pages": [
+        "es/registros-institucionales/index.html",
+        "en/institutional-records/index.html"
+      ],
+      "link_rule": "Every communication deep link must resolve to an actual DOM id; JSON membership alone is not treated as a rendered anchor."
+    }
+  }
 }

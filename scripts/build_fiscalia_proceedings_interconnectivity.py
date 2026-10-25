@@ -18,6 +18,15 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
 
+from load_madrid_ctbg_filings_20261025 import (
+    CONTROL as OCTOBER_CONTROL,
+    EXPECTED as OCTOBER_RECEIPTS,
+    INPUT as OCTOBER_INPUT,
+    SOURCE_PREFIX as OCTOBER_SOURCE_PREFIX,
+    load_filing_events as load_october_filing_events,
+)
+from reconcile_institutional_communications import RECEIPT_BOUNDARY
+
 
 ROOT = Path(__file__).resolve().parents[1]
 COMMUNICATIONS = ROOT / "assets/data/institutional-communications-register-v1.json"
@@ -26,8 +35,10 @@ PUBLIC_MASTER = ROOT / "assets/data/proceedings-master-public-v1.json"
 ASSERTIONS = ROOT / "assets/data/fiscalia-proceedings-link-assertions-v1.json"
 TARGET = ROOT / "assets/data/fiscalia-proceedings-interconnectivity-v1.json"
 
-EXPECTED_EVENTS = 326
-EXPECTED_MATTER_LINKED_EVENTS = 141
+# These denominators remain exact for the pre-October projection. The finite
+# receipt-checked extension below is counted separately, never absorbed here.
+EXPECTED_LEGACY_EVENTS = 326
+EXPECTED_LEGACY_MATTER_LINKED_EVENTS = 141
 EXPECTED_FISCALIA_EXACT = 23
 EXPECTED_FISCALIA_UNRESOLVED = 3
 NON_FISCALIA_SOURCE_BATCHES = {
@@ -37,6 +48,11 @@ NON_FISCALIA_SOURCE_BATCHES = {
 SUPPORT_REFERENCE_PREFIXES = ("REGAGE",)
 STATUS_EXPORT_SOURCE_PREFIX = "REGAGE_STATUS_EXPORT_20260921:"
 FISCALIA_RECORD_TYPES = {"FISCALIA_FILE", "UNRESOLVED_REFERENCE"}
+OCTOBER_MAPPING_STATE = "FISCALIA_AND_TRANSPARENCY_PROCEEDING_ALLOCATION_UNRESOLVED"
+OCTOBER_MAPPING_BOUNDARY = {
+    "en": "The receipt and project document references do not allocate a canonical Fiscalía or transparency proceeding identity. Any exact public-aid file link is context only; it does not establish incorporation, joinder, examination or a prosecution file number.",
+    "es": "El justificante y las referencias documentales del proyecto no asignan una identidad canónica de procedimiento de Fiscalía ni de transparencia. Todo enlace exacto al expediente de ayudas es solo contextual; no acredita incorporación, acumulación, examen ni número de expediente fiscal.",
+}
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -60,6 +76,26 @@ def normalise_reference(value: str) -> str:
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def validated_october_filing_event_ids(events: list[dict[str, Any]], root: Path) -> set[str]:
+    """Admit only the six complete source-controlled receipt event objects.
+
+    Match all three identity surfaces before comparing objects, so a changed
+    source prefix, reused ID, substituted reference or duplicate cannot hide
+    behind an unchanged total of six.
+    """
+    expected = {event["event_id"]: event for event in load_october_filing_events(root, RECEIPT_BOUNDARY)}
+    actual_rows = [
+        event for event in events
+        if str(event.get("source_key", "")).startswith(OCTOBER_SOURCE_PREFIX)
+        or event.get("event_id") in expected
+        or event.get("official_reference") in OCTOBER_RECEIPTS
+    ]
+    actual = {event["event_id"]: event for event in actual_rows}
+    if len(actual_rows) != len(expected) or len(actual) != len(expected) or actual != expected:
+        raise ValueError("October filing source cohort mismatch; reconcile the six controlled receipt events")
+    return set(expected)
 
 
 def reference_aliases(row: dict[str, str]) -> set[str]:
@@ -192,6 +228,7 @@ def build() -> dict[str, Any]:
     from prepare_platform_incibe_20260925 import validated_platform_event_ids
     platform_ids = validated_platform_event_ids(communications['events'], ROOT)
     non_fiscalia_notice_ids |= platform_ids
+    october_ids = validated_october_filing_event_ids(communications["events"], ROOT)
     events = [
         event
         for event in communications["events"]
@@ -199,10 +236,12 @@ def build() -> dict[str, Any]:
         and not str(event.get("source_key", "")).startswith(STATUS_EXPORT_SOURCE_PREFIX)
     ]
 
-    if len(events) != EXPECTED_EVENTS:
-        raise ValueError(f"expected {EXPECTED_EVENTS} communication events, found {len(events)}")
-    if sum(bool(e.get("matter_references")) for e in events) != EXPECTED_MATTER_LINKED_EVENTS:
-        raise ValueError("matter-linked event denominator changed; reconcile before publishing")
+    legacy_events = [event for event in events if event["event_id"] not in october_ids]
+    october_events = [event for event in events if event["event_id"] in october_ids]
+    if len(legacy_events) != EXPECTED_LEGACY_EVENTS or len(october_events) != len(october_ids):
+        raise ValueError(f"expected {EXPECTED_LEGACY_EVENTS} legacy communication events plus the six controlled October receipts, found {len(legacy_events)} + {len(october_events)}")
+    if sum(bool(e.get("matter_references")) for e in legacy_events) != EXPECTED_LEGACY_MATTER_LINKED_EVENTS:
+        raise ValueError("legacy matter-linked event denominator changed; reconcile before publishing")
 
     projections: list[dict[str, Any]] = []
     proceeding_edges: list[dict[str, Any]] = []
@@ -223,6 +262,8 @@ def build() -> dict[str, Any]:
             if not master_id:
                 unresolved.append(reference)
                 continue
+            if event["event_id"] in october_ids and by_master[master_id]["Record_Type"] != "PUBLIC_AID_FILE":
+                raise ValueError("October proceeding allocation requires a separately source-controlled mapping; only exact public-aid context is admitted")
             direct = bool(normalised and normalised in official_norm)
             resolved.append((reference, master_id, direct))
 
@@ -240,6 +281,10 @@ def build() -> dict[str, Any]:
             scope = "SUPPORT_REFERENCE_ONLY"
         else:
             scope = "NO_PROCEEDING_LINK"
+        if event["event_id"] in october_ids and master_ids:
+            # PUBLIC_AID_FILE context is administrative, not a judicial case or
+            # an allocation of the newly registered criminal complaint.
+            scope = "OUTSIDE_JUDICIAL_PROCEEDING"
 
         projection = event_projection(event)
         projection.update(
@@ -251,6 +296,15 @@ def build() -> dict[str, Any]:
                 "unresolved_matter_references": unresolved,
             }
         )
+        if event["event_id"] in october_ids:
+            projection.update({
+                "allocation_state": "UNRESOLVED_PROCEEDING_ALLOCATION",
+                "proceeding_mapping_state": OCTOBER_MAPPING_STATE,
+                "mapping_boundary_en": OCTOBER_MAPPING_BOUNDARY["en"],
+                "mapping_boundary_es": OCTOBER_MAPPING_BOUNDARY["es"],
+            })
+            # Keep the limitation visible in the existing reader's proof panel.
+            projection["does_not_prove"] = [*projection["does_not_prove"], OCTOBER_MAPPING_BOUNDARY["en"], OCTOBER_MAPPING_BOUNDARY["es"]]
         projections.append(projection)
         event_master_ids[event["event_id"]] = master_ids
         event_support[event["event_id"]] = support
@@ -275,6 +329,7 @@ def build() -> dict[str, Any]:
                     "operational_scope": (
                         "OUTSIDE_JUDICIAL_PROCEEDING"
                         if row["Record_Type"] in FISCALIA_RECORD_TYPES
+                        or (event["event_id"] in october_ids and row["Record_Type"] == "PUBLIC_AID_FILE")
                         else "INSIDE_JUDICIAL_PROCEEDING"
                     ),
                     "boundary_en": "The edge proves only that this event names the canonical reference in the stated role.",
@@ -409,10 +464,14 @@ def build() -> dict[str, Any]:
     unresolved_literals = sorted(
         {literal for event in projections for literal in event["unresolved_matter_references"]}
     )
+    legacy_projections = [event for event in projections if event["event_id"] not in october_ids]
+    if any(event["unresolved_matter_references"] for event in legacy_projections):
+        raise ValueError("legacy matter references remain unresolved; reconcile before publishing")
+    october_projections = [event for event in projections if event["event_id"] in october_ids]
     return {
         "schema_version": "1.0.0",
         "dataset": "fiscalia-proceedings-interconnectivity-v1",
-        "control_date": "2026-09-03",
+        "control_date": "2026-10-25",
         "status": "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION",
         "canonical_sources": {
             "communications_register": str(COMMUNICATIONS.relative_to(ROOT)),
@@ -424,9 +483,28 @@ def build() -> dict[str, Any]:
             "link_assertions_sha256": sha256(ASSERTIONS),
         },
         "boundaries": assertions["boundaries"],
+        "october_cohort_control": {
+            "control_id": OCTOBER_CONTROL,
+            "source_descriptor": OCTOBER_INPUT,
+            "source_descriptor_sha256": sha256(ROOT / OCTOBER_INPUT),
+            "event_ids": sorted(october_ids),
+            "official_references": sorted(event["official_reference"] for event in october_projections),
+            "proceeding_mapping_state": OCTOBER_MAPPING_STATE,
+            "context_master_ids": sorted({mid for event in october_projections for mid in event["master_ids"]}),
+            "unresolved_matter_reference_literals": sorted({literal for event in october_projections for literal in event["unresolved_matter_references"]}),
+            "boundary_en": OCTOBER_MAPPING_BOUNDARY["en"],
+            "boundary_es": OCTOBER_MAPPING_BOUNDARY["es"],
+        },
         "coverage": {
             "communication_events": len(projections),
             "matter_linked_events": sum(bool(e["matter_references"]) for e in projections),
+            "legacy_communication_events": len(legacy_projections),
+            "legacy_matter_linked_events": sum(bool(e["matter_references"]) for e in legacy_projections),
+            "legacy_proceeding_linked_events": sum(bool(e["master_ids"]) for e in legacy_projections),
+            "october_registered_events": len(october_projections),
+            "october_matter_linked_events": sum(bool(e["matter_references"]) for e in october_projections),
+            "october_context_linked_events": sum(bool(e["master_ids"]) for e in october_projections),
+            "unresolved_proceeding_allocation_events": len(october_projections),
             "proceeding_linked_events": sum(bool(e["master_ids"]) for e in projections),
             "support_reference_only_events": allocation_counts["SUPPORT_REFERENCE_ONLY"],
             "event_proceeding_edges": len(proceeding_edges),
