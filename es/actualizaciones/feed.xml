@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <title>Actualizaciones materiales — Project Sun Rock</title>
+  <subtitle>La actualización del feed y la entrada de 25 de octubre de 2026 usan una fecha editorial de calendario: 00:00:00Z no es una hora constatada de publicación, presentación o registro. Las entradas anteriores conservan sus metadatos originales y el alcance de verificación correspondiente a su fecha.</subtitle>
   <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/</id>
   <link rel="self" type="application/atom+xml" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/"/>
   <updated>2026-10-25T00:00:00Z</updated>
   <author><name>Project Sun Rock</name></author>
 <!-- PD-MAD-CTBG-20261025 BEGIN -->
-  <entry><title>Madrid / CTBG: documentos recuperados y complementos registrados</title><id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#madrid-ctbg-25oct</id><link href="https://sbu001monterecco.github.io/por-derecho/es/incentivos-regionales-gc836-p06/#october-2026-source-reconciliation"/><published>2026-10-25T00:00:00Z</published><updated>2026-10-25T00:00:00Z</updated><summary>Los complementos registrados en Madrid y CTBG el 25 de octubre precisan la falta de obtención actual de cinco categorías, identifican la copia posterior con CSV, preservan la evidencia contraria de abril–junio y distinguen propiedad, inicio de inversión y atribución personal. Se mantiene NO DESISTO. Están verificadas la presentación e identidad de anexos; no se acreditan admisión, investigación, acceso completo ni responsabilidad penal.</summary></entry>
+  <entry><title>Madrid / CTBG: documentos recuperados y complementos registrados</title><id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#madrid-ctbg-25oct</id><link href="https://sbu001monterecco.github.io/por-derecho/es/incentivos-regionales-gc836-p06/#october-2026-source-reconciliation"/><published>2026-10-25T00:00:00Z</published><updated>2026-10-25T00:00:00Z</updated><summary>Los complementos registrados en Madrid y CTBG el 25 de octubre precisan la falta de obtención actual de cinco categorías, identifican la copia posterior con CSV, preservan la evidencia contraria de abril–junio y distinguen propiedad, inicio de inversión y atribución personal. Se mantiene NO DESISTO. Están verificadas la presentación e identidad de anexos; no se acreditan admisión, investigación, acceso completo ni responsabilidad penal. Precisión de fecha: el valor Atom published/updated 2026-10-25T00:00:00Z es un marcador editorial de fecha de calendario, no una hora constatada de publicación, presentación o registro. No convierte a UTC las horas literales de los justificantes.</summary></entry>
 <!-- PD-MAD-CTBG-20261025 END -->
   <entry>
     <title>Cuatrecasas / ETJ 163 / DP 748: denegada la suspensión civil, verificada la tramitación de la apelación penal</title>
