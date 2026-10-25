@@ -131,11 +131,17 @@ try {
       const card = page.locator(`article#${target}`);
       await card.waitFor({ state: 'visible' });
       if (await card.count() !== 1 || (await card.locator('h3').innerText()).trim() !== reference || !(await card.innerText()).includes(item.event_id)) fail(`${readerRoute}: fragment did not resolve to the identified registration card`);
-      const fragmentVisible = await card.evaluate((element, id) => {
-        const rect = element.getBoundingClientRect();
-        return location.hash === `#${id}` && rect.top < innerHeight && rect.bottom > 0;
-      }, target);
-      if (!fragmentVisible) fail(`${readerRoute}: ${target} did not scroll into the visible viewport`);
+      // Let native smooth fragment scrolling settle; never force the target into view.
+      try {
+        await page.waitForFunction(id => {
+          const element = document.getElementById(id);
+          if (!element) return false;
+          const rect = element.getBoundingClientRect();
+          return location.hash === `#${id}` && rect.top < innerHeight && rect.bottom > 0;
+        }, target, { timeout: 5000 });
+      } catch {
+        fail(`${readerRoute}: ${target} did not scroll into the visible viewport`);
+      }
     }
     await page.close();
   }

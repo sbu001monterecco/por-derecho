@@ -99,7 +99,7 @@
     "scripts/build_redsara_age_filings_register.py": "623a94b99dd73c6b59582d3df8f3395df2df261ac1427ef25d70f73c6fa51ab6",
     "scripts/load_madrid_ctbg_filings_20261025.py": "865c6534be867fa7091eed5dda9a71b22ae724200a19884ccc38d6b0a2f55fa1",
     "scripts/reconcile_institutional_communications.py": "81258988da1e4c99b3059b29d681d2eff0218f22cefc092a3e693dd8996f0245",
-    "scripts/smoke_fiscalia_proceedings_interconnectivity.mjs": "888a74fc2616d5b27dd403179ae73b5bec57efc65cf150ae1edf0f6e4024105e",
+    "scripts/smoke_fiscalia_proceedings_interconnectivity.mjs": "fef195d27f9ca0ad2e86824c9fd6b43e53582bc67f8abe9577c9252b3a07c1a1",
     "scripts/test_build_fiscalia_proceedings_interconnectivity.py": "fa9bbdd3481e56472e7b61fccb57ddf4c97c3ade28458e108910927404b38e1c",
     "scripts/test_madrid_ctbg_filings_20261025.py": "d88e1eb232692c1c2c004d17e9a5e1014ab8035c4e575a242ed74622e92b0d8a",
     "scripts/validate_fiscalia_proceedings_interconnectivity.py": "0d55d96e9245f942f059499fff78e2c40115846031e5c74ccc64052dfee26965",
@@ -209,6 +209,15 @@
       "source_fingerprint_and_graph_browser_checks": "Completed before the fragment-navigation assertion; both language graph views passed their administrative and unresolved-allocation checks.",
       "cause": "A same-document fragment navigation returns no new HTTP Response; the test incorrectly required one after already verifying the reader initial HTTP response.",
       "bounded_correction": "Allow a null response for the known hash-only navigation while retaining the initial HTTP check, any actual failed HTTP response check and exact hash/card/reference/viewport assertions.",
+      "browser_execution_after_correction": "PENDING_CI_NO_PASS_CLAIM"
+    },
+    "native_fragment_scroll_settlement": {
+      "observed_head": "19209f604cae2dd7722cbb618322e327feff3392",
+      "run": "https://github.com/sbu001monterecco/por-derecho/actions/runs/40176671243",
+      "conclusion": "failure",
+      "observed_boundary": "The English target card identity/reference checks passed before its viewport check; both graph-language classification loops and the English six-card DOM checks passed.",
+      "cause_under_test": "The existing stylesheet enables native smooth scrolling; an immediate rectangle read can precede settlement.",
+      "bounded_correction": "Wait at most five seconds for the unchanged exact-hash and actual target viewport-intersection predicate. No forced scrolling or weaker card/identity assertion is introduced; a timeout remains a failure.",
       "browser_execution_after_correction": "PENDING_CI_NO_PASS_CLAIM"
     }
   },
