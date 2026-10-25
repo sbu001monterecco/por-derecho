@@ -35,6 +35,7 @@ on:
       - 'scripts/validate_unitary_control_plane.py'
       - 'scripts/classify_public_impact_shadow_20260917.py'
       - 'scripts/audit_github_backend_capabilities_20260917.py'
+      - 'scripts/audit_control_plane_topology.py'
       - 'scripts/validate_continuity_horizon_20260917.py'
       - 'scripts/validate_gitlab_public_surface_recovery_20260918.py'
       - 'scripts/validate_gitlab_backend_recovery_20260919.py'
@@ -58,6 +59,7 @@ on:
       - 'es/buscar/**'
       - 'tests/test_github_outage_backend_20260917.py'
       - 'tests/test_github_backend_hardening_20260917.py'
+      - 'tests/test_control_plane_topology_audit_20260922.py'
   pull_request:
 
 
@@ -84,10 +86,14 @@ jobs:
         run: python3 -m unittest discover -s tests -p 'test_github_outage_backend_20260917.py' -v
       - name: Validate backend hardening controls
         run: python3 -m unittest discover -s tests -p 'test_github_backend_hardening_20260917.py' -v
+      - name: Test advisory control-plane topology census
+        run: python3 -m unittest discover -s tests -p 'test_control_plane_topology_audit_20260922.py' -v
       - name: Verify exact-main preservation reuse and rejection cases
         run: python3 -m unittest discover -s scripts -p test_preservation_snapshot_plan.py -v
       - name: Audit reconstructible backend capabilities
         run: python3 scripts/audit_github_backend_capabilities_20260917.py
+      - name: Audit CI topology without changing gate semantics
+        run: python3 scripts/audit_control_plane_topology.py
       - name: Validate 48h plus 36h continuity horizon
         run: python3 scripts/validate_continuity_horizon_20260917.py
       - name: Validate public GitLab recovery classifications
