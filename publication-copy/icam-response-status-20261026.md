@@ -15,3 +15,11 @@
 **PwC · ICAM 2297/26:** ICAM acordó archivo el **21 de octubre** (`RS-014310/26`). Se envió a CCACM por correo electrónico una alzada de 33 páginas el **24 de octubre**. Falta constancia verificada del **asiento** competente, fecha efectiva y referencia del recurso; el correo enviado no equivale necesariamente a registro. No duplicar sin razón jurídica comprobada. Objetivo interno 30 de octubre; 23 de noviembre condicionado.
 
 **Límites:** Los expedientes son distintos. No se afirma infracción deontológica, conocimiento subjetivo, coordinación ilícita ni respaldo institucional. Justificantes REG-AGE dirigidos a otros destinatarios no acreditan la subsanación ante ICAM. Las fuentes privadas se custodian fuera de este repositorio, sin publicación de originales.
+
+### 26 October 2026 — new ICAM acknowledgment (English)
+
+ICAM Deontología replied **“recibido gracias”** at **09:04:07 UTC** to the **24 October** email sending the PwC **ICAM 2297/26** alzada to CCACM with ICAM copied. This is evidence that **ICAM acknowledged correspondence**, **not** a CCACM formal registration number, recognised filing date, attachment incorporation or appeal reference. The appeal remains pending verification; do not resend it merely because only an acknowledgment is available. The separate Uría **2336/26** supplementation status has not changed.
+
+### 26 de octubre de 2026 — nuevo acuse del ICAM (español)
+
+Deontología del ICAM contestó **«recibido gracias»** a las **09:04:07 UTC** al correo de **24 de octubre** que remitía la alzada de PwC **ICAM 2297/26** al CCACM, con copia al ICAM. Acredita **acuse de correspondencia por el ICAM**, **no** asiento del CCACM, fecha eficaz de presentación, incorporación del PDF ni referencia de recurso. El trámite continúa abierto, sin duplicar el envío. La subsanación de Uría **2336/26** es independiente y no cambia.
