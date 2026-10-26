@@ -116,7 +116,14 @@
           "archive_date": "2026-10-21",
           "appeal_email_date": "2026-10-24",
           "appeal_pages": 33,
-          "official_appeal_receipt_confirmed": false
+          "official_appeal_receipt_confirmed": false,
+          "icam_deontologia_correspondence_ack": {
+            "date_utc": "2026-10-26T09:04:07Z",
+            "sender": "ICAM Deontología (originating college, not CCACM)",
+            "wording": "recibido gracias",
+            "scope": "correspondence acknowledged; 33pp appeal formally registered/incorporated not proven",
+            "official_ccacm_registry_proven": false
+          }
         }
       ],
       "exclusion": "Other 25 October REG-AGE receipts (Fiscalía Madrid / CTBG) are not ICAM Uría response filings.",
