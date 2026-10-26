@@ -1,0 +1,41 @@
+{
+  "control_id": "PD-GC836-RECOVERED-SOURCE-READER-20261025-01",
+  "authorization_date": "2026-10-26",
+  "scope": "Five source documents, 53 pages, personal-data-only redaction",
+  "state": "PUBLICATION_AUTHORIZED_SOURCE_BYTES_PENDING_RELEASE",
+  "documents": [
+    {
+      "id": "GR-01",
+      "pages": 1,
+      "title": "Ministry application acknowledgement"
+    },
+    {
+      "id": "GR-02",
+      "pages": 1,
+      "title": "Council project assessment"
+    },
+    {
+      "id": "GR-03",
+      "pages": 42,
+      "title": "Council criteria 2022-2027 (consolidated 2025)"
+    },
+    {
+      "id": "GR-04",
+      "pages": 1,
+      "title": "Ministry invitation for HNT representations"
+    },
+    {
+      "id": "GR-05",
+      "pages": 8,
+      "title": "Ministry report to CTBG"
+    }
+  ],
+  "release_controls": [
+    "Publish only independently verified redacted derivatives, never private originals",
+    "Preserve all substantive grant figures, official names in public functions, legal reasoning and contrary evidence",
+    "Do not claim grant disbursement, fraud or final CTBG findings from these records alone",
+    "Verify file fingerprints and viewer rendering before announcing a live release"
+  ],
+  "private_source_reference": "Por Derecho private vault / GC836 — PUBLIC_REDACTED_PDF_REVIEW_20261025",
+  "public_pdf_files_in_this_commit": 0
+}
