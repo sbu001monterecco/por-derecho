@@ -1,0 +1,16 @@
+{
+  "schema": "por-derecho.gc836.v2.release-path-safety.v1",
+  "control_id": "PD-CANON-AUDIT-20261024-001/GC836-DEPLOYSAFE-20261026-01",
+  "review_date": "2026-10-26",
+  "verified_scope": "local V2 SHA256, bytes, 53 pages, five PDF targets, ES/EN viewer local asset paths; no portraits or scripts",
+  "zip_sha256": "832b93f225622d14699cdbe46a2cd0fb4f70ebd7da5d4214e15ac44da37cfee4",
+  "zip_bytes": 1862526,
+  "zip_overlay_paths": 9,
+  "excludes_root_index_html": true,
+  "excludes_empty_build_report_json": true,
+  "commit_contains_source_pdfs": false,
+  "commit_contains_reader_html": false,
+  "public_live_verified": false,
+  "external_release_authorization": "User authorized five GC836 source documents with personal data redacted. Final protected CI and live readback remain required.",
+  "notice": "This file is QA metadata, not the five-document publication. Do not merge as a complete release until actual five V2 PDF binaries, two pages and the manifest are present and release checks pass."
+}
