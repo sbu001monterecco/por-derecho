@@ -250,3 +250,7 @@ This supplement does **not** overwrite the 25 August snapshot or combine existin
 - **Other filings:** 25 October REG-AGE receipts inspected for Fiscalía Provincial de Madrid and CTBG are addressed to those organs, not the Uría ICAM file. The authenticated ICAM portal was inaccessible to the reviewer; its unseen contents remain unknown. Internal targets of **28 / 30 October**, and provisional date calculations of **5 / 23 November**, are not certified statutory expiries.
 
 No private complaint, original exhibit, mailbox content, signature, personal identifier or nonpublic custody location is included in this GitHub control. No professional misconduct or institutional shielding is adjudicated by these process milestones. This is **candidate repository work**, not a deployed or approved public release.
+
+### 26 October 2026 — ICAM Deontología acknowledgment of PwC correspondence
+
+ICAM Deontología replied **“recibido gracias”** at **09:04:07 UTC** on 26 October to the **24 October** email transmitting the 33-page PwC `ICAM 2297/26` alzada to **CCACM**, with ICAM copied. It proves only **ICAM correspondence acknowledgment**, not CCACM receipt or formal registration, accepted filing date, attachment incorporation, signature sufficiency or appeal number. Uría `ICAM 2336/26` remains a separate subsanación; the original Uría complaint was registered on 15 October but the later R07 filing remains unverified. No resend or new complaint is authorised by this reply. **Draft review-branch note only; not a new public-site release.**
