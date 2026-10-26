@@ -240,3 +240,13 @@ Read:
 - `/en/canary-council-deontological-coordination-2026/`
 
 **Core rule:** separate responsibility does not mean separate reality. Keep individual files and culpability separate while preserving common evidence, economic context and competence-routing history.
+
+## 13. Supplementary dated controls — 26 October 2026 (review branch only)
+
+This supplement does **not** overwrite the 25 August snapshot or combine existing 434/26, 1487/26/1566/26, 193/2026, ICALPA or ICATF records. See the [bilingual, source-qualified ICAM update](publication-copy/icam-response-status-20261026.md) and the [structured dated addendum](ICAM_CCACM_ICALPA_ICATF_STATUS_25AUG2026.json).
+
+- **Uría ICAM 2336/26:** original complaint officially registered **15 October** (`RE-010860/26`, asiento `126325`); the **21 October** communication is a request for **mejora**, not an archive. A 116-page later response was prepared **24 October**; owner signature and competent formal registration of that later response are not established by the checked evidence.
+- **PwC ICAM 2297/26:** the **21 October** official act is an **archive** (`RS-014310/26`). A 33-page alzada was emailed to CCACM on **24 October**; official entry and reference remain unconfirmed, so transmission alone is not proof of registration.
+- **Other filings:** 25 October REG-AGE receipts inspected for Fiscalía Provincial de Madrid and CTBG are addressed to those organs, not the Uría ICAM file. The authenticated ICAM portal was inaccessible to the reviewer; its unseen contents remain unknown. Internal targets of **28 / 30 October**, and provisional date calculations of **5 / 23 November**, are not certified statutory expiries.
+
+No private complaint, original exhibit, mailbox content, signature, personal identifier or nonpublic custody location is included in this GitHub control. No professional misconduct or institutional shielding is adjudicated by these process milestones. This is **candidate repository work**, not a deployed or approved public release.
