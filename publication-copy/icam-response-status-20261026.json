@@ -37,7 +37,20 @@
       "appeal": {
         "date_emailed": "2026-10-24",
         "pages": 33,
-        "competent_appeal_registry_unverified": true
+        "competent_appeal_registry_unverified": true,
+        "icam_deontologia_acknowledgment": {
+          "date_utc": "2026-10-26T09:04:07Z",
+          "reply_text": "recibido gracias",
+          "sender": "ICAM (not CCACM)",
+          "proves": "Acknowledged appeal email correspondence",
+          "does_not_prove": [
+            "appeal registry",
+            "effective date",
+            "attached PDF incorporation",
+            "appeal reference"
+          ],
+          "response_workflow_complete": false
+        }
       },
       "next": "Seek official CCACM registration/date/reference; do not duplicate email appeal",
       "internal_target": "2026-10-30",
