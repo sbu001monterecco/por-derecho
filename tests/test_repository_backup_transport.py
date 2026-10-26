@@ -29,11 +29,12 @@ def sha(value):
     return hashlib.sha256(value).hexdigest()
 
 
-def metadata():
-    return {"id": m.SOURCE["artifact_id"], "name": m.SOURCE["name"],
-            "expired": False, "size_in_bytes": m.SOURCE["bytes"],
-            "digest": "sha256:" + m.SOURCE["sha256"], "workflow_run": {
-                "id": m.SOURCE["run_id"], "head_sha": m.SOURCE["head_sha"],
+def metadata(source=None):
+    source = m.SOURCE if source is None else source
+    return {"id": source["artifact_id"], "name": source["name"],
+            "expired": False, "size_in_bytes": source["bytes"],
+            "digest": "sha256:" + source["sha256"], "workflow_run": {
+                "id": source["run_id"], "head_sha": source["head_sha"],
                 "head_branch": "main", "repository_id": 1289596840,
                 "head_repository_id": 1289596840}}
 
@@ -202,6 +203,8 @@ class ArchiveTests(unittest.TestCase):
 class NetworkBoundaryTests(unittest.TestCase):
     def test_exact_source_metadata_accepted(self):
         m.verify_metadata(metadata())
+        for source in m.SOURCES.values():
+            m.verify_metadata(metadata(source), source)
 
     def test_each_metadata_pin_enforced(self):
         mutations = [lambda v: v.update(id=7), lambda v: v.update(expired=True),
@@ -213,10 +216,11 @@ class NetworkBoundaryTests(unittest.TestCase):
             lambda v:v["workflow_run"].update(repository_id=7),
             lambda v:v["workflow_run"].update(head_repository_id=7),
             lambda v:v.update(workflow_run=None)]
-        for change in mutations:
-            with self.subTest(change=change):
-                v=metadata(); change(v)
-                with self.assertRaises(ValueError): m.verify_metadata(v)
+        for key, source in m.SOURCES.items():
+            for change in mutations:
+                with self.subTest(source=key, change=change):
+                    v=metadata(source); change(v)
+                    with self.assertRaises(ValueError): m.verify_metadata(v, source)
         with self.assertRaises(ValueError): m.verify_metadata([])
 
     def test_https_storage_allowlist(self):
@@ -231,22 +235,39 @@ class NetworkBoundaryTests(unittest.TestCase):
     def test_redirect_handler_never_forwards_automatically(self):
         self.assertIsNone(m.NoRedirect().redirect_request(None,None,302,"Found",{},"https://other/"))
 
-    def download(self, body=b"archive", redirect=True, bad_url=None):
+    def download(self, body=b"archive", redirect=True, bad_url=None, source=None):
         temporary=tempfile.TemporaryDirectory(); self.addCleanup(temporary.cleanup)
         output=pathlib.Path(temporary.name)/"original.zip"
-        source={**m.SOURCE,"bytes":len(b"archive"),"sha256":sha(b"archive")}
+        source={**(m.SOURCE if source is None else source),
+                "bytes":len(b"archive"),"sha256":sha(b"archive")}
         requests=[]
         def open_mock(req,timeout):
             requests.append(req)
-            if len(requests)==1: return io.BytesIO(json.dumps(metadata()).encode())
+            if len(requests)==1: return io.BytesIO(json.dumps(metadata(source)).encode())
             if len(requests)==2 and redirect:
                 h=Message(); h["Location"]=bad_url or "https://x.blob.core.windows.net/a?sig=PRIVATE"
                 raise urllib.error.HTTPError(req.full_url,302,"Found",h,io.BytesIO())
             return io.BytesIO(body)
         opener=mock.Mock(); opener.open.side_effect=open_mock
-        with mock.patch.dict(m.SOURCE,source),mock.patch.object(m.urllib.request,"build_opener",return_value=opener):
-            m.download_original(output,"FAKE_TEST_TOKEN")
+        with mock.patch.object(m.urllib.request,"build_opener",return_value=opener):
+            m.download_original(output,"FAKE_TEST_TOKEN",source)
         return requests,output
+
+    def test_selected_source_controls_download_and_validation(self):
+        source=m.SOURCES["2026-10-25"]
+        requests,output=self.download(source=source)
+        endpoint=f'https://api.github.com/repos/{source["repository"]}/actions/artifacts/12592912872'
+        self.assertEqual([r.full_url for r in requests[:2]],[endpoint,endpoint+"/zip"])
+        self.assertIsNone(requests[2].get_header("Authorization"))
+        self.assertEqual(output.read_bytes(),b"archive")
+
+    def test_old_metadata_rejected_before_selected_archive_download(self):
+        opener=mock.Mock()
+        opener.open.return_value=io.BytesIO(json.dumps(metadata()).encode())
+        with mock.patch.object(m.urllib.request,"build_opener",return_value=opener):
+            with self.assertRaisesRegex(ValueError,"provider_metadata_mismatch"):
+                m.download_original(pathlib.Path("unused"),"FAKE_TEST_TOKEN",m.SOURCES["2026-10-25"])
+        self.assertEqual(opener.open.call_count,1)
 
     def test_redirect_removes_authorization(self):
         requests,output=self.download()
@@ -284,6 +305,57 @@ class NetworkBoundaryTests(unittest.TestCase):
                 download.assert_not_called()
 
 
+class SourceSelectionTests(unittest.TestCase):
+    def test_selected_source_roundtrip_receipt_and_legacy_pins_preserved(self):
+        original_pins=copy.deepcopy(m.SOURCE)
+        data=b"archive-data"
+        source={**m.SOURCES["2026-10-25"],"bytes":len(data),"sha256":sha(data)}
+        baseline={"GITHUB_REPOSITORY":source["repository"],"GITHUB_REF":"refs/heads/main",
+                  "GITHUB_EVENT_NAME":"workflow_dispatch","GH_TOKEN":"FAKE_TEST_TOKEN"}
+        split=m.split_archive
+        def split_small(original,output,size,digest):
+            return split(original,output,size,digest,chunk_bytes=3)
+        def download(target,token,selected):
+            self.assertEqual(selected,source)
+            target.write_bytes(data)
+        with tempfile.TemporaryDirectory() as directory:
+            output=pathlib.Path(directory)/"parts"
+            with mock.patch.dict(os.environ,baseline,clear=True), \
+                 mock.patch.object(m,"download_original",side_effect=download), \
+                 mock.patch.object(m,"split_archive",side_effect=split_small), \
+                 contextlib.redirect_stdout(io.StringIO()):
+                m.export(output,source)
+            receipt=json.loads((output/"source_receipt.json").read_text())
+            self.assertEqual(receipt["source"],source)
+            self.assertEqual(receipt["independent_custody"],"NOT_PROVEN_BY_EXPORT")
+            restored=pathlib.Path(directory)/"restored.zip"
+            m.reassemble(output/"manifest.json",restored,len(data),sha(data))
+            self.assertEqual(restored.read_bytes(),data)
+        self.assertEqual(m.SOURCE,original_pins)
+
+    def test_cli_selection_and_legacy_export_default(self):
+        for extra,key in [([],"2026-10-12"),(["--source","2026-10-25"],"2026-10-25")]:
+            with self.subTest(key=key), \
+                 mock.patch.object(sys,"argv",["transport","export","parts",*extra]), \
+                 mock.patch.object(m,"export") as export:
+                self.assertEqual(m.main(),0)
+                export.assert_called_once_with(pathlib.Path("parts"),m.SOURCES[key])
+
+    def test_unknown_cli_source_rejected_without_export(self):
+        with mock.patch.object(sys,"argv",["transport","export","parts","--source","latest"]), \
+             mock.patch.object(m,"export") as export,contextlib.redirect_stderr(io.StringIO()):
+            with self.assertRaises(SystemExit) as error: m.main()
+            self.assertEqual(error.exception.code,2)
+            export.assert_not_called()
+
+    def test_legacy_offline_cli_defaults_preserved(self):
+        with mock.patch.object(sys,"argv",["transport","reassemble","manifest","restored"]), \
+             mock.patch.object(m,"reassemble") as assemble,contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(m.main(),0)
+            assemble.assert_called_once_with(pathlib.Path("manifest"),pathlib.Path("restored"),
+                                            691152334,"5940080108e52b01c8fe899abf47c2c773f8ca56220b73ff1df9ba4079cd92d4")
+
+
 class WorkflowTests(unittest.TestCase):
     def setUp(self):
         self.text=(ROOT/".github/workflows/repository-backup-transport.yml").read_text()
@@ -311,12 +383,16 @@ class WorkflowTests(unittest.TestCase):
         self.assertIn("github.event_name == 'workflow_dispatch'",self.text)
 
     def test_part_artifacts_separate_and_below_transport_limit(self):
+        self.assertIn('--source 2026-10-25',self.text)
+        self.assertIn('group: existing-backup-transport-12592912872',self.text)
+        self.assertIn('name: pd-backup-12592912872-manifest',self.text)
         for index in range(1,5):
-            self.assertIn(f"pd-backup-11746464203-part-{index:02d}",self.text)
+            self.assertIn(f"pd-backup-12592912872-part-{index:02d}",self.text)
             self.assertIn(f"archive.part{index:04d}",self.text)
         self.assertEqual(self.text.count("compression-level: 0"),4)
         self.assertLess(m.CHUNK_BYTES + 1024*1024,536870912)
-        self.assertEqual((m.SOURCE["bytes"]+m.CHUNK_BYTES-1)//m.CHUNK_BYTES,4)
+        for source in m.SOURCES.values():
+            self.assertEqual((source["bytes"]+m.CHUNK_BYTES-1)//m.CHUNK_BYTES,4)
 
     def test_actions_exact_pinned_and_no_credential_persistence(self):
         self.assertEqual(self.text.count("persist-credentials: false"),2)
@@ -357,3 +433,4 @@ class NativeGitFixtureTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
