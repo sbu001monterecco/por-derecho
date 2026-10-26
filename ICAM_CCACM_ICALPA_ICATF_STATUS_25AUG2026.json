@@ -26,7 +26,12 @@
           "subject": "RE: Exp. 193/2026 — hechos posteriores relevantes para la correcta delimitación temporal y deontológica de CUATRECASAS",
           "reply": "RECIBIDO.",
           "proves": "receipt of substantive supplemental email by CCACM Secretariat",
-          "does_not_prove": ["admissibility", "agreement", "formal incorporation of every assertion", "merits outcome"]
+          "does_not_prove": [
+            "admissibility",
+            "agreement",
+            "formal incorporation of every assertion",
+            "merits outcome"
+          ]
         },
         {
           "datetime_utc": "2026-08-25T11:57:27Z",
@@ -34,14 +39,23 @@
           "subject": "RE: Exp. 193/2026 — anexos gráficos de apoyo a la aportación sobrevenida CUATRECASAS",
           "reply": "RECIBIDO.",
           "proves": "separate receipt of the two-graphic transmission by CCACM Secretariat",
-          "does_not_prove": ["independent evidential weight", "adoption of interpretation", "finding concerning third parties", "merits outcome"]
+          "does_not_prove": [
+            "independent evidential weight",
+            "adoption of interpretation",
+            "finding concerning third parties",
+            "merits outcome"
+          ]
         }
       ]
     },
     "icam_1487_26": {
       "status": "archived_mixed_grounds_and_referral_to_tenerife_ordered",
       "archive_date": "2026-07-01",
-      "grounds": ["2021_whatsapp_limitation", "2026_linkedin_treated_private_non_professional", "etj_territorial_competence_tenerife"],
+      "grounds": [
+        "2021_whatsapp_limitation",
+        "2026_linkedin_treated_private_non_professional",
+        "etj_territorial_competence_tenerife"
+      ],
       "merits_of_etj_2024_2026_decided": false,
       "appeal_entry": "RE-007622/26",
       "technical_intake_reference": "1566/26",
@@ -75,5 +89,45 @@
     "Tenerife receipt/local docket for ICAM 1487/26 referral",
     "substantive response behind 2647-ICATF phase notification",
     "later or final CCACM order in 193/2026"
+  ],
+  "dated_addenda": [
+    {
+      "date": "2026-10-26",
+      "owner": "PD-ICAM-RESPONSES-20261022-001",
+      "publication_state": "CANDIDATE_BRANCH_ONLY",
+      "source": "publication-copy/icam-response-status-20261026.json",
+      "independent_from_preexisting_cases": true,
+      "cases": [
+        {
+          "matter": "ICAM 2336/26",
+          "subject": "Uría",
+          "original_entry": "RE-010860/26",
+          "original_registration": "2026-10-15",
+          "request_date": "2026-10-21",
+          "request_type": "MEJORA_NOT_ARCHIVE",
+          "response_prepared": "2026-10-24",
+          "response_pages": 116,
+          "final_signature_confirmed": false,
+          "official_response_receipt_confirmed": false
+        },
+        {
+          "matter": "ICAM 2297/26",
+          "subject": "PwC",
+          "archive_date": "2026-10-21",
+          "appeal_email_date": "2026-10-24",
+          "appeal_pages": 33,
+          "official_appeal_receipt_confirmed": false,
+          "icam_deontologia_correspondence_ack": {
+            "date_utc": "2026-10-26T09:04:07Z",
+            "sender": "ICAM Deontología (originating college, not CCACM)",
+            "wording": "recibido gracias",
+            "scope": "correspondence acknowledged; 33pp appeal formally registered/incorporated not proven",
+            "official_ccacm_registry_proven": false
+          }
+        }
+      ],
+      "exclusion": "Other 25 October REG-AGE receipts (Fiscalía Madrid / CTBG) are not ICAM Uría response filings.",
+      "verification_limit": "No authenticated ICAM portal read in 26 October review; outcomes and deadlines not certified."
+    }
   ]
 }
