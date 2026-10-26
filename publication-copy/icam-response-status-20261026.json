@@ -1,0 +1,49 @@
+{
+  "schema": "por-derecho.public-icam-status-20261026.v1",
+  "owner": "PD-ICAM-RESPONSES-20261022-001",
+  "last_reviewed": "2026-10-26",
+  "publication_gate": "DRAFT_REVIEW_NOT_PUBLISHED",
+  "scope": "Source-limited ICAM Uría 2336/26 and PwC 2297/26 procedural checkpoints; separate legal persons and counsel",
+  "cases": [
+    {
+      "matter": "ICAM 2336/26",
+      "name": "Uría",
+      "original_registration": {
+        "date": "2026-10-15",
+        "entry": "RE-010860/26",
+        "asiento": "126325"
+      },
+      "later_notice": {
+        "date": "2026-10-21",
+        "type": "improvement_request_not_archive"
+      },
+      "response": {
+        "date_prepared": "2026-10-24",
+        "pages": 116,
+        "final_signing_not_verified": true,
+        "official_response_registry_not_verified": true
+      },
+      "next": "Verify service/deadline, owner signature, accepted existing-case submission and receipt",
+      "internal_target": "2026-10-28",
+      "conditional_expiry": "2026-11-05"
+    },
+    {
+      "matter": "ICAM 2297/26",
+      "name": "PwC",
+      "archive": {
+        "date": "2026-10-21",
+        "reference": "RS-014310/26"
+      },
+      "appeal": {
+        "date_emailed": "2026-10-24",
+        "pages": 33,
+        "competent_appeal_registry_unverified": true
+      },
+      "next": "Seek official CCACM registration/date/reference; do not duplicate email appeal",
+      "internal_target": "2026-10-30",
+      "conditional_expiry": "2026-11-23"
+    }
+  ],
+  "limitation": "Only registered originals and the acts described are supported by identified records; no final professional misconduct finding. 26Oct review did not access authenticated ICAM portal. REG-AGE receipts to Fiscalía Madrid / CTBG are separate matters.",
+  "no_private_attachments": true
+}
