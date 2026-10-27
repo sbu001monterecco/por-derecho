@@ -158,8 +158,12 @@ jobs:
         run: |
           import json
           import os
+          import sys
           import time
           import urllib.request
+          # GitHub's "shell: python" executes a temporary file outside the
+          # repository. Import only the checked-out module, never site-packages.
+          sys.path.insert(0, os.getcwd())
           from scripts.unitary_material_lifecycle_20261027 import valid_material_stage
 
           base = os.environ['BASE'].rstrip('/')
