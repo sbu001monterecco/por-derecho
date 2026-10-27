@@ -48,6 +48,8 @@ on:
       - 'scripts/sync_unitary_enterprise_attribution_20260826.py'
       - 'scripts/validate_unitary_enterprise_attribution.py'
       - 'scripts/validate_unitary_control_plane.py'
+      - 'scripts/unitary_material_lifecycle_20261027.py'
+      - 'tests/test_unitary_material_lifecycle_20261027.py'
       - 'scripts/audit_criminal_engineering_repository.py'
       - 'scripts/render_audience_experience.mjs'
       - 'scripts/validate_audience_experience.py'
@@ -101,6 +103,8 @@ on:
       - 'scripts/sync_unitary_enterprise_attribution_20260826.py'
       - 'scripts/validate_unitary_enterprise_attribution.py'
       - 'scripts/validate_unitary_control_plane.py'
+      - 'scripts/unitary_material_lifecycle_20261027.py'
+      - 'tests/test_unitary_material_lifecycle_20261027.py'
       - 'scripts/audit_criminal_engineering_repository.py'
       - 'scripts/render_audience_experience.mjs'
       - 'scripts/validate_audience_experience.py'
@@ -143,6 +147,9 @@ jobs:
       - name: Validate synchronized specialist state
         run: python3 scripts/validate_unitary_control_plane.py
 
+      - name: Regression-test distinct historical and current material stages
+        run: python3 -m unittest discover -s tests -p test_unitary_material_lifecycle_20261027.py -v
+
       - name: Verify deployed exact blocks and machine boundaries
         if: github.event_name != 'pull_request'
         env:
@@ -153,6 +160,7 @@ jobs:
           import os
           import time
           import urllib.request
+          from scripts.unitary_material_lifecycle_20261027 import valid_material_stage
 
           base = os.environ['BASE'].rstrip('/')
           with open('assets/data/material-updates-v1.json', encoding='utf-8') as stream:
@@ -174,14 +182,10 @@ jobs:
           )
           if source_public_parity != expected_source_parity:
               raise SystemExit('Source public_parity does not match the declared material lifecycle')
-          pending_source = source_material.get('pending_publication') or {}
-          if source_last_live != expected_material_date:
-              if pending_source.get('control_id') != 'PD-CUATRECASAS-ETJ-DP748-20260918-01':
-                  raise SystemExit('Pending 18-Sep material control is missing')
-              if pending_source.get('state') != 'MERGED_AWAITING_PAGES_READBACK':
-                  raise SystemExit('Pending 18-Sep material must remain MERGED_AWAITING_PAGES_READBACK until metadata promotion')
-              if pending_source.get('merged_to') != 'main':
-                  raise SystemExit('Pending 18-Sep material does not identify main as merge target')
+          with open('assets/data/institutional-communications-20261025.json', encoding='utf-8') as stream:
+              current_control = json.load(stream)
+          if not valid_material_stage(source_material, expected_material_date, current_control):
+              raise SystemExit('Source material lifecycle violates historical/current source boundaries')
           en = 'Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions.'
           es = 'Gil Marer y Aweswell alegan una sola empresa continuada de criminalidad económica, desarrollada mediante adopción sucesiva y división de funciones.'
           en_time = 'This is only a factual allegation of connection: it does not characterise the conduct as a continuing or permanent offence or alter completion, any participation window or limitation period for any specific offence.'
@@ -269,32 +273,11 @@ jobs:
           tree_sha = '4f0ac26c5548ae44c68933306c68165cbb6c973e'
 
           def valid_material_lifecycle(material):
-              if material.get('latest_material_date') != expected_material_date:
-                  return False
-              if material.get('repository_latest_material_date') != expected_material_date:
-                  return False
-              if material.get('last_live_verified_material_date') != source_last_live:
-                  return False
-              if material.get('public_parity') != source_public_parity:
-                  return False
-              if source_last_live == expected_material_date:
-                  return True
-              pending = material.get('pending_publication') or {}
-              merge_sha = str(pending.get('merge_sha', ''))
-              routes = set(pending.get('routes') or [])
-              return (
-                  pending.get('control_id') == 'PD-CUATRECASAS-ETJ-DP748-20260918-01'
-                  and pending.get('state') == 'MERGED_AWAITING_PAGES_READBACK'
-                  and pending.get('merged_to') == 'main'
-                  and len(merge_sha) == 40
-                  and all(ch in '0123456789abcdef' for ch in merge_sha)
-                  and {
-                      '/en/cuatrecasas-etj163-dp748-18-september-2026/',
-                      '/es/cuatrecasas-etj163-dp748-18-septiembre-2026/',
-                      '/en/updates/',
-                      '/es/actualizaciones/',
-                  }.issubset(routes)
-              )
+              # Full source/live stage equality; old September history remains
+              # independent of the currently pending October source cohort.
+              return valid_material_stage(
+                  material, expected_material_date, current_control,
+                  source_material=source_material)
 
           def valid_state(value):
               repository = value.get('repository', {})
