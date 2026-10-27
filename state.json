@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 69,
   "owner": "2117:e7d7c04f9c8881764171d8717f028a646d62a18b",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 2117,
   "base_sha": "a5c3311f91a588832f9925bdd3d20288b5bd5bee",
   "candidate_sha": "e7d7c04f9c8881764171d8717f028a646d62a18b",
@@ -3436,6 +3436,52 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 2117,
+      "candidate_sha": "e7d7c04f9c8881764171d8717f028a646d62a18b",
+      "at": "2026-10-27T10:32:29.903113Z",
+      "merge_sha": "4e33c68f863291dd7c4b48bc723e69402ca1c571",
+      "pages_run_id": 40489000062,
+      "exact_matches": [
+        {
+          "path": "en/index.html",
+          "sha256": "21c7cb9ad90ca93773abf710271661ced5eaae7d714bdb85e2857ddb89cce806",
+          "bytes": 234342
+        },
+        {
+          "path": "en/lender-of-record/liability/index.html",
+          "sha256": "30ca836c5a0913d01e214aeae11a23feac5105bc26b26053d11d3616cd20d24c",
+          "bytes": 22880
+        },
+        {
+          "path": "en/ph122-cerberus-haya-bankia-external-perimeter/index.html",
+          "sha256": "0a30208fa592db71db103c30135ebaff570ece04f44e902031531a74c66ce9ca",
+          "bytes": 20389
+        },
+        {
+          "path": "es/acreedor-de-registro/responsabilidad/index.html",
+          "sha256": "3ecfb60bd3361d12f460994a9c0b4eba713ced81e6d5bb1aac3fd44f3970dbad",
+          "bytes": 23464
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "9e2125232c9e147e2f6fa6a6ad3152afa5d334876d6bf2408349555e2c986fda",
+          "bytes": 244054
+        },
+        {
+          "path": "es/perimetro-ph122-cerberus-haya-bankia-externo/index.html",
+          "sha256": "38ad0652aac4a687108939e9f9c36693234da0e5ced6a6966fa53c7478529cf1",
+          "bytes": 21163
+        },
+        {
+          "path": "publication-manifests/bankia-cerberus-regulatory-review-20261027.json",
+          "sha256": "0af779cc2b058eba887ce0ce72da8bbee4a2f475b73dcce63ef7dded2e5e4914",
+          "bytes": 3884
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -3478,7 +3524,54 @@
         "pages_run_id": 40489000062,
         "merge_sha": "4e33c68f863291dd7c4b48bc723e69402ca1c571"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-10-27T10:32:29.903040Z",
+      "evidence": {
+        "merge_sha": "4e33c68f863291dd7c4b48bc723e69402ca1c571",
+        "pages_run_id": 40489000062,
+        "exact_matches": [
+          {
+            "path": "en/index.html",
+            "sha256": "21c7cb9ad90ca93773abf710271661ced5eaae7d714bdb85e2857ddb89cce806",
+            "bytes": 234342
+          },
+          {
+            "path": "en/lender-of-record/liability/index.html",
+            "sha256": "30ca836c5a0913d01e214aeae11a23feac5105bc26b26053d11d3616cd20d24c",
+            "bytes": 22880
+          },
+          {
+            "path": "en/ph122-cerberus-haya-bankia-external-perimeter/index.html",
+            "sha256": "0a30208fa592db71db103c30135ebaff570ece04f44e902031531a74c66ce9ca",
+            "bytes": 20389
+          },
+          {
+            "path": "es/acreedor-de-registro/responsabilidad/index.html",
+            "sha256": "3ecfb60bd3361d12f460994a9c0b4eba713ced81e6d5bb1aac3fd44f3970dbad",
+            "bytes": 23464
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "9e2125232c9e147e2f6fa6a6ad3152afa5d334876d6bf2408349555e2c986fda",
+            "bytes": 244054
+          },
+          {
+            "path": "es/perimetro-ph122-cerberus-haya-bankia-externo/index.html",
+            "sha256": "38ad0652aac4a687108939e9f9c36693234da0e5ced6a6966fa53c7478529cf1",
+            "bytes": 21163
+          },
+          {
+            "path": "publication-manifests/bankia-cerberus-regulatory-review-20261027.json",
+            "sha256": "0af779cc2b058eba887ce0ce72da8bbee4a2f475b73dcce63ef7dded2e5e4914",
+            "bytes": 3884
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-10-27T10:32:24.535623Z"
+  "updated_at": "2026-10-27T10:32:29.903040Z"
 }
