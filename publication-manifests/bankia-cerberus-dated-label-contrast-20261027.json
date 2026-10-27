@@ -1,0 +1,75 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-BANKIA-CERBERUS-DATED-LABEL-CONTRAST-20261027",
+  "owner": "Gil Marer / Por Derecho",
+  "created_at": "2026-10-27",
+  "source_base": "4e33c68f863291dd7c4b48bc723e69402ca1c571",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "purpose": "Correct the four newly added dated review labels to use the existing dark teal kicker class on light section backgrounds, following live rendered contrast inspection of PR2117.",
+  "expected_routes": {
+    "en": [
+      "en/ph122-cerberus-haya-bankia-external-perimeter/index.html",
+      "en/lender-of-record/liability/index.html"
+    ],
+    "es": [
+      "es/perimetro-ph122-cerberus-haya-bankia-externo/index.html",
+      "es/acreedor-de-registro/responsabilidad/index.html"
+    ]
+  },
+  "expected_source_files": [],
+  "live_markers": [
+    "REGULATORY-COMPLIANCE-REVIEW-20261027",
+    "REGULATORY-COMPLIANCE-GATEWAY-20261027"
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/ph122-cerberus-haya-bankia-external-perimeter/#regulatory-compliance-review-20261027",
+    "https://sbu001monterecco.github.io/por-derecho/es/perimetro-ph122-cerberus-haya-bankia-externo/#revision-regulatoria-cumplimiento-20261027",
+    "https://sbu001monterecco.github.io/por-derecho/en/lender-of-record/liability/#regulatory-compliance-gateway-20261027",
+    "https://sbu001monterecco.github.io/por-derecho/es/acreedor-de-registro/responsabilidad/#enlace-regulacion-cumplimiento-20261027"
+  ],
+  "public_sources_reviewed_on": "2026-10-27",
+  "official_source_urls": [
+    "https://sedeelectronica.bde.es/sede/es/tramites/reclamaciones-transparencia-buenas-practicas-p104.html",
+    "https://www.boe.es/buscar/act.php?id=BOE-A-2012-14363",
+    "https://clientebancario.bde.es/pcb/es/blog/que-es-el-canal-externo-de-denuncias-del-banco-de-espana.html",
+    "https://www.bankingsupervision.europa.eu/framework/breach/html/index.en.html",
+    "https://www.cnmv.es/portal/inversor/reclamaciones?lang=es",
+    "https://find-and-update.company-information.service.gov.uk/company/08388731",
+    "https://www.cerberus.com/operating-capabilities/cerberus-european-servicing/",
+    "https://www.fca.org.uk/news/press-releases/fca-sets-out-steps-support-small-businesses-access-finance",
+    "https://www.sec.gov/welcome-tips-complaints-and-referrals"
+  ],
+  "preservation": {
+    "deletions": [],
+    "renames": [],
+    "existing_content_preserved": true,
+    "styles_runtime_and_workflows_changed": false,
+    "new_case_routes": []
+  },
+  "boundaries": [
+    "Only official public references and bounded legal routing are added; no private correspondence-derived historical proposition is added.",
+    "Corporate registration does not prove regulatory permission, PH122 mandate, historical decision authority or group-wide responsibility.",
+    "Complaint admissibility, historical limitation, judicial overlap and the competent remedy remain actor-specific.",
+    "A public-source review is not a regulator acceptance, finding, damages award, notice, transmission or evidence-completeness certificate.",
+    "Dedicated-page readiness preserves final exact-package send authorisation and the separate private-commercial exception.",
+    "This preparation record does not certify merge, deployment, live verification or cross-host parity; those states require separate actual receipts."
+  ],
+  "verification_required": [
+    "exact-candidate source acceptance",
+    "preservation and publication integrity",
+    "exact-merge Pages run",
+    "affected-resource live-byte readback",
+    "bilingual rendered dated labels and reciprocal links"
+  ],
+  "prior_publication_id": "PD-BANKIA-CERBERUS-REGULATORY-REVIEW-20261027",
+  "prior_merge_sha": "4e33c68f863291dd7c4b48bc723e69402ca1c571",
+  "change_scope": "Exactly four class attributes: p.eyebrow to p.kicker in the new 27 October review sections. All wording, URLs, source references, historical page content, stylesheets, runtime and workflows are preserved.",
+  "observed_issue": {
+    "foreground": "#f0dfc4",
+    "background": "#fffdf8",
+    "contrast_ratio": 1.2865,
+    "verification": "Live EN PH122 computed style: 12px, weight700, low contrast. All four dated sections used the same class."
+  },
+  "replacement": "Existing .kicker foreground #146a70; live rendered verification required after exact-SHA deployment."
+}
