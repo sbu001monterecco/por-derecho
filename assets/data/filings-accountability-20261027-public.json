@@ -1,0 +1,52 @@
+{
+  "schema": "por-derecho.public-filing-pathways-projection.v1",
+  "canonical_design": "PD-PUB-FILINGS-HUB-DESIGN-20261027-01",
+  "as_of": "2026-10-27",
+  "editorial_status": "PUBLIC_SAFE_STATIC_DATED_SNAPSHOT",
+  "external_filing_authority": "NO_FILING_IS_SUBMITTED_BY_WEB_PUBLICATION",
+  "records": [
+    {
+      "id": "F02",
+      "body": "Fiscalia General del Estado",
+      "status": "REGISTERED_ONLY",
+      "date": "2026-10-25",
+      "official_reference": "REGAGE26e00091902259",
+      "downstream": "UNKNOWN",
+      "official_website": "https://reg.redsara.es/",
+      "legal": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7184",
+      "registry_office_notice": "2026-10-26 09:32:30 — R. G. Fiscalía General del Estado; informational REG-AGE notice, not substantive case allocation"
+    },
+    {
+      "id": "F03",
+      "body": "Ministerio de Hacienda",
+      "status": "GRAPHICALLY_SIGNED_NOT_REGISTERED",
+      "date": "2026-10-27",
+      "official_reference": null,
+      "related_prior_reference": "REGAGE26e00091894876",
+      "downstream": "NEW_ART62_NO_SUBMISSION",
+      "official_website": "https://reg.redsara.es/",
+      "legal": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+    },
+    {
+      "id": "F04",
+      "body": "Gobierno de Canarias",
+      "status": "REGISTERED_PRIOR_WITH_CONDITIONAL_SUPPLEMENT",
+      "date": "2026-10-25",
+      "official_reference": "REGAGE26e00091887259",
+      "downstream": "REGISTRY_ACCEPTANCE_ONLY",
+      "official_website": "https://sede.gobiernodecanarias.org/sede/rge",
+      "legal": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+    }
+  ],
+  "boundaries": [
+    "Cac_acknowledgment_is_not_FGE_acknowledgment",
+    "grant_award_not_payment",
+    "administrative_art62_not_penal_art144",
+    "no_retroactive_personal_inference",
+    "private_company_estate_not_public_administration_patrimony",
+    "not_a_live_status_feed",
+    "ministerial_receipt_not_first_valid_regional_application",
+    "graphic_signature_not_electronic_portal_authentication",
+    "registrar_notice_not_fiscal_investigation"
+  ]
+}
