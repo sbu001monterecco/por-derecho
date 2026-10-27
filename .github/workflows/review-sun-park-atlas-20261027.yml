@@ -1,0 +1,65 @@
+name: Review Sun Park Atlas bilingual reader (advisory)
+
+on:
+  pull_request:
+    paths:
+      - 'assets/atlas/**'
+      - 'assets/site.js'
+      - 'en/sun-park-atlas/**'
+      - 'es/atlas-probatorio-sun-park/**'
+      - 'scripts/validate_sun_park_atlas_20261027.mjs'
+      - '.github/workflows/review-sun-park-atlas-20261027.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: atlas-20261027-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  review:
+    name: Public-data contract and bilingual Chromium review
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout exact PR candidate without write token
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Use pinned Node release
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+      - name: Verify public evidence contract, source immutability and source routing
+        run: node scripts/validate_sun_park_atlas_20261027.mjs
+      - name: Install pinned Playwright Chromium for the reviewed candidate
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.50.1
+          npx playwright install --with-deps chromium
+      - name: Serve repository content at the production subpath (test only)
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/psr-atlas-http
+          ln -s "$GITHUB_WORKSPACE" /tmp/psr-atlas-http/por-derecho
+          python3 -m http.server 8000 --bind 127.0.0.1 --directory /tmp/psr-atlas-http >/tmp/psr-atlas-http.log 2>&1 &
+          echo $! >/tmp/psr-atlas-http.pid
+          for i in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:8000/por-derecho/en/sun-park-atlas/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/psr-atlas-http.log
+          exit 1
+      - name: Render and interact with 16 English/Spanish Atlas routes
+        env:
+          PSR_BASE_URL: http://127.0.0.1:8000/por-derecho
+        run: node scripts/validate_sun_park_atlas_20261027.mjs --browser
+      - name: Archive visual review screenshots
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: sun-park-atlas-review-${{ github.run_id }}
+          path: artifacts/sun-park-atlas-20261027
+          if-no-files-found: warn
+          retention-days: 14
