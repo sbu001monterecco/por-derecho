@@ -56,31 +56,32 @@
   };
   const note = (parent, text) => el('p', 'spa-warning', text, parent);
   const more = (parent, data) => safeLink(atlasUrl, data.labels.openAtlas + ' →', parent, 'spa-cta');
-  const renderTracks = (mount, data, filterCallback) => {
+  const renderTracks = (mount, data) => {
     const grid = el('div', 'spa-tracks', null, mount);
-    data.tracks.forEach(t => {
+    data.tracks.forEach((t, i) => {
       const card = el('article', 'spa-track', null, grid);
-      el('span', 'spa-track-index', String(data.tracks.indexOf(t) + 1).padStart(2, '0'), card);
+      el('span', 'spa-track-index', String(i + 1).padStart(2, '0'), card);
       el('h3', '', t.name, card);
       el('p', '', t.summary, card);
       source(t, data, card);
     });
-    if (filterCallback) {
-      const filters = el('div', 'spa-filters', null, mount);
-      filters.setAttribute('role', 'group');
-      filters.setAttribute('aria-label', data.labels.tracks);
-      const all = [{id:'all', name:data.labels.viewAll}].concat(data.tracks);
-      const buttons = all.map(t => {
-        const b = el('button', 'spa-filter', t.name, filters);
-        b.type = 'button'; b.dataset.track = t.id;
-        b.setAttribute('aria-pressed', t.id === 'all' ? 'true' : 'false');
-        b.addEventListener('click', () => {
-          buttons.forEach(other => other.setAttribute('aria-pressed', String(other === b)));
-          filterCallback(t.id);
-        });
-        return b;
+  };
+  const renderFilters = (mount, data, filterCallback) => {
+    const filters = el('div', 'spa-filters', null, mount);
+    filters.setAttribute('role', 'group');
+    filters.setAttribute('aria-label', data.labels.tracks);
+    const choices = [{id:'all', name:data.labels.viewAll}].concat(data.tracks);
+    const buttons = choices.map(track => {
+      const button = el('button', 'spa-filter', track.name, filters);
+      button.type = 'button';
+      button.dataset.track = track.id;
+      button.setAttribute('aria-pressed', String(track.id === 'all'));
+      button.addEventListener('click', () => {
+        buttons.forEach(other => other.setAttribute('aria-pressed', String(other === button)));
+        filterCallback(track.id);
       });
-    }
+      return button;
+    });
   };
   const renderStages = (mount, data) => {
     el('h3', 'spa-section-title', data.labels.stages, mount);
@@ -187,8 +188,8 @@
       const display = el('div', 'spa-stage-area', null, body);
       const setFilter = renderStages(display, data);
       setFilter('all');
-      const filters = el('div', '', null, body);
-      renderTracks(el('div','spa-full-filtered-tracks',null,filters),data,setFilter);
+      const controls = el('div', 'spa-full-track-controls', null, body);
+      renderFilters(controls, data, setFilter);
       renderPositions(body,data);
       renderValuations(body,data);
       renderPerimeter(body,data);
@@ -218,8 +219,8 @@
     const anchors = {
       overview: lang==='es' ? '#entender' : '#understand',
       valuation: '.metrics',
-      positions: '#three-ricpe-realities',
-      band: '#pwc-band2-economic-perimeter-visual-20261018',
+      positions: lang==='es' ? '#tres-realidades-ricpe' : '#three-ricpe-realities',
+      band: '#pwc-eccta-economic-fruits-20261018 figure.evidence-figure.wide',
       perimeter: '#resetMap',
       finance: 'main section:first-of-type'
     };

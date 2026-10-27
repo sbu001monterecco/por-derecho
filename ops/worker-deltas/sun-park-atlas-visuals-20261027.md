@@ -38,4 +38,14 @@ The underlying nine-stage Band 2 EN/ES original SVGs and filed seven-page TSJC h
 - `/en|es/ric-private-equity-sun-park/`, `/en|es/pwc-canarias-carlos-saavedra-sun-park/` and same-hotel financial-life pages.
 - `archive/PWC_BAND2_ECONOMIC_PERIMETER_VISUAL_CONTROL_18OCT2026.md` and `ops/PWC_BAND2_LIVE_VERIFICATION_18OCT2026.md` control the prior original figure and boundaries.
 
-**Readiness:** `READY_TO_INTEGRATE` subject to independent validation, legal content gate, current-main rebase/reconciliation and the single-integrator publication workflow. **No autonomous release, sending, filing or public-site deployment.**
+**Readiness now:** `WORKER_CANDIDATE_VALIDATED_STATIC / REAL_BROWSER_CI_PENDING`. No integration, merge, live publication, email or filing is authorised or claimed.
+
+## 27 October 2026 — quality-repair addendum and test harness
+
+Three first-pass visual implementation defects are corrected in the next worker commit: (1) Spanish RICPE anchor is `#tres-realidades-ricpe` not English `#three-ricpe-realities`; (2) both ES/EN PwC pages are targeted through their `#pwc-eccta-economic-fruits-20261018 figure.evidence-figure.wide` to place the source-explanation panel immediately beneath the existing unaltered graphic; (3) the full Atlas no longer creates duplicate hidden eight-track cards. Source inspection and mock-DOM interaction passed for both Spanish and English cases; true browser CI is still pending.
+
+Added advisory, scoped public-data/script test `scripts/validate_sun_park_atlas_20261027.mjs` and pull-request-only workflow `.github/workflows/review-sun-park-atlas-20261027.yml`. It validates 8/9 EN/ES source contracts, 54+190+18=262, 16 public routes and their actual repository targets, original SVG exact SHA-256, no private locators, two full Atlas pages, 14 embedded modules, keyboard filters, mobile layout, static fallback and screenshots using headless Chromium. Workflow cannot write or publish, and does NOT make a new required repository-wide hard gate.
+
+Fresh GitHub main advanced during execution (26d8f39e9c0047cfefebf75408c34a788108d76e initially, d99f9127b867696af821dfd14faec8fe94d0feb8 later). Those observed pushes touched the new filings pages and a different workflow; this worker's Atlas paths remained unmodified on the observed main. This branch deliberately preserves its parent and does not force-push, rewrite existing work, merge or supersede concurrent active integration PR #2119.
+
+The updated worker branch is intended for a **DRAFT, NON-PUBLICATION pull request** to obtain independent CI and Chromium screenshots, then for existing Control Tower #1428 integrator to consider. Do not merge or seek final publication approval until required checks on both repositories pass and the owner reviews the publication-safe exact content. GitLab latest source-integrity failure/cancel outcome is independent of this GitHub quality-repair and never silently greened. If browser checks fail, investigate and correct on worker branch; an advisory test passing is not release approval.
