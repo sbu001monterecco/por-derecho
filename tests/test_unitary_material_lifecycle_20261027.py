@@ -83,5 +83,27 @@ class MaterialLifecycleStageTests(unittest.TestCase):
             self.material))
 
 
+    def test_github_inline_python_shell_imports_checked_out_source(self):
+        """Match GitHub Actions shell:python's temporary-script sys.path."""
+        import os
+        import subprocess
+        import sys
+        import tempfile
+        flow = (ROOT / ".github/workflows/verify-unitary-enterprise-attribution-live.yml").read_text()
+        live = flow.split("      - name: Verify deployed exact blocks and machine boundaries", 1)[1]
+        live = live.split("      - name: Summary", 1)[0]
+        bootstrap = "sys.path.insert(0, os.getcwd())"
+        module_import = "from scripts.unitary_material_lifecycle_20261027 import valid_material_stage"
+        self.assertLess(live.index(bootstrap), live.index(module_import))
+        with tempfile.TemporaryDirectory() as tmp:
+            script = Path(tmp) / "gha-inline.py"
+            script.write_text("import os\nimport sys\n" + bootstrap + "\n" +
+                              module_import + "\n" +
+                              "assert valid_material_stage.__module__ == 'scripts.unitary_material_lifecycle_20261027'\n")
+            env = {k: v for k, v in os.environ.items() if k != "PYTHONPATH"}
+            subprocess.run([sys.executable, str(script)], cwd=ROOT, env=env,
+                           check=True, capture_output=True, text=True)
+
+
 if __name__ == "__main__":
     unittest.main()
