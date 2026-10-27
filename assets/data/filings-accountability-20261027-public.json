@@ -13,7 +13,8 @@
       "official_reference": "REGAGE26e00091902259",
       "downstream": "UNKNOWN",
       "official_website": "https://reg.redsara.es/",
-      "legal": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7184"
+      "legal": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7184",
+      "registry_office_notice": "2026-10-26 09:32:30 — R. G. Fiscalía General del Estado; informational REG-AGE notice, not substantive case allocation"
     },
     {
       "id": "F03",
@@ -43,6 +44,9 @@
     "administrative_art62_not_penal_art144",
     "no_retroactive_personal_inference",
     "private_company_estate_not_public_administration_patrimony",
-    "not_a_live_status_feed"
+    "not_a_live_status_feed",
+    "ministerial_receipt_not_first_valid_regional_application",
+    "graphic_signature_not_electronic_portal_authentication",
+    "registrar_notice_not_fiscal_investigation"
   ]
 }
