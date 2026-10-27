@@ -1,5 +1,6 @@
 {
-  "schema": "por-derecho.publication-manifest.v1",
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
   "publication_id": "PD-BANKIA-CERBERUS-REGULATORY-REVIEW-20261027",
   "owner": "Gil Marer / Por Derecho",
   "created_at": "2026-10-27",
