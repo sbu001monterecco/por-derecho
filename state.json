@@ -1,13 +1,13 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 68,
-  "owner": "2112:485886d1e61c499c5c06560cce94d7d56bdb91ab",
-  "phase": "VERIFIED_FOR_SCOPE",
-  "pr": 2112,
-  "base_sha": "94a6d29748fc0dccf089b5590ea714e550d61630",
-  "candidate_sha": "485886d1e61c499c5c06560cce94d7d56bdb91ab",
-  "run_id": 40185321284,
-  "claimed_at": "2026-10-25T10:33:49.584352Z",
+  "fence": 69,
+  "owner": "2117:e7d7c04f9c8881764171d8717f028a646d62a18b",
+  "phase": "CLAIMED",
+  "pr": 2117,
+  "base_sha": "a5c3311f91a588832f9925bdd3d20288b5bd5bee",
+  "candidate_sha": "e7d7c04f9c8881764171d8717f028a646d62a18b",
+  "run_id": 40488893208,
+  "claimed_at": "2026-10-27T10:30:01.994962Z",
   "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
     {
@@ -3438,129 +3438,5 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-10-25T10:33:50.619227Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "publication-integrity",
-            "id": 121143821232,
-            "conclusion": "success"
-          },
-          {
-            "name": "PD release acceptance",
-            "id": 121143821086,
-            "conclusion": "success"
-          }
-        ]
-      }
-    },
-    {
-      "phase": "MERGE_PENDING",
-      "at": "2026-10-25T10:34:36.669465Z",
-      "evidence": {
-        "pr": 2112
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-10-25T10:34:38.020832Z",
-      "evidence": {
-        "merge_sha": "4d7361eadbf47710843022e36e4ef8ea9f79b44a"
-      }
-    },
-    {
-      "phase": "DEPLOYED",
-      "at": "2026-10-25T10:35:36.388982Z",
-      "evidence": {
-        "pages_run_id": 40185314187,
-        "merge_sha": "4d7361eadbf47710843022e36e4ef8ea9f79b44a"
-      }
-    },
-    {
-      "phase": "VERIFIED_FOR_SCOPE",
-      "at": "2026-10-25T10:35:43.571943Z",
-      "evidence": {
-        "merge_sha": "4d7361eadbf47710843022e36e4ef8ea9f79b44a",
-        "pages_run_id": 40185314187,
-        "exact_matches": [
-          {
-            "path": "assets/data/material-updates-v1.json",
-            "sha256": "b5a9cc920cbc72e3386db8f996f608b7097353a22fb067040356dbeab6d0d287",
-            "bytes": 15488
-          },
-          {
-            "path": "en/index.html",
-            "sha256": "21c7cb9ad90ca93773abf710271661ced5eaae7d714bdb85e2857ddb89cce806",
-            "bytes": 234342
-          },
-          {
-            "path": "en/institutionalisation-chain-ric-eu-incentives/index.html",
-            "sha256": "d40e62425dcda05272d679a9a93a3fb33fcc1c6ebd7cfce9a3604ca4f3eafcf1",
-            "bytes": 14967
-          },
-          {
-            "path": "en/regional-incentives-gc836-p06/index.html",
-            "sha256": "4d7deb1245b5e10c8cfaedd721b077b465d84f8be32f19f931179dcc5eab10a5",
-            "bytes": 24393
-          },
-          {
-            "path": "en/ricpe-hnt-gc836-traceability/index.html",
-            "sha256": "eda2a94eb9c5b031b9a2386a199edcbf47a2972cc0f235e3bd07cb0641bcc395",
-            "bytes": 14118
-          },
-          {
-            "path": "en/updates/feed.xml",
-            "sha256": "678d118abe673b9cad45dbe374e20bd29c33f3fe395a9787bca5ae17de67e0d4",
-            "bytes": 24754
-          },
-          {
-            "path": "en/updates/index.html",
-            "sha256": "d7640f2dee199cee132885b34787f817c9e1253630b5bc3d0e388c576fb5fa08",
-            "bytes": 95723
-          },
-          {
-            "path": "es/actualizaciones/feed.xml",
-            "sha256": "969920471a507ed581bb9c862584a2ca870754a0622118ecf937215c9fc5cd41",
-            "bytes": 25897
-          },
-          {
-            "path": "es/actualizaciones/index.html",
-            "sha256": "1faac3b681ca25dc7eedca4a21b202926b4c9e58be9a68c752e9dd4e4021993b",
-            "bytes": 99947
-          },
-          {
-            "path": "es/cadena-instrumentalizacion-ric-fondos-incentivos/index.html",
-            "sha256": "a0e3c703d95154d739b60e97ec90d56bac74dbbaa406eaba9c964208c1814abe",
-            "bytes": 24348
-          },
-          {
-            "path": "es/incentivos-regionales-gc836-p06/index.html",
-            "sha256": "7a3c55c82f45dd8e1923f8d2129bb79f9babe6a417194959d046d5dc293412a9",
-            "bytes": 25424
-          },
-          {
-            "path": "es/index.html",
-            "sha256": "9e2125232c9e147e2f6fa6a6ad3152afa5d334876d6bf2408349555e2c986fda",
-            "bytes": 244054
-          },
-          {
-            "path": "es/ricpe-hnt-gc836-trazabilidad/index.html",
-            "sha256": "cb0ffae412782294fb5a4bf1abbbc02f7a55c8fc874874c52187249672ab7d2d",
-            "bytes": 14556
-          },
-          {
-            "path": "publication-manifests/recovery-account-attribution-20261025.json",
-            "sha256": "d81adc94ee8bd34801af0149812ee53d89d4d9fa8fc0855d1cd8eccdc4df5e3a",
-            "bytes": 5002
-          }
-        ],
-        "pending": [],
-        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
-      }
-    }
-  ],
-  "updated_at": "2026-10-25T10:35:43.571943Z"
+  "checkpoints": []
 }
