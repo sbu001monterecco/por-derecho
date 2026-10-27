@@ -72,6 +72,8 @@ for (const lang of ['en','es']) {
   assert.ok(html.includes('class="section spa-atlas-static"'));
   assert.ok(html.includes('sun-park-atlas-v1.js'));
   assert.ok(html.includes('sun-park-atlas-v1.css'));
+  assert.ok(!html.includes('../../assets/site.js'),
+    `${lang} dedicated Atlas must not load inherited global site modules`);
   const other = lang==='en'?'es':'en';
   assert.ok(html.includes(`hreflang="${other}"`));
   assert.ok(html.includes(data.publicControl));
@@ -139,6 +141,9 @@ if (process.argv.includes('--browser')) {
         }));
         assert.ok(state.mode,route+' missing renderer mode');
         if (index<2) {
+          const previous=await page.locator('#sun-park-atlas-root').evaluate(el=>el.previousElementSibling?.className||'');
+          assert.ok(previous.split(/\\s+/).includes('hero'),
+            `${route} unrelated inherited page sections inserted ahead of Atlas: ${previous}`);
           assert.equal(state.mode,'full');
           assert.equal(state.trackCount,8);
           assert.equal(state.stages,9);
