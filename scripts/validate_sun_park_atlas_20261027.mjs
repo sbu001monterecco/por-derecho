@@ -167,12 +167,17 @@ if (process.argv.includes('--browser')) {
         if (route.includes('ric-private-equity')) {
           assert.equal(state.mode,'positions');
           assert.equal(state.positions,3);
-          const placement=await page.locator(selector).first().evaluate(el=>{
-            const first=el.previousElementSibling;
-            return first ? (first.id||first.className||'') : '';
-          });
-          assert.ok(placement.includes('three-ricpe-realities')||placement.includes('tres-realidades-ricpe'),
-            `Wrong RICPE insertion location: ${placement}`);
+          const expectedAnchor = route.startsWith('/es/') ? '#tres-realidades-ricpe' : '#three-ricpe-realities';
+          const placement=await page.locator(selector).first().evaluate((el,anchor) => {
+            const previous=el.previousElementSibling;
+            const target=document.querySelector(anchor);
+            return {adjacentToSource:!!previous && !!target && previous.contains(target),
+                    previousTag:previous?.tagName||null,
+                    previousId:previous?.id||null,
+                    targetFound:!!target};
+          },expectedAnchor);
+          assert.ok(placement.adjacentToSource,
+            `Wrong RICPE insertion location: ${JSON.stringify(placement)}`);
         }
         console.log('ATLAS BROWSER PASS',route,state.mode);
       } finally {await page.close();}
