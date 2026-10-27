@@ -124,3 +124,26 @@ The absence of the servicing agreement cannot be used to erase the documented co
 8. Complete record of proposals, questions, conditions and counterproposals.
 9. Bankia residual-credit and successor contact/decision file.
 10. PH122→CAM data room, disclosures, warranties and knowledge record.
+
+
+## Official-source regulatory and compliance review — 27 October 2026
+
+This dated addition supplies a public-source jurisdiction map. It does not admit a new private correspondence source, identify a historical decision-maker, amend an existing source/event ID or resolve the outstanding mandate questions above.
+
+The review separates original-lender conduct and retained obligations, each subsequent actor's own conduct, company compliance review, supervisory competence and judicial remedies. The historic corporate hotel-finance setting requires an individual assessment of standing, dates, applicable law, assignment scope and proceedings already pending. No new regime is assumed to apply retrospectively merely because a debt remains outstanding.
+
+| Official source | Supported use and limit |
+|---|---|
+| [Banco de España customer procedure](https://sedeelectronica.bde.es/sede/es/tramites/reclamaciones-transparencia-buenas-practicas-p104.html) | Legal-person banking users may qualify; prior complaint, standing and admissibility still need checking. |
+| [Order ECC/2502/2012, Articles 10–12](https://www.boe.es/buscar/act.php?id=BOE-A-2012-14363) | Judicial overlap and judicial-only proof/damages issues limit the complaints procedure; its final report is nonbinding. |
+| [Banco de España external-channel explanation, 22 October 2026](https://clientebancario.bde.es/pcb/es/blog/que-es-el-canal-externo-de-denuncias-del-banco-de-espana.html) | A supported supervisory or unauthorised-activity issue is distinct from an individual product/service complaint. |
+| [ECB breach reporting](https://www.bankingsupervision.europa.eu/framework/breach/html/index.en.html) | Prudential EU banking supervision within ECB competence; consumer protection and AML implementation are excluded from this platform. |
+| [CNMV investor complaints](https://www.cnmv.es/portal/inversor/reclamaciones?lang=es) | Product/service/entity classification precedes jurisdiction; the report is nonbinding and does not award damages. |
+| [Companies House, company 08388731](https://find-and-update.company-information.service.gov.uk/company/08388731) | Identifies Cerberus European Servicing Ltd. It is not evidence of PH122 authority or an FCA permission. |
+| [Cerberus European Servicing description](https://www.cerberus.com/operating-capabilities/cerberus-european-servicing/) | The firm's published organisational context; no LPB-specific mandate, decision or control follows from this description. |
+| [FCA commercial-lending perimeter, 17 September 2026](https://www.fca.org.uk/news/press-releases/fca-sets-out-steps-support-small-businesses-access-finance) | Much lending to companies falls outside its remit; the actual entity, activity, period and permission require proof. |
+| [SEC tips framework](https://www.sec.gov/welcome-tips-complaints-and-referrals) | Requires a possible federal securities-law violation; group branding does not supply the jurisdictional nexus. |
+
+These official pages were directly reviewed on 27 October 2026. The company website is primary evidence of the firm's own description, not an independent regulatory finding. Corporate registration, regulatory registration, actual authority, conduct and liability remain separate propositions. No regulator's acceptance of this case or finding of misconduct is asserted.
+
+Public reader projections: [EN PH122 review](../../en/ph122-cerberus-haya-bankia-external-perimeter/index.html#regulatory-compliance-review-20261027), [ES PH122 review](../../es/perimetro-ph122-cerberus-haya-bankia-externo/index.html#revision-regulatoria-cumplimiento-20261027), [EN lender gateway](../../en/lender-of-record/liability/index.html#regulatory-compliance-gateway-20261027), [ES lender gateway](../../es/acreedor-de-registro/responsabilidad/index.html#enlace-regulacion-cumplimiento-20261027).
