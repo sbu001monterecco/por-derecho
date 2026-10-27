@@ -1,0 +1,67 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-PH122-THESIS-OBJECTIVES-20261027",
+  "owner": "Gil Marer / Por Derecho",
+  "created_at": "2026-10-27",
+  "source_base": "0226f3091eb1f050a0b422d67bc75d418c6b3829",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "purpose": "Add a measured bilingual working thesis, five objective/action/output groups and intended outcomes to the existing PH122 case pages and canonical research source.",
+  "expected_routes": {
+    "en": [
+      "en/ph122-cerberus-haya-bankia-external-perimeter/index.html"
+    ],
+    "es": [
+      "es/perimetro-ph122-cerberus-haya-bankia-externo/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "research/lender-of-record-liability/PH122-CERBERUS-HAYA-BANKIA-EXTERNAL-PERIMETER.md"
+  ],
+  "live_markers": [
+    "PH122-THESIS-OBJECTIVES-20261027"
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/ph122-cerberus-haya-bankia-external-perimeter/#case-thesis-objectives-20261027",
+    "https://sbu001monterecco.github.io/por-derecho/es/perimetro-ph122-cerberus-haya-bankia-externo/#tesis-objetivos-caso-20261027"
+  ],
+  "source_basis": {
+    "existing_research": "research/lender-of-record-liability/PH122-CERBERUS-HAYA-BANKIA-EXTERNAL-PERIMETER.md",
+    "existing_regulatory_review": "publication-manifests/bankia-cerberus-regulatory-review-20261027.json",
+    "new_private_sources_admitted": false,
+    "new_historical_factual_allegations": false
+  },
+  "additional_official_sources": [
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2021-5465",
+      "title": "Treasury resolution of 31 March 2021, BOE-A-2021-5465",
+      "reviewed_on": "2026-10-27",
+      "supported_use": "The resolution records the completed absorption of Bankia and transfer of its rights and obligations to CaixaBank by universal succession. It does not establish a case-specific breach, loss or liability for later actors."
+    }
+  ],
+  "preservation": {
+    "deletions": [],
+    "renames": [],
+    "existing_content_preserved": true,
+    "styles_runtime_and_workflows_changed": false,
+    "new_case_routes": []
+  },
+  "boundaries": [
+    "Working objectives and prospective remedies are not findings, accepted claims, admissions or financial guarantees.",
+    "Trace transferred rights and any retained obligations; determine any contractual-position transfer from the operative instruments and applicable regime.",
+    "Bankia succession does not establish an underlying breach or every later actor liability; attribution and jurisdiction remain entity-, conduct- and date-specific.",
+    "Constructive resolution and ADR preserve litigation rights; professional or regulatory accountability is separate from settlement bargaining.",
+    "No new private historical source, privileged detail, native correspondence, amount allegation or recipient detail is added.",
+    "USER HOLD / NO SEND remains in effect for external correspondence and filings; preparation, publication, authorisation and transmission remain separate.",
+    "GitHub is the selected publication host; no new GitLab deployment or parity is certified.",
+    "This preparation manifest certifies neither merge nor deployment; exact-candidate acceptance and actual release receipts remain required."
+  ],
+  "verification_required": [
+    "exact-candidate source acceptance",
+    "preservation and publication integrity",
+    "audience experience and lender dataset",
+    "bilingual rendered routes, new anchors and reciprocal links",
+    "exact-merge Pages run",
+    "affected-resource live-byte readback"
+  ]
+}
