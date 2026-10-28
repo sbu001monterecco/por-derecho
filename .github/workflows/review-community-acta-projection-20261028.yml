@@ -1,0 +1,37 @@
+name: Review deterministic Community ACTA projection — diagnostic only
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_community_acta_projection_20261028.py'
+      - '.github/workflows/review-community-acta-projection-20261028.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: acta-source-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    name: Rebuild, source-compare and validate before owner approval
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Regenerate in temporary checkout and validate original sources and status boundaries
+        run: python3 scripts/audit_community_acta_projection_20261028.py --emit-base64
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: acta-public-derived-rebuild-${{ github.run_id }}
+          path: artifacts/community-acta-projection-20261028
+          if-no-files-found: warn
+          retention-days: 14
