@@ -175,7 +175,7 @@ print(json.dumps(status))
 # code, financial model, correspondent bank identity, contract or full-pack PDF.
 # The existing protected V5.2 root and source archives are byte-for-byte intact.
 INTRO_SOURCE = Path('pre-nda/index.html')
-INTRO_SHA256 = '7f369a998ba45abcf53b1620cfdcbd984abfbdff8064dbf827376593c260ef2f'
+INTRO_SHA256 = 'd25e2ca68c1020ad9ffa250d902876fd7419163357123cfce0ec70fdc62cf92b'
 intro_data=INTRO_SOURCE.read_bytes()
 if hashlib.sha256(intro_data).hexdigest() != INTRO_SHA256:
     raise RuntimeError('Pre-NDA encrypted reader hash mismatch')
