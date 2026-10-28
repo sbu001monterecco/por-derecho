@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Regenerate in temporary checkout and validate original sources and status boundaries
-        run: python3 scripts/audit_community_acta_projection_20261028.py --emit-base64
+        run: python3 scripts/audit_community_acta_projection_20261028.py
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         if: always()
         with:

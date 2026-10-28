@@ -79,8 +79,10 @@ def main() -> int:
     print(unittest.stderr.strip()[-1300:])
 
     modified = [p for p in run("git", "diff", "--name-only").stdout.splitlines() if p]
-    if modified != [str(TARGET)]:
+    if modified not in ([], [str(TARGET)]):
         raise SystemExit("Builder mutated unexpected tracked files: " + repr(modified))
+    if bool(modified) != (previous != revised):
+        raise SystemExit("Builder working tree / generated source mismatch")
     deltas = walk(old, new)
     coverage = new.get("coverage", {})
     assert coverage.get("public_acta_packages") == 20
@@ -90,7 +92,8 @@ def main() -> int:
     assert old["schema_version"] == new["schema_version"]
     report = {
         "audit": "PD-COMMUNITY-ACTA-DETERMINISTIC-REBUILD-20261028-01",
-        "state": "READ_ONLY_REGENERATED_AND_VALIDATED_NOT_PUBLISHED",
+        "state": ("VERIFIED_ALREADY_DETERMINISTIC_NOT_PUBLISHED" if not modified
+                  else "READ_ONLY_REGENERATED_AND_VALIDATED_NOT_PUBLISHED"),
         "source_commit": original_head,
         "before_sha256": digest(previous), "after_sha256": digest(revised),
         "before_bytes": len(previous), "after_bytes": len(revised),
