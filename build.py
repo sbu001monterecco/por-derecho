@@ -169,3 +169,29 @@ status={'reference':'SRLN-2026-WEB-SANTANDER-20261022-001/RENDER-V5-READER-FIX',
         'offer_status':'pre-admission / pre-issuance / not a securities offer'}
 (out/'version.json').write_text(json.dumps(status,indent=2),encoding='utf-8')
 print(json.dumps(status))
+
+# Independent pre-NDA reader, published under /intro/ on the SAME Render host.
+# Public source stores authenticated ciphertext only. No decryption key, access
+# code, financial model, correspondent bank identity, contract or full-pack PDF.
+# The existing protected V5.2 root and source archives are byte-for-byte intact.
+INTRO_SOURCE = Path('pre-nda/index.html')
+INTRO_SHA256 = '7f369a998ba45abcf53b1620cfdcbd984abfbdff8064dbf827376593c260ef2f'
+intro_data=INTRO_SOURCE.read_bytes()
+if hashlib.sha256(intro_data).hexdigest() != INTRO_SHA256:
+    raise RuntimeError('Pre-NDA encrypted reader hash mismatch')
+if b'id="cipherdata"' not in intro_data or b'noindex,nofollow' not in intro_data:
+    raise RuntimeError('Pre-NDA reader missing authenticated payload or indexing controls')
+for forbidden in (b'Montana Roja, Playa Blanca', b'fuentes y relaciones concretas', b'sun-rock-banking.onrender.com'):
+    if forbidden in intro_data:
+        raise RuntimeError('Pre-NDA plaintext/source routing is not isolated')
+intro_out=out/'intro'
+intro_out.mkdir(parents=True,exist_ok=True)
+(intro_out/'index.html').write_bytes(intro_data)
+intro_version={'reference':'SRLN-2026-SANTANDER-PRENDA-INTRO-20261028-V1',
+               'access':'independent encrypted pre-NDA only',
+               'created_date':'2026-10-28',
+               'html_sha256':INTRO_SHA256,
+               'root_full_pack_unchanged':True,
+               'funding_or_mandate_status':'not committed / not appointed'}
+(intro_out/'version.json').write_text(json.dumps(intro_version,indent=2),encoding='utf-8')
+print(json.dumps(intro_version))
