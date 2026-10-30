@@ -1,0 +1,30 @@
+{
+  "control": "PD-R33-FULL-PERIMETER-CRIMINAL-ATTRIBUTION-20261030-01",
+  "release": "PUBLIC_SAFE_METHODOLOGY_ONLY",
+  "owner_authority": "2026-10-30 explicit request to preserve, connect, visualize and update GitHub website",
+  "branch_source_head": "d99f9127b867696af821dfd14faec8fe94d0feb8",
+  "source_tree": "c97c371d7aa2a0dc76c6a955e4ad82fbbfc28e75",
+  "changes": [
+    "en/r33-forensic-perimeter/index.html",
+    "es/perimetro-forense-r33/index.html",
+    "en/r33-truth-machine-visual/index.html",
+    "es/r33-maquina-verdad-visual/index.html"
+  ],
+  "deletions": [],
+  "original_canonical_routes_preserved": true,
+  "private_source_graph_publication": false,
+  "carries_no_private_gmail_drive_case_links": true,
+  "data_statements": "Historical 22/276/482 metrics are review counts, not criminal findings",
+  "final_tests": {
+    "local_private_manifest": "12/12 pass",
+    "javascript_syntax": "3 checked",
+    "browser_visual": "not verified at local chromium attempt",
+    "ci": "pending",
+    "pages_readback": "pending",
+    "initial_CI_failure": "Schema gate disallowed new untyped publication-manifests file; moved unchanged-scope receipt to ops document namespace",
+    "revision": "30Oct2026 CI repair"
+  },
+  "no_email_or_filing": true,
+  "bilingual_parity": true,
+  "verification_scope": "New public-safe methodology pages and R33 visual route additive links only; not an exhaustive investigation"
+}
