@@ -20,7 +20,9 @@
     "javascript_syntax": "3 checked",
     "browser_visual": "not verified at local chromium attempt",
     "ci": "pending",
-    "pages_readback": "pending"
+    "pages_readback": "pending",
+    "initial_CI_failure": "Schema gate disallowed new untyped publication-manifests file; moved unchanged-scope receipt to ops document namespace",
+    "revision": "30Oct2026 CI repair"
   },
   "no_email_or_filing": true,
   "bilingual_parity": true,
