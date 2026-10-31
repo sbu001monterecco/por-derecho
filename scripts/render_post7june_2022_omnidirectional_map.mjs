@@ -50,6 +50,33 @@ const browser = await chromium.launch({
 const results = [];
 let failed = false;
 
+// Preserve strict overflow checks and expose the actual component when one fails.
+async function overflowElements(page) {
+  return page.evaluate(() => {
+    const limit = document.documentElement.clientWidth;
+    if (document.documentElement.scrollWidth - limit <= 2) return [];
+    return [...document.body.querySelectorAll('*')].map(node => {
+      const box = node.getBoundingClientRect();
+      if (!box.width || !box.height || box.right <= limit + 2) return null;
+      const ancestors = [];
+      for (let parent = node.parentElement; parent && parent !== document.body; parent = parent.parentElement) {
+        const rect = parent.getBoundingClientRect();
+        const style = getComputedStyle(parent);
+        // Descendants of a correctly contained scroller do not expand the page.
+        if (/^(auto|scroll|hidden|clip)$/.test(style.overflowX) && rect.right <= limit + 1 && box.right > rect.right + 1) return null;
+        if (ancestors.length < 5) ancestors.push({ tag: parent.tagName, id: parent.id, className: parent.className,
+          right: rect.right, width: rect.width, overflowX: style.overflowX });
+      }
+      const style = getComputedStyle(node);
+      return { tag: node.tagName, id: node.id, className: node.className,
+        left: box.left, right: box.right, width: box.width, scrollWidth: node.scrollWidth, clientWidth: node.clientWidth,
+        minWidth: style.minWidth, maxWidth: style.maxWidth, whiteSpace: style.whiteSpace,
+        overflowWrap: style.overflowWrap, wordBreak: style.wordBreak, overflowX: style.overflowX,
+        text: node.textContent.trim().replace(/\s+/g, ' ').slice(0, 100), ancestors };
+    }).filter(Boolean).sort((a, b) => b.right - a.right).slice(0, 60);
+  });
+}
+
 try {
   for (const [name, route] of routes) {
     for (const [device, viewport] of Object.entries(viewports)) {
@@ -116,7 +143,7 @@ try {
         if (await map.count() === 1) {
           await map.screenshot({ path: path.join(out, `${name}-${device}.png`) });
         }
-        results.push({ name, route, device, viewport, actualViewport, metrics, errors });
+        results.push({ name, route, device, viewport, actualViewport, metrics, overflowElements: await overflowElements(page), errors });
       } catch (error) {
         errors.push(String(error));
         results.push({ name, route, device, viewport, actualViewport, metrics: null, errors });
@@ -185,7 +212,7 @@ try {
       if (count === 1) {
         await bar.screenshot({ path: path.join(out, `${name}-${device}-junction.png`) });
       }
-      results.push({ name, route, routeId, device, viewport, actualViewport, metrics, errors });
+      results.push({ name, route, routeId, device, viewport, actualViewport, metrics, overflowElements: await overflowElements(page), errors });
     } catch (error) {
       errors.push(String(error));
       results.push({ name, route, routeId, device, viewport, actualViewport, metrics: null, errors });
