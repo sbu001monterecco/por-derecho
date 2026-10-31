@@ -53,8 +53,9 @@ let failed = false;
 try {
   for (const [name, route] of routes) {
     for (const [device, viewport] of Object.entries(viewports)) {
-      const page = await browser.newPage({ viewportSize: viewport });
+      const page = await browser.newPage({ viewport });
       const errors = [];
+      let actualViewport = null;
       page.on('pageerror', error => errors.push(`pageerror: ${error.message}`));
       page.on('console', message => {
         if (message.type() === 'error') errors.push(`console: ${message.text()}`);
@@ -63,6 +64,10 @@ try {
       try {
         const response = await page.goto(`${base}${route}`, { waitUntil: 'networkidle', timeout: 45000 });
         if (!response || !response.ok()) errors.push(`HTTP ${response?.status() || 'no response'}`);
+        actualViewport = await page.evaluate(() => ({ width: innerWidth, height: innerHeight }));
+        if (actualViewport.width !== viewport.width || actualViewport.height !== viewport.height) {
+          errors.push(`viewport ${actualViewport.width}x${actualViewport.height} != ${viewport.width}x${viewport.height}`);
+        }
         const map = page.locator('.omni-acta-map');
         if (await map.count() !== 1) {
           errors.push(`expected one map, found ${await map.count()}`);
@@ -111,10 +116,10 @@ try {
         if (await map.count() === 1) {
           await map.screenshot({ path: path.join(out, `${name}-${device}.png`) });
         }
-        results.push({ name, route, device, viewport, metrics, errors });
+        results.push({ name, route, device, viewport, actualViewport, metrics, errors });
       } catch (error) {
         errors.push(String(error));
-        results.push({ name, route, device, viewport, metrics: null, errors });
+        results.push({ name, route, device, viewport, actualViewport, metrics: null, errors });
       } finally {
         if (errors.length) failed = true;
         await page.close();
@@ -125,8 +130,9 @@ try {
   for (const [name, route, routeId] of satelliteRoutes) {
     const device = 'mobile';
     const viewport = viewports.mobile;
-    const page = await browser.newPage({ viewportSize: viewport });
+    const page = await browser.newPage({ viewport });
     const errors = [];
+    let actualViewport = null;
     page.on('pageerror', error => errors.push(`pageerror: ${error.message}`));
     page.on('console', message => {
       if (message.type() === 'error') errors.push(`console: ${message.text()}`);
@@ -135,6 +141,10 @@ try {
     try {
       const response = await page.goto(`${base}${route}`, { waitUntil: 'networkidle', timeout: 45000 });
       if (!response || !response.ok()) errors.push(`HTTP ${response?.status() || 'no response'}`);
+      actualViewport = await page.evaluate(() => ({ width: innerWidth, height: innerHeight }));
+      if (actualViewport.width !== viewport.width || actualViewport.height !== viewport.height) {
+        errors.push(`viewport ${actualViewport.width}x${actualViewport.height} != ${viewport.width}x${viewport.height}`);
+      }
       const bar = page.locator(`[data-post7-evidence-backlink][data-post7-route-id="${routeId}"]`);
       const count = await bar.count();
       if (count !== 1) {
@@ -175,10 +185,10 @@ try {
       if (count === 1) {
         await bar.screenshot({ path: path.join(out, `${name}-${device}-junction.png`) });
       }
-      results.push({ name, route, routeId, device, viewport, metrics, errors });
+      results.push({ name, route, routeId, device, viewport, actualViewport, metrics, errors });
     } catch (error) {
       errors.push(String(error));
-      results.push({ name, route, routeId, device, viewport, metrics: null, errors });
+      results.push({ name, route, routeId, device, viewport, actualViewport, metrics: null, errors });
     } finally {
       if (errors.length) failed = true;
       await page.close();
