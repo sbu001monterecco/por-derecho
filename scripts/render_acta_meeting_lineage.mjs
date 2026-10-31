@@ -123,7 +123,7 @@ let failed = false;
 try {
   for (const testCase of cases) {
     for (const [device, viewport] of Object.entries(viewports)) {
-      const page = await browser.newPage({ viewportSize: viewport });
+      const page = await browser.newPage({ viewport });
       const errors = [];
       const pageErrors = [];
       const consoleErrors = [];
@@ -166,6 +166,10 @@ try {
       loading = false;
       errors.push(...pageErrors, ...consoleErrors, ...transientResponses);
       if (!response || !response.ok()) errors.push(`HTTP ${response?.status() || 'no response'}`);
+      const actualViewport = await page.evaluate(() => ({ width: innerWidth, height: innerHeight }));
+      if (actualViewport.width !== viewport.width || actualViewport.height !== viewport.height) {
+        errors.push(`viewport ${actualViewport.width}x${actualViewport.height} != ${viewport.width}x${viewport.height}`);
+      }
 
       if (testCase.kind === 'room') {
         try {
@@ -322,7 +326,7 @@ try {
 
       const target = testCase.kind === 'event' ? page.locator('.acta-event-hero') : page.locator('main').first();
       await target.screenshot({ path: path.join(out, `${testCase.name}-${device}.png`) });
-      results.push({ name: testCase.name, route: testCase.route, device, metrics, errors });
+      results.push({ name: testCase.name, route: testCase.route, device, viewport, actualViewport, metrics, errors });
       if (errors.length) failed = true;
       await page.close();
     }

@@ -8,10 +8,11 @@ import json
 import re
 from pathlib import Path
 
+from reconcile_identity_registry_projections import TYPES, canonical_snapshot
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json"
-REGISTRY = ROOT / "assets/data/matter-identity-registry-v1.json"
 PEOPLE = ROOT / "assets/data/matter-identity-registry-v1.people.json"
 ORGANISATIONS = ROOT / "assets/data/matter-identity-registry-v1.organisations.json"
 IMAGE = ROOT / "assets/acosta-matos-family-hotel-plans.jpg"
@@ -70,9 +71,23 @@ def require_local_destination(source: Path, href: str, expected: Path) -> None:
         require(f'id="{fragment}"' in expected.read_text(encoding="utf-8"), f"{source.relative_to(ROOT)} missing destination fragment: {href}")
 
 
+def validate_current_registry_control() -> None:
+    # Current counts come from validated canonical shards; historical release
+    # snapshots below remain fixed to their recorded publication evidence.
+    counts, _ = canonical_snapshot(ROOT)
+    ordered_types = ("total", *TYPES)
+    static_counts = "-".join(str(counts[kind]) for kind in ordered_types)
+    require_markers(ALBERTO_LIVE_WORKFLOW, [
+        *(f"'{kind}': {counts[kind]}" for kind in ordered_types),
+        f'data-static-registry-counts="{static_counts}"',
+        "identity_registry_parity'] == 204",
+        f"'identity_source_current': {counts['total']}",
+        "'specialist_historical_identity_snapshot': 204",
+    ])
+
+
 def main() -> int:
     case = load_json(DATA)
-    registry = load_json(REGISTRY)
     people = load_json(PEOPLE)["records"]
     organisations = load_json(ORGANISATIONS)["records"]
 
@@ -197,14 +212,7 @@ def main() -> int:
     actors = {item.get("caepr_id"): item for item in case["actors"] if item.get("caepr_id")}
     require("PD-SP-P-0093" in actors and "PD-SP-P-0094" in actors, "Javier/Gerardo actor rows missing")
 
-    require(registry["counts"] == {
-        "total": 342,
-        "PERSON": 162,
-        "ORGANISATION": 83,
-        "STRUCTURE": 11,
-        "INSTITUTION": 43,
-        "PROCEEDING": 43,
-    }, "master registry counts mismatch")
+    validate_current_registry_control()
     by_id = {item["id"]: item for item in people}
     expected_people = {
         "PD-SP-P-0088": "Fernando Aguiar Acosta",
@@ -286,15 +294,6 @@ def main() -> int:
         ".omni-process",
         "content: \"⇄\"",
         "@media (max-width: 620px)",
-    ])
-    require_markers(ALBERTO_LIVE_WORKFLOW, [
-        "'total': 341",
-        "'PERSON': 162",
-        "'ORGANISATION': 83",
-        "data-static-registry-counts=\"342-162-83-11-43-43\"",
-        "identity_registry_parity'] == 204",
-        "'identity_source_current': 341",
-        "'specialist_historical_identity_snapshot': 204",
     ])
     omni_manifest = load_json(OMNI_MANIFEST)
     require(

@@ -81,16 +81,23 @@ def backlink(locale: str, route_id: str) -> str:
 
 
 def main() -> int:
-    pattern = re.compile(rf"\s*{re.escape(BEGIN)}.*?{re.escape(END)}", re.DOTALL)
+    pattern = re.compile(rf"{re.escape(BEGIN)}.*?{re.escape(END)}", re.DOTALL)
     changed = 0
     for locale, routes in ROUTES.items():
         for route_id, relative in routes:
             path = ROOT / relative
             text = path.read_text(encoding="utf-8")
-            text = pattern.sub("", text)
             if text.count("</main>") != 1:
                 raise RuntimeError(f"{relative}: expected exactly one </main>")
-            rendered = text.replace("</main>", f"\n{backlink(locale, route_id)}\n</main>")
+            matches = list(pattern.finditer(text))
+            if len(matches) > 1 or text.count(BEGIN) != len(matches) or text.count(END) != len(matches):
+                raise RuntimeError(f"{relative}: expected zero or one complete POST7J block")
+            block = backlink(locale, route_id)
+            if matches:
+                # Preserve the existing route position and surrounding whitespace.
+                rendered = pattern.sub(lambda _match: block, text, count=1)
+            else:
+                rendered = text.replace("</main>", f"\n{block}\n</main>")
             path.write_text(rendered, encoding="utf-8")
             changed += 1
     print(f"POST-7-JUNE RECIPROCAL ROUTE INTERLINKS: BUILT {changed} PAGES")

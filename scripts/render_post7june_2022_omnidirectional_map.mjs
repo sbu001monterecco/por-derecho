@@ -50,11 +50,39 @@ const browser = await chromium.launch({
 const results = [];
 let failed = false;
 
+// Preserve strict overflow checks and expose the actual component when one fails.
+async function overflowElements(page) {
+  return page.evaluate(() => {
+    const limit = document.documentElement.clientWidth;
+    if (document.documentElement.scrollWidth - limit <= 2) return [];
+    return [...document.body.querySelectorAll('*')].map(node => {
+      const box = node.getBoundingClientRect();
+      if (!box.width || !box.height || box.right <= limit + 2) return null;
+      const ancestors = [];
+      for (let parent = node.parentElement; parent && parent !== document.body; parent = parent.parentElement) {
+        const rect = parent.getBoundingClientRect();
+        const style = getComputedStyle(parent);
+        // Descendants of a correctly contained scroller do not expand the page.
+        if (/^(auto|scroll|hidden|clip)$/.test(style.overflowX) && rect.right <= limit + 1 && box.right > rect.right + 1) return null;
+        if (ancestors.length < 5) ancestors.push({ tag: parent.tagName, id: parent.id, className: parent.className,
+          right: rect.right, width: rect.width, overflowX: style.overflowX });
+      }
+      const style = getComputedStyle(node);
+      return { tag: node.tagName, id: node.id, className: node.className,
+        left: box.left, right: box.right, width: box.width, scrollWidth: node.scrollWidth, clientWidth: node.clientWidth,
+        minWidth: style.minWidth, maxWidth: style.maxWidth, whiteSpace: style.whiteSpace,
+        overflowWrap: style.overflowWrap, wordBreak: style.wordBreak, overflowX: style.overflowX,
+        text: node.textContent.trim().replace(/\s+/g, ' ').slice(0, 100), ancestors };
+    }).filter(Boolean).sort((a, b) => b.right - a.right).slice(0, 60);
+  });
+}
+
 try {
   for (const [name, route] of routes) {
     for (const [device, viewport] of Object.entries(viewports)) {
-      const page = await browser.newPage({ viewportSize: viewport });
+      const page = await browser.newPage({ viewport });
       const errors = [];
+      let actualViewport = null;
       page.on('pageerror', error => errors.push(`pageerror: ${error.message}`));
       page.on('console', message => {
         if (message.type() === 'error') errors.push(`console: ${message.text()}`);
@@ -63,6 +91,10 @@ try {
       try {
         const response = await page.goto(`${base}${route}`, { waitUntil: 'networkidle', timeout: 45000 });
         if (!response || !response.ok()) errors.push(`HTTP ${response?.status() || 'no response'}`);
+        actualViewport = await page.evaluate(() => ({ width: innerWidth, height: innerHeight }));
+        if (actualViewport.width !== viewport.width || actualViewport.height !== viewport.height) {
+          errors.push(`viewport ${actualViewport.width}x${actualViewport.height} != ${viewport.width}x${viewport.height}`);
+        }
         const map = page.locator('.omni-acta-map');
         if (await map.count() !== 1) {
           errors.push(`expected one map, found ${await map.count()}`);
@@ -111,10 +143,16 @@ try {
         if (await map.count() === 1) {
           await map.screenshot({ path: path.join(out, `${name}-${device}.png`) });
         }
-        results.push({ name, route, device, viewport, metrics, errors });
+        if (name === 'es-takeover' && device === 'mobile') {
+          await page.locator('#j7-before-after').screenshot({ path: path.join(out, 'es-takeover-mobile-wrapping.png') });
+        }
+        if (name === 'es-acta' && device === 'tablet') {
+          await page.locator('#control-lph-ciclo').screenshot({ path: path.join(out, 'es-acta-tablet-wrapping.png') });
+        }
+        results.push({ name, route, device, viewport, actualViewport, metrics, overflowElements: await overflowElements(page), errors });
       } catch (error) {
         errors.push(String(error));
-        results.push({ name, route, device, viewport, metrics: null, errors });
+        results.push({ name, route, device, viewport, actualViewport, metrics: null, errors });
       } finally {
         if (errors.length) failed = true;
         await page.close();
@@ -125,8 +163,9 @@ try {
   for (const [name, route, routeId] of satelliteRoutes) {
     const device = 'mobile';
     const viewport = viewports.mobile;
-    const page = await browser.newPage({ viewportSize: viewport });
+    const page = await browser.newPage({ viewport });
     const errors = [];
+    let actualViewport = null;
     page.on('pageerror', error => errors.push(`pageerror: ${error.message}`));
     page.on('console', message => {
       if (message.type() === 'error') errors.push(`console: ${message.text()}`);
@@ -135,6 +174,10 @@ try {
     try {
       const response = await page.goto(`${base}${route}`, { waitUntil: 'networkidle', timeout: 45000 });
       if (!response || !response.ok()) errors.push(`HTTP ${response?.status() || 'no response'}`);
+      actualViewport = await page.evaluate(() => ({ width: innerWidth, height: innerHeight }));
+      if (actualViewport.width !== viewport.width || actualViewport.height !== viewport.height) {
+        errors.push(`viewport ${actualViewport.width}x${actualViewport.height} != ${viewport.width}x${viewport.height}`);
+      }
       const bar = page.locator(`[data-post7-evidence-backlink][data-post7-route-id="${routeId}"]`);
       const count = await bar.count();
       if (count !== 1) {
@@ -175,10 +218,33 @@ try {
       if (count === 1) {
         await bar.screenshot({ path: path.join(out, `${name}-${device}-junction.png`) });
       }
-      results.push({ name, route, routeId, device, viewport, metrics, errors });
+      if (routeId === 'ona') {
+        // These sections use the site's existing offscreen rendering optimization.
+        // Bring each repaired component into view before capturing its pixels.
+        if (metrics) metrics.paintedComponentGeometry = [];
+        for (const [component, locator] of [
+          ['hash', page.locator('.record p.small:has(code)')],
+          ['table', page.locator('.record .tablewrap').last()],
+        ]) {
+          await locator.scrollIntoViewIfNeeded();
+          await locator.screenshot({ path: path.join(out, `${name}-mobile-${component}-wrapping.png`) });
+          const geometry = await page.evaluate(() => ({
+            viewport: { width: innerWidth, height: innerHeight },
+            scrollWidth: document.documentElement.scrollWidth,
+            clientWidth: document.documentElement.clientWidth,
+            documentOverflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+          }));
+          if (metrics) metrics.paintedComponentGeometry.push({ component, ...geometry });
+          if (geometry.viewport.width !== viewport.width || geometry.viewport.height !== viewport.height) {
+            errors.push(`${component} painted viewport ${geometry.viewport.width}x${geometry.viewport.height} != ${viewport.width}x${viewport.height}`);
+          }
+          if (geometry.documentOverflow > 2) errors.push(`${component} painted document horizontal overflow ${geometry.documentOverflow}px`);
+        }
+      }
+      results.push({ name, route, routeId, device, viewport, actualViewport, metrics, overflowElements: await overflowElements(page), errors });
     } catch (error) {
       errors.push(String(error));
-      results.push({ name, route, routeId, device, viewport, metrics: null, errors });
+      results.push({ name, route, routeId, device, viewport, actualViewport, metrics: null, errors });
     } finally {
       if (errors.length) failed = true;
       await page.close();
