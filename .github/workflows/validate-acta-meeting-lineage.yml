@@ -37,6 +37,9 @@ on:
       - 'scripts/render_post7june_2022_omnidirectional_map.mjs'
       - 'scripts/validate_post7june_2022_deliberate_exclusion.py'
       - 'scripts/test_validate_post7june_registry_control.py'
+      - 'scripts/test_hotel_panel_insertion.mjs'
+      - 'assets/matkator-8584-hotel-title-multitrack-20260903.js'
+      - 'assets/hotel-finca-title-system-interlink-20260903.js'
       - 'scripts/reconcile_identity_registry_projections.py'
       - 'publication-manifests/community-acta-document-room-20260823.json'
       - 'archive/ACTA_DIGITISATION_PUBLICATION_CLOSEOUT_28AUG2026.md'
@@ -79,6 +82,9 @@ on:
       - 'scripts/render_post7june_2022_omnidirectional_map.mjs'
       - 'scripts/validate_post7june_2022_deliberate_exclusion.py'
       - 'scripts/test_validate_post7june_registry_control.py'
+      - 'scripts/test_hotel_panel_insertion.mjs'
+      - 'assets/matkator-8584-hotel-title-multitrack-20260903.js'
+      - 'assets/hotel-finca-title-system-interlink-20260903.js'
       - 'scripts/reconcile_identity_registry_projections.py'
       - 'publication-manifests/community-acta-document-room-20260823.json'
       - 'archive/ACTA_DIGITISATION_PUBLICATION_CLOSEOUT_28AUG2026.md'
@@ -125,6 +131,8 @@ jobs:
         run: python3 -m unittest scripts.test_build_post7june_route_interlinks
       - name: Check canonical registry integrity and historical snapshot preservation
         run: python3 -m unittest scripts.test_validate_post7june_registry_control
+      - name: Check hotel panels preserve nested section parents
+        run: node --test scripts/test_hotel_panel_insertion.mjs
       - name: Rebuild and require an exact tree
         run: |
           python3 evidence/community/actas/build_public_packages.py build --all

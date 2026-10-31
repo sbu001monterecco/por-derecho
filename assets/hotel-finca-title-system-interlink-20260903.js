@@ -94,10 +94,10 @@
     const main = document.querySelector('main');
     if (isHome && main) {
       const first = main.querySelector('section');
-      if (first && first.nextSibling) main.insertBefore(section, first.nextSibling); else main.prepend(section);
+      if (first && first.nextSibling) first.parentNode.insertBefore(section, first.nextSibling); else main.prepend(section);
     } else {
       const first = main && main.querySelector('section');
-      if (first && first.nextSibling && (path.includes('matkator') || path.includes('dp-748') || path.includes('etj-163') || path.includes('cuatrecasas'))) main.insertBefore(section, first.nextSibling);
+      if (first && first.nextSibling && (path.includes('matkator') || path.includes('dp-748') || path.includes('etj-163') || path.includes('cuatrecasas'))) first.parentNode.insertBefore(section, first.nextSibling);
       else {
         const footer = document.querySelector('footer');
         if (footer && footer.parentNode) footer.parentNode.insertBefore(section, footer); else document.body.appendChild(section);

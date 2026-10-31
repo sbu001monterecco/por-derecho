@@ -98,7 +98,7 @@
       const main = document.querySelector('main');
       if (main) {
         const first = main.querySelector('section');
-        if (first && first.nextSibling) main.insertBefore(section, first.nextSibling); else main.prepend(section);
+        if (first && first.nextSibling) first.parentNode.insertBefore(section, first.nextSibling); else main.prepend(section);
       }
     } else {
       const footer = document.querySelector('footer');
