@@ -770,7 +770,7 @@
   padding: .35rem;
 }
 .lph-event-gates article { border-top: .34rem solid var(--lph-colour, #6b7478); }
-.lph-event-gates header { align-items: center; display: flex; gap: .45rem; }
+.lph-event-gates header { align-items: center; display: flex; flex-wrap: wrap; gap: .45rem; }
 .lph-event-gates header strong { flex: 1; font-size: .86rem; line-height: 1.25; }
 .lph-event-gates p { color: #40565c; font-size: .82rem; line-height: 1.46; }
 .lph-evidence-links { display: flex; flex-wrap: wrap; gap: .28rem; margin-top: .6rem; }

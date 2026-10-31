@@ -143,6 +143,12 @@ try {
         if (await map.count() === 1) {
           await map.screenshot({ path: path.join(out, `${name}-${device}.png`) });
         }
+        if (name === 'es-takeover' && device === 'mobile') {
+          await page.locator('#j7-before-after').screenshot({ path: path.join(out, 'es-takeover-mobile-wrapping.png') });
+        }
+        if (name === 'es-acta' && device === 'tablet') {
+          await page.locator('#control-lph-ciclo').screenshot({ path: path.join(out, 'es-acta-tablet-wrapping.png') });
+        }
         results.push({ name, route, device, viewport, actualViewport, metrics, overflowElements: await overflowElements(page), errors });
       } catch (error) {
         errors.push(String(error));
@@ -211,6 +217,9 @@ try {
       }
       if (count === 1) {
         await bar.screenshot({ path: path.join(out, `${name}-${device}-junction.png`) });
+      }
+      if (routeId === 'ona') {
+        await page.screenshot({ path: path.join(out, `${name}-mobile-wrapping.png`), fullPage: true });
       }
       results.push({ name, route, routeId, device, viewport, actualViewport, metrics, overflowElements: await overflowElements(page), errors });
     } catch (error) {
