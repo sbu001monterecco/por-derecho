@@ -65,13 +65,33 @@ try {
       }, { homeSource, sitemapSource, route: item.route });
       const discoveryPassed = homeResponse.status() === 200 && sitemapResponse.status() === 200 &&
         discovery.homeLinks && discovery.sitemapValid && discovery.sitemapRoutes;
-      const passed = status === 200 && dataResponse.status() === 200 && countsMatch && discoveryPassed &&
+      const home = await context.newPage();
+      await home.goto(baseURL + '/' + item.lang + '/', { waitUntil: 'networkidle' });
+      // Existing home normalizers run after 5.6 and 7.2 seconds and replace the
+      // main navigation. Verify the static discovery band after both have run.
+      await home.waitForFunction(() => performance.now() >= 8000 &&
+        document.querySelector('.main-nav')?.dataset.psrOptimised === '1', null, { timeout: 20000 });
+      const homeLink = home.locator('[data-counsel-selection-band="20261031"] [data-counsel-selection-discovery="20261031"]');
+      const homeBandVisible = await homeLink.isVisible();
+      const homeBand = await homeLink.evaluate(node => {
+        const rect = node.getBoundingClientRect();
+        return { href: node.href, inViewport: rect.left >= 0 && rect.right <= innerWidth &&
+          rect.top >= 0 && rect.bottom <= innerHeight };
+      });
+      await home.screenshot({ path: path.join(outputDir, item.lang + '-home-' + viewport.name + '.png') });
+      await homeLink.click();
+      await home.waitForURL(baseURL + item.route);
+      const homeClickTarget = home.url();
+      await home.close();
+      const renderedDiscoveryPassed = homeBandVisible && homeBand.inViewport &&
+        homeBand.href === baseURL + item.route && homeClickTarget === baseURL + item.route;
+      const passed = status === 200 && dataResponse.status() === 200 && countsMatch && discoveryPassed && renderedDiscoveryPassed &&
         metrics.lang === item.lang && metrics.control === 'PD-EWPP-UKCOUNSEL-PUBLIC-20261031-01' &&
         metrics.asOf === '2026-10-31' && metrics.stats.join(',') === '24,4,20,0' &&
         metrics.noOverflow && metrics.uniqueIds && metrics.anchorsValid && metrics.sendBoundary &&
         metrics.languageTarget === expectedLanguageTarget && metrics.footerLanguageTarget === expectedLanguageTarget;
       await page.screenshot({ path: path.join(outputDir, item.lang + '-' + viewport.name + '.png'), fullPage: true });
-      results.push({ route: item.route, viewport: viewport.name, status, dataStatus: dataResponse.status(), countsMatch, ...discovery, ...metrics, passed });
+      results.push({ route: item.route, viewport: viewport.name, status, dataStatus: dataResponse.status(), countsMatch, ...discovery, homeBandVisible, homeBand, homeClickTarget, ...metrics, passed });
       if (!passed) failures.push(item.lang + '-' + viewport.name);
       await page.close();
     }

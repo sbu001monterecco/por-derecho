@@ -36,6 +36,8 @@ on:
       - 'scripts/render_acta_meeting_lineage.mjs'
       - 'scripts/render_post7june_2022_omnidirectional_map.mjs'
       - 'scripts/validate_post7june_2022_deliberate_exclusion.py'
+      - 'scripts/test_validate_post7june_registry_control.py'
+      - 'scripts/reconcile_identity_registry_projections.py'
       - 'publication-manifests/community-acta-document-room-20260823.json'
       - 'archive/ACTA_DIGITISATION_PUBLICATION_CLOSEOUT_28AUG2026.md'
       - 'archive/ACTA_MEETING_PERIMETER_CONTINUITY_AUDIT_28AUG2026.md'
@@ -76,6 +78,8 @@ on:
       - 'scripts/render_acta_meeting_lineage.mjs'
       - 'scripts/render_post7june_2022_omnidirectional_map.mjs'
       - 'scripts/validate_post7june_2022_deliberate_exclusion.py'
+      - 'scripts/test_validate_post7june_registry_control.py'
+      - 'scripts/reconcile_identity_registry_projections.py'
       - 'publication-manifests/community-acta-document-room-20260823.json'
       - 'archive/ACTA_DIGITISATION_PUBLICATION_CLOSEOUT_28AUG2026.md'
       - 'archive/ACTA_MEETING_PERIMETER_CONTINUITY_AUDIT_28AUG2026.md'
@@ -119,6 +123,8 @@ jobs:
             PyMuPDF==1.26.6
       - name: Check backlink regeneration preserves existing route placement
         run: python3 -m unittest scripts.test_build_post7june_route_interlinks
+      - name: Check canonical registry integrity and historical snapshot preservation
+        run: python3 -m unittest scripts.test_validate_post7june_registry_control
       - name: Rebuild and require an exact tree
         run: |
           python3 evidence/community/actas/build_public_packages.py build --all
