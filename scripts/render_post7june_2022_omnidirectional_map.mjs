@@ -219,7 +219,27 @@ try {
         await bar.screenshot({ path: path.join(out, `${name}-${device}-junction.png`) });
       }
       if (routeId === 'ona') {
-        await page.screenshot({ path: path.join(out, `${name}-mobile-wrapping.png`), fullPage: true });
+        // These sections use the site's existing offscreen rendering optimization.
+        // Bring each repaired component into view before capturing its pixels.
+        if (metrics) metrics.paintedComponentGeometry = [];
+        for (const [component, locator] of [
+          ['hash', page.locator('.record p.small:has(code)')],
+          ['table', page.locator('.record .tablewrap').last()],
+        ]) {
+          await locator.scrollIntoViewIfNeeded();
+          await locator.screenshot({ path: path.join(out, `${name}-mobile-${component}-wrapping.png`) });
+          const geometry = await page.evaluate(() => ({
+            viewport: { width: innerWidth, height: innerHeight },
+            scrollWidth: document.documentElement.scrollWidth,
+            clientWidth: document.documentElement.clientWidth,
+            documentOverflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+          }));
+          if (metrics) metrics.paintedComponentGeometry.push({ component, ...geometry });
+          if (geometry.viewport.width !== viewport.width || geometry.viewport.height !== viewport.height) {
+            errors.push(`${component} painted viewport ${geometry.viewport.width}x${geometry.viewport.height} != ${viewport.width}x${viewport.height}`);
+          }
+          if (geometry.documentOverflow > 2) errors.push(`${component} painted document horizontal overflow ${geometry.documentOverflow}px`);
+        }
       }
       results.push({ name, route, routeId, device, viewport, actualViewport, metrics, overflowElements: await overflowElements(page), errors });
     } catch (error) {
