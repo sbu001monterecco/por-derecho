@@ -1,0 +1,26 @@
+{
+  "schema": "por-derecho.counsel-selection-public-snapshot.v1",
+  "control_id": "PD-EWPP-UKCOUNSEL-PUBLIC-20261031-01",
+  "snapshot_date": "2026-10-31",
+  "time_zone": "Europe/London",
+  "candidate_institutions": 24,
+  "first_contact_sent_once": 4,
+  "first_contact_not_sent": 20,
+  "of_not_sent": {
+    "native_gmail_draft": 1,
+    "privately_prepared_email_text_only": 6,
+    "research_only": 13
+  },
+  "verified_engagements": 0,
+  "reporting_basis": "internal source-first reconciliation: provider Sent records and private canonical roster",
+  "publication_limits": [
+    "no firm names, staff or legal-client identities",
+    "no private correspondence or email metadata",
+    "no conflicts decisions or adverse party lists",
+    "no litigation papers, evidence or case-room links",
+    "no automatic real-time claim",
+    "no inference of legal merit, firm acceptance or criminal wrongdoing"
+  ],
+  "methodology": "F0 verified institution; F1 firm-wide capability/fit; F2 secure scope-specific conflicts; F3 independent acceptance; F4 restricted evidence access",
+  "change_control": "Updated only after private source verification and publication review; separate counsel and court authority gates"
+}
