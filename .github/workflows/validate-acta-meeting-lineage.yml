@@ -28,6 +28,7 @@ on:
       - 'scripts/acta_event_actor_routes.py'
       - 'scripts/acta_ricpe_event_records.py'
       - 'scripts/build_post7june_route_interlinks.py'
+      - 'scripts/test_build_post7june_route_interlinks.py'
       - 'scripts/validate_acta_meeting_lineage.py'
       - 'scripts/verify_acta_live_readback.mjs'
       - 'scripts/remediate_acta_public_locators.py'
@@ -67,6 +68,7 @@ on:
       - 'scripts/acta_event_actor_routes.py'
       - 'scripts/acta_ricpe_event_records.py'
       - 'scripts/build_post7june_route_interlinks.py'
+      - 'scripts/test_build_post7june_route_interlinks.py'
       - 'scripts/validate_acta_meeting_lineage.py'
       - 'scripts/verify_acta_live_readback.mjs'
       - 'scripts/remediate_acta_public_locators.py'
@@ -115,6 +117,8 @@ jobs:
             pypdf==6.10.0 \
             reportlab==4.4.9 \
             PyMuPDF==1.26.6
+      - name: Check backlink regeneration preserves existing route placement
+        run: python3 -m unittest scripts.test_build_post7june_route_interlinks
       - name: Rebuild and require an exact tree
         run: |
           python3 evidence/community/actas/build_public_packages.py build --all
