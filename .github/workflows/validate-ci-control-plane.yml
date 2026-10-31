@@ -30,7 +30,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
       GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
