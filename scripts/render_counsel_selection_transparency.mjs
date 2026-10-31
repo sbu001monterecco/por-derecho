@@ -36,6 +36,7 @@ try {
           anchorsValid: anchors.every(node => document.getElementById(node.getAttribute('href').slice(1))),
           sendBoundary: document.body.innerText.includes(boundary),
           languageTarget: document.querySelector('.topnav .language')?.href || '',
+          footerLanguageTarget: document.querySelector('.footer a[hreflang]')?.href || '',
         };
       }, item);
       const status = response?.status();
@@ -45,13 +46,32 @@ try {
       const countsMatch = data.candidate_institutions === 24 && data.first_contact_sent_once === 4 &&
         data.first_contact_not_sent === 20 && data.verified_engagements === 0 &&
         Object.values(data.of_not_sent).reduce((a, b) => a + b, 0) === 20;
-      const passed = status === 200 && dataResponse.status() === 200 && countsMatch &&
+      const homeResponse = await context.request.get(baseURL + '/' + item.lang + '/');
+      const sitemapResponse = await context.request.get(baseURL + '/sitemap.xml');
+      const homeSource = await homeResponse.text();
+      const sitemapSource = await sitemapResponse.text();
+      const discovery = await page.evaluate(({ homeSource, sitemapSource, route }) => {
+        const home = new DOMParser().parseFromString(homeSource, 'text/html');
+        const links = [...home.querySelectorAll('[data-counsel-selection-discovery="20261031"]')];
+        const expectedSlug = route.split('/').filter(Boolean).slice(1).join('/') + '/';
+        const sitemap = new DOMParser().parseFromString(sitemapSource, 'application/xml');
+        const locations = [...sitemap.getElementsByTagName('loc')].map(node => node.textContent);
+        return {
+          homeLinks: links.length === 2 && links.every(node => node.getAttribute('href') === expectedSlug),
+          sitemapValid: !sitemap.querySelector('parsererror'),
+          sitemapRoutes: ['/en/counsel-selection-transparency/', '/es/transparencia-seleccion-asesoria/']
+            .every(suffix => locations.includes('https://sbu001monterecco.github.io/por-derecho' + suffix)),
+        };
+      }, { homeSource, sitemapSource, route: item.route });
+      const discoveryPassed = homeResponse.status() === 200 && sitemapResponse.status() === 200 &&
+        discovery.homeLinks && discovery.sitemapValid && discovery.sitemapRoutes;
+      const passed = status === 200 && dataResponse.status() === 200 && countsMatch && discoveryPassed &&
         metrics.lang === item.lang && metrics.control === 'PD-EWPP-UKCOUNSEL-PUBLIC-20261031-01' &&
         metrics.asOf === '2026-10-31' && metrics.stats.join(',') === '24,4,20,0' &&
         metrics.noOverflow && metrics.uniqueIds && metrics.anchorsValid && metrics.sendBoundary &&
-        metrics.languageTarget === expectedLanguageTarget;
+        metrics.languageTarget === expectedLanguageTarget && metrics.footerLanguageTarget === expectedLanguageTarget;
       await page.screenshot({ path: path.join(outputDir, item.lang + '-' + viewport.name + '.png'), fullPage: true });
-      results.push({ route: item.route, viewport: viewport.name, status, dataStatus: dataResponse.status(), countsMatch, ...metrics, passed });
+      results.push({ route: item.route, viewport: viewport.name, status, dataStatus: dataResponse.status(), countsMatch, ...discovery, ...metrics, passed });
       if (!passed) failures.push(item.lang + '-' + viewport.name);
       await page.close();
     }
@@ -62,4 +82,4 @@ try {
   await fs.writeFile(path.join(outputDir, 'metrics.json'), JSON.stringify(results, null, 2) + '\n');
 }
 if (failures.length) throw new Error('Counsel dashboard render checks failed: ' + failures.join(', '));
-console.log('COUNSEL SELECTION RENDER PASSED: EN/ES desktop and mobile; status, snapshot, counts, links and overflow verified.');
+console.log('COUNSEL SELECTION RENDER PASSED: EN/ES desktop and mobile; status, snapshot, counts, same-host links, homepage discovery, sitemap and overflow verified.');
