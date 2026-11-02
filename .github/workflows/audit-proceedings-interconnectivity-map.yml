@@ -289,7 +289,7 @@ permissions:
 
 jobs:
   proceedings-interconnectivity-map:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # Playwright 1.50.1 does not support the newer Ubuntu 26.04 runner
     timeout-minutes: 20
     steps:
       - name: Check out repository
