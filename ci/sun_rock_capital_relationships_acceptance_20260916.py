@@ -33,8 +33,8 @@ for p in required:
         errors.append(f"missing required file: {p.relative_to(ROOT)}")
 
 if not errors:
-    need(EN, "Aweswell Limited")
-    need(ES, "Aweswell Limited")
+    need(EN, "AWESWELL LIMITED")
+    need(ES, "AWESWELL LIMITED")
     need(EN, "A private capital conversation begins with fit, not terms.")
     need(ES, "Una conversación privada de capital empieza por el encaje, no por las condiciones.")
     need(EN, "No public route")
