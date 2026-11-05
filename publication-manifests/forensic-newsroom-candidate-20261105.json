@@ -1,0 +1,18 @@
+{
+  "schema": "por-derecho.public-newsroom-evidence-candidate.v1",
+  "canonical_control": "PD-MEDIA-EL-ECO-EL-ES-20261105-001",
+  "classification": "PUBLIC_SAFE_SOURCE_QUALIFIED_PENDING_REVIEW",
+  "source_gitlab_branch": "feature/forensic-media-index-20261105",
+  "source_gitlab_commit": "0034d8608f1b4773123f13ee35da4c6b69c25dbf",
+  "approved_public_scope": "Bilingual general news reader, 9-phase Puzzle index, RICPE Series F/G, BOE grant award and evidence questions",
+  "excluded": "personal WhatsApp exchanges, journalist contacts, personalised briefing PDFs, privileged source material, allegations labelled as findings",
+  "protected_controls": "GitHub/GitLab publication checks, legal/privacy/copyright/source-admission review; no bypass",
+  "owner_request_date": "2026-11-05",
+  "release_approved": false,
+  "public_deployment_verified": false,
+  "media_records": 23,
+  "parity": {
+    "en": "en/forensic-accountability/index.html",
+    "es": "es/reconstruccion-forense/index.html"
+  }
+}
