@@ -1,0 +1,39 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-MEDIA-EL-ECO-EL-ES-20261105-001",
+  "control_date": "2026-11-05",
+  "current_state": "PR_OPEN",
+  "expected_routes": {
+    "en": [
+      "en/forensic-accountability/index.html"
+    ],
+    "es": [
+      "es/reconstruccion-forense/index.html"
+    ]
+  },
+  "owner": "Gil Marer / Por Derecho",
+  "publication_scope": "Two public-safe bilingual visual newsroom routes, linked from existing Case Control Room pages; no homepage replacement",
+  "source_gitlab_branch": "feature/forensic-media-index-20261105",
+  "source_gitlab_commit": "0034d8608f1b4773123f13ee35da4c6b69c25dbf",
+  "current_github_pr": 2137,
+  "media_records": 23,
+  "privacy": {
+    "private_whatsapp_shared": false,
+    "personal_journalist_correspondence_shared": false,
+    "confidential_evidence_shared": false,
+    "privileged_legal_material_shared": false
+  },
+  "substantive_boundaries": [
+    "RICPE F/G are separate private financing series",
+    "BOE GC/836/P06 records grant award not verified disbursement",
+    "Political public support is not proof of criminal knowledge",
+    "Contrary and adverse decisions must be retained"
+  ],
+  "validation": {
+    "evidence": "Review candidate; mandatory GitHub checks, independent legal/privacy/publication sign-off and GitLab source admission not yet complete"
+  },
+  "release_approved": false,
+  "public_deployment_verified": false,
+  "blocking_reason": "GitLab main inherited source admission failures; both platforms require standard green release gates"
+}
