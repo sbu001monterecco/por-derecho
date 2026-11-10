@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 72,
   "owner": "2140:daa471989c88d791e67178ab7729fe5a8b814dc5",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 2140,
   "base_sha": "07adcd9ad1bb000a002fc2015b8cc9589fccb89a",
   "candidate_sha": "daa471989c88d791e67178ab7729fe5a8b814dc5",
@@ -3564,6 +3564,42 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 2140,
+      "candidate_sha": "daa471989c88d791e67178ab7729fe5a8b814dc5",
+      "at": "2026-11-10T21:52:05.246252Z",
+      "merge_sha": "b6c904cc4092db3697d5008f85d5a95a4bc28032",
+      "pages_run_id": 42908867558,
+      "exact_matches": [
+        {
+          "path": "en/index.html",
+          "sha256": "68bbcdf2db7f0fa9180f4939986f03d4a0f222ade5cbd3ad529be8712ebe5554",
+          "bytes": 235110
+        },
+        {
+          "path": "en/legal-notebook/index.html",
+          "sha256": "159ca32c7970377058468dea444fdd8e39859f166459f91b511eaf67d14a2190",
+          "bytes": 14037
+        },
+        {
+          "path": "es/cuaderno-juridico/index.html",
+          "sha256": "89941074c97a1efa6ea1637dcd5cbc14f77e65f3aaae7556c33462a5217ed791",
+          "bytes": 14706
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "73b923c45010384fbb8b08b7c27ceda483cd548e4d5e1cb24119fcd621cf02d9",
+          "bytes": 244847
+        },
+        {
+          "path": "publication-manifests/pd-defence-notebook-github-downstream-20261110.json",
+          "sha256": "8fa2a9f0964c02b75c5a4dbc2bb3638b1006fe2e519bdfdc1fd96b5f430ce3c2",
+          "bytes": 3350
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -3606,7 +3642,44 @@
         "pages_run_id": 42908867558,
         "merge_sha": "b6c904cc4092db3697d5008f85d5a95a4bc28032"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-11-10T21:52:05.246168Z",
+      "evidence": {
+        "merge_sha": "b6c904cc4092db3697d5008f85d5a95a4bc28032",
+        "pages_run_id": 42908867558,
+        "exact_matches": [
+          {
+            "path": "en/index.html",
+            "sha256": "68bbcdf2db7f0fa9180f4939986f03d4a0f222ade5cbd3ad529be8712ebe5554",
+            "bytes": 235110
+          },
+          {
+            "path": "en/legal-notebook/index.html",
+            "sha256": "159ca32c7970377058468dea444fdd8e39859f166459f91b511eaf67d14a2190",
+            "bytes": 14037
+          },
+          {
+            "path": "es/cuaderno-juridico/index.html",
+            "sha256": "89941074c97a1efa6ea1637dcd5cbc14f77e65f3aaae7556c33462a5217ed791",
+            "bytes": 14706
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "73b923c45010384fbb8b08b7c27ceda483cd548e4d5e1cb24119fcd621cf02d9",
+            "bytes": 244847
+          },
+          {
+            "path": "publication-manifests/pd-defence-notebook-github-downstream-20261110.json",
+            "sha256": "8fa2a9f0964c02b75c5a4dbc2bb3638b1006fe2e519bdfdc1fd96b5f430ce3c2",
+            "bytes": 3350
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-11-10T21:52:00.052018Z"
+  "updated_at": "2026-11-10T21:52:05.246168Z"
 }
