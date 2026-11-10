@@ -1,0 +1,78 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-DEFENCE-SPECIALISATION-20261110-01-NOTEBOOK-GITHUB-DOWNSTREAM",
+  "owner": "Gil Marer / Por Derecho",
+  "created_at": "2026-11-10",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "purpose": "Selected one-way downstream projection of the live-verified GitLab bilingual legal-notebook article links; preserve all existing GitHub notebook bytes and divergent history. GitLab remains canonical.",
+  "source_base": "07adcd9ad1bb000a002fc2015b8cc9589fccb89a",
+  "expected_routes": {
+    "en": [
+      "en/legal-notebook/index.html"
+    ],
+    "es": [
+      "es/cuaderno-juridico/index.html"
+    ]
+  },
+  "expected_source_files": [],
+  "canonical_gitlab_source": "c39e95607be4910f3f39cdf4047ea960f59eaf9b",
+  "canonical_gitlab_review": "00dc16ab75e85b905ece1fed521ae6230e9811f2",
+  "canonical_gitlab_review_sha256": "f527d47cf0c0e637b1bdaed176ce1de1bf1eaaf07522118bcf7ce4b41e0dedbc",
+  "canonical_gitlab_pipeline": 3051518111,
+  "canonical_gitlab_producer_job": 17912325194,
+  "canonical_gitlab_deployment_job": 17912325201,
+  "canonical_gitlab_live_readback_job": 17912806944,
+  "canonical_gitlab_live_readback_completed_at": "2026-11-10T20:43:48.209Z",
+  "gitlab_live_receipt_sha256": "dd3865fff8d311192616b5e38262ed051e24dad406a09d211473b6e715cdaada",
+  "gitlab_retained_artifact_sha256": "86be53184562a5f72111fc0277e8d92a37213003bb2d7b10b18023c94edf5c1f",
+  "github_notebook_comparison": {
+    "en/legal-notebook/index.html": {
+      "before_sha256": "9da83d224807fdb452de191c66a6e9bf411d894bc462cbf7bf766c7ccea215b1",
+      "after_sha256": "159ca32c7970377058468dea444fdd8e39859f166459f91b511eaf67d14a2190",
+      "before_bytes": 13361,
+      "after_bytes": 14037,
+      "original_bytes_preserved": true
+    },
+    "es/cuaderno-juridico/index.html": {
+      "before_sha256": "d2756b1f0e063b1223f58099224056a6b036c8eefa647daeae05cb4c522f889b",
+      "after_sha256": "89941074c97a1efa6ea1637dcd5cbc14f77e65f3aaae7556c33462a5217ed791",
+      "before_bytes": 13988,
+      "after_bytes": 14706,
+      "original_bytes_preserved": true
+    }
+  },
+  "preservation": {
+    "tracked_baseline_files": 6956,
+    "other_existing_files_unchanged": 6954,
+    "existing_files_changed": [
+      "en/legal-notebook/index.html",
+      "es/cuaderno-juridico/index.html"
+    ],
+    "new_files": [
+      "publication-manifests/pd-defence-notebook-github-downstream-20261110.json"
+    ],
+    "deletions": [],
+    "renames": [],
+    "mode_changes": [],
+    "homepages_unchanged": true,
+    "article_bytes_unchanged": true,
+    "workflows_and_pages_configuration_unchanged": true
+  },
+  "reconciliation": {
+    "selected_source_paths": [
+      "en/legal-notebook/index.html",
+      "es/cuaderno-juridico/index.html"
+    ],
+    "exact_approved_insertions_only": true,
+    "github_divergent_notebook_bytes_preserved": true,
+    "whole_tree_mirror": false,
+    "inbound_sync": false,
+    "historical_refs_unchanged": true
+  },
+  "boundaries": [
+    "This source record does not claim a GitHub merge, deployment or live verification; the release controller records those events separately.",
+    "Original GitLab canonical article URLs and reciprocal language references remain unchanged.",
+    "No private engineering notes, credentials or unrelated content are copied."
+  ]
+}
