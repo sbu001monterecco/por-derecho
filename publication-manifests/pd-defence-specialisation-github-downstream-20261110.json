@@ -1,0 +1,67 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-DEFENCE-SPECIALISATION-20261110-01-GITHUB-DOWNSTREAM",
+  "owner": "Gil Marer / Por Derecho",
+  "created_at": "2026-11-10",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "purpose": "Selected one-way downstream copy of the two exact live-verified GitLab legal-policy articles; GitLab remains canonical.",
+  "source_base": "b9455fb663aa85b45322327b2fffa1f9a4a407fb",
+  "expected_routes": {
+    "en": [
+      "en/specialisation-without-fragmentation/index.html"
+    ],
+    "es": [
+      "es/especializacion-sin-fragmentacion/index.html"
+    ]
+  },
+  "expected_source_files": [],
+  "canonical_gitlab_source": "f7aa555e7cb70ae0eab0c618bcb421e226faa6f1",
+  "canonical_gitlab_review": "3f558f6f4751bf962adfde0dfdc7785de09a624c",
+  "canonical_gitlab_pipeline": 3049040543,
+  "canonical_gitlab_producer_job": 17892407536,
+  "canonical_gitlab_deployment_job": 17892407542,
+  "canonical_gitlab_live_readback_job": 17893285556,
+  "article_fingerprints": {
+    "en/specialisation-without-fragmentation/index.html": {
+      "bytes": 43950,
+      "sha256": "5a629fc535353c564d7982489689f39e4e62a2c66a5d6be561e81660b3bf936d",
+      "git_mode": "100644"
+    },
+    "es/especializacion-sin-fragmentacion/index.html": {
+      "bytes": 45310,
+      "sha256": "6007cc449e125f228f21c1d8c278e080c9e4dd1e248400900fe8b707ddbaa06f",
+      "git_mode": "100644"
+    }
+  },
+  "gitlab_live_receipt_sha256": "da38e6cac0b7deafce091d653d22cf951eb370924d8a6c69dce101e9b45ccd6b",
+  "reconciliation": {
+    "compared_current_default_trees": true,
+    "equivalent_paths": 1129,
+    "github_only_paths_preserved": 4666,
+    "different_same_paths_preserved": 1158,
+    "gitlab_only_paths": 3545,
+    "selected_source_paths": [
+      "en/specialisation-without-fragmentation/index.html",
+      "es/especializacion-sin-fragmentacion/index.html"
+    ],
+    "github_historical_refs_preserved": 2406,
+    "whole_tree_mirror": false,
+    "inbound_sync": false
+  },
+  "preservation": {
+    "deletions": [],
+    "renames": [],
+    "existing_files_changed": [],
+    "homepages_unchanged": true,
+    "workflows_and_pages_configuration_unchanged": true
+  },
+  "boundaries": [
+    "GitLab canonical URLs and reciprocal language references remain unchanged.",
+    "GitHub merge, deployment and live verification are not claimed by this source preparation record.",
+    "Historical public files and refs remain untouched; unique historical material is not automatically imported into GitLab.",
+    "No private engineering issue text, private source material or credentials are copied."
+  ],
+  "canonical_gitlab_readback_review": "a505836fb083bdcc22bc91b1426ceca7615a7aa4",
+  "canonical_gitlab_readback_repair_merge": "20cc5bba68f615ca178f30c20ba8c3c9f01f6da0"
+}
