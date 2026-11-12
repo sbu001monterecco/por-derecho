@@ -8,6 +8,16 @@ const output=process.env.PSR_NEXUS_SCREENSHOT_DIR || 'artifacts/dp1901-platform-
 fs.mkdirSync(output,{recursive:true});
 const data=JSON.parse(fs.readFileSync('assets/data/dp1901-platform-recovery-nexus-20260920.json','utf8'));
 const routes=data.nodes.flatMap(n=>Object.values(n.routes).map(route=>({route,central:false})));
+/* Deliberately verify the recipient-focus exclusion rather than forcing the
+ * shared DP1901 graph onto the separate digital-identity reader pages. */
+const digital=data.nodes.find(n=>n.id==='DIGITAL');
+assert.ok(digital && digital.routes.en==='en/sun-park-digital-identity-google-mynd/'
+  && digital.routes.es==='es/identidad-digital-sun-park-google-mynd/',
+  'DIGITAL source contract changed: perform explicit source review');
+const protectedRoutes=new Set(Object.values(digital.routes));
+const runtime=fs.readFileSync('assets/dp1901-platform-recovery-nexus-20260920.js','utf8');
+assert.ok(runtime.includes("document.body?.dataset.recipientFocus === 'true'"),
+  'Recipient-focused opt-out removed: do not treat as an expected negative test');
 routes.push(...Object.values(data.central_routes).map(route=>({route,central:true})));
 const browser=await chromium.launch({headless:true});
 const results=[];
@@ -23,6 +33,24 @@ try {
       try {
         const response=await page.goto(base+item.route,{waitUntil:'domcontentloaded',timeout:30000});
         assert.equal(response.status(),200);
+        if (protectedRoutes.has(item.route)) {
+          // Do not skip: assert 200, opt-out, zero injection and original cards.
+          assert.equal(await page.locator('body[data-recipient-focus="true"]').count(),1);
+          assert.equal(await page.locator('#pd1901-platform-nexus').count(),0);
+          assert.notEqual(await page.locator('html').getAttribute('data-pd1901-nexus'),'ready');
+          assert.equal(await page.locator('main').count(),1);
+          assert.equal(await page.locator('main article.cardx').count(),3);
+          assert.equal(missing.length,0);
+          record.status='PASS';
+          record.test_type='NEGATIVE_RECIPIENT_FOCUS_VERIFIED';
+          await page.screenshot({
+            path:path.join(output,`recipient-focus-${item.route.slice(0,2)}-${width}.png`),
+            fullPage:true
+          });
+          results.push(record);
+          await page.close();
+          continue;
+        }
         await page.waitForFunction(()=>document.documentElement.dataset.pd1901Nexus==='ready',null,{timeout:20000});
         assert.equal(missing.length,0);
         if(item.central){
