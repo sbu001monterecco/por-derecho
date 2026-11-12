@@ -147,3 +147,98 @@ The review separates original-lender conduct and retained obligations, each subs
 These official pages were directly reviewed on 27 October 2026. The company website is primary evidence of the firm's own description, not an independent regulatory finding. Corporate registration, regulatory registration, actual authority, conduct and liability remain separate propositions. No regulator's acceptance of this case or finding of misconduct is asserted.
 
 Public reader projections: [EN PH122 review](../../en/ph122-cerberus-haya-bankia-external-perimeter/index.html#regulatory-compliance-review-20261027), [ES PH122 review](../../es/perimetro-ph122-cerberus-haya-bankia-externo/index.html#revision-regulatoria-cumplimiento-20261027), [EN lender gateway](../../en/lender-of-record/liability/index.html#regulatory-compliance-gateway-20261027), [ES lender gateway](../../es/acreedor-de-registro/responsabilidad/index.html#enlace-regulacion-cumplimiento-20261027).
+
+
+## Working thesis, objectives, actions and intended outcomes — 27 October 2026
+
+This is an additive programme summary, not a new historical source or an adjudicated liability conclusion. It preserves the existing chronology, contrary record, mandate gaps and official-source regulatory limits above. It does not allocate a new source/event ID or reproduce private correspondence. The full scope of any contractual-position transfer remains an instrument-and-law question; no narrower assumption is substituted for the operative wording.
+
+### English
+
+**Trace responsibility, resolve the record and pursue supported remedies.**
+
+This review seeks to establish responsibility for the financing, transfer, management and enforcement of the LPB / Sun Park debt, identify any loss attributable to each responsible actor, and pursue correction, remediation and recovery for the proper rights holders. It also seeks to narrow the issues and support a constructive, evidence-based resolution with authorised decision-makers.
+
+The work follows both the transferred mortgage relationship and any obligations retained by Bankia, including responsibility for its own conduct. A credit sale alone does not settle that allocation. The scope of any transferred contractual position must be determined from the operative instruments, schedules and applicable regime. [CaixaBank is assessed as Bankia's successor](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2021-5465); that succession does not establish an underlying breach or responsibility for every later holder's conduct.
+
+Each later holder, servicer, adviser or other entity is assessed against its own duties, mandate, decisions, instructions, knowledge and conduct. Shared branding or an operational contact does not establish control, group-wide liability or UK or US jurisdiction. The existing chronology, contrary evidence and unresolved mandate questions remain part of the test.
+
+#### 1. Identify rights holders and the transfer scope
+
+**Actions:** Map each asserted right and loss to its holder and legal capacity. Reconcile the transfer instruments, schedules, account and product records, payments and discharge evidence across the creditor chain.
+
+**Intended output:** A sourced allocation of what transferred, what remained, what was satisfied and what is still disputed or unresolved, with corporate, shareholder, personal and estate interests kept distinct.
+
+#### 2. Attribute authority and material decisions
+
+**Actions:** Identify the principal, holder, servicer, adviser, committee and record custodian for each material decision. Test mandates, instructions and reasons, including any fact-specific basis for a UK or US compliance or regulatory route.
+
+**Intended output:** An entity-by-entity decision record with supported capacities and clearly stated gaps. Registration, affiliation and communication are not substitutes for authority or a jurisdictional nexus.
+
+#### 3. Preserve, reconcile and correct the record
+
+**Actions:** Identify records and custodians, define preservation and production needs, and compare disputed entries with primary evidence. Keep acquisition price, debt balance, collections, payments, fees and any supported conflict question separate.
+
+**Intended output:** A finite document and correction schedule that identifies the record, issue, supporting evidence and responsible custodian. Missing material or a nonresponse is recorded as unresolved, not as an admission.
+
+#### 4. Test control, causation and loss
+
+**Actions:** Examine the authority and consequences of material credit, enforcement and hotel-control decisions. Assess the rescue and insolvency-exit alternatives cumulatively, including their conditions, timing and lawful explanations, and trace any resulting loss to the relevant rights holder.
+
+**Intended output:** A supported causal account that distinguishes creditor status from authority over hotel operations, and separates an adverse outcome from a proved breach and attributable loss.
+
+#### 5. Select a remedy and a constructive resolution route
+
+**Actions:** For each supported issue, assess standing, respondent, duty, remedy, forum, limitation and overlap with existing proceedings. Prepare focused questions for authorised decision-makers and assess consensual resolution or alternative dispute resolution while preserving litigation rights.
+
+**Intended output:** A reasoned route for factual review, correction, negotiation or an appropriate formal procedure. Professional or regulatory accountability remains separate from settlement bargaining; it is not presented as a means of obtaining compensation from a regulator.
+
+**Intended outcomes:** The intended outcomes are an evidenced allocation of responsibility, preservation and correction of relevant records, a narrower and more accurately defined dispute, and a constructive resolution where possible. Where evidence, standing and applicable law support it, the work assesses cessation and remediation of established continuing wrongful conduct and legally supportable restitution, compensation or other relief. These are remedies to evaluate and pursue, not promised findings, admissions, entitlements or financial results.
+
+Current stage: record review and preparation. The immediate compliance objective is an accountable factual review, identification of the responsible entities and decision-makers, and resolution of specified documentary gaps. This page does not certify dispatch, filing, recipient acceptance or a finding. External communications and filings require their own authorisation and evidenced completion; a response process does not itself restart or suspend limitation.
+
+### Español
+
+**Determinar responsabilidades, aclarar los documentos y promover remedios fundados.**
+
+Esta revisión busca determinar la responsabilidad por la financiación, transmisión, gestión y ejecución de la deuda de LPB / Sun Park, identificar el perjuicio que pueda atribuirse a cada responsable y promover la corrección, reparación y recuperación para los titulares de los derechos correspondientes. También busca acotar las cuestiones controvertidas y favorecer una solución constructiva, basada en pruebas, con quienes tengan facultades de decisión.
+
+El trabajo sigue tanto la relación hipotecaria transmitida como las obligaciones que, en su caso, hubiera retenido Bankia, incluida la responsabilidad por su propia conducta. La venta del crédito no resuelve por sí sola esa distribución. El alcance de cualquier posición contractual transmitida debe determinarse mediante los instrumentos operativos, anexos y régimen aplicable. [CaixaBank se examina como sucesora de Bankia](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2021-5465); esa sucesión no acredita un incumplimiento subyacente ni responsabilidad por toda conducta de los titulares posteriores.
+
+Cada titular posterior, servicer, asesor u otra entidad se examina conforme a sus propias obligaciones, mandato, decisiones, instrucciones, conocimiento y conducta. Compartir marca o interlocución operativa no acredita control, responsabilidad de todo el grupo ni competencia regulatoria británica o estadounidense. La cronología existente, las pruebas contrarias y las cuestiones de mandato pendientes siguen formando parte del examen.
+
+#### 1. Identificar a los titulares de derechos y el alcance de las transmisiones
+
+**Actuaciones:** Vincular cada derecho y perjuicio alegado con su titular y capacidad jurídica. Conciliar instrumentos de transmisión, anexos, documentación de cuentas y productos, pagos y pruebas de extinción de obligaciones a lo largo de la cadena acreedora.
+
+**Resultado perseguido:** Una distribución documentada de lo transmitido, retenido, satisfecho y todavía controvertido o sin resolver, separando los intereses de sociedades, socios, personas físicas y masa concursal.
+
+#### 2. Atribuir facultades y decisiones relevantes
+
+**Actuaciones:** Identificar al principal, titular, servicer, asesor, comité y custodio de documentos de cada decisión relevante. Examinar mandatos, instrucciones y razones, incluida cualquier conexión concreta que fundamente una vía de cumplimiento o regulación en Reino Unido o Estados Unidos.
+
+**Resultado perseguido:** Un registro de decisiones por entidad, con capacidades acreditadas y lagunas expresas. La inscripción, vinculación societaria o comunicación no sustituye a las facultades ni al nexo de competencia.
+
+#### 3. Preservar, conciliar y corregir la documentación
+
+**Actuaciones:** Identificar documentos y custodios, concretar necesidades de preservación y aportación, y contrastar los asientos discutidos con fuentes primarias. Separar precio de adquisición, saldo de deuda, cobros, pagos, honorarios y cualquier cuestión de conflicto sustentada en pruebas.
+
+**Resultado perseguido:** Una relación delimitada de documentos y correcciones que identifique el registro, la cuestión, su prueba y el custodio responsable. La falta de material o de respuesta se registra como cuestión abierta, no como admisión.
+
+#### 4. Examinar control, causalidad y perjuicio
+
+**Actuaciones:** Examinar las facultades y consecuencias de decisiones relevantes sobre crédito, ejecución y control del hotel. Valorar conjuntamente las alternativas de rescate y salida del concurso, con sus condiciones, fechas y explicaciones lícitas, y vincular cualquier perjuicio resultante con el titular del derecho afectado.
+
+**Resultado perseguido:** Un análisis causal documentado que distinga la condición de acreedor de las facultades sobre la explotación hotelera y separe un resultado adverso de un incumplimiento probado y un perjuicio atribuible.
+
+#### 5. Seleccionar el remedio y una vía constructiva de solución
+
+**Actuaciones:** Valorar para cada cuestión fundada la legitimación, entidad frente a la que se actúa, obligación, remedio, foro, plazos y relación con procedimientos existentes. Preparar preguntas concretas para quienes tengan facultades de decisión y valorar una solución consensuada o medios alternativos de resolución, preservando los derechos procesales.
+
+**Resultado perseguido:** Una vía razonada de revisión fáctica, corrección, negociación o procedimiento formal adecuado. La responsabilidad profesional o regulatoria se mantiene separada de la negociación de acuerdos; no se presenta como vía para obtener una indemnización del regulador.
+
+**Resultados perseguidos:** Se persiguen una atribución documentada de responsabilidades, la preservación y corrección de los documentos relevantes, una controversia más delimitada y precisa y, cuando sea posible, una solución constructiva. Cuando las pruebas, la legitimación y el derecho aplicable lo permitan, el trabajo examina el cese y la reparación de conductas ilícitas continuadas que se acrediten, así como restitución, indemnización u otras medidas jurídicamente fundadas. Son remedios que valorar y promover, no promesas de conclusiones, admisiones, derechos reconocidos o resultados económicos.
+
+Fase actual: revisión documental y preparación. El objetivo inmediato de cumplimiento es una revisión fáctica con un responsable identificado, determinar las entidades y personas decisoras pertinentes y resolver lagunas documentales concretas. Esta página no certifica envío, presentación, aceptación por el destinatario ni conclusión sobre el fondo. Las comunicaciones y presentaciones externas requieren su propia autorización y constancia de realización; un proceso de respuesta no reinicia ni suspende por sí solo los plazos.
+
+Public projections: [EN working thesis](../../en/ph122-cerberus-haya-bankia-external-perimeter/index.html#case-thesis-objectives-20261027) and [ES tesis de trabajo](../../es/perimetro-ph122-cerberus-haya-bankia-externo/index.html#tesis-objetivos-caso-20261027). The existing lender-liability gateways continue to link to the same maintained perimeter pages. Publication and external transmission remain separate states.
