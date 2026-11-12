@@ -112,3 +112,34 @@
   s.defer = true;
   document.head.appendChild(s);
 })();
+
+/* SUN_PARK_ATLAS_CONTEXT_LOADER_20261027: public-safe, page-scoped bilingual enhancement.
+   No private-document retrieval; no automatic publication and no mutation of source SVGs. */
+(() => {
+  'use strict';
+  const current = document.currentScript;
+  if (!current) return;
+  const path = location.pathname.replace(/index\.html$/i, '').replace(/\/+$/, '/');
+  const related = new Set([
+    '/por-derecho/en/case-control-room/',
+    '/por-derecho/es/sala-control-caso/',
+    '/por-derecho/en/actua-gesvalt-2018-valuation-comparison/',
+    '/por-derecho/es/comparativa-tasaciones-actua-gesvalt-2018/',
+    '/por-derecho/en/sun-park-forensic-map-262-properties/',
+    '/por-derecho/es/mapa-forense-sun-park-262-fincas/',
+    '/por-derecho/en/ric-private-equity-sun-park/',
+    '/por-derecho/es/ric-private-equity-sun-park/',
+    '/por-derecho/en/pwc-canarias-carlos-saavedra-sun-park/',
+    '/por-derecho/es/pwc-canarias-carlos-saavedra-sun-park/',
+    '/por-derecho/en/same-hotel-multiple-financial-lives/',
+    '/por-derecho/es/mismo-hotel-multiples-vidas-financieras/',
+    '/por-derecho/en/ricpe-hnt-gc836-traceability/',
+    '/por-derecho/es/ricpe-hnt-gc836-trazabilidad/'
+  ]);
+  if (!related.has(path) || document.querySelector('script[data-sp-atlas-route-loader]')) return;
+  const next = document.createElement('script');
+  next.src = new URL('atlas/sun-park-atlas-v1.js', current.src).href;
+  next.dataset.spAtlasRouteLoader = '20261027a';
+  next.async = false;
+  document.head.appendChild(next);
+})();

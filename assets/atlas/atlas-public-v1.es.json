@@ -1,0 +1,306 @@
+{
+  "schema": "por-derecho.sun-park-atlas.public.v1",
+  "locale": "es",
+  "version": "2026-10-27",
+  "publicControl": "SUNPARK-ATLAS-ES-20261027",
+  "title": "Atlas probatorio de Sun Park: evolución de posiciones y representaciones",
+  "intro": "Ocho enfoques conectados, un hotel físico: seguir cada derecho, criterio pericial, declaración, acto judicial y resultado económico sin presumir causalidad.",
+  "boundary": "Una manifestación atribuida no es certificación registral. Un auto acredita lo que decide; un anuncio financiero o una ayuda concedida no prueban desembolso, producto ilícito, responsabilidad profesional ni daño resarcible.",
+  "labels": {
+    "tracks": "Ocho vías de investigación",
+    "stages": "Nueve marcadores Band 2 y sus límites documentales",
+    "positions": "Comparar posiciones y destinatarios",
+    "valuations": "Finalidades distintas, no una escala única",
+    "perimeter": "Perímetro histórico declarado de 262 fincas",
+    "finance": "¿Qué fase financiera está acreditada?",
+    "viewAll": "Todas las vías",
+    "source": "Contexto público",
+    "qualifier": "Qué no acredita",
+    "open": "Pendiente de acreditar",
+    "openAtlas": "Abrir el Atlas completo",
+    "expand": "Examinar estado probatorio",
+    "close": "Cerrar",
+    "comparison": "Control de comparabilidad",
+    "notTitle": "Las cifras de 2021 no constituyen certificación registral actual.",
+    "noCausation": "La cronología por sí sola no prueba causalidad, conocimiento, propiedad ni responsabilidad individual.",
+    "detail": "Manifestación documental / inferencia matizada"
+  },
+  "tracks": [
+    {
+      "id": "rights",
+      "name": "Fincas y derechos",
+      "summary": "262 fincas registrales; título y cargas por fecha, derechos CEXP/Comunidad y de explotación.",
+      "href": "/por-derecho/es/mapa-forense-sun-park-262-fincas/"
+    },
+    {
+      "id": "valuation",
+      "name": "Tasaciones periciales",
+      "summary": "Finalidad, visita, hipótesis y perímetro no equiparable de ACTÚA y GESVALT.",
+      "href": "/por-derecho/es/comparativa-tasaciones-actua-gesvalt-2018/"
+    },
+    {
+      "id": "positions",
+      "name": "Evolución de posiciones",
+      "summary": "CAM en concurso, publicidad de RICPE, certificación fechada y destinatarios diferentes.",
+      "href": "/por-derecho/es/ric-private-equity-sun-park/"
+    },
+    {
+      "id": "courts",
+      "name": "Concurso y resoluciones",
+      "summary": "Plan, salvaguardas de 2018, apelación de 2019 y negativa de convalidación diferenciada.",
+      "href": "/por-derecho/es/concurso-36-2012-que-ordeno-el-juzgado/"
+    },
+    {
+      "id": "operations",
+      "name": "Control postadjudicación",
+      "summary": "Escrituras, Registro, posesión, segregación HNT, licencias y gestión hotelera.",
+      "href": "/por-derecho/es/adjudicacion-2022-reconstruccion-documental/"
+    },
+    {
+      "id": "finance",
+      "name": "Financiación y ayudas",
+      "summary": "Propuesta, contrato, desembolso, concesión, pago e ingresos de plataforma.",
+      "href": "/por-derecho/es/mismo-hotel-multiples-vidas-financieras/"
+    },
+    {
+      "id": "harm",
+      "name": "Perjuicio por titular",
+      "summary": "Identificar derecho, interferencia alegada, escenario alternativo y remedio posible.",
+      "href": "/por-derecho/es/sala-situacion-recuperacion-activos/"
+    },
+    {
+      "id": "accountability",
+      "name": "Roles profesionales",
+      "summary": "Acto individual, función, fecha y órgano competente; afiliación no equivale a culpabilidad.",
+      "href": "/por-derecho/es/sala-control-caso/"
+    }
+  ],
+  "stages": [
+    {
+      "id": "b1",
+      "year": "2018–2019",
+      "title": "Control histórico y presentación Lava Verde",
+      "kind": "Publicidad de proyecto",
+      "tracks": [
+        "rights",
+        "positions",
+        "operations"
+      ],
+      "assertion": "Las descripciones comerciales se referían al antiguo entorno Sun Park.",
+      "limit": "La publicidad no demuestra titularidad de todo el complejo ni facultad de explotación.",
+      "missing": "Capturas fechadas, titularidad y contratos operativos.",
+      "href": "/por-derecho/es/ric-private-equity-sun-park/"
+    },
+    {
+      "id": "b2",
+      "year": "2020",
+      "title": "Proyecto ofrecido a inversores",
+      "kind": "Propuesta condicionada",
+      "tracks": [
+        "positions",
+        "finance"
+      ],
+      "assertion": "Los materiales históricos describían unos 220 apartamentos y una transformación prevista de €12m.",
+      "limit": "Un proyecto en estudio no acredita suscripciones, financiación ni titularidad integral.",
+      "missing": "Distribución original, compromisos firmados y decisiones de inversión.",
+      "href": "/por-derecho/es/ricpe-webinar-11nov2020/"
+    },
+    {
+      "id": "b3",
+      "year": "Julio de 2021",
+      "title": "Matización de titularidad en RICPE",
+      "kind": "Certificación societaria fechada",
+      "tracks": [
+        "rights",
+        "positions",
+        "finance"
+      ],
+      "assertion": "La distribución declarada era 54 CAM / 190 LPB / 18 terceros, con condiciones pendientes.",
+      "limit": "Recoge datos comunicados a RICPE; no es certificación actual de las 262 fincas.",
+      "missing": "Notas registrales y expediente íntegro de diligencia/LOI.",
+      "href": "/por-derecho/es/ricpe-cnmv-dossier-2021/"
+    },
+    {
+      "id": "b4",
+      "year": "2022",
+      "title": "Transición operativa HNT / MYND Yaiza",
+      "kind": "Secuencia societaria y operativa",
+      "tracks": [
+        "rights",
+        "operations",
+        "courts"
+      ],
+      "assertion": "La posterior segregación de unidad económica CAM–HNT y la explotación hotelera exigen comprobar títulos y contratos distintos.",
+      "limit": "El anuncio societario no acredita transmisión de todas las fincas ni derechos de terceros.",
+      "missing": "Escritura, anexos, Registro, licencia y contratos de gestión.",
+      "href": "/por-derecho/es/adjudicacion-2022-reconstruccion-documental/"
+    },
+    {
+      "id": "b5",
+      "year": "2023",
+      "title": "Financiación atribuida a RICPE",
+      "kind": "Cifra atribuida al emisor",
+      "tracks": [
+        "finance",
+        "operations"
+      ],
+      "assertion": "Band 2 atribuye €6.573.703,10 de financiación al proyecto HNT / MYND Yaiza.",
+      "limit": "La cifra declarada no autentica por sí sola desembolsos ni beneficio neto.",
+      "missing": "Contrato de préstamo, extractos, garantías y aplicación de fondos.",
+      "href": "/por-derecho/es/ricpe-hnt-gc836-trazabilidad/"
+    },
+    {
+      "id": "b6",
+      "year": "2023",
+      "title": "Incentivos regionales",
+      "kind": "Concesión y condiciones publicadas",
+      "tracks": [
+        "finance",
+        "accountability"
+      ],
+      "assertion": "La concesión reflejada es de €3.440.914,20 sobre inversión de €11.469.714 y 60 empleos previstos.",
+      "limit": "La concesión no prueba pago, cumplimiento, infracción ni fraude.",
+      "missing": "Pagos, gastos certificados y documentación laboral.",
+      "href": "/por-derecho/es/ricpe-hnt-gc836-trazabilidad/"
+    },
+    {
+      "id": "b7",
+      "year": "2025",
+      "title": "Magnitudes de operación de plataforma",
+      "kind": "Cifras declaradas por sociedad",
+      "tracks": [
+        "finance",
+        "operations"
+      ],
+      "assertion": "La compañía anunció ventas hoteleras superiores a €100m y otra fuente expresó €48m de ingresos operativos.",
+      "limit": "Ninguna cifra se demuestra como ingreso exclusivo de MYND Yaiza o daño del reclamante.",
+      "missing": "Cuentas auditadas por entidad e ingresos por establecimiento.",
+      "href": "/por-derecho/es/mismo-hotel-multiples-vidas-financieras/"
+    },
+    {
+      "id": "b8",
+      "year": "Junio de 2026",
+      "title": "Escala financiera de cartera RICPE",
+      "kind": "Cifras generales declaradas",
+      "tracks": [
+        "finance"
+      ],
+      "assertion": "Band 2 presenta un subtotal hotelero de €45,27m y €51,66m para ocho proyectos.",
+      "limit": "No se suman categorías solapadas ni se atribuye todo a Sun Park sin pruebas.",
+      "missing": "Préstamos por proyecto y movimientos bancarios.",
+      "href": "/por-derecho/es/ric-private-equity-sun-park/"
+    },
+    {
+      "id": "b9",
+      "year": "2026",
+      "title": "Dimensión de plataforma hotelera",
+      "kind": "Dimensión declarada por compañía",
+      "tracks": [
+        "operations",
+        "finance"
+      ],
+      "assertion": "La plataforma describió 12 hoteles y unas 2.500 habitaciones.",
+      "limit": "Las habitaciones no son las 262 fincas de Sun Park; gestionar no es ser propietario.",
+      "missing": "Contratos de gestión y propiedad, y facturación por hotel.",
+      "href": "/por-derecho/es/mismo-hotel-multiples-vidas-financieras/"
+    }
+  ],
+  "positions": [
+    {
+      "year": "2018",
+      "speaker": "CAM — acreedor y litigante",
+      "point": "CAM defendió ante el concurso la metodología ACTÚA frente a la crítica GESVALT.",
+      "limit": "Es una posición de parte, no sentencia que valide todos sus supuestos.",
+      "href": "/por-derecho/es/comparativa-tasaciones-actua-gesvalt-2018/"
+    },
+    {
+      "year": "2020",
+      "speaker": "RICPE — publicidad de proyecto/inversores",
+      "point": "El material comercial utilizó expresiones amplias sobre el proyecto y la propiedad Sun Park, con condiciones todavía pendientes.",
+      "limit": "No es confesión procesal de CAM ni prueba de confianza efectiva de inversores.",
+      "href": "/por-derecho/es/ricpe-webinar-11nov2020/"
+    },
+    {
+      "year": "2021",
+      "speaker": "RICPE — certificado de Secretaría",
+      "point": "El certificado firmado de 20 de julio consignó 54 CAM, 190 LPB y 18 terceros, y operaciones condicionadas.",
+      "limit": "La matización no demuestra por sí misma engaño previo deliberado.",
+      "href": "/por-derecho/es/ricpe-cnmv-dossier-2021/"
+    }
+  ],
+  "valuations": [
+    {
+      "title": "ACTÚA — 31 fincas",
+      "when": "2018",
+      "amount": "489.361,96 €",
+      "basis": "Valor asignado dentro del ejercicio de coste de reposición encargado por CAM.",
+      "limit": "No equivale a valor íntegro del hotel ni a decisión firme sobre todos los derechos.",
+      "href": "/por-derecho/es/comparativa-tasaciones-actua-gesvalt-2018/"
+    },
+    {
+      "title": "GESVALT — RICS",
+      "when": "1 marzo 2018",
+      "amount": "26,4 M€",
+      "basis": "Valor de mercado del conjunto turístico con hipótesis de flujos descontados.",
+      "limit": "Finalidad, interiores inspeccionados, derechos e ingresos dependen del informe.",
+      "href": "/por-derecho/es/comparativa-tasaciones-actua-gesvalt-2018/"
+    },
+    {
+      "title": "GESVALT — ECO",
+      "when": "7 junio 2018",
+      "amount": "25.647.179,50 €",
+      "basis": "Valoración hipotecaria tras visita del 23 de mayo.",
+      "limit": "Finalidad y método diferentes de RICS.",
+      "href": "/por-derecho/es/comparativa-tasaciones-actua-gesvalt-2018/"
+    },
+    {
+      "title": "Transmisión 31 instalaciones",
+      "when": "28 noviembre 2018",
+      "amount": "400.000 €",
+      "basis": "Precio de una rama de fincas instrumentales, no tasación pericial completa.",
+      "limit": "No es precio de todas las 262 fincas ni permite restar valores para obtener daños.",
+      "href": "/por-derecho/es/comparativa-tasaciones-actua-gesvalt-2018/"
+    }
+  ],
+  "perimeter": [
+    {
+      "name": "CAM — declarado",
+      "count": 54
+    },
+    {
+      "name": "LPB — declarado",
+      "count": 190
+    },
+    {
+      "name": "Terceros — declarado",
+      "count": 18
+    }
+  ],
+  "finance": [
+    {
+      "name": "Proyecto",
+      "status": "Anunciado",
+      "limit": "No implica suscripción firmada."
+    },
+    {
+      "name": "Financiación",
+      "status": "Atribuida",
+      "limit": "Contrato y desembolsos por conciliar."
+    },
+    {
+      "name": "Subvención",
+      "status": "Concesión registrada",
+      "limit": "Pago y condiciones son vías distintas."
+    },
+    {
+      "name": "Explotación",
+      "status": "Declaraciones comerciales",
+      "limit": "No son ingresos netos del hotel concreto."
+    },
+    {
+      "name": "Reclamación",
+      "status": "Discutida / pendiente",
+      "limit": "Exige derecho, daño y causalidad jurídica propia."
+    }
+  ]
+}
