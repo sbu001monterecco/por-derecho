@@ -1,4 +1,4 @@
-"""Lossless transport of one pinned existing recovery ZIP; never creates a backup.
+"""Lossless transport of a selected pinned recovery ZIP; never creates a backup.
 
 Only ``export`` uses the network, with the existing Actions read token. The
 original artifact is retained. ``reassemble`` is offline and verifies against
@@ -25,6 +25,20 @@ SOURCE = {
     "head_sha": "7e7fc75da126b0218da7d5c337708ad841ed5bd3",
     "bytes": 691152334,
     "sha256": "5940080108e52b01c8fe899abf47c2c773f8ca56220b73ff1df9ba4079cd92d4",
+}
+# Retain the original source and offline CLI defaults for historical restores.
+# New sources require independently checked provider metadata and reviewed pins.
+SOURCES = {
+    "2026-10-12": SOURCE,
+    "2026-10-25": {
+        "repository": "sbu001monterecco/por-derecho",
+        "artifact_id": 12592912872,
+        "name": "por-derecho-repository-recovery-bundle",
+        "run_id": 40177601221,
+        "head_sha": "ad0d2ff2587da2756fb60511f8e16cfcf032455c",
+        "bytes": 695505116,
+        "sha256": "7c985afdcf0a3c57d9a771e07952b7370663a84dea400c540597ea6cbaa865ec",
+    },
 }
 CHUNK_BYTES = 192 * 1024 * 1024
 BLOCK = 1024 * 1024
@@ -160,26 +174,28 @@ def approved_download_url(url: str) -> bool:
              host.endswith(".actions.githubusercontent.com")))
 
 
-def verify_metadata(meta: dict) -> None:
+def verify_metadata(meta: dict, source: dict | None = None) -> None:
+    source = SOURCE if source is None else source
     require(isinstance(meta, dict), "invalid_metadata")
     run = meta.get("workflow_run", {})
     require(isinstance(run, dict), "invalid_source_run")
-    require(meta.get("id") == SOURCE["artifact_id"] and
-            meta.get("name") == SOURCE["name"] and meta.get("expired") is False and
-            meta.get("size_in_bytes") == SOURCE["bytes"] and
-            meta.get("digest") == "sha256:" + SOURCE["sha256"] and
-            run.get("id") == SOURCE["run_id"] and
-            run.get("head_sha") == SOURCE["head_sha"] and
+    require(meta.get("id") == source["artifact_id"] and
+            meta.get("name") == source["name"] and meta.get("expired") is False and
+            meta.get("size_in_bytes") == source["bytes"] and
+            meta.get("digest") == "sha256:" + source["sha256"] and
+            run.get("id") == source["run_id"] and
+            run.get("head_sha") == source["head_sha"] and
             run.get("head_branch") == "main" and
             run.get("repository_id") == 1289596840 and
             run.get("head_repository_id") == 1289596840,
             "provider_metadata_mismatch")
 
 
-def download_original(target: Path, token: str) -> dict:
+def download_original(target: Path, token: str, source: dict | None = None) -> dict:
+    source = SOURCE if source is None else source
     require(bool(token) and "\n" not in token and "\r" not in token, "token_missing")
-    base = ("https://api.github.com/repos/" + SOURCE["repository"] +
-            "/actions/artifacts/" + str(SOURCE["artifact_id"]))
+    base = ("https://api.github.com/repos/" + source["repository"] +
+            "/actions/artifacts/" + str(source["artifact_id"]))
     headers = {"Authorization": "Bearer " + token, "Accept": "application/vnd.github+json",
                "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "PD-backup-transport"}
     opener = urllib.request.build_opener(NoRedirect())
@@ -187,7 +203,7 @@ def download_original(target: Path, token: str) -> dict:
         payload = response.read(BLOCK + 1)
         require(len(payload) <= BLOCK, "oversized_metadata")
     metadata = json.loads(payload)
-    verify_metadata(metadata)
+    verify_metadata(metadata, source)
     try:
         response = opener.open(urllib.request.Request(base + "/zip", headers=headers), timeout=60)
     except urllib.error.HTTPError as error:
@@ -204,35 +220,36 @@ def download_original(target: Path, token: str) -> dict:
         size, h = 0, hashlib.sha256()
         for block in iter(lambda: response.read(BLOCK), b""):
             size += len(block)
-            require(size <= SOURCE["bytes"], "oversized_original")
+            require(size <= source["bytes"], "oversized_original")
             h.update(block)
             stream.write(block)
-    require((size, h.hexdigest()) == (SOURCE["bytes"], SOURCE["sha256"]),
+    require((size, h.hexdigest()) == (source["bytes"], source["sha256"]),
             "download_integrity_mismatch")
     # Do not retain response headers or signed URLs.
     return metadata
 
 
-def export(output: Path) -> None:
-    require(os.environ.get("GITHUB_REPOSITORY") == SOURCE["repository"], "repository_mismatch")
+def export(output: Path, source: dict | None = None) -> None:
+    source = SOURCE if source is None else source
+    require(os.environ.get("GITHUB_REPOSITORY") == source["repository"], "repository_mismatch")
     require(os.environ.get("GITHUB_REF") == "refs/heads/main", "main_required")
     require(os.environ.get("GITHUB_EVENT_NAME") in ("push", "workflow_dispatch"), "event_rejected")
     with tempfile.TemporaryDirectory(prefix="pd-original-transport-") as work:
         original = Path(work) / "original.zip"
-        download_original(original, os.environ.get("GH_TOKEN", ""))
-        manifest = split_archive(original, output, SOURCE["bytes"], SOURCE["sha256"])
+        download_original(original, os.environ.get("GH_TOKEN", ""), source)
+        manifest = split_archive(original, output, source["bytes"], source["sha256"])
         require(len(manifest["parts"]) == 4, "fixed_transport_count_mismatch")
         # Local runner reconstruction verifies losslessness; off-platform custody stays open.
         reassemble(output / "manifest.json", Path(work) / "reassembled.zip",
-                   SOURCE["bytes"], SOURCE["sha256"])
+                   source["bytes"], source["sha256"])
         write_json(output / "source_receipt.json", {
-            "source": SOURCE, "export_run_id": os.environ.get("GITHUB_RUN_ID"),
+            "source": source, "export_run_id": os.environ.get("GITHUB_RUN_ID"),
             "export_code_sha": os.environ.get("GITHUB_SHA"),
             "original_download": "HASH_AND_SIZE_VERIFIED",
             "runner_reassembly": "EXACT_ORIGINAL_HASH_VERIFIED",
             "source_artifact_mutated": False,
             "independent_custody": "NOT_PROVEN_BY_EXPORT"})
-    print("TRANSPORT_READY parts=4 original_sha256=" + SOURCE["sha256"])
+    print("TRANSPORT_READY parts=4 original_sha256=" + source["sha256"])
 
 
 def main() -> int:
@@ -240,6 +257,8 @@ def main() -> int:
     commands = parser.add_subparsers(dest="command", required=True)
     ex = commands.add_parser("export")
     ex.add_argument("output", type=Path)
+    ex.add_argument("--source", choices=sorted(SOURCES), default="2026-10-12",
+                    help="reviewed source pins; default preserves the original export")
     ra = commands.add_parser("reassemble")
     ra.add_argument("manifest", type=Path)
     ra.add_argument("output", type=Path)
@@ -248,7 +267,7 @@ def main() -> int:
     args = parser.parse_args()
     try:
         if args.command == "export":
-            export(args.output)
+            export(args.output, SOURCES[args.source])
         else:
             reassemble(args.manifest, args.output, args.expected_bytes, args.expected_sha256)
             print("REASSEMBLY_HASH_VERIFIED")
@@ -261,3 +280,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
