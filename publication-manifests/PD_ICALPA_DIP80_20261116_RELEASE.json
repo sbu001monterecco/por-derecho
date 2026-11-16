@@ -1,0 +1,189 @@
+{
+  "publication_id": "PD-CANON-ICALPA-DIP80-20261116-001",
+  "current_state": "DRAFT",
+  "owner": "Por Derecho / Gil Marer",
+  "source_baseline": "7f6b8a818db592a4a62e05dd9feb4b65f78662fe",
+  "host": "github",
+  "expected_routes": {
+    "es": [
+      "es/icalpa-correspondencia-2025-2026/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/actualizacion-16-noviembre-2026/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/index.html"
+    ],
+    "en": [
+      "en/icalpa-correspondence-2025-2026/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/update-16-november-2026/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/visuals/icalpa-dip80/icalpa-20261116-public-01-en.png",
+    "assets/visuals/icalpa-dip80/icalpa-20261116-public-01-en.svg",
+    "assets/visuals/icalpa-dip80/icalpa-20261116-public-01-es.png",
+    "assets/visuals/icalpa-dip80/icalpa-20261116-public-01-es.svg",
+    "assets/visuals/icalpa-dip80/icalpa-20261116-public-02-en.png",
+    "assets/visuals/icalpa-dip80/icalpa-20261116-public-02-en.svg",
+    "assets/visuals/icalpa-dip80/icalpa-20261116-public-02-es.png",
+    "assets/visuals/icalpa-dip80/icalpa-20261116-public-02-es.svg",
+    "assets/visuals/icalpa-dip80/icalpa-20261116-public-03-en.png",
+    "assets/visuals/icalpa-dip80/icalpa-20261116-public-03-en.svg",
+    "assets/visuals/icalpa-dip80/icalpa-20261116-public-03-es.png",
+    "assets/visuals/icalpa-dip80/icalpa-20261116-public-03-es.svg",
+    "assets/visuals/icalpa-dip80/icalpa-20261116-public-04-en.png",
+    "assets/visuals/icalpa-dip80/icalpa-20261116-public-04-en.svg",
+    "assets/visuals/icalpa-dip80/icalpa-20261116-public-04-es.png",
+    "assets/visuals/icalpa-dip80/icalpa-20261116-public-04-es.svg",
+    "en/icalpa-correspondence-2025-2026/index.html",
+    "en/icalpa-rapporteur-workbench/dip-80-2026/index.html",
+    "en/icalpa-rapporteur-workbench/dip-80-2026/update-16-november-2026/index.html",
+    "es/icalpa-correspondencia-2025-2026/index.html",
+    "es/icalpa-mesa-del-ponente/dip-80-2026/actualizacion-16-noviembre-2026/index.html",
+    "es/icalpa-mesa-del-ponente/dip-80-2026/index.html"
+  ],
+  "source_files": [
+    {
+      "path": "assets/visuals/icalpa-dip80/icalpa-20261116-public-01-en.png",
+      "sha256": "792830174e6846d4b42fb988541c583ce4fcbf5bbf1a14d7f4e4de7a6356903d",
+      "bytes": 74269,
+      "action": "create"
+    },
+    {
+      "path": "assets/visuals/icalpa-dip80/icalpa-20261116-public-01-en.svg",
+      "sha256": "d2e538685457ac7241dcce374ff8bd7922aa41ffb642b2f201e7b9b6916fb367",
+      "bytes": 3754,
+      "action": "create"
+    },
+    {
+      "path": "assets/visuals/icalpa-dip80/icalpa-20261116-public-01-es.png",
+      "sha256": "52a6f8e617ec494558abe43d3eab9949d1b6590c810cde7068be1c08e7a1a9ec",
+      "bytes": 74534,
+      "action": "create"
+    },
+    {
+      "path": "assets/visuals/icalpa-dip80/icalpa-20261116-public-01-es.svg",
+      "sha256": "c57b72de5631dc6346895260d8524825970681d5369bef9f0da35900677a3c91",
+      "bytes": 3938,
+      "action": "create"
+    },
+    {
+      "path": "assets/visuals/icalpa-dip80/icalpa-20261116-public-02-en.png",
+      "sha256": "632323e991d46fc7c3b33d0314a3c5839e1e9478e0d3a6a7cbb291fee76cf469",
+      "bytes": 115037,
+      "action": "create"
+    },
+    {
+      "path": "assets/visuals/icalpa-dip80/icalpa-20261116-public-02-en.svg",
+      "sha256": "327de108f4c8bbb7b2388ef09719fd1e92569e5d7e01169f1b27555f366310a7",
+      "bytes": 6138,
+      "action": "create"
+    },
+    {
+      "path": "assets/visuals/icalpa-dip80/icalpa-20261116-public-02-es.png",
+      "sha256": "0720ebdf183d1ee687b65af44b62a666ac2dad39c7767a625d4beb8db43cb384",
+      "bytes": 106699,
+      "action": "create"
+    },
+    {
+      "path": "assets/visuals/icalpa-dip80/icalpa-20261116-public-02-es.svg",
+      "sha256": "904bc7728667032d3b6a8bede22abc89fdf28715a2c8ae668e473294e26e3f34",
+      "bytes": 5936,
+      "action": "create"
+    },
+    {
+      "path": "assets/visuals/icalpa-dip80/icalpa-20261116-public-03-en.png",
+      "sha256": "7ada01b3fad2a29ff87e0d440c0791d3c41657c42fbbc17077863a7ab60ef766",
+      "bytes": 103721,
+      "action": "create"
+    },
+    {
+      "path": "assets/visuals/icalpa-dip80/icalpa-20261116-public-03-en.svg",
+      "sha256": "afb231a927599edbc014975408847a902425278175c2c73d0b9a7fd074b18170",
+      "bytes": 7347,
+      "action": "create"
+    },
+    {
+      "path": "assets/visuals/icalpa-dip80/icalpa-20261116-public-03-es.png",
+      "sha256": "a35656f9f9cc5fc6126da0456565d633369db121a4ef1c7fd1201e12bdc0e703",
+      "bytes": 100078,
+      "action": "create"
+    },
+    {
+      "path": "assets/visuals/icalpa-dip80/icalpa-20261116-public-03-es.svg",
+      "sha256": "28c9457cc995fd3fe93a904a4315ea0cf2303352a4c45525185aeba961a1045b",
+      "bytes": 7471,
+      "action": "create"
+    },
+    {
+      "path": "assets/visuals/icalpa-dip80/icalpa-20261116-public-04-en.png",
+      "sha256": "8b6f77c14e0a3d15be2f3582de2eb9c6aa39271b637b9f4baf7f1ca661d42e12",
+      "bytes": 119089,
+      "action": "create"
+    },
+    {
+      "path": "assets/visuals/icalpa-dip80/icalpa-20261116-public-04-en.svg",
+      "sha256": "190c1dbd61caf574c1a0cceadf3519f333a87e99a125770aec8790d4cd8022b8",
+      "bytes": 6188,
+      "action": "create"
+    },
+    {
+      "path": "assets/visuals/icalpa-dip80/icalpa-20261116-public-04-es.png",
+      "sha256": "e56d6236839576afaf25a21537eb99ad17be77aec361b7fc79f80c72e996392f",
+      "bytes": 121159,
+      "action": "create"
+    },
+    {
+      "path": "assets/visuals/icalpa-dip80/icalpa-20261116-public-04-es.svg",
+      "sha256": "ab74979e8f5582fe767a429dd04c6f8530544e462e70b63a1578904f04389d0c",
+      "bytes": 6071,
+      "action": "create"
+    },
+    {
+      "path": "en/icalpa-correspondence-2025-2026/index.html",
+      "sha256": "c27b1dfbd41cd54fc8d81183705092a5e985970216d94a9de149aa63d802f7ee",
+      "bytes": 27020,
+      "action": "update"
+    },
+    {
+      "path": "en/icalpa-rapporteur-workbench/dip-80-2026/index.html",
+      "sha256": "a7500bcf7c76426ec57b87928d6415e3c1a86edcf2804e48805e7bb3bcc71cac",
+      "bytes": 7683,
+      "action": "update"
+    },
+    {
+      "path": "en/icalpa-rapporteur-workbench/dip-80-2026/update-16-november-2026/index.html",
+      "sha256": "6bcb0da19f1c9dfad3c1f0319ea1423daf26dbfdc630ebdd33cc378a492814b9",
+      "bytes": 21186,
+      "action": "create"
+    },
+    {
+      "path": "es/icalpa-correspondencia-2025-2026/index.html",
+      "sha256": "721cb5ec9656e75ec81b52675857c006300097532e805b74cfd36a7db6c84332",
+      "bytes": 27334,
+      "action": "update"
+    },
+    {
+      "path": "es/icalpa-mesa-del-ponente/dip-80-2026/actualizacion-16-noviembre-2026/index.html",
+      "sha256": "b6db947d5f7c949187f3e17a82e4ec594def142805d4b276a5794161e4a89311",
+      "bytes": 22142,
+      "action": "create"
+    },
+    {
+      "path": "es/icalpa-mesa-del-ponente/dip-80-2026/index.html",
+      "sha256": "901db1d7ddae82e05c692654ab408e185117759b8c9e0a0b3c73441caf8c6e45",
+      "bytes": 8043,
+      "action": "update"
+    }
+  ],
+  "preservation": "Additive articles and derivative diagrams; existing root/register pages receive only a dated insertion. No source evidence or old source bytes removed.",
+  "privacy": "Original legal material and private correspondence excluded. New figures are explanatory derivatives, not official evidence.",
+  "validation": {
+    "changed_surface": "PASSED local links, image decoding, bilingual assets, article parity and prior-page byte preservation",
+    "protected_ci": "PENDING",
+    "production_readback": "NOT_DEPLOYED"
+  },
+  "deployment_evidence": null,
+  "merge_sha": null,
+  "live_urls": [],
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0"
+}
