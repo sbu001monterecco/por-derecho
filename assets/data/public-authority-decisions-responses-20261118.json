@@ -1,0 +1,583 @@
+{
+  "schema": "por-derecho.authority-decision-owner-response.v1",
+  "control_id": "PD-AUTH-DECISION-RESPONSE-20261118-001",
+  "cutoff": "2026-11-18",
+  "status": "DRAFT_REVIEW_NOT_MERGED",
+  "scope": "Selected source-qualified cases, not an exhaustive review of all authorities.",
+  "source_registers": {
+    "historical": "assets/data/concurso36-decision-continuity-2014-2026-v1.json",
+    "historical_count": 51,
+    "authority_events": "Corporate Brain / Authority Events 26Oct (39 substantive+administrative records)"
+  },
+  "privacy": "Public-safe summaries only. No private original messages, URLs, legal advice, privileged material, personal identifiers or filings are included.",
+  "preservation": "Existing public content, routes, five-actor cards and CORRECTION CR-065 are not altered by this candidate.",
+  "entries": [
+    {
+      "id": "PD-AD-001",
+      "date": "2018-04-16",
+      "authority": "Juzgado Mercantil / Commercial court",
+      "reference": "Concurso 36/2012",
+      "category": "court",
+      "public_summary": {
+        "es": "Aprobó la liquidación bajo condiciones de publicidad y concurrencia.",
+        "en": "Approved a liquidation route subject to publicity and competition."
+      },
+      "owner_interpretation": {
+        "es": "Gil cuestiona valoración, alcance y derechos extraconcursales.",
+        "en": "Gil challenges valuation, scope and rights outside the estate."
+      },
+      "documented_response": {
+        "es": "Objeciones históricas; correspondencia exacta con asientos por verificar.",
+        "en": "Historical objections; exact filing-to-decision mapping remains open."
+      },
+      "limit": {
+        "es": "No demuestra titularidad universal ni oferta financiada.",
+        "en": "Does not prove universal title or a funded offer."
+      },
+      "context_path": {
+        "es": "concurso-36-2012-autos-resoluciones/",
+        "en": "insolvency-36-2012-orders-decisions/"
+      }
+    },
+    {
+      "id": "PD-AD-002",
+      "date": "2018-06-26",
+      "authority": "Juzgado Mercantil / Commercial court",
+      "reference": "Concurso 36/2012",
+      "category": "court",
+      "public_summary": {
+        "es": "Acordó suspensión de realización limitada a bienes identificados.",
+        "en": "Ordered a realisation stay limited to specified assets."
+      },
+      "owner_interpretation": {
+        "es": "Gil exige verificar cómo se aplicó al proceso competitivo.",
+        "en": "Gil seeks verification of how the restriction affected competition."
+      },
+      "documented_response": {
+        "es": "Control histórico de autos, publicidad y recursos.",
+        "en": "Historical court-order, publicity and appeal review."
+      },
+      "limit": {
+        "es": "No fue una suspensión general de toda liquidación.",
+        "en": "Not a blanket suspension of liquidation."
+      },
+      "context_path": {
+        "es": "concurso-36-2012-autos-resoluciones/",
+        "en": "insolvency-36-2012-orders-decisions/"
+      }
+    },
+    {
+      "id": "PD-AD-003",
+      "date": "2019-10-24",
+      "authority": "Juzgado Mercantil / Commercial court",
+      "reference": "Auto de no convalidación",
+      "category": "court",
+      "public_summary": {
+        "es": "No convalidó la venta separada documentada en noviembre de 2018.",
+        "en": "Refused to validate the separately documented November 2018 disposal."
+      },
+      "owner_interpretation": {
+        "es": "Gil lo considera relevante para el título y actos posteriores.",
+        "en": "Gil considers it important to title and subsequent acts."
+      },
+      "documented_response": {
+        "es": "Revisión de escrituras, firmeza y asientos registrales.",
+        "en": "Deeds, finality and land-register effects are under review."
+      },
+      "limit": {
+        "es": "No anula automáticamente todos los actos posteriores.",
+        "en": "Does not automatically annul every later act."
+      },
+      "context_path": {
+        "es": "concurso-36-2012-autos-resoluciones/",
+        "en": "insolvency-36-2012-orders-decisions/"
+      }
+    },
+    {
+      "id": "PD-AD-004",
+      "date": "2019-10-24",
+      "authority": "Juzgado Mercantil / Commercial court",
+      "reference": "Auto sobre AWESWELL",
+      "category": "court",
+      "public_summary": {
+        "es": "Rechazó la petición de excluir procesalmente a AWESWELL.",
+        "en": "Rejected the request to exclude AWESWELL from the proceedings."
+      },
+      "owner_interpretation": {
+        "es": "AWESWELL invoca derechos de participación diferenciados.",
+        "en": "AWESWELL relies on distinct procedural participation rights."
+      },
+      "documented_response": {
+        "es": "Se preservan la solicitud, oposición y Auto.",
+        "en": "The motion, opposition and order are retained."
+      },
+      "limit": {
+        "es": "La participación procesal no equivale a propiedad acreditada.",
+        "en": "Participation does not itself prove ownership."
+      },
+      "context_path": {
+        "es": "concurso-36-2012-autos-resoluciones/",
+        "en": "insolvency-36-2012-orders-decisions/"
+      }
+    },
+    {
+      "id": "PD-AD-005",
+      "date": "2021-05-18",
+      "authority": "Juzgado Mercantil / Commercial court",
+      "reference": "Auto 164/2021",
+      "category": "court",
+      "public_summary": {
+        "es": "Aprobó la propuesta de CAM para activos identificados, no una adjudicación a AWESWELL.",
+        "en": "Approved CAM's proposal for specified assets, not an award to AWESWELL."
+      },
+      "owner_interpretation": {
+        "es": "Gil cuestiona ejecución, alcance y derechos de otros titulares.",
+        "en": "Gil challenges implementation, scope and other owners' rights."
+      },
+      "documented_response": {
+        "es": "Corrección CR-065 pendiente de propagación completa.",
+        "en": "CR-065 correction awaits complete propagation."
+      },
+      "limit": {
+        "es": "No atribuir a CAM las 262 fincas ni todo derecho hotelero.",
+        "en": "Do not infer CAM received all 262 properties or every hotel right."
+      },
+      "context_path": {
+        "es": "concurso-36-2012-autos-resoluciones/",
+        "en": "insolvency-36-2012-orders-decisions/"
+      }
+    },
+    {
+      "id": "PD-AD-006",
+      "date": "2023-09-28",
+      "authority": "Juzgado Mercantil / Commercial court",
+      "reference": "Sentencia 163/2023",
+      "category": "classification",
+      "public_summary": {
+        "es": "Estimó parcialmente la calificación culpable y rechazó otras pretensiones.",
+        "en": "Partly upheld culpable classification and rejected other claims."
+      },
+      "owner_interpretation": {
+        "es": "Gil denuncia inversión de causalidad y atribución en AC/Fiscalía y sus graves efectos.",
+        "en": "Gil alleges inverted causation/attribution by the administrator and prosecution, with serious effects."
+      },
+      "documented_response": {
+        "es": "Impugnaciones y recursos conservados; resultado de alzada exacto por certificar.",
+        "en": "Objections and appeals retained; exact appellate outcome to certify."
+      },
+      "limit": {
+        "es": "Sentencia concursal, no declaración penal contra funcionarios.",
+        "en": "Insolvency judgment, not a criminal finding against officials."
+      },
+      "context_path": {
+        "es": "calificacion-concurso-36-2012-vidas-paralelas/",
+        "en": "insolvency-classification-parallel-lives/"
+      }
+    },
+    {
+      "id": "PD-AD-007",
+      "date": "2021-01",
+      "authority": "CNMV / Securities regulator",
+      "reference": "Entradas 2021002141 y 4909",
+      "category": "institution",
+      "public_summary": {
+        "es": "Tramitó determinadas comunicaciones como consultas y no reclamaciones admitidas por ese cauce.",
+        "en": "Handled specified submissions as enquiries rather than admitted investor complaints under that route."
+      },
+      "owner_interpretation": {
+        "es": "Gil sostiene que el aviso regulatorio y la supervisión son objetos distintos.",
+        "en": "Gil says regulatory notice and supervisory action are different questions."
+      },
+      "documented_response": {
+        "es": "Conserva registros y seguimiento posterior.",
+        "en": "Maintains intake and later follow-up records."
+      },
+      "limit": {
+        "es": "Reclasificación no decide el fondo supervisor.",
+        "en": "Reclassification does not decide supervisory merits."
+      },
+      "context_path": {
+        "es": "registros-institucionales/",
+        "en": "institutional-records/"
+      }
+    },
+    {
+      "id": "PD-AD-008",
+      "date": "2026-01-22",
+      "authority": "CNMV / Securities regulator",
+      "reference": "Oficio 2026008544",
+      "category": "institution",
+      "public_summary": {
+        "es": "Reconoció determinada actuación supervisora y límites de documentos disponibles.",
+        "en": "Acknowledged some supervisory work and limits in available documents."
+      },
+      "owner_interpretation": {
+        "es": "Gil pide completar la trazabilidad RICPE y cuestiona suficiencia.",
+        "en": "Gil seeks fuller RICPE tracing and questions completeness."
+      },
+      "documented_response": {
+        "es": "Solicitudes y vía de transparencia separada bajo examen.",
+        "en": "Subsequent requests and a distinct transparency route under review."
+      },
+      "limit": {
+        "es": "No prueba inacción total ni irregularidad determinada.",
+        "en": "Proves neither total inaction nor a determined breach."
+      },
+      "context_path": {
+        "es": "registros-institucionales/",
+        "en": "institutional-records/"
+      }
+    },
+    {
+      "id": "PD-AD-009",
+      "date": "2026-03-05",
+      "authority": "Intervención General de Canarias / Comptroller",
+      "reference": "Salida 184368/2026",
+      "category": "appeal",
+      "public_summary": {
+        "es": "Registró examen de la Comisión de Integridad y traslado anónimo a Justicia.",
+        "en": "Recorded integrity-commission consideration and an anonymised referral to Justice."
+      },
+      "owner_interpretation": {
+        "es": "Gil lo relaciona con el examen de deberes del AC.",
+        "en": "Gil connects this with scrutiny of the administrator's duties."
+      },
+      "documented_response": {
+        "es": "LPB lo propuso como prueba; la Audiencia la rechazó en noviembre.",
+        "en": "LPB proposed it as evidence; the appellate court refused it in November."
+      },
+      "limit": {
+        "es": "Remisión no equivale a hallazgo de ilegalidad.",
+        "en": "Referral is not a finding of illegality."
+      },
+      "context_path": {
+        "es": "concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/",
+        "en": "insolvency-36-2012-administrator-removal-rpl-3304-2025/"
+      }
+    },
+    {
+      "id": "PD-AD-010",
+      "date": "2026-05-27",
+      "authority": "ICALPA / Las Palmas Bar",
+      "reference": "DIP 80/2026",
+      "category": "bar",
+      "public_summary": {
+        "es": "Abrió diligencias de información previa sobre la queja relativa al administrador.",
+        "en": "Opened preliminary information proceedings concerning the administrator complaint."
+      },
+      "owner_interpretation": {
+        "es": "Gil pide examen de deberes profesionales propios.",
+        "en": "Gil seeks scrutiny of distinct professional obligations."
+      },
+      "documented_response": {
+        "es": "Se propuso en la Audiencia; respuesta posterior a ICALPA en borrador.",
+        "en": "Tendered on appeal; subsequent ICALPA reply remains a draft."
+      },
+      "limit": {
+        "es": "No sanción ni infracción declarada.",
+        "en": "No sanction or disciplinary finding."
+      },
+      "context_path": {
+        "es": "icalpa-recorrido-denuncia-deontologica/",
+        "en": "icalpa-rapporteur-workbench/dip-80-2026/criminal-institutional-review/"
+      }
+    },
+    {
+      "id": "PD-AD-011",
+      "date": "2026-07",
+      "authority": "Tribunal de Instancia / Investigating court",
+      "reference": "DP 1956/2026",
+      "category": "bar",
+      "public_summary": {
+        "es": "Incoó el expediente y acordó sobreseimiento provisional en el mismo Auto.",
+        "en": "Opened the file and ordered provisional dismissal in the same order."
+      },
+      "owner_interpretation": {
+        "es": "Gil pide identificar objeto y autonomía de su denuncia contra AC.",
+        "en": "Gil seeks the exact object and independence of the complaint against the administrator."
+      },
+      "documented_response": {
+        "es": "ICALPA solicitó documentos; respuesta revisada aún no verificada como enviada.",
+        "en": "ICALPA requested documents; revised response not confirmed sent."
+      },
+      "limit": {
+        "es": "No describir como investigación penal activa.",
+        "en": "Do not describe as an active criminal investigation."
+      },
+      "context_path": {
+        "es": "icalpa-recorrido-denuncia-deontologica/",
+        "en": "icalpa-rapporteur-workbench/dip-80-2026/criminal-institutional-review/"
+      }
+    },
+    {
+      "id": "PD-AD-012",
+      "date": "2026-08-26",
+      "authority": "Inspección Fiscal / Fiscal Inspection",
+      "reference": "E.G. 745/2026",
+      "category": "fiscal",
+      "public_summary": {
+        "es": "Archivó una queja de inspección por insuficiencia de atribución individual.",
+        "en": "Archived an inspection complaint for insufficient individual attribution."
+      },
+      "owner_interpretation": {
+        "es": "Gil discute el tratamiento de referencias y pruebas conexas.",
+        "en": "Gil disputes the handling of connected references and evidence."
+      },
+      "documented_response": {
+        "es": "Presentó reposición que fue rechazada el 29 septiembre.",
+        "en": "He sought reconsideration, rejected on 29 September."
+      },
+      "limit": {
+        "es": "No resuelve todas las causas judiciales independientes.",
+        "en": "Does not dispose of all separate judicial matters."
+      },
+      "context_path": {
+        "es": "fiscalia-inspeccion-exp-gub-745-2026/",
+        "en": "public-prosecution-inspection-exp-gub-745-2026/"
+      }
+    },
+    {
+      "id": "PD-AD-013",
+      "date": "2026-09-14",
+      "authority": "Tribunal de Instancia / Investigating court",
+      "reference": "DP 1901/2026",
+      "category": "dp",
+      "public_summary": {
+        "es": "Acordó sobreseimiento libre y archivo; menciona informe Fiscal de 29 julio.",
+        "en": "Ordered final dismissal and archive; refers to a 29 July prosecution report."
+      },
+      "owner_interpretation": {
+        "es": "Gil alega problemas de reparto y separación de Ref.21 y Ref.24.",
+        "en": "Gil alleges routing and separation problems concerning Ref.21 and Ref.24."
+      },
+      "documented_response": {
+        "es": "Solicitudes de copia, identidad y trazabilidad registradas.",
+        "en": "Requests for copy, identity and routing data registered."
+      },
+      "limit": {
+        "es": "Informe firmado y autor aún no producidos en este corpus.",
+        "en": "Signed report and author not yet produced in this corpus."
+      },
+      "context_path": {
+        "es": "dp-1901-2026/",
+        "en": "dp-1901-2026/"
+      }
+    },
+    {
+      "id": "PD-AD-014",
+      "date": "2026-09-29",
+      "authority": "Inspección Fiscal / Fiscal Inspection",
+      "reference": "E.G. 745/2026",
+      "category": "fiscal",
+      "public_summary": {
+        "es": "Desestimó la reposición del archivo anterior.",
+        "en": "Rejected reconsideration of the earlier archive."
+      },
+      "owner_interpretation": {
+        "es": "Gil mantiene el cuestionamiento sobre examen y motivación.",
+        "en": "Gil maintains his challenge to the examination and reasons."
+      },
+      "documented_response": {
+        "es": "Solicitud autónoma art.144 registrada 28 octubre; revisión judicial no confirmada presentada.",
+        "en": "Separate Art.144 request registered 28 October; court challenge not confirmed filed."
+      },
+      "limit": {
+        "es": "La solicitud nueva no reinicia automáticamente plazos.",
+        "en": "Later request does not automatically restart deadlines."
+      },
+      "context_path": {
+        "es": "fiscalia-inspeccion-exp-gub-745-2026/",
+        "en": "public-prosecution-inspection-exp-gub-745-2026/"
+      }
+    },
+    {
+      "id": "PD-AD-015",
+      "date": "2026-10-29",
+      "authority": "Fiscalía de Arrecife / Arrecife Prosecution",
+      "reference": "E.G. 97/2026",
+      "category": "process",
+      "public_summary": {
+        "es": "Informó del traslado de una denuncia anterior hacia DI 22/2026.",
+        "en": "Reported referral of an earlier complaint to DI 22/2026."
+      },
+      "owner_interpretation": {
+        "es": "Gil exige trazabilidad por denuncia y por persona.",
+        "en": "Gil requests tracing for each complaint and person."
+      },
+      "documented_response": {
+        "es": "Presentación y comunicación de cortesía registradas; resultado de fondo abierto.",
+        "en": "Formal submission and courtesy follow-up registered; merits outcome open."
+      },
+      "limit": {
+        "es": "Un traslado no constituye decisión sobre todos los hechos.",
+        "en": "Referral does not decide every allegation."
+      },
+      "context_path": {
+        "es": "fiscalia-comunicaciones-procedimientos/",
+        "en": "public-prosecution-communications-proceedings/"
+      }
+    },
+    {
+      "id": "PD-AD-016",
+      "date": "2026-11-05",
+      "authority": "Audiencia Provincial Las Palmas / Provincial Court",
+      "reference": "RPL 3304/2025",
+      "category": "appeal",
+      "public_summary": {
+        "es": "Inadmitió dos documentos (Intervención e ICALPA) por falta de pertinencia/utilidad.",
+        "en": "Refused two Comptroller/ICALPA documents as insufficiently relevant or useful."
+      },
+      "owner_interpretation": {
+        "es": "Gil discrepa de la ausencia total de relación con la separación del AC.",
+        "en": "Gil disputes a finding of no connection at all with administrator removal."
+      },
+      "documented_response": {
+        "es": "Javier analizó argumentos; mensaje a Javier en borrador y paquete autoenviado. Presentación LexNET no verificada.",
+        "en": "Counsel analysed arguments; reply to counsel drafted and self-email sent. LexNET filing unverified."
+      },
+      "limit": {
+        "es": "No resolvió el fondo ni consideró que esas autoridades probaran ilícitos.",
+        "en": "Did not decide the merits or find that those authorities proved wrongdoing."
+      },
+      "context_path": {
+        "es": "concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/",
+        "en": "insolvency-36-2012-administrator-removal-rpl-3304-2025/"
+      }
+    },
+    {
+      "id": "PD-AD-017",
+      "date": "2026-11-05",
+      "authority": "Fiscalía Superior Canarias / Higher Prosecution",
+      "reference": "DIP 12/2026",
+      "category": "classification",
+      "public_summary": {
+        "es": "Archivó denuncia penal personal del 25 octubre sobre dictamen fiscal de 2019.",
+        "en": "Archived the 25 October personal criminal complaint concerning the 2019 prosecution opinion."
+      },
+      "owner_interpretation": {
+        "es": "Gil mantiene acusaciones de falsedad consciente y posible coordinación, pendientes de prueba.",
+        "en": "Gil maintains allegations of knowing falsehood and possible coordination, subject to proof."
+      },
+      "documented_response": {
+        "es": "Denuncia original registrada; vía penal judicial en preparación, sin nueva querella verificada.",
+        "en": "Original complaint registered; judicial criminal route being assessed, no new querella verified."
+      },
+      "limit": {
+        "es": "No condena penal ni absolución general de terceros.",
+        "en": "Not a criminal conviction or general exoneration of others."
+      },
+      "context_path": {
+        "es": "calificacion-concurso-36-2012-vidas-paralelas/",
+        "en": "insolvency-classification-parallel-lives/"
+      }
+    },
+    {
+      "id": "PD-AD-018",
+      "date": "2026-11-13",
+      "authority": "ICALPA / Las Palmas Bar",
+      "reference": "DIP 80/2026 · RS-005744",
+      "category": "bar",
+      "public_summary": {
+        "es": "Pidió Auto y denuncia de DP 1956 para examinar posibles coincidencias.",
+        "en": "Requested DP 1956 order/complaint to examine possible overlap."
+      },
+      "owner_interpretation": {
+        "es": "Gil solicita examen independiente de deberes deontológicos cuando proceda.",
+        "en": "Gil seeks independent consideration of distinct professional duties where appropriate."
+      },
+      "documented_response": {
+        "es": "Respuesta con anexos visuales preparada; todavía borrador.",
+        "en": "Reply with visual appendices prepared; remains a draft."
+      },
+      "limit": {
+        "es": "No decisión sancionadora ni cierre definitivo acreditado.",
+        "en": "No substantiated sanction or final disciplinary closure."
+      },
+      "context_path": {
+        "es": "icalpa-recorrido-denuncia-deontologica/",
+        "en": "icalpa-rapporteur-workbench/dip-80-2026/criminal-institutional-review/"
+      }
+    },
+    {
+      "id": "PD-AD-019",
+      "date": "2026-11-16",
+      "authority": "FGE / Prosecutor General's Office",
+      "reference": "EPT 19/2026",
+      "category": "process",
+      "public_summary": {
+        "es": "Denegó acceso al informe de 29 julio y registros identificativos/tramitación.",
+        "en": "Refused access to the 29 July report and identifying/processing records."
+      },
+      "owner_interpretation": {
+        "es": "Gil distingue contenido judicial de datos administrativos de identidad y ruta.",
+        "en": "Gil distinguishes judicial content from administrative identity and routing data."
+      },
+      "documented_response": {
+        "es": "Recurso administrativo/judicial en evaluación; presentación no verificada.",
+        "en": "Administrative/judicial challenge under evaluation; filing unverified."
+      },
+      "limit": {
+        "es": "La denegación no prueba ocultación dolosa ni acceso ilimitado.",
+        "en": "Refusal proves neither intentional concealment nor unrestricted access."
+      },
+      "context_path": {
+        "es": "fiscalia-comunicaciones-procedimientos/",
+        "en": "public-prosecution-communications-proceedings/"
+      }
+    },
+    {
+      "id": "PD-AD-020",
+      "date": "2026-11-16",
+      "authority": "FGE / Prosecutor General's Office",
+      "reference": "EPT 21/2026",
+      "category": "process",
+      "public_summary": {
+        "es": "Denegó acto administrativo histórico sobre asignación/sección fiscal de 2019; mencionó 2025/2020.",
+        "en": "Declined 2019 section/assignment instrument; discussed 2025/2020 material."
+      },
+      "owner_interpretation": {
+        "es": "Gil cuestiona si esa respuesta contesta el acto y fecha solicitados.",
+        "en": "Gil questions whether that answers the requested instrument and date."
+      },
+      "documented_response": {
+        "es": "Examen de recurso pendiente; envío judicial no verificado.",
+        "en": "Review under consideration; no court filing verified."
+      },
+      "limit": {
+        "es": "No prueba falta de habilitación válida de 2019.",
+        "en": "Does not prove lack of valid 2019 authority."
+      },
+      "context_path": {
+        "es": "fiscalia-comunicaciones-procedimientos/",
+        "en": "public-prosecution-communications-proceedings/"
+      }
+    },
+    {
+      "id": "PD-AD-021",
+      "date": "2026-11-18",
+      "authority": "Fiscalía Provincial Las Palmas / Provincial Prosecution",
+      "reference": "DI 22/2026",
+      "category": "process",
+      "public_summary": {
+        "es": "Unió dos escritos, remitió al juzgado para informe 29 julio y mantuvo archivo previo.",
+        "en": "Joined two submissions, directed report access to court and maintained prior archive."
+      },
+      "owner_interpretation": {
+        "es": "Gil alega tratamiento administrativo inadecuado y posible efecto de escudo institucional.",
+        "en": "Gil alleges inadequate administrative treatment and a possible institutional shielding effect."
+      },
+      "documented_response": {
+        "es": "Adenda a buzón propio enviada una vez; no respuesta a Fiscalía ni presentación judicial verificada.",
+        "en": "Self-addressed addendum sent once; no response to Fiscalía or judicial filing verified."
+      },
+      "limit": {
+        "es": "No prueba dolo ni conocimiento personal de otros funcionarios.",
+        "en": "Proves neither intent nor personal knowledge of other officials."
+      },
+      "context_path": {
+        "es": "fiscalia-comunicaciones-procedimientos/",
+        "en": "public-prosecution-communications-proceedings/"
+      }
+    }
+  ]
+}
