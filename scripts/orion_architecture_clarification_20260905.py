@@ -9,6 +9,7 @@ import argparse
 import collections
 import hashlib
 import json
+import re
 import subprocess
 import time
 import urllib.request
@@ -29,6 +30,44 @@ ACOSTA = {
     'en': 'en/acosta-matos-perimeter/index.html',
     'es': 'es/acosta-matos-perimetro/index.html',
 }
+PRIVACY_PAIR_SHA256 = {
+    ACOSTA['en']: 'afac0405a61d5a7bde1f09758245f4dae74cb2272e6dd0d9e7a56950ee55e620',
+    ACOSTA['es']: 'e1db7d0d245c677f6470c58279d348248b46758043d620aab5084af3d234ca8a',
+}
+PRIVACY_PAIR_ORIGIN_SHA256 = {
+    ACOSTA['en']: 'a75bd7e94c43d664c51beed5f8078bb7e8f9ca8a9d1cc2b9f69060f6ab81ac66',
+    ACOSTA['es']: '17aeb0ced66543532c6e9dfa29d1dedc4293ced2f9029b50038ce7cf6581197d',
+}
+PRIVACY_PAIR_RE = re.compile(r'<section\b[^>]*\bid="aguiar-acosta-proposed-witness-pair"[^>]*>.*?</section>', re.S)
+PRIVACY_LAURA_SHA256 = {
+    ACOSTA['en']: ('888b68e29caceffb09e8f9e85ad069f4b7b8693b3b472127473482e101288982',
+                   '96d3700f83ee14e6d08caf8d0fe56e68ccd22366f5fad95be5d48503e576aa91'),
+    ACOSTA['es']: ('30fb323967997b6d102beb7c0a954337ebe17562da4913a9b483a6485beb84fd',
+                   '7bc00466914ebdbdf25cf7ff994ff5e741790bbdae7d3cd3b0f591bac4cde7b5'),
+}
+PRIVACY_LAURA_RE = re.compile(r'<section\b[^>]*\bid="(?:witness-laura-aguiar-acosta|testigo-laura-aguiar-acosta)"[^>]*>.*?</section>', re.S)
+
+def without_pair(path: str, html: str, *, current: bool) -> str:
+    """Preserve Orion framing outside the separately reviewed privacy successor."""
+    matches = list(PRIVACY_PAIR_RE.finditer(html))
+    assert len(matches) == 1, 'Missing or duplicated privacy pair section: ' + path
+    match = matches[0]
+    if current:
+        digest = hashlib.sha256(match.group().encode('utf-8')).hexdigest()
+        assert digest == PRIVACY_PAIR_SHA256[path], 'Unreviewed privacy pair change: ' + path
+    else:
+        digest = hashlib.sha256(match.group().encode('utf-8')).hexdigest()
+        assert digest == PRIVACY_PAIR_ORIGIN_SHA256[path], 'Historical privacy pair drift: ' + path
+    return html[:match.start()] + html[match.end():]
+
+def without_privacy_sections(path: str, html: str, *, current: bool) -> str:
+    html = without_pair(path, html, current=current)
+    matches = list(PRIVACY_LAURA_RE.finditer(html))
+    assert len(matches) == 1, 'Missing or duplicated Laura source section: ' + path
+    match = matches[0]
+    digest = hashlib.sha256(match.group().encode('utf-8')).hexdigest()
+    assert digest == PRIVACY_LAURA_SHA256[path][int(current)], 'Unreviewed Laura privacy change: ' + path
+    return html[:match.start()] + html[match.end():]
 COPY = {
 'en': {
     'title_old': 'Orion Rental SOCIMI · RICPE branch and FMMM trajectory',
@@ -201,7 +240,14 @@ def check(base: str):
         expected = transformed(p, git_text(base, p))
         if p.endswith('.html'):
             from source_observation_contracts import preserved_owned_page
-            preserved_owned_page(p, expected, actual, MARKER)
+            if p in PRIVACY_PAIR_SHA256:
+                # The old pair remains in the Git ancestor; the current pair is
+                # byte-pinned above. All other visible text and the Orion-owned
+                # block still pass the original preservation contract.
+                preserved_owned_page(p, without_privacy_sections(p, expected, current=False),
+                                     without_privacy_sections(p, actual, current=True), MARKER)
+            else:
+                preserved_owned_page(p, expected, actual, MARKER)
             if p in [pair[0] for pair in ROUTES.values()]:
                 preserved_owned_page(p, expected, actual, 'documented-connections')
         else:
@@ -210,7 +256,13 @@ def check(base: str):
         checks += 2
         if p.endswith('.html'):
             old, new = Links(), Links(); old.feed(git_text(base, p)); new.feed(actual)
-            assert not (old.links - new.links), 'Lost existing link or asset: ' + p
+            lost = old.links - new.links
+            allowed = collections.Counter()
+            if p in PRIVACY_PAIR_SHA256:
+                for filename in ('fernando-aguiar-acosta--linkedin-profile--20260828.png',
+                                 'laura-aguiar-acosta--linkedin-profile--20260828.jpg'):
+                    allowed[('img', 'src', '../../assets/actors/' + filename)] = 1
+            assert not (lost - allowed), 'Lost existing link or asset: ' + p
             assert len(new.ids) == len(set(new.ids)), 'Duplicate ID: ' + p
             assert MARKER in new.ids, 'Missing static correction: ' + p
             checks += 3

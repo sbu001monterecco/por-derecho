@@ -1,8 +1,11 @@
 {
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
   "publication_id": "PD-SP-AGUIAR-ACOSTA-WITNESS-PAIR-20260828-01",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-28",
-  "current_state": "HISTORICAL_20260828_RELEASE; PRIVACY_SUCCESSOR_STAGED_NOT_LIVE",
+  "current_state": "PR_OPEN",
+  "historical_20260828_current_state": "DELETION_SAFE",
   "state": "DELETION_SAFE_LIVE_VERIFIED_WITH_OPEN_KINSHIP_EVIDENCE",
   "controlling_pr": 1170,
   "merge_sha": "8593181dd5594514fa306d7b6be4bf728908fa18",
@@ -143,6 +146,7 @@
   },
   "privacy_successor_20261121": {
     "state": "REVIEW_CANDIDATE_NOT_LIVE",
+    "draft_privacy_pr": 2146,
     "current_tree_target": "Text-only bilingual profiles; no rendered sibling/family edge; three profile/exhibit binaries absent from public repository tree and Pages output",
     "historical_capture_paths_preserved_in_prior_git_commits": true,
     "historical_live_urls_and_sha256_receipt_retained": true,

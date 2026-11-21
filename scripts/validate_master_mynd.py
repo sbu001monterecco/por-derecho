@@ -1,11 +1,21 @@
 #!/usr/bin/env python3
-"""Finite MASTER MYND publication contract; no writes, network or proof upgrades."""
+"""Finite MASTER MYND contract; immutable Git fetch if needed, no working-tree writes or proof upgrades."""
 from __future__ import annotations
-import argparse, hashlib, json
+import argparse, hashlib, json, re, subprocess
 from pathlib import Path
 from urllib.parse import urljoin,urlparse,unquote
 from bs4 import BeautifulSoup
 from PIL import Image
+
+def historical_git_blob(root: Path, commit: str, path: str) -> bytes:
+    """Read one immutable public Git object even in a shallow Actions checkout."""
+    present=subprocess.run(['git','cat-file','-e',commit+'^{commit}'],
+                           cwd=root,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+    if present.returncode:
+        subprocess.run(['git','fetch','--no-tags','--depth=1','origin',commit],
+                       cwd=root,check=True,stdout=subprocess.DEVNULL)
+        subprocess.run(['git','cat-file','-e',commit+'^{commit}'],cwd=root,check=True)
+    return subprocess.check_output(['git','show',commit+':'+path],cwd=root)
 
 def validate(root: Path) -> dict:
     profile=json.loads((root/'assets/data/sun-park-mynd-yaiza-site-v1.json').read_text())
@@ -59,7 +69,34 @@ def validate(root: Path) -> dict:
     digital=json.loads((root/'data/digital-media-asset-register-v1.json').read_text())
     for f in digital['files']:
         if f.get('logical_asset') in {'PD-DMA-0005','PD-DMA-0006'}:
-            b=(root/f['repository_path']).read_bytes()
+            if f['reference']=='PD-DMA-0005-EN-PAGE^':
+                # The register seals the original public page, not a mutable current
+                # page fingerprint. Verify those exact bytes at their Git origin.
+                origin='19a71c941c76d1fd73eb654f55a74fadb5ea5590'
+                assert f['repository_path']=='en/acosta-matos-family/index.html'
+                # Both reader workflows use a one-commit checkout. The helper
+                # fetches only this immutable base object when absent.
+                b=historical_git_blob(root,origin,f['repository_path'])
+                current=(root/f['repository_path']).read_text()
+                old=b.decode('utf-8')
+                pair=re.compile(r'<section\b[^>]*\bid="aguiar-acosta-proposed-witness-pair"[^>]*>.*?</section>',re.S)
+                style=re.compile(r'<style data-aguiar-text-only="20261121">.*?</style>\n',re.S)
+                old_pair=pair.findall(old);new_pair=pair.findall(current);styles=style.findall(current)
+                assert len(old_pair)==len(new_pair)==len(styles)==1
+                assert hashlib.sha256(old_pair[0].encode()).hexdigest()=='4076f3c861e832942c974aef3ee2150ac489150d9ee5c61b64c0d9bd47fc0c19'
+                assert hashlib.sha256(new_pair[0].encode()).hexdigest()=='189c9fedd2344ae2aea150e6b75581806bf62d64ffe9c843618879192a76a358'
+                assert hashlib.sha256(styles[0].encode()).hexdigest()=='bb756ea367a5cca506181a1a592a58e7bbf2cc40cbbf49aeb367057481283e5e'
+                # The reviewed pair and style are the entire byte delta; the
+                # original H1, source links, address and disclosure remain exact.
+                assert pair.sub('',old)==pair.sub('',style.sub('',current))
+                assert 'data-relationship-status="FAMILY_RELATIONSHIP_NOT_ESTABLISHED"' in current
+                assert 'aguiar-no-family-edge' in current
+                for capture in ('fernando-aguiar-acosta--linkedin-profile--20260828.png',
+                                'laura-aguiar-acosta--linkedin-profile--20260828.jpg',
+                                'laura-aguiar-acosta-linkedin-experience-user-supplied-20260828.jpg'):
+                    assert capture not in current
+            else:
+                b=(root/f['repository_path']).read_bytes()
             assert len(b)==f['bytes'] and hashlib.sha256(b).hexdigest()==f['sha256'],f['reference']
     return result
 
