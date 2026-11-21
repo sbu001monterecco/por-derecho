@@ -261,17 +261,22 @@ for key in ("en_family", "es_family", "en_acosta", "es_acosta", "en_ricpe_geneal
         f"{key}: paired proposed-witness/not-adverse status missing",
     )
     check(
-        'data-relationship-status="ALLEGED_FERNANDO_LAURA_SIBLING_RELATIONSHIP_UNVERIFIED"' in text,
-        f"{key}: attributed/unverified sibling status missing",
+        'data-relationship-status="FAMILY_RELATIONSHIP_NOT_ESTABLISHED"' in text,
+        f"{key}: public no-family-edge status missing",
     )
-    check("Gil Marer" in text and ("unverified" in text.lower() or "no verific" in text.lower()), f"{key}: sibling attribution/proof limit missing")
-    check("fernando-aguiar-acosta--linkedin-profile--20260828.png" in text, f"{key}: Fernando profile asset missing")
-    check("laura-aguiar-acosta--linkedin-profile--20260828.jpg" in text, f"{key}: Laura profile asset missing")
+    check(("Family relationship not established" in text or "Parentesco no acreditado" in text) and "aguiar-sibling-edge" not in text, f"{key}: text-only family boundary missing")
+    check("fernando-aguiar-acosta--linkedin-profile--20260828.png" not in text, f"{key}: Fernando profile rehost referenced")
+    check("laura-aguiar-acosta--linkedin-profile--20260828.jpg" not in text, f"{key}: Laura profile rehost referenced")
     check("Sun Park, currently marketed as MYND Yaiza" in text or "Sun Park, actualmente comercializado como MYND Yaiza" in text, f"{key}: controlled Sun Park nomenclature missing")
+
+for rel in ("assets/actors/fernando-aguiar-acosta--linkedin-profile--20260828.png",
+            "assets/actors/laura-aguiar-acosta--linkedin-profile--20260828.jpg",
+            "assets/evidence/aguiar-acosta/laura-aguiar-acosta-linkedin-experience-user-supplied-20260828.jpg"):
+    check(not (ROOT / rel).exists(), f"private profile capture still in current public tree: {rel}")
 
 for key in ("en_family", "es_family"):
     text = texts[key]
-    check("laura-aguiar-acosta-linkedin-experience-user-supplied-20260828.jpg" in text, f"{key}: Laura native experience exhibit missing")
+    check("laura-aguiar-acosta-linkedin-experience-user-supplied-20260828.jpg" not in text and "aguiar-evidence-exhibit text-only" in text, f"{key}: private Laura exhibit rehost referenced")
     check("five-person denominator" in text or "denominador confirmado de cinco personas" in text, f"{key}: confirmed-family denominator boundary missing")
     check("irea-colliers-meridian-sun-park/" in text, f"{key}: unitary reciprocal link missing")
     check("ric-private-equity-sun-park/" in text, f"{key}: RICPE genealogy reciprocal link missing")
@@ -326,7 +331,7 @@ check(unitary.get("cv_sequence_interpretation", {}).get("proof_counters", {}).ge
 check(unitary.get("public_profile_capture", {}).get("sha256") == "b9bd97a3a49c35ec230fae8170e1e521fa161ab4afe0a196027192e785f07dd9", "LinkedIn capture hash drift")
 check(unitary.get("public_profile_capture", {}).get("pixel_dimensions") == {"width": 1363, "height": 936}, "LinkedIn capture dimensions drift")
 check(unitary.get("relationship_presentation", {}).get("documented_professional_edge", {}).get("visual_code") == "SOLID_BURGUNDY", "documented RICPE visual code drift")
-check(unitary.get("relationship_presentation", {}).get("provisional_family_edge", {}).get("visual_code") == "DASHED_AMBER", "provisional family visual code drift")
+check(unitary.get("relationship_presentation", {}).get("family_relationship_boundary", {}).get("visual_code") == "NOT_DISPLAYED", "unsupported family edge displayed")
 laura_capture = unitary.get("laura_public_profile_capture", {})
 check(laura_capture.get("sha256") == LAURA_CAPTURE_SHA256, "Laura LinkedIn capture hash drift")
 check(laura_capture.get("pixel_dimensions") == {"width": 691, "height": 1536}, "Laura LinkedIn capture dimensions drift")
@@ -358,12 +363,9 @@ check(
     "Laura direct-RICPE-employment non-finding drift",
 )
 check(
-    laura_witness.get("alleged_sibling_edge", {}).get("to_caepr_id") == "PD-SP-P-0088"
-    and laura_witness.get("alleged_sibling_edge", {}).get("attributed_to") == "Gil Marer"
-    and laura_witness.get("alleged_sibling_edge", {}).get("status")
-    == "ALLEGED_FERNANDO_LAURA_SIBLING_RELATIONSHIP_UNVERIFIED"
-    and laura_witness.get("alleged_sibling_edge", {}).get("visual_code") == "DASHED_AMBER",
-    "Laura-Fernando attributed sibling edge drift",
+    laura_witness.get("family_relationship_boundary", {}).get("status") == "NOT_ESTABLISHED_NO_PUBLIC_EDGE"
+    and laura_witness.get("family_relationship_boundary", {}).get("visual_code") == "NOT_DISPLAYED",
+    "unsupported Laura-Fernando family edge displayed",
 )
 check(
     set(laura_witness.get("excluded_edges", [])) == {"IREA", "Colliers", "Project Meridian"},
@@ -383,6 +385,25 @@ check(
     "Sun Park/MYND Spanish nomenclature control missing",
 )
 check(LAURA_SOURCE_IDS <= set(unitary.get("source_refs", [])), "Laura source references missing from unitary record")
+check(laura_capture.get("public_handling", "").startswith("TEXT_ONLY_PUBLIC_DERIVATIVE"), "Laura exhibit public handling still claims embedded image")
+for row in profile_portraits.values():
+    check(row.get("current_publication_status") == "WITHHELD_PENDING_SOURCE_PRIVACY_REVIEW", "portrait current publication status drift")
+visual_registry = load(ROOT / "assets/visual-asset-registry.json")["assets"]
+for asset_id in ("person.fernando-aguiar-acosta.primary", "person.laura-aguiar-acosta.primary"):
+    row = visual_registry[asset_id]
+    check(row.get("current_publication_status") == "WITHHELD_PENDING_SOURCE_PRIVACY_REVIEW"
+          and row.get("approved_contexts") == []
+          and "absent-current-public-tree" in row.get("storage_mode", ""),
+          f"profile asset current-tree status drift: {asset_id}")
+composite = load(ROOT / "assets/composites/aguiar-acosta-proposed-witness-pair.asset-map.json")
+check(composite.get("publication_status") == "WITHHELD_CURRENT_PUBLIC_TREE_20261121"
+      and composite.get("relationship_visual_code", {}).get("family_edges") == "NOT_DISPLAYED_WITHOUT_PRIMARY_SOURCE",
+      "composite still claims public portraits or family edge")
+prior_receipt = load(ROOT / "publication-manifests/aguiar-acosta-proposed-witness-pair-20260828.json")
+check(prior_receipt.get("privacy_successor_20261121", {}).get("state") == "REVIEW_CANDIDATE_NOT_LIVE"
+      and len(prior_receipt.get("historical_live_urls_20260828", [])) == 16
+      and "live_urls" not in prior_receipt,
+      "historical release receipt/current privacy status differs")
 unitary_blob = json.dumps(unitary, ensure_ascii=False)
 check_no_unsupported_laura_ricpe_employment(unitary_blob, "unitary JSON")
 
@@ -417,9 +438,9 @@ print(" - bilingual IREA, RICPE, Colliers and witness interlinks: PASS")
 print(" - holder / servicer / adviser / legal-adviser capacity separation: PASS")
 print(" - 2026 independent hotel-finance corroboration with project/family limits: PASS")
 print(" - ACHM / Belagua / Hotel Project Tenerife / AC Hotel Tenerife architecture: PASS")
-print(" - solid documented RICPE edge / dashed provisional family edge: PASS")
+print(" - documented professional edge / no unproved family visual edge: PASS")
 print(" - 4/4 checkers visual / attributed hypothesis / zero-proved counters: PASS")
 print(" - LinkedIn image-capture fingerprint and contextual explanation: PASS")
 print(" - unique bilingual Fernando witness anchor and relationship map: PASS")
-print(" - Laura identity / Canarian placement / attributed sibling / no-direct-RICPE boundary: PASS")
+print(" - Laura identity / Canarian placement / no-family-edge / no-direct-RICPE boundary: PASS")
 print(" - private-source minimization controls: PASS")

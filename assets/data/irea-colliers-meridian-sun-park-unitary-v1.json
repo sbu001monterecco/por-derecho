@@ -65,8 +65,8 @@
     "sha256": "f6581bfa4d804c6d6fb3de654e9faa09f3781c2ac3fff2f123162209363e2964",
     "visible_scope": ["Deloitte Audit Junior, September 2025-present", "Canarian Hospitality hotel-management internship, July-August 2024", "MYND Yaiza and Radisson Blu Lanzarote controllers", "internal-expense controls and legal-department hotel purchase/management processes", "EY audit internship, September-December 2023"],
     "finding": "DIRECT_RICPE_EMPLOYMENT_NOT_SHOWN; DOCUMENTED_CANARIAN_HOSPITALITY_PLACEMENT",
-    "integrity_status": "USER_SUPPLIED_NATIVE_BYTES_REPOSITORY_PRESERVED_SHA256_LOCKED",
-    "public_handling": "PUBLIC_EXPERIENCE_EXHIBIT_EMBEDDED_ON_BILINGUAL_FAMILY_PAGE; PHONE_STATUS_AND_PLATFORM_CHROME_VISIBLE; NO_UNRELATED_THIRD_PARTY_PROFILE_SIDEBAR"
+    "integrity_status": "HISTORICAL_GIT_OBJECT_SHA256_LOCKED_NOT_IN_CURRENT_PUBLIC_TREE",
+    "public_handling": "TEXT_ONLY_PUBLIC_DERIVATIVE; RAW_EXPERIENCE_CAPTURE_WITHHELD_FROM_CURRENT_PUBLIC_TREE; HISTORICAL_FINGERPRINT_AND_PATH_RETAINED"
   },
   "profile_portraits": {
     "fernando_aguiar_acosta": {
@@ -76,7 +76,8 @@
       "pixel_dimensions": {"width":800,"height":800},
       "byte_length": 285058,
       "sha256": "7b3ce8c4cb0f047991595eb3e4de6cb9d85d18919c8f42cc0e45d9b35ceac466",
-      "identity_basis": "Exact named public LinkedIn profile and URL; no facial-recognition inference"
+      "identity_basis": "Exact named public LinkedIn profile and URL; no facial-recognition inference",
+      "current_publication_status": "WITHHELD_PENDING_SOURCE_PRIVACY_REVIEW"
     },
     "laura_aguiar_acosta": {
       "asset_id": "person.laura-aguiar-acosta.primary",
@@ -85,7 +86,8 @@
       "pixel_dimensions": {"width":800,"height":800},
       "byte_length": 119874,
       "sha256": "d2438087f18b9f9e210bb9b196208b6bee4ee8b4ee7533f3aa0740236354c04e",
-      "identity_basis": "Exact named public LinkedIn profile and URL; no facial-recognition inference"
+      "identity_basis": "Exact named public LinkedIn profile and URL; no facial-recognition inference",
+      "current_publication_status": "WITHHELD_PENDING_SOURCE_PRIVACY_REVIEW"
     }
   },
   "nomenclature_control": {
@@ -131,10 +133,9 @@
       "visual_code": "SOLID_BURGUNDY",
       "continuation_via_caepr_ids": ["PD-SP-O-0078", "PD-SP-O-0077", "PD-SP-O-0073"]
     },
-    "provisional_family_edge": {
-      "to": "Acosta Matos family perimeter",
-      "status": "PROVISIONAL_UNVERIFIED_FAMILY_HYPOTHESIS",
-      "visual_code": "DASHED_AMBER",
+    "family_relationship_boundary": {
+      "status": "NOT_ESTABLISHED_NO_PUBLIC_EDGE",
+      "visual_code": "NOT_DISPLAYED",
       "not_established": ["family relationship", "knowledge", "intent", "control", "wrongdoing", "liability"]
     }
   },
@@ -156,14 +157,12 @@
       "shown": false,
       "status": "DIRECT_RICPE_EMPLOYMENT_NOT_SHOWN"
     },
-    "alleged_sibling_edge": {
-      "to_caepr_id": "PD-SP-P-0088",
-      "attributed_to": "Gil Marer",
-      "status": "ALLEGED_FERNANDO_LAURA_SIBLING_RELATIONSHIP_UNVERIFIED",
-      "visual_code": "DASHED_AMBER"
+    "family_relationship_boundary": {
+      "status": "NOT_ESTABLISHED_NO_PUBLIC_EDGE",
+      "visual_code": "NOT_DISPLAYED"
     },
     "excluded_edges": ["IREA", "Colliers", "Project Meridian"],
-    "witness_scope": ["own recruitment and supervisors", "own duties and assignments", "systems and records used", "internal-expense controls", "legal-department interactions", "MYND Yaiza and Radisson Blu Lanzarote work", "any exposure to RICPE-funded project records", "accuracy of the alleged sibling relationship"]
+    "witness_scope": ["own recruitment and supervisors", "own duties and assignments", "systems and records used", "internal-expense controls", "legal-department interactions", "MYND Yaiza and Radisson Blu Lanzarote work", "any exposure to RICPE-funded project records"]
   },
   "finite_production": [
     "2014 Meridian engagement, team and data-room indices",

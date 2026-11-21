@@ -150,14 +150,16 @@
       ],
       "path": "assets/actors/fernando-aguiar-acosta--linkedin-profile--20260828.png",
       "git_blob_sha": "79ed3679f0ca570301997ec93b4ccc2f62c2e1b5",
-      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_status": "WITHDRAWN_FROM_CURRENT_PUBLIC_TREE",
       "identity_basis": "Public LinkedIn profile image retrieved from and matched to the exact named profile URL for Fernando Aguiar Acosta on 28 August 2026. Identity is attributed by that named profile and exact URL; no facial-recognition inference was performed.",
-      "approved_contexts": [
+      "approved_contexts": [],
+      "previous_approved_contexts": [
         "Acosta Matos family page provisional witness lane",
         "IREA / RICPE / Colliers continuity dossier",
         "RICPE genealogy cross-link",
         "proposed witness and records-preservation materials"
       ],
+      "current_publication_status": "WITHHELD_PENDING_SOURCE_PRIVACY_REVIEW",
       "alt_en": "Public LinkedIn profile photograph attributed by the named profile to Fernando Aguiar Acosta",
       "alt_es": "Fotografía del perfil público de LinkedIn atribuida por el perfil nominal a Fernando Aguiar Acosta",
       "do_not_confuse_with": [
@@ -172,7 +174,7 @@
         "format": "png",
         "profile_match_basis": "Exact named public profile header and URL"
       },
-      "storage_mode": "repository-byte-locked"
+      "storage_mode": "historical-git-object; absent-current-public-tree"
     },
     "person.laura-aguiar-acosta.primary": {
       "subject_type": "person",
@@ -184,14 +186,16 @@
       ],
       "path": "assets/actors/laura-aguiar-acosta--linkedin-profile--20260828.jpg",
       "git_blob_sha": "313b8adcaa2a9b718f6c1c707c881e59d8dcd9e7",
-      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_status": "WITHDRAWN_FROM_CURRENT_PUBLIC_TREE",
       "identity_basis": "Public LinkedIn profile image retrieved from and matched to the exact named profile URL for Laura Aguiar Acosta on 28 August 2026. Identity is attributed by that named profile and exact URL; no facial-recognition inference was performed.",
-      "approved_contexts": [
+      "approved_contexts": [],
+      "previous_approved_contexts": [
         "Acosta Matos family page provisional witness lane",
         "IREA / RICPE / Colliers continuity dossier",
         "RICPE genealogy cross-link",
         "proposed witness and records-preservation materials"
       ],
+      "current_publication_status": "WITHHELD_PENDING_SOURCE_PRIVACY_REVIEW",
       "alt_en": "Public LinkedIn profile photograph attributed by the named profile to Laura Aguiar Acosta",
       "alt_es": "Fotografía del perfil público de LinkedIn atribuida por el perfil nominal a Laura Aguiar Acosta",
       "do_not_confuse_with": [
@@ -206,7 +210,7 @@
         "format": "jpg",
         "profile_match_basis": "Exact named public profile header and URL"
       },
-      "storage_mode": "repository-byte-locked"
+      "storage_mode": "historical-git-object; absent-current-public-tree"
     },
     "composite.acosta-matos-family-hotel-plans.source-v1": {
       "subject_type": "object",

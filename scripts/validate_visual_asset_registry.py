@@ -22,6 +22,20 @@ ACTORS_DIR = ROOT / "assets" / "actors"
 COMPOSITES_DIR = ROOT / "assets" / "composites"
 
 ACTIVE_STATUS = "LOCKED_CANONICAL_REPOSITORY_ASSET"
+WITHDRAWN_STATUS = "WITHDRAWN_FROM_CURRENT_PUBLIC_TREE"
+WITHDRAWN_PROFILE_PINS = {
+    "person.fernando-aguiar-acosta.primary": (
+        "assets/actors/fernando-aguiar-acosta--linkedin-profile--20260828.png",
+        "79ed3679f0ca570301997ec93b4ccc2f62c2e1b5",
+        "7b3ce8c4cb0f047991595eb3e4de6cb9d85d18919c8f42cc0e45d9b35ceac466",
+    ),
+    "person.laura-aguiar-acosta.primary": (
+        "assets/actors/laura-aguiar-acosta--linkedin-profile--20260828.jpg",
+        "313b8adcaa2a9b718f6c1c707c881e59d8dcd9e7",
+        "d2438087f18b9f9e210bb9b196208b6bee4ee8b4ee7533f3aa0740236354c04e",
+    ),
+}
+WITHDRAWN_EXHIBIT_PATH = "assets/evidence/aguiar-acosta/laura-aguiar-acosta-linkedin-experience-user-supplied-20260828.jpg"
 PENDING_STATUSES = {
     "USER_CONFIRMED_PENDING_REPOSITORY_IMPORT",
     "PENDING_IDENTITY_VERIFICATION",
@@ -78,6 +92,7 @@ def main() -> int:
         assets = {}
 
     registered_paths: dict[str, str] = {}
+    withdrawn_paths: dict[str, str] = {}
     canonical_names: dict[str, str] = {}
     supplemental_paths: dict[str, dict[str, Any]] = {}
     if SUPPLEMENTAL_POLICY_PATH.is_file():
@@ -145,6 +160,23 @@ def main() -> int:
                     errors.append(f"{asset_id}: person asset requires identity_basis.")
                 if not entry.get("alt_en") or not entry.get("alt_es"):
                     errors.append(f"{asset_id}: person asset requires bilingual alt text.")
+
+        elif status == WITHDRAWN_STATUS:
+            pin = WITHDRAWN_PROFILE_PINS.get(asset_id)
+            if not pin:
+                errors.append(f"{asset_id}: unreviewed withdrawn asset.")
+            else:
+                expected_path, expected_blob, expected_sha = pin
+                if (path_value, entry.get("git_blob_sha"),
+                    entry.get("source_provenance", {}).get("sha256")) != pin:
+                    errors.append(f"{asset_id}: historical source path/blob/SHA pin changed.")
+                if (ROOT / expected_path).exists():
+                    errors.append(f"{asset_id}: withdrawn image still in current public tree.")
+                if not entry.get("identity_basis") or not entry.get("alt_en") or not entry.get("alt_es"):
+                    errors.append(f"{asset_id}: withdrawn person identity/alt provenance missing.")
+                if entry.get("current_publication_status") != "WITHHELD_PENDING_SOURCE_PRIVACY_REVIEW" or entry.get("approved_contexts") != []:
+                    errors.append(f"{asset_id}: withdrawn public approval/status changed.")
+                withdrawn_paths[expected_path] = asset_id
 
         elif status in PENDING_STATUSES:
             if path_value is not None:
@@ -222,14 +254,25 @@ def main() -> int:
                     f"{sidecar.relative_to(ROOT)}: all assets are active; consider changing publication_status to READY."
                 )
 
-    # Text references may use only registered actor paths.
+    if (ROOT / WITHDRAWN_EXHIBIT_PATH).exists():
+        errors.append("withdrawn Laura experience exhibit still in current public tree.")
+
+    # Historical Markdown/JSON may retain path, ID and SHA provenance. Current
+    # rendered assets cannot link either withdrawn portraits or the exhibit.
     for path in iter_text_files():
         try:
             text = path.read_text(encoding="utf-8")
         except UnicodeDecodeError:
             continue
+        if (WITHDRAWN_EXHIBIT_PATH in text
+                and path.suffix.lower() in {".html", ".htm", ".js", ".mjs", ".css", ".xml"}):
+            errors.append(f"{path.relative_to(ROOT)} renders withdrawn Laura exhibit.")
         for match in ACTOR_REFERENCE_RE.finditer(text):
             rel = f"assets/actors/{match.group(1)}"
+            if rel in withdrawn_paths:
+                if path.suffix.lower() in {".html", ".htm", ".js", ".mjs", ".css", ".xml"}:
+                    errors.append(f"{path.relative_to(ROOT)} renders withdrawn actor asset {rel}.")
+                continue
             if rel not in registered_paths and rel not in supplemental_paths:
                 errors.append(
                     f"{path.relative_to(ROOT)} references unregistered actor asset {rel}."
@@ -258,9 +301,10 @@ def main() -> int:
 
     active_count = sum(1 for entry in assets.values() if entry.get("identity_status") == ACTIVE_STATUS)
     pending_count = sum(1 for entry in assets.values() if entry.get("identity_status") in PENDING_STATUSES)
+    withdrawn_count = sum(1 for entry in assets.values() if entry.get("identity_status") == WITHDRAWN_STATUS)
     print(
         "Visual asset identity validation passed: "
-        f"{active_count} active byte-locked assets, {pending_count} pending asset(s), "
+        f"{active_count} active byte-locked assets, {pending_count} pending asset(s), {withdrawn_count} historically pinned withdrawn asset(s), "
         f"{len(registered_paths)} registered repository paths."
     )
     return 0

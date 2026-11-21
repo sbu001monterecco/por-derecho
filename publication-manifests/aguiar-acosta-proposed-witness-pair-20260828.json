@@ -2,7 +2,7 @@
   "publication_id": "PD-SP-AGUIAR-ACOSTA-WITNESS-PAIR-20260828-01",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-28",
-  "current_state": "DELETION_SAFE",
+  "current_state": "HISTORICAL_20260828_RELEASE; PRIVACY_SUCCESSOR_STAGED_NOT_LIVE",
   "state": "DELETION_SAFE_LIVE_VERIFIED_WITH_OPEN_KINSHIP_EVIDENCE",
   "controlling_pr": 1170,
   "merge_sha": "8593181dd5594514fa306d7b6be4bf728908fa18",
@@ -99,7 +99,7 @@
     "deployed_head_sha": "9d9ea2c4c19116395eb9c3f7feb2465e60d74814",
     "ancestry_control": "The deployed head is a descendant of merge 8593181dd5594514fa306d7b6be4bf728908fa18."
   },
-  "live_urls": [
+  "historical_live_urls_20260828": [
     "https://sbu001monterecco.github.io/por-derecho/en/acosta-matos-family/",
     "https://sbu001monterecco.github.io/por-derecho/es/acosta-matos-familia/",
     "https://sbu001monterecco.github.io/por-derecho/en/acosta-matos-perimeter/",
@@ -140,6 +140,13 @@
       "Repository preservation validator passed"
     ],
     "live_readback": "16/16 HTTP_200_EXACT_SHA256_MATCH"
+  },
+  "privacy_successor_20261121": {
+    "state": "REVIEW_CANDIDATE_NOT_LIVE",
+    "current_tree_target": "Text-only bilingual profiles; no rendered sibling/family edge; three profile/exhibit binaries absent from public repository tree and Pages output",
+    "historical_capture_paths_preserved_in_prior_git_commits": true,
+    "historical_live_urls_and_sha256_receipt_retained": true,
+    "post_merge_required": "Independent source/privacy review, GitHub CI, Pages publish and anonymous 404 readback of all three binary URLs on both hosts; history and caches remain separately accessible"
   },
   "deletion_record": {
     "status": "DELETION_SAFE_WITH_OPEN_KINSHIP_AND_RECORDS_EVIDENCE",
