@@ -1,0 +1,1585 @@
+{
+  "schema": "por-derecho.acosta-ricpe-people-network.v1",
+  "control_id": "PD-AM-RICPE-PEOPLE-GRAPH-20261120-001",
+  "created_on": "2026-11-20",
+  "classification": "PUBLIC_SAFE_DERIVATIVE_REVIEW_REQUIRED",
+  "canonical_identity_registry": "assets/data/matter-identity-registry-v1.people.json",
+  "legend": {
+    "registered_office": "Dated official corporate office, not payroll",
+    "company_published": "Published current page observed 20 Nov 2026, not real-time HR confirmation",
+    "profile_reported_placement": "Captured public profile; independent HR confirmation not held",
+    "family": "Parent-child from source-qualified family dossier; relationship alone does not transfer responsibility",
+    "unknown": "No parent-child, sibling or spouse inference permitted",
+    "registered_board": "Official 29 Oct 2026 registered office; not equity, payroll or voting control",
+    "historical_company_board": "FY2025 board snapshot superseded by a 2026 official act"
+  },
+  "sources": {
+    "BORME30": {
+      "title": "BORME Las Palmas, 12 Feb 2024",
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-30-35",
+      "basis": "official_registry"
+    },
+    "BORME32": {
+      "title": "BORME Las Palmas, 14 Feb 2024",
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-32-35",
+      "basis": "official_registry"
+    },
+    "BORME72": {
+      "title": "BORME correction, 12 Apr 2024",
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-72-35",
+      "basis": "official_registry"
+    },
+    "RICBOARD": {
+      "title": "RIC Private Equity — board page",
+      "url": "https://ric.capital/compania/consejo-de-administracion/",
+      "basis": "company_published"
+    },
+    "RICTEAM": {
+      "title": "RIC Private Equity — management page",
+      "url": "https://ric.capital/compania/equipo-gestor/",
+      "basis": "company_published"
+    },
+    "RIC2022": {
+      "title": "RICPE historical 2022 presentation",
+      "url": "https://ric.capital/cms/uploads/1663591080-RICPrivateEquityProyectos2022.pdf",
+      "basis": "historical_company_presentation"
+    },
+    "RICFOUND": {
+      "title": "RICPE founding history",
+      "url": "https://ric.capital/compania/nuestra-historia/",
+      "basis": "company_published"
+    },
+    "CHTEAM": {
+      "title": "Canarian Hospitality — About Us people directory",
+      "url": "https://canarianhospitality.com/en/about-us/",
+      "basis": "company_published"
+    },
+    "FAMILY": {
+      "title": "Por Derecho bilingual family dossier",
+      "url": "https://por-derecho-setup-or-gitlab-setup-c2b10f.gitlab.io/en/acosta-matos-family/",
+      "basis": "source_qualified_repository"
+    },
+    "PROFILE_FAG": {
+      "title": "Fernando Aguiar public profile; captured 28 Aug 2026",
+      "url": "https://es.linkedin.com/in/fernando-aguiar-acosta-894679235",
+      "basis": "archived_profile_capture",
+      "internal_ref": "PD-LI-FAG-EXP-20260828-01"
+    },
+    "PROFILE_LAA": {
+      "title": "Laura Aguiar professional experience; captured 28 Aug 2026",
+      "url": "https://www.linkedin.com/in/laura-aguiar-acosta/details/experience/",
+      "basis": "archived_profile_capture",
+      "internal_ref": "PD-LI-LAA-EXP-20260828-02"
+    },
+    "ARCHIVE_CH24": {
+      "title": "Canarian Hospitality company profile, June 2024",
+      "url": "https://canarianhospitality.com/wp-content/uploads/2024/06/CompanyProfile_CanarianHospitality.pdf",
+      "basis": "historical_company_published",
+      "source_date": "June 2024",
+      "locator": "Team and hotel sections: Teodoro, Daniel, Borja, William, provisional Antonio, Gerard, Mario. Historical roles only."
+    },
+    "ACTOR": {
+      "title": "Por Derecho controlled actor identity registry",
+      "basis": "canonical_repository",
+      "internal_path": "assets/data/matter-identity-registry-v1.people.json"
+    },
+    "CNMV2025": {
+      "title": "CNMV: RICPE audited FY2025 accounts, board certification and staff headcount",
+      "url": "https://www.cnmv.es/portal/consultas/ecr/sociedad?lang=es&nif=A76335900&vista=38",
+      "basis": "official_filed_audited_report",
+      "source_date": "31 Mar 2026 board certification; 31 Dec 2025 headcount",
+      "locator": "2025 audited individual accounts, page 42 board signatures; page 40 staff count. Use 2025 document link on CNMV audit index."
+    },
+    "BORME2026": {
+      "title": "BORME 6 Nov 2026, Las Palmas entry 497012 (registered 29 Oct)",
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-214-35",
+      "basis": "official_registry",
+      "entry": "497012",
+      "registered_at": "2026-10-29",
+      "published_at": "2026-11-06"
+    },
+    "BORME122": {
+      "title": "BORME 26 Jun 2024, Las Palmas entry 287289",
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-122-35",
+      "basis": "official_registry",
+      "entry": "287289",
+      "registered_at": "2024-06-19",
+      "published_at": "2024-06-26"
+    },
+    "CNMV2025LOANS": {
+      "title": "RICPE audited FY2025 accounts, note 7 participative loans",
+      "url": "https://www.cnmv.es/portal/consultas/ecr/sociedad?lang=es&nif=A76335900&vista=38",
+      "basis": "official_filed_audited_report",
+      "as_of": "2025-12-31",
+      "locator": "2025 audited individual accounts, note 7, page 19, two Hotel New Trend participative loan lines. Use 2025 document link on CNMV audit index."
+    },
+    "BORME2021CH": {
+      "title": "BORME 16 Aug 2021, Canarian Hospitality entry 383950",
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2021-156-35",
+      "basis": "official_registry",
+      "entry": "383950",
+      "source_date": "registered 5 Aug 2021; published 16 Aug 2021"
+    },
+    "BORME2024ORION": {
+      "title": "BORME 9 Apr 2024, Orion Rental SOCIMI entry 168456",
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-69-35",
+      "basis": "official_registry",
+      "entry": "168456",
+      "source_date": "registered 2 Apr 2024; published 9 Apr 2024"
+    }
+  },
+  "organisations": [
+    {
+      "id": "GAM",
+      "name": "Grupo Acosta Matos SL",
+      "category": "holding/property/construction group"
+    },
+    {
+      "id": "GPAM",
+      "name": "Grupo Patrimonial Acosta Matos SL",
+      "category": "property/investment holding"
+    },
+    {
+      "id": "CAMSA",
+      "name": "Construcciones Acosta Matos SA",
+      "category": "extinguished historic company"
+    },
+    {
+      "id": "CAMSL",
+      "name": "Construcciones Acosta Matos SL",
+      "category": "successor construction company"
+    },
+    {
+      "id": "PROM",
+      "name": "Promociones Acosta Matos SL",
+      "category": "successor company"
+    },
+    {
+      "id": "HCA",
+      "name": "Hotel Callao Adeje SL",
+      "category": "hotel company"
+    },
+    {
+      "id": "RICPE",
+      "name": "RIC Private Equity Investment Partners SCR SA",
+      "category": "regulated investment company"
+    },
+    {
+      "id": "CH",
+      "name": "Canarian Hospitality SL",
+      "category": "hotel-management company"
+    },
+    {
+      "id": "HNT",
+      "name": "Hotel New Trend SL",
+      "category": "hotel property/project entity",
+      "source_literal": "HOTEL NEW TREND, SOCIEDAD LIMITADA",
+      "source": "BORME122",
+      "note": "A sole-shareholder status was registered in 2024; SLU is a status shorthand, not the registered company name in this entry."
+    },
+    {
+      "id": "MYND",
+      "name": "MYND Yaiza",
+      "category": "hotel/operating brand"
+    },
+    {
+      "id": "RADL",
+      "name": "Radisson Blu Resort Lanzarote",
+      "category": "hotel"
+    },
+    {
+      "id": "ACHM",
+      "name": "Belagua/ACHM Spain Management",
+      "category": "hotel-sector management/advisory"
+    },
+    {
+      "id": "COL",
+      "name": "Colliers",
+      "category": "professional services / debt advisory"
+    },
+    {
+      "id": "ORION",
+      "name": "Orion Rental SOCIMI SA",
+      "category": "investment property vehicle"
+    }
+  ],
+  "people": [
+    {
+      "id": "p0013",
+      "name": "Gerardo Nicanor Acosta Armas",
+      "lane": "founder",
+      "canonical_actor_id": "PD-SP-P-0013",
+      "source_status": "identity_record_reused"
+    },
+    {
+      "id": "p0011",
+      "name": "José Daniel Acosta Matos",
+      "lane": "family",
+      "canonical_actor_id": "PD-SP-P-0011",
+      "source_status": "identity_record_reused",
+      "full_name_in_cnmv_2025": "José Daniel Acosta Matos",
+      "verified_name_source": "CNMV2025"
+    },
+    {
+      "id": "p0012",
+      "name": "Laura Patricia Acosta Matos",
+      "lane": "family",
+      "canonical_actor_id": "PD-SP-P-0012",
+      "source_status": "identity_record_reused"
+    },
+    {
+      "id": "p0094",
+      "name": "Gerardo Zacarías Acosta Matos",
+      "lane": "family",
+      "canonical_actor_id": "PD-SP-P-0094",
+      "source_status": "identity_record_reused"
+    },
+    {
+      "id": "p0093",
+      "name": "Javier Acosta Matos",
+      "lane": "family",
+      "canonical_actor_id": "PD-SP-P-0093",
+      "source_status": "identity_record_reused"
+    },
+    {
+      "id": "p0088",
+      "name": "Fernando Aguiar Acosta",
+      "lane": "cross_perimeter",
+      "canonical_actor_id": "PD-SP-P-0088",
+      "source_status": "identity_record_reused"
+    },
+    {
+      "id": "p0095",
+      "name": "Laura Aguiar Acosta",
+      "lane": "cross_perimeter",
+      "canonical_actor_id": "PD-SP-P-0095",
+      "source_status": "identity_record_reused"
+    },
+    {
+      "id": "p0162",
+      "name": "Enrique Guerra Suárez",
+      "lane": "ricpe_management",
+      "canonical_actor_id": "PD-SP-P-0162",
+      "source_status": "identity_record_reused",
+      "full_name_in_cnmv_2025": "Enrique L. Guerra Suárez",
+      "verified_name_source": "CNMV2025"
+    },
+    {
+      "id": "p0009",
+      "name": "Francisco Mario Matos Matas",
+      "lane": "external_professional",
+      "canonical_actor_id": "PD-SP-P-0009",
+      "source_status": "identity_record_reused"
+    },
+    {
+      "id": "obs-angel-medina",
+      "name": "Ángel Medina Padrón",
+      "lane": "ricpe_board",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id",
+      "full_name_in_cnmv_2025": "Ángel F. Medina Padrón",
+      "verified_name_source": "BORME2026",
+      "short_name_on_company_page": "Ángel Medina"
+    },
+    {
+      "id": "obs-jesus-diaz",
+      "name": "Jesús Díaz Quintana",
+      "lane": "ricpe_board",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id",
+      "full_name_in_cnmv_2025": "Jesús Díaz Quintana",
+      "verified_name_source": "BORME2026",
+      "short_name_on_company_page": "Jesús Díaz"
+    },
+    {
+      "id": "obs-modesto-campos",
+      "name": "Modesto Campos Castro",
+      "lane": "ricpe_board",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id",
+      "full_name_in_cnmv_2025": "Modesto Campos Castro",
+      "verified_name_source": "BORME2026",
+      "short_name_on_company_page": "Modesto Campos"
+    },
+    {
+      "id": "obs-francisco-lopez",
+      "name": "Francisco Aurelio López González",
+      "lane": "ricpe_board",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id",
+      "full_name_in_cnmv_2025": "Francisco Aurelio López González",
+      "verified_name_source": "CNMV2025",
+      "short_name_on_company_page": "Francisco López"
+    },
+    {
+      "id": "obs-jose-lopez",
+      "name": "José B. López Peñate",
+      "lane": "ricpe_board",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id",
+      "full_name_in_cnmv_2025": "José B. López Peñate",
+      "verified_name_source": "CNMV2025",
+      "short_name_on_company_page": "José López"
+    },
+    {
+      "id": "obs-heriberto-etala",
+      "name": "Heriberto Etala Socas",
+      "lane": "ricpe_board",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id",
+      "full_name_in_cnmv_2025": "Heriberto Etala Socas",
+      "verified_name_source": "CNMV2025",
+      "short_name_on_company_page": "Heriberto Etala"
+    },
+    {
+      "id": "obs-santiago-mederos",
+      "name": "Santiago T. Mederos Alonso",
+      "lane": "ricpe_board",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id",
+      "full_name_in_cnmv_2025": "Santiago T. Mederos Alonso",
+      "verified_name_source": "CNMV2025",
+      "short_name_on_company_page": "Santiago Mederos"
+    },
+    {
+      "id": "obs-jose-matos",
+      "name": "José Matos Pérez",
+      "lane": "ricpe_board",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id",
+      "full_name_in_cnmv_2025": "José Matos Pérez",
+      "verified_name_source": "CNMV2025",
+      "short_name_on_company_page": "José Matos"
+    },
+    {
+      "id": "obs-dunia-perez",
+      "name": "Dunia Pérez García",
+      "lane": "ricpe_board",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id",
+      "full_name_in_cnmv_2025": "Dunia Pérez García",
+      "verified_name_source": "CNMV2025",
+      "short_name_on_company_page": "Dunia Pérez"
+    },
+    {
+      "id": "obs-juan-perez",
+      "name": "Juan Pérez Bolaños",
+      "lane": "ricpe_board",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id",
+      "full_name_in_cnmv_2025": "Juan Pérez Bolaños",
+      "verified_name_source": "CNMV2025",
+      "short_name_on_company_page": "Juan Pérez"
+    },
+    {
+      "id": "obs-carmelo-ramos",
+      "name": "Carmelo A. Ramos Falcón",
+      "lane": "ricpe_board",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id",
+      "full_name_in_cnmv_2025": "Carmelo A. Ramos Falcón",
+      "verified_name_source": "CNMV2025",
+      "short_name_on_company_page": "Carmelo Ramos"
+    },
+    {
+      "id": "obs-juan-francisco-falcon",
+      "name": "Juan Francisco Falcón",
+      "lane": "ricpe_officer",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-orlando-lujan",
+      "name": "Orlando Luján",
+      "lane": "ricpe_officer",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-murli-kessomal-kaknani",
+      "name": "Murli Kessomal Kaknani",
+      "lane": "ricpe_officer",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-enrique-quevedo",
+      "name": "Enrique Quevedo",
+      "lane": "ricpe_management",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-juan-millet",
+      "name": "Juan Millet",
+      "lane": "ricpe_management",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-ariel-martin",
+      "name": "Ariel Martín",
+      "lane": "ricpe_management",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-idania-monzon",
+      "name": "Idania Monzón",
+      "lane": "ricpe_management",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-sergio-rodriguez",
+      "name": "Sergio Rodríguez",
+      "lane": "ricpe_historical",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-alejandro-leon",
+      "name": "Alejandro León",
+      "lane": "ricpe_historical",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-priscila-briganti",
+      "name": "Priscila Briganti",
+      "lane": "ricpe_historical",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-juan-jose-vera",
+      "name": "Juan José Vera",
+      "lane": "external_professional",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-francisco-fernandez",
+      "name": "Francisco Fernández",
+      "lane": "ch_management",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-oscar-palacios",
+      "name": "Óscar Palacios",
+      "lane": "ch_management",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-alejandro-paez",
+      "name": "Alejandro Páez",
+      "lane": "ch_management",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-sangeeta-sagrani",
+      "name": "Sangeeta Sagrani",
+      "lane": "ch_management",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-maria-isabel-almandoz-redneris",
+      "name": "María Isabel Almandoz Redneris",
+      "lane": "ch_management",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-raquel-suarez-benitez",
+      "name": "Raquel Suárez Benítez",
+      "lane": "ch_management",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-francisco-manuel-molinero",
+      "name": "Francisco Manuel Molinero",
+      "lane": "ch_management",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-lourdes-castillejo-trenas",
+      "name": "Lourdes Castillejo Trenas",
+      "lane": "ch_management",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-miriam-rodriguez-garcia",
+      "name": "Miriam Rodríguez García",
+      "lane": "ch_management",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-sergi-gutes-segarra",
+      "name": "Sergi Gutes Segarra",
+      "lane": "ch_management",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-elena-garcia-bernal",
+      "name": "Elena García Bernal",
+      "lane": "ch_management",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-javier-perez",
+      "name": "Javier Pérez",
+      "lane": "ch_management",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-francisco-ruiz",
+      "name": "Francisco Ruiz",
+      "lane": "ch_management",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-teodoro-gonzalez-dorta",
+      "name": "Teodoro González Dorta",
+      "lane": "ch_historical",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-daniel-garcia-viso",
+      "name": "Daniel García Viso",
+      "lane": "ch_historical",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-borja-suaza",
+      "name": "Borja Suaza",
+      "lane": "hotel_historical",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-william-rojas",
+      "name": "William Rojas",
+      "lane": "hotel_historical",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-antonio-alvarez-d-incomplete",
+      "name": "Antonio Álvarez D. [incomplete]",
+      "lane": "hotel_historical",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-gerard-rosania",
+      "name": "Gerard Rosania",
+      "lane": "hotel_historical",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-mario-fija-kowski",
+      "name": "Mario Fijałkowski",
+      "lane": "hotel_historical",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    },
+    {
+      "id": "obs-lucia-maria-del-pilar-matos-gonzalez",
+      "name": "Lucía María del Pilar Matos González",
+      "lane": "historical_governance",
+      "canonical_actor_id": null,
+      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+    }
+  ],
+  "roles": [
+    {
+      "person_id": "p0011",
+      "organization_id": "GAM",
+      "role": "President / director",
+      "relation_kind": "registered_office",
+      "when": "02 Feb 2024",
+      "sources": [
+        "BORME30"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "p0011",
+      "organization_id": "GPAM",
+      "role": "President / director",
+      "relation_kind": "registered_office",
+      "when": "02 Feb 2024",
+      "sources": [
+        "BORME32"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "p0012",
+      "organization_id": "GAM",
+      "role": "Secretary / delegated director / director",
+      "relation_kind": "registered_office",
+      "when": "02 Feb 2024",
+      "sources": [
+        "BORME30"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "p0012",
+      "organization_id": "GPAM",
+      "role": "Secretary / delegated director / director",
+      "relation_kind": "registered_office",
+      "when": "02 Feb 2024",
+      "sources": [
+        "BORME32"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "p0094",
+      "organization_id": "GAM",
+      "role": "Vice-president / director",
+      "relation_kind": "registered_office",
+      "when": "02 Feb 2024",
+      "sources": [
+        "BORME30"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "p0094",
+      "organization_id": "GPAM",
+      "role": "Vice-president / director",
+      "relation_kind": "registered_office",
+      "when": "02 Feb 2024",
+      "sources": [
+        "BORME32"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "p0093",
+      "organization_id": "GAM",
+      "role": "Vice-secretary / director",
+      "relation_kind": "registered_office",
+      "when": "02 Feb 2024",
+      "sources": [
+        "BORME30"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "p0093",
+      "organization_id": "GPAM",
+      "role": "Vice-secretary / director",
+      "relation_kind": "registered_office",
+      "when": "02 Feb 2024",
+      "sources": [
+        "BORME32"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "p0013",
+      "organization_id": "CAMSA",
+      "role": "Founder; former president",
+      "relation_kind": "historic_governance",
+      "when": "through 2020",
+      "sources": [
+        "FAMILY"
+      ],
+      "status": "historical_source_qualified"
+    },
+    {
+      "person_id": "p0011",
+      "organization_id": "RICPE",
+      "role": "Board member (published as José Acosta)",
+      "relation_kind": "historical_company_board",
+      "when": "FY2025 board; previous appointments cancelled 29 Oct 2026",
+      "sources": [
+        "RICBOARD",
+        "CNMV2025",
+        "BORME2026"
+      ],
+      "status": "historical_superseded_by_official_2026_act",
+      "valid_to": "2026-10-29",
+      "source_as_of": "2025-12-31"
+    },
+    {
+      "person_id": "p0011",
+      "organization_id": "CH",
+      "role": "Chairman (published as José Acosta Matos)",
+      "relation_kind": "company_board",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "CHTEAM"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "p0012",
+      "organization_id": "CH",
+      "role": "Director and secretary",
+      "relation_kind": "registered_office",
+      "when": "registered 5 Aug 2021; published 16 Aug 2021",
+      "sources": [
+        "BORME2021CH"
+      ],
+      "status": "historical_registered_office"
+    },
+    {
+      "person_id": "obs-angel-medina",
+      "organization_id": "RICPE",
+      "role": "President",
+      "relation_kind": "historical_company_board",
+      "when": "FY2025 board; previous appointments cancelled 29 Oct 2026",
+      "sources": [
+        "RICBOARD",
+        "CNMV2025",
+        "BORME2026"
+      ],
+      "status": "historical_superseded_by_official_2026_act",
+      "valid_to": "2026-10-29",
+      "source_as_of": "2025-12-31"
+    },
+    {
+      "person_id": "obs-jesus-diaz",
+      "organization_id": "RICPE",
+      "role": "First vice-president",
+      "relation_kind": "historical_company_board",
+      "when": "FY2025 board; previous appointments cancelled 29 Oct 2026",
+      "sources": [
+        "RICBOARD",
+        "CNMV2025",
+        "BORME2026"
+      ],
+      "status": "historical_superseded_by_official_2026_act",
+      "valid_to": "2026-10-29",
+      "source_as_of": "2025-12-31"
+    },
+    {
+      "person_id": "obs-modesto-campos",
+      "organization_id": "RICPE",
+      "role": "Second vice-president",
+      "relation_kind": "historical_company_board",
+      "when": "FY2025 board; previous appointments cancelled 29 Oct 2026",
+      "sources": [
+        "RICBOARD",
+        "CNMV2025",
+        "BORME2026"
+      ],
+      "status": "historical_superseded_by_official_2026_act",
+      "valid_to": "2026-10-29",
+      "source_as_of": "2025-12-31"
+    },
+    {
+      "person_id": "obs-francisco-lopez",
+      "organization_id": "RICPE",
+      "role": "Director",
+      "relation_kind": "historical_company_board",
+      "when": "FY2025 board; previous appointments cancelled 29 Oct 2026",
+      "sources": [
+        "RICBOARD",
+        "CNMV2025",
+        "BORME2026"
+      ],
+      "status": "historical_superseded_by_official_2026_act",
+      "valid_to": "2026-10-29",
+      "source_as_of": "2025-12-31"
+    },
+    {
+      "person_id": "obs-jose-lopez",
+      "organization_id": "RICPE",
+      "role": "Director",
+      "relation_kind": "historical_company_board",
+      "when": "FY2025 board; previous appointments cancelled 29 Oct 2026",
+      "sources": [
+        "RICBOARD",
+        "CNMV2025",
+        "BORME2026"
+      ],
+      "status": "historical_superseded_by_official_2026_act",
+      "valid_to": "2026-10-29",
+      "source_as_of": "2025-12-31"
+    },
+    {
+      "person_id": "obs-heriberto-etala",
+      "organization_id": "RICPE",
+      "role": "Director",
+      "relation_kind": "historical_company_board",
+      "when": "FY2025 board; previous appointments cancelled 29 Oct 2026",
+      "sources": [
+        "RICBOARD",
+        "CNMV2025",
+        "BORME2026"
+      ],
+      "status": "historical_superseded_by_official_2026_act",
+      "valid_to": "2026-10-29",
+      "source_as_of": "2025-12-31"
+    },
+    {
+      "person_id": "obs-santiago-mederos",
+      "organization_id": "RICPE",
+      "role": "Director",
+      "relation_kind": "historical_company_board",
+      "when": "FY2025 board; previous appointments cancelled 29 Oct 2026",
+      "sources": [
+        "RICBOARD",
+        "CNMV2025",
+        "BORME2026"
+      ],
+      "status": "historical_superseded_by_official_2026_act",
+      "valid_to": "2026-10-29",
+      "source_as_of": "2025-12-31"
+    },
+    {
+      "person_id": "obs-jose-matos",
+      "organization_id": "RICPE",
+      "role": "Director",
+      "relation_kind": "historical_company_board",
+      "when": "FY2025 board; previous appointments cancelled 29 Oct 2026",
+      "sources": [
+        "RICBOARD",
+        "CNMV2025",
+        "BORME2026"
+      ],
+      "status": "historical_superseded_by_official_2026_act",
+      "valid_to": "2026-10-29",
+      "source_as_of": "2025-12-31"
+    },
+    {
+      "person_id": "obs-dunia-perez",
+      "organization_id": "RICPE",
+      "role": "Director",
+      "relation_kind": "historical_company_board",
+      "when": "FY2025 board; previous appointments cancelled 29 Oct 2026",
+      "sources": [
+        "RICBOARD",
+        "CNMV2025",
+        "BORME2026"
+      ],
+      "status": "historical_superseded_by_official_2026_act",
+      "valid_to": "2026-10-29",
+      "source_as_of": "2025-12-31"
+    },
+    {
+      "person_id": "obs-juan-perez",
+      "organization_id": "RICPE",
+      "role": "Director",
+      "relation_kind": "historical_company_board",
+      "when": "FY2025 board; previous appointments cancelled 29 Oct 2026",
+      "sources": [
+        "RICBOARD",
+        "CNMV2025",
+        "BORME2026"
+      ],
+      "status": "historical_superseded_by_official_2026_act",
+      "valid_to": "2026-10-29",
+      "source_as_of": "2025-12-31"
+    },
+    {
+      "person_id": "obs-carmelo-ramos",
+      "organization_id": "RICPE",
+      "role": "Director",
+      "relation_kind": "historical_company_board",
+      "when": "FY2025 board; previous appointments cancelled 29 Oct 2026",
+      "sources": [
+        "RICBOARD",
+        "CNMV2025",
+        "BORME2026"
+      ],
+      "status": "historical_superseded_by_official_2026_act",
+      "valid_to": "2026-10-29",
+      "source_as_of": "2025-12-31"
+    },
+    {
+      "person_id": "p0162",
+      "organization_id": "RICPE",
+      "role": "General director; secretary & legal adviser",
+      "relation_kind": "executive_and_non_director_secretary",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "RICBOARD",
+        "RICTEAM",
+        "CNMV2025"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-juan-francisco-falcon",
+      "organization_id": "RICPE",
+      "role": "First deputy secretary",
+      "relation_kind": "non_director_officer",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "RICBOARD"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-orlando-lujan",
+      "organization_id": "RICPE",
+      "role": "Second deputy secretary",
+      "relation_kind": "non_director_officer",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "RICBOARD"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-murli-kessomal-kaknani",
+      "organization_id": "RICPE",
+      "role": "Third deputy secretary",
+      "relation_kind": "non_director_officer",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "RICBOARD"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-enrique-quevedo",
+      "organization_id": "RICPE",
+      "role": "Operations, HR & compliance director",
+      "relation_kind": "company_published_management",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "RICTEAM"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-juan-millet",
+      "organization_id": "RICPE",
+      "role": "Investments director",
+      "relation_kind": "company_published_management",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "RICTEAM"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-ariel-martin",
+      "organization_id": "RICPE",
+      "role": "Finance & administration director",
+      "relation_kind": "company_published_management",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "RICTEAM"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-idania-monzon",
+      "organization_id": "RICPE",
+      "role": "Accounting & administration",
+      "relation_kind": "company_published_management",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "RICTEAM"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-sergio-rodriguez",
+      "organization_id": "RICPE",
+      "role": "Investments & administration",
+      "relation_kind": "historical_team",
+      "when": "2022–2023",
+      "sources": [
+        "RIC2022"
+      ],
+      "status": "historical_source_qualified"
+    },
+    {
+      "person_id": "obs-alejandro-leon",
+      "organization_id": "RICPE",
+      "role": "Investor relations",
+      "relation_kind": "historical_team",
+      "when": "2022–2023",
+      "sources": [
+        "RIC2022"
+      ],
+      "status": "historical_source_qualified"
+    },
+    {
+      "person_id": "obs-priscila-briganti",
+      "organization_id": "RICPE",
+      "role": "IT & business intelligence",
+      "relation_kind": "historical_team",
+      "when": "2022–2023",
+      "sources": [
+        "RIC2022"
+      ],
+      "status": "historical_source_qualified"
+    },
+    {
+      "person_id": "obs-juan-jose-vera",
+      "organization_id": "RICPE",
+      "role": "External investment professional",
+      "relation_kind": "external_professional",
+      "when": "2022–2023",
+      "sources": [
+        "RIC2022"
+      ],
+      "status": "historical_source_qualified"
+    },
+    {
+      "person_id": "obs-francisco-fernandez",
+      "organization_id": "CH",
+      "role": "CEO / managing partner",
+      "relation_kind": "company_published_management",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "CHTEAM"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-oscar-palacios",
+      "organization_id": "CH",
+      "role": "Chief development officer / managing partner",
+      "relation_kind": "company_published_management",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "CHTEAM"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-alejandro-paez",
+      "organization_id": "CH",
+      "role": "Chief commercial officer / managing partner",
+      "relation_kind": "company_published_management",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "CHTEAM"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-sangeeta-sagrani",
+      "organization_id": "CH",
+      "role": "Finance director",
+      "relation_kind": "company_published_management",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "CHTEAM"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-maria-isabel-almandoz-redneris",
+      "organization_id": "CH",
+      "role": "HR senior adviser",
+      "relation_kind": "company_published_management",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "CHTEAM"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-raquel-suarez-benitez",
+      "organization_id": "CH",
+      "role": "Director of own-brand operations",
+      "relation_kind": "company_published_management",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "CHTEAM"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-francisco-manuel-molinero",
+      "organization_id": "CH",
+      "role": "Corporate executive chef",
+      "relation_kind": "company_published_management",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "CHTEAM"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-lourdes-castillejo-trenas",
+      "organization_id": "CH",
+      "role": "Revenue management director",
+      "relation_kind": "company_published_management",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "CHTEAM"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-miriam-rodriguez-garcia",
+      "organization_id": "CH",
+      "role": "Administration director",
+      "relation_kind": "company_published_management",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "CHTEAM"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-sergi-gutes-segarra",
+      "organization_id": "CH",
+      "role": "Head of purchasing",
+      "relation_kind": "company_published_management",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "CHTEAM"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-elena-garcia-bernal",
+      "organization_id": "CH",
+      "role": "Marketing manager",
+      "relation_kind": "company_published_management",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "CHTEAM"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-javier-perez",
+      "organization_id": "CH",
+      "role": "Sales director",
+      "relation_kind": "company_published_management",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "CHTEAM"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-francisco-ruiz",
+      "organization_id": "CH",
+      "role": "Processes, organisation and planning director",
+      "relation_kind": "company_published_management",
+      "when": "observed 20 Nov 2026",
+      "sources": [
+        "CHTEAM"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-teodoro-gonzalez-dorta",
+      "organization_id": "CH",
+      "role": "Administration director",
+      "relation_kind": "historical_company_people",
+      "when": "2024",
+      "sources": [
+        "ARCHIVE_CH24"
+      ],
+      "status": "historical_company_published"
+    },
+    {
+      "person_id": "obs-daniel-garcia-viso",
+      "organization_id": "CH",
+      "role": "E-commerce director",
+      "relation_kind": "historical_company_people",
+      "when": "2024",
+      "sources": [
+        "ARCHIVE_CH24"
+      ],
+      "status": "historical_company_published"
+    },
+    {
+      "person_id": "obs-borja-suaza",
+      "organization_id": "CH",
+      "role": "MYND Adeje director",
+      "relation_kind": "historical_company_people",
+      "when": "2024",
+      "sources": [
+        "ARCHIVE_CH24"
+      ],
+      "status": "historical_company_published"
+    },
+    {
+      "person_id": "obs-william-rojas",
+      "organization_id": "CH",
+      "role": "MYND Yaiza director",
+      "relation_kind": "historical_company_people",
+      "when": "2024",
+      "sources": [
+        "ARCHIVE_CH24"
+      ],
+      "status": "historical_company_published"
+    },
+    {
+      "person_id": "obs-antonio-alvarez-d-incomplete",
+      "organization_id": "CH",
+      "role": "Provisional Management & Guest Relations at LACASA Cotillo; name incomplete",
+      "relation_kind": "historical_company_people",
+      "when": "2024",
+      "sources": [
+        "ARCHIVE_CH24"
+      ],
+      "status": "historical_company_published"
+    },
+    {
+      "person_id": "obs-gerard-rosania",
+      "organization_id": "CH",
+      "role": "Sholeo Los Gigantes director",
+      "relation_kind": "historical_company_people",
+      "when": "2024",
+      "sources": [
+        "ARCHIVE_CH24"
+      ],
+      "status": "historical_company_published"
+    },
+    {
+      "person_id": "obs-mario-fija-kowski",
+      "organization_id": "CH",
+      "role": "Radisson Blu Lanzarote director",
+      "relation_kind": "historical_company_people",
+      "when": "2024",
+      "sources": [
+        "ARCHIVE_CH24"
+      ],
+      "status": "historical_company_published"
+    },
+    {
+      "person_id": "p0088",
+      "organization_id": "GAM",
+      "role": "Reported corporate law placement",
+      "relation_kind": "profile_reported_placement",
+      "when": "2023",
+      "sources": [
+        "PROFILE_FAG"
+      ],
+      "status": "profile_capture_not_employer_confirmed"
+    },
+    {
+      "person_id": "p0088",
+      "organization_id": "RICPE",
+      "role": "Reported investments/structuring placement",
+      "relation_kind": "profile_reported_placement",
+      "when": "2024",
+      "sources": [
+        "PROFILE_FAG"
+      ],
+      "status": "profile_capture_not_employer_confirmed"
+    },
+    {
+      "person_id": "p0088",
+      "organization_id": "ACHM",
+      "role": "Reported hotel-sector legal advisory",
+      "relation_kind": "profile_reported_placement",
+      "when": "2025",
+      "sources": [
+        "PROFILE_FAG"
+      ],
+      "status": "profile_capture_not_employer_confirmed"
+    },
+    {
+      "person_id": "p0088",
+      "organization_id": "COL",
+      "role": "Debt Advisory",
+      "relation_kind": "profile_reported_placement",
+      "when": "2026",
+      "sources": [
+        "PROFILE_FAG"
+      ],
+      "status": "profile_capture_not_employer_confirmed"
+    },
+    {
+      "person_id": "p0095",
+      "organization_id": "CH",
+      "role": "Reported summer internship including MYND Yaiza/Radisson Blu Lanzarote controllers and legal department",
+      "relation_kind": "profile_reported_placement",
+      "when": "Jul–Aug 2024",
+      "sources": [
+        "PROFILE_LAA"
+      ],
+      "status": "profile_capture_not_employer_confirmed"
+    },
+    {
+      "person_id": "p0009",
+      "organization_id": "ORION",
+      "role": "Director",
+      "relation_kind": "registered_office",
+      "when": "registered 2 Apr 2024; published 9 Apr 2024",
+      "sources": [
+        "BORME2024ORION"
+      ],
+      "status": "historical_registered_office"
+    },
+    {
+      "person_id": "obs-lucia-maria-del-pilar-matos-gonzalez",
+      "organization_id": "CAMSA",
+      "role": "Historic company administrator; relationship to founder unverified",
+      "relation_kind": "historical_governance",
+      "when": "historic",
+      "sources": [
+        "FAMILY"
+      ],
+      "status": "needs_primary_company_act"
+    },
+    {
+      "person_id": "obs-angel-medina",
+      "organization_id": "RICPE",
+      "role": "President",
+      "relation_kind": "registered_board",
+      "when": "registered 29 Oct 2026; published 6 Nov 2026",
+      "valid_from": "2026-10-29",
+      "source_published_at": "2026-11-06",
+      "sources": [
+        "BORME2026"
+      ],
+      "status": "official_registered_act"
+    },
+    {
+      "person_id": "obs-jesus-diaz",
+      "organization_id": "RICPE",
+      "role": "Vice-president",
+      "relation_kind": "registered_board",
+      "when": "registered 29 Oct 2026; published 6 Nov 2026",
+      "valid_from": "2026-10-29",
+      "source_published_at": "2026-11-06",
+      "sources": [
+        "BORME2026"
+      ],
+      "status": "official_registered_act"
+    },
+    {
+      "person_id": "obs-modesto-campos",
+      "organization_id": "RICPE",
+      "role": "Director",
+      "relation_kind": "registered_board",
+      "when": "registered 29 Oct 2026; published 6 Nov 2026",
+      "valid_from": "2026-10-29",
+      "source_published_at": "2026-11-06",
+      "sources": [
+        "BORME2026"
+      ],
+      "status": "official_registered_act"
+    },
+    {
+      "person_id": "p0011",
+      "organization_id": "RICPE",
+      "role": "Director",
+      "relation_kind": "registered_board",
+      "when": "registered 29 Oct 2026; published 6 Nov 2026",
+      "valid_from": "2026-10-29",
+      "source_published_at": "2026-11-06",
+      "sources": [
+        "BORME2026"
+      ],
+      "status": "official_registered_act"
+    }
+  ],
+  "documented_family_edges": [
+    {
+      "from": "p0013",
+      "to": "p0011",
+      "kind": "parent_child",
+      "status": "family_dossier_corroborated",
+      "sources": [
+        "FAMILY"
+      ]
+    },
+    {
+      "from": "p0013",
+      "to": "p0012",
+      "kind": "parent_child",
+      "status": "family_dossier_corroborated",
+      "sources": [
+        "FAMILY"
+      ]
+    },
+    {
+      "from": "p0013",
+      "to": "p0094",
+      "kind": "parent_child",
+      "status": "family_dossier_corroborated",
+      "sources": [
+        "FAMILY"
+      ]
+    },
+    {
+      "from": "p0013",
+      "to": "p0093",
+      "kind": "parent_child",
+      "status": "family_dossier_corroborated",
+      "sources": [
+        "FAMILY"
+      ]
+    }
+  ],
+  "organisation_edges": [
+    {
+      "from": "CAMSA",
+      "to": "GAM",
+      "kind": "2024_demerge_beneficiary",
+      "sources": [
+        "BORME30",
+        "BORME72"
+      ],
+      "when": "registered 02 Feb 2024",
+      "status": "official"
+    },
+    {
+      "from": "CAMSA",
+      "to": "GPAM",
+      "kind": "2024_demerge_beneficiary",
+      "sources": [
+        "BORME30",
+        "BORME72"
+      ],
+      "when": "registered 02 Feb 2024",
+      "status": "official"
+    },
+    {
+      "from": "CAMSA",
+      "to": "CAMSL",
+      "kind": "2024_demerge_beneficiary",
+      "sources": [
+        "BORME30",
+        "BORME72"
+      ],
+      "when": "registered 02 Feb 2024",
+      "status": "official"
+    },
+    {
+      "from": "CAMSA",
+      "to": "PROM",
+      "kind": "2024_demerge_beneficiary",
+      "sources": [
+        "BORME30",
+        "BORME72"
+      ],
+      "when": "registered 02 Feb 2024",
+      "status": "official"
+    },
+    {
+      "from": "CAMSA",
+      "to": "HCA",
+      "kind": "2024_demerge_beneficiary",
+      "sources": [
+        "BORME30",
+        "BORME72"
+      ],
+      "when": "registered 02 Feb 2024",
+      "status": "official"
+    },
+    {
+      "from": "GPAM",
+      "to": "HNT",
+      "kind": "sole_shareholder_2024_registered",
+      "sources": [
+        "BORME122",
+        "CNMV2025"
+      ],
+      "when": "sole shareholder registered 19 Jun 2024; FY2025 accounts report 100%",
+      "status": "official_2024_and_audited_2025_not_current_equity_certificate",
+      "relation_type": "equity"
+    },
+    {
+      "from": "HNT",
+      "to": "MYND",
+      "kind": "project_company_to_hotel_brand",
+      "sources": [
+        "FAMILY"
+      ],
+      "when": "post 2022",
+      "status": "repository_dossier_source_qualified",
+      "relation_type": "project_or_brand"
+    },
+    {
+      "from": "RICPE",
+      "to": "HNT",
+      "kind": "participative_financing_2025_accounts",
+      "sources": [
+        "CNMV2025LOANS"
+      ],
+      "when": "two loan lines, 2022 and 2023; reported 31 Dec 2025",
+      "status": "audited_historical_financing_not_equity",
+      "relation_type": "financing"
+    }
+  ],
+  "excluded_inferences": [
+    "No Fernando/Laura Aguiar Acosta family edge until credible primary evidence; existing attribution remains solely in confidential master",
+    "No direct Laura Aguiar employment by RICPE established",
+    "No unrecorded personal work on Sun Park by Fernando Aguiar established",
+    "RICPE investment links are not automatically equity or employment links",
+    "No guilt, knowledge, agreement, intent or control inferred from surname, photograph, role or professional network",
+    "No claim this named directory is a census of all employees",
+    "Do not merge José Matos with José Acosta / José Daniel Acosta Matos",
+    "Do not merge Francisco Mario Matos Matas with the Acosta Matos family",
+    "One of four newly registered directors is not a 25% voting-equity stake or proof of actual control."
+  ],
+  "proof_gaps": [
+    "Aguiar-to-Acosta kinship unresolved",
+    "Historic payrolls not accessible",
+    "No verified complete hotel-by-hotel staff census",
+    "2024 hotel directors not independently rechecked as current",
+    "Current RICPE published team 5 names vs reported six FY2025 staff slots does not name sixth person",
+    "Tenerife project 5% / 20% disclosure inconsistency requires company/date reconciliation",
+    "2024 historic demerger asset allocation beyond listed beneficiaries requires deed annexes",
+    "Later 2026 RICPE appointment acts, voting powers, statutes and meeting minutes are not verified by the located 29 Oct act.",
+    "Two internal-registry-only professional associations withheld from this public projection pending direct role/identity source review; canonical private identity records retained."
+  ],
+  "audit": {
+    "person_count": 52,
+    "role_count": 66,
+    "org_count": 14,
+    "parent_child_edges": 4,
+    "organisation_edges": 8,
+    "source_count": 19,
+    "registered_2026_board_members": 4,
+    "historical_2025_board_members": 12
+  },
+  "ricpe_headcount": {
+    "entity": "RICPE",
+    "source": "CNMV2025",
+    "as_of": "31 Dec 2025",
+    "employees_end_year": 6,
+    "mean_employees_2025": 5.5,
+    "management_named_on_website": 5,
+    "scope": "Entity direct staff; excludes non-employee board, external professionals, placements and hotel operator payroll."
+  },
+  "board_views": [
+    {
+      "id": "registered_2026",
+      "as_of": "2026-11-20",
+      "act_date": "2026-10-29",
+      "publication_date": "2026-11-06",
+      "source": "BORME2026",
+      "relation_kind": "registered_board",
+      "expected_people": 4,
+      "scope": "Latest located registered appointment act; later changes and voting powers require verification."
+    },
+    {
+      "id": "historical_2025",
+      "as_of": "2025-12-31",
+      "source": "CNMV2025",
+      "relation_kind": "historical_company_board",
+      "expected_people": 12,
+      "scope": "Historic board list in FY2025 accounts; the appointments were cancelled in the 29 Oct 2026 act."
+    }
+  ]
+}
