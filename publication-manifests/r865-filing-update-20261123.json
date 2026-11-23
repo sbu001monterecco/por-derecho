@@ -1,0 +1,54 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-R865-FILING-PUBLIC-SUMMARY-20261123",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-11-23",
+  "current_state": "DRAFT",
+  "source_base_sha": "86a1922c68d01518c270fe9217b92b1a5b249c1d",
+  "purpose": "Add the receipt-verified 23 November filing while preserving the 5 October outcome and all earlier canonical events.",
+  "expected_routes": {
+    "es": [
+      "es/reconstruccion-forense/index.html"
+    ],
+    "en": [
+      "en/forensic-accountability/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "ops/continuity/R865_2026_REGAGE_FILED_CANON_AUDIT_20261123.json",
+    "ops/continuity/R865_2026_REGAGE_FILED_CANON_AUDIT_20261123.md",
+    "scripts/load_r865_filing_20261123.py",
+    "scripts/reconcile_institutional_communications.py",
+    "scripts/validate_institutional_communications.py",
+    "scripts/build_redsara_age_filings_register.py",
+    "scripts/validate_redsara_authority_discovery.py",
+    "assets/data/institutional-communications-register-v1.json",
+    "assets/data/redsara-age-filings-register-v1.json",
+    "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json",
+    "scripts/build_fiscalia_proceedings_interconnectivity.py",
+    "scripts/validate_fiscalia_proceedings_interconnectivity.py",
+    "scripts/test_build_fiscalia_proceedings_interconnectivity.py",
+    "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+    "assets/data/community-acta-authority-interconnectivity-v1.json"
+  ],
+  "public_safe_originals": "No native receipt, filed PDF, signature, personal identifier, registration identifier or private source locator included.",
+  "preservation_rule": "All 666 pre-existing events and both historical closure paragraphs must remain unchanged.",
+  "live_markers": [
+    "r865-update-20261123",
+    "PD-SP-EVT-0606",
+    "RDR2026000865"
+  ],
+  "unproven": [
+    "reopening",
+    "admission",
+    "incorporation",
+    "substantive examination",
+    "disclosure",
+    "merits decision"
+  ],
+  "validation": {
+    "status": "PENDING_INTEGRATION",
+    "no_ci_or_deployment_claim": true
+  }
+}

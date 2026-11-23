@@ -44,13 +44,13 @@
     "The caret marker remains identity-only; communication events receive stable IDs and bilingual anchors, never presentation carets.",
     "Criminal relevance may be linked as an open hypothesis, but criminal responsibility never transfers through an ACTA, communication, referral, office or institutional tier."
   ],
-  "control_date": "2026-10-25",
+  "control_date": "2026-11-23",
   "denominator_control": {
     "arithmetic_check": "Historical control: 75 detailed + 22 metadata-only = 97 reported total. Current 21-Sep status export: 398 distinct REGAGE rows (114 formal-event identities reused, including 22 receipt-controlled identities added in this release; 284 status-only rows added).",
-    "curated_source_proved_events": 435,
+    "curated_source_proved_events": 436,
     "detailed_baseline_receipt_rows_expected": 75,
     "detailed_baseline_receipt_rows_registered": 75,
-    "event_rows_total": 666,
+    "event_rows_total": 667,
     "mailbox_draft_rows": 3,
     "mailbox_inbound_email_rows": 101,
     "mailbox_outbound_email_rows": 42,
@@ -24122,6 +24122,62 @@
       "source_key": "REGISTERED-20261025:REGAGE26e00091804303",
       "source_pages": "1-2",
       "source_timezone": "NOT_STATED; printed electronic-headquarters times retained without offset conversion",
+      "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
+    },
+    {
+      "annex_count": 5,
+      "attribution_state": "NO_PERSON_ATTRIBUTED_IN_PUBLIC_REGISTER",
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0606",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0606",
+      "channel": "REGAGE",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "criminal_responsibility_transfer": false,
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "does_not_prove": [
+        "The filing does not itself establish reopening, admission, incorporation, examination, disclosure, acceptance of allegations or a decision on the merits. The 5 October withdrawal/archive remains historical evidence."
+      ],
+      "does_not_prove_es": "El registro no acredita por sí solo reapertura, admisión, incorporación, examen, entrega de información, aceptación de alegaciones ni decisión de fondo. El desistimiento y archivo de 5 de octubre se conserva como antecedente.",
+      "event_date": "2026-11-23",
+      "event_id": "PD-SP-EVT-0606",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "layer": "FORMAL_REGISTRATION",
+      "linked_transport_event_ids": [],
+      "master_ids": [
+        "LZ-TRA-028"
+      ],
+      "master_link_state": "RESOLVED",
+      "matter_references": [
+        "R865/2026 / RDR2026000865",
+        "LZ-TRA-028",
+        "PD-WS-20260901-0002"
+      ],
+      "office": "Comisionado de Transparencia y Acceso a la Información Pública",
+      "official_reference": "R865/2026 / RDR2026000865",
+      "proof_level": "REGISTRATION_RECEIPT_VERIFIED_AND_ATTACHMENT_HASHES_VERIFIED",
+      "proves": [
+        "On 23 November 2026 a submission was registered in the R865/2026 access matter after the further ten-working-day opportunity stated in legal ground IV of RDR2026000865. The official receipt and all five submitted PDF fingerprints were verified; the package contains 40 pages.",
+        "The exact registration identifier and original receipt remain in authorised private custody; the opaque public source key is not a replacement official registration number."
+      ],
+      "proves_es": "El 23 de noviembre de 2026 se registró una aportación en el expediente de acceso R865/2026 tras la nueva oportunidad de diez días hábiles recogida en el fundamento jurídico IV de RDR2026000865. Se verificaron el justificante oficial y las huellas de los cinco PDF presentados; el conjunto contiene 40 páginas. El identificador registral exacto y el justificante original permanecen en custodia privada; la referencia pública opaca no sustituye el número oficial.",
+      "public_derivative_state": "PUBLIC_SAFE_MINIMISED_DERIVATIVE",
+      "public_summary": "On 23 November 2026 a submission was registered in the R865/2026 access matter after the further ten-working-day opportunity stated in legal ground IV of RDR2026000865. The official receipt and all five submitted PDF fingerprints were verified; the package contains 40 pages.",
+      "public_summary_es": "El 23 de noviembre de 2026 se registró una aportación en el expediente de acceso R865/2026 tras la nueva oportunidad de diez días hábiles recogida en el fundamento jurídico IV de RDR2026000865. Se verificaron el justificante oficial y las huellas de los cinco PDF presentados; el conjunto contiene 40 páginas.",
+      "record_type": "REGISTRATION_RECEIPT",
+      "source_integrity": {
+        "repository_anchor": "ops/continuity/R865_2026_REGAGE_FILED_CANON_AUDIT_20261123.json",
+        "sha256": "c0f01ec427bc89efdc955a2f2421a964ec2f608e10c824612eeb38386d23014c",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      },
+      "source_key": "REGISTERED-R865-20261123:R865-FILING-20261123",
       "transport_link_state": "REGISTRATION_RECEIPT_SEPARATE_FROM_ANY_EMAIL_TRANSPORT"
     },
     {

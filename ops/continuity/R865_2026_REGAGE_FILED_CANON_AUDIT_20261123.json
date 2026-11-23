@@ -1,0 +1,76 @@
+{
+  "schema": "por-derecho.r865-filing-canon-audit.v1",
+  "control_id": "PD-CANON-AUDIT-20261024-001/R865-REGAGE-20261123-01",
+  "control_date": "2026-11-23",
+  "scope": "Public-safe preservation of the 23 November filing in the existing Canary transparency matter; this is a source descriptor and audit pointer, not a parallel event register.",
+  "public_projection": true,
+  "master_id": "LZ-TRA-028",
+  "workspace_id": "PD-WS-20260901-0002",
+  "historical_event_ids": [
+    "PD-SP-EVT-0469",
+    "PD-SP-EVT-0485",
+    "PD-SP-EVT-0145"
+  ],
+  "historical_outcome": {
+    "date": "2026-10-05",
+    "state": "WITHDRAWAL_AND_ARCHIVE_RETAINED_AS_HISTORICAL_OUTCOME",
+    "public_resolution": "https://transparenciacanarias.org/wp-content/uploads/2026/11/50.01-R865_2026-ANONIMIZADA.pdf",
+    "source_text_preservation": "The existing historical paragraphs in both forensic guides remain unchanged."
+  },
+  "continuation": {
+    "review_date": "2026-11-23",
+    "reference": "RDR2026000865",
+    "passage": "FUNDAMENTO_JURIDICO_IV",
+    "further_opportunity_working_days": 10,
+    "deadline_computed": false,
+    "receipt_date_is_not_asserted_to_be_decision_signature_date": true
+  },
+  "verification": {
+    "official_registration_receipt_reviewed": true,
+    "filed_pdf_count": 5,
+    "filed_pdf_pages": 40,
+    "attachment_fingerprints_exact_matches": 5,
+    "private_source_artifacts_readback_verified": 7,
+    "native_source_location": "AUTHORISED_PRIVATE_CUSTODY",
+    "public_native_binaries": false
+  },
+  "status_at_preparation": {
+    "overall": "AMBER",
+    "components": {
+      "receipt_and_submitted_attachment_verification": "GREEN",
+      "private_source_custody_and_readback": "GREEN",
+      "public_repository_integration_and_live_readback": "AMBER_PENDING",
+      "subsequent_authority_response": "AMBER_NOT_YET_ESTABLISHED"
+    },
+    "meaning": "Operational preservation status only; no finding on legal merits. This preparation snapshot is not a merge, deployment or deletion-safety certificate."
+  },
+  "items": [
+    {
+      "source_key": "R865-FILING-20261123",
+      "event_id": "PD-SP-EVT-0606",
+      "date": "2026-11-23",
+      "reference": "R865/2026 / RDR2026000865",
+      "office": "Comisionado de Transparencia y Acceso a la Información Pública",
+      "master_id": "LZ-TRA-028",
+      "workspace_id": "PD-WS-20260901-0002",
+      "attachment_count": 5,
+      "attachment_pages": 40,
+      "attachment_hashes_verified": true,
+      "purpose_en": "On 23 November 2026 a submission was registered in the R865/2026 access matter after the further ten-working-day opportunity stated in legal ground IV of RDR2026000865. The official receipt and all five submitted PDF fingerprints were verified; the package contains 40 pages.",
+      "purpose_es": "El 23 de noviembre de 2026 se registró una aportación en el expediente de acceso R865/2026 tras la nueva oportunidad de diez días hábiles recogida en el fundamento jurídico IV de RDR2026000865. Se verificaron el justificante oficial y las huellas de los cinco PDF presentados; el conjunto contiene 40 páginas."
+    }
+  ],
+  "boundaries": [
+    "The filing does not itself establish reopening, admission, incorporation, examination, disclosure or a merits decision.",
+    "The 5 October withdrawal/archive remains part of the chronology and is not erased by the later filing.",
+    "The public filing source key is opaque; the actual registration identifier, receipt verification code, personal identifiers, addresses, signatures, private locators and original filenames remain private.",
+    "Earlier dated preservation records remain historical provenance; this addendum does not certify universal completeness or global host parity."
+  ],
+  "canonical_register": "assets/data/institutional-communications-register-v1.json",
+  "derived_projection": "assets/data/redsara-age-filings-register-v1.json",
+  "related_task_issue": "https://github.com/sbu001monterecco/por-derecho/issues/938",
+  "reader_routes": {
+    "es": "es/reconstruccion-forense/index.html#r865-update-20261123",
+    "en": "en/forensic-accountability/index.html#r865-update-20261123"
+  }
+}

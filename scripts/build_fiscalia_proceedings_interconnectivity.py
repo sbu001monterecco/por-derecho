@@ -25,6 +25,12 @@ from load_madrid_ctbg_filings_20261025 import (
     SOURCE_PREFIX as OCTOBER_SOURCE_PREFIX,
     load_filing_events as load_october_filing_events,
 )
+from load_r865_filing_20261123 import (
+    CONTROL as R865_CONTROL,
+    INPUT as R865_INPUT,
+    SOURCE_PREFIX as R865_SOURCE_PREFIX,
+    load_filing_events as load_r865_filing_events,
+)
 from reconcile_institutional_communications import RECEIPT_BOUNDARY
 
 
@@ -52,6 +58,10 @@ OCTOBER_MAPPING_STATE = "FISCALIA_AND_TRANSPARENCY_PROCEEDING_ALLOCATION_UNRESOL
 OCTOBER_MAPPING_BOUNDARY = {
     "en": "The receipt and project document references do not allocate a canonical Fiscalía or transparency proceeding identity. Any exact public-aid file link is context only; it does not establish incorporation, joinder, examination or a prosecution file number.",
     "es": "El justificante y las referencias documentales del proyecto no asignan una identidad canónica de procedimiento de Fiscalía ni de transparencia. Todo enlace exacto al expediente de ayudas es solo contextual; no acredita incorporación, acumulación, examen ni número de expediente fiscal.",
+}
+R865_EXCLUSION_BOUNDARY = {
+    "en": "This source-verified R865 transparency filing remains in the canonical communications and RedSARA registers. It does not allocate a prosecution proceeding and is excluded from this specialist Fiscalía graph; the exclusion does not negate filing or establish reopening, admission, examination or merits.",
+    "es": "La presentación de transparencia R865 verificada con su fuente permanece en los registros canónicos de comunicaciones y RedSARA. No asigna un procedimiento fiscal y se excluye de este grafo especializado de Fiscalía; la exclusión no niega la presentación ni acredita reapertura, admisión, examen o fondo.",
 }
 
 
@@ -95,6 +105,26 @@ def validated_october_filing_event_ids(events: list[dict[str, Any]], root: Path)
     actual = {event["event_id"]: event for event in actual_rows}
     if len(actual_rows) != len(expected) or len(actual) != len(expected) or actual != expected:
         raise ValueError("October filing source cohort mismatch; reconcile the six controlled receipt events")
+    return set(expected)
+
+
+def validated_r865_filing_event_ids(events: list[dict[str, Any]], root: Path) -> set[str]:
+    """Exclude only the complete, source-verified R865 transparency event.
+
+    Check the ID, source prefix and public proceeding reference independently
+    so a mutated or duplicated row cannot silently change the specialist scope.
+    """
+    expected = {event["event_id"]: event for event in load_r865_filing_events(root, RECEIPT_BOUNDARY)}
+    references = {event["official_reference"] for event in expected.values()}
+    actual_rows = [
+        event for event in events
+        if str(event.get("source_key", "")).startswith(R865_SOURCE_PREFIX)
+        or event.get("event_id") in expected
+        or event.get("official_reference") in references
+    ]
+    actual = {event["event_id"]: event for event in actual_rows}
+    if len(expected) != 1 or len(actual_rows) != 1 or actual != expected:
+        raise ValueError("R865 filing source cohort mismatch; reconcile the one controlled transparency receipt event")
     return set(expected)
 
 
@@ -228,6 +258,11 @@ def build() -> dict[str, Any]:
     from prepare_platform_incibe_20260925 import validated_platform_event_ids
     platform_ids = validated_platform_event_ids(communications['events'], ROOT)
     non_fiscalia_notice_ids |= platform_ids
+    # R865 is a separately controlled transparency filing, with no allocated
+    # prosecution identity in this graph. Keep it in the canonical/RedSARA
+    # registers and validate its entire source object before this exclusion.
+    r865_ids = validated_r865_filing_event_ids(communications["events"], ROOT)
+    non_fiscalia_notice_ids |= r865_ids
     october_ids = validated_october_filing_event_ids(communications["events"], ROOT)
     events = [
         event
@@ -471,7 +506,7 @@ def build() -> dict[str, Any]:
     return {
         "schema_version": "1.0.0",
         "dataset": "fiscalia-proceedings-interconnectivity-v1",
-        "control_date": "2026-10-25",
+        "control_date": "2026-11-23",
         "status": "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION",
         "canonical_sources": {
             "communications_register": str(COMMUNICATIONS.relative_to(ROOT)),
@@ -483,6 +518,15 @@ def build() -> dict[str, Any]:
             "link_assertions_sha256": sha256(ASSERTIONS),
         },
         "boundaries": assertions["boundaries"],
+        "excluded_r865_cohort_control": {
+            "control_id": R865_CONTROL,
+            "source_descriptor": R865_INPUT,
+            "source_descriptor_sha256": sha256(ROOT / R865_INPUT),
+            "event_ids": sorted(r865_ids),
+            "scope_state": "SOURCE_VERIFIED_TRANSPARENCY_FILING_NO_PROSECUTION_ALLOCATION",
+            "boundary_en": R865_EXCLUSION_BOUNDARY["en"],
+            "boundary_es": R865_EXCLUSION_BOUNDARY["es"],
+        },
         "october_cohort_control": {
             "control_id": OCTOBER_CONTROL,
             "source_descriptor": OCTOBER_INPUT,
@@ -496,6 +540,7 @@ def build() -> dict[str, Any]:
             "boundary_es": OCTOBER_MAPPING_BOUNDARY["es"],
         },
         "coverage": {
+            "excluded_r865_registered_events": len(r865_ids),
             "communication_events": len(projections),
             "matter_linked_events": sum(bool(e["matter_references"]) for e in projections),
             "legacy_communication_events": len(legacy_projections),

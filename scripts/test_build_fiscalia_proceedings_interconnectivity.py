@@ -16,6 +16,32 @@ import build_fiscalia_proceedings_interconnectivity as builder  # noqa: E402
 
 
 class FiscaliaInterconnectivityBuilderTest(unittest.TestCase):
+    def test_r865_cohort_is_source_checked_and_not_a_prosecution_filing(self):
+        events = json.loads(builder.COMMUNICATIONS.read_text())["events"]
+        cohort = builder.validated_r865_filing_event_ids(events, ROOT)
+        self.assertEqual(cohort, {"PD-SP-EVT-0606"})
+        payload = builder.build()
+        self.assertFalse(cohort & {event["event_id"] for event in payload["events"]})
+        self.assertEqual(payload["coverage"]["excluded_r865_registered_events"], 1)
+        self.assertEqual(payload["excluded_r865_cohort_control"]["event_ids"], sorted(cohort))
+        row = next(event for event in events if event["event_id"] in cohort)
+        changed = copy.deepcopy(events)
+        next(event for event in changed if event["event_id"] in cohort)["public_summary"] += " altered"
+        extra = copy.deepcopy(row)
+        extra["event_id"] = "PD-SP-EVT-0999"
+        prefix_changed = copy.deepcopy(events)
+        next(event for event in prefix_changed if event["event_id"] in cohort)["source_key"] = "UNREVIEWED"
+        for invalid in (
+            changed,
+            [event for event in events if event["event_id"] not in cohort],
+            events + [row],
+            events + [extra],
+            [event for event in events if event["event_id"] not in cohort] + [extra],
+            prefix_changed,
+        ):
+            with self.assertRaises(ValueError):
+                builder.validated_r865_filing_event_ids(invalid, ROOT)
+
     def test_platform_cohort_is_source_checked_and_not_a_fiscalia_filing(self):
         import copy
         import json
