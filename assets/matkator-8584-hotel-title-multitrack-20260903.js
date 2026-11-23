@@ -28,7 +28,7 @@
     'ricpe','ric-private-equity','feder','incentivos','intervencion','aeat','onif','cnmv',
     'fiscalia','eg-745','yaiza','asset-recovery','recuperacion-activos'
   ];
-  const isHome = /\/(?:por-derecho\/)?(?:es\/|en\/)?$/.test(path);
+  const isHome = /^\/(?:por-derecho\/)?(?:es\/|en\/)?$/.test(path);
   const isRelevant = exactRelevant.some(p => path.includes(p)) || relevantFragments.some(f => path.includes(f));
   if (!isHome && !isRelevant) return;
 

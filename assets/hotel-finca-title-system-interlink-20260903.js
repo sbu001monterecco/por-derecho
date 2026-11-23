@@ -24,7 +24,7 @@
     'intervencion','aeat','onif','cnmv','fiscalia','eg-745','yaiza','cabildo','recuperacion','asset-recovery',
     'digest-penal','criminal-digest','ingenieria-forense','criminal-engineering'
   ];
-  const isHome = /\/(?:por-derecho\/)?(?:es\/|en\/)?$/.test(path);
+  const isHome = /^\/(?:por-derecho\/)?(?:es\/|en\/)?$/.test(path);
   const relevant = isHome || exact.some(p => path.includes(p)) || fragments.some(f => path.includes(f));
   if (!relevant) return;
 

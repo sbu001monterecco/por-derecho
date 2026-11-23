@@ -81,17 +81,29 @@ def backlink(locale: str, route_id: str) -> str:
 
 
 def main() -> int:
-    pattern = re.compile(rf"\s*{re.escape(BEGIN)}.*?{re.escape(END)}", re.DOTALL)
+    # Rebuild a marked backlink at its existing position. Other reviewed
+    # supplements can follow it; moving the backlink past them changes pages
+    # that this generator does not own.
+    pattern = re.compile(rf"{re.escape(BEGIN)}.*?{re.escape(END)}", re.DOTALL)
     changed = 0
     for locale, routes in ROUTES.items():
         for route_id, relative in routes:
             path = ROOT / relative
             text = path.read_text(encoding="utf-8")
-            text = pattern.sub("", text)
             if text.count("</main>") != 1:
                 raise RuntimeError(f"{relative}: expected exactly one </main>")
-            rendered = text.replace("</main>", f"\n{backlink(locale, route_id)}\n</main>")
-            path.write_text(rendered, encoding="utf-8")
+            begins, ends = text.count(BEGIN), text.count(END)
+            matches = list(pattern.finditer(text))
+            if begins != ends or begins > 1 or len(matches) != begins:
+                raise RuntimeError(f"{relative}: malformed or duplicate backlink markers")
+            block = backlink(locale, route_id)
+            if matches:
+                match = matches[0]
+                rendered = text[:match.start()] + block + text[match.end():]
+            else:
+                rendered = text.replace("</main>", f"\n{block}\n</main>")
+            if rendered != text:
+                path.write_text(rendered, encoding="utf-8")
             changed += 1
     print(f"POST-7-JUNE RECIPROCAL ROUTE INTERLINKS: BUILT {changed} PAGES")
     return 0

@@ -2348,5 +2348,53 @@
       "Las Palmas correspondence",
       "Tenerife correspondence"
     ]
+  },
+  {
+    "lang": "en",
+    "path": "en/acosta-ricpe-people-network/",
+    "title": "Acosta Matos–RICPE people and corporate network",
+    "type": "institution",
+    "summary": "Dated, source-qualified family, professional, governance and corporate relationships; uncertain connections are labelled.",
+    "tags": [
+      "Acosta Matos",
+      "RICPE",
+      "Canarian Hospitality",
+      "family",
+      "directors",
+      "employees",
+      "Fernando Aguiar Acosta",
+      "Laura Aguiar Acosta"
+    ],
+    "aliases": [
+      "people graph",
+      "family tree",
+      "organogram",
+      "corporate network",
+      "board"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/acosta-ricpe-people-network/",
+    "title": "Red de personas y entidades Acosta Matos–RICPE",
+    "type": "institution",
+    "summary": "Relaciones familiares, profesionales, de gobierno y corporativas fechadas y vinculadas a fuentes; las conexiones inciertas se indican.",
+    "tags": [
+      "Acosta Matos",
+      "RICPE",
+      "Canarian Hospitality",
+      "familia",
+      "consejeros",
+      "empleados",
+      "Fernando Aguiar Acosta",
+      "Laura Aguiar Acosta"
+    ],
+    "aliases": [
+      "árbol familiar",
+      "organigrama",
+      "red de personas",
+      "red corporativa",
+      "consejo"
+    ]
   }
 ]
