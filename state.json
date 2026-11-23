@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 73,
   "owner": "2155:55c2192020d662293284e761adec7b78e3f0f772",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 2155,
   "base_sha": "86a1922c68d01518c270fe9217b92b1a5b249c1d",
   "candidate_sha": "55c2192020d662293284e761adec7b78e3f0f772",
@@ -3600,6 +3600,77 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 2155,
+      "candidate_sha": "55c2192020d662293284e761adec7b78e3f0f772",
+      "at": "2026-11-23T22:23:46.538161Z",
+      "merge_sha": "23ad923d426e73c6f677d9640a6c9ad63a578d0d",
+      "pages_run_id": 45279001781,
+      "exact_matches": [
+        {
+          "path": "assets/data/community-acta-authority-interconnectivity-v1.json",
+          "sha256": "7d5b65417610143f84a83e1ebc32e764de72bb3bfd1a1876d51ca475f3c3383f",
+          "bytes": 237485
+        },
+        {
+          "path": "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+          "sha256": "fd5d4b6f6b32342ceca2829a8a98c82037010336f86602b40867cd50b0ca6a4f",
+          "bytes": 713998
+        },
+        {
+          "path": "assets/data/institutional-communications-register-v1.json",
+          "sha256": "e7c0f49066a2c03347ed04370c5099fbc224ebe61fb0d57188c73a7e93aa6ed4",
+          "bytes": 1890447
+        },
+        {
+          "path": "assets/data/redsara-age-filings-register-v1.json",
+          "sha256": "70115349acec94f86c4d4f514482fd5d40ca473e53ab7dbcecabdef8df19d626",
+          "bytes": 1027221
+        },
+        {
+          "path": "en/forensic-accountability/index.html",
+          "sha256": "176d2fa8bf91778d5dc22d9c7fd2d361a8055f107d9e436b30834aae9ec4aac2",
+          "bytes": 66464
+        },
+        {
+          "path": "en/index.html",
+          "sha256": "68bbcdf2db7f0fa9180f4939986f03d4a0f222ade5cbd3ad529be8712ebe5554",
+          "bytes": 235110
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "73b923c45010384fbb8b08b7c27ceda483cd548e4d5e1cb24119fcd621cf02d9",
+          "bytes": 244847
+        },
+        {
+          "path": "es/reconstruccion-forense/index.html",
+          "sha256": "70da4a411760c45e2f6a0cb814c908259764b7298deb3b066edad46687f15d97",
+          "bytes": 67317
+        },
+        {
+          "path": "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json",
+          "sha256": "11901efa6351bec435fc77d49a6dbd828bcb3b236a57a051f51751014c6ff77b",
+          "bytes": 6662
+        },
+        {
+          "path": "ops/continuity/R865_2026_REGAGE_FILED_CANON_AUDIT_20261123.json",
+          "sha256": "c0f01ec427bc89efdc955a2f2421a964ec2f608e10c824612eeb38386d23014c",
+          "bytes": 4142
+        },
+        {
+          "path": "ops/continuity/R865_2026_REGAGE_FILED_CANON_AUDIT_20261123.md",
+          "sha256": "3bd1cb0078de17efe05504fc8930acf1b3280063f3afae99fb0017fe02c2c320",
+          "bytes": 4102
+        },
+        {
+          "path": "publication-manifests/r865-filing-update-20261123.json",
+          "sha256": "ae0db3fc95558959eb2da52ae93f6417d831e69837b3e25903b0326b7283c0e9",
+          "bytes": 2162
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -3642,7 +3713,79 @@
         "pages_run_id": 45279001781,
         "merge_sha": "23ad923d426e73c6f677d9640a6c9ad63a578d0d"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-11-23T22:23:46.538114Z",
+      "evidence": {
+        "merge_sha": "23ad923d426e73c6f677d9640a6c9ad63a578d0d",
+        "pages_run_id": 45279001781,
+        "exact_matches": [
+          {
+            "path": "assets/data/community-acta-authority-interconnectivity-v1.json",
+            "sha256": "7d5b65417610143f84a83e1ebc32e764de72bb3bfd1a1876d51ca475f3c3383f",
+            "bytes": 237485
+          },
+          {
+            "path": "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+            "sha256": "fd5d4b6f6b32342ceca2829a8a98c82037010336f86602b40867cd50b0ca6a4f",
+            "bytes": 713998
+          },
+          {
+            "path": "assets/data/institutional-communications-register-v1.json",
+            "sha256": "e7c0f49066a2c03347ed04370c5099fbc224ebe61fb0d57188c73a7e93aa6ed4",
+            "bytes": 1890447
+          },
+          {
+            "path": "assets/data/redsara-age-filings-register-v1.json",
+            "sha256": "70115349acec94f86c4d4f514482fd5d40ca473e53ab7dbcecabdef8df19d626",
+            "bytes": 1027221
+          },
+          {
+            "path": "en/forensic-accountability/index.html",
+            "sha256": "176d2fa8bf91778d5dc22d9c7fd2d361a8055f107d9e436b30834aae9ec4aac2",
+            "bytes": 66464
+          },
+          {
+            "path": "en/index.html",
+            "sha256": "68bbcdf2db7f0fa9180f4939986f03d4a0f222ade5cbd3ad529be8712ebe5554",
+            "bytes": 235110
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "73b923c45010384fbb8b08b7c27ceda483cd548e4d5e1cb24119fcd621cf02d9",
+            "bytes": 244847
+          },
+          {
+            "path": "es/reconstruccion-forense/index.html",
+            "sha256": "70da4a411760c45e2f6a0cb814c908259764b7298deb3b066edad46687f15d97",
+            "bytes": 67317
+          },
+          {
+            "path": "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json",
+            "sha256": "11901efa6351bec435fc77d49a6dbd828bcb3b236a57a051f51751014c6ff77b",
+            "bytes": 6662
+          },
+          {
+            "path": "ops/continuity/R865_2026_REGAGE_FILED_CANON_AUDIT_20261123.json",
+            "sha256": "c0f01ec427bc89efdc955a2f2421a964ec2f608e10c824612eeb38386d23014c",
+            "bytes": 4142
+          },
+          {
+            "path": "ops/continuity/R865_2026_REGAGE_FILED_CANON_AUDIT_20261123.md",
+            "sha256": "3bd1cb0078de17efe05504fc8930acf1b3280063f3afae99fb0017fe02c2c320",
+            "bytes": 4102
+          },
+          {
+            "path": "publication-manifests/r865-filing-update-20261123.json",
+            "sha256": "ae0db3fc95558959eb2da52ae93f6417d831e69837b3e25903b0326b7283c0e9",
+            "bytes": 2162
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-11-23T22:23:38.678292Z"
+  "updated_at": "2026-11-23T22:23:46.538114Z"
 }
