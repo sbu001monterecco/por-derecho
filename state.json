@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 76,
   "owner": "2158:1a854e8827241a4b83763a5f7e7ffed51ffbb549",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 2158,
   "base_sha": "9fc1d01f4d462b1cb3f8d102116a2b7db26a59ea",
   "candidate_sha": "1a854e8827241a4b83763a5f7e7ffed51ffbb549",
@@ -3773,6 +3773,37 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 2158,
+      "candidate_sha": "1a854e8827241a4b83763a5f7e7ffed51ffbb549",
+      "at": "2026-11-23T23:06:41.000016Z",
+      "merge_sha": "7aed9eea4085b53c4c62aa5a57a3520b1ec29cda",
+      "pages_run_id": 45285212980,
+      "exact_matches": [
+        {
+          "path": "en/index.html",
+          "sha256": "68bbcdf2db7f0fa9180f4939986f03d4a0f222ade5cbd3ad529be8712ebe5554",
+          "bytes": 235110
+        },
+        {
+          "path": "en/institutional-records/index.html",
+          "sha256": "a537c4175a31e130daa54e97de06b58bd5ffad8efd94af726a6ec0a44a8ec513",
+          "bytes": 115709
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "73b923c45010384fbb8b08b7c27ceda483cd548e4d5e1cb24119fcd621cf02d9",
+          "bytes": 244847
+        },
+        {
+          "path": "es/registros-institucionales/index.html",
+          "sha256": "7faae28dd4e5c81094923f4d50bebe9449a4d43fbf1034e84fb8ad05dee1e36b",
+          "bytes": 117847
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -3815,7 +3846,39 @@
         "pages_run_id": 45285212980,
         "merge_sha": "7aed9eea4085b53c4c62aa5a57a3520b1ec29cda"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-11-23T23:06:40.999951Z",
+      "evidence": {
+        "merge_sha": "7aed9eea4085b53c4c62aa5a57a3520b1ec29cda",
+        "pages_run_id": 45285212980,
+        "exact_matches": [
+          {
+            "path": "en/index.html",
+            "sha256": "68bbcdf2db7f0fa9180f4939986f03d4a0f222ade5cbd3ad529be8712ebe5554",
+            "bytes": 235110
+          },
+          {
+            "path": "en/institutional-records/index.html",
+            "sha256": "a537c4175a31e130daa54e97de06b58bd5ffad8efd94af726a6ec0a44a8ec513",
+            "bytes": 115709
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "73b923c45010384fbb8b08b7c27ceda483cd548e4d5e1cb24119fcd621cf02d9",
+            "bytes": 244847
+          },
+          {
+            "path": "es/registros-institucionales/index.html",
+            "sha256": "7faae28dd4e5c81094923f4d50bebe9449a4d43fbf1034e84fb8ad05dee1e36b",
+            "bytes": 117847
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-11-23T23:06:38.777867Z"
+  "updated_at": "2026-11-23T23:06:40.999951Z"
 }
