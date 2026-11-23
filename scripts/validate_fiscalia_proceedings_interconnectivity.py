@@ -9,6 +9,13 @@ import subprocess
 import sys
 from pathlib import Path
 
+from load_lanzarote_18735_filing_20261123 import (
+    CONTROL as LANZAROTE_CONTROL, INPUT as LANZAROTE_INPUT,
+    EXCLUSION_BOUNDARY as LANZAROTE_EXCLUSION_BOUNDARY,
+    validated_filing_event_ids as validated_lanzarote_filing_event_ids,
+)
+from reconcile_institutional_communications import RECEIPT_BOUNDARY
+
 from build_fiscalia_proceedings_interconnectivity import (
     OCTOBER_MAPPING_BOUNDARY,
     OCTOBER_MAPPING_STATE,
@@ -106,6 +113,7 @@ def main() -> int:
     platform_ids = validated_platform_event_ids(communications['events'], ROOT)
     october_ids = validated_october_filing_event_ids(communications["events"], ROOT)
     r865_ids = validated_r865_filing_event_ids(communications["events"], ROOT)
+    lanzarote_ids = validated_lanzarote_filing_event_ids(communications["events"], ROOT, RECEIPT_BOUNDARY)
     # Preserve the six already-canonical 24-Sep successor identities.
     # The legacy 643/320 controls remain exact for their original scope.
     expected_supplemental_ids = {'PD-SP-EVT-0497', 'PD-SP-EVT-0498', 'PD-SP-EVT-0499',
@@ -113,8 +121,21 @@ def main() -> int:
     supplemental_ids = {e['event_id'] for e in communications['events']
                         if str(e.get('source_key', '')).startswith('SUPPLEMENTAL_20260924:')}
     require(supplemental_ids == expected_supplemental_ids, '24-Sep successor identity set mismatch', errors)
-    event_ids = canonical_event_ids - excluded_authority_ids - set(expected_notices) - cajasiete_notice_ids - status_export_ids - platform_ids - r865_ids
+    event_ids = canonical_event_ids - excluded_authority_ids - set(expected_notices) - cajasiete_notice_ids - status_export_ids - platform_ids - r865_ids - lanzarote_ids
     projected_ids = {event["event_id"] for event in payload["events"]}
+
+    lanzarote_control = payload.get("excluded_lanzarote_cohort_control", {})
+    require(len(lanzarote_ids) == 1 and not lanzarote_ids & projected_ids, "Lanzarote transparency filing leaked into the specialist prosecution graph", errors)
+    require(payload["coverage"].get("excluded_lanzarote_registered_events") == 1, "Lanzarote excluded-cohort denominator mismatch", errors)
+    require(lanzarote_control == {
+        "control_id": LANZAROTE_CONTROL,
+        "source_descriptor": LANZAROTE_INPUT,
+        "source_descriptor_sha256": sha256(ROOT / LANZAROTE_INPUT),
+        "event_ids": sorted(lanzarote_ids),
+        "scope_state": "SOURCE_VERIFIED_TRANSPARENCY_FILING_NO_PROSECUTION_ALLOCATION",
+        "boundary_en": LANZAROTE_EXCLUSION_BOUNDARY["en"],
+        "boundary_es": LANZAROTE_EXCLUSION_BOUNDARY["es"],
+    }, "Lanzarote specialist exclusion control or source fingerprint differs", errors)
 
     r865_control = payload.get("excluded_r865_cohort_control", {})
     require(len(r865_ids) == 1 and not r865_ids & projected_ids, "R865 transparency filing leaked into the specialist prosecution graph", errors)
@@ -132,7 +153,7 @@ def main() -> int:
     require(payload.get("schema_version") == "1.0.0", "schema version changed", errors)
     require(payload.get("status") == "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION", "projection status changed", errors)
     require(
-        len(canonical_event_ids - platform_ids - supplemental_ids - october_ids - r865_ids) == 643
+        len(canonical_event_ids - platform_ids - supplemental_ids - october_ids - r865_ids - lanzarote_ids) == 643
         and len(status_export_ids) == 284
         and len(completed_filing_ids) == 24
         and completed_filing_ids <= event_ids

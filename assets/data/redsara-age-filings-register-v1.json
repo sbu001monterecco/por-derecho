@@ -10,9 +10,9 @@
     "source_of_truth_rule": "This is a deterministic, read-only projection. The institutional communications register remains the sole canonical communications register."
   },
   "scope_and_boundary": {
-    "filing_event_rows_currently_individualised": 407,
+    "filing_event_rows_currently_individualised": 408,
     "detailed_baseline_receipts": 75,
-    "separate_source_proved_regage_events": 332,
+    "separate_source_proved_regage_events": 333,
     "historic_regage_total_reported": 97,
     "aggregate_only_batch": [
       {
@@ -28,7 +28,7 @@
         "synthetic_event_rows_created": 0
       }
     ],
-    "reconciliation_boundary": "The historic 97-record denominator is retained as provenance (75 detailed receipts plus one 22-record aggregate-only batch). The current 21-Sep-2026 census contains 398 individually represented REGAGE references: existing and newly receipt-controlled formal events are reused where available, and the remaining rows preserve only the literal status export. Receipt proof is not inferred from a status-export-only row. The later 24-Sep successors and finite six-event Madrid/CTBG October cohort and the single 23-Nov R865 filing are additive source-controlled extensions; the 398-row census and 284 status-only rows are not redefined. Native receipts, compiled receipt read copies and freshly fingerprint-checked attachments retain their distinct proof levels.",
+    "reconciliation_boundary": "The historic 97-record denominator is retained as provenance (75 detailed receipts plus one 22-record aggregate-only batch). The current 21-Sep-2026 census contains 398 individually represented REGAGE references: existing and newly receipt-controlled formal events are reused where available, and the remaining rows preserve only the literal status export. Receipt proof is not inferred from a status-export-only row. The later 24-Sep successors and finite six-event Madrid/CTBG October cohort and the separate 23-Nov R865 and Lanzarote 18735 filings are additive source-controlled extensions; the 398-row census and 284 status-only rows are not redefined. Native receipts, compiled receipt read copies and freshly fingerprint-checked attachments retain their distinct proof levels.",
     "receipt_boundary": "A registry receipt proves only the stated presentation, time, registry destination and listed annex metadata. It does not alone prove downstream delivery, incorporation, examination, decision, reliance, payment, effect, causation, intent, offence or guilt.",
     "attachment_boundary": "The public attachment index records 100 unique filename/SHA-512 pairs and their receipt-occurrence counts for the detailed 75-receipt baseline. The public source does not establish a complete individual receipt-to-attachment mapping, so none is inferred here.",
     "privacy_boundary": "No native receipt bundle, private email, direct contact detail, provider locator or unredacted private file is published by this projection."
@@ -16574,6 +16574,51 @@
         "controlling_source_pdf_sha256": "e78490a3a2e26496608cacf8040ee8b0b17783c82bff78063aa8b7096265bafa",
         "repository_anchor": "assets/data/institutional-communications-20261025.json",
         "sha256": "191d22fd50d5409f963e0ffac995c4a05e4b18e61abd923c4de522ae940364a0",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      }
+    },
+    {
+      "event_id": "PD-SP-EVT-0607",
+      "source_key": "REGISTERED-LANZAROTE-18735-20261123:LANZAROTE-18735-FILING-20261123",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "event_date": "2026-11-23",
+      "record_type": "REGISTRATION_RECEIPT",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "channel": "REGAGE",
+      "official_reference": "Cabildo Decree 2026-8922 / information-access file 18735/2026",
+      "office": "Comisionado de Transparencia y Acceso a la Información Pública",
+      "annex_count": 5,
+      "public_summary": "On 23 November 2026 a transparency complaint addressed to the Canary Islands Transparency Commissioner was registered through REG-AGE concerning Cabildo de Lanzarote Decree 2026-8922 and information-access file 18735/2026. The official receipt, all five submitted PDF fingerprints and the three registration-form fields were verified; the submitted attachments contain 85 pages.",
+      "public_summary_es": "El 23 de noviembre de 2026 se registró a través de REG-AGE una reclamación dirigida al Comisionado de Transparencia de Canarias relativa al Decreto 2026-8922 del Cabildo de Lanzarote y al expediente de acceso 18735/2026. Se verificaron el justificante oficial, las huellas de los cinco PDF presentados y los tres campos del formulario; los anexos presentados contienen 85 páginas.",
+      "proves": [
+        "On 23 November 2026 a transparency complaint addressed to the Canary Islands Transparency Commissioner was registered through REG-AGE concerning Cabildo de Lanzarote Decree 2026-8922 and information-access file 18735/2026. The official receipt, all five submitted PDF fingerprints and the three registration-form fields were verified; the submitted attachments contain 85 pages.",
+        "The exact registry identifier and native receipt remain in authorised private custody; the opaque project key is not an official registration number."
+      ],
+      "proves_es": "El 23 de noviembre de 2026 se registró a través de REG-AGE una reclamación dirigida al Comisionado de Transparencia de Canarias relativa al Decreto 2026-8922 del Cabildo de Lanzarote y al expediente de acceso 18735/2026. Se verificaron el justificante oficial, las huellas de los cinco PDF presentados y los tres campos del formulario; los anexos presentados contienen 85 páginas. El identificador registral exacto y el justificante nativo permanecen en custodia privada; la referencia opaca del proyecto no es un número registral oficial.",
+      "does_not_prove": [
+        "Registration does not itself establish entry in the Commissioner's own register, admission, internal allocation, incorporation, examination, a Commissioner claim reference, relief or a merits decision. The conditional article 262 request is not an established criminal finding. This complaint remains separate from R865/2026 and Decree 2026-7000 / file 13817/2026."
+      ],
+      "does_not_prove_es": "El registro no acredita por sí solo entrada en el registro propio del Comisionado, admisión, reparto interno, incorporación, examen, referencia de reclamación asignada, estimación ni decisión de fondo. La petición condicionada del artículo 262 no equivale a una responsabilidad penal declarada. La reclamación permanece separada de R865/2026 y del Decreto 2026-7000 / expediente 13817/2026.",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "matter_references": [
+        "Cabildo Decree 2026-8922 / information-access file 18735/2026",
+        "PD-LZ-URIP-18735-CANON-AUDIT-20261123-001/REGAGE-20261123-01",
+        "PD-WS-20260901-0002"
+      ],
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0607",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0607",
+      "source_integrity": {
+        "repository_anchor": "ops/continuity/LANZAROTE_18735_2026_REGAGE_FILED_CANON_AUDIT_20261123.json",
+        "sha256": "108e0068fdc0729712fa8e0a46dc1bc76413f24fe56621ac45320d6eeef79694",
         "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
       }
     },

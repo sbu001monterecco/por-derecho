@@ -80,7 +80,19 @@
       "repository": "sbu001monterecco/por-derecho",
       "public_private_boundary": "PUBLIC_REPO_CONTAINS_SOURCE_SAFE_REGISTRY_METADATA; NO_NATIVE_RECEIPTS_OR_PRIVATE_ATTACHMENTS",
       "continuous_capture_mode": "CONNECTED_AGENTIC_CHECKPOINTING",
-      "next_target_mode": "SOURCE_PROVED_REGISTRY_RECONCILIATION_AND_P0_GAP_CLOSURE"
+      "next_target_mode": "SOURCE_PROVED_REGISTRY_RECONCILIATION_AND_P0_GAP_CLOSURE",
+      "continuations": [
+        {
+          "date": "2026-11-23",
+          "label": "Cabildo de Lanzarote 18735/2026 / Decree 2026-8922: source-verified REG-AGE complaint; five attachment fingerprints and form text reconciled; Commissioner processing and merits remain open.",
+          "control_id": "PD-LZ-URIP-18735-CANON-AUDIT-20261123-001/REGAGE-20261123-01",
+          "parent_control_id": "PD-LZ-URIP-18735-CANON-AUDIT-20261123-001",
+          "control": "ops/continuity/LANZAROTE_18735_2026_REGAGE_FILED_CANON_AUDIT_20261123.md",
+          "profile": "ops/continuity/LANZAROTE_18735_2026_REGAGE_FILED_CANON_AUDIT_20261123.json",
+          "event_id": "PD-SP-EVT-0607",
+          "publication_truth": "Exact host-specific PR/MR, deployment and readback receipts govern publication; this dated continuation is not live verification."
+        }
+      ]
     },
     {
       "workspace_id": "PD-WS-20260901-0003",

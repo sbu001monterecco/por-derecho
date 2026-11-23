@@ -1,0 +1,60 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-LANZAROTE-18735-FILING-PUBLIC-SUMMARY-20261123",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-11-23",
+  "current_state": "DRAFT",
+  "source_base_sha": "23ad923d426e73c6f677d9640a6c9ad63a578d0d",
+  "purpose": "Preserve the verified Lanzarote 18735/2026 complaint registration, its favourable point 4 and conditional article 262 request; keep R865 and all earlier events separate and intact.",
+  "expected_routes": {
+    "es": [
+      "es/cabildo-lanzarote-turismo-trazabilidad/index.html",
+      "es/registros-institucionales/index.html",
+      "es/registros-redsara-age-y-respuestas-autoridades/index.html"
+    ],
+    "en": [
+      "en/cabildo-lanzarote-tourism-traceability/index.html",
+      "en/institutional-records/index.html",
+      "en/red-sara-age-filings-authority-responses/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "ops/continuity/LANZAROTE_18735_2026_REGAGE_FILED_CANON_AUDIT_20261123.json",
+    "ops/continuity/LANZAROTE_18735_2026_REGAGE_FILED_CANON_AUDIT_20261123.md",
+    "data/workspace-register-v1.json",
+    "scripts/load_lanzarote_18735_filing_20261123.py",
+    "scripts/reconcile_institutional_communications.py",
+    "scripts/validate_institutional_communications.py",
+    "scripts/build_redsara_age_filings_register.py",
+    "scripts/validate_redsara_authority_discovery.py",
+    "scripts/build_fiscalia_proceedings_interconnectivity.py",
+    "scripts/validate_fiscalia_proceedings_interconnectivity.py",
+    "assets/data/institutional-communications-register-v1.json",
+    "assets/data/redsara-age-filings-register-v1.json",
+    "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json",
+    "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+    "assets/data/community-acta-authority-interconnectivity-v1.json"
+  ],
+  "public_safe_originals": "No native receipt, filed PDF, signature, personal identifier, exact registry identifier, private source locator or original private filename is included.",
+  "preservation_rule": "All 667 preexisting canonical event objects, all 407 earlier REGAGE projection rows, all 100 attachment-index rows, and every historical byte of both Cabildo pages remain intact.",
+  "live_markers": [
+    "appeal-18735-20261123",
+    "PD-SP-EVT-0607",
+    "2026-8922",
+    "18735/2026"
+  ],
+  "unproven": [
+    "Commissioner own-registry receipt",
+    "assigned Commissioner claim reference",
+    "admission",
+    "internal incorporation",
+    "substantive examination",
+    "merits decision",
+    "criminal finding"
+  ],
+  "validation": {
+    "status": "PENDING_INTEGRATION",
+    "no_ci_or_deployment_claim": true
+  }
+}
