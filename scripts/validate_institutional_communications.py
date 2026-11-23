@@ -48,6 +48,7 @@ from load_madrid_ctbg_filings_20261025 import (
 )
 
 from load_r865_filing_20261123 import SOURCE_PREFIX as R865_FILING_PREFIX, load_filing_events as load_r865_filing_events
+from load_lanzarote_18735_filing_20261123 import SOURCE_PREFIX as LANZAROTE_FILING_PREFIX, load_filing_events as load_lanzarote_filing_events
 
 
 DEFAULT_SCHEMA = REPO_ROOT / ".github/evidence-intelligence/schemas/institutional-communications.schema.json"
@@ -221,6 +222,10 @@ def validate_register(
     found_r865 = {event.get("event_id"): event for event in events if str(event.get("source_key", "")).startswith(R865_FILING_PREFIX)}
     if found_r865 != expected_r865:
         errors.append("November R865 filing cohort differs from its reviewed public-safe descriptor")
+    expected_lanzarote = {event["event_id"]: event for event in load_lanzarote_filing_events(repo_root, RECEIPT_BOUNDARY)}
+    found_lanzarote = {event.get("event_id"): event for event in events if str(event.get("source_key", "")).startswith(LANZAROTE_FILING_PREFIX)}
+    if found_lanzarote != expected_lanzarote:
+        errors.append("Lanzarote 18735 filing cohort differs from its reviewed public-safe descriptor")
 
     authority_events = [event for event in events if event.get("authority_tier_id")]
     expected_authority_ids = ["PD-SP-EVT-0004", "PD-SP-EVT-0014", *[f"PD-SP-EVT-{number:04d}" for number in range(141, 158)]]

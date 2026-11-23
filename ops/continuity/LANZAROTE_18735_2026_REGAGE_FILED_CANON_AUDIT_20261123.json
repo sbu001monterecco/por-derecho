@@ -1,0 +1,89 @@
+{
+  "schema": "por-derecho.lanzarote-18735-filing-canon-audit.v1",
+  "control_id": "PD-LZ-URIP-18735-CANON-AUDIT-20261123-001/REGAGE-20261123-01",
+  "parent_control_id": "PD-LZ-URIP-18735-CANON-AUDIT-20261123-001",
+  "control_date": "2026-11-23",
+  "scope": "Public-safe filing source descriptor and audit pointer within the existing Cabildo preservation control and authority-discovery workspace; not a parallel communications or proceedings register.",
+  "public_projection": true,
+  "workspace_id": "PD-WS-20260901-0002",
+  "master_link_state": "OPEN",
+  "master_link_boundary": "No master proceeding identifier is assigned by this descriptor. Cabildo file 18735/2026 is identified by the source; a Commissioner claim reference and exact master-register reconciliation remain open. LZ-TRA-028/R865 and LZ-CAB-025/614 are distinct matters.",
+  "case": {
+    "authority": "Cabildo Insular de Lanzarote",
+    "decree": "2026-8922",
+    "information_access_file": "18735/2026",
+    "request_date": "2026-10-25",
+    "commissioner_claim_reference": "NOT_ESTABLISHED_BY_REGAGE_RECEIPT"
+  },
+  "verification": {
+    "official_registration_receipt_reviewed": true,
+    "filed_pdf_count": 5,
+    "filed_pdf_pages": 85,
+    "filed_pdf_bytes": 8526094,
+    "attachment_hash_algorithm": "SHA-512",
+    "attachment_fingerprints_exact_matches": 5,
+    "registration_form_fields_checked": 3,
+    "registration_form_fields_match": true,
+    "form_comparison_basis": "WHITESPACE_NORMALISED_TEXT",
+    "native_source_location": "AUTHORISED_PRIVATE_CUSTODY",
+    "public_native_binaries": false
+  },
+  "requested_relief": {
+    "inadmitted_documentary_points_challenged": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "challenged_ground": "REELABORACION",
+    "favourable_point_preserved": 4,
+    "reference_discrepancy_for_clarification": [
+      "2984/2023",
+      "2894/2023"
+    ],
+    "preservation_and_traceability_requested": true,
+    "article_262_LECrim": "CONDITIONAL_ON_CONCRETE_INDICATIONS_OF_A_PUBLICLY_PROSECUTABLE_OFFENCE_KNOWN_THROUGH_OFFICIAL_DUTIES",
+    "established_criminal_finding_asserted": false
+  },
+  "procedural_position": {
+    "registration": "VERIFIED",
+    "commissioner_own_register_receipt": "NOT_ESTABLISHED",
+    "admission": "NOT_ESTABLISHED",
+    "internal_incorporation": "NOT_ESTABLISHED",
+    "substantive_examination": "NOT_ESTABLISHED",
+    "merits_decision": "NOT_ESTABLISHED",
+    "relief": "NOT_ESTABLISHED"
+  },
+  "items": [
+    {
+      "source_key": "LANZAROTE-18735-FILING-20261123",
+      "event_id": "PD-SP-EVT-0607",
+      "date": "2026-11-23",
+      "reference": "Cabildo Decree 2026-8922 / information-access file 18735/2026",
+      "office": "Comisionado de Transparencia y Acceso a la Información Pública",
+      "workspace_id": "PD-WS-20260901-0002",
+      "attachment_count": 5,
+      "attachment_pages": 85,
+      "attachment_hashes_verified": true,
+      "purpose_en": "On 23 November 2026 a transparency complaint addressed to the Canary Islands Transparency Commissioner was registered through REG-AGE concerning Cabildo de Lanzarote Decree 2026-8922 and information-access file 18735/2026. The official receipt, all five submitted PDF fingerprints and the three registration-form fields were verified; the submitted attachments contain 85 pages.",
+      "purpose_es": "El 23 de noviembre de 2026 se registró a través de REG-AGE una reclamación dirigida al Comisionado de Transparencia de Canarias relativa al Decreto 2026-8922 del Cabildo de Lanzarote y al expediente de acceso 18735/2026. Se verificaron el justificante oficial, las huellas de los cinco PDF presentados y los tres campos del formulario; los anexos presentados contienen 85 páginas."
+    }
+  ],
+  "boundaries": [
+    "The new complaint remains distinct from R865/2026 and from Decree 2026-7000 / file 13817/2026.",
+    "Registration and verified attachment inclusion do not establish the Commissioner's own registry receipt, admission, internal allocation, incorporation, examination or a merits decision.",
+    "The favourable part of point 4 remains preserved. Challenging other points does not erase that part or establish unlawful or criminal conduct.",
+    "Article 262 LECrim is retained as a conditional request; no offence, guilt, personal knowledge or responsibility is transferred or treated as adjudicated.",
+    "The exact registry identifier, verification codes, personal identifiers, addresses, signatures, private provider locators and original filenames remain in restricted custody. The public source key is not an official registration number.",
+    "Earlier dated custody records and host-specific history remain intact. This descriptor does not certify universal completeness, global host parity, deployment or thread-deletion safety."
+  ],
+  "canonical_register": "assets/data/institutional-communications-register-v1.json",
+  "derived_projection": "assets/data/redsara-age-filings-register-v1.json",
+  "reader_routes": {
+    "en": "en/cabildo-lanzarote-tourism-traceability/index.html#appeal-18735-20261123",
+    "es": "es/cabildo-lanzarote-turismo-trazabilidad/index.html#appeal-18735-20261123"
+  },
+  "preparation_status": "SOURCE_VERIFIED_ADDITIVE_REPOSITORY_CANDIDATE_NOT_A_LIVE_PUBLICATION_CERTIFICATE"
+}

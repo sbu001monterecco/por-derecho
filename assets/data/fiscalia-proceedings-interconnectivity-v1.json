@@ -5,7 +5,7 @@
   "status": "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION",
   "canonical_sources": {
     "communications_register": "assets/data/institutional-communications-register-v1.json",
-    "communications_sha256": "e7c0f49066a2c03347ed04370c5099fbc224ebe61fb0d57188c73a7e93aa6ed4",
+    "communications_sha256": "6a54601d3664eeacb06fdd9b71978801dfaa35537bc69a1f132ae7676c69bdf7",
     "proceedings_master": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
     "proceedings_master_sha256": "bd2f641d0ee9599dd36c2fdbc57d6093c900f2dd84c9b289b67a036e3b863398",
     "public_proceedings_projection": "assets/data/proceedings-master-public-v1.json",
@@ -15,6 +15,17 @@
   "boundaries": {
     "en": "A link records only the proposition stated by its relationship type and cited sources. Registration is not delivery beyond the receipt, receipt is not examination, chronology is not causation, and institutional possession is not personal knowledge, agreement, intent, wrongdoing or liability.",
     "es": "Un enlace registra únicamente la proposición indicada por su tipo de relación y fuentes citadas. Registro no equivale a entrega más allá del justificante, recepción no equivale a examen, cronología no equivale a causalidad y posesión institucional no equivale a conocimiento personal, acuerdo, intención, ilicitud o responsabilidad."
+  },
+  "excluded_lanzarote_cohort_control": {
+    "control_id": "PD-LZ-URIP-18735-CANON-AUDIT-20261123-001/REGAGE-20261123-01",
+    "source_descriptor": "ops/continuity/LANZAROTE_18735_2026_REGAGE_FILED_CANON_AUDIT_20261123.json",
+    "source_descriptor_sha256": "108e0068fdc0729712fa8e0a46dc1bc76413f24fe56621ac45320d6eeef79694",
+    "event_ids": [
+      "PD-SP-EVT-0607"
+    ],
+    "scope_state": "SOURCE_VERIFIED_TRANSPARENCY_FILING_NO_PROSECUTION_ALLOCATION",
+    "boundary_en": "The source-verified Lanzarote 18735/2026 transparency complaint remains in the canonical communications and REG-AGE registers. It assigns no prosecution proceeding and is excluded from this specialist Fiscalía graph. Its conditional article 262 LECrim request does not establish an offence, investigation, admission or merits finding.",
+    "boundary_es": "La reclamación de transparencia de Lanzarote 18735/2026, verificada con su fuente, permanece en los registros canónicos de comunicaciones y REG-AGE. No asigna un procedimiento fiscal y se excluye de este grafo especializado de Fiscalía. La petición condicionada del artículo 262 LECrim no acredita delito, investigación, admisión ni decisión de fondo."
   },
   "excluded_r865_cohort_control": {
     "control_id": "PD-CANON-AUDIT-20261024-001/R865-REGAGE-20261123-01",
@@ -64,6 +75,7 @@
   },
   "coverage": {
     "excluded_r865_registered_events": 1,
+    "excluded_lanzarote_registered_events": 1,
     "communication_events": 332,
     "matter_linked_events": 147,
     "legacy_communication_events": 326,

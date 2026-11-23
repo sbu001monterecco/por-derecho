@@ -31,6 +31,11 @@ from load_r865_filing_20261123 import (
     SOURCE_PREFIX as R865_SOURCE_PREFIX,
     load_filing_events as load_r865_filing_events,
 )
+from load_lanzarote_18735_filing_20261123 import (
+    CONTROL as LANZAROTE_CONTROL, INPUT as LANZAROTE_INPUT,
+    EXCLUSION_BOUNDARY as LANZAROTE_EXCLUSION_BOUNDARY,
+    validated_filing_event_ids as validated_lanzarote_filing_event_ids,
+)
 from reconcile_institutional_communications import RECEIPT_BOUNDARY
 
 
@@ -263,6 +268,9 @@ def build() -> dict[str, Any]:
     # registers and validate its entire source object before this exclusion.
     r865_ids = validated_r865_filing_event_ids(communications["events"], ROOT)
     non_fiscalia_notice_ids |= r865_ids
+    # The distinct Cabildo transparency complaint is not a prosecution filing.
+    lanzarote_ids = validated_lanzarote_filing_event_ids(communications["events"], ROOT, RECEIPT_BOUNDARY)
+    non_fiscalia_notice_ids |= lanzarote_ids
     october_ids = validated_october_filing_event_ids(communications["events"], ROOT)
     events = [
         event
@@ -518,6 +526,15 @@ def build() -> dict[str, Any]:
             "link_assertions_sha256": sha256(ASSERTIONS),
         },
         "boundaries": assertions["boundaries"],
+        "excluded_lanzarote_cohort_control": {
+            "control_id": LANZAROTE_CONTROL,
+            "source_descriptor": LANZAROTE_INPUT,
+            "source_descriptor_sha256": sha256(ROOT / LANZAROTE_INPUT),
+            "event_ids": sorted(lanzarote_ids),
+            "scope_state": "SOURCE_VERIFIED_TRANSPARENCY_FILING_NO_PROSECUTION_ALLOCATION",
+            "boundary_en": LANZAROTE_EXCLUSION_BOUNDARY["en"],
+            "boundary_es": LANZAROTE_EXCLUSION_BOUNDARY["es"],
+        },
         "excluded_r865_cohort_control": {
             "control_id": R865_CONTROL,
             "source_descriptor": R865_INPUT,
@@ -541,6 +558,7 @@ def build() -> dict[str, Any]:
         },
         "coverage": {
             "excluded_r865_registered_events": len(r865_ids),
+            "excluded_lanzarote_registered_events": len(lanzarote_ids),
             "communication_events": len(projections),
             "matter_linked_events": sum(bool(e["matter_references"]) for e in projections),
             "legacy_communication_events": len(legacy_projections),
