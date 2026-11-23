@@ -47,6 +47,8 @@ from load_madrid_ctbg_filings_20261025 import (
     load_filing_events as load_october_filing_events,
 )
 
+from load_r865_filing_20261123 import SOURCE_PREFIX as R865_FILING_PREFIX, load_filing_events as load_r865_filing_events
+
 
 DEFAULT_SCHEMA = REPO_ROOT / ".github/evidence-intelligence/schemas/institutional-communications.schema.json"
 DEFAULT_ID_POLICY = REPO_ROOT / ".github/evidence-intelligence/id-extension-policy.json"
@@ -214,6 +216,11 @@ def validate_register(
     }
     if found_october != expected_october:
         errors.append("October Madrid/CTBG receipt cohort differs from its source-controlled descriptors")
+
+    expected_r865 = {event["event_id"]: event for event in load_r865_filing_events(repo_root, RECEIPT_BOUNDARY)}
+    found_r865 = {event.get("event_id"): event for event in events if str(event.get("source_key", "")).startswith(R865_FILING_PREFIX)}
+    if found_r865 != expected_r865:
+        errors.append("November R865 filing cohort differs from its reviewed public-safe descriptor")
 
     authority_events = [event for event in events if event.get("authority_tier_id")]
     expected_authority_ids = ["PD-SP-EVT-0004", "PD-SP-EVT-0014", *[f"PD-SP-EVT-{number:04d}" for number in range(141, 158)]]

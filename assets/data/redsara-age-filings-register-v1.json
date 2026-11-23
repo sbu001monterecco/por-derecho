@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.redsara-age-filings-register.v1",
   "register_id": "PD-SP-REDSARA-AGE-FILINGS-001",
-  "control_date": "2026-10-25",
+  "control_date": "2026-11-23",
   "derived_projection": {
     "canonical_communications_register": "assets/data/institutional-communications-register-v1.json",
     "canonical_communications_register_id": "PD-SP-INSTITUTIONAL-COMMUNICATIONS-001",
@@ -10,9 +10,9 @@
     "source_of_truth_rule": "This is a deterministic, read-only projection. The institutional communications register remains the sole canonical communications register."
   },
   "scope_and_boundary": {
-    "filing_event_rows_currently_individualised": 406,
+    "filing_event_rows_currently_individualised": 407,
     "detailed_baseline_receipts": 75,
-    "separate_source_proved_regage_events": 331,
+    "separate_source_proved_regage_events": 332,
     "historic_regage_total_reported": 97,
     "aggregate_only_batch": [
       {
@@ -28,7 +28,7 @@
         "synthetic_event_rows_created": 0
       }
     ],
-    "reconciliation_boundary": "The historic 97-record denominator is retained as provenance (75 detailed receipts plus one 22-record aggregate-only batch). The current 21-Sep-2026 census contains 398 individually represented REGAGE references: existing and newly receipt-controlled formal events are reused where available, and the remaining rows preserve only the literal status export. Receipt proof is not inferred from a status-export-only row. The later 24-Sep successors and finite six-event Madrid/CTBG October cohort are additive source-controlled extensions; the 398-row census and 284 status-only rows are not redefined. Native receipts, compiled receipt read copies and freshly fingerprint-checked attachments retain their distinct proof levels.",
+    "reconciliation_boundary": "The historic 97-record denominator is retained as provenance (75 detailed receipts plus one 22-record aggregate-only batch). The current 21-Sep-2026 census contains 398 individually represented REGAGE references: existing and newly receipt-controlled formal events are reused where available, and the remaining rows preserve only the literal status export. Receipt proof is not inferred from a status-export-only row. The later 24-Sep successors and finite six-event Madrid/CTBG October cohort and the single 23-Nov R865 filing are additive source-controlled extensions; the 398-row census and 284 status-only rows are not redefined. Native receipts, compiled receipt read copies and freshly fingerprint-checked attachments retain their distinct proof levels.",
     "receipt_boundary": "A registry receipt proves only the stated presentation, time, registry destination and listed annex metadata. It does not alone prove downstream delivery, incorporation, examination, decision, reliance, payment, effect, causation, intent, offence or guilt.",
     "attachment_boundary": "The public attachment index records 100 unique filename/SHA-512 pairs and their receipt-occurrence counts for the detailed 75-receipt baseline. The public source does not establish a complete individual receipt-to-attachment mapping, so none is inferred here.",
     "privacy_boundary": "No native receipt bundle, private email, direct contact detail, provider locator or unredacted private file is published by this projection."
@@ -16574,6 +16574,51 @@
         "controlling_source_pdf_sha256": "e78490a3a2e26496608cacf8040ee8b0b17783c82bff78063aa8b7096265bafa",
         "repository_anchor": "assets/data/institutional-communications-20261025.json",
         "sha256": "191d22fd50d5409f963e0ffac995c4a05e4b18e61abd923c4de522ae940364a0",
+        "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
+      }
+    },
+    {
+      "event_id": "PD-SP-EVT-0606",
+      "source_key": "REGISTERED-R865-20261123:R865-FILING-20261123",
+      "cohort": "CURATED_SOURCE_PROVED_EVENT",
+      "event_date": "2026-11-23",
+      "record_type": "REGISTRATION_RECEIPT",
+      "direction": "OUTBOUND_TO_INSTITUTION",
+      "channel": "REGAGE",
+      "official_reference": "R865/2026 / RDR2026000865",
+      "office": "Comisionado de Transparencia y Acceso a la Información Pública",
+      "annex_count": 5,
+      "public_summary": "On 23 November 2026 a submission was registered in the R865/2026 access matter after the further ten-working-day opportunity stated in legal ground IV of RDR2026000865. The official receipt and all five submitted PDF fingerprints were verified; the package contains 40 pages.",
+      "public_summary_es": "El 23 de noviembre de 2026 se registró una aportación en el expediente de acceso R865/2026 tras la nueva oportunidad de diez días hábiles recogida en el fundamento jurídico IV de RDR2026000865. Se verificaron el justificante oficial y las huellas de los cinco PDF presentados; el conjunto contiene 40 páginas.",
+      "proves": [
+        "On 23 November 2026 a submission was registered in the R865/2026 access matter after the further ten-working-day opportunity stated in legal ground IV of RDR2026000865. The official receipt and all five submitted PDF fingerprints were verified; the package contains 40 pages.",
+        "The exact registration identifier and original receipt remain in authorised private custody; the opaque public source key is not a replacement official registration number."
+      ],
+      "proves_es": "El 23 de noviembre de 2026 se registró una aportación en el expediente de acceso R865/2026 tras la nueva oportunidad de diez días hábiles recogida en el fundamento jurídico IV de RDR2026000865. Se verificaron el justificante oficial y las huellas de los cinco PDF presentados; el conjunto contiene 40 páginas. El identificador registral exacto y el justificante original permanecen en custodia privada; la referencia pública opaca no sustituye el número oficial.",
+      "does_not_prove": [
+        "The filing does not itself establish reopening, admission, incorporation, examination, disclosure, acceptance of allegations or a decision on the merits. The 5 October withdrawal/archive remains historical evidence."
+      ],
+      "does_not_prove_es": "El registro no acredita por sí solo reapertura, admisión, incorporación, examen, entrega de información, aceptación de alegaciones ni decisión de fondo. El desistimiento y archivo de 5 de octubre se conserva como antecedente.",
+      "evidence_state": {
+        "delivery": "NOT_ESTABLISHED_BY_RECEIPT",
+        "destination": "DESTINATION_AS_STATED_ON_RECEIPT",
+        "filing": "FORMALLY_PRESENTED_TO_STATED_REGISTRY",
+        "internal_association": "NOT_ESTABLISHED_BY_RECEIPT",
+        "merits": "NOT_ESTABLISHED_BY_RECEIPT",
+        "registration": "REGISTRATION_RECEIPT_LOCATED",
+        "substantive_examination": "NOT_ESTABLISHED_BY_RECEIPT",
+        "transmission": "OFFICIAL_REGISTRATION_RECEIPT_LOCATED"
+      },
+      "matter_references": [
+        "R865/2026 / RDR2026000865",
+        "LZ-TRA-028",
+        "PD-WS-20260901-0002"
+      ],
+      "canonical_anchor_en": "en/institutional-records/#communication-PD-SP-EVT-0606",
+      "canonical_anchor_es": "es/registros-institucionales/#communication-PD-SP-EVT-0606",
+      "source_integrity": {
+        "repository_anchor": "ops/continuity/R865_2026_REGAGE_FILED_CANON_AUDIT_20261123.json",
+        "sha256": "c0f01ec427bc89efdc955a2f2421a964ec2f608e10c824612eeb38386d23014c",
         "status": "RECEIPT_VERIFIED_PUBLIC_SAFE_DERIVATIVE"
       }
     }

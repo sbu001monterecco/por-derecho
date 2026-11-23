@@ -12,6 +12,7 @@ from build_redsara_age_filings_register import OUTPUT, build, serialized
 from prepare_orion_notice_register_20260905 import load_notice_events
 from load_completed_filings_20260921 import load_existing_cajasiete_events
 from load_madrid_ctbg_filings_20261025 import SOURCE_PREFIX as OCTOBER_PREFIX, load_filing_events
+from load_r865_filing_20261123 import SOURCE_PREFIX as R865_PREFIX, load_filing_events as load_r865_filing_events
 from reconcile_institutional_communications import RECEIPT_BOUNDARY
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -36,7 +37,9 @@ def main() -> int:
     errors: list[str] = []
     october_expected = load_filing_events(ROOT, RECEIPT_BOUNDARY)
     october_count = len(october_expected)
-    expected_regage_count = 400 + october_count
+    r865_expected = load_r865_filing_events(ROOT, RECEIPT_BOUNDARY)
+    r865_count = len(r865_expected)
+    expected_regage_count = 400 + october_count + r865_count
     try:
         actual = OUTPUT.read_text(encoding="utf-8")
         projection = json.loads(actual)
@@ -49,9 +52,9 @@ def main() -> int:
         fail("unexpected Red SARA/AGE projection schema", errors)
     scope = projection.get("scope_and_boundary", {})
     if scope.get("filing_event_rows_currently_individualised") != expected_regage_count:
-        fail("projection must retain the 400-event legacy set plus the finite reviewed October receipt cohort", errors)
-    if scope.get("separate_source_proved_regage_events") != 325 + october_count:
-        fail("projection must retain 325 legacy non-baseline REGAGE events plus the finite reviewed October receipt cohort", errors)
+        fail("projection must retain the 400-event legacy set plus the finite reviewed October and November receipt cohorts", errors)
+    if scope.get("separate_source_proved_regage_events") != 325 + october_count + r865_count:
+        fail("projection must retain 325 legacy non-baseline REGAGE events plus the finite reviewed October and November receipt cohorts", errors)
     if scope.get("detailed_baseline_receipts") != 75:
         fail("projection must retain 75 detailed baseline receipts", errors)
     if scope.get("historic_regage_total_reported") != 97:
@@ -71,7 +74,10 @@ def main() -> int:
     platform_ids = validated_platform_event_ids(events, ROOT)
     platform_incoming = [e for e in incoming if e['event_id'] in platform_ids]
     october_found = [event for event in regage if str(event.get("source_key", "")).startswith(OCTOBER_PREFIX)]
-    legacy_regage = [event for event in regage if not str(event.get("source_key", "")).startswith(OCTOBER_PREFIX)]
+    r865_found = [event for event in regage if str(event.get("source_key", "")).startswith(R865_PREFIX)]
+    legacy_regage = [event for event in regage if not str(event.get("source_key", "")).startswith((OCTOBER_PREFIX, R865_PREFIX))]
+    if {e["event_id"]: e for e in r865_found} != {e["event_id"]: e for e in r865_expected}:
+        fail("November R865 filing set differs from the reviewed descriptor", errors)
     if {e["event_id"]: e for e in october_found} != {e["event_id"]: e for e in october_expected}:
         fail("October REGAGE event set differs from the reviewed receipt descriptors", errors)
     if len(legacy_regage) != 400:
@@ -82,8 +88,8 @@ def main() -> int:
     formal_regage = [event for event in regage if not str(event.get("source_key", "")).startswith("REGAGE_STATUS_EXPORT_20260921:")]
     if len(status_export_regage) != 284:
         fail(f"canonical source has {len(status_export_regage)} rather than 284 status-export-only REGAGE events", errors)
-    if len(formal_regage) != 116 + october_count:
-        fail(f"canonical source has {len(formal_regage)} rather than {116 + october_count} formal REGAGE event identities", errors)
+    if len(formal_regage) != 116 + october_count + r865_count:
+        fail(f"canonical source has {len(formal_regage)} rather than {116 + october_count + r865_count} formal REGAGE event identities", errors)
     # The historical 163-row incoming cohort is preserved, not silently redefined.
     # New notice rows are independently compared with their controlled source set.
     notice_expected = {
