@@ -1,0 +1,154 @@
+{
+  "schema": "por-derecho.public-safe-obrem-review.v1",
+  "reference": "PD-C36-OBREM-TITLE-REGISTRY-20261123-001",
+  "as_of": "2026-11-23",
+  "status": "REVIEW_ONLY_NOT_MERGED_NOT_DEPLOYED",
+  "classification": "PUBLIC_SAFE_DERIVATIVE_ONLY",
+  "source_custody": "controlled originals outside public repositories",
+  "events": [
+    {
+      "id": "event-1",
+      "date": "2018-11-28",
+      "en": "2018 notarial deed for separation of the ob-rem link and sale to CAM",
+      "es": "Escritura 2150: desvinculación ob rem y venta a CAM",
+      "en_limit": "The deed alone does not establish entry in every property's Registry sheet.",
+      "es_limit": "La escritura no demuestra por sí sola su inscripción en cada finca."
+    },
+    {
+      "id": "event-2",
+      "date": "2019-01-29",
+      "en": "Property 8,535: 2018 extract named Luchy; 2019 extract named CAM under entry 11 citing deed 2150.",
+      "es": "Finca 8.535: nota de 2018 a nombre de Luchy; nota de 2019 a nombre de CAM, inscripción 11.ª, título 2150.",
+      "en_limit": "No current title or later mutation certified.",
+      "es_limit": "No certifica la titularidad actual ni los asientos posteriores."
+    },
+    {
+      "id": "event-3",
+      "date": "2019-03-20",
+      "en": "Property 8,536 still appears registered to Luchy and records presentation 704, Diario 54, as pending. December 2018 extracts for 8,653 and 8,654 also show Luchy and the ob-rem link.",
+      "es": "Finca 8.536 aún inscrita a nombre de Luchy y asiento 704, Diario 54, pendiente. Notas de diciembre de 2018 de 8.653 y 8.654 también registraban a Luchy y la vinculación ob rem.",
+      "en_limit": "The later fate of entry 704 and its re-presentation is not certified.",
+      "es_limit": "No está certificado el destino posterior del asiento 704 ni su eventual nueva presentación."
+    },
+    {
+      "id": "event-4",
+      "date": "2019-10-24",
+      "en": "The six-page judicial order refused validation of the 2018 deed and set aside the 12-Dec-2018 procedural direction, recognising the unitary-sale conflict.",
+      "es": "El Auto judicial de seis páginas denegó convalidar la escritura de 2018 y dejó sin efecto la diligencia de 12/12/2018, reconociendo el conflicto con la venta unitaria.",
+      "en_limit": "It does not alone show Registry cancellation, refund or reconveyance.",
+      "es_limit": "No prueba por sí solo cancelación registral, devolución del precio ni retrocesión."
+    },
+    {
+      "id": "event-5",
+      "date": "2020-05-12",
+      "en": "The two-page court order dismissed Luchy Playa Blanca's reconsideration and confirmed the October 2019 order in full.",
+      "es": "Auto de dos páginas: desestimó la reposición de Luchy Playa Blanca y confirmó íntegramente el Auto de octubre de 2019.",
+      "en_limit": "It does not resolve later titles or all Registry entries.",
+      "es_limit": "No resuelve todos los títulos ni asientos posteriores."
+    },
+    {
+      "id": "event-6",
+      "date": "2021-05-18",
+      "en": "A later court order definitively approved the CAM disposal proposal: apartments by transfer in satisfaction of secured claims, and properties 8,508–8,536, 8,653, 8,654 by €400,000 direct sale.",
+      "es": "Auto posterior: aprobó definitivamente la propuesta CAM, con dación en pago de apartamentos y venta directa por 400.000 € de las fincas 8.508–8.536, 8.653 y 8.654.",
+      "en_limit": "Its effect upon the earlier transaction must be established, not inferred.",
+      "es_limit": "Su efecto sobre la operación anterior requiere prueba y análisis."
+    },
+    {
+      "id": "event-7",
+      "date": "2021-10-15",
+      "en": "The court dismissed Luchy's and AWESWELL's reconsideration of the May approval. A distinct appellate complaint was dismissed on 16 November 2021.",
+      "es": "El juzgado desestimó las reposiciones de Luchy y AWESWELL contra la aprobación de mayo; una queja distinta fue desestimada en apelación el 16 de noviembre de 2021.",
+      "en_limit": "Neither decision expressly certifies the complete historic Registry sequence.",
+      "es_limit": "Ninguna decisión certifica expresamente el tracto registral histórico completo."
+    },
+    {
+      "id": "event-8",
+      "date": "2022-02-21",
+      "en": "A later adjudication deed for CAM is located in controlled custody; its individual title consequences must be reconciled with the court authorisations and Registry entries.",
+      "es": "Localizada escritura posterior de adjudicación a CAM; deben conciliarse sus efectos por finca con los Autos y asientos registrales.",
+      "en_limit": "No automatic finding of full cure, cleared charges, economic payment or liability.",
+      "es_limit": "No puede presumirse subsanación íntegra, cancelación de cargas, pago ni responsabilidad."
+    }
+  ],
+  "registry_checks": [
+    {
+      "record": "8.535",
+      "es": "Inscripción 11.ª y posteriores",
+      "en": "Entry 11 and later entries",
+      "state": "CURRENT_CERTIFICATION_MISSING"
+    },
+    {
+      "record": "8.536",
+      "es": "Inscripciones 12.ª–14.ª y vinculación ob rem",
+      "en": "Entries 12–14 and ob-rem link",
+      "state": "CURRENT_CERTIFICATION_MISSING"
+    },
+    {
+      "record": "8.653",
+      "es": "Historial desde 2018 y eventual cancelación",
+      "en": "History since 2018 and any cancellation",
+      "state": "CURRENT_CERTIFICATION_MISSING"
+    },
+    {
+      "record": "8.654",
+      "es": "Historial desde 2018 y eventual cancelación",
+      "en": "History since 2018 and any cancellation",
+      "state": "CURRENT_CERTIFICATION_MISSING"
+    },
+    {
+      "record": "704 / Diario 54",
+      "es": "Presentación, calificación, notificaciones, subsanaciones, caducidad y nueva presentación",
+      "en": "Presentation, qualification, notices, correction, expiry and renewed presentation",
+      "state": "CURRENT_CERTIFICATION_MISSING"
+    }
+  ],
+  "source_ids": [
+    {
+      "id": "S01",
+      "es": "Auto de 24/10/2019, Concurso 36/2012 (6 pp.)",
+      "en": "24-Oct-2019 judicial order, insolvency 36/2012 (6 pp.)"
+    },
+    {
+      "id": "S02",
+      "es": "Auto de 12/05/2020, reposición LPB (2 pp.)",
+      "en": "12-May-2020 LPB reconsideration order (2 pp.)"
+    },
+    {
+      "id": "S03",
+      "es": "Escritura de 28/11/2018, protocolo 2150, Manuel Guzmán Ramos (copia dentro de compilación)",
+      "en": "28-Nov-2018 deed, protocol 2150, Manuel Guzmán Ramos (copy within compilation)"
+    },
+    {
+      "id": "S04",
+      "es": "Notas simples de Tías, fincas 8.535, 8.536, 8.653 y 8.654 (2018–2019)",
+      "en": "Tías Registry informational extracts, properties 8,535, 8,536, 8,653, 8,654 (2018–2019)"
+    },
+    {
+      "id": "S05",
+      "es": "Autos de 18/05/2021 y 15/10/2021, y Auto de la Audiencia Provincial de 16/11/2021",
+      "en": "18-May-2021 and 15-Oct-2021 orders and appellate order of 16-Nov-2021"
+    },
+    {
+      "id": "S06",
+      "es": "Escritura de adjudicación de 21/02/2022 (copia localizada)",
+      "en": "21-Feb-2022 adjudication deed (copy located)"
+    }
+  ],
+  "existing_case_records": [
+    "C36-JUD-2019-10-24-002",
+    "C36-JUD-2020-05-12-001",
+    "C36-DC-2019-10-24-NONCONVALIDATION",
+    "C36-DC-2020-05-12-LPB"
+  ],
+  "contrary_record": "2021-05-18 authorisation; 2021-10-15 dismissal; distinct 2021-11-16 appellate refusal",
+  "not_inferred": [
+    "automatic nullity",
+    "criminal liability",
+    "current title",
+    "restitution",
+    "final credits or damages",
+    "effect of an uncertified registration"
+  ],
+  "privacy": "No legal advice, emails, restricted Registry copies or private ZIP in public branch."
+}
