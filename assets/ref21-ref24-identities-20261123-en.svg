@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 464" role="img" aria-labelledby="title desc"><title id="title">Two complaints, procedural identity not certified</title><desc id="desc">REF21 and REF24 are different filings; the dashed procedural association has not been certified.</desc>
+ <rect width="980" height="464" rx="24" fill="#f8faf9"/>
+ <rect x="22" y="26" width="453" height="118" rx="17" fill="#e7f1fb" stroke="#4b789c" stroke-width="2"/>
+ <rect x="505" y="26" width="453" height="118" rx="17" fill="#e7f1fb" stroke="#4b789c" stroke-width="2"/>
+ <text x="49" y="62" font-size="24" font-family="Arial,sans-serif" font-weight="700" fill="#16496b">REF 21 · 25 June</text><text x="49" y="94" font-size="17" font-family="Arial,sans-serif" fill="#16496b">Private actors · autonomous filing</text>
+ <text x="529" y="62" font-size="24" font-family="Arial,sans-serif" font-weight="700" fill="#16496b">REF 24 · 18 June</text><text x="529" y="94" font-size="17" font-family="Arial,sans-serif" fill="#16496b">Judicial conduct · TSJC addressee</text><text x="529" y="120" font-size="15" font-family="Arial,sans-serif" fill="#16496b">25 June: dependent supplement</text>
+ <path d="M248 144V190 H490V219 M732 144V190 H490" fill="none" stroke="#ac7a25" stroke-width="3" stroke-dasharray="9 8"/>
+ <rect x="191" y="218" width="599" height="88" rx="17" fill="#fff4d8" stroke="#a77722" stroke-width="2"/>
+ <text x="490" y="252" text-anchor="middle" font-size="23" font-family="Arial,sans-serif" font-weight="700" fill="#78521e">CERTIFIED ALLOCATION MISSING</text><text x="490" y="282" text-anchor="middle" font-size="16" font-family="Arial,sans-serif" fill="#78521e">Does not prove joinder</text>
+ <path d="M490 306v24" stroke="#ad7932" stroke-width="3" stroke-dasharray="8 7"/>
+ <rect x="100" y="331" width="780" height="106" rx="18" fill="#f9e8e8" stroke="#b95c55" stroke-width="2"/>
+ <text x="490" y="361" text-anchor="middle" font-size="23" font-family="Arial,sans-serif" font-weight="700" fill="#9d3b35">DP 1901/2026 · Plaza 6</text>
+ <text x="490" y="390" text-anchor="middle" font-size="16" font-family="Arial,sans-serif" fill="#9d3b35">12 Jul order  ·  29 Jul Fiscal report missing  ·  14 Sep order</text>
+ <text x="490" y="419" text-anchor="middle" font-size="14" font-family="Arial,sans-serif" fill="#9d3b35">Association and independent treatment remain subject to official proof</text>
+</svg>

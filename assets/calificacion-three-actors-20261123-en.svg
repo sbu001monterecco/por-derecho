@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 530" role="img" aria-labelledby="title desc"><title id="title">Sequence of three acts, criminal agreement not established</title><desc id="desc">Tres actos institucionales identificados. La conexión con una supuesta coordinación criminal es una hipótesis, sin prueba concluyente.</desc>
+ <rect width="1060" height="530" rx="24" fill="#f7f8f5"/>
+ <rect x="18" y="30" width="322" height="132" rx="18" fill="#e6f2ea" stroke="#286b4a" stroke-width="2"/>
+ <rect x="370" y="30" width="322" height="132" rx="18" fill="#e6f2ea" stroke="#286b4a" stroke-width="2"/>
+ <rect x="722" y="30" width="322" height="132" rx="18" fill="#e6f2ea" stroke="#286b4a" stroke-width="2"/>
+ <text x="179" y="66" text-anchor="middle" font-size="14" fill="#235b41" font-family="Arial,sans-serif" font-weight="700">INSOLVENCY ADMINISTRATOR</text>
+ <text x="179" y="99" text-anchor="middle" font-size="17" fill="#235b41" font-family="Arial,sans-serif">F. de Borja Rodríguez-Batllori</text>
+ <text x="179" y="131" text-anchor="middle" font-size="14" fill="#235b41" font-family="Arial,sans-serif">11 Feb 2019 · classification report</text>
+ <text x="531" y="66" text-anchor="middle" font-size="14" fill="#235b41" font-family="Arial,sans-serif" font-weight="700">PUBLIC PROSECUTOR</text>
+ <text x="531" y="99" text-anchor="middle" font-size="17" fill="#235b41" font-family="Arial,sans-serif">Ricardo de Mosteyrín Sampalo</text>
+ <text x="531" y="131" text-anchor="middle" font-size="14" fill="#235b41" font-family="Arial,sans-serif">12 Mar 2019 · signed opinion</text>
+ <text x="883" y="66" text-anchor="middle" font-size="14" fill="#235b41" font-family="Arial,sans-serif" font-weight="700">INSOLVENCY JUDGE</text>
+ <text x="883" y="99" text-anchor="middle" font-size="17" fill="#235b41" font-family="Arial,sans-serif">Alberto López Villarrubia</text>
+ <text x="883" y="131" text-anchor="middle" font-size="11.5" fill="#235b41" font-family="Arial,sans-serif">28 Sep 2023 · partially favourable ruling</text>
+ <path d="M341 95H367 M693 95H719" fill="none" stroke="#286b4a" stroke-width="3"/>
+ <path d="M525 162V211" fill="none" stroke="#286b4a" stroke-width="3"/>
+ <rect x="180" y="213" width="700" height="86" rx="17" fill="#e6f2ea" stroke="#286b4a" stroke-width="2"/>
+ <text x="530" y="247" text-anchor="middle" font-size="20" font-weight="700" fill="#235b41" font-family="Arial,sans-serif">DOCUMENTED EFFECTS</text>
+ <text x="530" y="276" text-anchor="middle" font-size="15" fill="#235b41" font-family="Arial,sans-serif">Signed acts · partial acceptance · rejected allegations</text>
+ <path d="M530 300V344" stroke="#b57f2f" stroke-width="3" stroke-dasharray="9 8"/>
+ <rect x="115" y="345" width="830" height="118" rx="18" fill="#fff0d6" stroke="#b57f2f" stroke-width="2"/>
+ <text x="530" y="384" text-anchor="middle" font-size="21" font-weight="700" fill="#815418" font-family="Arial,sans-serif">COMPLAINANT’S HYPOTHESIS (UNPROVEN)</text>
+ <text x="530" y="418" text-anchor="middle" font-size="16" fill="#815418" font-family="Arial,sans-serif">Coordination, judicial pressure or shielding · separate proof needed</text>
+ <text x="530" y="499" text-anchor="middle" font-size="15" fill="#48525a" font-family="Arial,sans-serif">Solid line = documented act sequence  |  Dashed = allegation, NOT guilt</text>
+ </svg>

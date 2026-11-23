@@ -1,0 +1,20 @@
+
+.pd23{--ink:#13252d;--paper:#f3f0e9;--green:#235b41;--amber:#98621f;--blue:#245a81;--red:#9f403c;color:var(--ink)}
+.pd23 .pd23-ey{font-size:.76rem;letter-spacing:.10em;text-transform:uppercase;font-weight:800;color:#926f2b}
+.pd23 .pd23-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.pd23 .pd23-cols3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.pd23 .pd23-card{background:#fff;border:1px solid #d9dedc;border-radius:15px;padding:1.15rem;min-width:0}
+.pd23 .pd23-card h3{margin:.15rem 0 .65rem}.pd23 .pd23-card p{margin:.55rem 0}
+.pd23 .pd23-status{display:inline-block;font-weight:800;font-size:.76rem;text-transform:uppercase;letter-spacing:.03em;padding:.2rem .52rem;border-radius:5px;background:#ecf0f2;color:#4e565d}
+.pd23 .pd23-status.ok{background:#def0e3;color:#205a3f}.pd23 .pd23-status.open{background:#fbefd5;color:#805318}
+.pd23 .pd23-status.allege{background:#e0edf9;color:#1e557b}.pd23 .pd23-status.adverse{background:#f7e3e0;color:#983a35}
+.pd23 .pd23-visual{border:1px solid #d7dfdc;background:#fff;padding:1.1rem;border-radius:16px;margin:1.25rem 0}
+.pd23 .pd23-visual img{display:block;width:100%;height:auto;margin:auto;max-width:980px}
+.pd23 .pd23-legend{display:flex;flex-wrap:wrap;gap:.55rem;margin:.8rem 0 1.4rem}.pd23 .pd23-legend span{padding:.35rem .6rem;border-radius:6px;background:#fff;border-left:5px solid #8d989b;font-size:.85rem}
+.pd23 .pd23-legend .green{border-color:#24865d}.pd23 .pd23-legend .amber{border-color:#b9892d}.pd23 .pd23-legend .blue{border-color:#487eae}.pd23 .pd23-legend .red{border-color:#bc4a43}
+.pd23 .pd23-table{width:100%;border-collapse:collapse;background:#fff;margin:1.1rem 0;font-size:.95rem}
+.pd23 .pd23-table th,.pd23 .pd23-table td{padding:.8rem;border:1px solid #d5dcd8;vertical-align:top;text-align:left}
+.pd23 .pd23-table th{background:#e7ece9}.pd23 .pd23-table td:first-child{font-weight:700}
+.pd23 .pd23-mini{font-size:.9rem;color:#516061}.pd23 .pd23-box{background:#f8f5ed;border-left:5px solid #b28b35;padding:1.15rem;margin:1.3rem 0}
+.pd23 a{overflow-wrap:anywhere}.pd23 h2{line-height:1.18}.pd23 .pd23-links{display:flex;gap:.8rem;flex-wrap:wrap}
+@media(max-width:780px){.pd23 .pd23-grid,.pd23 .pd23-cols3{grid-template-columns:1fr}.pd23 .pd23-table{display:block;overflow-x:auto}}
