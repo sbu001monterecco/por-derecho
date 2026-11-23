@@ -1,0 +1,40 @@
+{
+  "schema": "por-derecho.matter-identity-registry.part.v1",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "type": "PERSON",
+  "control_date": "2026-11-23",
+  "records": [
+    {
+      "id": "PD-SP-P-0301",
+      "type": "PERSON",
+      "name": "Óscar Palacios Fernández",
+      "aliases": [
+        "Oscar Palacios",
+        "Óscar Palacios",
+        "Oscar Palacios Fernandez",
+        "Óscar Zacarías Palacios Fernández",
+        "PALACIOS FERNANDEZ OSCAR ZACARIAS"
+      ],
+      "identity_resolution": "CARET_CONFIRMED",
+      "identity_sources": [
+        "BORME-A-2024-122-35 act 287286: Canarian Hospitality, S.L. board director, registered 19 June 2024",
+        "Canarian Hospitality company release, 12 January 2022: expansion and institutional relations director, described as partner",
+        "Canarian Hospitality company management page: Óscar Palacios",
+        "Canarian Hospitality 20 July 2021 launch names Francisco Fernández and Alejandro Páez as founders; December 2024 press kit retrospectively lists Óscar Palacios as a 2021 founding partner. Exact earlier start and legal interest unresolved."
+      ],
+      "source_urls": [
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-122-35&lang=es",
+        "https://canarianhospitality.com/oscar-palacios-nuevo-director-de-expansion-y-relaciones-institucionales-de-canarian-hospitality-2/",
+        "https://canarianhospitality.com/quienes-somos/",
+        "https://canarianhospitality.com/nace-la-gestora-turistica-canarian-hospitality-con-acosta-matos-de-apoyo-estrategico/",
+        "https://canarianhospitality.com/wp-content/uploads/2024/12/ES_DosierDePrensa_CanarianHospitality_compressed.pdf"
+      ],
+      "capacity_boundary": "The January 2022 release is the earliest contemporaneously announced management appointment in this control. A December 2024 company kit retrospectively describes him as a 2021 founder, while the July 2021 launch names two other founding partners. The earlier start date and legal character of any interest remain unresolved. Company-described partner status does not establish an equity percentage. No knowledge, intent, wrongdoing or liability is inferred.",
+      "routes": {
+        "en": "/en/acosta-ricpe-people-network/#person-obs-oscar-palacios",
+        "es": "/es/acosta-ricpe-people-network/#person-obs-oscar-palacios"
+      },
+      "record_anchor": "archive/OSCAR_PALACIOS_CANARIAN_HOSPITALITY_IDENTITY_ROLE_CONTROL_04OCT2026.md#public-source-identity"
+    }
+  ]
+}

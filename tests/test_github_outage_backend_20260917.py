@@ -14,6 +14,7 @@ RECOVERY = ROOT / "ops" / "continuity" / "GITHUB_OPERATIONAL_BACKEND_RECOVERY_20
 COPILOT = ROOT / ".github" / "copilot-instructions.md"
 DUO_PROTOCOL = ROOT / "ops" / "duo" / "DUO_ORCHESTRATION_PROTOCOL_20260917.md"
 REGISTRY = ROOT / "assets" / "data" / "matter-identity-registry-v1.json"
+CURRENT_UNITARY_STATE = ROOT / "ops" / "CURRENT_UNITARY_STATE.json"
 
 spec = importlib.util.spec_from_file_location("pd_public_impact_shadow", CLASSIFIER_PATH)
 mod = importlib.util.module_from_spec(spec)
@@ -24,7 +25,7 @@ spec.loader.exec_module(mod)
 
 class OutageBackendParityTests(unittest.TestCase):
     def test_required_recovery_controls_exist(self):
-        for path in (WORKFLOW_PATH, CLASSIFIER_PATH, PARITY, RECOVERY, COPILOT, DUO_PROTOCOL, REGISTRY):
+        for path in (WORKFLOW_PATH, CLASSIFIER_PATH, PARITY, RECOVERY, COPILOT, DUO_PROTOCOL, REGISTRY, CURRENT_UNITARY_STATE):
             self.assertTrue(path.is_file(), path)
 
     def test_required_outage_context_runs_on_every_pull_request(self):
@@ -40,12 +41,14 @@ class OutageBackendParityTests(unittest.TestCase):
         self.assertEqual(data["last_verified_gitlab_main_sha"], "7d086d098676eecc2c1647ed09b348d8dc0bdc69")
         self.assertEqual(data["outage_working_branch"], "continuity/gitlab-block-working-lane-20260917")
 
-    def test_registry_denominator_matches_recovery_manifest(self):
+    def test_registry_preserves_historical_recovery_baseline_and_current_source(self):
         registry = json.loads(REGISTRY.read_text(encoding="utf-8"))
         parity = json.loads(PARITY.read_text(encoding="utf-8"))
+        current = json.loads(CURRENT_UNITARY_STATE.read_text(encoding="utf-8"))
         identity = next(x for x in parity["layers"] if x["id"] == "IDENTITY_REGISTRY")
-        self.assertEqual(registry["counts"]["total"], identity["known_count"])
-        self.assertEqual(registry["counts"]["total"], 380)
+        self.assertEqual(identity["known_count"], 380)  # 17 September snapshot remains exact.
+        self.assertGreaterEqual(registry["counts"]["total"], identity["known_count"])
+        self.assertEqual(registry["counts"], current["identity_registry"]["counts"])
 
     def test_classifier_fails_closed_for_public_runtime(self):
         self.assertEqual(mod.classify(["assets/site.js"]).result, "YES_OR_UNKNOWN")

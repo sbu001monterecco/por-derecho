@@ -96,10 +96,14 @@ def audit() -> dict:
     registry = json.loads(read_text("assets/data/matter-identity-registry-v1.json"))
     if registry.get("registry_id") != "PD-SP-IDENTITY-REGISTRY-001":
         failures.append("registry_id_mismatch")
-    if registry.get("counts", {}).get("total") != 380:
+    current_state = json.loads(read_text("ops/CURRENT_UNITARY_STATE.json"))
+    if registry.get("counts") != current_state.get("identity_registry", {}).get("counts"):
         failures.append("registry_denominator_drift")
 
     parity = json.loads(read_text("ops/continuity/GITHUB_OPERATIONAL_BACKEND_PARITY_20260917.json"))
+    identity_layer = next((item for item in parity.get("layers", []) if item.get("id") == "IDENTITY_REGISTRY"), {})
+    if identity_layer.get("known_count") != 380:
+        failures.append("historical_17sep_registry_baseline_drift")
     if parity.get("status") != "ACTIVE_OUTAGE_CONTINUITY":
         failures.append("outage_parity_not_active")
     if parity.get("last_verified_gitlab_main_sha") != "7d086d098676eecc2c1647ed09b348d8dc0bdc69":

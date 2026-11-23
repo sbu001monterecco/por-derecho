@@ -3,7 +3,7 @@
   "control_id": "PD-AM-RICPE-PEOPLE-GRAPH-20261120-001",
   "created_on": "2026-11-20",
   "classification": "PUBLIC_SAFE_DERIVATIVE_REVIEW_REQUIRED",
-  "canonical_identity_registry": "assets/data/matter-identity-registry-v1.people.json",
+  "canonical_identity_registry": "assets/data/matter-identity-registry-v1.json",
   "legend": {
     "registered_office": "Dated official corporate office, not payroll",
     "company_published": "Published current page observed 20 Nov 2026, not real-time HR confirmation",
@@ -126,6 +126,35 @@
       "basis": "official_registry",
       "entry": "168456",
       "source_date": "registered 2 Apr 2024; published 9 Apr 2024"
+    },
+    "BORME122CH": {
+      "title": "BORME 26 Jun 2024, Canarian Hospitality act 287286",
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-122-35&lang=es",
+      "basis": "official_registry",
+      "entry": "287286",
+      "registered_at": "2024-06-19",
+      "published_at": "2024-06-26"
+    },
+    "CH2022": {
+      "title": "Canarian Hospitality appointment release, 12 Jan 2022",
+      "url": "https://canarianhospitality.com/oscar-palacios-nuevo-director-de-expansion-y-relaciones-institucionales-de-canarian-hospitality-2/",
+      "basis": "company_published",
+      "source_date": "2022-01-12",
+      "boundary": "Company described partner status; equity percentage not established."
+    },
+    "CH2021LAUNCH": {
+      "title": "Canarian Hospitality launch release, 20 Jul 2021",
+      "url": "https://canarianhospitality.com/nace-la-gestora-turistica-canarian-hospitality-con-acosta-matos-de-apoyo-estrategico/",
+      "basis": "company_published",
+      "source_date": "2021-07-20",
+      "boundary": "Names two founding partners, not Óscar Palacios; absence is not proof of no earlier interest."
+    },
+    "CH2024KIT": {
+      "title": "Canarian Hospitality press kit, Dec 2024",
+      "url": "https://canarianhospitality.com/wp-content/uploads/2024/12/ES_DosierDePrensa_CanarianHospitality_compressed.pdf",
+      "basis": "company_published_retrospective",
+      "source_date": "2024-12",
+      "boundary": "Calls Óscar Palacios a 2021 founder, differing from contemporaneous 2021 and 2022 announcements; underlying records required."
     }
   },
   "organisations": [
@@ -469,8 +498,16 @@
       "id": "obs-oscar-palacios",
       "name": "Óscar Palacios",
       "lane": "ch_management",
-      "canonical_actor_id": null,
-      "source_status": "candidate_public_observation_not_assigned_new_canonical_actor_id"
+      "canonical_actor_id": "PD-SP-P-0301",
+      "source_status": "canonical_public_source_identity_bridge",
+      "identity_bridge_sources": [
+        "BORME122CH",
+        "CH2022",
+        "CHTEAM",
+        "CH2021LAUNCH",
+        "CH2024KIT"
+      ],
+      "identity_start_qualification": "July 2021 launch named two other founders; January 2022 release announced his appointment; December 2024 press kit retrospectively called him a 2021 founder. Exact earlier start and legal interest unresolved."
     },
     {
       "id": "obs-alejandro-paez",
@@ -1390,6 +1427,28 @@
         "BORME2026"
       ],
       "status": "official_registered_act"
+    },
+    {
+      "person_id": "obs-oscar-palacios",
+      "organization_id": "CH",
+      "role": "Expansion and Institutional Relations Director (company announcement)",
+      "relation_kind": "company_published_management",
+      "when": "12 Jan 2022",
+      "sources": [
+        "CH2022"
+      ],
+      "status": "source_supported"
+    },
+    {
+      "person_id": "obs-oscar-palacios",
+      "organization_id": "CH",
+      "role": "Board director",
+      "relation_kind": "registered_board",
+      "when": "registered 19 Jun 2024; published 26 Jun 2024",
+      "sources": [
+        "BORME122CH"
+      ],
+      "status": "official_registered_act"
     }
   ],
   "documented_family_edges": [
@@ -1545,11 +1604,11 @@
   ],
   "audit": {
     "person_count": 52,
-    "role_count": 66,
+    "role_count": 68,
     "org_count": 14,
     "parent_child_edges": 4,
     "organisation_edges": 8,
-    "source_count": 19,
+    "source_count": 23,
     "registered_2026_board_members": 4,
     "historical_2025_board_members": 12
   },

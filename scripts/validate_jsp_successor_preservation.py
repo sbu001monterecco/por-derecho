@@ -141,7 +141,20 @@ def audit(reader, base, candidate):
     require(set(bp) <= set(cp), 'Successor lost shard')
     for name, part in bp.items():
         preserve_fields({k: v for k, v in part.items() if k != 'count'}, cp[name], 'part ' + name)
-    preserve_fields({k: v for k, v in bm.items() if k not in ('parts', 'counts', 'control_date')}, cm, 'manifest')
+    preserve_fields({k: v for k, v in bm.items() if k not in ('parts', 'counts', 'control_date', 'coverage')}, cm, 'manifest')
+    # A newly admitted, source-backed identity may extend the required-name
+    # coverage list. Keep every inherited name in its original position and
+    # preserve every other coverage field exactly.
+    old_coverage, new_coverage = bm['coverage'], cm['coverage']
+    preserve_fields({k: v for k, v in old_coverage.items() if k != 'required_names'}, new_coverage, 'manifest coverage')
+    old_names, new_names = old_coverage['required_names'], new_coverage['required_names']
+    require(isinstance(old_names, list) and isinstance(new_names, list)
+            and new_names[:len(old_names)] == old_names, 'Required-name coverage is not append-only')
+    appended = new_names[len(old_names):]
+    admitted_names = {norm(cr[rid]['name']) for rid in added}
+    require(len({norm(name) for name in new_names}) == len(new_names)
+            and all(isinstance(name, str) and norm(name) in admitted_names for name in appended),
+            'Required-name addition lacks a newly admitted identity')
     require(date.fromisoformat(bm['control_date']) <= date.fromisoformat(cm['control_date']), 'Control date moved backward')
     evidence = json.loads(reader.read(candidate, EVIDENCE))
     source_ids = {s['id'] for s in evidence['sources']}
