@@ -112,3 +112,9 @@ Gil Marer states that he has acted and continues to act as a reporting person, i
 
 This is the author's stated position. It does not confer protected status automatically, apply later legislation retroactively to 2016 facts or communications, or replace a determination by a competent authority or court. The controlling bilingual wording and scope limits are preserved in [AUTHOR_REPORTING_PERSON_ALERTADOR_FOOTER_CONTROL_22AUG2026.md](AUTHOR_REPORTING_PERSON_ALERTADOR_FOOTER_CONTROL_22AUG2026.md).
 
+
+## Review-only Sun Park ob rem title / registry source sequence (2018–2022)
+
+Proposed bilingual source reader, **not yet approved for release**: [Español](es/sun-park-obrem-titulo-registro-2018-2022/index.html) · [English](en/sun-park-obrem-title-registry-2018-2022/index.html) · [public-safe source status](assets/data/sun-park-obrem-title-registry-20261123-v1.json). Canonical control: `PD-C36-OBREM-TITLE-REGISTRY-20261123-001`.
+
+This candidate distinguishes the 2019 refusal to validate the 2018 deed, the 2020 reconsideration decision, contrary 2021 judicial orders, the 2022 title, historical entries for properties 8.535/8.536/8.653/8.654, and still-missing literal certificates. These are documented facts and finite verification questions, **not** a finding of automatic nullity, fraud, criminal responsibility or accounting recovery. No private originals, correspondence or unredacted registry material is added. Merge/deploy separately gated.

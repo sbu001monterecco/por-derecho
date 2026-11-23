@@ -1,0 +1,101 @@
+{
+  "schema": "por-derecho.obrem-title-registry.public.v1",
+  "canonical_control": "PD-C36-OBREM-TITLE-REGISTRY-20261123-001",
+  "prepared_date": "2026-11-23",
+  "status": "review candidate; no public release approval",
+  "privacy": "private PDFs, correspondence, user identities and sensitive registry extracts excluded",
+  "paths": {
+    "es": "es/sun-park-obrem-titulo-registro-2018-2022/index.html",
+    "en": "en/sun-park-obrem-title-registry-2018-2022/index.html"
+  },
+  "timeline": [
+    {
+      "date": "2018-11-28",
+      "source": "deed-2150"
+    },
+    {
+      "date": "2018-12-28",
+      "source": "registry-2018"
+    },
+    {
+      "date": "2019-01-29",
+      "source": "registry-8535"
+    },
+    {
+      "date": "2019-03-20",
+      "source": "registry-8536"
+    },
+    {
+      "date": "2019-10-24",
+      "source": "court-2019"
+    },
+    {
+      "date": "2020-05-12",
+      "source": "court-2020"
+    },
+    {
+      "date": "2021-05-18",
+      "source": "court-2021-may"
+    },
+    {
+      "date": "2021-10-15",
+      "source": "court-2021-oct"
+    },
+    {
+      "date": "2022-02-21",
+      "source": "deed-2022"
+    }
+  ],
+  "property_ids": [
+    "8.535",
+    "8.536",
+    "8.653",
+    "8.654"
+  ],
+  "source_digests": {
+    "court-2019": {
+      "pages": 6,
+      "sha256": "8af3d07b385270d6b83897a041fbcab1e5fadb4ad2c27c2b5eddfc882261df9c",
+      "status": "complete original verified; private"
+    },
+    "court-2020": {
+      "pages": 2,
+      "sha256": "2caa1492433a74c603efedf9662ca1057eda863cadb81474cf05a8b7a5cfbbfa",
+      "status": "complete original verified; private"
+    },
+    "court-2021-may": {
+      "pages": 5,
+      "sha256": "093092dd10764ef995d9a2851d4b4e5c8911d245a212927d1db4bdfcc326abf7",
+      "status": "complete original verified; private"
+    },
+    "deed-2150": {
+      "compilation_pages": 282,
+      "start_pdf_page": 27,
+      "sha256_compilation": "1ab0fca1692eb202dd0b439a165e56785550d7bc320c947d5953a32f0fc8c9c5",
+      "status": "private filing compilation, not standalone 282-page deed"
+    },
+    "registry-2018": {
+      "status": "historical notes only; no current literal certificates"
+    },
+    "registry-8535": {
+      "status": "historical 2019 note; entry 11; no current literal certificate"
+    },
+    "registry-8536": {
+      "status": "historical 2019 note; no current literal certificate"
+    },
+    "court-2021-oct": {
+      "status": "complete order identified, private"
+    },
+    "deed-2022": {
+      "status": "private scanned deed; current registry implementation unverified"
+    }
+  },
+  "required_gates": [
+    "court and deed source fidelity",
+    "Spanish-English event parity",
+    "prior and adverse rulings preserved",
+    "registry literal certification still open",
+    "private evidence excluded",
+    "no merge without express release approval"
+  ]
+}
