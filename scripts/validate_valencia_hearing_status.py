@@ -48,11 +48,13 @@ REQUIRED = {
     "es/actualizaciones/index.html": ("cronologia-vista-valencia-24ago", "28 de enero de 2027 a las 10:00"),
 }
 
-FORBIDDEN_PATTERNS = (
+FORBIDDEN_HEARING_DATES = (
     (r"(?<!\d)9 October 2026(?!\d)", "9 October 2026"),
     (r"(?<!\d)9 de octubre de 2026(?!\d)", "9 de octubre de 2026"),
     (r"(?<!\d)9-Oct-2026(?!\d)", "9-Oct-2026"),
     (r"(?<!\d)9 octubre 2026(?!\d)", "9 octubre 2026"),
+)
+FORBIDDEN_GLOBAL_IDENTIFIERS = (
     (r"46250-42-1-2023-0057718", "46250-42-1-2023-0057718"),
     (
         r"Juzgado de Primera Instancia e Instrucción nº 27 de Valencia",
@@ -92,9 +94,19 @@ def main() -> int:
             continue
         scanned += 1
         text = path.read_text(encoding="utf-8", errors="replace")
-        for pattern, marker in FORBIDDEN_PATTERNS:
+        relative = str(path.relative_to(ROOT))
+        for pattern, marker in FORBIDDEN_GLOBAL_IDENTIFIERS:
             if re.search(pattern, text):
                 errors.append(f"{path.relative_to(ROOT)}: forbidden superseded marker {marker!r}")
+        # A 9 October 2026 date is valid in other matters, including ICALPA's
+        # DIP 80 transmission chronology. Reject it on the enumerated Valencia
+        # hearing surfaces and wherever a local passage identifies this hearing.
+        for pattern, marker in FORBIDDEN_HEARING_DATES:
+            for match in re.finditer(pattern, text):
+                context = text[max(0, match.start() - 300):match.end() + 300]
+                if (relative in REQUIRED or "valencia" in relative.lower()
+                    or re.search(r"Valencia|1859/2023-9|46250-42-1-2023-0049579", context, re.I)):
+                    errors.append(f"{relative}: forbidden superseded Valencia hearing marker {marker!r}")
 
     if errors:
         print("FAIL: Valencia hearing chronology")

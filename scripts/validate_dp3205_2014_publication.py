@@ -978,7 +978,10 @@ for page in (
 # The convergence graph must expose DP3205 as a bounded mid-chain node and retain
 # direct, functional and attributed-inference grades without transferring mens rea.
 graph = read_json(CONVERGENCE_GRAPH)
-require(graph.get("control_date") == "2026-08-30", "convergence graph control date is stale")
+# The August DP3205 source remains historical. The full convergence master was
+# source-controlled on 4 October; its public-safe wording was projected later.
+require(graph.get("control_date") == "2026-10-04", "convergence graph source control date drift")
+require(graph.get("public_projection_date") == "2026-11-23", "convergence graph public projection date drift")
 require(graph.get("parallel_spines", {}).get("claimed_office_incident") == ["aizpurua", "fmmm", "dp3205", "community", "cam"], "claimed-office incident spine is incomplete")
 stage2 = read_json(CONVERGENCE_STAGE2).get("nodes", [])
 require(any(item.get("key") == "dp3205" and item.get("registry_id") == PROCEEDING_ID for item in stage2 if isinstance(item, dict)), "convergence graph lacks the DP3205 proceeding node")
