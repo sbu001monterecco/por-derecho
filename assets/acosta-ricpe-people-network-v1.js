@@ -151,7 +151,11 @@
       const card = el("article", null, "career-path");
       const person = people.get(id), name = el("a", person.name);
       name.href = "#person-" + id;
-      card.append(name);
+      const evidence = el("a", es ? "Abrir expediente profesional documentado →" :
+        "Open the sourced professional dossier →");
+      evidence.href = "../irea-colliers-meridian-sun-park/#" +
+        (id === "p0088" ? "fernando-aguiar-acosta" : "laura-aguiar-acosta");
+      card.append(name, evidence);
       const list = el("ol", null);
       for (const role of data.roles.filter(item => item.person_id === id)) {
         const org = data.organisations.find(item => item.id === role.organization_id);
@@ -166,8 +170,15 @@
   function personCard(data, person, roles) {
     const card = el("article", null, "person-card");
     card.id = "person-" + person.id;
-    card.append(el("span", lanes[person.lane] || person.lane, "lane"), el("h3", person.name),
-      el("code", person.canonical_actor_id || words.unknown, "person-id"));
+    const identity = person.canonical_actor_id ?
+      el("a", person.canonical_actor_id, "person-id") : el("code", words.unknown, "person-id");
+    if (person.canonical_actor_id) {
+      identity.href = (es ? "../registro-identidad-materia/#" : "../matter-identity-registry/#") +
+        encodeURIComponent(person.canonical_actor_id);
+      identity.setAttribute("aria-label", (es ? "Abrir identidad canónica " : "Open canonical identity ") +
+        person.canonical_actor_id);
+    }
+    card.append(el("span", lanes[person.lane] || person.lane, "lane"), el("h3", person.name), identity);
     for (const role of roles) {
       const org = data.organisations.find(item => item.id === role.organization_id);
       const row = el("div", null, "role-row");

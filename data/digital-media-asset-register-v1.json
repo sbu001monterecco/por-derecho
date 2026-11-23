@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.digital-media-asset-register.v1",
   "register_id": "PD-DMA-REG-0001",
-  "control_date": "2026-10-01",
+  "control_date": "2026-11-23",
   "status": "ACTIVE_CANONICAL_REGISTER",
   "caret_semantics": "A terminal caret identifies one exact byte object whose SHA-256, byte length, MIME/format and dimensions where applicable are recorded. It does not validate factual content, publication status, ownership, endorsement, knowledge, intent or legal responsibility.",
   "namespace_separation": "PD-DMA caret references identify digital/media files. They are separate from CAEPR person/entity identity carets and must not be conflated.",
@@ -203,7 +203,8 @@
       "edition": "APPROVED_ORIGINAL_RECOVERED",
       "publication_status": "PUBLIC",
       "satire_compliance_id": "PD-SAT-MASTER-MYND-0001",
-      "web_file": "PD-DMA-0005-ES-PAGE^",
+      "web_file": "PD-DMA-0005-ES-PAGE-20261123^",
+      "web_file_en": "PD-DMA-0005-EN-PAGE-20261123^",
       "image_file": "PD-DMA-0005^",
       "sources": [
         "SRC-MASTER-MYND-APPROVED-DRAFT-20260905"
@@ -583,8 +584,8 @@
       "mime": "text/html",
       "bytes": 35232,
       "sha256": "70e1833e43e3ab6505768eec77d164f3f66d314c7759fb5eb8b8cfa4f1baac1f",
-      "repository_mirror": true,
-      "publication_status": "PUBLIC",
+      "repository_mirror": false,
+      "publication_status": "SUPERSEDED_PUBLIC_URL_SERVES_REPLACEMENT",
       "prior_surface_versions": [
         {
           "sha256": "8a520dd731eb37fbe0d27e2982d86a08f1abde4c5ffc860f88d71582c586d396",
@@ -592,7 +593,27 @@
           "state": "SUPERSEDED_BY_SOURCE_IDENTICAL_READING_ORDER_REPAIR",
           "source_head": "7a07778d120ce9ef777668758b2f449785fc10b5"
         }
-      ]
+      ],
+      "source_head": "6411d28961ac0de052f163c3363489e752de548f",
+      "source_path": "es/acosta-matos-familia/index.html",
+      "superseded_by": "PD-DMA-0005-ES-PAGE-20261123^",
+      "correction_date": "2026-11-23",
+      "correction_reason": "Source-qualified bilingual people-graph interlink repair"
+    },
+    {
+      "reference": "PD-DMA-0005-ES-PAGE-20261123^",
+      "logical_asset": "PD-DMA-0005",
+      "role": "DISCLOSED_EDITORIAL_PUBLICATION_SURFACE",
+      "repository_path": "es/acosta-matos-familia/index.html",
+      "public_url": "/es/acosta-matos-familia/index.html",
+      "mime": "text/html",
+      "bytes": 36404,
+      "sha256": "b3b78846341db96c0853c66eb03f4e7d639059ecef1b2a6a6ad7d237712a6efe",
+      "repository_mirror": true,
+      "publication_status": "PUBLIC",
+      "supersedes": "PD-DMA-0005-ES-PAGE^",
+      "control_date": "2026-11-23",
+      "correction_reason": "Source-qualified bilingual people-graph interlink repair"
     },
     {
       "reference": "PD-DMA-0005-EN-PAGE^",
@@ -603,8 +624,8 @@
       "mime": "text/html",
       "bytes": 50607,
       "sha256": "6fe117389f0c91f10af2e2520444a55fddf6d5710aff0fc5f3142340a1898488",
-      "repository_mirror": true,
-      "publication_status": "PUBLIC",
+      "repository_mirror": false,
+      "publication_status": "SUPERSEDED_PUBLIC_URL_SERVES_REPLACEMENT",
       "prior_surface_versions": [
         {
           "sha256": "0bf971d54f845bcbe7984013d2937a013f3dd74939be721c96e816eeaff91ef4",
@@ -618,7 +639,27 @@
           "state": "SUPERSEDED_BY_SOURCE_IDENTICAL_CONTRAST_REPAIR",
           "source_head": "a97c22bb16f744f18f4f287991d277902ff5dcfe"
         }
-      ]
+      ],
+      "source_head": "6411d28961ac0de052f163c3363489e752de548f",
+      "source_path": "en/acosta-matos-family/index.html",
+      "superseded_by": "PD-DMA-0005-EN-PAGE-20261123^",
+      "correction_date": "2026-11-23",
+      "correction_reason": "Source-qualified bilingual people-graph interlink repair"
+    },
+    {
+      "reference": "PD-DMA-0005-EN-PAGE-20261123^",
+      "logical_asset": "PD-DMA-0005",
+      "role": "DISCLOSED_EDITORIAL_PUBLICATION_SURFACE",
+      "repository_path": "en/acosta-matos-family/index.html",
+      "public_url": "/en/acosta-matos-family/",
+      "mime": "text/html",
+      "bytes": 50667,
+      "sha256": "a9950360de3446f354cf5e69b5e2d8b9cc766bf276b98ab60c55f7d8d5159908",
+      "repository_mirror": true,
+      "publication_status": "PUBLIC",
+      "supersedes": "PD-DMA-0005-EN-PAGE^",
+      "control_date": "2026-11-23",
+      "correction_reason": "Source-qualified bilingual people-graph interlink repair"
     },
     {
       "reference": "PD-DMA-0007^",
