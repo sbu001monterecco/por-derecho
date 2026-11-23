@@ -1,13 +1,13 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 74,
-  "owner": "2156:636a5acb0ec0d1ca8a05ea5871bf2c7e50a0d0ab",
-  "phase": "VERIFIED_FOR_SCOPE",
-  "pr": 2156,
-  "base_sha": "23ad923d426e73c6f677d9640a6c9ad63a578d0d",
-  "candidate_sha": "636a5acb0ec0d1ca8a05ea5871bf2c7e50a0d0ab",
-  "run_id": 45282592850,
-  "claimed_at": "2026-11-23T22:41:24.414121Z",
+  "fence": 75,
+  "owner": "2157:66a345092862cb0f216cba9c6400ac8e109f83c6",
+  "phase": "CLAIMED",
+  "pr": 2157,
+  "base_sha": "e52e170eacad533a6074d31c1bb793bb0e38acff",
+  "candidate_sha": "66a345092862cb0f216cba9c6400ac8e109f83c6",
+  "run_id": 45283616864,
+  "claimed_at": "2026-11-23T22:51:54.454090Z",
   "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
     {
@@ -3744,119 +3744,5 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-11-23T22:41:25.794103Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "PD release acceptance",
-            "id": 138066849494,
-            "conclusion": "success"
-          },
-          {
-            "name": "publication-integrity",
-            "id": 138066848759,
-            "conclusion": "success"
-          }
-        ]
-      }
-    },
-    {
-      "phase": "MERGE_PENDING",
-      "at": "2026-11-23T22:45:19.630929Z",
-      "evidence": {
-        "pr": 2156
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-11-23T22:45:20.697440Z",
-      "evidence": {
-        "merge_sha": "e52e170eacad533a6074d31c1bb793bb0e38acff"
-      }
-    },
-    {
-      "phase": "DEPLOYED",
-      "at": "2026-11-23T22:45:23.001160Z",
-      "evidence": {
-        "pages_run_id": 45282161927,
-        "merge_sha": "e52e170eacad533a6074d31c1bb793bb0e38acff"
-      }
-    },
-    {
-      "phase": "VERIFIED_FOR_SCOPE",
-      "at": "2026-11-23T22:45:31.292487Z",
-      "evidence": {
-        "merge_sha": "e52e170eacad533a6074d31c1bb793bb0e38acff",
-        "pages_run_id": 45282161927,
-        "exact_matches": [
-          {
-            "path": "assets/data/community-acta-authority-interconnectivity-v1.json",
-            "sha256": "a619f127828665d5eef46fe77760c35af0d72323105dd9fd5e5aacd395bbed1d",
-            "bytes": 237485
-          },
-          {
-            "path": "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
-            "sha256": "d1200a03f9c60fb298de09113f149826eed2f877191ea1fe040f070827d412ba",
-            "bytes": 715248
-          },
-          {
-            "path": "assets/data/institutional-communications-register-v1.json",
-            "sha256": "6a54601d3664eeacb06fdd9b71978801dfaa35537bc69a1f132ae7676c69bdf7",
-            "bytes": 1895468
-          },
-          {
-            "path": "assets/data/redsara-age-filings-register-v1.json",
-            "sha256": "c3dc013dfa4a2e761429b417a9641fa7c7c3517ec93b443055ec267fbbb8423c",
-            "bytes": 1031767
-          },
-          {
-            "path": "en/cabildo-lanzarote-tourism-traceability/index.html",
-            "sha256": "03c3142bd07f9a95fc90c8bed66c079a236f0aca746a0c0df7d7d0b62a74783c",
-            "bytes": 7874
-          },
-          {
-            "path": "en/index.html",
-            "sha256": "68bbcdf2db7f0fa9180f4939986f03d4a0f222ade5cbd3ad529be8712ebe5554",
-            "bytes": 235110
-          },
-          {
-            "path": "es/cabildo-lanzarote-turismo-trazabilidad/index.html",
-            "sha256": "95828b41760b8218739c50ff373b1641edfa0aa2f3086e874da77929d8b49d46",
-            "bytes": 9635
-          },
-          {
-            "path": "es/index.html",
-            "sha256": "73b923c45010384fbb8b08b7c27ceda483cd548e4d5e1cb24119fcd621cf02d9",
-            "bytes": 244847
-          },
-          {
-            "path": "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json",
-            "sha256": "cd6646c0cbc5b44daea453593f6c14e5940b16926f5d3df03f7d4707ee807644",
-            "bytes": 6662
-          },
-          {
-            "path": "ops/continuity/LANZAROTE_18735_2026_REGAGE_FILED_CANON_AUDIT_20261123.json",
-            "sha256": "108e0068fdc0729712fa8e0a46dc1bc76413f24fe56621ac45320d6eeef79694",
-            "bytes": 5271
-          },
-          {
-            "path": "ops/continuity/LANZAROTE_18735_2026_REGAGE_FILED_CANON_AUDIT_20261123.md",
-            "sha256": "975213908a1fff8f8d78427cc04c2b849e5db612a7828dd50ea73eccf789140d",
-            "bytes": 5162
-          },
-          {
-            "path": "publication-manifests/lanzarote-18735-filing-update-20261123.json",
-            "sha256": "d0bc32b86cc328c889bdf6734e71d3815977a2e6e458637e38a1fb6d078c9c09",
-            "bytes": 2720
-          }
-        ],
-        "pending": [],
-        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
-      }
-    }
-  ],
-  "updated_at": "2026-11-23T22:45:31.292487Z"
+  "checkpoints": []
 }
