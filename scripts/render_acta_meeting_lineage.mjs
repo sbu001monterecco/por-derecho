@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 const { chromium } = await import(process.env.PSR_PLAYWRIGHT_MODULE || 'playwright');
 
@@ -156,7 +157,12 @@ try {
         transientResponses.length = 0;
         response = await page.goto(`${base}${testCase.route}`, { waitUntil: 'networkidle' });
         const transientConsoleError = consoleErrors.some(error => /(?:status(?: code)?(?: of)?|HTTP)\s*(?:502|503|504)\b/i.test(error));
-        const retryableFailure = transientResponses.length > 0 || transientConsoleError;
+        // A Pages response can be HTTP 200 yet serve an incomplete/soft-error
+        // document. Require the controlled page shell before rendering it.
+        const requiredSelector = testCase.kind === 'event' ? '.acta-event-hero' : 'main';
+        const required = page.locator(requiredSelector).first();
+        const missingShell = response?.ok() && !(await required.isVisible());
+        const retryableFailure = transientResponses.length > 0 || transientConsoleError || missingShell;
         if (!retryableFailure || attempt === loadAttempts) {
           loading = false;
           break;
@@ -321,7 +327,17 @@ try {
       if (metrics.overflow > 2) errors.push(`horizontal overflow ${metrics.overflow}px`);
 
       const target = testCase.kind === 'event' ? page.locator('.acta-event-hero') : page.locator('main').first();
-      await target.screenshot({ path: path.join(out, `${testCase.name}-${device}.png`) });
+      if (await target.count() !== 1 || !(await target.isVisible())) {
+        const html = await page.content();
+        errors.push(`missing visible screenshot target ${testCase.name} ${device}; HTTP ${response?.status() || 'no response'}; URL ${page.url()}; title ${await page.title()}; DOM ${html.length} chars SHA-256 ${createHash('sha256').update(html).digest('hex')}`);
+      } else {
+        try {
+          await target.screenshot({ path: path.join(out, `${testCase.name}-${device}.png`) });
+        } catch (error) {
+          const html = await page.content();
+          errors.push(`screenshot failed ${testCase.name} ${device}; HTTP ${response?.status() || 'no response'}; URL ${page.url()}; DOM ${html.length} chars SHA-256 ${createHash('sha256').update(html).digest('hex')}; ${error.message}`);
+        }
+      }
       results.push({ name: testCase.name, route: testCase.route, device, metrics, errors });
       if (errors.length) failed = true;
       await page.close();
