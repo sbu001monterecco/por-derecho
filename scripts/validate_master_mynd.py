@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Finite MASTER MYND publication contract; no writes, network or proof upgrades."""
 from __future__ import annotations
-import argparse, hashlib, json
+import argparse, hashlib, json, subprocess
 from pathlib import Path
 from urllib.parse import urljoin,urlparse,unquote
 from bs4 import BeautifulSoup
@@ -19,7 +19,7 @@ def validate(root: Path) -> dict:
     assert rows[0]['canonical_address']['display']==address
     assert rows[0]['legacy']==['ricpe_hnt_mynd']
     assert profile['plan_identification']['status']=='AUTHOR_ASSERTED_IDENTIFICATION_INDEPENDENT_MATCH_NOT_COMPLETED'
-    result={'status':'PASS_FOR_FINITE_SOURCE_CONTRACT','images':[],'routes':[],'backlinks':[]}
+    result={'status':'PASS_FOR_FINITE_SOURCE_CONTRACT','images':[],'routes':[],'backlinks':[],'surface_carets':[]}
     for record in profile['images']:
         p=root/record['path'];data=p.read_bytes()
         assert len(data)==record['bytes']
@@ -55,10 +55,55 @@ def validate(root: Path) -> dict:
             urls=[urlparse(urljoin('https://sbu001monterecco.github.io/por-derecho'+edge['route'],a['href'])).path for a in s.find_all('a',href=True)]
             assert '/por-derecho'+profile['routes'][lang] in urls,(edge['route'],'missing backlink')
             result['backlinks'].append(edge['route'])
-    # Check every newly admitted byte-object rather than treating HTTP existence as decoding proof.
+
+    # Every caret denotes one immutable byte object. Resolve the old page bytes
+    # at the fixed source commit and the successor bytes in this working tree.
     digital=json.loads((root/'data/digital-media-asset-register-v1.json').read_text())
-    for f in digital['files']:
-        if f.get('logical_asset') in {'PD-DMA-0005','PD-DMA-0006'}:
+    source_head='6411d28961ac0de052f163c3363489e752de548f'
+    def historic(path: str) -> bytes:
+        return subprocess.run(
+            ['git','show',f'{source_head}:{path}'],cwd=root,check=True,
+            stdout=subprocess.PIPE,stderr=subprocess.PIPE,
+        ).stdout
+    old_register=json.loads(historic('data/digital-media-asset-register-v1.json'))
+    assert old_register['control_date']=='2026-10-01'
+    assert digital['control_date']=='2026-11-23'
+    files=digital['files'];old_files=old_register['files']
+    page_rows=[f for f in files if f.get('logical_asset')=='PD-DMA-0005' and
+               f.get('role')=='DISCLOSED_EDITORIAL_PUBLICATION_SURFACE']
+    assert len(page_rows)==4, 'expected two current and two historic page carets'
+    asset=next(a for a in digital['logical_assets'] if a['reference']=='PD-DMA-0005')
+    for lang,path in [('ES','es/acosta-matos-familia/index.html'),
+                      ('EN','en/acosta-matos-family/index.html')]:
+        old_ref=f'PD-DMA-0005-{lang}-PAGE^'
+        new_ref=f'PD-DMA-0005-{lang}-PAGE-20261123^'
+        prior=[f for f in page_rows if f['reference']==old_ref]
+        current=[f for f in page_rows if f['reference']==new_ref and
+                 f.get('publication_status')=='PUBLIC' and f.get('repository_mirror') is True]
+        assert len(prior)==len(current)==1, (lang,'ambiguous page carets')
+        assert sum(f.get('publication_status')=='PUBLIC' and f.get('repository_path')==path
+                   for f in page_rows)==1, (lang,'multiple current pages')
+        old,new=prior[0],current[0]
+        base=next(f for f in old_files if f['reference']==old_ref)
+        assert old['bytes']==base['bytes'] and old['sha256']==base['sha256']
+        assert old['prior_surface_versions']==base['prior_surface_versions']
+        assert old['public_url']==new['public_url']==base['public_url']
+        assert old['repository_path']==old['source_path']==new['repository_path']==path
+        assert old['source_head']==source_head
+        assert old['publication_status']=='SUPERSEDED_PUBLIC_URL_SERVES_REPLACEMENT'
+        assert old['repository_mirror'] is False
+        assert old['superseded_by']==new_ref and new['supersedes']==old_ref
+        assert old['correction_date']==new['control_date']=='2026-11-23'
+        before=historic(path);after=(root/path).read_bytes()
+        assert len(before)==old['bytes'] and hashlib.sha256(before).hexdigest()==old['sha256'],old_ref
+        assert len(after)==new['bytes'] and hashlib.sha256(after).hexdigest()==new['sha256'],new_ref
+        result['surface_carets'].append({'current':new_ref,'supersedes':old_ref,
+                                         'source_head':source_head})
+        assert asset['web_file' if lang=='ES' else 'web_file_en']==new_ref
+    # Keep the unchanged image-byte checks, including the original photograph.
+    for f in files:
+        if f.get('logical_asset') in {'PD-DMA-0005','PD-DMA-0006'} and \
+           f.get('role')!='DISCLOSED_EDITORIAL_PUBLICATION_SURFACE':
             b=(root/f['repository_path']).read_bytes()
             assert len(b)==f['bytes'] and hashlib.sha256(b).hexdigest()==f['sha256'],f['reference']
     return result
