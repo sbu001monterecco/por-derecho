@@ -64,15 +64,21 @@ def once(text: str, pattern: str, replacement, label: str) -> str:
 
 
 def project_page(text: str, counts: dict, stamp: str, lang: str) -> str:
-    # The anonymous GitLab Pages denominator is an external comparison note, not
-    # canonical registry data. Remove/reinsert it around numeric projection so
-    # the canonical count substitutions cannot rewrite the 515-vs-current-canonical boundary.
-    text = re.sub(
+    # Keep the 19 September live snapshot distinct from later source comparisons.
+    # Remove/reinsert the notes around numeric projection so historic 515/380
+    # evidence never becomes a current-registry denominator.
+    text, historical_notes = re.subn(
         r'<div class="id-note" id="(?:gitlab-public-registry-gap|brecha-registro-publico-gitlab)">.*?</div>\n?',
         '',
         text,
         count=1,
         flags=re.DOTALL,
+    )
+    if historical_notes != 1:
+        raise ValueError(lang+' historical GitLab gap note missing')
+    text = re.sub(
+        r'<div class="id-note" id="(?:gitlab-source-registry-gap|brecha-registro-fuente-gitlab)">.*?</div>\n?',
+        '', text, count=1, flags=re.DOTALL,
     )
     text = once(text, r'data-static-registry-counts="[0-9-]+"', 'data-static-registry-counts="' + '-'.join(str(counts[k]) for k in ('total', *TYPES)) + '"', lang+' static counts')
     for key in ('total', *TYPES):
@@ -105,15 +111,15 @@ def project_page(text: str, counts: dict, stamp: str, lang: str) -> str:
         return match[1]+json.dumps(data,ensure_ascii=False,separators=(',',':'))+match[3]
     text = once(text, r'(<script type="application/ld\+json">)(\{.*?"identifier":"PD-SP-IDENTITY-REGISTRY-001".*?\})(</script>)', dataset, lang+' Dataset')
     if lang == 'en':
-        delta = 515 - counts['total']
-        gap = f'<div class="id-note" id="gitlab-public-registry-gap"><strong>Verified public freshness gap · 19 September 2026.</strong> Anonymous GitLab Pages renders a later 7 September registry with <strong>515 aggregate IDs</strong> (256 people, 119 organisations, 12 structures, 68 institutions and 60 proceedings). Those aggregate counts prove a deployment freshness difference only. The identities and exact source bytes comprising the {delta}-ID delta have not been recovered with GitLab object identity, so this GitHub register remains at its source-controlled {counts["total"]} IDs. <a href="https://github.com/sbu001monterecco/por-derecho/issues/1535">Reconciliation control #1535 →</a></div>'
+        historical = '<div class="id-note" id="gitlab-public-registry-gap"><strong>Historical live snapshot · 19 September 2026.</strong> At that date anonymous GitLab Pages showed 515 aggregate IDs and the GitHub source had 380 IDs. This is a preserved 515-versus-380 observation, not today’s source or live denominator. The exact GitLab object delta was then pending recovery. <a href="https://github.com/sbu001monterecco/por-derecho/issues/1535">Reconciliation control #1535 →</a></div>'
+        current = f'<div class="id-note" id="gitlab-source-registry-gap"><strong>Source comparison · 23 November 2026.</strong> The controlled GitLab source master dated 4 October contains 538 records; this GitHub source master contains {counts["total"]}. Canonical person PD-SP-P-0301 is now linked here through a public-safe derivative of its GitLab part. The numerical difference is not an exact identity delta or a live Pages verification; other records require their own source and publication review. <a href="https://github.com/sbu001monterecco/por-derecho/issues/1535">Reconciliation control #1535 →</a></div>'
     else:
-        delta = 515 - counts['total']
-        gap = f'<div class="id-note" id="brecha-registro-publico-gitlab"><strong>Brecha pública de actualización verificada · 19 septiembre 2026.</strong> GitLab Pages anónimo muestra un registro posterior, fechado 7 de septiembre, con <strong>515 IDs agregados</strong> (256 personas, 119 organizaciones, 12 estructuras, 68 instituciones y 60 procedimientos). Esos totales acreditan sólo una diferencia de frescura del despliegue. No se han recuperado con identidad de objeto GitLab las identidades ni los bytes exactos que componen la diferencia de {delta} IDs, por lo que este registro GitHub permanece en sus {counts["total"]} IDs controlados por fuente. <a href="https://github.com/sbu001monterecco/por-derecho/issues/1535">Control de reconciliación #1535 →</a></div>'
+        historical = '<div class="id-note" id="brecha-registro-publico-gitlab"><strong>Observación pública histórica · 19 septiembre 2026.</strong> En esa fecha GitLab Pages anónimo mostró 515 IDs agregados y la fuente GitHub contenía 380 IDs. Se conserva la observación 515 frente a 380; no es el denominador actual de fuentes ni de páginas en vivo. La diferencia exacta de objetos GitLab estaba entonces pendiente de recuperación. <a href="https://github.com/sbu001monterecco/por-derecho/issues/1535">Control de reconciliación #1535 →</a></div>'
+        current = f'<div class="id-note" id="brecha-registro-fuente-gitlab"><strong>Comparación de fuentes · 23 noviembre 2026.</strong> La fuente maestra controlada de GitLab fechada 4 octubre contiene 538 registros; esta fuente maestra GitHub contiene {counts["total"]}. La persona canónica PD-SP-P-0301 ya enlaza aquí mediante un derivado público seguro de su parte GitLab. La diferencia numérica no es una diferencia exacta de identidades ni verificación de Pages en vivo; los demás registros requieren revisión de fuente y publicación. <a href="https://github.com/sbu001monterecco/por-derecho/issues/1535">Control de reconciliación #1535 →</a></div>'
     text = once(
         text,
         r'(<div class="id-boundary">.*?</div>)',
-        lambda m: m[1] + '\n' + gap,
+        lambda m: m[1] + '\n' + historical + '\n' + current,
         lang+' public GitLab freshness gap',
     )
     return text
