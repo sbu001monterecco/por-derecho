@@ -12,7 +12,12 @@ from pathlib import Path
 from build_fiscalia_proceedings_interconnectivity import (
     OCTOBER_MAPPING_BOUNDARY,
     OCTOBER_MAPPING_STATE,
+    R865_CONTROL,
+    R865_EXCLUSION_BOUNDARY,
+    R865_INPUT,
+    sha256,
     validated_october_filing_event_ids,
+    validated_r865_filing_event_ids,
 )
 
 
@@ -100,6 +105,7 @@ def main() -> int:
     from prepare_platform_incibe_20260925 import validated_platform_event_ids
     platform_ids = validated_platform_event_ids(communications['events'], ROOT)
     october_ids = validated_october_filing_event_ids(communications["events"], ROOT)
+    r865_ids = validated_r865_filing_event_ids(communications["events"], ROOT)
     # Preserve the six already-canonical 24-Sep successor identities.
     # The legacy 643/320 controls remain exact for their original scope.
     expected_supplemental_ids = {'PD-SP-EVT-0497', 'PD-SP-EVT-0498', 'PD-SP-EVT-0499',
@@ -107,13 +113,26 @@ def main() -> int:
     supplemental_ids = {e['event_id'] for e in communications['events']
                         if str(e.get('source_key', '')).startswith('SUPPLEMENTAL_20260924:')}
     require(supplemental_ids == expected_supplemental_ids, '24-Sep successor identity set mismatch', errors)
-    event_ids = canonical_event_ids - excluded_authority_ids - set(expected_notices) - cajasiete_notice_ids - status_export_ids - platform_ids
+    event_ids = canonical_event_ids - excluded_authority_ids - set(expected_notices) - cajasiete_notice_ids - status_export_ids - platform_ids - r865_ids
     projected_ids = {event["event_id"] for event in payload["events"]}
+
+    r865_control = payload.get("excluded_r865_cohort_control", {})
+    require(len(r865_ids) == 1 and not r865_ids & projected_ids, "R865 transparency filing leaked into the specialist prosecution graph", errors)
+    require(payload["coverage"].get("excluded_r865_registered_events") == 1, "R865 excluded-cohort denominator mismatch", errors)
+    require(r865_control == {
+        "control_id": R865_CONTROL,
+        "source_descriptor": R865_INPUT,
+        "source_descriptor_sha256": sha256(ROOT / R865_INPUT),
+        "event_ids": sorted(r865_ids),
+        "scope_state": "SOURCE_VERIFIED_TRANSPARENCY_FILING_NO_PROSECUTION_ALLOCATION",
+        "boundary_en": R865_EXCLUSION_BOUNDARY["en"],
+        "boundary_es": R865_EXCLUSION_BOUNDARY["es"],
+    }, "R865 specialist exclusion control or source fingerprint differs", errors)
 
     require(payload.get("schema_version") == "1.0.0", "schema version changed", errors)
     require(payload.get("status") == "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION", "projection status changed", errors)
     require(
-        len(canonical_event_ids - platform_ids - supplemental_ids - october_ids) == 643
+        len(canonical_event_ids - platform_ids - supplemental_ids - october_ids - r865_ids) == 643
         and len(status_export_ids) == 284
         and len(completed_filing_ids) == 24
         and completed_filing_ids <= event_ids

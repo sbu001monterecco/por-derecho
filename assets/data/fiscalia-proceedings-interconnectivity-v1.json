@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
   "dataset": "fiscalia-proceedings-interconnectivity-v1",
-  "control_date": "2026-10-25",
+  "control_date": "2026-11-23",
   "status": "PUBLIC_SAFE_DERIVED_INTERCONNECTIVITY_PROJECTION",
   "canonical_sources": {
     "communications_register": "assets/data/institutional-communications-register-v1.json",
-    "communications_sha256": "59dfe3f0a5652d151dc1355b6c00d23801d87442c02360a98610d4f35bf2f374",
+    "communications_sha256": "e7c0f49066a2c03347ed04370c5099fbc224ebe61fb0d57188c73a7e93aa6ed4",
     "proceedings_master": "archive/PROCEEDINGS_MASTER_REGISTER.csv",
     "proceedings_master_sha256": "bd2f641d0ee9599dd36c2fdbc57d6093c900f2dd84c9b289b67a036e3b863398",
     "public_proceedings_projection": "assets/data/proceedings-master-public-v1.json",
@@ -15,6 +15,17 @@
   "boundaries": {
     "en": "A link records only the proposition stated by its relationship type and cited sources. Registration is not delivery beyond the receipt, receipt is not examination, chronology is not causation, and institutional possession is not personal knowledge, agreement, intent, wrongdoing or liability.",
     "es": "Un enlace registra únicamente la proposición indicada por su tipo de relación y fuentes citadas. Registro no equivale a entrega más allá del justificante, recepción no equivale a examen, cronología no equivale a causalidad y posesión institucional no equivale a conocimiento personal, acuerdo, intención, ilicitud o responsabilidad."
+  },
+  "excluded_r865_cohort_control": {
+    "control_id": "PD-CANON-AUDIT-20261024-001/R865-REGAGE-20261123-01",
+    "source_descriptor": "ops/continuity/R865_2026_REGAGE_FILED_CANON_AUDIT_20261123.json",
+    "source_descriptor_sha256": "c0f01ec427bc89efdc955a2f2421a964ec2f608e10c824612eeb38386d23014c",
+    "event_ids": [
+      "PD-SP-EVT-0606"
+    ],
+    "scope_state": "SOURCE_VERIFIED_TRANSPARENCY_FILING_NO_PROSECUTION_ALLOCATION",
+    "boundary_en": "This source-verified R865 transparency filing remains in the canonical communications and RedSARA registers. It does not allocate a prosecution proceeding and is excluded from this specialist Fiscalía graph; the exclusion does not negate filing or establish reopening, admission, examination or merits.",
+    "boundary_es": "La presentación de transparencia R865 verificada con su fuente permanece en los registros canónicos de comunicaciones y RedSARA. No asigna un procedimiento fiscal y se excluye de este grafo especializado de Fiscalía; la exclusión no niega la presentación ni acredita reapertura, admisión, examen o fondo."
   },
   "october_cohort_control": {
     "control_id": "PD-MADRID-CTBG-REGISTERED-20261025",
@@ -52,6 +63,7 @@
     "boundary_es": "El justificante y las referencias documentales del proyecto no asignan una identidad canónica de procedimiento de Fiscalía ni de transparencia. Todo enlace exacto al expediente de ayudas es solo contextual; no acredita incorporación, acumulación, examen ni número de expediente fiscal."
   },
   "coverage": {
+    "excluded_r865_registered_events": 1,
     "communication_events": 332,
     "matter_linked_events": 147,
     "legacy_communication_events": 326,

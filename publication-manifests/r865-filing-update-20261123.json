@@ -1,4 +1,6 @@
 {
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
   "publication_id": "PD-R865-FILING-PUBLIC-SUMMARY-20261123",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-11-23",
@@ -23,7 +25,12 @@
     "scripts/validate_redsara_authority_discovery.py",
     "assets/data/institutional-communications-register-v1.json",
     "assets/data/redsara-age-filings-register-v1.json",
-    "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json"
+    "ops/INSTITUTIONAL_COMMUNICATIONS_SCAN_CHECKPOINT.json",
+    "scripts/build_fiscalia_proceedings_interconnectivity.py",
+    "scripts/validate_fiscalia_proceedings_interconnectivity.py",
+    "scripts/test_build_fiscalia_proceedings_interconnectivity.py",
+    "assets/data/fiscalia-proceedings-interconnectivity-v1.json",
+    "assets/data/community-acta-authority-interconnectivity-v1.json"
   ],
   "public_safe_originals": "No native receipt, filed PDF, signature, personal identifier, registration identifier or private source locator included.",
   "preservation_rule": "All 666 pre-existing events and both historical closure paragraphs must remain unchanged.",
