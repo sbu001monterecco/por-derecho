@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+"""Draft-only bilingual accountability validation. Does not publish or contact external systems."""
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+m=json.loads((ROOT/"ops/continuity/PD_SP_ACCOUNTABILITY_CHAIN_20261124_DRAFT.json").read_text(encoding="utf-8"))
+c="PD-SP-ACCOUNTABILITY-CHAIN-20261124-DRAFT-01"
+assert m["control"]==c and m["stage"]=="DRAFT_SOURCE_ONLY"
+assert not any(m[k] for k in ("publishable","merge_authorized","deploy_authorized","external_contact_authorized","registry_request_authorized","filing_authorized"))
+assert len(m["events"])==8 and len(m["existing_pages"])==10 and len(m["new_pages"])==2
+assert len({e["id"] for e in m["events"]})==8
+for p in m["existing_pages"]:
+ text=(ROOT/p["path"]).read_text(encoding="utf-8")
+ assert text.count("<!-- "+c+" START -->")==1 and text.count("<!-- "+c+" END -->")==1
+ assert text.count("</main>")==1 and 'data-topic="'+p["topic"]+'"' in text
+for route,lang in zip(m["new_pages"],("en","es")):
+ text=(ROOT/route).read_text(encoding="utf-8")
+ assert f'<html lang="{lang}">' in text and '<svg' in text
+ assert 'data-publication="DRAFT_ONLY_NO_DEPLOY"' in text
+ assert text.count('class="pdsp-event"')==8 and 'data-filter="official"' in text
+ assert all(e["id"] in text for e in m["events"])
+ assert "DP 1901" in text and "DP 1956" in text
+ assert not any(t in text.lower() for t in ("jsixto@", "mail.google.com", "sbu001@", "regage26e"))
+print("PASS: 10 additive pages, 2 bilingual visual hubs, 8 events, draft controls")

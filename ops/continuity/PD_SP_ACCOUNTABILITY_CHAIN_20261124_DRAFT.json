@@ -1,0 +1,158 @@
+{
+  "schema": "pd.sp.accountability-chain.draft.v1",
+  "control": "PD-SP-ACCOUNTABILITY-CHAIN-20261124-DRAFT-01",
+  "stage": "DRAFT_SOURCE_ONLY",
+  "origin": "Github current main",
+  "base_commit": "7aed9eea4085b53c4c62aa5a57a3520b1ec29cda",
+  "created_date": "2026-11-24",
+  "publishable": false,
+  "merge_authorized": false,
+  "deploy_authorized": false,
+  "external_contact_authorized": false,
+  "registry_request_authorized": false,
+  "filing_authorized": false,
+  "privileged_advice_excluded": true,
+  "source_note": "Controlled primary court/Registry/deed documents; public-safe source identifiers only, not native private documents.",
+  "existing_pages": [
+    {
+      "path": "en/insolvency-36-2012-registry-ob-rem-notice/index.html",
+      "topic": "obrem",
+      "language": "en",
+      "original_blob": "dbc12460e01fbe26154729c7523b5749c919acea",
+      "preservation": "ADDITIVE_ONLY"
+    },
+    {
+      "path": "es/concurso-36-2012-aviso-registro-ob-rem/index.html",
+      "topic": "obrem",
+      "language": "es",
+      "original_blob": "c0f2811447345acad33186ca27f5878458186c08",
+      "preservation": "ADDITIVE_ONLY"
+    },
+    {
+      "path": "en/unitary-criminal-reverse-engineering/index.html",
+      "topic": "unitary",
+      "language": "en",
+      "original_blob": "5e3ce7777ac7c4f854186dac71ac97fc0a6aa984",
+      "preservation": "ADDITIVE_ONLY"
+    },
+    {
+      "path": "es/ingenieria-inversa-criminal-unitaria/index.html",
+      "topic": "unitary",
+      "language": "es",
+      "original_blob": "1194dd11a6a589550f4a00a88e6fe810f641e7f7",
+      "preservation": "ADDITIVE_ONLY"
+    },
+    {
+      "path": "en/insolvency-36-2012-insolvency-administrator/index.html",
+      "topic": "ac",
+      "language": "en",
+      "original_blob": "ccb7bffabccdcc0cebca0ca814a0953a6de97601",
+      "preservation": "ADDITIVE_ONLY"
+    },
+    {
+      "path": "es/concurso-36-2012-administrador-concursal/index.html",
+      "topic": "ac",
+      "language": "es",
+      "original_blob": "6903a618718be120cd345d3516e3a54e4f1f7889",
+      "preservation": "ADDITIVE_ONLY"
+    },
+    {
+      "path": "en/acosta-matos-perimeter/index.html",
+      "topic": "cam",
+      "language": "en",
+      "original_blob": "4ae425f4a3acd32f91813964b97cd61fffb91b21",
+      "preservation": "ADDITIVE_ONLY"
+    },
+    {
+      "path": "es/acosta-matos-perimetro/index.html",
+      "topic": "cam",
+      "language": "es",
+      "original_blob": "8b74e2e379d029fe748c8c8c1aba4f1bb05d76a0",
+      "preservation": "ADDITIVE_ONLY"
+    },
+    {
+      "path": "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+      "topic": "judge",
+      "language": "en",
+      "original_blob": "7ca28c3dcae952dc72e8438a21846dc798340e92",
+      "preservation": "ADDITIVE_ONLY"
+    },
+    {
+      "path": "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+      "topic": "judge",
+      "language": "es",
+      "original_blob": "1d68caf7666782d8bcbd23af1631808c4fd1637d",
+      "preservation": "ADDITIVE_ONLY"
+    }
+  ],
+  "new_pages": [
+    "en/accountability-chain-2018-2022/index.html",
+    "es/cadena-responsabilidad-2018-2022/index.html"
+  ],
+  "events": [
+    {
+      "id": "PD-SP-EV-01",
+      "date": "2018-04-16",
+      "type": "documented",
+      "locator": "Liquidation-plan order (deed bundle pp.96–101)",
+      "public_reader_topic": "obrem"
+    },
+    {
+      "id": "PD-SP-EV-02",
+      "date": "2018-06-26",
+      "type": "official",
+      "locator": "Partial-stay order (deed bundle pp.107–108)",
+      "public_reader_topic": "obrem"
+    },
+    {
+      "id": "PD-SP-EV-03",
+      "date": "2018-11-28",
+      "type": "party",
+      "locator": "Protocol 2150 (deed bundle pp.69,73–76)",
+      "public_reader_topic": "obrem"
+    },
+    {
+      "id": "PD-SP-EV-04",
+      "date": "2019-01-09",
+      "type": "official",
+      "locator": "Tías Registry qualification (deed bundle pp.279–281)",
+      "public_reader_topic": "obrem"
+    },
+    {
+      "id": "PD-SP-EV-05",
+      "date": "2019-10-24",
+      "type": "official",
+      "locator": "Court order 24 Oct 2019; reconsideration rejected 12 May 2020",
+      "public_reader_topic": "obrem"
+    },
+    {
+      "id": "PD-SP-EV-06",
+      "date": "2021-05-18",
+      "type": "official",
+      "locator": "Definitive CAM proposal approval of 18 May 2021",
+      "public_reader_topic": "unitary"
+    },
+    {
+      "id": "PD-SP-EV-07",
+      "date": "2022-02-21",
+      "type": "documented",
+      "locator": "Notarial protocol 457, 21 Feb 2022",
+      "public_reader_topic": "unitary"
+    },
+    {
+      "id": "PD-SP-EV-08",
+      "date": "2026-09-14",
+      "type": "official",
+      "locator": "2026 DP 1901 and DP 1956 orders",
+      "public_reader_topic": "judge"
+    }
+  ],
+  "unresolved": [
+    "Current literal property-by-property Registry chain",
+    "€400,000 clearing and LPB estate accounts",
+    "Effects and boundaries of 2021/2022 acts",
+    "Exact scope and finality of DP 1901 and DP 1956",
+    "Source-by-source legal approval before publication"
+  ],
+  "review_gate": "Required CI, public privacy and source review, exact live parity, and separate owner release mandate"
+}
