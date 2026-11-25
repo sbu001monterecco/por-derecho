@@ -20,7 +20,7 @@ for route,lang in zip(m["new_pages"],("en","es")):
  assert text.count('class="pdsp-event"')==9 and 'data-filter="official"' in text
  assert all(e["id"] in text for e in m["events"])
  assert "DP 1901" in text and "DP 1956" in text
- assert (('Ottawa gbc' in text) or ('Ottawa' in text)) and (('735,694.02' in text) or ('735.694,02' in text))
+ assert ("third-party bidder" in text if lang=="en" else "tercer oferente" in text) and (('735,694.02' in text) or ('735.694,02' in text))
  assert (('erroneous' in text) or ('errónea' in text))
  assert 'id="pd-sp-ev-09"' in text and 'datetime="2026-07-21"' in text
  assert 'id="pd-sp-ev-08"' in text and 'datetime="2026-09-14"' in text
