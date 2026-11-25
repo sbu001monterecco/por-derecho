@@ -172,5 +172,55 @@
       "no_prior_identity_deleted": true,
       "release_gate": "Source and legal review required"
     }
-  ]
+  ],
+  "primary_source_review_20261125": {
+    "review_id": "PD-SP-PRIMARY-RECHECK-20261125-01",
+    "state": "DIRECT_PRIMARY_REVIEW_PARTIAL_INDEPENDENT_LEGAL_SIGNOFF_OPEN",
+    "read_scope": "Court orders direct text and scanned notarial source pages, not complete legal opinion",
+    "verified": [
+      {
+        "source": "28 Nov 2018 notarial protocol 2150, controlled 282-page bundle",
+        "location": "PDF pages 69, 74 and 280",
+        "basis": "page-image inspection",
+        "finding": "Page 69 identifies fincas 8.536, 8.653, 8.654; page 74 release clause uses 8.537; page 280 is the registrar's partial 9 Jan 2019 suspension, not a blanket refusal."
+      },
+      {
+        "source": "24 Oct 2019 Auto, Concurso 36/2012",
+        "location": "operative section and reasoning (five pages)",
+        "basis": "direct primary text",
+        "finding": "Nonconvalidation of 28 Nov 2018 deed and removal of 12 Dec 2018 procedural direction; court expressly found the 26 June 2018 partial stay erroneous for a unitary sale and criticized separate realization."
+      },
+      {
+        "source": "12 May 2020 Auto, Concurso 36/2012",
+        "location": "operative section, second page",
+        "basis": "direct primary text",
+        "finding": "Reposición against 24 Oct 2019 Auto dismissed; that Auto confirmed. No criminal guilt adjudication."
+      },
+      {
+        "source": "18 May 2021 Auto, Concurso 36/2012",
+        "location": "antecedents and operative section (four pages)",
+        "basis": "direct primary text",
+        "finding": "Ottawa gbc's reported EUR 14.8m interest; notified procurador, nonattendance, lack of EUR 735,694.02 security; CAM proposal definitively approved, with ordinary five-day reposición notice. Comparable economic value and final legal status require separate analysis."
+      },
+      {
+        "source": "21 Feb 2022 notarial protocol 457, scanned 76-page copy",
+        "location": "PDF page 12",
+        "basis": "limited page-image inspection",
+        "finding": "Confirms dación of listed encumbered apartment properties and reliance on court orders; the EUR 13,168,082.02 figure in the draft was not independently rechecked on a legible original page during this pass."
+      }
+    ],
+    "unresolved": [
+      "Independent legal/source approval for public attribution not obtained",
+      "Current Tías Registry record and rights chain unverified",
+      "2018 cheque clearing and LPB estate ledger not verified",
+      "2022 EUR 13,168,082.02 exact figure in scanned original not independently rechecked",
+      "DP 1901/2026 and DP 1956/2026 signed original orders and finality not independently rechecked"
+    ],
+    "public_reproduction": "DO_NOT_EMBED_NATIVE_PRIVATE_DOCUMENTS",
+    "gates": {
+      "publishable": false,
+      "independent_legal_clearance": false,
+      "full_original_source_verification": false
+    }
+  }
 }
