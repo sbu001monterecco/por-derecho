@@ -1,0 +1,69 @@
+{
+  "schema": "por-derecho.editorial-satire-control.v1",
+  "control_id": "PD-DMA-CUATRECASAS-FINGER-IN-THE-DAM-20261125-001",
+  "date": "2026-11-25",
+  "logical_asset": "PD-DMA-0015",
+  "family_id": "PD-DMA-FAM-CUATRECASAS-DAM-001",
+  "satire_compliance_id": "PD-SAT-CUATRECASAS-DAM-0001",
+  "classification": "RHETORICAL_METAPHOR_OR_DOUBLE_MEANING",
+  "status": "SOURCE_PREPARED_ONLY",
+  "objective": "Invite reasoned institutional review, correction and lawful remedy of alleged former-client injuries through documentary scrutiny, not personal pressure.",
+  "image": {
+    "path": "assets/visuals/cuatrecasas-finger-in-dam-20261125/finger-in-the-dam.webp",
+    "reference": "PD-DMA-0015-WEB^",
+    "mime": "image/webp",
+    "sha256": "ea3f009e94eb3f48b400b7690bd569d675fedecbf4dddc39b4a763b63e8f2b75",
+    "git_blob_sha1": "2c04caad01c524661c64fdd76d7c5a1ffb1775e8",
+    "bytes": 626364,
+    "width_px": 1536,
+    "height_px": 1024,
+    "master_sha256": "39947c844da37cb23eb84a3fca4e902ecccefcfae1d672e1aa49e36cbd7db558",
+    "master_bytes": 3719127,
+    "master_custody": "Private Visual Assets folder; verified readback; not in public repository",
+    "generation": "Original AI-generated editorial illustration; WebP encoding only."
+  },
+  "sources": [
+    "data/ccacm-436-unitary-accountability-nexus-20261125.json",
+    "en/cuatrecasas-sun-park/index.html",
+    "es/cuatrecasas-sun-park/index.html",
+    "en/cuatrecasas-icam-ccacm-2026/index.html",
+    "es/cuatrecasas-icam-ccacm-2026/index.html",
+    "assets/evidence/cuatrecasas/ccacm-436-2026-order-24nov2026-signature-redacted.pdf"
+  ],
+  "role_edges": [
+    {
+      "role": "Cuatrecasas",
+      "factual_role": "Historical adviser and subsequent enforcing creditor in the documented case history.",
+      "satirical_function": "Finger in the dam: inquiry into possible economic effect, not proven deliberate protection.",
+      "evidence_state": "DOCUMENTED_FACT + INVESTIGATIVE_HYPOTHESIS"
+    },
+    {
+      "role": "Acosta Matos perimeter",
+      "factual_role": "Disputed private-actor and economic-interest perimeter examined in the dossier.",
+      "satirical_function": "Imaginary hotel behind dam with question mark; no ownership, shared purpose or beneficiary proved.",
+      "evidence_state": "ATTRIBUTED_ALLEGATION + RHETORICAL_METAPHOR_OR_DOUBLE_MEANING"
+    },
+    {
+      "role": "Insolvency Administrator and court",
+      "factual_role": "Separate stewardship and judicial-supervision roles.",
+      "satirical_function": "Context in separate documentary matrix; no depiction or attributed joint conduct.",
+      "evidence_state": "DOCUMENTED_FACT + OPEN_OR_UNVERIFIED"
+    }
+  ],
+  "boundaries": [
+    "No proof of common plan, intentional concealment or obstruction of prosecution.",
+    "CCACM 436/2026 opening is not a misconduct, negligence or criminal finding.",
+    "Counterarguments and adverse outcomes remain accessible.",
+    "The visual is not evidence of a physical dam or actual property."
+  ],
+  "risk_review": {
+    "HONOUR_REPUTATION_PROFESSIONAL_PRESTIGE": "Criticism addresses documented adviser-to-enforcing-creditor transition and attributed former-client allegations; no individual caricature, finding or legal clearance asserted.",
+    "FALSE_ENDORSEMENT_AUTHORSHIP_QUOTATION_MANDATE_OR_ROLE": "Clearly marked original editorial illustration; not an actual quotation, photograph, firm statement or endorsement.",
+    "IMAGE_LIKENESS_PERSONALITY_RIGHTS": "Anonymous fictional suited hand and imaginary resort; no real portrait.",
+    "IMPLIED_DISHONESTY_CONFLICT_CORRUPTION_ILLEGALITY_OR_CRIMINALITY": "Possible protective economic effect is a hypothesis, not established concert, deliberate obstruction or guilt. Documented work, lawful recovery explanations, conditional funding, distinct judicial decisions and adverse ICAM outcome remain in the dossier.",
+    "LOGO_TRADE_DRESS_OR_REAL_ADVERTISING_CONFUSION": "Plain entity labels and question mark; no genuine logo or imitation firm communication; visible bilingual satire disclosure.",
+    "PERSONAL_DATA_NECESSITY_AND_PROPORTIONALITY": "No additional personal images, identifiers, contacts or correspondence; existing author identity is author only.",
+    "CORRECTION_REPLY_TAKEDOWN_AND_NARROW_REVERT_PATH": "Invite verifiable institutional response and fair correction; preserve prior versions and narrow corrective PR. No direct contact campaign."
+  },
+  "release_gate": "Normal exact-head CI, protected publication permit and deployed readback."
+}

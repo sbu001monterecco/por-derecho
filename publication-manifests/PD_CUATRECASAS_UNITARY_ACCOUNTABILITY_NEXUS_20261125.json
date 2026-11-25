@@ -27,7 +27,11 @@
     "data/ccacm-436-unitary-accountability-nexus-20261125.json",
     "assets/ccacm-436-accountability-nexus-20261125.css",
     "assets/ccacm-436-accountability-nexus-20261125.js",
-    "assets/evidence/cuatrecasas/ccacm-436-2026-order-24nov2026-signature-redacted.pdf"
+    "assets/evidence/cuatrecasas/ccacm-436-2026-order-24nov2026-signature-redacted.pdf",
+    "assets/visuals/cuatrecasas-finger-in-dam-20261125/finger-in-the-dam.webp",
+    "data/cuatrecasas-finger-in-dam-20261125.json",
+    "data/digital-media-asset-register-v1.json",
+    "data/satire-publication-compliance-v1.json"
   ],
   "repository_assets": [
     "en/cuatrecasas-sun-park/index.html",
@@ -37,12 +41,18 @@
     "data/ccacm-436-unitary-accountability-nexus-20261125.json",
     "assets/ccacm-436-accountability-nexus-20261125.css",
     "assets/ccacm-436-accountability-nexus-20261125.js",
-    "assets/evidence/cuatrecasas/ccacm-436-2026-order-24nov2026-signature-redacted.pdf"
+    "assets/evidence/cuatrecasas/ccacm-436-2026-order-24nov2026-signature-redacted.pdf",
+    "assets/visuals/cuatrecasas-finger-in-dam-20261125/finger-in-the-dam.webp",
+    "data/cuatrecasas-finger-in-dam-20261125.json",
+    "data/digital-media-asset-register-v1.json",
+    "data/satire-publication-compliance-v1.json"
   ],
   "public_markers": [
     "unitary-accountability-nexus-20261125",
     "ccacm-436-20261124-viewer",
-    "ccacm-436-20261124"
+    "ccacm-436-20261124",
+    "finger-in-the-dam-20261125",
+    "cuatrecasas-institutional-response-20261125"
   ],
   "public_pdf": {
     "path": "assets/evidence/cuatrecasas/ccacm-436-2026-order-24nov2026-signature-redacted.pdf",
@@ -56,13 +66,23 @@
     "evidence": [
       "Exact input PDF verified by SHA-256 and original text comparison; transfer staging copy identical.",
       "Additive source transformation; shared canonical register and assets; review and CI not yet established.",
-      "Exact public candidate readback: PDF Git blob and SHA-256 match both hosts, common data/CSS/JS and four new bilingual sections byte-identical. Production not verified."
+      "Exact public candidate readback: PDF Git blob and SHA-256 match both hosts, common data/CSS/JS and four new bilingual sections byte-identical. Production not verified.",
+      "Additive editorial enhancement 25 November 2026; private original and WebP readback; new exact-head CI pending."
     ]
   },
   "publication_boundaries": [
     "Appeal opened, service directed, 10 days for representations. No disciplinary sanction, merits determination or causal finding.",
     "Supplied direct-message captures, not provider-certified authorship, evidence of dissemination or subsequent interface cause.",
-    "No common plan, guilt, ultimate beneficiary or criminal intent established. No private correspondence or unredacted original included."
+    "No common plan, guilt, ultimate beneficiary or criminal intent established. No private correspondence or unredacted original included.",
+    "The satire is a fictional metaphor and inquiry, not proof of deliberate protection, obstruction or joint liability."
   ],
-  "schema_version": "1.0.0"
+  "schema_version": "1.0.0",
+  "editorial_asset": {
+    "control_id": "PD-DMA-CUATRECASAS-FINGER-IN-THE-DAM-20261125-001",
+    "reference": "PD-DMA-0015-WEB^",
+    "sha256": "ea3f009e94eb3f48b400b7690bd569d675fedecbf4dddc39b4a763b63e8f2b75",
+    "bytes": 626364,
+    "record": "data/cuatrecasas-finger-in-dam-20261125.json",
+    "publication_status": "SOURCE_PREPARED_ONLY"
+  }
 }
