@@ -303,5 +303,18 @@
     "disciplinary misconduct",
     "judicial prevaricación"
   ],
-  "status_semantics": "Content preparation only. Live status requires independent protected merge and deployment verification for each host."
+  "status_semantics": "Content preparation only. Live status requires independent protected merge and deployment verification for each host.",
+  "golden_card": {
+    "control_id": "PD-CUATRECASAS-GOLDEN-CARD-NEXUS-20261125-001",
+    "record": "data/cuatrecasas-golden-card-nexus-20261125.json",
+    "section_id": "golden-card-nexus-20261125",
+    "related_nodes": [
+      "NEX-01",
+      "NEX-02",
+      "NEX-03",
+      "NEX-04",
+      "NEX-05",
+      "NEX-06"
+    ]
+  }
 }

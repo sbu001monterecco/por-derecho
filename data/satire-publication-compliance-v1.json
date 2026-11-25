@@ -638,13 +638,15 @@
         "en/cuatrecasas-icam-ccacm-2026/index.html",
         "es/cuatrecasas-icam-ccacm-2026/index.html",
         "assets/evidence/cuatrecasas/ccacm-436-2026-order-24nov2026-signature-redacted.pdf",
-        "data/cuatrecasas-finger-in-dam-20261125.json"
+        "data/cuatrecasas-finger-in-dam-20261125.json",
+        "data/cuatrecasas-golden-card-nexus-20261125.json"
       ],
       "material_boundaries": [
         "No proof of common plan, intentional concealment or obstruction of prosecution.",
         "CCACM 436/2026 opening is not a misconduct, negligence or criminal finding.",
         "Counterarguments and adverse outcomes remain accessible.",
-        "The visual is not evidence of a physical dam or actual property."
+        "The visual is not evidence of a physical dam or actual property.",
+        "Golden Card is a prospective dependency hypothesis; no actual cession or recipient established; property identities and lawful fee-recovery explanation remain separate."
       ],
       "opposing_counsel_risk_review": {
         "HONOUR_REPUTATION_PROFESSIONAL_PRESTIGE": "Criticism addresses documented adviser-to-enforcing-creditor transition and attributed former-client allegations; no individual caricature, finding or legal clearance asserted.",
@@ -655,7 +657,14 @@
         "PERSONAL_DATA_NECESSITY_AND_PROPORTIONALITY": "No additional personal images, identifiers, contacts or correspondence; existing author identity is author only.",
         "CORRECTION_REPLY_TAKEDOWN_AND_NARROW_REVERT_PATH": "Invite verifiable institutional response and fair correction; preserve prior versions and narrow corrective PR. No direct contact campaign."
       },
-      "approval_status": "OWNER_DIRECTED_SOURCE_PREPARATION__PROTECTED_RELEASE_PENDING__NOT_EXTERNAL_LEGAL_CLEARANCE"
+      "approval_status": "OWNER_DIRECTED_SOURCE_PREPARATION__PROTECTED_RELEASE_PENDING__NOT_EXTERNAL_LEGAL_CLEARANCE",
+      "editorial_extensions": [
+        {
+          "control_id": "PD-CUATRECASAS-GOLDEN-CARD-NEXUS-20261125-001",
+          "record": "data/cuatrecasas-golden-card-nexus-20261125.json",
+          "review": "No new personal likeness, identifiers, private correspondence or allegation of a proven transfer. Existing adverse decisions and right of reply retained; not external legal clearance."
+        }
+      ]
     }
   ]
 }

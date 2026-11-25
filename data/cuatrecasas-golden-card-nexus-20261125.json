@@ -1,0 +1,321 @@
+{
+  "schema": "por-derecho.golden-card-nexus.v1",
+  "control_id": "PD-CUATRECASAS-GOLDEN-CARD-NEXUS-20261125-001",
+  "as_of": "2026-11-25",
+  "classification": "RHETORICAL_METAPHOR_AND_SOURCE_QUALIFIED_INVESTIGATIVE_HYPOTHESIS",
+  "related_controls": [
+    "PD-CUATRECASAS-UNITARY-ACCOUNTABILITY-NEXUS-20261125-001",
+    "PD-DMA-CUATRECASAS-FINGER-IN-THE-DAM-20261125-001",
+    "PD-MAT8584-UCC-20260903-01",
+    "PD-ETJ163-FIL-20260903-EN"
+  ],
+  "original_house_of_cards": "19 August 2026 control recovered; selected original artwork binary not recovered. This is a newly authored web-native diagram, not that original.",
+  "meaning": "Potential consolidation of a disputed position, not the original causal foundation of every transaction. Neither common plan nor an actual connected recipient is established.",
+  "source_routes": {
+    "control": "https://github.com/sbu001monterecco/por-derecho/blob/main/archive/SUN_PARK_ABANDONMENT_CAUSATION_AND_PUBLIC_COMMS_CONTROL_19AUG2026.md",
+    "dependency": "https://github.com/sbu001monterecco/por-derecho/blob/main/archive/knowledge-project/PWC_COMMUNITY_CAM_RICPE_UNITARY_REVERSE_ENGINEERING_19AUG2026.md",
+    "title": "https://github.com/sbu001monterecco/por-derecho/blob/main/archive/MATKATOR_8584_REGULATED_HOTEL_TITLE_REMATE_RESTITUTION_UNITARY_CRIMINAL_CONTROL_03SEP2026.md",
+    "opposition": [
+      "https://github.com/sbu001monterecco/por-derecho/blob/main/docs/cuatrecasas/ETJ163/2026-09-03_cuatrecasas_opposition_fulltext_en.md",
+      "https://github.com/sbu001monterecco/por-derecho/blob/main/docs/cuatrecasas/ETJ163/2026-09-03_cuatrecasas_impugnacion_reposicion_fulltext_source_safe.md"
+    ],
+    "order": [
+      "https://github.com/sbu001monterecco/por-derecho/blob/main/docs/cuatrecasas/ETJ163/2026-09-17_order_reposicion_suspension_fulltext_en.md",
+      "https://github.com/sbu001monterecco/por-derecho/blob/main/docs/cuatrecasas/ETJ163/2026-09-17_auto_reposicion_suspension_fulltext_source_safe.md"
+    ],
+    "chain": [
+      "../../en/accountability-chain-2018-2022/",
+      "../../es/cadena-responsabilidad-2018-2022/"
+    ],
+    "ona": [
+      "../../en/ona-hotels-insolvency-exit-36-2012/",
+      "../../es/ona-hotels-salida-concurso-36-2012/"
+    ],
+    "judge": [
+      "../../en/control-24-insolvency-judge-complaint-36-2012/",
+      "../../es/control-24-denuncia-juez-concurso-36-2012/"
+    ],
+    "ric": [
+      "../../en/ric-private-equity-sun-park/",
+      "../../es/ric-private-equity-sun-park/"
+    ],
+    "cam": [
+      "../../en/acosta-matos-perimeter/",
+      "../../es/acosta-matos-perimetro/"
+    ],
+    "claim": [
+      "../../en/cuatrecasas-matkator-whole-claim/",
+      "../../es/cuatrecasas-matkator-reclamacion-integral/"
+    ],
+    "criminal": [
+      "../../en/cuatrecasas-dp748-civil-action/",
+      "../../es/cuatrecasas-dp748-accion-civil/"
+    ],
+    "nexus": "#unitary-accountability-nexus-20261125",
+    "pdf": "#ccacm-436-20261124-viewer",
+    "response": "#cuatrecasas-institutional-response-20261125"
+  },
+  "cards": [
+    {
+      "id": "GC-01",
+      "date": "Historic productive unit / 2008 onward",
+      "date_es": "Unidad productiva histórica / desde 2008",
+      "title": {
+        "en": "Mixed title and operating rights",
+        "es": "Titularidad mixta y derechos de explotación"
+      },
+      "evidence_state": "SOURCE_QUALIFIED",
+      "explanation": {
+        "en": "One hotel productive system contained distinct titles, owners and operating rights. Matkator and LPB are separate legal persons. The AWESWELL shareholding chain is separately subject to historical-document reconciliation.",
+        "es": "Un sistema productivo hotelero contenía títulos, titulares y derechos de explotación distintos. Matkator y LPB son personas jurídicas diferentes. La cadena accionarial de AWESWELL está sujeta a conciliación documental histórica separada."
+      },
+      "source_keys": [
+        "dependency",
+        "title"
+      ],
+      "related_nexus": [
+        "NEX-01"
+      ]
+    },
+    {
+      "id": "GC-02",
+      "date": "7 June 2018",
+      "date_es": "7 de junio de 2018",
+      "title": {
+        "en": "Material-control rupture",
+        "es": "Ruptura del control material"
+      },
+      "evidence_state": "SOURCE_QUALIFIED_AND_CONTESTED",
+      "explanation": {
+        "en": "The dossier records a material access/control change. The claimant alleges a displacement of the operating business; responsibility and its full economic consequences require actor-specific proof.",
+        "es": "El expediente recoge un cambio material de acceso/control. La parte alega desplazamiento del negocio operativo; la responsabilidad y sus consecuencias económicas exigen prueba individualizada."
+      },
+      "source_keys": [
+        "control",
+        "chain"
+      ],
+      "related_nexus": [
+        "NEX-01",
+        "NEX-02"
+      ]
+    },
+    {
+      "id": "GC-03",
+      "date": "June 2018–2021",
+      "date_es": "Junio de 2018–2021",
+      "title": {
+        "en": "Funded exit and dación",
+        "es": "Salida financiada y dación"
+      },
+      "evidence_state": "SOURCE_QUALIFIED_AND_CONTESTED",
+      "explanation": {
+        "en": "ONA and the conditional financing route preceded later decisions. The October 2019 non-convalidation and May 2021 approval of CAM's proposal are distinct events; neither proves a continuous common plan.",
+        "es": "ONA y la financiación condicionada precedieron las decisiones posteriores. La no convalidación de octubre de 2019 y la aprobación de la propuesta de CAM en mayo de 2021 son hechos distintos; no prueban un concierto continuado."
+      },
+      "source_keys": [
+        "ona",
+        "judge"
+      ],
+      "related_nexus": [
+        "NEX-02",
+        "NEX-03"
+      ]
+    },
+    {
+      "id": "GC-04",
+      "date": "2020 → July 2021",
+      "date_es": "2020 → julio de 2021",
+      "title": {
+        "en": "Investor narrative and title qualification",
+        "es": "Relato inversor y salvedad de titularidad"
+      },
+      "evidence_state": "DOCUMENTED_SEQUENCE",
+      "explanation": {
+        "en": "The RICPE presentation named CAM as sociedad titular while the project was under study. The July 2021 certification recorded fragmented title and incomplete due diligence. Reconcile the actual source and conditions of each subsequent decision.",
+        "es": "La presentación de RICPE identificó a CAM como sociedad titular mientras el proyecto estaba en estudio. La certificación de julio de 2021 recogió titularidad fragmentada y diligencia debida incompleta. Conciliar fuentes y condiciones de cada decisión posterior."
+      },
+      "source_keys": [
+        "ric",
+        "dependency"
+      ],
+      "related_nexus": [
+        "NEX-04"
+      ]
+    },
+    {
+      "id": "GC-05",
+      "date": "2022 onward",
+      "date_es": "Desde 2022",
+      "title": {
+        "en": "HNT / MYND operation",
+        "es": "Explotación HNT / MYND"
+      },
+      "evidence_state": "SOURCE_QUALIFIED_AND_CONTESTED",
+      "explanation": {
+        "en": "The 2022 transactions and hotel operation are documented separately. The claimant disputes the extent of title and authority over particular spaces; funding, operation and ownership are not equivalent.",
+        "es": "Las operaciones de 2022 y la explotación hotelera se documentan separadamente. La parte cuestiona el alcance de título y habilitación sobre espacios concretos; financiación, explotación y propiedad no equivalen."
+      },
+      "source_keys": [
+        "cam",
+        "ric"
+      ],
+      "related_nexus": [
+        "NEX-04"
+      ]
+    },
+    {
+      "id": "GC-06",
+      "date": "Dec 2022 / Jan 2025 records",
+      "date_es": "Dic 2022 / registros ene 2025",
+      "title": {
+        "en": "Earlier disputed title changes",
+        "es": "Cambios de título anteriores controvertidos"
+      },
+      "evidence_state": "PARTY_ACCOUNT_OF_REGISTRY_RECORD",
+      "explanation": {
+        "en": "Matkator's March 2025 filing reports that 8497 and 8498 appeared registered to HNT from December 2022, through a transfer it says it did not know or authorise. Certified current title and the transfer instruments remain necessary.",
+        "es": "El escrito de Matkator de marzo de 2025 indica que 8497 y 8498 figuraban inscritas a nombre de HNT desde diciembre de 2022, por una transmisión que dice desconocer y no haber autorizado. Se requieren títulos actuales certificados e instrumentos de transmisión."
+      },
+      "source_keys": [
+        "cam",
+        "title"
+      ],
+      "related_nexus": [
+        "NEX-04",
+        "NEX-05"
+      ]
+    },
+    {
+      "id": "GC-07",
+      "date": "3 September 2026",
+      "date_es": "3 de septiembre de 2026",
+      "title": {
+        "en": "The enforcement mechanism",
+        "es": "El mecanismo de ejecución"
+      },
+      "evidence_state": "VERIFIED_PARTY_REQUEST",
+      "explanation": {
+        "en": "Cuatrecasas's opposition identifies the final monetary judgment in Cambiario 1048/2019 (EUR 182,517.72 principal against Matkator) and requests continuation, adjudication of finca 8584 and authority to cede the remate to a third party. The firm maintains the enforcement is lawful debt recovery.",
+        "es": "La oposición de Cuatrecasas identifica la sentencia dineraria firme en Cambiario 1048/2019 (182.517,72 EUR de principal frente a Matkator) y solicita continuación, adjudicación de finca 8584 y facultad de ceder el remate a tercero. El despacho sostiene que es cobro lícito."
+      },
+      "source_keys": [
+        "opposition",
+        "claim"
+      ],
+      "related_nexus": [
+        "NEX-05"
+      ]
+    },
+    {
+      "id": "GC-08",
+      "date": "17 September 2026",
+      "date_es": "17 de septiembre de 2026",
+      "title": {
+        "en": "Suspension refused",
+        "es": "Suspensión denegada"
+      },
+      "evidence_state": "OFFICIAL_OUTCOME",
+      "explanation": {
+        "en": "The civil court dismissed reconsideration of the refusal to suspend. That is not an adjudication or cession order and does not determine DP 748 or the identity of a beneficiary.",
+        "es": "El juzgado civil desestimó la reposición contra la denegación de suspensión. No es una resolución de adjudicación o cesión y no decide DP 748 ni la identidad de beneficiario."
+      },
+      "source_keys": [
+        "order",
+        "criminal"
+      ],
+      "related_nexus": [
+        "NEX-05"
+      ]
+    },
+    {
+      "id": "GC-09",
+      "date": "3 September record / future outcome open",
+      "date_es": "Constancia 3 septiembre / resultado abierto",
+      "title": {
+        "en": "The golden card? Finca 8584",
+        "es": "¿La carta dorada? Finca 8584"
+      },
+      "evidence_state": "INVESTIGATIVE_HYPOTHESIS",
+      "explanation": {
+        "en": "The filing acknowledges Matkator as registered owner. Its title anchors asserted property, possession, governance, accounting, exploitation and restitution rights. The alleged golden-card effect is that a future adjudication or cession might consolidate disputed control and complicate those remedies. Adjudication itself may prejudice title-based rights without a cession.",
+        "es": "El escrito reconoce a Matkator como titular registral. Su título sirve de base a derechos alegados de propiedad, posesión, gobierno, cuentas, explotación y restitución. El presunto efecto de carta dorada es que una adjudicación o cesión futura pueda consolidar el control controvertido y dificultar esos remedios. La adjudicación misma puede afectar derechos ligados al título sin cesión."
+      },
+      "source_keys": [
+        "title",
+        "opposition",
+        "claim"
+      ],
+      "related_nexus": [
+        "NEX-05"
+      ]
+    },
+    {
+      "id": "GC-10",
+      "date": "Unverified future / recipient",
+      "date_es": "Futuro no verificado / destinatario",
+      "title": {
+        "en": "Who would receive the card?",
+        "es": "¿Quién recibiría la carta?"
+      },
+      "evidence_state": "OPEN_OR_UNVERIFIED",
+      "explanation": {
+        "en": "No completed adjudication, cession or Acosta Matos-connected recipient is established by these sources. Verify the decree, cession document, consideration, source of funds, recipient, beneficial ownership, Registry entry and hotel use. Finca 8588 is separately reported as Matkator property in January 2025 and is not shown to be the enforcement target.",
+        "es": "Estas fuentes no acreditan adjudicación o cesión consumada ni destinatario vinculado a Acosta Matos. Verificar decreto, documento de cesión, contraprestación, origen de fondos, destinatario, titular real, inscripción y uso hotelero. La finca 8588 se indica separadamente como propiedad de Matkator en enero de 2025 y no consta como objeto de esta ejecución."
+      },
+      "source_keys": [
+        "title",
+        "claim",
+        "cam"
+      ],
+      "related_nexus": [
+        "NEX-05"
+      ]
+    },
+    {
+      "id": "GC-11",
+      "date": "24 November 2026",
+      "date_es": "24 de noviembre de 2026",
+      "title": {
+        "en": "Institutional accountability",
+        "es": "Responsabilidad institucional"
+      },
+      "evidence_state": "OFFICIAL_PROCEDURAL_DEVELOPMENT",
+      "explanation": {
+        "en": "CCACM 436/2026 opens administrative appeal proceedings; no misconduct finding or sanction. Seek a reasoned, independent response to the documented issues, corrections and lawful remedies, not a concession in exchange for silence.",
+        "es": "CCACM 436/2026 incoa expediente de alzada; no declara infracción ni sanción. Solicitar respuesta motivada e independiente, rectificaciones y remedios lícitos, no concesiones a cambio de silencio."
+      },
+      "source_keys": [
+        "pdf",
+        "response",
+        "nexus"
+      ],
+      "related_nexus": [
+        "NEX-06"
+      ]
+    }
+  ],
+  "property_register": [
+    {
+      "finca": "8497",
+      "state": "REPORTED_HNT_REGISTRATION_DISPUTED",
+      "source": "GC-06"
+    },
+    {
+      "finca": "8498",
+      "state": "REPORTED_HNT_REGISTRATION_DISPUTED",
+      "source": "GC-06"
+    },
+    {
+      "finca": "8584",
+      "state": "MATKATOR_REGISTERED_OWNER_ACKNOWLEDGED_3SEP2026__ADJUDICATION_REQUEST",
+      "source": "GC-07/GC-09"
+    },
+    {
+      "finca": "8588",
+      "state": "REPORTED_MATKATOR_JAN2025__NOT_ESTABLISHED_AS_ENFORCEMENT_TARGET",
+      "source": "GC-10"
+    }
+  ],
+  "disclosure": "Editorial metaphor, not evidence of coordination, intentional concealment or actual transfer. Retain lawful collection explanation, adverse decisions, separate title rights and all open proof.",
+  "release_status": "SOURCE_PREPARED_ONLY"
+}

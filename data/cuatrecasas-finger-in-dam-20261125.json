@@ -65,5 +65,18 @@
     "PERSONAL_DATA_NECESSITY_AND_PROPORTIONALITY": "No additional personal images, identifiers, contacts or correspondence; existing author identity is author only.",
     "CORRECTION_REPLY_TAKEDOWN_AND_NARROW_REVERT_PATH": "Invite verifiable institutional response and fair correction; preserve prior versions and narrow corrective PR. No direct contact campaign."
   },
-  "release_gate": "Normal exact-head CI, protected publication permit and deployed readback."
+  "release_gate": "Normal exact-head CI, protected publication permit and deployed readback.",
+  "golden_card": {
+    "control_id": "PD-CUATRECASAS-GOLDEN-CARD-NEXUS-20261125-001",
+    "record": "data/cuatrecasas-golden-card-nexus-20261125.json",
+    "section_id": "golden-card-nexus-20261125",
+    "related_nodes": [
+      "NEX-01",
+      "NEX-02",
+      "NEX-03",
+      "NEX-04",
+      "NEX-05",
+      "NEX-06"
+    ]
+  }
 }
