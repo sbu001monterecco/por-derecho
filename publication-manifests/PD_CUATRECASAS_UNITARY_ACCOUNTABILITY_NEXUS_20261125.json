@@ -1,0 +1,66 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "PD-CUATRECASAS-UNITARY-ACCOUNTABILITY-NEXUS-20261125-001",
+  "control_id": "PD-CUATRECASAS-UNITARY-ACCOUNTABILITY-NEXUS-20261125-001",
+  "owner": "Por Derecho / Project Sun Rock",
+  "host": "github",
+  "control_date": "2026-11-25",
+  "current_state": "REMOTE_SOURCE",
+  "source_baseline": "8e2ba652b39777add0f97c6dfc34f56704e8cb59",
+  "branch": "codex/ccacm-436-accountability-nexus-20261125",
+  "purpose": "Owner-directed additive bilingual documentary nexus and embedded signature-redacted order viewer, preserving existing evidence and all legal distinctions.",
+  "expected_routes": {
+    "en": [
+      "en/cuatrecasas-sun-park/index.html",
+      "en/cuatrecasas-icam-ccacm-2026/index.html"
+    ],
+    "es": [
+      "es/cuatrecasas-sun-park/index.html",
+      "es/cuatrecasas-icam-ccacm-2026/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "en/cuatrecasas-sun-park/index.html",
+    "es/cuatrecasas-sun-park/index.html",
+    "en/cuatrecasas-icam-ccacm-2026/index.html",
+    "es/cuatrecasas-icam-ccacm-2026/index.html",
+    "data/ccacm-436-unitary-accountability-nexus-20261125.json",
+    "assets/ccacm-436-accountability-nexus-20261125.css",
+    "assets/ccacm-436-accountability-nexus-20261125.js",
+    "assets/evidence/cuatrecasas/ccacm-436-2026-order-24nov2026-signature-redacted.pdf"
+  ],
+  "repository_assets": [
+    "en/cuatrecasas-sun-park/index.html",
+    "es/cuatrecasas-sun-park/index.html",
+    "en/cuatrecasas-icam-ccacm-2026/index.html",
+    "es/cuatrecasas-icam-ccacm-2026/index.html",
+    "data/ccacm-436-unitary-accountability-nexus-20261125.json",
+    "assets/ccacm-436-accountability-nexus-20261125.css",
+    "assets/ccacm-436-accountability-nexus-20261125.js",
+    "assets/evidence/cuatrecasas/ccacm-436-2026-order-24nov2026-signature-redacted.pdf"
+  ],
+  "public_markers": [
+    "unitary-accountability-nexus-20261125",
+    "ccacm-436-20261124-viewer",
+    "ccacm-436-20261124"
+  ],
+  "public_pdf": {
+    "path": "assets/evidence/cuatrecasas/ccacm-436-2026-order-24nov2026-signature-redacted.pdf",
+    "sha256": "28612faaf7372a7b50244d0dac3135fa676d12e3e9e30769c551fa2bd3982eac",
+    "bytes": 718671,
+    "redaction": "Partial handwritten-signature redaction; text and case identifiers unchanged; metadata cleared. Not the unaltered original. Publication is owner-directed, not a legal determination of permissibility."
+  },
+  "authority": "Owner instruction 25 November 2026: Make it live. Normal protected acceptance, review, publication permit and exact deployment checks required; no third-party messages or filing.",
+  "validation": {
+    "status": "SOURCE_PREPARED_ONLY",
+    "evidence": [
+      "Exact input PDF verified by SHA-256 and original text comparison; transfer staging copy identical.",
+      "Additive source transformation; shared canonical register and assets; review and CI not yet established."
+    ]
+  },
+  "publication_boundaries": [
+    "Appeal opened, service directed, 10 days for representations. No disciplinary sanction, merits determination or causal finding.",
+    "Supplied direct-message captures, not provider-certified authorship, evidence of dissemination or subsequent interface cause.",
+    "No common plan, guilt, ultimate beneficiary or criminal intent established. No private correspondence or unredacted original included."
+  ]
+}

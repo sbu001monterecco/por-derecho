@@ -1,0 +1,307 @@
+{
+  "schema": "por-derecho.accountability-nexus.v1",
+  "control_id": "PD-CUATRECASAS-UNITARY-ACCOUNTABILITY-NEXUS-20261125-001",
+  "version": 1,
+  "as_of": "2026-11-25",
+  "classification": "SOURCE_QUALIFIED_INVESTIGATIVE_THESIS",
+  "actor_lanes": [
+    {
+      "key": "CUA",
+      "en": "Cuatrecasas and individual partners",
+      "es": "Cuatrecasas y socios individualizados",
+      "enRole": "Protective mandate, knowledge, conflicts, handover and subsequent enforcement.",
+      "esRole": "Mandato de protección, conocimiento, conflictos, traspaso y ejecución posterior."
+    },
+    {
+      "key": "AC",
+      "en": "Insolvency Administrator",
+      "es": "Administrador Concursal",
+      "enRole": "Preservation, valuation, debt certification, accounts, independence and decisions within the estate.",
+      "esRole": "Conservación, valoración, certificación de deuda, cuentas, independencia y decisiones dentro de la masa."
+    },
+    {
+      "key": "JUD",
+      "en": "Insolvency court",
+      "es": "Juzgado del concurso",
+      "enRole": "Judicial supervision, receipt of proposals, authorisations, scope and implementation of orders.",
+      "esRole": "Supervisión judicial, recepción de propuestas, autorizaciones, alcance y ejecución de resoluciones."
+    },
+    {
+      "key": "PRV",
+      "en": "Private actors / Acosta Matos perimeter",
+      "es": "Actores privados / perímetro Acosta Matos",
+      "enRole": "Property-by-property control, disposition, operator authority, financing, revenue and actual benefit.",
+      "esRole": "Control finca por finca, disposición, título habilitante, financiación, ingresos y beneficio efectivo."
+    }
+  ],
+  "routes": {
+    "ona": [
+      "en/ona-hotels-insolvency-exit-36-2012/",
+      "es/ona-hotels-salida-concurso-36-2012/"
+    ],
+    "ac": [
+      "en/insolvency-36-2012-administrator-removal-rpl-3304-2025/",
+      "es/concurso-36-2012-separacion-administrador-concursal-rpl-3304-2025/"
+    ],
+    "judge": [
+      "en/control-24-insolvency-judge-complaint-36-2012/",
+      "es/control-24-denuncia-juez-concurso-36-2012/"
+    ],
+    "cam": [
+      "en/acosta-matos-perimeter/",
+      "es/acosta-matos-perimetro/"
+    ],
+    "etj": [
+      "en/cuatrecasas-dp748-civil-action/",
+      "es/cuatrecasas-dp748-accion-civil/"
+    ],
+    "dip": [
+      "en/icalpa-rapporteur-workbench/dip-80-2026/",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/"
+    ],
+    "criminal": [
+      "en/dp-1901-2026/",
+      "es/dp-1901-2026/"
+    ],
+    "accriminal": [
+      "en/dp-1956-2026/",
+      "es/dp-1956-2026/"
+    ],
+    "chain": [
+      "en/accountability-chain-2018-2022/",
+      "es/cadena-responsabilidad-2018-2022/"
+    ],
+    "bars": [
+      "en/cuatrecasas-icam-ccacm-2026/",
+      "es/cuatrecasas-icam-ccacm-2026/"
+    ]
+  },
+  "rows": [
+    {
+      "id": "NEX-01",
+      "date": "2014–June 2018",
+      "esDate": "2014–junio 2018",
+      "en": "Protection and notice before the change of control",
+      "es": "Protección y avisos anteriores al cambio de control",
+      "types": [
+        "knowledge",
+        "omission",
+        "inaction"
+      ],
+      "enCells": [
+        "Prior professional work, documented warnings and protection issues; test who received each notice and what each adviser could do.",
+        "Test response to requests for access and preservation and the scope of stewardship over estate assets.",
+        "Identify applications received, powers available and actual orders or reasons for no order.",
+        "Identify exact entry, access, possession and title relied on; do not equate possession with title."
+      ],
+      "esCells": [
+        "Trabajos profesionales anteriores, avisos y cuestiones de protección; comprobar recepción y facultades de cada asesor.",
+        "Comprobar respuesta a solicitudes de acceso y protección y alcance de la administración de bienes de la masa.",
+        "Identificar escritos recibidos, facultades, resoluciones y razones de la eventual falta de resolución.",
+        "Identificar acceso, posesión y título invocado; no equiparar posesión y titularidad."
+      ],
+      "sources": [
+        "ona",
+        "chain",
+        "cam"
+      ],
+      "enGap": "Party allegation: deficient protective response. The record does not establish a duty or omission for every person; recover exact recipient, duty and response.",
+      "esGap": "Alegación de parte: protección insuficiente. No consta acreditado un deber u omisión de cada persona; recuperar destinatario, deber y respuesta."
+    },
+    {
+      "id": "NEX-02",
+      "date": "June 2018–2019",
+      "esDate": "Junio 2018–2019",
+      "en": "ONA and the funded-exit dependencies",
+      "es": "ONA y las dependencias de la salida financiada",
+      "types": [
+        "commission",
+        "omission",
+        "enablement"
+      ],
+      "enCells": [
+        "6 June signed operating agreement; 12 June conditional binding offer; 13 June presentation. Test the integration, warnings, security and implementation record.",
+        "Test debt certification, information, creditor payment and asset-access dependencies, including available alternatives.",
+        "Determine what was formally received and decided and which protection or approval was within competence.",
+        "Test acts affecting asset access, control and commercial operation, and the conditions relevant to closing."
+      ],
+      "esCells": [
+        "Acuerdo operativo firmado el 6 de junio; oferta vinculante condicionada del 12; presentación del 13. Comprobar integración, avisos, garantías e implementación.",
+        "Comprobar certificación de deuda, información, pago a acreedores y acceso al activo, incluidas alternativas.",
+        "Determinar qué se recibió y resolvió formalmente y qué protección o autorización era de su competencia.",
+        "Comprobar actos relativos al acceso, control y explotación y las condiciones relevantes para el cierre."
+      ],
+      "sources": [
+        "ona",
+        "judge",
+        "ac",
+        "chain"
+      ],
+      "enGap": "Conditional finance was not a completed drawdown. Identify each closing condition, person controlling it, decision and causal impact. The €26m route is not proof of a completed sale.",
+      "esGap": "La financiación condicionada no equivale a disposición de fondos. Identificar cada condición, responsable, decisión y efecto causal. La vía de 26 M EUR no acredita una venta consumada."
+    },
+    {
+      "id": "NEX-03",
+      "date": "28 Nov 2018–18 May 2021",
+      "esDate": "28 nov 2018–18 may 2021",
+      "en": "Dación, economic threshold and judicial supervision",
+      "es": "Dación, umbral económico y supervisión judicial",
+      "types": [
+        "commission",
+        "omission",
+        "enablement"
+      ],
+      "enCells": [
+        "Test advice and the alleged failure to protect the economic gate, including precise debt, priority, valuation and alternative offers.",
+        "Identify the proposal, implementation, valuations and restitution/regularisation after non-convalidation.",
+        "24 October 2019 non-convalidation and 18 May 2021 CAM approval are separate decisions; compare exact scope, conditions and implementation.",
+        "Identify deed, specific properties, payments and possession; later authority is not blanket title to all hotel rights."
+      ],
+      "esCells": [
+        "Comprobar asesoramiento y alegado fallo en la protección del umbral económico: deuda, prelación, valoración y ofertas alternativas.",
+        "Identificar propuesta, ejecución, valoraciones y restitución/regularización tras la no convalidación.",
+        "La no convalidación del 24 de octubre de 2019 y la aprobación de CAM del 18 de mayo de 2021 son resoluciones distintas: comparar alcance, condiciones e implementación.",
+        "Identificar escritura, fincas, pagos y posesión; la autorización posterior no es título universal sobre todos los derechos hoteleros."
+      ],
+      "sources": [
+        "judge",
+        "ac",
+        "chain",
+        "cam"
+      ],
+      "enGap": "The 2019 refusal is counterevidence to an uninterrupted facilitation theory; the 2021 decision approved CAM, not AWESWELL. Judicial error or disagreement alone is not prevaricación.",
+      "esGap": "La negativa de 2019 es prueba contraria a una facilitación ininterrumpida; en 2021 se aprobó CAM, no AWESWELL. Error o discrepancia judicial no equivalen a prevaricación."
+    },
+    {
+      "id": "NEX-04",
+      "date": "2020–2023",
+      "esDate": "2020–2023",
+      "en": "Withdrawal, confidential notice and later exploitation",
+      "es": "Renuncia, aviso confidencial y explotación posterior",
+      "types": [
+        "knowledge",
+        "silence",
+        "omission",
+        "enablement"
+      ],
+      "enCells": [
+        "Documented withdrawal/venia and 8 March 2021 confidential transmission; test actual receipt, handover, confidentiality and conflict decisions.",
+        "Compare estate accounts, recommendations and the property-specific scope of protection.",
+        "Examine decisions and implementation within the court's actual jurisdiction and available record.",
+        "Test CAM/HNT/MYND/RICPE transactions, title, operator authority and benefits from each asset. Financing and grants are different instruments."
+      ],
+      "esCells": [
+        "Renuncia/venia documentada y transmisión confidencial del 8 de marzo de 2021; comprobar recepción, traspaso, secreto y decisiones de conflicto.",
+        "Comparar cuentas de la masa, recomendaciones y alcance de protección por finca.",
+        "Examinar resoluciones e implementación según competencia y expediente efectivo del juzgado.",
+        "Comprobar operaciones CAM/HNT/MYND/RICPE, título, habilitación y beneficios por activo. Financiación y subvenciones son instrumentos distintos."
+      ],
+      "sources": [
+        "cam",
+        "chain",
+        "etj",
+        "bars"
+      ],
+      "enGap": "Sending does not establish reading, onward transmission or a duty to respond. Prior work and venia are contrary evidence to a blanket claim of silence or zero protection.",
+      "esGap": "El envío no acredita lectura, reenvío ni deber de responder. Los trabajos y la venia son prueba contraria a una afirmación global de silencio o protección nula."
+    },
+    {
+      "id": "NEX-05",
+      "date": "2024–2026",
+      "esDate": "2024–2026",
+      "en": "From former adviser to enforcing creditor",
+      "es": "De antiguo asesor a acreedor ejecutante",
+      "types": [
+        "commission",
+        "knowledge",
+        "enablement"
+      ],
+      "enCells": [
+        "Cambiario 1048/2019 → ETJ 163/2020: verify debtor, instruments, knowledge, later filings, adjudication request and reservation of cession.",
+        "Compare the LPB estate and independently pleaded removal grounds; Matkator's separate title must not be imported into the estate.",
+        "Separate insolvency supervision from the ETJ civil court and DP 748 criminal track; identify actual reliance and requested disposition.",
+        "Test actual/beneficial recipient, consideration, operator use and revenue if any adjudication or cession occurs."
+      ],
+      "esCells": [
+        "Cambiario 1048/2019 → ETJ 163/2020: verificar deudor, instrumentos, conocimiento, escritos, solicitud de adjudicación y reserva de cesión.",
+        "Comparar la masa de LPB y motivos autónomos de separación; no incorporar el título separado de Matkator a la masa.",
+        "Distinguir supervisión concursal del juzgado de ejecución civil y DP 748 penal; identificar dependencia y disposición solicitada.",
+        "Comprobar destinatario formal/real, contraprestación, uso e ingresos si se produce adjudicación o cesión."
+      ],
+      "sources": [
+        "etj",
+        "ac",
+        "cam"
+      ],
+      "enGap": "A final monetary judgment and statutory enforcement may be lawful. Adjudication or cession and a connected beneficiary are not established by the reservation. Test material representation/omission, judicial reliance, prejudice and any proved intent.",
+      "esGap": "Una sentencia dineraria firme y la ejecución legal pueden ser lícitas. La reserva no acredita adjudicación, cesión ni beneficiario vinculado. Comprobar representación/omisión material, dependencia judicial, perjuicio e intención probada."
+    },
+    {
+      "id": "NEX-06",
+      "date": "6 Mar–24 Nov 2026",
+      "esDate": "6 mar–24 nov 2026",
+      "en": "Professional scrutiny and judicial accountability",
+      "es": "Control deontológico y rendición judicial de cuentas",
+      "types": [
+        "commission",
+        "silence"
+      ],
+      "enCells": [
+        "6 March displayed LinkedIn message; 1 July ICAM archive of 1487/26; 24 November CCACM 436/2026 appeal-opening order. Obtain representations lawfully when available.",
+        "ICALPA DIP 80/2026 and RPL 3304/2025 with accumulated RPL 3319/2025; 20 November reposición concerns two previously rejected exhibits.",
+        "5 November evidence order; review the actual reasons and lawful routes, not allegations by association. Control 24 and other criminal tracks retain separate competence.",
+        "Test property-specific benefit with primary records; DP 1901 archive and DP 1956 status are not converted into findings of guilt."
+      ],
+      "esCells": [
+        "Mensaje mostrado el 6 de marzo; archivo ICAM 1487/26 el 1 de julio; providencia de incoación de la alzada CCACM 436/2026 el 24 de noviembre. Obtener alegaciones por vías lícitas cuando estén disponibles.",
+        "ICALPA DIP 80/2026 y RPL 3304/2025 con RPL 3319/2025 acumulado; reposición del 20 de noviembre sobre dos documentos inadmitidos.",
+        "Auto probatorio de 5 de noviembre: examinar motivos y vías lícitas, sin atribución por asociación. Control 24 y demás vías penales conservan competencia separada.",
+        "Comprobar beneficio por finca con prueba primaria; archivo DP 1901 y estado DP 1956 no se convierten en declaraciones de culpabilidad."
+      ],
+      "sources": [
+        "bars",
+        "dip",
+        "ac",
+        "judge",
+        "criminal",
+        "accriminal"
+      ],
+      "enGap": "CCACM's opening is a procedural fact, not a misconduct finding. ICAM's adverse assessment of the private communication remains visible; the new order is not proof of retaliation or coordination.",
+      "esGap": "La incoación CCACM es un hecho procesal, no una declaración de infracción. Se conserva la valoración adversa de ICAM sobre la comunicación privada; la nueva providencia no prueba represalia ni concierto."
+    }
+  ],
+  "official_exhibit": {
+    "case": "436/2026",
+    "preliminary_case": "1487/26",
+    "date": "2026-11-24",
+    "kind": "Providencia de incoación de recurso de alzada",
+    "path": "assets/evidence/cuatrecasas/ccacm-436-2026-order-24nov2026-signature-redacted.pdf",
+    "sha256": "28612faaf7372a7b50244d0dac3135fa676d12e3e9e30769c551fa2bd3982eac",
+    "git_blob_sha1": "a31e66bf57a0cb71a741f163fb0979c9090d1242",
+    "bytes": 718671,
+    "pages": 1,
+    "redaction": "Partial handwritten-signature redaction; text and case identifiers unchanged; metadata cleared. Not the unaltered original. Publication is owner-directed, not a legal determination of permissibility.",
+    "source_boundary": "Appeal opened, service directed, 10 days for representations. No disciplinary sanction, merits determination or causal finding."
+  },
+  "screenshots": {
+    "paths": [
+      "assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-01.jpg",
+      "assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-02.jpg"
+    ],
+    "sha256": [
+      "ddf86dfe42a0cfa8d4481a6e504c4dc94a63e48c2ce7cb98ec764fa20cb25102",
+      "baefb00dc12914aef4c32f0b69bd63842b15f4d83860a254294900a3822d2aab"
+    ],
+    "boundary": "Supplied direct-message captures, not provider-certified authorship, evidence of dissemination or subsequent interface cause."
+  },
+  "test": "actor → precise knowledge/receipt → applicable duty/power → documented act or alleged omission → transmission/reliance → identifiable effect → recipient/benefit → contrary evidence → competent forum",
+  "not_established": [
+    "common agreement or intent",
+    "unlawful obstruction of prosecution",
+    "transfer of knowledge across firms or partners by association",
+    "actual connected cessionary or terminal beneficiary",
+    "disciplinary misconduct",
+    "judicial prevaricación"
+  ],
+  "status_semantics": "Content preparation only. Live status requires independent protected merge and deployment verification for each host."
+}
