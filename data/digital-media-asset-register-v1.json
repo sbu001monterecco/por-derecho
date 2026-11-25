@@ -74,6 +74,12 @@
       "source_type": "USER_RECOVERED_EDITORIAL_CONCEPTS",
       "claim": "Six previously generated DP 1901/2026 explanatory images recovered from controlled user Library custody on 19-Sep-2026. Original bytes remain preserved outside Git; repository copies are web derivatives. Each image is published only with an item-specific correction/evidence-status notice.",
       "control": "publication-manifests/dp1901-cgpj-response-images-20260919.json"
+    },
+    {
+      "id": "SRC-CUATRECASAS-DAM-20261125",
+      "source_type": "ORIGINAL_EDITORIAL_ILLUSTRATION_AND_SOURCE_QUALIFIED_HYPOTHESIS",
+      "claim": "The documented adviser-to-enforcing-creditor chronology raises a question about possible effect; metaphor is not proof of common purpose, obstruction or liability.",
+      "control": "data/cuatrecasas-finger-in-dam-20261125.json"
     }
   ],
   "families": [
@@ -125,6 +131,14 @@
       "current_primary_en": "PD-DMA-0013",
       "current_primary_es": "PD-DMA-0013",
       "mandatory_boundary": "Generic role figures, stylised architecture and invented illustration inscriptions. No actual burial, destruction, personal identification or established culpability is depicted."
+    },
+    {
+      "family_id": "PD-DMA-FAM-CUATRECASAS-DAM-001",
+      "title": "Cuatrecasas — The Finger in the Dam / El dedo en el dique",
+      "scope": "Original AI-generated bilingual editorial satire questioning possible protective economic effects of later enforcement.",
+      "current_primary_en": "PD-DMA-0015",
+      "current_primary_es": "PD-DMA-0015",
+      "mandatory_boundary": "No real-person depiction, actual property photograph, ownership, endorsement, coordination, criminal obstruction or liability established."
     }
   ],
   "logical_assets": [
@@ -343,6 +357,39 @@
         "receipt": "PD-DMA-0014-RIGHTS-REQUEST^",
         "publication_hold": true
       }
+    },
+    {
+      "reference": "PD-DMA-0015",
+      "family_id": "PD-DMA-FAM-CUATRECASAS-DAM-001",
+      "title": "The Finger in the Dam / El dedo en el dique",
+      "language": "en-es",
+      "edition": "USER_DIRECTED_EDITORIAL_SATIRE",
+      "publication_status": "PREPARED_FOR_PUBLICATION",
+      "satire_compliance_id": "PD-SAT-CUATRECASAS-DAM-0001",
+      "web_file": "PD-DMA-0015-PAGE-V3^",
+      "web_file_es": "PD-DMA-0015-ES-PAGE-V3^",
+      "image_file": "PD-DMA-0015-WEB^",
+      "image_file_es": "PD-DMA-0015-WEB^",
+      "sources": [
+        "SRC-CUATRECASAS-DAM-20261125",
+        "PD-DMA-CUATRECASAS-FINGER-IN-THE-DAM-20261125-001",
+        "PD-CUATRECASAS-GOLDEN-CARD-NEXUS-20261125-001",
+        "PD-CUATRECASAS-CORPORATE-CRIME-FPF-RICPE-NEXUS-20261125-001",
+        "PD-CUATRECASAS-CLAIM-CONVERSION-C6-NEXUS-20261125-001"
+      ],
+      "correction_control": "Preserve earlier evidence and exact versions; new file identity for changed bytes.",
+      "editorial_extensions": [
+        {
+          "control_id": "PD-CUATRECASAS-GOLDEN-CARD-NEXUS-20261125-001",
+          "record": "data/cuatrecasas-golden-card-nexus-20261125.json",
+          "kind": "WEB_NATIVE_EVIDENCE_MAP"
+        },
+        {
+          "control_id": "PD-CUATRECASAS-CORPORATE-CRIME-FPF-RICPE-NEXUS-20261125-001",
+          "record": "data/cuatrecasas-claim-conversion-corporate-accountability-20261125.json",
+          "kind": "CLAIM_CONVERSION_AND_CORPORATE_LAW_SOURCE_TEST"
+        }
+      ]
     }
   ],
   "files": [
@@ -872,6 +919,134 @@
       "drive_custody_path": "Google Drive / Por Derecho — Visual Assets / PD-DMA-0014_RIGHTS_CLEARANCE_REQUEST_20261001.md",
       "drive_receipt_sha256": "2296f074f1067cea73053ad65054975782766a4356facb30b5129ac2f9441db2",
       "rights_state": "WRITTEN_CLEARANCE_REQUEST_SENT__RESPONSE_PENDING"
+    },
+    {
+      "reference": "PD-DMA-0015-WEB^",
+      "logical_asset": "PD-DMA-0015",
+      "role": "SIZE_OPTIMISED_BILINGUAL_IMAGE_DERIVATIVE",
+      "repository_path": "assets/visuals/cuatrecasas-finger-in-dam-20261125/finger-in-the-dam.webp",
+      "public_url": "/assets/visuals/cuatrecasas-finger-in-dam-20261125/finger-in-the-dam.webp",
+      "mime": "image/webp",
+      "width_px": 1536,
+      "height_px": 1024,
+      "bytes": 626364,
+      "sha256": "ea3f009e94eb3f48b400b7690bd569d675fedecbf4dddc39b4a763b63e8f2b75",
+      "source_filename": "PD-DMA-0015_FINGER_IN_THE_DAM_20261125_MASTER.png",
+      "source_sha256": "39947c844da37cb23eb84a3fca4e902ecccefcfae1d672e1aa49e36cbd7db558",
+      "source_bytes": 3719127,
+      "repository_mirror": true,
+      "publication_status": "PREPARED_FOR_PUBLICATION",
+      "transformation": "WebP encoding at original dimensions; master in private verified custody."
+    },
+    {
+      "reference": "PD-DMA-0015-PNG^",
+      "logical_asset": "PD-DMA-0015",
+      "role": "FULL_RESOLUTION_ORIGINAL_MASTER",
+      "source_filename": "PD-DMA-0015_FINGER_IN_THE_DAM_20261125_MASTER.png",
+      "mime": "image/png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "bytes": 3719127,
+      "sha256": "39947c844da37cb23eb84a3fca4e902ecccefcfae1d672e1aa49e36cbd7db558",
+      "repository_mirror": false,
+      "repository_mirror_gap": "Hash-verified master retained privately; website serves WebP derivative.",
+      "publication_status": "LOCKED_IN_CUSTODY__NOT_PUBLIC_BINARY"
+    },
+    {
+      "reference": "PD-DMA-0015^",
+      "logical_asset": "PD-DMA-0015",
+      "role": "ENGLISH_EDITORIAL_LANDING",
+      "language": "en",
+      "repository_path": "en/cuatrecasas-sun-park/index.html",
+      "public_url": "/en/cuatrecasas-sun-park/",
+      "mime": "text/html",
+      "bytes": 136840,
+      "sha256": "8aa6d5d8cb5c7a7cbd04ed832a2916cebc8f702274438201f0fa6d0ded3e7f62",
+      "repository_mirror": true,
+      "publication_status": "SUPERSEDED_SOURCE_VERSION_PRESERVED_IN_GIT",
+      "historical_source_commit": "dfbd89560cf0d7a77ec98f1d0b72431aa093d579",
+      "current_public_representation": false,
+      "successor_reference": "PD-DMA-0015-PAGE-V2^"
+    },
+    {
+      "reference": "PD-DMA-0015-ES-PAGE^",
+      "logical_asset": "PD-DMA-0015",
+      "role": "SPANISH_EDITORIAL_LANDING",
+      "language": "es-ES",
+      "repository_path": "es/cuatrecasas-sun-park/index.html",
+      "public_url": "/es/cuatrecasas-sun-park/",
+      "mime": "text/html",
+      "bytes": 141814,
+      "sha256": "532bf3a9cbb5fda06649039ba53988ebfdd77ce12486ae7cf1ab739ebe1a33c8",
+      "repository_mirror": true,
+      "publication_status": "SUPERSEDED_SOURCE_VERSION_PRESERVED_IN_GIT",
+      "historical_source_commit": "dfbd89560cf0d7a77ec98f1d0b72431aa093d579",
+      "current_public_representation": false,
+      "successor_reference": "PD-DMA-0015-ES-PAGE-V2^"
+    },
+    {
+      "reference": "PD-DMA-0015-PAGE-V2^",
+      "logical_asset": "PD-DMA-0015",
+      "role": "ENGLISH_EDITORIAL_LANDING",
+      "language": "en",
+      "repository_path": "en/cuatrecasas-sun-park/index.html",
+      "public_url": "/en/cuatrecasas-sun-park/",
+      "mime": "text/html",
+      "bytes": 151508,
+      "sha256": "63bc4de144105e621788ab28f9b3144a7f1dd9e322f3ea1b95fb6b1bea070d4c",
+      "repository_mirror": true,
+      "publication_status": "SUPERSEDED_SOURCE_VERSION_PRESERVED_IN_GIT",
+      "current_public_representation": false,
+      "predecessor_reference": "PD-DMA-0015^",
+      "historical_source_commit": "78b2178be82ba48a8dc261fb92068322ab78b853",
+      "successor_reference": "PD-DMA-0015-PAGE-V3^"
+    },
+    {
+      "reference": "PD-DMA-0015-ES-PAGE-V2^",
+      "logical_asset": "PD-DMA-0015",
+      "role": "SPANISH_EDITORIAL_LANDING",
+      "language": "es-ES",
+      "repository_path": "es/cuatrecasas-sun-park/index.html",
+      "public_url": "/es/cuatrecasas-sun-park/",
+      "mime": "text/html",
+      "bytes": 157122,
+      "sha256": "ae1112f27f779925cdb31fc2b243a4f2c18355365b3f0d0e818893af5e8542e1",
+      "repository_mirror": true,
+      "publication_status": "SUPERSEDED_SOURCE_VERSION_PRESERVED_IN_GIT",
+      "current_public_representation": false,
+      "predecessor_reference": "PD-DMA-0015-ES-PAGE^",
+      "historical_source_commit": "78b2178be82ba48a8dc261fb92068322ab78b853",
+      "successor_reference": "PD-DMA-0015-ES-PAGE-V3^"
+    },
+    {
+      "reference": "PD-DMA-0015-PAGE-V3^",
+      "logical_asset": "PD-DMA-0015",
+      "role": "ENGLISH_EDITORIAL_LANDING",
+      "language": "en",
+      "repository_path": "en/cuatrecasas-sun-park/index.html",
+      "public_url": "/en/cuatrecasas-sun-park/",
+      "mime": "text/html",
+      "bytes": 159108,
+      "sha256": "0d103a9467d3461ffa4edc01a043fbe9f1ccc5f54cb1c076d996f4c59ebb49d6",
+      "repository_mirror": true,
+      "publication_status": "PREPARED_FOR_PUBLICATION",
+      "current_public_representation": true,
+      "predecessor_reference": "PD-DMA-0015-PAGE-V2^"
+    },
+    {
+      "reference": "PD-DMA-0015-ES-PAGE-V3^",
+      "logical_asset": "PD-DMA-0015",
+      "role": "SPANISH_EDITORIAL_LANDING",
+      "language": "es-ES",
+      "repository_path": "es/cuatrecasas-sun-park/index.html",
+      "public_url": "/es/cuatrecasas-sun-park/",
+      "mime": "text/html",
+      "bytes": 164870,
+      "sha256": "93f8a381796d3c790fde23b90921756ef9fec72395a34d7bada13457bf589267",
+      "repository_mirror": true,
+      "publication_status": "PREPARED_FOR_PUBLICATION",
+      "current_public_representation": true,
+      "predecessor_reference": "PD-DMA-0015-ES-PAGE-V2^"
     }
   ],
   "public_routes": {
@@ -882,7 +1057,9 @@
     "master_mynd_es": "/es/acosta-matos-familia/",
     "master_mynd_en": "/en/acosta-matos-family/",
     "dp1901_shame_en": "/en/dp-1901-2026/shame-has-left-the-building/",
-    "dp1901_shame_es": "/es/dp-1901-2026/la-verguenza-no-se-fue/"
+    "dp1901_shame_es": "/es/dp-1901-2026/la-verguenza-no-se-fue/",
+    "cuatrecasas_dam_en": "/en/cuatrecasas-sun-park/",
+    "cuatrecasas_dam_es": "/es/cuatrecasas-sun-park/"
   },
   "correction_rule": "A translation, crop, re-export, compression, text correction or redesign is a new exact file identity. Prior hashes remain preserved and are never silently reused."
 }

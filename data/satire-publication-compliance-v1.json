@@ -574,6 +574,104 @@
         "spanish_posted": false,
         "cambiante_used": false
       }
+    },
+    {
+      "publication_id": "PD-SAT-CUATRECASAS-DAM-0001",
+      "family_id": "PD-DMA-FAM-CUATRECASAS-DAM-001",
+      "title": "The Finger in the Dam / El dedo en el dique",
+      "logical_assets": [
+        "PD-DMA-0015"
+      ],
+      "public_surfaces": [
+        {
+          "path": "en/cuatrecasas-sun-park/index.html",
+          "language": "en",
+          "required_disclosure": "SATIRICAL / CARICATURE REPRESENTATION — NOT A REAL ADVERTISEMENT"
+        },
+        {
+          "path": "es/cuatrecasas-sun-park/index.html",
+          "language": "es",
+          "required_disclosure": "CARICATURA / REPRESENTACIÓN SATÍRICA — NO ES UN ANUNCIO REAL"
+        }
+      ],
+      "named_people": [
+        {
+          "display_name": "Gil Marer",
+          "naming_form": "FULL_CANONICAL_CARET_CONFIRMED",
+          "identity_state": "CARET_CONFIRMED",
+          "caepr_id": "PD-SP-P-0001",
+          "source_refs": [
+            "assets/data/matter-identity-registry-v1.people.json",
+            "data/ccacm-436-unitary-accountability-nexus-20261125.json"
+          ],
+          "factual_role": {
+            "label": "Author/claimant whose attributed hypothesis appears in the documentary record.",
+            "date_or_period": "25 November 2026",
+            "source_refs": [
+              "data/ccacm-436-unitary-accountability-nexus-20261125.json"
+            ]
+          },
+          "affiliation": {
+            "state": "NOT_APPLICABLE"
+          },
+          "satirical_function": {
+            "state": "NONE",
+            "label": "Author, not depicted."
+          }
+        }
+      ],
+      "factual_role_and_satirical_function_separated": true,
+      "evidence_states_present": [
+        "DOCUMENTED_FACT",
+        "OFFICIAL_OUTCOME",
+        "ATTRIBUTED_ALLEGATION",
+        "PROJECT_SIDE_INTERPRETATION",
+        "INVESTIGATIVE_HYPOTHESIS",
+        "RHETORICAL_METAPHOR_OR_DOUBLE_MEANING",
+        "CONTRARY_RECORD_OR_LAWFUL_ALTERNATIVE",
+        "OPEN_OR_UNVERIFIED"
+      ],
+      "source_refs": [
+        "data/ccacm-436-unitary-accountability-nexus-20261125.json",
+        "en/cuatrecasas-sun-park/index.html",
+        "es/cuatrecasas-sun-park/index.html",
+        "en/cuatrecasas-icam-ccacm-2026/index.html",
+        "es/cuatrecasas-icam-ccacm-2026/index.html",
+        "assets/evidence/cuatrecasas/ccacm-436-2026-order-24nov2026-signature-redacted.pdf",
+        "data/cuatrecasas-finger-in-dam-20261125.json",
+        "data/cuatrecasas-golden-card-nexus-20261125.json",
+        "data/cuatrecasas-claim-conversion-corporate-accountability-20261125.json"
+      ],
+      "material_boundaries": [
+        "No proof of common plan, intentional concealment or obstruction of prosecution.",
+        "CCACM 436/2026 opening is not a misconduct, negligence or criminal finding.",
+        "Counterarguments and adverse outcomes remain accessible.",
+        "The visual is not evidence of a physical dam or actual property.",
+        "Golden Card is a prospective dependency hypothesis; no actual cession or recipient established; property identities and lawful fee-recovery explanation remain separate.",
+        "Claim conversion and corporate-crime analysis are attributed hypotheses with offence-specific time, entity, association, benefit, jurisdiction and defence tests; no settled charge or connected cession established."
+      ],
+      "opposing_counsel_risk_review": {
+        "HONOUR_REPUTATION_PROFESSIONAL_PRESTIGE": "Criticism addresses documented adviser-to-enforcing-creditor transition and attributed former-client allegations; no individual caricature, finding or legal clearance asserted.",
+        "FALSE_ENDORSEMENT_AUTHORSHIP_QUOTATION_MANDATE_OR_ROLE": "Clearly marked original editorial illustration; not an actual quotation, photograph, firm statement or endorsement.",
+        "IMAGE_LIKENESS_PERSONALITY_RIGHTS": "Anonymous fictional suited hand and imaginary resort; no real portrait.",
+        "IMPLIED_DISHONESTY_CONFLICT_CORRUPTION_ILLEGALITY_OR_CRIMINALITY": "Possible protective economic effect is a hypothesis, not established concert, deliberate obstruction or guilt. Documented work, lawful recovery explanations, conditional funding, distinct judicial decisions and adverse ICAM outcome remain in the dossier.",
+        "LOGO_TRADE_DRESS_OR_REAL_ADVERTISING_CONFUSION": "Plain entity labels and question mark; no genuine logo or imitation firm communication; visible bilingual satire disclosure.",
+        "PERSONAL_DATA_NECESSITY_AND_PROPORTIONALITY": "No additional personal images, identifiers, contacts or correspondence; existing author identity is author only.",
+        "CORRECTION_REPLY_TAKEDOWN_AND_NARROW_REVERT_PATH": "Invite verifiable institutional response and fair correction; preserve prior versions and narrow corrective PR. No direct contact campaign."
+      },
+      "approval_status": "OWNER_DIRECTED_SOURCE_PREPARATION__PROTECTED_RELEASE_PENDING__NOT_EXTERNAL_LEGAL_CLEARANCE",
+      "editorial_extensions": [
+        {
+          "control_id": "PD-CUATRECASAS-GOLDEN-CARD-NEXUS-20261125-001",
+          "record": "data/cuatrecasas-golden-card-nexus-20261125.json",
+          "review": "No new personal likeness, identifiers, private correspondence or allegation of a proven transfer. Existing adverse decisions and right of reply retained; not external legal clearance."
+        },
+        {
+          "control_id": "PD-CUATRECASAS-CORPORATE-CRIME-FPF-RICPE-NEXUS-20261125-001",
+          "record": "data/cuatrecasas-claim-conversion-corporate-accountability-20261125.json",
+          "review": "No private prosecution draft, new personal identifiers or underlying private records. Legal routes and evidence gaps distinguished."
+        }
+      ]
     }
   ]
 }
