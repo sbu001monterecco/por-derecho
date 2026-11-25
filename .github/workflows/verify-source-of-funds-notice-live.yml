@@ -211,25 +211,54 @@ jobs:
           ]);
           const verifyFeatured = process.env.VERIFY_FEATURED === 'true';
 
+          async function navigateWithBackoff(page, url) {
+            let response;
+            for (let attempt = 1; attempt <= 3; attempt += 1) {
+              response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+              if (response && response.status() === 200) return response;
+              if (attempt === 3) break;
+              let delay = 1500;
+              if (response && response.status() === 429) {
+                const value = response.headers()['retry-after'];
+                const seconds = value === undefined ? NaN : Number(value);
+                const date = value === undefined ? NaN : Date.parse(value);
+                const requested = Number.isFinite(seconds) ? seconds * 1000
+                  : Number.isFinite(date) ? date - Date.now() : 0;
+                delay = Math.max(30000 * attempt, requested);
+                if (delay > 60000) {
+                  const error = new Error(`HTTP 429: Retry-After exceeds bounded retry budget (${delay}ms)`);
+                  error.stopForRateLimit = true;
+                  throw error;
+                }
+              }
+              console.log(`Navigation retry ${attempt}: HTTP ${response ? response.status() : 'none'}, waiting ${delay}ms`);
+              await page.waitForTimeout(delay);
+            }
+            if (response && response.status() === 429) {
+              const error = new Error('HTTP 429 persists after bounded backoff; stop further page requests');
+              error.stopForRateLimit = true;
+              throw error;
+            }
+            return response;
+          }
+
           (async () => {
             const browser = await chromium.launch({
               headless: true,
               executablePath: process.env.PSR_BROWSER_PATH,
             });
+            // Reuse the ordinary browser cache across routes instead of
+            // downloading the complete shared runtime in 28 isolated contexts.
+            const context = await browser.newContext();
             const results = [];
             let ok = true;
 
             for (const target of targets) {
-              const page = await browser.newPage();
+              const page = await context.newPage();
               const url = `${base}${target.path}?${q}`;
               const failures = [];
               try {
-                let response;
-                for (let attempt = 1; attempt <= 3; attempt += 1) {
-                  response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
-                  if (response && response.status() === 200) break;
-                  if (attempt < 3) await page.waitForTimeout(1500);
-                }
+                const response = await navigateWithBackoff(page, url);
                 if (!response || response.status() !== 200) failures.push(`HTTP ${response ? response.status() : 'none'}`);
                 const selector = `[data-source-of-funds-notice="${target.variant}"] .sfn--${target.variant}`;
                 await page.locator(`[data-source-of-funds-notice="${target.variant}"]`).scrollIntoViewIfNeeded();
@@ -307,6 +336,7 @@ jobs:
                 const expectedLinkCount = target.variant === 'compact' ? 1 : 2;
                 if (links.length !== expectedLinkCount || links.some(link => !link.includes(expectedRoute))) failures.push(`links=${JSON.stringify(links)}`);
               } catch (error) {
+                if (error.stopForRateLimit) throw error;
                 failures.push(String(error));
               }
               const passed = failures.length === 0;
@@ -319,15 +349,16 @@ jobs:
               ['/es/aviso-procedencia-fondos-servicios-profesionales/', 'Lo que esta advertencia no afirma'],
               ['/en/source-of-funds-professional-services-notice/', 'What this warning does not allege'],
             ]) {
-              const page = await browser.newPage();
+              const page = await context.newPage();
               const url = `${base}${item[0]}?${q}`;
               const failures = [];
               try {
-                const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+                const response = await navigateWithBackoff(page, url);
                 if (!response || response.status() !== 200) failures.push(`HTTP ${response ? response.status() : 'none'}`);
                 const text = await page.locator('body').innerText();
                 if (!text.includes(item[1])) failures.push(`missing ${item[1]}`);
               } catch (error) {
+                if (error.stopForRateLimit) throw error;
                 failures.push(String(error));
               }
               const passed = failures.length === 0;
@@ -336,6 +367,7 @@ jobs:
               await page.close();
             }
 
+            await context.close();
             await browser.close();
             fs.mkdirSync('artifacts/source-funds-live', { recursive: true });
             fs.writeFileSync('artifacts/source-funds-live/dom.json', JSON.stringify({
