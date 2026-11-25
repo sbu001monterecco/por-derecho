@@ -286,5 +286,117 @@
       }
     ],
     "condition": "DO_NOT_ALLOCATE_DUPLICATE_EVENTS_OR_PUBLISH_AS_CANONICAL_COMPLETE"
+  },
+  "owner_conditional_release_authorization_20261125": {
+    "control": "PD-SP-CRIMINAL-ATTRIBUTION-RELEASE-20261125-01",
+    "received": true,
+    "scope": "Actor-specific, source-backed alleged offences and bilingual website upgrade with conditional integration and live publication; no contact, filing, privileged disclosure, or mandatory-gate bypass.",
+    "clearance": "OWNER_REQUEST_AND_CONDITIONAL_AUTHORIZATION_ONLY_NOT_A_SIGNED_EXACT_FINAL_COPY_OR_INDEPENDENT_OPINION",
+    "specific_final_page_attestation": false,
+    "merge_release_admitted": false,
+    "ci_override": false,
+    "source_only_predecessor_retained": true
+  },
+  "criminal_attribution_matrix_20261125": {
+    "review_state": "ACTOR_SPECIFIC_SUSPECTED_OFFENCES_UNADJUDICATED",
+    "legal_source": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444",
+    "date_of_law_check": "2026-11-25",
+    "historical_law_version_control": "Confirm statute version operative on each alleged act before claiming charge; no conviction implied",
+    "entries": [
+      {
+        "actor": "Francisco de Borja Rodríguez-Batllori Laffitte in his insolvency administration capacity",
+        "allegation_owner": "Por Derecho",
+        "act": "2018 protocol 2150: separate 31-finca sale and requested ob-rem release; later court refused convalidation",
+        "source_refs": [
+          "C36-E008",
+          "C36-E014",
+          "C36-E019",
+          "C36-E022",
+          "C36-E029",
+          "C36-E044"
+        ],
+        "offences_under_investigation": [
+          "CP 252 administración desleal conditional on management breach and patrimonial harm",
+          "CP 253 apropiación indebida conditional on entrusted property and appropriation"
+        ],
+        "factual_judicial_findings": "24 October 2019 Auto says separate transaction inconsistent with unitary liquidation and lacked necessary authorization",
+        "mental_element_state": "UNPROVEN",
+        "harm_state": "UNVERIFIED_CLEARING_AND_ESTATE_LEDGER",
+        "counterevidence": [
+          "June 2018 partial stay was court error",
+          "May 2021 approval",
+          "DP 1956 provisional dismissal"
+        ],
+        "publication_state": "ATTRIBUTED_SUSPICION_NOT_FINDING"
+      },
+      {
+        "actor": "Construcciones Acosta Matos S.A. and identified deed representative Laura Patricia Acosta Matos",
+        "allegation_owner": "Por Derecho",
+        "act": "Participation as buyer and claimant to ob-rem release under 2018 deed",
+        "source_refs": [
+          "C36-E019",
+          "C36-E022",
+          "C36-E029",
+          "C36-E044"
+        ],
+        "offences_under_investigation": [
+          "CP 251 and 248 property/transaction fraud theories subject to proof of defendant-specific conduct and deceit"
+        ],
+        "mental_element_state": "UNPROVEN_INDIVIDUAL_KNOWLEDGE",
+        "harm_state": "UNPROVEN_RIGHTS_AND_LOSS",
+        "counterevidence": [
+          "May 2021 judicial approval",
+          "No proof of a concluded comparable third-party acquisition"
+        ],
+        "publication_state": "ATTRIBUTED_SUSPICION_NOT_FINDING"
+      },
+      {
+        "actor": "Alberto López Villarrubia as signatory of historical court orders",
+        "allegation_owner": "Por Derecho",
+        "act": "Distinct 2018, 2019, 2020 and 2021 signed decision sequence",
+        "source_refs": [
+          "C36-E014",
+          "C36-E029",
+          "C36-E044",
+          "PD-SP-EV-08"
+        ],
+        "offences_under_investigation": [
+          "CP 446 judicial prevaricación requires knowingly unjust ruling",
+          "CP 447 alternative grave negligence standard only if distinct elements established"
+        ],
+        "mental_element_state": "KNOWING_INJUSTICE_UNPROVEN",
+        "harm_state": "JUDICIAL_CAUSATION_UNVERIFIED",
+        "counterevidence": [
+          "Court's explicit 2019 self-correction and nonconvalidation",
+          "DP 1901 free dismissal and archive"
+        ],
+        "publication_state": "ATTRIBUTED_COMPLAINT_NOT_FINDING"
+      },
+      {
+        "actor": "Later corporate, investment, hospitality and finance actors",
+        "allegation_owner": "Por Derecho",
+        "act": "Potential subsequent adoption or use requires separately proven personal act",
+        "source_refs": [],
+        "offences_under_investigation": [
+          "NO_OFFENCE_ASSIGNED_FROM_ASSOCIATION"
+        ],
+        "mental_element_state": "NOT_ASSESSED",
+        "harm_state": "NOT_ASSESSED",
+        "counterevidence": [
+          "No guilt by association or inferred common intent"
+        ],
+        "publication_state": "INVESTIGATIVE_PERIMETER_ONLY"
+      }
+    ],
+    "protected_bidder": "NAME_UNPUBLISHED; commercial bid amount and procedural facts preserved",
+    "native_evidence": "PRIVATE; do not publish original restricted materials",
+    "owner_approval": "CONDITIONAL_ACTION_APPROVAL_NOT_CONTENT_EXACT_COPY_SIGNATURE",
+    "final_legal_source_gaps": [
+      "Independent legal/source approval for public attribution not obtained",
+      "Current Tías Registry record and rights chain unverified",
+      "2018 cheque clearing and LPB estate ledger not verified",
+      "2022 EUR 13,168,082.02 exact figure in scanned original not independently rechecked",
+      "DP 1901/2026 and DP 1956/2026 signed original orders and finality not independently rechecked"
+    ]
   }
 }
