@@ -6,6 +6,7 @@ Historic Lanzarote validators remain unchanged and must be separately admitted.
 """
 from __future__ import annotations
 import argparse
+import hashlib
 from html.parser import HTMLParser
 import json
 import os
@@ -41,6 +42,16 @@ PRIVATE = re.compile(
     r"-----BEGIN (?:RSA |OPENSSH )?PRIVATE KEY-----)"
 )
 
+# Same protected-bidder token digest used by the existing public name-only gate.
+# Retains every bid amount and procedural fact while preventing public identification.
+PROTECTED_BIDDER_TOKEN_DIGESTS = {
+    "33c594e4e36529842cb1344043ec59e9f4d026466fd7ba0112a635fbe30baf3e"
+}
+def has_protected_bidder(text):
+    tokens = re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ0-9_-]+", text, re.UNICODE)
+    return any(hashlib.sha256(token.casefold().encode("utf-8")).hexdigest()
+               in PROTECTED_BIDDER_TOKEN_DIGESTS for token in tokens)
+
 def require(test, reason):
     if not test:
         raise AssertionError("PD_SP_ACCOUNTABILITY_REVIEW: " + reason)
@@ -75,6 +86,7 @@ def check_hub(path, locale, manifest, origin):
     require('id="pd-sp-ev-08"' in raw and 'datetime="2026-09-14"' in raw, path + ": 1901 order")
     require(all(e["id"].lower() in raw for e in manifest["events"]), path + ": event crosswalk")
     require(not PRIVATE.search(raw), path + ": private identifier")
+    require(not has_protected_bidder(raw), path + ": protected bidder name")
     require('href="' + origin + "/" + path.replace("index.html", "") + '"' in raw, path + ": canonical")
     parsed = Links()
     parsed.feed(raw)
@@ -106,6 +118,7 @@ def original_insertion_preservation(path, host, base):
     else:
         restored = candidate[:a] + candidate[b:].removeprefix(b"\n")
     require(restored == old, path + ": historical bytes modified")
+    require(not has_protected_bidder(candidate[a:b].decode("utf-8")), path + ": new section reveals protected bidder")
 
 def check(host):
     base = GH_BASE if host == "github" else GL_BASE
