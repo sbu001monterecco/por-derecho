@@ -10,7 +10,7 @@
     "PD-ETJ163-FIL-20260903-EN"
   ],
   "original_house_of_cards": "19 August 2026 control recovered; selected original artwork binary not recovered. This is a newly authored web-native diagram, not that original.",
-  "meaning": "Potential consolidation of a disputed position, not the original causal foundation of every transaction. Neither common plan nor an actual connected recipient is established.",
+  "meaning": "The Golden Card is the alleged capacity to convert disputed professional claims into judicially enforceable economic leverage, potentially realized through property adjudication or third-party cession. Finca 8584 is the presently identified realization target, not the whole claim.",
   "source_routes": {
     "control": "https://github.com/sbu001monterecco/por-derecho/blob/main/archive/SUN_PARK_ABANDONMENT_CAUSATION_AND_PUBLIC_COMMS_CONTROL_19AUG2026.md",
     "dependency": "https://github.com/sbu001monterecco/por-derecho/blob/main/archive/knowledge-project/PWC_COMMUNITY_CAM_RICPE_UNITARY_REVERSE_ENGINEERING_19AUG2026.md",
@@ -232,13 +232,13 @@
       "date": "3 September record / future outcome open",
       "date_es": "Constancia 3 septiembre / resultado abierto",
       "title": {
-        "en": "The golden card? Finca 8584",
-        "es": "¿La carta dorada? Finca 8584"
+        "en": "The Golden Card? Judicial enforcement leverage",
+        "es": "¿La carta dorada? Capacidad de ejecución judicial"
       },
       "evidence_state": "INVESTIGATIVE_HYPOTHESIS",
       "explanation": {
-        "en": "The filing acknowledges Matkator as registered owner. Its title anchors asserted property, possession, governance, accounting, exploitation and restitution rights. The alleged golden-card effect is that a future adjudication or cession might consolidate disputed control and complicate those remedies. Adjudication itself may prejudice title-based rights without a cession.",
-        "es": "El escrito reconoce a Matkator como titular registral. Su título sirve de base a derechos alegados de propiedad, posesión, gobierno, cuentas, explotación y restitución. El presunto efecto de carta dorada es que una adjudicación o cesión futura pueda consolidar el control controvertido y dificultar esos remedios. La adjudicación misma puede afectar derechos ligados al título sin cesión."
+        "en": "The relevant instrumentality is the whole billing, notes, title formation and enforcement chain. The 3 September filing acknowledges Matkator's registered title and requests adjudication and cession. Finca 8584 is the present realization target; both 8584 and 8588 appear in the original attachment scope. Adjudication itself could affect asserted property, accounting and restitution rights; a connected onward recipient remains unproved.",
+        "es": "La instrumentalización alegada comprende la cadena integral de facturación, pagarés, formación del título y ejecución. El escrito de 3 de septiembre reconoce el título registral de Matkator y solicita adjudicación y cesión. La finca 8584 es el objeto actual de realización; 8584 y 8588 figuran en el ámbito de embargo original. La adjudicación misma podría afectar derechos alegados de propiedad, cuentas y restitución; no se ha acreditado destinatario posterior vinculado."
       },
       "source_keys": [
         "title",
@@ -259,8 +259,8 @@
       },
       "evidence_state": "OPEN_OR_UNVERIFIED",
       "explanation": {
-        "en": "No completed adjudication, cession or Acosta Matos-connected recipient is established by these sources. Verify the decree, cession document, consideration, source of funds, recipient, beneficial ownership, Registry entry and hotel use. Finca 8588 is separately reported as Matkator property in January 2025 and is not shown to be the enforcement target.",
-        "es": "Estas fuentes no acreditan adjudicación o cesión consumada ni destinatario vinculado a Acosta Matos. Verificar decreto, documento de cesión, contraprestación, origen de fondos, destinatario, titular real, inscripción y uso hotelero. La finca 8588 se indica separadamente como propiedad de Matkator en enero de 2025 y no consta como objeto de esta ejecución."
+        "en": "CAM/HNT is the claimant's principal potential ultimate-beneficiary hypothesis, based on alleged integration and exploitation of the space. Economic incentive is not proof of an exclusive recipient. The sources do not establish a completed adjudication, cession or connected recipient; obtain decree, instrument, consideration, funding, beneficial owner and title/use records. Finca 8588 appeared in the original attachment request but is not established as the current adjudication target.",
+        "es": "CAM/HNT es la principal hipótesis de beneficiario final de la parte, por la alegada integración y explotación del espacio. El incentivo económico no acredita un destinatario exclusivo. Las fuentes no acreditan adjudicación, cesión ni destinatario vinculado consumados; comprobar decreto, instrumento, contraprestación, financiación, titular real, título y uso. La finca 8588 figuró en la solicitud de embargo original, pero no consta como objeto de la adjudicación actual."
       },
       "source_keys": [
         "title",
@@ -312,10 +312,18 @@
     },
     {
       "finca": "8588",
-      "state": "REPORTED_MATKATOR_JAN2025__NOT_ESTABLISHED_AS_ENFORCEMENT_TARGET",
+      "state": "ORIGINAL_ATTACHMENT_SCOPE__REPORTED_MATKATOR_JAN2025__NOT_CURRENT_ADJUDICATION_TARGET",
       "source": "GC-10"
     }
   ],
   "disclosure": "Editorial metaphor, not evidence of coordination, intentional concealment or actual transfer. Retain lawful collection explanation, adverse decisions, separate title rights and all open proof.",
-  "release_status": "SOURCE_PREPARED_ONLY"
+  "release_status": "SOURCE_PREPARED_ONLY",
+  "prior_meaning": "Potential consolidation of a disputed position, not the original causal foundation of every transaction. Neither common plan nor an actual connected recipient is established.",
+  "meaning_es": "La carta dorada es la presunta capacidad de convertir reclamaciones profesionales controvertidas en poder económico ejecutable judicialmente, susceptible de realización mediante adjudicación o cesión a tercero. La finca 8584 es el objeto de realización identificado actualmente, no la reclamación integral.",
+  "correction": {
+    "control": "PD-CUATRECASAS-CLAIM-CONVERSION-C6-NEXUS-20261125-001",
+    "prior_control": "PD-CUATRECASAS-GOLDEN-CARD-NEXUS-20261125-001",
+    "reason": "Whole claim, not current finca alone",
+    "related_corporate_accountability": "data/cuatrecasas-claim-conversion-corporate-accountability-20261125.json"
+  }
 }

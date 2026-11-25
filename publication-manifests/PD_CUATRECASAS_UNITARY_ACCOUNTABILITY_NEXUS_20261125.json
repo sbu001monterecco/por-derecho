@@ -33,7 +33,8 @@
     "data/digital-media-asset-register-v1.json",
     "data/satire-publication-compliance-v1.json",
     "data/cuatrecasas-golden-card-nexus-20261125.json",
-    "assets/cuatrecasas-golden-card-20261125.css"
+    "assets/cuatrecasas-golden-card-20261125.css",
+    "data/cuatrecasas-claim-conversion-corporate-accountability-20261125.json"
   ],
   "repository_assets": [
     "en/cuatrecasas-sun-park/index.html",
@@ -49,7 +50,8 @@
     "data/digital-media-asset-register-v1.json",
     "data/satire-publication-compliance-v1.json",
     "data/cuatrecasas-golden-card-nexus-20261125.json",
-    "assets/cuatrecasas-golden-card-20261125.css"
+    "assets/cuatrecasas-golden-card-20261125.css",
+    "data/cuatrecasas-claim-conversion-corporate-accountability-20261125.json"
   ],
   "public_markers": [
     "unitary-accountability-nexus-20261125",
@@ -57,7 +59,8 @@
     "ccacm-436-20261124",
     "finger-in-the-dam-20261125",
     "cuatrecasas-institutional-response-20261125",
-    "golden-card-nexus-20261125"
+    "golden-card-nexus-20261125",
+    "claim-conversion-corporate-accountability-20261125"
   ],
   "public_pdf": {
     "path": "assets/evidence/cuatrecasas/ccacm-436-2026-order-24nov2026-signature-redacted.pdf",
@@ -73,7 +76,8 @@
       "Additive source transformation; shared canonical register and assets; review and CI not yet established.",
       "Exact public candidate readback: PDF Git blob and SHA-256 match both hosts, common data/CSS/JS and four new bilingual sections byte-identical. Production not verified.",
       "Additive editorial enhancement 25 November 2026; private original and WebP readback; new exact-head CI pending.",
-      "Added new web-native Golden Card map and source ledger; prior versions retained and exact-head CI required."
+      "Added new web-native Golden Card map and source ledger; prior versions retained and exact-head CI required.",
+      "Whole-claim Golden Card correction and corporate-accountability legal/evidence tests. Exact-head CI required."
     ]
   },
   "publication_boundaries": [
@@ -81,7 +85,8 @@
     "Supplied direct-message captures, not provider-certified authorship, evidence of dissemination or subsequent interface cause.",
     "No common plan, guilt, ultimate beneficiary or criminal intent established. No private correspondence or unredacted original included.",
     "The satire is a fictional metaphor and inquiry, not proof of deliberate protection, obstruction or joint liability.",
-    "No completed adjudication, cession, concealed recipient or common plan established by the Golden Card metaphor; no claim that all earlier funding relied on finca 8584."
+    "No completed adjudication, cession, concealed recipient or common plan established by the Golden Card metaphor; no claim that all earlier funding relied on finca 8584.",
+    "No assumption of completed fraud, agreement, post-commencement predicate, qualifying benefit or corporate jurisdiction."
   ],
   "schema_version": "1.0.0",
   "editorial_asset": {
@@ -97,5 +102,11 @@
     "record": "data/cuatrecasas-golden-card-nexus-20261125.json",
     "styles": "assets/cuatrecasas-golden-card-20261125.css",
     "status": "SOURCE_PREPARED_ONLY"
+  },
+  "corporate_accountability": {
+    "control_id": "PD-CUATRECASAS-CORPORATE-CRIME-FPF-RICPE-NEXUS-20261125-001",
+    "conversion_control": "PD-CUATRECASAS-CLAIM-CONVERSION-C6-NEXUS-20261125-001",
+    "record": "data/cuatrecasas-claim-conversion-corporate-accountability-20261125.json",
+    "section_id": "claim-conversion-corporate-accountability-20261125"
   }
 }

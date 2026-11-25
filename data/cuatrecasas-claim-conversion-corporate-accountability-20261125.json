@@ -1,0 +1,98 @@
+{
+  "schema": "por-derecho.claim-conversion-corporate-accountability.v1",
+  "control_id": "PD-CUATRECASAS-CORPORATE-CRIME-FPF-RICPE-NEXUS-20261125-001",
+  "conversion_control": "PD-CUATRECASAS-CLAIM-CONVERSION-C6-NEXUS-20261125-001",
+  "as_of": "2026-11-25",
+  "classification": "ATTRIBUTED_INVESTIGATIVE_HYPOTHESIS__NOT_A_FINDING",
+  "sources": {
+    "claims": "https://github.com/sbu001monterecco/por-derecho/blob/main/assets/data/cuatrecasas-whole-claim-architecture-v1.json",
+    "invoices": "https://github.com/sbu001monterecco/por-derecho/blob/main/assets/data/cuatrecasas-invoice-payment-register-v1.json",
+    "wip": "https://github.com/sbu001monterecco/por-derecho/blob/main/assets/data/cuatrecasas-wip-reconciliation-v1.json",
+    "scope": "https://github.com/sbu001monterecco/por-derecho/blob/main/docs/cuatrecasas/DP748/2026-09-03_DP748_COMPLETED_ESTAFA_ALL_HOTEL_FINCA_SCOPE_SUPPLEMENT.md",
+    "funding": "https://github.com/sbu001monterecco/por-derecho/blob/main/archive/workspaces/RICPE_THREAD_WORKSPACE_CONTINUITY_20260925.md",
+    "uk": "https://www.legislation.gov.uk/ukpga/2023/56/section/199",
+    "sch13": "https://www.legislation.gov.uk/ukpga/2023/56/schedule/13",
+    "guide": "https://www.gov.uk/government/publications/offence-of-failure-to-prevent-fraud-introduced-by-eccta",
+    "senior": "https://www.legislation.gov.uk/ukpga/2026/20/section/250",
+    "tax": "https://www.legislation.gov.uk/ukpga/2017/22/section/46",
+    "c6": "https://www.supremecourt.uk/cases/judgments/uksc-2024-0087",
+    "territory": "https://www.legislation.gov.uk/ukpga/1993/36/part/I",
+    "spain": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444"
+  },
+  "financial": {
+    "issued_invoice_count": 22,
+    "recipient_counts": {
+      "AWESWELL": 20,
+      "LPB": 2,
+      "MATKATOR": 0
+    },
+    "face_eur": 327608.32,
+    "unpaid_eur": 136830.72,
+    "wip_plus_estimate_2019_eur": 152424.95,
+    "within_wip_forward_estimate_eur": 60000,
+    "unbilled_work_2020_claim_eur": 161738.75,
+    "claim1_principal_eur": 189830.72,
+    "claim2_principal_eur": 182517.72,
+    "combined_principal_eur": 372348.44,
+    "combined_firm_demand_2022_eur": 441463,
+    "rule": "Categories may overlap. Firm-stated values are not client admissions or proof of false billing. The original 2018 notes precede the 2019 WIP schedule. Source allocation and single satisfaction must be established."
+  },
+  "conversion": {
+    "claimant_position": "AWESWELL alone retained the firm; MATKATOR did not owe underlying fees; notes supplied for a restricted accommodation. Contested; the firm described covering pending invoices and incurred costs.",
+    "sequence": [
+      "Protective mandate",
+      "Billing and WIP",
+      "Four MATKATOR notes dated 21 November 2018",
+      "Cambiario 1048/2019",
+      "Title formation by July 2020 order following nonpayment/nonopposition",
+      "ETJ 163/2020",
+      "Attachment of 8584 and 8588 in original scope; current identified adjudication request 8584",
+      "Potential onward transfer"
+    ],
+    "beneficiary": "CAM/HNT is the claimant's principal potential ultimate beneficiary hypothesis because of alleged integration and exploitation of hotel space; exclusive recipient, completed transfer, concert and dishonest intent are not established.",
+    "service": "Test exact contact knowledge, service efforts and alleged material error in title formation, with actual orders and contrary evidence. Not a finding of invalidity or procedural fraud."
+  },
+  "funding": {
+    "jurisdictions": "Spanish RIC tax incentive, RICPE investment, regional aid and EU cofinancing are separate regimes.",
+    "series_F_eur": 1598849.32,
+    "series_G_eur": 4974853.78,
+    "source_checks": [
+      "2020 presentation and July 2021 title/due diligence qualification",
+      "17 November 2022 AEAT report",
+      "Decreto 224/2022",
+      "GC/836/P06 award, eligibility, payment and verification",
+      "ERDF/FEDER exact fund, costs and payments",
+      "Title, operating authority, source/use and employment"
+    ],
+    "boundary": "No fraud or unlawful double funding follows from overlap; no Cuatrecasas role in preparing, approving or facilitating any specific funding claim established merely by prior mandate or later enforcement."
+  },
+  "routes": [
+    {
+      "id": "C6",
+      "law": "England and Wales common-law conspiracy to defraud",
+      "test": "Prove agreement, dishonest means, intended prejudice and count-specific territorial route; distinguish statutory alternatives and lawful independent collection."
+    },
+    {
+      "id": "DIRECT",
+      "law": "Crime and Policing Act 2026 s250 (from 29 June 2026; earlier attribution rules apply to earlier acts)",
+      "test": "Exact corporate body, qualifying senior manager, proven offence within actual/apparent authority and territorial limit."
+    },
+    {
+      "id": "FPF",
+      "law": "ECCTA 2023 s199 (from 1 September 2025)",
+      "test": "Specified Schedule 13 fraud or qualifying assistance, associated capacity, intended benefit of body or qualifying client, large-organisation/group and UK nexus, victim exception and reasonable procedures defence. Common-law conspiracy alone is not a Schedule 13 predicate. Historical acts and silence are not retroactive base fraud."
+    },
+    {
+      "id": "FTE",
+      "law": "Criminal Finances Act 2017 s46 (from 30 September 2017)",
+      "test": "Actual foreign tax evasion offence, criminal facilitation by associate, dual criminality, statutory UK connection and reasonable prevention defence. Grant fraud is not automatically tax evasion."
+    },
+    {
+      "id": "ES",
+      "law": "Spanish Criminal Code arts 17, 269, 248, 250.1.7, 28–29",
+      "test": "Distinguish alleged completed procedural fraud, renewed deployment, actual agreement and additional injury; identify each person, act, dishonest means, judicial effect and economic prejudice."
+    }
+  ],
+  "private_boundary": "No private prosecution draft, defendant schedule, private correspondence, contact details or legal advice is included. No English count or summons is represented as filed or settled.",
+  "release_status": "SOURCE_PREPARED_ONLY"
+}

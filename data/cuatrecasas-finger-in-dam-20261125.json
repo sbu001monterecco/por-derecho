@@ -78,5 +78,11 @@
       "NEX-05",
       "NEX-06"
     ]
+  },
+  "corporate_accountability": {
+    "control_id": "PD-CUATRECASAS-CORPORATE-CRIME-FPF-RICPE-NEXUS-20261125-001",
+    "conversion_control": "PD-CUATRECASAS-CLAIM-CONVERSION-C6-NEXUS-20261125-001",
+    "record": "data/cuatrecasas-claim-conversion-corporate-accountability-20261125.json",
+    "section_id": "claim-conversion-corporate-accountability-20261125"
   }
 }

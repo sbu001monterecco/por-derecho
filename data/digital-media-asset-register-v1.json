@@ -366,14 +366,16 @@
       "edition": "USER_DIRECTED_EDITORIAL_SATIRE",
       "publication_status": "PREPARED_FOR_PUBLICATION",
       "satire_compliance_id": "PD-SAT-CUATRECASAS-DAM-0001",
-      "web_file": "PD-DMA-0015-PAGE-V2^",
-      "web_file_es": "PD-DMA-0015-ES-PAGE-V2^",
+      "web_file": "PD-DMA-0015-PAGE-V3^",
+      "web_file_es": "PD-DMA-0015-ES-PAGE-V3^",
       "image_file": "PD-DMA-0015-WEB^",
       "image_file_es": "PD-DMA-0015-WEB^",
       "sources": [
         "SRC-CUATRECASAS-DAM-20261125",
         "PD-DMA-CUATRECASAS-FINGER-IN-THE-DAM-20261125-001",
-        "PD-CUATRECASAS-GOLDEN-CARD-NEXUS-20261125-001"
+        "PD-CUATRECASAS-GOLDEN-CARD-NEXUS-20261125-001",
+        "PD-CUATRECASAS-CORPORATE-CRIME-FPF-RICPE-NEXUS-20261125-001",
+        "PD-CUATRECASAS-CLAIM-CONVERSION-C6-NEXUS-20261125-001"
       ],
       "correction_control": "Preserve earlier evidence and exact versions; new file identity for changed bytes.",
       "editorial_extensions": [
@@ -381,6 +383,11 @@
           "control_id": "PD-CUATRECASAS-GOLDEN-CARD-NEXUS-20261125-001",
           "record": "data/cuatrecasas-golden-card-nexus-20261125.json",
           "kind": "WEB_NATIVE_EVIDENCE_MAP"
+        },
+        {
+          "control_id": "PD-CUATRECASAS-CORPORATE-CRIME-FPF-RICPE-NEXUS-20261125-001",
+          "record": "data/cuatrecasas-claim-conversion-corporate-accountability-20261125.json",
+          "kind": "CLAIM_CONVERSION_AND_CORPORATE_LAW_SOURCE_TEST"
         }
       ]
     }
@@ -988,9 +995,11 @@
       "bytes": 151508,
       "sha256": "63bc4de144105e621788ab28f9b3144a7f1dd9e322f3ea1b95fb6b1bea070d4c",
       "repository_mirror": true,
-      "publication_status": "PREPARED_FOR_PUBLICATION",
-      "current_public_representation": true,
-      "predecessor_reference": "PD-DMA-0015^"
+      "publication_status": "SUPERSEDED_SOURCE_VERSION_PRESERVED_IN_GIT",
+      "current_public_representation": false,
+      "predecessor_reference": "PD-DMA-0015^",
+      "historical_source_commit": "78b2178be82ba48a8dc261fb92068322ab78b853",
+      "successor_reference": "PD-DMA-0015-PAGE-V3^"
     },
     {
       "reference": "PD-DMA-0015-ES-PAGE-V2^",
@@ -1003,9 +1012,41 @@
       "bytes": 157122,
       "sha256": "ae1112f27f779925cdb31fc2b243a4f2c18355365b3f0d0e818893af5e8542e1",
       "repository_mirror": true,
+      "publication_status": "SUPERSEDED_SOURCE_VERSION_PRESERVED_IN_GIT",
+      "current_public_representation": false,
+      "predecessor_reference": "PD-DMA-0015-ES-PAGE^",
+      "historical_source_commit": "78b2178be82ba48a8dc261fb92068322ab78b853",
+      "successor_reference": "PD-DMA-0015-ES-PAGE-V3^"
+    },
+    {
+      "reference": "PD-DMA-0015-PAGE-V3^",
+      "logical_asset": "PD-DMA-0015",
+      "role": "ENGLISH_EDITORIAL_LANDING",
+      "language": "en",
+      "repository_path": "en/cuatrecasas-sun-park/index.html",
+      "public_url": "/en/cuatrecasas-sun-park/",
+      "mime": "text/html",
+      "bytes": 159108,
+      "sha256": "0d103a9467d3461ffa4edc01a043fbe9f1ccc5f54cb1c076d996f4c59ebb49d6",
+      "repository_mirror": true,
       "publication_status": "PREPARED_FOR_PUBLICATION",
       "current_public_representation": true,
-      "predecessor_reference": "PD-DMA-0015-ES-PAGE^"
+      "predecessor_reference": "PD-DMA-0015-PAGE-V2^"
+    },
+    {
+      "reference": "PD-DMA-0015-ES-PAGE-V3^",
+      "logical_asset": "PD-DMA-0015",
+      "role": "SPANISH_EDITORIAL_LANDING",
+      "language": "es-ES",
+      "repository_path": "es/cuatrecasas-sun-park/index.html",
+      "public_url": "/es/cuatrecasas-sun-park/",
+      "mime": "text/html",
+      "bytes": 164870,
+      "sha256": "93f8a381796d3c790fde23b90921756ef9fec72395a34d7bada13457bf589267",
+      "repository_mirror": true,
+      "publication_status": "PREPARED_FOR_PUBLICATION",
+      "current_public_representation": true,
+      "predecessor_reference": "PD-DMA-0015-ES-PAGE-V2^"
     }
   ],
   "public_routes": {
