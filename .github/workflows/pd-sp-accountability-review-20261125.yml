@@ -1,0 +1,46 @@
+name: PD-SP source, privacy and visual review (draft only)
+on:
+  pull_request:
+    paths:
+      - 'en/accountability-chain-2018-2022/**'
+      - 'es/cadena-responsabilidad-2018-2022/**'
+      - 'en/insolvency-36-2012-registry-ob-rem-notice/**'
+      - 'es/concurso-36-2012-aviso-registro-ob-rem/**'
+      - 'ops/continuity/PD_SP_ACCOUNTABILITY_CHAIN_20261124_DRAFT.json'
+      - 'ci/pd_sp_accountability_review_20261125.py'
+      - 'tests/test_pd_sp_accountability_chain_20261124.py'
+      - '.github/workflows/pd-sp-accountability-review-20261125.yml'
+permissions:
+  contents: read
+jobs:
+  verify-pdsp-draft:
+    if: github.event.pull_request.head.ref == 'draft/pd-sp-accountability-chain-20261124'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Scoped source preservation, privacy and provenance
+        run: |
+          python3 ci/pd_sp_accountability_review_20261125.py --host github
+          python3 tests/test_pd_sp_accountability_chain_20261124.py
+      - name: Install isolated browser
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.61.0
+          python -m playwright install --with-deps chromium
+      - name: Render and exercise both languages at desktop/mobile widths
+        run: python3 ci/pd_sp_accountability_review_20261125.py --host github --render
+      - name: Retain visual artifacts for review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdsp-accountability-draft-render
+          path: recovery-audit/pdsp-*.png
+          if-no-files-found: ignore
+          retention-days: 14
