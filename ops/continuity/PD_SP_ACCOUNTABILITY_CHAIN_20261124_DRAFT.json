@@ -140,10 +140,17 @@
       "public_reader_topic": "unitary"
     },
     {
+      "id": "PD-SP-EV-09",
+      "date": "2026-07-21",
+      "type": "documented",
+      "locator": "DP 1956/2026 — provisional dismissal communicated 21 July 2026; signature date not assumed",
+      "public_reader_topic": "ac"
+    },
+    {
       "id": "PD-SP-EV-08",
       "date": "2026-09-14",
       "type": "official",
-      "locator": "2026 DP 1901 and DP 1956 orders",
+      "locator": "DP 1901/2026 — signed Auto of 14 September 2026: sobreseimiento libre and archive; finality unverified",
       "public_reader_topic": "judge"
     }
   ],
@@ -152,7 +159,18 @@
     "€400,000 clearing and LPB estate accounts",
     "Effects and boundaries of 2021/2022 acts",
     "Exact scope and finality of DP 1901 and DP 1956",
-    "Source-by-source legal approval before publication"
+    "Source-by-source legal approval before publication",
+    "DP 1956/2026 21 July communication date vs order signature and allocation"
   ],
-  "review_gate": "Required CI, public privacy and source review, exact live parity, and separate owner release mandate"
+  "review_gate": "Required CI, public privacy and source review, exact live parity, and separate owner release mandate",
+  "corrections": [
+    {
+      "correction_id": "PD-SP-CORR-01",
+      "recorded_date": "2026-11-25",
+      "prior_issue": "The initial PD-SP-EV-08 wrongly combined DP 1901/2026 and DP 1956/2026 beneath one date 14 September 2026.",
+      "action": "Narrow PD-SP-EV-08 to DP 1901 dated 14 September; add PD-SP-EV-09 for the separate DP 1956 provisional dismissal communicated 21 July; preserve both different statuses.",
+      "no_prior_identity_deleted": true,
+      "release_gate": "Source and legal review required"
+    }
+  ]
 }
