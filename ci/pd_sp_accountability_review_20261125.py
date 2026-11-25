@@ -82,6 +82,11 @@ def check_hub(path, locale, manifest, origin):
     for v in ("all", "official", "party", "documented"):
         require('data-filter="' + v + '"' in raw, path + ": filter " + v)
     require(raw.count('class="pdsp-event"') == 9, path + ": exact event count")
+    require('id="pdsp-criminal-attribution"' in raw and 'data-legal-status="ALLEGED_NOT_ADJUDICATED"' in raw, path + ": attributed legal status")
+    require(raw.count('class="pdsp-crime"') == 3, path + ": exactly three actor-specific offence tests")
+    require(all(('C36-E%03d' % n) in raw for n in (8,14,19,22,29,44,55)), path + ": canonical evidence crosswalk")
+    require(all(('art. %s' % n) in raw or ('%s CP' % n) in raw for n in (252,253,446)), path + ": offence elements")
+
     require('id="pd-sp-ev-09"' in raw and 'datetime="2026-07-21"' in raw, path + ": 1956 notice")
     require('id="pd-sp-ev-08"' in raw and 'datetime="2026-09-14"' in raw, path + ": 1901 order")
     require(all(e["id"].lower() in raw for e in manifest["events"]), path + ": event crosswalk")
@@ -118,6 +123,9 @@ def original_insertion_preservation(path, host, base):
     else:
         restored = candidate[:a] + candidate[b:].removeprefix(b"\n")
     require(restored == old, path + ": historical bytes modified")
+    require(candidate[a:b].count(b'data-evidence-state="ATTRIBUTED_SUSPICION"') == 1,
+            path + ": clearly attributed criminal allegation required in every updated reader")
+
     require(not has_protected_bidder(candidate[a:b].decode("utf-8")), path + ": new section reveals protected bidder")
 
 def check(host):
@@ -141,6 +149,20 @@ def check(host):
             and manifest["publishable"] is False and manifest["merge_authorized"] is False
             and manifest["deploy_authorized"] is False, "no-publication state")
     require(manifest["base_commit"] == base, "manifest predecessor")
+    auth = manifest.get("owner_conditional_release_authorization_20261125", {})
+    require(auth.get("control") == "PD-SP-CRIMINAL-ATTRIBUTION-RELEASE-20261125-01"
+            and auth.get("received") is True and auth.get("specific_final_page_attestation") is False,
+            "conditional owner authorization or final-copy boundary changed")
+    matrix = manifest.get("criminal_attribution_matrix_20261125", {})
+    require(len(matrix.get("entries", [])) == 4
+            and matrix.get("review_state") == "ACTOR_SPECIFIC_SUSPECTED_OFFENCES_UNADJUDICATED",
+            "criminal attribution matrix incomplete")
+    successor = manifest.get("release_successor_admission_20261125", {})
+    require(successor.get("status") == "REQUIRED_GATES_UNFULFILLED_NO_DEPLOY"
+            and successor.get("r865_source_only_preserved") is True
+            and successor.get("prior_gitlab_jobs_not_relabelled_as_passed") is True,
+            "successor admission must fail closed")
+
     events = manifest["events"]
     require(len(events) == 9 and len({e["id"] for e in events}) == 9, "nine unique events")
     ev = {e["id"]: e for e in events}

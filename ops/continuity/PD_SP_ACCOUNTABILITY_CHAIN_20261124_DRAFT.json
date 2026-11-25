@@ -398,5 +398,41 @@
       "2022 EUR 13,168,082.02 exact figure in scanned original not independently rechecked",
       "DP 1901/2026 and DP 1956/2026 signed original orders and finality not independently rechecked"
     ]
+  },
+  "release_successor_admission_20261125": {
+    "control": "PD-SP-CRIMINAL-ATTRIBUTION-RELEASE-20261125-01",
+    "status": "REQUIRED_GATES_UNFULFILLED_NO_DEPLOY",
+    "design_only": true,
+    "original_gitlab_main": "f1ef99bd821b97d94eff2d6db512a44e69c7a236",
+    "original_github_main": "7aed9eea4085b53c4c62aa5a57a3520b1ec29cda",
+    "gitlab_failed_required_jobs": [
+      "verify-rc1-successor-integrity",
+      "verify-pd-defence-source-epoch",
+      "verify-homepage-canonical-contract",
+      "verify-tested-build-handoff",
+      "audit-connected-automation",
+      "verify-ricpe-static-readers",
+      "verify-gitlab-public-frontend",
+      "verify-publication-controls",
+      "verify-ragplus-pilot"
+    ],
+    "failure_classification": "Historic source-only validator rejects this MR outside its authentic Lanzarote context; not permission to waive or relabel its required checks.",
+    "r865_source_only_preserved": true,
+    "lanzarote_validator_immutable": true,
+    "prior_gitlab_jobs_not_relabelled_as_passed": true,
+    "legacy_pages_exclusion_immutable": true,
+    "successor_requirements": [
+      "Reconcile each historic job's actual applicability through immutable authenticated predecessor checks without changing CI context identities.",
+      "Run applicable substantive verification on the actual current accountability MR head with exact changed-file allowlist, preserved prior bytes, protected bidder, bilingual and rendered checks.",
+      "Independently review successor release admission and demonstrate no R865/Lanzarote or held RICPE content newly published.",
+      "Prove a permitted Pages successor referencing the last approved deployed artifact and an explicit allowlist without removing the existing when:never rule.",
+      "Obtain owner approval of exact final reviewed words, not an invented external legal opinion or signed statement.",
+      "Merge only via protected processes, verify published artifact and dual-host EN/ES live readback with rollback."
+    ],
+    "owner_clearance": "CONDITIONAL_RELEASE_AUTHORIZATION_NOT_EXACT_FINAL_COPY_SIGNATURE",
+    "independent_external_legal_opinion": "NOT_EXTRA_GATE_WITHOUT_BINDING_RULE",
+    "live_state": "UNMERGED_UNDEPLOYED",
+    "stop_condition": "Any required failed check, source-only disclosure, absent exact final owner source approval, or split-host release failure.",
+    "source_only_scope": "Do not remove source-only markers or impersonate CI context."
   }
 }
