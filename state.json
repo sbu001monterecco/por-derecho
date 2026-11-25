@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 77,
   "owner": "2159:6c579807f3cea4d87a30876f55078dd61fcaaa1a",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 2159,
   "base_sha": "7aed9eea4085b53c4c62aa5a57a3520b1ec29cda",
   "candidate_sha": "6c579807f3cea4d87a30876f55078dd61fcaaa1a",
@@ -3804,6 +3804,97 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 2159,
+      "candidate_sha": "6c579807f3cea4d87a30876f55078dd61fcaaa1a",
+      "at": "2026-11-25T12:20:29.493185Z",
+      "merge_sha": "e5a308d1b8c8d07d98a0143e50605aa027adc640",
+      "pages_run_id": 45612547559,
+      "exact_matches": [
+        {
+          "path": "en/accountability-chain-2018-2022/index.html",
+          "sha256": "ed817c8f37552f8b20aa0b9640e066a4670a69270e3ff01d11ef5101deac1087",
+          "bytes": 22992
+        },
+        {
+          "path": "en/acosta-matos-perimeter/index.html",
+          "sha256": "4c8d4ebdfe73ea1786bc91aa0a1961bf7fc8ea5f41d89116087f9d85055fe2a3",
+          "bytes": 39830
+        },
+        {
+          "path": "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+          "sha256": "5a4e65d0d32eabce330b82eb7923d823656c8c348d6e3db5e9bdbf6baf4965f5",
+          "bytes": 31649
+        },
+        {
+          "path": "en/index.html",
+          "sha256": "68bbcdf2db7f0fa9180f4939986f03d4a0f222ade5cbd3ad529be8712ebe5554",
+          "bytes": 235110
+        },
+        {
+          "path": "en/insolvency-36-2012-insolvency-administrator/index.html",
+          "sha256": "25fc5fedeb100fa61653e84a52dc6b6795c086ffbfd5e7ef1251472ae4fb0645",
+          "bytes": 18869
+        },
+        {
+          "path": "en/insolvency-36-2012-registry-ob-rem-notice/index.html",
+          "sha256": "86c625b34f56758871815c5bd67f2bd8ca5dbeac61d8b18a51b1f325b4ffe6ec",
+          "bytes": 17531
+        },
+        {
+          "path": "en/unitary-criminal-reverse-engineering/index.html",
+          "sha256": "38d5f8a8a40a25efed7f7e31db9998e8bf96d8407614d57ffd8bf49532c7914d",
+          "bytes": 26979
+        },
+        {
+          "path": "es/acosta-matos-perimetro/index.html",
+          "sha256": "c71bd21a77ca9d64d0074609de55a006b7f5400ee16d28dd4f6ba23d7745076e",
+          "bytes": 41204
+        },
+        {
+          "path": "es/cadena-responsabilidad-2018-2022/index.html",
+          "sha256": "5549af45b710a4fc64fbf51864c695b0f134eebe8179acbf8faac09ffdf9f539",
+          "bytes": 23497
+        },
+        {
+          "path": "es/concurso-36-2012-administrador-concursal/index.html",
+          "sha256": "9884526e16fbf2341950d7ec61c51e41663ead1810cf9b31b273e2401cdc0227",
+          "bytes": 22386
+        },
+        {
+          "path": "es/concurso-36-2012-aviso-registro-ob-rem/index.html",
+          "sha256": "71044dc2d6950da33435cff8436d806d63924660a9a896e1108516f2ecce5710",
+          "bytes": 18142
+        },
+        {
+          "path": "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+          "sha256": "572a99052f586e1af101f0601464d3c7ce35e27536a7f548208c78a7c6f05d9a",
+          "bytes": 32836
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "73b923c45010384fbb8b08b7c27ceda483cd548e4d5e1cb24119fcd621cf02d9",
+          "bytes": 244847
+        },
+        {
+          "path": "es/ingenieria-inversa-criminal-unitaria/index.html",
+          "sha256": "dea106b4be4fd113c715567f50c0535223587b8f8479487992a040c3b70ed122",
+          "bytes": 27191
+        },
+        {
+          "path": "ops/continuity/PD_SP_ACCOUNTABILITY_CHAIN_20261124_DRAFT.json",
+          "sha256": "c883d8bbd6755d8cd86e0d7f43b6b7d21368a9e012bc4a9f6e97f60df5d64524",
+          "bytes": 20267
+        },
+        {
+          "path": "publication-manifests/PD_SP_ACCOUNTABILITY_GITHUB_20261125_RELEASE.json",
+          "sha256": "ec03b6aee88005ee55b0a58d86fec339b8b5d8d108ea96b153c04855e1c15087",
+          "bytes": 8811
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -3846,7 +3937,99 @@
         "pages_run_id": 45612547559,
         "merge_sha": "e5a308d1b8c8d07d98a0143e50605aa027adc640"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-11-25T12:20:29.493136Z",
+      "evidence": {
+        "merge_sha": "e5a308d1b8c8d07d98a0143e50605aa027adc640",
+        "pages_run_id": 45612547559,
+        "exact_matches": [
+          {
+            "path": "en/accountability-chain-2018-2022/index.html",
+            "sha256": "ed817c8f37552f8b20aa0b9640e066a4670a69270e3ff01d11ef5101deac1087",
+            "bytes": 22992
+          },
+          {
+            "path": "en/acosta-matos-perimeter/index.html",
+            "sha256": "4c8d4ebdfe73ea1786bc91aa0a1961bf7fc8ea5f41d89116087f9d85055fe2a3",
+            "bytes": 39830
+          },
+          {
+            "path": "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+            "sha256": "5a4e65d0d32eabce330b82eb7923d823656c8c348d6e3db5e9bdbf6baf4965f5",
+            "bytes": 31649
+          },
+          {
+            "path": "en/index.html",
+            "sha256": "68bbcdf2db7f0fa9180f4939986f03d4a0f222ade5cbd3ad529be8712ebe5554",
+            "bytes": 235110
+          },
+          {
+            "path": "en/insolvency-36-2012-insolvency-administrator/index.html",
+            "sha256": "25fc5fedeb100fa61653e84a52dc6b6795c086ffbfd5e7ef1251472ae4fb0645",
+            "bytes": 18869
+          },
+          {
+            "path": "en/insolvency-36-2012-registry-ob-rem-notice/index.html",
+            "sha256": "86c625b34f56758871815c5bd67f2bd8ca5dbeac61d8b18a51b1f325b4ffe6ec",
+            "bytes": 17531
+          },
+          {
+            "path": "en/unitary-criminal-reverse-engineering/index.html",
+            "sha256": "38d5f8a8a40a25efed7f7e31db9998e8bf96d8407614d57ffd8bf49532c7914d",
+            "bytes": 26979
+          },
+          {
+            "path": "es/acosta-matos-perimetro/index.html",
+            "sha256": "c71bd21a77ca9d64d0074609de55a006b7f5400ee16d28dd4f6ba23d7745076e",
+            "bytes": 41204
+          },
+          {
+            "path": "es/cadena-responsabilidad-2018-2022/index.html",
+            "sha256": "5549af45b710a4fc64fbf51864c695b0f134eebe8179acbf8faac09ffdf9f539",
+            "bytes": 23497
+          },
+          {
+            "path": "es/concurso-36-2012-administrador-concursal/index.html",
+            "sha256": "9884526e16fbf2341950d7ec61c51e41663ead1810cf9b31b273e2401cdc0227",
+            "bytes": 22386
+          },
+          {
+            "path": "es/concurso-36-2012-aviso-registro-ob-rem/index.html",
+            "sha256": "71044dc2d6950da33435cff8436d806d63924660a9a896e1108516f2ecce5710",
+            "bytes": 18142
+          },
+          {
+            "path": "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+            "sha256": "572a99052f586e1af101f0601464d3c7ce35e27536a7f548208c78a7c6f05d9a",
+            "bytes": 32836
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "73b923c45010384fbb8b08b7c27ceda483cd548e4d5e1cb24119fcd621cf02d9",
+            "bytes": 244847
+          },
+          {
+            "path": "es/ingenieria-inversa-criminal-unitaria/index.html",
+            "sha256": "dea106b4be4fd113c715567f50c0535223587b8f8479487992a040c3b70ed122",
+            "bytes": 27191
+          },
+          {
+            "path": "ops/continuity/PD_SP_ACCOUNTABILITY_CHAIN_20261124_DRAFT.json",
+            "sha256": "c883d8bbd6755d8cd86e0d7f43b6b7d21368a9e012bc4a9f6e97f60df5d64524",
+            "bytes": 20267
+          },
+          {
+            "path": "publication-manifests/PD_SP_ACCOUNTABILITY_GITHUB_20261125_RELEASE.json",
+            "sha256": "ec03b6aee88005ee55b0a58d86fec339b8b5d8d108ea96b153c04855e1c15087",
+            "bytes": 8811
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-11-25T12:20:19.513456Z"
+  "updated_at": "2026-11-25T12:20:29.493136Z"
 }
