@@ -1,11 +1,11 @@
 {
-  "schema": "por-derecho.publication-manifest.v1",
+  "schema": "por-derecho.publication-state.v1",
   "publication_id": "PD-CUATRECASAS-UNITARY-ACCOUNTABILITY-NEXUS-20261125-001",
   "control_id": "PD-CUATRECASAS-UNITARY-ACCOUNTABILITY-NEXUS-20261125-001",
   "owner": "Por Derecho / Project Sun Rock",
   "host": "github",
   "control_date": "2026-11-25",
-  "current_state": "REMOTE_SOURCE",
+  "current_state": "PR_OPEN",
   "source_baseline": "8e2ba652b39777add0f97c6dfc34f56704e8cb59",
   "branch": "codex/ccacm-436-accountability-nexus-20261125",
   "purpose": "Owner-directed additive bilingual documentary nexus and embedded signature-redacted order viewer, preserving existing evidence and all legal distinctions.",
@@ -55,12 +55,14 @@
     "status": "SOURCE_PREPARED_ONLY",
     "evidence": [
       "Exact input PDF verified by SHA-256 and original text comparison; transfer staging copy identical.",
-      "Additive source transformation; shared canonical register and assets; review and CI not yet established."
+      "Additive source transformation; shared canonical register and assets; review and CI not yet established.",
+      "Exact public candidate readback: PDF Git blob and SHA-256 match both hosts, common data/CSS/JS and four new bilingual sections byte-identical. Production not verified."
     ]
   },
   "publication_boundaries": [
     "Appeal opened, service directed, 10 days for representations. No disciplinary sanction, merits determination or causal finding.",
     "Supplied direct-message captures, not provider-certified authorship, evidence of dissemination or subsequent interface cause.",
     "No common plan, guilt, ultimate beneficiary or criminal intent established. No private correspondence or unredacted original included."
-  ]
+  ],
+  "schema_version": "1.0.0"
 }
