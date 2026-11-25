@@ -1,0 +1,199 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-SP-ACCOUNTABILITY-CHAIN-20261125-GITHUB-01",
+  "current_state": "PR_OPEN",
+  "owner": "Por Derecho / Gil Marer",
+  "host": "github",
+  "pr": 2159,
+  "source_baseline": "7aed9eea4085b53c4c62aa5a57a3520b1ec29cda",
+  "draft_predecessor": "cf2a7b366824d55eebd78460fc548beae4a7a993",
+  "historical_draft_manifest": "ops/continuity/PD_SP_ACCOUNTABILITY_CHAIN_20261124_DRAFT.json",
+  "historical_draft_manifest_sha256": "c883d8bbd6755d8cd86e0d7f43b6b7d21368a9e012bc4a9f6e97f60df5d64524",
+  "expected_routes": {
+    "es": [
+      "es/concurso-36-2012-aviso-registro-ob-rem/index.html",
+      "es/ingenieria-inversa-criminal-unitaria/index.html",
+      "es/concurso-36-2012-administrador-concursal/index.html",
+      "es/acosta-matos-perimetro/index.html",
+      "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+      "es/cadena-responsabilidad-2018-2022/index.html"
+    ],
+    "en": [
+      "en/insolvency-36-2012-registry-ob-rem-notice/index.html",
+      "en/unitary-criminal-reverse-engineering/index.html",
+      "en/insolvency-36-2012-insolvency-administrator/index.html",
+      "en/acosta-matos-perimeter/index.html",
+      "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+      "en/accountability-chain-2018-2022/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "en/insolvency-36-2012-registry-ob-rem-notice/index.html",
+    "es/concurso-36-2012-aviso-registro-ob-rem/index.html",
+    "en/unitary-criminal-reverse-engineering/index.html",
+    "es/ingenieria-inversa-criminal-unitaria/index.html",
+    "en/insolvency-36-2012-insolvency-administrator/index.html",
+    "es/concurso-36-2012-administrador-concursal/index.html",
+    "en/acosta-matos-perimeter/index.html",
+    "es/acosta-matos-perimetro/index.html",
+    "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+    "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+    "en/accountability-chain-2018-2022/index.html",
+    "es/cadena-responsabilidad-2018-2022/index.html"
+  ],
+  "source_files": [
+    {
+      "path": "en/insolvency-36-2012-registry-ob-rem-notice/index.html",
+      "sha256": "86c625b34f56758871815c5bd67f2bd8ca5dbeac61d8b18a51b1f325b4ffe6ec",
+      "bytes": 17531
+    },
+    {
+      "path": "es/concurso-36-2012-aviso-registro-ob-rem/index.html",
+      "sha256": "71044dc2d6950da33435cff8436d806d63924660a9a896e1108516f2ecce5710",
+      "bytes": 18142
+    },
+    {
+      "path": "en/unitary-criminal-reverse-engineering/index.html",
+      "sha256": "38d5f8a8a40a25efed7f7e31db9998e8bf96d8407614d57ffd8bf49532c7914d",
+      "bytes": 26979
+    },
+    {
+      "path": "es/ingenieria-inversa-criminal-unitaria/index.html",
+      "sha256": "dea106b4be4fd113c715567f50c0535223587b8f8479487992a040c3b70ed122",
+      "bytes": 27191
+    },
+    {
+      "path": "en/insolvency-36-2012-insolvency-administrator/index.html",
+      "sha256": "25fc5fedeb100fa61653e84a52dc6b6795c086ffbfd5e7ef1251472ae4fb0645",
+      "bytes": 18869
+    },
+    {
+      "path": "es/concurso-36-2012-administrador-concursal/index.html",
+      "sha256": "9884526e16fbf2341950d7ec61c51e41663ead1810cf9b31b273e2401cdc0227",
+      "bytes": 22386
+    },
+    {
+      "path": "en/acosta-matos-perimeter/index.html",
+      "sha256": "4c8d4ebdfe73ea1786bc91aa0a1961bf7fc8ea5f41d89116087f9d85055fe2a3",
+      "bytes": 39830
+    },
+    {
+      "path": "es/acosta-matos-perimetro/index.html",
+      "sha256": "c71bd21a77ca9d64d0074609de55a006b7f5400ee16d28dd4f6ba23d7745076e",
+      "bytes": 41204
+    },
+    {
+      "path": "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+      "sha256": "5a4e65d0d32eabce330b82eb7923d823656c8c348d6e3db5e9bdbf6baf4965f5",
+      "bytes": 31649
+    },
+    {
+      "path": "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+      "sha256": "572a99052f586e1af101f0601464d3c7ce35e27536a7f548208c78a7c6f05d9a",
+      "bytes": 32836
+    },
+    {
+      "path": "en/accountability-chain-2018-2022/index.html",
+      "sha256": "ed817c8f37552f8b20aa0b9640e066a4670a69270e3ff01d11ef5101deac1087",
+      "bytes": 22992
+    },
+    {
+      "path": "es/cadena-responsabilidad-2018-2022/index.html",
+      "sha256": "5549af45b710a4fc64fbf51864c695b0f134eebe8179acbf8faac09ffdf9f539",
+      "bytes": 23497
+    }
+  ],
+  "authorization": {
+    "date": "2026-11-25",
+    "received": true,
+    "scope": "GitHub-first live publication through the existing controller and protected PR #2159; GitLab remains held.",
+    "owner_instruction": "Authorize GitHub-first live publication",
+    "replaces": "Earlier requirement to hold both hosts together only",
+    "controller_tower_receipt": "https://github.com/sbu001monterecco/por-derecho/issues/1428#issuecomment-7161818007",
+    "existing_required_gates_preserved": true,
+    "independent_professional_opinion_claimed": false,
+    "signed_final_copy_attestation_claimed": false,
+    "external_contact": false,
+    "filing": false,
+    "registry_request": false
+  },
+  "scope_review": {
+    "reviewer_type": "Maintaining AI agent; not independent counsel or a court",
+    "date": "2026-11-25",
+    "scope": "Twelve reader routes against current-main canonical records and the preserved primary-review receipt; statutory elements against BOE; source status, adverse evidence, identity, privacy, bilingual meaning and exact legacy-byte preservation.",
+    "new_primary_document_review": false,
+    "merits_clearance_or_guilt_finding": false,
+    "canonical_records": [
+      "C36-E008",
+      "C36-E014",
+      "C36-E019",
+      "C36-E022",
+      "C36-E029",
+      "C36-E044",
+      "C36-E055",
+      "PD-MF-HIST-EVT-2026-09-14",
+      "GC-CRI-008",
+      "GC-CRI-009"
+    ],
+    "ac_claim_families": [
+      "AC-CLM-004",
+      "AC-CLM-005",
+      "AC-CLM-012",
+      "AC-CLM-013"
+    ],
+    "law_source": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444",
+    "corrections": [
+      "Historical judicial title and LPB full name",
+      "Article 447 includes manifest injustice and gross negligence or inexcusable ignorance",
+      "C36-E055 debt amount explicitly attributed to existing source record, original recheck open",
+      "Spanish source captions translated; direct correction route; mobile attribution cards stack",
+      "Publication markers reflect authorized GitHub scope; historical draft record retained byte-for-byte",
+      "Article 253 restricted to entrusted money/movables with delivery or return obligation; art. 248 gain/deceit elements separated from art. 251 theories"
+    ],
+    "nonblocking_open_evidence": [
+      "Current literal property-by-property Registry chain",
+      "€400,000 clearing and LPB estate accounts",
+      "Effects and boundaries of 2021/2022 acts",
+      "Exact scope and finality of DP 1901 and DP 1956",
+      "2022 debt figure original-scan recheck",
+      "DP1956 native notification event, decision date and signed order",
+      "Historical statutory application and offence elements remain matters for legal determination"
+    ],
+    "independent_legal_opinion": "NOT_OBTAINED_NOT_CLAIMED",
+    "policy_basis": "AGENTS.md PD-GOV-003/005 and AGENT_PUBLISHING_COMPATIBILITY enforcement matrix permit owner-authorized source-qualified additive publication with labelled open evidence; no human approval requirement is configured in main ruleset 20860148. This does not waive any existing substantive publication condition."
+  },
+  "gitlab": {
+    "state": "HOLD_SOURCE_ONLY_UNMERGED",
+    "mr": 1002,
+    "head_at_review": "6e4763e93a1b88bd1d827e7bca09c3093615124f",
+    "pipeline": 3113278494,
+    "mandatory_failed_jobs": 9,
+    "mutations": false,
+    "protected_controls_unchanged": true,
+    "parity_claim": false
+  },
+  "operational_status": {
+    "overall": "RED",
+    "github": "CANDIDATE_CHECKS_AND_LIVE_VERIFICATION_PENDING",
+    "gitlab": "RED_HELD_NINE_MANDATORY_FAILURES",
+    "note": "Overall two-host readiness is RED; this authorized GitHub-only release is pending, not live.",
+    "scope": "Two-host readiness; GitHub candidate is separately AMBER pending required checks"
+  },
+  "acceptance": {
+    "required_checks": [
+      "PD release acceptance",
+      "publication-integrity",
+      "Outage backend parity / validate"
+    ],
+    "scoped_workflow": ".github/workflows/pd-sp-accountability-review-20261125.yml",
+    "controller": "ops/PUBLICATION_CONTROLLER.md",
+    "must_claim_exact_head_before_merge": true,
+    "must_verify_merge_sha_and_affected_routes_after_deploy": true
+  },
+  "runtime_evidence": {
+    "controller": "pd-publication-state:state.json",
+    "pr": "https://github.com/sbu001monterecco/por-derecho/pull/2159",
+    "note": "This premerge manifest is a source contract. It does not self-certify acceptance, merge, deployment or deletion safety."
+  }
+}

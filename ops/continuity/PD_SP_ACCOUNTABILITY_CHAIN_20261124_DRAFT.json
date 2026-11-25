@@ -1,0 +1,457 @@
+{
+  "schema": "pd.sp.accountability-chain.draft.v1",
+  "control": "PD-SP-ACCOUNTABILITY-CHAIN-20261124-DRAFT-01",
+  "stage": "DRAFT_SOURCE_ONLY",
+  "origin": "Github current main",
+  "base_commit": "7aed9eea4085b53c4c62aa5a57a3520b1ec29cda",
+  "created_date": "2026-11-24",
+  "publishable": false,
+  "merge_authorized": false,
+  "deploy_authorized": false,
+  "external_contact_authorized": false,
+  "registry_request_authorized": false,
+  "filing_authorized": false,
+  "privileged_advice_excluded": true,
+  "source_note": "Controlled primary court/Registry/deed documents; public-safe source identifiers only, not native private documents.",
+  "existing_pages": [
+    {
+      "path": "en/insolvency-36-2012-registry-ob-rem-notice/index.html",
+      "topic": "obrem",
+      "language": "en",
+      "original_blob": "dbc12460e01fbe26154729c7523b5749c919acea",
+      "preservation": "ADDITIVE_ONLY"
+    },
+    {
+      "path": "es/concurso-36-2012-aviso-registro-ob-rem/index.html",
+      "topic": "obrem",
+      "language": "es",
+      "original_blob": "c0f2811447345acad33186ca27f5878458186c08",
+      "preservation": "ADDITIVE_ONLY"
+    },
+    {
+      "path": "en/unitary-criminal-reverse-engineering/index.html",
+      "topic": "unitary",
+      "language": "en",
+      "original_blob": "5e3ce7777ac7c4f854186dac71ac97fc0a6aa984",
+      "preservation": "ADDITIVE_ONLY"
+    },
+    {
+      "path": "es/ingenieria-inversa-criminal-unitaria/index.html",
+      "topic": "unitary",
+      "language": "es",
+      "original_blob": "1194dd11a6a589550f4a00a88e6fe810f641e7f7",
+      "preservation": "ADDITIVE_ONLY"
+    },
+    {
+      "path": "en/insolvency-36-2012-insolvency-administrator/index.html",
+      "topic": "ac",
+      "language": "en",
+      "original_blob": "ccb7bffabccdcc0cebca0ca814a0953a6de97601",
+      "preservation": "ADDITIVE_ONLY"
+    },
+    {
+      "path": "es/concurso-36-2012-administrador-concursal/index.html",
+      "topic": "ac",
+      "language": "es",
+      "original_blob": "6903a618718be120cd345d3516e3a54e4f1f7889",
+      "preservation": "ADDITIVE_ONLY"
+    },
+    {
+      "path": "en/acosta-matos-perimeter/index.html",
+      "topic": "cam",
+      "language": "en",
+      "original_blob": "4ae425f4a3acd32f91813964b97cd61fffb91b21",
+      "preservation": "ADDITIVE_ONLY"
+    },
+    {
+      "path": "es/acosta-matos-perimetro/index.html",
+      "topic": "cam",
+      "language": "es",
+      "original_blob": "8b74e2e379d029fe748c8c8c1aba4f1bb05d76a0",
+      "preservation": "ADDITIVE_ONLY"
+    },
+    {
+      "path": "en/control-24-insolvency-judge-complaint-36-2012/index.html",
+      "topic": "judge",
+      "language": "en",
+      "original_blob": "7ca28c3dcae952dc72e8438a21846dc798340e92",
+      "preservation": "ADDITIVE_ONLY"
+    },
+    {
+      "path": "es/control-24-denuncia-juez-concurso-36-2012/index.html",
+      "topic": "judge",
+      "language": "es",
+      "original_blob": "1d68caf7666782d8bcbd23af1631808c4fd1637d",
+      "preservation": "ADDITIVE_ONLY"
+    }
+  ],
+  "new_pages": [
+    "en/accountability-chain-2018-2022/index.html",
+    "es/cadena-responsabilidad-2018-2022/index.html"
+  ],
+  "events": [
+    {
+      "id": "PD-SP-EV-01",
+      "date": "2018-04-16",
+      "type": "documented",
+      "locator": "Liquidation-plan order (deed bundle pp.96–101)",
+      "public_reader_topic": "obrem"
+    },
+    {
+      "id": "PD-SP-EV-02",
+      "date": "2018-06-26",
+      "type": "official",
+      "locator": "Partial-stay order (deed bundle pp.107–108)",
+      "public_reader_topic": "obrem"
+    },
+    {
+      "id": "PD-SP-EV-03",
+      "date": "2018-11-28",
+      "type": "party",
+      "locator": "Protocol 2150 (deed bundle pp.69,73–76)",
+      "public_reader_topic": "obrem"
+    },
+    {
+      "id": "PD-SP-EV-04",
+      "date": "2019-01-09",
+      "type": "official",
+      "locator": "Tías Registry qualification (deed bundle pp.279–281)",
+      "public_reader_topic": "obrem"
+    },
+    {
+      "id": "PD-SP-EV-05",
+      "date": "2019-10-24",
+      "type": "official",
+      "locator": "Court order 24 Oct 2019; reconsideration rejected 12 May 2020",
+      "public_reader_topic": "obrem"
+    },
+    {
+      "id": "PD-SP-EV-06",
+      "date": "2021-05-18",
+      "type": "official",
+      "locator": "Definitive CAM proposal approval of 18 May 2021",
+      "public_reader_topic": "unitary"
+    },
+    {
+      "id": "PD-SP-EV-07",
+      "date": "2022-02-21",
+      "type": "documented",
+      "locator": "Notarial protocol 457, 21 Feb 2022",
+      "public_reader_topic": "unitary"
+    },
+    {
+      "id": "PD-SP-EV-09",
+      "date": "2026-07-21",
+      "type": "documented",
+      "locator": "DP 1956/2026 — provisional dismissal communicated 21 July 2026; signature date not assumed",
+      "public_reader_topic": "ac"
+    },
+    {
+      "id": "PD-SP-EV-08",
+      "date": "2026-09-14",
+      "type": "official",
+      "locator": "DP 1901/2026 — signed Auto of 14 September 2026: sobreseimiento libre and archive; finality unverified",
+      "public_reader_topic": "judge"
+    }
+  ],
+  "unresolved": [
+    "Current literal property-by-property Registry chain",
+    "€400,000 clearing and LPB estate accounts",
+    "Effects and boundaries of 2021/2022 acts",
+    "Exact scope and finality of DP 1901 and DP 1956",
+    "Source-by-source legal approval before publication",
+    "DP 1956/2026 21 July communication date vs order signature and allocation"
+  ],
+  "review_gate": "Required CI, public privacy and source review, exact live parity, and separate owner release mandate",
+  "corrections": [
+    {
+      "correction_id": "PD-SP-CORR-01",
+      "recorded_date": "2026-11-25",
+      "prior_issue": "The initial PD-SP-EV-08 wrongly combined DP 1901/2026 and DP 1956/2026 beneath one date 14 September 2026.",
+      "action": "Narrow PD-SP-EV-08 to DP 1901 dated 14 September; add PD-SP-EV-09 for the separate DP 1956 provisional dismissal communicated 21 July; preserve both different statuses.",
+      "no_prior_identity_deleted": true,
+      "release_gate": "Source and legal review required"
+    }
+  ],
+  "primary_source_review_20261125": {
+    "review_id": "PD-SP-PRIMARY-RECHECK-20261125-01",
+    "state": "DIRECT_PRIMARY_REVIEW_PARTIAL_INDEPENDENT_LEGAL_SIGNOFF_OPEN",
+    "read_scope": "Court orders direct text and scanned notarial source pages, not complete legal opinion",
+    "verified": [
+      {
+        "source": "28 Nov 2018 notarial protocol 2150, controlled 282-page bundle",
+        "location": "PDF pages 69, 74 and 280",
+        "basis": "page-image inspection",
+        "finding": "Page 69 identifies fincas 8.536, 8.653, 8.654; page 74 release clause uses 8.537; page 280 is the registrar's partial 9 Jan 2019 suspension, not a blanket refusal."
+      },
+      {
+        "source": "24 Oct 2019 Auto, Concurso 36/2012",
+        "location": "operative section and reasoning (five pages)",
+        "basis": "direct primary text",
+        "finding": "Nonconvalidation of 28 Nov 2018 deed and removal of 12 Dec 2018 procedural direction; court expressly found the 26 June 2018 partial stay erroneous for a unitary sale and criticized separate realization."
+      },
+      {
+        "source": "12 May 2020 Auto, Concurso 36/2012",
+        "location": "operative section, second page",
+        "basis": "direct primary text",
+        "finding": "Reposición against 24 Oct 2019 Auto dismissed; that Auto confirmed. No criminal guilt adjudication."
+      },
+      {
+        "source": "18 May 2021 Auto, Concurso 36/2012",
+        "location": "antecedents and operative section (four pages)",
+        "basis": "direct primary text",
+        "finding": "a third-party bidder's reported EUR 14.8m interest; notified procurador, nonattendance, lack of EUR 735,694.02 security; CAM proposal definitively approved, with ordinary five-day reposición notice. Comparable economic value and final legal status require separate analysis."
+      },
+      {
+        "source": "21 Feb 2022 notarial protocol 457, scanned 76-page copy",
+        "location": "PDF page 12",
+        "basis": "limited page-image inspection",
+        "finding": "Confirms dación of listed encumbered apartment properties and reliance on court orders; the EUR 13,168,082.02 figure in the draft was not independently rechecked on a legible original page during this pass."
+      }
+    ],
+    "unresolved": [
+      "Independent legal/source approval for public attribution not obtained",
+      "Current Tías Registry record and rights chain unverified",
+      "2018 cheque clearing and LPB estate ledger not verified",
+      "2022 EUR 13,168,082.02 exact figure in scanned original not independently rechecked",
+      "DP 1901/2026 and DP 1956/2026 signed original orders and finality not independently rechecked"
+    ],
+    "public_reproduction": "DO_NOT_EMBED_NATIVE_PRIVATE_DOCUMENTS",
+    "gates": {
+      "publishable": false,
+      "independent_legal_clearance": false,
+      "full_original_source_verification": false
+    }
+  },
+  "canonical_case_record_crosswalk_20261125": {
+    "source": "assets/data/concurso36-complete-record-v1.json at current GitHub protected main",
+    "status": "SEVEN_HISTORIC_CASE_RECORDS_ONE_SPECIALIST_2026_EVENT_ONE_PROCEEDING_WITH_UNBOUND_NOTIFICATION",
+    "visual_id_semantics": "PD-SP-EV identifiers are public display anchors, NOT newly allocated official registry/court event IDs.",
+    "records": [
+      {
+        "visual_id": "PD-SP-EV-01",
+        "existing_id": "C36-E008",
+        "date": "2018-04-16",
+        "status": "MATCHED_CASE_LEDGER"
+      },
+      {
+        "visual_id": "PD-SP-EV-02",
+        "existing_id": "C36-E014",
+        "date": "2018-06-26",
+        "status": "MATCHED_CASE_LEDGER"
+      },
+      {
+        "visual_id": "PD-SP-EV-03",
+        "existing_id": "C36-E019",
+        "date": "2018-11-28",
+        "status": "MATCHED_CASE_LEDGER"
+      },
+      {
+        "visual_id": "PD-SP-EV-04",
+        "existing_id": "C36-E022",
+        "date": "2019-01-09",
+        "status": "MATCHED_CASE_LEDGER"
+      },
+      {
+        "visual_id": "PD-SP-EV-05",
+        "existing_id": "C36-E029",
+        "date": "2019-10-24",
+        "status": "MATCHED_CASE_LEDGER"
+      },
+      {
+        "visual_id": "PD-SP-EV-06",
+        "existing_id": "C36-E044",
+        "date": "2021-05-18",
+        "status": "MATCHED_CASE_LEDGER"
+      },
+      {
+        "visual_id": "PD-SP-EV-07",
+        "existing_id": "C36-E055",
+        "date": "2022-02-21",
+        "status": "MATCHED_CASE_LEDGER"
+      },
+      {
+        "visual_id": "PD-SP-EV-08",
+        "existing_id": "PD-MF-HIST-EVT-2026-09-14",
+        "date": "2026-09-14",
+        "status": "MATCHED_SPECIALIST_DATE_EVENT_ONLY_PROCEDURAL_ORIGIN_OPEN",
+        "candidate": "Existing specialized fiscal dossier entry PD-MF-HIST-EVT-2026-09-14 must be checked against the exact signed Auto and criminal case master",
+        "proceeding_master_id": "GC-CRI-008",
+        "source_id": "PD-MF-SRC-019",
+        "evidence_boundary": "Official order date and 29-Jul Fiscal-request reference anchored to controlled photographs; native court PDF, signed Fiscal report, exact Ref21/24 association and finality remain unverified"
+      },
+      {
+        "visual_id": "PD-SP-EV-09",
+        "existing_id": null,
+        "date": "2026-07-21",
+        "status": "MATCHED_PROCEEDING_MASTER_NOTIFICATION_EVENT_UNBOUND",
+        "candidate": "DP 1956/2026 provisional-dismissal communication requires exact native receipt/decision-versus-notification record",
+        "proceeding_master_id": "GC-CRI-009",
+        "master_source": "archive/PROCEEDINGS_MASTER_REGISTER_DP1956_PATCH_18AUG2026.csv",
+        "evidence_boundary": "Provisional dismissal communicated 21 Jul 2026. No filed reform/subsidiary appeal established. Native signed Auto, exact decision date and notification-event record are open"
+      }
+    ],
+    "condition": "DO_NOT_ALLOCATE_DUPLICATE_EVENTS_OR_PUBLISH_AS_CANONICAL_COMPLETE",
+    "source_controls": [
+      {
+        "source": "assets/data/fiscalia-master-dossier-canonical-v1.json",
+        "event": "PD-MF-HIST-EVT-2026-09-14",
+        "proceeding": "GC-CRI-008",
+        "state": "DIRECT_PRIMARY_SOURCE_IMAGES_NATIVE_PDF_PENDING"
+      },
+      {
+        "source": "archive/PROCEEDINGS_MASTER_REGISTER_DP1956_PATCH_18AUG2026.csv",
+        "proceeding": "GC-CRI-009",
+        "state": "PROVISIONAL_DISMISSAL_REPORTED_NATIVE_SIGNED_ORDER_AND_NOTICE_PENDING"
+      }
+    ]
+  },
+  "owner_conditional_release_authorization_20261125": {
+    "control": "PD-SP-CRIMINAL-ATTRIBUTION-RELEASE-20261125-01",
+    "received": true,
+    "scope": "Actor-specific, source-backed alleged offences and bilingual website upgrade with conditional integration and live publication; no contact, filing, privileged disclosure, or mandatory-gate bypass.",
+    "clearance": "OWNER_REQUEST_AND_CONDITIONAL_AUTHORIZATION_ONLY_NOT_A_SIGNED_EXACT_FINAL_COPY_OR_INDEPENDENT_OPINION",
+    "specific_final_page_attestation": false,
+    "merge_release_admitted": false,
+    "ci_override": false,
+    "source_only_predecessor_retained": true
+  },
+  "criminal_attribution_matrix_20261125": {
+    "review_state": "ACTOR_SPECIFIC_SUSPECTED_OFFENCES_UNADJUDICATED",
+    "legal_source": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444",
+    "date_of_law_check": "2026-11-25",
+    "historical_law_version_control": "Confirm statute version operative on each alleged act before claiming charge; no conviction implied",
+    "entries": [
+      {
+        "actor": "Francisco de Borja Rodríguez-Batllori Laffitte in his insolvency administration capacity",
+        "allegation_owner": "Por Derecho",
+        "act": "2018 protocol 2150: separate 31-finca sale and requested ob-rem release; later court refused convalidation",
+        "source_refs": [
+          "C36-E008",
+          "C36-E014",
+          "C36-E019",
+          "C36-E022",
+          "C36-E029",
+          "C36-E044"
+        ],
+        "offences_under_investigation": [
+          "CP 252 administración desleal conditional on management breach and patrimonial harm",
+          "CP 253 apropiación indebida conditional on entrusted property and appropriation"
+        ],
+        "factual_judicial_findings": "24 October 2019 Auto says separate transaction inconsistent with unitary liquidation and lacked necessary authorization",
+        "mental_element_state": "UNPROVEN",
+        "harm_state": "UNVERIFIED_CLEARING_AND_ESTATE_LEDGER",
+        "counterevidence": [
+          "June 2018 partial stay was court error",
+          "May 2021 approval",
+          "DP 1956 provisional dismissal"
+        ],
+        "publication_state": "ATTRIBUTED_SUSPICION_NOT_FINDING"
+      },
+      {
+        "actor": "Construcciones Acosta Matos S.A. and identified deed representative Laura Patricia Acosta Matos",
+        "allegation_owner": "Por Derecho",
+        "act": "Participation as buyer and claimant to ob-rem release under 2018 deed",
+        "source_refs": [
+          "C36-E019",
+          "C36-E022",
+          "C36-E029",
+          "C36-E044"
+        ],
+        "offences_under_investigation": [
+          "CP 251 and 248 property/transaction fraud theories subject to proof of defendant-specific conduct and deceit"
+        ],
+        "mental_element_state": "UNPROVEN_INDIVIDUAL_KNOWLEDGE",
+        "harm_state": "UNPROVEN_RIGHTS_AND_LOSS",
+        "counterevidence": [
+          "May 2021 judicial approval",
+          "No proof of a concluded comparable third-party acquisition"
+        ],
+        "publication_state": "ATTRIBUTED_SUSPICION_NOT_FINDING"
+      },
+      {
+        "actor": "Alberto López Villarrubia as signatory of historical court orders",
+        "allegation_owner": "Por Derecho",
+        "act": "Distinct 2018, 2019, 2020 and 2021 signed decision sequence",
+        "source_refs": [
+          "C36-E014",
+          "C36-E029",
+          "C36-E044",
+          "PD-SP-EV-08"
+        ],
+        "offences_under_investigation": [
+          "CP 446 judicial prevaricación requires knowingly unjust ruling",
+          "CP 447 alternative grave negligence standard only if distinct elements established"
+        ],
+        "mental_element_state": "KNOWING_INJUSTICE_UNPROVEN",
+        "harm_state": "JUDICIAL_CAUSATION_UNVERIFIED",
+        "counterevidence": [
+          "Court's explicit 2019 self-correction and nonconvalidation",
+          "DP 1901 free dismissal and archive"
+        ],
+        "publication_state": "ATTRIBUTED_COMPLAINT_NOT_FINDING"
+      },
+      {
+        "actor": "Later corporate, investment, hospitality and finance actors",
+        "allegation_owner": "Por Derecho",
+        "act": "Potential subsequent adoption or use requires separately proven personal act",
+        "source_refs": [],
+        "offences_under_investigation": [
+          "NO_OFFENCE_ASSIGNED_FROM_ASSOCIATION"
+        ],
+        "mental_element_state": "NOT_ASSESSED",
+        "harm_state": "NOT_ASSESSED",
+        "counterevidence": [
+          "No guilt by association or inferred common intent"
+        ],
+        "publication_state": "INVESTIGATIVE_PERIMETER_ONLY"
+      }
+    ],
+    "protected_bidder": "NAME_UNPUBLISHED; commercial bid amount and procedural facts preserved",
+    "native_evidence": "PRIVATE; do not publish original restricted materials",
+    "owner_approval": "CONDITIONAL_ACTION_APPROVAL_NOT_CONTENT_EXACT_COPY_SIGNATURE",
+    "final_legal_source_gaps": [
+      "Independent legal/source approval for public attribution not obtained",
+      "Current Tías Registry record and rights chain unverified",
+      "2018 cheque clearing and LPB estate ledger not verified",
+      "2022 EUR 13,168,082.02 exact figure in scanned original not independently rechecked",
+      "DP 1901/2026 and DP 1956/2026 signed original orders and finality not independently rechecked"
+    ]
+  },
+  "release_successor_admission_20261125": {
+    "control": "PD-SP-CRIMINAL-ATTRIBUTION-RELEASE-20261125-01",
+    "status": "REQUIRED_GATES_UNFULFILLED_NO_DEPLOY",
+    "design_only": true,
+    "original_gitlab_main": "f1ef99bd821b97d94eff2d6db512a44e69c7a236",
+    "original_github_main": "7aed9eea4085b53c4c62aa5a57a3520b1ec29cda",
+    "gitlab_failed_required_jobs": [
+      "verify-rc1-successor-integrity",
+      "verify-pd-defence-source-epoch",
+      "verify-homepage-canonical-contract",
+      "verify-tested-build-handoff",
+      "audit-connected-automation",
+      "verify-ricpe-static-readers",
+      "verify-gitlab-public-frontend",
+      "verify-publication-controls",
+      "verify-ragplus-pilot"
+    ],
+    "failure_classification": "Historic source-only validator rejects this MR outside its authentic Lanzarote context; not permission to waive or relabel its required checks.",
+    "r865_source_only_preserved": true,
+    "lanzarote_validator_immutable": true,
+    "prior_gitlab_jobs_not_relabelled_as_passed": true,
+    "legacy_pages_exclusion_immutable": true,
+    "successor_requirements": [
+      "Reconcile each historic job's actual applicability through immutable authenticated predecessor checks without changing CI context identities.",
+      "Run applicable substantive verification on the actual current accountability MR head with exact changed-file allowlist, preserved prior bytes, protected bidder, bilingual and rendered checks.",
+      "Independently review successor release admission and demonstrate no R865/Lanzarote or held RICPE content newly published.",
+      "Prove a permitted Pages successor referencing the last approved deployed artifact and an explicit allowlist without removing the existing when:never rule.",
+      "Obtain owner approval of exact final reviewed words, not an invented external legal opinion or signed statement.",
+      "Merge only via protected processes, verify published artifact and dual-host EN/ES live readback with rollback."
+    ],
+    "owner_clearance": "CONDITIONAL_RELEASE_AUTHORIZATION_NOT_EXACT_FINAL_COPY_SIGNATURE",
+    "independent_external_legal_opinion": "NOT_EXTRA_GATE_WITHOUT_BINDING_RULE",
+    "live_state": "UNMERGED_UNDEPLOYED",
+    "stop_condition": "Any required failed check, source-only disclosure, absent exact final owner source approval, or split-host release failure.",
+    "source_only_scope": "Do not remove source-only markers or impersonate CI context."
+  }
+}
