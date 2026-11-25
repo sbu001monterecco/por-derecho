@@ -1,0 +1,21 @@
+{
+  "schema": "por-derecho.release-state-rotation-diagnostic.v1",
+  "status": "PROPOSAL_ONLY_NOT_APPLIED",
+  "base_state_commit": "12cd7adb504b9cf4e70b0989ecee4ab5ad05b61e",
+  "base_state_blob": "900e8732bc008b83e77ac74cbbc669ae5efac7bf",
+  "prior_receipt_count": 73,
+  "retained_active_count": 1,
+  "archive_path": "receipts-archive/fence-79-20261125-state.json",
+  "phase": "VERIFIED_FOR_SCOPE",
+  "fence": 79,
+  "owner": "2161:4abba00713821e09b9ba4b07ffc6f2cefd8f605d",
+  "pr": 2161,
+  "guards": [
+    "Do not apply unless independently reviewed, owner-authorised and current state/head unchanged; verify previous controller stopped and no active release.",
+    "No permit written or claimed, no fence advanced, no main/Pages change.",
+    "Archive full original bytes; no history deletion; older receipts remain reachable in immutable Git history and archive file.",
+    "Controller's next claim may omit the archive pointer from active JSON; archive file remains in branch tree. Future rotation must keep all archives discoverable.",
+    "A smaller state is a diagnostic hypothesis; HTTP500 cause not proved. Normal controller must record ACCEPTED for exact final PR head before merge.",
+    "If API failure persists, stop; do not manually forge permit or reset state."
+  ]
+}
