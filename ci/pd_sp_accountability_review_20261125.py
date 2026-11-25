@@ -19,6 +19,9 @@ from urllib.parse import urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 CONTROL = "PD-SP-ACCOUNTABILITY-CHAIN-20261124-DRAFT-01"
 MANIFEST = "ops/continuity/PD_SP_ACCOUNTABILITY_CHAIN_20261124_DRAFT.json"
+RELEASE_MANIFEST = "publication-manifests/PD_SP_ACCOUNTABILITY_GITHUB_20261125_RELEASE.json"
+RELEASE_CONTROL = "PD-SP-ACCOUNTABILITY-CHAIN-20261125-GITHUB-01"
+DRAFT_PREDECESSOR = "cf2a7b366824d55eebd78460fc548beae4a7a993"
 TEST = "tests/test_pd_sp_accountability_chain_20261124.py"
 SCRIPT = "ci/pd_sp_accountability_review_20261125.py"
 GH_BASE = "7aed9eea4085b53c4c62aa5a57a3520b1ec29cda"
@@ -74,10 +77,80 @@ class Links(HTMLParser):
         if tag in ("a", "link", "script") and ("href" in a or "src" in a):
             self.links.append(a.get("href", a.get("src")))
 
-def check_hub(path, locale, manifest, origin):
+def release_profile(host, manifest):
+    """A GitHub-only successor; the historical source-only record stays immutable.
+
+    This source check never issues a publication permit. The unchanged controller
+    and protected checks must independently accept the exact head before merge.
+    GitLab retains its original draft-only path and predecessor admission.
+    """
+    release_path = ROOT / RELEASE_MANIFEST
+    if not release_path.exists():
+        return None
+    require(host == "github", "GitHub successor cannot admit GitLab publication")
+    release = json.loads(release_path.read_text(encoding="utf-8"))
+    require(release.get("publication_id") == RELEASE_CONTROL
+            and release.get("host") == "github" and release.get("pr") == 2159,
+            "release identity/host/PR")
+    require(release.get("draft_predecessor") == DRAFT_PREDECESSOR
+            and release.get("source_baseline") == GH_BASE, "release lineage")
+    require(subprocess.run(["git", "merge-base", "--is-ancestor", DRAFT_PREDECESSOR,
+                            "HEAD"], cwd=ROOT).returncode == 0, "draft lineage lost")
+    original = baseline(DRAFT_PREDECESSOR, MANIFEST)
+    require((ROOT / MANIFEST).read_bytes() == original
+            and hashlib.sha256(original).hexdigest() == release.get("historical_draft_manifest_sha256"),
+            "historical draft/source review was rewritten")
+    auth = release.get("authorization", {})
+    require(auth.get("received") is True and auth.get("date") == "2026-11-25"
+            and auth.get("owner_instruction") == "Authorize GitHub-first live publication"
+            and auth.get("existing_required_gates_preserved") is True,
+            "owner GitHub-first scope missing")
+    for key in ("external_contact", "filing", "registry_request",
+                "independent_professional_opinion_claimed", "signed_final_copy_attestation_claimed"):
+        require(auth.get(key) is False, "unauthorized action or invented attestation: " + key)
+    gl = release.get("gitlab", {})
+    require(gl.get("state") == "HOLD_SOURCE_ONLY_UNMERGED"
+            and gl.get("mutations") is False and gl.get("parity_claim") is False
+            and gl.get("protected_controls_unchanged") is True, "GitLab hold changed")
+    routes = {x["path"] for x in manifest["existing_pages"]} | set(manifest["new_pages"])
+    expected = release.get("expected_routes", {})
+    require(set(expected) == {"en", "es"}
+            and all(len(expected[k]) == 6 for k in expected)
+            and set(expected["en"] + expected["es"]) == routes,
+            "release route denominator changed")
+    files = release.get("source_files", [])
+    require(len(files) == len(routes) and {x["path"] for x in files} == routes,
+            "release fingerprint denominator changed")
+    for item in files:
+        raw = (ROOT / item["path"]).read_bytes()
+        require(len(raw) == item["bytes"] and hashlib.sha256(raw).hexdigest() == item["sha256"],
+                "release bytes differ: " + item["path"])
+    for path in (".gitlab-ci.yml", ".github/workflows/publication-controller.yml",
+                 ".github/workflows/release-acceptance.yml",
+                 ".github/workflows/publication-integrity-gate.yml",
+                 "scripts/pd_release_controller.py", "scripts/check_release_acceptance.py"):
+        existed = subprocess.run(["git", "cat-file", "-e", GH_BASE + ":" + path],
+                                 cwd=ROOT, stdout=subprocess.DEVNULL,
+                                 stderr=subprocess.DEVNULL).returncode == 0
+        if existed:
+            require((ROOT / path).read_bytes() == baseline(GH_BASE, path),
+                    "existing publication control changed: " + path)
+        else:
+            require(not (ROOT / path).exists(), "new cross-host control introduced: " + path)
+    return release
+
+def check_hub(path, locale, manifest, origin, release=None):
     raw = (ROOT / path).read_text(encoding="utf-8")
     require(raw.startswith("<!doctype html>") and '<html lang="' + locale + '">' in raw, path + ": locale")
-    require('data-publication="DRAFT_ONLY_NO_DEPLOY"' in raw and CONTROL in raw, path + ": draft gate")
+    marker = "PUBLIC_RELEASE" if release else "DRAFT_ONLY_NO_DEPLOY"
+    require('data-publication="' + marker + '"' in raw and CONTROL in raw, path + ": publication state")
+    if release:
+        require('data-release="' + RELEASE_CONTROL + '"' in raw
+                and 'DRAFT ONLY:' not in raw and 'BORRADOR:' not in raw,
+                path + ": released reader still claims draft-only")
+        require('class="pdsp-law-version"' in raw and 'AC-CLM-005' in raw
+                and ('corrections-version-control/' in raw or 'correcciones-control-versiones/' in raw),
+                path + ": legal-version, canonical-claim or correction link absent")
     require('<svg' in raw and 'role="img"' in raw, path + ": visual")
     for v in ("all", "official", "party", "documented"):
         require('data-filter="' + v + '"' in raw, path + ": filter " + v)
@@ -104,11 +177,18 @@ def check_hub(path, locale, manifest, origin):
                     path + ": unapproved external source " + v[:90])
         elif not v.startswith("#"):
             base_dir = posixpath.dirname(path)
-            resolved = posixpath.normpath(posixpath.join(base_dir, urlsplit(v).path))
-            if v.endswith("/"):
+            target = urlsplit(v)
+            resolved = posixpath.normpath(posixpath.join(base_dir, target.path))
+            if target.path.endswith("/"):
                 resolved += "/index.html"
             require(not resolved.startswith("../") and (ROOT / resolved).is_file(),
                     path + ": missing local target " + resolved)
+            if target.fragment:
+                target_ids = Links()
+                target_ids.feed((ROOT / resolved).read_text(encoding="utf-8"))
+                require(target.fragment in target_ids.ids, path + ": missing target fragment " + v)
+        else:
+            require(v[1:] in parsed.ids, path + ": missing local fragment " + v)
 
 def original_insertion_preservation(path, host, base):
     candidate = (ROOT / path).read_bytes()
@@ -128,7 +208,10 @@ def original_insertion_preservation(path, host, base):
 
     require(not has_protected_bidder(candidate[a:b].decode("utf-8")), path + ": new section reveals protected bidder")
 
-def check(host):
+def check(host, local=False):
+    if local:
+        require(host == "github" and not os.getenv("GITHUB_ACTIONS")
+                and not os.getenv("CI_PIPELINE_SOURCE"), "local mode cannot represent native CI")
     base = GH_BASE if host == "github" else GL_BASE
     require(git("rev-parse", "HEAD").decode().strip() == os.getenv("GITHUB_SHA", "").strip()
             if host == "github" and os.getenv("GITHUB_SHA") and os.getenv("GITHUB_EVENT_NAME") != "pull_request"
@@ -142,9 +225,18 @@ def check(host):
         require(os.getenv("CI_MERGE_REQUEST_SOURCE_BRANCH_NAME") == BRANCH
                 and os.getenv("CI_MERGE_REQUEST_TARGET_BRANCH_NAME") == "main", "branch identity")
         require(os.getenv("CI_COMMIT_SHA") == current, "current CI head")
-    else:
+    elif not local:
         require(os.getenv("GITHUB_EVENT_NAME") == "pull_request", "PR event")
+        event_path = os.getenv("GITHUB_EVENT_PATH")
+        require(bool(event_path), "native PR event payload missing")
+        event = json.loads(Path(event_path).read_text(encoding="utf-8"))
+        pr = event.get("pull_request", {})
+        require(pr.get("head", {}).get("sha") == current
+                and pr.get("head", {}).get("ref") == BRANCH
+                and pr.get("base", {}).get("ref") == "main"
+                and event.get("number") == 2159, "native PR head/branch/number mismatch")
     manifest = json.loads((ROOT / MANIFEST).read_text(encoding="utf-8"))
+    release = release_profile(host, manifest)
     require(manifest["control"] == CONTROL and manifest["stage"] == "DRAFT_SOURCE_ONLY"
             and manifest["publishable"] is False and manifest["merge_authorized"] is False
             and manifest["deploy_authorized"] is False, "no-publication state")
@@ -192,11 +284,13 @@ def check(host):
         expected[".gitlab-ci.yml"] = "M"
     else:
         expected[".github/workflows/pd-sp-accountability-review-20261125.yml"] = "A"
+        if release:
+            expected[RELEASE_MANIFEST] = "A"
     require(changed == expected, "candidate path inventory differs: " + str({k:v for k,v in changed.items() if expected.get(k) != v}))
     for path in existing:
         original_insertion_preservation(path, host, base)
     for path in manifest["new_pages"]:
-        check_hub(path, "en" if path.startswith("en/") else "es", manifest, PUBLIC_ORIGINS[host])
+        check_hub(path, "en" if path.startswith("en/") else "es", manifest, PUBLIC_ORIGINS[host], release)
     for old in ALLOWED_PREDECESSOR_SOURCE:
         if (ROOT / old).exists():
             require((ROOT / old).read_bytes() == baseline(base, old), "protected predecessor modified: " + old)
@@ -206,13 +300,15 @@ def check(host):
         require(current_ci.startswith(previous), "existing CI jobs or publisher guards changed")
         require(current_ci[len(previous):].count(b"verify-sp-accountability-draft-20261125:") == 1,
                 "exact additive verification job missing")
-    print(json.dumps({"status":"PASS_DRAFT_ONLY", "head":current,"base":base,
+    print(json.dumps({"status":"PASS_GITHUB_RELEASE_SOURCE" if release else "PASS_DRAFT_ONLY", "head":current,"base":base,
                       "host":host,"changed_paths":len(changed),"events":9,
                       "old_source_preserved":len(existing),"new_visuals":2,
                       "historic_lanzarote_verifier_unchanged":True,
-                      "publication_authorized":False},sort_keys=True))
+                      "execution_context": "LOCAL_SOURCE_REVIEW" if local else "NATIVE_CI",
+                      "owner_github_release_authorized": bool(release),
+                      "controller_permit_issued_by_this_test":False},sort_keys=True))
 
-def render():
+def render(browser_executable=None):
     try:
         from playwright.sync_api import sync_playwright
     except ImportError as e:
@@ -220,7 +316,8 @@ def render():
     report = ROOT / "recovery-audit"
     report.mkdir(exist_ok=True)
     with sync_playwright() as pw:
-        browser = pw.chromium.launch(headless=True)
+        browser = pw.chromium.launch(headless=True, executable_path=browser_executable)
+        print("Browser version:", browser.version)
         for locale, path in (("en", "en/accountability-chain-2018-2022/index.html"),
                              ("es", "es/cadena-responsabilidad-2018-2022/index.html")):
             for mode, width, height in (("desktop", 1440, 900),("mobile", 390, 844)):
@@ -236,17 +333,43 @@ def render():
                 require(page.evaluate("document.documentElement.scrollWidth <= innerWidth + 2"),
                         path + ": viewport overflow")
                 require(not errors, path + ": JS errors " + repr(errors))
+                if (ROOT / RELEASE_MANIFEST).exists():
+                    require(page.locator('body[data-publication="PUBLIC_RELEASE"]').count() == 1,
+                            path + ": rendered release marker")
+                    if mode == "mobile":
+                        cards = page.locator('.pdsp-crime').evaluate_all(
+                            "xs => xs.map(x => ({x:x.getBoundingClientRect().x,y:x.getBoundingClientRect().y}))")
+                        require(len(cards) == 3 and max(x['x'] for x in cards) - min(x['x'] for x in cards) < 2
+                                and cards[0]['y'] < cards[1]['y'] < cards[2]['y'],
+                                path + ": mobile attribution cards must stack")
                 page.screenshot(path=str(report / ("pdsp-%s-%s.png" % (locale,mode))),
                                 full_page=True)
                 page.close()
+        manifest = json.loads((ROOT / MANIFEST).read_text(encoding="utf-8"))
+        for item in manifest['existing_pages']:
+            path = item['path']
+            for mode, width, height in (("desktop", 1440, 900), ("mobile", 390, 844)):
+                page = browser.new_page(viewport={"width":width,"height":height})
+                page.goto((ROOT/path).resolve().as_uri(), wait_until="domcontentloaded", timeout=30000)
+                block = page.locator('#pdsp-accountability-20261124')
+                require(block.count() == 1 and block.is_visible(), path + ": added section not visible")
+                require(block.locator('[data-evidence-state="ATTRIBUTED_SUSPICION"]').count() == 1,
+                        path + ": allegation qualification missing in browser")
+                if (ROOT / RELEASE_MANIFEST).exists():
+                    require(block.get_attribute('data-release') == RELEASE_CONTROL, path + ": release section")
+                block.screenshot(path=str(report / ('pdsp-%s-%s-%s.png' % (item['language'],item['topic'],mode))))
+                page.close()
         browser.close()
-    print("PASS_RENDERED_EN_ES_DESKTOP_MOBILE")
+    print("PASS_RENDERED_TWELVE_ROUTES_EN_ES_DESKTOP_MOBILE")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--host", choices=["github","gitlab"], required=True)
     parser.add_argument("--render", action="store_true")
+    parser.add_argument("--local", action="store_true", help="Local GitHub source review; never a native CI attestation")
+    parser.add_argument("--browser-executable", help="Optional installed Chromium for local review only")
     args = parser.parse_args()
-    check(args.host)
+    require(not args.browser_executable or args.local, "native CI uses its pinned browser")
+    check(args.host, args.local)
     if args.render:
-        render()
+        render(args.browser_executable)

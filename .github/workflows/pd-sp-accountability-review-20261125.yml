@@ -1,4 +1,4 @@
-name: PD-SP source, privacy and visual review (draft only)
+name: PD-SP source, privacy and visual review
 on:
   pull_request:
     paths:
@@ -6,6 +6,15 @@ on:
       - 'es/cadena-responsabilidad-2018-2022/**'
       - 'en/insolvency-36-2012-registry-ob-rem-notice/**'
       - 'es/concurso-36-2012-aviso-registro-ob-rem/**'
+      - 'en/unitary-criminal-reverse-engineering/**'
+      - 'es/ingenieria-inversa-criminal-unitaria/**'
+      - 'en/insolvency-36-2012-insolvency-administrator/**'
+      - 'es/concurso-36-2012-administrador-concursal/**'
+      - 'en/acosta-matos-perimeter/**'
+      - 'es/acosta-matos-perimetro/**'
+      - 'en/control-24-insolvency-judge-complaint-36-2012/**'
+      - 'es/control-24-denuncia-juez-concurso-36-2012/**'
+      - 'publication-manifests/PD_SP_ACCOUNTABILITY_GITHUB_20261125_RELEASE.json'
       - 'ops/continuity/PD_SP_ACCOUNTABILITY_CHAIN_20261124_DRAFT.json'
       - 'ci/pd_sp_accountability_review_20261125.py'
       - 'tests/test_pd_sp_accountability_chain_20261124.py'
@@ -40,7 +49,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
-          name: pdsp-accountability-draft-render
+          name: pdsp-accountability-render
           path: recovery-audit/pdsp-*.png
           if-no-files-found: ignore
           retention-days: 14
