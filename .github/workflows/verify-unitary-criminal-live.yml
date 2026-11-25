@@ -16,6 +16,8 @@ on:
       - 'assets/prosecution-public-entry-20260821.js'
       - 'assets/unitary-criminal-reverse-engineering-20260820.js'
       - 'assets/site.js'
+      - 'assets/site-pre-matkator-8584-20260903.js'
+      - 'assets/site-pre-treasury-154-hq-20260828.js'
       - 'sitemap-criminal-engineering.xml'
       - 'sitemap-prosecution-evidence.xml'
       - 'robots.txt'
@@ -36,6 +38,8 @@ on:
       - 'assets/prosecution-public-entry-20260821.js'
       - 'assets/unitary-criminal-reverse-engineering-20260820.js'
       - 'assets/site.js'
+      - 'assets/site-pre-matkator-8584-20260903.js'
+      - 'assets/site-pre-treasury-154-hq-20260828.js'
       - 'sitemap-criminal-engineering.xml'
       - 'sitemap-prosecution-evidence.xml'
       - 'robots.txt'
@@ -80,7 +84,11 @@ jobs:
             'en_map': (f'{base}/en/unitary-criminal-evidence-map/', ['Unitary criminal evidence map', 'PP1041', 'Provincial Court Order 804/2018']),
             'es_home': (f'{base}/es/', ['assets/site.js']),
             'en_home': (f'{base}/en/', ['assets/site.js']),
-            'site_loader': (f'{base}/assets/site.js', ['PROSECUTION-PUBLIC-ENTRY-20260824', 'prosecution-public-entry-20260821.js']),
+            # The September compatibility loaders preserve the August module
+            # transitively. Verify every deployed edge, then its original markers.
+            'site_loader': (f'{base}/assets/site.js', ['site-pre-matkator-8584-20260903.js?v=20260903a', 'data-pre-matkator-8584-site-loader']),
+            'site_intermediate_loader': (f'{base}/assets/site-pre-matkator-8584-20260903.js', ['site-pre-treasury-154-hq-20260828.js?v=20260828a', 'data-pre-treasury-154-site-loader']),
+            'site_prosecution_loader': (f'{base}/assets/site-pre-treasury-154-hq-20260828.js', ['PROSECUTION-PUBLIC-ENTRY-20260824', 'prosecution-public-entry-20260821.js', 'data-prosecution-public-entry-loader']),
             'entry_module': (f'{base}/assets/prosecution-public-entry-20260821.js', ['PROSECUTION-PUBLIC-ENTRY-20260824', '360', 'SENT ≠ DELIVERED']),
             'state': (f'{base}/PROSECUTION_PUBLIC_STATE_21AUG2026.json', ['project-sun-rock-prosecution-public-state/v1', '"registrations": 360', 'AP 804/2018']),
             'sitemap': (f'{base}/sitemap-prosecution-evidence.xml', ['mapa-probatorio-penal-unitario', 'unitary-criminal-evidence-map']),
