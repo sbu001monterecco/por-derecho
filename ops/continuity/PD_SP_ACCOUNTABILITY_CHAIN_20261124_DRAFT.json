@@ -225,7 +225,7 @@
   },
   "canonical_case_record_crosswalk_20261125": {
     "source": "assets/data/concurso36-complete-record-v1.json at current GitHub protected main",
-    "status": "PARTIAL_CONFIRMED_CANONICAL_RECORD_IDS_FOR_DISPLAY_EVENT_ROWS",
+    "status": "SEVEN_HISTORIC_CASE_RECORDS_ONE_SPECIALIST_2026_EVENT_ONE_PROCEEDING_WITH_UNBOUND_NOTIFICATION",
     "visual_id_semantics": "PD-SP-EV identifiers are public display anchors, NOT newly allocated official registry/court event IDs.",
     "records": [
       {
@@ -272,20 +272,39 @@
       },
       {
         "visual_id": "PD-SP-EV-08",
-        "existing_id": null,
+        "existing_id": "PD-MF-HIST-EVT-2026-09-14",
         "date": "2026-09-14",
-        "status": "PENDING_SAME_ACT_PROCEEDING_CORRELATION",
-        "candidate": "Existing specialized fiscal dossier entry PD-MF-HIST-EVT-2026-09-14 must be checked against the exact signed Auto and criminal case master"
+        "status": "MATCHED_SPECIALIST_DATE_EVENT_ONLY_PROCEDURAL_ORIGIN_OPEN",
+        "candidate": "Existing specialized fiscal dossier entry PD-MF-HIST-EVT-2026-09-14 must be checked against the exact signed Auto and criminal case master",
+        "proceeding_master_id": "GC-CRI-008",
+        "source_id": "PD-MF-SRC-019",
+        "evidence_boundary": "Official order date and 29-Jul Fiscal-request reference anchored to controlled photographs; native court PDF, signed Fiscal report, exact Ref21/24 association and finality remain unverified"
       },
       {
         "visual_id": "PD-SP-EV-09",
         "existing_id": null,
         "date": "2026-07-21",
-        "status": "PENDING_EXACT_COMMUNICATION_BINDING",
-        "candidate": "DP 1956/2026 provisional-dismissal communication requires exact native receipt/decision-versus-notification record"
+        "status": "MATCHED_PROCEEDING_MASTER_NOTIFICATION_EVENT_UNBOUND",
+        "candidate": "DP 1956/2026 provisional-dismissal communication requires exact native receipt/decision-versus-notification record",
+        "proceeding_master_id": "GC-CRI-009",
+        "master_source": "archive/PROCEEDINGS_MASTER_REGISTER_DP1956_PATCH_18AUG2026.csv",
+        "evidence_boundary": "Provisional dismissal communicated 21 Jul 2026. No filed reform/subsidiary appeal established. Native signed Auto, exact decision date and notification-event record are open"
       }
     ],
-    "condition": "DO_NOT_ALLOCATE_DUPLICATE_EVENTS_OR_PUBLISH_AS_CANONICAL_COMPLETE"
+    "condition": "DO_NOT_ALLOCATE_DUPLICATE_EVENTS_OR_PUBLISH_AS_CANONICAL_COMPLETE",
+    "source_controls": [
+      {
+        "source": "assets/data/fiscalia-master-dossier-canonical-v1.json",
+        "event": "PD-MF-HIST-EVT-2026-09-14",
+        "proceeding": "GC-CRI-008",
+        "state": "DIRECT_PRIMARY_SOURCE_IMAGES_NATIVE_PDF_PENDING"
+      },
+      {
+        "source": "archive/PROCEEDINGS_MASTER_REGISTER_DP1956_PATCH_18AUG2026.csv",
+        "proceeding": "GC-CRI-009",
+        "state": "PROVISIONAL_DISMISSAL_REPORTED_NATIVE_SIGNED_ORDER_AND_NOTICE_PENDING"
+      }
+    ]
   },
   "owner_conditional_release_authorization_20261125": {
     "control": "PD-SP-CRIMINAL-ATTRIBUTION-RELEASE-20261125-01",

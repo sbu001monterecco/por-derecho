@@ -20,6 +20,7 @@ for route,lang in zip(m["new_pages"],("en","es")):
  assert text.count('class="pdsp-event"')==9 and 'data-filter="official"' in text
  assert all(e["id"] in text for e in m["events"])
  assert "DP 1901" in text and "DP 1956" in text
+ assert "GC-CRI-008" in text and "GC-CRI-009" in text
  assert 'id="pdsp-criminal-attribution"' in text and 'data-legal-status="ALLEGED_NOT_ADJUDICATED"' in text
  assert "C36-E008" in text and "C36-E055" in text
  assert "252" in text and "253" in text and "446" in text
