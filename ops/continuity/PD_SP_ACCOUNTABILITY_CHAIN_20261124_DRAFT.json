@@ -222,5 +222,69 @@
       "independent_legal_clearance": false,
       "full_original_source_verification": false
     }
+  },
+  "canonical_case_record_crosswalk_20261125": {
+    "source": "assets/data/concurso36-complete-record-v1.json at current GitHub protected main",
+    "status": "PARTIAL_CONFIRMED_CANONICAL_RECORD_IDS_FOR_DISPLAY_EVENT_ROWS",
+    "visual_id_semantics": "PD-SP-EV identifiers are public display anchors, NOT newly allocated official registry/court event IDs.",
+    "records": [
+      {
+        "visual_id": "PD-SP-EV-01",
+        "existing_id": "C36-E008",
+        "date": "2018-04-16",
+        "status": "MATCHED_CASE_LEDGER"
+      },
+      {
+        "visual_id": "PD-SP-EV-02",
+        "existing_id": "C36-E014",
+        "date": "2018-06-26",
+        "status": "MATCHED_CASE_LEDGER"
+      },
+      {
+        "visual_id": "PD-SP-EV-03",
+        "existing_id": "C36-E019",
+        "date": "2018-11-28",
+        "status": "MATCHED_CASE_LEDGER"
+      },
+      {
+        "visual_id": "PD-SP-EV-04",
+        "existing_id": "C36-E022",
+        "date": "2019-01-09",
+        "status": "MATCHED_CASE_LEDGER"
+      },
+      {
+        "visual_id": "PD-SP-EV-05",
+        "existing_id": "C36-E029",
+        "date": "2019-10-24",
+        "status": "MATCHED_CASE_LEDGER"
+      },
+      {
+        "visual_id": "PD-SP-EV-06",
+        "existing_id": "C36-E044",
+        "date": "2021-05-18",
+        "status": "MATCHED_CASE_LEDGER"
+      },
+      {
+        "visual_id": "PD-SP-EV-07",
+        "existing_id": "C36-E055",
+        "date": "2022-02-21",
+        "status": "MATCHED_CASE_LEDGER"
+      },
+      {
+        "visual_id": "PD-SP-EV-08",
+        "existing_id": null,
+        "date": "2026-09-14",
+        "status": "PENDING_SAME_ACT_PROCEEDING_CORRELATION",
+        "candidate": "Existing specialized fiscal dossier entry PD-MF-HIST-EVT-2026-09-14 must be checked against the exact signed Auto and criminal case master"
+      },
+      {
+        "visual_id": "PD-SP-EV-09",
+        "existing_id": null,
+        "date": "2026-07-21",
+        "status": "PENDING_EXACT_COMMUNICATION_BINDING",
+        "candidate": "DP 1956/2026 provisional-dismissal communication requires exact native receipt/decision-versus-notification record"
+      }
+    ],
+    "condition": "DO_NOT_ALLOCATE_DUPLICATE_EVENTS_OR_PUBLISH_AS_CANONICAL_COMPLETE"
   }
 }
