@@ -1,0 +1,515 @@
+{
+  "schema_version": "1.0.0",
+  "package_id": "PD-EVIS-CUATRECASAS-MESSAGE-CONTEXT-20261126",
+  "title": "Cuatrecasas LinkedIn captures and attributed WhatsApp working-text visibility",
+  "scope": "Public-safe metadata for the existing two unchanged LinkedIn screenshot objects and the authorised preserved WhatsApp working-transcription derivative. The complete preserved 154-word text block is not represented as a complete verified transcription of the full audio. Native audio, private WhatsApp screenshot, source complaint PDF and private locators are outside this publication scope; no merits conclusion is made.",
+  "governance": {
+    "control_id": "PD-EVIS-20260904-01",
+    "policy_path": ".github/governance/EVIDENCE_VISIBILITY_IMAGE_OCR_REDACTION_AND_CONTINUITY_STANDARD_04SEP2026.md",
+    "schema_path": ".github/evidence-intelligence/schemas/evidence-visibility.schema.json",
+    "visual_completeness_claim": "PARTIAL"
+  },
+  "role_continuity": {
+    "current_owner_role": "Integrator",
+    "next_owner_role": "Publication Coordinator",
+    "handoff_status": "ACTIVE",
+    "open_gap_count": 6
+  },
+  "records": [
+    {
+      "evidence_id": "PD-EVIS-CUATRECASAS-LINKEDIN-20260306-CAPTURE-01",
+      "title": "Existing LinkedIn capture: displayed account and message",
+      "document_type": "user-supplied LinkedIn screenshot JPEG",
+      "source_date": "2026-03-06",
+      "languages": [
+        "en",
+        "es"
+      ],
+      "source_type": "PD_PUBLIC_EVIDENCE",
+      "lifecycle_status": "LINKED",
+      "provenance": {
+        "custodian_class": "existing controlled public screenshot copy",
+        "source_description": "Visibility wrapper for unchanged canonical evidence CUATRECASAS-LINKEDIN-20260306-INIGO-DE-LUISA.CAPTURE-01; it does not allocate a new underlying image identity.",
+        "verified_or_registered_date": "2026-11-26",
+        "integrity_note": "Current repository bytes and SHA-256 match the existing source record. Historical image-publication authority and receipt are preserved in publication-manifests/cuatrecasas-linkedin-image-publication-20260901.json. This record makes no fresh live-readback claim.",
+        "parent_evidence_id": "CUATRECASAS-LINKEDIN-20260306-INIGO-DE-LUISA.CAPTURE-01",
+        "variant_of": null
+      },
+      "original_asset": {
+        "status": "PRESERVED_IN_REPOSITORY",
+        "filename": "inigo-de-luisa-linkedin-message-20260306-capture-01.jpg",
+        "repository_path": "assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-01.jpg",
+        "sha256": "ddf86dfe42a0cfa8d4481a6e504c4dc94a63e48c2ce7cb98ec764fa20cb25102",
+        "size_bytes": 151680,
+        "pages_or_duration": "single 921 × 2048 image",
+        "source_reference": "evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json",
+        "identity_status": "Unchanged best-available user-supplied copy; provider authentication remains open."
+      },
+      "searchable_text": {
+        "status": "PUBLISHED",
+        "method": "existing verbatim message transcription and clause audit; dated contextual supplement",
+        "assets": [
+          {
+            "path": "evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json",
+            "kind": "canonical-evidence-record",
+            "language": "en"
+          },
+          {
+            "path": "data/cuatrecasas-message-context-20261126.json",
+            "kind": "dated-source-context-supplement",
+            "language": "en-es"
+          }
+        ],
+        "limitations": [
+          "The full displayed message is transcribed in the existing record. The later interface description is kept separate from the message and does not infer a technical cause."
+        ]
+      },
+      "visual_evidence": {
+        "status": "PUBLISHED",
+        "images": [
+          {
+            "path": "assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-01.jpg",
+            "kind": "unaltered-existing-screenshot",
+            "language": "en-es",
+            "sha256": "ddf86dfe42a0cfa8d4481a6e504c4dc94a63e48c2ce7cb98ec764fa20cb25102",
+            "caption": "CUATRECASAS-LINKEDIN-20260306-INIGO-DE-LUISA.CAPTURE-01: displayed account identity and full message text",
+            "redacted": false
+          }
+        ],
+        "rendering_rule": "Reuse the exact controlled JPEG at its existing path and stable LinkedIn panel; preserve the existing total of exactly two screenshot images.",
+        "limitations": [
+          "This is the exact existing user-supplied screenshot copy, not a provider-certified LinkedIn export.",
+          "The displayed message uses TODAY; the controlled 6 March 2026 date comes from preservation chronology, not an absolute date printed beside the message.",
+          "LinkedIn member unable to receive messages appears in both captures; the captures do not establish that this status first arose between them.",
+          "Displayed account identity and message wording do not independently establish authorship, corporate authorisation or the merits of a disciplinary outcome."
+        ]
+      },
+      "redaction": {
+        "status": "NONE",
+        "reason": "The exact two selected screenshots were previously expressly authorised for public display; current work reuses them without adding private source locators or unrelated communications.",
+        "sensitivity_level": "PUBLIC",
+        "public_version_of": "CUATRECASAS-LINKEDIN-20260306-INIGO-DE-LUISA.CAPTURE-01",
+        "method": "No image modification; reuse of the previously authorised public copy.",
+        "review": {
+          "status": "APPROVED",
+          "reviewer_role": "Publication Coordinator",
+          "review_date": "2026-09-01"
+        }
+      },
+      "relations": {
+        "actors": [
+          "Gil Marer",
+          "Íñigo de Luisa Maíz"
+        ],
+        "entities": [
+          "AWESWELL LIMITED",
+          "Cuatrecasas"
+        ],
+        "proceedings": [
+          "ICAM 1487/26",
+          "CCACM 436/2026"
+        ],
+        "events": [
+          "2026-03-06 displayed LinkedIn communication",
+          "2026-11-26 contextual evidence supplement"
+        ],
+        "pages": [
+          "en/cuatrecasas-sun-park/index.html",
+          "es/cuatrecasas-sun-park/index.html"
+        ],
+        "parent_child": [
+          "CUATRECASAS-LINKEDIN-20260306-INIGO-DE-LUISA.CAPTURE-01",
+          "CUATRECASAS-WHATSAPP-20210317-INIGO-DE-LUISA"
+        ]
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "public_routes": [
+          "en/cuatrecasas-sun-park/index.html",
+          "es/cuatrecasas-sun-park/index.html"
+        ],
+        "evidence_page": "en/cuatrecasas-sun-park/#inigo-linkedin-20260306",
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-CUATRECASAS-LINKEDIN-CAPTURE-01",
+          "status": "OPEN",
+          "description": "Provider-certified authorship, absolute message timestamp and timezone are not established.",
+          "next_action": "Preserve the screenshot-only limits; obtain lawful independent source records if these matters become material. Do not infer closure from the existing images.",
+          "owner_role": "Verifier"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PD-EVIS-CUATRECASAS-LINKEDIN-20260306-CAPTURE-02",
+      "title": "Existing LinkedIn capture: changed interface presentation",
+      "document_type": "user-supplied LinkedIn screenshot JPEG",
+      "source_date": "2026-03-06",
+      "languages": [
+        "en",
+        "es"
+      ],
+      "source_type": "PD_PUBLIC_EVIDENCE",
+      "lifecycle_status": "LINKED",
+      "provenance": {
+        "custodian_class": "existing controlled public screenshot copy",
+        "source_description": "Visibility wrapper for unchanged canonical evidence CUATRECASAS-LINKEDIN-20260306-INIGO-DE-LUISA.CAPTURE-02; it does not allocate a new underlying image identity.",
+        "verified_or_registered_date": "2026-11-26",
+        "integrity_note": "Current repository bytes and SHA-256 match the existing source record. Historical image-publication authority and receipt are preserved in publication-manifests/cuatrecasas-linkedin-image-publication-20260901.json. This record makes no fresh live-readback claim.",
+        "parent_evidence_id": "CUATRECASAS-LINKEDIN-20260306-INIGO-DE-LUISA.CAPTURE-02",
+        "variant_of": null
+      },
+      "original_asset": {
+        "status": "PRESERVED_IN_REPOSITORY",
+        "filename": "inigo-de-luisa-linkedin-message-20260306-capture-02.jpg",
+        "repository_path": "assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-02.jpg",
+        "sha256": "baefb00dc12914aef4c32f0b69bd63842b15f4d83860a254294900a3822d2aab",
+        "size_bytes": 138006,
+        "pages_or_duration": "single 921 × 2048 image",
+        "source_reference": "evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json",
+        "identity_status": "Unchanged best-available user-supplied copy; provider authentication remains open."
+      },
+      "searchable_text": {
+        "status": "PUBLISHED",
+        "method": "existing verbatim message transcription and clause audit; dated contextual supplement",
+        "assets": [
+          {
+            "path": "evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json",
+            "kind": "canonical-evidence-record",
+            "language": "en"
+          },
+          {
+            "path": "data/cuatrecasas-message-context-20261126.json",
+            "kind": "dated-source-context-supplement",
+            "language": "en-es"
+          }
+        ],
+        "limitations": [
+          "The full displayed message is transcribed in the existing record. The later interface description is kept separate from the message and does not infer a technical cause."
+        ]
+      },
+      "visual_evidence": {
+        "status": "PUBLISHED",
+        "images": [
+          {
+            "path": "assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-02.jpg",
+            "kind": "unaltered-existing-screenshot",
+            "language": "en-es",
+            "sha256": "baefb00dc12914aef4c32f0b69bd63842b15f4d83860a254294900a3822d2aab",
+            "caption": "CUATRECASAS-LINKEDIN-20260306-INIGO-DE-LUISA.CAPTURE-02: preceding thread context and later LinkedIn interface state",
+            "redacted": false
+          }
+        ],
+        "rendering_rule": "Reuse the exact controlled JPEG at its existing path and stable LinkedIn panel; preserve the existing total of exactly two screenshot images.",
+        "limitations": [
+          "This is the exact existing user-supplied screenshot copy, not a provider-certified LinkedIn export.",
+          "The displayed message uses TODAY; the controlled 6 March 2026 date comes from preservation chronology, not an absolute date printed beside the message.",
+          "LinkedIn member unable to receive messages appears in both captures; the captures do not establish that this status first arose between them.",
+          "The later interface state does not prove deletion, blocking, deactivation, moderation or another technical cause."
+        ]
+      },
+      "redaction": {
+        "status": "NONE",
+        "reason": "The exact two selected screenshots were previously expressly authorised for public display; current work reuses them without adding private source locators or unrelated communications.",
+        "sensitivity_level": "PUBLIC",
+        "public_version_of": "CUATRECASAS-LINKEDIN-20260306-INIGO-DE-LUISA.CAPTURE-02",
+        "method": "No image modification; reuse of the previously authorised public copy.",
+        "review": {
+          "status": "APPROVED",
+          "reviewer_role": "Publication Coordinator",
+          "review_date": "2026-09-01"
+        }
+      },
+      "relations": {
+        "actors": [
+          "Gil Marer",
+          "Íñigo de Luisa Maíz"
+        ],
+        "entities": [
+          "AWESWELL LIMITED",
+          "Cuatrecasas"
+        ],
+        "proceedings": [
+          "ICAM 1487/26",
+          "CCACM 436/2026"
+        ],
+        "events": [
+          "2026-03-06 displayed LinkedIn communication",
+          "2026-11-26 contextual evidence supplement"
+        ],
+        "pages": [
+          "en/cuatrecasas-sun-park/index.html",
+          "es/cuatrecasas-sun-park/index.html"
+        ],
+        "parent_child": [
+          "CUATRECASAS-LINKEDIN-20260306-INIGO-DE-LUISA.CAPTURE-02",
+          "CUATRECASAS-WHATSAPP-20210317-INIGO-DE-LUISA"
+        ]
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "public_routes": [
+          "en/cuatrecasas-sun-park/index.html",
+          "es/cuatrecasas-sun-park/index.html"
+        ],
+        "evidence_page": "en/cuatrecasas-sun-park/#inigo-linkedin-20260306",
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-CUATRECASAS-LINKEDIN-CAPTURE-02",
+          "status": "OPEN",
+          "description": "The cause of the later interface presentation and any actual third-party dissemination are not established.",
+          "next_action": "Preserve the screenshot-only limits; obtain lawful independent source records if these matters become material. Do not infer closure from the existing images.",
+          "owner_role": "Verifier"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PD-EVIS-CUATRECASAS-WHATSAPP-20210317-AUDIO",
+      "title": "Privately preserved native WhatsApp audio attributed to Íñigo de Luisa Maíz",
+      "document_type": "native Ogg/Opus audio; public metadata only",
+      "source_date": "2021-03-17",
+      "languages": [
+        "en"
+      ],
+      "source_type": "PD_NATIVE_PRIVATE",
+      "lifecycle_status": "SOURCE_PRESERVED",
+      "provenance": {
+        "custodian_class": "private native audio and connected preservation occurrences",
+        "source_description": "Voice message attributed through the preserved WhatsApp context to 17 March 2021. The conversation shows 16:16 and a 1:26 duration; timezone and exact screenshot-capture date are unestablished.",
+        "verified_or_registered_date": "2026-11-26",
+        "integrity_note": "The 204,545-byte native file and the 6 March and 20 June 2026 preservation occurrences are registered as byte-identical. Copy continuity does not authenticate the speaker, event date, truth of statements or transcript fidelity. Original filename and private locators are withheld.",
+        "parent_evidence_id": "CUATRECASAS-WHATSAPP-20210317-INIGO-DE-LUISA",
+        "variant_of": null
+      },
+      "original_asset": {
+        "status": "PRESERVED_EXTERNAL_CONNECTED_SOURCE",
+        "filename": null,
+        "repository_path": null,
+        "sha256": "ba5318512dcc1f8ccc6b9850babbd4cda8bf80eb344ddd82170fc5d815238978",
+        "size_bytes": 204545,
+        "pages_or_duration": "86.102167 seconds; Ogg/Opus, mono, 48 kHz",
+        "source_reference": "data/cuatrecasas-message-context-20261126.json",
+        "identity_status": "Technical file identity preserved; speaker attribution and timestamp remain contextual rather than independently authenticated."
+      },
+      "searchable_text": {
+        "status": "PARTIAL",
+        "method": "previously preserved page-6 working transcription and labelled reading translation; no fresh audio transcription",
+        "assets": [
+          {
+            "path": "data/cuatrecasas-message-context-20261126.json",
+            "kind": "attributed-working-transcription-and-reading-translation",
+            "language": "en-es",
+            "caption": "Prepared contextual derivative for /en/cuatrecasas-sun-park/#inigo-whatsapp-20210317 and /es/cuatrecasas-sun-park/#inigo-whatsapp-20210317"
+          }
+        ],
+        "limitations": [
+          "The complete preserved 154-word working-transcription block is reproduced; it is PARTIAL relative to the unverified full 86.102167-second audio.",
+          "The source ellipsis after against yourself is retained; whether it denotes pause, omitted words or uncertainty is not established.",
+          "No fresh word-for-word comparison with the audio, expert certification or speaker adoption is claimed.",
+          "The Spanish text is a labelled reading translation of the preserved English working text, not a sworn translation or a new audio transcription."
+        ]
+      },
+      "visual_evidence": {
+        "status": "NOT_APPLICABLE",
+        "images": [],
+        "rendering_rule": "Audio has no source-page image. No audio waveform, synthetic visual, raw audio or private WhatsApp screenshot is released in this scoped text-and-LinkedIn-screenshot update.",
+        "limitations": [
+          "The private WhatsApp screenshot supplies contextual date/time information but is outside this public-image release."
+        ]
+      },
+      "redaction": {
+        "status": "NONE",
+        "reason": "The native audio remains private and unmodified. Only non-sensitive integrity metadata and the specifically authorised working-text derivative are in public scope.",
+        "sensitivity_level": "RESTRICTED",
+        "public_version_of": null,
+        "method": "No native publication; private filenames and provider locators omitted from public metadata.",
+        "review": {
+          "status": "NOT_REQUIRED",
+          "reviewer_role": "Publication Coordinator",
+          "review_date": "2026-11-26"
+        }
+      },
+      "relations": {
+        "actors": [
+          "Gil Marer",
+          "Íñigo de Luisa Maíz"
+        ],
+        "entities": [
+          "AWESWELL LIMITED",
+          "Cuatrecasas"
+        ],
+        "proceedings": [
+          "ICAM 1487/26",
+          "CCACM 436/2026"
+        ],
+        "events": [
+          "2021-03-17 attributed WhatsApp voice message",
+          "2026-03-06 institutional transmission",
+          "2026-06-20 preservation occurrence",
+          "2026-11-26 exact-copy comparison"
+        ],
+        "pages": [
+          "en/cuatrecasas-sun-park/index.html",
+          "es/cuatrecasas-sun-park/index.html"
+        ],
+        "parent_child": [
+          "CUATRECASAS-WHATSAPP-20210317-INIGO-DE-LUISA",
+          "PD-EVIS-CUATRECASAS-WHATSAPP-20210317-WORKING-TEXT"
+        ]
+      },
+      "publication": {
+        "status": "REGISTERED",
+        "public_routes": [
+          "en/cuatrecasas-sun-park/index.html",
+          "es/cuatrecasas-sun-park/index.html"
+        ],
+        "evidence_page": "en/cuatrecasas-sun-park/#inigo-whatsapp-20210317",
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-CUATRECASAS-AUDIO-ATTRIBUTION",
+          "status": "OPEN",
+          "description": "Independent speaker authentication, original-event timing and complete acquisition history are not established by the hash match.",
+          "next_action": "Retain contextual attribution and private native custody; record any later independent authentication separately from byte identity.",
+          "owner_role": "Verifier"
+        }
+      ]
+    },
+    {
+      "evidence_id": "PD-EVIS-CUATRECASAS-WHATSAPP-20210317-WORKING-TEXT",
+      "title": "Preserved page-6 working transcription with labelled Spanish reading translation",
+      "document_type": "authorised text derivative from privately preserved complaint PDF",
+      "source_date": "2026-06-28",
+      "languages": [
+        "en",
+        "es"
+      ],
+      "source_type": "PD_CURATED_ANALYSIS",
+      "lifecycle_status": "TEXT_EXTRACTED",
+      "provenance": {
+        "custodian_class": "private prepared complaint PDF and authorised public text derivative",
+        "source_description": "Working transcription on page 6 of a 12-page autonomous ICAM complaint prepared for electronic submission on 28 June 2026. Page 5, paragraph 34 labels it transcripción de trabajo no pericial. Preparation wording is not proof that this exact version was filed.",
+        "verified_or_registered_date": "2026-11-26",
+        "integrity_note": "The 154-word English block is reproduced in full from the preserved page-6 text, retaining its existing ellipsis. UTF-8 text SHA-256: 14730e8c6dac6246d67f59c64edde63d37fdd7c8ac05b3c39e5bd6186cceac82. This verifies the selected text derivative, not full audio coverage, certified accuracy, speaker adoption or truth.",
+        "parent_evidence_id": "CUATRECASAS-WHATSAPP-20210317-INIGO-DE-LUISA",
+        "variant_of": null
+      },
+      "original_asset": {
+        "status": "PRESERVED_EXTERNAL_CONNECTED_SOURCE",
+        "filename": null,
+        "repository_path": null,
+        "sha256": "54b70ddd4fe8bdd96a330a0e328b343aaa3f12b1bff6e960ea2c53e8ff45d8bd",
+        "size_bytes": 396077,
+        "pages_or_duration": "12 pages; selected working-transcription block on page 6; qualification on page 5, paragraph 34",
+        "source_reference": "data/cuatrecasas-message-context-20261126.json",
+        "identity_status": "Exact recovered prepared-document fingerprint; public derivative does not establish filing or service of that version."
+      },
+      "searchable_text": {
+        "status": "PARTIAL",
+        "method": "exact preserved working-text reproduction with layout whitespace normalised; complete labelled Spanish reading translation",
+        "assets": [
+          {
+            "path": "data/cuatrecasas-message-context-20261126.json",
+            "kind": "attributed-working-transcription-and-reading-translation",
+            "language": "en-es",
+            "caption": "Prepared contextual derivative for /en/cuatrecasas-sun-park/#inigo-whatsapp-20210317 and /es/cuatrecasas-sun-park/#inigo-whatsapp-20210317"
+          }
+        ],
+        "limitations": [
+          "The complete preserved 154-word working-transcription block is reproduced; it is PARTIAL relative to the unverified full 86.102167-second audio.",
+          "The source ellipsis after against yourself is retained; whether it denotes pause, omitted words or uncertainty is not established.",
+          "No fresh word-for-word comparison with the audio, expert certification or speaker adoption is claimed.",
+          "The Spanish text is a labelled reading translation of the preserved English working text, not a sworn translation or a new audio transcription."
+        ]
+      },
+      "visual_evidence": {
+        "status": "BLOCKED_WITH_REASON",
+        "images": [],
+        "rendering_rule": "The source complaint PDF and its page images remain private under the current limited publication scope. Publish only the expressly authorised text block and reading translation; do not substitute a synthetic page image.",
+        "limitations": [
+          "The public reader can inspect the two existing LinkedIn images but not the private complaint page carrying the working transcript. This is a declared source-visual restriction, not a claim that the source PDF is missing."
+        ]
+      },
+      "redaction": {
+        "status": "NONE",
+        "reason": "Only the authorised selected transcript block and reading translation are public; the private parent complaint and unrelated contents are excluded. No words are silently removed from the selected preserved block.",
+        "sensitivity_level": "PUBLIC",
+        "public_version_of": "CUATRECASAS-WHATSAPP-20210317-INIGO-DE-LUISA",
+        "method": "Scope-limited text selection; private source filename, provider identifiers and unrelated complaint content omitted.",
+        "review": {
+          "status": "APPROVED",
+          "reviewer_role": "Publication Coordinator",
+          "review_date": "2026-11-26"
+        }
+      },
+      "relations": {
+        "actors": [
+          "Gil Marer",
+          "Íñigo de Luisa Maíz"
+        ],
+        "entities": [
+          "AWESWELL LIMITED",
+          "Cuatrecasas"
+        ],
+        "proceedings": [
+          "ICAM 1487/26",
+          "CCACM 436/2026"
+        ],
+        "events": [
+          "2021-03-17 attributed underlying voice event",
+          "2026-06-28 prepared complaint carrying working transcription",
+          "2026-11-26 authorised contextual text derivative"
+        ],
+        "pages": [
+          "en/cuatrecasas-sun-park/index.html",
+          "es/cuatrecasas-sun-park/index.html"
+        ],
+        "parent_child": [
+          "CUATRECASAS-WHATSAPP-20210317-INIGO-DE-LUISA",
+          "PD-EVIS-CUATRECASAS-WHATSAPP-20210317-AUDIO"
+        ]
+      },
+      "publication": {
+        "status": "REGISTERED",
+        "public_routes": [
+          "en/cuatrecasas-sun-park/index.html",
+          "es/cuatrecasas-sun-park/index.html"
+        ],
+        "evidence_page": "en/cuatrecasas-sun-park/#inigo-whatsapp-20210317",
+        "live_verified": false,
+        "deployed_commit": null
+      },
+      "gaps": [
+        {
+          "gap_id": "EVG-CUATRECASAS-AUDIO-FULL-TEXT",
+          "status": "OPEN",
+          "description": "A complete word-for-word transcription of the entire 86.102167-second audio has not been verified; the preserved 154-word text contains an unexplained ellipsis.",
+          "next_action": "Review the full native audio independently, mark uncertainty and compare every word; retain this preserved version and any later corrections without silent replacement.",
+          "owner_role": "Verifier"
+        },
+        {
+          "gap_id": "EVG-CUATRECASAS-WORKING-TEXT-VISUAL",
+          "status": "BLOCKED",
+          "description": "The private source complaint PDF and page-6 facsimile are outside the authorised public scope.",
+          "next_action": "Keep the source document in private custody and the public visual limitation explicit; reconsider a page-image derivative only if separately authorised and reviewed.",
+          "owner_role": "Publication Coordinator",
+          "blocking_reason": "Current authority covers the preserved working-text derivative, its reading translation and the existing two LinkedIn screenshots; not the private complaint PDF or page images. This does not block the authorised text publication."
+        },
+        {
+          "gap_id": "EVG-CUATRECASAS-CONTEXT-LIVE-READBACK",
+          "status": "OPEN",
+          "description": "The new bilingual context section and metadata derivative are prepared but not yet verified live at an exact deployed commit.",
+          "next_action": "Complete the existing publication controller, exact-commit deployment and scoped bilingual live readback; update publication evidence without changing unresolved audio-fidelity status.",
+          "owner_role": "Publication Coordinator"
+        }
+      ]
+    }
+  ]
+}
