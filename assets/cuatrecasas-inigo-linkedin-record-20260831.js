@@ -16,13 +16,13 @@
   const copy = isEs ? {
     eyebrow: 'AUDITORÍA UNITARIA · MENSAJE, CORREOS Y EXPEDIENTES OFICIALES',
     title: 'Un archivo procesal no responde al expediente profesional',
-    intro: 'Dos capturas preservadas muestran, a las 12:13 PM del 6 de marzo de 2026, una cuenta de LinkedIn con el nombre visible “Inigo de Luisa Maiz”, el mensaje y un estado posterior de la interfaz. Se publican las copias exactas suministradas y, debajo, el texto literal con sus mayúsculas, gramática y ortografía:',
+    intro: "Dos capturas preservadas muestran un mensaje de las 12:13 PM bajo el nombre visible “Inigo de Luisa Maiz” y un estado posterior de la interfaz. La fecha de calendario del 6 de marzo de 2026 procede de la cronología y del registro de preservación; las imágenes muestran “TODAY”. Se publican las copias exactas suministradas y, debajo, el texto literal con sus mayúsculas, gramática y ortografía:",
     capturesTitle: 'Las capturas, no sólo la transcripción',
     capturesIntro: 'Copias exactas de los dos archivos JPEG suministrados, publicadas sin alteración de imagen por autorización expresa de 1 de septiembre de 2026. Son las mejores copias de captura disponibles aportadas por el usuario, no exportaciones certificadas por LinkedIn. Pulse cada imagen para abrirla a resolución completa.',
     capture1Title: 'Captura 1 · identidad visible y mensaje completo.',
-    capture1: 'Muestra el nombre de cuenta “Inigo de Luisa Maiz”, el mensaje de las 12:13 PM y el estado “LinkedIn member unable to receive messages”. No acredita por sí sola la fecha de calendario, la autoría certificada por el proveedor, la decisión del Colegio de Madrid ni la causa del estado posterior.',
+    capture1: "Muestra el nombre de cuenta “Inigo de Luisa Maiz”, el mensaje de las 12:13 PM y la hora del dispositivo 12:17. Ya muestra el estado “LinkedIn member unable to receive messages”. No acredita por sí sola la fecha de calendario, la autoría certificada por el proveedor, la decisión del Colegio de Madrid ni la causa del estado posterior.",
     capture2Title: 'Captura 2 · estado posterior de la interfaz.',
-    capture2: 'Muestra “LinkedIn Member”, el aviso de contenido no deseado o dañino y el estado de imposibilidad de recibir mensajes. No demuestra por sí sola borrado, bloqueo, desactivación, moderación ni otro motivo técnico.',
+    capture2: "Muestra la hora del dispositivo 12:18, “LinkedIn Member”, el aviso de contenido no deseado o dañino y el estado de imposibilidad de recibir mensajes. Este último aviso aparece en ambas capturas; no acredita un bloqueo nuevo entre ellas. No demuestra por sí sola borrado, bloqueo, desactivación, moderación ni otro motivo técnico.",
     openCapture: 'Abrir captura a resolución completa ↗',
     correctionTitle: 'Corrección necesaria a “adequately dismissed”',
     correction: 'ICAM 434/26 archivó la queja el 6 de marzo por prescripción disciplinaria. Sus consideraciones se declararon de alcance meramente dialéctico y quedaron a salvo acciones de otro orden. Ese mismo día se interpuso alzada; CCACM abrió 193/2026 y el 27 de agosto informó de que seguía en estudio. No se ha localizado resolución final sobre el fondo.',
@@ -93,13 +93,13 @@
   } : {
     eyebrow: 'UNITARY AUDIT · MESSAGE, EMAILS AND OFFICIAL RECORDS',
     title: 'A procedural archive does not answer the professional record',
-    intro: 'Two preserved captures show, at 12:13 PM on 6 March 2026, a LinkedIn account displaying the name “Inigo de Luisa Maiz”, the message and a later interface state. The exact supplied copies are published below, followed by the verbatim text, including its capitalization, grammar and spelling:',
+    intro: "Two preserved captures show a 12:13 PM message under the displayed name “Inigo de Luisa Maiz” and a later interface state. The calendar date of 6 March 2026 comes from the chronology and preservation record; the images display “TODAY”. The exact supplied copies are published below, followed by the verbatim text, including its capitalization, grammar and spelling:",
     capturesTitle: 'The captures, not only the transcript',
     capturesIntro: 'Exact copies of the two supplied JPEG files, published without image alteration under express authorization dated 1 September 2026. They are the best available user-supplied screenshot copies, not provider-certified LinkedIn exports. Select either image to open it at full resolution.',
     capture1Title: 'Capture 1 · displayed identity and complete message.',
-    capture1: 'Shows the account name “Inigo de Luisa Maiz”, the 12:13 PM message and the “LinkedIn member unable to receive messages” state. It does not by itself establish the calendar date, provider-certified authorship, the Madrid Bar outcome or the cause of the later state.',
+    capture1: "Shows the account name “Inigo de Luisa Maiz”, the 12:13 PM message and the device time 12:17. It already displays “LinkedIn member unable to receive messages”. It does not by itself establish the calendar date, provider-certified authorship, the Madrid Bar outcome or the cause of the later state.",
     capture2Title: 'Capture 2 · later interface state.',
-    capture2: 'Shows “LinkedIn Member”, the unwanted-or-harmful-content warning and the unable-to-receive-messages state. It does not by itself prove deletion, blocking, deactivation, moderation or another technical cause.',
+    capture2: "Shows device time 12:18, “LinkedIn Member”, the unwanted-or-harmful-content warning and the unable-to-receive-messages state. That last notice appears in both screenshots; it does not establish a new block between them. It does not by itself prove deletion, blocking, deactivation, moderation or another technical cause.",
     openCapture: 'Open full-resolution capture ↗',
     correctionTitle: 'The necessary correction to “adequately dismissed”',
     correction: 'ICAM 434/26 archived the complaint on 6 March because the disciplinary limitation period had elapsed. Its factual remarks were expressly only dialectical, and other avenues were reserved. An appeal was filed that day; CCACM opened 193/2026 and said on 27 August that it remained under study. No final merits resolution has been located.',
@@ -185,12 +185,14 @@
   section.setAttribute('data-publication-marker', 'cuatrecasas-linkedin-interlink-20260831');
   section.setAttribute('data-image-publication-marker', 'cuatrecasas-linkedin-images-20260901');
   section.setAttribute('data-governance-revision', '20260901b');
+  section.setAttribute('data-context-revision', '20261126');
   section.innerHTML = `
     <div class="shell record">
       <div class="cuatre-linkedin-panel">
         <p class="eyeline">${escapeHTML(copy.eyebrow)}</p>
         <h2 id="inigo-linkedin-20260306-title">${escapeHTML(copy.title)}</h2>
         <p class="cuatre-linkedin-intro">${escapeHTML(copy.intro)}</p>
+        <p class="cuatre-linkedin-context-link"><a href="#inigo-whatsapp-20210317">${escapeHTML(isEs ? "Leer la transcripción de trabajo de WhatsApp de 17 de marzo de 2021 y su contexto" : "Read the 17 March 2021 WhatsApp working transcription and context")}</a> · <a href="#ccacm-436-20261124-viewer">${escapeHTML(isEs ? "Providencia CCACM de 24 de noviembre de 2026" : "24 November 2026 CCACM order")}</a></p>
         <h3 class="cuatre-linkedin-section-title">${escapeHTML(copy.capturesTitle)}</h3>
         <p>${escapeHTML(copy.capturesIntro)}</p>
         <div class="cuatre-linkedin-captures" data-public-capture-count="2">
@@ -276,5 +278,7 @@
 
   if (window.location.hash === '#inigo-linkedin-20260306') {
     window.requestAnimationFrame(() => section.scrollIntoView({ block: 'start' }));
+  } else if (window.location.hash === '#inigo-whatsapp-20210317') {
+    window.requestAnimationFrame(() => document.querySelector('#inigo-whatsapp-20210317')?.scrollIntoView({ block: 'start' }));
   }
 })();

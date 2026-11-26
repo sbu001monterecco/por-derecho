@@ -1,0 +1,79 @@
+{
+  "schema": "por-derecho.publication-state.v1",
+  "schema_version": "1.0.0",
+  "publication_id": "PD-CUATRECASAS-MESSAGE-CONTEXT-20261126-001",
+  "control_id": "PD-CUATRECASAS-MESSAGE-CONTEXT-20261126-001",
+  "control_date": "2026-11-26",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "source_baseline": "df47624cc0052b59631e8f89cde573e23cff4ef4",
+  "branch": "integration/cuatrecasas-message-context-20261126",
+  "purpose": "Add the preserved WhatsApp working transcription and labelled Spanish reading translation to the existing bilingual dossier; clarify both existing LinkedIn screenshot captions and date provenance without changing image bytes or historical adverse evidence.",
+  "expected_routes": {
+    "en": [
+      "en/cuatrecasas-sun-park/index.html"
+    ],
+    "es": [
+      "es/cuatrecasas-sun-park/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "en/cuatrecasas-sun-park/index.html",
+    "es/cuatrecasas-sun-park/index.html",
+    "assets/cuatrecasas-inigo-linkedin-record-20260831.js",
+    "assets/cuatrecasas-message-context-20261126.css",
+    "data/cuatrecasas-message-context-20261126.json",
+    "data/evidence-visibility/cuatrecasas-message-context-20261126.json"
+  ],
+  "repository_assets": [
+    "en/cuatrecasas-sun-park/index.html",
+    "es/cuatrecasas-sun-park/index.html",
+    "assets/cuatrecasas-inigo-linkedin-record-20260831.js",
+    "assets/cuatrecasas-message-context-20261126.css",
+    "data/cuatrecasas-message-context-20261126.json",
+    "data/evidence-visibility/cuatrecasas-message-context-20261126.json",
+    "assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-01.jpg",
+    "assets/evidence/cuatrecasas/inigo-de-luisa-linkedin-message-20260306-capture-02.jpg"
+  ],
+  "public_markers": [
+    "cuatrecasas-message-context-20261126",
+    "inigo-whatsapp-20210317",
+    "inigo-linkedin-20260306",
+    "Complete text of the preserved working transcription",
+    "Texto íntegro de la transcripción de trabajo preservada"
+  ],
+  "authority": "Current user instruction of 26 November 2026 to ensure both LinkedIn screenshots and the WhatsApp transcript are on the webpage fully contextualized.",
+  "validation": {
+    "status": "LOCAL_VALIDATION_PASSED_CI_PENDING",
+    "evidence": [
+      "Repository preservation, audience experience, private-source governance and AWESWELL identity checks passed.",
+      "Existing Cuatrecasas LinkedIn interlink validator passed with the two original image hashes and historical control markers unchanged.",
+      "Evidence-visibility package passed the repository validator and Draft 2020-12 JSON Schema; the declared PARTIAL audio-text status remains explicit.",
+      "English working transcription matches the preserved source after layout whitespace normalisation: 154 words on each language page; Spanish reading translation matches the controlled derivative.",
+      "JavaScript syntax and Git whitespace checks passed.",
+      "Managed-preview browser inspection confirmed one LinkedIn panel and one WhatsApp section per language, both uncut 921 x 2048 images loaded, readable transcript blocks, working section navigation and no horizontal page overflow.",
+      "Independent evidence review found no remaining source-fidelity, translation, attribution or privacy blocker."
+    ],
+    "pending": [
+      "Exact candidate-head CI acceptance and publication-integrity checks.",
+      "Publication-controller permit, protected merge, exact-commit Pages deployment and scoped live readback."
+    ]
+  },
+  "publication_boundaries": [
+    "Full text of preserved working transcription, not an independently verified complete audio transcript.",
+    "Source ellipsis and ambiguous wording retained; Spanish translation labelled as reading aid.",
+    "Raw audio, WhatsApp screenshot, private complaint PDF and private provider locators remain outside this release.",
+    "Both LinkedIn image bytes, identities and historic adverse ICAM assessment remain unchanged.",
+    "No corporate instruction, disclosure, coordination, actual dissemination, criminality or disciplinary misconduct is inferred from chronology or screenshots alone."
+  ],
+  "predecessor_release": {
+    "pr": 2162,
+    "merge_sha": "df47624cc0052b59631e8f89cde573e23cff4ef4",
+    "controller_verification_date": "2026-11-26",
+    "status": "VERIFIED_FOR_SCOPE"
+  },
+  "host_scope": {
+    "github": "This authorised additive release.",
+    "gitlab": "MR1005 is a separate source-only candidate; this manifest does not certify GitLab deployment or host parity."
+  }
+}

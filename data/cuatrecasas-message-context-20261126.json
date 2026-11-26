@@ -1,0 +1,115 @@
+{
+  "schema": "por-derecho.authorised-message-context.v1",
+  "control_id": "PD-CUATRECASAS-MESSAGE-CONTEXT-20261126-001",
+  "control_date": "2026-11-26",
+  "record_id": "CUATRECASAS-WHATSAPP-20210317-INIGO-DE-LUISA",
+  "classification": "ATTRIBUTED_WORKING_TRANSCRIPTION_WITH_SOURCE_LIMITS",
+  "canonical_person": {
+    "caepr_id": "PD-SP-P-0049",
+    "source_display_name": "Inigo de Luisa Maiz",
+    "boundary": "Identity linkage does not certify the voice, account authorship, professional capacity or corporate authority."
+  },
+  "source_event": {
+    "date": "2021-03-17",
+    "voice_time_displayed": "16:16",
+    "duration_displayed": "1:26",
+    "followup_time_displayed": "16:17",
+    "followup_text": "May be good you call Sony about it. Take care!",
+    "date_basis": "Preserved WhatsApp conversation context; timezone and exact capture date are not established. Screenshot includes exchanges dated 24 December 2021."
+  },
+  "native_audio": {
+    "custody_status": "PRESERVED_EXTERNAL_CONNECTED_SOURCE",
+    "mime_type": "audio/ogg",
+    "codec": "Opus",
+    "bytes": 204545,
+    "duration_seconds": 86.102167,
+    "sha256": "ba5318512dcc1f8ccc6b9850babbd4cda8bf80eb344ddd82170fc5d815238978",
+    "public_binary": false,
+    "copy_comparison": {
+      "verified_date": "2026-11-26",
+      "source_occurrences": [
+        "2026-03-06 institutional notification",
+        "2026-06-20 preservation communication"
+      ],
+      "result": "BYTE_FOR_BYTE_IDENTICAL",
+      "boundary": "Copy continuity is not independent speaker authentication, proof of the event date or transcription fidelity."
+    }
+  },
+  "transcription": {
+    "version": "PRESERVED_WORKING_TEXT_P6_REPRODUCED_20261126",
+    "language": "en",
+    "text": "I’m just the messenger, I received a call from our friend Sony, it's about the blog you have created and your comments about several entrepreneurs in the Canary Islands, he’s a little bit upset, let's put it this way, and the entrepreneurs and his contacts are not happy about their names being involved on this mess, so he has asked that I pass the message so you can call him and let it find a solution or a way that these people are not involved in this mess. He said that related to this they are going to have legal advice to go against you and that maybe it’s worth that you discuss with him and if you can prevent any action against yourself… Just as I said, just passing the message, you know Sony and how he acts and, well, take your actions and be careful. That's it. Have a good day. Bye.",
+    "word_count": 154,
+    "sha256_utf8": "14730e8c6dac6246d67f59c64edde63d37fdd7c8ac05b3c39e5bd6186cceac82",
+    "source_document": {
+      "description": "Autonomous ICAM professional-conduct complaint prepared for electronic submission on 28 June 2026",
+      "page": 6,
+      "status_note_page": 5,
+      "status_note_paragraph": 34,
+      "status_note": "transcripción de trabajo no pericial",
+      "source_bytes": 396077,
+      "source_sha256": "54b70ddd4fe8bdd96a330a0e328b343aaa3f12b1bff6e960ea2c53e8ff45d8bd",
+      "public_binary": false,
+      "filing_status": "Preparation wording is not a finding that this version was filed."
+    },
+    "completeness": "Complete reproduced text of the preserved working transcription; not established as a complete verbatim transcription of all audio.",
+    "ellipsis": "The source contains an ellipsis after against yourself. It has not been established whether it marks a pause, omission or uncertainty.",
+    "fresh_audio_check": false,
+    "expert_certified": false,
+    "speaker_adoption": "NOT_ESTABLISHED"
+  },
+  "translation": {
+    "language": "es",
+    "status": "READING_TRANSLATION_OF_WORKING_TRANSCRIPTION",
+    "text": "Yo solo soy el mensajero, recibí una llamada de nuestro amigo Sony, es sobre el blog que has creado y tus comentarios sobre varios empresarios en las Islas Canarias; está un poco molesto, digámoslo así, y los empresarios y sus contactos no están contentos con que sus nombres se vean involucrados en este lío, así que me ha pedido que transmita el mensaje para que puedas llamarlo y que se encuentre una solución o una manera de que estas personas no se vean involucradas en este lío. Dijo que, en relación con esto, van a buscar asesoramiento jurídico para actuar contra ti y que quizá valga la pena que lo hables con él y veas si puedes evitar cualquier actuación contra ti… Como he dicho, solo estoy transmitiendo el mensaje, conoces a Sony y cómo actúa y, bueno, toma las medidas que consideres y ten cuidado. Eso es todo. Que tengas un buen día. Adiós.",
+    "sha256_utf8": "5ca4159464be8b2a855ee35cb2a651b7615e599040e02210042c071322ca9221",
+    "limitations": [
+      "Not a sworn translation or newly audio-verified transcription.",
+      "Original English retained; the source wording let it find a solution remains ambiguous."
+    ]
+  },
+  "context": {
+    "2021_03_08": "Six documents concerning the RICPE/CNMV alert were transmitted to the professional address under an express confidentiality heading. Sending does not establish reading, acceptance, onward disclosure or action.",
+    "2026_03_06": "The two existing LinkedIn captures were preserved in an institutional notification. The sender connects the displayed message to notice of a professional-conduct complaint.",
+    "2026_11_24": "CCACM 436/2026 appeal-opening order; a procedural fact, not a finding or reversal on the merits.",
+    "attributed_position": "Gil Marer alleges possible reporting-related pressure in 2021 and complaint-related pressure in 2026. The two events are separate.",
+    "lawful_alternative": "An informal personal intermediary may have relayed concerns or possible lawful legal action.",
+    "open_proof": [
+      "Who initiated each communication and in what capacity.",
+      "Information used, any onward disclosure and any recipients.",
+      "Corporate instruction, authorisation, adoption or ratification.",
+      "Actual dissemination and institutional handling.",
+      "Independent identification and capacity of Sony."
+    ]
+  },
+  "linkedin_supplement": {
+    "record": "evidence/cuatrecasas/2026-03-06-inigo-de-luisa-linkedin-message.json",
+    "capture_ids": [
+      "CUATRECASAS-LINKEDIN-20260306-INIGO-DE-LUISA.CAPTURE-01",
+      "CUATRECASAS-LINKEDIN-20260306-INIGO-DE-LUISA.CAPTURE-02"
+    ],
+    "device_times": [
+      "12:17",
+      "12:18"
+    ],
+    "date_display": "TODAY",
+    "date_basis": "Controlled chronology and 6 March 2026 preservation record, not an absolute date printed beside the message.",
+    "clarification": "LinkedIn member unable to receive messages appears in both captures. Neither the cause of the changed interface nor a new block between the two images is established.",
+    "images_unchanged": true,
+    "historical_adverse_context_preserved": true
+  },
+  "publication": {
+    "authority": "Current user instruction of 26 November 2026 to ensure both LinkedIn screenshots and the WhatsApp transcript are on the webpage fully contextualized.",
+    "narrow_supersession": "Authorises this exact preserved working-transcription derivative and reading translation. Older general transcript exclusions remain historical and otherwise operative; no raw audio, private complaint PDF, private source locator or unrelated correspondence is released.",
+    "status": "SOURCE_PREPARED",
+    "public_routes": [
+      "en/cuatrecasas-sun-park/#inigo-whatsapp-20210317",
+      "es/cuatrecasas-sun-park/#inigo-whatsapp-20210317"
+    ],
+    "linkedin_routes": [
+      "en/cuatrecasas-sun-park/#inigo-linkedin-20260306",
+      "es/cuatrecasas-sun-park/#inigo-linkedin-20260306"
+    ],
+    "direct_contact_authorised": false
+  }
+}
