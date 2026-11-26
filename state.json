@@ -1,13 +1,13 @@
 {
   "schema": "por-derecho.publication-runtime.v1",
-  "fence": 80,
-  "owner": "2162:9b20f2d7d828fd8ea54effa03bae48ce5b2606ec",
-  "phase": "VERIFIED_FOR_SCOPE",
-  "pr": 2162,
-  "base_sha": "8e2ba652b39777add0f97c6dfc34f56704e8cb59",
-  "candidate_sha": "9b20f2d7d828fd8ea54effa03bae48ce5b2606ec",
-  "run_id": 45833209385,
-  "claimed_at": "2026-11-25T16:51:18.664441Z",
+  "fence": 81,
+  "owner": "2163:9a706dfd216bdc258abe516fb8ffd6bece95f4ed",
+  "phase": "CLAIMED",
+  "pr": 2163,
+  "base_sha": "df47624cc0052b59631e8f89cde573e23cff4ef4",
+  "candidate_sha": "9a706dfd216bdc258abe516fb8ffd6bece95f4ed",
+  "run_id": 45836870638,
+  "claimed_at": "2026-11-26T14:14:09.938046Z",
   "expiry_policy": "Never silently expire into free; recover after inspecting actual merge/deployment.",
   "receipts": [
     {
@@ -4010,119 +4010,5 @@
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
-  "checkpoints": [
-    {
-      "phase": "ACCEPTED",
-      "at": "2026-11-25T16:51:19.934689Z",
-      "evidence": {
-        "checks": [
-          {
-            "name": "PD release acceptance",
-            "id": 139355037370,
-            "conclusion": "success"
-          },
-          {
-            "name": "publication-integrity",
-            "id": 139355037092,
-            "conclusion": "success"
-          }
-        ]
-      }
-    },
-    {
-      "phase": "MERGE_PENDING",
-      "at": "2026-11-26T13:51:46.442701Z",
-      "evidence": {
-        "pr": 2162
-      }
-    },
-    {
-      "phase": "MERGED",
-      "at": "2026-11-26T13:51:47.949189Z",
-      "evidence": {
-        "merge_sha": "df47624cc0052b59631e8f89cde573e23cff4ef4"
-      }
-    },
-    {
-      "phase": "DEPLOYED",
-      "at": "2026-11-26T13:51:50.592478Z",
-      "evidence": {
-        "pages_run_id": 45661877444,
-        "merge_sha": "df47624cc0052b59631e8f89cde573e23cff4ef4"
-      }
-    },
-    {
-      "phase": "VERIFIED_FOR_SCOPE",
-      "at": "2026-11-26T13:51:57.633288Z",
-      "evidence": {
-        "merge_sha": "df47624cc0052b59631e8f89cde573e23cff4ef4",
-        "pages_run_id": 45661877444,
-        "exact_matches": [
-          {
-            "path": "assets/ccacm-436-accountability-nexus-20261125.css",
-            "sha256": "5654bcff5c46f99adeb126063d26f6ce70d5a7d00fbe50e0bdc1119db9bd898e",
-            "bytes": 2437
-          },
-          {
-            "path": "assets/ccacm-436-accountability-nexus-20261125.js",
-            "sha256": "6b12788a763a6f8d8c1106b9d1a71b4f25221065b095e137e2cb8855c2af6c52",
-            "bytes": 1816
-          },
-          {
-            "path": "assets/cuatrecasas-golden-card-20261125.css",
-            "sha256": "aa43307821d2e45a7dfb63c7d8bba416d4b217574e9f58e01e3ed099546fee80",
-            "bytes": 3261
-          },
-          {
-            "path": "assets/evidence/cuatrecasas/ccacm-436-2026-order-24nov2026-signature-redacted.pdf",
-            "sha256": "28612faaf7372a7b50244d0dac3135fa676d12e3e9e30769c551fa2bd3982eac",
-            "bytes": 718671
-          },
-          {
-            "path": "assets/visuals/cuatrecasas-finger-in-dam-20261125/finger-in-the-dam.webp",
-            "sha256": "ea3f009e94eb3f48b400b7690bd569d675fedecbf4dddc39b4a763b63e8f2b75",
-            "bytes": 626364
-          },
-          {
-            "path": "en/cuatrecasas-icam-ccacm-2026/index.html",
-            "sha256": "45a2f5d74440c35d33b6abe077bd5d8b965010c21371ec05d361656c997e1751",
-            "bytes": 24932
-          },
-          {
-            "path": "en/cuatrecasas-sun-park/index.html",
-            "sha256": "0d103a9467d3461ffa4edc01a043fbe9f1ccc5f54cb1c076d996f4c59ebb49d6",
-            "bytes": 159108
-          },
-          {
-            "path": "en/index.html",
-            "sha256": "68bbcdf2db7f0fa9180f4939986f03d4a0f222ade5cbd3ad529be8712ebe5554",
-            "bytes": 235110
-          },
-          {
-            "path": "es/cuatrecasas-icam-ccacm-2026/index.html",
-            "sha256": "38a428a465a5b03e1c73e47bc3a9094cfeda4fb49320f1e5d24e35e1713da877",
-            "bytes": 25581
-          },
-          {
-            "path": "es/cuatrecasas-sun-park/index.html",
-            "sha256": "93f8a381796d3c790fde23b90921756ef9fec72395a34d7bada13457bf589267",
-            "bytes": 164870
-          },
-          {
-            "path": "es/index.html",
-            "sha256": "73b923c45010384fbb8b08b7c27ceda483cd548e4d5e1cb24119fcd621cf02d9",
-            "bytes": 244847
-          },
-          {
-            "path": "publication-manifests/PD_CUATRECASAS_UNITARY_ACCOUNTABILITY_NEXUS_20261125.json",
-            "sha256": "18e234a984adc73a994efac824131e2d0f335c82195a97bfa5366038b2059685",
-            "bytes": 6335
-          }
-        ],
-        "pending": [],
-        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
-      }
-    }
-  ],
-  "updated_at": "2026-11-26T13:51:57.633288Z"
+  "checkpoints": []
 }
