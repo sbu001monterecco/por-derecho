@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-runtime.v1",
   "fence": 81,
   "owner": "2163:9a706dfd216bdc258abe516fb8ffd6bece95f4ed",
-  "phase": "DEPLOYED",
+  "phase": "VERIFIED_FOR_SCOPE",
   "pr": 2163,
   "base_sha": "df47624cc0052b59631e8f89cde573e23cff4ef4",
   "candidate_sha": "9a706dfd216bdc258abe516fb8ffd6bece95f4ed",
@@ -4008,6 +4008,52 @@
       ],
       "pending": [],
       "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+    },
+    {
+      "pr": 2163,
+      "candidate_sha": "9a706dfd216bdc258abe516fb8ffd6bece95f4ed",
+      "at": "2026-11-26T14:17:09.900877Z",
+      "merge_sha": "7fdde40dc85072695deff6e4c851ecf7da16a916",
+      "pages_run_id": 45837008619,
+      "exact_matches": [
+        {
+          "path": "assets/cuatrecasas-inigo-linkedin-record-20260831.js",
+          "sha256": "e0c560e934f19a47affcd1f28d990cec5ea77b37d46358318de0fa2d3ba73276",
+          "bytes": 39109
+        },
+        {
+          "path": "assets/cuatrecasas-message-context-20261126.css",
+          "sha256": "04cc2af4ea8ddfab9f3e83ebd73b9e72437dc95bf14f5bbd2b1b6c41fe3189aa",
+          "bytes": 648
+        },
+        {
+          "path": "en/cuatrecasas-sun-park/index.html",
+          "sha256": "835e0073dc4f7409e6dc540314ca4ef8506f3541dd759ac5121c1a50413ebcfa",
+          "bytes": 165440
+        },
+        {
+          "path": "en/index.html",
+          "sha256": "68bbcdf2db7f0fa9180f4939986f03d4a0f222ade5cbd3ad529be8712ebe5554",
+          "bytes": 235110
+        },
+        {
+          "path": "es/cuatrecasas-sun-park/index.html",
+          "sha256": "21ca261e2947bf3bd12f9f8abc6b36c6df673964f88cc3e93bdf2b7035f8b4d8",
+          "bytes": 173091
+        },
+        {
+          "path": "es/index.html",
+          "sha256": "73b923c45010384fbb8b08b7c27ceda483cd548e4d5e1cb24119fcd621cf02d9",
+          "bytes": 244847
+        },
+        {
+          "path": "publication-manifests/cuatrecasas-message-context-20261126.json",
+          "sha256": "a6fe8ee4591b28599af869d54c0889614991fc8ebdd22495232e6f5dd54da681",
+          "bytes": 4584
+        }
+      ],
+      "pending": [],
+      "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
     }
   ],
   "checkpoints": [
@@ -4050,7 +4096,54 @@
         "pages_run_id": 45837008619,
         "merge_sha": "7fdde40dc85072695deff6e4c851ecf7da16a916"
       }
+    },
+    {
+      "phase": "VERIFIED_FOR_SCOPE",
+      "at": "2026-11-26T14:17:09.900831Z",
+      "evidence": {
+        "merge_sha": "7fdde40dc85072695deff6e4c851ecf7da16a916",
+        "pages_run_id": 45837008619,
+        "exact_matches": [
+          {
+            "path": "assets/cuatrecasas-inigo-linkedin-record-20260831.js",
+            "sha256": "e0c560e934f19a47affcd1f28d990cec5ea77b37d46358318de0fa2d3ba73276",
+            "bytes": 39109
+          },
+          {
+            "path": "assets/cuatrecasas-message-context-20261126.css",
+            "sha256": "04cc2af4ea8ddfab9f3e83ebd73b9e72437dc95bf14f5bbd2b1b6c41fe3189aa",
+            "bytes": 648
+          },
+          {
+            "path": "en/cuatrecasas-sun-park/index.html",
+            "sha256": "835e0073dc4f7409e6dc540314ca4ef8506f3541dd759ac5121c1a50413ebcfa",
+            "bytes": 165440
+          },
+          {
+            "path": "en/index.html",
+            "sha256": "68bbcdf2db7f0fa9180f4939986f03d4a0f222ade5cbd3ad529be8712ebe5554",
+            "bytes": 235110
+          },
+          {
+            "path": "es/cuatrecasas-sun-park/index.html",
+            "sha256": "21ca261e2947bf3bd12f9f8abc6b36c6df673964f88cc3e93bdf2b7035f8b4d8",
+            "bytes": 173091
+          },
+          {
+            "path": "es/index.html",
+            "sha256": "73b923c45010384fbb8b08b7c27ceda483cd548e4d5e1cb24119fcd621cf02d9",
+            "bytes": 244847
+          },
+          {
+            "path": "publication-manifests/cuatrecasas-message-context-20261126.json",
+            "sha256": "a6fe8ee4591b28599af869d54c0889614991fc8ebdd22495232e6f5dd54da681",
+            "bytes": 4584
+          }
+        ],
+        "pending": [],
+        "scope": "Changed readable public resources plus ES/EN entrypoints. Browser checks are separate premerge evidence; not a whole-site or legal-proof certificate."
+      }
     }
   ],
-  "updated_at": "2026-11-26T14:17:05.530045Z"
+  "updated_at": "2026-11-26T14:17:09.900831Z"
 }
